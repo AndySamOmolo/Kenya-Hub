@@ -104,7 +104,7 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
         "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
       },
       {
-        "maasai": "Ol-alem liki-njo-sho • Ol-alem la-isho J",
+        "maasai": "Ol-alem liki-njo-sho • Ol-alem la-isho",
         "english": "the sword which you give to me • the sword which he, she, or they give to me",
         "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
       }

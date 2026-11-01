@@ -47,73 +47,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Wĩmweo",
             "source": "Hello / Are you well?",
-            "pronunciation": "wee-mweh-oh",
+            "pronunciation": "wimweo",
             "hint": "Universal greeting"
           },
           {
             "target": "Nĩ nzeo",
             "source": "It is good / Fine",
-            "pronunciation": "nee n-zeh-oh",
+            "pronunciation": "ni nzeo",
             "hint": "Polite affirmative reply"
           },
           {
             "target": "Ũvoo waku?",
             "source": "How is your news?",
-            "pronunciation": "oo-voh wah-koo",
+            "pronunciation": "u-voo wa-ku",
             "hint": "Greeting inquiry"
           },
           {
             "target": "Nĩmaseo",
             "source": "I am good / well",
-            "pronunciation": "nee-mah-seh-oh",
+            "pronunciation": "ni-ma-seo",
             "hint": "Response: \"I am fine\""
           },
           {
             "target": "Ũvoo wa kĩoko",
             "source": "Good morning",
-            "pronunciation": "oo-voh wah kee-oh-koh",
+            "pronunciation": "u-voo wa kio-ko",
             "hint": "Morning greeting"
           },
           {
             "target": "Ũvoo wa wĩoo",
             "source": "Good evening",
-            "pronunciation": "oo-voh wah wee-oh-oh",
+            "pronunciation": "u-voo wa wioo",
             "hint": "Evening greeting"
           },
           {
             "target": "Wĩ mũseo?",
             "source": "Are you fine?",
-            "pronunciation": "wee moo-seh-oh",
+            "pronunciation": "wi mu-seo",
             "hint": "Common polite check"
           },
           {
             "target": "Ũka haha",
             "source": "Come here",
-            "pronunciation": "oo-kah hah-hah",
+            "pronunciation": "uka ha-ha",
             "hint": "Welcoming command"
           },
           {
             "target": "Ete maanzi",
             "source": "Bring water",
-            "pronunciation": "eh-teh mah-ahn-zee",
+            "pronunciation": "ete maanzi",
             "hint": "Hospitality request"
           },
           {
             "target": "Ete lĩu",
             "source": "Bring food",
-            "pronunciation": "eh-teh lee-oo",
+            "pronunciation": "ete liu",
             "hint": "Hospitality request"
           },
           {
             "target": "Ĩĩ",
             "source": "Yes",
-            "pronunciation": "ee-ee",
+            "pronunciation": "ii",
             "hint": "Affirmative response"
           },
           {
             "target": "Aiee",
             "source": "No",
-            "pronunciation": "ah-ee-eh-eh",
+            "pronunciation": "aiee",
             "hint": "Negative response"
           }
         ],
@@ -204,73 +204,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ĩmwe",
             "source": "One",
-            "pronunciation": "ee-mweh",
+            "pronunciation": "imwe",
             "hint": "Numeral 1"
           },
           {
             "target": "Ilĩ",
             "source": "Two",
-            "pronunciation": "ee-lee",
+            "pronunciation": "ili",
             "hint": "Numeral 2"
           },
           {
             "target": "Itatũ",
             "source": "Three",
-            "pronunciation": "ee-tah-too",
+            "pronunciation": "i-ta-tu",
             "hint": "Numeral 3"
           },
           {
             "target": "Inya",
             "source": "Four",
-            "pronunciation": "ee-nyah",
+            "pronunciation": "inya",
             "hint": "Numeral 4"
           },
           {
             "target": "Itano",
             "source": "Five",
-            "pronunciation": "ee-tah-noh",
+            "pronunciation": "i-ta-no",
             "hint": "Numeral 5"
           },
           {
             "target": "Thanthatũ",
             "source": "Six",
-            "pronunciation": "thahn-thah-too",
+            "pronunciation": "thantha-tu",
             "hint": "Numeral 6 (also Thandatũ)"
           },
           {
             "target": "Mũonza",
             "source": "Seven",
-            "pronunciation": "moo-ohn-zah",
+            "pronunciation": "muonza",
             "hint": "Numeral 7"
           },
           {
             "target": "Nyanya",
             "source": "Eight",
-            "pronunciation": "nyah-nyah",
+            "pronunciation": "nyanya",
             "hint": "Numeral 8"
           },
           {
             "target": "Kenda",
             "source": "Nine",
-            "pronunciation": "kehn-dah",
+            "pronunciation": "kenda",
             "hint": "Numeral 9"
           },
           {
             "target": "Ĩkũmi",
             "source": "Ten",
-            "pronunciation": "ee-koo-mee",
+            "pronunciation": "i-ku-mi",
             "hint": "Numeral 10"
           },
           {
             "target": "Mĩrongo ĩlĩ",
             "source": "Twenty",
-            "pronunciation": "mee-rohn-goh ee-lee",
+            "pronunciation": "mi-rongo ili",
             "hint": "Lit. \"two tens\""
           },
           {
             "target": "Ĩana",
             "source": "Hundred",
-            "pronunciation": "ee-ah-nah",
+            "pronunciation": "ia-na",
             "hint": "Numeral 100"
           }
         ],
@@ -357,67 +357,67 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mwana",
             "source": "Child",
-            "pronunciation": "mwah-nah",
+            "pronunciation": "mwa-na",
             "hint": "Plural: Syana (children)"
           },
           {
             "target": "Syana",
             "source": "Children",
-            "pronunciation": "syah-nah",
+            "pronunciation": "sya-na",
             "hint": "Plural of mwana"
           },
           {
             "target": "Mũndũũme",
             "source": "Man / Husband",
-            "pronunciation": "moo-n-doo-oo-meh",
+            "pronunciation": "munduu-me",
             "hint": "Plural: Aũme"
           },
           {
             "target": "Mũka",
             "source": "Woman / Wife",
-            "pronunciation": "moo-kah",
+            "pronunciation": "mu-ka",
             "hint": "Plural: Aka (women/wives)"
           },
           {
             "target": "Aka",
             "source": "Women / Wives",
-            "pronunciation": "ah-kah",
+            "pronunciation": "aka",
             "hint": "Plural of muka"
           },
           {
             "target": "Ĩthe",
             "source": "Father",
-            "pronunciation": "ee-theh",
+            "pronunciation": "ithe",
             "hint": "Paternal parent; also Asa"
           },
           {
             "target": "Mwaitũ",
             "source": "Mother",
-            "pronunciation": "mwah-ee-too",
+            "pronunciation": "mwai-tu",
             "hint": "Maternal parent; lit. our mother"
           },
           {
             "target": "Mũtumĩa",
             "source": "Elder / Respected person",
-            "pronunciation": "moo-too-mee-ah",
+            "pronunciation": "mu-tu-mia",
             "hint": "Plural: Atumĩa"
           },
           {
             "target": "Mũrata",
             "source": "Friend",
-            "pronunciation": "moo-rah-tah",
+            "pronunciation": "mu-ra-ta",
             "hint": "Plural: Arata"
           },
           {
             "target": "Umau",
             "source": "Grandfather",
-            "pronunciation": "oo-mah-oo",
+            "pronunciation": "u-mau",
             "hint": "Paternal or maternal grandfather"
           },
           {
             "target": "Usua",
             "source": "Grandmother",
-            "pronunciation": "oo-soo-ah",
+            "pronunciation": "u-sua",
             "hint": "Paternal or maternal grandmother"
           }
         ],
@@ -496,49 +496,49 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mũndũ",
             "source": "Person",
-            "pronunciation": "moo-n-doo",
+            "pronunciation": "mundu",
             "hint": "Plural: Andũ (people)"
           },
           {
             "target": "Andũ",
             "source": "People",
-            "pronunciation": "ahn-doo",
+            "pronunciation": "andu",
             "hint": "Plural of mundu"
           },
           {
             "target": "Akamba",
             "source": "Kamba people",
-            "pronunciation": "ah-kahm-bah",
+            "pronunciation": "a-kamba",
             "hint": "Plural ethnonym"
           },
           {
             "target": "Kĩkamba",
             "source": "Kamba language",
-            "pronunciation": "kee-kahm-bah",
+            "pronunciation": "ki-kamba",
             "hint": "Prefix kĩ- denotes language/manner"
           },
           {
             "target": "Mũsiani",
             "source": "Youth / Boy",
-            "pronunciation": "moo-see-ah-nee",
+            "pronunciation": "mu-sia-ni",
             "hint": "Young unmarried male"
           },
           {
             "target": "Mwĩtũ",
             "source": "Girl / Young woman",
-            "pronunciation": "mwee-too",
+            "pronunciation": "mwi-tu",
             "hint": "Young unmarried female"
           },
           {
             "target": "Mũndũ mũgo",
             "source": "Traditional healer / Seer",
-            "pronunciation": "moo-n-doo moo-goh",
+            "pronunciation": "mundu mu-go",
             "hint": "Spiritual practitioner and herbalist"
           },
           {
             "target": "Mũthooa",
             "source": "Trader",
-            "pronunciation": "moo-thoh-oh-ah",
+            "pronunciation": "muthooa",
             "hint": "Merchant or caravan leader"
           }
         ],
@@ -673,61 +673,61 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mũsyĩ",
             "source": "Homestead / Village",
-            "pronunciation": "moo-syee",
+            "pronunciation": "musyi",
             "hint": "Family compound or settlement"
           },
           {
             "target": "Nyũmba",
             "source": "House",
-            "pronunciation": "nyoom-bah",
+            "pronunciation": "nyumba",
             "hint": "Dwelling structure"
           },
           {
             "target": "Mũtĩ",
             "source": "Tree",
-            "pronunciation": "moo-tee",
+            "pronunciation": "mu-ti",
             "hint": "Plural: Mĩtĩ (trees)"
           },
           {
             "target": "Mĩtĩ",
             "source": "Trees",
-            "pronunciation": "mee-tee",
+            "pronunciation": "mi-ti",
             "hint": "Plural of muti"
           },
           {
             "target": "Kĩĩma",
             "source": "Hill / Mountain",
-            "pronunciation": "kee-ee-mah",
+            "pronunciation": "kii-ma",
             "hint": "Plural: Iima (hills)"
           },
           {
             "target": "Maaĩ",
             "source": "Water",
-            "pronunciation": "mah-ah-ee",
+            "pronunciation": "maai",
             "hint": "Essential life liquid (also Maanzi)"
           },
           {
             "target": "Ũta",
             "source": "Bow",
-            "pronunciation": "oo-tah",
+            "pronunciation": "uta",
             "hint": "Traditional hunting & defence weapon"
           },
           {
             "target": "Mavai",
             "source": "Arrows",
-            "pronunciation": "mah-vah-ee",
+            "pronunciation": "ma-vai",
             "hint": "Quiver arrows (sing. Ũvai)"
           },
           {
             "target": "Kĩtheka",
             "source": "Bush / Wilderness",
-            "pronunciation": "kee-theh-kah",
+            "pronunciation": "kithe-ka",
             "hint": "Savannah woodland or wild bush"
           },
           {
             "target": "Kĩsima",
             "source": "Well / Water spring",
-            "pronunciation": "kee-see-mah",
+            "pronunciation": "ki-si-ma",
             "hint": "Source for drinking water"
           }
         ],
@@ -806,61 +806,61 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ng'ombe",
             "source": "Cow / Cattle",
-            "pronunciation": "ng-ohm-beh",
+            "pronunciation": "ng'ombe",
             "hint": "Primary herd animal"
           },
           {
             "target": "Nthenge",
             "source": "He-goat / Billy-goat",
-            "pronunciation": "n-thehn-geh",
+            "pronunciation": "nthenge",
             "hint": "Mature male goat"
           },
           {
             "target": "Mbũi",
             "source": "She-goat",
-            "pronunciation": "m-boo-ee",
+            "pronunciation": "mbui",
             "hint": "Caprine herd animal"
           },
           {
             "target": "Ĩvwi",
             "source": "Bull",
-            "pronunciation": "ee-vwee",
+            "pronunciation": "ivwi",
             "hint": "Breeding male bovine"
           },
           {
             "target": "Mwana wa ng'ombe",
             "source": "Calf",
-            "pronunciation": "mwah-nah wah ng-ohm-beh",
+            "pronunciation": "mwa-na wa ng'ombe",
             "hint": "Young bovine"
           },
           {
             "target": "Ngũkũ",
             "source": "Chicken / Fowl",
-            "pronunciation": "ng-oo-koo",
+            "pronunciation": "ngu-ku",
             "hint": "Domestic poultry"
           },
           {
             "target": "Kĩtui",
             "source": "Hyena",
-            "pronunciation": "kee-too-ee",
+            "pronunciation": "ki-tui",
             "hint": "Wild nocturnal predator"
           },
           {
             "target": "Munambo",
             "source": "Lion",
-            "pronunciation": "moo-nahm-boh",
+            "pronunciation": "mu-nambo",
             "hint": "Apex savanna carnivore"
           },
           {
             "target": "Mbĩva",
             "source": "Bird",
-            "pronunciation": "m-bee-vah",
+            "pronunciation": "mbi-va",
             "hint": "Winged creature"
           },
           {
             "target": "Mũnoo",
             "source": "Fish",
-            "pronunciation": "moo-noh-oh",
+            "pronunciation": "mu-noo",
             "hint": "Freshwater catch"
           }
         ],
@@ -995,61 +995,61 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kũthi",
             "source": "To go / Walk",
-            "pronunciation": "koo-thee",
+            "pronunciation": "kuthi",
             "hint": "Movement away"
           },
           {
             "target": "Kũka",
             "source": "To come / Arrive",
-            "pronunciation": "koo-kah",
+            "pronunciation": "ku-ka",
             "hint": "Movement toward"
           },
           {
             "target": "Kũya",
             "source": "To eat",
-            "pronunciation": "koo-yah",
+            "pronunciation": "ku-ya",
             "hint": "Consuming food"
           },
           {
             "target": "Kũnywa",
             "source": "To drink",
-            "pronunciation": "koo-nywah",
+            "pronunciation": "kunywa",
             "hint": "Consuming liquid"
           },
           {
             "target": "Kwona",
             "source": "To see",
-            "pronunciation": "kwoh-nah",
+            "pronunciation": "kwo-na",
             "hint": "Visual perception"
           },
           {
             "target": "Kwenda",
             "source": "To want / Love",
-            "pronunciation": "kwehn-dah",
+            "pronunciation": "kwenda",
             "hint": "Desire or affection"
           },
           {
             "target": "Kũthũkũma",
             "source": "To work / Labor",
-            "pronunciation": "koo-thoo-koo-mah",
+            "pronunciation": "kuthu-ku-ma",
             "hint": "Performing labor"
           },
           {
             "target": "Kũmanya",
             "source": "To know / Understand",
-            "pronunciation": "koo-mah-nyah",
+            "pronunciation": "ku-manya",
             "hint": "Knowledge"
           },
           {
             "target": "Kũvoya",
             "source": "To pray / Request",
-            "pronunciation": "koo-voh-yah",
+            "pronunciation": "ku-vo-ya",
             "hint": "Supplication or prayer"
           },
           {
             "target": "Kũthooa",
             "source": "To trade / Sell",
-            "pronunciation": "koo-thoh-oh-ah",
+            "pronunciation": "kuthooa",
             "hint": "Commerce"
           }
         ],
@@ -1140,55 +1140,55 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Wĩta wata?",
             "source": "What is your name?",
-            "pronunciation": "wee-tah wah-tah",
+            "pronunciation": "wi-ta wa-ta",
             "hint": "Name inquiry"
           },
           {
             "target": "Ũthi naku?",
             "source": "Where are you going?",
-            "pronunciation": "oo-thee nah-koo",
+            "pronunciation": "uthi na-ku",
             "hint": "Destination inquiry"
           },
           {
             "target": "Wĩndakĩ?",
             "source": "What do you want?",
-            "pronunciation": "ween-dah-kee",
+            "pronunciation": "winda-ki",
             "hint": "Desire inquiry"
           },
           {
             "target": "Ũumite va?",
             "source": "Where have you come from?",
-            "pronunciation": "oo-oo-mee-teh vah",
+            "pronunciation": "uu-mi-te va",
             "hint": "Origin inquiry"
           },
           {
             "target": "Wĩka ata?",
             "source": "What are you doing?",
-            "pronunciation": "wee-kah ah-tah",
+            "pronunciation": "wi-ka ata",
             "hint": "Action inquiry"
           },
           {
             "target": "Nĩ ndĩa?",
             "source": "When?",
-            "pronunciation": "nee n-dee-ah",
+            "pronunciation": "ni ndia",
             "hint": "Time question"
           },
           {
             "target": "Nata?",
             "source": "How?",
-            "pronunciation": "nah-tah",
+            "pronunciation": "na-ta",
             "hint": "Manner question"
           },
           {
             "target": "Nũũ?",
             "source": "Who?",
-            "pronunciation": "noo-oo",
+            "pronunciation": "nuu",
             "hint": "Person question"
           },
           {
             "target": "Nĩ kĩ?",
             "source": "Why? / What for?",
-            "pronunciation": "nee kee",
+            "pronunciation": "ni ki",
             "hint": "Reason question"
           }
         ],
@@ -1323,43 +1323,43 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mũlũngũ",
             "source": "God / Supreme Creator",
-            "pronunciation": "moo-loo-ngoo",
+            "pronunciation": "mu-lungu",
             "hint": "Also known as Ngai"
           },
           {
             "target": "Ithembo",
             "source": "Sacred tree shrine / Sanctuary",
-            "pronunciation": "ee-thehm-boh",
+            "pronunciation": "ithembo",
             "hint": "Plural: Mathembo"
           },
           {
             "target": "Aimũ",
             "source": "Ancestral spirits",
-            "pronunciation": "ah-ee-moo",
+            "pronunciation": "ai-mu",
             "hint": "Revered departed ancestors"
           },
           {
             "target": "Kĩthĩto",
             "source": "Sacred oath stone / Covenant",
-            "pronunciation": "kee-thee-toh",
+            "pronunciation": "kithi-to",
             "hint": "Solemn traditional truth oath"
           },
           {
             "target": "Ũvoo wa w'o",
             "source": "Truth / Integrity",
-            "pronunciation": "oo-voh wah woh",
+            "pronunciation": "u-voo wa w'o",
             "hint": "Moral honesty"
           },
           {
             "target": "Kũvoya mbya",
             "source": "Prayer for rain",
-            "pronunciation": "koo-voh-yah m-byah",
+            "pronunciation": "ku-vo-ya mbya",
             "hint": "Ceremonial supplication during drought"
           },
           {
             "target": "Kũthata",
             "source": "Sacred taboo / Prohibition",
-            "pronunciation": "koo-thah-tah",
+            "pronunciation": "kutha-ta",
             "hint": "Spiritual conservation restriction"
           }
         ],
@@ -1432,7 +1432,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-6-greetings",
     "title": "Unit 6: Greetings & Farewells",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "BookOpen",
     "skills": [
       {
@@ -1446,61 +1446,61 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ũvoo?",
             "source": "How are you?",
-            "pronunciation": "oo-voh",
+            "pronunciation": "u-voo",
             "hint": "Standard greeting — literally 'News?'"
           },
           {
             "target": "Nĩ mũseo",
             "source": "I am fine",
-            "pronunciation": "nee moo-seh-oh",
+            "pronunciation": "ni mu-seo",
             "hint": "Standard reply meaning 'I am well / good'"
           },
           {
             "target": "O voo",
             "source": "Hello / Salutation",
-            "pronunciation": "oh voh",
+            "pronunciation": "o voo",
             "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'"
           },
           {
             "target": "Wĩa?",
             "source": "What's the news / What's up?",
-            "pronunciation": "wee-ah",
+            "pronunciation": "wia",
             "hint": "Casual colloquial greeting — 'What is the word?'"
           },
           {
             "target": "Wĩa mwau wa ũthukũ",
             "source": "Good morning",
-            "pronunciation": "wee-ah mwah-oo wah oo-thoo-koo",
+            "pronunciation": "wia mwau wa uthu-ku",
             "hint": "Morning greeting"
           },
           {
             "target": "Nĩ vaa mũno",
             "source": "Thank you",
-            "pronunciation": "nee vah-ah moo-noh",
+            "pronunciation": "ni vaa mu-no",
             "hint": "Expressing deep gratitude ('thank you very much')"
           },
           {
             "target": "Tũonane",
             "source": "Goodbye (we will meet)",
-            "pronunciation": "too-oh-nah-neh",
+            "pronunciation": "tuo-na-ne",
             "hint": "Farewell — 'We will see each other again'"
           },
           {
             "target": "Wĩa mũseo",
             "source": "Welcome",
-            "pronunciation": "wee-ah moo-seh-oh",
+            "pronunciation": "wia mu-seo",
             "hint": "Welcoming a visitor or guest"
           },
           {
             "target": "Mũyo",
             "source": "Peace",
-            "pronunciation": "moo-yoh",
+            "pronunciation": "mu-yo",
             "hint": "Traditional blessing of peace, contentment and happiness"
           },
           {
             "target": "Sova / Pole",
             "source": "Sorry",
-            "pronunciation": "soh-vah / poh-leh",
+            "pronunciation": "so-va / po-le",
             "hint": "Expression of empathy or comfort"
           }
         ],
@@ -1633,7 +1633,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-7-numbers",
     "title": "Unit 7: Numbers",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Compass",
     "skills": [
       {
@@ -1647,49 +1647,49 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ithano",
             "source": "Five",
-            "pronunciation": "ee-thah-noh",
+            "pronunciation": "itha-no",
             "hint": "Ulu dialect: itanu; Nganyawa dialect: kitanu"
           },
           {
             "target": "Thanthantũ",
             "source": "Six",
-            "pronunciation": "thahn-thahn-too",
+            "pronunciation": "thanthantu",
             "hint": "Ulu dialect: thanthatu; Nganyawa dialect: thandatu"
           },
           {
             "target": "Nyaanya",
             "source": "Eight",
-            "pronunciation": "nyah-ah-nyah",
+            "pronunciation": "nyaanya",
             "hint": "Ulu dialect: nyanya; Nganyawa dialect: nanya"
           },
           {
             "target": "Ĩkũmi na ĩmwe",
             "source": "Eleven",
-            "pronunciation": "ee-koo-mee nah ee-mweh",
+            "pronunciation": "i-ku-mi na imwe",
             "hint": "Literally 'ten and one'"
           },
           {
             "target": "Mĩongo ĩlĩ",
             "source": "Twenty",
-            "pronunciation": "mee-ohn-goh ee-lee",
+            "pronunciation": "miongo ili",
             "hint": "Hinde: miongoele ('two tens')"
           },
           {
             "target": "Mĩongo ĩtatũ",
             "source": "Thirty",
-            "pronunciation": "mee-ohn-goh ee-tah-too",
+            "pronunciation": "miongo i-ta-tu",
             "hint": "Three tens"
           },
           {
             "target": "Mĩongo ĩnya",
             "source": "Forty",
-            "pronunciation": "mee-ohn-goh ee-nyah",
+            "pronunciation": "miongo inya",
             "hint": "Ulu: miongo enna; Nganyawa: miongo inya"
           },
           {
             "target": "Mĩongo ĩthano",
             "source": "Fifty",
-            "pronunciation": "mee-ohn-goh ee-thah-noh",
+            "pronunciation": "miongo itha-no",
             "hint": "Five tens (Ulu: miongo itanu; Nganyawa: miongo kitanu)"
           }
         ],
@@ -1822,7 +1822,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-8-family",
     "title": "Unit 8: Family & Relationships",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "User",
     "skills": [
       {
@@ -1836,73 +1836,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Asa / Tata",
             "source": "Father",
-            "pronunciation": "ah-sah / tah-tah",
+            "pronunciation": "asa / ta-ta",
             "hint": "Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata'"
           },
           {
             "target": "Mwaitũ / Ĩvaa",
             "source": "Mother",
-            "pronunciation": "mwah-ee-too / ee-vah",
+            "pronunciation": "mwai-tu / i-vaa",
             "hint": "Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu'"
           },
           {
             "target": "Kaana",
             "source": "Child",
-            "pronunciation": "kah-ah-nah",
+            "pronunciation": "kaa-na",
             "hint": "Plural: Twana (children)"
           },
           {
             "target": "Kavĩsĩ",
             "source": "Boy / Male youth",
-            "pronunciation": "kah-vee-see",
+            "pronunciation": "ka-vi-si",
             "hint": "Hinde Ulu: kabisi; Plural: Syavĩsĩ"
           },
           {
             "target": "Kelĩtu",
             "source": "Girl / Maiden",
-            "pronunciation": "keh-lee-too",
+            "pronunciation": "ke-li-tu",
             "hint": "Hinde Ulu: kēlletu; Nganyawa: kananga; Plural: Twelĩtu"
           },
           {
             "target": "Mũndũ mũme",
             "source": "Man / Male",
-            "pronunciation": "moon-doo moo-meh",
+            "pronunciation": "mundu mu-me",
             "hint": "Plural: Andũ aume (Hinde: mundu mumiu / mume)"
           },
           {
             "target": "Mũndũ mũka",
             "source": "Woman / Female",
-            "pronunciation": "moon-doo moo-kah",
+            "pronunciation": "mundu mu-ka",
             "hint": "Plural: Andũ aka (Hinde Ulu: mundu muka; Nganyawa: manamuka)"
           },
           {
             "target": "Mũtumia",
             "source": "Elder",
-            "pronunciation": "moo-too-mee-ah",
+            "pronunciation": "mu-tu-mia",
             "hint": "Ulu: muku; Nganyawa: mtumia; Plural: Atumia"
           },
           {
             "target": "Umau / Guka",
             "source": "Grandfather",
-            "pronunciation": "oo-mah-oo / goo-kah",
+            "pronunciation": "u-mau / gu-ka",
             "hint": "Ulu: umāā; Nganyawa: atza mnini"
           },
           {
             "target": "Mwaitũ mũkũũ / Ũsũũ",
             "source": "Grandmother",
-            "pronunciation": "mwah-ee-too moo-koo-oo / oo-soo-oo",
+            "pronunciation": "mwai-tu mu-kuu / u-suu",
             "hint": "Respectful elder mother; Hinde: inya"
           },
           {
             "target": "Mwananyanya",
             "source": "Brother",
-            "pronunciation": "mwah-nah-nyah-nyah",
+            "pronunciation": "mwa-nanyanya",
             "hint": "Ulu: nindu; Nganyawa: mwinai"
           },
           {
             "target": "Mwĩtu wa mwaitũ",
             "source": "Sister",
-            "pronunciation": "mwee-too wah mwah-ee-too",
+            "pronunciation": "mwi-tu wa mwai-tu",
             "hint": "Literally 'daughter of our mother'; Hinde: mwtiaiya"
           }
         ],
@@ -2041,46 +2041,40 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mũnyanya",
             "source": "Friend",
-            "pronunciation": "moo-nyah-nyah",
+            "pronunciation": "munyanya",
             "hint": "Ulu: nendu; Nganyawa: mnyanya"
           },
           {
             "target": "Mũme",
             "source": "Husband",
-            "pronunciation": "moo-meh",
+            "pronunciation": "mu-me",
             "hint": "Hinde: mume akwa ('my husband')"
-          },
-          {
-            "target": "Mũtanya",
-            "source": "Judge / Arbitrator",
-            "pronunciation": "moo-tahn-yah",
-            "hint": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)"
           },
           {
             "target": "Mũtongoi",
             "source": "Guide / Caravan leader",
-            "pronunciation": "moo-toh-ngoh-ee",
+            "pronunciation": "mu-tongoi",
             "hint": "Plural: Atongoi. Pathfinder or caravan leader recorded by J.T. Last (1885)"
           },
           {
-            "target": "Mwĩmi",
-            "source": "Farmer / Agriculturist",
-            "pronunciation": "mwee-mee",
-            "hint": "Plural: Aimi. Cultivator of the land recorded by J.T. Last (1885): mwimi / aimi"
+            "target": "kabisi",
+            "source": "Boy",
+            "pronunciation": "ka-bi-si"
+          },
+          {
+            "target": "mundu, pl. andu",
+            "source": "Man",
+            "pronunciation": "mundu"
           }
         ],
         "sentences": [
           {
-            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
-            "source": "My cattle are at the water."
+            "target": "Mũnyanya — Mũme",
+            "source": "Friend — Husband"
           },
           {
-            "target": "Mũndũ mũka nũũkua kĩw'ũ na mbisu.",
-            "source": "The woman is carrying water with a pot."
-          },
-          {
-            "target": "Mũũnda witũ wĩ na mbemba mbingĩ.",
-            "source": "Our farm has plenty of maize."
+            "target": "Mũtongoi — kabisi",
+            "source": "Guide — Boy"
           }
         ],
         "authoredExercises": [
@@ -2089,77 +2083,37 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mũnyanya\" mean in English?",
             "correctAnswer": "Friend",
             "options": [
-              "Husband",
-              "Judge / Arbitrator",
-              "Guide / Caravan leader",
-              "Friend"
-            ],
-            "hint": "Ulu: nendu; Nganyawa: mnyanya"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mũme\" mean in English?",
-            "correctAnswer": "Husband",
-            "options": [
-              "Judge / Arbitrator",
-              "Guide / Caravan leader",
-              "Husband",
-              "Friend"
-            ],
-            "hint": "Hinde: mume akwa ('my husband')"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Mũtanya\" mean in English?",
-            "correctAnswer": "Judge / Arbitrator",
-            "options": [
-              "Guide / Caravan leader",
-              "Judge / Arbitrator",
               "Friend",
-              "Husband"
+              "Husband",
+              "Guide / Caravan leader",
+              "Boy"
             ],
-            "hint": "Plural: Atanya. Historical judicial council arbitrator recorded by J.T. Last (1885)"
+            "hint": "Core vocabulary in Family & Relationships (Part 2)"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Judge / Arbitrator\" in Kamba?",
-            "correctAnswer": "Mũtanya",
-            "options": [
-              "Mũtanya",
-              "Mũnyanya",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Husband\"",
+            "correctAnswer": "Mũme",
+            "acceptedAnswers": [
               "Mũme",
-              "Mũtongoi"
+              "Mũme"
             ],
-            "hint": "moo-tahn-yah"
+            "hint": "Starts with \"Mũ\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Guide / Caravan leader\" in Kamba?",
-            "correctAnswer": "Mũtongoi",
-            "options": [
-              "Mũnyanya",
-              "Mũme",
-              "Mũtanya",
-              "Mũtongoi"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Mũtongoi\"",
+            "correctAnswer": "Guide",
+            "acceptedAnswers": [
+              "Guide / Caravan leader",
+              "Guide"
             ],
-            "hint": "moo-toh-ngoh-ee"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Farmer / Agriculturist\" in Kamba?",
-            "correctAnswer": "Mwĩmi",
-            "options": [
-              "Mũme",
-              "Mũtanya",
-              "Mwĩmi",
-              "Mũnyanya"
-            ],
-            "hint": "mwee-mee"
+            "hint": "Review Family & Relationships (Part 2)"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
-            "correctAnswer": "Mũnyanya: Friend, Mũme: Husband, Mũtanya: Judge / Arbitrator, Mũtongoi: Guide / Caravan leader",
+            "prompt": "Match each expression from Family & Relationships (Part 2) with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "Mũnyanya",
@@ -2170,26 +2124,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 "right": "Husband"
               },
               {
-                "left": "Mũtanya",
-                "right": "Judge / Arbitrator"
+                "left": "Mũtongoi",
+                "right": "Guide"
               },
               {
-                "left": "Mũtongoi",
-                "right": "Guide / Caravan leader"
+                "left": "kabisi",
+                "right": "Boy"
+              },
+              {
+                "left": "mundu, pl. andu",
+                "right": "Man"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"Friend\" in Kamba (Kĩkamba).",
-            "correctAnswer": "Mũnyanya",
-            "options": [
-              "Mũnyanya",
-              "Mũme",
-              "Mũtanya",
-              "Mũtongoi"
-            ],
-            "hint": "moo-nyah-nyah"
           }
         ]
       }
@@ -2198,7 +2144,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-9-nature",
     "title": "Unit 9: Nature & Environment",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "TreePine",
     "skills": [
       {
@@ -2212,79 +2158,79 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Syũa",
             "source": "Sun",
-            "pronunciation": "syoo-ah",
+            "pronunciation": "syua",
             "hint": "Hinde Ulu: sua; Nganyawa: djua / thua"
           },
           {
             "target": "Mwei",
             "source": "Moon",
-            "pronunciation": "mweh-ee",
+            "pronunciation": "mwei",
             "hint": "Hinde Ulu: mwei; Nganyawa: mbui; also means month"
           },
           {
             "target": "Ndata",
             "source": "Star",
-            "pronunciation": "n-dah-tah",
+            "pronunciation": "nda-ta",
             "hint": "Night sky star (Hinde: ndata)"
           },
           {
             "target": "Ĩtu",
             "source": "Sky / Cloud",
-            "pronunciation": "ee-too",
+            "pronunciation": "itu",
             "hint": "Plural: Matu (clouds); Ulu: mwingo; Nganyawa: edu"
           },
           {
             "target": "Mbua",
             "source": "Rain",
-            "pronunciation": "m-boo-ah",
+            "pronunciation": "mbua",
             "hint": "Vital seasonal rains in Ukambani (Hinde: mbua)"
           },
           {
             "target": "Mbevo",
             "source": "Wind",
-            "pronunciation": "m-beh-voh",
+            "pronunciation": "mbe-vo",
             "hint": "Hinde: mbebo (wind, breeze, or atmospheric cold)"
           },
           {
             "target": "Ũsĩ",
             "source": "River",
-            "pronunciation": "oo-see",
+            "pronunciation": "usi",
             "hint": "Hinde Ulu: ussi; Nganyawa: udzi"
           },
           {
             "target": "Nyekĩ",
             "source": "Grass",
-            "pronunciation": "nyeh-kee",
+            "pronunciation": "nye-ki",
             "hint": "Hinde Ulu: nyekki; Nganyawa: mathangu"
           },
           {
             "target": "Mwaki",
             "source": "Fire",
-            "pronunciation": "mwah-kee",
+            "pronunciation": "mwa-ki",
             "hint": "Hinde Ulu: iko; Nganyawa: mwadgi / djuki"
           },
           {
             "target": "Manzĩ",
             "source": "Water",
-            "pronunciation": "mahn-zee",
+            "pronunciation": "manzi",
             "hint": "Hinde: maanzi"
           },
           {
             "target": "Nthĩ",
             "source": "Soil / Earth / Ground",
-            "pronunciation": "n-thee",
+            "pronunciation": "nthi",
             "hint": "Hinde Ulu: panthi; Nganyawa: itheo"
           },
           {
             "target": "Ĩvia",
             "source": "Stone",
-            "pronunciation": "ee-vee-ah",
+            "pronunciation": "i-via",
             "hint": "Plural: Mavia (Hinde: ibia, pl. mavia)"
           },
           {
             "target": "Mwamba",
             "source": "Baobab tree",
-            "pronunciation": "mwahm-bah",
+            "pronunciation": "mwamba",
             "hint": "Iconic Ukambani dryland tree (Hinde: mwamba)"
           }
         ],
@@ -2417,7 +2363,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-10-animals",
     "title": "Unit 10: Animals & Wildlife",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "PawPrint",
     "skills": [
       {
@@ -2431,73 +2377,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ng'ombe",
             "source": "Cow / Cattle",
-            "pronunciation": "n-gohm-beh",
+            "pronunciation": "ng'ombe",
             "hint": "Domestic cattle (Hinde: ngombe)"
           },
           {
             "target": "Nzao",
             "source": "Bull",
-            "pronunciation": "n-zah-oh",
+            "pronunciation": "nzao",
             "hint": "Hinde: nzao"
           },
           {
             "target": "Mbuĩ",
             "source": "Goat",
-            "pronunciation": "m-boo-ee",
+            "pronunciation": "mbui",
             "hint": "Plural: Mbuĩ (Hinde: mbuii)"
           },
           {
             "target": "Ĩlondu",
             "source": "Sheep",
-            "pronunciation": "ee-lohn-doo",
+            "pronunciation": "i-londu",
             "hint": "Hinde Ulu: ilondu; Nganyawa: ngoondu"
           },
           {
             "target": "Kĩtĩ / Ngiti",
             "source": "Dog",
-            "pronunciation": "kee-tee / n-gee-tee",
+            "pronunciation": "ki-ti / ngi-ti",
             "hint": "Hinde Ulu: solu; Nganyawa: ngiti"
           },
           {
             "target": "Nyũnyi",
             "source": "Bird",
-            "pronunciation": "nyoo-nyee",
+            "pronunciation": "nyunyi",
             "hint": "Hinde Ulu: mbuungu; Nganyawa: nyunni"
           },
           {
             "target": "Nzũkĩ",
             "source": "Bee",
-            "pronunciation": "n-zoo-kee",
+            "pronunciation": "nzu-ki",
             "hint": "Hinde Ulu: nsuki / kinyu; Nganyawa: nzuki"
           },
           {
             "target": "Nzowũ",
             "source": "Elephant",
-            "pronunciation": "n-zoh-woo",
+            "pronunciation": "nzo-wu",
             "hint": "Hinde: unzōō"
           },
           {
             "target": "Mũnyambo",
             "source": "Lion",
-            "pronunciation": "moo-nyahm-boh",
+            "pronunciation": "munyambo",
             "hint": "Hinde Ulu: munyambo; Nganyawa: thimba"
           },
           {
             "target": "Ngo",
             "source": "Leopard",
-            "pronunciation": "n-goh",
+            "pronunciation": "ngo",
             "hint": "Hinde Ulu: ngoo; Nganyawa: engo"
           },
           {
             "target": "Mbĩtĩ",
             "source": "Hyena",
-            "pronunciation": "m-bee-tee",
+            "pronunciation": "mbi-ti",
             "hint": "Hinde: mbiti"
           },
           {
             "target": "Mbogo / Nyaĩ",
             "source": "Buffalo",
-            "pronunciation": "m-boh-goh / nyah-ee",
+            "pronunciation": "mbo-go / nyai",
             "hint": "Hinde Ulu: niai; Nganyawa: mbo"
           }
         ],
@@ -2636,43 +2582,43 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Nzaĩ",
             "source": "Zebra",
-            "pronunciation": "n-zah-ee",
+            "pronunciation": "nzai",
             "hint": "Hinde Ulu: nzaii; Nganyawa: mbuvu"
           },
           {
             "target": "Ndia",
             "source": "Giraffe",
-            "pronunciation": "n-dee-ah",
+            "pronunciation": "ndia",
             "hint": "Hinde: ndia"
           },
           {
             "target": "Kĩnyangĩ",
             "source": "Crocodile",
-            "pronunciation": "kee-nyahn-gee",
+            "pronunciation": "kinyangi",
             "hint": "Hinde: kinyangi"
           },
           {
             "target": "Ngũlĩ",
             "source": "Baboon",
-            "pronunciation": "n-goo-lee",
+            "pronunciation": "ngu-li",
             "hint": "Hinde: ngulli"
           },
           {
             "target": "Nzoka",
             "source": "Snake",
-            "pronunciation": "n-zoh-kah",
+            "pronunciation": "nzo-ka",
             "hint": "Hinde Ulu: enjoka; Nganyawa: mweanthi"
           },
           {
             "target": "Ĩkũyũ",
             "source": "Fish",
-            "pronunciation": "ee-koo-yoo",
+            "pronunciation": "i-ku-yu",
             "hint": "Plural: Makũyũ (Hinde: ikuyu, pl. makuyu)"
           },
           {
             "target": "Kavokoo",
             "source": "Hare",
-            "pronunciation": "kah-voh-koh",
+            "pronunciation": "ka-vo-koo",
             "hint": "Hinde: kabokō (folk trickster figure)"
           }
         ],
@@ -2805,7 +2751,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-11-food",
     "title": "Unit 11: Food & Drink",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Soup",
     "skills": [
       {
@@ -2819,79 +2765,79 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Lĩu / Ĩlya",
             "source": "Food",
-            "pronunciation": "lee-oo / ee-lyah",
+            "pronunciation": "liu / ilya",
             "hint": "Hinde Ulu: leū; Nganyawa: chakueer / kandu"
           },
           {
             "target": "Ĩya",
             "source": "Milk",
-            "pronunciation": "ee-yah",
+            "pronunciation": "iya",
             "hint": "Fresh milk (Hinde: iya); sour/buttermilk: kalia"
           },
           {
             "target": "Nyama",
             "source": "Meat",
-            "pronunciation": "nyah-mah",
+            "pronunciation": "nya-ma",
             "hint": "Hinde Ulu: nyamma; Nganyawa: nama"
           },
           {
             "target": "Mbemba",
             "source": "Maize",
-            "pronunciation": "m-behm-bah",
+            "pronunciation": "mbemba",
             "hint": "Hinde: mbēmba"
           },
           {
             "target": "Nthoogo / Nthzũũ",
             "source": "Beans (pigeon peas / pulses)",
-            "pronunciation": "n-thoh-goh / n-thzoo",
+            "pronunciation": "nthoo-go / nthzuu",
             "hint": "Hinde: inthoogo; tree beans: nthzuu"
           },
           {
             "target": "Maĩyũ",
             "source": "Banana",
-            "pronunciation": "mah-ee-yoo",
+            "pronunciation": "mai-yu",
             "hint": "Hinde: maĩyu"
           },
           {
             "target": "Makwasĩ",
             "source": "Sweet potato",
-            "pronunciation": "mah-kwah-see",
+            "pronunciation": "makwa-si",
             "hint": "Hinde Ulu: makwasi; Nganyawa: makwatzi"
           },
           {
             "target": "Wũkĩ",
             "source": "Honey",
-            "pronunciation": "woo-kee",
+            "pronunciation": "wu-ki",
             "hint": "Renowned Ukambani honey (Hinde: ukki wa nzuki)"
           },
           {
             "target": "Mbeea",
             "source": "Millet",
-            "pronunciation": "m-beh-eh-ah",
+            "pronunciation": "mbeea",
             "hint": "Traditional drought-resistant grain (Hinde: mbīa)"
           },
           {
             "target": "Mũwa",
             "source": "Sugar cane",
-            "pronunciation": "moo-wah",
+            "pronunciation": "mu-wa",
             "hint": "Hinde: iwa"
           },
           {
             "target": "Mũnyũ",
             "source": "Salt",
-            "pronunciation": "moo-nyoo",
+            "pronunciation": "munyu",
             "hint": "Hinde: munyu"
           },
           {
             "target": "Mauta",
             "source": "Butter / Oil / Fat",
-            "pronunciation": "mah-oo-tah",
+            "pronunciation": "mau-ta",
             "hint": "Hinde: maota; clarified: mauta mavivia"
           },
           {
             "target": "Mũtu",
             "source": "Flour",
-            "pronunciation": "moo-too",
+            "pronunciation": "mu-tu",
             "hint": "Milled grain flour (Hinde: mutu)"
           }
         ],
@@ -3024,7 +2970,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-12-body",
     "title": "Unit 12: Body Parts",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Activity",
     "skills": [
       {
@@ -3038,73 +2984,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Mwĩĩ",
             "source": "Body",
-            "pronunciation": "mwee-ee",
+            "pronunciation": "mwii",
             "hint": "Hinde Ulu: mwi; Nganyawa: mwili"
           },
           {
             "target": "Mũtwe",
             "source": "Head",
-            "pronunciation": "moo-tweh",
+            "pronunciation": "mutwe",
             "hint": "Hinde: mutue"
           },
           {
             "target": "Ĩtho",
             "source": "Eye",
-            "pronunciation": "ee-thoh",
+            "pronunciation": "itho",
             "hint": "Plural: Meetho (Hinde: itho, pl. meetho)"
           },
           {
             "target": "Kũtũ",
             "source": "Ear",
-            "pronunciation": "koo-too",
+            "pronunciation": "ku-tu",
             "hint": "Hinde Ulu: matu (pl); Nganyawa: kutu"
           },
           {
             "target": "Ĩnyũ",
             "source": "Nose",
-            "pronunciation": "ee-nyoo",
+            "pronunciation": "inyu",
             "hint": "Hinde: inyu"
           },
           {
             "target": "Mũomo",
             "source": "Mouth",
-            "pronunciation": "moo-oh-moh",
+            "pronunciation": "muo-mo",
             "hint": "Hinde: moomo"
           },
           {
             "target": "Ĩyo",
             "source": "Tooth",
-            "pronunciation": "ee-yoh",
+            "pronunciation": "iyo",
             "hint": "Plural: Mayo (Hinde: maiyo)"
           },
           {
             "target": "Wĩmĩ / Kanywa",
             "source": "Tongue",
-            "pronunciation": "wee-mee / kah-nywah",
+            "pronunciation": "wi-mi / kanywa",
             "hint": "Hinde Ulu: kanyua; Nganyawa: wimi"
           },
           {
             "target": "Kĩng'ee",
             "source": "Beard",
-            "pronunciation": "kee-ngeh-eh",
+            "pronunciation": "king'ee",
             "hint": "Hinde Ulu: kingē; Nganyawa: kiaiu"
           },
           {
             "target": "Ngingo",
             "source": "Neck",
-            "pronunciation": "n-geen-goh",
+            "pronunciation": "ngingo",
             "hint": "Hinde Ulu: ngingo; Nganyawa: njingo"
           },
           {
             "target": "Kĩthũi",
             "source": "Chest",
-            "pronunciation": "kee-thoo-ee",
+            "pronunciation": "kithui",
             "hint": "Hinde: kithui"
           },
           {
             "target": "Ngoo / Ndeĩ",
             "source": "Heart",
-            "pronunciation": "n-goh-oh / n-deh-ee",
+            "pronunciation": "ngoo / ndei",
             "hint": "Hinde Ulu: ndei; Nganyawa: ethaiyu"
           }
         ],
@@ -3243,49 +3189,49 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ĩvũ",
             "source": "Stomach / Belly",
-            "pronunciation": "ee-voo",
+            "pronunciation": "ivu",
             "hint": "Hinde Ulu: ebŭ; Nganyawa: ibu"
           },
           {
             "target": "Mũongo",
             "source": "Back",
-            "pronunciation": "moo-ohn-goh",
+            "pronunciation": "muongo",
             "hint": "Hinde Ulu: muongo; Nganyawa: moongo"
           },
           {
             "target": "Kwoko",
             "source": "Arm / Hand",
-            "pronunciation": "kwoh-koh",
+            "pronunciation": "kwo-ko",
             "hint": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko"
           },
           {
             "target": "Kũũ",
             "source": "Leg / Foot",
-            "pronunciation": "koo-oo",
+            "pronunciation": "kuu",
             "hint": "Hinde: kuu; Plural: Maũ"
           },
           {
             "target": "Ĩvĩndĩ",
             "source": "Bone",
-            "pronunciation": "ee-veen-dee",
+            "pronunciation": "i-vindi",
             "hint": "Plural: Mavĩndĩ (Hinde: ivindi, pl. mavindi)"
           },
           {
             "target": "Nthakame",
             "source": "Blood",
-            "pronunciation": "n-thah-kah-meh",
+            "pronunciation": "ntha-ka-me",
             "hint": "Hinde Ulu: nthakame; Nganyawa: ndagami"
           },
           {
             "target": "Kya",
             "source": "Finger",
-            "pronunciation": "kyah",
+            "pronunciation": "kya",
             "hint": "Plural: Syĩa / Thia (Hinde: kia, pl. thia)"
           },
           {
             "target": "Ĩu",
             "source": "Knee",
-            "pronunciation": "ee-oo",
+            "pronunciation": "iu",
             "hint": "Hinde: iyu; Plural: Mau"
           }
         ],
@@ -3418,7 +3364,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-13-tools",
     "title": "Unit 13: Tools & Household Objects",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Globe",
     "skills": [
       {
@@ -3432,91 +3378,91 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kaviu",
             "source": "Knife",
-            "pronunciation": "kah-vee-oo",
+            "pronunciation": "ka-viu",
             "hint": "Hinde Ulu: kabiu; Nganyawa: kaviu"
           },
           {
             "target": "Mũsye",
             "source": "Arrow",
-            "pronunciation": "moo-syeh",
+            "pronunciation": "musye",
             "hint": "Hinde Ulu: musie; Nganyawa: mutchi"
           },
           {
             "target": "Thyaka",
             "source": "Quiver (for arrows)",
-            "pronunciation": "thyah-kah",
+            "pronunciation": "thya-ka",
             "hint": "Hinde Ulu: thiaka; Nganyawa: ithiaga"
           },
           {
             "target": "Ĩtũmũ",
             "source": "Spear",
-            "pronunciation": "ee-too-moo",
+            "pronunciation": "i-tu-mu",
             "hint": "Hinde: itumu"
           },
           {
             "target": "Ngao",
             "source": "Shield",
-            "pronunciation": "n-gah-oh",
+            "pronunciation": "ngao",
             "hint": "Hinde: ningau"
           },
           {
             "target": "Ĩthoka",
             "source": "Axe",
-            "pronunciation": "ee-thoh-kah",
+            "pronunciation": "itho-ka",
             "hint": "Plural: Mathoka (Hinde: ithoka, pl. mathoka)"
           },
           {
             "target": "Chõõndo / Ngũsũ",
             "source": "Traditional woven bag",
-            "pronunciation": "chohn-doh / n-goo-soo",
+            "pronunciation": "choondo / ngu-su",
             "hint": "Hinde Ulu: ngussu; Nganyawa: chõõndo; famous sisal woven bag"
           },
           {
             "target": "Kĩvĩla / Kĩtũmbĩ",
             "source": "Stool / Chair",
-            "pronunciation": "kee-vee-lah / kee-toom-bee",
+            "pronunciation": "ki-vi-la / ki-tumbi",
             "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi"
           },
           {
             "target": "Nyũngũ",
             "source": "Clay cooking pot",
-            "pronunciation": "nyoon-goo",
+            "pronunciation": "nyungu",
             "hint": "Hinde Ulu: nuungu; Nganyawa: ithillia / mbiitziu"
           },
           {
             "target": "Kĩkũũ / Kĩthanzya",
             "source": "Calabash / Gourd",
-            "pronunciation": "kee-koo-oo / kee-thahn-zyah",
+            "pronunciation": "ki-kuu / kithanzya",
             "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia"
           },
           {
             "target": "Mwatũ",
             "source": "Beehive",
-            "pronunciation": "mwah-too",
+            "pronunciation": "mwa-tu",
             "hint": "Hinde: mwatu; traditional hollow log hive hung in trees"
           },
           {
             "target": "Kĩatũ",
             "source": "Sandal",
-            "pronunciation": "kee-ah-too",
+            "pronunciation": "kia-tu",
             "hint": "Plural: Iatũ (Hinde: kiatu, pl. iatu)"
           },
           {
             "target": "Ndĩĩ",
             "source": "Wooden Mortar",
-            "pronunciation": "n-dee-ee",
+            "pronunciation": "ndii",
             "hint": "Traditional heavy mortar used for pounding grain"
           },
           {
             "target": "Wenzĩ",
             "source": "Razor",
-            "pronunciation": "wehn-zee",
+            "pronunciation": "wenzi",
             "hint": "Hinde: wenzi; traditional fine iron blade"
           },
           {
             "target": "Ũlĩ / Ndi",
             "source": "Rope / Cord",
-            "pronunciation": "oo-lee / n-dee",
+            "pronunciation": "uli / ndi",
             "hint": "Hinde Ulu: uli; Nganyawa: ndi"
           }
         ],
@@ -3649,7 +3595,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-14-verbs",
     "title": "Unit 14: Verbs & Actions",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Layers",
     "skills": [
       {
@@ -3663,73 +3609,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kũĩma",
             "source": "To cultivate / farm",
-            "pronunciation": "koo-ee-mah",
+            "pronunciation": "kui-ma",
             "hint": "Hinde: kuimu"
           },
           {
             "target": "Kwaka",
             "source": "To build",
-            "pronunciation": "kwah-kah",
+            "pronunciation": "kwa-ka",
             "hint": "Hinde: kuaka"
           },
           {
             "target": "Kũua",
             "source": "To cook",
-            "pronunciation": "koo-oo-ah",
+            "pronunciation": "kuua",
             "hint": "Hinde Ulu: kuuer; Nganyawa: kūūē"
           },
           {
             "target": "Kũona / Kũkĩĩtha",
             "source": "To see",
-            "pronunciation": "koo-oh-nah / koo-kee-ee-thah",
+            "pronunciation": "kuo-na / ku-kiitha",
             "hint": "Hinde: kukiitha / kuona"
           },
           {
             "target": "Kũneena",
             "source": "To speak / talk",
-            "pronunciation": "koo-neh-eh-nah",
+            "pronunciation": "ku-nee-na",
             "hint": "Hinde: kunēēna / gunēēna"
           },
           {
             "target": "Kũũa / Kũtho",
             "source": "To buy",
-            "pronunciation": "koo-oo-ah / koo-thoh",
+            "pronunciation": "kuua / kutho",
             "hint": "Hinde Ulu: kūer; Nganyawa: gutho"
           },
           {
             "target": "Kũthoosya",
             "source": "To sell",
-            "pronunciation": "koo-thoh-oh-syah",
+            "pronunciation": "kuthoosya",
             "hint": "Hinde Ulu: guthozia; Nganyawa: kuta"
           },
           {
             "target": "Kũnenga",
             "source": "To give",
-            "pronunciation": "koo-nehn-gah",
+            "pronunciation": "ku-nenga",
             "hint": "Hinde: kumunenge"
           },
           {
             "target": "Kũkoma",
             "source": "To sleep",
-            "pronunciation": "koo-koh-mah",
+            "pronunciation": "ku-ko-ma",
             "hint": "Hinde: kukoma"
           },
           {
             "target": "Kũrũta wĩa",
             "source": "To work",
-            "pronunciation": "koo-roo-tah wee-ah",
+            "pronunciation": "ku-ru-ta wia",
             "hint": "Hinde Ulu: uuia; Nganyawa: mawia"
           },
           {
             "target": "Kũkũlya",
             "source": "To ask",
-            "pronunciation": "koo-koo-lyah",
+            "pronunciation": "ku-kulya",
             "hint": "Hinde Ulu: gukulia; Nganyawa: kwibaja"
           },
           {
             "target": "Kwĩna",
             "source": "To sing",
-            "pronunciation": "kwee-nah",
+            "pronunciation": "kwi-na",
             "hint": "Hinde Ulu: kwina; Nganyawa: kukwea"
           }
         ],
@@ -3868,43 +3814,43 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kũsemba",
             "source": "To run",
-            "pronunciation": "koo-sehm-bah",
+            "pronunciation": "ku-semba",
             "hint": "Hinde: sēēmba"
           },
           {
             "target": "Kũkwa",
             "source": "To die",
-            "pronunciation": "koo-kwah",
+            "pronunciation": "kukwa",
             "hint": "Hinde Ulu: kwie; Nganyawa: kugua"
           },
           {
             "target": "Kũthamba",
             "source": "To wash",
-            "pronunciation": "koo-thahm-bah",
+            "pronunciation": "kuthamba",
             "hint": "Hinde: kuthamba"
           },
           {
             "target": "Kũtheka",
             "source": "To laugh",
-            "pronunciation": "koo-theh-kah",
+            "pronunciation": "kuthe-ka",
             "hint": "Recorded by J.T. Last (1885): ku-theka; Hinde (1904): gutheka"
           },
           {
             "target": "Kwĩekana",
             "source": "To forgive / pardon",
-            "pronunciation": "kwee-eh-kah-nah",
+            "pronunciation": "kwie-ka-na",
             "hint": "Recorded by J.T. Last (1885): kw-iekana"
           },
           {
             "target": "Kũkila",
             "source": "To surpass / excel",
-            "pronunciation": "koo-kee-lah",
+            "pronunciation": "ku-ki-la",
             "hint": "Auxiliary comparative verb recorded by J.T. Last (1885): ku-kila"
           },
           {
             "target": "Kũthaima",
             "source": "To hunt / track game",
-            "pronunciation": "koo-thah-ee-mah",
+            "pronunciation": "kuthai-ma",
             "hint": "Recorded by J.T. Last (1885): ku-thaima"
           }
         ],
@@ -4037,7 +3983,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   {
     "id": "kamba-unit-15-phrases",
     "title": "Unit 15: Common Phrases",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, vetted from J.T.",
+    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Sparkles",
     "skills": [
       {
@@ -4051,73 +3997,73 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ĩĩ / Nĩw'o",
             "source": "Yes",
-            "pronunciation": "ee-ee / nee-woh",
+            "pronunciation": "ii / niw'o",
             "hint": "Hinde Ulu: newua; Nganyawa: nigwo"
           },
           {
             "target": "Aiee / Nde",
             "source": "No",
-            "pronunciation": "ah-ee-eh-eh / n-deh",
+            "pronunciation": "aiee / nde",
             "hint": "Hinde: ndi / aiyee"
           },
           {
             "target": "Wĩtawa ata?",
             "source": "What is your name?",
-            "pronunciation": "wee-tah-wah ah-tah",
+            "pronunciation": "wi-ta-wa ata",
             "hint": "Hinde Ulu: wita wata?"
           },
           {
             "target": "Nĩtawa...",
             "source": "My name is...",
-            "pronunciation": "nee-tah-wah",
+            "pronunciation": "ni-ta-wa",
             "hint": "Response: 'I am called...'"
           },
           {
             "target": "Ũthĩ naku?",
             "source": "Where are you going?",
-            "pronunciation": "oo-thee nah-koo",
+            "pronunciation": "uthi na-ku",
             "hint": "Hinde Ulu: uthi naku?"
           },
           {
             "target": "Wumĩte va?",
             "source": "Where do you come from?",
-            "pronunciation": "woo-mee-teh vah",
+            "pronunciation": "wu-mi-te va",
             "hint": "Hinde Ulu: uomanakko?"
           },
           {
             "target": "Ũka vaa",
             "source": "Come here",
-            "pronunciation": "oo-kah vah-ah",
+            "pronunciation": "uka vaa",
             "hint": "Hinde: uka haha / uka vaa"
           },
           {
             "target": "Ete manzĩ",
             "source": "Bring water",
-            "pronunciation": "eh-teh mahn-zee",
+            "pronunciation": "ete manzi",
             "hint": "Hinde Ulu: ete maanzi"
           },
           {
             "target": "Ndimanya",
             "source": "I do not know",
-            "pronunciation": "n-dee-mah-nyah",
+            "pronunciation": "ndi-manya",
             "hint": "Hinde Ulu: ndimanya"
           },
           {
             "target": "Nĩnkwendete",
             "source": "I love you",
-            "pronunciation": "neen-kwehn-deh-teh",
+            "pronunciation": "ninkwende-te",
             "hint": "Expression of deep love"
           },
           {
             "target": "Ngai / Mũlũngũ",
             "source": "God",
-            "pronunciation": "n-gah-ee / moo-loo-ngoo",
+            "pronunciation": "ngai / mu-lungu",
             "hint": "Hinde Ulu: ngaii; Nganyawa: milungu"
           },
           {
             "target": "Mũseo",
             "source": "Good / Fine",
-            "pronunciation": "moo-seh-oh",
+            "pronunciation": "mu-seo",
             "hint": "Hinde Ulu: -zeo; Nganyawa: -cheo"
           }
         ],
@@ -4256,37 +4202,37 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Vindya",
             "source": "Be quiet",
-            "pronunciation": "veen-dyah",
+            "pronunciation": "vindya",
             "hint": "Hinde Ulu: pindia; Nganyawa: monakilongo"
           },
           {
             "target": "Thi / Enda",
             "source": "Go away / Leave",
-            "pronunciation": "thee / ehn-dah",
+            "pronunciation": "thi / enda",
             "hint": "Hinde Ulu: eenda or thi"
           },
           {
             "target": "Kũtĩ ũthũku",
             "source": "All is well",
-            "pronunciation": "koo-tee oo-thoo-koo",
+            "pronunciation": "ku-ti uthu-ku",
             "hint": "Literally 'there is no evil / trouble'"
           },
           {
             "target": "Ng'o yakwa",
             "source": "Myself",
-            "pronunciation": "ngoh yah-kwah",
+            "pronunciation": "ng'o yakwa",
             "hint": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last"
           },
           {
             "target": "Ng'o sitũ",
             "source": "Ourselves",
-            "pronunciation": "ngoh see-too",
+            "pronunciation": "ng'o si-tu",
             "hint": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)"
           },
           {
             "target": "Kwa mũuo",
             "source": "Peacefully / Sweetly",
-            "pronunciation": "kwah moo-oo-oh",
+            "pronunciation": "kwa muuo",
             "hint": "Manner adverb for peaceful action recorded by J.T. Last (1885)"
           }
         ],
@@ -4432,122 +4378,78 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "wa téne",
             "source": "Old",
-            "pronunciation": "wa t ne",
+            "pronunciation": "wa te-ne",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
           },
           {
-            "target": "nsáu",
-            "source": "New",
-            "pronunciation": "ns u",
+            "target": "mweu (nsau)",
+            "source": "White / Pure",
+            "pronunciation": "mweu",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
           },
           {
             "target": "téne",
             "source": "Ancient",
-            "pronunciation": "t ne",
+            "pronunciation": "te-ne",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
           },
           {
             "target": "ūni (Ulu) / ōni (Nganyawa)",
             "source": "to-morrow",
-            "pronunciation": "ūni",
+            "pronunciation": "uni / oni",
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           },
           {
             "target": "etēēla (Ulu) / killia (Nganyawa)",
             "source": "soon",
-            "pronunciation": "etēēla",
+            "pronunciation": "e-tee-la / killia",
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           },
           {
             "target": "muthenia miingi (Ulu) / mthee nyongi (Nganyawa)",
             "source": "often",
-            "pronunciation": "muthenia miingi",
+            "pronunciation": "muthe-nia miingi / mthee nyongi",
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           },
           {
             "target": "oiyuyu (Ulu) / indino (Nganyawa)",
             "source": "now",
-            "pronunciation": "oiyuyu",
+            "pronunciation": "oi-yu-yu / indi-no",
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           },
           {
             "target": "kwatier (Ulu) / chioko (Nganyawa)",
             "source": "early",
-            "pronunciation": "kwatier",
+            "pronunciation": "kwa-tier / chio-ko",
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           }
         ],
         "sentences": [
           {
-            "target": "etēēla (Ulu) / killia (Nganyawa) (muthenia miingi (Ulu) / mthee nyongi (Nganyawa)).",
-            "source": "soon (often)."
+            "target": "Nĩtũũsoma ndeto wa téne ũmũnthĩ.",
+            "source": "We are learning the term old today."
+          },
+          {
+            "target": "Atumĩa nĩmaneeneie ũndũ wa mweu.",
+            "source": "The elders spoke about white."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"wa téne\" in Kamba?",
+            "prompt": "What is the English meaning of \"wa téne\" in Kamba (Kĩkamba)?",
             "correctAnswer": "Old",
             "options": [
-              "New",
-              "Ancient",
-              "to-morrow",
-              "Old"
-            ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"nsáu\" in Kamba?",
-            "correctAnswer": "New",
-            "options": [
-              "Ancient",
-              "to-morrow",
-              "New",
-              "Old"
-            ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"téne\" in Kamba?",
-            "correctAnswer": "Ancient",
-            "options": [
-              "to-morrow",
-              "Ancient",
               "Old",
-              "New"
+              "White / Pure",
+              "Ancient",
+              "to-morrow"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Ancient\" in Kamba?",
-            "correctAnswer": "téne",
-            "options": [
-              "téne",
-              "wa téne",
-              "nsáu",
-              "ūni (Ulu) / ōni (Nganyawa)"
-            ],
-            "hint": "t ne"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"to-morrow\" in Kamba?",
-            "correctAnswer": "ūni (Ulu) / ōni (Nganyawa)",
-            "options": [
-              "wa téne",
-              "nsáu",
-              "téne",
-              "ūni (Ulu) / ōni (Nganyawa)"
-            ],
-            "hint": "ūni"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kamba expression with its English meaning:",
+            "prompt": "Match each verified Kamba (Kĩkamba) term to its English meaning:",
             "correctAnswer": "wa téne: Old",
             "pairs": [
               {
@@ -4555,8 +4457,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 "right": "Old"
               },
               {
-                "left": "nsáu",
-                "right": "New"
+                "left": "mweu (nsau)",
+                "right": "White / Pure"
               },
               {
                 "left": "téne",
@@ -4570,13 +4472,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kamba term for \"soon\": ___",
+            "prompt": "Complete the Kamba (Kĩkamba) term for \"soon\": ___",
             "correctAnswer": "etēēla (Ulu) / killia (Nganyawa)",
             "options": [
+              "etēēla (Ulu) / killia (Nganyawa)",
               "wa téne",
-              "nsáu",
-              "téne",
-              "etēēla (Ulu) / killia (Nganyawa)"
+              "mweu (nsau)",
+              "téne"
             ],
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           }
@@ -4590,58 +4492,66 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "tips": "Compare classical 19th- and early 20th-century Kamba (Kĩkamba) transcriptions with modern standardized orthography.",
         "words": [
           {
-            "target": "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
-            "source": "always",
-            "pronunciation": "muthenia monthe",
-            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+            "target": "muthenia monthe (Ulu) / matuku onthe",
+            "source": "Always / Every day",
+            "pronunciation": "muthe-nia monthe / ma-tu-ku onthe",
+            "hint": "Hildegarde Hinde (1904) — Kamba"
           },
           {
-            "target": "Nominal Damages",
-            "source": "Injury / Offence",
-            "pronunciation": "nominal damages",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "King'ole",
+            "source": "Supreme communal tribunal assembly",
+            "pronunciation": "king'o-le",
+            "hint": "C. W. Hobley (1910) & Charles Dundas (1915)"
           },
           {
-            "target": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-            "source": "Mu Tui.",
-            "pronunciation": "mu sii. mu mui. mwa-ithangwa.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Mbai ya Mu Tui (Mu Sii, Mu Mui)",
+            "source": "Mu Tui ancestral clan and sub-clans",
+            "pronunciation": "mbai ya mu tui",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 63"
           },
           {
-            "target": "Wakia.",
-            "source": "A man to a girl (Muitu) will say",
-            "pronunciation": "wakia.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Wakia!",
+            "source": "Greeting from an elder to a young girl (Muitu)",
+            "pronunciation": "wa-kia",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 52"
           },
           {
-            "target": "Oponiao.",
-            "source": "A man to a youth (Anake) will say",
-            "pronunciation": "oponiao.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Oponiao!",
+            "source": "Greeting from an elder to a young warrior (Anake)",
+            "pronunciation": "o-po-niao",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 52"
           },
           {
-            "target": "Ah.",
-            "source": "The reply will be",
-            "pronunciation": "ah.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Nosio! — Ah!",
+            "source": "Elder's greeting to a child and respectful reply",
+            "pronunciation": "no-sio — ah",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 52"
           },
           {
-            "target": "Waiya.",
-            "source": "A young man (Anake) to another young man will say",
-            "pronunciation": "waiya.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Waiya! — Waiya!",
+            "source": "Mutual greeting between young warriors (Anake)",
+            "pronunciation": "wai-ya — wai-ya",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 52"
           },
           {
-            "target": "Inimuvoo.",
-            "source": "The woman will reply",
-            "pronunciation": "inimuvoo.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Umuvoo? — Inimuvoo!",
+            "source": "How are you? — I am well! (Adult salutation)",
+            "pronunciation": "u-mu-voo — i-ni-mu-voo",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 52"
           }
         ],
         "sentences": [
           {
             "target": "Oponiao. (Ah.).",
             "source": "A man to a youth (Anake) will say (The reply will be)."
+          },
+          {
+            "target": "Nĩtũũsoma ndeto muthenia monthe ũmũnthĩ.",
+            "source": "We are learning the term always today."
+          },
+          {
+            "target": "Atumĩa nĩmaneeneie ũndũ wa King'ole.",
+            "source": "The elders spoke about supreme communal tribunal assembly."
           }
         ],
         "authoredExercises": [
@@ -4758,58 +4668,66 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "tips": "Focus on high-frequency roots shared across Kamba (Kĩkamba) dialects and everyday speech.",
         "words": [
           {
-            "target": "Umuvoo.",
-            "source": "A man to a woman will say",
-            "pronunciation": "umuvoo.",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Kivisi (pl. Nisi)",
+            "source": "Uncircumcised boy",
+            "pronunciation": "ki-vi-si",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Salutation / Reply",
-            "source": "Speaker / Addressee",
-            "pronunciation": "salutation / reply",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Muitu (pl. Weitu)",
+            "source": "Young unmarried girl",
+            "pronunciation": "mui-tu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Old man, headman of his own village only",
-            "source": "Childless woman (Ngungu)",
-            "pronunciation": "old man, headman of his own village only",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+            "target": "Mwanake (pl. Anake)",
+            "source": "Young man or warrior",
+            "pronunciation": "mwa-na-ke",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Old man",
-            "source": "Old woman (Mukuu)",
-            "pronunciation": "old man",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+            "target": "Nthele (pl. Anthele)",
+            "source": "Young married man",
+            "pronunciation": "nthe-le",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Young man or warrior",
-            "source": "Unmarried girl (Mundu mukaa)",
-            "pronunciation": "young man or warrior",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+            "target": "Kipeti (pl. Ipeti)",
+            "source": "Married woman with children",
+            "pronunciation": "ki-pe-ti",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Muthwa, queen ant Munthai",
+            "target": "Mutumia (pl. Atumia)",
+            "source": "Elder / Council member",
+            "pronunciation": "mu-tu-mia",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
+          },
+          {
+            "target": "Muthwa (queen: Munthai)",
             "source": "White ants (termites)",
-            "pronunciation": "muthwa, queen ant munthai",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "pronunciation": "muthwa",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba"
           },
           {
-            "target": "Nzuki, queen bee Mulue",
-            "source": "Bees",
-            "pronunciation": "nzuki, queen bee mulue",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
-          },
-          {
-            "target": "Marri",
-            "source": "Hornets with paper nest",
-            "pronunciation": "marri",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Nzuki (queen: Mulue)",
+            "source": "Honeybees",
+            "pronunciation": "nzu-ki",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba"
           }
         ],
         "sentences": [
           {
             "target": "Young man or warrior (Muthwa, queen ant Munthai).",
             "source": "Unmarried girl (Mundu mukaa) (White ants )."
+          },
+          {
+            "target": "Nĩtũũsoma ndeto Kivisi ũmũnthĩ.",
+            "source": "We are learning the term uncircumcised boy today."
+          },
+          {
+            "target": "Atumĩa nĩmaneeneie ũndũ wa Muitu.",
+            "source": "The elders spoke about young unmarried girl."
           }
         ],
         "authoredExercises": [
@@ -4878,47 +4796,56 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Nthuaku",
             "source": "Soldier ants (siafu)",
-            "pronunciation": "nthuaku",
+            "pronunciation": "nthua-ku",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Ngia—in the hopper stage—Kititi",
             "source": "Locusts",
-            "pronunciation": "ngia—in the hopper stage—kititi",
+            "pronunciation": "ngia-—in the hopper sta-ge—ki-ti-ti",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Chambulutwa",
             "source": "Butterfly and Moth",
-            "pronunciation": "chambulutwa",
+            "pronunciation": "chambu-lutwa",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Yamu",
             "source": "Hairy caterpillar",
-            "pronunciation": "yamu",
+            "pronunciation": "ya-mu",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Mangña—in Ulu Maseo—in Kitui",
             "source": "Hagadash Ibis",
-            "pronunciation": "mangña—in ulu maseo—in kitui",
+            "pronunciation": "mangnya-—in ulu ma-seo-—in ki-tui",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Isau",
             "source": "Marabou stork",
-            "pronunciation": "isau",
+            "pronunciation": "i-sau",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           },
           {
             "target": "Ngoto",
             "source": "Lesser bustard",
-            "pronunciation": "ngoto",
+            "pronunciation": "ngo-to",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Nĩtũũsoma ndeto Thingii ũmũnthĩ.",
+            "source": "We are learning the term black ants today."
+          },
+          {
+            "target": "Atumĩa nĩmaneeneie ũndũ wa Nthuaku.",
+            "source": "The elders spoke about soldier ants."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

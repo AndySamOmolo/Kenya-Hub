@@ -86,6 +86,9 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
         const wordPath = `${skillPath}.words[${wordIndex}]`;
         if (!word.target.trim()) issues.push({ path: wordPath, message: "Vocabulary target is empty" });
         if (!word.source.trim()) issues.push({ path: wordPath, message: "Vocabulary source is empty" });
+        if (/,\s*pl$/i.test(word.target.trim())) {
+          issues.push({ path: wordPath, message: `Truncated plural marker in target: ${word.target}` });
+        }
 
         const normalizedTarget = word.target.trim().toLowerCase();
         if (wordTargets.has(normalizedTarget)) {

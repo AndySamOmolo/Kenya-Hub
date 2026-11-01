@@ -26,13 +26,6 @@
           "audioFile": null
         },
         {
-          "english": "Is it peace? / Are you well?",
-          "translation": "Ma nagaa?",
-          "pronunciation": "mah nah-gaa",
-          "context": "Standard Daasanach greeting in Ileret and North Horr, Marsabit County (Tosco 2001)",
-          "audioFile": null
-        },
-        {
           "english": "It is peace / I am well",
           "translation": "Nagaa",
           "pronunciation": "nah-gaa",
@@ -40,52 +33,10 @@
           "audioFile": null
         },
         {
-          "english": "Yes (affirmative)",
-          "translation": "ee / ii",
-          "pronunciation": "ee / ii",
-          "context": "Daasanach affirmative particle (Tosco 2001 / Blažek 2011)",
-          "audioFile": null
-        },
-        {
-          "english": "No / Not (negative particle)",
-          "translation": "ma / m'ning",
-          "pronunciation": "mah / m-ning",
-          "context": "Daasanach negative particle (Tosco 2001 / Blažek 2011)",
-          "audioFile": null
-        },
-        {
-          "english": "I (1st person singular independent pronoun)",
-          "translation": "yáa (object/oblique: yú)",
-          "pronunciation": "yaa / yuu",
-          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
-          "audioFile": null
-        },
-        {
-          "english": "You (2nd person singular independent pronoun)",
-          "translation": "kúu (object/oblique: kú / kuo)",
-          "pronunciation": "kuu / kuo",
-          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
-          "audioFile": null
-        },
-        {
-          "english": "We (1st person plural inclusive: 'you and I')",
-          "translation": "múu (object/oblique: mú / muo)",
-          "pronunciation": "muu / muo",
-          "context": "Inclusive 1st person plural pronoun in Daasanach (Blažek 2011, p. 3; Sasse 1976, p. 208)",
-          "audioFile": null
-        },
-        {
-          "english": "We (1st person plural exclusive: 'we without you')",
-          "translation": "nyíni (object/oblique: nyí)",
-          "pronunciation": "nyee-nee / nyee",
-          "context": "Exclusive 1st person plural pronoun in Daasanach (Blažek 2011, p. 3; Tosco 2001, p. 210)",
-          "audioFile": null
-        },
-        {
-          "english": "You (2nd person plural independent pronoun)",
-          "translation": "'ítíni (object/oblique: 'ití)",
-          "pronunciation": "ee-tee-nee / ee-tee",
-          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
+          "english": "Is it peace? / Are you well?",
+          "translation": "Ma nagaa?",
+          "pronunciation": "mah nah-gaa",
+          "context": "Standard Daasanach greeting in Ileret and North Horr, Marsabit County (Tosco 2001)",
           "audioFile": null
         }
       ]
@@ -110,10 +61,10 @@
           "audioFile": null
         },
         {
-          "english": "Three (3)",
-          "translation": "sèddí",
-          "pronunciation": "sed-dee",
-          "context": "Blažek (2011, p. 4, Numerals < East Cushitic *saddih; Shackleton 1933: sedi)",
+          "english": "Six (6)",
+          "translation": "líh",
+          "pronunciation": "leeh",
+          "context": "Blažek (2011, p. 4, Numerals < Cushitic *lihh; Shackleton 1933: lih)",
           "audioFile": null
         },
         {
@@ -131,10 +82,24 @@
           "audioFile": null
         },
         {
-          "english": "Six (6)",
-          "translation": "líh",
-          "pronunciation": "leeh",
-          "context": "Blažek (2011, p. 4, Numerals < Cushitic *lihh; Shackleton 1933: lih)",
+          "english": "Nine (9)",
+          "translation": "sààl",
+          "pronunciation": "saal",
+          "context": "Blažek (2011, p. 4, Numerals < East Cushitic *sagal; Shackleton 1933: sal)",
+          "audioFile": null
+        },
+        {
+          "english": "Ten (10)",
+          "translation": "tòmòn",
+          "pronunciation": "toh-mohn",
+          "context": "Blažek (2011, p. 4, Numerals < Cushitic *taman-; Shackleton 1933: tomon)",
+          "audioFile": null
+        },
+        {
+          "english": "Three (3)",
+          "translation": "sèddí",
+          "pronunciation": "sed-dee",
+          "context": "Blažek (2011, p. 4, Numerals < East Cushitic *saddih; Shackleton 1933: sedi)",
           "audioFile": null
         },
         {
@@ -149,20 +114,6 @@
           "translation": "sììt",
           "pronunciation": "seet",
           "context": "Blažek (2011, p. 4, Numerals < East Cushitic *siddet; Shackleton 1933: siet)",
-          "audioFile": null
-        },
-        {
-          "english": "Nine (9)",
-          "translation": "sààl",
-          "pronunciation": "saal",
-          "context": "Blažek (2011, p. 4, Numerals < East Cushitic *sagal; Shackleton 1933: sal)",
-          "audioFile": null
-        },
-        {
-          "english": "Ten (10)",
-          "translation": "tòmòn",
-          "pronunciation": "toh-mohn",
-          "context": "Blažek (2011, p. 4, Numerals < Cushitic *taman-; Shackleton 1933: tomon)",
           "audioFile": null
         },
         {
@@ -185,20 +136,6 @@
           "pronunciation": "toh-moh-naa sed-dee",
           "context": "Literally 'three tens' (Blažek 2011, p. 4)",
           "audioFile": null
-        },
-        {
-          "english": "One hundred (100)",
-          "translation": "dììb",
-          "pronunciation": "deeb",
-          "context": "Loan from Oromo dhibba '100' (Blažek 2011, p. 4, citing Tosco 2001 p. 207)",
-          "audioFile": null
-        },
-        {
-          "english": "One thousand (1,000)",
-          "translation": "kúùm",
-          "pronunciation": "kuum",
-          "context": "Loan from Oromo kuma '1,000' (Blažek 2011, p. 4, citing Tosco 2001 p. 207)",
-          "audioFile": null
         }
       ]
     },
@@ -208,38 +145,10 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
-          "english": "Person / Man (human being)",
-          "translation": "màà (pl. mààddí / gál)",
-          "pronunciation": "maa / maad-dee / gahl",
-          "context": "Blažek (2011, p. 8, #51 'man' & #63 'person', citing Tosco 2001 pp. 506, 488)",
-          "audioFile": null
-        },
-        {
-          "english": "Man / Husband (male)",
-          "translation": "màà dhií (pl. gál dhiíddí)",
-          "pronunciation": "maa dhee / gahl dheed-dee",
-          "context": "Blažek (2011, p. 8, #51 'man', citing Tosco 2001 p. 506)",
-          "audioFile": null
-        },
-        {
           "english": "Woman / Wife",
           "translation": "mìnní (pl. kààddí)",
           "pronunciation": "min-nee / kaad-dee",
           "context": "Blažek (2011, p. 11, #99 'woman', citing Tosco 2001 p. 510)",
-          "audioFile": null
-        },
-        {
-          "english": "Child / Offspring",
-          "translation": "múù / 'íny (pl. 'íyyí)",
-          "pronunciation": "muu / eeny / eey-yee",
-          "context": "Nishiguchi (2004, p. 6: iny 'child') & Tosco (2001)",
-          "audioFile": null
-        },
-        {
-          "english": "Name",
-          "translation": "mé (pl. méddí)",
-          "pronunciation": "meh / med-dee",
-          "context": "Blažek (2011, p. 8, #56 'name' < Cushitic *magac-; Tosco 2001 p. 509)",
           "audioFile": null
         },
         {
@@ -250,10 +159,66 @@
           "audioFile": null
         },
         {
+          "english": "Child / Offspring",
+          "translation": "múù / 'íny (pl. 'íyyí)",
+          "pronunciation": "muu / eeny / eey-yee",
+          "context": "Nishiguchi (2004, p. 6: iny 'child') & Tosco (2001)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband (male)",
+          "translation": "màà dhií (pl. gál dhiíddí)",
+          "pronunciation": "maa dhee / gahl dheed-dee",
+          "context": "Blažek (2011, p. 8, #51 'man', citing Tosco 2001 p. 506)",
+          "audioFile": null
+        },
+        {
+          "english": "Person / Man (human being)",
+          "translation": "màà (pl. mààddí / gál)",
+          "pronunciation": "maa / maad-dee / gahl",
+          "context": "Blažek (2011, p. 8, #51 'man' & #63 'person', citing Tosco 2001 pp. 506, 488)",
+          "audioFile": null
+        },
+        {
           "english": "Daasanach person / Daasanach people",
           "translation": "Dhaasanac",
           "pronunciation": "dhaa-sah-nach",
           "context": "Indigenous autonym recorded around Ileret and the Omo delta (Tosco 2001; called 'Reshiat' by Höhnel 1894)",
+          "audioFile": null
+        },
+        {
+          "english": "I (1st person singular independent pronoun)",
+          "translation": "yáa (object/oblique: yú)",
+          "pronunciation": "yaa / yuu",
+          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
+          "audioFile": null
+        },
+        {
+          "english": "You (2nd person plural independent pronoun)",
+          "translation": "'ítíni (object/oblique: 'ití)",
+          "pronunciation": "ee-tee-nee / ee-tee",
+          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
+          "audioFile": null
+        },
+        {
+          "english": "You (2nd person singular independent pronoun)",
+          "translation": "kúu (object/oblique: kú / kuo)",
+          "pronunciation": "kuu / kuo",
+          "context": "Blažek (2011, p. 3, Table of Pronouns, citing Tosco 2001 pp. 210–211)",
+          "audioFile": null
+        },
+        {
+          "english": "We (1st person plural inclusive: 'you and I')",
+          "translation": "múu (object/oblique: mú / muo)",
+          "pronunciation": "muu / muo",
+          "context": "Inclusive 1st person plural pronoun in Daasanach (Blažek 2011, p. 3; Sasse 1976, p. 208)",
+          "audioFile": null
+        },
+        {
+          "english": "We (1st person plural exclusive: 'we without you')",
+          "translation": "nyíni (object/oblique: nyí)",
+          "pronunciation": "nyee-nee / nyee",
+          "context": "Exclusive 1st person plural pronoun in Daasanach (Blažek 2011, p. 3; Tosco 2001, p. 210)",
           "audioFile": null
         }
       ]
@@ -263,13 +228,6 @@
       "name": "Body Parts & Health",
       "icon": "🫁",
       "entries": [
-        {
-          "english": "Head",
-          "translation": "mé (pl. méddí)",
-          "pronunciation": "meh / med-dee",
-          "context": "Blažek (2011, p. 7, #38 'head' < East Cushitic *mathH-; Tosco 2001 p. 509)",
-          "audioFile": null
-        },
         {
           "english": "Eye",
           "translation": "'íl (pl. 'íllí)",
@@ -285,31 +243,17 @@
           "audioFile": null
         },
         {
+          "english": "Head",
+          "translation": "mé (pl. méddí)",
+          "pronunciation": "meh / med-dee",
+          "context": "Blažek (2011, p. 7, #38 'head' < East Cushitic *mathH-; Tosco 2001 p. 509)",
+          "audioFile": null
+        },
+        {
           "english": "Nose",
           "translation": "són (pl. sóonú)",
           "pronunciation": "sohn / soo-nuu",
           "context": "Blažek (2011, p. 8, #59 'nose' < Cushitic *san-/son-; Tosco 2001 p. 519)",
-          "audioFile": null
-        },
-        {
-          "english": "Mouth / Language",
-          "translation": "'áf (pl. 'áffú)",
-          "pronunciation": "ahf / ahf-fuu",
-          "context": "Blažek (2011, p. 8, #55 'mouth' < Afroasiatic *'af-; Tosco 2001 p. 466)",
-          "audioFile": null
-        },
-        {
-          "english": "Tooth",
-          "translation": "kììkìt (pl. kììkù)",
-          "pronunciation": "kee-kit / kee-kuu",
-          "context": "Blažek (2011, p. 10, #90 'tooth' < East Cushitic *ilk-; Tosco 2001 p. 501)",
-          "audioFile": null
-        },
-        {
-          "english": "Tongue",
-          "translation": "'érré (pl. 'érréddí)",
-          "pronunciation": "er-reh / er-red-dee",
-          "context": "Blažek (2011, p. 10, #89 'tongue' < East Cushitic *'arrab-; Tosco 2001 p. 475)",
           "audioFile": null
         },
         {
@@ -320,31 +264,24 @@
           "audioFile": null
         },
         {
-          "english": "Hand / Arm",
-          "translation": "gíl (pl. gíllí)",
-          "pronunciation": "geel / geel-lee",
-          "context": "Blažek (2011, p. 7, #37 'hand', citing Tosco 2001 p. 492)",
-          "audioFile": null
-        },
-        {
-          "english": "Finger / Fingernail / Claw",
-          "translation": "kùrr (pl. kùrrú) / fàrr (pl. fàrrú)",
-          "pronunciation": "kurr / farr",
-          "context": "Blažek (2011, p. 5, #14 'claw/nail' & Nishiguchi 2004, p. 6: far 'finger', far-ru 'fingers')",
-          "audioFile": null
-        },
-        {
-          "english": "Foot / Leg",
-          "translation": "gàs (pl. gàsú)",
-          "pronunciation": "gahs / gah-suu",
-          "context": "Blažek (2011, p. 7, #30 'foot', citing Tosco 2001 p. 489; Nishiguchi 2004, p. 3: gas / gac-cu)",
-          "audioFile": null
-        },
-        {
           "english": "Knee",
           "translation": "kúrr (pl. kúrrú)",
           "pronunciation": "kurr / kur-ruu",
           "context": "Blažek (2011, p. 7, #43 'knee' < Cushitic *gulb-/kurb-; Tosco 2001 p. 504)",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "láf (pl. láffú / láfù)",
+          "pronunciation": "lahf / lahf-fuu",
+          "context": "Blažek (2011, p. 5, #10 'bone' < East Cushitic *laf-; Tosco 2001 p. 504)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "kììkìt (pl. kììkù)",
+          "pronunciation": "kee-kit / kee-kuu",
+          "context": "Blažek (2011, p. 10, #90 'tooth' < East Cushitic *ilk-; Tosco 2001 p. 501)",
           "audioFile": null
         },
         {
@@ -362,10 +299,38 @@
           "audioFile": null
         },
         {
-          "english": "Belly / Abdomen",
-          "translation": "géèr (pl. géèrrí)",
-          "pronunciation": "geer / geer-ree",
-          "context": "Blažek (2011, p. 5, #5 'belly' < East Cushitic *gar'a; Tosco 2001 p. 490)",
+          "english": "Blood",
+          "translation": "fáàg (pl. fáàggú)",
+          "pronunciation": "faag / faag-guu",
+          "context": "Blažek (2011, p. 5, #9 'blood', citing Tosco 2001 p. 477)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "'érré (pl. 'érréddí)",
+          "pronunciation": "er-reh / er-red-dee",
+          "context": "Blažek (2011, p. 10, #89 'tongue' < East Cushitic *'arrab-; Tosco 2001 p. 475)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "gíl (pl. gíllí)",
+          "pronunciation": "geel / geel-lee",
+          "context": "Blažek (2011, p. 7, #37 'hand', citing Tosco 2001 p. 492)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot / Leg",
+          "translation": "gàs (pl. gàsú)",
+          "pronunciation": "gahs / gah-suu",
+          "context": "Blažek (2011, p. 7, #30 'foot', citing Tosco 2001 p. 489; Nishiguchi 2004, p. 3: gas / gac-cu)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin / Hide",
+          "translation": "góng (pl. góngú)",
+          "pronunciation": "gohng / gohng-uu",
+          "context": "Blažek (2011, p. 9, #75 'skin', citing Tosco 2001 p. 493)",
           "audioFile": null
         },
         {
@@ -376,20 +341,6 @@
           "audioFile": null
         },
         {
-          "english": "Blood",
-          "translation": "fáàg (pl. fáàggú)",
-          "pronunciation": "faag / faag-guu",
-          "context": "Blažek (2011, p. 5, #9 'blood', citing Tosco 2001 p. 477)",
-          "audioFile": null
-        },
-        {
-          "english": "Bone",
-          "translation": "láf (pl. láffú / láfù)",
-          "pronunciation": "lahf / lahf-fuu",
-          "context": "Blažek (2011, p. 5, #10 'bone' < East Cushitic *laf-; Tosco 2001 p. 504)",
-          "audioFile": null
-        },
-        {
           "english": "Hair / Feather",
           "translation": "zúùr (pl. zúùrrí)",
           "pronunciation": "zuur / zuur-ree",
@@ -397,10 +348,24 @@
           "audioFile": null
         },
         {
-          "english": "Skin / Hide",
-          "translation": "góng (pl. góngú)",
-          "pronunciation": "gohng / gohng-uu",
-          "context": "Blažek (2011, p. 9, #75 'skin', citing Tosco 2001 p. 493)",
+          "english": "Belly / Abdomen",
+          "translation": "géèr (pl. géèrrí)",
+          "pronunciation": "geer / geer-ree",
+          "context": "Blažek (2011, p. 5, #5 'belly' < East Cushitic *gar'a; Tosco 2001 p. 490)",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "'áf (pl. 'áffú)",
+          "pronunciation": "ahf / ahf-fuu",
+          "context": "Blažek (2011, p. 8, #55 'mouth' < Afroasiatic *'af-; Tosco 2001 p. 466)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger / Fingernail / Claw",
+          "translation": "kùrr (pl. kùrrú) / fàrr (pl. fàrrú)",
+          "pronunciation": "kurr / farr",
+          "context": "Blažek (2011, p. 5, #14 'claw/nail' & Nishiguchi 2004, p. 6: far 'finger', far-ru 'fingers')",
           "audioFile": null
         }
       ]
@@ -411,13 +376,6 @@
       "icon": "🦁",
       "entries": [
         {
-          "english": "Cow / Cattle",
-          "translation": "sé (pl. gùù)",
-          "pronunciation": "seh / guu",
-          "context": "Blažek (2011, p. 6, #18 'cow' < Cushitic *sa'-; Tosco 2001 p. 517; Nishiguchi 2004, p. 6: guo 'cattle')",
-          "audioFile": null
-        },
-        {
           "english": "Dog",
           "translation": "chér (pl. chérrí)",
           "pronunciation": "cher / cher-ree",
@@ -425,38 +383,10 @@
           "audioFile": null
         },
         {
-          "english": "Goat / Small stock",
-          "translation": "'áyyì / rí (pl. ríddí)",
-          "pronunciation": "ahy-yee / ree / reed-dee",
-          "context": "Nishiguchi (2004, p. 11: rii 'goat') & Tosco (2001: 'áyyì 'sheep and goats')",
-          "audioFile": null
-        },
-        {
-          "english": "Camel",
-          "translation": "gáàl (pl. gáàllí)",
-          "pronunciation": "gaal / gaal-lee",
-          "context": "Nishiguchi (2004, p. 6: gaal 'camel', gaal-li 'camels') < East Cushitic *gaal-",
-          "audioFile": null
-        },
-        {
-          "english": "Donkey",
-          "translation": "'ólò (pl. 'ólòddí)",
-          "pronunciation": "oh-loh / oh-lod-dee",
-          "context": "Documented by Höhnel (1894, p. 166) and Tosco (2001) among the Reshiat/Daasanach",
-          "audioFile": null
-        },
-        {
           "english": "Lion",
           "translation": "lúùb (pl. lúùbbú)",
           "pronunciation": "luub / luub-buu",
           "context": "Nishiguchi (2004, p. 4: luub 'lion') < East Cushitic *lub-",
-          "audioFile": null
-        },
-        {
-          "english": "Elephant",
-          "translation": "'árb (pl. 'árbú)",
-          "pronunciation": "ahrb / ahr-buu",
-          "context": "Nishiguchi (2004, p. 3: arab 'elephant', arb-u 'elephants') < Cushitic *'arb-",
           "audioFile": null
         },
         {
@@ -474,10 +404,24 @@
           "audioFile": null
         },
         {
-          "english": "Crocodile",
-          "translation": "nyáàng (pl. nyáàngú)",
-          "pronunciation": "nyaang / nyaang-uu",
-          "context": "Nishiguchi (2004, p. 4: nyaang 'crocodile') — Lake Turkana ecology",
+          "english": "Horn",
+          "translation": "gáàs (pl. gáàsú)",
+          "pronunciation": "gaas / gaa-suu",
+          "context": "Blažek (2011, p. 7, #41 'horn' < Cushitic *gaas-; Tosco 2001 p. 488)",
+          "audioFile": null
+        },
+        {
+          "english": "Tail",
+          "translation": "hèèk (pl. hèèkkú)",
+          "pronunciation": "heek / heek-kuu",
+          "context": "Blažek (2011, p. 10, #85 'tail', citing Tosco 2001 p. 496)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel",
+          "translation": "gáàl (pl. gáàllí)",
+          "pronunciation": "gaal / gaal-lee",
+          "context": "Nishiguchi (2004, p. 6: gaal 'camel', gaal-li 'camels') < East Cushitic *gaal-",
           "audioFile": null
         },
         {
@@ -495,17 +439,38 @@
           "audioFile": null
         },
         {
-          "english": "Horn",
-          "translation": "gáàs (pl. gáàsú)",
-          "pronunciation": "gaas / gaa-suu",
-          "context": "Blažek (2011, p. 7, #41 'horn' < Cushitic *gaas-; Tosco 2001 p. 488)",
+          "english": "Donkey",
+          "translation": "'ólò (pl. 'ólòddí)",
+          "pronunciation": "oh-loh / oh-lod-dee",
+          "context": "Documented by Höhnel (1894, p. 166) and Tosco (2001) among the Reshiat/Daasanach",
           "audioFile": null
         },
         {
-          "english": "Tail",
-          "translation": "hèèk (pl. hèèkkú)",
-          "pronunciation": "heek / heek-kuu",
-          "context": "Blažek (2011, p. 10, #85 'tail', citing Tosco 2001 p. 496)",
+          "english": "Elephant",
+          "translation": "'árb (pl. 'árbú)",
+          "pronunciation": "ahrb / ahr-buu",
+          "context": "Nishiguchi (2004, p. 3: arab 'elephant', arb-u 'elephants') < Cushitic *'arb-",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "nyáàng (pl. nyáàngú)",
+          "pronunciation": "nyaang / nyaang-uu",
+          "context": "Nishiguchi (2004, p. 4: nyaang 'crocodile') — Lake Turkana ecology",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "sé (pl. gùù)",
+          "pronunciation": "seh / guu",
+          "context": "Blažek (2011, p. 6, #18 'cow' < Cushitic *sa'-; Tosco 2001 p. 517; Nishiguchi 2004, p. 6: guo 'cattle')",
+          "audioFile": null
+        },
+        {
+          "english": "Goat / Small stock",
+          "translation": "'áyyì / rí (pl. ríddí)",
+          "pronunciation": "ahy-yee / ree / reed-dee",
+          "context": "Nishiguchi (2004, p. 11: rii 'goat') & Tosco (2001: 'áyyì 'sheep and goats')",
           "audioFile": null
         }
       ]
@@ -516,31 +481,10 @@
       "icon": "🌿",
       "entries": [
         {
-          "english": "Water",
-          "translation": "bíyé",
-          "pronunciation": "bee-yeh",
-          "context": "Blažek (2011, p. 10, #94 'water' < Omo-Tana *biy-; Tosco 2001 p. 470)",
-          "audioFile": null
-        },
-        {
           "english": "Fire",
           "translation": "gíè (pl. gíèddí)",
           "pronunciation": "gee-eh / gee-ed-dee",
           "context": "Blažek (2011, p. 6, #28 'fire', citing Tosco 2001 p. 492)",
-          "audioFile": null
-        },
-        {
-          "english": "Sun / Day",
-          "translation": "'áázù",
-          "pronunciation": "aa-zuu",
-          "context": "Blažek (2011, p. 10, #83 'sun' < East Cushitic *'ad-u; Tosco 2001 p. 466)",
-          "audioFile": null
-        },
-        {
-          "english": "Moon / Month",
-          "translation": "gùùr (pl. gùùrrí)",
-          "pronunciation": "guur / guur-ree",
-          "context": "Blažek (2011, p. 8, #53 'moon', citing Tosco 2001 p. 495)",
           "audioFile": null
         },
         {
@@ -551,73 +495,10 @@
           "audioFile": null
         },
         {
-          "english": "Rain / Sky / God",
-          "translation": "'írr (or Wáàg 'God/Sky')",
-          "pronunciation": "eerr / waag",
-          "context": "Blažek (2011, p. 9, #64 'rain', citing Tosco 2001 p. 500; Wáàg 'Supreme Deity/Sky')",
-          "audioFile": null
-        },
-        {
-          "english": "Cloud",
-          "translation": "kúùr (pl. kúùrrí)",
-          "pronunciation": "kuur / kuur-ree",
-          "context": "Blažek (2011, p. 5, #15 'cloud', citing Tosco 2001 p. 504)",
-          "audioFile": null
-        },
-        {
-          "english": "Smoke",
-          "translation": "'érr (pl. 'érrí)",
-          "pronunciation": "err / er-ree",
-          "context": "Blažek (2011, p. 9, #78 'smoke' < East Cushitic *'ar-; Tosco 2001 p. 475)",
-          "audioFile": null
-        },
-        {
-          "english": "Ash / Ashes",
-          "translation": "'éèg (pl. 'éèggú)",
-          "pronunciation": "eeg / eeg-guu",
-          "context": "Blažek (2011, p. 5, #3 'ashes', citing Tosco 2001 p. 474)",
-          "audioFile": null
-        },
-        {
-          "english": "Earth / Soil / Country",
-          "translation": "bìì (pl. bììddí)",
-          "pronunciation": "bee / beed-dee",
-          "context": "Blažek (2011, p. 6, #22 'earth' < East Cushitic *biyy-; Tosco 2001 p. 470)",
-          "audioFile": null
-        },
-        {
           "english": "Sand",
           "translation": "nyáàr",
           "pronunciation": "nyaar",
           "context": "Blažek (2011, p. 9, #69 'sand', citing Tosco 2001 p. 514)",
-          "audioFile": null
-        },
-        {
-          "english": "Stone / Rock",
-          "translation": "jáàr (sg. jáàr-tì, pl. jáàr-ù)",
-          "pronunciation": "jaar / jaar-tee",
-          "context": "Blažek (2011, p. 10, #82 'stone', citing Tosco 2001 p. 500)",
-          "audioFile": null
-        },
-        {
-          "english": "Mountain / Hill",
-          "translation": "wáàr (pl. wáàrrí)",
-          "pronunciation": "waar / waar-ree",
-          "context": "Blažek (2011, p. 8, #54 'mountain' < East Cushitic *war-; Tosco 2001 p. 523)",
-          "audioFile": null
-        },
-        {
-          "english": "Tree / Wood / Medicine",
-          "translation": "kór (sg. kór-tì, pl. kór-rì)",
-          "pronunciation": "kohr / kohr-tee / kohr-ree",
-          "context": "Blažek (2011, p. 10, #91 'tree' < East Cushitic *qor-; Tosco 2001 p. 503; Nishiguchi 2004, p. 6: kor / kor-ri)",
-          "audioFile": null
-        },
-        {
-          "english": "Bark of tree",
-          "translation": "góng kór-iet",
-          "pronunciation": "gohng kohr-yet",
-          "context": "Literally 'skin of tree' (Blažek 2011, p. 5, #4 'bark', citing Tosco 2001 p. 493)",
           "audioFile": null
         },
         {
@@ -642,6 +523,90 @@
           "audioFile": null
         },
         {
+          "english": "Water",
+          "translation": "bíyé",
+          "pronunciation": "bee-yeh",
+          "context": "Blažek (2011, p. 10, #94 'water' < Omo-Tana *biy-; Tosco 2001 p. 470)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloud",
+          "translation": "kúùr (pl. kúùrrí)",
+          "pronunciation": "kuur / kuur-ree",
+          "context": "Blažek (2011, p. 5, #15 'cloud', citing Tosco 2001 p. 504)",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "'érr (pl. 'érrí)",
+          "pronunciation": "err / er-ree",
+          "context": "Blažek (2011, p. 9, #78 'smoke' < East Cushitic *'ar-; Tosco 2001 p. 475)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun / Day",
+          "translation": "'áázù",
+          "pronunciation": "aa-zuu",
+          "context": "Blažek (2011, p. 10, #83 'sun' < East Cushitic *'ad-u; Tosco 2001 p. 466)",
+          "audioFile": null
+        },
+        {
+          "english": "Ash / Ashes",
+          "translation": "'éèg (pl. 'éèggú)",
+          "pronunciation": "eeg / eeg-guu",
+          "context": "Blažek (2011, p. 5, #3 'ashes', citing Tosco 2001 p. 474)",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "gùùr (pl. gùùrrí)",
+          "pronunciation": "guur / guur-ree",
+          "context": "Blažek (2011, p. 8, #53 'moon', citing Tosco 2001 p. 495)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "jáàr (sg. jáàr-tì, pl. jáàr-ù)",
+          "pronunciation": "jaar / jaar-tee",
+          "context": "Blažek (2011, p. 10, #82 'stone', citing Tosco 2001 p. 500)",
+          "audioFile": null
+        },
+        {
+          "english": "Bark of tree",
+          "translation": "góng kór-iet",
+          "pronunciation": "gohng kohr-yet",
+          "context": "Literally 'skin of tree' (Blažek 2011, p. 5, #4 'bark', citing Tosco 2001 p. 493)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "wáàr (pl. wáàrrí)",
+          "pronunciation": "waar / waar-ree",
+          "context": "Blažek (2011, p. 8, #54 'mountain' < East Cushitic *war-; Tosco 2001 p. 523)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain / Sky / God",
+          "translation": "'írr (or Wáàg 'God/Sky')",
+          "pronunciation": "eerr / waag",
+          "context": "Blažek (2011, p. 9, #64 'rain', citing Tosco 2001 p. 500; Wáàg 'Supreme Deity/Sky')",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Soil / Country",
+          "translation": "bìì (pl. bììddí)",
+          "pronunciation": "bee / beed-dee",
+          "context": "Blažek (2011, p. 6, #22 'earth' < East Cushitic *biyy-; Tosco 2001 p. 470)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood / Medicine",
+          "translation": "kór (sg. kór-tì, pl. kór-rì)",
+          "pronunciation": "kohr / kohr-tee / kohr-ree",
+          "context": "Blažek (2011, p. 10, #91 'tree' < East Cushitic *qor-; Tosco 2001 p. 503; Nishiguchi 2004, p. 6: kor / kor-ri)",
+          "audioFile": null
+        },
+        {
           "english": "River / Lake / Body of water",
           "translation": "nóòg (pl. nóòggú)",
           "pronunciation": "noog / noog-guu",
@@ -656,10 +621,10 @@
       "icon": "🍲",
       "entries": [
         {
-          "english": "Meat / Flesh",
-          "translation": "só (pl. sóddí)",
-          "pronunciation": "soh / sod-dee",
-          "context": "Blažek (2011, p. 6, #29 'flesh/meat' < Cushitic *so'-; Tosco 2001 p. 519)",
+          "english": "Egg",
+          "translation": "góngòl (sg. góngòl-tì, pl. góngòl-ù)",
+          "pronunciation": "gohn-gohl / gohn-gohl-tee",
+          "context": "Blažek (2011, p. 6, #24 'egg', citing Tosco 2001 p. 493)",
           "audioFile": null
         },
         {
@@ -670,6 +635,13 @@
           "audioFile": null
         },
         {
+          "english": "Meat / Flesh",
+          "translation": "só (pl. sóddí)",
+          "pronunciation": "soh / sod-dee",
+          "context": "Blažek (2011, p. 6, #29 'flesh/meat' < Cushitic *so'-; Tosco 2001 p. 519)",
+          "audioFile": null
+        },
+        {
           "english": "Fat / Oil / Butter",
           "translation": "súùb (pl. súùbbú)",
           "pronunciation": "suub / suub-buu",
@@ -677,10 +649,10 @@
           "audioFile": null
         },
         {
-          "english": "Egg",
-          "translation": "góngòl (sg. góngòl-tì, pl. góngòl-ù)",
-          "pronunciation": "gohn-gohl / gohn-gohl-tee",
-          "context": "Blažek (2011, p. 6, #24 'egg', citing Tosco 2001 p. 493)",
+          "english": "Coffee beans (roasted in butter for ceremonies)",
+          "translation": "bún",
+          "pronunciation": "boon",
+          "context": "Höhnel (1894, p. 167): traded from northern highlands and prepared in ritual blessings",
           "audioFile": null
         },
         {
@@ -688,13 +660,6 @@
           "translation": "rúùb",
           "pronunciation": "ruub",
           "context": "Höhnel (1894, p. 166) & Tosco (2001): staple grain cultivated along the Omo delta and Lake Turkana flats",
-          "audioFile": null
-        },
-        {
-          "english": "Coffee beans (roasted in butter for ceremonies)",
-          "translation": "bún",
-          "pronunciation": "boon",
-          "context": "Höhnel (1894, p. 167): traded from northern highlands and prepared in ritual blessings",
           "audioFile": null
         }
       ]
@@ -712,17 +677,17 @@
           "audioFile": null
         },
         {
-          "english": "Village / Settlement / Kraal",
-          "translation": "géléb",
-          "pronunciation": "geh-leb",
-          "context": "Traditional Daasanach dome-hut settlement along the Omo and Ileret shore (Höhnel 1894, pp. 163–167)",
-          "audioFile": null
-        },
-        {
           "english": "Road / Path / Way",
           "translation": "géric (pl. géric-u)",
           "pronunciation": "geh-rich / geh-rich-uu",
           "context": "Blažek (2011, p. 9, #66 'road', citing Tosco 2001 p. 491)",
+          "audioFile": null
+        },
+        {
+          "english": "Village / Settlement / Kraal",
+          "translation": "géléb",
+          "pronunciation": "geh-leb",
+          "context": "Traditional Daasanach dome-hut settlement along the Omo and Ileret shore (Höhnel 1894, pp. 163–167)",
           "audioFile": null
         },
         {
@@ -740,10 +705,10 @@
       "icon": "🏃",
       "entries": [
         {
-          "english": "To drink",
-          "translation": "'íik (Perf. 'íiyyì, Imperf. 'íik-à)",
-          "pronunciation": "eek / eey-yee / ee-kah",
-          "context": "Blažek (2011, p. 6, #20 'drink', citing Tosco 2001 p. 499; Nishiguchi 2004, p. 7)",
+          "english": "Name",
+          "translation": "mé (pl. méddí)",
+          "pronunciation": "meh / med-dee",
+          "context": "Blažek (2011, p. 8, #56 'name' < Cushitic *magac-; Tosco 2001 p. 509)",
           "audioFile": null
         },
         {
@@ -754,17 +719,31 @@
           "audioFile": null
         },
         {
-          "english": "To bite",
-          "translation": "gíìn (3f/2s Imperf. gíìn-nà)",
-          "pronunciation": "geen / geen-nah",
-          "context": "Blažek (2011, p. 5, #8 'bite' < Cushitic *qanin-; Tosco 2001 p. 492)",
-          "audioFile": null
-        },
-        {
           "english": "To see",
           "translation": "'árg (Imperf. 'árg-à)",
           "pronunciation": "ahrg / ahr-gah",
           "context": "Blažek (2011, p. 9, #72 'see' < East Cushitic *'arg-; Tosco 2001 p. 468)",
+          "audioFile": null
+        },
+        {
+          "english": "To die",
+          "translation": "kùf (3f/2s Imperf. kùf-fà < /kuf-ta/)",
+          "pronunciation": "koof / koof-fah",
+          "context": "Blažek (2011, p. 6, #18b 'die', citing Tosco 2001 p. 503; Nishiguchi 2004, p. 7)",
+          "audioFile": null
+        },
+        {
+          "english": "To dig",
+          "translation": "kót (3f/2s Imperf. kóttà < /kot-ta/)",
+          "pronunciation": "koht / koht-tah",
+          "context": "Nishiguchi (2004, p. 7: kot 'dig') < East Cushitic *qot-",
+          "audioFile": null
+        },
+        {
+          "english": "To bite",
+          "translation": "gíìn (3f/2s Imperf. gíìn-nà)",
+          "pronunciation": "geen / geen-nah",
+          "context": "Blažek (2011, p. 5, #8 'bite' < Cushitic *qanin-; Tosco 2001 p. 492)",
           "audioFile": null
         },
         {
@@ -782,20 +761,6 @@
           "audioFile": null
         },
         {
-          "english": "To sleep / lie down",
-          "translation": "ríf (3f/2s Imperf. ríf-fà < /rif-ta/)",
-          "pronunciation": "reef / reef-fah",
-          "context": "Blažek (2011, p. 9, #76 'sleep' < East Cushitic *raf-; Tosco 2001 p. 516; Nishiguchi 2004, p. 7)",
-          "audioFile": null
-        },
-        {
-          "english": "To die",
-          "translation": "kùf (3f/2s Imperf. kùf-fà < /kuf-ta/)",
-          "pronunciation": "koof / koof-fah",
-          "context": "Blažek (2011, p. 6, #18b 'die', citing Tosco 2001 p. 503; Nishiguchi 2004, p. 7)",
-          "audioFile": null
-        },
-        {
           "english": "To kill",
           "translation": "nyéèdh (or 'íìs)",
           "pronunciation": "nyeedh / ees",
@@ -810,59 +775,10 @@
           "audioFile": null
         },
         {
-          "english": "To walk / go",
-          "translation": "sédh (3f/2s Imperf. sété < /sedh-ta/)",
-          "pronunciation": "sedh / seh-teh",
-          "context": "Blažek (2011, p. 10, #93 'walk' < East Cushitic *socd-; Nishiguchi 2004, p. 7: sedh)",
-          "audioFile": null
-        },
-        {
-          "english": "To fly",
-          "translation": "báàr (3f/2s Imperf. báàr-rà < /baar-ta/)",
-          "pronunciation": "baar / baar-rah",
-          "context": "Blažek (2011, p. 6, #29b 'fly' < East Cushitic *barar-; Tosco 2001 p. 468)",
-          "audioFile": null
-        },
-        {
           "english": "To give",
           "translation": "shíì (or 'úùb)",
           "pronunciation": "shee / uub",
           "context": "Blažek (2011, p. 7, #32 'give' < East Cushitic *siiy-; Tosco 2001 p. 518)",
-          "audioFile": null
-        },
-        {
-          "english": "To say / speak",
-          "translation": "léè (or dhéè)",
-          "pronunciation": "lee / dhee",
-          "context": "Blažek (2011, p. 9, #71 'say' < Cushitic *l-h / *dhah-; Tosco 2001 p. 505)",
-          "audioFile": null
-        },
-        {
-          "english": "To stand",
-          "translation": "'áàl (3f/2s Imperf. 'áàl-là)",
-          "pronunciation": "aal / aal-lah",
-          "context": "Blažek (2011, p. 10, #80 'stand', citing Tosco 2001 p. 466)",
-          "audioFile": null
-        },
-        {
-          "english": "To sit / stay",
-          "translation": "táà (or kíì)",
-          "pronunciation": "taa / kee",
-          "context": "Blažek (2011, p. 9, #74 'sit', citing Tosco 2001 p. 501)",
-          "audioFile": null
-        },
-        {
-          "english": "To burn (intransitive)",
-          "translation": "bóòch (or gúùb)",
-          "pronunciation": "booch / guub",
-          "context": "Blažek (2011, p. 5, #13 'burn' < East Cushitic *gub-; Tosco 2001 p. 471)",
-          "audioFile": null
-        },
-        {
-          "english": "To swim",
-          "translation": "zààk (Imperf. zààk-à)",
-          "pronunciation": "zaak / zaa-kah",
-          "context": "Blažek (2011, p. 10, #84 'swim' < East Cushitic *zaak-; Tosco 2001 p. 526)",
           "audioFile": null
         },
         {
@@ -873,10 +789,66 @@
           "audioFile": null
         },
         {
-          "english": "To dig",
-          "translation": "kót (3f/2s Imperf. kóttà < /kot-ta/)",
-          "pronunciation": "koht / koht-tah",
-          "context": "Nishiguchi (2004, p. 7: kot 'dig') < East Cushitic *qot-",
+          "english": "To drink",
+          "translation": "'íik (Perf. 'íiyyì, Imperf. 'íik-à)",
+          "pronunciation": "eek / eey-yee / ee-kah",
+          "context": "Blažek (2011, p. 6, #20 'drink', citing Tosco 2001 p. 499; Nishiguchi 2004, p. 7)",
+          "audioFile": null
+        },
+        {
+          "english": "To stand",
+          "translation": "'áàl (3f/2s Imperf. 'áàl-là)",
+          "pronunciation": "aal / aal-lah",
+          "context": "Blažek (2011, p. 10, #80 'stand', citing Tosco 2001 p. 466)",
+          "audioFile": null
+        },
+        {
+          "english": "To walk / go",
+          "translation": "sédh (3f/2s Imperf. sété < /sedh-ta/)",
+          "pronunciation": "sedh / seh-teh",
+          "context": "Blažek (2011, p. 10, #93 'walk' < East Cushitic *socd-; Nishiguchi 2004, p. 7: sedh)",
+          "audioFile": null
+        },
+        {
+          "english": "To sit / stay",
+          "translation": "táà (or kíì)",
+          "pronunciation": "taa / kee",
+          "context": "Blažek (2011, p. 9, #74 'sit', citing Tosco 2001 p. 501)",
+          "audioFile": null
+        },
+        {
+          "english": "To say / speak",
+          "translation": "léè (or dhéè)",
+          "pronunciation": "lee / dhee",
+          "context": "Blažek (2011, p. 9, #71 'say' < Cushitic *l-h / *dhah-; Tosco 2001 p. 505)",
+          "audioFile": null
+        },
+        {
+          "english": "To sleep / lie down",
+          "translation": "ríf (3f/2s Imperf. ríf-fà < /rif-ta/)",
+          "pronunciation": "reef / reef-fah",
+          "context": "Blažek (2011, p. 9, #76 'sleep' < East Cushitic *raf-; Tosco 2001 p. 516; Nishiguchi 2004, p. 7)",
+          "audioFile": null
+        },
+        {
+          "english": "To burn (intransitive)",
+          "translation": "bóòch (or gúùb)",
+          "pronunciation": "booch / guub",
+          "context": "Blažek (2011, p. 5, #13 'burn' < East Cushitic *gub-; Tosco 2001 p. 471)",
+          "audioFile": null
+        },
+        {
+          "english": "To fly",
+          "translation": "báàr (3f/2s Imperf. báàr-rà < /baar-ta/)",
+          "pronunciation": "baar / baar-rah",
+          "context": "Blažek (2011, p. 6, #29b 'fly' < East Cushitic *barar-; Tosco 2001 p. 468)",
+          "audioFile": null
+        },
+        {
+          "english": "To swim",
+          "translation": "zààk (Imperf. zààk-à)",
+          "pronunciation": "zaak / zaa-kah",
+          "context": "Blažek (2011, p. 10, #84 'swim' < East Cushitic *zaak-; Tosco 2001 p. 526)",
           "audioFile": null
         }
       ]
@@ -886,6 +858,55 @@
       "name": "Adjectives, Qualities & Grammar",
       "icon": "✨",
       "entries": [
+        {
+          "english": "New",
+          "translation": "káàyà",
+          "pronunciation": "kaa-yah",
+          "context": "Blažek (2011, p. 8, #58 'new', citing Tosco 2001 p. 500)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry",
+          "translation": "gógà",
+          "pronunciation": "goh-gah",
+          "context": "Blažek (2011, p. 6, #20b 'dry' < East Cushitic *gog-; Tosco 2001 p. 493)",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "búùr",
+          "pronunciation": "buur",
+          "context": "Blažek (2011, p. 9, #65 'red' < East Cushitic *boor-; Tosco 2001 p. 472)",
+          "audioFile": null
+        },
+        {
+          "english": "Full",
+          "translation": "múùg",
+          "pronunciation": "muug",
+          "context": "Blažek (2011, p. 7, #31 'full' < East Cushitic *mug-; Tosco 2001 p. 511)",
+          "audioFile": null
+        },
+        {
+          "english": "Cold",
+          "translation": "dhéèb (or qábà)",
+          "pronunciation": "dheeb / qah-bah",
+          "context": "Blažek (2011, p. 5, #16 'cold' < Cushitic *qab-; Tosco 2001 p. 473)",
+          "audioFile": null
+        },
+        {
+          "english": "Round",
+          "translation": "múùl",
+          "pronunciation": "muul",
+          "context": "Blažek (2011, p. 9, #68 'round' < East Cushitic *mul-; Tosco 2001 p. 511)",
+          "audioFile": null
+        },
+        {
+          "english": "Warm / Hot",
+          "translation": "kúùl",
+          "pronunciation": "kuul",
+          "context": "Blažek (2011, p. 10, #92 'warm' < East Cushitic *kulul-; Tosco 2001 p. 504)",
+          "audioFile": null
+        },
         {
           "english": "All / Whole",
           "translation": "lábà",
@@ -898,20 +919,6 @@
           "translation": "búr (or gùddá)",
           "pronunciation": "boor / good-daa",
           "context": "Blažek (2011, p. 8, #52 'many', citing Tosco 2001 p. 471)",
-          "audioFile": null
-        },
-        {
-          "english": "Big / Large / Great",
-          "translation": "gùddá (or wòl)",
-          "pronunciation": "good-daa / wohl",
-          "context": "Blažek (2011, p. 5, #6 'big', citing Tosco 2001 p. 494)",
-          "audioFile": null
-        },
-        {
-          "english": "Small / Little",
-          "translation": "nììní",
-          "pronunciation": "nee-nee",
-          "context": "Blažek (2011, p. 9, #77 'small' < East Cushitic *ninni; Tosco 2001 p. 514)",
           "audioFile": null
         },
         {
@@ -929,45 +936,17 @@
           "audioFile": null
         },
         {
-          "english": "New",
-          "translation": "káàyà",
-          "pronunciation": "kaa-yah",
-          "context": "Blažek (2011, p. 8, #58 'new', citing Tosco 2001 p. 500)",
-          "audioFile": null
-        },
-        {
-          "english": "Full",
-          "translation": "múùg",
-          "pronunciation": "muug",
-          "context": "Blažek (2011, p. 7, #31 'full' < East Cushitic *mug-; Tosco 2001 p. 511)",
-          "audioFile": null
-        },
-        {
-          "english": "Dry",
-          "translation": "gógà",
-          "pronunciation": "goh-gah",
-          "context": "Blažek (2011, p. 6, #20b 'dry' < East Cushitic *gog-; Tosco 2001 p. 493)",
-          "audioFile": null
-        },
-        {
-          "english": "Cold",
-          "translation": "dhéèb (or qábà)",
-          "pronunciation": "dheeb / qah-bah",
-          "context": "Blažek (2011, p. 5, #16 'cold' < Cushitic *qab-; Tosco 2001 p. 473)",
-          "audioFile": null
-        },
-        {
-          "english": "Warm / Hot",
-          "translation": "kúùl",
-          "pronunciation": "kuul",
-          "context": "Blažek (2011, p. 10, #92 'warm' < East Cushitic *kulul-; Tosco 2001 p. 504)",
-          "audioFile": null
-        },
-        {
           "english": "Black / Dark",
           "translation": "'úrù",
           "pronunciation": "oo-ruu",
           "context": "Blažek (2011, p. 5, #8b 'black', citing Tosco 2001 p. 523)",
+          "audioFile": null
+        },
+        {
+          "english": "Small / Little",
+          "translation": "nììní",
+          "pronunciation": "nee-nee",
+          "context": "Blažek (2011, p. 9, #77 'small' < East Cushitic *ninni; Tosco 2001 p. 514)",
           "audioFile": null
         },
         {
@@ -978,10 +957,10 @@
           "audioFile": null
         },
         {
-          "english": "Red",
-          "translation": "búùr",
-          "pronunciation": "buur",
-          "context": "Blažek (2011, p. 9, #65 'red' < East Cushitic *boor-; Tosco 2001 p. 472)",
+          "english": "Big / Large / Great",
+          "translation": "gùddá (or wòl)",
+          "pronunciation": "good-daa / wohl",
+          "context": "Blažek (2011, p. 5, #6 'big', citing Tosco 2001 p. 494)",
           "audioFile": null
         },
         {
@@ -996,13 +975,6 @@
           "translation": "cháàr",
           "pronunciation": "chaar",
           "context": "Blažek (2011, p. 11, #100 'yellow', citing Tosco 2001 p. 471)",
-          "audioFile": null
-        },
-        {
-          "english": "Round",
-          "translation": "múùl",
-          "pronunciation": "muul",
-          "context": "Blažek (2011, p. 9, #68 'round' < East Cushitic *mul-; Tosco 2001 p. 511)",
           "audioFile": null
         }
       ]
@@ -1034,10 +1006,24 @@
       "icon": "🗣️",
       "entries": [
         {
-          "english": "This (proximal demonstrative)",
-          "translation": "hé (fem. té, pl. kú)",
-          "pronunciation": "heh / teh / kuu",
-          "context": "Blažek (2011, p. 10, #87 'this', citing Tosco 2001 p. 496)",
+          "english": "One hundred (100)",
+          "translation": "dììb",
+          "pronunciation": "deeb",
+          "context": "Loan from Oromo dhibba '100' (Blažek 2011, p. 4, citing Tosco 2001 p. 207)",
+          "audioFile": null
+        },
+        {
+          "english": "Yes (affirmative)",
+          "translation": "ee / ii",
+          "pronunciation": "ee / ii",
+          "context": "Daasanach affirmative particle (Tosco 2001 / Blažek 2011)",
+          "audioFile": null
+        },
+        {
+          "english": "One thousand (1,000)",
+          "translation": "kúùm",
+          "pronunciation": "kuum",
+          "context": "Loan from Oromo kuma '1,000' (Blažek 2011, p. 4, citing Tosco 2001 p. 207)",
           "audioFile": null
         },
         {
@@ -1052,6 +1038,20 @@
           "translation": "máà? / yáà?",
           "pronunciation": "maa / yaa",
           "context": "Blažek (2011, p. 10, #98 'who?', citing Tosco 2001 p. 506)",
+          "audioFile": null
+        },
+        {
+          "english": "No / Not (negative particle)",
+          "translation": "ma / m'ning",
+          "pronunciation": "mah / m-ning",
+          "context": "Daasanach negative particle (Tosco 2001 / Blažek 2011)",
+          "audioFile": null
+        },
+        {
+          "english": "This (proximal demonstrative)",
+          "translation": "hé (fem. té, pl. kú)",
+          "pronunciation": "heh / teh / kuu",
+          "context": "Blažek (2011, p. 10, #87 'this', citing Tosco 2001 p. 496)",
           "audioFile": null
         },
         {
@@ -1076,17 +1076,17 @@
           "audioFile": null
         },
         {
-          "english": "Eight Daasanach territorial sections / tribal moieties (Shir) around Lake Turkana and the Omo Delta",
-          "translation": "'Ínkoria, Nààríc, Ràndál, Koro, 'Órò, Ríìlè, Ngólòbò, 'Éléle",
-          "pronunciation": "een-koh-ree-ah, naa-reech, rahn-dahl, koh-roh, oh-roh, ree-leh",
-          "context": "Eight endogamous territorial tribal sections (shir) of the Daasanach nation, including 'Inkoria and Naaric in Kenya/Ethiopia plus Randal (Rendille-origin) and Koro (Samburu-origin) sections (Almagor 1978 / Tosco 2001)",
-          "audioFile": null
-        },
-        {
           "english": "Historical 1888 Reshiat (Daasanach) settlements at the north end of Lake Rudolf (Turkana)",
           "translation": "Reshiat (Dhaasanac), Buma, Marle (Arbore)",
           "pronunciation": "reh-shee-aht, boo-mah, mahr-leh",
           "context": "Documented firsthand by Lieut. Ludwig von Höhnel & Count Samuel Teleki in March–April 1888 ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 161–175)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight Daasanach territorial sections / tribal moieties (Shir) around Lake Turkana and the Omo Delta",
+          "translation": "'Ínkoria, Nààríc, Ràndál, Koro, 'Órò, Ríìlè, Ngólòbò, 'Éléle",
+          "pronunciation": "een-koh-ree-ah, naa-reech, rahn-dahl, koh-roh, oh-roh, ree-leh",
+          "context": "Eight endogamous territorial tribal sections (shir) of the Daasanach nation, including 'Inkoria and Naaric in Kenya/Ethiopia plus Randal (Rendille-origin) and Koro (Samburu-origin) sections (Almagor 1978 / Tosco 2001)",
           "audioFile": null
         }
       ]

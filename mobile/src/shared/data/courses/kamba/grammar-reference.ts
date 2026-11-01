@@ -200,14 +200,14 @@ export const KAMBA_GRAMMAR_SECTIONS: KambaGrammarSection[] = [
     "content": "1. **Archival & Open-Dataset Integration for Kamba (Kĩkamba)**:\n   - Combines primary historical documentation (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920, BFBS 1921, Jones & Freyer 2019) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
-        "kamba": "wa téne • nsáu",
-        "english": "Old • New",
+        "kamba": "wa téne • mweu (nsau)",
+        "english": "Ancient (of old) • White / Pure",
         "explanation": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
       },
       {
-        "kamba": "muthenia monthe (Ulu) / matuk oonde (Nganyawa) • Nominal Damages",
-        "english": "always • Injury / Offence",
-        "explanation": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+        "kamba": "muthenia monthe (Ulu) / matuku onthe • King'ole • Kĩthito",
+        "english": "Always (every day) • Supreme communal tribunal • Judicial oath-object",
+        "explanation": "Hildegarde Hinde (1904) & C. W. Hobley (1910, pp. 78–84)"
       }
     ]
   }

@@ -52,61 +52,61 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sopai! (resp. Epa! / Hepa!) / Takwenya! (resp. Iko! / Igho!)",
             "source": "Greetings to warriors/men! / Greetings to women/elders!",
-            "pronunciation": "soh-pah-ee / eh-pah / tah-kweh-nyah / ee-koh",
+            "pronunciation": "so-pai / takwenya",
             "hint": "Hinde (1901, p. 41) & Hollis (1905, pp. 101–102, 284–285) salutations"
           },
           {
             "target": "Ashe (Ashe oleng) / Eserian (Sere!)",
             "source": "Thank you (very much) / Peace (Goodbye in peace!)",
-            "pronunciation": "ah-sheh oh-lehng / eh-seh-ree-ahn / seh-reh",
+            "pronunciation": "ashe / e-se-rian",
             "hint": "Gratitude & farewell peace blessing (Hollis 1905, p. 287)"
           },
           {
             "target": "ɛn-kái (Eng-ai)",
             "source": "God / Sky / Rain",
-            "pronunciation": "ehn-kah-ee",
+            "pronunciation": "en-kai",
             "hint": "Feminine noun prefix en- (Hollis 1905, p. 264 & Hobley 1922)"
           },
           {
             "target": "ol-murani (pl. il-muran)",
             "source": "Warrior (pl. Warriors)",
-            "pronunciation": "ohl-moo-rah-nee / eel-moo-rahn",
+            "pronunciation": "ol-murani",
             "hint": "Hollis (1905, p. 18) Class I noun & Hobley (1922, p. 307)"
           },
           {
             "target": "ol-oiboni (pl. il-oibonok)",
             "source": "Medicine-man / Ritual prophet / Seer",
-            "pronunciation": "ohl-oh-ee-boh-nee / eel-oh-ee-boh-nohk",
+            "pronunciation": "ol-oiboni",
             "hint": "Hollis (1905, pp. 21, 324) & Hobley (1922, p. 307)"
           },
           {
             "target": "ol-tungani (pl. il-tungana) / en-gerai (pl. in-gera)",
             "source": "Person, Man (pl. People) / Child (pl. Children)",
-            "pronunciation": "ohl-toon-gah-nee / ehn-geh-rah-ee",
+            "pronunciation": "ol-tungani / en-gerai",
             "hint": "Hollis (1905, pp. 18, 33) nouns"
           },
           {
             "target": "en-giteng (pl. in-gishu)",
             "source": "Cow (pl. Cattle)",
-            "pronunciation": "ehn-gee-tehng / een-gee-shoo",
+            "pronunciation": "en-giteng",
             "hint": "Hinde (1901) & Hollis (1905, p. 33) Class VI suppletive plural"
           },
           {
             "target": "ol-ŋatúny / e-ŋatúny",
             "source": "Male lion / Lioness",
-            "pronunciation": "ohl-ngah-toony / eh-ngah-toony",
+            "pronunciation": "ol-ngatuny / e-ngatuny",
             "hint": "Masculine ol- vs. Feminine e- prefix (Hollis 1905, p. 10)"
           },
           {
             "target": "ɛŋ-kár-ɛ́ (en-gare) / kulle (kule)",
             "source": "Water, River / Milk",
-            "pronunciation": "ehn-gah-reh / koo-leh",
+            "pronunciation": "eng-kar-e / kulle",
             "hint": "Hinde (1901) & Hollis (1905, p. 287) pastoral liquids"
           },
           {
             "target": "eng-aji (pl. ing-ajijik) / eng-ang (pl. ing-angite)",
             "source": "House, Hut / Homestead kraal",
-            "pronunciation": "ehng-ah-jee / ehng-ahng",
+            "pronunciation": "eng-aji / eng-ang",
             "hint": "Hollis (1905, pp. 24, 27)"
           }
         ],
@@ -114,6 +114,14 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sopai! Epa! Kejaa in-gishu o in-gera?",
             "source": "Greetings! Reply! How are the cattle and the children?"
+          },
+          {
+            "target": "Kiyiolo enkarna Sopai! taata.",
+            "source": "We know the expression greetings to warriors today."
+          },
+          {
+            "target": "Eirorie ilpayiani Ashe engang.",
+            "source": "The elders spoke of thank you at the homestead."
           }
         ],
         "authoredExercises": [
@@ -224,61 +232,61 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "nabô (f.) / obô (m.) / nebô (place)",
             "source": "One (1)",
-            "pronunciation": "nah-boh / oh-boh / neh-boh",
+            "pronunciation": "na-bo / obo / ne-bo",
             "hint": "Three-way gender agreement (Hollis 1905, p. 39)"
           },
           {
             "target": "aré (f.) / aàre (m.)",
             "source": "Two (2)",
-            "pronunciation": "ah-reh / ah-ah-reh",
+            "pronunciation": "are / aa-re",
             "hint": "Feminine vs. masculine 2 (Hollis 1905, p. 39)"
           },
           {
             "target": "uní (f.) / okúni (m.)",
             "source": "Three (3)",
-            "pronunciation": "oo-nee / oh-koo-nee",
+            "pronunciation": "uni / o-ku-ni",
             "hint": "Feminine vs. masculine 3 (Hollis 1905, p. 39)"
           },
           {
             "target": "oŋwán (f.) / oóŋwan (m.)",
             "source": "Four (4)",
-            "pronunciation": "oh-ngwahn",
+            "pronunciation": "ongwan / oongwan",
             "hint": "Feminine vs. masculine 4 (Hollis 1905, p. 39)"
           },
           {
             "target": "ímíêt / ílɛ̂",
             "source": "Five (5) / Six (6)",
-            "pronunciation": "ee-mee-eht / ee-leh",
+            "pronunciation": "i-miet / ile",
             "hint": "Cardinals 5 & 6 (Hollis 1905, p. 39)"
           },
           {
             "target": "naápishana (f.) / oópishana (m.)",
             "source": "Seven (7)",
-            "pronunciation": "nah-ah-pee-shah-nah",
+            "pronunciation": "naa-pisha-na / oo-pisha-na",
             "hint": "Gendered cardinal 7 (Hollis 1905, p. 39)"
           },
           {
             "target": "ísíêt / naáudo (oódó) / tɔ́mɔ̂n",
             "source": "Eight (8) / Nine (9) / Ten (10)",
-            "pronunciation": "ee-see-eht / nah-oo-doh / toh-mohn",
+            "pronunciation": "i-siet / naau-do / to-mon",
             "hint": "Cardinals 8, 9, & 10 (Hollis 1905, p. 39)"
           },
           {
             "target": "Eata en-gewarie 'n-giyaa",
             "source": "The night has ears (Hollis 1905, p. 238, Proverb #3)",
-            "pronunciation": "eh-ah-tah ehn-geh-wah-ree-eh n-gee-yah",
+            "pronunciation": "ea-ta en-gewarie 'n-giyaa",
             "hint": "Walls have ears"
           },
           {
             "target": "Ekwenikye 'n-guk in-guruon",
             "source": "Coals laugh at the ashes (Hollis 1905, p. 239, Proverb #6)",
-            "pronunciation": "eh-kweh-nee-kyeh n-gook een-goo-roo-ohn",
+            "pronunciation": "ekwe-nikye 'n-guk in-guruon",
             "hint": "Warning against hubris"
           },
           {
             "target": "Medany ol-kimojino obo el-lashei",
             "source": "One finger will not kill a louse (Hollis 1905, p. 244, Proverb #32)",
-            "pronunciation": "meh-dahny ohl-kee-moh-jee-noh oh-boh ehl-lah-shey",
+            "pronunciation": "me-dany ol-kimojino obo el-lashei",
             "hint": "Unity is strength (el-lashei = the louse)"
           }
         ],
@@ -409,61 +417,61 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "En-gare Nyrobi / Ngongo Bagas",
             "source": "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)",
-            "pronunciation": "ehn-gah-reh ny-roh-bee / ngohn-goh bah-gahs",
+            "pronunciation": "en-gare nyro-bi / ngongo ba-gas",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "Ol-doinyo Oibor / Ol-doinyo Oger (Oldonyo gēri)",
             "source": "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)",
-            "pronunciation": "ohl-doy-nyoh oy-bohr / ohl-doy-nyoh oh-gehr",
+            "pronunciation": "ol-doinyo oi-bor / ol-doinyo o-ger",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "E-waso Ngiro / En-aiposha (Enaibasha)",
             "source": "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)",
-            "pronunciation": "eh-wah-soh n-gee-roh / eh-nah-ee-poh-shah",
+            "pronunciation": "e-waso ngi-ro / en-aiposha",
             "hint": "Hinde (1901, p. 42) & Hollis (1905, p. 260)"
           },
           {
             "target": "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)",
             "source": "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)",
-            "pronunciation": "l-oo-doh-kee-shoo / l-oo-rook-kee-shoo",
+            "pronunciation": "'l-oodo-kishu / 'l-oorook-kishu",
             "hint": "'N-Gidongi (Oloiboni's family) belongs to 'L-Aiser; Il-Kipuyoni (smiths) to Il-Molelyan"
           },
           {
             "target": "E-murata / E-unoto (Ol-aunoni) / Ol-ngesher",
             "source": "Circumcision Initiation / Warrior Graduation (Selection of Chief) / Elderhood Ceremony",
-            "pronunciation": "eh-moo-rah-tah / eh-oo-noh-toh / ohl-ngeh-shehr",
+            "pronunciation": "e-murata / e-unoto / ol-ngesher",
             "hint": "Hollis (1905, pp. 294–302) age-grade ceremonies"
           },
           {
             "target": "en-gujit / o-sotwa",
             "source": "Sacred pasture grass held in peace and prayer / Peace covenant",
-            "pronunciation": "ehn-goo-jeet / oh-soh-twah",
+            "pronunciation": "en-gujit / o-sotwa",
             "hint": "Hollis (1905, pp. 289, 321–322)"
           },
           {
             "target": "Eng-ai Narok / Eng-ai Nanyokye",
             "source": "The Benevolent Black Rain-giving God / The Fierce Red Sky God",
-            "pronunciation": "ehng-ah-ee nah-rohk / ehng-ah-ee nah-nyoh-kyeh",
+            "pronunciation": "eng-ai na-rok / eng-ai nanyokye",
             "hint": "Hollis (1905, p. 264)"
           },
           {
             "target": "em-bere (pl. im-beria) / el-longo (pl. il-longoi)",
             "source": "Spear / Shield",
-            "pronunciation": "ehm-beh-reh / ehl-lohn-goh",
+            "pronunciation": "em-bere / el-longo",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
             "target": "ol-alem (pl. il-alema) / o-rinka (pl. i-rinkan)",
             "source": "Sword (simi) / Club (rungu)",
-            "pronunciation": "ohl-ah-lehm / oh-reen-kah",
+            "pronunciation": "ol-alem / o-rinka",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
             "target": "Tigha eng-auo, miigh eng-ongu",
             "source": "Hang up the bow, do not hang up the eye (Hollis 1905, p. 251, Proverb #75)",
-            "pronunciation": "tee-ghah ehng-ah-oo-oh mee-eegh ehng-ohn-goo",
+            "pronunciation": "tigha eng-auo miigh eng-ongu",
             "hint": "Remember that a guest is hungry when you lay aside his weapons"
           }
         ],
@@ -471,6 +479,14 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Medany ol-kimojino obo el-lashei.",
             "source": "One finger will not kill a louse (Hollis 1905, p. 244, Proverb #32)."
+          },
+          {
+            "target": "Kiyiolo enkarna En-gare Nyrobi taata.",
+            "source": "We know the expression nairobi today."
+          },
+          {
+            "target": "Eirorie ilpayiani Ol-doinyo Oibor engang.",
+            "source": "The elders spoke of white mountain at the homestead."
           }
         ],
         "authoredExercises": [
@@ -590,59 +606,68 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ol-chore (pl. il-choreta)",
             "source": "Friend",
-            "pronunciation": "ohl-choh-reh",
+            "pronunciation": "ol-chore",
             "hint": "Hollis 1905 Proverb #60 ('The lion does not eat his friend')"
           },
           {
             "target": "en-gerai (pl. in-gera)",
             "source": "Child",
-            "pronunciation": "ehn-geh-rah-ee / een-geh-rah",
+            "pronunciation": "en-gerai",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "en-gitok (pl. in-gituak) / en-goroyioni (wife)",
             "source": "Woman",
-            "pronunciation": "ehn-gee-tohk / ehn-goh-roh-yoh-nee",
+            "pronunciation": "en-gitok / en-goroyioni",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "yeyo (ngotonye = his/her mother)",
             "source": "Mother",
-            "pronunciation": "yeh-yoh / ngoh-toh-nyeh",
+            "pronunciation": "ye-yo",
             "hint": "Hollis 1905 Proverb #18 & Hinde 1901"
           },
           {
             "target": "papa (menye = his/her father)",
             "source": "Father",
-            "pronunciation": "pah-pah / meh-nyeh",
+            "pronunciation": "pa-pa",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "ɔl-aláshɛ̀ (olalashe)",
             "source": "Brother",
-            "pronunciation": "ɔl-aláshɛ̀ (olalashe)",
+            "pronunciation": "ol-alashe",
             "hint": "Wikipedia Maasai language — Noun classes"
           },
           {
             "target": "ngutunyi",
             "source": "Mother (your mother)",
-            "pronunciation": "ngutunyi",
+            "pronunciation": "ngu-tunyi",
             "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Riddle #8"
           },
           {
             "target": "enkitok",
             "source": "Respected woman / lady",
-            "pronunciation": "enkitok",
+            "pronunciation": "enki-tok",
             "hint": "Wiktionary Category:Maasai lemmas"
           },
           {
             "target": "ɛŋ-kárn-á (enkarna)",
             "source": "Name",
-            "pronunciation": "ɛŋ-kárn-á (enkarna)",
+            "pronunciation": "eng-karn-a",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Kiyiolo enkarna ol-chore taata.",
+            "source": "We know the expression friend today."
+          },
+          {
+            "target": "Eirorie ilpayiani en-gerai engang.",
+            "source": "The elders spoke of child at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -750,148 +775,107 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "ol-jekut (pl. il-jekuti)",
-            "source": "herdsman, shepherd",
-            "pronunciation": "ol-jekut (pl. il-jekuti)",
-            "hint": "Maasai (Hollis 1905, p. 240)"
-          },
-          {
             "target": "kore anganashe ingu?",
             "source": "Where is your sister?",
-            "pronunciation": "kore anganashe ingu?",
+            "pronunciation": "ko-re anga-nashe ingu",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "kore ngerai?",
             "source": "Where is the child?",
-            "pronunciation": "kore ngerai?",
+            "pronunciation": "ko-re nge-rai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "eyu nerigu ngerai nyenne?",
             "source": "Does he want to bring his child here?",
-            "pronunciation": "eyu nerigu ngerai nyenne?",
+            "pronunciation": "eyu ne-ri-gu nge-rai nyenne",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "aiyu naibot ngerai",
             "source": "I want to call the child",
-            "pronunciation": "aiyu naibot ngerai",
+            "pronunciation": "ai-yu nai-bot nge-rai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "aadang ngerai",
             "source": "I have a child",
-            "pronunciation": "aadang ngerai",
+            "pronunciation": "aa-dang nge-rai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "aada baba",
-            "source": "I have a father\\",
-            "pronunciation": "aada baba",
+            "source": "I have a father",
+            "pronunciation": "aa-da ba-ba",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "aara nanu yeyu",
-            "source": "I have a mother\\",
-            "pronunciation": "aara nanu yeyu",
+            "source": "I have a mother",
+            "pronunciation": "aa-ra na-nu ye-yu",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "ere ngerai",
             "source": "You (sing.) have a child",
-            "pronunciation": "ere ngerai",
+            "pronunciation": "ere nge-rai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
+          },
+          {
+            "target": "Eñgarai",
+            "source": "Son",
+            "pronunciation": "engga-rai"
           }
         ],
         "sentences": [
           {
-            "target": "kore anganashe ingu?",
-            "source": "Where is your sister?"
+            "target": "kore anganashe ingu? — kore ngerai?",
+            "source": "Where is your sister? — Where is the child?"
           },
           {
-            "target": "kore ngerai?",
-            "source": "Where is the child?"
-          },
-          {
-            "target": "eyu nerigu ngerai nyenne?",
-            "source": "Does he want to bring his child here?"
-          },
-          {
-            "target": "aiyu naibot ngerai",
-            "source": "I want to call the child"
+            "target": "eyu nerigu ngerai nyenne? — aiyu naibot ngerai",
+            "source": "Does he want to bring his child here? — I want to call the child"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ol-jekut (pl. il-jekuti)\" in Maasai?",
-            "correctAnswer": "herdsman, shepherd",
-            "options": [
-              "Where is your sister?",
-              "Where is the child?",
-              "Does he want to bring his child here?",
-              "herdsman, shepherd"
-            ],
-            "hint": "Maasai (Hollis 1905, p. 240)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kore anganashe ingu?\" in Maasai?",
+            "prompt": "What does \"kore anganashe ingu?\" mean in English?",
             "correctAnswer": "Where is your sister?",
             "options": [
-              "Where is the child?",
-              "Does he want to bring his child here?",
               "Where is your sister?",
-              "herdsman, shepherd"
-            ],
-            "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kore ngerai?\" in Maasai?",
-            "correctAnswer": "Where is the child?",
-            "options": [
-              "Does he want to bring his child here?",
               "Where is the child?",
-              "herdsman, shepherd",
-              "Where is your sister?"
+              "Does he want to bring his child here?",
+              "I want to call the child"
             ],
-            "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
+            "hint": "Core vocabulary in Clans, Marriage & Community Life"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Where is the child?\" in Maasai?",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Where is the child?\"",
             "correctAnswer": "kore ngerai?",
-            "options": [
+            "acceptedAnswers": [
               "kore ngerai?",
-              "ol-jekut (pl. il-jekuti)",
-              "kore anganashe ingu?",
-              "eyu nerigu ngerai nyenne?"
+              "kore ngerai?"
             ],
-            "hint": "kore ngerai?"
+            "hint": "Starts with \"ko\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Does he want to bring his child here?\" in Maasai?",
-            "correctAnswer": "eyu nerigu ngerai nyenne?",
-            "options": [
-              "ol-jekut (pl. il-jekuti)",
-              "kore anganashe ingu?",
-              "kore ngerai?",
-              "eyu nerigu ngerai nyenne?"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"eyu nerigu ngerai nyenne?\"",
+            "correctAnswer": "Does he want to bring his child here?",
+            "acceptedAnswers": [
+              "Does he want to bring his child here?",
+              "Does he want to bring his child here?"
             ],
-            "hint": "eyu nerigu ngerai nyenne?"
+            "hint": "Review Clans, Marriage & Community Life"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "ol-jekut (pl. il-jekuti): herdsman, shepherd",
+            "prompt": "Match each expression from Clans, Marriage & Community Life with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
-              {
-                "left": "ol-jekut (pl. il-jekuti)",
-                "right": "herdsman, shepherd"
-              },
               {
                 "left": "kore anganashe ingu?",
                 "right": "Where is your sister?"
@@ -903,20 +887,16 @@ export const MAASAI_UNITS: CourseUnit[] = [
               {
                 "left": "eyu nerigu ngerai nyenne?",
                 "right": "Does he want to bring his child here?"
+              },
+              {
+                "left": "aiyu naibot ngerai",
+                "right": "I want to call the child"
+              },
+              {
+                "left": "aadang ngerai",
+                "right": "I have a child"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"I want to call the child\": ___",
-            "correctAnswer": "aiyu naibot ngerai",
-            "options": [
-              "ol-jekut (pl. il-jekuti)",
-              "kore anganashe ingu?",
-              "kore ngerai?",
-              "aiyu naibot ngerai"
-            ],
-            "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           }
         ]
       }
@@ -939,59 +919,68 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "tɔ́mɔ̂n (tomon)",
             "source": "Ten",
-            "pronunciation": "toh-mohn",
+            "pronunciation": "to-mon",
             "hint": "Hollis 1905 p. 32 & Hinde 1901"
           },
           {
             "target": "naáudo (f.) / oódó (m.)",
             "source": "Nine",
-            "pronunciation": "nah-oo-doh / oh-doh",
+            "pronunciation": "naau-do / oo-do",
             "hint": "Hollis 1905 p. 32 & Hinde 1901"
           },
           {
             "target": "ísíêt (isiet)",
             "source": "Eight",
-            "pronunciation": "ee-see-eht",
+            "pronunciation": "i-siet",
             "hint": "Hollis 1905 p. 32 & Hinde 1901"
           },
           {
             "target": "ílɛ̂ (ile)",
             "source": "Six",
-            "pronunciation": "ee-leh",
+            "pronunciation": "ile",
             "hint": "Hollis 1905 p. 32 & Hinde 1901"
           },
           {
             "target": "ímíêt (imiet)",
             "source": "Five",
-            "pronunciation": "ee-mee-eht",
+            "pronunciation": "i-miet",
             "hint": "Hollis 1905 p. 32 & Hinde 1901"
           },
           {
             "target": "nabô (fem.) / obô (masc.) / nebô (place)",
             "source": "One (1) — feminine / masculine / place",
-            "pronunciation": "nabô (fem.) / obô (masc.) / nebô (place)",
+            "pronunciation": "na-bo / obo / ne-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "aré (fem.) / aàre, ɔáre (masc.)",
             "source": "Two (2) — feminine / masculine",
-            "pronunciation": "aré (fem.) / aàre, ɔáre (masc.)",
+            "pronunciation": "are / aa-re oa-re",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "uní (fem.) / okúni (masc.)",
             "source": "Three (3) — feminine / masculine",
-            "pronunciation": "uní (fem.) / okúni (masc.)",
+            "pronunciation": "uni / o-ku-ni",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "oŋwán (fem.) / oóŋwan (masc.)",
             "source": "Four (4) — feminine / masculine",
-            "pronunciation": "oŋwán (fem.) / oóŋwan (masc.)",
+            "pronunciation": "ongwan / oongwan",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Kiyiolo enkarna tɔ́mɔ̂n taata.",
+            "source": "We know the expression ten today."
+          },
+          {
+            "target": "Eirorie ilpayiani naáudo engang.",
+            "source": "The elders spoke of nine at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1077,66 +1066,70 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ímíêt",
             "source": "Five (5)",
-            "pronunciation": "ímíêt",
+            "pronunciation": "i-miet",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "ílɛ̂ / íllɛ̂",
             "source": "Six (6)",
-            "pronunciation": "ílɛ̂ / íllɛ̂",
+            "pronunciation": "ile / ille",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "naápishana (fem.) / oópishana (masc.)",
             "source": "Seven (7) — feminine / masculine",
-            "pronunciation": "naápishana (fem.) / oópishana (masc.)",
+            "pronunciation": "naa-pisha-na / oo-pisha-na",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "ísíêt",
             "source": "Eight (8)",
-            "pronunciation": "ísíêt",
+            "pronunciation": "i-siet",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "naáudo (fem.) / oódó (masc.)",
             "source": "Nine (9) — feminine / masculine",
-            "pronunciation": "naáudo (fem.) / oódó (masc.)",
+            "pronunciation": "naau-do / oo-do",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "tɔ́mɔ̂n",
             "source": "Ten (10)",
-            "pronunciation": "tɔ́mɔ̂n",
+            "pronunciation": "to-mon",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "Sekunde",
             "source": "Second (time unit)",
-            "pronunciation": "sekunde",
+            "pronunciation": "se-kunde",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "mereltungani, legai",
             "source": "Not this man, the other one",
-            "pronunciation": "mereltungani, legai",
+            "pronunciation": "me-reltunga-ni le-gai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "kumuk ndari nārok",
             "source": "Many black goats",
-            "pronunciation": "kumuk ndari nārok",
+            "pronunciation": "ku-muk nda-ri na-rok",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           }
         ],
         "sentences": [
           {
-            "target": "mereltungani, legai",
-            "source": "Not this man, the other one"
-          },
-          {
             "target": "kumuk ndari nārok",
             "source": "Many black goats"
+          },
+          {
+            "target": "Kiyiolo enkarna ímíêt taata.",
+            "source": "We know the expression five today."
+          },
+          {
+            "target": "Eirorie ilpayiani ílɛ̂ engang.",
+            "source": "The elders spoke of six at the homestead."
           }
         ],
         "authoredExercises": [
@@ -1256,47 +1249,56 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "en-aisijoi (enaisho = honey-wine)",
             "source": "Honey",
-            "pronunciation": "ehn-ah-ee-see-joy / eh-nah-ee-shoh",
+            "pronunciation": "en-aisijoi",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "en-giringo (pl. in-giri)",
             "source": "Meat",
-            "pronunciation": "ehn-gee-reen-goh",
+            "pronunciation": "en-giringo",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "en-gare (enkare)",
             "source": "Water",
-            "pronunciation": "ehn-gah-reh",
+            "pronunciation": "en-gare",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "en-daa (pl. in-daiki)",
             "source": "Food",
-            "pronunciation": "ehn-dah / een-dah-ee-kee",
+            "pronunciation": "en-daa",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "ol-mosorrî",
             "source": "Egg",
-            "pronunciation": "ol-mosorrî",
+            "pronunciation": "ol-mosorri",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
             "target": "kule",
             "source": "Milk",
-            "pronunciation": "kule",
+            "pronunciation": "ku-le",
             "hint": "Wiktionary Category:Maasai lemmas"
           },
           {
             "target": "ɛmʊtí (emuti)",
             "source": "Cooking pot",
-            "pronunciation": "ɛmʊtí (emuti)",
+            "pronunciation": "e-mu-ti",
             "hint": "Wikipedia Maasai language — Morphosyntax"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Kiyiolo enkarna en-aisijoi taata.",
+            "source": "We know the expression honey today."
+          },
+          {
+            "target": "Eirorie ilpayiani en-giringo engang.",
+            "source": "The elders spoke of meat at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1406,13 +1408,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "etwaowok",
             "source": "I will not drink",
-            "pronunciation": "etwaowok",
+            "pronunciation": "etwao-wok",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "mer ngare",
             "source": "No water",
-            "pronunciation": "mer ngare",
+            "pronunciation": "mer nga-re",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
@@ -1436,19 +1438,19 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "meiaw ngare",
             "source": "Do not bring water",
-            "pronunciation": "meiaw ngare",
+            "pronunciation": "meiaw nga-re",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "ainyo begenoss?",
             "source": "Why eat?",
-            "pronunciation": "ainyo begenoss?",
+            "pronunciation": "ainyo be-ge-noss",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "ainyo beiok?",
             "source": "Why drink?",
-            "pronunciation": "ainyo beiok?",
+            "pronunciation": "ainyo beiok",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           }
         ],
@@ -1526,156 +1528,125 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "el-lukunya (pl. il-lukuny)",
-            "source": "Head",
-            "pronunciation": "ehl-loo-koo-nyah",
-            "hint": "Hollis 1905 Proverb #59 & Hinde 1901"
-          },
-          {
-            "target": "eng-aina (pl. ing-aik)",
-            "source": "Hand",
-            "pronunciation": "ehng-ah-ee-nah",
-            "hint": "Hollis 1905 & Hinde 1901"
-          },
-          {
-            "target": "en-geju (pl. in-gejek)",
-            "source": "Foot",
-            "pronunciation": "ehn-geh-joo",
-            "hint": "Hollis 1905 Proverb #20 & Hinde 1901"
-          },
-          {
             "target": "eng-olong (pl. ing-olongi)",
             "source": "Day",
-            "pronunciation": "ehng-oh-lohng",
+            "pronunciation": "eng-olong",
             "hint": "Hollis 1905 & Hinde 1901"
-          },
-          {
-            "target": "eng-aji (pl. ing-ajijik) / eng-ang (kraal)",
-            "source": "House",
-            "pronunciation": "ehng-ah-jee / ehng-ahng",
-            "hint": "Hollis 1905 p. 15 & Hinde 1901"
           },
           {
             "target": "eng-ai (en-chan)",
             "source": "Rain",
-            "pronunciation": "ehng-ah-ee / ehn-chahn",
+            "pronunciation": "eng-ai",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "ol-akira (pl. il-akir)",
             "source": "Star",
-            "pronunciation": "ohl-ah-kee-rah",
+            "pronunciation": "ol-akira",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "ol-apa (pl. il-apaitin)",
             "source": "Moon",
-            "pronunciation": "ohl-ah-pah",
+            "pronunciation": "ol-apa",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "eng-olong (enkolong)",
             "source": "Sun",
-            "pronunciation": "ehng-oh-lohng",
+            "pronunciation": "eng-olong",
             "hint": "Hollis 1905 & Hinde 1901"
+          },
+          {
+            "target": "engoileli",
+            "source": "Dew",
+            "pronunciation": "engoi-le-li"
+          },
+          {
+            "target": "eserrengap",
+            "source": "Mud",
+            "pronunciation": "e-serrengap"
+          },
+          {
+            "target": "shomata",
+            "source": "Sky",
+            "pronunciation": "sho-ma-ta"
+          },
+          {
+            "target": "esserangap",
+            "source": "Clay",
+            "pronunciation": "esse-rangap"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "eng-olong — eng-ai",
+            "source": "Day — Rain"
+          },
+          {
+            "target": "ol-akira — ol-apa",
+            "source": "Star — Moon"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"el-lukunya (pl. il-lukuny)\" in Maasai?",
-            "correctAnswer": "Head",
-            "options": [
-              "Hand",
-              "Foot",
-              "Day",
-              "Head"
-            ],
-            "hint": "Hollis 1905 Proverb #59 & Hinde 1901"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"eng-aina (pl. ing-aik)\" in Maasai?",
-            "correctAnswer": "Hand",
-            "options": [
-              "Foot",
-              "Day",
-              "Hand",
-              "Head"
-            ],
-            "hint": "Hollis 1905 & Hinde 1901"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"en-geju (pl. in-gejek)\" in Maasai?",
-            "correctAnswer": "Foot",
+            "prompt": "What does \"eng-olong\" mean in English?",
+            "correctAnswer": "Day",
             "options": [
               "Day",
-              "Foot",
-              "Head",
-              "Hand"
+              "Rain",
+              "Star",
+              "Moon"
             ],
-            "hint": "Hollis 1905 Proverb #20 & Hinde 1901"
+            "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Foot\" in Maasai?",
-            "correctAnswer": "en-geju (pl. in-gejek)",
-            "options": [
-              "en-geju (pl. in-gejek)",
-              "el-lukunya (pl. il-lukuny)",
-              "eng-aina (pl. ing-aik)",
-              "eng-olong (pl. ing-olongi)"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Rain\"",
+            "correctAnswer": "eng-ai",
+            "acceptedAnswers": [
+              "eng-ai (en-chan)",
+              "eng-ai"
             ],
-            "hint": "ehn-geh-joo"
+            "hint": "Starts with \"en\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Day\" in Maasai?",
-            "correctAnswer": "eng-olong (pl. ing-olongi)",
-            "options": [
-              "el-lukunya (pl. il-lukuny)",
-              "eng-aina (pl. ing-aik)",
-              "en-geju (pl. in-gejek)",
-              "eng-olong (pl. ing-olongi)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"ol-akira\"",
+            "correctAnswer": "Star",
+            "acceptedAnswers": [
+              "Star",
+              "Star"
             ],
-            "hint": "ehng-oh-lohng"
+            "hint": "Review Sky, Weather, Rivers & Landforms"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "el-lukunya (pl. il-lukuny): Head",
+            "prompt": "Match each expression from Sky, Weather, Rivers & Landforms with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "el-lukunya (pl. il-lukuny)",
-                "right": "Head"
-              },
-              {
-                "left": "eng-aina (pl. ing-aik)",
-                "right": "Hand"
-              },
-              {
-                "left": "en-geju (pl. in-gejek)",
-                "right": "Foot"
-              },
-              {
-                "left": "eng-olong (pl. ing-olongi)",
+                "left": "eng-olong",
                 "right": "Day"
+              },
+              {
+                "left": "eng-ai",
+                "right": "Rain"
+              },
+              {
+                "left": "ol-akira",
+                "right": "Star"
+              },
+              {
+                "left": "ol-apa",
+                "right": "Moon"
+              },
+              {
+                "left": "eng-olong",
+                "right": "Sun"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"House\": ___",
-            "correctAnswer": "eng-aji (pl. ing-ajijik) / eng-ang (kraal)",
-            "options": [
-              "el-lukunya (pl. il-lukuny)",
-              "eng-aina (pl. ing-aik)",
-              "en-geju (pl. in-gejek)",
-              "eng-aji (pl. ing-ajijik) / eng-ang (kraal)"
-            ],
-            "hint": "Hollis 1905 p. 15 & Hinde 1901"
           }
         ]
       },
@@ -1688,15 +1659,9 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "Eng-ai (En-gai / Nkai)",
-            "source": "God",
-            "pronunciation": "ehng-ah-ee",
-            "hint": "Hollis 1905 p. 264 & Hinde 1901"
-          },
-          {
             "target": "ɔl-caní (olchani)",
             "source": "Tree / medicine",
-            "pronunciation": "ɔl-caní (olchani)",
+            "pronunciation": "ol-cani",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
@@ -1708,13 +1673,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "en-gima (enkima)",
             "source": "Fire",
-            "pronunciation": "en-gima (enkima)",
-            "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Proverb #6"
-          },
-          {
-            "target": "in-guk",
-            "source": "Coals / embers",
-            "pronunciation": "in-guk",
+            "pronunciation": "en-gima",
             "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Proverb #6"
           },
           {
@@ -1732,112 +1691,94 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ɛŋ-kár-ɛ́ (enkare)",
             "source": "Water / river",
-            "pronunciation": "ɛŋ-kár-ɛ́ (enkare)",
+            "pronunciation": "eng-kar-e",
             "hint": "Wikipedia Eastern Nilotic languages & Wiktionary Maasai lemmas"
           },
           {
-            "target": "eng-oitoi (enkoitoi)",
-            "source": "Road / path",
-            "pronunciation": "eng-oitoi (enkoitoi)",
-            "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Riddle #8"
+            "target": "ngijābi or erobi",
+            "source": "Cold",
+            "pronunciation": "ngi-ja-bi or e-ro-bi"
+          },
+          {
+            "target": "enderit",
+            "source": "Dust",
+            "pronunciation": "ende-rit"
+          },
+          {
+            "target": "olosho pl. oiloishon",
+            "source": "Hill",
+            "pronunciation": "o-losho"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "ɔl-caní — ol-chata",
+            "source": "Tree — Firewood"
+          },
+          {
+            "target": "en-gima — in-guruon",
+            "source": "Fire — Ashes"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Eng-ai (En-gai / Nkai)\" in Maasai?",
-            "correctAnswer": "God",
-            "options": [
-              "Tree / medicine",
-              "Firewood",
-              "Fire",
-              "God"
-            ],
-            "hint": "Hollis 1905 p. 264 & Hinde 1901"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ɔl-caní (olchani)\" in Maasai?",
+            "prompt": "What does \"ɔl-caní\" mean in English?",
             "correctAnswer": "Tree / medicine",
             "options": [
-              "Firewood",
-              "Fire",
               "Tree / medicine",
-              "God"
-            ],
-            "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ol-chata\" in Maasai?",
-            "correctAnswer": "Firewood",
-            "options": [
-              "Fire",
               "Firewood",
-              "God",
-              "Tree / medicine"
+              "Fire",
+              "Ashes"
             ],
-            "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Proverb #6"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Firewood\" in Maasai?",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Firewood\"",
             "correctAnswer": "ol-chata",
-            "options": [
+            "acceptedAnswers": [
               "ol-chata",
-              "Eng-ai (En-gai / Nkai)",
-              "ɔl-caní (olchani)",
-              "en-gima (enkima)"
+              "ol-chata"
             ],
-            "hint": "ol-chata"
+            "hint": "Starts with \"ol\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Fire\" in Maasai?",
-            "correctAnswer": "en-gima (enkima)",
-            "options": [
-              "Eng-ai (En-gai / Nkai)",
-              "ɔl-caní (olchani)",
-              "ol-chata",
-              "en-gima (enkima)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"en-gima\"",
+            "correctAnswer": "Fire",
+            "acceptedAnswers": [
+              "Fire",
+              "Fire"
             ],
-            "hint": "en-gima (enkima)"
+            "hint": "Review East African Fauna, Birds & Sacred Trees"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "Eng-ai (En-gai / Nkai): God",
+            "prompt": "Match each expression from East African Fauna, Birds & Sacred Trees with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Eng-ai (En-gai / Nkai)",
-                "right": "God"
-              },
-              {
-                "left": "ɔl-caní (olchani)",
-                "right": "Tree / medicine"
+                "left": "ɔl-caní",
+                "right": "Tree"
               },
               {
                 "left": "ol-chata",
                 "right": "Firewood"
               },
               {
-                "left": "en-gima (enkima)",
+                "left": "en-gima",
                 "right": "Fire"
+              },
+              {
+                "left": "in-guruon",
+                "right": "Ashes"
+              },
+              {
+                "left": "en-gewarie",
+                "right": "Night"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"Coals / embers\": ___",
-            "correctAnswer": "in-guk",
-            "options": [
-              "Eng-ai (En-gai / Nkai)",
-              "ɔl-caní (olchani)",
-              "ol-chata",
-              "in-guk"
-            ],
-            "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Proverb #6"
           }
         ]
       }
@@ -1860,59 +1801,68 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ɛŋ-kɔŋ-ʊ́ (enkong'u)",
             "source": "Eye (fem. noun prefix en-)",
-            "pronunciation": "ɛŋ-kɔŋ-ʊ́ (enkong'u)",
+            "pronunciation": "eng-kong-u",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ɛŋ-kɪ-ɔɔk (enkiook, pl. in-giyaa)",
             "source": "Ear",
-            "pronunciation": "ɛŋ-kɪ-ɔɔk (enkiook, pl. in-giyaa)",
+            "pronunciation": "eng-ki-ook",
             "hint": "Wikipedia Eastern Nilotic languages & Hollis (1905)"
           },
           {
             "target": "eŋ-kumé (enkume)",
             "source": "Nose",
-            "pronunciation": "eŋ-kumé (enkume)",
+            "pronunciation": "eng-kume",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ɔl-alá-ɪ̀ (olalai)",
             "source": "Tooth (masc. noun prefix ol-)",
-            "pronunciation": "ɔl-alá-ɪ̀ (olalai)",
+            "pronunciation": "ol-ala-i",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ɔl-ŋɛ́jɛ́p (olng'ejep)",
             "source": "Tongue",
-            "pronunciation": "ɔl-ŋɛ́jɛ́p (olng'ejep)",
+            "pronunciation": "ol-ngejep",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ɛŋ-kʊ́tʊ́k (enkutuk)",
             "source": "Mouth",
-            "pronunciation": "ɛŋ-kʊ́tʊ́k (enkutuk)",
+            "pronunciation": "eng-kutuk",
             "hint": "Wikipedia Eastern Nilotic languages & Maasai language"
           },
           {
             "target": "kɨʉ́tɨshɔ (kiutisho)",
             "source": "Index finger",
-            "pronunciation": "kɨʉ́tɨshɔ (kiutisho)",
+            "pronunciation": "kɨʉtɨsho",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
             "target": "keju",
             "source": "Leg / foot",
-            "pronunciation": "keju",
+            "pronunciation": "ke-ju",
             "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, Proverb #20"
           },
           {
             "target": "ɔ-sárɠɛ́ (osarge)",
             "source": "Blood",
-            "pronunciation": "ɔ-sárɠɛ́ (osarge)",
+            "pronunciation": "o-sarɠe",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Kiyiolo enkarna ɛŋ-kɔŋ-ʊ́ taata.",
+            "source": "We know the expression eye today."
+          },
+          {
+            "target": "Eirorie ilpayiani ɛŋ-kɪ-ɔɔk engang.",
+            "source": "The elders spoke of ear at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2022,55 +1972,55 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ol-óì-tò (oloito)",
             "source": "Bone",
-            "pronunciation": "ol-óì-tò (oloito)",
+            "pronunciation": "ol-oi-to",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ŋ-kwar-íé (Samburu)",
             "source": "nose",
-            "pronunciation": "ŋ-kwar-íé (samburu)",
+            "pronunciation": "ng-kwar-ie",
             "hint": "Samburu (North Maa)"
           },
           {
             "target": "l-ɔɗɔ́ (Samburu) / osarge (Maasai)",
             "source": "blood",
-            "pronunciation": "l-ɔɗɔ́ (samburu) / osarge (maasai)",
+            "pronunciation": "l-odo / o-sarge",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
           {
             "target": "ol-kimojino (pl. il-kimojik)",
             "source": "finger, toe",
-            "pronunciation": "ol-kimojino (pl. il-kimojik)",
+            "pronunciation": "ol-kimojino",
             "hint": "Maasai (Hollis 1905, p. 247)"
           },
           {
             "target": "aia ngoshogi",
             "source": "I have a stomach-ache",
-            "pronunciation": "aia ngoshogi",
+            "pronunciation": "aia ngosho-gi",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "ngaiinai",
             "source": "My hand",
-            "pronunciation": "ngaiinai",
+            "pronunciation": "ngaii-nai",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "inoberininyi",
             "source": "Come back soon",
-            "pronunciation": "inoberininyi",
+            "pronunciation": "i-no-be-ri-ninyi",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "olloregogoiyu pl. loirigegiru",
             "source": "ankle",
-            "pronunciation": "olloregogoiyu pl. loirigegiru",
+            "pronunciation": "ollo-re-go-goi-yu",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           },
           {
             "target": "emonge pl. mmongen",
             "source": "anklets (of skin)",
-            "pronunciation": "emonge pl. mmongen",
+            "pronunciation": "e-monge",
             "hint": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary"
           }
         ],
@@ -2080,12 +2030,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "source": "I have a stomach-ache"
           },
           {
-            "target": "olloregogoiyu pl. loirigegiru",
-            "source": "ankle"
+            "target": "Kiyiolo enkarna ol-óì-tò taata.",
+            "source": "We know the expression bone today."
           },
           {
-            "target": "emonge pl. mmongen",
-            "source": "anklets (of skin)"
+            "target": "Eirorie ilpayiani ŋ-kwar-íé engang.",
+            "source": "The elders spoke of nose at the homestead."
           }
         ],
         "authoredExercises": [
@@ -2205,59 +2155,68 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "a-iro (a-jo = to say)",
             "source": "Speak",
-            "pronunciation": "ah-ee-roh / ah-joh",
+            "pronunciation": "a-iro",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "a-irura",
             "source": "Sleep",
-            "pronunciation": "ah-ee-roo-rah",
+            "pronunciation": "a-irura",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "a-ok (ok)",
             "source": "Drink",
-            "pronunciation": "ah-ohk",
+            "pronunciation": "a-ok",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "a-nya (inos)",
             "source": "Eat",
-            "pronunciation": "ah-nyah / ee-nohs",
+            "pronunciation": "a-nya",
             "hint": "Hollis 1905 & Hinde 1901"
           },
           {
             "target": "a-ɲá (anya)",
             "source": "To eat",
-            "pronunciation": "a-ɲá (anya)",
+            "pronunciation": "a-nya",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
             "target": "ébúl (S/he will pierce it)",
             "source": "To pierce (+ATR stem)",
-            "pronunciation": "ébúl (S/he will pierce it)",
+            "pronunciation": "e-bul",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
             "target": "ɛ́bʉ́l (S/he will prosper)",
             "source": "To prosper (-ATR stem)",
-            "pronunciation": "ɛ́bʉ́l (S/he will prosper)",
+            "pronunciation": "ebʉl",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
             "target": "atumokî",
             "source": "To have a good opportunity (+ATR)",
-            "pronunciation": "atumokî",
+            "pronunciation": "a-tu-mo-ki",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
             "target": "atʉmʉ́k",
             "source": "To brew (-ATR)",
-            "pronunciation": "atʉmʉ́k",
+            "pronunciation": "atʉmʉk",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Kiyiolo enkarna a-iro taata.",
+            "source": "We know the expression speak today."
+          },
+          {
+            "target": "Eirorie ilpayiani a-irura engang.",
+            "source": "The elders spoke of sleep at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2367,163 +2326,119 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "a-ɲá (Samburu & Maasai)",
             "source": "to eat (< Proto-Eastern Nilotic -ɲa)",
-            "pronunciation": "a-ɲá (samburu & maasai)",
+            "pronunciation": "a-nya",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
           {
-            "target": "eng-eno (enkeno)",
-            "source": "wisdom, knowledge, cleverness",
-            "pronunciation": "eng-eno (enkeno)",
-            "hint": "Maasai (Hollis 1905, p. 243, Proverb #29)"
+            "target": "a-lo (pl. a-puo; Imperative: Shomo!)",
+            "source": "Go",
+            "pronunciation": "ah-loh / shoh-moh"
           },
           {
-            "target": "amunyak (munyak)",
-            "source": "lucky, fortunate, blessed",
-            "pronunciation": "amunyak (munyak)",
-            "hint": "Maasai (Hollis 1905, p. 241)"
+            "target": "a-nya (inos)",
+            "source": "Eat",
+            "pronunciation": "ah-nyah / ee-nohs"
           },
           {
-            "target": "e-nyawa",
-            "source": "udder",
-            "pronunciation": "e-nyawa",
-            "hint": "Maasai (Hollis 1905, p. 255, Riddle #8)"
+            "target": "ellejore",
+            "source": "Lie",
+            "pronunciation": "elle-jo-re"
           },
           {
-            "target": "Ewíkî",
-            "source": "Week (calendar unit)",
-            "pronunciation": "ewíkî",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "a-lotu (pl. a-ponu; Imperative: Wou!)",
+            "source": "Come",
+            "pronunciation": "ah-loh-too / woh-oo"
           },
           {
-            "target": "Ɛ́sáâ",
-            "source": "Hour (time unit)",
-            "pronunciation": "ɛ́sáâ",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "engiligwena, ngiligwena (Infin.)",
+            "source": "Ask (v. Imp.)",
+            "pronunciation": "engiligwena ngiligwena"
           },
           {
-            "target": "Oldákikaè",
-            "source": "Minute (time unit)",
-            "pronunciation": "oldákikaè",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "toomonu, namon (Infin.)",
+            "source": "Beg (v. Imp.)",
+            "pronunciation": "toomonu namon"
           },
           {
-            "target": "Ɛ́sáâ o inkuapí",
-            "source": "Time zone",
-            "pronunciation": "ɛ́sáâ o inkuapí",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "tobollo, nebol (Infin.)",
+            "source": "Open (v. Imp.)",
+            "pronunciation": "tobollo nebol"
           },
           {
-            "target": "Iropiyianí e Kenya",
-            "source": "Kenyan Shilling (KES)",
-            "pronunciation": "iropiyianí e kenya",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "teyanga, neyeng (Infin.)",
+            "source": "Kill (v. Imp.)",
+            "pronunciation": "teyanga neyeng"
           }
         ],
         "sentences": [
           {
-            "target": "Ɛ́sáâ o inkuapí",
-            "source": "Time zone"
+            "target": "a-ɲá — a-lo",
+            "source": "to eat — Go"
           },
           {
-            "target": "Iropiyianí e Kenya",
-            "source": "Kenyan Shilling (KES)"
+            "target": "a-nya — ellejore",
+            "source": "Eat — Lie"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"a-ɲá (Samburu & Maasai)\" in Maasai?",
+            "prompt": "What does \"a-ɲá\" mean in English?",
             "correctAnswer": "to eat (< Proto-Eastern Nilotic -ɲa)",
             "options": [
-              "wisdom, knowledge, cleverness",
-              "lucky, fortunate, blessed",
-              "udder",
-              "to eat (< Proto-Eastern Nilotic -ɲa)"
-            ],
-            "hint": "Samburu & Maasai (Vossen 1982)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"eng-eno (enkeno)\" in Maasai?",
-            "correctAnswer": "wisdom, knowledge, cleverness",
-            "options": [
-              "lucky, fortunate, blessed",
-              "udder",
-              "wisdom, knowledge, cleverness",
-              "to eat (< Proto-Eastern Nilotic -ɲa)"
-            ],
-            "hint": "Maasai (Hollis 1905, p. 243, Proverb #29)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"amunyak (munyak)\" in Maasai?",
-            "correctAnswer": "lucky, fortunate, blessed",
-            "options": [
-              "udder",
-              "lucky, fortunate, blessed",
               "to eat (< Proto-Eastern Nilotic -ɲa)",
-              "wisdom, knowledge, cleverness"
+              "Go",
+              "Eat",
+              "Lie"
             ],
-            "hint": "Maasai (Hollis 1905, p. 241)"
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"lucky, fortunate, blessed\" in Maasai?",
-            "correctAnswer": "amunyak (munyak)",
-            "options": [
-              "amunyak (munyak)",
-              "a-ɲá (Samburu & Maasai)",
-              "eng-eno (enkeno)",
-              "e-nyawa"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Go\"",
+            "correctAnswer": "a-lo",
+            "acceptedAnswers": [
+              "a-lo (pl. a-puo; Imperative: Shomo!)",
+              "a-lo"
             ],
-            "hint": "amunyak (munyak)"
+            "hint": "Starts with \"a-\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"udder\" in Maasai?",
-            "correctAnswer": "e-nyawa",
-            "options": [
-              "a-ɲá (Samburu & Maasai)",
-              "eng-eno (enkeno)",
-              "amunyak (munyak)",
-              "e-nyawa"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"a-nya\"",
+            "correctAnswer": "Eat",
+            "acceptedAnswers": [
+              "Eat",
+              "Eat"
             ],
-            "hint": "e-nyawa"
+            "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "a-ɲá (Samburu & Maasai): to eat (< Proto-Eastern Nilotic -ɲa)",
+            "prompt": "Match each expression from Applied, Causative, Reciprocal & Stative Verbs with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "a-ɲá (Samburu & Maasai)",
-                "right": "to eat (< Proto-Eastern Nilotic -ɲa)"
+                "left": "a-ɲá",
+                "right": "to eat"
               },
               {
-                "left": "eng-eno (enkeno)",
-                "right": "wisdom, knowledge, cleverness"
+                "left": "a-lo",
+                "right": "Go"
               },
               {
-                "left": "amunyak (munyak)",
-                "right": "lucky, fortunate, blessed"
+                "left": "a-nya",
+                "right": "Eat"
               },
               {
-                "left": "e-nyawa",
-                "right": "udder"
+                "left": "ellejore",
+                "right": "Lie"
+              },
+              {
+                "left": "a-lotu",
+                "right": "Come"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"Week (calendar unit)\": ___",
-            "correctAnswer": "Ewíkî",
-            "options": [
-              "a-ɲá (Samburu & Maasai)",
-              "eng-eno (enkeno)",
-              "amunyak (munyak)",
-              "Ewíkî"
-            ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           }
         ]
       }
@@ -2544,169 +2459,121 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "oti (f. kiti, pl. ooti)",
-            "source": "Small",
-            "pronunciation": "oh-tee / kee-tee",
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
-          },
-          {
-            "target": "kitok (pl. kituak) / sapuk",
-            "source": "Big",
-            "pronunciation": "kee-tohk / sah-pook",
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
-          },
-          {
-            "target": "torono (pl. torok)",
-            "source": "Bad",
-            "pronunciation": "toh-roh-noh / toh-rohk",
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
-          },
-          {
-            "target": "supat (pl. supati) / sidai",
-            "source": "Good",
-            "pronunciation": "soo-paht / see-dah-ee",
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
-          },
-          {
-            "target": "ɔl Maa",
-            "source": "The Maa language (autonym)",
-            "pronunciation": "ɔl Maa",
-            "hint": "Wikipedia Maasai language"
-          },
-          {
             "target": "Eata en-gewarie 'n-giyaa",
             "source": "The night has ears",
-            "pronunciation": "Eata en-gewarie 'n-giyaa",
+            "pronunciation": "ea-ta en-gewarie 'n-giyaa",
             "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, p. 238"
           },
           {
-            "target": "Ekwenikye 'n-guk in-guruon",
-            "source": "Coals laugh at the ashes",
-            "pronunciation": "Ekwenikye 'n-guk in-guruon",
-            "hint": "A. C. Hollis (1905) The Masai: Their Language and Folklore, p. 239"
+            "target": "taāda",
+            "source": "Now",
+            "pronunciation": "taa-da"
           },
           {
-            "target": "saamburr (Sampur)",
-            "source": "traditional Samburu leather carrying bag; origin of the name Samburu",
-            "pronunciation": "saamburr (sampur)",
-            "hint": "Samburu (North Maa)"
+            "target": "Ongolloñ, Emūto, Kawārie",
+            "source": "Day",
+            "pronunciation": "ongollon emuto kawarie"
           },
           {
-            "target": "Loikop / Lokop",
-            "source": "Samburu self-designation ('owners of the land')",
-            "pronunciation": "loikop / lokop",
-            "hint": "Samburu (North Maa)"
+            "target": "etawanga or engagenia",
+            "source": "Dawn",
+            "pronunciation": "e-ta-wanga or enga-ge-nia"
+          },
+          {
+            "target": "eronongorr, or engorr",
+            "source": "Soon",
+            "pronunciation": "e-ro-nongorr or engorr"
+          },
+          {
+            "target": "ngatitin, or ngatijin",
+            "source": "Time",
+            "pronunciation": "nga-ti-tin or nga-ti-jin"
+          },
+          {
+            "target": "Ol lari (pl. El larin)",
+            "source": "Year",
+            "pronunciation": "ol la-ri"
+          },
+          {
+            "target": "ānu",
+            "source": "When",
+            "pronunciation": "anu"
+          },
+          {
+            "target": "taadagenia or peiko",
+            "source": "Early",
+            "pronunciation": "taa-da-ge-nia or pei-ko"
           }
         ],
         "sentences": [
           {
-            "target": "ɔl Maa",
-            "source": "The Maa language (autonym)"
+            "target": "Eata en-gewarie 'n-giyaa — taāda",
+            "source": "The night has ears — Now"
           },
           {
-            "target": "Eata en-gewarie 'n-giyaa",
-            "source": "The night has ears"
-          },
-          {
-            "target": "Ekwenikye 'n-guk in-guruon",
-            "source": "Coals laugh at the ashes"
+            "target": "Ongolloñ, Emūto, Kawārie — etawanga or engagenia",
+            "source": "Day — Dawn"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"oti (f. kiti, pl. ooti)\" in Maasai?",
-            "correctAnswer": "Small",
+            "prompt": "What does \"Eata en-gewarie 'n-giyaa\" mean in English?",
+            "correctAnswer": "The night has ears",
             "options": [
-              "Big",
-              "Bad",
-              "Good",
-              "Small"
+              "The night has ears",
+              "Now",
+              "Day",
+              "Dawn"
             ],
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
+            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kitok (pl. kituak) / sapuk\" in Maasai?",
-            "correctAnswer": "Big",
-            "options": [
-              "Bad",
-              "Good",
-              "Big",
-              "Small"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Now\"",
+            "correctAnswer": "taāda",
+            "acceptedAnswers": [
+              "taāda",
+              "taāda"
             ],
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
+            "hint": "Starts with \"ta\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"torono (pl. torok)\" in Maasai?",
-            "correctAnswer": "Bad",
-            "options": [
-              "Good",
-              "Bad",
-              "Small",
-              "Big"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Ongolloñ, Emūto, Kawārie\"",
+            "correctAnswer": "Day",
+            "acceptedAnswers": [
+              "Day",
+              "Day"
             ],
-            "hint": "Hollis 1905 p. 30 & Hinde 1901"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Bad\" in Maasai?",
-            "correctAnswer": "torono (pl. torok)",
-            "options": [
-              "torono (pl. torok)",
-              "oti (f. kiti, pl. ooti)",
-              "kitok (pl. kituak) / sapuk",
-              "supat (pl. supati) / sidai"
-            ],
-            "hint": "toh-roh-noh / toh-rohk"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Good\" in Maasai?",
-            "correctAnswer": "supat (pl. supati) / sidai",
-            "options": [
-              "oti (f. kiti, pl. ooti)",
-              "kitok (pl. kituak) / sapuk",
-              "torono (pl. torok)",
-              "supat (pl. supati) / sidai"
-            ],
-            "hint": "soo-paht / see-dah-ee"
+            "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "oti (f. kiti, pl. ooti): Small",
+            "prompt": "Match each expression from Day Divisions, Lunar Months & Agricultural Seasons with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "oti (f. kiti, pl. ooti)",
-                "right": "Small"
+                "left": "Eata en-gewarie 'n-giyaa",
+                "right": "The night has ears"
               },
               {
-                "left": "kitok (pl. kituak) / sapuk",
-                "right": "Big"
+                "left": "taāda",
+                "right": "Now"
               },
               {
-                "left": "torono (pl. torok)",
-                "right": "Bad"
+                "left": "Ongolloñ, Emūto, Kawārie",
+                "right": "Day"
               },
               {
-                "left": "supat (pl. supati) / sidai",
-                "right": "Good"
+                "left": "etawanga or engagenia",
+                "right": "Dawn"
+              },
+              {
+                "left": "eronongorr, or engorr",
+                "right": "Soon"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"The Maa language (autonym)\": ___",
-            "correctAnswer": "ɔl Maa",
-            "options": [
-              "oti (f. kiti, pl. ooti)",
-              "kitok (pl. kituak) / sapuk",
-              "torono (pl. torok)",
-              "ɔl Maa"
-            ],
-            "hint": "Wikipedia Maasai language"
           }
         ]
       },
@@ -2719,123 +2586,124 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "ŋ-kárn-á (Samburu) / en-karna (Maasai)",
-            "source": "name (< Proto-Eastern Nilotic -kɛrɪn)",
-            "pronunciation": "ŋ-kárn-á (samburu) / en-karna (maasai)",
-            "hint": "Samburu & Maasai (Vossen 1982)"
-          },
-          {
-            "target": "il-loom le-'ng-aji",
-            "source": "rafters of the house",
-            "pronunciation": "il-loom le-'ng-aji",
-            "hint": "Maasai (Hollis 1905, p. 252)"
-          },
-          {
-            "target": "Takwenya! (resp. Iko!)",
-            "source": "Respectful greeting to women",
-            "pronunciation": "takwenya! (resp. iko!)",
-            "hint": "Maasai"
-          },
-          {
             "target": "Jumapílí (Jpi)",
             "source": "Sunday (Day of the week)",
-            "pronunciation": "jumapílí (jpi)",
+            "pronunciation": "ju-ma-pi-li",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Jumatátu (Jtt)",
             "source": "Monday (Day of the week)",
-            "pronunciation": "jumatátu (jtt)",
+            "pronunciation": "ju-ma-ta-tu",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Jumane (Jnn)",
             "source": "Tuesday (Day of the week)",
-            "pronunciation": "jumane (jnn)",
+            "pronunciation": "ju-ma-ne",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Jumatánɔ (Jtn)",
             "source": "Wednesday (Day of the week)",
-            "pronunciation": "jumatánɔ (jtn)",
+            "pronunciation": "ju-ma-ta-no",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Alaámisi (Alh)",
             "source": "Thursday (Day of the week)",
-            "pronunciation": "alaámisi (alh)",
+            "pronunciation": "a-laa-mi-si",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Jumáa (Iju)",
             "source": "Friday (Day of the week)",
-            "pronunciation": "jumáa (iju)",
+            "pronunciation": "ju-maa",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+          },
+          {
+            "target": "elaba pl. elabaitin",
+            "source": "Month",
+            "pronunciation": "e-la-ba"
+          },
+          {
+            "target": "ngatitin kumuk",
+            "source": "Often",
+            "pronunciation": "nga-ti-tin ku-muk"
+          },
+          {
+            "target": "Kawarie",
+            "source": "Night",
+            "pronunciation": "ka-wa-rie"
           }
         ],
         "sentences": [
           {
-            "target": "il-loom le-'ng-aji",
-            "source": "rafters of the house"
+            "target": "Jumapílí — Jumatátu",
+            "source": "Sunday — Monday"
+          },
+          {
+            "target": "Jumane — Jumatánɔ",
+            "source": "Tuesday — Wednesday"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ŋ-kárn-á (Samburu) / en-karna (Maasai)\" in Maasai?",
-            "correctAnswer": "name (< Proto-Eastern Nilotic -kɛrɪn)",
+            "prompt": "What does \"Jumapílí\" mean in English?",
+            "correctAnswer": "Sunday (Day of the week)",
             "options": [
-              "rafters of the house",
-              "Respectful greeting to women",
               "Sunday (Day of the week)",
-              "name (< Proto-Eastern Nilotic -kɛrɪn)"
+              "Monday (Day of the week)",
+              "Tuesday (Day of the week)",
+              "Wednesday (Day of the week)"
             ],
-            "hint": "Samburu & Maasai (Vossen 1982)"
+            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"il-loom le-'ng-aji\" in Maasai?",
-            "correctAnswer": "rafters of the house",
-            "options": [
-              "Respectful greeting to women",
-              "Sunday (Day of the week)",
-              "rafters of the house",
-              "name (< Proto-Eastern Nilotic -kɛrɪn)"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Monday (Day of the week)\"",
+            "correctAnswer": "Jumatátu",
+            "acceptedAnswers": [
+              "Jumatátu (Jtt)",
+              "Jumatátu"
             ],
-            "hint": "Maasai (Hollis 1905, p. 252)"
+            "hint": "Starts with \"Ju\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Takwenya! (resp. Iko!)\" in Maasai?",
-            "correctAnswer": "Respectful greeting to women",
-            "options": [
-              "Sunday (Day of the week)",
-              "Respectful greeting to women",
-              "name (< Proto-Eastern Nilotic -kɛrɪn)",
-              "rafters of the house"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Jumane\"",
+            "correctAnswer": "Tuesday",
+            "acceptedAnswers": [
+              "Tuesday (Day of the week)",
+              "Tuesday"
             ],
-            "hint": "Maasai"
+            "hint": "Review Travel, Directions, Paths & Landmarks"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "ŋ-kárn-á (Samburu) / en-karna (Maasai): name (< Proto-Eastern Nilotic -kɛrɪn)",
+            "prompt": "Match each expression from Travel, Directions, Paths & Landmarks with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "ŋ-kárn-á (Samburu) / en-karna (Maasai)",
-                "right": "name (< Proto-Eastern Nilotic -kɛrɪn)"
+                "left": "Jumapílí",
+                "right": "Sunday"
               },
               {
-                "left": "il-loom le-'ng-aji",
-                "right": "rafters of the house"
+                "left": "Jumatátu",
+                "right": "Monday"
               },
               {
-                "left": "Takwenya! (resp. Iko!)",
-                "right": "Respectful greeting to women"
+                "left": "Jumane",
+                "right": "Tuesday"
               },
               {
-                "left": "Jumapílí (Jpi)",
-                "right": "Sunday (Day of the week)"
+                "left": "Jumatánɔ",
+                "right": "Wednesday"
+              },
+              {
+                "left": "Alaámisi",
+                "right": "Thursday"
               }
             ]
           }
@@ -2860,155 +2728,111 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Jumamósi (Jmo)",
             "source": "Saturday (Day of the week)",
-            "pronunciation": "jumamósi (jmo)",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "target": "Meínō Yɛ́sʉ",
-            "source": "Before Christ (BC / Historical Era)",
-            "pronunciation": "meínō yɛ́sʉ",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "target": "Eínō Yɛ́sʉ",
-            "source": "Anno Domini (AD / Common Era)",
-            "pronunciation": "eínō yɛ́sʉ",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "target": "Ɛnkakɛnyá",
-            "source": "In the morning (AM day period)",
-            "pronunciation": "ɛnkakɛnyá",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "target": "Ɛndámâ",
-            "source": "In the afternoon / evening (PM day period)",
-            "pronunciation": "ɛndámâ",
+            "pronunciation": "ju-ma-mo-si",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Ɛnkátá",
             "source": "Era / historical age",
-            "pronunciation": "ɛnkátá",
+            "pronunciation": "enka-ta",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
             "target": "Ɛnkɔ́lɔŋ ewíkî",
             "source": "Day of the week",
-            "pronunciation": "ɛnkɔ́lɔŋ ewíkî",
+            "pronunciation": "enko-long e-wi-ki",
             "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+          },
+          {
+            "target": "Eserian (Serian)",
+            "source": "Peace",
+            "pronunciation": "eh-seh-ree-ahn"
+          },
+          {
+            "target": "Sopai! (resp. Epa!) / Takwenya! (resp. Iko!)",
+            "source": "Hello",
+            "pronunciation": "soh-pah-ee / tah-kweh-nyah"
+          },
+          {
+            "target": "Ashe (Ashe oleng)",
+            "source": "Thank you",
+            "pronunciation": "ah-sheh oh-lehng"
+          },
+          {
+            "target": "enyorr",
+            "source": "Please (v. Imp.)",
+            "pronunciation": "enyorr"
           }
         ],
         "sentences": [
           {
-            "target": "Meínō Yɛ́sʉ",
-            "source": "Before Christ (BC / Historical Era)"
+            "target": "Jumamósi — Ɛnkátá",
+            "source": "Saturday — Era"
           },
           {
-            "target": "Eínō Yɛ́sʉ",
-            "source": "Anno Domini (AD / Common Era)"
-          },
-          {
-            "target": "Ɛnkɔ́lɔŋ ewíkî",
-            "source": "Day of the week"
+            "target": "Ɛnkɔ́lɔŋ ewíkî — Eserian",
+            "source": "Day of the week — Peace"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Jumamósi (Jmo)\" in Maasai?",
+            "prompt": "What does \"Jumamósi\" mean in English?",
             "correctAnswer": "Saturday (Day of the week)",
             "options": [
-              "Before Christ (BC / Historical Era)",
-              "Anno Domini (AD / Common Era)",
-              "In the morning (AM day period)",
-              "Saturday (Day of the week)"
-            ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Meínō Yɛ́sʉ\" in Maasai?",
-            "correctAnswer": "Before Christ (BC / Historical Era)",
-            "options": [
-              "Anno Domini (AD / Common Era)",
-              "In the morning (AM day period)",
-              "Before Christ (BC / Historical Era)",
-              "Saturday (Day of the week)"
-            ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Eínō Yɛ́sʉ\" in Maasai?",
-            "correctAnswer": "Anno Domini (AD / Common Era)",
-            "options": [
-              "In the morning (AM day period)",
-              "Anno Domini (AD / Common Era)",
               "Saturday (Day of the week)",
-              "Before Christ (BC / Historical Era)"
+              "Era / historical age",
+              "Day of the week",
+              "Peace"
             ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "hint": "Core vocabulary in Everyday Conversational Phrases & Questions"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Anno Domini (AD / Common Era)\" in Maasai?",
-            "correctAnswer": "Eínō Yɛ́sʉ",
-            "options": [
-              "Eínō Yɛ́sʉ",
-              "Jumamósi (Jmo)",
-              "Meínō Yɛ́sʉ",
-              "Ɛnkakɛnyá"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Era / historical age\"",
+            "correctAnswer": "Ɛnkátá",
+            "acceptedAnswers": [
+              "Ɛnkátá",
+              "Ɛnkátá"
             ],
-            "hint": "eínō yɛ́sʉ"
+            "hint": "Starts with \"Ɛn\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"In the morning (AM day period)\" in Maasai?",
-            "correctAnswer": "Ɛnkakɛnyá",
-            "options": [
-              "Jumamósi (Jmo)",
-              "Meínō Yɛ́sʉ",
-              "Eínō Yɛ́sʉ",
-              "Ɛnkakɛnyá"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Ɛnkɔ́lɔŋ ewíkî\"",
+            "correctAnswer": "Day of the week",
+            "acceptedAnswers": [
+              "Day of the week",
+              "Day of the week"
             ],
-            "hint": "ɛnkakɛnyá"
+            "hint": "Review Everyday Conversational Phrases & Questions"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "Jumamósi (Jmo): Saturday (Day of the week)",
+            "prompt": "Match each expression from Everyday Conversational Phrases & Questions with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Jumamósi (Jmo)",
-                "right": "Saturday (Day of the week)"
+                "left": "Jumamósi",
+                "right": "Saturday"
               },
               {
-                "left": "Meínō Yɛ́sʉ",
-                "right": "Before Christ (BC / Historical Era)"
+                "left": "Ɛnkátá",
+                "right": "Era"
               },
               {
-                "left": "Eínō Yɛ́sʉ",
-                "right": "Anno Domini (AD / Common Era)"
+                "left": "Ɛnkɔ́lɔŋ ewíkî",
+                "right": "Day of the week"
               },
               {
-                "left": "Ɛnkakɛnyá",
-                "right": "In the morning (AM day period)"
+                "left": "Eserian",
+                "right": "Peace"
+              },
+              {
+                "left": "Sopai!",
+                "right": "Hello"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"In the afternoon / evening (PM day period)\": ___",
-            "correctAnswer": "Ɛndámâ",
-            "options": [
-              "Jumamósi (Jmo)",
-              "Meínō Yɛ́sʉ",
-              "Eínō Yɛ́sʉ",
-              "Ɛndámâ"
-            ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           }
         ]
       },
@@ -3021,138 +2845,105 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
-            "target": "Tansania",
-            "source": "Tanzania (Country / Territory)",
-            "pronunciation": "tansania",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "Sere! (pl. Entasere!)",
+            "source": "Goodbye! Go in peace!",
+            "pronunciation": "sere"
           },
           {
-            "target": "Uhabeshi",
-            "source": "Ethiopia (Country / Territory)",
-            "pronunciation": "uhabeshi",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "Ashe / Ashe oleng'",
+            "source": "Thank you / Thank you very much",
+            "pronunciation": "ashe / ashe o-leng'"
           },
           {
-            "target": "Sudani",
-            "source": "Sudan (Country / Territory)",
-            "pronunciation": "sudani",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "tagwenia",
+            "source": "Salutation to a woman (literally laugh)",
+            "pronunciation": "tagwe-nia"
           },
           {
-            "target": "Kongo",
-            "source": "Congo - Brazzaville (Country / Territory)",
-            "pronunciation": "kongo",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "Supa! (resp. Ipa!)",
+            "source": "Hello! Good day! (general greeting among peers)",
+            "pronunciation": "supa"
           },
           {
-            "target": "Nijeria",
-            "source": "Nigeria (Country / Territory)",
-            "pronunciation": "nijeria",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "onyokie (f. nanyokie)",
+            "source": "Red",
+            "pronunciation": "oh-nyoh-kyeh"
           },
           {
-            "target": "Kodivaa",
-            "source": "Côte d’Ivoire (Country / Territory)",
-            "pronunciation": "kodivaa",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "target": "eshell",
+            "source": "Wet",
+            "pronunciation": "eshell"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Sere! — Ashe",
+            "source": "Goodbye! Go in peace! — Thank you"
+          },
+          {
+            "target": "tagwenia — Supa!",
+            "source": "Salutation to a woman — Hello! Good day!"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Tansania\" in Maasai?",
-            "correctAnswer": "Tanzania (Country / Territory)",
+            "prompt": "What does \"Sere!\" mean in English?",
+            "correctAnswer": "Goodbye! Go in peace!",
             "options": [
-              "Ethiopia (Country / Territory)",
-              "Sudan (Country / Territory)",
-              "Congo - Brazzaville (Country / Territory)",
-              "Tanzania (Country / Territory)"
+              "Goodbye! Go in peace!",
+              "Thank you / Thank you very much",
+              "Salutation to a woman (literally laugh)",
+              "Hello! Good day! (general greeting among peers)"
             ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "hint": "Core vocabulary in Hospitality, Requests & Social Discourse"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Uhabeshi\" in Maasai?",
-            "correctAnswer": "Ethiopia (Country / Territory)",
-            "options": [
-              "Sudan (Country / Territory)",
-              "Congo - Brazzaville (Country / Territory)",
-              "Ethiopia (Country / Territory)",
-              "Tanzania (Country / Territory)"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Thank you / Thank you very much\"",
+            "correctAnswer": "Ashe",
+            "acceptedAnswers": [
+              "Ashe / Ashe oleng'",
+              "Ashe"
             ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "hint": "Starts with \"As\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Sudani\" in Maasai?",
-            "correctAnswer": "Sudan (Country / Territory)",
-            "options": [
-              "Congo - Brazzaville (Country / Territory)",
-              "Sudan (Country / Territory)",
-              "Tanzania (Country / Territory)",
-              "Ethiopia (Country / Territory)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"tagwenia\"",
+            "correctAnswer": "Salutation to a woman",
+            "acceptedAnswers": [
+              "Salutation to a woman (literally laugh)",
+              "Salutation to a woman"
             ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Sudan (Country / Territory)\" in Maasai?",
-            "correctAnswer": "Sudani",
-            "options": [
-              "Sudani",
-              "Tansania",
-              "Uhabeshi",
-              "Kongo"
-            ],
-            "hint": "sudani"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Congo - Brazzaville (Country / Territory)\" in Maasai?",
-            "correctAnswer": "Kongo",
-            "options": [
-              "Tansania",
-              "Uhabeshi",
-              "Sudani",
-              "Kongo"
-            ],
-            "hint": "kongo"
+            "hint": "Review Hospitality, Requests & Social Discourse"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "Tansania: Tanzania (Country / Territory)",
+            "prompt": "Match each expression from Hospitality, Requests & Social Discourse with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Tansania",
-                "right": "Tanzania (Country / Territory)"
+                "left": "Sere!",
+                "right": "Goodbye! Go in peace!"
               },
               {
-                "left": "Uhabeshi",
-                "right": "Ethiopia (Country / Territory)"
+                "left": "Ashe",
+                "right": "Thank you"
               },
               {
-                "left": "Sudani",
-                "right": "Sudan (Country / Territory)"
+                "left": "tagwenia",
+                "right": "Salutation to a woman"
               },
               {
-                "left": "Kongo",
-                "right": "Congo - Brazzaville (Country / Territory)"
+                "left": "Supa!",
+                "right": "Hello! Good day!"
+              },
+              {
+                "left": "onyokie",
+                "right": "Red"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"Nigeria (Country / Territory)\": ___",
-            "correctAnswer": "Nijeria",
-            "options": [
-              "Tansania",
-              "Uhabeshi",
-              "Sudani",
-              "Nijeria"
-            ],
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           }
         ]
       }
@@ -3174,49 +2965,49 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Idya-ae-olong (that-other-day)",
             "source": "the day before yesterday, the day after to-morrow",
-            "pronunciation": "id-ya ae o-long",
+            "pronunciation": "idya-ae-olong",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "E-weji ne-yeng-ye-ki en-giteng",
             "source": "the place where the ox is slaughtered in",
-            "pronunciation": "e we-ji ne yeng ye ki",
+            "pronunciation": "e-weji ne-yeng-ye-ki en-giteng",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "E-weji ne-yeng-ye 'l-tunganak en-giteng",
             "source": "the place where men slaughter the ox in",
-            "pronunciation": "e we-ji ne yeng ye 'l",
+            "pronunciation": "e-weji ne-yeng-ye 'l-tunganak en-giteng",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "E-ton ol-tungani a-boit-are e-ngoroyoni",
             "source": "the man is sitting (to be) together with the woman",
-            "pronunciation": "e ton ol tung-a-ni a boit",
+            "pronunciation": "e-ton ol-tungani a-boit-are e-ngoroyoni",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-alem li-miki-njo",
             "source": "the sword which he does not give to thee",
-            "pronunciation": "ol a-lem li mi-ki njo",
+            "pronunciation": "ol-alem li-miki-njo",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-alem le-ma-isho",
             "source": "the sword which he does not give to me",
-            "pronunciation": "ol a-lem le ma ish-o",
+            "pronunciation": "ol-alem le-ma-isho",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani le-me-suj",
             "source": "the man whom he or she does not follow",
-            "pronunciation": "ol tung-a-ni le me suj",
+            "pronunciation": "ol-tungani le-me-suj",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani li-mi-suj",
             "source": "the man whom thou dost not follow",
-            "pronunciation": "ol tung-a-ni li mi suj",
+            "pronunciation": "ol-tungani li-mi-suj",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
         ],
@@ -3346,49 +3137,49 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ol-alem liki-njo-sho",
             "source": "the sword which you give to me",
-            "pronunciation": "ol a-lem li-ki njo sho",
+            "pronunciation": "ol-alem liki-njo-sho",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
-            "target": "Ol-alem la-isho J",
+            "target": "Ol-alem la-isho",
             "source": "the sword which he, she, or they give to me",
-            "pronunciation": "ol a-lem la ish-o j",
+            "pronunciation": "ol-alem la-isho",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani o-suj",
             "source": "the man whom they follow",
-            "pronunciation": "ol tung-a-ni o suj",
+            "pronunciation": "ol-tungani o-suj",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani li-suj-usuju",
             "source": "the man whom you follow",
-            "pronunciation": "ol tung-a-ni li suj u-su-ju",
+            "pronunciation": "ol-tungani li-suj-usuju",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
-            "target": "Ol-tuilgani liki-suj",
+            "target": "Ol-tungani liki-suj",
             "source": "the man whom we follow",
-            "pronunciation": "ol tuil-ga-ni li-ki suj",
+            "pronunciation": "ol-tungani liki-suj",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani li-suj",
             "source": "the man whom thou followest",
-            "pronunciation": "ol tung-a-ni li suj",
+            "pronunciation": "ol-tungani li-suj",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani o-nyor-u-ni",
             "source": "the man who will be loved",
-            "pronunciation": "ol tung-a-ni o nyor u ni",
+            "pronunciation": "ol-tungani o-nyor-u-ni",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani o-to-nyor-a-ki",
             "source": "the man who was loved",
-            "pronunciation": "ol tung-a-ni o to nyor a",
+            "pronunciation": "ol-tungani o-to-nyor-a-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
         ],
@@ -3413,67 +3204,19 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-alem liki-njo-sho\" in Maasai?",
+            "prompt": "What is the English meaning of \"Ol-alem liki-njo-sho\" in Maasai (Maa)?",
             "correctAnswer": "the sword which you give to me",
             "options": [
-              "the sword which he, she, or they give to me",
-              "the man whom they follow",
-              "the man whom you follow",
-              "the sword which you give to me"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-alem la-isho J\" in Maasai?",
-            "correctAnswer": "the sword which he, she, or they give to me",
-            "options": [
-              "the man whom they follow",
-              "the man whom you follow",
-              "the sword which he, she, or they give to me",
-              "the sword which you give to me"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-tungani o-suj\" in Maasai?",
-            "correctAnswer": "the man whom they follow",
-            "options": [
-              "the man whom you follow",
-              "the man whom they follow",
               "the sword which you give to me",
-              "the sword which he, she, or they give to me"
+              "the sword which he, she, or they give to me",
+              "the man whom they follow",
+              "the man whom you follow"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the man whom they follow\" in Maasai?",
-            "correctAnswer": "Ol-tungani o-suj",
-            "options": [
-              "Ol-tungani o-suj",
-              "Ol-alem liki-njo-sho",
-              "Ol-alem la-isho J",
-              "Ol-tungani li-suj-usuju"
-            ],
-            "hint": "ol tung-a-ni o suj"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the man whom you follow\" in Maasai?",
-            "correctAnswer": "Ol-tungani li-suj-usuju",
-            "options": [
-              "Ol-alem liki-njo-sho",
-              "Ol-alem la-isho J",
-              "Ol-tungani o-suj",
-              "Ol-tungani li-suj-usuju"
-            ],
-            "hint": "ol tung-a-ni li suj u-su-ju"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
+            "prompt": "Match each verified Maasai (Maa) term to its English meaning:",
             "correctAnswer": "Ol-alem liki-njo-sho: the sword which you give to me",
             "pairs": [
               {
@@ -3481,7 +3224,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
                 "right": "the sword which you give to me"
               },
               {
-                "left": "Ol-alem la-isho J",
+                "left": "Ol-alem la-isho",
                 "right": "the sword which he, she, or they give to me"
               },
               {
@@ -3496,13 +3239,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"the man whom we follow\": ___",
-            "correctAnswer": "Ol-tuilgani liki-suj",
+            "prompt": "Complete the Maasai (Maa) term for \"the man whom we follow\": ___",
+            "correctAnswer": "Ol-tungani liki-suj",
             "options": [
+              "Ol-tungani liki-suj",
               "Ol-alem liki-njo-sho",
-              "Ol-alem la-isho J",
-              "Ol-tungani o-suj",
-              "Ol-tuilgani liki-suj"
+              "Ol-alem la-isho",
+              "Ol-tungani o-suj"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
@@ -3526,49 +3269,49 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ol-tungani o-nyor-ita-i",
             "source": "the man who is being loved",
-            "pronunciation": "ol tung-a-ni o nyor i-ta i",
+            "pronunciation": "ol-tungani o-nyor-ita-i",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani o-nyor-i",
             "source": "the man who is loved",
-            "pronunciation": "ol tung-a-ni o nyor i",
+            "pronunciation": "ol-tungani o-nyor-i",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "'N-gulye-ngoroyok",
             "source": "the other women",
-            "pronunciation": "'n gul-ye ngo-ro-yok",
+            "pronunciation": "'n-gulye-ngoroyok",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-likae-tungani",
             "source": "the other man",
-            "pronunciation": "ol li-kae tung-a-ni",
+            "pronunciation": "ol-likae-tungani",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani ol-openy in-gishu",
             "source": "the man whose cattle they are",
-            "pronunciation": "ol tung-a-ni ol o-peny in gish-u",
+            "pronunciation": "ol-tungani ol-openy in-gishu",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
-            "target": "4 Ol-tungani o-sapuk-u means",
-            "source": "the man will be big vide p",
-            "pronunciation": "4 ol tung-a-ni o sa-puk u",
+            "target": "Ol-tungani o-sapuk-u",
+            "source": "The man will become big",
+            "pronunciation": "ol-tungani o-sapuk-u",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "'Ngoroyok ne-me-ra sapuki",
             "source": "the women who are not big",
-            "pronunciation": "'ng-o-ro-yok ne me ra sa-pu-ki",
+            "pronunciation": "'ngo-ro-yok ne-me-ra sa-pu-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Il-tunganak le-me-ra sapuki",
             "source": "the men who are not big",
-            "pronunciation": "il tung-a-nak le me ra sa-pu-ki",
+            "pronunciation": "il-tunganak le-me-ra sa-pu-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
         ],
@@ -3593,67 +3336,19 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-tungani o-nyor-ita-i\" in Maasai?",
+            "prompt": "What is the English meaning of \"Ol-tungani o-nyor-ita-i\" in Maasai (Maa)?",
             "correctAnswer": "the man who is being loved",
             "options": [
-              "the man who is loved",
-              "the other women",
-              "the other man",
-              "the man who is being loved"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-tungani o-nyor-i\" in Maasai?",
-            "correctAnswer": "the man who is loved",
-            "options": [
-              "the other women",
-              "the other man",
-              "the man who is loved",
-              "the man who is being loved"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"'N-gulye-ngoroyok\" in Maasai?",
-            "correctAnswer": "the other women",
-            "options": [
-              "the other man",
-              "the other women",
               "the man who is being loved",
-              "the man who is loved"
+              "the man who is loved",
+              "the other women",
+              "the other man"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the other women\" in Maasai?",
-            "correctAnswer": "'N-gulye-ngoroyok",
-            "options": [
-              "'N-gulye-ngoroyok",
-              "Ol-tungani o-nyor-ita-i",
-              "Ol-tungani o-nyor-i",
-              "Ol-likae-tungani"
-            ],
-            "hint": "'n gul-ye ngo-ro-yok"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the other man\" in Maasai?",
-            "correctAnswer": "Ol-likae-tungani",
-            "options": [
-              "Ol-tungani o-nyor-ita-i",
-              "Ol-tungani o-nyor-i",
-              "'N-gulye-ngoroyok",
-              "Ol-likae-tungani"
-            ],
-            "hint": "ol li-kae tung-a-ni"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
+            "prompt": "Match each verified Maasai (Maa) term to its English meaning:",
             "correctAnswer": "Ol-tungani o-nyor-ita-i: the man who is being loved",
             "pairs": [
               {
@@ -3676,13 +3371,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"the man whose cattle they are\": ___",
+            "prompt": "Complete the Maasai (Maa) term for \"the man whose cattle they are\": ___",
             "correctAnswer": "Ol-tungani ol-openy in-gishu",
             "options": [
+              "Ol-tungani ol-openy in-gishu",
               "Ol-tungani o-nyor-ita-i",
               "Ol-tungani o-nyor-i",
-              "'N-gulye-ngoroyok",
-              "Ol-tungani ol-openy in-gishu"
+              "'N-gulye-ngoroyok"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
@@ -3698,49 +3393,49 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "E-ngoroyoni ne-me-ra sapuk",
             "source": "the woman who is not big",
-            "pronunciation": "e ngo-ro-yo-ni ne me ra sa-puk",
+            "pronunciation": "e-ngoroyoni ne-me-ra sa-puk",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Ol-tungani le-me-ra sapuk",
             "source": "the man who is not big",
-            "pronunciation": "ol tung-a-ni le me ra sa-puk",
+            "pronunciation": "ol-tungani le-me-ra sa-puk",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "'Wejitin nee-ra sapuki",
             "source": "the places which are big",
-            "pronunciation": "'-we-ji-tin nee ra sa-pu-ki",
+            "pronunciation": "'we-ji-tin nee-ra sa-pu-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "'Ngoroyok naa-ra sapuki",
             "source": "the women who are big",
-            "pronunciation": "'ng-o-ro-yok naa ra sa-pu-ki",
+            "pronunciation": "'ngo-ro-yok naa-ra sa-pu-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "Il-tunganak oo-ra sapuki",
             "source": "the men who are big",
-            "pronunciation": "il tung-a-nak oo ra sa-pu-ki",
+            "pronunciation": "il-tunganak oo-ra sa-pu-ki",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
-            "target": "E-wSji ne-ra sapuk",
+            "target": "E-weji ne-ra sapuk",
             "source": "the place which is big",
-            "pronunciation": "e wsji ne ra sa-puk",
+            "pronunciation": "e-weji ne-ra sa-puk",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
             "target": "E-ngoroyoni na-ra sapuk",
             "source": "the woman who is big",
-            "pronunciation": "e ngo-ro-yo-ni na ra sa-puk",
+            "pronunciation": "e-ngoroyoni na-ra sa-puk",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           },
           {
-            "target": "Ol-tungani o-ra3 sapuk",
+            "target": "Ol-tungani o-ra sapuk",
             "source": "the man who is big",
-            "pronunciation": "ol tung-a-ni o ra 3 sa-puk",
+            "pronunciation": "ol-tungani o-ra sa-puk",
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }
         ],
@@ -3765,67 +3460,19 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"E-ngoroyoni ne-me-ra sapuk\" in Maasai?",
+            "prompt": "What is the English meaning of \"E-ngoroyoni ne-me-ra sapuk\" in Maasai (Maa)?",
             "correctAnswer": "the woman who is not big",
             "options": [
-              "the man who is not big",
-              "the places which are big",
-              "the women who are big",
-              "the woman who is not big"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-tungani le-me-ra sapuk\" in Maasai?",
-            "correctAnswer": "the man who is not big",
-            "options": [
-              "the places which are big",
-              "the women who are big",
-              "the man who is not big",
-              "the woman who is not big"
-            ],
-            "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"'Wejitin nee-ra sapuki\" in Maasai?",
-            "correctAnswer": "the places which are big",
-            "options": [
-              "the women who are big",
-              "the places which are big",
               "the woman who is not big",
-              "the man who is not big"
+              "the man who is not big",
+              "the places which are big",
+              "the women who are big"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the places which are big\" in Maasai?",
-            "correctAnswer": "'Wejitin nee-ra sapuki",
-            "options": [
-              "'Wejitin nee-ra sapuki",
-              "E-ngoroyoni ne-me-ra sapuk",
-              "Ol-tungani le-me-ra sapuk",
-              "'Ngoroyok naa-ra sapuki"
-            ],
-            "hint": "'-we-ji-tin nee ra sa-pu-ki"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"the women who are big\" in Maasai?",
-            "correctAnswer": "'Ngoroyok naa-ra sapuki",
-            "options": [
-              "E-ngoroyoni ne-me-ra sapuk",
-              "Ol-tungani le-me-ra sapuk",
-              "'Wejitin nee-ra sapuki",
-              "'Ngoroyok naa-ra sapuki"
-            ],
-            "hint": "'ng-o-ro-yok naa ra sa-pu-ki"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
+            "prompt": "Match each verified Maasai (Maa) term to its English meaning:",
             "correctAnswer": "E-ngoroyoni ne-me-ra sapuk: the woman who is not big",
             "pairs": [
               {
@@ -3848,13 +3495,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Maasai term for \"the men who are big\": ___",
+            "prompt": "Complete the Maasai (Maa) term for \"the men who are big\": ___",
             "correctAnswer": "Il-tunganak oo-ra sapuki",
             "options": [
+              "Il-tunganak oo-ra sapuki",
               "E-ngoroyoni ne-me-ra sapuk",
               "Ol-tungani le-me-ra sapuk",
-              "'Wejitin nee-ra sapuki",
-              "Il-tunganak oo-ra sapuki"
+              "'Wejitin nee-ra sapuki"
             ],
             "hint": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
           }

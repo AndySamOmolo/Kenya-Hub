@@ -20,7 +20,7 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
     id: "kisii-phonology-dialects",
     title: "Seven-Vowel System, Bilabial Fricative /β/ & Historical Kossova / Igizii / Ki-guzii Records (Hobley 1902 & Johnston 1902, 1919)",
     summary: "Ekegusii contrasts 7 vowel qualities with phonemic vowel length (bóra 'to miss' vs. bóóra 'to say'), realizes orthographic b as [β] and g as [ɣ], and is documented historically in Hobley (1902) and Johnston (1902, 1919).",
-    content: `As documented in C. W. Hobley (*Eastern Uganda*, 1902, pp. 50–51, 86, 89–91 under *Kossova*), Sir Harry H. Johnston (*The Uganda Protectorate*, 1902, pp. 902–929 under *Igizii* & *Comparative Study of the Bantu Languages*, 1919, Vol. I, pp. 73–85 & Vol. II, pp. 24–25, 497–498 under *7. Ki-guzii & 7a. Ki-kωria*), and modern Ekegusii linguistics (JE.42):
+    content: `As documented in C. W. Hobley (*Eastern Uganda*, 1902, pp. 50–51, 86, 89–91 under *Kossova*), Sir Harry H. Johnston (*The Uganda Protectorate*, 1902, pp. 902–929 under *Igizii* & *Comparative Study of the Bantu Languages*, 1919, Vol. I, pp. 73–85 & Vol. II, pp. 24–25, 497–498 under *7. Ki-guzii & 7a. Ki-koria*), and modern Ekegusii linguistics (JE.42):
 1. **Contrastive Seven-Vowel Inventory & Length**:
    - Ekegusii has seven vowel phonemes (/i, e, ɛ, a, ɔ, o, u/) and contrastive vowel length, where short vs. long vowels distinguish lexical meaning:
    - **bóra** (to miss) vs. **bóóra** (to say / tell).
@@ -40,7 +40,7 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
     id: "kisii-noun-classes-numerals",
     title: "Ekegusii Noun Classes (Omo-/Aba-, Ege-/Ebi-, Ri-/Ama-, E-/Chi-), Dahl's Law & Quinary-Decimal Numerals (Hobley 1902 & Johnston 1919)",
     summary: "Ekegusii nouns inflect via paired class prefixes with augment vowels (o-, a-, e-, ri-), exhibit Dahl's Law voicing (eke- vs. ege-, oko- vs. ogo-), and count from 1 to 100 using a hybrid base-5/base-10 numeral system.",
-    content: `From C. W. Hobley (1902, pp. 50–51, 86, 89–91) and Sir Harry H. Johnston (1919, Vol. I, pp. 73–85, #7 Ki-guzii & #7a Ki-kωria):
+    content: `From C. W. Hobley (1902, pp. 50–51, 86, 89–91) and Sir Harry H. Johnston (1919, Vol. I, pp. 73–85, #7 Ki-guzii & #7a Ki-koria):
 1. **Principal Noun Classes & Dahl's Law Voicing**:
    - **Class 1/2 (*omo- / aba-*)**: *omonto → abanto* (person → people), *omosacha → abasacha* (man → men), *omokungu → abakungu* (woman/wife → women), *omwana → abana* (child → children), *omogaka → abagaka* (elder → elders).
    - **Class 3/4 (*omo- / eme-*)**: *omotwe → emetwe* (head → heads), *omote → emete* (tree → trees), *omorro / omorero* (fire).
@@ -63,39 +63,39 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
    },
   {
     id: "kisii-johnston-1922-verb-paradigm",
-    title: "Complete 15-Part Verb Paradigm of -rora ('See') in #7 Ki-guzii & #7a Ki-kωria (Johnston 1922, Vol. II, pp. 497–498)",
-    summary: "Sir Harry Johnston (1922, Vol. II, pp. 497–498) sets out the full conjugation of Ωku-rora ('to see') in Ki-guzii and Ki-kωria, illustrating n+r → nd, intervocalic r → z in the preterite (Ndωzire), and Ti- / -ta- negation.",
-    content: `In *A Comparative Study of the Bantu and Semi-Bantu Languages* (Vol. II, 1922, pp. 497–498), Sir Harry H. Johnston codifies the 15-part verbal paradigm of **Ωku-rora** ("to see") for **#7 Ki-guzii** and **#7a Ki-kωria**:
+    title: "Complete 15-Part Verb Paradigm of -rora ('See') in #7 Ki-guzii & #7a Ki-koria (Johnston 1922, Vol. II, pp. 497–498)",
+    summary: "Sir Harry Johnston (1922, Vol. II, pp. 497–498) sets out the full conjugation of Oku-rora ('to see') in Ki-guzii and Ki-koria, illustrating n+r → nd, intervocalic r → z in the preterite (Ndozire), and Ti- / -ta- negation.",
+    content: `In *A Comparative Study of the Bantu and Semi-Bantu Languages* (Vol. II, 1922, pp. 497–498), Sir Harry H. Johnston codifies the 15-part verbal paradigm of **Oku-rora** ("to see") for **#7 Ki-guzii** and **#7a Ki-koria**:
 1. **Imperative & Infinitive**:
-   - **Imperative**: 2s **Rora!** ("see!"), 2p **Rore!** ("see ye!" — no *-ni* suffix in the Nyanza Group); Negative Imperative: **Ω-ta-rora!** ("see not!").
-   - **Infinitive**: **Ωku-rora** ("to see"); Negative Infinitive: **Ωku-ta-rora** ("not to see").
+   - **Imperative**: 2s **Rora!** ("see!"), 2p **Rore!** ("see ye!" — no *-ni* suffix in the Nyanza Group); Negative Imperative: **O-ta-rora!** ("see not!").
+   - **Infinitive**: **Oku-rora** ("to see"); Negative Infinitive: **Oku-ta-rora** ("not to see").
 2. **Affirmative Present, Preterite, Pluperfect & Future Tenses**:
-   - **Aorist Present**: 1s **N-dora** ("I see", with *n + r → nd*), 2s **Ω-rora**, 3s **A-rora**, 1p **Tu-rora**, 2p **Mu-rora**, 3p **Ba-rora** (also **N-a-rora, W-a-rora**).
-   - **Imperfect / Literal Present**: **Ni-n-dora** ("I am seeing"), **N-ω-rora** ("thou art seeing"); Relative/Participial: **N-duku-rora** ("I who am seeing"), **Ω-ruku-rora** ("thou who art seeing").
-   - **Preterite (*-ire* with *r → z*)**: **Ndωzire** (for *N-dorire*, "I saw"), **Ω-rωzire** ("thou sawest").
+   - **Aorist Present**: 1s **N-dora** ("I see", with *n + r → nd*), 2s **O-rora**, 3s **A-rora**, 1p **Tu-rora**, 2p **Mu-rora**, 3p **Ba-rora** (also **N-a-rora, W-a-rora**).
+   - **Imperfect / Literal Present**: **Ni-n-dora** ("I am seeing"), **N-o-rora** ("thou art seeing"); Relative/Participial: **N-duku-rora** ("I who am seeing"), **O-ruku-rora** ("thou who art seeing").
+   - **Preterite (*-ire* with *r → z*)**: **Ndozire** (for *N-dorire*, "I saw"), **O-rozire** ("thou sawest").
    - **Imperfect Past**: **N-dozire-ge** ("I was seeing").
    - **Pluperfect / Distant Past & Habitual**: **Ṅ-ka-rora** ("I did see / had seen"), **Ṅ-a-rora** ("I used to see").
-   - **Future Tenses**: **N-da-rora, Ω-ra-rora** ("I/thou shall see"); **N-di-rora, Ω-li-rora** ("I/thou shall be seeing").
+   - **Future Tenses**: **N-da-rora, O-ra-rora** ("I/thou shall see"); **N-di-rora, O-li-rora** ("I/thou shall be seeing").
 3. **Subjunctive, Conditional, Negation & Derivative Extensions**:
-   - **Subjunctive**: **N-dore** ("I may see"), **Ω-rore** ("thou mayest see").
-   - **Conditional**: **Ṅ-ku-rωzire** ("I might have seen"), **N-a-ku-rωzire** ("I should see / have seen"), **N-a-ba-ni-n-dora** ("I should be seeing").
-   - **Negative Conjugation (*Ti-* / *-ta-*)**: Present **Ti-n-dora** ("I see not"), **T-ω-rora**, **T-a-rora**, **Ti-tu-rora**, **Ti-mu-rora**, **Ti-ba-rora**; Past **Ti-n-dozire** ("I have not seen"); Future **Ti-ndi-rora** ("I shall not see"); Relative Negative **N-ta-rora** ("I who see not"), **Ω-ta-rora**.
-   - **Verbal Extensions**: Passive **-rωrwa** ("to be seen"), Reflexive **Ωkw-i-rora** ("to see oneself"), Neuter/Stative **-rωreka**, Applicative **-rωrera**, Causative **-rωria / -rωrisia**, Reciprocal **-rωrana**.
-   - **Auxiliary 'To be'**: **Ωku-ba, -li, -re, -du**.`,
+   - **Subjunctive**: **N-dore** ("I may see"), **O-rore** ("thou mayest see").
+   - **Conditional**: **Ṅ-ku-rozire** ("I might have seen"), **N-a-ku-rozire** ("I should see / have seen"), **N-a-ba-ni-n-dora** ("I should be seeing").
+   - **Negative Conjugation (*Ti-* / *-ta-*)**: Present **Ti-n-dora** ("I see not"), **T-o-rora**, **T-a-rora**, **Ti-tu-rora**, **Ti-mu-rora**, **Ti-ba-rora**; Past **Ti-n-dozire** ("I have not seen"); Future **Ti-ndi-rora** ("I shall not see"); Relative Negative **N-ta-rora** ("I who see not"), **O-ta-rora**.
+   - **Verbal Extensions**: Passive **-rorwa** ("to be seen"), Reflexive **Okw-i-rora** ("to see oneself"), Neuter/Stative **-roreka**, Applicative **-rorera**, Causative **-roria / -rorisia**, Reciprocal **-rorana**.
+   - **Auxiliary 'To be'**: **Oku-ba, -li, -re, -du**.`,
     examples: [
-      { kisii: "Rora! → Rore! | N-dora, Ω-rora, A-rora, Tu-rora, Mu-rora, Ba-rora | Ni-n-dora | N-duku-rora", english: "See! → See ye! | I, thou, he, we, ye, they see | I am seeing | I who am seeing", explanation: "Imperative & Present tenses with n+r → nd (Johnston 1922, Vol. II, pp. 497–498)" },
-      { kisii: "Ndωzire (N-dozire-ge) • Ṅ-ka-rora • N-da-rora / N-di-rora • Ṅ-ku-rωzire", english: "I saw (I was seeing) • I had seen • I shall see / be seeing • I might have seen", explanation: "Preterite r → z mutation, Pluperfect, Future & Conditional (Johnston 1922, p. 498)" },
-      { kisii: "Ω-ta-rora! • Ti-n-dora, T-ω-rora, T-a-rora, Ti-tu-rora, Ti-mu-rora, Ti-ba-rora • Ti-n-dozire • N-ta-rora", english: "See not! | I, thou, he, we, ye, they see not | I have not seen | I who see not", explanation: "Negative conjugation in #7 Ki-guzii & #7a Ki-kωria (Johnston 1922, p. 498)" }
+      { kisii: "Rora! → Rore! | N-dora, O-rora, A-rora, Tu-rora, Mu-rora, Ba-rora | Ni-n-dora | N-duku-rora", english: "See! → See ye! | I, thou, he, we, ye, they see | I am seeing | I who am seeing", explanation: "Imperative & Present tenses with n+r → nd (Johnston 1922, Vol. II, pp. 497–498)" },
+      { kisii: "Ndozire (N-dozire-ge) • Ṅ-ka-rora • N-da-rora / N-di-rora • Ṅ-ku-rozire", english: "I saw (I was seeing) • I had seen • I shall see / be seeing • I might have seen", explanation: "Preterite r → z mutation, Pluperfect, Future & Conditional (Johnston 1922, p. 498)" },
+      { kisii: "O-ta-rora! • Ti-n-dora, T-o-rora, T-a-rora, Ti-tu-rora, Ti-mu-rora, Ti-ba-rora • Ti-n-dozire • N-ta-rora", english: "See not! | I, thou, he, we, ye, they see not | I have not seen | I who see not", explanation: "Negative conjugation in #7 Ki-guzii & #7a Ki-koria (Johnston 1922, p. 498)" }
     ]
   },
   {
     "id": "kisii-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kisii (Ekegusii))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kisii (Ekegusii).",
-    "content": "1. **Archival & Open-Dataset Integration for Kisii (Ekegusii)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Kisii (Ekegusii)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *o, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
-        "kisii": "Ngωtenga • Nangire",
+        "kisii": "Ngotenga • Nangire",
         "english": "I dance • I come not",
         "explanation": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
       },

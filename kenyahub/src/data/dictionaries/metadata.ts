@@ -71,97 +71,97 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17507,
+    "totalEntries": 17420,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 81
+        "count": 65
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 505
+        "count": 193
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 486
+        "count": 464
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 481
+        "count": 490
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 389
+        "count": 392
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 1278
+        "count": 987
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 788
+        "count": 650
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 455
+        "count": 465
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 3413
+        "count": 2716
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 439
+        "count": 378
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
-        "icon": "🚌",
-        "count": 505
+        "icon": "🧭",
+        "count": 526
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 451
+        "count": 461
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 590
+        "count": 362
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 374
+        "count": 406
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 7113
+        "count": 8706
       },
       {
         "id": "culture-history",
@@ -189,73 +189,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
-    "totalEntries": 10786,
+    "totalEntries": 10713,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 32
+        "count": 30
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 212
+        "count": 116
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 250
+        "count": 246
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🧍",
-        "count": 436
+        "icon": "🫁",
+        "count": 408
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 248
+        "count": 256
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 522
+        "count": 482
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 357
+        "count": 338
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 309
+        "count": 312
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 2918
+        "icon": "🏃",
+        "count": 822
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 1212
+        "count": 358
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 152
+        "count": 161
       },
       {
         "id": "shopping",
@@ -267,25 +267,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 143
+        "count": 153
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 150
+        "count": 223
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 743
+        "count": 3745
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 3007
+        "count": 2968
       }
     ]
   },
@@ -302,53 +302,53 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Homa Bay",
       "Migori"
     ],
-    "hasAudio": false,
+    "hasAudio": true,
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Mill-Hill Fathers (1920), and BFBS (1921).",
-    "totalEntries": 2516,
+    "totalEntries": 2507,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 50
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 74
+        "count": 51
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 129
+        "count": 134
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 134
+        "count": 120
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 166
+        "icon": "🦁",
+        "count": 165
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 160
+        "count": 142
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 123
+        "count": 118
       },
       {
         "id": "home",
@@ -360,49 +360,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 466
+        "count": 299
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 70
+        "count": 62
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 32
+        "count": 34
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 16
+        "count": 22
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 27
+        "count": 39
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 85
+        "count": 104
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 460
+        "count": 680
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 386
+        "count": 383
       }
     ]
   },
@@ -427,103 +427,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
-    "totalEntries": 5184,
+    "totalEntries": 4618,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 11
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 135
+        "count": 98
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 231
+        "count": 196
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 321
+        "count": 294
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 405
+        "count": 344
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 463
+        "count": 262
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 173
+        "count": 206
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 291
+        "count": 244
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 371
+        "count": 203
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 196
+        "count": 164
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 169
+        "count": 161
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 43
+        "count": 36
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 122
+        "count": 93
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 113
+        "count": 136
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 314
+        "count": 628
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1812
+        "count": 1542
       }
     ]
   },
@@ -544,73 +544,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
-    "totalEntries": 3553,
+    "totalEntries": 3511,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 294
+        "count": 14
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 169
+        "count": 159
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 176
+        "count": 177
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 319
+        "icon": "🫁",
+        "count": 308
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 355
+        "icon": "🦁",
+        "count": 364
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌳",
-        "count": 257
+        "icon": "🌿",
+        "count": 239
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 187
+        "count": 186
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
-        "icon": "🏡",
-        "count": 212
+        "icon": "🏠",
+        "count": 225
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 656
+        "icon": "🏃",
+        "count": 375
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 132
+        "count": 134
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 56
+        "count": 71
       },
       {
         "id": "shopping",
@@ -622,25 +622,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 71
+        "count": 67
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 74
+        "count": 98
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 140
+        "count": 655
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 423
+        "count": 407
       }
     ]
   },
@@ -660,103 +660,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4118,
+    "totalEntries": 4093,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 24
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 164
+        "count": 54
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 131
+        "count": 114
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🧍",
-        "count": 189
+        "icon": "🫁",
+        "count": 165
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐾",
-        "count": 188
+        "icon": "🦁",
+        "count": 187
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 309
+        "count": 190
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 174
+        "count": 131
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 145
+        "count": 151
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 209
+        "icon": "🏃",
+        "count": 172
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 139
+        "count": 135
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 124
+        "count": 138
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 54
+        "count": 57
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
-        "icon": "🏥",
-        "count": 117
+        "icon": "🚨",
+        "count": 75
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "⏳",
-        "count": 286
+        "icon": "⏰",
+        "count": 115
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 1545
+        "count": 2078
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 320
+        "count": 315
       }
     ]
   },
@@ -775,55 +775,97 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml).",
-    "totalEntries": 677,
+    "totalEntries": 571,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 6
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 21
+        "count": 18
+      },
+      {
+        "id": "family",
+        "name": "Family, People & Kinship",
+        "icon": "👨‍👩‍👧‍👦",
+        "count": 23
+      },
+      {
+        "id": "body",
+        "name": "Body Parts & Health",
+        "icon": "🫁",
+        "count": 54
+      },
+      {
+        "id": "animals",
+        "name": "Animals, Livestock & Wildlife",
+        "icon": "🦁",
+        "count": 13
+      },
+      {
+        "id": "nature",
+        "name": "Nature, Environment & Geography",
+        "icon": "🌿",
+        "count": 22
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 212
+        "count": 26
+      },
+      {
+        "id": "home",
+        "name": "Home, Tools & Material Culture",
+        "icon": "🏠",
+        "count": 8
+      },
+      {
+        "id": "verbs",
+        "name": "Core Verbs & Actions",
+        "icon": "🏃",
+        "count": 12
+      },
+      {
+        "id": "adjectives",
+        "name": "Adjectives, Qualities & Grammar",
+        "icon": "✨",
+        "count": 6
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 6
+      },
+      {
+        "id": "shopping",
+        "name": "Trade, Money & Measures",
+        "icon": "🛒",
+        "count": 7
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "⏰",
+        "count": 27
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 177
+        "count": 152
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 234
-      },
-      {
-        "id": "shopping",
-        "name": "shopping",
-        "icon": "📜",
-        "count": 2
-      },
-      {
-        "id": "home",
-        "name": "home",
-        "icon": "📜",
-        "count": 4
-      },
-      {
-        "id": "time",
-        "name": "time",
-        "icon": "📜",
-        "count": 2
+        "count": 191
       }
     ]
   },
@@ -843,73 +885,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
-    "totalEntries": 2366,
+    "totalEntries": 2357,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 16
+        "count": 9
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 92
+        "count": 55
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 160
+        "count": 163
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 158
+        "icon": "🫁",
+        "count": 152
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 201
+        "count": 202
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 166
+        "icon": "🌿",
+        "count": 130
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 130
+        "count": 126
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 104
+        "count": 105
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 181
+        "icon": "🏃",
+        "count": 123
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 108
+        "count": 100
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 27
+        "count": 31
       },
       {
         "id": "shopping",
@@ -921,25 +963,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 67
+        "count": 54
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 38
+        "count": 67
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 275
+        "count": 403
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 628
+        "count": 622
       }
     ]
   },
@@ -958,49 +1000,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
-    "totalEntries": 1135,
+    "totalEntries": 1118,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 11
+        "count": 4
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 96
+        "count": 94
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 78
+        "count": 77
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🧠",
-        "count": 143
+        "icon": "🫁",
+        "count": 138
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
+        "icon": "🦁",
         "count": 133
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 122
+        "count": 102
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 67
+        "count": 64
       },
       {
         "id": "home",
@@ -1011,14 +1053,14 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 39
+        "icon": "🏃",
+        "count": 41
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 31
+        "count": 32
       },
       {
         "id": "travel",
@@ -1036,25 +1078,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 19
+        "count": 11
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 21
+        "count": 40
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 91
+        "icon": "🗣️",
+        "count": 110
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 187
+        "count": 175
       }
     ]
   },
@@ -1075,49 +1117,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
-    "totalEntries": 2497,
+    "totalEntries": 2452,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 22
+        "count": 10
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 188
+        "count": 83
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 273
+        "count": 155
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 125
+        "count": 121
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 166
+        "count": 186
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 75
+        "count": 76
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 82
+        "count": 92
       },
       {
         "id": "home",
@@ -1129,49 +1171,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 27
+        "count": 46
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 67
+        "count": 69
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 36
+        "count": 57
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 24
+        "count": 29
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 37
+        "count": 18
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 82
+        "count": 100
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 668
+        "count": 821
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 524
+        "count": 488
       }
     ]
   },
@@ -1189,49 +1231,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
-    "totalEntries": 2019,
+    "totalEntries": 2010,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 27
+        "count": 12
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 63
+        "count": 24
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
-        "icon": "👥",
-        "count": 101
+        "icon": "👨‍👩‍👧‍👦",
+        "count": 88
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "👁️",
-        "count": 124
+        "icon": "🫁",
+        "count": 108
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐾",
-        "count": 154
+        "icon": "🦁",
+        "count": 152
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 141
+        "count": 114
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 62
+        "count": 63
       },
       {
         "id": "home",
@@ -1242,14 +1284,14 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 532
+        "icon": "🏃",
+        "count": 263
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 78
+        "count": 81
       },
       {
         "id": "travel",
@@ -1267,25 +1309,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 9
+        "count": 31
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 47
+        "count": 84
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 343
+        "icon": "🗣️",
+        "count": 656
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 217
+        "count": 213
       }
     ]
   },
@@ -1305,103 +1347,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 11206,
+    "totalEntries": 7950,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 32
+        "count": 15
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 230
+        "count": 72
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 126
+        "count": 106
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 126
+        "count": 131
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 110
+        "count": 111
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🦁",
-        "count": 524
+        "icon": "🌿",
+        "count": 262
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 278
+        "count": 206
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 128
+        "count": 130
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1465
+        "count": 905
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 189
+        "count": 173
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 136
+        "count": 128
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 79
+        "count": 69
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
-        "icon": "🏥",
-        "count": 192
+        "icon": "🚨",
+        "count": 94
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "⏳",
-        "count": 114
+        "icon": "⏰",
+        "count": 94
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 7176
+        "icon": "🗣️",
+        "count": 5165
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 301
+        "count": 289
       }
     ]
   },
@@ -1419,49 +1461,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921).",
-    "totalEntries": 573,
+    "totalEntries": 572,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 20
+        "count": 7
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 33
+        "count": 23
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
-        "icon": "👥",
-        "count": 26
+        "icon": "👨‍👩‍👧‍👦",
+        "count": 23
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "👤",
-        "count": 41
+        "icon": "🫁",
+        "count": 39
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐾",
+        "icon": "🦁",
         "count": 49
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 59
+        "count": 35
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 28
+        "count": 27
       },
       {
         "id": "home",
@@ -1472,20 +1514,38 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
-        "icon": "⚡",
-        "count": 69
+        "icon": "🏃",
+        "count": 49
+      },
+      {
+        "id": "adjectives",
+        "name": "Adjectives, Qualities & Grammar",
+        "icon": "✨",
+        "count": 4
+      },
+      {
+        "id": "emergency",
+        "name": "Health, Safety, Law & Conflict",
+        "icon": "🚨",
+        "count": 0
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 59
+        "count": 104
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 174
+        "count": 173
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "Clock",
+        "count": 24
       }
     ]
   },
@@ -1503,13 +1563,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml).",
-    "totalEntries": 578,
+    "totalEntries": 573,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 26
+        "count": 8
       },
       {
         "id": "numbers",
@@ -1521,49 +1581,79 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 17
+        "count": 27
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 40
+        "icon": "🫁",
+        "count": 47
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
+        "icon": "🦁",
         "count": 37
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 218
+        "icon": "🌿",
+        "count": 86
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 29
+        "icon": "🍲",
+        "count": 30
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 50
+        "count": 59
+      },
+      {
+        "id": "adjectives",
+        "name": "Adjectives, Qualities & Grammar",
+        "icon": "✨",
+        "count": 7
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 1
+      },
+      {
+        "id": "shopping",
+        "name": "Trade, Money & Measures",
+        "icon": "🛒",
+        "count": 1
+      },
+      {
+        "id": "emergency",
+        "name": "Health, Safety, Law & Conflict",
+        "icon": "🚨",
+        "count": 4
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 130
+        "count": 198
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 13
+        "count": 14
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "Clock",
+        "count": 36
       }
     ]
   },
@@ -1581,49 +1671,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3389,
+    "totalEntries": 3372,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 14
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 66
+        "count": 61
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 86
+        "count": 83
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 123
+        "icon": "🫁",
+        "count": 125
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 135
+        "icon": "🦁",
+        "count": 139
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 188
+        "icon": "🌿",
+        "count": 168
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 94
+        "icon": "🍲",
+        "count": 100
       },
       {
         "id": "home",
@@ -1635,19 +1725,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1307
+        "count": 265
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 90
+        "count": 125
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 31
+        "count": 32
       },
       {
         "id": "shopping",
@@ -1659,106 +1749,253 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 47
+        "count": 59
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 48
+        "count": 76
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 26
+        "icon": "🗣️",
+        "count": 1000
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1022
+        "count": 1011
       }
     ]
   },
   {
-    "languageId": "samburu",
-    "languageName": "Samburu (Sampur)",
-    "family": "nilotic",
-    "nativeName": "Sampur / ɔl Maa",
+    "languageId": "taveta",
+    "languageName": "Taveta (Kitaveta)",
+    "family": "bantu",
+    "nativeName": "Kitaveta / Kituweta",
     "script": "Latin",
-    "speakerCount": 310000,
+    "speakerCount": 25000,
     "counties": [
-      "Samburu",
-      "Marsabit",
-      "Isiolo",
-      "Laikipia"
+      "Taita-Taveta"
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
-    "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
-    "totalEntries": 687,
+    "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
+    "totalEntries": 460,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 15
+        "count": 3
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 16
+        "count": 29
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 16
+        "count": 31
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 45
+        "icon": "🫁",
+        "count": 51
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 37
+        "icon": "🦁",
+        "count": 45
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 111
+        "icon": "🌿",
+        "count": 48
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 12
+        "icon": "🍲",
+        "count": 23
+      },
+      {
+        "id": "home",
+        "name": "Home, Tools & Material Culture",
+        "icon": "🏠",
+        "count": 27
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 16
+        "count": 53
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 79
+        "count": 33
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 20
+      },
+      {
+        "id": "shopping",
+        "name": "Trade, Money & Measures",
+        "icon": "🛒",
+        "count": 3
+      },
+      {
+        "id": "emergency",
+        "name": "Health, Safety, Law & Conflict",
+        "icon": "🚨",
+        "count": 4
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "⏰",
+        "count": 16
+      },
+      {
+        "id": "phrases",
+        "name": "Common Expressions & Vocabulary",
+        "icon": "🗣️",
+        "count": 57
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 340
+        "count": 17
+      }
+    ]
+  },
+  {
+    "languageId": "pokomo",
+    "languageName": "Pokomo (Kipfokomo)",
+    "family": "bantu",
+    "nativeName": "Kipfokomo",
+    "script": "Latin",
+    "speakerCount": 120000,
+    "counties": [
+      "Tana River"
+    ],
+    "hasAudio": false,
+    "dictionaryVersion": "3.0",
+    "lastUpdated": "2026-10-31",
+    "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
+    "totalEntries": 2313,
+    "categories": [
+      {
+        "id": "greetings",
+        "name": "Greetings & Farewells",
+        "icon": "👋",
+        "count": 14
+      },
+      {
+        "id": "numbers",
+        "name": "Numbers & Counting",
+        "icon": "🔢",
+        "count": 28
+      },
+      {
+        "id": "family",
+        "name": "Family, People & Kinship",
+        "icon": "👨‍👩‍👧‍👦",
+        "count": 46
+      },
+      {
+        "id": "body",
+        "name": "Body Parts & Health",
+        "icon": "🫁",
+        "count": 70
+      },
+      {
+        "id": "animals",
+        "name": "Animals, Livestock & Wildlife",
+        "icon": "🦁",
+        "count": 38
+      },
+      {
+        "id": "nature",
+        "name": "Nature, Environment & Geography",
+        "icon": "🌿",
+        "count": 122
+      },
+      {
+        "id": "food",
+        "name": "Food, Drink & Agriculture",
+        "icon": "🍲",
+        "count": 52
+      },
+      {
+        "id": "home",
+        "name": "Home, Tools & Material Culture",
+        "icon": "🏠",
+        "count": 42
+      },
+      {
+        "id": "verbs",
+        "name": "Core Verbs & Actions",
+        "icon": "🏃",
+        "count": 91
+      },
+      {
+        "id": "adjectives",
+        "name": "Adjectives, Qualities & Grammar",
+        "icon": "✨",
+        "count": 65
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 81
+      },
+      {
+        "id": "shopping",
+        "name": "Trade, Money & Measures",
+        "icon": "🛒",
+        "count": 41
+      },
+      {
+        "id": "emergency",
+        "name": "Health, Safety, Law & Conflict",
+        "icon": "🚨",
+        "count": 44
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "⏰",
+        "count": 40
+      },
+      {
+        "id": "phrases",
+        "name": "Common Expressions & Vocabulary",
+        "icon": "🗣️",
+        "count": 1285
+      },
+      {
+        "id": "culture-history",
+        "name": "Culture, Clans & Historical Corpus",
+        "icon": "📜",
+        "count": 254
       }
     ]
   },
@@ -1780,103 +2017,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.4",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7711,
+    "totalEntries": 7644,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 35
+        "count": 32
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 139
+        "count": 69
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 156
+        "count": 142
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
+        "icon": "🫁",
         "count": 215
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 201
+        "icon": "🦁",
+        "count": 214
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 411
+        "icon": "🌿",
+        "count": 330
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 195
+        "icon": "🍲",
+        "count": 168
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 184
+        "count": 208
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 2166
+        "count": 851
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 174
+        "count": 189
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 122
+        "count": 132
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 88
+        "count": 90
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
-        "icon": "🏥",
-        "count": 168
+        "icon": "🚨",
+        "count": 120
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "⏳",
-        "count": 1487
+        "icon": "⏰",
+        "count": 120
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 1927
+        "icon": "🗣️",
+        "count": 4712
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 43
+        "count": 52
       }
     ]
   },
@@ -1900,7 +2137,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 21
+        "count": 7
       },
       {
         "id": "numbers",
@@ -1912,163 +2149,154 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 15
+        "count": 14
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 13
+        "icon": "🫁",
+        "count": 14
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
+        "icon": "🦁",
         "count": 14
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 21
+        "icon": "🌿",
+        "count": 17
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 12
+        "icon": "🍲",
+        "count": 11
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 25
+        "count": 26
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 7
-      },
-      {
-        "id": "culture-history",
-        "name": "Culture, Clans & Historical Corpus",
-        "icon": "📜",
-        "count": 37
-      }
-    ]
-  },
-  {
-    "languageId": "pokomo",
-    "languageName": "Pokomo (Kipfokomo)",
-    "family": "bantu",
-    "nativeName": "Kipfokomo",
-    "script": "Latin",
-    "speakerCount": 120000,
-    "counties": [
-      "Tana River"
-    ],
-    "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
-    "totalEntries": 2324,
-    "categories": [
-      {
-        "id": "greetings",
-        "name": "Greetings & Farewells",
-        "icon": "👋",
-        "count": 30
-      },
-      {
-        "id": "numbers",
-        "name": "Numbers & Counting",
-        "icon": "🔢",
-        "count": 85
-      },
-      {
-        "id": "family",
-        "name": "Family, People & Kinship",
-        "icon": "👨‍👩‍👧‍👦",
-        "count": 59
-      },
-      {
-        "id": "body",
-        "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 64
-      },
-      {
-        "id": "animals",
-        "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 34
-      },
-      {
-        "id": "nature",
-        "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 205
-      },
-      {
-        "id": "food",
-        "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 80
-      },
-      {
-        "id": "home",
-        "name": "Home, Tools & Material Culture",
-        "icon": "🏠",
-        "count": 36
-      },
-      {
-        "id": "verbs",
-        "name": "Core Verbs & Actions",
-        "icon": "🏃",
-        "count": 104
-      },
-      {
-        "id": "adjectives",
-        "name": "Adjectives, Qualities & Grammar",
-        "icon": "✨",
-        "count": 67
+        "count": 14
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 72
-      },
-      {
-        "id": "shopping",
-        "name": "Trade, Money & Measures",
-        "icon": "🛒",
-        "count": 37
-      },
-      {
-        "id": "emergency",
-        "name": "Health, Safety, Law & Conflict",
-        "icon": "🏥",
-        "count": 99
+        "count": 2
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "⏳",
-        "count": 100
-      },
-      {
-        "id": "phrases",
-        "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 999
+        "icon": "⏰",
+        "count": 16
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 253
+        "count": 30
+      }
+    ]
+  },
+  {
+    "languageId": "samburu",
+    "languageName": "Samburu (Sampur)",
+    "family": "nilotic",
+    "nativeName": "Sampur / ɔl Maa",
+    "script": "Latin",
+    "speakerCount": 310000,
+    "counties": [
+      "Samburu",
+      "Marsabit",
+      "Isiolo",
+      "Laikipia"
+    ],
+    "hasAudio": false,
+    "dictionaryVersion": "3.0",
+    "lastUpdated": "2026-10-31",
+    "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
+    "totalEntries": 682,
+    "categories": [
+      {
+        "id": "greetings",
+        "name": "Greetings & Farewells",
+        "icon": "👋",
+        "count": 6
+      },
+      {
+        "id": "numbers",
+        "name": "Numbers & Counting",
+        "icon": "🔢",
+        "count": 23
+      },
+      {
+        "id": "family",
+        "name": "Family, People & Kinship",
+        "icon": "👨‍👩‍👧‍👦",
+        "count": 20
+      },
+      {
+        "id": "body",
+        "name": "Body Parts & Health",
+        "icon": "🫁",
+        "count": 43
+      },
+      {
+        "id": "animals",
+        "name": "Animals, Livestock & Wildlife",
+        "icon": "🦁",
+        "count": 45
+      },
+      {
+        "id": "nature",
+        "name": "Nature, Environment & Geography",
+        "icon": "🌿",
+        "count": 78
+      },
+      {
+        "id": "food",
+        "name": "Food, Drink & Agriculture",
+        "icon": "🍲",
+        "count": 18
+      },
+      {
+        "id": "verbs",
+        "name": "Core Verbs & Actions",
+        "icon": "🏃",
+        "count": 22
+      },
+      {
+        "id": "adjectives",
+        "name": "Adjectives, Qualities & Grammar",
+        "icon": "✨",
+        "count": 52
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 1
+      },
+      {
+        "id": "culture-history",
+        "name": "Culture, Clans & Historical Corpus",
+        "icon": "📜",
+        "count": 339
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "Clock",
+        "count": 35
       }
     ]
   },
@@ -2086,67 +2314,79 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
-    "totalEntries": 309,
+    "totalEntries": 305,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 16
+        "count": 4
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 16
+        "count": 21
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 14
+        "count": 17
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 30
+        "icon": "🫁",
+        "count": 35
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 37
+        "icon": "🦁",
+        "count": 45
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
+        "icon": "🌿",
         "count": 30
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
+        "icon": "🍲",
         "count": 16
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 17
+        "count": 20
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 74
+        "count": 51
+      },
+      {
+        "id": "travel",
+        "name": "Travel, Directions & Navigation",
+        "icon": "🧭",
+        "count": 1
+      },
+      {
+        "id": "time",
+        "name": "Time, Seasons & Calendar",
+        "icon": "⏰",
+        "count": 7
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 59
+        "count": 58
       }
     ]
   },
@@ -2165,181 +2405,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
-    "totalEntries": 3215,
+    "totalEntries": 2819,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 10
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 55
+        "count": 68
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 99
+        "count": 124
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 126
+        "icon": "🫁",
+        "count": 159
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 160
+        "icon": "🦁",
+        "count": 189
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 145
+        "icon": "🌿",
+        "count": 163
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 81
+        "icon": "🍲",
+        "count": 113
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 115
+        "count": 88
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1118
+        "count": 314
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 847
+        "count": 113
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 40
+        "count": 34
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 15
+        "count": 12
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 33
+        "count": 51
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 34
+        "count": 67
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
-        "icon": "💬",
-        "count": 100
+        "icon": "🗣️",
+        "count": 1096
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 222
-      }
-    ]
-  },
-  {
-    "languageId": "taveta",
-    "languageName": "Taveta (Kitaveta)",
-    "family": "bantu",
-    "nativeName": "Kitaveta / Kituweta",
-    "script": "Latin",
-    "speakerCount": 25000,
-    "counties": [
-      "Taita-Taveta"
-    ],
-    "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
-    "totalEntries": 466,
-    "categories": [
-      {
-        "id": "greetings",
-        "name": "Greetings & Farewells",
-        "icon": "👋",
-        "count": 20
-      },
-      {
-        "id": "numbers",
-        "name": "Numbers & Counting",
-        "icon": "🔢",
-        "count": 22
-      },
-      {
-        "id": "family",
-        "name": "Family, People & Kinship",
-        "icon": "👨‍👩‍👧‍👦",
-        "count": 16
-      },
-      {
-        "id": "body",
-        "name": "Body Parts & Health",
-        "icon": "🫀",
-        "count": 31
-      },
-      {
-        "id": "animals",
-        "name": "Animals, Livestock & Wildlife",
-        "icon": "🐄",
-        "count": 29
-      },
-      {
-        "id": "nature",
-        "name": "Nature, Environment & Geography",
-        "icon": "🌍",
-        "count": 36
-      },
-      {
-        "id": "food",
-        "name": "Food, Drink & Agriculture",
-        "icon": "🌾",
-        "count": 23
-      },
-      {
-        "id": "verbs",
-        "name": "Core Verbs & Actions",
-        "icon": "🏃",
-        "count": 23
-      },
-      {
-        "id": "adjectives",
-        "name": "Adjectives, Qualities & Grammar",
-        "icon": "✨",
-        "count": 11
-      },
-      {
-        "id": "culture-history",
-        "name": "Culture, Clans & Historical Corpus",
-        "icon": "📜",
-        "count": 255
+        "count": 218
       }
     ]
   },
@@ -2363,19 +2525,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 10
+        "count": 3
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 15
+        "count": 13
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 7
+        "count": 11
       },
       {
         "id": "body",
@@ -2411,7 +2573,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 20
+        "count": 21
       },
       {
         "id": "adjectives",
@@ -2429,7 +2591,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4
+        "count": 8
       },
       {
         "id": "culture-history",
@@ -2528,173 +2690,173 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 83133;
+export const TOTAL_DICTIONARY_ENTRIES: number = 82212;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {
     "entry": {
+      "english": "Goodbye",
+      "translation": "Kwaheri (pl. Kwaherini)",
+      "pronunciation": "kwah-heh-ree",
+      "context": "Krapf 1882 & Steere 1894 parting salutation",
+      "audioFile": null
+    },
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
+  },
+  {
+    "entry": {
       "english": "Welcome",
-      "translation": "Baga nagaan dhufte",
-      "pronunciation": "ba-ga na-gaan dhuf-te",
-      "context": "Borana / Oromo welcome",
+      "translation": "Karibu (pl. Karibuni)",
+      "pronunciation": "kah-ree-boo",
+      "context": "Steere 1894 & Madan 1903 hospitality greeting",
       "audioFile": null
     },
-    "langName": "Borana (Oromo)",
-    "langId": "borana"
-  },
-  {
-    "entry": {
-      "english": "Tomorrow",
-      "translation": "bori / boru",
-      "pronunciation": "boh-ree / boh-roo",
-      "context": "Tutschek (1845, pp. 89–90)",
-      "audioFile": null
-    },
-    "langName": "Borana (Oromo)",
-    "langId": "borana"
-  },
-  {
-    "entry": {
-      "english": "Salute",
-      "translation": "hófu dáme",
-      "pronunciation": "hofu dame",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
-      "audioFile": null
-    },
-    "langName": "Borana (Oromo)",
-    "langId": "borana"
-  },
-  {
-    "entry": {
-      "english": "Thank",
-      "translation": "gelatéfate",
-      "pronunciation": "gelatefate",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
-      "audioFile": null
-    },
-    "langName": "Borana (Oromo)",
-    "langId": "borana"
-  },
-  {
-    "entry": {
-      "english": "News",
-      "translation": "ódu",
-      "pronunciation": "odu",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
-      "audioFile": null
-    },
-    "langName": "Borana (Oromo)",
-    "langId": "borana"
-  },
-  {
-    "entry": {
-      "english": "You are educated",
-      "translation": "Wĩ mũthomũ",
-      "pronunciation": "wi muthomu",
-      "context": "Wikipedia Embu_language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Embu (Kĩembu)",
-    "langId": "embu"
-  },
-  {
-    "entry": {
-      "english": "Stop the nonsense",
-      "translation": "Tiga wana / Tigana na ũrimũ",
-      "pronunciation": "tiga wana",
-      "context": "Wikipedia Embu_language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Embu (Kĩembu)",
-    "langId": "embu"
-  },
-  {
-    "entry": {
-      "english": "Give me some money",
-      "translation": "Mve mbeca / Mva mbia",
-      "pronunciation": "mve mbeca / mva mbia",
-      "context": "Wikipedia Embu_language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Embu (Kĩembu)",
-    "langId": "embu"
-  },
-  {
-    "entry": {
-      "english": "God is good",
-      "translation": "Ngai nĩ mwaro",
-      "pronunciation": "ngai ni mwaro",
-      "context": "Wikipedia Embu_language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Embu (Kĩembu)",
-    "langId": "embu"
-  },
-  {
-    "entry": {
-      "english": "I am blessed",
-      "translation": "Nĩmũrathime",
-      "pronunciation": "nimurathime",
-      "context": "Wikipedia Embu_language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Embu (Kĩembu)",
-    "langId": "embu"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "Serian",
-      "pronunciation": "seh-ri-an",
-      "context": "Ilchamus (Camus) greeting & blessing",
-      "audioFile": null
-    },
-    "langName": "Ilchamus (Njemps)",
-    "langId": "ilchamus"
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
   },
   {
     "entry": {
       "english": "Thank you",
-      "translation": "Ashe / Ashe oleng",
-      "pronunciation": "ah-sheh",
-      "context": "Ilchamus expression of gratitude",
+      "translation": "Asante (Asante sana)",
+      "pronunciation": "ah-sahn-teh sah-nah",
+      "context": "Steere 1894 & Madan 1903 expression of gratitude",
       "audioFile": null
     },
-    "langName": "Ilchamus (Njemps)",
-    "langId": "ilchamus"
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
   },
   {
     "entry": {
-      "english": "Today",
-      "translation": "taata",
-      "pronunciation": "tah-tah",
-      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "english": "How are you?",
+      "translation": "Habari yako? / U hali gani?",
+      "pronunciation": "hah-bah-ree yah-koh / oo hah-lee gah-nee",
+      "context": "Burt 1910 Kimvita & Steere 1894 Kiunguja",
       "audioFile": null
     },
-    "langName": "Ilchamus (Njemps)",
-    "langId": "ilchamus"
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
   },
   {
     "entry": {
-      "english": "Tomorrow",
-      "translation": "taisere",
-      "pronunciation": "tah-ee-seh-reh",
-      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "english": "Good evening",
+      "translation": "Habari za jioni? / Masalkheri",
+      "pronunciation": "hah-bah-ree zah jee-oh-nee",
+      "context": "Steere 1894 & Madan 1903 evening greeting",
       "audioFile": null
     },
-    "langName": "Ilchamus (Njemps)",
-    "langId": "ilchamus"
+    "langName": "Swahili (Kiswahili)",
+    "langId": "swahili"
   },
   {
     "entry": {
-      "english": "Yesterday",
-      "translation": "ngole",
-      "pronunciation": "ngoh-leh",
-      "context": "Verified comparative entry across Kenyan nilotic corpus",
+      "english": "Thank you",
+      "translation": "Nĩ wega (Nĩ wega mũno)",
+      "pronunciation": "nee weh-gah moo-noh",
+      "context": "Hémery 1903 & McGregor 1904",
       "audioFile": null
     },
-    "langName": "Ilchamus (Njemps)",
-    "langId": "ilchamus"
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Good evening",
+      "translation": "Wĩraire atĩa? / Hwaĩ-inĩ mwega",
+      "pronunciation": "wee-rah-ee-reh ah-tee-ah",
+      "context": "McGregor 1904 & Hinde 1904",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Wũkĩra atĩa? / Rũciinĩ rwega",
+      "pronunciation": "woo-kee-rah ah-tee-ah",
+      "context": "McGregor 1904 & Routledge 1910 morning greeting",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Wĩ mwega? / Niatĩa? (pl. Mũrĩ ega?)",
+      "pronunciation": "wee mweh-gah / nee-ah-tee-ah",
+      "context": "Hémery 1903 & McGregor 1904 Gĩkũyũ salutation",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Friend",
+      "translation": "muratta, munduitu",
+      "pronunciation": "mu-ratta mundui-tu",
+      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
+      "audioFile": null
+    },
+    "langName": "Kikuyu (Gĩkũyũ)",
+    "langId": "kikuyu"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Erokamano (Erokamano ahinya)",
+      "pronunciation": "eh-roh-kah-mah-noh",
+      "context": "Mill-Hill Fathers 1920 Dholuo gratitude",
+      "audioFile": null
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Good evening",
+      "translation": "Oimore (resp. Oimore ahinya)",
+      "pronunciation": "oh-ee-moh-reh",
+      "context": "Mill-Hill Fathers 1920 evening greeting",
+      "audioFile": null
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Welcome",
+      "translation": "Rwako / Donjuru",
+      "pronunciation": "rwa-ko / don-ju-ru",
+      "context": "Welcome inside",
+      "audioFile": null
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Good night",
+      "translation": "Oimore / Nind maber",
+      "pronunciation": "oh-ee-moh-reh",
+      "context": "Evening greeting / sleep well",
+      "audioFile": null
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Oyawore",
+      "pronunciation": "oh-yah-woh-reh",
+      "context": "Morning greeting",
+      "audioFile": null
+    },
+    "langName": "Dholuo (Luo)",
+    "langId": "luo"
   },
   {
     "entry": {
@@ -2709,10 +2871,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Evening, nightfall",
-      "translation": "lakat",
-      "pronunciation": "lakat",
-      "context": "Nandi / Kalenjin (Hollis 1909, p. 153)",
+      "english": "Thank you",
+      "translation": "Kongoi (Kongoi mising)",
+      "pronunciation": "kohn-goy mee-seeng",
+      "context": "Universal Kalenjin gratitude",
       "audioFile": null
     },
     "langName": "Kalenjin",
@@ -2720,201 +2882,36 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Thank",
-      "translation": "ile-chi kongoi",
-      "pronunciation": "ile-chi kongoi",
-      "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
+      "english": "Good evening",
+      "translation": "Chamgei! / Koskoling!",
+      "pronunciation": "chahm-gey / kohs-koh-leeng",
+      "context": "Hollis 1909 evening salutation",
       "audioFile": null
     },
     "langName": "Kalenjin",
     "langId": "kalenjin"
-  },
-  {
-    "entry": {
-      "english": "Pardon, to",
-      "translation": "mwaete",
-      "pronunciation": "mwaete",
-      "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Nandi)",
-      "audioFile": null
-    },
-    "langName": "Kalenjin",
-    "langId": "kalenjin"
-  },
-  {
-    "entry": {
-      "english": "All",
-      "translation": "tukul",
-      "pronunciation": "tukul",
-      "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
-      "audioFile": null
-    },
-    "langName": "Kalenjin",
-    "langId": "kalenjin"
-  },
-  {
-    "entry": {
-      "english": "Evening",
-      "translation": "wio",
-      "pronunciation": "wio",
-      "context": "Hildegarde Hinde (1904) — Kamba",
-      "audioFile": null
-    },
-    "langName": "Kamba (Kĩkamba)",
-    "langId": "kamba"
-  },
-  {
-    "entry": {
-      "english": "Morning",
-      "translation": "mthenia",
-      "pronunciation": "mthenia",
-      "context": "Hildegarde Hinde (1904) — Kamba",
-      "audioFile": null
-    },
-    "langName": "Kamba (Kĩkamba)",
-    "langId": "kamba"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "amanni",
-      "pronunciation": "amanni",
-      "context": "Hildegarde Hinde (1904) — Kamba",
-      "audioFile": null
-    },
-    "langName": "Kamba (Kĩkamba)",
-    "langId": "kamba"
-  },
-  {
-    "entry": {
-      "english": "Please",
-      "translation": "kwendua",
-      "pronunciation": "kwendua",
-      "context": "Hildegarde Hinde (1904) — Kamba",
-      "audioFile": null
-    },
-    "langName": "Kamba (Kĩkamba)",
-    "langId": "kamba"
-  },
-  {
-    "entry": {
-      "english": "Salutation",
-      "translation": "o voo",
-      "pronunciation": "o voo",
-      "context": "Hildegarde Hinde (1904) — Kamba (Ulu dialect)",
-      "audioFile": null
-    },
-    "langName": "Kamba (Kĩkamba)",
-    "langId": "kamba"
-  },
-  {
-    "entry": {
-      "english": "Evening",
-      "translation": "waiini",
-      "pronunciation": "waiini",
-      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
-      "audioFile": null
-    },
-    "langName": "Kikuyu (Gĩkũyũ)",
-    "langId": "kikuyu"
-  },
-  {
-    "entry": {
-      "english": "Friend",
-      "translation": "muratta, munduitu",
-      "pronunciation": "muratta, munduitu",
-      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
-      "audioFile": null
-    },
-    "langName": "Kikuyu (Gĩkũyũ)",
-    "langId": "kikuyu"
-  },
-  {
-    "entry": {
-      "english": "Morning",
-      "translation": "mthenya",
-      "pronunciation": "mthenya",
-      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
-      "audioFile": null
-    },
-    "langName": "Kikuyu (Gĩkũyũ)",
-    "langId": "kikuyu"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "naiita",
-      "pronunciation": "naiita",
-      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
-      "audioFile": null
-    },
-    "langName": "Kikuyu (Gĩkũyũ)",
-    "langId": "kikuyu"
-  },
-  {
-    "entry": {
-      "english": "Please",
-      "translation": "kuenda",
-      "pronunciation": "kuenda",
-      "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)",
-      "audioFile": null
-    },
-    "langName": "Kikuyu (Gĩkũyũ)",
-    "langId": "kikuyu"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "Omorembe",
-      "pronunciation": "oh-moh-rehm-beh",
-      "context": "Hobley 1902 & Johnston 1919 #7",
-      "audioFile": null
-    },
-    "langName": "Kisii (Ekegusii)",
-    "langId": "kisii"
   },
   {
     "entry": {
       "english": "Good morning",
-      "translation": "Bwakire buya",
-      "pronunciation": "Bwakire buya",
-      "context": "Wikipedia Gusii language — Sample phrases",
+      "translation": "Chamgei! / Koruun nee?",
+      "pronunciation": "chahm-gey / koh-roon neh",
+      "context": "Hollis 1909 Nandi morning salutation",
       "audioFile": null
     },
-    "langName": "Kisii (Ekegusii)",
-    "langId": "kisii"
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
   },
   {
     "entry": {
-      "english": "Good night",
-      "translation": "Obotuko obuya",
-      "pronunciation": "Obotuko obuya",
-      "context": "Wikipedia Gusii language — Sample phrases",
+      "english": "Hello",
+      "translation": "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
+      "pronunciation": "chahm-gey / soo-bah-ee",
+      "context": "Hollis (1909, pp. 90–91, 230) Nandi male salutation & universal Kalenjin greeting",
       "audioFile": null
     },
-    "langName": "Kisii (Ekegusii)",
-    "langId": "kisii"
-  },
-  {
-    "entry": {
-      "english": "Evening",
-      "translation": "mogoroba",
-      "pronunciation": "mogoroba",
-      "context": "Wikipedia Gusii language — Sample phrases",
-      "audioFile": null
-    },
-    "langName": "Kisii (Ekegusii)",
-    "langId": "kisii"
-  },
-  {
-    "entry": {
-      "english": "One",
-      "translation": "-mu, -mo / -mo, -mwe",
-      "pronunciation": "-mu, -mo / -mo, -mwe",
-      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-      "audioFile": null
-    },
-    "langName": "Kisii (Ekegusii)",
-    "langId": "kisii"
+    "langName": "Kalenjin",
+    "langId": "kalenjin"
   },
   {
     "entry": {
@@ -2940,10 +2937,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Bowels",
-      "translation": "Ama-la / Kama-la",
-      "pronunciation": "ama-la / kama-la",
-      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "english": "Thank you",
+      "translation": "Orio (Orio muno) / Nasima",
+      "pronunciation": "oh-ree-oh moo-noh / nah-see-mah",
+      "context": "Hobley 1902 & Oluluyia gratitude",
       "audioFile": null
     },
     "langName": "Luhya (Luyia)",
@@ -2951,10 +2948,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Gun",
-      "translation": "Ωmu-rondo / Mundu. Kumu-rundu",
-      "pronunciation": "mu-rondo",
-      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "english": "How are you?",
+      "translation": "Oli mulayi? / Muli balayi?",
+      "pronunciation": "oh-lee moo-lah-yee",
+      "context": "Response: Ndi mulayi (I am well)",
       "audioFile": null
     },
     "langName": "Luhya (Luyia)",
@@ -2962,10 +2959,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Place",
-      "translation": "A-handu / Esi-fo. Aha / Handu",
-      "pronunciation": "a-handu / esi-fo. aha / handu",
-      "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
+      "english": "Good evening",
+      "translation": "Bwairire bulayi!",
+      "pronunciation": "bwah-ee-ree-reh boo-lah-yee",
+      "context": "Oluluyia evening salutation",
       "audioFile": null
     },
     "langName": "Luhya (Luyia)",
@@ -2973,120 +2970,65 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Elder",
-      "translation": "Jaduong'",
-      "pronunciation": "jah-dwong",
-      "context": "Respected elder",
-      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
-    },
-    "langName": "Dholuo (Luo)",
-    "langId": "luo"
-  },
-  {
-    "entry": {
-      "english": "Chief",
-      "translation": "Ruoth / Jatelo",
-      "pronunciation": "rwohth / jah-teh-loh",
-      "context": "Chief or leader",
-      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
-    },
-    "langName": "Dholuo (Luo)",
-    "langId": "luo"
-  },
-  {
-    "entry": {
-      "english": "King",
-      "translation": "Ruoth",
-      "pronunciation": "rwohth",
-      "context": "King, lord, or sovereign",
-      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
-    },
-    "langName": "Dholuo (Luo)",
-    "langId": "luo"
-  },
-  {
-    "entry": {
-      "english": "Work",
-      "translation": "Tich",
-      "pronunciation": "teech",
-      "context": "Work or labor (noun); Tiyo (to work)",
-      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
-    },
-    "langName": "Dholuo (Luo)",
-    "langId": "luo"
-  },
-  {
-    "entry": {
-      "english": "Market",
-      "translation": "Chiro",
-      "pronunciation": "chee-roh",
-      "context": "Marketplace",
-      "audioFile": "https://archive.org/download/handbook_kavirondo3_1203/kavirondo3_01_millhill_128kb.mp3"
-    },
-    "langName": "Dholuo (Luo)",
-    "langId": "luo"
-  },
-  {
-    "entry": {
-      "english": "Many black goats",
-      "translation": "kumuk ndari nārok",
-      "pronunciation": "kumuk ndari nārok",
-      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "english": "Thank you",
+      "translation": "Nĩ mũvea (Nĩ mũvea mũno)",
+      "pronunciation": "nee moo-veh-ah moo-noh",
+      "context": "Kĩkamba gratitude expression",
       "audioFile": null
     },
-    "langName": "Maasai (Maa)",
-    "langId": "maasai"
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
   },
   {
     "entry": {
-      "english": "Many red cows",
-      "translation": "ngishu nyainyuki kumuk",
-      "pronunciation": "ngishu nyainyuki kumuk",
-      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "english": "Good evening",
+      "translation": "Ũvoo wa wĩoo?",
+      "pronunciation": "uvoo wa wioo",
+      "context": "Last 1885 & Lindblom 1920",
       "audioFile": null
     },
-    "langName": "Maasai (Maa)",
-    "langId": "maasai"
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
   },
   {
     "entry": {
-      "english": "Two big men",
-      "translation": "sabuki orrldongana ari",
-      "pronunciation": "sabuki orrldongana ari",
-      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "english": "Good morning",
+      "translation": "Ũvoo wa kwakya? / Nĩ kũkya",
+      "pronunciation": "uvoo wa kwakya",
+      "context": "Last 1885 & Lindblom 1920",
       "audioFile": null
     },
-    "langName": "Maasai (Maa)",
-    "langId": "maasai"
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
   },
   {
     "entry": {
-      "english": "Four good children",
-      "translation": "supati konengera ungwun",
-      "pronunciation": "supati konengera ungwun",
-      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "english": "Hello",
+      "translation": "Ũvoo? / Wakya! (Elder greeting)",
+      "pronunciation": "uvoo",
+      "context": "Hobley 1910 & Lindblom 1920 Kĩkamba salutations",
       "audioFile": null
     },
-    "langName": "Maasai (Maa)",
-    "langId": "maasai"
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
   },
   {
     "entry": {
-      "english": "Five large cows",
-      "translation": "sabuki ngishu miet",
-      "pronunciation": "sabuki ngishu miet",
-      "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary",
+      "english": "Hello / Salutation",
+      "translation": "O voo",
+      "pronunciation": "oh voh",
+      "context": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'",
       "audioFile": null
     },
-    "langName": "Maasai (Maa)",
-    "langId": "maasai"
+    "langName": "Kamba (Kĩkamba)",
+    "langId": "kamba"
   },
   {
     "entry": {
-      "english": "Thank you very much",
-      "translation": "Nĩwega mũno",
-      "pronunciation": "nĩwega mũno",
-      "context": "Kîembu / Kĩmĩĩrũ",
+      "english": "Thank you",
+      "translation": "Nĩwega (Nĩwega mũno)",
+      "pronunciation": "niwega",
+      "context": "Kĩmĩĩrũ expression of gratitude",
       "audioFile": null
     },
     "langName": "Meru (Kĩmĩĩrũ)",
@@ -3094,10 +3036,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Nine",
-      "translation": "kenda",
-      "pronunciation": "kehn-dah",
-      "context": "Johnston 1919 p. 72 #11a Meru",
+      "english": "Good morning",
+      "translation": "Ũrĩ mwega rũũciĩni? / Muuga!",
+      "pronunciation": "uri mwega ruuciini",
+      "context": "Kĩmĩĩrũ morning greeting",
       "audioFile": null
     },
     "langName": "Meru (Kĩmĩĩrũ)",
@@ -3105,10 +3047,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Eight",
-      "translation": "inyanya",
-      "pronunciation": "ee-nyah-nyah",
-      "context": "Johnston 1919 p. 72 #11a Meru",
+      "english": "Hello",
+      "translation": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+      "pronunciation": "muuga",
+      "context": "Standard Kĩmĩĩrũ & Mount Kenya salutation",
       "audioFile": null
     },
     "langName": "Meru (Kĩmĩĩrũ)",
@@ -3116,10 +3058,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Seven",
-      "translation": "mũgwanja",
-      "pronunciation": "moo-gwahn-jah",
-      "context": "Johnston 1919 p. 72 #11a Meru",
+      "english": "How are you? (Imenti, Chuka, Tharaka; Tigania: Muua)",
+      "translation": "Muuga? / Nĩatĩa ũrĩ?",
+      "pronunciation": "muuga",
+      "context": "Wikipedia Meru language — Sample phrases & Dialects",
       "audioFile": null
     },
     "langName": "Meru (Kĩmĩĩrũ)",
@@ -3127,10 +3069,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Six",
-      "translation": "ithanthatu",
-      "pronunciation": "ee-thahn-thah-too",
-      "context": "Johnston 1919 p. 72 #11a Meru",
+      "english": "How are you doing?",
+      "translation": "Ũrĩ ũmwega?",
+      "pronunciation": "uri umwega",
+      "context": "Wikipedia Meru language — Sample phrases",
       "audioFile": null
     },
     "langName": "Meru (Kĩmĩĩrũ)",
@@ -3139,9 +3081,240 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   {
     "entry": {
       "english": "Peace",
+      "translation": "Eserian (Serian)",
+      "pronunciation": "eh-seh-ree-ahn",
+      "context": "Hollis 1905 & Hinde 1901",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Ashe (Ashe oleng)",
+      "pronunciation": "ah-sheh oh-lehng",
+      "context": "Standard Maa expression of gratitude",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "How are you?",
+      "translation": "Ira supat? / Kaa ng'ida?",
+      "pronunciation": "ee-rah soo-paht",
+      "context": "Hinde 1901 & Hollis 1905",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Good evening",
+      "translation": "Eserian en-gewarie / Takwenya!",
+      "pronunciation": "eh-seh-ree-ahn ehn-geh-wah-ree-eh",
+      "context": "Hollis 1905 evening greeting",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Kasserian ingera? / Sopai!",
+      "pronunciation": "kahs-seh-ree-ahn een-geh-rah",
+      "context": "Hollis 1905 pastoral morning greeting ('Are the children at peace?')",
+      "audioFile": null
+    },
+    "langName": "Maasai (Maa)",
+    "langId": "maasai"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Omorembe",
+      "pronunciation": "oh-moh-rehm-beh",
+      "context": "Hobley 1902 & Johnston 1919 #7",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Mbuya mono (Obeire buya)",
+      "pronunciation": "m-boo-yah moh-noh",
+      "context": "Ekegusii expression of gratitude",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Bwakire! (morning) / Bwairire! (evening) / Mbuya mono!",
+      "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh",
+      "context": "Standard Ekegusii salutations",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Bwakire buya",
+      "pronunciation": "bwa-ki-re bu-ya",
+      "context": "Wikipedia Gusii language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Good night",
+      "translation": "Obotuko obuya",
+      "pronunciation": "o-bo-tu-ko o-bu-ya",
+      "context": "Wikipedia Gusii language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Kisii (Ekegusii)",
+    "langId": "kisii"
+  },
+  {
+    "entry": {
+      "english": "Peace",
+      "translation": "Nabad",
+      "pronunciation": "nah-bahd",
+      "context": "Kirk 1905 & Larajasse 1897",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Mahadsanid (Aad baad u mahadsan tahay)",
+      "pronunciation": "mah-hahd-sah-need",
+      "context": "Somali gratitude",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Good evening",
+      "translation": "Galab wanaagsan / Habeen wanaagsan",
+      "pronunciation": "gah-lahb wah-nahg-sahn",
+      "context": "Kirk 1905 evening salutation",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Good morning",
+      "translation": "Subax wanaagsan / Ma bariden? (resp. Wa nabad!)",
+      "pronunciation": "soo-bahkh wah-nahg-sahn / mah bah-ree-dehn",
+      "context": "Kirk 1905 § 102, p. 51 & p. 113 morning salutation (lit. Have you passed the night well?)",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Nabad! / Ma nabad baa? (resp. Waa nabad!)",
+      "pronunciation": "nah-bahd / mah nah-bahd bah",
+      "context": "Kirk 1905 & Larajasse 1897 Somali greeting",
+      "audioFile": null
+    },
+    "langName": "Somali",
+    "langId": "somali"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Alakara (Alakara noi)",
+      "pronunciation": "ah-lah-kah-rah noy",
+      "context": "Ng'aturkana gratitude expression",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health (Pastoral greeting enquiry)",
+      "translation": "Mata",
+      "pronunciation": "mah-tah",
+      "context": "Traditional pastoral greeting inquiry between adults (lit. 'health'). Response: 'Ii mata'. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to you (Greeting reply)",
+      "translation": "Ii mata",
+      "pronunciation": "ee-ee mah-tah",
+      "context": "Traditional response acknowledging health. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to your cattle",
+      "translation": "Mata ng'atuk",
+      "pronunciation": "mah-tah ngah-took",
+      "context": "Pastoral greeting inquiring after cattle herds. Response: 'Mata ouwi' (health to your village). (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Health to your village",
+      "translation": "Mata ouwi",
+      "pronunciation": "mah-tah oh-wee",
+      "context": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)",
+      "audioFile": null
+    },
+    "langName": "Turkana",
+    "langId": "turkana"
+  },
+  {
+    "entry": {
+      "english": "Peace",
       "translation": "Dheri / Amani",
       "pronunciation": "dheh-ree",
       "context": "Krapf & Rebmann 1887 Nika Dictionary",
+      "audioFile": null
+    },
+    "langName": "Mijikenda (Giriama)",
+    "langId": "mijikenda"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Mwadima! Na-m'vera na-we! (also Asante / Ni wega)",
+      "pronunciation": "mwah-dee-mah nah m-veh-rah nah-weh",
+      "context": "Rev. W. E. Taylor (1891, p. 100 under Thank you) & Krapf & Rebmann (1887)",
       "audioFile": null
     },
     "langName": "Mijikenda (Giriama)",
@@ -3171,355 +3344,157 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Thank",
-      "translation": "pa mumvéra",
-      "pronunciation": "pa mumvera",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)",
+      "english": "Good Morning",
+      "translation": "uzizeréroa?",
+      "pronunciation": "uzizereroa",
+      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)",
       "audioFile": null
     },
     "langName": "Mijikenda (Giriama)",
     "langId": "mijikenda"
-  },
-  {
-    "entry": {
-      "english": "News",
-      "translation": "c̣ábari",
-      "pronunciation": "c abari",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-      "audioFile": null
-    },
-    "langName": "Mijikenda (Giriama)",
-    "langId": "mijikenda"
-  },
-  {
-    "entry": {
-      "english": "Thank you",
-      "translation": "Asante / Nashukuru",
-      "pronunciation": "a-san-te",
-      "context": "Kipfokomo",
-      "audioFile": null
-    },
-    "langName": "Pokomo (Kipfokomo)",
-    "langId": "pokomo"
-  },
-  {
-    "entry": {
-      "english": "Welcome",
-      "translation": "Karibu mudzini",
-      "pronunciation": "ka-ri-bu mu-dzi-ni",
-      "context": "Kipfokomo ('Welcome to the village')",
-      "audioFile": null
-    },
-    "langName": "Pokomo (Kipfokomo)",
-    "langId": "pokomo"
-  },
-  {
-    "entry": {
-      "english": "Yesterday",
-      "translation": "dzana",
-      "pronunciation": "dzah-nah",
-      "context": "Verified comparative entry across Kenyan bantu corpus",
-      "audioFile": null
-    },
-    "langName": "Pokomo (Kipfokomo)",
-    "langId": "pokomo"
-  },
-  {
-    "entry": {
-      "english": "Farewell",
-      "translation": "mungu kahúve nágĕa",
-      "pronunciation": "mungu kahuve nagea",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adv.)",
-      "audioFile": null
-    },
-    "langName": "Pokomo (Kipfokomo)",
-    "langId": "pokomo"
-  },
-  {
-    "entry": {
-      "english": "Greet",
-      "translation": "kedéria",
-      "pronunciation": "kederia",
-      "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
-      "audioFile": null
-    },
-    "langName": "Pokomo (Kipfokomo)",
-    "langId": "pokomo"
-  },
-  {
-    "entry": {
-      "english": "Very fierce",
-      "translation": "Korom nyaman",
-      "pronunciation": "ko-rom nya-man",
-      "context": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
-      "audioFile": null
-    },
-    "langName": "Pokot (Pökoot)",
-    "langId": "pokot"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "mīs",
-      "pronunciation": "mīs",
-      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-      "audioFile": null
-    },
-    "langName": "Pokot (Pökoot)",
-    "langId": "pokot"
-  },
-  {
-    "entry": {
-      "english": "One hundred",
-      "translation": "pokol",
-      "pronunciation": "po-kol",
-      "context": "Beech (1911, pp. 66–68) — Pökoot (Suk)",
-      "audioFile": null
-    },
-    "langName": "Pokot (Pökoot)",
-    "langId": "pokot"
-  },
-  {
-    "entry": {
-      "english": "I am the best of all.",
-      "translation": "Ocha karam ma-mi-nye.",
-      "pronunciation": "ocha karam ma-mi-nye.",
-      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)",
-      "audioFile": null
-    },
-    "langName": "Pokot (Pökoot)",
-    "langId": "pokot"
-  },
-  {
-    "entry": {
-      "english": "They don't amount to ten.",
-      "translation": "Me-t-ei-nye taman.",
-      "pronunciation": "me-t-ei-nye taman.",
-      "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)",
-      "audioFile": null
-    },
-    "langName": "Pokot (Pökoot)",
-    "langId": "pokot"
-  },
-  {
-    "entry": {
-      "english": "Yes",
-      "translation": "Aa",
-      "pronunciation": "aa",
-      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-      "audioFile": null
-    },
-    "langName": "Rendille (Afi Ren'dille)",
-    "langId": "rendille"
-  },
-  {
-    "entry": {
-      "english": "Tomorrow",
-      "translation": "barri",
-      "pronunciation": "bahr-ree",
-      "context": "Verified comparative entry across Kenyan cushitic corpus",
-      "audioFile": null
-    },
-    "langName": "Rendille (Afi Ren'dille)",
-    "langId": "rendille"
-  },
-  {
-    "entry": {
-      "english": "Yesterday",
-      "translation": "shale",
-      "pronunciation": "shah-leh",
-      "context": "Verified comparative entry across Kenyan cushitic corpus",
-      "audioFile": null
-    },
-    "langName": "Rendille (Afi Ren'dille)",
-    "langId": "rendille"
-  },
-  {
-    "entry": {
-      "english": "Two",
-      "translation": "láma",
-      "pronunciation": "la-ma",
-      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-      "audioFile": null
-    },
-    "langName": "Rendille (Afi Ren'dille)",
-    "langId": "rendille"
-  },
-  {
-    "entry": {
-      "english": "Three",
-      "translation": "séyyah",
-      "pronunciation": "sey-yah",
-      "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-      "audioFile": null
-    },
-    "langName": "Rendille (Afi Ren'dille)",
-    "langId": "rendille"
-  },
-  {
-    "entry": {
-      "english": "Thank you",
-      "translation": "Ashe / Ashe oleng",
-      "pronunciation": "ah-sheh oh-leng",
-      "context": "Samburu expression of gratitude",
-      "audioFile": null
-    },
-    "langName": "Samburu (Sampur)",
-    "langId": "samburu"
-  },
-  {
-    "entry": {
-      "english": "Five",
-      "translation": "ímɟêt / ímʄêt",
-      "pronunciation": "im-jet",
-      "context": "Wikipedia Nilotic_languages — Samburu numerals",
-      "audioFile": null
-    },
-    "langName": "Samburu (Sampur)",
-    "langId": "samburu"
-  },
-  {
-    "entry": {
-      "english": "Six",
-      "translation": "ílê",
-      "pronunciation": "i-le",
-      "context": "Wikipedia Nilotic_languages — Samburu numerals",
-      "audioFile": null
-    },
-    "langName": "Samburu (Sampur)",
-    "langId": "samburu"
-  },
-  {
-    "entry": {
-      "english": "Seven",
-      "translation": "sápâ",
-      "pronunciation": "sa-pa",
-      "context": "Wikipedia Nilotic_languages — Samburu numerals",
-      "audioFile": null
-    },
-    "langName": "Samburu (Sampur)",
-    "langId": "samburu"
-  },
-  {
-    "entry": {
-      "english": "Eight",
-      "translation": "ísɟêt / ísʄêt",
-      "pronunciation": "is-jet",
-      "context": "Wikipedia Nilotic_languages — Samburu numerals",
-      "audioFile": null
-    },
-    "langName": "Samburu (Sampur)",
-    "langId": "samburu"
-  },
-  {
-    "entry": {
-      "english": "Peace",
-      "translation": "Nabad",
-      "pronunciation": "nah-bahd",
-      "context": "Kirk 1905 & Larajasse 1897",
-      "audioFile": null
-    },
-    "langName": "Somali",
-    "langId": "somali"
-  },
-  {
-    "entry": {
-      "english": "Carry, bring",
-      "translation": "sid",
-      "pronunciation": "sid",
-      "context": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [v.tr.]",
-      "audioFile": null
-    },
-    "langName": "Somali",
-    "langId": "somali"
-  },
-  {
-    "entry": {
-      "english": "Thank God",
-      "translation": "Illàhhi maháddi",
-      "pronunciation": "illàhhi maháddi",
-      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
-      "audioFile": null
-    },
-    "langName": "Somali",
-    "langId": "somali"
-  },
-  {
-    "entry": {
-      "english": "Give news of yourself",
-      "translation": "'ss ka wárran",
-      "pronunciation": "'ss ka wárran",
-      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
-      "audioFile": null
-    },
-    "langName": "Somali",
-    "langId": "somali"
-  },
-  {
-    "entry": {
-      "english": "Give news of the place",
-      "translation": "mèsha ka wárran",
-      "pronunciation": "mèsha ka wárran",
-      "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
-      "audioFile": null
-    },
-    "langName": "Somali",
-    "langId": "somali"
-  },
-  {
-    "entry": {
-      "english": "Evening",
-      "translation": "jioni",
-      "pronunciation": "jioni",
-      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-      "audioFile": null
-    },
-    "langName": "Swahili (Kiswahili)",
-    "langId": "swahili"
   },
   {
     "entry": {
       "english": "Friend",
-      "translation": "rafiki, pl. marafiki",
-      "pronunciation": "rafiki",
-      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "translation": "epapero (pl. ipapero)",
+      "pronunciation": "eh-pah-peh-roh",
+      "context": "Ateso friendship noun",
       "audioFile": null
     },
-    "langName": "Swahili (Kiswahili)",
-    "langId": "swahili"
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
   },
   {
     "entry": {
-      "english": "Morning",
-      "translation": "subui, assubui",
-      "pronunciation": "subui, assubui",
-      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "english": "Thank you",
+      "translation": "Eyalama (Eyalama noi)",
+      "pronunciation": "eh-yah-lah-mah noy",
+      "context": "Ateso gratitude",
       "audioFile": null
     },
-    "langName": "Swahili (Kiswahili)",
-    "langId": "swahili"
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
   },
   {
     "entry": {
-      "english": "Peace",
-      "translation": "amani",
-      "pronunciation": "amani",
-      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "english": "Hello",
+      "translation": "Yoga",
+      "pronunciation": "yo-ga",
+      "context": "Wikipedia Teso language — Vocabulary",
       "audioFile": null
     },
-    "langName": "Swahili (Kiswahili)",
-    "langId": "swahili"
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
   },
   {
     "entry": {
-      "english": "Please",
-      "translation": "kupendeza",
-      "pronunciation": "kupendeza",
-      "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+      "english": "How are you? (singular)",
+      "translation": "Ijai biai?",
+      "pronunciation": "i-jai biai",
+      "context": "Wikipedia Teso language — Vocabulary",
       "audioFile": null
     },
-    "langName": "Swahili (Kiswahili)",
-    "langId": "swahili"
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "How are you? (plural)",
+      "translation": "Ijaasi biai?",
+      "pronunciation": "i-jaa-si biai",
+      "context": "Wikipedia Teso language — Vocabulary",
+      "audioFile": null
+    },
+    "langName": "Teso (Ateso)",
+    "langId": "teso"
+  },
+  {
+    "entry": {
+      "english": "Thank you",
+      "translation": "Nĩ wega (Nĩ wega mũno)",
+      "pronunciation": "nee weh-gah moo-noh",
+      "context": "Kîembu gratitude",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Hello",
+      "translation": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
+      "pronunciation": "wee mweh-gah",
+      "context": "Kîembu & Kîmbeere standard salutation",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Peace / blessing",
+      "translation": "Thayũ",
+      "pronunciation": "thayu",
+      "context": "Kîembu traditional greeting & blessing",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Goodbye, be blessed",
+      "translation": "Tigwa na wega / Tigwaa na thayũ",
+      "pronunciation": "tigwa na wega / tigwaa na thayu",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Are you a friend?",
+      "translation": "Wĩ mũrata?",
+      "pronunciation": "wi murata",
+      "context": "Wikipedia Embu_language — Sample phrases",
+      "audioFile": null
+    },
+    "langName": "Embu (Kĩembu)",
+    "langId": "embu"
+  },
+  {
+    "entry": {
+      "english": "Hello / How are you? (Dawida)",
+      "translation": "Mwakucha / Uko wedi?",
+      "pronunciation": "mwakucha / uko wedi",
+      "context": "Taita (Kidawida) traditional greeting",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "I am fine / well",
+      "translation": "Niko wedi",
+      "pronunciation": "ni-ko we-di",
+      "context": "Taita (Kidawida) greeting response",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
+  },
+  {
+    "entry": {
+      "english": "Good morning (Have you dawned well?)",
+      "translation": "Mwakucha wedi?",
+      "pronunciation": "mwakucha wedi",
+      "context": "Taita (Kidawida) morning greeting",
+      "audioFile": null
+    },
+    "langName": "Taita (Kidawida)",
+    "langId": "taita"
   },
   {
     "entry": {
@@ -3534,10 +3509,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Yes",
-      "translation": "Ee / Haya",
-      "pronunciation": "ee / haya",
-      "context": "Wray (1894) — Taita",
+      "english": "Peace / Goodness",
+      "translation": "Wedi",
+      "pronunciation": "we-di",
+      "context": "Wray (1894) & Sakamoto (2003) — Kidawida / Kisagala",
       "audioFile": null
     },
     "langName": "Taita (Kidawida)",
@@ -3545,36 +3520,14 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "No",
-      "translation": "Ndu / A'a",
-      "pronunciation": "ndu",
-      "context": "Wray (1894) — Taita",
+      "english": "Friend",
+      "translation": "mbuya (mwandani)",
+      "pronunciation": "m-boo-yah",
+      "context": "Hollis 1910 Taveta Proverbs",
       "audioFile": null
     },
-    "langName": "Taita (Kidawida)",
-    "langId": "taita"
-  },
-  {
-    "entry": {
-      "english": "News",
-      "translation": "uvoro, ilago",
-      "pronunciation": "uvoro, ilago",
-      "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-      "audioFile": null
-    },
-    "langName": "Taita (Kidawida)",
-    "langId": "taita"
-  },
-  {
-    "entry": {
-      "english": "Pardon",
-      "translation": "ku-sigo",
-      "pronunciation": "ku-sigo",
-      "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-      "audioFile": null
-    },
-    "langName": "Taita (Kidawida)",
-    "langId": "taita"
+    "langName": "Taveta (Kitaveta)",
+    "langId": "taveta"
   },
   {
     "entry": {
@@ -3600,10 +3553,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Yesterday",
-      "translation": "igolo",
-      "pronunciation": "ee-goh-loh",
-      "context": "Verified comparative entry across Kenyan bantu corpus",
+      "english": "Hello (Reply: Good, how are you?)",
+      "translation": "Jedi yoko jahako",
+      "pronunciation": "je-di yo-ko ja-ha-ko",
+      "context": "Wikipedia Taveta_language — Taveta greetings",
       "audioFile": null
     },
     "langName": "Taveta (Kitaveta)",
@@ -3611,10 +3564,10 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Three",
-      "translation": "itatu",
-      "pronunciation": "i-ta-tu",
-      "context": "Johnston (1919) — Kitaveta numerals",
+      "english": "Good news / Gospel",
+      "translation": "Sumu yedi",
+      "pronunciation": "su-mu ye-di",
+      "context": "Rev. A. R. Steggall (1892) & Wikipedia Taveta_language",
       "audioFile": null
     },
     "langName": "Taveta (Kitaveta)",
@@ -3622,124 +3575,333 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
   },
   {
     "entry": {
-      "english": "Four",
-      "translation": "ina",
-      "pronunciation": "i-na",
-      "context": "Johnston (1919) — Kitaveta numerals",
+      "english": "Hello / How are you? (Tana River greeting)",
+      "translation": "Hujambo / Habari za mudzi?",
+      "pronunciation": "ha-ba-ri za mu-dzi",
+      "context": "Kipfokomo (Sabaki Coastal Bantu) greeting",
       "audioFile": null
     },
-    "langName": "Taveta (Kitaveta)",
-    "langId": "taveta"
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
   },
   {
     "entry": {
-      "english": "Hello",
-      "translation": "Yoga",
-      "pronunciation": "Yoga",
-      "context": "Wikipedia Teso language — Vocabulary",
+      "english": "Peace / Well-being",
+      "translation": "Usalama / Kheri",
+      "pronunciation": "u-sa-la-ma",
+      "context": "Kipfokomo greeting",
       "audioFile": null
     },
-    "langName": "Teso (Ateso)",
-    "langId": "teso"
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
   },
   {
     "entry": {
-      "english": "My name is",
-      "translation": "Eka'kiror",
-      "pronunciation": "Eka'kiror...",
-      "context": "Wikipedia Teso language — Vocabulary",
+      "english": "Thank you",
+      "translation": "Asante / Nashukuru",
+      "pronunciation": "a-san-te",
+      "context": "Kipfokomo",
       "audioFile": null
     },
-    "langName": "Teso (Ateso)",
-    "langId": "teso"
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
   },
   {
     "entry": {
-      "english": "See you again",
-      "translation": "Awanyunos bobo",
-      "pronunciation": "Awanyunos bobo",
-      "context": "Wikipedia Teso language — Vocabulary",
+      "english": "Welcome",
+      "translation": "Karibu mudzini",
+      "pronunciation": "ka-ri-bu mu-dzi-ni",
+      "context": "Kipfokomo ('Welcome to the village')",
       "audioFile": null
     },
-    "langName": "Teso (Ateso)",
-    "langId": "teso"
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Good morning! (Krapf 1850, p. 29)",
+      "translation": "múya nágaia",
+      "pronunciation": "mu-ya na-ga-ia",
+      "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 29",
+      "audioFile": null
+    },
+    "langName": "Pokomo (Kipfokomo)",
+    "langId": "pokomo"
+  },
+  {
+    "entry": {
+      "english": "Hello / Peace be with you",
+      "translation": "Nagaa / Naga, naga! Fayaketi! / Baga nagaan dhufte",
+      "pronunciation": "na-gaa / fa-ya-ke-ti",
+      "context": "Borana / Oromo traditional greeting ('Peace, peace! Thy health!' — Tutschek 1845, p. 88, Aga's Letter)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "How are you? (Do you have peace?)",
+      "translation": "Nagaa qabdaa? / Akkam jirta? / Ati faya cabte?",
+      "pronunciation": "na-gaa qab-daa / ak-kam jir-ta",
+      "context": "Borana / Oromo greeting & Tutschek (1845, p. 88)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Peace / Everything is peaceful",
+      "translation": "Nagaa / Naguma",
+      "pronunciation": "na-gaa / na-gu-ma",
+      "context": "Borana / Oromo response",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Good morning (Did you spend the night in peace?)",
+      "translation": "Bulte nagaa? / Akkam bulte? / Naga ambulte! (Krapf 1842)",
+      "pronunciation": "bul-te na-gaa",
+      "context": "Borana / Oromo morning greeting (Krapf 1842, p. 16: \"naga ambulte\" = Good morning!; cf. bula \"pass the night\", Tutschek 1845)",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Good afternoon / Hast thou passed this day in peace?",
+      "translation": "Oolte nagaa? / Akkam oolte? / Ati naga olte har'a?",
+      "pronunciation": "ool-te na-gaa / a-ti na-ga ol-te har-a",
+      "context": "Tutschek (1845, p. 88, Aga's Letter: 'Ati naga olte had'a?')",
+      "audioFile": null
+    },
+    "langName": "Borana (Oromo)",
+    "langId": "borana"
+  },
+  {
+    "entry": {
+      "english": "Friend",
+      "translation": "arab (saaxiib)",
+      "pronunciation": "ah-rahb",
+      "context": "Rendille Cushitic vocabulary",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Hello / Peace",
+      "translation": "Nabad / Sooriyo",
+      "pronunciation": "na-bad / soo-ri-yo",
+      "context": "Rendille traditional greeting & blessing",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "How are you? (Is it peace?)",
+      "translation": "Ma nabad?",
+      "pronunciation": "ma na-bad",
+      "context": "Rendille Cushitic greeting",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "It is peace / I am fine",
+      "translation": "Aa nabad",
+      "pronunciation": "aa na-bad",
+      "context": "Rendille greeting reply",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Thank you / Blessing",
+      "translation": "Waaq a ku barikoy",
+      "pronunciation": "waaq a ku ba-ri-koy",
+      "context": "Rendille blessing ('May God bless you')",
+      "audioFile": null
+    },
+    "langName": "Rendille (Afi Ren'dille)",
+    "langId": "rendille"
+  },
+  {
+    "entry": {
+      "english": "Hello / Greetings",
+      "translation": "Sopa / Supa",
+      "pronunciation": "soh-pah",
+      "context": "Standard daily greeting among the Samburu (North Maa)",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Hello (Reply)",
+      "translation": "Epa / Ipa",
+      "pronunciation": "eh-pah",
+      "context": "Standard response to 'Sopa' in Samburu",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Greetings to elders / Respectful greeting",
+      "translation": "Chamge / Nabo",
+      "pronunciation": "nah-boh",
+      "context": "Samburu respectful address",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "How are you? (How are the children and cattle?)",
+      "translation": "Kejaa ngera oo nkishu?",
+      "pronunciation": "keh-jaa ngeh-rah oo nki-shu",
+      "context": "Pastoral greeting inquiring after family and herds",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Peace / Serenity",
+      "translation": "Serian",
+      "pronunciation": "seh-ri-an",
+      "context": "North Maa greeting & blessing ('Peace')",
+      "audioFile": null
+    },
+    "langName": "Samburu (Sampur)",
+    "langId": "samburu"
+  },
+  {
+    "entry": {
+      "english": "Friend",
+      "translation": "l-chore (pl. l-choreta)",
+      "pronunciation": "l-choh-reh",
+      "context": "Dundas 1910 & Maa Baringo corpus",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Hello / Greetings",
+      "translation": "Sopa / Supa",
+      "pronunciation": "soh-pah",
+      "context": "Ilchamus (Camus / North Maa) greeting",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
+  },
+  {
+    "entry": {
+      "english": "Hello (Reply)",
+      "translation": "Epa / Ipa",
+      "pronunciation": "eh-pah",
+      "context": "Ilchamus greeting response",
+      "audioFile": null
+    },
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
   },
   {
     "entry": {
       "english": "Peace",
-      "translation": "ekinok",
-      "pronunciation": "ekinok",
-      "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)",
+      "translation": "Serian",
+      "pronunciation": "seh-ri-an",
+      "context": "Ilchamus (Camus) greeting & blessing",
       "audioFile": null
     },
-    "langName": "Teso (Ateso)",
-    "langId": "teso"
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
   },
   {
     "entry": {
-      "english": "Thank you very much",
-      "translation": "Eyalama noi",
-      "pronunciation": "e-ya-la-ma noi",
-      "context": "Rev. A. L. Kitching, A Handbook of the Ateso Language (1915)",
+      "english": "Thank you",
+      "translation": "Ashe / Ashe oleng",
+      "pronunciation": "ah-sheh",
+      "context": "Ilchamus expression of gratitude",
       "audioFile": null
     },
-    "langName": "Teso (Ateso)",
-    "langId": "teso"
+    "langName": "Ilchamus (Njemps)",
+    "langId": "ilchamus"
   },
   {
     "entry": {
-      "english": "Health to your cattle",
-      "translation": "Mata ng'atuk",
-      "pronunciation": "mah-tah ngah-took",
-      "context": "Pastoral greeting inquiring after cattle herds. Response: 'Mata ouwi' (health to your village). (Barton 1921)",
+      "english": "Friend",
+      "translation": "theli-aʻ (pl. theli-ei) / weri",
+      "pronunciation": "theli-a",
+      "context": "Mervyn W. H. Beech (1911, pp. 54, 109, 117) Suk vocabulary",
       "audioFile": null
     },
-    "langName": "Turkana",
-    "langId": "turkana"
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
   },
   {
     "entry": {
-      "english": "Health to your village",
-      "translation": "Mata ouwi",
-      "pronunciation": "mah-tah oh-wee",
-      "context": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)",
+      "english": "Hello / How are you?",
+      "translation": "Chamnyan / Bo kalyon?",
+      "pronunciation": "cham-nyan / bo kal-yon",
+      "context": "Pokot (Pökoot) traditional greeting",
       "audioFile": null
     },
-    "langName": "Turkana",
-    "langId": "turkana"
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
   },
   {
     "entry": {
-      "english": "Health to your children",
-      "translation": "Mata ng'idwi",
-      "pronunciation": "mah-tah ngee-dwee",
-      "context": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)",
+      "english": "Peace / All is well",
+      "translation": "Kalyon / Kalya",
+      "pronunciation": "kal-yon / kal-ya",
+      "context": "Pokot (Pökoot) greeting response ('Peace')",
       "audioFile": null
     },
-    "langName": "Turkana",
-    "langId": "turkana"
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
   },
   {
     "entry": {
-      "english": "Health to our meetings",
-      "translation": "Mata ariama",
-      "pronunciation": "mah-tah ah-ree-ah-mah",
-      "context": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)",
+      "english": "Thank you",
+      "translation": "Sĕra! / Sĕre! (verb: o-soiyen-an) / Kanyul / Kongoi",
+      "pronunciation": "sera",
+      "context": "Mervyn W. H. Beech (1911, pp. 96, 143) & Pokot gratitude",
       "audioFile": null
     },
-    "langName": "Turkana",
-    "langId": "turkana"
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
   },
   {
     "entry": {
-      "english": "Health to your property",
-      "translation": "Mata ng'ebarin",
-      "pronunciation": "mah-tah ngeh-bah-reen",
-      "context": "Greeting inquiring after livestock wealth and possessions. Response: 'Mata ng'abero'. (Barton 1921)",
+      "english": "Good-bye! / Parting salutation: I have gone! (Reply: Thou art going!)",
+      "translation": "Korôton! / Ka-rôt-on! (Reply: I-rôt-enyi!)",
+      "pronunciation": "koroton",
+      "context": "Mervyn W. H. Beech (1911, pp. 92, 119, 125) — Suk farewells",
       "audioFile": null
     },
-    "langName": "Turkana",
-    "langId": "turkana"
+    "langName": "Pokot (Pökoot)",
+    "langId": "pokot"
   },
   {
     "entry": {

@@ -52,61 +52,61 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Mirembe! / Mulembe!",
             "source": "Peace! / Greetings!",
-            "pronunciation": "mee-rehm-beh / moo-lehm-beh",
+            "pronunciation": "mi-rembe / mu-lembe",
             "hint": "Universal Luhya greeting of peace (Hobley 1902)"
           },
           {
             "target": "esie / ise",
             "source": "I / me",
-            "pronunciation": "eh-see-eh / ee-seh",
+            "pronunciation": "e-sie / ise",
             "hint": "Wanga/Kisa esie, Nyole/Bukusu ise, Logoli inze (Johnston 1919)"
           },
           {
             "target": "iwe",
             "source": "You (singular)",
-            "pronunciation": "ee-weh",
+            "pronunciation": "iwe",
             "hint": "2nd person singular pronoun"
           },
           {
             "target": "efwe / ifwe",
             "source": "We / us",
-            "pronunciation": "eh-fweh / ee-fweh",
+            "pronunciation": "efwe / ifwe",
             "hint": "1st person plural pronoun"
           },
           {
             "target": "omundu (pl. abandu)",
             "source": "Person (pl. People)",
-            "pronunciation": "oh-moo-ndoo / ah-bah-ndoo",
+            "pronunciation": "o-mundu",
             "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)"
           },
           {
             "target": "omukhasi (pl. abakhasi)",
             "source": "Woman / Wife",
-            "pronunciation": "oh-moo-khah-see",
+            "pronunciation": "o-mukha-si",
             "hint": "Class 1/2 noun"
           },
           {
             "target": "omusatsa (pl. abasatsa)",
             "source": "Man / Husband",
-            "pronunciation": "oh-moo-sah-tsah",
+            "pronunciation": "o-mu-satsa",
             "hint": "Class 1/2 noun"
           },
           {
             "target": "omwana (pl. abana)",
             "source": "Child (pl. Children)",
-            "pronunciation": "oh-mwah-nah / ah-bah-nah",
+            "pronunciation": "omwa-na",
             "hint": "Class 1/2 noun"
           },
           {
             "target": "omwami (pl. abami)",
             "source": "King / Paramount Chief (Nabongo)",
-            "pronunciation": "oh-mwah-mee / ah-bah-mee",
+            "pronunciation": "omwa-mi",
             "hint": "Rev. N. Stam (1929, pp. 148–149) Wanga royal title"
           },
           {
             "target": "mama / papa (sese)",
             "source": "Mother / Father",
-            "pronunciation": "mah-mah / pah-pah",
+            "pronunciation": "ma-ma / pa-pa",
             "hint": "Core kinship terms (Hobley 1902)"
           }
         ],
@@ -228,55 +228,67 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "-lala (ndala)",
             "source": "One (1)",
-            "pronunciation": "lah-lah",
+            "pronunciation": "la-la",
             "hint": "Hobley (1902) & Johnston (1919 #5a)"
           },
           {
             "target": "-bili (tsimbili)",
             "source": "Two (2)",
-            "pronunciation": "bee-lee",
+            "pronunciation": "bi-li",
             "hint": "Hobley (1902) & Johnston (1919 #5a)"
           },
           {
             "target": "-taru (tsitaru)",
             "source": "Three (3)",
-            "pronunciation": "tah-roo",
+            "pronunciation": "ta-ru",
             "hint": "Hobley (1902) & Johnston (1919 #5a)"
           },
           {
             "target": "-ne (tsine)",
             "source": "Four (4)",
-            "pronunciation": "neh",
+            "pronunciation": "ne",
             "hint": "Hobley (1902) & Johnston (1919 #5a)"
           },
           {
             "target": "-raano (tsiraano)",
             "source": "Five (5)",
-            "pronunciation": "rah-noh",
+            "pronunciation": "raa-no",
             "hint": "Hobley (1902) & Johnston (1919 #5a)"
           },
           {
-            "target": "tsisaasaba, mufungate, munane, shenda, ikhumi",
-            "source": "6, 7, 8, 9, 10",
-            "pronunciation": "tsee-sah-sah-bah, moo-foon-gah-teh, moo-nah-neh, shehn-dah, ee-khoo-mee",
+            "target": "tsisaasaba",
+            "source": "Six (6)",
+            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
+            "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
+          },
+          {
+            "target": "mufungate",
+            "source": "Seven (7)",
+            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
+            "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
+          },
+          {
+            "target": "munane",
+            "source": "Eight (8)",
+            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
             "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "-khongo",
             "source": "Big / large",
-            "pronunciation": "khoh-ngoh",
+            "pronunciation": "khongo",
             "hint": "Zone J30 Swadesh #27"
           },
           {
             "target": "-titi / -tutu",
             "source": "Small / few",
-            "pronunciation": "tee-tee",
+            "pronunciation": "ti-ti / tu-tu",
             "hint": "Zone J30 Swadesh #32"
           },
           {
             "target": "-layi",
             "source": "Good",
-            "pronunciation": "lah-yee",
+            "pronunciation": "la-yi",
             "hint": "Zone J30 Swadesh #185"
           }
         ],
@@ -406,61 +418,61 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "amaatsi / madzi",
             "source": "Water",
-            "pronunciation": "ah-mah-tsee",
+            "pronunciation": "a-maatsi / madzi",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "omuliro",
             "source": "Fire",
-            "pronunciation": "oh-moo-lee-roh",
+            "pronunciation": "o-mu-li-ro",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "liyuba (eliuba)",
             "source": "Sun",
-            "pronunciation": "lee-yoo-bah",
+            "pronunciation": "li-yu-ba",
             "hint": "Rev. N. Stam (1929, p. 160) & Johnston (1919)"
           },
           {
             "target": "ifula",
             "source": "Rain",
-            "pronunciation": "ee-foo-lah",
+            "pronunciation": "i-fu-la",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "Were / Nasayi",
             "source": "God, the Supreme Creator",
-            "pronunciation": "weh-reh / nah-sah-yee",
+            "pronunciation": "we-re / na-sa-yi",
             "hint": "Rev. N. Stam (1929, pp. 154, 159–160) Wanga religion"
           },
           {
             "target": "Were ankhonyere / Nasayi akhulinde",
             "source": "May God help me / May God guard you",
-            "pronunciation": "weh-reh ahn-khoh-nyeh-reh",
+            "pronunciation": "we-re ankhonye-re / na-sa-yi akhu-linde",
             "hint": "Rev. N. Stam (1929, p. 160) traditional blessing"
           },
           {
             "target": "musiro (muziro) / ekhyinekha",
             "source": "Clan totem (thing abstained from) / Soul or shadow",
-            "pronunciation": "moo-see-roh / eh-khyee-neh-khah",
+            "pronunciation": "mu-si-ro / ekhyi-nekha",
             "hint": "Stam (1929, pp. 162, 176) & Hobley (1903, p. 347)"
           },
           {
             "target": "okhunywa / okhuliira",
             "source": "To drink / To eat",
-            "pronunciation": "oh-khoo-nywah / oh-khoo-lee-rah",
+            "pronunciation": "okhunywa / okhu-lii-ra",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhulola / okhumanya",
             "source": "To see / To know",
-            "pronunciation": "oh-khoo-loh-lah / oh-khoo-mah-nyah",
+            "pronunciation": "okhu-lo-la / okhu-manya",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhwitsa / okhuchenda",
             "source": "To come / To walk",
-            "pronunciation": "oh-khwee-tsah / oh-khoo-chehn-dah",
+            "pronunciation": "okhwitsa / okhuchenda",
             "hint": "Class 15 infinitives"
           }
         ],
@@ -577,7 +589,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-3",
     "title": "Unit 3: Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Luhya (Luyia) built directly from C.",
+    "description": "Master family, kinship, clans & social organization in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Users",
     "skills": [
       {
@@ -591,128 +603,84 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Omwami (Nabongo, pl. Abami)",
             "source": "King / Chief",
-            "pronunciation": "oh-mwah-mee / nah-bohn-goh",
+            "pronunciation": "omwa-mi",
             "hint": "Rev. N. Stam 1929 pp. 148–149 Wanga royal title"
           },
           {
             "target": "omulina (pl. abalina) / omwitsa",
             "source": "Friend",
-            "pronunciation": "oh-moo-lee-nah / oh-mwee-tsah",
+            "pronunciation": "o-mu-li-na / omwitsa",
             "hint": "Hobley 1902 & Stam 1929"
           },
           {
             "target": "omwana (pl. abana / baana)",
             "source": "Child / children",
-            "pronunciation": "omwana (pl. abana / baana)",
+            "pronunciation": "omwa-na",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "mukha / omukhasi",
             "source": "Wife",
-            "pronunciation": "mukha / omukhasi",
+            "pronunciation": "mukha / o-mukha-si",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omukhwe / omusatsa",
             "source": "Husband",
-            "pronunciation": "omukhwe / omusatsa",
+            "pronunciation": "o-mukhwe / o-mu-satsa",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "mama",
             "source": "Mother",
-            "pronunciation": "mama",
+            "pronunciation": "ma-ma",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "papa / taata",
             "source": "Father",
-            "pronunciation": "papa / taata",
+            "pronunciation": "pa-pa / taa-ta",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omwana (pl. abana / avana)",
             "source": "child (pl. children)",
-            "pronunciation": "omwana (pl. abana / avana)",
+            "pronunciation": "omwa-na",
             "hint": "Lubukusu / Oluhya"
           },
           {
-            "target": "Omw-ami; aw-ami / Omw-ami / Omw-ami. Ωmu-kuru",
+            "target": "Omw-ami; aw-ami / Omw-ami / Omw-ami. Omu-kuru",
             "source": "Chief",
-            "pronunciation": "omw-ami; aw-ami / omw-ami / omw-ami. omu-kuru",
+            "pronunciation": "omw-ami",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli omwana (pl. abana / baana) nende mukha / omukhasi.",
-            "source": "In our house there is Child / children and Wife."
+            "target": "Khusoma elikhuwa Omwami lero.",
+            "source": "We learn the expression Omwami (king) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu omulina.",
+            "source": "The elders spoke about friend."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Omwami (Nabongo, pl. Abami)\" in Luhya?",
+            "prompt": "What is the English meaning of \"Omwami (Nabongo, pl. Abami)\" in Luhya (Luyia)?",
             "correctAnswer": "King / Chief",
             "options": [
+              "King / Chief",
               "Friend",
               "Child / children",
-              "Wife",
-              "King / Chief"
+              "Wife"
             ],
             "hint": "Rev. N. Stam 1929 pp. 148–149 Wanga royal title"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"omulina (pl. abalina) / omwitsa\" in Luhya?",
-            "correctAnswer": "Friend",
-            "options": [
-              "Child / children",
-              "Wife",
-              "Friend",
-              "King / Chief"
-            ],
-            "hint": "Hobley 1902 & Stam 1929"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"omwana (pl. abana / baana)\" in Luhya?",
-            "correctAnswer": "Child / children",
-            "options": [
-              "Wife",
-              "Child / children",
-              "King / Chief",
-              "Friend"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Child / children\" in Luhya?",
-            "correctAnswer": "omwana (pl. abana / baana)",
-            "options": [
-              "omwana (pl. abana / baana)",
-              "Omwami (Nabongo, pl. Abami)",
-              "omulina (pl. abalina) / omwitsa",
-              "mukha / omukhasi"
-            ],
-            "hint": "omwana (pl. abana / baana)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Wife\" in Luhya?",
-            "correctAnswer": "mukha / omukhasi",
-            "options": [
-              "Omwami (Nabongo, pl. Abami)",
-              "omulina (pl. abalina) / omwitsa",
-              "omwana (pl. abana / baana)",
-              "mukha / omukhasi"
-            ],
-            "hint": "mukha / omukhasi"
-          },
-          {
             "type": "match_pairs",
-            "prompt": "Match each Luhya expression with its English meaning:",
+            "prompt": "Match each verified Luhya (Luyia) term to its English meaning:",
             "correctAnswer": "Omwami (Nabongo, pl. Abami): King / Chief",
             "pairs": [
               {
@@ -735,13 +703,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Luhya term for \"Husband\": ___",
+            "prompt": "Complete the Luhya (Luyia) term for \"Husband\": ___",
             "correctAnswer": "omukhwe / omusatsa",
             "options": [
+              "omukhwe / omusatsa",
               "Omwami (Nabongo, pl. Abami)",
               "omulina (pl. abalina) / omwitsa",
-              "omwana (pl. abana / baana)",
-              "omukhwe / omusatsa"
+              "omwana (pl. abana / baana)"
             ],
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
@@ -758,7 +726,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Omw-ana / Omw-ana; bab-ana. Om-soriri",
             "source": "Son, boy",
-            "pronunciation": "omw-ana / omw-ana; bab-ana. om-soriri",
+            "pronunciation": "omw-ana / omw-ana",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
@@ -770,50 +738,54 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "mukhofu",
             "source": "Elder",
-            "pronunciation": "mukhofu",
+            "pronunciation": "mukho-fu",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "oweha",
             "source": "Marriage",
-            "pronunciation": "oweha",
+            "pronunciation": "o-we-ha",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "umuchesa",
             "source": "Neighbour",
-            "pronunciation": "umuchesa",
+            "pronunciation": "u-muche-sa",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "mulamu",
             "source": "Sister-in-law",
-            "pronunciation": "mulamu",
+            "pronunciation": "mu-la-mu",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "msiani",
             "source": "Son",
-            "pronunciation": "msiani",
+            "pronunciation": "msia-ni",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "nakufiala",
             "source": "Son-in-law",
-            "pronunciation": "nakufiala",
+            "pronunciation": "na-ku-fia-la",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "baba",
             "source": "Step-father",
-            "pronunciation": "baba",
+            "pronunciation": "ba-ba",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli mukhofu nende oweha.",
-            "source": "In our house there is Elder and Marriage."
+            "target": "Khusoma elikhuwa Omw-ana lero.",
+            "source": "We learn the expression Omw-ana (son) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu senge.",
+            "source": "The elders spoke about aunt."
           }
         ],
         "authoredExercises": [
@@ -919,7 +891,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-4",
     "title": "Unit 4: Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Luhya (Luyia) built directly from C.",
+    "description": "Master numbers, counting, currency & measures in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Scale",
     "skills": [
       {
@@ -933,62 +905,66 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "ikhumi (likhumi)",
             "source": "Ten",
-            "pronunciation": "ee-khoo-mee",
+            "pronunciation": "ikhu-mi",
             "hint": "Hobley 1902 p. 69 & Johnston 1919 #5a"
           },
           {
             "target": "shenda (kienda)",
             "source": "Nine",
-            "pronunciation": "shehn-dah / kee-ehn-dah",
+            "pronunciation": "shenda",
             "hint": "Hobley 1902 p. 69 & Johnston 1919 #5a"
           },
           {
             "target": "munane (tsinane)",
             "source": "Eight",
-            "pronunciation": "moo-nah-neh",
+            "pronunciation": "mu-na-ne",
             "hint": "Hobley 1902 p. 69 & Johnston 1919 #5a"
           },
           {
             "target": "mufungate (tsisaba)",
             "source": "Seven",
-            "pronunciation": "moo-foon-gah-teh / tsee-sah-bah",
+            "pronunciation": "mu-funga-te",
             "hint": "Hobley 1902 p. 69 & Johnston 1919 #5a"
           },
           {
             "target": "tsisaasaba (mkaga)",
             "source": "Six",
-            "pronunciation": "tsee-sah-sah-bah",
+            "pronunciation": "tsi-saa-sa-ba",
             "hint": "Hobley 1902 p. 69 & Johnston 1919 #5a"
           },
           {
             "target": "-osi / tulu",
             "source": "All",
-            "pronunciation": "-osi / tulu",
+            "pronunciation": "osi / tu-lu",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-inji / -nyishi",
             "source": "Many",
-            "pronunciation": "-inji / -nyishi",
+            "pronunciation": "inji / nyishi",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-lala / ndala",
             "source": "One",
-            "pronunciation": "-lala / ndala",
+            "pronunciation": "la-la / nda-la",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-bili /tsimbili",
             "source": "Two",
-            "pronunciation": "-bili /tsimbili",
+            "pronunciation": "bi-li / tsimbi-li",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli munane (tsinane) nende mufungate (tsisaba).",
-            "source": "In our house there is Eight and Seven."
+            "target": "Khusoma elikhuwa ikhumi lero.",
+            "source": "We learn the expression ikhumi (ten) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu shenda.",
+            "source": "The elders spoke about nine."
           }
         ],
         "authoredExercises": [
@@ -1100,25 +1076,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "-taru / tsitaru",
             "source": "Three",
-            "pronunciation": "-taru / tsitaru",
+            "pronunciation": "ta-ru / tsi-ta-ru",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-ne / tsine",
             "source": "Four",
-            "pronunciation": "-ne / tsine",
+            "pronunciation": "ne / tsi-ne",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-raano / tsiraano",
             "source": "Five",
-            "pronunciation": "-raano / tsiraano",
+            "pronunciation": "raa-no / tsi-raa-no",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "Sekunde",
             "source": "Second (time unit)",
-            "pronunciation": "sekunde",
+            "pronunciation": "se-kunde",
             "hint": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           },
           {
@@ -1148,14 +1124,18 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "-nggi / -inggi",
             "source": "Plenty, many",
-            "pronunciation": "-nggi / -inggi",
+            "pronunciation": "nggi / inggi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli -raano / tsiraano nende Sekunde.",
-            "source": "In our house there is Five and Second (time unit)."
+            "target": "Khusoma elikhuwa -taru lero.",
+            "source": "We learn the expression -taru (three) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu -ne.",
+            "source": "The elders spoke about four."
           }
         ],
         "authoredExercises": [
@@ -1261,7 +1241,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-5",
     "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Luhya (Luyia) built directly from C.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Tractor",
     "skills": [
       {
@@ -1275,159 +1255,126 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "obushi (bushi)",
             "source": "Honey",
-            "pronunciation": "oh-boo-shee",
+            "pronunciation": "o-bushi",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "amabele (mabere)",
             "source": "Milk",
-            "pronunciation": "ah-mah-beh-leh",
+            "pronunciation": "a-ma-be-le",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "ebyokhulia (obuma = ugali)",
             "source": "Food",
-            "pronunciation": "eh-byoh-khoo-lee-ah / oh-boo-mah",
+            "pronunciation": "ebyokhu-lia",
             "hint": "Hobley 1902 & Stam 1929"
           },
           {
             "target": "eshiamo (pl. ebiamo)",
             "source": "Fruit",
-            "pronunciation": "eshiamo (pl. ebiamo)",
+            "pronunciation": "eshia-mo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "inyama",
             "source": "Meat",
-            "pronunciation": "inyama",
+            "pronunciation": "inya-ma",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "libuyu (pl. amabuyu)",
             "source": "Egg",
-            "pronunciation": "libuyu (pl. amabuyu)",
+            "pronunciation": "li-bu-yu",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omunyu / omufume",
             "source": "Salt",
-            "pronunciation": "omunyu / omufume",
+            "pronunciation": "o-munyu / o-mu-fu-me",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "-yinjikhane",
             "source": "Full",
-            "pronunciation": "-yinjikhane",
+            "pronunciation": "yinjikha-ne",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "-bolo",
-            "source": "Rotten",
-            "pronunciation": "-bolo",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
+            "target": "-nuru",
+            "source": "Fat",
+            "pronunciation": "nu-ru"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli ebyokhulia (obuma = ugali) nende eshiamo (pl. ebiamo).",
-            "source": "In our house there is Food and Fruit."
+            "target": "obushi — amabele",
+            "source": "Honey — Milk"
+          },
+          {
+            "target": "ebyokhulia — eshiamo",
+            "source": "Food — Fruit"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"obushi (bushi)\" in Luhya?",
+            "prompt": "What does \"obushi\" mean in English?",
             "correctAnswer": "Honey",
             "options": [
-              "Milk",
-              "Food",
-              "Fruit",
-              "Honey"
-            ],
-            "hint": "Hobley 1902 & Johnston 1919 #5a"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"amabele (mabere)\" in Luhya?",
-            "correctAnswer": "Milk",
-            "options": [
-              "Food",
-              "Fruit",
-              "Milk",
-              "Honey"
-            ],
-            "hint": "Hobley 1902 & Johnston 1919 #5a"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ebyokhulia (obuma = ugali)\" in Luhya?",
-            "correctAnswer": "Food",
-            "options": [
-              "Fruit",
-              "Food",
               "Honey",
-              "Milk"
+              "Milk",
+              "Food",
+              "Fruit"
             ],
-            "hint": "Hobley 1902 & Stam 1929"
+            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Food\" in Luhya?",
-            "correctAnswer": "ebyokhulia (obuma = ugali)",
-            "options": [
-              "ebyokhulia (obuma = ugali)",
-              "obushi (bushi)",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Milk\"",
+            "correctAnswer": "amabele",
+            "acceptedAnswers": [
               "amabele (mabere)",
-              "eshiamo (pl. ebiamo)"
+              "amabele"
             ],
-            "hint": "eh-byoh-khoo-lee-ah / oh-boo-mah"
+            "hint": "Starts with \"am\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Fruit\" in Luhya?",
-            "correctAnswer": "eshiamo (pl. ebiamo)",
-            "options": [
-              "obushi (bushi)",
-              "amabele (mabere)",
-              "ebyokhulia (obuma = ugali)",
-              "eshiamo (pl. ebiamo)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"ebyokhulia\"",
+            "correctAnswer": "Food",
+            "acceptedAnswers": [
+              "Food",
+              "Food"
             ],
-            "hint": "eshiamo (pl. ebiamo)"
+            "hint": "Review Staple Foods, Cookery & Beverages"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Luhya expression with its English meaning:",
-            "correctAnswer": "obushi (bushi): Honey",
+            "prompt": "Match each expression from Staple Foods, Cookery & Beverages with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "obushi (bushi)",
+                "left": "obushi",
                 "right": "Honey"
               },
               {
-                "left": "amabele (mabere)",
+                "left": "amabele",
                 "right": "Milk"
               },
               {
-                "left": "ebyokhulia (obuma = ugali)",
+                "left": "ebyokhulia",
                 "right": "Food"
               },
               {
-                "left": "eshiamo (pl. ebiamo)",
+                "left": "eshiamo",
                 "right": "Fruit"
+              },
+              {
+                "left": "inyama",
+                "right": "Meat"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Luhya term for \"Meat\": ___",
-            "correctAnswer": "inyama",
-            "options": [
-              "obushi (bushi)",
-              "amabele (mabere)",
-              "ebyokhulia (obuma = ugali)",
-              "inyama"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ]
       },
@@ -1442,25 +1389,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Ama-furra / Ama-futa / Kimi-nawa (pl.). Kama-futa",
             "source": "Fat, oil",
-            "pronunciation": "ama-furra / ama-futa / kimi-nawa (pl.). kama-futa",
+            "pronunciation": "ama-furra / ama-futa / kimi-nawa kama-futa",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
             "target": "In-zala / In-jala / In-jara, In-zala",
             "source": "Hunger",
-            "pronunciation": "in-zala / in-jala / in-jara, in-zala",
+            "pronunciation": "in-zala / in-jala / in-jara in-zala",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
             "target": "Ama-duma. Ka-duma (5 b) / Ama-dumwa / Nabu-kubo",
             "source": "Maize",
-            "pronunciation": "ama-duma. ka-duma (5 b) / ama-dumwa / nabu-kubo",
+            "pronunciation": "ama-duma ka-duma / ama-dumwa / nabu-kubo",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
             "target": "Omw-engge. Ama-lua / Omw-engge / Kama-rwa",
             "source": "Palm wine, beer",
-            "pronunciation": "omw-engge. ama-lua / omw-engge / kama-rwa",
+            "pronunciation": "omw-engge ama-lua / omw-engge / kama-rwa",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
@@ -1472,26 +1419,30 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "-dia / -dia, -lia / -lya",
             "source": "To eat",
-            "pronunciation": "-dia / -dia, -lia / -lya",
+            "pronunciation": "dia / dia lia / lya",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
           },
           {
             "target": "shilulu",
             "source": "Bitter",
-            "pronunciation": "shilulu",
+            "pronunciation": "shi-lu-lu",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           },
           {
             "target": "shifui",
             "source": "Boil (noun)",
-            "pronunciation": "shifui",
+            "pronunciation": "shi-fui",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli In-zala / In-jala / In-jara, In-zala nende Ama-duma. Ka-duma (5 b) / Ama-dumwa / Nabu-kubo.",
-            "source": "In our house there is Hunger and Maize."
+            "target": "Khusoma elikhuwa Ama-furra lero.",
+            "source": "We learn the expression Ama-furra (fat) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu In-zala.",
+            "source": "The elders spoke about hunger."
           }
         ],
         "authoredExercises": [
@@ -1538,7 +1489,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-6",
     "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Luhya (Luyia) built directly from C.",
+    "description": "Master nature, landscape, flora & east african wildlife in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "PawPrint",
     "skills": [
       {
@@ -1552,13 +1503,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "omusaala / omuti (pl. emisaala)",
             "source": "Tree",
-            "pronunciation": "omusaala / omuti (pl. emisaala)",
+            "pronunciation": "o-mu-saa-la / o-mu-ti",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omutsuru",
             "source": "Forest",
-            "pronunciation": "omutsuru",
+            "pronunciation": "o-mutsu-ru",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1570,44 +1521,48 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "lifafu / lisafu (pl. amasafu)",
             "source": "Leaf",
-            "pronunciation": "lifafu / lisafu (pl. amasafu)",
+            "pronunciation": "li-fa-fu / li-sa-fu",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omurombo",
             "source": "Root",
-            "pronunciation": "omurombo",
+            "pronunciation": "o-mu-rombo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "likhoba",
             "source": "Bark (of tree)",
-            "pronunciation": "likhoba",
+            "pronunciation": "likho-ba",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "eshimuli (pl. ebimuli)",
             "source": "Flower",
-            "pronunciation": "eshimuli (pl. ebimuli)",
+            "pronunciation": "eshi-mu-li",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "obunyasi",
             "source": "Grass",
-            "pronunciation": "obunyasi",
+            "pronunciation": "o-bunya-si",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "eliuba",
             "source": "Sun",
-            "pronunciation": "eliuba",
+            "pronunciation": "e-liu-ba",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli imwo nende lifafu / lisafu (pl. amasafu).",
-            "source": "In our house there is Seed and Leaf."
+            "target": "Khusoma elikhuwa omusaala lero.",
+            "source": "We learn the expression omusaala (tree) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu omutsuru.",
+            "source": "The elders spoke about forest."
           }
         ],
         "authoredExercises": [
@@ -1719,19 +1674,19 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "omwesi",
             "source": "Moon / month",
-            "pronunciation": "omwesi",
+            "pronunciation": "omwe-si",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "ing'ining'ini",
             "source": "Star",
-            "pronunciation": "ing'ining'ini",
+            "pronunciation": "ing'i-ning'i-ni",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omuchera / omwalo",
             "source": "River",
-            "pronunciation": "omuchera / omwalo",
+            "pronunciation": "o-muche-ra / omwa-lo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1743,25 +1698,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "libale / lichina",
             "source": "Stone",
-            "pronunciation": "libale / lichina",
+            "pronunciation": "li-ba-le / lichi-na",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "olufu",
             "source": "Dust",
-            "pronunciation": "olufu",
+            "pronunciation": "o-lu-fu",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "eshi / eshialo",
             "source": "Earth / country",
-            "pronunciation": "eshi / eshialo",
+            "pronunciation": "eshi / eshia-lo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "lilesi",
             "source": "Cloud",
-            "pronunciation": "lilesi",
+            "pronunciation": "li-le-si",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1773,8 +1728,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli omuchera / omwalo nende inyanza.",
-            "source": "In our house there is River and Lake / sea."
+            "target": "Khusoma elikhuwa omwesi lero.",
+            "source": "We learn the expression omwesi (moon) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu ing'ining'ini.",
+            "source": "The elders spoke about star."
           }
         ],
         "authoredExercises": [
@@ -1880,7 +1839,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-7",
     "title": "Unit 7: The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Luhya (Luyia) built directly from C.",
+    "description": "Master the human body, health, medicine & safety in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "User",
     "skills": [
       {
@@ -1894,31 +1853,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "amabanga / amalasire / amatsayi",
             "source": "Blood",
-            "pronunciation": "amabanga / amalasire / amatsayi",
+            "pronunciation": "a-ma-banga / a-ma-la-si-re / a-matsa-yi",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "likumba (pl. amakumba)",
             "source": "Bone",
-            "pronunciation": "likumba (pl. amakumba)",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
-          },
-          {
-            "target": "amanulu / amafura",
-            "source": "Fat / oil",
-            "pronunciation": "amanulu / amafura",
+            "pronunciation": "li-kumba",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "liswi (pl. amaswi)",
             "source": "Hair",
-            "pronunciation": "liswi (pl. amaswi)",
+            "pronunciation": "liswi",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omurwe / om'rwe (pl. emirwe)",
             "source": "Head",
-            "pronunciation": "omurwe / om'rwe (pl. emirwe)",
+            "pronunciation": "o-murwe / om'rwe",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1930,123 +1883,96 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "imoni (pl. tsimoni) / eliiso",
             "source": "Eye",
-            "pronunciation": "imoni (pl. tsimoni) / eliiso",
+            "pronunciation": "i-mo-ni / e-lii-so",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "amolu",
             "source": "Nose",
-            "pronunciation": "amolu",
+            "pronunciation": "a-mo-lu",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omunwa (pl. eminwa)",
             "source": "Mouth",
-            "pronunciation": "omunwa (pl. eminwa)",
+            "pronunciation": "o-munwa",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
+          },
+          {
+            "target": "Efi-tere. Olu-ala / Olu-ala / Si-tere or Ki-tete",
+            "source": "Toe",
+            "pronunciation": "efi-tere olu-ala / olu-ala / si-tere or ki-tete"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli amanulu / amafura nende liswi (pl. amaswi).",
-            "source": "In our house there is Fat / oil and Hair."
+            "target": "amabanga — likumba",
+            "source": "Blood — Bone"
+          },
+          {
+            "target": "liswi — omurwe",
+            "source": "Hair — Head"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"amabanga / amalasire / amatsayi\" in Luhya?",
+            "prompt": "What does \"amabanga\" mean in English?",
             "correctAnswer": "Blood",
             "options": [
-              "Bone",
-              "Fat / oil",
-              "Hair",
-              "Blood"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"likumba (pl. amakumba)\" in Luhya?",
-            "correctAnswer": "Bone",
-            "options": [
-              "Fat / oil",
-              "Hair",
-              "Bone",
-              "Blood"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"amanulu / amafura\" in Luhya?",
-            "correctAnswer": "Fat / oil",
-            "options": [
-              "Hair",
-              "Fat / oil",
               "Blood",
-              "Bone"
+              "Bone",
+              "Hair",
+              "Head"
             ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
+            "hint": "Core vocabulary in Parts of the Body & Physical Senses"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Fat / oil\" in Luhya?",
-            "correctAnswer": "amanulu / amafura",
-            "options": [
-              "amanulu / amafura",
-              "amabanga / amalasire / amatsayi",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Bone\"",
+            "correctAnswer": "likumba",
+            "acceptedAnswers": [
               "likumba (pl. amakumba)",
-              "liswi (pl. amaswi)"
+              "likumba"
             ],
-            "hint": "amanulu / amafura"
+            "hint": "Starts with \"li\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Hair\" in Luhya?",
-            "correctAnswer": "liswi (pl. amaswi)",
-            "options": [
-              "amabanga / amalasire / amatsayi",
-              "likumba (pl. amakumba)",
-              "amanulu / amafura",
-              "liswi (pl. amaswi)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"liswi\"",
+            "correctAnswer": "Hair",
+            "acceptedAnswers": [
+              "Hair",
+              "Hair"
             ],
-            "hint": "liswi (pl. amaswi)"
+            "hint": "Review Parts of the Body & Physical Senses"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Luhya expression with its English meaning:",
-            "correctAnswer": "amabanga / amalasire / amatsayi: Blood",
+            "prompt": "Match each expression from Parts of the Body & Physical Senses with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "amabanga / amalasire / amatsayi",
+                "left": "amabanga",
                 "right": "Blood"
               },
               {
-                "left": "likumba (pl. amakumba)",
+                "left": "likumba",
                 "right": "Bone"
               },
               {
-                "left": "amanulu / amafura",
-                "right": "Fat / oil"
+                "left": "liswi",
+                "right": "Hair"
               },
               {
-                "left": "liswi (pl. amaswi)",
-                "right": "Hair"
+                "left": "omurwe",
+                "right": "Head"
+              },
+              {
+                "left": "eshirwi",
+                "right": "Ear"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Luhya term for \"Head\": ___",
-            "correctAnswer": "omurwe / om'rwe (pl. emirwe)",
-            "options": [
-              "amabanga / amalasire / amatsayi",
-              "likumba (pl. amakumba)",
-              "amanulu / amafura",
-              "omurwe / om'rwe (pl. emirwe)"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ]
       },
@@ -2061,37 +1987,37 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "elino (pl. ameno)",
             "source": "Tooth",
-            "pronunciation": "elino (pl. ameno)",
+            "pronunciation": "e-li-no",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "olulimi (pl. tsinzimi)",
             "source": "Tongue",
-            "pronunciation": "olulimi (pl. tsinzimi)",
+            "pronunciation": "o-lu-li-mi",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "lilaro / eshilenge",
             "source": "Foot",
-            "pronunciation": "lilaro / eshilenge",
+            "pronunciation": "li-la-ro / eshi-lenge",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "eshilenje / lirango",
             "source": "Leg / thigh",
-            "pronunciation": "eshilenje / lirango",
+            "pronunciation": "eshi-lenje / li-rango",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "lisikamo",
             "source": "Knee",
-            "pronunciation": "lisikamo",
+            "pronunciation": "li-si-ka-mo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "omukhono (pl. emikhono)",
             "source": "Hand / arm",
-            "pronunciation": "omukhono (pl. emikhono)",
+            "pronunciation": "o-mukho-no",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -2103,20 +2029,24 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "amala",
             "source": "Intestines / guts",
-            "pronunciation": "amala",
+            "pronunciation": "a-ma-la",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "likosi",
             "source": "Neck",
-            "pronunciation": "likosi",
+            "pronunciation": "li-ko-si",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli lilaro / eshilenge nende eshilenje / lirango.",
-            "source": "In our house there is Foot and Leg / thigh."
+            "target": "Khusoma elikhuwa elino lero.",
+            "source": "We learn the expression elino (tooth) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu olulimi.",
+            "source": "The elders spoke about tongue."
           }
         ],
         "authoredExercises": [
@@ -2222,7 +2152,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-8",
     "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Luhya (Luyia) built directly from C.",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "BookOpen",
     "skills": [
       {
@@ -2236,62 +2166,66 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "okhuloma / okhuboola",
             "source": "Speak",
-            "pronunciation": "oh-khoo-loh-mah",
+            "pronunciation": "okhu-lo-ma / okhu-boo-la",
             "hint": "Hobley 1902 & Stam 1929"
           },
           {
             "target": "okhukona",
             "source": "Sleep",
-            "pronunciation": "oh-khoo-koh-nah",
+            "pronunciation": "okhu-ko-na",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "okhunywa",
             "source": "Drink",
-            "pronunciation": "oh-khoo-nywah",
+            "pronunciation": "okhunywa",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "okhuliira / okhulia",
             "source": "Eat",
-            "pronunciation": "oh-khoo-lee-ah",
+            "pronunciation": "okhu-lii-ra / okhu-lia",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "okhwitsa (itsa!)",
             "source": "Come",
-            "pronunciation": "oh-khwee-tsah",
+            "pronunciation": "okhwitsa",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "okhutsia (tsia!)",
             "source": "Go",
-            "pronunciation": "oh-khoo-tsee-ah",
+            "pronunciation": "okhutsia",
             "hint": "Hobley 1902 & Johnston 1919 #5a"
           },
           {
             "target": "okhukuna / okhuluma",
             "source": "To bite",
-            "pronunciation": "okhukuna / okhuluma",
+            "pronunciation": "okhu-ku-na / okhu-lu-ma",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhunuuna",
             "source": "To suck",
-            "pronunciation": "okhunuuna",
+            "pronunciation": "okhu-nuu-na",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhubita / okhufutsa",
             "source": "To spit",
-            "pronunciation": "okhubita / okhufutsa",
+            "pronunciation": "okhu-bi-ta / okhu-futsa",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli okhunywa nende okhuliira / okhulia.",
-            "source": "In our house there is Drink and Eat."
+            "target": "Khusoma elikhuwa okhuloma lero.",
+            "source": "We learn the expression okhuloma (speak) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu okhukona.",
+            "source": "The elders spoke about sleep."
           }
         ],
         "authoredExercises": [
@@ -2403,19 +2337,19 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "okhusala",
             "source": "To vomit",
-            "pronunciation": "okhusala",
+            "pronunciation": "okhu-sa-la",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhuutsa / okhufura",
             "source": "To blow",
-            "pronunciation": "okhuutsa / okhufura",
+            "pronunciation": "okhuutsa / okhu-fu-ra",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhuyeera",
             "source": "To breathe",
-            "pronunciation": "okhuyeera",
+            "pronunciation": "okhu-yee-ra",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -2427,25 +2361,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "okhulola",
             "source": "To see",
-            "pronunciation": "okhulola",
+            "pronunciation": "okhu-lo-la",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhuulira",
             "source": "To hear",
-            "pronunciation": "okhuulira",
+            "pronunciation": "okhuu-li-ra",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhumanya",
             "source": "To know",
-            "pronunciation": "okhumanya",
+            "pronunciation": "okhu-manya",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "okhupara",
             "source": "To think",
-            "pronunciation": "okhupara",
+            "pronunciation": "okhu-pa-ra",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -2457,8 +2391,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Munzu mwefwe muli okhuyeera nende okhutsekha.",
-            "source": "In our house there is To breathe and To laugh."
+            "target": "Khusoma elikhuwa okhusala lero.",
+            "source": "We learn the expression okhusala (to vomit) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu okhuutsa.",
+            "source": "The elders spoke about to blow."
           }
         ],
         "authoredExercises": [
@@ -2575,9 +2513,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "tips": "Every item in this skill is grounded directly in the historical Luhya (Luyia) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
           {
-            "target": "wañge = my",
-            "source": "(my)",
-            "pronunciation": "wañge = my",
+            "target": "wange (-ange)",
+            "source": "My (1st sg. possessive)",
+            "pronunciation": "wange",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukonde / Masaba)"
           },
           {
@@ -2589,25 +2527,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Ndera",
             "source": "I bring",
-            "pronunciation": "ndera",
+            "pronunciation": "nde-ra",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Bali",
             "source": "They are",
-            "pronunciation": "bali",
+            "pronunciation": "ba-li",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Muli",
             "source": "Ye are",
-            "pronunciation": "muli",
+            "pronunciation": "mu-li",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "khuli",
             "source": "We are",
-            "pronunciation": "khuli",
+            "pronunciation": "khu-li",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
@@ -2625,17 +2563,21 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "wañge = my",
-            "source": "(my)"
+            "target": "Khusoma elikhuwa wange lero.",
+            "source": "We learn the expression wange (my) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu Ndzidza.",
+            "source": "The elders spoke about i come."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"wañge = my\" in Luhya?",
-            "correctAnswer": "(my)",
+            "prompt": "What is the English meaning of \"wange (-ange)\" in Luhya (Luyia)?",
+            "correctAnswer": "My (1st sg. possessive)",
             "options": [
-              "(my)",
+              "My (1st sg. possessive)",
               "I come",
               "I bring",
               "They are"
@@ -2644,12 +2586,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "wañge = my: (my)",
+            "prompt": "Match each verified Luhya (Luyia) term to its English meaning:",
+            "correctAnswer": "wange (-ange): My (1st sg. possessive)",
             "pairs": [
               {
-                "left": "wañge = my",
-                "right": "(my)"
+                "left": "wange (-ange)",
+                "right": "My (1st sg. possessive)"
               },
               {
                 "left": "Ndzidza",
@@ -2671,9 +2613,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "correctAnswer": "Muli",
             "options": [
               "Muli",
-              "khuli",
-              "wañge = my",
-              "Ndzidza"
+              "wange (-ange)",
+              "Ndzidza",
+              "Ndera"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
@@ -2695,68 +2637,72 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Tawi",
             "source": "No, not",
-            "pronunciation": "tawi",
+            "pronunciation": "ta-wi",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Racari",
-            "source": "most beasts, etc",
-            "pronunciation": "racari",
+            "source": "Male (of beasts)",
+            "pronunciation": "ra-ca-ri",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Iduasi",
-            "source": "(mammals and reptiles)",
-            "pronunciation": "iduasi",
+            "source": "Female (of mammals)",
+            "pronunciation": "i-dua-si",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Nisie",
             "source": "I, me",
-            "pronunciation": "nisie",
+            "pronunciation": "ni-sie",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Ngiri",
             "source": "Wart hog",
-            "pronunciation": "ngiri",
+            "pronunciation": "ngi-ri",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
-            "target": "Lucemo, (Ri-, Ma-); Tsiñgemo, pl",
+            "target": "Lucemo, (Ri-, Ma-) (pl. Tsiñgemo)",
             "source": "Raphia palm",
-            "pronunciation": "lucemo, (ri-, ma-); tsiñgemo, pl",
+            "pronunciation": "lu-ce-mo",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
-            "target": "Alia efu",
-            "source": "(our)",
-            "pronunciation": "alia efu",
+            "target": "Alia efu (-efu)",
+            "source": "Our (1st pl. possessive)",
+            "pronunciation": "a-lia efu",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
         ],
         "sentences": [
           {
-            "target": "Alia efu",
-            "source": "(our)"
+            "target": "Khusoma elikhuwa Ndu lero.",
+            "source": "We learn the expression Ndu (i am) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu Tawi.",
+            "source": "The elders spoke about no."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ndu\" in Luhya?",
+            "prompt": "What is the English meaning of \"Ndu\" in Luhya (Luyia)?",
             "correctAnswer": "I am",
             "options": [
               "I am",
               "No, not",
-              "most beasts, etc",
-              "(mammals and reptiles)"
+              "Male (of beasts)",
+              "Female (of mammals)"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
+            "prompt": "Match each verified Luhya (Luyia) term to its English meaning:",
             "correctAnswer": "Ndu: I am",
             "pairs": [
               {
@@ -2769,11 +2715,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "Racari",
-                "right": "most beasts, etc"
+                "right": "Male (of beasts)"
               },
               {
                 "left": "Iduasi",
-                "right": "(mammals and reptiles)"
+                "right": "Female (of mammals)"
               }
             ]
           },
@@ -2783,9 +2729,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "correctAnswer": "Nisie",
             "options": [
               "Nisie",
-              "Ngiri",
               "Ndu",
-              "Tawi"
+              "Tawi",
+              "Racari"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
@@ -2808,71 +2754,71 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Ehei",
-            "source": "(castrated)",
-            "pronunciation": "ehei",
+            "source": "Castrated ox",
+            "pronunciation": "e-hei",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Sirkhanga",
-            "source": "(good)",
+            "source": "Good / Fine",
             "pronunciation": "sirkhanga",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Ekhibia, Efiuma",
             "source": "Iron / Beads",
-            "pronunciation": "ekhibia, efiuma",
+            "pronunciation": "ekhi-bia e-fiu-ma",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Imbande, Tsimbande",
             "source": "nut",
-            "pronunciation": "imbande, tsimbande",
+            "pronunciation": "imbande tsimbande",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Omuriango",
             "source": "Doorway",
-            "pronunciation": "omuriango",
+            "pronunciation": "o-mu-riango",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Citere",
             "source": "Daylight",
-            "pronunciation": "citere",
+            "pronunciation": "ci-te-re",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
-            "target": "Akhana",
-            "source": "(little)",
-            "pronunciation": "akhana",
+            "target": "Akhana (pl. Ruana)",
+            "source": "Little child / Infant",
+            "pronunciation": "akha-na",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Indiwisi",
             "source": "Colobus",
-            "pronunciation": "indiwisi",
+            "pronunciation": "indi-wi-si",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
         ],
         "sentences": [
           {
-            "target": "Ekhibia, Efiuma",
-            "source": "Iron / Beads"
+            "target": "Khusoma elikhuwa Ehei lero.",
+            "source": "We learn the expression Ehei (castrated ox) today."
           },
           {
-            "target": "Imbande, Tsimbande",
-            "source": "nut"
+            "target": "Abakhulundu balomaloma khu Sirkhanga.",
+            "source": "The elders spoke about good."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ehei\" in Luhya?",
-            "correctAnswer": "(castrated)",
+            "prompt": "What is the English meaning of \"Ehei\" in Luhya (Luyia)?",
+            "correctAnswer": "Castrated ox",
             "options": [
-              "(castrated)",
-              "(good)",
+              "Castrated ox",
+              "Good / Fine",
               "Iron / Beads",
               "nut"
             ],
@@ -2880,16 +2826,16 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each verified Luhya (Luyia) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "Ehei: (castrated)",
+            "prompt": "Match each verified Luhya (Luyia) term to its English meaning:",
+            "correctAnswer": "Ehei: Castrated ox",
             "pairs": [
               {
                 "left": "Ehei",
-                "right": "(castrated)"
+                "right": "Castrated ox"
               },
               {
                 "left": "Sirkhanga",
-                "right": "(good)"
+                "right": "Good / Fine"
               },
               {
                 "left": "Ekhibia, Efiuma",
@@ -2907,9 +2853,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "correctAnswer": "Omuriango",
             "options": [
               "Omuriango",
-              "Citere",
               "Ehei",
-              "Sirkhanga"
+              "Sirkhanga",
+              "Ekhibia, Efiuma"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
@@ -2925,25 +2871,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Injobe",
             "source": "Speke's tragelaph",
-            "pronunciation": "injobe",
+            "pronunciation": "injo-be",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "Ikisi",
             "source": "Cephalophus",
-            "pronunciation": "ikisi",
+            "pronunciation": "i-ki-si",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
           {
             "target": "chenanu",
             "source": "Whose",
-            "pronunciation": "chenanu",
+            "pronunciation": "che-na-nu",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
           },
           {
             "target": "ewinanu",
             "source": "Who",
-            "pronunciation": "ewinanu",
+            "pronunciation": "e-wi-na-nu",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
           },
           {
@@ -2955,7 +2901,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "siwisi",
             "source": "Unripe",
-            "pronunciation": "siwisi",
+            "pronunciation": "si-wi-si",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
           },
           {
@@ -2967,11 +2913,20 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "kimirongolo",
             "source": "Trees",
-            "pronunciation": "kimirongolo",
+            "pronunciation": "ki-mi-rongo-lo",
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Khusoma elikhuwa Injobe lero.",
+            "source": "We learn the expression Injobe (speke's tragelaph) today."
+          },
+          {
+            "target": "Abakhulundu balomaloma khu Ikisi.",
+            "source": "The elders spoke about cephalophus."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

@@ -19,13 +19,6 @@
       "icon": "👋",
       "entries": [
         {
-          "english": "Friend",
-          "translation": "arab (saaxiib)",
-          "pronunciation": "ah-rahb",
-          "context": "Rendille Cushitic vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Hello / Peace",
           "translation": "Nabad / Sooriyo",
           "pronunciation": "na-bad / soo-ri-yo",
@@ -33,10 +26,17 @@
           "audioFile": null
         },
         {
-          "english": "How are you? (Is it peace?)",
-          "translation": "Ma nabad?",
-          "pronunciation": "ma na-bad",
-          "context": "Rendille Cushitic greeting",
+          "english": "Thank you / Blessing",
+          "translation": "Waaq a ku barikoy",
+          "pronunciation": "waaq a ku ba-ri-koy",
+          "context": "Rendille blessing ('May God bless you')",
+          "audioFile": null
+        },
+        {
+          "english": "Peace be upon the settlement!",
+          "translation": "Goob nabad!",
+          "pronunciation": "goob na-bad",
+          "context": "Rendille Greetings — Schlee (1979)",
           "audioFile": null
         },
         {
@@ -47,10 +47,10 @@
           "audioFile": null
         },
         {
-          "english": "Thank you / Blessing",
-          "translation": "Waaq a ku barikoy",
-          "pronunciation": "waaq a ku ba-ri-koy",
-          "context": "Rendille blessing ('May God bless you')",
+          "english": "How are you? (Is it peace?)",
+          "translation": "Ma nabad?",
+          "pronunciation": "ma na-bad",
+          "context": "Rendille Cushitic greeting",
           "audioFile": null
         },
         {
@@ -65,104 +65,6 @@
           "translation": "Male / Ma-",
           "pronunciation": "ma-le",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "I / me",
-          "translation": "ani (at)",
-          "pronunciation": "ah-nee",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "You (singular)",
-          "translation": "ati",
-          "pronunciation": "ah-tee",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "He / She",
-          "translation": "us (he) / ice (she)",
-          "pronunciation": "oos / ee-cheh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "We / us",
-          "translation": "innah (nah)",
-          "pronunciation": "een-nah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "They / them",
-          "translation": "icho",
-          "pronunciation": "ee-choh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Who?",
-          "translation": "ayyo?",
-          "pronunciation": "ah-yoh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "What?",
-          "translation": "mah?",
-          "pronunciation": "mah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Where?",
-          "translation": "inte?",
-          "pronunciation": "een-teh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Today",
-          "translation": "maanta (saanta)",
-          "pronunciation": "mahn-tah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Tomorrow",
-          "translation": "barri",
-          "pronunciation": "bahr-ree",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Yesterday",
-          "translation": "shale",
-          "pronunciation": "shah-leh",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "Peace be upon the settlement!",
-          "translation": "Goob nabad!",
-          "pronunciation": "goob na-bad",
-          "context": "Rendille Greetings — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Did the camels return safely?",
-          "translation": "Gaal nabad ma yimi?",
-          "pronunciation": "gaal na-bad ma yi-mi",
-          "context": "Rendille Greetings — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Has rain fallen in the pastures?",
-          "translation": "Roob ma da'ay?",
-          "pronunciation": "roob ma da'ay",
-          "context": "Rendille Greetings — Schlee (1979)",
           "audioFile": null
         }
       ]
@@ -187,9 +89,16 @@
           "audioFile": null
         },
         {
-          "english": "Three",
-          "translation": "séyyah",
-          "pronunciation": "sey-yah",
+          "english": "Six",
+          "translation": "líh",
+          "pronunciation": "lih",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "tomón",
+          "pronunciation": "to-mon",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -208,9 +117,16 @@
           "audioFile": null
         },
         {
-          "english": "Six",
-          "translation": "líh",
-          "pronunciation": "lih",
+          "english": "Nine",
+          "translation": "saagál",
+          "pronunciation": "saa-gal",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "séyyah",
+          "pronunciation": "sey-yah",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -229,20 +145,6 @@
           "audioFile": null
         },
         {
-          "english": "Nine",
-          "translation": "saagál",
-          "pronunciation": "saa-gal",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Ten",
-          "translation": "tomón",
-          "pronunciation": "to-mon",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
           "english": "Eleven (Ten plus one)",
           "translation": "tomón icóú kow",
           "pronunciation": "to-mon i-cou kow",
@@ -256,41 +158,6 @@
       "name": "Family, People & Kinship",
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
-        {
-          "english": "Person / People",
-          "translation": "enyenyet (pl. enyenyó)",
-          "pronunciation": "en-yen-yet",
-          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
-          "audioFile": null
-        },
-        {
-          "english": "Man / Husband",
-          "translation": "et (pl. rág)",
-          "pronunciation": "et",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Woman / Wife",
-          "translation": "maxábal (pl. obórri)",
-          "pronunciation": "maxabal",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Child / Boy",
-          "translation": "ínam (pl. yéyye)",
-          "pronunciation": "inam",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Girl / Daughter",
-          "translation": "ináam",
-          "pronunciation": "i-naam",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
         {
           "english": "Father",
           "translation": "abá",
@@ -306,31 +173,45 @@
           "audioFile": null
         },
         {
-          "english": "God / Sky",
-          "translation": "Waaq / Waaх",
-          "pronunciation": "waaq",
-          "context": "Rendille Cushitic sky/Supreme Being",
+          "english": "Friend",
+          "translation": "arab (saaxiib)",
+          "pronunciation": "ah-rahb",
+          "context": "Rendille Cushitic vocabulary",
           "audioFile": null
         },
         {
-          "english": "Rendille language",
-          "translation": "Afi Ren'dille",
-          "pronunciation": "a-fi ren-dil-le",
-          "context": "Wikipedia Rendille_language",
-          "audioFile": null
-        },
-        {
-          "english": "Name",
-          "translation": "magáh",
-          "pronunciation": "ma-gah",
+          "english": "Child / Boy",
+          "translation": "ínam (pl. yéyye)",
+          "pronunciation": "inam",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
-          "english": "Main clan settlement / circular homestead",
-          "translation": "goob",
-          "pronunciation": "goob",
-          "context": "Rendille Social Organization — Schlee (1979)",
+          "english": "Woman / Wife",
+          "translation": "maxábal (pl. obórri)",
+          "pronunciation": "maxabal",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Husband",
+          "translation": "et (pl. rág)",
+          "pronunciation": "et",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Person / People",
+          "translation": "enyenyet (pl. enyenyó)",
+          "pronunciation": "en-yen-yet",
+          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "Girl / Daughter",
+          "translation": "ináam",
+          "pronunciation": "i-naam",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
@@ -360,21 +241,28 @@
           "pronunciation": "inan weyn",
           "context": "Rendille Kinship — Schlee (1979)",
           "audioFile": null
+        },
+        {
+          "english": "Main clan settlement / circular homestead",
+          "translation": "goob",
+          "pronunciation": "goob",
+          "context": "Rendille Social Organization — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Rendille language",
+          "translation": "Afi Ren'dille",
+          "pronunciation": "a-fi ren-dil-le",
+          "context": "Wikipedia Rendille_language",
+          "audioFile": null
         }
       ]
     },
     {
       "id": "body",
       "name": "Body Parts & Health",
-      "icon": "🫀",
+      "icon": "🫁",
       "entries": [
-        {
-          "english": "Head",
-          "translation": "matáh",
-          "pronunciation": "ma-tah",
-          "context": "Bernd Heine (1976 & 1979) — Rendille",
-          "audioFile": null
-        },
         {
           "english": "Eye",
           "translation": "íl (pl. indó)",
@@ -390,6 +278,13 @@
           "audioFile": null
         },
         {
+          "english": "Head",
+          "translation": "matáh",
+          "pronunciation": "ma-tah",
+          "context": "Bernd Heine (1976 & 1979) — Rendille",
+          "audioFile": null
+        },
+        {
           "english": "Nose",
           "translation": "sám",
           "pronunciation": "sam",
@@ -397,10 +292,10 @@
           "audioFile": null
         },
         {
-          "english": "Mouth / Language",
-          "translation": "áf",
-          "pronunciation": "af",
-          "context": "Bernd Heine (1976) & Wikipedia Rendille_language",
+          "english": "Bone",
+          "translation": "láf",
+          "pronunciation": "laf",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
@@ -411,9 +306,30 @@
           "audioFile": null
         },
         {
+          "english": "Blood",
+          "translation": "díig",
+          "pronunciation": "diig",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "wáam",
+          "pronunciation": "waam",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
           "english": "Tongue",
           "translation": "harráb",
           "pronunciation": "har-rab",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "náh",
+          "pronunciation": "nah",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -432,31 +348,17 @@
           "audioFile": null
         },
         {
-          "english": "Blood",
-          "translation": "díig",
-          "pronunciation": "diig",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "english": "Mouth / Language",
+          "translation": "áf",
+          "pronunciation": "af",
+          "context": "Bernd Heine (1976) & Wikipedia Rendille_language",
           "audioFile": null
         },
         {
-          "english": "Bone",
-          "translation": "láf",
-          "pronunciation": "laf",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Breast",
-          "translation": "náh",
-          "pronunciation": "nah",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Heart",
-          "translation": "wáam",
-          "pronunciation": "waam",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "english": "Blood drawn for pastoral diet",
+          "translation": "dhiig",
+          "pronunciation": "dhiig",
+          "context": "Rendille Core Lexicon — Heine (1980)",
           "audioFile": null
         }
       ]
@@ -464,8 +366,57 @@
     {
       "id": "animals",
       "name": "Animals, Livestock & Wildlife",
-      "icon": "🐄",
+      "icon": "🦁",
       "entries": [
+        {
+          "english": "Dog",
+          "translation": "kár (pl. karró)",
+          "pronunciation": "kar",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "rriyó",
+          "pronunciation": "rri-yo",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "chimbír",
+          "pronunciation": "chim-bir",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "bahási",
+          "pronunciation": "ba-ha-si",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "óno",
+          "pronunciation": "o-no",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "tóf",
+          "pronunciation": "tof",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Louse",
+          "translation": "injír",
+          "pronunciation": "in-jir",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
         {
           "english": "Camel (herd)",
           "translation": "gaal (sg. nyíro / ayr)",
@@ -481,76 +432,6 @@
           "audioFile": null
         },
         {
-          "english": "Goat",
-          "translation": "rriyó",
-          "pronunciation": "rri-yo",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Sheep",
-          "translation": "óno",
-          "pronunciation": "o-no",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Dog",
-          "translation": "kár (pl. karró)",
-          "pronunciation": "kar",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Bird",
-          "translation": "chimbír",
-          "pronunciation": "chim-bir",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Snake",
-          "translation": "tóf",
-          "pronunciation": "tof",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Lion",
-          "translation": "bahási",
-          "pronunciation": "ba-ha-si",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Louse",
-          "translation": "injír",
-          "pronunciation": "in-jir",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Male pack camel",
-          "translation": "oor",
-          "pronunciation": "oor",
-          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "Female milking camel",
-          "translation": "ayyú",
-          "pronunciation": "ayyu",
-          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "Young camel calf",
-          "translation": "nyiró",
-          "pronunciation": "nyiro",
-          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
-          "audioFile": null
-        },
-        {
           "english": "Herd of camels",
           "translation": "gaal",
           "pronunciation": "gaal",
@@ -563,28 +444,35 @@
           "pronunciation": "a-di",
           "context": "Rendille Pastoral Lexicon — Hobley (1910, p. 166) & Heine (1980)",
           "audioFile": null
+        },
+        {
+          "english": "Male pack camel",
+          "translation": "oor",
+          "pronunciation": "oor",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Young camel calf",
+          "translation": "nyiró",
+          "pronunciation": "nyiro",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Female milking camel",
+          "translation": "ayyú",
+          "pronunciation": "ayyu",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)",
+          "audioFile": null
         }
       ]
     },
     {
       "id": "nature",
       "name": "Nature, Environment & Geography",
-      "icon": "🌍",
+      "icon": "🌿",
       "entries": [
-        {
-          "english": "Water",
-          "translation": "biche (biché)",
-          "pronunciation": "bi-che",
-          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
-          "audioFile": null
-        },
-        {
-          "english": "Fire",
-          "translation": "dáb",
-          "pronunciation": "dab",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
         {
           "english": "Sun",
           "translation": "orráh",
@@ -593,9 +481,9 @@
           "audioFile": null
         },
         {
-          "english": "Moon / Month",
-          "translation": "yéyah",
-          "pronunciation": "ye-yah",
+          "english": "Fire",
+          "translation": "dáb",
+          "pronunciation": "dab",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -614,6 +502,20 @@
           "audioFile": null
         },
         {
+          "english": "Water",
+          "translation": "biche (biché)",
+          "pronunciation": "bi-che",
+          "context": "Bernd Heine (1976) & Fleming (1964) — Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "war (tog)",
+          "pronunciation": "wahr",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
           "english": "Tree / Wood",
           "translation": "géed (pl. geedó)",
           "pronunciation": "geed",
@@ -621,9 +523,9 @@
           "audioFile": null
         },
         {
-          "english": "Grass / Pasture",
-          "translation": "hós",
-          "pronunciation": "hos",
+          "english": "Moon / Month",
+          "translation": "yéyah",
+          "pronunciation": "ye-yah",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -635,30 +537,9 @@
           "audioFile": null
         },
         {
-          "english": "Earth / Ground / Sand",
-          "translation": "hárra",
-          "pronunciation": "har-ra",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Night",
-          "translation": "ibéen",
-          "pronunciation": "i-been",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Day",
-          "translation": "sáah",
-          "pronunciation": "saah",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Year",
-          "translation": "gúu",
-          "pronunciation": "guu",
+          "english": "Grass / Pasture",
+          "translation": "hós",
+          "pronunciation": "hos",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -670,10 +551,10 @@
           "audioFile": null
         },
         {
-          "english": "River",
-          "translation": "war (tog)",
-          "pronunciation": "wahr",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "english": "Earth / Ground / Sand",
+          "translation": "hárra",
+          "pronunciation": "har-ra",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
@@ -684,6 +565,13 @@
           "audioFile": null
         },
         {
+          "english": "God / Sky",
+          "translation": "Waaq / Waaх",
+          "pronunciation": "waaq",
+          "context": "Rendille Cushitic sky/Supreme Being",
+          "audioFile": null
+        },
+        {
           "english": "Morning star / Venus",
           "translation": "bakkalcha",
           "pronunciation": "bak-kal-cha",
@@ -691,24 +579,10 @@
           "audioFile": null
         },
         {
-          "english": "Rainy season (long rains)",
-          "translation": "guu",
-          "pronunciation": "guu",
-          "context": "Rendille Seasonal Calendar — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "Short rains season",
-          "translation": "yer",
-          "pronunciation": "yer",
-          "context": "Rendille Seasonal Calendar — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "Long dry season",
-          "translation": "nabhai",
-          "pronunciation": "nab-hai",
-          "context": "Rendille Seasonal Calendar — Heine (1980)",
+          "english": "Has rain fallen in the pastures?",
+          "translation": "Roob ma da'ay?",
+          "pronunciation": "roob ma da'ay",
+          "context": "Rendille Greetings — Schlee (1979)",
           "audioFile": null
         },
         {
@@ -723,7 +597,7 @@
     {
       "id": "food",
       "name": "Food, Drink & Agriculture",
-      "icon": "🌾",
+      "icon": "🍲",
       "entries": [
         {
           "english": "Food",
@@ -747,38 +621,10 @@
           "audioFile": null
         },
         {
-          "english": "Enclosure / Kraal",
-          "translation": "súm (pl. sumám)",
-          "pronunciation": "sum",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "House / Tent",
-          "translation": "mính (pl. minán)",
-          "pronunciation": "minh",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Spear",
-          "translation": "tór",
-          "pronunciation": "tor",
-          "context": "Bernd Heine (1979) — Proto-Baz & Rendille",
-          "audioFile": null
-        },
-        {
-          "english": "Wooden milk container / milking vessel",
-          "translation": "madál",
-          "pronunciation": "madal",
-          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Smoked gourd for storing camel milk",
-          "translation": "kullób",
-          "pronunciation": "kullob",
-          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
+          "english": "Ghee / clarified butter",
+          "translation": "subáh",
+          "pronunciation": "subah",
+          "context": "Rendille Pastoral Lexicon — Heine (1980)",
           "audioFile": null
         },
         {
@@ -796,17 +642,38 @@
           "audioFile": null
         },
         {
-          "english": "Ghee / clarified butter",
-          "translation": "subáh",
-          "pronunciation": "subah",
-          "context": "Rendille Pastoral Lexicon — Heine (1980)",
+          "english": "Smoked gourd for storing camel milk",
+          "translation": "kullób",
+          "pronunciation": "kullob",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
           "audioFile": null
         },
         {
-          "english": "Blood drawn for pastoral diet",
-          "translation": "dhiig",
-          "pronunciation": "dhiig",
-          "context": "Rendille Core Lexicon — Heine (1980)",
+          "english": "Wooden milk container / milking vessel",
+          "translation": "madál",
+          "pronunciation": "madal",
+          "context": "Rendille Pastoral Lexicon — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "tór",
+          "pronunciation": "tor",
+          "context": "Bernd Heine (1979) — Proto-Baz & Rendille",
+          "audioFile": null
+        },
+        {
+          "english": "House / Tent",
+          "translation": "mính (pl. minán)",
+          "pronunciation": "minh",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Enclosure / Kraal",
+          "translation": "súm (pl. sumám)",
+          "pronunciation": "sum",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         }
       ]
@@ -817,10 +684,10 @@
       "icon": "🏃",
       "entries": [
         {
-          "english": "Speak",
-          "translation": "aldow (yidhi = say)",
-          "pronunciation": "ahl-dohw",
-          "context": "Rendille Cushitic vocabulary",
+          "english": "Go",
+          "translation": "irdá (a-irda)",
+          "pronunciation": "ir-da",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
@@ -831,9 +698,16 @@
           "audioFile": null
         },
         {
-          "english": "Drink",
-          "translation": "abhúg (a-bhug)",
-          "pronunciation": "a-bhug",
+          "english": "See",
+          "translation": "agár (a-agar)",
+          "pronunciation": "a-gar",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Die",
+          "translation": "amút (a-amut)",
+          "pronunciation": "a-mut",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -852,20 +726,6 @@
           "audioFile": null
         },
         {
-          "english": "Go",
-          "translation": "irdá (a-irda)",
-          "pronunciation": "ir-da",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "See",
-          "translation": "agár (a-agar)",
-          "pronunciation": "a-gar",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
           "english": "Hear",
           "translation": "dagáh (a-dagah)",
           "pronunciation": "da-gah",
@@ -873,23 +733,37 @@
           "audioFile": null
         },
         {
-          "english": "Sleep",
-          "translation": "urúd (a-urud)",
-          "pronunciation": "u-rud",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
-          "english": "Die",
-          "translation": "amút (a-amut)",
-          "pronunciation": "a-mut",
-          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
-          "audioFile": null
-        },
-        {
           "english": "Give",
           "translation": "sií (a-sii)",
           "pronunciation": "sii",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "magáh",
+          "pronunciation": "ma-gah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Speak",
+          "translation": "aldow (yidhi = say)",
+          "pronunciation": "ahl-dohw",
+          "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "abhúg (a-bhug)",
+          "pronunciation": "a-bhug",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "urúd (a-urud)",
+          "pronunciation": "u-rud",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
@@ -915,13 +789,6 @@
           "audioFile": null
         },
         {
-          "english": "To love / like",
-          "translation": "jecla",
-          "pronunciation": "jeh-lah",
-          "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
           "english": "To give",
           "translation": "sii",
           "pronunciation": "see",
@@ -929,51 +796,16 @@
           "audioFile": null
         },
         {
-          "english": "To cook",
-          "translation": "kari",
-          "pronunciation": "kah-ree",
+          "english": "To love / like",
+          "translation": "jecla",
+          "pronunciation": "jeh-lah",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
-          "audioFile": null
-        },
-        {
-          "english": "To herd / graze livestock",
-          "translation": "akhwiy",
-          "pronunciation": "akh-wiy",
-          "context": "Rendille Core Verbs — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "To milk a camel",
-          "translation": "maal",
-          "pronunciation": "maal",
-          "context": "Rendille Core Verbs — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "To migrate / load pack camels",
-          "translation": "guur",
-          "pronunciation": "guur",
-          "context": "Rendille Core Verbs — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "To draw water from a well",
-          "translation": "dhaam",
-          "pronunciation": "dhaam",
-          "context": "Rendille Core Verbs — Heine (1980)",
           "audioFile": null
         },
         {
           "english": "To pray / bless",
           "translation": "bari",
           "pronunciation": "ba-ri",
-          "context": "Rendille Core Verbs — Heine (1980)",
-          "audioFile": null
-        },
-        {
-          "english": "To build a nomadic house",
-          "translation": "dhis",
-          "pronunciation": "dhis",
           "context": "Rendille Core Verbs — Heine (1980)",
           "audioFile": null
         },
@@ -985,9 +817,51 @@
           "audioFile": null
         },
         {
+          "english": "To build a nomadic house",
+          "translation": "dhis",
+          "pronunciation": "dhis",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To draw water from a well",
+          "translation": "dhaam",
+          "pronunciation": "dhaam",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "kari",
+          "pronunciation": "kah-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To milk a camel",
+          "translation": "maal",
+          "pronunciation": "maal",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
           "english": "To heal / treat illness",
           "translation": "dawee",
           "pronunciation": "da-wee",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To herd / graze livestock",
+          "translation": "akhwiy",
+          "pronunciation": "akh-wiy",
+          "context": "Rendille Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To migrate / load pack camels",
+          "translation": "guur",
+          "pronunciation": "guur",
           "context": "Rendille Core Verbs — Heine (1980)",
           "audioFile": null
         }
@@ -998,13 +872,6 @@
       "name": "Adjectives, Qualities & Grammar",
       "icon": "✨",
       "entries": [
-        {
-          "english": "Small",
-          "translation": "yar (nyirakh = young/small)",
-          "pronunciation": "yahr / nyee-rahkh",
-          "context": "Hobley 1910 Rendille vocabulary",
-          "audioFile": null
-        },
         {
           "english": "Big",
           "translation": "buur (pl. buurbuur)",
@@ -1020,10 +887,24 @@
           "audioFile": null
         },
         {
+          "english": "Red",
+          "translation": "gududan",
+          "pronunciation": "goo-doo-dahn",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
           "english": "Good",
           "translation": "ki-wacan / hagagsan",
           "pronunciation": "kee-wah-ahn / hah-gahg-sahn",
           "context": "Rendille Cushitic vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "yar (nyirakh = young/small)",
+          "pronunciation": "yahr / nyee-rahkh",
+          "context": "Hobley 1910 Rendille vocabulary",
           "audioFile": null
         },
         {
@@ -1041,164 +922,143 @@
           "audioFile": null
         },
         {
-          "english": "Red",
-          "translation": "gududan",
-          "pronunciation": "goo-doo-dahn",
+          "english": "Who?",
+          "translation": "ayyo?",
+          "pronunciation": "ah-yoh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "mah?",
+          "pronunciation": "mah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "ani (at)",
+          "pronunciation": "ah-nee",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "innah (nah)",
+          "pronunciation": "een-nah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "us (he) / ice (she)",
+          "pronunciation": "oos / ee-cheh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "icho",
+          "pronunciation": "ee-choh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "ati",
+          "pronunciation": "ah-tee",
           "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         }
       ]
     },
     {
-      "id": "culture-history",
-      "name": "Culture, Clans & Historical Corpus",
-      "icon": "📜",
+      "id": "travel",
+      "name": "Travel, Directions & Navigation",
+      "icon": "🧭",
       "entries": [
         {
-          "english": "Auspicious camel-camp migration day in Rendille pastoral tradition",
-          "translation": "Gum (Friday)",
-          "pronunciation": "gum",
-          "context": "C. W. Hobley (1910, p. 159) — Rendille camel management",
+          "english": "Where?",
+          "translation": "inte?",
+          "pronunciation": "een-teh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         },
         {
-          "english": "Camel (Collective)",
-          "translation": "gaal (nyirakh = camel calf)",
-          "pronunciation": "gahl / nyee-rahkh",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "english": "Did the camels return safely?",
+          "translation": "Gaal nabad ma yimi?",
+          "pronunciation": "gaal na-bad ma yi-mi",
+          "context": "Rendille Greetings — Schlee (1979)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": [
+        {
+          "english": "Day",
+          "translation": "sáah",
+          "pronunciation": "saah",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
-          "english": "She-camel",
-          "translation": "ayyu",
-          "pronunciation": "ah-yoo",
-          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "english": "Year",
+          "translation": "gúu",
+          "pronunciation": "guu",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
-          "english": "Burden Camel",
-          "translation": "oor",
-          "pronunciation": "ohr",
-          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "english": "Today",
+          "translation": "maanta (saanta)",
+          "pronunciation": "mahn-tah",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         },
         {
-          "english": "Nomadic Homestead / Kraal",
-          "translation": "gob",
-          "pronunciation": "gohb",
-          "context": "Rendille clan settlement",
+          "english": "Night",
+          "translation": "ibéen",
+          "pronunciation": "i-been",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language",
           "audioFile": null
         },
         {
-          "english": "Sacred Ritual Camel Enclosure",
-          "translation": "naabo",
-          "pronunciation": "nah-boh",
-          "context": "Central assembly enclosure inside the Rendille gob",
+          "english": "Tomorrow",
+          "translation": "barri",
+          "pronunciation": "bahr-ree",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         },
         {
-          "english": "Donkey",
-          "translation": "eyhel",
-          "pronunciation": "ey-hehl",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "english": "Yesterday",
+          "translation": "shale",
+          "pronunciation": "shah-leh",
+          "context": "Verified comparative entry across Kenyan cushitic corpus",
           "audioFile": null
         },
         {
-          "english": "Horse",
-          "translation": "faras",
-          "pronunciation": "fah-rahs",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "english": "Rainy season (long rains)",
+          "translation": "guu",
+          "pronunciation": "guu",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
           "audioFile": null
         },
         {
-          "english": "Leopard",
-          "translation": "kabih",
-          "pronunciation": "kah-bee",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "english": "Long dry season",
+          "translation": "nabhai",
+          "pronunciation": "nab-hai",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
           "audioFile": null
         },
         {
-          "english": "Elephant",
-          "translation": "arbah",
-          "pronunciation": "ahr-bah",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Rhinoceros",
-          "translation": "worsis",
-          "pronunciation": "wohr-sees",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Ostrich",
-          "translation": "nyugul",
-          "pronunciation": "nyoo-gool",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Shield",
-          "translation": "gashan",
-          "pronunciation": "gah-shahn",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Sword / Knife",
-          "translation": "bilau",
-          "pronunciation": "bee-lah-oo",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Bow",
-          "translation": "biso",
-          "pronunciation": "bee-soh",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Arrow",
-          "translation": "laho",
-          "pronunciation": "lah-hoh",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Iron",
-          "translation": "birlab",
-          "pronunciation": "beer-lahb",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Cooking Pot",
-          "translation": "diri",
-          "pronunciation": "dee-ree",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "Tobacco",
-          "translation": "tumbo",
-          "pronunciation": "toom-boh",
-          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
-          "audioFile": null
-        },
-        {
-          "english": "First day of the week (fast and prayer day)",
-          "translation": "Hahat",
-          "pronunciation": "ha-hat",
-          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 166 — Randili calendar)",
-          "audioFile": null
-        },
-        {
-          "english": "Second day of the week (day of rest / Sabbath)",
-          "translation": "Hura hakhan (hura = sun)",
-          "pronunciation": "hu-ra hakh-an",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "english": "Short rains season",
+          "translation": "yer",
+          "pronunciation": "yer",
+          "context": "Rendille Seasonal Calendar — Heine (1980)",
           "audioFile": null
         },
         {
@@ -1216,9 +1076,205 @@
           "audioFile": null
         },
         {
-          "english": "Fifth day of the week (no-travel / camel-rest day)",
-          "translation": "Ser hakhan",
-          "pronunciation": "ser hakh-an",
+          "english": "Circumcised warrior age-set",
+          "translation": "her",
+          "pronunciation": "her",
+          "context": "Rendille Age-Set System — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Camel blessing / evening prayer assembly",
+          "translation": "waakh barid",
+          "pronunciation": "waakh ba-rid",
+          "context": "Rendille Oral & Ritual Tradition — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Seventh day of the week (day of the camel)",
+          "translation": "Sere gal",
+          "pronunciation": "se-re gal",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "First day of the week (fast and prayer day)",
+          "translation": "Hahat",
+          "pronunciation": "ha-hat",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 166 — Randili calendar)",
+          "audioFile": null
+        },
+        {
+          "english": "Almadó (new year & ritual cleansing festival)",
+          "translation": "Almadó",
+          "pronunciation": "almado",
+          "context": "Rendille Ritual Calendar — Schlee (1979)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Bow",
+          "translation": "biso",
+          "pronunciation": "bee-soh",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "birlab",
+          "pronunciation": "beer-lahb",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "faras",
+          "pronunciation": "fah-rahs",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "laho",
+          "pronunciation": "lah-hoh",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Donkey",
+          "translation": "eyhel",
+          "pronunciation": "ey-hehl",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "gashan",
+          "pronunciation": "gah-shahn",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "kabih",
+          "pronunciation": "kah-bee",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Ostrich",
+          "translation": "nyugul",
+          "pronunciation": "nyoo-gool",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "tumbo",
+          "pronunciation": "toom-boh",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "arbah",
+          "pronunciation": "ahr-bah",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "She-camel",
+          "translation": "ayyu",
+          "pronunciation": "ah-yoo",
+          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "worsis",
+          "pronunciation": "wohr-sees",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Cooking Pot",
+          "translation": "diri",
+          "pronunciation": "dee-ree",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Burden Camel",
+          "translation": "oor",
+          "pronunciation": "ohr",
+          "context": "Hobley 1910 & Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Sword / Knife",
+          "translation": "bilau",
+          "pronunciation": "bee-lah-oo",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Camel (Collective)",
+          "translation": "gaal (nyirakh = camel calf)",
+          "pronunciation": "gahl / nyee-rahkh",
+          "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+          "audioFile": null
+        },
+        {
+          "english": "Nomadic Homestead / Kraal",
+          "translation": "gob",
+          "pronunciation": "gohb",
+          "context": "Rendille clan settlement",
+          "audioFile": null
+        },
+        {
+          "english": "Camel bell carved from wood",
+          "translation": "koor",
+          "pronunciation": "koor",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Portable curved house poles",
+          "translation": "ulukh",
+          "pronunciation": "u-lukh",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Sacred Ritual Camel Enclosure",
+          "translation": "naabo",
+          "pronunciation": "nah-boh",
+          "context": "Central assembly enclosure inside the Rendille gob",
+          "audioFile": null
+        },
+        {
+          "english": "Woven camel-loading mat / thatch",
+          "translation": "daf",
+          "pronunciation": "daf",
+          "context": "Rendille Material Culture — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Sorriyo (sacred camel-blessing festival)",
+          "translation": "Sorriyo",
+          "pronunciation": "sor-ri-yo",
+          "context": "Rendille Ritual Calendar — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Second day of the week (day of rest / Sabbath)",
+          "translation": "Hura hakhan (hura = sun)",
+          "pronunciation": "hu-ra hakh-an",
           "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
           "audioFile": null
         },
@@ -1230,9 +1286,16 @@
           "audioFile": null
         },
         {
-          "english": "Seventh day of the week (day of the camel)",
-          "translation": "Sere gal",
-          "pronunciation": "se-re gal",
+          "english": "Dry season pasture camp (satellite youth camp)",
+          "translation": "foor",
+          "pronunciation": "foor",
+          "context": "Rendille Pastoral Ecology — Schlee (1979)",
+          "audioFile": null
+        },
+        {
+          "english": "Fifth day of the week (no-travel / camel-rest day)",
+          "translation": "Ser hakhan",
+          "pronunciation": "ser hakh-an",
           "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
           "audioFile": null
         },
@@ -1251,59 +1314,10 @@
           "audioFile": null
         },
         {
-          "english": "Camel bell carved from wood",
-          "translation": "koor",
-          "pronunciation": "koor",
-          "context": "Rendille Material Culture — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Woven camel-loading mat / thatch",
-          "translation": "daf",
-          "pronunciation": "daf",
-          "context": "Rendille Material Culture — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Portable curved house poles",
-          "translation": "ulukh",
-          "pronunciation": "u-lukh",
-          "context": "Rendille Material Culture — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Dry season pasture camp (satellite youth camp)",
-          "translation": "foor",
-          "pronunciation": "foor",
-          "context": "Rendille Pastoral Ecology — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Circumcised warrior age-set",
-          "translation": "her",
-          "pronunciation": "her",
-          "context": "Rendille Age-Set System — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Camel blessing / evening prayer assembly",
-          "translation": "waakh barid",
-          "pronunciation": "waakh ba-rid",
-          "context": "Rendille Oral & Ritual Tradition — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Sorriyo (sacred camel-blessing festival)",
-          "translation": "Sorriyo",
-          "pronunciation": "sor-ri-yo",
-          "context": "Rendille Ritual Calendar — Schlee (1979)",
-          "audioFile": null
-        },
-        {
-          "english": "Almadó (new year & ritual cleansing festival)",
-          "translation": "Almadó",
-          "pronunciation": "almado",
-          "context": "Rendille Ritual Calendar — Schlee (1979)",
+          "english": "Auspicious camel-camp migration day in Rendille pastoral tradition",
+          "translation": "Gum (Friday)",
+          "pronunciation": "gum",
+          "context": "C. W. Hobley (1910, p. 159) — Rendille camel management",
           "audioFile": null
         },
         {

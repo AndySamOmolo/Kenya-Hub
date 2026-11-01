@@ -25,6 +25,59 @@ function pickOne<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+/**
+ * Strip parenthetical/bracketed editorial notes (e.g. "(pl. ...)", "[...]", "{...}")
+ * while preserving the primary lexical or sentence form for interactive exercises.
+ */
+export function cleanExerciseText(text: string): string {
+  const stripped = text
+    .replace(/\[.*?\]/g, '')
+    .replace(/\{.*?\}/g, '')
+    .replace(/\(.*?\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return stripped || text.trim();
+}
+
+/**
+ * Extract the primary form (before '/' or ';') for tile/blank exercises
+ * while keeping full variants for acceptedAnswers.
+ */
+export function getPrimaryForm(text: string): string {
+  const cleaned = cleanExerciseText(text);
+  const primary = cleaned.split(/\s*[/;]\s*/)[0]?.trim();
+  return primary || cleaned;
+}
+
+/**
+ * Build a non-leaking hint for translate_to_target exercises.
+ * If word.pronunciation is distinct from the target word, return it;
+ * otherwise return a masked structural hint so the answer is never given away.
+ */
+function buildNonLeakingHint(word: WordPair): string {
+  const primaryTarget = getPrimaryForm(word.target);
+  const normTarget = primaryTarget
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+  const normPron = (word.pronunciation || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+
+  if (word.pronunciation && normPron && normPron !== normTarget) {
+    return word.pronunciation;
+  }
+
+  const clean = primaryTarget.replace(/[?!.,]/g, '').trim();
+  if (clean.length <= 2) {
+    return `${clean.length} letters`;
+  }
+  return `Starts with "${clean.slice(0, 2)}…" (${clean.length} letters)`;
+}
+
 function isValidExercise(exercise: Exercise): boolean {
   if (!exercise.prompt.trim()) return false;
 
@@ -88,30 +141,42 @@ function generateMultipleChoice(word: WordPair, allWords: WordPair[]): Exercise 
 }
 
 function generateTranslateToTarget(word: WordPair): Exercise {
+  const primaryTarget = getPrimaryForm(word.target).toLowerCase().replace(/[?!.,]/g, '').trim();
+  const variants = new Set<string>();
+  if (primaryTarget) variants.add(primaryTarget);
+  variants.add(word.target.toLowerCase().replace(/[?!.,]/g, '').trim());
+  for (const part of cleanExerciseText(word.target).split(/\s*[/;,]\s*/)) {
+    const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
+    if (cleaned) variants.add(cleaned);
+  }
+
   return {
     type: 'translate_to_target',
     prompt: `Translate to the target language:`,
-    correctAnswer: word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
-    acceptedAnswers: word.target
-      .split('/')
-      .map((answer) => answer.toLowerCase().replace(/[?!.,]/g, '').trim())
-      .filter(Boolean),
-    hint: word.pronunciation,
-    audioText: word.target,
+    correctAnswer: primaryTarget || word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
+    acceptedAnswers: Array.from(variants),
+    hint: buildNonLeakingHint(word),
+    audioText: getPrimaryForm(word.target),
     sourceWord: word,
   };
 }
 
 function generateTranslateToEnglish(word: WordPair): Exercise {
+  const primarySource = getPrimaryForm(word.source).toLowerCase().replace(/[?!.,]/g, '').trim();
+  const variants = new Set<string>();
+  if (primarySource) variants.add(primarySource);
+  variants.add(cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim());
+  for (const part of cleanExerciseText(word.source).split(/\s*[/;,]\s*/)) {
+    const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
+    if (cleaned) variants.add(cleaned);
+  }
+
   return {
     type: 'translate_to_english',
     prompt: `Translate to English:`,
-    correctAnswer: word.source.toLowerCase().replace(/[?!.,]/g, '').replace(/\(.*?\)/g, '').trim(),
-    acceptedAnswers: word.source
-      .split('/')
-      .map((answer) => answer.toLowerCase().replace(/[?!.,]/g, '').replace(/\(.*?\)/g, '').trim())
-      .filter(Boolean),
-    audioText: word.target,
+    correctAnswer: primarySource || cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim(),
+    acceptedAnswers: Array.from(variants),
+    audioText: getPrimaryForm(word.target),
     sourceWord: word,
   };
 }
@@ -133,8 +198,8 @@ function generateFillBlank(word: WordPair, allWords: WordPair[]): Exercise {
 function generateMatchPairs(words: WordPair[]): Exercise {
   const selected = pick(words, Math.min(5, words.length));
   const pairs = selected.map((w) => ({
-    left: w.target,
-    right: w.source.replace(/\(.*?\)/g, '').trim(),
+    left: getPrimaryForm(w.target),
+    right: getPrimaryForm(w.source),
   }));
 
   return {
@@ -147,11 +212,12 @@ function generateMatchPairs(words: WordPair[]): Exercise {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function generateListenType(word: WordPair): Exercise {
+  const primaryTarget = getPrimaryForm(word.target);
   return {
     type: 'listen_type',
     prompt: 'Type what you hear',
-    correctAnswer: word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
-    audioText: word.target,
+    correctAnswer: primaryTarget.toLowerCase().replace(/[?!.,]/g, '').trim(),
+    audioText: primaryTarget,
     sourceWord: word,
   };
 }
@@ -166,14 +232,14 @@ function generateTapWhatYouHear(word: WordPair, allWords: WordPair[]): Exercise 
     prompt: 'Tap what you hear',
     correctAnswer: word.target,
     options,
-    audioText: word.target,
+    audioText: getPrimaryForm(word.target),
     sourceWord: word,
   };
 }
 
 function generateWordBank(word: WordPair): Exercise {
-  // Split the source (English) into words and add distractors
-  const sourceWords = word.source.replace(/\(.*?\)/g, '').trim().split(/\s+/);
+  const cleanSource = getPrimaryForm(word.source).replace(/[?!.,]/g, '').trim();
+  const sourceWords = cleanSource.split(/\s+/).filter(Boolean);
   const distractorPool = ['the', 'a', 'an', 'is', 'it', 'to', 'of', 'my', 'not', 'very', 'big', 'small', 'he', 'she', 'we'];
   const distractors = pick(
     distractorPool.filter((d) => !sourceWords.map(s => s.toLowerCase()).includes(d)),
@@ -183,16 +249,17 @@ function generateWordBank(word: WordPair): Exercise {
 
   return {
     type: 'word_bank',
-    prompt: `Build the translation of "${word.target}"`,
-    correctAnswer: word.source.replace(/\(.*?\)/g, '').trim(),
+    prompt: `Build the translation of "${getPrimaryForm(word.target)}"`,
+    correctAnswer: cleanSource,
     wordTiles: tiles,
-    audioText: word.target,
+    audioText: getPrimaryForm(word.target),
     sourceWord: word,
   };
 }
 
 function generateReorder(word: WordPair): Exercise {
-  const targetWords = word.target.split(/\s+/);
+  const cleanTarget = getPrimaryForm(word.target).replace(/[?!.,]/g, '').trim();
+  const targetWords = cleanTarget.split(/\s+/).filter(Boolean);
   if (targetWords.length < 2) {
     // Fallback to multiple choice for single words
     return generateMultipleChoice(word, [word]);
@@ -200,8 +267,8 @@ function generateReorder(word: WordPair): Exercise {
 
   return {
     type: 'reorder',
-    prompt: `Put in order: "${word.source.replace(/\(.*?\)/g, '').trim()}"`,
-    correctAnswer: word.target,
+    prompt: `Put in order: "${getPrimaryForm(word.source)}"`,
+    correctAnswer: cleanTarget,
     wordTiles: shuffle(targetWords),
     sourceWord: word,
   };
@@ -215,8 +282,8 @@ const EXERCISE_WEIGHTS: { type: ExerciseType; weight: number; minWords: number }
   { type: 'translate_to_english', weight: 1.5, minWords: 1 },
   { type: 'fill_blank', weight: 2, minWords: 4 },
   { type: 'match_pairs', weight: 1, minWords: 4 },
-  { type: 'word_bank', weight: 1, minWords: 1 },
-  { type: 'reorder', weight: 1, minWords: 1 },
+  { type: 'word_bank', weight: 1.2, minWords: 1 },
+  { type: 'reorder', weight: 1.2, minWords: 1 },
 ];
 
 export function generateExercises(
@@ -224,7 +291,14 @@ export function generateExercises(
   count: number = EXERCISES_PER_LESSON
 ): Exercise[] {
   const allWords = [...skill.words];
-  const allItems = allWords;
+  const sentenceItems: WordPair[] = (skill.sentences || [])
+    .filter((s) => s.target && s.source && getPrimaryForm(s.target).split(/\s+/).length >= 2)
+    .map((s) => ({
+      target: s.target,
+      source: s.source,
+      pronunciation: s.pronunciation,
+    }));
+  const allItems = [...allWords, ...sentenceItems];
 
   const authoredExercises = (skill.authoredExercises || []).filter(isValidExercise);
   const exercises = authoredExercises.slice(0, count);
@@ -237,7 +311,7 @@ export function generateExercises(
   const eligible = EXERCISE_WEIGHTS.filter((e) => allItems.length >= e.minWords);
   const totalWeight = eligible.reduce((s, e) => s + e.weight, 0);
 
-  const maxAttempts = (count - exercises.length) * 3;
+  const maxAttempts = (count - exercises.length) * 4;
   let attempts = 0;
 
   while (exercises.length < count && attempts < maxAttempts) {
@@ -254,7 +328,11 @@ export function generateExercises(
       }
     }
 
-    const word = pickOne(allItems);
+    const pool =
+      (selectedType === 'reorder' || selectedType === 'word_bank') && sentenceItems.length > 0
+        ? [...sentenceItems, ...allWords]
+        : allItems;
+    const word = pickOne(pool);
 
     let exercise: Exercise | null = null;
     try {
@@ -272,15 +350,15 @@ export function generateExercises(
           exercise = generateFillBlank(word, allItems);
           break;
         case 'match_pairs':
-          exercise = generateMatchPairs(allItems);
+          exercise = generateMatchPairs(allWords.length >= 2 ? allWords : allItems);
           break;
         case 'word_bank':
-          if (word.source.split(/\s+/).length >= 2) {
+          if (getPrimaryForm(word.source).split(/\s+/).length >= 2) {
             exercise = generateWordBank(word);
           }
           break;
         case 'reorder':
-          if (word.target.split(/\s+/).length >= 2) {
+          if (getPrimaryForm(word.target).split(/\s+/).length >= 2) {
             exercise = generateReorder(word);
           }
           break;
@@ -322,14 +400,21 @@ export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
     s
       .normalize('NFKC')
       .toLowerCase()
+      .replace(/\(.*?\)/g, '')
       .replace(/[?!.,;:'"]/g, '')
       .replace(/\s+/g, ' ')
       .trim();
 
   const answer = normalize(userAnswer);
-  const accepted = [exercise.correctAnswer, ...(exercise.acceptedAnswers || [])]
-    .map(normalize)
-    .filter(Boolean);
+  if (!answer) return false;
+
+  const rawCandidates = [
+    exercise.correctAnswer,
+    cleanExerciseText(exercise.correctAnswer),
+    getPrimaryForm(exercise.correctAnswer),
+    ...(exercise.acceptedAnswers || []),
+  ];
+  const accepted = Array.from(new Set(rawCandidates.map(normalize).filter(Boolean)));
 
   if (accepted.includes(answer)) return true;
 
@@ -337,8 +422,8 @@ export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
   // a different short word as equivalent.
   return accepted.some((correct) => {
     const distance = levenshtein(correct, answer);
-    if (correct.length >= 8) return distance <= 2;
-    if (correct.length >= 5) return distance <= 1;
+    if (correct.length >= 10) return distance <= 2;
+    if (correct.length >= 6) return distance <= 1;
     return false;
   });
 }
@@ -360,4 +445,3 @@ function levenshtein(a: string, b: string): number {
   }
   return dp[m][n];
 }
-

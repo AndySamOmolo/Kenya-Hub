@@ -86,25 +86,25 @@ export const LUHYA_GRAMMAR_SECTIONS: LuhyaGrammarSection[] = [
   },
   {
     id: "luhya-johnston-1919-archaic-preprefixes",
-    title: "Archaic Disyllabic Preprefixes (Kumu-/Gumu-, Kimi-/Gimi-, Kama-/Gama-, Gugu-), -bωine Preterite & Affirmative -isi/-si Copula (Johnston 1919–1922)",
+    title: "Archaic Disyllabic Preprefixes (Kumu-/Gumu-, Kimi-/Gimi-, Kama-/Gama-, Gugu-), -boine Preterite & Affirmative -isi/-si Copula (Johnston 1919–1922)",
     summary: "Sir Harry Johnston (1919, Vol. I, pp. 7, 19, 73–85 & 1922, Vol. II, pp. 22–24, 225) demonstrated from #6 Lu-masaba and #6a Lu-konde how Bantu preprefixes and concords originated, alongside unique Sub-group A 5 verbal features.",
     content: `In *A Comparative Study of the Bantu and Semi-Bantu Languages* (Vol. I, 1919, pp. 7, 19, 73–85, 757; Vol. II, 1922, pp. 22–24, 225), Sir Harry H. Johnston analyses Sub-group A 5 (**#5 Lu-nyara, #5a Lu-waṅga / Lu-haṅga / Lu-kabarasi / Lu-rimi, #5b Lu-siṅga, #6 Lu-masaba / 'Ketosh', #6a Lu-konde / 'Muhasa'**):
 1. **Solution of the Bantu Preprefix Enigma via West Elgon (#6 Lu-masaba & #6a Lu-konde, Vol. I, pp. 7, 19, 85; Vol. II, pp. 22, 225)**:
    - Preserves full disyllabic preprefix + prefix combinations explaining why Classes 1, 3, 4, and 6 have *gu-, gi-, ga-* concords:
-   - **Class 1**: *Ωmu- / Umu- / Namu-* (concord *umu-, u-, yω-*); **Class 2**: **Baba- / Bana-** (*ba-*, e.g. *baba-ndu* 'people', *bab-ana* 'children'; superimposed honorific **Na- / pl. Bana-**).
-   - **Class 3**: **Kumu- / Gumu-** (*kumu-/gumu-, ku-/gu-*, e.g. *kumu-kωnω* 'arm', *kumu-rirω* 'fire', *gumu-ti* 'tree').
+   - **Class 1**: *Omu- / Umu- / Namu-* (concord *umu-, u-, yo-*); **Class 2**: **Baba- / Bana-** (*ba-*, e.g. *baba-ndu* 'people', *bab-ana* 'children'; superimposed honorific **Na- / pl. Bana-**).
+   - **Class 3**: **Kumu- / Gumu-** (*kumu-/gumu-, ku-/gu-*, e.g. *kumu-kono* 'arm', *kumu-riro* 'fire', *gumu-ti* 'tree').
    - **Class 4**: **Kimi- / Gimi-** (*kimi-/gimi-, ki-/gi-*, e.g. *kimi-ti* 'trees').
    - **Class 5**: *Li-, Ri-* (Errata p. x), *Di-, Iri-* (*li-, ri-*).
    - **Class 6**: **Kama- / Gama-** (*kama-/gama-, ka-/ga-*, e.g. *kama-lasiri* 'blood', *kama-futa* 'oil', *gama-tu* 'ears').
-   - **Classes 7, 8, 11, 14, 15, 18**: **Kiki-** (*kiki-ndu* 'thing'), **Bibi-** (*bibi-ndu* 'things'), **Lulu-** (*lulu-tsi* 'door', *lulu-imbω* 'song'), **Bubu-** (*bubu-iṅgω* 'bow', *bubu-nyasi* 'grass'), **Kuku-** (*kuku-tu* 'ear'), and **Class 18 Augmentative Gugu-** (*Gu-bwa / Gugu-bwa* 'great dog', pl. *Gimi-*).
+   - **Classes 7, 8, 11, 14, 15, 18**: **Kiki-** (*kiki-ndu* 'thing'), **Bibi-** (*bibi-ndu* 'things'), **Lulu-** (*lulu-tsi* 'door', *lulu-imbo* 'song'), **Bubu-** (*bubu-iṅgo* 'bow', *bubu-nyasi* 'grass'), **Kuku-** (*kuku-tu* 'ear'), and **Class 18 Augmentative Gugu-** (*Gu-bwa / Gugu-bwa* 'great dog', pl. *Gimi-*).
 2. **Preterite in *-ire / -ine*, Affirmative *-isi / -si* Copula & Negation (Vol. II, p. 24 & Vol. I, p. 757)**:
-   - **Preterite *-ire* & *-ine***: In *5–5a*, *-ine* fuses with *-bωna* ('to see') to form **-bωine** ('saw', from *-bωnine*).
+   - **Preterite *-ire* & *-ine***: In *5–5a*, *-ine* fuses with *-bona* ('to see') to form **-boine** ('saw', from *-bonine*).
    - **Affirmative *-isi / -si* ('is / was')**: Alongside *Ni-, -li, -ba, -liṅgye*, and *-du / -ru / -lu*, Sub-group A 5 uses **-isi / -si** *affirmatively* to mean 'is, was' (confirming Bleek's hypothesis on the *-ise* preterite).
-   - **Negation**: In *5–5b*, prefix **Si-** (*Si-, Sω-, Sa-, Siku-, Simu-, Siba-*) and suffixes **-ta, -tawe, -ṅga, -kata** ('neither'), plus negative verbs **-bula** ('to be lacking') and **Ωxu-buta** ('to be without', Vol. I, p. 757 Addenda). In *6–6a*, prefix **Hi- / Ha-**, infix **-k'- / -ka-**, and negative infinitive prefix **Bu-**.`,
+   - **Negation**: In *5–5b*, prefix **Si-** (*Si-, So-, Sa-, Siku-, Simu-, Siba-*) and suffixes **-ta, -tawe, -ṅga, -kata** ('neither'), plus negative verbs **-bula** ('to be lacking') and **Oxu-buta** ('to be without', Vol. I, p. 757 Addenda). In *6–6a*, prefix **Hi- / Ha-**, infix **-k'- / -ka-**, and negative infinitive prefix **Bu-**.`,
     examples: [
-      { luhya: "Kumu-kωnω (Gumu-χωnω) → Kimi-kωnω (Gama-χωnω) • Baba-ndu • Kama-lasiri • Gugu-bwa", english: "arm → arms • people • blood • big dog (Class 18 augmentative)", explanation: "Full disyllabic preprefixes in #6 Lu-masaba & #6a Lu-konde (Johnston 1919, Vol. I, p. 85 & Vol. II, p. 22)" },
-      { luhya: "-bωna → -bωine • -isi / -si (affirmative) • Si-...-tawe / Ωxu-buta", english: "to see → saw • is/was • not / to be without", explanation: "Inflexional preterite -ine, affirmative -si copula & negation (Johnston 1922, Vol. II, p. 24)" },
-      { luhya: "sasaba / sesaba (6), n-safu / mu-safu (7), kumu-rundu (10), li-tondω / li-kana (100), si-zumi (1,000)", english: "6, 7, 10, 100, 1,000", explanation: "Distinctive Sub-group A 5 numerals (Johnston 1919, Vol. I, p. 81 & Vol. II, p. 23)" }
+      { luhya: "Kumu-kono (Gumu-χono) → Kimi-kono (Gama-χono) • Baba-ndu • Kama-lasiri • Gugu-bwa", english: "arm → arms • people • blood • big dog (Class 18 augmentative)", explanation: "Full disyllabic preprefixes in #6 Lu-masaba & #6a Lu-konde (Johnston 1919, Vol. I, p. 85 & Vol. II, p. 22)" },
+      { luhya: "-bona → -boine • -isi / -si (affirmative) • Si-...-tawe / Oxu-buta", english: "to see → saw • is/was • not / to be without", explanation: "Inflexional preterite -ine, affirmative -si copula & negation (Johnston 1922, Vol. II, p. 24)" },
+      { luhya: "sasaba / sesaba (6), n-safu / mu-safu (7), kumu-rundu (10), li-tondo / li-kana (100), si-zumi (1,000)", english: "6, 7, 10, 100, 1,000", explanation: "Distinctive Sub-group A 5 numerals (Johnston 1919, Vol. I, p. 81 & Vol. II, p. 23)" }
     ]
   },
   {
@@ -137,11 +137,11 @@ export const LUHYA_GRAMMAR_SECTIONS: LuhyaGrammarSection[] = [
     "id": "luhya-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Luhya (Luyia))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Luhya (Luyia).",
-    "content": "1. **Archival & Open-Dataset Integration for Luhya (Luyia)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1903, Purvis 1909, Roscoe 1915, BFBS 1921, Stam 1929, Payne et al. 2016) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Luhya (Luyia)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1903, Purvis 1909, Roscoe 1915, BFBS 1921, Stam 1929, Payne et al. 2016) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *o, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
-        "luhya": "wañge = my • Ndzidza",
-        "english": "(my) • I come",
+        "luhya": "Omwana wange • Ndzidza",
+        "english": "My child • I come",
         "explanation": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukonde / Masaba)"
       },
       {

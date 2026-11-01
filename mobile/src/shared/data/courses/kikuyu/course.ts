@@ -55,49 +55,49 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Mwohoro",
             "source": "Salutation / How is the news?",
-            "pronunciation": "mwoh-hoh-roh",
+            "pronunciation": "mwo-ho-ro",
             "hint": "Hinde (1904) p. 67 salutation"
           },
           {
             "target": "Mwohoro mwēga",
             "source": "Good news / Fine",
-            "pronunciation": "mwoh-hoh-roh mweh-gah",
+            "pronunciation": "mwo-ho-ro mwe-ga",
             "hint": "Hinde (1904) p. 67 reply"
           },
           {
             "target": "Mwēga munnu",
             "source": "Very good / Very well",
-            "pronunciation": "mweh-gah moo-noo",
+            "pronunciation": "mwe-ga munnu",
             "hint": "Hinde (1904) p. 67 emphatic reply"
           },
           {
             "target": "Nimwega",
             "source": "I am good / well",
-            "pronunciation": "nee-mweh-gah",
+            "pronunciation": "nimwe-ga",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Uka haha",
             "source": "Come here",
-            "pronunciation": "oo-kah hah-hah",
+            "pronunciation": "uka ha-ha",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Rehe maii",
             "source": "Bring water",
-            "pronunciation": "reh-heh mah-ee",
+            "pronunciation": "re-he maii",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Reherria",
             "source": "Bring food",
-            "pronunciation": "reh-heh-rri-ah",
+            "pronunciation": "re-herria",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Aca",
             "source": "No",
-            "pronunciation": "ah-chah",
+            "pronunciation": "aca",
             "hint": "Core negative particle"
           }
         ],
@@ -109,10 +109,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Uka haha, rehe maii.",
             "source": "Come here, bring water."
-          },
-          {
-            "target": "Nimwega, reherria.",
-            "source": "I am well, bring food."
           }
         ],
         "authoredExercises": [
@@ -175,49 +171,49 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Wita gwatia?",
             "source": "What is your name?",
-            "pronunciation": "wee-tah gwah-ti-ah",
+            "pronunciation": "wi-ta gwa-tia",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Wathiiku?",
             "source": "Where are you going?",
-            "pronunciation": "wah-thee-koo",
+            "pronunciation": "wathii-ku",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ukwendakki?",
             "source": "What do you want?",
-            "pronunciation": "oo-kwen-dah-kee",
+            "pronunciation": "ukwendakki",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Umaku?",
             "source": "Where do you come from?",
-            "pronunciation": "oo-mah-koo",
+            "pronunciation": "u-ma-ku",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Uguikatia?",
             "source": "What are you doing?",
-            "pronunciation": "oo-goo-ee-kah-ti-ah",
+            "pronunciation": "u-gui-ka-tia",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Nikkigekki?",
             "source": "What is this?",
-            "pronunciation": "nee-kee-geh-kee",
+            "pronunciation": "nikki-gekki",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Meku maii?",
             "source": "Where is the water?",
-            "pronunciation": "meh-koo mah-ee",
+            "pronunciation": "me-ku maii",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ndiui",
             "source": "I do not know",
-            "pronunciation": "ndee-oo-ee",
+            "pronunciation": "ndiui",
             "hint": "Hinde (1904) p. 64 (also ndikumenya)"
           }
         ],
@@ -351,72 +347,76 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Imue",
             "source": "One (1)",
-            "pronunciation": "ee-mweh",
+            "pronunciation": "i-mue",
             "hint": "Hinde (1904) p. 62 (modern: ĩmwe)"
           },
           {
             "target": "Igiri",
             "source": "Two (2)",
-            "pronunciation": "ee-gee-ree",
+            "pronunciation": "i-gi-ri",
             "hint": "Hinde (1904) p. 62 (modern: igĩrĩ)"
           },
           {
             "target": "Ithatu",
             "source": "Three (3)",
-            "pronunciation": "ee-thah-too",
+            "pronunciation": "itha-tu",
             "hint": "Hinde (1904) p. 62 (modern: ithatũ)"
           },
           {
             "target": "Inya",
             "source": "Four (4)",
-            "pronunciation": "ee-nyah",
+            "pronunciation": "inya",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Ithanu",
             "source": "Five (5)",
-            "pronunciation": "ee-thah-noo",
+            "pronunciation": "itha-nu",
             "hint": "Hinde (1904) p. 62 (modern: ithano)"
           },
           {
             "target": "Thanthatu",
             "source": "Six (6)",
-            "pronunciation": "thahn-thah-too",
+            "pronunciation": "thantha-tu",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Muguanja",
             "source": "Seven (7)",
-            "pronunciation": "moo-gwah-njah",
+            "pronunciation": "mu-guanja",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Inyanya",
             "source": "Eight (8)",
-            "pronunciation": "ee-nyah-nyah",
+            "pronunciation": "inyanya",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Ikenda",
             "source": "Nine (9)",
-            "pronunciation": "ee-ken-dah",
+            "pronunciation": "i-kenda",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Ikumi",
             "source": "Ten (10)",
-            "pronunciation": "ee-koo-mee",
+            "pronunciation": "i-ku-mi",
             "hint": "Hinde (1904) p. 62"
           }
         ],
         "sentences": [
           {
-            "target": "Ikumi na imwe",
-            "source": "Eleven (ten and one)"
-          },
-          {
             "target": "Miti ithatu na mahiga inya",
             "source": "Three trees and four stones"
+          },
+          {
+            "target": "Nĩtũrathoma kiugo Imue ũmũthĩ.",
+            "source": "We are learning the word one today."
+          },
+          {
+            "target": "Mũthuri nĩatairie Igiri mũciĩ.",
+            "source": "The elder explained two at the homestead."
           }
         ],
         "authoredExercises": [
@@ -527,169 +527,132 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Mirongoiri",
             "source": "Twenty (20)",
-            "pronunciation": "mee-roh-ngoh-ee-ree",
+            "pronunciation": "mi-rongoi-ri",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Mirongo itatu",
             "source": "Thirty (30)",
-            "pronunciation": "mee-roh-ngoh ee-thah-too",
+            "pronunciation": "mi-rongo i-ta-tu",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Mirongo inya",
             "source": "Forty (40)",
-            "pronunciation": "mee-roh-ngoh ee-nyah",
+            "pronunciation": "mi-rongo inya",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Mirongo ithanu",
             "source": "Fifty (50)",
-            "pronunciation": "mee-roh-ngoh ee-thah-noo",
+            "pronunciation": "mi-rongo itha-nu",
             "hint": "Hinde (1904) p. 62"
           },
           {
             "target": "Igana",
             "source": "One hundred (100)",
-            "pronunciation": "ee-gah-nah",
+            "pronunciation": "i-ga-na",
             "hint": "Hinde (1904) p. 63"
           },
           {
             "target": "Kirrimue",
             "source": "Once (one time)",
-            "pronunciation": "kee-rree-mweh",
+            "pronunciation": "kirri-mue",
             "hint": "Hinde (1904) p. 63"
           },
           {
             "target": "Kēēri",
             "source": "Twice (two times)",
-            "pronunciation": "keh-eh-ree",
+            "pronunciation": "kee-ri",
             "hint": "Hinde (1904) p. 63"
           },
           {
             "target": "Kathatu",
             "source": "Thrice (three times)",
-            "pronunciation": "kah-thah-too",
+            "pronunciation": "katha-tu",
             "hint": "Hinde (1904) p. 63"
           },
           {
             "target": "Kuambirrira",
             "source": "First",
-            "pronunciation": "kwahm-bee-rree-rah",
+            "pronunciation": "kuambirri-ra",
             "hint": "Hinde (1904) p. 63"
           },
           {
-            "target": "Kurrigillia",
-            "source": "Last",
-            "pronunciation": "koo-rree-gee-lli-ah",
-            "hint": "Hinde (1904) p. 63"
+            "target": "imue",
+            "source": "One",
+            "pronunciation": "i-mue"
           }
         ],
         "sentences": [
           {
-            "target": "Mirongoiri na imue",
-            "source": "Twenty-one (twenty and one)"
+            "target": "Mirongoiri — Mirongo itatu",
+            "source": "Twenty — Thirty"
           },
           {
-            "target": "Kirrimue, kēēri, kathatu",
-            "source": "Once, twice, thrice"
+            "target": "Mirongo inya — Mirongo ithanu",
+            "source": "Forty — Fifty"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mirongoiri\" in Kikuyu?",
+            "prompt": "What does \"Mirongoiri\" mean in English?",
             "correctAnswer": "Twenty (20)",
             "options": [
-              "Thirty (30)",
-              "Forty (40)",
-              "Fifty (50)",
-              "Twenty (20)"
-            ],
-            "hint": "Hinde (1904) p. 62"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mirongo itatu\" in Kikuyu?",
-            "correctAnswer": "Thirty (30)",
-            "options": [
-              "Forty (40)",
-              "Fifty (50)",
-              "Thirty (30)",
-              "Twenty (20)"
-            ],
-            "hint": "Hinde (1904) p. 62"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mirongo inya\" in Kikuyu?",
-            "correctAnswer": "Forty (40)",
-            "options": [
-              "Fifty (50)",
-              "Forty (40)",
               "Twenty (20)",
-              "Thirty (30)"
+              "Thirty (30)",
+              "Forty (40)",
+              "Fifty (50)"
             ],
-            "hint": "Hinde (1904) p. 62"
+            "hint": "Core vocabulary in Tens (Mirongo), Hundreds & Multipliers"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Forty (40)\" in Kikuyu?",
-            "correctAnswer": "Mirongo inya",
-            "options": [
-              "Mirongo inya",
-              "Mirongoiri",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Thirty (30)\"",
+            "correctAnswer": "Mirongo itatu",
+            "acceptedAnswers": [
               "Mirongo itatu",
-              "Mirongo ithanu"
+              "Mirongo itatu"
             ],
-            "hint": "mee-roh-ngoh ee-nyah"
+            "hint": "Starts with \"Mi\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Fifty (50)\" in Kikuyu?",
-            "correctAnswer": "Mirongo ithanu",
-            "options": [
-              "Mirongoiri",
-              "Mirongo itatu",
-              "Mirongo inya",
-              "Mirongo ithanu"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Mirongo inya\"",
+            "correctAnswer": "Forty",
+            "acceptedAnswers": [
+              "Forty (40)",
+              "Forty"
             ],
-            "hint": "mee-roh-ngoh ee-thah-noo"
+            "hint": "Review Tens (Mirongo), Hundreds & Multipliers"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "Mirongoiri: Twenty (20)",
+            "prompt": "Match each expression from Tens (Mirongo), Hundreds & Multipliers with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "Mirongoiri",
-                "right": "Twenty (20)"
+                "right": "Twenty"
               },
               {
                 "left": "Mirongo itatu",
-                "right": "Thirty (30)"
+                "right": "Thirty"
               },
               {
                 "left": "Mirongo inya",
-                "right": "Forty (40)"
+                "right": "Forty"
               },
               {
                 "left": "Mirongo ithanu",
-                "right": "Fifty (50)"
+                "right": "Fifty"
+              },
+              {
+                "left": "Igana",
+                "right": "One hundred"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"One hundred (100)\": ___",
-            "correctAnswer": "Igana",
-            "options": [
-              "Mirongoiri",
-              "Mirongo itatu",
-              "Mirongo inya",
-              "Igana"
-            ],
-            "hint": "Hinde (1904) p. 63"
           }
         ]
       }
@@ -711,55 +674,55 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Baba wiitu",
             "source": "Our father",
-            "pronunciation": "bah-bah wee-too",
+            "pronunciation": "ba-ba wii-tu",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Nyina wiitu",
             "source": "Our mother",
-            "pronunciation": "nyee-nah wee-too",
+            "pronunciation": "nyi-na wii-tu",
             "hint": "Hinde (1904) p. 65 (also Mwaitu)"
           },
           {
             "target": "Mwana wakua",
             "source": "My child",
-            "pronunciation": "mwah-nah wah-kwah",
+            "pronunciation": "mwa-na wa-kua",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Siana siaku",
             "source": "Your children",
-            "pronunciation": "see-ah-nah see-ah-koo",
+            "pronunciation": "sia-na sia-ku",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Mundu (pl. Andu)",
             "source": "Person (pl. People)",
-            "pronunciation": "moo-ndoo / ah-ndoo",
+            "pronunciation": "mundu",
             "hint": "Hinde (1904) p. vi"
           },
           {
             "target": "Muka (pl. Aka)",
             "source": "Woman / Wife (pl. Women / Wives)",
-            "pronunciation": "moo-kah / ah-kah",
+            "pronunciation": "mu-ka",
             "hint": "Hinde (1904) p. vi"
           },
           {
             "target": "Mwanake (pl. Anake)",
             "source": "Warrior / Young man (pl. Warriors)",
-            "pronunciation": "mwah-nah-keh / ah-nah-keh",
+            "pronunciation": "mwa-na-ke",
             "hint": "Hobley (1922) p. 305"
           },
           {
             "target": "Muiritu (pl. Airitu)",
             "source": "Maiden / Unmarried girl",
-            "pronunciation": "moo-ee-ree-too",
+            "pronunciation": "mui-ri-tu",
             "hint": "Hobley (1922) p. 306"
           },
           {
             "target": "Mutumia (pl. Atumia)",
             "source": "Elder of the community",
-            "pronunciation": "moo-too-mee-ah",
+            "pronunciation": "mu-tu-mia",
             "hint": "Hobley (1922) p. 307"
           }
         ],
@@ -893,63 +856,59 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Nihūtie",
             "source": "I am hungry",
-            "pronunciation": "nee-hoo-ti-eh",
+            "pronunciation": "ni-hu-tie",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ningwenda irria",
             "source": "I want milk",
-            "pronunciation": "nee-ngwen-dah ee-rri-ah",
+            "pronunciation": "ningwenda irria",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ugika kurria?",
             "source": "Do you want to eat?",
-            "pronunciation": "oo-gee-kah koo-rri-ah",
+            "pronunciation": "u-gi-ka kurria",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Ngombe siake",
             "source": "His cows / cattle",
-            "pronunciation": "ngoh-mbeh see-ah-keh",
+            "pronunciation": "ngombe sia-ke",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Nyumba ninene",
             "source": "A big house",
-            "pronunciation": "nyoo-mbah nee-neh-neh",
+            "pronunciation": "nyumba ni-ne-ne",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Mwitzi wiitu",
             "source": "Our village / homestead",
-            "pronunciation": "mwee-tzee wee-too",
+            "pronunciation": "mwitzi wii-tu",
             "hint": "Hinde (1904) p. 65 (modern: mũciĩ witũ)"
           },
           {
             "target": "Akiamwaki",
             "source": "Make a fire",
-            "pronunciation": "ah-ki-ah mwah-kee",
+            "pronunciation": "a-kiamwa-ki",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Ruhiu rwega",
             "source": "A good knife / sword",
-            "pronunciation": "roo-hee-oo rweh-gah",
+            "pronunciation": "ru-hiu rwe-ga",
             "hint": "Hinde (1904) p. 66"
           },
           {
             "target": "Kiratu (pl. Iratu)",
             "source": "Sandal / shoe (pl. Sandals)",
-            "pronunciation": "kee-rah-too / ee-rah-too",
+            "pronunciation": "ki-ra-tu",
             "hint": "Hinde (1904) p. vii"
           }
         ],
         "sentences": [
-          {
-            "target": "Nihūtie; ningwenda irria.",
-            "source": "I am hungry; I want milk."
-          },
           {
             "target": "Akiamwaki nyumbani.",
             "source": "Make a fire in the house."
@@ -1075,76 +1034,76 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ningathi",
             "source": "I will go",
-            "pronunciation": "nee-ngah-thee",
+            "pronunciation": "ningathi",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ndikathie",
             "source": "I will not go",
-            "pronunciation": "ndee-kah-thee-eh",
+            "pronunciation": "ndi-kathie",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ndingihotta kuthi",
             "source": "I cannot go",
-            "pronunciation": "ndee-ngee-hoh-ttah koo-thee",
+            "pronunciation": "ndingi-hotta kuthi",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ningashōka",
             "source": "I will return",
-            "pronunciation": "nee-ngah-shoh-kah",
+            "pronunciation": "ningasho-ka",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ndikwenda",
             "source": "I do not want",
-            "pronunciation": "ndee-kwen-dah",
+            "pronunciation": "ndikwenda",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Ndionna",
             "source": "I do not see",
-            "pronunciation": "ndee-oh-nnah",
+            "pronunciation": "ndionna",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Nikurehe",
             "source": "I bring",
-            "pronunciation": "nee-koo-reh-heh",
+            "pronunciation": "ni-ku-re-he",
             "hint": "Hinde (1904) p. 64"
           },
           {
             "target": "Aniuka",
             "source": "He has come",
-            "pronunciation": "ah-nee-oo-kah",
+            "pronunciation": "a-niu-ka",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Udikuka",
             "source": "Do not come",
-            "pronunciation": "oo-dee-koo-kah",
+            "pronunciation": "u-di-ku-ka",
             "hint": "Hinde (1904) p. 66"
           },
           {
             "target": "Kirra",
             "source": "Be quiet",
-            "pronunciation": "kee-rrah",
+            "pronunciation": "kirra",
             "hint": "Hinde (1904) p. 65"
           }
         ],
         "sentences": [
           {
-            "target": "Ningathi; ningashōka.",
-            "source": "I will go; I will return."
-          },
-          {
             "target": "Ndikwenda kuthi; ndingihotta kuthi.",
             "source": "I do not want to go; I cannot go."
           },
           {
-            "target": "Aniuka; ithui kurehe.",
-            "source": "He has come; we bring."
+            "target": "Nĩtũrathoma kiugo Ningathi ũmũthĩ.",
+            "source": "We are learning the word i will go today."
+          },
+          {
+            "target": "Mũthuri nĩatairie Ndikathie mũciĩ.",
+            "source": "The elder explained i will not go at the homestead."
           }
         ],
         "authoredExercises": [
@@ -1261,159 +1220,118 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "tips": "Class 3/4 trees ('muti → miti'), Class 5/6 stones ('ihiga → mahiga'), and Class 7/8 mountains ('kirima → irima') illustrate the core inanimate noun classes.",
         "words": [
           {
-            "target": "Muti (pl. Miti)",
-            "source": "Tree (pl. Trees)",
-            "pronunciation": "moo-tee / mee-tee",
-            "hint": "Hinde (1904) p. vi"
-          },
-          {
-            "target": "Ihiga (pl. Mahiga)",
-            "source": "Stone (pl. Stones)",
-            "pronunciation": "ee-hee-gah / mah-hee-gah",
-            "hint": "Hinde (1904) p. vi"
-          },
-          {
-            "target": "Kirima (pl. Irima)",
-            "source": "Mountain / Hill (pl. Mountains)",
-            "pronunciation": "kee-ree-mah / ee-ree-mah",
-            "hint": "Hinde (1904) & Swadesh"
-          },
-          {
-            "target": "Ruui",
-            "source": "River / Stream",
-            "pronunciation": "roo-oo-ee",
-            "hint": "Hinde (1904) & Swadesh"
-          },
-          {
-            "target": "Mbura",
-            "source": "Rain",
-            "pronunciation": "mboo-rah",
-            "hint": "Hinde (1904) & Swadesh"
-          },
-          {
             "target": "Kiara (pl. Shiara)",
             "source": "Finger (pl. Fingers)",
-            "pronunciation": "kee-ah-rah / shee-ah-rah",
+            "pronunciation": "kia-ra",
             "hint": "Hinde (1904) p. vii"
           },
           {
             "target": "Uwoko wake",
             "source": "His hand / arm",
-            "pronunciation": "oo-woh-koh wah-keh",
+            "pronunciation": "u-wo-ko wa-ke",
             "hint": "Hinde (1904) p. 65"
           },
           {
             "target": "Mtueni",
             "source": "In the head",
-            "pronunciation": "mtoo-eh-nee",
+            "pronunciation": "mtue-ni",
             "hint": "Hinde (1904) p. 67"
+          },
+          {
+            "target": "kutu",
+            "source": "Ear",
+            "pronunciation": "ku-tu"
+          },
+          {
+            "target": "ritho, pl. meetho",
+            "source": "Eye",
+            "pronunciation": "ritho"
+          },
+          {
+            "target": "kuhuru",
+            "source": "Leg",
+            "pronunciation": "ku-hu-ru"
+          },
+          {
+            "target": "mbaru",
+            "source": "Rib",
+            "pronunciation": "mba-ru"
+          },
+          {
+            "target": "kiarra",
+            "source": "Toe",
+            "pronunciation": "kiarra"
           }
         ],
         "sentences": [
           {
-            "target": "Mti unwega; miti moni mijega.",
-            "source": "A good tree; good trees."
+            "target": "Kiara — Uwoko wake",
+            "source": "Finger — His hand"
           },
           {
-            "target": "Mitini na nyumbani.",
-            "source": "In the trees and in the house."
+            "target": "Mtueni — kutu",
+            "source": "In the head — Ear"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Muti (pl. Miti)\" in Kikuyu?",
-            "correctAnswer": "Tree (pl. Trees)",
+            "prompt": "What does \"Kiara\" mean in English?",
+            "correctAnswer": "Finger (pl. Fingers)",
             "options": [
-              "Stone (pl. Stones)",
-              "Mountain / Hill (pl. Mountains)",
-              "River / Stream",
-              "Tree (pl. Trees)"
+              "Finger (pl. Fingers)",
+              "His hand / arm",
+              "In the head",
+              "Ear"
             ],
-            "hint": "Hinde (1904) p. vi"
+            "hint": "Core vocabulary in Nature, Anatomy & Locatives"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ihiga (pl. Mahiga)\" in Kikuyu?",
-            "correctAnswer": "Stone (pl. Stones)",
-            "options": [
-              "Mountain / Hill (pl. Mountains)",
-              "River / Stream",
-              "Stone (pl. Stones)",
-              "Tree (pl. Trees)"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"His hand / arm\"",
+            "correctAnswer": "Uwoko wake",
+            "acceptedAnswers": [
+              "Uwoko wake",
+              "Uwoko wake"
             ],
-            "hint": "Hinde (1904) p. vi"
+            "hint": "Starts with \"Uw\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Kirima (pl. Irima)\" in Kikuyu?",
-            "correctAnswer": "Mountain / Hill (pl. Mountains)",
-            "options": [
-              "River / Stream",
-              "Mountain / Hill (pl. Mountains)",
-              "Tree (pl. Trees)",
-              "Stone (pl. Stones)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Mtueni\"",
+            "correctAnswer": "In the head",
+            "acceptedAnswers": [
+              "In the head",
+              "In the head"
             ],
-            "hint": "Hinde (1904) & Swadesh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Mountain / Hill (pl. Mountains)\" in Kikuyu?",
-            "correctAnswer": "Kirima (pl. Irima)",
-            "options": [
-              "Kirima (pl. Irima)",
-              "Muti (pl. Miti)",
-              "Ihiga (pl. Mahiga)",
-              "Ruui"
-            ],
-            "hint": "kee-ree-mah / ee-ree-mah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"River / Stream\" in Kikuyu?",
-            "correctAnswer": "Ruui",
-            "options": [
-              "Muti (pl. Miti)",
-              "Ihiga (pl. Mahiga)",
-              "Kirima (pl. Irima)",
-              "Ruui"
-            ],
-            "hint": "roo-oo-ee"
+            "hint": "Review Nature, Anatomy & Locatives"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "Muti (pl. Miti): Tree (pl. Trees)",
+            "prompt": "Match each expression from Nature, Anatomy & Locatives with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Muti (pl. Miti)",
-                "right": "Tree (pl. Trees)"
+                "left": "Kiara",
+                "right": "Finger"
               },
               {
-                "left": "Ihiga (pl. Mahiga)",
-                "right": "Stone (pl. Stones)"
+                "left": "Uwoko wake",
+                "right": "His hand"
               },
               {
-                "left": "Kirima (pl. Irima)",
-                "right": "Mountain / Hill (pl. Mountains)"
+                "left": "Mtueni",
+                "right": "In the head"
               },
               {
-                "left": "Ruui",
-                "right": "River / Stream"
+                "left": "kutu",
+                "right": "Ear"
+              },
+              {
+                "left": "ritho, pl. meetho",
+                "right": "Eye"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"Rain\": ___",
-            "correctAnswer": "Mbura",
-            "options": [
-              "Muti (pl. Miti)",
-              "Ihiga (pl. Mahiga)",
-              "Kirima (pl. Irima)",
-              "Mbura"
-            ],
-            "hint": "Hinde (1904) & Swadesh"
           }
         ]
       },
@@ -1425,165 +1343,121 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "tips": "C. W. Hobley's 1922 Glossary documents how Agĩkũyũ governance revolved around the 'Kiama' (council of elders), 'Chira' (deliberation/lawsuit), and the alternating generational moieties 'Maina' and 'Mwangi' who transferred authority at the 'Itwika' ceremony.",
         "words": [
           {
-            "target": "Ngai",
-            "source": "God, the Supreme Creator",
-            "pronunciation": "ngah-ee",
-            "hint": "Hobley (1922) p. 305"
-          },
-          {
-            "target": "Mugumo",
-            "source": "Sacred wild fig tree (shrine of sacrifice)",
-            "pronunciation": "moo-goo-moh",
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
-            "target": "Kiama",
-            "source": "Council of elders",
-            "pronunciation": "kee-ah-mah",
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
-            "target": "Chira",
-            "source": "Lawsuit / council deliberation",
-            "pronunciation": "chee-rah",
-            "hint": "Hobley (1922) p. 305"
-          },
-          {
-            "target": "Rika (pl. Marika)",
-            "source": "Circumcision age-set cohort",
-            "pronunciation": "ree-kah",
-            "hint": "Hobley (1922) p. 307"
-          },
-          {
-            "target": "Itwika",
-            "source": "Generational handing-over ceremony",
-            "pronunciation": "ee-twee-kah",
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
-            "target": "Muhiriga",
-            "source": "Primary clan",
-            "pronunciation": "moo-hee-ree-gah",
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
-            "target": "Mbari",
-            "source": "Sub-clan / ridge lineage",
-            "pronunciation": "mbah-ree",
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
             "target": "Mundu Mugo",
             "source": "Traditional healer and diviner",
-            "pronunciation": "moo-ndoo moo-goh",
+            "pronunciation": "mundu mu-go",
             "hint": "Hobley (1922) p. 306"
+          },
+          {
+            "target": "gũtũ (pl. matũ)",
+            "source": "Ear",
+            "pronunciation": "gutu"
+          },
+          {
+            "target": "riitho (pl. maitho)",
+            "source": "Eye",
+            "pronunciation": "riitho"
+          },
+          {
+            "target": "Guoko (pl. moko)",
+            "source": "Arm",
+            "pronunciation": "guoko"
+          },
+          {
+            "target": "Mromo",
+            "source": "Lip",
+            "pronunciation": "mro-mo"
+          },
+          {
+            "target": "Kiara kya kogoro",
+            "source": "Toe",
+            "pronunciation": "kia-ra kya ko-go-ro"
+          },
+          {
+            "target": "Kiero (Chiero)",
+            "source": "Hip",
+            "pronunciation": "kiero"
+          },
+          {
+            "target": "Koguru (Ma-)",
+            "source": "Leg",
+            "pronunciation": "koguru"
+          },
+          {
+            "target": "Robaru (Ma-). (Mbaru.)",
+            "source": "Rib",
+            "pronunciation": "robaru"
           }
         ],
         "sentences": [
           {
-            "target": "Atumia a Kiama na chira.",
-            "source": "The elders of the Council and the deliberation."
+            "target": "Mundu Mugo — gũtũ",
+            "source": "Traditional healer and diviner — Ear"
           },
           {
-            "target": "Mugumo ni muti wa Ngai.",
-            "source": "The Mugumo fig is the sacred tree of God."
+            "target": "riitho — Guoko",
+            "source": "Eye — Arm"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ngai\" in Kikuyu?",
-            "correctAnswer": "God, the Supreme Creator",
+            "prompt": "What does \"Mundu Mugo\" mean in English?",
+            "correctAnswer": "Traditional healer and diviner",
             "options": [
-              "Sacred wild fig tree (shrine of sacrifice)",
-              "Council of elders",
-              "Lawsuit / council deliberation",
-              "God, the Supreme Creator"
+              "Traditional healer and diviner",
+              "Ear",
+              "Eye",
+              "Arm"
             ],
-            "hint": "Hobley (1922) p. 305"
+            "hint": "Core vocabulary in Agĩkũyũ Council, Age-Sets & Sacred Heritage"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mugumo\" in Kikuyu?",
-            "correctAnswer": "Sacred wild fig tree (shrine of sacrifice)",
-            "options": [
-              "Council of elders",
-              "Lawsuit / council deliberation",
-              "Sacred wild fig tree (shrine of sacrifice)",
-              "God, the Supreme Creator"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Ear\"",
+            "correctAnswer": "gũtũ",
+            "acceptedAnswers": [
+              "gũtũ (pl. matũ)",
+              "gũtũ"
             ],
-            "hint": "Hobley (1922) p. 306"
+            "hint": "Starts with \"gũ\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Kiama\" in Kikuyu?",
-            "correctAnswer": "Council of elders",
-            "options": [
-              "Lawsuit / council deliberation",
-              "Council of elders",
-              "God, the Supreme Creator",
-              "Sacred wild fig tree (shrine of sacrifice)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"riitho\"",
+            "correctAnswer": "Eye",
+            "acceptedAnswers": [
+              "Eye",
+              "Eye"
             ],
-            "hint": "Hobley (1922) p. 306"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Council of elders\" in Kikuyu?",
-            "correctAnswer": "Kiama",
-            "options": [
-              "Kiama",
-              "Ngai",
-              "Mugumo",
-              "Chira"
-            ],
-            "hint": "kee-ah-mah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Lawsuit / council deliberation\" in Kikuyu?",
-            "correctAnswer": "Chira",
-            "options": [
-              "Ngai",
-              "Mugumo",
-              "Kiama",
-              "Chira"
-            ],
-            "hint": "chee-rah"
+            "hint": "Review Agĩkũyũ Council, Age-Sets & Sacred Heritage"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "Ngai: God, the Supreme Creator",
+            "prompt": "Match each expression from Agĩkũyũ Council, Age-Sets & Sacred Heritage with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "Ngai",
-                "right": "God, the Supreme Creator"
+                "left": "Mundu Mugo",
+                "right": "Traditional healer and diviner"
               },
               {
-                "left": "Mugumo",
-                "right": "Sacred wild fig tree (shrine of sacrifice)"
+                "left": "gũtũ",
+                "right": "Ear"
               },
               {
-                "left": "Kiama",
-                "right": "Council of elders"
+                "left": "riitho",
+                "right": "Eye"
               },
               {
-                "left": "Chira",
-                "right": "Lawsuit / council deliberation"
+                "left": "Guoko",
+                "right": "Arm"
+              },
+              {
+                "left": "Mromo",
+                "right": "Lip"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"Circumcision age-set cohort\": ___",
-            "correctAnswer": "Rika (pl. Marika)",
-            "options": [
-              "Ngai",
-              "Mugumo",
-              "Kiama",
-              "Rika (pl. Marika)"
-            ],
-            "hint": "Hobley (1922) p. 307"
           }
         ]
       }
@@ -1604,165 +1478,123 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
-            "target": "mũturi (pl. aturi)",
-            "source": "Blacksmith",
-            "pronunciation": "moo-too-ree",
-            "hint": "Routledge 1910 pp. 79–96 & Hobley 1922"
+            "target": "muundu, pl. andu",
+            "source": "Man"
           },
           {
-            "target": "injingirri (small)",
-            "source": "bell (warrior's)",
-            "pronunciation": "injingirri (small)",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "target": "Mwana",
+            "source": "Son"
           },
           {
-            "target": "ngongu",
-            "source": "blind person",
-            "pronunciation": "ngongu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "target": "karegu",
+            "source": "Girl"
           },
           {
             "target": "kahi",
             "source": "boy",
-            "pronunciation": "kahi",
+            "pronunciation": "ka-hi",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "mundu murume",
             "source": "boy (circumcised)",
-            "pronunciation": "mundu murume",
+            "pronunciation": "mundu mu-ru-me",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "murāta",
             "source": "brother",
-            "pronunciation": "murāta",
+            "pronunciation": "mu-ra-ta",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "mthoni",
             "source": "brother in law",
-            "pronunciation": "mthoni",
+            "pronunciation": "mtho-ni",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "muthamaki",
             "source": "chief",
-            "pronunciation": "muthamaki",
+            "pronunciation": "mutha-ma-ki",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kana, pl. twana",
             "source": "child",
-            "pronunciation": "kana, pl. twana",
+            "pronunciation": "ka-na",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ],
         "sentences": [
           {
-            "target": "mundu murume",
-            "source": "boy (circumcised)"
+            "target": "muundu, pl. andu — Mwana",
+            "source": "Man — Son"
           },
           {
-            "target": "kana, pl. twana",
-            "source": "child"
+            "target": "karegu — kahi",
+            "source": "Girl — boy"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mũturi (pl. aturi)\" in Kikuyu?",
-            "correctAnswer": "Blacksmith",
+            "prompt": "What does \"muundu, pl. andu\" mean in English?",
+            "correctAnswer": "Man",
             "options": [
-              "bell (warrior's)",
-              "blind person",
-              "boy",
-              "Blacksmith"
+              "Man",
+              "Son",
+              "Girl",
+              "boy"
             ],
-            "hint": "Routledge 1910 pp. 79–96 & Hobley 1922"
+            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"injingirri (small)\" in Kikuyu?",
-            "correctAnswer": "bell (warrior's)",
-            "options": [
-              "blind person",
-              "boy",
-              "bell (warrior's)",
-              "Blacksmith"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Son\"",
+            "correctAnswer": "Mwana",
+            "acceptedAnswers": [
+              "Mwana",
+              "Mwana"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Starts with \"Mw\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ngongu\" in Kikuyu?",
-            "correctAnswer": "blind person",
-            "options": [
-              "boy",
-              "blind person",
-              "Blacksmith",
-              "bell (warrior's)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"karegu\"",
+            "correctAnswer": "Girl",
+            "acceptedAnswers": [
+              "Girl",
+              "Girl"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"blind person\" in Kikuyu?",
-            "correctAnswer": "ngongu",
-            "options": [
-              "ngongu",
-              "mũturi (pl. aturi)",
-              "injingirri (small)",
-              "kahi"
-            ],
-            "hint": "ngongu"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"boy\" in Kikuyu?",
-            "correctAnswer": "kahi",
-            "options": [
-              "mũturi (pl. aturi)",
-              "injingirri (small)",
-              "ngongu",
-              "kahi"
-            ],
-            "hint": "kahi"
+            "hint": "Review Kinship Terms, Elders & Household Roles"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "mũturi (pl. aturi): Blacksmith",
+            "prompt": "Match each expression from Kinship Terms, Elders & Household Roles with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mũturi (pl. aturi)",
-                "right": "Blacksmith"
+                "left": "muundu, pl. andu",
+                "right": "Man"
               },
               {
-                "left": "injingirri (small)",
-                "right": "bell (warrior's)"
+                "left": "Mwana",
+                "right": "Son"
               },
               {
-                "left": "ngongu",
-                "right": "blind person"
+                "left": "karegu",
+                "right": "Girl"
               },
               {
                 "left": "kahi",
                 "right": "boy"
+              },
+              {
+                "left": "mundu murume",
+                "right": "boy"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"boy (circumcised)\": ___",
-            "correctAnswer": "mundu murume",
-            "options": [
-              "mũturi (pl. aturi)",
-              "injingirri (small)",
-              "ngongu",
-              "mundu murume"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       },
@@ -1777,171 +1609,126 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "kukigamma",
             "source": "crawl (a man)",
-            "pronunciation": "kukigamma",
+            "pronunciation": "ku-ki-gamma",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "muthuri, pl. athuri",
             "source": "elder",
-            "pronunciation": "muthuri, pl. athuri",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "mugitti, pl. agitti",
-            "source": "enemy",
-            "pronunciation": "mugitti, pl. agitti",
+            "pronunciation": "muthu-ri",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "baba",
             "source": "father",
-            "pronunciation": "baba",
+            "pronunciation": "ba-ba",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "wathiomo",
             "source": "father-in-law",
-            "pronunciation": "wathiomo",
+            "pronunciation": "wathio-mo",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "karegu",
             "source": "girl",
-            "pronunciation": "karegu",
+            "pronunciation": "ka-re-gu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "murume wakwa",
             "source": "husband",
-            "pronunciation": "murume wakwa",
+            "pronunciation": "mu-ru-me wakwa",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "muundu, pl. andu",
             "source": "man",
-            "pronunciation": "muundu, pl. andu",
+            "pronunciation": "muundu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "maiitu",
             "source": "mother",
-            "pronunciation": "maiitu",
+            "pronunciation": "maii-tu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "Mwana",
+            "source": "Son",
+            "pronunciation": "mwa-na"
           }
         ],
         "sentences": [
           {
-            "target": "muthuri, pl. athuri",
-            "source": "elder"
+            "target": "kukigamma — muthuri, pl. athuri",
+            "source": "crawl — elder"
           },
           {
-            "target": "mugitti, pl. agitti",
-            "source": "enemy"
-          },
-          {
-            "target": "murume wakwa",
-            "source": "husband"
-          },
-          {
-            "target": "muundu, pl. andu",
-            "source": "man"
+            "target": "baba — wathiomo",
+            "source": "father — father-in-law"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kukigamma\" in Kikuyu?",
+            "prompt": "What does \"kukigamma\" mean in English?",
             "correctAnswer": "crawl (a man)",
             "options": [
-              "elder",
-              "enemy",
-              "father",
-              "crawl (a man)"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"muthuri, pl. athuri\" in Kikuyu?",
-            "correctAnswer": "elder",
-            "options": [
-              "enemy",
-              "father",
-              "elder",
-              "crawl (a man)"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mugitti, pl. agitti\" in Kikuyu?",
-            "correctAnswer": "enemy",
-            "options": [
-              "father",
-              "enemy",
               "crawl (a man)",
-              "elder"
+              "elder",
+              "father",
+              "father-in-law"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Clans, Marriage & Community Life"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"enemy\" in Kikuyu?",
-            "correctAnswer": "mugitti, pl. agitti",
-            "options": [
-              "mugitti, pl. agitti",
-              "kukigamma",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"elder\"",
+            "correctAnswer": "muthuri, pl. athuri",
+            "acceptedAnswers": [
               "muthuri, pl. athuri",
-              "baba"
+              "muthuri, pl. athuri"
             ],
-            "hint": "mugitti, pl. agitti"
+            "hint": "Starts with \"mu\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"father\" in Kikuyu?",
-            "correctAnswer": "baba",
-            "options": [
-              "kukigamma",
-              "muthuri, pl. athuri",
-              "mugitti, pl. agitti",
-              "baba"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"baba\"",
+            "correctAnswer": "father",
+            "acceptedAnswers": [
+              "father",
+              "father"
             ],
-            "hint": "baba"
+            "hint": "Review Clans, Marriage & Community Life"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "kukigamma: crawl (a man)",
+            "prompt": "Match each expression from Clans, Marriage & Community Life with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "kukigamma",
-                "right": "crawl (a man)"
+                "right": "crawl"
               },
               {
                 "left": "muthuri, pl. athuri",
                 "right": "elder"
               },
               {
-                "left": "mugitti, pl. agitti",
-                "right": "enemy"
-              },
-              {
                 "left": "baba",
                 "right": "father"
+              },
+              {
+                "left": "wathiomo",
+                "right": "father-in-law"
+              },
+              {
+                "left": "karegu",
+                "right": "girl"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"father-in-law\": ___",
-            "correctAnswer": "wathiomo",
-            "options": [
-              "kukigamma",
-              "muthuri, pl. athuri",
-              "mugitti, pl. agitti",
-              "wathiomo"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       }
@@ -1964,32 +1751,28 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ithathatũ",
             "source": "Six",
-            "pronunciation": "ee-thah-thah-too",
+            "pronunciation": "ithatha-tu",
             "hint": "Hinde: thanthatu"
           },
           {
             "target": "-õthe",
             "source": "all",
-            "pronunciation": "-õthe",
+            "pronunciation": "othe",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "ithiwi õthe",
             "source": "all of us",
-            "pronunciation": "ithiwi õthe",
+            "pronunciation": "ithi-wi othe",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
-            "target": "-wēga",
-            "source": "all right",
-            "pronunciation": "-wēga",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "target": "imue",
+            "source": "One"
           },
           {
-            "target": "rimue",
-            "source": "at once",
-            "pronunciation": "rimue",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "target": "ikumi",
+            "source": "Ten"
           },
           {
             "target": "andu ere",
@@ -2000,7 +1783,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "kutara",
             "source": "count",
-            "pronunciation": "kutara",
+            "pronunciation": "ku-ta-ra",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2018,79 +1801,51 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ithiwi õthe",
-            "source": "all of us"
+            "target": "Ithathatũ — -õthe",
+            "source": "Six — all"
           },
           {
-            "target": "andu ere",
-            "source": "both"
+            "target": "ithiwi õthe — imue",
+            "source": "all of us — One"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ithathatũ\" in Kikuyu?",
+            "prompt": "What does \"Ithathatũ\" mean in English?",
             "correctAnswer": "Six",
             "options": [
-              "all",
-              "all of us",
-              "all right",
-              "Six"
-            ],
-            "hint": "Hinde: thanthatu"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"-õthe\" in Kikuyu?",
-            "correctAnswer": "all",
-            "options": [
-              "all of us",
-              "all right",
-              "all",
-              "Six"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ithiwi õthe\" in Kikuyu?",
-            "correctAnswer": "all of us",
-            "options": [
-              "all right",
-              "all of us",
               "Six",
-              "all"
+              "all",
+              "all of us",
+              "One"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Cardinal & Ordinal Numerals"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"all of us\" in Kikuyu?",
-            "correctAnswer": "ithiwi õthe",
-            "options": [
-              "ithiwi õthe",
-              "Ithathatũ",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"all\"",
+            "correctAnswer": "-õthe",
+            "acceptedAnswers": [
               "-õthe",
-              "-wēga"
+              "-õthe"
             ],
-            "hint": "ithiwi õthe"
+            "hint": "Starts with \"-õ\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"all right\" in Kikuyu?",
-            "correctAnswer": "-wēga",
-            "options": [
-              "Ithathatũ",
-              "-õthe",
-              "ithiwi õthe",
-              "-wēga"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"ithiwi õthe\"",
+            "correctAnswer": "all of us",
+            "acceptedAnswers": [
+              "all of us",
+              "all of us"
             ],
-            "hint": "-wēga"
+            "hint": "Review Cardinal & Ordinal Numerals"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "Ithathatũ: Six",
+            "prompt": "Match each expression from Cardinal & Ordinal Numerals with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "Ithathatũ",
@@ -2105,22 +1860,14 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "all of us"
               },
               {
-                "left": "-wēga",
-                "right": "all right"
+                "left": "imue",
+                "right": "One"
+              },
+              {
+                "left": "ikumi",
+                "right": "Ten"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"at once\": ___",
-            "correctAnswer": "rimue",
-            "options": [
-              "Ithathatũ",
-              "-õthe",
-              "ithiwi õthe",
-              "rimue"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       },
@@ -2135,31 +1882,31 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "mirongoiri na itanu",
             "source": "fifty",
-            "pronunciation": "mirongoiri na itanu",
+            "pronunciation": "mi-rongoi-ri na i-ta-nu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kiarra ki morroto",
             "source": "finger (first)",
-            "pronunciation": "kiarra ki morroto",
+            "pronunciation": "kiarra ki morro-to",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "ikinya or kuambirrira",
             "source": "first",
-            "pronunciation": "ikinya or kuambirrira",
+            "pronunciation": "i-kinya or kuambirri-ra",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "katanu",
             "source": "five times",
-            "pronunciation": "katanu",
+            "pronunciation": "ka-ta-nu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "mirongo iri na ena",
             "source": "forty",
-            "pronunciation": "mirongo iri na ena",
+            "pronunciation": "mi-rongo iri na ena",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2177,7 +1924,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "nichigana",
             "source": "how many",
-            "pronunciation": "nichigana",
+            "pronunciation": "nichi-ga-na",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2189,20 +1936,12 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mirongoiri na itanu",
-            "source": "fifty"
+            "target": "Nĩtũrathoma kiugo mirongoiri na itanu ũmũthĩ.",
+            "source": "We are learning the word fifty today."
           },
           {
-            "target": "kiarra ki morroto",
-            "source": "finger (first)"
-          },
-          {
-            "target": "ikinya or kuambirrira",
-            "source": "first"
-          },
-          {
-            "target": "mirongo iri na ena",
-            "source": "forty"
+            "target": "Mũthuri nĩatairie kiarra ki morroto mũciĩ.",
+            "source": "The elder explained finger at the homestead."
           }
         ],
         "authoredExercises": [
@@ -2322,43 +2061,43 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "marigu",
             "source": "banana",
-            "pronunciation": "marigu",
+            "pronunciation": "ma-ri-gu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kutziara",
             "source": "bear fruit (to)",
-            "pronunciation": "kutziara",
+            "pronunciation": "kutzia-ra",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "enjohi",
             "source": "beer (native)",
-            "pronunciation": "enjohi",
+            "pronunciation": "enjo-hi",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "-nyungu",
             "source": "bitter",
-            "pronunciation": "-nyungu",
+            "pronunciation": "nyungu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "ngorrono",
             "source": "butter",
-            "pronunciation": "ngorrono",
+            "pronunciation": "ngorro-no",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "maguta",
             "source": "butter (clarified)",
-            "pronunciation": "maguta",
+            "pronunciation": "ma-gu-ta",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "uria",
             "source": "butter milk",
-            "pronunciation": "uria",
+            "pronunciation": "u-ria",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2374,7 +2113,16 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Nĩtũrathoma kiugo marigu ũmũthĩ.",
+            "source": "We are learning the word banana today."
+          },
+          {
+            "target": "Mũthuri nĩatairie kutziara mũciĩ.",
+            "source": "The elder explained bear fruit at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2484,7 +2232,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "mbariki",
             "source": "castor-oil tree",
-            "pronunciation": "mbariki",
+            "pronunciation": "mba-ri-ki",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2494,127 +2242,93 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
-            "target": "kurritatha gummia",
-            "source": "chew (the cud)",
-            "pronunciation": "kurritatha gummia",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
             "target": "kuruga",
             "source": "cook",
-            "pronunciation": "kuruga",
+            "pronunciation": "ku-ru-ga",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kumea",
             "source": "drink",
-            "pronunciation": "kumea",
+            "pronunciation": "ku-mea",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kunigurria",
             "source": "eat",
-            "pronunciation": "kunigurria",
+            "pronunciation": "ku-ni-gurria",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "itumbi, pl. matumbi",
             "source": "egg",
-            "pronunciation": "itumbi, pl. matumbi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "ngaragu",
-            "source": "famine",
-            "pronunciation": "ngaragu",
+            "pronunciation": "i-tumbi",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "mutŭ",
             "source": "flour",
-            "pronunciation": "mutŭ",
+            "pronunciation": "mu-tu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "maguta",
+            "source": "Oil",
+            "pronunciation": "ma-gu-ta"
+          },
+          {
+            "target": "hithi",
+            "source": "Raw",
+            "pronunciation": "hithi"
           }
         ],
         "sentences": [
           {
-            "target": "kurri ambakki",
-            "source": "chew (tobacco)"
+            "target": "mbariki — kurri ambakki",
+            "source": "castor-oil tree — chew"
           },
           {
-            "target": "kurritatha gummia",
-            "source": "chew (the cud)"
-          },
-          {
-            "target": "itumbi, pl. matumbi",
-            "source": "egg"
+            "target": "kuruga — kumea",
+            "source": "cook — drink"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mbariki\" in Kikuyu?",
+            "prompt": "What does \"mbariki\" mean in English?",
             "correctAnswer": "castor-oil tree",
             "options": [
-              "chew (tobacco)",
-              "chew (the cud)",
-              "cook",
-              "castor-oil tree"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kurri ambakki\" in Kikuyu?",
-            "correctAnswer": "chew (tobacco)",
-            "options": [
-              "chew (the cud)",
-              "cook",
-              "chew (tobacco)",
-              "castor-oil tree"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kurritatha gummia\" in Kikuyu?",
-            "correctAnswer": "chew (the cud)",
-            "options": [
-              "cook",
-              "chew (the cud)",
               "castor-oil tree",
-              "chew (tobacco)"
+              "chew (tobacco)",
+              "cook",
+              "drink"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"chew (the cud)\" in Kikuyu?",
-            "correctAnswer": "kurritatha gummia",
-            "options": [
-              "kurritatha gummia",
-              "mbariki",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"chew (tobacco)\"",
+            "correctAnswer": "kurri ambakki",
+            "acceptedAnswers": [
               "kurri ambakki",
-              "kuruga"
+              "kurri ambakki"
             ],
-            "hint": "kurritatha gummia"
+            "hint": "Starts with \"ku\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"cook\" in Kikuyu?",
-            "correctAnswer": "kuruga",
-            "options": [
-              "mbariki",
-              "kurri ambakki",
-              "kurritatha gummia",
-              "kuruga"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"kuruga\"",
+            "correctAnswer": "cook",
+            "acceptedAnswers": [
+              "cook",
+              "cook"
             ],
-            "hint": "kuruga"
+            "hint": "Review Crops, Cultivation & Pastoral Livestock"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "mbariki: castor-oil tree",
+            "prompt": "Match each expression from Crops, Cultivation & Pastoral Livestock with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "mbariki",
@@ -2622,29 +2336,21 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "kurri ambakki",
-                "right": "chew (tobacco)"
-              },
-              {
-                "left": "kurritatha gummia",
-                "right": "chew (the cud)"
+                "right": "chew"
               },
               {
                 "left": "kuruga",
                 "right": "cook"
+              },
+              {
+                "left": "kumea",
+                "right": "drink"
+              },
+              {
+                "left": "kunigurria",
+                "right": "eat"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"drink\": ___",
-            "correctAnswer": "kumea",
-            "options": [
-              "mbariki",
-              "kurri ambakki",
-              "kurritatha gummia",
-              "kumea"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       }
@@ -2667,31 +2373,25 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "hiti",
             "source": "Hyena",
-            "pronunciation": "hee-tee",
+            "pronunciation": "hi-ti",
             "hint": "Hémery 1903, McGregor 1904 & Routledge 1910"
           },
           {
             "target": "mũgumo (pl. mĩgumo)",
             "source": "Sacred Fig Tree",
-            "pronunciation": "moo-goo-moh",
+            "pronunciation": "mu-gu-mo",
             "hint": "Routledge 1910 & Hobley 1922 sacred shrine tree"
-          },
-          {
-            "target": "mialaho",
-            "source": "afternoon",
-            "pronunciation": "mialaho",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "thigirriri",
             "source": "ant (small black)",
-            "pronunciation": "thigirriri",
+            "pronunciation": "thi-girri-ri",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "tharaku",
             "source": "ant (red)",
-            "pronunciation": "tharaku",
+            "pronunciation": "tha-ra-ku",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2703,109 +2403,94 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "irõõnga",
             "source": "antelope",
-            "pronunciation": "irõõnga",
+            "pronunciation": "i-roonga",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "muhu",
             "source": "ashes",
-            "pronunciation": "muhu",
+            "pronunciation": "mu-hu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "nugu ao ithinwa",
             "source": "baboon",
-            "pronunciation": "nugu ao ithinwa",
+            "pronunciation": "nu-gu ao ithinwa",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "nempaka",
+            "source": "Cat",
+            "pronunciation": "nempa-ka"
           }
         ],
         "sentences": [
           {
-            "target": "nugu ao ithinwa",
-            "source": "baboon"
+            "target": "hiti — mũgumo",
+            "source": "Hyena — Sacred Fig Tree"
+          },
+          {
+            "target": "thigirriri — tharaku",
+            "source": "ant — ant"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"hiti\" in Kikuyu?",
+            "prompt": "What does \"hiti\" mean in English?",
             "correctAnswer": "Hyena",
             "options": [
-              "Sacred Fig Tree",
-              "afternoon",
-              "ant (small black)",
-              "Hyena"
-            ],
-            "hint": "Hémery 1903, McGregor 1904 & Routledge 1910"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mũgumo (pl. mĩgumo)\" in Kikuyu?",
-            "correctAnswer": "Sacred Fig Tree",
-            "options": [
-              "afternoon",
-              "ant (small black)",
-              "Sacred Fig Tree",
-              "Hyena"
-            ],
-            "hint": "Routledge 1910 & Hobley 1922 sacred shrine tree"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mialaho\" in Kikuyu?",
-            "correctAnswer": "afternoon",
-            "options": [
-              "ant (small black)",
-              "afternoon",
               "Hyena",
-              "Sacred Fig Tree"
+              "Sacred Fig Tree",
+              "ant (small black)",
+              "ant (red)"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"afternoon\" in Kikuyu?",
-            "correctAnswer": "mialaho",
-            "options": [
-              "mialaho",
-              "hiti",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Sacred Fig Tree\"",
+            "correctAnswer": "mũgumo",
+            "acceptedAnswers": [
               "mũgumo (pl. mĩgumo)",
-              "thigirriri"
+              "mũgumo"
             ],
-            "hint": "mialaho"
+            "hint": "Starts with \"mũ\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"ant (small black)\" in Kikuyu?",
-            "correctAnswer": "thigirriri",
-            "options": [
-              "hiti",
-              "mũgumo (pl. mĩgumo)",
-              "mialaho",
-              "thigirriri"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"thigirriri\"",
+            "correctAnswer": "ant",
+            "acceptedAnswers": [
+              "ant (small black)",
+              "ant"
             ],
-            "hint": "thigirriri"
+            "hint": "Review Sky, Weather, Rivers & Landforms"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "hiti: Hyena",
+            "prompt": "Match each expression from Sky, Weather, Rivers & Landforms with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "hiti",
                 "right": "Hyena"
               },
               {
-                "left": "mũgumo (pl. mĩgumo)",
+                "left": "mũgumo",
                 "right": "Sacred Fig Tree"
               },
               {
-                "left": "mialaho",
-                "right": "afternoon"
+                "left": "thigirriri",
+                "right": "ant"
               },
               {
-                "left": "thigirriri",
-                "right": "ant (small black)"
+                "left": "tharaku",
+                "right": "ant"
+              },
+              {
+                "left": "muthua",
+                "right": "ant"
               }
             ]
           }
@@ -2822,43 +2507,31 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "mugiyo",
             "source": "baobab tree",
-            "pronunciation": "mugiyo",
+            "pronunciation": "mu-gi-yo",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kugambu",
             "source": "bark",
-            "pronunciation": "kugambu",
+            "pronunciation": "ku-gambu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "makonni",
             "source": "bark (of tree)",
-            "pronunciation": "makonni",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "ebũbũ",
-            "source": "bat",
-            "pronunciation": "ebũbũ",
+            "pronunciation": "ma-konni",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "enjugu",
             "source": "beans (tree)",
-            "pronunciation": "enjugu",
+            "pronunciation": "enju-gu",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "njuki",
             "source": "bee",
-            "pronunciation": "njuki",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "katinainyu",
-            "source": "beetle",
-            "pronunciation": "katinainyu",
+            "pronunciation": "nju-ki",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -2870,76 +2543,67 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "nyoni",
             "source": "bird",
-            "pronunciation": "nyoni",
+            "pronunciation": "nyo-ni",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "imme",
+            "source": "Dew",
+            "pronunciation": "imme"
+          },
+          {
+            "target": "kui or ngiti",
+            "source": "Dog",
+            "pronunciation": "kui or ngi-ti"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "mugiyo — kugambu",
+            "source": "baobab tree — bark"
+          },
+          {
+            "target": "makonni — enjugu",
+            "source": "bark — beans"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mugiyo\" in Kikuyu?",
+            "prompt": "What does \"mugiyo\" mean in English?",
             "correctAnswer": "baobab tree",
             "options": [
-              "bark",
-              "bark (of tree)",
-              "bat",
-              "baobab tree"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kugambu\" in Kikuyu?",
-            "correctAnswer": "bark",
-            "options": [
-              "bark (of tree)",
-              "bat",
-              "bark",
-              "baobab tree"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"makonni\" in Kikuyu?",
-            "correctAnswer": "bark (of tree)",
-            "options": [
-              "bat",
-              "bark (of tree)",
               "baobab tree",
+              "bark",
+              "bark (of tree)",
+              "beans (tree)"
+            ],
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+          },
+          {
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"bark\"",
+            "correctAnswer": "kugambu",
+            "acceptedAnswers": [
+              "kugambu",
+              "kugambu"
+            ],
+            "hint": "Starts with \"ku\""
+          },
+          {
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"makonni\"",
+            "correctAnswer": "bark",
+            "acceptedAnswers": [
+              "bark (of tree)",
               "bark"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"bark (of tree)\" in Kikuyu?",
-            "correctAnswer": "makonni",
-            "options": [
-              "makonni",
-              "mugiyo",
-              "kugambu",
-              "ebũbũ"
-            ],
-            "hint": "makonni"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"bat\" in Kikuyu?",
-            "correctAnswer": "ebũbũ",
-            "options": [
-              "mugiyo",
-              "kugambu",
-              "makonni",
-              "ebũbũ"
-            ],
-            "hint": "ebũbũ"
+            "hint": "Review East African Fauna, Birds & Sacred Trees"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "mugiyo: baobab tree",
+            "prompt": "Match each expression from East African Fauna, Birds & Sacred Trees with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "mugiyo",
@@ -2951,25 +2615,17 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "makonni",
-                "right": "bark (of tree)"
+                "right": "bark"
               },
               {
-                "left": "ebũbũ",
-                "right": "bat"
+                "left": "enjugu",
+                "right": "beans"
+              },
+              {
+                "left": "njuki",
+                "right": "bee"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"beans (tree)\": ___",
-            "correctAnswer": "enjugu",
-            "options": [
-              "mugiyo",
-              "kugambu",
-              "makonni",
-              "enjugu"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       }
@@ -2998,37 +2654,25 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "runyadide",
             "source": "ankle",
-            "pronunciation": "runyadide",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "musite",
-            "source": "anus",
-            "pronunciation": "musite",
+            "pronunciation": "runya-di-de",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "wuoko",
             "source": "arm (the whole)",
-            "pronunciation": "wuoko",
+            "pronunciation": "wuo-ko",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kuwoko",
             "source": "arm (fore)",
-            "pronunciation": "kuwoko",
+            "pronunciation": "ku-wo-ko",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kichako",
             "source": "arm (upper)",
-            "pronunciation": "kichako",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "enjegeki",
-            "source": "armpit",
-            "pronunciation": "enjegeki",
+            "pronunciation": "kicha-ko",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -3040,76 +2684,67 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "ihindi",
             "source": "back (small of)",
-            "pronunciation": "ihindi",
+            "pronunciation": "i-hindi",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "Koto (pl. mato)",
+            "source": "Ear",
+            "pronunciation": "koto"
+          },
+          {
+            "target": "Rizo (pl. maizo)",
+            "source": "Eye",
+            "pronunciation": "rizo"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "nda — runyadide",
+            "source": "abdomen — ankle"
+          },
+          {
+            "target": "wuoko — kuwoko",
+            "source": "arm — arm"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"nda\" in Kikuyu?",
+            "prompt": "What does \"nda\" mean in English?",
             "correctAnswer": "abdomen",
             "options": [
-              "ankle",
-              "anus",
-              "arm (the whole)",
-              "abdomen"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"runyadide\" in Kikuyu?",
-            "correctAnswer": "ankle",
-            "options": [
-              "anus",
-              "arm (the whole)",
-              "ankle",
-              "abdomen"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"musite\" in Kikuyu?",
-            "correctAnswer": "anus",
-            "options": [
-              "arm (the whole)",
-              "anus",
               "abdomen",
-              "ankle"
+              "ankle",
+              "arm (the whole)",
+              "arm (fore)"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Parts of the Body & Physical Senses"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"anus\" in Kikuyu?",
-            "correctAnswer": "musite",
-            "options": [
-              "musite",
-              "nda",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"ankle\"",
+            "correctAnswer": "runyadide",
+            "acceptedAnswers": [
               "runyadide",
-              "wuoko"
+              "runyadide"
             ],
-            "hint": "musite"
+            "hint": "Starts with \"ru\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"arm (the whole)\" in Kikuyu?",
-            "correctAnswer": "wuoko",
-            "options": [
-              "nda",
-              "runyadide",
-              "musite",
-              "wuoko"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"wuoko\"",
+            "correctAnswer": "arm",
+            "acceptedAnswers": [
+              "arm (the whole)",
+              "arm"
             ],
-            "hint": "wuoko"
+            "hint": "Review Parts of the Body & Physical Senses"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "nda: abdomen",
+            "prompt": "Match each expression from Parts of the Body & Physical Senses with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "nda",
@@ -3120,26 +2755,18 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "ankle"
               },
               {
-                "left": "musite",
-                "right": "anus"
+                "left": "wuoko",
+                "right": "arm"
               },
               {
-                "left": "wuoko",
-                "right": "arm (the whole)"
+                "left": "kuwoko",
+                "right": "arm"
+              },
+              {
+                "left": "kichako",
+                "right": "arm"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"arm (fore)\": ___",
-            "correctAnswer": "kuwoko",
-            "options": [
-              "nda",
-              "runyadide",
-              "musite",
-              "kuwoko"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       },
@@ -3154,49 +2781,41 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "nderu",
             "source": "beard",
-            "pronunciation": "nderu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "target": "thungi",
-            "source": "bladder",
-            "pronunciation": "thungi",
+            "pronunciation": "nde-ru",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "sakame",
             "source": "blood",
-            "pronunciation": "sakame",
+            "pronunciation": "sa-ka-me",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "kumirra",
             "source": "blow nose",
-            "pronunciation": "kumirra",
+            "pronunciation": "ku-mirra",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "mwiri",
             "source": "body",
-            "pronunciation": "mwiri",
+            "pronunciation": "mwi-ri",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
             "target": "ihuha, pl. mahuha",
             "source": "boil",
-            "pronunciation": "ihuha, pl. mahuha",
+            "pronunciation": "i-hu-ha",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
-            "target": "kuhiuha",
-            "source": "boil",
-            "pronunciation": "kuhiuha",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "target": "kutu",
+            "source": "Ear"
           },
           {
             "target": "ihindi, pl. mahindi",
             "source": "bone",
-            "pronunciation": "ihindi, pl. mahindi",
+            "pronunciation": "i-hindi",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           },
           {
@@ -3204,91 +2823,64 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "source": "breast",
             "pronunciation": "nyondo",
             "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+          },
+          {
+            "target": "Guoko (Moko)",
+            "source": "Arm",
+            "pronunciation": "guoko"
           }
         ],
         "sentences": [
           {
-            "target": "ihuha, pl. mahuha",
-            "source": "boil"
+            "target": "nderu — sakame",
+            "source": "beard — blood"
           },
           {
-            "target": "ihindi, pl. mahindi",
-            "source": "bone"
+            "target": "kumirra — mwiri",
+            "source": "blow nose — body"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"nderu\" in Kikuyu?",
+            "prompt": "What does \"nderu\" mean in English?",
             "correctAnswer": "beard",
             "options": [
-              "bladder",
-              "blood",
-              "blow nose",
-              "beard"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"thungi\" in Kikuyu?",
-            "correctAnswer": "bladder",
-            "options": [
-              "blood",
-              "blow nose",
-              "bladder",
-              "beard"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"sakame\" in Kikuyu?",
-            "correctAnswer": "blood",
-            "options": [
-              "blow nose",
-              "blood",
               "beard",
-              "bladder"
+              "blood",
+              "blow nose",
+              "body"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"blood\" in Kikuyu?",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"blood\"",
             "correctAnswer": "sakame",
-            "options": [
+            "acceptedAnswers": [
               "sakame",
-              "nderu",
-              "thungi",
-              "kumirra"
+              "sakame"
             ],
-            "hint": "sakame"
+            "hint": "Starts with \"sa\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"blow nose\" in Kikuyu?",
-            "correctAnswer": "kumirra",
-            "options": [
-              "nderu",
-              "thungi",
-              "sakame",
-              "kumirra"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"kumirra\"",
+            "correctAnswer": "blow nose",
+            "acceptedAnswers": [
+              "blow nose",
+              "blow nose"
             ],
-            "hint": "kumirra"
+            "hint": "Review Health, Traditional Medicine & Emergency Terms"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "nderu: beard",
+            "prompt": "Match each expression from Health, Traditional Medicine & Emergency Terms with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
                 "left": "nderu",
                 "right": "beard"
-              },
-              {
-                "left": "thungi",
-                "right": "bladder"
               },
               {
                 "left": "sakame",
@@ -3297,20 +2889,16 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               {
                 "left": "kumirra",
                 "right": "blow nose"
+              },
+              {
+                "left": "mwiri",
+                "right": "body"
+              },
+              {
+                "left": "ihuha, pl. mahuha",
+                "right": "boil"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"body\": ___",
-            "correctAnswer": "mwiri",
-            "options": [
-              "nderu",
-              "thungi",
-              "sakame",
-              "mwiri"
-            ],
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
           }
         ]
       }
@@ -3333,154 +2921,123 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "kwaria (-aria) / kuuga",
             "source": "Speak",
-            "pronunciation": "kwah-ree-ah / koo-gah",
+            "pronunciation": "kwa-ria / kuu-ga",
             "hint": "Hémery 1903 & McGregor 1904"
           },
           {
             "target": "kũkoma (-koma)",
             "source": "Sleep",
-            "pronunciation": "koo-koh-mah",
+            "pronunciation": "ku-ko-ma",
             "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
           },
           {
             "target": "gũthiĩ (-thiĩ)",
             "source": "Go",
-            "pronunciation": "goo-thee",
+            "pronunciation": "guthii",
             "hint": "McGregor 1904 (Dahl's Law: kū-thiĩ > gũthiĩ)"
           },
           {
             "target": "kũnyua (-nyua)",
             "source": "Drink",
-            "pronunciation": "koo-nywah",
+            "pronunciation": "kunyua",
             "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
           },
           {
             "target": "kũrĩa (-rĩa)",
             "source": "Eat",
-            "pronunciation": "koo-ree-ah",
+            "pronunciation": "ku-ria",
             "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
           },
           {
-            "target": "n-a-tinda",
-            "source": "I conquer",
-            "pronunciation": "n-a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "Koeka",
+            "source": "Do",
+            "pronunciation": "koe-ka"
           },
           {
-            "target": "w-a-tinda",
-            "source": "thou conquerest",
-            "pronunciation": "w-a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "kunikē",
+            "source": "Ask",
+            "pronunciation": "ku-ni-ke"
           },
           {
-            "target": "a-tinda",
-            "source": "he or she conquers",
-            "pronunciation": "a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "kuhoiya",
+            "source": "Beg",
+            "pronunciation": "ku-hoi-ya"
           },
           {
-            "target": "tw-a-tinda",
-            "source": "we conquer",
-            "pronunciation": "tw-a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "Kogora",
+            "source": "Buy",
+            "pronunciation": "ko-go-ra"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "kwaria — kũkoma",
+            "source": "Speak — Sleep"
+          },
+          {
+            "target": "gũthiĩ — kũnyua",
+            "source": "Go — Drink"
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kwaria (-aria) / kuuga\" in Kikuyu?",
+            "prompt": "What does \"kwaria\" mean in English?",
             "correctAnswer": "Speak",
             "options": [
-              "Sleep",
-              "Go",
-              "Drink",
-              "Speak"
-            ],
-            "hint": "Hémery 1903 & McGregor 1904"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kũkoma (-koma)\" in Kikuyu?",
-            "correctAnswer": "Sleep",
-            "options": [
-              "Go",
-              "Drink",
-              "Sleep",
-              "Speak"
-            ],
-            "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"gũthiĩ (-thiĩ)\" in Kikuyu?",
-            "correctAnswer": "Go",
-            "options": [
-              "Drink",
-              "Go",
               "Speak",
-              "Sleep"
+              "Sleep",
+              "Go",
+              "Drink"
             ],
-            "hint": "McGregor 1904 (Dahl's Law: kū-thiĩ > gũthiĩ)"
+            "hint": "Core vocabulary in Essential Action & Motion Verbs"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Go\" in Kikuyu?",
-            "correctAnswer": "gũthiĩ (-thiĩ)",
-            "options": [
-              "gũthiĩ (-thiĩ)",
-              "kwaria (-aria) / kuuga",
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Sleep\"",
+            "correctAnswer": "kũkoma",
+            "acceptedAnswers": [
               "kũkoma (-koma)",
-              "kũnyua (-nyua)"
+              "kũkoma"
             ],
-            "hint": "goo-thee"
+            "hint": "Starts with \"kũ\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Drink\" in Kikuyu?",
-            "correctAnswer": "kũnyua (-nyua)",
-            "options": [
-              "kwaria (-aria) / kuuga",
-              "kũkoma (-koma)",
-              "gũthiĩ (-thiĩ)",
-              "kũnyua (-nyua)"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"gũthiĩ\"",
+            "correctAnswer": "Go",
+            "acceptedAnswers": [
+              "Go",
+              "Go"
             ],
-            "hint": "koo-nywah"
+            "hint": "Review Essential Action & Motion Verbs"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "kwaria (-aria) / kuuga: Speak",
+            "prompt": "Match each expression from Essential Action & Motion Verbs with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "kwaria (-aria) / kuuga",
+                "left": "kwaria",
                 "right": "Speak"
               },
               {
-                "left": "kũkoma (-koma)",
+                "left": "kũkoma",
                 "right": "Sleep"
               },
               {
-                "left": "gũthiĩ (-thiĩ)",
+                "left": "gũthiĩ",
                 "right": "Go"
               },
               {
-                "left": "kũnyua (-nyua)",
+                "left": "kũnyua",
                 "right": "Drink"
+              },
+              {
+                "left": "kũrĩa",
+                "right": "Eat"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"Eat\": ___",
-            "correctAnswer": "kũrĩa (-rĩa)",
-            "options": [
-              "kwaria (-aria) / kuuga",
-              "kũkoma (-koma)",
-              "gũthiĩ (-thiĩ)",
-              "kũrĩa (-rĩa)"
-            ],
-            "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
           }
         ]
       },
@@ -3493,169 +3050,120 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
-            "target": "mw-a-tinda",
-            "source": "you conquer",
-            "pronunciation": "mw-a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "Kolela",
+            "source": "Cry",
+            "pronunciation": "ko-le-la"
           },
           {
-            "target": "m-a-tinda",
-            "source": "they conquer",
-            "pronunciation": "m-a-tinda",
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "target": "Kokua",
+            "source": "Die",
+            "pronunciation": "ko-kua"
           },
           {
-            "target": "ni-ki-tinda",
-            "source": "I am conquering",
-            "pronunciation": "ni-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Koendja",
+            "source": "Dig",
+            "pronunciation": "koendja"
           },
           {
-            "target": "wa or u-ki-tinda",
-            "source": "thou art conquering",
-            "pronunciation": "wa or u-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Kohora",
+            "source": "Hit",
+            "pronunciation": "ko-ho-ra"
           },
           {
-            "target": "a-ki-tinda",
-            "source": "he or she is conquering",
-            "pronunciation": "a-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Kolima",
+            "source": "Hoe",
+            "pronunciation": "ko-li-ma"
           },
           {
-            "target": "tu-ki-tinda",
-            "source": "we are conquering",
-            "pronunciation": "tu-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Kohenia",
+            "source": "Lie",
+            "pronunciation": "ko-he-nia"
           },
           {
-            "target": "mu-ki-tinda",
-            "source": "you are conquering",
-            "pronunciation": "mu-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Koleha",
+            "source": "Pay",
+            "pronunciation": "ko-le-ha"
           },
           {
-            "target": "me or ma-ki-tinda",
-            "source": "they are conquering",
-            "pronunciation": "me or ma-ki-tinda",
-            "hint": "Hinde (1904) — Present Imperfect"
+            "target": "Koekera",
+            "source": "Put",
+            "pronunciation": "koe-ke-ra"
           },
           {
-            "target": "ni-tind-eti or iti",
-            "source": "I have conquered",
-            "pronunciation": "ni-tind-eti or iti",
-            "hint": "Hinde (1904) — Present Perfect"
+            "target": "Koiya, kotunya",
+            "source": "Rob",
+            "pronunciation": "koi-ya ko-tunya"
           }
         ],
         "sentences": [
           {
-            "target": "wa or u-ki-tinda",
-            "source": "thou art conquering"
+            "target": "Kolela — Kokua",
+            "source": "Cry — Die"
           },
           {
-            "target": "me or ma-ki-tinda",
-            "source": "they are conquering"
-          },
-          {
-            "target": "ni-tind-eti or iti",
-            "source": "I have conquered"
+            "target": "Koendja — Kohora",
+            "source": "Dig — Hit"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mw-a-tinda\" in Kikuyu?",
-            "correctAnswer": "you conquer",
+            "prompt": "What does \"Kolela\" mean in English?",
+            "correctAnswer": "Cry",
             "options": [
-              "they conquer",
-              "I am conquering",
-              "thou art conquering",
-              "you conquer"
+              "Cry",
+              "Die",
+              "Dig",
+              "Hit"
             ],
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"m-a-tinda\" in Kikuyu?",
-            "correctAnswer": "they conquer",
-            "options": [
-              "I am conquering",
-              "thou art conquering",
-              "they conquer",
-              "you conquer"
+            "type": "translate_to_target",
+            "prompt": "Translate to the target language: \"Die\"",
+            "correctAnswer": "Kokua",
+            "acceptedAnswers": [
+              "Kokua",
+              "Kokua"
             ],
-            "hint": "Hinde (1904) — Indicative Mood. Present Tense"
+            "hint": "Starts with \"Ko\""
           },
           {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ni-ki-tinda\" in Kikuyu?",
-            "correctAnswer": "I am conquering",
-            "options": [
-              "thou art conquering",
-              "I am conquering",
-              "you conquer",
-              "they conquer"
+            "type": "translate_to_english",
+            "prompt": "Translate to English: \"Koendja\"",
+            "correctAnswer": "Dig",
+            "acceptedAnswers": [
+              "Dig",
+              "Dig"
             ],
-            "hint": "Hinde (1904) — Present Imperfect"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"I am conquering\" in Kikuyu?",
-            "correctAnswer": "ni-ki-tinda",
-            "options": [
-              "ni-ki-tinda",
-              "mw-a-tinda",
-              "m-a-tinda",
-              "wa or u-ki-tinda"
-            ],
-            "hint": "ni-ki-tinda"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"thou art conquering\" in Kikuyu?",
-            "correctAnswer": "wa or u-ki-tinda",
-            "options": [
-              "mw-a-tinda",
-              "m-a-tinda",
-              "ni-ki-tinda",
-              "wa or u-ki-tinda"
-            ],
-            "hint": "wa or u-ki-tinda"
+            "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kikuyu expression with its English meaning:",
-            "correctAnswer": "mw-a-tinda: you conquer",
+            "prompt": "Match each expression from Applied, Causative, Reciprocal & Stative Verbs with its English meaning:",
+            "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mw-a-tinda",
-                "right": "you conquer"
+                "left": "Kolela",
+                "right": "Cry"
               },
               {
-                "left": "m-a-tinda",
-                "right": "they conquer"
+                "left": "Kokua",
+                "right": "Die"
               },
               {
-                "left": "ni-ki-tinda",
-                "right": "I am conquering"
+                "left": "Koendja",
+                "right": "Dig"
               },
               {
-                "left": "wa or u-ki-tinda",
-                "right": "thou art conquering"
+                "left": "Kohora",
+                "right": "Hit"
+              },
+              {
+                "left": "Kolima",
+                "right": "Hoe"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Kikuyu term for \"he or she is conquering\": ___",
-            "correctAnswer": "a-ki-tinda",
-            "options": [
-              "mw-a-tinda",
-              "m-a-tinda",
-              "ni-ki-tinda",
-              "a-ki-tinda"
-            ],
-            "hint": "Hinde (1904) — Present Imperfect"
           }
         ]
       }
@@ -3683,7 +3191,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "ituĩka",
             "source": "Generational transfer of governance ceremony",
-            "pronunciation": "i-tuee-ka",
+            "pronunciation": "i-tui-ka",
             "hint": "Hobley (1922) & Routledge (1910)"
           },
           {
@@ -3695,35 +3203,44 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "gũtahĩkia",
             "source": "To purify ceremonially from thahu",
-            "pronunciation": "goo-ta-hee-kia",
+            "pronunciation": "gu-ta-hi-kia",
             "hint": "Hobley (1922, p. 308)"
           },
           {
             "target": "thengira",
             "source": "Unmarried men's bachelor hut / council hut",
-            "pronunciation": "theng-i-ra",
+            "pronunciation": "thengi-ra",
             "hint": "Hobley (1922, p. 308)"
           },
           {
             "target": "rũkwarũ",
             "source": "Goat-skin wrist/waist strip of ceremonial peace",
-            "pronunciation": "rook-wa-roo",
+            "pronunciation": "rukwa-ru",
             "hint": "Hobley (1922, p. 308)"
           },
           {
             "target": "rũenji / rũoro",
             "source": "Traditional razor / Cattle-branding iron knife",
-            "pronunciation": "rooenj-i",
+            "pronunciation": "ruenji / ruo-ro",
             "hint": "Hobley (1922, p. 308)"
           },
           {
             "target": "mũgũnda / gĩthaka",
             "source": "Cultivated garden farm / Uncultivated bushland",
-            "pronunciation": "moo-goond-a",
+            "pronunciation": "mu-gunda / githa-ka",
             "hint": "Wiktionary Bantu Swadesh & CGIAR Kikuyu"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Nĩtũrathoma kiugo riika ũmũthĩ.",
+            "source": "We are learning the word age-grade today."
+          },
+          {
+            "target": "Mũthuri nĩatairie ituĩka mũciĩ.",
+            "source": "The elder explained generational transfer of governance ceremony at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3784,49 +3301,49 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "gũtũma mbeca na thimũ",
             "source": "To send money via mobile phone (M-Pesa)",
-            "pronunciation": "goo-too-ma mbe-ca na thi-moo",
+            "pronunciation": "gu-tu-ma mbe-ca na thi-mu",
             "hint": "Anv-ke Gĩkũyũ Financial Corpus"
           },
           {
             "target": "ũrĩmi wa mĩmera na mahiũ",
             "source": "Crop farming and livestock husbandry",
-            "pronunciation": "oo-ree-mi wa mee-me-ra na ma-hioo",
+            "pronunciation": "u-ri-mi wa mi-me-ra na ma-hiu",
             "hint": "CGIAR Kikuyu-English Translation Dataset"
           },
           {
             "target": "mbeũ njega cia mbembe",
             "source": "Certified / high-yield maize seeds",
-            "pronunciation": "mbeoo nje-ga cia mbemb-e",
+            "pronunciation": "mbeu nje-ga cia mbembe",
             "hint": "CGIAR & Anv-ke Agriculture Corpus"
           },
           {
             "target": "thibitarĩ / nyũmba ya ũrigiti",
             "source": "Hospital / health dispensary",
-            "pronunciation": "thi-bi-ta-ree",
+            "pronunciation": "thi-bi-ta-ri / nyumba ya u-ri-gi-ti",
             "hint": "Anv-ke Healthcare Corpus"
           },
           {
             "target": "gwĩciria / kũmenya",
             "source": "To think / To know",
-            "pronunciation": "gwee-ci-ria",
+            "pronunciation": "gwi-ci-ria / ku-menya",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists"
           },
           {
             "target": "gũtindĩka / kũgucia",
             "source": "To push / To pull",
-            "pronunciation": "goo-tind-ee-ka",
+            "pronunciation": "gu-tindi-ka / ku-gu-cia",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists"
           },
           {
             "target": "kũatũra / gũtinia",
             "source": "To split wood / To cut",
-            "pronunciation": "kooa-too-ra",
+            "pronunciation": "kua-tu-ra / gu-ti-nia",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists"
           },
           {
             "target": "kũnyoroka / kũrũnga",
             "source": "To be smooth / To be straight",
-            "pronunciation": "koony-o-ro-ka",
+            "pronunciation": "kunyo-ro-ka / ku-runga",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists"
           }
         ],
@@ -3838,10 +3355,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "ũrĩmi wa mĩmera na mahiũ",
             "source": "Crop farming and livestock husbandry"
-          },
-          {
-            "target": "mbeũ njega cia mbembe",
-            "source": "Certified / high-yield maize seeds"
           }
         ],
         "authoredExercises": [
@@ -3912,7 +3425,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ku-Tahikia",
             "source": "To purify. Ku is the infinitive prefix common to all verbs",
-            "pronunciation": "ku ta-hi-kia",
+            "pronunciation": "ku-tahikia",
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           },
           {
@@ -3924,7 +3437,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ruenji",
             "source": "A razor",
-            "pronunciation": "ruenj-i",
+            "pronunciation": "ruenji",
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           },
           {
@@ -3942,7 +3455,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ngunga",
             "source": "Caterpillars",
-            "pronunciation": "ngung-a",
+            "pronunciation": "ngunga",
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           },
           {
@@ -3958,7 +3471,16 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Nĩtũrathoma kiugo Ku-Tahikia ũmũthĩ.",
+            "source": "We are learning the word to purify. ku is the infinitive prefix common to all verbs today."
+          },
+          {
+            "target": "Mũthuri nĩatairie Ruoro mũciĩ.",
+            "source": "The elder explained knife used for branding cattle at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -4055,17 +3577,26 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Kithangaona",
             "source": "Sacred place",
-            "pronunciation": "kith-ang-ao-na",
+            "pronunciation": "kithangao-na",
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           },
           {
             "target": "Ichua",
             "source": "A sacrificial fire",
-            "pronunciation": "ich-ua",
+            "pronunciation": "ichua",
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           }
         ],
-        "sentences": [],
+        "sentences": [
+          {
+            "target": "Nĩtũrathoma kiugo Muburi ũmũthĩ.",
+            "source": "We are learning the word goat today."
+          },
+          {
+            "target": "Mũthuri nĩatairie Murogi mũciĩ.",
+            "source": "The elder explained medicine man who deals in black magic at the homestead."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
