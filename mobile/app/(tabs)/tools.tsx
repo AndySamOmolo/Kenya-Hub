@@ -291,7 +291,9 @@ export default function ToolsScreen() {
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder="Search tools (PAYE, M-Pesa, KRA, CBC)..."
+            placeholder="Search tools (PAYE, M-Pesa, KRA)..."
+            numberOfLines={1}
+            multiline={false}
             placeholderTextColor={theme.textMuted}
             style={[styles.searchInput, { color: theme.textPrimary }]}
             autoCorrect={false}
@@ -328,7 +330,7 @@ export default function ToolsScreen() {
                 <Text
                   style={{
                     fontSize: 12,
-                    fontFamily: active ? "Outfit_700Bold" : "PlusJakartaSans_600SemiBold",
+                    fontFamily: active ? "Outfit_700Bold" : "Inter_600SemiBold",
                     color: active ? theme.gold : theme.textSecondary,
                   }}
                 >
@@ -397,6 +399,7 @@ export default function ToolsScreen() {
       <FlatList
         ref={listRef}
         data={filtered}
+        extraData={theme}
         keyExtractor={(item) => item.slug}
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
@@ -514,8 +517,11 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    height: "100%",
     fontSize: 13.5,
     paddingVertical: 0,
+    textAlignVertical: "center",
+    includeFontPadding: false,
   },
   catHeaderRow: {
     flexDirection: "row",

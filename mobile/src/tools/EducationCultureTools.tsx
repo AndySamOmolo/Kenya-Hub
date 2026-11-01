@@ -1337,7 +1337,7 @@ function createStyles(colors: ThemeColors) {
       flex: 1,
       marginLeft: 8,
       color: colors.textPrimary,
-      fontSize: 13,
+      fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
     },
     proverbCard: {
       backgroundColor: colors.bgCard,

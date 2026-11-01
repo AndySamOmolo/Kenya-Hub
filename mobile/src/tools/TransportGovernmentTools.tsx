@@ -1920,9 +1920,13 @@ const createStyles = (theme: ThemeColors) =>
     },
     searchInput: {
       flex: 1,
+      height: "100%",
       marginLeft: 8,
       fontSize: 13,
       color: theme.textPrimary,
+      paddingVertical: 0,
+      textAlignVertical: "center",
+      includeFontPadding: false,
     },
     fineCard: {
       backgroundColor: theme.bgCard,

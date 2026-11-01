@@ -447,7 +447,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search crop by English or Swahili name..."
+            placeholder="Search crop name..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -739,7 +739,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search Kenyan food (e.g. Ugali, Githeri)..."
+            placeholder="Search food (e.g. Ugali, Githeri)..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -1018,7 +1018,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search forest reserve, county, or wildlife..."
+            placeholder="Search forest or county..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -1300,7 +1300,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search sample EARB registered firms..."
+            placeholder="Search registered firms..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -1939,7 +1939,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search CBK, KNBS, EPRA, or Treasury event..."
+            placeholder="Search economic events..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -2227,7 +2227,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <TextInput
             value={search}
             onChangeText={setSearch}
-            placeholder="Search agrovet, town, county, or input specialty..."
+            placeholder="Search agrovet, town, or county..."
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
@@ -2410,7 +2410,7 @@ function createStyles(colors: ThemeColors) {
       paddingHorizontal: 14,
       height: 44,
     },
-    searchInput: { flex: 1, marginLeft: 8, color: colors.textPrimary, fontSize: 13 },
+    searchInput: { flex: 1, marginLeft: 8, color: colors.textPrimary, fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false },
     subHeading: { fontSize: 13, fontWeight: "800", color: colors.gold, letterSpacing: 0.5 },
     card: {
       backgroundColor: colors.bgCard,

@@ -511,56 +511,24 @@ export default function SkillTree({
                           </div>
                         </div>
 
-                        {/* Collapsible Grammar & Lesson Notes Dropdown + Preview Vocabulary */}
-                        {unlocked && (
-                          <div className="mt-2.5 pl-0 sm:pl-15 space-y-2">
-                            {tipContent && (
-                              <details
-                                onClick={(e) => e.stopPropagation()}
-                                className="group rounded-xl bg-bg-elevated/60 border border-border/60 px-3 py-2 text-xs text-text-secondary"
-                              >
-                                <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-gold hover:text-gold-light transition-colors">
-                                  <span className="inline-flex items-center gap-1.5">
-                                    <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
-                                    <span>Grammar &amp; Lesson Notes</span>
-                                  </span>
-                                  <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
-                                </summary>
-                                <div className="mt-2 border-t border-border/50 pt-2 text-[0.7rem] leading-relaxed text-text-secondary whitespace-pre-line">
-                                  {tipContent}
-                                </div>
-                              </details>
-                            )}
-
-                            {/* Word chips preview */}
-                            <div className="flex flex-wrap gap-1.5">
-                              {skill.words.slice(0, 6).map((w, wIdx) => {
-                                const learned = progress.wordsLearned.includes(
-                                  w.target
-                                );
-                                return (
-                                  <span
-                                    key={`${w.target}-${wIdx}`}
-                                    className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[0.65rem] ${
-                                      learned
-                                        ? "border-kenya-green/30 bg-kenya-green/10 text-text-primary"
-                                        : "border-border bg-bg-elevated/40 text-text-secondary"
-                                    }`}
-                                  >
-                                    <strong className="text-gold">
-                                      {w.target}
-                                    </strong>
-                                    <span className="text-text-muted">·</span>
-                                    <span>{w.source}</span>
-                                  </span>
-                                );
-                              })}
-                              {skill.words.length > 6 && (
-                                <span className="inline-flex items-center rounded-md px-1.5 py-0.5 text-[0.6rem] text-text-muted">
-                                  +{skill.words.length - 6} more
+                        {/* Collapsible Grammar & Lesson Notes Dropdown */}
+                        {unlocked && tipContent && (
+                          <div className="mt-2.5 pl-0 sm:pl-15">
+                            <details
+                              onClick={(e) => e.stopPropagation()}
+                              className="group rounded-xl bg-bg-elevated/60 border border-border/60 px-3 py-2 text-xs text-text-secondary"
+                            >
+                              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-gold hover:text-gold-light transition-colors">
+                                <span className="inline-flex items-center gap-1.5">
+                                  <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+                                  <span>Grammar &amp; Lesson Notes</span>
                                 </span>
-                              )}
-                            </div>
+                                <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                              </summary>
+                              <div className="mt-2 border-t border-border/50 pt-2 text-[0.7rem] leading-relaxed text-text-secondary whitespace-pre-line">
+                                {tipContent}
+                              </div>
+                            </details>
                           </div>
                         )}
                       </div>

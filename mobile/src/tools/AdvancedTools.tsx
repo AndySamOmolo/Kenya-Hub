@@ -1098,7 +1098,7 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     marginLeft: 8,
-    fontSize: 13,
+    fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
   },
   catPill: {
     paddingHorizontal: 12,

@@ -124,11 +124,8 @@ export const categoryColorMap: Record<string, string> = {
 /**
  * Helper for native Android Material 3 ripple effect on Pressable components
  */
-export function androidRipple(color?: string, borderless = false) {
-  return {
-    color: color || "rgba(200, 150, 30, 0.18)",
-    borderless,
-  };
+export function androidRipple(_color?: string, _borderless = false) {
+  return undefined;
 }
 
 interface ThemeContextType {
@@ -190,7 +187,7 @@ export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleShee
   creator: (theme: ThemeColors) => T
 ): { theme: ThemeColors; isDark: boolean; styles: T } {
   const { theme, isDark } = useTheme();
-  const styles = React.useMemo(() => creator(theme), [theme]);
+  const styles = React.useMemo(() => creator(theme), [theme, isDark]);
   return { theme, isDark, styles };
 }
 
@@ -289,6 +286,7 @@ export function AndroidTopAppBar({
         {rightAction}
         {showThemeToggle && (
           <Pressable
+            key={isDark ? "theme-btn-dark" : "theme-btn-light"}
             onPress={toggleTheme}
             android_ripple={androidRipple(theme.rippleColor, true)}
             style={[

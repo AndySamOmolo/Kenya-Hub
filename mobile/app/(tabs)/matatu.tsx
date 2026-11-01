@@ -535,9 +535,12 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    height: "100%",
     marginLeft: 8,
     fontSize: 13.5,
     paddingVertical: 0,
+    textAlignVertical: "center",
+    includeFontPadding: false,
   },
   townChipsRow: {
     flexDirection: "row",

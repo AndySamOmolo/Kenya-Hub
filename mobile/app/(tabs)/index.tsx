@@ -53,6 +53,16 @@ const COURSE_NAMES: Record<string, string> = {
   somali: "Af-Soomaali",
   turkana: "Ng'aturkana",
   teso: "Ateso",
+  embu: "Kĩembu",
+  taita: "Kidawida",
+  taveta: "Kitaveta",
+  pokomo: "Kipokomo",
+  borana: "Afaan Borana",
+  rendille: "Af-Rendille",
+  samburu: "Sampur",
+  ilchamus: "Ilchamus",
+  pokot: "Pökoot",
+  daasanach: "Daasanach",
 };
 
 function renderInlineMarkdown(text: string, theme: any, baseStyle: any): React.ReactNode[] {
@@ -778,8 +788,10 @@ export default function HomeScreen() {
             <TextInput
               value={searchQuery}
               onChangeText={setSearchQuery}
-              placeholder={`Instant search ${TOOLS.length} tools (PAYE, M-Pesa, KPLC, Swahili...)`}
+              placeholder={`Search ${TOOLS.length} tools (PAYE, M-Pesa, KPLC...)`}
               placeholderTextColor={theme.textMuted}
+              numberOfLines={1}
+              multiline={false}
               style={[styles.searchInputText, { color: theme.textPrimary }]}
               returnKeyType="search"
             />
@@ -952,6 +964,7 @@ export default function HomeScreen() {
         >
           {/* Widget A: Language Learning Hub */}
           <Pressable
+            key={`widget-learn-${theme.isDark ? "dark" : "light"}`}
             android_ripple={androidRipple(theme.rippleColor)}
             onPress={() =>
               router.push({
@@ -976,7 +989,7 @@ export default function HomeScreen() {
               >
                 <Ionicons name="school" size={12} color={theme.gold} />
                 <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
-                  13 COURSES
+                  23 COURSES
                 </Text>
               </View>
               <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.kenyaGreenLight }}>
@@ -993,7 +1006,7 @@ export default function HomeScreen() {
             >
               {learnStats.totalXP > 0
                 ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom`
-                : "Master Kikuyu, Swahili, Dholuo, Kalenjin & 9 more Kenyan languages"}
+                : "Master Kikuyu, Swahili, Dholuo, Kalenjin & 19 more Kenyan languages"}
             </Text>
 
             <View style={styles.widgetFooterLink}>
@@ -1075,6 +1088,7 @@ export default function HomeScreen() {
           {/* Widget C: Next Kenyan Public Holiday Countdown */}
           {nextHoliday && (
             <Pressable
+              key={`widget-holiday-${theme.isDark ? "dark" : "light"}`}
               android_ripple={androidRipple(theme.rippleColor)}
               onPress={() =>
                 router.push({
@@ -1176,7 +1190,7 @@ export default function HomeScreen() {
                 const col = categoryColorMap[t.category] || theme.gold;
                 return (
                   <Pressable
-                    key={`pinned-chip-${t.slug}`}
+                    key={`pinned-chip-${t.slug}-${theme.isDark ? "dark" : "light"}`}
                     android_ripple={androidRipple(theme.rippleColor)}
                     onPress={() =>
                       router.push({
@@ -1391,7 +1405,7 @@ export default function HomeScreen() {
         >
           {sortedPosts.map((post) => (
             <Pressable
-              key={post.slug}
+              key={`${post.slug}-${theme.isDark ? "dark" : "light"}`}
               android_ripple={androidRipple(theme.rippleColor)}
               onPress={() => setSelectedPost(post)}
               style={[
@@ -1694,9 +1708,12 @@ const styles = StyleSheet.create({
   },
   searchInputText: {
     flex: 1,
+    height: "100%",
     fontFamily: "Inter_500Medium",
     fontSize: 13.5,
     paddingVertical: 0,
+    textAlignVertical: "center",
+    includeFontPadding: false,
   },
   searchCountChip: {
     paddingHorizontal: 9,

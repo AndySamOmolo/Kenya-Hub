@@ -715,7 +715,7 @@ const styles = StyleSheet.create({
     height: 46,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
-  searchInput: { flex: 1, marginLeft: 10, fontSize: 13.5 },
+  searchInput: { flex: 1, marginLeft: 10, fontSize: 13.5, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false },
   sortRow: {
     flexDirection: "row",
     alignItems: "center",

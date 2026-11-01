@@ -1988,6 +1988,8 @@ const createStyles = (theme: ThemeColors) =>
       fontWeight: "600",
       color: theme.textPrimary,
       paddingVertical: 8,
+      textAlignVertical: "center",
+      includeFontPadding: false,
     },
     recentsBox: {
       gap: 6,
