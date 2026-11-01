@@ -3310,13 +3310,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Mū-rōgi; a-",
-          "pronunciation": "mu-rogi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
-          "audioFile": null
-        },
-        {
           "english": "Zebra",
           "translation": "N-jāgī",
           "pronunciation": "n-jagi",
@@ -3779,13 +3772,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "Ū-rōgi",
-          "pronunciation": "u-rogi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)",
-          "audioFile": null
-        },
-        {
           "english": "In, inside",
           "translation": "-thēnī",
           "pronunciation": "the-ni",
@@ -4119,5 +4105,6 @@
   ],
   "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
   "isoCode": "mer",
-  "glottocode": "meru1245"
+  "glottocode": "meru1245",
+  "totalEntries": 569
 }

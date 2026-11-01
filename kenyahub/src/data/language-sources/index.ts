@@ -964,103 +964,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17507,
+    "totalEntries": 17323,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 81
+        "count": 65
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 505
+        "count": 192
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 486
+        "count": 462
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 481
+        "count": 488
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 389
+        "count": 392
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 1278
+        "count": 986
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 788
+        "count": 648
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 455
+        "count": 465
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 3413
+        "count": 2710
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 439
+        "count": 378
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🚌",
-        "count": 505
+        "count": 526
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 451
+        "count": 461
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 590
+        "count": 357
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 374
+        "count": 406
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 7113
+        "count": 8636
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 159
+        "count": 151
       }
     ]
   },
@@ -1082,73 +1082,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
-    "totalEntries": 10786,
+    "totalEntries": 10667,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 32
+        "count": 30
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 212
+        "count": 116
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 250
+        "count": 246
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧍",
-        "count": 436
+        "count": 408
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 248
+        "count": 256
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 522
+        "count": 482
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 357
+        "count": 338
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 309
+        "count": 312
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 2918
+        "count": 822
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 1212
+        "count": 357
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 152
+        "count": 161
       },
       {
         "id": "shopping",
@@ -1160,25 +1160,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 143
+        "count": 148
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 150
+        "count": 223
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 743
+        "count": 3725
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 3007
+        "count": 2948
       }
     ]
   },
@@ -1199,49 +1199,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Mill-Hill Fathers (1920), and BFBS (1921).",
-    "totalEntries": 2516,
+    "totalEntries": 2497,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 50
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 74
+        "count": 51
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 129
+        "count": 134
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 134
+        "count": 120
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 166
+        "count": 165
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 160
+        "count": 142
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 123
+        "count": 118
       },
       {
         "id": "home",
@@ -1253,49 +1253,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 466
+        "count": 299
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 70
+        "count": 62
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 32
+        "count": 34
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 16
+        "count": 22
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 27
+        "count": 38
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 85
+        "count": 104
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 460
+        "count": 678
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 386
+        "count": 376
       }
     ]
   },
@@ -1320,103 +1320,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
-    "totalEntries": 5184,
+    "totalEntries": 4583,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 11
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 135
+        "count": 98
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 231
+        "count": 196
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 321
+        "count": 292
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 405
+        "count": 341
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 463
+        "count": 262
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 173
+        "count": 206
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 291
+        "count": 244
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 371
+        "count": 203
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 196
+        "count": 164
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 169
+        "count": 161
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 43
+        "count": 36
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 122
+        "count": 90
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 113
+        "count": 136
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 314
+        "count": 626
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1812
+        "count": 1517
       }
     ]
   },
@@ -1437,73 +1437,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
-    "totalEntries": 3553,
+    "totalEntries": 3495,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 294
+        "count": 14
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 169
+        "count": 159
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 176
+        "count": 177
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 319
+        "count": 308
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 355
+        "count": 364
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌳",
-        "count": 257
+        "count": 239
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 187
+        "count": 186
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏡",
-        "count": 212
+        "count": 225
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 656
+        "count": 375
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 132
+        "count": 134
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 56
+        "count": 71
       },
       {
         "id": "shopping",
@@ -1515,25 +1515,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 71
+        "count": 66
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 74
+        "count": 98
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 140
+        "count": 648
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 423
+        "count": 399
       }
     ]
   },
@@ -1553,103 +1553,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4118,
+    "totalEntries": 4071,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 24
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 164
+        "count": 54
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 131
+        "count": 114
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧍",
-        "count": 189
+        "count": 165
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐾",
-        "count": 188
+        "count": 187
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 309
+        "count": 190
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 174
+        "count": 131
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 145
+        "count": 151
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 209
+        "count": 172
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 139
+        "count": 135
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 124
+        "count": 138
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 54
+        "count": 57
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "count": 117
+        "count": 73
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "count": 286
+        "count": 115
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 1545
+        "count": 2061
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 320
+        "count": 312
       }
     ]
   },
@@ -1668,55 +1668,55 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml).",
-    "totalEntries": 677,
+    "totalEntries": 569,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 6
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 21
+        "count": 18
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 212
+        "count": 26
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 177
+        "count": 152
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 234
+        "count": 189
       },
       {
         "id": "shopping",
         "name": "shopping",
         "icon": "📜",
-        "count": 2
+        "count": 7
       },
       {
         "id": "home",
         "name": "home",
         "icon": "📜",
-        "count": 4
+        "count": 8
       },
       {
         "id": "time",
         "name": "time",
         "icon": "📜",
-        "count": 2
+        "count": 27
       }
     ]
   },
@@ -1736,73 +1736,73 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
-    "totalEntries": 2366,
+    "totalEntries": 2341,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 16
+        "count": 9
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 92
+        "count": 55
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 160
+        "count": 163
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 158
+        "count": 151
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 201
+        "count": 202
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 166
+        "count": 130
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 130
+        "count": 126
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 104
+        "count": 105
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 181
+        "count": 123
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 108
+        "count": 100
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 27
+        "count": 31
       },
       {
         "id": "shopping",
@@ -1814,25 +1814,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 67
+        "count": 54
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 38
+        "count": 67
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 275
+        "count": 402
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 628
+        "count": 608
       }
     ]
   },
@@ -1851,31 +1851,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
-    "totalEntries": 1135,
+    "totalEntries": 1110,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 11
+        "count": 4
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 96
+        "count": 94
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 78
+        "count": 77
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🧠",
-        "count": 143
+        "count": 138
       },
       {
         "id": "animals",
@@ -1887,13 +1887,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 122
+        "count": 102
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 67
+        "count": 64
       },
       {
         "id": "home",
@@ -1905,13 +1905,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 39
+        "count": 41
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 31
+        "count": 32
       },
       {
         "id": "travel",
@@ -1929,25 +1929,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 19
+        "count": 11
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 21
+        "count": 40
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 91
+        "count": 109
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 187
+        "count": 168
       }
     ]
   },
@@ -1968,49 +1968,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
-    "totalEntries": 2497,
+    "totalEntries": 2434,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 22
+        "count": 10
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 188
+        "count": 83
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 273
+        "count": 154
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 125
+        "count": 121
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 166
+        "count": 186
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 75
+        "count": 76
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 82
+        "count": 92
       },
       {
         "id": "home",
@@ -2022,49 +2022,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 27
+        "count": 46
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 67
+        "count": 69
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 36
+        "count": 57
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 24
+        "count": 29
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 37
+        "count": 16
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 82
+        "count": 100
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 668
+        "count": 816
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 524
+        "count": 478
       }
     ]
   },
@@ -2082,49 +2082,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
-    "totalEntries": 2019,
+    "totalEntries": 1998,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 27
+        "count": 12
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 63
+        "count": 24
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👥",
-        "count": 101
+        "count": 88
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "👁️",
-        "count": 124
+        "count": 107
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐾",
-        "count": 154
+        "count": 152
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 141
+        "count": 114
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 62
+        "count": 63
       },
       {
         "id": "home",
@@ -2136,13 +2136,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 532
+        "count": 263
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 78
+        "count": 81
       },
       {
         "id": "travel",
@@ -2160,25 +2160,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 9
+        "count": 31
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 47
+        "count": 84
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 343
+        "count": 646
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 217
+        "count": 212
       }
     ]
   },
@@ -2198,103 +2198,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 11206,
+    "totalEntries": 7905,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 32
+        "count": 15
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 230
+        "count": 72
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 126
+        "count": 106
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 126
+        "count": 130
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 110
+        "count": 111
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🦁",
-        "count": 524
+        "count": 262
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 278
+        "count": 204
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 128
+        "count": 130
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1465
+        "count": 903
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 189
+        "count": 173
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 136
+        "count": 127
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 79
+        "count": 68
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "count": 192
+        "count": 93
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "count": 114
+        "count": 94
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 7176
+        "count": 5131
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 301
+        "count": 286
       }
     ]
   },
@@ -2312,31 +2312,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921).",
-    "totalEntries": 573,
+    "totalEntries": 572,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 20
+        "count": 7
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 33
+        "count": 23
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👥",
-        "count": 26
+        "count": 23
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "👤",
-        "count": 41
+        "count": 39
       },
       {
         "id": "animals",
@@ -2348,13 +2348,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 59
+        "count": 35
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 28
+        "count": 27
       },
       {
         "id": "home",
@@ -2366,19 +2366,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "⚡",
-        "count": 69
+        "count": 49
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 59
+        "count": 104
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 174
+        "count": 173
       }
     ]
   },
@@ -2396,13 +2396,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml).",
-    "totalEntries": 578,
+    "totalEntries": 571,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 26
+        "count": 8
       },
       {
         "id": "numbers",
@@ -2414,13 +2414,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 17
+        "count": 27
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 40
+        "count": 47
       },
       {
         "id": "animals",
@@ -2432,31 +2432,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 218
+        "count": 86
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 29
+        "count": 30
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 50
+        "count": 59
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 130
+        "count": 196
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 13
+        "count": 14
       }
     ]
   },
@@ -2474,49 +2474,49 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3389,
+    "totalEntries": 3354,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 14
+        "count": 16
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 66
+        "count": 61
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 86
+        "count": 83
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 123
+        "count": 125
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 135
+        "count": 139
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 188
+        "count": 168
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 94
+        "count": 99
       },
       {
         "id": "home",
@@ -2528,19 +2528,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1307
+        "count": 265
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 90
+        "count": 125
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 31
+        "count": 32
       },
       {
         "id": "shopping",
@@ -2552,25 +2552,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 47
+        "count": 58
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 48
+        "count": 76
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 26
+        "count": 993
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1022
+        "count": 1002
       }
     ]
   },
@@ -2591,67 +2591,67 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
-    "totalEntries": 687,
+    "totalEntries": 678,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 15
+        "count": 6
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 16
+        "count": 23
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 16
+        "count": 20
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 45
+        "count": 43
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 37
+        "count": 45
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 111
+        "count": 78
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 12
+        "count": 18
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 16
+        "count": 22
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 79
+        "count": 51
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 340
+        "count": 336
       }
     ]
   },
@@ -2673,103 +2673,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.4",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7711,
+    "totalEntries": 7616,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 35
+        "count": 32
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 139
+        "count": 69
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 156
+        "count": 142
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 215
+        "count": 213
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 201
+        "count": 213
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 411
+        "count": 330
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 195
+        "count": 168
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 184
+        "count": 208
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 2166
+        "count": 850
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 174
+        "count": 189
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 122
+        "count": 132
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 88
+        "count": 90
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "count": 168
+        "count": 117
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "count": 1487
+        "count": 120
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 1927
+        "count": 4692
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 43
+        "count": 51
       }
     ]
   },
@@ -2793,7 +2793,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 21
+        "count": 7
       },
       {
         "id": "numbers",
@@ -2805,13 +2805,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 15
+        "count": 14
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 13
+        "count": 14
       },
       {
         "id": "animals",
@@ -2823,31 +2823,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 21
+        "count": 17
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 12
+        "count": 11
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 25
+        "count": 26
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 7
+        "count": 14
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 37
+        "count": 30
       }
     ]
   },
@@ -2865,103 +2865,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
-    "totalEntries": 2324,
+    "totalEntries": 2302,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 30
+        "count": 14
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 85
+        "count": 28
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 59
+        "count": 46
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 64
+        "count": 70
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 34
+        "count": 38
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 205
+        "count": 122
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 80
+        "count": 52
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 36
+        "count": 42
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 104
+        "count": 91
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 67
+        "count": 65
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 72
+        "count": 81
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 37
+        "count": 41
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🏥",
-        "count": 99
+        "count": 44
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏳",
-        "count": 100
+        "count": 40
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 999
+        "count": 1278
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 253
+        "count": 250
       }
     ]
   },
@@ -2979,37 +2979,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
-    "totalEntries": 309,
+    "totalEntries": 304,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 16
+        "count": 4
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 16
+        "count": 21
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 14
+        "count": 17
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 30
+        "count": 35
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 37
+        "count": 45
       },
       {
         "id": "nature",
@@ -3027,19 +3027,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 17
+        "count": 20
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 74
+        "count": 50
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 59
+        "count": 58
       }
     ]
   },
@@ -3058,103 +3058,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
-    "totalEntries": 3215,
+    "totalEntries": 2801,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 25
+        "count": 10
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 55
+        "count": 68
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 99
+        "count": 124
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 126
+        "count": 157
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 160
+        "count": 189
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 145
+        "count": 163
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🌾",
-        "count": 81
+        "count": 113
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 115
+        "count": 88
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1118
+        "count": 314
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 847
+        "count": 112
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 40
+        "count": 34
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 15
+        "count": 12
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 33
+        "count": 50
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 34
+        "count": 67
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "💬",
-        "count": 100
+        "count": 1083
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 222
+        "count": 217
       }
     ]
   },
@@ -3172,43 +3172,43 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
-    "totalEntries": 466,
+    "totalEntries": 457,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 20
+        "count": 3
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 22
+        "count": 29
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 16
+        "count": 31
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫀",
-        "count": 31
+        "count": 51
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🐄",
-        "count": 29
+        "count": 45
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌍",
-        "count": 36
+        "count": 48
       },
       {
         "id": "food",
@@ -3220,19 +3220,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 23
+        "count": 53
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 11
+        "count": 33
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 255
+        "count": 15
       }
     ]
   },
@@ -3256,19 +3256,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 10
+        "count": 3
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 15
+        "count": 13
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 7
+        "count": 11
       },
       {
         "id": "body",
@@ -3304,7 +3304,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 20
+        "count": 21
       },
       {
         "id": "adjectives",
@@ -3322,7 +3322,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4
+        "count": 8
       },
       {
         "id": "culture-history",
@@ -3421,7 +3421,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 83133;
+export const TOTAL_DICTIONARY_ENTRIES: number = 77965;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {

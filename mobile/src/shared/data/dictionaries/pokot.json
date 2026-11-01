@@ -1595,13 +1595,6 @@
           "audioFile": null
         },
         {
-          "english": "Body",
-          "translation": "pur; por-to; pl. por-w-ai; 'corpse,' id",
-          "pronunciation": "pur",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Face",
           "translation": "tokach, pl. tokuch",
           "pronunciation": "tokach",
@@ -2299,13 +2292,6 @@
           "translation": "karual-ian, pl. karual",
           "pronunciation": "karual-ian",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Dead body",
-          "translation": "porto, pur, pl. por-wei",
-          "pronunciation": "porto pur",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
           "audioFile": null
         },
         {
@@ -9001,13 +8987,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "cherut, pl. cherut-ech",
-          "pronunciation": "cherut",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Other",
           "translation": "anga, pl. w-alak",
           "pronunciation": "anga",
@@ -9908,13 +9887,6 @@
           "translation": "mwônoʻ",
           "pronunciation": "mwono",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Corpse",
-          "translation": "por-to, pur, pl. por-w-ei",
-          "pronunciation": "por-to pur",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
         {
@@ -12130,13 +12102,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "pon-in, pl. pon-ŭ",
-          "pronunciation": "pon-in",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Oribi",
           "translation": "Sō",
           "pronunciation": "so",
@@ -12746,13 +12711,6 @@
           "audioFile": null
         },
         {
-          "english": "Savage",
-          "translation": "korōm, pl. korōm-ech",
-          "pronunciation": "korom",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Shrewd",
           "translation": "ñgohom, pl. ñgohom-ech",
           "pronunciation": "ngohom",
@@ -12868,13 +12826,6 @@
           "english": "Within",
           "translation": "ōri",
           "pronunciation": "ori",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Wizard",
-          "translation": "pon-in, pl. pon-ŭ",
-          "pronunciation": "pon-in",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -13554,13 +13505,6 @@
           "english": "Sandfly",
           "translation": "che-mitai-yon, pl. che-mitai",
           "pronunciation": "che-mitai-yon",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Scrotum",
-          "translation": "mela'-tērkel",
-          "pronunciation": "mela'-terkel",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -15819,23 +15763,9 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "che-pores, pl. che-pores-ai (lit. a person of no account); pures, goat's dung",
-          "pronunciation": "che-pores",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Vegetables",
           "translation": "ungui-yon, pl. ungui",
           "pronunciation": "ungui-yon",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "ke-pon-isioʻ",
-          "pronunciation": "ke-pon-isio'",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -15864,13 +15794,6 @@
           "english": "Generation",
           "translation": "kainy, pl. kainy-is",
           "pronunciation": "kainy",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Prostitute",
-          "translation": "che-pores, pl. che-pores-ai",
-          "pronunciation": "che-pores",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
           "audioFile": null
         },
@@ -16200,13 +16123,6 @@
           "english": "Undress, to",
           "translation": "r. ñgus, pr. o-ñgus-an, -ei, p.p. ka-ñgus-an",
           "pronunciation": "nggus",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Urinate, to",
-          "translation": "r. sukus, pr. o-sokos-an, -ei, p.p. kô-sukus-an",
-          "pronunciation": "su-kus",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -16547,13 +16463,6 @@
           "audioFile": null
         },
         {
-          "english": "Mutilate, to",
-          "translation": "r. mwut, pr. o-mwut-an, -ei, p.p. ka-mwut-an",
-          "pronunciation": "mwut",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Overcome, to",
           "translation": "r. pēl, pr. o-pel-an, p.p. kô-pel-an",
           "pronunciation": "pel",
@@ -16599,13 +16508,6 @@
           "english": "Sprinkle, to",
           "translation": "r. pis, pr. o-pis-an, -ei, p.p. ko-pis-an",
           "pronunciation": "pis",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Strangle, to",
-          "translation": "r. ket, pr. o-ket-an, -ei, p.p. ka-ket-an",
-          "pronunciation": "ket",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -17338,13 +17240,6 @@
           "audioFile": null
         },
         {
-          "english": "Vagina ( human )",
-          "translation": "sei-yon, pl. sei",
-          "pronunciation": "sei-yon",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Coition, to have",
           "translation": "r. ruw, sleep; 'o-ruw-an, -ei, ngô kôrkôʻ.'",
           "pronunciation": "ruw sleep",
@@ -17723,13 +17618,6 @@
           "audioFile": null
         },
         {
-          "english": "Excrement ( human )",
-          "translation": "piyat",
-          "pronunciation": "pi-yat",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
           "english": "Forward, I am going",
           "translation": "o-wet-a' tagh",
           "pronunciation": "o-wet-a' tagh",
@@ -17747,13 +17635,6 @@
           "english": "Leglet ( of bells )",
           "translation": "kurugur, pl. kurugur-is",
           "pronunciation": "kurugur",
-          "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery, to commit",
-          "translation": "r. kum, pr. o-kum-an, -ei, p.p. ko-kum-an",
-          "pronunciation": "kum",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
           "audioFile": null
         },
@@ -19102,13 +18983,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Pōnin",
-          "pronunciation": "poh-nin",
-          "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
-          "audioFile": null
-        },
-        {
           "english": "Woman",
           "translation": "Diebtó",
           "pronunciation": "diebto",
@@ -19862,5 +19736,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
-  "glottocode": "poko1263"
+  "glottocode": "poko1263",
+  "totalEntries": 2801
 }

@@ -2101,13 +2101,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Ol-labanani",
-          "pronunciation": "ol-labanani",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
           "english": "I / me",
           "translation": "nanu (prefix a-)",
           "pronunciation": "nah-noo",
@@ -3207,13 +3200,6 @@
           "audioFile": null
         },
         {
-          "english": "Penis (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Shabo",
-          "pronunciation": "sha-bo",
-          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
-          "audioFile": null
-        },
-        {
           "english": "River (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "Nogoi",
           "pronunciation": "no-goi",
@@ -3308,13 +3294,6 @@
           "english": "Truly (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "Kitēēgo",
           "pronunciation": "ki-te-heh-go",
-          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
-          "audioFile": null
-        },
-        {
-          "english": "Urine (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Kusa",
-          "pronunciation": "ku-sa",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
         },
@@ -3896,13 +3875,6 @@
           "english": "Crocodile (Mogogodo / Dorobo of Mt. Kenya)",
           "translation": "Keinyang (M.), Nyang = crocodile in Tho-Luo",
           "pronunciation": "keiny-ang",
-          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
-          "audioFile": null
-        },
-        {
-          "english": "Excrement (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Jūūn",
-          "pronunciation": "joooon",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154)",
           "audioFile": null
         },
@@ -4877,5 +4849,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Hobley 1910 & Vossen 1982)",
   "isoCode": "saq",
-  "glottocode": "samb1315"
+  "glottocode": "samb1315",
+  "totalEntries": 678
 }

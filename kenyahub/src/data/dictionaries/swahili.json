@@ -1507,13 +1507,6 @@
           "audioFile": null
         },
         {
-          "english": "One who cannot or does not control his urine, one who wets his bed",
-          "translation": "Mkojozi",
-          "pronunciation": "mko-jo-zi",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "First-fruits, reward of waiting, fulfilment of hope, foretaste of reward",
           "translation": "Limbuko",
           "pronunciation": "limb-u-ko",
@@ -4006,13 +3999,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch-doctor, medicine-man",
-          "translation": "Mganga",
-          "pronunciation": "mgang-a",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "One who acts, man of action",
           "translation": "Mtendaji",
           "pronunciation": "mtenda-ji",
@@ -4619,13 +4605,6 @@
           "translation": "makhushumu",
           "pronunciation": "makhushu-mu",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Heathen, savage, country bumpkin, uncivilized person",
-          "translation": "Mshenzi",
-          "pronunciation": "mshenzi",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
           "audioFile": null
         },
         {
@@ -7604,13 +7583,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse, dead body, carcase",
-          "translation": "Kimba",
-          "pronunciation": "kimba",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4]",
-          "audioFile": null
-        },
-        {
           "english": "Soft palate, roof of mouth",
           "translation": "Mak'aak'aa",
           "pronunciation": "mak'aak'aa",
@@ -8049,13 +8021,6 @@
           "translation": "Matimutimu",
           "pronunciation": "ma-ti-mu-ti-mu",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Long tail of black hair used by witch-doctors",
-          "translation": "Mgwisho",
-          "pronunciation": "mgwisho",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 2]",
           "audioFile": null
         },
         {
@@ -14786,13 +14751,6 @@
           "audioFile": null
         },
         {
-          "english": "Heaven and God, or supreme being, of which the African heathen have a faint idea",
-          "translation": "mulungu",
-          "pronunciation": "mu-lungu",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "Heaven, sky, heavens ; Zina mawingu, it is cloudy ; Zimetakata, it has cleared (sing. uwingu)",
           "translation": "Mbingu",
           "pronunciation": "mbingu",
@@ -19623,7 +19581,7 @@
           "audioFile": null
         },
         {
-          "english": "Millet, Kaffir-corn",
+          "english": "Millet, Sorghum grain",
           "translation": "Mtama",
           "pronunciation": "mta-ma",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 2]",
@@ -20872,13 +20830,6 @@
           "english": "Bunch, cluster of fruit",
           "translation": "Kichala",
           "pronunciation": "kich-a-la",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Make water (v. urinate)",
-          "translation": "Kojoa",
-          "pronunciation": "ko-joa",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
@@ -22196,13 +22147,6 @@
           "translation": "Mdarabi",
           "pronunciation": "mda-ra-bi",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Sharp, fierce, sour, acid, severe, savage, ferocious, cruel",
-          "translation": "kali",
-          "pronunciation": "ka-li",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
           "audioFile": null
         },
         {
@@ -30816,13 +30760,6 @@
           "audioFile": null
         },
         {
-          "english": "To twist, to strangle",
-          "translation": "nionga",
-          "pronunciation": "nionga",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "To scratch like a hen",
           "translation": "pekua",
           "pronunciation": "pe-kua",
@@ -38138,13 +38075,6 @@
           "audioFile": null
         },
         {
-          "english": "To urinate",
-          "translation": "(Ku)kojoa",
-          "pronunciation": "ku ko-joa",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "To be bent",
           "translation": "(Ku)poteka",
           "pronunciation": "ku po-te-ka",
@@ -40511,13 +40441,6 @@
           "audioFile": null
         },
         {
-          "english": "To commit adultery",
-          "translation": "(Ku)zini",
-          "pronunciation": "ku zi-ni",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "To ferry one across",
           "translation": "(Ku)vusha",
           "pronunciation": "ku vusha",
@@ -40966,13 +40889,6 @@
           "audioFile": null
         },
         {
-          "english": "To punish, to torture",
-          "translation": "(Ku)adhibu",
-          "pronunciation": "ku adhibu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [v. tr.]",
-          "audioFile": null
-        },
-        {
           "english": "To perish, to be lost",
           "translation": "(Ku)angamia (angamika)",
           "pronunciation": "ku angamia angamika",
@@ -41180,13 +41096,6 @@
           "translation": "Ku nyosha",
           "pronunciation": "ku nyosha",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [v. c.]",
-          "audioFile": null
-        },
-        {
-          "english": "To strangle, suffocate",
-          "translation": "(Ku)songoa",
-          "pronunciation": "ku songoa",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [v. tr.]",
           "audioFile": null
         },
         {
@@ -43847,13 +43756,6 @@
           "translation": "(Ku)jitendekeza",
           "pronunciation": "ku jitendekeza",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [v. ref.]",
-          "audioFile": null
-        },
-        {
-          "english": "To deface, mutilate, disfigure, destroy",
-          "translation": "(Ku)umbua",
-          "pronunciation": "ku umbua",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [v. sub.]",
           "audioFile": null
         },
         {
@@ -55211,13 +55113,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse",
-          "translation": "mayiti",
-          "pronunciation": "ma-yi-ti",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
           "english": "Battle",
           "translation": "mapigano, vita",
           "pronunciation": "ma-pi-ga-no vi-ta",
@@ -55474,20 +55369,6 @@
           "translation": "Auni",
           "pronunciation": "au-ni",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3]",
-          "audioFile": null
-        },
-        {
-          "english": "Death, corpse",
-          "translation": "Ufu",
-          "pronunciation": "ufu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
-          "english": "Corpse-washer",
-          "translation": "M'osha",
-          "pronunciation": "m'osha",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
           "audioFile": null
         },
         {
@@ -56471,13 +56352,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch-doctor’s art, magic",
-          "translation": "Uganga",
-          "pronunciation": "u-ganga",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
           "english": "The disease which attacks",
           "translation": "gugnombe",
           "pronunciation": "gugnombe",
@@ -56601,13 +56475,6 @@
           "translation": "Kimbilio (place of refuge) • Fidia (ransom / redemption price, verb: kufidia)",
           "pronunciation": "kimbi-lio • fi-dia",
           "context": "A. C. Madan (1902, p. 312 s.v. Ransom & p. 320 s.v. Refuge): kimbilio ('refuge') and fidia ('ransom')",
-          "audioFile": null
-        },
-        {
-          "english": "Carrion, corpse of uncircumcised",
-          "translation": "Mzoga",
-          "pronunciation": "mzo-ga",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
           "audioFile": null
         },
         {
@@ -67867,13 +67734,6 @@
           "audioFile": null
         },
         {
-          "english": "Hang",
-          "translation": "tundika, (strangle) songa",
-          "pronunciation": "tund-i-ka",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.)",
-          "audioFile": null
-        },
-        {
           "english": "Harm",
           "translation": "thuru",
           "pronunciation": "thu-ru",
@@ -68721,13 +68581,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "-tupu, uchi",
-          "pronunciation": "tu-pu uchi",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "sauti, kaleli",
           "pronunciation": "sau-ti ka-le-li",
@@ -69046,13 +68899,6 @@
           "english": "Voice",
           "translation": "sauti",
           "pronunciation": "sau-ti",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
-          "english": "Vulva",
-          "translation": "kuma",
-          "pronunciation": "ku-ma",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
@@ -70835,13 +70681,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "tuputupu",
-          "pronunciation": "tu-pu-tu-pu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.)",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "keléle",
           "pronunciation": "kelele",
@@ -71584,13 +71423,6 @@
           "audioFile": null
         },
         {
-          "english": "Whore",
-          "translation": "káhăba; jánja mkú",
-          "pronunciation": "kahaba",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
-          "audioFile": null
-        },
-        {
           "english": "Widen",
           "translation": "fánia mapána",
           "pronunciation": "fania mapana",
@@ -71685,13 +71517,6 @@
           "english": "Hades",
           "translation": "Jongomeo",
           "pronunciation": "jongo-meo",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3]",
-          "audioFile": null
-        },
-        {
-          "english": "Idiot",
-          "translation": "Jura",
-          "pronunciation": "ju-ra",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3]",
           "audioFile": null
         },
@@ -71867,13 +71692,6 @@
           "english": "Slave",
           "translation": "Mtumwa",
           "pronunciation": "mtumwa",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Mwanga",
-          "pronunciation": "mwanga",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
           "audioFile": null
         },
@@ -72179,13 +71997,6 @@
           "audioFile": null
         },
         {
-          "english": "Idiot",
-          "translation": "dahili",
-          "pronunciation": "da-hi-li",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "? cfr",
           "translation": "daudika",
           "pronunciation": "dau-di-ka",
@@ -72308,13 +72119,6 @@
           "english": "Senna",
           "translation": "sannamaki",
           "pronunciation": "sanna-ma-ki",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Semen",
-          "translation": "shahawa",
-          "pronunciation": "sha-ha-wa",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
@@ -73978,13 +73782,6 @@
           "audioFile": null
         },
         {
-          "english": "Ordure",
-          "translation": "mavi",
-          "pronunciation": "ma-vi",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Plenty",
           "translation": "tele",
           "pronunciation": "te-le",
@@ -74752,13 +74549,6 @@
           "translation": "pato, plur. ma-",
           "pronunciation": "pa-to plur ma",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Indian",
-          "translation": "-a kihindi, (Mahommedan) Mhindi, (heathen) Baniani, plur. Ma-",
-          "pronunciation": "a ki-hind-i",
-          "context": "Madan (1917) English-Swahili Vocabulary (a.)",
           "audioFile": null
         },
         {
@@ -75683,13 +75473,6 @@
           "translation": "ndani ya, ndani",
           "pronunciation": "nda-ni ya nda-ni",
           "context": "Madan (1917) English-Swahili Vocabulary (prep. and adv.)",
-          "audioFile": null
-        },
-        {
-          "english": "Wizard",
-          "translation": "mchawi",
-          "pronunciation": "mcha-wi",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
           "audioFile": null
         },
         {
@@ -79347,13 +79130,6 @@
           "audioFile": null
         },
         {
-          "english": "Bastard",
-          "translation": "mtoto waharam",
-          "pronunciation": "mto-to wa-ha-ram",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Bladder",
           "translation": "kibofu, pl. vibofu",
           "pronunciation": "kibofu",
@@ -79609,13 +79385,6 @@
           "english": "Trumpet",
           "translation": "paanda",
           "pronunciation": "paanda",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
-          "english": "Urinate",
-          "translation": "kukojoa",
-          "pronunciation": "ku-ko-joa",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
@@ -81762,13 +81531,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture",
-          "translation": "sumbúa; takálíṣa",
-          "pronunciation": "sumbua",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
-          "audioFile": null
-        },
-        {
           "english": "Totally",
           "translation": "kua mambo ióthe",
           "pronunciation": "kua mambo iothe",
@@ -83113,13 +82875,6 @@
           "audioFile": null
         },
         {
-          "english": "Scrotum",
-          "translation": "Kipumbu",
-          "pronunciation": "ki-pumb-u",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "A miser",
           "translation": "Mbahili",
           "pronunciation": "mba-hi-li",
@@ -83487,13 +83242,6 @@
           "english": "Fatigue",
           "translation": "utufu",
           "pronunciation": "u-tu-fu",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Heathen",
-          "translation": "mkafiri, mshenzi",
-          "pronunciation": "mka-fi-ri mshen-zi",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
           "audioFile": null
         },
@@ -84310,13 +84058,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture",
-          "translation": "umiza sana, athibisha",
-          "pronunciation": "u-mi-za sa-na ath-i-bish-a",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.)",
-          "audioFile": null
-        },
-        {
           "english": "Trample",
           "translation": "kanyaga",
           "pronunciation": "kany-a-ga",
@@ -84793,13 +84534,6 @@
           "audioFile": null
         },
         {
-          "english": "Clitoris",
-          "translation": "kisimi",
-          "pronunciation": "ki-si-mi",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Conceive",
           "translation": "kumimba",
           "pronunciation": "ku-mimba",
@@ -84926,13 +84660,6 @@
           "audioFile": null
         },
         {
-          "english": "Mutilate",
-          "translation": "kukata",
-          "pronunciation": "ku-ka-ta",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Nineteen",
           "translation": "kumi na tissa",
           "pronunciation": "ku-mi na tissa",
@@ -85003,13 +84730,6 @@
           "audioFile": null
         },
         {
-          "english": "Strangle",
-          "translation": "kunyonga, kusonga",
-          "pronunciation": "kunyonga ku-songa",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Surround",
           "translation": "kuzunguka",
           "pronunciation": "ku-zungu-ka",
@@ -85076,13 +84796,6 @@
           "english": "Accident",
           "translation": "(chance event) tukio, plur. ma-, (disaster) msiba",
           "pronunciation": "chan-ce e-vent tu-kio plur ma di-sas-ter",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery",
-          "translation": "uzinzi",
-          "pronunciation": "u-zin-zi",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
           "audioFile": null
         },
@@ -86802,13 +86515,6 @@
           "audioFile": null
         },
         {
-          "english": "Sorcerer",
-          "translation": "mtáwi",
-          "pronunciation": "mtawi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
-          "audioFile": null
-        },
-        {
           "english": "Sprinkle",
           "translation": "muáya",
           "pronunciation": "muaya",
@@ -87159,13 +86865,6 @@
           "audioFile": null
         },
         {
-          "english": "Whoredom",
-          "translation": "Ukahaba",
-          "pronunciation": "u-ka-ha-ba",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
           "english": "Dwelling",
           "translation": "Ukazi",
           "pronunciation": "u-ka-zi",
@@ -87183,13 +86882,6 @@
           "english": "Theology",
           "translation": "Uungu",
           "pronunciation": "uungu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
-          "english": "Whoredom",
-          "translation": "Uzinifu",
-          "pronunciation": "u-zi-ni-fu",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
           "audioFile": null
         },
@@ -88363,13 +88055,6 @@
           "audioFile": null
         },
         {
-          "english": "Strangle",
-          "translation": "songa",
-          "pronunciation": "song-a",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.)",
-          "audioFile": null
-        },
-        {
           "english": "Struggle",
           "translation": "shindana, fanya juhudi",
           "pronunciation": "shind-a-na fany-a ju-hu-di",
@@ -88755,13 +88440,6 @@
           "audioFile": null
         },
         {
-          "english": "Adulterer",
-          "translation": "mzinzi",
-          "pronunciation": "mzin-zi",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
           "english": "Adversity",
           "translation": "mateso, shidda",
           "pronunciation": "ma-te-so shid-da",
@@ -88822,13 +88500,6 @@
           "translation": "nguvu, mamlaka, amri",
           "pronunciation": "ngu-vu mam-la-ka am-ri",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Barbarous",
-          "translation": "-a kishenzi, (cruel) -kali",
-          "pronunciation": "a kish-en-zi",
-          "context": "Madan (1917) English-Swahili Vocabulary (a.)",
           "audioFile": null
         },
         {
@@ -89571,13 +89242,6 @@
           "translation": "káma or kána",
           "pronunciation": "kama or kana",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli prep.)",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterer",
-          "translation": "msínsi",
-          "pronunciation": "msinsi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
           "audioFile": null
         },
         {
@@ -91660,13 +91324,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "uchawi",
-          "pronunciation": "ucha-wi",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
-          "audioFile": null
-        },
-        {
           "english": "Fingernail",
           "translation": "ukucha (pl. kucha)",
           "pronunciation": "ukucha",
@@ -92087,13 +91744,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "kahaba, plur. ma-",
-          "pronunciation": "ka-ha-ba plur ma",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
           "english": "On purpose",
           "translation": "makusudi",
           "pronunciation": "ma-ku-su-di",
@@ -92441,13 +92091,6 @@
           "translation": "kátiri kwánsa",
           "pronunciation": "katiri kwansa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
-          "audioFile": null
-        },
-        {
-          "english": "Prostitute",
-          "translation": "káhaba",
-          "pronunciation": "kahaba",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
           "audioFile": null
         },
         {
@@ -93249,13 +92892,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "Kahaba",
-          "pronunciation": "ka-ha-ba",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "A procurer",
           "translation": "Kawadi",
           "pronunciation": "ka-wa-di",
@@ -93484,13 +93120,6 @@
           "translation": "kasiríṣa",
           "pronunciation": "kasirisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v.)",
-          "audioFile": null
-        },
-        {
-          "english": "Fornicator",
-          "translation": "msínsi; mtongósi",
-          "pronunciation": "msinsi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
           "audioFile": null
         },
         {
@@ -94978,13 +94607,6 @@
           "audioFile": null
         },
         {
-          "english": "The scrotum",
-          "translation": "pumbo",
-          "pronunciation": "pumbo",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "Garlic? vid",
           "translation": "tom",
           "pronunciation": "tom",
@@ -95282,13 +94904,6 @@
           "english": "Decorations",
           "translation": "pambo, plur. ma-",
           "pronunciation": "pamb-o plur ma",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Fornication",
-          "translation": "asherati",
-          "pronunciation": "ash-e-ra-ti",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
           "audioFile": null
         },
@@ -96494,13 +96109,6 @@
           "translation": "mfinessi",
           "pronunciation": "mfi-nessi",
           "context": "A. C. Madan (1903) Swahili-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "A prostitute",
-          "translation": "chancha",
-          "pronunciation": "chancha",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
         {
@@ -97960,13 +97568,6 @@
           "audioFile": null
         },
         {
-          "english": "Harlot, whore",
-          "translation": "Kahaba",
-          "pronunciation": "ka-ha-ba",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Point, summit",
           "translation": "Kilele",
           "pronunciation": "ki-le-le",
@@ -99094,13 +98695,6 @@
           "audioFile": null
         },
         {
-          "english": "Heathen Indian",
-          "translation": "s., Banyani, plur. ma-",
-          "pronunciation": "s banya-ni plur ma",
-          "context": "Madan (1917) English-Swahili Vocabulary (under Heathen)",
-          "audioFile": null
-        },
-        {
           "english": "Field-labourer",
           "translation": "mkulima",
           "pronunciation": "mku-li-ma",
@@ -100176,13 +99770,6 @@
           "translation": "makumbi",
           "pronunciation": "ma-kumbi",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Commit Adultery",
-          "translation": "zini",
-          "pronunciation": "zi-ni",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.)",
           "audioFile": null
         },
         {
@@ -102979,13 +102566,6 @@
           "audioFile": null
         },
         {
-          "english": "Testicles, scrotum",
-          "translation": "mapumbu",
-          "pronunciation": "ma-pumbu",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "Purpose, intention",
           "translation": "maukilifu",
           "pronunciation": "mau-ki-li-fu",
@@ -103637,13 +103217,6 @@
           "audioFile": null
         },
         {
-          "english": "Punishment, torture",
-          "translation": "Adhabu",
-          "pronunciation": "adha-bu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3]",
-          "audioFile": null
-        },
-        {
           "english": "Guilt, guilty party",
           "translation": "Aili",
           "pronunciation": "ai-li",
@@ -103921,13 +103494,6 @@
           "translation": "masaa",
           "pronunciation": "ma-saa",
           "context": "A. C. Madan (1903) Swahili-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Lengthened clitoris",
-          "translation": "kiniuta",
-          "pronunciation": "ki-niu-ta",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
         {
@@ -104267,13 +103833,6 @@
           "audioFile": null
         },
         {
-          "english": "V., to be strangled",
-          "translation": "songolewa",
-          "pronunciation": "songo-le-wa",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "Adverse, adj. to be",
           "translation": "ku téta na-",
           "pronunciation": "ku teta na-",
@@ -104561,13 +104120,6 @@
           "audioFile": null
         },
         {
-          "english": "Nakedness, emptiness",
-          "translation": "Utupu",
-          "pronunciation": "u-tu-pu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
           "english": "Building (see Kuaka)",
           "translation": "Wako",
           "pronunciation": "wa-ko",
@@ -104743,13 +104295,6 @@
           "audioFile": null
         },
         {
-          "english": "Fornication, whoring",
-          "translation": "utalaleshi",
-          "pronunciation": "u-ta-la-leshi",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "And adj., bitterness",
           "translation": "utungu",
           "pronunciation": "u-tungu",
@@ -104921,13 +104466,6 @@
           "english": "Stupidity, ignorance",
           "translation": "Ujinga",
           "pronunciation": "u-jing-a",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery, immorality",
-          "translation": "Uzinzi",
-          "pronunciation": "u-zin-zi",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
           "audioFile": null
         },
@@ -105383,20 +104921,6 @@
           "english": "A relation, relations",
           "translation": "ufungu",
           "pronunciation": "u-fungu",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Mucus from the vagina",
-          "translation": "utoko",
-          "pronunciation": "u-to-ko",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Fornication, adultery",
-          "translation": "uzini",
-          "pronunciation": "u-zi-ni",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
@@ -106682,13 +106206,6 @@
           "audioFile": null
         },
         {
-          "english": "Destruction, mutilation",
-          "translation": "Uumbufu",
-          "pronunciation": "uumbu-fu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
           "english": "Stench, offensive smell",
           "translation": "Uvundo",
           "pronunciation": "u-vundo",
@@ -107263,13 +106780,6 @@
           "audioFile": null
         },
         {
-          "english": "Instrument of witchcraft",
-          "translation": "Mwanza",
-          "pronunciation": "mwanza",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 2]",
-          "audioFile": null
-        },
-        {
           "english": "Or mianzi, pl. of Mwanzi",
           "translation": "Myanzi",
           "pronunciation": "myanzi",
@@ -107434,13 +106944,6 @@
           "english": "Drawing, pulling, rowing",
           "translation": "mfuto",
           "pronunciation": "mfu-to",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Ec., to whore, fornicate",
-          "translation": "zingana",
-          "pronunciation": "zinga-na",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
@@ -108719,13 +108222,6 @@
           "audioFile": null
         },
         {
-          "english": "Especially said of corpses",
-          "translation": "oshewa",
-          "pronunciation": "oshe-wa",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "Ec., to surpass each other",
           "translation": "pitana",
           "pronunciation": "pi-ta-na",
@@ -109272,13 +108768,6 @@
           "audioFile": null
         },
         {
-          "english": "Lunacy, madness, imbecility",
-          "translation": "Wazimu",
-          "pronunciation": "wa-zi-mu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
-          "audioFile": null
-        },
-        {
           "english": "A charm, spell, incantation",
           "translation": "athima",
           "pronunciation": "athi-ma",
@@ -109304,13 +108793,6 @@
           "translation": "-geugeu",
           "pronunciation": "geu-geu",
           "context": "A. C. Madan (1903) Swahili-English Dictionary [a.]",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterate, falsify, debase",
-          "translation": "ghoshi",
-          "pronunciation": "ghoshi",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [v.]",
           "audioFile": null
         },
         {
@@ -109891,13 +109373,6 @@
           "english": "Us., to continue, perpetuate",
           "translation": "daimisha",
           "pronunciation": "dai-misha",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
-          "english": "Unnatural carnal intercourse",
-          "translation": "jamei",
-          "pronunciation": "ja-mei",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
           "audioFile": null
         },
@@ -111379,13 +110854,6 @@
           "audioFile": null
         },
         {
-          "english": "The stump of a mutilated member",
-          "translation": "gutu",
-          "pronunciation": "gu-tu",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",
-          "audioFile": null
-        },
-        {
           "english": "The province of Hejaz in Arabia",
           "translation": "hejazi",
           "pronunciation": "he-ja-zi",
@@ -111452,13 +110920,6 @@
           "english": "Fickle, wayward (a. changeable)",
           "translation": "geugeu",
           "pronunciation": "geu-geu",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Falsify, debase (v. adulterate)",
-          "translation": "Ghoshi",
-          "pronunciation": "ghosh-i",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
@@ -112863,13 +112324,6 @@
           "audioFile": null
         },
         {
-          "english": "Wild, rapacious (a. invar. savage)",
-          "translation": "Mbuai",
-          "pronunciation": "mbuai",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Also Mfransa, Mfárasa, a Frenchman",
           "translation": "Mfaransa",
           "pronunciation": "mfa-ran-sa",
@@ -113049,13 +112503,6 @@
           "translation": "Talasimu",
           "pronunciation": "ta-la-si-mu",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3]",
-          "audioFile": null
-        },
-        {
-          "english": "In a state of nudity or destitution",
-          "translation": "Tupu-tupu",
-          "pronunciation": "tupu-tupu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [adv.]",
           "audioFile": null
         },
         {
@@ -113504,13 +112951,6 @@
           "translation": "boza",
           "pronunciation": "bo-za",
           "context": "A. C. Madan (1903) Swahili-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Commit sodomy, adultery, fornication",
-          "translation": "fira",
-          "pronunciation": "fi-ra",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [v.]",
           "audioFile": null
         },
         {
@@ -115036,13 +114476,6 @@
           "english": "Disturbed, confused, &c (v. be troubled)",
           "translation": "Fathaika",
           "pronunciation": "fath-ai-ka",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery, fornication (v. commit sodomy)",
-          "translation": "Fira",
-          "pronunciation": "fi-ra",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
@@ -117294,20 +116727,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture, chastisement, correction (n. punishment)",
-          "translation": "Athabu",
-          "pronunciation": "ath-a-bu",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Banyan, heathen Indian, usually trader from Cutch",
-          "translation": "Banyani",
-          "pronunciation": "bany-a-ni",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Note, bill, ticket, letter, esp (n. written form)",
           "translation": "Barua",
           "pronunciation": "ba-rua",
@@ -117578,13 +116997,6 @@
           "translation": "haikai wat'u",
           "pronunciation": "hai-kai wat'u",
           "context": "Taylor (1891) African Aphorisms, Note [421_1]",
-          "audioFile": null
-        },
-        {
-          "english": "Bewitch, perform incantations, &c (v. use sorcery)",
-          "translation": "Anga",
-          "pronunciation": "ang-a",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
         {
@@ -118113,13 +117525,6 @@
           "audioFile": null
         },
         {
-          "english": "Defect, deformity, disfigurement, blemish, mutilation",
-          "translation": "lemaa",
-          "pronunciation": "le-maa",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "Ec., to avoid each other, to be angry with each other",
           "translation": "sirana",
           "pronunciation": "si-ra-na",
@@ -118165,13 +117570,6 @@
           "english": "Open the eyes wide, stare, glare (v. esp. with macho)",
           "translation": "Kodoa",
           "pronunciation": "ko-doa",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Conversation, amusement (n. plur. social intercourse)",
-          "translation": "Mazungumzo",
-          "pronunciation": "ma-zung-um-zo",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
@@ -118939,13 +118337,6 @@
           "audioFile": null
         },
         {
-          "english": "Deformity, disfigurement, blemish, mutilation (n. defect)",
-          "translation": "Lemaa",
-          "pronunciation": "le-maa",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Pastures, feeding-places for animals (n. plur. pasturage)",
           "translation": "Machunga",
           "pronunciation": "mach-ung-a",
@@ -119688,13 +119079,6 @@
           "audioFile": null
         },
         {
-          "english": "Anything of a barbarous, rude, uncivilized kind, esp (n. and adv)",
-          "translation": "Kishenzi",
-          "pronunciation": "kish-en-zi",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Remember, think of, bear in mind, brood over, i (v. call to mind)",
           "translation": "Kumbuka",
           "pronunciation": "kumb-u-ka",
@@ -120195,13 +119579,6 @@
           "english": "Declare unlawful, forbid, ban, interdict, excommunicate (v. make illegal)",
           "translation": "Harimu",
           "pronunciation": "ha-ri-mu",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "A beast, like a brute, and so of persons, fool, idiot, brute (n. a brute)",
-          "translation": "Hayawani",
-          "pronunciation": "ha-ya-wa-ni",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
           "audioFile": null
         },
@@ -121151,13 +120528,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "mke mchawi",
-          "pronunciation": "mke mcha-wi",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.)",
-          "audioFile": null
-        },
-        {
           "english": "Dance",
           "translation": "tésa kua ku rúka",
           "pronunciation": "tesa kua ku ruka",
@@ -121287,27 +120657,6 @@
           "english": "Thing",
           "translation": "Kī-tū; zi-tū",
           "pronunciation": "ki-tu",
-          "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "M-tsāwi; wa",
-          "pronunciation": "m-tsawi",
-          "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "M-tāwi; wa",
-          "pronunciation": "m-tawi",
-          "context": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "M-cāwi; wa",
-          "pronunciation": "m-cawi",
           "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
           "audioFile": null
         },
@@ -121704,34 +121053,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "utáwi",
-          "pronunciation": "utawi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "Ū-tsāwi",
-          "pronunciation": "u-tsawi",
-          "context": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "Ū-tāwi",
-          "pronunciation": "u-tawi",
-          "context": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "Ū-cāwi",
-          "pronunciation": "u-cawi",
-          "context": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
-          "audioFile": null
-        },
-        {
           "english": "In, inside",
           "translation": "N-dānī",
           "pronunciation": "n-dani",
@@ -122072,5 +121393,6 @@
   ],
   "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
   "isoCode": "swh",
-  "glottocode": "swah1253"
+  "glottocode": "swah1253",
+  "totalEntries": 17323
 }

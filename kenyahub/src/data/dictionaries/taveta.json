@@ -3015,13 +3015,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "U-sāwi",
-          "pronunciation": "u-sawi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
-          "audioFile": null
-        },
-        {
           "english": "One hundred",
           "translation": "igana",
           "pronunciation": "ee-gah-nah",
@@ -3246,20 +3239,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "M-sāwi; va-",
-          "pronunciation": "m-sawi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "M-sāwi; va",
-          "pronunciation": "m-sawi",
-          "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
           "english": "Spirit, soul",
           "translation": "Nkōma",
           "pronunciation": "nko-ma",
@@ -3348,5 +3327,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
   "isoCode": "tvs",
-  "glottocode": "tave1238"
+  "glottocode": "tave1238",
+  "totalEntries": 457
 }

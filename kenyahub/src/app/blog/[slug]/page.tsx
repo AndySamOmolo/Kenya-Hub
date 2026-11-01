@@ -1,6 +1,7 @@
+import { notFound } from "next/navigation";
 import { Client, Databases, Query } from "node-appwrite";
 import BlogPostContent from "./BlogPostContent";
-import { STATIC_BLOG_POSTS, getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/blog-posts";
+import { getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/blog-posts";
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
@@ -22,10 +23,8 @@ interface BlogPost {
 
 // Generate static params for all blogs at build time
 export async function generateStaticParams() {
-  // Always include static blog post slugs
   const staticSlugs = getStaticBlogSlugs().map((slug) => ({ slug }));
 
-  // Also try to fetch Appwrite blog slugs
   let appwriteSlugs: { slug: string }[] = [];
   try {
     const client = new Client()
@@ -50,27 +49,18 @@ export async function generateStaticParams() {
     console.error("Failed to fetch Appwrite blog posts:", error);
   }
 
-  // Merge and deduplicate
   const allSlugs = new Map<string, { slug: string }>();
   for (const s of [...staticSlugs, ...appwriteSlugs]) {
     allSlugs.set(s.slug, s);
   }
 
-  const params = Array.from(allSlugs.values());
-
-  // Next.js throws an error if generateStaticParams returns an empty array with output: export
-  if (params.length === 0) {
-    return [{ slug: "_empty" }];
-  }
-
-  return params;
+  return Array.from(allSlugs.values());
 }
 
 // Dynamically generate metadata for each post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
-  // Check static posts first
   const staticPost = getStaticBlogPost(slug);
   if (staticPost) {
     return {
@@ -87,7 +77,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
-  // Try Appwrite
   try {
     const client = new Client()
       .setEndpoint("https://fra.cloud.appwrite.io/v1")
@@ -131,7 +120,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   let post: BlogPost | null = null;
 
-  // Check static posts first
   const staticPost = getStaticBlogPost(slug);
   if (staticPost) {
     post = {
@@ -149,7 +137,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     };
   }
 
-  // If not static, try Appwrite
   if (!post) {
     try {
       const client = new Client()
@@ -171,8 +158,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     }
   }
 
-  // Article structured data for SEO
-  const articleJsonLd = post ? {
+  if (!post) {
+    notFound();
+  }
+
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
@@ -188,16 +178,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     mainEntityOfPage: `https://kenyahub.me/blog/${post.slug}/`,
     ...(post.coverImage && { image: post.coverImage }),
     keywords: post.tags?.join(", "),
-  } : null;
+  };
 
   return (
     <>
-      {articleJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <BlogPostContent post={post} />
     </>
   );

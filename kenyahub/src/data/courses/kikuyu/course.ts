@@ -411,10 +411,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "source": "Three trees and four stones"
           },
           {
-            "target": "Nĩtũrathoma kiugo Imue ũmũthĩ.",
-            "source": "We are learning the word one today."
-          },
-          {
             "target": "Mũthuri nĩatairie Igiri mũciĩ.",
             "source": "The elder explained two at the homestead."
           }
@@ -1096,10 +1092,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Ndikwenda kuthi; ndingihotta kuthi.",
             "source": "I do not want to go; I cannot go."
-          },
-          {
-            "target": "Nĩtũrathoma kiugo Ningathi ũmũthĩ.",
-            "source": "We are learning the word i will go today."
           },
           {
             "target": "Mũthuri nĩatairie Ndikathie mũciĩ.",
@@ -1936,10 +1928,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nĩtũrathoma kiugo mirongoiri na itanu ũmũthĩ.",
-            "source": "We are learning the word fifty today."
-          },
-          {
             "target": "Mũthuri nĩatairie kiarra ki morroto mũciĩ.",
             "source": "The elder explained finger at the homestead."
           }
@@ -2114,10 +2102,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo marigu ũmũthĩ.",
-            "source": "We are learning the word banana today."
-          },
           {
             "target": "Mũthuri nĩatairie kutziara mũciĩ.",
             "source": "The elder explained bear fruit at the homestead."
@@ -3233,10 +3217,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nĩtũrathoma kiugo riika ũmũthĩ.",
-            "source": "We are learning the word age-grade today."
-          },
-          {
             "target": "Mũthuri nĩatairie ituĩka mũciĩ.",
             "source": "The elder explained generational transfer of governance ceremony at the homestead."
           }
@@ -3473,10 +3453,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nĩtũrathoma kiugo Ku-Tahikia ũmũthĩ.",
-            "source": "We are learning the word to purify. ku is the infinitive prefix common to all verbs today."
-          },
-          {
             "target": "Mũthuri nĩatairie Ruoro mũciĩ.",
             "source": "The elder explained knife used for branding cattle at the homestead."
           }
@@ -3588,10 +3564,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo Muburi ũmũthĩ.",
-            "source": "We are learning the word goat today."
-          },
           {
             "target": "Mũthuri nĩatairie Murogi mũciĩ.",
             "source": "The elder explained medicine man who deals in black magic at the homestead."

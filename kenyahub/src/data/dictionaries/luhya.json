@@ -16374,13 +16374,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse",
-          "translation": "umufu",
-          "pronunciation": "u-mu-fu",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
           "english": "Abscess",
           "translation": "liwuri",
           "pronunciation": "li-wu-ri",
@@ -17949,13 +17942,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "wutsua",
-          "pronunciation": "wutsua",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "olukhu",
           "pronunciation": "o-lukhu",
@@ -18022,13 +18008,6 @@
           "english": "Swine",
           "translation": "tzimbidzi",
           "pronunciation": "tzimbidzi",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
-          "english": "Whore",
-          "translation": "umutamba",
-          "pronunciation": "u-mu-tamba",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
           "audioFile": null
         },
@@ -18873,13 +18852,6 @@
           "audioFile": null
         },
         {
-          "english": "Adultery",
-          "translation": "utamba",
-          "pronunciation": "u-tamba",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
           "english": "Business",
           "translation": "indi or makuho",
           "pronunciation": "indi or ma-ku-ho",
@@ -18953,13 +18925,6 @@
           "english": "Judgment",
           "translation": "ouwirwatzi",
           "pronunciation": "ou-wirwatzi",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
-          "english": "Sorcerer",
-          "translation": "mulosi",
-          "pronunciation": "mu-lo-si",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
           "audioFile": null
         },
@@ -19776,13 +19741,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "Obu-losi",
-          "pronunciation": "bu-losi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
-          "audioFile": null
-        },
-        {
           "english": "Licentious",
           "translation": "ewanga wakassi, -umutamba",
           "pronunciation": "e-wanga wa-kassi -umutamba",
@@ -20287,13 +20245,6 @@
           "audioFile": null
         },
         {
-          "english": "Urinate, to",
-          "translation": "-inyala",
-          "pronunciation": "inya-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)",
-          "audioFile": null
-        },
-        {
           "english": "He comes ()",
           "translation": "iedza",
           "pronunciation": "iedz-a",
@@ -20402,13 +20353,6 @@
           "english": "Tremble, to",
           "translation": "renga",
           "pronunciation": "reng-a",
-          "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI)",
-          "audioFile": null
-        },
-        {
-          "english": "Urinate, to",
-          "translation": "inyala",
-          "pronunciation": "iny-a-la",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI)",
           "audioFile": null
         },
@@ -22632,13 +22576,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Omu-losi / U-fira. Omu-losi; aba-",
-          "pronunciation": "mu-losi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
-          "audioFile": null
-        },
-        {
           "english": "Devil",
           "translation": "misambwa",
           "pronunciation": "mi-sambwa",
@@ -22968,27 +22905,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Omu-losi",
-          "pronunciation": "mu-losi",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "U-fira. Omu-losi; aba",
-          "pronunciation": "u fi-ra oh-mu loh-si",
-          "context": "6. Lu-masaba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Umu-lozi",
-          "pronunciation": "u-mu loh-zi",
-          "context": "6a. Lu-konde (Bukusu) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
           "english": "There",
           "translation": "E-ria",
           "pronunciation": "e ria",
@@ -23150,20 +23066,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Omulosi",
-          "pronunciation": "o-mu-loh-si",
-          "context": "LUNYARA — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 946–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Omuloṣi",
-          "pronunciation": "omulosi",
-          "context": "LUKABARASI (LUWANGA) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 946–966)",
-          "audioFile": null
-        },
-        {
           "english": "I, me",
           "translation": "Esie",
           "pronunciation": "e-sie",
@@ -23286,13 +23188,6 @@
           "english": "Thing",
           "translation": "Isindu; Bibindu",
           "pronunciation": "i-sind-u",
-          "context": "LUSṒKWIA — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 946–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Omulosi; Aba",
-          "pronunciation": "o-mu-loh-si",
           "context": "LUSṒKWIA — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 946–966)",
           "audioFile": null
         },
@@ -24151,13 +24046,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "ufira",
-          "pronunciation": "u-fi-ra",
-          "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI)",
-          "audioFile": null
-        },
-        {
           "english": "In, inside",
           "translation": "Mu",
           "pronunciation": "mu",
@@ -24708,5 +24596,6 @@
   ],
   "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
   "isoCode": "luy",
-  "glottocode": "luyi1234"
+  "glottocode": "luyi1234",
+  "totalEntries": 3495
 }

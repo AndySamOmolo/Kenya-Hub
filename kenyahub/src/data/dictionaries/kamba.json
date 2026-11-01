@@ -11021,13 +11021,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse",
-          "translation": "nukwie (Ulu) / ekugua (Nganyawa)",
-          "pronunciation": "nukwie",
-          "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
-          "audioFile": null
-        },
-        {
           "english": "Battle",
           "translation": "makáu",
           "pronunciation": "makau",
@@ -11109,13 +11102,6 @@
           "translation": "kithitu",
           "pronunciation": "kithi-tu",
           "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
-          "english": "Witch doctor",
-          "translation": "muganga, pl. aganga",
-          "pronunciation": "muganga",
-          "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
         {
@@ -15544,13 +15530,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "muthei",
-          "pronunciation": "muthei",
-          "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "ekaunene (Ulu) / kiloonzo (Nganyawa)",
           "pronunciation": "ekaunene",
@@ -15856,13 +15835,6 @@
           "translation": "kwitanthi (Ulu) / allula (Nganyawa)",
           "pronunciation": "kwitanthi",
           "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
-          "audioFile": null
-        },
-        {
-          "english": "Vulva",
-          "translation": "kinu",
-          "pronunciation": "ki-nu",
-          "context": "Hildegarde Hinde (1904) — Kamba",
           "audioFile": null
         },
         {
@@ -16479,13 +16451,6 @@
           "translation": "liza ulu",
           "pronunciation": "li-za u-lu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. n.)",
-          "audioFile": null
-        },
-        {
-          "english": "Naked",
-          "translation": "mudei",
-          "pronunciation": "mu-dei",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)",
           "audioFile": null
         },
         {
@@ -17210,13 +17175,6 @@
           "audioFile": null
         },
         {
-          "english": "Whore",
-          "translation": "kilalei",
-          "pronunciation": "ki-la-lei",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
-          "audioFile": null
-        },
-        {
           "english": "Widen",
           "translation": "zeúwia kiámu",
           "pronunciation": "zeuwia kiamu",
@@ -17850,13 +17808,6 @@
           "english": "On top",
           "translation": "kuulu (Ulu) / iutu (Nganyawa)",
           "pronunciation": "kuulu",
-          "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
-          "audioFile": null
-        },
-        {
-          "english": "Ordure",
-          "translation": "mavia (Ulu) / mai (Nganyawa)",
-          "pronunciation": "mavia",
           "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
           "audioFile": null
         },
@@ -19996,13 +19947,6 @@
           "audioFile": null
         },
         {
-          "english": "Urinate",
-          "translation": "guma (Ulu) / kūma (Nganyawa)",
-          "pronunciation": "guma",
-          "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
-          "audioFile": null
-        },
-        {
           "english": "Whisper",
           "translation": "nena kabolla",
           "pronunciation": "ne-na ka-bolla",
@@ -20920,13 +20864,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture",
-          "translation": "niamájia",
-          "pronunciation": "niamajia",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
-          "audioFile": null
-        },
-        {
           "english": "Totally",
           "translation": "maúndu mónde",
           "pronunciation": "maundu monde",
@@ -21431,13 +21368,6 @@
           "audioFile": null
         },
         {
-          "english": "Clitoris",
-          "translation": "unguthu",
-          "pronunciation": "unguthu",
-          "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
           "english": "Conceive",
           "translation": "eibu (Ulu) / kēgu (Nganyawa)",
           "pronunciation": "eibu",
@@ -21557,13 +21487,6 @@
           "audioFile": null
         },
         {
-          "english": "Mutilate",
-          "translation": "kudilla",
-          "pronunciation": "ku-dilla",
-          "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
           "english": "Nineteen",
           "translation": "ekumi na kenda",
           "pronunciation": "e-ku-mi na kenda",
@@ -21623,13 +21546,6 @@
           "english": "Scabbard",
           "translation": "ndoo",
           "pronunciation": "ndoo",
-          "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
-          "english": "Strangle",
-          "translation": "kunyunga",
-          "pronunciation": "kunyunga",
           "context": "Hildegarde Hinde (1904) — Kamba",
           "audioFile": null
         },
@@ -22348,13 +22264,6 @@
           "audioFile": null
         },
         {
-          "english": "Sorcerer",
-          "translation": "m'oi",
-          "pronunciation": "m'oi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
-          "audioFile": null
-        },
-        {
           "english": "Sprinkle",
           "translation": "itánga; itia",
           "pronunciation": "itanga",
@@ -22898,13 +22807,6 @@
           "translation": "tá",
           "pronunciation": "ta",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba prep.)",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterer",
-          "translation": "mulióngi",
-          "pronunciation": "muliongi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
           "audioFile": null
         },
         {
@@ -23657,13 +23559,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "ūoii",
-          "pronunciation": "uoii",
-          "context": "Hildegarde Hinde (1904) — Kamba",
-          "audioFile": null
-        },
-        {
           "english": "Centipedes",
           "translation": "Ing'abwe",
           "pronunciation": "ing'abwe",
@@ -23846,13 +23741,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "kilalei",
-          "pronunciation": "ki-la-lei",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
-          "audioFile": null
-        },
-        {
           "english": "Provisions",
           "translation": "kándu ka ku ya",
           "pronunciation": "kandu ka ku ya",
@@ -23990,13 +23878,6 @@
           "translation": "dátia; ikia udatu",
           "pronunciation": "datia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v.)",
-          "audioFile": null
-        },
-        {
-          "english": "Fornicator",
-          "translation": "kilalei; mulióngi",
-          "pronunciation": "ki-la-lei",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
           "audioFile": null
         },
         {
@@ -26023,13 +25904,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft or sorcery",
-          "translation": "Uoi",
-          "pronunciation": "uoi",
-          "context": "C. W. Hobley (1922) Bantu Beliefs and Customary Institutions, Glossary p. 308",
-          "audioFile": null
-        },
-        {
           "english": "Thou / You (singular)",
           "translation": "We / Niwe",
           "pronunciation": "we / ni-we",
@@ -26314,13 +26188,6 @@
           "translation": "Malengi",
           "pronunciation": "ma-leng-i",
           "context": "A-Kamba agriculture — C. W. Hobley, Ethnology of A-Kamba (1910, p. 17)",
-          "audioFile": null
-        },
-        {
-          "english": "Practitioner of sorcery (pl. Aoi)",
-          "translation": "Muoi",
-          "pronunciation": "muoi",
-          "context": "C. W. Hobley (1922) Bantu Beliefs and Customary Institutions, Glossary p. 307",
           "audioFile": null
         },
         {
@@ -27633,13 +27500,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Mū-ōī; a-ōī",
-          "pronunciation": "mu-oi",
-          "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
           "english": "Woman",
           "translation": "Mū-ndū mū-kā; a-ndū a-kā. Kī-vēti; i-vēti",
           "pronunciation": "moo ndoo moo kah",
@@ -28291,13 +28151,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "uwói",
-          "pronunciation": "uwoi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
-          "audioFile": null
-        },
-        {
           "english": "Goat (she)",
           "translation": "M-baika (young). M-bui n-ga",
           "pronunciation": "m bai-ka",
@@ -28315,13 +28168,6 @@
           "english": "Rhinoceros",
           "translation": "M-būzya; ma",
           "pronunciation": "m-buzya",
-          "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "Ū-oī",
-          "pronunciation": "u-oi",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
         },
@@ -28757,5 +28603,6 @@
   ],
   "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
   "isoCode": "kam",
-  "glottocode": "kamb1297"
+  "glottocode": "kamb1297",
+  "totalEntries": 4071
 }

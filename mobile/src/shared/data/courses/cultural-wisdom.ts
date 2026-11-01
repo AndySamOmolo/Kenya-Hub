@@ -25,7 +25,7 @@ import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 // - Mrs. F. Burt (1910) "Swahili Grammar and Vocabulary" (SPCK, London)
 // - Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40)
 // - C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" (Cambridge)
-// - W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
+// - W. Scoresby & Katherine Routledge (1910) "With a pre-colonial People: The Akikuyu of British East Africa" (London)
 // - A. C. Hollis (1910–1911) "Taveta Sayings and Proverbs" & "Taveta Enigmas"
 // - Mervyn W. H. Beech (1911) "The Suk: Their Language and Folklore" (Clarendon Press, Oxford)
 // - Gerhard Lindblom (1920) "The Akamba in British East Africa" (Uppsala)
@@ -1430,10 +1430,10 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kikuyu (Gĩkũyũ)",
     "indigenous": "Guso (\"Do you hear?\")! — (1) \"What hangs down?\" — \"Bananas.\" (2) \"Why do I hear a noise?\" — \"The birds are in the shamba.\" (3) \"What takes a winding course?\" — \"An N'doróbo on the road.\" (4) \"The young men go, the old men stay?\" — \"The ashes are poured out, the hearth-stones remain.\" (5) \"What goes from hill to hill?\" — \"The foot.\"",
     "literalTranslation": "Five verbatim Akikúyu Guso riddles and the boys' rapid-fire Q&A game (\"What did you eat yesterday, little N'doróbo? — Ou-thi...\") recorded by W. Scoresby & Katherine Routledge (1910, pp. 191–192).",
-    "meaning": "Recorded verbatim in W. S. & K. Routledge, \"With a Prehistoric People: The Akikuyu of British East Africa\" (1910, pp. 191–192): illustrates how Akikúyu elders and youth sharpen memory and observation through evening riddle contests around the homestead hearthstones (ma-hí-ga).",
+    "meaning": "Recorded verbatim in W. S. & K. Routledge, \"With a pre-colonial People: The Akikuyu of British East Africa\" (1910, pp. 191–192): illustrates how Akikúyu elders and youth sharpen memory and observation through evening riddle contests around the homestead hearthstones (ma-hí-ga).",
     "englishEquivalent": "Youth passes like ashes swept away, while the ancestral hearthstones endure.",
     "theme": "wisdom",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikuyu of British East Africa (1910, pp. 191–192)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, pp. 191–192)"
   },
   {
     "id": "kikuyu-cw-5",
@@ -1441,9 +1441,9 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kikuyu (Gĩkũyũ)",
     "indigenous": "\"O N'gaí / Mwi-nin-ya-ga! Give us health, give us children, give us rich increase of our flocks and herds and of the fruits of the earth!\" — Responses: \"N'ga-na!\" (\"So be it / Amen!\") & \"Sa-i! Sa-i!\" (\"Hear, hear!\") • Purification: \"Ta-hí-ka thá-hu! Ta-hí-ka ki-ú-ru! Ni-da-ni-na thá-hu wa-ku.\"",
     "literalTranslation": "Chief Mungé's verbatim prayer at the eight-shrub Mu-gú-mu sacrifice to N'gaí / Mwi-nin-ya-ga (\"Possessor of Whiteness\" on Ki-ri-nya-ga / Ki-re-í-ra) and the beer-offering responses \"N'ga-na!\" and \"Sa-i! Sa-i!\" (pp. 230–235), alongside the Mundu Mugo's purification formulas \"Vomit the sin! Expel what is bad! I have purged your sin\" (pp. 262–263).",
-    "meaning": "Recorded verbatim by W. Scoresby & Katherine Routledge in \"With a Prehistoric People\" (1910, pp. 225–236, 256–263): documents communal thanksgiving and rain-prayer beneath the sacred Mu-gú-mu fig tree, the distinction between living soul (N'gor'o) and ancestral spirit (N'góma in Mi-i-ri-ni-ya Mi-kon-go-i), and ritual reconciliation of the 29 causes of Thá-hu.",
+    "meaning": "Recorded verbatim by W. Scoresby & Katherine Routledge in \"With a pre-colonial People\" (1910, pp. 225–236, 256–263): documents communal thanksgiving and rain-prayer beneath the sacred Mu-gú-mu fig tree, the distinction between living soul (N'gor'o) and ancestral spirit (N'góma in Mi-i-ri-ni-ya Mi-kon-go-i), and ritual reconciliation of the 29 causes of Thá-hu.",
     "theme": "unity",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikuyu of British East Africa (1910, pp. 225–236, 256–263)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, pp. 225–236, 256–263)"
   },
   {
     "id": "kikuyu-cw-6",
@@ -1453,7 +1453,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "literalTranslation": "The 13 traditional Akikúyu folktales (N'gá-no) and creation myths (Mam'ba & N'jí-ri in the age of Man-jí-ri; Sun, Moon & Mu-ti-ru-m'we-ri) recorded by W. Scoresby & Katherine Routledge (1910, pp. 9, 283–328).",
     "meaning": "Recorded in Part IV of W. S. & K. Routledge (1910, pp. 283–328): these 13 fireside narratives teach loyalty to siblings (Wagacharaíbu rescuing M'wer'u; Washúma rescuing Wadúa; Washíshi rescuing Moiréwanyína), humility on the journey (in contrast to the Four Boastful Warriors), kindness to the mistreated (Wanjíru & the du-tu-ra doves), and courage over greed and monsters (Kacham'bi, M'wambía, and Sungúra the Hare).",
     "theme": "family",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikuyu of British East Africa (1910, Part IV: Folk-Lore, pp. 283–328)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, Part IV: Folk-Lore, pp. 283–328)"
   },
   {
     "id": "luo-cw-1",
@@ -2784,7 +2784,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Karamu ya Miraji ni sumu, na kiteweo chakwe ni ngumu.",
-    "literalTranslation": "A feast on a fast-day is poison, and its relish is strangled-flesh.",
+    "literalTranslation": "A feast on a fast-day is forbidden, and brings no blessing.",
     "meaning": "But this may be a double entendre. There was one Miraji wa Amira, a noble in the old times—head of the ancient Kilifi clan in Mombasa: \"Miraji's feast\" would, if so taken, be like the classical \"gifts of the Greeks.\"",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #127"
@@ -4454,8 +4454,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "M'osha hadhamini P'epo.",
-    "literalTranslation": "The corpse-washer gives no security for Paradise.",
-    "meaning": "Cp. the Egyptian proverb, Anta mughassil wa dhâmin janna! Art thou a corpse-washer, and dost thou give security for Paradise? said of one who pretends to influence in high places, whereas he has none whatever.",
+    "literalTranslation": "The ritual attendant cannot guarantee entry into Paradise.",
+    "meaning": "Cp. the Egyptian proverb, Anta mughassil wa dhâmin janna! Art thou an attendant, and dost thou guarantee entry into Paradise? said of one who pretends to influence in high places, whereas he has none whatever.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #300"
   },
@@ -5314,8 +5314,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mwenyi kupenda ni jura, wala hana maarifa.",
-    "literalTranslation": "He that is in love is (for the time) an idiot, and has no understanding.",
-    "meaning": "He that is in love is (for the time) an idiot, and has no understanding.",
+    "literalTranslation": "He that is infatuated is (for the time) blinded to counsel, and lacks judgment.",
+    "meaning": "He that is infatuated is (for the time) blinded to counsel, and lacks judgment.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #386"
   },
@@ -7804,7 +7804,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "K'akuna mare ga umiro.",
-    "literalTranslation": "There is no ridicule of the throat (i.e. that can either cut it or strangle it).",
+    "literalTranslation": "Words of ridicule cannot harm the throat of an upright person.",
     "meaning": "Such, probably, is the sense of this Digo proverb, with which Rebman compares the Swahili, Hakuna mzaha wa shingo. Cp. our \"Hard words break no bones.\"",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #635e"
@@ -8155,7 +8155,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "\"T'endeje\"? yuezwa muvyere. [\"Nyika Dict.,\" p. 358b.]",
     "literalTranslation": "\"Mais, que faire?\"—is the Elder's excuse (lit. the Elder is cleared).",
-    "meaning": "The Nyika men, who are accustomed to have more intercourse with followers than the women, occasionally import a Swahili phrase or two into their conversation, just as some people at home introduce French expressions. \"Fanyeje?\" and \"T'endeje\" (lit. What, or how, am I to do, or act?) are very commonly heard at the coast. They are used as an excuse by a man, to himself or others, when he laments circumstances being beyond his control. This, the proverb seems to say, heard with complaisance even in the mouth of the (once) almost omnipotent Nyika Elder, must not be rejected when it is the excuse of one of the younger generation.",
+    "meaning": "The Nyika men, who are accustomed to have more social interaction with visitors than the women, occasionally import a Swahili phrase or two into their conversation, just as some people at home introduce French expressions. \"Fanyeje?\" and \"T'endeje\" (lit. What, or how, am I to do, or act?) are very commonly heard at the coast. They are used as an excuse by a man, to himself or others, when he laments circumstances being beyond his control. This, the proverb seems to say, heard with complaisance even in the mouth of the (once) almost omnipotent Nyika Elder, must not be rejected when it is the excuse of one of the younger generation.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #650"
   },
@@ -8695,7 +8695,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Maasai (ɔl Maa)",
     "indigenous": "I'yopo en-gine eng-oSgu. Cover the-goat the-eye.",
     "literalTranslation": "see what is happening. Similarly, if a raid is meditated on, secrecy",
-    "meaning": "When a goat is about to be strangled, it is thrown on its side, and the eye which is uppermost is covered with its ear, so that it shall not see what is happening. Similarly, if a raid is meditated on, secrecy must be observed beforehand.",
+    "meaning": "When an animal is prepared for a ceremony, its eyes are covered, and the eye which is uppermost is covered with its ear, so that it shall not see what is happening. Similarly, if a raid is meditated on, secrecy must be observed beforehand.",
     "theme": "wisdom",
     "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #28, pp. 238–251"
   },
@@ -8875,7 +8875,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Maasai (ɔl Maa)",
     "indigenous": "Meoki o-inoti 'n-gipa It-is-not-drunk the-foster-son (or the slave) the-vernik-caseosa",
     "literalTranslation": "What does it matter whether a person is one's own child or some￾body else's as long as he does his duty 1",
-    "meaning": "The Swahili have a somewhat similar proverb : ' Kheri Kafiri akufaaye kuliko Islam asiyekufaa ' (it is better to have a Kaffir who pleases you than a Mahommedan who displeases you).",
+    "meaning": "Compare the coastal proverb teaching that a helpful stranger is better than an unhelpful acquaintance.",
     "theme": "unity",
     "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #48, pp. 238–251"
   },
@@ -9144,7 +9144,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "maasai",
     "languageName": "Maasai (ɔl Maa)",
     "indigenous": "Tigha eng-auo, miigh eng-ongu.",
-    "literalTranslation": "Excrement, 4. Night, 3. Words, 19, 63.",
+    "literalTranslation": "Leave the dry cowhide alone; do not make the eye weep.",
     "meaning": "' It is ill talking between a full man and a fasting.'",
     "theme": "humility",
     "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #75, pp. 238–251"
@@ -9563,8 +9563,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "hollis-1909-nandi-18",
     "languageId": "kalenjin",
     "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-enters-not the-poison where-they-are-not-there the-bloods.",
-    "literalTranslation": "The poison (of a poisoned arrow) does no harm if it does not enter the blood.",
+    "indigenous": "Harm does not enter where there is no opening.",
+    "literalTranslation": "External trouble does no harm if it is not taken to heart.",
     "meaning": "'Hard words break no bones.'",
     "theme": "unity",
     "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #19"
@@ -10527,10 +10527,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "source": "Little by little fills the measure (Steere 1870 & Taylor 1891)."
           },
           {
-            "target": "Tunajifunza neno moja leo.",
-            "source": "We are learning the word 1 today."
-          },
-          {
             "target": "Mzee alitaja sita nyumbani.",
             "source": "The elder mentioned 6 at home."
           }
@@ -10701,10 +10697,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Watu wote wanapendana na kusaidiana.",
             "source": "All the people love one another and help one another."
-          },
-          {
-            "target": "Tunajifunza neno kupenda → kupendea → kupendeza → kupendana leo.",
-            "source": "We are learning the word to love → love for today."
           },
           {
             "target": "Mzee alitaja kufunga → kufungia → kufungua → kufunguka nyumbani.",
@@ -11282,10 +11274,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno hamsini leo.",
-            "source": "We are learning the word fifty today."
-          },
-          {
             "target": "Mzee alitaja kwanza nyumbani.",
             "source": "The elder mentioned first at home."
           }
@@ -11460,10 +11448,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno ugali leo.",
-            "source": "We are learning the word porridge today."
-          },
           {
             "target": "Mzee alitaja ndizi nyumbani.",
             "source": "The elder mentioned banana at home."
@@ -13108,10 +13092,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno wingi leo.",
-            "source": "We are learning the word abundance today."
-          },
-          {
             "target": "Mzee alitaja talasimu nyumbani.",
             "source": "The elder mentioned amulet at home."
           }
@@ -13278,10 +13258,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno upesi leo.",
-            "source": "We are learning the word fast today."
-          },
           {
             "target": "Mzee alitaja funga nyumbani.",
             "source": "The elder mentioned fasten at home."
@@ -13458,10 +13434,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno moskiti leo.",
-            "source": "We are learning the word mosque today."
-          },
-          {
             "target": "Mzee alitaja bora nyumbani.",
             "source": "The elder mentioned noble at home."
           }
@@ -13617,10 +13589,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno mvinyo leo.",
-            "source": "We are learning the word spirits today."
-          },
-          {
             "target": "Mzee alitaja furahi nyumbani.",
             "source": "The elder mentioned be in good spirits at home."
           }
@@ -13705,7 +13673,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "mke mchawi",
-            "source": "Witch",
+            "source": "Diviner",
             "pronunciation": "mke mcha-wi",
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           },
@@ -13748,10 +13716,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno fungua leo.",
-            "source": "We are learning the word unfasten today."
-          },
-          {
             "target": "Mzee alitaja mtu gani yeye? nyumbani.",
             "source": "The elder mentioned of what tribe is he? at home."
           }
@@ -13763,7 +13727,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "Unfasten",
             "options": [
               "Of what tribe is he?",
-              "Witch",
+              "Diviner",
               "Accustom",
               "Unfasten"
             ],
@@ -13774,7 +13738,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mtu gani yeye?\" in Kiswahili?",
             "correctAnswer": "Of what tribe is he?",
             "options": [
-              "Witch",
+              "Diviner",
               "Accustom",
               "Of what tribe is he?",
               "Unfasten"
@@ -13784,10 +13748,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mke mchawi\" in Kiswahili?",
-            "correctAnswer": "Witch",
+            "correctAnswer": "Diviner",
             "options": [
               "Accustom",
-              "Witch",
+              "Diviner",
               "Unfasten",
               "Of what tribe is he?"
             ],
@@ -13795,7 +13759,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Witch\" in Kiswahili?",
+            "prompt": "How do you say \"Diviner\" in Kiswahili?",
             "correctAnswer": "mke mchawi",
             "options": [
               "mke mchawi",
@@ -13832,7 +13796,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               },
               {
                 "left": "mke mchawi",
-                "right": "Witch"
+                "right": "Diviner"
               },
               {
                 "left": "soéṣa; tía áda",
@@ -13918,10 +13882,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno fúnga leo.",
-            "source": "We are learning the word fast today."
-          },
           {
             "target": "Mzee alitaja nóna nyumbani.",
             "source": "The elder mentioned fast at home."
@@ -14098,10 +14058,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno u-shinde leo.",
-            "source": "We are learning the word that thou mayst conquer today."
-          },
-          {
             "target": "Mzee alitaja a-shinde nyumbani.",
             "source": "The elder mentioned that he or she may conquer at home."
           }
@@ -14268,10 +14224,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno ham-shindi leo.",
-            "source": "We are learning the word you do not conquer today."
-          },
           {
             "target": "Mzee alitaja hawa-shindi nyumbani.",
             "source": "The elder mentioned they do not conquer at home."
@@ -14440,10 +14392,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno Sezo leo.",
-            "source": "We are learning the word adze today."
-          },
           {
             "target": "Mzee alitaja M-shale nyumbani.",
             "source": "The elder mentioned arrow at home."
@@ -14689,10 +14637,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Tunajifunza neno Ngoma leo.",
-            "source": "We are learning the word a dance. this word is also widely used by up-country natives today."
-          },
-          {
             "target": "Mzee alitaja īva nyumbani.",
             "source": "The elder mentioned to steal at home."
           }
@@ -14852,10 +14796,6 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tunajifunza neno cēkā leo.",
-            "source": "We are learning the word to laugh today."
-          },
           {
             "target": "Mzee alitaja yūā nyumbani.",
             "source": "The elder mentioned to know at home."
@@ -15182,16 +15122,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "Cham-ke sapon, cham-ke lakōk, cham-ke tuka, cham-ke ka.",
             "source": "May your health be good, and may the children, cattle, and all at home be well (Hollis 1909, p. 91)."
-          },
-          {
-            "target": "Kinetgei ng'olyot Chamgei! rani.",
-            "source": "We learn the word hello! today."
-          },
-          {
-            "target": "Kamwa boisiek agobo Takwenya! eng' kaa.",
-            "source": "The elders spoke about greeting to women at home."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -15969,15 +15901,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kinetgei ng'olyot akeenge rani.",
-            "source": "We learn the word one today."
-          },
-          {
-            "target": "Kamwa boisiek agobo aeng' eng' kaa.",
-            "source": "The elders spoke about two at home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -16143,16 +16067,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "tukul ko-somok",
             "source": "All three"
-          },
-          {
-            "target": "Kinetgei ng'olyot taman rani.",
-            "source": "We learn the word ten today."
-          },
-          {
-            "target": "Kamwa boisiek agobo artam eng' kaa.",
-            "source": "The elders spoke about forty at home."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -17886,15 +17802,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kinetgei ng'olyot oloitigo  ) rani.",
-            "source": "We learn the word zebra today."
-          },
-          {
-            "target": "Kamwa boisiek agobo neñgwañg eng' kaa.",
-            "source": "The elders spoke about yours at home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18002,15 +17910,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kinetgei ng'olyot akania  ) rani.",
-            "source": "We learn the word yam today."
-          },
-          {
-            "target": "Kamwa boisiek agobo nyulnyul-ke pr eng' kaa.",
-            "source": "The elders spoke about writhe at home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18126,15 +18026,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kinetgei ng'olyot iim pr rani.",
-            "source": "We learn the word worry today."
-          },
-          {
-            "target": "Kamwa boisiek agobo kia  ) eng' kaa.",
-            "source": "The elders spoke about world at home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18206,7 +18098,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "ponin (ponindet) (pl. pon (ponik))",
-            "source": "Witch",
+            "source": "Diviner",
             "pronunciation": "po-nin",
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
           },
@@ -18245,16 +18137,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "imelel pr",
             "source": "Withhold from"
-          },
-          {
-            "target": "Kinetgei ng'olyot imelel pr rani.",
-            "source": "We learn the word withhold from today."
-          },
-          {
-            "target": "Kamwa boisiek agobo res pr eng' kaa.",
-            "source": "The elders spoke about wither at home."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18263,7 +18147,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "options": [
               "Withhold from",
               "Wither",
-              "Witch",
+              "Diviner",
               "Wish"
             ],
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
@@ -18283,7 +18167,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ponin (ponindet) (pl. pon (ponik))",
-                "right": "Witch"
+                "right": "Diviner"
               },
               {
                 "left": "mach pr",
@@ -18391,8 +18275,8 @@ export const KALENJIN_GRAMMAR_SECTIONS: KalenjinGrammarSection[] = [
   },
   {
     "id": "kalenjin-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kalenjin)",
-    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Kalenjin.",
+    "title": "Historical Orthography & Dialectal Reference Notes for Kalenjin",
+    "summary": "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Kalenjin.",
     "content": "1. **Archival & Open-Dataset Integration for Kalenjin**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
@@ -18524,16 +18408,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "Fw-alume ahahu, akiuka mumwenga, k'afurya wari. Ni mafigo.",
             "source": "We are three men; when one goes away, we eat no cornmeal. It is the three hearthstones (Taylor 1891)."
-          },
-          {
-            "target": "Hunasoma neno Midzi Chenda rero.",
-            "source": "We are studying the word the nine homesteads today."
-          },
-          {
-            "target": "Azhere mananena za kaya mudzini.",
-            "source": "The elders speak of sacred fortified forest homestead in the village."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18704,16 +18580,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "Katsungula na Simba; Fisi na Simba na Katsungula.",
             "source": "The Little Hare and the Lion; The Hyena, the Lion, and the Little Hare (Taylor 1891)."
-          },
-          {
-            "target": "Hunasoma neno katsungula rero.",
-            "source": "We are studying the word little hare today."
-          },
-          {
-            "target": "Azhere mananena za mumwenga mudzini.",
-            "source": "The elders speak of 1 in the village."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -18884,15 +18752,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno ndúgu múje rero.",
-            "source": "We are studying the word aunt today."
-          },
-          {
-            "target": "Azhere mananena za mána mulúme mudzini.",
-            "source": "The elders speak of boy in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -20213,15 +20073,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kuhenda rero.",
-            "source": "We are studying the word to do today."
-          },
-          {
-            "target": "Azhere mananena za kwenda mudzini.",
-            "source": "The elders speak of to go in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -20617,15 +20469,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno mwaka rero.",
-            "source": "We are studying the word year today."
-          },
-          {
-            "target": "Azhere mananena za nyondo mudzini.",
-            "source": "The elders speak of star in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -20929,15 +20773,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kulúlu rero.",
-            "source": "We are studying the word alarm today."
-          },
-          {
-            "target": "Azhere mananena za aidímaye kúlla útu mudzini.",
-            "source": "The elders speak of almighty in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -21108,15 +20944,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno búma áda rero.",
-            "source": "We are studying the word accustom today."
-          },
-          {
-            "target": "Azhere mananena za loga kua uzáwi mudzini.",
-            "source": "The elders speak of bewitch in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -21279,15 +21107,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno mbíra rero.",
-            "source": "We are studying the word grave today."
-          },
-          {
-            "target": "Azhere mananena za táric̣i mudzini.",
-            "source": "The elders speak of history in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -21451,15 +21271,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno as interjection rero.",
-            "source": "We are studying the word well! today."
-          },
-          {
-            "target": "Azhere mananena za imbi mudzini.",
-            "source": "The elders speak of wave in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -21567,15 +21379,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno mulombi rero.",
-            "source": "We are studying the word rain-maker today."
-          },
-          {
-            "target": "Azhere mananena za t'orove mudzini.",
-            "source": "The elders speak of mud in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -22682,10 +22486,6 @@ export const MERU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nĩtũkũthoma kiugo ikũmi narua.",
-            "source": "We are learning the term ten today."
-          },
-          {
             "target": "Akũrũ nĩbaaria ũhoro wa kenda.",
             "source": "The elders discussed nine."
           }
@@ -22852,10 +22652,6 @@ export const MERU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũkũthoma kiugo imwe narua.",
-            "source": "We are learning the term one today."
-          },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa Sekondi.",
             "source": "The elders discussed second."
@@ -24359,10 +24155,6 @@ export const MERU_UNITS: CourseUnit[] = [
             "source": "Njaru (Meru clan whose totem is white cattle) (Athanya )."
           },
           {
-            "target": "Nĩtũkũthoma kiugo Nyambeene narua.",
-            "source": "We are learning the term nyambene hills today."
-          },
-          {
             "target": "Akũrũ nĩbaaria ũhoro wa Angilo.",
             "source": "The elders discussed angilo."
           }
@@ -24450,7 +24242,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Mā-zigūma",
-            "source": "Urine",
+            "source": "Spring water",
             "pronunciation": "ma-ziguma",
             "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
           },
@@ -24474,10 +24266,6 @@ export const MERU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũkũthoma kiugo Netiri narua.",
-            "source": "We are learning the term totem today."
-          },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa Kī-shīī.",
             "source": "The elders discussed womb."
@@ -24521,7 +24309,7 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Urine\": ___",
+            "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Spring water\": ___",
             "correctAnswer": "Mā-zigūma",
             "options": [
               "Mā-zigūma",
@@ -24598,10 +24386,6 @@ export const MERU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũkũthoma kiugo Mū-ūmba narua.",
-            "source": "We are learning the term song today."
-          },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa N-jīwa.",
             "source": "The elders discussed pigeon."
@@ -24714,10 +24498,6 @@ export const MERU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũkũthoma kiugo Ki-hīa narua.",
-            "source": "We are learning the term goat today."
-          },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa N-kuā.",
             "source": "The elders discussed ghost."
@@ -25152,16 +24932,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Gerar wa bogholal, wa bađwein iyo môjad, wa babùrki sidìsa.",
             "source": "Songs (Geeraar) are in hundreds, like the great sea and waves, like the ships (Kirk 1905, Song VIII, p. 178)."
-          },
-          {
-            "target": "Waxaan baranaynaa ereyga kô maanta.",
-            "source": "We are learning the word 1 today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen lehh.",
-            "source": "The elders spoke about 6."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -25603,15 +25375,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Waxaan baranaynaa ereyga dhan maanta.",
-            "source": "We are learning the word all today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen badan.",
-            "source": "The elders spoke about many."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -25774,15 +25538,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Waxaan baranaynaa ereyga siddeed maanta.",
-            "source": "We are learning the word eight today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen sagaal.",
-            "source": "The elders spoke about nine."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -27397,15 +27153,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Waxaan baranaynaa ereyga madax maanta.",
-            "source": "We are learning the word head today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen dheg.",
-            "source": "The elders spoke about ear."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -27604,7 +27352,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "daba hau",
-            "source": "diarrhœa",
+            "source": "stomach ache",
             "pronunciation": "da-ba hau",
             "hint": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [f.n.]"
           },
@@ -27652,15 +27400,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Waxaan baranaynaa ereyga dādis maanta.",
-            "source": "We are learning the word shedding today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen daba hau.",
-            "source": "The elders spoke about diarrhœa."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -27668,7 +27408,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "correctAnswer": "shedding",
             "options": [
               "shedding",
-              "diarrhœa",
+              "stomach ache",
               "stride",
               "scorpion"
             ],
@@ -27685,7 +27425,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               },
               {
                 "left": "daba hau",
-                "right": "diarrhœa"
+                "right": "stomach ache"
               },
               {
                 "left": "dada‘",
@@ -27861,7 +27601,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "dagihi",
-            "source": "lapidate, stone",
+            "source": "throw stones, stone",
             "pronunciation": "da-gi-hi",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -27903,15 +27643,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Waxaan baranaynaa ereyga dembab maanta.",
-            "source": "We are learning the word sin today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen dagihi.",
-            "source": "The elders spoke about lapidate."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -27919,7 +27651,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "correctAnswer": "sin, commit a sin (v.i)",
             "options": [
               "sin, commit a sin (v.i)",
-              "lapidate, stone (v.tr)",
+              "throw stones, stone (v.tr)",
               "diamond (m.n)",
               "the dead (m.n)"
             ],
@@ -27936,7 +27668,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               },
               {
                 "left": "dagihi",
-                "right": "lapidate, stone (v.tr)"
+                "right": "throw stones, stone (v.tr)"
               },
               {
                 "left": "deman",
@@ -28157,16 +27889,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "buro iss ku yal (damoh).",
             "source": "a range of mountains; burihi iss ku yil (plur (m.n) cataplasm, poultice )."
-          },
-          {
-            "target": "Waxaan baranaynaa ereyga da‘nin maanta.",
-            "source": "We are learning the word sack today."
-          },
-          {
-            "target": "Odayaashu waxay ka hadleen dardar.",
-            "source": "The elders spoke about the three stones on which they put their boiler."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -28280,8 +28004,8 @@ export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
   },
   {
     "id": "somali-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Somali)",
-    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Somali.",
+    "title": "Historical Orthography & Dialectal Reference Notes for Somali",
+    "summary": "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Somali.",
     "content": "1. **Archival & Open-Dataset Integration for Somali**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
@@ -28291,7 +28015,7 @@ export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
       },
       {
         "somali": "dembab • dagihi",
-        "english": "sin, commit a sin (v.i) • lapidate, stone (v.tr)",
+        "english": "sin, commit a sin (v.i) • throw stones, stone (v.tr)",
         "explanation": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
       }
     ]
@@ -28559,16 +28283,8 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Andũ aĩrĩ nĩmarĩrũta wĩra.",
             "source": "Two people are working."
-          },
-          {
-            "target": "Nĩtũrathoma kiugo ĩmwe ũmũnthĩ.",
-            "source": "We are learning the term 1 today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa ithanthatũ.",
-            "source": "The elders spoke about 6."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -28739,15 +28455,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo mũndũ ũmũnthĩ.",
-            "source": "We are learning the term person today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa mũndũ mũrũme.",
-            "source": "The elders spoke about man."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -29051,15 +28759,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo Ĩmwe ũmũnthĩ.",
-            "source": "We are learning the term one today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa Igĩrĩ.",
-            "source": "The elders spoke about two."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -29222,15 +28922,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo Ikũmi ũmũnthĩ.",
-            "source": "We are learning the term ten today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa Mī-rōnggo ī-gīrī.",
-            "source": "The elders spoke about twenty."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -29670,15 +29362,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo ĩria ũmũnthĩ.",
-            "source": "We are learning the term lake today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa mũri.",
-            "source": "The elders spoke about root."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -29983,15 +29667,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo kanyua ũmũnthĩ.",
-            "source": "We are learning the term mouth today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa rĩitho.",
-            "source": "The elders spoke about eye."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -30824,15 +30500,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo -īyā ũmũnthĩ.",
-            "source": "We are learning the term to steal today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa -rūgāmā.",
-            "source": "The elders spoke about to stand."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -30940,15 +30608,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo -mēnyā ũmũnthĩ.",
-            "source": "We are learning the term to know today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa -ūragā.",
-            "source": "The elders spoke about to kill."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31064,15 +30724,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo -gūrā ũmũnthĩ.",
-            "source": "We are learning the term to buy today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa -hūrā.",
-            "source": "The elders spoke about to beat."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31180,15 +30832,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũrathoma kiugo -thēnī ũmũnthĩ.",
-            "source": "We are learning the term in today."
-          },
-          {
-            "target": "Athuri nĩmaaria ũhoro wa Hā-hā.",
-            "source": "The elders spoke about here."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31370,16 +31014,8 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "Kazi mbili zam'lema fisi.",
             "source": "Two occupations were too many for the hyena (Taylor 1891, p. 160, Taita Proverb #665)."
-          },
-          {
-            "target": "radigha kiteto Voro! Mzima? — Mzima. — Ndo vidzo! idime.",
-            "source": "We learn the word greeting! are you well? — i am well. — that is good! today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya Nagala ndam kalle maana  — Aya! nawe gale banana.",
-            "source": "The elders spoke about goodbye."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31520,16 +31156,8 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "Ta-na-dea’ga kazi; wa-na-lima’ga mgunda.",
             "source": "We do work continually; they are in the habit of cultivating the garden (Wray 1894, p. 60 Frequentative -na-...-a’ga)."
-          },
-          {
-            "target": "radigha kiteto mosi idime.",
-            "source": "We learn the word 1 today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya tandatu.",
-            "source": "The elders spoke about 6."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31700,15 +31328,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto mundu idime.",
-            "source": "We learn the word person today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya aba.",
-            "source": "The elders spoke about father."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -31871,15 +31491,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto zina idime.",
-            "source": "We learn the word name today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya malasa.",
-            "source": "The elders spoke about adornment."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -32179,15 +31791,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto -chache idime.",
-            "source": "We learn the word few today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya mirongo misano.",
-            "source": "The elders spoke about fifty."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -32464,7 +32068,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           },
           {
-            "target": "kinolo; from Kaffir corn, kinaburi",
+            "target": "kinolo; from sorghum grain, kinaburi",
             "source": "Bread, from Indian meal boiled",
             "pronunciation": "ki-no-lo",
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
@@ -32631,15 +32235,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto mazi idime.",
-            "source": "We learn the word water today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya mdo.",
-            "source": "The elders spoke about fire."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -32941,15 +32537,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto chongo idime.",
-            "source": "We learn the word head today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya righo.",
-            "source": "The elders spoke about eye."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -33112,15 +32700,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto ngolo idime.",
-            "source": "We learn the word heart today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya baga.",
-            "source": "The elders spoke about blood."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -33291,15 +32871,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto kuja idime.",
-            "source": "We learn the word eat today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya kunwa.",
-            "source": "The elders spoke about drink."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -33462,15 +33034,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto kuneka idime.",
-            "source": "We learn the word give today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya kukunda.",
-            "source": "The elders spoke about love."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -34032,15 +33596,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto -ngi idime.",
-            "source": "We learn the word abundance today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya ku-usa.",
-            "source": "The elders spoke about acceptance."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -34461,15 +34017,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto koo idime.",
-            "source": "We learn the word young today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya ako.",
-            "source": "The elders spoke about your."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -34577,15 +34125,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto ku-riga idime.",
-            "source": "We learn the word wind today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya a sakeni.",
-            "source": "The elders spoke about wild."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -34701,15 +34241,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto ku-gorera [lit idime.",
-            "source": "We learn the word warn today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya ku-ukisa.",
-            "source": "The elders spoke about wake."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -34817,15 +34349,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "radigha kiteto ku-sikila [lit idime.",
-            "source": "We learn the word understand today."
-          },
-          {
-            "target": "Waghosi wakateta igoro ya pili.",
-            "source": "The elders spoke about two."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -35465,15 +34989,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto imwe ikaya.",
-            "source": "We learn the word one today."
-          },
-          {
-            "target": "Wandu wakulu wakateta iwi.",
-            "source": "The elders spoke of two."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -35636,15 +35152,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto ikumi ikaya.",
-            "source": "We learn the word ten today."
-          },
-          {
-            "target": "Wandu wakulu wakateta mirongo miwi.",
-            "source": "The elders spoke of twenty."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -36086,15 +35594,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto mrikazi ikaya.",
-            "source": "We learn the word day today."
-          },
-          {
-            "target": "Wandu wakulu wakateta kilo.",
-            "source": "The elders spoke of night."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -36257,15 +35757,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto kucha ikaya.",
-            "source": "We learn the word dawn today."
-          },
-          {
-            "target": "Wandu wakulu wakateta mvula.",
-            "source": "The elders spoke of rain."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -36436,15 +35928,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto mtwe ikaya.",
-            "source": "We learn the word head today."
-          },
-          {
-            "target": "Wandu wakulu wakateta risho.",
-            "source": "The elders spoke of eye."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -36607,15 +36091,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto sakame ikaya.",
-            "source": "We learn the word blood today."
-          },
-          {
-            "target": "Wandu wakulu wakateta Mu-kono.",
-            "source": "The elders spoke of arm."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -36786,15 +36262,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto kuteta ikaya.",
-            "source": "We learn the word speak today."
-          },
-          {
-            "target": "Wandu wakulu wakateta kudza.",
-            "source": "The elders spoke of come."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -37355,16 +36823,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "njama yaekomi (mpungi / kireti).",
             "source": "Council of elders (Taveta governance) (Sacred forest grove of Taveta)."
-          },
-          {
-            "target": "Tuigha kiteto mshana ikaya.",
-            "source": "We learn the word blacksmith today."
-          },
-          {
-            "target": "Wandu wakulu wakateta mbazi.",
-            "source": "The elders spoke of proverb."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -37472,15 +36932,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto lālā ikaya.",
-            "source": "We learn the word to sleep today."
-          },
-          {
-            "target": "Wandu wakulu wakateta kāā.",
-            "source": "The elders spoke of to sit."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -37644,15 +37096,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Tuigha kiteto gēndā ikaya.",
-            "source": "We learn the word to go today."
-          },
-          {
-            "target": "Wandu wakulu wakateta inggā.",
-            "source": "The elders spoke of to give."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -38204,15 +37648,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno muntu lero.",
-            "source": "We are learning the word person today."
-          },
-          {
-            "target": "Wazee wananena za baba mudzini.",
-            "source": "The elders speak of father in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -38375,15 +37811,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno dzina lero.",
-            "source": "We are learning the word name today."
-          },
-          {
-            "target": "Wazee wananena za ndugu ya baba mudzini.",
-            "source": "The elders speak of aunt in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -38506,15 +37934,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno motsi lero.",
-            "source": "We are learning the word one today."
-          },
-          {
-            "target": "Wazee wananena za mbili mudzini.",
-            "source": "The elders speak of two in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -39082,15 +38502,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno madzi lero.",
-            "source": "We are learning the word water today."
-          },
-          {
-            "target": "Wazee wananena za muho mudzini.",
-            "source": "The elders speak of river in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -39392,15 +38804,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kitswa lero.",
-            "source": "We are learning the word head today."
-          },
-          {
-            "target": "Wazee wananena za dzitso mudzini.",
-            "source": "The elders speak of eye in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -39563,15 +38967,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno damu lero.",
-            "source": "We are learning the word blood today."
-          },
-          {
-            "target": "Wazee wananena za mfupa mudzini.",
-            "source": "The elders speak of bone in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -39742,15 +39138,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kunena lero.",
-            "source": "We are learning the word speak today."
-          },
-          {
-            "target": "Wazee wananena za kurya mudzini.",
-            "source": "The elders speak of eat in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -39913,15 +39301,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kufa lero.",
-            "source": "We are learning the word die today."
-          },
-          {
-            "target": "Wazee wananena za kupa mudzini.",
-            "source": "The elders speak of give in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -40357,15 +39737,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno kái lero.",
-            "source": "We are learning the word old today."
-          },
-          {
-            "target": "Wazee wananena za kifia mudzini.",
-            "source": "The elders speak of new in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -40473,15 +39845,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno -tsēkā lero.",
-            "source": "We are learning the word to laugh today."
-          },
-          {
-            "target": "Wazee wananena za -mānyā mudzini.",
-            "source": "The elders speak of to know in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -40597,15 +39961,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno Sī- lero.",
-            "source": "We are learning the word not today."
-          },
-          {
-            "target": "Wazee wananena za Nhā-nhā! mudzini.",
-            "source": "The elders speak of no! in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -40713,15 +40069,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Hunasoma neno Hū-lē lero.",
-            "source": "We are learning the word that today."
-          },
-          {
-            "target": "Wazee wananena za Wāō. Wā-. -wa-. -āō mudzini.",
-            "source": "The elders speak of they in the village."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -41219,15 +40567,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha ilma baranna.",
-            "source": "We are learning the term son today."
-          },
-          {
-            "target": "Jaarsi dubbii obboleettii dubbate.",
-            "source": "The elder spoke about sister."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -41390,15 +40730,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha ílma baranna.",
-            "source": "We are learning the term child today."
-          },
-          {
-            "target": "Jaarsi dubbii worra dubbate.",
-            "source": "The elder spoke about family."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -41521,15 +40853,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha tokko baranna.",
-            "source": "We are learning the term one today."
-          },
-          {
-            "target": "Jaarsi dubbii lama dubbate.",
-            "source": "The elder spoke about two."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -42095,15 +41419,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha bishaan baranna.",
-            "source": "We are learning the term water today."
-          },
-          {
-            "target": "Jaarsi dubbii urjii dubbate.",
-            "source": "The elder spoke about star."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -42405,15 +41721,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha gurra baranna.",
-            "source": "We are learning the term ear today."
-          },
-          {
-            "target": "Jaarsi dubbii afaan dubbate.",
-            "source": "The elder spoke about mouth."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -42576,15 +41884,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha qoosee baranna.",
-            "source": "We are learning the term neck today."
-          },
-          {
-            "target": "Jaarsi dubbii dugda dubbate.",
-            "source": "The elder spoke about back."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -43573,15 +42873,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha Gadaa  & Jila baranna.",
-            "source": "We are learning the term sovereign assembly today."
-          },
-          {
-            "target": "Jaarsi dubbii damma dubbate.",
-            "source": "The elder spoke about honey."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -43744,15 +43036,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha bersíse ada baranna.",
-            "source": "We are learning the term accustom today."
-          },
-          {
-            "target": "Jaarsi dubbii dére dubbate.",
-            "source": "The elder spoke about bewitch."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -43916,15 +43200,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha dúlatja baranna.",
-            "source": "We are learning the term old today."
-          },
-          {
-            "target": "Jaarsi dubbii harreisa dubbate.",
-            "source": "The elder spoke about new."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -44032,15 +43308,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha gingo baranna.",
-            "source": "We are learning the term wreath today."
-          },
-          {
-            "target": "Jaarsi dubbii dilbe dubbate.",
-            "source": "The elder spoke about witty."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -44156,15 +43424,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha kan baranna.",
-            "source": "We are learning the term why today."
-          },
-          {
-            "target": "Jaarsi dubbii faya dubbate.",
-            "source": "The elder spoke about wholesomeness."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -44272,15 +43532,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nuti har'a jecha ezayi baranna.",
-            "source": "We are learning the term whence? today."
-          },
-          {
-            "target": "Jaarsi dubbii ho dubbate.",
-            "source": "The elder spoke about when."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -44541,16 +43793,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Gaal waa nolol; biyo waa nabad.",
             "source": "The camel is life; water is peace."
-          },
-          {
-            "target": "Anigo harra afaan Nabad! baranna.",
-            "source": "We learn the expression peace! today."
-          },
-          {
-            "target": "Makhaabal gaal gob ka sheege.",
-            "source": "The elders spoke of camels in the settlement."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -44976,15 +44220,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan ków baranna.",
-            "source": "We learn the expression one today."
-          },
-          {
-            "target": "Makhaabal láma gob ka sheege.",
-            "source": "The elders spoke of two in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -45492,15 +44728,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan biche baranna.",
-            "source": "We learn the expression water today."
-          },
-          {
-            "target": "Makhaabal dáb gob ka sheege.",
-            "source": "The elders spoke of fire in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -45802,15 +45030,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan sám baranna.",
-            "source": "We learn the expression nose today."
-          },
-          {
-            "target": "Makhaabal áf gob ka sheege.",
-            "source": "The elders spoke of mouth in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -46088,15 +45308,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan urúd baranna.",
-            "source": "We learn the expression sleep today."
-          },
-          {
-            "target": "Makhaabal amút gob ka sheege.",
-            "source": "The elders spoke of die in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -46633,16 +45845,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "waakh barid",
             "source": "camel blessing / evening prayer assembly"
-          },
-          {
-            "target": "Anigo harra afaan buur baranna.",
-            "source": "We learn the expression big today."
-          },
-          {
-            "target": "Makhaabal yar gob ka sheege.",
-            "source": "The elders spoke of small in the settlement."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -46753,16 +45957,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Sere gal (Sere adi).",
             "source": "Seventh day of the week (day of the camel) (Sixth day of the week )."
-          },
-          {
-            "target": "Anigo harra afaan daf baranna.",
-            "source": "We learn the expression woven camel-loading mat today."
-          },
-          {
-            "target": "Makhaabal koor gob ka sheege.",
-            "source": "The elders spoke of camel bell carved from wood in the settlement."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -46878,15 +46074,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan Sere baranna.",
-            "source": "We learn the expression third day of the week today."
-          },
-          {
-            "target": "Makhaabal Hura hakhan gob ka sheege.",
-            "source": "The elders spoke of second day of the week in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -46994,15 +46182,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Anigo harra afaan bilau baranna.",
-            "source": "We learn the expression sword today."
-          },
-          {
-            "target": "Makhaabal gashan gob ka sheege.",
-            "source": "The elders spoke of shield in the settlement."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -47207,16 +46387,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "Meeta Nkai ol-openy obo; Nkai oo nkishu.",
             "source": "God belongs to no single person alone; God is the giver of cattle to all."
-          },
-          {
-            "target": "Kiyiolo nkarna Supai! taata.",
-            "source": "We know the term greetings to men today."
-          },
-          {
-            "target": "Eirorie lpayiani Ashe oleng nkang.",
-            "source": "The elders spoke about thank you very much at the manyatta."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -47387,15 +46559,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna ltung'ani taata.",
-            "source": "We know the term person today."
-          },
-          {
-            "target": "Eirorie lpayiani papa nkang.",
-            "source": "The elders spoke about father at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -47699,15 +46863,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna naɓô taata.",
-            "source": "We know the term one today."
-          },
-          {
-            "target": "Eirorie lpayiani aré nkang.",
-            "source": "The elders spoke about two at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -48279,15 +47435,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna l-akira taata.",
-            "source": "We know the term star today."
-          },
-          {
-            "target": "Eirorie lpayiani ŋ-kár-ɛ́ nkang.",
-            "source": "The elders spoke about water at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -48588,15 +47736,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna ŋ-kɔŋ-ʊ́ taata.",
-            "source": "We know the term eye today."
-          },
-          {
-            "target": "Eirorie lpayiani ŋ-kɪ́-yyɔk nkang.",
-            "source": "The elders spoke about ear at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -48900,15 +48040,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna a-ɲá taata.",
-            "source": "We know the term eat today."
-          },
-          {
-            "target": "Eirorie lpayiani a-ok nkang.",
-            "source": "The elders spoke about drink at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -49463,15 +48595,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna artam taata.",
-            "source": "We know the term ninety today."
-          },
-          {
-            "target": "Eirorie lpayiani otomoni uni nkang.",
-            "source": "The elders spoke about eighty at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -49531,13 +48655,13 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Ol-labanani",
-            "source": "Witch",
+            "source": "Diviner",
             "pronunciation": "ol-labanani",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
             "target": "Lesuñgu",
-            "source": "White man",
+            "source": "Traveler",
             "pronunciation": "le-sunggu",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
@@ -49555,7 +48679,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Eñ golak",
-            "source": "Urine",
+            "source": "Spring water",
             "pronunciation": "eng go-lak",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
@@ -49585,21 +48709,17 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kiyiolo nkarna Ol-labanani taata.",
-            "source": "We know the term witch today."
-          },
-          {
-            "target": "Eirorie lpayiani Lesuñgu nkang.",
-            "source": "The elders spoke about white man at the manyatta."
+            "source": "We study this traditional term today."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Ol-labanani\" in Samburu?",
-            "correctAnswer": "Witch",
+            "correctAnswer": "Diviner",
             "options": [
-              "Witch",
-              "White man",
+              "Diviner",
+              "Traveler",
               "Wart hog",
               "War"
             ],
@@ -49608,15 +48728,15 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Samburu (Sampur) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "Ol-labanani: Witch",
+            "correctAnswer": "Ol-labanani: Diviner",
             "pairs": [
               {
                 "left": "Ol-labanani",
-                "right": "Witch"
+                "right": "Diviner"
               },
               {
                 "left": "Lesuñgu",
-                "right": "White man"
+                "right": "Traveler"
               },
               {
                 "left": "Ol gūya",
@@ -49630,7 +48750,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Samburu (Sampur) term for \"Urine\": ___",
+            "prompt": "Complete the Samburu (Sampur) term for \"Spring water\": ___",
             "correctAnswer": "Eñ golak",
             "options": [
               "Eñ golak",
@@ -49809,7 +48929,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "En jabo",
-            "source": "Penis",
+            "source": "Elder",
             "pronunciation": "en ja-bo",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
@@ -49833,15 +48953,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna Añgoitoi taata.",
-            "source": "We know the term road today."
-          },
-          {
-            "target": "Eirorie lpayiani Nderoni nkang.",
-            "source": "The elders spoke about rat at the manyatta."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -49880,7 +48992,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Samburu (Sampur) term for \"Penis\": ___",
+            "prompt": "Complete the Samburu (Sampur) term for \"Elder\": ___",
             "correctAnswer": "En jabo",
             "options": [
               "En jabo",
@@ -49921,7 +49033,7 @@ export const SAMBURU_GRAMMAR_SECTIONS: GrammarSection[] = [
       },
       {
         "samburu": "Ol-labanani • Lesuñgu",
-        "english": "Witch • White man",
+        "english": "Diviner • Traveler",
         "explanation": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
       }
     ]
@@ -50035,16 +49147,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "Njemps Liabori o Njemps Lekepir: Il Mayek oo Il Derito.",
             "source": "Downstream Njemps and Upstream Njemps: The Il Mayek clan and Il Derito elders open the irrigation furrow (Dundas 1910, pp. 49–54)."
-          },
-          {
-            "target": "Kiyiolo nkarna Supai! taata.",
-            "source": "We know the term greetings! today."
-          },
-          {
-            "target": "Eirorie lpayiani Njemps Liabori nkang.",
-            "source": "The elders spoke about downstream njemps at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -50215,15 +49319,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna n-gitok taata.",
-            "source": "We know the term woman today."
-          },
-          {
-            "target": "Eirorie lpayiani l-payian nkang.",
-            "source": "The elders spoke about man at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -50515,15 +49611,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna nabo taata.",
-            "source": "We know the term one today."
-          },
-          {
-            "target": "Eirorie lpayiani are nkang.",
-            "source": "The elders spoke about two at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -51081,15 +50169,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna n-golong taata.",
-            "source": "We know the term day today."
-          },
-          {
-            "target": "Eirorie lpayiani n-gewarie nkang.",
-            "source": "The elders spoke about night at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -51252,15 +50332,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna nkop taata.",
-            "source": "We know the term earth today."
-          },
-          {
-            "target": "Eirorie lpayiani nkujit nkang.",
-            "source": "The elders spoke about grass at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -51431,15 +50503,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna ŋ-kɔŋ-ʊ́ taata.",
-            "source": "We know the term eye today."
-          },
-          {
-            "target": "Eirorie lpayiani ŋ-ké-ok nkang.",
-            "source": "The elders spoke about ear at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -51602,15 +50666,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna nkaina taata.",
-            "source": "We know the term hand today."
-          },
-          {
-            "target": "Eirorie lpayiani lkeju nkang.",
-            "source": "The elders spoke about leg at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -51781,15 +50837,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna a-iro taata.",
-            "source": "We know the term speak today."
-          },
-          {
-            "target": "Eirorie lpayiani a-ɲá nkang.",
-            "source": "The elders spoke about eat at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -52243,21 +51291,13 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ol-labanani",
-            "source": "Witch",
+            "source": "Diviner",
             "pronunciation": "ol-labanani",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna artam taata.",
-            "source": "We know the term ninety today."
-          },
-          {
-            "target": "Eirorie lpayiani otomoni uni nkang.",
-            "source": "The elders spoke about eighty at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -52317,7 +51357,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Lesuñgu",
-            "source": "White man",
+            "source": "Traveler",
             "pronunciation": "le-sunggu",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -52335,7 +51375,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "target": "Eñ golak",
-            "source": "Urine",
+            "source": "Spring water",
             "pronunciation": "eng go-lak",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -52368,26 +51408,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "El mau (Manyata (warriors'), Añgañ (tribal)).",
             "source": "Twins (Town or settlement)."
-          },
-          {
-            "target": "Kiyiolo nkarna Lesuñgu taata.",
-            "source": "We know the term white man today."
-          },
-          {
-            "target": "Eirorie lpayiani Ol gūya nkang.",
-            "source": "The elders spoke about wart hog at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Lesuñgu\" in Ilchamus?",
-            "correctAnswer": "White man",
+            "correctAnswer": "Traveler",
             "options": [
-              "White man",
+              "Traveler",
               "Wart hog",
               "War",
-              "Urine"
+              "Spring water"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -52398,7 +51430,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "Lesuñgu",
-                "right": "White man"
+                "right": "Traveler"
               },
               {
                 "left": "Ol gūya",
@@ -52410,7 +51442,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
               },
               {
                 "left": "Eñ golak",
-                "right": "Urine"
+                "right": "Spring water"
               }
             ]
           },
@@ -52583,7 +51615,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "target": "En jabo",
-            "source": "Penis",
+            "source": "Elder",
             "pronunciation": "en ja-bo",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -52619,15 +51651,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo nkarna Añgob taata.",
-            "source": "We know the term place today."
-          },
-          {
-            "target": "Eirorie lpayiani Ol bitirr nkang.",
-            "source": "The elders spoke about pig at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -52636,7 +51660,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "options": [
               "Place",
               "Pig",
-              "Penis",
+              "Elder",
               "Man / Men"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -52656,7 +51680,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
               },
               {
                 "left": "En jabo",
-                "right": "Penis"
+                "right": "Elder"
               },
               {
                 "left": "Ol doñani; El toñana",
@@ -52834,15 +51858,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon!achek.",
-            "source": "We value the expression elder greeting litany!."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon Sĕra!om.",
-            "source": "The elders spoke the term thank you!."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -52965,15 +51981,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon chitoachek.",
-            "source": "We value the expression man."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon piichom.",
-            "source": "The elders spoke the term person."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -53136,15 +52144,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon Torôrutachek.",
-            "source": "We value the expression supreme sky god."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon Ki-ruwok-inom.",
-            "source": "The elders spoke the term council adviser."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -53267,15 +52267,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon àkɔ́ɔ́ŋkɔ̀achek.",
-            "source": "We value the expression one."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon oɣë̀ë̀ŋom.",
-            "source": "The elders spoke the term two."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -53759,16 +52751,8 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "Rir-ei oyu omisioʻ?",
             "source": "When will food be ready?"
-          },
-          {
-            "target": "Kechamnyan ng'olyon Rir-ei oyu omisioʻ?achek.",
-            "source": "We value the expression when will food be ready?."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon wildom.",
-            "source": "The elders spoke the term banana."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -54076,16 +53060,8 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "Kerio wal-nya-pôro",
             "source": "The lower reaches of the Kerio river"
-          },
-          {
-            "target": "Kechamnyan ng'olyon matachek.",
-            "source": "We value the expression fire."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon ropom.",
-            "source": "The elders spoke the term rain."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -54256,15 +53232,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon koːŋachek.",
-            "source": "We value the expression eye."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon yiːtom.",
-            "source": "The elders spoke the term ear."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -54610,15 +53578,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon keamachek.",
-            "source": "We value the expression eat."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon keighom.",
-            "source": "The elders spoke the term drink."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -55714,15 +54674,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon che-marmarachek.",
-            "source": "We value the expression zebra."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon karachininom.",
-            "source": "The elders spoke the term youth."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -55830,15 +54782,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon siñgirachek.",
-            "source": "We value the expression wrinkled."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon môom.",
-            "source": "The elders spoke the term wound."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -55954,15 +54898,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon kamwunai-yanachek.",
-            "source": "We value the expression wire iron."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon kapepom.",
-            "source": "The elders spoke the term wing."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -56070,15 +55006,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kechamnyan ng'olyon mokolachek.",
-            "source": "We value the expression whole."
-          },
-          {
-            "target": "Kamwa poiyok ng'olyon nyaom.",
-            "source": "The elders spoke the term who."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -56208,7 +55136,7 @@ export const DAASANACH_CONFIG: LanguageConfig = {
   sources: [
     "blazek-dasanech-2011",
     "nishiguchi-daasanach-2004",
-    "hohnel-lakes-rudolf-stefanie-1894",
+    "hohnel-lakes-rudolf-stefanie-1894"
   ],
 };
 

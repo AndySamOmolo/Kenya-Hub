@@ -656,15 +656,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Omwami lero.",
-            "source": "We learn the expression Omwami (king) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu omulina.",
-            "source": "The elders spoke about friend."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -779,15 +771,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Omw-ana lero.",
-            "source": "We learn the expression Omw-ana (son) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu senge.",
-            "source": "The elders spoke about aunt."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -958,15 +942,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa ikhumi lero.",
-            "source": "We learn the expression ikhumi (ten) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu shenda.",
-            "source": "The elders spoke about nine."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1129,15 +1105,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa -taru lero.",
-            "source": "We learn the expression -taru (three) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu -ne.",
-            "source": "The elders spoke about four."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1436,15 +1404,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Ama-furra lero.",
-            "source": "We learn the expression Ama-furra (fat) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu In-zala.",
-            "source": "The elders spoke about hunger."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1556,15 +1516,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa omusaala lero.",
-            "source": "We learn the expression omusaala (tree) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu omutsuru.",
-            "source": "The elders spoke about forest."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1727,15 +1679,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa omwesi lero.",
-            "source": "We learn the expression omwesi (moon) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu ing'ining'ini.",
-            "source": "The elders spoke about star."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2040,15 +1984,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa elino lero.",
-            "source": "We learn the expression elino (tooth) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu olulimi.",
-            "source": "The elders spoke about tongue."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2219,15 +2155,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa okhuloma lero.",
-            "source": "We learn the expression okhuloma (speak) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu okhukona.",
-            "source": "The elders spoke about sleep."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2336,7 +2264,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "okhusala",
-            "source": "To vomit",
+            "source": "To cough",
             "pronunciation": "okhu-sa-la",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
@@ -2390,25 +2318,17 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa okhusala lero.",
-            "source": "We learn the expression okhusala (to vomit) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu okhuutsa.",
-            "source": "The elders spoke about to blow."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"okhusala\" in Luhya?",
-            "correctAnswer": "To vomit",
+            "correctAnswer": "To cough",
             "options": [
               "To blow",
               "To breathe",
               "To laugh",
-              "To vomit"
+              "To cough"
             ],
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
@@ -2420,7 +2340,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
               "To breathe",
               "To laugh",
               "To blow",
-              "To vomit"
+              "To cough"
             ],
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
@@ -2431,7 +2351,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "options": [
               "To laugh",
               "To breathe",
-              "To vomit",
+              "To cough",
               "To blow"
             ],
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
@@ -2467,7 +2387,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "okhusala",
-                "right": "To vomit"
+                "right": "To cough"
               },
               {
                 "left": "okhuutsa / okhufura",
@@ -2562,15 +2482,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa wange lero.",
-            "source": "We learn the expression wange (my) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu Ndzidza.",
-            "source": "The elders spoke about i come."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2678,15 +2590,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Ndu lero.",
-            "source": "We learn the expression Ndu (i am) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu Tawi.",
-            "source": "The elders spoke about no."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2802,15 +2706,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Ehei lero.",
-            "source": "We learn the expression Ehei (castrated ox) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu Sirkhanga.",
-            "source": "The elders spoke about good."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2918,15 +2814,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Khusoma elikhuwa Injobe lero.",
-            "source": "We learn the expression Injobe (speke's tragelaph) today."
-          },
-          {
-            "target": "Abakhulundu balomaloma khu Ikisi.",
-            "source": "The elders spoke about cephalophus."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

@@ -284,16 +284,8 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Chiombe isano na ibere",
             "source": "Seven cows"
-          },
-          {
-            "target": "Intosoma eriogi eyemo rero.",
-            "source": "We are studying the term one today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya ibere.",
-            "source": "The elders spoke about two."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -655,15 +647,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi omosani rero.",
-            "source": "We are studying the term friend today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya omwana.",
-            "source": "The elders spoke about child."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -826,15 +810,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi omoiseke rero.",
-            "source": "We are studying the term girl today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya sokoro.",
-            "source": "The elders spoke about grandfather."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -957,15 +933,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi isano na ibere rero.",
-            "source": "We are studying the term seven today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya isano na isato.",
-            "source": "The elders spoke about eight."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1128,15 +1096,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi ikomi na isano na ibere rero.",
-            "source": "We are studying the term seventeen today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya ikomi na isano na isato.",
-            "source": "The elders spoke about eighteen."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1301,15 +1261,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi obouki rero.",
-            "source": "We are studying the term honey today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya enyama.",
-            "source": "The elders spoke about meat."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1472,15 +1424,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi Ege-tinia. Ama-guta rero.",
-            "source": "We are studying the term fat today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya In-jala.",
-            "source": "The elders spoke about hunger."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1924,15 +1868,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi okogoro rero.",
-            "source": "We are studying the term foot today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya okoboko.",
-            "source": "The elders spoke about hand."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2047,15 +1983,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi Amany-ingga or Amainy-ingga rero.",
-            "source": "We are studying the term blood today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya Eki-kuba.",
-            "source": "The elders spoke about breast."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2178,15 +2106,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi ogokwana rero.",
-            "source": "We are studying the term speak today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya okorara.",
-            "source": "The elders spoke about sleep."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2349,15 +2269,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi komenya rero.",
-            "source": "We are studying the term to dwell today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya gotenena.",
-            "source": "The elders spoke about to stand."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2524,16 +2436,8 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Inje ndu",
             "source": "I am"
-          },
-          {
-            "target": "Intosoma eriogi Ngotenga rero.",
-            "source": "We are studying the term i dance today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya Nangire.",
-            "source": "The elders spoke about i come not."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2641,15 +2545,7 @@ export const KISII_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Intosoma eriogi Emuamu rero.",
-            "source": "We are studying the term black today."
-          },
-          {
-            "target": "Abagaka nigo bakwana igoro ya Aīya.",
-            "source": "The elders spoke about here."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

@@ -71,7 +71,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17420,
+    "totalEntries": 17323,
     "categories": [
       {
         "id": "greetings",
@@ -83,19 +83,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 193
+        "count": 192
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 464
+        "count": 462
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 490
+        "count": 488
       },
       {
         "id": "animals",
@@ -107,13 +107,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 987
+        "count": 986
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 650
+        "count": 648
       },
       {
         "id": "home",
@@ -125,7 +125,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 2716
+        "count": 2710
       },
       {
         "id": "adjectives",
@@ -149,7 +149,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 362
+        "count": 357
       },
       {
         "id": "time",
@@ -161,13 +161,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 8706
+        "count": 8636
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 159
+        "count": 151
       }
     ]
   },
@@ -189,7 +189,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
-    "totalEntries": 10713,
+    "totalEntries": 10667,
     "categories": [
       {
         "id": "greetings",
@@ -249,7 +249,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 358
+        "count": 357
       },
       {
         "id": "travel",
@@ -267,7 +267,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 153
+        "count": 148
       },
       {
         "id": "time",
@@ -279,13 +279,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 3745
+        "count": 3725
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 2968
+        "count": 2948
       }
     ]
   },
@@ -306,7 +306,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Mill-Hill Fathers (1920), and BFBS (1921).",
-    "totalEntries": 2507,
+    "totalEntries": 2497,
     "categories": [
       {
         "id": "greetings",
@@ -384,7 +384,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 39
+        "count": 38
       },
       {
         "id": "time",
@@ -396,13 +396,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 680
+        "count": 678
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 383
+        "count": 376
       }
     ]
   },
@@ -427,7 +427,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
-    "totalEntries": 4618,
+    "totalEntries": 4583,
     "categories": [
       {
         "id": "greetings",
@@ -451,13 +451,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 294
+        "count": 292
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 344
+        "count": 341
       },
       {
         "id": "nature",
@@ -505,7 +505,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 93
+        "count": 90
       },
       {
         "id": "time",
@@ -517,13 +517,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 628
+        "count": 626
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1542
+        "count": 1517
       }
     ]
   },
@@ -544,7 +544,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
-    "totalEntries": 3511,
+    "totalEntries": 3495,
     "categories": [
       {
         "id": "greetings",
@@ -622,7 +622,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 67
+        "count": 66
       },
       {
         "id": "time",
@@ -634,13 +634,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 655
+        "count": 648
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 407
+        "count": 399
       }
     ]
   },
@@ -660,7 +660,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4093,
+    "totalEntries": 4071,
     "categories": [
       {
         "id": "greetings",
@@ -738,7 +738,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 75
+        "count": 73
       },
       {
         "id": "time",
@@ -750,13 +750,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 2078
+        "count": 2061
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 315
+        "count": 312
       }
     ]
   },
@@ -775,7 +775,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml).",
-    "totalEntries": 571,
+    "totalEntries": 569,
     "categories": [
       {
         "id": "greetings",
@@ -865,7 +865,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 191
+        "count": 189
       }
     ]
   },
@@ -885,7 +885,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
-    "totalEntries": 2357,
+    "totalEntries": 2341,
     "categories": [
       {
         "id": "greetings",
@@ -909,7 +909,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 152
+        "count": 151
       },
       {
         "id": "animals",
@@ -975,13 +975,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 403
+        "count": 402
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 622
+        "count": 608
       }
     ]
   },
@@ -1000,7 +1000,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
-    "totalEntries": 1118,
+    "totalEntries": 1110,
     "categories": [
       {
         "id": "greetings",
@@ -1090,13 +1090,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 110
+        "count": 109
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 175
+        "count": 168
       }
     ]
   },
@@ -1117,7 +1117,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
-    "totalEntries": 2452,
+    "totalEntries": 2434,
     "categories": [
       {
         "id": "greetings",
@@ -1135,7 +1135,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 155
+        "count": 154
       },
       {
         "id": "body",
@@ -1195,7 +1195,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 18
+        "count": 16
       },
       {
         "id": "time",
@@ -1207,13 +1207,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 821
+        "count": 816
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 488
+        "count": 478
       }
     ]
   },
@@ -1231,7 +1231,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
-    "totalEntries": 2010,
+    "totalEntries": 1998,
     "categories": [
       {
         "id": "greetings",
@@ -1255,7 +1255,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 108
+        "count": 107
       },
       {
         "id": "animals",
@@ -1321,13 +1321,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 656
+        "count": 646
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 213
+        "count": 212
       }
     ]
   },
@@ -1347,7 +1347,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 7950,
+    "totalEntries": 7905,
     "categories": [
       {
         "id": "greetings",
@@ -1371,7 +1371,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 131
+        "count": 130
       },
       {
         "id": "animals",
@@ -1389,7 +1389,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 206
+        "count": 204
       },
       {
         "id": "home",
@@ -1401,7 +1401,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 905
+        "count": 903
       },
       {
         "id": "adjectives",
@@ -1413,19 +1413,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 128
+        "count": 127
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 69
+        "count": 68
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 94
+        "count": 93
       },
       {
         "id": "time",
@@ -1437,13 +1437,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5165
+        "count": 5131
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 289
+        "count": 286
       }
     ]
   },
@@ -1563,7 +1563,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml).",
-    "totalEntries": 573,
+    "totalEntries": 571,
     "categories": [
       {
         "id": "greetings",
@@ -1641,7 +1641,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 198
+        "count": 196
       },
       {
         "id": "culture-history",
@@ -1671,7 +1671,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3372,
+    "totalEntries": 3354,
     "categories": [
       {
         "id": "greetings",
@@ -1713,7 +1713,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 100
+        "count": 99
       },
       {
         "id": "home",
@@ -1749,7 +1749,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 59
+        "count": 58
       },
       {
         "id": "time",
@@ -1761,13 +1761,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 1000
+        "count": 993
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1011
+        "count": 1002
       }
     ]
   },
@@ -1785,7 +1785,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
-    "totalEntries": 460,
+    "totalEntries": 457,
     "categories": [
       {
         "id": "greetings",
@@ -1875,13 +1875,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 57
+        "count": 56
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 17
+        "count": 15
       }
     ]
   },
@@ -1899,7 +1899,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
-    "totalEntries": 2313,
+    "totalEntries": 2302,
     "categories": [
       {
         "id": "greetings",
@@ -1989,13 +1989,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 1285
+        "count": 1278
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 254
+        "count": 250
       }
     ]
   },
@@ -2017,7 +2017,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.4",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7644,
+    "totalEntries": 7616,
     "categories": [
       {
         "id": "greetings",
@@ -2041,13 +2041,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 215
+        "count": 213
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 214
+        "count": 213
       },
       {
         "id": "nature",
@@ -2071,7 +2071,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 851
+        "count": 850
       },
       {
         "id": "adjectives",
@@ -2095,7 +2095,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 120
+        "count": 117
       },
       {
         "id": "time",
@@ -2107,13 +2107,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4712
+        "count": 4692
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 52
+        "count": 51
       }
     ]
   },
@@ -2224,7 +2224,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
-    "totalEntries": 682,
+    "totalEntries": 678,
     "categories": [
       {
         "id": "greetings",
@@ -2278,7 +2278,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 52
+        "count": 51
       },
       {
         "id": "travel",
@@ -2290,7 +2290,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 339
+        "count": 336
       },
       {
         "id": "time",
@@ -2314,7 +2314,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
-    "totalEntries": 305,
+    "totalEntries": 304,
     "categories": [
       {
         "id": "greetings",
@@ -2368,7 +2368,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 51
+        "count": 50
       },
       {
         "id": "travel",
@@ -2405,7 +2405,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
-    "totalEntries": 2819,
+    "totalEntries": 2801,
     "categories": [
       {
         "id": "greetings",
@@ -2429,7 +2429,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 159
+        "count": 157
       },
       {
         "id": "animals",
@@ -2465,7 +2465,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 113
+        "count": 112
       },
       {
         "id": "travel",
@@ -2483,7 +2483,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 51
+        "count": 50
       },
       {
         "id": "time",
@@ -2495,13 +2495,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 1096
+        "count": 1083
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 218
+        "count": 217
       }
     ]
   },
@@ -2690,7 +2690,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 82212;
+export const TOTAL_DICTIONARY_ENTRIES: number = 77965;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {

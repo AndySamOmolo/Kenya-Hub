@@ -1,9 +1,10 @@
+import { notFound } from "next/navigation";
 import LanguageClientPage from "@/components/learn/LanguageClientPage";
-import { getCourse, COURSE_REGISTRY } from "@/data/courses/registry";
+import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
-  return Object.values(COURSE_REGISTRY).map(({ config }) => ({ language: config.id }));
+  return PUBLISHED_COURSES.map(({ config }) => ({ language: config.id }));
 }
 
 export async function generateMetadata({
@@ -13,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { language } = await params;
   const course = getCourse(language);
-  if (!course) {
+  if (!course || !course.ready) {
     return {
       title: "Language Course Not Found",
       robots: { index: false, follow: true },
@@ -64,32 +65,32 @@ export default async function LanguagePage({
   const { language } = await params;
   const course = getCourse(language);
 
-  const courseSchema = course
-    ? {
-        "@context": "https://schema.org",
-        "@type": "Course",
-        name: course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
-          ? `Learn ${course.config.name}`
-          : `Learn ${course.config.name} (${course.config.nativeName})`,
-        description: course.config.description,
-        provider: {
-          "@type": "Organization",
-          name: "KenyaHub",
-          sameAs: "https://kenyahub.me",
-        },
-        isAccessibleForFree: true,
-        inLanguage: "en-KE",
-      }
-    : null;
+  if (!course || !course.ready) {
+    notFound();
+  }
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
+      ? `Learn ${course.config.name}`
+      : `Learn ${course.config.name} (${course.config.nativeName})`,
+    description: course.config.description,
+    provider: {
+      "@type": "Organization",
+      name: "KenyaHub",
+      sameAs: "https://kenyahub.me",
+    },
+    isAccessibleForFree: true,
+    inLanguage: "en-KE",
+  };
 
   return (
     <>
-      {courseSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       <LanguageClientPage languageId={language} />
     </>
   );

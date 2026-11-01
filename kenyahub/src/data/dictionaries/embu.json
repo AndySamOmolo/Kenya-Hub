@@ -2791,13 +2791,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Mū-rōgi; a-",
-          "pronunciation": "mu-rogi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
-          "audioFile": null
-        },
-        {
           "english": "Woman",
           "translation": "Mū-tūmia; a-. Mū-kā; a-. Kī-rēgo; i-. Mū-hīki (young). Mū-gūrra (M.)",
           "pronunciation": "mu-tumia",
@@ -3144,13 +3137,6 @@
           "english": "Rhinoceros",
           "translation": "Hūria; ma-",
           "pronunciation": "huria",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "Ū-rōgi",
-          "pronunciation": "u-rogi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)",
           "audioFile": null
         },
@@ -4132,5 +4118,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
   "isoCode": "ebu",
-  "glottocode": "embu1242"
+  "glottocode": "embu1242",
+  "totalEntries": 571
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import matatuData from "@/data/matatu-routes.json";
 import TownMatatuView from "@/components/matatu/TownMatatuView";
 
@@ -71,31 +72,31 @@ export default async function TownMatatuPage({
   const townSlug = resolvedParams.town.toLowerCase();
   const townObj = matatuData.towns.find((t) => t.slug === townSlug);
 
-  const breadcrumbSchema = townObj
-    ? {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
-          { "@type": "ListItem", position: 2, name: "Matatu Routes", item: "https://kenyahub.me/matatu/" },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: `${townObj.name} Matatu Routes`,
-            item: `https://kenyahub.me/matatu/${townObj.slug}/`,
-          },
-        ],
-      }
-    : null;
+  if (!townObj) {
+    notFound();
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "Matatu Routes", item: "https://kenyahub.me/matatu/" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${townObj.name} Matatu Routes`,
+        item: `https://kenyahub.me/matatu/${townObj.slug}/`,
+      },
+    ],
+  };
 
   return (
     <>
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <TownMatatuView townSlug={townSlug} />
     </>
   );

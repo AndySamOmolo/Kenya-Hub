@@ -6073,15 +6073,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kayeni ayong akiroit Kalome tokona.",
-            "source": "I know the expression you weep now."
-          },
-          {
-            "target": "Elimosi ng'ikasukou Ekiyo nawi.",
-            "source": "The elders speak of they laugh at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -6316,16 +6308,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Año abu",
             "source": "I come"
-          },
-          {
-            "target": "Kayeni ayong akiroit Anyama tokona.",
-            "source": "I know the expression i eat now."
-          },
-          {
-            "target": "Elimosi ng'ikasukou Nyanyame nawi.",
-            "source": "The elders speak of i ate not at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -6436,16 +6420,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Año ñesilo",
             "source": "I bring"
-          },
-          {
-            "target": "Kayeni ayong akiroit Año ñesilo tokona.",
-            "source": "I know the expression i bring now."
-          },
-          {
-            "target": "Elimosi ng'ikasukou Año? nawi.",
-            "source": "The elders speak of i am at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

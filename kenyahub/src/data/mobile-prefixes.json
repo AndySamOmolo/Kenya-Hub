@@ -239,7 +239,7 @@
     }
   ],
   "internationalDialing": {
-    "fromKenya": "Replace leading 0 with +254 when calling from abroad. Example: 0722 123 456 → +254 722 123 456",
-    "toKenya": "Dial your country's exit code + 254 + number (without leading 0). Example from UK: 00 254 722 123 456"
+    "fromKenya": "Replace leading 0 with +254 when calling from abroad. Example: 0722 000 000 → +254 722 000 000",
+    "toKenya": "Dial your country's exit code + 254 + number (without leading 0). Example from UK: 00 254 722 000 000"
   }
 }

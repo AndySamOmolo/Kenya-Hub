@@ -2261,13 +2261,6 @@
           "audioFile": null
         },
         {
-          "english": "The cloth used for wrapping up a dead body (cha)",
-          "translation": "Kirunsa",
-          "pronunciation": "ki-run-sa",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Middle finger (Finger 3 — the large/long finger)",
           "translation": "chala kibomu",
           "pronunciation": "chah-lah kee-boh-moo",
@@ -6090,13 +6083,6 @@
           "audioFile": null
         },
         {
-          "english": "To pass water, to urinate, to stale",
-          "translation": "Godzola",
-          "pronunciation": "godz-o-la",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "The dregs of palm-wine or toddy (za)",
           "translation": "dzira",
           "pronunciation": "dzi-ra",
@@ -6192,13 +6178,6 @@
           "translation": "wari",
           "pronunciation": "wa-ri",
           "context": "Kigiryama (W. E. Taylor 1891, p. 138)",
-          "audioFile": null
-        },
-        {
-          "english": "To pass water, to urinate, to stale (= Ku godza)",
-          "translation": "godzola",
-          "pronunciation": "godzo-la",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.n.]",
           "audioFile": null
         },
         {
@@ -11277,13 +11256,6 @@
           "audioFile": null
         },
         {
-          "english": "To strangle",
-          "translation": "shongola",
-          "pronunciation": "shongo-la",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.a.]",
-          "audioFile": null
-        },
-        {
           "english": "To be heard",
           "translation": "sikirua",
           "pronunciation": "si-ki-rua",
@@ -12526,13 +12498,6 @@
           "english": "To scare, to drive away",
           "translation": "Inga",
           "pronunciation": "ing-a",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "To strangle one another",
-          "translation": "Shongolana",
-          "pronunciation": "shong-o-la-na",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
           "audioFile": null
         },
@@ -15694,13 +15659,6 @@
           "audioFile": null
         },
         {
-          "english": "Foreign [see ABROAD; BARBARIANS]; a foreign thing",
-          "translation": "cha ujeni-ni",
-          "pronunciation": "cha u-je-ni ni",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "The Masai have taken the cattle and gone their way",
           "translation": "damfira",
           "pronunciation": "damfi-ra",
@@ -16219,13 +16177,6 @@
           "audioFile": null
         },
         {
-          "english": "Excrements, dross of iron",
-          "translation": "mafi, mavi",
-          "pronunciation": "ma-fi ma-vi",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "Silver, money, sufficiency",
           "translation": "faida, faitha",
           "pronunciation": "fai-da faitha",
@@ -16580,13 +16531,6 @@
           "translation": "summu",
           "pronunciation": "summu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Corpse",
-          "translation": "lufu",
-          "pronunciation": "lu-fu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
@@ -24822,13 +24766,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "fufu",
-          "pronunciation": "fu-fu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adj.)",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "kulúlu",
           "pronunciation": "kululu",
@@ -25529,13 +25466,6 @@
           "audioFile": null
         },
         {
-          "english": "Whore",
-          "translation": "jánja",
-          "pronunciation": "janja",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-          "audioFile": null
-        },
-        {
           "english": "Widen",
           "translation": "henda nialámu",
           "pronunciation": "henda nialamu",
@@ -25847,13 +25777,6 @@
           "english": "Youth",
           "translation": "mfulani",
           "pronunciation": "mfu-la-ni",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Semen",
-          "translation": "mukodzo",
-          "pronunciation": "mu-kodzo",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -26481,13 +26404,6 @@
           "audioFile": null
         },
         {
-          "english": "Choke",
-          "translation": "to strangle, ku-shongola",
-          "pronunciation": "to strangle ku-shongola",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
           "english": "Clasp",
           "translation": "ku-funja or -fumbya (in hand)",
           "pronunciation": "ku-funja or -fumbya",
@@ -26957,13 +26873,6 @@
           "audioFile": null
         },
         {
-          "english": "Idiot",
-          "translation": "akili-ze k'azitimire",
-          "pronunciation": "akili-ze k'a-zi-ti-mi-re",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
           "english": "Inter",
           "translation": "ku-zika",
           "pronunciation": "ku-zika",
@@ -27016,13 +26925,6 @@
           "english": "Loins",
           "translation": "chuno (usually in loc)",
           "pronunciation": "chuno",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Magic",
-          "translation": "witchcraft, utsai",
-          "pronunciation": "witchcraft utsai",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27940,13 +27842,6 @@
           "english": "Width",
           "translation": "ualamu",
           "pronunciation": "ua-la-mu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "mutsai (muche)",
-          "pronunciation": "mutsai",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31437,13 +31332,6 @@
           "audioFile": null
         },
         {
-          "english": "Savage",
-          "translation": "fierce, (m')-wara",
-          "pronunciation": "fierce",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
           "english": "Scales",
           "translation": "of fish, etc",
           "pronunciation": "of fish etc",
@@ -31979,13 +31867,6 @@
           "english": "Winnow",
           "translation": "ku-fufula (by throwing against the wind)",
           "pronunciation": "ku-fufula",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Wizard",
-          "translation": "mutsai (mulume)",
-          "pronunciation": "mutsai",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -33495,13 +33376,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture",
-          "translation": "sirrimía; turíṣa",
-          "pronunciation": "sirrimia",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)",
-          "audioFile": null
-        },
-        {
           "english": "Totally",
           "translation": "mambo gossi",
           "pronunciation": "mamb-o gos-si",
@@ -34457,13 +34331,6 @@
           "english": "Baptist",
           "translation": "m'tobyi",
           "pronunciation": "m'tobyi",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Bastard",
-          "translation": "mwana wa tsaka-ni (begotten in the forest)",
-          "pronunciation": "mwana wa tsaka-ni",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -35556,13 +35423,6 @@
           "english": "Solicit",
           "translation": "ku-dhedheja",
           "pronunciation": "ku-dhedheja",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Sorcery",
-          "translation": "utsai",
-          "pronunciation": "utsai",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -36932,13 +36792,6 @@
           "audioFile": null
         },
         {
-          "english": "Sorcerer",
-          "translation": "mzai",
-          "pronunciation": "mzai",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-          "audioFile": null
-        },
-        {
           "english": "Sprinkle",
           "translation": "muága",
           "pronunciation": "muaga",
@@ -37509,13 +37362,6 @@
           "english": "Gluttony",
           "translation": "ulave",
           "pronunciation": "u-la-ve",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery",
-          "translation": "usinsi",
-          "pronunciation": "u-sinsi",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -38535,13 +38381,6 @@
           "audioFile": null
         },
         {
-          "english": "Strangle",
-          "translation": "kill by strangling, ku-shongola",
-          "pronunciation": "kill by strangling ku-shongola",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
           "english": "Suitable",
           "translation": "(it is), ki-na-fwaha",
           "pronunciation": "it is ki-na-fwaha",
@@ -38885,13 +38724,6 @@
           "audioFile": null
         },
         {
-          "english": "A corpse",
-          "translation": "Lufu",
-          "pronunciation": "lu-fu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "The eyes",
           "translation": "Madzo",
           "pronunciation": "madz-o",
@@ -39204,13 +39036,6 @@
           "translation": "ză",
           "pronunciation": "za",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka prep.)",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterer",
-          "translation": "msínsi",
-          "pronunciation": "msinsi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
           "audioFile": null
         },
         {
@@ -39683,13 +39508,6 @@
           "audioFile": null
         },
         {
-          "english": "The penis",
-          "translation": "kibogo",
-          "pronunciation": "ki-bo-go",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "The wrist",
           "translation": "kidengu",
           "pronunciation": "ki-dengu",
@@ -39721,13 +39539,6 @@
           "english": "The guava",
           "translation": "kifalu",
           "pronunciation": "ki-fa-lu",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "The penis",
-          "translation": "kigandegande",
-          "pronunciation": "ki-gande-gande",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -40278,13 +40089,6 @@
           "audioFile": null
         },
         {
-          "english": "Fornicate",
-          "translation": "ku-zinga",
-          "pronunciation": "ku-zinga",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
           "english": "Gonorrhœa",
           "translation": "of matter, muruo",
           "pronunciation": "of matter mu-ruo",
@@ -40449,13 +40253,6 @@
           "english": "Multitude",
           "translation": "mutunganano",
           "pronunciation": "mu-tunga-na-no",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Nakedness",
-          "translation": "(privates), huhu (ra)",
-          "pronunciation": "privates huhu ra",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -41293,13 +41090,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "muigni lukuáre",
-          "pronunciation": "muigni lukuare",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-          "audioFile": null
-        },
-        {
           "english": "Provisions",
           "translation": "léu, pl. maléu",
           "pronunciation": "leu",
@@ -41664,13 +41454,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "udzai",
-          "pronunciation": "udzai",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "Hard, sour",
           "translation": "ufu, uvu",
           "pronunciation": "ufu uvu",
@@ -41751,13 +41534,6 @@
           "english": "Admonition",
           "translation": "monyeso (wa), plur",
           "pronunciation": "monyeso",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterate",
-          "translation": "ku-tirira",
-          "pronunciation": "ku-tirira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -42403,13 +42179,6 @@
           "translation": "zūkisa",
           "pronunciation": "zoo-ki-sa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v.)",
-          "audioFile": null
-        },
-        {
-          "english": "Fornicator",
-          "translation": "msíngi",
-          "pronunciation": "msingi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
           "audioFile": null
         },
         {
@@ -44884,13 +44653,6 @@
           "audioFile": null
         },
         {
-          "english": "The testicles",
-          "translation": "Tende",
-          "pronunciation": "tend-e",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "To be crooked",
           "translation": "Vogoka",
           "pronunciation": "vo-go-ka",
@@ -46830,13 +46592,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked, bare, empty",
-          "translation": "Kivuvu",
-          "pronunciation": "ki-vu-vu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "The stone of fruit",
           "translation": "Koko",
           "pronunciation": "ko-ko",
@@ -48006,13 +47761,6 @@
           "audioFile": null
         },
         {
-          "english": "Semen, a germ, sprout",
-          "translation": "mani",
-          "pronunciation": "ma-ni",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "To spring up, to grow",
           "translation": "mera",
           "pronunciation": "me-ra",
@@ -49143,13 +48891,6 @@
           "english": "Pleasure, will, love (ga)",
           "translation": "mahensi, mahenzi",
           "pronunciation": "ma-hensi ma-henzi",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Excrements, dross of iron",
-          "translation": "mavi",
-          "pronunciation": "ma-vi",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -50663,13 +50404,6 @@
           "translation": "maumbi",
           "pronunciation": "maumbi",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "Fierce, savage, ravenous, greedy",
-          "translation": "mukari",
-          "pronunciation": "mu-ka-ri",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [adj.]",
           "audioFile": null
         },
         {
@@ -53242,13 +52976,6 @@
           "audioFile": null
         },
         {
-          "english": "A bier; a rude kind of litter for carrying a disabled person or a corpse",
-          "translation": "ludara",
-          "pronunciation": "lu-da-ra",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
           "english": "A narrow strip of platting, which is worked into mats, baskets, and bags",
           "translation": "lusihu",
           "pronunciation": "lu-si-hu",
@@ -53280,13 +53007,6 @@
           "english": "A clearing up, a break in the weather, after it has been rainy (= Muanga)",
           "translation": "changa",
           "pronunciation": "changa",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "A corpse, but only of one who was slain; when dying naturally, it is Lufu",
-          "translation": "kimba",
-          "pronunciation": "kimba",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -53463,13 +53183,6 @@
           "translation": "fumbika",
           "pronunciation": "fumbi-ka",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.a.]",
-          "audioFile": null
-        },
-        {
-          "english": "A small stump, not of trees, but of a broken instrument or a mutilated member of the body",
-          "translation": "kigutu",
-          "pronunciation": "ki-gu-tu",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
         {
@@ -53651,13 +53364,6 @@
           "english": "A sort of enclosed platform, or rack, erected in native huts over the place they make their fire, and which serves as their granary",
           "translation": "ludzaga",
           "pronunciation": "ludza-ga",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
-          "audioFile": null
-        },
-        {
-          "english": "A calabash of the smallest size, used as a snuff-box, but especially for keeping the various powders used in charming and witchcraft",
-          "translation": "kidonga",
-          "pronunciation": "ki-donga",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.]",
           "audioFile": null
         },
@@ -54796,13 +54502,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Mū-tsāī; a",
-          "pronunciation": "mu-tsai",
-          "context": "16. Nika (Giryama / Duruma / Digo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
           "english": "Woman",
           "translation": "Mū-cē; a-cē. M-gōma",
           "pronunciation": "mu-ce",
@@ -55447,13 +55146,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "uzáwi; uzái",
-          "pronunciation": "uzawi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)",
-          "audioFile": null
-        },
-        {
           "english": "Ground-nut",
           "translation": "N-dzugu",
           "pronunciation": "n dzu-gu",
@@ -55464,13 +55156,6 @@
           "english": "Rhinoceros",
           "translation": "Pēra; ma",
           "pronunciation": "peh-ra",
-          "context": "16. Nika (Giryama / Duruma / Digo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "U-tsāī",
-          "pronunciation": "u-tsai",
           "context": "16. Nika (Giryama / Duruma / Digo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
         },
@@ -55780,5 +55465,6 @@
   ],
   "source": "Public Domain & Academic Lexicons (Krapf 1850, Krapf & Rebmann 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
   "isoCode": "nyf",
-  "glottocode": "miji1238"
+  "glottocode": "miji1238",
+  "totalEntries": 7905
 }

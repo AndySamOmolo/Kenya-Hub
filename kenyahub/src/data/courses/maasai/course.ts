@@ -114,16 +114,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sopai! Epa! Kejaa in-gishu o in-gera?",
             "source": "Greetings! Reply! How are the cattle and the children?"
-          },
-          {
-            "target": "Kiyiolo enkarna Sopai! taata.",
-            "source": "We know the expression greetings to warriors today."
-          },
-          {
-            "target": "Eirorie ilpayiani Ashe engang.",
-            "source": "The elders spoke of thank you at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -479,16 +471,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Medany ol-kimojino obo el-lashei.",
             "source": "One finger will not kill a louse (Hollis 1905, p. 244, Proverb #32)."
-          },
-          {
-            "target": "Kiyiolo enkarna En-gare Nyrobi taata.",
-            "source": "We know the expression nairobi today."
-          },
-          {
-            "target": "Eirorie ilpayiani Ol-doinyo Oibor engang.",
-            "source": "The elders spoke of white mountain at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -659,15 +643,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo enkarna ol-chore taata.",
-            "source": "We know the expression friend today."
-          },
-          {
-            "target": "Eirorie ilpayiani en-gerai engang.",
-            "source": "The elders spoke of child at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -972,15 +948,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo enkarna tɔ́mɔ̂n taata.",
-            "source": "We know the expression ten today."
-          },
-          {
-            "target": "Eirorie ilpayiani naáudo engang.",
-            "source": "The elders spoke of nine at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1122,16 +1090,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "kumuk ndari nārok",
             "source": "Many black goats"
-          },
-          {
-            "target": "Kiyiolo enkarna ímíêt taata.",
-            "source": "We know the expression five today."
-          },
-          {
-            "target": "Eirorie ilpayiani ílɛ̂ engang.",
-            "source": "The elders spoke of six at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1290,15 +1250,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo enkarna en-aisijoi taata.",
-            "source": "We know the expression honey today."
-          },
-          {
-            "target": "Eirorie ilpayiani en-giringo engang.",
-            "source": "The elders spoke of meat at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1854,15 +1806,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo enkarna ɛŋ-kɔŋ-ʊ́ taata.",
-            "source": "We know the expression eye today."
-          },
-          {
-            "target": "Eirorie ilpayiani ɛŋ-kɪ-ɔɔk engang.",
-            "source": "The elders spoke of ear at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2028,16 +1972,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "aia ngoshogi",
             "source": "I have a stomach-ache"
-          },
-          {
-            "target": "Kiyiolo enkarna ol-óì-tò taata.",
-            "source": "We know the expression bone today."
-          },
-          {
-            "target": "Eirorie ilpayiani ŋ-kwar-íé engang.",
-            "source": "The elders spoke of nose at the homestead."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2208,15 +2144,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Kiyiolo enkarna a-iro taata.",
-            "source": "We know the expression speak today."
-          },
-          {
-            "target": "Eirorie ilpayiani a-irura engang.",
-            "source": "The elders spoke of sleep at the homestead."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

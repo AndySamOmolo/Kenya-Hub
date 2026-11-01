@@ -7985,13 +7985,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "kafífi ka ungúo",
-          "pronunciation": "kafifi ka unguo",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.)",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "mázui",
           "pronunciation": "mazui",
@@ -8738,13 +8731,6 @@
           "translation": "ónse",
           "pronunciation": "onse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.)",
-          "audioFile": null
-        },
-        {
-          "english": "Whore",
-          "translation": "muránga",
-          "pronunciation": "muranga",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
           "audioFile": null
         },
         {
@@ -11415,13 +11401,6 @@
           "audioFile": null
         },
         {
-          "english": "Torture",
-          "translation": "kusa maṣáka",
-          "pronunciation": "kusa masaka",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
-          "audioFile": null
-        },
-        {
           "english": "Totally",
           "translation": "kua ionse",
           "pronunciation": "kua ion-se",
@@ -12486,13 +12465,6 @@
           "audioFile": null
         },
         {
-          "english": "Sorcerer",
-          "translation": "mzáwi muyúmu",
-          "pronunciation": "mzawi muyumu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
-          "audioFile": null
-        },
-        {
           "english": "Sprinkle",
           "translation": "jihíka",
           "pronunciation": "jihika",
@@ -12763,13 +12735,6 @@
           "translation": "za",
           "pronunciation": "za",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo prep.)",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterer",
-          "translation": "mránga",
-          "pronunciation": "mranga",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
           "audioFile": null
         },
         {
@@ -13445,13 +13410,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "mránga",
-          "pronunciation": "mranga",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
-          "audioFile": null
-        },
-        {
           "english": "Provisions",
           "translation": "jakúja",
           "pronunciation": "jakuja",
@@ -13603,13 +13561,6 @@
           "translation": "gisa ngóro",
           "pronunciation": "gisa ngoro",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v.)",
-          "audioFile": null
-        },
-        {
-          "english": "Fornicator",
-          "translation": "kiránga ja wáke",
-          "pronunciation": "kiranga ja wake",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
           "audioFile": null
         },
         {
@@ -15188,13 +15139,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Mū-tsāwi; wa-",
-          "pronunciation": "mu-tsawi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
-          "audioFile": null
-        },
-        {
           "english": "Honey",
           "translation": "uki",
           "pronunciation": "oo-kee",
@@ -15520,13 +15464,6 @@
           "english": "Water",
           "translation": "Mā-dzī",
           "pronunciation": "ma-dzi",
-          "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Mū-tsāwi; wa",
-          "pronunciation": "mu-tsawi",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
         },
@@ -16063,20 +16000,6 @@
           "audioFile": null
         },
         {
-          "english": "Witchcraft",
-          "translation": "uzáwi",
-          "pronunciation": "uzawi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "U-tsāwi",
-          "pronunciation": "u-tsawi",
-          "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
           "english": "One hundred",
           "translation": "igana",
           "pronunciation": "ee-gah-nah",
@@ -16319,5 +16242,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
   "isoCode": "pkb",
-  "glottocode": "poko1261"
+  "glottocode": "poko1261",
+  "totalEntries": 2302
 }

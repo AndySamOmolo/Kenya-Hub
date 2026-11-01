@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { Client, Databases, Query } from "node-appwrite";
 import { TOOLS } from "@/lib/tools-registry";
 import countiesData from "@/data/counties.json";
 import matatuData from "@/data/matatu-routes.json";
@@ -8,8 +9,10 @@ import { PUBLISHED_COURSES } from "@/data/courses/registry";
 export const dynamic = "force-static";
 
 const BASE_URL = "https://kenyahub.me";
+const DATABASE_ID = "kenyahub-db";
+const BLOGS_COLLECTION_ID = "blogs";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date().toISOString();
 
   // Static pages
@@ -127,10 +130,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Static blog posts
-  const blogPages: MetadataRoute.Sitemap = STATIC_BLOG_POSTS.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}/`,
-    lastModified: post.updatedAt || post.publishedAt,
+  // Merge static and Appwrite blog posts so sitemap matches /blog/
+  const blogPostsMap = new Map<string, string>();
+  for (const post of STATIC_BLOG_POSTS) {
+    blogPostsMap.set(post.slug, post.updatedAt || post.publishedAt);
+  }
+  try {
+    const client = new Client()
+      .setEndpoint("https://fra.cloud.appwrite.io/v1")
+      .setProject("6a3290500003e21b7fe1");
+    const databases = new Databases(client);
+    const response = await databases.listDocuments(
+      DATABASE_ID,
+      BLOGS_COLLECTION_ID,
+      [Query.limit(100)]
+    );
+    const EXCLUDED_SLUGS = new Set(["greatest-kenyan-hiphop-albums-of-all-time"]);
+    for (const doc of response.documents as any[]) {
+      if (!EXCLUDED_SLUGS.has(doc.slug) && (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800)) {
+        blogPostsMap.set(doc.slug, doc.updatedAt || doc.publishedAt || now);
+      }
+    }
+  } catch {
+    // Offline / static fallback uses STATIC_BLOG_POSTS
+  }
+
+  const blogPages: MetadataRoute.Sitemap = Array.from(blogPostsMap.entries()).map(([slug, lastModified]) => ({
+    url: `${BASE_URL}/blog/${slug}/`,
+    lastModified,
     changeFrequency: "monthly",
     priority: 0.7,
   }));

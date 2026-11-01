@@ -6,7 +6,7 @@
 // 3. Rev. Fr. A. Hémery, C.S.Sp. (1903) "English-Kikuyu Handbook: A Short Grammar, Vocabulary, and Phrase-Book"
 // 4. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
 // 5. Rev. A. W. McGregor (1904) "English-Kikuyu Vocabulary" (SPCK, London)
-// 6. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikuyu of British East Africa" (London)
+// 6. W. Scoresby & Katherine Routledge (1910) "With a pre-colonial People: The Akikuyu of British East Africa" (London)
 // 7. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
 // 8. Hon. Charles Dundas (1915) "The Organization and Laws of Some Bantu Tribes in East Africa" (JRAI Vol. 45)
 // ============================================================
@@ -147,7 +147,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
     id: "kikuyu-cultural-lexicon-hobley",
     title: "Classical Agĩkũyũ Social, Judicial, Seasonal, Clan & Ritual Terminology (Höhnel 1894, McGregor 1904, Routledge 1910, Dundas 1915 & Hobley 1922)",
     summary: "Höhnel (1894), W. S. & K. Routledge (1910), Hon. Charles Dundas (1915), and C. W. Hobley (1910, 1922) preserve the complete terminology of the 13 Agĩkũyũ clans (Mĩhĩrĩga), generation ages (Rĩĩka), council grades (Kiama), land tenure (Gĩthaka), and peace covenants.",
-    content: `In *Discovery of Lakes Rudolf and Stefanie* (1894, Vol. I, Chs. V–VI), *With a Prehistoric People: The Akikuyu of British East Africa* (1910), *The Organization and Laws of Some Bantu Tribes in East Africa* (Hon. Charles Dundas, JRAI Vol. 45, 1915, pp. 234–306), and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), primary accounts document the institutional vocabulary of Agĩkũyũ society:
+    content: `In *Discovery of Lakes Rudolf and Stefanie* (1894, Vol. I, Chs. V–VI), *With a pre-colonial People: The Akikuyu of British East Africa* (1910), *The Organization and Laws of Some Bantu Tribes in East Africa* (Hon. Charles Dundas, JRAI Vol. 45, 1915, pp. 234–306), and *Bantu Beliefs and Customary Institutions* (1922, Glossary pp. 305–308), primary accounts document the institutional vocabulary of Agĩkũyũ society:
 1. **1887 Traverse of Kikuyuland: Peace Covenants, Ridges & Homesteads (Höhnel 1894, Vol. I, pp. 286–365)**:
    - Records the earliest south-to-north traverse from *Ngongo Bagas* (Ngong) to *Ndoro* at the western base of Mount Kenya (Aug–Oct 1887), meeting leaders *Miani*, *Karanja*, *Waiyaki*, *Kihara*, *Gathirimu*, *Karanja wa Maragua*, *Wamugunda* (Tetu), and *Kihura* (Ndoro).
    - **Peace Litany & Covenants**: Greeting **Mirema!** and peace chorus **Thayu! Thayu!** ("Peace! Peace!") during the **kuhoria tatha** ceremony (sprinkling sheep stomach-contents over both parties) and the solemn **githathi** blood-and-peace covenant over a white ram and black goat (**mburi ya thayu**).

@@ -1622,13 +1622,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Ol-labanani",
-          "pronunciation": "ol-labanani",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
-          "audioFile": null
-        },
-        {
           "english": "I / me",
           "translation": "nanu (prefix a-)",
           "pronunciation": "nah-noo",
@@ -2235,5 +2228,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
   "isoCode": "saq-ilc",
-  "glottocode": "chAM1234"
+  "glottocode": "chAM1234",
+  "totalEntries": 304
 }

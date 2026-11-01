@@ -9318,13 +9318,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse",
-          "translation": "thano",
-          "pronunciation": "tha-no",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
           "english": "Disease",
           "translation": "yāmo",
           "pronunciation": "ya-mo",
@@ -11306,13 +11299,6 @@
           "audioFile": null
         },
         {
-          "english": "An idiot",
-          "translation": "Ng'amofuwo",
-          "pronunciation": "ng'a-mo-fu-wo",
-          "context": "Mill-Hill Fathers (1920) Handbook of the Kavirondo Language",
-          "audioFile": null
-        },
-        {
           "english": "Doctrine",
           "translation": "Puonj",
           "pronunciation": "puonj",
@@ -12408,13 +12394,6 @@
           "english": "Undress, to",
           "translation": "loing",
           "pronunciation": "loing",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
-          "english": "Urinate, to",
-          "translation": "laiyo",
-          "pronunciation": "lai-yo",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
           "audioFile": null
         },
@@ -15786,13 +15765,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "duk",
-          "pronunciation": "duk",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
           "english": "Noose",
           "translation": "aruwetu",
           "pronunciation": "a-ru-we-tu",
@@ -15870,13 +15842,6 @@
           "audioFile": null
         },
         {
-          "english": "Whore",
-          "translation": "jabayo",
-          "pronunciation": "ja-ba-yo",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
           "english": "World",
           "translation": "penyi",
           "pronunciation": "penyi",
@@ -15915,13 +15880,6 @@
           "english": "Molar",
           "translation": "Nyapuñ lak",
           "pronunciation": "nya-pung lak",
-          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Ja-Luo / Nyifwa)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Jajuok",
-          "pronunciation": "ja-juok",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Ja-Luo / Nyifwa)",
           "audioFile": null
         },
@@ -16223,13 +16181,6 @@
           "english": "Riches",
           "translation": "mwando",
           "pronunciation": "mwando",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
-          "english": "Savage",
-          "translation": "gēr",
-          "pronunciation": "ger",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
           "audioFile": null
         },
@@ -16675,13 +16626,6 @@
           "audioFile": null
         },
         {
-          "english": "Adultery",
-          "translation": "yakuo",
-          "pronunciation": "ya-kuo",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
           "english": "Business",
           "translation": "gumaga",
           "pronunciation": "gu-ma-ga",
@@ -16776,13 +16720,6 @@
           "english": "Nonsense",
           "translation": "oja",
           "pronunciation": "oja",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
-          "english": "Sorcerer",
-          "translation": "yajuok",
-          "pronunciation": "ya-juok",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
           "audioFile": null
         },
@@ -17070,13 +17007,6 @@
           "english": "Wilderness",
           "translation": "pāp",
           "pronunciation": "pap",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "ijuok",
-          "pronunciation": "i-juok",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo)",
           "audioFile": null
         },
@@ -17680,5 +17610,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
   "isoCode": "luo",
-  "glottocode": "luoo1235"
+  "glottocode": "luoo1235",
+  "totalEntries": 2497
 }

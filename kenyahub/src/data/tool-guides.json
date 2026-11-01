@@ -650,7 +650,7 @@
         },
         {
           "question": "What is Kenya's country code?",
-          "answer": "Kenya's country code is +254. When dialing a Kenyan number internationally, drop the leading 0 and add +254. Example: 0722 123 456 becomes +254 722 123 456."
+          "answer": "Kenya's country code is +254. When dialing a Kenyan number internationally, drop the leading 0 and add +254. Example: 0722 000 000 becomes +254 722 000 000."
         },
         {
           "question": "What prefixes does Faiba use?",
@@ -1993,7 +1993,7 @@
         },
         {
           "question": "What is Kenya's country code?",
-          "answer": "Kenya's country code is +254. When dialing a Kenyan number internationally, drop the leading 0 and add +254. Example: 0722 123 456 becomes +254 722 123 456."
+          "answer": "Kenya's country code is +254. When dialing a Kenyan number internationally, drop the leading 0 and add +254. Example: 0722 000 000 becomes +254 722 000 000."
         },
         {
           "question": "What prefixes does Faiba use?",

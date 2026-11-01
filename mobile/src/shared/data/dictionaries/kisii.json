@@ -6103,13 +6103,6 @@
           "audioFile": null
         },
         {
-          "english": "Urine (Kuria)",
-          "translation": "Amasi-nyoro, Esi-nyoro",
-          "pronunciation": "a-ma-si nyo-roh e-si nyo-roh",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
           "english": "Thief (Kuria)",
           "translation": "Omo-ivi; ava-ivi",
           "pronunciation": "mo-ivi",
@@ -7048,13 +7041,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Omu-roki / Omo-rogi",
-          "pronunciation": "mu-roki",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-          "audioFile": null
-        },
-        {
           "english": "There",
           "translation": "A-lia",
           "pronunciation": "a-lia",
@@ -7139,13 +7125,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Omu-roki",
-          "pronunciation": "mu-roki",
-          "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
           "english": "To go",
           "translation": "genda. -icia",
           "pronunciation": "gend-a i-cia",
@@ -7191,13 +7170,6 @@
           "english": "Thing",
           "translation": "Egentu (pl. Ebintu)",
           "pronunciation": "e-gent-u",
-          "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "Omuroki",
-          "pronunciation": "o-mu-roh-ki",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
           "audioFile": null
         },
@@ -7748,23 +7720,9 @@
           "audioFile": null
         },
         {
-          "english": "Penis (Kuria)",
-          "translation": "Em-boro",
-          "pronunciation": "em bo-roh",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
           "english": "Thing (Kuria)",
           "translation": "Ege-ntu; evi-ntu",
           "pronunciation": "e-ge ntu",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch (Kuria)",
-          "translation": "Omo-rogi",
-          "pronunciation": "mo-rogi",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         },
@@ -7867,20 +7825,6 @@
           "audioFile": null
         },
         {
-          "english": "Excrement (Kuria)",
-          "translation": "Ama-vi",
-          "pronunciation": "a-ma vi",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
-          "english": "Testicles (Kuria)",
-          "translation": "Eri-nege; ama",
-          "pronunciation": "e-ri ne-ge",
-          "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
-          "audioFile": null
-        },
-        {
           "english": "I, me, my (Kuria)",
           "translation": "Inci. Uni. N-. -n-. -ane",
           "pronunciation": "inci uni n- -n- -ane",
@@ -7955,5 +7899,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
-  "glottocode": "gusi1247"
+  "glottocode": "gusi1247",
+  "totalEntries": 1110
 }

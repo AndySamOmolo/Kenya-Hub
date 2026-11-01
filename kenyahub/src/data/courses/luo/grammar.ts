@@ -32,21 +32,21 @@ export const ALPHABET = {
         { letter: 'r', pronunciation: 'as in rat', example: 'Ramo: to hurt' },
         { letter: 's', pronunciation: 'as in sing', example: 'Sara: fishbone' },
         { letter: 't', pronunciation: 'as in tell', example: 'Tado: roof' },
-        { letter: 'th', pronunciation: 'as in thatch', example: 'Thiedho: to forge' },
+        { letter: 'th', pronunciation: 'as in thatch', example: 'Thiedho: to forge' }
     ],
     special_consonants: [
         { letter: 'mb', pronunciation: 'One sound at word start', example: 'Mbiru: a bird' },
         { letter: 'nd', pronunciation: 'One sound at word start', example: 'Ndawa: tobacco' },
         { letter: 'ng', pronunciation: 'Double sound as in "finger"', example: 'Ngege: carp' },
         { letter: "ng'", pronunciation: 'Nasal as "ng" in "song"', example: "Ng'owo: a figtree" },
-        { letter: 'ny', pronunciation: 'One sound', example: 'Nyako: girl' },
+        { letter: 'ny', pronunciation: 'One sound', example: 'Nyako: girl' }
     ],
     vowels: [
         { letter: 'a', pronunciation: 'as in "father"', example: 'Mako: to hold' },
         { letter: 'e', pronunciation: 'as "a" in "lake"', example: 'Lemo: to pray' },
         { letter: 'i', pronunciation: 'as in "police"', example: 'Limo: to visit' },
         { letter: 'o', pronunciation: 'as "oa" in "coach"', example: 'Moso: to greet' },
-        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' },
+        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' }
     ],
 };
 
@@ -62,7 +62,7 @@ export const POSSESSIVE_SUFFIXES_SIMPLE = [
     { suffix: 'e', person: 'his/her/its', description: '(his/her/its)' },
     { suffix: 'wa', person: 'our', description: '(our)' },
     { suffix: 'u', person: 'your', description: '(your - plural)' },
-    { suffix: 'gi', person: 'their', description: '(their)' },
+    { suffix: 'gi', person: 'their', description: '(their)' }
 ];
 
 export const POSSESSIVE_SUFFIXES_EXTENDED = [
@@ -71,7 +71,7 @@ export const POSSESSIVE_SUFFIXES_EXTENDED = [
     { suffix: 'ne', person: 'his/her/its', description: '(his/her/its)' },
     { suffix: 'wa', person: 'our', description: '(our)' },
     { suffix: 'u', person: 'your', description: '(your - plural)' },
-    { suffix: 'gi', person: 'their', description: '(their)' },
+    { suffix: 'gi', person: 'their', description: '(their)' }
 ];
 
 // Irregular possessives from the Handbook pp. 27-29
@@ -107,7 +107,7 @@ export const CONSTRUCT_POSSESSIVE_RULES = [
     { pattern: /wa$/, replacement: 'p', example: 'Ndawa → Ndap (tobacco of)', rule: 'Words ending in "w" → p' },
     { pattern: /k$/, replacement: 'g', example: 'Lok → Log (handle of)', rule: 'Words ending in "k" → g' },
     { pattern: /ga$/, replacement: 'k', example: 'Puga → Puk (gourd of)', rule: 'Words ending in "g" + vowel → k' },
-    { pattern: /ch$/, replacement: '', example: 'Kwach → Kwa (leopard of)', rule: 'Words ending in "ch" drop "ch"' },
+    { pattern: /ch$/, replacement: '', example: 'Kwach → Kwa (leopard of)', rule: 'Words ending in "ch" drop "ch"' }
 ];
 
 // ============================================================
@@ -119,7 +119,7 @@ export const DEMONSTRATIVES = [
     { suffix: 'no', meaning: 'that (far)', description: 'Adjective suffix for distant singular', example: "Ng'atno = that person" },
     { suffix: 'gi', meaning: 'these (near)', description: 'Adjective suffix for nearby plural', example: 'Jogi = these people' },
     { suffix: 'go', meaning: 'those (far)', description: 'Adjective suffix for distant plural', example: 'Jogo = those people' },
-    { suffix: 'cha', meaning: 'that over yonder', description: 'Points to something far away', example: 'Yath cha = that tree over yonder' },
+    { suffix: 'cha', meaning: 'that over yonder', description: 'Points to something far away', example: 'Yath cha = that tree over yonder' }
 ];
 
 export const DEMONSTRATIVE_SUBSTANTIVES = [
@@ -128,7 +128,7 @@ export const DEMONSTRATIVE_SUBSTANTIVES = [
     { luo: 'Macha / Machacha', english: 'that over yonder' },
     { luo: 'Jali / Jal', english: 'this man' },
     { luo: 'Jalo', english: 'that man' },
-    { luo: 'Joka', english: 'those men over there' },
+    { luo: 'Joka', english: 'those men over there' }
 ];
 
 export const PLACE_DEMONSTRATIVES = [
@@ -140,7 +140,7 @@ export const PLACE_DEMONSTRATIVES = [
     { luo: 'Kanyo / Kuno / Kuro / Eri', english: 'There (answer)' },
     { luo: 'Koni', english: 'This side' },
     { luo: 'Kono', english: 'That side' },
-    { luo: 'Kocha', english: 'On the other side' },
+    { luo: 'Kocha', english: 'On the other side' }
 ];
 
 // ============================================================
@@ -154,7 +154,7 @@ export const PERSONAL_PRONOUNS = {
         { luo: 'En', english: 'He, She, It, Him, Her' },
         { luo: 'Wan', english: 'We, Us' },
         { luo: 'Un', english: 'You (plural)' },
-        { luo: 'Gin', english: 'They, Them' },
+        { luo: 'Gin', english: 'They, Them' }
     ],
     inseparable: [
         { prefix: 'a', person: '1st singular (I)', example: 'Ahero = I love' },
@@ -162,7 +162,7 @@ export const PERSONAL_PRONOUNS = {
         { prefix: 'o', person: '3rd singular (He/She)', example: 'Ohero = He/She loves' },
         { prefix: 'wa', person: '1st plural (We)', example: 'Wahero = We love' },
         { prefix: 'u', person: '2nd plural (You all)', example: 'Uhero = You all love' },
-        { prefix: 'gi', person: '3rd plural (They)', example: 'Gihero = They love' },
+        { prefix: 'gi', person: '3rd plural (They)', example: 'Gihero = They love' }
     ],
 };
 
@@ -176,7 +176,7 @@ export const REFLECTIVE_PRONOUNS = [
     { luo: 'Owon', english: 'He/She himself/herself' },
     { luo: 'Wawegi', english: 'We ourselves' },
     { luo: 'Uwegi', english: 'You yourselves' },
-    { luo: 'Giwegi', english: 'They themselves' },
+    { luo: 'Giwegi', english: 'They themselves' }
 ];
 
 export const ALONE_PRONOUNS = [
@@ -185,7 +185,7 @@ export const ALONE_PRONOUNS = [
     { luo: 'Kende', english: 'He/She himself/herself / alone' },
     { luo: 'Kendwa', english: 'We ourselves / alone' },
     { luo: 'Kendu', english: 'You yourselves / alone' },
-    { luo: 'Kendigi', english: 'They themselves / alone' },
+    { luo: 'Kendigi', english: 'They themselves / alone' }
 ];
 
 // ============================================================
@@ -236,7 +236,7 @@ export const PLURAL_PATTERNS = [
     { singular: 'yo', plural: 'yore', meaning: 'road → roads', rule: 'Irregular' },
     { singular: 'sulwe', plural: 'sulini', meaning: 'star → stars', rule: 'Irregular' },
     { singular: 'ruoth', plural: 'ruodhi', meaning: 'chief → chiefs', rule: 'Irregular' },
-    { singular: 'ondiek', plural: 'ondiegi', meaning: 'hyena → hyenas', rule: 'Irregular' },
+    { singular: 'ondiek', plural: 'ondiegi', meaning: 'hyena → hyenas', rule: 'Irregular' }
 ];
 
 // ============================================================
@@ -249,7 +249,7 @@ export const VERB_TENSES = [
     { tense: 'Past Indefinite', prefix: 'ne', example: 'Nahero = I loved', rule: '"ne" + pronoun prefix + verb' },
     { tense: 'Present Perfect', prefix: 'se', example: 'Asehero = I have loved', rule: 'Pronoun prefix + "se" + verb' },
     { tense: 'Past Perfect', prefix: 'ne...se', example: 'Nasehero = I had loved', rule: '"ne" + pronoun prefix + "se" + verb' },
-    { tense: 'Future', prefix: '-na-/-ni-/-no-', example: 'Naher = I shall love', rule: 'Pronoun prefix + tense marker + root' },
+    { tense: 'Future', prefix: '-na-/-ni-/-no-', example: 'Naher = I shall love', rule: 'Pronoun prefix + tense marker + root' }
 ];
 
 // ============================================================
@@ -271,7 +271,7 @@ export const CARDINAL_NUMBERS = [
     { number: 12, luo: "Apar g'ariyo", english: 'Twelve' },
     { number: 20, luo: 'Piero ariyo', english: 'Twenty (tens × two)' },
     { number: 30, luo: 'Piero adek', english: 'Thirty (tens × three)' },
-    { number: 100, luo: 'Piero apar / Mia', english: 'Hundred' },
+    { number: 100, luo: 'Piero apar / Mia', english: 'Hundred' }
 ];
 
 // ============================================================
@@ -289,7 +289,7 @@ export const QUESTION_WORDS = [
     { luo: "Karang'o", english: 'When?', usage: "Ibiro karang'o? — When did you come?" },
     { luo: 'Kanye', english: 'Where?', usage: 'Idak kanye? — Where do you live?' },
     { luo: "Marang'o / N'ang'o", english: 'Why?', usage: "Marang'o ibiro ka? — Why do you come here?" },
-    { luo: 'Manade', english: 'Of what sort?', usage: 'Ichamo chiamo manade? — What sort of food do you eat?' },
+    { luo: 'Manade', english: 'Of what sort?', usage: 'Ichamo chiamo manade? — What sort of food do you eat?' }
 ];
 
 // ============================================================
@@ -313,7 +313,7 @@ export const TIME_EXPRESSIONS = [
     { luo: 'Odiewor', english: 'At midnight' },
     { luo: "Odiechieng'", english: 'In the daytime' },
     { luo: 'Pile / Pilepile', english: 'Daily / Constantly' },
-    { luo: "Bang'e", english: 'Afterwards / Later on' },
+    { luo: "Bang'e", english: 'Afterwards / Later on' }
 ];
 
 // ============================================================
@@ -327,7 +327,7 @@ export const TIME_PHRASES = [
     { luo: "Ka chieng' opilore", english: 'At sunrise' },
     { luo: "Ang'ich welo", english: 'Towards evening (past 6 PM)' },
     { luo: 'Kar donjo dhok', english: 'About 5 PM' },
-    { luo: 'Tekre mon', english: 'Between 2 and 3 PM' },
+    { luo: 'Tekre mon', english: 'Between 2 and 3 PM' }
 ];
 
 // ============================================================
@@ -343,7 +343,7 @@ export const GREETINGS = [
     { luo: 'Ringri ber?', english: 'How is your health?', response: 'Ringra ber' },
     { luo: 'Inindi', english: 'Goodbye / Sleep well', response: 'Inindi' },
     { luo: 'Nyasaye riti', english: 'May God protect you', response: 'Erokamano' },
-    { luo: 'Ero kamano', english: 'Thanks / Well done', response: 'Ero kamano' },
+    { luo: 'Ero kamano', english: 'Thanks / Well done', response: 'Ero kamano' }
 ];
 
 // ============================================================
@@ -361,7 +361,7 @@ export const ADVERBS = {
         { luo: 'Lolwe', english: 'Very far' },
         { luo: 'Moloyo', english: 'Exceedingly' },
         { luo: 'Chuth / Chutho', english: 'Utterly / Quite / Outright' },
-        { luo: 'Both', english: 'Nearly / Almost' },
+        { luo: 'Both', english: 'Nearly / Almost' }
     ],
     manner: [
         { luo: 'Piyo', english: 'Quickly / Fast' },
@@ -372,18 +372,18 @@ export const ADVERBS = {
         { luo: 'Nono', english: 'Simply / In vain / Without reason' },
         { luo: 'Ratiro', english: 'Publicly / Openly' },
         { luo: 'Arum', english: 'Together' },
-        { luo: 'Kamano', english: 'So / Like that' },
+        { luo: 'Kamano', english: 'So / Like that' }
     ],
     affirmation: [
         { luo: 'Ee / Aee', english: 'Yes' },
         { luo: 'Oyo', english: 'No' },
         { luo: 'Adieri', english: 'It is true' },
-        { luo: 'Miriambo', english: 'It is false / a lie' },
+        { luo: 'Miriambo', english: 'It is false / a lie' }
     ],
     repetition: [
         { luo: 'Kendo', english: 'Again' },
         { luo: 'Mokwongo', english: 'First' },
-        { luo: 'Kwonde duto', english: 'Everywhere' },
+        { luo: 'Kwonde duto', english: 'Everywhere' }
     ],
 };
 
@@ -399,7 +399,7 @@ export const INTERJECTIONS = [
     { luo: 'Tho!', english: 'Alas! Ah!' },
     { luo: 'Ero!', english: 'Hey! All right!' },
     { luo: 'Ero kamano', english: 'Thanks / Well done' },
-    { luo: 'Nyire!', english: 'Stop that!' },
+    { luo: 'Nyire!', english: 'Stop that!' }
 ];
 
 // ============================================================

@@ -6,7 +6,6 @@ import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/nav/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import CookieConsent from "@/components/CookieConsent";
-import AdSenseLoader from "@/components/AdSenseLoader";
 import ScrollReset from "@/components/ScrollReset";
 
 const inter = Inter({
@@ -114,9 +113,10 @@ gtag('consent', 'default', {
   'ad_user_data': 'denied',
   'ad_personalization': 'denied',
   'analytics_storage': 'denied',
-  'region': ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH'],
   'wait_for_update': 500
 });
+gtag('set', 'ads_data_redaction', true);
+gtag('set', 'url_passthrough', true);
 try {
   var c = localStorage.getItem('kh-cookie-consent');
   var p = null;
@@ -124,18 +124,11 @@ try {
   if (p || c === 'accepted' || c === 'declined') {
     var analyticsGranted = p ? p.analytics === true : c === 'accepted';
     var advertisingGranted = p ? p.advertising === true : c === 'accepted';
-    gtag('consent', 'default', {
+    gtag('consent', 'update', {
       'ad_storage': advertisingGranted ? 'granted' : 'denied',
       'ad_user_data': advertisingGranted ? 'granted' : 'denied',
       'ad_personalization': advertisingGranted ? 'granted' : 'denied',
       'analytics_storage': analyticsGranted ? 'granted' : 'denied'
-    });
-  } else {
-    gtag('consent', 'default', {
-      'ad_storage': 'granted',
-      'ad_user_data': 'granted',
-      'ad_personalization': 'granted',
-      'analytics_storage': 'granted'
     });
   }
 } catch(e) {}
@@ -163,6 +156,11 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-Y069879V7Y"
         />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5895990873842803"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-gold focus:text-black focus:font-bold focus:text-xs">Skip to main content</a>
@@ -173,7 +171,6 @@ export default function RootLayout({
           <Footer />
           <CookieConsent />
         </ThemeProvider>
-        <AdSenseLoader />
       </body>
     </html>
   );

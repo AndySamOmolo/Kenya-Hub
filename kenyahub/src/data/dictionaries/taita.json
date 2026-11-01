@@ -4646,13 +4646,6 @@
           "audioFile": null
         },
         {
-          "english": "Corn, Kaffir",
-          "translation": "mwemba",
-          "pronunciation": "mwemba",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Tobacco-pipe",
           "translation": "toza",
           "pronunciation": "to-za",
@@ -4738,7 +4731,7 @@
         },
         {
           "english": "Bread, from Indian meal boiled",
-          "translation": "kinolo; from Kaffir corn, kinaburi",
+          "translation": "kinolo; from Sorghum grain, kinaburi",
           "pronunciation": "ki-no-lo from kaffir corn ki-na-bu-ri",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
@@ -8839,13 +8832,6 @@
           "audioFile": null
         },
         {
-          "english": "Corpse",
-          "translation": "garia",
-          "pronunciation": "ga-ria",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Disease",
           "translation": "ukongo",
           "pronunciation": "u-kongo",
@@ -9337,7 +9323,7 @@
         },
         {
           "english": "Harvest, to",
-          "translation": "ku-kwasha, of Indian corn; ku-kwita, of Kaffir corn; ku-aha, of beans, peas",
+          "translation": "ku-kwasha, of Indian corn; ku-kwita, of Sorghum grain; ku-aha, of beans, peas",
           "pronunciation": "ku-kwasha of indian corn ku-kwita of kaffir corn ku-aha of beans peas etc",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
@@ -10438,13 +10424,6 @@
           "english": "Hack, to",
           "translation": "ku-tema",
           "pronunciation": "ku-tema",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Hang, to",
-          "translation": "ku-anika; [to strangle], ku-tswaia",
-          "pronunciation": "ku-anika",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -14313,13 +14292,6 @@
           "audioFile": null
         },
         {
-          "english": "Urinate, to",
-          "translation": "ku-kojela",
-          "pronunciation": "ku-kojela",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Venture, to",
           "translation": "ku-tima",
           "pronunciation": "ku-tima",
@@ -14866,13 +14838,6 @@
           "audioFile": null
         },
         {
-          "english": "Mutilate, to",
-          "translation": "ku-tematema",
-          "pronunciation": "ku-tematema",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Nickname, to",
           "translation": "ku-daria",
           "pronunciation": "ku-daria",
@@ -15044,13 +15009,6 @@
           "english": "Store up, to",
           "translation": "ku-ika",
           "pronunciation": "ku-ika",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Strangle, to",
-          "translation": "ku-tswaia",
-          "pronunciation": "ku-tswaia",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -15576,13 +15534,6 @@
           "english": "Accumulate, to",
           "translation": "ku-juzila",
           "pronunciation": "ku-juzila",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterate, to",
-          "translation": "ku-runganya",
-          "pronunciation": "ku-runganya",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -16263,20 +16214,6 @@
           "translation": "lēkā",
           "pronunciation": "leh-kah",
           "context": "14. Taita (Kidabida / Kisagala / Kasigau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Adultery, to commit",
-          "translation": "ku-laka, ku-zinga, ku-iwa muke",
-          "pronunciation": "ku-laka ku-zinga ku-iwa mu-ke",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Commit adultery, to",
-          "translation": "ku-laka, ku-zinga, ku-iwa muke",
-          "pronunciation": "ku-laka ku-zinga ku-iwa mu-ke",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -18625,13 +18562,6 @@
           "audioFile": null
         },
         {
-          "english": "Idiot",
-          "translation": "mzimu",
-          "pronunciation": "mzi-mu",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Image",
           "translation": "sura",
           "pronunciation": "su-ra",
@@ -18712,13 +18642,6 @@
           "english": "Music",
           "translation": "ngoma",
           "pronunciation": "ngo-ma",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Naked",
-          "translation": "tuu",
-          "pronunciation": "tuu",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -19171,13 +19094,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "msai",
-          "pronunciation": "msai",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "World",
           "translation": "isanga lyose, masanga 'gose, urumengu [?]",
           "pronunciation": "isanga lyose masanga 'gose urumengu",
@@ -19265,13 +19181,6 @@
           "english": "Thing",
           "translation": "Ki-ndu; vi-ndu",
           "pronunciation": "ki ndu",
-          "context": "14. Taita (Kidabida / Kisagala / Kasigau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
-          "audioFile": null
-        },
-        {
-          "english": "Witch",
-          "translation": "M-sāwi; wa",
-          "pronunciation": "m-sawi",
           "context": "14. Taita (Kidabida / Kisagala / Kasigau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
         },
@@ -22174,13 +22083,6 @@
           "audioFile": null
         },
         {
-          "english": "Adulterer",
-          "translation": "mlaki, kitinga cha wake",
-          "pronunciation": "mla-ki ki-tinga cha wa-ke",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
           "english": "Advantage",
           "translation": "mbambara, faida",
           "pronunciation": "mbamba-ra fai-da",
@@ -22233,13 +22135,6 @@
           "english": "Authority",
           "translation": "ndigi",
           "pronunciation": "ndi-gi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Barbarian",
-          "translation": "Mwibabu : a tribe of wild people supposed to have once lived in Taita",
-          "pronunciation": "mwi-ba-bu a tri-be of wild people suppo-sed to ha-ve once li-ved in tai-ta",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -22464,13 +22359,6 @@
           "english": "Multitude",
           "translation": "makwogano",
           "pronunciation": "makwo-ga-no",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Nakedness",
-          "translation": "utuu",
-          "pronunciation": "u-tuu",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -23074,20 +22962,6 @@
           "translation": "kireti; that part of the wilderness near the mountains, which is cultivated, is called nyika",
           "pronunciation": "ki-re-ti that part of the wilderness near the mountains which is culti-va-ted is called nyi-ka",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "usai",
-          "pronunciation": "u-sai",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "U-sāwi",
-          "pronunciation": "u-sawi",
-          "context": "14. Taita (Kidabida / Kisagala / Kasigau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110)",
           "audioFile": null
         },
         {
@@ -23732,5 +23606,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
   "isoCode": "dav",
-  "glottocode": "tait1250"
+  "glottocode": "tait1250",
+  "totalEntries": 3354
 }

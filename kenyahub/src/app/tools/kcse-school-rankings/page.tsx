@@ -23,10 +23,10 @@ interface KcseSchool {
 const schools: KcseSchool[] = data.schools as KcseSchool[];
 const tool = TOOLS.find((t) => t.slug === "kcse-school-rankings")!;
 const faq = [
-  { question: "How are KCSE school rankings determined?", answer: "Rankings are based on each school's mean score — the average of all students' mean grades on a 12-point scale (A=12, E=1). This is calculated by KNEC (Kenya National Examinations Council)." },
-  { question: "When are KCSE results released?", answer: "KCSE results are typically released by KNEC in March/April of the following year. The CS for Education announces the results and overall statistics." },
-  { question: "What is the difference between National, Extra-County, and County schools?", answer: "National schools admit students from all 47 counties. Extra-County schools admit from multiple counties but not all. County schools primarily serve their home county. Sub-County schools serve specific sub-counties." },
-  { question: "What mean score is needed for university admission?", answer: "The minimum KUCCPS university admission grade is typically C+ (mean score 7.0+). However, competitive courses like Medicine require A or A- (10.5+) and Engineering requires B+ (9.5+)." },
+  { question: "Does KNEC publish official KCSE school rankings?", answer: "No. The Ministry of Education and KNEC discontinued official national ranking of schools and individual candidates in 2014. This reference table compiles school mean scores and A/A- counts published directly by individual school boards of management and verified education desk reports following the official KNEC results release." },
+  { question: "How are school KCSE mean scores calculated?", answer: "A school's mean score is the arithmetic average of all registered candidates' overall KCSE mean grade points on the KNEC 12-point scale (where A = 12, A- = 11, B+ = 10, B = 9, B- = 8, C+ = 7, down to E = 1)." },
+  { question: "What is the difference between National, Extra-County, and County schools?", answer: "National schools admit top-performing students from all 47 counties under Ministry of Education placement quotas. Extra-County schools admit students across regional and home county quotas, while County and Sub-County schools primarily serve learners within their home county." },
+  { question: "What mean grade is required for KUCCPS university degree placement?", answer: "The statutory minimum KCSE mean grade for direct degree admission via KUCCPS in Kenyan public and private universities is C+ (7.00 points out of 12.00). Competitive degree clusters such as Medicine, Dental Surgery, Pharmacy, Engineering, and Law also require high weighted cluster points in four core subjects." },
 ];
 export default function KcseSchoolRankingsPage() {
   const [search, setSearch] = useState("");
@@ -67,7 +67,7 @@ export default function KcseSchoolRankingsPage() {
         <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
           <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
             <p className="text-xl sm:text-2xl font-bold text-gold">{data.year}</p>
-            <p className="text-[0.65rem] text-text-muted">Results Year</p>
+            <p className="text-[0.65rem] text-text-muted">Cohort Year</p>
           </div>
           <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
             <p className="text-xl sm:text-2xl font-bold text-text-primary">{(data.totalCandidates / 1000).toFixed(0)}K</p>
@@ -75,8 +75,12 @@ export default function KcseSchoolRankingsPage() {
           </div>
           <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 text-center">
             <p className="text-xl sm:text-2xl font-bold text-text-primary">{data.totalSchools.toLocaleString()}</p>
-            <p className="text-[0.65rem] text-text-muted">Schools</p>
+            <p className="text-[0.65rem] text-text-muted">Exam Centres</p>
           </div>
+        </div>
+        {/* Editorial disclosure banner */}
+        <div className="bg-gold/5 border border-gold/25 rounded-xl p-3.5 sm:p-4 text-xs text-text-secondary leading-relaxed">
+          <strong className="text-gold">Editorial Note:</strong> Official school-by-school ranking was abolished by the Ministry of Education in 2014. The school mean scores and A/A- counts below are compiled from individual school boards&apos; released KCSE performance analyses and university transition summaries.
         </div>
         {/* Filters */}
         <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-2.5 sm:space-y-3">
@@ -92,7 +96,7 @@ export default function KcseSchoolRankingsPage() {
             </CustomSelect>
             <CustomSelect value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)} className="input-field text-sm" id="kcse-sort">
               <option value="meanScore">Sort by Mean Score</option>
-              <option value="aGrades">Sort by A Grades</option>
+              <option value="aGrades">Sort by A/A- Grades</option>
               <option value="change">Sort by Improvement</option>
             </CustomSelect>
           </div>
@@ -106,8 +110,9 @@ export default function KcseSchoolRankingsPage() {
                 <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">School</th>
                 <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium hidden sm:table-cell">County</th>
                 <th className="text-left px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium hidden md:table-cell">Type</th>
+                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium hidden sm:table-cell">Candidates</th>
                 <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">Mean</th>
-                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">A&apos;s</th>
+                <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">A/A-</th>
                 <th className="text-right px-3 sm:px-4 py-2 sm:py-2.5 text-text-muted font-medium">YoY</th>
               </tr></thead>
               <tbody>
@@ -120,6 +125,7 @@ export default function KcseSchoolRankingsPage() {
                     </td>
                     <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-text-secondary hidden sm:table-cell">{s.county}</td>
                     <td className="px-3 sm:px-4 py-2.5 sm:py-3 hidden md:table-cell"><span className="text-[0.6rem] bg-bg-elevated border border-border px-2 py-0.5 rounded text-text-muted">{s.type}</span></td>
+                    <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-right text-text-muted hidden sm:table-cell">{s.candidates}</td>
                     <td className={`px-3 sm:px-4 py-2.5 sm:py-3 text-right font-bold ${getScoreColor(s.meanScore)}`}>{s.meanScore.toFixed(2)}</td>
                     <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-right font-semibold text-gold">{s.aGrades}</td>
                     <td className={`px-3 sm:px-4 py-2.5 sm:py-3 text-right font-semibold ${getChangeColor(s.change)}`}>{getChangeIcon(s.change)} {Math.abs(s.change).toFixed(2)}</td>
@@ -138,7 +144,7 @@ export default function KcseSchoolRankingsPage() {
               <div key={grade} className="flex items-center gap-3">
                 <span className="text-xs font-bold text-text-primary w-6">{grade}</span>
                 <div className="flex-1 h-3.5 sm:h-4 bg-bg-elevated rounded-full overflow-hidden">
-                  <div className="h-full rounded-full bg-gradient-to-r from-gold to-gold-vivid transition-all" style={{ width: `${(pct as number) * 6}%` }} />
+                  <div className="h-full rounded-full bg-gradient-to-r from-gold to-gold-vivid transition-all" style={{ width: `${Math.min(100, (pct as number) * 5.5)}%` }} />
                 </div>
                 <span className="text-xs text-text-muted w-12 text-right">{pct}%</span>
               </div>

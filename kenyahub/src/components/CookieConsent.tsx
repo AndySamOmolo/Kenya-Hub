@@ -38,14 +38,8 @@ export default function CookieConsent() {
     window.gtag =
       window.gtag ||
       function (...args: unknown[]) {
-        window.dataLayer!.push(args);
+        window.dataLayer!.push(arguments);
       };
-
-    // Do not display modal overlay over content for automated crawlers/review bots
-    const ua = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
-    const isBot =
-      (typeof navigator !== "undefined" && navigator.webdriver) ||
-      /Googlebot|Mediapartners-Google|AdsBot-Google|Google-Display-Ads-Bot|InspectionTool|bingbot/i.test(ua);
 
     const stored = localStorage.getItem("kh-cookie-consent");
     const storedPreferences = localStorage.getItem("kh-cookie-preferences");
@@ -68,7 +62,7 @@ export default function CookieConsent() {
     } else if (stored === "declined") {
       setPreferences({ analytics: false, advertising: false });
       updateConsent({ analytics: false, advertising: false });
-    } else if (!isBot) {
+    } else {
       setVisible(true);
     }
 

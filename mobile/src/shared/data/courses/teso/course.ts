@@ -661,15 +661,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit toto lolo.",
-            "source": "I know the word mother today."
-          },
-          {
-            "target": "Inerasi imakio nu papa oree.",
-            "source": "The elders speak about father in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -971,15 +963,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit itomon lolo.",
-            "source": "I know the word ten today."
-          },
-          {
-            "target": "Inerasi imakio nu ikany-kaoŋon oree.",
-            "source": "The elders speak about nine in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1142,15 +1126,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit ikany-kauni lolo.",
-            "source": "I know the word eight today."
-          },
-          {
-            "target": "Inerasi imakio nu ikany-kaoŋon oree.",
-            "source": "The elders speak about nine in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1321,15 +1297,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit akiring lolo.",
-            "source": "I know the word meat today."
-          },
-          {
-            "target": "Inerasi imakio nu akile oree.",
-            "source": "The elders speak about milk in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1474,15 +1442,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit amunyu lolo.",
-            "source": "I know the word salt today."
-          },
-          {
-            "target": "Inerasi imakio nu ecaai oree.",
-            "source": "The elders speak about tea in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1653,15 +1613,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit apaaran lolo.",
-            "source": "I know the word day today."
-          },
-          {
-            "target": "Inerasi imakio nu akware oree.",
-            "source": "The elders speak about night in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1964,15 +1916,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit akou lolo.",
-            "source": "I know the word head today."
-          },
-          {
-            "target": "Inerasi imakio nu akeju oree.",
-            "source": "The elders speak about foot in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2277,15 +2221,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit ainer lolo.",
-            "source": "I know the word speak today."
-          },
-          {
-            "target": "Inerasi imakio nu abunore oree.",
-            "source": "The elders speak about come in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2448,15 +2384,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit aipet   vs. aipet lolo.",
-            "source": "I know the word to kick  vs. to lay out today."
-          },
-          {
-            "target": "Inerasi imakio nu aidip oree.",
-            "source": "The elders speak about to hit in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2620,15 +2548,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit ateker lolo.",
-            "source": "I know the word clan today."
-          },
-          {
-            "target": "Inerasi imakio nu Inyā oree.",
-            "source": "The elders speak about grass in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2736,15 +2656,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit Akoñ lolo.",
-            "source": "I know the word eye today."
-          },
-          {
-            "target": "Inerasi imakio nu Etom oree.",
-            "source": "The elders speak about elephant in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2860,15 +2772,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit Anācăkēñe lolo.",
-            "source": "I know the word brother today."
-          },
-          {
-            "target": "Inerasi imakio nu Emal oree.",
-            "source": "The elders speak about bow in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2976,15 +2880,7 @@ export const TESO_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Ajeni eong akiroit kanyi-ki-ongwon or akanya kangwun lolo.",
-            "source": "I know the word nine today."
-          },
-          {
-            "target": "Inerasi imakio nu kanyi kauni oree.",
-            "source": "The elders speak about eight in the home."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

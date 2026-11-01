@@ -212,7 +212,7 @@ export const LEVELS = [
   { level: 7, title: 'Sapphire • Keeper of Wisdom', name: 'Sapphire • Keeper of Wisdom', icon: '💎', minXp: 3200, color: '#0EA5E9' },
   { level: 8, title: 'Emerald • Council Sage', name: 'Emerald • Council Sage', icon: '🌿', minXp: 5000, color: '#10B981' },
   { level: 9, title: 'Ruby • Master of Tongues', name: 'Ruby • Master of Tongues', icon: '🔥', minXp: 8000, color: '#EF4444' },
-  { level: 10, title: 'Diamond • Elder of the Council', name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' },
+  { level: 10, title: 'Diamond • Elder of the Council', name: 'Diamond • Elder of the Council', icon: '👑', minXp: 12000, color: '#B9F2FF' }
 ] as const;
 
 export const ACHIEVEMENTS: Achievement[] = [
@@ -377,5 +377,5 @@ export const ACHIEVEMENTS: Achievement[] = [
     xpReward: 500,
     category: 'mastery',
     condition: (p) => p.xp >= 8000,
-  },
+  }
 ];

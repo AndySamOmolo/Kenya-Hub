@@ -1559,13 +1559,6 @@
           "audioFile": null
         },
         {
-          "english": "Dead body",
-          "translation": "atona, pl. ngatoka",
-          "pronunciation": "atona",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Sole (foot)",
           "translation": "etou ya keju, pl. ngetou ya ngakeju",
           "pronunciation": "etou ya keju",
@@ -9049,13 +9042,6 @@
           "audioFile": null
         },
         {
-          "english": "Naked",
-          "translation": "elusi kongen, pl. ngelusi kongen",
-          "pronunciation": "elusi kongen",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Noise",
           "translation": "achel, pl. ngachelaka",
           "pronunciation": "achel",
@@ -9287,13 +9273,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "akabilan, pl. ngabilak",
-          "pronunciation": "akabilan",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Udder",
           "translation": "eket, pl. ngakitai",
           "pronunciation": "eket",
@@ -9507,13 +9486,6 @@
           "english": "Rather",
           "translation": "todepai",
           "pronunciation": "to-de-pai",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Savage",
-          "translation": "ededan, pl. ngededanak",
-          "pronunciation": "ededan",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10225,13 +10197,6 @@
           "audioFile": null
         },
         {
-          "english": "Clitoris",
-          "translation": "emoniri, pl. ngemonir",
-          "pronunciation": "emoniri",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Fugitive",
           "translation": "ape, pl. ngapeyok or engob, pl. ngobito",
           "pronunciation": "ape",
@@ -10361,13 +10326,6 @@
           "english": "Skeleton",
           "translation": "akōiyok, pl. ngakōiyo",
           "pronunciation": "akoiyok",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Strangle",
-          "translation": "amedi",
-          "pronunciation": "a-me-di",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -10656,13 +10614,6 @@
           "translation": "ka",
           "pronunciation": "ka",
           "context": "Juxon Barton (1921) — Conjunctions",
-          "audioFile": null
-        },
-        {
-          "english": "Adulterer",
-          "translation": "akolomon, pl. ngalomok",
-          "pronunciation": "akolomon",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
         {
@@ -11114,13 +11065,6 @@
           "audioFile": null
         },
         {
-          "english": "Prostitute",
-          "translation": "apethi angabuth, pl. nyapethur ngabuthin",
-          "pronunciation": "apethi angabuth",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
           "english": "Puff-adder",
           "translation": "akipom, pl. ngapomia",
           "pronunciation": "akipom",
@@ -11145,13 +11089,6 @@
           "english": "Vegetables",
           "translation": "akidit, pl. ngadi (marrow tribe)",
           "pronunciation": "akidit",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Witchcraft",
-          "translation": "akabil",
-          "pronunciation": "a-ka-bil",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -11733,13 +11670,6 @@
           "english": "Undress, to",
           "translation": "alemari",
           "pronunciation": "a-le-ma-ri",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Urinate, to",
-          "translation": "alathi",
-          "pronunciation": "a-lathi",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -12524,13 +12454,6 @@
           "english": "What is your name?",
           "translation": "Ngai akero ekon?",
           "pronunciation": "ngai a-ke-ro e-kon",
-          "context": "Juxon Barton (1921) Turkana Vocabulary",
-          "audioFile": null
-        },
-        {
-          "english": "Penis, circumcised",
-          "translation": "alenger, pl. ngalenger",
-          "pronunciation": "alenger",
           "context": "Juxon Barton (1921) Turkana Vocabulary",
           "audioFile": null
         },
@@ -13501,13 +13424,6 @@
           "audioFile": null
         },
         {
-          "english": "Witch",
-          "translation": "Akabelān",
-          "pronunciation": "a-ka-be-lah",
-          "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
-          "audioFile": null
-        },
-        {
           "english": "Woman",
           "translation": "Ekāko",
           "pronunciation": "e-kah-koh",
@@ -14198,5 +14114,6 @@
   ],
   "source": "Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
   "isoCode": "tuv",
-  "glottocode": "turk1308"
+  "glottocode": "turk1308",
+  "totalEntries": 1998
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import matatuData from "@/data/matatu-routes.json";
 import RouteDetailView from "@/components/matatu/RouteDetailView";
 
@@ -83,38 +84,37 @@ export default async function RouteDetailPage({
     (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
   const routeObj = townRoutes.find((r) => r.slug === routeSlug);
 
-  const breadcrumbSchema =
-    townObj && routeObj
-      ? {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
-            { "@type": "ListItem", position: 2, name: "Matatu Routes", item: "https://kenyahub.me/matatu/" },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: townObj.name,
-              item: `https://kenyahub.me/matatu/${townObj.slug}/`,
-            },
-            {
-              "@type": "ListItem",
-              position: 4,
-              name: `Route ${routeObj.routeNumber}: ${routeObj.name}`,
-              item: `https://kenyahub.me/matatu/${townObj.slug}/${routeObj.slug}/`,
-            },
-          ],
-        }
-      : null;
+  if (!townObj || !routeObj) {
+    notFound();
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "Matatu Routes", item: "https://kenyahub.me/matatu/" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: townObj.name,
+        item: `https://kenyahub.me/matatu/${townObj.slug}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: `Route ${routeObj.routeNumber}: ${routeObj.name}`,
+        item: `https://kenyahub.me/matatu/${townObj.slug}/${routeObj.slug}/`,
+      },
+    ],
+  };
 
   return (
     <>
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <RouteDetailView townSlug={townSlug} routeSlug={routeSlug} />
     </>
   );

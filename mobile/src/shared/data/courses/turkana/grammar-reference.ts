@@ -213,8 +213,8 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
   },
   {
     "id": "turkana-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Turkana)",
-    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Turkana.",
+    "title": "Historical Orthography & Dialectal Reference Notes for Turkana",
+    "summary": "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Turkana.",
     "content": "1. **Archival & Open-Dataset Integration for Turkana**:\n   - Combines primary historical documentation (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911, Barton 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {

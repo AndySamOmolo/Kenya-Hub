@@ -24,7 +24,7 @@ export const PREPOSITIONS = [
     { luo: 'oko', english: 'outside', examples: ['Puke oko — Throw it outside'] },
     { luo: 'iye', english: 'inside, in it', examples: ['Ni iye — It is inside'] },
     { luo: 'nyaka', english: 'until, up to', examples: ['Pur nyaka a kaeni nyaka chopi kacha — Dig from here to there'] },
-    { luo: "nikwop / n'ang'o", english: 'on account of, because of', examples: ["Nikwop gin — On account of them"] },
+    { luo: "nikwop / n'ang'o", english: 'on account of, because of', examples: ["Nikwop gin — On account of them"] }
 ];
 
 // ============================================================
@@ -46,7 +46,7 @@ export const CONJUNCTIONS = [
     { luo: 'mi / miti', english: 'then, consequently', examples: ['Mi ondiek weye — Then the hyena left him'] },
     { luo: 'eka', english: 'thereupon, and then', examples: ['Ekane odhi nindo — And then he went to sleep'] },
     { luo: 'nyaka', english: 'until, since', examples: [] },
-    { luo: 'koro', english: 'now (narrative)', examples: ['Koro jachien noa kuome — Now the devil left him'] },
+    { luo: 'koro', english: 'now (narrative)', examples: ['Koro jachien noa kuome — Now the devil left him'] }
 ];
 
 // ============================================================
@@ -64,7 +64,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She loves', luo: 'Ohero' },
             { person: 'We love', luo: 'Wahero' },
             { person: 'You (pl) love', luo: 'Uhero' },
-            { person: 'They love', luo: 'Gihero' },
+            { person: 'They love', luo: 'Gihero' }
         ],
         past_indefinite: [
             { person: 'I loved', luo: 'Nahero' },
@@ -72,7 +72,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She loved', luo: 'Nohero' },
             { person: 'We loved', luo: 'Newahero' },
             { person: 'You (pl) loved', luo: 'Nuhero' },
-            { person: 'They loved', luo: 'Negihero' },
+            { person: 'They loved', luo: 'Negihero' }
         ],
         present_perfect: [
             { person: 'I have loved', luo: 'Asehero' },
@@ -80,7 +80,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She has loved', luo: 'Osehero' },
             { person: 'We have loved', luo: 'Wasehero' },
             { person: 'You (pl) have loved', luo: 'Usehero' },
-            { person: 'They have loved', luo: 'Gisehero' },
+            { person: 'They have loved', luo: 'Gisehero' }
         ],
         past_perfect: [
             { person: 'I had loved', luo: 'Nasehero' },
@@ -88,7 +88,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She had loved', luo: 'Nosehero' },
             { person: 'We had loved', luo: 'Newasehero' },
             { person: 'You (pl) had loved', luo: 'Neusehero' },
-            { person: 'They had loved', luo: 'Negisehero' },
+            { person: 'They had loved', luo: 'Negisehero' }
         ],
         future: [
             { person: 'I shall love', luo: 'Naher' },
@@ -96,11 +96,11 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She will love', luo: 'Noher' },
             { person: 'We shall love', luo: 'Wanaher' },
             { person: 'You (pl) will love', luo: 'Unuher' },
-            { person: 'They will love', luo: 'Giniher' },
+            { person: 'They will love', luo: 'Giniher' }
         ],
         imperative: [
             { person: 'Love! (singular)', luo: 'Her!' },
-            { person: 'Love! (plural)', luo: 'Heruru!' },
+            { person: 'Love! (plural)', luo: 'Heruru!' }
         ],
         subjunctive: [
             { person: 'That I love', luo: 'Aher' },
@@ -108,7 +108,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'That he/she love', luo: 'Oher' },
             { person: 'That we love', luo: 'Waher' },
             { person: 'That you (pl) love', luo: 'Uher' },
-            { person: 'That they love', luo: 'Giher' },
+            { person: 'That they love', luo: 'Giher' }
         ],
         negative_present: [
             { person: 'I do not love', luo: 'Okahero' },
@@ -116,7 +116,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She does not love', luo: 'Okohero' },
             { person: 'We do not love', luo: 'Okwahero' },
             { person: 'You (pl) do not love', luo: 'Okuhero' },
-            { person: 'They do not love', luo: 'Okigihero' },
+            { person: 'They do not love', luo: 'Okigihero' }
         ],
         negative_future: [
             { person: 'I shall not love', luo: 'Okanaher' },
@@ -124,7 +124,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'He/She will not love', luo: 'Okanoher' },
             { person: 'We shall not love', luo: 'Okwanaher' },
             { person: 'You (pl) will not love', luo: 'Okanuher' },
-            { person: 'They will not love', luo: 'Okaginiher' },
+            { person: 'They will not love', luo: 'Okaginiher' }
         ],
     },
 };
@@ -144,7 +144,7 @@ export const REFLEXIVE_VERBS = {
         { active: 'Loso (to prepare)', reflexive: 'Losore (to prepare oneself)' },
         { active: 'Puonjo (to teach)', reflexive: 'Puonjore (to practise / learn)' },
         { active: 'Rwako (to wear)', reflexive: 'Rwakore (to dress)' },
-        { active: 'Gonyo (to untie)', reflexive: 'Gonyore (to undress)' },
+        { active: 'Gonyo (to untie)', reflexive: 'Gonyore (to undress)' }
     ],
     person_markers: [
         { suffix: '-ora', person: 'I ... myself', example: 'Aherora — I love myself' },
@@ -152,7 +152,7 @@ export const REFLEXIVE_VERBS = {
         { suffix: '-ore', person: 'He/She ... himself/herself', example: 'Oherore — He loves himself' },
         { suffix: '-ore', person: 'We ... ourselves', example: 'Waherore — We love ourselves' },
         { suffix: '-oru/-ore', person: 'You (pl) ... yourselves', example: 'Uheroru — You love yourselves' },
-        { suffix: '-ore', person: 'They ... themselves', example: 'Giherore — They love themselves' },
+        { suffix: '-ore', person: 'They ... themselves', example: 'Giherore — They love themselves' }
     ],
 };
 
@@ -168,14 +168,14 @@ export const NOUN_CLASSES = {
             { verb: 'Telo (to lead)', noun: 'Jatelo (a guide)', plural: 'Jotelo (guides)' },
             { verb: 'Puonjo (to teach)', noun: 'Japuonj (a teacher)', plural: 'Jopuonj (teachers)' },
             { verb: 'Tiyo (to work)', noun: 'Jatich (a workman)', plural: 'Jotich (workmen)' },
-            { noun_base: 'Miriambo (a lie)', noun: 'Jamiriambo (a liar)', plural: 'Jomiriambo (liars)' },
+            { noun_base: 'Miriambo (a lie)', noun: 'Jamiriambo (a liar)', plural: 'Jomiriambo (liars)' }
         ],
     },
     patient_nouns: {
         rule: 'Prefix "ng\'ama-" (singular) / "joma-" (plural) to verb',
         examples: [
             { verb: 'Fuwo (to be foolish)', noun: "Ng'amafuwo (a fool)", plural: 'Jomafuwo (fools)' },
-            { verb: 'Tuwo (to be sick)', noun: "Ng'amatuwo (sick person)", plural: 'Jomatuwo (sick people)' },
+            { verb: 'Tuwo (to be sick)', noun: "Ng'amatuwo (sick person)", plural: 'Jomatuwo (sick people)' }
         ],
     },
     instrument_nouns: {
@@ -183,7 +183,7 @@ export const NOUN_CLASSES = {
         examples: [
             { verb: 'Gwaro (to scratch)', noun: 'Ragwar (a pitchfork)' },
             { verb: 'Beto (to slash)', noun: 'Rabete (a slasher)' },
-            { verb: 'Idho (to climb)', noun: 'Raidhi (a ladder)' },
+            { verb: 'Idho (to climb)', noun: 'Raidhi (a ladder)' }
         ],
     },
     abstract_nouns: {
@@ -193,14 +193,14 @@ export const NOUN_CLASSES = {
             { verb: 'Timo (to do)', noun: 'Tim (a deed)' },
             { verb: 'Puonjo (to teach)', noun: 'Puonj (lesson/doctrine)' },
             { verb: 'Tiyo (to work)', noun: 'Tich (work)' },
-            { verb: 'Hero (to love)', noun: 'Hera (love)' },
+            { verb: 'Hero (to love)', noun: 'Hera (love)' }
         ],
     },
     diminutives: {
         rule: 'Prefix "Nya-" (singular) / "Nyi-" (plural)',
         examples: [
             { base: 'Guok (dog)', diminutive: 'Nyaguok (puppy)', plural: 'Nyiguogi (puppies)' },
-            { base: 'Ruath (bull)', diminutive: 'Nyaruath (bull-calf)', plural: 'Nyiruedhi (bull-calves)' },
+            { base: 'Ruath (bull)', diminutive: 'Nyaruath (bull-calf)', plural: 'Nyiruedhi (bull-calves)' }
         ],
     },
 };
@@ -221,18 +221,18 @@ export const ADJECTIVE_FORMATION = {
         { singular: 'Madit', plural: 'Madito', meaning: 'Grown up → Grown up (pl)' },
         { singular: 'Marachar', plural: 'Marachere', meaning: 'White → White (pl)' },
         { singular: "Marating'", plural: "Maratinge", meaning: 'Black → Black (pl)' },
-        { singular: 'Masasi', plural: 'Masesini', meaning: 'Cruel → Cruel (pl)' },
+        { singular: 'Masasi', plural: 'Masesini', meaning: 'Cruel → Cruel (pl)' }
     ],
     colors: {
         masculine: [
             { luo: 'Marachar', english: 'White (masculine)' },
             { luo: "Marating'", english: 'Black (masculine)' },
-            { luo: 'Silwal', english: 'Chocolate brown (masculine)' },
+            { luo: 'Silwal', english: 'Chocolate brown (masculine)' }
         ],
         feminine: [
             { luo: 'Madibo', english: 'White (feminine)' },
             { luo: 'Madichol', english: 'Black (feminine)' },
-            { luo: 'Malando', english: 'Chocolate brown (feminine)' },
+            { luo: 'Malando', english: 'Chocolate brown (feminine)' }
         ],
     },
 };
@@ -247,14 +247,14 @@ export const SENTENCE_PATTERNS = {
         examples: [
             { luo: 'Kwesi mar Petrus', english: "Peter's pipe" },
             { luo: 'Kombe mag won', english: "Father's chairs" },
-            { luo: 'Wach Nyasaye', english: "God's word" },
+            { luo: 'Wach Nyasaye', english: "God's word" }
         ],
     },
     comparison: {
         rule: 'No adjective comparison — use circumlocution with "loyo" (to surpass)',
         examples: [
             { luo: 'Olora gi rieko', english: 'He is wiser than I (he surpasses me with wisdom)' },
-            { luo: 'Olopo ji duto gi rieko', english: 'He is the wisest (he surpasses all people with wisdom)' },
+            { luo: 'Olopo ji duto gi rieko', english: 'He is the wisest (he surpasses all people with wisdom)' }
         ],
     },
     negation: {
@@ -263,7 +263,7 @@ export const SENTENCE_PATTERNS = {
             { luo: 'Ok ahero', english: 'I do not love' },
             { luo: 'Kik idhi', english: 'Do not go (negative imperative)' },
             { luo: "Nyak ocha", english: 'It is never despised' },
-            { luo: "Onge ng'ato", english: 'There is nobody' },
+            { luo: "Onge ng'ato", english: 'There is nobody' }
         ],
     },
 };
@@ -277,7 +277,7 @@ export const NAMING_CONVENTIONS = {
         { name: 'Opiyo', gender: 'Male', meaning: 'First-born twin' },
         { name: 'Akinyi', gender: 'Female', meaning: 'Born in the morning' },
         { name: 'Otieno', gender: 'Male', meaning: 'Born at night' },
-        { name: 'Apiyo', gender: 'Female', meaning: 'First-born twin (female)' },
+        { name: 'Apiyo', gender: 'Female', meaning: 'First-born twin (female)' }
     ],
 };
 
@@ -291,7 +291,7 @@ export const DAYS_OF_WEEK = [
     { english: 'Thursday', dholuo: "Tich ang'wen", literal: 'Fourth work-day' },
     { english: 'Friday', dholuo: 'Tich abich', literal: 'Fifth work-day' },
     { english: 'Saturday', dholuo: "Chieng' ngeso", literal: 'Day of shaving' },
-    { english: 'Sunday', dholuo: "Chieng' lemo", literal: 'Day of prayer' },
+    { english: 'Sunday', dholuo: "Chieng' lemo", literal: 'Day of prayer' }
 ];
 
 // ============================================================
@@ -335,7 +335,7 @@ export const CONVERSATION_GENERAL = [
     { luo: 'Sa adi?', english: 'What time is it?' },
     { luo: 'Koth chwe', english: 'It is raining' },
     { luo: 'Koth ochok', english: 'The rain is over' },
-    { luo: "Chieng' kech", english: 'The sun is hot' },
+    { luo: "Chieng' kech", english: 'The sun is hot' }
 ];
 
 export const CONVERSATION_HOUSEHOLD = [
@@ -349,7 +349,7 @@ export const CONVERSATION_HOUSEHOLD = [
     { luo: 'Dhi ooma rech', english: 'Get me some fish' },
     { luo: "Pedhima kitandana maber", english: 'Make my bed properly' },
     { luo: 'Chiegi abdot', english: 'Close the door' },
-    { luo: 'Mia jungao', english: 'Give me the keys' },
+    { luo: 'Mia jungao', english: 'Give me the keys' }
 ];
 
 export const CONVERSATION_HEALTH = [
@@ -363,7 +363,7 @@ export const CONVERSATION_HEALTH = [
     { luo: "K'idwara gimoro, wachina", english: 'If you want anything, tell me' },
     { luo: 'Bada otur', english: 'My arm is broken' },
     { luo: 'Wiriye yadhini', english: 'Put on this ointment' },
-    { luo: 'Naduogi kendo', english: 'I shall come again' },
+    { luo: 'Naduogi kendo', english: 'I shall come again' }
 ];
 
 export const CONVERSATION_WORK = [
@@ -381,7 +381,7 @@ export const CONVERSATION_WORK = [
     { luo: "Pur nyaka a kaeni nyaka chopi kacha", english: 'Dig from here to there' },
     { luo: 'Tiuru piyo', english: 'Go on, work hard' },
     { luo: "Ng'atni otiyo maber", english: 'This man works well' },
-    { luo: 'Dhiuru dala uduto', english: 'Go home altogether' },
+    { luo: 'Dhiuru dala uduto', english: 'Go home altogether' }
 ];
 
 export const CONVERSATION_TRAVEL = [
@@ -399,7 +399,7 @@ export const CONVERSATION_TRAVEL = [
     { luo: 'Keturu gikmoko piny', english: 'Put the loads down' },
     { luo: "Chieng' kech ahinya", english: 'The sun is very hot' },
     { luo: 'Jatedo, losna chai', english: 'Cook, make some tea' },
-    { luo: 'Dhi, dwar pi malew', english: 'Go and look for clean water' },
+    { luo: 'Dhi, dwar pi malew', english: 'Go and look for clean water' }
 ];
 
 export const CONVERSATION_VILLAGE = [
@@ -416,7 +416,7 @@ export const CONVERSATION_VILLAGE = [
     { luo: 'Mia gimoro, amadhi', english: 'May I get something to drink?' },
     { luo: 'Pi oduore, oklew', english: 'This is not clear water' },
     { luo: 'Iumbo pi aora?', english: 'Do you get the water from the river?' },
-    { luo: 'Abiro neno jo dalani', english: 'I come to visit the people' },
+    { luo: 'Abiro neno jo dalani', english: 'I come to visit the people' }
 ];
 
 // ============================================================
@@ -431,7 +431,7 @@ export const VERB_TO_BE = {
         { person: 'He/She is', luo: 'Obedo / Obet' },
         { person: 'We are', luo: 'Wabedo / Wabet' },
         { person: 'You (pl) are', luo: 'Ubedo / Ubet' },
-        { person: 'They are', luo: 'Gibedo / Gibet' },
+        { person: 'They are', luo: 'Gibedo / Gibet' }
     ],
     alternative: 'Use personal pronoun alone: Wan = We are',
     locative: 'Antiye (I am here), Intiye, Entiye, etc.',
@@ -445,7 +445,7 @@ export const VERB_TO_HAVE = {
         { person: 'He/She has', luo: 'Obet gi / En gi' },
         { person: 'We have', luo: 'Wabet gi / Wan gi' },
         { person: 'You (pl) have', luo: 'Ubet gi / Un gi' },
-        { person: 'They have', luo: 'Gibet gi / Gin gi' },
+        { person: 'They have', luo: 'Gibet gi / Gin gi' }
     ],
     negative: 'Aonge = I am without / I have not',
 };
@@ -458,7 +458,7 @@ export const PASSIVE_VOICE = {
     rule: 'Prefix "o" as impersonal pronoun + root of transitive verb',
     examples: [
         { active: 'Kelo (to bring)', passive: 'Chiemo okel (The food has been brought)' },
-        { active: 'Nego (to kill)', passive: 'Onegeigi (They were killed)' },
+        { active: 'Nego (to kill)', passive: 'Onegeigi (They were killed)' }
     ],
     personal_passive: [
         { person: 'I am loved', luo: 'Ohera' },
@@ -466,7 +466,7 @@ export const PASSIVE_VOICE = {
         { person: 'He/She is loved', luo: 'Ohere' },
         { person: 'We are loved', luo: 'Oherwa' },
         { person: 'You (pl) are loved', luo: 'Oheru' },
-        { person: 'They are loved', luo: 'Ohergi' },
+        { person: 'They are loved', luo: 'Ohergi' }
     ],
     note: 'The passive is rarely used in Dholuo — the active voice is strongly preferred.',
 };
@@ -480,7 +480,7 @@ export const ALPHABET = {
         { letter: 'e', pronunciation: 'as "a" in "lake"', example: 'Lemo: to pray' },
         { letter: 'i', pronunciation: 'as in "police"', example: 'Limo: to visit' },
         { letter: 'o', pronunciation: 'as "oa" in "coach"', example: 'Moso: to greet' },
-        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' },
+        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' }
     ],
     special_consonants: [
         { letter: 'dh', pronunciation: 'as in "though"', example: 'Dhiyo: to go' },
@@ -488,7 +488,7 @@ export const ALPHABET = {
         { letter: "ng'", pronunciation: 'nasal as "ng" in "song"', example: "Ng'owo: figtree" },
         { letter: 'ny', pronunciation: 'one sound', example: 'Nyako: girl' },
         { letter: 'mb', pronunciation: 'one sound at word start', example: 'Mbiru: a bird' },
-        { letter: 'nd', pronunciation: 'one sound at word start', example: 'Ndawa: tobacco' },
+        { letter: 'nd', pronunciation: 'one sound at word start', example: 'Ndawa: tobacco' }
     ],
 };
 
@@ -502,12 +502,12 @@ export const NORTHCOTE_1907_ONOMASTICS_AND_LAW = {
         { verbatim: 'onyango', modern: 'Onyango (m.) / Anyango (f.)', meaning: 'Born in the morning (p. 62)' },
         { verbatim: 'oching', modern: "Ochieng' (m.) / Achieng' (f.)", meaning: 'Born at noon (p. 62)' },
         { verbatim: 'odiambo', modern: 'Odhiambo (m.) / Adhiambo (f.)', meaning: 'Born in the afternoon (p. 62)' },
-        { verbatim: 'otieno', modern: 'Otieno (m.) / Atieno (f.)', meaning: 'Born at night (p. 62)' },
+        { verbatim: 'otieno', modern: 'Otieno (m.) / Atieno (f.)', meaning: 'Born at night (p. 62)' }
     ],
     hereditaryNicknames: [
         { verbatim: 'obele', root: 'bel (mtama millet)', meaning: 'The man who owned much mtama (millet) (p. 62)' },
         { verbatim: 'oliech', root: 'liech (elephant)', meaning: 'The man who killed an elephant (p. 62)' },
-        { verbatim: 'obonyo', root: 'bonyo (locust)', meaning: 'The man like a locust (p. 62)' },
+        { verbatim: 'obonyo', root: 'bonyo (locust)', meaning: 'The man like a locust (p. 62)' }
     ],
     customaryLawAndRites: [
         "Married woman's grass tassel (chieno): discarded upon a husband's death until remarriage; anyone who touches a married woman's grass tassel must pay a fine of 3 goats to her husband (pp. 58–59).",

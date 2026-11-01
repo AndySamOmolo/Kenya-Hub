@@ -21,7 +21,7 @@ export const AVAILABLE_COURSE_IDS: ReadonlySet<string> = new Set([
   "samburu",
   "ilchamus",
   "pokot",
-  "daasanach",
+  "daasanach"
 ]);
 
 export function hasCourse(languageId: string): boolean {

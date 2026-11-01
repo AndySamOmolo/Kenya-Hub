@@ -4425,15 +4425,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũũsoma ndeto wa téne ũmũnthĩ.",
-            "source": "We are learning the term old today."
-          },
-          {
-            "target": "Atumĩa nĩmaneeneie ũndũ wa mweu.",
-            "source": "The elders spoke about white."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -4544,16 +4536,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Oponiao. (Ah.).",
             "source": "A man to a youth (Anake) will say (The reply will be)."
-          },
-          {
-            "target": "Nĩtũũsoma ndeto muthenia monthe ũmũnthĩ.",
-            "source": "We are learning the term always today."
-          },
-          {
-            "target": "Atumĩa nĩmaneeneie ũndũ wa King'ole.",
-            "source": "The elders spoke about supreme communal tribunal assembly."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -4720,16 +4704,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Young man or warrior (Muthwa, queen ant Munthai).",
             "source": "Unmarried girl (Mundu mukaa) (White ants )."
-          },
-          {
-            "target": "Nĩtũũsoma ndeto Kivisi ũmũnthĩ.",
-            "source": "We are learning the term uncircumcised boy today."
-          },
-          {
-            "target": "Atumĩa nĩmaneeneie ũndũ wa Muitu.",
-            "source": "The elders spoke about young unmarried girl."
           }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -4837,15 +4813,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           }
         ],
         "sentences": [
-          {
-            "target": "Nĩtũũsoma ndeto Thingii ũmũnthĩ.",
-            "source": "We are learning the term black ants today."
-          },
-          {
-            "target": "Atumĩa nĩmaneeneie ũndũ wa Nthuaku.",
-            "source": "The elders spoke about soldier ants."
-          }
-        ],
+          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",

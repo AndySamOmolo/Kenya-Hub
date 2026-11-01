@@ -1669,7 +1669,7 @@ export const LUO_GRAMMAR_SECTIONS: GrammarSection[] = COURSE_MODULES.flatMap((mo
           english: ex.english,
           explanation: vp.tenseOrMood,
         }))
-      ),
+      )
     ];
 
     return {
@@ -1729,93 +1729,93 @@ const SUPPLEMENTAL_LESSON_SENTENCES: Record<string, { target: string; source: st
     { target: 'Dholuo onge herufi c, j, q, v, x, z mag dho ngere.', source: 'Dholuo has no English letters c, j, q, v, x, z.' },
     { target: 'Wawacho dholuo maber.', source: 'We speak Dholuo well.' },
     { target: 'Soma wechegi maber.', source: 'Read these words well.' },
-    { target: 'Japuonj somo bugene.', source: 'The teacher reads his books.' },
+    { target: 'Japuonj somo bugene.', source: 'The teacher reads his books.' }
   ],
   'les-1-2-vowels-stress-elision': [
     { target: "Ng'ato achiel obiro oma.", source: 'One man comes to fetch me.' },
     { target: 'Ka wagero ot maber.', source: 'When we build a good house.' },
     { target: 'Podi onindo e ot.', source: 'He is still asleep in the house.' },
-    { target: 'Jatedo tedi chiemo.', source: 'The cook cooks food.' },
+    { target: 'Jatedo tedi chiemo.', source: 'The cook cooks food.' }
   ],
   'les-2-1-noun-classes-gender-diminutives': [
     { target: 'Dhano maber obiro.', source: 'A good person came.' },
     { target: 'Nyako dhi ka.', source: 'The girl goes here.' },
     { target: 'Woyi dwaro kuon.', source: 'The boy wants food.' },
     { target: 'Otieno nonyuol gotieno.', source: 'Otieno was born at night.' },
-    { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' },
+    { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' }
   ],
   'les-2-2-plural-formation': [
     { target: 'Guogi duto ringo.', source: 'All the dogs are running.' },
     { target: 'Dhok ni e laro.', source: 'The cattle are in the yard.' },
     { target: 'Nyithindo nindo.', source: 'The children are sleeping.' },
-    { target: 'Gweno chamo kal.', source: 'The chicken eats millet.' },
+    { target: 'Gweno chamo kal.', source: 'The chicken eats millet.' }
   ],
   'les-3-1-simple-possessive': [
     { target: 'Kwesi mar Petrus ni ka.', source: "Peter's pipe is here." },
     { target: 'Kombe mag won ni malo.', source: "Father's chairs are up there." },
-    { target: 'Min gi won ohero nyathi.', source: 'Mother and father love the child.' },
+    { target: 'Min gi won ohero nyathi.', source: 'Mother and father love the child.' }
   ],
   'les-3-2-construct-possessive': [
     { target: 'Oda ni but aora.', source: 'My house is near the river.' },
     { target: 'Jo dala duto nindo.', source: 'All the home people are sleeping.' },
-    { target: 'Dayo tedi kuon maber.', source: 'Grandmother cooks good ugali.' },
+    { target: 'Dayo tedi kuon maber.', source: 'Grandmother cooks good ugali.' }
   ],
   'les-4-1-adjectives-syntax-morphology': [
     { target: "Dhano maber ohero ng'wono.", source: 'A good person loves kindness.' },
     { target: "Dhiang' marachar ni e puodho.", source: 'The white cow is in the field.' },
-    { target: "Ruath marating' maduong'.", source: 'The black bull is large.' },
+    { target: "Ruath marating' maduong'.", source: 'The black bull is large.' }
   ],
   'les-4-2-numerals-comparison': [
     { target: 'An gi ji ariyo.', source: 'I have two people.' },
     { target: 'Kel kombe adek.', source: 'Bring three chairs.' },
-    { target: "Ng'at achiel obiro.", source: 'One person came.' },
+    { target: "Ng'at achiel obiro.", source: 'One person came.' }
   ],
   'les-5-1-personal-reflexive-possessive-pronouns': [
     { target: 'An adhi e chiro.', source: 'I am going to the market.' },
     { target: 'Wan wahero pacho.', source: 'We love home.' },
     { target: 'An awuon aloso oda.', source: 'I myself built my house.' },
-    { target: 'En kende odak kanyo.', source: 'He lives there alone.' },
+    { target: 'En kende odak kanyo.', source: 'He lives there alone.' }
   ],
   'les-5-2-demonstrative-relative-interrogative-indefinite': [
     { target: 'Ot ma en mara.', source: 'This house is mine.' },
     { target: 'Ji macha dhi chiro.', source: 'Those people are going to the market.' },
     { target: "Nyingi ng'a?", source: 'What is your name?' },
-    { target: 'Idhi kanye?', source: 'Where are you going?' },
+    { target: 'Idhi kanye?', source: 'Where are you going?' }
   ],
   'les-6-1-verb-roots-present-past-perfect': [
     { target: 'Ahero kwesi mara.', source: 'I love my pipe.' },
     { target: 'Nahero chiemo maber.', source: 'I loved good food.' },
     { target: 'Asehero wuoth ahinya.', source: 'I have loved the journey very much.' },
-    { target: 'Negisehero somo buge.', source: 'They had loved reading books.' },
+    { target: 'Negisehero somo buge.', source: 'They had loved reading books.' }
   ],
   'les-6-2-future-imperative-subjunctive-conditional': [
     { target: 'Wanaher pacho marwa.', source: 'We shall love our home.' },
     { target: 'Giniher timbe mabeyo.', source: 'They will love good deeds.' },
     { target: 'Ok adwar chiemo sani.', source: 'I do not want food now.' },
-    { target: 'Kik idhi e aora.', source: 'Do not go to the river.' },
+    { target: 'Kik idhi e aora.', source: 'Do not go to the river.' }
   ],
   'les-7-1-passive-reflexive-reciprocal-reduplicated': [
     { target: 'Aherora ahinya.', source: 'I love myself very much.' },
     { target: "Waherore ng'ato gi nyawadgi.", source: 'We love one another as companions.' },
-    { target: 'Ji duto chokore kaeni.', source: 'All people assemble here.' },
+    { target: 'Ji duto chokore kaeni.', source: 'All people assemble here.' }
   ],
   'les-7-2-defective-verbs-valency-syntax': [
     { target: "Onge ng'ato e ot.", source: 'There is nobody in the house.' },
     { target: 'Adwaro chamo rech gi kuon.', source: 'I want to eat fish with ugali.' },
-    { target: 'Madhi pi malew.', source: 'Drink clean water.' },
+    { target: 'Madhi pi malew.', source: 'Drink clean water.' }
   ],
   'les-8-1-adverbs-time-place-manner-idioms': [
     { target: 'Kiny wanadhi pacho.', source: 'Tomorrow we shall go home.' },
     { target: 'Tinende koth chwe.', source: 'Today it is raining.' },
     { target: 'Wach mos mondo awinji.', source: 'Speak slowly so that I understand you.' },
-    { target: 'Otiyo matek ahinya.', source: 'He worked very hard.' },
+    { target: 'Otiyo matek ahinya.', source: 'He worked very hard.' }
   ],
   'les-8-2-prepositions-conjunctions-interjections-salutations': [
     { target: 'Oyawore, nade?', source: 'Good morning, how are you?' },
     { target: 'Oriti, wanenre kendo.', source: 'Goodbye, we shall see each other again.' },
     { target: 'Thuol ni e ot.', source: 'A snake is in the house.' },
     { target: "Nobiro gi tong'.", source: 'He came with a spear.' },
-    { target: 'Tedi kuon mondo wacham.', source: 'Cook food so that we eat.' },
+    { target: 'Tedi kuon mondo wacham.', source: 'Cook food so that we eat.' }
   ],
 };
 
@@ -2053,7 +2053,7 @@ function chunkWordsIntoSkills(
         words: allWords,
         sentences,
         authoredExercises: buildExercisesForSkill(allWords, sentences),
-      },
+      }
     ];
   }
 
@@ -2281,7 +2281,7 @@ const EXERCISE_SKILL_ICONS = [
   'Users',
   'RefreshCw',
   'Sliders',
-  'MessageCircle',
+  'MessageCircle'
 ];
 
 // Build Unit 10 from COURSE_EXERCISES
@@ -2374,7 +2374,7 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     [
       { target: "Acham ayieng' ne onego suna.", source: 'Greed killed the mosquito.' },
       { target: 'Rieko oloyo tek.', source: 'Wisdom surpasses physical strength.' },
-      { target: 'Wat en wat kata mabor.', source: 'Kinship remains kinship even from afar.' },
+      { target: 'Wat en wat kata mabor.', source: 'Kinship remains kinship even from afar.' }
     ],
     12
   );
@@ -2404,7 +2404,7 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     riddleWords,
     [
       { target: 'Abet e kombe adek kinde duto.', source: 'I always sit on three chairs.' },
-      { target: 'Adak e kind kuthe.', source: 'I live among thorns.' },
+      { target: 'Adak e kind kuthe.', source: 'I live among thorns.' }
     ],
     14
   );
@@ -2432,7 +2432,7 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     twisterWords,
     [
       { target: 'Rawo luor liel, liel luor rawo.', source: 'The hippo fears the elephant, and the elephant fears the hippo.' },
-      { target: 'Atud tond atonga, tond atonga chodi.', source: 'I tie the basket rope, and the basket rope snaps.' },
+      { target: 'Atud tond atonga, tond atonga chodi.', source: 'I tie the basket rope, and the basket rope snaps.' }
     ],
     15
   );
@@ -2507,11 +2507,11 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             source: 'Born during granary abundance (dero) & Born at harvest (keyo)',
             pronunciation: 'o-de-ro / o-ke-yo',
             hint: 'Dholuo harvest birth names',
-          },
+          }
         ],
         sentences: [
           { target: 'Otieno nonyuol gotieno.', source: 'Otieno was born at night.' },
-          { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' },
+          { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' }
         ],
         authoredExercises: [
           {
@@ -2522,7 +2522,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Born at dawn (6–10 a.m. — okinyi)',
               'Born in the mid-morning sun (9–11 a.m.)',
               "Born when the midday sun shines fiercely (chieng')",
-              'Born in the late afternoon or evening (odhiambo)',
+              'Born in the late afternoon or evening (odhiambo)'
             ],
             hint: 'okinyi = morning/dawn',
           },
@@ -2534,7 +2534,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               { left: 'Okinyi (m.) / Akinyi (f.)', right: 'Born at dawn (6–10 a.m. — okinyi)' },
               { left: 'Onyango (m.) / Anyango (f.)', right: 'Born in the mid-morning sun (9–11 a.m.)' },
               { left: "Ochieng' (m.) / Achieng' (f.)", right: "Born when the midday sun shines fiercely (chieng')" },
-              { left: 'Odhiambo (m.) / Adhiambo (f.)', right: 'Born in the late afternoon or evening (odhiambo)' },
+              { left: 'Odhiambo (m.) / Adhiambo (f.)', right: 'Born in the late afternoon or evening (odhiambo)' }
             ],
           },
           {
@@ -2545,10 +2545,10 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Otieno (m.) / Atieno (f.)',
               'Opiyo / Apiyo & Odongo / Adongo',
               'Okinyi (m.) / Akinyi (f.)',
-              'Onyango (m.) / Anyango (f.)',
+              'Onyango (m.) / Anyango (f.)'
             ],
             hint: 'otieno = night',
-          },
+          }
         ],
       },
       {
@@ -2605,12 +2605,12 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             source: 'Community health dispensary / clinic',
             pronunciation: "od thieth mar gweng'",
             hint: 'Modern Dholuo healthcare term',
-          },
+          }
         ],
         sentences: [
           { target: 'Wach mos. We ruyo.', source: 'Speak slowly. Do not hurry.' },
           { target: 'Maki kwer, wadhi puodho.', source: 'Take a hoe, let us go to the garden.' },
-          { target: 'Kuny rabuon mos, kik ipudhigi.', source: 'Dig up the sweet potatoes carefully, do not cut them.' },
+          { target: 'Kuny rabuon mos, kik ipudhigi.', source: 'Dig up the sweet potatoes carefully, do not cut them.' }
         ],
         authoredExercises: [
           {
@@ -2621,7 +2621,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'What is the news of the homestead? — The homestead is peaceful.',
               'Speak slowly. Do not hurry.',
               'The sky is cloudy; the clouds are clearing up.',
-              'Take a hoe, let us go to the garden.',
+              'Take a hoe, let us go to the garden.'
             ],
             hint: "dala = homestead; oling' = is peaceful/quiet",
           },
@@ -2633,7 +2633,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               { left: "Dala wacho ang'o? — Dala oling'.", right: 'What is the news of the homestead? — The homestead is peaceful.' },
               { left: 'Wach mos. We ruyo.', right: 'Speak slowly. Do not hurry.' },
               { left: 'Polo otimo luoch; luoch oyawore.', right: 'The sky is cloudy; the clouds are clearing up.' },
-              { left: 'Maki kwer, wadhi puodho.', right: 'Take a hoe, let us go to the garden.' },
+              { left: 'Maki kwer, wadhi puodho.', right: 'Take a hoe, let us go to the garden.' }
             ],
           },
           {
@@ -2644,12 +2644,12 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Kuny rabuon mos, kik ipudhigi.',
               "Aorani tut? D'wanyal yoro?",
               "Dala wacho ang'o? — Dala oling'.",
-              'Wach mos. We ruyo.',
+              'Wach mos. We ruyo.'
             ],
             hint: 'rabuon = sweet potatoes',
-          },
+          }
         ],
-      },
+      }
     ],
   },
   {
@@ -2712,11 +2712,11 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             source: 'Uwur clan (bushbuck totem)',
             pronunciation: 'u-wur',
             hint: 'Hobley (1903, p. 347)',
-          },
+          }
         ],
         sentences: [
           { target: 'Ajuoga thiedho jatuo.', source: 'The traditional healer treats the patient.' },
-          { target: 'Keny riwo anyuola ariyo.', source: 'Marriage unites two families.' },
+          { target: 'Keny riwo anyuola ariyo.', source: 'Marriage unites two families.' }
         ],
         authoredExercises: [
           {
@@ -2727,7 +2727,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Diviner / traditional healer',
               'Traditional bridewealth cattle settlement',
               'Ritual taboo / ceremonial prohibition',
-              "Okech clan (python totem — Ng'ielo)",
+              "Okech clan (python totem — Ng'ielo)"
             ],
             hint: 'Northcote (1907, p. 64)',
           },
@@ -2739,7 +2739,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               { left: 'Ajuoga (pl. Ajuoge)', right: 'Diviner / traditional healer' },
               { left: 'Keny / Dho keny', right: 'Traditional bridewealth cattle settlement' },
               { left: 'Chira / Kwer', right: 'Ritual taboo / ceremonial prohibition' },
-              { left: "Okech (totem: Ng'ielo)", right: "Okech clan (python totem — Ng'ielo)" },
+              { left: "Okech (totem: Ng'ielo)", right: "Okech clan (python totem — Ng'ielo)" }
             ],
           },
           {
@@ -2750,10 +2750,10 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Keny / Dho keny',
               'Ajuoga (pl. Ajuoge)',
               'Chira / Kwer',
-              'Othiambo (totem: Agak)',
+              'Othiambo (totem: Agak)'
             ],
             hint: 'Northcote (1907, p. 62)',
-          },
+          }
         ],
       },
       {
@@ -2810,11 +2810,11 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             source: 'I am coming',
             pronunciation: 'a-bi-ro',
             hint: 'Standard Dholuo 1st-person verb',
-          },
+          }
         ],
         sentences: [
           { target: 'Go bul.', source: 'Beat the drum.' },
-          { target: 'Winyo orengo.', source: 'The birds flew away.' },
+          { target: 'Winyo orengo.', source: 'The birds flew away.' }
         ],
         authoredExercises: [
           {
@@ -2825,7 +2825,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'The birds flew away',
               'Beat the drum',
               'We say / We speak',
-              'I do not know',
+              'I do not know'
             ],
             hint: 'winyo = bird(s)',
           },
@@ -2837,7 +2837,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               { left: 'Go bul', right: 'Beat the drum' },
               { left: 'Winyo orengo', right: 'The birds flew away' },
               { left: 'Wawacho', right: 'We say / We speak' },
-              { left: "Ang'eyo", right: 'I know' },
+              { left: "Ang'eyo", right: 'I know' }
             ],
           },
           {
@@ -2848,14 +2848,14 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
               'Akia',
               "Ang'eyo",
               'Go bul',
-              'Winyo orengo',
+              'Winyo orengo'
             ],
             hint: 'Johnston (1902)',
-          },
+          }
         ],
-      },
+      }
     ],
-  },
+  }
 ];
 
 export const LUO_UNITS: CourseUnit[] = [
@@ -2863,7 +2863,7 @@ export const LUO_UNITS: CourseUnit[] = [
   PHRASEBOOK_UNIT,
   EXERCISES_UNIT,
   ORAL_LITERATURE_UNIT,
-  ...PUBLIC_DOMAIN_DATASET_UNITS,
+  ...PUBLIC_DOMAIN_DATASET_UNITS
 ];
 
 export default LUO_COURSE;
