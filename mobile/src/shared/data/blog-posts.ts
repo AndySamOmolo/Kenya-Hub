@@ -381,8 +381,8 @@ What if your employer requires you to report to work on a gazetted public holida
 1. **Full Pay for Rest on Public Holidays**: Every salaried and casual employee is entitled to a full day's rest with full regular pay on all gazetted public holidays. An employer **cannot** deduct your public holiday off-day from your 21 statutory annual leave days (Section 28 of the Employment Act).
 2. **Double Pay (2.0× Rate) for Working on a Public Holiday**: Under the Regulation of Wages (General) Order, any employee who works on a public holiday or weekly rest day must be paid at **twice (200%) their normal hourly or daily basic wage rate**, or granted a mutually agreed compensatory paid day off in lieu.
 3. **Calculation Formula for Salaried Workers**:
-   $$	ext{Holiday Overtime Hourly Rate} = rac{	ext{Monthly Basic Salary}}{225 	ext{ hours}} 	imes 2$$
-   For example, an employee earning a basic salary of **KES 45,000/month** who works an 8-hour shift on Madaraka Day is entitled to an additional **$rac{45,000}{225} 	imes 2 	imes 8 = 	ext{KES } 3,200$** in holiday overtime pay on top of their monthly salary.
+   > **Holiday Overtime Hourly Rate = (Monthly Basic Salary ÷ 225 hours) × 2**
+   For example, an employee earning a basic salary of **KES 45,000/month** who works an 8-hour shift on Madaraka Day is entitled to an additional **(45,000 ÷ 225) × 2 × 8 = KES 3,200** in holiday overtime pay on top of their monthly salary.
 
 ## Smart 2026 Annual Leave Hacks (Turn 3 Leave Days into 9 Days Off)
 
@@ -392,7 +392,7 @@ Because several 2026 holidays fall on Fridays, Mondays, and Tuesdays, you can st
 - **Madaraka Day 3-Day Weekend (May 30 – June 1, 2026)**: Monday, June 1 gives an automatic 3-day weekend.
 - **Mashujaa Day 4-Day Bridge (October 17 – October 20, 2026)**: Mashujaa Day falls on **Tuesday, October 20**. Booking just **1 leave day on Monday, October 19** gives you a 4-day long weekend from Saturday to Tuesday!
 
-Track live countdowns and download the `.ics` calendar file to your phone or Google Calendar on the [KenyaHub Public Holidays Calendar](/tools/public-holidays/).`,
+Track live countdowns and download the **.ics** calendar file to your phone or Google Calendar on the [KenyaHub Public Holidays Calendar](/tools/public-holidays/).`,
   },
   {
     slug: "understanding-kuccps-cluster-points",
@@ -408,7 +408,7 @@ Track live countdowns and download the `.ics` calendar file to your phone or Goo
 
 Every year, the **Kenya Universities and Colleges Central Placement Service (KUCCPS)** places KCSE candidates who scored a mean grade of **C+ (46 points out of 84) and above** into government-sponsored degree programmes across public and private universities, and places candidates with **C to E** into TVET Diploma, Craft Certificate, and Artisan programmes.
 
-Because thousands of students tie on overall KCSE mean grades (for example, scoring a B+ of 68 points), KUCCPS does **not** place degree students using their simple mean grade alone. Instead, every degree programme is assigned to one of **20 subject clusters**, and each applicant is ranked using their **Weighted Cluster Points ($C$)** on a 48-point scale.
+Because thousands of students tie on overall KCSE mean grades (for example, scoring a B+ of 68 points), KUCCPS does **not** place degree students using their simple mean grade alone. Instead, every degree programme is assigned to one of **20 subject clusters**, and each applicant is ranked using their **Weighted Cluster Points (C)** on a 48-point scale.
 
 ## Step 1: Convert Your KCSE Letter Grades to Numerical Points
 
@@ -421,19 +421,19 @@ Every KCSE subject is graded on a 12-point scale by KNEC:
 | **B+ (Plus)** | **10 pts** | **C+ (Plus)** | **7 pts** | **D (Plain)** | **3 pts** |
 | | | **C (Plain)** | **6 pts** | **D- (2 pts) / E (1 pt)** | **2 / 1 pt** |
 
-- **Raw Cluster Score ($r$)**: The sum of your points in the **4 required cluster subjects** for a specific degree course. Since each subject has a maximum of 12 points, the maximum possible raw cluster total is **$R = 4 	imes 12 = 48$**.
-- **Aggregate 7-Subject KCSE Score ($t$)**: The sum of your **best 7 KNEC subjects** (per KNEC grading rules). The maximum possible 7-subject aggregate is **$T = 7 	imes 12 = 84$**.
+- **Raw Cluster Score (r)**: The sum of your points in the **4 required cluster subjects** for a specific degree course. Since each subject has a maximum of 12 points, the maximum possible raw cluster total is **R = 4 × 12 = 48**.
+- **Aggregate 7-Subject KCSE Score (t)**: The sum of your **best 7 KNEC subjects** (per KNEC grading rules). The maximum possible 7-subject aggregate is **T = 7 × 12 = 84**.
 
 ## Step 2: The Official KUCCPS Weighted Cluster Formula
 
-KUCCPS calculates your weighted cluster points ($C$) using the square-root geometric mean of your performance in the 4 cluster subjects ($r / 48$) and your overall performance across your best 7 subjects ($t / 84$), scaled to 48:
+KUCCPS calculates your weighted cluster points (C) using the square-root geometric mean of your performance in the 4 cluster subjects (r ÷ 48) and your overall performance across your best 7 subjects (t ÷ 84), scaled to 48:
 
-$$C = \sqrt{rac{r}{R} 	imes rac{t}{T}} 	imes 48 = \sqrt{rac{r}{48} 	imes rac{t}{84}} 	imes 48$$
+> **C = √( (r ÷ 48) × (t ÷ 84) ) × 48**
 
 Where:
-- **$r$** = Your raw points in the **4 cluster subjects** for that degree cluster (out of $R = 48$)
-- **$t$** = Your aggregate points in your **7 best KCSE subjects** (out of $T = 84$)
-- **48** = Maximum theoretical cluster weight (achieved only if a candidate scores straight A plains of 12 points across all 7 subjects, yielding $\sqrt{1 	imes 1} 	imes 48 = 48.000$)
+- **r** = Your raw points in the **4 cluster subjects** for that degree cluster (out of $R = 48$)
+- **t** = Your aggregate points in your **7 best KCSE subjects** (out of $T = 84$)
+- **48** = Maximum theoretical cluster weight (achieved only if a candidate scores straight A plains of 12 points across all 7 subjects, yielding √(1 × 1) × 48 = 48.000)
 
 *Note: In the live KUCCPS placement portal, the final figure is also multiplied by a slight annual subject-performance index ($k pprox 0.92 - 0.99$) that adjusts for national subject difficulty in that specific examination year, which is why portal cluster points often read 1 to 2 points lower than the raw unindexed formula.*
 
@@ -449,22 +449,22 @@ Suppose Wanjiku sits her KCSE and achieves the following 8 subject grades:
 - **Geography**: **A (12)**
 - **Computer Studies**: **B (9)** *(8th subject — dropped from best 7)*
 
-### 1. Calculate Aggregate 7-Subject Score ($t$):
-$$t = 12 + 12 + 11 + 10 + 10 + 11 + 12 = \mathbf{78 	ext{ out of } 84} \quad (	ext{Mean Grade: A-})$$
+### 1. Calculate Aggregate 7-Subject Score (t):
+> **t = 12 + 12 + 11 + 10 + 10 + 11 + 12 = 78 out of 84 (Mean Grade: A-)**
 
 ### 2. Calculate Cluster Points for Medicine & Surgery (Cluster 13):
 - **Required 4 Cluster Subjects for Medicine**: Biology (12), Chemistry (11), Mathematics or Physics (best is Math = 12), and English or Kiswahili (best is Kiswahili = 11).
-- **Raw Cluster Score ($r$)**: $12 + 11 + 12 + 11 = \mathbf{46 	ext{ out of } 48}$
-- **Weighted Cluster Points ($C$)**:
-  $$C = \sqrt{rac{46}{48} 	imes rac{78}{84}} 	imes 48 = \sqrt{0.95833 	imes 0.92857} 	imes 48 = \sqrt{0.88988} 	imes 48 = 0.94333 	imes 48 = \mathbf{45.280 	ext{ points}}$$
+- **Raw Cluster Score (r)**: **12 + 11 + 12 + 11 = 46 out of 48**
+- **Weighted Cluster Points (C)**:
+  > **C = √( (46 ÷ 48) × (78 ÷ 84) ) × 48 = √(0.95833 × 0.92857) × 48 = √0.88988 × 48 = 45.280 points**
 
 ### 3. Calculate Cluster Points for Civil/Electrical Engineering (Cluster 5):
 - **Required 4 Cluster Subjects for Engineering**: Mathematics (12), Physics (10), Chemistry (11), and English or Kiswahili (best is Kiswahili = 11).
-- **Raw Cluster Score ($r$)**: $12 + 10 + 11 + 11 = \mathbf{44 	ext{ out of } 48}$
-- **Weighted Cluster Points ($C$)**:
-  $$C = \sqrt{rac{44}{48} 	imes rac{78}{84}} 	imes 48 = \sqrt{0.91667 	imes 0.92857} 	imes 48 = \sqrt{0.85119} 	imes 48 = 0.92260 	imes 48 = \mathbf{44.285 	ext{ points}}$$
+- **Raw Cluster Score (r)**: **12 + 10 + 11 + 11 = 44 out of 48**
+- **Weighted Cluster Points (C)**:
+  > **C = √( (44 ÷ 48) × (78 ÷ 84) ) × 48 = √(0.91667 × 0.92857) × 48 = √0.85119 × 48 = 44.285 points**
 
-Notice how even with the exact same KCSE certificate ($t = 78$), Wanjiku's cluster points are **45.280 for Medicine** vs **44.285 for Engineering** because she scored an A (12) in Biology compared to a B+ (10) in Physics!
+Notice how even with the exact same KCSE certificate (t = 78), Wanjiku's cluster points are **45.280 for Medicine** vs **44.285 for Engineering** because she scored an A (12) in Biology compared to a B+ (10) in Physics!
 
 ## Overview of the Major KUCCPS Degree Clusters & Typical Cutoffs
 
@@ -482,7 +482,7 @@ Notice how even with the exact same KCSE certificate ($t = 78$), Wanjiku's clust
 
 1. **Always Check Subject Minimums Alongside Cluster Points**: A student can have 39 cluster points but still be disqualified from B.Ed (Science) or B.Com if they scored a D+ in Mathematics when the programme requires a minimum of **C+ in Mathematics**.
 2. **Spread Your 4 Degree Choices Strategically (1a, 1b, 1c, 2, 3, 4)**: Use Choice 1a for your dream programme at a flagship university (e.g., UoN, JKUAT, Kenyatta University, Moi University), Choice 1b and 1c for the **same degree at mid-tier public universities** where the previous year's cutoff was 2–4 points lower, and Choices 2–4 for closely related degrees.
-3. **Apply for HELB & Higher Education Funding Simultaneously**: Once placed by KUCCPS, apply through the Higher Education Financing portal (`hef.co.ke`) for government scholarships and HELB student loans.
+3. **Apply for HELB & Higher Education Funding Simultaneously**: Once placed by KUCCPS, apply through the Higher Education Financing portal (**hef.co.ke**) for government scholarships and HELB student loans.
 
 Calculate your exact points across all 20 clusters simultaneously using the [KenyaHub KUCCPS Cluster Points Calculator](/tools/kuccps-cluster-calculator/) and check your overall grade with the [KCSE Mean Grade Calculator](/tools/kcse-grade-calculator/).`,
   },
@@ -500,20 +500,20 @@ Calculate your exact points across all 20 clusters simultaneously using the [Ken
 
 Every motor vehicle, motorcycle, trailer, and three-wheeler operating on Kenyan public roads must be registered with the **National Transport and Safety Authority (NTSA)** under the **Traffic Act (Cap 403)**. Since 1989, standard civilian motor vehicles in Kenya have used the **7-character alphanumeric format**:
 
-$$\mathbf{KXX \quad 000X} \quad 	ext{(for example: } \mathbf{KDU \ 482M}	ext{)}$$
+> **Standard Format: KXX 000X (for example: KDU 482M)**
 
 Each part of a Kenyan number plate carries specific chronological and administrative meaning:
-1. **First Letter (`K`)**: Stands for **Kenya** (adopted nationwide when the colonial regional prefixes gives way to the unified `K` national prefix).
-2. **Second & Third Letters (`AA` to `DU+`)**: Represent the **chronological registration series** issued sequentially as older series fill up (e.g., `KAA` in 1989 → `KAB` → ... → `KAZ` → `KBA` in 2007 → `KCA` in 2014 → `KDA` in 2020 → `KDU` in 2025/2026).
-3. **Three Digits (`001` to `999`)**: Issued sequentially within each trailing-letter batch (`001` through `999`; `000` is never issued).
-4. **Trailing Suffix Letter (`A` to `Z`)**: Cycles through the alphabet (`001A–999A`, then `001B–999B`, up to `999Z`) before the third prefix letter advances (e.g., after `KDT 999Z` is exhausted, NTSA opens `KDU 001A`).
+1. **First Letter (**K**)**: Stands for **Kenya** (adopted nationwide when the colonial regional prefixes gives way to the unified **K** national prefix).
+2. **Second & Third Letters (**AA** to **DU+**)**: Represent the **chronological registration series** issued sequentially as older series fill up (e.g., **KAA** in 1989 → **KAB** → ... → **KAZ** → **KBA** in 2007 → **KCA** in 2014 → **KDA** in 2020 → **KDU** in 2025/2026).
+3. **Three Digits (**001** to **999**)**: Issued sequentially within each trailing-letter batch (**001** through **999**; **000** is never issued).
+4. **Trailing Suffix Letter (**A** to **Z**)**: Cycles through the alphabet (**001A–999A**, then **001B–999B**, up to **999Z**) before the third prefix letter advances (e.g., after **KDT 999Z** is exhausted, NTSA opens **KDU 001A**).
 
-## Why Letters `I` and `O` (and `AF`) Are Never Used on Civilian Plates
+## Why Letters **I** and **O** (and **AF**) Are Never Used on Civilian Plates
 
-If you have ever wondered why you have never seen a plate ending in `I` or `O` (or a series like `KDI` or `KDO`), it is because NTSA strictly excludes two letters from civilian number sequences:
-- **`I` and `O` Are Excluded for Visual Clarity**: The letters **`I`** and **`O`** are omitted across both the prefix series and the trailing suffix because they are visually indistinguishable from the numerals **`1`** and **`0`** on road enforcement cameras and eyewitness reports.
-- **24 Valid Suffix Letters × 999 Numbers = 23,976 Vehicles per Series**: Because `I` and `O` are skipped, each 3-letter series (such as `KDT`) has **24 valid trailing letters** (`A` through `Z` minus `I` and `O`), yielding **$24 	imes 999 = 23,976$ civilian vehicles per prefix**.
-- **Why `KAF` Was Skipped**: When the `KA` series progressed from `KAA` to `KAZ` in the 1990s, the prefix **`KAF`** was permanently skipped for civilian cars because **`KAF`** is the official military registration prefix of the **Kenya Air Force**!
+If you have ever wondered why you have never seen a plate ending in **I** or **O** (or a series like **KDI** or **KDO**), it is because NTSA strictly excludes two letters from civilian number sequences:
+- ****I** and **O** Are Excluded for Visual Clarity**: The letters ****I**** and ****O**** are omitted across both the prefix series and the trailing suffix because they are visually indistinguishable from the numerals ****1**** and ****0**** on road enforcement cameras and eyewitness reports.
+- **24 Valid Suffix Letters × 999 Numbers = 23,976 Vehicles per Series**: Because **I** and **O** are skipped, each 3-letter series (such as **KDT**) has **24 valid trailing letters** (**A** through **Z** minus **I** and **O**), yielding **24 × 999 = 23,976 civilian vehicles per prefix**.
+- **Why **KAF** Was Skipped**: When the **KA** series progressed from **KAA** to **KAZ** in the 1990s, the prefix ****KAF**** was permanently skipped for civilian cars because ****KAF**** is the official military registration prefix of the **Kenya Air Force**!
 
 ## Chronological Timeline of Kenyan Civilian Car Plates (1989 – 2026)
 
@@ -521,10 +521,10 @@ Because NTSA issues prefixes strictly in order, a Kenyan car's 3-letter prefix t
 
 | Prefix Series Range | Approximate Kenyan Registration Years | Typical Import Manufacture Years (8-Yr Rule) | Historical Notes |
 |---|---|---|---|
-| **KAA – KAZ** | **1989 – 2007** | 1982 – 2007 | First 3-letter generation (`KAF`, `KAI`, `KAO` skipped) |
+| **KAA – KAZ** | **1989 – 2007** | 1982 – 2007 | First 3-letter generation (**KAF**, **KAI**, **KAO** skipped) |
 | **KBA – KBZ** | **2007 – 2014** | 2000 – 2014 | Rapid expansion of Japanese used car imports via Mombasa Port |
 | **KCA – KCZ** | **2014 – 2020** | 2007 – 2020 | Introduction of NTSA TIMS online registration portal |
-| **KDA – KDG** | **2020 – 2021** | 2013 – 2021 | `KDA` launched in July 2020 |
+| **KDA – KDG** | **2020 – 2021** | 2013 – 2021 | **KDA** launched in July 2020 |
 | **KDH – KDN** | **2022 – 2023** | 2015 – 2023 | Rollout of new third-generation smart reflective plates with QR & hologram |
 | **KDP – KDS** | **2023 – 2024** | 2016 – 2024 | Digital TIMS / eCitizen plate collection integration |
 | **KDT – KDU+** | **2025 – 2026** | 2018 – 2026 | Current active NTSA civilian motor vehicle series |
@@ -535,26 +535,26 @@ Beyond standard civilian cars (which carry a **white reflective front plate** an
 
 | PrefixFormat | Vehicle Category | Plate Background & Text Color | Issuing / Operating Authority |
 |---|---|---|---|
-| **KMA – KMZ (`KMxx 000X`)** | **Motorcycles & Boda Bodas** | Yellow plate, black text (rear only) | NTSA (two-wheelers & tuk-tuks) |
-| **KTA – KTZ (`KTxx 000X`)** | **Agricultural & Construction Tractors** | Yellow/white reflective | NTSA heavy machinery registry |
-| **ZA – ZZ (`Zxxxx`)** | **Commercial Semi-Trailers** | Yellow rear plate, black text | Attached to commercial prime movers |
-| **GK (`GK A000X`)** | **National Government of Kenya** | White plate, black/red text | National Treasury / Ministries & Police |
-| **CG (`01CG 000A` – `47CG 000A`)** | **County Governments (001–047)** | Green/white with county code prefix | Devolved County Governments (`01CG` Mombasa to `47CG` Nairobi) |
+| **KMA – KMZ (**KMxx 000X**)** | **Motorcycles & Boda Bodas** | Yellow plate, black text (rear only) | NTSA (two-wheelers & tuk-tuks) |
+| **KTA – KTZ (**KTxx 000X**)** | **Agricultural & Construction Tractors** | Yellow/white reflective | NTSA heavy machinery registry |
+| **ZA – ZZ (**Zxxxx**)** | **Commercial Semi-Trailers** | Yellow rear plate, black text | Attached to commercial prime movers |
+| **GK (**GK A000X**)** | **National Government of Kenya** | White plate, black/red text | National Treasury / Ministries & Police |
+| **CG (**01CG 000A** – **47CG 000A**)** | **County Governments (001–047)** | Green/white with county code prefix | Devolved County Governments (**01CG** Mombasa to **47CG** Nairobi) |
 | **KDF / KA / KN / KAF** | **Kenya Defence Forces** | Black/dark green plate, white text | Ministry of Defence (Army, Navy, Air Force) |
 | **KWS / KFS / NYS** | **Uniformed State Agencies** | Agency-prefixed official plates | Kenya Wildlife Service, Forest Service, National Youth Service |
-| **CD / UN (`29 CD 1 K`)** | **Diplomatic Corps & UN Agencies** | **Red plate, white text** | Ministry of Foreign Affairs & NTSA (`CD` = Corps Diplomatique, `UN` = United Nations) |
-| **EV (`EVA 001A`)** | **100% Electric Vehicles (BEVs)** | **Green plate** (or green flash), white/black text | NTSA Electric Mobility Registry |
-| **KG (`KGA 000X`)** | **Motor Vehicle Dealers' Garage Plates** | Red background, white text | Temporary trade/test-drive plates for licensed car yards |
+| **CD / UN (**29 CD 1 K**)** | **Diplomatic Corps & UN Agencies** | **Red plate, white text** | Ministry of Foreign Affairs & NTSA (**CD** = Corps Diplomatique, **UN** = United Nations) |
+| **EV (**EVA 001A**)** | **100% Electric Vehicles (BEVs)** | **Green plate** (or green flash), white/black text | NTSA Electric Mobility Registry |
+| **KG (**KGA 000X**)** | **Motor Vehicle Dealers' Garage Plates** | Red background, white text | Temporary trade/test-drive plates for licensed car yards |
 
-## How Diplomatic (`CD`) Country Codes Work in Kenya
+## How Diplomatic (**CD**) Country Codes Work in Kenya
 
-Diplomatic plates in Kenya follow the format **`[Country Code] CD [Rank Number] K`** (for example, **`1 CD 1 K`** or **`45 CD 12 K`**):
-- The **first number** identifies the specific foreign embassy, high commission, or international organization (for instance, `1 CD` = Germany, `2 CD` = Russian Federation, `3 CD` = Ethiopia, `4 CD` = China, `5 CD` = Norway, `6 CD` = Hungary, `7 CD` = Egypt, `8 CD` = Serbia, `9 CD` = Italy, `10 CD` = France, `11 CD` = Slovakia, `12 CD` = Denmark, `13 CD` = Japan, `14 CD` = Sudan, `15 CD` = Austria, `16 CD` = India, `17 CD` = Australia, `18 CD` = Canada, `19 CD` = Holy See/Vatican, `20 CD` = Finland, `21 CD` = Switzerland, `22 CD` = United Kingdom, `23 CD` = Liberia, `24 CD` = Israel, `25 CD` = Nigeria, `26 CD` = Ghana, `27 CD` = Netherlands, `28 CD` = Malawi, `29 CD` = United States of America, `40+ / UN` = United Nations & multilateral missions).
-- The **number after `CD`** indicates diplomatic seniority: **`CD 1`** is always the official flagship limousine of the **Ambassador or High Commissioner**.
+Diplomatic plates in Kenya follow the format ****[Country Code] CD [Rank Number] K**** (for example, ****1 CD 1 K**** or ****45 CD 12 K****):
+- The **first number** identifies the specific foreign embassy, high commission, or international organization (for instance, **1 CD** = Germany, **2 CD** = Russian Federation, **3 CD** = Ethiopia, **4 CD** = China, **5 CD** = Norway, **6 CD** = Hungary, **7 CD** = Egypt, **8 CD** = Serbia, **9 CD** = Italy, **10 CD** = France, **11 CD** = Slovakia, **12 CD** = Denmark, **13 CD** = Japan, **14 CD** = Sudan, **15 CD** = Austria, **16 CD** = India, **17 CD** = Australia, **18 CD** = Canada, **19 CD** = Holy See/Vatican, **20 CD** = Finland, **21 CD** = Switzerland, **22 CD** = United Kingdom, **23 CD** = Liberia, **24 CD** = Israel, **25 CD** = Nigeria, **26 CD** = Ghana, **27 CD** = Netherlands, **28 CD** = Malawi, **29 CD** = United States of America, **40+ / UN** = United Nations & multilateral missions).
+- The **number after **CD**** indicates diplomatic seniority: ****CD 1**** is always the official flagship limousine of the **Ambassador or High Commissioner**.
 
 ## Decode Any Plate or Calculate Import Duty Instantly
 
-- Enter any plate from `KAA` to `KDU` (or `GK`, `CG`, `CD`, `KM`, and `EV`) into the [KenyaHub Number Plate Decoder](/tools/number-plate-decoder/) to inspect its registration year, vehicle class, and series details.
+- Enter any plate from **KAA** to **KDU** (or **GK**, **CG**, **CD**, **KM**, and **EV**) into the [KenyaHub Number Plate Decoder](/tools/number-plate-decoder/) to inspect its registration year, vehicle class, and series details.
 - Planning to import a vehicle from Japan or the UK? Calculate exact KRA Import Duty (35%), Excise Duty, VAT (16%), IDF, RDL, and NTSA registration fees using the [KRA Car Import & CRSP Calculator](/tools/kra-car-import-calculator/).`,
   },
   {
