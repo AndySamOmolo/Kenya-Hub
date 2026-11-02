@@ -81,76 +81,96 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
 // Explicit high-relevance mappings between tools and flagship blog guides
 const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   "paye-calculator": [
-    "understanding-paye-tax-in-kenya-2026-guide",
-    "sha-shif-health-insurance-kenya-2026-contributions-benefits-guide",
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
   "mpesa-fee-calculator": [
-    "mpesa-charges-2026-complete-guide-and-saving-tips",
-    "understanding-paye-tax-in-kenya-2026-guide",
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
+    "understanding-mpesa-transaction-fees",
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
   "sacco-chama-calculator": [
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
-    "cost-of-building-a-house-in-kenya-2026-mjengo-budget-guide",
-    "buying-land-in-kenya-stamp-duty-ardhisasa-conveyancing-guide-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
   ],
   "helb-calculator": [
-    "understanding-paye-tax-in-kenya-2026-guide",
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
-    "guide-to-kenyan-public-holidays-2026",
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+    "cbc-curriculum-explained-for-parents",
   ],
   "stamp-duty-calculator": [
-    "buying-land-in-kenya-stamp-duty-ardhisasa-conveyancing-guide-2026",
-    "cost-of-building-a-house-in-kenya-2026-mjengo-budget-guide",
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
   "vehicle-insurance-calculator": [
-    "how-to-import-a-car-in-kenya-2026-kra-crsp-duty-guide",
-    "buying-land-in-kenya-stamp-duty-ardhisasa-conveyancing-guide-2026",
-    "understanding-paye-tax-in-kenya-2026-guide",
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "cbc-curriculum": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "kuccps-cluster-calculator": [
+    "cbc-curriculum-explained-for-parents",
+    "how-paye-tax-works-in-kenya",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
+  ],
+  "kcse-grade-calculator": [
+    "cbc-curriculum-explained-for-parents",
+    "how-paye-tax-works-in-kenya",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "kcse-school-rankings": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
   ],
   "kra-car-import-calculator": [
-    "how-to-import-a-car-in-kenya-2026-kra-crsp-duty-guide",
-    "understanding-paye-tax-in-kenya-2026-guide",
-    "mpesa-charges-2026-complete-guide-and-saving-tips",
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+    "understanding-mpesa-transaction-fees",
   ],
   "number-plate-decoder": [
-    "how-to-import-a-car-in-kenya-2026-kra-crsp-duty-guide",
+    "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
   "driving-license-guide": [
-    "how-to-import-a-car-in-kenya-2026-kra-crsp-duty-guide",
+    "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
   "traffic-fines": [
-    "how-to-import-a-car-in-kenya-2026-kra-crsp-duty-guide",
+    "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
   "mjengo-construction-calculator": [
-    "cost-of-building-a-house-in-kenya-2026-mjengo-budget-guide",
-    "buying-land-in-kenya-stamp-duty-ardhisasa-conveyancing-guide-2026",
-    "sacco-loans-dividends-and-chama-investing-guide-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
   "nhif-hospital-finder": [
-    "sha-shif-health-insurance-kenya-2026-contributions-benefits-guide",
-    "understanding-paye-tax-in-kenya-2026-guide",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "how-paye-tax-works-in-kenya",
   ],
   "child-growth-schedule": [
-    "sha-shif-health-insurance-kenya-2026-contributions-benefits-guide",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "cbc-curriculum-explained-for-parents",
   ],
   "kenyan-food-nutrition": [
-    "sha-shif-health-insurance-kenya-2026-contributions-benefits-guide",
-    "daily-life-food-ironworking-trade-precolonial-kikuyu-kamba",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "cbc-curriculum-explained-for-parents",
   ],
   "kplc-token-calculator": [
-    "kplc-prepaid-tokens-tariff-bands-and-epra-levies-explained-2026",
-    "mpesa-charges-2026-complete-guide-and-saving-tips",
-    "cost-of-building-a-house-in-kenya-2026-mjengo-budget-guide",
+    "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
+    "understanding-mpesa-transaction-fees",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
   ],
   "water-bill-calculator": [
-    "kplc-prepaid-tokens-tariff-bands-and-epra-levies-explained-2026",
-    "cost-of-building-a-house-in-kenya-2026-mjengo-budget-guide",
+    "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
   ],
 };
 
@@ -186,7 +206,14 @@ export function getRelatedBlogPostsForTool(
     for (const tok of tokens) {
       if (hay.includes(tok)) score += 2;
     }
-    if (tool?.category === "language-learning" && (hay.includes("language") || hay.includes("proverb") || hay.includes("kikuyu") || hay.includes("swahili") || hay.includes("luo"))) {
+    if (
+      tool?.category === "language-learning" &&
+      (hay.includes("language") ||
+        hay.includes("proverb") ||
+        hay.includes("kikuyu") ||
+        hay.includes("swahili") ||
+        hay.includes("luo"))
+    ) {
       score += 5;
     }
     return { post: p, score };

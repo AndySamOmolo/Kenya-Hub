@@ -4,7 +4,7 @@ export interface BlogSource {
   note: string;
 }
 
-export interface BlogSource {
+export interface StaticBlogPost {
   slug: string;
   title: string;
   excerpt: string;

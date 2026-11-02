@@ -257,7 +257,7 @@ export default function HomePage() {
             >
               <div>
                 <div className="flex flex-wrap gap-1.5 mb-2.5">
-                  {(post.tags || []).slice(0, 2).map((tag) => (
+                  {(post.tags || []).slice(0, 2).map((tag: string) => (
                     <span
                       key={tag}
                       className="text-[0.625rem] font-semibold px-2 py-0.5 rounded-full bg-gold/10 text-gold border border-gold/20"
