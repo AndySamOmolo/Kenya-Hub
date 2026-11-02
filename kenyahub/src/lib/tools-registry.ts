@@ -2,15 +2,14 @@ import { ToolCategory, Tool } from './types';
 
 export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; description: string; badgeClass: string }[] = [
   { id: 'finance-tax', name: 'Finance, Tax & SACCOs', icon: '💰', description: 'PAYE reverse salary calculator, M-Pesa fees, SACCO loans, HELB & stamp duty', badgeClass: 'badge-finance' },
-  { id: 'education-cbc', name: 'Education & CBC', icon: '🎓', description: 'CBC curriculum & grade-age, KUCCPS clusters, KCSE grades & rankings', badgeClass: 'badge-education' },
+  { id: 'education-cbc', name: 'Education & CBC', icon: '🎓', description: 'CBC curriculum & grade-age mapper, KUCCPS clusters, KCSE grades & rankings', badgeClass: 'badge-education' },
   { id: 'transport-travel', name: 'Transport, Cars & Travel', icon: '🚗', description: 'KRA CRSP car import duty calculator, number plates, driving licenses, NTSA fines & parks', badgeClass: 'badge-transport' },
-  { id: 'agriculture-environment', name: 'Agriculture & Climate', icon: '🌾', description: 'Crop calendars, soil types, county rainfall, fertilizer & livestock prices', badgeClass: 'badge-agriculture' },
-  { id: 'data-reference', name: 'Counties, Postal & Telecom', icon: '📍', description: 'Constituencies, postal codes & mobile network prefixes', badgeClass: 'badge-reference' },
-  { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Interactive courses, 22-language translator, Gĩkũyũ & Dholuo proverbs/riddles & 42+ dialects', badgeClass: 'badge-reference' },
-  { id: 'business-investment', name: 'Business, Mjengo & Economy', icon: '🏗️', description: 'Kenya Mjengo construction calculator, KIPI trademark fees, EARB agents & economic calendar', badgeClass: 'badge-business' },
-  { id: 'government-legal', name: 'Government & Legal', icon: '🏛️', description: 'Public holidays, passport & ID fees, and KRA customs regulations', badgeClass: 'badge-government' },
+  { id: 'agriculture-environment', name: 'Agriculture & Agribusiness', icon: '🌾', description: 'KALRO crop planting calendars, NCPB fertilizer subsidy savings & livestock market prices', badgeClass: 'badge-agriculture' },
+  { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Interactive courses, 22-language translator, Gĩkũyũ & Dholuo proverbs/riddles & oral wisdom', badgeClass: 'badge-reference' },
+  { id: 'business-investment', name: 'Business, Mjengo & Regulation', icon: '🏗️', description: 'Kenya Mjengo construction BoQ calculator, KIPI trademark fees & statutory regulatory boards', badgeClass: 'badge-business' },
+  { id: 'government-legal', name: 'Government & Legal', icon: '🏛️', description: 'eCitizen e-Passport & Maisha Namba ID fees, and KRA customs duty-free & restricted items', badgeClass: 'badge-government' },
   { id: 'health-wellness', name: 'Health & Nutrition', icon: '🏥', description: 'SHA / SHIF hospitals, child KEPI vaccination tracker & Kenyan food nutrition', badgeClass: 'badge-health' },
-  { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'KPLC token calculator, county water bill estimator & solar ROI', badgeClass: 'badge-utilities' },
+  { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'KPLC prepaid electricity token calculator & county water bill estimator', badgeClass: 'badge-utilities' },
 ];
 
 export const TOOLS: Tool[] = [
@@ -88,30 +87,18 @@ export const TOOLS: Tool[] = [
     icon: '🛡️',
   },
 
-  // ── 2. Education & CBC (6 tools) ──
+  // ── 2. Education & CBC (4 tools) ──
   {
     slug: 'cbc-curriculum',
-    title: 'CBC Curriculum Explorer — Grades PP1 to Grade 12 & Career Pathways',
-    shortTitle: 'CBC Curriculum',
-    description: 'Explore Kenya\'s Competency-Based Curriculum (CBC / CBE) from PP1 to Grade 12. View learning areas, KPSEA/KJSEA assessments, Senior School pathways, and 8-4-4 comparisons.',
+    title: 'CBC Curriculum & Grade-Age Explorer — Grades PP1 to Grade 12 & Pathways',
+    shortTitle: 'CBC & Grade-Age',
+    description: 'Explore Kenya\'s Competency-Based Curriculum (CBC / CBE) from PP1 to Grade 12 with an integrated birth-year Grade-Age checker, KPSEA/KJSEA stages, Senior School pathways, and 8-4-4 equivalents.',
     category: 'education-cbc',
-    keywords: ['CBC curriculum Kenya', 'CBC learning areas', 'CBC subjects per grade', 'KICD curriculum', 'Grade 10 pathways Kenya'],
+    keywords: ['CBC curriculum Kenya', 'CBC grade age Kenya', 'CBC subjects per grade', 'KICD curriculum', 'Grade 10 pathways Kenya'],
     updateFrequency: 'annual',
-    dataSource: 'Kenya Institute of Curriculum Development (KICD)',
+    dataSource: 'Kenya Institute of Curriculum Development (KICD) & Ministry of Education',
     isLive: true,
     icon: '📚',
-  },
-  {
-    slug: 'cbc-grade-age',
-    title: 'CBC Grade & Age Checker 2026 — PP1 to Grade 12 Mapping',
-    shortTitle: 'Grade-Age Checker',
-    description: 'Enter your child\'s birth year to find their exact 2026 CBC grade level, former 8-4-4 equivalent, KPSEA/KJSEA assessment stage, and upcoming educational milestones.',
-    category: 'education-cbc',
-    keywords: ['CBC grade age Kenya', 'what grade is my child CBC', 'PP1 PP2 age Kenya', 'CBC vs 8-4-4 age chart'],
-    updateFrequency: 'annual',
-    dataSource: 'Ministry of Education / KICD',
-    isLive: true,
-    icon: '👶',
   },
   {
     slug: 'kuccps-cluster-calculator',
@@ -129,7 +116,7 @@ export const TOOLS: Tool[] = [
     slug: 'kcse-grade-calculator',
     title: 'KCSE Mean Grade & Career Eligibility Calculator',
     shortTitle: 'KCSE Calculator',
-    description: 'Calculate your KCSE overall mean grade from 8 subjects (Best 7 counted). View KNEC point boundaries, KUCCPS degree eligibility, and career minimum requirements.',
+    description: 'Calculate your KCSE overall mean grade from 8 subjects (Best 7 + compulsory English). View KNEC point boundaries, KUCCPS degree eligibility, and career minimum requirements.',
     category: 'education-cbc',
     keywords: ['KCSE grade calculator', 'mean grade calculator Kenya', 'KNEC grading system', 'KCSE points calculator'],
     updateFrequency: 'static',
@@ -148,18 +135,6 @@ export const TOOLS: Tool[] = [
     dataSource: 'Kenya National Examinations Council (KNEC) & Ministry of Education',
     isLive: true,
     icon: '🏆',
-  },
-  {
-    slug: 'school-terms',
-    title: 'Kenya School Term Dates 2025, 2026 & 2027 — Official MoE Calendar',
-    shortTitle: 'School Terms',
-    description: 'Official Ministry of Education school calendar with opening dates, mid-term breaks, closing dates, holiday durations, and KNEC national exam windows for 2025, 2026, and 2027.',
-    category: 'education-cbc',
-    keywords: ['Kenya school term dates 2026', 'MoE school calendar Kenya', 'school opening dates Kenya 2026', 'mid term break Kenya 2026'],
-    updateFrequency: 'annual',
-    dataSource: 'Ministry of Education (education.go.ke)',
-    isLive: true,
-    icon: '🏫',
   },
 
   // ── 3. Transport, Cars & Travel (5 tools) ──
@@ -215,7 +190,7 @@ export const TOOLS: Tool[] = [
     slug: 'national-parks-directory',
     title: 'Kenya National Parks & Reserves Directory — KWS Entry Fees 2026',
     shortTitle: 'National Parks',
-    description: 'Explore 22+ Kenyan national parks, marine parks, and game reserves. Compare 2026 KWS entry fees for EA Citizens, Residents, and Non-Residents, wildlife, and best seasons.',
+    description: 'Explore 20+ Kenyan national parks, marine parks, and game reserves. Compare 2026 KWS entry fees for EA Citizens, Residents, and Non-Residents, wildlife, and best seasons.',
     category: 'transport-travel',
     keywords: ['Kenya national parks fees 2026', 'KWS park fees', 'Kenya safari parks', 'Maasai Mara entry fee'],
     updateFrequency: 'annual',
@@ -224,42 +199,18 @@ export const TOOLS: Tool[] = [
     icon: '🦁',
   },
 
-  // ── 4. Agriculture & Climate (7 tools) ──
+  // ── 4. Agriculture & Agribusiness (3 tools) ──
   {
     slug: 'crop-planting-calendar',
     title: 'Kenya Crop Planting Calendar — When to Plant by Region',
     shortTitle: 'Crop Calendar',
-    description: 'Interactive planting & harvesting calendar for 16+ crops across 7 Kenyan agro-ecological regions. Includes seed rates, spacing, altitude, and KALRO intercropping tips.',
+    description: 'Interactive planting & harvesting calendar for 15+ crops across 7 Kenyan agro-ecological regions. Includes seed rates, spacing, altitude, and KALRO intercropping tips.',
     category: 'agriculture-environment',
     keywords: ['Kenya crop planting calendar', 'when to plant maize Kenya', 'Kenya farming seasons', 'KALRO planting guide'],
     updateFrequency: 'static',
     dataSource: 'KALRO & Ministry of Agriculture',
     isLive: true,
     icon: '🌱',
-  },
-  {
-    slug: 'kenya-soil-types',
-    title: 'Kenya Soil Types Map & County Farming Suitability Guide',
-    shortTitle: 'Soil Types',
-    description: 'Explore Kenya\'s 8 major agricultural soil types (Nitisols, Vertisols, Ferralsols, Andosols, etc.) — county locations, pH, nutrient deficiencies, best crops, and soil improvement.',
-    category: 'agriculture-environment',
-    keywords: ['Kenya soil types map', 'best soil for farming Kenya county', 'Kenya soil suitability', 'Nitisols Kenya'],
-    updateFrequency: 'static',
-    dataSource: 'Kenya Soil Survey (KALRO) & FAO',
-    isLive: true,
-    icon: '🏔️',
-  },
-  {
-    slug: 'kenya-rainfall-patterns',
-    title: 'Kenya Rainfall & Climate Reference by County (All 47 Counties)',
-    shortTitle: 'Rainfall Patterns',
-    description: 'Explore monthly (Jan–Dec) and annual rainfall patterns, climate zones, Long Rains (MAM), and Short Rains (OND) across all 47 Kenyan counties.',
-    category: 'agriculture-environment',
-    keywords: ['Kenya rainfall by county', 'when does it rain in Kenya', 'Kenya climate zones', 'Kenya rainy season'],
-    updateFrequency: 'static',
-    dataSource: 'Kenya Meteorological Department (meteo.go.ke)',
-    isLive: true,
-    icon: '🌧️',
   },
   {
     slug: 'fertilizer-subsidy-guide',
@@ -285,70 +236,8 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '🐄',
   },
-  {
-    slug: 'agrovet-finder',
-    title: 'Kenya Licensed Agrovet & Farm Input Shops Directory',
-    shortTitle: 'Agrovet Finder',
-    description: 'Searchable directory of KEPHIS and PCPB licensed agricultural input suppliers and agrovets across Kenya — certified seeds, fertilizers, crop protection, and veterinary medicines.',
-    category: 'agriculture-environment',
-    keywords: ['agrovet near me Kenya', 'vet shops Kenya', 'where to buy certified seeds Kenya', 'PCPB licensed agrovets'],
-    updateFrequency: 'annual',
-    dataSource: 'Pest Control Products Board (PCPB) & KEPHIS Licensed Dealers',
-    isLive: true,
-    icon: '🏪',
-  },
-  {
-    slug: 'forest-reserves-kenya',
-    title: 'Kenya National Forest Reserves & Water Towers Directory',
-    shortTitle: 'Forest Reserves',
-    description: 'Explore 20 gazetted forest reserves in Kenya — from Mt. Kenya, Aberdare, and Mau Complex to Karura and Arabuko-Sokoke. Includes hectare size, hiking access, and biodiversity.',
-    category: 'agriculture-environment',
-    keywords: ['Kenya forests list', 'Kenya forest reserve map', 'forests in Kenya hiking', 'KFS forest reserves'],
-    updateFrequency: 'static',
-    dataSource: 'Kenya Forest Service (KFS) & Kenya Forest Research Institute (KEFRI)',
-    isLive: true,
-    icon: '🌲',
-  },
 
-  // ── 5. Counties, Postal & Telecom Reference (3 tools) ──
-  {
-    slug: 'ward-constituency-finder',
-    title: 'Kenya Counties, Constituencies & Elected Leaders Finder',
-    shortTitle: 'Constituency Finder',
-    description: 'Browse all 47 counties and 290 constituencies in Kenya. View your Governor, Deputy Governor, Senator, Woman Representative, county headquarters, population, and land area.',
-    category: 'data-reference',
-    keywords: ['find my constituency Kenya', 'Kenya 290 constituencies list', 'county governors and senators Kenya', 'Kenya elected officials'],
-    updateFrequency: 'static',
-    dataSource: 'IEBC, KNBS 2019 Census & Council of Governors',
-    isLive: true,
-    icon: '🗳️',
-  },
-  {
-    slug: 'kenya-postal-codes',
-    title: 'Kenya Postal Codes Directory (All 47 Counties)',
-    shortTitle: 'Postal Codes',
-    description: 'Search official 5-digit Posta Kenya postal codes for 240+ towns and post offices across all 47 counties — from 00100 GPO Nairobi to 80100 Mombasa and 40100 Kisumu.',
-    category: 'data-reference',
-    keywords: ['Kenya postal codes', 'Nairobi postal code 00100', 'P.O. Box postal code Kenya', 'Posta Kenya codes'],
-    updateFrequency: 'static',
-    dataSource: 'Postal Corporation of Kenya (posta.co.ke)',
-    isLive: true,
-    icon: '📮',
-  },
-  {
-    slug: 'mobile-number-prefix',
-    title: 'Kenya Mobile Number Prefix Finder (Safaricom, Airtel, Telkom, Faiba)',
-    shortTitle: 'Mobile Prefixes',
-    description: 'Instantly identify which mobile network any Kenyan 07xx or 01xx phone number belongs to. Includes complete prefix allocations, USSD codes, and national emergency numbers.',
-    category: 'data-reference',
-    keywords: ['Kenya phone number prefix', 'which network is 0110 0722', 'Safaricom Airtel Telkom prefixes', 'Kenya USSD codes'],
-    updateFrequency: 'static',
-    dataSource: 'Communications Authority of Kenya (CA)',
-    isLive: true,
-    icon: '📞',
-  },
-
-  // ── 6. Languages, Proverbs & Culture (3 tools) ──
+  // ── 5. Languages, Proverbs & Culture (2 tools) ──
   {
     slug: 'learn',
     title: 'Learn Kenyan Languages, Proverbs & Oral Wisdom Hub',
@@ -373,20 +262,8 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '🌍',
   },
-  {
-    slug: 'kenya-languages',
-    title: 'Kenya Languages & Dialects Guide — 42+ Communities',
-    shortTitle: 'Languages Guide',
-    description: 'Explore Kenya\'s Bantu, Nilotic, and Cushitic languages — speaker populations from the KNBS Census, county distributions, mutual intelligibility, and constitutional status.',
-    category: 'language-learning',
-    keywords: ['languages spoken in Kenya', 'Kenya ethnic groups', 'Bantu Nilotic Cushitic Kenya', 'Kenya language map'],
-    updateFrequency: 'static',
-    dataSource: 'KNBS 2019 Population and Housing Census & Constitution of Kenya (2010)',
-    isLive: true,
-    icon: '🏺',
-  },
 
-  // ── 7. Business, Mjengo & Economy (5 tools) ──
+  // ── 6. Business, Mjengo & Regulation (3 tools) ──
   {
     slug: 'mjengo-construction-calculator',
     title: 'Kenya Mjengo (House Construction) Material & BoQ Cost Calculator 2026',
@@ -412,22 +289,10 @@ export const TOOLS: Tool[] = [
     icon: '™️',
   },
   {
-    slug: 'real-estate-agent-checker',
-    title: 'Kenya Real Estate Agent Verification Guide (EARB Cap 533)',
-    shortTitle: 'Agent Checker',
-    description: 'Verify licensed estate agents and property valuers registered with the Estate Agents Registration Board (EARB). Includes a 4-step verification guide and scam red flags.',
-    category: 'business-investment',
-    keywords: ['verify real estate agent Kenya', 'registered estate agent Kenya', 'EARB Kenya', 'property fraud Kenya'],
-    updateFrequency: 'annual',
-    dataSource: 'Estate Agents Registration Board (earb.go.ke)',
-    isLive: true,
-    icon: '🏘️',
-  },
-  {
     slug: 'professional-bodies-kenya',
     title: 'Kenya Professional Bodies & Regulatory Councils Directory',
     shortTitle: 'Professional Bodies',
-    description: 'Directory of 20+ statutory professional regulatory boards in Kenya (LSK, KMPDC, EBK, ICPAK, BORAQS, NCA, TSC, PPB) with registration fees, requirements, and verification portals.',
+    description: 'Directory of 24 statutory professional regulatory boards in Kenya (LSK, KMPDC, EBK, ICPAK, BORAQS, NCA, TSC, PPB) with registration fees, requirements, and verification portals.',
     category: 'business-investment',
     keywords: ['Kenya professional bodies', 'verify lawyer doctor engineer Kenya', 'LSK KMPDC EBK ICPAK registration fees'],
     updateFrequency: 'static',
@@ -435,32 +300,8 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '⚖️',
   },
-  {
-    slug: 'economic-calendar',
-    title: 'Kenya Economic Data Release Calendar (CBK, KNBS, Treasury & EPRA)',
-    shortTitle: 'Economic Calendar',
-    description: 'Track scheduled macroeconomic data releases in Kenya — monthly KNBS CPI inflation, EPRA fuel price reviews, CBK MPC interest rate decisions, quarterly GDP, and National Budget readings.',
-    category: 'business-investment',
-    keywords: ['Kenya GDP release date', 'KNBS CPI inflation release', 'EPRA fuel prices 14th', 'CBK MPC meeting dates'],
-    updateFrequency: 'annual',
-    dataSource: 'KNBS, Central Bank of Kenya (CBK), EPRA & National Treasury',
-    isLive: true,
-    icon: '📆',
-  },
 
-  // ── 8. Government & Legal (3 tools) ──
-  {
-    slug: 'public-holidays',
-    title: 'Kenya Public Holidays 2025, 2026 & 2027 — Gazetted Calendar',
-    shortTitle: 'Public Holidays',
-    description: 'Complete calendar of Kenya\'s gazetted public holidays for 2025, 2026, and 2027 with live next-holiday countdown, Monday observance rules, and downloadable .ics calendar.',
-    category: 'government-legal',
-    keywords: ['Kenya public holidays 2026', 'Kenya bank holidays', 'gazetted holidays Kenya 2026', 'Jamhuri Mashujaa Madaraka Day'],
-    updateFrequency: 'annual',
-    dataSource: 'Public Holidays Act (Cap 110)',
-    isLive: true,
-    icon: '📅',
-  },
+  // ── 7. Government & Legal (2 tools) ──
   {
     slug: 'passport-id-fees',
     title: 'Kenya e-Passport, National ID & Civil Registration Fees Guide 2026',
@@ -486,7 +327,7 @@ export const TOOLS: Tool[] = [
     icon: '🛃',
   },
 
-  // ── 9. Health & Nutrition (3 tools) ──
+  // ── 8. Health & Nutrition (3 tools) ──
   {
     slug: 'nhif-hospital-finder',
     title: 'SHA / SHIF Accredited Health Facility Finder Kenya (Levels 2–6)',
@@ -524,7 +365,7 @@ export const TOOLS: Tool[] = [
     icon: '🍲',
   },
 
-  // ── 10. Utilities & Energy (3 tools) ──
+  // ── 9. Utilities & Energy (2 tools) ──
   {
     slug: 'kplc-token-calculator',
     title: 'KPLC Prepaid Electricity Token Calculator 2026 (EPRA Tariffs)',
@@ -549,18 +390,6 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '💧',
   },
-  {
-    slug: 'solar-roi-calculator',
-    title: 'Kenya Solar Energy System Size & ROI Calculator',
-    shortTitle: 'Solar ROI Calculator',
-    description: 'Calculate recommended solar PV system size (kW), turnkey installation cost, monthly KPLC bill savings, payback period, and 25-year net profit using regional solar irradiance.',
-    category: 'utilities-energy',
-    keywords: ['solar panel cost Kenya', 'solar ROI calculator Kenya', 'solar payback period Nairobi', 'off-grid hybrid solar Kenya'],
-    updateFrequency: 'static',
-    dataSource: 'EPRA Solar Regulations & Kenya Meteorological Department',
-    isLive: true,
-    icon: '☀️',
-  },
 ];
 
 export function getToolsByCategory(category: ToolCategory): Tool[] {
@@ -568,65 +397,36 @@ export function getToolsByCategory(category: ToolCategory): Tool[] {
 }
 
 const TOOL_USAGE_SCORES: Record<string, number> = {
-  // Financial & high-demand Kenyan calculators
   'mpesa-fee-calculator': 100,
   'paye-calculator': 98,
   'kra-car-import-calculator': 97,
   'kplc-token-calculator': 96,
   'mjengo-construction-calculator': 95,
-  'sacco-chama-calculator': 92,
-  'helb-calculator': 90,
-  'stamp-duty-calculator': 65,
-  'vehicle-insurance-calculator': 60,
-  'solar-roi-calculator': 48,
-  'water-bill-calculator': 55,
-
-  // Education
   'kcse-grade-calculator': 94,
   'kuccps-cluster-calculator': 93,
+  'sacco-chama-calculator': 92,
   'kcse-school-rankings': 91,
+  'helb-calculator': 90,
+  'learn': 89,
   'cbc-curriculum': 88,
-  'cbc-grade-age': 78,
-  'school-terms': 85,
-
-  // Government, Counties & daily life
-  'public-holidays': 87,
+  'kenyan-translator': 84,
   'number-plate-decoder': 82,
   'traffic-fines': 76,
   'passport-id-fees': 74,
   'driving-license-guide': 70,
-  'ward-constituency-finder': 58,
-  'kenya-customs-restricted-items': 45,
-  'national-parks-directory': 47,
-
-  // Language & culture
-  'learn': 89,
-  'kenyan-translator': 84,
-  'kenya-languages': 56,
-
-  // Data & reference
-  'mobile-number-prefix': 83,
-  'kenya-postal-codes': 68,
-
-  // Health & nutrition
   'nhif-hospital-finder': 66,
+  'stamp-duty-calculator': 65,
+  'vehicle-insurance-calculator': 60,
+  'water-bill-calculator': 55,
   'child-growth-schedule': 54,
   'kenyan-food-nutrition': 52,
-
-  // Agriculture & climate
+  'national-parks-directory': 47,
   'crop-planting-calendar': 46,
+  'kenya-customs-restricted-items': 45,
   'livestock-market-prices': 44,
   'fertilizer-subsidy-guide': 43,
-  'kenya-rainfall-patterns': 38,
-  'agrovet-finder': 36,
-  'kenya-soil-types': 34,
-  'forest-reserves-kenya': 30,
-
-  // Business & economy
-  'economic-calendar': 42,
   'professional-bodies-kenya': 40,
   'trademark-cost-kenya': 35,
-  'real-estate-agent-checker': 32,
 };
 
 export function getToolUsageScore(tool: Tool): number {

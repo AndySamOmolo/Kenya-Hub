@@ -25,15 +25,17 @@ export async function generateMetadata({
   const displayLang = course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
     ? course.config.name
     : `${course.config.name} (${course.config.nativeName})`;
-  const title = `Learn ${displayLang} — Free Interactive Course`;
+  const title = `Learn ${displayLang} Online — Free Interactive Kenyan Language Course, Phrases & Dictionary`;
 
   return {
     title,
-    description: course.config.description,
+    description: `${course.config.description} Practice ${displayLang} vocabulary, grammar notes, common phrases, and cultural proverbs free on KenyaHub.`,
     keywords: [
-      `learn ${course.config.name}`,
+      `learn ${course.config.name} online`,
       `${course.config.nativeName} lessons`,
       `${course.config.name} vocabulary and grammar`,
+      `${course.config.name} to English dictionary`,
+      `common ${course.config.name} phrases`,
       "learn Kenyan languages online",
     ],
     openGraph: {
@@ -43,7 +45,14 @@ export async function generateMetadata({
       locale: "en_KE",
       siteName: "KenyaHub",
       url: canonicalUrl,
-      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${title} — KenyaHub`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -53,6 +62,10 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        "en-KE": canonicalUrl,
+        en: canonicalUrl,
+      },
     },
   };
 }
@@ -69,13 +82,17 @@ export default async function LanguagePage({
     notFound();
   }
 
+  const displayLang = course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
+    ? course.config.name
+    : `${course.config.name} (${course.config.nativeName})`;
+  const canonicalUrl = `https://kenyahub.me/tools/learn/${course.config.id}/`;
+
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    name: course.config.name.toLowerCase().includes(course.config.nativeName.toLowerCase())
-      ? `Learn ${course.config.name}`
-      : `Learn ${course.config.name} (${course.config.nativeName})`,
+    name: `Learn ${displayLang}`,
     description: course.config.description,
+    url: canonicalUrl,
     provider: {
       "@type": "Organization",
       name: "KenyaHub",
@@ -83,6 +100,35 @@ export default async function LanguagePage({
     },
     isAccessibleForFree: true,
     inLanguage: "en-KE",
+    educationalLevel: "Beginner to Intermediate",
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "online",
+      courseWorkload: "PT10H",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `How can I learn ${displayLang} online for free?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `KenyaHub offers a free, self-paced interactive ${displayLang} course featuring structured units, vocabulary flashcards, grammar breakdowns, sentence-building exercises, and cultural notes that run directly in your browser without registration.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Where is ${displayLang} spoken in Kenya?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${course.config.description} You can also cross-reference words across 22 Kenyan languages using the KenyaHub Kenyan Languages Translator.`,
+        },
+      },
+    ],
   };
 
   return (
@@ -90,6 +136,10 @@ export default async function LanguagePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LanguageClientPage languageId={language} />
     </>

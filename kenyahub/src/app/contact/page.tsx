@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Copy, Check } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -36,7 +37,6 @@ export default function ContactPage() {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
-    // Build mailto link with pre-filled subject and body
     const subjectLine = `[KenyaHub ${subjectLabels[formData.subject] || "Inquiry"}] from ${formData.name}`;
     const body = [
       `Name: ${formData.name}`,
@@ -48,15 +48,62 @@ export default function ContactPage() {
     ].join("\n");
 
     const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
-
-    // Open default mail client
     window.location.href = mailtoUrl;
-
     setSubmitted(true);
   };
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact KenyaHub — Editorial & Engineering Desk",
+    url: "https://kenyahub.me/contact/",
+    inLanguage: "en-KE",
+    mainEntity: {
+      "@type": "Organization",
+      name: "KenyaHub",
+      url: "https://kenyahub.me",
+      email: CONTACT_EMAIL,
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: CONTACT_EMAIL,
+        contactType: "customer support",
+        areaServed: "KE",
+        availableLanguage: ["English", "Swahili"],
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "Contact Us", item: "https://kenyahub.me/contact/" },
+    ],
+  };
+
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted">
+        <Link href="/" className="hover:text-gold transition-colors">
+          Home
+        </Link>
+        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+        <span className="text-text-secondary">Contact Us</span>
+      </nav>
+
       {/* Header */}
       <div className="text-center space-y-3">
         <h1 className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary tracking-tight">

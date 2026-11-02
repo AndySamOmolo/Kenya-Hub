@@ -1,15 +1,43 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kenya Guides, Tax & Cultural Heritage Blog",
-  description: "Articles and guides on Kenyan topics — tools, government services, education, and more.",
+  title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog",
+  description:
+    "In-depth editorial guides, worked statutory calculations, and linguistic research covering Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, CBC education, and cultural heritage.",
+  keywords: [
+    "Kenya tax and finance guides",
+    "PAYE tax guide Kenya 2026",
+    "M-Pesa tariff guide 2026",
+    "KRA car import duty CRSP guide",
+    "cost of building a house in Kenya 2026",
+    "Kenyan languages and proverbs blog",
+  ],
   alternates: {
     canonical: "https://kenyahub.me/blog/",
   },
   openGraph: {
-    title: "Blog | KenyaHub",
-    description: "Articles and guides on Kenyan topics.",
+    title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",
+    description:
+      "In-depth editorial guides and worked statutory analyses on Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, CBC education, and cultural heritage.",
+    type: "website",
+    locale: "en_KE",
+    siteName: "KenyaHub",
     url: "https://kenyahub.me/blog/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "KenyaHub Blog — Kenyan Tax, Finance & Cultural Heritage Guides",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",
+    description:
+      "In-depth editorial guides and worked statutory analyses on Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, and cultural heritage.",
+    images: ["/og-image.png"],
   },
 };
 

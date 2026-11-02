@@ -1409,13 +1409,6 @@
           "audioFile": null
         },
         {
-          "english": "Man-eater, cannibal",
-          "translation": "bulgu",
-          "pronunciation": "bulgu",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
-          "audioFile": null
-        },
-        {
           "english": "Person / Human being",
           "translation": "nama (nom. namni, voc. ya namana!, pl. namoota; namitsha = a particular man)",
           "pronunciation": "na-ma / nam-ni / na-mit-sha",
@@ -1706,13 +1699,6 @@
           "english": "Champion (a man whose exploits give him the right to anoint himself)",
           "translation": "gondala",
           "pronunciation": "a man whose exploits give him the right to anoint himself gondala",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
-          "audioFile": null
-        },
-        {
-          "english": "A fabulous being, half man half animal, of female sex, a female cannibal",
-          "translation": "bauda",
-          "pronunciation": "bau-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
@@ -19298,20 +19284,6 @@
           "translation": "súba orroáti",
           "pronunciation": "suba orroati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
-          "audioFile": null
-        },
-        {
-          "english": "Venereal disease",
-          "translation": "fanto",
-          "pronunciation": "fant-o",
-          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "Venereal disease",
-          "translation": "yátu",
-          "pronunciation": "yatu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
           "audioFile": null
         },
         {
@@ -41148,13 +41120,6 @@
           "audioFile": null
         },
         {
-          "english": "Cohabit",
-          "translation": "irrăfe niti wotshin",
-          "pronunciation": "ir-ra-fe ni-ti wots-hin",
-          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
-          "audioFile": null
-        },
-        {
           "english": "Comfort",
           "translation": "See Console",
           "pronunciation": "see con-so-le",
@@ -42313,13 +42278,6 @@
           "english": "Blessing",
           "translation": "barakata",
           "pronunciation": "ba-ra-ka-ta",
-          "context": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [s.]",
-          "audioFile": null
-        },
-        {
-          "english": "Cannibal",
-          "translation": "bulgu",
-          "pronunciation": "bulgu",
           "context": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [s.]",
           "audioFile": null
         },
@@ -45821,13 +45779,6 @@
           "translation": "djala kesáti",
           "pronunciation": "djala kesati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla adv.)",
-          "audioFile": null
-        },
-        {
-          "english": "Syphilis",
-          "translation": "fando",
-          "pronunciation": "fando",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {

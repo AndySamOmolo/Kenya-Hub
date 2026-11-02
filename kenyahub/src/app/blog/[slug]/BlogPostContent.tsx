@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { markdownToHtml } from "@/lib/markdown";
+import { markdownToHtml, extractMarkdownToc } from "@/lib/markdown";
 import { getSourceById } from "@/data/language-sources";
+import { getRelatedToolsForBlogPost, getRelatedBlogPostsForBlogPost } from "@/lib/seo";
+import { getCategoryInfo } from "@/lib/tools-registry";
 
 interface BlogPost {
   $id: string;
@@ -57,6 +59,21 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
   };
 
+  const tocHeadings = useMemo(
+    () => (post?.content ? extractMarkdownToc(post.content) : []),
+    [post?.content]
+  );
+
+  const relatedTools = useMemo(
+    () => (post ? getRelatedToolsForBlogPost(post.slug, post.tags || [], post.title, 4) : []),
+    [post]
+  );
+
+  const relatedPosts = useMemo(
+    () => (post ? getRelatedBlogPostsForBlogPost(post.slug, post.tags || [], 3) : []),
+    [post]
+  );
+
   if (!post) {
     return (
       <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
@@ -87,7 +104,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
       <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
 
       <article data-error-page={isThinOrEmbedHeavy ? "true" : undefined} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8 flex-wrap">
           <Link href="/" className="hover:text-gold transition-colors">
             Home
           </Link>
@@ -100,7 +117,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-          <span className="text-text-secondary truncate max-w-[200px]">{post.title}</span>
+          <span className="text-text-secondary truncate max-w-[260px] sm:max-w-[420px]">{post.title}</span>
         </nav>
 
         {post.coverImage && (
@@ -114,7 +131,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           </div>
         )}
 
-        <header className="mb-10">
+        <header className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">
             {post.title}
           </h1>
@@ -145,22 +162,42 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           </div>
           {post.tags && post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-4">
-              {post.tags.slice(0, 3).map((tag) => (
+              {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-0.5 text-[0.625rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
+                  className="px-2.5 py-0.5 text-[0.65rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
                 >
                   {tag}
                 </span>
               ))}
-              {post.tags.length > 3 && (
-                <span className="px-2 py-0.5 text-[0.625rem] bg-transparent text-text-muted">
-                  +{post.tags.length - 3} more
-                </span>
-              )}
             </div>
           )}
         </header>
+
+        {/* Automatic Table of Contents for SERP Jump-To Sitelinks */}
+        {tocHeadings.length >= 3 && (
+          <nav
+            aria-label="Table of Contents"
+            className="mb-8 bg-bg-card border border-border rounded-xl p-4 sm:p-5"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-gold mb-2.5 flex items-center gap-1.5">
+              <DynamicIcon emoji="📑" className="w-3.5 h-3.5" /> In This Guide ({tocHeadings.length} Sections)
+            </p>
+            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-text-secondary">
+              {tocHeadings.map((h, idx) => (
+                <li key={h.id} className="truncate">
+                  <a
+                    href={`#${h.id}`}
+                    className="hover:text-gold transition-colors inline-flex items-baseline gap-1.5"
+                  >
+                    <span className="text-gold font-semibold">{idx + 1}.</span>
+                    <span className="truncate">{h.text}</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
 
         <div
           className="prose-blog"
@@ -205,7 +242,89 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           </aside>
         )}
 
-        <div className="mt-12 pt-8 border-t border-border">
+        {/* Related Interactive Calculators & Tools */}
+        {relatedTools.length > 0 && (
+          <section className="mt-10 pt-8 border-t border-border">
+            <div className="flex items-center justify-between gap-2 mb-4">
+              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+                <DynamicIcon emoji="🧰" className="w-4 h-4 text-gold" /> Related Free Kenyan Calculators &amp; Tools
+              </h2>
+              <Link href="/tools/" className="text-xs font-semibold text-gold hover:underline shrink-0">
+                All Tools →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {relatedTools.map((tool) => {
+                const cat = getCategoryInfo(tool.category);
+                return (
+                  <Link
+                    key={tool.slug}
+                    href={`/tools/${tool.slug}/`}
+                    className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all group flex items-start gap-3"
+                  >
+                    <span className="text-xl shrink-0 mt-0.5">
+                      <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-xs sm:text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
+                        {tool.shortTitle}
+                      </h3>
+                      <p className="text-xs text-text-muted line-clamp-2 mt-0.5 leading-relaxed">
+                        {tool.description}
+                      </p>
+                      {cat && (
+                        <span className={`badge ${cat.badgeClass} mt-2`}>
+                          {cat.name}
+                        </span>
+                      )}
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* Related Blog Guides */}
+        {relatedPosts.length > 0 && (
+          <section className="mt-10 pt-8 border-t border-border">
+            <div className="flex items-center justify-between gap-2 mb-4">
+              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+                <DynamicIcon emoji="📚" className="w-4 h-4 text-gold" /> More Kenyan Guides &amp; Articles
+              </h2>
+              <Link href="/blog/" className="text-xs font-semibold text-gold hover:underline shrink-0">
+                All Guides →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {relatedPosts.map((rp) => (
+                <Link
+                  key={rp.slug}
+                  href={`/blog/${rp.slug}/`}
+                  className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="flex items-center justify-between text-[0.625rem] text-text-muted mb-1.5">
+                      <span className="text-gold font-semibold">{(rp.tags || [])[0] || "Guide"}</span>
+                      <span>{rp.readTime} min read</span>
+                    </div>
+                    <h3 className="text-xs sm:text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-1.5">
+                      {rp.title}
+                    </h3>
+                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                      {rp.excerpt}
+                    </p>
+                  </div>
+                  <span className="text-[0.6875rem] font-semibold text-gold mt-3 inline-block group-hover:underline">
+                    Read Article →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <div className="mt-10 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <p className="text-sm font-medium text-text-primary mb-1">Share this article</p>

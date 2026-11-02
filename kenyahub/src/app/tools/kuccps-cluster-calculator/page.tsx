@@ -13,16 +13,27 @@ const gradePoints: Record<string, number> = kuccpsData.gradePoints as Record<str
 const grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
 const subjects = kuccpsData.subjects;
 
+const DEFAULT_CLUSTER_GRADES: Record<string, string> = {
+  English: "B+",
+  Kiswahili: "A-",
+  Mathematics: "A-",
+  Biology: "B+",
+  Physics: "B+",
+  Chemistry: "A-",
+  "History and Government": "A-",
+  "Business Studies": "A",
+};
+
 const faq = [
-  { question: "How are KUCCPS cluster points calculated?", answer: "Each university course belongs to a cluster. Each cluster specifies 4 required subjects with weights (typically 2, 1, 0.5, 0.5). Your cluster weight = sum of (Grade points × subject weight). Grade points: A=12, A-=11, B+=10, B=9, down to E=1." },
-  { question: "What is the maximum cluster weight?", answer: "The maximum cluster weight is 48 points (if you score A in all 4 weighted subjects: 12×2 + 12×1 + 12×0.5 + 12×0.5 = 48)." },
-  { question: "How many clusters does KUCCPS have?", answer: "KUCCPS has approximately 15-20+ clusters, each representing a group of related university courses. Medicine is Cluster 1, Engineering is Cluster 2, Law is Cluster 10, etc." },
-  { question: "Do cluster weights change every year?", answer: "The cluster composition (which subjects and weights) rarely changes. However, the minimum cut-off points for specific courses at specific universities change annually based on demand and available slots." },
-  { question: "Can I calculate cluster weights for courses I didn't take?", answer: "You can only calculate cluster weight for clusters where you took the required subjects. If a cluster requires Biology but you didn't take it, that cluster won't be applicable to you." },
+  { question: "How are KUCCPS cluster points calculated?", answer: "KUCCPS uses the weighted cluster formula C = √((r / 48) × (t / 84)) × 48, where r is the sum of your KCSE points in the 4 required cluster subjects (maximum 48) and t is your 7-subject KCSE aggregate score (maximum 84). Our calculator also displays your raw weighted cluster score across all 20 degree clusters." },
+  { question: "What is the maximum KUCCPS cluster weight?", answer: "The maximum cluster weight is 48.00 points, achieved only when a candidate scores plain A (12 points) in all 4 required cluster subjects (r = 48) and plain A across all 7 best KCSE subjects (t = 84)." },
+  { question: "How many degree clusters does KUCCPS have?", answer: "KUCCPS categorizes all Bachelor's degree programmes into 20 official clusters—such as Cluster 1 (Law), Cluster 2 (Business, Hospitality & Related), Cluster 4 (Geosciences), Cluster 5 (Engineering & Technology), Cluster 9 (Computing & IT), and Cluster 13 (Medicine, Health & Veterinary Sciences)." },
+  { question: "Do cluster cutoff points change every year?", answer: "Yes. While the 4 required subjects for each of the 20 clusters remain fixed by KUCCPS, the cutoff points for individual university degree courses fluctuate every academic year depending on the number of applicants and the declared capacity of each university." },
+  { question: "Can I apply for a KUCCPS degree cluster if I missed one required subject?", answer: "No. To qualify for placement in any KUCCPS degree cluster, you must have sat for all 4 required cluster subjects in KCSE and met the minimum subject grade thresholds specified for that degree programme." },
 ];
 
 export default function KUCCPSCalculatorPage() {
-  const [selectedGrades, setSelectedGrades] = useState<Record<string, string>>({});
+  const [selectedGrades, setSelectedGrades] = useState<Record<string, string>>(DEFAULT_CLUSTER_GRADES);
 
   const updateGrade = (subject: string, grade: string) => {
     setSelectedGrades((prev) => {
@@ -70,7 +81,6 @@ export default function KUCCPSCalculatorPage() {
             calculable = false;
           }
         } else {
-          // Handle OR subjects (e.g., "Physics/Mathematics") without reusing an already-allocated subject
           const options = req.name.split("/").map((s) => s.trim());
           let bestGrade = "";
           let bestPoints = 0;
@@ -121,9 +131,27 @@ export default function KUCCPSCalculatorPage() {
       <div className="space-y-6">
         {/* Grade Entry */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
-          <h3 className="text-sm font-semibold text-text-primary mb-4 font-[family-name:var(--font-outfit)]">
-            Enter Your KCSE Grades
-          </h3>
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+              Enter Your KCSE Subject Grades
+            </h3>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setSelectedGrades(DEFAULT_CLUSTER_GRADES)}
+                className="text-xs px-3 py-1 rounded-lg bg-bg-elevated border border-border text-text-secondary hover:text-gold transition-colors cursor-pointer"
+              >
+                Load Sample Profile
+              </button>
+              <button
+                type="button"
+                onClick={() => setSelectedGrades({})}
+                className="text-xs px-3 py-1 rounded-lg bg-bg-elevated border border-border text-text-muted hover:text-kenya-red-light transition-colors cursor-pointer"
+              >
+                Clear All
+              </button>
+            </div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {subjects.map((subject) => (
               <div key={subject} className="flex items-center gap-2">
@@ -152,7 +180,7 @@ export default function KUCCPSCalculatorPage() {
           <>
             <div className="result-box">
               <p className="text-sm text-text-secondary mb-2">
-                Highest Cluster Weight
+                Highest Calculated Cluster Weight
               </p>
               <p className="text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light">
                 {sortedResults[0].totalWeight} / 48
@@ -165,12 +193,13 @@ export default function KUCCPSCalculatorPage() {
             {/* All Cluster Results */}
             <div className="space-y-4">
               <h3 className="text-lg font-semibold font-[family-name:var(--font-outfit)] text-text-primary">
-                Your Cluster Weights ({sortedResults.length} applicable clusters)
+                Your Calculated Cluster Weights ({sortedResults.length} Eligible Clusters)
               </h3>
 
-              {sortedResults.map((cluster) => (
+              {sortedResults.map((cluster, idx) => (
                 <details
                   key={cluster.id}
+                  open={idx < 3}
                   className="bg-bg-card border border-border rounded-xl overflow-hidden group"
                 >
                   <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
@@ -183,7 +212,7 @@ export default function KUCCPSCalculatorPage() {
                           {cluster.name}
                         </p>
                         <p className="text-xs text-text-muted">
-                          Typical cut-off: {cluster.typicalCutoff} pts
+                          Typical university cutoff range: {cluster.typicalCutoff} pts
                         </p>
                       </div>
                     </div>
@@ -196,16 +225,16 @@ export default function KUCCPSCalculatorPage() {
                   </summary>
                   <div className="px-5 pb-4 border-t border-border pt-3">
                     <div className="mb-3">
-                      <p className="text-xs font-semibold text-text-secondary mb-2">Weight Breakdown:</p>
+                      <p className="text-xs font-semibold text-text-secondary mb-2">Subject Weight Breakdown:</p>
                       <div className="overflow-x-auto">
                         <table className="data-table text-xs">
                           <thead>
                             <tr>
-                              <th>Subject</th>
+                              <th>Cluster Subject Requirement</th>
                               <th>Grade</th>
                               <th>Points</th>
                               <th>Weight</th>
-                              <th className="text-right">Weighted</th>
+                              <th className="text-right">Weighted Score</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -223,7 +252,7 @@ export default function KUCCPSCalculatorPage() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-text-secondary mb-1">Eligible Courses:</p>
+                      <p className="text-xs font-semibold text-text-secondary mb-1">Representative Degree Programmes:</p>
                       <div className="flex flex-wrap gap-1">
                         {cluster.courses.map((c) => (
                           <span key={c} className="badge bg-white/5 text-text-muted text-[0.6rem]">{c}</span>
@@ -240,7 +269,7 @@ export default function KUCCPSCalculatorPage() {
         {hasGrades && sortedResults.length === 0 && (
           <div className="text-center py-8">
             <p className="text-text-muted text-sm">
-              Enter more subjects to see cluster results. Most clusters require at least 3–4 subjects.
+              Enter more subjects to see cluster results. Each KUCCPS cluster requires 4 subjects.
             </p>
           </div>
         )}
@@ -249,7 +278,7 @@ export default function KUCCPSCalculatorPage() {
           <div className="text-center py-8 bg-bg-card border border-border rounded-xl">
             <div className="flex justify-center mb-3"><DynamicIcon emoji="🎯" className="w-8 h-8 text-gold" /></div>
             <p className="text-text-secondary text-sm">
-              Enter your KCSE grades above to calculate cluster weights for all applicable university course clusters.
+              Select your KCSE subject grades above or click &quot;Load Sample Profile&quot; to evaluate all 20 KUCCPS degree clusters.
             </p>
           </div>
         )}

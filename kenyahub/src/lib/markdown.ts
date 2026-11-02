@@ -1,3 +1,51 @@
+export function slugifyHeading(text: string): string {
+  return text
+    .replace(/<[^>]+>/g, "")
+    .replace(/[`*_~]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export interface TocHeading {
+  id: string;
+  text: string;
+  level: number;
+}
+
+export function extractMarkdownToc(content: string): TocHeading[] {
+  if (!content) return [];
+  const raw = content.replace(/\r\n/g, "\n").replace(/```[\s\S]*?```/gm, "");
+  const headings: TocHeading[] = [];
+  const usedIds = new Map<string, number>();
+
+  for (const line of raw.split("\n")) {
+    const trimmed = line.trim();
+    const match = trimmed.match(/^(#{1,3})\s+(.*)$/);
+    if (match) {
+      const rawLevel = match[1].length;
+      const level = rawLevel === 1 ? 2 : rawLevel;
+      const cleanText = match[2]
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\*([^*]+)\*/g, "$1")
+        .replace(/`([^`]+)`/g, "$1")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .trim();
+      const baseId = slugifyHeading(cleanText) || "section";
+      const count = usedIds.get(baseId) || 0;
+      usedIds.set(baseId, count + 1);
+      const id = count === 0 ? baseId : `${baseId}-${count + 1}`;
+      if (level === 2) {
+        headings.push({ id, text: cleanText, level });
+      }
+    }
+  }
+  return headings;
+}
+
 function formatInlineMarkdown(text: string): string {
   if (!text) return "";
   let out = text;
@@ -71,6 +119,7 @@ export function markdownToHtml(content: string): string {
 
   const lines = raw.split("\n");
   const blocks: string[] = [];
+  const usedIds = new Map<string, number>();
   let i = 0;
 
   while (i < lines.length) {
@@ -105,12 +154,18 @@ export function markdownToHtml(content: string): string {
       continue;
     }
 
-    // 4. Headings (# to ####)
+    // 4. Headings (# to ####) — normalize # to h2 inside article body and add id anchor
     const headingMatch = trimmed.match(/^(#{1,4})\s+(.*)$/);
     if (headingMatch) {
-      const level = headingMatch[1].length;
-      const headingHtml = formatInlineMarkdown(headingMatch[2].trim());
-      blocks.push(`<h${level}>${headingHtml}</h${level}>`);
+      const rawLevel = headingMatch[1].length;
+      const level = rawLevel === 1 ? 2 : rawLevel;
+      const rawText = headingMatch[2].trim();
+      const headingHtml = formatInlineMarkdown(rawText);
+      const baseId = slugifyHeading(rawText) || "section";
+      const count = usedIds.get(baseId) || 0;
+      usedIds.set(baseId, count + 1);
+      const id = count === 0 ? baseId : `${baseId}-${count + 1}`;
+      blocks.push(`<h${level} id="${id}" class="scroll-mt-20">${headingHtml}</h${level}>`);
       i++;
       continue;
     }

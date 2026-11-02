@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-01T11:48:45.668Z",
-  "registryCount": 44,
-  "routeCount": 44,
-  "okCount": 44,
+  "generatedAt": "2026-11-02T11:06:47.678Z",
+  "registryCount": 30,
+  "routeCount": 30,
+  "okCount": 30,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
@@ -13,7 +13,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -28,7 +28,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -43,7 +43,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 31,
+      "ageDays": 32,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -58,7 +58,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -73,7 +73,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -88,7 +88,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ira.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/vehicle-insurance-rates.json",
@@ -103,22 +103,7 @@
       "routeExists": true,
       "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/cbc-curriculum.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Institute of Curriculum Development (KICD)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "cbc-grade-age",
-      "routeExists": true,
-      "sourceUrl": "https://kicd.ac.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -133,7 +118,7 @@
       "routeExists": true,
       "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -157,7 +142,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/kcse-rankings.json",
@@ -168,26 +153,11 @@
       "status": "ok"
     },
     {
-      "slug": "school-terms",
-      "routeExists": true,
-      "sourceUrl": "https://education.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/school-terms.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Ministry of Education, Kenya — Official School Calendar (2025–2027)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "kra-car-import-calculator",
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": 31,
+      "ageDays": 32,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -202,7 +172,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -217,7 +187,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/driving-license-guide.json",
@@ -232,7 +202,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -247,7 +217,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kws.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/national-parks.json",
@@ -262,7 +232,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kalro.org/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/crop-planting-calendar.json",
@@ -273,41 +243,11 @@
       "status": "ok"
     },
     {
-      "slug": "kenya-soil-types",
-      "routeExists": true,
-      "sourceUrl": "https://www.kalro.org/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/soil-types.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Soil Survey (KALRO) & FAO-UNESCO Soil Map"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kenya-rainfall-patterns",
-      "routeExists": true,
-      "sourceUrl": "https://meteo.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/rainfall-patterns.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Meteorological Department (meteo.go.ke)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "fertilizer-subsidy-guide",
       "routeExists": true,
       "sourceUrl": "https://ncpb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/fertilizer-subsidy.json",
@@ -322,87 +262,12 @@
       "routeExists": true,
       "sourceUrl": "https://www.kilimo.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/livestock-prices.json",
           "lastUpdated": "2026-10-20",
           "source": "National Livestock Marketing Information System (NLMIS) & NALMC Market Reports"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "agrovet-finder",
-      "routeExists": true,
-      "sourceUrl": "https://www.pcpb.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/agrovets.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Pest Control Products Board (PCPB), KEPHIS & Veterinary Medicines Directorate (VMD)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "forest-reserves-kenya",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyaforestservice.org/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/forest-reserves.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Forest Service (KFS) & Kenya Forest Research Institute (KEFRI)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "ward-constituency-finder",
-      "routeExists": true,
-      "sourceUrl": "https://www.iebc.or.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/counties.json",
-          "lastUpdated": "2026-10-20",
-          "source": "IEBC (2022 Election Data) & KNBS Population and Housing Census"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kenya-postal-codes",
-      "routeExists": true,
-      "sourceUrl": "https://www.posta.co.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/postal-codes.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Postal Corporation of Kenya (Posta Kenya — posta.co.ke)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "mobile-number-prefix",
-      "routeExists": true,
-      "sourceUrl": "https://www.ca.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/mobile-prefixes.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Communications Authority of Kenya (CA) — National Numbering Plan"
         }
       ],
       "status": "ok"
@@ -421,7 +286,7 @@
       "routeExists": true,
       "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 1,
+      "ageDays": 2,
       "data": [
         {
           "file": "src/data/language-sources",
@@ -552,36 +417,11 @@
       "status": "ok"
     },
     {
-      "slug": "kenya-languages",
-      "routeExists": true,
-      "sourceUrl": "https://www.knbs.or.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 1,
-      "data": [
-        {
-          "file": "src/data/language-sources",
-          "lastUpdated": null,
-          "source": null
-        },
-        {
-          "file": "src/data/language-sources",
-          "lastUpdated": null,
-          "source": null
-        },
-        {
-          "file": "src/data/kenya-languages.json",
-          "lastUpdated": "2026-10-31",
-          "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "mjengo-construction-calculator",
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 31,
+      "ageDays": 32,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -596,7 +436,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kipi.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/trademark-fees.json",
@@ -607,26 +447,11 @@
       "status": "ok"
     },
     {
-      "slug": "real-estate-agent-checker",
-      "routeExists": true,
-      "sourceUrl": "https://earb.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/real-estate-agents.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Estate Agents Registration Board (EARB — Cap 533)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "professional-bodies-kenya",
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/professional-bodies.json",
@@ -637,41 +462,11 @@
       "status": "ok"
     },
     {
-      "slug": "economic-calendar",
-      "routeExists": true,
-      "sourceUrl": "https://www.centralbank.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/economic-calendar.json",
-          "lastUpdated": "2026-10-20",
-          "source": "KNBS, Central Bank of Kenya (CBK) & National Treasury (2026 Schedule)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "public-holidays",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/public-holidays.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Public Holidays Act (Cap 110) & Kenya Gazette Notices"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "passport-id-fees",
       "routeExists": true,
       "sourceUrl": "https://immigration.go.ke/type-and-fees/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/passport-id-fees.json",
@@ -686,7 +481,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/customs-restricted-items.json",
@@ -701,7 +496,7 @@
       "routeExists": true,
       "sourceUrl": "https://provider.sha.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/nhif-hospitals.json",
@@ -716,7 +511,7 @@
       "routeExists": true,
       "sourceUrl": "https://guidelines.health.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/vaccination-schedule.json",
@@ -731,7 +526,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kemri.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/kenyan-foods-nutrition.json",
@@ -746,7 +541,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -761,27 +556,12 @@
       "routeExists": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 12,
+      "ageDays": 13,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
           "lastUpdated": "2026-10-20",
           "source": "Water Services Regulatory Board (WASREB) Approved Utility Tariffs"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "solar-roi-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.epra.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 12,
-      "data": [
-        {
-          "file": "src/data/solar-irradiance.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Meteorological Department & EPRA Solar PV Guidelines"
         }
       ],
       "status": "ok"

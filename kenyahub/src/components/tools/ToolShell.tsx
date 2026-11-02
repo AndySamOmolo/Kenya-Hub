@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Tool } from "@/lib/types";
 import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
+import { getRelatedBlogPostsForTool } from "@/lib/seo";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import toolGuidesData from "@/data/tool-guides.json";
 
@@ -12,6 +13,22 @@ interface FAQItem {
 interface BreadcrumbItem {
   label: string;
   href?: string;
+}
+
+interface RichGuideEntry {
+  slug?: string;
+  notesTitle?: string;
+  overview?: string[];
+  howItWorks?: string[];
+  workedExample?: {
+    title: string;
+    scenario: string;
+    steps: string[];
+    takeaway: string;
+  };
+  complianceTips?: string[];
+  notes?: string[];
+  faq?: FAQItem[];
 }
 
 interface ToolShellProps {
@@ -35,59 +52,83 @@ export default function ToolShell({
 }: ToolShellProps) {
   const category = getCategoryInfo(tool.category);
   const related = getRelatedTools(tool.slug, 4);
+  const relatedBlogPosts = getRelatedBlogPostsForTool(tool.slug, 3);
   const guide = (
-    toolGuidesData.guides as Record<
-      string,
-      { notesTitle?: string; notes?: string[]; faq?: FAQItem[] }
-    >
+    toolGuidesData.guides as Record<string, RichGuideEntry>
   )[tool.slug];
 
-  const effectiveFaq: FAQItem[] =
-    faq.length > 0 ? faq : guide?.faq || [];
+  // Merge inline page FAQs and tool-guides.json FAQs without duplicates
+  const mergedFaqMap = new Map<string, FAQItem>();
+  for (const item of [...(guide?.faq || []), ...faq]) {
+    const key = item.question.trim().toLowerCase();
+    if (!mergedFaqMap.has(key)) {
+      mergedFaqMap.set(key, item);
+    }
+  }
+  const effectiveFaq: FAQItem[] = Array.from(mergedFaqMap.values());
   const guideNotes: string[] = guide?.notes || [];
+  const overviewParagraphs: string[] = guide?.overview || [];
+  const howItWorksSteps: string[] = guide?.howItWorks || [];
+  const workedExample = guide?.workedExample;
+  const complianceTips: string[] = guide?.complianceTips || [];
   const isCulturalOrLanguageTool = tool.category === "language-learning";
 
-  // Build BreadcrumbList JSON-LD
+  // Build BreadcrumbList JSON-LD (including any dynamic suffix items)
+  const baseBreadcrumbItems = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://kenyahub.me/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Tools",
+      item: "https://kenyahub.me/tools/",
+    },
+    ...(category
+      ? [
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: category.name,
+            item: `https://kenyahub.me/tools/?category=${tool.category}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: tool.shortTitle,
+            item: `https://kenyahub.me/tools/${tool.slug}/`,
+          },
+        ]
+      : [
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: tool.shortTitle,
+            item: `https://kenyahub.me/tools/${tool.slug}/`,
+          },
+        ]),
+  ];
+
+  const suffixBreadcrumbItems = breadcrumbSuffix.map((b, idx) => ({
+    "@type": "ListItem",
+    position: baseBreadcrumbItems.length + idx + 1,
+    name: b.label,
+    ...(b.href
+      ? {
+          item: b.href.startsWith("http")
+            ? b.href
+            : `https://kenyahub.me${b.href}`,
+        }
+      : {}),
+  }));
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://kenyahub.me/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Tools",
-        item: "https://kenyahub.me/tools/",
-      },
-      ...(category
-        ? [
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: category.name,
-              item: `https://kenyahub.me/tools/?category=${tool.category}`,
-            },
-            {
-              "@type": "ListItem",
-              position: 4,
-              name: tool.shortTitle,
-              item: `https://kenyahub.me/tools/${tool.slug}/`,
-            },
-          ]
-        : [
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: tool.shortTitle,
-              item: `https://kenyahub.me/tools/${tool.slug}/`,
-            },
-          ]),
-    ],
+    itemListElement: [...baseBreadcrumbItems, ...suffixBreadcrumbItems],
   };
 
   // Build WebApplication JSON-LD
@@ -95,12 +136,21 @@ export default function ToolShell({
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: tool.title,
+    alternateName: tool.shortTitle,
     description: tool.description,
     url: `https://kenyahub.me/tools/${tool.slug}/`,
     applicationCategory: "UtilityApplication",
+    applicationSubCategory: category?.name || "Kenyan Public Utility",
     operatingSystem: "Any",
     inLanguage: "en-KE",
     isAccessibleForFree: true,
+    featureList: tool.keywords,
+    areaServed: {
+      "@type": "Country",
+      name: "Kenya",
+    },
+    isBasedOn: tool.dataSource,
+    dateModified: "2026-03-01",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -112,6 +162,24 @@ export default function ToolShell({
       url: "https://kenyahub.me",
     },
   };
+
+  // Build HowTo JSON-LD if step-by-step instructions exist
+  const howToSchema =
+    howItWorksSteps.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: `How to Use the ${tool.title}`,
+          description: tool.description,
+          inLanguage: "en-KE",
+          step: howItWorksSteps.map((stepText, idx) => ({
+            "@type": "HowToStep",
+            position: idx + 1,
+            name: `Step ${idx + 1}`,
+            text: stepText,
+          })),
+        }
+      : null;
 
   // Build FAQPage JSON-LD if FAQs exist
   const faqSchema =
@@ -141,6 +209,12 @@ export default function ToolShell({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
       {faqSchema && (
         <script
           type="application/ld+json"
@@ -251,51 +325,132 @@ export default function ToolShell({
 
       {!hideFooter && (
         <>
-      {/* ── Editorial Methodology & Data Verification Card (AdSense & E-E-A-T Value) ── */}
-      <section className="mb-7 sm:mb-14 bg-bg-card border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4">
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
-            <DynamicIcon emoji="🛡️" className="w-4 h-4 text-kenya-green-light" /> Data Source, Methodology &amp; Verification
-          </h2>
-          <span className="text-[0.6875rem] text-kenya-green-light bg-kenya-green/10 border border-kenya-green/20 px-2.5 py-0.5 rounded-full font-semibold">
-            ✓ Verified for 2026
-          </span>
-        </div>
-        <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-          {isCulturalOrLanguageTool ? (
-            <>
-              <strong>{tool.title}</strong> is curated by the KenyaHub linguistic and cultural research team using verified publications and open datasets from{" "}
-              <strong>{tool.dataSource}</strong>. All lessons, dictionary lookups, and exercises execute locally inside your browser for instant responses and 100% data privacy.
-            </>
+      {/* ── Comprehensive Editorial Guide, Statutory Framework & Worked Examples ── */}
+      <article className="mb-7 sm:mb-14 space-y-6">
+        <section className="bg-bg-card border border-border rounded-xl sm:rounded-2xl p-5 sm:p-7 space-y-4">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+              <DynamicIcon emoji="📘" className="w-5 h-5 text-gold" />{" "}
+              {guide?.notesTitle || `Comprehensive Guide & Statutory Methodology: ${tool.shortTitle}`}
+            </h2>
+            <span className="text-[0.6875rem] text-kenya-green-light bg-kenya-green/10 border border-kenya-green/20 px-2.5 py-0.5 rounded-full font-semibold">
+              ✓ Verified 2026 Reference ({tool.dataSource})
+            </span>
+          </div>
+
+          {overviewParagraphs.length > 0 ? (
+            <div className="space-y-3 text-xs sm:text-sm text-text-secondary leading-relaxed">
+              {overviewParagraphs.map((para, idx) => (
+                <p key={idx}>{para}</p>
+              ))}
+            </div>
           ) : (
-            <>
-              The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
-              <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
-            </>
+            <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+              {isCulturalOrLanguageTool ? (
+                <>
+                  <strong>{tool.title}</strong> is curated by the KenyaHub linguistic and cultural research team using verified publications and open datasets from{" "}
+                  <strong>{tool.dataSource}</strong>. All lessons, dictionary lookups, and exercises execute locally inside your browser for instant responses and 100% data privacy.
+                </>
+              ) : (
+                <>
+                  The <strong>{tool.title}</strong> is maintained by the KenyaHub research team using official publications from{" "}
+                  <strong>{tool.dataSource}</strong>. All calculations and lookups execute locally inside your browser for instant results and 100% data privacy.
+                </>
+              )}
+            </p>
           )}
-        </p>
-        {guideNotes.length > 0 && (
-          <ul className="space-y-1.5 pt-2 border-t border-border/60 text-xs text-text-secondary">
-            {guideNotes.slice(0, 5).map((note, idx) => (
-              <li key={idx} className="flex items-start gap-2">
-                <span className="text-gold font-bold">•</span>
-                <span>{note}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-        <p className="text-[0.6875rem] text-text-muted pt-2 border-t border-border/50">
-          {isCulturalOrLanguageTool ? (
-            <>
-              Editorial Note: Linguistic vocabularies, grammatical paradigms, and oral proverbs are compiled from verified public-domain monographs and open lexical corpora ({tool.dataSource}) for educational and cultural preservation purposes. Regional dialectal and orthographical variations exist across Kenyan communities.
-            </>
-          ) : (
-            <>
-              Editorial Disclaimer: Figures and reference data are provided for informational and educational purposes. Always verify official filings, tariffs, or statutory obligations against the latest published schedule from {tool.dataSource}.
-            </>
+
+          {howItWorksSteps.length > 0 && (
+            <div className="pt-3 border-t border-border/60 space-y-2.5">
+              <h3 className="text-xs sm:text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-1.5">
+                <DynamicIcon emoji="⚙️" className="w-4 h-4 text-gold" /> Step-by-Step Calculation &amp; Verification Formula
+              </h3>
+              <ol className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                {howItWorksSteps.map((step, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-[0.6875rem] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
+                    <span className="leading-relaxed">{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
           )}
-        </p>
-      </section>
+
+          {workedExample && (
+            <div className="pt-4 border-t border-border/60">
+              <div className="bg-bg-elevated/70 border border-border rounded-xl p-4 sm:p-5 space-y-2.5">
+                <h3 className="text-xs sm:text-sm font-bold text-gold font-[family-name:var(--font-outfit)] flex items-center gap-1.5">
+                  <DynamicIcon emoji="🧮" className="w-4 h-4" /> {workedExample.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-text-primary font-medium leading-relaxed">
+                  {workedExample.scenario}
+                </p>
+                <ul className="space-y-1.5 text-xs text-text-secondary">
+                  {workedExample.steps.map((s, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-kenya-green-light font-bold">→</span>
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs font-semibold text-kenya-green-light pt-1 border-t border-border/50">
+                  Key Takeaway: {workedExample.takeaway}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {(complianceTips.length > 0 || guideNotes.length > 0) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-border/60">
+              {guideNotes.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-text-primary">
+                    Methodology &amp; Usage Notes
+                  </h3>
+                  <ul className="space-y-1.5 text-xs text-text-secondary">
+                    {guideNotes.map((note, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-gold font-bold">•</span>
+                        <span className="leading-relaxed">{note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {complianceTips.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-kenya-green-light">
+                    Statutory Compliance &amp; Practical Tips
+                  </h3>
+                  <ul className="space-y-1.5 text-xs text-text-secondary">
+                    {complianceTips.map((tip, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-kenya-green-light font-bold">✓</span>
+                        <span className="leading-relaxed">{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+          <p className="text-[0.6875rem] text-text-muted pt-3 border-t border-border/50">
+            {isCulturalOrLanguageTool ? (
+              <>
+                Editorial Note: Linguistic vocabularies, grammatical paradigms, and oral proverbs are compiled from verified public-domain monographs and open lexical corpora ({tool.dataSource}) for educational and cultural preservation purposes. Regional dialectal and orthographical variations exist across Kenyan communities.
+              </>
+            ) : (
+              <>
+                Editorial Disclaimer: Figures and statutory schedules are provided for informational and educational planning purposes. Always verify formal filings, tax returns, or legal obligations against the latest published schedule from {tool.dataSource}.
+              </>
+            )}
+          </p>
+        </section>
+      </article>
 
       {/* ── FAQ Section ── */}
       {effectiveFaq.length > 0 && (
@@ -307,13 +462,14 @@ export default function ToolShell({
               </svg>
             </div>
             <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-              Frequently Asked Questions
+              Frequently Asked Questions ({effectiveFaq.length})
             </h2>
           </div>
-          <div className="space-y-2 sm:space-y-3">
+          <div className="space-y-2.5 sm:space-y-3">
             {effectiveFaq.map((item, i) => (
               <details
                 key={i}
+                open={i < 3}
                 className="group bg-bg-card border border-border rounded-xl overflow-hidden"
               >
                 <summary className="flex items-center justify-between px-3.5 sm:px-5 py-3 sm:py-4 cursor-pointer text-xs sm:text-sm font-medium text-text-primary hover:text-gold transition-colors list-none">
@@ -334,12 +490,52 @@ export default function ToolShell({
         </section>
       )}
 
+      {/* ── Related In-Depth Blog Guides ── */}
+      {relatedBlogPosts.length > 0 && (
+        <section className="mb-7 sm:mb-12">
+          <div className="section-divider mb-6 sm:mb-8" />
+          <div className="flex items-center justify-between gap-2 mb-3 sm:mb-5">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+              <DynamicIcon emoji="📰" className="w-4 h-4 text-gold" /> Related Kenyan Guides &amp; Worked Articles
+            </h2>
+            <Link href="/blog/" className="text-xs font-semibold text-gold hover:underline shrink-0">
+              All Guides →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {relatedBlogPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}/`}
+                className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-[0.625rem] text-text-muted mb-1.5">
+                    <span className="text-gold font-semibold">{(post.tags || [])[0] || "Kenya Guide"}</span>
+                    <span>{post.readTime} min read</span>
+                  </div>
+                  <h3 className="text-xs sm:text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-1.5">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                </div>
+                <span className="text-[0.6875rem] font-semibold text-gold mt-3 inline-block group-hover:underline">
+                  Read Full Guide →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* ── Related Tools ── */}
       {related.length > 0 && (
         <section>
-          <div className="section-divider mb-6 sm:mb-10" />
+          <div className="section-divider mb-6 sm:mb-8" />
           <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3 sm:mb-5">
-            Related Tools
+            Related Kenyan Tools &amp; Calculators
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
             {related.map((rel) => {

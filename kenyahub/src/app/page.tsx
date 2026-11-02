@@ -1,11 +1,14 @@
 import Link from "next/link";
-import { MapPin, ShieldCheck, BadgeCheck, Smartphone, Landmark, BusFront } from "lucide-react";
+import { MapPin, ShieldCheck, BadgeCheck, Smartphone, Landmark, BusFront, BookOpen } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
+import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function HomePage() {
+  const featuredGuides = STATIC_BLOG_POSTS.slice(0, 6);
+
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -13,12 +16,28 @@ export default function HomePage() {
     url: "https://kenyahub.me",
     inLanguage: "en-KE",
     description:
-      "Free online tools and verified public data built for Kenya — 2026 PAYE salary calculator, M-Pesa fee calculator, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, public holidays, and more.",
+      "Free online tools, statutory calculators, and verified public data built for Kenya — 2026 PAYE salary calculator, M-Pesa fee calculator, KRA car import duty, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, and Matatu routes.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://kenyahub.me/tools/?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
+  };
+
+  const homeItemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Flagship Kenyan Calculators, Directories & Public Data Hubs",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Kenya PAYE Salary Calculator 2026 (Gross to Net & Net to Gross)", url: "https://kenyahub.me/tools/paye-calculator/" },
+      { "@type": "ListItem", position: 2, name: "M-Pesa Transaction & Withdrawal Fee Calculator 2026", url: "https://kenyahub.me/tools/mpesa-fee-calculator/" },
+      { "@type": "ListItem", position: 3, name: "KRA Car Import Duty & CRSP Calculator 2026", url: "https://kenyahub.me/tools/kra-car-import-calculator/" },
+      { "@type": "ListItem", position: 4, name: "Kenya 47 Counties Hub — Budgets, Governors & 290 Constituencies", url: "https://kenyahub.me/county/" },
+      { "@type": "ListItem", position: 5, name: "Kenya Matatu Routes, Stages & Fares Interactive Guide", url: "https://kenyahub.me/matatu/" },
+      { "@type": "ListItem", position: 6, name: "KPLC Prepaid Electricity Token Calculator 2026", url: "https://kenyahub.me/tools/kplc-token-calculator/" },
+      { "@type": "ListItem", position: 7, name: "Kenya Mjengo House Construction Material & BoQ Cost Calculator", url: "https://kenyahub.me/tools/mjengo-construction-calculator/" },
+      { "@type": "ListItem", position: 8, name: "KUCCPS Cluster Points Calculator 2026", url: "https://kenyahub.me/tools/kuccps-cluster-calculator/" },
+    ],
   };
 
   const organizationSchema = {
@@ -46,6 +65,10 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeItemListSchema) }}
+      />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
@@ -66,7 +89,7 @@ export default function HomePage() {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-kenya-green-light" />
                 </span>
                 <span className="text-[0.6875rem] sm:text-xs font-medium text-text-secondary tracking-wide">
-                  {TOOLS.length} tools · 47 Counties Hub · Free forever · Official 2026 data
+                  {TOOLS.length} specialized tools · 47 Counties Hub · Free forever · Official 2026 data
                 </span>
               </div>
 
@@ -77,7 +100,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-sm sm:text-lg text-text-secondary leading-relaxed mb-5 sm:mb-10 max-w-xl">
-                Calculate your 2026 net salary, explore all 47 county budgets and constituencies, decode number plates, check M-Pesa fees, and plan matatu routes — powered by official Kenyan public data.
+                Calculate your 2026 net salary, estimate KRA CRSP car import duty, explore all 47 county budgets and constituencies, check M-Pesa fees, and plan matatu routes — powered by official Kenyan public data.
               </p>
 
               <div className="flex flex-wrap gap-2.5 sm:gap-3">
@@ -146,7 +169,7 @@ export default function HomePage() {
                 Kenya Matatu Routes, Stages &amp; Fares Hub
               </h2>
               <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-3 sm:mb-4">
-                Navigate public transport across <strong>Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika</strong>. View CBD boarding stages, route numbers, peak vs off-peak fares, and registered SACCO operators on interactive maps.
+                Navigate public transport across <strong>Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika</strong>. View CBD boarding stages, route numbers, corridor distances, peak vs off-peak fares, and registered SACCO operators on interactive maps.
               </p>
             </div>
             <span className="text-xs font-bold text-gold group-hover:underline">
@@ -159,17 +182,16 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* CATEGORIES */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-16">
         <div className="text-center mb-5 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 sm:mb-2">
             Browse by Category
           </p>
           <h2 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
-            {TOOL_CATEGORIES.length} categories, one platform
+            {TOOL_CATEGORIES.length} specialized categories, one platform
           </h2>
           <p className="text-text-muted text-xs sm:text-sm mt-1.5 sm:mt-3 max-w-md mx-auto">
-            Every aspect of life in Kenya — from finances to farming, education
-            to energy, counties to languages.
+            Every aspect of life in Kenya — from taxes and SACCOs to farming, CBC education, energy, counties, and indigenous languages.
           </p>
         </div>
 
@@ -207,8 +229,65 @@ export default function HomePage() {
 
       <div className="section-divider mx-auto max-w-7xl" />
 
+      {/* FEATURED STATUTORY GUIDES & EDITORIAL ARTICLES */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-16">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5" /> In-Depth Kenyan Guides
+            </p>
+            <h2 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight text-text-primary">
+              2026 Statutory Guides &amp; Worked Examples
+            </h2>
+            <p className="text-xs sm:text-sm text-text-secondary mt-1 max-w-2xl">
+              Detailed editorial guides explaining the Kenyan laws, Gazette Notices, and step-by-step math behind our calculators.
+            </p>
+          </div>
+          <Link href="/blog/" className="text-xs sm:text-sm font-bold text-gold hover:underline shrink-0">
+            Read All {STATIC_BLOG_POSTS.length} Guides →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featuredGuides.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}/`}
+              className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-5 transition-all flex flex-col justify-between group"
+            >
+              <div>
+                <div className="flex flex-wrap gap-1.5 mb-2.5">
+                  {(post.tags || []).slice(0, 2).map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[0.625rem] font-semibold px-2 py-0.5 rounded-full bg-gold/10 text-gold border border-gold/20"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                  <span className="text-[0.625rem] text-text-muted ml-auto">
+                    {post.readTime} min read
+                  </span>
+                </div>
+                <h3 className="text-sm sm:text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-xs text-text-secondary line-clamp-3 leading-relaxed">
+                  {post.excerpt}
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-gold mt-4 inline-block group-hover:underline">
+                Read Full Guide →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="section-divider mx-auto max-w-7xl" />
+
       {/* WHY KENYAHUB */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-16">
         <div className="text-center mb-5 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 sm:mb-2">
             Built Different
@@ -223,19 +302,19 @@ export default function HomePage() {
             {
               icon: <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-kenya-green mb-0.5 sm:mb-1" />,
               title: "100% Kenyan",
-              desc: "Every tool uses real Kenyan data — 2026 KRA tax bands, Safaricom tariffs, KICD curriculum.",
+              desc: "Every tool uses real Kenyan data — 2026 KRA tax bands, Safaricom tariffs, KRA CRSP schedules, and KICD curriculum.",
               accent: "from-kenya-green/10 to-transparent",
             },
             {
               icon: <ShieldCheck className="w-6 h-6 sm:w-8 sm:h-8 text-gold mb-0.5 sm:mb-1" />,
               title: "Officially Sourced",
-              desc: "Data from KRA, KUCCPS, SHA, KICD, NTSA, KNBS, COB, and other public institutions.",
+              desc: "Modeled on publications from KRA, KUCCPS, SHA, KICD, NTSA, KNBS, COB, SASRA, and EPRA.",
               accent: "from-gold/10 to-transparent",
             },
             {
               icon: <BadgeCheck className="w-6 h-6 sm:w-8 sm:h-8 text-sky mb-0.5 sm:mb-1" />,
               title: "Free Forever",
-              desc: "No registration, no hidden fees, no paywalls. Every calculator and directory is free.",
+              desc: "No registration, no hidden fees, no paywalls. Every calculator, course, and directory is free.",
               accent: "from-sky/10 to-transparent",
             },
             {
@@ -270,10 +349,10 @@ export default function HomePage() {
               Ready to find the tool you need?
             </h2>
             <p className="text-text-muted text-xs sm:text-sm mb-5 sm:mb-8 max-w-md mx-auto">
-              From PAYE calculations to CBC curriculum and all 47 county budgets — whatever you need as a Kenyan, we&apos;ve built it.
+              From PAYE calculations and car import duties to CBC curriculum and all 47 county budgets — whatever you need as a Kenyan, we&apos;ve built it.
             </p>
             <Link href="/tools/" className="btn-gold text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
-              Explore All Tools
+              Explore All {TOOLS.length} Tools
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>

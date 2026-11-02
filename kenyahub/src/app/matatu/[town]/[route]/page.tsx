@@ -49,6 +49,7 @@ export async function generateMetadata({
       `matatu to ${routeObj.terminusB}`,
       `${routeObj.terminusA} to ${routeObj.terminusB} matatu fare`,
       routeObj.saccoName,
+      `${routeObj.name} matatu stages`,
     ],
     openGraph: {
       title: `${title} | KenyaHub`,
@@ -57,7 +58,14 @@ export async function generateMetadata({
       locale: "en_KE",
       siteName: "KenyaHub",
       url: canonicalUrl,
-      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${title} — KenyaHub`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -67,6 +75,10 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        "en-KE": canonicalUrl,
+        en: canonicalUrl,
+      },
     },
   };
 }
@@ -88,6 +100,8 @@ export default async function RouteDetailPage({
     notFound();
   }
 
+  const canonicalUrl = `https://kenyahub.me/matatu/${townObj.slug}/${routeObj.slug}/`;
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -104,9 +118,59 @@ export default async function RouteDetailPage({
         "@type": "ListItem",
         position: 4,
         name: `Route ${routeObj.routeNumber}: ${routeObj.name}`,
-        item: `https://kenyahub.me/matatu/${townObj.slug}/${routeObj.slug}/`,
+        item: canonicalUrl,
       },
     ],
+  };
+
+  const busTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "BusTrip",
+    name: `${townObj.name} Matatu Route ${routeObj.routeNumber}: ${routeObj.name}`,
+    busNumber: routeObj.routeNumber,
+    busName: `${routeObj.name} (${routeObj.saccoName})`,
+    url: canonicalUrl,
+    provider: {
+      "@type": "Organization",
+      name: routeObj.saccoName,
+    },
+    departureBusStop: {
+      "@type": "BusStop",
+      name: routeObj.terminusA,
+      ...(routeObj.stages[0] && {
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: routeObj.stages[0].lat,
+          longitude: routeObj.stages[0].lng,
+        },
+      }),
+    },
+    arrivalBusStop: {
+      "@type": "BusStop",
+      name: routeObj.terminusB,
+      ...(routeObj.stages[routeObj.stages.length - 1] && {
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: routeObj.stages[routeObj.stages.length - 1].lat,
+          longitude: routeObj.stages[routeObj.stages.length - 1].lng,
+        },
+      }),
+    },
+    itinerary: routeObj.stages.map((s) => ({
+      "@type": "BusStop",
+      name: s.name,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: s.lat,
+        longitude: s.lng,
+      },
+    })),
+    offers: {
+      "@type": "AggregateOffer",
+      lowPrice: String(routeObj.fareMin),
+      highPrice: String(routeObj.fareMax),
+      priceCurrency: "KES",
+    },
   };
 
   return (
@@ -114,6 +178,10 @@ export default async function RouteDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(busTripSchema) }}
       />
       <RouteDetailView townSlug={townSlug} routeSlug={routeSlug} />
     </>

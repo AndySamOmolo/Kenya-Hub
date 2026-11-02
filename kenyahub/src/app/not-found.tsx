@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { TOOLS } from "@/lib/tools-registry";
 
 export const metadata: Metadata = {
   title: "Page Not Found (404)",
-  description: "The requested page could not be found. Explore KenyaHub's 44+ free Kenyan tools, 47 Counties Hub, Matatu Routes, and Guides.",
+  description: `The requested page could not be found. Explore KenyaHub's ${TOOLS.length} free Kenyan calculators, 47 Counties Hub, Matatu Routes, and Guides.`,
   robots: {
     index: false,
     follow: true,
@@ -36,8 +37,8 @@ export default function NotFound() {
           href="/tools/"
           className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
         >
-          <p className="text-sm font-bold text-gold flex items-center gap-1.5"><DynamicIcon emoji="🧰" className="w-4 h-4 shrink-0" /> Browse All 44 Tools →</p>
-          <p className="text-xs text-text-muted mt-1">PAYE, M-Pesa, KPLC tokens, KCSE, KUCCPS &amp; more</p>
+          <p className="text-sm font-bold text-gold flex items-center gap-1.5"><DynamicIcon emoji="🧰" className="w-4 h-4 shrink-0" /> Browse All {TOOLS.length} Tools →</p>
+          <p className="text-xs text-text-muted mt-1">PAYE, M-Pesa, KPLC tokens, KRA CRSP, KCSE, KUCCPS &amp; more</p>
         </Link>
         <Link
           href="/county/"

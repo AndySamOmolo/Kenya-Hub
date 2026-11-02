@@ -22,6 +22,24 @@ interface RouteItem {
   stages: { name: string; lat: number; lng: number; order: number }[];
 }
 
+const MATATU_HUB_FAQS = [
+  {
+    question: "How are matatu route numbers and SACCOs regulated in Kenya?",
+    answer:
+      "Every public service vehicle (PSV) in Kenya must belong to a registered Savings and Credit Co-operative (SACCO) or transport company licensed by the National Transport and Safety Authority (NTSA) under the Traffic Act (Cap 403). Route numbers in Nairobi and major towns follow designated highway corridors (such as Waiyaki Way, Thika Superhighway, Mombasa Road, Ngong Road, Jogoo Road, and Juja Road).",
+  },
+  {
+    question: "Why do matatu fares change between off-peak and rush hour in Kenya?",
+    answer:
+      "Matatu fares in Kenya are market-determined based on time of day, traffic congestion, and weather. Off-peak fares apply between 9:30 AM and 3:30 PM, whereas peak fares apply during morning rush hours (6:00 AM – 9:00 AM), evening rush hours (4:30 PM – 8:00 PM), and heavy rainfall.",
+  },
+  {
+    question: "Which Kenyan cities and towns are covered in the KenyaHub Matatu Directory?",
+    answer:
+      "KenyaHub currently covers verified matatu and bus routes across 6 major urban hubs: Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika, complete with GPS stage coordinates, CBD boarding termini, fare ranges, and operating SACCOs.",
+  },
+];
+
 export default function MatatuPage() {
   const [search, setSearch] = useState("");
 
@@ -74,14 +92,70 @@ export default function MatatuPage() {
     return allRoutes.slice(0, 12);
   }, [allRoutes]);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "Matatu Routes", item: "https://kenyahub.me/matatu/" },
+    ],
+  };
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Kenya Matatu & Public Transport Routes by City",
+    numberOfItems: allRoutes.length,
+    itemListElement: allRoutes.map((r, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      name: `${r.townName} Route ${r.routeNumber}: ${r.name} (${r.terminusA} to ${r.terminusB})`,
+      url: `https://kenyahub.me/matatu/${r.townSlug}/${r.slug}/`,
+    })),
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: MATATU_HUB_FAQS.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
+        <Link href="/" className="hover:text-gold transition-colors">
+          Home
+        </Link>
+        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+        <span className="text-text-secondary">Matatu Routes Hub</span>
+      </nav>
+
       {/* Hero */}
       <div className="relative mb-12 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-8 sm:p-12">
         <DynamicIcon emoji="🚌" className="absolute top-4 right-4 w-28 h-28 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
         <div className="relative z-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] mb-3 gradient-text-kenya tracking-tight">
-            Kenya Matatu Routes & Stages
+            Kenya Matatu Routes &amp; Stages
           </h1>
           <p className="text-text-secondary max-w-lg text-sm sm:text-base leading-relaxed mb-6">
             Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, view stages on interactive Leaflet maps, check fares and SACCO details.
@@ -194,13 +268,44 @@ export default function MatatuPage() {
         ))}
       </div>
 
-      {/* SEO content */}
-      <div className="mt-12 bg-bg-card border border-border rounded-xl p-6">
-        <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">About Kenya Matatu Routes & Public Transport</h2>
-        <div className="space-y-3 text-xs text-text-secondary leading-relaxed">
-          <p>Matatus are the heart of Kenya&apos;s public transport ecosystem. These 14-seater minibuses and 33+ seater buses connect Central Business Districts to suburbs, satellite towns, and rural markets in Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and beyond.</p>
-          <p>Every matatu route in Kenya is operated under SACCOs (Savings and Credit Co-operatives) licensed by NTSA (National Transport and Safety Authority). Fares are market-driven and fluctuate based on peak rush hours (morning/evening), weather conditions, and fuel price adjustments.</p>
-          <p>KenyaHub provides interactive maps with step-by-step stage breakdowns, operating SACCO details, fare expectations, and operating hours for commuters, students, and visitors travelling across Kenya.</p>
+      {/* SEO content & FAQs */}
+      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-bg-card border border-border rounded-xl p-6">
+          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">
+            About Kenya Matatu Routes &amp; Public Transport
+          </h2>
+          <div className="space-y-3 text-xs sm:text-sm text-text-secondary leading-relaxed">
+            <p>
+              Matatus are the backbone of Kenya&apos;s urban and peri-urban public transport network. These 14-seater minibuses and 33-to-51 seater commuter buses connect Central Business Districts (CBDs) to residential estates, satellite towns, industrial parks, and university campuses across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika.
+            </p>
+            <p>
+              Every matatu route in Kenya is operated by a registered SACCO (Savings and Credit Co-operative) licensed by the <strong>National Transport and Safety Authority (NTSA)</strong>. Fares vary between off-peak daytime hours and peak morning/evening rush hours or rainy weather.
+            </p>
+            <p>
+              Select any city or route above to inspect interactive GPS stage maps, Haversine corridor distances, estimated travel times, operating SACCOs, and monthly commuter fare budgets.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-bg-card border border-border rounded-xl p-6 space-y-3">
+          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
+            Frequently Asked Questions
+          </h2>
+          {MATATU_HUB_FAQS.map((item, idx) => (
+            <details
+              key={idx}
+              open={idx < 2}
+              className="group bg-bg-elevated/50 border border-border rounded-xl overflow-hidden"
+            >
+              <summary className="flex items-center justify-between px-4 py-3 cursor-pointer text-xs sm:text-sm font-semibold text-text-primary hover:text-gold transition-colors list-none">
+                <span>{item.question}</span>
+                <span className="text-gold ml-2 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <div className="px-4 pb-3.5 pt-2 text-xs text-text-secondary leading-relaxed border-t border-border/60">
+                {item.answer}
+              </div>
+            </details>
+          ))}
         </div>
       </div>
     </div>

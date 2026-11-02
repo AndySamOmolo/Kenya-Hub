@@ -1,33 +1,52 @@
 import type { Metadata } from "next";
+import { TOOLS } from "@/lib/tools-registry";
 
 export const metadata: Metadata = {
-  title: "All Tools — Free Online Tools for Kenya",
+  title: `All Tools — ${TOOLS.length} Free Online Calculators & Utilities for Kenya`,
   description:
-    "Browse 44 free online tools built for Kenya — PAYE calculator, M-Pesa fees, KPLC token calculator, KCSE grades, CBC curriculum, matatu routes, number plate decoder and more. All powered by official data.",
+    `Browse ${TOOLS.length} specialized online calculators and directories built for Kenya — 2026 PAYE salary calculator, M-Pesa fees, KRA CRSP car import duty, KPLC token calculator, KCSE grades, KUCCPS clusters, CBC curriculum, and more.`,
   keywords: [
     "Kenya online tools",
-    "free tools Kenya",
-    "PAYE calculator",
+    "free calculators Kenya",
+    "PAYE calculator Kenya 2026",
     "M-Pesa fee calculator",
     "KPLC token calculator",
+    "KRA car import duty calculator",
     "KCSE grade calculator",
     "CBC curriculum explorer",
-    "Kenya public holidays",
+    "SACCO loan calculator Kenya",
+    "Mjengo construction calculator Kenya",
   ],
   alternates: {
     canonical: "https://kenyahub.me/tools/",
+    languages: {
+      "en-KE": "https://kenyahub.me/tools/",
+      en: "https://kenyahub.me/tools/",
+    },
   },
   openGraph: {
-    title: "All Tools — Free Online Tools for Kenya | KenyaHub",
+    title: `All Tools — ${TOOLS.length} Free Online Calculators for Kenya | KenyaHub`,
     description:
-      "44 free tools covering finance, education, government services, transport, health, agriculture and more — all built for Kenya with official data.",
+      `${TOOLS.length} specialized Kenyan tools covering finance, tax, education, government services, transport, health, agriculture, and languages — all powered by official data.`,
+    type: "website",
+    locale: "en_KE",
+    siteName: "KenyaHub",
     url: "https://kenyahub.me/tools/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: `KenyaHub — ${TOOLS.length} Free Online Calculators & Public Data Tools for Kenya`,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "All Tools — Free Online Tools for Kenya | KenyaHub",
+    card: "summary_large_image",
+    title: `All Tools — ${TOOLS.length} Free Online Calculators for Kenya | KenyaHub`,
     description:
-      "44 free tools covering finance, education, government services, transport, health, agriculture and more.",
+      `${TOOLS.length} specialized Kenyan tools covering finance, education, government services, transport, health, and agriculture.`,
+    images: ["/og-image.png"],
   },
 };
 

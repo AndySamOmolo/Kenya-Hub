@@ -43,12 +43,12 @@ export const BANTU_BELIEFS_EDITORIAL_BRIEF = {
     },
     {
       title: 'Thahu, Makwa, purification, and restoration',
-      angle: 'Explain the source distinction between ritual defilement (thahu / makwa in Routledge 1910, Hobley 1910/1922, Lindblom 1920), deliberate cursing (kĩrumi), and social restoration (kũtahĩkia / kũhoria thahu).',
+      angle: 'Explain the source distinction between ritual defilement (thahu / makwa in Routledge 1910, Hobley 1910/1922, Lindblom 1920), deliberate formal sanction (kĩrumi), and social restoration (kũtahĩkia / kũhoria thahu).',
       relatedLanguages: ['kikuyu', 'kamba'],
       caution: 'Do not present historical ritual descriptions as medical advice, moral judgment, or a universal contemporary belief.',
     },
     {
-      title: 'Circumcision cycles, age-sets (Riika, Ipinda, Marika), and generational transfer',
+      title: 'initiation cycles, age-sets (Riika, Ipinda, Marika), and generational transfer',
       angle: 'Compare the Kikuyu Itwika & 10 generation ages (Routledge 1910), Nandi/Pokot Ipinda & Saket-ap-eito (Hollis 1909, Beech 1911), Giriama 13 Marika (Taylor 1891), and Borana Gadaa (Tutschek 1844).',
       relatedLanguages: ['kikuyu', 'kalenjin', 'pokot', 'mijikenda', 'borana'],
       caution: 'Invite community review and distinguish historical description from present-day rites and identities.',
@@ -75,7 +75,7 @@ export const BANTU_BELIEFS_EDITORIAL_BRIEF = {
   editorialRules: [
     'Attribute historical claims to the specific primary author and publication year (1842–1929).',
     'Distinguish documented observation from colonial-era interpretation and present-day community knowledge.',
-    'Avoid sensationalising the word “magic” or “witchcraft” in historical titles.',
+    'Avoid sensationalising the word “customary practice” or “customary sanction” in historical titles.',
     'Invite community review for sacred, ceremonial, or living cultural material.',
   ],
 } as const;

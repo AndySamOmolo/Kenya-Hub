@@ -196,6 +196,15 @@ export default function ToolsHubPage() {
     });
   }, [selectedCategory, searchQuery, sortBy, visitCounts, mounted]);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://kenyahub.me/tools/" },
+    ],
+  };
+
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -214,6 +223,10 @@ export default function ToolsHubPage() {
       <Suspense fallback={null}>
         <ToolsUrlSync onSync={handleUrlSync} />
       </Suspense>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}

@@ -21,6 +21,20 @@ interface RouteDetailViewProps {
   routeSlug: string;
 }
 
+function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  // Road factor multiplier (~1.25x straight-line distance for urban road geometry)
+  return R * c * 1.25;
+}
+
 export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailViewProps) {
   const townInfo = matatuData.towns.find((t) => t.slug === townSlug);
   const townRoutes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
@@ -42,22 +56,42 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
   const intermediateStages = route.stages.slice(1, -1).map((s) => s.name);
   const stageNamesList = route.stages.map((s) => s.name).join(" → ");
 
+  // Compute corridor road distance and stage-by-stage cumulative distance
+  let cumulativeKm = 0;
+  const stageDistances = route.stages.map((stage, idx) => {
+    if (idx === 0) return { ...stage, legKm: 0, cumulativeKm: 0 };
+    const prev = route.stages[idx - 1];
+    const legKm = Math.max(0.4, haversineKm(prev.lat, prev.lng, stage.lat, stage.lng));
+    cumulativeKm += legKm;
+    return {
+      ...stage,
+      legKm: Math.round(legKm * 10) / 10,
+      cumulativeKm: Math.round(cumulativeKm * 10) / 10,
+    };
+  });
+  const totalCorridorKm = Math.max(2.5, Math.round(cumulativeKm * 10) / 10);
+  const estOffPeakMins = Math.max(12, Math.round((totalCorridorKm / 26) * 60 + route.stages.length * 1.5));
+  const estPeakMins = Math.max(22, Math.round((totalCorridorKm / 14) * 60 + route.stages.length * 2.5));
+  const midFare = Math.round((route.fareMin + route.fareMax) / 2 / 10) * 10;
+  const offPeakPerKm = Math.round((route.fareMin / totalCorridorKm) * 10) / 10;
+  const peakPerKm = Math.round((route.fareMax / totalCorridorKm) * 10) / 10;
+
   const routeFaq = [
     {
       question: `Where do I board Route ${route.routeNumber} (${route.name}) in ${townInfo.name}?`,
-      answer: `In ${townInfo.name}, Route ${route.routeNumber} departs from ${route.terminusA} and terminates at ${route.terminusB}. Commuters can also board or alight at designated intermediate stages including ${intermediateStages.length > 0 ? intermediateStages.join(", ") : route.stages.map((s) => s.name).join(", ")}.`,
+      answer: `In ${townInfo.name}, Route ${route.routeNumber} departs from ${route.terminusA} and terminates at ${route.terminusB}, covering an estimated road corridor of ${totalCorridorKm} km. Commuters can also board or alight at designated intermediate stages including ${intermediateStages.length > 0 ? intermediateStages.join(", ") : route.stages.map((s) => s.name).join(", ")}.`,
     },
     {
       question: `How much is the matatu fare for Route ${route.routeNumber} from ${route.terminusA} to ${route.terminusB}?`,
-      answer: `Typical fares on Route ${route.routeNumber} range from KES ${route.fareMin} during off-peak hours (mid-morning and early afternoon) to KES ${route.fareMax} during morning (6:00 AM – 9:00 AM) and evening (4:30 PM – 8:00 PM) rush hours or heavy rain. Most operators accept both M-Pesa (Pochi la Biashara / Till Number) and cash.`,
+      answer: `Typical fares on Route ${route.routeNumber} range from KES ${route.fareMin} (approx. KES ${offPeakPerKm}/km) during off-peak hours (9:30 AM – 3:30 PM) to KES ${route.fareMax} (approx. KES ${peakPerKm}/km) during morning (6:00 AM – 9:00 AM) and evening (4:30 PM – 8:00 PM) rush hours or heavy rain. A 22-day monthly work commute (44 trips) costs between KES ${(route.fareMin * 44).toLocaleString()} and KES ${(route.fareMax * 44).toLocaleString()}.`,
     },
     {
       question: `Which SACCO operates Matatu Route ${route.routeNumber} in ${townInfo.name}?`,
       answer: `Route ${route.routeNumber} (${route.name}) is operated by ${route.saccoName}, a public service vehicle (PSV) operator registered under the National Transport and Safety Authority (NTSA) regulations, operating daily during ${route.operatingHours}.`,
     },
     {
-      question: `What are all the stage stopovers along ${townInfo.name} Route ${route.routeNumber}?`,
-      answer: `Route ${route.routeNumber} covers ${route.stages.length} principal stages in sequential order: ${stageNamesList}.`,
+      question: `How long does the journey take on ${townInfo.name} Route ${route.routeNumber}?`,
+      answer: `Across its ${totalCorridorKm} km corridor and ${route.stages.length} principal stages (${stageNamesList}), a one-way trip takes approximately ${estOffPeakMins} minutes during off-peak traffic and ${estPeakMins} minutes during peak rush-hour congestion.`,
     },
   ];
 
@@ -101,13 +135,16 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                 <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified Route
               </span>
             )}
+            <span className="text-xs bg-bg-elevated border border-border text-text-secondary px-2.5 py-0.5 rounded font-medium">
+              ~{totalCorridorKm} km · {estOffPeakMins}–{estPeakMins} mins
+            </span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-text-primary font-[family-name:var(--font-outfit)] mb-1">
             {route.name} ({townInfo.name} Route {route.routeNumber})
           </h1>
           <p className="text-xs sm:text-sm text-text-secondary max-w-2xl leading-relaxed mt-1">
             Commuter guide for {townInfo.name} Matatu Route {route.routeNumber} connecting{" "}
-            <strong>{route.terminusA}</strong> to <strong>{route.terminusB}</strong> via{" "}
+            <strong>{route.terminusA}</strong> to <strong>{route.terminusB}</strong> (~{totalCorridorKm} km) via{" "}
             {intermediateStages.length > 0 ? intermediateStages.join(", ") : `${route.stages.length} verified stages`}.
             Operated by <strong className="text-text-primary">{route.saccoName}</strong>.
           </p>
@@ -115,7 +152,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
 
         {/* Fare badge */}
         <div className="bg-bg-elevated border border-border rounded-xl p-4 text-center md:text-right shrink-0">
-          <p className="text-[0.65rem] uppercase tracking-wider text-text-muted mb-0.5">Typical Fare</p>
+          <p className="text-[0.65rem] uppercase tracking-wider text-text-muted mb-0.5">Typical One-Way Fare</p>
           <p className="text-2xl font-black text-gold">KES {route.fareMin} – {route.fareMax}</p>
           <p className="text-[0.65rem] text-text-muted mt-0.5 flex items-center justify-center md:justify-end gap-1">
             <DynamicIcon emoji="⏰" className="w-3 h-3" /> {route.operatingHours}
@@ -132,7 +169,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] flex items-center gap-2">
                 <DynamicIcon emoji="🗺️" className="w-4 h-4 text-gold" /> Interactive Route Map
               </h2>
-              <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers</span>
+              <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers · ~{totalCorridorKm} km</span>
             </div>
             <MatatuMap stages={route.stages} routeName={route.name} routeNumber={route.routeNumber} />
           </div>
@@ -152,10 +189,58 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               <p className="text-xs font-bold text-gold mt-1 break-words">{route.saccoName}</p>
             </div>
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-              <p className="text-[0.65rem] text-text-muted">Operating Hours</p>
-              <p className="text-xs font-bold text-text-primary mt-1 break-words">{route.operatingHours}</p>
+              <p className="text-[0.65rem] text-text-muted">Corridor Distance</p>
+              <p className="text-xs font-bold text-text-primary mt-1 break-words">~{totalCorridorKm} km ({estOffPeakMins}–{estPeakMins}m)</p>
             </div>
           </div>
+
+          {/* Commuter Budget & Fare Calculator Table */}
+          <section className="bg-bg-card border border-border rounded-2xl overflow-hidden">
+            <div className="px-5 py-3.5 border-b border-border bg-bg-elevated flex items-center justify-between flex-wrap gap-2">
+              <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+                <DynamicIcon emoji="🧮" className="w-4 h-4 text-gold" /> Commuter Fare &amp; Monthly Budget Estimator (Route {route.routeNumber})
+              </h2>
+              <span className="text-[0.65rem] text-text-muted">
+                KES {offPeakPerKm}–{peakPerKm} per km
+              </span>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="data-table text-xs">
+                <thead>
+                  <tr>
+                    <th>Commute Frequency</th>
+                    <th>Trips</th>
+                    <th className="text-right">Off-Peak (KES {route.fareMin})</th>
+                    <th className="text-right">Standard (KES {midFare})</th>
+                    <th className="text-right">Peak Rush (KES {route.fareMax})</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { label: "Single One-Way Trip", trips: 1 },
+                    { label: "Daily Return Commute", trips: 2 },
+                    { label: "5-Day Work Week (Return)", trips: 10 },
+                    { label: "22-Day Monthly Work Commute", trips: 44 },
+                    { label: "250-Day Annual Work Commute", trips: 500 },
+                  ].map((row) => (
+                    <tr key={row.label}>
+                      <td className="font-medium text-text-primary">{row.label}</td>
+                      <td className="text-text-muted">{row.trips} {row.trips === 1 ? "trip" : "trips"}</td>
+                      <td className="text-right text-kenya-green-light font-semibold">
+                        KES {(row.trips * route.fareMin).toLocaleString()}
+                      </td>
+                      <td className="text-right text-text-secondary font-medium">
+                        KES {(row.trips * midFare).toLocaleString()}
+                      </td>
+                      <td className="text-right text-gold font-bold">
+                        KES {(row.trips * route.fareMax).toLocaleString()}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
           {/* Detailed Commuter Guide & Corridor Breakdown */}
           <section className="bg-bg-card border border-border rounded-2xl p-6 space-y-4">
@@ -164,7 +249,8 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
             </h2>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
               <strong>Route {route.routeNumber} ({route.name})</strong> is a key public service vehicle (PSV) transit corridor in{" "}
-              <strong>{townInfo.name}</strong> ({(townInfo as { county?: string }).county || townInfo.name} County). Matatus and buses operated by{" "}
+              <strong>{townInfo.name}</strong> ({(townInfo as { county?: string }).county || townInfo.name} County), spanning approximately{" "}
+              <strong>{totalCorridorKm} km</strong> with an average one-way travel time of <strong>{estOffPeakMins} minutes</strong> during mid-day traffic and up to <strong>{estPeakMins} minutes</strong> during peak hours. Matatus and buses operated by{" "}
               <strong>{route.saccoName}</strong> board passengers at <strong>{route.terminusA}</strong> and travel through{" "}
               {route.stages.length} designated stages ({stageNamesList}) before terminating at{" "}
               <strong>{route.terminusB}</strong>.
@@ -173,13 +259,13 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-4 space-y-1.5">
                 <h3 className="text-xs font-bold text-gold">Off-Peak vs. Peak Fare Guide</h3>
                 <p className="text-xs text-text-secondary leading-relaxed">
-                  Off-peak fares (9:30 AM – 4:00 PM) average <strong>KES {route.fareMin}</strong>. During morning and evening peak windows or wet weather, fares typically rise up to <strong>KES {route.fareMax}</strong>. Confirm the current fare with the conductor before boarding.
+                  Off-peak fares (9:30 AM – 4:00 PM) average <strong>KES {route.fareMin}</strong> (~KES {offPeakPerKm}/km). During morning and evening peak windows or wet weather, fares typically rise up to <strong>KES {route.fareMax}</strong> (~KES {peakPerKm}/km). Confirm the current fare with the conductor before boarding.
                 </p>
               </div>
               <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-4 space-y-1.5">
                 <h3 className="text-xs font-bold text-kenya-green-light">NTSA Safety &amp; Payment Tips</h3>
                 <p className="text-xs text-text-secondary leading-relaxed">
-                  Ensure the vehicle displays a valid NTSA inspection sticker, yellow PSV continuous band, and{" "}
+                  Ensure the vehicle displays a valid NTSA inspection sticker, yellow PSV continuous band, functional seatbelts, and{" "}
                   <strong>{route.saccoName}</strong> branding. Most crews accept M-Pesa Till or Pochi la Biashara alongside cash.
                 </p>
               </div>
@@ -195,6 +281,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               {routeFaq.map((item, idx) => (
                 <details
                   key={idx}
+                  open={idx < 3}
                   className="group bg-bg-card border border-border rounded-xl overflow-hidden"
                 >
                   <summary className="flex items-center justify-between px-4 py-3.5 cursor-pointer text-xs sm:text-sm font-medium text-text-primary hover:text-gold transition-colors list-none">
@@ -214,13 +301,13 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         <div className="space-y-6">
           <div className="bg-bg-card border border-border rounded-2xl p-6">
             <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] mb-4 flex items-center gap-2">
-              <DynamicIcon emoji="🚏" className="w-4 h-4 text-gold" /> Stage Stopovers ({route.stages.length})
+              <DynamicIcon emoji="🚏" className="w-4 h-4 text-gold" /> Stage Stopovers ({stageDistances.length})
             </h2>
 
             <div className="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-kenya-green before:via-gold before:to-kenya-red">
-              {route.stages.map((stage, idx) => {
+              {stageDistances.map((stage, idx) => {
                 const isFirst = idx === 0;
-                const isLast = idx === route.stages.length - 1;
+                const isLast = idx === stageDistances.length - 1;
 
                 return (
                   <div key={`${stage.order}-${stage.name}`} className="relative flex items-start gap-3">
@@ -238,7 +325,11 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                         {stage.name}
                       </p>
                       <p className="text-[0.65rem] text-text-muted mt-0.5">
-                        {isFirst ? "Departure Terminus" : isLast ? "Final Destination" : `Stage ${stage.order} · GPS ${stage.lat.toFixed(3)}, ${stage.lng.toFixed(3)}`}
+                        {isFirst
+                          ? `Departure Terminus · 0.0 km`
+                          : isLast
+                          ? `Final Destination · +${stage.legKm} km (${stage.cumulativeKm} km total)`
+                          : `Stage ${stage.order} · +${stage.legKm} km (${stage.cumulativeKm} km from start)`}
                       </p>
                     </div>
                   </div>

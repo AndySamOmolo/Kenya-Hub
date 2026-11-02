@@ -177,6 +177,15 @@ export default function CountyIndexPage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kenyahub.me/" },
+      { "@type": "ListItem", position: 2, name: "47 Counties Hub", item: "https://kenyahub.me/county/" },
+    ],
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -191,6 +200,10 @@ export default function CountyIndexPage() {
     <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-12">
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <script
@@ -199,7 +212,7 @@ export default function CountyIndexPage() {
       />
 
       {/* Breadcrumbs */}
-      <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
         <Link href="/" className="hover:text-gold transition-colors">Home</Link>
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

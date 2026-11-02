@@ -5,26 +5,75 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kenya Guides, Tax & Cultural Heritage Blog",
-  description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
+  title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog",
+  description:
+    "In-depth guides and statutory analyses on Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, Mjengo construction costs, SHA healthcare, CBC education, and cultural heritage.",
+  keywords: [
+    "Kenya tax and finance guides",
+    "PAYE tax guide Kenya 2026",
+    "M-Pesa tariff guide 2026",
+    "KRA car import duty CRSP guide",
+    "cost of building a house in Kenya 2026",
+    "SACCO loans and dividends Kenya",
+    "SHA SHIF health insurance guide Kenya",
+    "Kenyan languages and proverbs blog",
+  ],
   alternates: {
     canonical: "https://kenyahub.me/blog/",
+    languages: {
+      "en-KE": "https://kenyahub.me/blog/",
+      en: "https://kenyahub.me/blog/",
+    },
   },
   openGraph: {
-    title: "Kenya Guides, Tax & Cultural Heritage Blog",
-    description: "Articles, guides, and updates on Kenyan tools, government services, education, and culture.",
+    title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",
+    description:
+      "In-depth guides and statutory analyses on Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, CBC education, and cultural heritage.",
     url: "https://kenyahub.me/blog/",
     siteName: "KenyaHub",
+    locale: "en_KE",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "KenyaHub Blog — Kenyan Tax, Finance & Cultural Heritage Guides",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",
+    description:
+      "In-depth guides and statutory analyses on Kenyan PAYE taxes, M-Pesa tariffs, KRA car imports, SACCO loans, and cultural heritage.",
+    images: ["/og-image.png"],
   },
 };
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
+const EXCLUDED_SLUGS = new Set([
+  "greatest-kenyan-hiphop-albums-of-all-time",
+  "traditional-bantu-beliefs-and-magic-in-kenya",
+  "thahu-purification-and-restoration-kikuyu-kamba",
+  "circumcision-age-grades-community-memory-kikuyu-kamba",
+  "death-burial-ancestral-spirits-ngoma-aimu-kikuyu-kamba",
+  "mundu-mugo-divination-mbugu-healing-kikuyu-kamba",
+]);
+
+function isHighQualityAppwritePost(doc: any): boolean {
+  if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
+  const content = String(doc.content || "");
+  if (content.length < 2500) return false;
+  if (content.toLowerCase().includes("<iframe")) return false;
+  if ((doc.readTime || 0) < 4) return false;
+  return true;
+}
 
 export default async function BlogPage() {
   let appwritePosts: any[] = [];
-  
+
   try {
     const client = new Client()
       .setEndpoint("https://fra.cloud.appwrite.io/v1")
@@ -38,42 +87,37 @@ export default async function BlogPage() {
       [Query.limit(100), Query.orderDesc("publishedAt")]
     );
 
-    const EXCLUDED_SLUGS = new Set(["greatest-kenyan-hiphop-albums-of-all-time"]);
     appwritePosts = response.documents
-      .filter((doc: any) => !EXCLUDED_SLUGS.has(doc.slug) && (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
+      .filter(isHighQualityAppwritePost)
       .map((doc: any) => ({
-      slug: doc.slug,
-      title: doc.title,
-      excerpt: doc.excerpt,
-      author: doc.author,
-      publishedAt: doc.publishedAt,
-      readTime: doc.readTime,
-      tags: doc.tags || [],
-    }));
+        slug: doc.slug,
+        title: doc.title,
+        excerpt: doc.excerpt,
+        author: doc.author,
+        publishedAt: doc.publishedAt,
+        readTime: doc.readTime,
+        tags: doc.tags || [],
+      }));
   } catch (error) {
     console.error("Failed to fetch Appwrite blog posts:", error);
   }
 
-  // Merge static posts and Appwrite posts
-  // We use Map to deduplicate by slug (preferring Appwrite if there's a conflict)
   const allPostsMap = new Map();
-  
+
   for (const post of STATIC_BLOG_POSTS) {
     allPostsMap.set(post.slug, post);
   }
-  
+
   for (const post of appwritePosts) {
-    allPostsMap.set(post.slug, post);
+    if (!allPostsMap.has(post.slug)) {
+      allPostsMap.set(post.slug, post);
+    }
   }
 
   const posts = Array.from(allPostsMap.values()).sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
-  // Collect all unique tags
-  const allTags = Array.from(new Set(posts.flatMap((p) => p.tags || [])));
-
-  // Structured data for BreadcrumbList
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -93,14 +137,31 @@ export default async function BlogPage() {
     ],
   };
 
+  const blogItemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "KenyaHub Statutory Guides, Tax & Cultural Heritage Articles",
+    numberOfItems: posts.length,
+    itemListElement: posts.map((post, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      name: post.title,
+      url: `https://kenyahub.me/blog/${post.slug}/`,
+    })),
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogItemListSchema) }}
+      />
       {/* Breadcrumbs */}
-      <nav className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
@@ -112,14 +173,12 @@ export default async function BlogPage() {
 
       <header className="mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2 flex items-center gap-2">
-          <DynamicIcon emoji="📝" className="w-8 h-8 text-gold" /> Blog
+          <DynamicIcon emoji="📝" className="w-8 h-8 text-gold" /> Kenya Guides, Tax &amp; Heritage Blog
         </h1>
-        <p className="text-text-muted">
-          Articles and guides on Kenyan topics — tools, government services, education, and more.
+        <p className="text-text-secondary text-sm sm:text-base leading-relaxed">
+          In-depth editorial guides, worked statutory calculations, and linguistic research covering Kenyan personal finance, KRA taxes, education, housing, healthcare, and cultural heritage.
         </p>
       </header>
-
-      {/* Tag overview removed */}
 
       {/* Posts */}
       <div className="space-y-6">

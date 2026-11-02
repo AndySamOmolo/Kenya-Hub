@@ -5,6 +5,23 @@ import { getStaticBlogPost, getStaticBlogSlugs, type BlogSource } from "@/data/b
 
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
+const EXCLUDED_SLUGS = new Set([
+  "greatest-kenyan-hiphop-albums-of-all-time",
+  "traditional-bantu-beliefs-and-magic-in-kenya",
+  "thahu-purification-and-restoration-kikuyu-kamba",
+  "circumcision-age-grades-community-memory-kikuyu-kamba",
+  "death-burial-ancestral-spirits-ngoma-aimu-kikuyu-kamba",
+  "mundu-mugo-divination-mbugu-healing-kikuyu-kamba",
+]);
+
+function isHighQualityAppwritePost(doc: any): boolean {
+  if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
+  const content = String(doc.content || "");
+  if (content.length < 2500) return false;
+  if (content.toLowerCase().includes("<iframe")) return false;
+  if ((doc.readTime || 0) < 4) return false;
+  return true;
+}
 
 interface BlogPost {
   $id: string;
@@ -21,7 +38,6 @@ interface BlogPost {
   sources?: BlogSource[];
 }
 
-// Generate static params for all blogs at build time
 export async function generateStaticParams() {
   const staticSlugs = getStaticBlogSlugs().map((slug) => ({ slug }));
 
@@ -39,9 +55,8 @@ export async function generateStaticParams() {
       [Query.limit(100)]
     );
 
-    const EXCLUDED_SLUGS = new Set(["greatest-kenyan-hiphop-albums-of-all-time"]);
     appwriteSlugs = response.documents
-      .filter((doc: any) => !EXCLUDED_SLUGS.has(doc.slug) && (doc.readTime || 0) > 1 && (!doc.content || doc.content.length >= 800))
+      .filter(isHighQualityAppwritePost)
       .map((doc) => ({
         slug: doc.slug,
       }));
@@ -57,56 +72,114 @@ export async function generateStaticParams() {
   return Array.from(allSlugs.values());
 }
 
-// Dynamically generate metadata for each post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
   const staticPost = getStaticBlogPost(slug);
   if (staticPost) {
+    const canonicalUrl = `https://kenyahub.me/blog/${staticPost.slug}/`;
     return {
       title: staticPost.title,
       description: staticPost.excerpt,
-      alternates: { canonical: `https://kenyahub.me/blog/${staticPost.slug}/` },
+      keywords: staticPost.tags,
+      authors: [{ name: staticPost.author, url: "https://kenyahub.me/about/" }],
+      alternates: {
+        canonical: canonicalUrl,
+        languages: {
+          "en-KE": canonicalUrl,
+          en: canonicalUrl,
+        },
+      },
       openGraph: {
-        title: staticPost.title,
+        title: `${staticPost.title} | KenyaHub`,
         description: staticPost.excerpt,
         type: "article",
+        locale: "en_KE",
+        siteName: "KenyaHub",
+        url: canonicalUrl,
         publishedTime: staticPost.publishedAt,
+        modifiedTime: staticPost.updatedAt || staticPost.publishedAt,
         authors: [staticPost.author],
+        tags: staticPost.tags,
+        images: [
+          {
+            url: "/og-image.png",
+            width: 1200,
+            height: 630,
+            alt: staticPost.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${staticPost.title} | KenyaHub`,
+        description: staticPost.excerpt,
+        images: ["/og-image.png"],
       },
     };
   }
 
-  try {
-    const client = new Client()
-      .setEndpoint("https://fra.cloud.appwrite.io/v1")
-      .setProject("6a3290500003e21b7fe1");
+  if (!EXCLUDED_SLUGS.has(slug)) {
+    try {
+      const client = new Client()
+        .setEndpoint("https://fra.cloud.appwrite.io/v1")
+        .setProject("6a3290500003e21b7fe1");
 
-    const databases = new Databases(client);
+      const databases = new Databases(client);
 
-    const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
-      Query.equal("slug", slug),
-      Query.limit(1),
-    ]);
+      const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
+        Query.equal("slug", slug),
+        Query.limit(1),
+      ]);
 
-    if (response.documents.length > 0) {
-      const post = response.documents[0];
-      return {
-        title: post.title,
-        description: post.excerpt,
-        alternates: { canonical: `https://kenyahub.me/blog/${post.slug}/` },
-        openGraph: {
+      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
+        const post = response.documents[0];
+        const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
+        return {
           title: post.title,
           description: post.excerpt,
-          type: "article",
-          publishedTime: post.publishedAt,
-          authors: [post.author],
-          images: post.coverImage ? [post.coverImage] : [],
-        },
-      };
+          keywords: post.tags || [],
+          authors: [{ name: post.author, url: "https://kenyahub.me/about/" }],
+          alternates: {
+            canonical: canonicalUrl,
+            languages: {
+              "en-KE": canonicalUrl,
+              en: canonicalUrl,
+            },
+          },
+          openGraph: {
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            type: "article",
+            locale: "en_KE",
+            siteName: "KenyaHub",
+            url: canonicalUrl,
+            publishedTime: post.publishedAt,
+            modifiedTime: post.updatedAt || post.publishedAt,
+            authors: [post.author],
+            tags: post.tags || [],
+            images: post.coverImage
+              ? [post.coverImage]
+              : [
+                  {
+                    url: "/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                  },
+                ],
+          },
+          twitter: {
+            card: "summary_large_image",
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            images: post.coverImage ? [post.coverImage] : ["/og-image.png"],
+          },
+        };
+      }
+    } catch {
+      // Fallback metadata below
     }
-  } catch {
-    // Fallback metadata below
   }
 
   return {
@@ -115,7 +188,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// Server Component
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   let post: BlogPost | null = null;
@@ -137,7 +209,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     };
   }
 
-  if (!post) {
+  if (!post && !EXCLUDED_SLUGS.has(slug)) {
     try {
       const client = new Client()
         .setEndpoint("https://fra.cloud.appwrite.io/v1")
@@ -150,7 +222,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         Query.limit(1),
       ]);
 
-      if (response.documents.length > 0) {
+      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
         post = JSON.parse(JSON.stringify(response.documents[0]));
       }
     } catch {
@@ -162,22 +234,66 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
+  const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
+  const wordCount = post.content ? post.content.trim().split(/\s+/).length : 0;
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    author: { "@type": "Person", name: post.author },
+    inLanguage: "en-KE",
+    wordCount,
+    timeRequired: `PT${Math.max(1, post.readTime || 5)}M`,
+    author: {
+      "@type": "Organization",
+      name: post.author || "KenyaHub Editorial Team",
+      url: "https://kenyahub.me/about/",
+    },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     publisher: {
       "@type": "Organization",
       name: "KenyaHub",
       url: "https://kenyahub.me",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://kenyahub.me/og-image.png",
+        width: 1200,
+        height: 630,
+      },
     },
-    mainEntityOfPage: `https://kenyahub.me/blog/${post.slug}/`,
-    ...(post.coverImage && { image: post.coverImage }),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    image: post.coverImage || "https://kenyahub.me/og-image.png",
     keywords: post.tags?.join(", "),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://kenyahub.me/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://kenyahub.me/blog/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: canonicalUrl,
+      },
+    ],
   };
 
   return (
@@ -185,6 +301,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <BlogPostContent post={post} />
     </>

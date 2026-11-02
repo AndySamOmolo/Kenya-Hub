@@ -30,6 +30,10 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
   const [constSort, setConstSort] = useState<"order" | "alpha">("order");
   const codeStr = county.code.toString().padStart(3, "0");
   const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
+  const popPerConstituency =
+    county.constituencies.length > 0
+      ? Math.round(county.population / county.constituencies.length)
+      : county.population;
 
   // 1. County Budget (FY 2025/26)
   const budget = useMemo(
@@ -39,6 +43,16 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       ),
     [county]
   );
+
+  const perCapitaEquitableShare = useMemo(() => {
+    if (!budget || !county.population) return 0;
+    return Math.round((budget.allocation * 1_000_000) / county.population);
+  }, [budget, county.population]);
+
+  const osrSharePct = useMemo(() => {
+    if (!budget || !budget.totalRevenue) return 0;
+    return Math.round((budget.ownSourceRevenue / budget.totalRevenue) * 1000) / 10;
+  }, [budget]);
 
   // 2. County Rainfall & Climate
   const rainfall = useMemo(
@@ -149,13 +163,13 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
     },
     {
       question: `How many constituencies are in ${county.name} County?`,
-      answer: `${county.name} County has ${county.constituencies.length} parliamentary constituencies: ${county.constituencies.join(", ")}.`,
+      answer: `${county.name} County has ${county.constituencies.length} parliamentary constituencies (${county.constituencies.join(", ")}), representing an average of ${popPerConstituency.toLocaleString()} residents per Member of Parliament (MP) under the 2019 KNBS Census.`,
     },
     ...(budget
       ? [
           {
             question: `What is ${county.name} County's budget allocation for FY ${(budgetsData as any).fiscalYear || "2025/26"}?`,
-            answer: `In FY ${(budgetsData as any).fiscalYear || "2025/26"}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()} Million and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()} Million (Total Revenue: KES ${budget.totalRevenue.toLocaleString()} Million), with a budget absorption rate of ${budget.absorptionRate}%.`,
+            answer: `In FY ${(budgetsData as any).fiscalYear || "2025/26"}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()} Million (approximately KES ${perCapitaEquitableShare.toLocaleString()} per resident) and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()} Million (${osrSharePct}% of total revenue of KES ${budget.totalRevenue.toLocaleString()} Million), with a Controller of Budget absorption rate of ${budget.absorptionRate}%.`,
           },
         ]
       : []),
@@ -163,11 +177,28 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       ? [
           {
             question: `What is the climate and annual rainfall in ${county.name} County?`,
-            answer: `${county.name} County is classified under the ${rainfall.climateZone} zone and receives an average annual rainfall of ${rainfall.annualRainfall} mm. Long rains typically occur in ${rainfall.longRains}, short rains in ${rainfall.shortRains}, and the driest months are ${rainfall.drySeason}.`,
+            answer: `${county.name} County is classified under the ${rainfall.climateZone} agro-climatic zone and receives an average annual rainfall of ${rainfall.annualRainfall} mm. Long rains typically occur in ${rainfall.longRains}, short rains in ${rainfall.shortRains}, and the driest months are ${rainfall.drySeason}.`,
           },
         ]
       : []),
   ];
+
+  const adminAreaSchema = {
+    "@context": "https://schema.org",
+    "@type": "AdministrativeArea",
+    name: `${county.name} County`,
+    identifier: codeStr,
+    url: `https://kenyahub.me/county/${county.slug}/`,
+    description: `${county.name} County (#${codeStr}) in Kenya. Capital: ${county.capital}. Population: ${county.population.toLocaleString()} (KNBS 2019 Census). Area: ${county.area.toLocaleString()} km².`,
+    containedInPlace: {
+      "@type": "Country",
+      name: "Kenya",
+    },
+    containsPlace: county.constituencies.map((cName) => ({
+      "@type": "AdministrativeArea",
+      name: `${cName} Constituency`,
+    })),
+  };
 
   const govOrgSchema = {
     "@context": "https://schema.org",
@@ -205,12 +236,13 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
 
   return (
     <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10 space-y-5 sm:space-y-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(adminAreaSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(govOrgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Breadcrumbs */}
-      <nav className="flex items-center gap-1.5 text-xs text-text-muted">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted">
         <Link href="/" className="hover:text-gold transition-colors">Home</Link>
         <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -286,6 +318,26 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
         </div>
       </header>
 
+      {/* Editorial County Devolution & Socio-Economic Profile */}
+      <section className="bg-bg-card border border-border rounded-2xl p-5 sm:p-7 space-y-4">
+        <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+          <DynamicIcon emoji="📘" className="w-5 h-5 text-gold" /> Devolution, Fiscal &amp; Socio-Economic Overview: {county.name} County (#{codeStr})
+        </h2>
+        <div className="space-y-3 text-xs sm:text-sm text-text-secondary leading-relaxed">
+          <p>
+            <strong>{county.name} County</strong> (County Code <strong>#{codeStr}</strong> under the First Schedule of the Constitution of Kenya, 2010) is governed from its administrative headquarters in <strong>{county.capital}</strong>. According to the Kenya National Bureau of Statistics (KNBS) Population and Housing Census, the county has a resident population of <strong>{county.population.toLocaleString()}</strong> across a land area of <strong>{county.area.toLocaleString()} km²</strong>—resulting in a population settlement density of <strong>{density.toLocaleString()} residents per km²</strong> ({density > 400 ? "high-density urban/peri-urban and intensive agricultural settlement, significantly above Kenya's national average of 82 people/km²" : density >= 82 ? "moderate-density settlement above Kenya's national average of 82 people/km²" : "expansive low-density rangeland and conservation terrain below Kenya's national average of 82 people/km²"}).
+          </p>
+          <p>
+            In the National Assembly and Senate, {county.name} County is represented by <strong>{county.constituencies.length} parliamentary constituencies</strong> ({county.constituencies.join(", ")}), averaging <strong>{popPerConstituency.toLocaleString()} residents per constituency MP</strong>, alongside County Senator <strong>{county.senator}</strong> and Woman Representative <strong>{county.womenRep}</strong>. The County Executive is headed by Governor <strong>{county.governor}</strong> and Deputy Governor <strong>{county.deputyGovernor}</strong>.
+            {budget ? (
+              <>
+                {" "}Under the County Allocation of Revenue Act (CARA) for FY {(budgetsData as any).fiscalYear || "2025/26"}, {county.name} receives <strong>KES {budget.allocation.toLocaleString()} Million</strong> in Equitable Share transfers (equivalent to <strong>KES {perCapitaEquitableShare.toLocaleString()} per resident</strong>) and generates <strong>KES {budget.ownSourceRevenue.toLocaleString()} Million</strong> in local Own-Source Revenue (<strong>{osrSharePct}%</strong> of its total KES {budget.totalRevenue.toLocaleString()}M resource envelope).
+              </>
+            ) : null}
+          </p>
+        </div>
+      </section>
+
       {/* Elected Officials */}
       <section>
         <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 flex items-center gap-2">
@@ -323,7 +375,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             </Link>
           </div>
           <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
               <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
                 <p className="text-[0.65rem] text-text-muted uppercase">Equitable Share</p>
                 <p className="text-base font-bold text-text-primary mt-0.5">
@@ -331,9 +383,15 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                 </p>
               </div>
               <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
-                <p className="text-[0.65rem] text-text-muted uppercase">Own-Source Revenue</p>
+                <p className="text-[0.65rem] text-text-muted uppercase">Per-Capita Share</p>
+                <p className="text-base font-bold text-kenya-green-light mt-0.5">
+                  KES {perCapitaEquitableShare.toLocaleString()}
+                </p>
+              </div>
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
+                <p className="text-[0.65rem] text-text-muted uppercase">Own-Source (OSR)</p>
                 <p className="text-base font-bold text-gold mt-0.5">
-                  KES {budget.ownSourceRevenue.toLocaleString()}M
+                  KES {budget.ownSourceRevenue.toLocaleString()}M ({osrSharePct}%)
                 </p>
               </div>
               <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
@@ -342,7 +400,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
                   KES {budget.totalRevenue.toLocaleString()}M
                 </p>
               </div>
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5 col-span-2 sm:col-span-1">
                 <p className="text-[0.65rem] text-text-muted uppercase">Actual Expenditure</p>
                 <p className="text-base font-bold text-kenya-green-light mt-0.5">
                   KES {budget.expenditure.toLocaleString()}M
@@ -372,8 +430,8 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌧️" className="w-5 h-5 text-sky-light" /> Climate, Rainy Seasons &amp; 12-Month Rainfall ({rainfall.annualRainfall} mm/yr)
             </h2>
-            <Link href="/tools/kenya-rainfall-patterns/" className="text-xs font-semibold text-gold hover:underline">
-              National Rainfall Guide →
+            <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
+              47-County Climate Hub →
             </Link>
           </div>
           <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-5">
@@ -540,8 +598,8 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📮" className="w-5 h-5 text-gold" /> Posta Postal Codes ({countyPostalCodes.length})
             </h2>
-            <Link href="/tools/kenya-postal-codes/" className="text-xs font-semibold text-gold hover:underline">
-              All Postal Codes →
+            <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
+              47 Counties Directory →
             </Link>
           </div>
           {countyPostalCodes.length > 0 ? (
@@ -555,7 +613,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             </div>
           ) : (
             <p className="text-xs text-text-muted">
-              Browse the full Posta Kenya directory for regional post office codes serving {county.capital}.
+              Posta Kenya branch postal codes serving {county.capital} and sub-county centres in {county.name} County.
             </p>
           )}
         </section>
@@ -646,7 +704,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
         </h2>
         <div className="space-y-3">
           {countyFaqs.map((faq, idx) => (
-            <details key={idx} className="group bg-bg-card border border-border rounded-xl overflow-hidden">
+            <details key={idx} open={idx < 3} className="group bg-bg-card border border-border rounded-xl overflow-hidden">
               <summary className="px-5 py-4 cursor-pointer text-sm font-semibold text-text-primary hover:text-gold list-none flex items-center justify-between">
                 <span>{faq.question}</span>
                 <span className="text-text-muted group-open:rotate-180 transition-transform">▾</span>
