@@ -247,7 +247,7 @@ export default function ToolShell({
       )}
 
       {/* ── Tool Content ── */}
-      <div className={hideFooter ? "mb-3 sm:mb-4" : "mb-7 sm:mb-14"}>{children}</div>
+      <div id="tool-interactive-content" className={hideFooter ? "mb-3 sm:mb-4" : "mb-7 sm:mb-14"}>{children}</div>
 
       {!hideFooter && (
         <>

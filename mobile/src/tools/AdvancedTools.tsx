@@ -301,11 +301,7 @@ export function SolarRoiTool() {
 export function WardConstituencyFinderTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme } = useTheme();
   const [selectedSlug, setSelectedSlug] = useState("nairobi");
-  const _mountRef = useRef(false);
-  useEffect(() => {
-    if (!_mountRef.current) { _mountRef.current = true; return; }
-    onScrollToTop?.();
-  }, [selectedSlug, onScrollToTop]);
+
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<"order" | "alpha">("order");
 
@@ -537,11 +533,7 @@ export function WardConstituencyFinderTool({ onScrollToTop }: { onScrollToTop?: 
 export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme } = useTheme();
   const [levelId, setLevelId] = useState(cbcData.levels[0].id);
-  const _mountRef = useRef(false);
-  useEffect(() => {
-    if (!_mountRef.current) { _mountRef.current = true; return; }
-    onScrollToTop?.();
-  }, [levelId, onScrollToTop]);
+
 
   const level: any = useMemo(() => {
     return cbcData.levels.find((l) => l.id === levelId) || cbcData.levels[0];

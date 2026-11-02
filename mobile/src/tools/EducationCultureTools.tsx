@@ -513,7 +513,7 @@ export function KikuyuProverbsTool({ onScrollToTop }: { onScrollToTop?: () => vo
   useEffect(() => {
     if (!_mountRef.current) { _mountRef.current = true; return; }
     onScrollToTop?.();
-  }, [page, selectedCategory, onlyWithEquivalent, sortBy, onScrollToTop]);
+  }, [page, onScrollToTop]);
   const pageSize = 25;
 
   const proverbs = Array.isArray(proverbsData) ? proverbsData : [];
@@ -821,11 +821,7 @@ export function KcseRankingsTool({ onScrollToTop }: { onScrollToTop?: () => void
   const [search, setSearch] = useState("");
   const [selectedCounty, setSelectedCounty] = useState("All");
   const [selectedType, setSelectedType] = useState("All");
-  const _mountRef = useRef(false);
-  useEffect(() => {
-    if (!_mountRef.current) { _mountRef.current = true; return; }
-    onScrollToTop?.();
-  }, [selectedCounty, selectedType, onScrollToTop]);
+
   const [sortBy, setSortBy] = useState<"mean" | "aGrades" | "change">("mean");
 
   const counties = useMemo(() => {

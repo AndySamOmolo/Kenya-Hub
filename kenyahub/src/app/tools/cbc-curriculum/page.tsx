@@ -2,7 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useEffect, useRef } from "react";
-import { scrollToPageTop } from "@/lib/scroll";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -23,7 +23,7 @@ export default function CBCCurriculumPage() {
   const _scrollMountRef = useRef(false);
   useEffect(() => {
     if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
-    scrollToPageTop();
+    scrollToTopIfScrolled();
   }, [selectedLevel]);
   const level = cbcData.levels.find((l) => l.id === selectedLevel)!;
 

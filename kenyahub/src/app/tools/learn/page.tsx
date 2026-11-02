@@ -20,7 +20,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
 import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { TOOLS } from "@/lib/tools-registry";
-import { scrollToPageTop } from "@/lib/scroll";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 
 const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
   loading: () => (
@@ -91,7 +91,7 @@ export default function LearnPage() {
             return (
               <button
                 key={tab.id}
-                onClick={() => { setActiveHubTab(tab.id); scrollToPageTop(); }}
+                onClick={() => { setActiveHubTab(tab.id); scrollToTopIfScrolled(); }}
                 className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"

@@ -240,13 +240,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
   const [searchPage, setSearchPage] = useState(1);
   const didMountRef = useRef(false);
 
-  useEffect(() => {
-    if (!didMountRef.current) {
-      didMountRef.current = true;
-      return;
-    }
-    onScrollToTop?.();
-  }, [viewMode, targetLanguage, sourceLanguage, activeCategory, onScrollToTop]);
+
 
   useEffect(() => {
     setCategoryPage(1);

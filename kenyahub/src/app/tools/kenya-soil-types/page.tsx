@@ -2,7 +2,7 @@
 
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useState, useEffect, useRef } from "react";
-import { scrollToPageTop } from "@/lib/scroll";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import soilData from "@/data/soil-types.json";
@@ -21,7 +21,7 @@ export default function KenyaSoilTypesPage() {
   const _scrollMountRef = useRef(false);
   useEffect(() => {
     if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
-    scrollToPageTop();
+    scrollToTopIfScrolled();
   }, [selectedSoil]);
 
   return (

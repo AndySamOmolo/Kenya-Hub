@@ -159,9 +159,6 @@ export default function MatatuScreen() {
   const [selectedTown, setSelectedTown] = useState<string>("all");
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
   const scrollRef = useRef<ScrollView>(null);
-  useEffect(() => {
-    scrollRef.current?.scrollTo({ y: 0, animated: false });
-  }, [selectedTown, saccoFilter]);
   const [sortBy, setSortBy] = useState<"route" | "stages" | "name">("route");
 
   const towns = (matatuData as any).towns || [];

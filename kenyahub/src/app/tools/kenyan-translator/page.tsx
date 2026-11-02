@@ -22,7 +22,7 @@ import {
 } from "@/data/language-sources";
 import langData from "@/data/kenya-languages.json";
 import { addContribution } from "@/lib/contributions";
-import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
+import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
 
@@ -891,7 +891,7 @@ export default function KenyanTranslatorPage() {
   useEffect(() => { getRandomWord(); }, [getRandomWord]);
 
   useEffect(() => {
-    scrollToPageTop();
+    scrollToTopIfScrolled();
   }, [viewMode]);
 
   const isPivotMode = sourceLanguage !== "english" && targetLanguage !== "english";
@@ -933,7 +933,7 @@ export default function KenyanTranslatorPage() {
             return (
               <button
                 key={mode.id}
-                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); scrollToPageTop(); }}
+                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
                 className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
@@ -1243,7 +1243,7 @@ export default function KenyanTranslatorPage() {
             {/* Category Browser (when not searching) */}
             {!searchQuery && browseMeta && (
               <>
-                <div>
+                <div id="translator-category-browser">
                   <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
                     Browse {browseMeta.languageName} by Category
                   </h3>
@@ -1255,7 +1255,7 @@ export default function KenyanTranslatorPage() {
                       return (
                         <button
                           key={cat.id}
-                          onClick={() => { setActiveCategory(active ? null : cat.id); scrollToTopIfScrolled(250); }}
+                          onClick={() => { setActiveCategory(active ? null : cat.id); }}
                           disabled={!hasEntries}
                           className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
                             active
@@ -1388,7 +1388,7 @@ export default function KenyanTranslatorPage() {
                               <button
                                 type="button"
                                 disabled={categoryPage <= 1}
-                                onClick={() => setCategoryPage((p) => Math.max(1, p - 1))}
+                                onClick={() => { setCategoryPage((p) => Math.max(1, p - 1)); scrollToSectionIfNeeded("translator-category-browser", 80); }}
                                 className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
                               >
                                 <ChevronLeft className="w-3.5 h-3.5" />
@@ -1397,7 +1397,7 @@ export default function KenyanTranslatorPage() {
                               <button
                                 type="button"
                                 disabled={categoryPage >= totalCategoryPages}
-                                onClick={() => setCategoryPage((p) => Math.min(totalCategoryPages, p + 1))}
+                                onClick={() => { setCategoryPage((p) => Math.min(totalCategoryPages, p + 1)); scrollToSectionIfNeeded("translator-category-browser", 80); }}
                                 className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
                               >
                                 <span>Next</span>
@@ -1648,7 +1648,7 @@ export default function KenyanTranslatorPage() {
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <button
                           type="button"
-                          onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
+                          onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
                           className="text-left group-hover:text-gold transition-colors cursor-pointer"
                         >
                           <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
@@ -1675,7 +1675,7 @@ export default function KenyanTranslatorPage() {
                     <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
                       <button
                         type="button"
-                        onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToPageTop(); }}
+                        onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
                         className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
                       >
                         <span>Translate</span>

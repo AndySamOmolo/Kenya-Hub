@@ -86,13 +86,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
     onScrollToTop?.();
   }, [slug, onScrollToTop]);
 
-  useEffect(() => {
-    if (!didMountRef.current) {
-      didMountRef.current = true;
-      return;
-    }
-    onScrollToTop?.();
-  }, [filterA, filterB, filterC, cropRegion, ipType, hikingOnly, onScrollToTop]);
+
 
   // ─── TOOL 1: CHILD GROWTH & VACCINATION SCHEDULE ───
   if (slug === "child-growth-schedule") {

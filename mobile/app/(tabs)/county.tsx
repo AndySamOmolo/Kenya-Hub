@@ -34,9 +34,6 @@ export default function CountyScreen() {
   const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
-  useEffect(() => {
-    scrollRef.current?.scrollTo({ y: 0, animated: false });
-  }, [activeTab]);
   const [query, setQuery] = useState("");
   const [sortBy, setSortBy] = useState<
     "code" | "name" | "population" | "area" | "budget" | "rainfall"

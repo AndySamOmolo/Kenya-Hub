@@ -2,7 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo, useEffect, useRef } from "react";
-import { scrollToPageTop } from "@/lib/scroll";
+import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import countiesData from "@/data/counties.json";
 import budgetsData from "@/data/county-budgets.json";
@@ -49,7 +49,7 @@ export default function CountyIndexPage() {
   const _scrollMountRef = useRef(false);
   useEffect(() => {
     if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
-    scrollToPageTop();
+    scrollToTopIfScrolled();
   }, [activeTab, climateFilter]);
   const [sortBy, setSortBy] = useState<
     "code" | "name" | "population" | "area" | "density" | "budget" | "rainfall"

@@ -501,21 +501,19 @@ export default function LanguageCourseTool({
       setMissedItems([]);
       setupExerciseState(generated[0]);
       setLessonStage(skipLearn ? 'practice' : 'learn');
-      onScrollToTop?.();
     },
     [setupExerciseState, onScrollToTop]
   );
 
   const lessonScrollRef = useRef<ScrollView>(null);
 
-  // Scroll to top whenever lessonStage, card index, exercise index, tab, or game changes
+  // Scroll lesson modal to top only when advancing lesson stage, learn card, or exercise
   useEffect(() => {
-    onScrollToTop?.();
     lessonScrollRef.current?.scrollTo({ y: 0, animated: false });
     requestAnimationFrame(() => {
       lessonScrollRef.current?.scrollTo({ y: 0, animated: false });
     });
-  }, [lessonStage, learnCardIdx, exIndex, activeTab, selectedLangId, activeGame, wisdomLang, luoSubTab, proverbCategory, proverbPage, cardMode, onScrollToTop]);
+  }, [lessonStage, learnCardIdx, exIndex]);
 
   // ── Submit Current Exercise Answer ──
   const handleCheckExercise = useCallback(() => {

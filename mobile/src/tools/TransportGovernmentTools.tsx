@@ -945,11 +945,7 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
 export function DrivingLicenseTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [activeTab, setActiveTab] = useState<"classes" | "process">("classes");
-  const _mountRef = useRef(false);
-  useEffect(() => {
-    if (!_mountRef.current) { _mountRef.current = true; return; }
-    onScrollToTop?.();
-  }, [activeTab, onScrollToTop]);
+
 
   return (
     <View style={styles.toolWrap}>
@@ -1380,11 +1376,7 @@ export function MatatuRoutesTool({ onScrollToTop }: { onScrollToTop?: () => void
   const [selectedRouteSlug, setSelectedRouteSlug] = useState<string>(
     townRoutes[0]?.slug || "111-ngong"
   );
-  const _mountRef = useRef(false);
-  useEffect(() => {
-    if (!_mountRef.current) { _mountRef.current = true; return; }
-    onScrollToTop?.();
-  }, [selectedTown, selectedRouteSlug, onScrollToTop]);
+
 
   const filteredRoutes = useMemo(() => {
     const q = search.trim().toLowerCase();

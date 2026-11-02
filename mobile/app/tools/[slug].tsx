@@ -85,15 +85,29 @@ export default function ToolDetailScreen() {
   const [saved, setSaved] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const scrollRef = useRef<ScrollView>(null);
-  const scrollToTop = useCallback(() => {
+  const scrollYRef = useRef(0);
+  const viewportHeightRef = useRef(700);
+  const toolWrapLayoutRef = useRef({ y: 0, height: 0 });
+
+  const resetToPageTop = useCallback(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
     requestAnimationFrame(() => scrollRef.current?.scrollTo({ y: 0, animated: false }));
     setTimeout(() => scrollRef.current?.scrollTo({ y: 0, animated: false }), 50);
   }, []);
 
+  // Smart scroll helper for child tools: aligns to the top of the interactive tool
+  // section (not the very top hero banner) when paginating or when content shrinks
+  // above the current viewport.
+  const scrollToTop = useCallback(() => {
+    const targetY = Math.max(0, toolWrapLayoutRef.current.y - 12);
+    if (scrollYRef.current > targetY + 120) {
+      scrollRef.current?.scrollTo({ y: targetY, animated: true });
+    }
+  }, []);
+
   useEffect(() => {
-    scrollToTop();
-  }, [slug, scrollToTop]);
+    resetToPageTop();
+  }, [slug, resetToPageTop]);
 
   useEffect(() => {
     if (tool) {
@@ -286,6 +300,13 @@ export default function ToolDetailScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
+        scrollEventThrottle={16}
+        onScroll={(e) => {
+          scrollYRef.current = e.nativeEvent.contentOffset.y;
+        }}
+        onLayout={(e) => {
+          viewportHeightRef.current = e.nativeEvent.layout.height;
+        }}
       >
         {/* Material 3 Tool Info Banner (mirrors web ToolShell header) */}
         {!isLanguageCourseScreen && (
@@ -389,7 +410,25 @@ export default function ToolDetailScreen() {
         )}
 
         {/* Interactive Tool Component */}
-        <View style={styles.toolContentWrap}>{renderToolComponent()}</View>
+        <View
+          style={styles.toolContentWrap}
+          onLayout={(e) => {
+            const { y, height } = e.nativeEvent.layout;
+            toolWrapLayoutRef.current = { y, height };
+            const toolBottom = y + height;
+            // If the interactive tool shrank so much that its bottom is now above the
+            // upper portion of the viewport (stranding the user in FAQ/Related Tools),
+            // smoothly bring the interactive tool back into view.
+            if (
+              scrollYRef.current > y + 80 &&
+              toolBottom - scrollYRef.current < viewportHeightRef.current * 0.35
+            ) {
+              scrollRef.current?.scrollTo({ y: Math.max(0, y - 12), animated: true });
+            }
+          }}
+        >
+          {renderToolComponent()}
+        </View>
 
         {/* Important Notes / About the Data Section */}
         {!isLanguageCourseScreen && notes.length > 0 && (

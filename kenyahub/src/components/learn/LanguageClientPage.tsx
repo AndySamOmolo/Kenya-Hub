@@ -112,7 +112,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         document.documentElement.style.scrollBehavior = prev;
       });
     }
-  }, [languageId, view]);
+  }, [languageId]);
 
   useEffect(() => {
     if (!course) return;
