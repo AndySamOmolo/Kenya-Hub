@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "predev": "node scripts/clean-retired-routes.mjs",
+    "dev": "node scripts/clean-retired-routes.mjs && next dev",
+    "prebuild": "node scripts/clean-retired-routes.mjs",
+    "build": "node scripts/clean-retired-routes.mjs && next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
-    "audit:tools": "node scripts/audit-tools.mjs",
-    "audit:tools:sources": "node scripts/audit-tools.mjs --check-sources",
-    "audit:tools:strict": "node scripts/audit-tools.mjs --strict",
+    "typecheck": "node scripts/clean-retired-routes.mjs && tsc --noEmit",
+    "audit:tools": "node scripts/clean-retired-routes.mjs && node scripts/audit-tools.mjs",
+    "audit:tools:sources": "node scripts/clean-retired-routes.mjs && node scripts/audit-tools.mjs --check-sources",
+    "audit:tools:strict": "node scripts/clean-retired-routes.mjs && node scripts/audit-tools.mjs --strict",
     "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub"
   },
   "dependencies": {
@@ -20,7 +22,7 @@
     "fuse.js": "^7.4.2",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.21.0",
-    "next": "^16.3.8",
+    "next": "16.3.8",
     "node-appwrite": "^26.2.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"

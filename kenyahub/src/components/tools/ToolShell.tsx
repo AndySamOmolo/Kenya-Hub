@@ -32,7 +32,7 @@ interface RichGuideEntry {
 }
 
 interface ToolShellProps {
-  tool: Tool;
+  tool?: Tool;
   children: React.ReactNode;
   faq?: FAQItem[];
   breadcrumbSuffix?: BreadcrumbItem[];
@@ -41,8 +41,21 @@ interface ToolShellProps {
   hideSource?: boolean;
 }
 
+const FALLBACK_TOOL: Tool = {
+  slug: "tools",
+  title: "KenyaHub Public Utility Tool",
+  shortTitle: "KenyaHub Tool",
+  description: "Free online calculator and verified public data reference built for Kenya.",
+  category: "finance-tax",
+  keywords: ["Kenya tools", "KenyaHub"],
+  updateFrequency: "annual",
+  dataSource: "Official Kenyan Public Data",
+  isLive: false,
+  icon: "🧰",
+};
+
 export default function ToolShell({
-  tool,
+  tool: rawTool,
   children,
   faq = [],
   breadcrumbSuffix = [],
@@ -50,6 +63,7 @@ export default function ToolShell({
   hideFooter = false,
   hideSource = false,
 }: ToolShellProps) {
+  const tool = rawTool ?? FALLBACK_TOOL;
   const category = getCategoryInfo(tool.category);
   const related = getRelatedTools(tool.slug, 4);
   const relatedBlogPosts = getRelatedBlogPostsForTool(tool.slug, 3);
