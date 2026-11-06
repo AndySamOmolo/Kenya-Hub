@@ -244,10 +244,13 @@ export default function PAYECalculatorPage() {
               </label>
               <input
                 type="number"
-                value={grossInput}
-                onChange={(e) =>
-                  setGrossInput(Math.max(0, Number(e.target.value)))
-                }
+                inputMode="numeric"
+                value={grossInput === 0 ? "" : grossInput}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setGrossInput(raw === "" ? 0 : Math.max(0, Number(raw)));
+                }}
+                placeholder="0"
                 className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
                 min={0}
                 step={1000}
@@ -270,10 +273,13 @@ export default function PAYECalculatorPage() {
               </label>
               <input
                 type="number"
-                value={targetNetInput}
-                onChange={(e) =>
-                  setTargetNetInput(Math.max(0, Number(e.target.value)))
-                }
+                inputMode="numeric"
+                value={targetNetInput === 0 ? "" : targetNetInput}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setTargetNetInput(raw === "" ? 0 : Math.max(0, Number(raw)));
+                }}
+                placeholder="0"
                 className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
                 min={0}
                 step={1000}
@@ -304,10 +310,13 @@ export default function PAYECalculatorPage() {
                   </label>
                   <input
                     type="number"
-                    value={pensionContribution}
-                    onChange={(e) =>
-                      setPensionContribution(Math.max(0, Number(e.target.value)))
-                    }
+                    inputMode="numeric"
+                    value={pensionContribution === 0 ? "" : pensionContribution}
+                    onChange={(e) => {
+                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                      setPensionContribution(raw === "" ? 0 : Math.max(0, Number(raw)));
+                    }}
+                    placeholder="0"
                     className="input-field text-sm"
                   />
                 </div>
@@ -317,10 +326,13 @@ export default function PAYECalculatorPage() {
                   </label>
                   <input
                     type="number"
-                    value={mortgageInterest}
-                    onChange={(e) =>
-                      setMortgageInterest(Math.max(0, Number(e.target.value)))
-                    }
+                    inputMode="numeric"
+                    value={mortgageInterest === 0 ? "" : mortgageInterest}
+                    onChange={(e) => {
+                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                      setMortgageInterest(raw === "" ? 0 : Math.max(0, Number(raw)));
+                    }}
+                    placeholder="0"
                     className="input-field text-sm"
                   />
                 </div>
@@ -330,10 +342,13 @@ export default function PAYECalculatorPage() {
                   </label>
                   <input
                     type="number"
-                    value={insurancePremium}
-                    onChange={(e) =>
-                      setInsurancePremium(Math.max(0, Number(e.target.value)))
-                    }
+                    inputMode="numeric"
+                    value={insurancePremium === 0 ? "" : insurancePremium}
+                    onChange={(e) => {
+                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                      setInsurancePremium(raw === "" ? 0 : Math.max(0, Number(raw)));
+                    }}
+                    placeholder="0"
                     className="input-field text-sm"
                   />
                 </div>

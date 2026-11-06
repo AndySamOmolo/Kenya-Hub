@@ -91,17 +91,27 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 1: CHILD GROWTH & VACCINATION SCHEDULE ───
   if (slug === "child-growth-schedule") {
     const ageNum = Math.max(0, Math.min(60, parseInt(childAgeMonths, 10) || 0));
-    const weightTable: any[] = (vaccinesData as any).weightByAge?.[childGender] || [];
+    const ageWeeks = Math.round(ageNum * 4.345);
+    const weightTable: any[] =
+      (vaccinesData as any).growthStandards?.weightForAge?.[childGender] ||
+      (vaccinesData as any).weightByAge?.[childGender] ||
+      [];
     const milestones: any[] = (vaccinesData as any).milestones || [];
     const schedule: any[] = (vaccinesData as any).vaccinationSchedule || [];
 
     // Find closest weight row
-    const closestWeight = weightTable.reduce((prev, curr) =>
-      Math.abs(curr.ageMonths - ageNum) < Math.abs(prev.ageMonths - ageNum) ? curr : prev
-    , weightTable[0] || { ageMonths: 0, minKg: 2.5, medianKg: 3.3, maxKg: 4.4 });
+    const closestWeight = weightTable.reduce(
+      (prev, curr) =>
+        Math.abs(curr.ageMonths - ageNum) < Math.abs(prev.ageMonths - ageNum)
+          ? curr
+          : prev,
+      weightTable[0] || { ageMonths: 0, median: 3.3, sd1low: 2.5, sd1high: 4.2 }
+    );
 
     // Next vaccine visit
-    const nextStage = schedule.find((s) => s.ageMonths >= ageNum) || schedule[schedule.length - 1];
+    const nextStage =
+      schedule.find((s) => (s.ageWeeks ?? (s.ageMonths || 0) * 4) >= ageWeeks) ||
+      schedule[schedule.length - 1];
 
     return (
       <View style={styles.toolWrap}>
@@ -113,7 +123,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               <Text style={styles.detailLabel}>Child Age (Months: 0–60)</Text>
               <TextInput
                 value={childAgeMonths}
-                onChangeText={setChildAgeMonths}
+                onChangeText={(txt) => {
+                  const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+                  setChildAgeMonths(cleaned);
+                }}
+                placeholder="0"
+                placeholderTextColor={theme.textMuted}
                 keyboardType="numeric"
                 style={[styles.searchBar, { marginTop: 4, fontWeight: "800", color: theme.textPrimary }]}
               />
@@ -161,10 +176,10 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               WHO WEIGHT ({closestWeight?.ageMonths}M {childGender.toUpperCase()})
             </Text>
             <Text style={{ fontSize: 20, fontWeight: "900", color: theme.textPrimary }}>
-              {closestWeight?.medianKg} kg
+              {closestWeight?.median ?? closestWeight?.medianKg} kg
             </Text>
             <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-              Normal: {closestWeight?.minKg} – {closestWeight?.maxKg} kg
+              Normal: {closestWeight?.sd1low ?? closestWeight?.minKg} – {closestWeight?.sd1high ?? closestWeight?.maxKg} kg
             </Text>
           </View>
           <View style={[styles.card, { flex: 1, borderColor: theme.kenyaGreenLight }]}>
@@ -195,9 +210,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                   gap: 4,
                 }}
               >
-                <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
                   <Text style={{ fontSize: 13, fontWeight: "800", color: passed ? theme.gold : theme.textPrimary }}>
-                    {ms.age} ({ms.ageMonths} months)
+                    {ms.age ? `${ms.age} (${ms.ageMonths} months)` : `${ms.ageMonths} Months`}
                   </Text>
                   <View
                     style={[
@@ -213,14 +228,22 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                     </Text>
                   </View>
                 </View>
-                <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                  • <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Motor: </Text>
-                  {(ms.motor || []).join(", ")}
-                </Text>
-                <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                  • <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Social & Language: </Text>
-                  {[...(ms.social || []), ...(ms.language || [])].join(", ")}
-                </Text>
+                {ms.milestone ? (
+                  <Text style={{ fontSize: 11.5, color: theme.textSecondary }}>
+                    {ms.milestone}
+                  </Text>
+                ) : (
+                  <>
+                    <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+                      • <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Motor: </Text>
+                      {(ms.motor || []).join(", ")}
+                    </Text>
+                    <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+                      • <Text style={{ fontWeight: "700", color: theme.textPrimary }}>Social & Language: </Text>
+                      {[...(ms.social || []), ...(ms.language || [])].join(", ")}
+                    </Text>
+                  </>
+                )}
               </View>
             );
           })}
@@ -245,7 +268,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                     {v.name} — {v.fullName}
                   </Text>
                   <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>
-                    Protects against: {v.protectsAgainst} · Route: {v.route} ({v.site})
+                    Protects against: {v.protectsAgainst} · Route: {v.route}{v.site ? ` (${v.site})` : ""}
                   </Text>
                 </View>
               ))}
@@ -262,17 +285,13 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
     const ipKeys = Object.keys(feesObj);
     const activeIp = feesObj[ipType] || feesObj.trademark || {};
     const numClasses = Math.max(1, Math.min(45, parseInt(tmClasses, 10) || 1));
-    const contact = (trademarkData as any).kipiContact || {};
+    const contact = (trademarkData as any).kipiInfo || (trademarkData as any).kipiContact || {};
 
-    const totalCost = useMemo(() => {
-      if (ipType === "trademark") {
-        // Search (3000) + Application (4000) + Ad (3000) + Reg (2000) = 12,000 for 1st class, + 9,000 per extra class
-        const firstClassTotal = (activeIp.steps || []).reduce((s: number, st: any) => s + (Number(st.amount) || 0), 0);
-        const extraClassesCost = (numClasses - 1) * 9000;
-        return firstClassTotal + extraClassesCost;
-      }
-      return (activeIp.steps || []).reduce((s: number, st: any) => s + (Number(st.amount) || 0), 0);
-    }, [ipType, activeIp, numClasses]);
+    const totalCost =
+      ipType === "trademark"
+        ? (activeIp.totalOneClass ?? 22450) + (numClasses - 1) * 3080
+        : activeIp.totalCost ??
+          (activeIp.steps || []).reduce((s: number, st: any) => s + (Number(st.amount) || 0), 0);
 
     return (
       <View style={styles.toolWrap}>
@@ -299,8 +318,13 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             <Text style={styles.detailLabel}>Number of Nice Classification Classes (1–45)</Text>
             <View style={{ flexDirection: "row", gap: 8, alignItems: "center", marginTop: 4 }}>
               <TextInput
-                value={tmClasses}
-                onChangeText={setTmClasses}
+                value={tmClasses === "0" ? "" : tmClasses}
+                onChangeText={(txt) => {
+                  const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+                  setTmClasses(cleaned);
+                }}
+                placeholder="1"
+                placeholderTextColor={theme.textMuted}
                 keyboardType="numeric"
                 style={[styles.searchBar, { flex: 1, fontWeight: "800", color: theme.textPrimary }]}
               />
@@ -328,7 +352,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             KES {totalCost.toLocaleString()}
           </Text>
           <Text style={{ fontSize: 12, color: theme.textSecondary }}>
-            Processing Time: {activeIp.processingTime} · Validity: {activeIp.validityYears} Years
+            Processing Time: {activeIp.processingTime} · Validity: {activeIp.validityPeriod || `${activeIp.validityYears} Years`}
           </Text>
         </View>
 
@@ -344,7 +368,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                 borderBottomColor: theme.border,
               }}
             >
-              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
                 <Text style={{ fontSize: 13, fontWeight: "700", color: theme.textPrimary, flex: 1 }}>
                   {idx + 1}. {st.item}
                 </Text>
@@ -360,12 +384,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <View style={{ paddingTop: 8, borderTopWidth: 1, borderTopColor: theme.border, gap: 4 }}>
             {activeIp.renewalFee ? (
               <Text style={{ fontSize: 12, color: theme.kenyaGreenLight, fontWeight: "700" }}>
-                Renewal Fee: KES {Number(activeIp.renewalFee).toLocaleString()} ({activeIp.renewalNote})
+                Renewal Fee: KES {Number(activeIp.renewalFee).toLocaleString()} ({activeIp.renewalPeriod || activeIp.renewalNote})
               </Text>
             ) : null}
             {activeIp.annualMaintenance ? (
               <Text style={{ fontSize: 12, color: theme.sky, fontWeight: "700" }}>
-                Annual Maintenance: {activeIp.annualMaintenance}
+                Annual Maintenance: KES {Number(activeIp.annualMaintenance).toLocaleString()}/year
               </Text>
             ) : null}
           </View>
@@ -390,12 +414,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   if (slug === "crop-planting-calendar") {
     const regions: any[] = (cropsData as any).regions || [];
     const crops: any[] = (cropsData as any).crops || [];
-    const categories = useMemo(() => {
+    const categories = (() => {
       const set = new Set<string>(crops.map((c) => c.category));
       return ["All", ...Array.from(set)];
-    }, [crops]);
+    })();
 
-    const filteredCrops = useMemo(() => {
+    const filteredCrops = (() => {
       const q = search.trim().toLowerCase();
       return crops.filter((c) => {
         const matchCat = filterA === "All" || c.category === filterA;
@@ -403,10 +427,10 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           !q ||
           c.name.toLowerCase().includes(q) ||
           (c.swahili && c.swahili.toLowerCase().includes(q)) ||
-          (c.tips && c.tips.toLowerCase().includes(q));
+          (c.tips && (Array.isArray(c.tips) ? c.tips.join(" ") : String(c.tips)).toLowerCase().includes(q));
         return matchCat && matchQ;
       });
-    }, [crops, filterA, search]);
+    })();
 
     const currentRegionObj = regions.find((r) => r.id === cropRegion) || regions[0];
 
@@ -545,7 +569,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
                 )}
                 {c.tips && (
                   <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4, fontStyle: "italic" }}>
-                    Agronomist Tip: {c.tips}
+                    Agronomist Tip: {Array.isArray(c.tips) ? c.tips.join(" · ") : c.tips}
                   </Text>
                 )}
               </View>
@@ -559,12 +583,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 4: KENYA RAINFALL PATTERNS (47 COUNTIES + 12-MONTH BREAKDOWN) ───
   if (slug === "kenya-rainfall-patterns") {
     const counties: any[] = (rainfallData as any).counties || [];
-    const zones = useMemo(() => {
+    const zones = (() => {
       const set = new Set<string>(counties.map((c) => c.climateZone));
       return ["All", ...Array.from(set)];
-    }, [counties]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = counties.filter((c) => {
         const matchZone = filterA === "All" || c.climateZone === filterA;
@@ -580,7 +604,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (sortBy === "driest") return a.annualRainfall - b.annualRainfall;
         return a.name.localeCompare(b.name);
       });
-    }, [counties, filterA, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -607,7 +631,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           ))}
         </ExpandablePillRow>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
           <Text style={styles.subHeading}>{filtered.length} Counties</Text>
           <View style={{ flexDirection: "row", gap: 6 }}>
             {([
@@ -701,12 +725,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 5: KENYAN FOOD NUTRITION GUIDE ───
   if (slug === "kenyan-food-nutrition") {
     const foods: any[] = (foodsData as any).foods || [];
-    const categories = useMemo(() => {
+    const categories = (() => {
       const set = new Set<string>(foods.map((f) => f.category));
       return ["All", ...Array.from(set)];
-    }, [foods]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = foods.filter((f) => {
         const matchCat = filterA === "All" || f.category === filterA;
@@ -724,7 +748,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         else cmp = (b[activeSort] || 0) - (a[activeSort] || 0);
         return sortAsc ? -cmp : cmp;
       });
-    }, [foods, filterA, search, sortBy, sortAsc]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -833,7 +857,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
     const budgets: any[] = (budgetsData as any).budgets || [];
     const fy = (budgetsData as any).fiscalYear || "2025/26";
 
-    const totals = useMemo(() => {
+    const totals = (() => {
       const alloc = budgets.reduce((s, b) => s + (b.allocation || 0), 0);
       const osr = budgets.reduce((s, b) => s + (b.ownSourceRevenue || 0), 0);
       const exp = budgets.reduce((s, b) => s + (b.expenditure || 0), 0);
@@ -841,9 +865,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         ? (budgets.reduce((s, b) => s + (b.absorptionRate || 0), 0) / budgets.length).toFixed(1)
         : "0";
       return { alloc, osr, exp, avgAbs };
-    }, [budgets]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = !q
         ? budgets
@@ -856,7 +880,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         else cmp = (b[activeSort] || 0) - (a[activeSort] || 0);
         return sortAsc ? -cmp : cmp;
       });
-    }, [budgets, search, sortBy, sortAsc]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -977,12 +1001,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 7: FOREST RESERVES DIRECTORY ───
   if (slug === "forest-reserves-kenya") {
     const forests: any[] = (forestsData as any).forests || [];
-    const ecosystems = useMemo(() => {
+    const ecosystems = (() => {
       const set = new Set<string>(forests.map((f) => f.ecosystem));
       return ["All", ...Array.from(set)];
-    }, [forests]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = forests.filter((f) => {
         const matchEco = filterA === "All" || f.ecosystem === filterA;
@@ -1001,9 +1025,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "smallest") return a.sizeHa - b.sizeHa;
         return a.name.localeCompare(b.name);
       });
-    }, [forests, filterA, hikingOnly, search, sortBy]);
+    })();
 
-    const totalHa = useMemo(() => filtered.reduce((s, f) => s + (f.sizeHa || 0), 0), [filtered]);
+    const totalHa = (() => filtered.reduce((s, f) => s + (f.sizeHa || 0), 0))();
 
     return (
       <View style={styles.toolWrap}>
@@ -1097,17 +1121,17 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 8: SHA / SHIF HOSPITAL FINDER ───
   if (slug === "nhif-hospital-finder") {
     const hospitals: any[] = (hospitalsData as any).hospitals || [];
-    const counties = useMemo(() => {
+    const counties = (() => {
       const set = new Set<string>(hospitals.map((h) => h.county));
       return ["All", ...Array.from(set).sort()];
-    }, [hospitals]);
-    const types = useMemo(() => {
+    })();
+    const types = (() => {
       const set = new Set<string>(hospitals.map((h) => h.type));
       return ["All", ...Array.from(set).sort()];
-    }, [hospitals]);
+    })();
     const levels = ["All", "Level 6", "Level 5", "Level 4"];
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = hospitals.filter((h) => {
         const matchCounty = filterA === "All" || h.county === filterA;
@@ -1127,7 +1151,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "county") return a.county.localeCompare(b.county);
         return a.name.localeCompare(b.name);
       });
-    }, [hospitals, filterA, filterB, filterC, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1239,11 +1263,14 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 9: REAL ESTATE AGENT CHECKER (EARB) ───
   if (slug === "real-estate-agent-checker") {
     const sampleAgents: any[] = (agentsData as any).sampleAgents || [];
-    const steps: any[] = (agentsData as any).verificationSteps || [];
-    const redFlags: string[] = (agentsData as any).redFlags || [];
-    const contact = (agentsData as any).earbContact || {};
+    const steps: any[] =
+      (agentsData as any).verificationGuide?.steps ||
+      (agentsData as any).verificationSteps ||
+      [];
+    const redFlags: any[] = (agentsData as any).redFlags || [];
+    const contact = (agentsData as any).earbInfo || (agentsData as any).earbContact || {};
 
-    const filteredAgents = useMemo(() => {
+    const filteredAgents = (() => {
       const q = search.trim().toLowerCase();
       if (!q) return sampleAgents;
       return sampleAgents.filter(
@@ -1252,7 +1279,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           a.county.toLowerCase().includes(q) ||
           a.specialization.toLowerCase().includes(q)
       );
-    }, [sampleAgents, search]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1321,9 +1348,10 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         {/* Red Flags */}
         <Text style={styles.subHeading}>Common Real Estate Scam Red Flags</Text>
         <View style={styles.card}>
-          {redFlags.map((flag, idx) => (
-            <Text key={idx} style={{ fontSize: 12, color: theme.textSecondary, marginBottom: 4 }}>
-              • {flag}
+          {redFlags.map((flag: any, idx: number) => (
+            <Text key={idx} style={{ fontSize: 12, color: theme.textSecondary, marginBottom: 6 }}>
+              • <Text style={{ fontWeight: "700", color: theme.textPrimary }}>{typeof flag === "string" ? flag : flag.flag}</Text>
+              {typeof flag === "object" && flag.risk ? ` — ${flag.risk}` : ""}
             </Text>
           ))}
         </View>
@@ -1346,9 +1374,15 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 10: FERTILIZER SUBSIDY GUIDE ───
   if (slug === "fertilizer-subsidy-guide") {
     const ferts: any[] = (fertilizerData as any).fertilizers || [];
-    const howToRegister: any[] = (fertilizerData as any).howToRegister || [];
-    const eligibility: string[] = (fertilizerData as any).eligibility || [];
-    const collectionPoints: string[] = (fertilizerData as any).collectionPoints || [];
+    const howToRegister: any[] =
+      (fertilizerData as any).subsidyProgram?.howToRegister ||
+      (fertilizerData as any).howToRegister ||
+      [];
+    const eligibility: string[] =
+      (fertilizerData as any).subsidyProgram?.eligibility ||
+      (fertilizerData as any).eligibility ||
+      [];
+    const collectionPoints: any[] = (fertilizerData as any).collectionPoints || [];
 
     return (
       <View style={styles.toolWrap}>
@@ -1389,21 +1423,30 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         })}
 
         {/* How to Register */}
-        <Text style={styles.subHeading}>How to Register for e-Voucher Fertilizer (5 Steps)</Text>
+        <Text style={styles.subHeading}>How to Register for e-Voucher Fertilizer ({howToRegister.length} Steps)</Text>
         <View style={styles.card}>
-          {howToRegister.map((st: any) => (
+          {howToRegister.map((st: any, idx: number) => (
             <View
-              key={st.step}
+              key={idx}
               style={{
                 paddingVertical: 6,
-                borderBottomWidth: st.step < howToRegister.length ? 1 : 0,
+                borderBottomWidth: idx < howToRegister.length - 1 ? 1 : 0,
                 borderBottomColor: theme.border,
               }}
             >
-              <Text style={{ fontSize: 13, fontWeight: "800", color: theme.gold }}>
-                Step {st.step}: {st.title}
-              </Text>
-              <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>{st.description}</Text>
+              {typeof st === "string" ? (
+                <Text style={{ fontSize: 12, color: theme.textSecondary }}>
+                  <Text style={{ fontWeight: "800", color: theme.gold }}>Step {idx + 1}: </Text>
+                  {st}
+                </Text>
+              ) : (
+                <>
+                  <Text style={{ fontSize: 13, fontWeight: "800", color: theme.gold }}>
+                    Step {st.step || idx + 1}: {st.title}
+                  </Text>
+                  <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>{st.description}</Text>
+                </>
+              )}
             </View>
           ))}
         </View>
@@ -1419,7 +1462,11 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             Major NCPB Depots ({collectionPoints.length}):
           </Text>
           <Text style={{ fontSize: 11, color: theme.textSecondary, lineHeight: 16 }}>
-            {collectionPoints.join(" · ")}
+            {collectionPoints
+              .map((cp: any) =>
+                typeof cp === "string" ? cp : `${cp.depot} (${cp.county} — ${cp.location})`
+              )
+              .join(" · ")}
           </Text>
         </View>
       </View>
@@ -1431,7 +1478,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
     const livestock: any[] = (livestockData as any).livestock || [];
     const marketsDir: any[] = (livestockData as any).markets || [];
 
-    const flatRows = useMemo(() => {
+    const flatRows = (() => {
       const rows: any[] = [];
       for (const l of livestock) {
         for (const p of l.prices || []) {
@@ -1447,15 +1494,15 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         }
       }
       return rows;
-    }, [livestock]);
+    })();
 
-    const types = useMemo(() => ["All", ...livestock.map((l) => l.type)], [livestock]);
-    const marketNames = useMemo(() => {
+    const types = (() => ["All", ...livestock.map((l) => l.type)])();
+    const marketNames = (() => {
       const set = new Set<string>(flatRows.map((r) => r.market));
       return ["All", ...Array.from(set).sort()];
-    }, [flatRows]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = flatRows.filter((r) => {
         const matchType = filterA === "All" || r.type === filterA;
@@ -1473,7 +1520,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "min") return a.minPrice - b.minPrice;
         return a.market.localeCompare(b.market);
       });
-    }, [flatRows, filterA, filterB, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1514,7 +1561,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           ))}
         </ExpandablePillRow>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
           <Text style={styles.subHeading}>{filtered.length} Market Quotes</Text>
           <View style={{ flexDirection: "row", gap: 6 }}>
             {([
@@ -1580,16 +1627,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 12: NATIONAL PARKS DIRECTORY ───
   if (slug === "national-parks-directory") {
     const parks: any[] = (parksData as any).parks || [];
-    const regions = useMemo(() => {
+    const regions = (() => {
       const set = new Set<string>(parks.map((p) => p.region));
       return ["All", ...Array.from(set).sort()];
-    }, [parks]);
-    const types = useMemo(() => {
+    })();
+    const types = (() => {
       const set = new Set<string>(parks.map((p) => p.type));
       return ["All", ...Array.from(set).sort()];
-    }, [parks]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = parks.filter((p) => {
         const matchReg = filterA === "All" || p.region === filterA;
@@ -1608,7 +1655,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "fee") return b.feeCitizenAdult - a.feeCitizenAdult;
         return a.name.localeCompare(b.name);
       });
-    }, [parks, filterA, filterB, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1724,7 +1771,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
     const official: any[] = (languagesData as any).officialLanguages || [];
     const families = ["All", "Bantu", "Nilotic", "Cushitic"];
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = languages.filter((l) => {
         const matchFam = filterA === "All" || (l.family && l.family.toLowerCase() === filterA.toLowerCase());
@@ -1741,7 +1788,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "speakers") return b.speakers - a.speakers;
         return a.name.localeCompare(b.name);
       });
-    }, [languages, filterA, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1903,16 +1950,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 14: ECONOMIC CALENDAR ───
   if (slug === "economic-calendar") {
     const events: any[] = (econData as any).events || [];
-    const categories = useMemo(() => {
+    const categories = (() => {
       const set = new Set<string>(events.map((e) => e.category));
       return ["All", ...Array.from(set)];
-    }, [events]);
-    const frequencies = useMemo(() => {
+    })();
+    const frequencies = (() => {
       const set = new Set<string>(events.map((e) => e.frequency));
       return ["All", ...Array.from(set)];
-    }, [events]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       return events.filter((e) => {
         const matchCat = filterA === "All" || e.category === filterA;
@@ -1924,7 +1971,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           e.description.toLowerCase().includes(q);
         return matchCat && matchFreq && matchQ;
       });
-    }, [events, filterA, filterB, search]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -1994,7 +2041,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 15: KENYA SOIL TYPES ───
   if (slug === "kenya-soil-types") {
     const soils: any[] = (soilsData as any).soilTypes || [];
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       return soils.filter((s) => {
         const matchType = filterA === "All" || s.name === filterA;
@@ -2006,7 +2053,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           (s.bestCrops && s.bestCrops.some((c: string) => c.toLowerCase().includes(q)));
         return matchType && matchQ;
       });
-    }, [soils, filterA, search]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -2067,7 +2114,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>How to Improve:</Text>
-                <Text style={styles.detailValue}>{s.improvement}</Text>
+                <Text style={styles.detailValue}>{Array.isArray(s.improvement) ? s.improvement.join("; ") : s.improvement}</Text>
               </View>
             </View>
           </View>
@@ -2079,7 +2126,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 16: KENYA CUSTOMS RESTRICTED ITEMS ───
   if (slug === "kenya-customs-restricted-items") {
     const categories: any[] = (customsData as any).categories || [];
-    const flatItems = useMemo(() => {
+    const flatItems = (() => {
       const list: any[] = [];
       for (const cat of categories) {
         for (const it of cat.items || []) {
@@ -2094,9 +2141,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         }
       }
       return list;
-    }, [categories]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       return flatItems.filter((it) => {
         const matchCat = filterA === "All" || it.catId === filterA;
@@ -2107,7 +2154,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           (it.permit && it.permit.toLowerCase().includes(q));
         return matchCat && matchQ;
       });
-    }, [flatItems, filterA, search]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -2189,12 +2236,12 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   // ─── TOOL 17: AGROVET FINDER ───
   if (slug === "agrovet-finder") {
     const agrovets: any[] = (agrovetsData as any).agrovets || [];
-    const counties = useMemo(() => {
+    const counties = (() => {
       const set = new Set<string>(agrovets.map((a) => a.county));
       return ["All", ...Array.from(set).sort()];
-    }, [agrovets]);
+    })();
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = agrovets.filter((a) => {
         const matchCounty = filterA === "All" || a.county === filterA;
@@ -2212,7 +2259,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "county") return a.county.localeCompare(b.county);
         return a.name.localeCompare(b.name);
       });
-    }, [agrovets, filterA, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -2240,7 +2287,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           ))}
         </ExpandablePillRow>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
           <Text style={styles.subHeading}>KEPHIS / PCPB Licensed Agrovets ({filtered.length})</Text>
           <View style={{ flexDirection: "row", gap: 6 }}>
             {([
@@ -2292,7 +2339,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
   if (slug === "professional-bodies-kenya") {
     const bodies: any[] = (bodiesData as any).bodies || [];
 
-    const filtered = useMemo(() => {
+    const filtered = (() => {
       const q = search.trim().toLowerCase();
       const list = !q
         ? bodies
@@ -2309,7 +2356,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         if (activeSort === "profession") return a.profession.localeCompare(b.profession);
         return a.abbreviation.localeCompare(b.abbreviation);
       });
-    }, [bodies, search, sortBy]);
+    })();
 
     return (
       <View style={styles.toolWrap}>
@@ -2324,7 +2371,7 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           />
         </View>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
           <Text style={styles.subHeading}>Statutory Professional Bodies ({filtered.length})</Text>
           <View style={{ flexDirection: "row", gap: 6 }}>
             {([
@@ -2414,14 +2461,14 @@ function createStyles(colors: ThemeColors) {
       padding: 14,
       gap: 8,
     },
-    cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" },
+    cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: 10 },
     cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary },
     cardSubtitle: { fontSize: 12, color: colors.textSecondary, marginTop: 2 },
-    badge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999, borderWidth: 1 },
+    badge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999, borderWidth: 1, flexShrink: 0 },
     badgeText: { fontSize: 10, fontWeight: "800" },
     detailsList: { borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 8, gap: 6 },
-    detailRow: { flexDirection: "row", justifyContent: "space-between", gap: 8 },
-    detailLabel: { fontSize: 12, color: colors.textMuted, fontWeight: "600" },
+    detailRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: 8 },
+    detailLabel: { fontSize: 12, color: colors.textMuted, fontWeight: "600", flexShrink: 0, maxWidth: "45%" },
     detailValue: { fontSize: 12, color: colors.textPrimary, fontWeight: "600", flex: 1, textAlign: "right" },
     pillBtn: {
       backgroundColor: colors.bgCard,

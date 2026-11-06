@@ -257,7 +257,7 @@ export function AndroidTopAppBar({
         ) : (
           <View style={appBarStyles.titleGroup}>
             {showBrandLogo && <BrandLogo size="sm" showText={false} />}
-            <View style={{ flex: 1, justifyContent: "center" }}>
+            <View style={{ flex: 1, minWidth: 0, justifyContent: "center" }}>
               {title && (
                 <Text
                   style={[
@@ -333,6 +333,7 @@ const appBarStyles = StyleSheet.create({
   },
   leftRow: {
     flex: 1,
+    minWidth: 0,
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
@@ -340,6 +341,7 @@ const appBarStyles = StyleSheet.create({
   },
   titleGroup: {
     flex: 1,
+    minWidth: 0,
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
@@ -359,6 +361,7 @@ const appBarStyles = StyleSheet.create({
   actionsRow: {
     flexDirection: "row",
     alignItems: "center",
+    flexShrink: 0,
     gap: 6,
   },
   iconBtn: {

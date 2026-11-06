@@ -98,8 +98,13 @@ export default function WaterBillCalculatorPage() {
           </label>
           <input
             type="number"
-            value={consumption}
-            onChange={(e) => setConsumption(Math.max(0, Number(e.target.value)))}
+            inputMode="numeric"
+            value={consumption === 0 ? "" : consumption}
+            onChange={(e) => {
+              const raw = e.target.value.replace(/^0+(?=\d)/, "");
+              setConsumption(raw === "" ? 0 : Math.max(0, Number(raw)));
+            }}
+            placeholder="0"
             className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={1}

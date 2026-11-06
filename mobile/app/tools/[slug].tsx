@@ -253,7 +253,7 @@ export default function ToolDetailScreen() {
       case "matatu-routes":
         return <MatatuRoutesTool onScrollToTop={scrollToTop} />;
       default:
-        return <ReferenceDirectoryTool slug={tool.slug} onScrollToTop={scrollToTop} />;
+        return <ReferenceDirectoryTool key={tool.slug} slug={tool.slug} onScrollToTop={scrollToTop} />;
     }
   };
 

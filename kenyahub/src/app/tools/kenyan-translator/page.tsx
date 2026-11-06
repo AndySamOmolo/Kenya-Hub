@@ -1748,7 +1748,7 @@ export default function KenyanTranslatorPage() {
 
             {!contributeSubmitted ? (
               <form onSubmit={handleSubmitContribution} className="space-y-4">
-                <div>
+                <div className="pr-9">
                   <div className="flex items-center gap-2 mb-1">
                     <span className="w-2 h-2 rounded-full bg-gold" />
                     <span className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Community Linguistic Contribution</span>

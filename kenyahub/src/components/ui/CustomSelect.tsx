@@ -123,35 +123,36 @@ export default function CustomSelect({
 
   const paddingAndFontClasses = isTextXs
     ? hasLeadingIcon
-      ? "!text-xs !py-1.5 !pl-9 !pr-2.5"
-      : "!text-xs !py-1.5 !px-2.5"
+      ? "select-field--icon-left text-xs! py-1.5! pl-9! pr-2.5!"
+      : "text-xs! py-1.5! px-2.5!"
     : isCompact
     ? hasLeadingIcon
-      ? "!py-1.5 !pl-9 !pr-3 text-xs sm:text-sm"
-      : "!py-1.5 !px-3 text-xs sm:text-sm"
+      ? "select-field--icon-left py-1.5! pl-9! pr-3! text-xs sm:text-sm"
+      : "py-1.5! px-3! text-xs sm:text-sm"
     : hasLeadingIcon
-    ? "!py-2 sm:!py-2.5 !pl-9 !pr-3 text-xs sm:text-sm"
-    : "!py-2 sm:!py-2.5 !px-3 text-xs sm:text-sm";
+    ? "select-field--icon-left py-2! sm:py-2.5! pl-9! pr-3! text-xs sm:text-sm"
+    : "py-2! sm:py-2.5! px-3! text-xs sm:text-sm";
 
   return (
     <div className={`relative ${wrapperClasses}`.trim()} ref={containerRef} id={id}>
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`input-field flex items-center justify-between text-left cursor-pointer transition-colors w-full ${paddingAndFontClasses} ${
+        className={`input-field flex items-center justify-between gap-1.5 text-left cursor-pointer transition-colors w-full ${paddingAndFontClasses} ${
           isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"
         }`}
+        style={hasLeadingIcon ? { paddingLeft: "2.35rem" } : undefined}
       >
-        <span className="text-text-primary truncate">{selectedOption?.label || "Select..."}</span>
+        <span className="text-text-primary truncate min-w-0 flex-1">{selectedOption?.label || "Select..."}</span>
         <ChevronDown
-          className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-text-muted transition-transform flex-shrink-0 ml-1.5 ${
+          className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-text-muted transition-transform shrink-0 ${
             isOpen ? "rotate-180 text-gold" : ""
           }`}
         />
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 z-50 min-w-full w-max max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-64 overflow-y-auto animate-fade-in-up">
+        <div className="absolute left-0 right-0 sm:right-auto z-50 min-w-full sm:w-max max-w-[calc(100vw-1.75rem)] sm:max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-64 overflow-y-auto animate-fade-in-up">
           <ul className="py-1">
             {parsedOptions.map((option, idx) => {
               const isSelected = option.value === String(value);

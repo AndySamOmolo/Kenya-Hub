@@ -131,6 +131,16 @@ export default function ToolShell({
     itemListElement: [...baseBreadcrumbItems, ...suffixBreadcrumbItems],
   };
 
+  const lastSuffixHref =
+    breadcrumbSuffix.length > 0
+      ? breadcrumbSuffix[breadcrumbSuffix.length - 1]?.href
+      : undefined;
+  const canonicalToolUrl = lastSuffixHref
+    ? lastSuffixHref.startsWith("http")
+      ? lastSuffixHref
+      : `https://kenyahub.me${lastSuffixHref}`
+    : `https://kenyahub.me/tools/${tool.slug}/`;
+
   // Build WebApplication JSON-LD
   const appSchema = {
     "@context": "https://schema.org",
@@ -138,11 +148,7 @@ export default function ToolShell({
     name: tool.title,
     alternateName: tool.shortTitle,
     description: tool.description,
-    url:
-      suffixBreadcrumbItems.length > 0 &&
-      suffixBreadcrumbItems[suffixBreadcrumbItems.length - 1].item
-        ? suffixBreadcrumbItems[suffixBreadcrumbItems.length - 1].item
-        : `https://kenyahub.me/tools/${tool.slug}/`,
+    url: canonicalToolUrl,
     applicationCategory: "UtilityApplication",
     applicationSubCategory: category?.name || "Kenyan Public Utility",
     operatingSystem: "Any",
@@ -154,7 +160,7 @@ export default function ToolShell({
       name: "Kenya",
     },
     isBasedOn: tool.dataSource,
-    dateModified: "2026-03-01",
+    dateModified: "2026-10-31",
     offers: {
       "@type": "Offer",
       price: "0",

@@ -20,6 +20,7 @@ const faq = [
 export default function CBCCurriculumPage() {
   const [selectedLevel, setSelectedLevel] = useState(cbcData.levels[0].id);
   const [birthYear, setBirthYear] = useState<number>(2016);
+  const [birthYearInput, setBirthYearInput] = useState<string>("2016");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
     if (!_scrollMountRef.current) {
@@ -177,10 +178,25 @@ export default function CBCCurriculumPage() {
               <input
                 id="cbc-birth-year"
                 type="number"
+                inputMode="numeric"
                 min={2005}
                 max={2025}
-                value={birthYear}
-                onChange={(e) => setBirthYear(Number(e.target.value) || 2016)}
+                value={birthYearInput}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/[^0-9]/g, "");
+                  setBirthYearInput(raw);
+                  const n = Number(raw);
+                  if (raw.length === 4 && n >= 2000 && n <= 2026) {
+                    setBirthYear(n);
+                  }
+                }}
+                onBlur={() => {
+                  const n = Number(birthYearInput);
+                  const clamped = !birthYearInput || isNaN(n) ? 2016 : Math.max(2005, Math.min(2025, n));
+                  setBirthYear(clamped);
+                  setBirthYearInput(String(clamped));
+                }}
+                placeholder="2016"
                 className="input-field w-28 text-sm font-bold text-center py-1.5"
               />
             </div>
@@ -191,7 +207,10 @@ export default function CBCCurriculumPage() {
               <button
                 key={yr}
                 type="button"
-                onClick={() => setBirthYear(yr)}
+                onClick={() => {
+                  setBirthYear(yr);
+                  setBirthYearInput(String(yr));
+                }}
                 className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors ${
                   birthYear === yr
                     ? "bg-gold/15 border-gold text-gold font-bold"

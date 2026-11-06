@@ -74,7 +74,23 @@ export default function TrademarkCostKenyaPage() {
         {selectedType === "trademark" && (
           <div className="bg-bg-card border border-border rounded-xl p-6">
             <label className="block text-sm font-medium text-text-secondary mb-2">Number of Trademark Classes</label>
-            <input type="number" value={trademarkClasses} onChange={(e) => setTrademarkClasses(Math.max(1, Math.min(45, Number(e.target.value))))} className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]" min={1} max={45} id="classes-input" />
+            <input
+              type="number"
+              inputMode="numeric"
+              value={trademarkClasses === 0 ? "" : trademarkClasses}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setTrademarkClasses(raw === "" ? 0 : Math.min(45, Math.max(0, Number(raw))));
+              }}
+              onBlur={() => {
+                if (trademarkClasses < 1) setTrademarkClasses(1);
+              }}
+              placeholder="1"
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
+              min={1}
+              max={45}
+              id="classes-input"
+            />
             <p className="text-xs text-text-muted mt-2">Nice Classification has 45 classes. Each additional class adds KES 3,080.</p>
           </div>
         )}

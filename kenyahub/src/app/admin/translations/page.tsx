@@ -496,7 +496,8 @@ export default function AdminTranslationsPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by English term, native word, or contributor name..."
-            className="input-field text-xs w-full !pl-10 !pr-10"
+            className="input-field input-field--with-search text-xs w-full pl-10! pr-10!"
+            style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }}
           />
           {searchQuery && (
             <button
@@ -728,7 +729,7 @@ export default function AdminTranslationsPage() {
             </button>
 
             <form onSubmit={(e) => handleSaveEdit(e, false, false)} className="space-y-4">
-              <div>
+              <div className="pr-9">
                 <h3 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
                   Edit &amp; Verify Contribution
                 </h3>
@@ -855,7 +856,7 @@ export default function AdminTranslationsPage() {
               <X className="w-4 h-4" />
             </button>
 
-            <div>
+            <div className="pr-9">
               <div className="flex items-center gap-2">
                 <DynamicIcon emoji="📜" className="w-5 h-5 text-gold" />
                 <h3 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">

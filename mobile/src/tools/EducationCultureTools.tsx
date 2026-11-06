@@ -76,8 +76,11 @@ export function CbcGradeAgeTool() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Child Year of Birth</Text>
         <TextInput
-          value={birthYear}
-          onChangeText={setBirthYear}
+          value={birthYear === "0" ? "" : birthYear}
+          onChangeText={(txt) => {
+            const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+            setBirthYear(cleaned === "0" ? "" : cleaned);
+          }}
           keyboardType="numeric"
           placeholder="e.g. 2017"
           placeholderTextColor={theme.textMuted}

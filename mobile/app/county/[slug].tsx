@@ -55,6 +55,106 @@ export default function CountyDetailScreen() {
     (c) => c.slug === slug || String(c.code) === slug
   );
 
+  const countyBudget = useMemo(
+    () =>
+      county
+        ? ((budgetsData as any).budgets || []).find(
+            (b: any) => b.code === county.code || b.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : null,
+    [county]
+  );
+
+  const countyRainfall = useMemo(
+    () =>
+      county
+        ? ((rainfallData as any).counties || []).find(
+            (r: any) => r.code === county.code || r.name.toLowerCase() === county.name.toLowerCase()
+          )
+        : null,
+    [county]
+  );
+
+  const countySoils = useMemo(
+    () =>
+      county
+        ? ((soilsData as any).soilTypes || []).filter((s: any) =>
+            (s.counties || s.whereFound || []).some((w: string) => w.toLowerCase().includes(county.name.toLowerCase()))
+          )
+        : [],
+    [county]
+  );
+
+  const countyHospitals = useMemo(
+    () =>
+      county
+        ? ((hospitalsData as any).hospitals || []).filter(
+            (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
+    [county]
+  );
+
+  const countyPostalCodes = useMemo(
+    () =>
+      county
+        ? ((postalData as any).codes || []).filter(
+            (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
+    [county]
+  );
+
+  const countySchools = useMemo(
+    () =>
+      county
+        ? ((rankingsData as any).schools || []).filter(
+            (s: any) => s.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
+    [county]
+  );
+
+  const countyParks = useMemo(
+    () =>
+      county
+        ? ((parksData as any).parks || []).filter((p: any) =>
+            p.county.toLowerCase().includes(county.name.toLowerCase())
+          )
+        : [],
+    [county]
+  );
+
+  const countyForests = useMemo(
+    () =>
+      county
+        ? ((forestsData as any).forests || []).filter((f: any) =>
+            f.county.toLowerCase().includes(county.name.toLowerCase())
+          )
+        : [],
+    [county]
+  );
+
+  const countyAgrovets = useMemo(
+    () =>
+      county
+        ? ((agrovetsData as any).agrovets || []).filter(
+            (a: any) => a.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
+    [county]
+  );
+
+  const countyLanguages = useMemo(
+    () =>
+      county
+        ? ((languagesData as any).languages || []).filter((l: any) =>
+            (l.counties || []).some((cn: string) => cn.toLowerCase().includes(county.name.toLowerCase()))
+          )
+        : [],
+    [county]
+  );
+
   if (!county) {
     return (
       <SafeAreaView style={[styles.container, { backgroundColor: theme.bgPrimary }]}>
@@ -75,86 +175,6 @@ export default function CountyDetailScreen() {
 
   const codeFormatted = String(county.code).padStart(3, "0");
   const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
-
-  const countyBudget = useMemo(
-    () =>
-      ((budgetsData as any).budgets || []).find(
-        (b: any) => b.code === county.code || b.county.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countyRainfall = useMemo(
-    () =>
-      ((rainfallData as any).counties || []).find(
-        (r: any) => r.code === county.code || r.name.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countySoils = useMemo(
-    () =>
-      ((soilsData as any).soilTypes || []).filter((s: any) =>
-        (s.counties || s.whereFound || []).some((w: string) => w.toLowerCase().includes(county.name.toLowerCase()))
-      ),
-    [county]
-  );
-
-  const countyHospitals = useMemo(
-    () =>
-      ((hospitalsData as any).hospitals || []).filter(
-        (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countyPostalCodes = useMemo(
-    () =>
-      ((postalData as any).codes || []).filter(
-        (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countySchools = useMemo(
-    () =>
-      ((rankingsData as any).schools || []).filter(
-        (s: any) => s.county.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countyParks = useMemo(
-    () =>
-      ((parksData as any).parks || []).filter((p: any) =>
-        p.county.toLowerCase().includes(county.name.toLowerCase())
-      ),
-    [county]
-  );
-
-  const countyForests = useMemo(
-    () =>
-      ((forestsData as any).forests || []).filter((f: any) =>
-        f.county.toLowerCase().includes(county.name.toLowerCase())
-      ),
-    [county]
-  );
-
-  const countyAgrovets = useMemo(
-    () =>
-      ((agrovetsData as any).agrovets || []).filter(
-        (a: any) => a.county.toLowerCase() === county.name.toLowerCase()
-      ),
-    [county]
-  );
-
-  const countyLanguages = useMemo(
-    () =>
-      ((languagesData as any).languages || []).filter((l: any) =>
-        (l.counties || []).some((cn: string) => cn.toLowerCase().includes(county.name.toLowerCase()))
-      ),
-    [county]
-  );
 
   const quickServices = [
     {

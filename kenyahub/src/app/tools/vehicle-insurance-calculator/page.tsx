@@ -97,8 +97,13 @@ export default function VehicleInsuranceCalculatorPage() {
           </label>
           <input
             type="number"
-            value={vehicleValue}
-            onChange={(e) => setVehicleValue(Math.max(0, Number(e.target.value)))}
+            inputMode="numeric"
+            value={vehicleValue === 0 ? "" : vehicleValue}
+            onChange={(e) => {
+              const raw = e.target.value.replace(/^0+(?=\d)/, "");
+              setVehicleValue(raw === "" ? 0 : Math.max(0, Number(raw)));
+            }}
+            placeholder="0"
             className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={100000}

@@ -26,14 +26,16 @@ function KESInput({
   label,
   value,
   onChangeText,
-  placeholder = "e.g. 50,000",
+  placeholder = "0",
   subtext,
+  prefix = "KES",
 }: {
   label: string;
   value: string;
   onChangeText: (text: string) => void;
   placeholder?: string;
   subtext?: string;
+  prefix?: string;
 }) {
   const { theme, styles } = useDynamicStyles(createStyles);
   return (
@@ -41,12 +43,15 @@ function KESInput({
       <Text style={styles.inputLabel}>{label}</Text>
       <View style={styles.inputBox}>
         <View style={styles.kesPrefixBox}>
-          <Text style={styles.kesPrefix}>KES</Text>
+          <Text style={styles.kesPrefix}>{prefix}</Text>
         </View>
         <TextInput
           keyboardType="numeric"
-          value={value}
-          onChangeText={onChangeText}
+          value={value === "0" ? "" : value}
+          onChangeText={(txt) => {
+            const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+            onChangeText(cleaned === "0" ? "" : cleaned);
+          }}
           placeholder={placeholder}
           placeholderTextColor={theme.textMuted}
           style={styles.textInput}
@@ -139,9 +144,9 @@ export function PayeCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [salaryText, setSalaryText] = useState("100000");
   const [mode, setMode] = useState<"grossToNet" | "netToGross">("grossToNet");
-  const [pensionText, setPensionText] = useState("0");
-  const [mortgageText, setMortgageText] = useState("0");
-  const [insuranceText, setInsuranceText] = useState("0");
+  const [pensionText, setPensionText] = useState("");
+  const [mortgageText, setMortgageText] = useState("");
+  const [insuranceText, setInsuranceText] = useState("");
   const [showReliefs, setShowReliefs] = useState(false);
   const [showAnnual, setShowAnnual] = useState(false);
   const inputAmount = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
@@ -519,7 +524,12 @@ export function MpesaCalculator() {
   >;
 
   const results = useMemo(() => {
-    const fee = calcMpesaFee(amount, tab);
+    const baseFee = calcMpesaFee(amount, tab);
+    const withdrawFee = includeWithdrawal ? calcMpesaFee(amount, "withdrawAgent") : 0;
+    const fee =
+      baseFee === null
+        ? null
+        : baseFee + (withdrawFee !== null ? withdrawFee : 0);
     const savingTip = findMpesaSavingTip(amount, tab);
     const totalCost = fee !== null ? amount + fee : null;
     const allFees = (Object.entries(txTypes) as [MpesaTxType, any][]).map(
@@ -530,7 +540,7 @@ export function MpesaCalculator() {
       })
     );
     return { fee, savingTip, totalCost, allFees };
-  }, [amount, tab, txTypes]);
+  }, [amount, tab, txTypes, includeWithdrawal]);
 
   return (
     <View style={styles.toolWrap}>
@@ -1505,8 +1515,13 @@ export function WaterBillCalculator() {
         </Text>
         <TextInput
           keyboardType="numeric"
-          value={unitsText}
-          onChangeText={setUnitsText}
+          value={unitsText === "0" ? "" : unitsText}
+          onChangeText={(txt) => {
+            const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+            setUnitsText(cleaned === "0" ? "" : cleaned);
+          }}
+          placeholder="0"
+          placeholderTextColor={theme.textMuted}
           style={[
             styles.textInput,
             {
@@ -1661,6 +1676,15 @@ export function KraCarImportCalculator() {
         ))}
       </ExpandablePillRow>
 
+      <KESInput
+        label="Vehicle CIF Price (USD — Cost, Insurance & Freight to Mombasa)"
+        value={cifUsdText}
+        onChangeText={setCifUsdText}
+        prefix="USD"
+        placeholder={String(preset.avgCifUsd)}
+        subtext={`KRA Base CRSP: KES ${preset.crspKes.toLocaleString()} · ${preset.cc}cc ${preset.fuel}`}
+      />
+
       <Text style={styles.inputLabel}>Vehicle Age (Depreciation Band)</Text>
       <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         {crspData.depreciationBands.map((b, idx) => (
@@ -1737,6 +1761,14 @@ export function MjengoConstructionCalculator() {
           </Pressable>
         ))}
       </ExpandablePillRow>
+
+      <KESInput
+        label="Custom Plinth / Floor Area (Square Meters — m²)"
+        value={sqmText}
+        onChangeText={setSqmText}
+        prefix="m²"
+        placeholder="130"
+      />
 
       <Text style={styles.inputLabel}>Region & Quarry Zone</Text>
       <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
@@ -1950,14 +1982,16 @@ const createStyles = (theme: ThemeColors) =>
     rowLabel: {
       fontSize: 12.5,
       color: theme.textSecondary,
-      flexShrink: 0,
-      maxWidth: "48%",
+      flex: 1,
+      flexShrink: 1,
+      paddingRight: 8,
     },
     rowValue: {
       fontSize: 12.5,
       fontWeight: "700",
       color: theme.textPrimary,
-      flex: 1,
+      flexShrink: 0,
+      maxWidth: "48%",
       textAlign: "right",
     },
     subHeading: {

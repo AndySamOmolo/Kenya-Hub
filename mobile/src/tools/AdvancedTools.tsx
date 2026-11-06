@@ -80,8 +80,13 @@ export function SolarRoiTool() {
           <Text style={[styles.kesPrefix, { color: theme.gold }]}>KES</Text>
           <TextInput
             keyboardType="numeric"
-            value={monthlyBill}
-            onChangeText={setMonthlyBill}
+            value={monthlyBill === "0" ? "" : monthlyBill}
+            onChangeText={(txt) => {
+              const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+              setMonthlyBill(cleaned === "0" ? "" : cleaned);
+            }}
+            placeholder="0"
+            placeholderTextColor={theme.textMuted}
             style={[styles.bigInput, { color: theme.textPrimary }]}
           />
         </View>
@@ -131,8 +136,13 @@ export function SolarRoiTool() {
           <Text style={[styles.kesPrefix, { color: theme.gold, fontSize: 16 }]}>KES</Text>
           <TextInput
             keyboardType="numeric"
-            value={costPerKw}
-            onChangeText={setCostPerKw}
+            value={costPerKw === "0" ? "" : costPerKw}
+            onChangeText={(txt) => {
+              const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+              setCostPerKw(cleaned === "0" ? "" : cleaned);
+            }}
+            placeholder="130000"
+            placeholderTextColor={theme.textMuted}
             style={[styles.bigInput, { color: theme.textPrimary, fontSize: 20 }]}
           />
         </View>
@@ -373,7 +383,7 @@ export function WardConstituencyFinderTool({ onScrollToTop }: { onScrollToTop?: 
           { backgroundColor: theme.bgCard, borderColor: theme.border },
         ]}
       >
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
           <Text style={[styles.infoTitle, { color: theme.textPrimary }]}>
             {currentCounty.name} County (#{String(currentCounty.code).padStart(3, "0")})
           </Text>
@@ -710,7 +720,7 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
     "Biology",
     "Physics",
     "Chemistry",
-    "History & Government",
+    "History",
     "Geography",
     "CRE",
     "Business Studies",
@@ -729,7 +739,7 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
     Biology: "A-",
     Physics: "B+",
     Chemistry: "A",
-    "History & Government": "B+",
+    History: "B+",
     "Business Studies": "A-",
   });
 
@@ -844,7 +854,7 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
         </View>
       </View>
 
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
         <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
           Select Your KCSE Subject Grades ({displayedSubjects.length} / {allSubjects.length})
         </Text>
@@ -924,7 +934,7 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
       </View>
 
       {/* Sort Controls */}
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8, marginTop: 10 }}>
         <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
           Degree Clusters ({clusterResults.length})
         </Text>
@@ -1352,14 +1362,13 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     borderWidth: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    flexDirection: "column",
+    alignItems: "stretch",
+    gap: 8,
   },
   subjName: {
     fontSize: 12,
     fontWeight: "700",
-    width: 110,
   },
   gradeScroll: {
     gap: 6,

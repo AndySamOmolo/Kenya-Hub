@@ -20,7 +20,7 @@ const DEFAULT_CLUSTER_GRADES: Record<string, string> = {
   Biology: "B+",
   Physics: "B+",
   Chemistry: "A-",
-  "History and Government": "A-",
+  History: "A-",
   "Business Studies": "A",
 };
 

@@ -304,7 +304,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               <DynamicIcon emoji="🚏" className="w-4 h-4 text-gold" /> Stage Stopovers ({stageDistances.length})
             </h2>
 
-            <div className="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-kenya-green before:via-gold before:to-kenya-red">
+            <div className="relative pl-7 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-kenya-green before:via-gold before:to-kenya-red">
               {stageDistances.map((stage, idx) => {
                 const isFirst = idx === 0;
                 const isLast = idx === stageDistances.length - 1;
@@ -313,7 +313,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                   <div key={`${stage.order}-${stage.name}`} className="relative flex items-start gap-3">
                     {/* Stage dot marker */}
                     <div
-                      className={`absolute -left-6 top-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[0.65rem] font-bold text-black border-2 border-white shadow-sm ${
+                      className={`absolute -left-7 top-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[0.65rem] font-bold text-black border-2 border-white shadow-sm ${
                         isFirst ? "bg-kenya-green" : isLast ? "bg-kenya-red" : "bg-gold"
                       }`}
                     >

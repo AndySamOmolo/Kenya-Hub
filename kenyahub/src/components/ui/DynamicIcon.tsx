@@ -20,9 +20,9 @@ import {
   RefreshCw, Users2, Activity, Wind, Badge, AlertCircle,
   HomeIcon, Hammer, BaggageClaim, Medal, Flame, Brain, Cherry, Coffee,
   ShoppingCart, Ship, TrendingDown, ArrowRightLeft, Beef, Milk, CarFront,
-  Beer, Wrench, TrafficCone, Anchor, Newspaper, Bookmark,
+  Beer, Wrench, TrafficCone,
   Square, Star, Clock, Circle, ParkingSquare, Copyright, Info, Layers,
-  BookOpen, Compass, Award, Heart, Eye, Volume2
+  BookOpen, Compass, Award, Heart, Eye, Volume2, Bookmark, Tag
 } from "lucide-react";
 
 interface DynamicIconProps {
@@ -72,7 +72,6 @@ const iconMap: Record<string, React.ElementType> = {
   BusFront,
   Car,
   Ship,
-  Anchor,
   Luggage,
   Home,
   Building,
@@ -158,29 +157,24 @@ const iconMap: Record<string, React.ElementType> = {
   Amphora,
   Ruler,
   FlaskConical,
-  Newspaper,
   Bookmark,
-  // Lowercase aliases
-  shuffle: RefreshCw,
-  zap: Zap,
-  grid: Layers,
-  hash: Hash,
-  calculator: Calculator,
-  "phone-portrait": Smartphone,
-  flash: Zap,
-  language: MessageCircle,
-  school: School,
-  bus: BusFront,
-  map: Map,
-  "trending-up": TrendingUp,
-  text: Type,
-  list: ClipboardList,
-  "card-outline": CreditCard,
-  "bar-chart-outline": BarChart,
-  "medkit-outline": Hospital,
-  "mail-outline": Mail,
+  Tag,
 
   // Emojis
+  "📘": BookOpen,
+  "📰": FileText,
+  "🔖": Bookmark,
+  "🏷️": Tag,
+  "🏷": Tag,
+  "💐": Sparkles,
+  "🌸": Sparkles,
+  "🌺": Sparkles,
+  "🌻": Sun,
+  "🌼": Sun,
+  "🌷": Sparkles,
+  "🌹": Heart,
+  "🥀": HeartCrack,
+  "🪷": Sparkles,
   "🧱": Building2,
   "💉": Hospital,
   "🐾": PawPrint,
@@ -208,9 +202,6 @@ const iconMap: Record<string, React.ElementType> = {
   "🧮": Calculator,
   "📱": Smartphone,
   "📚": Book,
-  "📘": BookOpen,
-  "📑": Bookmark,
-  "📰": Newspaper,
   "👶": Baby,
   "🎯": Target,
   "📝": FileText,
@@ -266,7 +257,6 @@ const iconMap: Record<string, React.ElementType> = {
   "✏": PenTool,
   "✏️": PenTool,
   "✍": PenTool,
-  "✍️": PenTool,
   "⚙": Settings,
   "⚙️": Settings,
   "📄": File,
@@ -372,7 +362,6 @@ const iconMap: Record<string, React.ElementType> = {
   "🏦": Landmark,
   "🚢": Ship,
   "🛶": Ship,
-  "⚓": Anchor,
   "📉": TrendingDown,
   "💱": ArrowRightLeft,
   "🥩": Beef,
@@ -404,11 +393,13 @@ const iconMap: Record<string, React.ElementType> = {
 export default function DynamicIcon({ emoji, className = "w-5 h-5" }: DynamicIconProps) {
   if (!emoji) return null;
 
+  const finalClass = className.includes("shrink-") ? className : `${className} shrink-0`;
+
   if (emoji === "🇰🇪" || emoji.includes("🇰🇪")) {
-    return <MapPin className={className} />;
+    return <MapPin className={finalClass} />;
   }
   if (emoji === "👨‍👩‍👧‍👦") {
-    return <Users2 className={className} />;
+    return <Users2 className={finalClass} />;
   }
 
   const trimmed = emoji.trim();
@@ -416,5 +407,5 @@ export default function DynamicIcon({ emoji, className = "w-5 h-5" }: DynamicIco
 
   const IconComponent = iconMap[trimmed] || iconMap[cleanEmoji] || Sparkles;
 
-  return <IconComponent className={className} />;
+  return <IconComponent className={finalClass} />;
 }

@@ -22,28 +22,23 @@ const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep
 export default function CountyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const [constSort, setConstSort] = useState<"order" | "alpha">("order");
-  const county = countiesData.counties.find((c) => c.slug === slug) || countiesData.counties[0];
-  const isMissingCounty = !countiesData.counties.some((c) => c.slug === slug);
-  const codeStr = county.code.toString().padStart(3, "0");
-  const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
-  const popPerConstituency =
-    county.constituencies.length > 0
-      ? Math.round(county.population / county.constituencies.length)
-      : county.population;
+  const county = countiesData.counties.find((c) => c.slug === slug);
 
   // 1. County Budget (FY 2025/26)
   const budget = useMemo(
     () =>
-      ((budgetsData as any).budgets || []).find(
-        (b: any) => b.code === county.code || b.county.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((budgetsData as any).budgets || []).find(
+            (b: any) => b.code === county.code || b.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : null,
     [county]
   );
 
   const perCapitaEquitableShare = useMemo(() => {
-    if (!budget || !county.population) return 0;
+    if (!budget || !county?.population) return 0;
     return Math.round((budget.allocation * 1_000_000) / county.population);
-  }, [budget, county.population]);
+  }, [budget, county]);
 
   const osrSharePct = useMemo(() => {
     if (!budget || !budget.totalRevenue) return 0;
@@ -53,103 +48,134 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
   // 2. County Rainfall & Climate
   const rainfall = useMemo(
     () =>
-      ((rainfallData as any).counties || []).find(
-        (r: any) => r.code === county.code || r.name.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((rainfallData as any).counties || []).find(
+            (r: any) => r.code === county.code || r.name.toLowerCase() === county.name.toLowerCase()
+          )
+        : null,
     [county]
   );
 
   // 3. Matching Agricultural Soil Types
   const countySoils = useMemo(
     () =>
-      ((soilsData as any).soilTypes || []).filter((s: any) =>
-        (s.counties || s.whereFound || []).some((w: string) =>
-          w.toLowerCase().includes(county.name.toLowerCase())
-        )
-      ),
+      county
+        ? ((soilsData as any).soilTypes || []).filter((s: any) =>
+            (s.counties || s.whereFound || []).some((w: string) =>
+              w.toLowerCase().includes(county.name.toLowerCase())
+            )
+          )
+        : [],
     [county]
   );
 
   // 4. SHA / SHIF Accredited Hospitals in County
   const countyHospitals = useMemo(
     () =>
-      ((hospitalsData as any).hospitals || []).filter(
-        (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((hospitalsData as any).hospitals || []).filter(
+            (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
     [county]
   );
 
   // 5. Posta Kenya Postal Codes in County
   const countyPostalCodes = useMemo(
     () =>
-      ((postalData as any).codes || []).filter(
-        (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((postalData as any).codes || []).filter(
+            (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
     [county]
   );
 
   // 6. Top KCSE Schools in County
   const countySchools = useMemo(
     () =>
-      ((rankingsData as any).schools || []).filter(
-        (s: any) => s.county.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((rankingsData as any).schools || []).filter(
+            (s: any) => s.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
     [county]
   );
 
   // 7. National Parks, Forest Reserves & Agrovets in County
   const countyParks = useMemo(
     () =>
-      ((parksData as any).parks || []).filter((p: any) =>
-        p.county.toLowerCase().includes(county.name.toLowerCase())
-      ),
+      county
+        ? ((parksData as any).parks || []).filter((p: any) =>
+            p.county.toLowerCase().includes(county.name.toLowerCase())
+          )
+        : [],
     [county]
   );
 
   const countyForests = useMemo(
     () =>
-      ((forestsData as any).forests || []).filter((f: any) =>
-        f.county.toLowerCase().includes(county.name.toLowerCase())
-      ),
+      county
+        ? ((forestsData as any).forests || []).filter((f: any) =>
+            f.county.toLowerCase().includes(county.name.toLowerCase())
+          )
+        : [],
     [county]
   );
 
   const countyAgrovets = useMemo(
     () =>
-      ((agrovetsData as any).agrovets || []).filter(
-        (a: any) => a.county.toLowerCase() === county.name.toLowerCase()
-      ),
+      county
+        ? ((agrovetsData as any).agrovets || []).filter(
+            (a: any) => a.county.toLowerCase() === county.name.toLowerCase()
+          )
+        : [],
     [county]
   );
 
   // 8. Languages spoken in County
   const countyLanguages = useMemo(
     () =>
-      ((languagesData as any).languages || []).filter((l: any) =>
-        (l.counties || []).some((cn: string) =>
-          cn.toLowerCase().includes(county.name.toLowerCase())
-        )
-      ),
+      county
+        ? ((languagesData as any).languages || []).filter((l: any) =>
+            (l.counties || []).some((cn: string) =>
+              cn.toLowerCase().includes(county.name.toLowerCase())
+            )
+          )
+        : [],
     [county]
   );
 
   const sortedConstituencies = useMemo(() => {
+    if (!county) return [];
     const indexed = county.constituencies.map((name, i) => ({ name, num: i + 1 }));
     if (constSort === "alpha") {
       return [...indexed].sort((a, b) => a.name.localeCompare(b.name));
     }
     return indexed;
-  }, [county.constituencies, constSort]);
+  }, [county, constSort]);
 
   // Neighboring / Other Counties for internal linking
   const otherCounties = useMemo(() => {
+    if (!county) return [];
     const idx = countiesData.counties.findIndex((c) => c.code === county.code);
     const list = [];
     for (let offset = 1; offset <= 4; offset++) {
       list.push(countiesData.counties[(idx + offset) % countiesData.counties.length]);
     }
     return list;
-  }, [county.code]);
+  }, [county]);
+
+  if (!county) {
+    notFound();
+  }
+
+  const codeStr = county.code.toString().padStart(3, "0");
+  const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
+  const popPerConstituency =
+    county.constituencies.length > 0
+      ? Math.round(county.population / county.constituencies.length)
+      : county.population;
 
   // County-specific FAQs
   const countyFaqs = [
@@ -229,10 +255,6 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       acceptedAnswer: { "@type": "Answer", text: q.answer },
     })),
   };
-
-  if (isMissingCounty) {
-    notFound();
-  }
 
   return (
     <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10 space-y-5 sm:space-y-10">

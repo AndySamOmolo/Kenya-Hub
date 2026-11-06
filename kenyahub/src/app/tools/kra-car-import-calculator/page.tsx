@@ -173,7 +173,7 @@ export default function KraCarImportCalculatorPage() {
                   type="text"
                   inputMode="numeric"
                   value={customCrsp}
-                  onChange={(e) => setCustomCrsp(e.target.value.replace(/[^0-9]/g, ""))}
+                  onChange={(e) => setCustomCrsp(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
                   className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
                 />
               </div>
@@ -230,7 +230,7 @@ export default function KraCarImportCalculatorPage() {
                 type="text"
                 inputMode="numeric"
                 value={cifUsd}
-                onChange={(e) => setCifUsd(e.target.value.replace(/[^0-9]/g, ""))}
+                onChange={(e) => setCifUsd(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
               />
             </div>

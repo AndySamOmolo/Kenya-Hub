@@ -12,20 +12,6 @@ export const metadata: Metadata = {
     "290 constituencies in Kenya",
     "Kenya counties population and area",
   ],
-  authors: [{ name: "KenyaHub Editorial Team", url: "https://kenyahub.me/about/" }],
-  creator: "KenyaHub",
-  publisher: "KenyaHub",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
   openGraph: {
     title: "Kenya 47 Counties Hub — Governors, Budgets, Constituencies & Climate | KenyaHub",
     description:
@@ -52,11 +38,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://kenyahub.me/county/",
-    languages: {
-      "en-KE": "https://kenyahub.me/county/",
-      en: "https://kenyahub.me/county/",
-      "x-default": "https://kenyahub.me/county/",
-    },
   },
 };
 

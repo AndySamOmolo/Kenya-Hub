@@ -38,9 +38,6 @@ export async function generateMetadata({
       `common ${course.config.name} phrases`,
       "learn Kenyan languages online",
     ],
-    authors: [{ name: "KenyaHub Editorial Team", url: "https://kenyahub.me/about/" }],
-    creator: "KenyaHub",
-    publisher: "KenyaHub",
     robots: {
       index: true,
       follow: true,

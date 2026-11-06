@@ -107,8 +107,13 @@ export default function StampDutyCalculatorPage() {
           </label>
           <input
             type="number"
-            value={propertyValue}
-            onChange={(e) => setPropertyValue(Math.max(0, Number(e.target.value)))}
+            inputMode="numeric"
+            value={propertyValue === 0 ? "" : propertyValue}
+            onChange={(e) => {
+              const raw = e.target.value.replace(/^0+(?=\d)/, "");
+              setPropertyValue(raw === "" ? 0 : Math.max(0, Number(raw)));
+            }}
+            placeholder="0"
             className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
             min={0}
             step={100000}

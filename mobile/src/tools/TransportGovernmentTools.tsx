@@ -1221,7 +1221,7 @@ export function PassportFeesTool() {
               borderBottomColor: theme.border,
             }}
           >
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
               <Text style={{ fontSize: 13.5, fontWeight: "800", color: theme.textPrimary, flex: 1 }}>
                 {f.type}
               </Text>
@@ -1287,7 +1287,7 @@ export function PassportFeesTool() {
               borderBottomColor: theme.border,
             }}
           >
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
               <Text style={{ fontSize: 13.5, fontWeight: "800", color: theme.textPrimary }}>
                 {idItem.type}
               </Text>
@@ -1327,7 +1327,7 @@ export function PassportFeesTool() {
               borderBottomColor: theme.border,
             }}
           >
-            <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
               <Text style={{ fontSize: 13, fontWeight: "700", color: theme.textPrimary }}>
                 {doc.type}
               </Text>
@@ -1473,7 +1473,7 @@ export function MatatuRoutesTool({ onScrollToTop }: { onScrollToTop?: () => void
       </View>
 
       {/* Fare & Sort Controls */}
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
         <View style={{ flexDirection: "row", gap: 6 }}>
           {(
             [
@@ -1799,14 +1799,16 @@ const createStyles = (theme: ThemeColors) =>
     rowLabel: {
       fontSize: 13,
       color: theme.textSecondary,
-      flexShrink: 0,
-      maxWidth: "46%",
+      flex: 1,
+      flexShrink: 1,
+      paddingRight: 8,
     },
     rowValue: {
       fontSize: 13,
       fontWeight: "700",
       color: theme.textPrimary,
-      flex: 1,
+      flexShrink: 0,
+      maxWidth: "48%",
       textAlign: "right",
     },
     carrierHeader: {

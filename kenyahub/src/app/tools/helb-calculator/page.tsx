@@ -82,8 +82,13 @@ export default function HELBCalculatorPage() {
             </label>
             <input
               type="number"
-              value={loanAmount}
-              onChange={(e) => setLoanAmount(Math.max(0, Number(e.target.value)))}
+              inputMode="numeric"
+              value={loanAmount === 0 ? "" : loanAmount}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setLoanAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
+              }}
+              placeholder="0"
               className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               step={10000}
@@ -112,8 +117,13 @@ export default function HELBCalculatorPage() {
             </label>
             <input
               type="number"
-              value={grossSalary}
-              onChange={(e) => setGrossSalary(Math.max(0, Number(e.target.value)))}
+              inputMode="numeric"
+              value={grossSalary === 0 ? "" : grossSalary}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setGrossSalary(raw === "" ? 0 : Math.max(0, Number(raw)));
+              }}
+              placeholder="0"
               className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               step={5000}

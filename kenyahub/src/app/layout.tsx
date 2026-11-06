@@ -71,10 +71,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://kenyahub.me/",
     languages: {
-        "en-KE": "https://kenyahub.me/",
-        en: "https://kenyahub.me/",
-        "x-default": "https://kenyahub.me/",
-      },
+      "en-KE": "https://kenyahub.me/",
+      en: "https://kenyahub.me/",
+      "x-default": "https://kenyahub.me/",
+    },
   },
   openGraph: {
     title: "KenyaHub — Free Tools, Calculators & Public Data for Every Kenyan",

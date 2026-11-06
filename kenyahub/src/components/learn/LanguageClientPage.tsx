@@ -253,7 +253,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     return (
       <div
         data-error-page="true"
-        data-nosnippet="true"
         className="mx-auto max-w-2xl px-4 py-16 text-center"
       >
         <h1 className="text-xl font-bold text-text-primary">

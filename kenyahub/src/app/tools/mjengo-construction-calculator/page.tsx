@@ -17,7 +17,7 @@ export default function MjengoConstructionCalculatorPage() {
   const [regionId, setRegionId] = useState(mjengoData.regions[0].id);
   const [finishId, setFinishId] = useState(mjengoData.finishTiers[1].id);
   const [floorArea, setFloorArea] = useState("130");
-  const [perimeterWallMeters, setPerimeterWallMeters] = useState("0");
+  const [perimeterWallMeters, setPerimeterWallMeters] = useState("");
 
   const region = useMemo(
     () => mjengoData.regions.find((r) => r.id === regionId) || mjengoData.regions[0],
@@ -119,7 +119,7 @@ export default function MjengoConstructionCalculatorPage() {
                 type="text"
                 inputMode="numeric"
                 value={perimeterWallMeters}
-                onChange={(e) => setPerimeterWallMeters(e.target.value.replace(/[^0-9]/g, ""))}
+                onChange={(e) => setPerimeterWallMeters(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
               />
             </div>

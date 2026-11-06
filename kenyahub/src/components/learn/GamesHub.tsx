@@ -1207,7 +1207,7 @@ function MemoryGame({ allWords, languageName }: GameProps) {
             <button
               key={card.id}
               onClick={() => handleFlip(card.id)}
-              className={`relative flex aspect-square items-center justify-center rounded-xl border-2 p-2 text-center transition-all ${
+              className={`relative flex aspect-square items-center justify-center rounded-xl border-2 px-2 pt-2 pb-4 sm:pb-5 text-center transition-all ${
                 isMatched
                   ? "border-kenya-green/40 bg-kenya-green/10"
                   : isFlipped

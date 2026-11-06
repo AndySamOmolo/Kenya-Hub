@@ -135,9 +135,9 @@ export default function DrivingLicenseGuidePage() {
         ) : (
           <div className="space-y-6">
             {/* Step by step process */}
-            <div className="relative border-l-2 border-border ml-3 sm:ml-6 space-y-8">
+            <div className="relative border-l-2 border-border ml-4 sm:ml-6 space-y-8">
               {licenseData.applicationProcess.map((step, i) => (
-                <div key={i} className="relative pl-6 sm:pl-8">
+                <div key={i} className="relative pl-7 sm:pl-8">
                   {/* Step number dot */}
                   <div className="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-bg-card border-2 border-gold flex items-center justify-center text-gold font-bold font-[family-name:var(--font-outfit)]">
                     {step.step}

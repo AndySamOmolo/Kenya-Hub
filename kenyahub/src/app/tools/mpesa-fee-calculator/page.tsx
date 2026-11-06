@@ -127,8 +127,13 @@ export default function MpesaFeeCalculatorPage() {
             </label>
             <input
               type="number"
-              value={amount}
-              onChange={(e) => setAmount(Math.max(0, Number(e.target.value)))}
+              inputMode="numeric"
+              value={amount === 0 ? "" : amount}
+              onChange={(e) => {
+                const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                setAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
+              }}
+              placeholder="0"
               className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
               min={0}
               max={250000}
