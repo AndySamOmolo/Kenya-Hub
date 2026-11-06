@@ -21,13 +21,9 @@ const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep
 
 export default function CountyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
-  const county = countiesData.counties.find((c) => c.slug === slug);
-
-  if (!county) {
-    notFound();
-  }
-
   const [constSort, setConstSort] = useState<"order" | "alpha">("order");
+  const county = countiesData.counties.find((c) => c.slug === slug) || countiesData.counties[0];
+  const isMissingCounty = !countiesData.counties.some((c) => c.slug === slug);
   const codeStr = county.code.toString().padStart(3, "0");
   const density = county.area > 0 ? Math.round(county.population / county.area) : 0;
   const popPerConstituency =
@@ -233,6 +229,10 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       acceptedAnswer: { "@type": "Answer", text: q.answer },
     })),
   };
+
+  if (isMissingCounty) {
+    notFound();
+  }
 
   return (
     <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10 space-y-5 sm:space-y-10">

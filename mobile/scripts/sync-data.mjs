@@ -48,6 +48,7 @@ for (const df of explicitDataFiles) {
 }
 
 for (const lang of ["swahili", "kalenjin", "mijikenda", "meru", "somali", "daasanach"]) {
+  if (!existsSync(resolve(source, "data/courses", lang))) continue;
   ensureDir(resolve(destination, "data/courses", lang));
   for (const fn of ["course.ts", "grammar-reference.ts"]) {
     const s = resolve(source, "data/courses", lang, fn);

@@ -24,6 +24,7 @@ export async function generateMetadata({
   );
   const budgetStr = budget ? `, KES ${budget.allocation.toLocaleString()}M FY 2025/26 budget` : "";
 
+  const canonicalUrl = `https://kenyahub.me/county/${county.slug}/`;
   const title = `${county.name} County (#${codeStr}) — Governor, Constituencies, Budget & Services`;
   const description = `Complete guide to ${county.name} County (#${codeStr}, HQ: ${county.capital}). Governor ${county.governor}, Senator ${county.senator}, ${county.constituencies.length} constituencies${budgetStr}, rainfall climate, SHA hospitals, and postal codes.`;
 
@@ -39,13 +40,27 @@ export async function generateMetadata({
       `${county.capital} postal code`,
       `hospitals in ${county.name} County`,
     ],
+    authors: [{ name: "KenyaHub Editorial Team", url: "https://kenyahub.me/about/" }],
+    creator: "KenyaHub",
+    publisher: "KenyaHub",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title: `${title} | KenyaHub`,
       description,
       type: "website",
       locale: "en_KE",
       siteName: "KenyaHub",
-      url: `https://kenyahub.me/county/${county.slug}/`,
+      url: canonicalUrl,
       images: [
         {
           url: "/og-image.png",
@@ -62,7 +77,12 @@ export async function generateMetadata({
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `https://kenyahub.me/county/${county.slug}/`,
+      canonical: canonicalUrl,
+      languages: {
+        "en-KE": canonicalUrl,
+        en: canonicalUrl,
+        "x-default": canonicalUrl,
+      },
     },
   };
 }

@@ -251,7 +251,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   if (!course) {
     return (
-      <div className="mx-auto max-w-2xl px-4 py-16 text-center">
+      <div
+        data-error-page="true"
+        data-nosnippet="true"
+        className="mx-auto max-w-2xl px-4 py-16 text-center"
+      >
         <h1 className="text-xl font-bold text-text-primary">
           Course Not Found
         </h1>
@@ -317,7 +321,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     <ToolShell
       tool={courseTool}
       faq={courseFaq}
-      breadcrumbSuffix={[{ label: course.config.name }]}
+      breadcrumbSuffix={[
+        {
+          label: course.config.name,
+          href: `/tools/learn/${course.config.id}/`,
+        },
+      ]}
       hideHeader={view === "playing"}
       hideFooter={view === "playing"}
       hideSource
@@ -398,16 +407,18 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       )}
 
       {view === "playing" && activeLesson ? (
-        <LessonPlayer
-          skill={activeLesson.skill}
-          level={activeLesson.level}
-          progress={progress}
-          languageName={course.config.name}
-          onComplete={handleLessonComplete}
-          onQuit={handleQuitLesson}
-          reviewItems={activeLesson.reviewItems}
-          reviewOnly={activeLesson.reviewOnly}
-        />
+        <div data-adsense-pause="true">
+          <LessonPlayer
+            skill={activeLesson.skill}
+            level={activeLesson.level}
+            progress={progress}
+            languageName={course.config.name}
+            onComplete={handleLessonComplete}
+            onQuit={handleQuitLesson}
+            reviewItems={activeLesson.reviewItems}
+            reviewOnly={activeLesson.reviewOnly}
+          />
+        </div>
       ) : view === "modules" ? (
         <div className="mx-auto max-w-3xl space-y-5 pb-8">
           <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-3.5">
@@ -529,11 +540,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           </div>
         </div>
       ) : view === "games" ? (
-        <GamesHub
-          units={course.units}
-          languageName={course.config.name}
-          onBack={() => setView("lessons")}
-        />
+        <div data-adsense-pause="true">
+          <GamesHub
+            units={course.units}
+            languageName={course.config.name}
+            onBack={() => setView("lessons")}
+          />
+        </div>
       ) : view === "grammar" && course.grammarSections ? (
         <GrammarView
           sections={course.grammarSections}

@@ -38,6 +38,20 @@ export async function generateMetadata({
       `common ${course.config.name} phrases`,
       "learn Kenyan languages online",
     ],
+    authors: [{ name: "KenyaHub Editorial Team", url: "https://kenyahub.me/about/" }],
+    creator: "KenyaHub",
+    publisher: "KenyaHub",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title: `${title} | KenyaHub`,
       description: course.config.description,
@@ -65,6 +79,7 @@ export async function generateMetadata({
       languages: {
         "en-KE": canonicalUrl,
         en: canonicalUrl,
+        "x-default": canonicalUrl,
       },
     },
   };
@@ -108,38 +123,11 @@ export default async function LanguagePage({
     },
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `How can I learn ${displayLang} online for free?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `KenyaHub offers a free, self-paced interactive ${displayLang} course featuring structured units, vocabulary flashcards, grammar breakdowns, sentence-building exercises, and cultural notes that run directly in your browser without registration.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `Where is ${displayLang} spoken in Kenya?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${course.config.description} You can also cross-reference words across 22 Kenyan languages using the KenyaHub Kenyan Languages Translator.`,
-        },
-      },
-    ],
-  };
-
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <LanguageClientPage languageId={language} />
     </>

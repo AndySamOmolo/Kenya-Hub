@@ -1,4 +1,5 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
+import { DynamicIcon } from "../components/DynamicIcon";
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import {
   View,

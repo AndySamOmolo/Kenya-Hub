@@ -73,6 +73,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
       languages: {
         "en-KE": canonicalUrl,
         en: canonicalUrl,
+        "x-default": canonicalUrl,
       },
     },
   };

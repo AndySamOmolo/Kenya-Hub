@@ -12,8 +12,27 @@ export const metadata: Metadata = {
     "cost of building a house in Kenya 2026",
     "Kenyan languages and proverbs blog",
   ],
+  authors: [{ name: "KenyaHub Editorial Team", url: "https://kenyahub.me/about/" }],
+  creator: "KenyaHub",
+  publisher: "KenyaHub",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://kenyahub.me/blog/",
+    languages: {
+      "en-KE": "https://kenyahub.me/blog/",
+      en: "https://kenyahub.me/blog/",
+      "x-default": "https://kenyahub.me/blog/",
+    },
   },
   openGraph: {
     title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",

@@ -138,7 +138,11 @@ export default function ToolShell({
     name: tool.title,
     alternateName: tool.shortTitle,
     description: tool.description,
-    url: `https://kenyahub.me/tools/${tool.slug}/`,
+    url:
+      suffixBreadcrumbItems.length > 0 &&
+      suffixBreadcrumbItems[suffixBreadcrumbItems.length - 1].item
+        ? suffixBreadcrumbItems[suffixBreadcrumbItems.length - 1].item
+        : `https://kenyahub.me/tools/${tool.slug}/`,
     applicationCategory: "UtilityApplication",
     applicationSubCategory: category?.name || "Kenyan Public Utility",
     operatingSystem: "Any",

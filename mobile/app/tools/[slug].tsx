@@ -78,10 +78,10 @@ interface ToolGuideEntry {
 
 export default function ToolDetailScreen() {
   const { slug, lang, tab } = useLocalSearchParams<{ slug: string; lang?: string; tab?: string }>();
-  const isLanguageCourseScreen = tool?.slug === "learn" || tool?.slug === "kikuyu-proverbs";
   const router = useRouter();
   const { theme } = useTheme();
   const tool = TOOLS.find((item) => item.slug === slug);
+  const isLanguageCourseScreen = tool?.slug === "learn" || tool?.slug === "kikuyu-proverbs";
   const [saved, setSaved] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const scrollRef = useRef<ScrollView>(null);

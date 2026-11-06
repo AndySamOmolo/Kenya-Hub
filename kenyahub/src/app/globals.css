@@ -1093,3 +1093,9 @@
   }
 }
 }
+
+/* Hide Google Auto Ads immediately on non-content, legal, admin, 404, or interactive quiz screens */
+html[data-adsense-state="paused"] .google-auto-placed,
+html[data-adsense-state="paused"] ins.adsbygoogle {
+  display: none !important;
+}
