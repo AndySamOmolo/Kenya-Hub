@@ -40,6 +40,7 @@ const explicitDataFiles = [
   "tool-guides.json",
   "kikuyu-proverbs.json",
   "blog-posts.ts",
+  "language-identity.ts",
   "courses/metadata.ts",
   "dictionaries/metadata.ts",
 ];

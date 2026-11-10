@@ -23,6 +23,7 @@ import {
 import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
 import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
+import { getLanguageIdentity } from "@/data/language-identity";
 import { INITIAL_RANDOM_WORDS } from "@/data/language-sources";
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToTopIfScrolled } from "@/lib/scroll";

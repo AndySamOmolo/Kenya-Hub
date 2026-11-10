@@ -14,6 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useDynamicStyles, ThemeColors } from "../theme";
 
+import { getLanguageIdentity } from "../shared/data/language-identity";
 import {
   ALL_DICT_METAS,
   DICT_META_MAP,
