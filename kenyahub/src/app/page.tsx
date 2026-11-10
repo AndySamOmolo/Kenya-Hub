@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { PUBLISHED_COURSES } from "@/data/courses/registry";
+import { getLanguageIdentity } from "@/data/language-identity";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
@@ -116,17 +117,17 @@ export default function HomePage() {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-kenya-green-light" />
                 </span>
                 <span className="text-xs font-semibold text-gold tracking-wide">
-                  22 Kenyan Languages Hub · {TOOLS.length} Interactive Calculators · 47 Counties
+                  22 Kenyan Languages Hub · {TOOLS.length} Interactive Tools · 47 Counties
                 </span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.15] tracking-tight mb-4 sm:mb-6">
                 Learn <span className="gradient-text-kenya">Kenyan languages</span>{" "}
-                &amp; master everyday Kenyan tools
+                &amp; everyday public tools
               </h1>
 
               <p className="text-sm sm:text-lg text-text-secondary leading-relaxed mb-6 sm:mb-9 max-w-2xl">
-                Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential calculators for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
+                Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -146,7 +147,7 @@ export default function HomePage() {
                   href="/tools/"
                   className="btn-outline text-sm sm:text-base px-5 py-3 sm:px-6 sm:py-3.5"
                 >
-                  All {TOOLS.length} Calculators
+                  All {TOOLS.length} Tools
                 </Link>
               </div>
             </div>
@@ -237,36 +238,33 @@ export default function HomePage() {
                 View all {PUBLISHED_COURSES.length} courses →
               </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5 sm:gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3">
               {PUBLISHED_COURSES.slice(0, 12).map(({ config, units }) => {
                 const skillCount = units.reduce((s, u) => s + u.skills.length, 0);
+                const identity = getLanguageIdentity(config.id);
                 return (
                   <Link
                     key={config.id}
                     href={`/tools/learn/${config.id}/`}
-                    className="group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3.5 transition-all flex flex-col justify-between"
+                    className="group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-2.5 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs"
                   >
                     <div>
-                      <div className="flex items-center justify-between gap-1.5 mb-1">
-                        <span
-                          className="w-2.5 h-2.5 rounded-full shrink-0"
-                          style={{ backgroundColor: config.color }}
-                        />
-                        <span className="text-[0.6875rem] text-text-muted font-medium">
+                      <div className="flex items-center justify-between gap-1 mb-1.5 flex-wrap">
+                        <span className="text-[0.625rem] font-bold text-gold bg-gold/10 px-1.5 py-0.5 rounded-full border border-gold/25">
+                          “{identity.greeting}”
+                        </span>
+                        <span className="text-[0.6rem] text-text-muted font-medium">
                           {config.family}
                         </span>
                       </div>
-                      <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug break-words">
+                      <h4 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug break-words">
                         {config.name}
                       </h4>
-                      {config.nativeName &&
-                        !config.name.toLowerCase().includes(config.nativeName.toLowerCase()) && (
-                          <p className="text-xs text-text-muted mt-0.5 truncate">
-                            {config.nativeName}
-                          </p>
-                        )}
+                      <p className="text-[0.625rem] text-text-muted mt-0.5 truncate">
+                        {identity.region}
+                      </p>
                     </div>
-                    <div className="mt-2.5 pt-2 border-t border-border/60 flex items-center justify-between text-xs">
+                    <div className="mt-2 pt-1.5 border-t border-border/60 flex items-center justify-between text-[0.6875rem]">
                       <span className="text-kenya-green-light font-semibold">
                         {skillCount} modules
                       </span>
@@ -515,7 +513,7 @@ export default function HomePage() {
                 Explore 22 Kenyan Languages
               </Link>
               <Link href="/tools/" className="btn-outline text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
-                Browse All {TOOLS.length} Calculators
+                Browse All {TOOLS.length} Tools
               </Link>
             </div>
           </div>

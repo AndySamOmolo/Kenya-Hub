@@ -167,7 +167,7 @@ export default function LearnPage() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold mb-2">
-                <Sparkles className="w-3.5 h-3.5" /> KenyaHub Language Academy
+                <Sparkles className="w-3.5 h-3.5" /> Kenyan Language Learning
               </div>
               <h2 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug">
                 {overallStats.totalXp > 0
@@ -329,7 +329,7 @@ export default function LearnPage() {
                       key={fam}
                       type="button"
                       onClick={() => setFamilyFilter(fam)}
-                      className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                      className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all cursor-pointer ${
                         active
                           ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
@@ -343,7 +343,7 @@ export default function LearnPage() {
             </div>
 
             {/* Available Languages Grid */}
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
               {filteredLangs.map((lang) => {
                 const stats = progressMap[lang.id] || {
                   xp: 0,
@@ -353,18 +353,27 @@ export default function LearnPage() {
                 };
                 const courseObj = PUBLISHED_COURSES.find((c) => c.config.id === lang.id);
                 const display = formatLanguageDisplay(lang.name, lang.nativeName);
+                const identity = getLanguageIdentity(lang.id);
 
                 return (
                   <div
                     key={lang.id}
-                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4 sm:p-5 transition-all hover:border-gold/40 flex flex-col justify-between"
+                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-3.5 sm:p-5 transition-all hover:border-gold/50 flex flex-col justify-between shadow-sm"
                   >
-
-
                     <div>
                       <Link href={`/tools/learn/${lang.id}/`} className="block">
-                        <div className="flex items-start justify-between gap-3">
+                        <div className="flex items-start justify-between gap-2.5">
                           <div className="min-w-0 flex-1">
+                            {/* Cultural greeting and regional motif badges (cool, fun language differentiation) */}
+                            <div className="flex items-center gap-1.5 mb-1.5 flex-wrap">
+                              <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.6875rem] font-bold bg-gold/10 border border-gold/30 text-gold shadow-xs">
+                                “{identity.greeting}”
+                              </span>
+                              <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/70 px-2 py-0.5 text-[0.625rem] text-text-secondary">
+                                                                <span>{identity.region}</span>
+                              </span>
+                            </div>
+
                             <h3 className="text-base sm:text-lg font-bold text-text-primary group-hover:text-gold transition-colors break-words leading-snug">
                               {display.primary}
                               {display.secondary && (
@@ -374,9 +383,9 @@ export default function LearnPage() {
                               )}
                             </h3>
                           </div>
-                          <span className="inline-flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/30 px-3 py-1 text-xs font-bold text-gold group-hover:bg-gold group-hover:text-kenya-black transition-colors shrink-0">
+                          <span className="inline-flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/30 px-2.5 py-1 text-xs font-bold text-gold group-hover:bg-gold group-hover:text-kenya-black transition-colors shrink-0">
                             <span>{stats.xp > 0 ? "Continue" : "Start"}</span>
-                            <ArrowRight className="h-3.5 w-3.5" />
+                            <ArrowRight className="h-3 w-3" />
                           </span>
                         </div>
 
@@ -384,14 +393,14 @@ export default function LearnPage() {
                           {lang.description}
                         </p>
 
-                        <div className="mt-3 flex flex-wrap items-center gap-2">
-                          <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2.5 py-1 text-xs text-kenya-green-light font-semibold">
-                            <BookOpen className="h-3.5 w-3.5" /> {lang.skills} modules · {lang.wordsCount} words
+                        <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                          <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-kenya-green-light font-semibold">
+                            <BookOpen className="h-3 w-3" /> {lang.skills} modules · {lang.wordsCount} words
                           </span>
-                          <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2.5 py-1 text-xs text-text-secondary">
-                            <Users className="h-3.5 w-3.5 text-gold" /> {lang.speakers}
+                          <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-text-secondary">
+                            <Users className="h-3 w-3 text-gold" /> {lang.speakers}
                           </span>
-                          <span className="rounded-full border border-border bg-bg-elevated/60 px-2.5 py-1 text-xs text-text-muted">
+                          <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-text-muted">
                             {lang.family}
                           </span>
                         </div>

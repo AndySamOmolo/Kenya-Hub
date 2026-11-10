@@ -208,7 +208,7 @@ export default function ToolsHubPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "KenyaHub Free Online Tools & Calculators for Kenya",
+    name: "KenyaHub Free Online Tools for Kenya",
     numberOfItems: TOOLS.length,
     itemListElement: TOOLS.map((tool, index) => ({
       "@type": "ListItem",
@@ -246,7 +246,7 @@ export default function ToolsHubPage() {
               <span>/</span>
               <span className="text-gold font-semibold">{activeCategoryInfo.name}</span>
             </div>
-            <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2 flex items-center gap-2.5">
+            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2 flex items-center gap-2">
               <DynamicIcon emoji={activeCategoryInfo.icon} className="w-[0.9em] h-[0.9em] text-gold shrink-0" />
               <span>{activeCategoryInfo.name}</span>
             </h1>
@@ -256,11 +256,11 @@ export default function ToolsHubPage() {
           </>
         ) : (
           <>
-            <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
-              <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools &amp; Calculators
+            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
+              <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
             </h1>
             <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
-              Explore {TOOLS.length} free digital calculators, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
+              Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
             </p>
           </>
         )}
@@ -315,7 +315,7 @@ export default function ToolsHubPage() {
         <div className="flex-1 max-w-lg">
           <SearchInput
             type="text"
-            placeholder="Search tools & calculators..."
+            placeholder="Search tools (e.g. PAYE, M-Pesa, KRA)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="input-field w-full text-sm"
@@ -359,7 +359,7 @@ export default function ToolsHubPage() {
           data-active={selectedCategory === "all"}
           aria-pressed={selectedCategory === "all"}
           onClick={() => handleSelectCategory("all")}
-          className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.7rem] sm:text-xs font-medium border transition-all ${
+          className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
             selectedCategory === "all"
               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
               : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -377,7 +377,7 @@ export default function ToolsHubPage() {
               data-active={active}
               aria-pressed={active}
               onClick={() => handleSelectCategory(cat.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.7rem] sm:text-xs font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -433,24 +433,24 @@ export default function ToolsHubPage() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
-                className="tool-card bg-bg-card border border-border rounded-xl p-3 sm:p-5 block group w-full"
+                className="tool-card bg-bg-card border border-border rounded-xl p-3 sm:p-4 block group w-full"
               >
                 <div className="flex items-start gap-2.5 sm:gap-3 w-full">
-                  <span className="text-2xl tool-icon transition-transform flex-shrink-0">
+                  <span className="text-xl sm:text-2xl tool-icon transition-transform flex-shrink-0 mt-0.5">
                     <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <h2 className="text-sm font-semibold text-text-primary mb-0.5 sm:mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
+                    <h2 className="text-sm sm:text-base font-bold text-text-primary mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                       {tool.shortTitle}
                     </h2>
-                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-1.5 sm:mb-2">
+                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-2">
                       {tool.description}
                     </p>
                     {cat && (
                       <span
-                        className={`badge ${cat.badgeClass} text-[0.625rem]`}
+                        className={`badge ${cat.badgeClass} text-[0.625rem] py-0.5 px-2`}
                       >
-                        <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
+                        <DynamicIcon emoji={cat.icon} className="w-[0.9em] h-[0.9em] inline-block mb-[0.1em]" /> {cat.name}
                       </span>
                     )}
                   </div>
@@ -467,7 +467,7 @@ export default function ToolsHubPage() {
           About the KenyaHub Public Utility Directory
         </h2>
         <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-          Every calculator and reference directory on KenyaHub is engineered around official Kenyan statutory schedules, Gazette Notices, and institutional datasets—including the <strong>Kenya Revenue Authority (KRA)</strong> Income Tax Act bands, <strong>Social Health Authority (SHA/SHIF)</strong> and <strong>NSSF Tier I &amp; II</strong> schedules, <strong>Energy and Petroleum Regulatory Authority (EPRA)</strong> electricity tariffs, <strong>Kenya Institute of Curriculum Development (KICD)</strong> CBC guidelines, and <strong>KUCCPS</strong> degree placement formulas.
+          Every tool and reference directory on KenyaHub is engineered around official Kenyan statutory schedules, Gazette Notices, and institutional datasets—including the <strong>Kenya Revenue Authority (KRA)</strong> Income Tax Act bands, <strong>Social Health Authority (SHA/SHIF)</strong> and <strong>NSSF Tier I &amp; II</strong> schedules, <strong>Energy and Petroleum Regulatory Authority (EPRA)</strong> electricity tariffs, <strong>Kenya Institute of Curriculum Development (KICD)</strong> CBC guidelines, and <strong>KUCCPS</strong> degree placement formulas.
         </p>
         <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
           All calculations run 100% locally in your web browser without storing personal salary or financial inputs on external servers. Select any tool above to launch the interactive calculator, review step-by-step statutory methodology notes, and read answers to common Kenyan regulatory questions.

@@ -541,7 +541,7 @@ export default function ToolShell({
         <section>
           <div className="section-divider mb-6 sm:mb-8" />
           <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 sm:mb-5">
-            Related Kenyan Tools &amp; Calculators
+            Related Kenyan Tools
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {related.map((rel) => {

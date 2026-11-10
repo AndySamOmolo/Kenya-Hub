@@ -69,16 +69,12 @@ export default function Navbar() {
                 Home
               </Link>
 
-              {/* Flagship Main Feature: Learn Kenyan Languages */}
               <Link
                 href="/tools/learn/"
-                className="px-3.5 py-1.5 text-[0.8125rem] font-bold text-gold bg-gold/10 border border-gold/30 hover:bg-gold/20 transition-all rounded-full flex items-center gap-1.5 mr-1"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-gold transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1.5"
               >
-                <Languages className="w-4 h-4 text-gold shrink-0" />
-                <span>Learn Languages</span>
-                <span className="text-[0.65rem] px-1.5 py-0.2 rounded-full bg-kenya-green/25 text-kenya-green-light font-semibold">
-                  22
-                </span>
+                <Languages className="w-3.5 h-3.5 text-gold shrink-0" />
+                <span>Learn Languages (22)</span>
               </Link>
 
               <Link
@@ -96,7 +92,7 @@ export default function Navbar() {
                 onMouseLeave={() => setToolsOpen(false)}
               >
                 <button aria-expanded={toolsOpen} aria-haspopup="true" onClick={() => setToolsOpen((v) => !v)} className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1">
-                  Calculators
+                  Tools
                   <svg
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${toolsOpen ? "rotate-180" : ""}`}
                     fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
@@ -257,12 +253,9 @@ export default function Navbar() {
               <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
               </Link>
-              <Link href="/tools/learn/" className="group flex items-center justify-between gap-3 px-3 py-2.5 text-sm font-bold text-gold bg-gold/10 border border-gold/25 rounded-xl transition-colors" onClick={() => setMobileOpen(false)}>
-                <span className="flex items-center gap-3">
-                  <span className="w-7 flex items-center justify-center shrink-0"><Languages className="w-4 h-4 text-gold shrink-0" /></span>
-                  Learn 22 Kenyan Languages
-                </span>
-                <span className="text-[0.65rem] px-2 py-0.5 rounded-full bg-kenya-green/20 text-kenya-green-light font-semibold">Main Hub</span>
+              <Link href="/tools/learn/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Languages className="w-4 h-4 text-gold shrink-0" /></span>
+                <span>Learn 22 Kenyan Languages</span>
               </Link>
               <Link href="/tools/kenyan-translator/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-primary hover:text-gold rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Globe className="w-4 h-4 text-kenya-green-light shrink-0" /></span> 22-Language Translator &amp; Dictionary
@@ -281,7 +274,7 @@ export default function Navbar() {
                   notifyCategorySelect("all");
                 }}
               >
-                <span className="w-7 flex items-center justify-center shrink-0"><Wrench className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All {TOOLS.length} Tools &amp; Calculators
+                <span className="w-7 flex items-center justify-center shrink-0"><Wrench className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All {TOOLS.length} Tools
               </Link>
               <Link href="/blog/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Edit3 className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Kenyan Guides &amp; Blog

@@ -16,6 +16,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather } from '@expo/vector-icons';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
+import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage } from '../shared/data/language-sources';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
@@ -1679,16 +1680,23 @@ export default function LanguageCourseTool({
                 borderColor: isSelected ? course.config.color : colors.outlineVariant,
               }}
             >
-              <View style={[styles.langColorDot, { backgroundColor: course.config.color }]} />
-              <Text
-                style={{
-                  fontSize: 12.5,
-                  fontWeight: isSelected ? '800' : '600',
-                  color: isSelected ? colors.text : colors.textSecondary,
-                }}
-              >
-                {course.config.name}
-              </Text>
+              {(() => {
+                const iden = getLanguageIdentity(course.config.id);
+                return (
+                  <>
+                    
+                    <Text
+                      style={{
+                        fontSize: 11.5,
+                        fontWeight: isSelected ? '800' : '600',
+                        color: isSelected ? colors.gold : colors.textSecondary,
+                      }}
+                    >
+                      {course.config.name} “{iden.greeting}”
+                    </Text>
+                  </>
+                );
+              })()}
             </Pressable>
           );
         })}

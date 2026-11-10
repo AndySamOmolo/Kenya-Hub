@@ -21,6 +21,7 @@ import {
   type Dictionary,
 } from "@/data/language-sources";
 import langData from "@/data/kenya-languages.json";
+import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution } from "@/lib/contributions";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 
@@ -934,7 +935,7 @@ export default function KenyanTranslatorPage() {
               <button
                 key={mode.id}
                 onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -1632,41 +1633,53 @@ export default function KenyanTranslatorPage() {
               </button>
             </div>
 
-            {/* Active Language Cards */}
+            {/* Active Language Cards with fun Cultural Greetings & Motifs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
               {ALL_DICT_METAS.map((dict) => {
                 const entryCount = dict.totalEntries;
-                const maxEntries = 120;
-                const coverage = Math.min(100, (entryCount / maxEntries) * 100);
+                const identity = getLanguageIdentity(dict.languageId);
                 return (
                   <div
                     key={dict.languageId}
-                    className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex flex-col justify-between group hover:border-gold/30 transition-all"
+                    className="bg-bg-card border border-border rounded-xl p-3 sm:p-4 flex flex-col justify-between group hover:border-gold/40 transition-all shadow-sm"
                   >
                     <div>
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <button
                           type="button"
                           onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
-                          className="text-left group-hover:text-gold transition-colors cursor-pointer"
+                          className="text-left group-hover:text-gold transition-colors cursor-pointer min-w-0 flex-1"
                         >
-                          <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
+                          {/* Cultural identity greeting badge & motif tag */}
+                          <div className="flex items-center gap-1.5 mb-1.5 flex-wrap">
+                            <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.625rem] font-bold bg-gold/10 border border-gold/30 text-gold">
+                              “{identity.greeting}”
+                            </span>
+                            <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated px-2 py-0.5 text-[0.6rem] text-text-muted">
+                                                            <span>{identity.region}</span>
+                            </span>
+                          </div>
+
+                          <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug">{dict.languageName}</h4>
                           <div className="flex items-center gap-1.5 mt-0.5">
-                            <span className="text-[0.65rem] px-2 py-0.5 rounded-md bg-bg-elevated border border-border text-text-secondary font-medium capitalize">{dict.family}</span>
+                            <span className="text-[0.625rem] px-2 py-0.5 rounded-md bg-bg-elevated border border-border text-text-secondary font-medium capitalize">
+                              {dict.family}
+                            </span>
                             <span className="text-[0.5rem] text-text-muted">·</span>
-                            <span className="text-[0.65rem] text-text-muted">{dict.nativeName}</span>
+                            <span className="text-[0.625rem] text-text-muted">{dict.nativeName}</span>
                           </div>
                         </button>
-                        <span className="text-xs font-bold text-gold">{entryCount.toLocaleString()}</span>
+                        <span className="text-xs font-bold text-gold shrink-0 bg-gold/10 px-2 py-0.5 rounded-md border border-gold/20">
+                          {entryCount.toLocaleString()} w
+                        </span>
                       </div>
-                      <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
-                      <div className="flex flex-wrap gap-1 mb-2">
+                      <p className="text-[0.625rem] text-text-muted mb-2 leading-relaxed">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
+                      <div className="flex flex-wrap gap-1 mb-1">
                         {dict.categories.map((cat) => (
-                          <span key={cat.id} className="inline-flex items-center gap-1 text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}</span>
+                          <span key={cat.id} className="inline-flex items-center gap-1 text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted border border-border/40">
+                            <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}
+                          </span>
                         ))}
-                      </div>
-                      <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
-                        <div className="h-full rounded-full transition-all bg-gold/50" style={{ width: `${coverage}%` }} />
                       </div>
                     </div>
 
@@ -1674,7 +1687,7 @@ export default function KenyanTranslatorPage() {
                       <button
                         type="button"
                         onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
-                        className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
+                        className="text-[0.6875rem] font-semibold text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
                       >
                         <span>Translate</span>
                         <span>→</span>
@@ -1682,7 +1695,7 @@ export default function KenyanTranslatorPage() {
                       <button
                         type="button"
                         onClick={() => openContributeModal(dict.languageName)}
-                        className="text-[0.65rem] font-medium text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer"
+                        className="text-[0.625rem] font-medium text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer"
                       >
                         <Plus className="w-3 h-3" />
                         <span>Contribute</span>

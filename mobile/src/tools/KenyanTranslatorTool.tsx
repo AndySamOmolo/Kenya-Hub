@@ -1440,17 +1440,32 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                 return (
                   <View key={dict.languageId} style={styles.compareCard}>
                     <View style={styles.compareCardHeader}>
-                      <Text style={styles.compareLangName}>
-                        {dict.languageName.split("(")[0].trim()}
-                      </Text>
+                      {(() => {
+                        const iden = getLanguageIdentity(dict.languageId);
+                        return (
+                          <View style={{ flex: 1 }}>
+                            <View style={{ flexDirection: "row", alignItems: "center", gap: 5, marginBottom: 2 }}>
+                              <Text style={{ fontSize: 10, fontWeight: "800", color: theme.gold, backgroundColor: `${theme.gold}20`, paddingHorizontal: 6, paddingVertical: 1, borderRadius: 999 }}>
+                                “{iden.greeting}”
+                              </Text>
+                              <Text style={{ fontSize: 9.5, color: theme.textMuted }}>
+                                {iden.region}
+                              </Text>
+                            </View>
+                            <Text style={styles.compareLangName}>
+                              {dict.languageName.split("(")[0].trim()}
+                            </Text>
+                          </View>
+                        );
+                      })()}
                       <View
                         style={[
                           styles.familyBadge,
-                          { backgroundColor: `${familyColor}20` },
+                          { backgroundColor: theme.surfaceContainerHighest, borderWidth: 1, borderColor: theme.outlineVariant },
                         ]}
                       >
                         <Text
-                          style={[styles.familyBadgeText, { color: familyColor }]}
+                          style={[styles.familyBadgeText, { color: theme.textSecondary }]}
                         >
                           {dict.family}
                         </Text>

@@ -65,7 +65,7 @@ export default function ExpandablePillRow({
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          gap: "8px",
+          gap: "6px",
           width: "100%",
           maxWidth: "100%",
           overflowX: "auto",
@@ -86,7 +86,7 @@ export default function ExpandablePillRow({
         display: "flex",
         flexDirection: "row",
         alignItems: expanded ? "flex-start" : "center",
-        gap: "8px",
+        gap: "6px",
         width: "100%",
         maxWidth: "100%",
         overflow: "hidden",
@@ -133,8 +133,8 @@ export default function ExpandablePillRow({
         }
         title={expanded ? "Collapse to single row" : `Show all (${count})`}
         style={{
-          width: "30px",
-          height: "30px",
+          width: "26px",
+          height: "26px",
           borderRadius: "9999px",
           flexShrink: 0,
           display: "inline-flex",
@@ -149,7 +149,7 @@ export default function ExpandablePillRow({
         }`}
       >
         <ChevronDown
-          className={`w-4 h-4 transition-transform duration-200 ${
+          className={`w-3.5 h-3.5 transition-transform duration-200 ${
             expanded ? "rotate-180" : ""
           }`}
         />

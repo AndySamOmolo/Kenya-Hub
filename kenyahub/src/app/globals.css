@@ -1010,11 +1010,32 @@ ins.adsbygoogle {
 @media (max-width: 639px) {
   .btn-gold,
   .btn-primary {
-    padding: 0.5rem 0.95rem !important;
+    padding: 0.45rem 0.85rem !important;
     font-size: 0.8125rem !important;
-    border-radius: 0.625rem !important;
+    border-radius: 0.55rem !important;
     gap: 0.35rem !important;
   }
+  .btn-outline {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.8125rem !important;
+    border-radius: 0.55rem !important;
+    gap: 0.35rem !important;
+  }
+  .badge {
+    padding: 0.125rem 0.45rem !important;
+    font-size: 0.625rem !important;
+    gap: 0.2rem !important;
+  }
+  .input-field {
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.8125rem !important;
+    height: 2.25rem !important;
+  }
+  .input-field--with-search {
+    padding-left: 2.25rem !important;
+    padding-right: 2rem !important;
+  }
+}
   .btn-outline {
     padding: 0.45rem 0.85rem !important;
     font-size: 0.8125rem !important;
