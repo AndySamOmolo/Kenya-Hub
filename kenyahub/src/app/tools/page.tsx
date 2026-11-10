@@ -219,7 +219,7 @@ export default function ToolsHubPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
+    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-3.5 sm:py-8">
       <Suspense fallback={null}>
         <ToolsUrlSync onSync={handleUrlSync} />
       </Suspense>
@@ -315,7 +315,7 @@ export default function ToolsHubPage() {
         <div className="flex-1 max-w-lg">
           <SearchInput
             type="text"
-            placeholder="Search tools — e.g. 'PAYE', 'matatu', 'CBC', 'M-Pesa'..."
+            placeholder="Search tools & calculators..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="input-field w-full text-sm"
@@ -359,7 +359,7 @@ export default function ToolsHubPage() {
           data-active={selectedCategory === "all"}
           aria-pressed={selectedCategory === "all"}
           onClick={() => handleSelectCategory("all")}
-          className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
+          className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.7rem] sm:text-xs font-medium border transition-all ${
             selectedCategory === "all"
               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
               : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -377,7 +377,7 @@ export default function ToolsHubPage() {
               data-active={active}
               aria-pressed={active}
               onClick={() => handleSelectCategory(cat.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 text-xs font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.7rem] sm:text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -433,13 +433,13 @@ export default function ToolsHubPage() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
-                className="tool-card bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 block group"
+                className="tool-card bg-bg-card border border-border rounded-xl p-3 sm:p-5 block group w-full"
               >
-                <div className="flex items-start gap-2.5 sm:gap-3">
+                <div className="flex items-start gap-2.5 sm:gap-3 w-full">
                   <span className="text-2xl tool-icon transition-transform flex-shrink-0">
                     <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
                   </span>
-                  <div className="min-w-0">
+                  <div className="min-w-0 flex-1">
                     <h2 className="text-sm font-semibold text-text-primary mb-0.5 sm:mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
                       {tool.shortTitle}
                     </h2>
@@ -448,7 +448,7 @@ export default function ToolsHubPage() {
                     </p>
                     {cat && (
                       <span
-                        className={`badge ${cat.badgeClass} text-[0.65rem]`}
+                        className={`badge ${cat.badgeClass} text-[0.625rem]`}
                       >
                         <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {cat.name}
                       </span>

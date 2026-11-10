@@ -44,16 +44,16 @@ export default function SearchInput({ className = "", onClear, value, style, ...
 
   return (
     <div className={`relative w-full ${wrapperClasses}`.trim()}>
-      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none shrink-0 z-10" />
+      <Search className="absolute left-3 sm:left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-text-muted pointer-events-none shrink-0 z-10" />
       <input
         type="text"
         value={value}
-        className={`input-field input-field--with-search w-full pl-10! pr-9! ${
+        className={`input-field input-field--with-search w-full ${
           isTextXs ? "text-xs! py-1.5!" : "text-xs sm:text-sm py-2! sm:py-2.5!"
         }`}
         style={{
-          paddingLeft: "2.5rem",
-          paddingRight: hasClearButton ? "2.25rem" : "0.875rem",
+          paddingLeft: "2.15rem",
+          paddingRight: hasClearButton ? "2rem" : "0.875rem",
           ...style,
         }}
         autoComplete="off"

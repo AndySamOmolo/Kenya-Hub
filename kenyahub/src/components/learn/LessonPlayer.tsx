@@ -539,30 +539,68 @@ export default function LessonPlayer({
             </details>
           )}
 
-          <div className="mt-5 rounded-2xl border border-gold/30 bg-gold/5 p-5 sm:p-8">
-            <p className="text-2xl sm:text-4xl font-bold text-gold break-words">
-              {teachingCard.target}
-            </p>
-            <p className="mt-3 text-lg sm:text-xl font-semibold text-text-primary">
-              {teachingCard.source}
-            </p>
-            {teachingCard.pronunciation && (
-              <p className="mt-2 text-sm text-sky-light">
-                Pronunciation guide: <span className="font-medium text-text-primary">[{teachingCard.pronunciation}]</span>
-              </p>
-            )}
-            {teachingCard.example && (
-              <div className="mt-5 border-t border-border pt-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Example</p>
-                <p className="mt-1 text-sm sm:text-base text-text-primary leading-relaxed">{teachingCard.example}</p>
-              </div>
-            )}
-            {teachingCard.response && (
-              <div className="mt-4 rounded-xl bg-bg-card p-3.5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Expected response</p>
-                <p className="mt-1 text-sm text-text-primary">{teachingCard.response}</p>
-              </div>
-            )}
+          <div className="mt-5 rounded-2xl border border-gold/30 bg-gold/5 p-4 sm:p-8">
+            {(() => {
+              const pron = (teachingCard.pronunciation || "").trim();
+              const isPosOnly = ["noun", "verb", "adjective", "adj", "adverb", "pronoun", "preposition", "conjunction", "interjection"].includes(
+                pron.toLowerCase()
+              );
+              const partOfSpeechLabel = teachingCard.partOfSpeech || (isPosOnly ? pron : undefined);
+              const phoneticGuide = !isPosOnly && pron ? pron : undefined;
+
+              const cleanExample = (() => {
+                if (!teachingCard.example) return undefined;
+                const ex = teachingCard.example.trim();
+                const targetNorm = teachingCard.target.trim().toLowerCase();
+                const sourceNorm = teachingCard.source.trim().toLowerCase();
+                const exNorm = ex.toLowerCase();
+                // Filter out examples that are literally just "Word — Translation" repeating the card
+                if (
+                  exNorm === `${targetNorm} — ${sourceNorm}` ||
+                  exNorm === `${targetNorm} - ${sourceNorm}` ||
+                  exNorm === `${targetNorm}: ${sourceNorm}` ||
+                  (ex.includes("—") && ex.split("—")[0].trim().toLowerCase() === targetNorm && ex.split("—")[1].trim().toLowerCase() === sourceNorm)
+                ) {
+                  return undefined;
+                }
+                return ex;
+              })();
+
+              return (
+                <>
+                  <div className="flex items-start justify-between gap-3">
+                    <p className="text-2xl sm:text-4xl font-bold text-gold break-words">
+                      {teachingCard.target}
+                    </p>
+                    {partOfSpeechLabel && (
+                      <span className="rounded-lg border border-border bg-bg-card px-2.5 py-0.5 text-xs font-semibold text-text-muted capitalize">
+                        {partOfSpeechLabel}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-2.5 text-lg sm:text-xl font-semibold text-text-primary">
+                    {teachingCard.source}
+                  </p>
+                  {phoneticGuide && (
+                    <p className="mt-2 text-sm text-sky-light">
+                      Pronunciation: <span className="font-medium text-text-primary">[{phoneticGuide}]</span>
+                    </p>
+                  )}
+                  {cleanExample && (
+                    <div className="mt-4 sm:mt-5 border-t border-border pt-3.5 sm:pt-4">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Example in Context</p>
+                      <p className="mt-1 text-sm sm:text-base text-text-primary leading-relaxed">{cleanExample}</p>
+                    </div>
+                  )}
+                  {teachingCard.response && (
+                    <div className="mt-3.5 rounded-xl bg-bg-card p-3">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Expected response</p>
+                      <p className="mt-1 text-sm text-text-primary">{teachingCard.response}</p>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         </div>
 

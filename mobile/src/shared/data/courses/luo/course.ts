@@ -2090,6 +2090,145 @@ function chunkWordsIntoSkills(
   return skills;
 }
 
+
+const DHOLUO_CURATED_PRONUNCIATIONS: Record<string, string> = {
+  dhiyo: 'dhee-yoh',
+  chak: 'chahk',
+  wacho: 'wah-choh',
+  tedo: 'teh-doh',
+  puodho: 'pwoh-dhoh',
+  thedho: 'theh-dhoh',
+  thieth: 'thee-ehth',
+  kelo: 'keh-loh',
+  lamo: 'lah-moh',
+  min: 'meen',
+  limo: 'lee-moh',
+  nego: 'neh-goh',
+  neno: 'neh-noh',
+  moso: 'moh-soh',
+  tado: 'tah-doh',
+  rito: 'ree-toh',
+  ndawa: 'ndah-wah',
+  ndemo: 'ndeh-moh',
+  ngege: 'ng-geh-geh',
+  "ng'owo": 'ng-oh-woh',
+  nyako: 'nyah-koh',
+  piny: 'peen-y',
+  mako: 'mah-koh',
+  kal: 'kahl',
+  lemo: 'leh-moh',
+  lendo: 'lehn-doh',
+  ler: 'lehr',
+  kwongo: 'kwohn-goh',
+  loko: 'loh-koh',
+  bam: 'bahm',
+  dhi: 'dhee',
+  bi: 'bee',
+  chiemo: 'chee-eh-moh',
+  madho: 'mah-dhoh',
+  metho: 'meh-thoh',
+  goyo: 'goh-yoh',
+  gocho: 'goh-choh',
+  chulo: 'choo-loh',
+  chudo: 'choo-doh',
+  kuon: 'kwoh-on',
+  rech: 'reh-ch',
+  pi: 'pee',
+  ot: 'oht',
+  udi: 'oo-dee',
+  gweno: 'gweh-noh',
+  gwen: 'gwehn',
+  "dhiang'": 'dhee-ahng',
+  dhok: 'dhohk',
+  nyathi: 'nyah-thee',
+  nyithindo: 'nyee-theen-doh',
+  wuoyi: 'wwoh-yee',
+  woyi: 'woh-yee',
+  rawera: 'rah-weh-rah',
+  japuonj: 'jah-pwoh-onj',
+  jatedo: 'jah-teh-doh',
+  jaluo: 'jah-lwoh',
+  joluo: 'joh-lwoh',
+  oyawore: 'oh-yah-woh-reh',
+  oriti: 'oh-ree-tee',
+  kiny: 'keen-y',
+  tinende: 'tee-nehn-deh',
+  thuol: 'thwoh-ohl',
+  "tong'": 'toh-ng',
+};
+
+const DHOLUO_CURATED_EXAMPLES: Record<string, string> = {
+  dhiyo: 'Ji macha dhi chiro. — Those people are going to the market.',
+  tedo: 'Jatedo tedi chiemo maber. — The cook cooks good food.',
+  wacho: 'Wawacho dholuo maber. — We speak Dholuo well.',
+  chak: 'Nyathi madho chak. — The child drinks milk.',
+  puodho: "Dhiang' ni e puodho. — The cow is in the field.",
+  min: 'Min gi won ohero nyathi. — Mother and father love the child.',
+  neno: 'Wanenre kendo kiny. — We shall see each other again tomorrow.',
+  limo: 'Walimo jirani tinende. — We are visiting our neighbor today.',
+  moso: 'Moso jowadwi gi luor. — Greet your companions with respect.',
+  rito: 'Japuonj rito nyithindo. — The teacher watches over the children.',
+  nyako: 'Nyako dhi ka sani. — The girl goes here now.',
+  ndawa: 'Kik imadh ndawa. — Do not smoke tobacco.',
+  ngege: 'Adwaro chamo rech ngege. — I want to eat tilapia fish.',
+  piny: 'Pinywa ni maber ahinya. — Our country is very good.',
+  kuon: 'Tedi kuon mondo wacham. — Cook ugali so that we eat.',
+  rech: 'Chamo rech moromo piny. — Eating fish that satisfies everyone.',
+  pi: 'Madhi pi maler. — Drink clean water.',
+  ot: 'Podi onindo e ot. — He is still asleep in the house.',
+  gweno: 'Gweno chamo kal. — The chicken eats millet.',
+  dhok: 'Dhok ni e laro. — The cattle are in the yard.',
+  nyithindo: 'Nyithindo nindo e ot. — The children are sleeping in the house.',
+  japuonj: 'Japuonj somo buge. — The teacher reads books.',
+  kelo: 'Kelo tong\' gi kuon. — Bring the spear and food.',
+  lamo: 'Lamo Nyasaye gokinyi. — Pray to God in the morning.',
+  tado: 'Gero tado mar ot. — Building the roof of the house.',
+};
+
+function getDholuoPronunciationGuide(luo: string, notes?: string): string {
+  const norm = luo.toLowerCase().trim();
+  if (DHOLUO_CURATED_PRONUNCIATIONS[norm]) {
+    return DHOLUO_CURATED_PRONUNCIATIONS[norm];
+  }
+  if (notes && !notes.toLowerCase().includes('verb') && !notes.toLowerCase().includes('noun')) {
+    return notes.replace(/^[-•\s]+/, '').trim();
+  }
+  return luo
+    .toLowerCase()
+    .replace(/ng'/g, 'ng-')
+    .replace(/dh/g, 'dh-')
+    .replace(/th/g, 'th-')
+    .replace(/ny/g, 'ny-')
+    .replace(/mb/g, 'mb-')
+    .replace(/nd/g, 'nd-')
+    .replace(/([aeiou])([bcdfghjklmnpqrstvwxyz])/g, '$1-$2')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function getDholuoExampleSentence(luo: string, english: string, lessonId: string, grammarExamples: { luo: string; english: string }[]): string | undefined {
+  const norm = luo.toLowerCase().trim();
+  if (DHOLUO_CURATED_EXAMPLES[norm]) {
+    return DHOLUO_CURATED_EXAMPLES[norm];
+  }
+  // Search supplemental sentences
+  const sents = SUPPLEMENTAL_LESSON_SENTENCES[lessonId] || [];
+  for (const s of sents) {
+    if (s.target.toLowerCase().includes(norm)) {
+      return `${s.target} — ${s.source}`;
+    }
+  }
+  // Search grammar rule examples that are actual sentences (more than 1 word)
+  for (const ex of grammarExamples) {
+    if (ex.luo.toLowerCase().includes(norm) && ex.luo.trim().split(/\s+/).length >= 2) {
+      if (ex.luo.toLowerCase().trim() !== norm && ex.english.toLowerCase().trim() !== english.toLowerCase().trim()) {
+        return `${ex.luo} — ${ex.english}`;
+      }
+    }
+  }
+  return undefined;
+}
+
 // Build Units 1-8 from COURSE_MODULES
 const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
   return {
@@ -2104,15 +2243,16 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
 
       // 1. Key Vocabulary
       for (const vocab of lesson.keyVocabulary) {
-        const matchingExample = lesson.grammarRules
-          .flatMap((r) => r.examples)
-          .find((ex) => ex.luo.toLowerCase().includes(vocab.luo.toLowerCase().split(' ')[0]));
+        const grammarExamples = lesson.grammarRules.flatMap((r) => r.examples);
+        const phoneticPron = getDholuoPronunciationGuide(vocab.luo, vocab.notes);
+        const contextualExample = getDholuoExampleSentence(vocab.luo, vocab.english, lesson.lessonId, grammarExamples);
+
         addUniqueWord(words, seenTargets, seenSources, {
           target: vocab.luo,
           source: vocab.english,
-          pronunciation: vocab.notes ? `${vocab.partOfSpeech} • ${vocab.notes}` : vocab.partOfSpeech,
+          pronunciation: phoneticPron,
           partOfSpeech: vocab.partOfSpeech,
-          example: matchingExample ? `${matchingExample.luo} — ${matchingExample.english}` : undefined,
+          example: contextualExample,
         });
       }
 

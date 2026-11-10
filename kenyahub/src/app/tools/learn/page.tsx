@@ -161,7 +161,7 @@ export default function LearnPage() {
 
   return (
     <ToolShell tool={LEARN_TOOL} hideSource>
-      <div className="mx-auto max-w-4xl px-0 sm:px-2 pb-6 sm:pb-10 space-y-5">
+      <div className="mx-auto max-w-4xl px-1 sm:px-4 pb-6 sm:pb-10 space-y-4 sm:space-y-5">
         {/* ── Flagship Learner Dashboard & Quick Translator Banner ── */}
         <div className="rounded-2xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-4 sm:p-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -179,20 +179,18 @@ export default function LearnPage() {
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 shrink-0">
-              {overallStats.resumeLang && (
+              {overallStats.resumeLang && overallStats.totalXp > 0 && (
                 <Link
                   href={`/tools/learn/${overallStats.resumeLang.id}/`}
-                  className="btn-gold text-xs sm:text-sm px-4 py-2.5"
+                  className="btn-gold text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5"
                 >
-                  {overallStats.totalXp > 0
-                    ? `Resume ${overallStats.resumeLang.name}`
-                    : `Start ${overallStats.resumeLang.name}`}
+                  Resume {overallStats.resumeLang.name}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               )}
               <Link
                 href="/tools/kenyan-translator/"
-                className="btn-outline text-xs sm:text-sm px-3.5 py-2.5"
+                className="btn-outline text-xs sm:text-sm px-3 py-2 sm:px-3.5 sm:py-2.5"
               >
                 <Globe className="w-4 h-4 text-kenya-green-light" />
                 22-Language Translator
@@ -361,10 +359,7 @@ export default function LearnPage() {
                     key={lang.id}
                     className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4 sm:p-5 transition-all hover:border-gold/40 flex flex-col justify-between"
                   >
-                    <div
-                      className="absolute inset-x-0 top-0 h-1 opacity-75"
-                      style={{ backgroundColor: lang.color }}
-                    />
+
 
                     <div>
                       <Link href={`/tools/learn/${lang.id}/`} className="block">

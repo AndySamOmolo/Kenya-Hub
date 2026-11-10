@@ -948,11 +948,19 @@ export default function LanguageCourseTool({
                   {activeSkill.words[learnCardIdx].target}
                 </Text>
 
-                {activeSkill.words[learnCardIdx].pronunciation ? (
-                  <Text style={[styles.teachPronunciation, { color: langColor }]}>
-                    [{activeSkill.words[learnCardIdx].pronunciation}]
-                  </Text>
-                ) : null}
+                {(() => {
+                  const currentWord = activeSkill.words[learnCardIdx];
+                  const pron = (currentWord.pronunciation || "").trim();
+                  const isPosOnly = ["noun", "verb", "adjective", "adj", "adverb", "pronoun", "preposition", "conjunction", "interjection"].includes(
+                    pron.toLowerCase()
+                  );
+                  if (isPosOnly || !pron) return null;
+                  return (
+                    <Text style={[styles.teachPronunciation, { color: langColor }]}>
+                      [{pron}]
+                    </Text>
+                  );
+                })()}
 
                 <View style={[styles.teachDivider, { backgroundColor: colors.outlineVariant }]} />
 
@@ -960,21 +968,36 @@ export default function LanguageCourseTool({
                   {activeSkill.words[learnCardIdx].source}
                 </Text>
 
-                {activeSkill.words[learnCardIdx].example ? (
-                  <View
-                    style={[
-                      styles.teachExampleBox,
-                      { backgroundColor: colors.surfaceContainerHigh },
-                    ]}
-                  >
-                    <Text style={[styles.teachExampleLabel, { color: colors.textMuted }]}>
-                      EXAMPLE
-                    </Text>
-                    <Text style={[styles.teachExampleText, { color: colors.textSecondary }]}>
-                      {activeSkill.words[learnCardIdx].example}
-                    </Text>
-                  </View>
-                ) : null}
+                {(() => {
+                  const currentWord = activeSkill.words[learnCardIdx];
+                  if (!currentWord.example) return null;
+                  const ex = currentWord.example.trim();
+                  const targetNorm = currentWord.target.trim().toLowerCase();
+                  const sourceNorm = currentWord.source.trim().toLowerCase();
+                  const exNorm = ex.toLowerCase();
+                  if (
+                    exNorm === `${targetNorm} — ${sourceNorm}` ||
+                    exNorm === `${targetNorm} - ${sourceNorm}` ||
+                    exNorm === `${targetNorm}: ${sourceNorm}`
+                  ) {
+                    return null;
+                  }
+                  return (
+                    <View
+                      style={[
+                        styles.teachExampleBox,
+                        { backgroundColor: colors.surfaceContainerHigh },
+                      ]}
+                    >
+                      <Text style={[styles.teachExampleLabel, { color: colors.textMuted }]}>
+                        EXAMPLE IN CONTEXT
+                      </Text>
+                      <Text style={[styles.teachExampleText, { color: colors.textSecondary }]}>
+                        {ex}
+                      </Text>
+                    </View>
+                  );
+                })()}
               </View>
             ) : null}
 

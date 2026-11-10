@@ -1485,9 +1485,8 @@ export default function KenyanTranslatorPage() {
                             ? "text-white shadow-sm"
                             : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
                         }`}
-                        style={isSelected ? { backgroundColor: FAMILY_COLORS[d.family] } : {}}
                       >
-                        <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: isSelected ? "rgba(255,255,255,0.5)" : FAMILY_COLORS[d.family] }} />
+                        <span className="text-[0.6rem] px-1 rounded bg-bg-card/50 text-text-muted uppercase tracking-wider">{d.family.slice(0, 3)}</span>
                         {d.languageName.split("(")[0].trim()}
                       </button>
                     );
@@ -1653,10 +1652,9 @@ export default function KenyanTranslatorPage() {
                         >
                           <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
                           <div className="flex items-center gap-1.5 mt-0.5">
-                            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[dict.family] }} />
-                            <span className="text-[0.6rem] text-text-muted capitalize">{dict.family}</span>
+                            <span className="text-[0.65rem] px-2 py-0.5 rounded-md bg-bg-elevated border border-border text-text-secondary font-medium capitalize">{dict.family}</span>
                             <span className="text-[0.5rem] text-text-muted">·</span>
-                            <span className="text-[0.6rem] text-text-muted">{dict.nativeName}</span>
+                            <span className="text-[0.65rem] text-text-muted">{dict.nativeName}</span>
                           </div>
                         </button>
                         <span className="text-xs font-bold text-gold">{entryCount.toLocaleString()}</span>
@@ -1668,7 +1666,7 @@ export default function KenyanTranslatorPage() {
                         ))}
                       </div>
                       <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
-                        <div className="h-full rounded-full transition-all" style={{ width: `${coverage}%`, backgroundColor: FAMILY_COLORS[dict.family] }} />
+                        <div className="h-full rounded-full transition-all bg-gold/50" style={{ width: `${coverage}%` }} />
                       </div>
                     </div>
 

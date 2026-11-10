@@ -157,8 +157,8 @@ export default function HomePage() {
       </section>
 
       {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-5 sm:p-8 lg:p-10 shadow-xl">
+      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
+        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6 sm:mb-8">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider mb-3">
@@ -291,11 +291,11 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FLAGSHIP PUBLIC DATA HUBS (47 COUNTIES & MATATU ROUTES) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           <Link
             href="/county/"
-            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-5 sm:p-8 transition-colors flex flex-col justify-between"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
           >
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-kenya-green/10 border border-kenya-green/20 text-kenya-green-light text-xs font-semibold mb-3 sm:mb-4">
@@ -317,7 +317,7 @@ export default function HomePage() {
 
           <Link
             href="/matatu/"
-            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-5 sm:p-8 transition-colors flex flex-col justify-between"
+            className="group bg-bg-card border border-border hover:border-gold/50 rounded-2xl p-4 sm:p-8 transition-colors flex flex-col justify-between"
           >
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold mb-3 sm:mb-4">
@@ -340,7 +340,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* CATEGORIES */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
@@ -388,7 +388,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FEATURED STATUTORY GUIDES & EDITORIAL ARTICLES */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 flex items-center gap-1.5">
@@ -445,7 +445,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* WHY KENYAHUB */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Built Different
