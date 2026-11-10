@@ -98,8 +98,8 @@ export default async function BlogPage() {
         readTime: doc.readTime,
         tags: doc.tags || [],
       }));
-  } catch (error) {
-    console.error("Failed to fetch Appwrite blog posts:", error);
+  } catch {
+    // Static fallback when Appwrite is offline or paused
   }
 
   const allPostsMap = new Map();

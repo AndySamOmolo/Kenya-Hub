@@ -60,8 +60,8 @@ export async function generateStaticParams() {
       .map((doc) => ({
         slug: doc.slug,
       }));
-  } catch (error) {
-    console.error("Failed to fetch Appwrite blog posts:", error);
+  } catch {
+    // Static fallback when Appwrite is offline or paused
   }
 
   const allSlugs = new Map<string, { slug: string }>();

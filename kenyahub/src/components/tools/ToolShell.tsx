@@ -50,6 +50,13 @@ export default function ToolShell({
   hideFooter = false,
   hideSource = false,
 }: ToolShellProps) {
+  if (!tool) {
+    return (
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {children}
+      </div>
+    );
+  }
   const category = getCategoryInfo(tool.category);
   const related = getRelatedTools(tool.slug, 4);
   const relatedBlogPosts = getRelatedBlogPostsForTool(tool.slug, 3);
