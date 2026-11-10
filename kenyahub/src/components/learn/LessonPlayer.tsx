@@ -5,10 +5,9 @@ import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import {
   Check,
+  ChevronLeft,
   ChevronRight,
   ChevronDown,
-  Heart,
-  Volume2,
   X,
   Zap,
   Flame,
@@ -28,12 +27,9 @@ import {
   XP_PER_CORRECT_WITH_HINT,
   XP_PERFECT_BONUS,
   EXERCISES_PER_LESSON,
+  MAX_HEARTS,
 } from "@/data/courses/types";
 import { generateExercises, checkAnswer } from "@/lib/learn-engine";
-
-/* ═══════════════════════════════════════════════════════
-   LESSON PLAYER — The interactive exercise loop
-   ═══════════════════════════════════════════════════════ */
 
 interface LessonPlayerProps {
   skill: CourseSkill;
@@ -49,14 +45,12 @@ interface LessonPlayerProps {
 export default function LessonPlayer({
   skill,
   level,
-  progress,
   languageName,
   onComplete,
   onQuit,
   reviewItems = [],
   reviewOnly = false,
 }: LessonPlayerProps) {
-  /* ─── State ────────────────────────────────────── */
   const buildLessonExercises = useCallback(() => {
     const reviewExercises: Exercise[] = reviewItems.map((item) => ({
       type: item.type || "translate_to_english",
@@ -78,7 +72,6 @@ export default function LessonPlayer({
   const [exercises, setExercises] = useState<Exercise[]>(() => buildLessonExercises());
   const [isLoadingExercises, setIsLoadingExercises] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [hearts, setHearts] = useState(progress.hearts);
   const [xpEarned, setXpEarned] = useState(0);
   const [mistakes, setMistakes] = useState(0);
   const [missedExercises, setMissedExercises] = useState<Exercise[]>([]);
@@ -112,7 +105,6 @@ export default function LessonPlayer({
   const [teachingIndex, setTeachingIndex] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
-  const playerTopRef = useRef<HTMLDivElement>(null);
 
   const forceScrollTop = useCallback(() => {
     if (typeof window === "undefined") return;
@@ -138,7 +130,6 @@ export default function LessonPlayer({
     forceScrollTop();
   }, [lessonStage, teachingIndex, currentIndex, lessonComplete, forceScrollTop]);
 
-  /* ─── Re-initialize exercises if skill changes ─── */
   useEffect(() => {
     setExercises(buildLessonExercises());
     setIsLoadingExercises(false);
@@ -151,13 +142,11 @@ export default function LessonPlayer({
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
 
-  // Pre-calculate shuffled match pairs to avoid React Hooks in JSX
   const shuffledRightPairs = useMemo(() => {
     if (exercise?.type !== "match_pairs" || !exercise.pairs) return [];
     return [...exercise.pairs].sort(() => Math.random() - 0.5);
   }, [exercise]);
 
-  /* ─── Reset state for new exercise ─────────────── */
   const resetExercise = useCallback(() => {
     setUserAnswer("");
     setSelectedOption(null);
@@ -174,7 +163,6 @@ export default function LessonPlayer({
     setFlashCorrect(false);
   }, []);
 
-  /* ─── Submit answer ────────────────────────────── */
   const handleCheck = useCallback(() => {
     if (!exercise || isChecked) return;
 
@@ -193,17 +181,12 @@ export default function LessonPlayer({
         answer = userAnswer;
         break;
       case "word_bank":
-        answer = selectedTiles
-          .map((i) => exercise.wordTiles?.[i] || "")
-          .join(" ");
-        break;
       case "reorder":
         answer = selectedTiles
           .map((i) => exercise.wordTiles?.[i] || "")
           .join(" ");
         break;
       case "match_pairs":
-        // Handled separately
         return;
       default:
         answer = userAnswer;
@@ -216,7 +199,6 @@ export default function LessonPlayer({
     if (correct) {
       setFlashCorrect(true);
       const xp = usedHint ? XP_PER_CORRECT_WITH_HINT : XP_PER_CORRECT;
-      // Streak bonus
       const streakMultiplier = streak >= 5 ? 3 : streak >= 3 ? 2 : 1;
       setXpEarned((v) => v + xp * streakMultiplier);
       setStreak((v) => v + 1);
@@ -225,8 +207,6 @@ export default function LessonPlayer({
           ids.includes(exercise.reviewId!) ? ids : [...ids, exercise.reviewId!]
         );
       }
-
-      // Track words learned
       if (exercise.sourceWord) {
         setWordsLearned((v) => {
           const key = exercise.sourceWord!.target.toLowerCase();
@@ -237,9 +217,6 @@ export default function LessonPlayer({
       setShakeWrong(true);
       setMistakes((v) => v + 1);
       setStreak(0);
-      if (!exercise.reviewId) {
-        setHearts((v) => Math.max(0, v - 1));
-      }
       setMissedExercises((items) =>
         items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
           ? items
@@ -249,14 +226,8 @@ export default function LessonPlayer({
     }
   }, [exercise, isChecked, selectedOption, userAnswer, selectedTiles, usedHint, streak]);
 
-  /* ─── Next exercise ────────────────────────────── */
   const handleContinue = useCallback(() => {
-    const nextExercise = exercises[currentIndex + 1];
-    if (
-      currentIndex >= exercises.length - 1 ||
-      (hearts <= 0 && !nextExercise?.reviewId)
-    ) {
-      // Lesson complete
+    if (currentIndex >= exercises.length - 1) {
       const perfect = mistakes === 0;
       const totalXp = xpEarned + (perfect ? XP_PERFECT_BONUS : 0);
       const result: LessonResult = {
@@ -274,7 +245,7 @@ export default function LessonPlayer({
         perfectLesson: perfect,
         timeSpent: Math.round((Date.now() - startTime) / 1000),
         newWordsLearned: wordsLearned,
-        heartsRemaining: hearts,
+        heartsRemaining: MAX_HEARTS,
         reviewItems: missedExercises
           .filter((item) => item.type !== "match_pairs" && item.correctAnswer.trim())
           .map((item): ReviewItem => ({
@@ -299,18 +270,18 @@ export default function LessonPlayer({
   }, [
     currentIndex,
     exercises,
-    hearts,
     mistakes,
     xpEarned,
     skill,
     level,
     startTime,
     wordsLearned,
+    missedExercises,
+    reviewedItemIds,
     onComplete,
     resetExercise,
   ]);
 
-  /* ─── Match pairs logic ────────────────────────── */
   const handleMatchSelect = useCallback(
     (side: "left" | "right", value: string) => {
       if (!exercise || exercise.type !== "match_pairs") return;
@@ -318,7 +289,6 @@ export default function LessonPlayer({
       if (side === "left") {
         setSelectedLeft(value);
         if (selectedRight) {
-          // Check if pair matches
           const pair = exercise.pairs?.find(
             (p) => p.left === value && p.right === selectedRight
           );
@@ -331,19 +301,16 @@ export default function LessonPlayer({
             setSelectedLeft(null);
             setSelectedRight(null);
 
-            // Check if all matched
             if (matchedPairs.size + 1 >= (exercise.pairs?.length || 0)) {
               setIsChecked(true);
               setIsCorrect(true);
               setFlashCorrect(true);
-              const xp = XP_PER_CORRECT;
-              setXpEarned((v) => v + xp);
+              setXpEarned((v) => v + XP_PER_CORRECT);
               setStreak((v) => v + 1);
             }
           } else {
             setWrongMatch(true);
             setMistakes((v) => v + 1);
-            setHearts((v) => Math.max(0, v - 1));
             setTimeout(() => {
               setSelectedLeft(null);
               setSelectedRight(null);
@@ -376,7 +343,6 @@ export default function LessonPlayer({
           } else {
             setWrongMatch(true);
             setMistakes((v) => v + 1);
-            setHearts((v) => Math.max(0, v - 1));
             setTimeout(() => {
               setSelectedLeft(null);
               setSelectedRight(null);
@@ -389,26 +355,18 @@ export default function LessonPlayer({
     [exercise, selectedLeft, selectedRight, matchedPairs]
   );
 
-  /* ─── Word bank / Reorder tile toggle ──────────── */
-  const toggleTile = useCallback(
-    (index: number) => {
-      setSelectedTiles((prev) =>
-        prev.includes(index)
-          ? prev.filter((i) => i !== index)
-          : [...prev, index]
-      );
-    },
-    []
-  );
+  const toggleTile = useCallback((index: number) => {
+    setSelectedTiles((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  }, []);
 
-  /* ─── Skip (costs a heart) ─────────────────────── */
   const handleSkip = useCallback(() => {
     if (!exercise || isChecked) return;
     setMistakes((v) => v + 1);
     setStreak(0);
-    if (!exercise.reviewId) {
-      setHearts((v) => Math.max(0, v - 1));
-    }
     setMissedExercises((items) =>
       items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
         ? items
@@ -418,26 +376,6 @@ export default function LessonPlayer({
     setIsCorrect(false);
   }, [exercise, isChecked]);
 
-  /* ─── Audio ────────────────────────────────────── */
-  const playAudio = useCallback(() => {
-    const audioPath = exercise?.sourceWord?.audio;
-    if (!audioPath) return;
-    void new Audio(audioPath).play();
-  }, [exercise]);
-
-  // Auto-play audio for listen exercises
-  useEffect(() => {
-    if (
-      exercise &&
-      exercise.sourceWord?.audio &&
-      (exercise.type === "listen_type" || exercise.type === "tap_what_you_hear")
-    ) {
-      const t = setTimeout(() => playAudio(), 300);
-      return () => clearTimeout(t);
-    }
-  }, [exercise, playAudio]);
-
-  // Focus input on text exercises
   useEffect(() => {
     if (
       exercise &&
@@ -464,9 +402,11 @@ export default function LessonPlayer({
     return (
       <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
-          {/* Celebration emoji */}
           <div className="mb-4 flex justify-center animate-bounce">
-            <DynamicIcon emoji={perfect ? "🏆" : accuracy >= 80 ? "⭐" : accuracy >= 50 ? "💪" : "📖"} className="w-16 h-16 text-gold" />
+            <DynamicIcon
+              emoji={perfect ? "🏆" : accuracy >= 80 ? "⭐" : accuracy >= 50 ? "💪" : "📖"}
+              className="w-16 h-16 text-gold"
+            />
           </div>
 
           <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
@@ -479,22 +419,21 @@ export default function LessonPlayer({
               : `You got ${accuracy}% correct. Keep practicing!`}
           </p>
 
-          {/* Stats */}
           <div className="mt-6 grid grid-cols-3 gap-3">
             <div className="rounded-xl border border-border bg-bg-card p-3">
               <Zap className="mx-auto mb-1 h-5 w-5 text-gold" />
               <div className="text-lg font-bold text-gold">{totalXp}</div>
-              <div className="text-[0.6rem] text-text-muted">Total XP</div>
+              <div className="text-xs text-text-muted">Total XP</div>
             </div>
             <div className="rounded-xl border border-border bg-bg-card p-3">
               <Check className="mx-auto mb-1 h-5 w-5 text-kenya-green" />
               <div className="text-lg font-bold text-kenya-green">{accuracy}%</div>
-              <div className="text-[0.6rem] text-text-muted">Accuracy</div>
+              <div className="text-xs text-text-muted">Accuracy</div>
             </div>
             <div className="rounded-xl border border-border bg-bg-card p-3">
               <Star className="mx-auto mb-1 h-5 w-5 text-gold" />
               <div className="text-lg font-bold text-text-primary">{wordsLearned.length}</div>
-              <div className="text-[0.6rem] text-text-muted">Words</div>
+              <div className="text-xs text-text-muted">Words</div>
             </div>
           </div>
 
@@ -530,7 +469,7 @@ export default function LessonPlayer({
 
           <button
             onClick={onQuit}
-            className="mt-6 w-full rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
+            className="mt-6 w-full rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110 cursor-pointer"
           >
             Continue
           </button>
@@ -539,15 +478,16 @@ export default function LessonPlayer({
     );
   }
 
+  /* ─── Stage 1: Learn First (Teaching Cards — No Audio Buttons) ─── */
   if (lessonStage === "learn" && teachingCard) {
     const isLastTeachingCard = teachingIndex >= skill.words.length - 1;
 
     return (
       <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-0 sm:px-4">
-        <div className="mb-6 flex items-center gap-3">
+        <div className="mb-5 flex items-center gap-3">
           <button
             onClick={onQuit}
-            className="shrink-0 rounded-lg p-2 text-text-muted transition-colors active:bg-bg-card sm:hover:text-text-primary"
+            className="shrink-0 rounded-xl border border-border bg-bg-card p-2 text-text-muted transition-colors hover:text-text-primary cursor-pointer"
             aria-label="Exit lesson"
           >
             <X className="h-5 w-5" />
@@ -560,22 +500,31 @@ export default function LessonPlayer({
               />
             </div>
           </div>
-          <span className="text-xs font-semibold text-text-muted">
-            {teachingIndex + 1}/{skill.words.length}
+          <span className="text-xs font-semibold text-text-secondary shrink-0">
+            Card {teachingIndex + 1}/{skill.words.length}
           </span>
+          <button
+            type="button"
+            onClick={() => setLessonStage("practice")}
+            className="rounded-xl border border-gold/40 bg-gold/10 px-3 py-1.5 text-xs font-bold text-gold hover:bg-gold/20 transition-colors shrink-0 cursor-pointer"
+          >
+            Skip to Quiz →
+          </button>
         </div>
 
         <div className="flex-1">
-          <p className="text-xs font-bold uppercase tracking-wider text-gold">Learn First</p>
-          <h2 className="mt-1.5 font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
+          <p className="text-xs font-bold uppercase tracking-wider text-gold">Step 1: Learn Vocabulary</p>
+          <h2 className="mt-1 font-[family-name:var(--font-outfit)] text-xl sm:text-3xl font-bold text-text-primary">
             {skill.title}
           </h2>
-          <p className="mt-1.5 text-sm text-text-secondary">{skill.description || "Study this card before practicing."}</p>
+          <p className="mt-1 text-sm text-text-secondary leading-relaxed">
+            {skill.description || "Study each word before starting the interactive practice quiz."}
+          </p>
 
           {(skill.tips || skill.tip) && (
             <details
               open={teachingIndex === 0}
-              className="group mt-4 rounded-xl border border-gold/25 bg-gold/5 px-4 py-3 text-xs text-text-secondary"
+              className="group mt-4 rounded-xl border border-gold/25 bg-gold/5 px-4 py-3 text-xs sm:text-sm text-text-secondary"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
                 <span className="inline-flex items-center gap-1.5">
@@ -584,28 +533,32 @@ export default function LessonPlayer({
                 </span>
                 <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
               </summary>
-              <div className="mt-2.5 border-t border-gold/15 pt-2.5 text-xs leading-relaxed text-text-secondary whitespace-pre-line">
+              <div className="mt-2.5 border-t border-gold/15 pt-2.5 text-xs sm:text-sm leading-relaxed text-text-secondary whitespace-pre-line">
                 {skill.tips || skill.tip}
               </div>
             </details>
           )}
 
-          <div className="mt-6 rounded-2xl border border-gold/30 bg-gold/5 p-6 sm:p-8">
-            <p className="text-3xl font-bold text-gold sm:text-4xl">{teachingCard.target}</p>
-            <p className="mt-4 text-lg font-semibold text-text-primary">{teachingCard.source}</p>
+          <div className="mt-5 rounded-2xl border border-gold/30 bg-gold/5 p-5 sm:p-8">
+            <p className="text-2xl sm:text-4xl font-bold text-gold break-words">
+              {teachingCard.target}
+            </p>
+            <p className="mt-3 text-lg sm:text-xl font-semibold text-text-primary">
+              {teachingCard.source}
+            </p>
             {teachingCard.pronunciation && (
-              <p className="mt-2 text-sm text-text-secondary">
-                Pronunciation: <span className="font-medium text-text-primary">{teachingCard.pronunciation}</span>
+              <p className="mt-2 text-sm text-sky-light">
+                Pronunciation guide: <span className="font-medium text-text-primary">[{teachingCard.pronunciation}]</span>
               </p>
             )}
             {teachingCard.example && (
               <div className="mt-5 border-t border-border pt-4">
                 <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Example</p>
-                <p className="mt-1 text-base text-text-primary">{teachingCard.example}</p>
+                <p className="mt-1 text-sm sm:text-base text-text-primary leading-relaxed">{teachingCard.example}</p>
               </div>
             )}
             {teachingCard.response && (
-              <div className="mt-4 rounded-xl bg-bg-card p-3">
+              <div className="mt-4 rounded-xl bg-bg-card p-3.5">
                 <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">Expected response</p>
                 <p className="mt-1 text-sm text-text-primary">{teachingCard.response}</p>
               </div>
@@ -613,39 +566,25 @@ export default function LessonPlayer({
           </div>
         </div>
 
-        <button
-          onClick={() => {
-            if (isLastTeachingCard) setLessonStage("practice");
-            else setTeachingIndex((index) => index + 1);
-          }}
-          className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110"
-        >
-          {isLastTeachingCard ? "Start practice" : "Next card"}
-          <ChevronRight className="h-4 w-4" />
-        </button>
-      </div>
-    );
-  }
-
-  /* ─── No hearts left ───────────────────────────── */
-  if (hearts <= 0 && !isChecked && !exercise?.reviewId) {
-    return (
-      <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
-        <div className="w-full max-w-md text-center">
-          <div className="mb-4 flex justify-center">
-            <DynamicIcon emoji="💔" className="w-16 h-16 text-kenya-red-light" />
-          </div>
-          <h2 className="font-[family-name:var(--font-outfit)] text-xl font-bold text-text-primary">
-            Out of Hearts
-          </h2>
-          <p className="mt-2 text-sm text-text-secondary">
-            Hearts refill over time, or practice previous lessons to earn more.
-          </p>
+        <div className="mt-6 flex items-center gap-3">
           <button
-            onClick={onQuit}
-            className="mt-6 w-full rounded-xl border border-border bg-bg-card px-6 py-3 text-sm font-semibold text-text-primary transition-all active:bg-bg-elevated"
+            type="button"
+            disabled={teachingIndex === 0}
+            onClick={() => setTeachingIndex((i) => Math.max(0, i - 1))}
+            className="flex items-center justify-center gap-1.5 rounded-xl border border-border bg-bg-card px-4 py-3.5 text-sm font-semibold text-text-primary disabled:opacity-40 hover:border-gold/40 transition-all cursor-pointer"
           >
-            Back to lessons
+            <ChevronLeft className="h-4 w-4" /> Prev
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              if (isLastTeachingCard) setLessonStage("practice");
+              else setTeachingIndex((index) => index + 1);
+            }}
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-kenya-black transition-all active:scale-[0.98] sm:hover:brightness-110 cursor-pointer"
+          >
+            {isLastTeachingCard ? "Start Practice Quiz" : "Next Word"}
+            <ChevronRight className="h-4 w-4" />
           </button>
         </div>
       </div>
@@ -672,7 +611,6 @@ export default function LessonPlayer({
     );
   }
 
-  /* ─── Can submit? ──────────────────────────────── */
   const canCheck = (() => {
     if (isChecked) return false;
     switch (exercise.type) {
@@ -689,22 +627,20 @@ export default function LessonPlayer({
       case "reorder":
         return selectedTiles.length > 0;
       case "match_pairs":
-        return false; // Auto-handled
+        return false;
       default:
         return false;
     }
   })();
 
-  /* ═══════════════════════════════════════════════════
-     RENDER
-     ═══════════════════════════════════════════════════ */
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-0 sm:px-4">
-      {/* ─── Top bar: Hearts + Progress ──────────── */}
-      <div className="mb-4 flex items-center gap-3 sm:mb-6">
+      {/* ─── Top bar: Progress + Question Count & Streak (No Hearts) ──────────── */}
+      <div className="mb-4 flex items-center gap-2.5 sm:gap-3 sm:mb-6">
         <button
           onClick={onQuit}
-          className="shrink-0 rounded-lg p-2 text-text-muted transition-colors active:bg-bg-card sm:hover:text-text-primary"
+          className="shrink-0 rounded-xl border border-border bg-bg-card p-2 text-text-muted transition-colors hover:text-text-primary cursor-pointer"
+          aria-label="Quit lesson"
         >
           <X className="h-5 w-5" />
         </button>
@@ -713,30 +649,25 @@ export default function LessonPlayer({
         <div className="flex-1">
           <div className="h-3 overflow-hidden rounded-full bg-bg-elevated sm:h-3.5">
             <div
-                role="progressbar"
-                aria-label="Lesson progress"
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-valuenow={Math.round(progressPercent)}
+              role="progressbar"
+              aria-label="Lesson progress"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={Math.round(progressPercent)}
               className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-500"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
         </div>
 
-        {/* Hearts */}
-        <div className="flex shrink-0 items-center gap-1">
-          <Heart
-            className="h-5 w-5 text-red-400 sm:h-5 sm:w-5"
-            fill="currentColor"
-          />
-          <span className="text-sm font-bold text-red-400">{hearts}</span>
-        </div>
+        <span className="text-xs font-semibold text-text-secondary shrink-0">
+          {currentIndex + 1}/{exercises.length}
+        </span>
 
         {/* Streak */}
         {streak > 1 && (
-          <div className="hidden items-center gap-1 sm:flex">
-            <Flame className="h-4 w-4 text-gold" />
+          <div className="flex items-center gap-1 rounded-full border border-gold/30 bg-gold/10 px-2.5 py-1">
+            <Flame className="h-3.5 w-3.5 text-gold" />
             <span className="text-xs font-bold text-gold">{streak}</span>
           </div>
         )}
@@ -744,15 +675,15 @@ export default function LessonPlayer({
 
       {/* ─── Optional Collapsible Lesson Notes during Practice ─── */}
       {(skill.tips || skill.tip) && (
-        <details className="group mb-4 rounded-xl border border-border bg-bg-card px-3.5 py-2 text-xs text-text-secondary">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-[0.7rem] font-semibold text-gold">
+        <details className="group mb-4 rounded-xl border border-border bg-bg-card px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs sm:text-sm font-semibold text-gold">
             <span className="inline-flex items-center gap-1.5">
-              <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+              <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
               <span>Grammar &amp; Lesson Notes ({skill.title})</span>
             </span>
-            <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+            <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
           </summary>
-          <div className="mt-2 border-t border-border/60 pt-2 text-[0.7rem] leading-relaxed text-text-secondary whitespace-pre-line">
+          <div className="mt-2.5 border-t border-border/60 pt-2.5 text-xs sm:text-sm leading-relaxed text-text-secondary whitespace-pre-line">
             {skill.tips || skill.tip}
           </div>
         </details>
@@ -760,57 +691,28 @@ export default function LessonPlayer({
 
       {/* ─── Exercise Content ────────────────────── */}
       <div className="flex-1">
-        {/* Prompt */}
         <div className="mb-5 sm:mb-6">
           {exercise.reviewId && (
-            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-kenya-green">
-              Review item
+            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-kenya-green-light">
+              Spaced Repetition Review
             </p>
           )}
-          <p className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary sm:text-xl">
+          <p className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary sm:text-xl leading-snug">
             {exercise.prompt}
           </p>
 
-          {/* Source word display for translate exercises */}
           {exercise.sourceWord &&
             (exercise.type === "translate_to_target" ||
               exercise.type === "translate_to_english" ||
               exercise.type === "word_bank") && (
-              <div className="mt-3 flex items-center gap-3">
-                {exercise.sourceWord.audio && (
-                  <button
-                    onClick={playAudio}
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold transition-colors active:bg-gold/20 sm:hover:bg-gold/20"
-                    aria-label="Play recording"
-                  >
-                    <Volume2 className="h-5 w-5" />
-                  </button>
-                )}
-                <span className="text-xl font-bold text-gold sm:text-2xl">
+              <div className="mt-3">
+                <span className="text-xl font-bold text-gold sm:text-2xl break-words">
                   {exercise.type === "translate_to_target"
                     ? exercise.sourceWord.source
                     : exercise.sourceWord.target}
                 </span>
               </div>
             )}
-
-          {/* Listen exercises: big audio button */}
-          {(exercise.type === "listen_type" ||
-            exercise.type === "tap_what_you_hear") && (
-            exercise.sourceWord?.audio ? (
-              <button
-                onClick={playAudio}
-                className="mt-4 flex items-center gap-3 rounded-xl border border-gold/30 bg-gold/5 px-5 py-4 text-sm font-semibold text-gold transition-all active:bg-gold/10 sm:hover:bg-gold/10"
-              >
-                <Volume2 className="h-6 w-6" />
-                <span>Play recording</span>
-              </button>
-            ) : (
-              <p className="mt-4 rounded-xl border border-border bg-bg-card px-4 py-3 text-sm text-text-secondary">
-                No recording is available for this item yet. Continue with the text exercise.
-              </p>
-            )
-          )}
         </div>
 
         {/* ─── Exercise-specific UI ──────────────── */}
@@ -819,12 +721,11 @@ export default function LessonPlayer({
             shakeWrong ? "animate-[shake_0.3s_ease-in-out]" : ""
           } ${flashCorrect ? "animate-[flash-green_0.4s_ease]" : ""}`}
         >
-          {/* MULTIPLE CHOICE / TAP WHAT YOU HEAR / FILL BLANK */}
           {(exercise.type === "multiple_choice" ||
             exercise.type === "tap_what_you_hear" ||
             (exercise.type === "fill_blank" && exercise.options)) &&
             exercise.options && (
-              <div className="grid gap-2 sm:grid-cols-2">
+              <div className="grid gap-2.5 sm:grid-cols-2">
                 {exercise.options.map((opt) => {
                   const isSelected = selectedOption === opt;
                   const isCorrectOpt =
@@ -839,7 +740,7 @@ export default function LessonPlayer({
                       key={opt}
                       onClick={() => !isChecked && setSelectedOption(opt)}
                       disabled={isChecked}
-                      className={`rounded-xl border-2 px-4 py-3.5 text-left text-sm font-medium transition-all sm:py-3 ${
+                      className={`rounded-xl border-2 px-4 py-3.5 text-left text-sm font-medium transition-all cursor-pointer ${
                         isCorrectOpt
                           ? "border-kenya-green bg-kenya-green/10 text-kenya-green"
                           : isWrongSelection
@@ -862,7 +763,6 @@ export default function LessonPlayer({
               </div>
             )}
 
-          {/* TEXT INPUT (translate, fill, listen_type) */}
           {(exercise.type === "translate_to_target" ||
             exercise.type === "translate_to_english" ||
             exercise.type === "listen_type" ||
@@ -873,8 +773,6 @@ export default function LessonPlayer({
                   ? "Type the missing answer"
                   : exercise.type === "translate_to_target"
                   ? `Answer in ${languageName}`
-                  : exercise.type === "listen_type"
-                  ? "Type what you heard"
                   : "Answer in English"}
               </label>
               <input
@@ -894,26 +792,23 @@ export default function LessonPlayer({
                     ? "Type the missing answer..."
                     : exercise.type === "translate_to_target"
                     ? `Type in ${languageName}...`
-                    : exercise.type === "listen_type"
-                    ? "Type what you heard..."
                     : "Type in English..."
                 }
                 className="input-field w-full text-base sm:text-lg"
               />
-              {/* Show hint button */}
               {exercise.hint && !showHint && !isChecked && (
                 <button
                   onClick={() => {
                     setShowHint(true);
                     setUsedHint(true);
                   }}
-                  className="mt-2 flex items-center gap-1.5 text-xs text-text-muted transition-colors active:text-gold sm:hover:text-gold"
+                  className="mt-2.5 flex items-center gap-1.5 text-xs text-text-muted transition-colors active:text-gold sm:hover:text-gold cursor-pointer"
                 >
                   <Lightbulb className="h-3.5 w-3.5" /> Show hint
                 </button>
               )}
               {showHint && exercise.hint && (
-                <p className="mt-2 rounded-lg bg-gold/5 px-3 py-2 text-xs text-gold flex items-start gap-1.5">
+                <p className="mt-2.5 rounded-lg bg-gold/5 px-3 py-2 text-xs text-gold flex items-start gap-1.5">
                   <DynamicIcon emoji="💡" className="w-3.5 h-3.5 mt-0.5 text-gold flex-shrink-0" />
                   <span>{exercise.hint}</span>
                 </p>
@@ -921,11 +816,9 @@ export default function LessonPlayer({
             </div>
           )}
 
-          {/* MATCH PAIRS */}
           {exercise.type === "match_pairs" && exercise.pairs && (
             <div className="grid grid-cols-2 gap-3">
-              {/* Left column */}
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {exercise.pairs.map((pair) => (
                   <button
                     key={`L-${pair.left}`}
@@ -934,7 +827,7 @@ export default function LessonPlayer({
                       handleMatchSelect("left", pair.left)
                     }
                     disabled={matchedPairs.has(pair.left)}
-                    className={`w-full rounded-xl border-2 px-3 py-3 text-center text-sm font-medium transition-all ${
+                    className={`w-full rounded-xl border-2 px-3 py-3 text-center text-sm font-medium transition-all break-words ${
                       matchedPairs.has(pair.left)
                         ? "border-kenya-green/30 bg-kenya-green/10 text-kenya-green opacity-60"
                         : selectedLeft === pair.left
@@ -948,8 +841,7 @@ export default function LessonPlayer({
                   </button>
                 ))}
               </div>
-              {/* Right column (shuffled) */}
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {shuffledRightPairs.map((pair) => (
                   <button
                     key={`R-${pair.right}`}
@@ -958,7 +850,7 @@ export default function LessonPlayer({
                       handleMatchSelect("right", pair.right)
                     }
                     disabled={matchedPairs.has(pair.left)}
-                    className={`w-full rounded-xl border-2 px-3 py-3 text-center text-sm font-medium transition-all ${
+                    className={`w-full rounded-xl border-2 px-3 py-3 text-center text-sm font-medium transition-all break-words ${
                       matchedPairs.has(
                         exercise.pairs?.find((p) => p.right === pair.right)
                           ?.left || ""
@@ -978,11 +870,9 @@ export default function LessonPlayer({
             </div>
           )}
 
-          {/* WORD BANK / REORDER */}
           {(exercise.type === "word_bank" || exercise.type === "reorder") &&
             exercise.wordTiles && (
               <div>
-                {/* Selected tiles area */}
                 <div className="mb-4 min-h-[3.5rem] rounded-xl border-2 border-dashed border-border p-3">
                   {selectedTiles.length === 0 ? (
                     <p className="text-sm italic text-text-muted">
@@ -1003,7 +893,6 @@ export default function LessonPlayer({
                   )}
                 </div>
 
-                {/* Available tiles */}
                 <div className="flex flex-wrap gap-2">
                   {exercise.wordTiles.map((tile, idx) => {
                     const isUsed = selectedTiles.includes(idx);
@@ -1030,10 +919,9 @@ export default function LessonPlayer({
 
       {/* ─── Bottom bar: Feedback + Actions ──────── */}
       <div className="mt-auto pt-4 pb-2 sm:pb-4">
-        {/* Feedback banner */}
         {isChecked && (
           <div
-            className={`mb-3 rounded-xl p-3 sm:p-4 ${
+            className={`mb-3 rounded-xl p-3.5 sm:p-4 ${
               isCorrect
                 ? "border border-kenya-green/30 bg-kenya-green/10"
                 : "border border-red-400/30 bg-red-400/5"
@@ -1054,13 +942,12 @@ export default function LessonPlayer({
               </span>
               {isCorrect && !usedHint && (
                 <span className="ml-auto text-xs font-semibold text-gold">
-                  +{XP_PER_CORRECT * (streak >= 5 ? 3 : streak >= 3 ? 2 : 1)}{" "}
-                  XP
+                  +{XP_PER_CORRECT * (streak >= 5 ? 3 : streak >= 3 ? 2 : 1)} XP
                 </span>
               )}
             </div>
             {!isCorrect && (
-              <div className="mt-1 text-xs text-text-secondary">
+              <div className="mt-1.5 text-xs sm:text-sm text-text-secondary">
                 <p>
                   Correct answer:{" "}
                   <span className="font-semibold text-text-primary">
@@ -1075,20 +962,19 @@ export default function LessonPlayer({
           </div>
         )}
 
-        {/* Action buttons */}
-        <div className="flex gap-2">
+        <div className="flex gap-2.5">
           {!isChecked && exercise.type !== "match_pairs" && (
             <>
               <button
                 onClick={handleSkip}
-                className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-3 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-text-secondary"
+                className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-3 text-xs sm:text-sm font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-text-secondary cursor-pointer"
               >
                 <SkipForward className="h-3.5 w-3.5" /> Skip
               </button>
               <button
                 onClick={handleCheck}
                 disabled={!canCheck}
-                className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition-all sm:py-3 ${
+                className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition-all sm:py-3 cursor-pointer ${
                   canCheck
                     ? "bg-gold text-kenya-black active:scale-[0.98] sm:hover:brightness-110"
                     : "bg-bg-elevated text-text-muted cursor-not-allowed"
@@ -1102,14 +988,14 @@ export default function LessonPlayer({
           {isChecked && (
             <button
               onClick={handleContinue}
-              className={`flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition-all sm:py-3 active:scale-[0.98] ${
+              className={`flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition-all sm:py-3 active:scale-[0.98] cursor-pointer ${
                 isCorrect
                   ? "bg-kenya-green text-white sm:hover:brightness-110"
                   : "bg-gold text-kenya-black sm:hover:brightness-110"
               }`}
             >
               {currentIndex >= exercises.length - 1
-                ? "Finish"
+                ? "Finish Lesson"
                 : "Continue"}
               <ChevronRight className="h-4 w-4" />
             </button>

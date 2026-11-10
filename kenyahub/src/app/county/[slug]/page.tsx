@@ -555,8 +555,8 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌱" className="w-5 h-5 text-kenya-green-light" /> Agricultural Soils &amp; Best Crops in {county.name}
             </h2>
-            <Link href="/tools/crop-planting-calendar/" className="text-xs font-semibold text-gold hover:underline">
-              Crop Planting Calendar →
+            <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
+              47 Counties Hub →
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -587,7 +587,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🏥" className="w-5 h-5 text-kenya-green-light" /> SHA / SHIF Hospitals ({countyHospitals.length})
             </h2>
-            <Link href="/tools/nhif-hospital-finder/" className="text-xs font-semibold text-gold hover:underline">
+            <Link href="/county/" className="text-xs font-semibold text-gold hover:underline">
               All Facilities →
             </Link>
           </div>
@@ -656,7 +656,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
               <div className="bg-bg-elevated/50 border border-border/60 rounded-xl p-4 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-bold text-gold uppercase tracking-wider inline-flex items-center gap-1.5"><DynamicIcon emoji="🏆" className="w-3.5 h-3.5" /> Top KCSE Schools</span>
-                  <Link href="/tools/kcse-school-rankings/" className="text-gold hover:underline">Rankings →</Link>
+                  <Link href="/tools/kcse-grade-calculator/" className="text-gold hover:underline">KCSE Calculator →</Link>
                 </div>
                 {countySchools.map((s: any) => (
                   <div key={s.name} className="flex justify-between text-text-secondary">

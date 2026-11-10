@@ -2,10 +2,18 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useCallback, useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { PartyPopper, ChevronLeft, ChevronDown, Flame, Lightbulb } from "lucide-react";
+import {
+  PartyPopper,
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  Flame,
+  Lightbulb,
+  RotateCcw,
+  Layers,
+} from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -15,12 +23,11 @@ import type {
   UserProgress,
   LessonResult,
 } from "@/data/courses/types";
-import { MAX_HEARTS, ACHIEVEMENTS } from "@/data/courses/types";
+import { ACHIEVEMENTS } from "@/data/courses/types";
 import {
   createDefaultProgress,
   loadProgress,
   saveProgress,
-  refillHearts,
   applyLessonResult,
   getDueReviews,
 } from "@/lib/learn-progress";
@@ -33,7 +40,7 @@ import { useRouter } from "next/navigation";
 
 const LessonPlayer = dynamic(() => import("@/components/learn/LessonPlayer"), {
   loading: () => (
-    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
       Loading interactive lesson...
     </div>
   ),
@@ -41,7 +48,7 @@ const LessonPlayer = dynamic(() => import("@/components/learn/LessonPlayer"), {
 
 const GamesHub = dynamic(() => import("@/components/learn/GamesHub"), {
   loading: () => (
-    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
       Loading language games...
     </div>
   ),
@@ -49,7 +56,7 @@ const GamesHub = dynamic(() => import("@/components/learn/GamesHub"), {
 
 const GrammarView = dynamic(() => import("@/components/learn/GrammarView"), {
   loading: () => (
-    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
       Loading grammar reference...
     </div>
   ),
@@ -57,7 +64,7 @@ const GrammarView = dynamic(() => import("@/components/learn/GrammarView"), {
 
 const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
   loading: () => (
-    <div className="py-12 text-center text-xs text-text-muted animate-pulse">
+    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
       Loading proverbs &amp; oral wisdom...
     </div>
   ),
@@ -66,7 +73,7 @@ const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 const MODULES_PAGE_SIZE = 8;
 
-type PageView = "lessons" | "modules" | "games" | "playing" | "grammar" | "proverbs";
+type PageView = "lessons" | "flashcards" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
 function formatLanguageHeader(name: string, nativeName: string): string {
   const cleanName = name.trim();
@@ -88,6 +95,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [moduleSearch, setModuleSearch] = useState("");
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
   const [modulesPage, setModulesPage] = useState(1);
+
+  // Interactive 3D Flashcard Deck state
+  const [flashcardSkillId, setFlashcardSkillId] = useState<string>("all");
+  const [flashcardIndex, setFlashcardIndex] = useState<number>(0);
+  const [isCardFlipped, setIsCardFlipped] = useState<boolean>(false);
+
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
     level: number;
@@ -117,26 +130,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   useEffect(() => {
     if (!course) return;
     const loaded = loadProgress(languageId);
-    const refilled = refillHearts(loaded);
-    if (refilled.hearts !== loaded.hearts) {
-      saveProgress(refilled);
-    }
-    setProgress(refilled);
+    setProgress(loaded);
   }, [languageId, course]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev.hearts >= MAX_HEARTS) return prev;
-        const refilled = refillHearts(prev);
-        if (refilled.hearts !== prev.hearts) {
-          saveProgress(refilled);
-        }
-        return refilled;
-      });
-    }, 30_000);
-    return () => clearInterval(interval);
-  }, []);
 
   const allSkillsFlat = useMemo(() => {
     if (!course) return [];
@@ -148,6 +143,20 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     });
     return list;
   }, [course]);
+
+  const flashcardDeck = useMemo(() => {
+    if (flashcardSkillId === "all") {
+      return allSkillsFlat.flatMap((s) =>
+        s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
+      );
+    }
+    const found = allSkillsFlat.find((s) => s.skill.id === flashcardSkillId);
+    if (!found) return [];
+    return found.skill.words.map((w) => ({ ...w, skillTitle: found.skill.title }));
+  }, [allSkillsFlat, flashcardSkillId]);
+
+  const currentFlashcard =
+    flashcardDeck[flashcardIndex] || flashcardDeck[0] || null;
 
   const filteredModules = useMemo(() => {
     const q = moduleSearch.trim().toLowerCase();
@@ -288,10 +297,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     title: `Learn ${langHeading} — Free Interactive Course`,
     shortTitle: `Learn ${course.config.name}`,
     description: course.config.description,
-    dataSource:
-      sources.length > 0
-        ? sources.map((s) => `${s.title.split("(")[0].trim()} (${s.published})`).join("; ")
-        : LEARN_TOOL.dataSource,
+    dataSource: `Verified ${course.config.name} Linguistic Corpus & Lexicons`,
   };
 
   const courseFaq = [
@@ -312,7 +318,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     },
     {
       question: `Is the ${course.config.name} language course completely free to use?`,
-      answer: `Yes. All ${totalSkills} ${course.config.name} skill modules, vocabulary tables, grammar reference chapters, cultural proverbs, and mini-games are 100% free with no account registration required. Progress is saved automatically in your browser.`,
+      answer: `Yes. All ${totalSkills} ${course.config.name} skill modules, vocabulary flashcards, grammar reference chapters, cultural proverbs, and mini-games are 100% free with no account registration required. Progress is saved automatically in your browser.`,
     },
   ];
 
@@ -330,13 +336,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       hideFooter={view === "playing"}
       hideSource
     >
-      {/* Top Bar: Compact Language Dropdown on Left + XP on Right */}
+      {/* Top Bar: Compact Language Dropdown on Left + XP & Streak on Right */}
       {view !== "playing" && (
-        <div className="mb-3.5 flex items-center justify-between gap-3">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Link
               href="/tools/learn/"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
               aria-label="All Languages"
               title="All Languages"
             >
@@ -349,16 +355,18 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 value: c.config.id,
                 label: c.config.name,
               }))}
-              className="w-40 sm:w-48 text-xs"
+              className="w-44 sm:w-52 text-xs sm:text-sm"
             />
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-semibold text-text-secondary shrink-0">
-            <span className="text-gold font-bold">{progress.xp} XP</span>
+          <div className="flex items-center gap-2 text-xs font-semibold shrink-0">
+            <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5 text-gold font-bold">
+              {progress.xp} XP
+            </span>
             {progress.streak > 0 && (
-              <span className="inline-flex items-center gap-1 text-orange-400">
+              <span className="inline-flex items-center gap-1 rounded-full border border-orange-500/30 bg-orange-500/10 px-2.5 py-1.5 text-orange-400 font-bold">
                 <Flame className="h-3.5 w-3.5" />
-                {progress.streak}
+                {progress.streak}d
               </span>
             )}
           </div>
@@ -379,11 +387,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       {view !== "playing" && (
         <ExpandablePillRow className="mb-5">
           {[
-            { id: "lessons" as const, label: "Path" },
-            { id: "modules" as const, label: "Vocab" },
-            { id: "games" as const, label: "Games" },
+            { id: "lessons" as const, label: "Skill Path" },
+            { id: "flashcards" as const, label: `Flashcards (${totalWords})` },
+            { id: "modules" as const, label: "All Vocab" },
+            { id: "games" as const, label: "Mini-Games" },
             ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
-            { id: "proverbs" as const, label: "Wisdom" },
+            { id: "proverbs" as const, label: "Proverbs & Wisdom" },
           ].map((tab) => {
             const active = view === tab.id;
             return (
@@ -392,7 +401,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 onClick={() => setView(tab.id)}
                 role="tab"
                 aria-selected={active}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -418,6 +427,126 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             reviewOnly={activeLesson.reviewOnly}
           />
         </div>
+      ) : view === "flashcards" ? (
+        /* ── Interactive 3D Flashcards Deck View (No Audio Buttons) ── */
+        <div className="mx-auto max-w-2xl space-y-5 pb-8">
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+                <Layers className="w-5 h-5 text-gold" />
+                <span>{course.config.name} Interactive Flashcards</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-text-secondary mt-0.5">
+                Tap the card to flip between {course.config.name} and English meanings.
+              </p>
+            </div>
+            <CustomSelect
+              value={flashcardSkillId}
+              onValueChange={(val) => {
+                setFlashcardSkillId(val);
+                setFlashcardIndex(0);
+                setIsCardFlipped(false);
+              }}
+              options={[
+                { value: "all", label: `All Modules (${totalWords} words)` },
+                ...allSkillsFlat.map((s) => ({
+                  value: s.skill.id,
+                  label: `${s.skill.title} (${s.skill.words.length})`,
+                })),
+              ]}
+              className="w-full sm:w-64 text-xs sm:text-sm"
+            />
+          </div>
+
+          {currentFlashcard && (
+            <div className="space-y-4">
+              <div
+                onClick={() => setIsCardFlipped((f) => !f)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setIsCardFlipped((f) => !f);
+                  }
+                }}
+                className="group relative min-h-[250px] sm:min-h-[280px] rounded-3xl border-2 border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-6 sm:p-8 flex flex-col justify-between cursor-pointer transition-all hover:border-gold/60 shadow-lg select-none"
+              >
+                <div className="flex items-center justify-between gap-2 text-xs text-text-muted">
+                  <span className="rounded-full bg-bg-elevated border border-border px-3 py-1 font-semibold text-gold">
+                    {currentFlashcard.skillTitle}
+                  </span>
+                  <span>
+                    Card {flashcardIndex + 1} of {flashcardDeck.length}
+                  </span>
+                </div>
+
+                <div className="my-6 text-center space-y-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-text-muted">
+                    {isCardFlipped ? "English Meaning" : course.config.name}
+                  </p>
+                  <p className="text-2xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-gold break-words">
+                    {isCardFlipped ? currentFlashcard.source : currentFlashcard.target}
+                  </p>
+                  {!isCardFlipped && currentFlashcard.pronunciation && (
+                    <p className="text-sm text-sky-light italic">
+                      [{currentFlashcard.pronunciation}]
+                    </p>
+                  )}
+                  {isCardFlipped && currentFlashcard.example && (
+                    <p className="text-sm text-text-secondary mt-3 pt-3 border-t border-border/60 max-w-md mx-auto">
+                      Example: <strong className="text-text-primary">{currentFlashcard.example}</strong>
+                    </p>
+                  )}
+                </div>
+
+                <div className="flex items-center justify-center text-xs text-text-secondary pt-2 border-t border-border/40 font-medium">
+                  Tap card to flip ↻
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between gap-3">
+                <button
+                  type="button"
+                  disabled={flashcardIndex === 0}
+                  onClick={() => {
+                    setFlashcardIndex((i) => Math.max(0, i - 1));
+                    setIsCardFlipped(false);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card px-4 py-2.5 text-xs sm:text-sm font-semibold text-text-primary disabled:opacity-40 hover:border-gold/40 transition-colors cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" /> Previous
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    const rand = Math.floor(Math.random() * flashcardDeck.length);
+                    setFlashcardIndex(rand);
+                    setIsCardFlipped(false);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-4 py-2.5 text-xs sm:text-sm font-semibold text-gold hover:border-gold/40 transition-colors cursor-pointer"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" /> Shuffle Card
+                </button>
+
+                <button
+                  type="button"
+                  disabled={flashcardIndex >= flashcardDeck.length - 1}
+                  onClick={() => {
+                    setFlashcardIndex((i) =>
+                      Math.min(flashcardDeck.length - 1, i + 1)
+                    );
+                    setIsCardFlipped(false);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-gold px-5 py-2.5 text-xs sm:text-sm font-bold text-kenya-black disabled:opacity-40 hover:brightness-110 transition-all cursor-pointer"
+                >
+                  Next <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       ) : view === "modules" ? (
         <div className="mx-auto max-w-3xl space-y-5 pb-8">
           <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-3.5">
@@ -425,7 +554,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
                 All {course.config.name} Modules &amp; Vocabulary ({filteredModules.length})
               </h2>
-              <p className="text-xs text-text-secondary">
+              <p className="text-xs sm:text-sm text-text-secondary mt-0.5">
                 Browse every module, grammar note, and vocabulary word table, or launch any lesson directly.
               </p>
             </div>
@@ -448,7 +577,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                     label: `Unit ${idx + 1}: ${u.title.replace(/^Unit \d+:\s*/i, "")}`,
                   })),
                 ]}
-                className="w-full sm:w-64 text-xs"
+                className="w-full sm:w-64 text-xs sm:text-sm"
               />
             </div>
           </div>
@@ -459,62 +588,66 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               return (
                 <div
                   key={skill.id}
-                  className="bg-bg-card border border-border rounded-2xl p-5 space-y-4"
+                  className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-4"
                 >
-                  <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border pb-3">
-                    <div className="min-w-0 flex-1">
-                      <span className="text-[0.65rem] font-bold uppercase tracking-wider text-gold">
+                  <div className="space-y-2 border-b border-border pb-3.5">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-gold">
                         {unitTitle}
                       </span>
-                      <h3 className="text-base font-bold text-text-primary">
-                        {skill.title}
-                      </h3>
-                      <p className="text-xs text-text-muted">{skill.description}</p>
+                      <button
+                        onClick={() =>
+                          handleStartLesson(skill.id, Math.min(skillLevel + 1, 5))
+                        }
+                        className="rounded-xl bg-gold px-4 py-2 text-xs font-bold text-kenya-black hover:brightness-110 transition-all shrink-0 cursor-pointer"
+                      >
+                        Practice ({skill.words.length} words) →
+                      </button>
                     </div>
-                    <button
-                      onClick={() =>
-                        handleStartLesson(skill.id, Math.min(skillLevel + 1, 5))
-                      }
-                      className="rounded-xl bg-gold px-4 py-2 text-xs font-bold text-kenya-black hover:brightness-110 transition-all shrink-0"
-                    >
-                      Practice Module ({skill.words.length} words) →
-                    </button>
+                    <h3 className="text-base sm:text-lg font-bold text-text-primary leading-snug">
+                      {skill.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+                      {skill.description}
+                    </p>
                   </div>
 
                   {skill.tips && (
-                    <details className="group rounded-xl bg-gold/5 border border-gold/20 px-3.5 py-2.5 text-xs text-text-secondary">
+                    <details className="group rounded-xl bg-gold/5 border border-gold/20 px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary">
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
-                        <span className="inline-flex items-center gap-1.5">
-                          <Lightbulb className="h-3.5 w-3.5 shrink-0 text-gold" />
+                        <span className="inline-flex items-center gap-2">
+                          <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
                           <span>Grammar &amp; Lesson Notes</span>
                         </span>
-                        <ChevronDown className="h-3.5 w-3.5 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+                        <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
                       </summary>
-                      <div className="mt-2 border-t border-gold/15 pt-2 leading-relaxed whitespace-pre-line">
+                      <div className="mt-2.5 border-t border-gold/15 pt-2.5 leading-relaxed whitespace-pre-line">
                         {skill.tips}
                       </div>
                     </details>
                   )}
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {skill.words.map((w, wIdx) => (
                       <div
                         key={wIdx}
-                        className="rounded-xl bg-bg-elevated/60 border border-border/60 p-3 flex flex-col justify-between"
+                        className="rounded-xl bg-bg-elevated/60 border border-border/60 p-3.5 flex flex-col justify-between gap-1"
                       >
                         <div className="flex items-start justify-between gap-2">
-                          <span className="text-xs font-bold text-gold">{w.target}</span>
-                          <span className="text-xs font-medium text-text-primary text-right">
+                          <span className="text-sm font-bold text-gold break-words">
+                            {w.target}
+                          </span>
+                          <span className="text-xs sm:text-sm font-medium text-text-primary text-right">
                             {w.source}
                           </span>
                         </div>
                         {w.pronunciation && (
-                          <span className="text-[0.65rem] text-sky-light mt-1">
+                          <span className="text-xs text-sky-light">
                             [{w.pronunciation}]
                           </span>
                         )}
                         {w.example && (
-                          <span className="text-[0.65rem] text-text-muted italic mt-1">
+                          <span className="text-xs text-text-muted italic mt-1">
                             {w.example}
                           </span>
                         )}
@@ -530,7 +663,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 <button
                   type="button"
                   onClick={() => setModulesPage((p) => p + 1)}
-                  className="px-5 py-2.5 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs font-bold text-text-primary cursor-pointer transition-all"
+                  className="px-5 py-2.5 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs sm:text-sm font-bold text-text-primary cursor-pointer transition-all"
                 >
                   Load More Modules ({filteredModules.length - visibleModules.length} remaining)
                 </button>

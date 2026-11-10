@@ -550,11 +550,6 @@ export default function LanguageCourseTool({
     } else {
       setStreakCount(0);
       setMissedItems((prev) => [...prev, { prompt: ex.prompt, correct: ex.correctAnswer }]);
-      saveLanguageProgress((prev) => ({
-        ...prev,
-        hearts: Math.max(0, prev.hearts - 1),
-        heartsLastRefill: prev.hearts === MAX_HEARTS ? Date.now() : prev.heartsLastRefill,
-      }));
     }
 
     // Update word strength if sourceWord present
@@ -876,11 +871,6 @@ export default function LanguageCourseTool({
                 ? `Exercise ${exIndex + 1}/${exercises.length}`
                 : 'Complete'}
             </Text>
-          </View>
-
-          <View style={styles.lessonHeartsBadge}>
-            <Feather name="heart" size={14} color="#EF4444" />
-            <Text style={[styles.lessonHeartsText, { color: colors.text }]}>{progress.hearts}</Text>
           </View>
         </View>
 
@@ -1557,15 +1547,6 @@ export default function LanguageCourseTool({
               <Feather name="zap" size={12} color="#F59E0B" />
               <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.streak}d</Text>
             </View>
-            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 4 }]}>
-              <Feather name="heart" size={12} color="#EF4444" />
-              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.hearts}</Text>
-              {progress.hearts < MAX_HEARTS && (
-                <Text style={{ fontSize: 10, color: colors.textMuted }}>
-                  {' '}({`${minutesToNextHeart({ ...progress, version: 1, skillLevels: {}, xp: progress.totalXP, lastActiveDate: progress.lastPracticeDate, todayXp: progress.dailyXP, achievements: progress.unlockedAchievements, wordsLearned: [], lessonsCompleted: 0, streakFreezes: 0, reviewQueue: [] })}m`})
-                </Text>
-              )}
-            </View>
             <Pressable
               android_ripple={ripple}
               onPress={() => setShowAchievements((v) => !v)}
@@ -1977,26 +1958,18 @@ export default function LanguageCourseTool({
                           ]}
                         >
                           <View style={styles.skillNodeTop}>
-                            <View style={{ flex: 1 }}>
-                              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                                {unlocked ? (
-                                  <DynamicIcon
-                                    emoji={skill.icon}
-                                    size={16}
-                                    color={skillLevel >= 1 ? '#10B981' : langColor}
-                                  />
-                                ) : (
-                                  <Feather name="lock" size={15} color={colors.textMuted} />
-                                )}
-                                <Text style={[styles.skillNodeTitle, { color: colors.text }]}>
-                                  {skill.title}
-                                </Text>
-                              </View>
-                              <Text
-                                style={[styles.skillNodeDesc, { color: colors.textSecondary }]}
-                                
-                              >
-                                {skill.description}
+                            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                              {unlocked ? (
+                                <DynamicIcon
+                                  emoji={skill.icon}
+                                  size={18}
+                                  color={skillLevel >= 1 ? '#10B981' : langColor}
+                                />
+                              ) : (
+                                <Feather name="lock" size={15} color={colors.textMuted} />
+                              )}
+                              <Text style={[styles.skillNodeTitle, { color: colors.text, flex: 1 }]}>
+                                {skill.title}
                               </Text>
                             </View>
 
@@ -2013,6 +1986,11 @@ export default function LanguageCourseTool({
                               ))}
                             </View>
                           </View>
+                          <Text
+                            style={[styles.skillNodeDesc, { color: colors.textSecondary, marginTop: 4 }]}
+                          >
+                            {skill.description}
+                          </Text>
 
                           <View style={styles.skillNodeFooter}>
                             <Text style={{ fontSize: 11, color: colors.textMuted }}>

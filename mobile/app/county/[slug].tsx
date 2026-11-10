@@ -196,7 +196,7 @@ export default function CountyDetailScreen() {
       action: () =>
         router.push({
           pathname: "/tools/[slug]",
-          params: { slug: "nhif-hospital-finder" },
+          params: { slug: "learn" },
         }),
     },
     {

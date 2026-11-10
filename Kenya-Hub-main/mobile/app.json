@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "KenyaHub",
+    "slug": "kenyahub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "kenyahub",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C0A08"
+    },
+    "android": {
+      "package": "ke.co.kenyahub.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#141210"
+      }
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

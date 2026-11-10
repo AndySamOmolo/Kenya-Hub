@@ -41,7 +41,7 @@ function findImportedData(slug) {
 
 function inspectData(filePath, config = {}) {
   if (extname(filePath) !== ".json") {
-    return { file: relative(root, filePath).replaceAll("\\", "/"), lastUpdated: null, source: null };
+    return { file: relative(root, filePath).replaceAll("\\", "/"), lastUpdated: config.lastUpdated ?? null, source: config.source ?? config.sourceUrl ?? null };
   }
   try {
     const data = JSON.parse(readFileSync(filePath, "utf8"));

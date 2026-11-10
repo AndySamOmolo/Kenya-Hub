@@ -1,0 +1,323 @@
+"use client";
+
+import { BusFront, Home, Edit3, Landmark, Mail, Wrench, Info, Languages, Globe } from "lucide-react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
+import { useTheme } from "@/components/ThemeProvider";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+
+export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
+  const { theme, toggle } = useTheme();
+
+  const notifyCategorySelect = (catId: string) => {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("kh-select-category", { detail: catId }));
+    }
+  };
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setToolsOpen(false);
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  return (
+    <>
+      {/* Kenyan flag stripe */}
+      <div className="kenya-stripe w-full" />
+
+      <nav className="sticky top-0 z-50 glass">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-12 sm:h-[54px]">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
+              <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-kenya-green via-gold to-kenya-red opacity-20 group-hover:opacity-40 transition-opacity" />
+                <img src="/kenya-flag.svg" alt="Kenya Flag" className="relative w-4 sm:w-5 h-auto rounded-[1px] shadow-sm" />
+              </div>
+              <span className="text-base sm:text-lg font-extrabold font-[family-name:var(--font-outfit)] gradient-text-kenya tracking-tight">
+                KenyaHub
+              </span>
+            </Link>
+
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center gap-1">
+              <Link
+                href="/"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+              >
+                Home
+              </Link>
+
+              {/* Flagship Main Feature: Learn Kenyan Languages */}
+              <Link
+                href="/tools/learn/"
+                className="px-3.5 py-1.5 text-[0.8125rem] font-bold text-gold bg-gold/10 border border-gold/30 hover:bg-gold/20 transition-all rounded-full flex items-center gap-1.5 mr-1"
+              >
+                <Languages className="w-4 h-4 text-gold shrink-0" />
+                <span>Learn Languages</span>
+                <span className="text-[0.65rem] px-1.5 py-0.2 rounded-full bg-kenya-green/25 text-kenya-green-light font-semibold">
+                  22
+                </span>
+              </Link>
+
+              <Link
+                href="/tools/kenyan-translator/"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-gold transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1"
+              >
+                <Globe className="w-3.5 h-3.5 text-kenya-green-light" />
+                <span>Translator</span>
+              </Link>
+
+              {/* Tools mega-menu */}
+              <div
+                className="relative"
+                onMouseEnter={() => setToolsOpen(true)}
+                onMouseLeave={() => setToolsOpen(false)}
+              >
+                <button aria-expanded={toolsOpen} aria-haspopup="true" onClick={() => setToolsOpen((v) => !v)} className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1">
+                  Calculators
+                  <svg
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${toolsOpen ? "rotate-180" : ""}`}
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {toolsOpen && (
+                  <div className="absolute top-full right-0 pt-2 w-[680px] animate-fade-in-up z-50">
+                    <div className="rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6">
+                    <div className="maasai-border-top rounded-2xl mb-3" />
+
+                    <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1 max-h-[60vh] overflow-y-auto pr-2">
+                      {TOOL_CATEGORIES.map((cat) => {
+                        const catTools = TOOLS.filter((t) => t.category === cat.id);
+                        return (
+                          <div key={cat.id}>
+                            <Link
+                              href={`/tools/?category=${cat.id}`}
+                              onClick={() => {
+                                setToolsOpen(false);
+                                notifyCategorySelect(cat.id);
+                              }}
+                              className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-text-primary hover:text-gold transition-colors mb-1.5"
+                            >
+                              <span className="text-gold"><DynamicIcon emoji={cat.icon} className="w-4 h-4 inline-block mb-[0.1em]" /></span>
+                              {cat.name}
+                            </Link>
+                            <div className="space-y-1 pl-6">
+                              {catTools.map((tool) => (
+                                <Link
+                                  key={tool.slug}
+                                  href={`/tools/${tool.slug}/`}
+                                  onClick={() => setToolsOpen(false)}
+                                  className="block text-xs text-text-muted hover:text-text-secondary transition-colors py-0.5"
+                                >
+                                  {tool.shortTitle}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
+                      <Link
+                        href="/tools/"
+                        onClick={() => {
+                          setToolsOpen(false);
+                          notifyCategorySelect("all");
+                        }}
+                        className="text-sm font-semibold text-gold hover:text-gold-light transition-colors flex items-center gap-1.5"
+                      >
+                        Browse All {TOOLS.length} Tools
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                      <span className="text-xs text-text-muted">
+                        Official Kenya data sources
+                      </span>
+                    </div>
+                  </div>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="/county/"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+              >
+                Counties
+              </Link>
+
+              <Link
+                href="/matatu/"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-gold transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04] flex items-center gap-1"
+              >
+                <BusFront className="w-3.5 h-3.5 text-gold inline-block mb-0.5" /> Matatu
+              </Link>
+
+              <Link
+                href="/blog/"
+                className="px-3 py-2 text-[0.8125rem] font-medium text-text-secondary hover:text-text-primary transition-colors rounded-lg hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+              >
+                Guides
+              </Link>
+
+              {/* Theme toggle */}
+              <button
+                onClick={toggle}
+                className="theme-toggle ml-1.5"
+                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              >
+                {theme === "dark" ? (
+                  /* Sun icon */
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                ) : (
+                  /* Moon icon */
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                )}
+              </button>
+            </div>
+
+            {/* Mobile: Quick Learn Pill + theme + hamburger */}
+            <div className="md:hidden flex items-center gap-1.5">
+              <Link
+                href="/tools/learn/"
+                className="px-2.5 py-1 text-xs font-bold text-gold bg-gold/15 border border-gold/30 rounded-full flex items-center gap-1"
+              >
+                <Languages className="w-3.5 h-3.5 text-gold shrink-0" />
+                <span>Learn</span>
+              </Link>
+
+              <button
+                onClick={toggle}
+                className="theme-toggle"
+                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              >
+                {theme === "dark" ? (
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                )}
+              </button>
+
+              <button
+                className="relative w-9 h-9 flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors rounded-lg"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-expanded={mobileOpen}
+                aria-label="Toggle navigation menu"
+              >
+                <div className="space-y-1.5">
+                  <span className={`block w-5 h-0.5 bg-current transition-all duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[4px]" : ""}`} />
+                  <span className={`block w-5 h-0.5 bg-current transition-all duration-300 ${mobileOpen ? "opacity-0 scale-0" : ""}`} />
+                  <span className={`block w-5 h-0.5 bg-current transition-all duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[4px]" : ""}`} />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileOpen && (
+          <div className="md:hidden absolute left-0 right-0 top-12 h-[calc(100dvh-48px)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
+            <div className="flex-1 overflow-y-auto px-4 py-4 pb-16 space-y-1">
+              <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
+              </Link>
+              <Link href="/tools/learn/" className="group flex items-center justify-between gap-3 px-3 py-2.5 text-sm font-bold text-gold bg-gold/10 border border-gold/25 rounded-xl transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="flex items-center gap-3">
+                  <span className="w-7 flex items-center justify-center shrink-0"><Languages className="w-4 h-4 text-gold shrink-0" /></span>
+                  Learn 22 Kenyan Languages
+                </span>
+                <span className="text-[0.65rem] px-2 py-0.5 rounded-full bg-kenya-green/20 text-kenya-green-light font-semibold">Main Hub</span>
+              </Link>
+              <Link href="/tools/kenyan-translator/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-primary hover:text-gold rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Globe className="w-4 h-4 text-kenya-green-light shrink-0" /></span> 22-Language Translator &amp; Dictionary
+              </Link>
+              <Link href="/county/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Landmark className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> 47 Counties Hub
+              </Link>
+              <Link href="/matatu/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-gold rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><BusFront className="w-4 h-4 text-gold group-hover:text-gold-light transition-colors shrink-0" /></span> Matatu Routes
+              </Link>
+              <Link
+                href="/tools/"
+                className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
+                onClick={() => {
+                  setMobileOpen(false);
+                  notifyCategorySelect("all");
+                }}
+              >
+                <span className="w-7 flex items-center justify-center shrink-0"><Wrench className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> All {TOOLS.length} Tools &amp; Calculators
+              </Link>
+              <Link href="/blog/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Edit3 className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Kenyan Guides &amp; Blog
+              </Link>
+              <Link href="/about/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Info className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> About Us
+              </Link>
+              <Link href="/contact/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
+                <span className="w-7 flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Contact
+              </Link>
+
+              <div className="section-divider my-2.5" />
+
+              <p className="px-3 py-1 text-xs font-bold text-text-muted uppercase tracking-[0.12em]">
+                Categories
+              </p>
+              {TOOL_CATEGORIES.map((cat) => (
+                <Link
+                  key={cat.id}
+                  href={`/tools/?category=${cat.id}`}
+                  className="group flex items-center gap-3 px-3 py-2.5 text-sm text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    notifyCategorySelect(cat.id);
+                  }}
+                >
+                  <span className="w-7 flex items-center justify-center shrink-0">
+                    <DynamicIcon emoji={cat.icon} className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" />
+                  </span>
+                  {cat.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
+  );
+}

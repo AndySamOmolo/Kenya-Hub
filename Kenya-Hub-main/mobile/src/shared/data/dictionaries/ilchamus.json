@@ -1,0 +1,2233 @@
+{
+  "languageId": "ilchamus",
+  "languageName": "Ilchamus (Njemps)",
+  "family": "nilotic",
+  "nativeName": "Ilchamus / Camus",
+  "script": "Latin",
+  "speakerCount": 35000,
+  "counties": [
+    "Baringo"
+  ],
+  "hasAudio": false,
+  "dictionaryVersion": "3.0",
+  "lastUpdated": "2026-10-31",
+  "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Peace",
+          "translation": "Serian",
+          "pronunciation": "seh-ri-an",
+          "context": "Ilchamus (Camus) greeting & blessing",
+          "audioFile": null
+        },
+        {
+          "english": "Thank you",
+          "translation": "Ashe / Ashe oleng",
+          "pronunciation": "ah-sheh",
+          "context": "Ilchamus expression of gratitude",
+          "audioFile": null
+        },
+        {
+          "english": "Hello (Reply)",
+          "translation": "Epa / Ipa",
+          "pronunciation": "eh-pah",
+          "context": "Ilchamus greeting response",
+          "audioFile": null
+        },
+        {
+          "english": "Hello / Greetings",
+          "translation": "Sopa / Supa",
+          "pronunciation": "soh-pah",
+          "context": "Ilchamus (Camus / North Maa) greeting",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "nabo (fem.) / obo (masc.)",
+          "pronunciation": "na-bo / o-bo",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Two",
+          "translation": "are (fem.) / waare (masc.)",
+          "pronunciation": "a-re / waa-re",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Six",
+          "translation": "ile",
+          "pronunciation": "i-le",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Ten",
+          "translation": "tomon",
+          "pronunciation": "to-mon",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Four",
+          "translation": "ong'wan",
+          "pronunciation": "ong-wan",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Five",
+          "translation": "imiet / imjet",
+          "pronunciation": "i-miet",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Nine",
+          "translation": "saal",
+          "pronunciation": "saal",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Three",
+          "translation": "uni (fem.) / okuni (masc.)",
+          "pronunciation": "u-ni / o-ku-ni",
+          "context": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Seven",
+          "translation": "sapa",
+          "pronunciation": "sa-pa",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Eight",
+          "translation": "isiet",
+          "pronunciation": "i-siet",
+          "context": "Johnston (1902) — Camus/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Forty",
+          "translation": "Artam",
+          "pronunciation": "artam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fifty",
+          "translation": "Onnom",
+          "pronunciation": "onnom",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sixty",
+          "translation": "otomon",
+          "pronunciation": "o-to-mon",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Twenty",
+          "translation": "Tigitam",
+          "pronunciation": "ti-gi-tam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirty",
+          "translation": "Tomoni uni",
+          "pronunciation": "to-mo-ni uni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven",
+          "translation": "Tomon obo",
+          "pronunciation": "to-mon obo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Eighty",
+          "translation": "otomoni uni",
+          "pronunciation": "o-to-mo-ni uni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ninety",
+          "translation": "artam",
+          "pronunciation": "artam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hundred",
+          "translation": "Ip",
+          "pronunciation": "ip",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Seventy",
+          "translation": "obikitam",
+          "pronunciation": "o-bi-ki-tam",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thousand",
+          "translation": "Ip tomon",
+          "pronunciation": "ip to-mon",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family, People & Kinship",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Man",
+          "translation": "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
+          "pronunciation": "l-pah-yahn / l-moo-rah-nee",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Son",
+          "translation": "Eñ karei",
+          "pronunciation": "eng ka-rei",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wife",
+          "translation": "Eñ getok; En gedūa (pl.)",
+          "pronunciation": "en getok",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Woman",
+          "translation": "n-gitok (pl. n-gituak)",
+          "pronunciation": "n-gee-tohk",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Child",
+          "translation": "nkerai (pl. ngera)",
+          "pronunciation": "nke-rai",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Chief",
+          "translation": "Embatiān, Ol aitórienĭ, Lagwainani",
+          "pronunciation": "embatian ol aitorieni lagwainani",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Twins",
+          "translation": "El mau",
+          "pronunciation": "el mau",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Father",
+          "translation": "papa / menye",
+          "pronunciation": "pa-pa / me-nye",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Mother",
+          "translation": "yeyo / ng'oto",
+          "pronunciation": "ye-yo",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Sister",
+          "translation": "Añganaishai",
+          "pronunciation": "angga-naishai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Friend",
+          "translation": "l-chore (pl. l-choreta)",
+          "pronunciation": "l-choh-reh",
+          "context": "Dundas 1910 & Maa Baringo corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Brother",
+          "translation": "lalashe; Añgargenna (pl.)",
+          "pronunciation": "lalashe",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Man / Men",
+          "translation": "Ol doñani; El toñana",
+          "pronunciation": "ol donga-ni el tonga-na",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Person / People",
+          "translation": "ltung'ani (pl. ltung'ana)",
+          "pronunciation": "ltung-a-ni",
+          "context": "Camus / North Maa (Johnston 1902)",
+          "audioFile": null
+        },
+        {
+          "english": "People of Ilchamus ('People who see far')",
+          "translation": "Ilchamus (sg. Olchamus); Suk exonym: En-jemusi",
+          "pronunciation": "il-cha-mus / en-je-mu-si",
+          "context": "Dundas (1910), Beech (1911) & Wikipedia Ilchamus_people",
+          "audioFile": null
+        },
+        {
+          "english": "My child",
+          "translation": "Eñgaraiai",
+          "pronunciation": "engga-raiai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "God",
+          "translation": "Nkai",
+          "pronunciation": "nkai",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts & Health",
+      "icon": "🫁",
+      "entries": [
+        {
+          "english": "Eye",
+          "translation": "ŋ-kɔŋ-ʊ́ (nkong'u)",
+          "pronunciation": "ng-kong-u",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "ŋ-ké-ok (nkeok)",
+          "pronunciation": "-ke-ok",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Arm",
+          "translation": "Engaina",
+          "pronunciation": "engai-na",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Leg",
+          "translation": "Eñgeju",
+          "pronunciation": "engge-ju",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Toe",
+          "translation": "El gimojinno (pl. gimojik)",
+          "pronunciation": "el gi-mo-jinno",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Nose",
+          "translation": "ŋ-kawar-íé (nkawarie)",
+          "pronunciation": "-kawar-ie",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "l-óì-tò (loito)",
+          "pronunciation": "loi-to",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Head",
+          "translation": "lukunya",
+          "pronunciation": "lu-ku-nya",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Back",
+          "translation": "Engorioñ",
+          "pronunciation": "engo-riong",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Foot",
+          "translation": "Eñgaijo",
+          "pronunciation": "enggai-jo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair",
+          "translation": "El babet",
+          "pronunciation": "el ba-bet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand",
+          "translation": "Andap",
+          "pronunciation": "andap",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Heel",
+          "translation": "Endudunyŏ",
+          "pronunciation": "endu-dunyo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Knee",
+          "translation": "Añgoño",
+          "pronunciation": "anggongo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Neck",
+          "translation": "Em mūrtu",
+          "pronunciation": "em murtu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Skin",
+          "translation": "Endában",
+          "pronunciation": "enda-ban",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tear",
+          "translation": "El giyo",
+          "pronunciation": "el gi-yo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Body",
+          "translation": "Os-sessin",
+          "pronunciation": "os-sessin",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Face",
+          "translation": "Ngōmom",
+          "pronunciation": "ngo-mom",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Lips",
+          "translation": "Añ gotuk",
+          "pronunciation": "ang go-tuk",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "l-alá-ɪ̀ (lalai)",
+          "pronunciation": "la-lai",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "l-ɔɗɔ́ (lod'o)",
+          "pronunciation": "lo-do",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Belly",
+          "translation": "Ngoṣoge",
+          "pronunciation": "ngo-so-ge",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Heart",
+          "translation": "Elkipiu",
+          "pronunciation": "elki-piu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thigh",
+          "translation": "En gubis",
+          "pronunciation": "en gu-bis",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Beard",
+          "translation": "Olmūnyēi",
+          "pronunciation": "olmunyei",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "l-ŋɛjɛp (lng'ejep)",
+          "pronunciation": "lng'e-jep",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Breast",
+          "translation": "Ol kina",
+          "pronunciation": "ol ki-na",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Finger",
+          "translation": "Orgimojínno",
+          "pronunciation": "orgi-mo-jinno",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tongue",
+          "translation": "l-ng'ejep (Ol ñejep)",
+          "pronunciation": "l-nge-jep",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hand / Arm",
+          "translation": "nkaina",
+          "pronunciation": "nkai-na",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Leg / Foot",
+          "translation": "lkeju",
+          "pronunciation": "lke-ju",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Mouth / Language",
+          "translation": "ŋ-kʊtʊ́k (nkutuk)",
+          "pronunciation": "ng-kutuk",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "Ol oisotṓ, Saiyet",
+          "pronunciation": "ol oi-so-to sai-yet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyphœne palm",
+          "translation": "Ol tuqai",
+          "pronunciation": "ol tu-qai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals, Livestock & Wildlife",
+      "icon": "🦁",
+      "entries": [
+        {
+          "english": "Ox",
+          "translation": "Eñ giṣu",
+          "pronunciation": "eng gi-su",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Dog",
+          "translation": "l-dia (pl. l-diain)",
+          "pronunciation": "l-dee-ah",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Ant",
+          "translation": "Gasorī́",
+          "pronunciation": "ga-so-ri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ass",
+          "translation": "Os sigiria",
+          "pronunciation": "os si-gi-ria",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bee",
+          "translation": "Lotoro",
+          "pronunciation": "lo-to-ro",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cat",
+          "translation": "Ambarie",
+          "pronunciation": "amba-rie",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow",
+          "translation": "Eñ kiteñ",
+          "pronunciation": "eng ki-teng",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pig",
+          "translation": "Ol bitirr",
+          "pronunciation": "ol bi-tirr",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Rat",
+          "translation": "Nderoni",
+          "pronunciation": "nde-ro-ni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Goat",
+          "translation": "nkine",
+          "pronunciation": "nki-ne",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Bird",
+          "translation": "nkweny",
+          "pronunciation": "nkweny",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Kudu",
+          "translation": "Ol malu",
+          "pronunciation": "ol ma-lu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bull",
+          "translation": "L'eñōni",
+          "pronunciation": "l'engo-ni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fowl",
+          "translation": "El ugungu",
+          "pronunciation": "el u-gungu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Horn",
+          "translation": "Mōwarak",
+          "pronunciation": "mo-wa-rak",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Sheep",
+          "translation": "nker",
+          "pronunciation": "nker",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Snake",
+          "translation": "lasurai",
+          "pronunciation": "la-su-rai",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Eland",
+          "translation": "Osirwa",
+          "pronunciation": "sirwa",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Horse",
+          "translation": "Mbarta",
+          "pronunciation": "mbarta",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Zebra",
+          "translation": "Ol loitiko",
+          "pronunciation": "ol loi-ti-ko",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory",
+          "translation": "Elalla ol dōme",
+          "pronunciation": "e-lalla ol do-me",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon",
+          "translation": "Lotimi, Lotini",
+          "pronunciation": "lo-ti-mi lo-ti-ni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cattle",
+          "translation": "Eñgiṣu",
+          "pronunciation": "enggi-su",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Jackal",
+          "translation": "Es sūyān",
+          "pronunciation": "es su-yan",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey",
+          "translation": "An naiṓkotuk",
+          "pronunciation": "an naio-ko-tuk",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Pigeon",
+          "translation": "En turkullu",
+          "pronunciation": "en turkullu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Termite",
+          "translation": "Olosai",
+          "pronunciation": "o-lo-sai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Ladókira-gata",
+          "pronunciation": "ladokira-gata",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Ol osowan, oisā",
+          "pronunciation": "ol o-so-wan oi-sa",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ol luwara mara",
+          "pronunciation": "ol lu-wa-ra ma-ra",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Colobus",
+          "translation": "Ol goroi",
+          "pronunciation": "ol go-roi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bushbuck",
+          "translation": "El muingu",
+          "pronunciation": "el muingu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Reedbuck",
+          "translation": "Erongo",
+          "pronunciation": "e-rongo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile",
+          "translation": "lkinyang'",
+          "pronunciation": "lki-nyang'",
+          "context": "Ilchamus Lake Baringo fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Hartebeest",
+          "translation": "Olguseroi",
+          "pronunciation": "olgu-se-roi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish eagle",
+          "translation": "l-kokoltim",
+          "pronunciation": "l ko-kol-tim",
+          "context": "Ilchamus Wildlife Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Omūiny'",
+          "pronunciation": "muiny'",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cow / Cattle",
+          "translation": "nkiteng' (pl. nkishu)",
+          "pronunciation": "nki-teng'",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Hyena, spotted",
+          "translation": "Ol oñadyenne",
+          "pronunciation": "ol ongadyenne",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish (Lake Baringo)",
+          "translation": "lsing'iri (pl. lsing'ir)",
+          "pronunciation": "lsing-i-ri",
+          "context": "Ilchamus Lake Baringo fishing vocabulary",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus (Lake Baringo)",
+          "translation": "lmakau",
+          "pronunciation": "lma-kau",
+          "context": "Ilchamus Lake Baringo fauna",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile (Baringo & Ngingyang rivers)",
+          "translation": "l-kinyang'",
+          "pronunciation": "l kiny-ang'",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 49) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Wart hog",
+          "translation": "Ol gūya",
+          "pronunciation": "ol gu-ya",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Guinea-fowl",
+          "translation": "Ngeresure",
+          "pronunciation": "nge-re-su-re",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tilapia fish of Lake Baringo",
+          "translation": "l-bahe (pl. il-baheni)",
+          "pronunciation": "l ba-he",
+          "context": "Ilchamus Fishing Lexicon — Heine (1980)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature, Environment & Geography",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Sun",
+          "translation": "nkolong'",
+          "pronunciation": "nko-long'",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Sky",
+          "translation": "Añgatambo",
+          "pronunciation": "angga-tambo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "l-akira (pl. l-akir)",
+          "pronunciation": "l-ah-kee-rah",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Fire",
+          "translation": "nkima",
+          "pronunciation": "nki-ma",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Rain",
+          "translation": "nchan",
+          "pronunciation": "nchan",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Moon",
+          "translation": "Ol laba (pl. Labaitin)",
+          "pronunciation": "ol laba",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Seed",
+          "translation": "El teñyat",
+          "pronunciation": "el tengyat",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree",
+          "translation": "Ol jata",
+          "pronunciation": "ol ja-ta",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wind",
+          "translation": "Alasagutoni (cold)",
+          "pronunciation": "alasagutoni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Wood",
+          "translation": "El gék",
+          "pronunciation": "el gek",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Iron",
+          "translation": "Señgeñgḗ",
+          "pronunciation": "senggengge",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "nkujit",
+          "pronunciation": "nku-jit",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "l-keju / e-waso",
+          "pronunciation": "l-keh-joo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Smoke",
+          "translation": "Emburuwo, El burro",
+          "pronunciation": "embu-ru-wo el burro",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stone",
+          "translation": "Es soit",
+          "pronunciation": "es soit",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thorn",
+          "translation": "Ol kegwai",
+          "pronunciation": "ol kegwai",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest",
+          "translation": "En dim",
+          "pronunciation": "en dim",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground",
+          "translation": "Ngulubwok",
+          "pronunciation": "ngu-lubwok",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Island",
+          "translation": "Lamañgalle",
+          "pronunciation": "la-manggalle",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Country",
+          "translation": "Añkōp",
+          "pronunciation": "angkop",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain",
+          "translation": "Ol doinyo (pl. El doinyo)",
+          "pronunciation": "ol doinyo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground nut",
+          "translation": "Lodoa",
+          "pronunciation": "lo-doa",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree / Wood",
+          "translation": "l-caní (lchani)",
+          "pronunciation": "lcha-ni",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Moon / Month",
+          "translation": "lapa",
+          "pronunciation": "la-pa",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Earth / Land",
+          "translation": "nkop",
+          "pronunciation": "nkop",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Stone / Rock",
+          "translation": "soit (pl. soito)",
+          "pronunciation": "soyt",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "l-doinyo",
+          "pronunciation": "l-doy-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Water / Lake / River",
+          "translation": "ŋ-kár-ɛ́ (nkare)",
+          "pronunciation": "-kar-",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Baringo (the great lake)",
+          "translation": "L-baringo / En-goni",
+          "pronunciation": "l ba-ring-o",
+          "context": "Ilchamus Geography — Dundas (1910) & Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Boat / Balsa reed canoe (Lake Baringo)",
+          "translation": "lkadich",
+          "pronunciation": "lka-dich",
+          "context": "Traditional Ilchamus ambatch reed boat on Lake Baringo",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food, Drink & Agriculture",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Fat",
+          "translation": "Eelata",
+          "pronunciation": "ee-la-ta",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Egg",
+          "translation": "Ol-mossóri",
+          "pronunciation": "ol-mossori",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Food",
+          "translation": "n-daa",
+          "pronunciation": "n-dah",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Milk",
+          "translation": "kule",
+          "pronunciation": "ku-le",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Meat",
+          "translation": "nkiri",
+          "pronunciation": "nki-ri",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Maize",
+          "translation": "El bāek",
+          "pronunciation": "el baek",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Water",
+          "translation": "Eñ gare",
+          "pronunciation": "eng ga-re",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Banana",
+          "translation": "Botote",
+          "pronunciation": "bo-to-te",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hunger",
+          "translation": "Ol lameyu",
+          "pronunciation": "ol la-me-yu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Tobacco",
+          "translation": "Or gumbao",
+          "pronunciation": "or gumbao",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Date palm",
+          "translation": "O' sosiān",
+          "pronunciation": "o' so-sian",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Palm wine or mead",
+          "translation": "En naishu, Na mōqa",
+          "pronunciation": "en naishu na mo-qa",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Irrigated grain field / shamba",
+          "translation": "n-kurma (pl. in-kurman)",
+          "pronunciation": "n kur-ma",
+          "context": "Ilchamus Agriculture — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "House / Homestead",
+          "translation": "nkaji / nkang'",
+          "pronunciation": "nka-ji",
+          "context": "Johnston (1902) — Njemps/Ilchamus",
+          "audioFile": null
+        },
+        {
+          "english": "Catfish / mudfish",
+          "translation": "l-kambani",
+          "pronunciation": "l kamb-a-ni",
+          "context": "Ilchamus Fishing Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Irrigation canal / furrow from Molo & Perkerra rivers",
+          "translation": "n-koriong' / l-chorro",
+          "pronunciation": "n ko-riong'",
+          "context": "Ilchamus Irrigation Agriculture — Dundas (1910, p. 54) & Heine (1980)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Core Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "Go",
+          "translation": "a-lo (alo)",
+          "pronunciation": "a-lo",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Eat",
+          "translation": "a-ɲá (anya)",
+          "pronunciation": "a-nya",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "See",
+          "translation": "a-dol (adol)",
+          "pronunciation": "a-dol",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Come",
+          "translation": "a-lotu (alotu)",
+          "pronunciation": "a-lo-tu",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Hear",
+          "translation": "a-ning' (aning')",
+          "pronunciation": "a-ning'",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Name",
+          "translation": "ŋ-kárn-á (nkarna)",
+          "pronunciation": "-karn-a",
+          "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+          "audioFile": null
+        },
+        {
+          "english": "Fear",
+          "translation": "Kurét",
+          "pronunciation": "ku-ret",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak",
+          "translation": "a-iro (a-jo)",
+          "pronunciation": "ah-ee-roh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Drink",
+          "translation": "a-ok (aok)",
+          "pronunciation": "a-ok",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "a-irrag (airrag)",
+          "pronunciation": "air-rag",
+          "context": "Camus / North Maa",
+          "audioFile": null
+        },
+        {
+          "english": "Place",
+          "translation": "Añgob",
+          "pronunciation": "anggob",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "To see",
+          "translation": "a-dol (dol)",
+          "pronunciation": "ah-dohl",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To hear",
+          "translation": "a-ning (ning)",
+          "pronunciation": "ah-neeng",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To know",
+          "translation": "a-yiolo (yiolo)",
+          "pronunciation": "ah-yoh-loh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To give",
+          "translation": "a-isho",
+          "pronunciation": "ah-ee-shoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To catch fish",
+          "translation": "a-ibung' il-baheni",
+          "pronunciation": "a i-bung' il ba-he-ni",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To love / like",
+          "translation": "a-nyor (anyor)",
+          "pronunciation": "ah-nyohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To cook",
+          "translation": "a-ier (ier)",
+          "pronunciation": "ah-ee-ehr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "To paddle a canoe / row",
+          "translation": "a-rem l-kadong'ot",
+          "pronunciation": "a-rem l-kadong'ot",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "To irrigate / channel river water",
+          "translation": "a-itoriori n-kare",
+          "pronunciation": "a-itoriori n-kare",
+          "context": "Ilchamus Core Verbs — Heine (1980)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives, Qualities & Grammar",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Big",
+          "translation": "sapuk (kitok)",
+          "pronunciation": "sah-pook",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Bad",
+          "translation": "torono",
+          "pronunciation": "toh-roh-noh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Red",
+          "translation": "onyokie (nanyokie)",
+          "pronunciation": "oh-nyoh-kyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "supat (sidai)",
+          "pronunciation": "soo-paht",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Small",
+          "translation": "oti (kiti)",
+          "pronunciation": "oh-tee / kee-tee",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "White",
+          "translation": "oibor (naibor)",
+          "pronunciation": "oy-bohr",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Black",
+          "translation": "orok (narok)",
+          "pronunciation": "oh-rohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Young",
+          "translation": "Endīto",
+          "pronunciation": "endi-to",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "White man",
+          "translation": "Lesuñgu",
+          "pronunciation": "le-sunggu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "White vein",
+          "translation": "ĕñōni ĕpor",
+          "pronunciation": "enoni epor",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Hot springs of Maji ya Moto (south Baringo)",
+          "translation": "Konyek ('the eyes / springs')",
+          "pronunciation": "kony-ek",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Axe",
+          "translation": "Ndollo",
+          "pronunciation": "ndollo",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Gun",
+          "translation": "Entiol",
+          "pronunciation": "entiol",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "War",
+          "translation": "En dyore (or Jore)",
+          "pronunciation": "en dyore",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Who?",
+          "translation": "ngai?",
+          "pronunciation": "ngah-ee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Door",
+          "translation": "Kotokaji",
+          "pronunciation": "ko-to-ka-ji",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Drum",
+          "translation": "Ululul",
+          "pronunciation": "u-lu-lul",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Road",
+          "translation": "Añgoitoi",
+          "pronunciation": "anggoi-toi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Song",
+          "translation": "Os singolio",
+          "pronunciation": "os singo-lio",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "What?",
+          "translation": "inyoo?",
+          "pronunciation": "ee-nyoh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Oribi",
+          "translation": "Ampūa",
+          "pronunciation": "ampua",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Canoe",
+          "translation": "Emboyuwet",
+          "pronunciation": "embo-yu-wet",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth",
+          "translation": "Anañka",
+          "pronunciation": "a-nangka",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Devil",
+          "translation": "Ol oiyirwa, manañani",
+          "pronunciation": "ol oi-yirwa ma-nanga-ni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Dream",
+          "translation": "Edatedata",
+          "pronunciation": "e-da-te-da-ta",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Ghost",
+          "translation": "Ol oipi",
+          "pronunciation": "ol oi-pi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "House",
+          "translation": "Añ kaji",
+          "pronunciation": "ang ka-ji",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Knife",
+          "translation": "Ol lalem",
+          "pronunciation": "ol la-lem",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Magic",
+          "translation": "Embanīt",
+          "pronunciation": "emba-nit",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Stick",
+          "translation": "Eñ udi; Eñ usidin (pl.)",
+          "pronunciation": "en udi",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thief",
+          "translation": "Ol aburoni",
+          "pronunciation": "ol a-bu-ro-ni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Thing",
+          "translation": "Entoki",
+          "pronunciation": "ento-ki",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Molar",
+          "translation": "Entakolla",
+          "pronunciation": "enta-kolla",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "I / me",
+          "translation": "nanu (prefix a-)",
+          "pronunciation": "nah-noo",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Pallah",
+          "translation": "Endarawit",
+          "pronunciation": "enda-ra-wit",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Duyker",
+          "translation": "Embutuwin",
+          "pronunciation": "embu-tu-win",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Brains",
+          "translation": "El ogoinya",
+          "pronunciation": "el o-goinya",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Doctor",
+          "translation": "Ol leiboni (medicine-man)",
+          "pronunciation": "ol leiboni",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "We / us",
+          "translation": "iyook (prefix ki-)",
+          "pronunciation": "ee-yohk",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Madoqua",
+          "translation": "Sunu",
+          "pronunciation": "su-nu",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Bullock",
+          "translation": "giteñ",
+          "pronunciation": "gi-teng",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "He / She",
+          "translation": "ninye (prefix e-)",
+          "pronunciation": "nee-nyeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Buttocks",
+          "translation": "Ol giras",
+          "pronunciation": "ol gi-ras",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Daylight",
+          "translation": "Damma",
+          "pronunciation": "damma",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "They / them",
+          "translation": "nince",
+          "pronunciation": "neen-cheh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Cobus thomasi",
+          "translation": "Olgipulugen",
+          "pronunciation": "olgi-pu-lu-gen",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "You (singular)",
+          "translation": "iyie (prefix i-)",
+          "pronunciation": "ee-yeh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella granti",
+          "translation": "Olwărgas",
+          "pronunciation": "olwargas",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Gazella thomsoni",
+          "translation": "El oili",
+          "pronunciation": "el oi-li",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Town or settlement",
+          "translation": "Manyata (warriors'), Añgañ (tribal)",
+          "pronunciation": "manyata",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel, Directions & Navigation",
+      "icon": "🧭",
+      "entries": [
+        {
+          "english": "Where?",
+          "translation": "kaji?",
+          "pronunciation": "kah-jee",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": [
+        {
+          "english": "Day",
+          "translation": "n-golong",
+          "pronunciation": "n-goh-lohng",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Day",
+          "translation": "Kawārie",
+          "pronunciation": "ka-wah-rie",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Year",
+          "translation": "Ol lari (pl. El larin)",
+          "pronunciation": "ol la-ri",
+          "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)",
+          "audioFile": null
+        },
+        {
+          "english": "Today",
+          "translation": "taata",
+          "pronunciation": "tah-tah",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Night",
+          "translation": "n-gewarie",
+          "pronunciation": "n-geh-wah-ree-eh",
+          "context": "Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Tomorrow",
+          "translation": "taisere",
+          "pronunciation": "tah-ee-seh-reh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        },
+        {
+          "english": "Yesterday",
+          "translation": "ngole",
+          "pronunciation": "ngoh-leh",
+          "context": "Verified comparative entry across Kenyan nilotic corpus",
+          "audioFile": null
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📜",
+      "entries": [
+        {
+          "english": "Bow",
+          "translation": "n-gauo",
+          "pronunciation": "n-gah-oo-oh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Bow",
+          "translation": "Angawu",
+          "pronunciation": "ang-a-wu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Ear",
+          "translation": "Engiari",
+          "pronunciation": "eng-ia-ri",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Eye",
+          "translation": "Angoño; Ngoinyek (pl.)",
+          "pronunciation": "angono",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Fish",
+          "translation": "l-singiri (pl. l-singir)",
+          "pronunciation": "l-seen-gee-ree",
+          "context": "Ilchamus Lake Baringo fishery",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "l-ngatuny",
+          "pronunciation": "l-ngah-toony",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Bone",
+          "translation": "Oloito; Eloik (pl.)",
+          "pronunciation": "o-loi-toh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion",
+          "translation": "Ol ñátūīn",
+          "pronunciation": "ol tooeen",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Star",
+          "translation": "El agerr",
+          "pronunciation": "el a-ger",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Good",
+          "translation": "Sobāt",
+          "pronunciation": "so-bah",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I go",
+          "translation": "Aiṣomo",
+          "pronunciation": "aisomo",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "m-bere",
+          "pronunciation": "m-beh-reh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "m-bae",
+          "pronunciation": "m-bah-eh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Honey",
+          "translation": "n-aisho",
+          "pronunciation": "nah-ee-shoh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ambai",
+          "pronunciation": "amb-ai",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood",
+          "translation": "As-sarge",
+          "pronunciation": "as sar-ge",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Grass",
+          "translation": "Ol kojetá",
+          "pronunciation": "ol koh-jet",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "River",
+          "translation": "Egwaso",
+          "pronunciation": "eg-wa-so",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep",
+          "translation": "Enjō̃",
+          "pronunciation": "enj-oh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Spear",
+          "translation": "Embere",
+          "pronunciation": "emb-e-re",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth",
+          "translation": "El lala",
+          "pronunciation": "el la-la",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I eat",
+          "translation": "Anosa",
+          "pronunciation": "a-noh-sa",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Shield",
+          "translation": "l-longo",
+          "pronunciation": "l-lohn-goh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "I come",
+          "translation": "Alotu",
+          "pronunciation": "a-loh-tu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I give",
+          "translation": "Aiṣo",
+          "pronunciation": "aiso",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "We say",
+          "translation": "Kedjo iyo",
+          "pronunciation": "ked-joh i-yoh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Olado-kiragada",
+          "pronunciation": "o-la-do ki-ra-ga-da",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I bring",
+          "translation": "Aiao",
+          "pronunciation": "aiao",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I drank",
+          "translation": "Atogo",
+          "pronunciation": "a-toh-goh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "l-tome",
+          "pronunciation": "l-toh-meh",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant",
+          "translation": "Ol lañqaina",
+          "pronunciation": "ol lanqaina",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He stinks",
+          "translation": "Eñu",
+          "pronunciation": "enu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He steals",
+          "translation": "Eburikho",
+          "pronunciation": "e-bu-rikh-o",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I come not",
+          "translation": "Ma lotu",
+          "pronunciation": "ma loh-tu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I give you",
+          "translation": "Aiṣo 'yé",
+          "pronunciation": "aiso 'ye",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I gave him",
+          "translation": "Aiṣō elle",
+          "pronunciation": "ai oh el-le",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "I kill them",
+          "translation": "Atara ninje",
+          "pronunciation": "a-ta-ra ninj-e",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "We sold not",
+          "translation": "Etu gimirio",
+          "pronunciation": "e-tu gi-mi-rioh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Lake Baringo",
+          "translation": "Mparingo",
+          "pronunciation": "m-pah-reen-goh",
+          "context": "Dundas 1910 & Ilchamus geography",
+          "audioFile": null
+        },
+        {
+          "english": "Hippopotamus",
+          "translation": "l-makau",
+          "pronunciation": "l-mah-kah-oo",
+          "context": "Dundas 1910 & Johnston 1902 Njemps",
+          "audioFile": null
+        },
+        {
+          "english": "Perkerra River",
+          "translation": "E-wauso Ngiro / L-kera",
+          "pronunciation": "eh-wah-oo-soh",
+          "context": "Dundas 1910 Baringo river irrigation",
+          "audioFile": null
+        },
+        {
+          "english": "Can you see me?",
+          "translation": "Keñworeta nanu",
+          "pronunciation": "kenworeta nanu",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "What do you say?",
+          "translation": "Idja iye",
+          "pronunciation": "id-ja i-ye",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "He is taller than I",
+          "translation": "Eado te nano",
+          "pronunciation": "ea-do te na-noh",
+          "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923)",
+          "audioFile": null
+        },
+        {
+          "english": "Fishing harpoon / spear",
+          "translation": "l-kujita / m-pere",
+          "pronunciation": "l ku-ji-ta",
+          "context": "Ilchamus Material Culture — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Dugout Balsa Canoe (Ambatch)",
+          "translation": "l-kadich",
+          "pronunciation": "l-kah-deech",
+          "context": "Lake Baringo Ilchamus fishing craft",
+          "audioFile": null
+        },
+        {
+          "english": "Il Mayek (Ilchamus clan of Samburu origin)",
+          "translation": "Il Mayek",
+          "pronunciation": "il ma-yek",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Loimüsse (Ilchamus clan of Samburu origin)",
+          "translation": "Loimüsse",
+          "pronunciation": "loimusse",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Kabes (Ilchamus clan of Laikipiak origin)",
+          "translation": "Il Kabes",
+          "pronunciation": "il ka-bes",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Doimal (Ilchamus clan of Il Doigio origin)",
+          "translation": "Ol Doimal",
+          "pronunciation": "ol doi-mal",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Barsegir (Ilchamus clan of Laikipiak origin)",
+          "translation": "Il Barsegir",
+          "pronunciation": "il bar-se-gir",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Central island of Lake Baringo inhabited by Ilchamus",
+          "translation": "Ol Kokwa",
+          "pronunciation": "ohl koh-kwah",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 412) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
+        },
+        {
+          "english": "Il Doigio (Samburu ancestral section of the Ilchamus)",
+          "translation": "Il Doigio",
+          "pronunciation": "il doi-gio",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Njemps Kubwa (downstream Ilchamus settlement on Molo River)",
+          "translation": "Njemps Liabori (liabori = downstream)",
+          "pronunciation": "njemp lia-bo-ri",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49)",
+          "audioFile": null
+        },
+        {
+          "english": "Njemps Ndogo (upstream Ilchamus settlement on Tigrish River)",
+          "translation": "Njemps Lekepir (lekepir = upstream)",
+          "pronunciation": "njemp le-ke-pir",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Ambatch wood canoe of Lake Baringo (Aeschynomene elaphroxylon)",
+          "translation": "l-kadong'ot / nk-aboboki",
+          "pronunciation": "l ka-dong'-ot",
+          "context": "Ilchamus Lake Baringo Lexicon — Heine (1980)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Geroi (earliest hunting and fishing inhabitants of Lake Baringo)",
+          "translation": "Il Geroi",
+          "pronunciation": "il ge-roi",
+          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "audioFile": null
+        },
+        {
+          "english": "Perkerra River brushwood-and-boulder irrigation dams & sluice-canals at Njemps (1887)",
+          "translation": "Guaso Tigerish (Perkerra) irrigation canals of En-jemusi",
+          "pronunciation": "gwah-soh tee-geh-reesh",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 390–402) — Discovery of Lakes Rudolf and Stefanie",
+          "audioFile": null
+        }
+      ]
+    }
+  ],
+  "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+  "isoCode": "saq-ilc",
+  "glottocode": "chAM1234",
+  "totalEntries": 304
+}

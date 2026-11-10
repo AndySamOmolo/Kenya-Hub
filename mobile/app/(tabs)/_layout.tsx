@@ -71,6 +71,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="learn"
+        options={{
+          title: "Learn",
+          tabBarIcon: ({ color, focused }) => (
+            <M3TabIcon
+              name={focused ? "school" : "school-outline"}
+              color={focused ? theme.onPrimaryContainer : color}
+              focused={focused}
+              indicatorColor={theme.primaryContainer}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="tools"
         options={{
           title: "Tools",

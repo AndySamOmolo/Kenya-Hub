@@ -1,284 +1,26 @@
 {
-  "generatedAt": "2026-11-10T12:28:30.152Z",
-  "registryCount": 30,
-  "routeCount": 30,
-  "okCount": 30,
+  "generatedAt": "2026-11-10T16:16:05.595Z",
+  "registryCount": 16,
+  "routeCount": 16,
+  "okCount": 16,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
   "issues": [],
   "tools": [
     {
-      "slug": "paye-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/paye-bands.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Revenue Authority (KRA) — Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "mpesa-fee-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/mpesa-tariffs.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Safaricom PLC — Official M-Pesa Consumer Tariff Schedule (2026)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "sacco-chama-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.sasra.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 40,
-      "data": [
-        {
-          "file": "src/data/sacco-chama-rates.json",
-          "lastUpdated": "2026-10-01",
-          "source": "SASRA (SACCO Societies Regulatory Authority) Annual Supervision Report"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "helb-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.helb.co.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/helb-rates.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Higher Education Loans Board (HELB Act & helb.co.ke)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "stamp-duty-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/stamp-duty-rates.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "vehicle-insurance-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.ira.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/vehicle-insurance-rates.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Insurance Regulatory Authority (IRA) — Motor Insurance Guidelines"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "cbc-curriculum",
-      "routeExists": true,
-      "sourceUrl": "https://kicd.ac.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/cbc-curriculum.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Institute of Curriculum Development (KICD)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kuccps-cluster-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://students.kuccps.net/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/kuccps-clusters.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS 2026 Placement Cycle)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kcse-grade-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.knec.ac.ke/",
-      "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [],
-      "status": "ok"
-    },
-    {
-      "slug": "kcse-school-rankings",
-      "routeExists": true,
-      "sourceUrl": "https://www.knec.ac.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/kcse-rankings.json",
-          "lastUpdated": "2026-10-20",
-          "source": "KNEC National Examination Statistics & School Board Performance Releases (Unofficial Compilation)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kra-car-import-calculator",
-      "routeExists": true,
-      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
-      "maxAgeDays": 365,
-      "ageDays": 40,
-      "data": [
-        {
-          "file": "src/data/kra-car-import-crsp.json",
-          "lastUpdated": "2026-10-01",
-          "source": "KRA Customs & Border Control Valuation Schedule (CRSP) & Finance Act"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "number-plate-decoder",
-      "routeExists": true,
-      "sourceUrl": "https://ntsa.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/number-plate-prefixes.json",
-          "lastUpdated": "2026-10-20",
-          "source": "National Transport and Safety Authority (NTSA) / Registrar of Motor Vehicles"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "driving-license-guide",
-      "routeExists": true,
-      "sourceUrl": "https://ntsa.go.ke/services/service/renewal-of-smart-driving-licence",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/driving-license-guide.json",
-          "lastUpdated": "2026-10-20",
-          "source": "National Transport and Safety Authority (NTSA) & Traffic Act"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "traffic-fines",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/traffic-fines.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Traffic Act (Cap 403) & NTSA Instant Fines Schedule"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "national-parks-directory",
-      "routeExists": true,
-      "sourceUrl": "https://www.kws.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/national-parks.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Wildlife Service (KWS) Conservation Fees Schedule"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "crop-planting-calendar",
-      "routeExists": true,
-      "sourceUrl": "https://www.kalro.org/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/crop-planting-calendar.json",
-          "lastUpdated": "2026-10-20",
-          "source": "KALRO & Ministry of Agriculture Seasonal Planting Bulletins"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "fertilizer-subsidy-guide",
-      "routeExists": true,
-      "sourceUrl": "https://ncpb.co.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/fertilizer-subsidy.json",
-          "lastUpdated": "2026-10-20",
-          "source": "National Cereals and Produce Board (NCPB) & Ministry of Agriculture (KIAMIS 2026)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "livestock-market-prices",
-      "routeExists": true,
-      "sourceUrl": "https://www.kilimo.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/livestock-prices.json",
-          "lastUpdated": "2026-10-20",
-          "source": "National Livestock Marketing Information System (NLMIS) & NALMC Market Reports"
-        }
-      ],
-      "status": "ok"
-    },
-    {
       "slug": "learn",
       "routeExists": true,
       "sourceUrl": "https://archive.org/",
       "maxAgeDays": 365,
-      "ageDays": null,
-      "data": [],
+      "ageDays": 10,
+      "data": [
+        {
+          "file": "src/data/language-sources",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        }
+      ],
       "status": "ok"
     },
     {
@@ -290,8 +32,8 @@
       "data": [
         {
           "file": "src/data/language-sources",
-          "lastUpdated": null,
-          "source": null
+          "lastUpdated": "2026-10-20",
+          "source": "https://cldr.unicode.org/"
         },
         {
           "file": "src/data/kenya-languages.json",
@@ -417,6 +159,165 @@
       "status": "ok"
     },
     {
+      "slug": "paye-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/paye-bands.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Revenue Authority (KRA) — Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mpesa-fee-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/mpesa-tariffs.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Safaricom PLC — Official M-Pesa Consumer Tariff Schedule (2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "sacco-chama-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.sasra.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 40,
+      "data": [
+        {
+          "file": "src/data/sacco-chama-rates.json",
+          "lastUpdated": "2026-10-01",
+          "source": "SASRA (SACCO Societies Regulatory Authority) Annual Supervision Report"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "helb-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.helb.co.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/helb-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Higher Education Loans Board (HELB Act & helb.co.ke)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "stamp-duty-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/stamp-duty-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "cbc-curriculum",
+      "routeExists": true,
+      "sourceUrl": "https://kicd.ac.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/cbc-curriculum.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Institute of Curriculum Development (KICD)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kuccps-cluster-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://students.kuccps.net/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/kuccps-clusters.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS 2026 Placement Cycle)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kcse-grade-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "maxAgeDays": 365,
+      "ageDays": null,
+      "data": [],
+      "status": "ok"
+    },
+    {
+      "slug": "kra-car-import-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
+      "maxAgeDays": 365,
+      "ageDays": 40,
+      "data": [
+        {
+          "file": "src/data/kra-car-import-crsp.json",
+          "lastUpdated": "2026-10-01",
+          "source": "KRA Customs & Border Control Valuation Schedule (CRSP) & Finance Act"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "number-plate-decoder",
+      "routeExists": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/number-plate-prefixes.json",
+          "lastUpdated": "2026-10-20",
+          "source": "National Transport and Safety Authority (NTSA) / Registrar of Motor Vehicles"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "traffic-fines",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/traffic-fines.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Traffic Act (Cap 403) & NTSA Instant Fines Schedule"
+        }
+      ],
+      "status": "ok"
+    },
+    {
       "slug": "mjengo-construction-calculator",
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
@@ -427,111 +328,6 @@
           "file": "src/data/mjengo-construction-rates.json",
           "lastUpdated": "2026-10-01",
           "source": "Kenya National Bureau of Statistics (KNBS) Construction Input Price Index & National Construction Authority (NCA)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "trademark-cost-kenya",
-      "routeExists": true,
-      "sourceUrl": "https://www.kipi.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/trademark-fees.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Industrial Property Institute (KIPI — Industrial Property Act) & Kenya Copyright Board (KECOBO)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "professional-bodies-kenya",
-      "routeExists": true,
-      "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/professional-bodies.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Statutory Professional Regulatory Bodies of Kenya"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "passport-id-fees",
-      "routeExists": true,
-      "sourceUrl": "https://immigration.go.ke/type-and-fees/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/passport-id-fees.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Directorate of Immigration Services & National Registration Bureau (eCitizen 2026)"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kenya-customs-restricted-items",
-      "routeExists": true,
-      "sourceUrl": "https://www.kra.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/customs-restricted-items.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Revenue Authority (KRA) Customs & EAC Customs Management Act"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "nhif-hospital-finder",
-      "routeExists": true,
-      "sourceUrl": "https://provider.sha.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/nhif-hospitals.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Social Health Authority (SHA / SHIF) & Ministry of Health Master Facility List"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "child-growth-schedule",
-      "routeExists": true,
-      "sourceUrl": "https://guidelines.health.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/vaccination-schedule.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Ministry of Health KEPI & WHO Child Growth Standards"
-        }
-      ],
-      "status": "ok"
-    },
-    {
-      "slug": "kenyan-food-nutrition",
-      "routeExists": true,
-      "sourceUrl": "https://www.kemri.go.ke/",
-      "maxAgeDays": 365,
-      "ageDays": 21,
-      "data": [
-        {
-          "file": "src/data/kenyan-foods-nutrition.json",
-          "lastUpdated": "2026-10-20",
-          "source": "FAO/WHO Food Composition Tables for Sub-Saharan Africa & KEMRI"
         }
       ],
       "status": "ok"

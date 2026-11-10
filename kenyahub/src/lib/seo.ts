@@ -81,6 +81,14 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
 
 // Explicit high-relevance mappings between tools and flagship blog guides
 const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
+  "learn": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "kenyan-translator": [
+    "cbc-curriculum-explained-for-parents",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
   "paye-calculator": [
     "how-paye-tax-works-in-kenya",
     "sha-shif-health-insurance-kenya-complete-guide-2026",
@@ -106,11 +114,6 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
     "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
     "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
-  "vehicle-insurance-calculator": [
-    "kra-car-import-duty-calculator-guide-kenya-2026",
-    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
-    "how-paye-tax-works-in-kenya",
-  ],
   "cbc-curriculum": [
     "cbc-curriculum-explained-for-parents",
     "guide-to-kenyan-public-holidays-2026",
@@ -126,20 +129,12 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
     "how-paye-tax-works-in-kenya",
     "guide-to-kenyan-public-holidays-2026",
   ],
-  "kcse-school-rankings": [
-    "cbc-curriculum-explained-for-parents",
-    "guide-to-kenyan-public-holidays-2026",
-  ],
   "kra-car-import-calculator": [
     "kra-car-import-duty-calculator-guide-kenya-2026",
     "how-paye-tax-works-in-kenya",
     "understanding-mpesa-transaction-fees",
   ],
   "number-plate-decoder": [
-    "kra-car-import-duty-calculator-guide-kenya-2026",
-    "guide-to-kenyan-public-holidays-2026",
-  ],
-  "driving-license-guide": [
     "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
@@ -151,18 +146,6 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
     "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
     "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
     "sacco-loans-dividends-chama-guide-kenya-2026",
-  ],
-  "nhif-hospital-finder": [
-    "sha-shif-health-insurance-kenya-complete-guide-2026",
-    "how-paye-tax-works-in-kenya",
-  ],
-  "child-growth-schedule": [
-    "sha-shif-health-insurance-kenya-complete-guide-2026",
-    "cbc-curriculum-explained-for-parents",
-  ],
-  "kenyan-food-nutrition": [
-    "sha-shif-health-insurance-kenya-complete-guide-2026",
-    "cbc-curriculum-explained-for-parents",
   ],
   "kplc-token-calculator": [
     "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",

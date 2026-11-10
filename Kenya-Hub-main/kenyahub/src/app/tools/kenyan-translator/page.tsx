@@ -1,0 +1,1958 @@
+/* eslint-disable react-hooks/set-state-in-effect */
+"use client";
+import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
+import DynamicIcon from "@/components/ui/DynamicIcon";
+import SearchInput from "@/components/ui/SearchInput";
+
+import { useState, useMemo, useCallback, useEffect } from "react";
+import ToolShell from "@/components/tools/ToolShell";
+import { TOOLS } from "@/lib/tools-registry";
+import CustomSelect from "@/components/ui/CustomSelect";
+import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+
+import {
+  ALL_DICT_METAS,
+  DICT_META_MAP,
+  ALL_CATEGORY_IDS,
+  TOTAL_DICTIONARY_ENTRIES,
+  INITIAL_RANDOM_WORDS,
+  type DictEntry,
+  type DictCategory,
+  type Dictionary,
+} from "@/data/language-sources";
+import langData from "@/data/kenya-languages.json";
+import { addContribution } from "@/lib/contributions";
+import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
+
+const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
+
+const CATEGORY_PAGE_SIZE = 50;
+const SEARCH_PAGE_SIZE = 50;
+
+// ─── Dynamic Dictionary Loader & In-Memory Cache ───
+const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
+  swahili: () => import("@/data/dictionaries/swahili.json") as Promise<{ default: Dictionary }>,
+  kikuyu: () => import("@/data/dictionaries/kikuyu.json") as Promise<{ default: Dictionary }>,
+  luo: () => import("@/data/dictionaries/luo.json") as Promise<{ default: Dictionary }>,
+  kalenjin: () => import("@/data/dictionaries/kalenjin.json") as Promise<{ default: Dictionary }>,
+  luhya: () => import("@/data/dictionaries/luhya.json") as Promise<{ default: Dictionary }>,
+  kamba: () => import("@/data/dictionaries/kamba.json") as Promise<{ default: Dictionary }>,
+  meru: () => import("@/data/dictionaries/meru.json") as Promise<{ default: Dictionary }>,
+  maasai: () => import("@/data/dictionaries/maasai.json") as Promise<{ default: Dictionary }>,
+  kisii: () => import("@/data/dictionaries/kisii.json") as Promise<{ default: Dictionary }>,
+  somali: () => import("@/data/dictionaries/somali.json") as Promise<{ default: Dictionary }>,
+  turkana: () => import("@/data/dictionaries/turkana.json") as Promise<{ default: Dictionary }>,
+  mijikenda: () => import("@/data/dictionaries/mijikenda.json") as Promise<{ default: Dictionary }>,
+  teso: () => import("@/data/dictionaries/teso.json") as Promise<{ default: Dictionary }>,
+  embu: () => import("@/data/dictionaries/embu.json") as Promise<{ default: Dictionary }>,
+  taita: () => import("@/data/dictionaries/taita.json") as Promise<{ default: Dictionary }>,
+  samburu: () => import("@/data/dictionaries/samburu.json") as Promise<{ default: Dictionary }>,
+  borana: () => import("@/data/dictionaries/borana.json") as Promise<{ default: Dictionary }>,
+  rendille: () => import("@/data/dictionaries/rendille.json") as Promise<{ default: Dictionary }>,
+  pokomo: () => import("@/data/dictionaries/pokomo.json") as Promise<{ default: Dictionary }>,
+  ilchamus: () => import("@/data/dictionaries/ilchamus.json") as Promise<{ default: Dictionary }>,
+  pokot: () => import("@/data/dictionaries/pokot.json") as Promise<{ default: Dictionary }>,
+  taveta: () => import("@/data/dictionaries/taveta.json") as Promise<{ default: Dictionary }>,
+  daasanach: () => import("@/data/dictionaries/daasanach.json") as Promise<{ default: Dictionary }>,
+};
+
+const DICT_CACHE: Record<string, Dictionary> = {};
+const DICT_PROMISES: Record<string, Promise<Dictionary>> = {};
+
+async function loadDictionary(langId: string): Promise<Dictionary | null> {
+  if (DICT_CACHE[langId]) return DICT_CACHE[langId];
+  const loader = DICT_LOADERS[langId];
+  if (!loader) return null;
+  if (!DICT_PROMISES[langId]) {
+    DICT_PROMISES[langId] = loader().then((mod) => {
+      const dict = (mod.default || mod) as Dictionary;
+      DICT_CACHE[langId] = dict;
+      return dict;
+    });
+  }
+  return DICT_PROMISES[langId];
+}
+
+interface TranslationResultItem {
+  entry: DictEntry;
+  sourceEntry?: DictEntry;
+  pivotEnglish?: string;
+  categoryName: string;
+  categoryIcon: string;
+  languageId: string;
+  languageName: string;
+  family: string;
+  matchType: "exact" | "partial";
+  missingTarget?: boolean;
+}
+
+// Languages that have no dictionary yet
+const COMING_SOON_LANGUAGES = langData.languages
+  .filter((l) => {
+    const id = l.name.split("(")[0].trim().toLowerCase().replace(/\s+/g, "");
+    return !DICT_META_MAP[id] && id !== "swahili" && id !== "dholuo";
+  })
+  .map((l) => ({
+    name: l.name,
+    family: l.family,
+    speakers: l.speakers,
+    counties: l.counties,
+  }));
+
+// Family color map
+const FAMILY_COLORS: Record<string, string> = {
+  bantu: "#2FA463",
+  nilotic: "#C8961E",
+  cushitic: "#BE2126",
+  other: "#1A8BD1",
+};
+
+const CONTACT_EMAIL = "contact@kenyahub.me";
+
+const ALL_CONTRIBUTE_LANGUAGES = Array.from(
+  new Set([
+    ...ALL_DICT_METAS.map((d) => d.languageName.split("(")[0].trim()),
+    ...COMING_SOON_LANGUAGES.map((l) => l.name.split("(")[0].trim()),
+  ])
+).sort();
+
+// Popular comparison words across Kenyan dictionaries
+const POPULAR_COMPARE_WORDS = [
+  "Water", "Hello", "Thank you", "Father", "Mother", "Food",
+  "God", "Cow", "One", "Two", "Friend", "Sun", "Fire", "House"
+];
+
+/**
+ * Normalize an English or indigenous headword into clean comparable tokens
+ * so English can serve as an accurate middleman/bridge between any two Kenyan languages.
+ */
+function extractNormalizedTerms(raw: string): string[] {
+  const cleaned = raw
+    .toLowerCase()
+    .replace(/^\[[^\]]*\]\s*/g, "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/[!?.]/g, "")
+    .trim();
+  const baseHead = cleaned.split(/\s*[—–:|•]\s*/)[0].trim();
+  const parts = cleaned
+    .split(/[\/,;—–:|•]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const out = new Set<string>();
+  const addVariant = (v: string) => {
+    if (!v) return;
+    out.add(v);
+    const nfd = v.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (nfd) out.add(nfd);
+    const noApostrophe = nfd.replace(/['’‘ʻ]/g, "");
+    if (noApostrophe && noApostrophe.length >= 2) out.add(noApostrophe);
+    if (v.startsWith("to ")) {
+      const bare = v.slice(3).trim();
+      addVariant(bare);
+    }
+    if (v.startsWith("-")) {
+      const bare = v.slice(1).trim();
+      if (bare.length >= 2) addVariant(bare);
+    }
+  };
+  addVariant(cleaned);
+  addVariant(baseHead);
+  for (const p of parts) addVariant(p);
+  return Array.from(out);
+}
+
+// ─── Pre-Normalized O(1) Search Index Per Dictionary ───
+interface IndexedDictEntry {
+  entry: DictEntry;
+  cat: DictCategory;
+  engLower: string;
+  transLower: string;
+  engTerms: string[];
+  transTerms: string[];
+}
+
+interface DictSearchIndex {
+  all: IndexedDictEntry[];
+  byEngTerm: Map<string, IndexedDictEntry[]>;
+  byTransTerm: Map<string, IndexedDictEntry[]>;
+}
+
+const DICT_INDEX_CACHE = new WeakMap<Dictionary, DictSearchIndex>();
+
+function getDictIndex(dict: Dictionary): DictSearchIndex {
+  const cached = DICT_INDEX_CACHE.get(dict);
+  if (cached) return cached;
+
+  const all: IndexedDictEntry[] = [];
+  const byEngTerm = new Map<string, IndexedDictEntry[]>();
+  const byTransTerm = new Map<string, IndexedDictEntry[]>();
+
+  for (const cat of dict.categories) {
+    for (const entry of cat.entries) {
+      const engLower = entry.english.toLowerCase().trim();
+      const transLower = entry.translation.toLowerCase().trim();
+      const engTerms = extractNormalizedTerms(entry.english);
+      const transTerms = extractNormalizedTerms(entry.translation);
+      const item: IndexedDictEntry = {
+        entry,
+        cat,
+        engLower,
+        transLower,
+        engTerms,
+        transTerms,
+      };
+      all.push(item);
+
+      for (const t of engTerms) {
+        let bucket = byEngTerm.get(t);
+        if (!bucket) {
+          bucket = [];
+          byEngTerm.set(t, bucket);
+        }
+        bucket.push(item);
+      }
+      for (const t of transTerms) {
+        let bucket = byTransTerm.get(t);
+        if (!bucket) {
+          bucket = [];
+          byTransTerm.set(t, bucket);
+        }
+        bucket.push(item);
+      }
+    }
+  }
+
+  const index: DictSearchIndex = { all, byEngTerm, byTransTerm };
+  DICT_INDEX_CACHE.set(dict, index);
+  return index;
+}
+
+// ─── FAQ ───
+const faq = [
+  { question: "What languages does this translator support?", answer: `Currently ${ALL_DICT_METAS.length} Kenyan languages with verified public-domain and community vocabularies: Swahili, Kikuyu, Dholuo (Luo), Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Teso, Embu, Taita, Samburu, Borana (Oromo), Rendille, Pokomo, Ilchamus (Njemps), Pokot (Pökoot), and Taveta.` },
+  { question: "How does translating between two Kenyan languages work?", answer: "When you choose any Kenyan language as your 'From' language and another Kenyan language (or 'All Languages') as your 'To' language, the translator uses English as a middleman bridge — matching your word in the source dictionary, resolving its English concept, and finding the corresponding translation in your target Kenyan language(s)." },
+  { question: "Is this a machine translation tool?", answer: "No — this is a curated dictionary-based translator grounded in verified public-domain linguistic monographs (1844–1927), Unicode CLDR, and community contributors. It translates words and common phrases accurately without AI hallucination." },
+  { question: "Can I contribute translations?", answer: "Yes! Use the 'Contribute' button on any language card to submit corrections or new vocabulary. All contributions are credited." },
+];
+
+// ─── Component ───
+export default function KenyanTranslatorPage() {
+  const [sourceLanguage, setSourceLanguage] = useState("english");
+  const [targetLanguage, setTargetLanguage] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [categoryPage, setCategoryPage] = useState(1);
+  const [categorySearch, setCategorySearch] = useState("");
+  const [searchPage, setSearchPage] = useState(1);
+  const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
+  const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICT_METAS.map((d) => d.languageId));
+  const [copiedText, setCopiedText] = useState<string | null>(null);
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const [loadedDicts, setLoadedDicts] = useState<Record<string, Dictionary>>(() => ({ ...DICT_CACHE }));
+  const [isLoadingDicts, setIsLoadingDicts] = useState(false);
+
+  // ─── Contribute Modal State ───
+  const [isContributeOpen, setIsContributeOpen] = useState(false);
+  const [contributeLanguage, setContributeLanguage] = useState("Swahili");
+  const [contributeType, setContributeType] = useState<"new_word" | "correction" | "pronunciation" | "reviewer">("new_word");
+  const [contributeEnglish, setContributeEnglish] = useState("");
+  const [contributeTranslation, setContributeTranslation] = useState("");
+  const [contributePronunciation, setContributePronunciation] = useState("");
+  const [contributeContext, setContributeContext] = useState("");
+  const [contributorName, setContributorName] = useState("");
+  const [contributorEmail, setContributorEmail] = useState("");
+  const [contributeSubmitted, setContributeSubmitted] = useState(false);
+
+  const ensureDictionariesLoaded = useCallback(async (langIds: string[]) => {
+    const missing = langIds.filter((id) => id && id !== "english" && id !== "all" && !DICT_CACHE[id]);
+    if (missing.length === 0) return;
+    setIsLoadingDicts(true);
+    await Promise.all(missing.map((id) => loadDictionary(id)));
+    setLoadedDicts({ ...DICT_CACHE });
+    setIsLoadingDicts(false);
+  }, []);
+
+  // Load required dictionaries on demand
+  useEffect(() => {
+    const toLoad = new Set<string>(["swahili"]);
+    if (sourceLanguage !== "english") toLoad.add(sourceLanguage);
+    if (targetLanguage !== "english" && targetLanguage !== "all") toLoad.add(targetLanguage);
+
+    if (
+      (targetLanguage === "all" && searchQuery.trim().length > 0) ||
+      (viewMode === "compare" && searchQuery.trim().length > 0)
+    ) {
+      ALL_DICT_METAS.forEach((d) => toLoad.add(d.languageId));
+    }
+    ensureDictionariesLoaded(Array.from(toLoad));
+  }, [sourceLanguage, targetLanguage, searchQuery, viewMode, ensureDictionariesLoaded]);
+
+  // Preload remaining dictionaries during browser idle time after initial paint
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      ensureDictionariesLoaded(ALL_DICT_METAS.map((d) => d.languageId));
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, [ensureDictionariesLoaded]);
+
+  // Reset pagination when filters change
+  useEffect(() => {
+    setCategoryPage(1);
+    setCategorySearch("");
+  }, [activeCategory, sourceLanguage, targetLanguage]);
+
+  useEffect(() => {
+    setSearchPage(1);
+  }, [searchQuery, sourceLanguage, targetLanguage]);
+
+  const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
+    if (langName) setContributeLanguage(langName.split("(")[0].trim());
+    if (defaultEnglish) setContributeEnglish(defaultEnglish);
+    setContributeSubmitted(false);
+    setIsContributeOpen(true);
+  }, []);
+
+  const closeContributeModal = useCallback(() => {
+    setIsContributeOpen(false);
+    setContributeSubmitted(false);
+  }, []);
+
+  const handleSubmitContribution = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!contributeLanguage) return;
+
+    try {
+      addContribution({
+        language: contributeLanguage,
+        type: contributeType,
+        english: contributeEnglish,
+        translation: contributeTranslation,
+        pronunciation: contributePronunciation,
+        context: contributeContext,
+        contributorName: contributorName || "Anonymous Contributor",
+        contributorEmail: contributorEmail,
+      });
+    } catch (err) {
+      console.error("Failed to add contribution:", err);
+    }
+
+    try {
+      const saved = localStorage.getItem("kh-user-contributions");
+      const existing = saved ? JSON.parse(saved) : [];
+      const newEntry = {
+        id: Date.now().toString(),
+        language: contributeLanguage,
+        type: contributeType,
+        english: contributeEnglish,
+        translation: contributeTranslation,
+        pronunciation: contributePronunciation,
+        context: contributeContext,
+        contributorName: contributorName || "Anonymous Contributor",
+        contributorEmail: contributorEmail,
+        timestamp: new Date().toISOString(),
+      };
+      localStorage.setItem("kh-user-contributions", JSON.stringify([newEntry, ...existing]));
+    } catch { /* ignore */ }
+
+    const typeLabel =
+      contributeType === "new_word"
+        ? "New Word"
+        : contributeType === "correction"
+        ? "Correction"
+        : contributeType === "pronunciation"
+        ? "Pronunciation"
+        : "Native Reviewer";
+    const subjectLine = `[KenyaHub Translation Contribution - ${contributeLanguage}] ${contributeEnglish || typeLabel}`;
+    const bodyText = [
+      `Language: ${contributeLanguage}`,
+      `Contribution Type: ${typeLabel}`,
+      `English Term: ${contributeEnglish || "N/A"}`,
+      `Native Translation: ${contributeTranslation || "N/A"}`,
+      `Pronunciation Guide: ${contributePronunciation || "N/A"}`,
+      `Dialect / Context / Note: ${contributeContext || "N/A"}`,
+      ``,
+      `Contributor Name: ${contributorName || "Anonymous"}`,
+      `Email: ${contributorEmail || "N/A"}`,
+      ``,
+      `Submitted via Kenya-Hub Translator Module`,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(bodyText)}`;
+    window.location.href = mailtoUrl;
+
+    setContributeSubmitted(true);
+  };
+
+  // Load recent searches and favorites from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("kh-translator-recent");
+      if (saved) setRecentSearches(JSON.parse(saved));
+      const savedFavs = localStorage.getItem("kh-translator-favs");
+      if (savedFavs) setFavorites(JSON.parse(savedFavs));
+    } catch { /* ignore */ }
+  }, []);
+
+  // Save recent searches
+  const addRecentSearch = useCallback((query: string) => {
+    setRecentSearches((prev) => {
+      const next = [query, ...prev.filter((s) => s !== query)].slice(0, 8);
+      try { localStorage.setItem("kh-translator-recent", JSON.stringify(next)); } catch { /* ignore */ }
+      return next;
+    });
+  }, []);
+
+  // Debounced recent search recording (outside useMemo)
+  useEffect(() => {
+    const q = searchQuery.toLowerCase().trim();
+    if (q.length <= 2) return;
+    const t = setTimeout(() => addRecentSearch(q), 500);
+    return () => clearTimeout(t);
+  }, [searchQuery, addRecentSearch]);
+
+  // O(1) Favorites Set
+  const favoritesSet = useMemo(() => new Set(favorites), [favorites]);
+
+  const toggleFavorite = useCallback((key: string) => {
+    setFavorites((prev) => {
+      const next = prev.includes(key) ? prev.filter((f) => f !== key) : [...prev, key];
+      try { localStorage.setItem("kh-translator-favs", JSON.stringify(next)); } catch { /* ignore */ }
+      return next;
+    });
+  }, []);
+
+  // Copy to clipboard
+  const copyToClipboard = useCallback((text: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedText(text);
+      setTimeout(() => setCopiedText(null), 2000);
+    });
+  }, []);
+
+  // Swap languages
+  const swapLanguages = useCallback(() => {
+    if (targetLanguage === "all") {
+      setSourceLanguage("swahili");
+      setTargetLanguage("english");
+    } else {
+      setSourceLanguage(targetLanguage);
+      setTargetLanguage(sourceLanguage);
+    }
+    setSearchQuery("");
+  }, [sourceLanguage, targetLanguage]);
+
+  const targetMeta = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_META_MAP[targetLanguage] : null;
+  const sourceMeta = sourceLanguage !== "english" ? DICT_META_MAP[sourceLanguage] : null;
+  const targetDict = targetLanguage !== "english" && targetLanguage !== "all" ? loadedDicts[targetLanguage] || null : null;
+  const sourceDict = sourceLanguage !== "english" ? loadedDicts[sourceLanguage] || null : null;
+  const activeDictList = useMemo(
+    () => ALL_DICT_METAS.map((m) => loadedDicts[m.languageId]).filter(Boolean) as Dictionary[],
+    [loadedDicts]
+  );
+
+  // ─── Fast Indexed Search / Translation Logic ───
+  const { searchResults, detectedPivotWords } = useMemo(() => {
+    if (!searchQuery.trim()) return { searchResults: [], detectedPivotWords: [] as string[] };
+    const q = searchQuery.toLowerCase().trim();
+    const qClean = extractNormalizedTerms(q)[0] || q;
+
+    const results: TranslationResultItem[] = [];
+    const pivotWordsSet = new Set<string>();
+
+    const findInDictByEnglishPivots = (
+      dict: Dictionary,
+      pivots: string[],
+      sourceMatch?: DictEntry,
+      maxResults = 120
+    ): TranslationResultItem[] => {
+      const idx = getDictIndex(dict);
+      const exactMatches: TranslationResultItem[] = [];
+      const partialMatches: TranslationResultItem[] = [];
+      const seen = new Set<DictEntry>();
+
+      // Fast O(1) exact lookup first
+      for (const pw of pivots) {
+        const bucket = idx.byEngTerm.get(pw);
+        if (bucket) {
+          for (const item of bucket) {
+            if (seen.has(item.entry)) continue;
+            seen.add(item.entry);
+            exactMatches.push({
+              entry: item.entry,
+              sourceEntry: sourceMatch,
+              pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
+              categoryName: item.cat.name,
+              categoryIcon: item.cat.icon || "📖",
+              languageId: dict.languageId,
+              languageName: dict.languageName,
+              family: dict.family,
+              matchType: "exact",
+            });
+          }
+        }
+      }
+
+      // If we need partial matches, scan pre-normalized terms
+      if (exactMatches.length < maxResults) {
+        const longPivots = pivots.filter((pw) => pw.length >= 3);
+        if (longPivots.length > 0) {
+          for (const item of idx.all) {
+            if (seen.has(item.entry)) continue;
+            if (longPivots.some((pw) => item.engLower.includes(pw) || item.engTerms.some((et) => et.includes(pw)))) {
+              seen.add(item.entry);
+              partialMatches.push({
+                entry: item.entry,
+                sourceEntry: sourceMatch,
+                pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
+                categoryName: item.cat.name,
+                categoryIcon: item.cat.icon || "📖",
+                languageId: dict.languageId,
+                languageName: dict.languageName,
+                family: dict.family,
+                matchType: "partial",
+              });
+              if (exactMatches.length + partialMatches.length >= maxResults) break;
+            }
+          }
+        }
+      }
+
+      return [...exactMatches, ...partialMatches];
+    };
+
+    if (sourceLanguage === "english") {
+      const pivots = extractNormalizedTerms(q);
+      if (targetLanguage === "all" || targetLanguage === "english") {
+        for (const dict of activeDictList) {
+          const matches = findInDictByEnglishPivots(dict, pivots, undefined, 1);
+          if (matches.length > 0) {
+            results.push(matches[0]);
+          }
+        }
+      } else if (targetDict) {
+        results.push(...findInDictByEnglishPivots(targetDict, pivots, undefined, 150));
+      }
+    } else if (sourceDict) {
+      const sourceIdx = getDictIndex(sourceDict);
+      const exactSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+      const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
+      const seenSource = new Set<DictEntry>();
+
+      const transBucket = sourceIdx.byTransTerm.get(qClean);
+      if (transBucket) {
+        for (const item of transBucket) {
+          seenSource.add(item.entry);
+          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
+        }
+      }
+
+      for (const item of sourceIdx.all) {
+        if (seenSource.has(item.entry)) continue;
+        if (item.transLower === q) {
+          seenSource.add(item.entry);
+          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
+        } else if (item.transLower.includes(q) || item.transTerms.some((t) => t.includes(qClean))) {
+          seenSource.add(item.entry);
+          partialSourceMatches.push({ entry: item.entry, cat: item.cat });
+          if (partialSourceMatches.length >= 60) break;
+        }
+      }
+
+      // Fallback: if user typed an English word while a Kenyan language was selected as "From"
+      if (exactSourceMatches.length === 0 && partialSourceMatches.length === 0) {
+        const engBucket = sourceIdx.byEngTerm.get(qClean);
+        if (engBucket) {
+          for (const item of engBucket) {
+            seenSource.add(item.entry);
+            exactSourceMatches.push({ entry: item.entry, cat: item.cat });
+          }
+        }
+        if (exactSourceMatches.length === 0) {
+          for (const item of sourceIdx.all) {
+            if (item.engLower.includes(q)) {
+              partialSourceMatches.push({ entry: item.entry, cat: item.cat });
+              if (partialSourceMatches.length >= 60) break;
+            }
+          }
+        }
+      }
+
+      const combinedSource = [...exactSourceMatches, ...partialSourceMatches];
+      const exactSet = new Set(exactSourceMatches);
+
+      if (targetLanguage === "english" || targetLanguage === sourceLanguage) {
+        for (const sm of combinedSource) {
+          results.push({
+            entry: sm.entry,
+            categoryName: sm.cat.name,
+            categoryIcon: sm.cat.icon || "📖",
+            languageId: sourceDict.languageId,
+            languageName: sourceDict.languageName,
+            family: sourceDict.family,
+            matchType: exactSet.has(sm) ? "exact" : "partial",
+          });
+        }
+      } else if (targetLanguage === "all") {
+        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 3) : partialSourceMatches.slice(0, 3);
+        const allPivots: string[] = [];
+        for (const sm of primarySources) {
+          for (const pw of extractNormalizedTerms(sm.entry.english)) {
+            pivotWordsSet.add(pw);
+            if (!allPivots.includes(pw)) allPivots.push(pw);
+          }
+        }
+
+        if (primarySources.length > 0) {
+          const bestSource = primarySources[0].entry;
+          for (const dict of activeDictList) {
+            if (dict.languageId === sourceDict.languageId) continue;
+            const dictMatches = findInDictByEnglishPivots(dict, allPivots, bestSource, 1);
+            if (dictMatches.length > 0) {
+              results.push(dictMatches[0]);
+            }
+          }
+        }
+      } else if (targetDict) {
+        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 5) : partialSourceMatches.slice(0, 5);
+        const seenTargetKeys = new Set<string>();
+
+        for (const sm of primarySources) {
+          const pivots = extractNormalizedTerms(sm.entry.english);
+          pivots.forEach((pw) => pivotWordsSet.add(pw));
+          const targetMatches = findInDictByEnglishPivots(targetDict, pivots, sm.entry, 40);
+
+          if (targetMatches.length > 0) {
+            for (const tm of targetMatches) {
+              const key = `${tm.entry.english}::${tm.entry.translation}`;
+              if (!seenTargetKeys.has(key)) {
+                seenTargetKeys.add(key);
+                results.push(tm);
+              }
+            }
+          } else {
+            const key = `bridge::${sm.entry.english}`;
+            if (!seenTargetKeys.has(key)) {
+              seenTargetKeys.add(key);
+              results.push({
+                entry: sm.entry,
+                sourceEntry: sm.entry,
+                pivotEnglish: sm.entry.english,
+                categoryName: sm.cat.name,
+                categoryIcon: sm.cat.icon || "📖",
+                languageId: targetDict.languageId,
+                languageName: targetDict.languageName,
+                family: targetDict.family,
+                matchType: "partial",
+                missingTarget: true,
+              });
+            }
+          }
+        }
+      }
+    }
+
+    // Multi-word phrase / word-by-word fallback when user enters multiple words
+    const wordTokens = q
+      .replace(/[^a-zA-Z0-9\u00C0-\u024F'\s-]/g, " ")
+      .split(/\s+/)
+      .map((w) => w.trim())
+      .filter((w) => w.length >= 2 && !["the", "a", "an", "please"].includes(w));
+
+    if (wordTokens.length >= 2 && sourceLanguage === "english") {
+      const synthesizeForDict = (dict: Dictionary): TranslationResultItem | null => {
+        const translatedParts: string[] = [];
+        const pronParts: string[] = [];
+        let matchedCount = 0;
+        for (const tok of wordTokens) {
+          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok), undefined, 1);
+          const exact = tokMatches.find((m) => m.matchType === "exact") || tokMatches[0];
+          if (exact) {
+            matchedCount++;
+            const cleanT = exact.entry.translation.split(/[\/;(]/)[0].trim();
+            translatedParts.push(cleanT);
+            if (exact.entry.pronunciation) {
+              pronParts.push(exact.entry.pronunciation.split("/")[0].trim());
+            }
+          }
+        }
+        if (matchedCount >= 2) {
+          return {
+            entry: {
+              english: searchQuery.trim(),
+              translation: translatedParts.join(" + "),
+              pronunciation: pronParts.join(" · "),
+              context: `Word-by-word synthesis (${matchedCount}/${wordTokens.length} words matched in ${dict.languageName})`,
+              audioFile: null,
+            },
+            categoryName: "Word-by-Word Phrase Bridge",
+            categoryIcon: "🔗",
+            languageId: dict.languageId,
+            languageName: dict.languageName,
+            family: dict.family,
+            matchType: matchedCount === wordTokens.length ? "exact" : "partial",
+          };
+        }
+        return null;
+      };
+
+      if (targetLanguage === "all") {
+        for (const dict of activeDictList) {
+          if (!results.some((r) => r.languageId === dict.languageId && r.matchType === "exact")) {
+            const syn = synthesizeForDict(dict);
+            if (syn) results.push(syn);
+          }
+        }
+      } else if (targetDict && !results.some((r) => r.matchType === "exact")) {
+        const syn = synthesizeForDict(targetDict);
+        if (syn) results.unshift(syn);
+        for (const tok of wordTokens) {
+          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok), undefined, 1);
+          if (tokMatches.length > 0) results.push(tokMatches[0]);
+        }
+      }
+    }
+
+    results.sort((a, b) => {
+      if (a.missingTarget !== b.missingTarget) return a.missingTarget ? 1 : -1;
+      return (a.matchType === "exact" ? -1 : 1) - (b.matchType === "exact" ? -1 : 1);
+    });
+
+    return {
+      searchResults: results,
+      detectedPivotWords: Array.from(pivotWordsSet),
+    };
+  }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]);
+
+  const visibleSearchResults = useMemo(
+    () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
+    [searchResults, searchPage]
+  );
+
+  // ─── Category Browser (Supports direct browsing OR Kenyan-to-Kenyan pivot browsing!) ───
+  const browseLangId =
+    targetLanguage !== "english" && targetLanguage !== "all"
+      ? targetLanguage
+      : sourceLanguage !== "english"
+      ? sourceLanguage
+      : "swahili";
+  const browseMeta = DICT_META_MAP[browseLangId] || DICT_META_MAP.swahili;
+  const browseDict = loadedDicts[browseLangId] || null;
+
+  const categoryEntries = useMemo(() => {
+    if (!activeCategory || !browseDict) return [];
+    const cat = browseDict.categories.find((c) => c.id === activeCategory);
+    if (!cat) return [];
+    const q = categorySearch.trim().toLowerCase();
+    if (!q) return cat.entries;
+    return cat.entries.filter(
+      (e) =>
+        e.english.toLowerCase().includes(q) ||
+        e.translation.toLowerCase().includes(q) ||
+        (e.context && e.context.toLowerCase().includes(q))
+    );
+  }, [activeCategory, browseDict, categorySearch]);
+
+  const totalCategoryPages = Math.max(1, Math.ceil(categoryEntries.length / CATEGORY_PAGE_SIZE));
+  const paginatedCategoryEntries = useMemo(() => {
+    const start = (categoryPage - 1) * CATEGORY_PAGE_SIZE;
+    return categoryEntries.slice(start, start + CATEGORY_PAGE_SIZE);
+  }, [categoryEntries, categoryPage]);
+
+  // Map English headword -> sourceDict entry when browsing a category in Kenyan A -> Kenyan B mode
+  const sourcePivotMap = useMemo(() => {
+    if (!sourceDict) return new Map<string, DictEntry>();
+    const idx = getDictIndex(sourceDict);
+    const map = new Map<string, DictEntry>();
+    for (const [term, items] of idx.byEngTerm.entries()) {
+      if (items.length > 0) map.set(term, items[0].entry);
+    }
+    return map;
+  }, [sourceDict]);
+
+  // ─── Compare Mode: word across multiple languages (using O(1) index) ───
+  const { comparisonResults, resolvedEnglish } = useMemo(() => {
+    if (viewMode !== "compare" || !searchQuery.trim()) {
+      return { comparisonResults: [], resolvedEnglish: null };
+    }
+    const qTerms = extractNormalizedTerms(searchQuery);
+    const q = qTerms[0] || searchQuery.toLowerCase().trim();
+
+    let isKnownEnglish = false;
+    for (const d of activeDictList) {
+      const idx = getDictIndex(d);
+      if (idx.byEngTerm.has(q)) {
+        isKnownEnglish = true;
+        break;
+      }
+    }
+
+    let matchedEnglish = q;
+    if (!isKnownEnglish) {
+      for (const d of activeDictList) {
+        const idx = getDictIndex(d);
+        const transHits = idx.byTransTerm.get(q);
+        if (transHits && transHits.length > 0) {
+          matchedEnglish = transHits[0].engTerms[0] || transHits[0].engLower;
+          break;
+        }
+      }
+    }
+
+    const targetWords = Array.from(new Set([matchedEnglish, ...qTerms, ...extractNormalizedTerms(matchedEnglish)]));
+
+    const results: { languageId: string; languageName: string; family: string; entry: DictEntry | null }[] = [];
+
+    compareLanguages.forEach((langId) => {
+      const meta = DICT_META_MAP[langId];
+      const dict = loadedDicts[langId];
+      if (!meta) return;
+      if (!dict) {
+        results.push({ languageId: meta.languageId, languageName: meta.languageName, family: meta.family, entry: null });
+        return;
+      }
+
+      const idx = getDictIndex(dict);
+      let found: DictEntry | null = null;
+
+      for (const tw of targetWords) {
+        const hits = idx.byEngTerm.get(tw);
+        if (hits && hits.length > 0) {
+          found = hits[0].entry;
+          break;
+        }
+      }
+
+      if (!found && !isKnownEnglish) {
+        for (const tw of targetWords) {
+          const hits = idx.byTransTerm.get(tw);
+          if (hits && hits.length > 0) {
+            found = hits[0].entry;
+            break;
+          }
+        }
+      }
+
+      if (!found) {
+        const phraseTargets = targetWords.filter((tw) => tw.includes(" "));
+        if (phraseTargets.length > 0) {
+          for (const item of idx.all) {
+            if (phraseTargets.some((tw) => item.engTerms.some((et) => et.includes(tw)))) {
+              found = item.entry;
+              break;
+            }
+          }
+        }
+      }
+
+      results.push({ languageId: dict.languageId, languageName: dict.languageName, family: dict.family, entry: found });
+    });
+
+    return {
+      comparisonResults: results,
+      resolvedEnglish: matchedEnglish !== q ? matchedEnglish : null,
+    };
+  }, [searchQuery, viewMode, compareLanguages, activeDictList, loadedDicts]);
+
+  // Stats
+  const totalEntries = TOTAL_DICTIONARY_ENTRIES;
+
+  // ─── Random Word Feature ───
+  const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(() => {
+    const sample = INITIAL_RANDOM_WORDS[0];
+    return sample ? { entry: sample.entry, langName: sample.langName } : null;
+  });
+
+  const getRandomWord = useCallback(() => {
+    if (activeDictList.length > 0) {
+      const dict = activeDictList[Math.floor(Math.random() * activeDictList.length)];
+      const cleanPool = dict.categories
+        .filter((c) => c.id !== "culture-history")
+        .flatMap((c) => c.entries)
+        .filter(
+          (e) =>
+            e.english.length >= 2 &&
+            e.english.length <= 32 &&
+            e.translation.length >= 2 &&
+            e.translation.length <= 36 &&
+            !/[();:/[\]"„—]/.test(e.english) &&
+            !/[();:[\]"„—]/.test(e.translation)
+        );
+      if (cleanPool.length > 0) {
+        const entry = cleanPool[Math.floor(Math.random() * cleanPool.length)];
+        setRandomWord({ entry, langName: dict.languageName });
+        return;
+      }
+    }
+    const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
+    if (sample) setRandomWord({ entry: sample.entry, langName: sample.langName });
+  }, [activeDictList]);
+
+  useEffect(() => { getRandomWord(); }, [getRandomWord]);
+
+  useEffect(() => {
+    scrollToTopIfScrolled();
+  }, [viewMode]);
+
+  const isPivotMode = sourceLanguage !== "english" && targetLanguage !== "english";
+
+  return (
+    <ToolShell tool={tool} faq={faq}>
+      <div className="space-y-4 sm:space-y-6">
+
+        {/* ── Random Word of the Moment ── */}
+        {randomWord && (
+          <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
+            <div className="min-w-0">
+              <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICT_METAS.length} Kenyan languages)</p>
+              <p className="text-sm font-bold text-text-primary">{randomWord.entry.english}</p>
+              <p className="text-xs text-text-secondary mt-0.5">
+                <span className="text-gold font-medium">{randomWord.entry.translation}</span>
+                <span className="text-text-muted"> — {randomWord.langName}</span>
+              </p>
+              {randomWord.entry.pronunciation && (
+                <p className="text-[0.65rem] text-text-muted mt-0.5 italic">/{randomWord.entry.pronunciation}/</p>
+              )}
+            </div>
+            <button onClick={getRandomWord} className="flex-shrink-0 w-8 h-8 rounded-lg bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-colors" title="Get another word">
+              <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </button>
+          </div>
+        )}
+
+        {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
+        <ExpandablePillRow>
+          {([
+            { id: "translate" as const, label: "Translate (Any → Any / All)" },
+            { id: "compare" as const, label: `Compare (${ALL_DICT_METAS.length} Languages)` },
+            { id: "browse" as const, label: "Browse Dictionaries" },
+          ]).map((mode) => {
+            const active = viewMode === mode.id;
+            return (
+              <button
+                key={mode.id}
+                onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                  active
+                    ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                {mode.label}
+              </button>
+            );
+          })}
+        </ExpandablePillRow>
+
+        {/* ═══════════════════════════════════════ */}
+        {/* ── TRANSLATE MODE ── */}
+        {/* ═══════════════════════════════════════ */}
+        {viewMode === "translate" && (
+          <>
+            {/* Language Selector */}
+            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5">
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+                <div className="w-full sm:flex-1 min-w-0">
+                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1 font-medium">From (Source Language)</label>
+                  <CustomSelect
+                    value={sourceLanguage}
+                    onValueChange={setSourceLanguage}
+                    options={[
+                      { value: "english", label: "English" },
+                      ...ALL_DICT_METAS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                    ]}
+                    id="source-lang"
+                  />
+                </div>
+
+                <button
+                  onClick={swapLanguages}
+                  className="my-0.5 sm:my-0 sm:mt-5 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-all hover:rotate-180 duration-300 flex-shrink-0 transform rotate-90 sm:rotate-0"
+                  title="Swap languages"
+                >
+                  <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                  </svg>
+                </button>
+
+                <div className="w-full sm:flex-1 min-w-0">
+                  <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1 font-medium">To (Target Language)</label>
+                  <CustomSelect
+                    value={targetLanguage}
+                    onValueChange={setTargetLanguage}
+                    options={[
+                      { value: "all", label: `All ${ALL_DICT_METAS.length} Kenyan Languages` },
+                      { value: "english", label: "English" },
+                      ...ALL_DICT_METAS.map((d) => ({ value: d.languageId, label: d.languageName }))
+                    ]}
+                    id="target-lang"
+                  />
+                </div>
+              </div>
+
+              {/* Bridge Indicator Badge when translating Kenyan -> Kenyan or Kenyan -> All */}
+              {isPivotMode && (
+                <div className="mt-2.5 px-3 py-1.5 rounded-lg bg-gold/10 border border-gold/25 flex items-center gap-2 text-[0.6875rem] text-text-secondary">
+                  <span className="text-gold font-semibold">English Middleman Active:</span>
+                  <span>
+                    Translating from <strong>{sourceMeta?.languageName}</strong>{" "}
+                    <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" /> <strong>English</strong>{" "}
+                    <ArrowRight className="inline w-3 h-3 text-gold mx-0.5" />{" "}
+                    <strong>{targetLanguage === "all" ? `All ${ALL_DICT_METAS.length - 1} Other Kenyan Languages` : targetMeta?.languageName}</strong>
+                  </span>
+                </div>
+              )}
+
+              {/* Search Input */}
+              <div className="mt-3 sm:mt-4">
+                <SearchInput
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onClear={() => setSearchQuery("")}
+                  placeholder={
+                    sourceLanguage === "english"
+                      ? "Type an English word (e.g. Water, Sun, Mother, One, Fire)..."
+                      : `Type a word in ${sourceMeta?.languageName ?? "source language"} (or English)...`
+                  }
+                  className="text-sm w-full"
+                  id="translator-search"
+                />
+              </div>
+
+              {/* Quick Suggestions & Recent Searches */}
+              {!searchQuery && (
+                <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                  <span className="text-[0.6rem] text-text-muted">Try:</span>
+                  {POPULAR_COMPARE_WORDS.slice(0, 8).map((w) => (
+                    <button
+                      key={w}
+                      type="button"
+                      onClick={() => setSearchQuery(w)}
+                      className="text-[0.65rem] px-2 py-0.5 rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors"
+                    >
+                      {w}
+                    </button>
+                  ))}
+                  {recentSearches.length > 0 && (
+                    <>
+                      <span className="text-[0.6rem] text-text-muted ml-1">Recent:</span>
+                      {recentSearches.slice(0, 4).map((s) => (
+                        <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors">
+                          {s}
+                        </button>
+                      ))}
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Target Language Info Banner */}
+            {targetMeta && !searchQuery && (
+              <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex items-start gap-3">
+                <span className="w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[targetMeta.family] }} />
+                <div className="min-w-0">
+                  <h3 className="text-sm font-bold text-text-primary">{targetMeta.languageName}</h3>
+                  <p className="text-[0.65rem] text-text-muted mt-0.5">
+                    {targetMeta.nativeName} · {(targetMeta.speakerCount / 1000000).toFixed(2).replace(/\.?0+$/, "")}M speakers · {targetMeta.family.charAt(0).toUpperCase() + targetMeta.family.slice(1)} family
+                  </p>
+                  <p className="text-[0.6rem] text-text-muted mt-1">{targetMeta.counties.join(", ")}</p>
+                  <div className="flex items-center gap-4 mt-2">
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <BookOpen className="w-3.5 h-3.5" /> {targetMeta.totalEntries.toLocaleString()} words
+                    </span>
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <Folder className="w-3.5 h-3.5" /> {targetMeta.categories.length} categories
+                    </span>
+                    <span className="text-[0.6rem] text-text-muted flex items-center gap-1.5">
+                      <Hash className="w-3.5 h-3.5" /> v{targetMeta.dictionaryVersion}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Search Results */}
+            {searchQuery && (
+              <div className="space-y-2">
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <p className="text-xs text-text-muted">
+                    Showing {visibleSearchResults.length} of {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
+                    {targetLanguage === "all" ? (
+                      <span> across all Kenyan languages</span>
+                    ) : targetMeta ? (
+                      <span> in {targetMeta.languageName}</span>
+                    ) : (
+                      <span> in English</span>
+                    )}
+                  </p>
+                  {detectedPivotWords.length > 0 && (
+                    <span className="text-[0.65rem] bg-gold/10 border border-gold/25 text-gold px-2.5 py-0.5 rounded-full font-medium">
+                      English bridge: &ldquo;{detectedPivotWords.slice(0, 3).join(", ")}&rdquo;
+                    </span>
+                  )}
+                </div>
+
+                {searchResults.length === 0 && !isLoadingDicts && (
+                  <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
+                    <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
+                    <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
+                    <p className="text-xs text-text-muted max-w-sm mx-auto">
+                      Try searching a core word (e.g. Water, Fire, Sun, Mother, One) or switch &ldquo;To&rdquo; to <strong>All {ALL_DICT_METAS.length} Kenyan Languages</strong>.
+                    </p>
+                    <div className="mt-3 flex flex-wrap justify-center gap-2">
+                      {targetLanguage !== "all" && (
+                        <button
+                          type="button"
+                          onClick={() => setTargetLanguage("all")}
+                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-kenya-green/15 hover:bg-kenya-green/25 text-kenya-green-light border border-kenya-green/30 transition-all cursor-pointer"
+                        >
+                          <span>Translate &ldquo;{searchQuery}&rdquo; to All {ALL_DICT_METAS.length} Languages</span>
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => openContributeModal(targetMeta?.languageName || sourceMeta?.languageName || "Swahili", searchQuery)}
+                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-all cursor-pointer"
+                      >
+                        <Plus className="w-3.5 h-3.5" />
+                        <span>Contribute &ldquo;{searchQuery}&rdquo; translation</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                <div className={targetLanguage === "all" ? "grid grid-cols-1 sm:grid-cols-2 gap-2.5" : "space-y-2"}>
+                  {visibleSearchResults.map((result, i) => {
+                    const favKey = `${result.languageId}:${result.entry.english}`;
+                    const isFav = favoritesSet.has(favKey);
+                    const isReverseToEnglish = sourceLanguage !== "english" && targetLanguage === "english";
+
+                    return (
+                      <div key={i} className={`bg-bg-card border rounded-xl p-3.5 sm:p-4 transition-all hover:border-gold/30 ${result.matchType === "exact" ? "border-gold/25" : "border-border"}`}>
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-2 mb-1 flex-wrap">
+                              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] || "#C8961E" }} />
+                              <span className="text-xs font-bold text-text-primary">{result.languageName}</span>
+                              <span className="text-[0.6rem] text-text-muted">· {result.categoryName}</span>
+                              {result.matchType === "exact" && (
+                                <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">Exact</span>
+                              )}
+                            </div>
+
+                            {/* 3-Column Pivot View when translating Kenyan A -> Kenyan B */}
+                            {result.sourceEntry && sourceMeta ? (
+                              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 pt-2 border-t border-border/40">
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{sourceMeta.languageName}</p>
+                                  <p className="text-xs font-bold text-text-primary break-words">{result.sourceEntry.translation}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">English (Middleman)</p>
+                                  <p className="text-xs font-medium text-text-secondary break-words">{result.pivotEnglish}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{result.languageName}</p>
+                                  {result.missingTarget ? (
+                                    <div className="flex items-center gap-2">
+                                      <span className="text-xs text-text-muted italic">Not yet recorded in {result.languageName}</span>
+                                      <button
+                                        type="button"
+                                        onClick={() => openContributeModal(result.languageName, result.pivotEnglish)}
+                                        className="text-[0.6rem] text-gold hover:underline font-semibold"
+                                      >
+                                        + Add
+                                      </button>
+                                    </div>
+                                  ) : (
+                                    <>
+                                      <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
+                                      {result.entry.pronunciation && (
+                                        <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                                      )}
+                                    </>
+                                  )}
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1.5">
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? result.languageName : "English"}</p>
+                                  <p className="text-xs sm:text-sm font-semibold text-text-primary break-words">{isReverseToEnglish ? result.entry.translation : result.entry.english}</p>
+                                </div>
+                                <div>
+                                  <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? "English" : result.languageName}</p>
+                                  <p className="text-sm font-bold text-gold break-words">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
+                                  {result.entry.pronunciation && (
+                                    <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                                  )}
+                                </div>
+                              </div>
+                            )}
+
+                            {result.entry.context && !result.missingTarget && (
+                              <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-2.5 py-1 flex items-start gap-1.5">
+                                <DynamicIcon emoji="💡" className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
+                                <span>{result.entry.context}</span>
+                              </p>
+                            )}
+                          </div>
+                          {!result.missingTarget && (
+                            <div className="flex flex-col gap-1 flex-shrink-0">
+                              <button onClick={() => copyToClipboard(isReverseToEnglish ? result.entry.english : result.entry.translation)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy translation">
+                                {copiedText === (isReverseToEnglish ? result.entry.english : result.entry.translation) ? (
+                                  <svg className="w-3.5 h-3.5 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                ) : (
+                                  <svg className="w-3.5 h-3.5 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                )}
+                              </button>
+                              <button onClick={() => toggleFavorite(favKey)} className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title={isFav ? "Remove from favorites" : "Add to favorites"}>
+                                <svg className={`w-3.5 h-3.5 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {searchResults.length > visibleSearchResults.length && (
+                  <div className="text-center pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setSearchPage((p) => p + 1)}
+                      className="px-4 py-2 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs font-semibold text-gold transition-colors cursor-pointer"
+                    >
+                      Show More Results ({searchResults.length - visibleSearchResults.length} remaining)
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Category Browser (when not searching) */}
+            {!searchQuery && browseMeta && (
+              <>
+                <div id="translator-category-browser">
+                  <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
+                    Browse {browseMeta.languageName} by Category
+                  </h3>
+                  <ExpandablePillRow>
+                    {ALL_CATEGORY_IDS.map((cat) => {
+                      const catMeta = browseMeta.categories.find((c) => c.id === cat.id);
+                      const hasEntries = Boolean(catMeta && catMeta.count > 0);
+                      const active = activeCategory === cat.id;
+                      return (
+                        <button
+                          key={cat.id}
+                          onClick={() => { setActiveCategory(active ? null : cat.id); }}
+                          disabled={!hasEntries}
+                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+                            active
+                              ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                              : hasEntries
+                              ? "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
+                              : "border-border/50 bg-bg-elevated/40 text-text-muted/40 cursor-not-allowed"
+                          }`}
+                        >
+                          {cat.name} {catMeta ? `(${catMeta.count})` : ""}
+                        </button>
+                      );
+                    })}
+                  </ExpandablePillRow>
+                </div>
+
+                {/* Category Entries Table (Paginated for Fast Rendering) */}
+                {activeCategory && (
+                  <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+                    <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                      <div>
+                        <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
+                          <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
+                          {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseMeta.languageName}
+                          <span className="text-[0.65rem] text-text-muted font-normal">
+                            ({categoryEntries.length.toLocaleString()} entries)
+                          </span>
+                        </h4>
+                        {categoryEntries.length > CATEGORY_PAGE_SIZE && (
+                          <p className="text-[0.65rem] text-text-muted mt-0.5">
+                            Showing {((categoryPage - 1) * CATEGORY_PAGE_SIZE) + 1}–{Math.min(categoryPage * CATEGORY_PAGE_SIZE, categoryEntries.length)} of {categoryEntries.length.toLocaleString()}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="w-full sm:w-64">
+                        <SearchInput
+                          value={categorySearch}
+                          onChange={(e) => {
+                            setCategorySearch(e.target.value);
+                            setCategoryPage(1);
+                          }}
+                          onClear={() => {
+                            setCategorySearch("");
+                            setCategoryPage(1);
+                          }}
+                          placeholder={`Filter within ${ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name}...`}
+                          className="text-xs w-full"
+                        />
+                      </div>
+                    </div>
+
+                    {!browseDict ? (
+                      <div className="p-8 text-center text-xs text-text-muted animate-pulse">
+                        Loading {browseMeta.languageName} dictionary...
+                      </div>
+                    ) : paginatedCategoryEntries.length === 0 ? (
+                      <div className="p-6 text-center text-xs text-text-muted">
+                        No entries match &ldquo;{categorySearch}&rdquo; in this category.
+                      </div>
+                    ) : (
+                      <>
+                        <div className="divide-y divide-border">
+                          {paginatedCategoryEntries.map((entry, i) => {
+                            const favKey = `${browseDict.languageId}:${entry.english}`;
+                            const isFav = favoritesSet.has(favKey);
+                            const matchedSource =
+                              sourceDict && targetDict && sourceDict.languageId !== targetDict.languageId
+                                ? extractNormalizedTerms(entry.english).map((t) => sourcePivotMap.get(t)).find(Boolean)
+                                : undefined;
+
+                            return (
+                              <div key={i} className="px-3.5 sm:px-4 py-2.5 sm:py-3 hover:bg-bg-card-hover transition-colors">
+                                <div className="flex items-start justify-between gap-3">
+                                  <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-3">
+                                    <div>
+                                      <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">
+                                        {matchedSource && sourceDict ? `${sourceDict.languageName} → English` : "English"}
+                                      </p>
+                                      {matchedSource && sourceDict && (
+                                        <p className="text-xs font-bold text-kenya-green-light break-words">{matchedSource.translation}</p>
+                                      )}
+                                      <p className="text-[0.8125rem] text-text-primary font-medium break-words">{entry.english}</p>
+                                    </div>
+                                    <div>
+                                      <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{browseDict.languageName}</p>
+                                      <p className="text-[0.8125rem] text-gold font-bold break-words">{entry.translation}</p>
+                                    </div>
+                                    <div>
+                                      {entry.pronunciation && (
+                                        <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
+                                      )}
+                                      {entry.context && (
+                                        <p className="text-[0.65rem] text-text-muted mt-0.5">{entry.context}</p>
+                                      )}
+                                    </div>
+                                  </div>
+                                  <div className="flex gap-1 flex-shrink-0">
+                                    <button onClick={() => copyToClipboard(entry.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors" title="Copy">
+                                      {copiedText === entry.translation ? (
+                                        <svg className="w-3 h-3 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                      ) : (
+                                        <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      )}
+                                    </button>
+                                    <button onClick={() => toggleFavorite(favKey)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors">
+                                      <svg className={`w-3 h-3 ${isFav ? "text-kenya-red fill-kenya-red" : "text-text-muted"}`} fill={isFav ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+
+                        {/* Pagination Footer */}
+                        {totalCategoryPages > 1 && (
+                          <div className="px-4 py-3 border-t border-border bg-bg-elevated/40 flex items-center justify-between gap-2 flex-wrap">
+                            <span className="text-xs text-text-muted">
+                              Page <strong className="text-text-primary">{categoryPage}</strong> of{" "}
+                              <strong className="text-text-primary">{totalCategoryPages}</strong> ({categoryEntries.length.toLocaleString()} entries)
+                            </span>
+                            <div className="flex items-center gap-1.5">
+                              <button
+                                type="button"
+                                disabled={categoryPage <= 1}
+                                onClick={() => { setCategoryPage((p) => Math.max(1, p - 1)); scrollToSectionIfNeeded("translator-category-browser", 80); }}
+                                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                              >
+                                <ChevronLeft className="w-3.5 h-3.5" />
+                                <span>Previous</span>
+                              </button>
+                              <button
+                                type="button"
+                                disabled={categoryPage >= totalCategoryPages}
+                                onClick={() => { setCategoryPage((p) => Math.min(totalCategoryPages, p + 1)); scrollToSectionIfNeeded("translator-category-browser", 80); }}
+                                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-bg-card border border-border text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                              >
+                                <span>Next</span>
+                                <ChevronRight className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </div>
+                )}
+              </>
+            )}
+          </>
+        )}
+
+        {/* ═══════════════════════════════════════ */}
+        {/* ── COMPARE MODE ── */}
+        {/* ═══════════════════════════════════════ */}
+        {viewMode === "compare" && (
+          <>
+            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-3.5">
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
+                  <label className="text-[0.6rem] uppercase tracking-wider text-text-muted font-medium">
+                    Compare across languages ({compareLanguages.length}/{ALL_DICT_METAS.length} selected)
+                  </label>
+                  <div className="flex items-center gap-1.5 bg-bg-elevated px-2 py-0.5 rounded-lg border border-border">
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                    >
+                      All ({ALL_DICT_METAS.length})
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                    >
+                      Nilotic
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                    >
+                      Bantu
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
+                    >
+                      Cushitic
+                    </button>
+                    <span className="text-[0.6rem] text-border">|</span>
+                    <button
+                      type="button"
+                      onClick={() => setCompareLanguages([])}
+                      className="text-[0.65rem] font-medium text-text-muted hover:text-kenya-red transition-colors"
+                    >
+                      Clear
+                    </button>
+                  </div>
+                </div>
+
+                <ExpandablePillRow>
+                  {ALL_DICT_METAS.map((d) => {
+                    const isSelected = compareLanguages.includes(d.languageId);
+                    return (
+                      <button
+                        key={d.languageId}
+                        onClick={() => {
+                          setCompareLanguages((prev) =>
+                            isSelected ? prev.filter((l) => l !== d.languageId) : [...prev, d.languageId]
+                          );
+                        }}
+                        className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[0.65rem] font-medium transition-all flex items-center gap-1 ${
+                          isSelected
+                            ? "text-white shadow-sm"
+                            : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
+                        }`}
+                        style={isSelected ? { backgroundColor: FAMILY_COLORS[d.family] } : {}}
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: isSelected ? "rgba(255,255,255,0.5)" : FAMILY_COLORS[d.family] }} />
+                        {d.languageName.split("(")[0].trim()}
+                      </button>
+                    );
+                  })}
+                </ExpandablePillRow>
+              </div>
+
+              <div className="space-y-2">
+                <SearchInput
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onClear={() => setSearchQuery("")}
+                  placeholder="Type any English or Kenyan word (e.g. Water, Maĩ, Bishaan, Nkárɛ́, Maji)..."
+                  id="compare-search"
+                />
+                <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
+                  <span className="text-[0.65rem] text-text-muted font-medium">Quick compare:</span>
+                  {POPULAR_COMPARE_WORDS.map((word) => (
+                    <button
+                      key={word}
+                      type="button"
+                      onClick={() => setSearchQuery(word)}
+                      className={`px-2 py-0.5 rounded-md text-[0.65rem] transition-colors border ${
+                        searchQuery.toLowerCase() === word.toLowerCase()
+                          ? "bg-gold/15 text-gold border-gold/30 font-semibold"
+                          : "bg-bg-elevated text-text-secondary border-border hover:border-gold/50 hover:text-text-primary"
+                      }`}
+                    >
+                      {word}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {!searchQuery && (
+              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto">
+                  <BarChart className="w-6 h-6" />
+                </div>
+                <div className="max-w-md mx-auto">
+                  <h4 className="text-sm font-semibold text-text-primary">Compare Across {ALL_DICT_METAS.length} Kenyan Languages</h4>
+                  <p className="text-xs text-text-muted mt-1 leading-relaxed">
+                    Instantly compare vocabulary across Swahili, Kikuyu, Dholuo, Kalenjin, Maasai, Samburu, Embu, Taita, Borana, Rendille, Pokomo, Pokot, Taveta, and more.
+                  </p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-2 pt-1 max-w-xl mx-auto">
+                  {POPULAR_COMPARE_WORDS.map((word) => (
+                    <button
+                      key={word}
+                      type="button"
+                      onClick={() => setSearchQuery(word)}
+                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/40 transition-all flex items-center gap-1.5"
+                    >
+                      <span>{word}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {searchQuery && comparisonResults.length > 0 && (
+              <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+                <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex items-center justify-between flex-wrap gap-2">
+                  <h4 className="text-sm font-semibold text-text-primary">
+                    &ldquo;{searchQuery}&rdquo; {resolvedEnglish && resolvedEnglish !== searchQuery.toLowerCase() ? <span className="text-text-muted font-normal text-xs"> (English middleman: &ldquo;{resolvedEnglish}&rdquo;)</span> : null} in {compareLanguages.length} languages
+                  </h4>
+                  <span className="text-[0.65rem] text-text-muted">
+                    {comparisonResults.filter((r) => r.entry).length} of {compareLanguages.length} found
+                  </span>
+                </div>
+                <div className="divide-y divide-border">
+                  {comparisonResults.map((result) => (
+                    <div key={result.languageId} className="px-4 py-2.5 sm:py-3 flex items-center gap-3 hover:bg-bg-card-hover transition-colors">
+                      <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] }} />
+                      <div className="w-28 sm:w-36 flex-shrink-0">
+                        <p className="text-xs font-medium text-text-primary break-words">{result.languageName}</p>
+                        <p className="text-[0.6rem] text-text-muted capitalize">{result.family}</p>
+                      </div>
+                      {result.entry ? (
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
+                          {result.entry.pronunciation && (
+                            <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
+                          )}
+                          {result.entry.english.toLowerCase() !== searchQuery.toLowerCase() && (
+                            <p className="text-[0.65rem] text-text-muted mt-0.5">Meaning: {result.entry.english}</p>
+                          )}
+                        </div>
+                      ) : (
+                        <div className="flex-1 flex items-center justify-between gap-2">
+                          <p className="text-xs text-text-muted italic">Not in dictionary yet</p>
+                          <button
+                            type="button"
+                            onClick={() => openContributeModal(result.languageName, resolvedEnglish || searchQuery)}
+                            className="text-[0.65rem] text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 cursor-pointer"
+                          >
+                            <Plus className="w-3 h-3" />
+                            <span>Add translation</span>
+                          </button>
+                        </div>
+                      )}
+                      {result.entry && (
+                        <button onClick={() => copyToClipboard(result.entry!.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors flex-shrink-0">
+                          {copiedText === result.entry.translation ? (
+                            <svg className="w-3 h-3 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                          ) : (
+                            <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          )}
+                        </button>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
+        {/* ═══════════════════════════════════════ */}
+        {/* ── BROWSE MODE — All 22 Languages ── */}
+        {/* ═══════════════════════════════════════ */}
+        {viewMode === "browse" && (
+          <>
+            <div className="flex items-center justify-between gap-4 mb-3 flex-wrap">
+              <div>
+                <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                  All Kenyan Languages ({ALL_DICT_METAS.length} active dictionaries)
+                </h3>
+                <p className="text-[0.65rem] text-text-muted">{totalEntries.toLocaleString()} total verified words &amp; phrases</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => openContributeModal()}
+                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all flex items-center gap-1.5 shadow-sm cursor-pointer"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Contribute Vocabulary</span>
+              </button>
+            </div>
+
+            {/* Active Language Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+              {ALL_DICT_METAS.map((dict) => {
+                const entryCount = dict.totalEntries;
+                const maxEntries = 120;
+                const coverage = Math.min(100, (entryCount / maxEntries) * 100);
+                return (
+                  <div
+                    key={dict.languageId}
+                    className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-4 flex flex-col justify-between group hover:border-gold/30 transition-all"
+                  >
+                    <div>
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <button
+                          type="button"
+                          onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
+                          className="text-left group-hover:text-gold transition-colors cursor-pointer"
+                        >
+                          <h4 className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{dict.languageName}</h4>
+                          <div className="flex items-center gap-1.5 mt-0.5">
+                            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[dict.family] }} />
+                            <span className="text-[0.6rem] text-text-muted capitalize">{dict.family}</span>
+                            <span className="text-[0.5rem] text-text-muted">·</span>
+                            <span className="text-[0.6rem] text-text-muted">{dict.nativeName}</span>
+                          </div>
+                        </button>
+                        <span className="text-xs font-bold text-gold">{entryCount.toLocaleString()}</span>
+                      </div>
+                      <p className="text-[0.6rem] text-text-muted mb-2">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
+                      <div className="flex flex-wrap gap-1 mb-2">
+                        {dict.categories.map((cat) => (
+                          <span key={cat.id} className="inline-flex items-center gap-1 text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted"><DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}</span>
+                        ))}
+                      </div>
+                      <div className="h-1 bg-bg-elevated rounded-full overflow-hidden">
+                        <div className="h-full rounded-full transition-all" style={{ width: `${coverage}%`, backgroundColor: FAMILY_COLORS[dict.family] }} />
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between gap-2 mt-3 pt-2.5 border-t border-border/60">
+                      <button
+                        type="button"
+                        onClick={() => { const firstCat = dict.categories.find((c) => c.count > 0)?.id || null; setTargetLanguage(dict.languageId); setSourceLanguage("english"); setSearchQuery(""); setActiveCategory(firstCat); setViewMode("translate"); scrollToSectionIfNeeded("translator-category-browser", 80); }}
+                        className="text-[0.65rem] font-medium text-text-secondary hover:text-gold flex items-center gap-1 transition-colors cursor-pointer"
+                      >
+                        <span>Translate</span>
+                        <span>→</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => openContributeModal(dict.languageName)}
+                        className="text-[0.65rem] font-medium text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 cursor-pointer"
+                      >
+                        <Plus className="w-3 h-3" />
+                        <span>Contribute</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+
+        {/* ── Stats Footer ── */}
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
+          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About This Translator</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+            <div className="text-center">
+              <p className="text-lg font-bold text-gold">{ALL_DICT_METAS.length}</p>
+              <p className="text-[0.6rem] text-text-muted">Kenyan Languages</p>
+            </div>
+            <div className="text-center">
+              <p className="text-lg font-bold text-gold">{totalEntries.toLocaleString()}</p>
+              <p className="text-[0.6rem] text-text-muted">Words &amp; Phrases</p>
+            </div>
+            <div className="text-center">
+              <p className="text-lg font-bold text-gold">{ALL_CATEGORY_IDS.length}</p>
+              <p className="text-[0.6rem] text-text-muted">Categories</p>
+            </div>
+            <div className="text-center">
+              <p className="text-lg font-bold text-gold">Any ↔ Any</p>
+              <p className="text-[0.6rem] text-text-muted">English Bridge</p>
+            </div>
+          </div>
+          <ul className="space-y-1.5">
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICT_METAS.length} languages at once) using English as an automatic semantic bridge.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), Unicode CLDR, and community linguistic contributions.</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      {/* ═══════════════════════════════════════ */}
+      {/* ── CONTRIBUTE MODAL ── */}
+      {/* ═══════════════════════════════════════ */}
+      {isContributeOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-kenya-black/80 backdrop-blur-sm p-4 overflow-y-auto"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) closeContributeModal();
+          }}
+        >
+          <div className="bg-bg-card border border-border rounded-2xl w-full max-w-lg p-5 sm:p-6 shadow-2xl relative my-auto animate-in fade-in zoom-in-95 duration-150">
+            <button
+              type="button"
+              onClick={closeContributeModal}
+              className="absolute top-4 right-4 w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center text-text-muted hover:text-text-primary transition-colors cursor-pointer"
+              title="Close"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {!contributeSubmitted ? (
+              <form onSubmit={handleSubmitContribution} className="space-y-4">
+                <div className="pr-9">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-gold" />
+                    <span className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Community Linguistic Contribution</span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                    Contribute to {contributeLanguage}
+                  </h3>
+                  <p className="text-xs text-text-muted mt-0.5">
+                    Help expand KenyaHub&apos;s open dictionaries. All submitted vocabulary is reviewed and approved in the admin panel.
+                  </p>
+                </div>
+
+                <div>
+                  <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                    Contribution Type
+                  </label>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                    {[
+                      { id: "new_word" as const, label: "New Word" },
+                      { id: "correction" as const, label: "Correction" },
+                      { id: "pronunciation" as const, label: "Pronounce" },
+                      { id: "reviewer" as const, label: "Volunteer" },
+                    ].map((type) => (
+                      <button
+                        key={type.id}
+                        type="button"
+                        onClick={() => setContributeType(type.id)}
+                        className={`px-2 py-1.5 rounded-lg text-xs font-medium text-center transition-all cursor-pointer ${
+                          contributeType === type.id
+                            ? "bg-gold text-kenya-black font-semibold shadow-sm"
+                            : "bg-bg-elevated border border-border text-text-secondary hover:text-text-primary"
+                        }`}
+                      >
+                        {type.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                    Target Language
+                  </label>
+                  <CustomSelect
+                    value={contributeLanguage}
+                    onValueChange={setContributeLanguage}
+                    options={[
+                      ...ALL_CONTRIBUTE_LANGUAGES.map((l) => ({ value: l, label: l })),
+                      { value: "Other", label: "Other Kenyan Language..." },
+                    ]}
+                    id="contribute-lang"
+                  />
+                </div>
+
+                {contributeType !== "reviewer" ? (
+                  <>
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        English Word or Phrase <span className="text-kenya-red">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={contributeEnglish}
+                        onChange={(e) => setContributeEnglish(e.target.value)}
+                        placeholder="e.g. Water, Hello, Peace, How are you?"
+                        className="input-field text-sm w-full"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        {contributeLanguage} Translation <span className="text-kenya-red">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={contributeTranslation}
+                        onChange={(e) => setContributeTranslation(e.target.value)}
+                        placeholder={`Word or phrase in ${contributeLanguage}...`}
+                        className="input-field text-sm w-full"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      <div>
+                        <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                          Pronunciation (Optional)
+                        </label>
+                        <input
+                          type="text"
+                          value={contributePronunciation}
+                          onChange={(e) => setContributePronunciation(e.target.value)}
+                          placeholder="e.g. eh-johk, mah-jee"
+                          className="input-field text-xs w-full"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                          County / Dialect (Optional)
+                        </label>
+                        <input
+                          type="text"
+                          value={contributeContext}
+                          onChange={(e) => setContributeContext(e.target.value)}
+                          placeholder="e.g. Turkana North dialect"
+                          className="input-field text-xs w-full"
+                        />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="bg-bg-elevated border border-border rounded-xl p-3 text-xs text-text-secondary leading-relaxed space-y-2">
+                    <p>
+                      <strong className="text-gold">Native Speaker / Reviewer Program:</strong> Are you fluent in {contributeLanguage}?
+                      Help verify translations and build authentic vocabulary, audio, and grammar lessons.
+                    </p>
+                    <div>
+                      <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                        Dialect / Region &amp; Background
+                      </label>
+                      <textarea
+                        value={contributeContext}
+                        onChange={(e) => setContributeContext(e.target.value)}
+                        rows={2}
+                        placeholder={`Tell us about your background or regional dialect in ${contributeLanguage}...`}
+                        className="input-field text-xs w-full"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 border-t border-border/60">
+                  <div>
+                    <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                      Your Name / Handle (for Credit)
+                    </label>
+                    <input
+                      type="text"
+                      value={contributorName}
+                      onChange={(e) => setContributorName(e.target.value)}
+                      placeholder="e.g. Akeno L., Kiprop, Anon"
+                      className="input-field text-xs w-full"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
+                      Email Address (Optional)
+                    </label>
+                    <input
+                      type="email"
+                      value={contributorEmail}
+                      onChange={(e) => setContributorEmail(e.target.value)}
+                      placeholder="For attribution updates"
+                      className="input-field text-xs w-full"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-end gap-2 pt-2">
+                  <button
+                    type="button"
+                    onClick={closeContributeModal}
+                    className="px-3.5 py-2 rounded-lg text-xs font-medium text-text-muted hover:text-text-primary bg-bg-elevated hover:bg-border transition-colors cursor-pointer"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <Send className="w-3.5 h-3.5" />
+                    <span>Submit Contribution</span>
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <div className="py-4 text-center space-y-4">
+                <div className="w-14 h-14 rounded-full bg-kenya-green/15 text-kenya-green-light flex items-center justify-center mx-auto">
+                  <Check className="w-7 h-7" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                    Asante Sana! Thank You!
+                  </h3>
+                  <p className="text-xs text-text-muted max-w-sm mx-auto mt-1 leading-relaxed">
+                    Your contribution for <strong className="text-gold">{contributeLanguage}</strong> has been submitted to the admin panel for review and saved on this device.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                  <button
+                    type="button"
+                    onClick={closeContributeModal}
+                    className="px-3.5 py-1.5 rounded-lg text-xs font-medium text-text-muted hover:text-text-primary bg-bg-elevated transition-colors cursor-pointer"
+                  >
+                    Done
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </ToolShell>
+  );
+}

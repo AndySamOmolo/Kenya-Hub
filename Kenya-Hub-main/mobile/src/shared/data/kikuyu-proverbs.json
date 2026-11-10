@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kikuyu": "Kamũingĩ koyaga ndĩrĩ.",
+    "translation": "A small group of people lifts the heavy wooden mortar.",
+    "explanation": "Collective effort makes even the heaviest burden light. Attested in Marion S. Stevenson (1927) 'Specimens of Kikuyu Proverbs' (Festschrift Meinhof, p. 242) and Wiktionary.",
+    "englishEquivalent": "Many hands make light work.",
+    "category": "unity"
+  },
+  {
+    "id": 2,
+    "kikuyu": "Kĩara kĩmwe gĩtiũragaga ndaa.",
+    "translation": "One finger cannot kill (crush) a louse.",
+    "explanation": "A single person acting alone cannot accomplish what requires community cooperation. Shared across Central Kenya Bantu (cf. Kamba 'Kĩaa kĩmwe kĩtiũaa ndaa', Lindblom 1920).",
+    "englishEquivalent": "No man is an island / Two heads are better than one.",
+    "category": "unity"
+  },
+  {
+    "id": 3,
+    "kikuyu": "Rũtungu rũmwe rũtiraragia mwaki.",
+    "translation": "One log alone does not keep the fire burning through the night.",
+    "explanation": "In the traditional homestead hearth (riiko), three logs or hearthstones must meet to sustain a fire; likewise, a community or family depends on mutual support.",
+    "englishEquivalent": "United we stand, divided we fall.",
+    "category": "unity"
+  },
+  {
+    "id": 4,
+    "kikuyu": "Rwambo rũmwe rũtiambaga ndarwa.",
+    "translation": "A single peg cannot stretch out an animal hide.",
+    "explanation": "Stretching and drying a cowhide requires many wooden pegs around its perimeter; a complex undertaking requires many contributors.",
+    "englishEquivalent": "It takes a village.",
+    "category": "unity"
+  },
+  {
+    "id": 5,
+    "kikuyu": "Thegere igĩrĩ itiremagwo nĩ mwatũ.",
+    "translation": "Two honey badgers are not defeated by a beehive.",
+    "explanation": "When partners work together with determination, no obstacle or high beehive is beyond their reach.",
+    "englishEquivalent": "Union is strength.",
+    "category": "unity"
+  },
+  {
+    "id": 6,
+    "kikuyu": "Ũũgĩ wa mũndũ ũmwe ndũrĩmaga.",
+    "translation": "The wisdom of one person alone does not cultivate a field.",
+    "explanation": "True wisdom is shared and tested in council (kiama, Hobley 1922 & Routledge 1910) rather than hoarded by one individual.",
+    "englishEquivalent": "In the multitude of counsellors there is safety.",
+    "category": "wisdom"
+  },
+  {
+    "id": 7,
+    "kikuyu": "Ng'aragu ndĩhoyagwo ũhoro.",
+    "translation": "One does not ask for news from a hungry person (or: Hunger is not interrogated).",
+    "explanation": "Hospitality comes before interrogation: when a guest or traveller arrives, offer food and rest first before asking them to recount their journey (Stevenson 1927 / Wiktionary).",
+    "englishEquivalent": "A hungry belly has no ears.",
+    "category": "hospitality"
+  },
+  {
+    "id": 8,
+    "kikuyu": "Wega uumaga na mũciĩ.",
+    "translation": "Goodness (generosity and good character) begins at home.",
+    "explanation": "Kindness, integrity, and care for others are first cultivated within one's own homestead (mũciĩ) before extending outward (Wiktionary).",
+    "englishEquivalent": "Charity begins at home.",
+    "category": "family"
+  },
+  {
+    "id": 9,
+    "kikuyu": "Mũceera na mũkũndũ akũndũkaga taguo.",
+    "translation": "Whoever walks with a corrupt/tainted person becomes tainted like them.",
+    "explanation": "A person's habits and reputation are shaped by the company they keep (Wiktionary).",
+    "englishEquivalent": "Birds of a feather flock together / Bad company corrupts good character.",
+    "category": "character"
+  },
+  {
+    "id": 10,
+    "kikuyu": "Kũhũra maaĩ na ndĩrĩ.",
+    "translation": "To pound water in a mortar.",
+    "explanation": "Classical Gĩkũyũ idiom for engaging in futile, unproductive labour (Wiktionary).",
+    "englishEquivalent": "To beat the air / A fool's errand.",
+    "category": "wisdom"
+  },
+  {
+    "id": 11,
+    "kikuyu": "Ta gĩkwa na mũkũngũgũ.",
+    "translation": "Like the yam vine and the mũkũngũgũ support tree.",
+    "explanation": "Describes two inseparable friends or partners whose lives and livelihoods are intertwined like a yam vine climbing its support tree (Wiktionary).",
+    "englishEquivalent": "Inseparable companions / Thick as thieves.",
+    "category": "unity"
+  },
+  {
+    "id": 12,
+    "kikuyu": "Gũtirĩ mũthenya ũkĩaga ta ũrĩa ũngĩ.",
+    "translation": "No day dawns exactly like another.",
+    "explanation": "Times and circumstances constantly change; both hardship and prosperity require adaptability and patience (Stevenson 1927).",
+    "englishEquivalent": "Every day brings its own dawn.",
+    "category": "patience"
+  },
+  {
+    "id": 13,
+    "kikuyu": "Mũndũ mũgo ndagũragĩra.",
+    "translation": "A medicine man (mũndũ mũgo) does not divine for himself.",
+    "explanation": "Even an expert or elder needs the objective counsel of others when facing personal trials (cf. Routledge 1910 & Hobley 1922 on Mundu Mugo).",
+    "englishEquivalent": "A physician cannot heal himself.",
+    "category": "humility"
+  },
+  {
+    "id": 14,
+    "kikuyu": "Mwana mũũgĩ nĩ ũrĩa ũiguaga kĩrĩra.",
+    "translation": "A wise child is the one who listens to counsel and instruction.",
+    "explanation": "Listening to elders' traditional instruction (kĩrĩra) is the foundation of wisdom (Stevenson 1927).",
+    "englishEquivalent": "A wise son hears his father's instruction.",
+    "category": "wisdom"
+  },
+  {
+    "id": 15,
+    "kikuyu": "Kũmenya werũ nĩ kũũtinda.",
+    "translation": "To know the open plain is to spend the day in it (from Hinde 1904 gu-tinda 'to spend the day').",
+    "explanation": "True mastery of a place, craft, or people comes only from direct, patient experience.",
+    "englishEquivalent": "Experience is the best teacher.",
+    "category": "patience"
+  },
+  {
+    "id": 16,
+    "kikuyu": "Mũgeni nĩ rũũĩ.",
+    "translation": "A guest is like a river.",
+    "explanation": "A visitor passes through briefly like flowing river water and should be welcomed generously while present (Stevenson 1927).",
+    "englishEquivalent": "Welcome the coming, speed the parting guest.",
+    "category": "hospitality"
+  },
+  {
+    "id": 17,
+    "kikuyu": "Guso! Ndathiĩ kwa mũrata wakwa, ndakora mũtumia wake aigĩte ciana igĩrĩ rũrĩmĩ-inĩ rũmwe. — Nĩ hĩndĩ mũtĩ ũhaaraga mahũa.",
+    "translation": "Riddle (Routledge 1910 #1): I went to my friend's house and found a woman who kept two children on one tongue. — Answer: When a tree puts forth flowers and fruit on one stem.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge in 'With a pre-colonial People: The Akikuyu of British East Africa' (1910, p. 285). Traditional riddles open with the challenge 'Guso!' ('Guess!').",
+    "englishEquivalent": "Nature's twin blossoms on a single bough.",
+    "category": "wisdom"
+  },
+  {
+    "id": 18,
+    "kikuyu": "Guso! Ndathiĩ gũceera ndakora mũndũ ũrĩ na mũtwe mũnene ũtarĩ maitho. — Nĩ kĩgũũ (fungus / mushroom).",
+    "translation": "Riddle (Routledge 1910 #2): I went for a walk and met a person with a big head and no eyes. — Answer: A mushroom / fungus (or round ant-hill).",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285) among the Akikuyu of Nyeri and Murang'a.",
+    "englishEquivalent": "A head without eyes.",
+    "category": "wisdom"
+  },
+  {
+    "id": 19,
+    "kikuyu": "Guso! Nyũmba yakwa ndĩrĩ mũromo. — Nĩ itumbi (an egg).",
+    "translation": "Riddle (Routledge 1910 #3): My house has no door. — Answer: An egg (itumbi).",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285); shared across East African oral literature.",
+    "englishEquivalent": "A seamless house without a door.",
+    "category": "family"
+  },
+  {
+    "id": 20,
+    "kikuyu": "Guso! Ndathiĩ na njĩra ndakora mũtumia ũkuĩte mwana na mũgongo na ndarĩ mĩkwa. — Nĩ mbembe mũtĩ-inĩ wayo.",
+    "translation": "Riddle (Routledge 1910 #4): I went along the road and saw a woman carrying a child on her back without straps (mĩkwa). — Answer: A maize cob growing on its stalk.",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285), comparing the maize cob (mbembe) clasping its stalk to a Kikuyu mother carrying her baby in a leather garment.",
+    "englishEquivalent": "A mother carrying her child without a strap.",
+    "category": "family"
+  },
+  {
+    "id": 21,
+    "kikuyu": "Guso! Nĩ kĩĩ kĩrĩ mũromo mũnene gĩtarĩ nda? — Nĩ irima (a pit / hole in the ground).",
+    "translation": "Riddle (Routledge 1910 #5): What has a wide mouth and no stomach (or swallows everything without filling)? — Answer: A pit or hole in the ground.",
+    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285).",
+    "englishEquivalent": "An open mouth that never fills.",
+    "category": "wisdom"
+  },
+  {
+    "id": 22,
+    "kikuyu": "Thahu wa mũciĩ ũhoragio na ng'ondu (kũhoria thahu).",
+    "translation": "Ceremonial defilement (thahu) of the homestead is cooled and purified with a sacrificial sheep (ng'ondu).",
+    "explanation": "Documented in W. S. & K. Routledge (1910, pp. 254–260) and C. W. Hobley (1910, pp. 104–115): peace and moral order in the homestead require reconciliation and restoration ('cooling').",
+    "englishEquivalent": "Prevention and reconciliation restore peace.",
+    "category": "family"
+  },
+  {
+    "id": 23,
+    "kikuyu": "Kiama kia atumia gĩtũũragia bũrũri na thayũ.",
+    "translation": "The council of elders (Kiama) sustains the land in peace.",
+    "explanation": "Documented by W. S. & K. Routledge (1910, pp. 195–220) and Rev. Fr. A. Hémery (1903, p. 88) on Agĩkũyũ deliberative justice and the sacred oath (muma / kithasi).",
+    "englishEquivalent": "Where there is wise counsel, the people flourish.",
+    "category": "unity"
+  },
+  {
+    "id": 24,
+    "kikuyu": "Mũndũ ũtarĩ mbũri ndarĩ mũciĩ (Hémery 1903).",
+    "translation": "A person who does not care for their flock does not build a lasting homestead.",
+    "explanation": "Grounded in Rev. Fr. A. Hémery's 'English-Kikuyu Handbook' (1903) and McGregor (1904) on pastoral-agricultural stewardship in Gĩkũyũ society.",
+    "englishEquivalent": "Diligence builds the home.",
+    "category": "character"
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Aanake mathiĩ, athuri maikare? — Mũhu ũitwo, mahiga ma riiko matigare.",
+    "translation": "Riddle (Do you hear)! — The young men go, the old men stay? — Answer: The ashes are poured out, the three hearth-stones remain.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a pre-colonial People: The Akikuyu of British East Africa', p. 192): Kikuyu riddles are called 'Guso' ('Do you hear?'). Just as hot ashes are swept out while the three hearthstones (mahiga ma riiko) stay fixed, young warriors travel afar while the elders (kiama) remain at the homestead.",
+    "englishEquivalent": "Youth wanders, age endures.",
+    "category": "wisdom",
+    "id": 25
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩnyingĩtie? — Marigũ.",
+    "translation": "Riddle (Do you hear)! — What hangs down? — Answer: Bananas (marigũ).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu 'Guso' riddle reflecting the heavy banana bunches hanging in every homestead plantation (mũgũnda).",
+    "englishEquivalent": "Bountiful harvest bows low.",
+    "category": "character",
+    "id": 26
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Nĩkĩ ndĩraigua inegene? — Nyoni irĩ mũgũnda.",
+    "translation": "Riddle (Do you hear)! — Why do I hear a noise? — Answer: The birds are in the plantation (shamba).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Refers to the commotion of grain-eating birds in the millet and maize fields, guarded by children on watch-platforms using the bull-roarer (kĩhuruta) and sling (kĩgũtha).",
+    "englishEquivalent": "Where there is commotion, there is a cause.",
+    "category": "caution",
+    "id": 27
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩgonderera njĩra-inĩ? — Ndorobo njĩra-inĩ.",
+    "translation": "Riddle (Do you hear)! — What takes a winding course? — Answer: A forest hunter (Ndorobo) on the path.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Describes the winding forest tracks of the Ogiek/Ndorobo hunters across Mount Kenya and the Aberdares.",
+    "englishEquivalent": "The forest path winds.",
+    "category": "patience",
+    "id": 28
+  },
+  {
+    "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩambata kĩrĩma gĩkinye kĩrĩma kĩngĩ? — Kũgũrũ.",
+    "translation": "Riddle (Do you hear)! — What goes from hill to hill? — Answer: The human foot (kũgũrũ).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): In the ridge-and-valley topography of Kikuyuland, the human foot crosses from ridge to ridge.",
+    "englishEquivalent": "Step by step crosses the mountains.",
+    "category": "work",
+    "id": 29
+  },
+  {
+    "kikuyu": "Warĩire kĩĩ ira, ka-Ndorobo? — Ũthĩ (ou-thi), na ngĩkoma. Wahuurire ta rwĩgĩ? — Ta rwĩgĩ rũtarĩ mũting'oe.",
+    "translation": "What did you eat yesterday, little Ndorobo? — Scraps of food (ou-thi), and went to sleep. Did you snatch up your food like a hawk? — Like a hawk that has lost its tail.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu boys' rapid-fire antiphonal wordplay game.",
+    "englishEquivalent": "Quick wit parries every question.",
+    "category": "wisdom",
+    "id": 30
+  }
+]

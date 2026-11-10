@@ -1,0 +1,50 @@
+{
+  "lastUpdated": "2026-10-01",
+  "source": "KRA Customs & Border Control Valuation Schedule (CRSP) & Finance Act",
+  "sourceUrl": "https://www.kra.go.ke/individual/import-export/Importation-of-Motor-Vehicles",
+  "rates": {
+    "importDuty": 0.35,
+    "vat": 0.16,
+    "idf": 0.025,
+    "rdl": 0.02,
+    "exciseSmallPetrol": 0.20,
+    "exciseLargePetrol": 0.30,
+    "exciseSmallDiesel": 0.25,
+    "exciseLargeDiesel": 0.35,
+    "exciseElectric": 0.10,
+    "kebsInspectionKes": 26500,
+    "portClearingKes": 45000
+  },
+  "depreciationBands": [
+    { "minYears": 0, "maxYears": 1, "rate": 0.10, "label": "Direct / Under 1 Year (10%)" },
+    { "minYears": 1, "maxYears": 2, "rate": 0.20, "label": "1–2 Years Old (20%)" },
+    { "minYears": 2, "maxYears": 3, "rate": 0.30, "label": "2–3 Years Old (30%)" },
+    { "minYears": 3, "maxYears": 4, "rate": 0.40, "label": "3–4 Years Old (40%)" },
+    { "minYears": 4, "maxYears": 5, "rate": 0.50, "label": "4–5 Years Old (50%)" },
+    { "minYears": 5, "maxYears": 6, "rate": 0.55, "label": "5–6 Years Old (55%)" },
+    { "minYears": 6, "maxYears": 7, "rate": 0.60, "label": "6–7 Years Old (60%)" },
+    { "minYears": 7, "maxYears": 8, "rate": 0.65, "label": "7–8 Years Old — Max KEBS Age (65%)" }
+  ],
+  "ntsaRegistration": [
+    { "maxCc": 1000, "fee": 10350 },
+    { "maxCc": 1500, "fee": 12550 },
+    { "maxCc": 2000, "fee": 15400 },
+    { "maxCc": 2500, "fee": 18950 },
+    { "maxCc": 3000, "fee": 23650 },
+    { "maxCc": 99999, "fee": 32150 }
+  ],
+  "popularModels": [
+    { "id": "vitz-1300", "make": "Toyota", "model": "Vitz / Yaris 1.3L (NSP130)", "cc": 1329, "fuel": "petrol", "crspKes": 2050000, "avgCifUsd": 4600 },
+    { "id": "demio-1300", "make": "Mazda", "model": "Demio / Mazda2 1.3L SkyActiv", "cc": 1298, "fuel": "petrol", "crspKes": 2120000, "avgCifUsd": 4700 },
+    { "id": "note-1200", "make": "Nissan", "model": "Note e-POWER / DIG-S 1.2L", "cc": 1198, "fuel": "petrol", "crspKes": 2280000, "avgCifUsd": 4900 },
+    { "id": "fit-1500", "make": "Honda", "model": "Fit Hybrid 1.5L (GP5)", "cc": 1496, "fuel": "petrol", "crspKes": 2450000, "avgCifUsd": 5400 },
+    { "id": "fielder-1500", "make": "Toyota", "model": "Corolla Fielder / Axio 1.5L", "cc": 1496, "fuel": "petrol", "crspKes": 2950000, "avgCifUsd": 6800 },
+    { "id": "probox-1500", "make": "Toyota", "model": "Probox / Succeed 1.5L", "cc": 1496, "fuel": "petrol", "crspKes": 2580000, "avgCifUsd": 5600 },
+    { "id": "impreza-1600", "make": "Subaru", "model": "Impreza Sport 1.6i-L EyeSight", "cc": 1599, "fuel": "petrol", "crspKes": 3450000, "avgCifUsd": 7200 },
+    { "id": "forester-2000", "make": "Subaru", "model": "Forester 2.0i-L / XT (SJ5)", "cc": 1995, "fuel": "petrol", "crspKes": 5150000, "avgCifUsd": 10800 },
+    { "id": "cx5-2200d", "make": "Mazda", "model": "CX-5 2.2L SkyActiv-D (KF2P)", "cc": 2188, "fuel": "diesel", "crspKes": 5680000, "avgCifUsd": 11900 },
+    { "id": "harrier-2000", "make": "Toyota", "model": "Harrier 2.0L Elegance (ZSU60W)", "cc": 1986, "fuel": "petrol", "crspKes": 6450000, "avgCifUsd": 14500 },
+    { "id": "hilux-2800d", "make": "Toyota", "model": "Hilux Double Cab 2.8L GD-6", "cc": 2755, "fuel": "diesel", "crspKes": 8400000, "avgCifUsd": 21000 },
+    { "id": "prado-2800d", "make": "Toyota", "model": "Land Cruiser Prado TX-L 2.8L Diesel", "cc": 2755, "fuel": "diesel", "crspKes": 11850000, "avgCifUsd": 29500 }
+  ]
+}

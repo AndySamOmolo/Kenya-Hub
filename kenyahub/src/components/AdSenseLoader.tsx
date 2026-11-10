@@ -31,7 +31,6 @@ const BLOCKED_PATH_PREFIXES = [
   "/contact",
   "/404",
   "/_not-found",
-  "/tools/kenya-customs-restricted-items",
 ];
 
 function isBlockedRoute(pathname: string | null): boolean {

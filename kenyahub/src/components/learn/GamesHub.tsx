@@ -18,7 +18,6 @@ import {
   Star,
   Timer,
   Trophy,
-  Volume2,
   Zap,
   Gamepad2,
   Type,
@@ -52,10 +51,6 @@ function pickRandom<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function playRecordedAudio(word: WordPair): void {
-  if (!word.audio) return;
-  void new Audio(word.audio).play().catch(() => undefined);
-}
 
 /** Gather all words from all units/skills */
 function getAllWords(units: CourseUnit[]): WordPair[] {
@@ -525,14 +520,6 @@ function WordleGame({ allWords, languageName }: GameProps) {
             </p>
           )}
           <div className="mt-3 flex justify-center gap-2">
-            {targetWord.audio && (
-              <button
-                onClick={() => playRecordedAudio(targetWord)}
-                className="flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
-              >
-                <Volume2 className="h-3.5 w-3.5" /> Listen
-              </button>
-            )}
             <button
               onClick={newGame}
               className="flex items-center gap-1.5 rounded-lg bg-gold px-4 py-2 text-xs font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
@@ -781,14 +768,6 @@ function ScrambleGame({ allWords, languageName }: GameProps) {
         )}
         {solved && (
           <div className="flex w-full gap-2">
-            {targetWord.audio && (
-              <button
-                onClick={() => playRecordedAudio(targetWord)}
-                className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-2.5 text-xs font-semibold text-text-muted transition-all active:bg-bg-card sm:hover:text-gold"
-              >
-                <Volume2 className="h-3.5 w-3.5" /> Listen
-              </button>
-            )}
             <button
               onClick={handleNext}
               className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
@@ -998,14 +977,6 @@ function SpeedMatchGame({ allWords, languageName }: GameProps) {
           <p className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary sm:text-3xl">
             {currentWord.target}
           </p>
-          {currentWord.audio && (
-            <button
-              onClick={() => playRecordedAudio(currentWord)}
-              className="mt-2 mx-auto flex items-center gap-1 text-[0.65rem] text-text-muted active:text-gold"
-            >
-              <Volume2 className="h-3 w-3" /> Listen
-            </button>
-          )}
         </div>
       )}
 
