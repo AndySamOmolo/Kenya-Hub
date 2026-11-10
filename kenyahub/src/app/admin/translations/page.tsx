@@ -321,7 +321,7 @@ export default function AdminTranslationsPage() {
         <p className="text-sm text-text-secondary mb-6">
           Please sign in to your administrator account to review and approve community language contributions.
         </p>
-        <Link href="/admin/login" className="btn-primary inline-flex">
+        <Link href="/admin/login/" className="btn-primary inline-flex">
           Sign In
         </Link>
       </div>
@@ -348,7 +348,7 @@ export default function AdminTranslationsPage() {
       <header className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-border pb-6">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <Link href="/admin" className="text-xs text-gold hover:underline flex items-center gap-1 font-medium">
+            <Link href="/admin/" className="text-xs text-gold hover:underline flex items-center gap-1 font-medium">
               <ArrowLeft className="w-3 h-3" />
               <span>Admin Dashboard</span>
             </Link>
@@ -382,7 +382,7 @@ export default function AdminTranslationsPage() {
             <span>Reset Demo</span>
           </button>
           <Link
-            href="/tools/kenyan-translator"
+            href="/tools/kenyan-translator/"
             target="_blank"
             className="px-3 py-1.5 rounded-lg text-xs font-medium bg-gold text-kenya-black hover:bg-gold-light flex items-center gap-1.5 font-semibold transition-colors"
           >

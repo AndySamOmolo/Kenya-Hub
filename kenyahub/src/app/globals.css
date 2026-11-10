@@ -1137,9 +1137,7 @@ body {
   max-width: 100vw;
 }
 
-/* Hide any auto-injected AdSense containers when a screen is marked as paused */
-html[data-adsense-state="paused"] ins.adsbygoogle,
-html[data-adsense-state="paused"] .google-auto-placed {
-  display: none !important;
-}
+/* Ensure AdSense containers maintain clean layout spacing without CSS hiding violations */
+ins.adsbygoogle {
+  max-width: 100%;
 }

@@ -38,6 +38,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://kenyahub.me/county/",
+    languages: {
+      "en-KE": "https://kenyahub.me/county/",
+      en: "https://kenyahub.me/county/",
+      "x-default": "https://kenyahub.me/county/",
+    },
   },
 };
 

@@ -77,7 +77,7 @@ export default function AdminSettingsPage() {
     return (
       <div className="max-w-md mx-auto px-4 py-8 text-center">
         <p className="text-text-secondary mb-4">Please sign in to access settings.</p>
-        <Link href="/admin/login" className="btn-primary">
+        <Link href="/admin/login/" className="btn-primary">
           Sign In
         </Link>
       </div>
@@ -91,7 +91,7 @@ export default function AdminSettingsPage() {
           <h1 className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
             <DynamicIcon emoji="⚙️" className="w-6 h-6 text-gold" /> Settings
           </h1>
-          <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light">
+          <Link href="/admin/posts/" className="text-sm text-gold hover:text-gold-light">
             ← Back to Posts
           </Link>
         </div>

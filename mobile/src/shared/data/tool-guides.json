@@ -161,6 +161,18 @@
         {
           "question": "Why is a reducing-balance SACCO loan cheaper than a flat-rate loan?",
           "answer": "At 1% per month on a reducing balance (12% p.a.), interest is charged only on the remaining principal each month—equivalent to roughly 6.5% flat rate per year."
+        },
+        {
+          "question": "How is the 12% p.a. (1% per month) SACCO reducing-balance loan interest calculated?",
+          "answer": "Unlike flat-rate loans where interest is charged on the original principal throughout the loan term, SASRA-regulated BOSA loans charge 1% per month strictly on the remaining unpaid principal balance each month, making total interest roughly half that of a 12% flat-rate loan."
+        },
+        {
+          "question": "What is the difference between BOSA Dividends on Share Capital and Interest Rebates on Deposits?",
+          "answer": "Share Capital is permanent equity that earns an annual Dividend rate (typically 12%–20% in Tier-1 SACCOs) and cannot be withdrawn when leaving the SACCO (only transferred to another member), whereas BOSA Non-Withdrawable Deposits back your 3x/4x loan multiplier, earn an annual Interest Rebate (typically 9%–13%), and are refundable after a 60-day written notice if you have no outstanding loans or guarantor commitments."
+        },
+        {
+          "question": "Are SACCO dividends and interest rebates subject to KRA Withholding Tax?",
+          "answer": "Yes. Under the Income Tax Act (Cap 470), SACCO dividends on share capital and interest rebates on member deposits for resident individuals are subject to a 5% statutory Withholding Tax deducted at source before payout to your FOSA account."
         }
       ]
     },
@@ -588,6 +600,18 @@
         {
           "question": "Are all KRA port taxes stacked on top of each other?",
           "answer": "Yes. Excise Duty applies on (Customs Value + Import Duty), and 16% VAT applies on (Customs Value + Import Duty + Excise Duty), plus IDF (2.5%) and RDL (2.0%)."
+        },
+        {
+          "question": "How does the KEBS 8-year age limit rule work when importing a car to Kenya in 2026?",
+          "answer": "Under KS 1515:2000 enforced by the Kenya Bureau of Standards (KEBS) and NTSA, a used motor vehicle imported into Kenya must be Less than 8 years old from its year of first registration. In 2026, only vehicles first registered in 2019 or later (with a pre-export Roadworthiness Inspection Certificate from QISJ) are allowed entry at the Port of Mombasa."
+        },
+        {
+          "question": "Why does KRA use the CRSP schedule instead of my Japanese auction invoice price?",
+          "answer": "Under the East African Community Customs Management Act (EACCMA), KRA values used motor vehicles using the standardized Current Retail Selling Price (CRSP) database—representing the new showroom price of that exact make, model, and engine capacity—and applies a fixed statutory age depreciation schedule (up to 65% for vehicles 7–8 years old) to prevent invoice under-valuation."
+        },
+        {
+          "question": "In what order are KRA car import taxes cascaded at Mombasa Port?",
+          "answer": "First, KRA deducts age depreciation and 25.5% showroom markup from the CRSP to get the Customs Value (CV). Second, Import Duty (35%) is charged on CV. Third, Excise Duty (20%–35%) is charged on (CV + Import Duty). Fourth, VAT (16%) is charged on (CV + Import Duty + Excise Duty). Finally, Import Declaration Fee (IDF at 2.5% of CV) and Railway Development Levy (RDL at 2% of CV) are added."
         }
       ]
     },
@@ -1107,6 +1131,18 @@
         {
           "question": "Are residential houses exempt from the NCA construction levy?",
           "answer": "Projects receive county architectural/structural plan approvals and NCA registration; always use an NCA-registered contractor and licensed structural engineer."
+        },
+        {
+          "question": "How many machine-cut stones (9×9×18 inches) are needed per square metre of wall in Kenya?",
+          "answer": "Standard Kenyan 200mm (9-inch) machine-cut quarry stones from Ndarugo, Juja, or Naivasha measure 225mm × 225mm × 450mm. Accounting for a 15mm mortar bed and 5% cutting/breakage wastage, 1 square metre of wall requires approximately 11 stones."
+        },
+        {
+          "question": "What approvals are required before starting residential house construction (Mjengo) in Kenya?",
+          "answer": "For formal residential construction in Kenya, you require County Government architectural and structural plan approvals (signed by a BORAQS-registered architect and EBK structural engineer), a NEMA Environmental Impact Assessment (EIA) license for multi-unit or commercial projects, and project registration with the National Construction Authority (NCA)."
+        },
+        {
+          "question": "Why do construction costs per square metre vary across Nairobi, Mombasa, and Western Kenya?",
+          "answer": "According to the BORAQS Construction Cost Handbook and KNBS Construction Input Price Index, regional cost variations are driven by haulage distance from stone quarries and cement plants, coastal foundation and anti-corrosion requirements in Mombasa, and black-cotton soil excavation depths in parts of Nairobi, Kajiado, and Machakos."
         }
       ]
     },

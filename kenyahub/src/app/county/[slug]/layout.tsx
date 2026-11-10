@@ -63,6 +63,11 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: `https://kenyahub.me/county/${county.slug}/`,
+      languages: {
+        "en-KE": `https://kenyahub.me/county/${county.slug}/`,
+        en: `https://kenyahub.me/county/${county.slug}/`,
+        "x-default": `https://kenyahub.me/county/${county.slug}/`,
+      },
     },
   };
 }

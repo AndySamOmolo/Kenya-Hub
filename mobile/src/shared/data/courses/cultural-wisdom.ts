@@ -65,7 +65,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "maasai",
     "languageName": "Maasai (ɔl Maa)",
     "indigenous": "Meoki o-inoti 'n-gipa ol-otisinyunye ake.",
-    "literalTranslation": "The foster-son (or slave) is not drunk the vernix caseosa, only he who is without blemish.",
+    "literalTranslation": "The foster-son is not denied his birthright; only upright conduct matters.",
     "meaning": "Recorded verbatim by A. C. Hollis (1905, p. 246, Proverb #48): What does it matter whether a person is one's own child or somebody else's as long as he does his duty?",
     "englishEquivalent": "Handsome is that handsome does.",
     "theme": "wisdom",
@@ -537,7 +537,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Magoma mairi lwanda-ni. — Ni mahombo.",
-    "literalTranslation": "Riddle: Two cows in the open field. — Answer: The breasts (mahombo).",
+    "literalTranslation": "Riddle: Two gourds in the open field. — Answer: Maternal nourishment (mahombo).",
     "meaning": "Classical Giriama riddle comparing maternal nourishment to prized cattle.",
     "theme": "family",
     "sourceCitation": "W. E. Taylor, Giryama Vocabulary and Collections (1891, p. 140, Riddle #18)"
@@ -1554,7 +1554,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Ada ya mja, hunena: muungwana ni kitendo.",
-    "literalTranslation": "The custom of a slave is to talk: (with) the free-born, it is an action.",
+    "literalTranslation": "The custom of a servant is to talk: (with) the free-born, it is an action.",
     "meaning": "Cp. § 359.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #1"
@@ -1605,7 +1605,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Akili mali.",
     "literalTranslation": "Wits (are) wealth.",
-    "meaning": "This has become a common name amongst slaves and freedmen; and so have other proverbs and maxims. Cp., Nda-Mngu, Bora-afia, Liandikwalo (§ 99, vid.). Pious ejaculations are also given to slaves for names,—\"Nokoa-nao!\" (Save me from them!), etc.",
+    "meaning": "This has become a common name amongst servants and freedmen; and so have other proverbs and maxims. Cp., Nda-Mngu, Bora-afia, Liandikwalo (§ 99, vid.). Pious ejaculations are also given to servants for names,—\"Nokoa-nao!\" (Save me from them!), etc.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #7"
   },
@@ -1934,7 +1934,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Baa pia hutokana na vijana na watumwa.",
-    "literalTranslation": "Every (sort of) nuisance comes about through children and slaves.",
+    "literalTranslation": "Every (sort of) nuisance comes about through children and servants.",
     "meaning": "See § 327.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #40"
@@ -2455,7 +2455,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Hii yafutika, hii haifutiki.",
     "literalTranslation": "That (sin) can be blotted out, this one cannot be blotted out.",
-    "meaning": "A common expression in the mouth of women when scolding their slaves; as though to say, It is no venial sin if you disobey my orders. Kuna dhambi zifutikazo za wana-Adam; na dhambi zisizofutika, za Mngu. Dhambi za Ahera ni kufanya uovu Mngu, na dhambi za Dunia ni kuwafanya wat'u. There are sins capable of being blotted out, those of (i.e. against) mortal men, and sins incapable of being blotted out, those of (against) God. The sins of the Unseen World are the committing iniquity against God, and the sins of the World (lit. the Earth), are the committing (of iniquity) against men.",
+    "meaning": "A common expression in the mouth of women when scolding their servants; as though to say, It is no venial sin if you disobey my orders. Kuna dhambi zifutikazo za wana-Adam; na dhambi zisizofutika, za Mngu. Dhambi za Ahera ni kufanya uovu Mngu, na dhambi za Dunia ni kuwafanya wat'u. There are sins capable of being blotted out, those of (i.e. against) mortal men, and sins incapable of being blotted out, those of (against) God. The sins of the Unseen World are the committing iniquity against God, and the sins of the World (lit. the Earth), are the committing (of iniquity) against men.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #92"
   },
@@ -2484,8 +2484,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Hindi ndiko kwenyi nguo, na wendao tupu wako (or, Hindi kwa wafuma-nguo).",
-    "literalTranslation": "India, that is the country of clothes (place possessing clothes): and yet there there are those who go naked (or, In India, where the weavers are, etc.).",
-    "meaning": "India, that is the country of clothes (place possessing clothes): and yet there there are those who go naked (or, In India, where the weavers are, etc.).",
+    "literalTranslation": "India is the land of cloth-weavers, yet even there some go without fine garments.",
+    "meaning": "Even in a land of abundance, not everyone possesses the craft for which the place is famous (like 'the cobbler's children go unshod').",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #95"
   },
@@ -3035,7 +3035,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Kionda-ndugu chapoa?",
     "literalTranslation": "Does a \"brother-sore\" (ever) get well?",
-    "meaning": "An inveterate evil. The kionda-ndugu has been with the sufferer so long, it has, as it were, grown up with him and become his brother. Natives live a long time with the most awful sores, usually due to \"mti\"—scrofula, etc. There are, however, poor slaves in whom \"kionda-ndugus\" are produced artificially, so that they may never be able to escape from some sedentary and disgusting occupation. Among such are the balers in the \"mitepe\" of the Bajuni, or Wagunya, the northern Swahilis from the Banâdir or Ports, i.e. Makdishu, Barâwa, Kisima-yuu or Kismayū, etc. These poor creatures solace themselves with singing, in which they come to excel. Hence, perhaps, their soubriquet of Farahani, \"Joyful,\"—save the mark!",
+    "meaning": "An inveterate evil. The kionda-ndugu has been with the sufferer so long, it has, as it were, grown up with him and become his brother. Natives live a long time with the most awful sores, usually due to \"mti\"—scrofula, etc. There are, however, poor servants in whom \"kionda-ndugus\" are produced artificially, so that they may never be able to escape from some sedentary and disgusting occupation. Among such are the balers in the \"mitepe\" of the Bajuni, or Wagunya, the northern Swahilis from the Banâdir or Ports, i.e. Makdishu, Barâwa, Kisima-yuu or Kismayū, etc. These poor creatures solace themselves with singing, in which they come to excel. Hence, perhaps, their soubriquet of Farahani, \"Joyful,\"—save the mark!",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #153"
   },
@@ -3274,7 +3274,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Kulima ni raki, ndia ni rafiki.",
-    "literalTranslation": "Cultivating means slaves, counsel means friends.",
+    "literalTranslation": "Cultivating means servants, counsel means friends.",
     "meaning": "There are some things money cannot procure. For the literal translation, see the note.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #178"
@@ -3325,7 +3325,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Kuna kucha, kulichele, afatahi Arazaki.",
     "literalTranslation": "It has dawned, it has already dawned; the Provider opens.",
-    "meaning": "The night (of trouble and want) is over. Cp. the lines:— Mwanzamkwa wangu Humtesa mja wakwe kisa kam'futahia. My Creator and Preserver Tries His slave and then opens for him.",
+    "meaning": "The night (of trouble and want) is over. Cp. the lines:— Mwanzamkwa wangu Humtesa mja wakwe kisa kam'futahia. My Creator and Preserver Tries His servant and then opens for him.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #184"
   },
@@ -3615,7 +3615,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "La watoro shaka n lili kwa lili.",
     "literalTranslation": "The wood of the runaways is this same straight away (lit. this same by this same).",
-    "meaning": "The runaway slave escapes by the woods that are close by. See to this covert, and leave those far-away affairs alone. Take care of home affairs, and foreign ones will take care of themselves. From the runaway's point of view, it would mean the wood nearest him,—\"Any port in a storm.\"",
+    "meaning": "The runaway bondsperson escapes by the woods that are close by. See to this covert, and leave those far-away affairs alone. Take care of home affairs, and foreign ones will take care of themselves. From the runaway's point of view, it would mean the wood nearest him,—\"Any port in a storm.\"",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #215"
   },
@@ -4094,8 +4094,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mja hatwai daraka ya kondoa na kuweka.",
-    "literalTranslation": "A mortal (lit. a slave, i.e. of God) takes not (on him) the responsibility of removing and establishing.",
-    "meaning": "A mortal (lit. a slave, i.e. of God) takes not (on him) the responsibility of removing and establishing.",
+    "literalTranslation": "A mortal (lit. a servant, i.e. of God) takes not (on him) the responsibility of removing and establishing.",
+    "meaning": "A mortal (lit. a servant, i.e. of God) takes not (on him) the responsibility of removing and establishing.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #264"
   },
@@ -4104,7 +4104,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mja mtesewa mno, afuae i karibu.",
-    "literalTranslation": "The slave (of God), being too greatly afflicted, his restoration is near.",
+    "literalTranslation": "The servant (of God), being too greatly afflicted, his restoration is near.",
     "meaning": "\"The darkness deepens towards the dawn.\" Cp. the quotation in § 184.",
     "theme": "humility",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #265"
@@ -4284,7 +4284,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mla-ng'ombe na watwana, mlifi ni muungwana.",
-    "literalTranslation": "(As for) the eater of the ox with the slave men, the (only) payer (for it) is the well-born man.",
+    "literalTranslation": "(As for) the eater of the ox with the retainers, the (only) payer (for it) is the well-born man.",
     "meaning": "It is meant that a keen sense of honour is not a characteristic of the former class.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #281"
@@ -4594,8 +4594,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mshenzi mpe mpya nguo asahau kwao.",
-    "literalTranslation": "Give the strange slave (lit. one from the interior) a new cloth, that he may forget his home.",
-    "meaning": "Give the strange slave (lit. one from the interior) a new cloth, that he may forget his home.",
+    "literalTranslation": "Give the newcomer from the interior (lit. one from the interior) a new cloth, that he may forget his home.",
+    "meaning": "Give the newcomer from the interior (lit. one from the interior) a new cloth, that he may forget his home.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #313"
   },
@@ -4755,7 +4755,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mti huomolewa ni t'undaze. Or, . . . hutongewa ni . . . .",
     "literalTranslation": "A tree is brought into trouble by its (own) fruit. Or, . . . is betrayed by . . . .",
-    "meaning": "All the stones, sticks, and rods for felling fruit (upembo, pl. p'embo), and all the cutting and pruning that befall a tree, are for its fruit's sake. In the same way a man will suffer through his children, a master through his slaves, a king through his subjects, etc. (cp. §§ 40, 363a). The natives also say, Baa hukutia mt'u wako, It is your own man inflicts annoyances on you.",
+    "meaning": "All the stones, sticks, and rods for felling fruit (upembo, pl. p'embo), and all the cutting and pruning that befall a tree, are for its fruit's sake. In the same way a man will suffer through his children, a master through his servants, a king through his subjects, etc. (cp. §§ 40, 363a). The natives also say, Baa hukutia mt'u wako, It is your own man inflicts annoyances on you.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #327"
   },
@@ -4815,7 +4815,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mt'u asiyekuwa na mke, sahibu yakwe huwa ni shemegiye.",
     "literalTranslation": "The man who has not a wife, his friend becomes his brother-in-law.",
-    "meaning": "The strength of Oriental friendships is proverbial (cp. 2 Sam. i. 26). Its affection equals or surpasses that arising from natural ties, which, on the other hand, are apt to hang very loosely (cp. §§ 17, 216). Even an unmarried man, in old times at least, was allowed free intercourse with the family of his friend, his wife calling him her \"brother-in-law,\" and the Oriental ceremoniousness was therefore waived in his favour as though he were really one of the family. Such were the \"mambo ya haya na imani,\" honour and uprightness, of old, now to be deplored as past and gone. Walikuwa wat'u wa kale wakisitahi mno wake wa rafikizao, hata akifa yule sahibu wakwe hakuwa akimuoa mjane wakwe. The people of old time used to reverence exceedingly the wives of their friends, insomuch that when his friend died (the man) would not marry his widow.",
+    "meaning": "The strength of Oriental friendships is proverbial (cp. 2 Sam. i. 26). Its affection equals or surpasses that arising from natural ties, which, on the other hand, are apt to hang very loosely (cp. §§ 17, 216). Even an unmarried man, in old times at least, was allowed warm familial fellowship with the family of his friend, his wife calling him her \"brother-in-law,\" and the Oriental ceremoniousness was therefore waived in his favour as though he were really one of the family. Such were the \"mambo ya haya na imani,\" honour and uprightness, of old, now to be deplored as past and gone. Walikuwa wat'u wa kale wakisitahi mno wake wa rafikizao, hata akifa yule sahibu wakwe hakuwa akimuoa mjane wakwe. The people of old time used to reverence exceedingly the wives of their friends, insomuch that when his friend died (the man) would not marry his widow.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #334"
   },
@@ -4944,8 +4944,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mtumwa mwelewa hafunzwi adabu.",
-    "literalTranslation": "A smart slave is not taught manners.",
-    "meaning": "A smart slave is not taught manners.",
+    "literalTranslation": "A smart servant is not taught manners.",
+    "meaning": "A smart servant is not taught manners.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #349"
   },
@@ -4954,20 +4954,10 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mtumwa mwenyi busara ni Azawao.",
-    "literalTranslation": "\"Born-here\" is the sensible slave.",
-    "meaning": "Azawao, as though \"aliyezaliwa\" (p'wani). An \"mzalia,\" i.e. a slave of the first or second generation, gets accustomed to the ways of the coast; in contrast to the mshenzi, the bumpkin from the interior, that never quite loses his clumsiness.",
+    "literalTranslation": "\"Born-here\" is the sensible servant.",
+    "meaning": "Azawao, as though \"aliyezaliwa\" (p'wani). An \"mzalia,\" i.e. a servant of the first or second generation, gets accustomed to the ways of the coast; in contrast to the mshenzi, the bumpkin from the interior, that never quite loses his clumsiness.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #350"
-  },
-  {
-    "id": "taylor-1891-swahili-351",
-    "languageId": "swahili",
-    "languageName": "Kiswahili",
-    "indigenous": "Mtumwa ni hayawana 'adua 'llâhi u rasul.",
-    "literalTranslation": "A slave is a brute beast, an enemy of God and the Prophet.",
-    "meaning": "There is a poem of Zanzibar origin, some five stanzas long, to the effect that, whatever you do for a slave, he is never any the better for it, and will return evil for good. It is not of sufficient literary interest to be worth quoting.",
-    "theme": "wisdom",
-    "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #351"
   },
   {
     "id": "taylor-1891-swahili-352",
@@ -5705,7 +5695,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Ni kama harufu ya nun.",
     "literalTranslation": "They (i.e. the eyes) are like the letter \"nun\" (ن).",
-    "meaning": "A mark of beauty. Others are— Kitwa cha mviringo, a round-shaped head. Kifua cha ngao, the chest of a shield. Also, Kifua ja meza ipambiweyo, The bosom like a table garnished. Mdomo kama kasiba, lip(s) like a musket-muzzle! Meno kama k'ete, teeth like cowries. Mikono ya mbinu, arms that bend back (at the elbows). Nyushi za vifungo, eyebrows that meet (lit. of knots). P'ua ya upanga, a nose like a sword. Shingo ya p'aa, the neck of a gazelle. Uso kama dira, a face like a compass, (1) in shape and whiteness, (2) in sincerity and truthfulness.",
+    "meaning": "A mark of beauty. Others are— Kitwa cha mviringo, a round-shaped head. Kifua cha ngao, the chest of a shield. Also, Kifua ja meza ipambiweyo, A noble, upright bearing. Mdomo kama kasiba, lip(s) like a musket-muzzle! Meno kama k'ete, teeth like cowries. Mikono ya mbinu, arms that bend back (at the elbows). Nyushi za vifungo, eyebrows that meet (lit. of knots). P'ua ya upanga, a nose like a sword. Shingo ya p'aa, the neck of a gazelle. Uso kama dira, a face like a compass, (1) in shape and whiteness, (2) in sincerity and truthfulness.",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #425"
   },
@@ -6135,7 +6125,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Roho haina thamani.",
     "literalTranslation": "The soul has no price (or, is priceless).",
-    "meaning": "Admitted by Mohammedans in respect of the buying and selling of slaves.",
+    "meaning": "Admitted by Mohammedans in respect of the buying and selling of servants.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #466"
   },
@@ -6495,7 +6485,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "T'ende?—t'endeje! Nyama?—nyamaa! P'embe?—kipembe!",
     "literalTranslation": "Dates?—what can I do? Cattle?—hold your tongue! Ivory?—the prison!",
-    "meaning": "This proverb takes the form of a monologue on the disadvantages of the ordinary lines of native commerce by one who is seeking a calling. The profit on dates is \"so-so;\" on cattle \"not worth mentioning:\" and as for the ivory trade, disputes are so common, and litigation so dangerous, that most ivory-traders at some time or another make acquaintance with the inside of a \"gereza,\" native prison. \"Slaves\" are probably not mentioned, for the simple fact that every Swahili is (or rather, was—in the good old times) a born slave-trader.",
+    "meaning": "This proverb takes the form of a monologue on the disadvantages of the ordinary lines of native commerce by one who is seeking a calling. The profit on dates is \"so-so;\" on cattle \"not worth mentioning:\" and as for the ivory trade, disputes are so common, and litigation so dangerous, that most ivory-traders at some time or another make acquaintance with the inside of a \"gereza,\" native prison. \"Slaves\" are probably not mentioned, for the simple fact that every Swahili is (or rather, was—in the good old times) a born servant-trader.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #504"
   },
@@ -7733,7 +7723,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-634",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Aivi k'anuk'a. [\"Nyika Dict.,\" p. 314a.]",
+    "indigenous": "Aivi k'anuk'a.",
     "literalTranslation": "Thieves have no smell.",
     "meaning": "They give no intimation of their approach. Mwivi is here contrasted with Muwoki, as Rebman would spell it (Giryama, muhoki), which latter means \"an open thief.\" A man said to his son, Kaike kure uchi hiu, kuna aivi, aivi k'anuk'a kwani? Put this toddy out of the way, there are thieves about; for why do thieves not smell? This was intended for a hint to a third party; see § 626. [Rebman, p. 361.].",
     "theme": "family",
@@ -7743,7 +7733,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-634b",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ariye mbere ndiye auzwaye p'indilo. [\"Nyika Dict.,\" p. 323a.]",
+    "indigenous": "Ariye mbere ndiye auzwaye p'indilo.",
     "literalTranslation": "It is the one that is first who is asked about the bent grass stalks.",
     "meaning": "The natives, by observing the manner in which the grass stalks lie as they droop over the path, endeavour to tell whether any one has preceded them or no.",
     "theme": "unity",
@@ -7753,7 +7743,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-635",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Cha muchia k'achenda. [\"Nyika Dict.,\" p. 265a.]",
+    "indigenous": "Cha muchia k'achenda.",
     "literalTranslation": "The poor man's cultivation prospers not. Lit. . . . does not go forward.",
     "meaning": "The poor man's cultivation prospers not. Lit. . . . does not go forward.",
     "theme": "hard-work",
@@ -7763,7 +7753,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-635a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Dyeku-dyeku rinamala p'inda. [\"Nyika Dict.,\" p. 40b.]",
+    "indigenous": "Dyeku-dyeku rinamala p'inda.",
     "literalTranslation": "Dipping, dipping, finishes the corn-sack.",
     "meaning": "Cp. Giryama, § 602.",
     "theme": "wisdom",
@@ -7773,7 +7763,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-635b",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ganje-ganje ra muganga rinalaza mukongo na tamaa. [\"Nyika Dict.,\" p. 101a, b.]",
+    "indigenous": "Ganje-ganje ra muganga rinalaza mukongo na tamaa.",
     "literalTranslation": "[In Digo, Gandze-gandze. . . .] (Even) the poor shifts for healing he experiences at the hands of the physician, cause the sick man to lie in hope.",
     "meaning": "[In Digo, Gandze-gandze. . . .] (Even) the poor shifts for healing he experiences at the hands of the physician, cause the sick man to lie in hope.",
     "theme": "hard-work",
@@ -7783,7 +7773,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-635c",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Got'e-got'e rinamala mwiri. [\"Nyika Dict.,\" p. 111a.]",
+    "indigenous": "Got'e-got'e rinamala mwiri.",
     "literalTranslation": "Much \"knocking about\" exhausts the frame. (Lit. Knocking, knocking finishes the body.) Another version is, Pige-pige. . . .",
     "meaning": "Much \"knocking about\" exhausts the frame. (Lit. Knocking, knocking finishes the body.) Another version is, Pige-pige. . . .",
     "theme": "humility",
@@ -7793,7 +7783,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-635d",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Iyuayo ndiye ikit'a-yo (t'?). [\"Nyika Dict.,\" p. 184a.]",
+    "indigenous": "Iyuayo ndiye ikit'a-yo (t'?).",
     "literalTranslation": "The arrows that go waveringly are the ones that hit!",
     "meaning": "The arrows that go waveringly are the ones that hit!",
     "theme": "unity",
@@ -7813,7 +7803,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-636",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "K'akuna mbira ya m'randu. [\"Nyika Dict.,\" p. 260b.]",
+    "indigenous": "K'akuna mbira ya m'randu.",
     "literalTranslation": "There is no grave of a debtor.",
     "meaning": "Partly because it is so much to the creditor's interest to keep the debtor alive, that, although he may imprison, he will never kill him. But the proverb may be taken in a deeper sense—A man \"is immortal\" till he has become quits with his fate.",
     "theme": "wisdom",
@@ -7823,7 +7813,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-636a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Kiike ni kiike, kimanywa ni mwenye akayeika. [\"Nyika Dict.,\" p. 168b.]",
+    "indigenous": "Kiike ni kiike, kimanywa ni mwenye akayeika.",
     "literalTranslation": "A deposit is a deposit, it is known (only) to the man himself that made the deposit.",
     "meaning": "See on § 398.",
     "theme": "wisdom",
@@ -7833,7 +7823,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-636b",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Kilagane ni kilagane, tsimba k'amala mbala. [\"Nyika Dict.,\" p. 171, 172a.]",
+    "indigenous": "Kilagane ni kilagane, tsimba k'amala mbala.",
     "literalTranslation": "A promise is a promise, the lion finishes not the antelope.",
     "meaning": "The lion never turns back to devour the remainder of the antelope that he has slain, but leaves it to the lesser wild animals, hyenas, etc. Don't disappoint me of the expectation you have allowed me to entertain.",
     "theme": "nature",
@@ -7843,7 +7833,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-636c",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Kit'u udzachorya ndicho chako. [\"Nyika Dict.,\" p. 27b.]",
+    "indigenous": "Kit'u udzachorya ndicho chako.",
     "literalTranslation": "The thing that thou hast eaten, that is thine own.",
     "meaning": "The explanation proceeds, But that thou hast not yet eaten is not, then, thine own, till God command thee Himself, then (alone) mayest thou eat. Cp. the Giryama, § 632.",
     "theme": "unity",
@@ -7863,7 +7853,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-636e",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "K'uhendzi kunyolwa, ulonda kufutsulwa. [\"Nyika Dict.,\" p. 86b.]",
+    "indigenous": "K'uhendzi kunyolwa, ulonda kufutsulwa.",
     "literalTranslation": "You do not wish to be shaven, you want to have the hairs plucked out.",
     "meaning": "\"Radical\" versus \"superficial\" measures.",
     "theme": "wisdom",
@@ -7873,7 +7863,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Kula neno rina kipindi-che. [\"Nyika Dict.,\" p. 153a.]",
+    "indigenous": "Kula neno rina kipindi-che.",
     "literalTranslation": "Everything (lit. word) has its time. Or, Kula neno rina kiasi-che. Everything has its measure.",
     "meaning": "Cp. Eccles. iii. 1. \"To every thing there is a season, and a time to every purpose under the heaven.\"",
     "theme": "patience",
@@ -7883,7 +7873,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Madzi gakimwagika, k'agadzoreka. [\"Nyika Dict.,\" p. 63a.]",
+    "indigenous": "Madzi gakimwagika, k'agadzoreka.",
     "literalTranslation": "When water is spilt, it cannot be gathered up (like grain).",
     "meaning": "See the Swahili, § 231. To a mother, lamenting her dead babe, the following may have been addressed: Nyamala! vidzihendeka kare: hata ukirira undam'pata? Roho rikihalwa ni Mwenye Mulungu, basi, k'aipatikana kahiri, Be quiet! it is past and over: even if you cry, will you get him? When the soul is once taken by God Almighty, that is sufficient; it is not to be had a second time.",
     "theme": "family",
@@ -7893,7 +7883,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637b",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Maneno-go ga njama usimwambire muche. [\"Nyika Dict.,\" p. 229b.]",
+    "indigenous": "Maneno-go ga njama usimwambire muche.",
     "literalTranslation": "Don't tell a woman of your private affairs (or, words).",
     "meaning": "Don't tell a woman of your private affairs (or, words).",
     "theme": "wisdom",
@@ -7903,7 +7893,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637c",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mbira kure na kiriro kure. (Or, Hanga kure. . . .) [\"Nyika Dict.,\" p. 180a.]",
+    "indigenous": "Mbira kure na kiriro kure. (Or, Hanga kure. . . .)",
     "literalTranslation": "The grave is far off and the weeping is far off. (Or, The scene of the obsequies. . . .)",
     "meaning": "Out of sight is out of mind, even in this respect.",
     "theme": "wisdom",
@@ -7913,7 +7903,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637d",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mbogo, manya m'rambo! ndo nyani ambavyo. [\"Nyika Dict.,\" pp. 260, 248.]",
+    "indigenous": "Mbogo, manya m'rambo! ndo nyani ambavyo.",
     "literalTranslation": "Buffalo, mind the trap! so says the ape (to his fellow).",
     "meaning": "As the apes retire in file from their depredations in the cornfield, the owner, who has set his trap, observes them pass over it one after the other without falling in, and so people imagine that the foremost must pass on the word to his followers to beware of what he has noticed: \"Buffalo\" being merely a jocose appellative.",
     "theme": "unity",
@@ -7923,7 +7913,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-637e",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mbuzi mbii inaivya murisa. [\"Nyika Dict.,\" p. 131a.]",
+    "indigenous": "Mbuzi mbii inaivya murisa.",
     "literalTranslation": "The wretched goat makes the herdsman wretched. (Lit. . . . bad . . . bad.)",
     "meaning": "The wretched goat makes the herdsman wretched. (Lit. . . . bad . . . bad.)",
     "theme": "wisdom",
@@ -7933,7 +7923,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-638",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mugema k'azika nine (Digo, mameye, Rabai and Giryama). [\"Nyika Dict.,\" p. 310a.]",
+    "indigenous": "Mugema k'azika nine (Digo, mameye, Rabai and Giryama).",
     "literalTranslation": "The toddy-tapper buries not his mother.",
     "meaning": "His occupation demands such regular and constant attention that he cannot leave it for a single day. Cp. St. Luke ix. 59.",
     "theme": "family",
@@ -7943,7 +7933,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-639",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "M'oro mudzo k'aulavya dzuwa. [\"Nyika Dict.,\" p. 259b.]",
+    "indigenous": "M'oro mudzo k'aulavya dzuwa.",
     "literalTranslation": "A good palaver does not let the sun rise high in the heavens (lit. bring out the sun).",
     "meaning": "\"It brings a matter soon to a conclusion, before the sun is risen high\" (Rebman).",
     "theme": "humility",
@@ -7953,7 +7943,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-639a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mubananga chakwe k'ana k'ondo. [\"Nyika Dict.,\" pp. 10a, 81a.]",
+    "indigenous": "Mubananga chakwe k'ana k'ondo.",
     "literalTranslation": "He that spoils what is his own must not be blamed (lit. has no quarrel, strife).",
     "meaning": "He that spoils what is his own must not be blamed (lit. has no quarrel, strife).",
     "theme": "wisdom",
@@ -7963,8 +7953,8 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-640",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mudza m'kulu k'arya mameye. [\"Nyika Dict.,\" pp. 281a, 267a.]",
-    "literalTranslation": "The grown-up mortal (lit. comer, slave,) eats not (of) his mother.",
+    "indigenous": "Mudza m'kulu k'arya mameye.",
+    "literalTranslation": "The grown-up mortal (lit. comer, servant,) eats not (of) his mother.",
     "meaning": "He is no longer a \"suckling,\" but earns his own living in the world.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #640"
@@ -7973,7 +7963,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-640a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Muhi ukigwa uegemera muya-we. [\"Nyika Dict.,\" p. 71a.]",
+    "indigenous": "Muhi ukigwa uegemera muya-we.",
     "literalTranslation": "When a tree falls it leans on its neighbour (or companion).",
     "meaning": "One looks to one's friend in adversity.",
     "theme": "unity",
@@ -7993,7 +7983,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-640c",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mukongo k'avagirwa (-w-?) ngwe. [\"Nyika Dict.,\" p. 376b.]",
+    "indigenous": "Mukongo k'avagirwa (-w-?) ngwe.",
     "literalTranslation": "A man must not have his cultivating patch marked out for him when he is sick. (Lit., apparently, A sick man has not marked out for him the line of cultivation.)",
     "meaning": "A man must not have his cultivating patch marked out for him when he is sick. (Lit., apparently, A sick man has not marked out for him the line of cultivation.)",
     "theme": "hard-work",
@@ -8023,7 +8013,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-643",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mut'u agulaye ng'ombe lwayo. [\"Nyika Dict.,\" p. 217b.]",
+    "indigenous": "Mut'u agulaye ng'ombe lwayo.",
     "literalTranslation": "A person that buys an ox by the footmark.",
     "meaning": "Cp. the Swahili, § 187.",
     "theme": "family",
@@ -8033,7 +8023,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-643a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mut'u uhenda likwa ni at'u ela akidzilika mwenye k'avihama. [\"Nyika Dict.,\" p. 211b.]",
+    "indigenous": "Mut'u uhenda likwa ni at'u ela akidzilika mwenye k'avihama.",
     "literalTranslation": "A man is wont to be praised by others (lit. people), but if he praise himself it is not fitting.",
     "meaning": "Prov. xxvii. 2: \"Let another praise thee, and not thy own mouth.\"",
     "theme": "wisdom",
@@ -8043,7 +8033,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-643b",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mwana m'sikizi yurya chakwe na cha muya-we. [\"Nyika Dict.,\" p. 292a.]",
+    "indigenous": "Mwana m'sikizi yurya chakwe na cha muya-we.",
     "literalTranslation": "The obedient child eats his own (food) and his fellow's.",
     "meaning": "Cp. the Swahili, § 367.",
     "theme": "family",
@@ -8053,7 +8043,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-644",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mwana-ts'i k'avundza-ts'i. [\"Nyika Dict.,\" p. 262b.]",
+    "indigenous": "Mwana-ts'i k'avundza-ts'i.",
     "literalTranslation": "The child of the land destroys not the land (lit. breaks not).",
     "meaning": "Never the \"mumidzi\" or \"mugeni\" (stranger or foreigner): contrast the Swahili proverb, § 181, l. 3.",
     "theme": "family",
@@ -8063,7 +8053,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-645",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mwenye kifyu ndiye atsindzaye nyama. [\"Nyika Dict.,\" p. 270b.]",
+    "indigenous": "Mwenye kifyu ndiye atsindzaye nyama.",
     "literalTranslation": "The man with the knife is the one that slaughters the animal.",
     "meaning": "Cp. Swahili, § 381.",
     "theme": "unity",
@@ -8073,7 +8063,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-646",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mwivi k'aelelywa, suti um'gwire na kisuche. [\"Nyika Dict.,\" p. 71b.]",
+    "indigenous": "Mwivi k'aelelywa, suti um'gwire na kisuche.",
     "literalTranslation": "A thief is not arrested on suspicion (lit. suspected), you must catch him by means of the little ear of corn, i.e. one marked so as to be known again; or, . . . with the ear of corn, i.e. in the act: see Dictionary, ad loc.",
     "meaning": "A thief is not arrested on suspicion (lit. suspected), you must catch him by means of the little ear of corn, i.e. one marked so as to be known again; or, . . . with the ear of corn, i.e. in the act: see Dictionary, ad loc.",
     "theme": "unity",
@@ -8083,7 +8073,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-647",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Mwiya wa kudzidunga mwenye k'auluma. [\"Nyika Dict.,\" p. 278a.]",
+    "indigenous": "Mwiya wa kudzidunga mwenye k'auluma.",
     "literalTranslation": "A thorn with which one has pricked one's-self of one's own accord does not pain. (Lit. A thorn of pricking one's own self does not pain).",
     "meaning": "Self-imposed tasks are cheerfully borne. The antithesis to this would be Falstaff's refusal to eat blackberries by compulsion.",
     "theme": "unity",
@@ -8093,7 +8083,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-647a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ndagizwa si urindzi, urindzi ni mwenye. [\"Nyika Dict.,\" 299a.]",
+    "indigenous": "Ndagizwa si urindzi, urindzi ni mwenye.",
     "literalTranslation": "The order does not imply the keeping of the birds away from the crops; that depends on one's own presence. More lit. The order (to guard) is not guardianship, guardianship is one's (own) self.",
     "meaning": "Cp. the Swahili, § 406.",
     "theme": "unity",
@@ -8110,20 +8100,10 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #647b"
   },
   {
-    "id": "taylor-1891-mijikenda-647c",
-    "languageId": "mijikenda",
-    "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Nyani anatsekana ngoko (or, ts'ugu. [The reading is conjectural; there must be a misprint in the Dictionary at this place, p. 308b.]",
-    "literalTranslation": "Apes laugh at one another's naked posteriors (lit. callosities).",
-    "meaning": "This is a conjectural translation, arrived at from philological reasons (the Swahili sugu = callosities, such as are found on the ape), as well as from the comparison of the Swahili, § 438a. The kettle blames the pot.",
-    "theme": "unity",
-    "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #647c"
-  },
-  {
     "id": "taylor-1891-mijikenda-648",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Nyoka yuluma afikirevo (or -wo?). [\"Nyika Dict.,\" p. 80a.]",
+    "indigenous": "Nyoka yuluma afikirevo (or -wo?).",
     "literalTranslation": "The snake is wont to bite where he has reached.",
     "meaning": "Cp. § 339.",
     "theme": "nature",
@@ -8133,7 +8113,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-648a",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Nyuma ni kishaka. [\"Nyika Dict.,\" p. 181b.]",
+    "indigenous": "Nyuma ni kishaka.",
     "literalTranslation": "Behind (a person) is a grove.",
     "meaning": "This might be used by one who does not mind exposing himself to danger so long as he has a place of refuge or concealment ready at hand into which to retire: if Rebman's interpretation is correct. But kishaka is a Swahili word (= kitua, a little bush?): kitsaka or katsaka is the Nyika word for \"little thicket.\"",
     "theme": "unity",
@@ -8143,7 +8123,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-649",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "P'anya yurya akivivira. [\"Nyika Dict.,\" p. 79b.]",
+    "indigenous": "P'anya yurya akivivira.",
     "literalTranslation": "The rat devours while he blows.",
     "meaning": "See, on the Swahili version, § 441. The way in which this proverb is used is illustrated by the following: Dzuzi wáhala kit'u changu, k'unirivire; na dzuzi ukihala kit'u kwa nganya musiku, k'urivire; rero kaviri unadza londa deni kwangu. Be k'umanya kwamba, P'anya yurya akivivira? mbona na-we unakaza muno! Be rero k'undapata, mwiri udziingira utsungu. The day before yesterday you took something of me, (and) did not repay me; and also the day before yesterday you took something of Mr. So-and-so, and didn't pay; and next you are coming to me to-day wanting my debt. Now do you not know that \"The rat devours while he blows\"? How now! you are going too far! Well, to-day you won't get it; my (whole) body has begun to pain me. \"Obsta principiis.\"",
     "theme": "wisdom",
@@ -8153,7 +8133,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-650",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "\"T'endeje\"? yuezwa muvyere. [\"Nyika Dict.,\" p. 358b.]",
+    "indigenous": "\"T'endeje\"? yuezwa muvyere.",
     "literalTranslation": "\"Mais, que faire?\"—is the Elder's excuse (lit. the Elder is cleared).",
     "meaning": "The Nyika men, who are accustomed to have more social interaction with visitors than the women, occasionally import a Swahili phrase or two into their conversation, just as some people at home introduce French expressions. \"Fanyeje?\" and \"T'endeje\" (lit. What, or how, am I to do, or act?) are very commonly heard at the coast. They are used as an excuse by a man, to himself or others, when he laments circumstances being beyond his control. This, the proverb seems to say, heard with complaisance even in the mouth of the (once) almost omnipotent Nyika Elder, must not be rejected when it is the excuse of one of the younger generation.",
     "theme": "wisdom",
@@ -8163,7 +8143,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-651",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ts'anje akifwa na murira udzefwa. [\"Nyika Dict.,\" p. 56b.]",
+    "indigenous": "Ts'anje akifwa na murira udzefwa.",
     "literalTranslation": "When the snouted-shrew dies, (her) traces are dead also (i.e. disappear).",
     "meaning": "\"Ukikala k'u-vo (-wo?), na rako k'arivo.\" If you are not present, your concerns are not present. It is necessary to keep one's self en évidence. When a way or track is no longer used, and has become grown over, it is commonly said \"to have died\" (njira idzefwa, Swah. ndia imekufa). The ts'anje is a middle-sized brown shrew or field-mouse, with kangaroo-like hind-legs, a long trunk or proboscis, and pretty brown fur: it has a sort of brush of short bristles under its tail, with which it produces a trail or path as it moves about in the jungle, and in doing which it makes a rustle.",
     "theme": "unity",
@@ -8183,7 +8163,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-652",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "U kunda-ng'andzi. [\"Nyika Dict.,\" p. 201b.]",
+    "indigenous": "U kunda-ng'andzi.",
     "literalTranslation": "You are the \"Love-tittle-tattle\" (snake).",
     "meaning": "This is a snake which is supposed to draw near to any spot where people are talking, from its fondness for listening to conversation. Said to an inconvenient intruder on a private conversation.",
     "theme": "humility",
@@ -8203,9 +8183,9 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-654",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "U ndezi 'we, urya mukono-we. [\"Nyika Dict.,\" p. 300b.]",
+    "indigenous": "U ndezi 'we, urya mukono-we.",
     "literalTranslation": "You are a squirrel, (that) is wont to eat his own hand.",
-    "meaning": "From the familiar attitude of the little animal in holding its food to its mouth, it is proverbially said to \"eat its hand.\" It was addressed to a man that was selling his child into slavery.",
+    "meaning": "From the familiar attitude of the little animal in holding its food to its mouth, it is proverbially said to \"eat its hand.\" It was addressed to a man that was selling his child into servantry.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #654"
   },
@@ -8213,7 +8193,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-655",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "U nga kipiga t'utu, k'utsuka mafi. [\"Nyika Dict.,\" p. 152.]",
+    "indigenous": "U nga kipiga t'utu, k'utsuka mafi.",
     "literalTranslation": "You are like the thing that beats the war-drum, you are never without a taradiddle (lit. knocks).",
     "meaning": "This is said of a man who is always chattering. Maneno-ge ni mangi k'agasira kanwa-ni, His words are many, they are never finished in (his) mouth. The instrument used in beating the drum for war is said to be gandza ra mut'u ayeulagwa,—the hand of a man that had been killed (in a previous war)!",
     "theme": "wisdom",
@@ -8223,7 +8203,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-656",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "U nga nundu. [\"Nyika Dict.,\" p. 314b.]",
+    "indigenous": "U nga nundu.",
     "literalTranslation": "You are like the bat.",
     "meaning": "Said to one to whom we should say, \"You are trying to sit on two stools at once.\"",
     "theme": "unity",
@@ -8243,7 +8223,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-658",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ukongo um'gwira mbawa. [\"Nyika Dict.,\" p. 246b.]",
+    "indigenous": "Ukongo um'gwira mbawa.",
     "literalTranslation": "Disease is wont to seize (even) the big hyena.",
     "meaning": "Disease is wont to seize (even) the big hyena.",
     "theme": "nature",
@@ -8253,7 +8233,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-659",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Ulumbi wa Ki-Digo. [\"Nyika Dict.,\" p. 369b.]",
+    "indigenous": "Ulumbi wa Ki-Digo.",
     "literalTranslation": "\"Digo palavering.\"",
     "meaning": "Musihende \"ulumbi wa Ki-Digo,\" wa kuendereza maneno mutsana wa dii: k'ahuna ukazi sino, k'ahuweza ulumbi wa Ki-Digo. Don't make any \"Digo palavering,\" drawing out the discussion all the livelong day: we have no time to stay, we cannot manage any Digo palavering. All Africans are given to making orations, but the Digos, the southernmost of the Nyika tribes, are proverbially so.",
     "theme": "patience",
@@ -8263,7 +8243,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-660",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Usena ukira udugu. [\"Nyika Dict.,\" p. 41b.]",
+    "indigenous": "Usena ukira udugu.",
     "literalTranslation": "Friendship surpasses relationship.",
     "meaning": "See Swahili, § 17 (and the Arabic, Jârak al karîb wa lâ akhûk al ba'îd).",
     "theme": "unity",
@@ -8273,9 +8253,9 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-661",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Usunye k'autsuka hiraka. [\"Nyika Dict.,\" p. 374a.]",
+    "indigenous": "Usunye k'autsuka hiraka.",
     "literalTranslation": "Slavery is not quickly eradicated (is not quickly cleansed).",
-    "meaning": "It leaves its mark of ignominy. When a man comes back from slavery, having been redeemed or made his escape, he becomes very sensitive on the point.",
+    "meaning": "It leaves its mark of ignominy. When a man comes back from servantry, having been redeemed or made his escape, he becomes very sensitive on the point.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #661"
   },
@@ -8283,7 +8263,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-662",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Varivo (Wariwo?) k'uku k'avamwagwa (k'awamwagwa) umera. [\"Nyika Dict.,\" p. 370b.]",
+    "indigenous": "Varivo (Wariwo?) k'uku k'avamwagwa (k'awamwagwa) umera.",
     "literalTranslation": "Where fowls are, the moistened grain (or malt) is not scattered about.",
     "meaning": "Concerning \"Little pitchers.\" Cp. Swahili, § 457.",
     "theme": "patience",
@@ -8293,7 +8273,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-663",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Yudzivundza chala. [\"Nyika Dict.,\" p. 95a.]",
+    "indigenous": "Yudzivundza chala.",
     "literalTranslation": "He has \"broken his finger,\" i.e. he has borne with another, passed over his offence.",
     "meaning": "Perhaps from the characteristic action of putting the finger to the mouth and snapping it in hatred and spite (see § 636d); here the man has restrained himself—he has, as it were, broken off in the middle of the act.",
     "theme": "nature",
@@ -8303,7 +8283,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-mijikenda-664",
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kinyika / Rabai)",
-    "indigenous": "Yunavuha madzi. [\"Nyika Dict.,\" p. 88b.]",
+    "indigenous": "Yunavuha madzi.",
     "literalTranslation": "He is pulling at water.",
     "meaning": "An expression difficult to explain, meaning one who acts with cunning—making people think he is doing one thing, when in reality he is doing another. Possibly the metaphor is from one who, standing in a stream of running water, pulls his hands through the current as though to restrain the water, and yet lets it run between his fingers. ## TAITA PROVERB.",
     "theme": "unity",
@@ -8448,1646 +8428,6 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "meaning": "Giryama riddle (ndumo #21, challenged with 'Chondoni! — Dekeha!'): A long bond [indeed, but it] binds not the firewood.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor (1891) 'Giryama Vocabulary and Collections' (SPCK, London), Ndumo za Kigiryama #21, pp. 138–140"
-  },
-  {
-    "id": "hollis-1905-maasai-1",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Ainy6-pe ingarsiso anaa",
-    "literalTranslation": "Why do you behave like a woman whose son has just married ?",
-    "meaning": "A newly married man usually lives in his father's kraal for some months after his marriage, and a woman whose son has recently married may sit down and rest, as her daughter-in-law will do all the work.",
-    "theme": "hard-work",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #1, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-2",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Eata en-neor.",
-    "literalTranslation": "There is a Judge for him, and He will avenge me.",
-    "meaning": "A favourite saying when a person has been defeated in a fight.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #2, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-3",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Eata '1-ojonga 'n-giyaa. They-have the-flies the^ears. Flies have ears.",
-    "literalTranslation": "The night has ears.",
-    "meaning": "' Walls have ears.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #3, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-4",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Ebaiki en-gutuk nainosa 'sunya It-reaches (or Perhaps) Ihe-mouth which-ate the-fats",
-    "literalTranslation": "become a brave man.",
-    "meaning": "'The last shall be first, and the first last.'— Matt. xx. 16.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #4, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-5",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Eitu-kid61 ti-oreren en-gerr sambu.",
-    "literalTranslation": "more than three colours is unknown. This saying is used to express",
-    "meaning": "A sheep of two or even three colours is common enough, but one of more than three colours is unknown. This saying is used to express incredulity at an improbable story.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #6, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-6",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Ekwenikye 'n-guk in-guruon. They-laugh-at the-coals (or soot or charcoal) the ashes.",
-    "literalTranslation": "which is being consumed.",
-    "meaning": "which is being consumed.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #6, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-7",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Engarie o-sighiria en-daa. He-eats-with the-ass the-food.",
-    "literalTranslation": "the lower jaw extracted, and whose mouth in consequence is supposed",
-    "meaning": "This is said of a man who has not had the two middle incisors of the lower jaw extracted, and whose mouth in consequence is supposed to resemble a donkey's.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #7, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-8",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Enyanyuk ol-oipotoki o ol-oeuo",
-    "literalTranslation": "called or whether he has come of his own free will.",
-    "meaning": "called or whether he has come of his own free will.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #8, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-9",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Epwo eorioro anaa 'ng-ajijik They-go they-separate-themselves like the-huts",
-    "literalTranslation": "oo-'l-oitigoshi. of-the-zebra.",
-    "meaning": "Zebra of course have no huts. This saying is intended to imply, ' They are scattered over the face of the earth.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #9, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-10",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Epwonu 'm-baa too-'muroshin. They-come the-actions (or the-arrows) by-the-hind-legs.",
-    "literalTranslation": "accomplished ; and arrows are not fired without a person being there",
-    "meaning": "Long marches are inevitable before a raid can be successfully accomplished ; and arrows are not fired without a person being there to fire them.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #12, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-11",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Erishunye anaa en-gaa",
-    "literalTranslation": "donkey is thrown away. This saying is used when referring to",
-    "meaning": "A sick donkey stands apart from his fellow animals, and a dead donkey is thrown away. This saying is used when referring to a man who stands aloof from his companions.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #13, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-12",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Erisyo laikin o kaa.",
-    "literalTranslation": "Being defeated and dying are the same.",
-    "meaning": "Being defeated and dying are the same.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #14, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-13",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Erisyore en-giteng nabo el-lughunya o-'l-lee. It-resembles the-cow one the-head of-the-man.",
-    "literalTranslation": "A cow is as good as a man.",
-    "meaning": "If a man has a cow, and looks after it, he obtains riches, for the cow bears, and with the calves he is able to purchase a wife.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #15, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-14",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Etaa em-bito o-'l-ngojine. He-has-become the-sinew of-the-hyena.",
-    "literalTranslation": "He is like a hyena's sinew.",
-    "meaning": "A man who refuses to admit himself beaten is likened to a hyena's sinew, which is said to be tougher than that of any other animal.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #17, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-15",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Etejo en-giteag: 'Mikindaya, injooyoki.'",
-    "literalTranslation": "not as well treated as those of the person they have been lent to.",
-    "meaning": "It is notorious that animals which have been lent or pawned are not as well treated as those of the person they have been lent to. Hence the cow's request.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #18, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-16",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Etejo en-giteftg: \"Tipikaki o-rorei It-said the-cow : ' Pouf-into-me the-word",
-    "literalTranslation": "my body.' [If you wish to sell me, strike a hard bargain, for a man who has",
-    "meaning": "If you wish to sell me, strike a hard bargain, for a man who has paid a long price for me will treat me well.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #19, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-17",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Etejo ol-ngojine : ' Mme ake amunyak, It said the-hyena: 'No only I-have-luck,",
-    "literalTranslation": "strong.'",
-    "meaning": "I have luck, it is true, but I have had to work. ' God helps those who help themselves.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #20, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-18",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Etii ol-dia e-mala, meishoru",
-    "literalTranslation": "There is a dog in the gourd, and his ears prevent it from being closed.",
-    "meaning": "In the event of a man going to visit his friend's wife, he would first of all ascertain whether the owner of the hut were at home. Should he see unmistakable signs of the husband's presence, he would move off consoling himself by quoting this proverb.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #21, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-19",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "H-doinyo lemetumo.",
-    "literalTranslation": "Mountains do not meet.",
-    "meaning": "A favourite saying when people part company, and equivalent to, ' We shall meet again.' Cf. the Turkish proverb : ' Mountain does not meet mountain, but man meets man.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #22, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-20",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Inotye nanotye Ol-le-'n-gipika You-have-got which-he-got The-of-En-gipika",
-    "literalTranslation": "hiding-place. It is not related how the son of En-gipika escaped from",
-    "meaning": "The story told of the son of En-gipika is as follows. One day he was eating meat in the slaughter-house when the place was suddenly attacked by the enemy. He managed to escape with his life and meat, but without his weapons, and he fled, hotly pursued by the enemy.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #23, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-21",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Ira iigen anaa Konyek.",
-    "literalTranslation": "to him whenever anything 'slim* or of a cunning or clever nature has been performed. The constructor of the Uganda Railway, for",
-    "meaning": "Konyek's biography was briefly sketched in the story entitled 'L-omon le-Konyek oo Menye-Konyek. The Masai are fond of referring to him whenever anything 'slim* or of a cunning or clever nature has been performed.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #24, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-22",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Ira ngidut anaa ol-dia le-'manyata oo-'l-muran. You-are proud like the-dog of-the-kraal of-the-warriors.",
-    "literalTranslation": "[The dogs that live in the warriors' kraals have a much happier existence than those that act as scavengers in the other kraals.",
-    "meaning": "The dogs that live in the warriors' kraals have a much happier existence than those that act as scavengers in the other kraals. Owing to the warriors' food consisting entirely of meat and milk, many bones and scraps are thrown to the dogs.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #25, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-23",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Itadua, irughogho, etii ol-lee, netii",
-    "literalTranslation": "male, the woman and the female.",
-    "meaning": "All people are not alike, and if you watch you find that some of the passers-by are good and others bad.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #26, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-24",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Itiftgide anaa en-gaa naiya",
-    "literalTranslation": "on a visit to the married people *, and making him the laughing-stock",
-    "meaning": "A warrior is supposed to be always in a perfect state of health, and if he is taken ill, he will hide himself in the woods or in a hut apart from the others.",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #27, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-25",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "I'yopo en-gine eng-oSgu. Cover the-goat the-eye.",
-    "literalTranslation": "see what is happening. Similarly, if a raid is meditated on, secrecy",
-    "meaning": "When an animal is prepared for a ceremony, its eyes are covered, and the eye which is uppermost is covered with its ear, so that it shall not see what is happening. Similarly, if a raid is meditated on, secrecy must be observed beforehand.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #28, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-26",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Kinder ol-le-'modai, pe kindoki We-begin the-of-the-foolishness, and we-do-again",
-    "literalTranslation": "\"We begin by being foolish and we become wise by experience.",
-    "meaning": "* Experientia docet.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #29, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-27",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Kitagha neme te-'ng-oriong. You-have-pressed-on-me which-is-not on-the-back.",
-    "literalTranslation": "you press on every part of my body.",
-    "meaning": "This saying is equivalent to, ' I am weary of your company.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #30, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-28",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meata ol-ataduakine nemeata",
-    "literalTranslation": "1 The warriors live in kraals apart from the married people (vide p. 293). UOLLIS g",
-    "meaning": "Do not believe in the report of a person's death until it is well founded. Unless an eye-witness tells you the news, receive it with caution.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #31, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-29",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Medany ol-kimojlno obo el-lashei.",
-    "literalTranslation": "\"",
-    "meaning": "The necessity for joint action. The Swahili have a similar proverb: 1 Kidole kimoja hakivuncZi t'awa.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #32, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-30",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Medol ol-tungani ol-oikulu einosifca. He-sees-not the-man the-breast-of-a-dead-ox) he-is-eating-it. (or happiness) )",
-    "literalTranslation": "poor that he remembers the days of plenty.",
-    "meaning": "' O fortunatos nimium, sua si bona norint.' — Vergil, G. ii. 458.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #33, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-31",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meishaa 'mulugi2 en-dap. It-enters-not the-bargain the-palm-of-the-hand.",
-    "literalTranslation": "A lie cannot fill the palm.",
-    "meaning": "One hollow cannot fill another.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #35, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-32",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meisho '1-limot, in-gulye ebaya. They-give-not the-news (pi.), the-others they-arrive-thither.",
-    "literalTranslation": "rest is kept back.",
-    "meaning": "rest is kept back.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #36, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-33",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meitayu ol-arabal e-nyawa.",
-    "literalTranslation": "It does not take as long to settle a quarrel as it takes a cow's udder to fill with milk after she has been covered.",
-    "meaning": "The combatants either fight until one is beaten, or the matter is settled amicably at onee.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #37, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-34",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meitululungayu eng-oingono.",
-    "literalTranslation": "8 The plural of e-mulug, the hollowed out place, is often used in this sense",
-    "meaning": "' Dieu est toujours pour les gros bataillons.' — Voltaire.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #38, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-35",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meiturujunoyu eng-oshoghe metii en-gerai.",
-    "literalTranslation": "\"",
-    "meaning": "' There is no smoke without a fire.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #39, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-36",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meituruk en-gume. It-precedes-not the-nose.",
-    "literalTranslation": "the idea being that if it were possible to send on one's nose ahead, one could have foreseen the danger that was being threatened and",
-    "meaning": "This expression is often used after a misfortune has befallen one, the idea being that if it were possible to send on one's nose ahead, one could have foreseen the danger that was being threatened and made preparations accordingly.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #40, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-37",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meiyopoo ol-owaru ol-kujita.",
-    "literalTranslation": "It-covers-nbt-away the-beast-of-prey the-grass.",
-    "meaning": "A beast of prey (or a thief) can hide for a while, but in course of time it will be captured or killed. ' Murder will out.'",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #41, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-38",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Melafig in-glshu ol-ogol le-kishomi.",
-    "literalTranslation": "the cattle.",
-    "meaning": "There is some play on the word kishomi. The cattle will not pass the gate because the child's clan is strong.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #42, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-39",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Melang ol-ambu en-nongoto.",
-    "literalTranslation": "The boaster will not cross the valley.",
-    "meaning": "' Pride goes before a fall.'",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #43, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-40",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Melo en-geju nabo 'murano. It-goes-not the-leg one the-meetings-of-the-warriors.",
-    "literalTranslation": "Warriors and cripples remain apart.",
-    "meaning": "' Birds of a feather flock together.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #44, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-41",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mengasunoyu ol-kesen",
-    "literalTranslation": "Swahili proverb : ' Kurinda k'anzu mwana hajavyawa ' (to cut out the tunic before the child is born).] s 2",
-    "meaning": "' Don't count your chicks before they are hatched.' Vide also the Swahili proverb : ' Kurinda k'anzu mwana hajavyawa ' (to cut out the tunic before the child is born).",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #45, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-42",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Menyanyuk ateleja o atishiraka",
-    "literalTranslation": "an arrangement with his aggressor instead of going to complain",
-    "meaning": "If a man has suffered wrong, he had better try and come to an arrangement with his aggressor instead of going to complain to the chiefs, for his enemy will not forget, and will avenge himself later.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #46, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-43",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meoki o-inoti 'n-gipa It-is-not-drunk the-foster-son (or the slave) the-vernik-caseosa",
-    "literalTranslation": "What does it matter whether a person is one's own child or some￾body else's as long as he does his duty 1",
-    "meaning": "Compare the coastal proverb teaching that a helpful stranger is better than an unhelpful acquaintance.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #48, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-44",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Meoro '1-tuli o en-gop. They-separate-not the-buttocks and the-ground.",
-    "literalTranslation": "Africa, pp. 260, 338, &c.).",
-    "meaning": "One explanation of this proverb is that a man must sit down, and though he may walk about or lie down, he will sit on the ground again later. Another theory is that it has in some way reference to the disposal of the dead.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #49, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-45",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mepal ol-oitigo 'eirat. He-does-not-leave the-zebra the-stripes.",
-    "literalTranslation": "The zebra cannot do away with his stripes.",
-    "meaning": "' Can the Ethiopian change his skin, or the leopard his spots ? ' Jer. xiii. 23.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #60, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-46",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mepwo '1-otimi te-'n-gop enye. They-go-not the-baboons from-the-country their.",
-    "literalTranslation": "return home. ' Caelum non animum mutant qui trans mare currunt.'",
-    "meaning": "Similarly with people, they may pay a visit to another country (and incidentally lift their neighbour's cattle), but they will afterwards return home. ' Caelum non animum mutant qui trans mare currunt.' — Hor. Epp.t I. xi. 27.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #51, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-47",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Merep eng-aboboki o-'l-chani likae-shani. It-stick s-not t he-bark of-the-tree other-tree.",
-    "literalTranslation": "The bark of one tree will not adhere to another tree.",
-    "meaning": "People of one tribe cannot assimilate the customs of another.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #62, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-48",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Merisyo e-raposhi o e-seriani.",
-    "literalTranslation": "things, especially after a raid.",
-    "meaning": "things, especially after a raid.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #53, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-49",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Merisyo 'nyuat oo 'n-gidimat, They-are-not-similar the-perseverings and the-beings-able,",
-    "literalTranslation": "a thing are not the same : many persevere.",
-    "meaning": "' 'Tis not in mortals to command success, But we'll do more, Sempronius, we'll deserve it.' — Addison, Cato, i. 2.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #54, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-50",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Metii oidipa, ol-doinyo ake",
-    "literalTranslation": "mountains which do not move from their places.",
-    "meaning": "mountains which do not move from their places.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #65, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-51",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Metumo ol-leleo le-'mala o",
-    "literalTranslation": "Broken pieces of a g^urd cannot be fastened on to a cooking-pot.",
-    "meaning": "Similarly, people of different tastes disagree.",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #56, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-52",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Miara en-nidamu.",
-    "literalTranslation": "You will not be beaten when you think before acting.",
-    "meaning": "' Look before you leap.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #57, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-53",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Miingar ol-paashe le-lighae, nipal",
-    "literalTranslation": "Do not repair another man's fence until you have seen to your own.",
-    "meaning": "' Charity begins at home.'",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #58, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-54",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Milo angata miata ol-le-'swama. Do-not-go plain you-have-not the-of-the-dust-in-the-eye.",
-    "literalTranslation": "your eye.",
-    "meaning": "The necessity of joint action.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #59, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-55",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mindadol ol-kilil eng-auo, meipiri.",
-    "literalTranslation": "Do not show the hawk your bow, or he will fly away.",
-    "meaning": "'Surely in vain the net is spread in the sight of any bird.' — Prov. i. 17.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #60, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-56",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mindyamityam amu mejo en-gityamityam",
-    "literalTranslation": "Do not jump about, for there is no use in jumping about.",
-    "meaning": "' More haste less speed.'",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #61, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-57",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mira shata omut en-gima. You-are-not wood which-finishes the-fire.",
-    "literalTranslation": "You are not like firewood which is burnt, you are always there.",
-    "meaning": "Said of a person whose presence has become a nuisance.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #62, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-58",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Mi'ro 'rorei oobana '1-kujit. Do-not-talk the-words which-get-themselves the-grasses.",
-    "literalTranslation": "Do not talk a great deaL",
-    "meaning": "' In the multitude of words there lacketh not sin.' — Prov. x. 19.",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #63, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-59",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Miroro e-figape anaa ol-moruo",
-    "literalTranslation": "daughters see to the food and milk the cows, whilst his sons guard the",
-    "meaning": "A man with a large family may lie on his back all day long with his feet up against a post, and trouble about nothing. His wife and daughters see to the food and milk the cows, whilst his sons guard the cattle and sheep.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #64, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-60",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Misioyo amu inauru.",
-    "literalTranslation": "Do-not-hasten-thither for you-tire-yourself.",
-    "meaning": "' More haste less speed.'",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #65, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-61",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Na-Ai ! injooki ol-oip neme ol-lo-'l-chani. O-the-God! give-me the-shade and-not the-of-the-tree.",
-    "literalTranslation": "covering it with the ' kesen/ or garment for tying the child on to her back. No woman wears this garment unless she has a baby, hence",
-    "meaning": "Originally a prayer for a child, but now used for anything that is ardently desired. When the sun is hot, a mother protects her infant's head by covering it with the ' kesen/ or garment for tying the child on to her back.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #66, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-62",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Namelele neme te-'ng-oshoshe nauroo Namelele and-not from-the-milkless whom-throws-down",
-    "literalTranslation": "over by the weight of a bird.",
-    "meaning": "This is a term of reproach used to a woman if she does not look after and feed her children properly.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #67, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-63",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Naorioriki 'regiei. Who-separates the-paths (or character, climate, or nature).",
-    "literalTranslation": "He who separates the paths, &c.",
-    "meaning": "A common expression for the Almighty.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #68, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-64",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Naroito 1 e-iigape anaa en-dingi",
-    "literalTranslation": "Unlike the old man who has many sons, however (vide proverb",
-    "meaning": "Unless a girl is well dressed, according to Masai ideas, and anoints her body from time to time with oil, she is not admitted into the warriors' kraals, and becomes a social outcast. She has nothing left her to do but lie on her back and put her feet up against a post.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #69, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-65",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "O-sina liki'ya en-neado, The-poorness (or trouble) which-takes-you where-it-is-long,",
-    "literalTranslation": "It is better to be poor and live long than rich and die young.",
-    "meaning": "It is better to be poor and live long than rich and die young.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #70, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-66",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Papa elde oiyeu en-giteng oje",
-    "literalTranslation": "consequently weak.",
-    "meaning": "A saying applied by women to one of their number who is notoriously lazy.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #71, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-67",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Pashupashut anaa en-gerai natii eng-aji Pride like the-child who-is-there the-hut",
-    "literalTranslation": "a E-oghoi is here used for eng-ogho.",
-    "meaning": "Grandmothers are apt to spoil their granchildren, and a naughty boy is not so likely to be whipped at his grandmother's as at home.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #72, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-68",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Sipat eflgari, mengari 'rtgiei. Truly they-are-shared, they-are-not-shared the-mindsj (or paths, &c.).j",
-    "literalTranslation": "cannot tell what is passing through each other's minds.",
-    "meaning": "cannot tell what is passing through each other's minds.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #73, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-69",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Tadua, ebana 'sek See, they-get-themselves the-fruit-of-the-cordia-tree",
-    "literalTranslation": "Look, they are as numerous as the unripe fruit of the Cordia ovalis.",
-    "meaning": "* As the sand of the sea, which cannot be numbered for multitude.' — Gen. xxxii. 12.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #74, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-70",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Tigha eng-auo, miigh eng-ongu.",
-    "literalTranslation": "Leave the dry cowhide alone; do not make the eye weep.",
-    "meaning": "' It is ill talking between a full man and a fasting.'",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Proverb #75, pp. 238–251"
-  },
-  {
-    "id": "hollis-1905-maasai-71",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Aata '1-muran lainei kumok, n&a — Ol-popoftgi. The-euphorbia-tree.",
-    "literalTranslation": "Maasai Enigma #1: Ol-popoftgi. The-euphorbia-tree.",
-    "meaning": "Masai men often stand on one foot and rest the other against the knee1. When in this position they are supposed to resemble the Candelabra euphorbia, which Sir H.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #1, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-72",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Aata '1-muran lainei kumok, naa — Il-loom le-'ng-aji. The-rafters of-the-hut.",
-    "literalTranslation": "Maasai Enigma #2: Il-loom le-'ng-aji. The-rafters of-the-hut.",
-    "meaning": "In Masai huts all the rafters are hidden except one which protrudes beyond the door. It is said to be watching the cattle.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #2, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-73",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Aata '1-muran lainei, nemetii — 'N-jeito. The-pegs.",
-    "literalTranslation": "Maasai Enigma #3: 'N-jeito. The-pegs.",
-    "meaning": "Traditional Maasai riddle (#3): Aata '1-muran lainei, nemetii — 'N-jeito. The-pegs.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #3, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-74",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Aata '1-muran lanei okuni, Enigma. I-have the-warriors my three, — 'Soito le-'n-gima. The-stones of-the-fire.",
-    "literalTranslation": "Maasai Enigma #4: 'Soito le-'n-gima. The-stones of-the-fire.",
-    "meaning": "The cooking-pots cannot be successfully balanced between two stones, and a discussion does not terminate if only two people take part in it.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #4, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-75",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Enigma. — I have two skins, one to lie on and the other to cover myself with.",
-    "literalTranslation": "Maasai Enigma #5: I have two skins, one to lie on and the other to cover myself with.",
-    "meaning": "Traditional Maasai riddle (#5): Enigma. — I have two skins, one to lie on and the other to cover myself with.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #5, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-76",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! A-isulishe, nepwonu '1-ooingua Enigma. I-whistled, and-they-come the-who-come-from 'n-dimi. — Eng-a'i natasha. The-rain which-rained.",
-    "literalTranslation": "Maasai Enigma #6: Eng-a'i natasha. The-rain which-rained.",
-    "meaning": "Traditional Maasai riddle (#6): A-isulishe, nepwonu '1-ooingua Enigma. I-whistled, and-they-come the-who-come-from 'n-dimi. — Eng-a'i natasha. The-rain which-rained.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #6, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-77",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Ana-ijo e-euo ? — O-rorei lai o ol-lino. The-word my and yours.",
-    "literalTranslation": "Maasai Enigma #7: O-rorei lai o ol-lino. The-word my and yours.",
-    "meaning": "Traditional Maasai riddle (#7): Ana-ijo e-euo ? — O-rorei lai o ol-lino. The-word my and yours.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #7, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-78",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Anake 6ado ilgutunyi nemebaiki — Eng-oitoi. The-road.",
-    "literalTranslation": "Maasai Enigma #8: Eng-oitoi. The-road.",
-    "meaning": "Traditional Maasai riddle (#8): Anake 6ado ilgutunyi nemebaiki — Eng-oitoi. The-road.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #8, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-79",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Asliomo enda-tim, nashitu — Il-mao. The-twins.",
-    "literalTranslation": "Maasai Enigma #9: Il-mao. The-twins.",
-    "meaning": "Traditional Maasai riddle (#9): Asliomo enda-tim, nashitu — Il-mao. The-twins.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #9, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-80",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Eiduraki, neifigwari — 01-arau The-piece-of-hide-used-for-sweeping.",
-    "literalTranslation": "Maasai Enigma #10: 01-arau The-piece-of-hide-used-for-sweeping.",
-    "meaning": "The piece of hide which is used for sweeping away the dust and dirt is of so little value that when the inhabitants quit their kraal and move to a new grazing ground it is probably left suspended from the wall of the hut.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #10, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-81",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Eiduraki, neifigwari — 01-chala. The-dunghill.",
-    "literalTranslation": "Maasai Enigma #11: 01-chala. The-dunghill.",
-    "meaning": "A man would not leave his dressed skin behind him unless it were worthless, and it is obvious, therefore, that it has been thrown away.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #11, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-82",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Eim ngutunyi polos boo — En-geju e-'n-gerai nanapitai. The-leg of-the-child which-is-being-carried.",
-    "literalTranslation": "Maasai Enigma #12: En-geju e-'n-gerai nanapitai. The-leg of-the-child which-is-being-carried.",
-    "meaning": "Masai matrons carry their babies fastened on to their backs, and a small leg is often to be seen dangling down, while the child's body is hidden from view.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #12, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-83",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Eim ngutunyi polos boo —",
-    "literalTranslation": "Maasai Enigma #13:",
-    "meaning": "Masai women are fond of chewing a gummy substance which exudes from certain trees. This makes their teeth stick together, and their jaws crack when they attempt to speak. If a person accosts them, and hears this noise, he may think the women are reviling him.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #13, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-84",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! E-sanapat —",
-    "literalTranslation": "Maasai Enigma #14:",
-    "meaning": "The poisoned heads of arrows are wrapped up in a strip of hide to keep the poison fresh. This strip is narrow and long, and it is wetted at one end with saliva to make it adhere.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #14, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-85",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Einosa en-gop en-gima, neingwari — E-or. The-bare-spot.",
-    "literalTranslation": "Maasai Enigma #15: E-or. The-bare-spot.",
-    "meaning": "Traditional Maasai riddle (#15): Einosa en-gop en-gima, neingwari — E-or. The-bare-spot.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #15, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-86",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Naiperipera ti-abori en-gima. — E-minyop naya 'ng-onyek. The-omental-fat which-hurt the-eyes.",
-    "literalTranslation": "Maasai Enigma #16: E-minyop naya 'ng-onyek. The-omental-fat which-hurt the-eyes.",
-    "meaning": "Traditional Maasai riddle (#16): Naiperipera ti-abori en-gima. — E-minyop naya 'ng-onyek. The-omental-fat which-hurt the-eyes.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #16, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-87",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Namununa te-'ruat. Enigma. Which-has-folded-itself in-the-bed. — El-lashei natabolutuo '1-ayok. The-louse which-they-have-uncovered the-boys.",
-    "literalTranslation": "Maasai Enigma #17: El-lashei natabolutuo '1-ayok. The-louse which-they-have-uncovered the-boys.",
-    "meaning": "Ut pulex in ruga cutis se celat, sic puella in lecto iuvene aggresso.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #17, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-88",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Namununa te-'sundai. — Eng-apyani natal a e-figorore.",
-    "literalTranslation": "Maasai Enigma #18: Eng-apyani natal a e-figorore.",
-    "meaning": "The Masai drink the hot frothing blood direct from the live cattle. After tying a leather ligature tightly round an animal's throat, an arrow is shot into one of the superficial veins of the neck. When the arrow is pulled out, the blood gushes forth, and is collected in gourds.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #18, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-89",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Nyeinna en-doki nashal natii — Ol-oiriiri. The-lizard.",
-    "literalTranslation": "Maasai Enigma #19: Ol-oiriiri. The-lizard.",
-    "meaning": "Traditional Maasai riddle (#19): Nyeinna en-doki nashal natii — Ol-oiriiri. The-lizard.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #19, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-90",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Nyelido, nyelle. — Ol-oijilili le-kulle. The-drop of-milks.",
-    "literalTranslation": "Maasai Enigma #20: Ol-oijilili le-kulle. The-drop of-milks.",
-    "meaning": "Traditional Maasai riddle (#20): Nyelido, nyelle. — Ol-oijilili le-kulle. The-drop of-milks.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #20, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-91",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Oghishi — E-mala The-gourd",
-    "literalTranslation": "Maasai Enigma #21: E-mala The-gourd",
-    "meaning": "Traditional Maasai riddle (#21): Oghishi — E-mala The-gourd.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #21, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-92",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Samburumburi saandetwa. — Ol-kila loo-'musetani. The-garment of-the-beads.",
-    "literalTranslation": "Maasai Enigma #22: Ol-kila loo-'musetani. The-garment of-the-beads.",
-    "meaning": "It is only the best dressed girls who wear skins ornamented with beads, and when they move about from one hut to another, they are supposed to resemble butterflies.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #22, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-93",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Tamanai te-idya-matwa — IL-lama. The-fruit-of-a-blood-red-colour.",
-    "literalTranslation": "Maasai Enigma #23: IL-lama. The-fruit-of-a-blood-red-colour.",
-    "meaning": "This is a common wild fruit (Ximenia americana, L.) of which the Masai are very fond. It stains everything a blood-red colour.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #23, pp. 253–259"
-  },
-  {
-    "id": "hollis-1905-maasai-94",
-    "languageId": "maasai",
-    "languageName": "Maasai (ɔl Maa)",
-    "indigenous": "Oiyote? — E-uo! Tununuko 'n-dapan, maape Kinokop. Enigma. Fold the-skins, let-us:go Kinangop. — 'N-gido2go oo-'n-diain. The-tails of-the-bitches.",
-    "literalTranslation": "Maasai Enigma #24: 'N-gido2go oo-'n-diain. The-tails of-the-bitches.",
-    "meaning": "Traditional Maasai riddle (#24): Tununuko 'n-dapan, maape Kinokop. Enigma. Fold the-skins, let-us:go Kinangop. — 'N-gido2go oo-'n-diain. The-tails of-the-bitches.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1905) 'The Masai: Their Language and Folklore', Enigma #24, pp. 253–259"
-  },
-  {
-    "id": "hollis-1909-nandi-1",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Man who-is-eaten-by the-buffalo and-if-he-sees ox black and-he-says it-has-arrived.",
-    "literalTranslation": "If a man has been once tossed by a buffalo he thinks when he sees a black ox coming towards him that it is another buffalo.",
-    "meaning": "'Once bit, twice shy.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #1"
-  },
-  {
-    "id": "hollis-1909-nandi-2",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-bears lion hyena.",
-    "literalTranslation": "The lion bears a hyena.",
-    "meaning": "Said when a son is unworthy of his father.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #2"
-  },
-  {
-    "id": "hollis-1909-nandi-3",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Try-thyself the-arm-clamp; if-it-suits-thee and-thou-wearest-it, if-it-not-suits-thee and-thou-throwest-it-away.",
-    "literalTranslation": "Try this arm clamp; if it fits you, wear it, if it does not fit you, throw it away.",
-    "meaning": "Don't wear an ornament if it inconveniences you, and don't do anything for show unless you derive some benefit from your action.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #3"
-  },
-  {
-    "id": "hollis-1909-nandi-4",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "(Even)-if-thou-art clever, dost-thou-see-thyself nape-of-the-neck?",
-    "literalTranslation": "However clever you may be, can you see the back of your neck?",
-    "meaning": "Said to a boaster.",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #4"
-  },
-  {
-    "id": "hollis-1909-nandi-5",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-I-am-divined and-he-is-divined Kipkeny.",
-    "literalTranslation": "[Kipkeny is the name of a well-known wizard who was never found out. This saying is much used by a person who boasts of having done wrong and is equivalent to: 'They might as well expect to catch Kipkeny as me.']",
-    "meaning": "Kipkeny is the name of a well-known wizard who was never found out. This saying is much used by a person who boasts of having done wrong and is equivalent to: 'They might as well expect to catch Kipkeny as me.'.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #5"
-  },
-  {
-    "id": "hollis-1909-nandi-6",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-causes-to-arise blue-duiker red-duiker.",
-    "literalTranslation": "The small gazelle (blue duiker) causes the big gazelle (red duiker) to get up.",
-    "meaning": "[The blue duiker and the red duiker feed together. If danger approaches, the former warns the latter and sets him running off. Similarly, if a rumour of small importance gets abroad, it is soon magnified and exaggerated.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #6"
-  },
-  {
-    "id": "hollis-1909-nandi-7",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "They-send hares elephant.",
-    "literalTranslation": "Send hares to the elephant, not elephants to the hare.",
-    "meaning": "It is the duty of children to wait on elders, not elders on children. '*Seniores priores.*'",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #7"
-  },
-  {
-    "id": "hollis-1909-nandi-8",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-falls ox but of-the-legs four.",
-    "literalTranslation": "The ox falls in spite of its four legs.",
-    "meaning": "A man often makes a mistake, notwithstanding the fact that he is an intelligent being. 'Accidents happen even in the best-regulated families.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #8"
-  },
-  {
-    "id": "hollis-1909-nandi-9",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "They-have-bought-themselves goat's-hide and gourd.",
-    "literalTranslation": "A goat's hide buys a goat's hide and a gourd a gourd.",
-    "meaning": "'An eye for an eye and a tooth for a tooth.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #9"
-  },
-  {
-    "id": "hollis-1909-nandi-10",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-has-been-remembering milks hunt.",
-    "literalTranslation": "He thought of milk during the hunt.",
-    "meaning": "When driven by adversity to obtain his living by hunting, a man during an arduous stalk is apt to think of the days of plenty when he could quench his thirst by copious draughts of milk. '*O fortunatos nimium, sua si bona norint.*'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #11"
-  },
-  {
-    "id": "hollis-1909-nandi-11",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "The-medicines-of-the-snake and of-the-child and-they-are-one.",
-    "literalTranslation": "It is all one whether one is bitten by an old snake or by its offspring: both are poisonous.",
-    "meaning": "A crime is none the less a crime because the person who commits it is a minor.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #12"
-  },
-  {
-    "id": "hollis-1909-nandi-12",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "They-are-alike slow-person and very-person. / fast-person.",
-    "literalTranslation": "[There is no difference between the slow speaker (or the person who speaks little) and the fast speaker (or the person who talks a great deal). It is quality not quantity that tells.]",
-    "meaning": "There is no difference between the slow speaker (or the person who speaks little) and the fast speaker (or the person who talks a great deal). It is quality not quantity that tells.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #13"
-  },
-  {
-    "id": "hollis-1909-nandi-13",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "They-are-alike raider and home-stayer.",
-    "literalTranslation": "[There is no difference in the long run between a man who raids and one who stays at home. Both run somewhat similar risks. The one may be killed in the enemy's country, the other may be killed by the enemy in his own home; and cattle diseases, drought, &c., affect both in much the same way.]",
-    "meaning": "[There is no difference in the long run between a man who raids and one who stays at home. Both run somewhat similar risks. The one may be killed in the enemy's country, the other may be killed by the enemy in his own home; and cattle diseases, drought, &c.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #14"
-  },
-  {
-    "id": "hollis-1909-nandi-14",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-is-owned-in-partnership Sun and-it-is-not-owned-in-partnership seat.",
-    "literalTranslation": "The Sun is owned by everybody, but a man's body is owned by himself alone.",
-    "meaning": "'Each for himself and God for us all.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #15"
-  },
-  {
-    "id": "hollis-1909-nandi-15",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-closed ox eye in-order-that it-may-be-bled.",
-    "literalTranslation": "Cover the eyes of the ox you wish to bleed, or he will see the preparations you are making and fidget or run away.",
-    "meaning": "'Surely in vain the net is spread in the sight of any bird.' Proverbs i. 17.",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #16"
-  },
-  {
-    "id": "hollis-1909-nandi-16",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-said the-Sun: 'I-went they-bully-me agricultural-people.'",
-    "literalTranslation": "The Sun said, 'Whatever I do, the farmers curse me. If there is no rain, they say I burn their crops; if there is much rain, they complain that I do not shine.'",
-    "meaning": "Said of discontented people.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #17"
-  },
-  {
-    "id": "hollis-1909-nandi-17",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-does-not-eat thunder tree twice.",
-    "literalTranslation": "A tree is not twice struck by lightning.",
-    "meaning": "If you have to punish a person or a tribe, do it so thoroughly that it will not require to be done a second time.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #18"
-  },
-  {
-    "id": "hollis-1909-nandi-18",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Harm does not enter where there is no opening.",
-    "literalTranslation": "External trouble does no harm if it is not taken to heart.",
-    "meaning": "'Hard words break no bones.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #19"
-  },
-  {
-    "id": "hollis-1909-nandi-19",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-slaughtered-to the-mother the-calf head.",
-    "literalTranslation": "One does not slaughter a calf before its mother's eyes.",
-    "meaning": "'Thou shalt not seethe a kid in his mother's milk.' Deut. xiv. 21.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #20"
-  },
-  {
-    "id": "hollis-1909-nandi-20",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-cut-to-ear / listened-to man he-cries.",
-    "literalTranslation": "A man who is always crying is not listened to.",
-    "meaning": "Credence is not given to a man who is always crying 'wolf'.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #21"
-  },
-  {
-    "id": "hollis-1909-nandi-21",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-worn-thither garment caterpillar.",
-    "literalTranslation": "A person does not put on a garment if there is a caterpillar in it, as its spikes will irritate him.",
-    "meaning": "'Cut off your nose to spite your face.'",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #22"
-  },
-  {
-    "id": "hollis-1909-nandi-22",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-lit fire waters.",
-    "literalTranslation": "You cannot light a fire in water.",
-    "meaning": "Said to a liar.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #23"
-  },
-  {
-    "id": "hollis-1909-nandi-23",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-thrown-away the-fruit-of-the-wild-fig-tree which-are-there below and-they-may-be-run-after which-are-there above.",
-    "literalTranslation": "Don't throw away the figs which grow at the bottom of the tree and hasten to pick those which grow at the top.",
-    "meaning": "'A bird in the hand is worth two in the bush.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #24"
-  },
-  {
-    "id": "hollis-1909-nandi-24",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-despised iron fire.",
-    "literalTranslation": "Do not despise a piece of iron in the fire, for it will not be burnt, but when red hot it will be beaten into shape and may possibly become a formidable weapon.",
-    "meaning": "Despise not your enemies when they are in straitened circumstances.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #25"
-  },
-  {
-    "id": "hollis-1909-nandi-25",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-gone-in-the-morning-to house-of-warriors. / kraal-of-warriors.",
-    "literalTranslation": "It is not usual to pay a visit to the warriors' hut in the early morning, as the visitor may be mistaken for a thief and killed.",
-    "meaning": "'Look before you leap.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #26"
-  },
-  {
-    "id": "hollis-1909-nandi-26",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-said thing mouth.",
-    "literalTranslation": "Do not say the first thing that comes into your head.",
-    "meaning": "'Think twice before you speak.'",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #27"
-  },
-  {
-    "id": "hollis-1909-nandi-27",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-shown-to hyena bite.",
-    "literalTranslation": "Don't show a hyena how well you can bite, for his jaws are more powerful than yours.",
-    "meaning": "'Pride comes before a fall.'",
-    "theme": "humility",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #28"
-  },
-  {
-    "id": "hollis-1909-nandi-28",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "They-are-not-guarded eleusine-grains for-nothing and-they-eat-not pigs.",
-    "literalTranslation": "Don't guard your plantations until the pigs begin to enter.",
-    "meaning": "Don't wear yourself out by needless work, for the time will come when you will require all your strength.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #29"
-  },
-  {
-    "id": "hollis-1909-nandi-29",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-caused-to-rescue man fire.",
-    "literalTranslation": "A man cannot be saved if he wishes to throw himself in the fire, and a quarrelsome person is sure to come to harm in course of time.",
-    "meaning": "A man cannot be saved if he wishes to throw himself in the fire, and a quarrelsome person is sure to come to harm in course of time.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #30"
-  },
-  {
-    "id": "hollis-1909-nandi-30",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-disliked the-house-of the-person-one-hears-is-coming-hither and-it-is-not-slept the-house.",
-    "literalTranslation": "One cannot say that one dislikes the house of somebody one has heard about if one has not had an opportunity of sleeping in his house.",
-    "meaning": "Do not condemn a person on hearsay.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #31"
-  },
-  {
-    "id": "hollis-1909-nandi-31",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-finished remorse.",
-    "literalTranslation": "After a foolish action comes the remorse.",
-    "meaning": "After a foolish action comes the remorse.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #32"
-  },
-  {
-    "id": "hollis-1909-nandi-32",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-washed-to hand woman. Ma-ki-ōt-e korko.",
-    "literalTranslation": "A man does not wash a woman's hand.",
-    "meaning": "*Nandi outpost (Meinertzhagen).* *Nandi outpost (Author).* *To face p. 129* Also: A man does not slave for a woman. [It is a woman's duty to wait on her husband and on her husband's guests.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #33"
-  },
-  {
-    "id": "hollis-1909-nandi-33",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-does-not-die man of man.",
-    "literalTranslation": "A man may strike a man, but death is sent to him by God.",
-    "meaning": "A man may strike a man, but death is sent to him by God.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #34"
-  },
-  {
-    "id": "hollis-1909-nandi-34",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-there shame one-sided / one-edged like knife.",
-    "literalTranslation": "Shame is not one-edged like a knife; it cuts in every direction and goes deep into one's heart; or it affects the relations as well as the guilty person.",
-    "meaning": "Shame is not one-edged like a knife; it cuts in every direction and goes deep into one's heart; or it affects the relations as well as the guilty person.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #35"
-  },
-  {
-    "id": "hollis-1909-nandi-35",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-there death the-one who-draws-for the-other waters.",
-    "literalTranslation": "One death does not draw water for another death.",
-    "meaning": "Death fights his own battles unassisted, and always wins in the end.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #36"
-  },
-  {
-    "id": "hollis-1909-nandi-36",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-not-there saying which-has-not river. / proverb.",
-    "literalTranslation": "There is no saying without a double meaning.",
-    "meaning": "Look for a hidden meaning in every word that is spoken.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #37"
-  },
-  {
-    "id": "hollis-1909-nandi-37",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-takes-not ox-pecker-bird / beefeater-bird land-of-vegetables. / plantations.",
-    "literalTranslation": "The ox-pecker bird does not steal grain.",
-    "meaning": "The ox-pecker birds[^129_1] live on the ticks and insects which are to be found on every ox, donkey, or other animal, and as many as ten or even twenty are sometimes to be seen on a single cow's back.",
-    "theme": "patience",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #38"
-  },
-  {
-    "id": "hollis-1909-nandi-38",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-crosses-not fire waters.",
-    "literalTranslation": "A grass fire is stopped by a river, and an enemy or beast of prey is in a like manner hindered by a good zariba or hedge.",
-    "meaning": "A grass fire is stopped by a river, and an enemy or beast of prey is in a like manner hindered by a good zariba or hedge.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #39"
-  },
-  {
-    "id": "hollis-1909-nandi-39",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-has-not thief the-stranger.",
-    "literalTranslation": "A born thief will respect nothing, not even hospitality, and will as soon steal from his host as from anybody else.",
-    "meaning": "A born thief will respect nothing, not even hospitality, and will as soon steal from his host as from anybody else.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #40"
-  },
-  {
-    "id": "hollis-1909-nandi-40",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-has-not the-trade sister.",
-    "literalTranslation": "If a man wishes to make a bargain, he will cheat his own sister.",
-    "meaning": "If a man wishes to make a bargain, he will cheat his own sister.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #41"
-  },
-  {
-    "id": "hollis-1909-nandi-41",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-refuses-not hyena for-nothing the-journey-of-morning.",
-    "literalTranslation": "A hyena does not remain out during the hot hours of the day unless there is some reason for it.",
-    "meaning": "If one notices a change in the habits of a man or in the tactics of a foe, there is always some cause for it, and it is as well to be on one's guard.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #42"
-  },
-  {
-    "id": "hollis-1909-nandi-42",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Do-not-be-puffed-up who-are-puffed-up Cheptol.",
-    "literalTranslation": "Do not be puffed up like the people of Cheptol.",
-    "meaning": "On one occasion when a great raid was projected the people of Cheptol, one of the geographical divisions, are said to have slaughtered and eaten all their oxen, so certain were they that they would capture large herds of cattle.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #43"
-  },
-  {
-    "id": "hollis-1909-nandi-43",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Do-not-take the-by-path, take the-broad-road. Me-torok-te, têk-u.",
-    "literalTranslation": "[A favourite saying when bidding a person farewell. Thieves and wild animals are supposed to frequent the by-paths; honest people and cattle use the broad roads.]",
-    "meaning": "Another proverb of a like nature is the following:— If you see danger ahead, do not take any risk and go to meet it; hide by the roadside till the danger has passed.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #44"
-  },
-  {
-    "id": "hollis-1909-nandi-44",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "He-bellows-not bull the-countries two.",
-    "literalTranslation": "A bull cannot bellow in two places at once.",
-    "meaning": "A bull cannot bellow in two places at once.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #45"
-  },
-  {
-    "id": "hollis-1909-nandi-45",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "It-is-brown hyena but-it-is-clawed.",
-    "literalTranslation": "",
-    "meaning": "Although the hyena is brown in colour it has the marks of people's nails on its body (stripes).",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #46"
-  },
-  {
-    "id": "hollis-1909-nandi-46",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "(Even)-if-he-is-clever thief, and-he-is-more-so the-person-who-finds-him-out.",
-    "literalTranslation": "However clever a rogue may be, when he is found out he must admit that there is somebody cleverer than he.",
-    "meaning": "However clever a rogue may be, when he is found out he must admit that there is somebody cleverer than he.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #47"
-  },
-  {
-    "id": "hollis-1909-nandi-47",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "(Even)-if-it-is-big elephant and-it-does-not-bear the-calves two.",
-    "literalTranslation": "Notwithstanding the fact that the elephant is a big animal, it does not give birth to more than one at a time.",
-    "meaning": "However generous a rich man may be, there is a limit to everybody's generosity.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #48"
-  },
-  {
-    "id": "hollis-1909-nandi-48",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Let-us-put-together-in tremble leg-one.",
-    "literalTranslation": "Let us put our trembling legs together in one place, and we shall obtain support one from the other.",
-    "meaning": "The necessity of joint action *or* 'Union is strength'.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #49"
-  },
-  {
-    "id": "hollis-1909-nandi-49",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-thou-seizest child knife and-thou-coaxest-him tree.",
-    "literalTranslation": "If you take a knife away from a child, give him a piece of wood instead.",
-    "meaning": "If you have to perform an unpleasant duty and hurt a person's feelings, do it as gently as possible.",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #50"
-  },
-  {
-    "id": "hollis-1909-nandi-50",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-it-falls tree which-is-dry and-it-takes-with-it which-is-green.",
-    "literalTranslation": "If a dead tree falls, it carries with it a live one.",
-    "meaning": "If a criminal is punished, his innocent relations suffer as well.",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #51"
-  },
-  {
-    "id": "hollis-1909-nandi-51",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-he-bewitches man he-goat, and-thou-bewitchest-not bull.",
-    "literalTranslation": "Because a man has injured your goat, do not injure his bull.",
-    "meaning": "Do not seek revenge.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #52"
-  },
-  {
-    "id": "hollis-1909-nandi-52",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-it-falls-into feather fire and-it-crosses all? 'Ñgo-'put-yi tany kering ko-mo-loñg-u kororik.",
-    "literalTranslation": "If a feather falls into the fire, can it be wholly saved?",
-    "meaning": "Also: If an ox falls into a pit, it will at least leave some of its hairs at the bottom. [If a foe attacks you, you will suffer some damage, even if you are in a position to beat him off.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #53"
-  },
-  {
-    "id": "hollis-1909-nandi-53",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "If-it-stinks rat and-it-goes home.",
-    "literalTranslation": "If a rat stinks, it goes home; and if a man is ill, he goes to his relations to be attended to and cared for.",
-    "meaning": "'Blood is thicker than water.'",
-    "theme": "family",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #54"
-  },
-  {
-    "id": "hollis-1909-nandi-54",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Uncircumcised-girl darkness. / no-moon.",
-    "literalTranslation": "Darkness is like an uncircumcised girl.",
-    "meaning": "Just as an uncircumcised girl, who only wears a small apron of strips of leather, feels no shame, so a woman does not mind being naked in the dark.",
-    "theme": "wisdom",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #55"
-  },
-  {
-    "id": "hollis-1909-nandi-55",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Pleasant it-may-be of-animal bitter it-may-be of-man.",
-    "literalTranslation": "What is pleasant to an animal may be bitter to a man.",
-    "meaning": "'One man's meat is another man's poison.'",
-    "theme": "unity",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #56"
-  },
-  {
-    "id": "hollis-1909-nandi-56",
-    "languageId": "kalenjin",
-    "languageName": "Kalenjin (Nandi)",
-    "indigenous": "Look! land-this it-cultivated thunder.",
-    "literalTranslation": "Look! This land has been struck by lightning.",
-    "meaning": "Said of a plot made ready for planting where the soil has been well turned over. It is supposed that the earth has been torn to pieces like a tree struck by lightning.",
-    "theme": "nature",
-    "sourceCitation": "A. C. Hollis (1909) 'The Nandi: Their Language and Folk-Lore', Proverb #57"
-  },
-  {
-    "id": "beech-1911-pokot-2",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-    "literalTranslation": "When may I be said to be washing myself in a cup made of a goat's horn? — Answer: A-white-ant's-hill.",
-    "meaning": "Pokot riddle (Tiangoi #2): When may I be said to be washing myself in a cup made of a goat's horn? When I am taking ants out of an ant-hill. [These hills, often ten feet high, are hollow, and not unlike a horn. From them the Suk collect the termites for food.] Answer: A-white-ant's-hill..",
-    "theme": "humility",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #2, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-3",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Rel-e' ti'-chu lopai pirir kirokit. — Kelat ngô ñgaliep.",
-    "literalTranslation": "— Answer: Teeth and tongue.",
-    "meaning": "Pokot riddle (Tiangoi #3): Answer: Teeth and tongue..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #3, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-4",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Ka-terer-an ôr. — Arawaʻ.",
-    "literalTranslation": "— Answer: The-moon.",
-    "meaning": "Pokot riddle (Tiangoi #4): Answer: The-moon..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #4, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-5",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Ko-choit-a' sirim-nyon kowoʻ kiau. — Ôr ny'o-wet-ei.",
-    "literalTranslation": "I threw away a chain and it went far into the open plain. — Answer: The-road which-I-shall-take.",
-    "meaning": "Pokot riddle (Tiangoi #5): I threw away a chain and it went far into the open plain. [If one throws out a long chain, the curves it takes are not unlike a winding native path before one.] Answer: The-road which-I-shall-take..",
-    "theme": "unity",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #5, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-7",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Ko-wuit-a' minyon to chep-toyaʻ. — Yim.",
-    "literalTranslation": "— Answer: Clear (dark blue",
-    "meaning": "Pokot riddle (Tiangoi #7): Answer: Clear (dark blue.",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #7, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-8",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Ko-lit-a' ñgeñg ke-pirir met. — Terema.",
-    "literalTranslation": "[An arrow is shot into the neck-veins of the ox so as to draw its blood without killing it. The neck of the ox is the salt-lick.] — Answer: Bleeding-arrow.",
-    "meaning": "Pokot riddle (Tiangoi #8): [An arrow is shot into the neck-veins of the ox so as to draw its blood without killing it. The neck of the ox is the salt-lick.] Answer: Bleeding-arrow..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #8, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-10",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Mit-o kwan mu. — Kô ole-mi pich.",
-    "literalTranslation": "A house with men in it. — Answer: A-house where-there-are men.",
-    "meaning": "Pokot riddle (Tiangoi #10): A house with men in it. Answer: A-house where-there-are men..",
-    "theme": "family",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #10, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-11",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Mi kokel opelion. — Ki-sion.",
-    "literalTranslation": "[These berries are round and yellow, and grow all over the plain.] — Answer: Solanum-fruit.",
-    "meaning": "Pokot riddle (Tiangoi #11): [These berries are round and yellow, and grow all over the plain.] Answer: Solanum-fruit..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #11, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-12",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! K-o-p-a' set-a-pogh ka-ma-iyit-an. — Krīsioʻ.",
-    "literalTranslation": "— Answer: An-udder.",
-    "meaning": "Pokot riddle (Tiangoi #12): Answer: An-udder..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #12, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-13",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! Ko-lim-anan atô-ocha loh. — Kadoñgut.",
-    "literalTranslation": "— Answer: A-cow-bell.",
-    "meaning": "Pokot riddle (Tiangoi #13): Answer: A-cow-bell..",
-    "theme": "nature",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #13, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-15",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! O-cha kogh ma-mi-nye. — Ôr.",
-    "literalTranslation": "— Answer: A-road.",
-    "meaning": "Pokot riddle (Tiangoi #15): Answer: A-road..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #15, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-16",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! I-chi nyelnyel ngô auü. — Sirim-nyon.",
-    "literalTranslation": "— Answer: A-chain.",
-    "meaning": "Pokot riddle (Tiangoi #16): Answer: A-chain..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #16, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-17",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! O-mwuich-a' tuku'-lopai. — Ñgaliep.",
-    "literalTranslation": "I am lord of all. — Answer: The-tongue.",
-    "meaning": "Pokot riddle (Tiangoi #17): I am lord of all. Answer: The-tongue..",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #17, pp. 43–46"
-  },
-  {
-    "id": "beech-1911-pokot-18",
-    "languageId": "pokot",
-    "languageName": "Pokot (Pökoot)",
-    "indigenous": "Tiangoi! — Tia! M-o-mwulmwul-an-nye. — Tŭl.",
-    "literalTranslation": "[Such is like a tower and firm.] — Answer: White-ant-hill.",
-    "meaning": "Pokot riddle (Tiangoi #18): [Such is like a tower and firm.] Answer: White-ant-hill.",
-    "theme": "wisdom",
-    "sourceCitation": "Mervyn W. H. Beech (1911) 'The Suk: Their Language and Folklore', Riddle #18, pp. 43–46"
   },
   {
     "id": "embu-proverb-2",
@@ -18571,7 +16911,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Magoma mairi lwanda-ni. Ni mahombo.",
-            "source": "Two cows in the open field. It is the breasts (Taylor 1891 Riddle #18)",
+            "source": "Two gourds in the open field. — Maternal nourishment (Taylor 1891 Riddle #18)",
             "pronunciation": "ma-go-ma mai-ri lwanda-ni ni ma-hombo",
             "hint": "lwanda-ni = in the open field"
           }
@@ -55437,9 +53777,1069 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "daasanach-unit-3",
+    "title": "Unit 3: Family, Kinship & the Eight Territorial Sections (Shir)",
+    "description": "Learn Daasanach kinship terms, human nouns, and the eight endogamous territorial moieties (shir) from Tosco (2001), Nishiguchi (2004), and Almagor (1978).",
+    "icon": "Users",
+    "skills": [
+      {
+        "id": "daasanach-family-kinship",
+        "title": "People, Family & Household Members",
+        "icon": "Users",
+        "description": "Master words for person, man/husband, woman/wife, child, and guest in Daasanach.",
+        "tips": "Many core human nouns in Daasanach have irregular or suppletive plurals: màà ('person') -> pl. mààddí / gál ('people'); mìnní ('woman/wife') -> pl. kààddí ('women/wives').",
+        "culturalNote": "In Daasanach ('Af Dhaasanac) hospitality around Ileret and Omorate, a guest or traveller (koydo, pl. koyda) is welcomed with milk ('éèn), water (bíyé), and the peace greeting 'Ma nagaa?'.",
+        "words": [
+          {
+            "target": "Dhaasanac",
+            "source": "Daasanach person / Daasanach people",
+            "pronunciation": "dhaa-sah-nach",
+            "hint": "Indigenous autonym (Tosco 2001)"
+          },
+          {
+            "target": "màà (pl. mààddí / gál)",
+            "source": "Person / Human being (pl. people)",
+            "pronunciation": "maa / maad-dee / gahl",
+            "hint": "Blažek (2011, p. 8, #51 & #63)"
+          },
+          {
+            "target": "màà dhií (pl. gál dhiíddí)",
+            "source": "Man / Husband (male person)",
+            "pronunciation": "maa dhee / gahl dheed-dee",
+            "hint": "Blažek (2011, p. 8, #51)"
+          },
+          {
+            "target": "mìnní (pl. kààddí)",
+            "source": "Woman / Wife (pl. women / wives)",
+            "pronunciation": "min-nee / kaad-dee",
+            "hint": "Blažek (2011, p. 11, #99)"
+          },
+          {
+            "target": "múù / 'íny (pl. 'íyyí)",
+            "source": "Child / Offspring (pl. children)",
+            "pronunciation": "muu / eeny / eey-yee",
+            "hint": "Nishiguchi (2004, p. 6: iny)"
+          },
+          {
+            "target": "koydo (pl. koyda)",
+            "source": "Guest / Visitor / Stranger",
+            "pronunciation": "koy-doh / koy-dah",
+            "hint": "Nishiguchi (2004, p. 13)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "màà dhií — mìnní",
+            "source": "Man / husband — Woman / wife"
+          },
+          {
+            "target": "koydo (pl. koyda)",
+            "source": "Guest (pl. guests)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the Daasanach word for 'Woman / Wife' (pl. kààddí)?",
+            "correctAnswer": "mìnní (pl. kààddí)",
+            "options": [
+              "mìnní (pl. kààddí)",
+              "màà dhií (pl. gál dhiíddí)",
+              "koydo (pl. koyda)",
+              "múù / 'íny (pl. 'íyyí)"
+            ],
+            "hint": "Blažek (2011, p. 11, #99)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach human noun with its English meaning:",
+            "correctAnswer": "màà: Person / Human being",
+            "pairs": [
+              {
+                "left": "màà",
+                "right": "Person / Human being"
+              },
+              {
+                "left": "mìnní",
+                "right": "Woman / Wife"
+              },
+              {
+                "left": "'íny",
+                "right": "Child / Offspring"
+              },
+              {
+                "left": "koydo",
+                "right": "Guest / Visitor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daasanach-shir-dimi-heritage",
+        "title": "The Eight Tribal Sections (Shir) & Dimi Festival",
+        "icon": "Crown",
+        "description": "Explore the eight territorial sections (shir) of the Daasanach nation and the Dimi blessing ceremony.",
+        "tips": "The Daasanach nation is organized into eight territorial sections (shir), each with its own settlement rights and age-set responsibilities along the Omo River delta and northeastern Lake Turkana.",
+        "words": [
+          {
+            "target": "Dímì",
+            "source": "Annual paternal blessing ceremony for daughters and age-set elders",
+            "pronunciation": "dee-mee",
+            "hint": "Almagor (1978) & Tosco (2001)"
+          },
+          {
+            "target": "'Ínkoria & Nààríc",
+            "source": "The two largest Daasanach territorial sections (Shir) along the Omo and Ileret shore",
+            "pronunciation": "een-koh-ree-ah & naa-reech",
+            "hint": "Tosco (2001)"
+          },
+          {
+            "target": "Ràndál & Koro",
+            "source": "Daasanach sections of historic Rendille and Samburu origin",
+            "pronunciation": "rahn-dahl & koh-roh",
+            "hint": "Almagor (1978) & Tosco (2001)"
+          },
+          {
+            "target": "'Órò, Ríìlè, Ngólòbò & 'Éléle",
+            "source": "Riverine and delta territorial sections of the Daasanach",
+            "pronunciation": "oh-roh, ree-leh, ngoh-loh-boh, eh-leh-leh",
+            "hint": "Tosco (2001)"
+          },
+          {
+            "target": "Reshiat, Buma & Marle",
+            "source": "1888 historical names recorded by Lieut. Ludwig von Höhnel at northern Lake Rudolf",
+            "pronunciation": "reh-shee-aht, boo-mah, mahr-leh",
+            "hint": "Höhnel (1894, Vol. I, pp. 161–175)"
+          },
+          {
+            "target": "géléb",
+            "source": "Traditional Daasanach dome-hut village / pastoral kraal",
+            "pronunciation": "geh-leb",
+            "hint": "Höhnel (1894) & Tosco (2001)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Dímì: gáàl, sé, 'áyyì, súùb, bún",
+            "source": "The Dimi ceremony: camels, cattle, small stock, butter, and coffee beans"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the name of the major annual Daasanach festival in which fathers bless their daughters for marriage and elders are anointed with butter (súùb)?",
+            "correctAnswer": "Dímì",
+            "options": [
+              "Dímì",
+              "géléb",
+              "koydo",
+              "Reshiat"
+            ],
+            "hint": "Almagor (1978) & Tosco (2001)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daasanach-unit-4",
+    "title": "Unit 4: Complete Anatomical Lexicon & Body Care",
+    "description": "Master 15 additional Daasanach anatomical nouns from Václav Blažek's (2011) 100-word Swadesh reconstruction and Mauro Tosco (2001).",
+    "icon": "Heart",
+    "skills": [
+      {
+        "id": "daasanach-body-limbs-organs",
+        "title": "Limbs, Organs & Internal Anatomy",
+        "icon": "Heart",
+        "description": "Learn Daasanach nouns for hand/arm, foot/leg, knee, bone, heart, liver, and blood.",
+        "tips": "Notice how coronal sibilant stems like gàs ('foot/leg') form their plural in gàsú (or gac-cu in Ileret speech, Nishiguchi 2004, p. 3).",
+        "words": [
+          {
+            "target": "gíl (pl. gíllí)",
+            "source": "Hand / Arm",
+            "pronunciation": "geel / geel-lee",
+            "hint": "Blažek (2011, p. 7, #37)"
+          },
+          {
+            "target": "gàs (pl. gàsú)",
+            "source": "Foot / Leg",
+            "pronunciation": "gahs / gah-suu",
+            "hint": "Blažek (2011, p. 7, #30)"
+          },
+          {
+            "target": "kúrr (pl. kúrrú)",
+            "source": "Knee",
+            "pronunciation": "kurr / kur-ruu",
+            "hint": "Blažek (2011, p. 7, #43)"
+          },
+          {
+            "target": "láf (pl. láffú / láfù)",
+            "source": "Bone",
+            "pronunciation": "lahf / lahf-fuu",
+            "hint": "Blažek (2011, p. 5, #10)"
+          },
+          {
+            "target": "wàzàn (pl. wàzànnú)",
+            "source": "Heart",
+            "pronunciation": "wah-zahn / wah-zahn-nuu",
+            "hint": "Blažek (2011, p. 7, #40)"
+          },
+          {
+            "target": "tír (pl. tírrí)",
+            "source": "Liver",
+            "pronunciation": "teer / teer-ree",
+            "hint": "Blažek (2011, p. 7, #47)"
+          },
+          {
+            "target": "fáàg (pl. fáàggú)",
+            "source": "Blood",
+            "pronunciation": "faag / faag-guu",
+            "hint": "Blažek (2011, p. 5, #9)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "gíl — gàs — kúrr",
+            "source": "Hand/arm — Foot/leg — Knee"
+          },
+          {
+            "target": "wàzàn — tír — láf",
+            "source": "Heart — Liver — Bone"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Daasanach noun means 'Heart' (< East Cushitic *wadan-)?",
+            "correctAnswer": "wàzàn (pl. wàzànnú)",
+            "options": [
+              "wàzàn (pl. wàzànnú)",
+              "tír (pl. tírrí)",
+              "láf (pl. láffú / láfù)",
+              "gíl (pl. gíllí)"
+            ],
+            "hint": "Blažek (2011, p. 7, #40)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach anatomical term with its English translation:",
+            "correctAnswer": "gíl: Hand / Arm",
+            "pairs": [
+              {
+                "left": "gíl",
+                "right": "Hand / Arm"
+              },
+              {
+                "left": "gàs",
+                "right": "Foot / Leg"
+              },
+              {
+                "left": "kúrr",
+                "right": "Knee"
+              },
+              {
+                "left": "láf",
+                "right": "Bone"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daasanach-mouth-skin-speech",
+        "title": "Mouth, Speech, Skin & Surface Anatomy",
+        "icon": "BookOpen",
+        "description": "Learn Daasanach terms for mouth/language ('áf), tongue, tooth, skin, hair/feather, and belly.",
+        "tips": "Just as in Somali (Af-Soomaali) and Rendille (Af-Rendille), the noun 'áf means both 'mouth' and 'language' ('Af Dhaasanac = 'the Daasanach language').",
+        "words": [
+          {
+            "target": "'áf (pl. 'áffú)",
+            "source": "Mouth / Language",
+            "pronunciation": "ahf / ahf-fuu",
+            "hint": "Blažek (2011, p. 8, #55)"
+          },
+          {
+            "target": "'érré (pl. 'érréddí)",
+            "source": "Tongue",
+            "pronunciation": "er-reh / er-red-dee",
+            "hint": "Blažek (2011, p. 10, #89)"
+          },
+          {
+            "target": "kììkìt (pl. kììkù)",
+            "source": "Tooth (pl. teeth)",
+            "pronunciation": "kee-kit / kee-kuu",
+            "hint": "Blažek (2011, p. 10, #90)"
+          },
+          {
+            "target": "góng (pl. góngú)",
+            "source": "Skin / Hide",
+            "pronunciation": "gohng / gohng-uu",
+            "hint": "Blažek (2011, p. 9, #75)"
+          },
+          {
+            "target": "zúùr (pl. zúùrrí)",
+            "source": "Hair / Feather",
+            "pronunciation": "zuur / zuur-ree",
+            "hint": "Blažek (2011, pp. 6–7, #27 & #36)"
+          },
+          {
+            "target": "géèr (pl. géèrrí)",
+            "source": "Belly / Abdomen",
+            "pronunciation": "geer / geer-ree",
+            "hint": "Blažek (2011, p. 5, #5)"
+          },
+          {
+            "target": "fàrr (pl. fàrrú)",
+            "source": "Finger (pl. fingers)",
+            "pronunciation": "farr / far-ruu",
+            "hint": "Nishiguchi (2004, p. 6)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "'Af Dhaasanac",
+            "source": "The Daasanach language (lit. 'Mouth of the Daasanach')"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does the Daasanach noun \"'áf\" mean?",
+            "correctAnswer": "Mouth / Language",
+            "options": [
+              "Mouth / Language",
+              "Tongue",
+              "Tooth (pl. teeth)",
+              "Skin / Hide"
+            ],
+            "hint": "Appears in the language name 'Af Dhaasanac"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daasanach-unit-5",
+    "title": "Unit 5: Pastoral Livestock, Lake Turkana Fisheries & Wildlife",
+    "description": "Master the Daasanach pastoral lexicon (cattle, camels, goats, donkeys) and Lake Turkana aquatic/savanna fauna.",
+    "icon": "Compass",
+    "skills": [
+      {
+        "id": "daasanach-pastoral-herds",
+        "title": "Pastoral Herds: Cattle, Camels, Goats & Donkeys",
+        "icon": "Star",
+        "description": "Learn the core livestock vocabulary of the Daasanach pastoral economy in Marsabit County.",
+        "tips": "Like other East Cushitic languages, 'cow' (sé) has a suppletive collective plural gùù ('cattle'), while gáàl ('camel') forms its plural by liquid gemination: gáàllí ('camels', Nishiguchi 2004, p. 6).",
+        "words": [
+          {
+            "target": "sé (pl. gùù)",
+            "source": "Cow (pl. cattle)",
+            "pronunciation": "seh / guu",
+            "hint": "Blažek (2011, p. 6, #18)"
+          },
+          {
+            "target": "gáàl (pl. gáàllí)",
+            "source": "Camel (pl. camels)",
+            "pronunciation": "gaal / gaal-lee",
+            "hint": "Nishiguchi (2004, p. 6)"
+          },
+          {
+            "target": "'áyyì / rí (pl. ríddí)",
+            "source": "Goat / Sheep and goats (small stock)",
+            "pronunciation": "ahy-yee / ree / reed-dee",
+            "hint": "Nishiguchi (2004, p. 11) & Tosco (2001)"
+          },
+          {
+            "target": "'ólò (pl. 'ólòddí)",
+            "source": "Donkey (pl. donkeys)",
+            "pronunciation": "oh-loh / oh-lod-dee",
+            "hint": "Höhnel (1894, p. 166) & Tosco (2001)"
+          },
+          {
+            "target": "chér (pl. chérrí)",
+            "source": "Dog (pl. dogs)",
+            "pronunciation": "cher / cher-ree",
+            "hint": "Blažek (2011, p. 6, #19)"
+          },
+          {
+            "target": "gáàs (pl. gáàsú)",
+            "source": "Horn (of cattle or antelope)",
+            "pronunciation": "gaas / gaa-suu",
+            "hint": "Blažek (2011, p. 7, #41)"
+          },
+          {
+            "target": "hèèk (pl. hèèkkú)",
+            "source": "Tail",
+            "pronunciation": "heek / heek-kuu",
+            "hint": "Blažek (2011, p. 10, #85)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "sé (pl. gùù) — gáàl (pl. gáàllí)",
+            "source": "Cow (cattle) — Camel (camels)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say 'Camel (pl. camels)' in Daasanach?",
+            "correctAnswer": "gáàl (pl. gáàllí)",
+            "options": [
+              "gáàl (pl. gáàllí)",
+              "sé (pl. gùù)",
+              "chér (pl. chérrí)",
+              "'ólò (pl. 'ólòddí)"
+            ],
+            "hint": "Nishiguchi (2004, p. 6)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach livestock noun with its English meaning:",
+            "correctAnswer": "sé: Cow (pl. cattle)",
+            "pairs": [
+              {
+                "left": "sé",
+                "right": "Cow (pl. cattle)"
+              },
+              {
+                "left": "gáàl",
+                "right": "Camel"
+              },
+              {
+                "left": "'ólò",
+                "right": "Donkey"
+              },
+              {
+                "left": "chér",
+                "right": "Dog"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daasanach-turkana-wildlife-fish",
+        "title": "Lake Turkana Fish, Crocodiles, Birds & Savanna Wildlife",
+        "icon": "TreePine",
+        "description": "Learn Daasanach three-way number marking (collective, singulative -ti, plurative -u) across fish, birds, and wildlife.",
+        "tips": "Transnumeral collectives like bêèch ('fish') and kìdìny ('birds') add singulative -tì for a single individual (bêèch-tì 'one fish', kìdìny-tì 'one bird') and plurative -ù for multiple individuals (bêèch-ù, kìdìny-ù).",
+        "words": [
+          {
+            "target": "bêèch (sg. bêèch-tì, pl. bêèch-ù)",
+            "source": "Fish (collective -> a single fish -> fishes)",
+            "pronunciation": "beech / beech-tee / beech-uu",
+            "hint": "Blažek (2011, p. 6, #29)"
+          },
+          {
+            "target": "kìdìny (sg. kìdìny-tì, pl. kìdìny-ù)",
+            "source": "Bird (collective -> a single bird -> birds)",
+            "pronunciation": "kee-deeny / kee-deeny-tee",
+            "hint": "Blažek (2011, p. 5, #7)"
+          },
+          {
+            "target": "nyáàng (pl. nyáàngú)",
+            "source": "Crocodile (of Lake Turkana and the Omo River)",
+            "pronunciation": "nyaang / nyaang-uu",
+            "hint": "Nishiguchi (2004, p. 4)"
+          },
+          {
+            "target": "lúùb (pl. lúùbbú)",
+            "source": "Lion",
+            "pronunciation": "luub / luub-buu",
+            "hint": "Nishiguchi (2004, p. 4)"
+          },
+          {
+            "target": "'árb (pl. 'árbú)",
+            "source": "Elephant",
+            "pronunciation": "ahrb / ahr-buu",
+            "hint": "Nishiguchi (2004, p. 3)"
+          },
+          {
+            "target": "tóòr (pl. tóòrrí)",
+            "source": "Snake",
+            "pronunciation": "toor / toor-ree",
+            "hint": "Nishiguchi (2004, p. 6)"
+          },
+          {
+            "target": "'íngìr (sg. 'íngìr-tì)",
+            "source": "Louse",
+            "pronunciation": "een-geer / een-geer-tee",
+            "hint": "Blažek (2011, p. 8, #49)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "bêèch → bêèch-tì → bêèch-ù",
+            "source": "fish (coll.) → a fish (sg.) → fishes (pl.)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Daasanach noun refers to the Nile crocodile of Lake Turkana and the Omo River?",
+            "correctAnswer": "nyáàng (pl. nyáàngú)",
+            "options": [
+              "nyáàng (pl. nyáàngú)",
+              "lúùb (pl. lúùbbú)",
+              "'árb (pl. 'árbú)",
+              "tóòr (pl. tóòrrí)"
+            ],
+            "hint": "Nishiguchi (2004, p. 4)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daasanach-unit-6",
+    "title": "Unit 6: Omo Delta & Lake Turkana Ecology, Sky & Elements",
+    "description": "Explore water, river/lake, sun, moon, stars, rain, trees, and genitive compounds (-iet) in Daasanach.",
+    "icon": "Sun",
+    "skills": [
+      {
+        "id": "daasanach-water-sky-weather",
+        "title": "Water, River/Lake, Sun, Moon & Rain",
+        "icon": "Sun",
+        "description": "Learn core environmental and celestial nouns from Blažek (2011) and Tosco (2001).",
+        "tips": "Like Somali biyo and Rendilleiche, Daasanach bíyé ('water') is grammatically plural in origin (< Omo-Tana *biy-).",
+        "words": [
+          {
+            "target": "bíyé",
+            "source": "Water",
+            "pronunciation": "bee-yeh",
+            "hint": "Blažek (2011, p. 10, #94)"
+          },
+          {
+            "target": "nóòg (pl. nóòggú)",
+            "source": "River / Lake (the Omo River & Lake Turkana)",
+            "pronunciation": "noog / noog-guu",
+            "hint": "Tosco (2001)"
+          },
+          {
+            "target": "'áázù",
+            "source": "Sun / Daytime",
+            "pronunciation": "aa-zuu",
+            "hint": "Blažek (2011, p. 10, #83)"
+          },
+          {
+            "target": "gùùr (pl. gùùrrí)",
+            "source": "Moon / Month",
+            "pronunciation": "guur / guur-ree",
+            "hint": "Blažek (2011, p. 8, #53)"
+          },
+          {
+            "target": "hìzìn (sg. hìzìn-tì, pl. hìzìn-ù)",
+            "source": "Star (pl. stars)",
+            "pronunciation": "hee-zeen / hee-zeen-tee",
+            "hint": "Blažek (2011, p. 10, #81)"
+          },
+          {
+            "target": "'írr (or Wáàg)",
+            "source": "Rain / Sky (Wáàg = God / Supreme Sky Deity)",
+            "pronunciation": "eerr / waag",
+            "hint": "Blažek (2011, p. 9, #64)"
+          },
+          {
+            "target": "kúùr (pl. kúùrrí)",
+            "source": "Cloud",
+            "pronunciation": "kuur / kuur-ree",
+            "hint": "Blažek (2011, p. 5, #15)"
+          },
+          {
+            "target": "chúùr (pl. chúùrrí)",
+            "source": "Night",
+            "pronunciation": "chuur / chuur-ree",
+            "hint": "Blažek (2011, p. 8, #58b)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "bíyé nóòg-iet",
+            "source": "The water of the river/lake"
+          },
+          {
+            "target": "'áázù — chúùr — gùùr",
+            "source": "Sun/day — Night — Moon"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the Daasanach word for 'Water'?",
+            "correctAnswer": "bíyé",
+            "options": [
+              "bíyé",
+              "'áázù",
+              "gùùr (pl. gùùrrí)",
+              "chúùr (pl. chúùrrí)"
+            ],
+            "hint": "Cognate with Somali biyo (Blažek 2011, p. 10, #94)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach nature or sky word with its English meaning:",
+            "correctAnswer": "bíyé: Water",
+            "pairs": [
+              {
+                "left": "bíyé",
+                "right": "Water"
+              },
+              {
+                "left": "'áázù",
+                "right": "Sun / Daytime"
+              },
+              {
+                "left": "gùùr",
+                "right": "Moon / Month"
+              },
+              {
+                "left": "chúùr",
+                "right": "Night"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daasanach-trees-earth-fire",
+        "title": "Trees, Earth, Stones, Fire & Genitive Compounds (-iet)",
+        "icon": "TreePine",
+        "description": "Master botanical terms, fire/ash, and how Daasanach builds genitive compounds like 'leaf' ('ear of tree').",
+        "tips": "In Daasanach, genitive/possessive compounds attach -iet to the possessor noun: góng kór-iet ('skin of tree' = bark), nèèt kór-iet ('ear of tree' = leaf).",
+        "words": [
+          {
+            "target": "kór (sg. kór-tì, pl. kór-rì)",
+            "source": "Tree / Wood / Medicine",
+            "pronunciation": "kohr / kohr-tee / kohr-ree",
+            "hint": "Blažek (2011, p. 10, #91)"
+          },
+          {
+            "target": "nèèt kór-iet",
+            "source": "Leaf (lit. 'ear of tree')",
+            "pronunciation": "neet kohr-yet",
+            "hint": "Blažek (2011, p. 7, #45)"
+          },
+          {
+            "target": "góng kór-iet",
+            "source": "Bark of tree (lit. 'skin of tree')",
+            "pronunciation": "gohng kohr-yet",
+            "hint": "Blažek (2011, p. 5, #4)"
+          },
+          {
+            "target": "hìz (pl. hìzú) & rúùb (sg. rúùb-tì)",
+            "source": "Root & Seed / Sorghum grain",
+            "pronunciation": "heez & ruub",
+            "hint": "Blažek (2011, p. 9, #67 & #73)"
+          },
+          {
+            "target": "bìì (pl. bììddí) & nyáàr",
+            "source": "Earth / Soil / Land & Sand",
+            "pronunciation": "bee & nyaar",
+            "hint": "Blažek (2011, pp. 6, 9)"
+          },
+          {
+            "target": "jáàr (sg. jáàr-tì) & wáàr (pl. wáàrrí)",
+            "source": "Stone / Rock & Mountain / Hill",
+            "pronunciation": "jaar & waar",
+            "hint": "Blažek (2011, pp. 8, 10)"
+          },
+          {
+            "target": "gíè (pl. gíèddí), 'érr & 'éèg",
+            "source": "Fire, Smoke & Ashes",
+            "pronunciation": "gee-eh, err, eeg",
+            "hint": "Blažek (2011, pp. 5, 6, 9)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "nèèt kór-iet • góng kór-iet",
+            "source": "leaf ('ear of tree') • bark ('skin of tree')"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "How does Daasanach express 'Leaf' as a genitive compound?",
+            "correctAnswer": "nèèt kór-iet",
+            "options": [
+              "nèèt kór-iet",
+              "góng kór-iet",
+              "jáàr (sg. jáàr-tì) & wáàr (pl. wáàrrí)",
+              "gíè (pl. gíèddí), 'érr & 'éèg"
+            ],
+            "hint": "Literally 'ear (nèèt) of tree (kór-iet)'"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daasanach-unit-7",
+    "title": "Unit 7: Food, Canoe Navigation & Core Action Verbs",
+    "description": "Learn Daasanach dietary staples, Lake Turkana dugout canoes (góngò), and consonant-assimilating action verbs.",
+    "icon": "Zap",
+    "skills": [
+      {
+        "id": "daasanach-food-home-canoe",
+        "title": "Pastoral Diet, Flood-Recession Sorghum & Canoes",
+        "icon": "BookOpen",
+        "description": "Master vocabulary for milk, meat, butter/oil, eggs, sorghum, houses, roads, and Lake Turkana canoes.",
+        "tips": "The noun bíl ('house/hut') forms its plural via liquid gemination: bíllí ('houses', Nishiguchi 2004, p. 4).",
+        "words": [
+          {
+            "target": "'éèn (pl. 'éènnú)",
+            "source": "Milk",
+            "pronunciation": "een / een-nuu",
+            "hint": "Nishiguchi (2004, p. 4)"
+          },
+          {
+            "target": "só (pl. sóddí)",
+            "source": "Meat / Flesh",
+            "pronunciation": "soh / sod-dee",
+            "hint": "Blažek (2011, p. 6, #29)"
+          },
+          {
+            "target": "súùb (pl. súùbbú)",
+            "source": "Butter / Fat / Ghee",
+            "pronunciation": "suub / suub-buu",
+            "hint": "Blažek (2011, p. 7, #34)"
+          },
+          {
+            "target": "góngòl (sg. góngòl-tì, pl. góngòl-ù)",
+            "source": "Egg",
+            "pronunciation": "gohn-gohl / gohn-gohl-tee",
+            "hint": "Blažek (2011, p. 6, #24)"
+          },
+          {
+            "target": "bún & rúùb",
+            "source": "Ritual roasted coffee beans & Flood-recession sorghum grain",
+            "pronunciation": "boon & ruub",
+            "hint": "Höhnel (1894, pp. 166–167)"
+          },
+          {
+            "target": "bíl (pl. bíllí) & géric (pl. géric-u)",
+            "source": "House / Dome-hut & Road / Path",
+            "pronunciation": "beel / beel-lee & geh-rich",
+            "hint": "Nishiguchi (2004, p. 4) & Blažek (2011, p. 9)"
+          },
+          {
+            "target": "góngò",
+            "source": "Dugout canoe used for fishing on Lake Turkana and the Omo River",
+            "pronunciation": "gohn-goh",
+            "hint": "Höhnel (1894, p. 165) & Tosco (2001)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "'éèn — só — súùb",
+            "source": "Milk — Meat — Butter/ghee"
+          },
+          {
+            "target": "bíl (pl. bíllí) — góngò",
+            "source": "House (houses) — Dugout canoe"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the Daasanach word for 'Milk' (< East Cushitic *'aan-)?",
+            "correctAnswer": "'éèn (pl. 'éènnú)",
+            "options": [
+              "'éèn (pl. 'éènnú)",
+              "só (pl. sóddí)",
+              "súùb (pl. súùbbú)",
+              "góngò"
+            ],
+            "hint": "Nishiguchi (2004, p. 4)"
+          }
+        ]
+      },
+      {
+        "id": "daasanach-verbs-assimilation",
+        "title": "Core Action Verbs & Sonority Assimilation",
+        "icon": "Zap",
+        "description": "Practice 12 high-frequency Daasanach verbs and their 2s/3f imperfective consonant assimilation patterns.",
+        "tips": "Remember Nishiguchi's (2004) sonority law: stem-final /m, n/ + -ta -> -nna (kóm -> kón-nà 'eats', gíìn -> gíìn-nà 'bites'); stem-final /l, r/ + -ta -> -lla / -rra (máàl -> máàl-là 'hears', fúr -> fúr-rà 'opens', báàr -> báàr-rà 'flies'); stem-final /f/ + -ta -> -ffa (ríf -> ríf-fà 'sleeps').",
+        "words": [
+          {
+            "target": "kóm (Imperf. 2s/3f kón-nà)",
+            "source": "To eat (you eat / she eats)",
+            "pronunciation": "kohm / kohn-nah",
+            "hint": "Nishiguchi (2004, p. 9)"
+          },
+          {
+            "target": "'íik (Perf. 'íiyyì, Imperf. 'íik-à)",
+            "source": "To drink",
+            "pronunciation": "eek / eey-yee / ee-kah",
+            "hint": "Blažek (2011, p. 6, #20)"
+          },
+          {
+            "target": "máàl (Imperf. 2s/3f máàl-là)",
+            "source": "To hear / listen",
+            "pronunciation": "maal / maal-lah",
+            "hint": "Nishiguchi (2004, p. 8)"
+          },
+          {
+            "target": "'árg & 'éèg",
+            "source": "To see & To know",
+            "pronunciation": "ahrg & eeg",
+            "hint": "Blažek (2011, pp. 7, 9)"
+          },
+          {
+            "target": "sédh (2s/3f sété) & yììdh",
+            "source": "To walk / go & To come",
+            "pronunciation": "sedh / seh-teh & yeedh",
+            "hint": "Blažek (2011, pp. 5, 10)"
+          },
+          {
+            "target": "ríf (2s/3f ríf-fà) & táà (kíì)",
+            "source": "To sleep / lie down & To sit / stay",
+            "pronunciation": "reef / reef-fah & taa",
+            "hint": "Nishiguchi (2004, p. 7) & Blažek (2011, p. 9)"
+          },
+          {
+            "target": "fúr (2s/3f fúr-rà) & kót (2s/3f kóttà)",
+            "source": "To open & To dig",
+            "pronunciation": "foor / foor-rah & koht / koht-tah",
+            "hint": "Nishiguchi (2004, pp. 7–8)"
+          },
+          {
+            "target": "léè (dhéè) & shíì ('úùb)",
+            "source": "To say / speak & To give",
+            "pronunciation": "lee & shee",
+            "hint": "Blažek (2011, pp. 7, 9)"
+          },
+          {
+            "target": "báàr (2s/3f báàr-rà) & zààk",
+            "source": "To fly & To swim",
+            "pronunciation": "baar / baar-rah & zaak",
+            "hint": "Blažek (2011, pp. 6, 10)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "kóm → kón-nà • máàl → máàl-là • fúr → fúr-rà • ríf → ríf-fà",
+            "source": "eat → she eats • hear → she hears • open → she opens • sleep → she sleeps"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "When the 2s/3f imperfective suffix -ta attaches to the Daasanach verb kóm ('to eat'), what form results via nasal assimilation (Nishiguchi 2004, p. 9)?",
+            "correctAnswer": "kóm (Imperf. 2s/3f kón-nà)",
+            "options": [
+              "kóm (Imperf. 2s/3f kón-nà)",
+              "máàl (Imperf. 2s/3f máàl-là)",
+              "fúr (2s/3f fúr-rà) & kót (2s/3f kóttà)",
+              "ríf (2s/3f ríf-fà) & táà (kíì)"
+            ],
+            "hint": "/kom + -ta/ -> kón-nà"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach verb with its English meaning:",
+            "correctAnswer": "kóm: To eat",
+            "pairs": [
+              {
+                "left": "kóm",
+                "right": "To eat"
+              },
+              {
+                "left": "'íik",
+                "right": "To drink"
+              },
+              {
+                "left": "máàl",
+                "right": "To hear"
+              },
+              {
+                "left": "ríf",
+                "right": "To sleep"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daasanach-unit-8",
+    "title": "Unit 8: Adjectives, Colors, Demonstratives & Interrogatives",
+    "description": "Complete your Daasanach foundation with descriptive adjectives, livestock coat colors, demonstratives, and question words.",
+    "icon": "Sparkles",
+    "skills": [
+      {
+        "id": "daasanach-adjectives-colors",
+        "title": "Descriptive Adjectives, Sizes & Colors",
+        "icon": "Sparkles",
+        "description": "Learn Daasanach adjectives for good, big, small, long/tall, new, dry, warm, cold, and primary colors.",
+        "tips": "Adjectives in Daasanach follow the noun they modify: e.g., bíl gùddá ('big house'), bíyé dhéèb ('cold water').",
+        "words": [
+          {
+            "target": "mììdhá (or déè)",
+            "source": "Good / Fine / Beautiful",
+            "pronunciation": "mee-dhaa / dee",
+            "hint": "Blažek (2011, p. 7, #33)"
+          },
+          {
+            "target": "gùddá (or wòl) vs. nììní",
+            "source": "Big / Large vs. Small / Little",
+            "pronunciation": "good-daa vs. nee-nee",
+            "hint": "Blažek (2011, pp. 5, 9)"
+          },
+          {
+            "target": "dhéèr & múùl",
+            "source": "Long / Tall & Round",
+            "pronunciation": "dheer & muul",
+            "hint": "Blažek (2011, pp. 7, 9)"
+          },
+          {
+            "target": "káàyà, gógà & múùg",
+            "source": "New, Dry & Full",
+            "pronunciation": "kaa-yah, goh-gah, muug",
+            "hint": "Blažek (2011, pp. 6–8)"
+          },
+          {
+            "target": "kúùl vs. dhéèb (qábà)",
+            "source": "Warm / Hot vs. Cold",
+            "pronunciation": "kuul vs. dheeb",
+            "hint": "Blažek (2011, pp. 5, 10)"
+          },
+          {
+            "target": "'éèz, 'úrù & búùr",
+            "source": "White / Bright, Black / Dark & Red",
+            "pronunciation": "eez, oo-ruu, buur",
+            "hint": "Blažek (2011, pp. 5, 9, 10)"
+          },
+          {
+            "target": "nyíìr & cháàr",
+            "source": "Green / Wet & Yellow / Light brown",
+            "pronunciation": "nyeer & chaar",
+            "hint": "Blažek (2011, pp. 7, 11)"
+          },
+          {
+            "target": "lábà & búr",
+            "source": "All / Whole & Many / Much",
+            "pronunciation": "lah-bah & boor",
+            "hint": "Blažek (2011, pp. 5, 8)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "'éèz (white) • 'úrù (black) • búùr (red) • nyíìr (green) • cháàr (yellow)",
+            "source": "Core Daasanach color terms (Blažek 2011)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "Which pair of Daasanach adjectives means 'Big / Large vs. Small / Little'?",
+            "correctAnswer": "gùddá (or wòl) vs. nììní",
+            "options": [
+              "gùddá (or wòl) vs. nììní",
+              "kúùl vs. dhéèb (qábà)",
+              "'éèz, 'úrù & búùr",
+              "lábà & búr"
+            ],
+            "hint": "Blažek (2011, pp. 5, 9)"
+          }
+        ]
+      },
+      {
+        "id": "daasanach-demonstratives-questions",
+        "title": "Demonstratives, Negation & Question Words",
+        "icon": "Lightbulb",
+        "description": "Master proximal/distal demonstratives (gender-marked hé/té vs. híl/tíl), yes/no particles, and interrogatives.",
+        "tips": "Demonstratives agree in grammatical gender with the noun: masculine proximal hé ('this') vs. feminine té ('this'); masculine distal híl ('that') vs. feminine tíl ('that').",
+        "words": [
+          {
+            "target": "hé (fem. té, pl. kú)",
+            "source": "This / These (proximal demonstrative)",
+            "pronunciation": "heh / teh / kuu",
+            "hint": "Blažek (2011, p. 10, #87)"
+          },
+          {
+            "target": "híl (fem. tíl)",
+            "source": "That (distal demonstrative)",
+            "pronunciation": "heel / teel",
+            "hint": "Blažek (2011, p. 10, #86)"
+          },
+          {
+            "target": "máà? / yáà?",
+            "source": "Who? (interrogative pronoun)",
+            "pronunciation": "maa / yaa",
+            "hint": "Blažek (2011, p. 10, #98)"
+          },
+          {
+            "target": "méè? / míì?",
+            "source": "What? (interrogative pronoun)",
+            "pronunciation": "mee",
+            "hint": "Blažek (2011, p. 10, #96)"
+          },
+          {
+            "target": "ee / ii vs. ma / m'ning",
+            "source": "Yes (affirmative) vs. No / Not (negative)",
+            "pronunciation": "ee / ii vs. mah / m-ning",
+            "hint": "Tosco (2001)"
+          },
+          {
+            "target": "mé (pl. méddí)",
+            "source": "Name",
+            "pronunciation": "meh / med-dee",
+            "hint": "Blažek (2011, p. 8, #56 < Cushitic *magac-)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "hé (masc.) / té (fem.) vs. híl (masc.) / tíl (fem.)",
+            "source": "this (masc./fem.) vs. that (masc./fem.)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "How does Daasanach distinguish masculine and feminine for the proximal demonstrative 'This'?",
+            "correctAnswer": "hé (fem. té, pl. kú)",
+            "options": [
+              "hé (fem. té, pl. kú)",
+              "híl (fem. tíl)",
+              "máà? / yáà?",
+              "méè? / míì?"
+            ],
+            "hint": "Blažek (2011, p. 10, #87)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Daasanach grammatical particle or pronoun with its meaning:",
+            "correctAnswer": "hé / té: This (masc. / fem.)",
+            "pairs": [
+              {
+                "left": "hé / té",
+                "right": "This (masc. / fem.)"
+              },
+              {
+                "left": "híl / tíl",
+                "right": "That (masc. / fem.)"
+              },
+              {
+                "left": "máà? / yáà?",
+                "right": "Who?"
+              },
+              {
+                "left": "méè? / míì?",
+                "right": "What?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
-
 export const DAASANACH_GRAMMAR_SECTIONS: GrammarSection[] = [
   {
     id: "daasanach-nishiguchi-2004-phonology-assimilation",

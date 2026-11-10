@@ -135,7 +135,7 @@ export default function NewPostPage() {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-text-secondary">
-          Please <Link href="/admin/login" className="text-gold">sign in</Link> to create posts.
+          Please <Link href="/admin/login/" className="text-gold">sign in</Link> to create posts.
         </p>
       </div>
     );
@@ -150,7 +150,7 @@ export default function NewPostPage() {
           </h1>
           <p className="text-text-muted text-sm">Create a new article for KenyaHub</p>
         </div>
-        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light shrink-0">
+        <Link href="/admin/posts/" className="text-sm text-gold hover:text-gold-light shrink-0">
           ← Back
         </Link>
       </header>
@@ -350,7 +350,7 @@ export default function NewPostPage() {
           <button type="submit" disabled={loading} className="btn-primary disabled:opacity-50 w-full sm:w-auto">
             {loading ? "Publishing..." : "Publish Post"}
           </button>
-          <Link href="/admin/posts" className="text-sm text-text-secondary hover:text-text-primary w-full sm:w-auto text-center">
+          <Link href="/admin/posts/" className="text-sm text-text-secondary hover:text-text-primary w-full sm:w-auto text-center">
             Cancel
           </Link>
         </div>

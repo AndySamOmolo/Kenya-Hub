@@ -76,7 +76,6 @@ export default function LearnPage() {
   }, []);
 
   const readyLangs = AVAILABLE_LANGUAGES.filter((l) => l.ready);
-  const comingLangs = AVAILABLE_LANGUAGES.filter((l) => !l.ready);
 
   return (
     <ToolShell tool={LEARN_TOOL} hideSource>
@@ -215,32 +214,6 @@ export default function LearnPage() {
                 );
               })}
             </div>
-
-            {/* Coming Soon */}
-            {comingLangs.length > 0 && (
-              <div className="mt-8">
-                <h3 className="mb-3 text-sm font-bold text-text-secondary">
-                  Coming Soon ({comingLangs.length})
-                </h3>
-                <div className="grid gap-3 sm:grid-cols-3">
-                  {comingLangs.map((lang) => (
-                    <div
-                      key={lang.id}
-                      className="rounded-xl border border-border bg-bg-card/50 p-4 opacity-60"
-                    >
-                      <div className="flex items-center gap-2.5">
-                        <span className="text-2xl"><DynamicIcon emoji={lang.flag || "🗣️"} className="w-6 h-6" /></span>
-                        <div>
-                          <div className="text-xs font-bold text-text-primary">
-                            {lang.name}
-                          </div>
-                          <div className="text-[0.6rem] text-text-muted">
-                            {lang.nativeName} · {lang.speakers}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </div>
             )}

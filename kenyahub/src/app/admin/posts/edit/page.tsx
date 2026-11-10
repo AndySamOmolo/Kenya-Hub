@@ -166,7 +166,7 @@ function EditPostContent() {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-text-secondary">No post slug provided.</p>
-        <Link href="/admin/posts" className="text-gold text-sm mt-4 inline-block">← Back to Posts</Link>
+        <Link href="/admin/posts/" className="text-gold text-sm mt-4 inline-block">← Back to Posts</Link>
       </div>
     );
   }
@@ -175,7 +175,7 @@ function EditPostContent() {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-text-secondary">
-          Please <Link href="/admin/login" className="text-gold">sign in</Link> to edit posts.
+          Please <Link href="/admin/login/" className="text-gold">sign in</Link> to edit posts.
         </p>
       </div>
     );
@@ -185,7 +185,7 @@ function EditPostContent() {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-text-secondary">Post not found.</p>
-        <Link href="/admin/posts" className="text-gold text-sm mt-4 inline-block">← Back to Posts</Link>
+        <Link href="/admin/posts/" className="text-gold text-sm mt-4 inline-block">← Back to Posts</Link>
       </div>
     );
   }
@@ -199,7 +199,7 @@ function EditPostContent() {
           </h1>
           <p className="text-text-muted text-sm">/{slug}</p>
         </div>
-        <Link href="/admin/posts" className="text-sm text-gold hover:text-gold-light shrink-0">
+        <Link href="/admin/posts/" className="text-sm text-gold hover:text-gold-light shrink-0">
           ← Back
         </Link>
       </header>

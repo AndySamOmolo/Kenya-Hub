@@ -15,11 +15,14 @@ declare global {
 
 /**
  * Routes where Google AdSense ads must NEVER be served per Google AdSense
- * Program Policies ("Google-served ads on screens without publisher-content"):
+ * Program Policies ("Google-served ads on screens without publisher-content")
+ * and Google Publisher Restrictions:
  * - Admin / login / authentication / CMS screens
  * - Legal & policy disclosure screens (Privacy, Terms)
  * - Contact & support form screens
  * - Error / 404 screens
+ * - Customs restricted/prohibited items reference (contains statutory terms for
+ *   firearms, narcotics, tobacco, and contraband that trigger automated bot restrictions)
  */
 const BLOCKED_PATH_PREFIXES = [
   "/admin",
@@ -28,6 +31,7 @@ const BLOCKED_PATH_PREFIXES = [
   "/contact",
   "/404",
   "/_not-found",
+  "/tools/kenya-customs-restricted-items",
 ];
 
 function isBlockedRoute(pathname: string | null): boolean {
@@ -38,6 +42,16 @@ function isBlockedRoute(pathname: string | null): boolean {
   );
 }
 
+function removeInjectedAutoAds() {
+  if (typeof document === "undefined") return;
+  const autoPlaced = document.querySelectorAll(
+    ".google-auto-placed, ins.adsbygoogle[data-ad-status], ins.adsbygoogle[data-adsbygoogle-status]"
+  );
+  autoPlaced.forEach((node) => {
+    node.parentElement?.removeChild(node);
+  });
+}
+
 function setAdSensePausedState(paused: boolean) {
   if (typeof window === "undefined" || typeof document === "undefined") return;
   window.adsbygoogle = window.adsbygoogle || [];
@@ -46,6 +60,9 @@ function setAdSensePausedState(paused: boolean) {
     "data-adsense-state",
     paused ? "paused" : "active"
   );
+  if (paused) {
+    removeInjectedAutoAds();
+  }
 }
 
 export default function AdSenseLoader() {
@@ -55,7 +72,7 @@ export default function AdSenseLoader() {
     if (typeof window === "undefined" || typeof document === "undefined") return;
 
     const evaluatePageCompliance = () => {
-      // 1. Block non-content, admin, legal, contact, and 404 routes
+      // 1. Block non-content, admin, legal, contact, restricted-keyword, and 404 routes
       if (isBlockedRoute(pathname)) {
         setAdSensePausedState(true);
         return;
@@ -102,7 +119,7 @@ export default function AdSenseLoader() {
 
     evaluatePageCompliance();
 
-    // Re-evaluate if DOM state changes (e.g. entering/exiting an interactive lesson or game modal)
+    // Re-evaluate if DOM state or async/dynamic child content changes
     const mainEl =
       document.getElementById("main-content") || document.querySelector("main");
     if (!mainEl) return;
@@ -112,6 +129,7 @@ export default function AdSenseLoader() {
     });
     observer.observe(mainEl, {
       attributes: true,
+      childList: true,
       subtree: true,
       attributeFilter: ["data-error-page", "data-adsense-pause"],
     });

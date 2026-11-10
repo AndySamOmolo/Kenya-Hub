@@ -56,7 +56,7 @@ export default function AdminDashboard() {
   if (!user) {
     return (
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <p className="text-text-secondary">Please <Link href="/admin/login" className="text-gold">sign in</Link> to access the admin panel.</p>
+        <p className="text-text-secondary">Please <Link href="/admin/login/" className="text-gold">sign in</Link> to access the admin panel.</p>
       </div>
     );
   }
@@ -80,7 +80,7 @@ export default function AdminDashboard() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <Link
-          href="/admin/posts"
+          href="/admin/posts/"
           className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors flex flex-col justify-between"
         >
           <div>
@@ -96,7 +96,7 @@ export default function AdminDashboard() {
         </Link>
 
         <Link
-          href="/admin/translations"
+          href="/admin/translations/"
           className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors flex flex-col justify-between relative group"
         >
           <div>
@@ -122,7 +122,7 @@ export default function AdminDashboard() {
         </Link>
 
         <Link
-          href="/admin/settings"
+          href="/admin/settings/"
           className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors flex flex-col justify-between"
         >
           <div>

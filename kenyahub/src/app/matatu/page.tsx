@@ -226,20 +226,12 @@ export default function MatatuPage() {
         <span className="text-xs text-text-muted">{activeTownsCount} active cities</span>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
-        {matatuData.towns.map((town) => (
-          town.isActive ? (
-            <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
-              <div className="flex justify-center mb-2"><DynamicIcon emoji="🚌" className="w-8 h-8 text-gold" /></div>
-              <p className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
-              <p className="text-[0.6rem] text-gold mt-1 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
-            </Link>
-          ) : (
-            <div key={town.slug} className="bg-bg-card border border-border rounded-xl p-4 text-center opacity-50">
-              <div className="flex justify-center mb-2 opacity-50"><DynamicIcon emoji="🚌" className="w-8 h-8 text-text-muted" /></div>
-              <p className="text-sm font-bold text-text-muted">{town.name}</p>
-              <p className="text-[0.6rem] text-text-muted mt-1">Coming soon</p>
-            </div>
-          )
+        {matatuData.towns.filter((town) => town.isActive).map((town) => (
+          <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
+            <div className="flex justify-center mb-2"><DynamicIcon emoji="🚌" className="w-8 h-8 text-gold" /></div>
+            <p className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
+            <p className="text-[0.6rem] text-gold mt-1 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
+          </Link>
         ))}
       </div>
 

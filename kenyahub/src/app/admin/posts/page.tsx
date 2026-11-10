@@ -45,7 +45,7 @@ export default function AdminPostsPage() {
   if (!user) {
     return (
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <p className="text-text-secondary">Please <Link href="/admin/login" className="text-gold">sign in</Link> to access this page.</p>
+        <p className="text-text-secondary">Please <Link href="/admin/login/" className="text-gold">sign in</Link> to access this page.</p>
       </div>
     );
   }
@@ -60,13 +60,13 @@ export default function AdminPostsPage() {
           <p className="text-text-muted">Manage your blog content</p>
         </div>
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
-          <Link href="/admin/translations" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
+          <Link href="/admin/translations/" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
             <DynamicIcon emoji="🗣️" className="w-4 h-4" /> Translations
           </Link>
-          <Link href="/admin/settings" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
+          <Link href="/admin/settings/" className="btn-outline w-full sm:w-auto justify-center flex items-center gap-2">
             <DynamicIcon emoji="⚙️" className="w-4 h-4" /> Settings
           </Link>
-          <Link href="/admin/posts/new" className="btn-primary w-full sm:w-auto justify-center">
+          <Link href="/admin/posts/new/" className="btn-primary w-full sm:w-auto justify-center">
             + New Post
           </Link>
         </div>

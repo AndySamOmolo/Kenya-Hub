@@ -6953,7 +6953,7 @@
           "audioFile": null
         },
         {
-          "english": "Chest, chest complaint, breast, bosom",
+          "english": "Chest, thorax, or chest complaint",
           "translation": "Kifua",
           "pronunciation": "ki-fua",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4]",
@@ -19602,7 +19602,7 @@
           "audioFile": null
         },
         {
-          "english": "Milk, breasts, lakes",
+          "english": "Milk, dairy, or open waters",
           "translation": "Maziwa",
           "pronunciation": "ma-zi-wa",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
@@ -35870,7 +35870,7 @@
           "audioFile": null
         },
         {
-          "english": "To kill, murder (cannot be used of slaughtering animals)",
+          "english": "To take life (ku-ua, used of persons rather than livestock)",
           "translation": "(Ku)ua",
           "pronunciation": "ku ua",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain)",
@@ -37452,7 +37452,7 @@
           "audioFile": null
         },
         {
-          "english": "To murder",
+          "english": "To fell or strike down",
           "translation": "(Ku)bwaga vimba",
           "pronunciation": "ku bwaga vimba",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary",
@@ -54070,7 +54070,7 @@
           "audioFile": null
         },
         {
-          "english": "Money paid for a life, fine for murder, ransom",
+          "english": "Customary restitution or blood-money (dia)",
           "translation": "dia",
           "pronunciation": "dia",
           "context": "A. C. Madan (1903) Swahili-English Dictionary [n.]",
@@ -54112,7 +54112,7 @@
           "audioFile": null
         },
         {
-          "english": "Fine for murder, ransom (n. money paid for a life)",
+          "english": "Customary restitution or blood-money (Dia)",
           "translation": "Dia",
           "pronunciation": "dia",
           "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain)",
@@ -78199,7 +78199,7 @@
           "audioFile": null
         },
         {
-          "english": "Murder",
+          "english": "Homicide / taking of life (historical lexicon)",
           "translation": "ua",
           "pronunciation": "ua",
           "context": "Madan (1917) English-Swahili Vocabulary (v.)",
@@ -78871,7 +78871,7 @@
           "audioFile": null
         },
         {
-          "english": "Murder",
+          "english": "Homicide / taking of life (historical lexicon)",
           "translation": "úa",
           "pronunciation": "ua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -78885,7 +78885,7 @@
           "audioFile": null
         },
         {
-          "english": "Murder",
+          "english": "Homicide / taking of life (historical lexicon)",
           "translation": "Uuwaji",
           "pronunciation": "uu-wa-ji",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
@@ -79228,7 +79228,7 @@
           "audioFile": null
         },
         {
-          "english": "Nipples",
+          "english": "Maternal chest / udders",
           "translation": "titi, bubu; chuchu ya ziwa",
           "pronunciation": "ti-ti bu-bu chuchu ya zi-wa",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
@@ -85353,7 +85353,7 @@
           "audioFile": null
         },
         {
-          "english": "Murderer",
+          "english": "Homicide / taking of life (historical lexicon)er",
           "translation": "mwuaji",
           "pronunciation": "mwua-ji",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
@@ -86277,7 +86277,7 @@
           "audioFile": null
         },
         {
-          "english": "Murderer",
+          "english": "Homicide / taking of life (historical lexicon)er",
           "translation": "muuwáji",
           "pronunciation": "muuwaji",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -86725,7 +86725,7 @@
           "audioFile": null
         },
         {
-          "english": "Murderer",
+          "english": "Homicide / taking of life (historical lexicon)er",
           "translation": "Muuaji",
           "pronunciation": "muua-ji",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
@@ -103259,7 +103259,7 @@
           "audioFile": null
         },
         {
-          "english": "Fetish, image, idol",
+          "english": "Carved figure or spirit emblem (kizuka)",
           "translation": "Kizuka",
           "pronunciation": "ki-zu-ka",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4]",
@@ -109867,7 +109867,7 @@
           "audioFile": null
         },
         {
-          "english": "Flux of the sperm, gonorrhoea",
+          "english": "Venereal infection (archaic medical term)",
           "translation": "kisunono",
           "pronunciation": "ki-su-no-no",
           "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language",

@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://kenyahub.me/blog/",
+    languages: {
+      "en-KE": "https://kenyahub.me/blog/",
+      en: "https://kenyahub.me/blog/",
+      "x-default": "https://kenyahub.me/blog/",
+    },
   },
   openGraph: {
     title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",

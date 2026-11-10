@@ -210,7 +210,7 @@ export default function ChildGrowthSchedulePage() {
                 {results.nextMilestone && (
                   <div>
                     <p className="text-xs text-gold font-medium mb-1">
-                      Coming soon ({results.nextMilestone.ageMonths} mos):
+                      Upcoming milestone ({results.nextMilestone.ageMonths} mos):
                     </p>
                     <p className="text-xs text-text-secondary">{results.nextMilestone.milestone}</p>
                   </div>

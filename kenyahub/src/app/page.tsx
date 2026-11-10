@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, ShieldCheck, BadgeCheck, Smartphone, Landmark, BusFront, BookOpen } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
@@ -5,6 +6,17 @@ import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
 import PopularToolsSection from "@/components/tools/PopularToolsSection";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://kenyahub.me/",
+    languages: {
+      "en-KE": "https://kenyahub.me/",
+      en: "https://kenyahub.me/",
+      "x-default": "https://kenyahub.me/",
+    },
+  },
+};
 
 export default function HomePage() {
   const featuredGuides = STATIC_BLOG_POSTS.slice(0, 6);

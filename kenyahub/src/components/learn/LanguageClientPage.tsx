@@ -297,7 +297,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const courseFaq = [
     {
       question: `How is the ${langHeading} course structured on KenyaHub?`,
-      answer: `The ${course.config.name} course is organized into ${course.units.length} structured units and ${totalSkills} skill modules teaching ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
+      answer: `The ${course.config.name} course is organized into ${course.units.length} structured ${course.units.length === 1 ? "unit" : "units"} and ${totalSkills} skill ${totalSkills === 1 ? "module" : "modules"} teaching ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
     },
     {
       question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
