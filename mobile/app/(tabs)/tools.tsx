@@ -494,8 +494,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   filterHeader: {
-    paddingHorizontal: 16,
-    paddingTop: 9,
+    paddingHorizontal: 10,
+    paddingTop: 8,
     paddingBottom: 9,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
@@ -505,7 +505,7 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     borderWidth: 1,
     paddingHorizontal: 14,
-    height: 44,
+    height: 38,
     marginBottom: 8,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
@@ -515,7 +515,7 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     height: "100%",
-    fontSize: 13.5,
+    fontSize: 12,
     paddingVertical: 0,
     textAlignVertical: "center",
     includeFontPadding: false,

@@ -654,7 +654,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   content: {
-    padding: 16,
+    padding: 10,
     paddingBottom: 40,
   },
   toolHeaderCard: {

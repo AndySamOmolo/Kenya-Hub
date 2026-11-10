@@ -24,9 +24,9 @@ export default function SearchInput({
         type="text"
         value={value}
         placeholder={placeholder}
-        className="w-full h-9 sm:h-10 rounded-xl bg-bg-surface border border-border text-xs sm:text-sm text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold/70 focus:ring-2 focus:ring-gold/15"
+        className="w-full h-8.5 sm:h-9.5 rounded-xl bg-bg-surface border border-border text-[0.75rem] sm:text-xs text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold/70 focus:ring-2 focus:ring-gold/15 search-input-compact"
         style={{
-          paddingLeft: "2.25rem",
+          paddingLeft: "2rem", fontSize: "0.75rem",
           paddingRight: hasClearButton ? "2.25rem" : "0.875rem",
           ...style,
         }}

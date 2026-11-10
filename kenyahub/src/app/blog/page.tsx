@@ -151,7 +151,7 @@ export default async function BlogPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10">
+    <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

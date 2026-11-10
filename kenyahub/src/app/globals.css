@@ -969,19 +969,24 @@
     line-height: 1.62 !important;
   }
 
-  /* Prevent iOS Safari & mobile browser auto-zoom on input focus (< 16px triggers zoom) */
-  .input-field,
-  .select-field,
-  input[type="text"],
+  /* Prevent iOS Safari auto-zoom on long-form form inputs only, while keeping search bars and dropdowns compact and proportional */
   input[type="number"],
-  input[type="search"],
   input[type="email"],
   input[type="tel"],
-  input[type="url"],
   input[type="password"],
   input[type="date"],
   textarea {
     font-size: 16px !important;
+  }
+
+  /* Compact search inputs and dropdown select triggers on mobile */
+  .search-input-compact,
+  input[type="search"],
+  .input-field--with-search,
+  .custom-select-trigger,
+  .select-field {
+    font-size: 0.75rem !important; /* 12px */
+    line-height: 1.25rem !important;
   }
 }
 

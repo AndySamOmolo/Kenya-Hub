@@ -47,7 +47,7 @@ export default function Navbar() {
       <div className="kenya-stripe w-full" />
 
       <nav className="sticky top-0 z-50 glass">
-        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-12 sm:h-[54px]">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">

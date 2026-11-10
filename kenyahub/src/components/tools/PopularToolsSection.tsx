@@ -47,7 +47,7 @@ export default function PopularToolsSection() {
   const hasUsage = mounted && hasAnyVisits();
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-20">
+    <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-7 sm:py-20">
       <div className="flex items-end justify-between mb-4 sm:mb-10">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2">

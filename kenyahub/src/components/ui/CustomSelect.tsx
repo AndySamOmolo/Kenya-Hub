@@ -138,10 +138,10 @@ export default function CustomSelect({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`input-field flex items-center justify-between gap-1.5 text-left cursor-pointer transition-colors w-full ${paddingAndFontClasses} ${
+        className={`input-field custom-select-trigger flex items-center justify-between gap-1.5 text-left cursor-pointer transition-colors w-full text-[0.75rem]! sm:text-xs! ${paddingAndFontClasses} ${
           isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"
         }`}
-        style={hasLeadingIcon ? { paddingLeft: "2.35rem" } : undefined}
+        style={hasLeadingIcon ? { paddingLeft: "2rem", fontSize: "0.75rem" } : { fontSize: "0.75rem" }}
       >
         <span className="text-text-primary truncate min-w-0 flex-1">{selectedOption?.label || "Select..."}</span>
         <ChevronDown

@@ -61,7 +61,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
   const maxFare = routes.length > 0 ? Math.max(...routes.map((r) => r.fareMax)) : 200;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-xs text-text-muted mb-6">
         <Link href="/" className="hover:text-gold transition-colors">Home</Link>

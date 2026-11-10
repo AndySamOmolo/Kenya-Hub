@@ -33,7 +33,7 @@ export default function PinnedToolsHomeSection() {
   if (!mounted || pinnedToolSlugs.length === 0) return null;
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-16">
+    <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-6 sm:pt-16">
       <div className="flex items-end justify-between mb-4 sm:mb-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2 flex items-center gap-1.5">
