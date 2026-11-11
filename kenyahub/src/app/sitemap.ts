@@ -99,7 +99,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const toolPages: MetadataRoute.Sitemap = TOOLS.filter(
     (tool) => tool.isLive
   ).map((tool) => {
-    const verifiedDate = toolSourcesMap[tool.slug]?.lastVerified;
+    const verifiedDate = toolSourcesMap[tool.slug]?.lastVerified || (toolSourcesMap[tool.slug] as any)?.lastUpdated;
     const lastModified = verifiedDate
       ? new Date(`${verifiedDate}T00:00:00.000Z`).toISOString()
       : DEFAULT_VERIFIED_DATE;

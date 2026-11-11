@@ -19,7 +19,7 @@ const SAMPLE_NUMBERS = [
   { label: "0100 (Airtel 010x)", value: "0100 223 344" },
 ];
 
-const faqs = [
+const faq = [
   {
     question: "How do I tell which network a Kenyan phone number belongs to?",
     answer:
@@ -90,7 +90,7 @@ export default function MobileNumberPrefixPage() {
   }, [selectedNetworkTab]);
 
   return (
-    <ToolShell tool={tool} faqs={faqs}>
+    <ToolShell tool={tool} faq={faq}>
       <div className="space-y-6">
         {/* Main Checker Card */}
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
@@ -350,7 +350,7 @@ export default function MobileNumberPrefixPage() {
                 <span className="font-bold text-kenya-green-light block mb-1">
                   Calling Kenya From Abroad:
                 </span>
-                <span>{prefixesData.internationalDialing.fromAbroad}</span>
+                <span>{prefixesData.internationalDialing.toKenya}</span>
               </div>
             </div>
           </div>

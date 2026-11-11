@@ -156,6 +156,42 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
     "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
     "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
   ],
+  "mobile-number-prefix": [
+    "understanding-mpesa-transaction-fees",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
+  "sha-benefit-estimator": [
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "small-claims-calculator": [
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "ntsa-transfer-calculator": [
+    "kra-car-import-duty-calculator-guide-kenya-2026",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+  ],
+  "boma-yangu-calculator": [
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "rental-tax-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+  ],
+  "landlord-tenant-rights": [
+    "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
+    "how-paye-tax-works-in-kenya",
+  ],
+  "domestic-wage-calculator": [
+    "how-paye-tax-works-in-kenya",
+    "sha-shif-health-insurance-kenya-complete-guide-2026",
+  ],
+  "airtime-drain-guide": [
+    "understanding-mpesa-transaction-fees",
+    "guide-to-kenyan-public-holidays-2026",
+  ],
 };
 
 export function getRelatedBlogPostsForTool(
