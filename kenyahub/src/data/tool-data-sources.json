@@ -80,6 +80,46 @@
       "official": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "lastUpdated": "2026-10-20"
+    },
+    "sha-benefit-estimator": {
+      "official": true,
+      "sourceUrl": "https://sha.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "small-claims-calculator": {
+      "official": true,
+      "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
+      "lastUpdated": "2026-10-21"
+    },
+    "ntsa-transfer-calculator": {
+      "official": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "boma-yangu-calculator": {
+      "official": true,
+      "sourceUrl": "https://bomayangu.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "rental-tax-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "landlord-tenant-rights": {
+      "official": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "lastUpdated": "2026-10-21"
+    },
+    "domestic-wage-calculator": {
+      "official": true,
+      "sourceUrl": "https://www.labour.go.ke/",
+      "lastUpdated": "2026-10-21"
+    },
+    "airtime-drain-guide": {
+      "official": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "lastUpdated": "2026-10-21"
     }
   }
 }

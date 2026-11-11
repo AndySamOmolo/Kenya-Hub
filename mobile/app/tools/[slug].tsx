@@ -1,3 +1,13 @@
+import {
+  ShaBenefitEstimatorTool,
+  SmallClaimsTool,
+  NtsaTransferTool,
+  BomaYanguTool,
+  RentalTaxTool,
+  LandlordTenantTool,
+  DomesticWageTool,
+  AirtimeDrainTool,
+} from "../../src/tools/CivicLegalTools";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -252,6 +262,22 @@ export default function ToolDetailScreen() {
         return <SchoolTermsTool onScrollToTop={scrollToTop} />;
       case "matatu-routes":
         return <MatatuRoutesTool onScrollToTop={scrollToTop} />;
+      case "sha-benefit-estimator":
+        return <ShaBenefitEstimatorTool />;
+      case "small-claims-calculator":
+        return <SmallClaimsTool />;
+      case "ntsa-transfer-calculator":
+        return <NtsaTransferTool />;
+      case "boma-yangu-calculator":
+        return <BomaYanguTool />;
+      case "rental-tax-calculator":
+        return <RentalTaxTool />;
+      case "landlord-tenant-rights":
+        return <LandlordTenantTool />;
+      case "domestic-wage-calculator":
+        return <DomesticWageTool />;
+      case "airtime-drain-guide":
+        return <AirtimeDrainTool />;
       default:
         return <ReferenceDirectoryTool key={tool.slug} slug={tool.slug} onScrollToTop={scrollToTop} />;
     }

@@ -75,7 +75,15 @@ const NATIONAL_TOTALS = (() => {
 })();
 
 
-function renderDirectoryCard(item: any, router: any, theme: any) {
+const DirectoryCardItem = React.memo(function DirectoryCardItem({
+  item,
+  router,
+  theme,
+}: {
+  item: any;
+  router: any;
+  theme: any;
+}) {
   const codeFormatted = String(item.code).padStart(3, "0");
   return (
     <View
@@ -157,7 +165,7 @@ function renderDirectoryCard(item: any, router: any, theme: any) {
       </Pressable>
     </View>
   );
-}
+});
 
 function renderBudgetCard(item: any, router: any, theme: any) {
   const b = item.budget;
@@ -594,7 +602,13 @@ export default function CountyScreen() {
               ))}
             </ExpandablePillRow>
 
-            <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8, gap: 8 }}>
+            <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8 }}>
+              {/* Aligned Table Column Header */}
+              <View style={{ flexDirection: "row", justifyContent: "space-between", paddingBottom: 6, borderBottomWidth: 1, borderBottomColor: theme.outlineVariant }}>
+                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.textMuted, flex: 1.2, textAlign: "left" }}>METRIC</Text>
+                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.gold, flex: 1, textAlign: "right" }}>{countyA.name.toUpperCase()}</Text>
+                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.kenyaGreenLight, flex: 1, textAlign: "right" }}>{countyB.name.toUpperCase()}</Text>
+              </View>
               {[
                 { label: "Capital HQ", a: countyA.capital, b: countyB.capital },
                 { label: "Governor", a: countyA.governor, b: countyB.governor },
@@ -609,10 +623,10 @@ export default function CountyScreen() {
                 { label: "Absorption %", a: `${countyA.budget?.absorptionRate || 0}%`, b: `${countyB.budget?.absorptionRate || 0}%` },
                 { label: "Annual Rainfall", a: `${countyA.rain?.annualRainfall || 0} mm`, b: `${countyB.rain?.annualRainfall || 0} mm` },
               ].map((row) => (
-                <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 4, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: theme.outlineVariant }}>
-                  <Text style={{ fontSize: 11, color: theme.textMuted, flex: 1 }}>{row.label}</Text>
-                  <Text style={{ fontSize: 11.5, fontWeight: "700", color: theme.gold, flex: 1, textAlign: "center" }}>{row.a}</Text>
-                  <Text style={{ fontSize: 11.5, fontWeight: "700", color: theme.kenyaGreenLight, flex: 1, textAlign: "right" }}>{row.b}</Text>
+                <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 5, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: theme.outlineVariant }}>
+                  <Text style={{ fontSize: 11, color: theme.textMuted, flex: 1.2, textAlign: "left" }}>{row.label}</Text>
+                  <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.a}</Text>
+                  <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.b}</Text>
                 </View>
               ))}
             </View>
@@ -688,7 +702,7 @@ export default function CountyScreen() {
             </>
           }
           renderItem={({ item }) => {
-            if (activeTab === "directory") return renderDirectoryCard(item, router, theme);
+            if (activeTab === "directory") return <DirectoryCardItem item={item} router={router} theme={theme} />;
             if (activeTab === "budgets") return renderBudgetCard(item, router, theme);
             if (activeTab === "constituencies") return renderConstituencyCard(item, router, theme);
             if (activeTab === "climate") return renderClimateCard(item, router, theme);

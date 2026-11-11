@@ -164,7 +164,7 @@ function renderFormattedText(
 
 type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
-type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle';
+type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle' | 'riddles' | 'vocabQuiz';
 
 export function LanguageLearningTool({
   onScrollToTop,
@@ -448,6 +448,12 @@ export default function LanguageCourseTool({
   const [wordleGuesses, setWordleGuesses] = useState<string[]>([]);
   const [wordleInput, setWordleInput] = useState('');
   const [wordleStatus, setWordleStatus] = useState<'playing' | 'won' | 'lost'>('playing');
+  const [riddleQuestion, setRiddleQuestion] = useState<{ riddle: string; answer: string; hint?: string } | null>(null);
+  const [riddleOptions, setRiddleOptions] = useState<string[]>([]);
+  const [riddleFeedback, setRiddleFeedback] = useState<string | null>(null);
+  const [vocabQuestion, setVocabQuestion] = useState<{ prompt: string; oddWord: string } | null>(null);
+  const [vocabOptions, setVocabOptions] = useState<string[]>([]);
+  const [vocabFeedback, setVocabFeedback] = useState<string | null>(null);
 
   // ── Grammar Tab State ──
   const [grammarSearch, setGrammarSearch] = useState('');
@@ -767,6 +773,52 @@ export default function LanguageCourseTool({
     setWordleStatus('playing');
   }, [allCourseWords]);
 
+  const startRiddleRound = useCallback(() => {
+    const wisdom = getCulturalWisdomForLanguage(selectedLangId);
+    const pool = wisdom.length > 0 ? wisdom : [
+      { nativeText: "Nyumba yangu haina mlango", meaning: "An egg (Yai)", category: "riddle" },
+      { nativeText: "Hutembea na mguu mmoja", meaning: "A mushroom (Uyoga)", category: "riddle" },
+      { nativeText: "Akisimama ana urefu, akikaa hana", meaning: "A stick (Mti)", category: "riddle" },
+      { nativeText: "Nikikata siachi alama", meaning: "Water (Maji)", category: "riddle" },
+    ];
+    const chosen = pool[Math.floor(Math.random() * pool.length)];
+    const distractors = pool
+      .filter((w) => (w.meaning || w.englishEquivalent) !== (chosen.meaning || chosen.englishEquivalent))
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .map((w) => w.meaning || w.englishEquivalent || "Traditional wisdom");
+    while (distractors.length < 3) {
+      distractors.push("Patience and perseverance", "Unity in the community", "Respect for elders")[distractors.length];
+    }
+    const right = chosen.meaning || chosen.englishEquivalent || "Wisdom";
+    const opts = [right, ...distractors].sort(() => Math.random() - 0.5);
+    setRiddleQuestion({
+      riddle: chosen.nativeText,
+      answer: right,
+      hint: (chosen as any).literalTranslation,
+    });
+    setRiddleOptions(opts);
+    setRiddleFeedback(null);
+  }, [selectedLangId]);
+
+  const startVocabQuizRound = useCallback(() => {
+    if (allCourseWords.length < 4) return;
+    const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
+    const primary = shuffled[0];
+    const imposter = shuffled[1];
+    const promptText = `Which word means "${primary.source}"?`;
+    const opts = [
+      primary.target,
+      imposter.target,
+      shuffled[2]?.target || "Nyingi",
+      shuffled[3]?.target || "Nzuri",
+    ].sort(() => Math.random() - 0.5);
+
+    setVocabQuestion({ prompt: promptText, oddWord: primary.target });
+    setVocabOptions(opts);
+    setVocabFeedback(null);
+  }, [allCourseWords]);
+
   const awardGameXP = useCallback(
     (points: number) => {
       saveLanguageProgress((prev) => ({
@@ -1073,6 +1125,19 @@ export default function LanguageCourseTool({
             </View>
 
             <Text style={[styles.quizPrompt, { color: colors.text }]}>{currentEx.prompt}</Text>
+
+            {currentEx.sourceWord &&
+              (currentEx.type === 'translate_to_target' ||
+                currentEx.type === 'translate_to_english' ||
+                currentEx.type === 'word_bank') && (
+                <View style={{ marginVertical: 8, paddingHorizontal: 2 }}>
+                  <Text style={{ fontSize: 20, fontWeight: '800', color: colors.gold }}>
+                    {currentEx.type === 'translate_to_target'
+                      ? currentEx.sourceWord.source
+                      : currentEx.sourceWord.target}
+                  </Text>
+                </View>
+              )}
 
             {showHint && currentEx.hint ? (
               <View style={[styles.hintBanner, { backgroundColor: colors.surfaceContainerHigh }]}>
@@ -1917,20 +1982,20 @@ export default function LanguageCourseTool({
             return (
               <View
                 key={unit.id}
-                style={[
-                  styles.unitCard,
-                  {
-                    backgroundColor: colors.surfaceContainerLow,
-                    borderColor: colors.outlineVariant,
-                  },
-                ]}
+                style={styles.unitSectionGroup}
               >
                 <Pressable
                   android_ripple={ripple}
                   onPress={() =>
                     setExpandedUnitIds((prev) => ({ ...prev, [unit.id]: !prev[unit.id] }))
                   }
-                  style={styles.unitHeaderPressable}
+                  style={[
+                    styles.unitHeaderCard,
+                    {
+                      backgroundColor: colors.surfaceContainerLow,
+                      borderColor: colors.outlineVariant,
+                    },
+                  ]}
                 >
                   <View style={[styles.unitNumberBadge, { backgroundColor: `${langColor}22` }]}>
                     <DynamicIcon emoji={unit.icon} size={18} color={langColor} />
@@ -1954,7 +2019,7 @@ export default function LanguageCourseTool({
                 </Pressable>
 
                 {isExpanded && (
-                  <View style={[styles.unitSkillsBody, { borderTopColor: colors.outlineVariant }]}>
+                  <View style={styles.unitSkillsList}>
                     {unit.skills.map((skill: CourseSkill, sIdx: number) => {
                       const sp = progress.skills[skill.id];
                       const skillLevel = sp?.level || 0;
@@ -2452,6 +2517,20 @@ export default function LanguageCourseTool({
                   icon: 'hash' as const,
                   onStart: startWordleGame,
                 },
+                {
+                  id: 'riddles' as ActiveGame,
+                  title: 'Riddle Master',
+                  desc: 'Solve authentic oral literature riddles and proverbs.',
+                  icon: 'help-circle' as const,
+                  onStart: startRiddleRound,
+                },
+                {
+                  id: 'vocabQuiz' as ActiveGame,
+                  title: 'Vocabulary Blitz',
+                  desc: 'Rapid target word identification without leaked clues.',
+                  icon: 'target' as const,
+                  onStart: startVocabQuizRound,
+                },
               ].map((g) => (
                 <Pressable
                   key={g.id}
@@ -2868,6 +2947,138 @@ export default function LanguageCourseTool({
                   </Pressable>
                 </View>
               )}
+            </View>
+          )}
+
+          {/* GAME 5: RIDDLE MASTER */}
+          {activeGame === 'riddles' && riddleQuestion && (
+            <View
+              style={[
+                styles.gameBoardCard,
+                { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
+              ]}
+            >
+              <View style={styles.gameTopHeader}>
+                <Pressable onPress={() => setActiveGame('menu')} style={styles.backLinkRow}>
+                  <Feather name="arrow-left" size={16} color={colors.textSecondary} />
+                  <Text style={{ color: colors.textSecondary, fontWeight: '700', fontSize: 13 }}>
+                    Games Menu
+                  </Text>
+                </Pressable>
+                <Text style={{ fontWeight: '800', color: langColor }}>Score: {gameScore}</Text>
+              </View>
+
+              <Text style={{ fontSize: 12, color: colors.textMuted, textAlign: 'center' }}>
+                SOLVE THE TRADITIONAL RIDDLE / PROVERB:
+              </Text>
+              <Text style={[styles.gamePromptWord, { color: colors.text, fontSize: 18, lineHeight: 26 }]}>
+                &ldquo;{riddleQuestion.riddle}&rdquo;
+              </Text>
+
+              <View style={styles.optionsList}>
+                {riddleOptions.map((opt, idx) => (
+                  <Pressable
+                    key={`rd-${idx}`}
+                    disabled={riddleFeedback !== null}
+                    onPress={() => {
+                      const right = opt === riddleQuestion.answer;
+                      setRiddleFeedback(opt);
+                      if (right) {
+                        setGameScore((s) => s + 20);
+                        awardGameXP(20);
+                      }
+                      setTimeout(() => {
+                        startRiddleRound();
+                      }, 900);
+                    }}
+                    style={[
+                      styles.optionButton,
+                      {
+                        backgroundColor:
+                          riddleFeedback === null
+                            ? colors.surface
+                            : opt === riddleQuestion.answer
+                            ? 'rgba(16,185,129,0.2)'
+                            : riddleFeedback === opt
+                            ? 'rgba(239,68,68,0.2)'
+                            : colors.surface,
+                        borderColor:
+                          riddleFeedback !== null && opt === riddleQuestion.answer
+                            ? '#10B981'
+                            : colors.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Text style={[styles.optionButtonText, { color: colors.text }]}>{opt}</Text>
+                  </Pressable>
+                ))}
+              </View>
+            </View>
+          )}
+
+          {/* GAME 6: VOCABULARY BLITZ */}
+          {activeGame === 'vocabQuiz' && vocabQuestion && (
+            <View
+              style={[
+                styles.gameBoardCard,
+                { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant },
+              ]}
+            >
+              <View style={styles.gameTopHeader}>
+                <Pressable onPress={() => setActiveGame('menu')} style={styles.backLinkRow}>
+                  <Feather name="arrow-left" size={16} color={colors.textSecondary} />
+                  <Text style={{ color: colors.textSecondary, fontWeight: '700', fontSize: 13 }}>
+                    Games Menu
+                  </Text>
+                </Pressable>
+                <Text style={{ fontWeight: '800', color: langColor }}>Score: {gameScore}</Text>
+              </View>
+
+              <Text style={{ fontSize: 12, color: colors.textMuted, textAlign: 'center' }}>
+                VOCABULARY BLITZ:
+              </Text>
+              <Text style={[styles.gamePromptWord, { color: colors.text, fontSize: 18 }]}>
+                {vocabQuestion.prompt}
+              </Text>
+
+              <View style={styles.optionsList}>
+                {vocabOptions.map((opt, idx) => (
+                  <Pressable
+                    key={`vq-${idx}`}
+                    disabled={vocabFeedback !== null}
+                    onPress={() => {
+                      const right = opt === vocabQuestion.oddWord;
+                      setVocabFeedback(opt);
+                      if (right) {
+                        setGameScore((s) => s + 15);
+                        awardGameXP(15);
+                      }
+                      setTimeout(() => {
+                        startVocabQuizRound();
+                      }, 700);
+                    }}
+                    style={[
+                      styles.optionButton,
+                      {
+                        backgroundColor:
+                          vocabFeedback === null
+                            ? colors.surface
+                            : opt === vocabQuestion.oddWord
+                            ? 'rgba(16,185,129,0.2)'
+                            : vocabFeedback === opt
+                            ? 'rgba(239,68,68,0.2)'
+                            : colors.surface,
+                        borderColor:
+                          vocabFeedback !== null && opt === vocabQuestion.oddWord
+                            ? '#10B981'
+                            : colors.outlineVariant,
+                      },
+                    ]}
+                  >
+                    <Text style={[styles.optionButtonText, { color: colors.text }]}>{opt}</Text>
+                  </Pressable>
+                ))}
+              </View>
             </View>
           )}
         </View>
@@ -3671,16 +3882,17 @@ const styles = StyleSheet.create({
   unitListWrap: {
     gap: 12,
   },
-  unitCard: {
-    borderRadius: 20,
-    borderWidth: 1,
-    overflow: 'hidden',
+  unitSectionGroup: {
+    gap: 10,
+    marginBottom: 16,
   },
-  unitHeaderPressable: {
+  unitHeaderCard: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    padding: 14,
+    padding: 16,
+    borderRadius: 18,
+    borderWidth: 1,
   },
   unitNumberBadge: {
     width: 34,
@@ -3690,24 +3902,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   unitTitleText: {
-    fontSize: 14,
+    fontSize: 14.5,
     fontWeight: '800',
   },
   unitDescText: {
     fontSize: 12,
-    marginTop: 2,
-    lineHeight: 17,
+    marginTop: 3,
+    lineHeight: 18,
   },
-  unitSkillsBody: {
-    borderTopWidth: 1,
-    padding: 12,
+  unitSkillsList: {
     gap: 10,
   },
   skillNodeCard: {
     borderRadius: 16,
     borderWidth: 1,
-    padding: 12,
-    gap: 10,
+    padding: 16,
+    gap: 12,
   },
   skillNodeTop: {
     flexDirection: 'row',

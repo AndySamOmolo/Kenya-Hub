@@ -1,0 +1,102 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "Social Health Authority (SHA) Gazetted Tariffs & Benefit Packages 2024/2026",
+  "sourceUrl": "https://sha.go.ke/",
+  "facilityLevels": [
+    {
+      "level": "Level 2",
+      "name": "Dispensaries & Clinics",
+      "copay": "Free (100% Primary Care Fund)",
+      "services": [
+        "Outpatient consultations",
+        "Essential drugs",
+        "Basic laboratory",
+        "Immunization",
+        "Antenatal care"
+      ]
+    },
+    {
+      "level": "Level 3",
+      "name": "Health Centres",
+      "copay": "Free (100% Primary Care Fund)",
+      "services": [
+        "Normal delivery / Maternity",
+        "Inpatient observation (up to 48 hrs)",
+        "Minor surgical procedures",
+        "Basic diagnostic ultrasound"
+      ]
+    },
+    {
+      "level": "Level 4",
+      "name": "Sub-County & Primary Hospitals",
+      "copay": "SHA pre-authorization / Standard Co-pay KES 0\u20131,000",
+      "services": [
+        "C-Section & surgical theater",
+        "Inpatient admission (up to KES 4,000/day covered)",
+        "Specialist outpatient clinics",
+        "Blood transfusion",
+        "Radiology / X-Ray"
+      ]
+    },
+    {
+      "level": "Level 5",
+      "name": "County Referral Hospitals",
+      "copay": "Referral letter required / Co-pay KES 1,000\u20133,000",
+      "services": [
+        "ICU & HDU care",
+        "Renal dialysis (KES 10,650/session covered)",
+        "Comprehensive oncology & chemotherapy",
+        "Advanced imaging (CT scan & MRI)",
+        "Orthopedic surgery"
+      ]
+    },
+    {
+      "level": "Level 6",
+      "name": "National Teaching & Referral Hospitals (KNH, MTRH, KUTRRH)",
+      "copay": "National Referral letter required",
+      "services": [
+        "Organ transplant",
+        "Specialized cardiac surgery",
+        "PET CT & radiotherapy",
+        "Sub-specialty pediatric & neurosurgery"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "maternity",
+      "name": "Maternity Care (Linda Mama Replacement)",
+      "coveredAmount": "KES 11,200 (Normal) / KES 32,600 (C-Section)",
+      "copay": "KES 0 in contracted public facilities",
+      "notes": "Covers antenatal visits, delivery, post-natal care and neonatal emergency support"
+    },
+    {
+      "id": "dialysis",
+      "name": "Renal Dialysis Package",
+      "coveredAmount": "KES 10,650 per session (Up to 2 sessions/week)",
+      "copay": "KES 0 in accredited public & mission centers",
+      "notes": "Requires nephrologist prescription and biometric SHA pre-authorization"
+    },
+    {
+      "id": "oncology",
+      "name": "Oncology & Chemotherapy",
+      "coveredAmount": "KES 25,000\u2013150,000 per cycle depending on regimen",
+      "copay": "Variable co-pay in private contracted centers",
+      "notes": "Includes basic chemotherapy drugs and pre-treatment diagnostic workup"
+    },
+    {
+      "id": "surgical",
+      "name": "Major Surgical Theater Package",
+      "coveredAmount": "KES 50,000 to KES 250,000 based on procedure classification",
+      "copay": "Pre-authorized package ceiling applies",
+      "notes": "Requires referral letter from Level 3 or 4 hospital"
+    },
+    {
+      "id": "outpatient",
+      "name": "Primary Outpatient Package",
+      "coveredAmount": "Unlimited essential consultations and prescribed basic drugs",
+      "copay": "KES 0 at designated primary empaneled facility",
+      "notes": "Members select their primary healthcare network provider annually"
+    }
+  ]
+}

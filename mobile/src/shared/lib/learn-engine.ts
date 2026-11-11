@@ -152,7 +152,7 @@ function generateTranslateToTarget(word: WordPair): Exercise {
 
   return {
     type: 'translate_to_target',
-    prompt: `Translate to the target language:`,
+    prompt: `Translate "${word.source}" to the target language:`,
     correctAnswer: primaryTarget || word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
     acceptedAnswers: Array.from(variants),
     hint: buildNonLeakingHint(word),
@@ -173,7 +173,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
 
   return {
     type: 'translate_to_english',
-    prompt: `Translate to English:`,
+    prompt: `Translate "${word.target}" to English:`,
     correctAnswer: primarySource || cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim(),
     acceptedAnswers: Array.from(variants),
     audioText: getPrimaryForm(word.target),

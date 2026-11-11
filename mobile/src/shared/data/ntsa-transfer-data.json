@@ -1,0 +1,71 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "National Transport and Safety Authority (NTSA) & Traffic Act Cap 403",
+  "sourceUrl": "https://ntsa.go.ke/",
+  "platformFee": 50,
+  "transferFeeBands": [
+    {
+      "minCc": 0,
+      "maxCc": 1000,
+      "transferFee": 1660,
+      "purchaseTax": 1035,
+      "label": "Up to 1,000 cc (Vitz, Passo, Alto)"
+    },
+    {
+      "minCc": 1001,
+      "maxCc": 1200,
+      "transferFee": 1890,
+      "purchaseTax": 1420,
+      "label": "1,001 \u2013 1,200 cc (Note, Demio, March)"
+    },
+    {
+      "minCc": 1201,
+      "maxCc": 1500,
+      "transferFee": 2065,
+      "purchaseTax": 1890,
+      "label": "1,201 \u2013 1,500 cc (Axio, Fielder, Probox, Fit)"
+    },
+    {
+      "minCc": 1501,
+      "maxCc": 1700,
+      "transferFee": 2410,
+      "purchaseTax": 2240,
+      "label": "1,501 \u2013 1,700 cc (Premio, Allion, Sylphy)"
+    },
+    {
+      "minCc": 1701,
+      "maxCc": 2000,
+      "transferFee": 2695,
+      "purchaseTax": 2725,
+      "label": "1,701 \u2013 2,000 cc (RAV4, X-Trail, Harrier 2.0, Forester)"
+    },
+    {
+      "minCc": 2001,
+      "maxCc": 2500,
+      "transferFee": 3845,
+      "purchaseTax": 3615,
+      "label": "2,001 \u2013 2,500 cc (Prado 2.7, Vanguard, D-Max, Hilux 2.4)"
+    },
+    {
+      "minCc": 2501,
+      "maxCc": 3000,
+      "transferFee": 5345,
+      "purchaseTax": 4790,
+      "label": "2,501 \u2013 3,000 cc (Prado 3.0, Hilux 2.8, Ranger 3.2)"
+    },
+    {
+      "minCc": 3001,
+      "maxCc": 9999,
+      "transferFee": 5990,
+      "purchaseTax": 6050,
+      "label": "Above 3,000 cc (Land Cruiser V8, Patrol, Range Rover)"
+    }
+  ],
+  "motorcycle": {
+    "transferFee": 1200,
+    "purchaseTax": 850
+  },
+  "onlineSearchFee": 550,
+  "reflectivePlateReplacement": 3050,
+  "duplicateLogbook": 2550
+}

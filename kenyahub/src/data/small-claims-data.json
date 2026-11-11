@@ -1,0 +1,58 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "Judiciary of Kenya Small Claims Court Act (2016) & Court Fees Rules",
+  "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
+  "maxClaimLimit": 1000000,
+  "statutoryDisposalDays": 60,
+  "filingFeeSchedule": [
+    {
+      "min": 0,
+      "max": 10000,
+      "fee": 200,
+      "description": "Claims up to KES 10,000"
+    },
+    {
+      "min": 10001,
+      "max": 50000,
+      "fee": 400,
+      "description": "Claims between KES 10,001 and KES 50,000"
+    },
+    {
+      "min": 50001,
+      "max": 100000,
+      "fee": 600,
+      "description": "Claims between KES 50,001 and KES 100,000"
+    },
+    {
+      "min": 100001,
+      "max": 200000,
+      "fee": 800,
+      "description": "Claims between KES 100,001 and KES 200,000"
+    },
+    {
+      "min": 200001,
+      "max": 500000,
+      "fee": 1000,
+      "description": "Claims between KES 200,001 and KES 500,000"
+    },
+    {
+      "min": 500001,
+      "max": 1000000,
+      "fee": 1500,
+      "description": "Claims between KES 500,001 and KES 1,000,000"
+    }
+  ],
+  "qualifyingClaimTypes": [
+    "Unpaid supply or trade invoices for goods delivered",
+    "Unpaid casual wages or contractual service fees",
+    "Withheld residential or commercial security deposits",
+    "Breach of simple written or verbal commercial contracts",
+    "Property damage claims arising from negligence or accident under KES 1M"
+  ],
+  "disqualifiedClaimTypes": [
+    "Defamation, libel or slander claims",
+    "Claims involving title deed disputes or ownership of land",
+    "Employment termination disputes involving union collective agreements",
+    "Claims exceeding KES 1,000,000 in principal value"
+  ]
+}

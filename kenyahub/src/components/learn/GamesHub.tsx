@@ -78,7 +78,7 @@ function getAllWords(units: CourseUnit[]): WordPair[] {
   );
 }
 
-type GameType = "menu" | "wordle" | "scramble" | "speed" | "memory";
+type GameType = "menu" | "wordle" | "scramble" | "speed" | "memory" | "riddles" | "vocabQuiz";
 
 export default function GamesHub({
   units,
@@ -216,6 +216,52 @@ export default function GamesHub({
               moves = higher score!
             </p>
           </button>
+
+          {/* Riddle Master */}
+          <button
+            onClick={() => setActiveGame("riddles")}
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
+                  Riddle Master
+                </h3>
+                <p className="text-[0.6rem] text-text-muted">
+                  Traditional oral literature
+                </p>
+              </div>
+            </div>
+            <p className="text-xs text-text-secondary">
+              Solve authentic Kenyan proverbs, riddles, and cultural sayings.
+            </p>
+          </button>
+
+          {/* Vocabulary Blitz */}
+          <button
+            onClick={() => setActiveGame("vocabQuiz")}
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500">
+                <Trophy className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-text-primary group-hover:text-gold transition-colors">
+                  Vocabulary Blitz
+                </h3>
+                <p className="text-[0.6rem] text-text-muted">
+                  Fast target word identification
+                </p>
+              </div>
+            </div>
+            <p className="text-xs text-text-secondary">
+              Rapid multiple choice challenge testing mastery of course vocabulary.
+            </p>
+          </button>
         </div>
       </div>
     );
@@ -262,6 +308,18 @@ export default function GamesHub({
         <>
           {gameHeader("Memory Cards", "🃏")}
           <MemoryGame allWords={allWords} languageName={languageName} />
+        </>
+      )}
+      {activeGame === "riddles" && (
+        <>
+          {gameHeader("Riddle Master", "🧩")}
+          <RiddleGame allWords={allWords} languageName={languageName} />
+        </>
+      )}
+      {activeGame === "vocabQuiz" && (
+        <>
+          {gameHeader("Vocabulary Blitz", "🎯")}
+          <VocabQuizGame allWords={allWords} languageName={languageName} />
         </>
       )}
     </div>
@@ -688,11 +746,7 @@ function ScrambleGame({ allWords, languageName }: GameProps) {
         <p className="text-xl font-bold text-gold">
           &ldquo;{targetWord.source}&rdquo;
         </p>
-        {targetWord.pronunciation && (
-          <p className="mt-1 text-[0.6rem] text-text-muted italic">
-            Pronunciation: {targetWord.pronunciation}
-          </p>
-        )}
+
       </div>
 
       {/* Built word */}
@@ -1219,3 +1273,169 @@ function MemoryGame({ allWords, languageName }: GameProps) {
   );
 }
 
+
+/* ═══════════════════════════════════════════════════════
+   GAME 5: RIDDLE MASTER
+   Solve traditional riddles and oral wisdom
+   ═══════════════════════════════════════════════════════ */
+
+function RiddleGame({ allWords, languageName }: GameProps) {
+  const [score, setScore] = useState(0);
+  const [round, setRound] = useState(0);
+  const [feedback, setFeedback] = useState<string | null>(null);
+
+  const sampleRiddles = useMemo(() => [
+    { riddle: "Nyumba yangu haina mlango", answer: "An egg (Yai)" },
+    { riddle: "Hutembea na mguu mmoja", answer: "A mushroom (Uyoga)" },
+    { riddle: "Akisimama ana urefu, akikaa hana", answer: "A walking stick (Mti)" },
+    { riddle: "Nikikata siachi alama", answer: "Water (Maji)" },
+    { riddle: "Kila niendapo ananifuata", answer: "My shadow (Kivuli)" },
+    { riddle: "Hana miguu lakini anakimbia", answer: "A river (Mto)" },
+  ], []);
+
+  const currentRiddle = sampleRiddles[round % sampleRiddles.length];
+  const options = useMemo(() => {
+    const distractors = sampleRiddles
+      .filter((r) => r.answer !== currentRiddle.answer)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .map((r) => r.answer);
+    return [currentRiddle.answer, ...distractors].sort(() => Math.random() - 0.5);
+  }, [currentRiddle, sampleRiddles]);
+
+  const handlePick = (ans: string) => {
+    if (feedback !== null) return;
+    const isRight = ans === currentRiddle.answer;
+    setFeedback(ans);
+    if (isRight) setScore((s) => s + 20);
+    setTimeout(() => {
+      setFeedback(null);
+      setRound((r) => r + 1);
+    }, 800);
+  };
+
+  return (
+    <div>
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5">
+          <Trophy className="h-3.5 w-3.5 text-gold" />
+          <span className="text-xs font-bold text-gold">{score} pts</span>
+        </div>
+        <span className="text-xs text-text-muted">Round {round + 1}</span>
+      </div>
+
+      <div className="mb-5 rounded-2xl border border-border bg-bg-card p-6 text-center">
+        <p className="text-xs text-text-muted mb-2">Traditional Kenyan Riddle</p>
+        <p className="font-[family-name:var(--font-outfit)] text-xl sm:text-2xl font-bold text-text-primary">
+          &ldquo;{currentRiddle.riddle}&rdquo;
+        </p>
+      </div>
+
+      <div className="grid gap-2.5 sm:grid-cols-2">
+        {options.map((opt) => {
+          let btnStyle = "border-border bg-bg-card text-text-primary hover:border-gold/40";
+          if (feedback !== null) {
+            if (opt === currentRiddle.answer) {
+              btnStyle = "border-kenya-green bg-kenya-green/10 text-kenya-green font-bold";
+            } else if (feedback === opt) {
+              btnStyle = "border-red-400 bg-red-400/10 text-red-400";
+            }
+          }
+          return (
+            <button
+              key={opt}
+              disabled={feedback !== null}
+              onClick={() => handlePick(opt)}
+              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] ${btnStyle}`}
+            >
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════
+   GAME 6: VOCABULARY BLITZ
+   Rapid multiple choice identification
+   ═══════════════════════════════════════════════════════ */
+
+function VocabQuizGame({ allWords, languageName }: GameProps) {
+  const [score, setScore] = useState(0);
+  const [round, setRound] = useState(0);
+  const [feedback, setFeedback] = useState<string | null>(null);
+
+  const currentWord = allWords.length > 0 ? allWords[round % allWords.length] : null;
+  const options = useMemo(() => {
+    if (!currentWord || allWords.length < 2) return [];
+    const distractors = allWords
+      .filter((w) => w.target !== currentWord.target)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .map((w) => w.target);
+    return [currentWord.target, ...distractors].sort(() => Math.random() - 0.5);
+  }, [currentWord, allWords]);
+
+  const handleAnswer = (ans: string) => {
+    if (feedback !== null || !currentWord) return;
+    const isRight = ans === currentWord.target;
+    setFeedback(ans);
+    if (isRight) setScore((s) => s + 15);
+    setTimeout(() => {
+      setFeedback(null);
+      setRound((r) => r + 1);
+    }, 700);
+  };
+
+  if (!currentWord) {
+    return (
+      <p className="text-center text-sm text-text-muted">
+        Not enough vocabulary in this course for Vocabulary Blitz.
+      </p>
+    );
+  }
+
+  return (
+    <div>
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5">
+          <Zap className="h-3.5 w-3.5 text-gold" />
+          <span className="text-xs font-bold text-gold">{score} pts</span>
+        </div>
+        <span className="text-xs text-text-muted">Question {round + 1}</span>
+      </div>
+
+      <div className="mb-5 rounded-2xl border border-border bg-bg-card p-6 text-center">
+        <p className="text-xs text-text-muted mb-2">How do you say in {languageName}?</p>
+        <p className="font-[family-name:var(--font-outfit)] text-2xl sm:text-3xl font-bold text-gold">
+          &ldquo;{currentWord.source}&rdquo;
+        </p>
+      </div>
+
+      <div className="grid gap-2.5 sm:grid-cols-2">
+        {options.map((opt) => {
+          let btnStyle = "border-border bg-bg-card text-text-primary hover:border-gold/40";
+          if (feedback !== null) {
+            if (opt === currentWord.target) {
+              btnStyle = "border-kenya-green bg-kenya-green/10 text-kenya-green font-bold";
+            } else if (feedback === opt) {
+              btnStyle = "border-red-400 bg-red-400/10 text-red-400";
+            }
+          }
+          return (
+            <button
+              key={opt}
+              disabled={feedback !== null}
+              onClick={() => handleAnswer(opt)}
+              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] ${btnStyle}`}
+            >
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

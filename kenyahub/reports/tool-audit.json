@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-11T07:23:05.801Z",
-  "registryCount": 16,
-  "routeCount": 16,
-  "okCount": 16,
+  "generatedAt": "2026-11-11T08:56:48.321Z",
+  "registryCount": 24,
+  "routeCount": 24,
+  "okCount": 24,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
@@ -358,6 +358,126 @@
           "file": "src/data/water-tariffs.json",
           "lastUpdated": "2026-10-20",
           "source": "Water Services Regulatory Board (WASREB) Approved Utility Tariffs"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "sha-benefit-estimator",
+      "routeExists": true,
+      "sourceUrl": "https://sha.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/sha-benefit-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Social Health Authority (SHA) Gazetted Tariffs & Benefit Packages 2024/2026"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "small-claims-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/small-claims-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Judiciary of Kenya Small Claims Court Act (2016) & Court Fees Rules"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "ntsa-transfer-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/ntsa-transfer-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "National Transport and Safety Authority (NTSA) & Traffic Act Cap 403"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "boma-yangu-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://bomayangu.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/boma-yangu-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Affordable Housing Act 2024 & Boma Yangu Statutory Portal"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "rental-tax-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/rental-tax-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "KRA Income Tax Act (Cap 470) & Finance Act 2023/2024"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "landlord-tenant-rights",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/tenant-rights-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Rent Restriction Act (Cap 296), Distress for Rent Act (Cap 293) & Small Claims Court Precedents"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "domestic-wage-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.labour.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/domestic-wage-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Ministry of Labour Regulation of Wages (General) (Amendment) Order 2024/2026 (Legal Notice 108)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "airtime-drain-guide",
+      "routeExists": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/airtime-drain-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Communications Authority of Kenya (CA) Consumer Guidelines & MNO USSD Protocols"
         }
       ],
       "status": "ok"

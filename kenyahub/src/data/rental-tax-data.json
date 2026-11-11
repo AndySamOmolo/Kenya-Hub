@@ -1,0 +1,13 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "KRA Income Tax Act (Cap 470) & Finance Act 2023/2024",
+  "sourceUrl": "https://www.kra.go.ke/",
+  "mriRate": 0.075,
+  "mriThresholdAnnual": 15000000,
+  "totRate": 0.03,
+  "totMinAnnual": 1000000,
+  "totMaxAnnual": 25000000,
+  "dueDayOfMonth": 20,
+  "lateFilingPenalty": 2000,
+  "latePaymentInterestMonthly": 0.01
+}

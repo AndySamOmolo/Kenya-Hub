@@ -398,17 +398,17 @@ function PopularToolRow({
           <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
         </View>
         <View style={styles.popularToolBody}>
-          <View style={styles.popularToolHeaderLine}>
-            <Text
-              style={[styles.popularToolTitle, { color: theme.textPrimary }]}
-              numberOfLines={1}
-            >
-              {tool.shortTitle}
-            </Text>
+          <Text
+            style={[styles.popularToolTitle, { color: theme.textPrimary }]}
+            numberOfLines={1}
+          >
+            {tool.title || tool.shortTitle}
+          </Text>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 2, marginBottom: 2 }}>
             <View
               style={[
                 styles.miniCategoryPill,
-                { backgroundColor: `${categoryColor}15` },
+                { backgroundColor: `${categoryColor}18` },
               ]}
             >
               <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
@@ -548,6 +548,15 @@ export default function HomeScreen() {
   const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
     () => new Date().getDate() % ROTATING_LANGUAGES.length
   );
+
+  // Auto-rotate daily widgets every 6 seconds so user experiences rotating languages & words
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFeaturedLangIdx((prev) => (prev + 1) % ROTATING_LANGUAGES.length);
+      setWordIdx((prev) => (prev + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
   const [learnStats, setLearnStats] = useState<{
     langId: string;
     langName: string;
@@ -844,12 +853,12 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
-        {/* 1. Native Android Greeting & Live Activity Header */}
+        {/* 1. Native Android Header with Single Clean Greeting */}
         <View style={styles.greetingContainer}>
           <View style={styles.greetingTopRow}>
             <View style={{ flex: 1 }}>
               <Text style={[styles.greetingSub, { color: theme.gold }]}>
-                {greeting.sw.toUpperCase()} · KENYA SUPER-APP
+                KENYA SUPER-APP · PUBLIC UTILITIES
               </Text>
               <Text style={[styles.greetingTitle, { color: theme.textPrimary }]}>
                 {greeting.en}, Mwananchi
@@ -1050,16 +1059,19 @@ export default function HomeScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.widgetsScrollContent}
         >
-          {/* Widget A: Language Learning Hub */}
+          {/* Widget A: Language Learning Hub (Proper dynamic language navigation) */}
           <Pressable
             key={`widget-learn-${theme.isDark ? "dark" : "light"}`}
             android_ripple={androidRipple(theme.rippleColor)}
-            onPress={() =>
+            onPress={() => {
+              const currentFeatured = learnStats.totalXP > 0
+                ? { id: learnStats.langId }
+                : ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
               router.push({
                 pathname: "/tools/[slug]",
-                params: { slug: "learn", lang: learnStats.langId },
-              })
-            }
+                params: { slug: "learn", lang: currentFeatured.id },
+              });
+            }}
             style={[
               styles.snapshotWidget,
               {
