@@ -76,7 +76,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   if (!post) {
     return (
-      <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 py-16 text-center">
+      <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-16 text-center">
         <div className="flex justify-center mb-4">
           <DynamicIcon emoji="📄" className="w-12 h-12 text-text-muted" />
         </div>
@@ -103,7 +103,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     <>
       <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
 
-      <article data-error-page={isThinOrEmbedHeavy ? "true" : undefined} className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <article data-error-page={isThinOrEmbedHeavy ? "true" : undefined} className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-8 sm:py-10">
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8 flex-wrap">
           <Link href="/" className="hover:text-gold transition-colors">
             Home

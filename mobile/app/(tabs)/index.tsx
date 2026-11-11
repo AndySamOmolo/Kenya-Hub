@@ -352,7 +352,7 @@ function BlogMarkdownContent({ content, theme }: { content: string; theme: any }
 }
 
 /** Compact 2-Column Bento Tile for Android Home Screen (no web source footer clutter) */
-function BentoToolTile({
+function PopularToolRow({
   tool,
   isPinned,
   onTogglePin,
@@ -369,10 +369,10 @@ function BentoToolTile({
   return (
     <View
       style={[
-        styles.bentoTileWrap,
+        styles.popularToolCard,
         {
           backgroundColor: theme.surfaceContainer,
-          borderColor: theme.outlineVariant,
+          borderColor: isPinned ? `${theme.gold}55` : theme.outlineVariant,
         },
       ]}
     >
@@ -384,25 +384,51 @@ function BentoToolTile({
             params: { slug: tool.slug },
           })
         }
-        style={styles.bentoTile}
+        style={styles.popularToolPressable}
       >
-        <View style={styles.bentoTopRow}>
-          <View
-            style={[
-              styles.bentoIconSquircle,
-              {
-                backgroundColor: `${categoryColor}1A`,
-                borderColor: `${categoryColor}38`,
-              },
-            ]}
-          >
-            <DynamicIcon emoji={tool.icon} size={20} color={categoryColor} />
+        <View
+          style={[
+            styles.popularToolIconWrap,
+            {
+              backgroundColor: `${categoryColor}1A`,
+              borderColor: `${categoryColor}35`,
+            },
+          ]}
+        >
+          <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
+        </View>
+        <View style={styles.popularToolBody}>
+          <View style={styles.popularToolHeaderLine}>
+            <Text
+              style={[styles.popularToolTitle, { color: theme.textPrimary }]}
+              numberOfLines={1}
+            >
+              {tool.shortTitle}
+            </Text>
+            <View
+              style={[
+                styles.miniCategoryPill,
+                { backgroundColor: `${categoryColor}15` },
+              ]}
+            >
+              <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
+                {catInfo?.name || tool.category}
+              </Text>
+            </View>
           </View>
+          <Text
+            style={[styles.popularToolDesc, { color: theme.textSecondary }]}
+            numberOfLines={1}
+          >
+            {tool.description}
+          </Text>
+        </View>
+        <View style={styles.popularToolActions}>
           <Pressable
             onPress={() => onTogglePin(tool.slug)}
             hitSlop={10}
             style={[
-              styles.bentoPinBtn,
+              styles.popularToolPinBtn,
               {
                 backgroundColor: isPinned
                   ? `${theme.gold}22`
@@ -412,36 +438,15 @@ function BentoToolTile({
           >
             <Ionicons
               name={isPinned ? "bookmark" : "bookmark-outline"}
-              size={14}
+              size={15}
               color={isPinned ? theme.gold : theme.textMuted}
             />
           </Pressable>
-        </View>
-
-        <Text
-          style={[styles.bentoTitle, { color: theme.textPrimary }]}
-          numberOfLines={1}
-        >
-          {tool.shortTitle}
-        </Text>
-
-        <Text
-          style={[styles.bentoDesc, { color: theme.textSecondary }]}
-          numberOfLines={2}
-        >
-          {tool.description}
-        </Text>
-
-        <View style={styles.bentoCategoryRow}>
-          <View
-            style={[styles.categoryDot, { backgroundColor: categoryColor }]}
+          <Ionicons
+            name="chevron-forward"
+            size={16}
+            color={theme.textMuted}
           />
-          <Text
-            style={[styles.bentoCategoryText, { color: categoryColor }]}
-            numberOfLines={1}
-          >
-            {catInfo?.name || tool.category}
-          </Text>
         </View>
       </Pressable>
     </View>
@@ -1021,20 +1026,10 @@ export default function HomeScreen() {
           )}
         </View>
 
-        {/* 3. Native 2x4 Super-App Quick Launcher Dock */}
-        <View style={styles.launcherCardWrap}>
-          <View
-            style={[
-              styles.launcherCard,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
-            <View style={styles.launcherGrid}>
-              {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme)}
-            </View>
+        {/* 3. Native Super-App Quick Launcher (Open layout, no cramped card) */}
+        <View style={styles.launcherSection}>
+          <View style={styles.launcherGrid}>
+            {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme)}
           </View>
         </View>
 
@@ -1353,8 +1348,8 @@ export default function HomeScreen() {
           </>
         )}
 
-        {/* 6. Popular Tools in a 2-Column Native Bento Grid */}
-        <View style={[styles.sectionHeader, { marginTop: 18 }]}>
+        {/* 6. Popular Everyday Tools - Spacious Native List */}
+        <View style={[styles.sectionHeader, { marginTop: 20 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               MOST USED
@@ -1375,9 +1370,9 @@ export default function HomeScreen() {
           </Pressable>
         </View>
 
-        <View style={styles.bentoGrid}>
+        <View style={styles.popularToolsList}>
           {popular.map((t) => (
-            <BentoToolTile
+            <PopularToolRow
               key={t.slug}
               tool={t}
               isPinned={pinnedSlugs.includes(t.slug)}
@@ -1386,78 +1381,73 @@ export default function HomeScreen() {
           ))}
         </View>
 
-        {/* 7. Compact 2-Column Topic Categories */}
+        {/* 7. Topic Categories - Native Horizontal Scroll Strip */}
         <View style={[styles.sectionHeader, { marginTop: 22 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               BROWSE BY TOPIC
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-              10 Tool Categories
+              Tool Categories
             </Text>
           </View>
         </View>
 
-        <View style={styles.categoriesGrid}>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.categoryScrollContent}
+        >
           {TOOL_CATEGORIES.map((cat) => {
             const count = TOOLS.filter((t) => t.category === cat.id).length;
             const catColor = categoryColorMap[cat.id] || theme.gold;
 
             return (
-              <View
+              <Pressable
                 key={cat.id}
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() =>
+                  router.push({
+                    pathname: "/(tabs)/tools",
+                    params: { category: cat.id },
+                  })
+                }
                 style={[
-                  styles.categoryCardWrap,
+                  styles.categoryPillCard,
                   {
                     backgroundColor: theme.surfaceContainer,
                     borderColor: theme.outlineVariant,
                   },
                 ]}
               >
-                <Pressable
-                  android_ripple={androidRipple(theme.rippleColor)}
-                  onPress={() =>
-                    router.push({
-                      pathname: "/(tabs)/tools",
-                      params: { category: cat.id },
-                    })
-                  }
-                  style={styles.categoryCard}
+                <View
+                  style={[
+                    styles.catIconWrap,
+                    {
+                      backgroundColor: `${catColor}18`,
+                      borderColor: `${catColor}35`,
+                    },
+                  ]}
                 >
-                  <View
-                    style={[
-                      styles.catIconWrap,
-                      {
-                        backgroundColor: `${catColor}18`,
-                        borderColor: `${catColor}35`,
-                      },
-                    ]}
+                  <DynamicIcon emoji={cat.icon} size={18} color={catColor} />
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Text
+                    style={[styles.catTitle, { color: theme.textPrimary }]}
+                    numberOfLines={1}
                   >
-                    <DynamicIcon emoji={cat.icon} size={18} color={catColor} />
-                  </View>
-                  <View style={{ flex: 1 }}>
-                    <Text
-                      style={[styles.catTitle, { color: theme.textPrimary }]}
-                      numberOfLines={1}
-                    >
-                      {cat.name}
-                    </Text>
-                    <Text
-                      style={[styles.catCountSub, { color: theme.textMuted }]}
-                    >
-                      {count} tools
-                    </Text>
-                  </View>
-                  <Ionicons
-                    name="chevron-forward"
-                    size={14}
-                    color={theme.textMuted}
-                  />
-                </Pressable>
-              </View>
+                    {cat.name}
+                  </Text>
+                  <Text
+                    style={[styles.catCountSub, { color: theme.textMuted }]}
+                  >
+                    {count} tools
+                  </Text>
+                </View>
+              </Pressable>
             );
           })}
-        </View>
+        </ScrollView>
 
         {/* 8. Horizontal Editorial Guides Carousel */}
         <View style={[styles.sectionHeader, { marginTop: 24 }]}>
@@ -1887,16 +1877,10 @@ const styles = StyleSheet.create({
     fontSize: 11.5,
     marginTop: 1,
   },
-  launcherCardWrap: {
+  launcherSection: {
     paddingHorizontal: 16,
-    marginTop: 8,
-    marginBottom: 18,
-  },
-  launcherCard: {
-    borderRadius: 22,
-    borderWidth: 1,
-    paddingVertical: 14,
-    paddingHorizontal: 8,
+    marginTop: 6,
+    marginBottom: 16,
   },
   launcherGrid: {
     flexDirection: "row",
@@ -1909,8 +1893,8 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   launcherSquircle: {
-    width: 48,
-    height: 48,
+    width: 50,
+    height: 50,
     borderRadius: 16,
     borderWidth: 1,
     alignItems: "center",
@@ -1918,7 +1902,7 @@ const styles = StyleSheet.create({
   },
   launcherLabel: {
     fontFamily: "Inter_600SemiBold",
-    fontSize: 11.5,
+    fontSize: 11,
     textAlign: "center",
     paddingHorizontal: 2,
   },
@@ -1956,12 +1940,12 @@ const styles = StyleSheet.create({
     paddingBottom: 4,
   },
   snapshotWidget: {
-    width: 268,
-    borderRadius: 20,
+    width: 295,
+    borderRadius: 18,
     borderWidth: 1,
-    padding: 14,
+    padding: 16,
     justifyContent: "space-between",
-    gap: 8,
+    gap: 10,
   },
   widgetHeaderRow: {
     flexDirection: "row",
@@ -2031,87 +2015,83 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_700Bold",
     fontSize: 13,
   },
-  bentoGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
+  popularToolsList: {
     paddingHorizontal: 16,
     gap: 10,
   },
-  bentoTileWrap: {
-    width: "48.3%",
-    borderRadius: 18,
+  popularToolCard: {
+    borderRadius: 16,
     borderWidth: 1,
     overflow: "hidden",
   },
-  bentoTile: {
-    padding: 13,
-    gap: 6,
-    justifyContent: "space-between",
-  },
-  bentoTopRow: {
+  popularToolPressable: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 2,
+    padding: 12,
+    gap: 12,
   },
-  bentoIconSquircle: {
-    width: 38,
-    height: 38,
-    borderRadius: 12,
+  popularToolIconWrap: {
+    width: 44,
+    height: 44,
+    borderRadius: 13,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
-  bentoPinBtn: {
+  popularToolBody: {
+    flex: 1,
+  },
+  popularToolHeaderLine: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: 3,
+  },
+  popularToolTitle: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 14,
+    flexShrink: 1,
+  },
+  miniCategoryPill: {
+    paddingHorizontal: 6,
+    paddingVertical: 1.5,
+    borderRadius: 6,
+  },
+  miniCategoryText: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 9.5,
+    letterSpacing: 0.3,
+  },
+  popularToolDesc: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 11.5,
+    lineHeight: 16,
+  },
+  popularToolActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  popularToolPinBtn: {
     width: 28,
     height: 28,
     borderRadius: 14,
     alignItems: "center",
     justifyContent: "center",
   },
-  bentoTitle: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 14.5,
-  },
-  bentoDesc: {
-    fontFamily: "Inter_400Regular",
-    fontSize: 11.5,
-    lineHeight: 16,
-    minHeight: 32,
-  },
-  bentoCategoryRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    marginTop: 2,
-  },
-  categoryDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-  },
-  bentoCategoryText: {
-    fontFamily: "Outfit_700Bold",
-    fontSize: 10,
-    letterSpacing: 0.4,
-  },
-  categoriesGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
+  categoryScrollContent: {
     paddingHorizontal: 16,
     gap: 10,
+    paddingBottom: 2,
   },
-  categoryCardWrap: {
-    width: "48.3%",
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-  },
-  categoryCard: {
+  categoryPillCard: {
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
-    padding: 11,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderRadius: 14,
+    borderWidth: 1,
   },
   catIconWrap: {
     width: 36,

@@ -109,7 +109,7 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-3 pb-6 sm:pt-10 sm:pb-16">
+          <div className="relative max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-6 sm:pt-10 sm:pb-16">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-gold/30 bg-gold/10 mb-3 sm:mb-6 max-w-full">
                 <span className="relative flex h-1.5 w-1.5 shrink-0">
@@ -158,7 +158,7 @@ export default function HomePage() {
       </section>
 
       {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6 sm:mb-8">
             <div className="max-w-2xl">
@@ -246,21 +246,21 @@ export default function HomePage() {
                   <Link
                     key={config.id}
                     href={`/tools/learn/${config.id}/`}
-                    className="group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-2.5 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs"
+                    className="group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs"
                   >
                     <div>
-                      <div className="flex items-center justify-between gap-1 mb-1.5 flex-wrap">
-                        <span className="text-[0.625rem] font-bold text-gold bg-gold/10 px-1.5 py-0.5 rounded-full border border-gold/25">
+                      <div className="flex items-center justify-between gap-1.5 mb-1.5">
+                        <span className="text-[0.65rem] font-bold text-gold bg-gold/10 px-1.5 py-0.5 rounded-md border border-gold/25 truncate max-w-[65%]">
                           “{identity.greeting}”
                         </span>
-                        <span className="text-[0.6rem] text-text-muted font-medium">
+                        <span className="text-[0.625rem] text-text-muted font-medium shrink-0">
                           {config.family}
                         </span>
                       </div>
-                      <h4 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug break-words">
+                      <h4 className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors leading-snug">
                         {config.name}
                       </h4>
-                      <p className="text-[0.625rem] text-text-muted mt-0.5 truncate">
+                      <p className="text-[0.65rem] text-text-muted mt-0.5 truncate">
                         {identity.region}
                       </p>
                     </div>
@@ -289,7 +289,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FLAGSHIP PUBLIC DATA HUBS (47 COUNTIES & MATATU ROUTES) */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-12">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           <Link
             href="/county/"
@@ -338,7 +338,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* CATEGORIES */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Browse by Category
@@ -386,7 +386,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* FEATURED STATUTORY GUIDES & EDITORIAL ARTICLES */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1.5 flex items-center gap-1.5">
@@ -443,7 +443,7 @@ export default function HomePage() {
       <div className="section-divider mx-auto max-w-7xl" />
 
       {/* WHY KENYAHUB */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-16">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
         <div className="text-center mb-6 sm:mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-2">
             Built Different
