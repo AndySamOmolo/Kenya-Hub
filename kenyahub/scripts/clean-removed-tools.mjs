@@ -13,7 +13,6 @@ const REMOVED_TOOL_DIRS = [
   "kenya-postal-codes",
   "kikuyu-proverbs",
   "matatu-routes",
-  "mobile-number-prefix",
   "passport-id-fees",
   "public-holidays",
   "school-terms",

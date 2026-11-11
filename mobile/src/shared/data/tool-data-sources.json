@@ -120,6 +120,11 @@
       "official": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "lastUpdated": "2026-10-21"
+    },
+    "mobile-number-prefix": {
+      "official": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "lastUpdated": "2026-10-20"
     }
   }
 }

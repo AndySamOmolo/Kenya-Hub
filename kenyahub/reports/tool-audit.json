@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-11T10:52:59.853Z",
-  "registryCount": 24,
-  "routeCount": 24,
-  "okCount": 24,
+  "generatedAt": "2026-11-11T11:07:47.413Z",
+  "registryCount": 25,
+  "routeCount": 25,
+  "okCount": 25,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
@@ -478,6 +478,21 @@
           "file": "src/data/airtime-drain-data.json",
           "lastUpdated": "2026-10-21",
           "source": "Communications Authority of Kenya (CA) Consumer Guidelines & MNO USSD Protocols"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mobile-number-prefix",
+      "routeExists": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "maxAgeDays": 365,
+      "ageDays": 22,
+      "data": [
+        {
+          "file": "src/data/mobile-prefixes.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Communications Authority of Kenya (CA) — National Numbering Plan"
         }
       ],
       "status": "ok"

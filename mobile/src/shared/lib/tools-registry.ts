@@ -313,6 +313,18 @@ export const TOOLS: Tool[] = [
     isLive: true,
     icon: '📱',
   },
+  {
+    slug: 'mobile-number-prefix',
+    title: 'Kenya Mobile Number Prefix & Network Identifier (Safaricom, Airtel, Telkom, Equitel, Faiba)',
+    shortTitle: 'Network Prefix Identifier',
+    description: 'Instantly identify the mobile telecommunications network (Safaricom, Airtel, Telkom, Equitel, Faiba) for any Kenyan phone number or prefix (07xx, 01xx) under the CA National Numbering Plan.',
+    category: 'utilities-energy',
+    keywords: ['which network is 0799 Kenya', '0722 network Kenya', '0733 network Safaricom or Airtel', 'Kenya phone number prefix checker', '0110 Safaricom Airtel', 'Kenya mobile networks prefixes'],
+    updateFrequency: 'annual',
+    dataSource: 'Communications Authority of Kenya (CA) — National Numbering Plan',
+    isLive: true,
+    icon: '📞',
+  },
 ];
 
 export function getToolsByCategory(category: ToolCategory): Tool[] {
@@ -332,6 +344,7 @@ const TOOL_USAGE_SCORES: Record<string, number> = {
   'sacco-chama-calculator': 92,
   'helb-calculator': 90,
   'cbc-curriculum': 88,
+  'mobile-number-prefix': 84,
   'number-plate-decoder': 82,
   'traffic-fines': 76,
   'stamp-duty-calculator': 65,

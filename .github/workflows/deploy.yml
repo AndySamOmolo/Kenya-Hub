@@ -34,7 +34,6 @@ jobs:
                  src/app/tools/kenya-postal-codes \
                  src/app/tools/kikuyu-proverbs \
                  src/app/tools/matatu-routes \
-                 src/app/tools/mobile-number-prefix \
                  src/app/tools/passport-id-fees \
                  src/app/tools/public-holidays \
                  src/app/tools/school-terms \
