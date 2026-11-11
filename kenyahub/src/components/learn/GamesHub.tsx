@@ -23,6 +23,7 @@ import {
   Type,
   Puzzle,
   GalleryHorizontal,
+  Sparkles,
 } from "lucide-react";
 import type { WordPair, CourseUnit } from "@/data/courses/types";
 
