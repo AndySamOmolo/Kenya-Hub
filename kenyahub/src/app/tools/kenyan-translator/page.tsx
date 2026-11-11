@@ -23,6 +23,7 @@ import {
 import langData from "@/data/kenya-languages.json";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution } from "@/lib/contributions";
+import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
@@ -1108,7 +1109,7 @@ export default function KenyanTranslatorPage() {
                             {result.entry.context && !result.missingTarget && (
                               <p className="text-[0.65rem] text-text-muted mt-2 bg-bg-elevated rounded-lg px-2.5 py-1 flex items-start gap-1.5">
                                 <DynamicIcon emoji="💡" className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
-                                <span>{result.entry.context}</span>
+                                <span>{renderInlineMarkdown(result.entry.context)}</span>
                               </p>
                             )}
                           </div>
@@ -1261,7 +1262,7 @@ export default function KenyanTranslatorPage() {
                                         <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
                                       )}
                                       {entry.context && (
-                                        <p className="text-[0.65rem] text-text-muted mt-0.5">{entry.context}</p>
+                                        <p className="text-[0.65rem] text-text-muted mt-0.5">{renderInlineMarkdown(entry.context)}</p>
                                       )}
                                     </div>
                                   </div>

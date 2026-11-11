@@ -152,13 +152,13 @@ export default function GrammarView({
                           {targetText}
                         </p>
                         <p className="text-xs text-text-secondary mt-0.5">
-                          {ex.english}
+                          {renderInlineMarkdown(ex.english)}
                         </p>
                       </div>
                       {ex.explanation && (
                         <div className="mt-1 text-xs text-text-muted sm:mt-0 sm:text-right sm:shrink-0">
                           <span className="inline-block rounded-md bg-kenya-green/10 px-2 py-1 text-kenya-green">
-                            {ex.explanation}
+                            {renderInlineMarkdown(ex.explanation)}
                           </span>
                         </div>
                       )}

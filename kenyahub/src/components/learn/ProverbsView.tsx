@@ -14,6 +14,7 @@ import {
   type CulturalWisdomItem,
 } from "@/data/courses/cultural-wisdom";
 import { COURSE_REGISTRY, getCourse } from "@/data/courses/registry";
+import { renderInlineMarkdown } from "@/lib/render-markdown";
 
 export interface KikuyuProverbItem {
   id: number;
@@ -415,18 +416,18 @@ export default function ProverbsView({
                   &ldquo;{p.kikuyu}&rdquo;
                 </p>
                 <p className="text-xs font-medium text-emerald-400/90 mb-2">
-                  Literal: {p.translation}
+                  Literal: {renderInlineMarkdown(p.translation)}
                 </p>
                 {p.explanation && (
                   <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-2">
                     <span className="font-semibold text-[var(--text-primary)]">Meaning: </span>
-                    {p.explanation}
+                    {renderInlineMarkdown(p.explanation)}
                   </p>
                 )}
                 {p.englishEquivalent && (
                   <div className="mt-2 pt-2 border-t border-[var(--border)] text-[11px] text-[var(--gold)]">
                     <span className="font-bold">English Equivalent: </span>
-                    {p.englishEquivalent}
+                    {renderInlineMarkdown(p.englishEquivalent)}
                   </div>
                 )}
               </div>
@@ -474,12 +475,12 @@ export default function ProverbsView({
                   &ldquo;{p.luo}&rdquo;
                 </p>
                 <p className="text-xs font-medium text-sky-400/90 mb-2">
-                  Literal: {p.english}
+                  Literal: {renderInlineMarkdown(p.english)}
                 </p>
                 {(p.meaning || p.explanation) && (
                   <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
                     <span className="font-semibold text-[var(--text-primary)]">Wisdom: </span>
-                    {p.meaning || p.explanation}
+                    {renderInlineMarkdown(p.meaning || p.explanation)}
                   </p>
                 )}
               </div>
@@ -529,7 +530,7 @@ export default function ProverbsView({
                   <p className="text-xs text-[var(--text-secondary)] italic">{r.english}</p>
                   {revealed && (
                     <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 font-semibold">
-                      Answer: {r.answer}
+                      Answer: {renderInlineMarkdown(r.answer)}
                     </div>
                   )}
                 </div>
@@ -598,16 +599,16 @@ export default function ProverbsView({
                   &ldquo;{item.nativeText}&rdquo;
                 </p>
                 <p className="text-xs font-medium text-emerald-400/90 mb-2">
-                  Literal: {item.literalTranslation}
+                  Literal: {renderInlineMarkdown(item.literalTranslation)}
                 </p>
                 <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-2">
                   <span className="font-semibold text-[var(--text-primary)]">Wisdom: </span>
-                  {item.meaning}
+                  {renderInlineMarkdown(item.meaning)}
                 </p>
                 {item.englishEquivalent && (
                   <div className="mt-2 pt-2 border-t border-[var(--border)] text-[11px] text-[var(--gold)]">
                     <span className="font-bold">English Equivalent: </span>
-                    {item.englishEquivalent}
+                    {renderInlineMarkdown(item.englishEquivalent)}
                   </div>
                 )}
               </div>

@@ -109,52 +109,52 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:pt-10 sm:pb-16">
-            <div className="max-w-3xl mx-auto sm:mx-0 text-center sm:text-left">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16">
+            <div className="max-w-3xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
               {/* Centered Hero Badge Pill on Mobile */}
-              <div className="flex justify-center sm:justify-start mb-5 sm:mb-6">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 max-w-full">
+              <div className="flex justify-center sm:justify-start mb-4 sm:mb-6 w-full">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm">
                   <span className="relative flex h-1.5 w-1.5 shrink-0">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
                   </span>
-                  <span className="text-[0.6875rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide truncate">
+                  <span className="text-[0.6875rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide">
                     22 Kenyan Languages · {TOOLS.length} Interactive Tools · 47 Counties
                   </span>
                 </div>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.2] tracking-tight mb-5 sm:mb-7">
+              <h1 className="text-2xl sm:text-5xl lg:text-[3.25rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.25] tracking-tight mb-4 sm:mb-6 text-center sm:text-left w-full">
                 Learn <span className="gradient-text-kenya">Kenyan languages</span>{" "}
                 &amp; everyday public tools
               </h1>
 
-              <p className="text-sm sm:text-lg text-text-secondary leading-relaxed mb-7 sm:mb-9 max-w-2xl mx-auto sm:mx-0">
+              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-6 sm:mb-8 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
                 Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
               {/* Compact, comfortably proportioned buttons */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-3">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-3 w-full">
                 <Link
                   href="/tools/learn/"
-                  className="btn-gold text-xs sm:text-sm px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl flex items-center gap-2"
+                  className="btn-gold text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-2 shadow-md w-auto"
                 >
                   <Languages className="w-4 h-4 shrink-0" />
-                  Start Learning Kenyan Languages
+                  <span>Start Learning Kenyan Languages</span>
                   <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
                 <Link
                   href="/tools/kenyan-translator/"
-                  className="btn-outline text-xs sm:text-sm px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl flex items-center gap-1.5"
+                  className="btn-outline text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-1.5 w-auto"
                 >
                   <Globe className="w-4 h-4 text-kenya-green-light shrink-0" />
-                  22-Language Translator
+                  <span>22-Language Translator</span>
                 </Link>
                 <Link
                   href="/tools/"
-                  className="btn-outline text-xs sm:text-sm px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl flex items-center gap-1.5"
+                  className="btn-outline text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-1.5 w-auto"
                 >
-                  All {TOOLS.length} Tools
+                  <span>All {TOOLS.length} Tools</span>
                 </Link>
               </div>
             </div>

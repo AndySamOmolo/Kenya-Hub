@@ -3488,7 +3488,13 @@ export default function LanguageCourseTool({
                       </Text>
                       {(p.meaning || p.explanation) ? (
                         <Text style={{ fontSize: 12, color: colors.textMuted }}>
-                          {p.meaning || p.explanation}
+                          {renderFormattedText(
+                            p.meaning || p.explanation || "",
+                            { fontSize: 12, color: colors.textMuted },
+                            colors.text,
+                            colors.textSecondary,
+                            colors.surfaceVariant
+                          )}
                         </Text>
                       ) : null}
                     </View>
