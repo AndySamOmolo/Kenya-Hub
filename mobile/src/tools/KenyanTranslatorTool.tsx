@@ -229,9 +229,7 @@ function getDictIndex(dict: Dictionary): DictSearchIndex {
 export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme, styles } = useDynamicStyles(createStyles);
 
-  const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">(
-    "translate"
-  );
+  const [viewMode, setViewMode] = useState<"translate" | "browse">("translate");
   const [sourceLanguage, setSourceLanguage] = useState<string>("english");
   const [targetLanguage, setTargetLanguage] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -959,9 +957,8 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
       <View style={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}>
         {(
           [
-            { id: "translate" as const, label: "Translate" },
-            { id: "compare" as const, label: `Compare (${ALL_DICT_METAS.length})` },
-            { id: "browse" as const, label: "Categories" },
+            { id: "translate" as const, label: "Translate (All Languages)" },
+            { id: "browse" as const, label: "Browse Categories" },
           ]
         ).map((tab) => {
           const active = viewMode === tab.id;
@@ -1380,143 +1377,6 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                   </Pressable>
                 ))}
               </View>
-            </View>
-          )}
-        </View>
-      )}
-
-      {/* ────────────────── 2. COMPARE MODE ────────────────── */}
-      {viewMode === "compare" && (
-        <View style={styles.modeWrap}>
-          <Text style={styles.modeDescription}>
-            Compare how a word or concept is expressed across all {ALL_DICT_METAS.length} Kenyan indigenous languages.
-          </Text>
-
-          <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
-            {POPULAR_COMPARE_WORDS.map((w) => {
-              const active = searchQuery.toLowerCase() === w.toLowerCase();
-              return (
-                <Pressable
-                  key={w}
-                  onPress={() => setSearchQuery(w)}
-                  style={[
-                    styles.compareChip,
-                    active && { backgroundColor: theme.gold, borderColor: theme.gold },
-                  ]}
-                >
-                  <Text
-                    style={[
-                      styles.compareChipText,
-                      active && { color: theme.kenyaBlack, fontWeight: "800" },
-                    ]}
-                  >
-                    {w}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ExpandablePillRow>
-
-          <View style={styles.searchBar}>
-            <Ionicons name="search" size={18} color={theme.textMuted} />
-            <TextInput
-              placeholder="Type word to compare (e.g. Water)..."
-              placeholderTextColor={theme.textMuted}
-              value={searchQuery}
-              onChangeText={setSearchQuery}
-              style={styles.searchInput}
-            />
-            {searchQuery.length > 0 && (
-              <Pressable onPress={() => setSearchQuery("")} hitSlop={8}>
-                <Ionicons name="close-circle" size={18} color={theme.textMuted} />
-              </Pressable>
-            )}
-          </View>
-
-          {searchQuery.trim().length > 0 ? (
-            <View style={styles.comparisonGrid}>
-              {comparisonResults.map(({ dict, entry }) => {
-                const familyColor =
-                  FAMILY_COLORS[dict.family?.toLowerCase()] || theme.gold;
-                return (
-                  <View key={dict.languageId} style={styles.compareCard}>
-                    <View style={styles.compareCardHeader}>
-                      {(() => {
-                        const iden = getLanguageIdentity(dict.languageId);
-                        return (
-                          <View style={{ flex: 1 }}>
-                            <View style={{ flexDirection: "row", alignItems: "center", gap: 5, marginBottom: 2 }}>
-                              <Text style={{ fontSize: 10, fontWeight: "800", color: theme.gold, backgroundColor: `${theme.gold}20`, paddingHorizontal: 6, paddingVertical: 1, borderRadius: 999 }}>
-                                “{iden.greeting}”
-                              </Text>
-                              <Text style={{ fontSize: 9.5, color: theme.textMuted }}>
-                                {iden.region}
-                              </Text>
-                            </View>
-                            <Text style={styles.compareLangName}>
-                              {dict.languageName.split("(")[0].trim()}
-                            </Text>
-                          </View>
-                        );
-                      })()}
-                      <View
-                        style={[
-                          styles.familyBadge,
-                          { backgroundColor: theme.surfaceContainerHighest, borderWidth: 1, borderColor: theme.outlineVariant },
-                        ]}
-                      >
-                        <Text
-                          style={[styles.familyBadgeText, { color: theme.textSecondary }]}
-                        >
-                          {dict.family}
-                        </Text>
-                      </View>
-                    </View>
-
-                    {entry ? (
-                      <View>
-                        <Text style={styles.compareTranslation}>
-                          {entry.translation}
-                        </Text>
-                        {entry.pronunciation ? (
-                          <Text style={styles.comparePronounce}>
-                            /{entry.pronunciation}/
-                          </Text>
-                        ) : null}
-                        {entry.context ? (
-                          <Text style={styles.compareContext}>
-                            {entry.context}
-                          </Text>
-                        ) : null}
-                      </View>
-                    ) : (
-                      <View style={styles.missingWordRow}>
-                        <Text style={styles.missingWordText}>
-                          Not yet recorded
-                        </Text>
-                        <Pressable
-                          onPress={() => {
-                            setContribLang(dict.languageName.split("(")[0].trim());
-                            setContribEnglish(searchQuery);
-                            setIsContributeOpen(true);
-                          }}
-                          style={styles.addWordMiniBtn}
-                        >
-                          <Text style={styles.addWordMiniText}>+ Add</Text>
-                        </Pressable>
-                      </View>
-                    )}
-                  </View>
-                );
-              })}
-            </View>
-          ) : (
-            <View style={styles.promptHelper}>
-              <Ionicons name="sparkles-outline" size={28} color={theme.gold} />
-              <Text style={styles.promptHelperText}>
-                Tap any word chip above or enter an English or Kenyan word to see
-                all {ALL_DICT_METAS.length} translations side-by-side!
-              </Text>
             </View>
           )}
         </View>

@@ -219,7 +219,7 @@ export default function ToolsHubPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-3.5 sm:py-8">
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-10">
       <Suspense fallback={null}>
         <ToolsUrlSync onSync={handleUrlSync} />
       </Suspense>
@@ -232,7 +232,7 @@ export default function ToolsHubPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Header */}
-      <div className="mb-4 sm:mb-8">
+      <div className="mb-6 sm:mb-8">
         {activeCategoryInfo ? (
           <>
             <div className="flex items-center gap-2 text-xs text-text-muted mb-1.5">
@@ -256,7 +256,7 @@ export default function ToolsHubPage() {
           </>
         ) : (
           <>
-            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2">
+            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-2.5 sm:mb-3">
               <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
             </h1>
             <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">

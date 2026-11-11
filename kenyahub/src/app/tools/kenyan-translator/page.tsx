@@ -245,7 +245,7 @@ export default function KenyanTranslatorPage() {
   const [categoryPage, setCategoryPage] = useState(1);
   const [categorySearch, setCategorySearch] = useState("");
   const [searchPage, setSearchPage] = useState(1);
-  const [viewMode, setViewMode] = useState<"translate" | "compare" | "browse">("translate");
+  const [viewMode, setViewMode] = useState<"translate" | "browse">("translate");
   const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICT_METAS.map((d) => d.languageId));
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
@@ -926,9 +926,8 @@ export default function KenyanTranslatorPage() {
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
         <ExpandablePillRow>
           {([
-            { id: "translate" as const, label: "Translate (Any → Any / All)" },
-            { id: "compare" as const, label: `Compare (${ALL_DICT_METAS.length} Languages)` },
-            { id: "browse" as const, label: "Browse Dictionaries" },
+            { id: "translate" as const, label: "Translate & Dictionary (All 22 Languages)" },
+            { id: "browse" as const, label: "Browse 22 Dictionaries" },
           ]).map((mode) => {
             const active = viewMode === mode.id;
             return (
@@ -1417,200 +1416,6 @@ export default function KenyanTranslatorPage() {
         )}
 
         {/* ═══════════════════════════════════════ */}
-        {/* ── COMPARE MODE ── */}
-        {/* ═══════════════════════════════════════ */}
-        {viewMode === "compare" && (
-          <>
-            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5 space-y-3.5">
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
-                  <label className="text-[0.6rem] uppercase tracking-wider text-text-muted font-medium">
-                    Compare across languages ({compareLanguages.length}/{ALL_DICT_METAS.length} selected)
-                  </label>
-                  <div className="flex items-center gap-1.5 bg-bg-elevated px-2 py-0.5 rounded-lg border border-border">
-                    <button
-                      type="button"
-                      onClick={() => setCompareLanguages(ALL_DICT_METAS.map((d) => d.languageId))}
-                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                    >
-                      All ({ALL_DICT_METAS.length})
-                    </button>
-                    <span className="text-[0.6rem] text-border">|</span>
-                    <button
-                      type="button"
-                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "nilotic").map((d) => d.languageId))}
-                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                    >
-                      Nilotic
-                    </button>
-                    <span className="text-[0.6rem] text-border">|</span>
-                    <button
-                      type="button"
-                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "bantu").map((d) => d.languageId))}
-                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                    >
-                      Bantu
-                    </button>
-                    <span className="text-[0.6rem] text-border">|</span>
-                    <button
-                      type="button"
-                      onClick={() => setCompareLanguages(ALL_DICT_METAS.filter((d) => d.family === "cushitic").map((d) => d.languageId))}
-                      className="text-[0.65rem] font-medium text-text-muted hover:text-gold transition-colors"
-                    >
-                      Cushitic
-                    </button>
-                    <span className="text-[0.6rem] text-border">|</span>
-                    <button
-                      type="button"
-                      onClick={() => setCompareLanguages([])}
-                      className="text-[0.65rem] font-medium text-text-muted hover:text-kenya-red transition-colors"
-                    >
-                      Clear
-                    </button>
-                  </div>
-                </div>
-
-                <ExpandablePillRow>
-                  {ALL_DICT_METAS.map((d) => {
-                    const isSelected = compareLanguages.includes(d.languageId);
-                    return (
-                      <button
-                        key={d.languageId}
-                        onClick={() => {
-                          setCompareLanguages((prev) =>
-                            isSelected ? prev.filter((l) => l !== d.languageId) : [...prev, d.languageId]
-                          );
-                        }}
-                        className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[0.65rem] font-medium transition-all flex items-center gap-1 ${
-                          isSelected
-                            ? "text-white shadow-sm"
-                            : "bg-bg-elevated border border-border text-text-secondary hover:text-gold"
-                        }`}
-                      >
-                        <span className="text-[0.6rem] px-1 rounded bg-bg-card/50 text-text-muted uppercase tracking-wider">{d.family.slice(0, 3)}</span>
-                        {d.languageName.split("(")[0].trim()}
-                      </button>
-                    );
-                  })}
-                </ExpandablePillRow>
-              </div>
-
-              <div className="space-y-2">
-                <SearchInput
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onClear={() => setSearchQuery("")}
-                  placeholder="Type any English or Kenyan word (e.g. Water, Maĩ, Bishaan, Nkárɛ́, Maji)..."
-                  id="compare-search"
-                />
-                <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
-                  <span className="text-[0.65rem] text-text-muted font-medium">Quick compare:</span>
-                  {POPULAR_COMPARE_WORDS.map((word) => (
-                    <button
-                      key={word}
-                      type="button"
-                      onClick={() => setSearchQuery(word)}
-                      className={`px-2 py-0.5 rounded-md text-[0.65rem] transition-colors border ${
-                        searchQuery.toLowerCase() === word.toLowerCase()
-                          ? "bg-gold/15 text-gold border-gold/30 font-semibold"
-                          : "bg-bg-elevated text-text-secondary border-border hover:border-gold/50 hover:text-text-primary"
-                      }`}
-                    >
-                      {word}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {!searchQuery && (
-              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto">
-                  <BarChart className="w-6 h-6" />
-                </div>
-                <div className="max-w-md mx-auto">
-                  <h4 className="text-sm font-semibold text-text-primary">Compare Across {ALL_DICT_METAS.length} Kenyan Languages</h4>
-                  <p className="text-xs text-text-muted mt-1 leading-relaxed">
-                    Instantly compare vocabulary across Swahili, Kikuyu, Dholuo, Kalenjin, Maasai, Samburu, Embu, Taita, Borana, Rendille, Pokomo, Pokot, Taveta, and more.
-                  </p>
-                </div>
-                <div className="flex flex-wrap justify-center gap-2 pt-1 max-w-xl mx-auto">
-                  {POPULAR_COMPARE_WORDS.map((word) => (
-                    <button
-                      key={word}
-                      type="button"
-                      onClick={() => setSearchQuery(word)}
-                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/40 transition-all flex items-center gap-1.5"
-                    >
-                      <span>{word}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {searchQuery && comparisonResults.length > 0 && (
-              <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-                <div className="px-4 py-3 border-b border-border bg-bg-elevated/50 flex items-center justify-between flex-wrap gap-2">
-                  <h4 className="text-sm font-semibold text-text-primary">
-                    &ldquo;{searchQuery}&rdquo; {resolvedEnglish && resolvedEnglish !== searchQuery.toLowerCase() ? <span className="text-text-muted font-normal text-xs"> (English middleman: &ldquo;{resolvedEnglish}&rdquo;)</span> : null} in {compareLanguages.length} languages
-                  </h4>
-                  <span className="text-[0.65rem] text-text-muted">
-                    {comparisonResults.filter((r) => r.entry).length} of {compareLanguages.length} found
-                  </span>
-                </div>
-                <div className="divide-y divide-border">
-                  {comparisonResults.map((result) => (
-                    <div key={result.languageId} className="px-4 py-2.5 sm:py-3 flex items-center gap-3 hover:bg-bg-card-hover transition-colors">
-                      <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FAMILY_COLORS[result.family] }} />
-                      <div className="w-28 sm:w-36 flex-shrink-0">
-                        <p className="text-xs font-medium text-text-primary break-words">{result.languageName}</p>
-                        <p className="text-[0.6rem] text-text-muted capitalize">{result.family}</p>
-                      </div>
-                      {result.entry ? (
-                        <div className="min-w-0 flex-1">
-                          <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
-                          {result.entry.pronunciation && (
-                            <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
-                          )}
-                          {result.entry.english.toLowerCase() !== searchQuery.toLowerCase() && (
-                            <p className="text-[0.65rem] text-text-muted mt-0.5">Meaning: {result.entry.english}</p>
-                          )}
-                        </div>
-                      ) : (
-                        <div className="flex-1 flex items-center justify-between gap-2">
-                          <p className="text-xs text-text-muted italic">Not in dictionary yet</p>
-                          <button
-                            type="button"
-                            onClick={() => openContributeModal(result.languageName, resolvedEnglish || searchQuery)}
-                            className="text-[0.65rem] text-gold hover:text-gold-light bg-gold/10 hover:bg-gold/20 px-2 py-0.5 rounded font-medium transition-colors flex items-center gap-1 cursor-pointer"
-                          >
-                            <Plus className="w-3 h-3" />
-                            <span>Add translation</span>
-                          </button>
-                        </div>
-                      )}
-                      {result.entry && (
-                        <button onClick={() => copyToClipboard(result.entry!.translation)} className="w-6 h-6 rounded bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors flex-shrink-0">
-                          {copiedText === result.entry.translation ? (
-                            <svg className="w-3 h-3 text-kenya-green-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                          ) : (
-                            <svg className="w-3 h-3 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                          )}
-                        </button>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </>
-        )}
-
         {/* ═══════════════════════════════════════ */}
         {/* ── BROWSE MODE — All 22 Languages ── */}
         {/* ═══════════════════════════════════════ */}
