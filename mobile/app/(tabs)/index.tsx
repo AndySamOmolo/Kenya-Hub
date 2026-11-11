@@ -398,13 +398,13 @@ function PopularToolRow({
           <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
         </View>
         <View style={styles.popularToolBody}>
-          <Text
-            style={[styles.popularToolTitle, { color: theme.textPrimary }]}
-            numberOfLines={1}
-          >
-            {tool.title || tool.shortTitle}
-          </Text>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 2, marginBottom: 2 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 6 }}>
+            <Text
+              style={[styles.popularToolTitle, { color: theme.textPrimary }]}
+              numberOfLines={1}
+            >
+              {tool.shortTitle || tool.title}
+            </Text>
             <View
               style={[
                 styles.miniCategoryPill,
@@ -417,7 +417,7 @@ function PopularToolRow({
             </View>
           </View>
           <Text
-            style={[styles.popularToolDesc, { color: theme.textSecondary }]}
+            style={[styles.popularToolDesc, { color: theme.textSecondary, marginTop: 2 }]}
             numberOfLines={1}
           >
             {tool.description}
@@ -742,7 +742,7 @@ export default function HomeScreen() {
         t.description.toLowerCase().includes(q) ||
         t.category.toLowerCase().includes(q) ||
         (t.keywords || []).some((k) => k.toLowerCase().includes(q))
-    ).slice(0, 8);
+    ).slice(0, 6);
   }, [searchQuery]);
 
   const popular = useMemo(() => {
@@ -761,7 +761,7 @@ export default function HomeScreen() {
         }
         return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
       })
-      .slice(0, 8);
+      .slice(0, 6);
   }, [visitCounts]);
 
   const pinnedTools = useMemo(
@@ -1059,19 +1059,9 @@ export default function HomeScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.widgetsScrollContent}
         >
-          {/* Widget A: Language Learning Hub (Proper dynamic language navigation) */}
-          <Pressable
+          {/* Widget A: Language Learning Hub (Auto-rotating & touch-isolated) */}
+          <View
             key={`widget-learn-${theme.isDark ? "dark" : "light"}`}
-            android_ripple={androidRipple(theme.rippleColor)}
-            onPress={() => {
-              const currentFeatured = learnStats.totalXP > 0
-                ? { id: learnStats.langId }
-                : ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
-              router.push({
-                pathname: "/tools/[slug]",
-                params: { slug: "learn", lang: currentFeatured.id },
-              });
-            }}
             style={[
               styles.snapshotWidget,
               {
@@ -1081,9 +1071,8 @@ export default function HomeScreen() {
             ]}
           >
             {(() => {
-              const currentFeatured = learnStats.totalXP > 0
-                ? { id: learnStats.langId, name: learnStats.langName, greeting: learnStats.greeting || "Habari!", region: learnStats.region || "Kenyan Heritage" }
-                : ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
+              const currentFeatured = ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
+              const isCurrentLearned = learnStats.langId === currentFeatured.id && learnStats.totalXP > 0;
 
               return (
                 <>
@@ -1102,11 +1091,10 @@ export default function HomeScreen() {
                       </View>
                     </View>
                     <Pressable
-                      onPress={(e) => {
-                        e.stopPropagation();
-                        setFeaturedLangIdx((i) => i + 1);
+                      onPress={() => {
+                        setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
                       }}
-                      hitSlop={8}
+                      hitSlop={12}
                       style={styles.diceMiniBtn}
                     >
                       <Ionicons name="dice-outline" size={14} color={theme.gold} />
@@ -1116,30 +1104,43 @@ export default function HomeScreen() {
                     </Pressable>
                   </View>
 
-                  <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
-                    Learn {currentFeatured.name}
-                  </Text>
-                  <Text
-                    style={[styles.widgetSubText, { color: theme.textSecondary }]}
-                    numberOfLines={2}
+                  <Pressable
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    onPress={() => {
+                      router.push({
+                        pathname: "/tools/[slug]",
+                        params: { slug: "learn", lang: currentFeatured.id },
+                      });
+                    }}
+                    style={{ flex: 1, justifyContent: "space-between" }}
                   >
-                    {learnStats.totalXP > 0
-                      ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom in ${currentFeatured.region}`
-                      : `Explore ${currentFeatured.name} — ${currentFeatured.region} · Flashcards, grammar & oral wisdom`}
-                  </Text>
+                    <View>
+                      <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
+                        Learn {currentFeatured.name}
+                      </Text>
+                      <Text
+                        style={[styles.widgetSubText, { color: theme.textSecondary }]}
+                        numberOfLines={2}
+                      >
+                        {isCurrentLearned
+                          ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom in ${currentFeatured.region}`
+                          : `Explore ${currentFeatured.name} — ${currentFeatured.region} · Flashcards, grammar & oral wisdom`}
+                      </Text>
+                    </View>
+
+                    <View style={styles.widgetFooterLink}>
+                      <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
+                        {isCurrentLearned ? "Resume Course" : "Start Learning"}
+                      </Text>
+                      <Ionicons name="arrow-forward" size={13} color={theme.gold} />
+                    </View>
+                  </Pressable>
                 </>
               );
             })()}
+          </View>
 
-            <View style={styles.widgetFooterLink}>
-              <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
-                {learnStats.totalXP > 0 ? "Resume Course" : "Start Learning"}
-              </Text>
-              <Ionicons name="arrow-forward" size={13} color={theme.gold} />
-            </View>
-          </Pressable>
-
-          {/* Widget B: Word of the Moment (92,000+ Phrases) */}
+          {/* Widget B: Word of the Moment (Auto-rotating & touch-isolated) */}
           {currentWord && (
             <View
               style={[
@@ -1163,46 +1164,51 @@ export default function HomeScreen() {
                   </Text>
                 </View>
                 <Pressable
-                  onPress={() => setWordIdx((i) => i + 1)}
-                  hitSlop={8}
+                  onPress={() => setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length))}
+                  hitSlop={12}
                   style={styles.diceMiniBtn}
                 >
-                  <Ionicons name="dice-outline" size={15} color={theme.gold} />
-                  <Text style={{ fontSize: 10.5, fontFamily: "Outfit_700Bold", color: theme.gold }}>
+                  <Ionicons name="dice-outline" size={14} color={theme.gold} />
+                  <Text style={{ fontSize: 10, fontFamily: "Outfit_700Bold", color: theme.gold }}>
                     Next
                   </Text>
                 </Pressable>
               </View>
 
-              <Text
-                style={[styles.widgetMainTitle, { color: theme.gold }]}
-                numberOfLines={1}
-              >
-                {currentWord.entry.translation}
-              </Text>
-              <Text
-                style={[styles.widgetSubText, { color: theme.textPrimary }]}
-                numberOfLines={2}
-              >
-                &ldquo;{currentWord.entry.english}&rdquo;{" "}
-                {currentWord.entry.pronunciation
-                  ? `· /${currentWord.entry.pronunciation}/`
-                  : ""}
-              </Text>
-
               <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
                 onPress={() =>
                   router.push({
                     pathname: "/tools/[slug]",
                     params: { slug: "kenyan-translator" },
                   })
                 }
-                style={styles.widgetFooterLink}
+                style={{ flex: 1, justifyContent: "space-between" }}
               >
-                <Text style={[styles.widgetFooterLinkText, { color: "#2FA463" }]}>
-                  {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in {ALL_DICT_METAS.length} Languages
-                </Text>
-                <Ionicons name="arrow-forward" size={13} color="#2FA463" />
+                <View>
+                  <Text
+                    style={[styles.widgetMainTitle, { color: theme.gold }]}
+                    numberOfLines={1}
+                  >
+                    {currentWord.entry.translation}
+                  </Text>
+                  <Text
+                    style={[styles.widgetSubText, { color: theme.textPrimary }]}
+                    numberOfLines={2}
+                  >
+                    &ldquo;{currentWord.entry.english}&rdquo;{" "}
+                    {currentWord.entry.pronunciation
+                      ? `· /${currentWord.entry.pronunciation}/`
+                      : ""}
+                  </Text>
+                </View>
+
+                <View style={styles.widgetFooterLink}>
+                  <Text style={[styles.widgetFooterLinkText, { color: "#2FA463" }]}>
+                    {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in {ALL_DICT_METAS.length} Languages
+                  </Text>
+                  <Ionicons name="arrow-forward" size={13} color="#2FA463" />
+                </View>
               </Pressable>
             </View>
           )}
@@ -1334,25 +1340,17 @@ export default function HomeScreen() {
                         { backgroundColor: `${col}1C` },
                       ]}
                     >
-                      <DynamicIcon emoji={t.icon} size={18} color={col} />
+                      <DynamicIcon emoji={t.icon} size={15} color={col} />
                     </View>
-                    <View style={{ flex: 1 }}>
-                      <Text
-                        style={[
-                          styles.pinnedMiniTitle,
-                          { color: theme.textPrimary },
-                        ]}
-                        numberOfLines={1}
-                      >
-                        {t.shortTitle}
-                      </Text>
-                      <Text
-                        style={{ fontSize: 10.5, color: theme.textMuted }}
-                        numberOfLines={1}
-                      >
-                        Tap to open
-                      </Text>
-                    </View>
+                    <Text
+                      style={[
+                        styles.pinnedMiniTitle,
+                        { color: theme.textPrimary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      {t.shortTitle || t.title}
+                    </Text>
                   </Pressable>
                 );
               })}
@@ -2005,79 +2003,81 @@ const styles = StyleSheet.create({
   },
   pinnedStripContent: {
     paddingHorizontal: 16,
-    gap: 10,
+    gap: 8,
   },
   pinnedMiniCard: {
-    width: 176,
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
-    padding: 10,
-    borderRadius: 16,
+    gap: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 12,
     borderWidth: 1,
   },
   pinnedMiniIcon: {
-    width: 36,
-    height: 36,
-    borderRadius: 11,
+    width: 26,
+    height: 26,
+    borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
   },
   pinnedMiniTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 13,
+    fontSize: 12.5,
   },
   popularToolsList: {
     paddingHorizontal: 16,
-    gap: 10,
+    gap: 8,
   },
   popularToolCard: {
-    borderRadius: 16,
+    borderRadius: 14,
     borderWidth: 1,
     overflow: "hidden",
   },
   popularToolPressable: {
     flexDirection: "row",
     alignItems: "center",
-    padding: 12,
-    gap: 12,
+    paddingVertical: 9,
+    paddingHorizontal: 11,
+    gap: 10,
   },
   popularToolIconWrap: {
-    width: 44,
-    height: 44,
-    borderRadius: 13,
+    width: 36,
+    height: 36,
+    borderRadius: 10,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   popularToolBody: {
     flex: 1,
+    minWidth: 0,
   },
   popularToolHeaderLine: {
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    marginBottom: 3,
+    marginBottom: 2,
   },
   popularToolTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 14,
+    fontSize: 13.5,
     flexShrink: 1,
   },
   miniCategoryPill: {
-    paddingHorizontal: 6,
-    paddingVertical: 1.5,
-    borderRadius: 6,
+    paddingHorizontal: 5,
+    paddingVertical: 1,
+    borderRadius: 5,
   },
   miniCategoryText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 9.5,
-    letterSpacing: 0.3,
+    fontSize: 9,
+    letterSpacing: 0.2,
   },
   popularToolDesc: {
     fontFamily: "Inter_400Regular",
-    fontSize: 11.5,
-    lineHeight: 16,
+    fontSize: 11,
+    lineHeight: 15,
   },
   popularToolActions: {
     flexDirection: "row",

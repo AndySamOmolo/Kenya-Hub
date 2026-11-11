@@ -50,6 +50,7 @@ export default function SkillTree({
     Object.fromEntries(units.map((u) => [u.id, true]))
   );
   const [showAchievements, setShowAchievements] = useState(false);
+  const [showDashboard, setShowDashboard] = useState(false);
   const [achCategory, setAchCategory] = useState<string>("all");
 
   const allExpanded = units.every((u) => expandedUnits[u.id] !== false);
@@ -84,11 +85,59 @@ export default function SkillTree({
 
   return (
     <div className="mx-auto max-w-3xl px-0 sm:px-2 pb-8">
-      {/* ─── Progress & Sources Dashboard ─── */}
-      <div className="mb-6">
-        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-4 sm:p-5">
-          {/* Responsive 2x2 on Mobile / 4-col on Desktop Stats Grid (No Heart System) */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+      {/* ─── Sleek Compact Progress Bar (Collapsible on Mobile) ─── */}
+      <div className="mb-4">
+        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-3.5 sm:p-5 shadow-xs transition-all">
+          {/* Always-visible compact overview row */}
+          <div className="flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-2.5 min-w-0">
+              <span className="text-xl shrink-0">{levelInfo.current.icon}</span>
+              <div className="min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-xs sm:text-sm font-bold text-text-primary">
+                    Lv.{levelInfo.current.level} {levelInfo.current.title.split("•")[0].trim()}
+                  </span>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[0.6875rem] font-bold bg-gold/15 text-gold border border-gold/30">
+                    {progress.xp} XP
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-[0.6875rem] sm:text-xs text-text-muted mt-0.5 flex-wrap">
+                  <span>{completedSkills}/{totalSkills} Modules</span>
+                  <span>·</span>
+                  <span className="text-text-secondary">{progress.wordsLearned.length} Words</span>
+                  <span>·</span>
+                  <span className={progress.streak > 0 ? "text-orange-400 font-semibold" : "text-text-muted"}>
+                    {progress.streak}d Streak
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1.5 shrink-0">
+              {dueReviewCount > 0 && (
+                <button
+                  onClick={onStartReview}
+                  className="flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/40 px-2.5 py-1 text-xs font-semibold text-gold hover:bg-gold/25 transition-colors cursor-pointer"
+                >
+                  <Sparkles className="h-3 w-3" />
+                  <span>Review ({dueReviewCount})</span>
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowDashboard(!showDashboard)}
+                className="flex items-center gap-1 px-3 py-1.5 rounded-xl border border-border bg-bg-elevated hover:bg-border/60 text-xs font-semibold text-text-secondary hover:text-text-primary transition-all cursor-pointer"
+              >
+                <span>{showDashboard ? "Hide Stats ▴" : "Stats & Badges ▾"}</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Expanded detailed statistics */}
+          {showDashboard && (
+            <div className="mt-4 pt-4 border-t border-border/50 animate-in fade-in duration-200">
+              {/* Responsive 2x2 on Mobile / 4-col on Desktop Stats Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
             {/* 1. Total XP */}
             <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-3 flex flex-col justify-between">
               <span className="text-xs font-medium text-text-muted">Total XP</span>
@@ -226,6 +275,8 @@ export default function SkillTree({
                 ))}
               </ul>
             </details>
+          )}
+            </div>
           )}
         </div>
 

@@ -118,8 +118,8 @@ export default function HomePage() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
                   </span>
-                  <span className="text-[0.6875rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide">
-                    22 Kenyan Languages · {TOOLS.length} Interactive Tools · 47 Counties
+                  <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide whitespace-nowrap">
+                    22 Languages · {TOOLS.length} Interactive Tools · 47 Counties
                   </span>
                 </div>
               </div>
