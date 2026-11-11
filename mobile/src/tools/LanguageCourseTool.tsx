@@ -3419,11 +3419,15 @@ export default function LanguageCourseTool({
                       <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
                         Literal: {p.translation}
                       </Text>
-                      {p.explanation ? (
-                        <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                          {p.explanation}
-                        </Text>
-                      ) : null}
+                      {p.explanation
+                        ? renderFormattedText(
+                            p.explanation,
+                            { fontSize: 12, color: colors.textMuted, marginTop: 2 },
+                            colors.text,
+                            colors.textSecondary,
+                            colors.surfaceContainerHigh
+                          )
+                        : null}
                       {p.englishEquivalent ? (
                         <Text style={{ fontSize: 11.5, color: '#10B981', marginTop: 2 }}>
                           Equivalent: {p.englishEquivalent}
@@ -3486,17 +3490,15 @@ export default function LanguageCourseTool({
                       <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
                         {p.english}
                       </Text>
-                      {(p.meaning || p.explanation) ? (
-                        <Text style={{ fontSize: 12, color: colors.textMuted }}>
-                          {renderFormattedText(
+                      {(p.meaning || p.explanation)
+                        ? renderFormattedText(
                             p.meaning || p.explanation || "",
                             { fontSize: 12, color: colors.textMuted },
                             colors.text,
                             colors.textSecondary,
-                            colors.surfaceVariant
-                          )}
-                        </Text>
-                      ) : null}
+                            colors.surfaceContainerHigh
+                          )
+                        : null}
                     </View>
                   ))}
                   {filtered.length > visible.length && (
@@ -3680,12 +3682,20 @@ export default function LanguageCourseTool({
                       <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
                         “{item.nativeText}”
                       </Text>
-                      <Text style={{ fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary }}>
-                        Literal: {item.literalTranslation}
-                      </Text>
-                      <Text style={{ fontSize: 12, color: colors.textMuted, marginTop: 2 }}>
-                        {item.meaning}
-                      </Text>
+                      {renderFormattedText(
+                        `Literal: ${item.literalTranslation}`,
+                        { fontSize: 12.5, fontStyle: 'italic', color: colors.textSecondary },
+                        colors.text,
+                        colors.textSecondary,
+                        colors.surfaceContainerHigh
+                      )}
+                      {renderFormattedText(
+                        item.meaning,
+                        { fontSize: 12, color: colors.textMuted, marginTop: 2 },
+                        colors.text,
+                        colors.textSecondary,
+                        colors.surfaceContainerHigh
+                      )}
                       {item.englishEquivalent ? (
                         <Text style={{ fontSize: 11.5, color: langColor, marginTop: 2 }}>
                           Equivalent: {item.englishEquivalent}

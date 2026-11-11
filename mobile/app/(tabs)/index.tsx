@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {

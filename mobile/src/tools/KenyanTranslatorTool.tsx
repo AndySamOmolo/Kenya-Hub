@@ -1230,7 +1230,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                     {item.entry.context ? (
                       <Text style={styles.contextText}>
-                        {item.entry.context}
+                        {item.entry.context.replace(/\*\*([^*]+)\*\*/g, "$1")}
                       </Text>
                     ) : null}
                   </View>
@@ -1413,7 +1413,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
                   ) : null}
 
                   {e.context ? (
-                    <Text style={styles.contextText}>{e.context}</Text>
+                    <Text style={styles.contextText}>{e.context.replace(/\*\*([^*]+)\*\*/g, "$1")}</Text>
                   ) : null}
                 </View>
               );
