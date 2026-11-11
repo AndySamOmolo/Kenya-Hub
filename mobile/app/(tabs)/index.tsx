@@ -448,6 +448,25 @@ function BentoToolTile({
   );
 }
 
+
+const ROTATING_LANGUAGES = [
+  { id: "swahili", name: "Kiswahili", greeting: "Jambo!", region: "Swahili Coast" },
+  { id: "luo", name: "Dholuo", greeting: "Oyawore!", region: "Lake Victoria Basin" },
+  { id: "kalenjin", name: "Kalenjin", greeting: "Chamgei!", region: "Great Rift Valley" },
+  { id: "kikuyu", name: "Gĩkũyũ", greeting: "Mwohoro!", region: "Mount Kenya Highlands" },
+  { id: "luhya", name: "Luluhya", greeting: "Mulembe!", region: "Western Forest Lands" },
+  { id: "kamba", name: "Kĩkamba", greeting: "Ũmũvoo!", region: "Ukambani Hills" },
+  { id: "maasai", name: "Maa (Maasai)", greeting: "Sopa!", region: "Mara-Amboseli Plains" },
+  { id: "somali", name: "Af-Soomaali", greeting: "Nabad!", region: "Northern Frontier" },
+  { id: "turkana", name: "Ng'aturkana", greeting: "Mata!", region: "Jade Sea Basin" },
+  { id: "mijikenda", name: "Kigiriama", greeting: "Vidze!", region: "Coastal Kaya Forests" },
+  { id: "meru", name: "Kĩmĩĩrũ", greeting: "Muuga!", region: "Nyambene Slopes" },
+  { id: "kisii", name: "Ekegusii", greeting: "Bwakire!", region: "Gusii Highlands" },
+  { id: "borana", name: "Afaan Borana", greeting: "Nagaa!", region: "Marsabit Plateau" },
+  { id: "embu", name: "Kĩembu", greeting: "Mwega!", region: "Mount Kenya South" },
+  { id: "taita", name: "Kidawida", greeting: "Mwashuma!", region: "Taita Cloud Hills" },
+];
+
 const SUPER_APP_LAUNCHER_ITEMS = [
   {
     id: "paye",
@@ -521,16 +540,23 @@ export default function HomeScreen() {
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
   const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
   const [wordIdx, setWordIdx] = useState<number>(0);
+  const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
+    () => new Date().getDate() % ROTATING_LANGUAGES.length
+  );
   const [learnStats, setLearnStats] = useState<{
     langId: string;
     langName: string;
     totalXP: number;
     streak: number;
+    greeting?: string;
+    region?: string;
   }>({
-    langId: "kikuyu",
-    langName: "Gĩkũyũ",
+    langId: ROTATING_LANGUAGES[new Date().getDate() % ROTATING_LANGUAGES.length].id,
+    langName: ROTATING_LANGUAGES[new Date().getDate() % ROTATING_LANGUAGES.length].name,
     totalXP: 0,
     streak: 0,
+    greeting: ROTATING_LANGUAGES[new Date().getDate() % ROTATING_LANGUAGES.length].greeting,
+    region: ROTATING_LANGUAGES[new Date().getDate() % ROTATING_LANGUAGES.length].region,
   });
 
   useFocusEffect(
@@ -582,6 +608,73 @@ export default function HomeScreen() {
         .catch(() => {});
     }, [])
   );
+
+    // Dynamic 8 launcher tiles based on user's actual visit counts + popular defaults
+  const dynamicLauncherItems = useMemo(() => {
+    const TOOL_META: Record<string, { label: string; icon: any; color: string }> = {
+      "paye-calculator": { label: "PAYE Tax", icon: "calculator", color: "#2FA463" },
+      "mpesa-fee-calculator": { label: "M-Pesa", icon: "phone-portrait", color: "#10B981" },
+      "kplc-token-calculator": { label: "KPLC", icon: "flash", color: "#F59E0B" },
+      "kenyan-translator": { label: "Translator", icon: "language", color: "#EC4899" },
+      "learn": { label: "Learn", icon: "school", color: "#C8961E" },
+      "kra-car-import-calculator": { label: "Car Import", icon: "car", color: "#3B82F6" },
+      "sacco-chama-calculator": { label: "SACCO", icon: "business", color: "#8B5CF6" },
+      "mjengo-construction-calculator": { label: "Mjengo", icon: "construct", color: "#F97316" },
+      "kuccps-cluster-calculator": { label: "KUCCPS", icon: "ribbon", color: "#6366F1" },
+      "kcse-grade-calculator": { label: "KCSE", icon: "document-text", color: "#14B8A6" },
+      "cbc-curriculum": { label: "CBC", icon: "book", color: "#84CC16" },
+      "helb-calculator": { label: "HELB", icon: "school-outline", color: "#06B6D4" },
+      "number-plate-decoder": { label: "Plates", icon: "barcode-outline", color: "#64748B" },
+      "stamp-duty-calculator": { label: "Stamp Duty", icon: "home", color: "#A855F7" },
+      "traffic-fines": { label: "Fines", icon: "warning", color: "#EF4444" },
+      "water-bill-calculator": { label: "Water Bill", icon: "water", color: "#0EA5E9" },
+    };
+
+    // Sort by user visits first, then curated usage score
+    const sorted = [...TOOLS].sort((a, b) => {
+      const vA = visitCounts[a.slug] || 0;
+      const vB = visitCounts[b.slug] || 0;
+      if (vB !== vA) return vB - vA;
+      return getToolUsageScore(b) - getToolUsageScore(a);
+    });
+
+    const topFive = sorted.slice(0, 5).map((t) => {
+      const m = TOOL_META[t.slug] || { label: t.shortTitle.split(" ")[0], icon: "apps", color: "#C8961E" };
+      return {
+        id: t.slug,
+        label: m.label,
+        icon: m.icon,
+        color: m.color,
+        route: "/tools/[slug]" as const,
+        params: { slug: t.slug },
+      };
+    });
+
+    return [
+      ...topFive,
+      {
+        id: "matatu",
+        label: "Matatu",
+        icon: "bus" as const,
+        color: "#0EA5E9",
+        route: "/(tabs)/matatu" as const,
+      },
+      {
+        id: "county",
+        label: "Counties",
+        icon: "map" as const,
+        color: "#8B5CF6",
+        route: "/(tabs)/county" as const,
+      },
+      {
+        id: "all",
+        label: "All Tools",
+        icon: "grid" as const,
+        color: "#EF4444",
+        route: "/(tabs)/tools" as const,
+      },
+    ];
+  }, [visitCounts]);
 
   const togglePinTool = useCallback((slug: string) => {
     setPinnedSlugs((prev) => {
@@ -940,7 +1033,7 @@ export default function HomeScreen() {
             ]}
           >
             <View style={styles.launcherGrid}>
-              {SUPER_APP_APP_TILES(SUPER_APP_LAUNCHER_ITEMS, router, theme)}
+              {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme)}
             </View>
           </View>
         </View>
@@ -980,34 +1073,56 @@ export default function HomeScreen() {
               },
             ]}
           >
-            <View style={styles.widgetHeaderRow}>
-              <View
-                style={[
-                  styles.widgetBadgePill,
-                  { backgroundColor: `${theme.gold}22` },
-                ]}
-              >
-                <Ionicons name="school" size={12} color={theme.gold} />
-                <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
-                  23 COURSES
-                </Text>
-              </View>
-              <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.kenyaGreenLight }}>
-                {learnStats.streak > 0 ? `${learnStats.streak}d streak` : "Interactive"}
-              </Text>
-            </View>
+            {(() => {
+              const currentFeatured = learnStats.totalXP > 0
+                ? { id: learnStats.langId, name: learnStats.langName, greeting: learnStats.greeting || "Habari!", region: learnStats.region || "Kenyan Heritage" }
+                : ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
 
-            <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
-              Learn {learnStats.langName}
-            </Text>
-            <Text
-              style={[styles.widgetSubText, { color: theme.textSecondary }]}
-              numberOfLines={2}
-            >
-              {learnStats.totalXP > 0
-                ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom`
-                : "Master Kikuyu, Swahili, Dholuo, Kalenjin & 19 more Kenyan languages"}
-            </Text>
+              return (
+                <>
+                  <View style={styles.widgetHeaderRow}>
+                    <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                      <View style={[styles.widgetBadgePill, { backgroundColor: `${theme.gold}22` }]}>
+                        <Ionicons name="school" size={12} color={theme.gold} />
+                        <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
+                          23 COURSES
+                        </Text>
+                      </View>
+                      <View style={{ backgroundColor: `${theme.gold}18`, paddingHorizontal: 6, paddingVertical: 1.5, borderRadius: 999 }}>
+                        <Text style={{ fontSize: 9.5, fontWeight: "800", color: theme.gold }}>
+                          “{currentFeatured.greeting}”
+                        </Text>
+                      </View>
+                    </View>
+                    <Pressable
+                      onPress={(e) => {
+                        e.stopPropagation();
+                        setFeaturedLangIdx((i) => i + 1);
+                      }}
+                      hitSlop={8}
+                      style={styles.diceMiniBtn}
+                    >
+                      <Ionicons name="dice-outline" size={14} color={theme.gold} />
+                      <Text style={{ fontSize: 10, fontFamily: "Outfit_700Bold", color: theme.gold }}>
+                        Rotate
+                      </Text>
+                    </Pressable>
+                  </View>
+
+                  <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
+                    Learn {currentFeatured.name}
+                  </Text>
+                  <Text
+                    style={[styles.widgetSubText, { color: theme.textSecondary }]}
+                    numberOfLines={2}
+                  >
+                    {learnStats.totalXP > 0
+                      ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom in ${currentFeatured.region}`
+                      : `Explore ${currentFeatured.name} — ${currentFeatured.region} · Flashcards, grammar & oral wisdom`}
+                  </Text>
+                </>
+              );
+            })()}
 
             <View style={styles.widgetFooterLink}>
               <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
@@ -1582,7 +1697,14 @@ export default function HomeScreen() {
 }
 
 function SUPER_APP_APP_TILES(
-  items: typeof SUPER_APP_LAUNCHER_ITEMS,
+  items: Array<{
+    id: string;
+    label: string;
+    icon: any;
+    color: string;
+    route: any;
+    params?: any;
+  }>,
   router: ReturnType<typeof useRouter>,
   theme: any
 ) {
@@ -1616,6 +1738,8 @@ function SUPER_APP_APP_TILES(
       <Text
         style={[styles.launcherLabel, { color: theme.textPrimary }]}
         numberOfLines={1}
+        adjustsFontSizeToFit
+        minimumFontScale={0.8}
       >
         {item.label}
       </Text>

@@ -6,6 +6,7 @@ import {
   Text,
   View,
   ScrollView,
+  FlatList,
   TextInput,
   Pressable,
 } from "react-native";
@@ -29,6 +30,307 @@ type CountyHubTab = "directory" | "budgets" | "constituencies" | "climate" | "co
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
+
+// Precompute static lookups once at module level for instant tab loads
+const HOSPITAL_COUNT_MAP = new Map<string, number>();
+for (const h of (hospitalsData as any).hospitals || []) {
+  const k = String(h.county || "").toLowerCase().trim();
+  HOSPITAL_COUNT_MAP.set(k, (HOSPITAL_COUNT_MAP.get(k) || 0) + 1);
+}
+
+const POSTAL_COUNT_MAP = new Map<string, number>();
+for (const p of (postalData as any).codes || []) {
+  const k = String(p.county || "").toLowerCase().trim();
+  POSTAL_COUNT_MAP.set(k, (POSTAL_COUNT_MAP.get(k) || 0) + 1);
+}
+
+const BUDGET_MAP = new Map<number, any>();
+for (const b of (budgetsData as any).budgets || []) {
+  BUDGET_MAP.set(Number(b.code), b);
+}
+
+const RAIN_MAP = new Map<number, any>();
+for (const r of (rainfallData as any).counties || []) {
+  RAIN_MAP.set(Number(r.code), r);
+}
+
+const STATIC_ENRICHED_COUNTIES = countiesData.counties.map((c) => ({
+  ...c,
+  density: c.area > 0 ? Math.round(c.population / c.area) : 0,
+  budget: BUDGET_MAP.get(c.code) || null,
+  rain: RAIN_MAP.get(c.code) || null,
+  hospitalsCount: HOSPITAL_COUNT_MAP.get(c.name.toLowerCase().trim()) || 0,
+  postalCount: POSTAL_COUNT_MAP.get(c.name.toLowerCase().trim()) || 0,
+}));
+
+const NATIONAL_TOTALS = (() => {
+  const budgets = (budgetsData as any).budgets || [];
+  const totalAlloc = budgets.reduce((s: number, b: any) => s + (b.allocation || 0), 0);
+  const totalOsr = budgets.reduce((s: number, b: any) => s + (b.ownSourceRevenue || 0), 0);
+  const avgAbs =
+    budgets.length > 0
+      ? (budgets.reduce((s: number, b: any) => s + (b.absorptionRate || 0), 0) / budgets.length).toFixed(1)
+      : "0";
+  return { totalAlloc, totalOsr, avgAbs };
+})();
+
+
+function renderDirectoryCard(item: any, router: any, theme: any) {
+  const codeFormatted = String(item.code).padStart(3, "0");
+  return (
+    <View
+      key={item.code}
+      style={[
+        styles.countyCardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+        },
+      ]}
+    >
+      <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
+        style={styles.countyCard}
+        onPress={() => router.push(`/county/${item.slug}` as any)}
+      >
+        <View style={styles.cardHeaderRow}>
+          <View
+            style={[
+              styles.codeBadge,
+              {
+                backgroundColor: theme.primaryContainer,
+                borderColor: `${theme.gold}40`,
+              },
+            ]}
+          >
+            <Text style={[styles.codeText, { color: theme.onPrimaryContainer }]}>
+              {codeFormatted}
+            </Text>
+          </View>
+          <View style={{ flex: 1, marginLeft: 12 }}>
+            <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+              {item.name} County
+            </Text>
+            <Text style={[styles.countyCapital, { color: theme.textSecondary }]}>
+              HQ: <Text style={{ color: theme.textPrimary, fontWeight: "600" }}>{item.capital}</Text>
+              {" · "}
+              {item.area.toLocaleString()} km² ({item.density}/km²)
+            </Text>
+          </View>
+          <View style={[styles.trailingCircle, { backgroundColor: theme.surfaceContainerHigh }]}>
+            <Ionicons name="arrow-forward" size={16} color={theme.textSecondary} />
+          </View>
+        </View>
+
+        <View style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}>
+          <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+            <Ionicons name="person-circle-outline" size={14} color={theme.gold} />
+            <Text style={[styles.infoPillText, { color: theme.textSecondary }]} numberOfLines={1}>
+              Gov. {item.governor}
+            </Text>
+          </View>
+          <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+            <Ionicons name="people-outline" size={14} color={theme.sky} />
+            <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
+              {item.population >= 1000000
+                ? `${(item.population / 1000000).toFixed(2)}M`
+                : `${Math.round(item.population / 1000)}k`}
+            </Text>
+          </View>
+          {item.budget && (
+            <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+              <Ionicons name="cash-outline" size={14} color={theme.kenyaGreenLight} />
+              <Text style={[styles.infoPillText, { color: theme.kenyaGreenLight, fontWeight: "700" }]}>
+                KES {item.budget.allocation.toLocaleString()}M ({item.budget.absorptionRate}%)
+              </Text>
+            </View>
+          )}
+          {item.rain && (
+            <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+              <Ionicons name="rainy-outline" size={14} color={theme.sky} />
+              <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
+                {item.rain.annualRainfall} mm/yr
+              </Text>
+            </View>
+          )}
+        </View>
+      </Pressable>
+    </View>
+  );
+}
+
+function renderBudgetCard(item: any, router: any, theme: any) {
+  const b = item.budget;
+  if (!b) return null;
+  return (
+    <Pressable
+      key={item.code}
+      onPress={() => router.push(`/county/${item.slug}` as any)}
+      style={[
+        styles.countyCardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+          padding: 14,
+        },
+      ]}
+    >
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+          {String(item.code).padStart(3, "0")}. {item.name} County
+        </Text>
+        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.kenyaGreenLight }}>
+          {b.absorptionRate}% Absorbed
+        </Text>
+      </View>
+      <View style={{ height: 6, backgroundColor: theme.surfaceContainerHigh, borderRadius: 4, marginVertical: 8, overflow: "hidden" }}>
+        <View
+          style={{
+            height: "100%",
+            width: `${Math.min(100, b.absorptionRate)}%`,
+            backgroundColor: theme.kenyaGreenLight,
+          }}
+        />
+      </View>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+          Share: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>KES {b.allocation.toLocaleString()}M</Text>
+        </Text>
+        <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+          OSR: <Text style={{ fontWeight: "700", color: theme.gold }}>KES {b.ownSourceRevenue.toLocaleString()}M</Text>
+        </Text>
+        <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+          Spent: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>KES {b.expenditure.toLocaleString()}M</Text>
+        </Text>
+      </View>
+    </Pressable>
+  );
+}
+
+function renderConstituencyCard(item: any, router: any, theme: any) {
+  return (
+    <Pressable
+      key={item.code}
+      onPress={() => router.push(`/county/${item.slug}` as any)}
+      style={[
+        styles.countyCardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+          padding: 14,
+          gap: 8,
+        },
+      ]}
+    >
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+          {String(item.code).padStart(3, "0")}. {item.name} County
+        </Text>
+        <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold }}>
+          {item.constituencies.length} Constituencies →
+        </Text>
+      </View>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+        <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
+          Gov: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>{item.governor}</Text>
+        </Text>
+        <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
+          Dep: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>{item.deputyGovernor}</Text>
+        </Text>
+        {item.senator && (
+          <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
+            Sen: <Text style={{ fontWeight: "700", color: theme.sky }}>{item.senator}</Text>
+          </Text>
+        )}
+        {item.womenRep && (
+          <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
+            WR: <Text style={{ fontWeight: "700", color: theme.gold }}>{item.womenRep}</Text>
+          </Text>
+        )}
+      </View>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 5, marginTop: 4 }}>
+        {item.constituencies.map((con: string) => (
+          <View
+            key={con}
+            style={{
+              paddingHorizontal: 8,
+              paddingVertical: 3,
+              borderRadius: 6,
+              backgroundColor: theme.surfaceContainerHigh,
+              borderWidth: 1,
+              borderColor: theme.outlineVariant,
+            }}
+          >
+            <Text style={{ fontSize: 10, color: theme.textSecondary, fontWeight: "600" }}>{con}</Text>
+          </View>
+        ))}
+      </View>
+    </Pressable>
+  );
+}
+
+function renderClimateCard(item: any, router: any, theme: any) {
+  const r = item.rain;
+  if (!r) return null;
+  return (
+    <Pressable
+      key={item.code}
+      onPress={() => router.push(`/county/${item.slug}` as any)}
+      style={[
+        styles.countyCardWrap,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+          padding: 14,
+          gap: 8,
+        },
+      ]}
+    >
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View>
+          <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+            {String(item.code).padStart(3, "0")}. {item.name} County
+          </Text>
+          <Text style={{ fontSize: 11, color: theme.textSecondary }}>{r.climateZone}</Text>
+        </View>
+        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.sky }}>
+          {r.annualRainfall} mm/yr
+        </Text>
+      </View>
+      {(r.monthly || r.monthlyAvg) && (
+        <View style={{ flexDirection: "row", gap: 2 }}>
+          {MONTH_KEYS.map((mk, idx) => {
+            const mm = r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0;
+            return (
+              <View
+                key={mk}
+                style={{
+                  flex: 1,
+                  paddingVertical: 4,
+                  borderRadius: 4,
+                  alignItems: "center",
+                  backgroundColor:
+                    mm >= 150
+                      ? "rgba(26, 139, 209, 0.28)"
+                      : mm >= 70
+                      ? "rgba(47, 164, 99, 0.22)"
+                      : "rgba(200, 150, 30, 0.12)",
+                }}
+              >
+                <Text style={{ fontSize: 7, fontWeight: "700", color: theme.textMuted }}>{MONTHS[idx]}</Text>
+                <Text style={{ fontSize: 8, fontWeight: "800", color: theme.textPrimary }}>{mm}</Text>
+              </View>
+            );
+          })}
+        </View>
+      )}
+      <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+        Long Rains: {r.longRains} · Short Rains: {r.shortRains}
+      </Text>
+    </Pressable>
+  );
+}
+
 export default function CountyScreen() {
   const router = useRouter();
   const { theme } = useTheme();
@@ -43,36 +345,7 @@ export default function CountyScreen() {
 
   const notes: string[] = (countiesData as any).notes || [];
 
-  const enrichedCounties = useMemo(() => {
-    const budgetMap = new Map<number, any>();
-    for (const b of (budgetsData as any).budgets || []) {
-      budgetMap.set(Number(b.code), b);
-    }
-    const rainMap = new Map<number, any>();
-    for (const r of (rainfallData as any).counties || []) {
-      rainMap.set(Number(r.code), r);
-    }
-
-    return countiesData.counties.map((c) => {
-      const budget = budgetMap.get(c.code) || null;
-      const rain = rainMap.get(c.code) || null;
-      const density = c.area > 0 ? Math.round(c.population / c.area) : 0;
-      const hospitalsCount = ((hospitalsData as any).hospitals || []).filter(
-        (h: any) => h.county.toLowerCase() === c.name.toLowerCase()
-      ).length;
-      const postalCount = ((postalData as any).codes || []).filter(
-        (p: any) => p.county.toLowerCase() === c.name.toLowerCase()
-      ).length;
-      return {
-        ...c,
-        density,
-        budget,
-        rain,
-        hospitalsCount,
-        postalCount,
-      };
-    });
-  }, []);
+  const enrichedCounties = STATIC_ENRICHED_COUNTIES;
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -99,16 +372,7 @@ export default function CountyScreen() {
     });
   }, [query, enrichedCounties, sortBy]);
 
-  const nationalTotals = useMemo(() => {
-    const budgets = (budgetsData as any).budgets || [];
-    const totalAlloc = budgets.reduce((s: number, b: any) => s + (b.allocation || 0), 0);
-    const totalOsr = budgets.reduce((s: number, b: any) => s + (b.ownSourceRevenue || 0), 0);
-    const avgAbs =
-      budgets.length > 0
-        ? (budgets.reduce((s: number, b: any) => s + (b.absorptionRate || 0), 0) / budgets.length).toFixed(1)
-        : "0";
-    return { totalAlloc, totalOsr, avgAbs };
-  }, []);
+  const nationalTotals = NATIONAL_TOTALS;
 
   const countyA = useMemo(
     () => enrichedCounties.find((c) => c.slug === compareSlugA) || enrichedCounties[46],
@@ -252,318 +516,13 @@ export default function CountyScreen() {
         )}
       </View>
 
-      <ScrollView
-        ref={scrollRef}
-        contentContainerStyle={styles.listContent}
-        showsVerticalScrollIndicator={false}
-      >
-        {/* National Summary Strip */}
-        <View style={{ flexDirection: "row", gap: 8, marginBottom: 14 }}>
-          <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-            <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>EQUITABLE SHARE</Text>
-            <Text style={{ fontSize: 14, fontWeight: "900", color: theme.gold }}>
-              KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
-            </Text>
-          </View>
-          <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-            <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>OWN REVENUE</Text>
-            <Text style={{ fontSize: 14, fontWeight: "900", color: theme.sky }}>
-              KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
-            </Text>
-          </View>
-          <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-            <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>AVG ABSORPTION</Text>
-            <Text style={{ fontSize: 14, fontWeight: "900", color: theme.kenyaGreenLight }}>
-              {nationalTotals.avgAbs}%
-            </Text>
-          </View>
-        </View>
-
-        {/* TAB 1: DIRECTORY */}
-        {activeTab === "directory" && (
-          <>
-            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-              Showing {filtered.length} of 47 counties · Tap any county for full dashboard
-            </Text>
-            {filtered.map((item) => {
-              const codeFormatted = String(item.code).padStart(3, "0");
-              return (
-                <View
-                  key={item.code}
-                  style={[
-                    styles.countyCardWrap,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Pressable
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    style={styles.countyCard}
-                    onPress={() => router.push(`/county/${item.slug}` as any)}
-                  >
-                    <View style={styles.cardHeaderRow}>
-                      <View
-                        style={[
-                          styles.codeBadge,
-                          {
-                            backgroundColor: theme.primaryContainer,
-                            borderColor: `${theme.gold}40`,
-                          },
-                        ]}
-                      >
-                        <Text style={[styles.codeText, { color: theme.onPrimaryContainer }]}>
-                          {codeFormatted}
-                        </Text>
-                      </View>
-                      <View style={{ flex: 1, marginLeft: 12 }}>
-                        <Text style={[styles.countyName, { color: theme.textPrimary }]}>
-                          {item.name} County
-                        </Text>
-                        <Text style={[styles.countyCapital, { color: theme.textSecondary }]}>
-                          HQ: <Text style={{ color: theme.textPrimary, fontWeight: "600" }}>{item.capital}</Text>
-                          {" · "}
-                          {item.area.toLocaleString()} km² ({item.density}/km²)
-                        </Text>
-                      </View>
-                      <View style={[styles.trailingCircle, { backgroundColor: theme.surfaceContainerHigh }]}>
-                        <Ionicons name="arrow-forward" size={16} color={theme.textSecondary} />
-                      </View>
-                    </View>
-
-                    <View style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}>
-                      <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-                        <Ionicons name="person-circle-outline" size={14} color={theme.gold} />
-                        <Text style={[styles.infoPillText, { color: theme.textSecondary }]} >
-                          Gov. {item.governor}
-                        </Text>
-                      </View>
-                      <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-                        <Ionicons name="people-outline" size={14} color={theme.sky} />
-                        <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
-                          {item.population >= 1000000
-                            ? `${(item.population / 1000000).toFixed(2)}M`
-                            : `${Math.round(item.population / 1000)}k`}
-                        </Text>
-                      </View>
-                      {item.budget && (
-                        <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-                          <Ionicons name="cash-outline" size={14} color={theme.kenyaGreenLight} />
-                          <Text style={[styles.infoPillText, { color: theme.kenyaGreenLight, fontWeight: "700" }]}>
-                            KES {item.budget.allocation.toLocaleString()}M ({item.budget.absorptionRate}%)
-                          </Text>
-                        </View>
-                      )}
-                      {item.rain && (
-                        <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-                          <Ionicons name="rainy-outline" size={14} color={theme.sky} />
-                          <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
-                            {item.rain.annualRainfall} mm/yr
-                          </Text>
-                        </View>
-                      )}
-                    </View>
-                  </Pressable>
-                </View>
-              );
-            })}
-          </>
-        )}
-
-        {/* TAB 2: BUDGETS & ABSORPTION */}
-        {activeTab === "budgets" && (
-          <>
-            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-              FY 2025/26 County Budgets & Absorption Rates ({filtered.length} counties)
-            </Text>
-            {filtered.map((item) => {
-              const b = item.budget;
-              if (!b) return null;
-              return (
-                <Pressable
-                  key={item.code}
-                  onPress={() => router.push(`/county/${item.slug}` as any)}
-                  style={[
-                    styles.countyCardWrap,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                      padding: 14,
-                    },
-                  ]}
-                >
-                  <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                    <Text style={[styles.countyName, { color: theme.textPrimary }]}>
-                      {String(item.code).padStart(3, "0")}. {item.name} County
-                    </Text>
-                    <Text style={{ fontSize: 12, fontWeight: "800", color: theme.kenyaGreenLight }}>
-                      {b.absorptionRate}% Absorbed
-                    </Text>
-                  </View>
-                  <View style={{ height: 6, backgroundColor: theme.surfaceContainerHigh, borderRadius: 4, marginVertical: 8, overflow: "hidden" }}>
-                    <View
-                      style={{
-                        height: "100%",
-                        width: `${Math.min(100, b.absorptionRate)}%`,
-                        backgroundColor: theme.kenyaGreenLight,
-                      }}
-                    />
-                  </View>
-                  <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                    <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                      Share: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>KES {b.allocation.toLocaleString()}M</Text>
-                    </Text>
-                    <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                      OSR: <Text style={{ fontWeight: "700", color: theme.gold }}>KES {b.ownSourceRevenue.toLocaleString()}M</Text>
-                    </Text>
-                    <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                      Spent: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>KES {b.expenditure.toLocaleString()}M</Text>
-                    </Text>
-                  </View>
-                </Pressable>
-              );
-            })}
-          </>
-        )}
-
-        {/* TAB 3: CONSTITUENCIES & ELECTED LEADERS */}
-        {activeTab === "constituencies" && (
-          <>
-            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-              Elected Leaders & 290 Constituencies across {filtered.length} counties
-            </Text>
-            {filtered.map((item) => (
-              <Pressable
-                key={item.code}
-                onPress={() => router.push(`/county/${item.slug}` as any)}
-                style={[
-                  styles.countyCardWrap,
-                  {
-                    backgroundColor: theme.surfaceContainer,
-                    borderColor: theme.outlineVariant,
-                    padding: 14,
-                    gap: 8,
-                  },
-                ]}
-              >
-                <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <Text style={[styles.countyName, { color: theme.textPrimary }]}>
-                    {String(item.code).padStart(3, "0")}. {item.name} County
-                  </Text>
-                  <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold }}>
-                    {item.constituencies.length} Constituencies →
-                  </Text>
-                </View>
-                <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
-                  <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-                    Gov: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>{item.governor}</Text>
-                  </Text>
-                  <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-                    Dep: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>{item.deputyGovernor}</Text>
-                  </Text>
-                  <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-                    Sen: <Text style={{ fontWeight: "700", color: theme.sky }}>{item.senator}</Text>
-                  </Text>
-                  <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-                    W.Rep: <Text style={{ fontWeight: "700", color: theme.gold }}>{item.womenRep}</Text>
-                  </Text>
-                </View>
-                <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 5, marginTop: 4 }}>
-                  {item.constituencies.map((con, idx) => (
-                    <View
-                      key={idx}
-                      style={{
-                        paddingHorizontal: 8,
-                        paddingVertical: 3,
-                        borderRadius: 6,
-                        backgroundColor: theme.surfaceContainerHigh,
-                        borderWidth: 1,
-                        borderColor: theme.outlineVariant,
-                      }}
-                    >
-                      <Text style={{ fontSize: 11, color: theme.textPrimary }}>
-                        {idx + 1}. {con}
-                      </Text>
-                    </View>
-                  ))}
-                </View>
-              </Pressable>
-            ))}
-          </>
-        )}
-
-        {/* TAB 4: CLIMATE & RAINFALL */}
-        {activeTab === "climate" && (
-          <>
-            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-              12-Month Rainfall & Climate Zones ({filtered.length} counties)
-            </Text>
-            {filtered.map((item) => {
-              const r = item.rain;
-              if (!r) return null;
-              return (
-                <Pressable
-                  key={item.code}
-                  onPress={() => router.push(`/county/${item.slug}` as any)}
-                  style={[
-                    styles.countyCardWrap,
-                    {
-                      backgroundColor: theme.surfaceContainer,
-                      borderColor: theme.outlineVariant,
-                      padding: 14,
-                      gap: 8,
-                    },
-                  ]}
-                >
-                  <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                    <View>
-                      <Text style={[styles.countyName, { color: theme.textPrimary }]}>
-                        {String(item.code).padStart(3, "0")}. {item.name} County
-                      </Text>
-                      <Text style={{ fontSize: 11, color: theme.textSecondary }}>{r.climateZone}</Text>
-                    </View>
-                    <Text style={{ fontSize: 12, fontWeight: "800", color: theme.sky }}>
-                      {r.annualRainfall} mm/yr
-                    </Text>
-                  </View>
-                  {(r.monthly || r.monthlyAvg) && (
-                    <View style={{ flexDirection: "row", gap: 2 }}>
-                      {MONTH_KEYS.map((mk, idx) => {
-                        const mm = r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0;
-                        return (
-                          <View
-                            key={mk}
-                            style={{
-                              flex: 1,
-                              paddingVertical: 4,
-                              borderRadius: 4,
-                              alignItems: "center",
-                              backgroundColor:
-                                mm >= 150
-                                  ? "rgba(26, 139, 209, 0.28)"
-                                  : mm >= 70
-                                  ? "rgba(26, 139, 209, 0.14)"
-                                  : theme.surfaceContainerHigh,
-                            }}
-                          >
-                            <Text style={{ fontSize: 7.5, color: theme.textMuted }}>{MONTHS[idx]}</Text>
-                            <Text style={{ fontSize: 8, fontWeight: "800", color: theme.textPrimary }}>{mm}</Text>
-                          </View>
-                        );
-                      })}
-                    </View>
-                  )}
-                  <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                    Long Rains: {r.longRains} · Short Rains: {r.shortRains}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </>
-        )}
-
-        {/* TAB 5: COMPARE 2 COUNTIES */}
+            {activeTab === "compare" ? (
+        <ScrollView
+          ref={scrollRef}
+          contentContainerStyle={styles.listContent}
+          showsVerticalScrollIndicator={false}
+        >
+          {/* TAB 5: COMPARE 2 COUNTIES */}
         {activeTab === "compare" && countyA && countyB && (
           <View
             style={[
@@ -684,7 +643,59 @@ export default function CountyScreen() {
             ))}
           </View>
         )}
-      </ScrollView>
+        </ScrollView>
+      ) : (
+        <FlatList
+          data={filtered}
+          extraData={[activeTab, theme]}
+          keyExtractor={(item) => `${activeTab}-${item.code}`}
+          contentContainerStyle={styles.listContent}
+          showsVerticalScrollIndicator={false}
+          initialNumToRender={6}
+          maxToRenderPerBatch={8}
+          windowSize={5}
+          removeClippedSubviews={Platform.OS === "android"}
+          ListHeaderComponent={
+            <>
+              {/* National Summary Strip */}
+              <View style={{ flexDirection: "row", gap: 8, marginBottom: 14 }}>
+                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
+                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>EQUITABLE SHARE</Text>
+                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.gold }}>
+                    KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
+                  </Text>
+                </View>
+                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
+                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>OWN REVENUE</Text>
+                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.sky }}>
+                    KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
+                  </Text>
+                </View>
+                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
+                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>AVG ABSORPTION</Text>
+                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.kenyaGreenLight }}>
+                    {nationalTotals.avgAbs}%
+                  </Text>
+                </View>
+              </View>
+
+              <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
+                {activeTab === "directory" && `Showing ${filtered.length} of 47 counties · Tap any county for full dashboard`}
+                {activeTab === "budgets" && `FY 2025/26 County Budgets & Absorption Rates (${filtered.length} counties)`}
+                {activeTab === "constituencies" && `Elected Leaders & 290 Constituencies across ${filtered.length} counties`}
+                {activeTab === "climate" && `12-Month Rainfall & Climate Zones across ${filtered.length} counties`}
+              </Text>
+            </>
+          }
+          renderItem={({ item }) => {
+            if (activeTab === "directory") return renderDirectoryCard(item, router, theme);
+            if (activeTab === "budgets") return renderBudgetCard(item, router, theme);
+            if (activeTab === "constituencies") return renderConstituencyCard(item, router, theme);
+            if (activeTab === "climate") return renderClimateCard(item, router, theme);
+            return null;
+          }}
+        />
+      )}
     </SafeAreaView>
   );
 }

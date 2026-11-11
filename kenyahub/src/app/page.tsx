@@ -100,7 +100,7 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="gradient-hero min-h-[420px] sm:min-h-[560px] flex items-center">
+        <div className="gradient-hero flex items-center">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute -top-20 -right-20 w-96 h-96 border border-white/[0.03] rotate-45 rounded-3xl" />
             <div className="absolute -bottom-32 -left-16 w-80 h-80 border border-white/[0.03] rotate-45 rounded-3xl" />
@@ -109,7 +109,7 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8 sm:py-20">
+          <div className="relative max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-3 pb-6 sm:pt-10 sm:pb-16">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-gold/30 bg-gold/10 mb-3 sm:mb-6 max-w-full">
                 <span className="relative flex h-1.5 w-1.5 shrink-0">
