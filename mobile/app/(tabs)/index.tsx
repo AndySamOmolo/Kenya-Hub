@@ -398,30 +398,30 @@ function PopularToolRow({
           <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
         </View>
         <View style={styles.popularToolBody}>
-          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 6 }}>
-            <Text
-              style={[styles.popularToolTitle, { color: theme.textPrimary }]}
-              numberOfLines={1}
-            >
-              {tool.shortTitle || tool.title}
-            </Text>
+          <Text
+            style={[styles.popularToolTitle, { color: theme.textPrimary }]}
+            numberOfLines={1}
+          >
+            {tool.shortTitle || tool.title}
+          </Text>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 3 }}>
             <View
               style={[
                 styles.miniCategoryPill,
                 { backgroundColor: `${categoryColor}18` },
               ]}
             >
-              <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
+              <Text style={[styles.miniCategoryText, { color: categoryColor }]} numberOfLines={1}>
                 {catInfo?.name || tool.category}
               </Text>
             </View>
+            <Text
+              style={[styles.popularToolDesc, { color: theme.textSecondary, flex: 1 }]}
+              numberOfLines={1}
+            >
+              {tool.description}
+            </Text>
           </View>
-          <Text
-            style={[styles.popularToolDesc, { color: theme.textSecondary, marginTop: 2 }]}
-            numberOfLines={1}
-          >
-            {tool.description}
-          </Text>
         </View>
         <View style={styles.popularToolActions}>
           <Pressable

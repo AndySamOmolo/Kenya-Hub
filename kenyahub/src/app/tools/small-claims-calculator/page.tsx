@@ -36,7 +36,7 @@ export default function SmallClaimsCalculatorPage() {
             Small Claims Court (SCC) Jurisdiction &amp; Filing Fee Assessment
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the *Small Claims Court Act 2016*, proceedings are designed to resolve civil and commercial disputes under KES 1,000,000 within 60 days without requiring high-cost advocate representation.
+            Under the <strong>Small Claims Court Act 2016</strong>, proceedings are designed to resolve civil and commercial disputes under KES 1,000,000 within 60 days without requiring high-cost advocate representation.
           </p>
 
           <div className="max-w-md mb-6">

@@ -133,26 +133,26 @@ export default function HomePage() {
                 Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
-              {/* Compact, comfortably proportioned buttons */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-3 w-full">
+              {/* Comfortable, prominent hero action buttons */}
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-3.5 w-full">
                 <Link
                   href="/tools/learn/"
-                  className="btn-gold text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-2 shadow-md w-auto"
+                  className="btn-gold text-sm sm:text-base px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-md w-auto font-semibold"
                 >
-                  <Languages className="w-4 h-4 shrink-0" />
+                  <Languages className="w-4.5 h-4.5 shrink-0" />
                   <span>Start Learning Kenyan Languages</span>
-                  <ArrowRight className="w-4 h-4 shrink-0" />
+                  <ArrowRight className="w-4.5 h-4.5 shrink-0" />
                 </Link>
                 <Link
                   href="/tools/kenyan-translator/"
-                  className="btn-outline text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-1.5 w-auto"
+                  className="btn-outline text-sm sm:text-base px-4.5 py-2.5 sm:px-5.5 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
                 >
-                  <Globe className="w-4 h-4 text-kenya-green-light shrink-0" />
+                  <Globe className="w-4.5 h-4.5 text-kenya-green-light shrink-0" />
                   <span>22-Language Translator</span>
                 </Link>
                 <Link
                   href="/tools/"
-                  className="btn-outline text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl inline-flex items-center justify-center gap-1.5 w-auto"
+                  className="btn-outline text-sm sm:text-base px-4.5 py-2.5 sm:px-5.5 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
                 >
                   <span>All {TOOLS.length} Tools</span>
                 </Link>

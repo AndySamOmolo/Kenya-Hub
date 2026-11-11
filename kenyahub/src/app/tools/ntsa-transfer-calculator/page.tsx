@@ -41,7 +41,7 @@ export default function NtsaTransferCalculatorPage() {
             NTSA Motor Vehicle Transfer &amp; Ownership Cost Calculator
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the *Traffic Act (Cap 403)* and eCitizen service tariffs, vehicle transfer costs are stepped based on engine cubic capacity (cc) and statutory motor vehicle purchase tax.
+            Under the <strong>Traffic Act (Cap 403)</strong> and eCitizen service tariffs, vehicle transfer costs are stepped based on engine cubic capacity (cc) and statutory motor vehicle purchase tax.
           </p>
 
           <div className="flex flex-wrap gap-2 mb-6">

@@ -2,9 +2,9 @@ import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "expo-router";
 import {
+  FlatList,
   Platform,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -36,7 +36,7 @@ interface RouteItem {
   stages?: any[];
 }
 
-function RouteCard({
+const RouteCard = React.memo(function RouteCard({
   route,
 }: {
   route: RouteItem & { townId?: string; townName?: string };
@@ -151,14 +151,14 @@ function RouteCard({
       </Pressable>
     </View>
   );
-}
+});
 
 export default function MatatuScreen() {
   const { theme } = useTheme();
   const [search, setSearch] = useState("");
   const [selectedTown, setSelectedTown] = useState<string>("all");
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
-  const scrollRef = useRef<ScrollView>(null);
+  const scrollRef = useRef<any>(null);
   const [sortBy, setSortBy] = useState<"route" | "stages" | "name">("route");
 
   const towns = (matatuData as any).towns || [];
@@ -401,64 +401,72 @@ export default function MatatuScreen() {
         </View>
       </View>
 
-      <ScrollView
+      <FlatList
         ref={scrollRef}
+        data={filteredRoutes}
+        keyExtractor={(item, index) => `${item.townId}-${item.slug}-${index}`}
+        renderItem={({ item }) => <RouteCard route={item} />}
+        initialNumToRender={8}
+        maxToRenderPerBatch={8}
+        windowSize={5}
+        removeClippedSubviews={Platform.OS === "android"}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
-      >
-        {/* SACCO Filter Pills */}
-        {availableSaccos.length > 1 && (
-          <ExpandablePillRow contentContainerStyle={{
-              flexDirection: "row",
-              alignItems: "center",
-              gap: 8,
-              marginBottom: 12,
-            }}>
-            {["all", ...availableSaccos].map((sacco) => {
-              const active = saccoFilter === sacco;
-              return (
-                <Pressable
-                  key={sacco}
-                  onPress={() => setSaccoFilter(sacco)}
-                  style={{
-                    paddingHorizontal: 12,
-                    paddingVertical: 6,
-                    borderRadius: 999,
-                    borderWidth: 1,
-                    backgroundColor: active
-                      ? theme.primaryContainer
-                      : theme.surfaceContainer,
-                    borderColor: active ? theme.gold : theme.outlineVariant,
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      fontWeight: "600",
-                      color: active
-                        ? theme.onPrimaryContainer
-                        : theme.textSecondary,
-                    }}
-                  >
-                    {sacco === "all"
-                      ? `All SACCOs (${availableSaccos.length})`
-                      : sacco}
-                  </Text>
-                </Pressable>
-              );
-            })}
-          </ExpandablePillRow>
-        )}
+        keyboardShouldPersistTaps="handled"
+        ListHeaderComponent={
+          <>
+            {/* SACCO Filter Pills */}
+            {availableSaccos.length > 1 && (
+              <ExpandablePillRow
+                contentContainerStyle={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 8,
+                  marginBottom: 12,
+                }}
+              >
+                {["all", ...availableSaccos].map((sacco) => {
+                  const active = saccoFilter === sacco;
+                  return (
+                    <Pressable
+                      key={sacco}
+                      onPress={() => setSaccoFilter(sacco)}
+                      style={{
+                        paddingHorizontal: 12,
+                        paddingVertical: 6,
+                        borderRadius: 999,
+                        borderWidth: 1,
+                        backgroundColor: active
+                          ? theme.primaryContainer
+                          : theme.surfaceContainer,
+                        borderColor: active ? theme.gold : theme.outlineVariant,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 11,
+                          fontWeight: "600",
+                          color: active
+                            ? theme.onPrimaryContainer
+                            : theme.textSecondary,
+                        }}
+                      >
+                        {sacco === "all"
+                          ? `All SACCOs (${availableSaccos.length})`
+                          : sacco}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </ExpandablePillRow>
+            )}
 
-        <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-          Showing {filteredRoutes.length} of {allRoutes.length} routes
-        </Text>
-
-        {filteredRoutes.map((route, i) => (
-          <RouteCard key={`${route.townId}-${route.slug}-${i}`} route={route} />
-        ))}
-
-        {filteredRoutes.length === 0 && (
+            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
+              Showing {filteredRoutes.length} of {allRoutes.length} routes
+            </Text>
+          </>
+        }
+        ListEmptyComponent={
           <View style={styles.empty}>
             <Ionicons name="bus-outline" size={48} color={theme.textMuted} />
             <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
@@ -468,44 +476,45 @@ export default function MatatuScreen() {
               Try adjusting your search query, city, or SACCO filter.
             </Text>
           </View>
-        )}
-
-        {/* About Kenya Matatu Routes & Public Transport */}
-        <View
-          style={[
-            styles.aboutCard,
-            {
-              backgroundColor: theme.surfaceContainer,
-              borderColor: theme.outlineVariant,
-            },
-          ]}
-        >
-          <Text style={[styles.aboutHeading, { color: theme.gold }]}>
-            About Kenya Matatu Routes & Public Transport
-          </Text>
-          <Text style={[styles.aboutParagraph, { color: theme.textSecondary }]}>
-            Matatus are the heart of Kenya&apos;s public transport ecosystem.
-            These 14-seater minibuses and 33+ seater buses connect Central
-            Business Districts to suburbs, satellite towns, and rural markets in
-            Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and beyond.
-          </Text>
-          <Text style={[styles.aboutParagraph, { color: theme.textSecondary }]}>
-            Every matatu route in Kenya is operated under SACCOs (Savings and
-            Credit Co-operatives) licensed by NTSA (National Transport and
-            Safety Authority). Fares are market-driven and fluctuate based on
-            peak rush hours (morning/evening), weather conditions, and fuel
-            price adjustments.
-          </Text>
-          {notes.map((n, idx) => (
-            <View key={idx} style={styles.noteRow}>
-              <Text style={{ color: theme.gold, fontWeight: "900" }}>•</Text>
-              <Text style={[styles.noteText, { color: theme.textSecondary }]}>
-                {n}
-              </Text>
-            </View>
-          ))}
-        </View>
-      </ScrollView>
+        }
+        ListFooterComponent={
+          <View
+            style={[
+              styles.aboutCard,
+              {
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+                marginTop: 16,
+              },
+            ]}
+          >
+            <Text style={[styles.aboutHeading, { color: theme.gold }]}>
+              About Kenya Matatu Routes & Public Transport
+            </Text>
+            <Text style={[styles.aboutParagraph, { color: theme.textSecondary }]}>
+              Matatus are the heart of Kenya&apos;s public transport ecosystem.
+              These 14-seater minibuses and 33+ seater buses connect Central
+              Business Districts to suburbs, satellite towns, and rural markets in
+              Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and beyond.
+            </Text>
+            <Text style={[styles.aboutParagraph, { color: theme.textSecondary }]}>
+              Every matatu route in Kenya is operated under SACCOs (Savings and
+              Credit Co-operatives) licensed by NTSA (National Transport and
+              Safety Authority). Fares are market-driven and fluctuate based on
+              peak rush hours (morning/evening), weather conditions, and fuel
+              price adjustments.
+            </Text>
+            {notes.map((n, idx) => (
+              <View key={idx} style={styles.noteRow}>
+                <Text style={{ color: theme.gold, fontWeight: "900" }}>•</Text>
+                <Text style={[styles.noteText, { color: theme.textSecondary }]}>
+                  {n}
+                </Text>
+              </View>
+            ))}
+          </View>
+        }
+      />
     </SafeAreaView>
   );
 }

@@ -34,7 +34,7 @@ export default function RentalTaxCalculatorPage() {
             Residential Rental Income Tax (7.5% MRI) Calculator
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under Section 6A of the *Income Tax Act*, landlords earning gross rental income between KES 288,000 and KES 15,000,000 per year pay a simplified flat 7.5% Monthly Rental Income (MRI) tax, due on the 20th of the following month.
+            Under Section 6A of the <strong>Income Tax Act</strong>, landlords earning gross rental income between KES 288,000 and KES 15,000,000 per year pay a simplified flat 7.5% Monthly Rental Income (MRI) tax, due on the 20th of the following month.
           </p>
 
           <div className="max-w-md mb-6">

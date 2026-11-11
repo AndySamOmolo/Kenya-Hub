@@ -32,7 +32,7 @@ export default function DomesticWageCalculatorPage() {
             Domestic Worker (Househelp) Gazetted Minimum Wage Calculator
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the *Regulation of Wages (General) (Amendment) Order (Legal Notice 108)*, domestic workers are entitled to gazetted minimum pay schedules by zone, plus mandatory NSSF Tier I matching and SHA healthcare deductions.
+            Under the <strong>Regulation of Wages (General) (Amendment) Order (Legal Notice 108)</strong>, domestic workers are entitled to gazetted minimum pay schedules by zone, plus mandatory NSSF Tier I matching and SHA healthcare deductions.
           </p>
 
           <div className="flex flex-wrap gap-2 mb-6">

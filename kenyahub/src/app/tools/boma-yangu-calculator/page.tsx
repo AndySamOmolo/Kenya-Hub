@@ -52,7 +52,7 @@ export default function BomaYanguCalculatorPage() {
             Boma Yangu (AHP) Tenant Purchase &amp; Housing Relief Calculator
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the *Affordable Housing Act 2024*, contributors to the Housing Levy qualify for subsidized fixed-rate Tenant Purchase Schemes (TPS) alongside KRA&apos;s 15% Affordable Housing Tax Relief.
+            Under the <strong>Affordable Housing Act 2024</strong>, contributors to the Housing Levy qualify for subsidized fixed-rate Tenant Purchase Schemes (TPS) alongside KRA&apos;s 15% Affordable Housing Tax Relief.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-6">
