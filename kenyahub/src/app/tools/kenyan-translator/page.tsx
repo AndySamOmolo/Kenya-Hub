@@ -246,7 +246,6 @@ export default function KenyanTranslatorPage() {
   const [categorySearch, setCategorySearch] = useState("");
   const [searchPage, setSearchPage] = useState(1);
   const [viewMode, setViewMode] = useState<"translate" | "browse">("translate");
-  const [compareLanguages, setCompareLanguages] = useState<string[]>(() => ALL_DICT_METAS.map((d) => d.languageId));
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -280,10 +279,7 @@ export default function KenyanTranslatorPage() {
     if (sourceLanguage !== "english") toLoad.add(sourceLanguage);
     if (targetLanguage !== "english" && targetLanguage !== "all") toLoad.add(targetLanguage);
 
-    if (
-      (targetLanguage === "all" && searchQuery.trim().length > 0) ||
-      (viewMode === "compare" && searchQuery.trim().length > 0)
-    ) {
+    if (targetLanguage === "all" && searchQuery.trim().length > 0) {
       ALL_DICT_METAS.forEach((d) => toLoad.add(d.languageId));
     }
     ensureDictionariesLoaded(Array.from(toLoad));
@@ -770,90 +766,6 @@ export default function KenyanTranslatorPage() {
     }
     return map;
   }, [sourceDict]);
-
-  // ─── Compare Mode: word across multiple languages (using O(1) index) ───
-  const { comparisonResults, resolvedEnglish } = useMemo(() => {
-    if (viewMode !== "compare" || !searchQuery.trim()) {
-      return { comparisonResults: [], resolvedEnglish: null };
-    }
-    const qTerms = extractNormalizedTerms(searchQuery);
-    const q = qTerms[0] || searchQuery.toLowerCase().trim();
-
-    let isKnownEnglish = false;
-    for (const d of activeDictList) {
-      const idx = getDictIndex(d);
-      if (idx.byEngTerm.has(q)) {
-        isKnownEnglish = true;
-        break;
-      }
-    }
-
-    let matchedEnglish = q;
-    if (!isKnownEnglish) {
-      for (const d of activeDictList) {
-        const idx = getDictIndex(d);
-        const transHits = idx.byTransTerm.get(q);
-        if (transHits && transHits.length > 0) {
-          matchedEnglish = transHits[0].engTerms[0] || transHits[0].engLower;
-          break;
-        }
-      }
-    }
-
-    const targetWords = Array.from(new Set([matchedEnglish, ...qTerms, ...extractNormalizedTerms(matchedEnglish)]));
-
-    const results: { languageId: string; languageName: string; family: string; entry: DictEntry | null }[] = [];
-
-    compareLanguages.forEach((langId) => {
-      const meta = DICT_META_MAP[langId];
-      const dict = loadedDicts[langId];
-      if (!meta) return;
-      if (!dict) {
-        results.push({ languageId: meta.languageId, languageName: meta.languageName, family: meta.family, entry: null });
-        return;
-      }
-
-      const idx = getDictIndex(dict);
-      let found: DictEntry | null = null;
-
-      for (const tw of targetWords) {
-        const hits = idx.byEngTerm.get(tw);
-        if (hits && hits.length > 0) {
-          found = hits[0].entry;
-          break;
-        }
-      }
-
-      if (!found && !isKnownEnglish) {
-        for (const tw of targetWords) {
-          const hits = idx.byTransTerm.get(tw);
-          if (hits && hits.length > 0) {
-            found = hits[0].entry;
-            break;
-          }
-        }
-      }
-
-      if (!found) {
-        const phraseTargets = targetWords.filter((tw) => tw.includes(" "));
-        if (phraseTargets.length > 0) {
-          for (const item of idx.all) {
-            if (phraseTargets.some((tw) => item.engTerms.some((et) => et.includes(tw)))) {
-              found = item.entry;
-              break;
-            }
-          }
-        }
-      }
-
-      results.push({ languageId: dict.languageId, languageName: dict.languageName, family: dict.family, entry: found });
-    });
-
-    return {
-      comparisonResults: results,
-      resolvedEnglish: matchedEnglish !== q ? matchedEnglish : null,
-    };
-  }, [searchQuery, viewMode, compareLanguages, activeDictList, loadedDicts]);
 
   // Stats
   const totalEntries = TOTAL_DICTIONARY_ENTRIES;

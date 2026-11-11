@@ -253,10 +253,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
   const [loadedDicts, setLoadedDicts] = useState<Record<string, Dictionary>>(
     () => ({ ...LOADED_DICTS_CACHE })
   );
-  const [compareLanguages] = useState<string[]>(() =>
-    ALL_DICT_METAS.map((d) => d.languageId)
-  );
-  const [recentSearches, setRecentSearches] = useState<string[]>([]);
+    const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [showSourcePicker, setShowSourcePicker] = useState(false);
@@ -288,7 +285,6 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
       needed.add(targetLanguage);
     }
     if (
-      viewMode === "compare" ||
       (searchQuery.trim().length > 0 && targetLanguage === "all")
     ) {
       ALL_DICT_METAS.forEach((m) => needed.add(m.languageId));
@@ -717,92 +713,6 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
     () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
     [searchResults, searchPage]
   );
-
-  // Comparison Results Across All 22 Languages
-  const comparisonResults = useMemo(() => {
-    if (viewMode !== "compare" || !searchQuery.trim()) return [];
-    const qTerms = extractNormalizedTerms(searchQuery);
-    const q = qTerms[0] || searchQuery.toLowerCase().trim();
-
-    let isKnownEnglish = false;
-    for (const d of loadedDictList) {
-      const idx = getDictIndex(d);
-      if (idx.byEngTerm.has(q)) {
-        isKnownEnglish = true;
-        break;
-      }
-    }
-
-    let matchedEnglish = q;
-    if (!isKnownEnglish) {
-      for (const d of loadedDictList) {
-        const idx = getDictIndex(d);
-        const hits = idx.byTransTerm.get(q);
-        if (hits && hits.length > 0) {
-          matchedEnglish = hits[0].engTerms[0] || hits[0].engLower;
-          break;
-        }
-      }
-    }
-
-    const targetWords = Array.from(
-      new Set([
-        matchedEnglish,
-        ...qTerms,
-        ...extractNormalizedTerms(matchedEnglish),
-      ])
-    );
-
-    const list: {
-      dict: Dictionary;
-      entry: DictEntry | null;
-    }[] = [];
-
-    compareLanguages.forEach((langId) => {
-      const dict = loadedDicts[langId];
-      if (!dict) return;
-      const idx = getDictIndex(dict);
-      let found: DictEntry | null = null;
-
-      for (const tw of targetWords) {
-        const hits = idx.byEngTerm.get(tw);
-        if (hits && hits.length > 0) {
-          found = hits[0].entry;
-          break;
-        }
-      }
-
-      if (!found && !isKnownEnglish) {
-        for (const tw of targetWords) {
-          const hits = idx.byTransTerm.get(tw);
-          if (hits && hits.length > 0) {
-            found = hits[0].entry;
-            break;
-          }
-        }
-      }
-
-      if (!found) {
-        const phraseTargets = targetWords.filter((tw) => tw.includes(" "));
-        if (phraseTargets.length > 0) {
-          for (const item of idx.all) {
-            if (
-              phraseTargets.some((tw) =>
-                item.engTerms.some((et) => et.includes(tw))
-              )
-            ) {
-              found = item.entry;
-              break;
-            }
-          }
-        }
-      }
-
-      list.push({ dict, entry: found });
-    });
-
-    return list;
-  }, [searchQuery, viewMode, compareLanguages, loadedDicts, loadedDictList]);
 
   const totalEntriesCount = TOTAL_DICTIONARY_ENTRIES;
 
