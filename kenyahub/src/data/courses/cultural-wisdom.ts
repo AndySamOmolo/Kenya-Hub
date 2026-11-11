@@ -1289,56 +1289,88 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Lt. J. W. C. Kirk, A Grammar of the Somali Language (1905, Song VIII, p. 178)"
   },
   {
+    "id": "somali-8",
+    "languageId": "somali",
+    "languageName": "Somali (Af-Soomaali)",
+    "indigenous": "Wahha inđála, ninki an oghòn lahain, ya inđala.",
+    "literalTranslation": "He that is blind is the man who knows nothing, he is blind.",
+    "meaning": "Recorded verbatim by Lt. J. W. C. Kirk in \"A Grammar of the Somali Language\" (1905, Prose Story X: Ninki Inđahalaä — The Blind Man, narrated by Ali of the Habr Yunis, Musa Arreh, p. 161): physical blindness can be overcome by keen perception and wisdom, whereas ignorance of heart and mind is true blindness.",
+    "englishEquivalent": "None so blind as he who knows nothing.",
+    "theme": "wisdom",
+    "sourceCitation": "Lt. J. W. C. Kirk, A Grammar of the Somali Language (1905, Prose Story X: The Blind Man, p. 161)"
+  },
+  {
+    "id": "somali-9",
+    "languageId": "somali",
+    "languageName": "Somali (Af-Soomaali)",
+    "indigenous": "Wihhi rag u kà‘ei, rabbigai ha ku sìyo, rabbigai ma bakhilo!",
+    "literalTranslation": "What men have risen up to seek, may my Lord give thee; my Lord is not stint!",
+    "meaning": "Recorded verbatim by Lt. J. W. C. Kirk in \"A Grammar of the Somali Language\" (1905, Account of the Yibir and Midgan Dialects, p. 185): traditional blessing chant sung by a Yibir (Anas-ki) upon receiving the samanyo birth or marriage gift in exchange for a protective aldibo charm.",
+    "englishEquivalent": "God's generosity is unstinting.",
+    "theme": "family",
+    "sourceCitation": "Lt. J. W. C. Kirk, A Grammar of the Somali Language (1905, Yibir Blessing Song, p. 185)"
+  },
+  {
+    "id": "somali-10",
+    "languageId": "somali",
+    "languageName": "Somali (Af-Soomaali)",
+    "indigenous": "Ninki Anas ku đasho, gòdki Au-Bakhardli ma la tuso.",
+    "literalTranslation": "A man who is born a Yibir is not shown the cave (tomb) of Au-Bakhardli.",
+    "meaning": "Recorded verbatim by Lt. J. W. C. Kirk in \"A Grammar of the Somali Language\" (1905, Yibir Story of Mohammed Hanif & Sultan Au-Bakhardli, p. 199): historical proverb recalling the ancestral covenant between Sultan Au-Bakhardli and the descendants of Mohammed Hanif.",
+    "theme": "humility",
+    "sourceCitation": "Lt. J. W. C. Kirk, A Grammar of the Somali Language (1905, Yibir Story of Mohammed Hanif, p. 199)"
+  },
+  {
     "id": "borana-1",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi.",
-    "literalTranslation": "O God (Waca), thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me, O God, lead my steps.",
-    "meaning": "Recorded verbatim by Karl & Lawrence Tutschek in \"A Grammar of the Galla Language\" (1845, pp. 87–88, Morning Prayer): traditional Oromo/Borana morning invocation for peace (nagaa) and guidance.",
+    "indigenous": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi. — Dubad'etan bad'za, ya Waca afaan na cabi; belaetan bad'za, ya Waca gara na cabi, gofta goftan cabne, mooti mootin cabne; tokitshako, na gadyêlzi!",
+    "literalTranslation": "O God (Waca), thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me, O God, lead my steps. — When I speak I err, O God hold my mouth; when I am hungry I err, O God hold my heart, O Lord who hast no Lord, O King who hast no King; my Only One, guide me right!",
+    "meaning": "Complete verbatim Morning Prayer (2.) recorded by Charles & Lawrence Tutschek in \"A Grammar of the Galla Language\" (Munich, 1845, pp. 87–88): traditional Oromo/Borana morning invocation asking Waaqa (Waca) for peace (nagaa), right guidance of one's steps (milki), restraint of speech in anger, and steadiness of heart in hunger.",
     "theme": "unity",
-    "sourceCitation": "Karl & Lawrence Tutschek, A Grammar of the Galla Language (1845, pp. 87–88, Morning Prayer)"
+    "sourceCitation": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, pp. 87–88, Prayer 2: Morning Prayer)"
   },
   {
     "id": "borana-2",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "D'ad'an ibidti bue hindebiu.",
-    "literalTranslation": "Butter fallen into the fire does not come back.",
-    "meaning": "Quoted by Akafed'e Dalle in his letter of October 21, 1840 in Tutschek’s \"A Grammar of the Galla Language\" (1845, p. 90): some losses cannot be undone as they were before, yet patience and hope endure.",
+    "indigenous": "„D'ad'an ibidti bue hindebiu\" djed'ani, mal god'ure? Wa hundi kan Wacayoti; inuma d'iza male. — Wacayon iza ha tolu, aka ini nu tshcala kanati nu god'e. — Nagan hafi hama nu wal agaruti!",
+    "literalTranslation": "\"Butter fallen into the fire comes not back,\" they say; what is to be done then? Everything is in the hand of God; it cannot be changed. — May God do good to him, as he does to us, who esteems us higher than all others. — Rest in peace until we see each other again!",
+    "meaning": "Quoted verbatim by Akafed'e Dalle (from Hambo) in his letter to Otshu Aga (from Sibu) written in Munich on October 21, 1840, in Charles & Lawrence Tutschek’s \"A Grammar of the Galla Language\" (1845, pp. 90–91, Letter 5): counsels patience and trust in Wacayo when past losses cannot be undone, while expressing gratitude to their teacher and the parting blessing of peace (nagaa).",
     "englishEquivalent": "It is no use crying over spilt milk.",
     "theme": "patience",
-    "sourceCitation": "Karl & Lawrence Tutschek, A Grammar of the Galla Language (1845, p. 90, Akafed'e Dalle's Letter)"
+    "sourceCitation": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, pp. 90–91, Letter 5: Akafed'e Dalle to Otshu Aga, Oct. 21, 1840)"
   },
   {
     "id": "borana-3",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai!",
-    "literalTranslation": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune; my Lord, be thou my shadow!",
-    "meaning": "Recorded verbatim by Karl & Lawrence Tutschek in \"A Grammar of the Galla Language\" (1845, p. 84, Prayer 1 vv. 1–2): Akafed'e’s prayer after the war between Hambo and Hamaya.",
+    "indigenous": "1. Wacayo laftana, goftako! kan na tolte, aka na tolte hinbeku; akati na tolte, ati bekta, goftako! 2. Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai! ... 7. Akuma aban ilmoza barzizu, akana na barzizi! 8. Akuma had'i ilmoz'e tshcaltu, akana na tshcali! ... 16. Nagadani na faitu!",
+    "literalTranslation": "1. Good God of this earth, my Lord! Thou hast made me; how thou madest me I know not, how thou madest me thou knowest, my Lord! 2. When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune, my Lord, be thou my shadow! ... 7. Even as a father teaches his son, so teach thou me! 8. Even as a mother loves her child, so love thou me! ... 16. May peace only delight me!",
+    "meaning": "Recorded verbatim by Charles & Lawrence Tutschek in \"A Grammar of the Galla Language\" (Munich, 1845, pp. 84–87, Prayer 1, vv. 1–16): Akafed'e Dalle’s 16-verse prayer composed in his homeland after the war between the Hambo and Hamaya tribes, appealing to Wacayo as creator, shade-tree, teacher, mother, and giver of peace (naga).",
     "theme": "nature",
-    "sourceCitation": "Karl & Lawrence Tutschek, A Grammar of the Galla Language (1845, p. 84, Prayer 1 vv. 1–2)"
+    "sourceCitation": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, pp. 84–87, Prayer 1 vv. 1–16, by Akafed'e)"
   },
   {
     "id": "borana-4",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
-    "literalTranslation": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou my father.",
-    "meaning": "Recorded verbatim in Karl & Lawrence Tutschek’s \"A Grammar of the Galla Language\" (1845, p. 88, Evening Prayer).",
+    "indigenous": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi. — Naga, naga! fayaketi! Ati naga olte had'a? — Nagaiti buli!",
+    "literalTranslation": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou my father. — Peace, peace! Thy health! Hast thou passed this day in peace? — Good night (sleep in peace)!",
+    "meaning": "Complete verbatim Evening Prayer (3.) and salutations from Otshu Aga's letter to Akafed'e (Munich, October 16, 1840) in Charles & Lawrence Tutschek’s \"A Grammar of the Galla Language\" (1845, pp. 88–90): entrusts day and night to Waca's hand and illustrates authentic 19th-century Oromo epistolary greetings.",
     "theme": "family",
-    "sourceCitation": "Karl & Lawrence Tutschek, A Grammar of the Galla Language (1845, p. 88, Evening Prayer)"
+    "sourceCitation": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, pp. 88–90, Prayer 3: Evening Prayer & Letter 4: Otshu Aga to Akafed'e)"
   },
   {
     "id": "borana-5",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Bagila ñad'u, malif d'aka lakize? — Zoba dibad'u, malif naca lakize?",
-    "literalTranslation": "He who chews hard beans, why does he leave stones? — He who lies and anoints his head with butter, why does he omit woman’s foot-rings?",
-    "meaning": "Recorded by Karl & Lawrence Tutschek in \"A Grammar of the Galla Language\" (1845, § 249.2, p. 77): satirical quatrain rebuking those who boast of unearned honour or claim exploits they did not perform.",
+    "indigenous": "Bagila ñad'u, / Malif d'aka lakize? / Zoba dibad'u, / Malif naca lakize? — „Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi?\" „Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe.\"",
+    "literalTranslation": "He who chews hard beans, / Why does he leave stones? / He who lies and anoints his head with butter, / Why does he omit woman’s foot-rings? — \"Why do you not give Djulule’s child milk to drink that it may sleep, as it weeps and does not sleep?\" \"Gadiyo’s child has a cough, therefore it weeps; its belly aches, therefore it weeps.\"",
+    "meaning": "Recorded verbatim by Charles & Lawrence Tutschek in \"A Grammar of the Galla Language\" (Munich, 1845, § 249.2, p. 77 & § 255, p. 83): (1) satirical quatrain rebuking an unblooded man who falsely anoints his hair with butter like a victorious warrior, and (2) idiomatic dialogue illustrating clausal -fi ('in order that') and causal -ti ('because') with the personal names Djulule and Gadiyo.",
     "englishEquivalent": "Empty vessels make the most noise.",
     "theme": "humility",
-    "sourceCitation": "Karl & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 249.2, p. 77)"
+    "sourceCitation": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, § 249.2, p. 77 & § 255, p. 83)"
   },
   {
     "id": "borana-6",
@@ -8552,9 +8584,27 @@ export const CULTURAL_WISDOM: CulturalWisdomItem[] = KENYAN_PROVERBS.map((item) 
   source: item.sourceCitation,
 }));
 
+const CULTURAL_WISDOM_BY_LANG_CACHE = new Map<string, CulturalWisdomItem[]>();
+
+/**
+ * Returns all cultural wisdom & proverb entries for a language ID in O(1) cached time,
+ * deduplicated by entry ID.
+ */
 export function getCulturalWisdomForLanguage(languageId: string): CulturalWisdomItem[] {
   const norm = languageId.trim().toLowerCase();
-  return CULTURAL_WISDOM.filter((item) => item.languageId === norm);
+  const cached = CULTURAL_WISDOM_BY_LANG_CACHE.get(norm);
+  if (cached) return cached;
+
+  const seenIds = new Set<string>();
+  const filtered: CulturalWisdomItem[] = [];
+  for (const item of CULTURAL_WISDOM) {
+    if (item.languageId === norm && !seenIds.has(item.id)) {
+      seenIds.add(item.id);
+      filtered.push(item);
+    }
+  }
+  CULTURAL_WISDOM_BY_LANG_CACHE.set(norm, filtered);
+  return filtered;
 }
 
 // --- SWAHILI (course.ts) ---
@@ -23196,40 +23246,40 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "tips": "Lt. J. W. C. Kirk (1905, §§ 46–52, pp. 26–28; Appendix I, pp. 134–136; pp. 170–183) documents Somali cardinals, subtractive numerals (labàton midla = 19, 'twenty lacking one'), fractions (bađ 1/2, dalòl 1/3, wahh 1/4, fallad 1/8, rima 1/16), the 4 seasons (Jilal, Gù, Hagar/Karif, Dair, plus the windless Kalil interval), the 12 lunar months (Dago, Durahh hore, Durahh dambe, Rajal hore, Rajal dehhe, Rajal dambe, Sà buha, Wà barìs, Sòn/Soukad, Sòn fur, Sidatal, Arafo), and 14 traditional songs across Hes, Gerar, and Gabei.",
         "words": [
           {
-            "target": "kô (mid)",
-            "source": "One (1)",
+            "target": "kô (mid), lába, sádehh, áfar, shan",
+            "source": "1, 2, 3, 4, 5",
             "pronunciation": "ko la-ba sa-dehh a-far shan",
             "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5"
           },
           {
-            "target": "lába",
-            "source": "Two (2)",
-            "pronunciation": "ko la-ba sa-dehh a-far shan",
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5"
-          },
-          {
-            "target": "sádehh",
-            "source": "Three (3)",
-            "pronunciation": "ko la-ba sa-dehh a-far shan",
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5"
-          },
-          {
-            "target": "lehh",
-            "source": "Six (6)",
+            "target": "lehh, todòba, sidèd, sagàl, tòban",
+            "source": "6, 7, 8, 9, 10",
             "pronunciation": "lehh to-do-ba si-ded sa-gal to-ban",
             "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10"
           },
           {
-            "target": "todòba",
-            "source": "Seven (7)",
-            "pronunciation": "lehh to-do-ba si-ded sa-gal to-ban",
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10"
+            "target": "đig (verb-noun: đignin-ki)",
+            "source": "Warn (verb-noun: warning) [corrected per Kirk 1905 Erratum, p. xii]",
+            "pronunciation": "dhig / dhignin-ki",
+            "hint": "Kirk (1905, Erratum p. xii & § 15b, p. 13)"
           },
           {
-            "target": "sidèd",
-            "source": "Eight (8)",
-            "pronunciation": "lehh to-do-ba si-ded sa-gal to-ban",
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10"
+            "target": "rubiad-di (16a), rubi-gi (8a), bòlad-di (4a), antìn-ti (2a), gambo-di (1a), beisad-di (2p), ardi-di (1p)",
+            "source": "Rupee (16 annas), 1/2 rupee, 4 annas, 2 annas, 1 anna, 2 pies, 1 pie",
+            "pronunciation": "rubiad-di rubi-gi bolad-di antin-ti gambo-di beisad-di ardi-di",
+            "hint": "Kirk (1905, Appendix II, p. 136) Somaliland currency table"
+          },
+          {
+            "target": "wà beri / arorti, subahh-di, barghád-di, hađ-ki (gàdid-ki), duhur-ki, ásar-ki, makhrib-ki",
+            "source": "Dawn, early morning, forenoon, midday, afternoon, late afternoon, sunset",
+            "pronunciation": "wa beri a-rorti su-bahh-di barghad-di hadh-ki du-hur-ki a-sar-ki makhrib-ki",
+            "hint": "Kirk (1905, Appendix I, p. 135) divisions of the day (‘asho-di)"
+          },
+          {
+            "target": "fìdki, aweisin-ki, sakhdi hore, sakhđi dehh, sakhdi dambe, arorti hore (saladdi)",
+            "source": "Twilight (6–7 p.m.), evening (7–10 p.m.), 1st watch (10–12), midnight (12–2), 3rd watch (2–4), before dawn (4–6 a.m.)",
+            "pronunciation": "fidki a-weisin-ki sakhdi ho-re sakhdhi dehh sakhdi dambe sa-laddi",
+            "hint": "Kirk (1905, Appendix I, p. 135) watches of the night (habèn-ki)"
           },
           {
             "target": "labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)",
@@ -24305,8 +24355,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "dab"
           },
           {
-            "target": "Webi",
-            "source": "Lake",
+            "target": "Webi / Dōh' (Lake/pond: balli / haro)",
+            "source": "River (Lake / pond)",
             "pronunciation": "we-bi"
           }
         ],
@@ -24657,17 +24707,17 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "timo-hi"
           },
           {
-            "target": "bakhrin",
+            "target": "madah-hi (Yibir/Midgan: bakhrin-ki)",
             "source": "Head",
             "pronunciation": "bakhrin"
           },
           {
-            "target": "gànad",
+            "target": "ga‘an-ti (Yibir: gànad-di)",
             "source": "Hand",
             "pronunciation": "ga-nad"
           },
           {
-            "target": "yal",
+            "target": "ag-ti / lug-ti (Yibir/Midgan: yal-shi)",
             "source": "Foot",
             "pronunciation": "yal"
           },
@@ -25988,41 +26038,41 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"dembab\" in Somali?",
-            "correctAnswer": "sin, commit a sin (v.i)",
+            "correctAnswer": "sin, commit a sin",
             "options": [
-              "sin, commit a sin (v.i)",
-              "throw stones, stone (v.tr)",
-              "diamond (m.n)",
-              "the dead (m.n)"
+              "sin, commit a sin",
+              "throw stones, stone",
+              "diamond",
+              "the dead"
             ],
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
           {
             "type": "match_pairs",
             "prompt": "Match each verified Somali term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "dembab: sin, commit a sin (v.i)",
+            "correctAnswer": "dembab: sin, commit a sin",
             "pairs": [
               {
                 "left": "dembab",
-                "right": "sin, commit a sin (v.i)"
+                "right": "sin, commit a sin"
               },
               {
                 "left": "dagihi",
-                "right": "throw stones, stone (v.tr)"
+                "right": "throw stones, stone"
               },
               {
                 "left": "deman",
-                "right": "diamond (m.n)"
+                "right": "diamond"
               },
               {
                 "left": "dadki dintai",
-                "right": "the dead (m.n)"
+                "right": "the dead"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Somali term for \"delator, denunciator (m.n)\": ___",
+            "prompt": "Complete the Somali term for \"delator, denunciator\": ___",
             "correctAnswer": "dein ka tur",
             "options": [
               "dein ka tur",
@@ -26227,49 +26277,49 @@ export const SOMALI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "buro iss ku yal (damoh).",
-            "source": "a range of mountains; burihi iss ku yil (plur (m.n) cataplasm, poultice )."
+            "target": "Wahha inđála, ninki an oghòn lahain, ya inđala.",
+            "source": "He that is blind is the man who knows nothing, he is blind (Kirk 1905, Story X, p. 161)."
           }
           ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"da‘nin\" in Somali?",
-            "correctAnswer": "sack (of a town), pillage (f.n)",
+            "correctAnswer": "sack (of a town), pillage",
             "options": [
-              "sack (of a town), pillage (f.n)",
-              "the three stones on which they put their boiler (m.n)",
-              "brush (m.n)",
-              "tar, pitch (m.n)"
+              "sack (of a town), pillage",
+              "the three stones on which they put their boiler",
+              "brush",
+              "tar, pitch"
             ],
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
           {
             "type": "match_pairs",
             "prompt": "Match each verified Somali term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "da‘nin: sack (of a town), pillage (f.n)",
+            "correctAnswer": "da‘nin: sack (of a town), pillage",
             "pairs": [
               {
                 "left": "da‘nin",
-                "right": "sack (of a town), pillage (f.n)"
+                "right": "sack (of a town), pillage"
               },
               {
                 "left": "dardar",
-                "right": "the three stones on which they put their boiler (m.n)"
+                "right": "the three stones on which they put their boiler"
               },
               {
                 "left": "burush",
-                "right": "brush (m.n)"
+                "right": "brush"
               },
               {
                 "left": "damur",
-                "right": "tar, pitch (m.n)"
+                "right": "tar, pitch"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Somali term for \"a range of mountains; burihi iss ku yil (plur m.n)\": ___",
+            "prompt": "Complete the Somali term for \"a range of mountains; burihi iss ku yil\": ___",
             "correctAnswer": "buro iss ku yal",
             "options": [
               "buro iss ku yal",
@@ -26295,69 +26345,225 @@ export interface SomaliGrammarSection {
 
 export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
   {
-    id: "somali-articles-gender-case",
-    title: "Three Definite Article Vowels (-i, -a, -u), Four Demonstratives & Six Plural Classes with Gender Polarity (Kirk 1905)",
-    summary: "Af-Soomaali suffixes Masculine (-k-, -g-, -h-, -‘-) and Feminine (-t-, -d-, -sh-) articles with three vowel grades (-i, -a, -u), four demonstrative degrees (kan, kèr, kas, kò), and six plural classes with polar gender inversion.",
-    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, §§ 23–45, 63, 150–168, pp. 16–24, 33, 79–87) and Rev. Fr. Evangelist de Larajasse (1897):
-1. **Three Suffixed Definite Article Vowels & Euphonic Consonants (Kirk 1905, §§ 23, 28–29, 150–154)**:
-   - **Masculine linking consonant *-k-*** assimilates to **-g-** after *g, i, y, w* (*guri-gi* 'the house'), **-h-** after *e, o* (*àba-hi* 'the father'), and **-‘-** (glottal/zero) after *a, u, gh, kh, h, hh, ‘* (*libahh-i* 'the lion', *gèl-i* 'the camels').
-   - **Feminine linking consonant *-t-*** assimilates to **-d-** after vowels, *d, đ, ‘, h, kh, w, y* (*hòyo-di* 'the mother', *bađ-di* 'the sea'), and coalesces with preceding *-l* into **-sh-** (*hal-ti → hashi* 'the she-camel', *mèl-ti → mèshi* 'the place').
-   - **(a) Vowel *-i* (*ninki, nàgti*)**: Used in a general sense or when the object is past, absent, or distant.
-   - **(b) Vowel *-a* (*ninka, nàgta*)**: Used when the object is actually present, proximate, or combined with possessive suffixes (*faraskaigi* 'my horse').
-   - **(c) Vowel *-u* (*ninku, nàgtu*)**: Used when the noun is the subject of the sentence and already well-known or mentioned before.
-2. **Four Degrees of Demonstrative Pronouns (Kirk 1905, § 63, p. 33)**:
-   - **kan / tan** (pl. *kuan / tuan*): "this" (near me).
-   - **kèr / tèr** (pl. *kuèr / tuèr*): "that" (near).
-   - **kas / tas** (pl. *kuas / tuas*): "that" (further off).
-   - **kò / tò** (pl. *kuò / tuò*): "that yonder" (distant or out of sight).
-3. **Six Plural Classes & Polar Gender Inversion (Kirk 1905, §§ 34–42, 164–168)**:
-   - **Class (i)**: Masculine monosyllables reduplicating the final consonant after *-a-* retain masculine gender (*dab-ki → dabab-ki* 'fires', *nin-ki → niman-ki* 'men').
-   - **Classes (ii)–(vi) invert their gender article in the plural**: (ii) *-o* (*kab-ti → kabo-hi* 'shoes', *waran-ki → warmo-di* 'spears'), (iii) *-yo* (*bùr-ti → bùryo-hi* 'mountains'), (iv) *-i → -io* (*guri-gi → gurio-di* 'houses'), (v) *-o → -oyin* (*hòyo-di → hoyòyin-ki* 'mothers'), (vi) *-a/-e → -ayal* (*abà-hi → abayál-shi* 'fathers').`,
+    id: "somali-orthography-phonology-dialects",
+    title: "1. Orthography, Phonology, Euphonic Vowel Harmony & Dialectal Divisions (Kirk 1905, Intro. & §§ 1–7)",
+    summary: "Covers Kirk's 23-consonant and 5-vowel phonetic system (with cerebral đ, faucal ‘/hh, guttural g/gh/k/kh, and rounded ô), diphthong glides, vowel assimilation, dental-palatal coalescence (l + t → sh), and Ishhak vs. Dolbohanta / Bari vs. Galbed dialect correspondences.",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (Cambridge University Press, 1905, Introduction pp. xiii–xvi & Part I §§ 1–7, pp. 1–9):
+1. **The Somali Alphabet & Consonant Classification (§§ 2, 7, pp. 1–9)**:
+   - **Faucals**: **‘** (= Arabic *‘ain* ع: *‘àno* 'milk', *sa‘* 'cow', *dà‘o* 'jackal'), **h** (= ه: *halkan* 'here'), **hh** (= ح: *libahh* 'lion', *farahh* 'be glad').
+   - **Gutturals**: **g** (hard *g* / Arabic *qaf* ق: *gal* 'enter', *arag* 'see'), **gh** (= Arabic *ghain* غ: *ghad* 'take', *ghori* 'wood'), **k** (*kàli* 'come'), **kh** (= خ: *khamis* 'Thursday', *sandukh* 'box').
+   - **Palatals**: **j** (*jòg* 'halt'), **sh** (*sheg* 'tell', *shan* '5'), **y** (*yer* 'small').
+   - **Dentals & Liquids**: **t**, **d**, **đ** (cerebral *d* = Sanskrit ड, modern *dh*, pronounced with the tip of the tongue turned back to the palate: *đul* 'land', *gabađ* 'girl', *ađer* 'uncle'), **r**, **s**, **l** (plus double *l* in *lehh* '6' approaching Welsh *ll*), **n** (assimilating to *m* before *b*: *nin-ba → nimba*).
+   - **Labials**: **b**, **m**, **f**, **w**.
+2. **Vowels, Diphthongs, Diaeresis & Euphonic Changes (§§ 3–7, pp. 4–9)**:
+   - **Five Vowels (*a, e, i, o, u*)**: Short unmarked, very short **ă** (*shălei* 'yesterday', *răg* 'men'), long grave **à, è, ì, ò, ù** (*nàg* 'woman', *gèl* 'camels', *bìyo* 'water', *hòlo* 'flocks', *bùr* 'hill'), and open rounded **ô** (*đô* 'near', *ilô* 'forget', *madô* 'black', expanding to *-ow-* before vowels: *madôba*, *wa ilôba*).
+   - **Four Diphthongs (*ai, ei, au, oi*)**: Before a vowel suffix, the final semi-vowel becomes consonantal *y* or *w*: *lai-a → laya* ('slay ye'), *tegei-a → wa tégeya* ('I am going'), *samei-a → wa samèya* ('I make'), *bilau-a → biláwa* ('dagger'), *goi-a → goya* ('cut ye').
+   - **Diaeresis**: Marks two adjacent vowels pronounced in separate syllables without coalescing into a diphthong: *aï* ('curse'), *baän* ('bad-tempered'), *eï* ('dog').
+   - **Regressive Vowel Harmony (§ 6.v, p. 6)**: Short *a* assimilates to a following *i, e,* or *u*: *ka‘ → ke‘i* ('arise → raise'), *la i → lei* ('one... me'), *sa‘ → si‘i / su‘u* ('the cow'), *wan taga → wan tegeya* ('I go → I am going'), *aba → abihi / abuhu* ('the father').
+   - **Dental & Liquid Assimilations (§ 7, pp. 8–9)**: Radical **l + t → sh** (*hal-ti → hashi* 'the she-camel', *ul-ta → usha* 'the stick', *yel-ta → yesha* 'she does'); **d/đ + t → d/đ** (*bàd-ti → bàddi*, *gabađ-ta → gabađđa*); **gh/kh/‘/h/hh + t → d** (*warákh-ti → warákhdi* 'the letter', *ba‘-ti → ba‘di*); **g + t → kt** (*arag-tei → áraktei* 'thou sawest'); **l + n → ll** and **r + n → rr** (*gal-nei → gallei* 'we entered', *dir-na → dirra* 'we send').
+3. **Comparative Roots & Dialectal Divisions (Introduction, pp. xiii–xvi)**:
+   - **Eleven Somali–Gala (Oromo) Cognates (p. xiv)**: *arag* ('see'), *eg* ('look'), *jir* ('be'), *gal* ('enter'), *dùl* ('attack'), *đer* ('long'), *nin* ('man'), *đìg* ('blood'), *if* ('light'), *af* ('mouth'), *arrab* ('tongue'); plus shared Arabic/Gala/Somali roots *aba* ('father'), *wil* ('boy'), *faras* ('horse') and Arabic verbal roots *ghad* ('take/carry'), *akhri* ('read'), *ìbi* ('sell/buy'), *gajo* ('be hungry').
+   - **Ishhak vs. Dolbohanta & Bari (East) vs. Galbed (West) Dialects (p. xv)**: Camel = *aur* (Ishhak) vs. *rati* (Dolb.); road = *đau* vs. *jid*; go = *tag* vs. *ad*; the saddles = *koryashi* (Ishhak) vs. *koryalki* (Dolb.); "I want" = *wa dònahaya* (Dolbohanta), *wa dòneya* (Bari / East Ishhak: Habr Toljala & East Habr Yunis), *wa dònaya* (Galbed / West Ishhak: Habr Awal & West Habr Yunis); focus pronouns *ban, bad, bu* (Bari) vs. *yan, yad, yu* (Galbed).`,
     examples: [
-      { somali: "ninki (past/absent) • ninka (present) • ninku (known subject)", english: "the man (three article vowels -i, -a, -u)", explanation: "Kirk (1905, §§ 23, 150–154) vs. demonstratives kan, kèr, kas, kò (§ 63)" },
-      { somali: "hal + -ti → hashi • waran-ki (m.) → warmo-di (f. pl.) • kab-ti (f.) → kabo-hi (m. pl.)", english: "the she-camel • the spear → the spears • the shoe → the shoes", explanation: "Palatal coalescence (l+t → sh) and plural gender polarity (Kirk 1905, §§ 29, 42)" },
-      { somali: "ínnagu (-einu / -èn) vs. ánnagu (-annu / -aya)", english: "we/our [inclusive of listener] vs. we/our [exclusive of listener]", explanation: "First-person plural clusivity across emphatic, clitic, and possessive pronouns (Kirk 1905, §§ 32, 53–55)" }
+      { somali: "wan imi, wad timi, wu yimi, wei timi, weinu nimi vs. wan shega, wad shegta, wu shega, wei shegta, weinu shegna", english: "I came, thou camest, he/she/we came vs. I tell, thou tellest, he/she/we tell", explanation: "Prefix-conjugated vs. regular suffix-conjugated inflection (Kirk 1905, Intro., p. xiv)" },
+      { somali: "hal-ti → hashi • arag-tei → áraktei • gal-nei → gallei • dir-na → dirra", english: "the she-camel • thou sawest • we entered • we send", explanation: "Consonant coalescence and assimilation rules (Kirk 1905, § 7, pp. 8–9)" },
+      { somali: "aur / rati • đau / jid • tag / ad • wa dònahaya / wa dòneya / wa dònaya", english: "camel • road • go • I want (Dolbohanta / Bari / Galbed)", explanation: "Dialectal correspondences across Somaliland (Kirk 1905, Intro., p. xv)" }
+    ]
+  },
+  {
+    id: "somali-articles-gender-case",
+    title: "2. Substantives, Verb-Nouns, Suffix Articles (-i, -a, -u), Possessives & Six Plural Formations (Kirk 1905, §§ 8–45)",
+    summary: "Details Kirk's 3 verbal-noun classes (-nin/-in, -d, -s/-n), quality nouns (-nímo, -an), masculine guttural (-k/-g/-h/-Ø) and feminine dental (-t/-d/-sh) suffixes, 3 definite article vowels (-i, -a, -u), kinship vs. common possessive suffixes, and the 6 plural formations with gender polarity.",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, §§ 8–45, 150–168, pp. 10–25, 86–92):
+1. **Substantive Classes, Proper Names & Verbal/Quality Nouns (§§ 10–21, pp. 11–16)**:
+   - **Proper Names & Descriptive Nicknames (§§ 12–13)**: Male names (*Jàma, Fàrah, Hassan, Hussein, Mohammed, Mahhmud, Ahhmed, Àli, Omar, Nur, Liban, Egal, Duàleh, Abdallah, Abdi, Robleh*) paired with descriptive nicknames (*Gurreh* 'left-handed', *Farùrah* 'hare-lipped', *Dunjog* 'active/cute', *Bulàli* 'fair', *Timo-wein* 'long-haired', *Awarah* 'one-eyed', *Galòs*, *Dèlowein*).
+   - **Three Verbal-Noun Classes (§ 15, pp. 13–14 & Erratum p. xii)**:
+     - **Class 1 (*-nin, -in, -an*)**: *đig → đignin-ki* ('warn → warning', corrected from 'warm, warming' per Erratum p. xii), *tòl → tòlin-ki* ('sewing'), *ghor → ghorin-ki* ('writing'), *bòd → bòdin-ki* ('jumping'), *sug → sugnin-ki* ('waiting'), *fùl → fùlan-ti* ('riding', fem.).
+     - **Class 2 (*-d*, masc.)**: From reflexive verbs in *-o*: *so‘o → so‘od-ki* ('walking/march'), *nokho → nokhod-ki* ('returning'), *garo → garad-ki* ('understanding/sense'), *bahso → bahsad-ki* ('escaping'), *idlo → idlad-ki* ('completion').
+     - **Class 3 (*-s* masc. / *-n* fem.)**: From verbs in *-i / -ei*: *weidi → weidis-ki* ('asking'), *goi → goïs-ki* ('cutting'); *sì → sìn-ti* ('giving'), *samèi → samein-ti* ('making'), *safei → safein-ti* ('cleaning').
+   - **Abstract Nouns of Quality (§ 16, p. 14)**: Suffix **-nímo** (fem.: *‘ulusnímo-di* 'heaviness', *‘ajisnímo-di* 'laziness', *fùlanímo-di* 'horsemanship', *nàgnímo-di* 'womanhood', *hoyonímo-di* 'motherhood'), suffix **-an** (fem.: *‘adan-ti* 'whiteness', *‘asan-ti* 'redness', *weinan-ti* 'greatness', *adkan-ti* 'strength'), and masculine stems (*đerer-ki* 'length', *fudeid-ki* 'lightness', *‘uleis-ki* 'weight', *adeig-gi* 'hardness').
+2. **Gender Linking Consonants, Three Definite Article Vowels & Possessive Suffixes (§§ 22–33, 150–163)**:
+   - **Masculine Guttural Connective (*-k-, -g-, -h-, -Ø*)**: **-k** after *b, d, đ, f, l, r, s, n* (*nin-ki*); **-g** after *g, i, y, w* (*ilig-gi*, *madô-gi*); **-h** after *a, e, o* (*aba-hi*, *odei-hi*); **-Ø** after *u, ‘, gh, kh, h, hh* (*sandukh-i*, *libahh-i*).
+   - **Feminine Dental Connective (*-t-, -d-, -sh-*)**: **-t** after *b, f, g, r, s, n* (*nàg-ti*); **-d** after vowels and *d, đ, ‘, gh, kh, h, hh, w, y* (*hoyo-di*, *warákh-di*); **-sh** by coalescence with final *-l* (*hal + -ti → hashi* 'the she-camel', *mel + -ti → meshi* 'the place').
+   - **Three Definite Article Vowels (§§ 29, 150–154)**: **-i** (general, past, absent, or remote: *ninki*), **-a** (actually present, visible, objective, or possessor: *ninka*), **-u** (well-known or previously mentioned subject: *Sirkálku*, *Wadádku*).
+   - **Possessive Suffixes (§ 32, pp. 18–19)**: *-ai* (my), *-à* (thy), *-ìs* (his), *-èd* (her), *-èn* (our [incl.]), *-aya* (our [excl.]), *-ìn* (your), *-òd* (their). Common nouns append the article after the possessive (*aurkaigi, aurkàgi, aurkìsi...*), whereas close kinship and body/reflexive nouns omit the trailing article (*abahai, hoyodà, nàgtìs, ninkèd, adèrkèn, tolkaya, awòwigìn, walálkòd*).
+3. **The Six Plural Formations & Gender Polarity (§§ 34–42, 164–168, pp. 19–24, 90–92)**:
+   - **1st Formation (§ 35)**: Masculine monosyllables reduplicate the final consonant after *a* and **retain masculine gender** (*dab-ki → dabab-ki* 'fires', *nin-ki → niman-ki* 'men', *san-ki → sanan-ki* 'noses', *war-ki → warar-ki* 'news'; exceptions: *rèr → rèro-hi*, *‘el → ‘elal-shi*, *aur → aur-ti*).
+   - **2nd Formation (§ 36)**: Masculine nouns in *-a* or *-ei* add *-yal* (or *-yo*) and **invert to feminine *-shi*** (Dolbohanta *-ki*): *aba-hi → abayal-shi* ('fathers'), *kòra-hi → kòryashi / kòryalki* ('saddles'), *odei-hi → odeiyal-shi* ('old men').
+   - **3rd Formation (§ 37)**: Feminine nouns in *-o* add *-ïn* and **invert to masculine *-ki***: *hoyo-di → hoyoïn-ki* ('mothers'), *magàlo-di → magàloïn-ki* ('towns'), *gudimo-di → gudimoïn-ki* ('axes'), *ghànso-di → ghànsoïn-ki* ('bows').
+   - **4th Formation (§ 38)**: Other masculine polysyllables add *-o / -yo* and **invert to feminine *-di***: *fanđal-ki → fanđala-di* ('spoons'), *libahh-i → libahhyo-di* ('lions'), *ilig-gi → ilko-di* ('teeth'), *wáran-ki → warmo-di* ('spears'); irregulars: *dagahh → dagahhan-ti* ('stones'), *ugahh → ugahhan-ti* ('eggs'), *oghàl → oghàl-shi* ('headmen'), *faras → fardo-hi* ('horses', masc. sg. concord, or contracted *fardi* fem. sg. concord, § 165 note), *askàri → askàrr-ti* ('soldiers'), *Yibir → Yibro-hi*, *Midgan → Midgo-hi*.
+   - **5th Formation (§ 39)**: Arabic loanwords form Arabic internal (broken) plurals and **invert to feminine *-di / -ti / -shi***: *sandukh → sanadukh-di* ('boxes'), *bandukh → banadukh-di* ('rifles'), *sirkál → sirakìl-shi* ('officers'), *kùrsi → kurási-di* ('chairs'), *warákh → warákh-di* ('letters'), *moskhìn → mosakhìn-ti* ('paupers'), *musmár → musamar-ti* ('nails').
+   - **6th Formation (§ 40)**: Other feminine nouns add *-o* and **invert to masculine *-hi***: *nàg-ti → nàgi-hi* ('women'), *hal-shi → hali-hi* ('she-camels'), *ga‘an-ti → ga‘amo-hi* ('hands'), *kab-ti → kabo-hi* ('sandals'), *gabađ-di → gabđo-hi* ('girls'), *il-shi → inđo-hi* ('eyes'); after numerals they take **-od** (*shan halod* '5 she-camels', *sagàl bilod* '9 months').`,
+    examples: [
+      { somali: "đig → đignin-ki (warn/warning) • so‘o → so‘od-ki (walk/walking) • weidi → weidis-ki (ask/asking)", english: "Class 1 (-nin), Class 2 (-d), and Class 3 (-s/-n) verbal nouns", explanation: "Kirk (1905, § 15, pp. 13–14 & Erratum p. xii)" },
+      { somali: "aurkaigi (my camel) vs. abahai (my father), hoyodà (thy mother), adèrkèn (our uncle [incl.]), tolkaya (our tribe [excl.])", english: "Possessive suffixes with and without the trailing definite article", explanation: "Kirk (1905, § 32, pp. 18–19)" },
+      { somali: "dab-ki → dabab-ki (I) • kòra-hi → kòryashi (II) • hoyo-di → hoyoïn-ki (III) • wáran-ki → warmo-di (IV) • sirkál-ki → sirakìl-shi (V) • hal-shi → hali-hi / shan halod (VI)", english: "All six plural formations and gender polarity inversions", explanation: "Kirk (1905, §§ 35–42, pp. 20–24)" }
+    ]
+  },
+  {
+    id: "somali-numerals-pronouns-adjectives",
+    title: "3. Numerals, Subtractive Counting, Fractions, Clusivity Pronouns & 19 Radical Adjectives (Kirk 1905, §§ 46–82)",
+    summary: "Covers Somali cardinals 1–1,000, subtractive 19/29/99 (midla), 6 fractions, ordinals (-ad), 8 pronoun classes with 1st-person plural inclusive/exclusive distinction, all 19 radical adjectives, and comparative/superlative syntax.",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, §§ 46–82, 169–196, pp. 26–41, 92–99):
+1. **Cardinals, Subtractive Numerals, Fractions & Ordinals (§§ 46–52, pp. 26–28)**:
+   - **Cardinals 1–10**: *kô-di / mid-ki* (1), *lába-di* (2), *sádehh-di* (3), *áfar-ti* (4), *shan-ti* (5), *lehh-di* (6), *todòba-di* (7), *sidèd-di* (8), *sagàl-ki* (9), *tòban-ki* (10).
+   - **Teens & Tens**: *kôbyo-tòban-ki* (11), *labyo-tòban-ki* (12) ... *labàton-ki* (20), *sóddon-ki* (30), *afárton-ki* (40), *kónton-ki* (50), *léhhdon-ki* (60), *todobàton-ki* (70), *sidèton-ki* (80), *sagàshon-ki* (90), *bóghol-ki* (100), *kun-ki* (1,000).
+   - **Subtractive Numerals (§ 46 Note 3)**: 19, 29, 39, 99 are expressed by the next multiple of ten followed by **midla** ('lacking one'): *labàton midla* (19), *sóddon midla* (29), *bóghol midla* (99).
+   - **Six Fractions (§ 49, p. 28)**: *mel-shi* ('portion'), *bađ-ki* (1/2, or Arabic *nus-ki*), *dalòl-ki* (1/3), *wahh-di* (1/4), *fallad-di* (1/8), *rima-di* (1/16).
+   - **Ordinals (§ 52)**: Formed with **-ad**: *kôwad / hòre* (1st), *lábad* (2nd), *sádehhad* (3rd), *áfrad* (4th), *shánad* (5th), *léhhad* (6th), *todòbad* (7th), *sidèdad* (8th), *sagàlad* (9th), *tòbnad* (10th), *labàtonad* (20th).
+2. **Eight Pronoun Classes & First-Person Plural Clusivity (§§ 53–68, pp. 29–35)**:
+   - **Inclusive vs. Exclusive 'We / Us / Our' (§§ 32, 54–59)**:
+     - **Inclusive (including person addressed)**: Enclitic subj. **-ainu / -einu** (*weinu, beinu, yeinu*), Emphatic **ínnagu / ínnaga** (*innu*), Object **ina**, Possessive **-èn** (*kaigèn / taidèn*).
+     - **Exclusive (excluding person addressed)**: Enclitic subj. **-annu** (*wannu, bannu, yannu*), Emphatic **ánnagu / ánnaga** (*annu*), Object **na**, Possessive **-aya** (*kayága / tayáda*).
+   - **Indicative & Interrogative Pronominal Prefixes (§§ 57–58)**: *wahhan, wahhad, wuhhu, wahhai, wahhainu, wahhannu, wahhaidin, wahhai* ('this is what I/thou/he...') and *mahhan...?, mahhad...?, muhhu...?, mahhai...?* ('what/why do I/thou/he...?').
+   - **Four Degrees of Demonstrative Pronouns (§ 63, p. 33)**: **kan / tan** (pl. *kuan / tuan*, 'this near me'), **kèr / tèr** (pl. *kuèr / tuèr*, 'that near'), **kas / tas** (pl. *kuas / tuas*, 'that further off'), **kò / tò** (pl. *kuò / tuò*, 'that yonder'), plus relative/past **ki / ti** ('the one that').
+   - **Indefinite Passive Pronoun *la* (§§ 66–67, p. 34)**: Meaning French *on* ('one / people / someone'), used as the standard Somali passive (*nin ba la dilei* 'a man has been killed'), contracting with object pronouns into **lei** (*la + i*), **lagu** (*la + ku*), **lo** (*la + u*), **leina** (*la + ina*), **leidin** (*la + idin*), and with *ka* into **laga** (*leiga, lagaga, loga*).
+3. **All 19 Radical Adjectives, Derived Adjectives & Comparison (§§ 69–82, pp. 36–41)**:
+   - **Complete Table of 19 Radical Adjectives (§ 76, p. 38)**: *‘ad* ('white'), *adag* ('hard, strong'), *‘as* ('red'), *aul* ('yellow'), *bisil* ('cooked, ripe'), *đer* ('long, tall, deep, high'), *‘eđin* ('raw, unripe'), *feyig* ('awake, lively, careful'), *fi‘an* ('clever, good, useful'), *fudud* ('light, easy, active'), *ghabô* ('cold'), *hhun* ('bad'), *kulul* ('hot, warm'), *madô* ('black, dark'), *shilis* ('fat'), *‘ulus* ('heavy'), *‘usub* ('new, fresh'), *wein* ('big, great, old, loud'), *yer* ('small, young, little, few') — forming plurals by prefix reduplication (*wawein, yeryer, đerđer, ‘ul‘ulus, hhunhhun, gagab*).
+   - **Derived & Compound Adjectives (§§ 78–81)**: Verbal participles in **-an / -san** (*wanăksan* 'good', *ladan* 'well', *buhan* 'full'), noun adjectives in **-leh** ('possessing': *gađleh* 'bearded', *bìyoleh* 'having water'), **-la** ('without': *inđala* 'blind', *lugola* 'legless'), **-ah** ('being': *Tomàlah* 'Tomal'), **-ed / -ad** ('of/belonging to': *Somàlied*, *baded* 'marine', *‘ano halad* 'camel's milk'), and compounds (*af badan* 'sharp', *hòg wein* 'strong', *af yaghán* 'eloquent/interpreter').
+   - **Comparative & Superlative (§ 82, p. 41)**: Comparative with preposition **ka** (*ákhalkan ákhalkas ka wein* 'this house is bigger than that house'); Superlative with **u / ugu**, **ba**, or **sà** (*sádehhdas ki u wanăksana* 'the best of those three', *kas sà wanăksan* 'that is best').`,
+    examples: [
+      { somali: "labàton midla (19) • sóddon midla (29) • bóghol midla (99) • bađ-ki (1/2), dalòl-ki (1/3), wahh-di (1/4), fallad-di (1/8), rima-di (1/16)", english: "Subtractive numerals ('lacking one') and the 5 unit fractions", explanation: "Kirk (1905, §§ 46, 49, pp. 27–28)" },
+      { somali: "lei (la+i), lagu (la+ku), lo (la+u), leidin (la+idin), leiga (la+i+ka)", english: "Contractions of the indefinite/passive pronoun la with object pronouns and prepositions", explanation: "Kirk (1905, § 67, p. 34)" },
+      { somali: "‘ad, adag, ‘as, aul, bisil, đer, ‘eđin, feyig, fi‘an, fudud, ghabô, hhun, kulul, madô, shilis, ‘ulus, ‘usub, wein, yer", english: "All 19 Radical Adjectives in Somali", explanation: "Kirk (1905, § 76, p. 38)" }
     ]
   },
   {
     id: "somali-focus-pronouns-numerals",
-    title: "Sentence Focus Particles (wa, ba, ya), Three Regular Conjugations, Seven Prefix/Irregular Verbs & Oral Literature (Kirk 1905)",
-    summary: "Every declarative Somali clause requires an assertive/focus particle (wa, ba, or ya), and verbs conjugate across 3 regular conjugations (sheg, gùrso, samèi) plus 7 irregular/prefixing verbs (oll, imo, ođo, ogho, aho, laho, wah).",
-    content: `From Lt. J. W. C. Kirk's *Grammar of the Somali Language* (1905, §§ 46–149, Appendices I–III, pp. 26–183):
-1. **Assertive & Focus Particles (*wa, ba, ya, ma*) (Kirk 1905, §§ 74, 211–227)**:
-   - **wa (waa)**: Focuses the verb/predicate (*Adiga wa imàneysa* = You are coming).
-   - **ba (baa) / ya (ayaa)**: Focuses the preceding substantive or pronoun (*Aniga ba imàneya* = It is I who am coming).
-   - **ma**: Interrogative and negative particle (*Ma bariden?* = Have you slept well?; *Ma garanayo* = I do not know).
-2. **Three Regular Conjugations & Seven Irregular/Prefixing Verbs (Kirk 1905, §§ 76–118)**:
-   - **1st Conjugation (*sheg* 'tell')**: Root stems (*shega / shegeya / shegei*).
-   - **2nd Conjugation (*gùrso* 'marry')**: Reflexive/Middle stems in **-o / -at** (*gùrsada / gùrsadei*).
-   - **3rd Conjugation (*samèi* 'make')**: Causative/Transitive stems in **-èi / -is** (*samèya / samèyei*).
-   - **Seven Irregular & Prefixing Verbs**: **oll** (dwell/be in a place: pres. *al, tal, yal, nal*, past *il, til, yil, nil*, § 100), **imo** (come, imp. *kàli*: *imàda / imi*, § 106), **ođo** (say, imp. *đeh*: *iđahhda / iđi*, § 106), **ogho** (know: *aghán / ighín*, § 106), **aho** (be: *ahai, tahai, yahai, nahai, tihin, yihin*, § 110), **laho** (possess: *lehahai*, § 115), **wah** (fail/lack: *wahya / wai*, § 117).
-3. **Pastoral Calendar, Currency & Oral Literature (Kirk 1905, pp. 134–214)**:
-   - **Seasons & Lunar Months (Appendix I, pp. 134–136)**: *Jilal*, *Kalil*, *Gù*, *Hagar (Karif)*, *Dair*; 12 lunar months from *Dago* and *Durahh hore/dambe* to *Sidatal* and *Arafo*; 18 divisions of the day/night (*wà beri, bargháddi, hađki, fìdki, aweisinki, sakhđi dehh*).
-   - **Classical Poetic Genres & Guild Registers (pp. 170–214)**: **Hes** (work/watering/dance songs), **Gerar** (equestrian/warrior chants), **Gabei** (solemn alliterative poetry), plus the **Yibir (*Anas*)** and **Midgan (*Alowa*)** guild vocabularies.`,
+    title: "4. Three Regular Verb Conjugations, Seven Irregular/Prefixing Verbs & Four Derivative Classes (Kirk 1905, §§ 83–123)",
+    summary: "Complete paradigm reference for Conjugations I (sheg), II (gùrso, Tables I–IV), and III (samèi + -yi verbs), the 7 irregular/prefixing/defective verbs (oll, imo, ođo, ogho, aho, laho, wah), and the 4 derivative verb classes (Intensive, Reflexive, Attributive, Causative).",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, §§ 83–123, pp. 42–72):
+1. **The Three Regular Conjugations & Mood/Tense System (§§ 83–109, pp. 42–62)**:
+   - **1st Conjugation (*sheg* 'tell', Inf. *shègi*, V.N. *shègin-ki*, §§ 100–101)**:
+     - *Present*: *shega, shegta, shega, shegta, shegna, shegtin, shegan* (Neg. *ma shego, ma shegtid / ma shegto...*).
+     - *Present Continuative*: *shègeya* (Bari), *shègaya* (Galbed), *shègaháya* (Dolbohanta).
+     - *Future*: *shègi dòna* (Neg. *shègi mayo, shègi maysid, shègi mayo, shègi mayso, shègi mayno, shègi maysan, shègi mayán*).
+     - *Past Definite (Preterite)*: *shègei, shegtei, shègei, shegtei, shegnei, shegten, shègen* (Neg. *ma shègin*).
+     - *Past Continuative (Imperfect)*: *shègeyei*; *Habitual*: *shègi jirei*; *Conditional*: *shègi laha, shègi lahaid...* (Neg. *maan shègen, maad shegten...*); *Subjunctive*: *an shègo, ad shegtid / shegto...*; *Imperative*: *sheg* (pl. *shèga*; Neg. *ha shègin*, pl. *ha shègina*; 1st/3rd Neg. *yanan / yanu shègin*).
+   - **2nd Conjugation (*gùrso* 'marry', Inf. *gùrsan*, V.N. *gùrsad-ki*, §§ 102–105)**: Divided into **4 Subclasses (Tables I–IV)**:
+     - **Table I (*gùrso*, root in consonant cluster)**: *gùrsada, gùrsata, gùrsada, gùrsata, gùrsana, gùrsatin, gùrsadan*; Pret. *gùrsadei*; Impv. *gùrso* (pl. *gùrsada*).
+     - **Table II (*ìbso* 'buy', root in vowel + *-so*)**: *ìbsoda, ìbsota...*; Pret. *ìbsotei*; Continuative *ìbsóneya*.
+     - **Table III (*đagho* 'get rich / tend flocks', root in guttural *gh, g, kh, d*)**: Syncopates *a* before dental suffixes: *đaghda, đaghata, đaghda, đaghata, đaghana, đaghidin, đaghdan*; Pret. *đaghdei, đaghatei*.
+     - **Table IV (*johoro* 'Wait!', root in *r, l, n*)**: *johorda, johorta...* (with *l+t → sh*: *ogòlo → ogòsha* 'she agrees'; *r+n → rr, l+n → ll*).
+   - **3rd Conjugation (*samèi* 'make', Inf. *samèin*, V.N. *samein-ti*, §§ 107–109)**:
+     - *Present*: *samèya, samèisa, samèya, samèisa, samèina, samèisin, samèyan*; Pret. *samèyei, samèisei, samèyei, samèisei, samèinei, samèisen, samèyen*; Neg. Pret. *ma samèinin*.
+     - **Subclass in *-i* (§ 109, p. 62)**: *‘affi* ('forgive'), *ahdi* ('solemnly promise'), *akhri* ('read'), *‘aï* ('abuse/insult'), *‘ari* ('Behind!'), *awawi* ('plunder'), *bakhti* ('die/extinguish'), *bari* ('beg'), *dai* ('look'), *‘ei* ('bark/cry'), *‘eri* ('drive away'), *fađì* ('sit/dwell'), *fòri* ('whistle/sing'), *gábei* ('sing a Gabei'), *haji* ('go on pilgrimage'), *oi* ('weep'), *silei‘* ('suffer pain').
+2. **The Seven Irregular, Prefix-Conjugated & Defective Verbs (§§ 100, 106, 110–118, pp. 49–69)**:
+   - **1. *oll* ('be in a place, lie, dwell', § 100)**: Pres. *al, tal, yal, tal, nal, tàlin, yàlin* (Neg. *ma al, ma tàlid, ma yal, ma tàlin*); Pret. *il, til, yil, til, nil, tillen, yillen* (Neg. *ma ollin*).
+   - **2. *imo* ('come', § 106)**: Impv. *kàli* (pl. *kàia*; Neg. *ha iman*); Pres. *imàda, timàda, yimàda, timàda, nimàda, timàdin, yimàdan*; Pret. *ími/imid, tími/timid, yími/yimid, tími/timid, ními/nimid, timàden, yimàden* (Neg. *ma iman*).
+   - **3. *ođo* ('say', § 106)**: Impv. *đeh* (pl. *đahha*); Pres. *iđahhda, tiđahhda, yiđahhda, tiđahhda, niđahhda, tiđahhdin, yiđahhdan*; Pret. *iđi, tiđi, yiđi, tiđi, niđi, tiđahhden, yiđahhden* (Neg. *ma ođón*).
+   - **4. *ogho* ('know', §§ 106, 118)**: Impv. *oghô* (pl. *oghàda*); Pres. *aghán, taghán, yaghán, taghán, naghán, taghánin, yaghánin* (1s Neg. **môjì / môyi** 'I know not'); Pret. *ighín, tighín, yighín, tighín, nighín, tighánen, yighánen*; plus defective root **òg** (*wan ògahai* 'I am aware').
+   - **5. *aho* ('be', §§ 110–114)**: Pres. *ahai, tahai, yahai, tahai, nahai, tihin, yihin* (Neg. *miìhi, miìhid, maaha, maaha, maahin, miìhin, maaha*); Pret. *aha, ahaid, aha, ahaid, ahain, ahaiden, ahàien* (Neg. *ma ahain*).
+   - **6. *laho* ('possess, have', §§ 115–116)**: Pres. *lehahai, lehdahai, lehyahai, lehdahai, lehnahai, lehdihin, lehyihin* (Neg. *málihi, málihid, málaha, málahin*); Pret. *laha, lahaid, laha, lahaid, lahain, lahaiden, lahàien* (Neg. *ma lahain*).
+   - **7. *wah* ('fail to find, be unable', § 117)**: Pres./Pret. *wahya / waiya / wai* (1s/3m), *weida / weidei* (2s/3f), *weina / weinei* (1pl), *weia / weiden* (2pl), *wahyan / waiyen* (3pl).
+3. **The Four Derivative Verb Classes (§§ 119–123, pp. 70–72)**:
+   - **(1) Intensive (Reduplicated, § 120)**: *lab → lablab* ('fold up'), *fur → furfur* ('undo'), *goi → gogoi* ('cut to pieces'), *dòn → dòndòn* ('search thoroughly'), *gur → gurgur* ('crawl'), *heđ → heđheđ* ('tie securely'), *jehh → jehhjehh* ('tear to shreds'), *sheg → shegsheg* ('chat/repeat').
+   - **(2) Reflexive / Middle (*-o / -so*, § 121)**: Action for one's own benefit (*ghad → ghado* 'take for oneself', *ìbi → ìbso* 'buy for oneself', *shakhèi → shakhèiso* 'work for oneself').
+   - **(3) Attributive / Inchoative (*-o → -àda*, § 122)**: From adjectives/nouns (*‘ad → ‘adô* 'become white', *kulul → kululô* 'become hot', *hhun → hhumô* 'become bad', *buk → bukô* 'fall sick').
+   - **(4) Causative (*-i, -si, -ei*, § 123)**: Transitive/causative (*ka‘ → ke‘i* 'raise', *bugh → buhhsi* 'fill', *da‘ → daji* 'let fall'); final gutturals *-gh, -g, -ô* palatalize to **-ji** (*dagh → daji* 'pasture', *bagh → baji* 'frighten', *jòg → jòji* 'halt', *ingeg → ingeji* 'dry', *hagag → hagaji* 'straighten', *wanag → wanaji* 'improve', *wereg → wereji* 'turn round', *ghabô → ghabôji* 'cool').`,
     examples: [
-      { somali: "kô, lába, sádehh, áfar, shan, lehh, todòba, sidèd, sagàl, tòban • labàton midla (19)", english: "1–10 • 19 ('twenty lacking one')", explanation: "Cardinals & subtractive numerals; fractions bađ (1/2), dalòl (1/3), wahh (1/4), fallad (1/8), rima (1/16) (Kirk 1905, §§ 46–52)" },
-      { somali: "Dago, Durahh hore, Durahh dambe, Rajal (hore/dehhe/dambe), Sà buha, Wà barìs, Sòn (Soukad), Sòn fur, Sidatal, Arafo", english: "The 12 traditional Somali lunar months", explanation: "Kirk (1905, Appendix I, p. 135)" },
-      { somali: "Hawl adun ma đamáto ninba wa intis • Tollimòno ka dòrne, o sàmir bannu dèdallei", english: "The work of the world finishes not, each man has his share • We must choose brotherhood and strive for peace", explanation: "Verbatim proverb (§ 227, p. 111) and Geeraar verse (Song IV, p. 176) in Kirk (1905)" }
+      { somali: "sheg / shègi (I) • gùrso / gùrsan (II.1) • ìbso / ìbsan (II.2) • đagho / đaghan (II.3) • ogòlo / ogòlan (II.4) • samèi / samèin (III)", english: "The 3 regular conjugations and 4 subclasses of Conjugation II", explanation: "Kirk (1905, §§ 100–109, pp. 49–62)" },
+      { somali: "oll (al/il) • imo (imàda/ími) • ođo (iđahhda/iđi) • ogho (aghán/ighín/môyi) • aho (ahai/aha) • laho (lehahai/laha) • wah (wai/weida)", english: "All 7 irregular, prefix-conjugated, and defective verbs", explanation: "Kirk (1905, §§ 100, 106, 110–118, pp. 49–69)" },
+      { somali: "dagh → daji • bagh → baji • jòg → jòji • wanag → wanaji • goi → gogoi • heđ → heđheđ", english: "Causative palatalization (-gh/-g → -ji) and reduplicated intensive stems", explanation: "Kirk (1905, §§ 120, 123, pp. 70, 72)" }
     ]
   },
   {
-    "id": "somali-public-domain-dataset-synthesis",
-    "title": "Historical Orthography & Dialectal Reference Notes for Somali",
-    "summary": "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Somali.",
-    "content": "1. **Archival & Open-Dataset Integration for Somali**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
-    "examples": [
-      {
-        "somali": "dalol • dalo",
-        "english": "(numeral) one-third (m.n) • top of the head (f.n)",
-        "explanation": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
-      },
-      {
-        "somali": "dembab • dagihi",
-        "english": "sin, commit a sin (v.i) • throw stones, stone (v.tr)",
-        "explanation": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
-      }
+    id: "somali-syntax-particles-clauses",
+    title: "5. Syntax of Simple & Compound Sentences, Focus Particles (wa, ba, ya) & the 8-Slot Particle Hierarchy (Kirk 1905, §§ 136–289)",
+    summary: "Covers SOV word order, focus particles (wa, ba, ya), the 7 verbs of existence, Kirk's 8-slot pre-verbal particle hierarchy (H → A, § 236), relative clauses, 4 conditional types, concessive clauses (kasta), and direct-speech Oratio Obliqua.",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, Parts III & IV, §§ 136–289, pp. 81–133):
+1. **Word Order, Focus Particles (*wa, ba, ya*) & Seven Verbs of Existence (§§ 136–149, 211–227)**:
+   - **Standard SOV Order (§ 137)**: Subject — Object — Particles — Verb (*ninki nàgti bu dilei* 'the man killed the woman').
+   - **Syntax of *wa*, *ba*, and *ya* (§§ 139, 211–227)**:
+     - **wa**: Assertive particle focusing the **verb or predicate** (*sirkálku wa tegei manta* 'the officer has gone today'; *wa shabèl* 'it is a leopard').
+     - **ba**: Focuses the immediately preceding **noun, pronoun, or adverb**, marking contrastive subject focus (*nin ba libahh ghobtei* 'a man caught a lion' vs. *nin libahh ba ghobtei* 'a lion caught a man', § 159), superlative comparison (*sádehhdas kán ba wanăksan* 'this is the best of those three', § 226), and distributive "each" (*nin ba mid sì* 'give each man one', *Hawl adun ma đamáto ninba wa intis* 'The work of the world finishes not, each man has his share', § 227).
+     - **ya**: Narrative and post-adverbial focus particle used after temporal/locative phrases or in West Ishhak (*Galbed*) speech (*bérigi dambe ya ínan, Suldàn đalei, ya ínanti arkei*, § 228).
+   - **Seven Verbs of Existence ('To Be', § 141, pp. 83–85)**:
+     - (a) **aho**: Copula of identity/quality (*nin wein ban ahai* 'I am a big man').
+     - (b) **oll**: Inanimate location or permanent dwelling (*akhalkaiga bu yal* 'it is in my house'; *Burao-einu nil* 'we lived at Burao').
+     - (c) **jòg**: Temporary presence of **animate beings** (*hashu ma jògta?* 'is the she-camel here?').
+     - (d) **jir**: Presence inside a container or distance of **inanimate things/places** (*bìyo wa kú jiran* 'there is water in it'; *halkiyo Bòhotleh intèi jirta?* 'how far is Bohotle from here?').
+     - (e) **fađì**: Residing, staying, or sitting in a place (*hérodi sirakìshu fađída* 'the camp where the officers dwell').
+     - (f) **laho**: Natural habitat of game, water, or vegetation (*meshàsa ugad ma lehdahai?* 'is there any game in that place?').
+     - (g) **nokho**: Becoming (*suldàn bu nòkhdei* 'he became Sultan').
+2. **The 8-Slot Pre-Verbal Particle Hierarchy (H → A) (§ 236, p. 117)**:
+   - Every particle between the noun arguments and the verb stem must stand in strict sequence from **H (outermost)** to **A (innermost before the verb)**:
+     - **Slot H**: Interrogative **ma?** or Assertive **wa / ba / ya**
+     - **Slot G**: Subordinate/Interrogative Negative **an**
+     - **Slot F**: Enclitic Subject Pronoun (**-an, -ad, -u, -ai, -einu, -annu, -eidin**)
+     - **Slot E**: Object Pronoun (**i, ku, u, ina, na, idin**) or Reflexive **iss**
+     - **Slot D**: Prepositional Particle (**u, ku, ka, la**)
+     - **Slot C**: Indicative Negative **ma**
+     - **Slot B**: Directional Particle (**so** 'hither' / **si** 'thither')
+     - **Slot A**: Distributive/Collective Particle (**kala** 'apart' / **wada** 'all together')
+     - **VERB STEM**
+   - Canonical 7-particle example (§ 236, p. 117): **mi-an-ad na la so wada kahain?** (*H: ma? + G: an + F: ad + E: na + D: la + B: so + A: wada + Verb: kahain* = 'Did you not bring all of them with us?').
+3. **Subordinate Clauses & Direct-Speech *Oratio Obliqua* (§§ 239–289, pp. 118–133)**:
+   - **Adjectival (Relative) Clauses (§§ 246–253)**: Attached directly without a relative pronoun after a definite antecedent, or linked by **e** (restrictive) or **o** (descriptive/participial: *wahhan arkei lehh gabđod o ‘el ku maiđóneya* 'I saw six girls washing at a well').
+   - **Four Conditional Types with *hadi* ('if') (§§ 262–268, pp. 125–127)**: (1) Present/Future Real (*hadu yimàdo, u shègi dòna* 'if he comes, I will tell him'), (2) Present Factual (*hadad moskhìn tahai...* 'if you are a pauper [as you say]...'), (3) Future Less Vivid / Present Contrary-to-Fact (*hadan arko wa gáran laha* 'if I saw him I should recognise him'), (4) Past Contrary-to-Fact (*hadad shălei takto, wa u ghobón lahaid* 'if you had gone yesterday, you would have caught him').
+   - **Concessive Clauses with *kasta* (§§ 272–275, pp. 128–129)**: Using the imperative/subjunctive (*wahh kasta ha ku shègo, ha makhlin* 'whatever he tells you, do not listen'; *in kasta há jirte, wa gàđeya* 'however far it may be, I will reach it').
+   - **Indirect Statement (*Oratio Obliqua*, §§ 282–288, pp. 131–133)**: Somali prefers **direct speech** introduced by **wahhan iđi / wuhhu yiđi** or **watan ku iđi** (*wuhhu yiđi, libahh ban arkei* 'he said he had seen a lion', lit. 'what he said was: I saw a lion').`,
+    examples: [
+      { somali: "nin ba libahh ghobtei vs. nin libahh ba ghobtei", english: "A man caught a lion vs. A lion caught a man", explanation: "Subject focus marker ba disambiguating SOV vs. OSV order (Kirk 1905, § 159, p. 88)" },
+      { somali: "mi-an-ad na la so wada kahain?", english: "Did you not bring all of them with us?", explanation: "Kirk's 8-slot pre-verbal particle hierarchy H → A (§ 236, p. 117)" },
+      { somali: "wa runtai, wa runtada, wa runtìs, wa runtèd, wa runtèn (opp. wa beintai)", english: "I speak the truth, thou speakest the truth, he/she/we speak the truth", explanation: "Idiomatic possessive truth/falsehood construction (Kirk 1905, § 201.iv, p. 103)" }
+    ]
+  },
+  {
+    id: "somali-calendar-measures-clans-oral-literature",
+    title: "6. Appendices I–III (Seasons, 12 Lunar Months, 18 Day/Night Watches, Currency & Clan Genealogies), 11 Prose Stories & 14 Songs (Kirk 1905, pp. 134–183)",
+    summary: "Complete reference to Kirk's Appendices I–III (seasons, 12 lunar months, 7 days, 18 day/night watches, rupee/anna/pie currency, weights/measures, and Asha/Dir/Sab clan genealogies), Prose Stories I–XI, and Alliterative Songs I–XIV (Gerar, Gabei, Hes).",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, Appendices I–III, pp. 134–142; Examples of Prose, pp. 143–169; Examples of Verse, pp. 170–183):
+1. **Appendix I: Divisions of Time — Seasons, 12 Lunar Months, 7 Days & 18 Day/Night Watches (pp. 134–135)**:
+   - **Five Seasons of the Year (*gù-gi* / *sannad-ki*)**: **Jilal-ki** (Jan.–Mar., dry season), **Kalil-shi** (April, windless hot interval before the rains), **Gù-gi** (May–June, heavy rainy season of plenty), **Hagar-ki** (July–Oct., hot dry southwest monsoon season; called **Karif-ki** on the coast), and **Dair-ti** (Nov.–Dec., lighter rainy season).
+   - **Twelve Lunar Months (*bil-shi*, pl. *bilo-hi*)**: **1. Dago** (*Muharram*), **2. Durahh hore** (*Safar*), **3. Durahh dambe** (*Rabi' I*), **4. Rajal hore** (*Rabi' II*), **5. Rajal dehhe** (*Jumada I*), **6. Rajal dambe** (*Jumada II*), **7. Sà buha** (*Rajab*), **8. Wà barìs** (*Sha'ban*), **9. Sòn / Soukad** (*Ramadan*), **10. Sòn fur** (*Shawwal*), **11. Sidatal** (*Dhu al-Qi'dah*), **12. Arafo** (*Dhu al-Hijjah*).
+   - **Seven Days of the Week**: *Isnin-ti* (Mon.), *Salasa-di* (Tue.), *Rabuhh-i* (Wed.), *Khamis-ki* (Thu.), *Jima‘-i* (Fri.), *Sabti-di* (Sat.), *Ahád-di* (Sun.).
+   - **Eighteen Watches of the Day (*‘asho-di*) and Night (*habèn-ki*)**:
+     - *Morning (**gélinka hore**, 6 a.m.–12 noon)*: **wà beri / arorti** (dawn, 6 a.m.), **subahh-di** (6–7 a.m.), **bargháddi hore / barisáddi hore** (7–8 a.m.), **barghád-di / barisád-di** (8–9 a.m.), **bargháddi kúluleid** (9–11 a.m.), **marki hađki so koreisa** ('when the shadow draws in', 11–12), **hađ-ki / gàdid-ki** (midday, 12 noon).
+     - *Afternoon (**galáb-ti / gélinka dambe**, 12 noon–6 p.m.)*: **duhur-ki** (12:30–3 p.m.), **ásar-ki** (3–5 p.m.), **makhrib-ki** (sunset, 6 p.m.).
+     - *Night (**habèn-ki**, 6 p.m.–6 a.m.)*: **fìdki** (6–7 p.m.), **aweisin-ki** (7–10 p.m.), **sakhdi hore** (10–12 p.m.), **sakhđi (dehh)** (midnight, 12–2 a.m.), **sakhdi dambe** (2–4 a.m.), **arorti hore / saladdi** (before dawn, 4–6 a.m.).
+2. **Appendix II: Money, Weights & Caravan Measures (p. 136)**:
+   - **Currency**: *la‘ag-ti* (money/silver), *dahab-ki* (gold), *mushahàro-di* (wages), *hisab-ti* (account), *sarrif-ki* (small change); **rubiad-di** (pl. *rubod*, 1 rupee = 16 annas = 1s. 4d.), **rubi-gi / nus rubiad** (8 annas = 1/2 rupee), **bòlad-di** (4 annas = 1/4 rupee), **antìn-ti** (2 annas), **gambo-di** (1 anna = 1d.), **beisad-di** (2 pies = 1/4d.), **ardi-di** (1 pie).
+   - **Weights & Measures**: **misan-ki** (weight/scales), **rođol-ki** (1 lb.), **nus rođol** (1/2 lb.), **waghed-di** (4 oz.); **ba‘-i** (fathom = ~5 ft. 10 in., for measuring well ropes), **geđi-gi** (camel's march = ~9 miles), **laba geđi** (a day's march), **nus geđi** (half march = 4–5 miles).
+3. **Appendix III: Sketch Map & Genealogical Table of the Somali Tribes (pp. 138–142)**:
+   - **Asha (Gob — Noble Confederations)**:
+     - **Ishhak**: *Habr Awal* (Saad Musa [Jibril Abokr, حسين Abokr, Abdallah Abokr], Esa Musa), *Habr Gerhajis* (*Eidegalla*, *Habr Yunis* — Baha Ismail & Baha Makahil, including the Royal House *Omar Abdallah*), *Arab*, *Habr Toljala* (Musa Abokr, Mohamed Abokr, Ibrahim, Sanbur).
+     - **Darud**: *Ogaden* (Rer Harun, Rer Ali, Rer Isahak), *Bartiri*, *Absgul*, *Harti* (*Mijjertein*, *Warsangeli*, *Dolbohanta* — Barkad, Farah Garad [Bah Ararsama / Mohamed Garad, Rer Khair / Abdi Garad, Rer Hagar], Mahamud Garad [Jama Siad, Nur Ahmed, Ugad Omar]).
+   - **Dir**: *Esa* and *Gadabursi*.
+   - **Sab**: *Hawiya*, *Tomal* (ironworkers), *Midgan* (hunters), *Yibir* (sorcerers/minstrels).
+4. **Eleven Prose Narratives (pp. 143–169) & Fourteen Alliterative Songs (pp. 170–183)**:
+   - **Prose**: Courtroom Complaint Dialogue (*Mashtáki ban ahai...*, pp. 143–144); Stories I–IV by *Mohammed Jibril* (Habr Toljala, Musa Abokr: I. *Habiyo Butiya*, II. *Inanki Maska Dilei*, III. *Ínanti Lugahálaeid*, IV. *Hòggi Đàrta*); Stories V–IX by *Ismail* (Habr Toljala, Rer Ahmed Farah: V. *Magàlodi Hòlaha Dadka ku ‘Una*, VI. *Nasib*, VII. *Nàgti Wanaksaneid*, VIII. *Dadku iyo Waràbuhu*, IX. *Hashu iyo Hòlaheda*); Story X *Ninki Inđahalaä (The Blind Man)* by *Ali* (Habr Yunis, Musa Arreh); Story XI by Corporal *Nur Jama* (Habr Awal) on Col. Swayne's 1900–1902 Expeditions (*Sanala, Ferdiddin, Las Idleh, Nogal Campaign, Battle of Erigo*).
+   - **Verse**: Strict single-consonant or vowel alliteration across **Songs I–X (*Gerar*)**, **Songs XI–XIII (*Gabei*)**, and **Song XIV (*Hes*)**.`,
+    examples: [
+      { somali: "Dago, Durahh hore, Durahh dambe, Rajal hore, Rajal dehhe, Rajal dambe, Sà buha, Wà barìs, Sòn (Soukad), Sòn fur, Sidatal, Arafo", english: "The 12 traditional Somali lunar months", explanation: "Kirk (1905, Appendix I, p. 135)" },
+      { somali: "rubiad-di (16a) • rubi-gi (8a) • bòlad-di (4a) • antìn-ti (2a) • gambo-di (1a) • beisad-di (2p) • ardi-di (1p)", english: "Somaliland currency denominations from 1 rupee down to 1 pie", explanation: "Kirk (1905, Appendix II, p. 136)" },
+      { somali: "Wahha inđála, ninki an oghòn lahain, ya inđala • Gèli galabta wa gùrei! Wa gèli Gobonimo!", english: "He that is blind is the man who knows nothing (Story X) • The camels marched in the evening! They are the camels of Noble Independence! (Song XIV)", explanation: "Verbatim prose moral (p. 161) and Hes chorus (p. 183) in Kirk (1905)" }
+    ]
+  },
+  {
+    id: "somali-yibir-midgan-dialects",
+    title: "7. The Yibir (Anas) & Midgan (Alowa) Guild Dialects: Ethnography, Morphology, Quinary Numerals & Comparative Lexicon (Kirk 1905, pp. 184–214)",
+    summary: "Comprehensive linguistic and ethnographic account of the Yibir (Anas-ki) and Midgan (Alowa-hi) registers: the samanyo birth/marriage tax, myth of Mohammed Hanif & Au-Bakhardli, the 14 derivatives of Midgan raghahh, descriptive compounds, base-5 Yibir numerals, and comparative vocabularies.",
+    content: `As documented in Lt. J. W. C. Kirk's *A Grammar of the Somali Language* (1905, *"The Dialects of the Outcast Tribes, Yibir and Midgan"*, pp. 184–214):
+1. **Ethnography, Rituals & the Myth of Mohammed Hanif (pp. 184–186, 197–199)**:
+   - **Three Endogamous Sab Guilds (*Tomal, Midgan, Yibir*)**:
+     - **Yibir (*Anas-ki*, Midgan *Hanan-ki*)**: Itinerant sorcerers and minstrels who collect the **samanyo-di** (or **anasnímo-di**) birth-of-a-son and marriage tax (1 rupee or 1 ewe *ilbir*) from Somali families in exchange for a protective amulet (*ghordas-ki*, Yibir *godahheđ-ki*) carved from the sacred **awaski aldibo** tree, chanting: *"Wihhi rag u kà‘ei, rabbigai ha ku sìyo, rabbigai ma bakhilo!"* ('What men have risen up to seek, may my Lord give thee; my Lord is not stint!').
+     - **Origin Myth of Mohammed Hanif & Sultan Au-Bakhardli (pp. 184, 197–199)**: Recorded verbatim in Yibir with interlinear Somali glosses: the Yibir ancestor **Mohammed Hanif** demanded *samanyo* from **Suldàn Au-Bakhardli**, who challenged him to pass through a mountain (*tomàla-hi*) three times; on the third pass Au-Bakhardli sealed him inside the hill, granting his descendants the perpetual blood-wit tax (*samanyo*) in compensation, whence the proverb: *"Ninki Anas ku đasho, gòdki Au-Bakhardli ma la tuso"* ('A man who is born a Yibir is not shown the cave of Au-Bakhardli').
+     - **Midgan (*Alowa-hi*, Yibir *Yadur-ki / Waran-ti*)**: Skilled hunters and trappers who use poisoned arrows (*fallàd-di* / Midgan *đegoyir* tipped with *wabayo*) and decoy ostriches, attaching themselves to a Somali patron (**abban-ki**).
+2. **Morphology, Polysemous Roots & Descriptive Word-Formation (pp. 186–190)**:
+   - Both registers use identical Somali grammatical inflection (definite articles *-ki/-ti*, focus particles *wa/ba/ya*, and verb conjugations) while disguising the lexical roots to keep speech secret from surrounding Somalis (*Somàli-di* = Yibir **Goried-ki**, Midgan **Àji-gi**; *Gàlo-hi* [Oromo] = Yibir **Aiyifan-ti**; *Tomàl-ki* = Yibir **Àbir-ki**, Midgan **Handud-ki**).
+   - **Polysemous Roots (pp. 188–189)**:
+     - Yibir **iftin** ('light') = sun (*iftin-ti*), moon (*iftin-ki*), money/silver (*iftimo-hi*), white (*iftin*), rice (*fil iftin*); Yibir **lawo-hi** = water, rain, river, year (*lawihi darsad* 'next year'); Midgan **nas-ki** = thing, place, time, town, person, self; Midgan **ghan** = good, big, heavy, far, white, hot, full, truth (opp. **neghatal** = bad, small, light, near, black, cold, empty).
+     - **Fourteen Derivatives of the Midgan Root *raghahh* (p. 189)**: *raghahh* ('act, do, fix'), *ku raghahh* ('catch, hold, ride'), *la raghahh* ('accompany'), *so raghahh* ('wait'), *si raghahh* ('go on'), *raghahho* ('take for oneself, marry'), *ku raghahho* ('catch for oneself'), *raghahhi* ('set, place, make; cut with *gôsad*'), *raghahhsan* ('be, exist, lie, live'), *ku raghahhsan* ('wish, have, possess'), *raghahhsano* ('look for, seek'), *ku raghahhsano* ('like, love'), *raghahhsanei* ('give'), *raghahhnin-ki* ('work').
+   - **Descriptive Compound Nouns (p. 188)**: Midgan *farolaháto* ('finger-possessor' = hand/arm), *đegoyir* ('small-eared' = arrow), *fèđolaháto* ('rib-possessor' = breast), *diboder* ('long-tailed' = Clarke's gazelle), *gesoder* ('long-horned' = oryx), *yiryiro* ('small ones' = sheep & goats), *gađlaháto* ('chin-possessor' = skin/shield), *madôbiyo* ('dark one' = liver); and Yibir wild-animal periphrases with **dálanga-hi** (*d. khábarki ghandiđsan* = lion ['roaring animal'], *d. walahúmo ku dashìya* = oryx ['animal having spears'], *d. la bilehhoda* = gerenuk ['animal that is shunned']).
+3. **The Yibir Base-5 (Quinary) Numeral System (pp. 187, 213)**:
+   - Built on **deri-gi** ('finger / one'), **gànad-di** ('hand / five'), and **gođerowi-gi** ('rosary / hundred'):
+   - **1–10**: *deri* (1), *limihi* (2), *sadehhi* (3), *aferi* (4), *gànad* (5), *gànad iyo deri* (6), *gànad iyo limihi* (7), *gànad iyo sadehhi* (8), *gànad iyo aferi* (9), *limihi gànadod* (10, 'two hands').
+   - **15–1,000**: *sadehhi gànadod* (15), *aferi gànadod* (20), *gànad gànadod* (25), *lehh gànadod* (30), *todoba gànadod* (35), *sided gànadod* (40), *sagal gànadod* (45), *toban gànadod* (50), *gođerowi-gi* (100), *tobanihi gođerowiyod* (1,000).`,
+    examples: [
+      { somali: "Somali: nin / nàg / bìyo / ‘àno / dab • Yibir: goried / asuwan / lawo / gòdib / ilohh • Midgan: yihan / asahan / gomosímo / adeisímo / bulal", english: "man / woman / water / milk / fire across Somali, Yibir (Anas), and Midgan (Alowa)", explanation: "Kirk (1905, Comparative Vocabulary, pp. 207–212)" },
+      { somali: "deri (1), limihi (2), sadehhi (3), aferi (4), gànad (5), gànad iyo deri (6), limihi gànadod (10), sadehhi gànadod (15), gođerowi-gi (100)", english: "The Yibir base-5 (quinary) numeral system based on deri ('finger') and gànad ('hand')", explanation: "Kirk (1905, pp. 187, 213)" },
+      { somali: "Suldàn Au-Bakhardli ya Anas u tegèđei, o samanyo weidistei • Ninki Anas ku đasho, gòdki Au-Bakhardli ma la tuso", english: "A Yibir went to Sultan Au-Bakhardli and asked for samanyo • A man born a Yibir is not shown the cave of Au-Bakhardli", explanation: "Opening and closing sentences of the Yibir Story of Mohammed Hanif (Kirk 1905, pp. 197, 199)" }
     ]
   }
 ];
@@ -38526,71 +38732,91 @@ export const BORANA_CONFIG: LanguageConfig = {
 export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-1",
-    "title": "Unit 1: Nagaa Borana Greetings, Cushitic Cases, Numerals & Tutschek (1844–1845) Prayers",
-    "description": "Master Afaan Borana greetings (Akkam jirta? / Nagaa!), Nominative vs.",
+    "title": "Unit 1: Nagaa Borana Greetings, Cushitic Cases, Numerals, 3 Conjugations & Tutschek (1845) Prayers",
+    "description": "Master Afaan Borana greetings (Akkam jirta? / Nagaa!), Nominative vs. Accusative cases, Cardinals/Ordinals (-tiana), Social Numerals (-anu), Amole salt-bar fractions, 8 Derived Verbal Forms, 3 Conjugations, 5 Particle Modes, 4 Negative Verbs, and Verbatim 1840–1845 Prayers & Letters.",
     "icon": "BookOpen",
     "skills": [
       {
         "id": "borana-greetings-nouns",
-        "title": "Greetings, Nagaa (Peace), Kinship & Tutschek (1845) Prayers",
+        "title": "Greetings, Nagaa (Peace), Kinship, Cases & Tutschek (1845) Prayers & Letters",
         "icon": "Handshake",
-        "description": "Learn Afaan Borana greetings, pronouns, core nouns, and verbatim prayers from the 1842–1845 corpus.",
-        "tips": "In Afaan Borana (Tutschek 1845, §§ 183–191, pp. 55–57), the Accusative/Absolutive is the citation form (nama 'person', lafa 'earth', muka 'tree', boka 'rain'), while grammatical subjects take Nominative suffixes (namni, lafti, mukni, bokeñi).",
-        "culturalNote": "In Karl & Lawrence Tutschek's 1845 Grammar (pp. 84–91), three prayers (Prayer after the War of Hambo and Hamaya, Morning Prayer, and Evening Prayer) and two 1840 letters between Otshu Aga and Akafed'e Dalle preserve authentic 19th-century Oromo/Borana devotion to Waaqa (Wacayo) and Nagaa (Peace).",
+        "description": "Learn Afaan Borana greetings, pronouns, Nominative case formations (-n, -i, -fni, -ti, -ñi), and verbatim prayers and letters from the 1842–1845 corpus.",
+        "tips": "In Afaan Borana (Tutschek 1845, §§ 177–195, pp. 54–57), collective nouns (dargago, mangudo, hatu, hidjole) govern a 3rd person feminine singular verb, and the Accusative/Absolutive is the citation form (nama 'person', lafa 'earth', muka 'tree', boka 'rain', kaniza 'bee', barziza 'teacher', gawa 'hole'), while grammatical subjects take Nominative suffixes (namni, lafti, mukni, bokeñi, kanifni, barzifni, gofni).",
+        "culturalNote": "In Charles & Lawrence Tutschek's 1845 Grammar (pp. 84–91, translated by M. J. Smead), three native prayers (Akafed'e's 16-verse Prayer after the War of Hambo and Hamaya, Morning Prayer, and Evening Prayer) and two October 1840 Munich letters between Otshu Aga (of Sibu) and Akafed'e Dalle (of Hambo), alongside Aman Gonda (of Goma), preserve authentic 19th-century Oromo/Borana devotion to Waaqa (Wacayo) and Nagaa (Peace).",
         "words": [
           {
-            "target": "Akkam jirta? / Naga, naga! Fayaketi!",
-            "source": "How are you? / Peace, peace! Thy health!",
-            "pronunciation": "akkam jirta / na-ga na-ga fa-ya-ke-ti",
-            "hint": "Tutschek (1845, p. 88, Aga’s Letter) & Borana salutation"
+            "target": "Akkam jirta? / Naga, naga! Fayaketi! / Ati naga olte had'a?",
+            "source": "How are you? / Peace, peace! Thy health! / Hast thou passed this day in peace?",
+            "pronunciation": "akkam jirta / na-ga na-ga fa-ya-ke-ti / a-ti na-ga ol-te ha-d'a",
+            "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
-            "target": "Galatoomi / Wacayon iza ha tolu",
-            "source": "Thank you / May God do good to him",
-            "pronunciation": "ga-la-too-mi / wa-ca-yon iza ha to-lu",
-            "hint": "Tutschek (1845, p. 90, Akafed’e’s Letter)"
+            "target": "Galatoomi / Wacayon iza ha tolu / Nagaiti buli! / Nagan hafi hama nu wal agaruti!",
+            "source": "Thank you / May God do good to him / Good night! / Rest in peace until we meet again!",
+            "pronunciation": "ga-la-too-mi / wa-ca-yon iza ha to-lu / na-gai-ti bu-li / na-gan ha-fi",
+            "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
-            "target": "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
-            "source": "Person / Man / Woman, wife",
-            "pronunciation": "na-ma / dhii-ra / du-bartii",
-            "hint": "Tutschek (1845, §§ 184, 191, 231) & Krapf (1842)"
+            "target": "nama (nom. namni) / dhiira (d'ira, nom. d'irri) / dubartii (niti) / mangudo & dargago",
+            "source": "Person / Man / Woman, wife / Elders & Youth (collective fem. sg.)",
+            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
-            "target": "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)",
-            "source": "Father / Mother / Child (pl. collective children)",
-            "pronunciation": "abbaa / haadha / mutsha",
-            "hint": "Tutschek (1845, §§ 180, 184, 186)"
+            "target": "abbaa (nom. aban, voc. abo/abe) / haadha (had'a, nom. had'i, voc. had'o/had'e) / mutsha (pl. hidjole)",
+            "source": "Father (my/thy father) / Mother (my/thy mother) / Child (pl. collective children)",
+            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
-            "target": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati)",
+            "target": "kaniza (nom. kanifni) / barziza (nom. barzifni) / gawa (nom. gofni) / lafa (nom. lafti) / boka (nom. bokeñi)",
+            "source": "Bee / Teacher / Hole (-fni Nominative) / Earth (-ti) / Rain (-ñi)",
+            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "hint": "Tutschek (1845, § 184, pp. 55–56)"
+          },
+          {
+            "target": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati, nom. batin)",
             "source": "Water / Fire / Sun / Moon",
             "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
-            "target": "loon (godiyo) / gaala / reeʿ (pl. rooda / rooni) / farda (pl. faratoni)",
-            "source": "Cattle / Camel / Goat / Horse",
-            "pronunciation": "loon / gaa-la / ree' / farda",
-            "hint": "Tutschek (1845, §§ 181–182, p. 86)"
+            "target": "loon (godiyo) / gaala / reeʿ (pl. rooda / rooni) / farda (pl. faratoni d'êd'ti)",
+            "source": "Cattle / Camel / Goat / Horse (the horses graze — fem. sg. concord)",
+            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
-            "target": "Ya Waca nagan na bultshite nagan na oltshi",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace (Morning Prayer)",
+            "target": "Ya Waca nagan na bultshite nagan na oltshi ... milkiko na gadyêlzi!",
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace ... lead my steps! (Morning Prayer)",
             "pronunciation": "ya wa-ca na-gan na bultshi-te na-gan na oltshi",
-            "hint": "Tutschek (1845, p. 87, Morning Prayer)"
+            "hint": "Tutschek (1845, pp. 87–88, Morning Prayer)"
+          },
+          {
+            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai!",
+            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune, my Lord, be thou my shadow! (Prayer 1 vv. 1–2)",
+            "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko ... ga-di-za na tai",
+            "hint": "Tutschek (1845, p. 84, Akafed'e's Prayer after the Hambo–Hamaya War)"
           },
           {
             "target": "D'ad'an ibidti bue hindebiu",
-            "source": "Butter fallen into the fire comes not back (Proverb in Akafed'e's Letter)",
+            "source": "Butter fallen into the fire comes not back (Proverb in Akafed'e's Letter of Oct. 21, 1840)",
             "pronunciation": "d'ad'an i-bidti bue hinde-biu",
             "hint": "Tutschek (1845, p. 90, Letter 5)"
           }
         ],
         "sentences": [
           {
-            "target": "Ya Waca nagan na bultshite nagan na oltshi.",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace (Tutschek 1845, p. 87)."
+            "target": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi.",
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me, O God, lead my steps (Tutschek 1845, pp. 87–88)."
+          },
+          {
+            "target": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
+            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou my father (Tutschek 1845, p. 88)."
+          },
+          {
+            "target": "Wara Hambo fi wara Hamaya waliti ararzi, goftako! Lola biyakeña baza, naga biyakeñati debizi!",
+            "source": "Reconcile the people of Hambo and the people of Hamaya with one another, my Lord! Drive war out of our country, bring peace back to our country! (Tutschek 1845, p. 86, Prayer 1 vv. 12–13)."
           },
           {
             "target": "D'ad'an ibidti bue hindebiu.",
@@ -38624,15 +38850,15 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"nama (nom. namni) / dhiira (d'ira) / dubartii (niti)\" in Borana?",
-            "correctAnswer": "Person / Man / Woman, wife",
+            "prompt": "How do nouns in -iza / -awa (such as kaniza 'bee', barziza 'teacher', gawa 'hole') form their Nominative in Tutschek (1845, § 184)?",
+            "correctAnswer": "By changing the ending to -fni (kanifni, barzifni, gofni)",
             "options": [
-              "Father / Mother / Child (pl. collective children)",
-              "Person / Man / Woman, wife",
-              "How are you? / Peace, peace! Thy health!",
-              "Thank you / May God do good to him"
+              "By changing the ending to -fni (kanifni, barzifni, gofni)",
+              "By prefixing m- to the root",
+              "By dropping the first syllable",
+              "By adding -tiana to the root"
             ],
-            "hint": "Tutschek (1845, §§ 184, 191, 231) & Krapf (1842)"
+            "hint": "Tutschek (1845, § 184.2, p. 55)"
           },
           {
             "type": "multiple_choice",
@@ -38697,79 +38923,79 @@ export const BORANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "borana-numbers-verbs",
-        "title": "Numerals, Ordinals (-tiana), Amole Fractions & 8 Verbal Forms",
+        "title": "Numerals, Ordinals (-tiana), 21 Social Numbers (-anu), Amole Fractions, 8 Verbal Forms & 3 Conjugations",
         "icon": "Hash",
-        "description": "Count in Afaan Borana and master Tutschek’s (1845) ordinals, social numbers, salt-bar fractions, and 8 derived verb stems.",
-        "tips": "Tutschek (1845, §§ 201–215, pp. 58–63) documents cardinals 1–100,000, ordinals formed with -tiana (tokotiana '2nd', lamatiana '3rd', while '1st' is ini dura or hangafa), social numbers in -anu (latshanu '2 together', zadanu '3 together', arfanu '4 together'), and fractions of the amole salt-bar: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele (1/8).",
+        "description": "Count in Afaan Borana and master Tutschek’s (1845) ordinals, 21 social numbers, 4 salt-bar fractions, 8 derived verb stems, 3 conjugations, 5 particle modes, and 4 negative verbs.",
+        "tips": "Tutschek (1845, §§ 38–176, 201–215, pp. 9–53, 58–63) documents cardinals 1–100,000, ordinals in -tiana (tokotiana '2nd', lamatiana '3rd', while '1st' is ini dura or hangafa, opposed to gudiru 'youngest' & ini boda 'last'), 21 social numbers in -anu (latshanu '2 together' ... kumatanu '1,000 together' + ladz'u 'both'), 4 amole fractions: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele/gadele (1/8), 3 conjugations (adema, tshiza, tà/boa), 5 particle modes (-re, -mi, -ti, -yi, -ni), and 4 negative verbs (dida, bad'a, d'aba, ola).",
         "words": [
           {
-            "target": "tokko (toko)",
-            "source": "One (1)",
+            "target": "tokko (toko, 1), lama (2), sadii (zadi, 3), afur (afuri, 4), shan (z'ani, 5)",
+            "source": "Cardinals 1 to 5",
             "pronunciation": "tokko la-ma sa-dii a-fur shan",
             "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
           },
           {
-            "target": "lama",
-            "source": "Two (2)",
-            "pronunciation": "tokko la-ma sa-dii a-fur shan",
-            "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
-          },
-          {
-            "target": "sadii (zadi)",
-            "source": "Three (3)",
-            "pronunciation": "tokko la-ma sa-dii a-fur shan",
-            "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
-          },
-          {
-            "target": "ja'a (dya)",
-            "source": "Six (6)",
+            "target": "ja'a (dya, 6), torba (7; torban = week), saddeet (zadeta, 8), sagal (zagala, 9), kudhan (kudani, 10; kurna = 10-day period)",
+            "source": "Cardinals 6 to 10 (plus 7-day week & 10-day decade)",
             "pronunciation": "ja'a torba saddeet sa-gal kudhan",
             "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
           },
           {
-            "target": "torba (torban = week)",
-            "source": "Seven (7)",
-            "pronunciation": "ja'a torba saddeet sa-gal kudhan",
-            "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
+            "target": "kudatoko (11), kudalama (12) ... kudazadedᵃ (18), kudazagalᵃ (19)",
+            "source": "Cardinals 11 to 19",
+            "pronunciation": "ku-da-to-ko ... ku-da-za-gal",
+            "hint": "Tutschek (1845, §§ 7, 202, pp. 3, 59)"
           },
           {
-            "target": "saddeet (zadeta)",
-            "source": "Eight (8)",
-            "pronunciation": "ja'a torba saddeet sa-gal kudhan",
-            "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
-          },
-          {
-            "target": "digdama (digetama = 20), sodoma (zodoma = 30), dhibba (d'iba = 100), kuma (1,000), kuntuma (100,000)",
-            "source": "20, 30, 100, 1,000, 100,000",
+            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60), torbatama (70), zadettama (80), zagaltama (90), d'iba (100), kuma (1,000), kuntuma (100,000)",
+            "source": "20 to 90, 100, 1,000, and 100,000 ('a fist-full of thousands')",
             "pronunciation": "digda-ma so-do-ma dhibba ku-ma kuntu-ma",
             "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
           },
           {
-            "target": "ini dura / hangafa (1st), tokotiana (2nd), lamatiana (3rd), zaditiana (4th)",
-            "source": "First (first-born), Second, Third, Fourth",
+            "target": "ini dura / hangafa (1st, opp. gudiru 'youngest' & ini boda 'last'), tokotiana (2nd), lamatiana (3rd), zaditiana (4th) ... kudanitiana / kurnatiana (11th)",
+            "source": "Ordinals 1st to 11th (-tiana = 'hanging on')",
             "pronunciation": "ini du-ra / hanga-fa to-ko-tia-na la-ma-tia-na za-di-tia-na",
             "hint": "Tutschek (1845, §§ 207–208, pp. 60–61)"
           },
           {
-            "target": "latshanu (2 together), zadanu (3 together), arfanu (4 together); ladz'u (both)",
-            "source": "Social numerals: two, three, four together; both",
-            "pronunciation": "latsha-nu za-da-nu arfa-nu",
+            "target": "latshanu (2), zadanu (3), arfanu (4), z'ananu (5), dyanu (6), torbanu (7), zadetanu (8), zagaltanu (9), kurnanu (10) ... d'ibatanu (100), kumatanu (1,000); ladz'u (both)",
+            "source": "All 21 social numerals (-anu = 'together') & ladz'u ('both')",
+            "pronunciation": "latsha-nu za-da-nu arfa-nu kur-na-nu lad-z'u",
             "hint": "Tutschek (1845, §§ 209–210, p. 61)"
           },
           {
-            "target": "amole: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele (1/8)",
-            "source": "Salt-bar currency & its fractions: 1/2, 1/4, 3/4, 1/8",
+            "target": "amole: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
+            "source": "Salt-bar currency & its 4 fractions: 1/2, 1/4, 3/4, 1/8",
             "pronunciation": "a-mo-le tchabna-na karma-na gi-maz'i ge-de-le",
             "hint": "Tutschek (1845, § 212, p. 62)"
           },
           {
-            "target": "bâ → bad'a → baza → bafad'a → baziza → bazifad'a → baziziza → bazizifad'a",
-            "source": "The 8 derived verbal forms of bâ (go out → middle → causative → middle-causative)",
-            "pronunciation": "ba → bad'a → ba-za → ba-fad'a → ba-zi-za → ba-zi-fad'a → ba-zi-zi-za → ba-zi-zi-fad'a",
-            "hint": "Tutschek (1845, § 44, p. 11)"
+            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at once), lafa dyala (at first) | diriba, datchâ, lamefad'a, zadifad'a, afurifad'a, z'anifad'a",
+            "source": "Numeral adverbs & numeral verbs (double; do for the 2nd, 3rd, 4th, 5th time)",
+            "pronunciation": "ga-fa-to-ko / di-ri-ba / la-me-fad'a",
+            "hint": "Tutschek (1845, §§ 213–215, pp. 62–63)"
           },
           {
-            "target": "dida (refuse) / bad'a (neglect) / d'aba (lack power) / ola (pass by)",
+            "target": "bâ → bad'a → baza → bafad'a → baziza → bazifad'a → baziziza → bazizifad'a (+ pass. -ama, inchoat. -oma)",
+            "source": "The 8 derived verbal forms of bâ (go out → middle → causative → middle-causative)",
+            "pronunciation": "ba → bad'a → ba-za → ba-fad'a → ba-zi-za → ba-zi-fad'a → ba-zi-zi-za → ba-zi-zi-fad'a",
+            "hint": "Tutschek (1845, §§ 44–50, 98, 105, pp. 11–12, 28, 30)"
+          },
+          {
+            "target": "Conj. I: adema, ademta, ademna | Conj. II: tshiza, tshifta, tshifna | Conj. III: tà, teza, teña (boa, boza, boña)",
+            "source": "The 3 Verbal Conjugations (1s, 2s, 1p Present Indicative)",
+            "pronunciation": "a-de-ma / tshi-za tshif-ta / ta te-za te-nya",
+            "hint": "Tutschek (1845, §§ 132–135, pp. 38–42)"
+          },
+          {
+            "target": "Modes: -u (subj.), -re (interrog.), -mi (nonne), -ti (until), -yi (while), -ni (without)",
+            "source": "Subjunctive in -u & the 5 affixed particle modes",
+            "pronunciation": "-u / -re / -mi / -ti / -yi / -ni",
+            "hint": "Tutschek (1845, §§ 113–119, pp. 32–34)"
+          },
+          {
+            "target": "dida (refuse: oad'z'udide) / bad'a (neglect: oad'z'ubad'te) / d'aba (lack power: oad'z'u d'abe) / ola (pass by / fail)",
             "source": "The 4 negative auxiliary verbs in Galla/Borana",
             "pronunciation": "di-da / bad'a / d'a-ba / ola",
             "hint": "Tutschek (1845, § 176, pp. 52–53)"
@@ -38783,24 +39009,32 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Wacayo mid'an magarziza.",
             "source": "God causes the grain to grow (Tutschek 1845, § 84, p. 22)."
+          },
+          {
+            "target": "Oto izan homa hiñad'ini galani.",
+            "source": "They went home without having eaten anything (Tutschek 1845, § 119, p. 34)."
+          },
+          {
+            "target": "Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi? — Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe.",
+            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it weeps; its belly aches, therefore it weeps (Tutschek 1845, § 255, p. 83)."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"tokko (toko), lama, sadii (zadi), afur (afuri), shan (z'ani)\" in Borana?",
-            "correctAnswer": "1, 2, 3, 4, 5",
+            "prompt": "What are the 4 fractions of the amole salt-bar currency in Tutschek (1845, § 212, p. 62)?",
+            "correctAnswer": "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
             "options": [
-              "6, 7, 8, 9, 10",
-              "20, 30, 100, 1,000, 100,000",
-              "First (first-born), Second, Third, Fourth",
-              "1, 2, 3, 4, 5"
+              "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
+              "toko (1), lama (2), zadi (3), afuri (4)",
+              "dida, bad'a, d'aba, ola",
+              "-re, -mi, -ti, -yi, -ni"
             ],
-            "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
+            "hint": "Tutschek (1845, § 212, p. 62)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"digdama (digetama = 20), sodoma (zodoma = 30), dhibba (d'iba = 100), kuma (1,000), kuntuma (100,000)\" in Borana?",
+            "prompt": "What is the English meaning of \"digetama (20), zodoma (30), d'iba (100), kuma (1,000), kuntuma (100,000)\" in Borana?",
             "correctAnswer": "20, 30, 100, 1,000, 100,000",
             "options": [
               "First (first-born), Second, Third, Fourth",
@@ -38812,7 +39046,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Borana expression with its English meaning:",
+            "prompt": "Match each Borana grammatical or numeral series with its English meaning:",
             "correctAnswer": "tokko (toko), lama, sadii (zadi), afur (afuri), shan (z'ani): 1, 2, 3, 4, 5",
             "pairs": [
               {
@@ -41929,52 +42163,243 @@ export const BORANA_UNITS: CourseUnit[] = [
 
 export const BORANA_GRAMMAR_SECTIONS: GrammarSection[] = [
   {
-    id: 'borana-tutschek-1845-grammar',
-    title: '30-Letter Phonology, 8 Derived Verbal Forms, 3 Conjugations, 6 Modes & 4 Negative Verbs (Tutschek 1845)',
-    summary: 'Karl & Lawrence Tutschek’s 1845 Grammar of the Galla Language codifies the 30-character sound system, 8-link verbal derivation chain, 3 conjugations, 6 modal suffixes, and 3 negation mechanisms.',
-    content: `From Karl & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, §§ 1–176, pp. 1–53):
-1. **Phonology & T-Sound Contrast (§§ 1–37, pp. 1–9)**:
-   - Distinguishes 4 dental/palatal/implosive T-sounds (**t, t', d, d'**) illustrated by the minimal quintuplet (§ 21): **duta** (thou diest, from *dua*), **duda** (deaf), **d'ud'ã** (I devour), **tuta** (crowd/heap), **t'ut'a** (I smoke), plus palatal **c/q** vs. **k** vs. **g** (**caca** 'soot', **gaga** 'wax', **kaka** 'oath').
-2. **Eight Derived Verbal Forms (§§ 43–110, pp. 10–32)**:
-   - **I. Root**: *bâ* (go out), *bua* (descend), *mara* (turn), *gala* (go home).
-   - **II. Middle (-ad'a)**: *bad'a*, *buad'a*, *marad'a*, *galad'a* (do for oneself).
-   - **III. Causative (-za / -ziza / -tsha / -eza)**: *baza* (drive out/forgive/pay), *buza* (overthrow), *marza*, *galtsha* (bring home). Seven liquid-stem verbs (§ 83) undergo consonant metathesis: *arga → 2s argita/agarta → III agarziza* (show), *elma → elemziza* (milk), *kolfa → kofalziza* (laugh), *darba → dabarza* (pass), *falma → falamziza* (dispute), *marga → magarza* (grow), *zirba → ziribziza* (dance).
-   - **IV. Causative-Middle (-fad'a)**: *bafad'a*, *bufad'a* (lie down), *marfad'a*, *galfad'a*.
-   - **V–VIII. Double/Triple Causatives & Middles**: *baziza → bazifad'a → baziziza → bazizifad'a*.
-   - **IX. Passive (-ama)** & **Deadjectival Inchoative (-oma)**: *caba → cabama*, *mara → marfama*; *gari → garoma* (become fair), *tola → toloma* (become good), *hieza → hioma* (become poor), *dula → duloma* (grow old).
-3. **Three Conjugations, Four Tenses & Six Modal Constructions (§§ 111–156, pp. 32–47)**:
-   - **Conjugation I** (*adema, 2s ademta*), **Conjugation II** (*tshiza, 2s tshifta*; *lakã, 2s lakofta*), **Conjugation III** (*tà, 2s teza, 1p teña*; *boa, 2s boza, 1p boña*).
-   - **Four Tenses**: Present (*adema*), I Preterit/Aorist (*ademe*), II Preterit/Perfect (*ademera = ademe dyira*), Future (*ademufandyira*, plus 4 proximate future degrees with *gà*: *d'ufu gaufdyira, d'ufu gà, d'ufu gae, d'ufu gaera*).
-   - **Subjunctive in -u & Five Affixed Particle Modes**: **-re** (affirmative interrogative: *malif ani zi egare?*), **-mi** (negative interrogative *nonne*: *ani zin djenemi?*), **-ti** (with *hama/aka*: *t'uri haman ani d'ufuti*), **-yi** (with *oto* 'while': *oto ati muka dyala tezuyi*), **-ni** (with *oto* + negative 'without': *oto izan homa hiñad'ini galani*).
-4. **Three Negation Mechanisms (§§ 173–176, pp. 51–53)**:
-   - **(a) Verbal prefix *hin-* (*n'*)**: Present in *-u* (*ani hintchabzu*), Preterit in *-ne/-ine* (*ani hintchabzine*), Imperative in *hin-...-in* (*hindubad'in*).
-   - **(b) Nominal/Adjectival copula negative *-miti***: *ani ilmakemiti* (am I not thy son?), *ini garimiti* (he is not handsome).
-   - **(c) Four Negative Auxiliary Verbs**: *ini oad'z'udide* (he refused to answer), *ini oad'z'ubad'te* (he neglected/forgot to answer), *ini oad'z'u d'abe* (he was unable to answer), and *ola* (pass by / fail to keep).`,
+    id: 'borana-tutschek-1845-phonology',
+    title: 'Preface, 30-Letter Alphabet, Additional Sounds, Contractions, Breath-Short Vowels & Consonant Assimilations (Tutschek 1845, pp. V–VIII, §§ 1–37)',
+    summary: 'Charles & Lawrence Tutschek’s 1845 Grammar (translated from German by M. J. Smead of Richmond, Virginia; dedicated to Sir Thomas Dyke Acland Bart.) codifies the 30-character Galla/Borana sound system, 5 additional phonetic symbols, 3 vowel contractions, 6 breath-short vowels, 4 T-sounds, and dialectal variations across Sibu (Aga), Goma (Aman), and Hambo (Akafed’e).',
+    content: `From Charles Tutschek, edited by Lawrence Tutschek, M.D. (*A Grammar of the Galla Language*, Munich, printed by Dr. Franz Wild, 1845, pp. V–VIII & §§ 1–37, pp. 1–9):
+1. **Preface & Informants (pp. V–VIII)**:
+   - Translated from German by Mr. M. J. Smead of Richmond, Virginia (Preface dated Munich, February 1845). Charles Tutschek completed the sections on **Verbs, Numeral Adjectives, and Pronouns** before his death; Lawrence Tutschek supplied **Negation, Nouns, Adjectives, and Particles** from Charles’s January 2, 1841 communication to the Royal Academy of Sciences in Munich.
+   - **Three Primary Native Speakers**: **Aga** (*Otshu Aga*, from *Sibu*), **Aman** (from *Goma*), and **Akafed'e** (*Akafed'e Dalle*, from *Hambo*).
+2. **The 30-Letter Alphabet & 5 Additional Sounds (§§ 1–4, pp. 1–2)**:
+   - **30 Characters**: **1.** *a, â, ã, à* | **2.** *e, ê* | **3.** *i* | **4.** *o* | **5.** *u* | **6.** *k* | **7.** *c* resp. *q* | **8.** *g* | **9.** *tch* | **10.** *tsh* | **11.** *dj* | **12.** *dy* | **13.** *t* | **14.** *t'* | **15.** *d* | **16.** *d'* | **17.** *f* | **18.** *b* | **19.** *y* | **20.** *w* | **21.** *r* | **22.** *l* | **23.** *m* | **24.** *n* | **25.** *ñ* | **26.** *z* | **27.** *ç* | **28.** *z'* | **29.** *h* | **30.** *ʿ* (soft breathing).
+   - **Additional Sounds (§ 4)**: (a) **tsh** (*tch* with gentler sibilance); (b) Slavonic **ł** (pronounced with tongue tip against upper teeth); (c) Goma nasal **˜** before *z* or *g* (Aman: **qile˜za** for *qilenza* 'wind', **ma˜gaga** for *mangaga* 'jaw'); (d) breathless dental **t** (between teeth without escaping air); (e) **p / bb** (no native *p*, though *b* hardens in some words).
+3. **Vowels, Contractions, Breath-Short Superscripts & Diphthongs (§§ 5–10, pp. 2–4)**:
+   - **Three Long-A Contractions (§ 5)**: **aa → â** (**bâ** < *baa* 'I go out', **gâ** < *gaa* 'I arrive'); **awa → ã** (**lakã** < *lakawa* 'I count'); **aya → à** (**tà** < *taya* 'I sit').
+   - **Breath-Short Final Vowels (§§ 6–7)**: **Wacᵃ** (heaven/God), **zogitᵃ** (salt), **Akafedᵉ** (proper name), **torbanⁱ** (7), **tokᵒ** (1), **Sibᵘ** (Galla country). Before suffixes they recover full vowel value (*Wacayo, zogita, tokotiana*) or drop before consonantal suffixes (**kudazagalᵃ** '19' → **kudazagalnu** '19 together').
+   - **Closed *e* vs. Open *ê* (§ 8)**: closed *e* in **beka** ('I know'), **teza** ('thou sittest') vs. open *ê* in **mêka** ('how much?'), **rêfa** ('dead body').
+   - **Diphthong (§ 10)**: Only **wau** ('no') is a true diphthong; *bai, tau, himboin, himbuin* are grammatical diphthongs formed across morpheme boundaries.
+4. **Consonant Contrasts, Dialect Shifts & Euphonic Assimilations (§§ 11–37, pp. 4–9)**:
+   - **Palatal *c/q* vs. *g* vs. *k* (§§ 11–15)**: **caca** ('soot') vs. **gaga** ('wax') vs. **kaka** (root of **kakad'a** 'I swear'); **dan-ga** ('nourishment'); Sibu assimilates **gm → mm** (**damma** < **dagma** 'honey', Gen. *damma* for *dagma*); Akafed'e softens **k → ch** before *t/n* (**ani beka, ati bechta, nu bechna**); **c/q + t → cht** (**d'ica** 'wash' → 2s **d'ichta**); **k/c + n → gn** (**bekna → begna**, **d'icna → d'igna**).
+   - **Palatal Affricates & Sibilants (§§ 16–19, 32–35)**: **tch** (voiceless, Italian *c* in *cento*), **dj** (voiced, English *j*), **dy** (soft dental palatal; after *d'* passes into **d'z'**: **d'êd'a** 'graze' → III **d'êd'z'iza** 'feed cattle'), **z** (soft French *z*; passes into *f* before *t, n*: **tshiza** 'lie' → 2s **tshifta**, 1p **tshifna**), **ç** (sharper sibilant, distinct from *tsh*: **tshaba** 'piece of salt' vs. **çaba** 'to become slippery'), **z'** (English *sh* / French *ch*; passes into *f* in **baz'a** 'be merry' → III **bafza** 'make merry').
+   - **The Four T-Sounds (*t, t', d, d'*) & Minimal Quintuplet (§§ 20–21, pp. 6–7)**:
+     - **t** (voiceless dental) | **t'** (lingual/ejective palatal with snap) | **d** (voiced dental) | **d'** (implosive/lingual palatal with sighing breathing).
+     - Before 2s *-ta*: **fida → fidta** (bring), **ñad'a → ñad'ta** (eat), **fit'a → fit'ta** (finish), **kuta → kutta** (cut).
+     - Before 1p *-na*: *d, t, d'* drop (**fuda → funa** 'we take', **kuta → kuna** 'we cut', **ñad'a → ñana** 'we eat'), whereas **t' is preserved** (**fit'a → fit'na** 'we finish', **t'ut'a → t'ut'na** 'we smoke').
+     - Contrasts: **t'ife** ('blue'), **dina** ('enemy'), **eda** ('because'), **d'ufa** ('I come'), **mid'an** ('grain'), and the minimal quintuplet (§ 21): **duta** (2s of *dua* 'die'), **duda** ('deaf'), **d'ud'ã** ('I devour'), **tuta** ('crowd/heap'), **t'ut'a** ('I smoke').
+   - **Labials, Liquids, Nasals & Breathing *ʿ* (§§ 22–31, 36–37, pp. 7–9)**:
+     - Medial **b ~ v** (**d'abe / d'ave** 'he did not find') and **bn ~ mn** (**tchabnani / tchamnani** from *tchaba* 'break'); **w** vocalizes to *o* before *t, n* (**lakã < lakawa → 2s lakofta, 1p lakofna**; **rawad'a** 'finish'); **y** contracts to *à* or passes into *z/ñ* (**tà < taya → 2s teza, 1p teña**; **kà < kaya → II kayad'a** 'put down for oneself').
+     - **Liquid & Nasal Assimilations**: **ln → ll** (**ilala → 1p ilalla** 'we look'), **rn → rr** (**bara → 1p barra** 'we learn'), **nb → mb** (**hinbeku → himbeku**), **nw → w** (**hinwadu → hiwadu**), **nr → rr** (**hinrafu → hirrafu**), **nl → ll** (**hinlalu → hillalu**), **nm → mm** (**hinmaru → himmaru**); **ñ** (Spanish *ñ*: **ñad'a** 'eat', **teña** 'we sit').
+     - **Soft Breathing *ʿ* (§ 37)**: Prevents hiatus and marks elided consonants (**harʿa** < *hard'a* 'to-day', **qileʿ** 'deep', **reeʿ** 'goat').`,
     examples: [
-      { borana: 'bâ → bad\'a → baza → bafad\'a → baziza → bazifad\'a → baziziza → bazizifad\'a', english: 'go out → for oneself → drive out → drive out for oneself → cause to drive out...', explanation: 'Tutschek (1845, § 44, p. 11) 8-link verbal derivation chain' },
-      { borana: 'ini oad\'z\'udide • ini oad\'z\'ubad\'te • ini oad\'z\'u d\'abe', english: 'he refused to answer • he neglected to answer • he was unable to answer', explanation: 'Tutschek (1845, § 176, p. 53) three-way negative auxiliary distinction' }
+      { borana: 'duta • duda • d\'ud\'ã • tuta • t\'ut\'a | caca • gaga • kaka', english: 'thou diest • deaf • I devour • crowd • I smoke | soot • wax • oath', explanation: 'Tutschek (1845, §§ 12, 21, pp. 4, 7) minimal quintuplet and velar/palatal triad' },
+      { borana: 'bâ (< baa) • lakã (< lakawa) • tà (< taya) | Wacᵃ • zogitᵃ • Akafedᵉ • torbanⁱ • tokᵒ • Sibᵘ', english: 'go out • count • sit | heaven/God • salt • Akafed\'e • seven • one • Sibu', explanation: 'Tutschek (1845, §§ 5–7, pp. 2–3) three long-a contractions & six breath-short final vowels' },
+      { borana: 'qile˜za (qilenza) • ma˜gaga (mangaga) • damma (< dagma) • ati bechta, nu bechna', english: 'wind (Goma) • jaw (Goma) • honey (Sibu) • thou knowest, we know (Hambo)', explanation: 'Tutschek (1845, §§ 4, 14–15, pp. 2, 5) Goma, Sibu & Hambo dialectal phonology' }
     ]
   },
   {
-    id: 'borana-nouns-numerals-pronouns-1845',
-    title: 'Collective Feminine Nouns, Cases, Ordinals (-tiana), Social Numerals (-anu), Amole Fractions & Pronouns (Tutschek 1845)',
-    summary: 'Chapter II of Tutschek (1845, pp. 54–81) details collective feminine agreement, Accusative-first declension, numerals, amole salt-bar fractions, and emphatic/reflexive/reciprocal pronouns.',
-    content: `From Karl & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, §§ 177–255, pp. 54–83):
-1. **Collective Feminine Agreement & Declension (§§ 177–191, pp. 54–57)**:
-   - Collective nouns (**dargago** 'youth', **mangudo** 'judge/elders', **hatu** 'thief', **hidjole** 'children') and plural nouns (*faratoni d'êd'ti* 'the horses graze') govern 3rd person feminine singular verbs unless individualized by *toko* or singulative suffixes (**-eza, -itsha / -iti, -tu / -titi**).
-   - The **Accusative/Absolutive** is the unmarked base form (*mut'ut'e, bati, ramo, adu, lafa, muka, boka*); the **Nominative** suffixes **-n, -i, -fni** (for nouns in *-iza/-awa*: *kaniza → kanifni* 'bee', *barziza → barzifni* 'teacher', *gawa → gofni* 'hole'), or **-ti / -ni** (*lafa → lafti*, *muka → mukni*, *boka → bokeñi*).
-2. **Numerals, Ordinals, Social Numbers & Amole Fractions (§§ 201–215, pp. 58–63)**:
-   - **Cardinals**: *toko* (1), *lama* (2), *zadi* (3), *afuri* (4), *z'ani* (5), *dya* (6), *torba* (7; *torban* = week), *zadeta* (8), *zagala* (9), *kudani* (10; *kurna* = decade / 10-day period), *digetama* (20), *zodoma* (30), *afurtama* (40) ... *d'iba* (100), *kuma* (1,000), *kuntuma* (100,000).
-   - **Ordinals**: 1st *ini dura* or *hangafa* (first-born/best, opposite to *gudiru* youngest child and *ini boda* last); 2nd *tokotiana*, 3rd *lamatiana*, 4th *zaditiana*, 5th *afuritiana*, etc. (from *-ti* + *ana* 'hang on').
-   - **Social Numerals (-anu)**: *latshanu* (2 together), *zadanu* (3 together), *arfanu* (4 together), *z'ananu* (5 together), *kurnanu* (10 together); *ladz'u* (both).
-   - **Amole Salt-Bar Fractions (§ 212, p. 62)**: **tchabnana** ($\frac{1}{2}$), **karmana** ($\frac{1}{4}$), **gimaz'i** ($\frac{3}{4}$), **gedele / gadele** ($\frac{1}{8}$).
-3. **Pronouns (§§ 216–251, pp. 63–81)**:
-   - **Personal (Nom. | Acc. | Emphatic -tu)**: 1s *ani | ana, na | anatu*; 2s *ati | zi | zitu*; 3sm *ini | iza | izatu*; 3sf *iz'in | iz'i | iz'itu*; 1p *nu (unu) | nutu*; 2p *izin | izintu*; 3p *izan | izantu* (Emphatic *-tu* takes 3s verb: *zitu beka* 'thou knowest').
-   - **Affixed Possessives**: *-ko* (my), *-ke* (thy), *-za* (his), *-z'i* (her), *-keña* (our), *-kezani* (your), *-zani* (their), plus affectionate contractions *abo / had'o* (my father / mother), *abe / had'e* (thy father / mother), *indallo* (my girl).
-   - **Reflexive & Reciprocal**: *ufi / uf* (self, *ipse*; *uffad'a* 'dress oneself') and *wali / wal* (each other: *waliti, walwadjin, walkeza, walaka* 'middle').`,
+    id: 'borana-tutschek-1845-verb-derivations',
+    title: 'Chapter I § 1: The 8 Derived Verbal Forms, Causative Classes, Onomatopoeticals, Denominatives & Reduplicated Intensitives (Tutschek 1845, §§ 38–110)',
+    summary: 'Complete inventory of Galla/Borana verbal derivation from Chapter I § 1 (pp. 9–32): the 8-form derivation chain, Middle (-ad\'a), Causative (-za/-ziza/-tsha/-eza/-z\'iza) with 7 metathesis verbs, Middle-Causatives (-fad\'a/-zad\'a), 3 classes of Onomatopoeticals, 24 Noun Denominatives, Deadjectival (-oma), Reduplicated Intensitives, and Passives (-ama).',
+    content: `From Charles & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, Chapter I § 1, §§ 38–110, pp. 9–32):
+1. **Overview of the 8 Verbal Forms & 4 Complete Chains (§§ 43–50, pp. 10–12)**:
+   - Every regular verb ends in short *-a* in 1s Present Indicative (**adema** 'I go') or contracted *-â / -ã / -à* (**bâ, lakã, tà**).
+   - **I. Root** | **II. Middle (-ad'a)** | **III. Causative (-za / -ziza / -tsha)** | **IV. Causative-Middle (-fad'a)** | **V. Double Causative (-ziza)** | **VI. (-zifad'a)** | **VII. Triple Causative (-ziziza)** | **VIII. (-zizifad'a)**:
+     - **bâ** ('go out') → **bad'a** → **baza** ('drive out / forgive / pay') → **bafad'a** → **baziza** → **bazifad'a** → **baziziza** → **bazizifad'a**.
+     - **bua** ('descend') → **buad'a** → **buza** ('overthrow') → **bufad'a** ('lie down') → **buziza** → **buzifad'a** → **buziziza** → **buzizifad'a**.
+     - **mara** ('turn/wind') → **marad'a** → **marza** → **marfad'a** → **marziza** → **marzifad'a** → **marziziza** → **marzizifad'a** (plus Passive **marama, marfama**).
+     - **gala** ('go home') → **galad'a** → **galtsha** ('bring home') → **galfad'a** → **galtshiza** → **galtshifad'a** → **galtshiziza** → **galtshizifad'a**.
+2. **Form II — Middle Verbs in *-ad'a* (§ 51, pp. 12–13)**:
+   - Express doing an action for one's own advantage,reflexively, or intransitively: **caba** ('have/catch') → **cabad'a** ('catch for oneself'); **gurgura** ('sell') → **gurgurad'a** ('buy / trade for oneself'); **d'ica** ('wash') → **d'icad'a** ('wash oneself'); **fid'a** ('bring') → **fid'ad'a** ('bring for oneself'); **gora** ('slaughter') → **gorad'a**; **hira** ('divide') → **hirad'a**; **hama** ('calumniate') → **hamad'a**; **unna** ('sip') → **unnad'a**; **edja** ('stand') → **edjad'a**; **djira** ('be') → **djirad'a** ('live/dwell'); **hordofa** ('follow') → **hordofad'a**.
+   - Deponent Middles lacking Form I: **dubad'a** ('speak', n. *dubi*), **kakad'a** ('swear', n. *kaku*), **kad'ad'a** ('pray/beg'), **ñad'a** ('eat', III *ñatshiza*), **baqad'a** ('flee', III *baqaza*), **dyirfad'a** ('curse'), ** fud'ad'a** ('take', I *fud'a* rare).
+3. **Form III — Causative Classes, Metathesis & Exceptions (§§ 53–88, pp. 13–24)**:
+   - **Vowel & Diphthong Roots (§§ 55–57)**: *-a* → *-aza* (**bâ → baza**, **gâ → gaza**, **ka → kaza**, **faga → fagaza**); *-ia* → *-iza* (**debia → debiza** 'return/answer', **fia → fiza** 'run', **bia → biza**); *-ua* → *-uza* (**bua → buza**, **dua → duza**, **gua → guza** 'dry up [of cows]'); *-oa* → *-oza* (**boa → boza** 'make weep', **goa → goza**, **loa → loza** 'creep').
+   - **Labial Roots (§§ 58–60)**: *-ba* → *-bza* (**guba → gubza** 'burn', **d'aba → d'abza**, **tchaba → tchabza** 'break', **caba → cabza** 'kindle') or *-biza* (**koba → kobiza**, **d'aba → d'abiza**). **Exceptions (§ 59)**: **garba → garbitsha** ('enslave'), **gurba → gurbitsha**, **ulfa → ulfitsha** ('make heavy/pregnant'). *-fa* → *-fza* (**kufa → kufza** 'fell', **rafa → rafza** 'lull to sleep', **ufa → ufza**).
+   - **Dental & Palatal Roots (§§ 61–69)**:
+     - *-da / -d'a / -ta / -t'a* → *-za* or *-ziza* (**gada → gadza**, **fid'a → fid'za**, **kuta → kutza**, **fit'a → fit'za**, **bad'a → bad'za** 'destroy', **d'êd'a → d'êd'z'iza** 'graze cattle', **guda → gudiza** 'bring up/educate').
+     - **Exceptions in *-tsha* or *-tshiza* (§§ 64–68)**: **fud'a → futsha** ('fetch'), **fid'a → fitsha**, **ñad'a → ñatshiza** ('feed'), **god'a → gotsha**, **bula → bultsha** ('let pass the night'), **ola → oltsha** ('let pass the day'), **gala → galtsha** ('bring home').
+     - **Irregulars (§ 66)**: **roba** ('it rains') → **robziza**; **hada** ('shave') → **hadziza**; **oda** ('thresh') → **odziza**.
+   - **Velar Roots (§§ 70–74)**: *-ka* → *-kza / -kiza / -tsha* (**beka → bekziza** 'make known', **d'oka → d'okza** 'hide', **maka → maktsha** 'turn aside', **baka → baktsha** 'melt'); *-ga* → *-gza / -giza* (**ega → egziza** 'cause to wait', **d'uga → d'ugza**); *-ca / -qa* → *-ciza / -qiza* (**d'ica → d'iciza**, **baqa → baqaza**, **lucã → luqiza** 'prepare raw hides').
+   - **Liquid & Nasal Roots (§§ 75–85)**:
+     - *-ra* → *-rza* (**bara → barziza** 'teach', **mara → marza**, **gura → gurza**, **ara → arza** 'smoke') or *-rtsha* (**dira → dirtsha** 'force', **hora → hortsha** 'breed cattle').
+     - *-la* → *-lza* (**ilala → ilalza**) or *-ltsha* (**bula → bultsha**, **ola → oltsha**, **gala → galtsha**, **d'ala → d'altsha** 'beget', **tshcala → tshcaltsha** 'exceed').
+     - *-ma / -na* → *-mza / -nza* (** gama → gamziza**, **d'ama → d'amza** 'extinguish', **fana → fanza** 'hang up') or *-mtsha* (**tuma → tumtsha** 'beat metal').
+     - **Seven Metathesis Verbs (§ 83, p. 22)**: **arga** ('see', 2s *argita/agarta*) → **agarziza** ('show'); **elma** ('milk') → **elemziza**; **kolfa** ('laugh') → **kofalziza**; **darba** ('pass') → **dabarza**; **falma** ('dispute') → **falamziza**; **marga** ('grow') → **magarza / magarziza**; **zirba** ('dance') → **ziribziza**.
+   - **Sibilant Roots (§§ 86–88)**: *-za / -z'a* → *-ziza / -fza* (**tshiza → tshibza / tshiziza**, **baz'a → bafza**, **ajaza → ajaziza** 'command').
+4. **Forms IV–VIII — Middle-Causatives in *-fad'a* & *-zad'a* (§§ 89–91, pp. 24–25)**:
+   - Formed from Form III by replacing *-za* with *-fad'a* (**baza → bafad'a**, **galtsha → galfad'a**, **agarziza → agarzifad'a**) or adding *-ad'a* to *-za* (**agodza → agodzad'a**, **ajaza → ajazad'a**, **obaza → obazad'a** 'water cattle for oneself').
+5. **Onomatopoeticals, Denominatives, Reduplicated Intensitives & Passives (§§ 52, 92–110, pp. 13, 25–32)**:
+   - **Three Classes of Onomatopoeticals (§§ 52.1, 92–95)**:
+     - **Class I (Sound particle + *djed'a* 'say' [intrans.] or *god'a* 'make' [trans.])**: **biriq djed'a** ('flash/glitter'), **cac djed'a** ('crack'), **tshal djed'a / tshali djed'a** ('be silent'), **kiriq djed'a** ('gnash/creak'), **tub djed'a** ('plunge'), **ol djed'a** ('rise up'), **gad djed'a** ('stoop down').
+     - **Class II (Fused in *-za*)**: **biriqza** ('make glitter'), **kiriqza**, **nyiqza**, **huza** ('roar'), **wawwaza** ('wail').
+     - **Class III (Fused in *-d'a*)**: **kiriqd'a**, **biriqd'a**, **harcad'a** ('snore/rattle').
+   - **24 Noun Denominatives (§ 97, pp. 27–28) & Deadjectival *-oma* (§§ 98, 108)**:
+     - **1.** *abota* ('fist') → **abotad'a / abotefad'a**; **2.** *araba* ('tongue') → **arabza** ('insult'); **3.** *arara* ('reconciliation') → **ararza / ararfad'a**; **4.** *bati* ('new moon') → **bafad'a**; **5.** *biya* ('country') → **biyoza / biyofad'a**; **6.** *bona* ('dry season') → **bonza**; **7.** *bube* ('storm') → **bubeza**; **8.** *d'uguma* ('truth') → **d'ugomza**; **9.** *dyilba* ('knee') → **dyilbefad'a** ('kneel'); **10.** *farda* ('horse') → **farad'a**; **11.** *fincan* ('urine') → **fincã / fincafad'a**; **12.** *galgala* ('evening') → **galgalã / galgalofad'a**; **13.** *ganama* ('morning') → **ganamfad'a**; **14.** *gara* ('belly/heart') → **garafad'a**; **15.** *gurmu* ('shoulder') → **gurmud'a**; **16.** *guyya* ('day') → **guyofad'a**; **17.** *had'a* ('mother') → **had'omfad'a**; **18.** *halkan* ('night') → **halkanfad'a**; **19.** *harka* ('hand') → **harkiza / harkifad'a** ('pull'); **20.** *idu* ('sting') → **id'a**; **21.** *ilma* ('son') → **ilmofad'a** ('adopt'); **22.** *kop'e* ('shoe') → **kop'efad'a**; **23.** *maca* ('name') → **macad'a**; **24.** *oboleza* ('brother') → **obolefad'a**.
+     - **Deadjectival *-oma / -omza* (§§ 98, 108)**: *gari* ('fair') → **garoma / garomza**; *tola* ('good') → **toloma**; *hieza* ('poor') → **hioma**; *dula* ('old') → **duloma**; *guda* ('great') → **gudoma**; *hadari* ('clever') → **hadaroma**.
+     - **Postpositional & Compound Denominatives (§§ 99–100)**: *ufi* ('self') → **uffad'a** ('dress oneself') & **uwiza** ('clothe another'); *irra* ('on') → **irafad'a** ('forget').
+   - **Reduplicated Intensitives & *d' → d* Dissimilation (§§ 101–104, pp. 29–30)**:
+     - Initial syllable reduplicates: **tchaba → tchatchaba** ('shatter into pieces'), **kuta → kukuta** ('chop up'), **bara → babara**, **guba → guguba**.
+     - **Dissimilation Rule (§ 103)**: When a root begins with implosive **d'**, the reduplicated prefix becomes plain **d**: **d'ica → did'ica** ('wash thoroughly'), **d'uga → dud'uga** ('drink deeply'), **d'ip'a → did'ip'a**, **d'ana → dad'ana** ('flog severely').
+   - **Passives in *-ama* (§§ 105–107) & Composite *gaddebia* (§ 110)**:
+     - **caba → cabama**, **guba → gubama**, **mara → marama / marfama**, **d'ala → d'alama / d'alad'a** ('be born'); **gad + debia → gaddebia** ('bend down/return downwards').`,
     examples: [
-      { borana: 'ini dura / hangafa (1st) • tokotiana (2nd) • lamatiana (3rd) • latshanu (2 together) • arfanu (4 together)', english: 'first • second • third • two together • four together', explanation: 'Tutschek (1845, §§ 207–209, pp. 60–61)' },
-      { borana: 'amole: tchabnana (1/2) • karmana (1/4) • gimaz\'i (3/4) • gedele (1/8)', english: 'salt-bar currency fractions: half • quarter • three-quarters • eighth', explanation: 'Tutschek (1845, § 212, p. 62)' }
+      { borana: 'arga → agarziza • elma → elemziza • kolfa → kofalziza • darba → dabarza • falma → falamziza • marga → magarza • zirba → ziribziza', english: 'see → show • milk • laugh • pass • dispute • grow • dance (7 liquid metathesis causatives)', explanation: 'Tutschek (1845, § 83, p. 22)' },
+      { borana: 'biriq djed\'a / biriqza / biriqd\'a • tshal djed\'a • kiriq djed\'a', english: 'flash/glitter (Classes I–III) • be silent • gnash/creak', explanation: 'Tutschek (1845, §§ 52.1, 92–95, pp. 13, 25–27) 3 classes of onomatopoeticals' },
+      { borana: 'tchaba → tchatchaba • kuta → kukuta | d\'ica → did\'ica • d\'uga → dud\'uga • d\'ana → dad\'ana', english: 'shatter • chop up | wash thoroughly • drink deeply • flog severely (d\' → d dissimilation)', explanation: 'Tutschek (1845, §§ 102–103, pp. 29–30)' }
+    ]
+  },
+  {
+    id: 'borana-tutschek-1845-verb-conjugations-modes-negation',
+    title: 'Chapter I §§ 2–3: Modes, Tenses, Full Paradigm Tables (Conjugations I–III), Defective/Auxiliary Verbs & 3 Negation Mechanisms (Tutschek 1845, §§ 111–176)',
+    summary: 'Complete conjugation paradigms and syntactic rules from Chapter I §§ 2–3 (pp. 32–53): 4 Modes + Subjunctive in -u + 5 Particle Modes (-re, -mi, -ti, -yi, -ni), 4 Tenses + 4 Proximate Future stages, Conjugations I (adema), II (tshiza), and III (tà, boa), Defective/Auxiliary verbs, and 3 Negation mechanisms.',
+    content: `From Charles & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, Chapter I §§ 2–3, §§ 111–176, pp. 32–53):
+1. **Four Modes, Subjunctive in *-u* & Five Affixed Particle Modes (§§ 111–119, pp. 32–34)**:
+   - **4 Primary Modes**: Indicative, Imperative (2s *-i*, 2p *-a*; Middle 2s *-u*, 2p *-ad'a*; Jussive 3s/3p/1p **ha ... -u / -ani / -nu**), Infinitive (Primary in **-u**, Secondary Intentional in **-d'z'u**, e.g. *fud'ad'z'u* 'in order to take'), and Participle (Masc. **-a / -d'a**, Fem. **-tu**; past/gerundive in **-e / -eti / -naan**).
+   - **Subjunctive in *-u* (§ 113)**: Used after **aka** ('that/in order that'), **hama** ('until'), **oto** ('while/if'), and relative **kan**.
+   - **Five Affixed Particle Modes (§§ 114–119, pp. 33–34)**:
+     - **1. Mode in *-re* (§ 115)**: Affirmative interrogative ("then/pray"): **malif ani zi egare?** ('why then do I wait for thee?'), **mal god'ure?** ('what is to be done then?').
+     - **2. Mode in *-mi* (§ 116)**: Negative/rhetorical interrogative (Latin *nonne*): **ani zin djenemi?** ('did I not tell thee?').
+     - **3. Mode in *-ti* (§ 117)**: Temporal/final limit with *hama* or *aka*: **t'uri haman ani d'ufuti** ('wait until I come').
+     - **4. Mode in *-yi* (§ 118)**: Simultaneous action with *oto*: **oto ati muka dyala tezuyi ani zi arge** ('while thou sattest under the tree, I saw thee').
+     - **5. Mode in *-ni* (§ 119, printed *mi* in TOC p. VII, *ni* in text p. 34)**: Negative privative ('without') with *oto* + negative verb: **oto izan homa hiñad'ini galani** ('they went home without having eaten anything').
+2. **Four Tenses & Four Proximate Future Degrees (§§ 120–131, pp. 34–38)**:
+   - **1. Present**: *adema* ('I go / am going / shall go').
+   - **2. I. Preterit (Historical/Aorist)**: *ademe* ('I went').
+   - **3. II. Preterit (Perfect, fused from I. Pret. + *dyira*)**: *ademera* (< *ademe dyira*, 3sf *ademtetti* < *ademte dyirti*). When separated (**ademe dyira**), emphasizes the continuing state.
+   - **4. Periphrastic Future (Infinitive + Dative *-f* + *in-* + *dyira*)**: *ademufandyira* ('I am about to go').
+   - **Four Proximate Future Stages with *gà* ('arrive at', § 130, p. 38)**: (1) **d'ufu gaufdyira** → (2) **d'ufu gà** → (3) **d'ufu gae** → (4) **d'ufu gaera** ('he is on the very point of coming').
+3. **Complete Paradigm Tables of the Three Conjugations (§§ 132–135, pp. 38–42)**:
+   - **Conjugation I — *adema* ('to go', pp. 39–40)**:
+     - *Present*: 1s **adema**, 2s **ademta**, 3sm **adema**, 3sf **ademti**, 1p **ademna**, 2p **ademtu (ademtani)**, 3p **ademu (ademani)**.
+     - *I. Preterit*: 1s **ademe**, 2s **ademte**, 3sm **ademe**, 3sf **ademte**, 1p **ademne**, 2p **ademtani**, 3p **ademani**.
+     - *II. Preterit*: 1s **ademera**, 2s **ademtera**, 3sm **ademera**, 3sf **ademtetti**, 1p **ademnerra**, 2p **ademtanirtu**, 3p **ademaniru**.
+     - *Future*: 1s **ademufandyira (ademufindyira)**, 2s **ademufindyirta**, 3sm **ademufindyira**, 3sf **ademufindyirti**, 1p **ademufindyirra**, 2p **ademufindyirtu**, 3p **ademufindyiru**.
+     - *Subjunctive (-u)*: 1s **ademu**, 2s **ademtu**, 3sm **ademu**, 3sf **ademtu**, 1p **ademnu**, 2p **ademtani**, 3p **ademani**.
+     - *Imperative & Jussive*: 2s **ademi!**, 2p **adema!**; Jussive 3sm **ha ademu**, 3sf **ha ademtu**, 1p **ha ademnu**, 3p **ha ademani**; *Infinitive*: **ademu**; *Participle*: m. **adema**, f. **ademtu**.
+   - **Conjugation II — *tshiza* ('to lie down', p. 40; Roots in *-za, -z'a, -fa, -ba, -wa/ã*)**:
+     - Root consonant becomes **-f-** before *-t-* and *-n-*:
+     - *Present*: 1s **tshiza**, 2s **tshifta**, 3sm **tshiza**, 3sf **tshifti**, 1p **tshifna**, 2p **tshiftu (tshiftani)**, 3p **tshizu (tshizani)**.
+     - *I. Preterit*: 1s **tshize**, 2s **tshifte**, 3sm **tshize**, 3sf **tshifte**, 1p **tshifne**, 2p **tshiftani**, 3p **tshizani**.
+     - *II. Preterit*: 1s **tshizera**, 2s **tshiftera**, 3sm **tshizera**, 3sf **tshiftetti**, 1p **tshifnerra**, 2p **tshiftanirtu**, 3p **tshizaniru**.
+     - *Future*: **tshizufandyira...** | *Imperative*: 2s **tshizi!**, 2p **tshiza!** | *Infinitive*: **tshizu** | *Participle*: m. **tshiza**, f. **tshiftu**.
+     - Note (§ 139): **d'iza** ('stretch') follows Conj. I (2s *d'izta*), whereas **d'iza** ('leave off / forgive') follows Conj. II (2s *d'ifta*, 1p *d'ifna*).
+   - **Conjugation III — *tà* (< *taya* 'to sit / become') & *boa* ('to weep', p. 42; Roots in *-à/-aya* and *-oa/-oya*)**:
+     - Root consonant becomes **-z-** before *-t-* (absorbing *t*) and **-ñ-** in 1p:
+     - *Present*: 1s **tà** (**boa**), 2s **teza** (**boza**), 3sm **tà** (**boa**), 3sf **tezi** (**bozi**), 1p **teña** (**boña**), 2p **tezu / tezani** (**bozu / bozani**), 3p **tau / taani** (**bou / boani**).
+     - *I. Preterit*: 1s **tae** (**boe**), 2s **teze** (**boze**), 3sm **tae** (**boe**), 3sf **teze** (**boze**), 1p **teñe** (**boñe**), 2p **tezani** (**bozani**), 3p **taani** (**boani**).
+     - *II. Preterit*: 1s **taera** (**boera**), 2s **tezera** (**bozera**), 3sm **taera** (**boera**), 3sf **tezetti** (**bozetti**), 1p **teñerra** (**boñerra**), 2p **tezanirtu** (**bozanirtu**), 3p **taaniru** (**boaniru**).
+     - *Imperative*: 2s **tai!** (**boi!**), 2p **taa!** (**boa!**) | *Infinitive*: **tau** (**bou**) | *Participle*: m. **taa** (**boa**), f. **tezu** (**bozu**).
+4. **Special Phonetic, Imperative, Defective & Auxiliary Rules (§§ 136–172, pp. 42–51)**:
+   - **ñad'a Dissimilation (§ 137)**: 1s **ñad'a** ('I eat') dissimilates implosive *d'* to plain *d* in 3sm **ini ñada** ('he eats').
+   - **Emphatic Imperative Suffixes (§ 148)**: **-ti**, **-ka**, **-tika** (**ademika!** 'go then!', **kod'uka!** 'come here then!').
+   - **Defective Imperatives (§§ 157–158)**: **benu! / pl. bena! / benuka!** ('come on! let us go!') and **kod'u! / pl. kod'a!** ('come here!').
+   - **Uninflected *dyadya* (§ 160)**: Only verb whose person/tense inflection was not found.
+   - **Collective Singular Feminine Concord (§ 162)**: Collective nouns (**yâ, namʿa, nacama, lon**) take 3rd person feminine singular verbs.
+   - **Affirmative Prefix *in- / inan-* (§ 164)**: Prefixed to verbs for emphasis (**inand'aca** 'I go', **inadema** 'he goes').
+   - **Auxiliary *dyira* ('to be present') vs. Enclitic Copula *-d'a* (§§ 165–167)**: *dyira* (2s *dyirta*, 3sf *dyirti*, 1p *dyirra*, 2p *dyirtu*, 3p *dyiru*; negative **hindyiru**) vs. invariant present copula **-d'a** (**ini garid'a** 'he is good', **kuni mukad'a** 'this is a tree'; past supplied by *tae*).
+   - **Nine Verbs Rendering English Adverbs in the Preterit (§ 172, p. 51)**: **dandà** ('can/able'), **rawad'a** ('finish' = 'entirely'), **beka** ('know how'), **dad'aba** ('tire' = 'in vain'), **tafa** ('do immediately'), **dabala** ('repeat' = 'again'), **debia** ('return' = 'back/again'), **zoba** ('lie' = 'falsely'), **baria** ('begin/dawn' = 'early').
+5. **Three Negation Mechanisms (§§ 173–176, pp. 51–53)**:
+   - **(a) Verbal Prefix *hin-* (*n'*)**: Present ends in **-u** (**ani hintchabzu** 'I do not break', 2s **hintchabzitu**); Preterit ends inInvariant **-ne / -ine** across all persons (**ani/ati/ini hintchabzine** 'I/thou/he did not break'); Imperative frames verb with **hin-...-in** (2s **hindubad'in!** 'do not speak!', 2p **hindubad'ina!**).
+   - **(b) Nominal/Adjectival Copula Negative *-miti* (§ 175)**: Replaces *-d'a* (**ini garimiti** 'he is not handsome', **ani ilmakemiti?** 'am I not thy son?').
+   - **(c) Four Negative Auxiliary Verbs with Infinitive in *-u* (§ 176, pp. 52–53)**:
+     - **1. dida** ('refuse/will not'): **ini oad'z'udide** ('he refused to answer').
+     - **2. bad'a** ('destroy/neglect/forget'): **ini oad'z'ubad'te** ('he neglected/forgot to answer').
+     - **3. d'aba** ('not find/lack power'): **ini oad'z'u d'abe** ('he was unable to answer').
+     - **4. ola** ('pass the day/leave undone'): **ini d'ufu ole** ('he failed to come / stayed away').`,
+    examples: [
+      { borana: 'Conj. I: adema, ademta, adema, ademti, ademna, ademtu, ademu | Conj. II: tshiza, tshifta, tshiza, tshifti, tshifna | Conj. III: tà, teza, tà, tezi, teña (boa, boza, boa, bozi, boña)', english: 'Conjugations I (go), II (lie down), and III (sit / weep) Present Indicative paradigms', explanation: 'Tutschek (1845, §§ 132–135, pp. 38–42)' },
+      { borana: '-re (malif ani zi egare?) • -mi (ani zin djenemi?) • -ti (haman ani d\'ufuti) • -yi (oto ati muka dyala tezuyi) • -ni (oto izan homa hiñad\'ini galani)', english: '5 affixed modal particles: affirmative question • negative question (nonne) • until • while • without', explanation: 'Tutschek (1845, §§ 114–119, pp. 33–34)' },
+      { borana: 'ini oad\'z\'udide • ini oad\'z\'ubad\'te • ini oad\'z\'u d\'abe • ini d\'ufu ole', english: 'he refused to answer • he neglected to answer • he was unable to answer • he failed to come', explanation: 'Tutschek (1845, § 176, pp. 52–53) four negative auxiliary verbs' }
+    ]
+  },
+  {
+    id: 'borana-tutschek-1845-nouns-numerals-pronouns-particles',
+    title: 'Chapters II & III: Nouns, Cases, Adjectives, Complete Numerals, Amole Fractions, 7 Pronoun Classes, Relative Clauses & Particles (Tutschek 1845, §§ 177–255)',
+    summary: 'Complete nominal, numeral, pronominal, and particle grammar from Chapters II & III (pp. 54–83): collective feminine concord, Accusative-base declension, cardinals 1–100,000, ordinals (-tiana), all 21 social numbers (-anu), 4 amole salt-bar fractions, numeral adverbs & verbs, 7 pronoun classes, 7 relative clause types, and particles.',
+    content: `From Charles & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, Chapters II & III, §§ 177–255, pp. 54–83):
+1. **Nouns: Gender, Collective Feminine Concord, Plurals & Declension (§§ 177–195, pp. 54–57)**:
+   - **Collective Feminine Rule (§§ 177–180)**: Most nouns are collective in meaning and govern a **3rd person feminine singular verb** (**dargago** 'youth', **mangudo** 'elders/senate', **hatu** 'thieves', **hidjole** 'children', **faratoni d'êd'ti** 'the horses graze'). Individualization uses **toko** ('one') or singulative suffixes: **-eza** (f. *-eti*: *oboleza / oboleti* 'brother / sister', *dureza / dureti* 'rich man / woman'), **-itsha** (f. *-iti*: *gurbitsha* 'boy', *garbitsha / garbiti* 'male / female slave'), **-tu / -titi** (*hatu → hatiti* 'a single thief').
+   - **Plural Suffixes (§§ 181–182)**: **-oda / -ota** (*muka → mukoda*, *barziza → barzizota*), **-ole** (*gaange → gaangole* 'mules'), **-wani** (*hola → holawani* 'sheep'), plus irregulars: **ilma → ilman** ('sons'), **nama → namooni**, **farda → faratoni** ('horses'), **reeʿ → rooda / rooni** ('goats'), **mutsha → hidjole** ('child → children').
+   - **Case System (§§ 183–195)**:
+     - **Accusative (Absolutive)**: Unmarked citation base (**mut'ut'e** 'needle', **bati** 'moon', **ramo** 'worm', **adu** 'sun', **lafa** 'earth', **muka** 'tree', **boka** 'rain').
+     - **Nominative Formation (§ 184)**:
+       1. Nouns ending in *-e, -i, -o, -u* suffix **-n**: *mut'ut'en, batin, ramon, adun* (*had'a* 'mother' → **had'i**).
+       2. Nouns in *-iza / -eza / -aza* or *-awa* change the ending to **-fni**: **kaniza → kanifni** ('bee'), **barziza → barzifni** ('teacher'), **dureza → durefni** ('rich man'), **gawa → gofni** ('hole').
+       3. Nouns in *-a* take **-i** (*nama → namni*, *muka → mukni*), **-ti** (*lafa → lafti* 'earth', *ganda → gandatti*), or **-ñi** (*boka → bokeñi* 'rain').
+     - **Genitive**: By juxtaposition (possessed precedes possessor: **mana aba** 'house of the father') or with **kan** (*mana kan aba*) and vowel lengthening.
+     - **Dative**: Suffixes **-f / -fi**, **-ti**, or **-d'a / -d'af** (*abaf, abati, abad'af*).
+     - **Ablative / Locative / Instrumental**: **-ti** ('in/at/from'), **-n** ('by/with': *harkaan* 'by hand'), **-ra** (< *irra* 'from upon'), **-da** ('from': *manada* 'from the house').
+     - **Vocative**: Prefix **ya!** or suffix **-o / -ko** (**ya Waca!**, **abako!**, **goftako!**).
+2. **Adjectives (§§ 196–200, pp. 57–58)**:
+   - Follow the noun; inflect for gender (**guda** m. / **gudo** f. 'great'; **t'ina** m. / **t'ino** f. 'small'; **hieza** m. / **hieti** f. 'poor') and form plurals via initial reduplication (**guda → guguda**, **d'êra → ded'êra** 'tall/long', **t'ina → tit'ina**).
+   - Comparative with **irra** ('more than': *ini ana irra gudad'a* 'he is taller than I') or verb **tshcala** ('exceed'); Superlative with **hunduma irra** ('above all').
+3. **Complete Numerals: Cardinals, Ordinals, 21 Social Numbers, Distributives, Amole Fractions, Adverbs & Verbs (§§ 201–215, pp. 58–63)**:
+   - **Cardinals (§§ 201–206)**: **1** *toko (tokᵒ, fem. taka)*, **2** *lama*, **3** *zadi*, **4** *afuri*, **5** *z'ani*, **6** *dya*, **7** *torba (torbanⁱ; torban = 7-day week)*, **8** *zadeta*, **9** *zagala*, **10** *kudani (kudan; kurna = set of 10 / 10-day period)*, **11** *kudatoko*, **12** *kudalama*, **13** *kudazadi*, **14** *kudaafuri*, **15** *kudaz'ani*, **16** *kudadya*, **17** *kudatorba*, **18** *kudazadedᵃ (kudazadeta)*, **19** *kudazagalᵃ (kudazagala)*, **20** *digetama*, **21** *digetamitoko*, **30** *zodoma*, **40** *afurtama*, **50** *z'antama*, **60** *dyatama*, **70** *torbatama*, **80** *zadettama*, **90** *zagaltama*, **100** *d'iba*, **200** *d'ibalama*, **1,000** *kuma*, **100,000** *kuntuma* (from *kura* 'fist/handful' + *tuma* 'beat/heap').
+   - **Ordinals (§§ 207–208)**: **1st** **ini dura** ('he in front') or **hangafa** ('first-born / foremost', opposed to **gudiru** 'youngest child' and **ini boda** 'the last'); **2nd** **tokotiana** (lit. 'hanging on one', from *-ti + ana*), **3rd** **lamatiana**, **4th** **zaditiana**, **5th** **afuritiana**, **6th** **z'anitiana**, **7th** **dyatiana**, **8th** **torbatiana**, **9th** **zadetatiana**, **10th** **zagaltiana**, **11th** **kudanitiana / kurnatiana** (since *tokotiana* is 2nd, each ordinal suffix *-tiana* attaches to *(n - 1)*).
+   - **All 21 Social Numbers in *-anu* + *ladz'u* (§§ 209–210, p. 61)**: Express "two together, three together...": **latshanu** (2), **zadanu** (3), **arfanu** (4), **z'ananu / z'antanu** (5), **dyanu** (6), **torbanu** (7), **zadetanu** (8), **zagaltanu** (9), **kurnanu** (10), **kurnatokanu** (11), **digetamtanu** (20), **digetamitakanu** (21), **zodomanu / zodomnu** (30), **afurtamnu** (40), **z'antamnu** (50), **dyatamnu** (60), **torbatamnu** (70), **zadettamnu** (80), **zagaltamnu** (90), **d'ibatanu** (100), **kumatanu** (1,000); plus **ladz'u** ('both': *ijako ladz'u* 'both my eyes').
+   - **Distributives (§ 211)**: Formed by repetition (**toko toko** 'one by one', **lama lama** 'two by two', **kudani kudani / kurna kurna** 'ten by ten').
+   - **Four Fractions of the *Amole* Salt-Bar Currency (§ 212, p. 62)**:
+     - **tchabnana** = $\frac{1}{2}$ (from *tchaba* 'break'); **karmana** = $\frac{1}{4}$ (from *ka + harka + mana* = 'hand of the house'); **gimaz'i** = $\frac{3}{4}$ (in 1845 Grammar § 212 p. 62; $\frac{1}{8}$ in 1844 Dict. Pt. I); **gedele / gadele** = $\frac{1}{8}$ (in 1845 Grammar § 212 p. 62; $\frac{1}{12}$ in 1844 Dict. Pt. I).
+   - **Numeral Adverbs (§ 213) & Numeral Verbs (§§ 214–215, pp. 62–63)**:
+     - *Adverbs*: **gafatoko** ('once'), **gafalama** ('twice'), **gafazadi** ('thrice'), **irgataka** ('at once / suddenly'), **lafa dyala** ('at first / in the beginning').
+     - *Verbs*: **diriba** ('double / twist threads together'), **datchâ / datchaza / datchafad'a** ('double / fold together'), **lamefad'a** ('do for the 2nd time, e.g. plough/hoeing'), **zadifad'a** ('do for the 3rd time'), **afurifad'a** ('do for the 4th time'), **z'anifad'a** ('do for the 5th time').
+4. **Seven Pronoun Classes & Seven Relative Clause Constructions (§§ 216–251, pp. 63–81)**:
+   - **1. Personal Pronouns (Nom. | Acc. | Dative | Emphatic *-tu* | Additive *-ti* 'also')**:
+     - 1s **ani | ana, na | anaf, naf | anatu | anati**; 2s **ati | zi | zif | zitu | atiti**; 3sm **ini | iza | izaf | izatu | initi**; 3sf **iz'in | iz'i | iz'if | iz'itu | iz'initi**; 1p **nu (unu) | nu | nuf | nutu | nuti**; 2p **izin | izin | izinif | izintu | iziniti**; 3p **izan | izan | izanif | izantu | izaniti**. (Emphatic *-tu* always governs a 3rd person singular verb: **anatu djed'e** 'I myself said', **zitu beka** 'thou knowest').
+   - **2. Possessive Suffixes & Substantives (§§ 225–234)**: **-ko** ('my'), **-ke** ('thy'), **-za** ('his'), **-z'i / -z'e** ('her'), **-keña** ('our'), **-kezani** ('your'), **-zani** ('their'); Independent: **kanko, kanke, kanza...**; Affectionate kinship contractions (§ 230): **abo / had'o** ('my father / mother'), **abe / had'e** ('thy father / mother'), **indallo** ('my girl').
+   - **3. Reflexive *ufi / uf* & Reciprocal *wali / wal* (§§ 235–241)**: **ufi** ('self', Latin *ipse*: *ufiko, ufike, ufiza*; *uffad'a* 'clothe oneself', *ufitshcala* 'boast') and **wali / wal** ('each other': **waliti** 'together', **walwadjin** 'with one another', **walkeza** 'among one another', **walirra** 'from one another', **walaka** 'middle/halfway').
+   - **4. Demonstratives (§§ 242–247)**: Proximal Nom. **kuni** (f. **tuni**) / Acc. **kana** (f. **tana**; **kanati** 'therefore', **akuma kana** 'just so'); Distal **zuni / zana** ('that'); Correlative **akazi / akana** ('thus/so').
+   - **5. Relative Pronoun *kan* & 7 Relative Clause Constructions (§§ 248–249, pp. 75–79)**:
+     - **kan** ('who/which', often omitted by ellipsis). Section 249 documents 7 constructions: (1) explicit *kan* + indicative/subjunctive; (2) omitted *kan* with participial/finite clause (illustrated by the satirical quatrain **Bagila ñad'u, malif d'aka lakize? Zoba dibad'u, malif naca lakize?**, p. 77); (3) cleft emphasis with *-tu*; (4) historical narrative clauses (**Boru Dido** example, p. 78); (5) headless relatives; (6) oblique/postpositional relatives; (7) locative relatives with **irge** ('the place where').
+   - **6. Interrogatives (§ 250)**: **eñu?** ('who?', Acc. *eñun*, Gen. *kan eñu*, Emph. *eñutu*), **mali? / mal? / ma?** ('what?', **malif / maf?** 'why?'), **kami? / kamtu?** ('which?', **izakamtu?** 'which of the two?'), **mêka?** ('how much / how many?').
+   - **7. Indefinite Pronouns (§ 251)**: **nama / namni** ('one / someone'), **abalu** ('such a one, Mr. So-and-so', f. *abaluti*), **wà / wan** ('something'), **homa** (+ neg. = 'nothing'), **tokollee** (+ neg. = 'not even one'), **hunda / hunduma / gita** ('all / every').
+5. **Chapter III — Particles: Postpositions, Conjunctions, Interjections & Clausal *-fu/-fi/-f* (§§ 252–255, pp. 82–83)**:
+   - **Postpositions & Adverbs (§§ 252–253)**: **keza** ('in/inside'), **irra** ('on/upon'), **dyala** ('under'), **bira** ('beside/with'), **fuldura / dura** ('before'), **boda / duba** ('behind/after'), **wadjin** ('with'), **gara** ('towards'), **ala / dida** ('outside'), **oli** ('up'), **gadi** ('down'), **azi** ('here'), **atchi** ('there'), **eza?** ('where?'), **ezayi?** ('whence?'), **yoom?** ('when?'), **ama** ('now'), **harʿa** ('to-day'), **boru** ('to-morrow'), **calêza** ('yesterday').
+   - **Conjunctions & Interjections (§ 254)**: **-f / -fi** ('and'), **male** ('but/except'), **yoka / yokin** ('or'), **ho / yo** ('when/if'), **oto** ('while/if'), **aka** ('that/as'), **hama** ('until/as much as'), **eda** ('because/then'); Interjections: **o!** ('yes! / indeed!'), **mê!** ('pray!'), **ya!** ('O!'), **wau!** ('no!').
+   - **Clausal Suffix *-fu / -fi / -f* & the *Djulule* and *Gadiyo* Dialogue (§ 255, p. 83)**:
+     - Attached to whole clauses to mean 'for / in order that / because':
+     - **„Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi?" — „Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe."** ('"Why do you not give Djulule’s child milk to drink that it may sleep, as it weeps and does not sleep?" — "Gadiyo’s child has a cough, therefore it weeps; its belly aches, therefore it weeps."').`,
+    examples: [
+      { borana: 'kaniza → kanifni • barziza → barzifni • gawa → gofni | lafa → lafti • muka → mukni • boka → bokeñi', english: 'bee • teacher • hole (-fni Nominative) | earth • tree • rain (-ti/-ni/-ñi Nominative)', explanation: 'Tutschek (1845, § 184, pp. 55–56) Nominative case formation from the Accusative base' },
+      { borana: 'latshanu (2), zadanu (3), arfanu (4), z\'ananu (5), dyanu (6), torbanu (7), zadetanu (8), zagaltanu (9), kurnanu (10) ... d\'ibatanu (100), kumatanu (1,000)', english: 'Complete series of 21 social numerals (-anu = together)', explanation: 'Tutschek (1845, § 209, p. 61)' },
+      { borana: 'Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi? — Muca Gadiyo hud\'eti kan ini boe; gara d\'ukubeti, kan ini boe.', english: 'Why do you not give Djulule\'s child milk to drink that it may sleep? — Gadiyo\'s child has a cough, therefore it weeps; its belly aches, therefore it weeps.', explanation: 'Tutschek (1845, § 255, p. 83) clausal -fi and causal -ti dialogue' }
+    ]
+  },
+  {
+    id: 'borana-tutschek-1845-prayers-letters-endpapers',
+    title: 'Native Texts (3 Prayers & 2 Munich Letters of 1840) & Rear Endpaper Comparative Notes (Tutschek 1845, pp. 84–91, 105, 107)',
+    summary: 'Complete verbatim Oromo/Borana primary texts and interlinear translations from pp. 84–91 (Akafed\'e\'s 16-verse Prayer after the Hambo–Hamaya war, Morning Prayer, Evening Prayer, Otshu Aga\'s Letter of Oct. 16, 1840, and Akafed\'e Dalle\'s Reply of Oct. 21, 1840) plus the rear endpaper comparative notes (pp. 105, 107).',
+    content: `From Charles & Lawrence Tutschek (*A Grammar of the Galla Language*, Munich, 1845, Native Texts pp. 84–91 & Endpaper Notes pp. 105, 107):
+1. **Prayer 1 — Akafed'e Dalle’s 16-Verse Prayer after the War between *Hambo* and *Hamaya* (pp. 84–87)**:
+   - **v. 1**: *Wacayo laftana, goftako! kan na tolte, aka na tolte hinbeku; akati na tolte, ati bekta, goftako!* ('Good God of this earth, my Lord! Thou hast made me; how thou madest me I know not; how thou madest me, thou knowest, my Lord!')
+   - **v. 2**: *Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai!* ('When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune, my Lord, be thou my shadow!')
+   - **v. 3**: *Wacayo laftana, goftako! ati na dyal'ad'u, aka aniti hinbadne!* ('Good God of this earth, my Lord! Love thou me, that I may not be lost!')
+   - **v. 4**: *Aban ilmoza hingatu, ati na hingatin, goftako!* ('A father casts not off his child; cast thou me not off, my Lord!')
+   - **v. 5**: *Had'i ilmoz'e hingatu, ati na hingatin, goftako!* ('A mother casts not off her child; cast thou me not off, my Lord!')
+   - **v. 6**: *Gara had'akoti ati na bafte, goftako! aka aniti hinbadne, ati na dyal'ad'u!* ('From my mother’s womb thou hast brought me out, my Lord! That I may not perish, love thou me!')
+   - **v. 7**: *Akuma aban ilmoza barzizu, akana na barzizi!* ('Even as a father teaches his son, so teach thou me!')
+   - **v. 8**: *Akuma had'i ilmoz'e tshcaltu, akana na tshcali!* ('Even as a mother loves her child above all, so love thou me!')
+   - **v. 9**: *Ho ani кара ademu, karakora naga naf god'i!* ('When I walk upon the way, make peace for me upon my way!')
+   - **v. 10**: *Ho ani mana tau, manako naga naf god'i!* ('When I sit in the house, make my house peaceable for me!')
+   - **v. 11**: *Ho ani rafe, hirribakoti naga naf god'i!* ('When I sleep, make peace for me in my sleep!')
+   - **v. 12**: *Wara Hambo fi wara Hamaya waliti ararzi, goftako!* ('Reconcile the people of Hambo and the people of Hamaya with one another, my Lord!')
+   - **v. 13**: *Lola biyakeña baza, naga biyakeñati debizi!* ('Drive war out of our country, bring peace back to our country!')
+   - **v. 14**: *Mid'an nu magarzi, lon nu horzi, goftako!* ('Cause the grain to grow for us, cause the cattle to multiply for us, my Lord!')
+   - **v. 15**: *Garako qulqulo naf god'i, dubiko d'uga naf god'i!* ('Make my heart pure for me, make my speech true for me!')
+   - **v. 16**: *Ilma nama tokotshan na d'ugezin; garakotinan zi kad'ad'a, goftako: nagadani na faitu!* ('Let me not shed the blood of any son of man; from my heart I entreat thee, my Lord: may peace only delight me!')
+2. **Prayer 2 — Morning Prayer (pp. 87–88)**:
+   - *Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi. — Dubad'etan bad'za, ya Waca afaan na cabi; belaetan bad'za, ya Waca gara na cabi, gofta goftan cabne, mooti mootin cabne; tokitshako, na gadyêlzi!*
+3. **Prayer 3 — Evening Prayer (p. 88)**:
+   - *Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.*
+4. **Letter 4 — *Otshu Aga* (from *Sibu*) to *Akafed'e* (Munich, October 16, 1840, pp. 88–90)**:
+   - Opens with *Naga, naga! fayaketi! Ati naga olte had'a? Ani Waca galatako naga olera...* Recounts his journey and stay with Prince Maximilian and Charles Tutschek, asks after Akafed'e's health and studies, and closes *Nagaiti buli! Ani Otshu Agad'a.*
+5. **Letter 5 — *Akafed'e Dalle* (from *Hambo*) to *Otshu Aga* (Munich, October 21, 1840, pp. 90–91)**:
+   - Replies to Aga's letter, quotes the proverb **„D'ad'an ibidti bue hindebiu" djed'ani, mal god'ure? Wa hundi kan Wacayoti; inuma d'iza male**, praises Charles Tutschek (**Wacayon iza ha tolu, aka ini nu tshcala kanati nu god'e**), describes how the four of them sit conversing together (**Nu arfanu teñeti walwadjin kana hazofna**), and closes **Nagan hafi hama nu wal agaruti! Ani Akafed'e Dalled'a.**
+6. **Rear Endpaper Comparative Notes (pp. 105, 107)**:
+   - Manuscript notes on the back flyleaves indexing: (p. 105) **Pronouns** (pp. 63–64), **Onomatopoeticals** (pp. 13, 25–27), **Passive Verbs** (p. 30), and comparative Semitic/Hebrew verbal and pronominal parallels; (p. 107) page cross-references (*24, 34, 48, 52, 65, 67, 73, 74, 83*) and the phonetic note **gm = mm** (p. 5: *damma < dagma*).`,
+    examples: [
+      { borana: 'Wacayo laftana, goftako! Ho haman nati d\'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai!', english: 'Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune, my Lord, be thou my shadow!', explanation: 'Tutschek (1845, p. 84, Prayer 1 vv. 1–2)' },
+      { borana: 'Dubad\'etan bad\'za, ya Waca afaan na cabi; belaetan bad\'za, ya Waca gara na cabi, gofta goftan cabne, mooti mootin cabne; tokitshako, na gadyêlzi!', english: 'When I speak I err, O God hold my mouth; when I am hungry I err, O God hold my heart, O Lord who hast no Lord, O King who hast no King; my Only One, guide me right!', explanation: 'Tutschek (1845, pp. 87–88, Morning Prayer)' },
+      { borana: '„D\'ad\'an ibidti bue hindebiu" djed\'ani, mal god\'ure? Wa hundi kan Wacayoti; inuma d\'iza male. — Nu arfanu teñeti walwadjin kana hazofna.', english: '"Butter fallen into the fire comes not back," they say; what is to be done then? Everything is of God. — The four of us sit and converse together.', explanation: 'Tutschek (1845, pp. 90–91, Letter 5: Akafed\'e Dalle to Otshu Aga, Munich, Oct. 21, 1840)' }
     ]
   },
   {
@@ -41987,13 +42412,13 @@ export const BORANA_GRAMMAR_SECTIONS: GrammarSection[] = [
 2. **The Five Galla Tribes / *Gadaa* Circumcision Rank Orders (pp. 34, 73, 78, 104, 155, 169, 203)**:
    - **1st**: **horad'a** (p. 203) → **2nd**: **midjile** (p. 169) → **3rd**: **robale** (p. 155) → **4th**: **kilole** (p. 34) → **5th**: **dulo** (p. 104); plus **djara** (surgical circumcision feast held two years after the *Gada / Buta* festival, p. 78), **tchala** (circumcision priests, p. 73), and **cori naga** (ceremonial *Buta* dish, p. 48).
 3. **Political & Judicial Hierarchy, Adoption, Oaths & Heroic Distinctions**:
-   - **Hierarchy**: **moti** (king, fem. *meti*, palace *mazara*, royal household *zadjeda / birmad'u*, groom *nao* leading war-horse *farta lola* or courser *djolle*), **zoreza / zalgana / momoti** (princes/nobles), **aba ganda** (town governor), **aba lafa** (landlord; settled vassals *gubziza*), **mangudo / bera** (senate/judges sitting at *gude dubi* or *yai dyidu*), **aba fuño** ("master of the cord", judicial officer), **cuge** (sergeant/tipstaff), **cabi** (distrainer), **erada** (bailiff), **gindo** (leg-stocks prison), **findja Lali** (judicial seat in *Hambo*), and **guma** (customary restitution customary restitution / ransom).
+   - **Hierarchy**: **moti** (king, fem. *meti*, palace *mazara*, royal household *zadjeda / birmad'u*, groom *nao* leading war-horse *farta lola* or courser *djolle*), **zoreza / zalgana / momoti** (princes/nobles), **aba ganda** (town governor), **aba lafa** (landlord; settled vassals *gubziza*), **mangudo / bera** (senate/judges sitting at *gude dubi* or *yai dyidu*), **aba fuño** ("master of the cord", judicial officer), **cuge** (sergeant/tipstaff), **cabi** (distrainer), **erada** (bailiff), **gindo** (leg-stocks prison), **findja Lali** (judicial seat in *Hambo*), and **guma** (customary restitution / ransom).
    - **Adoption (*gada / balfad'a*)**: **gada guda** (complete adoption) vs. **gada t'ina** (incomplete adoption, p. 53), **gubifad'a** (adopting when already having children, p. 68), and **balfad'a** (solemn single-file procession *waliti ananiti* carrying green **Meeça** twigs to deliver the adoptive son **baldja**, pp. 94, 131).
    - **Oaths & Peacemaking**: **kalatcha** (oath-staff wreathed with *meeça* under the *lafto Michaila* tree, licked before the priest *Gadyo* with the oath *"hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!"*, pp. 31–32), **t'wu — aki — t'wu — tili!** (spitting chewed *tila* grass to ratify a promise, p. 91), **mora wal cabad'a** (holding sacrificial fat together to ratify peace, pp. 43, 172), and **cote wal cabad'u** (hooking the little fingers *moge* together to wager, pp. 47, 66).
    - **Heroic Distinctions**: **gondala** (hero who has slain an enemy, elephant, lion, or buffalo and anoints his head with butter, fixing the **zariti** thorn in his hair during the **gerara** triumphal song and wearing the ivory armlet **ilbora**, earring **d'ugo**, chain pendant **loti**, and bracelet **gudidja**, pp. 20, 66–67, 116, 159, 182) vs. **gurgudu** (unblooded man, p. 69).
 4. **Calendar, Currency & Complete Cattle Classification (*Lon*)**:
    - **7 Days of the Week**: *1. Gifti (Kamiza), 2. Djimada/Djimata, 3. Zambata t'ina (preceded by cadame), 4. Zambata guda, 5. Zaño, 6. Maczaño (Tafno), 7. Arbi*; **4 Seasons**: *birra* (spring, ushered in when the yellow **kelo** flower blooms at the **Magzala** feast), *bona* (summer), *arfaza* (autumn), *ganna* (winter/rains); **Months**: *1st hadoleza (hadami), 2nd hagayo, 3rd wadabadji, furma*; **5-Year Sequence**: *barrakan → barrengata → barrana → barragere → barratchanu*.
-   - **Currency**: **amole** rock-salt bar (*mogor* = 2, *tchabnana* = 1/2, *kurmana* = 1/4, *gimaz'i* = 1/8, *gedele / fotoqe* = 1/12, *zanaga / çarmama* = bound broken bar) and **biri** (Maria Theresa silver dollar = 20–23 *amole*, p. 135).
+   - **Currency**: **amole** rock-salt bar (*mogor* = 2, *tchabnana* = 1/2, *kurmana / karmana* = 1/4, *gimaz'i* = 3/4 in 1845 Grammar § 212 vs. 1/8 in 1844 Dict., *gedele / fotoqe* = 1/8 in 1845 Grammar vs. 1/12 in 1844 Dict., *zanaga / çarmama* = bound broken bar) and **biri** (Maria Theresa silver dollar = 20–23 *amole*, p. 135).
    - **Cattle (*lon*, p. 160 & Pt. II p. 20)**: Male *tshabi → djibitcha → gorba (3 yrs) → wofana → godiyo (plough-ox) → korma (bull: korma bordeda vs. korma gurra) → ulfin → zanga (fattened ox)*; Female *tshabi → rad'a (2-yr heifer) → goromza → zã/zawa (zilga = pregnant/milk cow; gua = dried-up cow) → dulatcha (aged cow)*.`,
     examples: [
       { borana: "1. Horad'a • 2. Midjile • 3. Robale • 4. Kilole • 5. Dulo (djara & tchala)", english: "The 5 Galla tribes/grades by circumcision order (plus surgical circumcision feast & officiating priests)", explanation: "Tutschek (1844, Part I, pp. 34, 73, 78, 104, 155, 169, 203)" },
@@ -55856,3 +56281,1376 @@ CULTURAL_WISDOM.push(
     source: item.sourceCitation,
   }))
 );
+
+// ============================================================
+// Rev. W. E. Taylor (1891) "African Aphorisms; or, Saws from Swahili-Land"
+// Complete Line-by-Line Verification (pp. i–xii, 1–182):
+// - Mwalim Sikujua's 12-Couplet Epigraph (p. 8)
+// - All 56 Previously Missing Proverbs (§§ 6, 35, 79, 88, 98, 101, 132, 146, 156, 159,
+//   180, 189, 200, 205, 222, [226a], 229, 231, 234, 242, 293, 298, 326, 332, [333a],
+//   336, 342, 351, 353, [355a], 357, 371, [396a], 403, 432, 438a, 457, 480, 497, 501,
+//   505, 510, 541, 546, 551, 577, 586, 599, 604, 634a, 635aa, 638a, 640d, 647c, 666, 667)
+// - All 56 Verbatim Corrections for Split/Truncated Proverbs (§§ 24, 71, 83, 84, 94,
+//   112, 118, 127, 128, 135, 138, 149, 164, 166, 181, 239, 252, 256, 263, 269, 278,
+//   288, 301, 319, 321, 366, 373, 377, 379, 387, 392, 398, 416, 431, 445, 450, 484,
+//   487, 511, 512, 514, 524, 526, 529, 540, 549, 562, 571, 576, 591, 622, 626, 631,
+//   656, 657, 664)
+// - Complete Appendix A (Swahili Tenses I–VI) & Appendix B (-ngwa Possessive Pronoun
+//   of Alienation, pp. 164–167) and Supplementary Indexes 1–5 (pp. 168–182)
+// ============================================================
+
+const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
+  {
+    id: "taylor-1891-epigraph-sikujua",
+    languageId: "swahili",
+    languageName: "Swahili (Kimvita — Mwalim Sikujua Epigraph, Taylor 1891 p. viii)",
+    indigenous:
+      "AWALI ni mwanzo (sambe ni matezo!) / Maneno ya kwanzo ni haya ya aa: / Nda wafalaguzi wa k'ale na juzi, / Wenyi maulizi na kufumbulia: / K'ambiwa, \"T'ungani! nanywi fumbulani!\" / K'ambiwa, \"Semani! amba mwatujua!\" / K'ambiwa, \"N'ambie (kwamba u sikiye!), / 'Ch'ui na mwanawe wakik'umbatia!'\" / K'ambiwa, \"Zingatia hayo yakwe pia, / Kisa uniambie ukishangilia!\" / K'ambiwa, \"N'ambie jambo na wendae, / Haya ujuaye, uje kutwambia!\" / Nami fumbulize kwani n'ambiize; / Asiyoyawaza k'amtanabbahia: / Na mwenye kusoma akisha kupima / Kwa akili njema atafurahiwa. / Aso kuyapenda asifanye inda; / Afanye k'iyonda kukijikatia! / Ajipake nyongo na masizi chungu; / Awe k'unguni-nguu, apate k'ungua! / K'ungua kunguni, uingie ndani— / Mwa nyumba za chini, utetee taa! / Aliyekataa hayakumfaa, / Sasa anakaa—ndiko kunyamaa!",
+    literalTranslation:
+      "AWALI is the beginning (say not it is child's play!) / The words of the beginning are these of 'aa': / They are of the discerning sages (wafalaguzi) of old and of the other day, / Those who question and unravel riddles: / When told, 'Compose ye! and do ye unravel!' / When told, 'Speak ye! if ye know us!' / When told, 'Tell me (if thou hast heard it!), / \"The leopard and her cub embracing one another!\"' / ... And he who reads, when he has weighed them with a good understanding, shall be gladdened. / He that refuseth them, it hath not profited him; now he sits still—that is keeping silence!",
+    meaning:
+      "12-couplet opening Mashairi epigraph adapted from Mwalim Sikujua of Mombasa on p. viii (PDF p. 8) of Rev. W. E. Taylor's 'African Aphorisms' (1891), celebrating the coastal sages (wafalaguzi) who compose and unravel proverbs and riddles (mafumbo).",
+    englishEquivalent: "A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels (Proverbs 1:5).",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (SPCK London, 1891), Epigraph adapted from Mwalim Sikujua, p. viii",
+  },
+  {
+    id: "taylor-1891-6",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Ahadi ni deni.",
+    literalTranslation: "A promise is a debt.",
+    meaning:
+      "The poet Bwana Muyaka uses this proverb as follows:— 'Ahadi na miithaki ‖ mwenyi kumpa mwenziwe / Ni deni katika haki ‖ na kulipa ijuziye: / Na mwendapo kushitaki ‖ hukuata ufungiwe. / Enda kauze wambiwe ‖ kwamba ahadi si deni.' ('A promise and a covenant, he that makes it with his fellow, It is a debt in justice and it behoves to pay it: And when you go to accuse [at the bar of justice] it leaves you to be bound [i.e. loses you your liberty]. Go and inquire whether a promise is not a debt.') Note: ijuziye = imejuzu (old form of perfect); ufungiwe (2s subj. passive of kufunga); wambiwe = uambiwe.",
+    englishEquivalent: "Promise is debt.",
+    theme: "character",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #6, p. 2",
+  },
+  {
+    id: "taylor-1891-35",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Asiyenitua kwa hili langu, akiwa na lakwe nasitumai.",
+    literalTranslation: "He that will not give me a helping hand (or, oblige me) with this matter of mine, let him not expect (help) when he has his own (affair).",
+    meaning:
+      "Tua means strictly 'to relieve a person by helping him down with his load' (kutua mzigo, used both of setting down one's own load and of relieving another). In this phrase there are two objects, one only of which is expressed (-ni- 'me'), the other being implied ('mzigo'); kwa is instrumental ('by means of' = 'in'). Understand neno with hili and lakwe.",
+    englishEquivalent: "One good turn deserves another; if you will not help your neighbour, do not expect help in your own need.",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #35, pp. 7–8",
+  },
+  {
+    id: "taylor-1891-79",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Hakuna zaidi mbovu: Fungat'o haiumizi mkono.",
+    literalTranslation: "There is no ill increase: Bind-well hurts not the arm.",
+    meaning:
+      "(1) Spare no pains: (2) Sometimes applied to excuse the acceptance (!) of a gift of no great value, 'Store is no sore.' Fungat'o = Funga vizuri (bind thoroughly); -t'o is an enclitic adverb of thoroughness equivalent to vizuri, found throughout the Nyika (Mijikenda) dialects and in Kimvita Swahili.",
+    englishEquivalent: "Store is no sore; fast bind, fast find.",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #79, pp. 14–15",
+  },
+  {
+    id: "taylor-1891-88",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Heri adui mwerevu kama rafiki mpumbavu.",
+    literalTranslation: "Better is a clever enemy than a blundering (stupid) friend.",
+    meaning:
+      "The French also have 'Un ami maladroit est souvent pire qu'un ennemi adroit'; and the Egyptians, ''Adâwat el 'âkil walâ sahbat el jâhil'; and the same moral is found in Pilpay's Fable of 'The Bear and the Gardener.' Note the idiomatic use of kama ('as') for 'than' after heri.",
+    englishEquivalent: "Better a wise enemy than a foolish friend.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #88, pp. 16–17",
+  },
+  {
+    id: "taylor-1891-98",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Hizi sitaha si huja: nawacha nanywi nichani.",
+    literalTranslation: "This politeness is out of place: I fear you, and do ye fear me.",
+    meaning:
+      "Used to unmask the enmity of a person who for his own ends conceals it under an assumed politeness. Sitaha (here plural in form for singular) means respect, constraint, politeness. Si huja = hazina maana ('have no meaning'). Nawacha = na-wa-cha ('I fear you'); nichani = ni-cha-ni ('fear ye me', from kucha 'to fear/reverence').",
+    englishEquivalent: "Drop false politeness when mutual distrust is plain.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #98, pp. 19–20",
+  },
+  {
+    id: "taylor-1891-101",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Hujui kula na kipofu, usingemgusa vyanda.",
+    literalTranslation: "You do not know (how) to eat (out of the same dish) with a blind man, (or) you would not touch his fingers.",
+    meaning:
+      "If his fingers (vyanda, pl. of chanda 'finger' in Kimvita/Northern Swahili) are disturbed, they will wander from his particular portion of the common mess into that of the others. Do not arouse suspicion in someone who is already at a disadvantage.",
+    englishEquivalent: "Let sleeping dogs lie; do not disturb a delicate arrangement.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #101, pp. 20–21",
+  },
+  {
+    id: "taylor-1891-132",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kazi isiyo faida kutenda si ada.",
+    literalTranslation: "Work that has no profit, 'tis not the custom to do.",
+    meaning:
+      "Rhyming couplet (faida / ada): people do not customarily undertake labour that yields neither use nor reward.",
+    englishEquivalent: "No man works for nothing.",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #132, pp. 28–29",
+  },
+  {
+    id: "taylor-1891-146",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kikulacho ki nguoni mwako.",
+    literalTranslation: "That which devours thee is in thy clothes.",
+    meaning:
+      "Compare Micah vii. 6 ('A man's enemies are the men of his own house') and § 502 ('T'ek'e la k'uku mwenyewe halimuumizi'). Ki is the Class 7 copula ('it is'—scil. kitu kikulacho, referring to a louse or hidden betrayer within one's own household or inner circle).",
+    englishEquivalent: "A man's foes are those of his own household; a snake in the grass.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #146, p. 31",
+  },
+  {
+    id: "taylor-1891-156",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kisauni kutamea mvinde?",
+    literalTranslation: "Will Kisauni grow the casuarina?",
+    meaning:
+      "Mvinde is the well-known feathery conifer (Casuarina equisetifolia) that grows so luxuriantly on the sandy beaches facing the open sea south of Mombasa. It is never found up the mangrove creeks (such as Kisauni / Frere Town). Moral: You can never get a seafaring man to take to inland life. Other versions: 'Ajabu Mvita kumea mvinde'; 'Ni ajabu Nyali, etc.'; 'Ni ajabu ya bara, etc.' Note: kutamea has the locative subject prefix ku- agreeing with Kisauni.",
+    englishEquivalent: "Can the rush grow up without mire? (Job 8:11); a sailor cannot live far from the sea.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #156, pp. 34–35",
+  },
+  {
+    id: "taylor-1891-159",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kitushi ni p'umba ya uwongo: ukinipa la kweli t'akupa la uwongo.",
+    literalTranslation: "Calling names (lit. abuse) is a handful of mud: if you will give me a true (i.e. a deserved) name, I will give you a false one.",
+    meaning:
+      "P'umba = a clod of earth; uwongo in the first clause is for udongo ('clay/mud'), giving a play on uwongo ('falsehood') in the second clause. Understand jina ('name') or neno ('word') with la kweli and la uwongo.",
+    englishEquivalent: "Give a dog a bad name and hang him; throw plenty of dirt, and some will be sure to stick.",
+    theme: "speech",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #159, pp. 35–36",
+  },
+  {
+    id: "taylor-1891-180",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kulla muata samboye hwenda ali mwanamaji.",
+    literalTranslation: "Every one leaving his (own) vessel goes as a common sailor.",
+    meaning:
+      "Samboye = sambo yakwe; sambo is an archaic Kingozi/poetic word for chombo ('vessel/dhow'). Ali = akawa ('being'). A captain or owner who abandons his own craft must serve as a common seaman (mwanamaji / baharia) on someone else's.",
+    englishEquivalent: "Let not the cobbler go beyond his last (Ne sutor ultra crepidam).",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #180, pp. 40–41",
+  },
+  {
+    id: "taylor-1891-189",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kuonana k'olewa.",
+    literalTranslation: "Meeting together is ordained (by God).",
+    meaning:
+      "When one meets a friend, and the occasion has turned to the profit or pleasure of the parties, on leave-taking one reminds the other that it was not by chance they met. K'olewa = ni kuolewa ('is to be written/ordained by destiny'); see note to § 437 ('Ndoa ni maoleo') on kuola ('to write/decree fate').",
+    englishEquivalent: "Meetings are ordained by Providence.",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #189, pp. 44–45",
+  },
+  {
+    id: "taylor-1891-200",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kutua-tua, kutua si kwema. Mtomwa-mwiwa hawi mtembezi.",
+    literalTranslation: "Grating, grating; grating is not good. He that has a thorn pricking him will not be a walker.",
+    meaning:
+      "See § 80 ('Hakuna ziada mbovu: mti utomao haugemi'). Kutua-tua means to rub, grate, or chafe continually. Mtomwa-mwiwa = mt'u aliyechomwa ni mwiwa ('a person pierced by a thorn'). The grating alluded to is the fitina-fitina—intriguing and treachery—going on against a public man, and its distracting effects upon him.",
+    englishEquivalent: "Constant chafing wears a man down; a thorn in the foot stops the traveller.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #200, pp. 46–47",
+  },
+  {
+    id: "taylor-1891-205",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kuzimu kuna mambo.",
+    literalTranslation: "In the other world there are affairs (i.e. terrible things).",
+    meaning:
+      "Kuzimu is the unseen spirit-world or place of the departed (from the root -zima 'extinguish/go out', with locative ku-). Used to express awe at the mysteries of death and the hereafter.",
+    englishEquivalent: "There are more things in heaven and earth than are dreamt of in our philosophy.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #205, pp. 47–48",
+  },
+  {
+    id: "taylor-1891-222",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Likiwika lisiwike kutakucha, twende zetu!",
+    literalTranslation: "Whether (the cock) crow or no, it will dawn, let us away!",
+    meaning:
+      "Understand jimbi ('cock', Class 5 li-). In certain things, instinct and experience warrant us to take action unhesitatingly, without waiting for further evidence whether it be forthcoming or no.",
+    englishEquivalent: "Time and tide wait for no man; dawn will come whether the cock crows or not.",
+    theme: "courage",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #222, pp. 50–51",
+  },
+  {
+    id: "taylor-1891-226a",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili — Addendum)",
+    indigenous: "Mabua mawili hayaelekani.",
+    literalTranslation: "Two corn-stalks never correspond in height.",
+    meaning:
+      "Swahili Addendum [226a] (p. 162): That is to say, If you reap a good harvest after this year's cultivation, next year you will fail—'Maana, Ukivuna mwaka huu, mwakani utakosa.' Hayaelekani = hayalingani ('do not match/equal one another').",
+    englishEquivalent: "No two harvests are alike; fat years and lean years alternate.",
+    theme: "patience",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Addendum #[226a], p. 162",
+  },
+  {
+    id: "taylor-1891-229",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Maji; k'umbwe na kinweo: matupu yasonga moyo.",
+    literalTranslation: "(As for) water; (give me) the morsel of food and (then) the beverage: all by itself it gives a man the colic (lit. compresses the heart).",
+    meaning:
+      "K'umbwe is a snack or mouthful of food taken before drinking; kinweo (kinyweo) is a draught or beverage. Drinking water on an empty stomach without food is said to compress the chest (yasonga moyo).",
+    englishEquivalent: "Bread before beverage; water alone chills an empty stomach.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #229, pp. 52–53",
+  },
+  {
+    id: "taylor-1891-231",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Maji yaliyomwaika hayazoeleki.",
+    literalTranslation: "Water that has been spilt is not to be scooped up (like grain).",
+    meaning:
+      "See § 404 ('Neno likitamkwa halirudi'). Compare 2 Samuel xiv. 14 ('For we must needs die, and are as water spilt on the ground, which cannot be gathered up again'). Kimvita kumwaika = Kiunguja kumwagika; kuzoeleka = kuzoleka (from kuzoa 'to gather up in the hands').",
+    englishEquivalent: "It is no use crying over spilt milk; water spilt on the ground cannot be gathered up again.",
+    theme: "speech",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #231, p. 53",
+  },
+  {
+    id: "taylor-1891-234",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mali ya bahili huliwa ni dudu (or, ndiyo mali ya bahili, kula dudu).",
+    literalTranslation: "The wealth of a miser is consumed by insects (or, that is the miser's wealth, for insects to eat).",
+    meaning:
+      "Compare St. Matthew vi. 19 ('Where moth and rust doth corrupt') and the Giryama version § 611 ('Mali ga mukolo galigwa ni m'oho', 'The wealth of the miser is consumed by fire'). Note Kimvita passive agent particle ni ('by insects').",
+    englishEquivalent: "A miser's hoard goes to the worms.",
+    theme: "greed",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #234, pp. 53–54",
+  },
+  {
+    id: "taylor-1891-242",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mambo yafaayo wat'u ni yangiayo chunguni.",
+    literalTranslation: "The matters that are of use to people are—those that go into the pot.",
+    meaning:
+      "Contrasts fair words and empty promises with tangible gifts and practical sustenance that actually feed the household (yangiayo chunguni).",
+    englishEquivalent: "Fine words butter no parsnips.",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #242, pp. 55–56",
+  },
+  {
+    id: "taylor-1891-293",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mngu hufufua nyama kitangani.",
+    literalTranslation: "God raiseth an animal to life from the curing mat (on which the meat is cut up).",
+    meaning:
+      "Kitanga is the round plaited mat on which butchered meat is laid out to be cut up or cured. Even when a person seems utterly ruined or at death's door, God can restore them to life and prosperity. Never despair.",
+    englishEquivalent: "While there is life there is hope; with God all things are possible.",
+    theme: "patience",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #293, pp. 66–67",
+  },
+  {
+    id: "taylor-1891-298",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mnyonge kupata haki ni mwenyi nguvu kupenda.",
+    literalTranslation: "The mean man('s) getting his right depends on (lit. is) the powerful man('s) liking.",
+    meaning:
+      "Reflects the realities of power in coastal courts: a poor or powerless person (mnyonge) only obtains justice (haki) when the powerful man consents to grant it.",
+    englishEquivalent: "Might often rules over right.",
+    theme: "leadership",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #298, pp. 67–68",
+  },
+  {
+    id: "taylor-1891-326",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mti haushuliki illa kwa mti wenziwe.",
+    literalTranslation: "A log (tree) is not to be pushed along except by a log its fellow.",
+    meaning:
+      "Kushulika is the neuter-passive of kushua ('to launch or lever a heavy log or dhow with wooden rollers/levers'). Used in a wider and nobler application than 'Set a thief to catch a thief': it takes an equal or a peer to move a person of weight.",
+    englishEquivalent: "Diamond cut diamond; iron sharpens iron.",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #326, pp. 73–74",
+  },
+  {
+    id: "taylor-1891-332",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mt'u akataae mwito hukataa etiwalo.",
+    literalTranslation: "The man that says 'No' to a call, says 'No' to what he is called for.",
+    meaning:
+      "Compare § 12 ('Akataaye mwito hukataa aitiwalo'). Etiwalo = a-itiwa-lo ('that for which he is called', with vowel coalescence a + i > e). Refusing an invitation or summons forfeits whatever benefit or council awaited there.",
+    englishEquivalent: "He who refuses the summons refuses the gift.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #332, pp. 74–75",
+  },
+  {
+    id: "taylor-1891-333a",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili — Addendum)",
+    indigenous: "Mt'u apandacho ndicho avunacho.",
+    literalTranslation: "Whatsoever a man soweth, that shall he also reap.",
+    meaning:
+      "Swahili Addendum [333a] (p. 162): Compare 'Kuvuna ni ile mbeu'—The reaping depends on the seed, and Galatians vi. 7. 'Mt'u afanyae mema hwenda akavuna mema, na maovu ni vivyo' (A man who does good goes on to reap good, and evil likewise).",
+    englishEquivalent: "Whatsoever a man soweth, that shall he also reap (Galatians 6:7).",
+    theme: "character",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Addendum #[333a], p. 162",
+  },
+  {
+    id: "taylor-1891-336",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mt'u awafanyae wat'u mema, nae Mngu humlipa mambo mema.",
+    literalTranslation: "The man who does good to others, God requites him with good things too.",
+    meaning:
+      "Compare § 385 ('Mwenyi kutenda mema, hujitendea mwenyewe') and St. Luke vi. 38 ('Give, and it shall be given unto you'). Awafanyae = awafanyaye (double object: wat'u and mema).",
+    englishEquivalent: "Do good and good shall come to you.",
+    theme: "character",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #336, pp. 75–76",
+  },
+  {
+    id: "taylor-1891-342",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mt'u hwenda na uchao, hendi na utwao.",
+    literalTranslation: "A man goes with dawn, (he does) not (go) with eve.",
+    meaning:
+      "Understand usiku ('night/day-cycle') with uchao ('dawning', from kucha) and mchana ('daylight') with utwao ('setting', from kutwa). Taylor's gloss: 'Mt'u hufanya neno lililo na mwisho mwema, hafanyi neno lililo na mwisho mbaya'—A man undertakes what has a prospect of brightening success, and not what is darkening toward failure.",
+    englishEquivalent: "Follow the rising sun, not the setting sun; embark on enterprises that have a bright future.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #342, pp. 76–77",
+  },
+  {
+    id: "taylor-1891-351",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mtumwa ni hayawana 'adua 'llâhi u rasul.",
+    literalTranslation: "A servant is a brute beast, an enemy of God and the Prophet.",
+    meaning:
+      "Recorded by Taylor (p. 78) with a sharp note contrasting this harsh Arab-Swahili master's saying with older indigenous African proverbs (§§ 198, 221, 567) that recognize shared humanity.",
+    englishEquivalent: "Harsh masters speak harshly of those who serve them.",
+    theme: "leadership",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #351, p. 78",
+  },
+  {
+    id: "taylor-1891-353",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Muangasa mbili mbambo mwenga humuenga-enga.",
+    literalTranslation: "He that 'tackles' two wing-bones at once, one of them eludes him.",
+    meaning:
+      "Kwangasa = kuambata ('to clasp/grasp/tackle'); mbambo (pl. of ubambo) = wing-bones of a fowl; mwenga = mmoja ('one', common in Kingozi and Mijikenda); humuenga-enga = slips away from him / mocks him. Compare §§ 354, 409, 432, 647b, 665.",
+    englishEquivalent: "One thing at a time; grasp all, lose all.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #353, pp. 78–79",
+  },
+  {
+    id: "taylor-1891-355a",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili — Addendum)",
+    indigenous: "Muata-mwongo ni muongo.",
+    literalTranslation: "He that forsakes association makes a mistake (lit. is a liar).",
+    meaning:
+      "Swahili Addendum [355a] (p. 162): Wordplay on mwongo ('party, company, guild, age-set, association of people', pl. miyongo) and muongo ('liar / one who errs'). Taylor's gloss: 'Maana aliyetoka katika miyongo ya wat'u hawi mt'u. Man is a Social Animal.'",
+    englishEquivalent: "Man is a social animal; he who isolates himself from the community goes astray.",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Addendum #[355a], p. 162",
+  },
+  {
+    id: "taylor-1891-357",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mume ni moto wa k'oko, usipowaka utafuka.",
+    literalTranslation: "A man is a fire of the jungle, if it burn not it will smoulder.",
+    meaning:
+      "K'oko is dry brushwood or thicket in the bush. Even when a resolute person does not blaze into open action immediately, their purpose continues to smoulder beneath the ashes.",
+    englishEquivalent: "Still waters run deep; a smouldering fire is not dead.",
+    theme: "courage",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #357, pp. 79–80",
+  },
+  {
+    id: "taylor-1891-371",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Mwana wa mt'u ni kizushi, akizuka, zuka nae.",
+    literalTranslation: "Man (lit. The son of man) is an upstart; when he starts up, do you start up with him.",
+    meaning:
+      "Kizushi (from kuzuka 'to pop up suddenly, emerge unexpectedly') means an unpredictable creature or sudden novelty. Mortal man is capable de tout: be prepared for anything, surprised at nothing, in his conduct, and rise to meet him on equal terms.",
+    englishEquivalent: "Forewarned is forearmed; match a sudden move with equal readiness.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #371, pp. 85–86",
+  },
+  {
+    id: "taylor-1891-396a",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili — Addendum)",
+    indigenous: "Mwongo wa k'uku mbanawe [mbanawe = ni wanawe].",
+    literalTranslation: "The hen's importance is among her offspring. (Lit. The back of a fowl is its children, i.e., The part it bears in government is, its own chicks.)",
+    meaning:
+      "Swahili Addendum [396a] (pp. 162–163): Mwongo (= maongo 'back') here signifies dignity, authority, or standing; mbanawe is the archaic/Kimvita contraction of ni wanawe ('is her children'; cf. mbwangu = ni wangu). Taylor's gloss: 'Maana, Utukufu wa k'uku ni wanawe, kwani ndio wamfuatao, na mt'u nae ni vivyo, utukufu wakwe ni kwa jamaa zakwe' (A person's true honour and following is among their own family and kin).",
+    englishEquivalent: "A leader's true honour is the loyalty of their own household.",
+    theme: "family",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Addendum #[396a], pp. 162–163",
+  },
+  {
+    id: "taylor-1891-403",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Nahodha mtaka-chombo si mjinga wa safari.",
+    literalTranslation: "The captain wanting a vessel is not altogether ignorant of a voyage.",
+    meaning:
+      "A dhow captain (nahodha) who applies for command of a vessel (mtaka-chombo) already knows something of navigation and sea-voyages; do not presume a serious applicant is a complete novice.",
+    englishEquivalent: "He who seeks the helm knows the sea.",
+    theme: "leadership",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #403, pp. 96–97",
+  },
+  {
+    id: "taylor-1891-432",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Nia haikuwa moja, ndipo usipate jambo.",
+    literalTranslation: "Your intention was not single, hence you have not been successful (lit. obtained the matter).",
+    meaning:
+      "Compare St. James i. 7, 8 ('A double-minded man is unstable in all his ways') and §§ 353, 354, 409. Note the negative consecutive subjunctive ndipo usipate ('hence it is that you did not obtain').",
+    englishEquivalent: "A double-minded man accomplishes nothing; single-mindedness wins the day.",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #432, pp. 102–103",
+  },
+  {
+    id: "taylor-1891-438a",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Nyani haoni kundule, huliona la mwenziwe.",
+    literalTranslation: "The ape sees not his own hinder parts, he sees his neighbour's.",
+    meaning:
+      "Kundule = kundu lakwe (archaic enclitic possessive -le on Class 5 noun). Taylor's gloss: 'Mt'u haoni aibu yakwe, huona ya mwenziwe'—A man sees not his own defects, but his neighbour's. Compare St. Luke vi. 41, 42 (the mote and the beam) and the Nyika variation § 647c ('Nyani anatsekana ngoko / ts'ugu').",
+    englishEquivalent: "The pot calls the kettle black; we see others' faults more readily than our own.",
+    theme: "humility",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #438a, pp. 103–104",
+  },
+  {
+    id: "taylor-1891-457",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Penyi k'uku hapamwaywi mtele.",
+    literalTranslation: "Where there are fowls about, rice should not be (is not) poured out.",
+    meaning:
+      "As the man who wishes to dry his husked rice (mtele = Kiunguja mchele) will not pour it out (hapamwaywi, passive of kumwaya = kumwaga) in the way of the fowls, so those who wish to discuss private matters should not unfold them before domestics, children, or gossips. Compare 'Little pitchers have long ears' and the Rabai proverb § 646a.",
+    englishEquivalent: "Little pitchers have long ears; do not spread secrets where they will be pecked up.",
+    theme: "speech",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #457, pp. 108–109",
+  },
+  {
+    id: "taylor-1891-480",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Siati huru nikiwiwa.",
+    literalTranslation: "I do not make my servant a freed-man (I do not leave free) while I am in debt.",
+    meaning:
+      "Kuata huru (Kiunguja kuacha huru) = to manumit/emancipate; kuwiwa (passive of archaic kuwia) = to be owed against / to be in debt. One must discharge one's just obligations before making costly displays of generosity.",
+    englishEquivalent: "Be just before you are generous.",
+    theme: "character",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #480, pp. 112–113",
+  },
+  {
+    id: "taylor-1891-497",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Siteti na mwandaniwa / Kwa mt'u mweni wa leo. / Mt'u mweni ni k'engewa, / Huruk'a akenda kwao.",
+    literalTranslation: "I quarrel not with my comrade on account of a stranger of to-day. A stranger is a hawk, it flies and goes away home.",
+    meaning:
+      "And that, with all he can get: whereas an old friend (mwandaniwa = mwandani wangu 'my intimate companion') may be looked to for help in the day of need. Mweni (Kiamu/Kimvita poetic for mgeni) = stranger/guest; k'engewa = kite/hawk. See quotations in § 490.",
+    englishEquivalent: "Make not new friends at the expense of old ones; a bird of passage soon flies away.",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #497, pp. 116–117",
+  },
+  {
+    id: "taylor-1891-501",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Tamu tulikula sote: na utungu vumilia.",
+    literalTranslation: "We ate the sweet together, then bear thou even with the bitter.",
+    meaning:
+      "Utungu (Kimvita for uchungu) = bitterness, pain, hardship. True comrades who shared good fortune together must also stand by one another in adversity.",
+    englishEquivalent: "Take the rough with the smooth; share both the sweet and the bitter.",
+    theme: "patience",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #501, pp. 117–118",
+  },
+  {
+    id: "taylor-1891-505",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "T'endea-mbwa, ajuaje fadhiliye?",
+    literalTranslation: "He that does (favours) to a dog—how can it recognize his benefits?",
+    meaning:
+      "T'endea-mbwa is a compound verbal noun/imperative ('Do-good-to-a-dog'); fadhiliye = fadhili yakwe ('his kindness'). Compare § 449 ('P'aka hakubali kulala chali') on ingratitude.",
+    englishEquivalent: "Cast not pearls before swine; an ungrateful person forgets every kindness.",
+    theme: "gratitude",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #505, pp. 118–119",
+  },
+  {
+    id: "taylor-1891-510",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "T'umbiri kukosa bungo, alisema, \"Li utungu.\"",
+    literalTranslation: "The monkey (on) missing the bungo-fruit, pronounces of it, 'It is bitter!'",
+    meaning:
+      "Bungo (Class 5 li-) is the delicious orange-acid fruit of the Landolphia rubber-vine. Equivalent to Aesop's fable of 'The Fox and the Grapes' and the Arabic proverb 'Man lâ yersel lil 'ankûd yekâl 'aleih hâmidh' ('He who cannot reach the bunch of grapes says of it: It is sour').",
+    englishEquivalent: "Sour grapes!",
+    theme: "humility",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #510, pp. 119–120",
+  },
+  {
+    id: "taylor-1891-541",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Umpe p'aka utumbo, mwenyewe uleni?",
+    literalTranslation: "(Put the case) that you give the cat the entrails, what are you going to eat yourself?",
+    meaning:
+      "Uleni = u-le-ni ('what would you eat?', subjunctive ule + enclitic interrogative -ni 'what?'). Said ironically to a miser who has promised someone a paltry gift that he himself is too stingy to part with.",
+    englishEquivalent: "Will a miser part with his own scraps?",
+    theme: "greed",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #541, pp. 124–125",
+  },
+  {
+    id: "taylor-1891-546",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Uungwana haufai, bora ni ndarama.",
+    literalTranslation: "Gentle birth avails not, the important thing is—dollars.",
+    meaning:
+      "Ndarama (from Arabic dirham) = money, silver coinage, wealth. A satirical commentary on how wealth eclipses noble birth (uungwana) when a freeborn person falls into poverty.",
+    englishEquivalent: "Birth is much, but money is more.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #546, pp. 125–126",
+  },
+  {
+    id: "taylor-1891-551",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Usidharau kiselema, chalima kikapita jembe zima.",
+    literalTranslation: "Despise not an old worn hoe, it cultivates and surpasses a sound hoe.",
+    meaning:
+      "Kiselema is a worn-down hoe blade whose edge has been tempered and sharpened by long use, often cutting through weeds better than a brand-new hoe (jembe zima). Compare § 490 on valuing tried and experienced elders or tools.",
+    englishEquivalent: "Despise not an old tool; experience outworks untried youth.",
+    theme: "wisdom",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #551, pp. 126–127",
+  },
+  {
+    id: "taylor-1891-577",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Walio t'ini mwa minga leo wako madarini.",
+    literalTranslation: "Those who were (lit. are) under the 'mnga' trees, are now to be found in houses.",
+    meaning:
+      "Minga (pl. of mnga, a species of thorny acacia tree in the wilderness); madarini (loc. pl. of dari, the upper storey or terraced roof of a stone townhouse). Found in the same poem as § 578 ('Walio t'ini mwa mti leo wako mwangani'), illustrating the sudden reversals of human fortune.",
+    englishEquivalent: "The wheel of fortune turns: those once in the bush now dwell in stone mansions.",
+    theme: "humility",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #577, pp. 131–132",
+  },
+  {
+    id: "taylor-1891-586",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Wat'u wakomesheni uwongo wao na uzuzi wauate.",
+    literalTranslation: "Stop ye the people from their lying, and let them leave slanderous inventions.",
+    meaning:
+      "Uzuzi (from kuzua 'to bore through, invent, fabricate') = false rumours, slanderous inventions; wauate = wauache ('let them forsake it'). An exhortation against gossip and fabrication.",
+    englishEquivalent: "Put away lying and slanderous inventions.",
+    theme: "speech",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #586, pp. 132–133",
+  },
+  {
+    id: "taylor-1891-599",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Zani haina hazana; ni ukuba wa mbeleni.",
+    literalTranslation: "A crime admits of no hiding; it brings its retribution in the future.",
+    meaning:
+      "Zani = crime, sin, adultery, evil deed; hazana = treasure-store or secret hiding-place; ukuba = evil consequence, calamity, retribution hereafter (mbeleni).",
+    englishEquivalent: "Murder will out; be sure your sin will find you out.",
+    theme: "character",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #599, pp. 134–135",
+  },
+  {
+    id: "taylor-1891-604",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Giryama — Taylor 1891 #604)",
+    indigenous: "Hinde! hinde!—ni kuikana.",
+    literalTranslation: "Let us go! let us go!—implies a previous agreement (lit. ... is settling / placing one another).",
+    meaning:
+      "Giryama Proverb #604 (pp. 136–137): Hinde! ('Let us go!') is the Giryama cohortative; kuikana is the reciprocal of kuika ('to put/place/appoint' = Swahili kuwekana / kuagana). Compare Swahili § 446 ('Pakua! pakua! ni kuagana') and Amos iii. 3 ('Can two walk together, except they be agreed?').",
+    englishEquivalent: "Can two walk together, except they be agreed? (Amos 3:3).",
+    theme: "unity",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Giryama Proverb #604, pp. 136–137",
+  },
+  {
+    id: "taylor-1891-634a",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Nyika / Rabai — Taylor 1891 #634a)",
+    indigenous: "Angwe—ndugu-ye ni ulongo.",
+    literalTranslation: "'They say' is own brother to a lie (lit. his brother is a lie).",
+    meaning:
+      "Nyika Proverb #634a (pp. 145–146): Angwe ('It is said / They say') is the passive/impersonal of kuamba. Taylor quotes Rebmann's comment: 'Kikulu ni kuona mwenye na matso'—The chief thing is to see (it) yourself, with your own eyes.",
+    englishEquivalent: "'They say' is half a lie; seeing is believing.",
+    theme: "speech",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #634a, pp. 145–146",
+  },
+  {
+    id: "taylor-1891-635aa",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Nyika / Rabai — Taylor 1891 #635aa)",
+    indigenous: "Finya matso uteme mwatsa!",
+    literalTranslation: "Close your eyes and hew down the euphorbia!",
+    meaning:
+      "Nyika Proverb #635aa (pp. 146–147): The mwatsa (candelabra euphorbia) possesses a noxious milky juice or sap that may easily spurt into the eyes of the person that hacks at this tree, as one sometimes must for the sake of the inner wood, from which mikulugo (potstirrers) are wont to be made. Appropriate to any unpleasant duty that one must perform while taking proper precautions against injury.",
+    englishEquivalent: "Grasp the nettle firmly, but guard your eyes.",
+    theme: "courage",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #635aa, pp. 146–147",
+  },
+  {
+    id: "taylor-1891-638a",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Nyika / Rabai — Taylor 1891 #638a)",
+    indigenous: "M'oyo uazako, be ndo uendako.",
+    literalTranslation: "Where the heart desires, there it goes. (Lit. Where the heart thinks/ponders, well, that is where it goes.)",
+    meaning:
+      "Nyika Proverb #638a (pp. 150–151): Kuaza = Swahili kuwaza ('to think, ponder, desire'); be is the Mijikenda particle 'well then'; ndo = ndiko ('that is where').",
+    englishEquivalent: "Where there's a will there's a way; where your treasure is, there will your heart be also.",
+    theme: "hard-work",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #638a, pp. 150–151",
+  },
+  {
+    id: "taylor-1891-640d",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Nyika / Rabai — Taylor 1891 #640d)",
+    indigenous: "Mukono wa t'undu.",
+    literalTranslation: "A hand with a hole in it (lit. of a hole).",
+    meaning:
+      "Nyika Proverb #640d (pp. 151–152): Said of a spendthrift or one who cannot keep what he possesses—everything slips through his fingers as through a hole (t'undu).",
+    englishEquivalent: "Money burns a hole in his pocket; a sieve-handed spendthrift.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #640d, pp. 151–152",
+  },
+  {
+    id: "taylor-1891-647c",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Nyika / Rabai — Taylor 1891 #647c)",
+    indigenous: "Nyani anatsekana ngoko (or, ts'ugu).",
+    literalTranslation: "Apes laugh at one another's callosities.",
+    meaning:
+      "Nyika Proverb #647c (p. 153): Compare Swahili § 438a ('Nyani haoni kundule, huliona la mwenziwe'). Ngoko (or ts'ugu) = the bare callosities on an ape's hindquarters.",
+    englishEquivalent: "The kettle blames the pot.",
+    theme: "humility",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #647c, p. 153",
+  },
+  {
+    id: "taylor-1891-666",
+    languageId: "swahili",
+    languageName: "Luganda Comparative Proverb in Taylor (1891 #666, via Rev. R. P. Ashe)",
+    indigenous: "Akwata empola atuka wala.",
+    literalTranslation: "He who goes [lit. holds (the way)] gently reaches afar.",
+    meaning:
+      "Uganda Proverb #666 (p. 161, communicated by Rev. Robert P. Ashe, M.A., C.M.S.): Compare the Italian 'Chi va piano va sano, chi va sano va lontano' and the Swahili equivalent § 360 ('Mwana-simba kupata nyama ni kutambaa', 'A lion's whelp gets its prey by creeping').",
+    englishEquivalent: "Slow and steady wins the race (Chi va piano va sano e va lontano).",
+    theme: "patience",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Uganda Proverb #666, p. 161",
+  },
+  {
+    id: "taylor-1891-667",
+    languageId: "swahili",
+    languageName: "Luganda Comparative Proverb in Taylor (1891 #667, via Rev. R. P. Ashe)",
+    indigenous: "Nkereketanye wogitega amemvu erya bibombo.",
+    literalTranslation: "The 'nkereketanye' (a rat), when you set a trap for it with ripe bananas,—eats bibombo (a sweet little fruit that is found in the wilderness).",
+    meaning:
+      "Uganda Proverb #667 (p. 161, communicated by Rev. R. P. Ashe): A shrewd person sees through a tempting bait (amemvu 'ripe bananas') and prefers humble, safe fare in the bush (bibombo) to walking into a trap.",
+    englishEquivalent: "An old bird is not caught with chaff; better safe wild berries than a baited trap.",
+    theme: "caution",
+    sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Uganda Proverb #667, p. 161",
+  },
+];
+
+const TAYLOR_1891_VERBATIM_CORRECTIONS: Record<string, Partial<ProverbItem>> = {
+  "taylor-1891-24": {
+    indigenous: "Aliye k'ando haangukiwi ni mti.",
+    literalTranslation: "He that is aloof (from it) is not fallen on by the tree.",
+    meaning:
+      "Moral: Don't go too near, and you will be safe. Note the double-passive construction haangukiwi (negative habitual/present passive of kuangukia, Applied stem of kuanguka 'to fall') followed by the Kimvita agent particle ni ('by the tree').",
+  },
+  "taylor-1891-71": {
+    indigenous: "Ganda la muwa la jana chungu kaona kivuno.",
+    literalTranslation: "The rind of yesterday's sugar-cane, (in it) the black ant has found a harvest.",
+    meaning:
+      "Kaona is contracted for akaona. Compare §§ 490 and 551: what one person casts aside as exhausted refuse may be a rich windfall to another.",
+  },
+  "taylor-1891-83": {
+    indigenous: "Hana kamba ya ulimi (printed 'Hana kaba ya ulimi' on p. 15; emended by Taylor in Author's Preface p. ix fn. 1).",
+    literalTranslation: "He has no cord (bridle) to his tongue (or, He has no lining to his tongue).",
+    meaning:
+      "In the Author's Preface (p. ix, note 1), Rev. W. E. Taylor explains: 'Occasionally, an Aforism has been recovered originally from writing. Thus some slight corruptions may have crept in here and there—e.g. for Hana kaba ya ulimi, the Editor has now little doubt it should have been printed Hana kamba; replacing the word \"lining\" by \"cord,\" since the letter ب in the miserably inadequate Swahili-Arabic Character stands for either b or mb.'",
+  },
+  "taylor-1891-84": {
+    indigenous: "Hapati mwenyi pupa, hupata mwenyi subira.",
+    literalTranslation: "Not the eager man gets, (but) the patient man gets.",
+    meaning:
+      "Contrasts pupa (greedy haste, over-eagerness) with subira (patient endurance). Compare § 499 ('Subira ni ufunguo wa faraji').",
+  },
+  "taylor-1891-94": {
+    indigenous: "Heri kufa mato kuliko kufa moyo.",
+    literalTranslation: "Better the eyes to die (to lose the eyes) than the heart to die.",
+    meaning:
+      "Better physical blindness (kufa mato) than losing courage, hope, and moral resolve (kufa moyo).",
+  },
+  "taylor-1891-112": {
+    indigenous: "Jaha likisha kupita, tambuu hupata t'oko.",
+    literalTranslation: "When good luck is gone by (one), the betel-leaf gets (a coating of) lime.",
+    meaning:
+      "Not a right balance and blend of the proper ingredients (popoo areca-nut, tambuu betel-leaf, and t'oko quicklime) making a delicious chew—like Bwana Muyaka's 'Tambuu ya mirakaru / popoo ya tumbuizi, / T'okoye ya kufufua'—but a caricature and an abortion which will burn the mouth that attempts to masticate it.",
+  },
+  "taylor-1891-118": {
+    indigenous: "Jifya moja haliinjiki chungu.",
+    literalTranslation: "One cooking-stone does not (suffice to) set the pot upon the fire.",
+    meaning:
+      "A Swahili hearth requires three cooking-stones (mafiga / mafya matatu) to balance a cooking pot (chungu); one person alone cannot sustain a household or community enterprise.",
+  },
+  "taylor-1891-127": {
+    indigenous: "K'ambiwa, 'Shokangwa ni shoka la wat'u: liate, lielekezwe.'",
+    literalTranslation: "I was told, 'Shokangwa means somebody else's axe: leave it alone, let it be put away.'",
+    meaning:
+      "Showcases the enclitic Possessive Pronoun of Alienation -ngwa ('somebody else's', treated in Appendix B, pp. 166–167): shokangwa = shoka la wat'u. K'ambiwa = nikaambiwa ('and I was told').",
+  },
+  "taylor-1891-128": {
+    indigenous: "K'ani za mvuvi zikija kwa pepo za kusi zielekeze.",
+    literalTranslation: "When the fisherman's violence comes with the southerly winds, put up with it (lit. direct it).",
+    meaning:
+      "The fishermen earn scarcely anything during the boisterous south-west monsoon (Kusi, April–October), so they are very short-tempered (k'ani). Taylor's footnote (p. 28) codifies the 5 Swahili seasons: (1) Kaskazi (N.E. Monsoon, Nov.–Mar., hot dry season); (2) Mwaka or Masika (March–May, heavy rains when Kusi sets in); (3) Kusi (May–Oct., cooler weather with showers); (4) Mchoo (heavy ten-day showers about September); and (5) Vuli (lesser rains in October–November before Kaskazi returns).",
+  },
+  "taylor-1891-135": {
+    indigenous: "K'azi mbi si mtezo mwema?",
+    literalTranslation: "Is not bad work (as good as) good play?",
+    meaning:
+      "Even imperfect work (k'azi mbi, preserving the archaic Bantu adjective stem -wi / -bi 'bad') is better than the finest idleness (mtezo mwema). Compare §§ 79 and 80.",
+  },
+  "taylor-1891-138": {
+    indigenous: "K'enda karibu na waridi: sikupata iliki, k'apata harufu.",
+    literalTranslation: "I went near the rose: I did not get cardamom, (yet) I got the perfume.",
+    meaning:
+      "Adapted from the Persian apologue of Sa'di ('Though I am not the rose, I have dwelt near the rose'). K'enda = nikaenda; k'apata = nikapata. Associating with the wise and noble imparts their fragrance even if one does not gain material wealth.",
+  },
+  "taylor-1891-149": {
+    indigenous: "Kilimia kikizama kwa jua huzuka kwa mvua; kikizama kwa mvua huzuka kwa jua.",
+    literalTranslation: "When the Pleiades set in sun (sunny weather) they rise in rain; when they set in rain they rise in sun.",
+    meaning:
+      "Kilimia ('the Ploughing-cluster', from kulima 'to cultivate') is the indigenous Bantu name for the Pleiades (also called Thureya from Arabic). Coastal farmers and sailors tracked the heliacal setting and rising of Kilimia in May and June/November to forecast the rains.",
+  },
+  "taylor-1891-164": {
+    indigenous: "Komba akipenda mti, husema, 'Mti huu una mizizi' (au, 'Mti huu ni mtelezi').",
+    literalTranslation: "When the galago (bush-baby) likes (dislikes) a tree, he says, 'This tree has roots' (or, 'This tree is slippery').",
+    meaning:
+      "Used of someone who invents transparent excuses to justify their ownpredilection or reluctance.",
+  },
+  "taylor-1891-166": {
+    indigenous: "K'ondoa haiachi k'ondo.",
+    literalTranslation: "Getting rid of (danger) does not leave war (behind).",
+    meaning:
+      "K'ondoa = kuondoa ('removing/averting danger'); k'ondo is the archaic Kingozi and Mijikenda noun for 'war, strife, quarrel' (preserved in modern Swahili mkondo). Taking timely precaution averts open conflict.",
+  },
+  "taylor-1891-181": {
+    indigenous: "Kulla mt'u huvutia k'aa mekani mwakwe.",
+    literalTranslation: "Every man rakes the ember onto his own hearthstones.",
+    meaning:
+      "K'aa = a live coal or ember; mekani (archaic locative of meko, pl. of jiko) = among the three cooking-stones. Everyone naturally looks out for their own household's interest first.",
+  },
+  "taylor-1891-239": {
+    indigenous: "Mambo k'angaja, huja yakaja.",
+    literalTranslation: "Matters are (like) the k'angaja-fish, they come and come again (in shoals).",
+    meaning:
+      "The k'angaja is a small coastal reef fish that swims in dense shoals; troubles and human affairs never come singly.",
+  },
+  "taylor-1891-252": {
+    indigenous: "Mavi ya k'ale hayanuki.",
+    literalTranslation: "Old dung does not stink.",
+    meaning:
+      "Bygones are bygones: old offences that have long dried up should not be stirred up again to make a fresh stench (though if trodden on or wetted they smell anew).",
+  },
+  "taylor-1891-256": {
+    indigenous: "Mbio za sakafuni huishia ukingoni.",
+    literalTranslation: "Running on the flat concrete roof ends at the parapet-edge.",
+    meaning:
+      "Sakafu is the flat lime-and-coral concrete roof of a Swahili stone house; ukingo is its raised rim or edge. Reckless, short-sighted schemes soon hit an impassable limit.",
+  },
+  "taylor-1891-263": {
+    indigenous: "Mchama ago hanyeli, huenda akauya papo.",
+    literalTranslation: "The traveller breaking camp does not defile the camping-ground; he may perchance return to that very spot.",
+    meaning:
+      "Mchama = mhama ('one who shifts camp'); ago (pl. maago) = temporary bush camp or bivouac; hanyeli = hanya ('does not defile it', Applied form kunyea); akauya = akarudi ('and return', Kingozi/Kimvita kuuya 'to go back'). Never burn your bridges on leaving a place or office.",
+  },
+  "taylor-1891-269": {
+    indigenous: "Meno mak'avu hayashindiki kwa nyama.",
+    literalTranslation: "Dry (eager) teeth are not overcome by tough meat.",
+    meaning:
+      "Compare Bwana Muyaka's couplet on craving for flesh-meat (uwiwa): 'Meno mak'avu kwa nyama, usowe una huruma!' Hungry determination overcomes tough obstacles.",
+  },
+  "taylor-1891-278": {
+    indigenous: "Mgeni hachomi mti, mti huchomwa ni mwenyeji.",
+    literalTranslation: "A stranger does not set fire to the tree (or town, mji); the tree is burnt by a native of the place.",
+    meaning:
+      "Whether read mti ('tree') or mji ('town', identical in Swahili-Arabic script), serious ruin to a community is almost always instigated from within by an insider (mwenyeji).",
+  },
+  "taylor-1891-288": {
+    indigenous: "Mkono mmoja hauchinji ng'ombe.",
+    literalTranslation: "One hand does not slaughter an ox.",
+    meaning:
+      "Compare § 141 ('Kidole kimoja hakivunji chawa') and Giryama § 603 ('Chala chimwenga k'achibanda ts'aha'): great tasks require cooperative hands.",
+  },
+  "taylor-1891-301": {
+    indigenous: "Mpanda farasi wawili hupasuka msamba.",
+    literalTranslation: "He who rides two horses at once splits his perineum.",
+    meaning:
+      "Trying to pursue two incompatible loyalties or enterprises simultaneously ends in painful ruin.",
+  },
+  "taylor-1891-319": {
+    indigenous: "Mtaka yote hukosa yote.",
+    literalTranslation: "He who wants all loses all.",
+    meaning:
+      "Illustrated by the coastal story of the greedy fisherman who refused to be content with a moderate catch. Grasp all, lose all.",
+  },
+  "taylor-1891-321": {
+    indigenous: "Mteza na mavi huchafuka (au, hunuka) mkono.",
+    literalTranslation: "He who plays with dung fouls (or makes smelly) his hand.",
+    meaning:
+      "He who meddles with base company or dirty dealings cannot keep his hands clean.",
+  },
+  "taylor-1891-366": {
+    indigenous: "Mwana wa k'uku hafunzwi kuchakura.",
+    literalTranslation: "A chick is not taught how to scratch the ground.",
+    meaning:
+      "Natural instinct and family heritage need no formal schooling. What is bred in the bone comes out in the flesh.",
+  },
+  "taylor-1891-373": {
+    indigenous: "Mwana-maji wa Kwale kufa maji ni mazoea.",
+    literalTranslation: "For a sailor of Kwale to die by water (drowning) is a matter of habit (what he is used to).",
+    meaning:
+      "Seamen who spend their lives braving the reefs of Kwale treat the perils of the sea as their natural element.",
+  },
+  "taylor-1891-377": {
+    indigenous: "Mwanzo wa chanzo ni chane mbili.",
+    literalTranslation: "The beginning of a plaited mat-strip (chanzo) is two slips of palm-leaf (chane mbili).",
+    meaning:
+      "Every fine sleeping-mat (mkeka) begins by plaiting together just two narrow strips of wild date-palm leaf (ukindu). Great works begin from small beginnings.",
+  },
+  "taylor-1891-379": {
+    indigenous: "Mwezi wa k'ombamwiko hauna mwandamo.",
+    literalTranslation: "The 'pot-scraping' month (when food stores are exhausted) has no auspicious new-moon sighting.",
+    meaning:
+      "In times of scarcity when people scrape the cooking-spoon (k'ombamwiko), no one celebrates festivities.",
+  },
+  "taylor-1891-387": {
+    indigenous: "Mwenye kisu kikali ndiye aliaye nyama.",
+    literalTranslation: "He that has the sharp knife is the one who eats the meat.",
+    meaning:
+      "Preparedness and the right tools secure the prize. Aliaye = alaye ('he who eats', Kimvita relative form).",
+  },
+  "taylor-1891-392": {
+    indigenous: "Mwili wa mwenzio ni k'anda la sufi.",
+    literalTranslation: "Your neighbour's body is a bag of kapok (cotton-down).",
+    meaning:
+      "People treat another person's pain or fatigue as if their body were stuffed with painless cotton-wool (sufi).",
+  },
+  "taylor-1891-398": {
+    indigenous: "Mzungu wa kula haufundishwi mwana.",
+    literalTranslation: "The knack (device/instinct) of eating is not taught to a child.",
+    meaning:
+      "Mzungu (Class 3, pl. mizungu) = ingenious device, instinct, or art. Self-preservation and appetite come naturally to every child.",
+  },
+  "taylor-1891-416": {
+    indigenous: "Ngoma ivumayo haikawii kupasuka.",
+    literalTranslation: "The drum that booms loudest does not take long to split.",
+    meaning:
+      "Noisy, boastful ostentation or overstrained intensity soon ends in a sudden collapse. Compare § 417 ('Ngoma ivumayo haina marembo').",
+  },
+  "taylor-1891-431": {
+    indigenous: "Nia njema ni tabibu, nia mbaya huharibu.",
+    literalTranslation: "A good intention is a physician; an evil intention destroys.",
+    meaning:
+      "Rhyming couplet (tabibu / huharibu): goodwill heals and reconciles, whereas malice ruins everything it touches.",
+  },
+  "taylor-1891-445": {
+    indigenous: "P'aka akiondoka, p'anya hutawala.",
+    literalTranslation: "When the cat goes away, the rats hold sway.",
+    meaning:
+      "When the rightful authority is absent, subordinates take liberties.",
+  },
+  "taylor-1891-450": {
+    indigenous: "P'apo kwa p'apo k'amba hukata jiwe.",
+    literalTranslation: "Spot by spot (by constant rubbing on the exact same spot) the rope cuts through the stone.",
+    meaning:
+      "On the coral-stone curbs of Mombasa wells, the soft coir rope drawing water day after day wears deep grooves into solid rock. Compare Ovid's 'Gutta cavat lapidem non vi sed saepe cadendo.'",
+  },
+  "taylor-1891-484": {
+    indigenous: "Siku ya kufa nyani, miti yote huteleza.",
+    literalTranslation: "On the day the ape is fated to die, all the trees grow slippery.",
+    meaning:
+      "When misfortune or destiny overtakes a person, every familiar refuge fails them. Note: In the extended footnote on pp. 113–114, Taylor also catalogues the 18 Swahili terms for gifts and customary fees: zawadi (keepsake brought from a journey), tunu (choice/rare gift), hiba (love-token), hadiya (respectful present), ada (customary fee), kiada (stipulated douceur), rusuma (official due), haki (rightful perquisite), fichuo (bridal unveiling gift to see the bride's face), kilemba (turban-gift to the father-in-law), joho (robe-gift), mkaja (childbirth girdle-gift to the bride's mother), ubeleko (baby-sling cloth gift), kiinua mgongo ('back-lifter' bonus for arduous work), karadha (interest-free friendly loan), k'irimu (hospitality feast), pukusa (handsel/bargain bonus), and bakshishi (gratuity).",
+  },
+  "taylor-1891-487": {
+    indigenous: "Simba mwenda kimya ndiye mla nyama.",
+    literalTranslation: "The lion that goes silently is the one that eats meat.",
+    meaning:
+      "Quiet,focused action succeeds where loud bluster scares away the prize.",
+  },
+  "taylor-1891-511": {
+    indigenous: "T'ungo za mt'u mmoja hazifiki mbali.",
+    literalTranslation: "The compositions (counsels/contrivances) of a single person do not reach far.",
+    meaning:
+      "No single mind sees everything; durable plans require shared counsel.",
+  },
+  "taylor-1891-512": {
+    indigenous: "T'upa t'upu haina maana, illa kwa kitu ndani.",
+    literalTranslation: "An empty bottle has no meaning (value), save for something inside it.",
+    meaning:
+      "Outward form or rank is worthless without inward substance and character.",
+  },
+  "taylor-1891-514": {
+    indigenous: "Udugu wa nazi hukutania chunguni.",
+    literalTranslation: "The brotherhood of coconuts meets together in the cooking-pot.",
+    meaning:
+      "Used ironicaly of relatives or comrades who ignore one another in daily work and only assemble when the meal is ready in the pot.",
+  },
+  "taylor-1891-524": {
+    indigenous: "Ukienda kwa mwenye chongo, nawe fumba lako jito.",
+    literalTranslation: "When you go to a one-eyed man's house, close one of your own eyes too.",
+    meaning:
+      "Adapt yourself tactfully to the customs and sensitivities of your host. When in Rome, do as the Romans do.",
+  },
+  "taylor-1891-526": {
+    indigenous: "Ukiona kwako kunaungua, kwa mwenzio kunateketea.",
+    literalTranslation: "When you see your own house catching fire, your neighbour's is already burning to ashes.",
+    meaning:
+      "Do not suppose your own trials are unique; others may be enduring far heavier affliction.",
+  },
+  "taylor-1891-529": {
+    indigenous: "Ukiona vinaelea, vimeundwa.",
+    literalTranslation: "When you see them (vessels/dhows) afloat, (know that) they have been built.",
+    meaning:
+      "Understand vyombo ('vessels'). Every smooth success or finished achievement rests upon unseen labour, skill, and patient construction.",
+  },
+  "taylor-1891-540": {
+    indigenous: "Ulimi hauna mfupa.",
+    literalTranslation: "The tongue has no bone.",
+    meaning:
+      "Because the tongue is boneless, it twists easily into contradictions, flattery, or slander—and breaks bones though it has none itself.",
+  },
+  "taylor-1891-549": {
+    indigenous: "Usiache mbachao kwa msala upitao.",
+    literalTranslation: "Forsake not thine old worn prayer-mat (mbachao = mbacha wako) for a fine new prayer-mat (msala) that is passing by.",
+    meaning:
+      "Mbacha is a humble, worn plaited mat; msala is a handsome prayer-mat carried by a passing stranger. Never abandon a tried and faithful friend for a flashy newcomer.",
+  },
+  "taylor-1891-562": {
+    indigenous: "Usitukane wakunga na uzazi ungalipo.",
+    literalTranslation: "Insult not the midwives while childbearing still continues (ungalipo).",
+    meaning:
+      "Showcases the '-kali / -ngali-' Yet Tense with locative -po (ungalipo = ukalipo 'while it still exists here', Appendix A.I, p. 164): never alienate those whose help you will soon need again.",
+  },
+  "taylor-1891-571": {
+    indigenous: "Vita vya p'anza ni furaha ya k'unguru.",
+    literalTranslation: "A war of grasshoppers is the joy of the crows.",
+    meaning:
+      "When two weak parties quarrel, a rapacious third party swoops in and devours both.",
+  },
+  "taylor-1891-576": {
+    indigenous: "Wakati wa k'askazi mpe mwana maji.",
+    literalTranslation: "In the hot north-east monsoon season (k'askazi), give the child water.",
+    meaning:
+      "Provide what is timely and needful for the season.",
+  },
+  "taylor-1891-591": {
+    indigenous: "Wema hauozi.",
+    literalTranslation: "Goodness (a kind deed) never rots.",
+    meaning:
+      "An act of kindness never perishes; even after many years it bears fruit.",
+  },
+  "taylor-1891-622": {
+    indigenous: "M'oho wa k'uni ndefu k'auzima kare.",
+    literalTranslation: "A fire of long logs does not go out quickly (soon).",
+    meaning:
+      "Giryama Proverb #622 (p. 140): Deep-rooted resources or long-standing feuds burn for a long time.",
+  },
+  "taylor-1891-626": {
+    indigenous: "Mut'u k'aona kundu-re, uona ra mwinzi-we.",
+    literalTranslation: "A person sees not his own hinder part, he sees his fellow's.",
+    meaning:
+      "Giryama Proverb #626 (p. 141): Giryama counterpart of Swahili § 438a and Nyika § 647c, retaining the archaic enclitic possessive -re (= lakwe) and -we (= wakwe).",
+  },
+  "taylor-1891-631": {
+    indigenous: "Nyumba ya udongo k'aihimili kishindo.",
+    literalTranslation: "A house of mud cannot withstand a heavy shock (tremor/downpour).",
+    meaning:
+      "Giryama Proverb #631 (p. 142): What is built on a weak or false foundation collapses under the first real test.",
+  },
+  "taylor-1891-656": {
+    indigenous: "Udugu k'auokwa ukadzuka.",
+    literalTranslation: "Brotherhood (kinship) cannot be washed (scrubbed) off so as to come off.",
+    meaning:
+      "Nyika Proverb #656 (p. 156): Kuoka = to wash/bathe; kudzuka = to come off/disappear. Blood kinship is indelible.",
+  },
+  "taylor-1891-657": {
+    indigenous: "Ukiondoka uwe, nami nima hip'o.",
+    literalTranslation: "When thou risest up (to depart), I stand right there in thy place.",
+    meaning:
+      "Nyika Proverb #657 (p. 156): Nima = naima ('I stand'); hip'o = hapo ('right there'). Generations and offices succeed one another without interruption.",
+  },
+  "taylor-1891-664": {
+    indigenous: "Ziya k'arits'indikika.",
+    literalTranslation: "A lake cannot be ladled dry (or shut up).",
+    meaning:
+      "Nyika Proverb #664 (p. 159): Great natural abundance or the wisdom of the whole community cannot be exhausted by a single scoop.",
+  },
+};
+
+// Apply all 56 verbatim corrections to existing KENYAN_PROVERBS and CULTURAL_WISDOM entries
+for (const item of KENYAN_PROVERBS) {
+  const fix = TAYLOR_1891_VERBATIM_CORRECTIONS[item.id];
+  if (fix) {
+    Object.assign(item, fix);
+  }
+}
+for (const cw of CULTURAL_WISDOM) {
+  const fix = TAYLOR_1891_VERBATIM_CORRECTIONS[cw.id];
+  if (fix) {
+    if (fix.indigenous) cw.nativeText = fix.indigenous;
+    if (fix.literalTranslation) cw.literalTranslation = fix.literalTranslation;
+    if (fix.meaning) cw.meaning = fix.meaning;
+    if (fix.englishEquivalent) cw.englishEquivalent = fix.englishEquivalent;
+  }
+}
+
+// Push all 57 newly added Taylor (1891) items (Mwalim Sikujua Epigraph + 56 missing proverbs)
+KENYAN_PROVERBS.push(...TAYLOR_1891_MISSING_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...TAYLOR_1891_MISSING_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+// ============================================================
+// Taylor (1891) Appendix A (Swahili Tenses I–VI), Appendix B (-ngwa Possessive Pronoun
+// of Alienation), Pronunciation Table, Cultural Taxonomies & Supplementary Indexes 1–5
+// ============================================================
+
+SWAHILI_GRAMMAR_SECTIONS.push({
+  id: "swahili-taylor-1891-appendix-grammar-lexicon",
+  title:
+    "Rev. W. E. Taylor (1891) African Aphorisms — Kimvita Dental vs. Cerebral Phonology (p. xii), Appendix A: Six Archaic & Poetic Tenses (-kali, Sime-, -ngwa-, -meze-, 6 Preterite Groups, -siku-), Appendix B: Possessive Pronoun of Alienation (-ngwa) & Classical Taxonomies",
+  summary:
+    "Collected and annotated in Mombasa by Rev. W. E. Taylor, M.A. Oxon., F.R.G.S. (SPCK London, 1891, pp. i–xii, 1–182), with guidance from Mwalim Sikujua and Bwana Hemedi bin Muhammad bin Ahmad il Mambasii, this foundational work codifies Mombasa (Kimvita) and Kingozi phonology, six classical verb tenses (Appendix A), the enclitic -ngwa of alienation (Appendix B), the 5 monsoon/rain seasons (§ 128), the 10 marks of beauty (§ 425), the 18 gift types (§ 484), 145 rare words, and 66 historical proper names.",
+  content: `From Rev. W. E. Taylor, M.A. Oxon., F.R.G.S. (*African Aphorisms; or, Saws from Swahili-Land*, SPCK London, 1891, pp. i–xii, 1–182):
+1. **Kimvita Phonology & Orthographic Diacritics (Author's Preface pp. ix–xi & Pronunciation p. xii)**:
+   - **Open Syllables & Syllabic Nasals**: Every Swahili syllable is open (ending in a vowel), except syllabic **m'** and **n'** before consonants (*m't'u*, *n'ta*).
+   - **Cerebral vs. Dental Stops (Discovered with Bwana Hemedi bin Muhammad bin Ahmad il Mambasii, p. x)**:
+     - **Cerebral (Roman *d, t, n*)**: Pronounced with the tongue-tip turned back against the palate, as in English *dew, true* (*ndia* 'road', *mti* 'tree', *k'onde* 'fist').
+     - **Dental (Italics *d, t*)**: Pronounced with the tongue-tip against the upper teeth, as in French/continental *d, t* (*mat'o* 'eyes', *ut'ungu* 'bitterness', *mt'o* 'river/pillow', *kit'u* 'thing').
+   - **Aspirated / Explosive Consonants (*ch', k', p', t', *t'*, ts'*, p. x & p. xii)**: Representing the survival of an older philological nasal *n-* as a sharp explosion of breath (*mt'u* 'person' vs. *mtu* 'gravy', *k'uku* 'fowl' vs. *kuku* 'old/worn', *p'aka* 'cat' vs. *paka* 'smear').
+   - **Giryama Labial Fricative (*w* in Italics, p. xii)**: A bilabial approximant/fricative intermediate between *b* and *v*.
+2. **Appendix A: Certain Swahili Tenses (pp. 164–166)**:
+   - **I. The "Yet" Tense (*-kali*, p. 164)**: Affirmative counterpart to Bishop Steere's *-ja-* ("Not-yet") tense:
+     - Conjugated with the infinitive or participial *-ki-*: **nikalikwenda** ('I am still going'), **nikalikuja** ('I am still coming'), **nikali nikenda** ('I am still in the habit of going'); cf. Nyika **-kari / -chere** and Chaga **-kere**.
+     - Used as a persistive copula: **nikali mwema** ('I am still good'); and with the three locative enclitics: **nikalipo** ('while I am still here' — *-po* = special, near, rest), **akaliko** ('while he is still there' — *-ko* = general, far, motion/ultimate goal), **nikalimo** ('while I am still within' — *-mo* = plural of points, interiority, or upon-ness, as in *angalimo* § 129 & *ungalipo* § 562).
+   - **II. The Negative Perfect (*Sime-*, p. 165)**: Used in indignant or rhetorical retorts: *Mbona hukwenda? — **Simekwenda?*** ('Why did you not go? — Have I not gone?' = 'Why, I *have* gone!').
+   - **III. The Precatory Tense (*-ngwa-* < *M'ngu a-*, p. 165)**: Used in blessings, prayers, and imprecations: **Ngwakupa!** ('May God give thee!'), and in the dawn-star couplet: *Hili jota la mak'ungu / **Ngwalizamisha** kabisa!* ('This flaring star of the dawn, May God make it set for ever!').
+   - **IV. The Poetical Perfect in *-meze-* (< *kumala* 'to finish', p. 165)**: Supplies a disyllabic tense marker for octosyllabic verse: **Wangi umezewarusha** ('Many hast thou caused to fly/lose their wits'), **Bwana amezetwambia** ('The Lord hath told us').
+   - **V. Old and Poetic Preterites inSix Morphological Groups (p. 166)**:
+     - **Group 1 (*-le*)**: **zijile** (*kuja* 'they came'), **yaanzile** (*kwanza* 'they began'), **havilekele** (*kulekea* 'they were not directed'), **yanepukile** (*kuepuka* 'they have avoided me').
+     - **Group 2 (Pluperfects in *-li-...-le*)**: **nalilele** (*kulala* 'I had lain down/slept'), **alijile** (*kuja* 'he had come').
+     - **Group 3 (*-ee, -iye*)**: **ijuziye** (*kujuzu* 'it behoved', § 6), **nizingiye** (*kuzinga* 'I wandered round'), **havilekee** (*kulekea*).
+     - **Group 4 (*-shile, -zile; -shiye, -ziye*)**: **uumbushile** (*kuumbuka* 'it was disfigured'), **zipungushiyeo** (*kupungua* 'which have diminished'), **sikiziye** (*kusikia* 'heard'), **utiziyeni** (*kutia* 'what hast thou put in?').
+     - **Group 5 (Internal vowel change *-e...-e*)**: **yasee** (*kusaa* 'they remained'), **yuwene** (*kuona* 'he has seen'), **yunendeme** (*kuandama* 'he has followed'), **p'ete** (*kupata* 'I have got'), **vyembete** (*kuambata* 'they have adhered'), **nimeze** (*kumala* 'I have finished').
+     - **Group 6 (*-e*)**: **nilime** (*kulima* 'I cultivated').
+   - **VI. The *-siku-* Tense (Negative Subordinated Resultant, § 186 & p. 166)**: Expresses 'without doing': **Nalim'shauri mama asikunijibu neno** ('I consulted my mother without her answering me a word').
+3. **Appendix B: The Possessive Pronoun of Alienation (*-ngwa* = *-a wat'u* 'some one else's', pp. 166–167)**:
+   - Enclitic suffix **-ngwa** attached directly to nouns to signify 'belonging to another person' (*-a wat'u*):
+     - **Shokangwa** (*shoka la wat'u*, 'some other person\'s axe', § 127)
+     - **Jembengwa** (*jembe la wat'u*, 'some one else\'s hoe')
+     - **Kitingwa** (*kiti cha wat'u*, 'some one else\'s stool')
+     - **Chanongwa** (*chano cha wat'u*, 'some one else\'s wooden platter')
+     - **Kinungwa** (*kinu cha wat'u*, 'some one else\'s mortar')
+   - Compare the personal name **Mwanangwa** (also a coastal bird name).
+4. **Classical Cultural & Lexical Taxonomies in Taylor's Annotations**:
+   - **The 5 Swahili Agricultural & Monsoon Seasons (§ 128, p. 28)**: (1) **Kaskazi** (N.E. Monsoon, Nov.–Mar., hot season), (2) **Mwaka / Masika** (heavy rains, Mar.–May), (3) **Kusi** (S.W. Monsoon, May–Oct., cool season), (4) **Mchoo** (ten-day heavy showers in Sept.), (5) **Vuli** (lesser rains in Oct.–Nov.).
+   - **The 10 Classical Marks of Swahili Female Beauty (§ 425, p. 101)**: (1) *Shingo ya upanga* (sword-straight neck), (2) *K'onde za mikono* (rounded forearms), (3) *Mawele ya k'ombe* (cup-shaped breasts), (4) *Mato ya kikombe* (large deep-set eyes), (5) *P'ua ya upanga* (aquiline nose), (6) *Meno ya t'ende* (date-seed teeth), (7) *Nywele za singa* (silky straight hair), (8) *Nyushi za mwezi mwandamo* (crescent-moon eyebrows), (9) *Mivungu ya nyayo* (well-arched insteps), (10) *Mwendo wa maringo* (graceful gait).
+   - **The 18 Swahili Gift & Customary Fee Categories (§ 484, pp. 113–114)**: *zawadi, tunu, hiba, hadiya, ada, kiada, rusuma, haki, fichuo, kilemba, joho, mkaja, ubeleko, kiinua mgongo, karadha, k'irimu, pukusa, bakshishi*.`,
+  examples: [
+    {
+      swahili: "nikalikwenda • nikalipo / akaliko / nikalimo • Simekwenda? • Ngwakupa! • Bwana amezetwambia",
+      english: "I am still going • while I am still here / there / within • Have I not gone? (= I have gone!) • God give thee! • The Lord hath told us",
+      explanation: "Taylor (1891, Appendix A.I–IV, pp. 164–165): -kali, Sime-, -ngwa-, and -meze- tenses",
+    },
+    {
+      swahili: "zijile, yaanzile • nalilele, alijile • ijuziye, nizingiye • uumbushile, sikiziye • yasee, yuwene, p'ete, vyembete",
+      english: "they came, they began • I had slept, he had come • it behoved, I wandered • it was disfigured, heard • they remained, he has seen, I have got, they adhered",
+      explanation: "Taylor (1891, Appendix A.V, p. 166): Six morphological groups of Old and Poetic Preterites",
+    },
+    {
+      swahili: "Shokangwa (shoka la wat'u) • Jembengwa • Kitingwa • Chanongwa • Kinungwa",
+      english: "some other person's axe • some one else's hoe • some one else's stool • some one else's platter • some one else's mortar",
+      explanation: "Taylor (1891, Appendix B, pp. 166–167): Enclitic Possessive Pronoun of Alienation (-ngwa)",
+    },
+    {
+      swahili: "Kaskazi • Mwaka (Masika) • Kusi • Mchoo • Vuli",
+      english: "N.E. Monsoon (Nov.–Mar.) • Heavy Rains (Mar.–May) • S.W. Monsoon (May–Oct.) • Sept. Showers • Lesser Rains (Oct.–Nov.)",
+      explanation: "Taylor (1891, § 128 fn., p. 28): The 5 Swahili agricultural and maritime monsoon seasons",
+    },
+  ],
+});
+
+MIJIKENDA_GRAMMAR_SECTIONS.push({
+  id: "mijikenda-taylor-1891-nyika-giryama-aphorisms",
+  title:
+    "Rev. W. E. Taylor (1891) African Aphorisms — 33 Giryama Proverbs (§§ 601–633), 31 Nyika Proverbs (§§ 634–664), 5 Finger Names (§ 602) & Phonetic Critique of Rebmann's Kinika Orthography (pp. 144–145)",
+  summary:
+    "Pages 136–159 of Taylor's African Aphorisms (1891) preserve 64 Giryama and Nyika (Rabai/Duruma/Digo) proverbs alongside Taylor's systematic phonetic correction of Rev. J. Rebmann's Kinika orthography (distinguishing ng', ch, dz, ts, 4 t-sounds, 2 d-sounds, fw, and vw).",
+  content: `From Rev. W. E. Taylor (*African Aphorisms; or, Saws from Swahili-Land*, SPCK London, 1891, pp. 136–159):
+1. **Taylor's Phonetic Critique & Re-Transcription of Rebmann's Nyika Orthography (pp. 144–145)**:
+   - Taylor explains why Rev. J. Rebmann's *Nika-English Dictionary* (1887) required complete phonetic re-verification with native Rabai and Giryama speakers:
+     - **Rebmann's \`gn\` → \`ng'\` (velar nasal [ŋ])**: Rebmann wrote *gn* for both palatal *ny* and velar *ng'* (*ng'ombe*).
+     - **Rebmann's \`j\` → \`ch\`**: Rebmann used *j* for the voiceless palatal affricate *ch* (*chala* 'finger', written *jala* by Rebmann).
+     - **Rebmann's \`z\` → \`dz\` or \`z\`**: Rebmann conflated voiced alveolar fricative *z* with the voiced affricate *dz* (*dzua* 'sun', *madzi* 'water', *mudzi* 'town').
+     - **Rebmann's \`s\` → \`ts\`, \`ts'\`, or \`s\`**: Rebmann wrote *s* for both *s* and the voiceless affricates *ts* and aspirated *ts'* (*matso* 'eyes', *ts'aha* 'louse', *ts'i* 'land').
+     - **Rebmann's \`t\` → Four Distinct Phonemes (\`t\`, \`t'\`, \`*t*\`, \`*t'*\`)**: Unaspirated cerebral *t*, aspirated cerebral *t'*, unaspirated dental *t*, and aspirated dental *t'* (*mut'u* 'person').
+     - **Rebmann's \`d\` → Two Distinct Phonemes (\`d\`, \`*d*\`)**: Cerebral *d* vs. dental *d*.
+     - **Rebmann's \`f\` and \`v\` → Labialized \`fw\` and \`vw\`**: Distinguishing plain *f, v* from whistle-fricative/labialized *fw, vw* (*kufwa* 'to die', *mavwalo* 'apparel').
+2. **The Five Finger Names in Giryama & Swahili (§ 602, p. 136)**:
+   - Proverb § 602 (*Chala cha k'ulach'o k'achirichwa kuoghofya*, 'The pointing finger is never left off threatening') documents the 5 finger names:
+     1. **Thumb**: Giryama *Chala cha gumba* (Swahili *Dole gumba*)
+     2. **Forefinger (Index)**: Giryama *Chala cha k'ulach'o* ('that which is there', i.e. the pointer; Rabai *Chala cha mwoloho*; Swahili *Dole la shahada*)
+     3. **Middle Finger**: Giryama *Chala cha kahi* (Swahili *Dole la kati*)
+     4. **Ring Finger**: Giryama *Chala cha k'anda* (Rabai *Chala kisicho dzina*; Swahili *Dole la pete*)
+     5. **Little Finger**: Giryama *Kadole ka mwisho* (Swahili *Dole la mwisho* / *Kichanda*).
+3. **Key Giryama (§§ 601–633) & Nyika (§§ 634–664) Proverbial Idioms**:
+   - **Giryama**: *Chala chimwenga k'achibanda ts'aha* (§ 603, 'One finger cannot crush a louse'), *Hinde! hinde!—ni kuikana* (§ 604, 'Let us go! let us go! implies previous agreement'), *Mali ga mukolo galigwa ni m'oho* (§ 611, 'A miser\'s wealth is eaten by fire'), *M'oho wa k'uni ndefu k'auzima kare* (§ 622), *Mut'u k'aona kundu-re, uona ra mwinzi-we* (§ 626), *Nyumba ya udongo k'aihimili kishindo* (§ 631).
+   - **Nyika (Rabai/Duruma)**: *Angwe—ndugu-ye ni ulongo* (§ 634a, 'They-say is own brother to a lie'), *Finya matso uteme mwatsa!* (§ 635aa, 'Close your eyes and hew down the euphorbia!'), *M'oyo uazako, be ndo uendako* (§ 638a, 'Where the heart desires, there it goes'), *Mukono wa t'undu* (§ 640d, 'A hand with a hole in it'), *Nyani anatsekana ngoko (ts'ugu)* (§ 647c), *Udugu k'auokwa ukadzuka* (§ 656), *Ziya k'arits'indikika* (§ 664).`,
+  examples: [
+    {
+      mijikenda: "Chala cha gumba (1) • Chala cha k'ulach'o (2) • Chala cha kahi (3) • Chala cha k'anda (4) • Kadole ka mwisho (5)",
+      english: "Thumb • Forefinger (pointer) • Middle finger • Ring finger • Little finger",
+      explanation: "Taylor (1891, Giryama Proverb § 602 fn., p. 136): The 5 Giryama finger names",
+    },
+    {
+      mijikenda: "Finya matso uteme mwatsa! • Hinde! hinde!—ni kuikana • Angwe—ndugu-ye ni ulongo",
+      english: "Close your eyes and hew down the euphorbia! • 'Let us go! let us go!' implies prior agreement • 'They say' is own brother to a lie",
+      explanation: "Taylor (1891, §§ 604, 634a, 635aa, pp. 136, 145–147)",
+    },
+    {
+      mijikenda: "M'oyo uazako, be ndo uendako • Mukono wa t'undu • Nyani anatsekana ngoko (ts'ugu)",
+      english: "Where the heart desires, there it goes • A hand with a hole in it (spendthrift) • Apes laugh at one another's callosities",
+      explanation: "Taylor (1891, Nyika Proverbs §§ 638a, 640d, 647c, pp. 150–153)",
+    },
+  ],
+});
+
+SWAHILI_UNITS.push({
+  id: "swahili-unit-taylor-1891-aphorisms-appendix",
+  title:
+    "Unit 17: Taylor (1891) African Aphorisms — Archaic Tenses (Appendix A), -ngwa Alienation (Appendix B), Poetic Lexicon & Historical Personages",
+  description:
+    "Master the 6 classical Swahili tenses of Appendix A (-kali, Sime-, -ngwa-, -meze-, Old Preterites, -siku-), the -ngwa Possessive Pronoun of Alienation (Appendix B), the 5 monsoon seasons, the 10 marks of beauty, and rare Kingozi/Kimvita vocabulary from Rev. W. E. Taylor's 1891 monograph.",
+  icon: "ScrollText",
+  skills: [
+    {
+      id: "swahili-taylor-1891-appendix-a-b",
+      title: "Appendix A (Six Classical Tenses) & Appendix B (-ngwa Alienation)",
+      icon: "BookOpen",
+      description:
+        "Learn the six classical Swahili verb tenses (pp. 164–166) and the enclitic possessive pronoun -ngwa ('somebody else's', pp. 166–167) documented by Rev. W. E. Taylor.",
+      tips: "In Taylor (1891, Appendix B, pp. 166–167), suffixing -ngwa to a noun means '-a wat\\'u' ('belonging to somebody else'): shokangwa (somebody else's axe), jembengwa (somebody else's hoe), kitingwa (somebody else's stool), chanongwa (somebody else's wooden platter), kinungwa (somebody else's mortar).",
+      words: [
+        {
+          target: "nikalikwenda • nikalipo (near/rest) • akaliko (far/goal) • nikalimo (within/upon)",
+          source: "I am still going • while I am still here • while he is still there • while I am still within (Appendix A.I: The 'Yet' Tense -kali)",
+          pronunciation: "ni-ka-li-kwen-da / ni-ka-li-po / a-ka-li-ko / ni-ka-li-mo",
+          hint: "Taylor (1891, Appendix A.I, p. 164; cf. Nyika -kari/-chere, Chaga -kere)",
+        },
+        {
+          target: "Mbona hukwenda? — Simekwenda? • Ngwakupa! (Ngwalizamisha!) • Bwana amezetwambia",
+          source: "Why did you not go? — Have I not gone? (= I have gone!) • May God give thee! • The Lord hath told us (Appendix A.II–IV)",
+          pronunciation: "si-me-kwen-da / ngwa-ku-pa / a-me-ze-twam-bi-a",
+          hint: "Negative Perfect Sime-, Precatory -ngwa-, and Poetical Perfect -meze- (Taylor 1891, p. 165)",
+        },
+        {
+          target: "zijile, yaanzile • nalilele, alijile • ijuziye, nizingiye • uumbushile, sikiziye • yasee, yuwene, p'ete, vyembete",
+          source: "they came, they began • I had slept, he had come • it behoved, I wandered • it was disfigured, heard • they remained, he has seen, I have got, they adhered",
+          pronunciation: "zi-ji-le / na-li-le-le / i-ju-zi-ye / si-ki-zi-ye / yu-we-ne / p'e-te",
+          hint: "Six morphological groups of Old and Poetic Preterites (Taylor 1891, Appendix A.V, p. 166)",
+        },
+        {
+          target: "Nalim'shauri mama asikunijibu neno",
+          source: "I consulted my mother without her answering me a word (Appendix A.VI: The -siku- Negative Subordinated Resultant)",
+          pronunciation: "na-lim-shau-ri ma-ma a-si-ku-ni-ji-bu ne-no",
+          hint: "Taylor (1891, § 186 & Appendix A.VI, p. 166)",
+        },
+        {
+          target: "shokangwa • jembengwa • kitingwa • chanongwa • kinungwa",
+          source: "some other person's axe (shoka la wat'u) • some one else's hoe • stool • wooden platter • mortar",
+          pronunciation: "sho-kang-wa / jem-beng-wa / ki-ting-wa / cha-nong-wa / ki-nung-wa",
+          hint: "Possessive Pronoun of Alienation -ngwa (Taylor 1891, Appendix B, pp. 166–167 & § 127)",
+        },
+      ],
+      sentences: [
+        {
+          target: "K'ambiwa, 'Shokangwa ni shoka la wat'u: liate, lielekezwe.'",
+          source: "I was told, 'Shokangwa means somebody else's axe: leave it alone, let it be put away.' (Taylor 1891, § 127 & Appendix B, p. 167)",
+        },
+        {
+          target: "Usitukane wakunga na uzazi ungalipo.",
+          source: "Insult not the midwives while childbearing still continues here. (Taylor 1891, § 562 & Appendix A.I, p. 164)",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Rev. W. E. Taylor's Appendix B (1891, pp. 166–167), what does the enclitic suffix '-ngwa' in 'shokangwa, jembengwa, kitingwa, chanongwa, kinungwa' signify?",
+          correctAnswer: "Possessive Pronoun of Alienation ('-a wat\\'u' — belonging to some other person)",
+          options: [
+            "Possessive Pronoun of Alienation ('-a wat\\'u' — belonging to some other person)",
+            "Diminutive plural prefix",
+            "Future negative tense marker",
+            "Passive instrumental suffix",
+          ],
+          hint: "Shokangwa = shoka la wat'u ('somebody else's axe', § 127)",
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each Swahili tense from Taylor (1891, Appendix A, pp. 164–166) with its grammatical function:",
+          correctAnswer: "-kali (nikalikwenda): The 'Yet' Tense (affirmative counterpart to -ja-)",
+          pairs: [
+            {
+              left: "-kali (nikalikwenda)",
+              right: "The 'Yet' Tense (affirmative counterpart to -ja-)",
+            },
+            {
+              left: "Sime- (Simekwenda?)",
+              right: "Negative Perfect used in rhetorical retorts ('Have I not gone?')",
+            },
+            {
+              left: "-ngwa- (Ngwakupa!)",
+              right: "Precatory Tense ('May God give thee!')",
+            },
+            {
+              left: "-meze- (Bwana amezetwambia)",
+              right: "Poetical Perfect (< kumala) for octosyllabic metre",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "swahili-taylor-1891-rarer-words-history",
+      title: "Supplementary Indexes 1–3: Rare Kingozi/Kimvita Lexicon, Seasons, Beauty & Historical Personages",
+      icon: "Award",
+      description:
+        "Explore the 145 rarer Swahili words (pp. 175–177), the 5 monsoon/rain seasons (§ 128), the 10 marks of Swahili beauty (§ 425), and the 66 historical figures and places (pp. 179–180) in Taylor (1891).",
+      tips: "Supplementary Index 3 (pp. 179–180) documents Mombasa poet Bwana Muyaka bin Mwinyi-Haji al Ghasâni (fl. 1796–1840), Mwalim Sikujua, Bwana Hemedi bin Muhammad, Queen Mwana Mkisi of Kongowea, Queen Mwana Aziza of Zanzibar/Lamu, Mwana Masuru and Bwana Mataka of Siu, and Mngwame of Vumba.",
+      words: [
+        {
+          target: "Kaskazi (Nov.–Mar.) • Mwaka / Masika (Mar.–May) • Kusi (May–Oct.) • Mchoo (Sept.) • Vuli (Oct.–Nov.)",
+          source: "The 5 Swahili agricultural and maritime monsoon seasons",
+          pronunciation: "kas-ka-zi / mwa-ka ma-si-ka / ku-si / m-cho-o / vu-li",
+          hint: "Taylor (1891, § 128 fn., p. 28)",
+        },
+        {
+          target: "Shingo ya upanga • K'onde za mikono • Mawele ya k'ombe • Mato ya kikombe • P'ua ya upanga • Meno ya t'ende • Nywele za singa • Nyushi za mwezi mwandamo • Mivungu ya nyayo • Mwendo wa maringo",
+          source: "The 10 classical marks of Swahili female beauty (neck, forearms, breasts, eyes, nose, teeth, hair, eyebrows, insteps, gait)",
+          pronunciation: "shin-go ya u-pan-ga / ma-to ya ki-kom-be / nyu-shi za mwe-zi mwan-da-mo",
+          hint: "Taylor (1891, § 425 fn., p. 101)",
+        },
+        {
+          target: "wafalaguzi (sages) • sambo (vessel) • mwongo (company/guild) • kuola / maoleo (ordain destiny) • kuuya (return) • k'ondo (war/strife) • ago (camp) • kiselema (worn hoe)",
+          source: "Rare Kingozi, Kimvita & Kiamu words from Supplementary Index 1 (pp. 175–177)",
+          pronunciation: "wa-fa-la-gu-zi / sam-bo / mwon-go / ma-o-le-o / ku-u-ya / k'on-do / a-go / ki-se-le-ma",
+          hint: "Taylor (1891, Supplementary Index 1, pp. 175–177)",
+        },
+        {
+          target: "Bwana Muyaka bin Mwinyi-Haji al Ghasâni • Mwalim Sikujua • Bwana Hemedi bin Muhammad • Mwana Mkisi (Kongowea) • Mwana Aziza • Bwana Mataka (Siu)",
+          source: "Historical coastal poets, scholars, queens, and rulers documented in Taylor (1891, pp. ix–x, 179–180)",
+          pronunciation: "bwa-na mu-ya-ka / mwa-lim si-ku-ju-a / mwa-na m-ki-si / mwa-na a-zi-za / bwa-na ma-ta-ka",
+          hint: "Taylor (1891, Preface pp. ix–x & Supplementary Index 3, pp. 179–180)",
+        },
+      ],
+      sentences: [
+        {
+          target: "Ahadi na miithaki, mwenyi kumpa mwenziwe, ni deni katika haki, na kulipa ijuziye.",
+          source: "A promise and a covenant, when one gives it to his fellow, is a debt in justice, and it behoves to pay it. (Bwana Muyaka in Taylor 1891, § 6, p. 2)",
+        },
+        {
+          target: "Kilimia kikizama kwa jua huzuka kwa mvua; kikizama kwa mvua huzuka kwa jua.",
+          source: "When the Pleiades set in sunny weather they rise in rain; when they set in rain they rise in sun. (Taylor 1891, § 149, p. 32)",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Taylor (1891, § 128 fn., p. 28), what are the five traditional Swahili agricultural and monsoon seasons?",
+          correctAnswer: "Kaskazi, Mwaka (Masika), Kusi, Mchoo, and Vuli",
+          options: [
+            "Kaskazi, Mwaka (Masika), Kusi, Mchoo, and Vuli",
+            "Jilal, Kalil, Gu, Hagar, and Dair",
+            " Chululu, Lu, Pi, and Tse",
+            "Shokangwa, Jembengwa, Kitingwa, and Kinungwa",
+          ],
+          hint: "See footnote to Proverb § 128 (p. 28)",
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each rare classical Swahili term from Taylor (1891, Supplementary Index 1, pp. 175–177) with its meaning:",
+          correctAnswer: "sambo (samboye): Vessel / dhow (Kingozi poetic word for chombo)",
+          pairs: [
+            {
+              left: "sambo (samboye)",
+              right: "Vessel / dhow (Kingozi poetic word for chombo)",
+            },
+            {
+              left: "kuola (maoleo / k'olewa)",
+              right: "To write / ordain destiny (by God)",
+            },
+            {
+              left: "kuuya (akauya)",
+              right: "To return / go back (= kurudi)",
+            },
+            {
+              left: "kiselema",
+              right: "A worn-down, sharp-tempered hoe that outworks a new hoe",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+});

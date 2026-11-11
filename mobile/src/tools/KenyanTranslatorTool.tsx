@@ -20,38 +20,21 @@ import {
   DICT_META_MAP,
   TOTAL_DICTIONARY_ENTRIES,
   INITIAL_RANDOM_WORDS,
-  DictMeta,
+  type DictMeta,
+  type DictEntry,
+  type DictCategory,
+  type Dictionary,
 } from "../shared/data/language-sources";
+import {
+  FAMILY_COLORS,
+  POPULAR_COMPARE_WORDS,
+  extractNormalizedTerms,
+  getDictIndex,
+  type IndexedDictEntry,
+} from "../shared/lib/dictionary-search";
 
 const CATEGORY_PAGE_SIZE = 40;
 const SEARCH_PAGE_SIZE = 40;
-
-interface DictEntry {
-  english: string;
-  translation: string;
-  pronunciation: string;
-  context: string;
-  audioFile?: string | null;
-}
-
-interface DictCategory {
-  id: string;
-  name: string;
-  icon: string;
-  entries: DictEntry[];
-}
-
-interface Dictionary {
-  languageId: string;
-  languageName: string;
-  family: string;
-  nativeName: string;
-  script?: string;
-  speakerCount?: number;
-  counties?: string[];
-  contributorNote?: string;
-  categories: DictCategory[];
-}
 
 const DICT_LOADERS: Record<string, () => Promise<{ default: any }>> = {
   swahili: () => import("../shared/data/dictionaries/swahili.json"),
@@ -100,130 +83,6 @@ async function loadDictionary(langId: string): Promise<Dictionary | null> {
     });
   INFLIGHT_LOADS[langId] = p;
   return p;
-}
-
-const FAMILY_COLORS: Record<string, string> = {
-  bantu: "#2FA463",
-  nilotic: "#C8961E",
-  cushitic: "#BE2126",
-  other: "#1A8BD1",
-};
-
-const POPULAR_COMPARE_WORDS = [
-  "Water",
-  "Hello",
-  "Thank you",
-  "Father",
-  "Mother",
-  "Food",
-  "God",
-  "Cow",
-  "One",
-  "Two",
-  "Friend",
-  "Sun",
-  "Fire",
-  "House",
-];
-
-function extractNormalizedTerms(raw: string): string[] {
-  const cleaned = raw
-    .toLowerCase()
-    .replace(/^\[[^\]]*\]\s*/g, "")
-    .replace(/\s*\([^)]*\)/g, "")
-    .replace(/[!?.]/g, "")
-    .trim();
-  const baseHead = cleaned.split(/\s*[—–:|•]\s*/)[0].trim();
-  const parts = cleaned
-    .split(/[\/,;—–:|•]/)
-    .map((s) => s.trim())
-    .filter(Boolean);
-  const out = new Set<string>();
-  const addVariant = (v: string) => {
-    if (!v) return;
-    out.add(v);
-    const nfd = v.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    if (nfd) out.add(nfd);
-    const noApostrophe = nfd.replace(/['’‘ʻ]/g, "");
-    if (noApostrophe && noApostrophe.length >= 2) out.add(noApostrophe);
-    if (v.startsWith("to ")) {
-      const bare = v.slice(3).trim();
-      addVariant(bare);
-    }
-    if (v.startsWith("-")) {
-      const bare = v.slice(1).trim();
-      if (bare.length >= 2) addVariant(bare);
-    }
-  };
-  addVariant(cleaned);
-  addVariant(baseHead);
-  for (const p of parts) addVariant(p);
-  return Array.from(out);
-}
-
-interface IndexedDictEntry {
-  entry: DictEntry;
-  cat: DictCategory;
-  engLower: string;
-  transLower: string;
-  engTerms: string[];
-  transTerms: string[];
-}
-
-interface DictSearchIndex {
-  all: IndexedDictEntry[];
-  byEngTerm: Map<string, IndexedDictEntry[]>;
-  byTransTerm: Map<string, IndexedDictEntry[]>;
-}
-
-const DICT_INDEX_CACHE = new WeakMap<Dictionary, DictSearchIndex>();
-
-function getDictIndex(dict: Dictionary): DictSearchIndex {
-  const cached = DICT_INDEX_CACHE.get(dict);
-  if (cached) return cached;
-
-  const all: IndexedDictEntry[] = [];
-  const byEngTerm = new Map<string, IndexedDictEntry[]>();
-  const byTransTerm = new Map<string, IndexedDictEntry[]>();
-
-  for (const cat of dict.categories) {
-    for (const entry of cat.entries) {
-      const engLower = entry.english.toLowerCase().trim();
-      const transLower = entry.translation.toLowerCase().trim();
-      const engTerms = extractNormalizedTerms(entry.english);
-      const transTerms = extractNormalizedTerms(entry.translation);
-      const item: IndexedDictEntry = {
-        entry,
-        cat,
-        engLower,
-        transLower,
-        engTerms,
-        transTerms,
-      };
-      all.push(item);
-
-      for (const t of engTerms) {
-        let bucket = byEngTerm.get(t);
-        if (!bucket) {
-          bucket = [];
-          byEngTerm.set(t, bucket);
-        }
-        bucket.push(item);
-      }
-      for (const t of transTerms) {
-        let bucket = byTransTerm.get(t);
-        if (!bucket) {
-          bucket = [];
-          byTransTerm.set(t, bucket);
-        }
-        bucket.push(item);
-      }
-    }
-  }
-
-  const index: DictSearchIndex = { all, byEngTerm, byTransTerm };
-  DICT_INDEX_CACHE.set(dict, index);
-  return index;
 }
 
 export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {

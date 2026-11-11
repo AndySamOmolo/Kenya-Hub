@@ -1661,8 +1661,8 @@
         },
         {
           "english": "He said to the man, whose house she was in",
-          "translation": "ninki, ai⁵ ákhalkìsa fađídei, yu ku yiđi",
-          "pronunciation": "ninki ai akhalkisa fa idei yu ku yi i",
+          "translation": "ninki, ai ákhalkìsa fađídei, yu ku yiđi",
+          "pronunciation": "ninki ai akhalkisa fadhidei yu ku yidhi",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
         },
@@ -1675,8 +1675,8 @@
         },
         {
           "english": "Where has the man gone, whom I saw just now?",
-          "translation": "ninki, áminkan¹ árkeyei, haggu² ka‘ei?",
-          "pronunciation": "ninki aminkan arkeyei haggu ka ei",
+          "translation": "ninki, áminkan árkeyei, haggu ka‘ei?",
+          "pronunciation": "ninki aminkan arkeyei haggu ka‘ei",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
         },
@@ -3922,7 +3922,7 @@
         },
         {
           "english": "The horse, which does not want much water, is good for this country",
-          "translation": "fáraski, an bìyo badan dònin, bilàdkan ku wanăksányahai¹",
+          "translation": "fáraski, an bìyo badan dònin, bilàdkan ku wanăksányahai",
           "pronunciation": "faraski an biyo badan donin biladkan ku wanaksanyahai",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
@@ -5112,8 +5112,8 @@
         },
         {
           "english": "I am going to Berberah to fetch rice and dates",
-          "translation": "magàlodan¹ ghobóneya inan barìs iyo tímir so dònto",
-          "pronunciation": "ma-ga-lo-dan1 gho-bo-ne-ya i-nan ba-ris iyo ti-mir so donto",
+          "translation": "magàlodan ghobóneya inan barìs iyo tímir so dònto",
+          "pronunciation": "ma-ga-lo-dan gho-bo-ne-ya i-nan ba-ris iyo ti-mir so donto",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
         }
@@ -8080,7 +8080,7 @@
         },
         {
           "english": "The ponies the major bought yesterday cost a lot of money",
-          "translation": "fardihi, shălei mèjorku ìbshei³, wa la‘ag badna⁴",
+          "translation": "fardihi, shălei mèjorku ìbshei, wa la‘ag badna",
           "pronunciation": "fardihi shalei mejorku ibshei wa la ag badna",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
@@ -13246,8 +13246,8 @@
         },
         {
           "english": "I do not know if he is coming or not",
-          "translation": "inu tégeyo iyo in kăleh war¹ ma hayo",
-          "pronunciation": "inu te-ge-yo iyo in ka-leh war1 ma ha-yo",
+          "translation": "inu tégeyo iyo in kăleh war ma hayo",
+          "pronunciation": "inu te-ge-yo iyo in ka-leh war ma ha-yo",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
         },
@@ -13582,8 +13582,8 @@
         },
         {
           "english": "When you are given an order, don't ask questions",
-          "translation": "kolki húkumka leidin¹ shègo wahhba weidina²",
-          "pronunciation": "kolki hu-kumka lei-din1 she-go wahhba wei-di-na2",
+          "translation": "kolki húkumka leidin shègo wahhba weidina (ha weidina)",
+          "pronunciation": "kolki hu-kumka lei-din she-go wahhba wei-di-na",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language",
           "audioFile": null
         },
@@ -14009,7 +14009,7 @@
         },
         {
           "english": "Say",
-          "translation": "ođo (Yibir: ())",
+          "translation": "ođo (Yibir: biđ [lit. think])",
           "pronunciation": "ođo",
           "context": "Lt. J. W. C. Kirk (1905) Comparative Vocabulary of Somali, Yibir, and Midgan",
           "audioFile": null
@@ -15080,7 +15080,7 @@
         },
         {
           "english": "Dikdik",
-          "translation": "sagàro (Yibir: d.\\ yahainyahha awaski ka godisa, Midgan: bikho)",
+          "translation": "sagàro (Yibir: d. yahainyahha awaski ka godisa, Midgan: bikho)",
           "pronunciation": "sagàro",
           "context": "Lt. J. W. C. Kirk (1905) Comparative Vocabulary of Somali, Yibir, and Midgan",
           "audioFile": null
@@ -15842,7 +15842,7 @@
           "audioFile": null
         },
         {
-          "english": "Smell ( )",
+          "english": "Smell (v. i.)",
           "translation": "‘ur (Midgan: ‘urshèn)",
           "pronunciation": "‘ur",
           "context": "Lt. J. W. C. Kirk (1905) Comparative Vocabulary of Somali, Yibir, and Midgan",
@@ -17149,6 +17149,468 @@
           "pronunciation": "gosad-di",
           "context": "Lt. J. W. C. Kirk (1905) — Yibir & Midgan Vocabulary [M]",
           "audioFile": null
+        },
+        {
+          "english": "Warn (verb-noun: warning) [corrected from 'warm, warming' per Erratum, p. xii]",
+          "translation": "đig (verb-noun: đignin-ki)",
+          "pronunciation": "dhig / dhignin-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Erratum p. xii & § 15b, p. 13",
+          "audioFile": null
+        },
+        {
+          "english": "Class 1 Verbal Nouns in -nin / -in / -an: sew/sewing, write/writing, jump/jumping, wait/waiting, ride/riding",
+          "translation": "tòl → tòlin-ki • ghor → ghorin-ki • bòd → bòdin-ki • sug → sugnin-ki • fùl → fùlan-ti",
+          "pronunciation": "tolin-ki / ghorin-ki / bodin-ki / sugnin-ki / fulan-ti",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 15b, p. 13",
+          "audioFile": null
+        },
+        {
+          "english": "Class 2 Verbal Nouns in -d (masculine): walk/walking, return/returning, understand/understanding, escape/escaping, finish/finishing",
+          "translation": "so‘o → so‘od-ki • nokho → nokhod-ki • garo → garad-ki • bahso → bahsad-ki • idlo → idlad-ki",
+          "pronunciation": "so‘od-ki / nokhod-ki / garad-ki / bahsad-ki / idlad-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 15c, p. 13",
+          "audioFile": null
+        },
+        {
+          "english": "Class 3 Verbal Nouns in -s (masculine) & -n (feminine): ask/asking, cut/cutting, give/giving, make/making, clean/cleaning",
+          "translation": "weidi → weidis-ki • goi → goïs-ki • sì → sìn-ti • samèi → samein-ti • safei → safein-ti",
+          "pronunciation": "weidis-ki / gois-ki / sin-ti / samein-ti / safein-ti",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 15d, p. 14",
+          "audioFile": null
+        },
+        {
+          "english": "Abstract Nouns of Quality in -nímo (feminine): heaviness, laziness, horsemanship, womanhood, motherhood",
+          "translation": "‘ulusnímo-di • ‘ajisnímo-di • fùlanímo-di • nàgnímo-di • hoyonímo-di",
+          "pronunciation": "‘ulusnimo-di / ‘ajisnimo-di / fulanimo-di / nagnimo-di / hoyonimo-di",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 16a, p. 14",
+          "audioFile": null
+        },
+        {
+          "english": "Abstract Nouns of Quality in -an (feminine) & masculine stems: whiteness, redness, greatness, strength, length, lightness, weight, hardness",
+          "translation": "‘adan-ti • ‘asan-ti • weinan-ti • adkan-ti • đerer-ki • fudeid-ki • ‘uleis-ki • adeig-gi",
+          "pronunciation": "‘adan-ti / ‘asan-ti / weinan-ti / adkan-ti / dherer-ki / fudeid-ki / ‘uleis-ki / adeig-gi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 16b–c, p. 14",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Somali descriptive nicknames (naanays): left-handed, hare-lipped, active/cute, fair, long-haired, one-eyed",
+          "translation": "Gurreh • Farùrah • Dunjog • Bulàli • Timo-wein • Awarah • Galòs • Dèlowein",
+          "pronunciation": "gurreh / farurah / dunjog / bulali / timo-wein / awarah / galos / delowein",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 13, p. 12",
+          "audioFile": null
+        },
+        {
+          "english": "Eleven Somali–Gala (Oromo) lexical cognates: see, look, be, enter, attack, long, man, blood, light, mouth, tongue",
+          "translation": "arag • eg • jir • gal • dùl • đer • nin • đìg • if • af • arrab",
+          "pronunciation": "arag / eg / jir / gal / dul / dher / nin / dhig / if / af / arrab",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Introduction p. xiv",
+          "audioFile": null
+        },
+        {
+          "english": "Ishhak vs. Dolbohanta dialect lexical correspondences: camel, road, go, the saddles",
+          "translation": "aur vs. rati (camel) • đau vs. jid (road) • tag vs. ad (go) • koryashi vs. koryalki (the saddles)",
+          "pronunciation": "aur vs rati / dhau vs jid / tag vs ad / koryashi vs koryalki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Introduction p. xv",
+          "audioFile": null
+        },
+        {
+          "english": "Regional dialectal continuative verb forms ('I want') and focus-pronoun clitics across Somaliland",
+          "translation": "wa dònahaya (Dolbohanta) • wa dòneya (Bari / East Ishhak) • wa dònaya (Galbed / West Ishhak) • ban, bad, bu (Bari) vs. yan, yad, yu (Galbed)",
+          "pronunciation": "wa donahaya / wa doneya / wa donaya / ban bad bu vs yan yad yu",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Introduction p. xv & § 93, p. 45",
+          "audioFile": null
+        },
+        {
+          "english": "Radical Adjectives I: yellow • cooked, ripe • raw, unripe • awake, lively, careful",
+          "translation": "aul • bisil • ‘eđin • feyig",
+          "pronunciation": "aul / bisil / ‘edhin / feyig",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 76, p. 38",
+          "audioFile": null
+        },
+        {
+          "english": "Radical Adjectives II: clever, good, useful • light, easy, active • cold • fat • heavy",
+          "translation": "fi‘an • fudud • ghabô • shilis • ‘ulus",
+          "pronunciation": "fi‘an / fudud / ghabo / shilis / ‘ulus",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 76, p. 38",
+          "audioFile": null
+        },
+        {
+          "english": "Irregular Verb I (Be in a place, lie, dwell): Present al, tal, yal, nal; Past il, til, yil, nil; Inf. oll; V.N. ollin-ki",
+          "translation": "oll (al, tal, yal, tal, nal, tàlin, yàlin; Pret. il, til, yil, til, nil, tillen, yillen)",
+          "pronunciation": "oll / al tal yal nal / il til yil nil",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 100, pp. 49–50 & § 141b, p. 84",
+          "audioFile": null
+        },
+        {
+          "english": "Prefix-Conjugated Verb II (Come): Impv. kàli (pl. kàia); Pres. imàda, timàda, yimàda; Past ími/imid, tími/timid, yími/yimid, ními/nimid",
+          "translation": "imo (kàli / kàia; imàda, timàda, yimàda; ími, tími, yími, ními, timàden, yimàden; Inf. iman)",
+          "pronunciation": "imo / kali / imada / imi timi yimi nimi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 106, pp. 58–61",
+          "audioFile": null
+        },
+        {
+          "english": "Prefix-Conjugated Verb III (Say): Impv. đeh (pl. đahha); Pres. iđahhda, tiđahhda, yiđahhda; Past iđi, tiđi, yiđi, niđi, tiđahhden, yiđahhden",
+          "translation": "ođo (đeh / đahha; iđahhda, tiđahhda, yiđahhda; iđi, tiđi, yiđi, niđi; Inf. ođón, V.N. ođón-ki)",
+          "pronunciation": "odho / dheh / idhahhda / idhi tidhi yidhi nidhi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 106, pp. 58–61",
+          "audioFile": null
+        },
+        {
+          "english": "Prefix-Conjugated Verb IV (Know): Impv. oghô; Pres. aghán, taghán, yaghán, naghán; Past ighín, tighín, yighín; 1s Neg. môjì / môyi",
+          "translation": "ogho (oghô / oghàda; aghán, taghán, yaghán, naghán; ighín, tighín, yighín; môjì / môyi; V.N. oghòn-ti; stem òg)",
+          "pronunciation": "ogho / aghan taghan yaghan / ighin / moji moyi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 106, pp. 58–61 & § 118, p. 69",
+          "audioFile": null
+        },
+        {
+          "english": "Irregular Substantive Verb V (Be): Pres. ahai, tahai, yahai, nahai, tihin, yihin; Neg. miìhi, miìhid, maaha, miìhin; Past aha, ahaid, ahain",
+          "translation": "aho (ahô / ahàda; ahai, tahai, yahai, nahai, tihin, yihin; Neg. miìhi, miìhid, maaha, maahin, miìhin; Pret. aha, ahaid)",
+          "pronunciation": "aho / ahai tahai yahai nahai tihin yihin / miihi maaha",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language §§ 110–114, pp. 63–66",
+          "audioFile": null
+        },
+        {
+          "english": "Irregular Verb VI (Possess, have): Pres. lehahai, lehdahai, lehyahai, lehnahai, lehdihin, lehyihin; Neg. málihi, málihid, málaha; Past laha, lahaid",
+          "translation": "laho (lahô / lahàda; lehahai, lehdahai, lehyahai, lehnahai, lehdihin, lehyihin; Neg. málihi, málihid, málaha; Pret. laha)",
+          "pronunciation": "laho / lehahai lehdahai lehyahai / malihi malaha",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language §§ 115–116, pp. 66–68",
+          "audioFile": null
+        },
+        {
+          "english": "Defective Verb VII (Fail to find, be unable to do): 1s/3m/3pl wahya / waiya / wai, 2s/3f weida / weidei, 1pl weina / weinei, 2pl weia / weiden",
+          "translation": "wah (wahya / waiya / wai, weida / weidei, weina / weinei, weia / weiden, waiyen; Inf. wai)",
+          "pronunciation": "wah / wahya waiya wai / weida weina",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 117, pp. 68–69",
+          "audioFile": null
+        },
+        {
+          "english": "Causative palatalization of final gutturals (-gh, -g, -ô > -ji): pasture, frighten, halt, dry, straighten, improve, turn round, cool",
+          "translation": "dagh → daji • bagh → baji • jòg → jòji • ingeg → ingeji • hagag → hagaji • wanag → wanaji • wereg → wereji • ghabô → ghabôji",
+          "pronunciation": "daji / baji / joji / ingeji / hagaji / wanaji / wereji / ghaboji",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 123, p. 72",
+          "audioFile": null
+        },
+        {
+          "english": "Reduplicated Intensive Verbs: fold/roll up, undo/untie, cut to pieces, search thoroughly, crawl, tie securely, tear to shreds, chat/repeat",
+          "translation": "lab → lablab • fur → furfur • goi → gogoi • dòn → dòndòn • gur → gurgur • heđ → heđheđ • jehh → jehhjehh • sheg → shegsheg",
+          "pronunciation": "lablab / furfur / gogoi / dondon / gurgur / hedhhedh / jehhjehh / shegsheg",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 120, p. 70",
+          "audioFile": null
+        },
+        {
+          "english": "Idiomatic paradigm 'I speak the truth, thou speakest the truth...' (lit. 'it is my truth') and 'I tell a lie...'",
+          "translation": "wa runtai, wa runtada, wa runtìs, wa runtèd, wa runtèn / wa runtaya, wa runtìn, wa runtòd (opp. wa beintai...)",
+          "pronunciation": "wa runtai / wa runtada / wa runtis / wa beintai",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 201.iv, p. 103",
+          "audioFile": null
+        },
+        {
+          "english": "Did you not bring all of them with us? (8-slot pre-verbal particle hierarchy H → A: ma? → an → Subj. → Obj. → Prep. → ma → so/si → kala/wada → Verb)",
+          "translation": "mianad na la so wada kahain? (H: ma? → G: an → F: ad → E: na → D: la → B: so → A: wada → Verb: kahain)",
+          "pronunciation": "mianad na la so wada kahain",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 236, p. 117",
+          "audioFile": null
+        },
+        {
+          "english": "The Somali pastoral seasons: dry season (Jilal), calm hot interval (Kalil), heavy rains (Gù), hot monsoon season (Hagar, called Karif on the coast), and lighter rains (Dair)",
+          "translation": "Jilal-ki (Jan.–Mar.) • Kalil-shi (Apr.) • Gù-gi (May–Jun.) • Hagar-ki / Karif-ki (Jul.–Oct.) • Dair-ti (Nov.–Dec.)",
+          "pronunciation": "jilal-ki / kalil-shi / gu-gi / hagar-ki / karif-ki / dair-ti",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 134",
+          "audioFile": null
+        },
+        {
+          "english": "Somali Lunar Months 1–6 (Muharram to Jumada al-Thani)",
+          "translation": "1. Dago • 2. Durahh hore • 3. Durahh dambe • 4. Rajal hore • 5. Rajal dehhe • 6. Rajal dambe",
+          "pronunciation": "dago / durahh hore / durahh dambe / rajal hore / rajal dehhe / rajal dambe",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "Somali Lunar Months 7–12 (Rajab, Sha'ban, Ramadan, Shawwal, Dhu al-Qi'dah, Dhu al-Hijjah)",
+          "translation": "7. Sà buha • 8. Wà barìs • 9. Sòn (or Soukad) • 10. Sòn fur • 11. Sidatal • 12. Arafo",
+          "pronunciation": "sa buha / wa baris / son soukad / son fur / sidatal / arafo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "The 7 days of the week in classical Somali (Monday to Sunday)",
+          "translation": "Isnin-ti (Mon.) • Salasa-di (Tue.) • Rabuhh-i (Wed.) • Khamis-ki (Thu.) • Jima‘-i (Fri.) • Sabti-di (Sat.) • Ahád-di (Sun.)",
+          "pronunciation": "isnin-ti / salasa-di / rabuhh-i / khamis-ki / jima‘-i / sabti-di / ahad-di",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 134",
+          "audioFile": null
+        },
+        {
+          "english": "Morning divisions of the day (gélinka hore, 6–9 a.m.): dawn, early morning, forenoon",
+          "translation": "gélinka hore: wà beri / arorti (6 a.m.) • subahh-di (6–7 a.m.) • bargháddi hore / barisáddi hore (7–8 a.m.) • barghád-di / barisád-di (8–9 a.m.)",
+          "pronunciation": "gelinka hore / wa beri / arorti / subahh-di / barghaddi hore / barisaddi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "Late morning and midday divisions (9 a.m.–12 noon): hot forenoon, when the shadow draws in, midday",
+          "translation": "bargháddi kúluleid (9–11 a.m.) • marki hađki so koreisa (11–12 noon) • hađ-ki / gàdid-ki (12 noon, midday)",
+          "pronunciation": "barghaddi kululeid / marki hadhki so koreisa / hadh-ki / gadid-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "Afternoon and sunset divisions (galáb-ti / gélinka dambe, 12 noon–6 p.m.)",
+          "translation": "galáb-ti (gélinka dambe): duhur-ki (12:30–3 p.m.) • ásar-ki (3–5 p.m.) • makhrib-ki (6 p.m., sunset)",
+          "pronunciation": "galab-ti / gelinka dambe / duhur-ki / asar-ki / makhrib-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "The 6 watches of the night (habèn-ki, 6 p.m.–6 a.m.): twilight, evening talk, first watch, midnight, third watch, before dawn",
+          "translation": "habèn-ki: fìdki (6–7 p.m.) • aweisin-ki (7–10 p.m.) • sakhdi hore (10–12 p.m.) • sakhđi dehh (12–2 a.m.) • sakhdi dambe (2–4 a.m.) • arorti hore / saladdi (4–6 a.m.)",
+          "pronunciation": "haben-ki / fidki / aweisinki / sakhdi hore / sakhdhi dehh / sakhdi dambe / saladdi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix I, p. 135",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Somaliland currency table under the Indian Rupee standard (1 rupee = 16 annas = 1s. 4d.)",
+          "translation": "rubiad-di (pl. rubod, 16 annas) • rubi-gi / nus rubiad (8 annas) • bòlad-di (4 annas) • antìn-ti (2 annas) • gambo-di (1 anna) • beisad-di (2 pies) • ardi-di (1 pie)",
+          "pronunciation": "rubiad-di / rubi-gi / bolad-di / antin-ti / gambo-di / beisad-di / ardi-di",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix II, p. 136",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Somali weights and linear/caravan distance measures",
+          "translation": "misan-ki (scales/weight) • rođol-ki (1 lb.) • nus rođol (1/2 lb.) • waghed-di (4 oz.) • ba‘-i (fathom, 5 ft. 10 in.) • geđi-gi (camel's march, ~9 miles) • laba geđi (day's march) • nus geđi (half march, 4–5 miles)",
+          "pronunciation": "misan-ki / rodhol-ki / waghed-di / ba‘-i / gedhi-gi / laba gedhi / nus gedhi",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix II, p. 136",
+          "audioFile": null
+        },
+        {
+          "english": "Three primary genealogical divisions of the Somali nation: Asha (Gob), Dir, and Sab",
+          "translation": "Asha (Gob: Ishhak & Darud) • Dir (Esa, Gadabursi) • Sab (Hawiya, Tomal, Midgan, Yibir)",
+          "pronunciation": "asha gob / dir / sab",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix III, pp. 139–142",
+          "audioFile": null
+        },
+        {
+          "english": "Genealogy of the Ishhak confederation (Habr Awal, Habr Gerhajis, Arab, Habr Toljala)",
+          "translation": "Ishhak: Habr Awal (Saad Musa, Esa Musa) • Habr Gerhajis (Eidegalla, Habr Yunis — Royal House Omar Abdallah) • Arab • Habr Toljala (Musa Abokr, Mohamed Abokr, Ibrahim, Sanbur)",
+          "pronunciation": "ishhak / habr awal / habr gerhajis / eidegalla / habr yunis / habr toljala",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix III, p. 142",
+          "audioFile": null
+        },
+        {
+          "english": "Genealogy of the Darud and Harti confederations (Ogaden, Bartiri, Absgul, Mijjertein, Warsangeli, Dolbohanta)",
+          "translation": "Darud: Ogaden (Rer Harun, Rer Ali, Rer Isahak) • Bartiri • Absgul • Harti (Mijjertein, Warsangeli, Dolbohanta — Barkad, Farah Garad [Bah Ararsama, Rer Khair, Rer Hagar], Mahamud Garad [Jama Siad, Nur Ahmed, Ugad Omar])",
+          "pronunciation": "darud / ogaden / bartiri / absgul / harti / mijjertein / warsangeli / dolbohanta",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Appendix III, p. 142",
+          "audioFile": null
+        },
+        {
+          "english": "Opening & closing of the Somaliland courtroom complaint dialogue ('I am a complainant, O Officer! A she-camel has been stolen from me ... Dismiss!')",
+          "translation": "Mashtáki ban ahai, Sirkálô! ... Hal ba leiga hadei ... Banjàd!",
+          "pronunciation": "mashtaki ban ahai sirkalo / hal ba leiga hadei / banjad",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Examples of Prose pp. 143–144",
+          "audioFile": null
+        },
+        {
+          "english": "Somali prose folktales I–IV narrated by Mohammed Jibril (Habr Toljala, Musa Abokr): Lame Habiyo, The Dragon-Killer, The Girl without Legs, and The Hole in the Wall",
+          "translation": "Habiyo Butiya (Story I) • Inanki Maska Dilei (Story II) • Ínanti Lugahálaeid (Story III) • Hòggi Đàrta (Story IV)",
+          "pronunciation": "habiyo butiya / inanki maska dilei / inanti lugahalaeid / hoggi dharta",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Examples of Prose pp. 145–151",
+          "audioFile": null
+        },
+        {
+          "english": "Somali prose folktales V–IX narrated by Ismail (Habr Toljala, Rer Ahmed Farah): The Town of Man-Eaters, Misfortunes, How to Choose a Wife, Man and Hyaena, and The Camel and Her Followers",
+          "translation": "Magàlodi Hòlaha Dadka ku ‘Una (Story V) • Nasib (Story VI) • Nàgti Wanaksaneid (Story VII) • Dadku iyo Waràbuhu (Story VIII) • Hashu iyo Hòlaheda (Story IX)",
+          "pronunciation": "magalodi holaha dadka ku ‘una / nasib / nagti wanaksaneid / dadku iyo warabuhu / hashu iyo holaheda",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Examples of Prose pp. 151–160",
+          "audioFile": null
+        },
+        {
+          "english": "He that is blind is the man who knows nothing, he is blind (Moral of Story X: Ninki Inđahalaä — The Blind Man, narrated by Ali, Habr Yunis, Musa Arreh)",
+          "translation": "Wahha inđála, ninki an oghòn lahain, ya inđala",
+          "pronunciation": "wahha indhala ninki an oghon lahain ya indhala",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Prose Story X, p. 161",
+          "audioFile": null
+        },
+        {
+          "english": "Historical Somali narrative XI dictated by Corporal Nur Jama (Habr Awal, Saad Musa) on Col. Swayne's Somaliland Expeditions (1900–1902)",
+          "translation": "Sanala (MacNeill's Zariba) • Ferdiddin • Las Idleh • Nogal Campaign • Battle of Erigo (Oct. 6, 1902)",
+          "pronunciation": "sanala / ferdiddin / las idleh / nogal / erigo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Prose Story XI, pp. 162–169",
+          "audioFile": null
+        },
+        {
+          "english": "The three classical Somali poetic genres governed by strict single-consonant or vowel alliteration across every line",
+          "translation": "Gerar (equestrian war/greeting song) • Gabei (solemn evening chant) • Hes (dance song with chorus)",
+          "pronunciation": "gerar / gabei / hes",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Examples of Verse pp. 170–171",
+          "audioFile": null
+        },
+        {
+          "english": "O Sultan Nur, how art thou? As God made thee, hast thou settled in strength? (Opening of Song I: Gerar alliterated in s)",
+          "translation": "Suldan Nuro, sidè tahai? Sidi Eggi samèyei, ma sàlotei hògti?",
+          "pronunciation": "suldan nuro side tahai sidi eggi sameyei ma salotei hogti",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song I, p. 172",
+          "audioFile": null
+        },
+        {
+          "english": "Blood-wit compensation of 100 she-camels (diya) demanded for a slain kinsman (Song II: Gerar alliterated in g)",
+          "translation": "hagh-i (boghol hala o gèl ah = 100 head of camels)",
+          "pronunciation": "hagh-i / boghol hala o gel ah",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song II, p. 173",
+          "audioFile": null
+        },
+        {
+          "english": "We must choose brotherhood, and we have striven for peace (Refrain of Song IV: Gerar in d, Appeal for Peace)",
+          "translation": "Tollimòno ka dòrne, o sàmir bannu dèdallei",
+          "pronunciation": "tollimono ka dorne o samir bannu dedallei",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song IV, p. 176",
+          "audioFile": null
+        },
+        {
+          "english": "Songs (Gerar) are in hundreds, like the great sea and waves, like the ships (Song VIII: Gerar in b, by Kirk's sais on the Tribal Horse, 1903)",
+          "translation": "Gerar wa bogholal, wa bađwein iyo môjad, wa babùrki sidìsa",
+          "pronunciation": "gerar wa bogholal wa badhwein iyo mojad wa baburki sidisa",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song VIII, p. 178",
+          "audioFile": null
+        },
+        {
+          "english": "The misfortune of the other day pains my heart ... Our country is here, though we have been driven to beg (Song XI: Gabei in d, Lament on the Mullah's Raids, 1900–1904)",
+          "translation": "Da‘wadii doraid ba wadneha i damkineisa e ... Dalkayagi wa kana, haddan laga dawarshaye",
+          "pronunciation": "da‘wadii doraid ba wadneha i damkineisa e / dalkayagi wa kana",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song XI, pp. 180–181",
+          "audioFile": null
+        },
+        {
+          "english": "Her colour is like the fruits of Paradise, have you not heard! (Song XII: Gabei in m, My Future Wife)",
+          "translation": "Midabkèdu wa lèhegyahai midihi jannáda, ma makhásha weiye!",
+          "pronunciation": "midabkedu wa lehegyahai midihi jannada ma makhasha weiye",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song XII, p. 181",
+          "audioFile": null
+        },
+        {
+          "english": "O Dahab, gazelle-eyed! ... Behold how I am! (Song XIII: Gabei in d, To Dahab)",
+          "translation": "Dahabô, inđo dèralai! ... Sidan ahai daia!",
+          "pronunciation": "dahabo indho deralai / sidan ahai daia",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song XIII, p. 182",
+          "audioFile": null
+        },
+        {
+          "english": "The camels marched in the evening! ... They are the camels of Noble Independence! (Song XIV: Hes in g, Dance Song)",
+          "translation": "Gèli galabta wa gùrei! ... Wa gèli Gobonimo!",
+          "pronunciation": "geli galabta wa gurei / wa geli gobonimo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Song XIV, p. 183",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional birth and marriage tax (1 rupee or 1 ewe ilbir) paid by Somalis to a Yibir (Anas-ki) in exchange for a protective amulet carved from the sacred aldibo tree",
+          "translation": "samanyo-di / anasnímo-di & awaski aldibo (ghordas-ki / Yibir: godahheđ-ki)",
+          "pronunciation": "samanyo-di / anasnimo-di / awaski aldibo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Account of the Yibir and Midgan Dialects pp. 184–185",
+          "audioFile": null
+        },
+        {
+          "english": "What men have risen up to seek, may my Lord give thee; my Lord is not stint! (Traditional Yibir blessing chant upon receiving the samanyo gift)",
+          "translation": "Wihhi rag u kà‘ei, rabbigai ha ku sìyo, rabbigai ma bakhilo!",
+          "pronunciation": "wihhi rag u ka‘ei rabbigai ha ku siyo rabbigai ma bakhilo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Blessing Song p. 185",
+          "audioFile": null
+        },
+        {
+          "english": "Somali tribal protector/patron to whom Midgan (Alowa) hunters attach themselves while hunting with poisoned arrows (wabayo)",
+          "translation": "abban-ki",
+          "pronunciation": "abban-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Account of the Yibir and Midgan Dialects p. 185",
+          "audioFile": null
+        },
+        {
+          "english": "Yibir origin myth in which ancestor Mohammed Hanif entered a hill at the challenge of Sultan Au-Bakhardli, winning his descendants the perpetual blood-wit tax of samanyo",
+          "translation": "Mohammed Hanif & Suldàn Au-Bakhardli",
+          "pronunciation": "mohammed hanif / suldan au-bakhardli",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Story pp. 184, 197–199",
+          "audioFile": null
+        },
+        {
+          "english": "Polysemous Midgan verbal root with 14 derivatives: act/do/fix, catch/hold, accompany, wait, go on, marry, be/exist/live, possess, seek, love, give, and work",
+          "translation": "raghahh (ku raghahh, la raghahh, so raghahh, si raghahh, raghahho, ku raghahho, raghahhi, raghahhsan, ku raghahhsan, raghahhsano, ku raghahhsano, raghahhsanei, raghahhnin-ki)",
+          "pronunciation": "raghahh / ku raghahh / raghahhsan / raghahhnin-ki",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Midgan Morphology p. 189",
+          "audioFile": null
+        },
+        {
+          "english": "Descriptive Midgan compound nouns built on Somali roots: hand/arm ('finger-possessor'), arrow ('small-eared'), breast ('rib-possessor'), Clarke's gazelle ('long-tailed'), oryx ('long-horned'), sheep & goats ('small ones'), skin/shield ('chin-possessor'), liver ('dark one')",
+          "translation": "farolaháto • đegoyir • fèđolaháto • diboder • gesoder • yiryiro • gađlaháto • madôbiyo",
+          "pronunciation": "farolahato / dhegoyir / fedholahato / diboder / gesoder / yiryiro / gadhlahato / madobiyo",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Midgan Word-Formation p. 188",
+          "audioFile": null
+        },
+        {
+          "english": "Base-5 (quinary) numeral system of the Yibir language (1–10) built on deri ('finger/one') and gànad ('hand/five')",
+          "translation": "deri (1), limihi (2), sadehhi (3), aferi (4), gànad (5), gànad iyo deri (6), gànad iyo limihi (7), gànad iyo sadehhi (8), gànad iyo aferi (9), limihi gànadod (10)",
+          "pronunciation": "deri / limihi / sadehhi / aferi / ganad / limihi ganadod",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Numerals pp. 187, 213",
+          "audioFile": null
+        },
+        {
+          "english": "Higher Yibir numerals (15–1,000) formed by multiples of gànad ('hand = 5') and gođerowi-gi ('rosary = 100')",
+          "translation": "sadehhi gànadod (15), aferi gànadod (20), gànad gànadod (25), lehh gànadod (30), todoba gànadod (35), sided gànadod (40), sagal gànadod (45), toban gànadod (50), gođerowi-gi (100), tobanihi gođerowiyod (1,000)",
+          "pronunciation": "sadehhi ganadod / aferi ganadod / godherowi-gi / tobanihi godherowiyod",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Numerals pp. 187, 213",
+          "audioFile": null
+        },
+        {
+          "english": "Yibir descriptive periphrases for East African wild animals using dálanga-hi ('wild animal')",
+          "translation": "dálanga-hi: d. khábarki ghandiđsan (lion) • d. amèđo ‘ita (leopard) • d. khábarki ghandiđsanleh (hyaena) • d. dađo ‘ita (fox) • d. albakharki (hartebeest) • d. walahúmo ku dashìya (oryx) • d. la bilehhoda (gerenuk) • d. darasti tegèja (Clarke's gazelle) • d. darasti iftimaleh (Soemmering's gazelle) • d. amèđo la hega (Speke's gazelle) • d. yahainyahha awaski ka godisa (dik-dik)",
+          "pronunciation": "dalanga-hi / khabarki ghandidhsan / amedho ‘ita / walahumo ku dashiya",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Wild Animals Table pp. 188, 214",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Midgan hunters' lexicon of 18 wild animal species",
+          "translation": "karinle / gano‘ad (lion) • dussi (leopard) • ‘unimadô (cheetah) • jimikh (caracal) • furat (hyaena) • humbur (fox) • dusár / anaduhr (elephant) • dabo‘ad (hartebeest) • gođir (kudu) • gesodèr / saryen (oryx) • tingir / geryal / lig (gerenuk) • dibodèr (Clarke's gazelle) • gosin / jehhar (Soemmering's gazelle) • abàbo (Speke's gazelle) • bikho (dik-dik) • madôla (tortoise) • hedig / gir / sareyagh (ostrich) • oran (guinea-fowl)",
+          "pronunciation": "karinle / gano‘ad / dussi / ‘unimado / jimikh / furat / dusar / gesoder / tingir / diboder / gosin / ababo / bikho",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Wild Animals Table p. 214",
+          "audioFile": null
+        },
+        {
+          "english": "A man who is born a Yibir is not shown the cave (tomb) of Au-Bakhardli (Closing proverb of the Yibir Story of Mohammed Hanif)",
+          "translation": "Ninki Anas ku đasho, gòdki Au-Bakhardli ma la tuso",
+          "pronunciation": "ninki anas ku dhasho godki au-bakhardli ma la tuso",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Story p. 199",
+          "audioFile": null
+        },
+        {
+          "english": "A Yibir went to Sultan Au-Bakhardli, and asked him for a gift (samanyo) (Opening sentence of the Yibir Story of Mohammed Hanif)",
+          "translation": "Suldàn Au-Bakhardli ya Anas u tegèđei, o samanyo weidistei",
+          "pronunciation": "suldan au-bakhardli ya anas u tegedhei o samanyo weidistei",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Story p. 197",
+          "audioFile": null
+        },
+        {
+          "english": "Are you a Midgan? Yes, I am. Where have you come from? (Midgan identity & greeting exchange)",
+          "translation": "Alowa ma tahai? Ha, wa ahai. Higged ka so tegèđei?",
+          "pronunciation": "alowa ma tahai ha wa ahai higged ka so tegedhei",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Midgan Sentences #1–3, p. 191",
+          "audioFile": null
+        },
+        {
+          "english": "Do you understand the Yibir language? Yes, I understand it (Yibir Conversation #5–6)",
+          "translation": "Khabar Anas ma ku duhúrta? Ha, wa ku duhúra",
+          "pronunciation": "khabar anas ma ku duhurta ha wa ku duhura",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Yibir Conversation p. 196",
+          "audioFile": null
+        },
+        {
+          "english": "Plural concord contrast: uncontracted fardihi ('the horses', masculine singular verb) vs. contracted fardi ('the horses', feminine singular verb)",
+          "translation": "Fardihi wa la keinei (masc. sg.) vs. Fardi wa la keinei (fem. sg.)",
+          "pronunciation": "fardihi wa la keinei vs fardi wa la keinei",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 165 Note, p. 91",
+          "audioFile": null
+        },
+        {
+          "english": "Prefix-conjugated vs. regular suffix-conjugated verb inflection in Somali ('I came, thou camest...' vs. 'I tell, thou tellest...')",
+          "translation": "wan imi, wad timi, wu yimi, wei timi, weinu nimi vs. wan shega, wad shegta, wu shega, wei shegta, weinu shegna",
+          "pronunciation": "wan imi wad timi wu yimi wei timi weinu nimi vs wan shega wad shegta wu shega",
+          "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Introduction p. xiv",
+          "audioFile": null
         }
       ]
     }
@@ -17156,5 +17618,5 @@
   "source": "Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 2434
+  "totalEntries": 2500
 }

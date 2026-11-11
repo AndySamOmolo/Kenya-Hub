@@ -234,18 +234,26 @@ export default function ProverbsView({
   const langDisplayName = activeCourse?.config.name || "Kenyan";
   const langNativeName = activeCourse?.config.nativeName || langDisplayName;
 
+  const wisdomCountByLang = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const { config } of Object.values(COURSE_REGISTRY)) {
+      counts[config.id] =
+        config.id === "kikuyu"
+          ? KIKUYU_PROVERBS.length
+          : config.id === "luo"
+          ? luoProverbs.length + luoRiddles.length + luoTongueTwisters.length
+          : getCulturalWisdomForLanguage(config.id).length;
+    }
+    return counts;
+  }, []);
+
   return (
     <div className="space-y-5">
       {/* Only show cross-language selector on the main Hub when NOT locked to a specific language */}
       {!lockedLanguageId && (
         <ExpandablePillRow>
           {Object.values(COURSE_REGISTRY).map(({ config }) => {
-            const count =
-              config.id === "kikuyu"
-                ? KIKUYU_PROVERBS.length
-                : config.id === "luo"
-                ? luoProverbs.length + luoRiddles.length + luoTongueTwisters.length
-                : getCulturalWisdomForLanguage(config.id).length;
+            const count = wisdomCountByLang[config.id] ?? 0;
             const active = activeLang === config.id;
             return (
               <button

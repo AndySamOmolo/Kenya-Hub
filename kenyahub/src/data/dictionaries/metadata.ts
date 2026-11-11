@@ -1114,10 +1114,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Isiolo"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
-    "totalEntries": 2434,
+    "dictionaryVersion": "3.1",
+    "lastUpdated": "2026-11-11",
+    "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language with Examples in Prose and Verse and an Account of the Yibir and Midgan Dialects\" — audited 100% line-by-line across §§ 1–289, Appendices I–III, Prose Stories I–XI, Songs I–XIV, and Yibir/Midgan Vocabularies), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
+    "totalEntries": 2500,
     "categories": [
       {
         "id": "greetings",
@@ -1213,7 +1213,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 478
+        "count": 544
       }
     ]
   },
@@ -2014,10 +2014,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Garissa"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.4",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7616,
+    "dictionaryVersion": "3.5",
+    "lastUpdated": "2026-11-11",
+    "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Charles & Lawrence Tutschek (1844 \"Dictionary of the Galla Language\" Part I; 1845 Part II & \"A Grammar of the Galla Language\", translated by M. J. Smead), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
+    "totalEntries": 7627,
     "categories": [
       {
         "id": "greetings",
@@ -2029,7 +2029,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 69
+        "count": 74
       },
       {
         "id": "family",
@@ -2089,7 +2089,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 90
+        "count": 91
       },
       {
         "id": "emergency",
@@ -2113,7 +2113,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 51
+        "count": 56
       }
     ]
   },
@@ -3959,3 +3959,54 @@ export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId:
     "langId": "daasanach"
   }
 ];
+
+// ============================================================
+// Rev. W. E. Taylor (1891) "African Aphorisms; or, Saws from Swahili-Land"
+// Grammatical & Lexical Highlights (pp. i–xii, 1–182)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Some other person's axe / hoe / stool / platter / mortar (Possessive Pronoun of Alienation -ngwa = -a wat'u)",
+      translation: "shokangwa • jembengwa • kitingwa • chanongwa • kinungwa",
+      pronunciation: "sho-kang-wa / jem-beng-wa / ki-ting-wa / cha-nong-wa / ki-nung-wa",
+      context: "Rev. W. E. Taylor (1891) African Aphorisms, Appendix B, pp. 166–167 & §§ 93, 127, 165a, 540",
+      audioFile: null,
+    },
+    langName: "Swahili (Kiswahili)",
+    langId: "swahili",
+  },
+  {
+    entry: {
+      english: "The 'Yet' Tense (-kali), Negative Perfect (Sime-), Precatory (-ngwa-), Poetical Perfect (-meze-), and '-siku-' Resultant",
+      translation: "nikalikwenda (nikalipo/akaliko/nikalimo) • Simekwenda? • Ngwakupa! • amezetwambia • asikunijibu neno",
+      pronunciation: "ni-ka-li-kwen-da / si-me-kwen-da / ngwa-ku-pa / a-me-ze-twam-bi-a / a-si-ku-ni-ji-bu",
+      context: "Rev. W. E. Taylor (1891) African Aphorisms, Appendix A (I–VI), pp. 164–166",
+      audioFile: null,
+    },
+    langName: "Swahili (Kiswahili)",
+    langId: "swahili",
+  },
+  {
+    entry: {
+      english: "Close your eyes and hew down the candelabra euphorbia! (Proverb on tackling an unpleasant task with due precaution)",
+      translation: "Finya matso uteme mwatsa! (mikulugo = potstirrers made from its inner wood)",
+      pronunciation: "fi-nya ma-tso u-te-me mwa-tsa",
+      context: "Rev. W. E. Taylor (1891) African Aphorisms, Nyika Proverb § 635aa, pp. 146–147",
+      audioFile: null,
+    },
+    langName: "Mijikenda (Giriama)",
+    langId: "mijikenda",
+  },
+  {
+    entry: {
+      english: "Two occupations were too heavy for the hyena (Taita Proverb on divided purpose)",
+      translation: "Kazi mbili zam'lema fisi",
+      pronunciation: "ka-zi mbi-li zam-le-ma fi-si",
+      context: "Rev. W. E. Taylor (1891) African Aphorisms, Taita Proverb § 665, p. 160",
+      audioFile: null,
+    },
+    langName: "Taita (Kidawida)",
+    langId: "taita",
+  }
+);

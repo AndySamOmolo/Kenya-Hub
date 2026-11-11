@@ -60,7 +60,13 @@ for (const lang of ["swahili", "kalenjin", "mijikenda", "meru", "somali", "daasa
 }
 
 ensureDir(resolve(destination, "lib"));
-const libFiles = ["types.ts", "tools-registry.ts", "learn-engine.ts", "learn-progress.ts"];
+const libFiles = [
+  "types.ts",
+  "tools-registry.ts",
+  "learn-engine.ts",
+  "learn-progress.ts",
+  "dictionary-search.ts",
+];
 for (const file of libFiles) {
   const srcPath = resolve(source, "lib", file);
   const destPath = resolve(destination, "lib", file);

@@ -667,73 +667,109 @@
           "audioFile": null
         },
         {
-          "english": "First-born",
-          "translation": "and ilma angafa",
-          "pronunciation": "and ilma anga-fa",
-          "context": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [adj.]",
-          "audioFile": null
-        },
         {
-          "english": "First-born",
-          "translation": "and s. ilma angafa",
-          "pronunciation": "and s ilma anga-fa",
-          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
+          "english": "First-born / Foremost / Eldest (vs. Youngest & Last)",
+          "translation": "hangafa / ilma angafa (1st: ini dura; opp. gudiru = youngest child, ini boda = the last)",
+          "pronunciation": "han-ga-fa / i-ni du-ra / gu-di-ru / i-ni bo-da",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 208, p. 60) & Rev. J. L. Krapf (1842)",
           "audioFile": null
         },
         {
           "english": "Seven (and 7-day Week)",
-          "translation": "torba (torbani; torban = week of 7 days)",
+          "translation": "torba (torbanⁱ / torbani; torban = week of 7 days)",
           "pronunciation": "tor-ba / tor-ban",
-          "context": "Tutschek (1845, §§ 7, 201, 203, pp. 3, 58–59)",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 7, 201, 203, pp. 3, 58–59)",
           "audioFile": null
         },
         {
           "english": "Ten (and 10-day Period / Decade)",
-          "translation": "kudhan (kudani; kurna = set of ten / 10-day period)",
+          "translation": "kudhan (kudani / kudan; kurna = set of ten / 10-day period)",
           "pronunciation": "ku-dhan / kur-na",
-          "context": "Tutschek (1845, §§ 201, 203, pp. 58–59)",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 201, 203, pp. 58–59)",
           "audioFile": null
         },
         {
-          "english": "Which in number?",
-          "translation": "hágāmi?",
-          "pronunciation": "hagami",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
+          "english": "How much? / How many? / Which in number?",
+          "translation": "mêka? / hágāmi?",
+          "pronunciation": "me-ka / ha-ga-mi",
+          "context": "Charles & Lawrence Tutschek (1845, § 8, p. 4) & Krapf (1850)",
           "audioFile": null
         },
         {
-          "english": "Stretch out (one's hand)",
-          "translation": "dirirse",
-          "pronunciation": "di-rir-se",
-          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
+          "english": "Eleven to Nineteen (11–19)",
+          "translation": "kudatoko (11), kudalama (12), kudazadi (13), kudaafuri (14), kudaz'ani (15), kudadya (16), kudatorba (17), kudazadedᵃ / kudazadeta (18), kudazagalᵃ / kudazagala (19)",
+          "pronunciation": "ku-da-to-ko ... ku-da-za-gal",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 7, 202, pp. 3, 59)",
           "audioFile": null
         },
         {
-          "english": "Gird (to gird one's self)",
-          "translation": "zazabad'a",
-          "pronunciation": "za-za-bad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "english": "Forty, Seventy & Ninety (40, 70, 90)",
+          "translation": "afurtama (40), torbatama (70), zagaltama (90)",
+          "pronunciation": "a-fur-ta-ma / tor-ba-ta-ma / za-gal-ta-ma",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 203, p. 59)",
           "audioFile": null
         },
         {
-          "english": "Oppose (to oppose one's self)",
-          "translation": "idya dyabeza",
-          "pronunciation": "idya dya-be-za",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "english": "Hundred Thousand (100,000)",
+          "translation": "kuntuma (lit. 'a fist-full of thousands', from kura 'fist/handful' + tuma 'beat/heap')",
+          "pronunciation": "kun-tu-ma",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 204, p. 60)",
           "audioFile": null
         },
         {
-          "english": "Excuse (to excuse one's self with)",
-          "translation": "cabad'a",
-          "pronunciation": "ca-bad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "english": "Ordinals 1st to 11th (-tiana = 'hanging on')",
+          "translation": "1st: ini dura / hangafa; 2nd: tokotiana; 3rd: lamatiana; 4th: zaditiana; 5th: afuritiana; 6th: z'anitiana; 7th: dyatiana; 8th: torbatiana; 9th: zadetatiana; 10th: zagaltiana; 11th: kudanitiana / kurnatiana",
+          "pronunciation": "i-ni du-ra / to-ko-tia-na / la-ma-tia-na / za-di-tia-na",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 207–208, pp. 60–61)",
           "audioFile": null
         },
         {
-          "english": "Appease (to appease one by invented consolatory arguments)",
-          "translation": "zozoba",
-          "pronunciation": "to - one by invented consolatory arguments zozoba",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "english": "Social Numerals: 2 to 1,000 Together (-anu) & Both",
+          "translation": "latshanu (2), zadanu (3), arfanu (4), z'ananu / z'antanu (5), dyanu (6), torbanu (7), zadetanu (8), zagaltanu (9), kurnanu (10), kurnatokanu (11), digetamtanu (20), digetamitakanu (21), zodomanu / zodomnu (30), afurtamnu (40), z'antamnu (50), dyatamnu (60), torbatamnu (70), zadettamnu (80), zagaltamnu (90), d'ibatanu (100), kumatanu (1,000); ladz'u (both)",
+          "pronunciation": "lat-sha-nu / za-da-nu / ar-fa-nu / z'a-na-nu / kur-na-nu / lad-z'u",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 209–210, p. 61)",
+          "audioFile": null
+        },
+        {
+          "english": "Distributive Numerals (One by One, Two by Two, Ten by Ten)",
+          "translation": "toko toko (1 by 1), lama lama (2 by 2), zadi zadi (3 by 3), kudani kudani / kurna kurna (10 by 10)",
+          "pronunciation": "to-ko to-ko / la-ma la-ma / kur-na kur-na",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 211, p. 61)",
+          "audioFile": null
+        },
+        {
+          "english": "Quarter (1/4 of an Amole Salt-Bar)",
+          "translation": "karmana (kurmana, from ka + harka + mana = 'hand of the house')",
+          "pronunciation": "kar-ma-na",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 212, p. 62)",
+          "audioFile": null
+        },
+        {
+          "english": "Three-Quarters (3/4 of an Amole Salt-Bar in 1845 Grammar; 1/8 in 1844 Dict.)",
+          "translation": "gimaz'i",
+          "pronunciation": "gi-maz'i",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 212, p. 62) & Dictionary Part I (1844, p. 62)",
+          "audioFile": null
+        },
+        {
+          "english": "One-Eighth (1/8 of an Amole Salt-Bar in 1845 Grammar; 1/12 in 1844 Dict.)",
+          "translation": "gedele / gadele (fotoqe)",
+          "pronunciation": "ge-de-le / ga-de-le",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 212, p. 62) & Dictionary Part I (1844, p. 56)",
+          "audioFile": null
+        },
+        {
+          "english": "Numeral Adverbs: Once, Twice, Thrice, At Once, At First",
+          "translation": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at once / suddenly), lafa dyala (at first / in the beginning)",
+          "pronunciation": "ga-fa-to-ko / ga-fa-la-ma / ga-fa-za-di / ir-ga-ta-ka / la-fa dya-la",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 213, p. 62)",
+          "audioFile": null
+        },
+        {
+          "english": "Numeral Verbs: Double, Do for the 2nd, 3rd, 4th, 5th Time",
+          "translation": "diriba (double / twist threads), datchâ / datchaza / datchafad'a (double / fold together), lamefad'a (do 2nd time), zadifad'a (do 3rd time), afurifad'a (do 4th time), z'anifad'a (do 5th time)",
+          "pronunciation": "di-ri-ba / dat-cha / la-me-fad'a / za-di-fad'a / a-fu-ri-fad'a / z'a-ni-fad'a",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 214–215, pp. 62–63)",
           "audioFile": null
         }
       ]
@@ -18536,6 +18572,13 @@
           "pronunciation": "ha-ma-mi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
+        },
+        {
+          "english": "Amole Rock-Salt Currency Bar & Its Four Fractions (1/2, 1/4, 3/4, 1/8)",
+          "translation": "amole (zogitᵃ): tchabnana (1/2), karmana (1/4), gimaz'i (3/4 in 1845 Grammar; 1/8 in 1844 Dict.), gedele / gadele (1/8 in 1845 Grammar; 1/12 in 1844 Dict.)",
+          "pronunciation": "a-mo-le / tchab-na-na / kar-ma-na / gi-maz'i / ge-de-le",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 212, p. 62)",
+          "audioFile": null
         }
       ]
     },
@@ -20456,758 +20499,758 @@
           "audioFile": null
         },
         {
-          "english": "Aga",
-          "translation": "Ag",
-          "pronunciation": "ag",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "english": "Otshu Aga (native Galla informant from Sibu, d. Oct. 27, 1840)",
+          "translation": "Aga (Otshu Aga)",
+          "pronunciation": "ot-shu a-ga",
+          "context": "Charles & Lawrence Tutschek, Dictionary (1844) & Grammar of the Galla Language (1845, Preface p. VII & Letter 4 p. 88)",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To spit out, clear the throat (onomatopoetic verb)",
           "translation": "akfad'a",
           "pronunciation": "akfad'a",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "A leguminous plant cultivated by the Gallas",
           "translation": "aczira",
           "pronunciation": "aczi-ra",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Loc",
+          "english": "There, thither, yonder (locative adverb)",
           "translation": "atchi",
           "pronunciation": "atchi",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 247, p. 74)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Euphorbia / candelabra tree (also 1st month hadoleza / hadami)",
           "translation": "adami",
           "pronunciation": "a-da-mi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "All four together (social numeral of afuri 'four')",
           "translation": "arfanu",
           "pronunciation": "arfa-nu",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 209, p. 61)",
           "audioFile": null
         },
         {
-          "english": "Loc",
+          "english": "Out, outside, abroad (locative particle)",
           "translation": "ala",
           "pronunciation": "ala",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 252, p. 82)",
           "audioFile": null
         },
         {
-          "english": "Loc",
+          "english": "Here, hither (locative adverb)",
           "translation": "azi",
           "pronunciation": "azi",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 247, p. 74)",
+          "audioFile": null
+        },
+        {
+          "english": "Pan, earthen cooking-pot or baking-pan",
+          "translation": "t'uwe / ele",
+          "pronunciation": "t'u-we / e-le",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Pan",
-          "translation": "t'uwe",
-          "pronunciation": "ele",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
-          "audioFile": null
-        },
-        {
-          "english": "Loc",
+          "english": "Place where one supports oneself / prop (locative noun)",
           "translation": "irigu",
           "pronunciation": "i-ri-gu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Hay",
+          "english": "Hay, dry grass or fodder for cattle",
           "translation": "oka",
           "pronunciation": "oka",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Sacred wild fig-tree (Ficus sycomorus / assembly shade tree)",
           "translation": "oda",
           "pronunciation": "oda",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "A leguminous shrub / plant species",
           "translation": "odongorra",
           "pronunciation": "o-dongorra",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Lit",
-          "translation": "oli",
+          "english": "Up, upwards, above (adverb & postposition; ol djed'a = rise up)",
+          "translation": "oli (ol)",
           "pronunciation": "oli",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 93, 252, pp. 26, 82)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Oats / wild grain species",
           "translation": "ombori",
           "pronunciation": "ombo-ri",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Fragrant shrub whose twigs are used in ceremonies",
           "translation": "ulmae",
           "pronunciation": "ulmae",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Medicinal plant / herb species",
           "translation": "ungae",
           "pronunciation": "ungae",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "Rustling, rattling (onomatopoetic adjective/noun)",
           "translation": "kaz'akaz'tu",
           "pronunciation": "kaz'a-kaz'tu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Aromatic herb / plant species",
           "translation": "kefo",
           "pronunciation": "ke-fo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To roll down, tumble headlong",
           "translation": "konkolad'a",
           "pronunciation": "konko-lad'a",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
-          "translation": "kudan",
+          "english": "Ten (cardinal numeral 10; kurna = set of ten)",
+          "translation": "kudan (kudani)",
           "pronunciation": "ku-dan",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 201, p. 58)",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Thousand (cardinal numeral 1,000; soc. kumatanu)",
           "translation": "kuma",
           "pronunciation": "ku-ma",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 203, 209, pp. 59, 61)",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Hundred thousand (100,000, lit. 'fist-full of thousands')",
           "translation": "kuntuma",
           "pronunciation": "kuntu-ma",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 204, p. 60)",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To rattle, clatter (onomatopoetic causative verb)",
           "translation": "catchamza",
           "pronunciation": "catchamza",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To chatter with the teeth, shiver (onomatopoetic verb)",
           "translation": "cat'akat'a",
           "pronunciation": "cat'a-kat'a",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "Crack! snap! (onomatopoetic sound root: cab djed'a)",
           "translation": "cab-",
           "pronunciation": "cab",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 92, p. 25)",
           "audioFile": null
         },
         {
-          "english": "Fem",
+          "english": "Unmarried person, bachelor (fem. caweti)",
           "translation": "caweza",
           "pronunciation": "ca-we-za",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
-          "translation": "qildu",
+          "english": "Sycamore / wild fig tree (qilt'u)",
+          "translation": "qildu (qilt'u)",
           "pronunciation": "qildu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Castor-oil plant (Ricinus communis)",
           "translation": "cobo",
           "pronunciation": "co-bo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Wax",
+          "english": "Wax (contrasted with caca 'soot' and kaka 'oath')",
           "translation": "gaga",
           "pronunciation": "ga-ga",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 12, p. 4)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Large forest tree species",
           "translation": "gararo",
           "pronunciation": "ga-ra-ro",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Rhamnus / buckthorn shrub used in fermenting mead (daadhii)",
           "translation": "gedizo",
           "pronunciation": "ge-di-zo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Climbing plant / creeper species",
           "translation": "gelint'o",
           "pronunciation": "ge-lint'o",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Bulbous plant / tuber species",
           "translation": "godcho",
           "pronunciation": "godcho",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Edible taro / arum root cultivated in Galla country",
           "translation": "godare",
           "pronunciation": "go-da-re",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Collard greens / Brassica carinata (cultivated vegetable)",
           "translation": "gomana",
           "pronunciation": "go-ma-na",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Lap",
+          "english": "Lap, thigh",
           "translation": "gudeda",
           "pronunciation": "gu-de-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To rumble, thunder, murmur (onomatopoetic verb)",
           "translation": "gunguma",
           "pronunciation": "gungu-ma",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
-          "translation": "tchad'a",
+          "english": "To be silent, hold one's peace (tshal djed'a)",
+          "translation": "tchad'a (tshal djed'a)",
           "pronunciation": "tchad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 92, p. 25)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Herbaceous plant species",
           "translation": "djalile",
           "pronunciation": "dja-li-le",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Six (cardinal numeral 6; ord. dyatiana, soc. dyanu)",
           "translation": "dya",
           "pronunciation": "dya",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 201, 207, 209, pp. 58, 60–61)",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "titiza",
+          "english": "Housefly, fly (nominative titifni)",
+          "translation": "titiza (nom. titifni)",
           "pronunciation": "ti-ti-za",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 184.2, p. 55)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Plant species used for cordage/fibre",
           "translation": "togo",
           "pronunciation": "to-go",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Teff (Eragrostis tef, staple Abyssinian & Oromo grain)",
           "translation": "t'afi",
           "pronunciation": "t'a-fi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Herb / pasture plant species",
           "translation": "t'ufo",
           "pronunciation": "t'u-fo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Finger millet (Eleusine coracana, used for bread and beer)",
           "translation": "daguza",
           "pronunciation": "da-gu-za",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Broad-leaved plant species",
           "translation": "dalba",
           "pronunciation": "dalba",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Large shady fig-like tree species",
           "translation": "dambi",
           "pronunciation": "dambi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Tree species whose wood is used for staffs",
           "translation": "daniza",
           "pronunciation": "da-ni-za",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Flowering shrub / plant species",
           "translation": "dazie",
           "pronunciation": "da-zie",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Ceremonial plant / shrub species",
           "translation": "degizo",
           "pronunciation": "de-gi-zo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "Gurgling, bubbling sound of water (onomatopoetic root)",
           "translation": "dolbok",
           "pronunciation": "dolbok",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "d'ira",
+          "english": "Man, male, husband, vir (nominative d'irri)",
+          "translation": "d'ira (nom. d'irri)",
           "pronunciation": "d'i-ra",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 184, p. 55)",
           "audioFile": null
         },
         {
-          "english": "Jew",
+          "english": "Tanner, currier, leather-worker",
           "translation": "faqi",
           "pronunciation": "fa-qi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Tall reed / grass species",
           "translation": "babali",
           "pronunciation": "ba-ba-li",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Fem",
-          "translation": "bare",
+          "english": "Handsome, fair, comely (fem. baretu)",
+          "translation": "bare (bared'a, fem. baretu)",
           "pronunciation": "ba-re",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Fem",
-          "translation": "bala",
+          "english": "One-eyed, blind in one eye (fem. baleti)",
+          "translation": "bala (fem. baleti)",
           "pronunciation": "ba-la",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Trefoil / three-leaved clover (from bala 'leaf' + zadi 'three')",
           "translation": "balzadi",
           "pronunciation": "balza-di",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "bia",
+          "english": "Country, land, region, people (nominative biyi)",
+          "translation": "bia (biya, nom. biyi)",
           "pronunciation": "bia",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 97, 184, pp. 27, 55)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Juniper / Podocarpus timber tree (cedar of East Africa)",
           "translation": "birbirza",
           "pronunciation": "birbirza",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "Small bell, tinkling bell (onomatopoetic noun)",
           "translation": "bilbila",
           "pronunciation": "bilbi-la",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "boká",
+          "english": "Rain (nominative bokeñi)",
+          "translation": "boká (boka, nom. bokeñi)",
           "pronunciation": "bo-ka",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 184.3, p. 56)",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "bofa",
+          "english": "Serpent, snake, viper (nominative bofni)",
+          "translation": "bofa (nom. bofni)",
           "pronunciation": "bo-fa",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Herbaceous plant species",
           "translation": "bozoge",
           "pronunciation": "bo-zo-ge",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Bottle-gourd, calabash plant (Lagenaria)",
           "translation": "buqe",
           "pronunciation": "bu-qe",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "bufa",
+          "english": "Bellows (blacksmith's bellows, nominative bufni)",
+          "translation": "bufa (nom. bufni)",
           "pronunciation": "bu-fa",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Coffee (coffee berry & plant, indigenous to Kaffa and Oromo lands)",
           "translation": "buna",
           "pronunciation": "bu-na",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Gold",
           "translation": "warqe",
           "pronunciation": "warqe",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Coral tree (Erythrina abyssinica)",
           "translation": "wolenzu",
           "pronunciation": "wo-lenzu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Aromatic medicinal plant species",
           "translation": "wondabio",
           "pronunciation": "wonda-bio",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Reed / rush plant species",
           "translation": "retshi",
           "pronunciation": "retshi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Both together, the two together (social numeral of lama 'two')",
           "translation": "latshanu",
           "pronunciation": "latsha-nu",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 209, p. 61)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Bamboo / hollow reed species",
           "translation": "lemana",
           "pronunciation": "le-ma-na",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Trumpet, long horn blown before rulers",
           "translation": "malakata",
           "pronunciation": "ma-la-ka-ta",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Sign, token, mark",
           "translation": "melikida",
           "pronunciation": "me-li-ki-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Tough grass / sedge used for weaving baskets and mats",
           "translation": "migira",
           "pronunciation": "mi-gi-ra",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Pair of scales, balance for weighing",
           "translation": "midjana",
           "pronunciation": "midja-na",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Red cayenne / bird's-eye chili pepper (Capsicum)",
           "translation": "mit'mit'a",
           "pronunciation": "mit'mit'a",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "muka",
+          "english": "Tree, wood, timber (nominative mukni, pl. mukoda)",
+          "translation": "muka (nom. mukni, pl. mukoda)",
           "pronunciation": "mu-ka",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 181, 184.3, pp. 54, 56)",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "Trade, commerce, merchant caravan",
           "translation": "nagada",
           "pronunciation": "na-ga-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "nafa",
+          "english": "Body, limb, member (nominative nafni)",
+          "translation": "nafa (nom. nafni)",
           "pronunciation": "na-fa",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Niger-seed oil plant (Guizotia abyssinica)",
           "translation": "nugi",
           "pronunciation": "nu-gi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Inf",
-          "translation": "ñad'a",
+          "english": "To eat, chew (3s ini ñada, 1p ñana, inf. ñad'tshu, III ñatshiza)",
+          "translation": "ñad'a (3s ñada, III ñatshiza)",
           "pronunciation": "nad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 20, 68, 137, pp. 6, 18, 42)",
           "audioFile": null
         },
         {
-          "english": "Amh",
+          "english": "To bow down, prostrate oneself, worship",
           "translation": "zagada",
           "pronunciation": "za-ga-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Eight (cardinal numeral 8; ord. zadetatiana, soc. zadetanu)",
           "translation": "zadeta",
           "pronunciation": "za-de-ta",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 201, 207, 209, pp. 58, 60–61)",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Three (cardinal numeral 3; ord. zaditiana, soc. zadanu)",
           "translation": "zadi",
           "pronunciation": "za-di",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 201, 207, 209, pp. 58, 60–61)",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "zambada",
+          "english": "Sabbath (zambata t'ina = Saturday; zambata guda = Sunday)",
+          "translation": "zambada (zambata)",
           "pronunciation": "zamba-da",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "-zana",
+          "english": "That (distal demonstrative pronoun, nominative zuni)",
+          "translation": "zana (nom. zuni)",
           "pronunciation": "za-na",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 243, p. 72)",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Mustard plant / seed (Brassica nigra)",
           "translation": "zanafi",
           "pronunciation": "za-na-fi",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Anthelmintic shrub / tree species",
           "translation": "zezno",
           "pronunciation": "zezno",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nom",
-          "translation": "zidiza",
+          "english": "Trefoil / rich pasture clover (nominative zidifni)",
+          "translation": "zidiza (nom. zidifni)",
           "pronunciation": "zi-di-za",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Num",
+          "english": "Thirty (cardinal numeral 30; soc. zodomanu / zodomnu)",
           "translation": "zodoma",
           "pronunciation": "zo-do-ma",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 203, 209, pp. 59, 61)",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To trot, jog along (of horses and mules)",
           "translation": "zukzuga",
           "pronunciation": "zukzu-ga",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Fenugreek / aromatic spice seed (Trigonella foenum-graecum)",
           "translation": "zunco",
           "pronunciation": "zunco",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Onion / bulb plant species",
           "translation": "zungurda",
           "pronunciation": "zungurda",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "To sneeze (onomatopoetic middle verb)",
           "translation": "hat'ifad'a",
           "pronunciation": "hat'i-fad'a",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Thorny shrub / berry plant species",
           "translation": "hawiti",
           "pronunciation": "ha-wi-ti",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Saw",
+          "english": "Saw (toothed cutting tool, from hamtu 'sickle' + ilkani 'teeth')",
           "translation": "hamtulkani",
           "pronunciation": "hamtulka-ni",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bot",
+          "english": "Embelia / anthelmintic berry shrub",
           "translation": "hancu",
           "pronunciation": "hancu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Fem",
-          "translation": "hieza",
+          "english": "Poor, indigent person (fem. hieti, nom. hiefni, verb hioma 'become poor')",
+          "translation": "hieza (fem. hieti, nom. hiefni)",
           "pronunciation": "hie-za",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, §§ 98, 184.2, 198, pp. 28, 55, 58)",
           "audioFile": null
         },
         {
-          "english": "Nat",
+          "english": "Hiccup, sobbing (onomatopoetic noun)",
           "translation": "hirgimfu",
           "pronunciation": "hirgimfu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Bog",
+          "english": "Bog, marsh, swamp",
           "translation": "rare",
           "pronunciation": "ra-re",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]",
           "audioFile": null
         },
         {
-          "english": "Bot",
-          "translation": "Cedar",
-          "pronunciation": "ce-dar",
+          "english": "Cedar / East African juniper tree (birbirza)",
+          "translation": "birbirza",
+          "pronunciation": "bir-bir-za",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
         {
-          "english": "Cue",
+          "english": "Cue, braided tuft of hair",
           "translation": "gonogona",
           "pronunciation": "go-no-go-na",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]",
           "audioFile": null
         },
         {
-          "english": "Dug",
+          "english": "Dug, udder, teat (also child)",
           "translation": "mutsha",
           "pronunciation": "mutsha",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]",
           "audioFile": null
         },
         {
-          "english": "Ell",
+          "english": "Ell, cubit (forearm measure)",
           "translation": "d'und'uma",
           "pronunciation": "d'und'u-ma",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]",
           "audioFile": null
         },
         {
-          "english": "Fen",
+          "english": "Fen, marshland",
           "translation": "rare",
           "pronunciation": "ra-re",
           "context": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]",
           "audioFile": null
         },
         {
-          "english": "Bot",
-          "translation": "Fennel",
-          "pronunciation": "fennel",
+          "english": "Fennel / aromatic umbelliferous herb (kamuni / инсилал)",
+          "translation": "kamuni",
+          "pronunciation": "ka-mu-ni",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
           "audioFile": null
         },
@@ -52208,10 +52251,10 @@
           "audioFile": null
         },
         {
-          "english": "$\\frac{1}{8}$ of an amole",
+          "english": "3/4 of an amole salt-bar (1845 Grammar § 212, p. 62; 1/8 in 1844 Dict. Pt. I)",
           "translation": "gimaz'i",
           "pronunciation": "gi-maz'i",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (1845, § 212, p. 62) & Dictionary Part I (1844, p. 62)",
           "audioFile": null
         },
         {
@@ -53385,9 +53428,44 @@
         },
         {
           "english": "The Five Galla Tribes / Gadaa Circumcision Rank Orders in Tutschek (1844)",
-          "translation": "1st: horad'a ('the first tribe of the Gallas respecting their rank to the circumcision', p)",
+          "translation": "1st: horad'a (p. 203) → 2nd: midjile (p. 169) → 3rd: robale (p. 155) → 4th: kilole (p. 34) → 5th: dulo (p. 104); plus djara (circumcision feast, p. 78) & tchala (circumcision priests, p. 73)",
           "pronunciation": "ho-ra-d'a, mi-dji-le, ro-ba-le, ki-lo-le, du-lo / dja-ra / tcha-la",
-          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 34, 73, 78, 104, 155, 169, 203 — 203) → 2nd: midjile ('the second tribe of the Gallas respecting the order which is observed amongst them at circumcision', p. 169) → 3rd: robale...",
+          "context": "Karl & Lawrence Tutschek (1844) 'Dictionary of the Galla Language', Part I, pp. 34, 73, 78, 104, 155, 169, 203",
+          "audioFile": null
+        },
+        {
+          "english": "The Three Galla Informants of Tutschek's 1845 Grammar (Sibu, Goma & Hambo)",
+          "translation": "Otshu Aga (from Sibu), Aman Gonda (from Goma), and Akafed'e Dalle (from Hambo)",
+          "pronunciation": "ot-shu a-ga / a-man gon-da / a-ka-fed'e dal-le",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, Preface pp. V–VIII & §§ 4, 6, 14–15)",
+          "audioFile": null
+        },
+        {
+          "english": "Akafed'e Dalle's 16-Verse Prayer after the War between Hambo and Hamaya (1845)",
+          "translation": "1. Wacayo laftana, goftako! ... 2. Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai! ... 12. Wara Hambo fi wara Hamaya waliti ararzi! ... 16. Nagadani na faitu!",
+          "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko ... na-ga-da-ni na fai-tu",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, Prayer 1, vv. 1–16, pp. 84–87)",
+          "audioFile": null
+        },
+        {
+          "english": "Traditional Galla Morning & Evening Prayers to Waca (1845)",
+          "translation": "Morning: Ya Waca nagan na bultshite nagan na oltshi ... milkiko na gadyêlzi! | Evening: Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi",
+          "pronunciation": "ya wa-ca na-gan na bul-tshi-te na-gan na ol-tshi",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, Prayers 2 & 3, pp. 87–88)",
+          "audioFile": null
+        },
+        {
+          "english": "Munich Letters of Otshu Aga (Oct. 16, 1840) & Akafed'e Dalle (Oct. 21, 1840)",
+          "translation": "Naga, naga! fayaketi! Ati naga olte had'a? ... Nagaiti buli! Ani Otshu Agad'a. | „D'ad'an ibidti bue hindebiu\" ... Nu arfanu teñeti walwadjin kana hazofna ... Nagan hafi hama nu wal agaruti! Ani Akafed'e Dalled'a",
+          "pronunciation": "na-ga na-ga fa-ya-ke-ti ... na-gan ha-fi ha-ma nu wal a-ga-ru-ti",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, Letters 4 & 5, pp. 88–91)",
+          "audioFile": null
+        },
+        {
+          "english": "Dialogue on Djulule's & Gadiyo's Children & Rear Endpaper Notes (1845)",
+          "translation": "„Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi?\" — „Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe\" (§ 255, p. 83) | Endpaper notes on Pronouns, Onomatopoeticals, Passives & gm = mm (pp. 105, 107)",
+          "pronunciation": "mu-ca dju-lu-le bo-e hin-raf-ne ... mu-ca ga-di-yo hu-d'e-ti kan i-ni bo-e",
+          "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, § 255 p. 83 & Endpaper Notes pp. 105, 107)",
           "audioFile": null
         }
       ]
@@ -53396,5 +53474,5 @@
   "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845, Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 7616
+  "totalEntries": 7627
 }
