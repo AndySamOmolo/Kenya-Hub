@@ -1015,6 +1015,7 @@ ins.adsbygoogle {
   margin-bottom: 1.5rem !important;
   clear: both !important;
 }
+}
 
 /* ── Mobile Screen Compaction Rules (Buttons, Pills, Badges & Cards) ── */
 @media (max-width: 639px) {
