@@ -447,7 +447,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     description: "Complete 10 mini-games or flashcard sessions",
     icon: "⚡",
     xpReward: 80,
-    category: "special",
+    category: "lessons",
     condition: (p) => (p.gamesPlayed || 0) >= 10,
   },
   {
