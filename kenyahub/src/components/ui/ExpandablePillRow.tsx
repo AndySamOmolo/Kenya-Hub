@@ -65,9 +65,22 @@ export interface ExpandablePillRowProps {
   threshold?: number;
 }
 
+function getScrollMaskImage(left: boolean, right: boolean): string | undefined {
+  if (left && right) {
+    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.25) 6px, black 26px, black calc(100% - 26px), rgba(0,0,0,0.25) calc(100% - 6px), transparent 100%)";
+  }
+  if (left) {
+    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.25) 6px, black 26px, black 100%)";
+  }
+  if (right) {
+    return "linear-gradient(to right, black 0px, black calc(100% - 26px), rgba(0,0,0,0.25) calc(100% - 6px), transparent 100%)";
+  }
+  return undefined;
+}
+
 /**
- * Renders a single-row horizontal scrolling pill bar with subtle left/right
- * inset scroll shadows when pills overflow into the edges.
+ * Renders a single-row horizontal scrolling pill bar with smooth edge fade masks
+ * and refined left/right scroll depth indicators when pills overflow.
  * When there are more than `threshold` (default 5) pills, displays a dropdown icon button
  * pinned on the right that toggles displaying all pills vertically (wrapped) without clipping.
  */
@@ -132,6 +145,10 @@ export default function ExpandablePillRow({
     return () => clearTimeout(timer);
   }, [children, expanded, updateScrollShadows]);
 
+  const maskImage = !expanded
+    ? getScrollMaskImage(canScrollLeft, canScrollRight)
+    : undefined;
+
   if (count <= threshold) {
     return (
       <div
@@ -141,7 +158,6 @@ export default function ExpandablePillRow({
           width: "100%",
           maxWidth: "100%",
           overflow: "hidden",
-          borderRadius: "9999px",
         }}
       >
         <div
@@ -159,6 +175,12 @@ export default function ExpandablePillRow({
             position: "relative",
             paddingTop: "2px",
             paddingBottom: "2px",
+            ...(maskImage
+              ? {
+                  WebkitMaskImage: maskImage,
+                  maskImage,
+                }
+              : {}),
           }}
         >
           {children}
@@ -200,7 +222,6 @@ export default function ExpandablePillRow({
           minWidth: 0,
           maxWidth: "100%",
           overflow: "hidden",
-          borderRadius: expanded ? "16px" : "9999px",
         }}
       >
         <div
@@ -235,6 +256,12 @@ export default function ExpandablePillRow({
                   position: "relative",
                   paddingTop: "2px",
                   paddingBottom: "2px",
+                  ...(maskImage
+                    ? {
+                        WebkitMaskImage: maskImage,
+                        maskImage,
+                      }
+                    : {}),
                 }
           }
         >

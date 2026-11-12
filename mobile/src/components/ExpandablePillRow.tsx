@@ -80,21 +80,21 @@ function prepareExpandedMobileChildren(
 }
 
 const SHADOW_STEPS_DARK = [
-  "rgba(8, 6, 4, 0.56)",
-  "rgba(8, 6, 4, 0.42)",
-  "rgba(8, 6, 4, 0.29)",
-  "rgba(8, 6, 4, 0.18)",
-  "rgba(8, 6, 4, 0.10)",
-  "rgba(8, 6, 4, 0.04)",
+  "rgba(14, 12, 10, 0.88)",
+  "rgba(14, 12, 10, 0.68)",
+  "rgba(14, 12, 10, 0.48)",
+  "rgba(14, 12, 10, 0.30)",
+  "rgba(14, 12, 10, 0.15)",
+  "rgba(14, 12, 10, 0.05)",
 ];
 
 const SHADOW_STEPS_LIGHT = [
-  "rgba(26, 17, 8, 0.18)",
-  "rgba(26, 17, 8, 0.13)",
-  "rgba(26, 17, 8, 0.09)",
-  "rgba(26, 17, 8, 0.055)",
-  "rgba(26, 17, 8, 0.03)",
-  "rgba(26, 17, 8, 0.01)",
+  "rgba(250, 247, 242, 0.94)",
+  "rgba(250, 247, 242, 0.76)",
+  "rgba(250, 247, 242, 0.54)",
+  "rgba(250, 247, 242, 0.34)",
+  "rgba(250, 247, 242, 0.16)",
+  "rgba(250, 247, 242, 0.05)",
 ];
 
 function EdgeScrollShadow({
@@ -107,8 +107,8 @@ function EdgeScrollShadow({
   const steps = isDark ? SHADOW_STEPS_DARK : SHADOW_STEPS_LIGHT;
   const ordered = side === "left" ? steps : [...steps].reverse();
   const creaseColor = isDark
-    ? "rgba(0, 0, 0, 0.65)"
-    : "rgba(26, 17, 8, 0.22)";
+    ? "rgba(0, 0, 0, 0.55)"
+    : "rgba(212, 202, 191, 0.55)";
 
   return (
     <View
@@ -147,7 +147,7 @@ export interface ExpandablePillRowProps {
 
 /**
  * Renders a single-row horizontal scrolling pill bar on mobile with subtle
- * left/right inset edge shadows indicating scrollable overflow.
+ * left/right edge fade shadows indicating scrollable overflow.
  * When there are more than `threshold` (default 5) pills, renders a dropdown icon button
  * on the right that toggles displaying all pills vertically (wrapped) without edge clipping.
  */
@@ -358,7 +358,6 @@ const shadowStyles = StyleSheet.create({
   viewportWrap: {
     position: "relative",
     overflow: "hidden",
-    borderRadius: 999,
   },
   edgeWrap: {
     position: "absolute",
@@ -369,18 +368,12 @@ const shadowStyles = StyleSheet.create({
   },
   leftEdge: {
     left: 0,
-    borderTopLeftRadius: 999,
-    borderBottomLeftRadius: 999,
-    overflow: "hidden",
   },
   rightEdge: {
     right: 0,
-    borderTopRightRadius: 999,
-    borderBottomRightRadius: 999,
-    overflow: "hidden",
   },
   creaseLine: {
-    width: 1.5,
+    width: 1,
     height: "100%",
   },
   stepStrip: {
