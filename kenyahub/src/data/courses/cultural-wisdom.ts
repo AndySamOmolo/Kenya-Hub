@@ -56323,7 +56323,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "The poet Bwana Muyaka uses this proverb as follows:— 'Ahadi na miithaki ‖ mwenyi kumpa mwenziwe / Ni deni katika haki ‖ na kulipa ijuziye: / Na mwendapo kushitaki ‖ hukuata ufungiwe. / Enda kauze wambiwe ‖ kwamba ahadi si deni.' ('A promise and a covenant, he that makes it with his fellow, It is a debt in justice and it behoves to pay it: And when you go to accuse [at the bar of justice] it leaves you to be bound [i.e. loses you your liberty]. Go and inquire whether a promise is not a debt.') Note: ijuziye = imejuzu (old form of perfect); ufungiwe (2s subj. passive of kufunga); wambiwe = uambiwe.",
     englishEquivalent: "Promise is debt.",
-    theme: "character",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #6, p. 2",
   },
   {
@@ -56371,7 +56371,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Used to unmask the enmity of a person who for his own ends conceals it under an assumed politeness. Sitaha (here plural in form for singular) means respect, constraint, politeness. Si huja = hazina maana ('have no meaning'). Nawacha = na-wa-cha ('I fear you'); nichani = ni-cha-ni ('fear ye me', from kucha 'to fear/reverence').",
     englishEquivalent: "Drop false politeness when mutual distrust is plain.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #98, pp. 19–20",
   },
   {
@@ -56383,7 +56383,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "If his fingers (vyanda, pl. of chanda 'finger' in Kimvita/Northern Swahili) are disturbed, they will wander from his particular portion of the common mess into that of the others. Do not arouse suspicion in someone who is already at a disadvantage.",
     englishEquivalent: "Let sleeping dogs lie; do not disturb a delicate arrangement.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #101, pp. 20–21",
   },
   {
@@ -56407,7 +56407,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Compare Micah vii. 6 ('A man's enemies are the men of his own house') and § 502 ('T'ek'e la k'uku mwenyewe halimuumizi'). Ki is the Class 7 copula ('it is'—scil. kitu kikulacho, referring to a louse or hidden betrayer within one's own household or inner circle).",
     englishEquivalent: "A man's foes are those of his own household; a snake in the grass.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #146, p. 31",
   },
   {
@@ -56431,7 +56431,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "P'umba = a clod of earth; uwongo in the first clause is for udongo ('clay/mud'), giving a play on uwongo ('falsehood') in the second clause. Understand jina ('name') or neno ('word') with la kweli and la uwongo.",
     englishEquivalent: "Give a dog a bad name and hang him; throw plenty of dirt, and some will be sure to stick.",
-    theme: "speech",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #159, pp. 35–36",
   },
   {
@@ -56467,7 +56467,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "See § 80 ('Hakuna ziada mbovu: mti utomao haugemi'). Kutua-tua means to rub, grate, or chafe continually. Mtomwa-mwiwa = mt'u aliyechomwa ni mwiwa ('a person pierced by a thorn'). The grating alluded to is the fitina-fitina—intriguing and treachery—going on against a public man, and its distracting effects upon him.",
     englishEquivalent: "Constant chafing wears a man down; a thorn in the foot stops the traveller.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #200, pp. 46–47",
   },
   {
@@ -56491,7 +56491,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Understand jimbi ('cock', Class 5 li-). In certain things, instinct and experience warrant us to take action unhesitatingly, without waiting for further evidence whether it be forthcoming or no.",
     englishEquivalent: "Time and tide wait for no man; dawn will come whether the cock crows or not.",
-    theme: "courage",
+    theme: "hard-work",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #222, pp. 50–51",
   },
   {
@@ -56527,7 +56527,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "See § 404 ('Neno likitamkwa halirudi'). Compare 2 Samuel xiv. 14 ('For we must needs die, and are as water spilt on the ground, which cannot be gathered up again'). Kimvita kumwaika = Kiunguja kumwagika; kuzoeleka = kuzoleka (from kuzoa 'to gather up in the hands').",
     englishEquivalent: "It is no use crying over spilt milk; water spilt on the ground cannot be gathered up again.",
-    theme: "speech",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #231, p. 53",
   },
   {
@@ -56539,7 +56539,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Compare St. Matthew vi. 19 ('Where moth and rust doth corrupt') and the Giryama version § 611 ('Mali ga mukolo galigwa ni m'oho', 'The wealth of the miser is consumed by fire'). Note Kimvita passive agent particle ni ('by insects').",
     englishEquivalent: "A miser's hoard goes to the worms.",
-    theme: "greed",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #234, pp. 53–54",
   },
   {
@@ -56575,7 +56575,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Reflects the realities of power in coastal courts: a poor or powerless person (mnyonge) only obtains justice (haki) when the powerful man consents to grant it.",
     englishEquivalent: "Might often rules over right.",
-    theme: "leadership",
+    theme: "unity",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #298, pp. 67–68",
   },
   {
@@ -56611,7 +56611,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Swahili Addendum [333a] (p. 162): Compare 'Kuvuna ni ile mbeu'—The reaping depends on the seed, and Galatians vi. 7. 'Mt'u afanyae mema hwenda akavuna mema, na maovu ni vivyo' (A man who does good goes on to reap good, and evil likewise).",
     englishEquivalent: "Whatsoever a man soweth, that shall he also reap (Galatians 6:7).",
-    theme: "character",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Addendum #[333a], p. 162",
   },
   {
@@ -56623,7 +56623,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Compare § 385 ('Mwenyi kutenda mema, hujitendea mwenyewe') and St. Luke vi. 38 ('Give, and it shall be given unto you'). Awafanyae = awafanyaye (double object: wat'u and mema).",
     englishEquivalent: "Do good and good shall come to you.",
-    theme: "character",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #336, pp. 75–76",
   },
   {
@@ -56647,7 +56647,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Recorded by Taylor (p. 78) with a sharp note contrasting this harsh Arab-Swahili master's saying with older indigenous African proverbs (§§ 198, 221, 567) that recognize shared humanity.",
     englishEquivalent: "Harsh masters speak harshly of those who serve them.",
-    theme: "leadership",
+    theme: "unity",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #351, p. 78",
   },
   {
@@ -56659,7 +56659,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Kwangasa = kuambata ('to clasp/grasp/tackle'); mbambo (pl. of ubambo) = wing-bones of a fowl; mwenga = mmoja ('one', common in Kingozi and Mijikenda); humuenga-enga = slips away from him / mocks him. Compare §§ 354, 409, 432, 647b, 665.",
     englishEquivalent: "One thing at a time; grasp all, lose all.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #353, pp. 78–79",
   },
   {
@@ -56683,7 +56683,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "K'oko is dry brushwood or thicket in the bush. Even when a resolute person does not blaze into open action immediately, their purpose continues to smoulder beneath the ashes.",
     englishEquivalent: "Still waters run deep; a smouldering fire is not dead.",
-    theme: "courage",
+    theme: "hard-work",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #357, pp. 79–80",
   },
   {
@@ -56695,7 +56695,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Kizushi (from kuzuka 'to pop up suddenly, emerge unexpectedly') means an unpredictable creature or sudden novelty. Mortal man is capable de tout: be prepared for anything, surprised at nothing, in his conduct, and rise to meet him on equal terms.",
     englishEquivalent: "Forewarned is forearmed; match a sudden move with equal readiness.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #371, pp. 85–86",
   },
   {
@@ -56719,7 +56719,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "A dhow captain (nahodha) who applies for command of a vessel (mtaka-chombo) already knows something of navigation and sea-voyages; do not presume a serious applicant is a complete novice.",
     englishEquivalent: "He who seeks the helm knows the sea.",
-    theme: "leadership",
+    theme: "unity",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #403, pp. 96–97",
   },
   {
@@ -56755,7 +56755,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "As the man who wishes to dry his husked rice (mtele = Kiunguja mchele) will not pour it out (hapamwaywi, passive of kumwaya = kumwaga) in the way of the fowls, so those who wish to discuss private matters should not unfold them before domestics, children, or gossips. Compare 'Little pitchers have long ears' and the Rabai proverb § 646a.",
     englishEquivalent: "Little pitchers have long ears; do not spread secrets where they will be pecked up.",
-    theme: "speech",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #457, pp. 108–109",
   },
   {
@@ -56767,7 +56767,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Kuata huru (Kiunguja kuacha huru) = to manumit/emancipate; kuwiwa (passive of archaic kuwia) = to be owed against / to be in debt. One must discharge one's just obligations before making costly displays of generosity.",
     englishEquivalent: "Be just before you are generous.",
-    theme: "character",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #480, pp. 112–113",
   },
   {
@@ -56803,7 +56803,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "T'endea-mbwa is a compound verbal noun/imperative ('Do-good-to-a-dog'); fadhiliye = fadhili yakwe ('his kindness'). Compare § 449 ('P'aka hakubali kulala chali') on ingratitude.",
     englishEquivalent: "Cast not pearls before swine; an ungrateful person forgets every kindness.",
-    theme: "gratitude",
+    theme: "family",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #505, pp. 118–119",
   },
   {
@@ -56827,7 +56827,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Uleni = u-le-ni ('what would you eat?', subjunctive ule + enclitic interrogative -ni 'what?'). Said ironically to a miser who has promised someone a paltry gift that he himself is too stingy to part with.",
     englishEquivalent: "Will a miser part with his own scraps?",
-    theme: "greed",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #541, pp. 124–125",
   },
   {
@@ -56875,7 +56875,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Uzuzi (from kuzua 'to bore through, invent, fabricate') = false rumours, slanderous inventions; wauate = wauache ('let them forsake it'). An exhortation against gossip and fabrication.",
     englishEquivalent: "Put away lying and slanderous inventions.",
-    theme: "speech",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #586, pp. 132–133",
   },
   {
@@ -56887,7 +56887,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Zani = crime, sin, adultery, evil deed; hazana = treasure-store or secret hiding-place; ukuba = evil consequence, calamity, retribution hereafter (mbeleni).",
     englishEquivalent: "Murder will out; be sure your sin will find you out.",
-    theme: "character",
+    theme: "humility",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), #599, pp. 134–135",
   },
   {
@@ -56911,7 +56911,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Nyika Proverb #634a (pp. 145–146): Angwe ('It is said / They say') is the passive/impersonal of kuamba. Taylor quotes Rebmann's comment: 'Kikulu ni kuona mwenye na matso'—The chief thing is to see (it) yourself, with your own eyes.",
     englishEquivalent: "'They say' is half a lie; seeing is believing.",
-    theme: "speech",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #634a, pp. 145–146",
   },
   {
@@ -56923,7 +56923,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Nyika Proverb #635aa (pp. 146–147): The mwatsa (candelabra euphorbia) possesses a noxious milky juice or sap that may easily spurt into the eyes of the person that hacks at this tree, as one sometimes must for the sake of the inner wood, from which mikulugo (potstirrers) are wont to be made. Appropriate to any unpleasant duty that one must perform while taking proper precautions against injury.",
     englishEquivalent: "Grasp the nettle firmly, but guard your eyes.",
-    theme: "courage",
+    theme: "hard-work",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #635aa, pp. 146–147",
   },
   {
@@ -56947,7 +56947,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Nyika Proverb #640d (pp. 151–152): Said of a spendthrift or one who cannot keep what he possesses—everything slips through his fingers as through a hole (t'undu).",
     englishEquivalent: "Money burns a hole in his pocket; a sieve-handed spendthrift.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Nyika Proverb #640d, pp. 151–152",
   },
   {
@@ -56983,7 +56983,7 @@ const TAYLOR_1891_MISSING_PROVERBS: ProverbItem[] = [
     meaning:
       "Uganda Proverb #667 (p. 161, communicated by Rev. R. P. Ashe): A shrewd person sees through a tempting bait (amemvu 'ripe bananas') and prefers humble, safe fare in the bush (bibombo) to walking into a trap.",
     englishEquivalent: "An old bird is not caught with chaff; better safe wild berries than a baited trap.",
-    theme: "caution",
+    theme: "wisdom",
     sourceCitation: "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Uganda Proverb #667, p. 161",
   },
 ];
