@@ -390,7 +390,7 @@ function createStyles(colors: ThemeColors) {
       gap: 6,
     },
     cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: 8 },
-    cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary },
+    cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary, flexShrink: 1 },
     badge: { paddingHorizontal: 9, paddingVertical: 3, borderRadius: 999, borderWidth: 1 },
     badgeText: { fontSize: 10, fontWeight: "800" },
     searchBar: {

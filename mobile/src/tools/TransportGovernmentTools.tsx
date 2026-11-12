@@ -1827,6 +1827,8 @@ const createStyles = (theme: ThemeColors) =>
       fontFamily: "Outfit_700Bold",
       fontWeight: "800",
       color: theme.textPrimary,
+      flex: 1,
+      flexShrink: 1,
     },
     carrierDesc: {
       fontSize: 12,
@@ -1841,6 +1843,8 @@ const createStyles = (theme: ThemeColors) =>
     ussdRow: {
       flexDirection: "row",
       justifyContent: "space-between",
+      alignItems: "flex-start",
+      gap: 8,
       paddingVertical: 4,
     },
     ussdCode: {
@@ -1851,6 +1855,9 @@ const createStyles = (theme: ThemeColors) =>
     ussdDesc: {
       fontSize: 12,
       color: theme.textSecondary,
+      flex: 1,
+      flexShrink: 1,
+      textAlign: "right",
     },
     subHeading: {
       fontSize: 13,
@@ -1957,12 +1964,16 @@ const createStyles = (theme: ThemeColors) =>
     },
     fineBottom: {
       flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 4,
       justifyContent: "space-between",
       alignItems: "center",
     },
     fineCat: {
       fontSize: 11,
       color: theme.textMuted,
+      flex: 1,
+      flexShrink: 1,
     },
     arrestText: {
       fontSize: 11,

@@ -740,6 +740,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingVertical: 7,
     paddingHorizontal: 10,
+    maxWidth: "100%",
   },
   constituencyNumber: {
     fontSize: 10,
@@ -749,7 +750,7 @@ const styles = StyleSheet.create({
     paddingVertical: 1,
     borderRadius: 4,
   },
-  constituencyText: { fontSize: 12, fontWeight: "600" },
+  constituencyText: { fontSize: 12, fontWeight: "600", flexShrink: 1 },
   contactRow: {
     flexDirection: "row",
     alignItems: "center",
@@ -757,7 +758,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     gap: 12,
   },
-  contactText: { fontSize: 13, fontWeight: "600" },
+  contactText: { fontSize: 13, fontWeight: "600", flex: 1, flexShrink: 1 },
   notFoundWrap: {
     flex: 1,
     justifyContent: "center",

@@ -197,7 +197,7 @@ export default function SaccoChamaCalculatorPage() {
             </h3>
           </div>
           <div className="divide-y divide-[var(--border)] text-sm">
-            <div className="px-5 py-3 flex justify-between">
+            <div className="px-5 py-3 flex justify-between items-start gap-3">
               <span className="text-[var(--text-secondary)]">
                 Gross Dividend on Share Capital ({activeSacco.dividendRate}%)
               </span>
@@ -205,7 +205,7 @@ export default function SaccoChamaCalculatorPage() {
                 KES {formatKES(calc.grossShareDividend)}
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between">
+            <div className="px-5 py-3 flex justify-between items-start gap-3">
               <span className="text-[var(--text-secondary)]">
                 Gross Interest Rebate on Weighted BOSA Deposits ({activeSacco.rebateRate}%)
               </span>
@@ -213,7 +213,7 @@ export default function SaccoChamaCalculatorPage() {
                 KES {formatKES(calc.grossDepositRebate)}
               </span>
             </div>
-            <div className="px-5 py-3 flex justify-between">
+            <div className="px-5 py-3 flex justify-between items-start gap-3">
               <span className="text-[var(--text-secondary)]">Statutory Withholding Tax (5% WHT)</span>
               <span className="text-red-400 font-medium">− KES {formatKES(calc.withholdingTax)}</span>
             </div>
@@ -221,7 +221,7 @@ export default function SaccoChamaCalculatorPage() {
               <span className="text-[var(--text-primary)]">Net Cash Payout (FOSA Credit)</span>
               <span className="text-emerald-400">KES {formatKES(calc.netAnnualPayout)}</span>
             </div>
-            <div className="px-5 py-3 flex justify-between">
+            <div className="px-5 py-3 flex justify-between items-start gap-3">
               <span className="text-[var(--text-secondary)]">
                 Total Reducing-Balance Interest on Max Loan ({calc.months} mos @ 1%/mo)
               </span>

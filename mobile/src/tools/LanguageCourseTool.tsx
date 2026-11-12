@@ -1619,7 +1619,7 @@ export default function LanguageCourseTool({
         <View style={styles.statsTopRow}>
           <View style={styles.levelBadgeWrap}>
             <DynamicIcon emoji={currentLevel.icon} size={20} color={langColor} />
-            <View>
+            <View style={{ flex: 1, minWidth: 0 }}>
               <Text style={[styles.levelTitleText, { color: colors.text }]}>
                 {currentLevel.name} • {progress.totalXP} XP
               </Text>
@@ -1698,7 +1698,7 @@ export default function LanguageCourseTool({
                   <DynamicIcon emoji={ach.icon} size={18} color={isUnlocked ? langColor : colors.textMuted} />
                   <View style={{ flex: 1 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
-                      <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text }}>
+                      <Text style={{ fontSize: 11, fontWeight: '800', color: colors.text, flex: 1 }}>
                         {ach.name}
                       </Text>
                       <Text style={{ fontSize: 10, fontWeight: '800', color: isUnlocked ? '#10B981' : langColor }}>
@@ -1903,7 +1903,7 @@ export default function LanguageCourseTool({
                   : 'Complete each skill to unlock the next, or unlock all at once.'}
               </Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 }}>
               <Pressable
                 android_ripple={ripple}
                 onPress={() => {
@@ -3743,6 +3743,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   levelBadgeWrap: {
+    flex: 1,
+    minWidth: 0,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
@@ -4044,10 +4046,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 999,
+    maxWidth: '100%',
+    flexShrink: 1,
   },
   stagePillText: {
     fontSize: 11,
     fontWeight: '800',
+    flexShrink: 1,
   },
   tipsToggleBtn: {
     flexDirection: 'row',
@@ -4232,6 +4237,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderRadius: 12,
+    maxWidth: '100%',
+    flexShrink: 1,
   },
   matchPairsGrid: {
     flexDirection: 'row',

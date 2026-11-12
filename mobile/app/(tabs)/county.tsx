@@ -782,7 +782,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  countyName: { fontFamily: "Outfit_700Bold", fontSize: 16 },
+  countyName: { fontFamily: "Outfit_700Bold", fontSize: 16, flexShrink: 1 },
   countyCapital: { fontSize: 12, marginTop: 1 },
   cardInfoRow: {
     flexDirection: "row",
@@ -800,8 +800,9 @@ const styles = StyleSheet.create({
     paddingVertical: 3.5,
     borderRadius: 6,
     borderWidth: StyleSheet.hairlineWidth,
+    maxWidth: "100%",
   },
-  infoPillText: { fontSize: 10.5, fontFamily: "Inter_500Medium" },
+  infoPillText: { fontSize: 10.5, fontFamily: "Inter_500Medium", flexShrink: 1 },
   notesCard: {
     borderRadius: 16,
     borderWidth: 1,

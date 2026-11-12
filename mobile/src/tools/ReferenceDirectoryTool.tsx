@@ -2462,7 +2462,7 @@ function createStyles(colors: ThemeColors) {
       gap: 8,
     },
     cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: 10 },
-    cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary },
+    cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary, flexShrink: 1 },
     cardSubtitle: { fontSize: 12, color: colors.textSecondary, marginTop: 2 },
     badge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999, borderWidth: 1, flexShrink: 0 },
     badgeText: { fontSize: 10, fontWeight: "800" },

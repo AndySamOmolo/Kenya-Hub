@@ -773,7 +773,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
             >
               <Text style={styles.langPickerLabel}>From (Tap to change)</Text>
               <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 }}>
-                <Text style={[styles.langPickerValue, { marginTop: 0 }]}>
+                <Text style={[styles.langPickerValue, { marginTop: 0, flexShrink: 1 }]}>
                   {sourceLanguage === "english"
                     ? "English"
                     : DICT_META_MAP[sourceLanguage]?.languageName?.split("(")[0]?.trim() || "English"}
@@ -801,7 +801,7 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
             >
               <Text style={styles.langPickerLabel}>To (Tap to change)</Text>
               <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 2 }}>
-                <Text style={[styles.langPickerValue, { marginTop: 0 }]}>
+                <Text style={[styles.langPickerValue, { marginTop: 0, flexShrink: 1 }]}>
                   {targetLanguage === "all"
                     ? `All (${ALL_DICT_METAS.length})`
                     : targetLanguage === "english"
@@ -1676,10 +1676,13 @@ const createStyles = (theme: ThemeColors) =>
     resultHeader: {
       flexDirection: "row",
       justifyContent: "space-between",
-      alignItems: "center",
+      alignItems: "flex-start",
+      gap: 8,
       marginBottom: 4,
     },
     resultTagRow: {
+      flex: 1,
+      flexWrap: "wrap",
       flexDirection: "row",
       gap: 6,
       alignItems: "center",
@@ -1714,9 +1717,11 @@ const createStyles = (theme: ThemeColors) =>
       fontSize: 14,
       color: theme.textPrimary,
       fontWeight: "600",
+      flexShrink: 1,
     },
     pronounceRow: {
       flexDirection: "row",
+      flexWrap: "wrap",
       alignItems: "center",
       gap: 4,
       marginTop: 2,
@@ -1725,6 +1730,8 @@ const createStyles = (theme: ThemeColors) =>
       fontSize: 12,
       color: theme.sky,
       fontWeight: "600",
+      flex: 1,
+      flexShrink: 1,
     },
     contextText: {
       fontSize: 11,

@@ -1440,6 +1440,8 @@ function createStyles(colors: ThemeColors) {
     },
     termHeader: {
       flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 6,
       justifyContent: "space-between",
       alignItems: "center",
     },
@@ -1447,6 +1449,7 @@ function createStyles(colors: ThemeColors) {
       fontSize: 16,
       fontWeight: "800",
       color: colors.textPrimary,
+      flexShrink: 1,
     },
     weeksBadge: {
       backgroundColor: "rgba(26, 139, 209, 0.15)",

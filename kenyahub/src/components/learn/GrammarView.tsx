@@ -24,7 +24,7 @@ function RenderedContent({ content }: { content: string }) {
           return (
             <div key={i} className="flex gap-2 pl-2 py-0.5">
               <span className="text-gold shrink-0 mt-0.5">•</span>
-              <span>{renderInlineMarkdown(bulletText)}</span>
+              <span className="min-w-0 flex-1 break-words">{renderInlineMarkdown(bulletText)}</span>
             </div>
           );
         }
@@ -100,8 +100,8 @@ export default function GrammarView({
                         </p>
                       </div>
                       {ex.explanation && (
-                        <div className="mt-1 text-xs text-text-muted sm:mt-0 sm:text-right sm:shrink-0">
-                          <span className="inline-block rounded-md bg-kenya-green/10 px-2 py-1 text-kenya-green">
+                        <div className="mt-1 text-xs text-text-muted sm:mt-0 sm:text-right max-w-full sm:max-w-[45%] break-words">
+                          <span className="inline-block rounded-md bg-kenya-green/10 px-2 py-1 text-kenya-green max-w-full break-words">
                             {renderInlineMarkdown(ex.explanation)}
                           </span>
                         </div>

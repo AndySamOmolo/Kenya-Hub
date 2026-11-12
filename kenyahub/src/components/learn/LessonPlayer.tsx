@@ -527,9 +527,9 @@ export default function LessonPlayer({
               className="group mt-4 rounded-xl border border-gold/25 bg-gold/5 px-4 py-3 text-xs sm:text-sm text-text-secondary"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
-                <span className="inline-flex items-center gap-1.5">
+                <span className="inline-flex items-center gap-1.5 min-w-0 flex-1">
                   <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
-                  <span>Grammar &amp; Lesson Notes</span>
+                  <span className="break-words min-w-0">Grammar &amp; Lesson Notes</span>
                 </span>
                 <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
               </summary>
@@ -715,9 +715,9 @@ export default function LessonPlayer({
       {(skill.tips || skill.tip) && (
         <details className="group mb-4 rounded-xl border border-border bg-bg-card px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs sm:text-sm font-semibold text-gold">
-            <span className="inline-flex items-center gap-1.5">
+            <span className="inline-flex items-center gap-1.5 min-w-0 flex-1">
               <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
-              <span>Grammar &amp; Lesson Notes ({skill.title})</span>
+              <span className="break-words min-w-0">Grammar &amp; Lesson Notes ({skill.title})</span>
             </span>
             <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
           </summary>
@@ -778,7 +778,7 @@ export default function LessonPlayer({
                       key={opt}
                       onClick={() => !isChecked && setSelectedOption(opt)}
                       disabled={isChecked}
-                      className={`rounded-xl border-2 px-4 py-3.5 text-left text-sm font-medium transition-all cursor-pointer ${
+                      className={`rounded-xl border-2 px-4 py-3.5 text-left text-sm font-medium transition-all cursor-pointer break-words min-w-0 ${
                         isCorrectOpt
                           ? "border-kenya-green bg-kenya-green/10 text-kenya-green"
                           : isWrongSelection
@@ -922,7 +922,7 @@ export default function LessonPlayer({
                         <button
                           key={tileIdx}
                           onClick={() => !isChecked && toggleTile(tileIdx)}
-                          className="rounded-lg border border-gold bg-gold/10 px-3 py-1.5 text-sm font-medium text-gold transition-all active:scale-95"
+                          className="rounded-lg border border-gold bg-gold/10 px-3 py-1.5 text-sm font-medium text-gold transition-all active:scale-95 max-w-full break-words text-left"
                         >
                           {exercise.wordTiles?.[tileIdx]}
                         </button>
@@ -939,7 +939,7 @@ export default function LessonPlayer({
                         key={idx}
                         onClick={() => !isChecked && !isUsed && toggleTile(idx)}
                         disabled={isChecked || isUsed}
-                        className={`rounded-lg border px-3 py-2 text-sm font-medium transition-all ${
+                        className={`rounded-lg border px-3 py-2 text-sm font-medium transition-all max-w-full break-words text-left ${
                           isUsed
                             ? "border-border/30 text-text-muted/30 opacity-30"
                             : "border-border bg-bg-card text-text-primary active:border-gold/50 active:bg-gold/5"

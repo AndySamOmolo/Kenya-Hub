@@ -388,7 +388,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* FY 2025/26 County Budget & Absorption */}
       {budget && (
         <section>
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📊" className="w-5 h-5 text-gold" /> FY {(budgetsData as any).fiscalYear || "2025/26"} Budget &amp; Fiscal Performance
             </h2>
@@ -448,7 +448,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Climate, Rainy Seasons & 12-Month Rainfall Chart */}
       {rainfall && (
         <section>
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌧️" className="w-5 h-5 text-sky-light" /> Climate, Rainy Seasons &amp; 12-Month Rainfall ({rainfall.annualRainfall} mm/yr)
             </h2>
@@ -510,7 +510,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
 
       {/* Constituencies */}
       <section>
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
           <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
             <DynamicIcon emoji="🗳️" className="w-5 h-5 text-sky-light" /> Parliamentary Constituencies ({county.constituencies.length})
           </h2>
@@ -551,7 +551,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       {/* Agricultural Soils & Recommended Crops */}
       {countySoils.length > 0 && (
         <section>
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🌱" className="w-5 h-5 text-kenya-green-light" /> Agricultural Soils &amp; Best Crops in {county.name}
             </h2>
@@ -562,7 +562,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {countySoils.map((soil: any, idx: number) => (
               <div key={idx} className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <h3 className="text-sm font-bold text-text-primary">{soil.name}</h3>
                   <span className="px-2 py-0.5 text-[0.65rem] font-bold rounded bg-gold/15 text-gold">
                     pH {soil.pH || soil.ph} · {soil.fertility} Fertility
@@ -583,7 +583,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* SHA Hospitals */}
         <section className="bg-bg-card border border-border rounded-2xl p-5 space-y-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="🏥" className="w-5 h-5 text-kenya-green-light" /> SHA / SHIF Hospitals ({countyHospitals.length})
             </h2>
@@ -616,7 +616,7 @@ export default function CountyDetailPage({ params }: { params: Promise<{ slug: s
 
         {/* Postal Codes */}
         <section className="bg-bg-card border border-border rounded-2xl p-5 space-y-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
               <DynamicIcon emoji="📮" className="w-5 h-5 text-gold" /> Posta Postal Codes ({countyPostalCodes.length})
             </h2>

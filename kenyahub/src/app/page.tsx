@@ -113,12 +113,12 @@ export default function HomePage() {
             <div className="max-w-3xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
               {/* Centered Hero Badge Pill on Mobile */}
               <div className="flex justify-center sm:justify-start mb-4 sm:mb-6 w-full">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm max-w-full">
                   <span className="relative flex h-1.5 w-1.5 shrink-0">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
                   </span>
-                  <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide whitespace-nowrap">
+                  <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide break-words">
                     22 Languages · {TOOLS.length} Interactive Tools · 47 Counties
                   </span>
                 </div>
@@ -237,7 +237,7 @@ export default function HomePage() {
 
           {/* Direct Course Launch Grid */}
           <div>
-            <div className="flex items-center justify-between gap-2 mb-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
               <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-text-secondary">
                 Jump Directly Into a Language Course
               </h3>

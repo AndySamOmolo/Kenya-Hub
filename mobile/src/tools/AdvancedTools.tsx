@@ -1387,10 +1387,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    gap: 8,
   },
   clusterName: {
     fontSize: 14,
     fontWeight: "700",
+    flexShrink: 1,
   },
   clusterCutoff: {
     fontSize: 11,

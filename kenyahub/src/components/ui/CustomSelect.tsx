@@ -165,7 +165,7 @@ export default function CustomSelect({
                       isSelected ? "text-gold bg-gold/10 font-semibold" : "text-text-primary"
                     }`}
                   >
-                    <span className="break-words">{option.label}</span>
+                    <span className="break-words min-w-0 flex-1">{option.label}</span>
                     {isSelected && <Check className="w-4 h-4 text-gold flex-shrink-0" />}
                   </button>
                 </li>

@@ -18,6 +18,47 @@ function countPillChildren(children: React.ReactNode): number {
   return count;
 }
 
+function prepareExpandedChildren(children: React.ReactNode): React.ReactNode {
+  return React.Children.map(children, (child) => {
+    if (!React.isValidElement(child)) return child;
+    if (child.type === React.Fragment) {
+      const fragProps = child.props as { children?: React.ReactNode };
+      return <>{prepareExpandedChildren(fragProps.children)}</>;
+    }
+    const props = child.props as {
+      className?: string;
+      style?: React.CSSProperties;
+    };
+    const rawClass = props.className || "";
+    const cleanedClass = rawClass
+      .replace(/\bwhitespace-nowrap\b/g, "whitespace-normal")
+      .replace(/\bshrink-0\b/g, "shrink")
+      .replace(/\bflex-shrink-0\b/g, "shrink")
+      .replace(/\brounded-full\b/g, "rounded-2xl");
+
+    return React.cloneElement(
+      child as React.ReactElement<{
+        className?: string;
+        style?: React.CSSProperties;
+      }>,
+      {
+        className: `${cleanedClass} max-w-full min-w-0 break-words text-left`.trim(),
+        style: {
+          ...(props.style || {}),
+          whiteSpace: "normal",
+          flexShrink: 1,
+          maxWidth: "100%",
+          minWidth: 0,
+          overflowWrap: "anywhere",
+          wordBreak: "break-word",
+          height: "auto",
+          textAlign: "left",
+        },
+      }
+    );
+  });
+}
+
 export interface ExpandablePillRowProps {
   children: React.ReactNode;
   className?: string;
@@ -27,7 +68,7 @@ export interface ExpandablePillRowProps {
 /**
  * Renders a single-row horizontal scrolling pill bar.
  * When there are more than `threshold` (default 5) pills, displays a dropdown icon button
- * pinned on the right that toggles displaying all pills vertically (wrapped).
+ * pinned on the right that toggles displaying all pills vertically (wrapped) without clipping.
  */
 export default function ExpandablePillRow({
   children,
@@ -60,7 +101,7 @@ export default function ExpandablePillRow({
     return (
       <div
         ref={scrollContainerRef}
-        className={`no-scrollbar ${className}`}
+        className={`no-scrollbar expandable-pill-row ${className}`}
         style={{
           display: "flex",
           flexDirection: "row",
@@ -94,12 +135,16 @@ export default function ExpandablePillRow({
     >
       <div
         ref={scrollContainerRef}
-        className="no-scrollbar"
+        className={`no-scrollbar expandable-pill-row ${
+          expanded ? "expandable-pill-row--expanded" : ""
+        }`}
         style={
           expanded
             ? {
                 flex: "1 1 0%",
                 minWidth: 0,
+                maxWidth: "100%",
+                overflow: "hidden",
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "center",
@@ -122,7 +167,7 @@ export default function ExpandablePillRow({
               }
         }
       >
-        {children}
+        {expanded ? prepareExpandedChildren(children) : children}
       </div>
       <button
         type="button"

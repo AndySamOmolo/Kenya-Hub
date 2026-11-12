@@ -25,6 +25,57 @@ function countPillChildren(children: React.ReactNode): number {
   return count;
 }
 
+function prepareExpandedMobileChildren(
+  children: React.ReactNode,
+  isRootPill = true
+): React.ReactNode {
+  return React.Children.map(children, (child) => {
+    if (!React.isValidElement(child)) return child;
+    if (child.type === React.Fragment) {
+      const fragProps = child.props as { children?: React.ReactNode };
+      return <>{prepareExpandedMobileChildren(fragProps.children, isRootPill)}</>;
+    }
+    const props = child.props as {
+      style?: StyleProp<any>;
+      children?: React.ReactNode;
+      numberOfLines?: number;
+    };
+    const nextChildren = props.children
+      ? prepareExpandedMobileChildren(props.children, false)
+      : props.children;
+
+    if (isRootPill) {
+      return React.cloneElement(
+        child as React.ReactElement<any>,
+        {
+          style: [
+            props.style,
+            {
+              maxWidth: "100%",
+              flexShrink: 1,
+            },
+          ],
+        },
+        nextChildren
+      );
+    }
+
+    return React.cloneElement(
+      child as React.ReactElement<any>,
+      {
+        ...(props.numberOfLines === 1 ? { numberOfLines: undefined } : {}),
+        style: [
+          props.style,
+          {
+            flexShrink: 1,
+          },
+        ],
+      },
+      nextChildren
+    );
+  });
+}
+
 export interface ExpandablePillRowProps {
   children: React.ReactNode;
   style?: StyleProp<ViewStyle>;
@@ -35,7 +86,7 @@ export interface ExpandablePillRowProps {
 /**
  * Renders a single-row horizontal scrolling pill bar on mobile.
  * When there are more than `threshold` (default 5) pills, renders a dropdown icon button
- * on the right that toggles displaying all pills vertically (wrapped).
+ * on the right that toggles displaying all pills vertically (wrapped) without edge clipping.
  */
 export function ExpandablePillRow({
   children,
@@ -95,6 +146,9 @@ export function ExpandablePillRow({
           flexDirection: "row",
           alignItems: "flex-start",
           gap: 8,
+          width: "100%",
+          maxWidth: "100%",
+          overflow: "hidden",
         },
         outerSpacing,
         style,
@@ -103,24 +157,26 @@ export function ExpandablePillRow({
       {expanded ? (
         <View
           style={[
+            innerContentStyle,
             {
               flex: 1,
+              minWidth: 0,
+              maxWidth: "100%",
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
-              gap: 8,
+              gap: innerContentStyle.gap ?? 8,
               paddingVertical: 2,
             },
-            innerContentStyle,
           ]}
         >
-          {children}
+          {prepareExpandedMobileChildren(children, true)}
         </View>
       ) : (
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          style={{ flex: 1 }}
+          style={{ flex: 1, minWidth: 0 }}
           contentContainerStyle={[
             {
               flexDirection: "row",

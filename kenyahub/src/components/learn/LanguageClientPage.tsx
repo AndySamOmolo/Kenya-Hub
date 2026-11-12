@@ -472,8 +472,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 }}
                 className="group relative min-h-[250px] sm:min-h-[280px] rounded-3xl border-2 border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-6 sm:p-8 flex flex-col justify-between cursor-pointer transition-all hover:border-gold/60 shadow-lg select-none"
               >
-                <div className="flex items-center justify-between gap-2 text-xs text-text-muted">
-                  <span className="rounded-full bg-bg-elevated border border-border px-3 py-1 font-semibold text-gold">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
+                  <span className="rounded-2xl bg-bg-elevated border border-border px-3 py-1 font-semibold text-gold max-w-full break-words">
                     {currentFlashcard.skillTitle}
                   </span>
                   <span>
@@ -615,7 +615,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                   {skill.tips && (
                     <details className="group rounded-xl bg-gold/5 border border-gold/20 px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary">
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold text-gold">
-                        <span className="inline-flex items-center gap-2">
+                        <span className="inline-flex items-center gap-2 min-w-0 flex-1">
                           <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
                           <span>Grammar &amp; Lesson Notes</span>
                         </span>
@@ -634,10 +634,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                         className="rounded-xl bg-bg-elevated/60 border border-border/60 p-3.5 flex flex-col justify-between gap-1"
                       >
                         <div className="flex items-start justify-between gap-2">
-                          <span className="text-sm font-bold text-gold break-words">
+                          <span className="text-sm font-bold text-gold break-words min-w-0 flex-1">
                             {w.target}
                           </span>
-                          <span className="text-xs sm:text-sm font-medium text-text-primary text-right">
+                          <span className="text-xs sm:text-sm font-medium text-text-primary text-right break-words max-w-[55%]">
                             {w.source}
                           </span>
                         </div>

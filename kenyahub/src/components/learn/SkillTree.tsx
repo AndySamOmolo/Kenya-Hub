@@ -254,7 +254,7 @@ export default function SkillTree({
           {sources.length > 0 && (
             <details className="group mt-3.5 rounded-xl border border-border/70 bg-bg-elevated/50 px-3.5 py-2.5 text-xs">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs font-semibold text-text-secondary hover:text-gold transition-colors">
-                <span className="inline-flex items-center gap-2">
+                <span className="inline-flex items-center gap-2 min-w-0 flex-1">
                   <BookOpen className="h-4 w-4 text-gold shrink-0" />
                   <span>
                     Compiled from {sources.length} verified linguistic{" "}
@@ -287,7 +287,7 @@ export default function SkillTree({
               <h3 className="text-sm font-bold text-text-primary flex items-center gap-1.5">
                 <Crown className="h-4 w-4 text-gold" /> Achievements &amp; Ranks
               </h3>
-              <ExpandablePillRow className="w-auto">
+              <ExpandablePillRow className="w-full sm:w-auto max-w-full">
                 {["all", "lessons", "streak", "vocabulary", "mastery"].map((cat) => (
                   <button
                     key={cat}
@@ -591,7 +591,7 @@ export default function SkillTree({
                               className="group rounded-xl bg-bg-elevated/60 border border-border/60 px-3.5 py-2.5 text-xs sm:text-sm text-text-secondary"
                             >
                               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs sm:text-sm font-semibold text-gold hover:text-gold-light transition-colors">
-                                <span className="inline-flex items-center gap-2">
+                                <span className="inline-flex items-center gap-2 min-w-0 flex-1">
                                   <Lightbulb className="h-4 w-4 shrink-0 text-gold" />
                                   <span>Grammar &amp; Lesson Notes</span>
                                 </span>
