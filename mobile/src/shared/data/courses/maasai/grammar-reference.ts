@@ -109,5 +109,40 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
         "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
       }
     ]
+  },
+  {
+    id: "maasai-hobley-1910-social-organization-cattle-brands",
+    title: "C. W. Hobley (1910) Part II Chapters I, II & VI: Masai Moieties (Oodo Mongi & Orok Kiteng), 7 Gilat & 36 Sub-Gilat, Eo Endomono Naming Ceremony, 7 Sirata Shield Patterns & Clan Cattle Brands (pp. 119–133, 159–161)",
+    summary: "Complete line-by-line documentation of C. W. Hobley's 1910 Masai chapters: the two main divisions (Oodo Mongi 'Red Bull' & Orok Kiteng 'Black Cow'), all 7 primary gilat and 36 sub-gilat, the Eo Endomono child-naming ceremony, the 7 Sirata shield heraldry patterns, and the comparative Masai clan cattle brands.",
+    content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters I, II & VI, pp. 119–133, 159–161):
+1. **Part II, Chapter I — The Two Main Divisions (*Oodo Mongi* & *Orok Kiteng*), 7 *Gilat* & 36 *Sub-Gilat* (pp. 119–120)**:
+   - Hobley records that the Masai nation is divided into two great exogamous moieties named after the colour of the sacrificial bullock and cow at the original division of the tribe:
+     - **I. Oodo Mongi ("The Red Bull")** — comprising **five primary *gilat* (clans)** and **24 *sub-gilat***:
+       1. **L'aiser** (9 *sub-gilat*: *En gidong* [the hereditary *Oloiboni* lineage of Mbatian, Lenana, and Sendeyo], *Parkinet, Parsingo, Partimaroi, Engaje oodo, Engaje nanuki, L'olokesen, L'okumai, L'oodokishu*).
+       2. **L'ukumai** (6 *sub-gilat*: *Sitat, Maromai, L'ebusat, Partetiu, L'oiger, Kipuyoni*).
+       3. **L'aitaiok** (7 *sub-gilat*: *Siria, L'ais, Machen, Pojos, Mohono, L'oodokishu, L'okamai*).
+       4. **L'molelyan** (5 *sub-gilat*: *Masangwa, Kiporon,タ-Moingo, L'oodokishu, Parsintaan*).
+       5. **L'makesen** (3 *sub-gilat*: *Loiborkishu, Kipeles, Ptirbo*).
+     - **II. Orok Kiteng ("The Black Cow")** — comprising **two primary *gilat*** and **6 *sub-gilat***:
+       6. **L'tarosero** (3 *sub-gilat*: *L'moingo,Nkidong, L'ais*).
+       7. **L'mengana** (3 *sub-gilat*: *Kipuyoni, Kiporon, El Masula*).
+2. **The *Eo Endomono* Child-Naming Ceremony & 7 *Sirata* Shield Patterns (pp. 120–121)**:
+   - **Eo Endomono (Naming Ceremony, p. 120)**: Held when a child's hair is first shaved; an unblemished sheep is slaughtered, three spots of blood are placed on the mother's forehead, nose, and chin, her hair is shaved with milk and water, and the elders bless the child's name.
+   - **Seven Named *Sirata* Shield Heraldry Designs (p. 121)**:
+     1. **Sirata e neilongu**: Circular target-like boss pattern in the centre of the buffalo-hide shield (*el-longo*).
+     2. **Sirata el langarua**: Diagonal/chevron band across the shield face.
+     3. **Sirata el oiboni**: Sacred heraldic mark reserved for warriors affiliated with the *Oloiboni*.
+     4. **Sirata el ngatuny**: "Lion-mark" (*ol-ngatuny*) awarded for conspicuous bravery.
+     5. **Sirata e narok**: Black half-field (*narok*) painted with burnt gourd-ash and blood.
+     6. **Sirata e nanyokie**: Crimson/red field (*nanyokie*) painted with red ochre (*ol-karia*) mixed with fat; reserved for proven veterans.
+     7. **Sirata el keri**: Checkered/dappled black-and-white border (*keri*).
+3. **Part II, Chapter II & VI — Masai Clan Cattle Brands (pp. 122–133, Figs. LXXXVIII–CXI) & Northern/Western Maa Sections (pp. 159–161)**:
+   - **Masai Clan Brands & Ear-Slits (pp. 128–133, Figs. LXXXVIII–CXI)**: Illustrates the linear and curved iron-brand marks and ear-cuts (*ol-ponoto*) distinguishing cattle of **L'aiser, L'ukumai, L'molelyan, L'tarosero, and L'mengana**, showing how several Kikuyu and Kamba clans adopted neighbouring Masai brand motifs through trade and intermarriage.
+   - **Sambur, Laikipiak & Uasingishu Sections (pp. 159–161)**: Documents the **9 Sambur sub-tribes** (*L'masula, L'pisikishu, L'nyaparai, L'ngwesi, L'orongwe, L'ukumai, L'mosiat, L'oimisi, L'doigio*) and 3 *gilat* (*Sitat, Ol Lesilali, Maletis*, laibon *Ol Segeteti*), the **6 Laikipiak sub-tribes** (*L'ngwesi, L'tikirri, L'leleta, L'purko, L'oodokishu, L'momonyot*, 3 *gilat* *Bartaolin, Sioma, Kisengeni*), and the **4 Uasingishu *gilat* & totems** (*L'aiser* [wild pig *ol-bitir*], *L'ukumai* [crow *ol-kurok*], *L'masula* [hyena *ol-ngojine*], *L'aitaiok* [rat *en-deroni*]).`,
+    examples: [
+      { maasai: "Oodo Mongi ('Red Bull': L'aiser, L'ukumai, L'aitaiok, L'molelyan, L'makesen) vs. Orok Kiteng ('Black Cow': L'tarosero, L'mengana)", english: "The two primary Masai moieties and their 7 primary gilat (clans) and 36 sub-gilat", explanation: "Hobley (1910, Part II, Ch. I, pp. 119–120)" },
+      { maasai: "Eo Endomono • Sirata e neilongu, Sirata el langarua, Sirata el oiboni, Sirata el ngatuny, Sirata e narok, Sirata e nanyokie, Sirata el keri", english: "Child-naming ceremony • The 7 named warrior shield (el-longo) heraldic patterns", explanation: "Hobley (1910, Part II, Ch. I, pp. 120–121)" },
+      { maasai: "Uasingishu gilat & totems: L'aiser (ol-bitir wild pig), L'ukumai (ol-kurok crow), L'masula (ol-ngojine hyena), L'aitaiok (en-deroni rat)", english: "The 4 Uasingishu (Kwavi) clans and their sacred totems", explanation: "Hobley (1910, Part II, Ch. VI, p. 161)" }
+    ]
   }
 ];

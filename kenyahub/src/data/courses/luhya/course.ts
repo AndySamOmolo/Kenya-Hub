@@ -223,7 +223,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "title": "Numbers 1–10 (Hobley 1902 & Johnston 1919) & Core Descriptive Roots",
         "icon": "Hash",
         "description": "Count from 1 to 10 in Luwanga/Oluluyia and use core descriptive stems.",
-        "tips": "Hobley (1902, pp. 84, 95) and Johnston (1919, p. 54) record Luwanga/Lunyara numerals 1–10: ndala (-lala, 1), tsimbili (-bili, 2), tsitaru (-taru, 3), tsine (-ne, 4), tsiraano (-raano, 5), tsisaasaba (6), mufungate (tsisaba, 7), munane (8), shenda (9), ikhumi (10).",
+        "tips": "Hobley (1902, pp. 84, 95) and Johnston (1919, Vol. I, p. 81) record Luwanga/Lunyara numerals 1–10: ndala (-lala, 1), tsimbili (-bili, 2), tsitaru (-taru, 3), tsine (-ne, 4), tsiraano (-raano, 5), tsisaasaba (6), mufungate (tsisaba, 7), munane (8), shenda (9), ikhumi (10).",
         "words": [
           {
             "target": "-lala (ndala)",
@@ -259,19 +259,19 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "target": "tsisaasaba",
             "source": "Six (6)",
             "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
-            "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
+            "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "mufungate",
             "source": "Seven (7)",
             "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
-            "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
+            "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "munane",
             "source": "Eight (8)",
             "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
-            "hint": "Johnston (1919, p. 54) Luwanga/Lunyara numerals 6–10"
+            "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "-khongo",

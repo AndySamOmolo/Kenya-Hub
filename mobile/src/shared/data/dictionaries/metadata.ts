@@ -71,7 +71,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.1",
     "lastUpdated": "2026-11-12",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17331,
+    "totalEntries": 17349,
     "categories": [
       {
         "id": "greetings",
@@ -167,7 +167,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 159
+        "count": 177
       }
     ]
   },
@@ -660,7 +660,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4071,
+    "totalEntries": 4073,
     "categories": [
       {
         "id": "greetings",
@@ -756,7 +756,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 312
+        "count": 314
       }
     ]
   },
@@ -1346,8 +1346,8 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "hasAudio": false,
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
-    "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 7905,
+    "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
+    "totalEntries": 7927,
     "categories": [
       {
         "id": "greetings",
@@ -1443,7 +1443,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 286
+        "count": 308
       }
     ]
   },
@@ -2690,7 +2690,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 77965;
+export const TOTAL_DICTIONARY_ENTRIES: number = 78007;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {
@@ -4008,5 +4008,74 @@ INITIAL_RANDOM_WORDS.push(
     },
     langName: "Taita (Kidawida)",
     langId: "taita",
+  }
+);
+
+// ============================================================
+// Sir Harry H. Johnston (1919–1922) "A Comparative Study of the Bantu and Semi-Bantu Languages"
+// (Clarendon Press, Oxford, Vol. I [1919] & Vol. II [1922] — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Disyllabic Preprefixes (Kumu-/Gumu-, Kimi-/Gimi-, Kama-/Gama-, Baba-, Gugu-) & Addenda (p. 757: Omu-mali, Omu-kωfu, Nya-saye, Ama-khuwa, Ωxu-buta)",
+      translation: "Kumu-kono → Kimi-kono • Baba-ndu • Kama-lasiri • Gugu-bwa • Omu-mali • Omu-kωfu • Nya-saye • Ama-khuwa • Ωxu-buta",
+      pronunciation: "ku-mu-ko-no / ba-ba-ndu / ka-ma-la-si-ri / o-mu-ma-li / nya-sa-ye / o-khu-bu-ta",
+      context: "Sir Harry H. Johnston (1919, Vol. I, pp. 7, 19, 73–85, 757 & 1922, Vol. II, pp. 22–24 — Sub-group A 5 #5–6a)",
+      audioFile: null,
+    },
+    langName: "Luhya (Luyia)",
+    langId: "luhya",
+  },
+  {
+    entry: {
+      english: "Complete 15-Part Conjugation of Ωku-rora ('To See') in #7 Ki-guzii & #7a Ki-kωria (Vol. II, pp. 497–498)",
+      translation: "Rora! → Rore! • N-dora, O-rora, A-rora • Ni-n-dora • Ndozire • Ṅ-ka-rora • N-da-rora • Ti-n-dora / Ti-n-dozire",
+      pronunciation: "ro-ra / n-do-ra / ni-n-do-ra / n-do-zi-re / n-ka-ro-ra / ti-n-do-ra",
+      context: "Sir Harry H. Johnston (1922, Vol. II, pp. 497–498 — Sub-group A 6 #7 Ki-guzii & #7a Ki-kωria)",
+      audioFile: null,
+    },
+    langName: "Kisii (Ekegusii)",
+    langId: "kisii",
+  },
+  {
+    entry: {
+      english: "Wahadimu (Ki-hadimu h. from Windi & Śaṅgani) & Archaic Ki-ṅgωzi (g.) Coastal Lexicon (Vol. II, pp. 39–40)",
+      translation: "Miye, Weye, Yeye, Siye, Nyiye, Waω • M-bura • M-wana-kerekwe • Ku-lawa (h.) • M-lala, M-lumbe, Ma-te, Sī (g.)",
+      pronunciation: "mi-ye we-ye / m-bu-ra / ku-la-wa / m-la-la m-lu-mbe ma-te",
+      context: "Sir Harry H. Johnston (1919, Vol. I, pp. 131–140 & 1922, Vol. II, pp. 38–41 — Group F #21–21g & Miss Dora Abdy 1915)",
+      audioFile: null,
+    },
+    langName: "Swahili (Kiswahili)",
+    langId: "swahili",
+  }
+);
+
+// ============================================================
+// Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott (1887)
+// "A Nika-English Dictionary" (SPCK London, Book pp. [i]–vii, 1–391 — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Six Verbs for 'To Answer' (3 Negative-Only vs. 3 Affirmative/Negative, p. 126), Seven Harvesting Verbs (p. 93) & Four Pounding Verbs (pp. 127, 384)",
+      translation: "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza, Ku udzira • Ku funa, Ku guha, Ku tola, Ku poa, Ku hunda, Ku kwachula, Ku kopa • Ku bonda, Ku vonda, Ku huaga, Ku pura",
+      pronunciation: "ku ho-ngo-za / ku lu-ngu-ki-za / ku fu-na / ku vo-nda / ku hua-ga",
+      context: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 93, 126–127, 384)",
+      audioFile: null,
+    },
+    langName: "Mijikenda (Giriama)",
+    langId: "mijikenda",
+  },
+  {
+    entry: {
+      english: "Nine Graded Calabash Sizes (Kibaria → Dunda, pp. 151–152), M'oro Assembly Formulas (pp. 259–260, 347), Kore Blood-Money (pp. 192, 339) & Five Mulungu Prayers (p. 284)",
+      translation: "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo → Dunda • Similani kambi! — Hai! • Kula Abegnania! — Hosi nahu kule! • Kore (2 anafiale for kifurifuri shadow)",
+      pronunciation: "ki-ba-ri-a / du-nda / si-mi-la-ni ka-mbi / ko-re / ki-fu-ri-fu-ri",
+      context: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 151–152, 192, 259–260, 284, 339, 347)",
+      audioFile: null,
+    },
+    langName: "Mijikenda (Giriama)",
+    langId: "mijikenda",
   }
 );

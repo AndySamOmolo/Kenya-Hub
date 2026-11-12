@@ -3,6 +3,8 @@
 // Based on "Grammar of the Kamba Language" by J.T. Last (CMS, 1885),
 // "Vocabularies of the Kamba and Kikuyu Languages"
 // by Hildegarde Hinde (Cambridge University Press, 1904),
+// "Ethnology of A-Kamba and Other East African Tribes" by C.W. Hobley (1910),
+// "The Akamba in British East Africa" by Gerhard Lindblom (1920),
 // and "Bantu Beliefs and Customary Institutions" by C.W. Hobley (1922).
 // ============================================================
 
@@ -25,6 +27,8 @@ export const KAMBA_CONFIG: LanguageConfig = {
   "sources": [
     "kamba-grammar-last",
     "kamba-kikuyu-vocabularies",
+    "hobley-akamba-ethnology-1910",
+    "lindblom-akamba-1920",
     "bantu-beliefs"
   ]
 };
@@ -4221,19 +4225,19 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "target": "Ng'o yakwa",
             "source": "Myself",
             "pronunciation": "ng'o yakwa",
-            "hint": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last"
+            "hint": "Literally 'my heart' — classical 1885 reflexive recorded by J.T. Last (p. 22: Ng'o yakwa, Ng'o yako, Ng'o yakwe)"
           },
           {
             "target": "Ng'o sitũ",
             "source": "Ourselves",
             "pronunciation": "ng'o si-tu",
-            "hint": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)"
+            "hint": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885, p. 22: Ng'o zetu, Ng'o zenyu, Ng'o zao)"
           },
           {
             "target": "Kwa mũuo",
             "source": "Peacefully / Sweetly",
             "pronunciation": "kwa muuo",
-            "hint": "Manner adverb for peaceful action recorded by J.T. Last (1885)"
+            "hint": "Manner adverb recorded by J.T. Last (1885, p. 40: Kwa mioo 'sweetly', Kwa uthuku 'badly', Kwa-ku-manda 'searchingly', Kwa-ku-thauka 'playfully')"
           }
         ],
         "sentences": [
@@ -4534,105 +4538,85 @@ export const KAMBA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Oponiao. (Ah.).",
-            "source": "A man to a youth (Anake) will say (The reply will be)."
+            "target": "Umuvoo? — Inimuvoo!",
+            "source": "How are you? — I am well! (Adult salutation recorded by C. W. Hobley 1910, p. 52)"
+          },
+          {
+            "target": "Oponiao! — Ah! | Wakia! — Ah! | Waiya! — Waiya!",
+            "source": "Elder to young warrior (Anake) — Reply | Elder to young girl (Muitu) — Reply | Mutual greeting between Anake (Hobley 1910, p. 52)"
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"muthenia monthe (Ulu) / matuk oonde (Nganyawa)\" in Kamba?",
-            "correctAnswer": "always",
+            "prompt": "What is the English meaning of \"muthenia monthe (Ulu) / matuku onthe\" in Kamba?",
+            "correctAnswer": "Always / Every day",
             "options": [
-              "Injury / Offence",
-              "Mu Tui.",
-              "A man to a girl (Muitu) will say",
-              "always"
+              "Supreme communal tribunal assembly",
+              "Mu Tui ancestral clan and sub-clans",
+              "Greeting from an elder to a young girl (Muitu)",
+              "Always / Every day"
             ],
             "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Nominal Damages\" in Kamba?",
-            "correctAnswer": "Injury / Offence",
+            "prompt": "In C. W. Hobley's Ethnology of A-Kamba (1910, p. 64), which three sub-clans belong to the ancestral \"Mu Tui\" (iron-smith) clan?",
+            "correctAnswer": "Mu Sii, Mu Mui, and Mwa-Ithangwa",
             "options": [
-              "Mu Tui.",
-              "A man to a girl (Muitu) will say",
-              "Injury / Offence",
-              "always"
+              "Mu Sii, Mu Mui, and Mwa-Ithangwa",
+              "Wakia, Oponiao, and Nosio",
+              "Kivisi, Mwanake, and Nthele",
+              "Mwa, Wima, and Wiu"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 64"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mu Sii. Mu Mui. Mwa-Ithangwa.\" in Kamba?",
-            "correctAnswer": "Mu Tui.",
+            "prompt": "According to C. W. Hobley (1910, p. 52), how does an elder greet a young unmarried girl (\"Muitu\") and a young warrior (\"Anake\") in Kĩkamba?",
+            "correctAnswer": "\"Wakia!\" to a girl (Muitu) and \"Oponiao!\" to a young warrior (Anake), to which each replies \"Ah!\"",
             "options": [
-              "A man to a girl (Muitu) will say",
-              "Mu Tui.",
-              "always",
-              "Injury / Offence"
+              "\"Wakia!\" to a girl (Muitu) and \"Oponiao!\" to a young warrior (Anake), to which each replies \"Ah!\"",
+              "\"Waiya!\" to a child and \"Nosio!\" to an elder",
+              "\"Nduma!\" and \"Muumbi!\"",
+              "\"Kithito!\" and \"Ndundu!\""
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Mu Tui.\" in Kamba?",
-            "correctAnswer": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-            "options": [
-              "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-              "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
-              "Nominal Damages",
-              "Wakia."
-            ],
-            "hint": "mu sii. mu mui. mwa-ithangwa."
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"A man to a girl (Muitu) will say\" in Kamba?",
-            "correctAnswer": "Wakia.",
-            "options": [
-              "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
-              "Nominal Damages",
-              "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-              "Wakia."
-            ],
-            "hint": "wakia."
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 52"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each Kamba expression with its English meaning:",
-            "correctAnswer": "muthenia monthe (Ulu) / matuk oonde (Nganyawa): always",
+            "prompt": "Match each Kamba salutation or institution from Hobley (1910, pp. 52, 64, 78) with its meaning:",
+            "correctAnswer": "Umuvoo? — Inimuvoo!: Adult salutation ('How are you? — I am well!')",
             "pairs": [
               {
-                "left": "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
-                "right": "always"
+                "left": "Umuvoo? — Inimuvoo!",
+                "right": "Adult salutation ('How are you? — I am well!')"
               },
               {
-                "left": "Nominal Damages",
-                "right": "Injury / Offence"
+                "left": "Wakia! — Ah!",
+                "right": "Elder's greeting to a young girl (Muitu) and reply"
               },
               {
-                "left": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-                "right": "Mu Tui."
+                "left": "Oponiao! — Ah!",
+                "right": "Elder's greeting to a young warrior (Anake) and reply"
               },
               {
-                "left": "Wakia.",
-                "right": "A man to a girl (Muitu) will say"
+                "left": "Waiya! — Waiya!",
+                "right": "Mutual salutation between young warriors (Anake)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kamba term for \"A man to a youth (Anake) will say\": ___",
-            "correctAnswer": "Oponiao.",
+            "prompt": "Complete the Kamba greeting spoken by an elder to a young warrior (Anake) in Hobley (1910, p. 52): ___",
+            "correctAnswer": "Oponiao!",
             "options": [
-              "muthenia monthe (Ulu) / matuk oonde (Nganyawa)",
-              "Nominal Damages",
-              "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-              "Oponiao."
+              "muthenia monthe",
+              "King'ole",
+              "Mbai ya Mu Tui",
+              "Oponiao!"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 52"
           }
         ]
       }
@@ -4646,10 +4630,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "kamba-open-dataset-17-1",
-        "title": "Core Swadesh & Cultural Vocabulary",
+        "title": "Social Grades (Kivisi to Atumia ma Ithembo) & Ecological Lexicon (Hobley 1910)",
         "icon": "Home",
-        "description": "Learn core Kamba (Kĩkamba) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
-        "tips": "Focus on high-frequency roots shared across Kamba (Kĩkamba) dialects and everyday speech.",
+        "description": "Learn the eight traditional Akamba male and female life-stages (Hobley 1910, p. 49) and natural history terminology (pp. 22–26).",
+        "tips": "In Chapter IX of Ethnology of A-Kamba (1910, p. 49), Hobley tabulates the parallel male and female life-stages from birth (Kana / Kahengi) through Kivisi/Muitu, Mwanake/Mundu mukaa, Nthele/Kipeti, and Mutumia to the senior Atumia ma Nzama and Atumia ma Ithembo.",
         "words": [
           {
             "target": "Kivisi (pl. Nisi)",
@@ -4658,101 +4642,101 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Muitu (pl. Weitu)",
-            "source": "Young unmarried girl",
-            "pronunciation": "mui-tu",
+            "target": "Muitu (pl. Weitu) / Mundu mukaa",
+            "source": "Young unmarried girl / maiden",
+            "pronunciation": "mui-tu / mu-ndu mu-kaa",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
             "target": "Mwanake (pl. Anake)",
-            "source": "Young man or warrior",
+            "source": "Circumcised young man or warrior",
             "pronunciation": "mwa-na-ke",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
             "target": "Nthele (pl. Anthele)",
-            "source": "Young married man",
+            "source": "Married man with children (below elder council rank)",
             "pronunciation": "nthe-le",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Kipeti (pl. Ipeti)",
-            "source": "Married woman with children",
-            "pronunciation": "ki-pe-ti",
+            "target": "Kipeti (pl. Ipeti) vs. Ngungu",
+            "source": "Married woman with children vs. childless married woman",
+            "pronunciation": "ki-pe-ti / ngu-ngu",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Mutumia (pl. Atumia)",
-            "source": "Elder / Council member",
-            "pronunciation": "mu-tu-mia",
+            "target": "Mutumia wa Kisuka → Mutumia wa Nzama → Mutumia wa Ithembo (fem. Mukuu)",
+            "source": "Junior elder (bereavement council) → Judicial council elder → Senior shrine elder (fem. senior woman Mukuu)",
+            "pronunciation": "mu-tu-mia wa ki-su-ka / nza-ma / i-the-mbo / mu-kuu",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
             "target": "Muthwa (queen: Munthai)",
-            "source": "White ants (termites)",
-            "pronunciation": "muthwa",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba"
+            "source": "White ants / termites (and queen termite Munthai)",
+            "pronunciation": "muthwa / mu-nthai",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 25"
           },
           {
             "target": "Nzuki (queen: Mulue)",
-            "source": "Honeybees",
-            "pronunciation": "nzu-ki",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba"
+            "source": "Honeybees (and queen bee Mulue)",
+            "pronunciation": "nzu-ki / mu-lue",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 25"
           }
         ],
         "sentences": [
           {
-            "target": "Young man or warrior (Muthwa, queen ant Munthai).",
-            "source": "Unmarried girl (Mundu mukaa) (White ants )."
+            "target": "Kivisi → Mwanake → Nthele → Mutumia wa Kisuka → Mutumia wa Nzama → Mutumia wa Ithembo.",
+            "source": "Boy → Young warrior → Married householder → Bereavement-council elder → Judicial-council elder → Sacred grove elder (Hobley 1910, p. 49)."
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Umuvoo.\" in Kamba?",
-            "correctAnswer": "A man to a woman will say",
+            "prompt": "In C. W. Hobley's table of A-Kamba Social Grades (1910, p. 49), what is the distinction between \"Kipeti (pl. Ipeti)\", \"Ngungu\", and \"Mukuu\"?",
+            "correctAnswer": "\"Kipeti\" is a married woman with children, \"Ngungu\" is a childless married woman, and \"Mukuu\" is a senior old woman",
             "options": [
-              "A man to a woman will say",
-              "Speaker / Addressee",
-              "Childless woman (Ngungu)",
-              "Old woman (Mukuu)"
+              "\"Kipeti\" is a married woman with children, \"Ngungu\" is a childless married woman, and \"Mukuu\" is a senior old woman",
+              "They are three kinds of honeybees",
+              "They are three wire-inlay patterns on stools",
+              "They are three months of the dry season"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 49"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each verified Kamba (Kĩkamba) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "Umuvoo.: A man to a woman will say",
+            "prompt": "Match each verified Kamba (Kĩkamba) social grade or insect term from Hobley (1910, pp. 25, 49) to its English meaning:",
+            "correctAnswer": "Kivisi (pl. Nisi): Uncircumcised boy",
             "pairs": [
               {
-                "left": "Umuvoo.",
-                "right": "A man to a woman will say"
+                "left": "Kivisi (pl. Nisi)",
+                "right": "Uncircumcised boy"
               },
               {
-                "left": "Salutation / Reply",
-                "right": "Speaker / Addressee"
+                "left": "Mwanake (pl. Anake)",
+                "right": "Young man or warrior"
               },
               {
-                "left": "Old man, headman of his own village only",
-                "right": "Childless woman (Ngungu)"
+                "left": "Nthele (pl. Anthele)",
+                "right": "Married man with children"
               },
               {
-                "left": "Old man",
-                "right": "Old woman (Mukuu)"
+                "left": "Muthwa (queen: Munthai)",
+                "right": "White ants / termites (and queen termite)"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kamba (Kĩkamba) term for \"Unmarried girl (Mundu mukaa)\": ___",
-            "correctAnswer": "Young man or warrior",
+            "prompt": "Complete the Kamba (Kĩkamba) term for the queen honeybee (\"Nzuki\") in Hobley (1910, p. 25): ___",
+            "correctAnswer": "Mulue",
             "options": [
-              "Young man or warrior",
-              "Muthwa, queen ant Munthai",
-              "Umuvoo.",
-              "Salutation / Reply"
+              "Mulue",
+              "Munthai",
+              "Kipeti",
+              "Nthele"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba (Crops & Agriculture)"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 25"
           }
         ]
       },
@@ -4767,53 +4751,57 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "target": "Thingii",
             "source": "Black ants (ponera)",
             "pronunciation": "thingii",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
             "target": "Nthuaku",
             "source": "Soldier ants (siafu)",
             "pronunciation": "nthua-ku",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
-            "target": "Ngia—in the hopper stage—Kititi",
-            "source": "Locusts",
-            "pronunciation": "ngia-—in the hopper sta-ge—ki-ti-ti",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Ngia (hopper stage: Kititi)",
+            "source": "Locusts (and immature hopper stage Kititi)",
+            "pronunciation": "ngi-a / ki-ti-ti",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
             "target": "Chambulutwa",
             "source": "Butterfly and Moth",
             "pronunciation": "chambu-lutwa",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
             "target": "Yamu",
             "source": "Hairy caterpillar",
             "pronunciation": "ya-mu",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
-            "target": "Mangña—in Ulu Maseo—in Kitui",
-            "source": "Hagadash Ibis",
-            "pronunciation": "mangnya-—in ulu ma-seo-—in ki-tui",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "target": "Mangña (Ulu) / Maseo (Kitui)",
+            "source": "Hagedash Ibis (sacred augury bird)",
+            "pronunciation": "ma-ngnya / ma-se-o",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 24"
           },
           {
             "target": "Isau",
             "source": "Marabou stork",
             "pronunciation": "i-sau",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 24"
           },
           {
             "target": "Ngoto",
             "source": "Lesser bustard",
             "pronunciation": "ngo-to",
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 24"
           }
         ],
         "sentences": [
-          ],
+          {
+            "target": "Ngia (hopper stage: Kititi) • Mangña (Ulu) / Maseo (Kitui).",
+            "source": "Locusts (and hopper stage Kititi) • Hagedash Ibis in Ulu and Kitui dialects (Hobley 1910, pp. 24–25)."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -4825,7 +4813,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Locusts",
               "Butterfly and Moth"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
           },
           {
             "type": "match_pairs",
@@ -4841,8 +4829,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 "right": "Soldier ants (siafu)"
               },
               {
-                "left": "Ngia—in the hopper stage—Kititi",
-                "right": "Locusts"
+                "left": "Ngia (hopper stage: Kititi)",
+                "right": "Locusts (and immature hopper stage Kititi)"
               },
               {
                 "left": "Chambulutwa",
@@ -4856,11 +4844,207 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Yamu",
             "options": [
               "Yamu",
-              "Mangña—in Ulu Maseo—in Kitui",
+              "Mangña (Ulu) / Maseo (Kitui)",
               "Thingii",
               "Nthuaku"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-unit-18-hobley-1910-ethnology",
+    "title": "Unit 18: Hobley (1910) Ethnology of A-Kamba — Milia Stool Patterns, Musai Riddles, Kweta Ndai & Customary Law",
+    "description": "Master the complete cultural, artistic, calendar, and legal lexicon of C. W. Hobley's 'Ethnology of A-Kamba and Other East African Tribes' (Cambridge University Press, 1910).",
+    "icon": "Sparkles",
+    "skills": [
+      {
+        "id": "kamba-hobley-1910-crafts-calendar-riddles-18-1",
+        "title": "Ibila Stools (8 Milia Patterns), 8 Musical Instruments, 11 Months & 5 Kweta Ndai Riddles",
+        "icon": "Music",
+        "description": "Study the 5 stool woods, 8 wire-inlay patterns (Milia), 8 musical instruments, 11-month calendar, and 5 Kweta ndai riddles recorded by Hobley (1910, pp. 30–38, 52–55).",
+        "tips": "In Chapter VII (pp. 35–38), Hobley documents how Kamba elders carve stools (Ibila, sg. Kivila) from 5 woods (Kiwazi/Muasi, Muinga, Kivuti, Mana, Mutungu) and inlay coiled brass and iron wire in 8 named symmetry patterns (Milia). In Chapter X (pp. 53–54), he records the 11 months (Mwa to Mubiu) and 5 Kweta ndai riddles.",
+        "words": [
+          {
+            "target": "Ibila (sg. Kivila) • 5 Woods: Kiwazi (Muasi), Muinga, Kivuti, Mana, Mutungu",
+            "source": "Carved three-legged stool • 5 traditional stool-carving woods",
+            "pronunciation": "i-bi-la / ki-vi-la / ki-wa-zi / mu-i-nga / ki-vu-ti / ma-na / mu-tu-ngu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VII, pp. 35–36"
+          },
+          {
+            "target": "8 Milia Patterns: Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro (Kisolo)",
+            "source": "Eight named brass/copper/iron wire-inlay designs on Kamba elders' stools",
+            "pronunciation": "mi-li-a / ki-tha-i-tha / vi-oo / e-u-mu / ki-tu-i / ka-tu-ngi / ke-i-nga / ki-zo-ro",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VII, pp. 36–38"
+          },
+          {
+            "target": "Mbebe, Soo, Nguli, Zomali, Kithembi, Ngutha, Engoma, Muvungu (Cha)",
+            "source": "Eight Kamba musical instruments: horn, war horn, small horn, flute, drum, bow-lute, dance drum & leg rattle",
+            "pronunciation": "mbe-be / soo / ngu-li / zo-ma-li / ki-the-mbi / ngu-tha / e-ngo-ma / mu-vu-ngu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VI, pp. 30–31"
+          },
+          {
+            "target": "11 Months: 1. Mwa, 2. Wima, 3. Wiu, 4. Mweu, 5. Onkonono, 6. Thandatu, 7. Moanza, 8. Nyanya, 9. Kenda, 10. Ekumi, 11. Mubiu (Rains: Ambua anzwa & Ambua ua)",
+            "source": "The 11 traditional Kamba months and the 2 rainy seasons (Oct–Dec & Mar–May)",
+            "pronunciation": "mwa / wi-ma / wi-u / mwe-u / o-nko-no-no / tha-nda-tu / mo-a-nza / nya-nya / ke-nda / e-ku-mi / mu-bi-u",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. X, p. 53"
+          },
+          {
+            "target": "Kweta ndai: (1) Nduma — Muumbi • (2) O-Selia — Kimbu • (3) Mwetu etiki — Kulotoi • (4) Tuna Kwatana — Nzia na nzia • (5) Wo wiwa — Kinto Kitheo",
+            "source": "Five Kamba riddles: (1) Clouds hiding moon • (2) Chameleon • (3) Mirage • (4) Crossing paths • (5) Bare earth patch",
+            "pronunciation": "kwe-ta nda-i / ndu-ma mu-u-mbi / o-se-li-a ki-mbu / mwe-tu e-ti-ki ku-lo-to-i / nzi-a na nzi-a",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. X, p. 54"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kweta ndai! — O-Selia? — Kimbu. | Tuna Kwatana? — Nzia na nzia.",
+            "source": "Tell a riddle! — What goes first forward and then backward? — The chameleon. | We take hold of one another? — One path crossing another (Hobley 1910, p. 54)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In C. W. Hobley's Ethnology of A-Kamba (1910, p. 54), what are the answers to the riddles \"Nduma?\" ('What fastens up the moon in the dark?') and \"O-Selia?\" ('What goes first forward and then backward?')?",
+            "correctAnswer": "\"Muumbi\" (the clouds/mist) and \"Kimbu\" (the chameleon)",
+            "options": [
+              "\"Muumbi\" (the clouds/mist) and \"Kimbu\" (the chameleon)",
+              "\"Kulotoi\" (the mirage) and \"Kinto Kitheo\" (bare ground)",
+              "\"Kithaitha\" and \"Kizoro\"",
+              "\"Ambua anzwa\" and \"Ambua ua\""
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. X, p. 54"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kamba cultural set from Hobley (1910) with its exact definition:",
+            "correctAnswer": "Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro: Named wire-inlay patterns (Milia) on elders' stools (pp. 36–38)",
+            "pairs": [
+              {
+                "left": "Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro",
+                "right": "Named wire-inlay patterns (Milia) on elders' stools (pp. 36–38)"
+              },
+              {
+                "left": "Kiwazi (Muasi), Muinga, Kivuti, Mana, Mutungu",
+                "right": "Five traditional woods used to carve Ibila stools (p. 36)"
+              },
+              {
+                "left": "Mwa, Wima, Wiu, Mweu, Onkonono... Mubiu",
+                "right": "The 11 traditional Kamba months (p. 53)"
+              },
+              {
+                "left": "Mwetu etiki — Kulotoi",
+                "right": "Riddle #3: A girl you cannot catch up with — A mirage (p. 54)"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the answer to Kamba Riddle #4 in Hobley (1910, p. 54): \"Tuna Kwatana?\" ('We take hold of one another?') — ___",
+            "correctAnswer": "Nzia na nzia",
+            "options": [
+              "Nzia na nzia",
+              "Muumbi",
+              "Kimbu",
+              "Kulotoi"
+            ],
+            "hint": "One path crossing another (Hobley 1910, p. 54)"
+          }
+        ]
+      },
+      {
+        "id": "kamba-hobley-1910-nzaiko-law-religion-18-2",
+        "title": "Nzaiko Initiation (27 Secret Words & Musai Sticks), Kithito Oath, Customary Law & Wano Tales",
+        "icon": "Scale",
+        "description": "Master the ceremonial vocabulary of Nzaikonini, Nzaikoneni & Mbabani (pp. 68–76), Kamba customary law & blood-money (pp. 77–84), religion & medicine (pp. 85–105), and the 6 Wano folktales (pp. 107–118).",
+        "tips": "During Nzaiko initiation (Ch. XIII, pp. 68–76), initiates learn 27 ceremonial code words (e.g., Muoi 'sun', Kielelo 'moon', Ngai 'water', Kioni 'eye', Kiweto 'bow') and interpret pictographic Musai sticks. In Ch. XIV (pp. 77–84) and Appendix (4) (p. 168), Hobley documents the Kithito oath and blood-compensation (Kiti).",
+        "words": [
+          {
+            "target": "Nzaikonini → Nzaikoneni (Mbavani) → Mbabani (Mwaiki / Choo Muumba) • Musai (pl. Misai)",
+            "source": "First, Second & Third Kamba initiations • Pictographic carved riddle-stick",
+            "pronunciation": "nza-i-ko-ni-ni / nza-i-ko-ne-ni / mba-ba-ni / mu-sa-i",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 68–76"
+          },
+          {
+            "target": "Nzaiko Secret Lexicon: Muoi (sun), Kielelo (moon), Ngai (water), Kioni (eye), Mathangwa (ears), Kiweto (bow), Kiatu (hyena), Mbuibui (spider),Kithembo (honey jar)",
+            "source": "Ceremonial code words taught to initiates during the Nzaiko seclusion",
+            "pronunciation": "mu-o-i / ki-e-le-lo / nga-i / ki-o-ni / ma-tha-ngwa / ki-we-to / ki-a-tu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 71–72"
+          },
+          {
+            "target": "Kiti (Blood-Money): 11 cows & 1 bull (man) / 4 cows & 1 bull (woman) in Ulu; 14 cows & 1 bull (man) / 7 cows & 1 bull (woman) in Kitui + Ndiu peace-goat",
+            "source": "Traditional homicide blood-compensation and peace-reconciliation sacrifice",
+            "pronunciation": "ki-ti / ndi-u",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIV, pp. 78–80"
+          },
+          {
+            "target": "Kithito (7 ingredients, sworn on 7 stones by Ku-ringa Kithito) vs. Ndundu (baobab-bark & hair ordeal) • Kingñoli",
+            "source": "Supreme Kamba oath-fetish vs. personal ordeal oath • Communal tribunal against habitual criminals",
+            "pronunciation": "ki-thi-to / ndu-ndu / ki-ngnyo-li",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIV, pp. 77–84 & Appendix (4) p. 168"
+          },
+          {
+            "target": "Engai / Mulungu • Aiimu (sacred fig tree Mumo & shrine Ithembo) • Mundu Mue (divination gourd Kititi cha Mbuu & seeds Mbuu) • Makwa & Thabu (purified by Ngondu)",
+            "source": "Supreme Creator • Ancestral spirits & grove shrine • Diviner-healer & casting gourd • Ritual taboos & herbal purification",
+            "pronunciation": "e-nga-i / mu-lu-ngu / a-ii-mu / i-the-mbo / mu-ndu mu-e / ki-ti-ti cha mbuu / ma-kwa / tha-bu / ngo-ndu",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Chs. XV–XVII, pp. 85–103"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ku-ringa Kithito: \"Ethiwa nusembie... Kithito kiu nikimwue!\"",
+            "source": "Swearing on the Kithito upon seven stones: \"If he has lied or stolen... may this Kithito strike him!\" (Hobley 1910, p. 168)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In C. W. Hobley's Nzaiko ceremonial vocabulary (1910, pp. 71–72), what do the secret initiate words \"Muoi\", \"Kielelo\", \"Ngai\", and \"Kiweto\" mean?",
+            "correctAnswer": "Sun (Muoi), Moon (Kielelo), Water (Ngai), and Bow (Kiweto)",
+            "options": [
+              "Sun (Muoi), Moon (Kielelo), Water (Ngai), and Bow (Kiweto)",
+              "Lion, Leopard, Elephant, and Rhinoceros",
+              "Sorghum, Maize, Millet, and Pigeon pea",
+              "Sword, Shield, Spear, and Quiver"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 71–72"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kamba legal or religious institution from Hobley (1910, pp. 77–103, 168) with its role:",
+            "correctAnswer": "Kithito: Supreme seven-ingredient oath sworn while standing on seven stones",
+            "pairs": [
+              {
+                "left": "Kithito",
+                "right": "Supreme seven-ingredient oath sworn while standing on seven stones"
+              },
+              {
+                "left": "Musai (pl. Misai)",
+                "right": "Carved pictographic riddle-stick interpreted during Nzaiko initiation"
+              },
+              {
+                "left": "Ithembo (under Mumo fig tree)",
+                "right": "Sacred grove shrine for communal rain prayers and offerings to Aiimu"
+              },
+              {
+                "left": "Kititi cha Mbuu",
+                "right": "Diviner's (Mundu Mue) calabash gourd for casting Mbuu divination seeds"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Kamba term for the pictographic carved stick interpreted by candidates during the Nzaiko initiation (Hobley 1910, pp. 70–74): ___",
+            "correctAnswer": "Musai",
+            "options": [
+              "Musai",
+              "Kithito",
+              "Ithembo",
+              "Ndundu"
+            ],
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 70–74"
           }
         ]
       }

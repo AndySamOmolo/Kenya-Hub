@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.3",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
   "categories": [
     {
@@ -141,21 +141,21 @@
           "english": "One",
           "translation": "mosi / -moju (Kisagala) • imweri / -mweri (Kidawida)",
           "pronunciation": "imweri",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Two",
           "translation": "pili / mbili / -ili (Kisagala) • iwi / -wi (Kidawida)",
           "pronunciation": "iwi",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Six",
           "translation": "tandatu / ndandatu / -tandatu (Kisagala) • irandadu (Kidawida)",
           "pronunciation": "irandadu",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
@@ -225,21 +225,21 @@
           "english": "Four",
           "translation": "ine / -ne (Kisagala) • ina / -na (Kidawida)",
           "pronunciation": "ina",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Five",
           "translation": "sano / -sano (Kisagala) • isanu / -sanu (Kidawida)",
           "pronunciation": "isanu",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Nine",
           "translation": "ikenda (Kisagala & Kidawida)",
           "pronunciation": "ikenda",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
@@ -309,21 +309,21 @@
           "english": "Three",
           "translation": "tatu / ndatu / -tatu (Kisagala) • idadu / -dadu (Kidawida)",
           "pronunciation": "idadu",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Seven",
           "translation": "mfungate (Kisagala) • mfungade (Kidawida)",
           "pronunciation": "mfungade",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
           "english": "Eight",
           "translation": "nane / -nane (Kisagala) • wunyanya / inyanya (Kidawida)",
           "pronunciation": "wunyanya",
-          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida",
+          "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida",
           "audioFile": null
         },
         {
@@ -17823,7 +17823,7 @@
           "english": "The Three Taita Hills Dialect Varieties (Wray 1894 & Johnston 1919 #14–15)",
           "translation": "Kidawida (Dabida), Kisagala (Sagalla), & Kisighau (Kasigau)",
           "pronunciation": "ki-da-wi-da / ki-sa-ga-la / ki-si-ghau",
-          "context": "Rev. J. A. Wray (1894) 'An Elementary Introduction to the Taita Language' & Sir Harry H. Johnston (1919, Vol. I, pp. 82–93)",
+          "context": "Rev. J. A. Wray (1894) 'An Elementary Introduction to the Taita Language' & Sir Harry H. Johnston (1919, Vol. I, pp. 98–112 #14 Taita)",
           "audioFile": null
         },
         {
@@ -25111,6 +25111,20 @@
           "translation": "tsumusi",
           "pronunciation": "tsu-mu-si",
           "context": "Rev. J. Alfred Wray (1894, p. 82) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire, Foot & Inside (Three Errata on p. x for #14 Taita)",
+          "translation": "M-ωdω (s. M-ōtω) • Lu-aiyω ; pl. Ny-aiyω • -a n-denyi",
+          "pronunciation": "m-o-do / lu-ai-yo ny-ai-yo / a n-de-nyi",
+          "context": "14. Taita (Ki-dabida, Ki-sagala, Ki-siγau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & pp. 100–101, 110)",
+          "audioFile": null
+        },
+        {
+          "english": "Things, Rain, Sun, Star & Hundred (Ki-dabida vs. Ki-sagala s. & Ki-siγau k.)",
+          "translation": "Fi-ndu (s. Vi-ndu) • M-fūa (s. M-vūa) • I-rūva (s. I-zūva) • N-gēnyi (s. N-dondē) • I-γana",
+          "pronunciation": "fi-ndu vi-ndu / m-fu-a m-vu-a / i-ru-va i-zu-va / n-do-nde / i-gha-na",
+          "context": "14. Taita (Ki-dabida, s. Ki-sagala, k. Ki-siγau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–107 & 1922, Vol. II, pp. 32–33)",
           "audioFile": null
         }
       ]

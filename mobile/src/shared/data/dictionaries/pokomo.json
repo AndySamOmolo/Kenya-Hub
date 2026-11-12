@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
   "categories": [
     {
@@ -16228,6 +16228,20 @@
           "translation": "keti (pl. vyeti)",
           "pronunciation": "keh-tee / vyeh-tee",
           "context": "Mikael Samson & R. G. Darroch (1944, pp. 119–149) — A History of the Pokomo (JRAI Vol. 73)",
+          "audioFile": null
+        },
+        {
+          "english": "Firewood / Wood (Erratum p. x)",
+          "translation": "-kuni, -khuni (Lu-kuni ; pl. N-khuni)",
+          "pronunciation": "lu-ku-ni / n-khu-ni",
+          "context": "13. Pωkωmω (Pfωkωmω) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & p. 106 col. 13)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain, Man/Husband, God & Canoe (#13 Pωkωmω *l > y & *v > bf Series)",
+          "translation": "Bfūya / M-vūya • Mu-yūme ; wa-yūme • Mū-yūṅgu • W-ahω ; m-ahω",
+          "pronunciation": "bfu-ya / mu-yu-me / mu-yu-ngu / wa-ho ma-ho",
+          "context": "13. Pωkωmω (Pfωkωmω) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 99–104 & 1922, Vol. II, pp. 31–32)",
           "audioFile": null
         }
       ]

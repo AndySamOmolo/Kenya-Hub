@@ -217,7 +217,7 @@ export const KISII_UNITS: CourseUnit[] = [
         "title": "Numbers 1–20 & Everyday Actions",
         "icon": "Hash",
         "description": "Count from eyemo (1) to emerongo ebere (20) and use core Ekegusii verbs.",
-        "tips": "Numbers 6–8 build on 'isano' (5): isano nemo (6), isano na ibere (7), isano na isato (8), while 9 is 'kianda' and 10 is 'ikomi' (Hobley 1902, p. 69 & Johnston 1919, p. 59).",
+        "tips": "Numbers 6–8 build on 'isano' (5): isano nemo (6), isano na ibere (7), isano na isato (8), while 9 is 'kianda' and 10 is 'ikomi' (Hobley 1902, p. 69 & Johnston 1919, Vol. I, p. 81).",
         "words": [
           {
             "target": "eyemo",
@@ -404,19 +404,19 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "inche",
             "source": "I",
             "pronunciation": "inche aye ere intwe inywe ba-rabwo",
-            "hint": "Johnston (1919, p. 58 #7 Ki-guzii) pronouns"
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "aye",
             "source": "you (sg.)",
             "pronunciation": "inche aye ere intwe inywe ba-rabwo",
-            "hint": "Johnston (1919, p. 58 #7 Ki-guzii) pronouns"
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "ere",
             "source": "s/he",
             "pronunciation": "inche aye ere intwe inywe ba-rabwo",
-            "hint": "Johnston (1919, p. 58 #7 Ki-guzii) pronouns"
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "obori / amaemba / erabuoni",
@@ -488,7 +488,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "Spear (pl. Spears) / Shield",
               "I, you (sg.), s/he, we, you (pl.), they"
             ],
-            "hint": "Johnston (1919, p. 58 #7 Ki-guzii) pronouns"
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "type": "multiple_choice",
@@ -1846,7 +1846,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "obori / amaemba / rigomia (ritoke) / erabuoni / obouki",
             "source": "Finger-millet (wimbi) / Sorghum / Banana / Sweet potato / Honey",
             "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, pp. 56–58 #7 Ki-guzii)"
+            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
             "target": "Omo-kono; ama- / Oko-boko",

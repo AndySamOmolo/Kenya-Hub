@@ -13,7 +13,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
   "categories": [
     {
@@ -24800,8 +24800,7 @@
           "pronunciation": "ko-we-ri / wa-kho-lo",
           "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 336, 343)",
           "audioFile": null
-        }
-        ,
+        },
         {
           "english": "Bantu Kavirondo Hut Plan (Fig. 1: Fireplaces No. 1 & No. 2 In-Law Taboo), 3 Stool Patterns (Fig. 2), 18-in Hoe (Fig. 3), Log Bellows (Fig. 5) & Mumias Saucer Lamp (Fig. 6)",
           "translation": "Round hut (15–20 ft diam., 5 ft walls) with Fireplace No. 1 (cooking/visitors) & Fireplace No. 2 (sleeping, taboo to sons-in-law and daughters-in-law while the head of the house lives; breach requires killing a goat, wearing skin strips & smearing dung on the chest) • 3 stool patterns (Pattern No. 3 in Kakumega) • 18-inch heart-shaped iron hoe made in Samia & Ketosh • Double-chamber wooden log bellows (4-ft sticks, goat-skin covers, clay tuyere) • Earthenware semsem-oil saucer lamp at Mumia's",
@@ -24884,6 +24883,76 @@
           "translation": "Lu-Nyamwezi Noun Classes I–VII: I mu- → wa-, II mu-/mw- → mi-, III n-/m- → n-/m-, IV ki-/ch- → fi-, V i-/li- → mi-/ma-, VI lu- → n-/nu-/ma-, VII ka- → tu- (replacing older plural tzi- preserved in Lu-Wanga) • Verb 'Come': Lu-Nyamwezi ndwiza, uliwiza, aliwiza, tuliwiza, muliwiza, waliwiza, inf. kwiza, imp. iza vs. Lu-Wanga nzidza, (ewe) widza, iedza, twidza, inyumwidza, (inbabu) wedza, inf. okwidza/ku-widza, imp. idza • Pronouns: I nene / wenyeni, Thou wewe / ewe, He/she uwe / iye, We iswe / efue, You imwe (ing'wi) / enyue, They awo / awa(no)",
           "pronunciation": "ndwi-za n-zi-dza / ne-ne we-nye-ni / i-swe e-fu-e",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, pp. 87–88)",
+          "audioFile": null
+        },
+        {
+          "english": "Doctor / Medicine-man (Addenda p. 757)",
+          "translation": "Omu-mali",
+          "pronunciation": "o-mu-ma-li",
+          "context": "5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "Father / Elder (Addenda p. 757)",
+          "translation": "Omu-kωfu",
+          "pronunciation": "o-mu-ko-fu",
+          "context": "5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "God (Addenda p. 757)",
+          "translation": "Nya-saye (Na-saye) • Wele / Were (#6–6a)",
+          "pronunciation": "nya-sa-ye / we-le",
+          "context": "5a. Lu-waṅga & 6–6a. Lu-masaba/Lu-konde — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 75, 757 & 1922, Vol. II, p. 23)",
+          "audioFile": null
+        },
+        {
+          "english": "Things / Affairs (plural, Class 6, Addenda p. 757)",
+          "translation": "Ama-khuwa",
+          "pronunciation": "a-ma-khu-wa",
+          "context": "5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "Good (Addenda p. 757)",
+          "translation": "-lahi",
+          "pronunciation": "la-hi",
+          "context": "5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "Great / Large (Addenda p. 757)",
+          "translation": "-kulundu",
+          "pronunciation": "ku-lu-ndu",
+          "context": "5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "Not / Neither / To be without (Addenda p. 757)",
+          "translation": "-ta / -kata (#5 Lu-nyara) • -tawe / -ṅga / -kata / Ωxu-buta (#5a Lu-waṅga)",
+          "pronunciation": "ta / ka-ta / ta-we / o-khu-bu-ta",
+          "context": "5. Lu-nyara & 5a. Lu-waṅga — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Ch. IV Addenda, p. 757)",
+          "audioFile": null
+        },
+        {
+          "english": "Class 5 Singular Prefix (Erratum p. x)",
+          "translation": "Ri- (Li-, Di-, Iri-; pl. Kama- / Gama-)",
+          "pronunciation": "ri / li / ka-ma / ga-ma",
+          "context": "6. Lu-masaba & 6a. Lu-konde — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & p. 85)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood / Sunshine / Ten / Hundred / Thousand (Vol. II Noteworthy Roots)",
+          "translation": "Kama-lasiri (Ma-lasili) • Gumu-mū • Kumu-rundu (10) • Li-tondω / Li-kana (100) • Si-zumi (1,000)",
+          "pronunciation": "ka-ma-la-si-ri / gu-mu-mu / ku-mu-ru-ndu / li-to-ndo / si-zu-mi",
+          "context": "5–6a. Sub-group A 5 — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1922, Vol. II, Ch. VI, pp. 22–24)",
+          "audioFile": null
+        },
+        {
+          "english": "Person, Man, Woman, Water, Sun & Fish (#5b Lu-siṅga / Cula)",
+          "translation": "Omu-ndu ; aba-ndu • Omu-saiza • Omu-kali • Ama-nzi • Eri-uba • En-sūi",
+          "pronunciation": "o-mu-ndu / o-mu-sa-i-za / o-mu-ka-li / a-ma-nzi / e-ri-u-ba / en-su-i",
+          "context": "5b. Lu-siṅga (Cula, Rusinga & Mfangano Islands) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–85 & 1922, Vol. II, pp. 22–24)",
           "audioFile": null
         }
       ]

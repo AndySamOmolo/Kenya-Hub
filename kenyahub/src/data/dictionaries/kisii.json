@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
   "categories": [
     {
@@ -2221,7 +2221,7 @@
           "english": "Finger-millet (wimbi) / Sorghum / Banana / Sweet potato / Honey",
           "translation": "obori / amaemba / rigomia (ritoke) / erabuoni / obouki",
           "pronunciation": "o-bo-ri / a-ma-em-ba / ri-to-ke / o-bo-u-ki",
-          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, pp. 56–58 #7 Ki-guzii)",
+          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)",
           "audioFile": null
         },
         {
@@ -4881,7 +4881,7 @@
           "english": "Spear / Shield / Bow / Arrow / Sword-knife",
           "translation": "ritimo (pl. amatimo) / enguba / obota / omogwe / orobanga",
           "pronunciation": "ri-ti-mo / en-gu-ba / o-bo-ta / o-mo-gwe / o-ro-ban-ga",
-          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, pp. 56–58 #7 Ki-guzii)",
+          "context": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)",
           "audioFile": null
         }
       ]
@@ -5938,7 +5938,7 @@
           "english": "Historical ethnonyms for Ekegusii in early 1902–1919 surveys",
           "translation": "Kossova (Hobley 1902) / Igizii (Johnston 1902) / Ki-guzii (Johnston 1919 #7)",
           "pronunciation": "kos-so-va / i-gi-zii / ki-gu-zii",
-          "context": "C. W. Hobley (1902, p. 50) & Sir Harry H. Johnston (1902, p. 902; 1919, Vol. I, p. 56)",
+          "context": "C. W. Hobley (1902, p. 50) & Sir Harry H. Johnston (1902, p. 902; 1919, Vol. I, p. 73 #7 Ki-guzii)",
           "audioFile": null
         }
       ]
@@ -6694,7 +6694,7 @@
           "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
           "translation": "-ane / -ao / -aye / -into (-aito) / -inyu / -abo",
           "pronunciation": "-a-ne / -a-o / -a-ye / -in-to / -i-nyu / -a-bo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 59) — #7 Ki-guzii",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 81) — #7 Ki-guzii",
           "audioFile": null
         },
         {
@@ -6708,7 +6708,7 @@
           "english": "Personal Pronouns: I / Thou / He, She / We / You (pl.) / They",
           "translation": "inche / aye / ere / intwe / inywe / barabwo (abo)",
           "pronunciation": "in-che / a-ye / e-re / in-twe / i-nywe / a-bo",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 59) — #7 Ki-guzii",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, p. 81) — #7 Ki-guzii",
           "audioFile": null
         }
       ]
@@ -7893,8 +7893,7 @@
           "pronunciation": "m-baiyu a-bo ba- -ba- -a-bo -a-u",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
-        }
-        ,
+        },
         {
           "english": "Complete 1902 Registry of the 21 Clans & Chiefs of Kossova or Kisii (Part 1: Clans 1–11, Hobley 1902, p. 51)",
           "translation": "1. Ugirango (Chief Yawanga) • 2. Mukimusi (Chief Kimaina) • 3. Msasuri (Chief Munari) • 4. Magichana (Chief Borura) • 5. Manweni (Chief Minyigo) • 6. Mkanyimbo (Chiefs Uturi & Mtaruki) • 7. Nyaliwali (Chief Yamombo) • 8. Mowasi (Chief Maina) • 9. Umachogi (Chief Kitubo) • 10. Mukura (Chiefs Maina & Ndieki) • 11. Ukeiri (Chief Mwesaba)",
@@ -7935,6 +7934,34 @@
           "translation": "na-kulete ('I bring'), ngochandi ('I come') / sinkoja ('I come not'), kokosolia ('I dance'), ngokwandi ('I die'), kunyawandi ('I drink') / nanyaweti ('I drank') / njatinkunywa ('I drank not'), nkuliandi ('I eat') / tindalia ('I eat not'), kokoandi ('I give') / najengokoha ('I give you') / namoeti ('I gave him'), rogendandi ('I go') / nagendeti ('I went'), naweiteti ('I kill them'), namanyiti ('I know') / tinkomanyi ('I know not'), nanjiri ('thou lovest'), ngokoraturi ('we make'), nkonenaturi ('we say'), tinkugura ('we sold not'), nkonyari ('he stinks'), uibiri ('he steals'), kosakandi ('they laugh'), kulirandi ('you weep') • Sentences: inki ukilalira? ('why art thou sleeping?'), ngalaachiri? ('where did he go?'), ngalaoichia? ('where are you going?'), norouliocheti? ('who comes in?'), ngakiokobora? ('what do you say?'), amalua nayakikokola? ('how do you make palm wine/beer?'), inkituraria? ('what shall we drink?'), indiriri wachiti? ('when art thou coming?'), ngowakima ('give me food'), ndetera akagena ('I want a little stone'), mbunira umuti omoki ('cut me a small stick'), ngoko eriri okonga? ('which fowl will you give me?'), rebe nalinyumba yake ('he is inside the house'), chinyoni ngalaichiri ('the birds flew away'), numutambi incha numwengi ('he is taller than I'), umuti umumu wagwiri ('the rotten tree falls'), nawaraleti? — inchitinkorora ('can you see me? — no, I cannot')",
           "pronunciation": "ngo-cha-ndi / si-nko-ja / n-ku-li-a-ndi / ti-nda-li-a / na-ma-nyi-ti / ti-nko-ma-nyi / na-wa-ra-le-ti / i-nchi-ti-nko-ro-ra",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § I, p. 91)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrow, Buttocks, Country & Shame (#8 Ki-šaši — Woodward 1920)",
+          "translation": "Mū-gūī ; mi- • Ki-tende • I-kωṅgω • E-sωnω",
+          "pronunciation": "mu-gu-i / ki-te-nde / i-ko-ngo / e-so-no",
+          "context": "8. Ki-šaši (Archdeacon H. W. Woodward 1920 Supplementary Vocabulary) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1922, Vol. II, p. 26)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun/God, Rain, Water, Fire & Face (#8 Ki-šaši — Woodward 1920)",
+          "translation": "I-zωba • M-būla • Ma-nzi • Mū-līlω • Obu-šū",
+          "pronunciation": "i-zo-ba / m-bu-la / ma-nzi / mu-li-lo / o-bu-shu",
+          "context": "8. Ki-šaši (Archdeacon H. W. Woodward 1920 Supplementary Vocabulary) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1922, Vol. II, p. 26)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth, Tongue, Arm, Leg, Woman & Husband (#8 Ki-šaši — Woodward 1920)",
+          "translation": "Eri-nω ; ama- • Olu-līmī • Oku-bωkω • Oku-gūlū • Omu-karī ; aba- • Omu-lūme ; aba-",
+          "pronunciation": "e-ri-no / o-lu-li-mi / o-ku-bo-ko / o-ku-gu-lu / o-mu-ka-ri / o-mu-lu-me",
+          "context": "8. Ki-šaši (Archdeacon H. W. Woodward 1920 Supplementary Vocabulary) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1922, Vol. II, p. 26)",
+          "audioFile": null
+        },
+        {
+          "english": "Cardinals 1–10 & 100 (#8 Ki-šaši & #8a Ki-rōri)",
+          "translation": "-mwe (1), -bili (2), -satu (3), -nne (4), -tanω (5), -tandatu / M-kaga (6), M-fuṅgate (7), M-nane (8), Kenda (9), I-kumi (10), I-gana (100)",
+          "pronunciation": "mwe / bi-li / sa-tu / nne / ta-no / m-ka-ga / m-fu-nga-te / m-na-ne / ke-nda / i-ku-mi / i-ga-na",
+          "context": "8. Ki-šaši & 8a. Ki-rōri — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, p. 94)",
           "audioFile": null
         }
       ]

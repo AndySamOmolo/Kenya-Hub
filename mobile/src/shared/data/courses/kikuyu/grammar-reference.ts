@@ -182,8 +182,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
         "explanation": "Wiktionary Bantu Swadesh & Barlow (1914)"
       }
     ]
-  }
-  ,
+  },
   {
     id: "kikuyu-hemery-1903-complete-handbook",
     title: "Rev. Fr. A. Hémery, C.S.Sp. (1903) English-Kikuyu Hand-Book: Exact 9 Noun Classes, Diminutives (ka-/to-) & Augmentatives (ke-), Qualifying (-ega), Cardinals (1–10,000), Pronouns, Kohora Paradigm, 5 Derived Verb Forms, Particles (pp. 13–14) & 5-Part Phrase-Book (pp. 77–87)",
@@ -216,8 +215,7 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
       { kikuyu: "Mundu oyo / olya / oshio (pl. Andu aya / alya / ashio) • Kendo geke / kelya / keo (pl. Indo ishi / ilya / ishio) • Ihiga rere / relya / reo (pl. Mahiga maya / malya / mashio)", english: "this / that (distant) / that (aforementioned) man, thing, and stone", explanation: "Hémery's (1903, p. 8) 3-way demonstrative system" },
       { kikuyu: "Ndalutara werale negokwata rupia • Waekatya? • Aderere! • Ne muhoro — Nde muhoro • Tiguo uhoro / tigwoni uhoro", english: "If I do work I shall get Rupees • What do you do? • Listen to me! • Good day — I am well • Good-bye (sg. / pl.)", explanation: "Enclitics -le and -tya, attention call, and salutations in Hémery (1903, pp. 13–14)" }
     ]
-  }
-  ,
+  },
   {
     id: "kikuyu-mcgregor-1904-complete-vocabulary",
     title: "Rev. A. W. McGregor (1904) English-Kikuyu Vocabulary (C.M.S. / SPCK, Fort Smith / Kabeti, 1901–1902): Preface, R.G.S. Orthography (Th for S/Z, Ng' vs. Ng'g), Plural Bracket Notation, Pronouns, Kinship, 7-Day Sequence, Seasons & Customary Law (pp. i–iv, 5–192)",
@@ -243,6 +241,80 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
       { kikuyu: "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) • Mwetereri (Etereri) • Gechunji (I-) → Ichunji", english: "to run/abscond vs. to banish/conquer & ball • Servant (Servants) • Portion (Portions)", explanation: "McGregor's (1904, pp. 5–6) exact Kabeti orthographic & plural bracket notation" },
       { kikuyu: "Iyo → Ira → Reu / Omothi → Rochio → Oke → Matukwatatu → Matukwana • Kathano & Mwaka wa kehu • Mwaka wa Njahi, Mweri, Mohea", english: "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 2 & 3 days after to-morrow • Greater & lesser rainy seasons • Lablab, bulrush-millet & sorghum crop seasons", explanation: "McGregor's (1904, pp. 44, 114, 142, 154, 170, 191–192) 7-day sequence and seasonal calendar" },
       { kikuyu: "Akuugatea? • Kotariatea? — Kwena matu / Kwena heho / Kwena rugari (Ohiyo) • Tuthie kwitu! • Ndainuka / Ndaimuka — Thie na uhoro! • Ngai angienda", english: "How does he speak? • What kind of weather? — Cloudy / Cold / Hot • Let us go along! • I am going — Go in peace! • Probably (D.V., if God wills)", explanation: "Conversational idioms and enclitics across McGregor (1904, pp. 14, 63, 76, 84, 138, 185)" }
+    ]
+  },
+  {
+    id: "kikuyu-hobley-1910-thahu-kamiri-cattle-brands",
+    title: "C. W. Hobley (1910) Part II Chapters II–IV: 87 A-Kikuyu Clan Cattle Brands (pp. 122–133), Ceremonial Uncleanness (Thahu, 7 Sacred Herbs, Ku'ringa-thengi & Kithathi, pp. 134–143) & Chief Medicine-Man Kamiri's Kutagura Ordeal (pp. 144–145)",
+    summary: "Complete line-by-line documentation of C. W. Hobley's 1910 Kikuyu chapters: all 87 sub-clan (mbari) cattle brands across 13 clans (Figs. I–CXI), the 15 causes of Thahu and 7 purification herbs, the Ku'ringa-thengi and Kithathi oaths, and Chief Medicine-Man Kamiri's Kutagura notched-twig trial.",
+    content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters II–IV, pp. 122–145):
+1. **Part II, Chapter II — The 87 A-Kikuyu Clan & Sub-Clan (*Mbari*) Cattle Brands and Ear-Marks (pp. 122–133, Figs. I–CXI)**:
+   - Hobley illustrates and catalogues **87 distinct Kikuyu cattle brands** across all **13 primary clans (*Mihiriga*)** alongside their ear-slit patterns:
+   - **(1) Anjiru** (Figs. I–XIV, 14 *mbari*: *Mbari ya Mbaricho, Kithuma, Mwichuki, Njau, Muli, Checuki, Ngwaci, Mukolwe, Kimani, Njeru, Mbugu, Kanyoria, Munene, Gachii*), **(2) Ambui** (Figs. XV–XXV, 11 *mbari*), **(3) Agachiku** (Figs. XXVI–XXXI, 6 *mbari*), **(4) Eithaga / Aithaga** (Figs. XXXII–XXXVII, 6 *mbari*), **(5) Aitherandu** (Figs. XXXVIII–XLVII, 10 *mbari*), **(6)angari / Aithekahuno** (Figs. XLVIII–LIV, 7 *mbari*), **(7) Achera** (Figs. LV–LXIII, 9 *mbari*), **(8) Agathigia** (Figs. LXIV–LXIX, 6 *mbari*), **(9)akiuru / Mwesaga** (Figs. LXX–LXXV, 6 *mbari*), **(10) Angoi** (Figs. LXXVI–LXXIX, 4 *mbari*), **(11) Aichakamuyu** (Figs. LXXX–LXXXIII, 4 *mbari*), **(12) Airimu** (Figs. LXXXIV–LXXXV, 2 *mbari*), and **(13) Aiziegeni** (Figs. LXXXVI–LXXXVII, 2 *mbari*).
+2. **Part II, Chapter III — Ceremonial Uncleanness Known as *Thahu*, 7 Sacred Herbs & Oaths (pp. 134–143)**:
+   - **15 Specific Causes of *Thahu* (pp. 134–139)**: Stepping over a corpse; touching a woman's menstrual blood; a hyena defecating inside the homestead courtyard; a woman breaking a cooking pot on the hearthstones (*mahiga*); abedstead breaking while sleeping on it; an eagle or kite dropping meat in a village; a dog dying in a hut; a woman bearing twins on a bed; circumcision blood falling on another candidate; eating with a smith or touching his bellows; and violating clan dietary taboos.
+   - **Purification by the *Mundu Mugo* & 7 Sacred Herbs (pp. 139–141)**: The *Mundu Mugo* purifies the patient (*ku-tahika thahu*) with sheep stomach-contents (**nduo / tatha**), white diatomite earth (**ira** from Mount Kenia), and a brush of **7 ceremonial plants**:
+     1. **Mukengeria** (*Commelyna sp.*, wandering jew — coolness and peace)
+     2. **Mugeri** (*Hibiscus / Solanum sp.* with hairy stems)
+     3. **Munyururu** (*Vernonia sp.*)
+     4. **Muhondu** (*Abutilon indicum*)
+     5. **Matura thongu** (*Emilia sp.*)
+     6. **Lujoi** (*Clerodendron sp.*)
+     7. **Mutongu** (*Solanum incanum*, common Sodom apple)
+   - **Solemn Oaths (*Ku'ringa-thengi*, *Muma* & *Kithathi*, pp. 141–143)**:
+     - **Ku'ringa-thengi** ("Beating the He-Goat"): Litigants strike and break the limbs of a live male goat with a stone while pronouncing a conditional self-curse (*"If I lie, may I be broken like this goat"*).
+     - **Kithathi** (borrowed from the Akamba *kithito*): A perforated clay or stone object (*githathi*) through whose seven apertures the swearer thrusts a grass stalk or twig while invoking destruction upon perjury.
+     - **Rudioi & Muthumba**: Protective charms prepared by the *Mundu Mugo* against witchcraft (*urogi*).
+3. **Part II, Chapter IV — Chief Medicine-Man Kamiri of Kiambu & the *Kutagura* Ordeal (pp. 144–145, Plates XXVI–XXVII)**:
+   - Documents **Kamiri**, paramount *Mundu Mugo* of southern Kikuyu (Kiambu), his gourd rattle (**Mbuthu** or **Mwanu**), divination skin bag (**Kichuthu**), iron-tipped arrow shaft (**Mwarisa**) for applying medicine to the tongue, and boys' initiation shoulder-shield (**Ndomi**).
+   - **The *Kutagura* Five-Twig Ordeal Table (p. 144)**: To detect a thief among five suspects from five clans, Kamiri cut five twigs from four sacred trees and marked each with notches before casting lots:
+     - **1st Twig**: **Mugaga** tree — marked with **One notch**.
+     - **2nd Twig**: **Muchatha** tree — marked with **Two notches**.
+     - **3rd Twig**: **Murumbawe** tree — marked with **Three notches**.
+     - **4th Twig**: **Muchatha** tree — marked with **Four notches**.
+     - **5th Twig**: **Mutongo** tree — marked with **Five notches**.`,
+    examples: [
+      { kikuyu: "Thahu • ku-tahika thahu • nduo (tatha) • ira • Mukengeria, Mugeri, Munyururu, Muhondu, Matura thongu, Lujoi, Mutongu", english: "Ceremonial defilement • to purify/vomit thahu • sheep stomach contents • white sacred earth • the 7 sacred purification herbs", explanation: "Hobley (1910, Part II, Ch. III, pp. 134–141)" },
+      { kikuyu: "Ku'ringa-thengi • Kithathi (Githathi) • Rudioi & Muthumba", english: "Beating the he-goat oath • perforated stone/clay oath-fetish • protective charms", explanation: "Kikuyu judicial oaths and charms in Hobley (1910, pp. 141–143)" },
+      { kikuyu: "Kutagura: Mugaga (1 notch), Muchatha (2 notches), Murumbawe (3 notches), Muchatha (4 notches), Mutongo (5 notches) • Mbuthu / Mwanu • Kichuthu • Mwarisa • Ndomi", english: "Kamiri's 5 notched divination twigs • divining gourd • skin pouch • arrow shaft • initiation arm-shield", explanation: "Hobley (1910, Part II, Ch. IV, pp. 144–145, Plates XXVI–XXVII)" }
+    ]
+  }
+  ,
+  {
+    id: "kikuyu-johnston-1919-1922-group-c-11",
+    title: "Sir Harry H. Johnston (1919–1922) Group C #11 Kikuyu & Mount Kenya Bantu: 10 Dialect Markers (K., N. Dhaicω, Nd., E., C., Mw., M. 11a, Emb., Þ., Ig.), 16-Class Prefix/Concord Table (p. 111), Numerals, Pronouns, Noteworthy Roots (Vol. II, pp. 28–30) & Bibliography (p. 788)",
+    summary: "Complete line-by-line documentation of Group C #11 Kikuyu and #11a Meru in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I, 1919, pp. 98–112, 788 & Vol. II, 1922, pp. 28–30, 226, 261, 377–441, 463–491, 499–534).",
+    content: `From Sir Harry H. Johnston, G.C.M.G., K.C.B., D.Sc. (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Oxford: Clarendon Press, Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261, 377–441, 463–491, 499–534):
+1. **Ten Mount Kenya & Highland Dialect Abbreviations in Column 11 (Vol. I, pp. 98, 111 & Vol. II, pp. 28–30)**:
+   - **K.** = Kikuyu proper (Kabete / Fort Hall / Nyeri)
+   - **N.** = North Kikuyu or *'Dhaicω'* (Thaichu)
+   - **Nd.** = Ndia (Kirinyaga)
+   - **E.** = Embu
+   - **C.** = Cuka (Chuka)
+   - **Mw.** = Mwimbe (Mwimbi)
+   - **M.** = Meru (**11a**, north and north-east of Mt. Kenya across the Nyambeni Hills)
+   - **Emb.** = Emberre (Mbeere)
+   - **Þ.** = Þeraka (Tharaka, Upper Tana valley)
+   - **Ig.** = Igωji (Igoji)
+   - **Phonological Hallmarks (Vol. II, pp. 28–29, 226)**: Slurring of proto-Bantu *p* into *h*, *γ*, *w*, or zero (*-hīa* 'burn', *-hītūka* 'return'); frequent substitution of dental fricative **þ** (*th*) and **đ** (*dh*) for *s*, *z*, *f*, *v*, and *t* (*N-þē* 'country', *Mū-þēnya* 'day', *Þakame* 'blood', *Ma-iþω* 'eyes', *Mū-þūri* 'husband/elder', *-þatū* 'three', *-þanω* 'five', *-þanþatū* 'six'); and occasional loss of nasal in Class 9 before *g* (*Guī* for *Ṅ-guī* 'dog', *Gūkū* for *Ṅ-gūkū* 'fowl', *Gurūwe* 'pig', *Gari* 'leopard').
+2. **Complete 16-Class Prefix & Concord Table for #11 Kikuyu & #11a Meru (Vol. I, p. 111 & Vol. II, p. 261)**:
+   - **Class 1**: **Mu-, Mū-** (*u-, mū-, a-, wa-*) • **Class 2**: **A-** (**Ba-** in Meru 11a; *a-, ma-* / *ba-* in 11a)
+   - **Class 3**: **Mu-, Mū-** (*mu-, u-, gu-*) • **Class 4**: **Mi-** (*mi-, i-, ī-*)
+   - **Class 5**: **I-, Ri-, Rī-** (*ri-, rī-*) • **Class 6**: **Ma-** (*ma-, ga-*)
+   - **Class 7**: **Ki-, Kī-, Gi-** (*ki-, gi-, c'-*) • **Class 8**: **I-, Ci-, C'-, Śi-** (**Bi-** in Meru 11a; *i-, ci-, śi-* / *bi-* in 11a)
+   - **Class 9**: **N- (Ny-, M-), Ø-** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-), Ø-, Tšū-** (*i-, zi-, c'-, tš'-*)
+   - **Class 11**: **Ru-, Rū-** (*ru-, rū-*)
+   - **Class 12**: **Tu-, Tū-** (plural of Class 13 *Ka-*; *tu-, tū-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)
+   - **Class 14**: **U-, Ū-, W-** (*u-, ū-, gu-*) • **Class 15**: **Ku-, Gu-** (*ku-, gu-*) • **Class 16**: **Ha-** (*ha-*; locative suffix **-ini**).
+3. **Noteworthy Roots & Dialect Comparisons in #11 Kikuyu & #11a Meru (Vol. I, pp. 98–110 & Vol. II, pp. 29–30)**:
+   - **Cosmology & Nature**: **Ṅ-gai** (*Ngai*, Masai loanword for God alongside **Mū-rūṅgu**), **Ri-ūa** (sun; **I-rūa** in 11a), **M-weri** (moon), **N-jata** (star), **M-būra** (rain), **Ma-ī** (**Rū-ī** in 11a, water), **M-waki / M-wanki** (fire), **I-higa ; ma-** (**I-bia** in Embu/Tharaka, stone), **Kī-rīma ; i-** (mountain), **Mū-tītū** (forest).
+   - **Kinship, Body & Animals**: **Baba, Þωgω ('Đωgω), Iþe** (my/thy/his father), **Maitω, Nyūkwa, Nyina** (my/thy/his mother), **Mū-rū wa nyina / Mū-rū wa maitω** (brother), **M-wari wa maitω** (sister), **Mū-þūri ; a-** (elder/husband), **Mū-ka / Mū-tūmia ; a-** (**Mū-gūrra** in 11a, woman/wife), **Mū-twe** (**Kī-oṅgω** in E./M., head), **Rī-iþω ; ma-iþω** (eye), **Kū-tū ; ma-tū** (ear), **I-gegω ; ma-** (tooth), **Rū-rīmī ; n-dīmī** (tongue), **Gu-ωkω ; m-ωkω** (arm), **Kū-gūrū ; ma-** (leg), **N-jωgū** (elephant), **M-bωgω** (buffalo), **Mū-rūþi / N-gatia** (lion), **N-gari** (leopard), **N-gūū / N-guō** (hippo), **Hiti** (**M-biti** in E./M., hyena), **N-jωka** (snake), **Kī-ūṅgūyū** (**N-þī** in 11a, fish).
+4. **Bibliography for #11 Kikuyu & #11a Meru (Vol. I, p. 788)**:
+   - Cites A. W. McGregor (*English-Kikuyu Vocabulary*, 1904; *Grammar of the Kikuyu Language*, 1905), Hildegarde Hinde (*Vocabularies of the Kamba and Kikuyu Languages*, 1904 — Kabete, Jogowini & Mathira dialects), Father A. Hémery (*English-Kikuyu Handbook*, 1902–1903), Père Bernhard (*Grammaire Kikuyu*, 1908), W. S. & K. Routledge (*With a Prehistoric People*, 1910), A. R. Barlow (*Tentative Studies in Kikuyu Grammar and Idiom*, 1914), and MS. vocabularies by C. W. Hobley (Kikuyu, Dhaicω, Embu, Cuka, Mwimbe) and E. B. Horne (Meru, Emberre, Þeraka, Igωji).`,
+    examples: [
+      { kikuyu: "K. (Kikuyu), N. (Dhaicω), Nd. (Ndia), E. (Embu), C. (Cuka), Mw. (Mwimbe), M. (11a Meru), Emb. (Emberre), Þ. (Þeraka), Ig. (Igωji)", english: "All 10 Mount Kenya & Highland dialect abbreviations in Johnston's Column 11", explanation: "Johnston (1919, Vol. I, pp. 98–112 & 1922, Vol. II, pp. 28–30)" },
+      { kikuyu: "N-þē (country), Mū-þēnya (day), Þakame (blood), Ma-iþω (eyes), Mū-þūri (husband/elder), -þatū (3), -þanω (5), -þanþatū (6)", english: "Characteristic Kikuyu dental fricative þ (th) correspondences", explanation: "Johnston (1922, Vol. II, pp. 28–30, 226)" },
+      { kikuyu: "Nie, We (Wee), We (Uyu), Iþui (Iþwe), Inyui (Inywe), Aω (Aria) • -akwa, -aku, -ake, -itu, -anyu, -aω", english: "Independent personal and possessive pronouns in #11 Kikuyu", explanation: "Johnston (1919, Vol. I, p. 108 & 1922, Vol. II, pp. 377–441)" }
     ]
   }
 ];

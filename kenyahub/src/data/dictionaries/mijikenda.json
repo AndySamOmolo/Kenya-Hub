@@ -12,8 +12,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
   "categories": [
     {
       "id": "greetings",
@@ -393,8 +393,8 @@
         },
         {
           "english": "Fifth",
-          "translation": "etc",
-          "pronunciation": "etc",
+          "translation": "-a tsano",
+          "pronunciation": "-a tsa-no",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -554,8 +554,8 @@
         },
         {
           "english": "Namely the one that",
-          "translation": "referring back to what has already been stated (with which the prefixes must agree), -ambaye kwamba",
-          "pronunciation": "referring back to what has already been stated",
+          "translation": "-ambaye kwamba (with class prefixes)",
+          "pronunciation": "ambaye kwamba",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -932,9 +932,8 @@
         },
         {
           "english": "Daughter",
-          "translation": "my d",
-          "pronunciation": "my d",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "mwanangu muche (muhoho muche)",
+          "pronunciation": "mwa-nangu mu-che",
           "audioFile": null
         },
         {
@@ -1016,9 +1015,8 @@
         },
         {
           "english": "Sister-in-law",
-          "translation": "brother-in-law, mulamu",
-          "pronunciation": "brother-in-law mu-la-mu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "mulamu (also wifi between women)",
+          "pronunciation": "mu-la-mu / wi-fi",
           "audioFile": null
         },
         {
@@ -2311,9 +2309,8 @@
       "entries": [
         {
           "english": "Ant",
-          "translation": "small flying a",
-          "pronunciation": "small flying a",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "nyarukuta (flying); tumbi (edible); minyo (red); visungusungu; mifumphu; nyam'koma; ts'alafu (driver/siafu); m'swa (white ant/termite); m'khonokhono",
+          "pronunciation": "nyarukuta / tumbi / minyo / ts'alafu / m'swa",
           "audioFile": null
         },
         {
@@ -2409,9 +2406,8 @@
         },
         {
           "english": "Crab",
-          "translation": "(land-c)",
-          "pronunciation": "land-c",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "k'ala (ya ts'i)",
+          "pronunciation": "k'a-la ya ts'i",
           "audioFile": null
         },
         {
@@ -2444,9 +2440,8 @@
         },
         {
           "english": "Tick",
-          "translation": "(to), ku-henda kata-kata",
-          "pronunciation": "to ku-henda kata-kata",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "kundee, ngata, ts'une (clock tick: ku-henda kata-kata)",
+          "pronunciation": "kundee / ngata / ts'une",
           "audioFile": null
         },
         {
@@ -2612,9 +2607,8 @@
         },
         {
           "english": "Antelope",
-          "translation": "There is no generic term",
-          "pronunciation": "the-re is no ge-ne-ric term",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "nyama (23 Giryama species: kulunga, mp'ala, p'ala, tohe, p'ongo, kungu, k'ulungu, ngolombe, m'kwalala, luharara, hii, sa, k'aza, t'ora, k'ongoni, buga, nyumbu, noha, m'buzi wa ts'aka, t'esi, suni, ndzizi, m'funo)",
+          "pronunciation": "ku-lunga / mp'a-la / p'a-la / to-he / p'ongo / suni",
           "audioFile": null
         },
         {
@@ -2710,9 +2704,8 @@
         },
         {
           "english": "Rhinoceros",
-          "translation": "wuu",
-          "pronunciation": "wuu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "p'era, m'nyamatsi",
+          "pronunciation": "p'e-ra / m'nya-matsi",
           "audioFile": null
         },
         {
@@ -3522,9 +3515,8 @@
         },
         {
           "english": "Heat",
-          "translation": "m'oho [see HOT]",
-          "pronunciation": "m'oho",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "m'oho, lufukufuku",
+          "pronunciation": "m'o-ho / lu-fu-ku-fu-ku",
           "audioFile": null
         },
         {
@@ -3536,9 +3528,8 @@
         },
         {
           "english": "Reed",
-          "translation": "bamboo, large cylinder of, muvungu",
-          "pronunciation": "bamboo large cylinder of mu-vungu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "t'ete (pl. mat'ete); muvungu (hollow bamboo cylinder)",
+          "pronunciation": "t'e-te / mu-vungu",
           "audioFile": null
         },
         {
@@ -3767,9 +3758,8 @@
         },
         {
           "english": "Well!",
-          "translation": "as interjection, Be!",
-          "pronunciation": "as interjection be",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "Be! (noun well/spring: kisima, t'ovoni)",
+          "pronunciation": "be / ki-si-ma",
           "audioFile": null
         },
         {
@@ -4012,9 +4002,8 @@
         },
         {
           "english": "Lightning",
-          "translation": "lumete [Errata]",
-          "pronunciation": "lumete",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "lumele (pl. mele), lukwasi [Errata p. xxviii]",
+          "pronunciation": "lu-me-le / lu-kwa-si",
           "audioFile": null
         },
         {
@@ -4964,9 +4953,8 @@
         },
         {
           "english": "Fat",
-          "translation": "adj",
-          "pronunciation": "adj",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "-nono (adj., e.g. ng'ombe m'nono); mafuha (noun: fat/oil)",
+          "pronunciation": "-no-no / ma-fu-ha",
           "audioFile": null
         },
         {
@@ -5832,9 +5820,8 @@
         },
         {
           "english": "Absorb water",
-          "translation": "(of a substance)",
-          "pronunciation": "of a substance",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "ku-lwama (ki-dza-lwama = it has absorbed water)",
+          "pronunciation": "ku-lwama",
           "audioFile": null
         },
         {
@@ -5881,9 +5868,8 @@
         },
         {
           "english": "Allay (thirst)",
-          "translation": "etc",
-          "pronunciation": "et",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "translation": "ku-hozha (k'iu / ndzala)",
+          "pronunciation": "ku-hozha",
           "audioFile": null
         },
         {
@@ -6427,9 +6413,8 @@
         },
         {
           "english": "Net",
-          "translation": "Kigono is a trap made of string",
-          "pronunciation": "ki-go-no is a trap ma-de of string",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "wavu (hunting net); kigono (cord trap); chavu (fishing net)",
+          "pronunciation": "wa-vu / ki-go-no / cha-vu",
           "audioFile": null
         },
         {
@@ -6539,9 +6524,8 @@
         },
         {
           "english": "Bowl",
-          "translation": "[see BASIN]",
-          "pronunciation": "see basin",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "bakuli; mbiga (earthenware basin); luveo / kiveo",
+          "pronunciation": "ba-ku-li / mbi-ga / lu-ve-o",
           "audioFile": null
         },
         {
@@ -6637,9 +6621,8 @@
         },
         {
           "english": "Apron",
-          "translation": "small a",
-          "pronunciation": "small a",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "kandzu ya k'anda (girl's small apron); rinda (woman's pleated kilt)",
+          "pronunciation": "kandzu ya k'anda / rinda",
           "audioFile": null
         },
         {
@@ -6777,9 +6760,8 @@
         },
         {
           "english": "Quiver",
-          "translation": "(a), dhyaka (ra a)to q",
-          "pronunciation": "dhya-ka to q",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "dhyaka (ra, pl. madhyaka); verb to quiver: ku-zakama",
+          "pronunciation": "dhya-ka / ku-zakama",
           "audioFile": null
         },
         {
@@ -6966,9 +6948,8 @@
         },
         {
           "english": "Brass (copper)",
-          "translation": "etc",
-          "pronunciation": "et",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "translation": "ng'andu",
+          "pronunciation": "ng'andu",
           "audioFile": null
         },
         {
@@ -6987,9 +6968,8 @@
         },
         {
           "english": "Bend (as a bow)",
-          "translation": "trans",
-          "pronunciation": "tran",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "translation": "ku-pinda (trans.); ku-pindamana (intrans.)",
+          "pronunciation": "ku-pinda / ku-pindamana",
           "audioFile": null
         },
         {
@@ -13910,9 +13890,8 @@
         },
         {
           "english": "Cool",
-          "translation": "to get c",
-          "pronunciation": "to get c",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "ku-hola (to get cool); ku-hozha (to cool)",
+          "pronunciation": "ku-hola / ku-hozha",
           "audioFile": null
         },
         {
@@ -14232,9 +14211,8 @@
         },
         {
           "english": "Dirty",
-          "translation": "a d",
-          "pronunciation": "a d",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "mut'u wa nongo (a dirty person); -a nongo",
+          "pronunciation": "mut'u wa nongo",
           "audioFile": null
         },
         {
@@ -14323,9 +14301,8 @@
         },
         {
           "english": "Narrow",
-          "translation": "(fine, e)",
-          "pronunciation": "fine e",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "-embamba (ngira nyembamba = a narrow way)",
+          "pronunciation": "-embamba",
           "audioFile": null
         },
         {
@@ -15548,9 +15525,8 @@
         },
         {
           "english": "Accede to (give way to)",
-          "translation": "indulge, q",
-          "pronunciation": "ind-ul-ge q",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "translation": "ku-m'-dera",
+          "pronunciation": "ku-m'-dera",
           "audioFile": null
         },
         {
@@ -15821,9 +15797,8 @@
         },
         {
           "english": "Dear",
-          "translation": "[see DARLING]",
-          "pronunciation": "see darling",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "-omu (expensive); m'hendzwa / m'senangu (darling)",
+          "pronunciation": "-omu / m'hendzwa",
           "audioFile": null
         },
         {
@@ -15912,9 +15887,8 @@
         },
         {
           "english": "Brass",
-          "translation": "(copper, etc)",
-          "pronunciation": "copper etc",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "ng'andu",
+          "pronunciation": "ng'andu",
           "audioFile": null
         },
         {
@@ -16031,9 +16005,8 @@
         },
         {
           "english": "Bargain",
-          "translation": "to finish a b",
-          "pronunciation": "to fi-nish a b",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "ku-gota (ku-gota marora = to finish a bargain)",
+          "pronunciation": "ku-gota ma-ro-ra",
           "audioFile": null
         },
         {
@@ -16549,9 +16522,8 @@
         },
         {
           "english": "Beware!",
-          "translation": "Dzilole! dzimanyirire! to b",
-          "pronunciation": "dzi-lo-le dzi-manyi-ri-re to b",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "Dzilole! Dzimanyirire! (to beware of: ku-dzi-manyirira)",
+          "pronunciation": "dzi-lo-le / dzi-manyirire",
           "audioFile": null
         },
         {
@@ -16584,9 +16556,8 @@
         },
         {
           "english": "Ear-ache",
-          "translation": "I have the e",
-          "pronunciation": "i ha-ve the e",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "ts'ikiro rinaniluma (I have the ear-ache)",
+          "pronunciation": "ts'ikiro ri-na-ni-luma",
           "audioFile": null
         },
         {
@@ -17053,9 +17024,8 @@
         },
         {
           "english": "Moment",
-          "translation": "on the spur of the m",
-          "pronunciation": "on the spur of the m",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
+          "translation": "haho kwa haho (on the spur of the moment)",
+          "pronunciation": "ha-ho kwa ha-ho",
           "audioFile": null
         },
         {
@@ -18124,9 +18094,8 @@
         },
         {
           "english": "He",
-          "translation": "THEY, THIS, etc",
-          "pronunciation": "they this et",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
+          "translation": "iye (3s pron.); subject prefixes a-, yu-",
+          "pronunciation": "i-ye / a- / yu-",
           "audioFile": null
         },
         {
@@ -19517,8 +19486,8 @@
         },
         {
           "english": "Nod",
-          "translation": "(to, to)",
-          "pronunciation": "to to",
+          "translation": "ku-m'-pungira kitswa (in sleep: ku-sinzira)",
+          "pronunciation": "ku-m'-pungira kitswa",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -19559,15 +19528,15 @@
         },
         {
           "english": "Own",
-          "translation": "my o",
-          "pronunciation": "my o",
+          "translation": "-angu mwenye, -akwe mwenye (to own/confess: ku-dz'-onyesa)",
+          "pronunciation": "-angu mwenye / -akwe mwenye",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Pad",
-          "translation": "of grass, cloth, etc",
-          "pronunciation": "of grass cloth etc",
+          "translation": "k'ata (head-pad of grass or cloth to ease a load)",
+          "pronunciation": "k'a-ta",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -19692,8 +19661,8 @@
         },
         {
           "english": "The",
-          "translation": "of a person, etc",
-          "pronunciation": "of a person etc",
+          "translation": "huyo (just mentioned); yuya (spoken of earlier)",
+          "pronunciation": "hu-yo / yu-ya",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -19706,8 +19675,8 @@
         },
         {
           "english": "Too",
-          "translation": "[see Very]",
-          "pronunciation": "see very",
+          "translation": "mno (exceedingly); naye / namo (also)",
+          "pronunciation": "mno / na-ye / na-mo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22296,8 +22265,8 @@
         },
         {
           "english": "Bore",
-          "translation": "to b",
-          "pronunciation": "to b",
+          "translation": "ku-pekecha (bore a hole)",
+          "pronunciation": "ku-pekecha",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22338,8 +22307,8 @@
         },
         {
           "english": "Busy",
-          "translation": "I am very b",
-          "pronunciation": "i am very b",
+          "translation": "ni-na kazi nyinji (I am very busy)",
+          "pronunciation": "ni-na ka-zi nyinji",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22527,8 +22496,8 @@
         },
         {
           "english": "Draw",
-          "translation": "[see DRAG]",
-          "pronunciation": "see drag",
+          "translation": "ku-vuha (drag/pull); ku-heka madzi (draw water)",
+          "pronunciation": "ku-vuha / ku-heka madzi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22646,8 +22615,8 @@
         },
         {
           "english": "Flit",
-          "translation": "from one house to another, see REMOVE",
-          "pronunciation": "from one hou-se to a-nother see re-mo-ve",
+          "translation": "ku-tsama (remove from one house to another)",
+          "pronunciation": "ku-tsama",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22786,15 +22755,15 @@
         },
         {
           "english": "Hook",
-          "translation": "fish-h",
-          "pronunciation": "fish-h",
+          "translation": "ndoana (fish-hook); ngowe (wooden hook)",
+          "pronunciation": "ndoa-na / ngo-we",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Hope",
-          "translation": "(for)",
-          "pronunciation": "for",
+          "translation": "ku-rinda, ku-rindiza (hope for)",
+          "pronunciation": "ku-rinda / ku-rindiza",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22905,15 +22874,15 @@
         },
         {
           "english": "Leak",
-          "translation": "as a house, etc",
-          "pronunciation": "as a hou-se etc",
+          "translation": "ku-vudza (as a house or vessel)",
+          "pronunciation": "ku-vudza",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Levy",
-          "translation": "taxes, black-mail, etc",
-          "pronunciation": "ta-xes black-mail etc",
+          "translation": "ku-tsanga ts'andzi (levy tribute/tax)",
+          "pronunciation": "ku-tsanga ts'andzi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -22954,8 +22923,8 @@
         },
         {
           "english": "Lump",
-          "translation": "of earth, see CLOD",
-          "pronunciation": "of earth see clod",
+          "translation": "t'orove, honje (clod); kimango (swelling)",
+          "pronunciation": "t'o-ro-ve / honje / ki-mango",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23038,8 +23007,8 @@
         },
         {
           "english": "Next",
-          "translation": "the n",
-          "pronunciation": "the n",
+          "translation": "-a hiri (the next); hehi na (next to)",
+          "pronunciation": "-a hi-ri / he-hi na",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23073,8 +23042,8 @@
         },
         {
           "english": "Oven",
-          "translation": "lwaya, lit",
-          "pronunciation": "lwa-ya lit",
+          "translation": "lwaya (potsherd used for baking)",
+          "pronunciation": "lwa-ya",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23129,8 +23098,8 @@
         },
         {
           "english": "Pipe",
-          "translation": "tobacco p",
-          "pronunciation": "to-bacco p",
+          "translation": "t'oza (tobacco water-pipe); kiko",
+          "pronunciation": "t'o-za / ki-ko",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23178,8 +23147,8 @@
         },
         {
           "english": "Quit",
-          "translation": "[see Abandon]",
-          "pronunciation": "see abandon",
+          "translation": "ku-richa (abandon); ku-uka (leave)",
+          "pronunciation": "ku-richa / ku-uka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23339,8 +23308,8 @@
         },
         {
           "english": "Skim",
-          "translation": "a pot, etc",
-          "pronunciation": "a pot etc",
+          "translation": "ku-engula (skim a pot)",
+          "pronunciation": "ku-engula",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23360,8 +23329,8 @@
         },
         {
           "english": "Soak",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-lweka (trans.); ku-lwama (intrans.)",
+          "pronunciation": "ku-lweka / ku-lwama",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23563,8 +23532,8 @@
         },
         {
           "english": "Vote",
-          "translation": "to put to the v",
-          "pronunciation": "to put to the v",
+          "translation": "ku-tsuha mburuga (cast lots)",
+          "pronunciation": "ku-tsuha mbu-ru-ga",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -23577,8 +23546,8 @@
         },
         {
           "english": "Wake",
-          "translation": "funeral feast, etc",
-          "pronunciation": "fu-ne-ral feast etc",
+          "translation": "matanga (funeral feast/wake); ku-lamuka (wake up)",
+          "pronunciation": "ma-tanga / ku-lamuka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -25894,8 +25863,8 @@
         },
         {
           "english": "Abate",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-hunguza (trans.); ku-hunguka (intrans.)",
+          "pronunciation": "ku-hunguza / ku-hunguka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -25915,8 +25884,8 @@
         },
         {
           "english": "About",
-          "translation": "prep",
-          "pronunciation": "prep",
+          "translation": "k'anda-k'anda za (around); hehi (nearly)",
+          "pronunciation": "k'anda-k'anda za / he-hi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26020,8 +25989,8 @@
         },
         {
           "english": "Alert",
-          "translation": "To be on the a",
-          "pronunciation": "to be on the a",
+          "translation": "ku-dzi-manyirira (to be on the alert)",
+          "pronunciation": "ku-dzi-manyirira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26041,15 +26010,15 @@
         },
         {
           "english": "Alive",
-          "translation": "adj",
-          "pronunciation": "adj",
+          "translation": "m'zima (adj.); yu m'oyo (he is alive)",
+          "pronunciation": "m'zi-ma / yu m'o-yo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Allay",
-          "translation": "(thirst, etc)",
-          "pronunciation": "thirst etc",
+          "translation": "ku-hozha (k'iu / ndzala)",
+          "pronunciation": "ku-hozha",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26069,8 +26038,8 @@
         },
         {
           "english": "Along",
-          "translation": "(to go)",
-          "pronunciation": "to go",
+          "translation": "ku-ukira (go along); hamwenga na (along with)",
+          "pronunciation": "ku-ukira / hamwenga na",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26342,8 +26311,8 @@
         },
         {
           "english": "Burst",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-bandula (trans.); ku-banduka (intrans.)",
+          "pronunciation": "ku-bandula / ku-banduka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26370,8 +26339,8 @@
         },
         {
           "english": "Charm",
-          "translation": "[see CAPTIVATE]",
-          "pronunciation": "see captivate",
+          "translation": "p'engu, kiraho (amulet/ordeal); ku-tawa m'oyo (captivate)",
+          "pronunciation": "p'engu / ki-ra-ho",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26405,8 +26374,8 @@
         },
         {
           "english": "Class",
-          "translation": "[see SORT]",
-          "pronunciation": "see sort",
+          "translation": "mbari (sort/kind)",
+          "pronunciation": "mba-ri",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26440,8 +26409,8 @@
         },
         {
           "english": "Copal",
-          "translation": "gum-c",
-          "pronunciation": "gum-c",
+          "translation": "m'ongolo (gum-copal); mutsumbwi (copal tree)",
+          "pronunciation": "m'ongo-lo / mutsumbwi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26461,8 +26430,8 @@
         },
         {
           "english": "Crack",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-aza (trans.); ku-atuka (intrans.); muatuko (a crack)",
+          "pronunciation": "ku-aza / ku-atuka / mua-tu-ko",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26496,8 +26465,8 @@
         },
         {
           "english": "Crest",
-          "translation": "a bird's c",
-          "pronunciation": "a bird's c",
+          "translation": "k'undzu (bird's crest)",
+          "pronunciation": "k'undzu",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26517,8 +26486,8 @@
         },
         {
           "english": "Crumb",
-          "translation": "a broken c",
-          "pronunciation": "a bro-ken c",
+          "translation": "katsere (broken crumb); p'ukup'uku",
+          "pronunciation": "katse-re / p'ukup'uku",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26552,8 +26521,8 @@
         },
         {
           "english": "Decoy",
-          "translation": "to d",
-          "pronunciation": "to d",
+          "translation": "ku-kenga-kenga (entice)",
+          "pronunciation": "ku-kenga-kenga",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26608,8 +26577,8 @@
         },
         {
           "english": "Enjoy",
-          "translation": "rejoice in",
-          "pronunciation": "re-joi-ce in",
+          "translation": "ku-fwahirwa ni (rejoice in)",
+          "pronunciation": "ku-fwahirwa ni",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26685,8 +26654,8 @@
         },
         {
           "english": "Faint",
-          "translation": "adj",
-          "pronunciation": "adj",
+          "translation": "ku-zirira (to faint); m'nyonge (faint/weak)",
+          "pronunciation": "ku-zirira / m'nyonge",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26748,8 +26717,8 @@
         },
         {
           "english": "Front",
-          "translation": "in f",
-          "pronunciation": "in f",
+          "translation": "mbere (in front); mbere za (in front of)",
+          "pronunciation": "mbe-re / mbe-re za",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26769,8 +26738,8 @@
         },
         {
           "english": "Giddy",
-          "translation": "I am g",
-          "pronunciation": "i am g",
+          "translation": "ni-na zungula (I am giddy)",
+          "pronunciation": "ni-na zungu-la",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26881,8 +26850,8 @@
         },
         {
           "english": "Joker",
-          "translation": "he is a j",
-          "pronunciation": "he is a j",
+          "translation": "yuna madhe (he is a joker)",
+          "pronunciation": "yu-na ma-dhe",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -26951,8 +26920,8 @@
         },
         {
           "english": "Moult",
-          "translation": "it is m",
-          "pronunciation": "it is m",
+          "translation": "ina-futsuka manyoga (it is moulting)",
+          "pronunciation": "ina-futsuka ma-nyo-ga",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27119,8 +27088,8 @@
         },
         {
           "english": "Quiet",
-          "translation": "(to be)",
-          "pronunciation": "to be",
+          "translation": "ku-nyamala (to be silent); ku-tira (be still)",
+          "pronunciation": "ku-nyamala / ku-tira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27364,8 +27333,8 @@
         },
         {
           "english": "Smell",
-          "translation": "to s",
-          "pronunciation": "to s",
+          "translation": "ku-nuk'a (intrans.); ku-nusiza (trans.)",
+          "pronunciation": "ku-nuk'a / ku-nusiza",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27427,8 +27396,8 @@
         },
         {
           "english": "Spawn",
-          "translation": "of frog, etc",
-          "pronunciation": "of frog etc",
+          "translation": "mayuyu (spawn of frogs, etc.)",
+          "pronunciation": "ma-yu-yu",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27707,8 +27676,8 @@
         },
         {
           "english": "Treat",
-          "translation": "to t",
-          "pronunciation": "to t",
+          "translation": "ku-m'-hendera (treat well/ill)",
+          "pronunciation": "ku-m'-hendera",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27735,22 +27704,22 @@
         },
         {
           "english": "Twang",
-          "translation": "to t",
-          "pronunciation": "to t",
+          "translation": "ku-rira (twang as a bowstring)",
+          "pronunciation": "ku-rira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Twine",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-hotoza (twist/twine); luzi (string)",
+          "pronunciation": "ku-hotoza / lu-zi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
         {
           "english": "Twirl",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-zungusha (trans.); ku-zunguluka (intrans.)",
+          "pronunciation": "ku-zungusha / ku-zunguluka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -27847,8 +27816,8 @@
         },
         {
           "english": "Would",
-          "translation": "past of will",
-          "pronunciation": "past of will",
+          "translation": "-ngari- / -ere- (conditional prefixes)",
+          "pronunciation": "-nga-ri- / -e-re-",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -29954,8 +29923,8 @@
         },
         {
           "english": "Across",
-          "translation": "to place across, e",
-          "pronunciation": "to pla-ce across e",
+          "translation": "ku-kingika (place across); ng'ambo (across river)",
+          "pronunciation": "ku-kingika / ng'ambo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -29989,8 +29958,8 @@
         },
         {
           "english": "Affect",
-          "translation": "(to)",
-          "pronunciation": "to",
+          "translation": "ku-dzi-hendya (affect/feign to be)",
+          "pronunciation": "ku-dzi-hendya",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30178,8 +30147,8 @@
         },
         {
           "english": "Baffle",
-          "translation": "as to b",
-          "pronunciation": "as to b",
+          "translation": "ku-m'-shinda (defeat/baffle)",
+          "pronunciation": "ku-m'-shinda",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30234,8 +30203,8 @@
         },
         {
           "english": "Bother",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-sirinya (trans.)",
+          "pronunciation": "ku-sirinya",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30304,8 +30273,8 @@
         },
         {
           "english": "Candle",
-          "translation": "[see TORCH]",
-          "pronunciation": "see torch",
+          "translation": "chenje (torch/light)",
+          "pronunciation": "chenje",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30409,8 +30378,8 @@
         },
         {
           "english": "Cobweb",
-          "translation": "spun-threads of c",
-          "pronunciation": "spun-threads of c",
+          "translation": "urimbo wa m'dudu (spider-web)",
+          "pronunciation": "u-rimbo wa m'du-du",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30451,8 +30420,8 @@
         },
         {
           "english": "Credit",
-          "translation": "[see BELIEVE]",
-          "pronunciation": "see believe",
+          "translation": "ku-kuluhira (believe/trust)",
+          "pronunciation": "ku-kuluhira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30479,8 +30448,8 @@
         },
         {
           "english": "Dazzle",
-          "translation": "to d",
-          "pronunciation": "to d",
+          "translation": "ku-mamasa mats'o (dazzle the eyes)",
+          "pronunciation": "ku-mamasa mats'o",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30507,8 +30476,8 @@
         },
         {
           "english": "Defeat",
-          "translation": "to d",
-          "pronunciation": "to d",
+          "translation": "ku-dhima, ku-shinda (to defeat)",
+          "pronunciation": "ku-dhima / ku-shinda",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30577,8 +30546,8 @@
         },
         {
           "english": "Drowsy",
-          "translation": "[see DOZE]",
-          "pronunciation": "see doze",
+          "translation": "ku-kunukira, ku-sinzira (doze)",
+          "pronunciation": "ku-kunukira / ku-sinzira",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30843,8 +30812,8 @@
         },
         {
           "english": "Harden",
-          "translation": "(to), trans",
-          "pronunciation": "to trans",
+          "translation": "ku-omya (trans.); ku-oma (intrans.)",
+          "pronunciation": "ku-omya / ku-oma",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30878,8 +30847,8 @@
         },
         {
           "english": "Infuse",
-          "translation": "infusion",
-          "pronunciation": "infu-sion",
+          "translation": "ku-lweka; vuwo (cold infusion)",
+          "pronunciation": "ku-lweka / vu-wo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30920,8 +30889,8 @@
         },
         {
           "english": "Invoke",
-          "translation": "[see CALL]",
-          "pronunciation": "see call",
+          "translation": "ku-iha, ku-omba (call upon)",
+          "pronunciation": "ku-iha / ku-omba",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -30934,8 +30903,8 @@
         },
         {
           "english": "Joyful",
-          "translation": "my heart is j",
-          "pronunciation": "my heart is j",
+          "translation": "m'oyo wangu u-dza-fwahirwa (my heart is joyful)",
+          "pronunciation": "m'o-yo wangu u-dza-fwahirwa",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31074,8 +31043,8 @@
         },
         {
           "english": "Morrow",
-          "translation": "to-m",
-          "pronunciation": "to-m",
+          "translation": "machero, madzacha (to-morrow)",
+          "pronunciation": "mache-ro / madza-cha",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31263,8 +31232,8 @@
         },
         {
           "english": "Revive",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-lamusa (trans.); ku-lamuka, ku-fufuka (intrans.)",
+          "pronunciation": "ku-lamusa / ku-lamuka / ku-fufuka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31284,8 +31253,8 @@
         },
         {
           "english": "Ruined",
-          "translation": "house, etc",
-          "pronunciation": "hou-se etc",
+          "translation": "mahame (ruined/deserted homestead)",
+          "pronunciation": "ma-ha-me",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31319,8 +31288,8 @@
         },
         {
           "english": "Scales",
-          "translation": "of fish, etc",
-          "pronunciation": "of fish etc",
+          "translation": "makaka (scales of fish, etc.)",
+          "pronunciation": "ma-ka-ka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31480,8 +31449,8 @@
         },
         {
           "english": "Splash",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-tsap'ukiza (trans.); ku-tsap'uka (intrans.)",
+          "pronunciation": "ku-tsap'ukiza / ku-tsap'uka",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31501,8 +31470,8 @@
         },
         {
           "english": "Spouse",
-          "translation": "masc",
-          "pronunciation": "masc",
+          "translation": "mulume (husband); muche (wife)",
+          "pronunciation": "mu-lu-me / mu-che",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31550,8 +31519,8 @@
         },
         {
           "english": "Stitch",
-          "translation": "with needle",
-          "pronunciation": "with needle",
+          "translation": "ku-fuma (sew with needle); kichozi (stitch in side)",
+          "pronunciation": "ku-fuma / ki-cho-zi",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31564,8 +31533,8 @@
         },
         {
           "english": "Sudden",
-          "translation": "to happen on a s",
-          "pronunciation": "to happen on a s",
+          "translation": "ku-dzukirwa (happen on a sudden); haho kwa haho",
+          "pronunciation": "ku-dzukirwa / ha-ho kwa ha-ho",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31767,8 +31736,8 @@
         },
         {
           "english": "Unpack",
-          "translation": "he had u",
-          "pronunciation": "he had u",
+          "translation": "wa-ri-a-dza-fungula mizigo (he had unpacked)",
+          "pronunciation": "wa-ri-a-dza-fungula mi-zi-go",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -31823,8 +31792,8 @@
         },
         {
           "english": "Vision",
-          "translation": "to have a v",
-          "pronunciation": "to ha-ve a v",
+          "translation": "ku-ona ndotoni (see in a dream/vision)",
+          "pronunciation": "ku-ona ndo-to-ni",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34434,8 +34403,8 @@
         },
         {
           "english": "Chamber",
-          "translation": "for keeping stores, etc",
-          "pronunciation": "for kee-ping sto-res etc",
+          "translation": "chumba (room/chamber); luts'aga (store-loft)",
+          "pronunciation": "chumba / luts'a-ga",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34469,8 +34438,8 @@
         },
         {
           "english": "Congeal",
-          "translation": "neut",
-          "pronunciation": "neut",
+          "translation": "ku-gandamana (intrans.)",
+          "pronunciation": "ku-gandamana",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34504,8 +34473,8 @@
         },
         {
           "english": "Contain",
-          "translation": "it c",
-          "pronunciation": "it c",
+          "translation": "i-na (it contains / has inside)",
+          "pronunciation": "i-na",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34539,8 +34508,8 @@
         },
         {
           "english": "Corrupt",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-ononga (trans.); ku-ola (rot/putrefy)",
+          "pronunciation": "ku-ononga / ku-ola",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34637,8 +34606,8 @@
         },
         {
           "english": "Delight",
-          "translation": "it is a man's d",
-          "pronunciation": "it is a man's d",
+          "translation": "ku-fwahirwa; zha-m'-fwaha (it delights him)",
+          "pronunciation": "ku-fwahirwa / zha-m'-fwaha",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -34819,8 +34788,8 @@
         },
         {
           "english": "Fasting",
-          "translation": "a f",
-          "pronunciation": "a f",
+          "translation": "kufunga (fasting); mut'u wa m'kaha (a fasting person)",
+          "pronunciation": "ku-funga / mut'u wa m'ka-ha",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -35141,8 +35110,8 @@
         },
         {
           "english": "Pasture",
-          "translation": "trans",
-          "pronunciation": "trans",
+          "translation": "ku-risa (trans., pasture cattle); weru (pasture-land)",
+          "pronunciation": "ku-risa / we-ru",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -35246,8 +35215,8 @@
         },
         {
           "english": "Quicken",
-          "translation": "(to)",
-          "pronunciation": "to",
+          "translation": "ku-lamusa, ku-fufusa (make alive)",
+          "pronunciation": "ku-lamusa / ku-fufusa",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -35281,8 +35250,8 @@
         },
         {
           "english": "Require",
-          "translation": "[see Ought ]",
-          "pronunciation": "see ought",
+          "translation": "ku-mala (want/need); ku-agirwa",
+          "pronunciation": "ku-mala / ku-agirwa",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -35617,8 +35586,8 @@
         },
         {
           "english": "Upright",
-          "translation": "he is u",
-          "pronunciation": "he is u",
+          "translation": "yudzagoloka (he is upright); ku-ima dede",
+          "pronunciation": "yu-dza-go-lo-ka / ku-ima de-de",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -38088,8 +38057,8 @@
         },
         {
           "english": "Parasite",
-          "translation": "m'túlama-andzie, parasitic plant with red flowers, also meton",
-          "pronunciation": "m'tulama-andzie parasitic plant with red flowers also meton",
+          "translation": "m'túlama-andzie (parasitic plant with red flowers; also meton. a human parasite)",
+          "pronunciation": "m'tu-la-ma-andzie",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -38235,7 +38204,7 @@
         },
         {
           "english": "Scowl at",
-          "translation": "ku-m'-lola kichongo-chongo [see One-eyed ]",
+          "translation": "ku-m'-lola kichongo-chongo",
           "pronunciation": "ku-m'-lola kichongo-chongo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
@@ -38305,8 +38274,8 @@
         },
         {
           "english": "Solution",
-          "translation": "a s",
-          "pronunciation": "a s",
+          "translation": "vuwo (a cold solution/infusion)",
+          "pronunciation": "vu-wo",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -38326,8 +38295,8 @@
         },
         {
           "english": "Split up",
-          "translation": "firewood, etc",
-          "pronunciation": "fi-re-wood etc",
+          "translation": "ku-tsandzula (split up firewood, etc.)",
+          "pronunciation": "ku-tsandzula",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -38795,8 +38764,8 @@
         },
         {
           "english": "Exercise",
-          "translation": "etc",
-          "pronunciation": "et",
+          "translation": "ku-tembeza mwiri (exercise the body)",
+          "pronunciation": "ku-tembeza mwi-ri",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -41651,8 +41620,8 @@
         },
         {
           "english": "Contradict",
-          "translation": "to c",
-          "pronunciation": "to c",
+          "translation": "ku-kanana, ku-pingana (to contradict one another)",
+          "pronunciation": "ku-kanana / ku-pingana",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -41770,8 +41739,8 @@
         },
         {
           "english": "Melancholy",
-          "translation": "[see SOLITARY]",
-          "pronunciation": "see solitary",
+          "translation": "ueche (loneliness/solitude); choga (gloom)",
+          "pronunciation": "ue-che / cho-ga",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -41854,8 +41823,8 @@
         },
         {
           "english": "Rheumatism",
-          "translation": "(for He has the r)",
-          "pronunciation": "for he has the r",
+          "translation": "nyama za mwiri zi-na-m'-luma (he has rheumatism / body pains)",
+          "pronunciation": "nyama za mwi-ri zi-na-m'-luma",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections",
           "audioFile": null
         },
@@ -45200,8 +45169,8 @@
         },
         {
           "english": "Hurry (one, to)",
-          "translation": "ku-mw-ambiriza (originally = to remind, or let one know, that he is being c)",
-          "pronunciation": "to ku mw amb-i-ri-za",
+          "translation": "ku-mw-ambiriza (originally = to remind, or let one know, that he is being waited for)",
+          "pronunciation": "ku-mw-ambiriza",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -45592,7 +45561,7 @@
         },
         {
           "english": "Must [see BREW]",
-          "translation": "uchi witsi",
+          "translation": "uchi witsi (unfermented palm-wine / must)",
           "pronunciation": "uch-i wits-i",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
@@ -48427,8 +48396,8 @@
         },
         {
           "english": "Ammunition (cartridges)",
-          "translation": "etc",
-          "pronunciation": "et",
+          "translation": "mafundi (loads/charges of gunpowder and shot)",
+          "pronunciation": "ma-fundi",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -50464,8 +50433,8 @@
         },
         {
           "english": "Credit [see BELIEVE]; in trading",
-          "translation": "to give a man c",
-          "pronunciation": "to gi-ve a man c",
+          "translation": "ku-mu-kopesa (to give a man credit); ku-kuluhira (believe)",
+          "pronunciation": "ku-mu-kopesa / ku-kuluhira",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -50940,8 +50909,8 @@
         },
         {
           "english": "Invoke [see CALL]; invoke the shades",
-          "translation": "etc",
-          "pronunciation": "et",
+          "translation": "ku-oma k'oma (invoke the shades); ku-iha (call)",
+          "pronunciation": "ku-oma k'o-ma / ku-iha",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -52207,8 +52176,8 @@
         },
         {
           "english": "Become (future, perfect, and habit tenses of -kala)",
-          "translation": "udzakala mui, he has become bad, he",
-          "pronunciation": "per-fec and ha-bit ten-ses of ka-la",
+          "translation": "u-dza-kala mui (he has become bad); ku-kala",
+          "pronunciation": "u-dza-ka-la mui / ku-kala",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (SPCK London, 1891 — Public Domain)",
           "audioFile": null
         },
@@ -55417,12 +55386,175 @@
           "pronunciation": "goon-dee",
           "context": "Krapf, Rebmann & Sparshott (1887, p. 115 s.v. Gundi)",
           "audioFile": null
+        },
+        {
+          "english": "Ear, Fire & Great Toe / Thumb (Three Errata on p. x for #16 Nika)",
+          "translation": "Sikirω (pl. Ma-sikirω) • M-ωhω • Dzala-gumba",
+          "pronunciation": "si-ki-ro / m-o-ho / dza-la gu-mba",
+          "context": "16. Nika (16a Giryama, 16b Duruma, 16c Digω) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & pp. 100, 105)",
+          "audioFile": null
+        }
+        ,
+        {
+          "english": "Krapf (1882) Twelve Wanika Agricultural Months in Two Six-Month Half-Years: Múaka wa Masika (Furi) & Múaka wa Kaskázi (Book p. 205 s.v. Máira)",
+          "translation": "Múaka wa Masika / Múaka wa Furi (Rainy/Winter Half-Year, Jan./Feb.–July): 1. M'iru, 2. Muya, 3. Mágŭno (harvesting corn, from ku gŭna), 4. M'bula (when tree fruits fail), 5. Kásu, 6. M'fúngo • Múaka wa Kaskázi (Dry/Summer Half-Year, Aug.–Jan.): 1. Kahu, 2. Muhanzo wa kahu, 3. K'elili, 4. K'allá, 5. K'ulá, 6. K'etzi",
+          "pronunciation": "m-i-ru / mu-ya / ma-gu-no / m-bu-la / ka-su / m-fu-ngo / ka-hu / mu-ha-nzo wa ka-hu / k-e-li-li / k-a-lla / k-u-la / k-e-tzi",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book p. 205 s.v. Máira)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Twelve Wanika (Mijikenda) Tribes, Population (50,000–60,000 at 400–1,600 ft) & Three Migration Origins: Chagga, Dana River & Bana Kitófu (Book pp. 239–240 s.v. Mníka)",
+          "translation": "Wanika / Mníka (pp. 239–240): 50,000–60,000 inhabitants across 12 tribes at 400–1,600 ft elevation between 3°–5° S • Three Historical Origins: (1) Rabbai tribe migrated from Rombo in Jagga (Kilimanjaro); (2) Kiriama (Giriama) and Dahálo migrated from the Dana (Tana) River; (3) Turuma (Duruma) descended from followers of the Portuguese commander Bana Kitófu after the Portuguese expulsion from Mombasa",
+          "pronunciation": "m-ni-ka / wa-ni-ka / ra-bbai / ki-ria-ma / tu-ru-ma / ba-na ki-to-fu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book pp. 239–240 s.v. Mníka)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Rabai Kaya Chronicle: Rombo in Chagga, Malando, Kamfuda, Chogni cha Muadarúko, Mutzi Muíru, Vokéra (9 Generations), Mutzi Múvia (Rabbai M'pia) & Tziwe ra Kizungu (Book pp. 268–269)",
+          "translation": "Mutzi Muíru ('Black Town' on Mount Reale, pp. 268–269): Founded by Rabai migrants from Rombo in Chagga after halting at Malando and Kamfuda and passing through the rock cavity Chogni cha Muadarúko; betrayed via its underground passage after a Kariaka (Ribe) hunter's wounded guinea-fowl flew inside and the Kiriama, Jogni (Chonyi), Kauma, Kambe, and Ribe allies attacked ('Hukutáne, huenende, hukafunse mutzi hio wa Aravai'); survivors dwelt 9 generations at Vokéra toward Duruma, then built Mutzi Múvia (Rabbai M'pia, 'New Village'), Gníro, Nchira, and Mitzi ya Ntzoáni, where elders prophesied Europeans would build at Tziwe ra kizungu",
+          "pronunciation": "mu-tzi mui-ru / cho-gni cha mua-da-ru-ko / vo-ke-ra / mu-tzi mu-via / tzi-we ra ki-zu-ngu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book pp. 268–269 s.v. Mutzi Muíru)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Verbatim Rabai Kizúmo / Salala Assembly Chant After the Fall of Mutzi Muíru (Book p. 269)",
+          "translation": "Muravai! kuna ndugu! Ho-o! Ndugúyo ni uha! Uhao ni nduguyo! Kuna ndúgu Muana 'Damu! ('O Rabai man! Thou hast no brother! Ho-o! Thy bow is thy brother! That bow of thine is thy brother! There is no brother among the children of Adam!')",
+          "pronunciation": "mu-ra-vai ku-na ndu-gu ho-o / ndu-gu-yo ni u-ha / ku-na ndu-gu mua-na da-mu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book p. 269 s.v. Mutzi Muíru)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Wanika Republican Constitution: Wazé (Elders), Kambe (Middle Council) & Hirimu (Youth Age-Set) (Book p. 246 s.v. Msē)",
+          "translation": "Wazé (sing. Msē, ruling elders) • Kambe (middle-aged councilmen) • Hirimu (young men's age-set): Republican balance of power among the Wanika where the Wazé cannot enact laws or imposts without the concurrence of the Kambe and Hirimu",
+          "pronunciation": "m-se / wa-ze / ka-mbe / hi-ri-mu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book p. 246 s.v. Msē)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Sacred Muánsa Friction-Drum of the Kaya Elders (Book p. 261) & Ancestral Kóma Coconut-Shell Offerings (Book p. 239)",
+          "translation": "Muánsa (p. 261: sacred hollowed-log friction-drum covered with hide and sounded by rubbing a wet cord inside the kaya forest to summon elders and enforce laws) • Kóma & Kifúfu cha tembo (p. 239 s.v. Mnázi: ancestral shade propitiated by setting a coconut shell filled with palm-wine upon the grave)",
+          "pronunciation": "mua-nsa / ko-ma / ki-fu-fu cha te-mbo",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book pp. 239, 261)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Five Judicial Ordeals (Kíapo / Kirávo) Shared Across the Coast and Wanika Interior (Book p. 136 s.v. Kíapo)",
+          "translation": "1. Kíapo cha mchele (chewing dry consecrated rice) • 2. Kíapo cha chuma cha moto (applying red-hot iron to tongue or palm) • 3. Kíapo cha sindáno ya moto (piercing lips or ear with red-hot needle) • 4. Kíapo cha maji ya moto (plucking a stone out of boiling water) • 5. Kíapo cha mbáfu (drinking the poisonous ordeal draught)",
+          "pronunciation": "kia-po cha m-che-le / chu-ma cha mo-to / si-nda-no ya mo-to / ma-ji ya mo-to / m-ba-fu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book p. 136 s.v. Kíapo)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Kinika Water-Well Turn (Mrindíro wa maji, p. 237), Three-Part Doum-Palm Leaf (N'símba, Tángŭle, Gnóngo, p. 285) & Island Name of Mombasa (Kiziwáni, p. 240)",
+          "translation": "mrindíro wa maji (Kin. = Kimv. mlimbíko wa maji, waiting one's turn at the wells while water oozes drop by drop in the dry season, p. 237) • Kiziwáni (Kinika name for Mombasa, 'On the Island', p. 240) • n'símba, tángŭle, gnóngo (3 parts of the mūā wa mkoma doum-palm leaf blade used for weaving bags and mats, p. 285)",
+          "pronunciation": "m-ri-ndi-ro wa ma-ji / ki-zi-wa-ni / n-si-mba / ta-ngu-le / gno-ngo",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book pp. 237, 240, 285)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) 1857 Three-Division Maasai Attack on the Wanika (s.v. Tápo, p. 361), Msegéju Dana River Origin (p. 246) & Sosobráni Dahálo Settlement (p. 345)",
+          "translation": "Tápo (p. 361: war-division/detachment; in 1857 the Maasai attacked the Wanika in 3 matápo divisions) • Msegéju / Wasegéju (p. 246: coastal tribe near Tanga/Vanga originally from the Dana [Tana] River) • Sosobráni (p. 345: settlement of the Dahálo hunter-gatherers on Uúmbo bay north of Takaúngu)",
+          "pronunciation": "ta-po / ma-ta-po / m-se-ge-ju / so-so-bra-ni / da-ha-lo",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book pp. 246, 345, 361)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf (1882) Kinika / Kirabai / Kidigo /Kijangamwe / Kilindini / Kijomvu Dialect Abbreviations & Lexical Cross-References (Book p. xl)",
+          "translation": "Kin. / Kinik. (Kinika) • Kir. (Kirabai) • Kid. (Kidigo) • Kijan. (Kijangamwe / Changamwe) • Kilind. (Kilindini) • Kijom. (Kijomvu) • R. / Reb. (Rev. John Rebmann at Rabbai Mpia) • E. / Erh. (Rev. J. Erhardt, arrived June 15, 1849) • Sp. (Rev. T. H. Sparshott)",
+          "pronunciation": "ki-ni-ka / ki-ra-bai / ki-di-go / ki-ja-nga-mwe / ki-li-ndi-ni / ki-jo-m-vu",
+          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, Book p. xl)",
+          "audioFile": null
+        }
+,
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Preface by Robert Cust (May 14, 1887, p. iii), Sparshott's Introduction (May 1887, pp. v–vi), 25-Letter Alphabet & 8 Dialect Abbreviations (p. vii)",
+          "translation": "Robert Cust's Preface (p. iii: Modern Languages of Africa p. 355 [1883], Oct. 1886 Kornthal search for Rebmann's lost fair copy, Salisbury Square rough copy edited by Rev. T. H. Sparshott) • Sparshott's Introduction (pp. v–vi: 1844 Wa-Nika Mission founding by Krapf, Rebmann's 29 years among ~12 tribes, softening of Arabic gutturals ع → Ø, غ → g, خ → h as Habari/Roho, ق → k as Karafu, penultimate stress Ra-ba-i, consonant interchanges b/p, d/t, f/v, s/z, two th sounds & two t sounds including dental t in Kisulutini) • 25 Letters (A, B, Ch, D, Dz, E, F, G, H, I, J, K, L, M, N, O, P, R, S, T, U, V, W, Y, Z) & 8 Abbreviations (K. = Krapf, Kid. = Kidigo, Kig. = Kigiriama, Kij. = Kijomba, Kik. = Kikamba, Kim. = Kimvita, Kins. = Kiniasa, Kir. = Kiravai, p. vii)",
+          "pronunciation": "ra-ba-i / ki-ra-vai / ki-di-go / ki-gi-ria-ma / ki-jo-mba / ki-ka-mba / ki-mvi-ta / ki-nia-sa",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. [i]–vii / PDF pp. 1–13)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Vowel Harmony under Letter E (p. 70), Suffix -ma (pp. 24, 52, 229) & Older vs. Younger Continuative Copula Chari/Chere/Kari/Kere (p. 22)",
+          "translation": "Vowel Harmony (p. 70 s.v. E): Root vowels e, o take -eka, -era, -eza (ku ona → ku oneka, ku onera, ku oneza; ku henda → ku hendeka, ku hendera, ku hendeza), while root vowels a, i, u take -ika, -ira, -iza (ku funga → ku fungika, ku fungira, ku fungiza), with euphonic r/l interchange • Verbal Suffix -ma ('within / limiting / adhering closely', s.v. Chama p. 24, Duma p. 52, Ma p. 229) • Continuative Copula (p. 22 s.v. Chari): Older speakers say Nichari, Uchari, Yuchari (Kari), Huchari, Muchari, Achari (= Kij. Kali), while younger speakers say Nichere, Uchere, Yuchere (Kere), Huchere, Muchere, Achere (= Kij. Kele, 'still am / is')",
+          "pronunciation": "o-ne-ka o-ne-ra o-ne-za / fu-ngi-ka fu-ngi-ra fu-ngi-za / ni-cha-ri ni-che-re / yu-cha-ri yu-che-re",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 22, 24, 52, 70, 229)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Complete Irregular Conjugation & Two Syntax Rules of Ku enda ('To Go', Book pp. 72–73)",
+          "translation": "Present Indicative: Nin'enda, Un'enda, Yun'enda, Hun'enda, Mun'enda, An'enda (shortened to N'enda, W'enda, 'Enda, Hu'enda, Mu'enda, 'Enda) • Optative/Subjunctive: N'ende, Wende, 'Ende, H'ende, M'ende, 'Ende • Conditional/Participle: Nik'enda ('if/when I go') • Past: Nidzikuenda ('I have gone') • Future: Ntakuenda ('I shall go') • Rule 1 (p. 73): Infinitive ku is omitted after ku enda (N'enda rima for N'enda ku rima) • Rule 2 (p. 73): Subjunctive with ka-...-e follows imperative/narrative enda (Enda ukarime!)",
+          "pronunciation": "ni-n-e-nda / n-e-nda w-e-nda e-nda hu-e-nda mu-e-nda / n-e-nde we-nde / ni-dzi-kue-nda / nta-kue-nda",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 72–73 s.v. Enda)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Six Verbs for 'To Answer' (p. 126), Seven Verbs for 'To Harvest' (p. 93), Four Verbs for 'To Pound Grain' (pp. 127, 384) & 12-Class Na- Table (p. 297)",
+          "translation": "6 Verbs for 'To Answer' (p. 126 s.v. Hongoza): 3 Negative-Only — 1. Ku hongoza (kahongoza), 2. Ku runga (karungire), 3. Ku shudia (kashudi) vs. 3 Affirmative & Negative — 4. Ku lungukiza (reply in speech), 5. Ku udzikiza (answer a call/greeting), 6. Ku udzira (answer a question) • 7 Harvesting Verbs (p. 93 s.v. Funa): 1. ku funa (reap sorghum/maize stalks), 2. ku guha (break off maize cobs), 3. ku tola (pick pulse pods), 4. ku poa (beat out pods with a stick), 5. ku hunda (pluck tree fruit), 6. ku kwachula (strip clusters/leaves), 7. ku kopa (cut palm fronds/banana bunches) • 4 Pounding Verbs (pp. 127, 384): 1. ku bonda (mash soft food), 2. ku vonda (first husking pound), 3. ku huaga (second cleaning pound), 4. ku pura (final flour pound) • 12-Class Na- Pronouns (p. 297 s.v. Na): (1) Na-ga/Na-go, (2) Na-i/Na-yo, (3) Na-ki/Na-cho, (4) Na-lu/Na-lo, (5) Na-ri/Na-ro, (6) Na-si/Na-zo, (7) Na-u/Na-o, (8) Na-vi/Na-vio, (9) Na-va/Na-vo, (10) Na-ku/Na-ko, (11) Na-ka/Na-ko, (12) Na-mu/Na-mo",
+          "pronunciation": "ku ho-ngo-za / ku lu-ngu-ki-za / ku fu-na / ku gu-ha / ku vo-nda / ku hua-ga / na-ga na-go / na-ki na-cho",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 93, 126–127, 297, 384)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Teknonymy (Abe- & Ame-/Mayo-), Kinship Terminology & Mourning Customs (Book pp. 1–2, 6, 9, 39, 57, 186, 245, 249, 262, 268, 276, 279, 282, 323, 387–389)",
+          "translation": "Teknonymy (pp. 1–2, 6, 245): Abe- ('Father of —', e.g. Abe-Gunja, Abe-Chindua Muambawa, Abe-Mkusi Dzama; pl. Abe-yehu/yenu/yao or Abe-zehu/zenu/zao) & Ame- / Mayo- ('Mother of —') • Kinship: Mayo mufiere (mother's elder sister / father's elder brother's wife) vs. Mayo muhoho (mother's younger sister, pp. 57, 245); Dzangasimi (father's sister, p. 57); Avu (mother's brother, p. 9); Muhua (pl. Ahua, sister's child, p. 276); Mukoi (pl. Akoi, child of avu, p. 279); Muanababa (paternal half-sibling) vs. Muanachane (full sibling, p. 262); Mudzedza (husband's parents-in-law, p. 268) vs. Abefiala / Ameviala (wife's parents-in-law, pp. 1–2, 268); Mbumaniumba (wife's brother, p. 249); Mulamu (brother/sister-in-law, p. 282) & Wivi/Wifi (husband's sister, p. 388); Dzawe (grandfather, p. 39) & Wawe (grandmother, p. 387, ku dililiana joking bond) • Mourning: Yabayowe! (men's cry) vs. Mayowe! (women's cry, pp. 388–389), ku piga pindui (grave somersaults, p. 323) & kivunga (mourning hair, p. 186)",
+          "pronunciation": "a-be gu-nja / a-me-via-la / dza-nga-si-mi / a-vu / mu-hu-a / mu-ko-i / mu-dze-dza / ya-ba-yo-we / ma-yo-we",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 1–2, 6, 9, 39, 57, 186, 245, 249, 262, 268, 276, 279, 282, 323, 387–389)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) 13-Stage Dzua Solar Clock (p. 66), 4 Evening Twilight Stages (p. 175), 6 Night Watches (p. 176) & 4-Day Mijikenda Week (p. 134)",
+          "translation": "13-Stage Solar Clock (p. 66 s.v. Dzua): 1. Dzua ridziupuka / ridziombola (6 a.m.), 2. ridzidana nadzi (7 a.m.), 3. murauko wa gnombe mudzanga (8 a.m.), 4. murauko wa gnombe wegnie (8:30–9 a.m.), 5. murauko wa gnombe mubomu (9:30–10 a.m.), 6. ridzikuega (11 a.m.), 7. ridzifika vidzoani / ri-dididi na vidzoa (12 noon), 8. ridziogoka (1 p.m.), 9. ridziinamia mbirani (2–3 p.m.), 10. ridzifika shingoni mua mihi (3:30 p.m.), 11. lua mudzana lua ku vola (4 p.m.), 12. ridziva matso ga m'oho (5 p.m.), 13. ridzibodoka / ridzedzua (6 p.m.) • 4 Twilight Stages (p. 175 s.v. Kim'irim'iri): 1. Urere wa kuku, 2. Kim'irim'iri cha kuku, 3. Kim'irim'iri cha mutu, 4. Kiza cha niku • 4-Day Week (p. 134 s.v. Isa): 1. Dziku ya ku ramuka, 2. Dziku ya ku rima viri, 3. Dziku ya ku isa, 4. Juma",
+          "pronunciation": "dzu-a ri-dzi-u-pu-ka / ri-dzi-fi-ka vi-dzo-a-ni / ki-mi-ri-mi-ri / dzi-ku ya ku ra-mu-ka / dzi-ku ya ku i-sa / ju-ma",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 66, 134, 175–176)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) 9 Kibaria Calabash Sizes (pp. 151–152), 8 Dangadza Palm-Tapping Steps (p. 35) & 7 Pungapunga Coconut Stages (p. 325)",
+          "translation": "9 Graded Calabash Sizes from Smallest to Largest (pp. 151–152 s.v. Kibaria): 1. Kibaria (tapping gourd hung on the spadix), 2. Kirea (receiving gourd carried by the tapper), 3. Tumbi, 4. Ndzoma, 5. Ndundu, 6. Kipazi, 7. Muvunda, 8. M'ololo, 9. Dunda (largest storage gourd) • 8 Palm-Tapping Steps (p. 35 s.v. Dangadza): 1. Nafunga vanda (tie ladder notches), 2. Nadangadza muanso (strip/bind the spadix), 3. Naika ludzaga, 4. Naungula muanso, 5. Nakueza vibaria (hang tapping gourds), 6. N'enda nikageme (go to tap), 7. N'enda nikaulie (pour out palm wine), 8. N'enda nikatsirire • 7 Coconut Stages (p. 325 s.v. Pungapunga): 1. Pungapunga, 2. Kidagna, 3. Kidale, 4. Dafu, 5. Koloma, 6. Nazi, 7. Muvala (plus Hombo scraped pulp p. 126 & Mariapamba oily residue p. 243)",
+          "pronunciation": "ki-ba-ri-a / ki-re-a / tu-mbi / ndzo-ma / ndu-ndu / ki-pa-zi / mu-vu-nda / m-o-lo-lo / du-nda / pu-nga-pu-nga",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 35, 126, 151–152, 243, 325)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) 7 Isu Banana Varieties (p. 134), 4 Chulua Frog Species (p. 30), 3 Nche Arthropods (p. 299) & 3 Pembe Ivory Tusk Classes (p. 321)",
+          "translation": "7 Banana Varieties (p. 134 s.v. Isu / Izu): 1. Isu ra kisukari, 2. Isu ra kikono cha nzovu ('elephant-trunk plantain'), 3. Isu ra kipukusa, 4. Isu ra kigoma, 5. Isu ra paka, 6. Isu ra tivo, 7. Isu ra mbuiga • 4 Frog Species (p. 30 s.v. Chulua): 1. Chulua (common frog), 2. Dori, 3. Gula, 4. Ntovi (tree-frog) • 3 Nche Arthropods (p. 299 s.v. Nche): 1. Nche ya madzi (freshwater crab/crayfish), 2. Nche ya luvumbi (scorpion), 3. Nche ya lutsanga (sand-crab) • 3 Commercial Classes of Elephant Ivory (p. 321 s.v. Pembe): 1. Bori (small scrivelloes), 2. Ndzao (medium tusks), 3. Mugoma (largest bull tusks)",
+          "pronunciation": "i-su ra ki-su-ka-ri / ki-ko-no cha nzo-vu / chu-lu-a / do-ri / gu-la / nto-vi / nche ya lu-vu-mbi / bo-ri / ndza-o / mu-go-ma",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 30, 134, 299, 321)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) 8 Koko Infant Development Stages (p. 188), Two 7-Day Mufungahe Seclusions (pp. 244, 273) & 5 Chala Finger Names with Ku funsa chala (pp. 20–21, 94–95)",
+          "translation": "8 Stages of Infant Development (p. 188 s.v. Koko): 1. Muhoho yunasagala (sits), 2. yunahambala (crawls), 3. yunaima koko (stands alone to the cry 'koko!'), 4. yunasukula (totters suku-suku), 5. yunagninika, 6. yunapiga malo (runs), 7. yuna luhala, 8. yudzangala • Two 7-Day Mufungahe Seclusions (pp. 244, 273 s.v. Mau & Mufungahe): 7-day confinement after childbirth (ending when the infant is brought out shaved on the 7th day) and 7-day seclusion in circumcision/Ugnaro • 5 Finger Names (pp. 20–21 s.v. Chala): 1. Chala cha dzalagumba (thumb), 2. Chala cha muoloho (forefinger), 3. Chala kibomu (middle finger), 4. Chala kisicho dzina (ring finger), 5. Chala cha kanda (little finger); kufua na chala (p. 21) & ku funsa chala (pp. 94–95, bending a finger to forgive twice before fighting on the 3rd offence)",
+          "pronunciation": "yu-na-i-ma ko-ko / mu-fu-nga-he / cha-la cha dza-la-gu-mba / cha-la cha muo-lo-ho / cha-la ki-si-cho dzi-na / ku fu-nsa cha-la",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 20–21, 94–95, 188, 244, 273)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Kaya Triad (p. 149), Age-Orders (Ugnaro, Gundi, Kambi, Mumondo, Govu), M'oro Assembly Formulas (pp. 259–260, 347), Kore Blood-Money (pp. 192, 339) & 6 Kiravo Ordeals (pp. 169, 178)",
+          "translation": "Kaya Triad (p. 149 s.v. Kaya & p. 259 s.v. M'oro): 1. mumfiria (fortified narrow gateway), 2. m'oro (central assembly green), 3. rungu (sacred elders' lodge) • Age-Orders: Gniere (uninitiated youth, p. 105), Ugnaro (men's initiation, p. 365) & Gundi (women's order, p. 111), Kambi (ruling council, p. 144) with Mfaya & Niambura, Mumondo (senior order, p. 286), Ku thura (highest investiture, p. 356) conferring Govu rank (p. 115) and the lumfo ivory/wooden armlet • Assembly Formulas (pp. 259–260, 347): Similani kambi! — Hai! (opening) & Kula Abegnania! — Hosi nahu kule! (closing) • Kore Blood-Money (pp. 192, 339): 2 anafiale (a youth and a girl to replace the victim's kifurifuri shadow) for intentional murder vs. 1 kore for accidental homicide (kua zani) • 6 Kiravo Ordeals (p. 178): 1. mukate (kikahe p. 169), 2. luembe, 3. luiga, 4. chuma, 5. lukuni, 6. mvuga, plus Ku piga niungu pot-smashing oath",
+          "pronunciation": "mu-mfi-ri-a / m-o-ro / ru-ngu / u-gna-ro / gu-ndi / go-vu / si-mi-la-ni ka-mbi / ko-re / ki-fu-ri-fu-ri / ki-ra-vo",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 105, 111, 115, 144, 149, 169, 178, 192, 259–260, 286, 339, 347, 356, 365)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Five Verbatim Prayers to Mulungu (Book p. 284) & Three Verbatim Fables: Pingi/Kuku/Ninga (p. 323), Nundu the Bat (p. 314) & Mignio Ants vs. Ludzoa (p. 256)",
+          "translation": "5 Verbatim Prayers to Mulungu (p. 284 s.v. Mulungu): (1) Omnipresence: 'Kula uendako Mulungu yu vavo' • (2) For the Sick: 'We Mulungu, muinulire mukongo wehu, apate ku lola dzua!' • (3) Spitting on the Hoe Before Planting: 'Mulungu ahuikire mburuga nadzo, mbeu zehu zisangamike!' • (4) Caravan Departure: 'Hukuenenda uriani, Mulungu ahuikire mburuga nadzo!' • (5) For Rain: 'We Mulungu, hupigeazi, hufuirie mvula!' • 3 Fables: (1) Pingi na kuku na ninga zali ndugu mmenga (p. 323: Kuku stayed in the village while Ninga fled to the forest for freedom) • (2) Nundu (p. 314: the bat showed wings to birds and teeth to beasts and was cast out by both) • (3) Mignio vs. Ludzoa (p. 256: black warrior ants marching in battle formation against white termites)",
+          "pronunciation": "we mu-lu-ngu / mu-i-nu-li-re mu-ko-ngo we-hu / mbu-ru-ga na-dzo / pi-ngi na ku-ku na ni-nga / nu-ndu / mi-gnio",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 256, 284, 314, 323)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Complete Corpus of 56 Verbatim Kinika Proverbs (Prov.) Across Book pp. 8–381",
+          "translation": "All 56 Verbatim Proverbs (pp. 8–381): Angue nduguye ni ulongo (p. 8) • Bandu na bandu ya mala gogo (p. 10) • Batubatu rinamala gogo (p. 12) • Diekudieku rinamala pinda (p. 40) • Nchira mpiri ka zi duika, saremesa fisi (p. 47) • Nzala ya rero ka-i-usa ngombe (p. 48) • Mudzomba akakudzagira gnania, nawe mudzagire muviru (p. 51) • Dzahasi ni menga, ela kula mutu yuna kidumbache mumo (p. 54) • Madzi gaki muagika, ka-ga-dzoreka (p. 63) • Muhi ukibua u-ekemera muyawe (p. 71) • Muifi kaeleliua, sudi mu guire na kisuche (pp. 71, 182) • N'endaye kua akue kahewa madzi ga nyara (p. 73) • Fisi rikiria mukongo, nawe muzima sindika niumba to (p. 82) • Muana akignierera kiga, ka-ki-katua (p. 104) • Mubia k'agomba, agombaye ni muvurana (p. 108) • Gnombe rikiinikua kua magu, karikosa ku ona (p. 129) • K'ana ulume wa kuao, ulume ni kuvika (p. 139) • Kazi mpiri salemesa fisi (p. 150) • Kitu cha muyao ni kikanda cha m'oyo (p. 169) • Kilagane ni kilagane, Dzimba kamala mbala (p. 171) • Kironda cha kudzidunga k'akina malio (pp. 179, 238) • Kuku rikilala nde, rina tsui (p. 198) • Muana wa kuku k'afundisua ku para (p. 198) • Kunena kuingi si luhala (p. 213) • Lukolo luo lu-fere, k'alufere (p. 214) • Lukuni lumenga kaluaka m'oho (p. 215) • Lulimi kaluna fupa (p. 216) • Muana mdzanga k'anena utu urio ndani (p. 246) • Maneno madzo galafia mbulu pangoni (p. 249) • M'oro mudzo ka-u-lavia dzua (p. 259) • Mugeni ni kuku muerupe (p. 274) • Mulomo umenga ka-u-ena kambi (p. 282) • K'akuna muaka usio m'ari (p. 283) • Ukiona nyama ya m'ondo ika lukuni; yakua ina nguma (p. 308) • Udugu ka-u-okua ukadzuka (p. 364) • Muenga k'afuraha kua m'oyo (p. 377) • Muvumbi wa mvula ni muvumbi wa m'ozi (p. 381)",
+          "pronunciation": "a-ngue ndu-gu-ye ni u-lo-ngo / ba-ndu na ba-ndu / die-ku-die-ku / ma-ne-no ma-dzo / m-o-ro mu-dzo / u-du-gu",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 8–381)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain & Academic Lexicons (Krapf 1850, Krapf & Rebmann 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
+  "source": "Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
   "isoCode": "nyf",
   "glottocode": "miji1238",
-  "totalEntries": 7905
+  "totalEntries": 7927
 }

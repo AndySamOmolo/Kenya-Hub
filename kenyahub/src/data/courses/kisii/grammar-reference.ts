@@ -133,4 +133,26 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
       { kisii: "ngochandi / sinkoja • nkuliandi / tindalia • namanyiti / tinkomanyi • nawaraleti? — inchitinkorora", english: "I come / I come not • I eat / I eat not • I know / I know not • Can you see me? — No, I cannot", explanation: "Affirmative vs. negative verb pairs in Hobley (1902, p. 91)" }
     ]
   }
+  ,
+  {
+    id: "kisii-johnston-1919-1922-sub-group-a6-group-b8-woodward",
+    title: "Sir Harry H. Johnston (1919–1922) Sub-Group A 6 (#7 Ki-guzii & #7a Ki-kωria) & Group B (#8 Ki-šaši & #8a Ki-rōri): Complete Prefix/Concord Tables (pp. 85, 97), Archdeacon Woodward's 1920 Ki-šaši Vocabulary (Vol. II, p. 26) & Bibliography (p. 787)",
+    summary: "Complete line-by-line documentation of Sub-group A 6 (#7 Ki-guzii / Igi-zii / Ki-siṅgiri / Ki-suba / 'Kωsωva' & #7a Ki-kωria / Ki-suna / Ki-tende / 'Bakulia') and Group B (#8 Ki-šaši & #8a Ki-rōri) in Johnston (1919, Vol. I, pp. 73–97, 787 & 1922, Vol. II, pp. 24–26, 225, 259, 497–498).",
+    content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. 73–97, 787 & Vol. II [1922], pp. 24–26, 225, 259, 497–498):
+1. **Sub-Group A 6 (#7 Ki-guzii & #7a Ki-kωria) 16-Class Prefix/Concord Table & Noteworthy Roots (Vol. I, pp. 73–85 & Vol. II, pp. 24–25, 259)**:
+   - **Varieties Included**: **7. Ki-guzii (*Igi-zii, Ki-siṅgiri, Ki-suba, 'Kωsωva'*)** in the Kisii highlands and along the south shore of the Kavirondo Gulf; **7a. Ki-kωria (*Ki-suna, Ki-tende, 'Bakulia'*)** across the Migori/Mara borderlands.
+   - **16-Class Prefixes & Concords (Vol. I, p. 85)**: Cl. 1 **Omu-, Omw-, Mu-** (*u-, o-*) • Cl. 2 **Aba-, Ba-** (*ba-*) • Cl. 3 **Omu-, Omω-** (*gu-, u-*) • Cl. 4 **Emi-, Imi-** (*gi-, i-*) • Cl. 5 **Eri-, Ili-, Ri-, Li-** (*li-, ri-*) • Cl. 6 **Ama-, Ma-** (*ga-, ma-*) • Cl. 7 **Eki-, Eke-, Iki-, Igi-** (*ki-, gi-*) • Cl. 8 **Ebi-, Ibi-** (*bi-*) • Cl. 9 **En-, In-, E-, I-** (*i-, yi-*) • Cl. 10 **Cin-, Tsin-, Ci-, Tsi-, Si-** (*tsi-, ci-, zi-*) • Cl. 11 **Olu-, Oru-, Orω-** (*lu-, ru-*) • Cl. 12 **Otu-, Tu-** (pl. of Cl. 13; *tu-*) • Cl. 13 **Aka-, Ka-** (dim. sg.; *ka-*) • Cl. 14 **Obu-, Obω-, Bu-** (*bu-*) • Cl. 15 **Oku-, Ogu-, Ku-** (*ku-, gu-*) • Cl. 16 **Aha-, Ha-, Pa-** (*ha-*).
+   - **Noteworthy Roots in #7 & #7a (Vol. II, pp. 24–25)**: **Eṅ-gωrω / Eri-ωba** (God / the Sun), **Omu-gwe ; emi-gwe** (arrow), **Eki-siri / Eke-nabω** (axe), **Obu-atω** (canoe), **Eṅ-gωma** (drum), **Oku-tū ; ama-tū** (ear), **Er-inω ; am-ainω** (tooth), **Olu-meme / Orω-meme** (tongue), **Eṅ-da** (belly), **Ama-nyiṅga** (blood), **Omu-rerω** (fire), **Ama-ce / Ama-nzi** (water), **En-zωgu** (elephant), **Eṅ-gω** (leopard), **Eṅ-gubu** (hippo), **En-sūi ; sin-zūi** (fish), **Ki-anda** (9, in #7) vs. **Kenda** (9, in #7a).
+2. **Group B: #8 Ki-šaši & #8a Ki-rōri (*Suba–Kuria–Jita Southern Border Continuum*, Vol. I, pp. 86–97 & Vol. II, pp. 25–26)**:
+   - Spoken immediately south of #7a Ki-kωria along the eastern shore of Lake Victoria (Mara–Speke Gulf):
+   - **Prefixes & Numerals (Vol. I, pp. 94, 97)**: Cl. 1/2 *Omu-/Aba-*, Cl. 3/4 *Omu-/Emi-*, Cl. 5/6 *Eri-, Li-/Ama-*, Cl. 7/8 *Eki-/Ebi-*, Cl. 9/10 *En-/In-, Jin-, Tsin-*, Cl. 11 *Olu-*, Cl. 12/13 *Otu-/Aka-*, Cl. 14 *Obu-*, Cl. 15 *Oku-*; Numerals: **1 -mwe, 2 -bili, 3 -satu, 4 -nne, 5 -tanω, 6 -tandatu / M-kaga, 7 M-fuṅgate, 8 M-nane, 9 Kenda, 10 I-kumi, 100 I-gana**.
+   - **Archdeacon H. W. Woodward's 1920 Supplementary Ki-šaši Vocabulary (Vol. II, p. 26)**: Johnston prints 46 additional Ki-šaši words supplied by Archdeacon H. W. Woodward in 1920, including **Mū-gūī ; mi-** (arrow), **Ki-tende** (buttocks), **I-kωṅgω** (country), **E-sωnω** (shame), **I-zωba** (sun/God), **M-būla** (rain), **Ma-nzi** (water), **Mū-līlω** (fire), **Obu-šū** (face), **Eri-nω ; ama-** (tooth), **Olu-līmī** (tongue), **Oku-bωkω** (arm), **Oku-gūlū** (leg), **Omu-karī ; aba-** (woman), **Omu-lūme ; aba-** (man/husband).
+3. **Bibliography for #7–8a (Vol. I, p. 787)**:
+   - Cites C. W. Hobley (*Eastern Uganda*, 1902 — *Kωsωva*), Sir Harry H. Johnston (*The Uganda Protectorate, Vol. II*, 1902 — *Igizii*), Franz Stuhlmann & Bernhard Struck (for *Ki-kωria / Bakulia* & *Ki-rōri*), Paul Kollmann (*The Victoria Nyanza*, 1899), and Archdeacon H. W. Woodward (1920 MS. for *Ki-šaši*).`,
+    examples: [
+      { kisii: "7. Ki-guzii (Igi-zii, Ki-siṅgiri, Ki-suba, Kωsωva) & 7a. Ki-kωria (Ki-suna, Ki-tende, Bakulia)", english: "Sub-group A 6 varieties and glossonyms in Johnston (1919, Vol. I, p. 73)", explanation: "Johnston (1919, Vol. I, pp. 73–85 & 1922, Vol. II, pp. 24–25)" },
+      { kisii: "Eṅ-gωrω / Eri-ωba (God / Sun) • Olu-meme / Orω-meme (tongue) • Ama-nyiṅga (blood) • Ama-ce / Ama-nzi (water) • Ki-anda (9)", english: "Distinctive Sub-group A 6 roots in Johnston (1919–1922)", explanation: "Johnston (1919, Vol. I, pp. 73–81 & 1922, Vol. II, pp. 24–25)" },
+      { kisii: "8. Ki-šaši & 8a. Ki-rōri: Mū-gūī (arrow), I-zωba (sun/God), Obu-šū (face), Omu-karī (woman), Omu-lūme (husband), Jin-/Tsin- (Class 10)", english: "Group B (#8–8a) & Archdeacon Woodward's 1920 supplementary vocabulary", explanation: "Johnston (1919, Vol. I, pp. 86–97 & 1922, Vol. II, pp. 25–26)" }
+    ]
+  }
 ];

@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml).",
   "categories": [
     {
@@ -72,70 +72,70 @@
           "english": "Ten",
           "translation": "ikũmi (pl. mĩrongo)",
           "pronunciation": "ikumi",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Six",
           "translation": "ithanthatu",
           "pronunciation": "ee-thahn-thah-too",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Two",
           "translation": "iiri (bairi)",
           "pronunciation": "ee-ree / bah-ee-ree",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "One",
           "translation": "imwe (-mwe)",
           "pronunciation": "ee-mweh",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Nine",
           "translation": "kenda",
           "pronunciation": "kehn-dah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Five",
           "translation": "ithano (-thano)",
           "pronunciation": "ee-thah-noh",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Four",
           "translation": "inya (-nya)",
           "pronunciation": "ee-nyah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Eight",
           "translation": "inyanya",
           "pronunciation": "ee-nyah-nyah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Seven",
           "translation": "mũgwanja",
           "pronunciation": "moo-gwahn-jah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Three",
           "translation": "ithatu (-thatu)",
           "pronunciation": "ee-thah-too",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
@@ -205,7 +205,7 @@
           "english": "Man",
           "translation": "mũrũme (pl. arũme / barũme)",
           "pronunciation": "moo-roo-meh",
-          "context": "Johnston 1919 p. 68 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 102 #11a Meru",
           "audioFile": null
         },
         {
@@ -219,14 +219,14 @@
           "english": "Child",
           "translation": "mwana (pl. aana / baana) / kaana (pl. tũana)",
           "pronunciation": "mwana",
-          "context": "Johnston 1919 p. 66 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 100 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Woman",
           "translation": "mũka (pl. aka / baka)",
           "pronunciation": "moo-kah",
-          "context": "Johnston 1919 p. 71 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 106 #11a Meru",
           "audioFile": null
         },
         {
@@ -240,14 +240,14 @@
           "english": "Mother",
           "translation": "maitũ / ng'ina (nyina)",
           "pronunciation": "maitu",
-          "context": "Johnston 1919 p. 68 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 102 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Father",
           "translation": "baba (ithe)",
           "pronunciation": "bah-bah / ee-theh",
-          "context": "Johnston 1919 p. 67 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 101 #11a Meru",
           "audioFile": null
         },
         {
@@ -331,7 +331,7 @@
           "english": "Person (pl. People) / Man / Woman / Child in Johnston (1919 #11a Meru)",
           "translation": "muntũ (pl. antũ / bantũ) / mũrũme (pl. barũme) / mũka (pl. aka / baka) / mwana (pl. aana / baana)",
           "pronunciation": "muntu",
-          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 68–69) — #11a Meru",
+          "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 102–103) — #11a Meru",
           "audioFile": null
         },
         {
@@ -758,7 +758,7 @@
           "english": "Cow",
           "translation": "ng'ombe",
           "pronunciation": "ngohm-beh",
-          "context": "Johnston 1919 p. 66 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 100 #11a Meru",
           "audioFile": null
         },
         {
@@ -856,21 +856,21 @@
           "english": "Sun",
           "translation": "riũa",
           "pronunciation": "ree-oo-ah",
-          "context": "Johnston 1919 p. 70 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 105 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Star",
           "translation": "njata",
           "pronunciation": "n-jah-tah",
-          "context": "Johnston 1919 p. 70 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 105 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Moon",
           "translation": "mweri",
           "pronunciation": "mweh-ree",
-          "context": "Johnston 1919 p. 68 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 102 #11a Meru",
           "audioFile": null
         },
         {
@@ -1024,7 +1024,7 @@
           "english": "Eat",
           "translation": "kũrĩa",
           "pronunciation": "koo-ree-ah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
@@ -1073,7 +1073,7 @@
           "english": "Drink",
           "translation": "kũnyua",
           "pronunciation": "koo-nywah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
@@ -1206,7 +1206,7 @@
           "english": "House",
           "translation": "nyomba (mũciĩ = homestead)",
           "pronunciation": "nyomba",
-          "context": "Johnston 1919 p. 68 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 102 #11a Meru",
           "audioFile": null
         },
         {
@@ -1514,14 +1514,14 @@
           "english": "Day",
           "translation": "mũthenya",
           "pronunciation": "moo-theh-nyah",
-          "context": "Johnston 1919 p. 66 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 100 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Night",
           "translation": "ũtukũ",
           "pronunciation": "utuku",
-          "context": "Johnston 1919 p. 69 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 103 #11a Meru",
           "audioFile": null
         },
         {
@@ -1710,35 +1710,35 @@
           "english": "Go",
           "translation": "gũthiĩ (kũthi)",
           "pronunciation": "goo-thee",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Big",
           "translation": "-nene (mũnene)",
           "pronunciation": "neh-neh",
-          "context": "Johnston 1919 p. 71 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 106 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Bad",
           "translation": "-ũru (mũũru, nthũku)",
           "pronunciation": "-uru",
-          "context": "Johnston 1919 p. 71 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 106 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Come",
           "translation": "kũũja (ĩja!)",
           "pronunciation": "kuuja",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Good",
           "translation": "-ega (mwega, bwega)",
           "pronunciation": "eh-gah",
-          "context": "Johnston 1919 p. 71 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 106 #11a Meru",
           "audioFile": null
         },
         {
@@ -1759,14 +1759,14 @@
           "english": "Sleep",
           "translation": "kũmama (kũkoma)",
           "pronunciation": "koo-mah-mah",
-          "context": "Johnston 1919 p. 72 #11a Meru",
+          "context": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru",
           "audioFile": null
         },
         {
           "english": "Small",
           "translation": "-nini (mũnini, kanini)",
           "pronunciation": "nee-nee",
-          "context": "Johnston 1919 p. 71 #11a Meru",
+          "context": "Johnston 1919, Vol. I, p. 106 #11a Meru",
           "audioFile": null
         },
         {
@@ -2788,7 +2788,7 @@
           "english": "God",
           "translation": "Murungu (Ngai)",
           "pronunciation": "moo-roon-goo / ngah-ee",
-          "context": "Johnston 1919 p. 67 & Hobley 1910 p. 148",
+          "context": "Johnston 1919, Vol. I, p. 101 & Hobley 1910, p. 148",
           "audioFile": null
         },
         {
@@ -4073,17 +4073,17 @@
           "audioFile": null
         },
         {
-          "english": "Supreme Council of Elders (Njũri Ncheke), Spiritual Dignitary (Mũgwe) & Sacred Grove",
-          "translation": "Njũri Ncheke, Mũgwe, & Mũrũrĩ (sacred forest)",
-          "pronunciation": "nju-ri nche-ke / mu-gwe / mu-ru-ri",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 156–158 (Mweru) & p. 169 (Tharaka)",
+          "english": "All 22 Mweru (Meru) Sub-Tribes & Their 22 Chiefs, plus All 13 Mweru Clans (Mwiria) & Sacred Totems (Netiri) in Hobley (1910, Part II, Ch. VI, pp. 156–158)",
+          "translation": "22 Mweru Sub-Tribes & Chiefs (pp. 156–157): 1. Imenti (Mitabiru), 2. Igoji (Kiambi), 3. Muthambi (Ruini), 4. Mwimbi (Mbariga), 5. Chuka (Kibere), 6. Miutini (M'mura), 7. Tigania (M'ngongo), 8. Igembe (M'rithara), 9. Athwana (M'itonga), 10. Akachiu (M'munyua), 11. Amomete (M'kabuthu), 12. Antubetwe (M'itaru), 13. Antuambui (M'ruchu), 14. Kianjai (M'ithiria), 15. Karama (M'ringera), 16. Muthara (M'linya), 17. Kangeta (M'turuchiu), 18. Luluma (M'arimi), 19. Amugaa (M'ngatho), 20. Athi (M'kithia), 21. Thaiichu (M'kura), 22. Tharaka/Thaka (M'kanyoni) • 13 Mweru Clans (Mwiria) & Totems (Netiri, pp. 156–157): 1. Njaru (white cattle), 2. Ntuni (red cattle), 3. Angilo (black cattle), 4. Athinga (giraffe), 5. Athanya (basket twine), 6. Nthia (bushbuck), 7. Amakui/Mukui (dog), 8. Antuanthama (dik-dik), 9. Singamburi (goat), 10. Antwa mwakia (fire), 11. Mwianda (frog), 12. Amatu/Kiringende (locust), 13. Ntowaita (red-sea crossing tradition)",
+          "pronunciation": "mwi-ri-a / ne-ti-ri / i-me-nti / ti-ga-ni-a / i-ge-mbe / nja-ru / ntu-ni / a-ngi-lo / nto-wai-ta",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI: Notes on Mweru, pp. 156–158",
           "audioFile": null
         },
         {
-          "english": "Supreme Council of Elders (Njũri Ncheke), Spiritual Dignitary (Mũgwe) & Sacred Groove",
-          "translation": "Njũri Ncheke, Mũgwe, & Mũrũrĩ (sacred forest)",
-          "pronunciation": "nju-ri nche-ke / mu-gwe / mu-ru-ri",
-          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', pp. 146–155 (Mweru & Tharaka)",
+          "english": "All 14 Thaka (Tharaka) Clans (Mwiriga / Mbai) & Sacred Totems (Nthuku), plus Governance & Social Terms in Hobley (1910, Appendix (5), p. 169)",
+          "translation": "14 Thaka (Tharaka) Clans (Mwiriga / Mbai) & Totems (Nthuku, p. 169): 1. Mba-Kanyoni (birds), 2. Mba-Mbau (hyena), 3. Mba-Nthia (bushbuck), 4. Mba-Njiru (buffalo), 5. Mba-Gachiku (zebra), 6. Mba-Thagana (fish/Tana River creatures), 7. Mba-Mwei (baboon), 8. Mba-Ngombe (cattle spleen), 9. Mba-Nthiga (lion), 10. Mba-Mburi (goat), 11. Mba-Kiringa (iron/smiths' bellows), 12. Mba-Mutonga (elephant), 13. Mba-Kariba (python/snake), 14. Mba-Chimba (ant-bear/aardvark) • Tharaka & Meru Institutions: Muchi (homestead/village), Mthumuba (young warrior), Mugao (medicine-man), Mutu muwao (married woman), Njũri Ncheke (supreme council), Mũgwe (spiritual dignitary), & Mũrũrĩ (sacred forest)",
+          "pronunciation": "mwi-ri-ga mba-i / nthu-ku / mu-chi / mthu-mu-ba / mu-ga-o / mu-tu mu-wa-o / nju-ri nche-ke / mu-gwe",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Appendix (5): The Thaka or Tharaka, p. 169 (also pp. 39, 85, 93, 156–158)",
           "audioFile": null
         },
         {
@@ -4098,6 +4098,13 @@
           "translation": "niĩ / gwe (we) / we / batũ / bũ / bo",
           "pronunciation": "nii",
           "context": "Sir Harry H. Johnston (1919, Vol. I, p. 107) — #11a Meru",
+          "audioFile": null
+        },
+        {
+          "english": "Person -> People, Thing -> Things & Little Child -> Little Children (#11a Meru Class 2 Ba- & Class 8 Bi-)",
+          "translation": "Mu-ntu ; ba-ntu • Ki-ntu ; bi-ntu • Ka-ana ; tu-ana",
+          "pronunciation": "mu-ntu ba-ntu / ki-ntu bi-ntu / ka-a-na tu-a-na",
+          "context": "11a. Meru (M.) & 11. Cuka (C.) / Mwimbe (Mw.) / Þeraka (Þ.) / Igωji (Ig.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, p. 111 & 1922, Vol. II, pp. 28–30)",
           "audioFile": null
         }
       ]

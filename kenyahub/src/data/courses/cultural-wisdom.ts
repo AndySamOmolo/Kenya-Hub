@@ -537,7 +537,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageId": "mijikenda",
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Magoma mairi lwanda-ni. — Ni mahombo.",
-    "literalTranslation": "Riddle: Two gourds in the open field. — Answer: Maternal nourishment (mahombo).",
+    "literalTranslation": "Riddle: Two cows, in the open field. — Answer: It is the breasts (maternal nourishment, mahombo).",
     "meaning": "Classical Giriama riddle comparing maternal nourishment to prized cattle.",
     "theme": "family",
     "sourceCitation": "W. E. Taylor, Giryama Vocabulary and Collections (1891, p. 140, Riddle #18)"
@@ -548,10 +548,10 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Mulume ni kuzhala-dze? — 'Aka! he zho mulume k'azhala! Sidzasikira kwamba ng'ombe-yo yázhala?",
     "literalTranslation": "How should a male bear a child? — Oho! is it so then that a male never bears? Have I not just heard that your bull bore a calf?",
-    "meaning": "Climax of W. E. Taylor's Giriama Folktale II ('Fisi na Simba na Katsungula', 1891, pp. 132–134; also told in I 'Katsungula na Simba', III 'K'uku na Katsungula', IV.1 'Kuononga kwa Muche', and IV.2 'Kuandika kwa Kufwa', closing with the traditional formula 'Ngano yangu igomera haha: Mwehu nyumba-ni muna ts'azi ya nyaa'): Katsungula traps the Lion into refuting his own unjust claim over the Hyena's calf.",
+    "meaning": "Climax of W. E. Taylor's Giriama Folktale 2 ('Fisi na Simba na Katsungula', 1891, pp. 130–131; alongside 1. 'Katsungula na Simba' pp. 114–129, 3. 'Mwanache na Nzimu' pp. 131–133, 4. 'K'uku na Katsungula' pp. 133–134, and 5. 'Kuandika kwa Kufwa, na Kuononga kwa Muche' pp. 134–137, closing with the traditional formula 'Ngano yangu igomera haha: Mwehu nyumba-ni muna ts'azi ya nyaa'): Katsungula traps the Lion into refuting his own unjust claim over the Hyena's calf.",
     "englishEquivalent": "Out of thine own mouth will I judge thee / Wisdom is better than strength.",
     "theme": "wisdom",
-    "sourceCitation": "W. E. Taylor, Giryama Vocabulary and Collections (1891, pp. 129–138, Ngano za Kigiryama #1–5)"
+    "sourceCitation": "W. E. Taylor, Giryama Vocabulary and Collections (1891, pp. 114–137, Ngano za Kigiryama #1–5)"
   },
   {
     "id": "mijikenda-5",
@@ -656,31 +656,31 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "kamba-2",
     "languageId": "kamba",
     "languageName": "Kamba (Kĩkamba)",
-    "indigenous": "Mundu yuyu mucheo, kuakila andu aondi (Mundu yunai kiliku).",
-    "literalTranslation": "This person is good, surpassing all the people (a person having wisdom — Last 1885 superlative & quality constructions).",
-    "meaning": "Recorded verbatim by J. T. Last in \"Grammar of the Kamba Language\" (1885, pp. 11, 13): true greatness is measured by surpassing goodness (ucheo) and wisdom (kiliku).",
+    "indigenous": "Mundu yuyu mucheo, kuakila andu aondi (Mkamba yuyu akaakila andu aonde) • Mundu yunai kiliku; Mundu wa kaú; Mundu wa kwaka; Andu a kuima • Ng'o yakwa / Ng'o zetu / Mundu mwēnyi • Mtu uuya → Mtu uuyāā → Mtu uuyāāā; Nucho! nucho!",
+    "literalTranslation": "This man is the best, surpassing all men (This Mkamba will surpass all the men) • A wise man (having wisdom); a quarrelsome man; a builder; agriculturists • Myself / Ourselves (lit. my/our heart) / the man himself • That man there → further off → yonder (falsetto); That is he! the very man!",
+    "meaning": "Recorded verbatim by J. T. Last in \"Grammar of the Kamba Language, Eastern Equatorial Africa\" (SPCK London, 1885, Preface by Robert Cust pp. iii–iv, text pp. 1–40): illustrates Kamba surpassing comparisons with ku-kila (pp. 12–13), the four irregular adjectival constructions (Ndata ikalakala 'the stick is straight', Ndata imamele 'crooked', Muthungi ukuchuwa 'the jar is full'; wa + noun; -nai + noun; -a + infinitive, pp. 11–12), heart reflexives (Ng'o yakwa, Ng'o yako, Ng'o yakwe, Ng'o zetu, Ng'o zenyu, Ng'o zao and -ēnyi across all 9 classes, pp. 22–23), kinship enclitics (Mwanakwa, Achako, Mwanathakwe, p. 22), and falsetto distance demonstratives (pp. 25–26).",
     "theme": "wisdom",
-    "sourceCitation": "J. T. Last, Grammar of the Kamba Language (1885, pp. 11, 13)"
+    "sourceCitation": "J. T. Last, Grammar of the Kamba Language, Eastern Equatorial Africa (SPCK London, 1885, pp. iii–iv, 11–13, 21–26)"
   },
   {
     "id": "kamba-3",
     "languageId": "kamba",
     "languageName": "Kamba (Kĩkamba)",
-    "indigenous": "Ndongoi! Nyũmba yakwa ndĩ mũomo. — Nĩ ĩtumbĩ.",
-    "literalTranslation": "Riddle (Hobley 1910 #1): My house has no door. — Answer: An egg (ĩtumbĩ).",
-    "meaning": "Recorded by C. W. Hobley in \"Ethnology of A-Kamba and Other East African Tribes\" (1910, p. 56).",
+    "indigenous": "Kweta ndai! — (1) Nduma? — Muumbi. (2) O-Selia? — Kimbu. (3) Mwetu etiki? — Kulotoi. (4) Tuna Kwatana? — Nzia na nzia. (5) Wo wiwa? — Kinto Kitheo.",
+    "literalTranslation": "Tell a riddle (Kweta ndai, Hobley 1910, p. 54)! — (1) What fastens up the moon in the dark? — The clouds/mist (Muumbi). (2) What goes first forward and then backward? — The chameleon (Kimbu). (3) The girl you walk after and never catch up with? — A mirage (Kulotoi). (4) We take hold of one another? — One path crossing another (Nzia na nzia). (5) What has no hair/grass on it? — A bare patch of earth (Kinto Kitheo).",
+    "meaning": "All five verbatim Akamba riddles (Kweta ndai) recorded by C. W. Hobley in \"Ethnology of A-Kamba and Other East African Tribes\" (Cambridge University Press, 1910, Part I, Ch. X, p. 54).",
     "theme": "nature",
-    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 56, Riddle #1)"
+    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Ch. X, p. 54, Riddles #1–#5)"
   },
   {
     "id": "kamba-4",
     "languageId": "kamba",
     "languageName": "Kamba (Kĩkamba)",
-    "indigenous": "Ndongoi! Kĩla kĩendaa na mũndũ mũthenya w’onthe na kĩtiũmbũkaa. — Nĩ kĩuu (shadow).",
-    "literalTranslation": "Riddle (Hobley 1910 & Lindblom 1920): That which walks with a person all day long and never leaves them. — Answer: A person’s shadow (kĩuu).",
-    "meaning": "Kamba riddle teaching that character and reputation follow a person everywhere like their shadow.",
+    "indigenous": "Musai (Ndeto, pp. 71–72): Muoi (Sua), Kielelo (Mwei), Kiimia, Nzia, Mwatu, Ngu, Itaa, Kiweto (Uta), Mbia • Wano (pp. 107–118): Wa-paruku (Mbuku), Mbiti na Munyambu; Kimbu na Nguli.",
+    "literalTranslation": "Pictographic Musai initiation riddles (pp. 71–72): Sun (Muoi), Moon (Kielelo), Pleiades (Kiimia), Path (Nzia), Beehive (Mwatu), Tortoise (Ngu), Python (Itaa), Bow (Kiweto), Sand-pits (Mbia) • Six Wano folktales (pp. 107–118): The Hare (Wa-paruku), Hyena, Lion, and Elephant; The Girl and the Python; The Two Brothers and the Ogre (Iimu); The Bird that Gave Milk; and The Chameleon (Kimbu) and the Weaver-Bird (Nguli).",
+    "meaning": "Recorded verbatim by C. W. Hobley in \"Ethnology of A-Kamba and Other East African Tribes\" (1910, Ch. XIII pp. 70–74 & Ch. XX pp. 107–118): combines the 9 pictographic Musai stick riddles (Ndeto) and 27 ceremonial Nzaiko code words with the 6 traditional Wano fireside folktales.",
     "theme": "wisdom",
-    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 56) & Gerhard Lindblom, The Akamba (1920)"
+    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Ch. XIII pp. 70–74 & Ch. XX pp. 107–118)"
   },
   {
     "id": "kamba-5",
@@ -1535,9 +1535,9 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Pokomo (Kipfokomo)",
     "indigenous": "Muho wa Tsana ni muyo wa mudzi (Krapf 1850 & Johnston 1919 #13 Pokomo).",
     "literalTranslation": "The Tana River (Muho wa Tsana) is the lifeblood of the village (mudzi).",
-    "meaning": "Grounded in Rev. Dr. J. L. Krapf’s 1850 Pokomo vocabulary and Sir Harry Johnston’s 1919 Kipfokomo (#14) study: riverine stewardship and Wakijo elder counsel sustain the flood-plain communities.",
+    "meaning": "Grounded in Rev. Dr. J. L. Krapf’s 1850 Pokomo vocabulary and Sir Harry Johnston’s 1919 Kipfokomo (#13) study: riverine stewardship and Wakijo elder counsel sustain the flood-plain communities.",
     "theme": "nature",
-    "sourceCitation": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) & Sir Harry Johnston (1919, #14 Pokomo)"
+    "sourceCitation": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) & Sir Harry Johnston (1919, #13 Pokomo)"
   },
   {
     "id": "pokomo-2",
@@ -1548,7 +1548,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "meaning": "Shared Sabaki Bantu proverb across Kipfokomo, Kigiryama (Taylor 1891 #603), and Kiswahili: unity in paddling the dugout canoe (waho) and tending the flood-plain harvest brings success.",
     "englishEquivalent": "United we stand, divided we fall.",
     "theme": "unity",
-    "sourceCitation": "Sir Harry Johnston, Comparative Study of the Bantu Languages (1919, #14 Pokomo) & Taylor (1891)"
+    "sourceCitation": "Sir Harry Johnston, Comparative Study of the Bantu Languages (1919, #13 Pokomo) & Taylor (1891)"
   },
   {
     "id": "pokomo-3",
@@ -1566,7 +1566,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Embu (Kîembu / Kîmbeere)",
     "indigenous": "Mũtĩ ũmwe ndũtũũragia mũtitũ (Johnston 1919 #11 Embu & Emberre).",
     "literalTranslation": "A single tree does not make a sacred grove (mũtitũ).",
-    "meaning": "Grounded in Sir Harry Johnston (1919, pp. 66–73, #11 Embu/Chuka/Emberre) and C. W. Hobley (1910): community counsel in the Kiama kia Ngome requires collective wisdom.",
+    "meaning": "Grounded in Sir Harry Johnston (1919, Vol. I, pp. 98–112 & Vol. II, pp. 28–30, #11 Embu/Chuka/Emberre) and C. W. Hobley (1910): community counsel in the Kiama kia Ngome requires collective wisdom.",
     "englishEquivalent": "No man is an island.",
     "theme": "unity",
     "sourceCitation": "Sir Harry H. Johnston, A Comparative Study of the Bantu Languages (1919, #11 Embu)"
@@ -1585,11 +1585,11 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "rendille-1",
     "languageId": "rendille",
     "languageName": "Rendille (Af-Rendille)",
-    "indigenous": "Gaal waa nolol; biyo waa nabad (Hobley 1910 Rendille Corpus).",
-    "literalTranslation": "The camel (gaal) is life; water (biyo) is peace.",
-    "meaning": "Grounded in C. W. Hobley’s pioneering 1910 vocabulary of the Rendille (\"Ethnology of A-Kamba and Other East African Tribes\", pp. 156–157): in the Kaisut and Chalbi deserts, camel husbandry and shared wells sustain all life.",
+    "indigenous": "7-Day Randili Week (Hobley 1910, p. 163): 1. Hahat • 2. Hura hakhan (hura = sun) • 3. Sere (sere = day) • 4. Kumat • 5. Ser hakhan • 6. Sere adi (Almadó & Sorio) • 7. Sere gal.",
+    "literalTranslation": "1st day Hahat (fast and prayer day) • 2nd day Hura hakhan (day of rest / Sabbath; hura = sun) • 3rd day Sere (sere = day) • 4th day Kumat • 5th day Ser hakhan (no-travel, no moving camp, no cattle medicine) • 6th day Sere adi (day of goats and sheep; Almadó and Sorio festivals begin) • 7th day Sere gal (day of the camel; no bleeding, branding, castrating, or eating camel meat).",
+    "meaning": "Recorded verbatim by C. W. Hobley in \"Ethnology of A-Kamba and Other East African Tribes\" (1910, Part II, Ch. VI: Randili [Rendile], pp. 162–163): documents the 6 Rendille sub-tribes (Salei, Urwen, Galdeilan, Tubcha, Nebei, Ongeli + Burkeneji / Naibor Keneji \"White Sheep\") and the 7-day pastoral week governing camel, sheep, and goat husbandry.",
     "theme": "nature",
-    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Ch. XVII: The Rendile, pp. 156–157)"
+    "sourceCitation": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI: Randili [Rendile], pp. 162–163)"
   },
   {
     "id": "taylor-1891-swahili-1",
@@ -8560,12 +8560,12 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "id": "rendille-proverb-3",
     "languageId": "rendille",
     "languageName": "Rendille",
-    "indigenous": "Hura hakhan gaal la ma raro.",
-    "literalTranslation": "On the sacred day of the sun, pack camels are not loaded.",
-    "meaning": "Respecting traditional rest days and ecological rhythms preserves both livestock and community well-being.",
+    "indigenous": "Hura hakhan gaal la ma raro • Ser hakhan • Sere adi (Almadó & Sorio) • Sere gal.",
+    "literalTranslation": "On Hura hakhan (the 2nd day of the sun / Sabbath), pack camels are not loaded; on Ser hakhan (5th day), no journey or camp move is made; on Sere adi (6th day), sheep and goats are neither sold nor slaughtered; on Sere gal (7th day), camels are neither bled, branded, nor castrated.",
+    "meaning": "Respecting traditional rest days and ecological rhythms (Hobley 1910, Part II, Ch. VI, p. 163) preserves both livestock and community well-being.",
     "englishEquivalent": "Everything has its appointed season.",
     "theme": "nature",
-    "sourceCitation": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', p. 166 (Randili Calendar)"
+    "sourceCitation": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI, p. 163 (Randili Calendar)"
   },
   {
     "id": "ilchamus-proverb-2",
@@ -8610,6 +8610,40 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "The home is built on wisdom.",
     "theme": "family",
     "sourceCitation": "Ekegusii Oral Tradition & C. W. Hobley (1902)"
+  }
+  ,
+  {
+    "id": "swahili-27",
+    "languageId": "swahili",
+    "languageName": "Kiswahili (Kimvita / Mombasa)",
+    "indigenous": "Mkáta haiti, wala haiangúi, akiangúa hailési (p. 232) • M'je mniamáfu, yuna ngóma za miómo; haúsiwi kua utáfu, kondoyakwe ni usíku (p. 239) • Mombása kúlā kua ku papassa, hakuna teári kama Unguja (p. 241) • Ajábu ni mtáūsi, ku taúa nazi mbófu (p. 254) • Ndaulía si ulinzi, bora ni ku enda muegniéwe (p. 274) • Neno ukatálo ndílo Mungu afaniálo (p. 277) • Numbi nasui mgagási mtanga (p. 286) • Mlango wa aduiyako omba uwe wazi, ukipita, uzinsilíe (p. 341) • Tabíbu hazúii ájili, rokho ikisha lingániua bassi (p. 352) • Búibúi na wingu la mvúa usitánde poáni ku énsile wanangu, ku énsile Kahatani na nduguye Ramathani (p. 358).",
+    "literalTranslation": "The poor man breaks off no mango fruit, nor throws it down, and if he throws it down he gets none to eat (p. 232) • The mje-worm is quiet, it uses its lips like drums; it cannot be kept off by force, its warfare is by night (p. 239) • At Mombasa you eat by groping/toil, nothing is ready like at Zanzibar (p. 241) • The wonder is the fastidious chooser who ends up choosing a rotten coconut (p. 254) • 'Look out for me' is no watching, it is better to go yourself (p. 274) • The thing which thou refusest is the very thing God brings about (p. 277) • The numbi and the common fish both roll on the sand when caught (p. 286) • Pray that your enemy's door may be open, and when you pass by, peep in (p. 341) • A physician cannot keep back fate; when the soul is summoned, it is over (p. 352) • O spider and rain-cloud, spread not over the coast where my sons Kahatani and his brother Ramathani have gone (p. 358).",
+    "meaning": "Ten classical Kimvita proverbs recorded verbatim by Rev. Dr. L. Krapf in 'A Dictionary of the Suahili Language' (1882, pp. 232, 239, 241, 254, 274, 277, 286, 341, 352, 358) illustrating coastal social philosophy, self-reliance, humility before divine decree, and maternal prayer for seafarers.",
+    "englishEquivalent": "Man proposes, God disposes / If you want a thing well done, do it yourself.",
+    "theme": "wisdom",
+    "sourceCitation": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, pp. 232, 239, 241, 254, 274, 277, 286, 341, 352, 358)"
+  },
+  {
+    "id": "swahili-28",
+    "languageId": "swahili",
+    "languageName": "Kiswahili (Kimvita & Archaic Poetic)",
+    "indigenous": "(1) Muakaje akipendeka akitía wino matóni... Kertasi ya Shamu enenda kua mama, kamba: nimetezóa ni wimbi la ngáma, kisiki ja mnázi janiúma náma... Nami namuambia wasía wa baba: usikále mbele, maádao ni mbáya, usitáke ku lala na ku simáma, usikhadaíke kua wáli na niáma... (pp. 182–183) • (2) Killéfi mkáta jombo, mkata na mlingóte, azama na wátu wóte, hápŏni mtu mmója (p. 183) • (3) Wakamba watungíwa wao ushanga (p. 231) • (4) Akinoa tembo la junda mtahamari, ukiingía kuba ya mfu, kuba haimsetiri (p. 251) • (5) Atáni ku takábari! muangalie Mguáme... ulimengu una hadáa: sasa mti wa mnázi huangúka ukiináma (p. 256) • (6) Milangóni kuna jombo kipakíe mananazi; mpelekée kigego kigego ja mjakázi (p. 272) • (7) Tújile ku tía motto Teita na múme tulimpeta Hamade (p. 332) • (8) Uáhadi wa mana sai haáti yakwe kálima: nti zotte hutetéma, akamba: ndimi simba ya Mungu (p. 390) • (9) Wawe koke mana malíme, koke wawe moto wa wīri ukawáke (p. 425).",
+    "literalTranslation": "(1) Lover's & Bride's Song (Mashairi ya Mapenzi na Wasia wa Baba, pp. 182–183): 'When Muakaje paints her eyes with antimony... O paper of Syria, go to my mother and say: I have been tossed by the bilge-wave, the coconut stump hurts my flesh... And I tell her my father's counsel: Sit not forward in the boat, wish not to idle or stand about, be not deceived by rice and meat...' • (2) Marine Song (Shairi la Killefi, p. 183): 'The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes' • (3) Kamba Bead Song (p. 231): 'For the Wakamba their beads are strung' • (4) Drunkard's Warning Song (p. 251): 'When the drunkard drinks palm-wine in big draughts, even if he enters a dead man's vault, the vault cannot conceal him' • (5) Song of Mguáme of Mombasa (p. 256): 'Cease from pride! Behold Mguáme, how stripped of honour he lies in the grave... the world is full of deceit: now the tall coconut tree falls bowing low' • (6) Harbour Pineapple Song (p. 272): 'At the harbour entrance is a vessel laden with pineapples; take one to the refractory slave-girl' • (7) Shíndoa New Year's Eve Fire Chant (p. 332): 'We have come to set fire to Teita, and the man we got hold of is Hamade' • (8) Song of Ali (Simba ya Mungu, p. 390): 'The promise of the noble son never leaves its word: all lands tremble when he says: I am the Lion of God' • (9) Forest-Clearing Fire Song (p. 425): 'Kindle the forest fire for the farmland, kindle the second fire that it may blaze!'",
+    "meaning": "Nine verbatim historical Swahili songs, mashairi, and ritual chants preserved in Rev. Dr. L. Krapf's 'A Dictionary of the Suahili Language' (1882, pp. 182–183, 231, 251, 256, 272, 332, 390, 425).",
+    "englishEquivalent": "Pride goes before a fall / A father's counsel is a daughter's shield.",
+    "theme": "family",
+    "sourceCitation": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, pp. 182–183, 231, 251, 256, 272, 332, 390, 425)"
+  },
+  {
+    "id": "mijikenda-13",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kirabai / Kinika)",
+    "indigenous": "Hukutáne, huenende, hukafunse mutzi hio wa Aravai — Muravai! kuna ndugu! Ho-o! Ndugúyo ni uha! Uhao ni nduguyo! Kuna ndúgu Muana 'Damu! (pp. 268–269) • Múaka wa Masika (Furi): M'iru (1), Muya (2), Mágŭno (3), M'bula (4), Kásu (5), M'fúngo (6) | Múaka wa Kaskázi: Kahu (1), Muhanzo wa kahu (2), K'elili (3), K'allá (4), K'ulá (5), K'etzi (6) (p. 205).",
+    "literalTranslation": "Let us assemble, let us go and destroy that town of the Rabai (Mutzi Muíru on Mount Reale) — 'O Rabai man! Thou hast a brother! Ho-o! Thy bow is thy brother! That bow of thine is thy brother! There is no brother among the children of Adam!' (pp. 268–269) • The 12 Wanika Months in Two Six-Month Half-Years (p. 205): Winter/Rainy Half-Year (Múaka wa Masika / Furi, from Jan./Feb.): 1. M'iru, 2. Muya, 3. Mágŭno (harvesting corn), 4. M'bula (fruit failure), 5. Kásu, 6. M'fúngo; Summer Half-Year (Múaka wa Kaskázi): 1. Kahu, 2. Muhanzo wa kahu, 3. K'elili, 4. K'allá, 5. K'ulá, 6. K'etzi.",
+    "meaning": "Recorded verbatim by Rev. Dr. L. Krapf in 'A Dictionary of the Suahili Language' (1882, pp. 205, 268–269 s.v. Máira & Mutzi Muíru): the Rabai Kaya historical chronicle (from Rombo in Chagga via Malando and Kamfuda to Mount Reale, Mutzi Muíru, Vokéra [9 generations], and Mutzi Múvia / Rabbai M'pia) and the kizúmo / salala war-chant sung after the betrayal and destruction of Mutzi Muíru, paired with the complete 12-month Wanika agricultural calendar.",
+    "englishEquivalent": "Trust in your own readiness / Every season has its appointed labour.",
+    "theme": "patience",
+    "sourceCitation": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (London: Trübner & Co., 1882, pp. 205, 268–269)"
   }
 ];
 
@@ -13026,43 +13060,43 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "target": "īva",
             "source": "To steal",
             "pronunciation": "iva",
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "sūmāmā",
             "source": "To stand, stop, be erect",
             "pronunciation": "su-ma-ma",
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "yālā",
             "source": "To sleep",
             "pronunciation": "ya-la",
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "kāā",
             "source": "To sit, remain, abide",
             "pronunciation": "kaa",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "ōnā",
             "source": "To see",
             "pronunciation": "ona",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "pēndā, -tākā",
             "source": "To love, want",
             "pronunciation": "penda ta-ka",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "ācā",
             "source": "To leave off, cease",
             "pronunciation": "aca",
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           }
         ],
         "sentences": [
@@ -13094,7 +13128,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "To steal",
               "A dance. This word is also widely used by up-country natives"
             ],
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
@@ -13106,7 +13140,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "A dance. This word is also widely used by up-country natives",
               "To steal"
             ],
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
@@ -13165,7 +13199,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "sūmāmā",
               "kāā"
             ],
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           }
         ]
       },
@@ -13180,49 +13214,49 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "target": "cēkā",
             "source": "To laugh",
             "pronunciation": "ce-ka",
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "yūā",
             "source": "To know",
             "pronunciation": "yua",
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "ūlāgā, -ūā",
             "source": "To kill",
             "pronunciation": "u-la-ga ua",
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "ēndā",
             "source": "To go",
             "pronunciation": "enda",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "pā",
             "source": "To give",
             "pronunciation": "pa",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "lā",
             "source": "To eat",
             "pronunciation": "la",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "fā",
             "source": "To die",
             "pronunciation": "fa",
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "target": "cēzā",
             "source": "To dance",
             "pronunciation": "ce-za",
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           }
         ],
         "sentences": [
@@ -13242,7 +13276,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "To go",
               "To laugh"
             ],
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
@@ -13254,7 +13288,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "To know",
               "To laugh"
             ],
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
@@ -13266,7 +13300,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "To laugh",
               "To know"
             ],
-            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "21e. Ki-tikuu (Bajuni) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
@@ -13325,7 +13359,197 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "ūlāgā, -ūā",
               "pā"
             ],
-            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, V"
+            "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
+          }
+        ]
+      }
+    ]
+  }
+  ,
+  {
+    "id": "swahili-unit-17-krapf-1882-complete",
+    "title": "Unit 17: Krapf (1882) Suahili Dictionary — Outline of Grammar, 7 Salutations, Marine Songs, Calendar & Coastal Taxonomies",
+    "description": "Master the complete grammatical, lexical, and ethnographic wealth of Rev. Dr. L. Krapf's 1882 'A Dictionary of the Suahili Language' (pp. i–xl, 1–431): the 7 Modes of Salutation (p. xx), 8 Noun Classes & Post-Prefixes, Kimvita verb paradigms & enclitic objects (-mi, -we, -e, -sui, -nui, -o), 12 Swahili & 12 Wanika Months, Siku ya Muaka (Nairuz), 24-hour time divisions, Marine & Lover's Songs, and coastal taxonomies.",
+    "icon": "Compass",
+    "skills": [
+      {
+        "id": "swahili-krapf-1882-salutations-grammar-calendar",
+        "title": "Krapf (1882) 7 Salutations, Post-Prefixes, Enclitic Pronouns & Coastal Calendar",
+        "description": "Learn the 7 hierarchical salutations (p. xx), Kimvita passive -oa and enclitic object suffixes (p. xxx), the 12 Swahili lunar months (pp. 223–224), 6 monsoon seasons (p. 248), and 24-hour time divisions (pp. 252–253, 318).",
+        "words": [
+          {
+            "id": "sw-krapf1882-w1",
+            "indigenous": "Hu jambo? — Si jambo • U hali gani? — Njema / Mzima • Subalkheri! • Masalkheri! • Nashika miguu / Marahaba!",
+            "english": "Seven Modes of Salutation (Krapf 1882, p. xx): How art thou? — I am well • What is thy state? — Good/Well • Good morning! • Good evening! • I clasp thy feet (inferior to superior) / Welcome!",
+            "pronunciation": "hu ja-mbo — si ja-mbo / su-bal-khe-ri / ma-sal-khe-ri / na-shi-ka mi-guu — ma-ra-ha-ba",
+            "PartOfSpeech": "phrase",
+            "example": "Kua heri ya ku onana! — Amani ya Mungu! (Farewell till we meet again! — Peace of God! p. xx)"
+          },
+          {
+            "id": "sw-krapf1882-w2",
+            "indigenous": "ni-pá-mi • na-ku-pendá-we • na-m-pendá-e • a-tu-pendá-sui • na-wa-pendá-nui • na-wa-pendá-o",
+            "english": "Kimvita enclitic personal pronouns suffixed to the verb (Krapf 1882, p. xxx): give to me • I love thee • I love him • he loves us • I love you (pl.) • I love them",
+            "pronunciation": "ni-pa-mi / na-ku-pe-nda-we / na-m-pe-nda-e / a-tu-pe-nda-sui / na-wa-pe-nda-nui / na-wa-pe-nda-o",
+            "PartOfSpeech": "verb",
+            "example": "Ambai kuamba apenda / ambao kuamba wapenda (Analytic relative 'who loves / who love', p. xxv)"
+          },
+          {
+            "id": "sw-krapf1882-w3",
+            "indigenous": "Mfungúo wa mosi (Shaual) ... Mfungúo wa kenda (Rajab) • Mlisho / Shabani (10th) • Ramatháni (11th) • Hajji (12th)",
+            "english": "Twelve Swahili/Arabic Lunar Months reckoned from the breaking of the Ramadan fast (Krapf 1882, pp. 223–224, 238)",
+            "pronunciation": "m-fu-nguo wa mo-si ... m-fu-nguo wa ke-nda / m-li-sho / ra-ma-tha-ni / ha-jji",
+            "PartOfSpeech": "noun",
+            "example": "Siku ya muaka / Neruz (Solar New Year ~Aug. 24 reckoned in 10-day muóngo decades, pp. 258, 338)"
+          },
+          {
+            "id": "sw-krapf1882-w4",
+            "indigenous": "Musimi / Kazkazi (Nov–Feb) • Masíka (Mar–May) • Kipúpue (Jun–Aug) • Damani / Muaka (Aug–Oct) • Kussi • Tanga mbili / Malelezi",
+            "english": "Six Coastal Seasons & Monsoons and Three Annual Harvests: kilimo ja muaka, kilimo ja mjō (July–Sept), kilimo ja fuli (Krapf 1882, pp. 230, 248)",
+            "pronunciation": "mu-si-mi ka-zka-zi / ma-si-ka / ki-pu-pue / da-ma-ni / ku-ssi / ta-nga mbi-li ma-le-le-zi",
+            "PartOfSpeech": "noun",
+            "example": "Wingu la kussi lajā na mvúa (A south-wind cloud comes with rain, p. 187)"
+          },
+          {
+            "id": "sw-krapf1882-w5",
+            "indigenous": "elfágiri • subukhi mbitimbiti • mafungulia ngombe (8 AM) • athóhuri (12 PM) • elásiri (3:30 PM) • magháribi (6 PM) • esha (7–8 PM)",
+            "english": "Swahili 24-Hour Daily Time Divisions & 12-Hour Sunset Clock (Krapf 1882, pp. 248, 252–253, 318)",
+            "pronunciation": "el-fa-gi-ri / su-bu-khi mbi-ti-mbi-ti / ma-fu-ngu-lia ngo-mbe / a-tho-hu-ri / e-la-si-ri / ma-gha-ri-bi / e-sha",
+            "PartOfSpeech": "noun",
+            "example": "Saa ya mosi (7 PM or 7 AM), saa ya sita (midnight or noon), saa ya ethnáshera (6 PM or 6 AM, p. 318)"
+          }
+        ],
+        "sentences": [
+          {
+            "indigenous": "Mombása kúlā kua ku papassa, hakuna teári kama Unguja.",
+            "english": "At Mombasa you eat by groping (hard toil), nothing is ready-made like at Zanzibar. (Krapf 1882, p. 241)",
+            "gloss": "Mombasa | to-eat | by | groping | there-is-not | ready | like | Zanzibar"
+          },
+          {
+            "indigenous": "Ndaulía si ulinzi, bora ni ku enda muegniéwe; Neno ukatálo ndílo Mungu afaniálo.",
+            "english": "'Look out for me' is no watching, it is better to go yourself; the thing thou refusest is the very thing God brings about. (Krapf 1882, pp. 274, 277)",
+            "gloss": "look-for-me | is-not | watching | better | is | to-go | yourself"
+          }
+        ],
+        "exercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Krapf's Outline of Grammar (1882, p. xx), what salutation does an inferior address to a superior, and what is the reply?",
+            "correctAnswer": "Nashika miguu ('I clasp thy feet') — Reply: Marahaba! or Ahsanta!",
+            "options": [
+              "Nashika miguu ('I clasp thy feet') — Reply: Marahaba! or Ahsanta!",
+              "Hodi! hodi! — Reply: Karibu!",
+              "Kua heri — Reply: Amani ya Mungu",
+              "Sumile! — Reply: Similla!"
+            ],
+            "hint": "Literally 'I lay hold of thy feet' (Mode 5 of the 7 Salutations on p. xx)."
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "In Krapf's Kimvita grammar (1882, p. xxx), the 1st person plural enclitic object suffix attached to the end of a verb ('he loves us' = a-tu-pendá-___) is ___.",
+            "correctAnswer": "sui",
+            "options": [
+              "sui",
+              "nui",
+              "mi",
+              "we"
+            ],
+            "hint": "Derived from suisui ('we/us'): -mi (1s), -we (2s), -e (3s), -sui (1p), -nui (2p), -o (3p)."
+          }
+        ]
+      },
+      {
+        "id": "swahili-krapf-1882-songs-taxonomies-topography",
+        "title": "Krapf (1882) Marine & Lover's Songs, Coastal Taxonomies & Mombasa Topography",
+        "description": "Explore the verbatim songs (Muakaje, Killefi, Mguáme, Simba ya Mungu), 5 coconut & 8 rice stages, 6 handful measures, 13 ornaments, and Mombasa/Rabai historical ethnography.",
+        "words": [
+          {
+            "id": "sw-krapf1882-w6",
+            "indigenous": "1. kidáka • 2. kitále • 3. dafu • 4. kórŏma • 5. nasi (nazi)",
+            "english": "Five Coconut Growth Stages from tiny bud on the pande stalk to fully ripe nut (Krapf 1882, p. 273 s.v. Nasi; 40–60 sold for 1/4 dollar at Mombasa)",
+            "pronunciation": "ki-da-ka / ki-ta-le / da-fu / ko-ro-ma / na-zi",
+            "PartOfSpeech": "noun",
+            "example": "Ajábu ni mtáūsi, ku taúa nazi mbófu (The wonder is the fastidious chooser who picks a rotten coconut, p. 254)"
+          },
+          {
+            "id": "sw-krapf1882-w7",
+            "indigenous": "1. óya • 2. dópa (jópa / topa) • 3. koffi (2 makoffi = 1 kebába = 4 nióya) • 4. konsi • 5. mgnánda • 6. ngúmi",
+            "english": "Six Handful & Fist Measures of Grain (Krapf 1882, p. 291 s.v. O'ya [2]; plus 1 farasila = 12 manni = 35 rotteli, p. 316)",
+            "pronunciation": "o-ya / do-pa / ko-ffi / ko-nsi / m-gna-nda / ngu-mi",
+            "PartOfSpeech": "noun",
+            "example": "1 pishi = 4 kebába; 12 pishi = 72 rotteli (p. 316)"
+          },
+          {
+            "id": "sw-krapf1882-w8",
+            "indigenous": "jánga • kipini • ndónia • kikúku • fúja • kekée • mtóri • tuku • majáji • beléshi • furúngu • jóa • mbiu",
+            "english": "Thirteen Traditional Swahili Ornaments (Krapf 1882, pp. 409–410 s.v. Urémbo) & Seven Bead Types (ushanga wa kike, ushanga wa kiume, kadunduguru, kiptingo, nili, murtutu, bubu, p. 410)",
+            "pronunciation": "ja-nga / ki-pi-ni / ndo-nia / ki-ku-ku / fu-ja / ke-kee / m-to-ri / fu-ru-ngu",
+            "PartOfSpeech": "noun",
+            "example": "Wakamba watungíwa wao ushanga (For the Wakamba their beads are strung, p. 231)"
+          },
+          {
+            "id": "sw-krapf1882-w9",
+            "indigenous": "Mvita (Shehe Mvita) • Kongowéa (Makame iwe / Kiwemtu / Mku gnombe) • Kiziwáni (Kin.) • Kidiamóni (Kik.) • Ngoméni (Kisamb.) • Worra Mombása (Galla)",
+            "english": "Names & Founding Legends of Mombasa (Krapf 1882, pp. 119, 240–241, 270, 365: Kiwialía cha Mwita native-born, Kikulía cha Mwita raised there, Teléa newcomer)",
+            "pronunciation": "m-vi-ta / she-he m-vi-ta / ko-ngo-we-a / ki-zi-wa-ni / ki-dia-mo-ni / ngo-me-ni",
+            "PartOfSpeech": "noun",
+            "example": "Takaúngu (Mazrui refuge after Imam of Muscat took Mombasa, p. 355) • Siyu (chief seat of ancient Suahili learning on Patta, p. 343)"
+          },
+          {
+            "id": "sw-krapf1882-w10",
+            "indigenous": "Mjūkū (grandchild) → Mtūkū / Kitūkū (great-grandchild) → Mlikū (great-great-grandchild, 4th generation)",
+            "english": "Four Generations of Descendants in Swahili Kinship (Krapf 1882, pp. 231, 237, 256)",
+            "pronunciation": "m-ju-kuu / m-tu-kuu ki-tu-kuu / m-li-kuu",
+            "PartOfSpeech": "noun",
+            "example": "Mjómba (maternal uncle; pl. Wajomba = the Swahili, p. 230)"
+          }
+        ],
+        "sentences": [
+          {
+            "indigenous": "Atáni ku takábari! muangalie Mguáme... ulimengu una hadáa: sasa mti wa mnázi huangúka ukiináma.",
+            "english": "Cease from pride! Behold Mguáme... the world is full of deceit: now the tall coconut tree falls bowing low. (Krapf 1882, p. 256)",
+            "gloss": "cease | to-be-proud | behold-him | Mguame | world | has | deceit | now | tree | of | coconut | falls | bowing"
+          },
+          {
+            "indigenous": "Killéfi mkáta jombo, mkata na mlingóte, azama na wátu wóte, hápŏni mtu mmója.",
+            "english": "The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes. (Krapf 1882, p. 183)",
+            "gloss": "Killefi | cutter-of | vessel | cutter | with | mast | sinks | with | people | all | escapes-not | person | one"
+          }
+        ],
+        "exercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "According to Krapf (1882, pp. 229, 250, 271 s.v. Misúngu / Mzungu), why did the Swahili call Europeans 'Wazungu'?",
+            "correctAnswer": "From mzungu ('understanding, cleverness, skill, strange/wondrous things'), because their minds and manufactures move round everything with skill — not from skin colour",
+            "options": [
+              "From mzungu ('understanding, cleverness, skill, strange/wondrous things'), because their minds and manufactures move round everything with skill — not from skin colour",
+              "Because they arrived during the Kusi monsoon",
+              "From the Arabic word for silver coins",
+              "From the name of an island near Patta"
+            ],
+            "hint": "Krapf notes (p. 229): 'Hence the Suahili call the Europeans Wazungu from their sharpness of understanding, and not from the colour of their skin.'"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Mombasa inhabitant status or historical site in Krapf (1882) with its meaning:",
+            "correctAnswer": "Kiwialía cha Mwita: Native-born citizen of Mombasa (p. 365)",
+            "pairs": [
+              {
+                "left": "Kiwialía cha Mwita",
+                "right": "Native-born citizen of Mombasa (p. 365)"
+              },
+              {
+                "left": "Kikulía cha Mwita",
+                "right": "Person brought up at Mombasa from youth (p. 365)"
+              },
+              {
+                "left": "Teléa",
+                "right": "Adult newcomer who settled at Mombasa later in life (p. 365)"
+              },
+              {
+                "left": "Siyu (on Patta)",
+                "right": "Chief seat of ancient Suahili learning (p. 343)"
+              }
+            ]
           }
         ]
       }
@@ -13428,6 +13652,46 @@ export const SWAHILI_GRAMMAR_SECTIONS: SwahiliGrammarSection[] = [
         "swahili": "Watu wanaoimba • Watu wakiimba • Watu wasioimba",
         "english": "People who are singing • Singing people • People who do not sing",
         "explanation": "Tensed relative -na-o-, participial -ki-, and negative relative -si-o-"
+      }
+    ]
+  }
+  ,
+  {
+    "id": "swahili-krapf-1882-grammar-dictionary-complete",
+    "title": "Rev. Dr. L. Krapf's (1882) 'A Dictionary of the Suahili Language' & 'Outline of a Suahili Grammar' — Complete Synthesis (Book pp. i–xl, 1–431)",
+    "summary": "Synthesizes 100% of Rev. Dr. Johann Ludwig Krapf's monumental 1882 Trübner monograph: Robert Cust's Introduction (pp. v–vi), Krapf's Preface (pp. vii–xii), the Outline of Grammar (Parts I–II, Chs. I–XVIII, Tables I–VI, pp. xiii–xxxix), the 21 Abbreviations (p. xl), and the encyclopedic A–Z Lexicon (pp. 1–431).",
+    "content": `1. **Front Matter, Introduction by Robert Cust (pp. v–vi) & Compiler's Preface by Dr. L. Krapf (pp. vii–xii)**:
+   - **Publication & Frontispiece (PDF pp. 1–15 / Book pp. [i]–vi)**: Engraved steel portrait of Dr. Krapf by *Weger sc. Leipzig* with facsimile signature *L. Krapf*; published by Trübner and Co., Ludgate Hill, London, and printed by Ballantyne, Hanson and Co., Edinburgh and London (1882). **Robert N. Cust** (Honorary Secretary of the Royal Asiatic Society, *London, March 24, 1882*, pp. v–vi) recounts how Krapf corrected proof-sheets down to **p. 336 (Letter S)** before dying on his knees by his bedside at Kornthal on **Nov. 26, 1881**, and how Cust and **Rev. J. T. Last** of C.M.S. Mamboia saw the remaining sheets through the press.
+   - **Krapf's 1843–1844 Voyage & Sultan Said-Said's Prophecy (pp. vii–viii)**: Dated *Kornthal, near Stuttgart, Wurtemberg, July 28, 1881*. Departing Aden in Nov. 1843 with **Mrs. Rosine Krapf** aboard an Arab *Bágăla* forced back by the *Kasikazi* monsoon, Krapf re-embarked in another vessel calling at Ras Hafun, Mukdisha, Barawa (Christmas Day 1843), the **Kiama Islands** (listening to **Waboni** hunters converse with a Galla chief), **Takaungu** (converting a storm-vowed sheep into a lexicon of several hundred Kimvita words while sketching the harbour), **Mombasa**, **Tanga**, and **Pemba**, reaching **Zanzibar on Jan. 6, 1844**. Presented on **Jan. 7, 1844** by **Major Hamerton** to **Sultan Said-Said**, the Imam remarked that Arabic is like a bone hard to break where a single misplaced vowel ruins the sense, whereas **Suahili has neither harsh letters nor vowels and is understood even if one commits grammatical blunders**.
+   - **Lexicographical History & Dialectology (pp. viii–xii)**: Founding of **Rabbai Mpia** in 1844 (after losing his wife and infant daughter at Mombasa in July 1844); arrival of **Rev. John Rebmann** (June 1846) and **Rev. J. Erhardt** (June 15, 1849, p. xl); compilation of the 4-volume MS dictionary (1853–1854) lent to **Bishop Edward Steere** at Zanzibar; distinction of **3 Coastal Dialect Belts** — (1) Northern (*Kiamu, Kipate, Kigunia/Bajun, Kisiu*), (2) Central (*Kimvita* of Mombasa, preferred by Krapf over heavily Arabicized *Kiunguja*), and (3) Southern (*Kiunguja* of Zanzibar & *Kimrima*) — plus archaic poetic **Kingozi** of Malindi; critique of the Lepsius Standard Alphabet vs. practical CMS Roman orthography; and tribute to **Judge Khamis bin Othman (Sheikh Ali bin Athman)** of Mombasa as his chief linguistic mentor.
+
+2. **An Outline of Grammar of the Suahili Language (Book pp. xiii–xxxix)**:
+   - **Part I — Phonology (Chs. I–III, pp. xiii–xiv)**: **5 Italian vowels** (*a, e, i, o, u*) and diphthongs (*ai, au, ei, oi, ui*); **24 consonants** including cerebral vs. dental stops, *gn / ng'*, *kh*, *gh*, *sh*, *th* (voiceless *θ* and voiced *ð*), and *z*; **Penultimate Stress Rule** (shifted forward by enclitics **-pi, -ni, -je**, e.g., *átăka → atakápi? atakáni? atakáje?*, p. xiv); and **Syllabic Nasals** (*m', n'*).
+   - **Part II — Etymology (Chs. I–XVIII, Tables I–VI, pp. xiv–xxxix)**:
+     - **8 Noun Classes & "Post-Prefixes" (Chs. I–V, Tables I–III, pp. xiv–xxi)**: Divided into **(A) Prefixed** (Class I *m-/wa-* animate; Class II *m-/mi-* trees/inanimate), **(B) In Part-Prefixed** (Class III *-/Ø niumba* invariable; Class IV *-/ma-* *neno/maneno* & augmentatives; Class V *ki-/vi-* & *ch-/vi-* diminutives/tools; Class VI *u-/Ø, ni-, ma-, mb-, nd-* abstracts & long/thin objects), and **(C) Non-Prefixed** (Class VII *máhali* locative; Class VIII *ku-* verbal infinitives). Krapf coins **"post-prefix"** for the variable genitive particle (**wa, ya, la, cha, via, za, pa, mua, kua**, derived from *ku-a* "to be", p. xxi).
+     - **7 Modes of Salutation (Ch. IV, p. xx)**: (1) *Hu jambo? — Si jambo!*; (2) *U hali gani? — Njema / Mzima!*; (3) Morning *Subalkheri! — Subalkheri!* (or *Umelaláje? — Saláma!*); (4) Evening *Masalkheri!*; (5) Inferior to Superior *Nashika migúu!* ("I clasp thy feet") — Reply: *Marahába!* or *Ahsánta!*; (6) Knocking at a door *Hódi! hódi!* — Reply: *Karíbu!* or *Ingía!*; (7) Parting *Kua heri! — Kua heri ya ku onána! / Amani ya Mungu!*
+     - **6 Derivative Verb Species & Full Paradigm of *penda* (Chs. VI–VIII, Table IV, pp. xxii–xxx)**: (1) Simple (*ku penda*), (2) Causative (*-sa / -za / -sha*, *ku pendéza*), (3) Objective/Dative (*-ia / -ea*, *ku pendéa*), (4) Reflexive (*ji-*, *ku jipénda*), (5) Reciprocal (*-na*, *ku pendána*), and (6) Iterative/Intensive (*-le- / -li-*). Full affirmative, negative, relative, participial, conditional (*-ki-, -nge-, -ngali-*), habitual (*hu-*), and Kimvita passive (**-oa**, *ku pendoa*) conjugation of *ku penda*.
+     - **12 Additions to Ch. VIII & Remaining Parts of Speech (Chs. IX–XVIII, Tables V–VI, pp. xxx–xxxix)**: Enclitic personal object suffixes (**-mi, -we, -e, -sui, -nui, -o**: *ni-pá-mi, na-ku-pendá-we, na-m-pendá-e, a-tu-pendá-sui, na-wa-pendá-nui, na-wa-pendá-o*, p. xxx); analytic relatives with **ambai kuamba / ambao kuamba** (p. xxv); irregular/monosyllabic verbs (*ku wa, ku ja, ku la, ku fa, ku nioa*) and auxiliary verbs (*ku isha, ku pata, ku taka, ku weza*); cardinals 1–1,000,000, ordinals, and distributive numerals (*wawili wawili*); adjectives & comparative *ku pita / zaidi ya*; personal, possessive, demonstrative (Tables V–VI), relative, and interrogative pronouns; **9 classes of Adverbs** (Place, Time, Manner, Quantity, Affirmation, Negation, Doubt, Interrogation, Demonstation), Prepositions, Conjunctions, and Interjections; and **21 Abbreviations** (p. xl).
+
+3. **Encyclopedic Taxonomies, Songs, Calendars & Coastal Ethnography in the A–Z Lexicon (Book pp. 1–431)**:
+   - **Time, Calendars & Cosmology**: **12 Swahili/Arabic Lunar Months** (*Mfungúo wa mosi [Shaual]* to *Mfungúo wa kenda [Rajab]*, *Mlisho / Shabani*, *Ramatháni*, *Hajji*, pp. 223–224, 238); **12 Wanika Months** in two 6-month half-years (*Múaka wa Masika/Furi*: *M'iru, Muya, Mágŭno, M'bula, Kásu, M'fúngo*; *Múaka wa Kaskázi*: *Kahu, Muhanzo wa kahu, K'elili, K'allá, K'ulá, K'etzi*, p. 205); **Persian 365-Day Solar Year** beginning at **Siku ya muaka / Neruz / Nairuz** (~Aug. 24, sea-bathing, feast, and abolition of old impunity by Sultan Said-Said, reckoned in 10-day *muóngo* decades, pp. 258, 338); **6 Seasons** (*Musimi/Kazkazi, Masíka, Kipúpue, Damani/Muaka, Kussi, Tanga mbili/Malelezi*, p. 248) & **3 Annual Harvests** (*kilimo ja muaka, kilimo ja mjō, kilimo ja fuli*, p. 230); **24-Hour Time Divisions** & **12-Hour Sunset Clock** (*elfágiri, subukhi mbitimbiti, mafungulia ngombe, athóhuri, elásiri, magháribi, esha*, *saa ya mosi* to *saa ya ethnáshera*, pp. 248, 252–253, 318); **7 Heavens (*mbingu sabaa*)**, earthquake myth of the two-horned cow carrying the earth (*selsel ya nti*, p. 326), and sun proverb *"jua latoka kua mfuma ngúo, lasáma kua mfuma ngófi"* (p. 411).
+   - **Natural History & Material Culture Taxonomies**: **53 Bird species** (s.v. *Niúni*, p. 284); **63 Fish species** (s.v. *Sámăki*, pp. 322–323) & **4 Sea-eel species** (*mkunga-sūi, mkunga mbóno* vs. forbidden *mkunga brăhim, shokóle*, pp. 235–236); **6 Bee varieties** (s.v. *Niúki*, pp. 283–284); **4 Elephant growth stages** (*kinda, babe, mana, ndófu mkuba*, p. 276); **5 Coconut stages** (*kidáka, kitále, dafu, kórŏma, nasi*, p. 273); **8 Banana varieties** (*kike, kiume, mukóno wa tēmbo, mkadda, kisúkari, kojósi, mpanje, paka*, p. 275); **8 Rice varieties** (*bungala, garofu, kapuai, kifungo, madévu, muanga, sifara, uchukui*, pp. 276–277); **3 Cassava varieties** (*kindóro, muhógo mke, muhógo mume* & *makópa*, p. 264); **19 Cloth types** (s.v. *Kítāmbi*, p. 158); **9 Gun types** (s.v. *Kĭbóndo*, p. 148) & **4 Sword types** (s.v. *Kítāra*, p. 159); **4 Mat types** (*mkéka, msalla, mkéka wa Kimăfía, jámfi*, pp. 232–233); **4 Drum types** (*msondo, japúo, kumbuáya, tári*, p. 279) & **5 Dances** (*gungu, msapata, hanzua, kitanga cha pepo, soma*, p. 254); **13 Ornaments** (s.v. *Urémbo*, pp. 409–410) & **7 Bead types** (s.v. *Ushánga*, p. 410); **6 Handful measures** (*óya, dópa, koffi, konsi, mgnánda, ngúmi*, p. 291); **5 Reáli coins**, *Pesa* (introduced 1845–1846 by Major Hamerton), and *Farasila / Pishi / Kebába* weights (pp. 271, 302, 315–316).
+   - **Historical Topography & Ritual Ethnography**: **Mombasa / Mvita / Kongowéa** (founded by *Shehe Mvita*, buried opposite Kizaúni/Frere Town; 3 ancient names *Makame iwe, Kiwemtu, Mku gnombe*, p. 119; 3 inhabitant statuses *Kiwialía cha Mwita, Kikulía cha Mwita, Teléa*, p. 365; quarters *Katháni, Kisulutini, Gavana*, p. 251; Galla 4 *Worra*, pp. 240–241, 270); **6 Divisions of Mríma** (*Wafúmba, Kifundi, Wamoyúni, Kiumbagéni, Mkuakuáni, Usambara hills*, p. 244); **Siyu** on Patta (p. 343); **Takaúngu** (p. 355); **Ungama** (Formosa Bay swallowed by the sea for washing with milk and wiping with bread, p. 405); **Lake Zuai / Láki** in Arusi Galla (1875 Mayer letter, p. 343); **7-day *Púnga pepo* exorcism** (pp. 311–312); **7-step *Táhĭri* circumcision** (pp. 353–354); **4 *Sádaka* alms & rain-prayer** (p. 319); and why Europeans are called **Wazungu** (from *mzungu* "understanding/mechanical skill", pp. 229, 250, 271).`,
+    "examples": [
+      {
+        "swahili": "ni-pá-mi • na-ku-pendá-we • a-tu-pendá-sui • na-wa-pendá-nui • na-wa-pendá-o",
+        "english": "give to me • I love thee • he loves us • I love you (pl.) • I love them",
+        "explanation": "Kimvita enclitic personal object suffixes in Krapf's Outline of Grammar (1882, p. xxx)"
+      },
+      {
+        "swahili": "Muakaje akipendeka akitía wino matóni... Kertasi ya Shamu enenda kua mama...",
+        "english": "When Muakaje paints her eyes with antimony... O paper of Syria, go to my mother...",
+        "explanation": "Verbatim Kimvita Lover's & Bride's Song (Krapf 1882, pp. 182–183 s.v. Kertási & Killéfi)"
+      },
+      {
+        "swahili": "1. óya • 2. dópa • 3. koffi (2 makoffi = 1 kebába = 4 nióya) • 4. konsi • 5. mgnánda • 6. ngúmi",
+        "english": "Six traditional handful and fist measures of grain",
+        "explanation": "Krapf (1882, p. 291 s.v. O'ya [2])"
       }
     ]
   }
@@ -17001,7 +17265,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Magoma mairi lwanda-ni. Ni mahombo.",
-            "source": "Two gourds in the open field. — Maternal nourishment (Taylor 1891 Riddle #18)",
+            "source": "Two cows, in the open field. — It is the breasts / maternal nourishment (Taylor 1891 Riddle #18)",
             "pronunciation": "ma-go-ma mai-ri lwanda-ni ni ma-hombo",
             "hint": "lwanda-ni = in the open field"
           }
@@ -17157,9 +17421,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
-            "target": "id",
-            "source": "Family",
-            "pronunciation": "id",
+            "target": "lukolo (pl. k'olo) / mbari",
+            "source": "Family / Clan",
+            "pronunciation": "lu-ko-lo / mba-ri",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
@@ -17693,9 +17957,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "wirasi"
           },
           {
-            "target": "adj",
+            "target": "-nono (noun: mafuha)",
             "source": "Fat",
-            "pronunciation": "adj"
+            "pronunciation": "-no-no / ma-fu-ha"
           }
         ],
         "sentences": [
@@ -18642,9 +18906,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "ia"
           },
           {
-            "target": "to carry, ku-tsukula",
+            "target": "ku-tsukula (to carry); ku-vyaa (to bear)",
             "source": "Bear",
-            "pronunciation": "to carry ku-tsukula"
+            "pronunciation": "ku-tsukula / ku-vyaa"
           },
           {
             "target": "mánia",
@@ -19652,9 +19916,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "tips": "Every item in this skill is grounded directly in the historical Mijikenda (Giriama) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
           {
-            "target": "as interjection, Be!",
-            "source": "Well!",
-            "pronunciation": "as interjection be",
+            "target": "Be!",
+            "source": "Well! (as interjection)",
+            "pronunciation": "be",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
@@ -19676,9 +19940,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "musasa [see Rub",
+            "target": "musasa",
             "source": "Sandpaper-tree",
-            "pronunciation": "mu-sa-sa see rub",
+            "pronunciation": "mu-sa-sa",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
@@ -19688,9 +19952,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "bamboo, large cylinder of, muvungu",
+            "target": "t'ete (pl. mat'ete) / muvungu (bamboo cylinder)",
             "source": "Reed",
-            "pronunciation": "bamboo large cylinder of mu-vungu",
+            "pronunciation": "t'e-te / mu-vungu",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
@@ -19705,10 +19969,10 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"as interjection, Be!\" in Mijikenda?",
-            "correctAnswer": "Well!",
+            "prompt": "What is the English meaning of \"Be!\" in Mijikenda?",
+            "correctAnswer": "Well! (as interjection)",
             "options": [
-              "Well!",
+              "Well! (as interjection)",
               "Wave",
               "Stream",
               "Sky"
@@ -19718,11 +19982,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Mijikenda (Giriama) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "as interjection, Be!: Well!",
+            "correctAnswer": "Be!: Well! (as interjection)",
             "pairs": [
               {
-                "left": "as interjection, Be!",
-                "right": "Well!"
+                "left": "Be!",
+                "right": "Well! (as interjection)"
               },
               {
                 "left": "imbi",
@@ -19741,11 +20005,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Mijikenda (Giriama) term for \"Sandpaper-tree\": ___",
-            "correctAnswer": "musasa [see Rub",
+            "correctAnswer": "musasa",
             "options": [
-              "musasa [see Rub",
+              "musasa",
               "sina (ma-)",
-              "as interjection, Be!",
+              "Be!",
               "imbi"
             ],
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
@@ -19772,9 +20036,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "lumete [Errata]",
+            "target": "lumele (pl. mele) / lukwasi",
             "source": "Lightning",
-            "pronunciation": "lu-me-te",
+            "pronunciation": "lu-me-le / lu-kwa-si",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
@@ -19784,9 +20048,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "m'oho [see HOT]",
+            "target": "m'oho / lufukufuku",
             "source": "Heat",
-            "pronunciation": "m'o-ho",
+            "pronunciation": "m'o-ho / lu-fu-ku-fu-ku",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
@@ -19802,8 +20066,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "(to), ku-m'-richa hakeye",
-            "source": "Desert",
+            "target": "ku-m'-richa hakeye (noun: nyika / weru)",
+            "source": "Desert (to leave alone) / Wilderness",
             "pronunciation": "ku-m'-richa ha-ke-ye",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           }
@@ -19837,7 +20101,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Mud"
               },
               {
-                "left": "lumete [Errata]",
+                "left": "lumele (pl. mele) / lukwasi",
                 "right": "Lightning"
               },
               {
@@ -19849,9 +20113,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Mijikenda (Giriama) term for \"Heat\": ___",
-            "correctAnswer": "m'oho [see HOT]",
+            "correctAnswer": "m'oho / lufukufuku",
             "options": [
-              "m'oho [see HOT]",
+              "m'oho / lufukufuku",
               "muungo",
               "mulombi",
               "t'orove"
@@ -20169,17 +20433,59 @@ export const MIJIKENDA_GRAMMAR_SECTIONS: MijikendaGrammarSection[] = [
     "id": "mijikenda-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Mijikenda (Giriama))",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Mijikenda (Giriama).",
-    "content": "1. **Archival & Open-Dataset Integration for Mijikenda (Giriama)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Complete Ethnographic, Grammatical & Lexical Synthesis of Rev. W. E. Taylor (1891, pp. i–xxviii, 1–140)**:\n   - **Habitat & 70 *Malalo* Districts (pp. v–vii)**: **Weruni** (South-West, 15 districts: *Chijembeni, Miyuni, Mwidzimwiru, Mbuyuni, Birini, K'aloleni, Ts'aka Reri, M'tsangani, M'tepeni, M'kapuni, M'tsapuni, Buni, K'ambini, Vishakani, Gulicha*), **Central Giryama** (31 districts around **Kaya Fungo / Bomani**: *Mwandoni, Ndatani, Murimani, Kidzini, Mwaeba, Gotani, Kinagoni, Vigongoni*, etc.), and **Northern Giryama** (24 districts stretching to **Gohu / Kilima cha K'ilifi**, *Dindiri, Sinikumbe, Rare, K'onjora, Mutangani, Mangea, Garashi*).\n   - **Phonology, Accent & *Hvoyo ra Bwana* (pp. viii–xvi)**: 5 vowel minimal-pair sets (*p'ep'o/p'ep'e/p'ip'a/p'op'o/p'up'u*, etc.), voiceless nasals (*hm, hn*), *hv* (*hvoyo, hvwaha*), 6 unaspirated vs. aspirated stop pairs (*p/p', t/t', *t*/*t*', ts/ts', ch/ch', k/k'*) with *n*-blending rules, the 5-clause Lord's Prayer (*Hvoyo ra Bwana*, p. xiv), the Grandmother–Child intonation dialogue (pp. xv–xvi), and falsetto ideophones (*tsé!, do!, pi!, myá!*).\n   - **Relation to Swahili & *Sketch of the Giryama Verb* (pp. xvi–xxviii)**: Archaic Swahili **Ngozi** links, 8 verb moods (§§ I–IV), monosyllabic verbs (§ V), negative conjugations (§ VI), 12-class relative prefixes (§ VII), and Errata (p. xxviii: *dhedhu* p. 30, *lumele* p. 51, *kuku* p. 56, *ki-dza-kula* p. 84).\n   - **Embedded Vocabulary Taxonomies (pp. 1–112)**: **23 Antelope species** (p. 4), **BE** 12-class tables (pp. 9–11), **55 Bird species** (p. 12), **13 *Marika* Circumcision Cycles** (p. 19: *Wula-mbere, Wula-kahi, Wula-nyuma, T'ungudza, P'uku, Nguluwe, Vitambi, Vitsoka, Abi-Kizi, Atsai, Mafira, Mitseka, Nyoga*), **6 Devils & *Katsumbakazi*** (p. 25), **5 Entrail parts** (p. 28), **10 Fowl growth stages** (p. 34), **Freemasonry** (pp. 34–35: 7 *Habasi* degrees with *Ubora* [*Nyere, Muhagizi, Ahoho a Mihasoni*] and *Gawe* [*M'kuzi, Mwandza M'kulu*], plus *K'ambi* [*luwoo* armlet at *Nyambura*, *M'oro*] → *Waya* [*Mwa-M'kulu* in *bandari*], *Fisi* [*Mwa-Rima*], *Enye-ts'i*), **Moon** 3 decades (*Muandamo, Mulungulungu, Kidziza*) & 4-day week (*Kuramuka, Kurima-hiri, Kuisa, Jumwa*, p. 55), **16 *Nation* groups** (p. 58), **Relations** kinship (p. 74), **Notes on the Giryama Religion** (*Mulungu, K'oma, M'bingu*, pp. 74–75), **Riddle** opening (*Chondoni! — Dekeha!*, p. 76), **Salutations** (p. 79), **9 Snakes** (p. 86), **132 Trees/Shrubs** (pp. 99–101), **17 *Work* occupations** (p. 110), **Year** seasons & proverbs (p. 111), and **Addendum** on *But* (*ela, halafu, ndip'o*, p. 112).\n   - **Collections (pp. 113–140)**: All 5 *Ngano za Kigiryama* folktales (pp. 114–137) and all 22 *Ndumo za Kigiryama* riddles (pp. 138–140).",
     "examples": [
       {
-        "mijikenda": "as interjection, Be! • imbi",
-        "english": "Well! • Wave",
+        "mijikenda": "Be! • imbi • lumele (pl. mele)",
+        "english": "Well! (as interjection) • Wave • Lightning (corrected from lumete in Errata p. xxviii)",
         "explanation": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
       },
       {
         "mijikenda": "mulombi • t'orove",
         "english": "Rain-maker • Mud",
         "explanation": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
+      }
+    ]
+  }
+  ,
+  {
+    "id": "mijikenda-krapf-1882-kinika-calendar-ethnography",
+    "title": "Rev. Dr. L. Krapf's (1882) Kinika (Mijikenda) Ethnography: 12 Wanika Months, 12 Tribes, Mutzi Muíru Kaya Chronicle, Muánsa Drum & 5 Kiapo Ordeals",
+    "summary": "Synthesizes all Kinika (Rabai, Giriama, Duruma, Digo) linguistic, calendrical, historical, and legal data embedded across Rev. Dr. L. Krapf's 'A Dictionary of the Suahili Language' (1882, pp. xl, 136, 205, 239–240, 246, 261, 268–269).",
+    "content": `1. **The Twelve Wanika Tribes, Origins & Republican Governance (Book pp. 239–240, 246)**:
+   - **Habitat & Population (s.v. *Mníka*, pp. 239–240)**: The **Wanika** inhabit the coastal hill range from **400 to 1,600 feet above sea level** between $3^\circ\text{–}5^\circ\text{ S}$, numbering **50,000 to 60,000 souls divided into 12 distinct tribes**.
+   - **Three Distinct Migration Origins (p. 240)**: (1) The **Rabbai** tribe migrated from **Rombo in Jagga (Kilimanjaro)**; (2) the **Kiriama (Giriama)** and **Dahálo** migrated southward from the **Dana (Tana) River**; and (3) the **Turuma (Duruma)** trace their origin to descendants of the **Portuguese commander *Bana Kitófu*** after the expulsion of the Portuguese from Mombasa.
+   - **Republican Checks & Balances (*Msē / Wazé* vs. *Kambe / Hirimu*, p. 246)**: Krapf contrasts the monarchical Swahili coast with the **republican constitution of the Wanika**, where the **Wazé** (elders) hold nothing alone but are counterbalanced by the **Kambe** (middle-aged councilmen) and **Hirimu** (young men's age-set).
+
+2. **The Rabai Kaya Chronicle: *Mutzi Muíru*, *Vokéra*, *Mutzi Múvia* & the *Salala* Chant (Book pp. 268–269)**:
+   - **From Chagga to Mount Reale (s.v. *Mutzi Muíru*, pp. 268–269)**: Expelled from **Rombo in Chagga**, the Rabai ancestors settled first at **Malando** and **Kamfuda**, then climbed **Mount Reale** (passing through the rock cavity **Chogni cha Muadarúko** near **Rabbai M'pia**) to build their fortified capital **Mutzi Muíru ("Black Village")**.
+   - **Betrayal of *Mutzi Muíru* & the 9 Generations at *Vokéra* (pp. 268–269)**: When a hunter of the **Kariaka (Ribe)** tribe wounded a guinea-fowl that flew into *Mutzi Muíru*, a friendly Rabai youth hid two Ribe spies for two days until they discovered the secret underground passage. Joined by the **Kiriama, Jogni (Chonyi), Kauma, Kambe, andombo/Ribe** tribes (summoned with the cry *"Hukutáne, huenende, hukafunse mutzi hio wa Aravai"*), the allies destroyed *Mutzi Muíru*. The survivors fled to **Vokéra** on the plain toward Duruma for **9 generations**, then returned to Mount Reale to build **Mutzi Múvia (*Rabbai M'pia*, "New Village")**, planting coconuts whose fallen trunks Krapf saw in 1844, before founding **Gníro, Nchira, and Mitzi ya Ntzoáni**, and foretelling that Europeans would build at **Tziwe ra kizungu** (where Krapf's cottage stood!).
+   - **The Verbatim *Kizúmo / Salala* Chant (p. 269)**: Ever since the betrayal of *Mutzi Muíru*, Rabai elders chant at assemblies: ***"Muravai! kuna ndugu! Ho-o! Ndugúyo ni uha! Uhao ni nduguyo! Kuna ndúgu Muana 'Damu!"*** (*"O Rabai man! Thou hast no brother! Ho-o! Thy bow is thy brother! That bow of thine is thy brother! There is no brother among the children of Adam!"*).
+
+3. **The 12-Month Wanika Agricultural Calendar (Book p. 205 s.v. *Máira*)**:
+   - Reckoned in **two 6-month half-years** (each called a *Múaka*):
+     - **(A) *Múaka wa Masika* (Kin. *Múaka wa Furi* — Rainy/Winter Half-Year, beginning Jan./Feb.)**: **1. *M'iru***, **2. *Muya***, **3. *Mágŭno*** (month of harvesting corn, from *ku gŭna*), **4. *M'bula*** (when tree fruits fail), **5. *Kásu***, **6. *M'fúngo***.
+     - **(B) *Múaka wa Kaskázi* (Summer Half-Year)**: **1. *Kahu***, **2. *Muhanzo wa kahu***, **3. *K'elili***, **4. *K'allá***, **5. *K'ulá***, **6. *K'etzi***.
+
+4. **Ritual Institutions (*Muánsa*, *Kóma* Offerings & 5 *Kíapo* Ordeals) & Kinika Lexicon (Book pp. 136, 237, 239, 261)**:
+   - **Sacred Friction-Drum (*Muánsa*, p. 261)**: A hollowed log covered with hide pierced by a cord rubbed with wet hands by the *Wazé* inside the *kaya* to imitate a roaring beast and enforce civic laws upon the uninitiated.
+   - **Ancestral *Kóma* Offerings (*Mnázi*, p. 239)**: Placing a coconut shell (*kifúfu*) filled with palm-wine (*tembo*) upon a kinsman's grave to propitiate his shade (*kóma*).
+   - **Five Judicial Ordeals (*Kíapo*, p. 136)**: **(1) *Kíapo cha mchele*** (chewing dry rice), **(2) *Kíapo cha chuma cha moto*** (red-hot iron on the tongue/hand), **(3) *Kíapo cha sindáno ya moto*** (red-hot needle through the lips/ear), **(4) *Kíapo cha maji ya moto*** (plucking a stone from boiling water), and **(5) *Kíapo cha mbáfu*** (poisonous bark-draught ordeal).`,
+    "examples": [
+      {
+        "mijikenda": "Muravai! kuna ndugu! Ho-o! Ndugúyo ni uha! Uhao ni nduguyo! Kuna ndúgu Muana 'Damu!",
+        "english": "O Rabai man! Thou hast no brother! Ho-o! Thy bow is thy brother! There is no brother among the children of Adam!",
+        "explanation": "Verbatim Rabai kizúmo / salala chant after the fall of Mutzi Muíru (Krapf 1882, p. 269)"
+      },
+      {
+        "mijikenda": "M'iru, Muya, Mágŭno, M'bula, Kásu, M'fúngo • Kahu, Muhanzo wa kahu, K'elili, K'allá, K'ulá, K'etzi",
+        "english": "The 12 Wanika Months: 6 months of Múaka wa Furi (Masika) and 6 months of Múaka wa Kaskázi",
+        "explanation": "Krapf (1882, p. 205 s.v. Máira)"
+      },
+      {
+        "mijikenda": "mrindíro wa maji (Kin.) = mlimbíko wa maji (Kimv.) • Kiziwáni (Kin. name for Mombasa)",
+        "english": "waiting turn at the water-wells as water collects drop by drop • Mombasa ('On the Island')",
+        "explanation": "Kinika lexical cross-references in Krapf (1882, pp. 237, 240)"
       }
     ]
   }
@@ -20594,7 +20900,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "Murungu (Ngai)",
             "source": "God",
             "pronunciation": "mu-rungu",
-            "hint": "Johnston 1919 p. 67 & Hobley 1910 p. 148"
+            "hint": "Johnston 1919, Vol. I, p. 101 & Hobley 1910, p. 148"
           },
           {
             "target": "mũrũme (pl. arũme / barũme)",
@@ -20721,31 +21027,31 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "mwana (pl. aana / baana) / kaana (pl. tũana)",
             "source": "Child",
             "pronunciation": "mwa-na / kaa-na",
-            "hint": "Johnston 1919 p. 66 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, p. 100 #11a Meru"
           },
           {
             "target": "mũka (pl. aka / baka)",
             "source": "Woman",
             "pronunciation": "mu-ka",
-            "hint": "Johnston 1919 p. 71 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, p. 106 #11a Meru"
           },
           {
             "target": "mũrũme (pl. arũme / barũme)",
             "source": "Man",
             "pronunciation": "mu-ru-me",
-            "hint": "Johnston 1919 p. 68 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, p. 102 #11a Meru"
           },
           {
             "target": "maitũ / ng'ina (nyina)",
             "source": "Mother",
             "pronunciation": "mai-tu / ng'i-na",
-            "hint": "Johnston 1919 p. 68 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, p. 102 #11a Meru"
           },
           {
             "target": "baba (ithe)",
             "source": "Father",
             "pronunciation": "ba-ba",
-            "hint": "Johnston 1919 p. 67 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, p. 101 #11a Meru"
           },
           {
             "target": "Muntũ (pl. Antũ)",
@@ -20863,55 +21169,55 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "ikũmi (pl. mĩrongo)",
             "source": "Ten",
             "pronunciation": "i-ku-mi",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "kenda",
             "source": "Nine",
             "pronunciation": "kenda",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "inyanya",
             "source": "Eight",
             "pronunciation": "inyanya",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "mũgwanja",
             "source": "Seven",
             "pronunciation": "mugwanja",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "ithanthatu",
             "source": "Six",
             "pronunciation": "ithantha-tu",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "ithano (-thano)",
             "source": "Five",
             "pronunciation": "itha-no",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "inya (-nya)",
             "source": "Four",
             "pronunciation": "inya",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "ithatu (-thatu)",
             "source": "Three",
             "pronunciation": "itha-tu",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "iiri (bairi)",
             "source": "Two",
             "pronunciation": "ii-ri",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           }
         ],
         "sentences": [
@@ -20931,7 +21237,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Seven",
               "Ten"
             ],
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "type": "multiple_choice",
@@ -20943,7 +21249,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Nine",
               "Ten"
             ],
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "type": "multiple_choice",
@@ -20955,7 +21261,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Ten",
               "Nine"
             ],
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "type": "multiple_choice",
@@ -21014,7 +21320,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "inyanya",
               "ithanthatu"
             ],
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           }
         ]
       },
@@ -21030,7 +21336,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "imwe (-mwe)",
             "source": "One",
             "pronunciation": "imwe",
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "target": "Sekondi",
@@ -21098,7 +21404,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Thirty",
               "One"
             ],
-            "hint": "Johnston 1919 p. 72 #11a Meru"
+            "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "type": "multiple_choice",
@@ -22581,12 +22887,12 @@ export const MERU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Njaru (Athanya).",
-            "source": "Njaru (Meru clan whose totem is white cattle) (Athanya )."
+            "target": "Mwiria wa Njaru, Ntuni, Angilo, Athinga, Athanya na Ntowaita (Netiri).",
+            "source": "The Mweru totemic clans (Mwiria) and their sacred totems (Netiri) (Hobley 1910, pp. 156–158)."
           },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa Angilo.",
-            "source": "The elders discussed angilo."
+            "source": "The elders discussed Angilo."
           }
         ],
         "authoredExercises": [
@@ -22656,43 +22962,43 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "Kī-shīī",
             "source": "Womb",
             "pronunciation": "ki-shii",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Mū-gūrra",
             "source": "Woman",
             "pronunciation": "mu-gurra",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Mā-ī, Ro-e",
             "source": "Water",
             "pronunciation": "ma-i ro-e",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Mā-zigūma",
             "source": "Spring water",
             "pronunciation": "ma-ziguma",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "N-twmōi",
             "source": "Tail",
             "pronunciation": "n-twmoi",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Siyare",
             "source": "Stick",
             "pronunciation": "si-ya-re",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Kī-rāma",
             "source": "Spear",
             "pronunciation": "ki-rama",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -22747,7 +23053,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Netiri",
               "Kī-shīī"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ]
       }
@@ -22770,49 +23076,49 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "Mū-ūmba",
             "source": "Song",
             "pronunciation": "mu-umba",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "N-jīwa",
             "source": "Pigeon",
             "pronunciation": "n-jiwa",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Mami",
             "source": "Mother",
             "pronunciation": "ma-mi",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "ma- N-kīma",
             "source": "Monkey",
             "pronunciation": "ma n-kima",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "ma- N-gare",
             "source": "Leopard",
             "pronunciation": "ma n-gare",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "M-būta",
             "source": "Hunger",
             "pronunciation": "m-buta",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "I-thanwa",
             "source": "Hoe",
             "pronunciation": "i-thanwa",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Ki-songua",
             "source": "Heel",
             "pronunciation": "ki-songua",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -22832,7 +23138,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Mother",
               "Monkey"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -22860,14 +23166,14 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Leopard\": ___",
-            "correctAnswer": "ma- (N-gare",
+            "correctAnswer": "ma- N-gare",
             "options": [
-              "ma- (N-gare",
+              "ma- N-gare",
               "M-būta",
               "Mū-ūmba",
               "N-jīwa"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ]
       },
@@ -22882,49 +23188,49 @@ export const MERU_UNITS: CourseUnit[] = [
             "target": "Ki-hīa",
             "source": "Goat (he)",
             "pronunciation": "ki-hia",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "N-kuā",
             "source": "Ghost",
             "pronunciation": "n-kua",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Gi-thaka",
             "source": "Forest",
             "pronunciation": "gi-thaka",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Ṅ-korora",
             "source": "Fear",
             "pronunciation": "ng-korora",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Baba, Ba-ba, Ba-va",
             "source": "Father",
             "pronunciation": "ba-ba ba-ba ba-va",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Ci-eri",
             "source": "Face, forehead",
             "pronunciation": "ci-eri",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Mū-ranggo",
             "source": "Door",
             "pronunciation": "mu-ranggo",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Rū-sena",
             "source": "Country",
             "pronunciation": "ru-sena",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -22944,7 +23250,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Forest",
               "Fear"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -22979,7 +23285,7 @@ export const MERU_UNITS: CourseUnit[] = [
               "Ki-hīa",
               "N-kuā"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ]
       }
@@ -29040,49 +29346,49 @@ export const EMBU_UNITS: CourseUnit[] = [
             "target": "-īyā",
             "source": "To steal",
             "pronunciation": "iya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-rūgāmā",
             "source": "To stand / stop",
             "pronunciation": "ru-ga-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-kōmā",
             "source": "To sleep",
             "pronunciation": "ko-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-īkāra",
             "source": "To sit / remain / abide",
             "pronunciation": "i-ka-ra",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-ōnā, -rōrā",
             "source": "To see",
             "pronunciation": "ona ro-ra",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-ēndā",
             "source": "To love / want",
             "pronunciation": "enda",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-tīgā",
             "source": "To leave off / cease",
             "pronunciation": "ti-ga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-thēkā",
             "source": "To laugh",
             "pronunciation": "the-ka",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -29098,7 +29404,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "To sleep",
               "To sit / remain / abide"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -29133,7 +29439,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "-īyā",
               "-rūgāmā"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
       },
@@ -29148,49 +29454,49 @@ export const EMBU_UNITS: CourseUnit[] = [
             "target": "-mēnyā",
             "source": "To know",
             "pronunciation": "menya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-ūragā",
             "source": "To kill",
             "pronunciation": "u-ra-ga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-thiī",
             "source": "To go",
             "pronunciation": "thii",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-hē",
             "source": "To give",
             "pronunciation": "he",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-kūā",
             "source": "To die",
             "pronunciation": "kua",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-īnā",
             "source": "To dance",
             "pronunciation": "ina",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-tīniā, -tēmā",
             "source": "To cut",
             "pronunciation": "ti-nia te-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-ūkā",
             "source": "To come",
             "pronunciation": "uka",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -29206,7 +29512,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "To go",
               "To give"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -29241,7 +29547,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "-mēnyā",
               "-ūragā"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
       }
@@ -29264,49 +29570,49 @@ export const EMBU_UNITS: CourseUnit[] = [
             "target": "-gūrā, -ēndia",
             "source": "To buy / To sell",
             "pronunciation": "gu-ra endia",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-hūrā, -rīnggā",
             "source": "To beat",
             "pronunciation": "hu-ra ringga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Ndi-, Tī-, -tī-, -tā-",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "ndi ti ti ta",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Ācā!, Tī-gō!",
             "source": "No!",
             "pronunciation": "aca ti-go",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Hā-rīa, Kū-rīa",
             "source": "There",
             "pronunciation": "ha-ria ku-ria",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "N-jā",
             "source": "Outside",
             "pronunciation": "n-ja",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Hā-kūhī",
             "source": "Near",
             "pronunciation": "ha-kuhi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Gā-tīgātī",
             "source": "Middle",
             "pronunciation": "ga-tigati",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -29322,7 +29628,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "Not (with verb, as prefix, infix, or suffix)",
               "No!"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -29357,7 +29663,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "-gūrā, -ēndia",
               "-hūrā, -rīnggā"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
       },
@@ -29372,49 +29678,49 @@ export const EMBU_UNITS: CourseUnit[] = [
             "target": "-thēnī",
             "source": "In, inside",
             "pronunciation": "the-ni",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Hā-hā",
             "source": "Here",
             "pronunciation": "ha-ha",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Kū-raihū",
             "source": "Far",
             "pronunciation": "ku-raihu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Thī",
             "source": "Below, down",
             "pronunciation": "thi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "Thūtha",
             "source": "Behind",
             "pronunciation": "thutha",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "M-bērē",
             "source": "Before",
             "pronunciation": "m-bere",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "I-gūrū",
             "source": "Above, up, on top",
             "pronunciation": "i-guru",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "target": "-rūārū",
             "source": "Sick",
             "pronunciation": "rua-ru",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -29430,7 +29736,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "Far",
               "Below, down"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
           {
             "type": "match_pairs",
@@ -29465,7 +29771,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               "Hā-hā",
               "Kū-raihū"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages Group C #11: Embu, Chuka"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
       }
@@ -29498,12 +29804,12 @@ export const EMBU_GRAMMAR_SECTIONS: GrammarSection[] = [
       {
         "embu": "-īyā • -rūgāmā",
         "english": "To steal • To stand / stop",
-        "explanation": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka"
+        "explanation": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
       },
       {
         "embu": "-mēnyā • -ūragā",
         "english": "To know • To kill",
-        "explanation": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka"
+        "explanation": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
       }
     ]
   }
@@ -29544,7 +29850,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "title": "Taita Hills Salutations, 9 Noun Classes & Nature",
         "icon": "TreePine",
         "description": "Learn greetings and the 9 noun classes from Rev. J. A. Wray’s 1894 Taita Grammar (pp. 9–13, 115–116).",
-        "tips": "Rev. J. Alfred Wray (1894, pp. 9–13) documents 9 noun classes in Kisagala, including Class VII Diminutives where both ka- and tu- are singular prefixes making their plural in vi- (kanyumba → vinyumba 'little house', tunguku → vinguku 'little fowl', tumwana → viwana 'little child'), whereas Johnston (1919 #15) records ka-/tu- (kanyonyi → tunyonyi) in Kidawida.",
+        "tips": "Rev. J. Alfred Wray (1894, pp. 9–13) documents 9 noun classes in Kisagala, including Class VII Diminutives where both ka- and tu- are singular prefixes making their plural in vi- (kanyumba → vinyumba 'little house', tunguku → vinguku 'little fowl', tumwana → viwana 'little child'), whereas Johnston (1919 #14) records ka-/tu- (kanyonyi → tunyonyi) in Kidawida.",
         "culturalNote": "In Rev. J. Alfred Wray's 'An Elementary Introduction to the Taita Language' (1894, pp. 93, 114, 115–116), the complete Kisagala village salutation ('Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni \'gwaloli / Sikwesi. — Una maana? — Na maana. — Kukeja maana? — Kweja maana'), morning ('Walamsaje? — Nalamuka banana'), evening ('Wasindaje? — Nasinda banana'), and parting ('Ko mbole — Haya ko mbole, genda banana') greetings are recorded alongside the baobab-pod riddle 'Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba' and Shaw's (1885) 'Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!'",
         "words": [
           {
@@ -29715,7 +30021,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "target": "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
             "source": "1, 2, 3, 4, 5",
             "pronunciation": "mo-si pi-li ta-tu ine sa-no",
-            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14–15 Taita) Kidawida"
+            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14 Taita) Kidawida"
           },
           {
             "target": "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
@@ -29759,7 +30065,7 @@ export const TAITA_UNITS: CourseUnit[] = [
               "Core Class IX ku- Infinitive Verbs",
               "1, 2, 3, 4, 5"
             ],
-            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14–15 Taita) Kidawida"
+            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14 Taita) Kidawida"
           },
           {
             "type": "multiple_choice",
@@ -30200,7 +30506,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "target": "ikenda (Kisagala & Kidawida)",
             "source": "Nine",
             "pronunciation": "i-kenda",
-            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #15) / Sakamoto (2003) Kidawida"
+            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida"
           },
           {
             "target": "ikumi / afwa (e.g., mbuzi afwa ten goats, Wray 1894 p. 22)",
@@ -36093,13 +36399,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "target": "īvā",
             "source": "To steal",
             "pronunciation": "iva",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "īūkā",
             "source": "To stand, stop, be erect",
             "pronunciation": "iu-ka",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -36169,49 +36475,49 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "target": "lālā",
             "source": "To sleep",
             "pronunciation": "la-la",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "kāā",
             "source": "To sit, remain, abide",
             "pronunciation": "kaa",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "ōnā",
             "source": "To see",
             "pronunciation": "ona",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "kūndā",
             "source": "To love, want",
             "pronunciation": "kunda",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "lēkā",
             "source": "To leave off, cease",
             "pronunciation": "le-ka",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "sēkā",
             "source": "To laugh",
             "pronunciation": "se-ka",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "mānyā",
             "source": "To know",
             "pronunciation": "manya",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "bwāgā",
             "source": "To kill",
             "pronunciation": "bwa-ga",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -36227,7 +36533,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To love, want",
               "To sleep"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36239,7 +36545,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To sit, remain, abide",
               "To sleep"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36251,7 +36557,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To sleep",
               "To sit, remain, abide"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36310,7 +36616,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "ōnā",
               "lēkā"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ]
       }
@@ -36333,49 +36639,49 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "target": "gēndā",
             "source": "To go",
             "pronunciation": "genda",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "inggā",
             "source": "To give",
             "pronunciation": "ingga",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "lā",
             "source": "To eat",
             "pronunciation": "la",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "fwā",
             "source": "To die",
             "pronunciation": "fwa",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "vīnā",
             "source": "To dance",
             "pronunciation": "vi-na",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "tēmā",
             "source": "To cut",
             "pronunciation": "te-ma",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "zā",
             "source": "To come",
             "pronunciation": "za",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "gūlā",
             "source": "To buy, sell",
             "pronunciation": "gu-la",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ],
         "sentences": [
@@ -36391,7 +36697,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To die",
               "To go"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36403,7 +36709,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To give",
               "To go"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36415,7 +36721,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "To go",
               "To give"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
@@ -36474,7 +36780,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "lā",
               "vīnā"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
         ]
       },
@@ -36489,43 +36795,43 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "target": "kābā",
             "source": "To beat",
             "pronunciation": "ka-ba",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Sī-, Tā-, -sī",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "si ta si",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Kw-ī?",
             "source": "Where?",
             "pronunciation": "kw-i",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "īnggī",
             "source": "Plenty, many",
             "pronunciation": "inggi",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "ēūpē",
             "source": "White",
             "pronunciation": "eu-pe",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "kōnggō",
             "source": "Sick",
             "pronunciation": "konggo",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "fūhī",
             "source": "Short",
             "pronunciation": "fu-hi",
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages 1919, Vo"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "target": "Jahako",
@@ -36614,7 +36920,7 @@ export const TAVETA_GRAMMAR_SECTIONS: GrammarSection[] = [
     id: 'taveta-hollis-1910-johnston-1919',
     title: 'Kitaveta Noun Classes, Numerals & Oral Literature (Hollis 1910–1911 & Johnston 1919 #15 Taveita)',
     summary: 'Kitaveta is a North-East Coastal Bantu language closely allied to Pare/Asu and Chaga-Taita, preserving 15+ noun classes and rich proverb/riddle morphology.',
-    content: `As documented in A. C. Hollis (*Taveta Sayings and Proverbs*, 1910; *Taveta Enigmas*, 1911) and Sir Harry Johnston (*Comparative Study of the Bantu Languages*, 1919, #16 Taveta, pp. 89–96):
+    content: `As documented in A. C. Hollis (*Taveta Sayings and Proverbs*, 1910; *Taveta Enigmas*, 1911) and Sir Harry Johnston (*Comparative Study of the Bantu Languages*, 1919, #15 Taveita, Vol. I, pp. 98–112 & Vol. II, pp. 33–34):
 - **Noun Classes**: Class 1/2 *mndu → wandu* (person → people), *mche → wache* (woman → women); Class 3/4 *mti → miti* (tree → trees); Class 5/6 *ideghe → madeghe* (bird → birds), *iwe → mawe* (stone → stones), *mazi* (water); Class 7/8 *kindu → vindu* (thing → things).
 - **Cardinal Numerals (Johnston 1919, Vol. I, p. 107 #15 Taveita)**: *imwe* (1), *iwiri* (2), *itatu* (3), *inya* (4), *itano* (5), *itandatu* (6), *mfungate* (7), *mnane* (8), *kenda* (9), *ikumi* (10).`,
     examples: [
@@ -36636,7 +36942,7 @@ export const TAVETA_GRAMMAR_SECTIONS: GrammarSection[] = [
       {
         "taveta": "lālā • kāā",
         "english": "„ sleep • „ sit, remain, abide",
-        "explanation": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vo"
+        "explanation": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
       }
     ]
   }
@@ -36863,7 +37169,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 2: Family, Kinship, Clans & Social Organization (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master family, kinship, clans & social organization in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "Users",
     "skills": [
@@ -37149,7 +37455,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 3: Numbers, Counting, Currency & Measures (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master numbers, counting, currency & measures in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "Scale",
     "skills": [
@@ -37449,7 +37755,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master food, cuisine, crops & livestock husbandry in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "Tractor",
     "skills": [
@@ -37717,7 +38023,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master nature, landscape, flora & east african wildlife in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "PawPrint",
     "skills": [
@@ -38019,7 +38325,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 6: The Human Body, Health, Medicine & Safety (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master the human body, health, medicine & safety in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "User",
     "skills": [
@@ -38353,7 +38659,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master core verbs, tenses, negation & verbal extensions in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "BookOpen",
     "skills": [
@@ -38687,7 +38993,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokomo-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston )",
+    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation (Rev. Dr. J. L. Krapf 1850 Six East-African Languages & Sir Harry Johnston 1919 #13)",
     "description": "Master time, indigenous calendar, seasons & navigation in Pokomo (Kipfokomo) built directly from Rev. Dr. J. L. Krapf (1850), F. Würtz (1895), Alice Werner (1913), Mikael Samson (1944), and Sir Harry H. Johnston (1919).",
     "icon": "Compass",
     "skills": [
@@ -39412,7 +39718,7 @@ export const POKOMO_GRAMMAR_SECTIONS: GrammarSection[] = [
     id: 'pokomo-sabaki-grammar',
     title: 'Sabaki Phonology (Kipfokomo pf/bf, *t > h), Noun Classes & Numerals (Krapf 1850 & Johnston 1919 #13 Pωkωmω)',
     summary: 'Kipfokomo is a core member of the Sabaki Bantu subgroup alongside Swahili and Mijikenda, preserving Sabaki lenition (*moto > moho, *mto > muho, *-tatu > -hahu) and 15+ noun classes.',
-    content: `Documented by Rev. Dr. J. L. Krapf (*Vocabulary of Six East-African Languages*, 1850) and Sir Harry H. Johnston (*Comparative Study of the Bantu Languages*, 1919, #14 Pokomo, pp. 89–96):
+    content: `Documented by Rev. Dr. J. L. Krapf (*Vocabulary of Six East-African Languages*, 1850) and Sir Harry H. Johnston (*Comparative Study of the Bantu Languages*, 1919, #13 Pωkωmω, Vol. I, pp. 98–112 & Vol. II, pp. 31–32):
 - **Sabaki Sound Correspondences**: Proto-Bantu *t lenites to *h* (*moho* 'fire', *muho* 'river', *tahu* 'three', *handahu* 'six', *fungahe* 'seven'), while Class 5 uses *dzi- / i-* (*dziwe → mawe* 'stone', *dzua* 'sun', *madzi* 'water').
 - **Noun Classes**: Class 1/2 *munt'u → want'u* (person → people), Class 3/4 *muhi → mihi* (tree → trees), *mudzi → midzi* (village → villages).`,
     examples: [
@@ -45438,29 +45744,29 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "Sere adi",
-            "source": "Sixth day of the week (day of sheep and goats)",
+            "source": "Sixth day of the week (day of sheep and goats; Almadó & Sorio begin)",
             "pronunciation": "se-re adi",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Ser hakhan",
-            "source": "Fifth day of the week (no-travel / camel-rest day)",
+            "source": "Fifth day of the week (no-travel / no camp-move / no cattle-medicine day)",
             "pronunciation": "ser hakhan",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Kumat",
             "source": "Fourth day of the week",
             "pronunciation": "ku-mat",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           }
         ],
         "sentences": [
           {
-            "target": "Sere gal (Sere adi).",
-            "source": "Seventh day of the week (day of the camel) (Sixth day of the week )."
+            "target": "1. Hahat, 2. Hura hakhan, 3. Sere, 4. Kumat, 5. Ser hakhan, 6. Sere adi, 7. Sere gal.",
+            "source": "The seven days of the Randili (Rendille) pastoral week recorded by C. W. Hobley (1910, Part II, Ch. VI, p. 163)."
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -45507,7 +45813,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
               "daf",
               "koor"
             ],
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           }
         ]
       }
@@ -45528,21 +45834,21 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Sere",
-            "source": "Third day of the week",
+            "source": "Third day of the week (sere = day)",
             "pronunciation": "se-re",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Hura hakhan (hura = sun)",
             "source": "Second day of the week (day of rest / Sabbath)",
             "pronunciation": "hu-ra hakhan",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Hahat",
             "source": "First day of the week (fast and prayer day)",
             "pronunciation": "ha-hat",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes 1910, p. 166 — Randili calend"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "tumbo",
@@ -45581,23 +45887,23 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Sere\" in Rendille?",
-            "correctAnswer": "Third day of the week",
+            "correctAnswer": "Third day of the week (sere = day)",
             "options": [
-              "Third day of the week",
+              "Third day of the week (sere = day)",
               "Second day of the week (day of rest / Sabbath)",
               "First day of the week (fast and prayer day)",
               "Tobacco"
             ],
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "type": "match_pairs",
             "prompt": "Match each verified Rendille (Afi Ren'dille) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "Sere: Third day of the week",
+            "correctAnswer": "Sere: Third day of the week (sere = day)",
             "pairs": [
               {
                 "left": "Sere",
-                "right": "Third day of the week"
+                "right": "Third day of the week (sere = day)"
               },
               {
                 "left": "Hura hakhan (hura = sun)",
@@ -45742,14 +46048,24 @@ export const RENDILLE_UNITS: CourseUnit[] = [
 export const RENDILLE_GRAMMAR_SECTIONS: GrammarSection[] = [
   {
     id: 'rendille-cushitic-grammar',
-    title: 'Af-Rendille Gender Suffixes (-ki / -ti), SOV Word Order & Hobley’s (1910) Comparative Corpus',
-    summary: 'Af-Rendille is an Omo-Tana Lowland East Cushitic language with Masculine (-k-) and Feminine (-t-) gender agreement, SOV syntax, and rich camel-pastoral terminology.',
-    content: `As documented in C. W. Hobley (*Ethnology of A-Kamba and Other East African Tribes*, 1910, Chapter XVII: The Rendile, pp. 156–157):
-- **Masculine (*-k-*) vs. Feminine (*-t-*) Determiners**: Like Somali, Rendille marks masculine gender with **-k-** (*inanki* 'the boy') and feminine gender with **-t-** (*inanti* 'the girl').
-- **Numerals**: *kow* (1), *lamma* (2), *seyya* (3), *affar* (4), *chan* (5), *lih* (6), *teba* (7), *siddet* (8), *saagal* (9), *tomon* (10).`,
+    title: 'Af-Rendille Gender Suffixes (-ki / -ti), SOV Word Order & Hobley’s (1910, Part II, Ch. VI, pp. 162–163) Randili Ethnography & 7-Day Pastoral Week',
+    summary: 'Af-Rendille is an Omo-Tana Lowland East Cushitic language with Masculine (-k-) and Feminine (-t-) gender agreement, SOV syntax, 6 sub-tribes, and a 7-day pastoral week documented by C. W. Hobley (1910, pp. 162–163).',
+    content: `As documented in C. W. Hobley (*Ethnology of A-Kamba and Other East African Tribes*, 1910, Part II, Chapter VI: *Randili (Rendile)*, pp. 162–163):
+1. **Six Sub-Tribes & the *Burkeneji (Naibor Keneji)* Section (p. 162)**:
+   - Hobley records six primary divisions of the Randili: **(1) Salei**, **(2) Urwen**, **(3) Galdeilan**, **(4) Tubcha**, **(5) Nebei**, and **(6) Ongeli**, together with the bilingual Samburu-Rendille **Burkeneji** (or **Naibor Keneji**, "White Sheep") section.
+2. **The 7-Day Pastoral Week & Ritual Observances (p. 163)**:
+   - **1st day — *Hahat***: Fast and prayer day.
+   - **2nd day — *Hura hakhan***: Day of rest / Sabbath (*hura* = sun).
+   - **3rd day — *Sere***: Ordinary working day (*sere* = day).
+   - **4th day — *Kumat***: Fourth day of the week.
+   - **5th day — *Ser hakhan***: No-travel day — they do not leave their houses to go on a journey, do not move to a new grazing ground, and do not administer medicine to sick cattle.
+   - **6th day — *Sere adi***: Day of goats and sheep — no sheep or goats are sold or killed, and the two great annual festivals (**Almadó** and **Sorio**) always commence on this day.
+   - **7th day — *Sere gal***: Day of the camel (*gal*) — no camel is bled, branded, or castrated, and no camel meat is eaten.
+3. **Birth, Circumcision, Camel Lore & Burial Customs (pp. 162–163)**:
+   - At birth, the infant's navel-cord is cut over a prized young male camel, which becomes the child's personal property; boys are circumcised in cyclic age-sets; camels are never ridden by the Rendille (used strictly as pack animals and for milk/blood); and the dead are buried under circular stone cairns.`,
     examples: [
-      { rendille: 'gaal • ayyu • oor • nyirakh', english: 'camels • she-camel • burden camel • camel calf', explanation: 'Rendille camel terminology (Hobley 1910, p. 156)' },
-      { rendille: 'tor • gashan • bilau • biso • laho', english: 'spear • shield • sword-knife • bow • arrow', explanation: 'Hobley (1910, p. 156)' }
+      { rendille: '1. Hahat • 2. Hura hakhan • 3. Sere • 4. Kumat • 5. Ser hakhan • 6. Sere adi (Almadó & Sorio) • 7. Sere gal', english: 'The 7 days of the Randili (Rendille) pastoral week and their ritual rules', explanation: 'Hobley (1910, Part II, Ch. VI, p. 163)' },
+      { rendille: 'Salei, Urwen, Galdeilan, Tubcha, Nebei, Ongeli • Burkeneji (Naibor Keneji)', english: 'The 6 Randili sub-tribes and the "White Sheep" (Ariaal) section', explanation: 'Hobley (1910, Part II, Ch. VI, p. 162)' }
     ]
   },
   {
@@ -59289,4 +59605,652 @@ SWAHILI_UNITS.push({
       ],
     },
   ],
+});
+
+// ============================================================
+// C. W. Hobley, C.M.G. (1910) "Ethnology of A-Kamba and Other East African Tribes"
+// (Cambridge University Press, 1910 — Public Domain, Part II Chapters V–VI & Appendix (5), pp. 146–169)
+// Complete Line-by-Line Grammar & Ethnographic Reference Sections for Meru/Tharaka, Samburu/Mogogodo & Kalenjin
+// ============================================================
+
+MERU_GRAMMAR_SECTIONS.push({
+  id: "meru-hobley-1910-mweru-tharaka-clans-totems-chiefs",
+  title: "C. W. Hobley (1910) Part II Chapter VI & Appendix (5): The 22 Mweru (Meru) Sub-Tribes & Chiefs, 13 Mweru Mwiria Clans & Netiri Totems, Red-Sea Crossing Tradition & 14 Thaka (Tharaka) Clans & Nthuku Totems (pp. 39, 85, 93, 156–158, 169)",
+  summary: "Complete line-by-line synthesis of C. W. Hobley's 1910 Mweru (Meru) and Thaka (Tharaka) chapters: all 22 Mweru geographical sub-tribes and their 22 chiefs, all 13 Mweru clans (Mwiria) and totems (Netiri), the Ntowaita exodus tradition, and all 14 Tharaka clans (Mwiriga/Mbai) and totems (Nthuku).",
+  content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part I pp. 39, 85, 93; Part II, Chapter VI: *Notes on Mweru*, pp. 156–158; and Appendix (5): *The Thaka or Tharaka*, p. 169):
+1. **The 22 Mweru (Meru) Sub-Tribes & Their 22 Named Chiefs (Part II, Ch. VI, pp. 156–157)**:
+   - Hobley records the 22 territorial divisions of Mweru from Mount Kenia northward across the Nyambene (*Jombeni*) range together with the chief of each division:
+     1. **Imenti** — Chief *Mitabiru*
+     2. **Igoji** — Chief *Kiambi*
+     3. **Muthambi** — Chief *Ruini*
+     4. **Mwimbi** — Chief *Mbariga*
+     5. **Chuka** — Chief *Kibere*
+     6. **Miutini** — Chief *M'mura*
+     7. **Tigania** — Chief *M'ngongo*
+     8. **Igembe** — Chief *M'rithara*
+     9. **Athwana** — Chief *M'itonga*
+     10. **Akachiu** — Chief *M'munyua*
+     11. **Amomete** — Chief *M'kabuthu*
+     12. **Antubetwe** — Chief *M'itaru*
+     13. **Antuambui** — Chief *M'ruchu*
+     14. **Kianjai** — Chief *M'ithiria*
+     15. **Karama** — Chief *M'ringera*
+     16. **Muthara** — Chief *M'linya*
+     17. **Kangeta** — Chief *M'turuchiu*
+     18. **Luluma** — Chief *M'arimi*
+     19. **Amugaa** — Chief *M'ngatho*
+     20. **Athi** — Chief *M'kithia*
+     21. **Thaiichu** — Chief *M'kura*
+     22. **Tharaka (Thaka)** — Chief *M'kanyoni*
+2. **The 13 Mweru Totemic Clans (*Mwiria*) & Their Sacred Totems (*Netiri*, pp. 156–157)**:
+   - In Mweru, the clan is called **Mwiria** (pl. *Miiria*) and the totem is called **Netiri**:
+     1. **Njaru** — Totem: **White cattle** (*Ng'ombe njaru*)
+     2. **Ntuni** — Totem: **Red cattle** (*Ng'ombe ntuni*)
+     3. **Angilo** — Totem: **Black cattle** (*Ng'ombe njiru*)
+     4. **Athinga** — Totem: **Giraffe** (*Ntwiga*)
+     5. **Athanya** — Totem: **Basket twine / cord** (*Rorigi*)
+     6. **Nthia** — Totem: **Bushbuck** (*Nthia*)
+     7. **Amakui (Mukui)** — Totem: **Dog** (*Kuro*)
+     8. **Antuanthama** — Totem: **Dik-dik** (*Nthama*)
+     9. **Singamburi** — Totem: **Goat** (*Mburi*)
+     10. **Antwa mwakia** — Totem: **Fire** (*Mwanki*)
+     11. **Mwianda** — Totem: **Frog** (*Kiura*)
+     12. **Amatu (Kiringende)** — Totem: **Locust** (*Ngigi*)
+     13. **Ntowaita** — Dominant clan associated with the ancient crossing of a red sea (*Mbwa*)
+3. **The *Ntowaita* Red-Sea Migration Tradition & Mweru Spiritual Institutions (pp. 39, 85, 93, 157–158)**:
+   - Elders of the **Ntowaita** clan related to Hobley that their ancestors once lived in bondage beyond a great red water, crossed it when their leader struck the water with his staff, and migrated to Mount Kenia and the Jombeni Hills.
+   - Hobley also notes Mweru warrior war-horns (p. 39), ancestral spirit shrines (*Aiimu*, p. 85), and hereditary rain-makers (p. 93).
+4. **Appendix (5) — The 14 Thaka (Tharaka) Clans (*Mwiriga / Mbai*) & Their Totems (*Nthuku*, p. 169)**:
+   - In Tharaka (inhabiting both banks of the Tana River), the clan is called **Mwiriga** or **Mbai** and the totem is called **Nthuku**. Hobley tabulates 14 clans alongside key social terms (**Muchi** = village/homestead, **Mthumuba** = young warrior, **Mugao** = medicine-man, **Mutu muwao** = married woman):
+     1. **Mba-Kanyoni** — Totem: **Birds** (*Nyoni*)
+     2. **Mba-Mbau** — Totem: **Hyena** (*Mbiti*)
+     3. **Mba-Nthia** — Totem: **Bushbuck** (*Nthia*)
+     4. **Mba-Njiru** — Totem: **Buffalo** (*Mbogo*)
+     5. **Mba-Gachiku** — Totem: **Zebra** (*Njagi*)
+     6. **Mba-Thagana** — Totem: **Fish / Tana River creatures** (*Makuyu*)
+     7. **Mba-Mwei** — Totem: **Baboon** (*Nthia / Nguli*)
+     8. **Mba-Ngombe** — Totem: **Cattle spleen** (*Rurigi*)
+     9. **Mba-Nthiga** — Totem: **Lion** (*Munyambu*)
+     10. **Mba-Mburi** — Totem: **Goat** (*Mburi*)
+     11. **Mba-Kiringa** — Totem: **Iron / Smiths' bellows** (*Muura*)
+     12. **Mba-Mutonga** — Totem: **Elephant** (*Njogu*)
+     13. **Mba-Kariba** — Totem: **Python / Snake** (*Njoka*)
+     14. **Mba-Chimba** — Totem: **Ant-bear / Aardvark** (*Luma*)`,
+  examples: [
+    { meru: "Mwiria (clan) & Netiri (totem): Njaru (white cattle), Ntuni (red cattle), Angilo (black cattle), Athinga (giraffe), Athanya (twine), Nthia (bushbuck), Amakui (dog), Antuanthama (dik-dik), Singamburi (goat), Antwa mwakia (fire), Mwianda (frog), Amatu (locust), Ntowaita", english: "All 13 Mweru clans and their totems recorded by C. W. Hobley", explanation: "Hobley (1910, Part II, Ch. VI, pp. 156–157)" },
+    { meru: "Imenti (Mitabiru), Igoji (Kiambi), Muthambi (Ruini), Mwimbi (Mbariga), Chuka (Kibere), Tigania (M'ngongo), Igembe (M'rithara)...", english: "Mweru sub-tribes and their chiefs in 1910", explanation: "Hobley (1910, Part II, Ch. VI, pp. 156–157)" },
+    { meru: "Thaka (Tharaka): Mwiriga / Mbai (clan) & Nthuku (totem) • Muchi (homestead) • Mthumuba (warrior) • Mugao (medicine-man) • Mutu muwao (married woman)", english: "Tharaka social and totemic terminology along the Tana River", explanation: "Hobley (1910, Appendix (5), p. 169)" }
+  ]
+});
+
+SAMBURU_GRAMMAR_SECTIONS.push({
+  id: "samburu-hobley-1910-mogogodo-sambur-laikipiak",
+  title: "C. W. Hobley (1910) Part II Chapters V & VI: First Published Mogogodo (Il Mwesi / Yaaku) Vocabulary, Numerals & Verb Paradigms (pp. 146–155) and Sambur & Laikipiak Sub-Tribes, Gilat & Chiefs (pp. 159–160)",
+  summary: "Complete line-by-line documentation of C. W. Hobley's 1910 chapters on the Mogogodo (Il Mwesi) of the northern slopes of Mount Kenya (pp. 146–155) and the Sambur and Laikipiak Northern Maa sections (pp. 159–160).",
+  content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters V & VI, pp. 146–155, 159–160):
+1. **Part II, Chapter V — The Mogogodo (*Il Mwesi / Yaaku*) of Northern Mount Kenya (pp. 146–155)**:
+   - Hobley records the first linguistic and ethnographic study of the **Mogogodo** (called **Il Mwesi** by the Masai), a cave- and forest-dwelling community north of Mount Kenya between the Guaso Nyiro and Mountadon:
+   - **Chiefs & Laibon (p. 146)**: Principal chiefs **Parmashu** and **Matungi**, who consult the Mweru medicine-man (*laibon*) **Lakaibe**; they speak a distinct East Cushitic language (**Yaaku**) while using Maa as a trade lingua franca.
+   - **Mogogodo Numerals & Noun Phrases (pp. 152–153)**:
+     - **1**: *Kibwehet* • **2**: *Kechei* • **3**: *Khahaat* • **4**: *Ikwani* • **5**: *Imiet* (Masai loan) • **10**: *Tomon* • **100**: *Ipp*
+     - Noun + Numeral order: *Sogomei kibwehet* ('one elephant') → *Sogomedi kechei* ('two elephants'); *Hai kechei* ('two houses'); *Tor kechei / Tor khahaat* ('two / three spears'); *Sheou kechei / Sheou khahaat* ('two / three knives'); *Sungai khahaat* ('three lions'); *Damatuti khahaat* ('three women').
+   - **Mogogodo Pronouns, Adjectival Predicates & Verb Paradigms (pp. 153–155)**:
+     - **Good (*shoboshon*)**: *Kagu shoboshon* ('thou art good'), *Ke shoboshon* ('he is good'), *Kege shoboshonadi* ('we are good'), *Kabu shoboshonadi* ('ye are good'), *Ke shoboshonadi* ('they are good').
+     - **Come (*-lehe*)**: *Nalehe* ('I am coming'), *Alehe* ('he is coming'), *Nalehenu* ('we are coming'), *Lehei / keselehei* ('they are coming').
+     - **Sleep, Go, Drink, Know, See & Want**: *Nbomi* ('he sleeps') / *Nebomin* ('they sleep'); *Antu Khalkhani* ('I go to water') / *Niakhani* ('I do not go'); *Nukha antu* ('I drink water'); *Geheno* ('thou knowest') / *Ishahanu* ('I do not know'); *Ila teetei / Ngñen a waakan* ('I do not see'); *Kwi kijeji* ('he wants a thing') / *Ngjeji* ('I do not want').
+     - **Salutations (p. 151)**: *Keshoboshon!* (cf. Masai *Sobai*) and *Aishei!*
+2. **Part II, Chapter VI — The Sambur (*Burkeneji*) & Laikipiak Sub-Tribes, *Gilat* & Chiefs (pp. 159–160)**:
+   - **Nine Sambur Sub-Tribes & Their Chiefs (p. 159)**:
+     1. **L'masula** — Chief *L'elarok*
+     2. **L'pisikishu** — Chief *L'engesen*
+     3. **L'nyaparai** — Chief *L'erionka*
+     4. **L'ngwesi** — Chief *L'olmusa*
+     5. **L'orongwe** — Chief *L'ekulal*
+     6. **L'ukumai** — Chief *L'esarge*
+     7. **L'mosiat** — Chief *L'epetpet*
+     8. **L'oimisi** — Chief *L'etuluba*
+     9. **L'doigio** — Chief *L'ekinoi*
+   - **Three Sambur *Gilat* & Ritual Leader (p. 159)**: **(1) Sitat**, **(2) Ol Lesilali**, and **(3) Maletis**, with chief *laibon* **Ol Segeteti**.
+   - **Six Laikipiak Sub-Tribes, 3 *Gilat* & *El Keriet* (pp. 159–160)**:
+     - **6 Sub-Tribes**: **(1) L'ngwesi**, **(2) L'tikirri**, **(3) L'leleta**, **(4) L'purko**, **(5) L'oodokishu**, and **(6) L'momonyot** (extending to **Irimba**, the Lorian Swamp).
+     - **3 Laikipiak *Gilat***: **(1) Bartaolin**, **(2) Sioma**, and **(3) Kisengeni**, plus the **El Keriet** section of the Mariti Hills.`,
+  examples: [
+    { samburu: "Mogogodo (Il Mwesi): Kibwehet (1), Kechei (2), Khahaat (3), Ikwani (4), Imiet (5), Ipp (100) • Sogomei kibwehet → Sogomedi kechei", english: "Mogogodo numerals and plural noun concord ('one elephant' → 'two elephants')", explanation: "Hobley (1910, Part II, Ch. V, pp. 152–153)" },
+    { samburu: "Keshoboshon! / Aishei! • Nalehe, Alehe, Nalehenu, Lehei • Antu Khalkhani • Nukha antu • Ishahanu", english: "Greetings! • I, he, we, they are coming • I go to water • I drink water • I do not know (Mogogodo)", explanation: "Hobley (1910, Part II, Ch. V, pp. 151, 153–155)" },
+    { samburu: "9 Sambur sub-tribes: L'masula, L'pisikishu, L'nyaparai, L'ngwesi, L'orongwe, L'ukumai, L'mosiat, L'oimisi, L'doigio • 3 Gilat: Sitat, Ol Lesilali, Maletis (Laibon: Ol Segeteti)", english: "Complete 1910 registry of Sambur divisions, clans, and ritual leader", explanation: "Hobley (1910, Part II, Ch. VI, p. 159)" }
+  ]
+});
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "kalenjin-hobley-1910-elgeyo-kamasia-lumbwa-sotik",
+  title: "C. W. Hobley (1910) Part II Chapter VI: Elgeyo (9 Oret Clans & Totems), Kamasia (7 Oret Clans, Totems & 12 Months) & Lumbwa/Sotik (7 Districts, 6 Sotik & 5 Lumbwa Korgat Clans & Totems, pp. 161–164)",
+  summary: "Complete line-by-line documentation of C. W. Hobley's 1910 Highland Nilotic chapters covering the Elgeyo (Keiyo), Kamasia (Tugen), Lumbwa (Kipsigis), and Sotik clans, totems, districts, and 12-month calendar.",
+  content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapter VI, pp. 161–164):
+1. **The Nine Elgeyo (*Keiyo*) Clans (*Oret*) & Their Sacred Totems (p. 161)**:
+   - In Elgeyo and Kamasia, the clan is called **Oret**:
+     1. **Kobil** — Totem: **Wart-hog** (*Toret*)
+     2. **Talai** — Totem: **baboon / monkey** (*Moset*)
+     3. **Toyoi** — Totem: **Rain & thunder** (*Robta / Ilet*)
+     4. **Kipoiis** — Totem: **Jackal** (*Lelwot*)
+     5. **Soti** — Totem: **Sun** (*Asista*)
+     6. **Kariwong** — Totem: **Crested crane** (*Kong'onyot*)
+     7. **Siokwei** — Totem: **Bee** (*Segemiat*)
+     8. **Tungo** — Totem: **Hyena** (*Kimaketyet*)
+     9. **terik** — Totem: **Elephant** (*Peliot*)
+2. **The Seven Kamasia (*Tugen*) Clans (*Oret*), Totems & 12 Ecological Months (pp. 161–162)**:
+   - **7 Kamasia *Oret* & Totems**:
+     1. **Toyoi** — Totem: **Soldier ants** (*pirech*) & **Rain** (*robta*)
+     2. **Kobil** — Totem: **Bush-pig** (*toret*)
+     3. **Kipoiis** — Totem: **Frog** (*mororochet*)
+     4. **Tungo** — Totem: **Hyena** (*kimaketyet*)
+     5. **Talai** — Totem: **Crow** (*chepkokosiot*)
+     6. **Soti** — Totem: **Sun** (*asista*)
+     7. **Saniak** — Totem: **Baboon** (*moset*)
+   - **12 Elgeyo & Kamasia Months (p. 162)**: **1. Kiptamo**, **2. Iwatkut**, **3. Wake**, **4. Ngei**, **5. Robtui**, **6. Buret**, **7. Epeso**, **8. Kipsunde**, **9. Kipsunde oieng**, **10. Mulkul**, **11. Mulkulik oieng**, **12. Ngotioto**.
+3. **The Seven Lumbwa (*Kipsigis*) & Sotik Districts and Their 11 *Korgat* Clans & Totems (pp. 163–164)**:
+   - **Seven Geographical Districts (p. 163)**: **(1) Buret**, **(2) Sotik**, **(3) Kondu**, **(4) Kipkoiimet**, **(5) Belgut**, **(6) Kabianga**, and **(7) Waldai**.
+   - **Six Sotik Clans (*Korgat*) & Totems (p. 164)**:
+     1. **Kipoiis** — Totem: **Jackal** & **Crow**
+     2. **Kipiegen** — Totem: **Baboon** (*Moset*)
+     3. **Tungo** — Totem: **Hyena** (*Kimaketyet*)
+     4. **Kobil** — Totem: **Wild pig** (*Toret*)
+     5. **Talai** — Totem: **Leopard** (*Cheplanget*)
+     6. **Toyoi** — Totem: **Rain** (*Robta*)
+   - **Five Lumbwa Clans (*Korgat*) & Totems (p. 164)**:
+     1. **Kipoiis** — Totem: **Wild pig** & **Hunter's trap**
+     2. **Talai** — Totem: **Wild dog / Hunting dog** (*Suiyot*)
+     3. **Toyoi** — Totem: **Rain** & **Soldier ants**
+     4. **Kipiegen** — Totem: **Baboon** (*Moset*)
+     5. **Kobil** — Totem: **Serval cat** (*Kesoit*)`,
+  examples: [
+    { kalenjin: "Elgeyo & Kamasia Oret: Kobil (wart-hog), Talai (baboon/crow), Toyoi (rain/soldier ants), Kipoiis (jackal/frog), Soti (sun), Kariwong (crested crane), Siokwei (bee), Tungo (hyena), Terik (elephant), Saniak (baboon)", english: "Elgeyo and Kamasia totemic clans (Oret) recorded by Hobley", explanation: "Hobley (1910, Part II, Ch. VI, pp. 161–162)" },
+    { kalenjin: "1. Kiptamo, 2. Iwatkut, 3. Wake, 4. Ngei, 5. Robtui, 6. Buret, 7. Epeso, 8. Kipsunde, 9. Kipsunde oieng, 10. Mulkul, 11. Mulkulik oieng, 12. Ngotioto", english: "The 12 ecological months of the Elgeyo and Kamasia", explanation: "Hobley (1910, Part II, Ch. VI, p. 162)" },
+    { kalenjin: "7 Districts: Buret, Sotik, Kondu, Kipkoiimet, Belgut, Kabianga, Waldai • Sotik & Lumbwa Korgat: Kipoiis, Kipiegen, Tungo, Kobil, Talai, Toyoi", english: "The 7 Lumbwa/Sotik districts and their totemic clans (Korgat)", explanation: "Hobley (1910, Part II, Ch. VI, pp. 163–164)" }
+  ]
+});
+
+
+// ============================================================
+// Sir Harry H. Johnston, G.C.M.G., K.C.B., D.Sc. (1919–1922)
+// "A Comparative Study of the Bantu and Semi-Bantu Languages" (Clarendon Press, Oxford — Public Domain)
+// Complete Line-by-Line Grammar, Prefix/Concord, Errata, Addenda, Bibliography & Vol. II Chapter VI Reference Sections
+// ============================================================
+
+SWAHILI_GRAMMAR_SECTIONS.push({
+  id: "swahili-johnston-1919-1922-group-f-21-21g-kihadimu-kingozi",
+  title: "Sir Harry H. Johnston (1919–1922) Group F Zaṅgian (#21–21g): Ki-uṅguja, Miss Dora Abdy's 1915 Ki-hadimu (h.) & Ki-ṅgωzi (g.), Ki-mvita (21a), Ki-amu/Ki-siu/Ki-pate (21b–d), Ki-tikūū/Bajun (21e), Ki-wibu/Ki-ṅgωje (21f–g), Erratum p. x & Bibliography (p. 789)",
+  summary: "Complete line-by-line synthesis of Group F Zaṅgian (#21–21g) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. x, 131–140, 789 & Vol. II [1922], pp. 38–41, 227, 263, 377–441, 463–491, 499–534).",
+  content: `From Sir Harry H. Johnston, G.C.M.G., K.C.B., D.Sc. (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Oxford: Clarendon Press, Vol. I [1919], pp. x, 131–140, 789 & Vol. II [1922], pp. 38–41, 227, 263, 377–441, 463–491, 499–534):
+1. **Eight Numbered Varieties & Two Archaic Registers of Group F Zaṅgian (Vol. I, pp. 131–140 & Vol. II, pp. 38–41)**:
+   - **21. Swahili (*Ki-uṅguja*)**: Zanzibar Island and mainland coast, with sub-markers **h. = Ki-hadimu** (speech of the indigenous *Wa-hadimu* of eastern and southern Zanzibar Island) and **g. = Ki-ṅgωzi** (archaic literary/poetic dialect of the Tana–Ozi coast).
+   - **21a. Ki-mvita**: Mombasa and immediate coast (*M-vita*).
+   - **21b. Ki-amu**: Lamu Island (*Amu*).
+   - **21c. Ki-siu (*Ki-ωzi*)**: Siu town on Patta Island and the Ozi River estuary.
+   - **21d. Ki-pate (and *Ki-šela*)**: Patta town and Shela on Lamu Island.
+   - **21e. Ki-tikūū (*Faza-Bajun / Ki-gunya*)**: NorthernPatta (Faza) and the Bajun Islands northward to Kiunga (1°45' S) and Kismayu.
+   - **21f. Ki-wibu & 21g. Ki-ṅgωje**: Southern mainland Zaṅgian varieties (Ibo/Kerimba coast and Angoche).
+2. **Erratum (Vol. I, p. x) & Complete 17-Class Prefix/Concord Table (Vol. I, p. 140 & Vol. II, p. 263)**:
+   - **Erratum (Vol. I, p. x)**: On p. 140 (**Swahili 21–21g**), Class 4 concords are corrected from *(m-, mu-, i-)* to **(mi-, -m, -i-)**.
+   - **17-Class Prefixes & Concords (Vol. I, p. 140)**: Cl. 1 **M-, Mu-, Mw-** (*m-, yu-, u-, a-, wa-*) • Cl. 2 **Wa-** (*wa-*) • Cl. 3 **M-, Mu-, Mw-** (*m-, u-*) • Cl. 4 **Mi-** (*mi-, -m, -i-*, Erratum p. x) • Cl. 5 **Ji-, J'-, Dz'-, I-, Ø-** (*li-, l'-*) • Cl. 6 **Ma-** (*ya-, ma-*) • Cl. 7 **Ki-, C'-** (**i-** in 21e *Ki-tikūū*; *ki-, c'-*) • Cl. 8 **Vi-, Vy-** (**zi-** in 21a–e; *vi-, vy-, zi-*) • Cl. 9 **N- (Ny-, M-), Ø-** (*i-, y'-*) • Cl. 10 **N- (Ny-, M-), Ø-** (*zi-, z'-*) • Cl. 11 **U-, W-** (*u-, w-*) • Cl. 12–13 *(obsolete in 21, traces of Ka- in h./g.)* • Cl. 14 **U-, W-** (*u-, w-*) • Cl. 15 **Ku-, Kw-** (*ku-, kw-*) • Cl. 16 **Pa- / Ha-** (*pa-*) • Cl. 17 **Mu-** (*mu-*), plus locative suffix **-ni**.
+3. **Miss Dora Abdy's 1915 History of the Wahadimu & All 30 *Ki-hadimu* (h.) Words (Vol. II, pp. 39–40)**:
+   - Johnston records from **Miss Dora C. Abdy** (Universities' Mission, Zanzibar, 1915) that the **Wa-hadimu** crossed from **Windi** on the mainland opposite Zanzibar at an early period and founded **Śaṅgani** (now the European quarter of Zanzibar city) before retiring to the eastern and southern parts of Zanzibar Island.
+   - **Complete List of 30 *Ki-hadimu* (h.) Words & Grammatical Forms (Vol. II, pp. 39–40 & Vol. I, pp. 131–139)**:
+     1. **Miye, Weye, Yeye, Siye, Nyiye, Waω** — Personal pronouns ('I, thou, he, we, ye, they')
+     2. **Huyu / Yunω (Cl. 1), Haya / Yanω (Cl. 2)** — Demonstratives ('this, these')
+     3. **-mwe** (1), **-wili** (2), **-tatu** (3), **-ne** (4), **-tanω** (5), **-tandatu** (6), **M-fuṅgate** (7), **M-nane** (8), **Kenda** (9), **Kumi** (10) — Pure Bantu numerals preserved alongside Arabic loans
+     4. **U-šaṅga (h.)** — Beads
+     5. **M-bura (h.)** — Rain (for *M-vua*)
+     6. **Ki-joli (h.)** — Bird
+     7. **Ṅ-gombe (h.)** — Bull / Cattle
+     8. **M-wana-kerekwe (h.)** — Child
+     9. **U-šiku (h.)** — Night
+     10. **M-tana (h.)** — Day
+     11. **Ku-lawa (h.)** — To go out / come from
+     12. **Ku-gwa (h.)** — To fall
+     13. **Ku-ča (h.)** — To fear / dawn
+     14. **Ku-nena / Ku-gamba (h.)** — To speak / say
+     15. **Ku-lya (h.)** — To eat
+     16. **Ku-nya (h.)** — To drink / rain.
+4. **Archaic *Ki-ṅgωzi* (g.) & Northern Coastal Dialect (*21a Ki-mvita, 21b–d Ki-amu/Ki-siu/Ki-pate, 21e Ki-tikūū*) Roots (Vol. I, pp. 131–139 & Vol. II, pp. 40–41)**:
+   - **Ki-ṅgωzi (g.)**: **M-lala (g.)** (woman), **M-lumbe (g.)** (man), **Ma-te (g.)** (water), **M-kωnω (g.)** (arm), **Kū-lū (g.)** (leg), **N-dωvu (g.)** (elephant), **N-gω (g.)** (leopard), **Sī (g.)** (fish), **-kala (g.)** (sit/remain).
+   - **21a Ki-mvita, 21b–d Lamu & 21e Ki-tikūū Sound Correspondences**: Dental **t / nd / z** where Ki-uṅguja has *ch / nj / j*: **M-tana** (day), **Ma-tω** (eyes), **N-daa** (hunger), **N-dωvu** (elephant), **N-dia** (road), **Ku-tinda** (slaughter), **Ma-i** (water in 21b–e), **I-we ; ma-we** (stone), **I-si ; ma-si** (fish in 21e *Ki-tikūū*), **N-duki** (bee in 21e), **M-cale** (arrow in 21e vs. *M-tale* in 21b–d), **Cωka** (axe in 21e vs. *Tωka* in 21b–d).
+5. **Bibliography for #21–21g (Vol. I, p. 789)**:
+   - Cites J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1884/1894), W. E. Taylor (*African Aphorisms*, 1891 & *Groundwork of the Swahili Language*, 1898), Père Charles Sacleux (*Dictionnaire Français-Swahili*, 1891 & *Grammaire des Dialectes Swahilis*, 1909), A. C. Madan (1894, 1902, 1903), C. G. Büttner (1890–1894), Carl Velten (1898–1910), Ferdinand Würtz (*Kipokomo & Lamu/Tikuu vocabularies*, 1892–1895), Mrs. F. Burt (*Swahili Grammar and Vocabulary*, 1910), Capt. C. H. Stigand (*A Grammar of Dialectic Changes in the Kiswahili Language*, 1915), Mervyn W. H. Beech (*Aids to the Study of Ki-Swahili*, 1918), and Miss Dora C. Abdy (1915 MS. on *Ki-hadimu*).`,
+  examples: [
+    { swahili: "21. Ki-uṅguja (h. = Ki-hadimu, g. = Ki-ṅgωzi), 21a. Ki-mvita, 21b. Ki-amu, 21c. Ki-siu (Ki-ωzi), 21d. Ki-pate (& Ki-šela), 21e. Ki-tikūū (Faza-Bajun / Ki-gunya), 21f. Ki-wibu, 21g. Ki-ṅgωje", english: "All Group F Zaṅgian / Swahili varieties in Johnston (1919–1922)", explanation: "Johnston (1919, Vol. I, pp. 131–140 & 1922, Vol. II, pp. 38–41)" },
+    { swahili: "Ki-hadimu (h.): Miye, Weye, Yeye, Siye, Nyiye, Waω • -tandatu (6), M-fuṅgate (7), M-nane (8), Kenda (9) • M-bura (rain) • Ku-lawa (go out) • Śaṅgani (from Windi)", english: "Miss Dora Abdy's 1915 Ki-hadimu vocabulary and Wahadimu migration history", explanation: "Johnston (1922, Vol. II, pp. 39–40)" },
+    { swahili: "Class 4 concords: mi-, -m, -i- (Erratum p. x) • 21e Ki-tikūū: I-si (fish), N-duki (bee), M-cale (arrow), Cωka (axe), Ma-i (water)", english: "Vol. I p. x Erratum & Northern Bajun (21e Ki-tikūū) forms", explanation: "Johnston (1919, Vol. I, pp. x, 131–140)" }
+  ]
+});
+
+MIJIKENDA_GRAMMAR_SECTIONS.push({
+  id: "mijikenda-johnston-1919-1922-group-c-16-nika",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #16 Nika (16a Giryama, 16b Duruma, 16c Digω): Three Errata on p. x (Sikirω, M-ωhω, Dzala-gumba), 16-Class Prefix/Concord Table (p. 112), Noteworthy Roots (Vol. II, pp. 33–34) & Bibliography (pp. 788–789)",
+  summary: "Complete line-by-line documentation of Group C #16 Nika (16a Giryama, 16b Duruma, 16c Digω) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. x, 98–112, 788–789 & Vol. II [1922], pp. 33–34, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. x, 98–112, 788–789 & Vol. II [1922], pp. 33–34, 226, 261):
+1. **Three Errata for #16 Nika (Vol. I, p. x) & Three Dialect Subdivisions (16a, 16b, 16c)**:
+   - **Erratum 1 (p. x)**: On p. 100 col. 16 (**Nika**), 'Ear' is corrected to **Sikirω** (*pl. Ma-sikirω*).
+   - **Erratum 2 (p. x)**: On p. 100 col. 16 (**Nika**), 'Fire' is rendered **M-ωhω** (alongside Taita *M-ωdω* and Taveita *M-ōtω*).
+   - **Erratum 3 (p. x)**: On p. 105 col. 16 (**Nika**), 'Thorn/Toe (great toe)' is corrected from *D-zala g-umba* to **Dzala-gumba** ('thumb / great toe').
+   - **Sub-Dialects**: **16. Nika (Rabai)**, **16a. Giryama**, **16b. Duruma**, **16c. Digω**.
+2. **Complete 16-Class Prefix & Concord Table for #16 Nika (Vol. I, p. 112 & Vol. II, p. 261)**:
+   - **Class 1**: **Mu-, M-, Mw-** (*u-, yu-, a-, wa-*) • **Class 2**: **A-, Wa-** (*a-, wa-*)
+   - **Class 3**: **Mu-, M-, Mw-** (*u-*) • **Class 4**: **Mi-** (*i-, mi-*)
+   - **Class 5**: **Dzi-, Dz'-, I-, R-, Ø-** (*ri-, r'-*) • **Class 6**: **Ma-** (*ga-, ma-*)
+   - **Class 7**: **Ki-, C'- (Č-)** (*ki-, c'-*) • **Class 8**: **Vi-, Vy-** (*vi-, vy-*)
+   - **Class 9**: **N- (Ny-, M-), Ø-** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-), Ø-** (*zi-, z'-*)
+   - **Class 11**: **Lu-, U-, W-** (*lu-*)
+   - **Class 12**: **Tu-, Tw-** (plural of Class 13; *tu-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)
+   - **Class 14**: **U-, W-** (*u-*) • **Class 15**: **Ku-, Kw-** (*ku-*) • **Class 16**: **Va-, Ha-** (*va-, ha-*), plus locative **Mu-** (Cl. 17) and suffix **-ni**.
+3. **Noteworthy Roots in #16 Nika (Vol. I, pp. 98–110 & Vol. II, pp. 33–34)**:
+   - **Sabaki Sound Shifts (*t > h, *j > dz)**: **M-ωhω** (fire), **Mū-hω** (river), **Mū-hi ; mī-hi** (tree), **-hahu** (three), **-handahu** (six), **Fuṅgahe** (seven), **Dz-iwe ; ma-we** (stone), **Dz-itšω ; ma-tšω** (eye), **Dz-inω ; m-enω** (tooth), **Dz-ūa** (sun), **Ma-dzi** (water), **Mū-dzi ; mī-dzi** (village/town), **Mū-lūṅgu** (God), **Baba / Tsowe** (father), **Mai / Mavu** (mother), **Mū-lūme** (husband/man), **Mū-ce ; a-ce** (wife/woman), **N-zωvu** (elephant), **M-bωgω** (buffalo), **Mū-nyambū / Simba** (lion), **Tšūi** (leopard), **Fisi** (hyena), **Kūlū** (dog), **Sūi** (fish).
+4. **Bibliography for #16 Nika (Vol. I, pp. 788–789)**:
+   - Cites J. L. Krapf (*Vocabulary of Six East-African Languages*, 1850), J. L. Krapf, J. Rebmann & T. H. Sparshott (*A Nika-English Dictionary*, SPCK 1887), A. D. Shaw (*A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages*, 1885), Rev. W. E. Taylor (*Giryama Vocabulary and Collections*, SPCK 1891), and Alice Werner (*JRAI* 1915).`,
+  examples: [
+    { mijikenda: "Sikirω (ear, p. 100) • M-ωhω (fire, p. 100) • Dzala-gumba (great toe/thumb, p. 105)", english: "All three Errata et Addenda corrections for #16 Nika in Johnston (1919, Vol. I, p. x)", explanation: "Johnston (1919, Vol. I, p. x Errata et Addenda)" },
+    { mijikenda: "Cl. 1/2 Mu-/A- (Wa-) • Cl. 5/6 Dzi-/Ma- (ri-/ga-) • Cl. 7/8 Ki-/Vi- • Cl. 11/10 Lu-/N- • Cl. 13/12 Ka-/Tu- • Cl. 16 Va-/Ha-", english: "Complete 16-class prefix & concord system in #16 Nika (16a Giryama, 16b Duruma, 16c Digω)", explanation: "Johnston (1919, Vol. I, p. 112 & 1922, Vol. II, p. 261)" },
+    { mijikenda: "-mwe (1), -iru / -iri (2), -hahu (3), -ne (4), -tsanω (5), -handahu (6), Fuṅgahe (7), -nane (8), Kenda (9), Kumi (10)", english: "Cardinal numerals 1–10 in #16 Nika / Giryama", explanation: "Johnston (1919, Vol. I, p. 107 #16 Nika)" }
+  ]
+});
+
+POKOMO_GRAMMAR_SECTIONS.push({
+  id: "pokomo-johnston-1919-1922-group-c-13",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #13 Pωkωmω (Pfωkωmω): Erratum p. x (-kuni, -khuni), Bilabial Affricates (pf/bf), 16-Class Prefix/Concord Table (p. 111), Noteworthy Roots (Vol. II, pp. 31–32) & Bibliography (p. 788)",
+  summary: "Complete line-by-line documentation of Group C #13 Pωkωmω (Pfωkωmω) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. x, 98–112, 788 & Vol. II [1922], pp. 31–32, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. x, 98–112, 788 & Vol. II [1922], pp. 31–32, 226, 261):
+1. **Erratum (Vol. I, p. x), Phonology & Complete 16-Class Prefix/Concord Table (Vol. I, p. 111 & Vol. II, pp. 31–32, 226, 261)**:
+   - **Erratum (Vol. I, p. x)**: On p. 106 col. 13 (**Pωkωmω**), 'Wood (firewood)' is corrected from *-kumi, -khumi* to **-kuni, -khuni** (*Lu-kuni / N-khuni*).
+   - **Phonological Character**: Retains Sabaki **t > h** (*M-ωhω* 'fire', *Mū-hω* 'river', *Mū-hi* 'tree', *-hahu* 'three', *-handahu* 'six', *Fuṅgahe* 'seven'), develops labiodental/bilabial affricates **pf / bf** (*Ki-pfωkωmω, Bfūya* 'rain'), and shifts intervocalic *l* to **y** (*Bfūya* 'rain', *N-dzaa / N-dzaya* 'hunger', *-yala* 'sleep', *-kaya* 'sit/remain').
+   - **Complete 16-Class Prefix & Concord Table (Vol. I, p. 111)**:
+     - **Class 1**: **Mu-, M-** (*yu-, u-, a-, wa-*) • **Class 2**: **Wa-** (*wa-*)
+     - **Class 3**: **Mu-, M-** (*u-*) • **Class 4**: **Mi-** (*i-, mi-*)
+     - **Class 5**: **Dzi-, I-, Ø-** (*li-, dzi-*) • **Class 6**: **Ma-** (*ga-, ma-*)
+     - **Class 7**: **Ki-, C'-** (*ki-, c'-*) • **Class 8**: **Vi-, Vy-** (*vi-, vy-*)
+     - **Class 9**: **N- (Ny-, M-)** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-)** (*zi-, z'-*)
+     - **Class 11**: **Lu-, U-** (*lu-*)
+     - **Class 12**: **Tu-** (plural of Class 13; *tu-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)
+     - **Class 14**: **U-** (*u-*) • **Class 15**: **Ku-** (*ku-*) • **Class 16**: **Va-, Ha-** (*va-, ha-*).
+2. **Noteworthy Roots in #13 Pωkωmω (Vol. I, pp. 98–110 & Vol. II, pp. 31–32)**:
+   - **Kinship, Body & Nature**: **Mu-ntu ; wa-ntu** (person), **Baba, Ise** (father), **Mama, Nina** (mother), **Mu-yūme ; wa-** (husband/man), **Mu-ke ; wa-ke** (wife/woman), **Ki-tswa ; vi-** (head), **Dz-itsω ; ma-tsω** (eye), **Kū-tū ; ma-tū** (ear), **Dz-inω ; m-enω** (tooth), **Lu-limi ; n-dimi** (tongue), **Mū-kωnω ; mi-** (arm), **Kū-gūū ; ma-** (leg), **Mū-dzi ; mi-dzi** (town/village), **W-ahω ; m-ahω** (dugout canoe), **N-gωma** (drum), **Mū-yūṅgu** (God), **Dz-ūa** (sun), **M-wezi** (moon), **Ny-ωta** (star), **Bfūya / M-vūya** (rain), **Ma-dzi** (water), **M-ωhω** (fire), **Dz-iwe ; ma-we** (stone), **N-dzωvu** (elephant), **M-bωgω** (buffalo), **Simba** (lion), **Tšūi** (leopard), **N-gūū** (hippo), **N-gwena** (crocodile), **N-swi** (fish).
+3. **Bibliography for #13 Pωkωmω (Vol. I, p. 788)**:
+   - Cites J. L. Krapf (*Vocabulary of Six East-African Languages*, 1850 — *Kipokomo*), missionary Ferdinand Würtz (*Wörterbuch des Ki-Tikuu und des Ki-Pokomo*, 1895 & *Grammatik des Pokomo*, 1896), and the Neukirchen Mission *Kipokomo New Testament* and *Book of Psalms*.`,
+  examples: [
+    { pokomo: "-kuni, -khuni (Lu-kuni / N-khuni, firewood, Erratum p. x) • Bfūya / M-vūya (rain) • Mu-yūme (man) • Mū-yūṅgu (God)", english: "Erratum p. x correction & characteristic Kipfokomo roots (*l > y, *v > bf)", explanation: "Johnston (1919, Vol. I, pp. x, 98–106 & 1922, Vol. II, pp. 31–32)" },
+    { pokomo: "Cl. 1/2 Mu-/Wa- • Cl. 5/6 Dzi-/Ma- (li-/ga-) • Cl. 7/8 Ki-/Vi- • Cl. 11/10 Lu-/N- • Cl. 13/12 Ka-/Tu-", english: "Complete Kipfokomo noun-class prefix and concord table", explanation: "Johnston (1919, Vol. I, p. 111 #13 Pωkωmω)" },
+    { pokomo: "Imi (Mimi), Wewe, Yeye, Swiswi, Nyiwi, Waω • -aṅgu, -akω, -akwe, -etu, -enyu, -aω", english: "Personal and possessive pronouns in #13 Pωkωmω", explanation: "Johnston (1919, Vol. I, p. 108 #13 Pωkωmω)" }
+  ]
+});
+
+TAITA_GRAMMAR_SECTIONS.push({
+  id: "taita-johnston-1919-1922-group-c-14",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #14 Taita (Ki-dabida, Ki-sagala, Ki-siγau): Three Errata on p. x (M-ωdω, Lu-aiyω, -a n-denyi), 16-Class Prefix/Concord Table (p. 112), Noteworthy Roots (Vol. II, pp. 32–33) & Bibliography (p. 788)",
+  summary: "Complete line-by-line documentation of Group C #14 Taita (Ki-dabida, Ki-sagala, Ki-siγau) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. x, 98–112, 788 & Vol. II [1922], pp. 32–33, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. x, 98–112, 788 & Vol. II [1922], pp. 32–33, 226, 261):
+1. **Three Errata for #14 Taita (Vol. I, p. x) & Three Mountain Dialects (*Ki-dabida, Ki-sagala, Ki-siγau*)**:
+   - **Erratum 1 (p. x)**: On p. 100 col. 14 (**Taita**), 'Fire' is rendered **M-ωdω** (alongside *M-ōtω* in Sagala).
+   - **Erratum 2 (p. x)**: On p. 101 col. 14 (**Taita**), 'Foot' is corrected from *Su-aiyω* to **Lu-aiyω** (*pl. Ny-aiyω*).
+   - **Erratum 3 (p. x)**: On p. 110 col. 14 (**Taita**), 'Inside' is corrected from *-a n-denji* to **-a n-denyi**.
+   - **Three Dialects (Vol. I, p. 98 & Vol. II, p. 32)**: **Ki-dabida** (Dawida, unmarked in Col. 14), **Ki-sagala** (marked **s.**), and **Ki-siγau** (Kasigau, marked **k.**).
+2. **Complete 16-Class Prefix & Concord Table for #14 Taita (Vol. I, p. 112 & Vol. II, p. 261)**:
+   - **Class 1**: **Mu-, M-** (*yu-, u-, a-, wa-*) • **Class 2**: **Wa-, Va-** (*wa-, va-*)
+   - **Class 3**: **Mu-, M-** (*gu-, 'gu-, u-*) • **Class 4**: **Mi-** (*i-, mi-*)
+   - **Class 5**: **I-, Ri-, Ø-** (*ri-, li-*) • **Class 6**: **Ma-** (*ga-, 'ga-, ma-*)
+   - **Class 7**: **Ki-, C'- (Č-)** (*ki-, c'-*) • **Class 8**: **Vi-, Fi-, Ši-** (*vi-, fi-, ši-*)
+   - **Class 9**: **N- (Ny-, M-)** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-), Tšu-** (*zi-, tš'-*)
+   - **Class 11**: **Lu-** (*lu-*)
+   - **Class 12**: **Tu-** (plural of Cl. 13 in Dabida; singular diminutive in Sagala taking plural *Vi-*; *tu-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)
+   - **Class 14**: **Wu-, U-** (*u-, wu-*) • **Class 15**: **Ku-** (*ku-*) • **Class 16**: **Ha-, Va-** (*ha-, va-*), plus locative suffix **-ni / -ini / -nyi**.
+3. **Noteworthy Roots Contrasting *Ki-dabida*, *Ki-sagala* (s.) & *Ki-siγau* (k.) (Vol. I, pp. 98–110 & Vol. II, pp. 32–33)**:
+   - **Phonological Contrast**: In *Ki-dabida*, Proto-Bantu *p* becomes **f** or **v** and Class 8 is **Fi- / Ši-** (*Fi-ndu* 'things', *M-fūa* 'rain', *M-fūmū* 'arrow/spear', *I-fūmū*), whereas *Ki-sagala* has **Vi-ndu**, **M-vūa**, and velar fricative **γ ('g)** (*I-γana* '100', *M-γωsi* 'elder').
+   - **Lexical Roots**: **M-lūṅgu** (God), **I-zūva / I-rūva** (sun), **M-wezi / M-weri** (moon), **N-dondē (s.) / N-gēnyi** (star), **Ma-tšī / Ma-džī** (water), **M-ωdω / M-ōtω** (fire), **I-γwe ; ma-γwe** (stone), **C-oṅgω ; f-oṅgω (s. v-oṅgω)** (head), **I-zitsω ; m-esω** (eye), **Kū-tū ; ma-tū (s. Ki-sikilω ; ma-)** (ear), **I-jegω ; ma-jegω** (tooth), **Lu-limi ; n-dimi** (tongue), **M-kωnω ; mi-** (arm), **Ki-gūlū ; vi- / Lu-aiyω ; ny-aiyω** (leg/foot), **N-zωvu / N-džωvu** (elephant), **M-bωgω** (buffalo), **Simba** (lion), **Tšūi / N-gω** (leopard).
+4. **Bibliography for #14 Taita (Vol. I, p. 788)**:
+   - Cites J. L. Krapf (1850), A. D. Shaw (*Pocket Vocabulary*, 1885 — *Ki-Taita*), J. T. Last (*Polyglotta Africana Orientalis*, 1885), Rev. J. Alfred Wray (*An Elementary Introduction to the Taita Language: Sagalla Dialect*, SPCK 1894), H. W. Woodward (*Kitaita or Kisighau*, *Z. f. Kolonialsprachen* 1913), and C. W. Hobley (MS. vocabularies of *Kidabida*).`,
+  examples: [
+    { taita: "M-ωdω (fire, p. 100) • Lu-aiyω → ny-aiyω (foot, p. 101) • -a n-denyi (inside, p. 110)", english: "All three Errata et Addenda corrections for #14 Taita in Johnston (1919, Vol. I, p. x)", explanation: "Johnston (1919, Vol. I, p. x Errata et Addenda)" },
+    { taita: "Ki-dabida: Fi-ndu (things), M-fūa (rain), I-rūva (sun) vs. Ki-sagala (s.): Vi-ndu, M-vūa, I-zūva, N-dondē (star), I-γana (100)", english: "Dialectal correspondences across Kidabida, Kisagala (s.), and Kisighau (k.) in Column 14", explanation: "Johnston (1919, Vol. I, pp. 98–112 & 1922, Vol. II, pp. 32–33)" },
+    { taita: "-mweri / -mwe (1), -wīrī / -bīlī (2), -tatū (3), -nne (4), -sanω (5), -tandatū (6), M-fuṅgate (7), M-nane (8), Kenda (9), I-kūmi (10)", english: "Cardinal numerals 1–10 in #14 Taita", explanation: "Johnston (1919, Vol. I, p. 107 #14 Taita)" }
+  ]
+});
+
+TAVETA_GRAMMAR_SECTIONS.push({
+  id: "taveta-johnston-1919-1922-group-c-15-group-d-17-caga",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #15 Taveita & Group D #17 Caga: Errata p. x (M-ōtω & Mωši), 16-Class Prefix/Concord Table (p. 112), Noteworthy Roots (Vol. II, pp. 33–34) & Bibliography (p. 788)",
+  summary: "Complete line-by-line documentation of Group C #15 Taveita and its Kilimanjaro neighbour Group D #17 Caga in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. x, 98–126, 788 & Vol. II [1922], pp. 33–35, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. x, 98–126, 788 & Vol. II [1922], pp. 33–35, 226, 261):
+1. **Errata (Vol. I, p. x) & Complete 16-Class Prefix/Concord Table for #15 Taveita (Vol. I, p. 112 & Vol. II, p. 261)**:
+   - **Errata (Vol. I, p. x)**: On p. 100 col. 15 (**Taveita**), 'Fire' is rendered **M-ōtω**; on p. 113 (**17. Caga**), the principal dialect is corrected from *Musi* to **Mωši** (alongside *Śira, Keni/Urombo, Uru, Macame, Siha, Meru, Kahe*).
+   - **16-Class Prefixes & Concords in #15 Taveita (Vol. I, p. 112)**:
+     - **Class 1**: **Mu-, M-** (*yu-, u-, a-, va-*) • **Class 2**: **Va-, Wa-** (*va-, wa-*)
+     - **Class 3**: **Mu-, M-** (*u-*) • **Class 4**: **Mi-** (*i-, mi-*)
+     - **Class 5**: **I-, Ri-** (*li-, ri-*) • **Class 6**: **Ma-** (*ga-, ma-*)
+     - **Class 7**: **Ki-, C'-** (*ki-, c'-*) • **Class 8**: **Vi-, Vy-** (*vi-, vy-*)
+     - **Class 9**: **N- (Ny-, M-)** (*i-, y'-*) • **Class 10**: **N- (Ny-, M-)** (*zi-, z'-*)
+     - **Class 11**: **Lu-** (*lu-*)
+     - **Class 12**: **Tu-** (plural of Class 13; *tu-*) • **Class 13**: **Ka-** (diminutive singular; *ka-*)
+     - **Class 14**: **Vu-, U-** (*vu-, u-*) • **Class 15**: **Ku-** (*ku-*) • **Class 16**: **Ha-, Va-** (*ha-, va-*), plus locative suffix **-ni / -ini**.
+2. **Noteworthy Roots in #15 Taveita & Comparison with #17 Caga (Vol. I, pp. 98–126 & Vol. II, pp. 33–35)**:
+   - **Kinship & People**: **M-ndu ; va-ndu** (person), **Papa, Iše** (father), **Mama, Nyinya** (mother), **M-īmi ; va-īmi** (man/husband), **M-ce ; va-ce** (woman/wife), **M-wana ; v-ana** (child), **M-fumwa ; va-** (chief/king), **M-ganga ; va-** (doctor).
+   - **Body, Nature & Animals**: **M-twi ; mi-twi** (head), **I-rišω ; m-ešω** (eye), **Kū-tū ; ma-tū** (ear), **I-jegω ; ma-jegω** (tooth), **Lu-limi ; n-dimi** (tongue), **M-kωnω ; mi-** (arm), **Kū-gūlū ; ma-** (leg), **Ny-umba** (house), **I-zūva** (sun; Caga **I-rūva**), **M-wezi** (moon), **Ny-ωta** (star), **M-vūa** (rain), **Ma-zi** (water; Caga **M-riṅga**), **M-ōtω** (fire), **I-we ; ma-we** (stone), **N-zωvu** (elephant), **M-bωgω** (buffalo), **Simba** (lion), **N-gω** (leopard), **M-fuli** (rhino), **Sūi** (fish), **I-deγe ; ma-deγe** (bird).
+3. **Bibliography for #15 Taveita (Vol. I, p. 788)**:
+   - Cites Sir Harry H. Johnston (*The Kilima-njaro Expedition*, 1886 — first published vocabulary of *Kitaveta*), J. T. Last (*Polyglotta Africana Orientalis*, 1885), Rev. A. R. Steggall (CMS Taveta translations, 1892–1906), and A. C. Hollis (*Taveta Sayings and Proverbs*, JAS 1910 & *Taveta Enigmas*, JAS 1911).`,
+  examples: [
+    { taveta: "M-ndu → va-ndu • M-īmi → va-īmi (man/husband) • M-ce → va-ce (woman/wife) • I-deγe → ma-deγe (bird) • M-ōtω (fire, Erratum p. x)", english: "Core Kitaveta nouns and Vol. I p. x Erratum in Johnston (1919 #15 Taveita)", explanation: "Johnston (1919, Vol. I, pp. x, 98–106 #15 Taveita)" },
+    { taveta: "17. Caga (Mωši, Śira, Keni/Urombo, Uru, Macame, Siha, Meru, Kahe): I-rūva (sun/God), M-riṅga (water), M-ndu → wa-ndu", english: "Kilimanjaro #17 Caga comparative roots and Erratum p. x (Mωši)", explanation: "Johnston (1919, Vol. I, pp. x, 113–126 #17 Caga)" },
+    { taveta: "Iye (Mimi), Uwe, Yeye, Iswi, Inywi, Vaω • -aṅgu, -akω, -akwe, -etu, -enyu, -aω", english: "Independent personal and possessive pronouns in #15 Taveita", explanation: "Johnston (1919, Vol. I, p. 108 #15 Taveita)" }
+  ]
+});
+
+MERU_GRAMMAR_SECTIONS.push({
+  id: "meru-johnston-1919-1922-group-c-11a",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #11a Meru & #11 Cuka/Mwimbe/Þeraka/Igωji: Retention of Ba- (Cl. 2) & Bi- (Cl. 8), Numerals, Pronouns, Noteworthy Roots (Vol. II, pp. 28–30) & Bibliography (p. 788)",
+  summary: "Complete line-by-line documentation of #11a Meru (M.) and #11 Cuka (C.), Mwimbe (Mw.), Þeraka (Þ.), and Igωji (Ig.) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261):
+1. **Archaisms Preserved in #11a Meru (*M.*), *Cuka* (*C.*), *Mwimbe* (*Mw.*), *Þeraka* (*Þ.*) & *Igωji* (*Ig.*)**:
+   - Unlike Southern Kikuyu (#11, which reduces Class 2 *Ba-* to *A-* and Class 8 *Bi-* to *I-/Ci-*), **#11a Meru** retains **Class 2 Ba-** (*Mu-ntu → Ba-ntu*, concord *ba-*) and **Class 8 Bi-** (*Ki-ntu → Bi-ntu*, concord *bi-*), alongside Class 13/12 Diminutives **Ka- / Tu-** (*Ka-ana → Tu-ana*).
+2. **Noteworthy Roots in #11a Meru & #11 C./Mw./Þ./Ig. (Vol. I, pp. 98–110 & Vol. II, pp. 28–30)**:
+   - **People & Kinship**: **Mu-ntu ; ba-ntu** (person), **Baba, Iþe** (father), **Maitω, Nyina** (mother), **Mū-rūme ; ba-** (man/husband), **Mū-ka ; ba-ka / Mū-gūrra** (woman/wife), **Mū-nene ; ba-** (chief).
+   - **Body, Nature & Animals**: **Kī-oṅgω / Mū-twe** (head), **Rī-iþω ; ma-iþω** (eye), **Gū-tū ; ma-tū** (ear), **I-gegω ; ma-** (tooth), **Rū-rīmī ; n-dīmī** (tongue), **Kū-ωkω ; m-ωkω** (arm), **Kū-gūrū ; ma-** (leg), **I-rūa / Ri-ūa** (sun), **M-weri** (moon), **N-jata** (star), **M-būra** (rain), **Rū-ī / Ma-ī** (water), **M-wanki** (fire), **I-higa / I-bia ; ma-** (stone), **N-jωgu** (elephant), **M-bωgω** (buffalo), **Mū-rūþi / Ṅ-gatia** (lion), **N-gari** (leopard), **M-biti** (hyena), **Kū-rō** (dog), **N-þī** (fish), **Kī-rāma** (spear), **Kī-shīī** (womb), **Mā-zigūma** (spring water).`,
+  examples: [
+    { meru: "Mu-ntu → Ba-ntu (Class 1/2) • Ki-ntu → Bi-ntu (Class 7/8) • Ka-ntu → Tu-ntu (Class 13/12)", english: "Retention of archaic Class 2 Ba- and Class 8 Bi- in #11a Meru", explanation: "Johnston (1919, Vol. I, p. 111 & 1922, Vol. II, pp. 28–30)" },
+    { meru: "I-rūa (sun), Rū-ī / Ma-ī (water), M-wanki (fire), Kī-oṅgω (head), Mū-gūrra (woman), Kū-rō (dog), N-þī (fish)", english: "Distinctive #11a Meru & #11 Cuka/Mwimbe/Þeraka roots in Johnston (1919, pp. 98–106)", explanation: "Johnston (1919, Vol. I, pp. 98–106 & 1922, Vol. II, pp. 29–30)" }
+  ]
+});
+
+EMBU_GRAMMAR_SECTIONS.push({
+  id: "embu-johnston-1919-1922-group-c-11-embu-emberre",
+  title: "Sir Harry H. Johnston (1919–1922) Group C #11 Embu (E.), Emberre (Emb.) & Ndia (Nd.): Bilabial Fricative v (I-via / I-bia), 16-Class Concord Table (p. 111), Numerals, Pronouns & Noteworthy Roots (Vol. II, pp. 28–30)",
+  summary: "Complete line-by-line documentation of #11 Embu (E.), Emberre (Emb.), and Ndia (Nd.) in Sir Harry H. Johnston's Comparative Study of the Bantu and Semi-Bantu Languages (Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261).",
+  content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. 98–112, 788 & Vol. II [1922], pp. 28–30, 226, 261):
+1. **Embu (*E.*), Emberre (*Emb.*) & Ndia (*Nd.*) in Column 11 (Vol. I, pp. 98–112 & Vol. II, pp. 28–30)**:
+   - Recorded from manuscripts by **C. W. Hobley** (for *Embu, Cuka, Mwimbe*) and **E. B. Horne** (for *Emberre, Þeraka, Igωji, Meru*).
+   - **Phonological & Lexical Features**: Retains bilabial fricative **v / b** where Kabete Kikuyu has *h* (**I-via / I-bia ; ma-** 'stone', **M-biti** 'hyena', **-va / -ve** 'give'), uses **Kī-oṅgω ; i-oṅgω** ('head/skull') alongside *Mū-twe*, **M-būri** ('goat'), **N-jωka** ('snake'), **Mū-rūṅgu / Ṅ-gai** ('God'), **Ri-ūa** ('sun'), **M-weri** ('moon'), **M-būra** ('rain'), **Ma-ī** ('water'), and **M-waki** ('fire').`,
+  examples: [
+    { embu: "E. (Embu), Emb. (Emberre), Nd. (Ndia): I-via / I-bia → ma-via (stone), M-biti (hyena), Kī-oṅgω (head), Mū-rūṅgu (God)", english: "Characteristic Embu & Emberre forms in Johnston's Column 11", explanation: "Johnston (1919, Vol. I, pp. 98–106 & 1922, Vol. II, pp. 28–30)" },
+    { embu: "-mwe (1), -gīrī (2), -þatū (3), -nya (4), -þanω (5), -þanþatū (6), Mū-gwanja (7), I-nyanya (8), Kenda (9), I-kūmi (10), I-gana (100)", english: "Cardinal numerals 1–100 in #11 Embu & Emberre", explanation: "Johnston (1919, Vol. I, p. 107 #11)" }
+  ]
+});
+
+
+// ============================================================
+// Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott (1887)
+// "A Nika-English Dictionary" (SPCK London, Book pp. [i]–vii, 1–391 / PDF pp. 1–409)
+// Complete Line-by-Line Integration: All 56 Verbatim Proverbs, 5 Mulungu Prayers,
+// 2 Ordeal Oaths, 3 Fables, M'oro Assembly Rhetoric, Grammar & Taxonomies
+// ============================================================
+
+const KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS: ProverbItem[] = [
+  {
+    id: "mijikenda-14",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf, Rebmann & Sparshott 1887)",
+    indigenous: "Angue nduguye ni ulongo (p. 8) • Bandu na bandu ya mala gogo / Batubatu rinamala gogo (pp. 10, 12) • Diekudieku rinamala pinda (p. 40) • Nchira mpiri ka zi duika, saremesa fisi (p. 47) • Kazi mpiri salemesa fisi (p. 150) • Nzala ya rero ka-i-usa ngombe (p. 48) • Mudzomba akakudzagira gnania, nawe mudzagire muviru (p. 51) • Dzahasi ni menga, ela kula mutu yuna kidumbache mumo; be fugula kivindacho, ela usifugule cha muyao (p. 54) • Kitu cha muyao ni kikanda cha m'oyo (p. 169) • Madzi gaki muagika, ka-ga-dzoreka (p. 63) • Muhi ukibua u-ekemera muyawe (p. 71) • Muifi kaeleliua, sudi mu guire na kisuche (pp. 71, 182) • N'endaye kua akue kahewa madzi ga nyara (p. 73) • Fisi rikiria mukongo, nawe muzima sindika niumba to (p. 82) • Kuku rikilala nde, rina tsui (p. 198)",
+    literalTranslation: "The brother of 'They-say' is a lie (p. 8) • Chip by chip finishes the log (pp. 10, 12) • Taking out little by little empties the provision-bag (p. 40) • Two paths cannot be followed at once; they baffled the hyena (p. 47) • Two tasks defeated the hyena (p. 150) • Today's hunger does not make a man sell his cow (p. 48) • If a Swahili picks red berries for you, pick muviru fruits for him (p. 51) • The vessel is one, yet each passenger has his own bag inside; untie your own bag, not your neighbour's (p. 54) • Another's property is a crust over the heart (p. 169) • Water once spilt cannot be gathered up (p. 63) • When a tree falls, it leans upon its neighbour (p. 71) • A thief is not convicted by suspicion; you must catch him with the ear of corn (pp. 71, 182) • He who goes to his own people is not given water in the hollow of the hand (p. 73) • When the hyena eats a sick man, do you who are well shut your door securely (p. 82) • When a fowl roosts outside, the leopard gets it (p. 198).",
+    meaning: "Part I of the complete 56 verbatim Kinika proverbs (Prov.) recorded across Krapf, Rebmann & Sparshott's 'A Nika-English Dictionary' (SPCK London, 1887, pp. 8–198): upholds evidentiary proof over rumour (angue), steady perseverance (bandu na bandu), thrift (diekudieku), single-minded focus (nchira mpiri), reciprocal hospitality (mudzomba), respect for private property (dzahasi ni menga; kikanda cha m'oyo), communal mutual aid (muhi ukibua), and prudence against danger (fisi rikiria mukongo).",
+    englishEquivalent: "Hearsay is half a lie; little strokes fell great oaks; no man can serve two masters; forewarned is forearmed.",
+    theme: "wisdom",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 8, 10, 12, 40, 47–48, 51, 54, 63, 71, 73, 82, 150, 169, 182, 198)"
+  },
+  {
+    id: "mijikenda-15",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika — Krapf, Rebmann & Sparshott 1887)",
+    indigenous: "Mubia k'agomba, agombaye ni muvurana (p. 108) • Muana akignierera kiga, ka-ki-katua (p. 104) • Udugu ka-u-okua ukadzuka (p. 364) • Lukolo luo lu-fere, k'alufere (p. 214) • Lukuni lumenga kaluaka m'oho (p. 215) • Mulomo umenga ka-u-ena kambi (p. 282) • K'ana ulume wa kuao, ulume ni kuvika (p. 139) • Gnombe rikiinikua kua magu, karikosa ku ona (p. 129) • Kilagane ni kilagane, Dzimba kamala mbala (p. 171) • Kironda cha kudzidunga k'akina malio (pp. 179, 238) • Muana wa kuku k'afundisua ku para (p. 198) • Kunena kuingi si luhala (p. 213) • Lulimi kaluna fupa (p. 216) • Muana mdzanga k'anena utu urio ndani, ela unena ario isikira (p. 246) • Maneno madzo galafia mbulu pangoni (p. 249) • M'oro mudzo ka-u-lavia dzua (p. 259) • Mugeni ni kuku muerupe (p. 274) • K'akuna muaka usio m'ari (p. 283) • Ukiona nyama ya m'ondo ika lukuni; yakua ina nguma (p. 308) • Muenga k'afuraha kua m'oyo (p. 377) • Muvumbi wa mvula ni muvumbi wa m'ozi (p. 381)",
+    literalTranslation: "The grave does not speak; he who speaks is the living youth (p. 108) • If a child soils the thigh, the thigh is not cut off (p. 104) • Brotherhood cannot be washed off so as to vanish (p. 364) • That clan seems dead, yet it is not dead (p. 214) • One stick of firewood does not keep a fire burning (p. 215) • One mouth cannot match a whole council (p. 282) • Manliness is not boasting at home; manliness is reaching the goal (p. 139) • Though an ox be hung up by its legs, it does not fail to see (p. 129) • A covenant is a covenant: even the lion does not eat the whole bushbuck (p. 171) • A self-inflicted wound has no lamentation (pp. 179, 238) • A chick is not taught how to scratch the ground (p. 198) • Much talking is not wisdom (p. 213) • The tongue has no bone (p. 216) • An infant does not invent what is inside, but repeats what it has heard (p. 246) • Kind words bring the monitor lizard out of its hole (p. 249) • A good council speech does not bring out the sun (p. 259) • A stranger is like a white fowl (conspicuous to all, p. 274) • There is no year without blossoms (p. 283) • When you see a hyrax, put firewood on the hearth, yet it has a hard reputation to catch (p. 308) • A solitary person cannot rejoice from the heart (p. 377) • Where there is a cloud of rain, there is a cloud of smoke (p. 381).",
+    meaning: "Part II of the complete 56 verbatim Kinika proverbs (Prov.) in Krapf, Rebmann & Sparshott's 'A Nika-English Dictionary' (SPCK London, 1887, pp. 104–381): celebrates family forgiveness (muana akignierera kiga), collective solidarity (lukuni lumenga; mulomo umenga; muenga k'afuraha), keeping covenants (kilagane), personal accountability (kironda cha kudzidunga), gentle persuasion (maneno madzo), and concise council rhetoric (m'oro mudzo).",
+    englishEquivalent: "Blood is thicker than water; one log makes no fire; a soft answer turns away wrath; don't count your chickens before they hatch.",
+    theme: "unity",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 104, 108, 129, 139, 171, 179, 198, 213–216, 238, 246, 249, 259, 274, 282–283, 308, 364, 377, 381)"
+  },
+  {
+    id: "mijikenda-16",
+    languageId: "mijikenda",
+    languageName: "Mijikenda (Kinika Prayers, Oaths, Fables & Assembly Rhetoric — Krapf, Rebmann & Sparshott 1887)",
+    indigenous: "5 Mulungu Prayers (p. 284): (1) Kula uendako Mulungu yu vavo • (2) We Mulungu, muinulire mukongo wehu, apate ku lola dzua! • (3) Mulungu ahuikire mburuga nadzo, mbeu zehu zisangamike! • (4) Hukuenenda uriani, Mulungu ahuikire mburuga nadzo! • (5) We Mulungu, hupigeazi, hufuirie mvula! • 2 Ordeal Oaths (pp. 169, 178): Ukahenda utu hiu, ufe, unangamike dza niungu hii! (Ku piga niungu) / Kikahe na kikurie! • 3 Fables (pp. 256, 314, 323): Pingi na kuku na ninga zali ndugu mmenga (p. 323) • Nundu (bat rejected by birds and beasts, p. 314) • Mignio vs. Ludzoa (ants marching in battle array, p. 256) • M'oro Assembly Rhetoric (pp. 259–260, 347): Similani kambi! — Hai! • Kula Abegnania! — Hosi nahu kule!",
+    literalTranslation: "5 Prayers to Mulungu (p. 284): (1) Wherever thou goest, God (Mulungu) is there • (2) O God, raise up our sick one that he may behold the sun! • (3) May God grant us cool auspicious soil (spitting on the hoe before first digging), that our seeds may not perish! • (4) We are setting out on a trading journey; may God grant us an auspicious path! • (5) O God, make our earth cool and send us rain! • 2 Oaths (pp. 169, 178): If thou didst this thing, mayest thou die and be shattered like this pot! / May the ordeal wafer consume thee! • 3 Fables (pp. 256, 314, 323): The charm-wood (Pingi), the domestic fowl (Kuku), and the wild green pigeon (Ninga) were brothers (p. 323) • The bat (Nundu) claimed wings among birds and teeth among beasts and was rejected by both (p. 314) • Black ants (Mignio) marshalling in battle array against white termites (Ludzoa, p. 256) • Kaya Council Opening & Closing (pp. 259–260, 347): Give ear, O elders! — Aye! • May Father-of-So-and-so live long! — May we all live long!",
+    meaning: "Preserves verbatim the 5 traditional Kinika prayers to Mulungu (s.v. Mulungu, p. 284), the 2 judicial ordeal oaths (s.v. Kiravo p. 178 & Kikahe p. 169), the 3 moral fables (s.v. Pingi p. 323, Nundu p. 314, Mignio p. 256), and the formal Kaya council opening and closing formulas (s.v. M'oro pp. 259–260 & Simila p. 347) recorded by Krapf & Rebmann (1887).",
+    englishEquivalent: "Man proposes, God disposes; let justice be done; blessed are the peacemakers in council.",
+    theme: "courage",
+    sourceCitation: "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 169, 178, 256, 259–260, 284, 314, 323, 347)"
+  }
+];
+
+KENYAN_PROVERBS.push(...KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS.map((item) => ({
+    ...item,
+    category: "proverb" as const,
+  }))
+);
+
+MIJIKENDA_GRAMMAR_SECTIONS.push({
+  id: "mijikenda-krapf-rebmann-sparshott-1887-complete",
+  title: "Krapf, Rebmann & Sparshott (1887) A Nika-English Dictionary (Complete 391-Page Monograph): Cust's Preface & Sparshott's Introduction (pp. iii–vii), 6 Answer Verbs (p. 126), 7 Harvesting Verbs (p. 93), 4 Pounding Verbs (p. 384), 12-Class Na- Table (p. 297), Teknonymy & Kinship, 9 Kibaria Sizes, 6 Kiravo Ordeals, Kore Blood-Money, 5 Mulungu Prayers & 56 Proverbs",
+  summary: "Complete line-by-line synthesis of all 409 PDF pages (Book pp. [i]–vii, 1–391) of 'A Nika-English Dictionary', compiled by the late Rev. Dr. L. Krapf and the late Rev. J. Rebmann and edited by the Rev. T. H. Sparshott (London: SPCK, 1887), covering front matter, phonology, embedded grammatical treatises, kinship and teknonymy, indigenous taxonomies, Kaya polity, customary law, prayers, fables, and proverbs.",
+  content: `From the late Rev. Dr. L. Krapf, the late Rev. J. Rebmann & the Rev. T. H. Sparshott (*A Nika-English Dictionary*, London: Society for Promoting Christian Knowledge, Northumberland Avenue, Charing Cross, W.C.; printed by William Clowes and Sons, Limited, London and Beccles, 1887, Book pp. [i]–vii, 1–391 / PDF pp. 1–409):
+1. **Front Matter, Provenance & Phonological System (Book pp. [i]–vii / PDF pp. 1–13)**:
+   - **Preface by Robert N. Cust (dated London, May 14, 1887, p. iii / PDF p. 8)**: Cites p. 355 of his *Modern Languages of Africa* (Trübner, 1883); recounts how John Rebmann compiled this dictionary at Rabbai Mpia over nearly thirty years, how the bound fair copy vanished after his death, how Cust personally searched Widow Rebmann's bookcase at Kornthal in October 1886 in vain, and how the rough copy at Salisbury Square had its lacunae supplied by missionaries in the field and was edited for the press by the Rev. T. H. Sparshott.
+   - **Introduction by the Rev. T. H. Sparshott (dated Cholmondeley Parsonage, Malpas, Cheshire, May 1887, pp. v–vi / PDF pp. 10–11)**: Recounts the illness and death of his wife while sorting scores of odd slips of paper; notes that Dr. Krapf commenced the Wa-Nika Mission in **1844** and Mr. Rebmann laboured **29 years** among some **12 tribes** differing slightly in dialect; details the softening of harsh Arabic gutturals in Kinika (**ع** omitted altogether; **غ** softened to **g**; **خ** softened to **h** as in *Habari, Roho*; **ق** softened to **k** as in *Karafu*), the universal **penultimate stress rule** (*Ra-ba-i*), consonant interchanges (*b/p, d/t, f/v, s/z*), two *th* sounds (*thigh* vs. *thy*), and two *t* sounds (ordinary *t* vs. dental *t* in *Kisulutini*).
+   - **Alphabet (25 Letters) & 8 Abbreviations (p. vii / PDF p. 12)**:
+     - **25 Letters**: **A, B, Ch, D, Dz, E, F, G, H, I, J, K, L, M, N, O, P, R, S, T, U, V, W, Y, Z**.
+     - **8 Abbreviations**: **K.** (*Krapf*), **Kid.** (*Kidigo*), **Kig.** (*Kigiriama*), **Kij.** (*Kijomba*, the Kinika name for *Kisuahili*), **Kik.** (*Kikamba*), **Kim.** (*Kimvita*, Mombasa Swahili), **Kins.** (*Kiniasa*), **Kir.** (*Kiravai / Kirabai*).
+2. **Complete Embedded Grammatical Treatises (Book pp. 22, 24, 52, 70, 72–73, 93, 126–127, 229, 297, 384)**:
+   - **Vowel Harmony under Letter *E* (p. 70) & Suffix *-ma* (pp. 24, 52, 229)**: Verb roots whose penultimate vowel is **e** or **o** take **-eka, -era, -eza** (*ku ona → ku oneka, ku onera, ku oneza*; *ku henda → ku hendeka, ku hendera, ku hendeza*); verb roots whose penultimate vowel is **a, i, or u** take **-ika, -ira, -iza** (*ku funga → ku fungika, ku fungira, ku fungiza*), with *r* and *l* interchanging euphonically; verbal suffix **-ma** (s.v. *Chama* p. 24, *Duma* p. 52, *Ma* p. 229) denotes 'within / limiting / adhering closely'.
+   - **Older vs. Younger Continuative Copula *Chari / Chere / Kari / Kere* (p. 22)**: Older speakers say **Chari / Kari** (*Nichari, Uchari, Yuchari, Huchari, Muchari, Achari* = Kij. *Kali*), while younger speakers say **Chere / Kere** (*Nichere, Uchere, Yuchere, Huchere, Muchere, Achere* = Kij. *Kele*, 'I am still, thou art still...').
+   - **Full Irregular Conjugation & Two Syntax Rules of *Ku enda* ('to go', pp. 72–73)**:
+     - **Present Indicative**: *Nin'enda, Un'enda, Yun'enda, Hun'enda, Mun'enda, An'enda* — shortened in daily speech to **N'enda, W'enda, 'Enda, Hu'enda, Mu'enda, 'Enda** ('I am going...').
+     - **Optative / Subjunctive**: **N'ende, Wende, 'Ende, H'ende, M'ende, 'Ende** ('that I may go...').
+     - **Conditional / Participial**: **Nik'enda** ('if/when I go'); **Past Perfect**: **Nidzikuenda** ('I have gone'); **Future**: **Ntakuenda** ('I shall go').
+     - **Two Syntax Rules (p. 73)**: (1) When *ku enda* is followed immediately by another infinitive, *ku* is omitted (*N'enda rima* for *N'enda ku rima* 'I go to cultivate'); (2) In narrative or purpose sequences, the following verb takes the *ka-* prefix with final *-e* (*Enda ukarime* 'go and cultivate').
+   - **Six Verbs for 'To Answer' (*Hongoza*, p. 126)**:
+     - **Three Used ONLY in the Negative**: (1) **Ku hongoza** (*kahongoza* 'he answered not a word'), (2) **Ku runga** (*karungire*), (3) **Ku shudia** (*kashudi*).
+     - **Three Used in BOTH Affirmative & Negative**: (4) **Ku lungukiza** (replying in discourse), (5) **Ku udzikiza** (answering a call or salutation), (6) **Ku udzira** (answering a question or message).
+   - **Seven Verbs for Harvesting (*Funa*, p. 93)**: (1) **ku funa** (reap Sorghum/maize by cutting the stalk), (2) **ku guha** (pull up or break off maize cobs), (3) **ku tola** (pick pulses like *baazi/kunde* pod by pod), (4) **ku poa** (beat out pods with a stick), (5) **ku hunda** (pluck fruit from trees), (6) **ku kwachula** (strip off clusters/leaves), (7) **ku kopa** (cut off palm-leaves or banana bunches).
+   - **Four Verbs for Pounding Grain (*Vonda*, p. 384 & *Huaga*, p. 127)**: (1) **ku bonda** (crush/mash soft substances), (2) **ku vonda** (first pounding to loosen the husk with water), (3) **ku huaga** (second pounding to clean the grain after winnowing), (4) **ku pura** (final pounding into fine flour).
+   - **Complete 12-Class *Na-* ('Also / And It') Pronominal Table (*Na*, p. 297)**:
+     - **(1) Class 6 (*ma-*)**: **Na-ga / Na-go** • **(2) Class 9 (*n-*) / Cl. 4 (*mi-*)**: **Na-i / Na-yo** • **(3) Class 7 (*ki-*)**: **Na-ki / Na-cho** • **(4) Class 11 (*lu-*)**: **Na-lu / Na-lo** • **(5) Class 5 (*ri-/dzi-*)**: **Na-ri / Na-ro** • **(6) Class 10 (*n-/zi-*)**: **Na-si / Na-zo** • **(7) Class 3/14 (*mu-/u-*)**: **Na-u / Na-o** • **(8) Class 8 (*vi-*)**: **Na-vi / Na-vio** • **(9) Class 16 (*va-*)**: **Na-va / Na-vo** • **(10) Class 15/17 (*ku-*)**: **Na-ku / Na-ko** • **(11) Class 13 (*ka-*)**: **Na-ka / Na-ko** • **(12) Class 18 (*mu-*)**: **Na-mu / Na-mo**.
+3. **Teknonymy, Kinship & Life-Cycle Rites (Book pp. 1–2, 6, 9, 39, 57, 186, 188, 244–245, 249, 262, 268, 273, 276, 279, 282, 323, 387–389)**:
+   - **Teknonymy (*Abe* & *Ame / Mayo*, pp. 1–2, 6, 245)**: As soon as a man has a child, his youth name is dropped and he is called **Abe-** ('Father of —', e.g. *Abe-Gunja*, *Abe-Chindua Muambawa*, *Abe-Mkusi Dzama*; plural possessives *Abe-yehu, Abe-yenu, Abe-yao* or *Abe-zehu, Abe-zenu, Abe-zao*, p. 1), while his wife becomes **Ame-** or **Mayo-** (p. 6).
+   - **Lineal & Collateral Kinship**: **Mayo mufiere** (father's elder brother's wife or mother's elder sister) vs. **Mayo muhoho** (mother's younger sister, pp. 57, 245); **Dzangasimi** (paternal aunt, father's sister, p. 57); **Avu** (maternal uncle, mother's brother, p. 9); **Muhua** (pl. *Ahua*, sister's child / nephew or niece, p. 276); **Mukoi** (pl. *Akoi*, cross-cousin, child of *avu*, p. 279); **Muanababa** (paternal half-sibling/cousin) vs. **Muanachane** (full sibling of same mother and father, p. 262); **Mudzedza** (husband's parents-in-law, p. 268) vs. **Abefiala / Ameviala** (wife's parents-in-law, pp. 1–2, 268); **Mbumaniumba** (wife's brother / brother-in-law, p. 249); **Mulamu** (sibling-in-law, p. 282) & **Wivi / Wifi** (husband's sister / sister-in-law, p. 388); **Dzawe** (grandfather, p. 39) & **Wawe** (grandmother, p. 387), who share a familiar joking relationship (**ku dililiana**, p. 39) with grandchildren.
+   - **Two 7-Day *Mufungahe* Seclusions (*Mufungahe*, p. 273; *Mau*, p. 244)**: Seven-day ritual seclusion observed after childbirth (before the infant is brought out cleanly shaved on the 7th day), after circumcision, and during *Ugnaro* initiation.
+   - **Mourning & Funerary Customs**: Men cry **Yabayowe!** while women cry **Mayowe!** in bereavement (pp. 388–389); warriors perform somersaults (**ku piga pindui**, p. 323) over a fresh grave; mourners leave unshorn **kivunga** hair (p. 186) until the funeral feast.
+4. **Complete Ecological, Material & Temporal Taxonomies**:
+   - **4 Evening Twilight Stages (*Kim'irim'iri*, p. 175)**: (1) **Urere wa kuku** (fowls going to roost, ~6:00 p.m.), (2) **Kim'irim'iri cha kuku** (fowls can no longer see, ~6:15 p.m.), (3) **Kim'irim'iri cha mutu** (a person can barely recognise another, ~6:30 p.m.), (4) **Kiza cha niku** (pitch darkness, ~6:45–7:00 p.m.).
+   - **4-Day Mijikenda Week (*Isa*, p. 134)**: Day 1 **Dziku ya ku ramuka** (first field-work day), Day 2 **Dziku ya ku rima viri** (second cultivation day), Day 3 **Dziku ya ku isa** (third day), Day 4 **Juma** (rest, market, and palm-wine assembly day).
+   - **9 Calabash Sizes (*Kibaria*, pp. 151–152)**: (1) **Kibaria** (tapping gourd hung on the spadix), (2) **Kirea** (receiving gourd), (3) **Tumbi**, (4) **Ndzoma**, (5) **Ndundu**, (6) **Kipazi**, (7) **Muvunda**, (8) **M'ololo**, (9) **Dunda** (largest storage gourd).
+   - **7 Banana Varieties (*Isu / Izu*, p. 134)**: (1) **Isu ra kisukari**, (2) **Isu ra kikono cha nzovu** ('elephant-trunk plantain'), (3) **Isu ra kipukusa**, (4) **Isu ra kigoma**, (5) **Isu ra paka**, (6) **Isu ra tivo**, (7) **Isu ra mbuiga**.
+   - **4 Frog Species (*Chulua*, p. 30)**: (1) **Chulua** (common frog), (2) **Dori**, (3) **Gula**, (4) **Ntovi** (tree-frog).
+   - **3 *Nche* Arthropods (*Nche*, p. 299)**: (1) **Nche ya madzi** (freshwater crab/crayfish), (2) **Nche ya luvumbi** (scorpion), (3) **Nche ya lutsanga** (sand-crab).
+   - **3 Commercial Classes of Elephant Ivory (*Pembe*, p. 321)**: (1) **Bori** (scrivelloes / small tusks), (2) **Ndzao** (medium prime tusks), (3) **Mugoma** (heaviest bull tusks).
+   - **Breaking a Finger (*Ku funsa chala*, pp. 94–95)**: Customary rule of forbearance whereby an injured party bends a finger and forgives the first two offences, fighting only upon the third provocation.
+5. **Kaya Governance, *Kore* Blood-Money & Six *Kiravo* Ordeals (Book pp. 149, 169, 178, 192, 259–260, 339, 347)**:
+   - **Assembly Opening & Closing (*M'oro*, pp. 259–260; *Simila*, p. 347)**: Opened with **Similani kambi! — Hai!** ('Give ear, O council! — Aye!') and closed with the blessing **Kula Abegnania! — Hosi nahu kule!** ('May Father-of-So-and-so live long! — May we all live long!').
+   - **Blood-Money (*Kore*, pp. 192, 339)**: Intentional homicide requires paying **two anafiale** — a young man and a young girl to stand in place of the slain person's **kifurifuri** ('shadow') and perpetuate their lineage — whereas accidental homicide (**kua zani**, p. 339) requires **one kore**.
+   - **Six Judicial Ordeals (*Kiravo*, p. 178) & Pot-Smashing Oath (*Ku piga niungu*, pp. 169, 178)**: (1) **Kiravo cha mukate** (poisoned rice/bread cake *kikahe*, p. 169), (2) **Kiravo cha luembe** (heated razor on the tongue), (3) **Kiravo cha luiga** (heated horn/needle piercing the ear or lip), (4) **Kiravo cha chuma** (red-hot iron on the palm), (5) **Kiravo cha lukuni** (firebrand ordeal), (6) **Kiravo cha mvuga** (boiling water/pebble ordeal), alongside **ku piga niungu** (dashing an earthen pot to pieces while invoking destruction on the culprit).`,
+  examples: [
+    { mijikenda: "Ku hongoza, Ku runga, Ku shudia (negative-only) vs. Ku lungukiza, Ku udzikiza, Ku udzira (affirmative & negative)", english: "Six verbs for 'to answer' in Kinika (Krapf, Rebmann & Sparshott 1887, p. 126 s.v. Hongoza)", explanation: "Semantic and syntactic contrast documented on p. 126" },
+    { mijikenda: "(1) Na-ga/Na-go, (2) Na-i/Na-yo, (3) Na-ki/Na-cho, (4) Na-lu/Na-lo, (5) Na-ri/Na-ro, (6) Na-si/Na-zo, (7) Na-u/Na-o, (8) Na-vi/Na-vio, (9) Na-va/Na-vo, (10) Na-ku/Na-ko, (11) Na-ka/Na-ko, (12) Na-mu/Na-mo", english: "Complete 12-class Na- ('also / and it / with it') pronominal table (p. 297)", explanation: "Krapf, Rebmann & Sparshott (1887, p. 297 s.v. Na)" },
+    { mijikenda: "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo → Dunda", english: "Nine graded sizes of palm-wine and water calabashes from smallest to largest (pp. 151–152)", explanation: "Krapf, Rebmann & Sparshott (1887, pp. 151–152 s.v. Kibaria)" },
+    { mijikenda: "Similani kambi! — Hai! • Kula Abegnania! — Hosi nahu kule!", english: "Formal opening and closing invocations of the Kaya elders' assembly in the M'oro (pp. 259–260, 347)", explanation: "Krapf, Rebmann & Sparshott (1887, pp. 259–260 s.v. M'oro & p. 347 s.v. Simila)" }
+  ]
+});
+
+MIJIKENDA_UNITS.push({
+  id: "mijikenda-unit-14-krapf-rebmann-1887-complete",
+  title: "Unit 14: 1887 Nika Dictionary II — Verb Sets, 12-Class Na- Table, Kinship, Ordeals & Prayers",
+  description: "Master the 6 answer verbs, 7 harvesting verbs, 4 pounding verbs, 12-class Na- pronouns, teknonymy (Abe-/Mayo-), 9 Kibaria calabashes, 6 Kiravo ordeals, Kore blood-money, 5 Mulungu prayers, and 3 fables from Krapf, Rebmann & Sparshott (1887).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "mijikenda-1887-verbs-pronouns-kinship",
+      title: "6 Answer Verbs, 7 Harvesting Verbs, 12-Class Na- Table & Teknonymy",
+      icon: "Languages",
+      description: "Learn the grammatical and lexical distinctions among Mijikenda answer, harvesting, and pounding verbs, the 12-class Na- pronominal table, and teknonymic kinship from Krapf, Rebmann & Sparshott (1887, pp. 1, 72–73, 93, 126, 297, 384).",
+      tips: "In Kinika (p. 126 s.v. Hongoza), three verbs for 'to answer' (ku hongoza, ku runga, ku shudia) are used strictly in negative clauses ('he did not answer a word'), whereas ku lungukiza, ku udzikiza, and ku udzira are used in both affirmative and negative clauses.",
+      words: [
+        {
+          target: "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza, Ku udzira",
+          source: "3 negative-only verbs for 'to answer' vs. 3 affirmative & negative verbs for 'to reply / answer a call'",
+          pronunciation: "koo hohn-goh-zah / koo loon-goo-kee-zah",
+          hint: "Krapf, Rebmann & Sparshott (1887, p. 126 s.v. Hongoza)"
+        },
+        {
+          target: "Ku funa • Ku guha • Ku tola • Ku poa • Ku hunda • Ku kwachula • Ku kopa",
+          source: "7 harvesting verbs: reap stalks • break cobs • pick pods • thresh pods • pluck fruit • strip clusters • cut fronds/bunches",
+          pronunciation: "koo foo-nah • koo goo-hah • koo toh-lah • koo poh-ah • koo hoon-dah",
+          hint: "Krapf, Rebmann & Sparshott (1887, p. 93 s.v. Funa)"
+        },
+        {
+          target: "Ku bonda • Ku vonda • Ku huaga • Ku pura",
+          source: "4 pounding verbs: mash soft food • 1st husking pound • 2nd cleaning pound • final flour pounding",
+          pronunciation: "koo bohn-dah • koo vohn-dah • koo hwah-gah • koo poo-rah",
+          hint: "Krapf, Rebmann & Sparshott (1887, p. 127 s.v. Huaga & p. 384 s.v. Vonda)"
+        },
+        {
+          target: "Na-ga/Na-go (Cl. 6) • Na-ki/Na-cho (Cl. 7) • Na-lu/Na-lo (Cl. 11) • Na-ri/Na-ro (Cl. 5) • Na-vi/Na-vio (Cl. 8)",
+          source: "Class-concordant 'also / and it / with it' pronouns across the 12 noun classes",
+          pronunciation: "nah-gah nah-goh • nah-kee nah-choh • nah-loo nah-loh • nah-ree nah-roh",
+          hint: "12-class Na- table in Krapf, Rebmann & Sparshott (1887, p. 297 s.v. Na)"
+        },
+        {
+          target: "Abe-Gunja (pl. Abe-yehu / Abe-zehu) • Avu • Dzangasimi • Muhua • Mukoi",
+          source: "Father-of-Gunja (teknonym) • Maternal uncle • Paternal aunt • Sister's child • Cross-cousin (child of avu)",
+          pronunciation: "ah-beh goon-jah • ah-voo • dzahn-gah-see-mee • moo-hoo-ah • moo-koh-ee",
+          hint: "Kinship & teknonymy in Krapf, Rebmann & Sparshott (1887, pp. 1, 9, 57, 276, 279)"
+        }
+      ],
+      sentences: [
+        {
+          target: "N'enda rima mundani; enda ukarime nawe!",
+          source: "I am going to cultivate in the garden; go and cultivate thou also! (Syntax of ku enda, p. 73)"
+        },
+        {
+          target: "Nimuudzisa, ela kahongoza neno.",
+          source: "I asked him, but he did not answer a word. (Negative-only ku hongoza, p. 126)"
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "Which three Kinika verbs for 'to answer' are used ONLY in negative sentences according to Krapf, Rebmann & Sparshott (1887, p. 126 s.v. Hongoza)?",
+          correctAnswer: "Ku hongoza, Ku runga, and Ku shudia",
+          options: [
+            "Ku hongoza, Ku runga, and Ku shudia",
+            "Ku lungukiza, Ku udzikiza, and Ku udzira",
+            "Ku bonda, Ku vonda, and Ku huaga",
+            "Ku funa, Ku guha, and Ku tola"
+          ],
+          hint: "See p. 126 s.v. Hongoza"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each Mijikenda kinship or pounding term (Krapf, Rebmann & Sparshott 1887) with its exact meaning:",
+          correctAnswer: "Avu: Maternal uncle (mother's brother, p. 9)",
+          pairs: [
+            {
+              left: "Avu",
+              right: "Maternal uncle (mother's brother, p. 9)"
+            },
+            {
+              left: "Dzangasimi",
+              right: "Paternal aunt (father's sister, p. 57)"
+            },
+            {
+              left: "Ku vonda",
+              right: "First pounding of corn to loosen the husk (p. 384)"
+            },
+            {
+              left: "Ku huaga",
+              right: "Second pounding of corn to clean the grain (p. 127)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mijikenda-1887-ordeals-prayers-fables",
+      title: "6 Kiravo Ordeals, Kore Blood-Money, 9 Calabashes, 5 Mulungu Prayers & 3 Fables",
+      icon: "Scale",
+      description: "Explore Mijikenda customary law (6 Kiravo ordeals, Kore blood-money, Ku funsa chala), the 9 Kibaria calabash sizes, the 5 prayers to Mulungu, and the 3 fables in Krapf, Rebmann & Sparshott (1887).",
+      tips: "In Mijikenda customary jurisprudence (p. 192 s.v. Kore), intentional murder required two anafiale (a youth and a maiden) to replace the victim's kifurifuri ('shadow'), whereas accidental homicide (kua zani, p. 339) required one kore.",
+      words: [
+        {
+          target: "Kiravo cha mukate (kikahe) • luembe • luiga • chuma • lukuni • mvuga • Ku piga niungu",
+          source: "6 judicial ordeals (poisoned cake, hot razor, hot horn/needle, hot iron, firebrand, boiling water) & pot-smashing oath",
+          pronunciation: "kee-rah-voh chah moo-kah-teh • lwem-beh • lwee-gah • choo-mah",
+          hint: "Krapf, Rebmann & Sparshott (1887, pp. 169, 178 s.v. Kikahe & Kiravo)"
+        },
+        {
+          target: "Kore (2 anafiale for kifurifuri shadow vs. 1 kore for kua zani) • Ku funsa chala",
+          source: "Blood-money compensation (intentional vs. accidental homicide) • Bending a finger to forgive twice before fighting on the 3rd offence",
+          pronunciation: "koh-reh • kee-foo-ree-foo-ree • koo foon-sah chah-lah",
+          hint: "Krapf, Rebmann & Sparshott (1887, pp. 94–95, 192, 339)"
+        },
+        {
+          target: "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo → Dunda",
+          source: "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to the largest storage gourd (dunda)",
+          pronunciation: "kee-bah-ree-ah • kee-reh-ah • toom-bee • ndzoh-mah • doon-dah",
+          hint: "Krapf, Rebmann & Sparshott (1887, pp. 151–152 s.v. Kibaria)"
+        },
+        {
+          target: "Similani kambi! — Hai! • Kula Abegnania! — Hosi nahu kule!",
+          source: "Give ear, O council! — Aye! • May Father-of-So-and-so live long! — May we all live long! (M'oro assembly formulas)",
+          pronunciation: "see-mee-lah-nee kahm-bee • hah-ee • koo-lah ah-beh-nyah-nee-ah",
+          hint: "Krapf, Rebmann & Sparshott (1887, pp. 259–260, 347)"
+        },
+        {
+          target: "Pingi na Kuku na Ninga (p. 323) • Nundu (bat, p. 314) • Mignio vs. Ludzoa (p. 256)",
+          source: "Three traditional Kinika fables: Charm-wood, Fowl & Wild Pigeon; the Bat rejected by birds and beasts; Black Ants vs. Termites",
+          pronunciation: "peen-gee nah koo-koo nah neen-gah • noon-doo • mee-nyoh",
+          hint: "Krapf, Rebmann & Sparshott (1887, pp. 256, 314, 323)"
+        }
+      ],
+      sentences: [
+        {
+          target: "We Mulungu, muinulire mukongo wehu, apate ku lola dzua!",
+          source: "O Mulungu (God), raise up our sick one, that he may behold the sun! (Prayer on p. 284)"
+        },
+        {
+          target: "Similani kambi! — Hai! Kula Abegnania! — Hosi nahu kule!",
+          source: "Give ear, O council! — Aye! May Father-of-So-and-so live long! — May we all live long! (pp. 259–260, 347)"
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Mijikenda customary law (Krapf, Rebmann & Sparshott 1887, pp. 192, 339), why did intentional homicide require paying two young people (anafiale) as kore blood-money?",
+          correctAnswer: "To stand in place of the slain person's kifurifuri ('shadow') and perpetuate their lineage",
+          options: [
+            "To stand in place of the slain person's kifurifuri ('shadow') and perpetuate their lineage",
+            "To tap palm-wine in the Kaya",
+            "To guard the mumfiria gateway",
+            "To administer the kiravo ordeal"
+          ],
+          hint: "See p. 192 s.v. Kore"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each cultural item from Krapf, Rebmann & Sparshott (1887) with its description:",
+          correctAnswer: "Kibaria → Dunda: 9 graded calabash sizes from smallest tapping gourd to largest vessel (pp. 151–152)",
+          pairs: [
+            {
+              left: "Kibaria → Dunda",
+              right: "9 graded calabash sizes from smallest tapping gourd to largest vessel (pp. 151–152)"
+            },
+            {
+              left: "Ku funsa chala",
+              right: "Bending a finger to forgive twice before fighting on the third offence (pp. 94–95)"
+            },
+            {
+              left: "Nundu (p. 314)",
+              right: "Fable of the bat rejected by both birds and beasts for double-dealing"
+            },
+            {
+              left: "Bori, Ndzao, Mugoma",
+              right: "Three commercial weight classes of elephant ivory tusks (p. 321)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 });

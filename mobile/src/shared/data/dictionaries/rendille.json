@@ -1062,17 +1062,17 @@
           "audioFile": null
         },
         {
-          "english": "Third day of the week",
+          "english": "Third day of the week (sere = day)",
           "translation": "Sere",
           "pronunciation": "se-re",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
           "english": "Fourth day of the week",
           "translation": "Kumat",
           "pronunciation": "ku-mat",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
@@ -1090,17 +1090,17 @@
           "audioFile": null
         },
         {
-          "english": "Seventh day of the week (day of the camel)",
+          "english": "Seventh day of the week (day of the camel: no bleeding, branding, castrating, or eating camel meat)",
           "translation": "Sere gal",
           "pronunciation": "se-re gal",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
           "english": "First day of the week (fast and prayer day)",
           "translation": "Hahat",
           "pronunciation": "ha-hat",
-          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
@@ -1272,17 +1272,17 @@
           "audioFile": null
         },
         {
-          "english": "Second day of the week (day of rest / Sabbath)",
+          "english": "Second day of the week (day of rest / Sabbath; hura = sun)",
           "translation": "Hura hakhan (hura = sun)",
           "pronunciation": "hu-ra hakh-an",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
-          "english": "Sixth day of the week (day of sheep and goats)",
+          "english": "Sixth day of the week (day of sheep and goats; no selling/killing sheep or goats; Almadó & Sorio begin)",
           "translation": "Sere adi",
           "pronunciation": "se-re a-di",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
@@ -1293,10 +1293,10 @@
           "audioFile": null
         },
         {
-          "english": "Fifth day of the week (no-travel / camel-rest day)",
+          "english": "Fifth day of the week (no-travel / no camp-move / no cattle-medicine day)",
           "translation": "Ser hakhan",
           "pronunciation": "ser hakh-an",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
           "audioFile": null
         },
         {
@@ -1310,14 +1310,14 @@
           "english": "White sheep / Ariaal Rendille-Samburu section (Naibor Keneji)",
           "translation": "Burkeneji / Naibor Keneji",
           "pronunciation": "bur-ke-ne-ji",
-          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 162)",
           "audioFile": null
         },
         {
-          "english": "Auspicious camel-camp migration day in Rendille pastoral tradition",
-          "translation": "Gum (Friday)",
-          "pronunciation": "gum",
-          "context": "C. W. Hobley (1910, p. 159) — Rendille camel management",
+          "english": "The 6 Randili (Rendille) Sub-Tribes, 7-Day Pastoral Week Rules, Birth Navel-Cord Camel Custom & Stone-Mound Burial in Hobley (1910, Part II, Ch. VI, pp. 162–163)",
+          "translation": "6 Sub-Tribes (p. 162): 1. Salei, 2. Urwen, 3. Galdeilan, 4. Tubcha, 5. Nebei, 6. Ongeli (+ Burkeneji / Naibor Keneji 'White Sheep') • 7-Day Week (p. 163): 1st Hahat (fast & prayer), 2nd Hura hakhan (Sabbath; hura = sun), 3rd Sere (sere = day), 4th Kumat, 5th Ser hakhan (no journey, no moving grazing ground, no cattle medicine), 6th Sere adi (day of goats & sheep; Almadó & Sorio festivals begin), 7th Sere gal (day of the camel; no bleeding, branding, castrating, or eating camel meat) • Customs: infant's navel-cord cut over a young male camel (which becomes the child's property); camels used only as pack animals (never ridden); dead buried under circular stone cairns",
+          "pronunciation": "sa-lei / ur-wen / gal-dei-lan / tub-cha / ne-bei / o-nge-li / ha-hat / hu-ra hakh-an / se-re gal",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part II, Ch. VI: Randili (Rendile), pp. 162–163",
           "audioFile": null
         },
         {

@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
   "categories": [
     {
@@ -1225,10 +1225,10 @@
           "audioFile": null
         },
         {
-          "english": "The woman will reply",
-          "translation": "Inimuvoo.",
-          "pronunciation": "i-ni-mu-voo",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Man to Woman and Her Reply (Hobley 1910, p. 52)",
+          "translation": "Umuvoo? — Reply: Inimuvoo.",
+          "pronunciation": "u-mu-voo — i-ni-mu-voo",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. X, p. 52",
           "audioFile": null
         },
         {
@@ -1253,17 +1253,17 @@
           "audioFile": null
         },
         {
-          "english": "A man to a child will say",
-          "translation": "Nosio.",
-          "pronunciation": "no-sio",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Elder Man to a Child and Reply (Hobley 1910, p. 52)",
+          "translation": "Nosio! — Reply: Ah!",
+          "pronunciation": "no-sio — ah",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. X, p. 52",
           "audioFile": null
         },
         {
-          "english": "A man to a woman will say",
-          "translation": "Umuvoo.",
-          "pronunciation": "u-mu-voo",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Elder to Elder or Woman to Woman (Hobley 1910, p. 52)",
+          "translation": "Umuvoo? / Uvoo? — Reply: Inimuvoo.",
+          "pronunciation": "u-mu-voo — i-ni-mu-voo",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. X, p. 52",
           "audioFile": null
         },
         {
@@ -1281,17 +1281,17 @@
           "audioFile": null
         },
         {
-          "english": "A man to a girl (Muitu) will say",
-          "translation": "Wakia.",
-          "pronunciation": "wa-kia",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Elder Man to a Young Girl (Muitu) and Reply (Hobley 1910, p. 52)",
+          "translation": "Wakia! — Reply: Ah!",
+          "pronunciation": "wa-kia — ah",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. X, p. 52",
           "audioFile": null
         },
         {
-          "english": "A man to a youth (Anake) will say",
-          "translation": "Oponiao.",
-          "pronunciation": "o-po-niao",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Elder Man to a Young Warrior (Anake) and Reply (Hobley 1910, p. 52)",
+          "translation": "Oponiao! — Reply: Ah!",
+          "pronunciation": "o-po-niao — ah",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. X, p. 52",
           "audioFile": null
         },
         {
@@ -2460,21 +2460,21 @@
           "english": "Myself (lit. my heart)",
           "translation": "Ng'o yakwa",
           "pronunciation": "ng'o yakwa",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 22",
           "audioFile": null
         },
         {
           "english": "Thyself (lit. thy heart)",
           "translation": "Ng'o yako",
           "pronunciation": "ng'o ya-ko",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 22",
           "audioFile": null
         },
         {
-          "english": "Himself / Herself (lit. his/her heart)",
-          "translation": "Ng'o yaki / Mwēnyi",
-          "pronunciation": "ng'o ya-ki / mwenyi",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "english": "Himself / Herself / Itself (lit. his/her/its heart)",
+          "translation": "Ng'o yakwe / Mwēnyi",
+          "pronunciation": "ng'o ya-kwe / mwenyi",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, pp. 22–23",
           "audioFile": null
         },
         {
@@ -9303,10 +9303,10 @@
           "audioFile": null
         },
         {
-          "english": "Go",
-          "translation": "Thy",
-          "pronunciation": "thy",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
+          "english": "Possessive Pronouns, Noun Phrases, and Kinship Enclitics (Last 1885, pp. 20–22)",
+          "translation": "Stems: -kwa (my), -ko/-go (thy), -kwe (his/her/its), -itu (our), -inyu (your), -o (their) • 9-Class Prefixes: Cl. I w-a-/a-, Cl. II w-a-/y-a-, Cl. III y-a-/z-a-, Cl. IV ch-a-/y-a-, Cl. V y-a-/g-a- (or y-a-), Cl. VI w-a-/z-a-, Cl. VII k-a-/tw-a-, Cl. VIII w-a-, Cl. IX kw-a- • Phrases (pp. 21–22): Ngathi yakwe ndong'ola (the ox's hump), Kiao chakwe uchi (the bridge of the river), Numba ya kithwia (the king's house), Itumo iya Mkamba (the Mkamba's spear), Ndong'ola zakwe kithwia (the king's own oxen) • Kinship Enclitics (p. 22): Mwanakwa/Mwanako/Mwanakwe/Mwanaitu/Mwaninyu/Mwanao (my/thy/his/our/your/their child); Achakwa/Achako/Achakwe (my/thy/his father); Mwanathakwa/Mwanathako/Mwanathakwe (my/thy/his brother)",
+          "pronunciation": "wa-kwa / wa-ko / wa-kwe / wai-tu / wai-nyu / wao",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, pp. 20–22",
           "audioFile": null
         },
         {
@@ -11970,22 +11970,22 @@
           "audioFile": null
         },
         {
-          "english": "A young man (Anake) to another young man will say",
-          "translation": "Waiya.",
-          "pronunciation": "wai-ya",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Salutation: Young Warrior (Anake) to Another Young Warrior & All 8 Social Grades (Hobley 1910, pp. 49, 52)",
+          "translation": "Waiya! — Reply: Waiya! • 8 Social Grades (p. 49): Kana/Kahengi (infant), Kivisi (pl. Nisi, uncircumcised boy) / Muitu (pl. Weitu, young girl), Mwanake (pl. Anake, warrior) / Mundu mukaa (maiden), Nthele (pl. Anthele, married man) / Kipeti (pl. Ipeti, married woman with children; Ngungu = childless married woman), Mutumia wa Kisuka (bereavement-council elder), Mutumia wa Nzama (judicial-council elder), Mutumia wa Ithembo (sacred shrine elder; senior woman = Mukuu)",
+          "pronunciation": "wai-ya / ki-vi-si / mwa-na-ke / nthe-le / ki-pe-ti / mu-tu-mia",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Chs. IX–X, pp. 49, 52",
           "audioFile": null
         },
         {
-          "english": "That we may hunt. Mu-thaim-e, that ye may hunt. Ma-thaim-e, that they may hunt",
-          "translation": "Tu-thaim-e",
+          "english": "Subjunctive Mood Plural and 9-Class Kw-enda Subjunctive (Last 1885, p. 36)",
+          "translation": "Tu-thaim-e (that we may hunt), Mu-thaim-e (that ye may hunt), Ma-thaim-e (that they may hunt) • 9-Class Kw-enda Subjunctive: Cl. I A-end-e / Ma-end-e; Cl. II U-end-e / I-end-e; Cl. III I-end-e / Zi-end-e; Cl. IV Ki-end-e / I-end-e; Cl. V I-end-e / Ga-end-e; Cl. VI U-end-e / Zi-end-e; Cl. VII Ka-end-e / Tu-end-e; Cl. VIII Wa-end-e; Cl. IX Ku-end-e",
           "pronunciation": "tu-thaim-e",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "That I may hunt. U-thaim-e, that you may hunt. Yu-thaim-e, that he or she may hunt",
-          "translation": "Ni-thaim-e",
+          "english": "Subjunctive Mood Singular and Negative Subjunctive (Last 1885, pp. 36, 39)",
+          "translation": "Ni-thaim-e (that I may hunt, often preceded by ni or kwa), U-thaim-e (that thou mayest hunt), A-thaim-e (that he or she may hunt) • Negative Subjunctive (p. 39): N-di-thaim-e (that I may not hunt), U-di-thaim-e, A-di-thaim-e, Tu-di-thaim-e, Mu-di-thaim-e, Ma-di-thaim-e",
           "pronunciation": "ni-thaim-e",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
@@ -12005,43 +12005,43 @@
           "audioFile": null
         },
         {
-          "english": "I",
-          "translation": "gnie",
+          "english": "Adverbs, Prepositions, and Conjunctions (Last 1885, pp. 39–40)",
+          "translation": "Adverbs: Ku-kuna muno (to flog severely), Midukimno (very fast), Kwa-ku-manda (searchingly), Kwa-ku-thauka (playfully), Kwa mioo (sweetly / peacefully), Kwa uthuku (badly) • Prepositions: Na / ni (and, with), Y-a (of), Kwa (for, from, at, to), Ku uma (since, from) • Conjunctions: Na (and), Ndi (but)",
           "pronunciation": "gnie",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba pron.)",
           "audioFile": null
         },
         {
-          "english": "Ch",
-          "translation": "ki-",
+          "english": "Personal Pronouns and 9-Class Subjective Case Prefixes (Last 1885, pp. 16–17)",
+          "translation": "Independent: Ninye (I), Uwe/Nuwe (Thou), Ye/Niye (He/she), Ithwe/Niithwe (We), Inywe/Niinywe (Ye), Mo/Nimo (They) • Subject Prefixes: Cl. I 1sg N-/ni-, 2sg U-/w-, 3sg Y-/ya-/a-, 1pl Tu-/tw-, 2pl M-/mu-/mw-, 3pl M-/ma-; Cl. II u-/w- (pl. i-/y-); Cl. III i-/y- (pl. z-/zi-); Cl. IV ki-/ch- (pl. i-/y-); Cl. V i-/y- (pl. g-/ga-); Cl. VI u-/w- (pl. z-/zi-); Cl. VII ka- (pl. tu-/tw-); Cl. VIII w-/wa-; Cl. IX ku-/kw-",
           "pronunciation": "ki",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "Ka",
-          "translation": "ka-",
+          "english": "Objective Case Infixes Across All 9 Classes with Ku-taa (sell) and Ku-ua (buy) (Last 1885, pp. 18–20)",
+          "translation": "Cl. I: 1sg -n- (Ni-mw-on-ie 'I saw him', Yu-n-tiw-ie 'he left me'), 2sg -ku- (Yu-ku-tiw-ie 'he left thee'), 3sg -m-/-mu-/-mw-, 1pl -tu-, 2pl -mu-, 3pl -ma- or suffixed -mo (Ni-ma-tiw-ie / A-tiw-ie-mo 'he left them') • Cl. II: sg. -u-/-w- (Yu-u-taa / Yu-w-ua), pl. -mi- (Yu-mi-taa / Yu-mi-ua) • Cl. III: sg. -mi- (Yu-mi-taa / Yu-mi-ua), pl. -zi- (Yu-zi-taa / Yu-zi-ua) • Cl. IV: sg. -ki-/-ch- (Yu-ki-taa / Yu-ch-ua), pl. -i-/-y- (Yu-i-taa / Yu-y-ua) • Cl. V: sg. -yi- (Yu-yi-taa / Yu-yi-ua), pl. -ma- (Yu-ma-taa / Yu-ma-ua) • Cl. VI: sg. -u-/-w- (Yu-u-taa / Yu-w-ua), pl. -zi- (Yu-zi-taa / Yu-zi-ua) • Cl. VII: sg. -ka- (Yu-ka-taa / Yu-ka-ua), pl. -tu-/-tw- (Yu-tu-taa / Yu-tw-ua) • Cl. VIII: -wa- (Yu-wa-taa / Yu-wa-ua) • Cl. IX: -ku-/-kw- (Yu-ku-taa / Yu-kw-ua)",
           "pronunciation": "ka",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "Tw",
-          "translation": "tu-",
+          "english": "Reflective Pronouns — Heart (Ng'o), Verbal Infix (-i-) and -ēnyi Across 9 Classes (Last 1885, pp. 22–23)",
+          "translation": "Heart reflexives: Ng'o yakwa (myself), Ng'o yako (thyself), Ng'o yakwe (himself/herself/itself), Ng'o zetu (ourselves), Ng'o zenyu (yourselves), Ng'o zao (themselves) • Verbal infix: ku-enda (to love) → ku-i-enda (to love oneself) • -ēnyi ('self/selves'): Cl. I Mundu mwēnyi / Andu ēnyi; Cl. II Mti wēnyi / Miti yēnyi; Cl. III Numba yēnyi / Numba zēnyi; Cl. IV Kimandi chēnyi / Imandi zēnyi; Cl. V Itumbi rēnyi / Matumbi gēnyi; Cl. VI Uwathi wēnyi / Mbathi zēnyi; Cl. VII Kaindo kēnyi / Tuindo twēnyi; Cl. VIII Wandu wēnyi; Cl. IX Kuthaima kwēnyi",
           "pronunciation": "tu",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "Wa",
-          "translation": "w-",
+          "english": "Demonstrative Pronouns — Three Spatial Series, Falsetto Gradation and Copular Forms (Last 1885, pp. 23–26)",
+          "translation": "1st Set (this/these): Cl. I uyu/aya, Cl. II uu/ii, Cl. III ii/izi, Cl. IV kii/ii, Cl. V iyi/aya, Cl. VI uu/izi, Cl. VII kaa/tuu, Cl. VIII wawa, Cl. IX kuku • 2nd Set (that/those near you): Cl. I uchu/acho, Cl. II ucho/icho, Cl. III icho/izo, Cl. IV kicho/icho, Cl. V icho/ago, Cl. VI ucho/izo, Cl. VII kacho/tucho, Cl. VIII wao, Cl. IX kucho • 3rd Set (that/those yonder): Cl. I uya (ulia)/aia, Cl. II uya/iya, Cl. III iya/ziya, Cl. IV kiya/iya, Cl. V iya/gaya, Cl. VI uya/ziya, Cl. VII kaya/tuya, Cl. VIII waya, Cl. IX kuya • Falsetto distance: Mtu uuya → Mtu uuyāā → Mtu uuyāāā • Reduplication: Umama paapaa (lie down just here), Umama paayapaaya (lie down just over there) • Copular: Ninye ni... (It is I), Niya uyu (this is he), Tiya uyu (this is not he), Nucho! nucho! (that is he! the very man!)",
           "pronunciation": "w",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "Kw",
-          "translation": "ku-",
+          "english": "Relative and Interrogative Pronouns Across All 9 Classes (Last 1885, pp. 26–28)",
+          "translation": "Subject Relatives: Mundu uya yunaendie (the man who went), Numba ziya zinawalukie (the houses which fell), Tuindo tulia tunaruruma (the insects which buzzed) • Object Relatives: Andu aia uoneti (the men whom thou hast seen), Miti iya tunatemie (the trees which we cut down), Numba ziya unathorokie (the houses which thou didst set on fire), Numba ziya unaie ndini yakwe (the houses which he slept in) • Interrogatives: uu? (who?), chau? (what?), ndi? (when?), naku? (where?), -au? (which/what sort?), -anata? (how many?); Mundu yuau? (what man?), Kintu kii ni chau? (what thing is this?), Kintu chau? (what thing?), Nini chau? (what is this?), Andu aanata? (how many men?)",
           "pronunciation": "ku",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
@@ -12530,8 +12530,8 @@
           "audioFile": null
         },
         {
-          "english": "Etc",
-          "translation": "m-",
+          "english": "Nine Noun Classes and Six Class VI Plural Notes (Last 1885, pp. 3–7)",
+          "translation": "Gender: -ume (male), -ke (female) • Cl. I (m-, 'm-, mu-, mw- → a-): Mundu/Andu, Mtanya/Atanya, Mtongui/Atongui, Mwimi/Aimi • Cl. II (m-, 'm-, mu-, mw- → mi-): Mti/Miti, 'Mmongo/Mimongo, Muguwa/Miguwa, Mwamba/Miamba • Cl. III (invariable): Numba, Ngavu, Chengo, Chalo, Ngedza • Cl. IV (chi-, ki- → i-): Kimandi/Imandi, King'abwe/Ing'abwe, Kinyezwa/Inyezwa • Cl. V (i- → ma-): Itong'o/Matong'o, Itumbi/Matumbi, Ikuyu/Makuyu, Ithea/Mathea • Cl. VI (u-, w- → ny-): Ua/Nya, Ulii/Ndii, Wiiyo/Nyiyo, Wia/Nyia, Uova/Nyova; Note 1 (uth-, uz- → nth-, nz-): Uthuku/Nthuku, Uzio/Nzio; Note 2 (ul-, ur- → nd-): Ulembwa/Ndembwa, Ullii/Ndii; Note 3 (ub-, uv-, uw- → mb-): Uviyo/Mbiyo, Uwathi/Mbathi, Uwau/Mbau, Uwenji/Mbenji; Note 4 (ut- → nz-): Utuka/Nzuka; Note 5 (uny- → ny-): Unyai/Nyai; Note 6 (uk- → mak-/k-): Ukakaa/Makakaa, Ukungu/Kungu • Cl. VII (ka- → tu-): Kalabuku/Tulabuku, Kamwanya/Tumwanya, Kabindi/Tubindi, Kaindo/Tuindo • Cl. VIII: Wandu • Cl. IX: Ku-thaima",
           "pronunciation": "m",
           "context": "J. T. Last (1885) Grammar of the Kamba Language",
           "audioFile": null
@@ -17521,8 +17521,8 @@
           "audioFile": null
         },
         {
-          "english": "Or y-a",
-          "translation": "g-a-",
+          "english": "Cardinals (1–2,000), Word Order, Ordinals and 9-Class Numeral Agreement Table (Last 1885, pp. 13–16)",
+          "translation": "Cardinals: 1 Mondi (-mwe), 2 Keri (-iri/-eri), 3 Kadatu (-tatu/-datu), 4 Kana (-na), 5 Kathano (-thano), 6 Thandatu, 7 Monza, 8 Nyanya, 9 Kenda, 10 Ikumi, 11–19 Ikumi na imwe...kenda, 20 Milongo iri, 30 Milongo itatu, 40 Milongo ina, 50 Milongo ithano, 60 Milongo thandatu, 70 Milongo monza, 80 Milongo nyanya, 90 Milongo kenda, 100 Iyana, 200 Mayana/Mana maeri, 300–900 Mana matatu...kenda, 1000 Mana makumi, 2000 Mana makumi maeri • Word Order: Mundu mucheo yumwe (one good man), Andu athuku athano (five bad men), Matumbi manini thandatu (six small eggs) • Ordinals: -a mbēe (1st), -a keri (2nd), -a kadatu/katatu (3rd), -a kana (4th), -a kathano (5th), -a thandatu (6th), -a monza (7th), -a nyanya (8th), -a kenda (9th), -a ikumi (10th), -a mu-thĩa (last): Mundu wa mbēe, Kintu cha keri, Nyumba ya kadatu, Kintu cha mu-thĩa • 9-Class Table (1–5): Cl. I Yumwe, Aeri, Atatu, Ana, Athano; Cl. II/IV Umwe/Kimwe, Iri, Itatu, Ina, Ithano; Cl. III/VI Imwe/Umwe, Iri, Idatu, Ina, Ithano; Cl. V Imwe, Maeri, Matatu, Mana, Mathano; Cl. VII Kamwe, Tuiri, Tutatu, Tuna, Tuthano; Cl. VIII Wamwe, Wairi, Watatu, Wana, Wathano; Cl. IX Kumwe, Kuiri, Kutatu, Kuna, Kuthano",
           "pronunciation": "g-a",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
@@ -19649,10 +19649,10 @@
           "audioFile": null
         },
         {
-          "english": "Mu Tui.",
-          "translation": "Mu Sii. Mu Mui. Mwa-Ithangwa.",
-          "pronunciation": "mu sii mu mui mwa-ithangwa",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Ancestral Smith Clan Mu-Tui (Atui) & Complete Ulu (25), Kitui (27) & Mumoni (22) Clans (Mbai) & Totems (Hobley 1910, pp. 63–67, 165–167)",
+          "translation": "Mu-Tui (Atui, divided into sub-clans Mu-Sii, Mu-Mui, Mwa-Ithangwa) • 25 Ulu Clans (pp. 64–65): Mba-Thanga, Mba-Tangwa (vulture/crow), Mba-Mwei (baboon), Mba-Mbua (rain), Mba-Kitutu (hawk), Mba-Mutei (lion), Mba-Ombe (fig tree/bushbuck), Mba-Ii, Mba-Kitondo, Mba-Nziu, Mba-Nguluku, Mba-Atwii, Mba-Awani, Mba-Mbuani, Mba-Mulata, Mba-Mulumba, Mba-Nzao, Mba-Nduluku, Mba-Mwanziu, Mba-Kimani, Mba-Kipini, Mba-Katuku, Mba-Muthanga, Mba-Kanyotu, Mu-Tui • 27 Kitui Clans (pp. 65–66) & 22 Mumoni Clans (pp. 165–166), plus 46 Clan Livestock Brands (pp. 117–118) & Beehive Marks (pp. 165–167)",
+          "pronunciation": "mu-tui / mu-sii / mu-mui / mwa-ithangwa / mba-tangwa / mba-mwei / mba-mbua",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Chs. XII & XXI, pp. 63–67, 117–118 & Appendix (1)–(3) pp. 165–167",
           "audioFile": null
         },
         {
@@ -22674,9 +22674,9 @@
         },
         {
           "english": "Ourselves",
-          "translation": "Ng'o sitũ",
+          "translation": "Ng'o zetu (Ng'o sitũ)",
           "pronunciation": "ngoh see-too",
-          "context": "Literally 'our hearts' — collective reflexive recorded by J.T. Last (1885)",
+          "context": "Literally 'our hearts' — collective reflexive recorded by J. T. Last (1885, p. 22: Ng'o zetu, Ng'o zenyu, Ng'o zao)",
           "audioFile": null
         },
         {
@@ -22813,8 +22813,8 @@
           "audioFile": null
         },
         {
-          "english": "The backs",
-          "translation": "'Mmongo",
+          "english": "The back (pl. Mimongo)",
+          "translation": "'Mmongo (pl. Mimongo)",
           "pronunciation": "'mmongo",
           "context": "J. T. Last (1885) Grammar of the Kamba Language",
           "audioFile": null
@@ -25529,10 +25529,10 @@
           "audioFile": null
         },
         {
-          "english": "The reply will be",
-          "translation": "Ah.",
-          "pronunciation": "ah",
-          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes",
+          "english": "Complete Kamba Kinship System & Genealogical Terms in Hobley (1910, Ch. IX, pp. 50–51)",
+          "translation": "Mundu asa (paternal uncle), Umaa (grandfather), Susu (grandmother), Mukasa (father's sister / aunt), Mwanaya (elder brother), Ukulu (elder sister), Mweitu aya (sister), Mukaa akaa (co-wife), Mwe mewa (sister's son / nephew), Mwana akwa / Wana asa (child / brother's child), Ana asa (cousins / brothers), Muthonua (mother-in-law / father-in-law, bound by Nthoni avoidance), Mukaa mwana akwa (daughter-in-law), Njugulu akwa (grandchild)",
+          "pronunciation": "mu-ndu a-sa / u-maa / su-su / mu-ka-sa / mwa-na-ya / u-ku-lu / mu-tho-nua / nju-gu-lu a-kwa",
+          "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part I, Ch. IX, pp. 50–51",
           "audioFile": null
         },
         {
@@ -25942,15 +25942,15 @@
           "audioFile": null
         },
         {
-          "english": "Ya-, or a-, he or she",
-          "translation": "Y-",
+          "english": "He or she (Class I Subject Prefix)",
+          "translation": "Y-, ya-, or a-",
           "pronunciation": "y",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
         },
         {
-          "english": "Mu-, -mw-, him or her",
-          "translation": "-M-",
+          "english": "Him or her (Class I Object Prefix)",
+          "translation": "-M-, -mu-, -mw-",
           "pronunciation": "m",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
@@ -26103,8 +26103,8 @@
           "audioFile": null
         },
         {
-          "english": "Dz, Kh, Ng, Ng', Ny, Sh, Th",
-          "translation": "Ch",
+          "english": "Kamba Alphabet and Robert Cust's Preface (Last 1885, pp. iii–iv, 3)",
+          "translation": "Preface (Robert Cust, London, July 31, 1885): Krapf's 1850 Tübingen vocabulary (70,000–90,000 Kamba) and J. T. Last's discovery of the Kamba diaspora in U-Sagára near Mamboia (Cust, Modern Languages of Africa, p. 359) • 5 Vowels (pronounced as in Italian): A, E, I, O, U • 18 Simple Consonants: B, D, F, G (always hard), H, J, K, L, M, N, P, R, S, T, V, W, Y, Z • 8 Compound Consonants: Ch (as in cherry; c represented by s), Dz, Kh, Ng, Ng', Ny, Sh, Th",
           "pronunciation": "ch",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
           "audioFile": null
@@ -26127,7 +26127,7 @@
           "english": "Ourselves (lit. our hearts)",
           "translation": "Ng'o zetu",
           "pronunciation": "ng'o ze-tu",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 22",
           "audioFile": null
         },
         {
@@ -26162,7 +26162,7 @@
           "english": "Yourselves (lit. your hearts)",
           "translation": "Ng'o zenyu",
           "pronunciation": "ng'o zenyu",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 22",
           "audioFile": null
         },
         {
@@ -26174,9 +26174,9 @@
         },
         {
           "english": "Themselves (lit. their hearts)",
-          "translation": "Ng'o zao / Aēnyi",
+          "translation": "Ng'o zao / Andu ēnyi",
           "pronunciation": "ng'o zao / aenyi",
-          "context": "J. T. Last (1885) Grammar of the Kamba Language, p. 18",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language, pp. 22–23",
           "audioFile": null
         },
         {
@@ -26222,15 +26222,15 @@
           "audioFile": null
         },
         {
-          "english": "And are the names of living beings",
-          "translation": "mw-",
+          "english": "Adjectives: Living-Being Concord Rule, Vowel Coalescence and Six 9-Class Paradigms (Last 1885, pp. 7–11)",
+          "translation": "Living-being concord: Kiletu mucheo / Iletu acheo (good girl/girls), Morma mucheo / Miorma anini (good cow / small cows), Kabizji kadidi / Tubizji tucheo (small boy / good boys), Kana kaume / Twana twaume (male child/children) • Vowel coalescence: Mu mwingi / mu muingi (much dust), Tuthoka twingi / tuthoka tuingi (many adzes) • 6 Paradigms across Classes I–IX: (1) -cheo (good: Mundu mucheo, Mti mcheo, Numba ncheo, Kimandi kicheo, Itumbi icheo, Uwathi mcheo, Kaindo kacheo, Wandu pacheo, Kuthaima kucheo), (2) -anata? (how many?: Andu aanata?, Miti mianata?, Numba nanata?, Imanda ianata?, Matumbi maanata?, Mbathi nanata?, Tuindo twaanata?, Wandu paanata?, Kuthaima kwanata?), (3) -ondi (all: Andu aondi, Miti yondi, Numba chondi, Imanda ichondi, Matumbi yondi, Mbathi chondi, Tuindo twondi, Wandu wondi, Kuthaima kwondi), (4) -we / -nai (having), (5) -mwe (one) and -ingi/-engi (many), (6) -nge (other: Mundu yunge / Mundunge, Andu ange, Mti unge / Miti yange or minge)",
           "pronunciation": "mw",
           "context": "J. T. Last (1885) Grammar of the Kamba Language",
           "audioFile": null
         },
         {
-          "english": "And form their plurals by changing",
-          "translation": "i-",
+          "english": "Adjectival '-we / -nai' ('Having') Paradigm and 16 Quality Phrases Across Classes I–IX (Last 1885, p. 10)",
+          "translation": "Cl. I: Mundu yunai kiliku (a man having wisdom) / Andu anai makuyu (men having fish) • Cl. II: Muti unai mathango (a tree having leaves) / Miti inai mabeki (trees having fruit) • Cl. III: Numba inai iko (a house having dirt) / Numba zinai ucheo (houses having beauty) • Cl. IV: Kimanda kinai uwio (a cake having sweetness) / Imanda inai mabeki (cakes having fruit) • Cl. V: Itumbi inai ucheo (an egg having goodness) / Matumbi yunai ucheo (eggs having goodness) • Cl. VI: Uwathi unai uthoko (a song having badness) / Mbathi zinai uthoko (songs having badness) • Cl. VII: Kaindo kanai uki (an insect having honey) / Tuindo tunai nzea (insects having wings) • Cl. VIII: Wandu wanai mba (a place having rocks) / Wandu wanai nyichi (places having grass) • Cl. IX: Kuthaima kunai uwēa (hunting having danger) / Kuthaima kunai mbēa (huntings having dangers)",
           "pronunciation": "i",
           "context": "J. T. Last (1885) Grammar of the Kamba Language",
           "audioFile": null
@@ -26257,8 +26257,8 @@
           "audioFile": null
         },
         {
-          "english": "And are not the names of living beings",
-          "translation": "mw-",
+          "english": "Irregular Adjectives (4 Constructions) and Ku-kila Comparative/Superlative Syntax (Last 1885, pp. 11–13)",
+          "translation": "(1) Verb tense: Ndata ikalakala (the stick is straight), Ndata imamele (the stick is crooked), Muthungi ukuchuwa (the jar is full) • (2) wa + noun: Mundu wa kaú (a quarrelsome man) • (3) -nai + noun: Mundu yunai kiliku (a wise man), Andu anai iko (dirty men) • (4) -a + infinitive: Mundu wa kwaka (a builder), Andu a kuima (agriculturists) • Comparative: Mundu uyu mucheo, mundu uiya, mthoko (this man is better than that man); Mundu uyu mucheo, akilite uiya (this man is good, he surpasses that one); Mti uyu kucha mno mwaka uyu, kukila mwaka ula unge (this tree bears better this year than last) • Superlative: Andu acheo athaime (the best men are hunters); Mundu yuyu mucheo, kuakila andu aondi (this is the best man, surpassing all men); Mkamba yuyu akaakila andu aonde (this Mkamba will surpass all the men)",
           "pronunciation": "mw",
           "context": "J. T. Last (1885) Grammar of the Kamba Language",
           "audioFile": null
@@ -26390,7 +26390,7 @@
           "audioFile": null
         },
         {
-          "english": "I am hunting. U-ki-thaim-a, thou wast hunting. A-ki-thaim-a, he or she was hunting",
+          "english": "I am hunting (Present Imperfect, p. 31). U-ki-thaim-a, thou art (wast) hunting. A-ki-thaim-a, he or she is (was) hunting",
           "translation": "Ni-ki-thaim-a",
           "pronunciation": "ni-ki-thaim-a",
           "context": "J. T. Last (1885) Grammar of the Kamba Language (SPCK, London)",
@@ -28462,45 +28462,45 @@
           "audioFile": null
         },
         {
-          "english": "Moon (Nzaiko ceremonial term)",
-          "translation": "Mwei",
-          "pronunciation": "mwei",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Nzaiko Ceremonial Vocabulary (27 Secret Words) & 21 Pictographic Musai Stick Riddles (Ndeto) in Hobley (1910, Ch. XIII, pp. 68–76)",
+          "translation": "3 Initiations: Nzaikonini → Nzaikoneni (Mbavani) → Mbabani (Mwaiki / Choo Muumba; officiants: Mundu wa wenzi, Mubwiki, Wa-Singi; sacred arch Kithanzi; emblems Undu, Musai, Mthiwa, Kulu Kilwa, Ngima ya Mbabani, Mtonyi Ngñondu) • 27 Secret Nzaiko Words (pp. 71–72): Muoi (sun), Kielelo / Mwei (moon), Kiimia (Pleiades), Ndata (star), Ngai (water), Kioni (eye), Mathangwa (ears), Kiweto (bow), Michi (arrow), Kiatu (hyena), Mbuibui (spider), Mwilo (lizard), Ngu (tortoise), Ngongo (black red-legged millipede), Kithembo (wooden honey jar), Mbia (sand-pits), Itaa (python), Nzia (path), Mwatu (beehive)",
+          "pronunciation": "nza-i-ko-ni-ni / nza-i-ko-ne-ni / mba-ba-ni / mu-sa-i / mu-o-i / ki-e-le-lo / nga-i / ki-o-ni / ki-we-to",
+          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, Part I, Ch. XIII, pp. 68–76)",
           "audioFile": null
         },
         {
-          "english": "Arrow (Nzaiko ceremonial term)",
-          "translation": "Michi",
-          "pronunciation": "mich-i",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Architecture, Ironworking, Chain-Making, Pottery, Dental Tools, Foods, Fire-Drill & 4 Game Traps in Hobley (1910, Chs. I–IV, pp. 1–21)",
+          "translation": "Dental tools (p. 11): Ngomo (chisel), Kilingi (mallet), Ngolia (pincers) • Architecture (pp. 15–16): Musi (homestead), Ikumbi (granary), Ikua (sleeping hut), Nzeli (hearthstone), Kizuka (bedstead), Itaa (platform), Mboani (gate), Kithanga (cattle kraal) • Iron & Chains (pp. 17–19): Kiuvi/Kiungu (bellows), Mwaa (tuyere), Mukua (iron ore), Ikangi (slag), Muini (wire-drawing gauge), Kifuli (chain pincers), Nthengele (iron chain) • Pottery (pp. 19–20): Kibuka (clay pit), Mbaisu (potter's knife), Nzeli (cooking pot) • Digging stick & Foods (p. 21): Muo (digging stick), Usuru (gruel), Kitheki (maize/beans), Ngima (stiff porridge), Lungñuyu & Koho (herbs), Munyo & Kithi (salt earth) • Fire-drill & 4 Traps (p. 21): Uwindi/Mulenditi (twirling stick), Kika/Choa (hearth-board), Umbuthi (tinder), Nguso (case); Traps: Mukwa (noose), Ikehengi (falling log), Mwito (bird snare), Kisungula (pitfall)",
+          "pronunciation": "ngo-mo ki-li-ngi ngo-li-a / mu-si i-ku-mbi / ki-u-vi / nthe-nge-le / u-su-ru ki-the-ki ngi-ma / u-wi-ndi ki-ka",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Chs. I–IV, pp. 1–21)",
           "audioFile": null
         },
         {
-          "english": "A star (Nzaiko ceremonial term)",
-          "translation": "Ndata",
-          "pronunciation": "nda-ta",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Beer Brewing (Ukiya-iwa), 8 Musical Instruments, Dress & Ornaments in Hobley (1910, Chs. VI–VII, pp. 27–35)",
+          "translation": "Beer Brewing (pp. 27–29): Ukiya-iwa (sugar-cane/honey beer), Ndingi (strainer), Muthi (pestle), Miatini (sausage-tree fermenter), Njeli (calabash), Ua (gourd cup) • 8 Musical Instruments (pp. 30–31): Mbebe (side-blown horn), Soo (long war-horn), Nguli (small horn), Zomali (flute), Kithembi (long drum), Ngutha (musical bow-lute), Engoma (dance drum), Muvungu / Cha (iron leg-rattle) • Dress & Ornaments (pp. 32–35): Kimengo & Nthale (aprons), Ndumunya/Ndunya, Kitanu, Katungi, Muchi, Kikuto (skirts/belts), Mithanga (beads), Muingu (castor oil) & Maumbu (red ochre), Imili, Mulia ya Ngingo, Ndiki, Munyo, Mulia va Kutu, Mulinga (brass arm-coil), Kitanga, Engomi, Kiangi, Ibuo",
+          "pronunciation": "u-ki-ya-i-wa / nd-i-ngi / mbe-be soo ngu-li zo-ma-li ki-the-mbi ngu-tha / ki-me-ngo / mu-li-nga",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Chs. VI–VII, pp. 27–35)",
           "audioFile": null
         },
         {
-          "english": "Spider (Nzaiko ceremonial term)",
-          "translation": "Mbuibui",
-          "pronunciation": "mbui-bui",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "The 5 Stool Woods & 8 Named Wire-Inlay Stool Patterns (Milia on Ibila / Kivila) in Hobley (1910, Ch. VII, pp. 35–38)",
+          "translation": "Ibila (sg. Kivila, carved three-legged elder's stool) • 5 Stool Woods (p. 36): 1. Kiwazi (Muasi), 2. Muinga, 3. Kivuti (Erythrina tomentosa), 4. Mana, 5. Mutungu • 8 Named Wire-Inlay Patterns (Milia, pp. 36–38): 1. Kithaitha, 2. Vioo, 3. Eumu, 4. Kitui, 5. Katungi, 6. Keinga, 7–8. Kizoro / Kisolo (representing stars, millipedes, and clan geometric motifs)",
+          "pronunciation": "i-bi-la ki-vi-la / ki-wa-zi mu-i-nga ki-vu-ti ma-na mu-tu-ngu / mi-li-a / ki-tha-i-tha vi-oo e-u-mu ki-tu-i ka-tu-ngi ke-i-nga ki-zo-ro",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Ch. VII, pp. 35–38)",
           "audioFile": null
         },
         {
-          "english": "Lizard (Nzaiko ceremonial term)",
-          "translation": "Mwilo",
-          "pronunciation": "mwi-lo",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Weapons, Arrow-Poison (Ivai), Warfare & Peace-Making Terms in Hobley (1910, Ch. VIII, pp. 39–48)",
+          "translation": "Uta (bow), Mize (arrows), Moluka (quiver), Maange (arrow feathers), Musi (arrow shaft), Ivai (Acokanthera schimperi arrow poison, wrapped in Muvai leather strip), Mbua Mbui (barbed war-arrow), Ubiu (sword/simé), Ndo (scabbard), Nzomo (spear), Ndabu (throwing club), Ndata (walking staff), Ngwalo (war horn/alarm), Mutwe tumo & Mutwe ubiu (raid Vanguard & Rearguard leaders), Musizili (scout/spy), Mukulwa (veteran warrior), Mutatha & Mobou (war magic & peace-making herbs)",
+          "pronunciation": "u-ta mi-ze mo-lu-ka / i-va-i mu-va-i / u-bi-u ndo nzo-mo nda-bu / mu-si-zi-li / mu-ku-lwa",
+          "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Ch. VIII, pp. 39–48)",
           "audioFile": null
         },
         {
-          "english": "Afflicted by a curse. See thabu",
-          "translation": "Makwa",
-          "pronunciation": "mak-wa",
-          "context": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)",
+          "english": "Afflicted by a curse. See thabu (Makwa & Thabu Curses, Ngondu Purification & 8 Historic Famines in Hobley 1910, Chs. XVII & XIX, pp. 96–106)",
+          "translation": "Makwa & Thabu (ritual curses/defilements purified with Ngondu herbal mixture by a Mundu Mue; classes include Ukuu, Ku-uchwa/Ku-thambia, Ku-thumua, Ithobu, Ngoma Komi) • 8 Historic Kamba Famines (~1836–1898, Ch. XIX, p. 106): 1. Yua ya Changa, 2. Yua ya Ngovo, 3. Yua ya Kiasa, 4. Yua ya Ngeeti, 5. Yua ya Kanyua manzi, 6. Yua ya Ndata ('Star/Comet Famine'), 7. Yua ya Kubandia, 8. Yua ya Muvunga ('Rice Famine' of 1898–1899)",
+          "pronunciation": "mak-wa / tha-bu / ngo-ndu / yu-a ya cha-nga ngo-vo ki-a-sa ngee-ti nda-ta mu-vu-nga",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, Chs. XVII & XIX, pp. 96–106) & Bantu Beliefs and Magic (1922, Glossary pp. 305–308)",
           "audioFile": null
         },
         {
@@ -28511,10 +28511,10 @@
           "audioFile": null
         },
         {
-          "english": "Tortoise (Nzaiko ceremonial term)",
-          "translation": "Ngu",
-          "pronunciation": "ngu",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Tortoise (Nzaiko ceremonial term) & All 5 Kweta Ndai Riddles, 8 Dances/Songs & Astronomy in Hobley (1910, Ch. X, pp. 52–55)",
+          "translation": "Ngu (tortoise) • 5 Kweta ndai Riddles (p. 54): (1) Nduma? — Muumbi (clouds hiding moon); (2) O-Selia? — Kimbu (chameleon); (3) Mwetu etiki? — Kulotoi (mirage); (4) Tuna Kwatana? — Nzia na nzia (crossing paths); (5) Wo wiwa? — Kinto Kitheo (bare earth) • 8 Dances & Songs (p. 53): Mavio, Kwina wathi wa Mavio, Kuia Muntu, Kilumi (spirit-possession dance), Wathi, Kuthia, Kuisia chubi, Cheli • Astronomy & Games (pp. 54–55): Mabia, Utisi, Kitalaliki, Utahathi, Ndata mulili, Mumbi, Kithioi, Ngenyandi, Wa-Isa; Mutingwano (game) & Chiathi ya mathoa (markets)",
+          "pronunciation": "ngu / kwe-ta nda-i / ndu-ma mu-u-mbi / o-se-li-a ki-mbu / ki-lu-mi wa-thi",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, Part I, Chs. X & XIII, pp. 52–55, 71–72)",
           "audioFile": null
         },
         {
@@ -28546,17 +28546,17 @@
           "audioFile": null
         },
         {
-          "english": "Black, red-legged millepede (Nzaiko ceremonial term)",
-          "translation": "Ngongo",
-          "pronunciation": "ngong-o",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Black, red-legged millepede (Nzaiko) & Marriage, Birth, Twins and Sitting Burial in Hobley (1910, Ch. XI, pp. 56–62)",
+          "translation": "Ngongo (millipede, pp. 71–72) • Marriage & Birth (Ch. XI, pp. 56–62): Mbui ya ntheo (betrothal goats), Kuatia & Kupikila (marriage stages), Kilia Mbiti, Kitumuka, Ndulo, Ekuvuna, Ithaa, Mbia (birth customs), sitting burial wrapped in ox-hide on the right side (men) or left side (women), and the 6 Wano Folktales (Ch. XX, pp. 107–118: Wa-paruku [Mbuku] the Hare, Mbiti the Hyena, Munyambu the Lion, Nzoo the Elephant, Itaa the Python, Iimu the Ogre, Kimbu the Chameleon & Nguli the Weaver-Bird)",
+          "pronunciation": "ngong-o / mbu-i ya nthe-o / ku-a-ti-a / ku-pi-ki-la / wa-no / wa-pa-ru-ku",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, Part I, Chs. XI, XIII & XX, pp. 56–62, 71–72, 107–118)",
           "audioFile": null
         },
         {
-          "english": "Wooden jar for carrying honey (Nzaiko ceremonial term)",
-          "translation": "Kithembo",
-          "pronunciation": "kith-emb-o",
-          "context": "A-Kamba Nzaiko ceremonial vocabulary — C. W. Hobley, Ethnology of A-Kamba (1910, pp. 71–72)",
+          "english": "Wooden jar for carrying honey (Nzaiko) & Engai/Mulungu, Aiimu Shrine Sacrifices, 6 Classes of Mundu Mue & Medicine in Hobley (1910, Chs. XV–XVI, XVIII, pp. 85–95, 104–105)",
+          "translation": "Kithembo (honey jar, pp. 71–72) • Religion (Ch. XV, pp. 85–92): Engai / Mulungu (Supreme Creator), Aiimu (ancestral spirits dwelling in sacred Mumo fig trees at the Ithembo shrine; foreign spirit possession Aiimu ya Kitombo cured by Kilumi dance; shrine terms Wiwea/Ngunguu, Kisesi, Kiluma, Iliba, Chatha, Nduoka) • Divination & Medicine (Chs. XVI & XVIII, pp. 93–95, 104–105): Mundu Mue (diviner using Kititi cha Mbuu gourd & Mbuu seeds across 6 specialist classes: Kibuti, Mukao, Muthiwa, Mbui, Muthachia ndundu, Mukolechia; herbs Mwila wimbu, Iga, Mochia, Mubukulu, Mwema Manzi, Kithangaona, Ithunga, Kineli, Moyo) vs. Muoiin / Muoii (sorcerer)",
+          "pronunciation": "kith-emb-o / e-nga-i mu-lu-ngu / a-ii-mu / i-the-mbo / mu-ndu mu-e / ki-ti-ti cha mbuu",
+          "context": "C. W. Hobley, Ethnology of A-Kamba (1910, Part I, Chs. XIII, XV, XVI & XVIII, pp. 71–72, 85–95, 104–105)",
           "audioFile": null
         },
         {
@@ -28574,10 +28574,10 @@
           "audioFile": null
         },
         {
-          "english": "Supreme communal tribunal assembly against habitual offenders (Kĩkamba)",
-          "translation": "king'ole",
-          "pronunciation": "keen-goh-leh",
-          "context": "Hon. Charles Dundas (1915, p. 262) — Organization and Laws of Some Bantu Tribes (JRAI Vol. 45)",
+          "english": "Supreme communal tribunal (King'ole), Blood-Money (Kiti), Assault Damages Table, Ndundu & 7-Step Kithito Oath in Hobley (1910, Ch. XIV pp. 77–84 & Appendix (4) p. 168)",
+          "translation": "king'ole / Kingñoli (supreme public justice assembly) • Blood-Money (Kiti, pp. 78–79): In Ulu, 11 cows & 1 bull for a man, 4 cows & 1 bull for a woman; in Kitui, 14 cows & 1 bull for a man, 7 cows & 1 bull for a woman + Ndiu peace-goat (with Chuma, Kino, Wala, Kikuunguti) • Assault Damages Table (p. 79): Loss of eye/arm/leg = 5 cows & 1 bull; tooth = 1 goat per tooth; finger/toe = 1 bull & 1 goat • Oaths (pp. 80–84, 168): Ndundu (baobab-bark & hair ordeal) and the 7-ingredient Kithito sworn while standing on 7 stones (Ku-ringa Kithito)",
+          "pronunciation": "keen-goh-leh / ki-ti / ndi-u / ndu-ndu / ki-thi-to",
+          "context": "C. W. Hobley (1910, Ch. XIV pp. 77–84 & Appendix (4) p. 168) & Hon. Charles Dundas (1915, p. 262)",
           "audioFile": null
         },
         {
@@ -28602,10 +28602,10 @@
           "audioFile": null
         },
         {
-          "english": "The 11 Traditional Kamba Ecological Months (Hobley 1910 p. 53 & Lindblom 1920 p. 340)",
-          "translation": "Mwaa, Kĩũũ, Ũtũi, Kĩũnzũ, Ndũa, Mũvĩũ, Kĩlaa, Nyanya, Kenda, Ĩkũmi, Mũongo",
-          "pronunciation": "mwaa kiuu utui kiunzu ndua muviu kilaa nyanya kenda ikumi muongo",
-          "context": "C. W. Hobley (1910, p. 53) & Gerhard Lindblom (1920, p. 340)",
+          "english": "The 11 Traditional Kamba Ecological Months & 2 Rainy Seasons (Hobley 1910 p. 53 & Lindblom 1920 p. 340)",
+          "translation": "Hobley (1910, p. 53): 1. Mwa, 2. Wima, 3. Wiu, 4. Mweu, 5. Onkonono, 6. Thandatu, 7. Moanza, 8. Nyanya, 9. Kenda, 10. Ekumi, 11. Mubiu (2 Rainy Seasons: Ambua anzwa [Oct–Dec] & Ambua ua [Mar–May]) • Lindblom (1920, p. 340): Mwaa, Kĩũũ, Ũtũi, Kĩũnzũ, Ndũa, Mũvĩũ, Kĩlaa, Nyanya, Kenda, Ĩkũmi, Mũongo",
+          "pronunciation": "mwa wi-ma wi-u mwe-u o-nko-no-no tha-nda-tu mo-a-nza nya-nya ke-nda e-ku-mi mu-bi-u / a-mbu-a a-nzwa",
+          "context": "C. W. Hobley (1910, Part I, Ch. X, p. 53) & Gerhard Lindblom (1920, p. 340)",
           "audioFile": null
         },
         {
@@ -28614,12 +28614,48 @@
           "pronunciation": "ngohn-deh",
           "context": "Krapf, Rebmann & Sparshott, A Nika-English Dictionary (1887, p. 306 s.v. Ngonde [Kik.])",
           "audioFile": null
+        },
+        {
+          "english": "The 6 Traditional Kamba Folktales (Wano) in Hobley (1910, Part I, Ch. XX, pp. 107–118)",
+          "translation": "1. The Hare (Wa-paruku / Mbuku), the Hyena (Mbiti), and the Lion (Munyambu) (pp. 107–109) • 2. The Girl and the Python (Itaa) (pp. 109–111) • 3. The Two Brothers and the Ogre (Iimu) (pp. 111–113) • 4. The Hare (Wa-paruku) and the Elephant (Nzoo) (pp. 113–115) • 5. The Woman and the Bird that Gave Milk (pp. 115–116) • 6. The Origin of Death: The Chameleon (Kimbu) and the Weaver-Bird (Nguli) Sent by Mulungu (pp. 117–118)",
+          "pronunciation": "wa-no / wa-pa-ru-ku / mbi-ti / mu-nya-mbu / i-taa / ii-mu / ki-mbu / ngu-li",
+          "context": "C. W. Hobley (1910) 'Ethnology of A-Kamba and Other East African Tribes', Part I, Ch. XX: Folk-Lore (Wano), pp. 107–118",
+          "audioFile": null
+        },
+        {
+          "english": "Frog (Erratum p. x)",
+          "translation": "Cua (Ky-ua ; pl. Vy-ua / Sy-ua)",
+          "pronunciation": "chu-a / kyu-a",
+          "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & p. 101 col. 12)",
+          "audioFile": null
+        },
+        {
+          "english": "Tooth, Tongue, Arm, Leg & Stone (#12 Kamba Consonant-Elision Series)",
+          "translation": "I-ū ; ma-yū • Ū-īmī ; n-īmī • K-wωkω ; m-ωkω • Kū-ū ; ma-ū • I-via ; ma-via",
+          "pronunciation": "i-u ma-yu / u-i-mi n-i-mi / kwo-ko mo-ko / ku-u ma-u / i-vi-a ma-vi-a",
+          "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–106 & 1922, Vol. II, pp. 30–31)",
+          "audioFile": null
+        }
+,
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Kikamba (Kik.) Comparative Lexicon, Caravan Trade & Shared Sabaki-Central Kenya Roots (Book pp. vii, 57, 192, 277, 284, 306, 321)",
+          "translation": "Kikamba (Kik., p. vii) entries and comparative notes in Krapf, Rebmann & Sparshott (1887): Mukamba / Akamba (p. 277, interior ivory and cattle traders visiting the Mijikenda Kaya settlements and Mombasa coast); Ngonde (p. 306 [Kik.], ceremonial skin badge fastened on a Kamba traveller's breast after crossing a dangerous wilderness); Ivory trade classes shared between Kamba hunters and Mijikenda middlemen — Bori (small scrivelloes), Ndzao (medium tusks), Mugoma (large bull tusks, p. 321); Mulungu (p. 284, Supreme Being invoked before caravan journeys 'Hukuenenda uriani, Mulungu ahuikire mburuga nadzo'); Kore / Ng'ondu blood-money and purification parallels (p. 192)",
+          "pronunciation": "mu-ka-mba a-ka-mba / ngo-nde / bo-ri ndza-o mu-go-ma / mu-lu-ngu",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. vii, 192, 277, 284, 306, 321)",
+          "audioFile": null
+        },
+        {
+          "english": "Krapf, Rebmann & Sparshott (1887) Kikamba (Kik.) Phonological & Grammatical Correspondences with Kinika (Book pp. v–vii, 20–21, 70, 297)",
+          "translation": "Comparative Kikamba (Kik.) & Kinika correspondences documented by Krapf & Rebmann (1887): Penultimate accent & dental th/dh (pp. v–vi); Vowel Harmony in verbal extensions (-eka/-era/-eza after mid vowels e, o vs. -ika/-ira/-iza after a, i, u, p. 70); 5 Finger Names (pp. 20–21: Kyala kya nyumbu / dzalagumba, Kyala kya kwolota / muoloho, Kyala kinene / kibomu, Kyala kitena syitwa / kisicho dzina, Kyala kya mwisho / kanda); Class-concordant Na- ('also / and it / with it') pronominal series across noun classes (p. 297)",
+          "pronunciation": "kya-la / cha-la / na-ga na-go / na-ki na-cho",
+          "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. v–vii, 20–21, 70, 297)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
+  "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 4071
+  "totalEntries": 4073
 }

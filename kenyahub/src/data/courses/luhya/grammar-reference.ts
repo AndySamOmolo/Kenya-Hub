@@ -200,4 +200,34 @@ export const LUHYA_GRAMMAR_SECTIONS: LuhyaGrammarSection[] = [
       { luhya: "Mutungu (Sundwa) • Mfumo & Mufira • Chilulu • Makatta • Luta & Mgahanya (Ligiri)", english: "Kisesa royal bone re-burial site • Medicine woman & harmless wizard • 20-yard staring ordeal • Women's reed harp • Rainmakers of Marama & Nyole", explanation: "Hobley (1902, Ch. II, pp. 17, 20–23)" }
     ]
   }
+  ,
+  {
+    id: "luhya-johnston-1919-1922-addenda-lusinga-bibliography",
+    title: "Sir Harry H. Johnston (1919–1922) Sub-Group A 5 Complete Addendum (p. 757), Erratum (p. x), #5b Lu-siṅga (Cula) Island Lexicon, Vol. II Analytical Roots (pp. 22–24) & Bibliography (p. 787)",
+    summary: "Documents all 11 Addendum entries for #5a Lu-waṅga and #5 Lu-nyara (Vol. I, p. 757), Erratum p. x (Class 5 prefix Ri- in #6 Lu-Masaba & #6a Lu-konde), the #5b Lu-siṅga (Cula) vocabulary of Rusinga and Mfangano Islands, Vol. II Chapter VI peculiar roots (pp. 22–24), and the complete Sub-group A 5 Bibliography (p. 787).",
+    content: `From Sir Harry H. Johnston (*A Comparative Study of the Bantu and Semi-Bantu Languages*, Vol. I [1919], pp. x, 73–85, 757, 787 & Vol. II [1922], pp. 22–24, 225, 259, 497):
+1. **Erratum (Vol. I, p. x) & Chapter IV Addenda for #5a Lu-waṅga and #5 Lu-nyara (Vol. I, p. 757)**:
+   - **Erratum (p. x)**: On p. 85 (**Lu-Masaba 6 & Lu-konde 6a**), the 5th Class prefix printed as *Ki-* is corrected to **Ri-** (alongside *Li-, Di-, Iri-*).
+   - **Complete Addenda Table for #5a Lu-waṅga & #5 Lu-nyara (Vol. I, p. 757)**:
+     1. **Doctor (medicine-man)**: **Omu-mali** (in *5a Lu-waṅga*)
+     2. **Father**: **Omu-kωfu** (in *5a Lu-waṅga*)
+     3. **God**: **Nya-saye** (in *5a Lu-waṅga*)
+     4. **Thing (pl. things)**: **Ama-khuwa** (plural, Class 6, in *5a Lu-waṅga*)
+     5. **Good**: **-lahi** (in *5a Lu-waṅga*)
+     6. **Great**: **-kulundu** (in *5a Lu-waṅga*)
+     7. **Not**: **-ta** (suffix in *5 Lu-nyara*) and **-kata** ('neither' in *5 Lu-nyara*)
+     8. **Not / To be without**: **-tawe**, **-ṅga**, **-kata** ('neither'), and **Ωxu-buta** ('to be without', in *5a Lu-waṅga*).
+2. **#5b Lu-siṅga (*Cula*) of Rusinga & Mfangano Islands in Kavirondo Gulf (Vol. I, pp. 73–85 & Vol. II, pp. 22–24)**:
+   - Preserves an archaic island link between Sub-group A 5 (Luhya/Masaba), Luganda/Lusoga, and Sub-group A 6 (Ki-guzii/Suba):
+   - **Nouns & Kinship**: **Omu-ndu ; aba-ndu** (person), **Omu-saiza** (man/husband), **Omu-kali** (woman/wife), **Lara / Tata** (father), **Mawe / Ngina** (mother), **Omu-twe** (head), **Eri-sω ; ama-sω** (eye), **Oku-twi ; ama-twi** (ear), **Eri-nω ; ama-nω** (tooth), **Olu-limi ; zin-dimi** (tongue), **Oku-bωkω ; ama-bωkω** (arm), **Oku-gulu ; ama-gulu** (leg), **Eny-umba** (house), **Ama-nzi** (water), **Omu-rirω** (fire), **Eri-uba** (sun), **Omu-ezi** (moon), **En-jωta** (star), **En-jωvu** (elephant), **En-gω** (leopard), **En-gubu** (hippo), **En-sūi** (fish).
+3. **Vol. II Chapter VI Analytical Review of Sub-Group A 5 (#5 Lu-nyara, #5a Lu-waṅga, #5b Lu-siṅga, #6 Lu-masaba, #6a Lu-konde, pp. 22–24)**:
+   - Highlights unique lexical roots across #5–6a: **I-fubu** (hippopotamus), **I-fula** (rain), **Kama-lasiri / Ma-lasili** (blood), **Gumu-mū** (sunshine), **Ki-sωlω** (axe), **Li-arω** (canoe), **I-kωsi** (neck), **Kumu-rundu** (ten, in #6), **Li-tondω / Li-kana** (hundred), **Si-zumi** (thousand), and **Wele / Were** (God in #6–6a) vs. **Na-saye / Nya-saye** (God in #5–5a).
+4. **Bibliography for #5–6a (Vol. I, p. 787)**:
+   - Cites C. W. Hobley (*Muhasa/Konde MS.*, 1899 & *Eastern Uganda*, 1902), Sir Harry H. Johnston (*The Uganda Protectorate, Vol. II*, 1902), Rev. W. A. Crabtree (*A Manual of Lu-Ganda* & *Grammar of Lu-Masaba*, SPCK 1902–1914), Rev. J. B. Purvis (*A Manual of Lumasaba Grammar*, SPCK 1907 & *Through Uganda to Mount Elgon*, 1909), and the *Luhanga (Luwanga) New Testament Gospels* (BFBS).`,
+    examples: [
+      { luhya: "Omu-mali (doctor), Omu-kωfu (father), Nya-saye (God), Ama-khuwa (things, pl.), -lahi (good), -kulundu (great), -ta / -kata / -tawe / -ṅga (not/neither), Ωxu-buta (to be without)", english: "All Addenda entries for #5a Lu-waṅga & #5 Lu-nyara in Johnston (1919, Vol. I, p. 757)", explanation: "Johnston (1919, Vol. I, Ch. IV Addenda, p. 757)" },
+      { luhya: "5b Lu-siṅga (Cula): Omu-saiza (man), Omu-kali (woman), Eri-sω → ama-sω (eye), Olu-limi → zin-dimi (tongue), Ama-nzi (water), Eri-uba (sun), En-sūi (fish)", english: "Rusinga & Mfangano Island Bantu vocabulary (#5b Lu-siṅga / Cula)", explanation: "Johnston (1919, Vol. I, pp. 73–85 & 1922, Vol. II, pp. 22–24)" },
+      { luhya: "Ri- (Class 5 prefix Erratum p. x) • Wele / Were (God in #6–6a) vs. Na-saye / Nya-saye (God in #5–5a) • Kama-lasiri (blood)", english: "Class 5 Erratum & distinctive Sub-group A 5 roots", explanation: "Johnston (1919, Vol. I, p. x & 1922, Vol. II, pp. 22–24)" }
+    ]
+  }
 ];

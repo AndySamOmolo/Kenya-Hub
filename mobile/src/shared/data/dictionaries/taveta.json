@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921).",
   "categories": [
     {
@@ -3320,6 +3320,20 @@
           "translation": "Ideghe imwe likaremwa kuiya teheshigha kucha",
           "pronunciation": "i-de-ghe im-we li-ka-rem-wa kui-ya te-he-shi-gha ku-cha",
           "context": "A. C. Hollis (1910) 'Taveta Sayings and Proverbs' #10",
+          "audioFile": null
+        },
+        {
+          "english": "Fire (#15 Taveita Erratum p. x) & Bird",
+          "translation": "M-ōtω • I-deγe ; ma-deγe",
+          "pronunciation": "m-o-to / i-de-ghe ma-de-ghe",
+          "context": "15. Taveita — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & pp. 99–100)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun/God, Water & Person in #17 Caga (Mωši Erratum p. x, Śira, Keni/Urombo, Macame, Siha, Kahe)",
+          "translation": "I-rūva (Rūva) • M-riṅga (Ma-riṅga) • M-ndu ; wa-ndu",
+          "pronunciation": "i-ru-va / m-ri-nga / m-ndu wa-ndu",
+          "context": "17. Caga (Kilimanjaro borderland with #15 Taveita) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & pp. 113–126)",
           "audioFile": null
         }
       ]

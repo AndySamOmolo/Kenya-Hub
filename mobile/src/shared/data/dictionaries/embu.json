@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml).",
   "categories": [
     {
@@ -4104,6 +4104,13 @@
           "translation": "UT",
           "pronunciation": "ut",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Stone, Hyena, Head & God (#11 Embu E., Emberre Emb. & Ndia Nd.)",
+          "translation": "I-via / I-bia ; ma-via • M-biti • Kī-oṅgω ; i-oṅgω • Mū-rūṅgu (Ṅ-gai)",
+          "pronunciation": "i-vi-a ma-vi-a / m-bi-ti / ki-o-ngo / mu-ru-ngu",
+          "context": "11. Embu (E.), Emberre (Emb.) & Ndia (Nd.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–106 & 1922, Vol. II, pp. 28–30)",
           "audioFile": null
         }
       ]
