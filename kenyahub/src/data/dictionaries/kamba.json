@@ -988,7 +988,10 @@
         },
         {
           "english": "Elder, village headman",
-          "translation": "Mutumia wa kisuka"
+          "translation": "Mutumia wa kisuka",
+          "pronunciation": "mutumia wa kisuka",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "Woman (who has had 4 children)",
@@ -1167,7 +1170,10 @@
         },
         {
           "english": "Childless woman",
-          "translation": "Ngungu"
+          "translation": "Ngungu",
+          "pronunciation": "ngungu",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "Miscarry (child)",
@@ -1213,7 +1219,10 @@
         },
         {
           "english": "Young man or warrior",
-          "translation": "Mwanake (pl. Anake)"
+          "translation": "Mwanake (pl. Anake)",
+          "pronunciation": "mwanake",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "The woman will reply",
@@ -1231,7 +1240,10 @@
         },
         {
           "english": "Middle-aged married man",
-          "translation": "Nthele (pl. Anthele)"
+          "translation": "Nthele (pl. Anthele)",
+          "pronunciation": "nthele",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "Take away (to a person)",
@@ -1263,7 +1275,10 @@
         },
         {
           "english": "Unmarried girl, young woman",
-          "translation": "Mundu mukaa / Mwitu"
+          "translation": "Mundu mukaa / Mwitu",
+          "pronunciation": "mundu mukaa / mwitu",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "A man to a girl (Muitu) will say",
@@ -1281,7 +1296,10 @@
         },
         {
           "english": "Married woman who has borne a child",
-          "translation": "Kipeti (pl. Ipeti)"
+          "translation": "Kipeti (pl. Ipeti)",
+          "pronunciation": "kipeti",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "Shadow or vital spirit of a living person",
@@ -11449,7 +11467,10 @@
         },
         {
           "english": "Old woman",
-          "translation": "Mukuu"
+          "translation": "Mukuu",
+          "pronunciation": "mukuu",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "Time zone",
@@ -11502,7 +11523,10 @@
         },
         {
           "english": "Old man, elder",
-          "translation": "Mutumia (pl. Atumia)"
+          "translation": "Mutumia (pl. Atumia)",
+          "pronunciation": "mutumia",
+          "context": "J. T. Last (1885) Grammar of the Kamba Language & C. W. Hobley (1910) Ethnology of A-Kamba (Public Domain)",
+          "audioFile": null
         },
         {
           "english": "June (Month 6)",

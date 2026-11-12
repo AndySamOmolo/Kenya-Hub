@@ -17,7 +17,7 @@ export const FAMILY_COLORS: Record<string, string> = {
 /**
  * Curated list of core comparison headwords available across all 22 Kenyan dictionaries.
  */
-export const POPULAR_COMPARE_WORDS: readonly string[] = [
+export const POPULAR_COMPARE_WORDS: string[] = [
   "Water",
   "Hello",
   "Thank you",
