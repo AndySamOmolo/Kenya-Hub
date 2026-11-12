@@ -1021,16 +1021,23 @@ ins.adsbygoogle {
 @media (max-width: 639px) {
   .btn-gold,
   .btn-primary {
-    padding: 0.45rem 0.85rem !important;
-    font-size: 0.8125rem !important;
-    border-radius: 0.55rem !important;
-    gap: 0.35rem !important;
+    padding: 0.625rem 0.95rem !important;
+    font-size: 0.84375rem !important;
+    border-radius: 0.65rem !important;
+    gap: 0.4rem !important;
   }
   .btn-outline {
-    padding: 0.4rem 0.75rem !important;
-    font-size: 0.8125rem !important;
-    border-radius: 0.55rem !important;
-    gap: 0.35rem !important;
+    padding: 0.6rem 0.9rem !important;
+    font-size: 0.84375rem !important;
+    border-radius: 0.65rem !important;
+    gap: 0.4rem !important;
+  }
+  .hero-cta-btn {
+    padding: 0.725rem 1.1rem !important;
+    min-height: 2.85rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.75rem !important;
+    gap: 0.45rem !important;
   }
   .badge {
     padding: 0.125rem 0.45rem !important;

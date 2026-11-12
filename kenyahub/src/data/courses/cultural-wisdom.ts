@@ -13375,62 +13375,58 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       {
         "id": "swahili-krapf-1882-salutations-grammar-calendar",
         "title": "Krapf (1882) 7 Salutations, Post-Prefixes, Enclitic Pronouns & Coastal Calendar",
+        "icon": "MessageCircle",
         "description": "Learn the 7 hierarchical salutations (p. xx), Kimvita passive -oa and enclitic object suffixes (p. xxx), the 12 Swahili lunar months (pp. 223–224), 6 monsoon seasons (p. 248), and 24-hour time divisions (pp. 252–253, 318).",
         "words": [
           {
-            "id": "sw-krapf1882-w1",
-            "indigenous": "Hu jambo? — Si jambo • U hali gani? — Njema / Mzima • Subalkheri! • Masalkheri! • Nashika miguu / Marahaba!",
-            "english": "Seven Modes of Salutation (Krapf 1882, p. xx): How art thou? — I am well • What is thy state? — Good/Well • Good morning! • Good evening! • I clasp thy feet (inferior to superior) / Welcome!",
+            "target": "Hu jambo? — Si jambo • U hali gani? — Njema / Mzima • Subalkheri! • Masalkheri! • Nashika miguu / Marahaba!",
+            "source": "Seven Modes of Salutation (Krapf 1882, p. xx): How art thou? — I am well • What is thy state? — Good/Well • Good morning! • Good evening! • I clasp thy feet (inferior to superior) / Welcome!",
             "pronunciation": "hu ja-mbo — si ja-mbo / su-bal-khe-ri / ma-sal-khe-ri / na-shi-ka mi-guu — ma-ra-ha-ba",
-            "PartOfSpeech": "phrase",
+            "partOfSpeech": "phrase",
             "example": "Kua heri ya ku onana! — Amani ya Mungu! (Farewell till we meet again! — Peace of God! p. xx)"
           },
           {
-            "id": "sw-krapf1882-w2",
-            "indigenous": "ni-pá-mi • na-ku-pendá-we • na-m-pendá-e • a-tu-pendá-sui • na-wa-pendá-nui • na-wa-pendá-o",
-            "english": "Kimvita enclitic personal pronouns suffixed to the verb (Krapf 1882, p. xxx): give to me • I love thee • I love him • he loves us • I love you (pl.) • I love them",
+            "target": "ni-pá-mi • na-ku-pendá-we • na-m-pendá-e • a-tu-pendá-sui • na-wa-pendá-nui • na-wa-pendá-o",
+            "source": "Kimvita enclitic personal pronouns suffixed to the verb (Krapf 1882, p. xxx): give to me • I love thee • I love him • he loves us • I love you (pl.) • I love them",
             "pronunciation": "ni-pa-mi / na-ku-pe-nda-we / na-m-pe-nda-e / a-tu-pe-nda-sui / na-wa-pe-nda-nui / na-wa-pe-nda-o",
-            "PartOfSpeech": "verb",
+            "partOfSpeech": "verb",
             "example": "Ambai kuamba apenda / ambao kuamba wapenda (Analytic relative 'who loves / who love', p. xxv)"
           },
           {
-            "id": "sw-krapf1882-w3",
-            "indigenous": "Mfungúo wa mosi (Shaual) ... Mfungúo wa kenda (Rajab) • Mlisho / Shabani (10th) • Ramatháni (11th) • Hajji (12th)",
-            "english": "Twelve Swahili/Arabic Lunar Months reckoned from the breaking of the Ramadan fast (Krapf 1882, pp. 223–224, 238)",
+            "target": "Mfungúo wa mosi (Shaual) ... Mfungúo wa kenda (Rajab) • Mlisho / Shabani (10th) • Ramatháni (11th) • Hajji (12th)",
+            "source": "Twelve Swahili/Arabic Lunar Months reckoned from the breaking of the Ramadan fast (Krapf 1882, pp. 223–224, 238)",
             "pronunciation": "m-fu-nguo wa mo-si ... m-fu-nguo wa ke-nda / m-li-sho / ra-ma-tha-ni / ha-jji",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Siku ya muaka / Neruz (Solar New Year ~Aug. 24 reckoned in 10-day muóngo decades, pp. 258, 338)"
           },
           {
-            "id": "sw-krapf1882-w4",
-            "indigenous": "Musimi / Kazkazi (Nov–Feb) • Masíka (Mar–May) • Kipúpue (Jun–Aug) • Damani / Muaka (Aug–Oct) • Kussi • Tanga mbili / Malelezi",
-            "english": "Six Coastal Seasons & Monsoons and Three Annual Harvests: kilimo ja muaka, kilimo ja mjō (July–Sept), kilimo ja fuli (Krapf 1882, pp. 230, 248)",
+            "target": "Musimi / Kazkazi (Nov–Feb) • Masíka (Mar–May) • Kipúpue (Jun–Aug) • Damani / Muaka (Aug–Oct) • Kussi • Tanga mbili / Malelezi",
+            "source": "Six Coastal Seasons & Monsoons and Three Annual Harvests: kilimo ja muaka, kilimo ja mjō (July–Sept), kilimo ja fuli (Krapf 1882, pp. 230, 248)",
             "pronunciation": "mu-si-mi ka-zka-zi / ma-si-ka / ki-pu-pue / da-ma-ni / ku-ssi / ta-nga mbi-li ma-le-le-zi",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Wingu la kussi lajā na mvúa (A south-wind cloud comes with rain, p. 187)"
           },
           {
-            "id": "sw-krapf1882-w5",
-            "indigenous": "elfágiri • subukhi mbitimbiti • mafungulia ngombe (8 AM) • athóhuri (12 PM) • elásiri (3:30 PM) • magháribi (6 PM) • esha (7–8 PM)",
-            "english": "Swahili 24-Hour Daily Time Divisions & 12-Hour Sunset Clock (Krapf 1882, pp. 248, 252–253, 318)",
+            "target": "elfágiri • subukhi mbitimbiti • mafungulia ngombe (8 AM) • athóhuri (12 PM) • elásiri (3:30 PM) • magháribi (6 PM) • esha (7–8 PM)",
+            "source": "Swahili 24-Hour Daily Time Divisions & 12-Hour Sunset Clock (Krapf 1882, pp. 248, 252–253, 318)",
             "pronunciation": "el-fa-gi-ri / su-bu-khi mbi-ti-mbi-ti / ma-fu-ngu-lia ngo-mbe / a-tho-hu-ri / e-la-si-ri / ma-gha-ri-bi / e-sha",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Saa ya mosi (7 PM or 7 AM), saa ya sita (midnight or noon), saa ya ethnáshera (6 PM or 6 AM, p. 318)"
           }
         ],
         "sentences": [
           {
-            "indigenous": "Mombása kúlā kua ku papassa, hakuna teári kama Unguja.",
-            "english": "At Mombasa you eat by groping (hard toil), nothing is ready-made like at Zanzibar. (Krapf 1882, p. 241)",
-            "gloss": "Mombasa | to-eat | by | groping | there-is-not | ready | like | Zanzibar"
+            "target": "Mombása kúlā kua ku papassa, hakuna teári kama Unguja.",
+            "source": "At Mombasa you eat by groping (hard toil), nothing is ready-made like at Zanzibar. (Krapf 1882, p. 241)",
+            "pronunciation": "Mombasa | to-eat | by | groping | there-is-not | ready | like | Zanzibar"
           },
           {
-            "indigenous": "Ndaulía si ulinzi, bora ni ku enda muegniéwe; Neno ukatálo ndílo Mungu afaniálo.",
-            "english": "'Look out for me' is no watching, it is better to go yourself; the thing thou refusest is the very thing God brings about. (Krapf 1882, pp. 274, 277)",
-            "gloss": "look-for-me | is-not | watching | better | is | to-go | yourself"
+            "target": "Ndaulía si ulinzi, bora ni ku enda muegniéwe; Neno ukatálo ndílo Mungu afaniálo.",
+            "source": "'Look out for me' is no watching, it is better to go yourself; the thing thou refusest is the very thing God brings about. (Krapf 1882, pp. 274, 277)",
+            "pronunciation": "look-for-me | is-not | watching | better | is | to-go | yourself"
           }
         ],
-        "exercises": [
+        "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "In Krapf's Outline of Grammar (1882, p. xx), what salutation does an inferior address to a superior, and what is the reply?",
@@ -13460,62 +13456,58 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       {
         "id": "swahili-krapf-1882-songs-taxonomies-topography",
         "title": "Krapf (1882) Marine & Lover's Songs, Coastal Taxonomies & Mombasa Topography",
+        "icon": "Compass",
         "description": "Explore the verbatim songs (Muakaje, Killefi, Mguáme, Simba ya Mungu), 5 coconut & 8 rice stages, 6 handful measures, 13 ornaments, and Mombasa/Rabai historical ethnography.",
         "words": [
           {
-            "id": "sw-krapf1882-w6",
-            "indigenous": "1. kidáka • 2. kitále • 3. dafu • 4. kórŏma • 5. nasi (nazi)",
-            "english": "Five Coconut Growth Stages from tiny bud on the pande stalk to fully ripe nut (Krapf 1882, p. 273 s.v. Nasi; 40–60 sold for 1/4 dollar at Mombasa)",
+            "target": "1. kidáka • 2. kitále • 3. dafu • 4. kórŏma • 5. nasi (nazi)",
+            "source": "Five Coconut Growth Stages from tiny bud on the pande stalk to fully ripe nut (Krapf 1882, p. 273 s.v. Nasi; 40–60 sold for 1/4 dollar at Mombasa)",
             "pronunciation": "ki-da-ka / ki-ta-le / da-fu / ko-ro-ma / na-zi",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Ajábu ni mtáūsi, ku taúa nazi mbófu (The wonder is the fastidious chooser who picks a rotten coconut, p. 254)"
           },
           {
-            "id": "sw-krapf1882-w7",
-            "indigenous": "1. óya • 2. dópa (jópa / topa) • 3. koffi (2 makoffi = 1 kebába = 4 nióya) • 4. konsi • 5. mgnánda • 6. ngúmi",
-            "english": "Six Handful & Fist Measures of Grain (Krapf 1882, p. 291 s.v. O'ya [2]; plus 1 farasila = 12 manni = 35 rotteli, p. 316)",
+            "target": "1. óya • 2. dópa (jópa / topa) • 3. koffi (2 makoffi = 1 kebába = 4 nióya) • 4. konsi • 5. mgnánda • 6. ngúmi",
+            "source": "Six Handful & Fist Measures of Grain (Krapf 1882, p. 291 s.v. O'ya [2]; plus 1 farasila = 12 manni = 35 rotteli, p. 316)",
             "pronunciation": "o-ya / do-pa / ko-ffi / ko-nsi / m-gna-nda / ngu-mi",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "1 pishi = 4 kebába; 12 pishi = 72 rotteli (p. 316)"
           },
           {
-            "id": "sw-krapf1882-w8",
-            "indigenous": "jánga • kipini • ndónia • kikúku • fúja • kekée • mtóri • tuku • majáji • beléshi • furúngu • jóa • mbiu",
-            "english": "Thirteen Traditional Swahili Ornaments (Krapf 1882, pp. 409–410 s.v. Urémbo) & Seven Bead Types (ushanga wa kike, ushanga wa kiume, kadunduguru, kiptingo, nili, murtutu, bubu, p. 410)",
+            "target": "jánga • kipini • ndónia • kikúku • fúja • kekée • mtóri • tuku • majáji • beléshi • furúngu • jóa • mbiu",
+            "source": "Thirteen Traditional Swahili Ornaments (Krapf 1882, pp. 409–410 s.v. Urémbo) & Seven Bead Types (ushanga wa kike, ushanga wa kiume, kadunduguru, kiptingo, nili, murtutu, bubu, p. 410)",
             "pronunciation": "ja-nga / ki-pi-ni / ndo-nia / ki-ku-ku / fu-ja / ke-kee / m-to-ri / fu-ru-ngu",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Wakamba watungíwa wao ushanga (For the Wakamba their beads are strung, p. 231)"
           },
           {
-            "id": "sw-krapf1882-w9",
-            "indigenous": "Mvita (Shehe Mvita) • Kongowéa (Makame iwe / Kiwemtu / Mku gnombe) • Kiziwáni (Kin.) • Kidiamóni (Kik.) • Ngoméni (Kisamb.) • Worra Mombása (Galla)",
-            "english": "Names & Founding Legends of Mombasa (Krapf 1882, pp. 119, 240–241, 270, 365: Kiwialía cha Mwita native-born, Kikulía cha Mwita raised there, Teléa newcomer)",
+            "target": "Mvita (Shehe Mvita) • Kongowéa (Makame iwe / Kiwemtu / Mku gnombe) • Kiziwáni (Kin.) • Kidiamóni (Kik.) • Ngoméni (Kisamb.) • Worra Mombása (Galla)",
+            "source": "Names & Founding Legends of Mombasa (Krapf 1882, pp. 119, 240–241, 270, 365: Kiwialía cha Mwita native-born, Kikulía cha Mwita raised there, Teléa newcomer)",
             "pronunciation": "m-vi-ta / she-he m-vi-ta / ko-ngo-we-a / ki-zi-wa-ni / ki-dia-mo-ni / ngo-me-ni",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Takaúngu (Mazrui refuge after Imam of Muscat took Mombasa, p. 355) • Siyu (chief seat of ancient Suahili learning on Patta, p. 343)"
           },
           {
-            "id": "sw-krapf1882-w10",
-            "indigenous": "Mjūkū (grandchild) → Mtūkū / Kitūkū (great-grandchild) → Mlikū (great-great-grandchild, 4th generation)",
-            "english": "Four Generations of Descendants in Swahili Kinship (Krapf 1882, pp. 231, 237, 256)",
+            "target": "Mjūkū (grandchild) → Mtūkū / Kitūkū (great-grandchild) → Mlikū (great-great-grandchild, 4th generation)",
+            "source": "Four Generations of Descendants in Swahili Kinship (Krapf 1882, pp. 231, 237, 256)",
             "pronunciation": "m-ju-kuu / m-tu-kuu ki-tu-kuu / m-li-kuu",
-            "PartOfSpeech": "noun",
+            "partOfSpeech": "noun",
             "example": "Mjómba (maternal uncle; pl. Wajomba = the Swahili, p. 230)"
           }
         ],
         "sentences": [
           {
-            "indigenous": "Atáni ku takábari! muangalie Mguáme... ulimengu una hadáa: sasa mti wa mnázi huangúka ukiináma.",
-            "english": "Cease from pride! Behold Mguáme... the world is full of deceit: now the tall coconut tree falls bowing low. (Krapf 1882, p. 256)",
-            "gloss": "cease | to-be-proud | behold-him | Mguame | world | has | deceit | now | tree | of | coconut | falls | bowing"
+            "target": "Atáni ku takábari! muangalie Mguáme... ulimengu una hadáa: sasa mti wa mnázi huangúka ukiináma.",
+            "source": "Cease from pride! Behold Mguáme... the world is full of deceit: now the tall coconut tree falls bowing low. (Krapf 1882, p. 256)",
+            "pronunciation": "cease | to-be-proud | behold-him | Mguame | world | has | deceit | now | tree | of | coconut | falls | bowing"
           },
           {
-            "indigenous": "Killéfi mkáta jombo, mkata na mlingóte, azama na wátu wóte, hápŏni mtu mmója.",
-            "english": "The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes. (Krapf 1882, p. 183)",
-            "gloss": "Killefi | cutter-of | vessel | cutter | with | mast | sinks | with | people | all | escapes-not | person | one"
+            "target": "Killéfi mkáta jombo, mkata na mlingóte, azama na wátu wóte, hápŏni mtu mmója.",
+            "source": "The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes. (Krapf 1882, p. 183)",
+            "pronunciation": "Killefi | cutter-of | vessel | cutter | with | mast | sinks | with | people | all | escapes-not | person | one"
           }
         ],
-        "exercises": [
+        "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "According to Krapf (1882, pp. 229, 250, 271 s.v. Misúngu / Mzungu), why did the Swahili call Europeans 'Wazungu'?",
@@ -60017,8 +60009,14 @@ const KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS: ProverbItem[] = [
 KENYAN_PROVERBS.push(...KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS);
 CULTURAL_WISDOM.push(
   ...KRAPF_REBMANN_SPARSHOTT_1887_NIKA_PROVERBS.map((item) => ({
-    ...item,
-    category: "proverb" as const,
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
   }))
 );
 

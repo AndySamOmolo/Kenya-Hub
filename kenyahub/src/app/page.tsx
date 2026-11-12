@@ -14,6 +14,7 @@ import {
   Gamepad2,
   Layers,
   ArrowRight,
+  Wrench,
 } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
 import { PUBLISHED_COURSES } from "@/data/courses/registry";
@@ -137,7 +138,7 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-3.5 w-full">
                 <Link
                   href="/tools/learn/"
-                  className="btn-gold text-sm sm:text-base px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-md w-auto font-semibold"
+                  className="btn-gold hero-cta-btn text-sm sm:text-base px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-md w-auto font-semibold"
                 >
                   <Languages className="w-4.5 h-4.5 shrink-0" />
                   <span>Start Learning Kenyan Languages</span>
@@ -145,15 +146,16 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/tools/kenyan-translator/"
-                  className="btn-outline text-sm sm:text-base px-4.5 py-2.5 sm:px-5.5 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
+                  className="btn-outline hero-cta-btn text-sm sm:text-base px-4.5 py-3.5 sm:px-5.5 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
                 >
                   <Globe className="w-4.5 h-4.5 text-kenya-green-light shrink-0" />
                   <span>22-Language Translator</span>
                 </Link>
                 <Link
                   href="/tools/"
-                  className="btn-outline text-sm sm:text-base px-4.5 py-2.5 sm:px-5.5 sm:py-3 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
+                  className="btn-outline hero-cta-btn text-sm sm:text-base px-4.5 py-3.5 sm:px-5.5 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
                 >
+                  <Wrench className="w-4.5 h-4.5 text-gold shrink-0" />
                   <span>All {TOOLS.length} Tools</span>
                 </Link>
               </div>

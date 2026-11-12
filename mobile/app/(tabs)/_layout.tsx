@@ -101,15 +101,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="matatu"
         options={{
-          title: "Matatu",
-          tabBarIcon: ({ color, focused }) => (
-            <M3TabIcon
-              name={focused ? "bus" : "bus-outline"}
-              color={focused ? theme.onPrimaryContainer : color}
-              focused={focused}
-              indicatorColor={theme.primaryContainer}
-            />
-          ),
+          href: null,
+          tabBarButton: () => null,
+          tabBarItemStyle: { display: "none" },
         }}
       />
       <Tabs.Screen
