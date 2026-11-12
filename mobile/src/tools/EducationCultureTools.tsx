@@ -76,6 +76,9 @@ export function CbcGradeAgeTool() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Child Year of Birth</Text>
         <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={birthYear === "0" ? "" : birthYear}
           onChangeText={(txt) => {
             const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
@@ -677,6 +680,9 @@ export function KikuyuProverbsTool({ onScrollToTop }: { onScrollToTop?: () => vo
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={q}
           onChangeText={(val) => {
             setQ(val);
@@ -890,6 +896,9 @@ export function KcseRankingsTool({ onScrollToTop }: { onScrollToTop?: () => void
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={search}
           onChangeText={setSearch}
           placeholder="Search school name or county..."

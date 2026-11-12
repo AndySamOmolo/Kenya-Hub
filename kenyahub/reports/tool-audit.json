@@ -1,19 +1,29 @@
 {
-  "generatedAt": "2026-11-11T14:10:20.403Z",
+  "generatedAt": "2026-11-12T16:58:37.171Z",
   "registryCount": 25,
-  "routeCount": 25,
+  "routeCount": 34,
   "okCount": 25,
   "reviewCount": 0,
   "staleCount": 0,
-  "errorCount": 0,
-  "issues": [],
+  "errorCount": 9,
+  "issues": [
+    "crop-planting-calendar: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "fertilizer-subsidy-guide: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "kenya-customs-restricted-items: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "kenyan-food-nutrition: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "livestock-market-prices: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "national-parks-directory: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "nhif-hospital-finder: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "professional-bodies-kenya: route exists in src/app/tools but is missing from src/lib/tools-registry.ts",
+    "trademark-cost-kenya: route exists in src/app/tools but is missing from src/lib/tools-registry.ts"
+  ],
   "tools": [
     {
       "slug": "learn",
       "routeExists": true,
       "sourceUrl": "https://archive.org/",
       "maxAgeDays": 365,
-      "ageDays": 11,
+      "ageDays": 12,
       "data": [
         {
           "file": "src/data/language-sources",
@@ -28,7 +38,7 @@
       "routeExists": true,
       "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 11,
+      "ageDays": 0,
       "data": [
         {
           "file": "src/data/language-sources",
@@ -42,12 +52,12 @@
         },
         {
           "file": "src/data/dictionaries/swahili.json",
-          "lastUpdated": "2026-10-31",
-          "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)"
+          "lastUpdated": "2026-11-12",
+          "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)"
         },
         {
           "file": "src/data/dictionaries/kikuyu.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902/1919, Hémery 1903, Hinde 1904, McGregor 1904, Routledge 1910, Dundas 1915 & Hobley 1910/1922)"
         },
         {
@@ -62,17 +72,17 @@
         },
         {
           "file": "src/data/dictionaries/luhya.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)"
         },
         {
           "file": "src/data/dictionaries/kamba.json",
-          "lastUpdated": "2026-10-31",
-          "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)"
+          "lastUpdated": "2026-11-12",
+          "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)"
         },
         {
           "file": "src/data/dictionaries/meru.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)"
         },
         {
@@ -82,7 +92,7 @@
         },
         {
           "file": "src/data/dictionaries/kisii.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)"
         },
         {
@@ -97,8 +107,8 @@
         },
         {
           "file": "src/data/dictionaries/mijikenda.json",
-          "lastUpdated": "2026-10-31",
-          "source": "Public Domain & Academic Lexicons (Krapf 1850, Krapf & Rebmann 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)"
+          "lastUpdated": "2026-11-12",
+          "source": "Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)"
         },
         {
           "file": "src/data/dictionaries/teso.json",
@@ -107,12 +117,12 @@
         },
         {
           "file": "src/data/dictionaries/embu.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)"
         },
         {
           "file": "src/data/dictionaries/taita.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)"
         },
         {
@@ -123,7 +133,7 @@
         {
           "file": "src/data/dictionaries/borana.json",
           "lastUpdated": "2026-10-31",
-          "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845, Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)"
+          "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)"
         },
         {
           "file": "src/data/dictionaries/rendille.json",
@@ -132,7 +142,7 @@
         },
         {
           "file": "src/data/dictionaries/pokomo.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)"
         },
         {
@@ -147,7 +157,7 @@
         },
         {
           "file": "src/data/dictionaries/taveta.json",
-          "lastUpdated": "2026-10-31",
+          "lastUpdated": "2026-11-12",
           "source": "Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)"
         },
         {
@@ -163,7 +173,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -178,7 +188,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -193,7 +203,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 41,
+      "ageDays": 42,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -208,7 +218,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -223,7 +233,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -238,7 +248,7 @@
       "routeExists": true,
       "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -253,7 +263,7 @@
       "routeExists": true,
       "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -277,7 +287,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": 41,
+      "ageDays": 42,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -292,7 +302,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -307,7 +317,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -322,7 +332,7 @@
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 41,
+      "ageDays": 42,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -337,7 +347,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -352,7 +362,7 @@
       "routeExists": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
@@ -367,7 +377,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/sha-benefit-data.json",
@@ -382,7 +392,7 @@
       "routeExists": true,
       "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/small-claims-data.json",
@@ -397,7 +407,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/ntsa-transfer-data.json",
@@ -412,7 +422,7 @@
       "routeExists": true,
       "sourceUrl": "https://bomayangu.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/boma-yangu-data.json",
@@ -427,7 +437,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/rental-tax-data.json",
@@ -442,7 +452,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/tenant-rights-data.json",
@@ -457,7 +467,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.labour.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/domestic-wage-data.json",
@@ -472,7 +482,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 21,
+      "ageDays": 22,
       "data": [
         {
           "file": "src/data/airtime-drain-data.json",
@@ -487,7 +497,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 22,
+      "ageDays": 23,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",

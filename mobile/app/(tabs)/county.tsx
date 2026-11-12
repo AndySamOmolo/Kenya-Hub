@@ -462,6 +462,8 @@ export default function CountyScreen() {
             >
               <Ionicons name="search" size={20} color={theme.gold} />
               <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
                 placeholder="Search county, governor, or HQ..."
                 numberOfLines={1}
                 placeholderTextColor={theme.textMuted}

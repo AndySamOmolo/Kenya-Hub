@@ -84,6 +84,9 @@ export function NumberPlateDecoder() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Vehicle Number Plate</Text>
         <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={plate}
           onChangeText={setPlate}
           placeholder="e.g. KDA 456B, GK 123A, 47 CG 001A"
@@ -192,6 +195,9 @@ export function NumberPlateDecoder() {
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={seriesSearch}
           onChangeText={setSeriesSearch}
           placeholder="Search prefix or year (e.g. KDA)..."
@@ -247,6 +253,9 @@ export function MobilePrefixFinder() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Phone Number or Prefix</Text>
         <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={num}
           onChangeText={setNum}
           placeholder="e.g. 0722 123 456 or +254 733 123 456"
@@ -614,6 +623,9 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-4-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={search}
           onChangeText={setSearch}
           placeholder="Search traffic offences..."
@@ -822,6 +834,9 @@ export function PostalCodesTool({ onScrollToTop }: { onScrollToTop?: () => void 
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-5-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={q}
           onChangeText={setQ}
           placeholder="Search postal code, town, or county..."
@@ -1459,6 +1474,9 @@ export function MatatuRoutesTool({ onScrollToTop }: { onScrollToTop?: () => void
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
+            key={`ti-6-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           placeholder={`Search ${selectedTown} route, stage, or SACCO...`}
           placeholderTextColor={theme.textMuted}
           value={search}

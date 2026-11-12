@@ -18,7 +18,7 @@ import {
   AndroidTopAppBar,
   androidRipple,
 } from "../../src/theme";
-import { TOOLS, getPopularTools } from "../../src/shared/lib/tools-registry";
+import { TOOLS, getPopularTools, getCategoryInfo } from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 function SavedToolCard({
@@ -69,7 +69,7 @@ function SavedToolCard({
               style={[styles.categoryDot, { backgroundColor: categoryColor }]}
             />
             <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-              {tool.category.replace("-", " & ").toUpperCase()}
+              {(getCategoryInfo(tool.category)?.name || tool.category).toUpperCase()}
             </Text>
           </View>
           <Text

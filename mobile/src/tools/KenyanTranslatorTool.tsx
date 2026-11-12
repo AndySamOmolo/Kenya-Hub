@@ -958,6 +958,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
           <View style={styles.searchBar}>
             <Ionicons name="search" size={18} color={theme.textMuted} />
             <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
               placeholder={`Type a word in ${
                 sourceLanguage === "english"
                   ? "English"
@@ -1210,6 +1213,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
           <View style={styles.searchBar}>
             <Ionicons name="search" size={18} color={theme.textMuted} />
             <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
               placeholder={`Filter in ${browseMeta.languageName.split("(")[0].trim()} category...`}
               placeholderTextColor={theme.textMuted}
               value={categoryFilter}
@@ -1334,6 +1340,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>Language</Text>
                 <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribLang}
                   onChangeText={setContribLang}
                   placeholder="e.g. Kikuyu, Luo, Turkana..."
@@ -1343,6 +1352,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>English Phrase / Term *</Text>
                 <TextInput
+            key={`ti-4-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribEnglish}
                   onChangeText={setContribEnglish}
                   placeholder="e.g. Good morning"
@@ -1352,6 +1364,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>Native Translation *</Text>
                 <TextInput
+            key={`ti-5-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribTranslation}
                   onChangeText={setContribTranslation}
                   placeholder="Native word or phrase..."
@@ -1361,6 +1376,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>Pronunciation (approximate)</Text>
                 <TextInput
+            key={`ti-6-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribPronounce}
                   onChangeText={setContribPronounce}
                   placeholder="Phonetic sounding guide..."
@@ -1370,6 +1388,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>Dialect / Cultural Context</Text>
                 <TextInput
+            key={`ti-7-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribContext}
                   onChangeText={setContribContext}
                   placeholder="e.g. Used in Nyeri dialect, spoken by elders..."
@@ -1379,6 +1400,9 @@ export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => 
 
                 <Text style={styles.inputLabel}>Your Name (for credits)</Text>
                 <TextInput
+            key={`ti-8-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={contribName}
                   onChangeText={setContribName}
                   placeholder="Anonymous or Your Name"

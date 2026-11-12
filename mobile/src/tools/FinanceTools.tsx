@@ -46,6 +46,9 @@ function KESInput({
           <Text style={styles.kesPrefix}>{prefix}</Text>
         </View>
         <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           keyboardType="numeric"
           value={value === "0" ? "" : value}
           onChangeText={(txt) => {
@@ -1514,6 +1517,9 @@ export function WaterBillCalculator() {
           Monthly Water Consumption (Cubic Meters / m³)
         </Text>
         <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           keyboardType="numeric"
           value={unitsText === "0" ? "" : unitsText}
           onChangeText={(txt) => {

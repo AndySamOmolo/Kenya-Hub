@@ -98,6 +98,9 @@ export function SmallClaimsTool() {
       <View style={styles.card}>
         <Text style={styles.detailLabel}>Enter Disputed / Claim Amount (KES)</Text>
         <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={claimText}
           onChangeText={setClaimText}
           keyboardType="numeric"
@@ -230,6 +233,9 @@ export function BomaYanguTool() {
       <View style={styles.card}>
         <Text style={styles.detailLabel}>Unit Purchase Price (KES)</Text>
         <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={priceText}
           onChangeText={setPriceText}
           keyboardType="numeric"
@@ -264,6 +270,9 @@ export function RentalTaxTool() {
       <View style={styles.card}>
         <Text style={styles.detailLabel}>Gross Monthly Rent Collected (KES)</Text>
         <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
           value={rentText}
           onChangeText={setRentText}
           keyboardType="numeric"

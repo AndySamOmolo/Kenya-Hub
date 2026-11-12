@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ChevronDown } from "lucide-react";
 
 function countPillChildren(children: React.ReactNode): number {
@@ -66,7 +66,8 @@ export interface ExpandablePillRowProps {
 }
 
 /**
- * Renders a single-row horizontal scrolling pill bar.
+ * Renders a single-row horizontal scrolling pill bar with subtle left/right
+ * inset scroll shadows when pills overflow into the edges.
  * When there are more than `threshold` (default 5) pills, displays a dropdown icon button
  * pinned on the right that toggles displaying all pills vertically (wrapped) without clipping.
  */
@@ -78,6 +79,38 @@ export default function ExpandablePillRow({
   const [expanded, setExpanded] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const count = countPillChildren(children);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(count > 3);
+
+  const updateScrollShadows = useCallback(() => {
+    const el = scrollContainerRef.current;
+    if (!el || expanded) {
+      setCanScrollLeft(false);
+      setCanScrollRight(false);
+      return;
+    }
+    const { scrollLeft, scrollWidth, clientWidth } = el;
+    setCanScrollLeft(scrollLeft > 2);
+    setCanScrollRight(scrollWidth - clientWidth - scrollLeft > 2);
+  }, [expanded]);
+
+  useEffect(() => {
+    updateScrollShadows();
+    const el = scrollContainerRef.current;
+    if (!el || expanded) return;
+
+    let ro: ResizeObserver | null = null;
+    if (typeof ResizeObserver !== "undefined") {
+      ro = new ResizeObserver(() => updateScrollShadows());
+      ro.observe(el);
+      Array.from(el.children).forEach((child) => ro?.observe(child));
+    }
+    window.addEventListener("resize", updateScrollShadows, { passive: true });
+    return () => {
+      ro?.disconnect();
+      window.removeEventListener("resize", updateScrollShadows);
+    };
+  }, [children, expanded, updateScrollShadows]);
 
   useEffect(() => {
     if (expanded) return;
@@ -95,27 +128,53 @@ export default function ExpandablePillRow({
       left: Math.max(0, targetLeft),
       behavior: "smooth",
     });
-  }, [children, expanded]);
+    const timer = setTimeout(updateScrollShadows, 260);
+    return () => clearTimeout(timer);
+  }, [children, expanded, updateScrollShadows]);
 
   if (count <= threshold) {
     return (
       <div
-        ref={scrollContainerRef}
-        className={`no-scrollbar expandable-pill-row ${className}`}
+        className={`expandable-pill-scroll-viewport ${className}`}
         style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          gap: "6px",
+          position: "relative",
           width: "100%",
           maxWidth: "100%",
-          overflowX: "auto",
-          position: "relative",
-          paddingTop: "2px",
-          paddingBottom: "2px",
+          overflow: "hidden",
+          borderRadius: "9999px",
         }}
       >
-        {children}
+        <div
+          ref={scrollContainerRef}
+          onScroll={updateScrollShadows}
+          className="no-scrollbar expandable-pill-row"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "6px",
+            width: "100%",
+            maxWidth: "100%",
+            overflowX: "auto",
+            position: "relative",
+            paddingTop: "2px",
+            paddingBottom: "2px",
+          }}
+        >
+          {children}
+        </div>
+        {canScrollLeft && (
+          <div
+            aria-hidden="true"
+            className="expandable-pill-shadow expandable-pill-shadow--left"
+          />
+        )}
+        {canScrollRight && (
+          <div
+            aria-hidden="true"
+            className="expandable-pill-shadow expandable-pill-shadow--right"
+          />
+        )}
       </div>
     );
   }
@@ -134,40 +193,65 @@ export default function ExpandablePillRow({
       }}
     >
       <div
-        ref={scrollContainerRef}
-        className={`no-scrollbar expandable-pill-row ${
-          expanded ? "expandable-pill-row--expanded" : ""
-        }`}
-        style={
-          expanded
-            ? {
-                flex: "1 1 0%",
-                minWidth: 0,
-                maxWidth: "100%",
-                overflow: "hidden",
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                gap: "6px",
-                position: "relative",
-                paddingTop: "2px",
-                paddingBottom: "2px",
-              }
-            : {
-                flex: "1 1 0%",
-                minWidth: 0,
-                display: "flex",
-                flexWrap: "nowrap",
-                alignItems: "center",
-                gap: "6px",
-                overflowX: "auto",
-                position: "relative",
-                paddingTop: "2px",
-                paddingBottom: "2px",
-              }
-        }
+        className="expandable-pill-scroll-viewport"
+        style={{
+          position: "relative",
+          flex: "1 1 0%",
+          minWidth: 0,
+          maxWidth: "100%",
+          overflow: "hidden",
+          borderRadius: expanded ? "16px" : "9999px",
+        }}
       >
-        {expanded ? prepareExpandedChildren(children) : children}
+        <div
+          ref={scrollContainerRef}
+          onScroll={updateScrollShadows}
+          className={`no-scrollbar expandable-pill-row ${
+            expanded ? "expandable-pill-row--expanded" : ""
+          }`}
+          style={
+            expanded
+              ? {
+                  width: "100%",
+                  minWidth: 0,
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  gap: "6px",
+                  position: "relative",
+                  paddingTop: "2px",
+                  paddingBottom: "2px",
+                }
+              : {
+                  width: "100%",
+                  minWidth: 0,
+                  display: "flex",
+                  flexWrap: "nowrap",
+                  alignItems: "center",
+                  gap: "6px",
+                  overflowX: "auto",
+                  position: "relative",
+                  paddingTop: "2px",
+                  paddingBottom: "2px",
+                }
+          }
+        >
+          {expanded ? prepareExpandedChildren(children) : children}
+        </div>
+        {!expanded && canScrollLeft && (
+          <div
+            aria-hidden="true"
+            className="expandable-pill-shadow expandable-pill-shadow--left"
+          />
+        )}
+        {!expanded && canScrollRight && (
+          <div
+            aria-hidden="true"
+            className="expandable-pill-shadow expandable-pill-shadow--right"
+          />
+        )}
       </div>
       <button
         type="button"

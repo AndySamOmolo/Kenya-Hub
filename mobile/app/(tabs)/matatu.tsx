@@ -270,6 +270,8 @@ export default function MatatuScreen() {
         >
           <Ionicons name="search" size={18} color={theme.gold} />
           <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
             placeholder="Search route, stage, or SACCO..."
             placeholderTextColor={theme.textMuted}
             value={search}

@@ -1079,3 +1079,73 @@ table td.text-center {
   word-break: break-word !important;
   height: auto !important;
 }
+
+
+/* ── Horizontal Pill Menu Scroll Shadows (shows items going into the edges) ── */
+.expandable-pill-scroll-viewport {
+  position: relative;
+}
+
+.expandable-pill-shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  pointer-events: none;
+  z-index: 5;
+  transition: opacity 0.18s ease;
+}
+
+.expandable-pill-shadow--left {
+  left: 0;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.expandable-pill-shadow--right {
+  right: 0;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+[data-theme="dark"] .expandable-pill-shadow--left,
+:root .expandable-pill-shadow--left {
+  background: linear-gradient(
+    to right,
+    rgba(12, 10, 8, 0.86) 0%,
+    rgba(12, 10, 8, 0.45) 48%,
+    rgba(12, 10, 8, 0) 100%
+  );
+  box-shadow: inset 7px 0 9px -5px rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="dark"] .expandable-pill-shadow--right,
+:root .expandable-pill-shadow--right {
+  background: linear-gradient(
+    to left,
+    rgba(12, 10, 8, 0.86) 0%,
+    rgba(12, 10, 8, 0.45) 48%,
+    rgba(12, 10, 8, 0) 100%
+  );
+  box-shadow: inset -7px 0 9px -5px rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="light"] .expandable-pill-shadow--left {
+  background: linear-gradient(
+    to right,
+    rgba(245, 240, 232, 0.92) 0%,
+    rgba(245, 240, 232, 0.48) 48%,
+    rgba(250, 247, 242, 0) 100%
+  );
+  box-shadow: inset 7px 0 9px -5px rgba(26, 17, 8, 0.22);
+}
+
+[data-theme="light"] .expandable-pill-shadow--right {
+  background: linear-gradient(
+    to left,
+    rgba(245, 240, 232, 0.92) 0%,
+    rgba(245, 240, 232, 0.48) 48%,
+    rgba(250, 247, 242, 0) 100%
+  );
+  box-shadow: inset -7px 0 9px -5px rgba(26, 17, 8, 0.22);
+}

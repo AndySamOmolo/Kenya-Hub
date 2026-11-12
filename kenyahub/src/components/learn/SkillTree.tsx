@@ -305,7 +305,7 @@ export default function SkillTree({
             </div>
 
             {/* Level Ladder Preview */}
-            <div className="mb-3 flex gap-2 overflow-x-auto pb-1.5">
+            <ExpandablePillRow className="mb-3 pb-1.5">
               {LEVELS.map((lvl) => {
                 const reached = progress.xp >= lvl.minXp;
                 return (
@@ -325,7 +325,7 @@ export default function SkillTree({
                   </div>
                 );
               })}
-            </div>
+            </ExpandablePillRow>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
               {filteredAchievements.map((ach) => {

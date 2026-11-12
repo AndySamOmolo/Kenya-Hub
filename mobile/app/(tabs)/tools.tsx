@@ -286,6 +286,7 @@ export default function ToolsScreen() {
             style={styles.searchIcon}
           />
           <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
             value={query}
             onChangeText={setQuery}
             placeholder="Search tools (PAYE, M-Pesa, KRA)..."

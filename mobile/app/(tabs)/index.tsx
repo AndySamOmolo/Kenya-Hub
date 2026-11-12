@@ -398,30 +398,31 @@ function PopularToolRow({
           <DynamicIcon emoji={tool.icon} size={22} color={categoryColor} />
         </View>
         <View style={styles.popularToolBody}>
+          <View
+            style={[
+              styles.miniCategoryPill,
+              {
+                backgroundColor: `${categoryColor}18`,
+                alignSelf: "flex-start",
+                marginBottom: 3,
+              },
+            ]}
+          >
+            <Text style={[styles.miniCategoryText, { color: categoryColor }]}>
+              {catInfo?.name || tool.category}
+            </Text>
+          </View>
           <Text
             style={[styles.popularToolTitle, { color: theme.textPrimary }]}
-            numberOfLines={1}
           >
             {tool.shortTitle || tool.title}
           </Text>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 3 }}>
-            <View
-              style={[
-                styles.miniCategoryPill,
-                { backgroundColor: `${categoryColor}18` },
-              ]}
-            >
-              <Text style={[styles.miniCategoryText, { color: categoryColor }]} numberOfLines={1}>
-                {catInfo?.name || tool.category}
-              </Text>
-            </View>
-            <Text
-              style={[styles.popularToolDesc, { color: theme.textSecondary, flex: 1 }]}
-              numberOfLines={1}
-            >
-              {tool.description}
-            </Text>
-          </View>
+          <Text
+            style={[styles.popularToolDesc, { color: theme.textSecondary, marginTop: 2 }]}
+            numberOfLines={2}
+          >
+            {tool.description}
+          </Text>
         </View>
         <View style={styles.popularToolActions}>
           <Pressable
@@ -452,7 +453,6 @@ function PopularToolRow({
     </View>
   );
 }
-
 
 const ROTATING_LANGUAGES = [
   { id: "swahili", name: "Kiswahili", greeting: "Jambo!", region: "Swahili Coast" },
@@ -891,14 +891,16 @@ export default function HomeScreen() {
               },
             ]}
           >
-            <Ionicons name="search" size={19} color={theme.gold} />
+            <Ionicons name="search" size={18} color={theme.gold} />
             <TextInput
+              key={`home-search-input-${theme.isDark ? "dark" : "light"}`}
               value={searchQuery}
               onChangeText={setSearchQuery}
               placeholder={`Search ${TOOLS.length} tools (PAYE, M-Pesa, KPLC...)`}
-              placeholderTextColor={theme.textMuted}
+              placeholderTextColor={theme.textSecondary}
               numberOfLines={1}
               multiline={false}
+              scrollEnabled={false}
               style={[styles.searchInputText, { color: theme.textPrimary }]}
               returnKeyType="search"
             />
@@ -1391,23 +1393,19 @@ export default function HomeScreen() {
           ))}
         </View>
 
-        {/* 7. Topic Categories - Native Horizontal Scroll Strip */}
+        {/* 7. Topic Categories - Displayed in Full */}
         <View style={[styles.sectionHeader, { marginTop: 22 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
               BROWSE BY TOPIC
             </Text>
             <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-              Tool Categories
+              Tool Categories ({TOOL_CATEGORIES.length})
             </Text>
           </View>
         </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.categoryScrollContent}
-        >
+        <View style={styles.categoriesFullList}>
           {TOOL_CATEGORIES.map((cat) => {
             const count = TOOLS.filter((t) => t.category === cat.id).length;
             const catColor = categoryColorMap[cat.id] || theme.gold;
@@ -1423,7 +1421,7 @@ export default function HomeScreen() {
                   })
                 }
                 style={[
-                  styles.categoryPillCard,
+                  styles.categoryFullCard,
                   {
                     backgroundColor: theme.surfaceContainer,
                     borderColor: theme.outlineVariant,
@@ -1439,25 +1437,41 @@ export default function HomeScreen() {
                     },
                   ]}
                 >
-                  <DynamicIcon emoji={cat.icon} size={18} color={catColor} />
+                  <DynamicIcon emoji={cat.icon} size={20} color={catColor} />
                 </View>
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 1, minWidth: 0 }}>
+                  <View style={styles.catHeaderLine}>
+                    <Text
+                      style={[styles.catTitle, { color: theme.textPrimary }]}
+                    >
+                      {cat.name}
+                    </Text>
+                    <View
+                      style={[
+                        styles.catCountBadge,
+                        { backgroundColor: `${catColor}18` },
+                      ]}
+                    >
+                      <Text style={[styles.catCountSub, { color: catColor }]}>
+                        {count} {count === 1 ? "tool" : "tools"}
+                      </Text>
+                    </View>
+                  </View>
                   <Text
-                    style={[styles.catTitle, { color: theme.textPrimary }]}
-                    numberOfLines={1}
+                    style={[styles.catDescText, { color: theme.textSecondary }]}
                   >
-                    {cat.name}
-                  </Text>
-                  <Text
-                    style={[styles.catCountSub, { color: theme.textMuted }]}
-                  >
-                    {count} tools
+                    {cat.description}
                   </Text>
                 </View>
+                <Ionicons
+                  name="chevron-forward"
+                  size={16}
+                  color={theme.textMuted}
+                />
               </Pressable>
             );
           })}
-        </ScrollView>
+        </View>
 
         {/* 8. Horizontal Editorial Guides Carousel */}
         <View style={[styles.sectionHeader, { marginTop: 24 }]}>
@@ -1823,18 +1837,20 @@ const styles = StyleSheet.create({
   searchInputBar: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
-    paddingLeft: 14,
-    paddingRight: 10,
-    height: 48,
-    borderRadius: 24,
+    gap: 8,
+    paddingLeft: 12,
+    paddingRight: 8,
+    height: 46,
+    borderRadius: 23,
     borderWidth: 1,
   },
   searchInputText: {
     flex: 1,
-    height: "100%",
+    minWidth: 0,
+    height: 44,
     fontFamily: "Inter_500Medium",
-    fontSize: 13.5,
+    fontSize: 12,
+    lineHeight: 16,
     paddingVertical: 0,
     textAlignVertical: "center",
     includeFontPadding: false,
@@ -2091,36 +2107,53 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  categoryScrollContent: {
+  categoriesFullList: {
     paddingHorizontal: 16,
-    gap: 10,
-    paddingBottom: 2,
+    gap: 8,
   },
-  categoryPillCard: {
+  categoryFullCard: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 10,
+    gap: 11,
     paddingHorizontal: 12,
-    paddingVertical: 10,
+    paddingVertical: 11,
     borderRadius: 14,
     borderWidth: 1,
   },
   catIconWrap: {
-    width: 36,
-    height: 36,
+    width: 38,
+    height: 38,
     borderRadius: 10,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
+  catHeaderLine: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+    gap: 6,
+    marginBottom: 2,
+  },
   catTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 12.5,
+    fontSize: 13.5,
+    flexShrink: 1,
+  },
+  catCountBadge: {
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 999,
   },
   catCountSub: {
-    fontFamily: "Inter_500Medium",
-    fontSize: 10.5,
-    marginTop: 1,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 10,
+  },
+  catDescText: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 11.5,
+    lineHeight: 16,
   },
   guidesCarouselContent: {
     paddingHorizontal: 16,

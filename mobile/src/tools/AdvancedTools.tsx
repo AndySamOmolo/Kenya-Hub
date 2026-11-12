@@ -79,6 +79,9 @@ export function SolarRoiTool() {
         <View style={styles.kesInputRow}>
           <Text style={[styles.kesPrefix, { color: theme.gold }]}>KES</Text>
           <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             keyboardType="numeric"
             value={monthlyBill === "0" ? "" : monthlyBill}
             onChangeText={(txt) => {
@@ -135,6 +138,9 @@ export function SolarRoiTool() {
         <View style={styles.kesInputRow}>
           <Text style={[styles.kesPrefix, { color: theme.gold, fontSize: 16 }]}>KES</Text>
           <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             keyboardType="numeric"
             value={costPerKw === "0" ? "" : costPerKw}
             onChangeText={(txt) => {
@@ -475,6 +481,9 @@ export function WardConstituencyFinderTool({ onScrollToTop }: { onScrollToTop?: 
         >
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             placeholder="Filter constituencies..."
             placeholderTextColor={theme.textMuted}
             value={search}

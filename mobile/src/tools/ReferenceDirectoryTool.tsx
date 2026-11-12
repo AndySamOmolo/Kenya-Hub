@@ -122,6 +122,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             <View style={{ flex: 1 }}>
               <Text style={styles.detailLabel}>Child Age (Months: 0–60)</Text>
               <TextInput
+            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                 value={childAgeMonths}
                 onChangeText={(txt) => {
                   const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
@@ -318,6 +321,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             <Text style={styles.detailLabel}>Number of Nice Classification Classes (1–45)</Text>
             <View style={{ flexDirection: "row", gap: 8, alignItems: "center", marginTop: 4 }}>
               <TextInput
+            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                 value={tmClasses === "0" ? "" : tmClasses}
                 onChangeText={(txt) => {
                   const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
@@ -463,6 +469,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search crop name..."
@@ -611,6 +620,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-4-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search county or climate zone..."
@@ -755,6 +767,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-5-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search food (e.g. Ugali, Githeri)..."
@@ -915,6 +930,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-6-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search county budget..."
@@ -1034,6 +1052,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-7-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search forest or county..."
@@ -1158,6 +1179,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-8-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search hospital, county, or service..."
@@ -1319,6 +1343,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-9-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search registered firms..."
@@ -1527,6 +1554,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-10-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search livestock breed or market..."
@@ -1662,6 +1692,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-11-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search park, county, or wildlife..."
@@ -1815,6 +1848,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-12-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search language or county..."
@@ -1978,6 +2014,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-13-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search economic events..."
@@ -2060,6 +2099,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-14-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search soil type, county, or crop..."
@@ -2161,6 +2203,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-15-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search item or permit agency..."
@@ -2266,6 +2311,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-16-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search agrovet, town, or county..."
@@ -2363,6 +2411,9 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
         <View style={styles.searchBar}>
           <Ionicons name="search" size={18} color={theme.textMuted} />
           <TextInput
+            key={`ti-17-${theme.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
             value={search}
             onChangeText={setSearch}
             placeholder="Search professional board (LSK, EBK)..."

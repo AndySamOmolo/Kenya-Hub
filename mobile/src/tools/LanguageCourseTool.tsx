@@ -1356,6 +1356,9 @@ export default function LanguageCourseTool({
               currentEx.type === 'translate_to_target') && (
               <View style={{ gap: 10 }}>
                 <TextInput
+            key={`ti-1-${colors.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={typedAnswer}
                   onChangeText={setTypedAnswer}
                   editable={!isSubmitted}
@@ -2272,6 +2275,9 @@ export default function LanguageCourseTool({
               >
                 <Feather name="search" size={16} color={colors.textMuted} />
                 <TextInput
+            key={`ti-2-${colors.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                   value={vocabSearch}
                   onChangeText={(txt) => {
                     setVocabSearch(txt);
@@ -2891,6 +2897,9 @@ export default function LanguageCourseTool({
               {wordleStatus === 'playing' ? (
                 <View style={{ flexDirection: 'row', gap: 8 }}>
                   <TextInput
+            key={`ti-3-${colors.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
                     value={wordleInput}
                     onChangeText={(t) =>
                       setWordleInput(t.replace(/[^a-zA-Z]/g, '').slice(0, wordleAnswer.length))
@@ -3098,6 +3107,9 @@ export default function LanguageCourseTool({
           >
             <Feather name="search" size={16} color={colors.textMuted} />
             <TextInput
+            key={`ti-4-${colors.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
               value={grammarSearch}
               onChangeText={setGrammarSearch}
               placeholder="Search grammar rules, tenses, or examples..."
@@ -3294,6 +3306,9 @@ export default function LanguageCourseTool({
           >
             <Feather name="search" size={16} color={colors.textMuted} />
             <TextInput
+            key={`ti-5-${colors.isDark ? "dark" : "light"}`}
+            multiline={false}
+            numberOfLines={1}
               value={proverbSearch}
               onChangeText={(t) => {
                 setProverbSearch(t);
