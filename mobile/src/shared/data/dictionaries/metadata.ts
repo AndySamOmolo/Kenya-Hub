@@ -303,106 +303,106 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Migori"
     ],
     "hasAudio": true,
-    "dictionaryVersion": "3.2",
+    "dictionaryVersion": "3.3",
     "lastUpdated": "2026-10-31",
-    "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Mill-Hill Fathers (1920), and BFBS (1921).",
-    "totalEntries": 2497,
+    "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language, Containing the Grammar and Phraseology\", Caxton Printing & Publishing Works, Nairobi), and BFBS (1921).",
+    "totalEntries": 2711,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 16
+        "count": 25
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 51
+        "count": 57
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 134
+        "count": 140
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 120
+        "count": 125
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 165
+        "count": 168
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 142
+        "count": 144
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 118
+        "count": 122
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 138
+        "count": 146
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 299
+        "count": 348
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 62
+        "count": 75
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 34
+        "count": 42
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 22
+        "count": 21
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 38
+        "count": 36
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 104
+        "count": 105
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 678
+        "count": 857
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 376
+        "count": 300
       }
     ]
   },
@@ -1668,10 +1668,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Taita-Taveta"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.2",
+    "dictionaryVersion": "3.3",
     "lastUpdated": "2026-10-31",
-    "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3354,
+    "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
+    "totalEntries": 3558,
     "categories": [
       {
         "id": "greetings",
@@ -1683,25 +1683,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 61
+        "count": 62
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 83
+        "count": 91
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 125
+        "count": 136
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 139
+        "count": 141
       },
       {
         "id": "nature",
@@ -1713,25 +1713,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 99
+        "count": 102
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 88
+        "count": 92
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 265
+        "count": 396
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 125
+        "count": 134
       },
       {
         "id": "travel",
@@ -1743,7 +1743,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 24
+        "count": 25
       },
       {
         "id": "emergency",
@@ -1755,19 +1755,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 76
+        "count": 84
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 993
+        "count": 1015
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1002
+        "count": 1006
       }
     ]
   },

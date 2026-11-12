@@ -1,5 +1,5 @@
 // Advanced Grammar Reference Data — Rebuilt from "A Handbook of the Kavirondo Language"
-// by the Fathers of St. Joseph's Society (Mill-Hill, London), 1920
+// by Some Fathers of St. Joseph's Society (Mill-Hill, London), 1920 (Dedication 1896–1921)
 // ============================================================
 
 // ============================================================
@@ -9,22 +9,22 @@
 export const PREPOSITIONS = [
     { luo: 'e', english: 'in, at, on', examples: ['Thuol ni e ot — A snake is in the house', 'Nobiro oda — He came in my house'] },
     { luo: 'ne / ni', english: 'to, for (dative)', examples: ['Losna mesa — Make me a table', 'Wagoyo ni Nyasaye erokamano — We thank God'] },
-    { luo: 'gi', english: 'with, by, and', examples: ["Nobiro gi tong' — He came with a spear", "Min gi nyathine — The mother and her child"] },
-    { luo: 'mar / mag', english: 'of (genitive)', examples: ['Kwesi mar Petrus — Peter\'s pipe', 'Kombe mag won — Father\'s chairs'] },
+    { luo: 'gi', english: 'with, by, and', examples: ["Nobiro gi tong' — He came with a spear", 'Min gi nyathine — The mother and her child'] },
+    { luo: 'mar / mag', english: 'of (genitive)', examples: ["Kwesi mar Petrus — Peter's pipe", "Kombe mag won — Father's chairs"] },
     { luo: 'kod / kodi', english: 'with (together)', examples: ['Wadhi kodi — Shall I go with you?', 'Romo kodi — Equal to'] },
-    { luo: 'kuom', english: 'from, some of (partitive)', examples: ['Omiya kuom rech — He gives me some of the fish', 'Oa kuom Nyasaye — He comes from God'] },
+    { luo: 'kuom', english: 'from, some of (partitive)', examples: ['Omiya kuom rech — He gives me some of the fish', 'Oa kuom Nyasaye — He comes from God', 'Achiel kuomu — One of you'] },
     { luo: 'ei', english: 'inside, within', examples: ['Nobiro ei oda — He came inside my house'] },
-    { luo: 'e bwo', english: 'under, below', examples: [] },
-    { luo: 'nyim', english: 'in front of, before', examples: [] },
+    { luo: 'e bwo', english: 'under, below', examples: ['Bwo mesa — Under the table'] },
+    { luo: 'nyim', english: 'in front of, before', examples: ["Ochung' e nyima — He stood before me"] },
     { luo: 'ir', english: 'to (direction)', examples: ['Nobiro ira — He came to me'] },
     { luo: "e pier / e dier ng'e", english: 'behind', examples: ["Nochung' e pier ot — He stood behind the house"] },
     { luo: 'malo', english: 'up, above, on top', examples: ['Kete malo — Put it on high'] },
     { luo: 'piny', english: 'down, on the ground', examples: ['Nogore piny — He fell down', 'Bedi piny — Sit down'] },
-    { luo: 'diere', english: 'amidst, in between, halfway', examples: ["Nocung' diere — He stood in the midst"] },
+    { luo: 'diere', english: 'amidst, in between, halfway', examples: ["Nochung' diere — He stood in the midst", "Neging'ado diere — They cut it halfway in the middle"] },
     { luo: 'oko', english: 'outside', examples: ['Puke oko — Throw it outside'] },
-    { luo: 'iye', english: 'inside, in it', examples: ['Ni iye — It is inside'] },
+    { luo: 'iye', english: 'inside, in it', examples: ['Ni iye — It is inside', 'Donjiye — Enter inside'] },
     { luo: 'nyaka', english: 'until, up to', examples: ['Pur nyaka a kaeni nyaka chopi kacha — Dig from here to there'] },
-    { luo: "nikwop / n'ang'o", english: 'on account of, because of', examples: ["Nikwop gin — On account of them"] }
+    { luo: "nikwop / n'ang'o", english: 'on account of, because of', examples: ['Nikwop gin — On account of them'] }
 ];
 
 // ============================================================
@@ -32,20 +32,20 @@ export const PREPOSITIONS = [
 // From the Handbook, Chapter VII
 // ============================================================
 export const CONJUNCTIONS = [
-    { luo: 'gi', english: 'and (linking nouns)', examples: ['Bel gi kal — Matama and wimbi', "Min gi nyathine — The mother and her child"] },
+    { luo: 'gi', english: 'and (linking nouns)', examples: ['Bel gi kal — Matama and wimbi', 'Min gi nyathine — The mother and her child'] },
     { luo: 'kendo', english: 'and, also (linking verbs/clauses)', examples: ['Negibiro kendo negidhi — They came and went', 'Abiro kendo — I come again'] },
-    { luo: 'to', english: 'but, however, then', examples: ["To an to? — What about me?", 'Tek to tek — It is difficult (emphatic)'] },
-    { luo: 'ni', english: 'that (introducing speech)', examples: ["Nogalo ni onyalo loye — He thought that he could beat her"] },
-    { luo: 'ka', english: 'if, when, while, as, that', examples: ["Ka koth ochwe — If it rains", "Kane obiro — When he came"] },
+    { luo: 'to', english: 'but, however, then', examples: ['To an to? — What about me?', 'Tek to tek — It is difficult (emphatic)'] },
+    { luo: 'ni', english: 'that (introducing speech)', examples: ['Nogalo ni onyalo loye — He thought that he could beat her'] },
+    { luo: 'ka', english: 'if, when, while, as, that', examples: ['Ka koth ochwe — If it rains', 'Kane obiro — When he came'] },
     { luo: 'kata', english: 'whether, even if', examples: ['Kata ka — Even if'] },
-    { luo: 'nimar / nikech', english: 'for, because', examples: ["Adak ka nimar ahero — I live here because I love it"] },
+    { luo: 'nimar / nikech', english: 'for, because', examples: ['Adak ka nimar ahero — I live here because I love it'] },
     { luo: 'mondo / nimondo', english: 'in order that, so that', examples: ['Tedi kuon mondo wacham — Boil some food for us to eat'] },
-    { luo: 'kaka', english: 'as, like', examples: [] },
+    { luo: 'kaka', english: 'as, like', examples: ['Tim kaka awachoni — Do as I tell you'] },
     { luo: 'di', english: 'lest, if (doubt/uncertainty)', examples: ["Ang'o madimona? — What will prevent me?"] },
     { luo: 'momiyo / momono', english: 'therefore, consequently', examples: ['Egin ahulonu tinende — Therefore I tell you today'] },
-    { luo: 'mi / miti', english: 'then, consequently', examples: ['Mi ondiek weye — Then the hyena left him'] },
+    { luo: 'mi / miti', english: 'then, consequently', examples: ['Mi ondiek weye — Then the hyena left him', 'Miti gidonjo pacho — And then they entered the village'] },
     { luo: 'eka', english: 'thereupon, and then', examples: ['Ekane odhi nindo — And then he went to sleep'] },
-    { luo: 'nyaka', english: 'until, since', examples: [] },
+    { luo: 'nyaka', english: 'until, since', examples: ['Rita ka nyaka aduogi — Wait for me here until I return'] },
     { luo: 'koro', english: 'now (narrative)', examples: ['Koro jachien noa kuome — Now the devil left him'] }
 ];
 
@@ -71,7 +71,7 @@ export const VERB_CONJUGATION_HERO = {
             { person: 'You loved', luo: 'Nihero' },
             { person: 'He/She loved', luo: 'Nohero' },
             { person: 'We loved', luo: 'Newahero' },
-            { person: 'You (pl) loved', luo: 'Nuhero' },
+            { person: 'You (pl) loved', luo: 'Nuhero / Neuhero' },
             { person: 'They loved', luo: 'Negihero' }
         ],
         present_perfect: [
@@ -179,11 +179,13 @@ export const NOUN_CLASSES = {
         ],
     },
     instrument_nouns: {
-        rule: 'Prefix "ra-" to verb root',
+        rule: 'Prefix "ra-" to verb root (or physical defect)',
         examples: [
             { verb: 'Gwaro (to scratch)', noun: 'Ragwar (a pitchfork)' },
             { verb: 'Beto (to slash)', noun: 'Rabete (a slasher)' },
-            { verb: 'Idho (to climb)', noun: 'Raidhi (a ladder)' }
+            { verb: 'Idho (to climb)', noun: 'Raidhi (a ladder)' },
+            { verb: "Ng'iyo (to look at)", noun: "Rang'i (a mirror / looking glass)" },
+            { verb: 'Kuom (hump)', noun: 'Rakuom / Jarakuom (a hunchback, pl. Rokuombe)' }
         ],
     },
     abstract_nouns: {
@@ -216,23 +218,23 @@ export const ADJECTIVE_FORMATION = {
         { singular: 'Maber', plural: 'Mabeyo', meaning: 'Good → Good (pl)' },
         { singular: 'Marach', plural: 'Maricho', meaning: 'Bad → Bad (pl)' },
         { singular: 'Mabor', plural: 'Maboyo', meaning: 'High/Far → High/Far (pl)' },
-        { singular: "Maduong'", plural: "Madongo", meaning: 'Great → Great (pl)' },
+        { singular: "Maduong'", plural: 'Madongo', meaning: 'Great → Great (pl)' },
         { singular: 'Matin', plural: 'Matindo', meaning: 'Small → Small (pl)' },
         { singular: 'Madit', plural: 'Madito', meaning: 'Grown up → Grown up (pl)' },
         { singular: 'Marachar', plural: 'Marachere', meaning: 'White → White (pl)' },
-        { singular: "Marating'", plural: "Maratinge", meaning: 'Black → Black (pl)' },
+        { singular: "Marating'", plural: 'Maratinge', meaning: 'Black → Black (pl)' },
         { singular: 'Masasi', plural: 'Masesini', meaning: 'Cruel → Cruel (pl)' }
     ],
     colors: {
         masculine: [
             { luo: 'Marachar', english: 'White (masculine)' },
             { luo: "Marating'", english: 'Black (masculine)' },
-            { luo: 'Silwal', english: 'Chocolate brown (masculine)' }
+            { luo: 'Silwal', english: 'Chocolate brown / red (masculine)' }
         ],
         feminine: [
             { luo: 'Madibo', english: 'White (feminine)' },
             { luo: 'Madichol', english: 'Black (feminine)' },
-            { luo: 'Malando', english: 'Chocolate brown (feminine)' }
+            { luo: 'Malando', english: 'Chocolate brown / red (feminine)' }
         ],
     },
 };
@@ -251,25 +253,27 @@ export const SENTENCE_PATTERNS = {
         ],
     },
     comparison: {
-        rule: 'No adjective comparison — use circumlocution with "loyo" (to surpass)',
+        rule: 'No adjective comparison — use circumlocution with "loyo" (to surpass) or "yombo" (to outstrip)',
         examples: [
-            { luo: 'Olora gi rieko', english: 'He is wiser than I (he surpasses me with wisdom)' },
-            { luo: 'Olopo ji duto gi rieko', english: 'He is the wisest (he surpasses all people with wisdom)' }
+            { luo: 'Oloya gi rieko', english: 'He is wiser than I am (he surpasses me with wisdom)' },
+            { luo: 'Oloyo ji duto gi rieko', english: 'He is the wisest (he surpasses all people with wisdom)' },
+            { luo: "Gari oyombo nyumbu (gi ng'wech)", english: 'A train is quicker than a mule' }
         ],
     },
     negation: {
-        particles: ['Ok', 'Dak', 'Kik/Kiki', 'Nyak (never)', 'Onge (there is not)'],
+        particles: ['Ok / Oki', 'Pok / Podi ok (not yet)', 'Dak', 'Kik / Kiki', 'Nyak (never)', 'Onge (there is not)'],
         examples: [
             { luo: 'Ok ahero', english: 'I do not love' },
+            { luo: "Pok obiro (Podi ok obiro)", english: 'He has not come yet' },
             { luo: 'Kik idhi', english: 'Do not go (negative imperative)' },
-            { luo: "Nyak ocha", english: 'It is never despised' },
+            { luo: 'Nyasaye nyak ocha', english: 'God is never despised' },
             { luo: "Onge ng'ato", english: 'There is nobody' }
         ],
     },
 };
 
 // ============================================================
-// NAMING CONVENTIONS (from the Handbook p. 3)
+// NAMING CONVENTIONS (from the Handbook p. 3 & p. 81)
 // ============================================================
 export const NAMING_CONVENTIONS = {
     rule: "Proper nouns take 'o' for a man, and 'a' for a woman",
@@ -277,7 +281,9 @@ export const NAMING_CONVENTIONS = {
         { name: 'Opiyo', gender: 'Male', meaning: 'First-born twin' },
         { name: 'Akinyi', gender: 'Female', meaning: 'Born in the morning' },
         { name: 'Otieno', gender: 'Male', meaning: 'Born at night' },
-        { name: 'Apiyo', gender: 'Female', meaning: 'First-born twin (female)' }
+        { name: 'Apiyo', gender: 'Female', meaning: 'First-born twin (female)' },
+        { name: 'Okoth / Akoth', gender: 'Male / Female', meaning: 'Born during rain' },
+        { name: 'Oyo / Ayo', gender: 'Male / Female', meaning: 'Born on the road / journey' }
     ],
 };
 
@@ -291,24 +297,24 @@ export const DAYS_OF_WEEK = [
     { english: 'Thursday', dholuo: "Tich ang'wen", literal: 'Fourth work-day' },
     { english: 'Friday', dholuo: 'Tich abich', literal: 'Fifth work-day' },
     { english: 'Saturday', dholuo: "Chieng' ngeso", literal: 'Day of shaving' },
-    { english: 'Sunday', dholuo: "Chieng' lemo", literal: 'Day of prayer' }
+    { english: 'Sunday', dholuo: "Chieng' lemo / Jumapil", literal: 'Day of prayer' }
 ];
 
 // ============================================================
 // CONVERSATIONAL PHRASES
-// From the Handbook, Phraseology section (Part II, end)
+// From the Handbook, Phraseology section (pp. 102–117)
 // ============================================================
 export const CONVERSATION_GENERAL = [
     { luo: 'Iriyo nade?', english: 'How do you do?' },
     { luo: 'Ariyo maber', english: 'I am well' },
     { luo: 'Misawa. Okwe.', english: 'Good morning / Good evening' },
     { luo: 'Inindi!', english: 'Goodbye!' },
-    { luo: 'Dala wacho ang\'o?', english: 'What\'s the news of the day?' },
-    { luo: "Oling'", english: 'No news' },
+    { luo: "Dala wacho ang'o?", english: "What's the news of the day?" },
+    { luo: "Oling' / Dala oling'", english: 'No news' },
     { luo: 'Donjiye', english: 'Come in' },
     { luo: "In ng'a?", english: 'Who is there?' },
     { luo: 'Bedi piny', english: 'Sit down' },
-    { luo: "Idwaro wacho koda?", english: 'Do you want to speak to me?' },
+    { luo: 'Idwaro wacho koda?', english: 'Do you want to speak to me?' },
     { luo: 'Okawinjo maber', english: "I don't understand" },
     { luo: 'Dhiyo', english: 'Go away' },
     { luo: 'Iwinjo?', english: 'Do you understand?' },
@@ -331,7 +337,7 @@ export const CONVERSATION_GENERAL = [
     { luo: 'Ee', english: 'Yes' },
     { luo: 'Oyo', english: 'No' },
     { luo: 'Adieri', english: 'It is true' },
-    { luo: 'Barna / Leng\'rina', english: 'Let me pass' },
+    { luo: "Barna / Leng'rina", english: 'Let me pass' },
     { luo: 'Sa adi?', english: 'What time is it?' },
     { luo: 'Koth chwe', english: 'It is raining' },
     { luo: 'Koth ochok', english: 'The rain is over' },
@@ -344,12 +350,12 @@ export const CONVERSATION_HOUSEHOLD = [
     { luo: 'Kel pi maliet', english: 'Bring some hot water' },
     { luo: 'Ket pi e kendo', english: 'Put the water on the fire' },
     { luo: 'Lwok sendegi', english: 'Wash those plates' },
-    { luo: 'Kikombo ok ler', english: 'That cup is not clean' },
-    { luo: 'Ere birauli?', english: 'Where is the tumbler?' },
-    { luo: 'Dhi ooma rech', english: 'Get me some fish' },
-    { luo: "Pedhima kitandana maber", english: 'Make my bed properly' },
-    { luo: 'Chiegi abdot', english: 'Close the door' },
-    { luo: 'Mia jungao', english: 'Give me the keys' }
+    { luo: 'Kikombe ok ler', english: 'That cup is not clean' },
+    { luo: 'Ere birauri?', english: 'Where is the tumbler?' },
+    { luo: 'Dhi omna rech', english: 'Get me some fish' },
+    { luo: 'Pedhina kitandana maber', english: 'Make my bed properly' },
+    { luo: 'Chiegi dhoot', english: 'Close the door' },
+    { luo: 'Mia funguo', english: 'Give me the keys' }
 ];
 
 export const CONVERSATION_HEALTH = [
@@ -360,7 +366,7 @@ export const CONVERSATION_HEALTH = [
     { luo: 'Adiewo', english: 'I have diarrhoea' },
     { luo: 'Adiewo remo', english: 'I have dysentery' },
     { luo: 'Nindo otama otieno', english: 'I cannot sleep at night' },
-    { luo: "K'idwara gimoro, wachina", english: 'If you want anything, tell me' },
+    { luo: "K'idwaro gimoro, wachina", english: 'If you want anything, tell me' },
     { luo: 'Bada otur', english: 'My arm is broken' },
     { luo: 'Wiriye yadhini', english: 'Put on this ointment' },
     { luo: 'Naduogi kendo', english: 'I shall come again' }
@@ -373,12 +379,12 @@ export const CONVERSATION_WORK = [
     { luo: "Ing'eyo pur?", english: 'Do you understand cultivation?' },
     { luo: 'In jakanye?', english: 'Where do you come from?' },
     { luo: 'Dalau bor?', english: 'Is it very far?' },
-    { luo: "Namii florin abich dwe achiel", english: 'I give you five florins a month' },
+    { luo: 'Namii florin abich dwe achiel', english: 'I give you five florins a month' },
     { luo: 'Kel ji moko', english: 'Bring some more men' },
     { luo: 'Kiny nibi okinyi', english: 'Come early in the morning' },
     { luo: 'Bi piyo', english: 'Come quick' },
     { luo: 'Maki kwer', english: 'Take a hoe' },
-    { luo: "Pur nyaka a kaeni nyaka chopi kacha", english: 'Dig from here to there' },
+    { luo: 'Pur nyaka a kaeni nyaka chopi kacha', english: 'Dig from here to there' },
     { luo: 'Tiuru piyo', english: 'Go on, work hard' },
     { luo: "Ng'atni otiyo maber", english: 'This man works well' },
     { luo: 'Dhiuru dala uduto', english: 'Go home altogether' }
@@ -387,7 +393,7 @@ export const CONVERSATION_WORK = [
 export const CONVERSATION_TRAVEL = [
     { luo: 'Kiny wanadhi safar', english: 'We shall start tomorrow' },
     { luo: 'Isetweyo gikmoko duto?', english: 'Have you all the loads ready?' },
-    { luo: 'Musike moko pek', english: 'Some of the loads are too heavy' },
+    { luo: 'Musigo moko pek', english: 'Some of the loads are too heavy' },
     { luo: 'Go bul', english: 'Beat the drum' },
     { luo: 'Gol gikmoko duto', english: 'Bring out the loads' },
     { luo: 'Twe piyo', english: 'Tie them up quickly' },
@@ -458,7 +464,9 @@ export const PASSIVE_VOICE = {
     rule: 'Prefix "o" as impersonal pronoun + root of transitive verb',
     examples: [
         { active: 'Kelo (to bring)', passive: 'Chiemo okel (The food has been brought)' },
-        { active: 'Nego (to kill)', passive: 'Onegeigi (They were killed)' }
+        { active: 'Pawo (to clean)', passive: 'Pacho osepa (The village has been cleaned)' },
+        { active: 'Kwalo / Pewo (to steal/plunder)', passive: 'Nope dhogi (Their cattle were stolen)' },
+        { active: 'Winjo (to hear)', passive: 'Lemoni owinji (Thy prayer is heard)' }
     ],
     personal_passive: [
         { person: 'I am loved', luo: 'Ohera' },
@@ -476,19 +484,19 @@ export const PASSIVE_VOICE = {
 // ============================================================
 export const ALPHABET = {
     vowels: [
-        { letter: 'a', pronunciation: 'as in "father"', example: 'Mako: to hold' },
-        { letter: 'e', pronunciation: 'as "a" in "lake"', example: 'Lemo: to pray' },
-        { letter: 'i', pronunciation: 'as in "police"', example: 'Limo: to visit' },
-        { letter: 'o', pronunciation: 'as "oa" in "coach"', example: 'Moso: to greet' },
-        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' }
+        { letter: 'a', pronunciation: 'as in "father" / "fat"', example: 'Mako: to hold. Kal: wimbi' },
+        { letter: 'e', pronunciation: 'as "a" in "lake" / "hen" / French "père"', example: 'Lemo: to pray. Lendo: to clean. Ler: to be clean' },
+        { letter: 'i', pronunciation: 'as in "police" / "tin" / intermediate (Matin)', example: 'Limo: to visit. Lith lwedo: finger. Matin: small' },
+        { letter: 'o', pronunciation: 'as "oa" in "coach" / "song" / "law"', example: 'Moso: to greet. Kwongo: to begin. Loko: to change' },
+        { letter: 'u', pronunciation: 'as in "bull" / intermediate (Lur)', example: 'Bur: a hole. Lur: to be barren' }
     ],
     special_consonants: [
-        { letter: 'dh', pronunciation: 'as in "though"', example: 'Dhiyo: to go' },
-        { letter: 'th', pronunciation: 'as in "thatch"', example: 'Thiedho: to forge' },
-        { letter: "ng'", pronunciation: 'nasal as "ng" in "song"', example: "Ng'owo: figtree" },
-        { letter: 'ny', pronunciation: 'one sound', example: 'Nyako: girl' },
-        { letter: 'mb', pronunciation: 'one sound at word start', example: 'Mbiru: a bird' },
-        { letter: 'nd', pronunciation: 'one sound at word start', example: 'Ndawa: tobacco' }
+        { letter: 'dh', pronunciation: 'as in "though"', example: 'Dhiyo: to go. Puodho: garden' },
+        { letter: 'th', pronunciation: 'as in "thatch"', example: 'Thedho: to forge. Thieth: a cure' },
+        { letter: "ng'", pronunciation: 'nasal as "ng" in "song"', example: "Ng'owo: figtree. Bang': after" },
+        { letter: 'ny', pronunciation: 'one sound', example: 'Nyako: girl. Piny: country' },
+        { letter: 'mb', pronunciation: 'one sound at word start', example: 'Mbiru: a bird. Mbara: a scar' },
+        { letter: 'nd', pronunciation: 'one sound at word start', example: 'Ndawa: tobacco. Ndemo: tweezers' }
     ],
 };
 

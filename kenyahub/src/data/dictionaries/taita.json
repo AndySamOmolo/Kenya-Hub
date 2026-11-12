@@ -9,9 +9,9 @@
     "Taita-Taveta"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.2",
+  "dictionaryVersion": "3.3",
   "lastUpdated": "2026-10-31",
-  "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
+  "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -562,6 +562,13 @@
           "translation": "mirongo miili (or koruja, p. 116) / mirongo mitatu / i'gana (pl. ma'gana) / ma'gana ikumi",
           "pronunciation": "mi-ron-go mi-i-li / ko-ru-ja / i-ga-na / ma-ga-na i-ku-mi",
           "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 20–21 & p. 116",
+          "audioFile": null
+        },
+        {
+          "english": "Ten and only ten (ideophonic intensifier)",
+          "translation": "Ikumi chululu",
+          "pronunciation": "ikumi chululu",
+          "context": "Wray (1894, p. 75) Adverbial Enclitics",
           "audioFile": null
         }
       ]
@@ -1150,6 +1157,62 @@
           "translation": "mghosi (pl. waghosi) / mfumu (pl. wafumu) / muzi (mudzi, pl. mizi)",
           "pronunciation": "m-gho-si / m-fu-mu / mu-zi",
           "context": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language', pp. 77–128",
+          "audioFile": null
+        },
+        {
+          "english": "Adulterer",
+          "translation": "mlaki, kitinga cha wake.",
+          "pronunciation": "mlaki",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Barbarian",
+          "translation": "Mwibabu : a tribe of wild people supposed to have once lived in Taita.",
+          "pronunciation": "mwibabu : a tribe of wild people supposed to have once lived",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Cannibal",
+          "translation": "mlyigawandu.",
+          "pronunciation": "mlyigawandu.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Grandchild, a grandson calls his grandfather",
+          "translation": "wawa, his grandmother, ake; a granddaughter calls her grandfather, ake, her grandmother, wawa; a grandfather calls his grandson, wawa, his granddaughter, ake; a grandmother calls her grandson, ake, her granddaughter, wawa.",
+          "pronunciation": "wawa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Idiot",
+          "translation": "mzimu.",
+          "pronunciation": "mzimu.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Murderer",
+          "translation": "mulagi.",
+          "pronunciation": "mulagi.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Witch",
+          "translation": "msai.",
+          "pronunciation": "msai.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Witchcraft",
+          "translation": "usai.",
+          "pronunciation": "usai.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         }
       ]
@@ -2031,6 +2094,83 @@
           "english": "Tongs for pulling out the eye-lashes",
           "translation": "ngula",
           "pronunciation": "ngu-la",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Anus",
+          "translation": "kivindu.",
+          "pronunciation": "kivindu.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Buttock",
+          "translation": "shimba.",
+          "pronunciation": "shimba.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Corpse",
+          "translation": "garia.",
+          "pronunciation": "garia.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Dung",
+          "translation": "mavi.",
+          "pronunciation": "mavi.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Excrement",
+          "translation": "mavi; [of cattle], saru.",
+          "pronunciation": "mavi",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Nipple",
+          "translation": "iwele.",
+          "pronunciation": "iwele.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Pap [the nipple]",
+          "translation": "titi.",
+          "pronunciation": "titi.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Penis",
+          "translation": "gudi.",
+          "pronunciation": "gudi.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Testicles",
+          "translation": "makende.",
+          "pronunciation": "makende.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Urine",
+          "translation": "makojo.",
+          "pronunciation": "makojo.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Vagina",
+          "translation": "ngini.",
+          "pronunciation": "ngini.",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         }
@@ -3011,6 +3151,20 @@
           "english": "Trumpet [a large kudu horn]",
           "translation": "gunda",
           "pronunciation": "gunda",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Antelope",
+          "translation": "Sambe, Shakwa, Makuli, Isha, Mbala, Ngulungu, Dom, Gwali, Nausi, I'galu : names of antelopes found in Taita.",
+          "pronunciation": "sambe",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ants",
+          "translation": "sambiro, very small black ants; salafu, brown biting ants; tlyeha, white ants; ngumbingumbi, ants in their flying state; minyu, black biting ants.",
+          "pronunciation": "sambiro",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         }
@@ -4896,6 +5050,27 @@
           "pronunciation": "ma-ge-re after the fruit is gathe-red ma-ta-sa",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
+        },
+        {
+          "english": "Corn, Kaffir",
+          "translation": "mwemba. Mwemba in its various stages of growth :— Mwemba, 'gwauya sombe ya jigau, it hangs its head. &emsp;„ 'gwakwita kibala. &emsp;„ 'gwadea machum. &emsp;„ 'gwadea kivula. &emsp;„ 'gwaela ngoma. &emsp;„ 'gwakumba mbululu. &emsp;„ 'gwaelesa. &emsp;„ 'gwahechurusa. &emsp;„ 'gwaoma, it is fully ripe.",
+          "pronunciation": "mwemba. mwemba in its various stages of growth :— mwemba",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Foods",
+          "translation": "kimanga, cooked beans; mswara, porridge; kinolo, bread from Indian corn; kinaburi, bread from Kaffir corn; iole, that which is left over; itongi, a morsel; uji, thin gruel; ndua, food for a sick person.",
+          "pronunciation": "kimanga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Gruel",
+          "translation": "uji, mswara 'gwa meji; — for a sick person, ndua.",
+          "pronunciation": "uji",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
         }
       ]
     },
@@ -5517,6 +5692,34 @@
           "english": "Practise to, with a bow and arrow",
           "translation": "ku-bola",
           "pronunciation": "ku-bola",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Bag",
+          "translation": "dau, a small bag sewn up one side; kiondo, a small bag without seam; kikuchu, a triangular bag made of skin; kitasi, a large bag; mkoba, a large bag, generally a matting bag; mfuko, generally a medicine bag; wararu, a very large sack.",
+          "pronunciation": "dau",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Beads",
+          "translation": "lukangi, ngangi, ushanga; samisami, red beads; sawali, dark blue beads; mazia, white beads; kiketi, light blue beads; mkonya, black beads; chuma, light blue beads; ngoningoni, lustre beads; burinaro za nyilu, dark blue ring beads; burinaro za makumbo, green ring beads.",
+          "pronunciation": "lukangi",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Calabash",
+          "translation": "kishori; kazama, a very large calabash; holoshi, a small long-shaped calabash; mahado, the pulp of the calabash.",
+          "pronunciation": "kishori",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Musical instruments",
+          "translation": "ngoma, drum; gunda, a large kudu horn; nderere, a small horn used in fighting; nguli, a small reed whistle; mbewewe, a stringed instrument.",
+          "pronunciation": "ngoma",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         }
@@ -7381,6 +7584,923 @@
           "pronunciation": "ku",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
+        },
+        {
+          "english": "Abate, to",
+          "translation": "ku-gotua, ku-uya nyuma; — to cause to, ku-gotusha.",
+          "pronunciation": "ku-gotua",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Abhor, to",
+          "translation": "ku-menya; — to cause to, ku-menyesa.",
+          "pronunciation": "ku-menya",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Abide, to",
+          "translation": "ku-kalla, ku-sinda, ku-tula; — to cause to, ku-kallisha, ku-sindisa, ku-tulisha.",
+          "pronunciation": "ku-kalla",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Able, to be",
+          "translation": "ku-dima; — to cause to be, ku-dimisha; — not to be, ku-lemo.",
+          "pronunciation": "ku-dima",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Abound, to",
+          "translation": "ku-jula, ku-era, ku-kalla, nyingi; — to cause to, ku-juza, ku-eresha.",
+          "pronunciation": "ku-jula",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Accuse, to",
+          "translation": "ku-gorera; — falsely, to, ku-zigirira.",
+          "pronunciation": "ku-gorera",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Adhere, to",
+          "translation": "ku-wata, ku-nana; — to cause to, ku-watisa, ku-nasa.",
+          "pronunciation": "ku-wata",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Adjourn, to",
+          "translation": "ku-dila; — to cause to, ku-dilisa.",
+          "pronunciation": "ku-dila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Adulterate, to",
+          "translation": "ku-runganya.",
+          "pronunciation": "ku-runganya.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Adultery, to commit",
+          "translation": "ku-laka, ku-zinga, ku-iwa muke.",
+          "pronunciation": "ku-laka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Advance, to",
+          "translation": "ku-suguta hambiri; — to cause to, ku-sugusa hambiri; — goods, etc., to, ku-kopesha.",
+          "pronunciation": "ku-suguta hambiri",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Afflict, to",
+          "translation": "ku-tirira, ku-sirima; — to cause to, ku-sirimisa.",
+          "pronunciation": "ku-tirira",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Against, to stand",
+          "translation": "ku-kalla avui na; — to lean, ku-tsinila.",
+          "pronunciation": "ku-kalla avui na",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Along with, to go",
+          "translation": "ku-genda naye; — side, to place, ku-ikanya na mbao [lit. to place alongside each other].",
+          "pronunciation": "ku-genda naye",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Approach, to",
+          "translation": "ku-suguta; — to cause to, ku-sugusa.",
+          "pronunciation": "ku-suguta",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Arise, to",
+          "translation": "ku-uka; — to cause to, ku-ukisa.",
+          "pronunciation": "ku-uka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Arrive, to",
+          "translation": "ku-fika, ku-busa; — to cause to, ku-fisa.",
+          "pronunciation": "ku-fika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ascend, to",
+          "translation": "ku-joka, ku-kwela; — to cause to, ku-josa, ku-kweza.",
+          "pronunciation": "ku-joka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Asleep, to be",
+          "translation": "ku-tungura, ku-lala, ku-kalla haring 'eni; — to cause to be, ku-tungurisa, ku-kumba haring 'a.",
+          "pronunciation": "ku-tungura",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Attach, to",
+          "translation": "ku-wata; — to cause to, kuwatisa.",
+          "pronunciation": "ku-wata",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Attend, to",
+          "translation": "ku-dafwarira; — to, to, ku-sikizila.",
+          "pronunciation": "ku-dafwarira",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Blow, to, with the mouth",
+          "translation": "ku-furira; — as the wind, ku-vuma.",
+          "pronunciation": "ku-furira",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Bring, to",
+          "translation": "ku-leta, ku-konda, ku-enda; — for, to, ku-letela; — up, to, ku-lela; — together, to, ku-kwoganya; — near, to, ku-sugusa; — to life, to, ku-zusha.",
+          "pronunciation": "ku-leta",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Burn, to",
+          "translation": "ku-waka; — to cause to, ku-washa, ku-koza; to consume, ku-isha, T. V.; ku-ia, I. V.; — food, ku-lungula.",
+          "pronunciation": "ku-waka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Carry, to",
+          "translation": "ku-twala, ku-duda; — on the back, ku-eleka.",
+          "pronunciation": "ku-twala",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Cease, to",
+          "translation": "ku-siga; — talking, to, ku-nyamala.",
+          "pronunciation": "ku-siga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Chase, to [to hunt]",
+          "translation": "ku-diwa; — away, to, ku-gusa.",
+          "pronunciation": "ku-diwa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Chew, to [as sugar-cane]",
+          "translation": "kuhatsa; [— as food], ku-kakaha.",
+          "pronunciation": "kuhatsa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Come to, to",
+          "translation": "ku-jila; — out, to, ku-fuma; — down, to, ku-jika, ku-selela; — in, to, ku-ingila; — up, to, ku-joka, ku-kwela; — upon, to, ku-doka; — near, to, ku-suguta avui; — together, to, ku-kwogana; — to life again, to, ku-zuka; — to light, to, ku-oneka, ku-manyikana; — to nothing, to, ku-uya meji, ku-uya oa, lu-kunga lwauya oa, the war-cry is nothing; [to arrive], ku-fika, ku-busa; [come, let us go], inde tigale.",
+          "pronunciation": "ku-jila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Commit adultery, to",
+          "translation": "ku-laka, ku-zinga, ku-iwa muke.",
+          "pronunciation": "ku-laka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Continue, to",
+          "translation": "ku-tula, ku-sinda, ku-kalla; — to cause to, ku-sindisa.",
+          "pronunciation": "ku-tula",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Cross, to",
+          "translation": "ku-konya, to provoke a quarrel; — over to, ku-ambuka.",
+          "pronunciation": "ku-konya",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Cut, to",
+          "translation": "ku-pasa, ku-shinja, ku-tema; [to cut ready to cultivate], ku-chochola; [to cut up], ku-bara, ku-paia; [to cut to pieces], ku-barabara, ku-paiapaia; [to cut short], ku-hingilisa, ku-erecha; [to cut firewood], ku-shugula.",
+          "pronunciation": "ku-pasa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Damp, to",
+          "translation": "ku-nyafusa; — to be, ku-nyafua, ku-kalla na meji.",
+          "pronunciation": "ku-nyafusa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Descend, to",
+          "translation": "ku-selela, ku-jika; — to cause to, seleza, ku-jisa.",
+          "pronunciation": "ku-selela",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Down, to go",
+          "translation": "ku-selela, ku-jika; — put, to, ku-ika msangeni; — put, to [to leave alone], ku-sigilila; — look, to, ku-lola ku-selela.",
+          "pronunciation": "ku-selela",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Draw, to",
+          "translation": "kuruta; — water, to, ku-teka meji; — a line, to, ku-tsora, ku-dea mhero, ku-dea mchori; — out, to, ku-kula; — breath, to, ku-kula mruki; — together, to, ku-kwoganya; — near, to, ku-suguta avui.",
+          "pronunciation": "kuruta",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Drive away, to",
+          "translation": "ku-gusa; — along, to [as cattle], ku-shunga.",
+          "pronunciation": "ku-gusa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ease, to [to soothe]",
+          "translation": "ku-tsarusa; [to be at ease], ku-tsarua; — oneself, to, ku-nya.",
+          "pronunciation": "ku-tsarusa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Employ, to [to send about]",
+          "translation": "ku-tuma; [to make use of], ku-tumila; [to be made use of], ku-tumika; [to give work to], ku-ingiza kazini; [to employ a number of people to do a certain work], ku-kumba kikola, ku-kumba ngule.",
+          "pronunciation": "ku-tuma",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Enough, to be",
+          "translation": "ku-kata; — have, to, ku-guta; [to be tired], ku-koja.",
+          "pronunciation": "ku-kata",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fall, to",
+          "translation": "ku-gwa; [as rain], ku-nya; [as leaves], ku-anduka; — into, to, ku-buduka, ku-potoka.",
+          "pronunciation": "ku-gwa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fall, to cause to",
+          "translation": "ku-gwisha; [as rain], ku-nyesha; — into, to, ku-budula, ku-potosa, ku-potola.",
+          "pronunciation": "ku-gwisha",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fight, to",
+          "translation": "ku-lwana; — to cause to, ku-lwanisha.",
+          "pronunciation": "ku-lwana",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fill, to",
+          "translation": "ku-juza; [to be full], ku-jula; [to fill in a hole], ku-kinilila; [to be nearly full], ku-kalla goti; [to fill with food], ku-gutisha; [to have had enough], ku-guta.",
+          "pronunciation": "ku-juza",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Find, to",
+          "translation": "ku-ona, ku-pata, ku-vumbula, ku-doka; [to be found], ku-oneka; [to be findable], ku-onekeka; [to find out], ku-pola, ku-manya.",
+          "pronunciation": "ku-ona",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fire, to [to set on fire]",
+          "translation": "ku-kumba moto; [to light a fire], ku-koza moto, ku-washa moto; [to burn], ku-isha, T. V.; ku-ia, I. V.; [to fire a gun], ku-kwita bunduki.",
+          "pronunciation": "ku-kumba moto",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Firm, to be",
+          "translation": "ku-manga; — make, to, ku-mangisa.",
+          "pronunciation": "ku-manga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Fly, to",
+          "translation": "ku-buruka; — to cause to, ku-burusa.",
+          "pronunciation": "ku-buruka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Gather, to, [fruit]",
+          "translation": "ku-aha; [Indian corn], ku-kwasha; [maize], ku-kwita; — up, ku-shoa; — together, ku-kwoganya, T. V.; ku-kwogana, I. V.",
+          "pronunciation": "ku-aha",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Get, to",
+          "translation": "ku-pata, ku-dea; [to recover from an illness], ku-boa; — a little better, ku-kalla bahabaha; — drunk, ku-narua; — dry, ku-oma; — for, ku-patila, ku-deila; — into, ku-ingila; — another into trouble, ku-shekera; — seed into the ground before the rain comes, ku-buka; — mouldy, ku-huhua; — out, ku-fuma, I. V.; ku-funya, T. V.; — out of the way, ingila niite! [lit. let me pass!]; ima! [lit. get out of the way!]; — out of one's sight, ku-genda noko; — palm wine, ku-gema; — ripe, ku-irwa; — [thin, watery], ku-salama; — thin, ku-daruma; — through [squeeze through], ku-tsira, I. V.; ku-tsirisa, T. V.; — through, ku-poka, I. V.; ku-pola, T. V.; — up, ku-uka, I. V.; ku-ukisa, T. V.; — upon, ku-joka.",
+          "pronunciation": "ku-pata",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Give, to",
+          "translation": "ku-hawa; — a present, ku-nosa; — up, ku-funya; [to help one to food], ku-ega; [to cut off for], ku-chwila; — out, [as words], ku-chila; — back, ku-uja, I. V.; ku-ujisa, T. V.; ku-galisha, T. V.; — rations, ku-hawa leu; — room, ku-ingila; — to drink, ku-nwesa; — to eat, ku-lisa; — trouble, ku-emeka, ku-sirimisa; — way under one, ku-fodeka; — light, ku-langaza.",
+          "pronunciation": "ku-hawa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Go, to",
+          "translation": "ku-genda; [to return], ku-gala, ku-uya; — after, [to follow], ku-irima; — away, ku-genda noko; — your way, ku-genda ngila zako; — backward, ku-genda kinyuma; —",
+          "pronunciation": "ku-genda",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Grow, to",
+          "translation": "ku-zugua; [to sprout], ku-palala; [to come up out of the ground], ku-fuma; — fat, ku-banda; — thin, ku-daruma; [to be full-grown], ku-kula.",
+          "pronunciation": "ku-zugua",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Hang, to",
+          "translation": "ku-anika; [to strangle], ku-tswaia.",
+          "pronunciation": "ku-anika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Hate, to",
+          "translation": "ku-menya; — to cause to, ku-menyesa.",
+          "pronunciation": "ku-menya",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Help, to",
+          "translation": "ku-taria, ku-arura; — to food, ku-ega, especially of porridge.",
+          "pronunciation": "ku-taria",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Hoe, to",
+          "translation": "ku-lima; [to cut down the grass before hoeing], ku-chochola; [to loosen the ground by pricking], ku-tlyatlyaia; [to get out thoroughly all the weeds], ku-sambula; [to get up all the potatoes before sowing], ku-kaila; [to scratch the ground when the first weeds appear], ku-buruga.",
+          "pronunciation": "ku-lima",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Keep, to [to put away]",
+          "translation": "ku-ika; [to guard], ku-linda; [to hold], ku-wata, ku-hasisa, ku-manzira; [to delay], ku-mukisa, ku-sindisa; [to keep awake], ku-lala meso; — animals, ku-fuga.",
+          "pronunciation": "ku-ika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Kill, to",
+          "translation": "ku-ulaga; — for food, ku-shinja; — in battle, ku-ulaga mboi.",
+          "pronunciation": "ku-ulaga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Knock, to",
+          "translation": "ku-kongota, ku-gonga; — down, ku-gwisha.",
+          "pronunciation": "ku-kongota",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Laugh, to",
+          "translation": "ku-seka; — to cause to, ku-sekesa.",
+          "pronunciation": "ku-seka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Lay, to",
+          "translation": "ku-ika; — down, ku-tungurisa; — eggs, ku-vala magi; — hold, ku-wata.",
+          "pronunciation": "ku-ika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Lead, to",
+          "translation": "ku-longoza, ku-kaiai, ku-dongoza; — astray, ku-lagaza.",
+          "pronunciation": "ku-longoza",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Lean, to become",
+          "translation": "ku-daruma; — to cause to become, ku-darumisa.",
+          "pronunciation": "ku-daruma",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Leave, to",
+          "translation": "ku-siga, ku-fuma; [to leave go], ku-sigilila; — over, ku-hangala; [to be left over], ku-hangalika; [to take leave of], ku-laga.",
+          "pronunciation": "ku-siga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Let, to [to permit]",
+          "translation": "ku-siga; — down, ku-seleza, ku-jisa; — loose, ku-fungula.",
+          "pronunciation": "ku-siga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Lie, to [to utter falsehood]",
+          "translation": "ku-gora ndimi; — across, ku-kalla kizemerumu; — down, ku-naraga, ku-tungura, ku-lala; — awake, ku-lala meso, ku-lavile; [this verb is past in form, but present in meaning] — on one's back, ku-lala kingazi; — in wait for, ku-lalila.",
+          "pronunciation": "ku-gora ndimi",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Light, to",
+          "translation": "ku-washa; — to be, ku-ela, ku-langala; — to be [not heavy], ku-angua.",
+          "pronunciation": "ku-washa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Linger, to",
+          "translation": "ku-mukamuka, ku-sinda; — to cause to, ku-sindisa.",
+          "pronunciation": "ku-mukamuka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Look, to",
+          "translation": "ku-lola, ku-zigana; — after, ku-manya; — out for, ku-lolila; — for, ku-hada; — round [to turn the head], ku-eria.",
+          "pronunciation": "ku-lola",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Make, to",
+          "translation": "ku-dea, ku-umba; — an agreement, ku-sikilana; — blood-brothers, ku-lya muma; — good [to pay], ku-shana; — clothes for, ku-shonela nguo; — fat, ku-bandisa; — haste, ku-dea shwoshwo; — ill, ku-uja mkongo; — love, ku-kumba ulanga; — metal things, ku-shana; — peace, ku-shaana, ku-dea sere; — plain, ku-tambula; — pottery, ku-umba; — room for, ku-ingila; — sorry for, ku-harisa ngolo; — to agree, ku-patanisha; — unlawful, ku-rigida; — up a fire, ku-kongocha; — water, ku-kojela; — well, ku-boesa.",
+          "pronunciation": "ku-dea",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Marry, to",
+          "translation": "ku-lola, ku-usa; [to put one into a position to marry by paying the price of the girl, ku-loza; [to pay the price of the girl], ku-hoa.",
+          "pronunciation": "ku-lola",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Meet, to",
+          "translation": "ku-kwogana, ku-onana; [to go to meet], ku-mara; [to meet a person when starting out on a journey], ku-kwita mzana. [This is considered bad luck.]",
+          "pronunciation": "ku-kwogana",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Mend, to",
+          "translation": "ku-boesa; — clothes, ku-rokosha.",
+          "pronunciation": "ku-boesa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Murder, to",
+          "translation": "ku-ulaga.",
+          "pronunciation": "ku-ulaga.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Mutilate, to",
+          "translation": "ku-tematema.",
+          "pronunciation": "ku-tematema.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Paint, to",
+          "translation": "ku-vila rangi; — with red ochre, ku-kwita ilongo.",
+          "pronunciation": "ku-vila rangi",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Pay, to",
+          "translation": "ku-shana, ku-riha, ku-lipa; — for an injury, ku-tahisa.",
+          "pronunciation": "ku-shana",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Peel, to, sugar-cane",
+          "translation": "ku-sema; — bananas, peas, etc., ku-oa; — bark off trees, ku-konola, T. V.; ku-konoka, I. V.",
+          "pronunciation": "ku-sema",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Perish, to",
+          "translation": "ku-haita; — cause to, ku-haitisha.",
+          "pronunciation": "ku-haita",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Pour, to, in",
+          "translation": "ku-sukila; — out, ku-kupula, ku-tila, ku-budula.",
+          "pronunciation": "ku-sukila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Pull, to",
+          "translation": "ku-ruta; — down a house, ku-fuchula; [house pulled down], ku-fuchuka.",
+          "pronunciation": "ku-ruta",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Put, to an end, to",
+          "translation": "ku-duisa; — a pot on the fire, ku-jigisa; — away, ku-ika; — down, ku-tula; — forth leaves, ku-rua, ku-rurura; — in, ku-ingiza; — in order, ku-ika kirani; — off, ku-dilisa, T. V.; ku-dila, I. V.; — on clothes, ku-rwara; — on a turban, ku-riga kilemba; — out, ku-funya; — out a fire, ku-zimisha; — out cattle to keep, ku-tura; — ready for use, ku-ika kirani; — right, ku-boesa; — straight,",
+          "pronunciation": "ku-duisa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Raise, to",
+          "translation": "ku-unula, ku-josa; — from the dead, ku-zusha.",
+          "pronunciation": "ku-unula",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Reach, to",
+          "translation": "ku-fika, ku-busa; — cause, to, ku-fisa.",
+          "pronunciation": "ku-fika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Remain, to",
+          "translation": "ku-kalla, ku-tula; [to be left over], ku-hangalika; — awake, ku-lala meso, ku-lavile [see to lie].",
+          "pronunciation": "ku-kalla",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Rise, to",
+          "translation": "ku-uka; — cause to, ku-ukisa; — from the dead, ku-zuka; [to ascend], ku-joka; [to stand], ku-kalla kimusi; — of the sun, ku-cha; ijua lyachega, the sun rises; ku-fuma, ijua lyafuma, the sun rises; nachelo, the sun rose upon me.",
+          "pronunciation": "ku-uka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Run, to",
+          "translation": "ku-kimbila, ku-duduga; — cause to, ku-kimbilisa, ku-dudugisa; — down a steep place, ku-doromoka.",
+          "pronunciation": "ku-kimbila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Savoury, to be",
+          "translation": "ku-singa; — to make, ku-singiza.",
+          "pronunciation": "ku-singa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Scratch, to",
+          "translation": "ku-kuna; — like a hen, ku-fukula; [to bruise], ku-shogonola, T. V.; ku-shogonoka, I. V.",
+          "pronunciation": "ku-kuna",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Search, to",
+          "translation": "ku-hada; — with a light, ku-limika.",
+          "pronunciation": "ku-hada",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Seek, to",
+          "translation": "ku-hada; — for, ku-hadila.",
+          "pronunciation": "ku-hada",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Send, to",
+          "translation": "ku-tuma, ku-gensa; — to a person, ku-gensela; — away, ku-gusa; — back, ku-galisha, ku-ujisa, ku-uja.",
+          "pronunciation": "ku-tuma",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Separate, to",
+          "translation": "ku-ika mbale, ku-funya mbale; [to distinguish], ku-tambula; [to leave one another], ku-tagana; [to separate people when fighting], ku-taganya.",
+          "pronunciation": "ku-ika mbale",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Settle an affair, to",
+          "translation": "ku-pasa mateto, ku-pasa mlandu; — down, ku-tsarua.",
+          "pronunciation": "ku-pasa mateto",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Shine, to",
+          "translation": "ku-ng'ala; — to cause to, ku-ng'arisa.",
+          "pronunciation": "ku-ng'ala",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Show, to",
+          "translation": "ku-onyeza, ku-onya; — light, ku-langaza.",
+          "pronunciation": "ku-onyeza",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Sleep, to",
+          "translation": "ku-lala, ku-tungura; — cause to, ku-lalisha, ku-tungurisha; [to doze], ku-tumingila.",
+          "pronunciation": "ku-lala",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Speak, to",
+          "translation": "ku-gamba, ku-gora, ku-teta; [to make a speech], ku-chila; [to begin a speech], ku-lunga; [to speak for], ku-tetela; [to speak against], ku-gora lagelage; [to speak properly], ku-gora kirani; [to speak loudly], ku-gora na ndigi.",
+          "pronunciation": "ku-gamba",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Spend, to",
+          "translation": "ku-tumila; — time, ku-sinda.",
+          "pronunciation": "ku-tumila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Spread, to [to tell out]",
+          "translation": "ku-gorera; [to make known], ku-manyisa; [to unfold], ku-kunjula; [to be spread out], ku-kunjuka; [to spread on the ground], ku-wala; [to spread out in the sun], ku-anika.",
+          "pronunciation": "ku-gorera",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Stand, to",
+          "translation": "ku-uka kimusi, ku-kalla kimusi; — cause to, ku-ika kimusi.",
+          "pronunciation": "ku-uka kimusi",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Steal, to",
+          "translation": "ku-iwa, ku-laka; — cause, to, ku-lakisa.",
+          "pronunciation": "ku-iwa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Stop, to [to block up]",
+          "translation": "ku-kinga, ku-ulaga; [to cease], ku-nyamala, ku-siga; [to cause to cease], ku-nyamalisha; [to hold], ku-manzira; [to stand still], ku-kalla kimusi.",
+          "pronunciation": "ku-kinga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Stout, to be",
+          "translation": "ku-banda; — cause to, ku-bandisa.",
+          "pronunciation": "ku-banda",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Strangle, to",
+          "translation": "ku-tswaia.",
+          "pronunciation": "ku-tswaia.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Swear, to",
+          "translation": "ku-gema; when a man swears he says, a bas; — cause, to, ku-gemesha.",
+          "pronunciation": "ku-gema",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Sweat, to",
+          "translation": "ku-rugudia; — cause to, ku-rugudisa.",
+          "pronunciation": "ku-rugudia",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Take, to",
+          "translation": "ku-usa; — across, ku-ambusa; a walk, ku-barita, ku-sela; — away, ku-funya; — by force, ku-soka, ku-ambula; — care, ku-lola, ku-manya; — care of, ku-ika; — down, ku-angula; — fire, ku-wata moto; — leave of, ku-laga; — off clothes, ku-rua; — out, ku-funya, ku-ega; — out of the pot, ku-ula; — revenge, ku-lwana sili; — to a person, ku-gensela, ku-twalila; — to a place, ku-gensa, ku-fisa.",
+          "pronunciation": "ku-usa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tarry, to",
+          "translation": "ku-muka; — cause to, ku-mukisa.",
+          "pronunciation": "ku-muka",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Taste, to",
+          "translation": "ku-toa; — cause to, ku-toesa.",
+          "pronunciation": "ku-toa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tear, to",
+          "translation": "ku-rashura, ku-zaia; [to be torn], ku-rashuka, ku-zaika; [to tear down a house], ku-fuchula; [a house to be torn down], ku-fuchuka.",
+          "pronunciation": "ku-rashura",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Thirst, to",
+          "translation": "ku-kaua; — cause to, ku-kauisa.",
+          "pronunciation": "ku-kaua",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tie, to",
+          "translation": "ku-funga; — a knot, ku-findika.",
+          "pronunciation": "ku-funga",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tread, to",
+          "translation": "ku-latila; — into plaster, ku-rua.",
+          "pronunciation": "ku-latila",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tread, to well",
+          "translation": "ku-dea kirani; — badly, ku-dea lagelage.",
+          "pronunciation": "ku-dea kirani",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Tumble, to",
+          "translation": "ku-gwa; — cause, to, ku-gwisha.",
+          "pronunciation": "ku-gwa",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Unlawful, to be",
+          "translation": "ku-rigido; — to make, ku-rigida.",
+          "pronunciation": "ku-rigido",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Urinate, to",
+          "translation": "ku-kojela.",
+          "pronunciation": "ku-kojela.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Vomit, to",
+          "translation": "ku-kweza; — cause to, ku-kwezesha.",
+          "pronunciation": "ku-kweza",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Walk, to",
+          "translation": "ku-tembea, ku-genda na magulu; [to walk about], ku-maramara; [to take a walk], ku-sela, ku-barita; [to walk lame], ku-shogora.",
+          "pronunciation": "ku-tembea",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Warm, to",
+          "translation": "ku-patsisa moto, ku-buggisa, moto; — oneself, ku-bugga moto; — [to warm by sheltering], ku-rugudisa; [to be warm by sheltering], ku-rugudia.",
+          "pronunciation": "ku-patsisa moto",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Wash, to",
+          "translation": "ku-ogesha; — clothes, ku-fula; — oneself, ku-oga.",
+          "pronunciation": "ku-ogesha",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Watch, to",
+          "translation": "ku-linda; — for, ku-dafwarira, ku-lolila.",
+          "pronunciation": "ku-linda",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Water, to, a garden",
+          "translation": "ku-finga meji; — plants, ku-tuhila meji, ku-sukila meji; [to make water], ku-kojela.",
+          "pronunciation": "ku-finga meji",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "I have said everything (ideophonic intensifier)",
+          "translation": "Nagora go",
+          "pronunciation": "nagora go",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "I shall not love at all (negative intensifier)",
+          "translation": "Si-shaia ng'o",
+          "pronunciation": "si-shaia ng'o",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Continuity / Future enclitic -'ga: I am in the habit of doing it; I will hoe",
+          "translation": "Nanadea-'ga; Ni-lima-'ga",
+          "pronunciation": "nanadea-'ga; ni-lima-'ga",
+          "context": "Wray (1894, p. 75) Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Imperative enclitic -ima / -ma: bring it then; go then",
+          "translation": "Letema; Gendama",
+          "pronunciation": "letema; gendama",
+          "context": "Wray (1894, p. 75) Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Must (expressed by suti or hatta + subjunctive)",
+          "translation": "Suti / Hatta",
+          "pronunciation": "suti",
+          "context": "Wray (1894, p. 68) Auxiliary Verbs",
+          "audioFile": null
         }
       ]
     },
@@ -8263,6 +9383,69 @@
           "pronunciation": "a ka-le na ka-le",
           "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
           "audioFile": null
+        },
+        {
+          "english": "Fat, adj.",
+          "translation": "-rifu, ndifu, with nouns of the third class.",
+          "pronunciation": "-rifu",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Naked",
+          "translation": "tuu.",
+          "pronunciation": "tuu.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "It smells horridly (ideophonic intensifier)",
+          "translation": "Chanuka buu",
+          "pronunciation": "chanuka buu",
+          "context": "Wray (1894, p. 75) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Very red (ideophonic intensifier; lu may be repeated)",
+          "translation": "Mkundu lu",
+          "pronunciation": "mkundu lu",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Very black (ideophonic intensifier; pi/fi may be repeated)",
+          "translation": "Onyilu pi (or fi)",
+          "pronunciation": "onyilu pi (or fi)",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Very white (ideophonic intensifier; tse may be repeated)",
+          "translation": "Omnyangi tse",
+          "pronunciation": "omnyangi tse",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "It is very hard (ideophonic intensifier)",
+          "translation": "Chanakulile ku",
+          "pronunciation": "chanakulile ku",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "It is very fast (ideophonic intensifier)",
+          "translation": "Chamanga tuku",
+          "pronunciation": "chamanga tuku",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "It is very dry / very, very dry (ideophonic intensifier)",
+          "translation": "Chaoma ng'a / Chaoma ng'we ng'a",
+          "pronunciation": "chaoma ng'a",
+          "context": "Wray (1894, p. 76) Adverbial Enclitics",
+          "audioFile": null
         }
       ]
     },
@@ -8668,6 +9851,13 @@
           "translation": "lua, nyua",
           "pronunciation": "lua nyua",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ivory tusk sizes: 2 hands, 3.5 hands, 4 hands, 5–6 hands",
+          "translation": "Kibori, Tofwa, Tofwa shagangi, Isange",
+          "pronunciation": "kibori",
+          "context": "Wray (1894, p. 102) Ivory",
           "audioFile": null
         }
       ]
@@ -9620,6 +10810,62 @@
           "translation": "luma lwa p",
           "pronunciation": "lu-ma lwa p",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0",
+          "audioFile": null
+        },
+        {
+          "english": "Now [directly]",
+          "translation": "ilyēn, short for ilyli lyēn, ndam, ndakwēn; [to-day], lelo kwēn; [these days], a'ga matuku, aga mageri; [those days], 'galya matuku; [at this time], ii ngelo; [our days], mandu 'getu.",
+          "pronunciation": "ilyēn",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Then [afterwards]",
+          "translation": "nao, konyuma, nyuma yake, aho, ahoba; [after this], niko; [in those days], matuku 'galya; [at that time], ijua lyilya; \"then\" is often expressed by use of the -ka- tense [see Grammar, also condit. tenses].",
+          "pronunciation": "nao",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Time",
+          "translation": "ngelo, hawa, mbaza, luma, these refer more especially to present time; igeri, ituku, these refer more especially to past time [times], mageri, matuku; [sufficient time], ijua ni ibwaa; [hour], saa; [a long time], luma; [a long time ago], kalere.",
+          "pronunciation": "ngelo",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Time of the day",
+          "translation": "makeo, very early, the first crow of the cock; ikesho kiro, the second crow of the cock; ikesho, after the sun has appeared; msenya, day-time; msenya 'gati, midday; ijua ku-chunguluka, after twelve o'clock; hafuka, afternoon or evening; lumisimisi, about dusk; kiro, night; nyungu ku-kalla motoni, about nine o'clock [lit. the pot to be still on the fire]; wandu ku-tungura, ten to eleven [lit. the people to go to sleep]; haring'a za hambiri, twelve to two [lit. the first sleep]; haring'a za nyuma [lit. the last sleep], three to four. Times of the year [see season].",
+          "pronunciation": "makeo",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Greater rainy season (March, April, May)",
+          "translation": "Ishika (Mvula ya ishika)",
+          "pronunciation": "ishika (mvula ya ishika)",
+          "context": "Wray (1894, pp. 113, 116) Seasons",
+          "audioFile": null
+        },
+        {
+          "english": "Cold dry season (June, July, August, September; coldest months June–July = Mtsuo)",
+          "translation": "Kwalazi (Mtsuo)",
+          "pronunciation": "kwalazi (mtsuo)",
+          "context": "Wray (1894, p. 116) Seasons",
+          "audioFile": null
+        },
+        {
+          "english": "Hot and dry season (January and February)",
+          "translation": "Kaskazi",
+          "pronunciation": "kaskazi",
+          "context": "Wray (1894, p. 116) Seasons",
+          "audioFile": null
+        },
+        {
+          "english": "Lunar ten-day phases: first 10 days, second 10 days, last 10 days",
+          "translation": "Ikumi lya hambiri, Ikumi lya 'gati, Ikumi lya kizimu",
+          "pronunciation": "ikumi lya hambiri",
+          "context": "Wray (1894, p. 106) Moon",
           "audioFile": null
         }
       ]
@@ -16578,6 +17824,160 @@
           "translation": "Kidawida (Dabida), Kisagala (Sagalla), & Kisighau (Kasigau)",
           "pronunciation": "ki-da-wi-da / ki-sa-ga-la / ki-si-ghau",
           "context": "Rev. J. A. Wray (1894) 'An Elementary Introduction to the Taita Language' & Sir Harry H. Johnston (1919, Vol. I, pp. 82–93)",
+          "audioFile": null
+        },
+        {
+          "english": "Na-",
+          "translation": "prefix denoting subject, first person singular. -ende-, tense prefix denoting a continuous state. -lima, verb (minus the infinitive ku-), which denotes hoe.",
+          "pronunciation": "prefix denoting subject",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Kuhara",
+          "translation": "to be bitter, changes the -a into -are, as— > 'Gwa-na-har-are, &emsp; it is bitter.",
+          "pronunciation": "to be bitter",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "That one should have",
+          "translation": "or Why one should have, is expressed by inserting keja- between the pronominal prefix and the verb, followed by the word n'ini?— > U-keja-dea hung', n'ini? That you should have done thus, what is it? i. e. why should you have done thus?",
+          "pronunciation": "or why one should have",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ola",
+          "translation": "ati, atigo, atigoni, ado, all have pretty much the same meaning—look here, I say, etc., but in order to use them properly, nothing but frequent intercourse with the natives will suffice.",
+          "pronunciation": "ati",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Ima",
+          "translation": "or ma, is often suffixed to verbs in the imperative mood, as—",
+          "pronunciation": "or ma",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Mkundu lu",
+          "translation": "very red; the lu may be repeated any number of times according to the intensity of redness.",
+          "pronunciation": "very red",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Onyilu pi",
+          "translation": "very black; the pi or fi may be repeated any number of times according to the intensity of blackness.",
+          "pronunciation": "very black",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Omnyangi tse",
+          "translation": "very white; tse may be repeated any number of times according to the intensity of whiteness.",
+          "pronunciation": "very white",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Matter [affairs]",
+          "translation": "vilambo, uvoro, shuli; [what is the matter?] n'ini ao? [what is the matter with you?] uo na'ni; [what does it matter?], kwanawesini.",
+          "pronunciation": "vilambo",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Nakedness",
+          "translation": "utuu.",
+          "pronunciation": "utuu.",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "On",
+          "translation": "na lugulu, the case in -ni; [on the top of the table], mezani na lugulu; [on both sides], igasi zose mbili; [on all sides], igasi zose; [on foot], na magulu, kwa magulu; [on purpose], kwa kasidi, 'dali.",
+          "pronunciation": "na lugulu",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Prey",
+          "translation": "madiwo; [birds of prey], mowe, kite; lwigi, a small swift kite; mang'olo, a large black raven; sangangoju, eagle.",
+          "pronunciation": "madiwo",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Set",
+          "translation": "ku-ika; — a trap, ku-tega; [of the sun], ku-swa, ijua lyaswa, [the sun is set]; naswelo, the sun is set upon me; — in order, ku-ika kirani; — on fire, ku-kumba moto; — to fight, ku-lwanisha; — open a door, ku-ika mwazi; set up, ku-ika kimusi.",
+          "pronunciation": "ku-ika",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Some—others",
+          "translation": "wamoju—wamoju; [some one else's], -a mundu.",
+          "pronunciation": "wamoju—wamoju",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Throw to",
+          "translation": "ku-kumba; — about, ku-tagataga; — away, ku-taga; — down, ku-buka, ku-gwisha.",
+          "pronunciation": "ku-kumba",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Trunk, of a tree",
+          "translation": "kirimba; [— of a tree cut down], gogo.",
+          "pronunciation": "kirimba",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Whether — or",
+          "translation": "— ango — ango; [if], ngera, nda. Which? -hiyo, -iyo; uoiyo? which man? [see Grammar]. While is expressed by the use of the -ke- tense [see Grammar, condit. tenses].",
+          "pronunciation": "— ango — ango",
+          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Enclitic -ri (only / not very): not a very long time, only twice, only a little, only one",
+          "translation": "Kaleri, Kaileri, Kichacheri, Mojori",
+          "pronunciation": "kaleri",
+          "context": "Wray (1894, p. 74) Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Interrogative enclitic -ba: this?, men?, good?, are you hoeing?",
+          "translation": "Ichi-ba?, Wandu-ba?, Waloli-ba?, Walima-ba?",
+          "pronunciation": "ichi-ba?",
+          "context": "Wray (1894, p. 75) Enclitics",
+          "audioFile": null
+        },
+        {
+          "english": "Proclitic ke- (then why?): then why do you say so?",
+          "translation": "Ke-wa'gamba?",
+          "pronunciation": "ke-wa'gamba?",
+          "context": "Wray (1894, p. 75) Proclitics",
+          "audioFile": null
+        },
+        {
+          "english": "There he is / There they are / There it is (demonstrative s- prefix)",
+          "translation": "Suyu / Sawa / Su'gu / Sii / Si-chilya / Si-vilya",
+          "pronunciation": "suyu",
+          "context": "Wray (1894, p. 34) Demonstrative Pronouns",
+          "audioFile": null
+        },
+        {
+          "english": "A man having cattle (wesi = having/with)",
+          "translation": "Mdu wesi ng'ombe",
+          "pronunciation": "mdu wesi ng'ombe",
+          "context": "Wray (1894, p. 17) Adjectives",
           "audioFile": null
         }
       ]
@@ -23585,6 +24985,48 @@
           "translation": "malasa",
           "pronunciation": "ma-la-sa",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Taita war-cry (Now for it, men, strike to the heart!)",
+          "translation": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome",
+          "pronunciation": "mwasasi",
+          "context": "Wray (1894, p. 89) Cry",
+          "audioFile": null
+        },
+        {
+          "english": "Ancestral skulls deposited in caves after decomposition (skull-cave = ngomeni)",
+          "translation": "Ngoma (place: ngomeni)",
+          "pronunciation": "ngoma (place: ngomeni)",
+          "context": "Wray (1894, pp. 84, 118) Skull",
+          "audioFile": null
+        },
+        {
+          "english": "Stone cairn on Taita plains attributed to the Warwana tribe",
+          "translation": "Mfingiri",
+          "pronunciation": "mfingiri",
+          "context": "Wray (1894, p. 99) Heap",
+          "audioFile": null
+        },
+        {
+          "english": "Thunder without rain (attributed to inhabitants of heaven fighting)",
+          "translation": "Mturo",
+          "pronunciation": "mturo",
+          "context": "Wray (1894, p. 123) Thunder",
+          "audioFile": null
+        },
+        {
+          "english": "Maize (Indian corn) 8 growth stages: sprouting to fully ripe",
+          "translation": "Mabemba 'gafunya mguchu, 'gafuma, 'gadea kiala, 'gafahasa, 'ganyaza sombe, 'gafirihisa, 'galasa ndoo, 'gapuhura, 'gaoma",
+          "pronunciation": "mabemba 'gafunya mguchu",
+          "context": "Wray (1894, pp. 87–88) Corn",
+          "audioFile": null
+        },
+        {
+          "english": "Sorghum (Kaffir corn) 9 growth stages: heading to fully ripe",
+          "translation": "Mwemba 'gwauya sombe ya jigau, 'gwakwita kibala, 'gwadea machum, 'gwadea kivula, 'gwaela ngoma, 'gwakumba mbululu, 'gwaelesa, 'gwahechurusa, 'gwaoma",
+          "pronunciation": "mwemba 'gwauya sombe ya jigau",
+          "context": "Wray (1894, p. 88) Corn",
           "audioFile": null
         }
       ]

@@ -1,5 +1,5 @@
 // Dholuo Grammar Rules — Rebuilt from "A Handbook of the Kavirondo Language"
-// by the Fathers of St. Joseph's Society (Mill-Hill, London), 1920
+// by Some Fathers of St. Joseph's Society (Mill-Hill, London), 1920 (Dedication 1896–1921)
 // ============================================================
 
 export interface GrammarSuggestion {
@@ -16,43 +16,45 @@ export interface GrammarSuggestion {
 
 export const ALPHABET = {
     consonants: [
-        { letter: 'b', pronunciation: 'as in bell', example: 'Bam: to be crooked' },
-        { letter: 'ch', pronunciation: 'as Ch in Kiswahili', example: 'Chak: milk' },
-        { letter: 'd', pronunciation: 'as in deed', example: 'Dol: Colobus monkey' },
-        { letter: 'dh', pronunciation: 'as in "though"', example: 'Dhiyo: to go' },
+        { letter: 'b', pronunciation: 'as in bell', example: 'Bam: to be crooked. Tobo: to speak definitely' },
+        { letter: 'ch', pronunciation: 'as Ch in Kiswahili (church)', example: 'Chak: milk. Wacho: to speak' },
+        { letter: 'd', pronunciation: 'as in deed', example: 'Dol: Colobus monkey. Tedo: to cook' },
+        { letter: 'dh', pronunciation: 'as in "though"', example: 'Dhiyo: to go. Puodho: garden' },
         { letter: 'f', pronunciation: 'as in food', example: 'Fuwo: to be foolish' },
-        { letter: 'g', pronunciation: 'as in gab', example: 'Gamo: to reach over' },
+        { letter: 'g', pronunciation: 'as in gab (always hard, never as in George)', example: 'Gamo: to reach over. Kago: to split. Gem (pronounce game)' },
         { letter: 'h', pronunciation: 'as in hat', example: 'Hato: to cut deeply' },
-        { letter: 'j', pronunciation: 'as in Kiswahili', example: 'Jaro: to despise' },
-        { letter: 'k', pronunciation: 'as in keen', example: 'Kelo: to bring' },
-        { letter: 'l', pronunciation: 'as in lid', example: 'Lamo: to worship, adore' },
-        { letter: 'm', pronunciation: 'as in man', example: 'Min: mother' },
-        { letter: 'n', pronunciation: 'as in nag', example: 'Nego: to kill' },
-        { letter: 'p', pronunciation: 'as in pen', example: 'Piny: country' },
-        { letter: 'r', pronunciation: 'as in rat', example: 'Ramo: to hurt' },
-        { letter: 's', pronunciation: 'as in sing', example: 'Sara: fishbone' },
-        { letter: 't', pronunciation: 'as in tell', example: 'Tado: roof' },
-        { letter: 'th', pronunciation: 'as in thatch', example: 'Thiedho: to forge' }
+        { letter: 'j', pronunciation: 'as in Kiswahili', example: 'Jana. Jaro: to despise' },
+        { letter: 'k', pronunciation: 'as in keen', example: 'Kelo: to bring. Kek: a fishscreen' },
+        { letter: 'l', pronunciation: 'as in lid', example: 'Lamo: to worship, adore. Lal: to be lost' },
+        { letter: 'm', pronunciation: 'as in man', example: 'Min: mother. Limo: to visit' },
+        { letter: 'n', pronunciation: 'as in nag', example: 'Nego: to kill. Neno: to see' },
+        { letter: 'p', pronunciation: 'as in pen', example: 'Piny: country. Top: to be rotten' },
+        { letter: 'r', pronunciation: 'as in rat', example: 'Ramo: to hurt. Gwaro: to scratch' },
+        { letter: 's', pronunciation: 'as in sing', example: 'Sara: fishbone. Moso: to greet' },
+        { letter: 't', pronunciation: 'as in tell', example: 'Tado: roof. Rito: to watch' },
+        { letter: 'th', pronunciation: 'as in thatch', example: 'Thedho: to forge. Thieth: a cure' }
     ],
     special_consonants: [
         { letter: 'mb', pronunciation: 'One sound at word start', example: 'Mbiru: a bird' },
-        { letter: 'nd', pronunciation: 'One sound at word start', example: 'Ndawa: tobacco' },
-        { letter: 'ng', pronunciation: 'Double sound as in "finger"', example: 'Ngege: carp' },
-        { letter: "ng'", pronunciation: 'Nasal as "ng" in "song"', example: "Ng'owo: a figtree" },
-        { letter: 'ny', pronunciation: 'One sound', example: 'Nyako: girl' }
+        { letter: 'nd', pronunciation: 'One sound at word start', example: 'Ndawa: tobacco. Ndemo: tweezers' },
+        { letter: 'ng', pronunciation: 'Double sound as in "finger"', example: 'Ngege: carp. Ngoro: cowardice' },
+        { letter: "ng'", pronunciation: 'Nasal as "ng" in "song"', example: "Ng'owo: a figtree. Bang': after, behind" },
+        { letter: 'ny', pronunciation: 'One sound (as French gn in Règne)', example: 'Nyako: girl. Piny: country' }
     ],
     vowels: [
-        { letter: 'a', pronunciation: 'as in "father"', example: 'Mako: to hold' },
-        { letter: 'e', pronunciation: 'as "a" in "lake"', example: 'Lemo: to pray' },
-        { letter: 'i', pronunciation: 'as in "police"', example: 'Limo: to visit' },
-        { letter: 'o', pronunciation: 'as "oa" in "coach"', example: 'Moso: to greet' },
-        { letter: 'u', pronunciation: 'as in "bull"', example: 'Bur: a hole' }
+        { letter: 'a', pronunciation: 'as in "father" (long) / as in "fat" (short)', example: 'Mako: to hold. Kal: wimbi' },
+        { letter: 'e', pronunciation: 'as "a" in "lake" / as in "hen" / as French "è" in "père"', example: 'Lemo: to pray. Lendo: to clean. Ler: to be clean' },
+        { letter: 'i', pronunciation: 'as in "police" / as in "tin" / intermediate between e and i (Note I)', example: 'Limo: to visit. Lith lwedo: finger. Matin: small' },
+        { letter: 'o', pronunciation: 'as "oa" in "coach" / as in "song" / as "aw" in "law"', example: 'Moso: to greet. Kwongo: to begin. Loko: to change' },
+        { letter: 'u', pronunciation: 'as in "bull" / intermediate between u and o (Note I)', example: 'Bur: a hole. Lur: to be barren' },
+        { letter: 'y', pronunciation: 'semi-vowel: vowel before consonant, consonant before vowel (Note II)', example: 'Yweyo: to sweep. Yako: to rob' },
+        { letter: 'w', pronunciation: 'semi-vowel: vowel after consonant, consonant before vowel (Note III)', example: 'Yweyo: to breathe. Wacho: to speak' }
     ],
 };
 
 // ============================================================
 // POSSESSIVE PRONOUNS
-// From the Handbook, Chapter I, Paragraph 12 & Chapter II
+// From the Handbook, Chapter I, Paragraph 12 & Chapter III
 // Two suffix systems
 // ============================================================
 
@@ -74,9 +76,10 @@ export const POSSESSIVE_SUFFIXES_EXTENDED = [
     { suffix: 'gi', person: 'their', description: '(their)' }
 ];
 
-// Irregular possessives from the Handbook pp. 27-29
+// Irregular possessives from the Handbook pp. 25-30
 export const IRREGULAR_POSSESSIVES: { [key: string]: { [suffix: string]: string } } = {
-    'law': { 'a': 'lawa', 'i': 'lawi', 'e': 'lawe', 'wa': 'lawa', 'u': 'lawu', 'gi': 'lawgi' },
+    'ot': { 'a': 'oda', 'i': 'odi', 'e': 'ode', 'wa': 'odwa', 'u': 'odu', 'gi': 'odgi' },
+    'law': { 'a': 'lawa', 'i': 'lawi', 'e': 'lawe', 'wa': 'lawwa', 'u': 'lawu', 'gi': 'lawgi' },
     'pi': { 'a': 'piga', 'i': 'pigi', 'e': 'pige', 'wa': 'pigwa', 'u': 'pigu', 'gi': 'piggi' },
     'kwer': { 'a': 'kweya', 'i': 'kweyi', 'e': 'kweye', 'wa': 'kwerwa', 'u': 'kweru', 'gi': 'kwergi' },
     'wer': { 'a': 'wenda', 'i': 'wendi', 'e': 'wende', 'wa': 'wendwa', 'u': 'wendu', 'gi': 'wendgi' },
@@ -87,27 +90,39 @@ export const IRREGULAR_POSSESSIVES: { [key: string]: { [suffix: string]: string 
     'diel': { 'a': 'dienda', 'i': 'diendi', 'e': 'diende', 'wa': 'diekwa', 'u': 'dieku', 'gi': 'diekgi' },
     'gweno': { 'a': 'gwenda', 'i': 'gwendi', 'e': 'gwende', 'wa': 'gwendwa', 'u': 'gwendu', 'gi': 'gwendgi' },
     'chi': { 'a': 'chiega', 'i': 'chiegi', 'e': 'chiege', 'wa': 'chiewa', 'u': 'chieu', 'gi': 'chiegi' },
-    'wuod': { 'a': 'wuoda', 'i': 'wuodi', 'e': 'wuode', 'wa': 'wuodwa', 'u': 'wuodu', 'gi': 'wuodgi' },
-    'wuoyi': { 'a': 'wuoda', 'i': 'wuodi', 'e': 'wuode', 'wa': 'wuodwa', 'u': 'wuodu', 'gi': 'wuodgi' },
+    'dhako': { 'a': 'chiega', 'i': 'chiegi', 'e': 'chiege', 'wa': 'chiegwa', 'u': 'chiegu', 'gi': 'chieggi' },
+    'chwo': { 'a': 'chwora', 'i': 'chwori', 'e': 'chwore', 'wa': 'chworwa', 'u': 'chworu', 'gi': 'chworgi' },
+    'nyako': { 'a': 'nyara', 'i': 'nyari', 'e': 'nyare', 'wa': 'nyarwa', 'u': 'nyaru', 'gi': 'nyargi' },
+    'wuod': { 'a': 'woda', 'i': 'wodi', 'e': 'wode', 'wa': 'wodwa', 'u': 'wodu', 'gi': 'wodgi' },
+    'wuoyi': { 'a': 'woda', 'i': 'wodi', 'e': 'wode', 'wa': 'wodwa', 'u': 'wodu', 'gi': 'wodgi' },
     'dayo': { 'a': 'dana', 'i': 'dani', 'e': 'dane', 'wa': 'dayowa', 'u': 'dayou', 'gi': 'dayogi' },
-    'won': { 'a': 'wuora', 'i': 'wuoru', 'e': 'wuon', 'wa': 'wuonwa', 'u': 'wuonu', 'gi': 'wuongi' },
-    'min': { 'a': 'mera', 'i': 'meru', 'e': 'min', 'wa': 'minwa', 'u': 'minu', 'gi': 'mingi' },
+    'kwar': { 'a': 'kwara', 'i': 'kwari', 'e': 'kware', 'wa': 'kwarwa', 'u': 'kwaru', 'gi': 'kwargi' },
+    'won': { 'a': 'wora', 'i': 'woru', 'e': 'won mare', 'wa': 'wonwa / worwa', 'u': 'wonu', 'gi': 'wongi / worgi' },
+    'min': { 'a': 'mama', 'i': 'meru', 'e': 'min mare', 'wa': 'minwa', 'u': 'minu', 'gi': 'mingi' },
+    'omin': { 'a': 'omera', 'i': 'omeru', 'e': 'omin mare', 'wa': 'ominwa', 'u': 'ominu', 'gi': 'omingi' },
+    'nyamin': { 'a': 'nyamera', 'i': 'nyameru', 'e': 'nyamin mare', 'wa': 'nyaminwa', 'u': 'nyaminu', 'gi': 'nyamingi' },
+    'owadwa': { 'a': 'owadwa', 'i': 'owadu', 'e': 'owadigi', 'wa': 'owadwa', 'u': 'owadu', 'gi': 'owadigi' },
     'nyathi': { 'a': 'nyathina', 'i': 'nyathini', 'e': 'nyathine', 'wa': 'nyathiwa', 'u': 'nyathiu', 'gi': 'nyathigi' },
+    'ringruok': { 'a': 'ringra', 'i': 'ringri', 'e': 'ringre', 'wa': 'ringrwa', 'u': 'ringru', 'gi': 'ringrgi' },
+    'teko': { 'a': 'tekra / tekona', 'i': 'tekri / tekoni', 'e': 'tekre / tekone', 'wa': 'tekrwa / tekowa', 'u': 'tekru / tekou', 'gi': 'tekrgi / tekogi' },
+    'mier': { 'a': 'mieya / miecha', 'i': 'mieyi / miechi', 'e': 'mieye / mieche', 'wa': 'mieywa / miechwa', 'u': 'mieyu / miechu', 'gi': 'mieygi / miechgi' },
+    'gi': { 'a': 'gira', 'i': 'giri', 'e': 'gire', 'wa': 'girwa', 'u': 'giru', 'gi': 'girgi' },
     "ng'ato": { 'a': "ng'ata", 'i': "ng'ati", 'e': "ng'ate", 'wa': "ng'atwa", 'u': "ng'atu", 'gi': "ng'atgi" },
 };
 
-// Construct Possessive Rules from the Handbook, pp. 13-16
+// Construct Possessive Rules from the Handbook, pp. 13-17
 export const CONSTRUCT_POSSESSIVE_RULES = [
-    { pattern: /la$/, replacement: 'nd', example: 'Pala → Pand (knife of)', rule: 'Words ending in "l" + vowel → nd' },
-    { pattern: /lo$/, replacement: 'nd', example: 'Obwolo → Obwond (mushroom of)', rule: 'Words ending in "l" + vowel → nd' },
-    { pattern: /yo$/, replacement: 'ch', example: 'Apwoyo → Apwoch (rabbit of)', rule: 'Words ending in vowel + y + vowel → ch' },
-    { pattern: /dho$/, replacement: 'thi', example: 'Puodho → Puothi (garden of)', rule: 'Words ending in "dh" → th' },
-    { pattern: /do$/, replacement: 't', example: 'Tado → Tat (roof of)', rule: 'Words ending in "d" → t' },
-    { pattern: /mo$/, replacement: 'mb', example: 'Remo → Remb (blood of)', rule: 'Words ending in "m" + vowel → mb' },
-    { pattern: /wa$/, replacement: 'p', example: 'Ndawa → Ndap (tobacco of)', rule: 'Words ending in "w" → p' },
-    { pattern: /k$/, replacement: 'g', example: 'Lok → Log (handle of)', rule: 'Words ending in "k" → g' },
-    { pattern: /ga$/, replacement: 'k', example: 'Puga → Puk (gourd of)', rule: 'Words ending in "g" + vowel → k' },
-    { pattern: /ch$/, replacement: '', example: 'Kwach → Kwa (leopard of)', rule: 'Words ending in "ch" drop "ch"' }
+    { pattern: /la$/, replacement: 'nd', example: 'Pala → Pand (knife of); Sigana → Sigandi nyako (story of the girl)', rule: 'Words ending in "l" or "n" + vowel → nd (except Agulu, Abila, Agola, Obwolo, Ndalo → ch)' },
+    { pattern: /l$/, replacement: 'nd', example: 'Bel → Bendi Kisii (the matama of Kisii); Tol → Tond atonga (rope of the basket)', rule: 'Words ending in "l" → nd' },
+    { pattern: /lo$/, replacement: 'ch', example: 'Agulu → Aguch nyako (cooking pot of the girl); Obwolo → Obwoch (mushroom of)', rule: 'Exception group (Agulu, Abila, Agola, Obwolo, Ndalo) → ch' },
+    { pattern: /yo$/, replacement: 'ch', example: 'Apwoyo → Apwoch (rabbit of); Chiro → Chich Mwa (market of the foreigners)', rule: 'Words ending in r or vowel + y + vowel → ch' },
+    { pattern: /dho$/, replacement: 'thi', example: 'Puodho → Puothi bel (garden of millet)', rule: 'Words ending in "dh" → th' },
+    { pattern: /do$/, replacement: 't', example: 'Tado → Tat ot (roof of the house); Ot → Od Okelo (house of Okelo)', rule: 'Words ending in "d" → t and "t" → d' },
+    { pattern: /mo$/, replacement: 'mb', example: 'Remo → Remb (blood of); Olemo → Olemb (fruit of)', rule: 'Words ending in "m" + vowel → mb' },
+    { pattern: /wa$/, replacement: 'p', example: 'Ndawa → Ndap (tobacco of); Bwo → Bop ot (shelf of the house)', rule: 'Words ending in "w" or "b" → p' },
+    { pattern: /k$/, replacement: 'g', example: 'Lok → Log le (handle of the axe); Guok → Guog (dog of)', rule: 'Words ending in "k" → g' },
+    { pattern: /ga$/, replacement: 'k', example: 'Puga → Puk (gourd of); Dago → Dag (pot of)', rule: 'Words ending in "g" + vowel → k or g' },
+    { pattern: /ch$/, replacement: '', example: 'Kwach → Kwa (leopard of); Rech → Rej nam (fish of the lake)', rule: 'Words ending in "ch" drop "ch" or change to "j"' }
 ];
 
 // ============================================================
@@ -119,28 +134,30 @@ export const DEMONSTRATIVES = [
     { suffix: 'no', meaning: 'that (far)', description: 'Adjective suffix for distant singular', example: "Ng'atno = that person" },
     { suffix: 'gi', meaning: 'these (near)', description: 'Adjective suffix for nearby plural', example: 'Jogi = these people' },
     { suffix: 'go', meaning: 'those (far)', description: 'Adjective suffix for distant plural', example: 'Jogo = those people' },
-    { suffix: 'cha', meaning: 'that over yonder', description: 'Points to something far away', example: 'Yath cha = that tree over yonder' }
+    { suffix: 'cha', meaning: 'that over yonder', description: 'Points to something far away (pl. -ka)', example: 'Yath cha = that tree over yonder' }
 ];
 
 export const DEMONSTRATIVE_SUBSTANTIVES = [
     { luo: 'Ma / Mani', english: 'this (thing)' },
     { luo: 'Magi', english: 'these (things)' },
-    { luo: 'Macha / Machacha', english: 'that over yonder' },
+    { luo: 'Mano / Mago', english: 'that / those (things)' },
+    { luo: 'Macha / Machacha (pl. Maka)', english: 'that / those over yonder' },
     { luo: 'Jali / Jal', english: 'this man' },
     { luo: 'Jalo', english: 'that man' },
-    { luo: 'Joka', english: 'those men over there' }
+    { luo: 'Joka', english: 'those men over there' },
+    { luo: 'Nyieni / Nyieno / Nyiecha', english: 'this / that / yonder young man' }
 ];
 
 export const PLACE_DEMONSTRATIVES = [
-    { luo: 'Ka', english: 'Here' },
+    { luo: 'Ka / Kaeni', english: 'Here' },
     { luo: 'Ku', english: 'Here (slightly away)' },
     { luo: 'Cha', english: 'There, yonder' },
     { luo: 'Kucha / Kacha', english: 'There, yonder' },
-    { luo: 'Kanye / Kune / Kure / Ere', english: 'Where?' },
+    { luo: 'Kanye / Kune / Kure / Ere (pl. Eke)', english: 'Where?' },
     { luo: 'Kanyo / Kuno / Kuro / Eri', english: 'There (answer)' },
-    { luo: 'Koni', english: 'This side' },
+    { luo: 'Koni / Konni', english: 'This side' },
     { luo: 'Kono', english: 'That side' },
-    { luo: 'Kocha', english: 'On the other side' }
+    { luo: 'Kocha / Loka / Lokacha', english: 'On the other side' }
 ];
 
 // ============================================================
@@ -171,9 +188,9 @@ export const PERSONAL_PRONOUNS = {
 // From the Handbook, Chapter III, Paragraph 2
 // ============================================================
 export const REFLECTIVE_PRONOUNS = [
-    { luo: 'Awon', english: 'I myself' },
-    { luo: 'Iwon', english: 'Thou thyself' },
-    { luo: 'Owon', english: 'He/She himself/herself' },
+    { luo: 'Awuon (Awon)', english: 'I myself' },
+    { luo: 'Iwuon (Iwon)', english: 'Thou thyself' },
+    { luo: 'Owuon (Owon)', english: 'He/She himself/herself' },
     { luo: 'Wawegi', english: 'We ourselves' },
     { luo: 'Uwegi', english: 'You yourselves' },
     { luo: 'Giwegi', english: 'They themselves' }
@@ -200,43 +217,78 @@ export const PLURAL_PATTERNS = [
     { singular: 'kwesi', plural: 'kwesini', meaning: 'pipe → pipes', rule: 'Words ending in s + vowel → -ini' },
     { singular: 'dwasi', plural: 'dwesini', meaning: 'cow → cows', rule: 'Words ending in s + vowel → -ini' },
     { singular: 'pala', plural: 'pelini', meaning: 'knife → knives', rule: 'Regular with vowel change a→e' },
+    { singular: 'okwodo', plural: 'okwodini', meaning: 'tick → ticks', rule: 'Exception taking -ini' },
+    { singular: "olang'", plural: 'olengini', meaning: 'black ant → black ants', rule: 'Exception taking -ini with a→e' },
 
     // Rule III: Specific consonant endings
     { singular: 'kul', plural: 'kunde', meaning: 'kraal → kraals', rule: 'Words ending in l → -nde' },
     { singular: 'dwol', plural: 'dwonde', meaning: 'voice → voices', rule: 'Words ending in l → -nde' },
+    { singular: 'tol', plural: 'tonde', meaning: 'rope → ropes', rule: 'Words ending in l → -nde' },
+    { singular: 'bul', plural: 'bunde', meaning: 'drum → drums', rule: 'Words ending in l → -nde' },
     { singular: 'wich', plural: 'wiye', meaning: 'head → heads', rule: 'Words ending in ch → -ye' },
     { singular: 'kwach', plural: 'kweye', meaning: 'leopard → leopards', rule: 'Words ending in ch → -ye' },
+    { singular: 'tich', plural: 'tije', meaning: 'work → works', rule: 'Words ending in ch → -je' },
+    { singular: 'rech', plural: 'reje', meaning: 'fish → fishes', rule: 'Words ending in ch → -je' },
+    { singular: 'wach', plural: 'weche', meaning: 'word → words', rule: 'Words ending in ch → -che' },
     { singular: 'pien', plural: 'piende', meaning: 'hide → hides', rule: 'Words ending in n → -nde' },
     { singular: 'em', plural: 'embe', meaning: 'thigh → thighs', rule: 'Words ending in m → -mbe' },
+    { singular: 'kom', plural: 'kombe', meaning: 'chair → chairs', rule: 'Words ending in m → -mbe' },
     { singular: 'olemo', plural: 'olembe', meaning: 'fruit → fruits', rule: 'Words ending in m + vowel → -mbe' },
+    { singular: 'rombo', plural: 'rombe', meaning: 'sheep → sheep (pl.)', rule: 'Words ending in mbo → -mbe' },
     { singular: 'got', plural: 'gode', meaning: 'mountain → mountains', rule: 'Words ending in t → -de' },
     { singular: 'luth', plural: 'ludhe', meaning: 'stick → sticks', rule: 'Words ending in th → -dhe' },
+    { singular: 'yath', plural: 'yedhe', meaning: 'tree/medicine → trees', rule: 'Words ending in th → -dhe (a→e)' },
     { singular: 'lwedo', plural: 'lwete', meaning: 'hand → hands', rule: 'Words ending in do → -te' },
+    { singular: 'tielo', plural: 'tiende', meaning: 'foot/leg → feet/legs', rule: 'Words ending in lo → -nde' },
     { singular: 'puodho', plural: 'puothe', meaning: 'garden → gardens', rule: 'Words ending in dho → -the' },
-    { singular: "ong'er", plural: "ong'ech", meaning: 'monkey → monkeys', rule: 'Words ending in r → -che' },
-    { singular: 'bur', plural: 'buche', meaning: 'hole → holes', rule: 'Words ending in r → -che' },
+    { singular: "ong'er", plural: "ong'eche", meaning: 'monkey → monkeys', rule: 'Words ending in r → -che' },
+    { singular: 'bur', plural: 'buche', meaning: 'hole/ulcer → holes', rule: 'Words ending in r → -che' },
+    { singular: 'kwer', plural: 'kweche', meaning: 'hoe → hoes', rule: 'Words ending in r → -che' },
+    { singular: 'chiro', plural: 'chiche', meaning: 'market → markets', rule: 'Words ending in ro → -che' },
     { singular: 'dak', plural: 'dege', meaning: 'pot → pots', rule: 'Words ending in k → -ge' },
+    { singular: 'chogo', plural: 'choke', meaning: 'bone → bones', rule: 'Words ending in go → -ke' },
+    { singular: 'lak', plural: 'leke', meaning: 'tooth → teeth', rule: 'Words ending in k → -ke (a→e)' },
     { singular: 'apwoyo', plural: 'apwoche', meaning: 'rabbit → rabbits', rule: 'Words ending in y + vowel → -che' },
     { singular: 'kiew', plural: 'kiepe', meaning: 'furrow → furrows', rule: 'Words ending in w → -pe' },
+    { singular: 'jowi', plural: 'jope', meaning: 'buffalo → buffaloes', rule: 'Words ending in wi → -pe' },
+    { singular: 'pap', plural: 'pepe', meaning: 'field → fields', rule: 'Words ending in p → -pe (a→e)' },
     { singular: 'piny', plural: 'pinje', meaning: 'country → countries', rule: 'Words ending in ny → -nje' },
 
-    // Irregular plurals — Paragraph 10
-    { singular: 'dhano', plural: 'jo', meaning: 'man → people', rule: 'Irregular' },
+    // Double Plurals — Paragraph 5 (p. 10)
+    { singular: 'law', plural: 'lewini / lepe', meaning: 'cloth → cloths', rule: 'Double plural (-ini or -pe)' },
+    { singular: 'puga', plural: 'pugini / puke', meaning: 'gourd → gourds', rule: 'Double plural (-ini or -ke)' },
+    { singular: 'kodhi', plural: 'kodhini / kothe', meaning: 'seed → seeds', rule: 'Double plural (-ini or -the)' },
+    { singular: 'tado', plural: 'tedini / tete', meaning: 'roof → roofs', rule: 'Double plural (-ini or -te)' },
+    { singular: 'higa', plural: 'higini / hike', meaning: 'year → years', rule: 'Double plural (-ini or -ke)' },
+    { singular: 'dago', plural: 'degini / deke', meaning: 'large pot → pots', rule: 'Double plural (-ini or -ke)' },
+    { singular: 'rawo', plural: 'rewini / rewe / repe', meaning: 'hippo → hippos', rule: 'Triple plural (-ini, -we, or -pe)' },
+
+    // Irregular plurals — Paragraph 10 (pp. 11-12)
+    { singular: 'dhano', plural: 'ji / jo', meaning: 'human/man → people', rule: 'Irregular' },
     { singular: 'dhako', plural: 'mon', meaning: 'woman → women', rule: 'Irregular' },
+    { singular: 'dichuo', plural: 'chwo', meaning: 'man → men', rule: 'Irregular' },
     { singular: 'woyi', plural: 'yawoyi', meaning: 'boy → boys', rule: 'Irregular' },
     { singular: 'nyako', plural: 'nyiri', meaning: 'girl → girls', rule: 'Irregular' },
+    { singular: 'nyathi', plural: 'nyithindo', meaning: 'child → children', rule: 'Irregular' },
     { singular: "ng'ato", plural: 'ji', meaning: 'person → people', rule: 'Irregular' },
     { singular: "dhiang'", plural: 'dhok', meaning: 'cow → cattle', rule: 'Irregular' },
     { singular: 'gweno', plural: 'gwen', meaning: 'fowl → fowls', rule: 'Irregular' },
     { singular: 'ot', plural: 'udi', meaning: 'house → houses', rule: 'Irregular' },
     { singular: 'dala', plural: 'mier', meaning: 'village → villages', rule: 'Irregular' },
-    { singular: 'diel', plural: 'diek', meaning: 'goat → goats', rule: 'Irregular' },
+    { singular: 'diel', plural: 'diek / diegi', meaning: 'goat → goats', rule: 'Irregular' },
     { singular: 'guok', plural: 'guogi', meaning: 'dog → dogs', rule: 'Irregular' },
     { singular: "chieng'", plural: 'ndalo', meaning: 'day → days/times', rule: 'Irregular' },
     { singular: 'yo', plural: 'yore', meaning: 'road → roads', rule: 'Irregular' },
     { singular: 'sulwe', plural: 'sulini', meaning: 'star → stars', rule: 'Irregular' },
     { singular: 'ruoth', plural: 'ruodhi', meaning: 'chief → chiefs', rule: 'Irregular' },
-    { singular: 'ondiek', plural: 'ondiegi', meaning: 'hyena → hyenas', rule: 'Irregular' }
+    { singular: 'ondiek', plural: 'ondiegi', meaning: 'hyena → hyenas', rule: 'Irregular' },
+    { singular: 'wer', plural: 'wende', meaning: 'song → songs', rule: 'Irregular' },
+    { singular: 'yie', plural: 'yiedhi', meaning: 'canoe/boat → boats', rule: 'Irregular' },
+    { singular: 'pi', plural: 'pige', meaning: 'water → waters', rule: 'Irregular' },
+    { singular: 'gi', plural: 'gik', meaning: 'thing → things', rule: 'Irregular' },
+    { singular: 'lep', plural: 'lewe', meaning: 'tongue → tongues', rule: 'Irregular' },
+    { singular: 'it', plural: 'ite', meaning: 'ear → ears', rule: 'Irregular' },
+    { singular: "wang'", plural: 'wenge', meaning: 'eye → eyes', rule: 'Irregular' }
 ];
 
 // ============================================================
@@ -262,13 +314,14 @@ export const CARDINAL_NUMBERS = [
     { number: 3, luo: 'Adek', english: 'Three' },
     { number: 4, luo: "Ang'wen", english: 'Four' },
     { number: 5, luo: 'Abich', english: 'Five' },
-    { number: 6, luo: 'Auchiel', english: 'Six (abich g\'achiel)' },
-    { number: 7, luo: 'Abiriyo', english: 'Seven (abich g\'ariyo)' },
-    { number: 8, luo: 'Aboro', english: 'Eight (abich g\'adek)' },
-    { number: 9, luo: 'Ongachiel', english: 'Nine (one missing from ten)' },
+    { number: 6, luo: 'Auchiel', english: "Six (abich g'achiel)" },
+    { number: 7, luo: 'Abiriyo', english: "Seven (abich g'ariyo)" },
+    { number: 8, luo: 'Aboro', english: "Eight (abich g'adek)" },
+    { number: 9, luo: 'Ongachiel / Ochiko', english: 'Nine (one missing from ten)' },
     { number: 10, luo: 'Apar', english: 'Ten' },
     { number: 11, luo: "Apar g'achiel", english: 'Eleven' },
     { number: 12, luo: "Apar g'ariyo", english: 'Twelve' },
+    { number: 19, luo: "Apar gi ongachiel / Apar g'ochiko", english: 'Nineteen' },
     { number: 20, luo: 'Piero ariyo', english: 'Twenty (tens × two)' },
     { number: 30, luo: 'Piero adek', english: 'Thirty (tens × three)' },
     { number: 100, luo: 'Piero apar / Mia', english: 'Hundred' }
@@ -289,7 +342,7 @@ export const QUESTION_WORDS = [
     { luo: "Karang'o", english: 'When?', usage: "Ibiro karang'o? — When did you come?" },
     { luo: 'Kanye', english: 'Where?', usage: 'Idak kanye? — Where do you live?' },
     { luo: "Marang'o / N'ang'o", english: 'Why?', usage: "Marang'o ibiro ka? — Why do you come here?" },
-    { luo: 'Manade', english: 'Of what sort?', usage: 'Ichamo chiamo manade? — What sort of food do you eat?' }
+    { luo: 'Manade', english: 'Of what sort?', usage: 'Ichamo chiemo manade? — What sort of food do you eat?' }
 ];
 
 // ============================================================
@@ -297,13 +350,13 @@ export const QUESTION_WORDS = [
 // From the Handbook, Chapter V, Paragraph 2
 // ============================================================
 export const TIME_EXPRESSIONS = [
-    { luo: 'Kawono', english: 'Now' },
+    { luo: 'Kawono', english: 'Now / Today' },
     { luo: 'Nende / Tinende / Tinde', english: 'Today' },
     { luo: 'Nyoro', english: 'Yesterday' },
     { luo: 'Kiny', english: 'Tomorrow' },
-    { luo: 'Orucha', english: 'Day after tomorrow' },
+    { luo: 'Orucha / Oru', english: 'Day after tomorrow' },
     { luo: 'Nyocha', english: 'Day before yesterday' },
-    { luo: 'Koro / Koro ka', english: 'Just now' },
+    { luo: 'Koro / Koro ka / Koro eka', english: 'Just now' },
     { luo: 'Podi', english: 'Still / Yet' },
     { luo: 'Chon', english: 'Early / Long ago' },
     { luo: 'Yande', english: 'Formerly / Before' },
@@ -313,6 +366,8 @@ export const TIME_EXPRESSIONS = [
     { luo: 'Odiewor', english: 'At midnight' },
     { luo: "Odiechieng'", english: 'In the daytime' },
     { luo: 'Pile / Pilepile', english: 'Daily / Constantly' },
+    { luo: 'Manyakanende', english: 'Continually / Constantly' },
+    { luo: "Aming'a", english: 'For a long time / Incessantly' },
     { luo: "Bang'e", english: 'Afterwards / Later on' }
 ];
 
@@ -335,14 +390,15 @@ export const TIME_PHRASES = [
 // From the Handbook, Chapter IX
 // ============================================================
 export const GREETINGS = [
-    { luo: 'Misawa!', english: 'Peace! / Hello!', response: 'Misawa ahinya!' },
+    { luo: 'Misawa!', english: 'Peace! / Hello!', response: 'Misawa ahinya! / Misawa ruok!' },
+    { luo: 'Oyawore!', english: 'Good morning!', response: 'Oyawore ahinya!' },
     { luo: 'Okwe!', english: 'Peace!', response: 'Okwe ruok!' },
     { luo: 'Inindo nade?', english: 'How did you sleep?', response: 'Anindo maber' },
     { luo: 'Iriyo nade?', english: 'How are you? (during the day)', response: 'Ariyo maber' },
-    { luo: 'Ingima?', english: 'How are you? (to a woman friend)', response: 'Angima' },
+    { luo: 'Ingima?', english: 'How are you? (to a friend)', response: 'Angima, Omera' },
     { luo: 'Ringri ber?', english: 'How is your health?', response: 'Ringra ber' },
     { luo: 'Inindi', english: 'Goodbye / Sleep well', response: 'Inindi' },
-    { luo: 'Nyasaye riti', english: 'May God protect you', response: 'Erokamano' },
+    { luo: 'Nyasaye riti', english: 'May God protect you', response: 'Ero kamano' },
     { luo: 'Ero kamano', english: 'Thanks / Well done', response: 'Ero kamano' }
 ];
 
@@ -370,6 +426,7 @@ export const ADVERBS = {
         { luo: 'Marach', english: 'Badly / Bad' },
         { luo: 'Matek', english: 'Hard / Difficult' },
         { luo: 'Nono', english: 'Simply / In vain / Without reason' },
+        { luo: 'Mar ayiem', english: 'On purpose / Intentionally' },
         { luo: 'Ratiro', english: 'Publicly / Openly' },
         { luo: 'Arum', english: 'Together' },
         { luo: 'Kamano', english: 'So / Like that' }
@@ -397,9 +454,11 @@ export const INTERJECTIONS = [
     { luo: 'Ara!', english: 'All right (inwardly resenting)' },
     { luo: "Jong'!", english: 'Stop!' },
     { luo: 'Tho!', english: 'Alas! Ah!' },
-    { luo: 'Ero!', english: 'Hey! All right!' },
+    { luo: 'Ero!', english: 'Hey! Look out! All right!' },
     { luo: 'Ero kamano', english: 'Thanks / Well done' },
-    { luo: 'Nyire!', english: 'Stop that!' }
+    { luo: 'Nyire!', english: 'Stop that!' },
+    { luo: 'Tè! (Duto tè)', english: 'Completely finished (nothing left)!' },
+    { luo: 'Pep! (Duto pep)', english: 'To the very last one!' }
 ];
 
 // ============================================================
@@ -409,13 +468,13 @@ export const INTERJECTIONS = [
 export const PREFIXES = {
     'Ja': { meaning: 'Person who / Person from', example: 'Japuonj = teacher, Jatich = workman, Jagem = person from Gem' },
     'Jo': { meaning: 'People who / People from (plural of Ja)', example: 'Jopuonj = teachers, Jotich = workmen' },
-    'Ma': { meaning: 'Adjective marker / Which / That', example: 'Maber = good, Maduong\' = great, Matin = small' },
-    'Ra': { meaning: 'One who has / Instrument / Defect', example: 'Radhoho = leper, Ragwar = pitchfork, Rang\'ol = lame person' },
-    'Ro': { meaning: 'Plural of Ra-', example: 'Rodhohini = lepers' },
-    'Nya': { meaning: 'Diminutive (singular)', example: 'Nyaguok = puppy, Nyaruath = bull-calf' },
-    'Nyi': { meaning: 'Diminutive (plural)', example: 'Nyiguogi = puppies' },
-    'O': { meaning: '3rd person singular verb prefix', example: 'Obiro = he/she comes' },
-    'A': { meaning: '1st person singular verb prefix', example: 'Abiro = I come' },
+    'Ma': { meaning: 'Adjective marker / Which / That', example: "Maber = good, Maduong' = great, Matin = small" },
+    'Ra': { meaning: 'One who has / Instrument / Defect', example: "Radhoho = leper, Ragwar = pitchfork, Rang'ol = lame person, Rakuom = hunchback" },
+    'Ro': { meaning: 'Plural of Ra-', example: 'Rodhohini = lepers, Rokuombe = hunchbacks' },
+    'Nya': { meaning: 'Diminutive / Daughter of (singular)', example: 'Nyaguok = puppy, Nyaruath = bull-calf, Nyakisumo = woman from Kisumu' },
+    'Nyi': { meaning: 'Diminutive / Daughters of (plural)', example: 'Nyiguogi = puppies, Nyikisumo = women from Kisumu' },
+    'O': { meaning: '3rd person singular verb prefix / Male name prefix', example: 'Obiro = he/she comes; Otieno = born at night (m.)' },
+    'A': { meaning: '1st person singular verb prefix / Female name prefix', example: 'Abiro = I come; Atieno = born at night (f.)' },
     'I': { meaning: '2nd person singular verb prefix', example: 'Ibiro = you come' },
 };
 

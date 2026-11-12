@@ -300,7 +300,7 @@ export const LESSONS: Lesson[] = [
                 english: `${p.person} (extended)`,
                 hint: p.description,
             })),
-            { luo: 'Koma', english: 'My chair (Kom + a)', hint: 'Consonant ending → simple suffix' },
+            { luo: 'Komba / Kombena', english: 'My chair (Kom → Komba / Kombena)', hint: 'm → mb change or extended suffix (Handbook p. 25)' },
             { luo: 'Osiepna', english: 'My friend (Osiep + na)', hint: 'Ending in p → extended suffix' },
             { luo: 'Ludha', english: 'My stick (Luth → Ludh + a)', hint: 'th→dh change + simple suffix' },
             { luo: 'Remba', english: 'My blood (Remo → Remb + a)', hint: 'm+vowel→mb change + simple suffix' }
@@ -991,7 +991,7 @@ export const LESSONS: Lesson[] = [
             { luo: 'Reti, wang\' koth nochwe', english: 'Make haste, it will rain' },
             { luo: 'Aorani tut?', english: 'Is this river deep?' },
             { luo: "D'wanyal yoro?", english: 'Can we wade across?' },
-            { luo: "Nyang' sitiye?", english: 'Are there crocodiles?' }
+            { luo: "Nyang' nitiye?", english: 'Are there crocodiles?' }
         ],
         exercises: [
             { type: 'choice', question: '"Koth chwe" means...', options: ['It will rain', 'It is raining', 'It rained', 'Rain is good'], answer: 'It is raining' },
