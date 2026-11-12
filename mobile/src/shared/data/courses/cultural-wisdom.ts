@@ -44,7 +44,7 @@ export interface ProverbItem {
   literalTranslation: string;
   meaning: string;
   englishEquivalent?: string;
-  theme: 'unity' | 'patience' | 'wisdom' | 'hard-work' | 'humility' | 'family' | 'nature';
+  theme: 'unity' | 'patience' | 'wisdom' | 'hard-work' | 'humility' | 'family' | 'nature' | 'courage';
   sourceCitation: string;
 }
 
@@ -740,7 +740,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "indigenous": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
     "literalTranslation": "Warrior of the lineage, stand firm in heart, child of such-a-one, take courage in the clan!",
     "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 89 under \"Cry, a, kilio\"): the traditional Kisagala war-cry and alarm rallying the hillside lineages (mbari / kikuku / lukolo) to collective defense, paired with Wray's narrative idioms \"Ando kungi... nikotū\" (\"Wait a bit and you will hear...\", p. 59) and \"Angoije?\" (\"Is it not so?\", p. 59).",
-    "theme": "courage",
+    "theme": "unity",
     "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, pp. 59 & 89, Narrative Idioms & War-Cry)"
   },
   {
@@ -8368,7 +8368,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "indigenous": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
     "literalTranslation": "Warrior of the lineage, stand firm in heart, child of such-a-one, take courage in the clan!",
     "meaning": "Traditional Kisagala war-cry recorded by Rev. J. Alfred Wray (1894, p. 89 under 'Cry, a, kilio'), preserved alongside ancestral skull cave customs ('ngoma / ngomeni', p. 118), wayside stone cairns ('mfingiri', p. 99), road bird-omens ('ndege ya kwita / ndege ya kuuya', p. 108), and the 7-day post-partum naming seclusion ('ku-jora mwana', p. 84).",
-    "theme": "courage",
+    "theme": "unity",
     "sourceCitation": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language' (SPCK, London), pp. 84, 89, 99, 108, 118"
   },
   {
