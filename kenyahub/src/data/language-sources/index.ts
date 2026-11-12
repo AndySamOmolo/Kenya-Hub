@@ -173,7 +173,6 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     coverageNote: 'Integrated line-by-line into swahili.json, SWAHILI_GRAMMAR_SECTIONS, and SWAHILI_UNITS.',
   },
   {
-  {
     id: 'wray-taita-1894',
     title: 'An Elementary Introduction to the Taita Language, Eastern Equatorial Africa (Sagalla Dialect)',
     fileName: 'An Elementary Introduction To The Taita Language Wray 1894.md',
@@ -316,7 +315,6 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     ingestionStatus: 'integrated',
     coverageNote: '100% of the 1904 comparative Swahili, Kamba (Ulu & Nganyawa), and Kikuyu vocabularies, numerals, verb conjugations, and conversational phrases are integrated into the Kamba, Kikuyu, and Swahili dictionaries, courses, and grammar guides.',
   },
-  {
   {
     id: 'mcgregor-kikuyu-vocabulary-1904',
     title: 'English-Kikuyu Vocabulary (Compiled for the Use of the C.M.S. Missions in East Africa, SPCK London, 1904)',

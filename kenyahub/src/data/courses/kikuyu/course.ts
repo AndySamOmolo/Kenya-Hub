@@ -3692,7 +3692,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Kikuyu demonstrative or particle from Hémery (1903, Book pp. 8, 13–14) with its meaning:",
-            "correctAnswer: "Mundu oshio / Kendo keo / Ihiga reo: That man / thing / stone spoken of beforehand",
+            "correctAnswer": "Mundu oshio / Kendo keo / Ihiga reo: That man / thing / stone spoken of beforehand",
             "pairs": [
               {
                 "left": "Mundu oshio / Kendo keo / Ihiga reo",
@@ -3774,7 +3774,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each conversational Kikuyu sentence from Hémery's Phrase-Book (1903, pp. 78–85) with its English meaning:",
-            "correctAnswer: "We moona-ko?: What tribe do you belong to? (p. 78)",
+            "correctAnswer": "We moona-ko?: What tribe do you belong to? (p. 78)",
             "pairs": [
               {
                 "left": "We moona-ko?",
