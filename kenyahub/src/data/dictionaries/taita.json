@@ -2246,8 +2246,8 @@
         },
         {
           "english": "Hen",
-          "translation": "nguku ya wake; a laying",
-          "pronunciation": "ngu-ku ya wa-ke a la-ying",
+          "translation": "nguku ya wake; a laying hen, mgoma; a young hen, tago",
+          "pronunciation": "ngu-ku ya wa-ke; mgo-ma; ta-go",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
@@ -4443,10 +4443,10 @@
           "audioFile": null
         },
         {
-          "english": "Boil",
-          "translation": "tsumusi",
-          "pronunciation": "tsu-mu-si",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Banana",
+          "translation": "irugu; [plant], ndembo. Different kinds of bananas: kisukari, small sweet kind; ilalyi, very large long kind; mzuu, common eating kind; chiana, very fat kind; mrabalu, kind that looks ripe while still green; kigulugulu, small kind; ikono lya njovu, another large kind",
+          "pronunciation": "i-ru-gu; ndemb-o",
+          "context": "Rev. J. Alfred Wray (1894, p. 80) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -4570,30 +4570,30 @@
         },
         {
           "english": "Fruit",
-          "translation": "ishinga",
-          "pronunciation": "ish-ing-a",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ishinga. Different kinds of wild fruit found in Taita: ngawa, an acid fruit; ngorasha; ndasera; tswinea; ndembi; ikaju, tamarind; kilamba, baobab; ngoma, doom palm; ngolokolo; vikakyi",
+          "pronunciation": "i-shing-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 96 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Honey",
-          "translation": "uki; native honey consists of honey, beeswax",
-          "pronunciation": "u-ki",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "uki; native honey consists of honey, beeswax, and young bees: the honey, ulonzi; the wax, isungu; the young bees, mwana; the honey of a small stingless bee made under ground, mzata",
+          "pronunciation": "u-ki; u-lon-zi; i-sung-u; mwa-na; mza-ta",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Maize",
-          "translation": "ibemba",
-          "pronunciation": "i-bemb-a see cor",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ibemba (pl. mabemba)",
+          "pronunciation": "i-bem-ba",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 105 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Water",
-          "translation": "meji",
+          "translation": "meji; [fresh water], meji 'ga pepo; [warm water], meji 'ga moto",
           "pronunciation": "me-ji",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126 — Public Domain)",
           "audioFile": null
         },
         {
@@ -4759,9 +4759,9 @@
         },
         {
           "english": "Sugar-cane",
-          "translation": "mugwa",
-          "pronunciation": "mugwa",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "mugwa. Five kinds are grown in Taita: Mcharo, the largest kind; Mkonokono, the next largest; Nyamulambo, red kind; Nyakasoti, striped kind; Muizu, a black kind",
+          "pronunciation": "mug-wa",
+          "context": "Rev. J. Alfred Wray (1894, p. 121) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -4808,9 +4808,9 @@
         },
         {
           "english": "Corn, Indian",
-          "translation": "ibemba, mabemba",
-          "pronunciation": "i-bemb-a ma-bemb-a",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ibemba, mabemba; [Indian corn in its various stages of growth]: Mabemba 'gafunya mguchu, it sprouts; 'gafuma, the blade appears; 'gadea kiala; 'gafahasa; 'ganyaza sombe, the beard is dry; 'gafirihisa; 'galasa ndoo; 'gapuhura; 'gaoma, it is fully ripe",
+          "pronunciation": "i-bem-ba, ma-bem-ba",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 87–88 — Public Domain)",
           "audioFile": null
         },
         {
@@ -4829,9 +4829,9 @@
         },
         {
           "english": "Potato, sweet",
-          "translation": "ikaji",
-          "pronunciation": "i-ka-ji",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "ikaji (pl. makaji). Different kinds found in Taita: Kipapa, white with cleft leaf; Munjisoka, red inside; Nyagali, small leaf; Kifumbe; Mserere; Marungura; Kisagai, large red kind; Kitojo, leaf of the potato; Murizandata, very dry eating",
+          "pronunciation": "i-ka-ji, ma-ka-ji",
+          "context": "Rev. J. Alfred Wray (1894, p. 111) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -4885,9 +4885,9 @@
         },
         {
           "english": "Bread, from Indian meal boiled",
-          "translation": "kinolo; from Sorghum grain, kinaburi",
-          "pronunciation": "ki-no-lo from kaffir corn ki-na-bu-ri",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "kinolo; from Kaffir corn [sorghum], kinaburi",
+          "pronunciation": "ki-no-lo; ki-na-bu-ri",
+          "context": "Rev. J. Alfred Wray (1894, p. 82) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -5053,9 +5053,9 @@
         },
         {
           "english": "Corn, Kaffir",
-          "translation": "mwemba. Mwemba in its various stages of growth :— Mwemba, 'gwauya sombe ya jigau, it hangs its head. &emsp;„ 'gwakwita kibala. &emsp;„ 'gwadea machum. &emsp;„ 'gwadea kivula. &emsp;„ 'gwaela ngoma. &emsp;„ 'gwakumba mbululu. &emsp;„ 'gwaelesa. &emsp;„ 'gwahechurusa. &emsp;„ 'gwaoma, it is fully ripe.",
-          "pronunciation": "mwemba. mwemba in its various stages of growth :— mwemba",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "mwemba. Mwemba in its various stages of growth: Mwemba 'gwauya sombe ya jigau, it hangs its head; 'gwakwita kibala; 'gwadea machum; 'gwadea kivula; 'gwaela ngoma; 'gwakumba mbululu; 'gwaelesa; 'gwahechurusa; 'gwaoma, it is fully ripe.",
+          "pronunciation": "mwemb-a",
+          "context": "Rev. J. Alfred Wray (1894, p. 88) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -5431,9 +5431,9 @@
         },
         {
           "english": "Dress",
-          "translation": "mavalo",
-          "pronunciation": "ma-va-lo",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mavalo. Different articles of a woman's dress: mshuru, a small front apron; kisorori, the regulation apron which is passed between the legs; kizema, the larger behind apron",
+          "pronunciation": "ma-va-lo; mshu-ru; ki-so-ro-ri; ki-ze-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
@@ -5956,9 +5956,9 @@
         },
         {
           "english": "Rot, to",
-          "translation": "ku-olesa, T",
-          "pronunciation": "ku o-le-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-olesa, T. V.; ku-ola, I. V.",
+          "pronunciation": "ku-o-le-sa; ku-o-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 115 — Public Domain)",
           "audioFile": null
         },
         {
@@ -6285,51 +6285,51 @@
         },
         {
           "english": "Come, to",
-          "translation": "ku-ja, imp",
-          "pronunciation": "ku-ja imp",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ja, imp. cho, pl. choni; imp. njuu, pl. njuuni",
+          "pronunciation": "ku-ja; cho, cho-ni; njuu, njuu-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 45, 86 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Drop, to",
-          "translation": "ku-tonya, I",
-          "pronunciation": "ku tony-a i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tonya, I. V.; ku-tonyesha, T. V.",
+          "pronunciation": "ku-tony-a; ku-to-nye-sha",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Open, to",
-          "translation": "ku-fundula",
-          "pronunciation": "ku fund-u-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fundula [lit. to unfasten], ku-rugula",
+          "pronunciation": "ku-fund-u-la, ku-ru-gu-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Pass, to",
-          "translation": "ku-isa, T",
-          "pronunciation": "ku i-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-isa, T. V.; ku-ita, I. V.",
+          "pronunciation": "ku-i-sa; ku-i-ta",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Play, to",
-          "translation": "ku-haka; [to play an instrument], ku-kwita gunda",
-          "pronunciation": "ku ha-ka",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-haka; [to play an instrument], ku-kwita gunda, etc.; ku-teteza, ku-bang'isa, ku-bang'a",
+          "pronunciation": "ku-ha-ka; ku-kwi-ta gund-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 111 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Rend, to",
-          "translation": "ku-rashura, T",
-          "pronunciation": "ku rash-u-ra t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-rashura, T. V.; ku-rashuka, I. V.",
+          "pronunciation": "ku-rash-u-ra; ku-rash-u-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Wake, to",
-          "translation": "ku-ukisa, T",
-          "pronunciation": "ku u-ki-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ukisa, T. V.; ku-lamuka, I. V.",
+          "pronunciation": "ku-u-ki-sa; ku-la-mu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
@@ -6600,51 +6600,51 @@
         },
         {
           "english": "Awake, to",
-          "translation": "ku-uka, I",
-          "pronunciation": "ku u-ka i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-uka, I. V.; ku-ukisa, T. V.",
+          "pronunciation": "ku-u-ka; ku-u-ki-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 79 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Break, to",
-          "translation": "ku-vunja, T",
-          "pronunciation": "ku vunj-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-vunja, T. V.; ku-vunjika, I. V.; [to burst], ku-pasula, T. V.; ku-pasuka, I. V.; [to break off], ku-shaula, T. V.; ku-shauka, I. V.; [to break down a house], ku-fuchula, T. V.; ku-fuchuka, I. V.",
+          "pronunciation": "ku-vunj-a; ku-vunj-i-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Empty, to",
-          "translation": "ku-kupula; [to pour out as water], ku-tila, T",
-          "pronunciation": "ku ku-pu-la",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kupula; [to pour out as water], ku-tila, T. V.; ku-tika, I. V.",
+          "pronunciation": "ku-ku-pu-la; ku-ti-la; ku-ti-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Guide, to",
-          "translation": "ku-onya ngila",
-          "pronunciation": "ku ony-a ngi-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-onya ngila [lit. to show the way]; ku-gensa [lit. to take], ku-longoza",
+          "pronunciation": "ku-ony-a ngi-la; ku-gens-a; ku-long-o-za",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 98 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Smell, to",
-          "translation": "ku-nusa, T",
-          "pronunciation": "ku nu-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-nusa, T. V.; ku-nuka, I. V.; [to smell badly], ku-nuka lagelage; [to smell sweetly], ku-nuka kirani",
+          "pronunciation": "ku-nu-sa; ku-nu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 118 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Spill, to",
-          "translation": "ku-tila, T",
-          "pronunciation": "ku ti-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tila, T. V.; ku-tika, I. V.",
+          "pronunciation": "ku-ti-la; ku-ti-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Split, to",
-          "translation": "ku-paia, T",
-          "pronunciation": "ku paia t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-paia, T. V.; ku-paika, I. V.",
+          "pronunciation": "ku-paia; ku-pai-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
@@ -6796,16 +6796,16 @@
         },
         {
           "english": "Refuse, to",
-          "translation": "ku-legela, T",
-          "pronunciation": "ku le-ge-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-legela, T. V.; ku-lega, I. V.; ku-ima",
+          "pronunciation": "ku-le-ge-la; ku-le-ga; ku-i-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 113 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Return, to",
-          "translation": "ku-ujisa, T",
-          "pronunciation": "ku u-ji-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ujisa, T. V.; ku-uja, T. V.; ku-uya, I. V.; ku-galisha, T. V.; ku-gala, I. V.",
+          "pronunciation": "ku-u-ji-sa; ku-u-ja; ku-u-ya; ku-ga-li-sha; ku-ga-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
@@ -6964,16 +6964,16 @@
         },
         {
           "english": "Collect, to",
-          "translation": "ku-kwoganya, T",
-          "pronunciation": "ku kwo-gany-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kwoganya, T. V.; ku-kwogana, I. V.",
+          "pronunciation": "ku-kwo-gany-a; ku-kwo-ga-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 86 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Rejoice, to",
-          "translation": "ku-bwelela, T",
-          "pronunciation": "ku bwe-le-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-bwelela, T. V.; ku-bwela, I. V.",
+          "pronunciation": "ku-bwe-le-la; ku-bwe-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
@@ -7006,14 +7006,14 @@
         },
         {
           "english": "Break off, to",
-          "translation": "ku-shaula, T",
-          "pronunciation": "ku shau-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-shaula, T. V.; ku-shauka, I. V.",
+          "pronunciation": "ku-shau-la; ku-shau-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bear fruit, to",
-          "translation": "ku-vala, I. V.; kuvaza, T. V.",
+          "translation": "ku-vala, I. V.; ku-vaza, T. V.",
           "pronunciation": "ku-vala i v ku-va-za t v",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
@@ -7041,16 +7041,16 @@
         },
         {
           "english": "Bear fruit, to",
-          "translation": "ku-vala, I",
-          "pronunciation": "ku va-la i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-vala, I. V.; ku-vaza, T. V.",
+          "pronunciation": "ku-va-la; ku-va-za",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 80 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Understand, to",
-          "translation": "ku-sikila",
-          "pronunciation": "ku si-ki-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sikila [lit. to hear]; ku-manya, ku-tambula [lit. to know]",
+          "pronunciation": "ku-si-ki-la; ku-many-a; ku-tamb-u-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
@@ -7321,9 +7321,9 @@
         },
         {
           "english": "In order that",
-          "translation": "etc",
-          "pronunciation": "et",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "expressed by the subjunctive mood (-e), or by the applied form of the verb (-ila / -ela, Wray 1894, pp. 44, 71, 101)",
+          "pronunciation": "subjunctive -e / applied -ila, -ela",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 44, 71, 101 — Public Domain)",
           "audioFile": null
         },
         {
@@ -7517,9 +7517,9 @@
         },
         {
           "english": "Lighten, to [to make clear]",
-          "translation": "ku-langaza",
-          "pronunciation": "ku-langaza",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "ku-langaza; [to flash as lightning], ku-ng'ala, ku-kumba lufu; [to make less heavy], ku-anguisa",
+          "pronunciation": "ku-langaza; ku-ng'ala, ku-kumba lufu; ku-anguisa",
+          "context": "Rev. J. Alfred Wray (1894, pp. 103–104) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -7580,9 +7580,9 @@
         },
         {
           "english": "To [a sign of the infinitive]",
-          "translation": "ku-",
-          "pronunciation": "ku",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "ku-; [to a place], expressed by the locative in -ni, and also by the applied form of the verb; [unto], kwa, hatta",
+          "pronunciation": "ku-; -ni; kwa, hatta",
+          "context": "Rev. J. Alfred Wray (1894, pp. 123–124) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -7951,9 +7951,9 @@
         },
         {
           "english": "Go, to",
-          "translation": "ku-genda; [to return], ku-gala, ku-uya; — after, [to follow], ku-irima; — away, ku-genda noko; — your way, ku-genda ngila zako; — backward, ku-genda kinyuma; —",
+          "translation": "ku-genda; [to return], ku-gala, ku-uya; — after, [to follow], ku-irima; — away, ku-genda noko; — your way, ku-genda ngila zako; — backward, ku-genda kinyuma; — bad [of meat, etc.], ku-ola, ku-bia; — before, ku-kaia, ku-kaiai, ku-longola, ku-longoza, ku-dongoza; — behind, ku-genda nyuma; — crookedly, ku-gomeka; — into, ku-ingila; — out, ku-fuma; — out [as fire], ku-zima; — over [a river], ku-ambuka; — round, ku-zunguluka, ku-maruka; — side by side, ku-kwezanya; — lame, ku-nyanyaga; — slowly, ku-genda mbole; — to meet, ku-mara; — up, ku-joka, ku-kwela; — without, ku-soa; — for a walk, ku-barita; [Where are you going?], wagendahi? [Go on in front], kaia, kaiai!",
           "pronunciation": "ku-genda",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "context": "Rev. J. Alfred Wray (1894, pp. 97–98) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -8168,9 +8168,9 @@
         },
         {
           "english": "Put, to an end, to",
-          "translation": "ku-duisa; — a pot on the fire, ku-jigisa; — away, ku-ika; — down, ku-tula; — forth leaves, ku-rua, ku-rurura; — in, ku-ingiza; — in order, ku-ika kirani; — off, ku-dilisa, T. V.; ku-dila, I. V.; — on clothes, ku-rwara; — on a turban, ku-riga kilemba; — out, ku-funya; — out a fire, ku-zimisha; — out cattle to keep, ku-tura; — ready for use, ku-ika kirani; — right, ku-boesa; — straight,",
+          "translation": "ku-duisa; — a pot on the fire, ku-jigisa; — away, ku-ika; — down, ku-tula; — forth leaves, ku-rua, ku-rurura; — in, ku-ingiza; — in order, ku-ika kirani; — off, ku-dilisa, T. V.; ku-dila, I. V.; — on clothes, ku-rwara; — on a turban, ku-riga kilemba; — out, ku-funya; — out a fire, ku-zimisha; — out cattle to keep, ku-tura; — ready for use, ku-ika kirani; — right, ku-boesa; — straight, ku-golola; — side by side, ku-katanisha, ku-ikanya; — through, ku-isha; — together, ku-kwoganya, ku-ika andu kumoju; — to flight, ku-kimbilisa; — to bed, ku-lalisha; — to death, ku-ulaga; — trust in, ku-lolila; — a stop to, ku-ulaga.",
           "pronunciation": "ku-duisa",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "context": "Rev. J. Alfred Wray (1894, pp. 112–113) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -8398,10 +8398,10 @@
           "audioFile": null
         },
         {
-          "english": "Tread, to well",
+          "english": "Treat, to, well",
           "translation": "ku-dea kirani; — badly, ku-dea lagelage.",
-          "pronunciation": "ku-dea kirani",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "pronunciation": "ku-dea kirani; ku-dea lagelage",
+          "context": "Rev. J. Alfred Wray (1894, p. 124) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -8903,9 +8903,9 @@
         },
         {
           "english": "White",
-          "translation": "mnynge; [the white neck of a raven], ikombe",
-          "pronunciation": "mnynge",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-mnyangi (-mnynge); [the white neck of a raven], ikombe",
+          "pronunciation": "-mnyang-i; i-komb-e",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 18, 127 — Public Domain)",
           "audioFile": null
         },
         {
@@ -8966,9 +8966,9 @@
         },
         {
           "english": "Dry, to",
-          "translation": "ku-omesa, T",
-          "pronunciation": "ku o-me-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-omesa, T. V.; ku-oma, I. V.",
+          "pronunciation": "ku-o-me-sa; ku-o-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
@@ -8987,9 +8987,9 @@
         },
         {
           "english": "Cool, to",
-          "translation": "ku-tsarusa, T",
-          "pronunciation": "ku tsa-ru-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tsarusa, T. V.; ku-tsarua, I. V.",
+          "pronunciation": "ku-tsa-ru-sa; ku-tsa-ru-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
@@ -9057,9 +9057,9 @@
         },
         {
           "english": "Weak, to be",
-          "translation": "ku-soa ndigi",
-          "pronunciation": "ku soa ndi-gi lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-soa ndigi [lit. to be without strength]",
+          "pronunciation": "ku-soa ndi-gi",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126 — Public Domain)",
           "audioFile": null
         },
         {
@@ -9547,9 +9547,9 @@
         },
         {
           "english": "East",
-          "translation": "andu ijua lyifuma",
-          "pronunciation": "and-u i-jua lyi-fu-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "andu ijua lyifuma [lit. the place where the sun rises]",
+          "pronunciation": "and-u i-jua lyi-fu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
@@ -9764,9 +9764,9 @@
         },
         {
           "english": "Ivory",
-          "translation": "njovu, lwembe lwa njovu",
-          "pronunciation": "njo-vu lwemb-e lwa njo-vu",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "njovu, lwembe lwa njovu. The Natives determine the size of a tusk by measuring it with the hand: Kibori, a tusk two hands long; Tofwa, three hands and a half long; Tofwa shagangi, four hands long; Isange, five or six hands long",
+          "pronunciation": "njo-vu, lwemb-e lwa njo-vu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 102 — Public Domain)",
           "audioFile": null
         },
         {
@@ -10016,9 +10016,9 @@
         },
         {
           "english": "Danger",
-          "translation": "asara, buga",
-          "pronunciation": "a-sa-ra bu-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "asara, buga [lit. trouble]",
+          "pronunciation": "a-sa-ra, bu-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
@@ -10044,9 +10044,9 @@
         },
         {
           "english": "Bow, to",
-          "translation": "ku-damisa, T",
-          "pronunciation": "ku da-mi-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-damisa, T. V.; ku-damika, I. V.",
+          "pronunciation": "ku-da-mi-sa; ku-da-mi-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
@@ -10142,9 +10142,9 @@
         },
         {
           "english": "Bleed, to",
-          "translation": "ku-fuma bigati, I",
-          "pronunciation": "ku fu-ma bi-ga-ti i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fuma bigati, I. V.; ku-segeta, I. V.; ku-seta, I. V.; ku-segesa, T. V.; [to cup], ku-lumika",
+          "pronunciation": "ku-fu-ma bi-ga-ti; ku-se-ge-ta; ku-se-ta; ku-se-ge-sa; ku-lu-mi-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
@@ -11465,16 +11465,16 @@
         },
         {
           "english": "End, to",
-          "translation": "ku-malila, T",
-          "pronunciation": "ku ma-li-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-malila, T. V.; ku-duisa, T. V.; ku-dua, I. V.",
+          "pronunciation": "ku-ma-li-la; ku-du-i-sa; ku-dua",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Owe, to",
-          "translation": "ku-leilo",
-          "pronunciation": "ku lei-lo lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-leilo [lit. to be demanded of], naleilo ni mdu, I owe a man [lit. I am demanded of by a man]",
+          "pronunciation": "ku-lei-lo; na-lei-lo ni mdu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
@@ -12151,107 +12151,107 @@
         },
         {
           "english": "Bend, to",
-          "translation": "ku-gomeka, I",
-          "pronunciation": "ku go-me-ka i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gomeka, I. V.; ku-gomesa, T. V.",
+          "pronunciation": "ku-go-me-ka; ku-go-me-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Hope, to",
-          "translation": "ku-lolila",
-          "pronunciation": "ku lo-li-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lolila [lit. to look for]; ku-kalla na tamaa [lit. to long for]",
+          "pronunciation": "ku-lo-li-la; ku-kal-la na ta-maa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Itch, to",
-          "translation": "ku-hatso",
-          "pronunciation": "ku hats-o lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-hatso [lit. to be bitten]",
+          "pronunciation": "ku-hats-o",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 102 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Melt, to",
-          "translation": "ku-saga, I",
-          "pronunciation": "ku sa-ga i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-saga, I. V.; ku-sagisa, T. V.",
+          "pronunciation": "ku-sa-ga; ku-sa-gi-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 106 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Move, to",
-          "translation": "ku-sugusa, T",
-          "pronunciation": "ku su-gu-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sugusa, T. V.; ku-suguta, I. V.; [to shake], ku-nyavura; [to change the place of dwelling], ku-sama",
+          "pronunciation": "ku-su-gu-sa; ku-su-gu-ta; ku-nya-vu-ra; ku-sa-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Obey, to",
-          "translation": "ku-sikila",
-          "pronunciation": "ku si-ki-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sikila [lit. to hear]; ku-irima [lit. to follow]",
+          "pronunciation": "ku-si-ki-la; ku-i-ri-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Part, to",
-          "translation": "ku-taganya, T",
-          "pronunciation": "ku ta-gany-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-taganya, T. V.; ku-tagana, I. V.",
+          "pronunciation": "ku-ta-gany-a; ku-ta-ga-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Pile, to",
-          "translation": "ku-kwezanya",
-          "pronunciation": "ku kwe-zany-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kwezanya [lit. to put on the top of each other]",
+          "pronunciation": "ku-kwe-zany-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 110 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Race, to",
-          "translation": "ku-isana",
-          "pronunciation": "ku i-sa-na lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-isana [lit. to strive]",
+          "pronunciation": "ku-i-sa-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 113 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Roll, to",
-          "translation": "ku-bingilisha, T",
-          "pronunciation": "ku bing-i-lish-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-bingilisha, T. V.; ku-bingilika, I. V.",
+          "pronunciation": "ku-bing-i-lish-a; ku-bing-i-li-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 115 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Sink, to",
-          "translation": "ku-zamisha, T",
-          "pronunciation": "ku za-mish-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-zamisha, T. V.; ku-zama, I. V.; ku-malisa, T. V.; ku-malika, I. V.",
+          "pronunciation": "ku-za-mish-a; ku-za-ma; ku-ma-li-sa; ku-ma-li-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 117 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Turn, to",
-          "translation": "ku-galula, T",
-          "pronunciation": "ku ga-lu-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-galula, T. V.; ku-galuka, I. V.; — the head, ku-eria; — out, ku-funya; — back, ku-uja, T. V.; ku-uya, I. V.; ku-galisha, T. V.; ku-gala, I. V.; — aside, ku-epa, I. V.; ku-epesa, T. V.; — into, ku-ingila; — over, ku-galula; — upside down, ku-fulika; — inside out, ku-galula",
+          "pronunciation": "ku-ga-lu-la; ku-ga-lu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Undo, to",
-          "translation": "ku-fungula",
-          "pronunciation": "ku fung-u-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fungula [lit. to unfasten]; ku-fundula [lit. to untie]; ku-nona [lit. to spoil]",
+          "pronunciation": "ku-fung-u-la; ku-fund-u-la; ku-no-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Warn, to",
-          "translation": "ku-gorera",
-          "pronunciation": "ku go-re-ra lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gorera [lit. to tell]",
+          "pronunciation": "ku-go-re-ra",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Whet, to",
-          "translation": "ku-nola, ku-kabanya",
-          "pronunciation": "ku no-la ku ka-bany-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-nola, ku-kabanya [lit. to rub two knives together]",
+          "pronunciation": "ku-no-la, ku-ka-bany-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127 — Public Domain)",
           "audioFile": null
         },
         {
@@ -13166,121 +13166,121 @@
         },
         {
           "english": "Amend, to",
-          "translation": "ku-boesa, T",
-          "pronunciation": "ku boe-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-boesa, T. V.; ku-boa, I. V.",
+          "pronunciation": "ku-boe-sa; ku-boa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Annoy, to",
-          "translation": "ku-sirimisa, T",
-          "pronunciation": "ku si-ri-mi-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sirimisa, T. V.; ku-sirima, I. V.; ku-koronga",
+          "pronunciation": "ku-si-ri-mi-sa; ku-si-ri-ma; ku-ko-rong-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Beautiful",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-loli",
+          "pronunciation": "-lo-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 80 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bribe, to",
-          "translation": "ku-hawa kindu, ku-nosa kindu",
-          "pronunciation": "ku ha-wa kind-u ku no-sa kind-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-hawa kindu, ku-nosa kindu [for the purpose of perverting justice]",
+          "pronunciation": "ku-ha-wa kind-u, ku-no-sa kind-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bulge, to",
-          "translation": "ku-fodesa, T",
-          "pronunciation": "ku fo-de-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fodesa, T. V.; ku-fodeka, I. V.",
+          "pronunciation": "ku-fo-de-sa; ku-fo-de-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 83 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Burst, to",
-          "translation": "ku-zaia, T",
-          "pronunciation": "ku zaia t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-zaia, T. V.; ku-zaika, I. V.; ku-pasula, T. V.; ku-pasuka, I. V.",
+          "pronunciation": "ku-zaia; ku-zai-ka; ku-pa-su-la; ku-pa-su-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 83 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Decay, to",
-          "translation": "ku-olesha, T",
-          "pronunciation": "ku o-lesh-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-olesha, T. V.; ku-ola, I. V.",
+          "pronunciation": "ku-o-lesh-a; ku-o-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Delay, to",
-          "translation": "ku-mukisa, T",
-          "pronunciation": "ku mu-ki-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-mukisa, T. V.; ku-muka, I. V.; ku-sinda, I. V.; ku-sindisa, T. V.",
+          "pronunciation": "ku-mu-ki-sa; ku-mu-ka; ku-sind-a; ku-sind-i-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Doubt, to",
-          "translation": "ku-lega",
-          "pronunciation": "ku le-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lega [lit. to refuse]",
+          "pronunciation": "ku-le-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 90 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Rebel, to",
-          "translation": "ku-lega kusikila",
-          "pronunciation": "ku le-ga ku-si-ki-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lega kusikila [lit. to refuse to hear]",
+          "pronunciation": "ku-le-ga ku-si-ki-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 113 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Scald, to",
-          "translation": "ku-isha na meji, T",
-          "pronunciation": "ku ish-a na me-ji t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-isha na meji, T. V.; ku-ia na meji, I. V.",
+          "pronunciation": "ku-ish-a na me-ji; ku-ia na me-ji",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Scorn, to",
-          "translation": "ku-menya",
-          "pronunciation": "ku meny-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-menya [lit. to hate]; ku-sunga [lit. to mock]",
+          "pronunciation": "ku-meny-a; ku-sung-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Shake, to",
-          "translation": "ku-sukasuka, ku-nyavurisha, T",
-          "pronunciation": "ku su-ka-su-ka ku nya-vu-rish-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sukasuka, ku-nyavurisha, T. V.; ku-nyavura, I. V.; [to tremble], ku-susuma",
+          "pronunciation": "ku-su-ka-su-ka, ku-nya-vu-rish-a; ku-nya-vu-ra; ku-su-su-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Shout, to",
-          "translation": "ku-pang'a",
-          "pronunciation": "ku pang'-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-pang'a [lit. to make a noise]; ku-kema [lit. to cry out]; [for help], ku-kema lukungu",
+          "pronunciation": "ku-pang'-a; ku-ke-ma; ku-ke-ma lu-kung-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 117 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Stoop, to",
-          "translation": "ku-damisa, T",
-          "pronunciation": "ku da-mi-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-damisa, T. V.; ku-damika, I. V.; [to bend down], ku-inama",
+          "pronunciation": "ku-da-mi-sa; ku-da-mi-ka; ku-i-na-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 121 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Trust, to",
-          "translation": "ku-lolila",
-          "pronunciation": "ku lo-li-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lolila [lit. to look to]",
+          "pronunciation": "ku-lo-li-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Worry, to",
-          "translation": "ku-sirimisha, T",
-          "pronunciation": "ku si-ri-mish-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sirimisha, T. V.; ku-sirima, I. V.",
+          "pronunciation": "ku-si-ri-mish-a; ku-si-ri-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -14349,177 +14349,177 @@
         },
         {
           "english": "Bother, to",
-          "translation": "ku-sirima, I",
-          "pronunciation": "ku si-ri-ma i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sirima, I. V.; ku-sirimisha, T. V.",
+          "pronunciation": "ku-si-ri-ma; ku-si-ri-mish-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bruise, to",
-          "translation": "ku-shogonola, T",
-          "pronunciation": "ku sho-go-no-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-shogonola, T. V.; ku-shogonoka, I. V.; [by pounding], ku-onda, ku-shana",
+          "pronunciation": "ku-sho-go-no-la; ku-sho-go-no-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 83 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Burden, to",
-          "translation": "ku-gwaisa, T",
-          "pronunciation": "ku gwai-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gwaisa, T. V.; ku-gwaia, I. V.",
+          "pronunciation": "ku-gwai-sa; ku-gwaia",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 83 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Change, to",
-          "translation": "ku-galusa, T",
-          "pronunciation": "ku ga-lu-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-galusa, T. V.; ku-galuka, I. V.",
+          "pronunciation": "ku-ga-lu-sa; ku-ga-lu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 85 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Darken, to",
-          "translation": "ku-kambisa, T",
-          "pronunciation": "ku kamb-i-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kambisa, T. V.; ku-kamba, I. V.",
+          "pronunciation": "ku-kamb-i-sa; ku-kamb-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Dazzle, to",
-          "translation": "ku-ng'ala, I",
-          "pronunciation": "ku ng'a-la i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ng'ala, I. V.; ku-ng'arisa, T. V.",
+          "pronunciation": "ku-ng'a-la; ku-ng'a-ri-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Depend, to",
-          "translation": "ku-lolila; ku-tsinila",
-          "pronunciation": "ku lo-li-la",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lolila [lit. to look to]; ku-tsinila [lit. to lean upon]",
+          "pronunciation": "ku-lo-li-la; ku-tsi-ni-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Encamp, to",
-          "translation": "ku-tula",
-          "pronunciation": "ku tu-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tula [lit. to put down (loads)]",
+          "pronunciation": "ku-tu-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Entice, to",
-          "translation": "ku-emba",
-          "pronunciation": "ku emb-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-emba [lit. to deceive]; ku-ruta kwa ulachu [lit. to draw by cunning]",
+          "pronunciation": "ku-emb-a; ku-ru-ta kwa u-lach-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
-          "english": "Entice, to",
-          "translation": "ku-ruta kwa ulachu",
-          "pronunciation": "ku ru-ta kwa u-lach-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "Entice, to (by cunning)",
+          "translation": "ku-ruta kwa ulachu [lit. to draw by cunning]",
+          "pronunciation": "ku-ru-ta kwa u-lach-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Extend, to",
-          "translation": "ku-golola, T",
-          "pronunciation": "ku go-lo-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-golola, T. V.; ku-goloka, I. V.",
+          "pronunciation": "ku-go-lo-la; ku-go-lo-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 93 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Finish, to",
-          "translation": "ku-malila, T",
-          "pronunciation": "ku ma-li-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-malila, T. V.; ku-sila, I. V.; ku-silisa, T. V.; ku-duisa, T. V.; ku-dua, I. V.",
+          "pronunciation": "ku-ma-li-la; ku-si-la; ku-si-li-sa; ku-du-i-sa; ku-dua",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 94 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Leaven, to",
-          "translation": "ku-irwisha",
-          "pronunciation": "ku ir-wish-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-irwisha [lit. to cause to ferment]",
+          "pronunciation": "ku-ir-wish-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 103 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Lessen, to",
-          "translation": "ku-erecha, ku-punguza, T",
-          "pronunciation": "ku e-rech-a ku pung-u-za t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-erecha, ku-punguza, T. V.; ku-gotua, I. V.",
+          "pronunciation": "ku-e-rech-a, ku-pung-u-za; ku-go-tua",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 103 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Regret, to",
-          "translation": "ku-harisa ngolo",
-          "pronunciation": "ku ha-ri-sa ngo-lo lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-harisa ngolo [lit. to make the heart bitter]",
+          "pronunciation": "ku-ha-ri-sa ngo-lo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Reject, to",
-          "translation": "ku-taga",
-          "pronunciation": "ku ta-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-taga [lit. to throw away]; ku-lega [lit. to refuse]",
+          "pronunciation": "ku-ta-ga; ku-le-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Remove, to",
-          "translation": "ku-ukisa, T",
-          "pronunciation": "ku u-ki-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ukisa, T. V.; ku-uka, I. V.; ku-funya; [to change one's abode], ku-sama",
+          "pronunciation": "ku-u-ki-sa; ku-u-ka; ku-funy-a; ku-sa-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Resist, to",
-          "translation": "ku-ima",
-          "pronunciation": "ku i-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ima [lit. to stand against]; ku-lega [lit. to refuse]",
+          "pronunciation": "ku-i-ma; ku-le-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Revive, to",
-          "translation": "ku-ujisa moyo, T",
-          "pronunciation": "ku u-ji-sa mo-yo t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ujisa moyo, T. V.; ku-uya moyo, I. V.",
+          "pronunciation": "ku-u-ji-sa mo-yo; ku-u-ya mo-yo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Reward, to",
-          "translation": "ku-nosana",
-          "pronunciation": "ku no-sa-na lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-nosana [lit. to give presents to one another]; ku-hawa",
+          "pronunciation": "ku-no-sa-na; ku-ha-wa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Splash, to",
-          "translation": "ku-pachahisa, T",
-          "pronunciation": "ku pach-a-hi-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-pachahisa, T. V.; ku-pachaha, I. V.",
+          "pronunciation": "ku-pach-a-hi-sa; ku-pach-a-ha",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Sprain, to",
-          "translation": "ku-dufula, T",
-          "pronunciation": "ku du-fu-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-dufula, T. V.; ku-dufuka, I. V.",
+          "pronunciation": "ku-du-fu-la; ku-du-fu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Starve, to",
-          "translation": "ku-ulaga na njala, T",
-          "pronunciation": "ku u-la-ga na nja-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ulaga na njala, T. V.; ku-fwa na njala, I. V.",
+          "pronunciation": "ku-u-la-ga na nja-la; ku-fwa na nja-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 120 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Unfold, to",
-          "translation": "ku-kunjula, T",
-          "pronunciation": "ku kunj-u-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kunjula, T. V.; ku-kunjuka, I. V.",
+          "pronunciation": "ku-kunj-u-la; ku-kunj-u-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Wither, to",
-          "translation": "ku-nyaza, T",
-          "pronunciation": "ku nya-za t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-nyaza, T. V.; ku-nyala, I. V.",
+          "pronunciation": "ku-nya-za; ku-nya-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -15588,149 +15588,149 @@
         },
         {
           "english": "Arrange, to",
-          "translation": "ku-ika kirani, ku-kumba cheta",
-          "pronunciation": "ku i-ka ki-ra-ni ku kumb-a che-ta",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ika kirani, ku-kumba cheta [lit. to put in a heap]; ku-boesa [lit. to put right]",
+          "pronunciation": "ku-i-ka ki-ra-ni, ku-kumb-a che-ta; ku-boe-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 79 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Baptize, to",
-          "translation": "ku-kumba mejini",
-          "pronunciation": "ku kumb-a me-ji-ni lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kumba mejini [lit. to put into the water]; ku-batiza",
+          "pronunciation": "ku-kumb-a me-ji-ni; ku-ba-ti-za",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 80 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Best, to be",
-          "translation": "ku-isa",
-          "pronunciation": "ku i-sa lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-isa [lit. to surpass]",
+          "pronunciation": "ku-i-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Betroth, to",
-          "translation": "ku-kumba ulanga",
-          "pronunciation": "ku kumb-a u-lang-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kumba ulanga [lit. to make love]",
+          "pronunciation": "ku-kumb-a u-lang-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Concern, to",
-          "translation": "ku-fweni, chanifweni",
-          "pronunciation": "ku fwe-ni cha-nif-we-ni lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fweni, chanifweni [lit. it concerns me]",
+          "pronunciation": "ku-fwe-ni, cha-ni-fwe-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Confide, to",
-          "translation": "ku-tsinila",
-          "pronunciation": "ku tsi-ni-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tsinila [lit. to lean upon]; ku-lolila [lit. to look to]",
+          "pronunciation": "ku-tsi-ni-la; ku-lo-li-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Confuse, to",
-          "translation": "ku-kambisa chongo, T",
-          "pronunciation": "ku kamb-i-sa chong-o t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kambisa chongo, T. V.; ku-kamba chongo, I. V.",
+          "pronunciation": "ku-kamb-i-sa chong-o; ku-kamb-a chong-o",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Convert, to",
-          "translation": "ku-galusa, T",
-          "pronunciation": "ku ga-lu-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-galusa, T. V.; ku-galuka, I. V.",
+          "pronunciation": "ku-ga-lu-sa; ku-ga-lu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Despair, to",
-          "translation": "ku-sila ngolo",
-          "pronunciation": "ku si-la ngo-lo lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sila ngolo [lit. to be finished as to the heart]",
+          "pronunciation": "ku-si-la ngo-lo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 90 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Glisten, to",
-          "translation": "ku-legesa meso",
-          "pronunciation": "ku le-ge-sa me-so lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-legesa meso [lit. to dazzle the eyes]; ku-ng'ala",
+          "pronunciation": "ku-le-ge-sa me-so; ku-ng'a-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 97 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Mediate, to",
-          "translation": "ku-gora",
-          "pronunciation": "ku go-ra lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gora [lit. to speak]; ku-lombela [lit. to pray for]",
+          "pronunciation": "ku-go-ra; ku-lomb-e-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 106 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Neglect, to",
-          "translation": "kusiga",
-          "pronunciation": "ku-si-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-siga [lit. to leave]",
+          "pronunciation": "ku-si-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Perplex, to",
-          "translation": "ku-kambisa chongo, T",
-          "pronunciation": "ku kamb-i-sa chong-o t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kambisa chongo, T. V.; ku-kamba chongo, I. V.",
+          "pronunciation": "ku-kamb-i-sa chong-o; ku-kamb-a chong-o",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 110 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Resolve, to",
-          "translation": "ku-pasa njama",
-          "pronunciation": "ku pa-sa nja-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-pasa njama [lit. to settle a plan]",
+          "pronunciation": "ku-pa-sa nja-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Respect, to",
-          "translation": "ku-koga",
-          "pronunciation": "ku ko-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-koga [lit. to fear]",
+          "pronunciation": "ku-ko-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Revolve, to",
-          "translation": "ku-marisa, T",
-          "pronunciation": "ku ma-ri-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-marisa, T. V.; ku-maruka, I. V.; ku-zunguluka, I. V.",
+          "pronunciation": "ku-ma-ri-sa; ku-ma-ru-ka; ku-zung-u-lu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Satisfy, to",
-          "translation": "ku-katisa, T",
-          "pronunciation": "ku ka-ti-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-katisa, T. V.; ku-kasa, I. V.; [with food], ku-gutisa, T. V.; ku-guta, I. V.",
+          "pronunciation": "ku-ka-ti-sa; ku-ka-sa; ku-gu-ti-sa; ku-gu-ta",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 115 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Scatter, to",
-          "translation": "ku-sagisa, T",
-          "pronunciation": "ku sa-gi-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-sagisa, T. V.; ku-saga, I. V.; ku-mwaga",
+          "pronunciation": "ku-sa-gi-sa; ku-sa-ga; ku-mwa-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Shrivel, to",
-          "translation": "ku-nyaza, T",
-          "pronunciation": "ku nya-za t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-nyaza, T. V.; ku-nyala, I. V.",
+          "pronunciation": "ku-nya-za; ku-nya-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 117 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Suffice, to",
-          "translation": "ku-katisa, T",
-          "pronunciation": "ku ka-ti-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-katisa, T. V.; ku-kasa, I. V.",
+          "pronunciation": "ku-ka-ti-sa; ku-ka-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 121 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Suppose, to",
-          "translation": "ku-gamba",
-          "pronunciation": "ku gamb-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gamba [lit. to say]; ku-irikanya [lit. to think]",
+          "pronunciation": "ku-gamb-a; ku-i-ri-kany-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 121 — Public Domain)",
           "audioFile": null
         },
         {
@@ -16351,93 +16351,93 @@
         },
         {
           "english": "Assemble, to",
-          "translation": "ku-kwoganya, T",
-          "pronunciation": "ku kwo-gany-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kwoganya, T. V.; ku-kwogana, I. V.",
+          "pronunciation": "ku-kwo-gany-a; ku-kwo-ga-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 79 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bewilder, to",
-          "translation": "ku-kamba chongo, I",
-          "pronunciation": "ku kamb-a chong-o i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kamba chongo, I. V.; ku-kambisa chongo, T. V.",
+          "pronunciation": "ku-kamb-a chong-o; ku-kamb-i-sa chong-o",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Complete, to",
-          "translation": "ku-malila, T",
-          "pronunciation": "ku ma-li-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-malila, T. V.; ku-duisa, T. V.; ku-dua, I. V.",
+          "pronunciation": "ku-ma-li-la; ku-du-i-sa; ku-dua",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Decrease, to",
-          "translation": "ku-gotua, ku-uya, nyuma; ku-punguza, T",
-          "pronunciation": "ku go-tua ku u-ya nyu-ma",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gotua, ku-uya nyuma, I. V.; ku-punguza, ku-erecha, T. V.",
+          "pronunciation": "ku-go-tua, ku-u-ya nyu-ma; ku-pung-u-za, ku-e-rech-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 89 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Diminish, to",
-          "translation": "ku-gotua, I",
-          "pronunciation": "ku go-tua i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gotua, I. V.; ku-erecha, ku-punguza, T. V.",
+          "pronunciation": "ku-go-tua; ku-e-rech-a, ku-pung-u-za",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 90 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Overturn, to",
-          "translation": "ku-galula, T",
-          "pronunciation": "ku ga-lu-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-galula, T. V.; ku-galuka, I. V.; ku-fulika",
+          "pronunciation": "ku-ga-lu-la; ku-ga-lu-ka; ku-fu-li-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Persuade, to",
-          "translation": "ku-hawa gore, ku-funda",
-          "pronunciation": "ku ha-wa go-re ku fund-a lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-hawa gore, ku-funda [lit. to teach]; ku-ruta",
+          "pronunciation": "ku-ha-wa go-re, ku-fund-a; ku-ru-ta",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 110 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Postpone, to",
-          "translation": "ku-dilisa, T",
-          "pronunciation": "ku di-li-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-dilisa, T. V.; ku-dila, I. V.",
+          "pronunciation": "ku-di-li-sa; ku-di-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 111 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Prophesy, to",
-          "translation": "ku-lagula",
-          "pronunciation": "ku la-gu-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lagula [lit. to divine]",
+          "pronunciation": "ku-la-gu-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 112 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Reproach, to",
-          "translation": "ku-tetela",
-          "pronunciation": "ku te-te-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-tetela [lit. to scold]; ku-dukana [lit. to abuse]",
+          "pronunciation": "ku-te-te-la; ku-du-ka-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Surround, to",
-          "translation": "ku-marisa, T",
-          "pronunciation": "ku ma-ri-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-marisa, T. V.; ku-maruka, I. V.; ku-zunguluka, I. V.; ku-zungulusha, T. V.",
+          "pronunciation": "ku-ma-ri-sa; ku-ma-ru-ka; ku-zung-u-lu-ka; ku-zung-u-lu-sha",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 121 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Threaten, to",
-          "translation": "ku-kumba oga",
-          "pronunciation": "ku kumb-a o-ga lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kumba oga [lit. to cast fear into]; ku-ama [?]",
+          "pronunciation": "ku-kumb-a o-ga; ku-a-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 123 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Withdraw, to",
-          "translation": "ku-funya, T",
-          "pronunciation": "ku funy-a t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-funya, T. V.; ku-fuma, I. V.",
+          "pronunciation": "ku-funy-a; ku-fu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -16722,44 +16722,44 @@
         },
         {
           "english": "Atone for, to",
-          "translation": "ku-boesa",
-          "pronunciation": "ku boe-sa lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-boesa [lit. to repair]; ku-riha",
+          "pronunciation": "ku-boe-sa; ku-ri-ha",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 79 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bend down, to",
-          "translation": "ku-damika, I",
-          "pronunciation": "ku da-mi-ka i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-damika, I. V.; ku-damisa, T. V.; ku-inama",
+          "pronunciation": "ku-da-mi-ka; ku-da-mi-sa; ku-i-na-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Evaporate, to",
-          "translation": "ku-omesa, T",
-          "pronunciation": "ku o-me-sa t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-omesa, T. V.; ku-oma, I. V.",
+          "pronunciation": "ku-o-me-sa; ku-o-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 93 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Object to, to",
-          "translation": "ku-lega, ku-ima",
-          "pronunciation": "ku le-ga ku i-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lega, ku-ima [lit. to refuse]",
+          "pronunciation": "ku-le-ga, ku-i-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Persevere, to",
-          "translation": "ku-lwana",
-          "pronunciation": "ku lwa-na lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lwana [lit. to fight]; ku-rumagia [lit. to endure]",
+          "pronunciation": "ku-lwa-na; ku-ru-ma-gi-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 110 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Transform, to",
-          "translation": "ku-galula, T",
-          "pronunciation": "ku ga-lu-la t",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-galula, T. V.; ku-galuka, I. V.",
+          "pronunciation": "ku-ga-lu-la; ku-ga-lu-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
@@ -17827,38 +17827,38 @@
           "audioFile": null
         },
         {
-          "english": "Na-",
-          "translation": "prefix denoting subject, first person singular. -ende-, tense prefix denoting a continuous state. -lima, verb (minus the infinitive ku-), which denotes hoe.",
-          "pronunciation": "prefix denoting subject",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Na- (in Ne-nde-lima = Na-ende-lima)",
+          "translation": "prefix denoting subject, first person singular; -ende-, tense prefix denoting a continuous state; -lima, verb stem (minus the infinitive ku-), which denotes hoe: Ne-nde-lima, I am in the act of hoeing.",
+          "pronunciation": "ne-nde-li-ma (na-ende-lima)",
+          "context": "Rev. J. Alfred Wray (1894, p. 36) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
-          "english": "Kuhara",
-          "translation": "to be bitter, changes the -a into -are, as— > 'Gwa-na-har-are, &emsp; it is bitter.",
-          "pronunciation": "to be bitter",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Kuhara (to be bitter — irregular stative present)",
+          "translation": "to be bitter, changes the -a into -are, as: 'Gwa-na-har-are, it is bitter.",
+          "pronunciation": "ku-ha-ra; 'gwa-na-ha-ra-re",
+          "context": "Rev. J. Alfred Wray (1894, p. 37) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
-          "english": "That one should have",
-          "translation": "or Why one should have, is expressed by inserting keja- between the pronominal prefix and the verb, followed by the word n'ini?— > U-keja-dea hung', n'ini? That you should have done thus, what is it? i. e. why should you have done thus?",
-          "pronunciation": "or why one should have",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "That one should have / Why one should have (-keja- ... n'ini?)",
+          "translation": "expressed by inserting -keja- between the pronominal prefix and the verb, followed by the word n'ini?: U-keja-dea hung', n'ini? That you should have done thus, what is it? i.e., why should you have done thus?",
+          "pronunciation": "u-ke-ja-dea hung', n'i-ni?",
+          "context": "Rev. J. Alfred Wray (1894, p. 43) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
-          "english": "Ola",
-          "translation": "ati, atigo, atigoni, ado, all have pretty much the same meaning—look here, I say, etc., but in order to use them properly, nothing but frequent intercourse with the natives will suffice.",
-          "pronunciation": "ati",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Ola, ati, atigo, atigoni, ado (Look here! I say!)",
+          "translation": "all have pretty much the same meaning—look here, I say, etc., used in calling attention in conversation.",
+          "pronunciation": "o-la, a-ti, a-ti-go, a-ti-go-ni, a-do",
+          "context": "Rev. J. Alfred Wray (1894, p. 74) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
-          "english": "Ima",
-          "translation": "or ma, is often suffixed to verbs in the imperative mood, as—",
-          "pronunciation": "or ma",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Enclitic -ima or -ma (imperative emphatic suffix)",
+          "translation": "often suffixed to verbs in the imperative mood: Genda-ma! Go then! Liga-ima! Leave off then!",
+          "pronunciation": "gend-a-ma! li-ga-i-ma!",
+          "context": "Rev. J. Alfred Wray (1894, p. 75) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -18086,38 +18086,38 @@
           "audioFile": null
         },
         {
-          "english": "Na",
-          "translation": "prefix denoting subject, first person singular",
-          "pronunciation": "pre-fix de-no-ting subject first person",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "Na- (1st person singular subject prefix)",
+          "translation": "prefix denoting subject, first person singular (n-, ni-, na- before tense prefixes)",
+          "pronunciation": "na-, ni-, n-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 22 — Public Domain)",
           "audioFile": null
         },
         {
-          "english": "If",
-          "translation": "since",
-          "pronunciation": "sin-ce et",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "If / Since (conditional -ka- & conjunctions)",
+          "translation": "ngera, sala, kamba, nda, or -ka- inserted in the verb [since, seeing that, if]",
+          "pronunciation": "nge-ra, sa-la, kamb-a, nda, -ka-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 42, 74, 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "My",
-          "translation": "angu",
-          "pronunciation": "ang-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-angu (wangu, yangu, lyangu, changu, etc.)",
+          "pronunciation": "-ang-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 26–30, 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "No",
           "translation": "hatta, ii, haiya, mbai, nikutuu",
-          "pronunciation": "hat-ta ii hai-ya mbai ni-ku-tuu",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "pronunciation": "hat-ta, ii, hai-ya, mbai, ni-ku-tuu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Of",
-          "translation": "a, with the variable prefix",
-          "pronunciation": "a with the va-riab-le pre-fi see",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a, with the variable prefix (wa, ya, 'gwa, lya, cha, va, za, lwa, ha, kwa)",
+          "pronunciation": "-a (wa, ya, 'gwa, lya, cha, va, za, lwa, ha, kwa)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 14, 108 — Public Domain)",
           "audioFile": null
         },
         {
@@ -18486,72 +18486,72 @@
         },
         {
           "english": "Any",
-          "translation": "ose",
-          "pronunciation": "o-se",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ose",
+          "pronunciation": "-o-se",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "End",
-          "translation": "andu kudua",
-          "pronunciation": "and-u ku-dua lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "andu kudua [lit. where it ends]; of a thing [as of a rope], mutu, mbale; [afterwards], ko nyuma",
+          "pronunciation": "and-u ku-dua; mu-tu, mba-le; ko nyu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 92 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Mad",
-          "translation": "zimo",
-          "pronunciation": "zi-mo",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-zimo",
+          "pronunciation": "-zi-mo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 105 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Not",
-          "translation": "si-, su- and sa-, prefixed to verbs",
-          "pronunciation": "si su and sa pre-fi-xed to",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "si-, su- and sa-, prefixed to verbs (see negative tenses of verbs, Wray 1894, pp. 50–62)",
+          "pronunciation": "si-, su-, sa-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Our",
-          "translation": "etu",
-          "pronunciation": "e-tu",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-etu",
+          "pronunciation": "-e-tu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Own",
-          "translation": "angu mwēn, -ako umwēn",
-          "pronunciation": "ang-u mweh a-ko um-weh et",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-angu mwēn, -ako umwēn, -akwe mwen, etc.",
+          "pronunciation": "-ang-u mwen, -a-ko u-mwen",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Thy",
-          "translation": "ako",
-          "pronunciation": "a-ko",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ako",
+          "pronunciation": "-a-ko",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 123 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Vow",
-          "translation": "mguli",
-          "pronunciation": "mgu-li lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mguli [lit. an oath]",
+          "pronunciation": "mgu-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Woe",
-          "translation": "vilambo",
-          "pronunciation": "vi-lamb-o lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "vilambo [lit. trouble]",
+          "pronunciation": "vi-lamb-o",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Yes",
           "translation": "ee, eee; [it is so], fulo kwēn; [that is just so], ko kwēn",
-          "pronunciation": "ee eee",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "pronunciation": "ee, eee; fu-lo kwen; ko kwen",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -18898,10 +18898,10 @@
           "audioFile": null
         },
         {
-          "english": "Ning",
-          "translation": "ku-ng'ala, ku-kumba lufu; [to make less heavy], ku-anguisa",
-          "pronunciation": "ku-ng'ala ku-kumba lufu",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "english": "Nickname, to",
+          "translation": "ku-daria [to give names in a playful manner]",
+          "pronunciation": "ku-da-ri-a",
+          "context": "Rev. J. Alfred Wray (1894, pp. 107–108) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -19395,150 +19395,150 @@
           "audioFile": null
         },
         {
-          "english": "Kuja",
-          "translation": "to come, is peculiar to itself",
-          "pronunciation": "to co-me is pe-cu-liar to its-el",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "Kuja (to come — irregular imperative)",
+          "translation": "to come, is peculiar to itself in the imperative: Sing. Cho! Come! Plur. Choni! Come ye! (also Njuu! / Njuuni!)",
+          "pronunciation": "ku-ja; cho! cho-ni!",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 45, 86 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Aged",
-          "translation": "'gosi",
-          "pronunciation": "'-go-si",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-'gosi (mdu m'gosi, an old man)",
+          "pronunciation": "-'go-si",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 77 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bare",
-          "translation": "tuhu, mdu wa duu",
-          "pronunciation": "tu-hu mdu wa duu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-tuhu; [a bare person, i.e. destitute], mdu wa duu [lit. an empty man]",
+          "pronunciation": "-tu-hu; mdu wa duu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 80 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Blab",
-          "translation": "mdu wa duu",
-          "pronunciation": "mdu wa duu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mdu wa duu [lit. a vain/empty person], mdu wa msheshe",
+          "pronunciation": "mdu wa duu, mdu wa mshe-she",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 81 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Bold",
-          "translation": "lume",
-          "pronunciation": "lu-me",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-lume",
+          "pronunciation": "-lu-me",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Both",
-          "translation": "ose -ile",
-          "pronunciation": "o-se i-le",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ose -ile (wose waile, both of them)",
+          "pronunciation": "-o-se -i-le",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 82 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "From",
           "translation": "kele; [since], ku-fuma",
-          "pronunciation": "ke-le",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "pronunciation": "ke-le; ku-fu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 96 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Heap",
-          "translation": "kitungu; [of weeds], mbii; [of firewood], cheta",
-          "pronunciation": "ki-tung-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "kitungu; [of weeds], mbii; [of firewood], cheta; [a cairn of stones found on the plains of Taita, supposed to have been made by a tribe called Warwana], mfingiri",
+          "pronunciation": "ki-tung-u; mbii; che-ta; mfing-i-ri",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 99 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Idle",
-          "translation": "mgadi",
-          "pronunciation": "mga-di",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-mgadi",
+          "pronunciation": "-mga-di",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Into",
-          "translation": "kele, amwēn, case in -ni, followed by pronouns in kw",
-          "pronunciation": "kele amwen case in -ni followed by pronouns in kw",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "kele, amwēn, case in -ni, followed by pronouns in kw- (nyumbani kwakwe, into his house)",
+          "pronunciation": "ke-le, a-mwen, -ni kw-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Male",
-          "translation": "lume",
-          "pronunciation": "lu-me",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-lume",
+          "pronunciation": "-lu-me",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 105 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Mild",
-          "translation": "a mbeo",
-          "pronunciation": "a mbeo",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a mbeo",
+          "pronunciation": "-a mbeo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 106 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Much",
-          "translation": "ingi",
-          "pronunciation": "ing-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ingi",
+          "pronunciation": "-ing-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Name",
-          "translation": "izina",
+          "translation": "izina (pl. mazina); [what is your name?], izina lyako n'ani? or unaitoani?",
           "pronunciation": "i-zi-na",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Next",
-          "translation": "a kaili",
-          "pronunciation": "a kai-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a kaili",
+          "pronunciation": "-a kai-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Nice",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-loli",
+          "pronunciation": "-lo-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Self",
-          "translation": "ēn",
-          "pronunciation": "eh",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ēn (imwēn, myself; umwēn, thyself; mwēn, himself; wewēn, ourselves; muwēn, yourselves; wowēn, themselves)",
+          "pronunciation": "-en (i-mwen, u-mwen, mwen)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 26, 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Song",
-          "translation": "lumbo",
-          "pronunciation": "lumb-o",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "lumbo (pl. nyimbo)",
+          "pronunciation": "lumb-o (pl. nyimb-o)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "They",
-          "translation": "ao, waio",
-          "pronunciation": "ao waio",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ao, waio",
+          "pronunciation": "-ao, waio",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 123 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Wild",
-          "translation": "a sakeni",
-          "pronunciation": "a sa-ke-ni",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a sakeni",
+          "pronunciation": "-a sa-ke-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Your",
-          "translation": "ako",
-          "pronunciation": "a-ko",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ako (singular), -enyu (plural)",
+          "pronunciation": "-a-ko, -e-nyu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -20600,107 +20600,107 @@
         },
         {
           "english": "Aloft",
-          "translation": "igulu",
-          "pronunciation": "i-gu-lu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "igulu [lit. above]",
+          "pronunciation": "i-gu-lu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Fresh",
-          "translation": "ishi",
-          "pronunciation": "ish-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ishi",
+          "pronunciation": "-ish-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 96 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Glory",
-          "translation": "ubwaa",
-          "pronunciation": "ub-waa lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ubwaa [lit. greatness]; nguma [lit. fame]",
+          "pronunciation": "u-bwaa; ngu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 97 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Grand",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-loli, -bwaa",
+          "pronunciation": "-lo-li, -bwaa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 98 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Lowly",
-          "translation": "nyongi",
-          "pronunciation": "nyong-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-nyongi",
+          "pronunciation": "-nyong-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 105 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Ought",
-          "translation": "ku-fweni",
-          "pronunciation": "ku fwe-ni lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fweni [lit. to be fitting], chanifweni, I ought",
+          "pronunciation": "ku-fwe-ni, cha-ni-fwe-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 109 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Patch",
-          "translation": "mrafu",
-          "pronunciation": "mra-fu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mrafu [lit. a rag]",
+          "pronunciation": "mra-fu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 110 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Shall",
-          "translation": "je-",
-          "pronunciation": "je see gram-mar",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-je- (future tense prefix, Wray 1894, pp. 40, 116)",
+          "pronunciation": "-je-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 40, 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Sleep",
           "translation": "haring'a",
           "pronunciation": "ha-ring'-a",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 118 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Space",
-          "translation": "andu kutuu",
-          "pronunciation": "and-u ku-tuu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "andu kutuu [lit. an empty place]; [between teeth], mwanya",
+          "pronunciation": "and-u ku-tuu; mwany-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Their",
-          "translation": "awe",
-          "pronunciation": "a-we",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-awe (-ao)",
+          "pronunciation": "-a-we (-ao)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 122 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Timid",
-          "translation": "oga",
-          "pronunciation": "o-ga",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-oga",
+          "pronunciation": "-o-ga",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 123 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Total",
-          "translation": "ose, putu",
-          "pronunciation": "o-se pu-tu",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ose, putu",
+          "pronunciation": "-o-se, pu-tu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Towel",
-          "translation": "nguo ya ku-kuagila",
-          "pronunciation": "nguo ya ku kua-gi-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "nguo ya ku-kuagila [lit. a cloth for wiping oneself]",
+          "pronunciation": "nguo ya ku-kua-gi-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Tribe",
           "translation": "mbari, kikuku, lukolo",
-          "pronunciation": "mba-ri ki-ku-ku lu-ko-lo",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "pronunciation": "mba-ri, ki-ku-ku, lu-ko-lo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124 — Public Domain)",
           "audioFile": null
         },
         {
@@ -21733,122 +21733,122 @@
           "audioFile": null
         },
         {
-          "english": "Elaima",
-          "translation": "nevertheless, is a compound conjunction",
-          "pronunciation": "ne-verthe-less is a compound conjunction",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "Ela ima (nevertheless — compound conjunction)",
+          "translation": "nevertheless, is a compound conjunction formed from ela (but) + ima (then/even)",
+          "pronunciation": "e-la i-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 74, 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Artery",
-          "translation": "hasi",
-          "pronunciation": "ha-si lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "hasi [lit. muscle/sinew/vein]",
+          "pronunciation": "ha-si",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 79 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Common",
-          "translation": "a wandu wose",
-          "pronunciation": "a wand-u wo-se",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a wandu wose",
+          "pronunciation": "-a wand-u wo-se",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Enigma",
-          "translation": "wada na wada",
+          "translation": "wada na wada: Mwanangu agendele ujombani ela sauja. Ans. Kilamba [My child went among the coast people, but he has not returned. Ans. The baobab tree]",
           "pronunciation": "wa-da na wa-da",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 93, 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Feeble",
-          "translation": "nyongi",
-          "pronunciation": "nyong-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-nyongi",
+          "pronunciation": "-nyong-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 94 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Female",
-          "translation": "ke",
-          "pronunciation": "ke",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ke (mdu mke, woman; nguku ya wake, hen)",
+          "pronunciation": "-ke",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 94 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Gospel",
-          "translation": "uvoro 'gwaloli",
-          "pronunciation": "u-vo-ro 'g-wa-lo-li lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "uvoro 'gwaloli [lit. good news]",
+          "pronunciation": "u-vo-ro 'gwa-lo-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 98 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Having",
-          "translation": "enyi, -esi",
-          "pronunciation": "eny-i e-si",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-enyi, -esi (mwenyi, wesi, chenyi, etc.)",
+          "pronunciation": "-eny-i, -e-si",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 17, 99 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Humble",
-          "translation": "nyongi",
-          "pronunciation": "nyong-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-nyongi",
+          "pronunciation": "-nyong-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Infirm",
-          "translation": "nyongi",
-          "pronunciation": "nyong-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-nyongi",
+          "pronunciation": "-nyong-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Inside",
-          "translation": "amwēn, case in -ni, followed by kwa",
-          "pronunciation": "amwen case in -ni followed by kwa",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "amwēn, case in -ni, followed by kwa- (nyumbani kwakwe, inside his house)",
+          "pronunciation": "a-mwen, -ni kwa-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Lovely",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-loli",
+          "pronunciation": "-lo-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 105 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Plenty",
-          "translation": "ingi",
-          "pronunciation": "ing-i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ingi, henga",
+          "pronunciation": "-ing-i, heng-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 111 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Praise",
-          "translation": "nguma",
-          "pronunciation": "ngu-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "nguma [lit. fame]",
+          "pronunciation": "ngu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 111 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "School",
-          "translation": "msikiti, kushomeni",
-          "pronunciation": "msi-ki-ti kush-o-me-ni lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "msikiti, kushomeni [lit. at the reading place]",
+          "pronunciation": "msi-ki-ti, ku-sho-me-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Source",
-          "translation": "andu kufuma",
-          "pronunciation": "and-u ku-fu-ma lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "andu kufuma [lit. place of coming out]",
+          "pronunciation": "and-u ku-fu-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Wicked",
-          "translation": "a lagelage",
-          "pronunciation": "a la-ge-la-ge",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a lagelage",
+          "pronunciation": "-a la-ge-la-ge",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127 — Public Domain)",
           "audioFile": null
         },
         {
@@ -22672,58 +22672,58 @@
         },
         {
           "english": "Company",
-          "translation": "ngaru, mbuzi ya ngaru, the company's goat, i",
-          "pronunciation": "nga-ru mbu-zi ya nga-ru the company's goat i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ngaru; mbuzi ya ngaru, the company's goat, i.e. a goat bought by a number of people to be eaten in common; [caravan], charo; [assembly], makwogano",
+          "pronunciation": "nga-ru; mbu-zi ya nga-ru; cha-ro; ma-kwo-ga-no",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Foreign",
-          "translation": "geni",
-          "pronunciation": "ge-ni",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-geni",
+          "pronunciation": "-ge-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 95 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Honesty",
-          "translation": "banana",
-          "pronunciation": "ba-na-na lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "banana [lit. soundness/truth], hachi",
+          "pronunciation": "ba-na-na, ha-chi",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Neither",
-          "translation": "hatta",
-          "pronunciation": "hat-ta lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "hatta [with negative verb]",
+          "pronunciation": "hat-ta",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 107 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Nothing",
           "translation": "si kindu; [for nothing], ya banana; [there is nothing], oa",
-          "pronunciation": "si kind-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "pronunciation": "si kind-u; ya ba-na-na; oa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 108 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Prophet",
-          "translation": "mlaguli",
-          "pronunciation": "mla-gu-li lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mlaguli [lit. a diviner]",
+          "pronunciation": "mla-gu-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 112 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Sadness",
-          "translation": "uharari 'gwa ngolo",
-          "pronunciation": "u-ha-ra-ri 'g-wa ngo-lo lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "uharari 'gwa ngolo [lit. bitterness of heart]",
+          "pronunciation": "u-ha-ra-ri 'gwa ngo-lo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 115 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Slender",
-          "translation": "suse",
-          "pronunciation": "su-se",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-suse",
+          "pronunciation": "-su-se",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 118 — Public Domain)",
           "audioFile": null
         },
         {
@@ -23133,10 +23133,10 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer",
           "translation": "mulagi",
           "pronunciation": "mu-la-gi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "context": "Rev. J. Alfred Wray (1894, p. 107) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -23407,58 +23407,58 @@
         },
         {
           "english": "Appetite",
-          "translation": "beha",
-          "pronunciation": "be-ha lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "beha [lit. a longing after], ku-ona njala",
+          "pronunciation": "be-ha, ku-o-na nja-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Careless",
-          "translation": "duhu",
-          "pronunciation": "du-hu lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-duhu [lit. worthless]",
+          "pronunciation": "-du-hu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 84 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Handsome",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-loli",
+          "pronunciation": "-lo-li",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 98 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Immature",
-          "translation": "koo",
-          "pronunciation": "koo",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-koo",
+          "pronunciation": "-koo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Innocent",
-          "translation": "a banana",
-          "pronunciation": "a ba-na-na",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a banana",
+          "pronunciation": "-a ba-na-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Mediator",
-          "translation": "mgori",
-          "pronunciation": "mgo-ri lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mgori [lit. a speaker]; mlombi [lit. one who prays]; mshiki [lit. a go-between]",
+          "pronunciation": "mgo-ri; mlomb-i; mshi-ki",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 106 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Vain, in",
-          "translation": "a bule",
-          "pronunciation": "a bu-le",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a bule",
+          "pronunciation": "-a bu-le",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Whatever",
-          "translation": "ingi, used only in the negative sense, as si kindu chingi",
-          "pronunciation": "ing-i u-sed on in the ne-ga-ti-ve",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ingi, used only in the negative sense, as si kindu chingi [lit. nothing whatever]",
+          "pronunciation": "-ing-i; si kind-u ching-i",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127 — Public Domain)",
           "audioFile": null
         },
         {
@@ -23575,9 +23575,9 @@
         },
         {
           "english": "Companion",
-          "translation": "mbetu, ours; mbenu, yours; mbao, theirs. This",
-          "pronunciation": "mbe-tu ours mbe-nu yours mbao theirs this",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "mbetu, ours; mbenu, yours; mbao, theirs. This noun has the possessive pronoun suffixed to it: wambetu, our companions; wambenu, your companions; wambao, their companions",
+          "pronunciation": "mbe-tu, mbe-nu, mbao",
+          "context": "Rev. J. Alfred Wray (1894, p. 87) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -23981,51 +23981,51 @@
         },
         {
           "english": "Abundance",
-          "translation": "ngi, henga",
-          "pronunciation": "ngi heng-a",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-ingi, henga",
+          "pronunciation": "-ing-i, heng-a",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 77 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Another's",
-          "translation": "a wandu",
-          "pronunciation": "a wand-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a wandu",
+          "pronunciation": "-a wand-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 78 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Companion",
-          "translation": "mbetu, ours; mbenu, yours; mbao, theirs",
-          "pronunciation": "mbe-tu our",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mbetu, ours; mbenu, yours; mbao, theirs (pl. wambetu, wambenu, wambao)",
+          "pronunciation": "mbe-tu, mbe-nu, mbao",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Ingenious",
-          "translation": "lachu",
-          "pronunciation": "lach-u",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-lachu",
+          "pronunciation": "-lach-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Remainder",
-          "translation": "a'ga 'gahangalika",
-          "pronunciation": "a'-ga '-ga-hang-a-li-ka lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "a'ga 'gahangalika [lit. those that are left]",
+          "pronunciation": "a'-ga 'ga-hang-a-li-ka",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 114 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Temperate",
-          "translation": "a karakara",
-          "pronunciation": "a ka-ra-ka-ra",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a karakara",
+          "pronunciation": "-a ka-ra-ka-ra",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 122 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Uppermost",
-          "translation": "a lugulu",
-          "pronunciation": "a lu-gu-lu",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "-a lugulu",
+          "pronunciation": "-a lu-gu-lu",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24359,16 +24359,16 @@
         },
         {
           "english": "Instead of",
-          "translation": "andu kwa",
-          "pronunciation": "and-u kwa",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "andu kwa-",
+          "pronunciation": "and-u kwa-",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 101 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Sweetheart",
-          "translation": "mlume yangu",
-          "pronunciation": "mlu-me yang-u lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "mlume yangu [lit. my man]; mke wangu [lit. my woman]",
+          "pronunciation": "mlu-me yang-u; mke wang-u",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 122 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24512,52 +24512,52 @@
           "audioFile": null
         },
         {
-          "english": "Ne-nde-lima",
-          "translation": "I am hoeing, that is, I am in the act of hoeing",
-          "pronunciation": "i am hoeing that is i",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "english": "Ne-nde-lima (Na-ende-lima)",
+          "translation": "I am hoeing, that is, I am in the act of hoeing (Present Continuous tense with -ende-)",
+          "pronunciation": "ne-nde-li-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 36 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Gora kirani",
-          "translation": "speak properly",
-          "pronunciation": "speak pro-per",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "speak properly / speak well",
+          "pronunciation": "go-ra ki-ra-ni",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 45, 119 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Dumb, to be",
-          "translation": "ku-lema ku-gora",
-          "pronunciation": "ku le-ma ku go-ra lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-lema ku-gora [lit. to be unable to speak]",
+          "pronunciation": "ku-le-ma ku-go-ra",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Easy, to be",
-          "translation": "ku-ongua",
-          "pronunciation": "ku ong-ua lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ongua [lit. to be light]; [to make easy], ku-onguisa",
+          "pronunciation": "ku-ong-ua; ku-ong-ui-sa",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 91 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Exceedingly",
-          "translation": "muno, na ndigi",
-          "pronunciation": "mu-no na ndi-gi",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "muno, na ndigi, sana",
+          "pronunciation": "mu-no, na ndi-gi, sa-na",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 93 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Holy, to be",
-          "translation": "ku-ela",
-          "pronunciation": "ku e-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ela [lit. to be clean/pure]",
+          "pronunciation": "ku-e-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 100 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Rash, to be",
-          "translation": "ku-bile",
-          "pronunciation": "ku bi-le lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-bile [lit. to be fierce/hot-tempered]",
+          "pronunciation": "ku-bi-le",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 113 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24779,23 +24779,23 @@
         },
         {
           "english": "Care, to take",
-          "translation": "ku-manya, ku-kalla kirani, ku-lolila; don't care, sikwesi kazi",
-          "pronunciation": "ku many-a ku kal-la ki-ra-ni ku",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-manya, ku-kalla kirani, ku-lolila; [I don't care], siwesi kazi (sikwesi kazi)",
+          "pronunciation": "ku-many-a, ku-kal-la ki-ra-ni, ku-lo-li-la; si-we-si ka-zi",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 84 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Clumsy, to be",
-          "translation": "ku-gwaia",
-          "pronunciation": "ku gwaia lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-gwaia [lit. to be heavy]",
+          "pronunciation": "ku-gwaia",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 86 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Worthy, to be",
-          "translation": "ku-fweni",
-          "pronunciation": "ku fwe-ni lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-fweni [lit. to be of use to], yamfweni kuhawo [lit. it behoves him to be given]",
+          "pronunciation": "ku-fwe-ni; yam-fwe-ni ku-ha-wo",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24842,23 +24842,23 @@
         },
         {
           "english": "Content, to be",
-          "translation": "ku-ela ngolo, ngolo yaela",
-          "pronunciation": "ku e-la ngo-lo ngo-lo yae-la lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-ela ngolo, ngolo yaela [lit. the heart is clear]",
+          "pronunciation": "ku-e-la ngo-lo, ngo-lo ya-e-la",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 87 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Jealous, to be",
-          "translation": "ku-kalla na iziso",
-          "pronunciation": "ku kal-la na i-zi-so lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kalla na iziso [lit. to have an evil/covetous eye]",
+          "pronunciation": "ku-kal-la na i-zi-so",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 102 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Selfish, to be",
-          "translation": "ku-kushaia mwēn",
-          "pronunciation": "ku kush-aia mweh lit",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "ku-kushaia mwēn [lit. to love oneself]; ku-ima [lit. to withhold]",
+          "pronunciation": "ku-ku-shaia mwen; ku-i-ma",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 116 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24926,9 +24926,9 @@
         },
         {
           "english": "Kisiku na kisiku",
-          "translation": "this thing or that thing",
-          "pronunciation": "this thing or that thing",
-          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain)",
+          "translation": "this thing or that thing (certain, indefinite pronoun -siku)",
+          "pronunciation": "ki-si-ku na ki-si-ku",
+          "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 84 — Public Domain)",
           "audioFile": null
         },
         {
@@ -24961,9 +24961,9 @@
         },
         {
           "english": "Relations [relatives]",
-          "translation": "wa mzetu etc.",
-          "pronunciation": "wa mze-tu etc",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "translation": "wa mzetu, wa mzenyu, wa mzao",
+          "pronunciation": "wa mze-tu, wa mze-nyu, wa mzao",
+          "context": "Rev. J. Alfred Wray (1894, p. 114) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
           "audioFile": null
         },
         {
@@ -25016,7 +25016,7 @@
           "audioFile": null
         },
         {
-          "english": "Maize (Indian corn) 8 growth stages: sprouting to fully ripe",
+          "english": "Maize (Indian corn) 9 growth stages: sprouting to fully ripe",
           "translation": "Mabemba 'gafunya mguchu, 'gafuma, 'gadea kiala, 'gafahasa, 'ganyaza sombe, 'gafirihisa, 'galasa ndoo, 'gapuhura, 'gaoma",
           "pronunciation": "mabemba 'gafunya mguchu",
           "context": "Wray (1894, pp. 87–88) Corn",
@@ -25028,6 +25028,90 @@
           "pronunciation": "mwemba 'gwauya sombe ya jigau",
           "context": "Wray (1894, p. 88) Corn",
           "audioFile": null
+        },
+        {
+          "english": "Beads (7 kinds and ornamental collars/strings)",
+          "translation": "usanga. Different kinds: ngange, very small red beads; masamambu, strings of ngange worn as a belt; ngolole, long red beads (kimame); mizigiriro, single strings of ngange; matombo 'ga mbanya, tiny glass beads; maazi, large red beads; magumba, large blue glass beads; mbura, white beads. When made up: kidiri, flat collar; mtungo, bunch of white beads; mkataye, large beads worn by women",
+          "pronunciation": "u-sang-a; ngang-e; ma-sa-mamb-u; ngo-lo-le; ki-di-ri; mtung-o; mka-ta-ye",
+          "context": "Rev. J. Alfred Wray (1894, p. 80) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Cloth (11 trade varieties and 4 linear measures)",
+          "translation": "nguo. Kinds: mardufu, heavy white; bafta, light white; kaniki, dark blue; birimi, dark blue; isambi, red; barawa, check; kunguru, large check; kitambi, coloured border; leso, handkerchiefs; shuka, loincloth. Measures: mukono (cubit, ~1 1/2 ft), lupande (2 mikono = 1 yard), shuka (4 mikono = 2 yards), doti (8 mikono = 4 yards)",
+          "pronunciation": "nguo; mar-du-fu; baf-ta; ka-ni-ki; mu-ko-no; lu-pand-e; shu-ka; do-ti",
+          "context": "Rev. J. Alfred Wray (1894, p. 86) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Drinks (traditional Sagalla beverages)",
+          "translation": "marami, fresh juice of the sugar-cane; njovi, native beer made of sugar-cane; mavwa, beer made from Indian corn or millet",
+          "pronunciation": "ma-ra-mi; njo-vi; mav-wa",
+          "context": "Rev. J. Alfred Wray (1894, p. 91) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Hair (human hair, animal hair, and 3 traditional coiffures)",
+          "translation": "isisi, human hair; [one hair], lusisi; [hair of the beard], ndevu; [hair of the body], mafuri; [white hair], mvi; [front rank of hair], kishungi; [crown of hair left on the middle of the head], sunzu; [tuft of hair left on the front of the head], kichutu",
+          "pronunciation": "i-si-si, lu-si-si; nde-vu; ma-fu-ri; mvi; ki-shung-i; sunz-u; ki-chu-tu",
+          "context": "Rev. J. Alfred Wray (1894, p. 98) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Omen (evil omens and auspicious signs on a journey)",
+          "translation": "mzana; [evil omens], ndesanya, mpingu; [an omen bird], ngolanshya. If its cry is heard behind a caravan it is good luck; if in front it is bad luck",
+          "pronunciation": "mza-na; nde-sany-a, mping-u; ngo-lan-shya",
+          "context": "Rev. J. Alfred Wray (1894, p. 108) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Rain (and the 5 seasonal rains of the Taita year)",
+          "translation": "mbua; [showers], minyonyo; [heavy rain], mbua ya mawe; [drizzle], msuza. Seasonal rains: Kishihu (great rains), Mchoo (first lesser rains), Kwalimchoo (second lesser rains), Mbuawayu, Kunyoli",
+          "pronunciation": "mbua; ki-shi-hu; mchoo; kwa-li-mchoo; mbua-wa-yu; ku-nyo-li",
+          "context": "Rev. J. Alfred Wray (1894, p. 113) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Riddle (traditional Taita baobab enigma)",
+          "translation": "wada na wada—mwanangu agendele ujombani ela sauja. Ans. Kilamba [My child went among the coast people, but he has not returned. Ans. The baobab tree]",
+          "pronunciation": "wa-da na wa-da — mwa-nang-u a-gend-e-le u-jomb-a-ni e-la sau-ja — ki-lamb-a",
+          "context": "Rev. J. Alfred Wray (1894, pp. 93, 114) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Salutation (traditional Taita village, morning, evening, and parting greetings)",
+          "translation": "On entering a village: Mwaketigwe! Ans. Tsere! — Uvo wenyu? Ans. N'uloli, tili maana! — Morning: Walachile! Ans. N'nalachile! — Evening: Wasindile! Ans. N'nasindile! — Parting: Kala maana! Ans. Genda maana! (Pl. Kalani maana! / Gendani maana!)",
+          "pronunciation": "mwa-ke-tig-we! tse-re! u-vo we-nyu? wa-la-chi-le! wa-sind-i-le!",
+          "context": "Rev. J. Alfred Wray (1894, pp. 115–116) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Seasons (the 4 ecological seasons of the Taita year)",
+          "translation": "mbeo, cold season (June–August); kazarani, first hot season before the rains; kishihu, rainy season (November–December); chaa, hot season (January–April)",
+          "pronunciation": "mbeo; ka-za-ra-ni; ki-shi-hu; chaa",
+          "context": "Rev. J. Alfred Wray (1894, p. 116) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Skull (and the ancestral skull-cave tradition)",
+          "translation": "ngoma, chongo. The Wakwavi skulls are called ngoma za Wakwavi. It is the custom among the Wataita to exhume the skulls of their dead, after the body has decomposed, and to put them in caves (ngomeni)",
+          "pronunciation": "ngo-ma, chong-o; ngo-me-ni",
+          "context": "Rev. J. Alfred Wray (1894, pp. 84, 118) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Loan (cattle agistment vs. returnable loan)",
+          "translation": "ng'ombe za tura, cattle lent out to be herded (the borrower getting the milk and a binary share of the calves); kindu cha kugosha, a thing borrowed to be returned itself",
+          "pronunciation": "ng'omb-e za tu-ra; kind-u cha ku-go-sha",
+          "context": "Rev. J. Alfred Wray (1894, p. 104) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
+        },
+        {
+          "english": "Boil [abscess / tumour]",
+          "translation": "tsumusi",
+          "pronunciation": "tsu-mu-si",
+          "context": "Rev. J. Alfred Wray (1894, p. 82) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+          "audioFile": null
         }
       ]
     }
@@ -25035,5 +25119,5 @@
   "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 3354
+  "totalEntries": 3570
 }

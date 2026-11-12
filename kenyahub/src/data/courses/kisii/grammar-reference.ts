@@ -106,4 +106,31 @@ export const KISII_GRAMMAR_SECTIONS: KisiiGrammarSection[] = [
       }
     ]
   }
+  ,
+  {
+    id: "kisii-hobley-1902-kossova-clans-grammar-lexicon",
+    title: "C. W. Hobley (1902) Eastern Uganda: The 21 Kossova (Kisii) Clans & Chiefs, Kitoto's Kisii Origin, 6 Noun Plural Classes & Kossova Verb/Pronoun Paradigm",
+    summary: "Hobley's 1902 survey (pp. 8–9, 51, 86, 89–91) records the earliest published list of 21 Kisii (Kossova) clans and chiefs, the November 1900 Mugusero embassy to Kisumu, the Kisii ancestry of Chief Kitoto in the Nyamoga clan, the 6 Kossova noun plural classes, and a 3-page vocabulary and sentence grammar.",
+    content: `From C. W. Hobley (*Eastern Uganda: An Ethnological Survey*, Anthropological Institute Occasional Papers No. 1, London, 1902, pp. 8–9, 51, 86, 89–91):
+1. **Northward Migration & the 21 Kossova (Kisii) Clans and Chiefs (pp. 8–9, 51)**:
+   - **Chief Kitoto of the Kitoto Plain (pp. 8–9, 55)**: Hobley discovered that **Chief Kitoto** (head of the *Nyamoga* clan of Kanu/Kadibo), although wearing Nilotic ornaments and married to Ja-Luo wives, was a **pure-bred native of the Kisii (Kossova) nation** whose bands trekked northward along the narrow 10-mile lake corridor below the Nandi escarpment.
+   - **All 21 Kossova (Kisii) Subdivisions & Chiefs (p. 51)**:
+     1. **Ugirango** — *Yawanga* | 2. **Mukimusi** — *Kimaina* | 3. **Msasuri** — *Munari* | 4. **Magichana** — *Borura* | 5. **Manweni** — *Minyigo* | 6. **Mkanyimbo** — *Uturi, Mtaruki* | 7. **Nyaliwali** — *Yamombo* | 8. **Mowasi** — *Maina* | 9. **Umachogi** — *Kitubo* | 10. **Mukura** — *Maina, Ndieki* | 11. **Ukeiri** — *Mwesaba* | 12. **Wa Koma** — *Mwakwega* | 13. **Woyeki** — *Sianyo* | 14. **Mwachawi** — *Samevita* | 15. **Ukitaa** — *Morema* | 16. **Umwaliwa** — *Uroo* | 17. **Umulenda** — *Munyanja* | 18. **Mugika** — *Wato* | 19. **Yamugei** — *Sakawa* | 20. **Mugusero** — *Umbachi* (sent representatives to Kisumu in Nov. 1900 to ask for protection) | 21. **Matala** — *Siambe*.
+2. **Six Noun Plural Classes of Bantu Kisii or Kossova (p. 86)**:
+   - **Class I (*um- → aw-*)**: *umuntu → awantu* ('man/person → people').
+   - **Class II (*o- → mi-*; *[m]u- → [m]i-*)**: *okuwoko → mikowoko* ('arm → arms'), *(m)umogwe → (m)imegwe* ('arrow → arrows').
+   - **Class III (invariant in plural)**: *muriro* ('fire').
+   - **Class IV (*iki- / ichi- → ivi-*)**: *ikisiri → ivisiri* ('axe → axes'), *ichiara → iviara* ('finger → fingers').
+   - **Class V (*u- → ama-*; *li-/ili- → ma-*; *[li]ki- → mi-*; *[l]e- → ama-*)**: *uwusio → amasio* ('face'), *liliga → amaliga* ('tear'), *(li)kisimba → misimba* ('cat'), *(l)erino → amaino* ('ivory/tooth').
+   - **Class VI (*e-/i- → chi-/achi-*; *e- → si-*)**: *imbandi → chimbandi* ('ground-nut'), *enjoka → chinjoka* ('snake'), *enzwi → sinzwi* ('fish').
+3. **Kossova Pronouns, Numerals & Verb Sentences (pp. 89–91)**:
+   - **Pronouns**: *ninchi* (I/me), *nururi* (thou), *nururio* (he), *nitwi* (we), *ninwi* (you), *embabu* (they); *wonzi, twenzi, vionzi* (all).
+   - **Numerals**: *1 ejemo, 2 wa-wili/chi-wili, 3 wa-tatu/chi-tatu, 4 wa-nne/chi-nne, 5 tano, 6 tano na emo, 7 tano na eviri, 8 tano na etatu, 9 kienda, 10 ekumi, 11 ekumi na yemo, 20 makumiyawiri, 30 makumiyatatu, 40 makumiyanne, 50 makumiyatano, 100 emirongo ekumi*.
+   - **Verbs & Sentences**: *ngochandi / sinkoja* ('I come / come not'), *kunyawandi / nanyaweti / njatinkunywa* ('I drink / drank / drank not'), *nkuliandi / tindalia* ('I eat / eat not'), *rogendandi / nagendeti* ('I go / went'), *namanyiti / tinkomanyi* ('I know / know not'), *nawaraleti? — inchitinkorora* ('can you see me? — no, I cannot').`,
+    examples: [
+      { kisii: "Ugirango (Yawanga) • Magichana (Borura) • Umachogi (Kitubo) • Mukura (Maina, Ndieki) • Yamugei (Sakawa) • Mugusero (Umbachi)", english: "Major Kisii (Kossova) clans and their 1902 chiefs recorded by C. W. Hobley", explanation: "Hobley (1902, Ch. V § 1, p. 51)" },
+      { kisii: "umuntu → awantu • okuwoko → mikowoko • ikisiri → ivisiri • uwusio → amasio • enjoka → chinjoka • enzwi → sinzwi", english: "person → people • arm → arms • axe → axes • face → faces • snake → snakes • fish → fishes", explanation: "Hobley's (1902, p. 86) 6 Noun Plural Classes of Kossova/Kisii" },
+      { kisii: "ngochandi / sinkoja • nkuliandi / tindalia • namanyiti / tinkomanyi • nawaraleti? — inchitinkorora", english: "I come / I come not • I eat / I eat not • I know / I know not • Can you see me? — No, I cannot", explanation: "Affirmative vs. negative verb pairs in Hobley (1902, p. 91)" }
+    ]
+  }
 ];

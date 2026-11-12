@@ -53467,11 +53467,152 @@
           "context": "Charles & Lawrence Tutschek, A Grammar of the Galla Language (Munich, 1845, § 255 p. 83 & Endpaper Notes pp. 105, 107)",
           "audioFile": null
         }
+        ,
+        {
+          "english": "Four Redeemed African Youths & Three Galla Authorities in Tutschek's 1844 Preface (pp. VIII–XVIII, XXXV–XLV)",
+          "translation": "1. Akafed'e Dalle (Ak., Boranna Galla from Botchi in Hambo, province of Liban, d. May 17, 1841); 2. Djalo Djondan Aré (from Deling'n in Tumale-Tokoken under King Wofter Mat of Takle); 3. Mussalam Motekutu (from Methem in Darfur, 7 days S of Kobbe); 4. Awan (from Dar Denka, identified via Dinka kur 'mountain' & kir 'river'); plus Otshu Aga (Ag., from Urgeza in Sibu, Mr. Pell, 14 Galla letters & songs of Bilile of Guma, d. Oct. 27, 1840) & Aman Gonda (Am., from Hibi in Goma, son of an Aba Fuño, with Duke Paul William of Württemberg [H. P.] at Mergentheim)",
+          "pronunciation": "a-ka-fe-d'e dal-le / dja-lo djon-dan a-re / mus-sa-lam mo-te-ku-tu / a-wan / ot-shu a-ga / bi-li-le / a-man gon-da",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, Preface pp. VIII–XVIII, XXXV–XLV",
+          "audioFile": null
+        },
+        {
+          "english": "Etymology of 'Galla' & Indigenous Autonyms (Oromo & Himata) vs. Neighbouring Peoples (pp. XX, 24, 57, 117, 200)",
+          "translation": "Galla (< gala 'to go home / seek one's home', referring to the c. 1735 migration) • Autonyms: Oromo (p. 24) & Himata ('orthodox believer', p. 200) vs. Zidama (Christians/Abyssinians), Awalini (Muslims), Wada (heathens), & Faqi (Falasha Jews, p. 117)",
+          "pronunciation": "ga-la / o-ro-mo / hi-ma-ta / zi-da-ma / a-wa-li-ni / wa-da / fa-qi",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. XX, XLVII, 24, 57, 117, 200",
+          "audioFile": null
+        },
+        {
+          "english": "Monotheistic Worship of Wacᵃ / Wacayo & Consecrated Assembly Trees (Refutation of Tree-Worship, pp. XXI, 31, 125, 131, 146–147, 157, 161, 168)",
+          "translation": "Wacᵃ / Wacayo (God / Heaven, omnipotent & omniscient) • Consecrated assembly shade trees (never worshipped as deities): wateza (Bruce's Wanzey, p. 147), lafto (lafto Michaila, pp. 31, 157), makaniza (p. 161), meeça (pp. 31, 131, 168), & ba (in Sibu, p. 125)",
+          "pronunciation": "wa-ca / wa-ca-yo / wa-te-za / laf-to mi-chai-la / ma-ka-ni-za / mee-sa / ba",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. XXI, XLVIII, 31, 125, 131, 146–147, 157, 161, 168",
+          "audioFile": null
+        },
+        {
+          "english": "The Two Galla Religious Sects: Boranna (Subdivision Wadjo / Watcho) vs. Djarzo (pp. 78, 142, 147)",
+          "translation": "Boranna (from burana 'neck-string of pearls', p. 142; including the stricter Wadjo / Watcho subdivision to which Aman belonged, abstaining from wild boar, p. 147) vs. Djarzo (less strict sect that eats wild boar fon boye and ire, p. 78)",
+          "pronunciation": "bo-ran-na / bu-ra-na / wa-djo / wat-cho / djar-zo",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 78, 142, 147",
+          "audioFile": null
+        },
+        {
+          "english": "Political, Judicial & Penal Hierarchy in Tutschek (1844, pp. XXI, 6, 16, 41, 49, 62, 67, 71, 84, 122, 125, 133, 144, 167, 171, 182)",
+          "translation": "moti (king, fem. meti) • zoreza / zalgana (nobles/princes) • aba ganda (town governor) • aba lafa (landed proprietor) • aba fuño ('master of the cord', magistrate/executioner) • cuge (sergeant/tipstaff) • cabi (distrainer) • erada (bailiff) • mangudo / bera (court of aldermen/judges sitting at gude dubi or yai dyidu in Hambo) • gindo (wooden leg-stocks & prison) • findja Lali (cascade in Hambo where capital punishment was executed, named after the first delinquent thrown down it, p. 122) • guma (blood-money / ransom, p. 71)",
+          "pronunciation": "mo-ti / me-ti / zo-re-za / zal-ga-na / a-ba gan-da / a-ba la-fa / a-ba fu-nyo / cu-ge / ca-bi / e-ra-da / man-gu-do / gin-do / fin-dja la-li / gu-ma",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. XXI, 6, 16, 41, 49, 62, 67, 71, 84, 122, 125, 133, 144, 167, 171, 182",
+          "audioFile": null
+        },
+        {
+          "english": "Land Tenure, Sharecropping (Qit'e), Day-Labour (Yagudo & D'abo), Vassals (Gubziza) & Adoption (Gada & Balfad'a)",
+          "translation": "qit'e (sharecropper who supplies seed and receives half the harvest, p. 46) vs. yagudo / yaguto (day-labourer hired for a fixed wage without harvest share, p. 145) & d'abo (assistant/day-labourer, p. 108) • gubziza (vassal settled on a zoreza's land, p. 68) • gubizu (freeborn children of garba slaves, p. 68) • gada guda (complete adoption) vs. gada t'ina (incomplete adoption, p. 53) • balfad'a / baldja (solemn single-file adoption procession carrying green meeça twigs, pp. 94, 131–132)",
+          "pronunciation": "qi-t'e / ya-gu-do / d'a-bo / gub-zi-za / gu-bi-zu / ga-da gu-da / ga-da t'i-na / bal-fa-d'a / bal-dja",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 46, 53, 68, 94, 108, 131–132, 145",
+          "audioFile": null
+        },
+        {
+          "english": "Oath of the Kalatcha Staff under the Lafto Michaila Tree & the Grass-Spitting Oath (T'wu — aki — t'wu — tili!, pp. 31, 91, 172)",
+          "translation": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a „hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!\" djed'eti ('Under the lafto Michaila before the priest Gadyo he swore by licking the meeça-wreathed kalatcha staff: May Wacayo lick up and destroy all my goods if I break my word!', p. 31) • „t'wu — aki — t'wu — tili!\" (chewing and spitting grass to seal a promise, p. 91) • mora wal cabad'a (holding sacrificial fat together to ratify peace, p. 172) • cote wal cabad'u (hooking the little fingers moge to wager, pp. 47, 66)",
+          "pronunciation": "ka-lat-cha / laf-to mi-chai-la / t'wu a-ki t'wu ti-li / mo-ra wal ca-ba-d'a / co-te wal ca-ba-d'u",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 31, 47, 66, 91, 172",
+          "audioFile": null
+        },
+        {
+          "english": "Amole Rock-Salt Bar Currency Fractions & the Maria Theresa Silver Dollar (Biri with S. F., pp. 13, 60, 122, 135, 172, 183, 188)",
+          "translation": "amole (rock-salt bar, 2 hands long × 1 hand broad × 2 fingers thick, p. 13): mogor = 2 amole (p. 172); tchabnana = 1/2; kurmana = 1/4; gimaz'i = 1/8; gedele (Ag. gadale) = 1/12; fotoqe (Am.) = 1/3 gedele or 1/12 amole (pp. 13, 60, 122); zanaga / çarmama = broken & re-bound amole (pp. 183, 188) • biri = Austrian Maria Theresa silver dollar (identified by the Empress's shoulder-clasp, diadem dots & engraver's initials S. F., worth 23 amole [Akafed'e] or 20 amole [Aman], also worn on women's foreheads, p. 135)",
+          "pronunciation": "a-mo-le / mo-gor / tchab-na-na / kur-ma-na / gi-ma-z'i / ge-de-le / fo-to-qe / za-na-ga / sar-ma-ma / bi-ri",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 13, 60, 122, 135, 172, 183, 188",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Daily Solar & Night Timekeeping Divisions (Ganama Aboro to Oba & Galgala Dimemeza, pp. 5, 23, 59, 100–101, 138, 148–149)",
+          "translation": "ganama aboro (very early dawn) → ganama (sunrise to ~8 a.m.) → dirama (~8 to 9/10 a.m.) → ware (~9 to 10 a.m.) → ware korate (between ware and noon) → oba (high noon, 12 o'clock = adun guba keza 'the sun is overhead', p. 5; oba dyabi = 'noon of the calves', watering time; afternoon hours counted from oba with cardinals: oba lamuti [2nd hour], oba zaditi [3rd hour], oba afuriti [4th hour], oba z'aniti [5th hour], p. 23) → galgala (evening) → wari (night watch corresponding to ware, p. 149) → galgala dimemeza (midnight, p. 101)",
+          "pronunciation": "ga-na-ma a-bo-ro / di-ra-ma / wa-re / wa-re ko-ra-te / o-ba / o-ba dya-bi / o-ba la-mu-ti / gal-ga-la di-me-me-za",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 5, 23, 59, 100–101, 138, 148–149 & Part II (1845), pp. 29, 76",
+          "audioFile": null
+        },
+        {
+          "english": "Galla Calendar: 7 Days of the Week, Months, 4 Seasons & the Magzala New Year Festival (pp. 11, 34, 40, 60, 85, 124, 135, 139, 147, 161–162, 189–190)",
+          "translation": "7 Days (Aman, p. 40): 1. Gifti (Kamiza), 2. Djimada (Djimata), 3. Zambata t'ina (half holiday; preceded by Cadame in Akafed'e, p. 40), 4. Zambata guda (full holiday), 5. Zaño, 6. Maczaño (called Tafno in Gooderoo & Lofe, pp. 40, 85, 161), 7. Arbi (p. 11) • Months: 1st Hadoleza (p. 190; Hadami in Pt. II p. 75), 2nd Hagayo (p. 189), 3rd Wadabadji / Wodabadji (p. 147), Furma (p. 124) • 4 Seasons: birra (spring, ushered in mid-September when the yellow kelo flower Stevia orientalis blooms for the Magzala / Maczala / Mazcala New Year feast, pp. 34, 135, 162), bona (summer, p. 139), arfaza (autumn, p. 11), ganna (rainy winter, p. 60)",
+          "pronunciation": "gif-ti / dji-ma-da / zam-ba-ta t'i-na / zam-ba-ta gu-da / za-nyo / mac-za-nyo / taf-no / ar-bi / ha-do-le-za / ha-ga-yo / wa-da-ba-dji / fur-ma / bir-ra / ke-lo / mag-za-la",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 11, 34, 40, 60, 85, 124, 135, 139, 147, 161–162, 189–190 & Part II (1845), p. 75",
+          "audioFile": null
+        },
+        {
+          "english": "Akafed'e Dalle's Ethnomedical Treatise on Tapeworm (D'uma & Mini) and the Het'o & D'ogonu Cure (Part I, pp. 101, 110, 170, 196–197)",
+          "translation": "het'o (Brayera anthelminthica / Banksia abyssinica, Amharic Kosso, pp. 196–197) & d'ogonu (mallow species whose bark yields a mucilaginous infusion, p. 110) • mini (early white grub stage of tapeworm, p. 170) → d'uma (mature jointed tapeworm: „aka zimalati, walaka walakati d'uka caba\" 'like bamboo, having marrow between every joint', pp. 101, 196–197): dried het'o flowers are pounded, sieved, mixed in d'ogonu bark infusion, and drunk fasting in the early morning while resting in the shade and drinking farzo until the worm is expelled",
+          "pronunciation": "he-t'o / d'o-go-nu / mi-ni / d'u-ma / a-ka zi-ma-la-ti wa-la-ka wa-la-ka-ti d'u-ka ca-ba",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 101, 110, 170, 196–197",
+          "audioFile": null
+        },
+        {
+          "english": "Botanical & Ecological Identifications by Duke Paul William of Württemberg (H. P.) in Tutschek (1844)",
+          "translation": "kelo (Stevia orientalis, yellow spring flower of Birra & Magzala, p. 34) • wandabiu (Pterocarpus, bearing bitter fruit and the sweet white exudation/manna nadaduda, pp. 77, 147) • handode (Phytolacca abyssinica, soap-berry used for washing clothes, p. 192) • gora (Rubus / raspberry, p. 66) • adami (Euphorbia abyssinica, p. 5) • djima (Catha edulis / khat, p. 81) • ogio (cardamom spice added to butter, p. 23) • birbirza (conifer used for spears, p. 136) • harbu & odaa (wild fig trees, pp. 24, 193)",
+          "pronunciation": "ke-lo / wan-da-bi-u / na-da-du-da / han-do-de / go-ra / a-da-mi / dji-ma / o-gi-o / bir-bir-za / har-bu / o-daa",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 5, 23–24, 34, 66, 77, 81, 136, 147, 192–193",
+          "audioFile": null
+        },
+        {
+          "english": "Heroic Insignia (Gondala vs. Gurgudu), Triumphal Song (Gerara) & Ornaments (pp. 20, 66–67, 69, 116, 159, 182)",
+          "translation": "gondala (hero who has slain an enemy, elephant, lion, or buffalo, anoints his hair with butter, fixes the zariti asparagus-thorn twig in his hair while singing the gerara triumphal song, and wears the ivory armlet ilbora, brass/copper bracelet gudidja, earring d'ugo, and neck-chain loti, pp. 20, 66–67, 116, 159, 182) vs. gurgudu (man who has not yet slain an enemy or wild beast, p. 69)",
+          "pronunciation": "gon-da-la / gur-gu-du / za-ri-ti / ge-ra-ra / il-bo-ra / gu-di-dja / d'u-go / lo-ti",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 20, 66–67, 69, 116, 159, 182",
+          "audioFile": null
+        },
+        {
+          "english": "Culinary Preparations, Ceremonial Dishes & Beverages in Tutschek (1844–1845)",
+          "translation": "buna (coffee roasted in butter, p. 141) • farzo (barley/sorghum beer brewed with gatcho hop-bark and biqila malt, pp. 119, 135) • dad'i (hydromel / mead made from dagma/damma honey, pp. 97, 102) • bulbula (honey-water, p. 142) • cori naga (barley roasted in butter for the Buta circumcision festival, p. 48) • tchukko (parched barley kneaded with butter for journeys, p. 75) • unkuron / unkurama (journey cake, p. 22) • cumt'i (spiced sour-milk cheese balls preserved for journeys, p. 51) • d'ama (curdled milk, p. 108) • arera (buttermilk, p. 10)",
+          "pronunciation": "bu-na / far-zo / gat-cho / bi-qi-la / da-d'i / bul-bu-la / co-ri na-ga / tchuk-ko / un-ku-ron / cum-t'i / d'a-ma / a-re-ra",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 10, 22, 48, 51, 75, 97, 102, 108, 119, 135, 141–142",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Verbatim Proverbs (Magm., Set 1: Speech, Fasting, Blessings, Sincerity & Caution, Part I pp. 3, 16, 20, 27–28, 37, 45, 56)",
+          "translation": "afan agabudan kadad'u ('run with a fasting mouth', p. 3) • yo argite ebizi, yo d'abte abari ('when thou receivest, bless; when thou findest not, curse', p. 16) • ilkanin namni gitᵃumtu fira ('by the teeth all men are friends', pp. 20, 121) • idya Wacᵃ kaba ura ('the eye of God penetrates a wall', p. 27) • uma Wacayoti hinkolfin! ('laugh not at any creature of God!', p. 28) • ini aka kozi tȧ ('he is as transparent as the bottom of a beaker', p. 37) • yo canqen gaya keza ut'ale namni indua ('if a spark leaps from the pipe, a man dies', p. 45) • ini aka gararati bifaza didirad'a ('he changes his colour like a chameleon', p. 56)",
+          "pronunciation": "a-fan a-ga-bu-dan ka-da-d'u / yo ar-gi-te e-bi-zi / id-ya wa-ca ka-ba u-ra / u-ma wa-ca-yo-ti hin-kol-fin",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 3, 16, 20, 27–28, 37, 45, 56, 121",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Verbatim Proverbs (Magm., Set 2: Peace, Hospitality, Accountability, Diligence & Wisdom, Part I pp. 72, 74, 102, 107, 114, 120, 146, 161, 163, 170, 177, 190, 201)",
+          "translation": "Tchaba ati murte Naman bad'z'izin; Liqi ati fud'te Naman bazizin (p. 72) • tchitinif ibida waliṅ gain; biçanif ibidi wali ha gau (p. 74) • mukni Wacᵃ careṅ domu (p. 102) • d'ad'an ibidti bue hindebiu (p. 107) • dubino d'abaṅ cabu (p. 107) • ibidif biçan hirmiṅ cabu, fulif gongon d'okzaṅ cabu (p. 114) • ini aka falʿanati afan nama dyala d'abad'a & ini fando afaniti caba (p. 120) • hodjadz'u wayo mo tau wai? (pp. 146, 201) • lubun lamaṅ dyirtu (p. 161) • madirati hinkolfini (p. 163) • bokeṅi mit'ileṅ adjezu, zi adjeza? (p. 170) • handangon qilenza ufiti naqeti ilman god'ad'a? (p. 177) • ini hadarid'a aka zarendida, hadarinza kaba ura, & namni ho bola lit'e hadaroma (p. 190)",
+          "pronunciation": "tchi-ti-nif i-bi-da wa-lin ga-in / ho-dja-dz'u wa-yo mo tau wai / lu-bun la-man dyir-tu / ma-di-ra-ti hin-kol-fi-ni / nam-ni ho bo-la li-t'e ha-da-ro-ma",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 72, 74, 102, 107, 114, 120, 146, 161, 163, 170, 177, 190, 201",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Verbatim Galla Songs (Wetu, Part I pp. 1, 10, 36, 61, 72, 117, 127, 148, 158) & Storytelling/Riddle Calls (pp. 152, 198)",
+          "translation": "1. Koromin wal ate, Latshu gugurod'a; Nadeṅ wal arate, Latshu muzurod'a (p. 1) • 2. Ombo z'an bared'a, Maf baretu d'abe? Dyalalti d'ukuba, Maf arera d'abe? (p. 10) • 3. Wanin korriza / Muka cabad'a; / Diarzi roriza / Durba kad'ad'a (p. 36) • 4. Galani na ñad'e, Giben na gezize; Ano d'ufa djenan, D'iben na tezize (p. 61) • 5. Gaya t'ut'uko, / Tambo na d'abi, / Fag'afuftuko / Yambo na wami! (p. 117) • 6. Cotani cotani yaa babazani; / Djed'ani djed'ani gargar nu bazani (p. 127) • 7. Zila zimalan yaba, / Zimali dameṅ cabu; — / Zila gandaran gala / Gandatu wareṅ cabu (p. 148) • 8. Lenzan lon guza / Bia gubati; / D'enzan lon buza / Iya nafati (p. 158) • Calls: rago rag! (storytelling call, p. 152) & hibo hib! (riddle call, p. 198)",
+          "pronunciation": "wa-nin kor-ri-za mu-ka ca-ba-d'a / ga-ya t'u-t'u-ko tam-bo na d'a-bi / zi-la zi-ma-lan ya-ba / len-zan lon gu-za / ra-go rag / hi-bo hib",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, pp. 1, 10, 36, 61, 72, 117, 127, 148, 152, 158, 198",
+          "audioFile": null
+        },
+        {
+          "english": "Tutschek's 1844 Grammatical & Accent Rules in the Dictionary Preface (pp. XXIII–XXX, L–LIX)",
+          "translation": "30-letter alphabet • Accusative as base citation form of nouns (with Nominative suffixes -n, -i, -ti, -ni, -fni) • Feminine gender for great orrevered objects (adu 'sun', lafa 'earth', garba 'sea/river') and collective plural nouns • 8 derived verbal forms (I Root, II Middle -ad'a, III Causative -za/-ziza/-tsha, IV Causative-Middle -fad'a/-zad'a, V -ziza, VI -zifad'a, VII -ziziza, VIII -zizifad'a) plus Passive -ama • Accent on final syllable of 1s Present Indicative (-á), shifting to the root or suffix according to grammatical form",
+          "pronunciation": "a-du / la-fa / gar-ba / -a-d'a / -za / -fa-d'a / -zi-za / -a-ma",
+          "context": "Charles & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I, Preface pp. XXIII–XXX (English) & pp. L–LIX (German)",
+          "audioFile": null
+        },
+        {
+          "english": "Part II (1845) English–Galla Lexicon: Kinship, Birth Order & Social Ranks (pp. 1–126)",
+          "translation": "hangafa (first-born child, Pt. I p. 191, Pt. II p. 44) vs. gudiru (youngest / last-born child, Pt. I p. 68, Pt. II p. 126) • muzuro (newly married bride/wife, Pt. I p. 176) • warra (family/household) • lammi (kindred/lineage) • gandarella (hermaphrodite, Pt. I p. 59, Pt. II p. 54) • tumtu (smith/artisan, Pt. I p. 88, Pt. II p. 102) • wat'a (hippopotamus hunter caste, Pt. I p. 147)",
+          "pronunciation": "han-ga-fa / gu-di-ru / mu-zu-ro / war-ra / lam-mi / gan-da-rel-la / tum-tu / wa-t'a",
+          "context": "Lawrence Tutschek, M.D. (1845) Dictionary of the Galla Language, Part II (English–Galla), pp. 1–126",
+          "audioFile": null
+        },
+        {
+          "english": "Part II (1845) English–Galla Lexicon: Astronomy, Meteorology & Natural Phenomena (pp. 1–126)",
+          "translation": "Wacayo / Wacᵃ (sky/God) • adu / biftu (sun; adun guba keza = noon) • bati / dya (moon/month; bati d'alate = new moon, goibana = full moon) • urdji (star; bakalcha = morning star, Pt. I p. 126) • zabata Wacayoti ('girdle of God' = rainbow, Pt. I p. 180, Pt. II p. 89) • bakalca (lightning) & mandia (thunder, Pt. I p. 166) • cababbi (hoar-frost/ice, Pt. I p. 41) • hurri (fog/mist)",
+          "pronunciation": "ba-kal-cha / goi-ba-na / za-ba-ta wa-ca-yo-ti / man-di-a / ca-bab-bi / hur-ri",
+          "context": "Charles & Lawrence Tutschek (1844–1845) Dictionary of the Galla Language, Part I & Part II",
+          "audioFile": null
+        }
       ]
     }
   ],
-  "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845, Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
+  "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 7627
+  "totalEntries": 7647
 }

@@ -7894,11 +7894,54 @@
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84)",
           "audioFile": null
         }
+        ,
+        {
+          "english": "Complete 1902 Registry of the 21 Clans & Chiefs of Kossova or Kisii (Part 1: Clans 1–11, Hobley 1902, p. 51)",
+          "translation": "1. Ugirango (Chief Yawanga) • 2. Mukimusi (Chief Kimaina) • 3. Msasuri (Chief Munari) • 4. Magichana (Chief Borura) • 5. Manweni (Chief Minyigo) • 6. Mkanyimbo (Chiefs Uturi & Mtaruki) • 7. Nyaliwali (Chief Yamombo) • 8. Mowasi (Chief Maina) • 9. Umachogi (Chief Kitubo) • 10. Mukura (Chiefs Maina & Ndieki) • 11. Ukeiri (Chief Mwesaba)",
+          "pronunciation": "u-gi-ra-ngo / mu-ki-mu-si / ma-gi-cha-na / u-ma-cho-gi / mu-ku-ra",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete 1902 Registry of the 21 Clans & Chiefs of Kossova or Kisii (Part 2: Clans 12–21 & Nov. 1900 Mugusero Embassy, Hobley 1902, p. 51)",
+          "translation": "12. Wa Koma (Chief Mwakwega) • 13. Woyeki (Chief Sianyo) • 14. Mwachawi (Chief Samevita) • 15. Ukitaa (Chief Morema) • 16. Umwaliwa (Chief Uroo) • 17. Umulenda (Chief Munyanja) • 18. Mugika (Chief Wato) • 19. Yamugei (Chief Sakawa) • 20. Mugusero (Chief Umbachi — sent representatives to Kisumu in November 1900 to request protection) • 21. Matala (Chief Siambe)",
+          "pronunciation": "wa ko-ma / u-ki-taa / ya-mu-ge-i / sa-ka-wa / mu-gu-se-ro / u-mba-chi / ma-ta-la",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Kisii (Kossova) Northward Migration into the Kitoto Plain & the Pure-Bred Kisii Origin of Chief Kitoto of the Nyamoga Clan",
+          "translation": "Chief Kitoto of the Kitoto plain (head of the Nyamoga / Moga clan of Kanu/Kadibo): although wearing Nilotic ornaments and married to Ja-Luo wives, he is a pure-bred native of the Kisii (Kossova) nation whose bands trekked northward along the 10-mile lake corridor below the 2,000-ft Nandi escarpment; Kisii oral tradition also records an ancestral migration from the southward / Kilimanjaro region",
+          "pronunciation": "ki-sii / kos-so-va / ki-to-to / nya-mo-ga",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. I, pp. 8–9 & Ch. V, pp. 51, 55)",
+          "audioFile": null
+        },
+        {
+          "english": "Six Noun Plural Classes of Bantu Kisii or Kossova (Classes I–VI) in Hobley (1902, p. 86)",
+          "translation": "Class I (um- → aw-): umuntu → awantu ('man/person → people') • Class II (o- → mi-; [m]u- → [m]i-): okuwoko → mikowoko ('arm → arms'), (m)umogwe → (m)imegwe ('arrow → arrows') • Class III (invariant in plural): muriro ('fire') • Class IV (iki-/ichi- → ivi-): ikisiri → ivisiri ('axe → axes'), ichiara → iviara ('finger → fingers') • Class V (u- → ama-; li-/ili- → ma-; [li]ki- → mi-; [l]e- → ama-): uwusio → amasio ('face'), liliga → amaliga ('tear'), (li)kisimba → misimba ('cat'), (l)erino → amaino ('ivory/tooth') • Class VI (e-/i- → chi-/achi-; e- → si-): imbandi → chimbandi ('ground-nut'), enjoka → chinjoka ('snake'), enzwi → sinzwi ('fish')",
+          "pronunciation": "u-mu-ntu a-wa-ntu / o-ku-wo-ko mi-ko-wo-ko / i-ki-si-ri i-vi-si-ri / e-njo-ka chi-njo-ka / e-nzwi si-nzwi",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 86)",
+          "audioFile": null
+        },
+        {
+          "english": "Kossova (Kisii) Personal Pronouns, Demonstratives, Possessives & Adjectives in Hobley (1902, Ch. VII § I, pp. 90–91)",
+          "translation": "Pronouns: ninchi ('I/me'), nururi ('thou'), nururio ('he'), nitwi ('we'), ninwi ('you'), embabu ('they'); wonzi, twenzi, vionzi ('all') • Demonstratives & Possessives: muntuuiga ('this man') / muntuulia ('that man'), umutiuiga ('this tree') / umutiulia ('that tree'), aiga ('here') / alia ('there'); inyumbaane ('my house'), inyumbayako ('thy house'), inyumbayake ('his house'), umuchi wetu ('our town'), seno ('your country'), awana wawo ('their children') • Adjectives: umuvi / kivi ('bad person / thing'), ichia ('good/nice'), umuke / ageki ('great'), kisinini ('little'), mulafu ('white'), umumwamu ('black'), chining ('plenty'), tindi ('no/not')",
+          "pronunciation": "ni-nchi / nu-ru-ri / nu-ru-ri-o / ni-twi / ni-nwi / e-mba-bu / i-nyu-mba-a-ne / u-mu-chi we-tu",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § I, pp. 90–91)",
+          "audioFile": null
+        },
+        {
+          "english": "Kossova (Kisii) Affirmative & Negative Verb Paradigms and Conversational Sentences in Hobley (1902, Ch. VII § I, p. 91)",
+          "translation": "na-kulete ('I bring'), ngochandi ('I come') / sinkoja ('I come not'), kokosolia ('I dance'), ngokwandi ('I die'), kunyawandi ('I drink') / nanyaweti ('I drank') / njatinkunywa ('I drank not'), nkuliandi ('I eat') / tindalia ('I eat not'), kokoandi ('I give') / najengokoha ('I give you') / namoeti ('I gave him'), rogendandi ('I go') / nagendeti ('I went'), naweiteti ('I kill them'), namanyiti ('I know') / tinkomanyi ('I know not'), nanjiri ('thou lovest'), ngokoraturi ('we make'), nkonenaturi ('we say'), tinkugura ('we sold not'), nkonyari ('he stinks'), uibiri ('he steals'), kosakandi ('they laugh'), kulirandi ('you weep') • Sentences: inki ukilalira? ('why art thou sleeping?'), ngalaachiri? ('where did he go?'), ngalaoichia? ('where are you going?'), norouliocheti? ('who comes in?'), ngakiokobora? ('what do you say?'), amalua nayakikokola? ('how do you make palm wine/beer?'), inkituraria? ('what shall we drink?'), indiriri wachiti? ('when art thou coming?'), ngowakima ('give me food'), ndetera akagena ('I want a little stone'), mbunira umuti omoki ('cut me a small stick'), ngoko eriri okonga? ('which fowl will you give me?'), rebe nalinyumba yake ('he is inside the house'), chinyoni ngalaichiri ('the birds flew away'), numutambi incha numwengi ('he is taller than I'), umuti umumu wagwiri ('the rotten tree falls'), nawaraleti? — inchitinkorora ('can you see me? — no, I cannot')",
+          "pronunciation": "ngo-cha-ndi / si-nko-ja / n-ku-li-a-ndi / ti-nda-li-a / na-ma-nyi-ti / ti-nko-ma-nyi / na-wa-ra-le-ti / i-nchi-ti-nko-ro-ra",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § I, p. 91)",
+          "audioFile": null
+        }
       ]
     }
   ],
   "source": "Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1110
+  "totalEntries": 1116
 }

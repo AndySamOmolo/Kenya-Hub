@@ -525,3 +525,127 @@ export const NORTHCOTE_1907_ONOMASTICS_AND_LAW = {
         "Rain-making, fishing & music (pp. 64–66): Rain-maker boils herbs under a sacred tree and blows through a hollow reed before squirting the decoction into the air; fishing with 4-pronged wooden spears, weirs, and woven-grass nets; 8-stringed harp (nyatiti / thum) accompanying extempore songs."
     ]
 };
+
+
+// ============================================================
+// C. W. HOBLEY (1903) JA-LUO ORIGIN LEGENDS, 3 GENEALOGIES, 20 KWERO TOTEMS & CUSTOMARY LAW
+// From C. W. Hobley, "British East Africa: Anthropological Studies in Kavirondo and Nandi",
+// Journal of the Anthropological Institute of Great Britain and Ireland, Vol. 33 (1903, pp. 325–359)
+// ============================================================
+export const HOBLEY_1903_JALUO_ETHNOGRAPHY_AND_TOTEMS = {
+    sourceCitation: "C. W. Hobley, Assoc. M. Inst. C.E., 'British East Africa: Anthropological Studies in Kavirondo and Nandi', JAI Vol. 33 (Jul.–Dec. 1903), pp. 325–359 (Plates XXVIII–XXX).",
+    kadimuPythonAncestor: "Unlike the rest of the Nilotic Ja-Luo who trace descent to Apōdtho, the Kadimu (originally a Bantu tribe near the mouth of the River Nzoia that adopted Dholuo) believe their common ancestor was a huge python (Nyelo), hold pythons sacred, and offer annual sacrifices to their python ancestor on a hill in Kadimu (pp. 326, 348).",
+    originLegendsAndGenealogies: [
+        {
+            version: "Version I — Narrated by Ugada Ndiek, Chief of Usakwa (pp. 326–327)",
+            summary: "Apōdtho descended from the heavens to Ramogi (or Lamogi) Hill far north of Uganda with one woman, a bull, a cow, a calf, mtama and other seeds, and the Were tree (from whose wood he carved two bowls — one for milking and one for catching cow's urine to mix with buttermilk at sundown). He had 2 sons (Ramogi and Anyango) and 4 daughters (each son marrying two sisters). Ramogi migrated south to Ramogi Hill in Kadimu near the River Nzoia mouth and fathered the Ja-Luo tribes; Anyango remained behind and fathered the Baganda and Banyoro.",
+            genealogy: "Apōdtho → (1) Ramogi, (2) Anyango, (3) Four daughters. Sons of Ramogi: Uyoma, Semi, Alego, Gemi, Nyakach, Umia Madok, Owidi. Sons of Owidi: (a) Rachonyo → Kandaia, Kanyaluo, Kaduong, Kabondo (south of Kavirondo Gulf); (b) Chwanya → Kisumu, Kanyamwa, Karungu, Kadem (on German frontier), Kaboch, Kachieng of Milambo."
+        },
+        {
+            version: "Version II — Narrated by Ugada, Chief of Korando (aged over 70, son of Otiendi, pp. 327–329)",
+            summary: "Apōdtho descended with 2 cattle, fowls, and seeds of mtama, sem-sem (sesame), and wimbi; he found tobacco growing on earth, received sweet potatoes and beans from the elephant, and taught fire-making by friction. He could turn into a rock at will; when old and sick, a girl cupped blood from his shadow, the Ja-Luo speared his shadow, and he turned into a rock used for sharpening spears. Ramogi settled first in Kadimu near Chief Anam's village. The Ja-Mwa (Bantu Kavirondo) descended from Anyango; the Koloa and Kitoto plain clans descended from Kanu (a Masai who married Rachonyo's sister) and are called Ja-Kanu; the Nandi descended from the Ja-Lango.",
+            genealogy: "Apōdtho → Chindu (cf. Luganda Kintu, p. 332) → Ramogi (5 wives) → Chingiruea → Owidi → (a) Kisumu → Menya & Dedi → Tipo → Nyuto (clan), Umwa, Okech, Nyawegi (clan), Korando → Abiru → Rombo → Otiendi → Ugada (chief of Korando), Obiero, Owunda; (b) Atipu; (c) Kogonya (clan). Other branches: Kaponja, Kalachonyo, Nyakal → Semi, Kasilual → Umia Madok, Uwilo → Uyoma, KaduET, Gemi loka ('loka' = on the other side, south of Kavirondo Gulf), Kanyada, Kadem, Karungu, Nyamkago, Lango."
+        },
+        {
+            version: "Version III — Narrated by Gori Kogalo, Chief of Kanyamwa in South Kavirondo / Ugaya (pp. 328, 330–331)",
+            summary: "Apōdtho, the sun, the wind, and the moon appeared on earth together. Buffalo and cattle emerged from the sea (Lake Victoria); cattle stayed tame while buffalo fled to the woods. When the moon, sun, and wind refused to kill an ox or eat its cooked meat after Apōdtho felled it with his fist, they fled to the heavens. Apōdtho promised his children they would reunite after death with the people in the heavens who shine bright like fire. Mbunga, eldest son of Ramogi, led the migration into Kavirondo.",
+            genealogy: "Apōdtho → (1) Rajoki (ancestor of Europeans & all other peoples); (2) Jimbo → Uyua → Ramogi → Mbunga, Uyoma, Semi, Chwanya (Uchieng [Nyaleo, Gadero, Nyamasua], Kanyuta, Kalachonyo [Kabondo], Kisumu, Abonyo [Uganga], Anyango [Beo, Kadem, Uchieng, Owiti → Kaboch]), Nyamkago, Ujoa (Gemi, Alego), Alangu (Nandi & Lumbwa), Kanu (Koloa, Kubura); (3) [lost] → Mugirango (Bantu Kavirondo, Waganda, Kisii)."
+        }
+    ],
+    twentyKweroTotemsInThoLuo: [
+        { number: 1, english: "Crocodile", thoLuo: "Nyang" },
+        { number: 2, english: "Hyæna", thoLuo: "Ndiek" },
+        { number: 3, english: "Leopard", thoLuo: "Okwach" },
+        { number: 4, english: "Baboon", thoLuo: "Bīm" },
+        { number: 5, english: "Monkey (Cercopithecus sp.)", thoLuo: "Ongner" },
+        { number: 6, english: "Wild cat", thoLuo: "Ogwang (eaten by Gemi, Lego & Sakwa)" },
+        { number: 7, english: "Jackal", thoLuo: "Buwem" },
+        { number: 8, english: "Vulture", thoLuo: "Achut-th" },
+        { number: 9, english: "Crow", thoLuo: "Agako" },
+        { number: 10, english: "Kite", thoLuo: "Otenga" },
+        { number: 11, english: "Nile monitor (lizard)", thoLuo: "Ngnech" },
+        { number: 12, english: "Python", thoLuo: "Nyelo (sacred ancestor of Kadimu)" },
+        { number: 13, english: "Mongoose", thoLuo: "Gori gori" },
+        { number: 14, english: "Rock hyrax", thoLuo: "Kumnēr" },
+        { number: 15, english: "Tortoise", thoLuo: "Upuku" },
+        { number: 16, english: "Colobus monkey", thoLuo: "Kuru" },
+        { number: 17, english: "Wart hog", thoLuo: "Imbirri" },
+        { number: 18, english: "Frog", thoLuo: "Ogwan" },
+        { number: 19, english: "Crested crane (Balearica gibbericeps)", thoLuo: "Iwang (strictly preserved except in Gemi)" },
+        { number: 20, english: "Ground hornbill", thoLuo: "Arumtich" }
+    ],
+    womensAdditionalKwero: "Ja-Luo women also observe Kwero against eating fowls, eggs, elephant, hippopotamus, and (among Kisumu and Gemi only) sheep (p. 348).",
+    chiefUgadasElevenCharms: [
+        "(1) Small iron arrow points made on his naming day shortly after birth (p. 345).",
+        "(2) Thin sheet of iron (~2 × ½ in.) with 3 punched holes representing his deceased grandmother Thako, after whom Ugada took his second name (p. 345).",
+        "(3) Quartz crystal found on the lake shore, mounted in shrunk leather like an acorn cup (p. 345).",
+        "(4) Bored yellow pebble with an iron ring, inherited from his father Otiendi (pp. 345–346).",
+        "(5) Necklace of 6 ancient yellow Nya-Luo beads Picked up in the fields after heavy rain (p. 346).",
+        "(6) Piece of goat horn worn against chest complaints (p. 346).",
+        "(7) Dried chicken beak worn around the neck against sickness (p. 346).",
+        "(8) Cut helix of a marine shell inherited from Otiendi (brought from Chief Ogalo of Kanyamwa, p. 346).",
+        "(9) Left-wrist cord with 4 short wooden sticks (omeni) so his children can touch him without suffering ill effects (p. 346).",
+        "(10) Heavy right-wrist brass bracelet obtained by his brother Obiero from Aiyimbo on the lake shore (p. 346).",
+        "(11) Tiny square leather bag containing rheumatism medicine (p. 346)."
+    ],
+    customsBeliefsAndLaw: [
+        "Ancestor propitiation (p. 343): A sick Ja-Luo man throws 4 small pieces of meat to the 4 cardinal directions, squirts mouthfuls of native beer, and throws spoonfuls of mtama porridge toward the hut door.",
+        "Barren woman burial charm (p. 344): Before burying a woman who died childless, an acacia thorn is stuck into the sole of her foot and broken off short, and no funeral wailing is permitted.",
+        "Simbi abūr crater lake legend (pp. 349–350): In Kalachonyo (South Kavirondo), a rain-witch submerged an inhospitable village whose elders were drinking tembo, sparing only the compassionate woman who fed and warmed her and her husband, creating the green natron lake Simbi abūr ('abūr' = hole/pit).",
+        "Cult of the Mkia — Chieno (pp. 350–351): Married Ja-Luo women wear a 6–8 inch stiff bottle-brush tail (chieno) of white tuoro aloe fibre (sometimes topped with white beads or 6 cowries); if a mother enters another house without her chieno, the house is defiled until her husband sacrifices a goat at the doorstep.",
+        "Tattooing & demographics (pp. 353–356): Kisumu women are tattooed with lines below the navel and across the waist and breasts upon their first pregnancy; in the Gemi tribe, 12 women bore 126 children (10.6 average; 70 living, 56 dead; 42% male / 58% female).",
+        "Isira blood-feud taboo (pp. 357–358): Male descendants of a murdered brother's maternal line can never eat with or use a cooking pot shared by the murderer's maternal line, under penalty of death within 24 hours.",
+        "Cosmology (p. 358): Both the Sun and the Supreme Deity are called Chieng, and the daylight sky/heavens are called Polo; menstruation and conception are believed to occur at the new moon.",
+        "Law of chieftainship succession (p. 359): Chieftainship descends strictly to the sons of the first-married wife (mikayi): Umoli married Agola first (sons Odera Ulalo and Sejenyi) and Kakwari second (older son Agina); when Odera Ulalo died, his younger full brother Sejenyi succeeded rather than the older half-brother Agina.",
+        "Origin of the name 'Kavirondo' (p. 359): Kisumu elders state that 'Kavirondo' was originally an epithet applied in dance and bhang-smoking songs by the people of the south side of Kavirondo Gulf to the people of the north side who had vanquished them and driven them across the bay."
+    ]
+};
+
+// ============================================================
+// C. W. HOBLEY (1902) EASTERN UGANDA: NILOTIC KAVIRONDO (JA-LUO / NIFE / THO-LUO)
+// ETHNOGRAPHY, ORDEALS, 17 TRIBAL REGISTRIES, VERB CONJUGATIONS & 8 NOUN PLURAL CLASSES
+// From C. W. Hobley, "Eastern Uganda: An Ethnological Survey", Anthropological Institute
+// Occasional Papers No. 1 (London, 1902, pp. 7–13, 26–35, 52–56, 61–87, Plates I–III, V–VI)
+// ============================================================
+export const HOBLEY_1902_EASTERN_UGANDA_THOLUO = {
+    sourceCitation: "C. W. Hobley, Assoc. M.Inst.C.E., 'Eastern Uganda: An Ethnological Survey', Anthropological Institute Occasional Papers No. 1 (London, 1902, pp. 1–96, Plates I–VI).",
+    ethnographyAndMaterialCulture: [
+        "Lake fishing & ironwork (pp. 26–27): Large conical wicker traps (dema) used with a floating papyrus-fringed surface rope and a stone-weighted ground rope paid out from ambatch-wood rafts; in Gemi, only the Uvino clan forges Samia iron into spears, knives, bill-hooks, and axes (smiths are called Yothet-th and also practise secret night witchcraft called Jamkingo, pp. 27, 32).",
+        "Funeral & birth customs (pp. 27–28): A woman is buried on her left side in the verandah; a man on his right side in his first wife's hut; a chief is buried sitting in a new hut on a fresh ox-hide with a water pot over his head and seeds of every grain except sweet potatoes. A 3rd child born after two deaths is placed on a basket tray in the road, redeemed by the father for a goat, pierced in the right earlobe for a brass ring, and named Owiti (boy) or Awiti (girl, 'thrown away'). Twins are secluded for 1 month and named Apio (first-born, 'comes quickly', masc. Opio) and Adongo (second-born, 'delayed').",
+        "Arms, music, dress & Nya-Luo beads (pp. 29–32, Figs. 8–9, 11, Plates V–VI): Curved cow/buffalo-hide shields and light ambatch-wood shields (Orindi), 10-ft spears, and arrow poison made by Opondo of Gemi; 8-string harp (Thūm, Fig. 8), laced drum (Būl, Fig. 9), and women's mtama-stalk hand-harp (Odundu); 6 lower incisors extracted; married father's mandatory small goat-skin when visiting his mother-in-law; 15 brass ear-rings with blue beads and ancient jasper/chalcedony Nya-Luo beads picked up near the Maragolia Hills after thunderstorms (worth 1 cow per bead; matched by Mr. C. H. Read of the British Museum to ancient Egypt and Beluchistan).",
+        "Ordeals, medicine & beliefs (pp. 33–35, Fig. 12): Kiviri boiling wimbi-flour ordeal and the Calabash Ordeal (Fig. 12, plugged with crushed fibrous mimosa leaves); Chief Odera's youthful prophecy of European rule; Ochola tree seed-case eaten before battle to return unwounded; snake-bite antidotes identified by Dr. Rendle (British Museum) as Phytolacca Abyssinica (internal leaf infusion) and Ipomea palmata (external leaf poultice); Divinity Chieng (the sun, greeted by spitting East at dawn and West at sunset)."
+    ],
+    seventeenNiloticTribesAndChiefs1902: [
+        "1. Kami or Gemi (pp. 52): Odera Ulalo (son of Umoli), Odera Sandei (son of Ulo), Ilari Atanda (son of Lochi), Wayoti Aratieri; 6 clans (Juothi, Karareo, Kagelo, Katumo, Kanyadeti, Kanikwaya).",
+        "2. Lego (p. 52): Ukola, Ndonya/Ndong, Ngonga; 9 clans (Lafu, Kukwiri, Anyango, Kaluo, Karuothi, Yanyujaok, Jamoro, Yasiji, Yakadengi).",
+        "3. Nife or Nyife (p. 53): Kero, Mulasi, Atipu, Unyango; 2 clans (Punji, Techi).",
+        "4. Kisumu (p. 53): Ngola/Ugola & Ugada; 10 clans (Kisero & Yakagonya under Onduu, Karatenya, Kadongo, Korando [Ugada, Ogalo], Kaponja, Sagami, Kadedi, Yakamenya, Kanyawegi).",
+        "5. Semi (pp. 53–54): Wadego, Yagudi, Awina; 7 clans (Kongo, Tieno [+ Dero], Kalunji, Kadipelo [Kumbija, Konyiwera, Kobita, Kaura, Kanyabong], Kombewa, Were [+ Kanyadwero], Kokeri).",
+        "6. Sembo (p. 54): Adola; 2 clans (Umia, Kalei).",
+        "7. Uyoma (p. 54): Lochi (d. 1899), Naiya; 4 clans (Kabuda, Katwenga, Kobong, Kukwiri).",
+        "8. Sawakwa or Sakwa (p. 54): Ugada, Undieki; 6 clans (Kanyamwanda Nasimwa, Karabori, Kamiyawa, Yakakodi [+ Kanyavinya], Kuduoli).",
+        "9. Timu or Utimu / Kadimu (p. 54): Anam, Uwori, Ugia; 3 clans (Kadimu, Rodi, Niaton).",
+        "10. Songa (p. 55): Unyando (Wa-Mtoni) & Unyando (Wa-Juu).",
+        "11. Kanu or Kadibo / Wa-Kitoto (pp. 9, 55): Kitoto (pure-bred native of Kisii/Kossova), Amimo, Niagoli, late Sendegi; 9 clans (Nyamoga/Moga, Kajulu, Kadibu/Kanu, Kumulu/Koloa, Kubura, Kamagaga, Kabonya, Kamrungu, Kimera/Sua).",
+        "12. Khoro & Kanyamoti (p. 55): Uluma, Kahuri/Nyango, Handa; 4 clans (Makhoya, Umwangwi, Winyi, Mache).",
+        "13. Kaki (p. 55): Masingo (near Gangu lake).",
+        "14. Aiendi / Kasagunga (p. 55): Abomba; 5 clans (Aiendi, Sali, Diang, Tema, Kamreri).",
+        "15. Ramba (p. 56): Gori Kogalo; 10 clans (Kadweti, Kabonyo, Kajuang, Kanyamwa/Kanyambo, Yahunda, Saki [at Usau hill], Kachola/Kologi, Kamungu, Kuchieng, Kasudu).",
+        "16. Nyakatch (p. 56): Uhuri; 6 clans (Kadianga, Kabodo, Jimo, Kajembo, Kandaria, Kuguta).",
+        "17. Kalachonyo (p. 56): Nyakiti; 13 clans (Kanyajok, Uma, Nyaluo, Kanyiperi, Adueti, Yakandaiya, Utienu, Kodera, Unyango, Akelu, Ojuach, Ukwainu, Kabondo)."
+    ],
+    eightThoLuoPluralClasses: [
+        { classNumber: "Class I (-tot)", singular: "sere (arrow); le (axe/animal)", plural: "seretot; letot" },
+        { classNumber: "Class II (-ngnen / -wen)", singular: "winyo (bird); tong (spear/egg)", plural: "winyongnen; tongwen" },
+        { classNumber: "Class III (e- → gi-)", singular: "enuwadu (brother/companion)", plural: "ginuwadu / ginuwadwa" },
+        { classNumber: "Class IV (-l → -k)", singular: "diel (goat)", plural: "diek" },
+        { classNumber: "Class V (-iji)", singular: "chong / chonga (knee); lak (tooth)", plural: "chongiji; lakiji" },
+        { classNumber: "Class VI (-a/-o → -i)", singular: "wer / wera (song); rombo (sheep)", plural: "weri; rombi" },
+        { classNumber: "Class VII (no change)", singular: "lueta (arm)", plural: "lueta" },
+        { classNumber: "Class VIII (irregular)", singular: "awang (eye); diang (cow); ot (house); hega (year)", plural: "wanga; dok; udi; hegini" }
+    ],
+    verbConjugations1902: {
+        come: "Imp. bi! | Inf. obiro | Pres. 1s abiro, 2s inibiro/ibiro, 3s obiro, 1p wanowabiro/wabiro, 2p unubiro, 3p gi-biro | Fut. 1s angaanabi | Past 1s nabiro | Neg. Pres. 1s ungekabi (p. 85)",
+        want: "Inf. oduaro | Pres. 1s aduaro, 2s iniduaro/iduaro, 3s oduaro/enouaro, 1p wanuwaduaro, 2p unuduaro, 3p giduaro | Fut. 1s anganaduari | Past 1s naduaro | Neg. Pres. 1s adagi (p. 85)"
+    }
+};

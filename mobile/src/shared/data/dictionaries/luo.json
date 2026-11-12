@@ -19097,10 +19097,319 @@
           "audioFile": null
         },
         {
-          "english": "Uwur (Dholuo clan withbushbuck totem)",
-          "translation": "Uwur",
-          "pronunciation": "u-wur",
-          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JRAI Vol. 33 (1903, p. 347)",
+          "english": "First Ancestor of the Ja-Luo (descended from heaven to Ramogi/Lamogi Hill with cattle, seeds, fire-sticks & the Were tree)",
+          "translation": "Apōdtho",
+          "pronunciation": "a-pod-tho",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 326–331)",
+          "audioFile": null
+        },
+        {
+          "english": "Tree brought from heaven by Apōdtho, from whose wood he carved two milking bowls",
+          "translation": "Were",
+          "pronunciation": "we-re",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 327)",
+          "audioFile": null
+        },
+        {
+          "english": "Founder of the Ja-Luo settlements at Ramogi Hill in Kadimu near the River Nzoia mouth",
+          "translation": "Ramogi",
+          "pronunciation": "ra-mo-gi",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 326–331)",
+          "audioFile": null
+        },
+        {
+          "english": "Son of Apōdtho (and father of Ramogi in Korando genealogy; cf. Luganda Kintu)",
+          "translation": "Chindu",
+          "pronunciation": "chin-du",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 329, 332)",
+          "audioFile": null
+        },
+        {
+          "english": "Son of Apōdtho (progenitor of Baganda/Banyoro & Ja-Mwa in Usakwa/Korando legends)",
+          "translation": "Anyango",
+          "pronunciation": "a-nya-ngo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 326–330)",
+          "audioFile": null
+        },
+        {
+          "english": "Son of Apōdtho & ancestor of Europeans and other peoples; patriarchs Jimbo, Uyua & Mbunga",
+          "translation": "Rajoki • Jimbo • Uyua • Mbunga",
+          "pronunciation": "ra-jo-ki / jim-bo / u-yu-a / m-bu-nga",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 330–331)",
+          "audioFile": null
+        },
+        {
+          "english": "Patriarchs Owidi, Rachonyo & Chwanya (founders of South and Central Kavirondo clans)",
+          "translation": "Owidi • Rachonyo • Chwanya",
+          "pronunciation": "o-wi-di / ra-cho-nyo / chwa-nya",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 327–331)",
+          "audioFile": null
+        },
+        {
+          "english": "Kanu (progenitor of Ja-Kanu on the Kitoto plain), Alangu (ancestor of Nandi & Lumbwa) & Mugirango",
+          "translation": "Kanu (Ja-Kanu) • Alangu • Mugirango",
+          "pronunciation": "ka-nu / ja-ka-nu / a-la-ngu / mu-gi-ra-ngo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 328–331)",
+          "audioFile": null
+        },
+        {
+          "english": "On the other side (i.e., south side of Kavirondo Gulf, as in Gemi loka)",
+          "translation": "loka (Gemi loka)",
+          "pronunciation": "lo-ka",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 329)",
+          "audioFile": null
+        },
+        {
+          "english": "Clan totem / taboo (whose violation causes a severe skin eruption)",
+          "translation": "Kwero",
+          "pronunciation": "kwe-ro",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 347–348)",
+          "audioFile": null
+        },
+        {
+          "english": "Crocodile (Ja-Luo Kwero totem #1 in Tho-Luo)",
+          "translation": "Nyang",
+          "pronunciation": "nyang",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Hyæna (Ja-Luo Kwero totem #2 in Tho-Luo)",
+          "translation": "Ndiek",
+          "pronunciation": "ndiek",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Leopard (Ja-Luo Kwero totem #3 in Tho-Luo)",
+          "translation": "Okwach",
+          "pronunciation": "o-kwach",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Baboon (Ja-Luo Kwero totem #4 in Tho-Luo)",
+          "translation": "Bīm",
+          "pronunciation": "bim",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Monkey, Cercopithecus sp. (Ja-Luo Kwero totem #5 in Tho-Luo)",
+          "translation": "Ongner",
+          "pronunciation": "ong-ner",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Wild cat (Ja-Luo Kwero totem #6 in Tho-Luo; eaten by Gemi, Lego, and Sakwa)",
+          "translation": "Ogwang",
+          "pronunciation": "o-gwang",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Jackal (Ja-Luo Kwero totem #7 in Tho-Luo)",
+          "translation": "Buwem",
+          "pronunciation": "bu-wem",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Vulture (Ja-Luo Kwero totem #8 in Tho-Luo)",
+          "translation": "Achut-th",
+          "pronunciation": "a-chut-th",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Crow (Ja-Luo Kwero totem #9 in Tho-Luo)",
+          "translation": "Agako",
+          "pronunciation": "a-ga-ko",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Kite (Ja-Luo Kwero totem #10 in Tho-Luo)",
+          "translation": "Otenga",
+          "pronunciation": "o-te-nga",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Nile monitor lizard (Ja-Luo Kwero totem #11 in Tho-Luo)",
+          "translation": "Ngnech",
+          "pronunciation": "ng-nech",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Python (Ja-Luo Kwero totem #12 in Tho-Luo & sacred common ancestor of the Kadimu tribe)",
+          "translation": "Nyelo",
+          "pronunciation": "nye-lo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 326, 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Mongoose (Ja-Luo Kwero totem #13 in Tho-Luo)",
+          "translation": "Gori gori",
+          "pronunciation": "go-ri go-ri",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Rock hyrax (Ja-Luo Kwero totem #14 in Tho-Luo)",
+          "translation": "Kumnēr",
+          "pronunciation": "kum-ner",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Tortoise (Ja-Luo Kwero totem #15 in Tho-Luo)",
+          "translation": "Upuku",
+          "pronunciation": "u-pu-ku",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Colobus monkey (Ja-Luo Kwero totem #16 in Tho-Luo)",
+          "translation": "Kuru",
+          "pronunciation": "ku-ru",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Wart hog (Ja-Luo Kwero totem #17 in Tho-Luo)",
+          "translation": "Imbirri",
+          "pronunciation": "im-bir-ri",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Frog (Ja-Luo Kwero totem #18 in Tho-Luo)",
+          "translation": "Ogwan",
+          "pronunciation": "o-gwan",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Crested crane, Balearica gibbericeps (Ja-Luo Kwero totem #19; strictly preserved except in Gemi)",
+          "translation": "Iwang",
+          "pronunciation": "i-wang",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Ground hornbill (Ja-Luo Kwero totem #20 in Tho-Luo)",
+          "translation": "Arumtich",
+          "pronunciation": "a-rum-tich",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Four wooden wrist sticks worn by Chief Ugada • Grandmother's 3-holed iron charm • Ancient yellow beads",
+          "translation": "omeni • Thako • Nya-Luo",
+          "pronunciation": "o-me-ni / tha-ko / nya-luo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 345–346)",
+          "audioFile": null
+        },
+        {
+          "english": "Crater lake of Simbi in Kalachonyo ('abūr' = a hole or pit)",
+          "translation": "Simbi abūr (abūr)",
+          "pronunciation": "sim-bi a-bur",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 349–350)",
+          "audioFile": null
+        },
+        {
+          "english": "Married woman's 6–8 inch stiff rear tassel made from white tuoro aloe fibre",
+          "translation": "chieno (tuoro)",
+          "pronunciation": "chie-no / tuo-ro",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 350–351)",
+          "audioFile": null
+        },
+        {
+          "english": "Sun and Supreme Deity • The daylight sky / heavens",
+          "translation": "Chieng • Polo",
+          "pronunciation": "chieng / po-lo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 358)",
+          "audioFile": null
+        },
+        {
+          "english": "Blood-feud meal taboo • First-wife chieftainship succession (Umoli, Agola → Odera Ulalo & Sejenyi vs. Kakwari → Agina) • Kavirondo",
+          "translation": "Isira • Mikayi (Umoli, Agola, Odera Ulalo, Sejenyi, Kakwari, Agina) • Kavirondo",
+          "pronunciation": "i-si-ra / mi-ka-yi / ka-vi-ro-ndo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 357–359)",
+          "audioFile": null
+        }
+        ,
+        {
+          "english": "Nilotic Kavirondo (Ja-Luo / Awa-Nyoro / Wa-Nife) Papyrus-Rope & Dema Lake Fishing on Ambatch Rafts, Gemi Uvino Smith Clan (Yothet-th) & Secret Night Witchcraft (Jamkingo)",
+          "translation": "Conical wicker fish traps (dema) used with two long ropes (floating papyrus-fringed surface rope + stone-weighted ground rope) laid out in a semicircle from ambatch-wood rafts while women drag sardine traps • Uvino (the sole clan in Gemi that forges Samia iron into spears, knives, bill-hooks & axes; smiths are called Yothet-th, p. 27, and practise secret nocturnal witchcraft called Jamkingo, p. 32)",
+          "pronunciation": "de-ma / u-vi-no / yo-thet-th / jam-ki-ngo",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. III, pp. 26–27, 32)",
+          "audioFile": null
+        },
+        {
+          "english": "Ja-Luo Funeral Rites, Chief's Sitting Burial with Grain Seeds, Third-Child Road Redemption (Owiti / Awiti) & Twin Names (Apio / Adongo)",
+          "translation": "Woman buried doubled up on left side in verandah (dug by brothers-in-law); man buried on right side in first wife's house (dug by brother); chief buried sitting in a new hut on a fresh ox-hide with a water pot over his head and seeds of every grain except sweet potatoes (10 days' dance & mourning) • Third child after two deaths placed on a basket tray in the road, redeemed by the father for a goat, right earlobe pierced with brass wire, and named Owiti (boy) or Awiti (girl, 'thrown away') • Twins secluded 1 month and named Apio (first-born, 'comes quickly', masc. Opio) and Adongo (second-born, 'delayed')",
+          "pronunciation": "o-wi-ti / a-wi-ti / a-pi-o / o-pi-o / a-do-ngo",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. III, pp. 27–28, 33)",
+          "audioFile": null
+        },
+        {
+          "english": "Ambatch Shields (Orindi), Gemi Poison-Maker Opondo, Musical Instruments (Thūm Fig. 8, Būl Fig. 9 & Odundu) & Mother-in-Law Goat-Skin Rule",
+          "translation": "Orindi (light shield made of ambatch wood, alongside large curved cow/buffalo-hide shields and 10-ft spears) • Opondo (medicine man in Gemi who made arrow poison from snake venom & herbs) • Thūm (8-string harp with cow-hide resonator, Fig. 8), Būl (double-headed laced wooden drum, Fig. 9), and Odundu (women's hand-harp made of mtama stalks) • Married father's mandatory small goat-skin (worn even under European clothes when visiting his mother-in-law, under penalty of a 1-goat fine) & married woman's rear string tail and decorated goat-skin (Plate VI)",
+          "pronunciation": "o-ri-ndi / o-po-ndo / thum / bul / o-du-ndu",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. III, pp. 29–31, Figs. 8–9 & Plate VI)",
+          "audioFile": null
+        },
+        {
+          "english": "Fifteen Brass Ear-Rings, Nya-Luo Jasper/Chalcedony Rain Beads (Matched by C. H. Read to Ancient Egypt & Beluchistan), Shaved Head Patterns (Fig. 11) & Stork Stance",
+          "translation": "Nya-Luo: ancient blue, green, and yellow beads and fine-bored jasper/chalcedony beads (formerly worth 1 cow per bead) picked up in fields near the Maragolia Hills after heavy thunderstorms and matched by Mr. C. H. Read of the British Museum to ancient Egypt and buried cities in Beluchistan (worn along the outer ear rim with 15 leaf-flattened brass rings) • Curved shaved head patterns (Fig. 11), red iron-oxide wooden block armlets/headbands, laterally ground 1/8-in hippo canine forehead ornament & one-legged stork stance on ant-hills",
+          "pronunciation": "nya-luo / ki-ke-ti",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. III, pp. 31–32 & Fig. 11)",
+          "audioFile": null
+        },
+        {
+          "english": "Kiviri Flour Ordeal, Calabash & Mimosa-Leaf Ordeal (Fig. 12), Chief Odera's Prophecy, Ochola War Seed-Case & Snake-Bite Antidotes (Phytolacca Abyssinica & Ipomea palmata)",
+          "translation": "Kiviri (boiling wimbi flour and medicine in a small pot of water; boiling over = guilty) • Calabash Ordeal (Fig. 12: open-ended calabash resting on a stone in a water bowl, plugged by crushed fibrous mimosa leaves so water overflows if guilty) • Chief Odera prophesied European rule in his youth • Ochola (outer seed-case of a tree eaten before battle to return unwounded) • Snake-bite antidotes identified by Dr. Rendle (British Museum): Phytolacca Abyssinica (leaf infusion drunk internally) & Ipomea palmata (macerated leaf plaster applied externally) • Peace rite of exchanging mutton from a wooden grain mortar & sweeping the victor's cattle boma",
+          "pronunciation": "ki-vi-ri / o-de-ra / o-cho-la / chieng",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. III, pp. 33–35, Fig. 12)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Nilotic Kavirondo Clan & Chief Registry (Part 1 — North & Central Nyanza, Hobley 1902, Ch. V § 2, pp. 52–55)",
+          "translation": "Prefixes Ja-, Ka-, Yaka- = clan/tribe; Tho- = language • 1. Kami or Gemi (Odera Ulalo son of Umoli, Odera Sandei son of Ulo, Ilari Atanda son of Lochi, Wayoti Aratieri; 6 clans: Juothi, Karareo [Ogwel], Kagelo [Serua], Katumo [Ngaga], Kanyadeti [Siwa], Kanikwaya [Njwang Kiliko, Ilari, Aratieri]) • 2. Lego (Ukola, Ndonya/Ndong, Ngonga; 9 clans: Lafu, Kukwiri, Anyango, Kaluo, Karuothi, Yanyujaok, Jamoro, Yasiji, Yakadengi) • 3. Nife/Nyife (Punji [Kero, Mulasi, Atipu] & Techi [Unyango, Nyatengi]) • 4. Kisumu (Ngola/Ugola & Ugada; 10 clans: Kisero & Yakagonya [amalgamated under Onduu], Karatenya, Kadongo, Korando [Ugada, Ogalo], Kaponja, Sagami, Kadedi, Yakamenya, Kanyawegi) • 5. Semi (Wadego, Yagudi, Awina; 7 clans: Kongo, Tieno [+ Dero], Kalunji, Kadipelo [sub-clans Kumbija, Konyiwera, Kobita, Kaura, Kanyabong], Kombewa, Were [+ Kanyadwero], Kokeri) • 6. Sembo (Adola; Umia & Kalei) • 7. Uyoma (late Lochi [d. 1899], Naiya; Kabuda, Katwenga, Kobong, Kukwiri) • 8. Sawakwa/Sakwa (Ugada, Undieki; 6 clans) • 9. Timu/Utimu/Kadimu (Anam, Uwori, Ugia; Kadimu, Rodi, Niaton) • 10. Songa (Unyando Wa-Mtoni & Wa-Juu)",
+          "pronunciation": "ja-luo / tho-luo / ge-mi / o-de-ra u-la-lo / le-go / ki-su-mu / se-mi / u-yo-ma / sa-kwa / ka-di-mu",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 2, pp. 52–55)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Nilotic Kavirondo Clan & Chief Registry (Part 2 — Kitoto Plain & South Nyanza, Hobley 1902, Ch. V § 2, pp. 55–56)",
+          "translation": "11. Kanu or Kadibo / Wa-Kitoto (Chiefs Kitoto [pure-bred native of Kisii/Kossova absorbed into the Nyamoga clan, p. 9], Amimo, Niagoli, late Sendegi; 9 clans: Nyamoga/Moga, Kajulu, Kadibu/Kanu, Kumulu/Koloa, Kubura, Kamagaga, Kabonya, Kamrungu, Kimera/Sua) • 12. Khoro & Kanyamoti (Uluma, Kahuri/Nyango, Handa; 4 clans: Makhoya, Umwangwi, Winyi, Mache) • 13. Kaki (Masingo, near Gangu lake) • 14. Aiendi / Kasagunga (Abomba; 5 clans: Aiendi, Sali, Diang, Tema, Kamreri) • 15. Ramba (Gori Kogalo; 10 clans: Kadweti, Kabonyo, Kajuang, Kanyamwa/Kanyambo, Yahunda, Saki [at Usau hill], Kachola/Kologi, Kamungu, Kuchieng, Kasudu) • 16. Nyakatch (Uhuri; 6 clans: Kadianga, Kabodo, Jimo, Kajembo, Kandaria, Kuguta) • 17. Kalachonyo (Nyakiti; 13 clans stretching to Uma/Oma Mountain: Kanyajok, Uma, Nyaluo, Kanyiperi, Adueti, Yakandaiya, Utienu, Kodera, Unyango, Akelu, Ojuach, Ukwainu, Kabondo)",
+          "pronunciation": "ka-nu / ka-di-bo / ki-to-to / nya-mo-ga / ra-mba / go-ri ko-ga-lo / nya-katch / ka-la-cho-nyo",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. I p. 9 & Ch. V § 2, pp. 55–56)",
+          "audioFile": null
+        },
+        {
+          "english": "Tho-Luo Verb Conjugation Paradigms for 'Come' (bi / obiro) and 'Want' (aduaro / oduaro) in Hobley (1902, p. 85)",
+          "translation": "Come (Inf. obiro, Imp. bi!): Pres. 1s abiro, 2s inibiro / ibiro, 3s obiro, 1p wanowabiro / wabiro, 2p unubiro, 3p gi-biro; Fut. 1s angaanabi; Past 1s nabiro; Neg. Pres. 1s ungekabi • Want (Inf. oduaro): Pres. 1s aduaro, 2s iniduaro / iduaro, 3s oduaro / enouaro, 1p wanuwaduaro, 2p unuduaro, 3p giduaro; Fut. 1s anganaduari; Past 1s naduaro; Neg. Pres. 1s adagi ('I refuse / do not want')",
+          "pronunciation": "a-bi-ro / i-bi-ro / o-bi-ro / wa-bi-ro / u-nu-bi-ro / gi-bi-ro / a-dua-ro / a-da-gi",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 85)",
+          "audioFile": null
+        },
+        {
+          "english": "Eight Noun Plural Classes of Nilotic Tho-Luo (Classes I–VIII) in Hobley (1902, p. 87)",
+          "translation": "Class I (suffix -tot): sere → seretot ('arrow'), le → letot ('axe/animal') • Class II (suffix -ngnen / -wen): winyo → winyongnen ('bird'), tong → tongwen ('spear/egg') • Class III (prefix e- → gi-): enuwadu → ginuwadu / ginuwadwa ('brother/companion') • Class IV (terminal -l → -k): diel → diek ('goat') • Class V (suffix -iji, dropping final vowel): chong/chonga → chongiji ('knee'), lak → lakiji ('tooth') • Class VI (terminal -a/-o → -i): wer/wera → weri ('song'), rombo → rombi ('sheep') • Class VII (invariant): lueta → lueta ('arm') • Class VIII (irregular): awang → wanga ('eye'), diang → dok ('cow'), ot → udi ('house'), hega → hegini ('year')",
+          "pronunciation": "se-re se-re-tot / wi-nyo wi-nyo-ngnen / di-el di-ek / cho-ng cho-ngi-ji / di-ang dok / ot u-di",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 87)",
+          "audioFile": null
+        },
+        {
+          "english": "Inclusive vs. Exclusive 'All' (waduto vs. giduto) & Men's vs. Women's Salutations (ukwe vs. amosi) in Hobley (1902, pp. 61, 76)",
+          "translation": "giduto ('all', referring to other people or things) vs. waduto ('all of us', where the speaker is included, p. 61) • ukwe (salutation used by men) vs. amosi (salutation used by women, p. 76)",
+          "pronunciation": "gi-du-to / wa-du-to / u-kwe / a-mo-si",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, pp. 61, 76)",
           "audioFile": null
         }
       ]
@@ -19109,5 +19418,5 @@
   "source": "Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 2497
+  "totalEntries": 2755
 }

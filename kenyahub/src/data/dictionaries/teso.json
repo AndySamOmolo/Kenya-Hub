@@ -3937,6 +3937,35 @@
           "context": "Sir Harry Johnston (1902, p. 850) — Elgumi/Wamia",
           "audioFile": null
         }
+        ,
+        {
+          "english": "Complete 1902 Registry of Wamia or Elgumi (Ba-Keddi) Chiefs & Subdivisions (Telemo, Ngoma & Para, Hobley 1902, p. 57)",
+          "translation": "Wamia or Elgumi (stretching from Chief Tindi's on the north side of the Sio River to Lake Kioga/Chioga, where the Baganda call them Ba-Keddi): Principal Chiefs Pakala, Lemugi, Mwenyikoi, Babukori, Eten, Oreddi, Kuresi • Subdivisions: 1. Telemo (Chief Nzoia), 2. Ngoma (Chiefs Pakala & Kuresi), 3. Para (Chief Kimi)",
+          "pronunciation": "wa-mi-a / el-gu-mi / ba-ked-di / te-le-mo / ngo-ma / pa-ra / pa-ka-la / ku-re-si",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 3, p. 57)",
+          "audioFile": null
+        },
+        {
+          "english": "Ten Miscellaneous Tribes West of Mount Elgon & Elgumi Origins of Awa-Kikelelwa / Awa-Lewi (Hobley 1902, pp. 9, 46–47, 57)",
+          "translation": "Ten Tribes West of Mount Elgon (Ch. V § 3, p. 57): Poto, Seguya, Brawa, Koko, Manguku (or Ngoko), Matanda (or Tanda), Mukonde (or Konde), Fumba, Mruma, and Wa-Muhasa • Elgumi irruption SW of Mt. Elgon checked the southward movement of the Nilotic tribes (p. 9), intermarried with the Awa-Tindi / Khaiyo (p. 46), and gave rise to the Awa-Kikelelwa / Awa-Lewi (~50 years before 1902, p. 47)",
+          "pronunciation": "po-to / se-gu-ya / bra-wa / ko-ko / ma-ngu-ku / ma-ta-nda / mu-ko-nde / fu-mba / m-ru-ma / mu-ha-sa",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. I p. 9 & Ch. V pp. 46–47, 57)",
+          "audioFile": null
+        },
+        {
+          "english": "Elgumi (Ateso / Wamia) Pronouns, Possessives, Interrogatives, Salutations & Verb Phrases in Hobley (1902, Ch. VII § II, pp. 92–95)",
+          "translation": "Pronouns & Possessives: ongo ('I'), iong ('you'), ungolo ('he'); borangi ('my'), langelo ('your'), elango ('his'); kajokisi ('all') • Interrogatives & Adverbs: inyanangoro? ('what?'), eborana? ('where?'), unguai? ('who?'), kanguai? ('whose?'), wa-mwasai? ('how many?'), lolo ('now/to-day'), taparacho ('to-morrow'), parani ('day/yesterday'), kolongoye ('day before yesterday') • Salutations: mata & yoka yoka ('salutation'), ekinok ('peace') • Verb Phrases: makerara? ('do you know?'), itungali ('I want'), akikoto ('want'), dia! ('come!'), ebuni ('he is coming'), koloto / alosito ('go'), kolotong ('he is going'), kiro ('he is telling'), kioro ('speak / he will tell'), kinera ('tell'), doliungni ('shall reach'), kiteroono ('wait'), konyono ('take away'), kadaona ('finished')",
+          "pronunciation": "o-ngo / i-ong / u-ngo-lo / bo-ra-ngi / la-nge-lo / e-la-ngo / ma-ta / yo-ka yo-ka / e-ki-nok",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § II, pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Elgumi (Ateso / Wamia) Quinary-Decimal Numerals 1–10 in Hobley (1902, Ch. VII § II, p. 95)",
+          "translation": "1 epe (also apuru), 2 are, 3 auni (or uni), 4 aungwen (or ongwon), 5 ekan (or akanyi), 6 kanyi kape (or akanya kape), 7 kanyi-kare, 8 kanyi kauni, 9 kanyi-ki-ongwon (or akanya kangwun), 10 atomon",
+          "pronunciation": "e-pe / a-re / a-u-ni / a-u-ngwen / e-kan / a-ka-nyi / ka-nyi ka-pe / ka-nyi ka-re / ka-nyi ka-u-ni / a-to-mon",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § II, p. 95)",
+          "audioFile": null
+        }
       ]
     },
     {
@@ -4118,5 +4147,5 @@
   "source": "Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
   "isoCode": "teo",
   "glottocode": "teso1247",
-  "totalEntries": 572
+  "totalEntries": 576
 }

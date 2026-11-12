@@ -3621,4 +3621,358 @@ export const KIKUYU_UNITS: CourseUnit[] = [
       }
     ]
   }
+  ,
+  {
+    "id": "kikuyu-unit-hemery-1903-handbook",
+    "title": "Unit 13: Hémery (1903) English-Kikuyu Hand-Book — 9 Noun Classes, Kohora Paradigm, Enclitics (-le & -tya) & 5-Part Phrase-Book",
+    "description": "Master the complete grammar, 3-way demonstratives, Kohora verb paradigm, 5 derived verb stems, particles (pp. 13–14), and 5-part Phrase-Book (Usual, Servants & Meals, Village Visit, Working, In Caravan) from Rev. Fr. A. Hémery's 1903 English-Kikuyu Hand-Book.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kikuyu-hemery-1903-grammar-particles-13-1",
+        "title": "9 Noun Classes, 3-Way Demonstratives, Kohora Conjugation & Enclitics (-le & -tya)",
+        "icon": "Sparkles",
+        "description": "Study Hémery's (1903, pp. 1–14) 9 noun classes, ka-/to- diminutives, ke- augmentatives, 3-way demonstratives, full Kohora paradigm, and enclitic particles.",
+        "tips": "In Rev. Fr. A. Hémery's English-Kikuyu Hand-Book (1903, pp. 8, 13–14), demonstratives distinguish Near (oyo, geke, rere), Distant (olya, kelya, relya), and Spoken of Beforehand (oshio, keo, reo); the enclitic -le affixed to a verb means 'when / as / if' (Ndalutara werale negokwata rupia), and -tya means 'how / what?' (Waekatya?).",
+        "words": [
+          {
+            "target": "Cl. VI Letwa → Maletwa, Ondo → Maondo, Taama → Mataama • Cl. VII Logito → Ngito, Loleme → Ndeme, Loara → Ndoara • Cl. VIII Kiombe → Shiombe, Kiongoyo → Shiongoyo",
+            "source": "Name, cause, cloth (Ø → ma-) • Roof, tongue, nail (l-/lo- → n-/nd-) • Person, fish (ki- → shi-)",
+            "pronunciation": "le-twa ma-le-twa / lo-gi-to ngi-to / lo-le-me nde-me / ki-o-mbe shi-o-mbe",
+            "hint": "Hémery (1903, Ch. I, Book pp. 2–3)"
+          },
+          {
+            "target": "Kangondu, Kamunyu, Kangombe • Tomae, Toirio • Kengombe, Kemunyu",
+            "source": "Small sheep, little salt, little ox (ka- dimin.) • Little water, little food (to- dimin.) • Big ox, plenty of salt (ke- augm.)",
+            "pronunciation": "ka-ngo-ndu / ka-mu-nyu / to-ma-e / to-i-ri-o / ke-ngo-mbe",
+            "hint": "Hémery (1903, Ch. I, Book pp. 3–4)"
+          },
+          {
+            "target": "Mundu oyo / olya / oshio • Kendo geke / kelya / keo • Ihiga rere / relya / reo",
+            "source": "This (near) / that (distant) / that (spoken of beforehand) man, thing, and stone",
+            "pronunciation": "o-yo o-lya o-shi-o / ge-ke ke-lya ke-o / re-re re-lya re-o",
+            "hint": "Hémery (1903, Ch. IV Art. III, Book p. 8)"
+          },
+          {
+            "target": "Ndahora (Neg. Ndihora) • Nderahora / Ndehorete / Ndehorile (Neg. Ndinahora) • Ndakehora • Ne ngohora (Neg. Ndikohora) • Ningehora / Ningehorile",
+            "source": "I beat (do not beat) • I beat / have beaten (did not beat) • I beat (narrative) • I shall beat (shall not beat) • I would beat / would have beaten",
+            "pronunciation": "nda-ho-ra / ndi-ho-ra / nde-ra-ho-ra / nda-ke-ho-ra / ne ngo-ho-ra / ni-nge-ho-ra",
+            "hint": "Hémery (1903, Ch. V Art. I, Book pp. 9–10)"
+          },
+          {
+            "target": "Aderere! • Ndalutara werale negokwata rupia • Waekatya? • Ne muhoro — Nde muhoro, muhoro mweg • Tiguo uhoro (pl. tigwoni uhoro)",
+            "source": "Listen to me! • If I do work I shall get Rupees (-le = if/when) • What do you do? (-tya = how?) • Good day — I am well • Good-bye (sg. / pl.)",
+            "pronunciation": "a-de-re-re / nda-lu-ta-ra we-ra-le / wa-e-ka-tya / ne mu-ho-ro / ti-gu-o u-ho-ro",
+            "hint": "Hémery (1903, Book pp. 13–14)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ndalutara werale negokwata rupia.",
+            "source": "If I do work I shall get Rupees. (Hémery 1903, Book p. 13)"
+          },
+          {
+            "target": "Omwe alutaga wera, ungi ne aikara se.",
+            "source": "One works (continually, -ga), another sits down. (Hémery 1903, Book p. 8)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Rev. Fr. A. Hémery's English-Kikuyu Hand-Book (1903, Book p. 13), what does the enclitic suffix '-le' attached to a verb (as in 'Ndalutara werale negokwata rupia') express?",
+            "correctAnswer": "'When, as, if' (conditional/temporal clause marker)",
+            "options": [
+              "'When, as, if' (conditional/temporal clause marker)",
+              "Negative imperative prefix",
+              "Augmentative noun class prefix",
+              "Passive voice suffix"
+            ],
+            "hint": "See Hémery (1903, Book p. 13: '-le, affixed to the verb, is equivalent to our when, as, if')"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu demonstrative or particle from Hémery (1903, Book pp. 8, 13–14) with its meaning:",
+            "correctAnswer: "Mundu oshio / Kendo keo / Ihiga reo: That man / thing / stone spoken of beforehand",
+            "pairs": [
+              {
+                "left": "Mundu oshio / Kendo keo / Ihiga reo",
+                "right": "That man / thing / stone spoken of beforehand"
+              },
+              {
+                "left": "Aderere!",
+                "right": "Listen, listen to me! (call for attention before talking)"
+              },
+              {
+                "left": "Rochio / Oke / Ira / Iyo",
+                "right": "To-morrow / Day after to-morrow / Yesterday / Day before yesterday"
+              },
+              {
+                "left": "Tiguo uhoro (pl. tigwoni uhoro)",
+                "right": "Good-bye, farewell (sg. & pl.)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-hemery-1903-phrasebook-13-2",
+        "title": "Phrase-Book Sections I–V: Village Visit, Household, Agriculture & Caravan Dialogues",
+        "icon": "MessageCircle",
+        "description": "Practice authentic 1903 Kikuyu dialogues from Hémery's 5-part Phrase-Book (Book pp. 77–87): Usual, Servants & Meals, A Visit to a Village, Working, and In Caravan.",
+        "tips": "Hémery's Phrase-Book (1903, pp. 77–87) records everyday 1902–1903 Nairobi/Kiambu Kikuyu conversations on village life, staple crops (ngwadje, mbosho, mohea, mbembe), honey/sugar-cane brewing (djohi na oke kana na igwa), medical care, and 500-porter caravan logistics.",
+        "words": [
+          {
+            "target": "Waetagwa-tya? • We moona-ko? • We huma-ko? • Wasie-ko?",
+            "source": "What is your name? • What tribe do you belong to? • Where do you come from? • Where are you going?",
+            "pronunciation": "wa-e-ta-gwa-tya / we moo-na-ko / we hu-ma-ko / wa-si-e-ko",
+            "hint": "Hémery (1903, Phrase-Book I, Book p. 78)"
+          },
+          {
+            "target": "Okolya saa shiigana? — Ta saa kumi na igere, rochine (6 a.m.) • Irio lya mosenya, lya saa inya (10 a.m.)",
+            "source": "When have you your meals? — About 6 a.m. • Breakfast is at 10 a.m. (Swahili-style 12-hour daylight clock)",
+            "pronunciation": "o-ko-lya saa shi-i-ga-na / ta saa ku-mi na i-ge-re ro-chi-ne",
+            "hint": "Hémery (1903, Phrase-Book II, Book p. 79)"
+          },
+          {
+            "target": "Kozondeka-tya ucholo? • Kozondeka-tya djohi eno? Na oke, kana na igwa?",
+            "source": "How do you prepare the gruel? • How do you make this liquor? With honey or sugar-cane?",
+            "pronunciation": "ko-zo-nde-ka-tya u-cho-lo / djo-hi e-no / na o-ke ka-na na i-gwa",
+            "hint": "Hémery (1903, Phrase-Book III, Book p. 81)"
+          },
+          {
+            "target": "Ndena kehuti • Ndaharwo / Ndaharwo katema • Wasisina-le? ne ogohona • Guoko kwakwa ne ekonekete",
+            "source": "I have fever • I have diarrhœa / dysentery • If you perspire, you will feel better • My arm is broken",
+            "pronunciation": "nde-na ke-hu-ti / nda-ha-rwo ka-te-ma / wa-si-si-na-le ne o-go-ho-na",
+            "hint": "Hémery (1903, Phrase-Book III, Book p. 82)"
+          },
+          {
+            "target": "Akui magana atano • Mnyampara mwega • Huha choro! • Keraro kya mbele • Twahota koringa na magoro?",
+            "source": "Five hundred porters • A good headman • Beat the drum/horn! • The first camp • Can we wade across on foot?",
+            "pronunciation": "a-ku-i ma-ga-na a-ta-no / m-nya-mpa-ra mwe-ga / hu-ha cho-ro / ke-ra-ro",
+            "hint": "Hémery (1903, Phrase-Book V, Book pp. 84–85)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mwere mnene ne ngoenda ndurume na nguadje shya akui; ne akwenda rupia, kana mataama, kana megase?",
+            "source": "Tell the chief I want a sheep and some potatoes for the porters; does he want rupees, or clothes, or beads? (Hémery 1903, Book pp. 86–87)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Hémery's Phrase-Book III ('A Visit to a Village', 1903, Book p. 81), what two ingredients are asked about in 'Kozondeka-tya djohi eno? Na oke, kana na igwa?' for brewing traditional Kikuyu liquor (djohi)?",
+            "correctAnswer": "Honey (oke) or sugar-cane (igwa)",
+            "options": [
+              "Honey (oke) or sugar-cane (igwa)",
+              "Sweet potatoes (nguadje) or yams (ikwa)",
+              "Beans (mbosho) or rice (mchele)",
+              "Castor-oil (mbariki) or ghee (maguta)"
+            ],
+            "hint": "oke = honey; igwa = sugar-cane (Hémery 1903, Book p. 81)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each conversational Kikuyu sentence from Hémery's Phrase-Book (1903, pp. 78–85) with its English meaning:",
+            "correctAnswer: "We moona-ko?: What tribe do you belong to? (p. 78)",
+            "pairs": [
+              {
+                "left": "We moona-ko?",
+                "right": "What tribe do you belong to? (p. 78)"
+              },
+              {
+                "left": "Kira! Manegene!",
+                "right": "Silence! Hold your tongue! (p. 78)"
+              },
+              {
+                "left": "Wasisina-le? ne ogohona",
+                "right": "If you get into a perspiration, you will feel better (p. 82)"
+              },
+              {
+                "left": "Twahota koringa na magoro?",
+                "right": "Can we wade across on foot? (p. 85)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  ,
+  {
+    "id": "kikuyu-unit-mcgregor-1904-vocabulary",
+    "title": "Unit 14: McGregor (1904) English-Kikuyu Vocabulary (Fort Smith / Kabeti, 1901–1902) — Orthography, Kinship, 7-Day Sequence, Seasons & Customary Law",
+    "description": "Master the Kabeti (Fort Smith) orthography (th for s/z, ng' vs. ng'g), plural bracket conventions, suppletive kinship, 7-day time sequence, agricultural seasons (Kathano, Kehu, Njahi, Mweri, Mohea), customary law (Chira, Magambo, Muma, Oramati), and conversational idioms from Rev. A. W. McGregor's 1904 English-Kikuyu Vocabulary.",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kikuyu-mcgregor-1904-orthography-kinship-time-14-1",
+        "title": "Kabeti Orthography (Th, Ng' vs. Ng'g), Suppletive Kinship, 7-Day Sequence & Seasons",
+        "icon": "Sparkles",
+        "description": "Study McGregor's (1904, pp. iii–iv, 5–192) Fort Smith (Kabeti) phonological rules, plural bracket system, kinship possessives, 7-day sequence, and seasonal calendar.",
+        "tips": "In Fort Smith / Kabeti (McGregor 1904, p. 5), S and Z are replaced by Th; ng' (as in koteng'era) is pronounced koteng-era (velar nasal), whereas ng'g (as in kuing'gata) sounds both the velar nasal and hard g.",
+        "words": [
+          {
+            "target": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) • Mwetereri (Etereri) • Gechunji (I-) → Ichunji",
+            "source": "To run/abscond (koteng-era) vs. to banish/conquer & ball • Servant (pl. Etereri) • Portion (pl. Ichunji)",
+            "pronunciation": "ko-teng-e-ra / ku-ing-ga-ta / mw-e-te-re-ri e-te-re-ri / ge-chu-nji i-chu-nji",
+            "hint": "McGregor (1904, Note & Observe A–B, Book pp. 5–6)"
+          },
+          {
+            "target": "Baba / Thoguo / Ithi (pl. Maithi) • Maito / Nyukwa / Nyina (pl. Manyina) • Rorachio (Marorachio) & Wathiomo",
+            "source": "My / your / his-her father (pl. fathers) • My / your / his-her mother (pl. mothers) • Bride-wealth gift to bride's father & gift of a goat",
+            "pronunciation": "ba-ba tho-gu-o i-thi ma-i-thi / ma-i-to nyu-kwa nyi-na ma-nyi-na / ro-ra-chi-o / wa-thi-o-mo",
+            "hint": "McGregor (1904, Book pp. 63, 73, 114, 122, 137)"
+          },
+          {
+            "target": "Iyo → Ira → Reu / Omothi → Rochio → Oke → Matukwatatu → Matukwana",
+            "source": "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 2 days after to-morrow → 3 days after to-morrow",
+            "pronunciation": "i-yo / i-ra / re-u o-mo-thi / ro-chi-o / o-ke / ma-tu-kwa-ta-tu / ma-tu-kwa-na",
+            "hint": "McGregor (1904, Book pp. 44, 114, 170, 191–192)"
+          },
+          {
+            "target": "Kathano (Mwaka wa heho) & Mwaka wa kehu • Mwaka wa Njahi, Mweri, Mohea",
+            "source": "Greater rainy season (winter) & lesser rainy season • Agricultural seasons of Lablab beans (Njahi), bulrush millet (Mweri), and sorghum (Mohea)",
+            "pronunciation": "ka-tha-no / mwa-ka wa ke-hu / mwa-ka wa nja-hi mwe-ri mo-he-a",
+            "hint": "McGregor (1904, Book pp. 142, 154, 188, 191)"
+          },
+          {
+            "target": "Kilinyatha / Kireira / Kirinyaga • Kabeti (Fort Smith) • Itherero / Ithereru & Naruguru / Gothoa",
+            "source": "Mount Kenia (4,000–18,000 ft) • Kabeti (Fort Smith) • East/South/Coast & West",
+            "pronunciation": "ki-li-nya-tha / ki-rei-ra / ki-ri-nya-ga / ka-be-ti / i-the-re-ro / na-ru-gu-ru",
+            "hint": "McGregor (1904, Preface pp. iii–iv & Book pp. 34, 54, 95, 160, 186)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Tuthie kwitu! — Ndainuka (Nendathie). — Thie na uhoro!",
+            "source": "Let us go along! — I am going home. — Go in peace! (McGregor 1904, Book pp. 14, 63, 76)"
+          },
+          {
+            "target": "Kotariatea? — Kwena matu / Kwena heho / Kwena rugari.",
+            "source": "What kind of weather is it? — It is cloudy / It is cold / It is hot weather. (McGregor 1904, Book pp. 84, 185)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Rev. A. W. McGregor's English-Kikuyu Vocabulary (1904, Book p. 5), how does the Fort Smith (Kabeti) orthography distinguish 'koteng'era' (to run/abscond) from 'kuing'gata' (to banish/conquer/drive away)?",
+            "correctAnswer": "'ng'' (with a point after ng) represents the pure velar nasal (pronounced koteng-era, not koten-gera), whereas 'ng'g' represents both the velar nasal and the hard g sound",
+            "options": [
+              "'ng'' (with a point after ng) represents the pure velar nasal (pronounced koteng-era, not koten-gera), whereas 'ng'g' represents both the velar nasal and the hard g sound",
+              "'ng'' is a glottal stop, whereas 'ng'g' is a labial-velar click",
+              "'ng'' only occurs in borrowed Swahili words, whereas 'ng'g' only occurs in numerals",
+              "Both are pronounced identically as 'nj'"
+            ],
+            "hint": "See McGregor (1904, Note p. 5: 'koteng'era, with a point after ng. This must be pronounced koteng-era, not koten-gera. Some words have both the nasal ng and the g hard sound, as kuing'gata')"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu seasonal or temporal term from McGregor (1904, pp. 114, 142, 154, 191) with its English meaning:",
+            "correctAnswer": "Kathano vs. Mwaka wa kehu: Greater rainy season (winter) vs. lesser rainy season (p. 142)",
+            "pairs": [
+              {
+                "left": "Kathano vs. Mwaka wa kehu",
+                "right": "Greater rainy season (winter) vs. lesser rainy season (p. 142)"
+              },
+              {
+                "left": "Mwaka wa Njahi, Mweri, Mohea",
+                "right": "Crop-year seasons of lablab beans, bulrush millet & sorghum (pp. 154, 191)"
+              },
+              {
+                "left": "Rochio → Oke → Matukwatatu → Matukwana",
+                "right": "To-morrow → Day after to-morrow → 2 & 3 days after to-morrow (p. 114)"
+              },
+              {
+                "left": "Kilinyatha / Kireira / Kirinyaga",
+                "right": "Mount Kenia (pp. iv, 95)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-mcgregor-1904-law-religion-idioms-14-2",
+        "title": "Customary Law (Chira, Magambo, Muma, Oramati), Ethnomedicine & Conversational Idioms",
+        "icon": "MessageCircle",
+        "description": "Learn McGregor's (1904, pp. 6–192) terminology for Kikuyu courts, murder composition, ordeal oaths, peacemaking, ritual, and everyday questions.",
+        "tips": "Notice how McGregor (1904) records judicial and ritual institutions: Chira (council/law), Magambo (composition for murder, p. 36), Konyua muma (taking the ordeal cup/oath, pp. 120, 124), Oramati (inheritance/birthright, pp. 23, 90), and Kotaithorana (to make peace / reconcile, p. 130).",
+        "words": [
+          {
+            "target": "Chira (Ma-) • Muchiri (A-) • Muchirithia (A-) vs. Muchirithio (A-) • Magambo / Mugambo (Mi-) • Konyua muma",
+            "source": "Council/law/decision • Judge/arbitrator/orator • Plaintiff/prosecutor vs. Defendant • Composition/fine for murder • To take an oath (ordeal cup)",
+            "pronunciation": "chi-ra / mu-chi-ri / mu-chi-ri-thi-a / ma-ga-mbo / ko-nyu-a mu-ma",
+            "hint": "McGregor (1904, Book pp. 10, 36, 45, 66, 94, 120, 124, 133, 139)"
+          },
+          {
+            "target": "Muramati (A-) & Oramati • Mutaithorani (A-) / Mugwithania (A-) & Kotaithorana • Mukori (Akori) & Okori",
+            "source": "Heir/inheritor & birthright/inheritance • Peacemaker/mediator/advocate & to make peace • Redeemer/ransomer & redemption/ransom",
+            "pronunciation": "mu-ra-ma-ti o-ra-ma-ti / mu-ta-i-tho-ra-ni / ko-ta-i-tho-ra-na / mu-ko-ri o-ko-ri",
+            "hint": "McGregor (1904, Book pp. 11, 23, 36, 81–82, 90, 109, 130, 142, 146)"
+          },
+          {
+            "target": "Ngai (Makai) & Ngai angienda • Kegongaini (I-) & Igongona (Magongona) • Thahu / Mugiru (Migiri) • Nyoni njega vs. Nyoni njoru",
+            "source": "God & 'If God wills (D.V.)' • Altar & sacrifice/offering • Ceremonial pollution/taboo • Good omen vs. bad omen/mischance",
+            "pronunciation": "nga-i a-ngi-e-nda / ke-go-nga-i-ni / i-go-ngo-na / tha-hu mu-gi-ru / ny-o-ni nje-ga njo-ru",
+            "hint": "McGregor (1904, Book pp. 14, 75, 88, 112, 122–123, 138, 157, 181)"
+          },
+          {
+            "target": "Mundu mugo (A-) & Kahiyu ka mundu mugo (To-) • Muthaiga wa ndaa / hinguranda & Muthaiga wa koharithia • Murututu",
+            "source": "Doctor/medicine-man & lancet • Emetic medicine & purgative medicine • Sulphate of copper (vitriol)",
+            "pronunciation": "mu-ndu mu-go / mu-tha-i-ga wa hi-ngu-ra-nda / mu-ru-tu-tu",
+            "hint": "McGregor (1904, Book pp. 50, 56, 97, 109, 132, 139, 164, 181)"
+          },
+          {
+            "target": "Thingira (Ma-) • Itara (Ma-) & Ikombi (Ma-) • Mungu (Miungu) • Kewochi kya ngorono (Iwochi) / Katete",
+            "source": "Man's hut • Granary/garner/loft/store • Refuge pit of men • Butter churn",
+            "pronunciation": "thi-ngi-ra / i-ta-ra i-ko-mbi / mu-ngu / ke-wo-chi kya ngo-ro-no",
+            "hint": "McGregor (1904, Book pp. 33, 72, 84–85, 103, 146, 162, 183)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Hari na mundu. — Akuugatea? — Anga nengothie, Ngai angienda.",
+            "source": "There was a man. — How does he speak? — Suppose I go, if God wills (D.V.). (McGregor 1904, Book pp. 84, 138, 164, 167)"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Rev. A. W. McGregor's English-Kikuyu Vocabulary (1904, Book pp. 36, 66, 120, 124), which two legal terms denote (1) the composition/fine paid for murder and (2) taking the solemn ordeal cup / oath?",
+            "correctAnswer": "'Magambo / Mugambo (Mi-)' (composition/fine for murder) and 'Konyua muma' (to take the ordeal cup / oath)",
+            "options": [
+              "'Magambo / Mugambo (Mi-)' (composition/fine for murder) and 'Konyua muma' (to take the ordeal cup / oath)",
+              "'Rorachio' (bride-wealth) and 'Wathiomo' (gift of a goat)",
+              "'Itara' (granary) and 'Thingira' (man's hut)",
+              "'Kathano' (greater rains) and 'Kehu' (lesser rains)"
+            ],
+            "hint": "See McGregor (1904, p. 36 'Composition [for murder]: Magambo', p. 66 'Fine [for murder]: Mugambo [Mi-]', pp. 120, 124 'Oath, to take an [take ordeal cup]: Konyua muma')"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu institutional or architectural term from McGregor (1904) with its meaning:",
+            "correctAnswer": "Muramati (A-) / Oramati: Heir / Birthright & inheritance (pp. 23, 81, 90)",
+            "pairs": [
+              {
+                "left": "Muramati (A-) / Oramati",
+                "right": "Heir / Birthright & inheritance (pp. 23, 81, 90)"
+              },
+              {
+                "left": "Mutaithorani (A-) / Kotaithorana",
+                "right": "Peacemaker, mediator, advocate / To make peace (pp. 10–11, 130)"
+              },
+              {
+                "left": "Mungu (Miungu)",
+                "right": "Refuge pit of men (p. 146)"
+              },
+              {
+                "left": "Itara (Ma-) & Ikombi (Ma-)",
+                "right": "Garner, granary, loft & food storehouse (pp. 72, 103, 162, 183)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ];

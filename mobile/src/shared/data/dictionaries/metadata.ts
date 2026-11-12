@@ -68,10 +68,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Tana River"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17323,
+    "dictionaryVersion": "3.1",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
+    "totalEntries": 17331,
     "categories": [
       {
         "id": "greetings",
@@ -167,7 +167,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 151
+        "count": 159
       }
     ]
   },
@@ -186,10 +186,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Nyandarua"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery (1903), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
-    "totalEntries": 10667,
+    "dictionaryVersion": "3.2",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
+    "totalEntries": 10687,
     "categories": [
       {
         "id": "greetings",
@@ -285,7 +285,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 2948
+        "count": 2968
       }
     ]
   },
@@ -303,10 +303,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Migori"
     ],
     "hasAudio": true,
-    "dictionaryVersion": "3.3",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language, Containing the Grammar and Phraseology\", Caxton Printing & Publishing Works, Nairobi), and BFBS (1921).",
-    "totalEntries": 2711,
+    "dictionaryVersion": "3.5",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96 & 1903 \"Anthropological Studies in Kavirondo and Nandi\"), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language, Containing the Grammar and Phraseology\", Caxton Printing & Publishing Works, Nairobi), and BFBS (1921).",
+    "totalEntries": 2755,
     "categories": [
       {
         "id": "greetings",
@@ -402,7 +402,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 300
+        "count": 344
       }
     ]
   },
@@ -424,10 +424,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "West Pokot"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.2",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
-    "totalEntries": 4583,
+    "dictionaryVersion": "3.4",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen / Sabaot / Ogiek) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96, 1903 \"Anthropological Studies in Kavirondo and Nandi\", 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
+    "totalEntries": 4613,
     "categories": [
       {
         "id": "greetings",
@@ -523,7 +523,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1517
+        "count": 1547
       }
     ]
   },
@@ -541,10 +541,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Busia"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.2",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
-    "totalEntries": 3495,
+    "dictionaryVersion": "3.4",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli, Lusinga/Chula) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96 & 1903 \"Anthropological Studies in Kavirondo and Nandi\"), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15).",
+    "totalEntries": 3537,
     "categories": [
       {
         "id": "greetings",
@@ -640,7 +640,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 399
+        "count": 441
       }
     ]
   },
@@ -997,10 +997,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Nyamira"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.2",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
-    "totalEntries": 1110,
+    "dictionaryVersion": "3.3",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Kisii (Ekegusii / Kossova) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 8–9, 51, 86, 89–91) and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria).",
+    "totalEntries": 1116,
     "categories": [
       {
         "id": "greetings",
@@ -1096,7 +1096,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 168
+        "count": 174
       }
     ]
   },
@@ -1458,10 +1458,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Busia"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921).",
-    "totalEntries": 572,
+    "dictionaryVersion": "3.1",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Teso (Ateso / Elgumi / Wamia) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 9, 46–47, 57, 92–95), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921).",
+    "totalEntries": 576,
     "categories": [
       {
         "id": "greetings",
@@ -1539,7 +1539,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 173
+        "count": 177
       },
       {
         "id": "time",
@@ -1668,10 +1668,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Taita-Taveta"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.3",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3558,
+    "dictionaryVersion": "3.4",
+    "lastUpdated": "2026-11-11",
+    "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled and verified line-by-line from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London — 100% of Preface pp. ii–iii, Part I Grammar pp. 5–76, and Part II English–Sagalla Vocabulary pp. 77–128), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
+    "totalEntries": 3570,
     "categories": [
       {
         "id": "greetings",
@@ -1767,7 +1767,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1006
+        "count": 1018
       }
     ]
   },
@@ -2014,10 +2014,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Garissa"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.5",
-    "lastUpdated": "2026-11-11",
-    "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Charles & Lawrence Tutschek (1844 \"Dictionary of the Galla Language\" Part I; 1845 Part II & \"A Grammar of the Galla Language\", translated by M. J. Smead), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7627,
+    "dictionaryVersion": "3.6",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Charles & Lawrence Tutschek (1844 \"Dictionary of the Galla Language / Lexicon der Galla Sprache\" Part I pp. I–LIX, 1–205; 1845 Part II pp. 1–126 & \"A Grammar of the Galla Language\" pp. I–VIII, 1–107, with Akafed'e Dalle of Hambo, Otshu Aga of Sibu, Bilile of Guma, Aman Gonda of Goma, and Duke Paul William of Württemberg), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
+    "totalEntries": 7647,
     "categories": [
       {
         "id": "greetings",
@@ -2113,7 +2113,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 56
+        "count": 76
       }
     ]
   },

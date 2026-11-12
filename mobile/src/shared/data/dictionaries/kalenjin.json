@@ -32182,6 +32182,217 @@
           "pronunciation": "kipkarich",
           "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
           "audioFile": null
+        },
+        {
+          "english": "Hyæna (Nandi totem #1 recorded by Hobley 1903)",
+          "translation": "Magetiet",
+          "pronunciation": "ma-ge-ti-et",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Jackal (Nandi totem #2 recorded by Hobley 1903)",
+          "translation": "Leluot",
+          "pronunciation": "le-lu-ot",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Kite (Nandi totem #3 recorded by Hobley 1903)",
+          "translation": "Chebineret",
+          "pronunciation": "che-bi-ne-ret",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Buzzard (Nandi totem #4 recorded by Hobley 1903)",
+          "translation": "Chebkukusiot",
+          "pronunciation": "cheb-ku-ku-si-ot",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Water tortoise (Nandi totem #5 recorded by Hobley 1903)",
+          "translation": "Chebkukuchet",
+          "pronunciation": "cheb-ku-ku-chet",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Chameleon (Nandi totem #6 recorded by Hobley 1903)",
+          "translation": "Nyeretiat",
+          "pronunciation": "nye-re-ti-at",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Crested crane (Nandi totem #7 recorded by Hobley 1903)",
+          "translation": "Kungonyot",
+          "pronunciation": "ku-ngo-nyot",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Elephant (Nandi totem #8 recorded by Hobley 1903; may be eaten without evil effects)",
+          "translation": "Beliot",
+          "pronunciation": "be-li-ot",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 348)",
+          "audioFile": null
+        },
+        {
+          "english": "Spirit of lightning (who descended in human form into a cave on Mount Tinderet until wounded by the Oggiek)",
+          "translation": "Ilet",
+          "pronunciation": "i-let",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 359 — Kamililo Nandi legend)",
+          "audioFile": null
+        },
+        {
+          "english": "Extinct volcano 30 miles east of Kisumu where the cave of Ilet (spirit of lightning) is situated",
+          "translation": "Tinderet",
+          "pronunciation": "ti-nde-ret",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 359)",
+          "audioFile": null
+        },
+        {
+          "english": "Son of (Nandi patronymic prefix); country of Arab Kibosone where Ilet died after fleeing Tinderet",
+          "translation": "Arab (Arab Kibosone)",
+          "pronunciation": "a-rab / a-rab ki-bo-so-ne",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 359)",
+          "audioFile": null
+        },
+        {
+          "english": "Forest hunters (Wandorobbo) on Mount Tinderet who shot the lightning spirit Ilet with poisoned arrows",
+          "translation": "Oggiek (Wandorobbo)",
+          "pronunciation": "og-gi-ek",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 359)",
+          "audioFile": null
+        },
+        {
+          "english": "Mount Elgon Kalenjin tribes who migrated from Mount Kamalinga (45 miles NW of Elgon) and preserved the Elgon volcanic fire legend",
+          "translation": "Lako & Savei (Kamalinga)",
+          "pronunciation": "la-ko / sa-ve-i / ka-ma-li-nga",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 332)",
+          "audioFile": null
+        },
+        {
+          "english": "Unmarried girls from whom a newly pregnant Nandi wife borrows leather tassels/aprons to sew on her ox-hide robe",
+          "translation": "nditos",
+          "pronunciation": "ndi-tos",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 345)",
+          "audioFile": null
+        },
+        {
+          "english": "Full-moon surgical ceremony in Guasangishu and Nandi (with 2–3 miniature 3-ft cow-dung grass steeple huts filled with yellow Solanum fruit)",
+          "translation": "Mika",
+          "pronunciation": "mi-ka",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 351–352)",
+          "audioFile": null
+        },
+        {
+          "english": "Conical red clay mass studded with yellow Solanum fruit on a stool (1900 Nandi peace medicine) & green acacia-thorn shield charm",
+          "translation": "Solanum peace medicine & shield acacia-thorn charm",
+          "pronunciation": "so-la-num / la-i-bon",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 343–345)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi cattle omens: a cow protruding its tongue excessively or twisting its tail round a roadside sapling (killed immediately to avert evil)",
+          "translation": "Nandi cattle tongue & tail omens",
+          "pronunciation": "na-ndi",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 342)",
+          "audioFile": null
+        },
+        {
+          "english": "Five Nandi family heads recorded in Hobley's 1903 census (15 wives, 39 children, 31 surviving; 48¾% male / 51¼% female)",
+          "translation": "Kerombas • Arab Kibei • Arabtalum • Arab Katum • Jenjoria",
+          "pronunciation": "ke-ro-mbas / a-rab ki-be-i / a-rab-ta-lum / a-rab ka-tum / je-njo-ri-a",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, p. 356)",
+          "audioFile": null
+        },
+        {
+          "english": "Purgative medicine made from the dark-leaved Emuthi tree (used in Koromojo to cure eating a totem animal)",
+          "translation": "Eyarri (Emuthi)",
+          "pronunciation": "e-yar-ri / e-mu-thi",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 348–349)",
+          "audioFile": null
+        },
+        {
+          "english": "Ja-Luo genealogical ancestor of the Nandi and Lumbwa tribes (son of Ramogi; cf. Ja-Lango / Lango)",
+          "translation": "Alangu (Lango / Ja-Lango)",
+          "pronunciation": "a-la-ngu / la-ngo",
+          "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 328–331)",
+          "audioFile": null
+        }
+        ,
+        {
+          "english": "Nandi Hut Plan (Fig. 13: Sleeping Benches A & B, 3 Hearth Stones, Wicker Ceiling), Nandi Hoe (Fig. 4), Koromojo/Turkana Spiked Ring Traps & Escarpment Caves",
+          "translation": "Round Nandi hut (Fig. 13: walls 3 ft 6 in to 4 ft high, raised 6-in mud sleeping benches A & B for husband and wife under a 3 ft 6 in wicker-work ceiling storing grain gourds & tobacco, 3 hearth stones 1–3, and goat compartment) • Smaller Nandi iron/wooden hoe (Fig. 4, p. 16) • Detachable barbed poisoned elephant javelin • Koromojo & Turkana spiked wooden-ring game snares on E. Mount Elgon • Lako & El-Gonyi caves on Mt. Elgon and Nandi refuge caves on the Kisumu escarpment",
+          "pronunciation": "kot / mu-go-mbet / e-nga-bu-net",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. IV, pp. 16, 36–37, Figs. 4, 13)",
+          "audioFile": null
+        },
+        {
+          "english": "Burial of Poyisia (Father of the Laibon Kibeles) Under a Cattle-Dung Mound, Nandi Bride-Price (4 Goats, 1 Bullock, 1 Cow) & Elmoran / Elmoru / Dittos Order",
+          "translation": "Poyisia (father of the Laibon Kibeles, buried in a shallow trench in his cattle yard under a mound of cattle dung and thorns, p. 37) • Nandi marriage price: 4 goats, 1 bullock & 1 cow (arranged over 3 days before building the new house) • Social grades: elmoran (young warriors, take snuff), elmoru (married men, chew tobacco), dittos (unmarried girls, wear beaded leather apron with tassels), and married women (wear shoulder-to-knee skin; old women smoke tobacco)",
+          "pronunciation": "po-yi-si-a / ki-be-les / el-mo-ran / el-mo-ru / dit-tos",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. IV, pp. 37–39)",
+          "audioFile": null
+        },
+        {
+          "english": "Kabkeven Pottery Hill in Kakapoch, Chibkonyoin Iron Ore & El Konono Smiths, Lumbwa Liquid Tobacco Snuff, Mbolio Saline Mud & Zezees Bark Zithers",
+          "translation": "Kabkeven ('place where pottery is made' by women; famous hill in Kakapoch country, SW Nandi) • Chibkonyoin (iron-ore site north of Kipturi Station, carried on donkeys and forged by Guasangishu El Konono and Nandi smiths) • Lumbwa liquid tobacco snuff (tobacco macerated with water in a neck-slung goat horn, pounded with a small iron pestle, and poured into one nostril while tilting the head) • mbolio (saline swamp mud where cattle are taken to drink) • zezees (raft zithers of bound sticks with raised bark strings and two bridges)",
+          "pronunciation": "kab-ke-ven / ka-ka-poch / chib-ko-nyo-in / el ko-no-no / m-bo-li-o / ze-zees",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. IV, pp. 38–39)",
+          "audioFile": null
+        },
+        {
+          "english": "Hereditary Nandi Laibons (3rd-Night Infant Ox-Tail Sign & Detached-Head Raid Omen), Kamasia Rain-Root, Father's Skin-Cloak Curse & Egg Snake-Bite Remedy",
+          "translation": "A laibon's newborn son disappears on the 3rd night and reappears at dawn with an ox-tail tied round his neck • Before a raid the laibon shoots an arrow into his verandah post, drinks the oozing blood, and his head leaves his body at night to fetch a cow from the enemy's kraal (receiving 7–8 cattle from raid spoils) • Kamasia rain-root (withholds rain when tied up in the house; brings rain when placed in a river or water pot) • Parental curse by striking a disobedient son with his skin cloak (removed only by a 1-goat peace offering) • Chest complaints treated by cauterizing with a glowing fire-stick; snake-bite cured in 2 days by giving an egg",
+          "pronunciation": "la-i-bon / po-ni-ndet / ka-ma-si-a",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. IV, pp. 40–42)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi & Lumbwa Peace Ceremonies: Skull Chopping, Whetstone, Water Tortoise, Bent Spear, Masai–Lumbwa Baby Exchange & Fly-and-Rat Water-Pot Rite",
+          "translation": "1. Chopping a donkey's or human skull with an axe while haranguing the assembly • 2. Cutting a live dog in half • 3. Breaking a whetstone (liteito) or clubbing a water tortoise (chekogochet) to death • 4. Lumbwa blunting and bending a spear or throwing a spear into a river • 5. Exchanging a Lumbwa baby and a Masai baby (~25 years before 1902) • 6. Lumbwa personal reconciliation rite: placing flies and a dead rat in a cooking pot full of water and solemnly breaking the pot",
+          "pronunciation": "ti-lyet / li-te-i-to / che-ko-go-chet",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. IV, p. 42)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Nandi (Nandiek / Jangwel) 12-Clan, 32-Chief & 3-Laibon Registry in Hobley (1902, Ch. V § 4, pp. 58–59)",
+          "translation": "1. Koileke (Laitongwa, Arabmaininya, Cherumbas, Arabkibchogei) • 2. Kakapoch (W: Chemoi, Otiendi; SE: Arabsimba, Arabrutuk, Tirop; Kabsoyo around Koyu Mt.: Kabkiai) • 3. Kabsili (Arakmugei, Cholo, Kibomet) • 4. Kabkibkendi (W: Omet, Baraoi, Arabtiriget; Kapsous: Kibsanya; E: Torori, Arabmutinyet; SE: Arabsirtoi) • 5. Kapitalam (W: Kimugoi; E: Arabkuna, Kapchuria) • 6. Kapsiondoi / Kapsondu (Arabkorongeret, Kiruonyim) • 7. Kabkumuno (Manjarit, Arabkons, Limeto, Kipsangali) • 8. Kaptumois (Arablagat, Arabkimondi) • 9. Tuken (Morsu, Arabmuruboi, Barigori) • 10. Kamililo (Arabkimenja, Taptangali, Arabsungut, Arakmeswe) • 11. Kabianga (Chebrotimyet, Arabkunulwa) • 12. Tibingnot (Kiboet, Sametwi) • Three Laibons: Kibelēs, Koitalēl, and Kipchumbēr (who moved to Lumbwa before the Nandi rebellion)",
+          "pronunciation": "na-ndi-ek / ja-ngwel / koi-le-ke / ka-ka-poch / ka-mi-li-lo / ki-be-les / koi-ta-lel / kip-chu-mber",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 4, pp. 58–59)",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Registry of Nyangnori (Masino), Lako, El-Gonyi (Mount Elgon), Savei, Sor/Mbai/Bumett & Lumbwa/Sikisi in Hobley (1902, Ch. V § 4, pp. 59–60)",
+          "translation": "Nyangnori (country Masino, Principal Chief Ujoo; 6 Nandi-speaking clans: Karaochi [Ujoo], Katolo [late Sakori, Yerop], Kabko [Menoia, Okech, Ibui, Biagan], Kapkwenda [Yasaga], Kabke [Yomie], Yanganeja [Kibchop] + 2 incorporated Lakoli clans: Yatugo [Obitigo] & Yamundo [Aseta]) • Lako on S. Mt. Elgon (Mongichi [d. 1900], Lamwezaka) • El-Gonyi on S.E. Mt. Elgon (Chief Kanyuki — origin of Joseph Thomson's name 'Elgon') • Savei on N. Mt. Elgon (Aroburett, Bilibili) • Sor (Soré), Mbai & Bumett on N.W. Mt. Elgon • Lumbwa / Sikisi / Kisikisi / Makiseki (migrated from Kamasia; named after Sikisi delegate Chief Lumbwa at a Naivasha Masai peace treaty ~20 years earlier; sub-tribes Burugeu [Arabyomiet, Arabtumbo, Mugeni, Arabchebke], Bureti & Soti/Sotik)",
+          "pronunciation": "nya-ngno-ri / ma-si-no / u-joo / la-ko / el-go-nyi / ka-nyu-ki / sa-ve-i / si-ki-si / lu-mbwa / bu-re-ti / so-ti",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 4, pp. 59–60)",
+          "audioFile": null
+        },
+        {
+          "english": "Guasangishu (Kwavi) & Losegelli of Olinyao Settlements and Mau Eldorobo (Ogiek) Vocabulary & Elephant Hunting in Hobley (1902, pp. 10–12, 58, 92–95)",
+          "translation": "Guasangishu / Kwavi (driven from stone-walled kraals on the Rangata Nyuki plain ~50 years earlier by Laikipia Masai; Head Chief Sayen, 2nd Chief Kisera [murdered Dec. 1896]; 4 clans: Guason [Kwanjala, Eldama Ravine], Maitanek [Sayen, Kavirondo], Waren [Olendwiga, Nandi], Ngajimugi [Olmurumbi, Eldama Ravine]; plus the Losegelli of Olinyao in the Bararget Valley near Fort Ternan dispersed by the Laikivia of El Kidong) • Mau Eldorobo (of Eldama Ravine, pp. 11–12, 92–95): hunt Colobus monkeys and elephants with a heavy wooden shaft holding a loose poisoned dart (kills an ox in 20 minutes); distinctive vocabulary includes ōnye ('eye'), chatit ('leg'), kaisamo ('hill'), turgut ('plain'), nguronani ('rain'), kipgami ('rhinoceros'), motit ('spear'), porlik ('stars'), tarokwi ('trees'), taborgwi ('iron wire'), chingno ('good'), chatuen ('black')",
+          "pronunciation": "gua-sa-ngi-shu / sa-yen / lo-se-gel-li / el-do-ro-bo / o-nye / ka-i-sa-mo / tu-rgut / mot-it",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. I pp. 10–12, Ch. V § 4 p. 58 & Ch. VII § II pp. 92–95)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Verb Conjugation Paradigms for 'Come' (nyoo / ainiuni) and 'Want' (amoche / momoche) in Hobley (1902, p. 85)",
+          "translation": "Come (Imp. nyoo!): Pres. 1s ainiuni / nioni, 2s kenyo, 3s neninyoni, 1p kibwoni, 2p kobwa, 3p kabwa; Fut. 1s kanyoni; Past 1s kianyo; Neg. Pres. 1s menyoni / monyuni • Want: Pres. 1s amoche (anyo), 2s imoche, 3s omocheawe, 1p kimoche, 2p neomoche, 3p omoche; Fut. 1s kamachamach; Past 1s kikaamach; Neg. Pres. 1s momoche",
+          "pronunciation": "nyoo / a-i-ni-u-ni / ke-nyo / ki-bwo-ni / ki-a-nyo / me-nyo-ni / a-mo-che / mo-mo-che",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 85)",
+          "audioFile": null
+        },
+        {
+          "english": "Nandi Noun Plural Formation Table (-ik, -ek, -ok & Unique masambonin → masambwan) in Hobley (1902, p. 87)",
+          "translation": "Plurals formed by replacing the final singular syllable with -ik, -ek, or -ok (adjusting the penultimate syllable for euphony): moset → mosonik ('ape/baboon'), eoot → euek ('arm'), kōt → koriek ('house'), aiwet → aonek ('axe'), makomyet → makomek ('banana'), kwanget → kwangok ('bow'), duswet → duswok ('cat'), makasta → mokuswek ('hippopotamus'), koita → koiek ('egg/stone'), plus the unique plural masambonin → masambwan ('devil / ancestral spirit')",
+          "pronunciation": "mo-set mo-so-nik / e-oot e-u-ek / kot ko-ri-ek / ma-sa-mbo-nin ma-sa-mbwan",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 87)",
+          "audioFile": null
         }
       ]
     }
@@ -32189,5 +32400,5 @@
   "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 4583
+  "totalEntries": 4613
 }

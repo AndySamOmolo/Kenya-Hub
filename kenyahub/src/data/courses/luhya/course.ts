@@ -2866,5 +2866,171 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "luhya-unit-11-hobley-1903",
+    "title": "Unit 11: Hobley (1903) Awa-Wanga Royal Chronicle, 8 Fables, Altars & 8 Muziro Totems",
+    "description": "Master the 12-generation Awa-Wanga genealogy, 8 Ama-Wanga fables, Masambwa/Muzimo altars, 8 Bantu Kavirondo Muziro totems, livoya tassels, kiketi child naming, and Isira law from C. W. Hobley (1903, pp. 333–358).",
+    "icon": "Crown",
+    "skills": [
+      {
+        "id": "luhya-hobley-1903-11-1",
+        "title": "12-Generation Awa-Wanga Genealogy, 8 Fables & Masambwa/Muzimo Altars",
+        "icon": "BookOpen",
+        "description": "Learn the royal lineage from Kuau and Wanga to Sundu, Kwehu, Sakwa, and Mumia, the 8 Ama-Wanga animal fables, and ancestral altar traditions.",
+        "tips": "C. W. Hobley (1903, pp. 333–344) records the 12-generation Awa-Wanga genealogy (Kuau → Wanga → Kisesi/Wawala → Mzui/Chewi → Msindalo → Netia & Kiteji → Sundwa → Mkoya [→ Sundu → Mumia] & Kwehu [→ Sakwa → Tomia & Wombani]), 8 animal fables (ending with the elephant–hippo battle at Chikonesi), Ketosh Sangaro Hill & Mrumba fig altars, Awa-Wanga 3-stone Siala altars, and the Murembe peace tree.",
+        "words": [
+          {
+            "target": "Kuau → Wanga → Kisesi (Wawala) → Mzui (Chewi) → Msindalo → Netia & Kiteji",
+            "source": "First 6 generations of the Awa-Wanga royal dynasty (from Tsoso/Viratsi & Manga Hill to Shikulu & Rekho)",
+            "pronunciation": "ku-a-u / wa-nga / ki-se-si / m-zu-i / m-si-nda-lo / ne-ti-a",
+            "hint": "Hobley (1903, pp. 333–336)"
+          },
+          {
+            "target": "Sundwa → Mkoya (→ Sundu → Mumia) & Kwehu (→ Sakwa → Tomia & Wombani)",
+            "source": "Later 6 generations of the Awa-Wanga royal dynasty at Mumias, Lumino, and Kimuri",
+            "pronunciation": "su-ndwa / m-ko-ya / su-ndu / mu-mi-a / kwe-hu / sa-kwa",
+            "hint": "Hobley (1903, pp. 334–336)"
+          },
+          {
+            "target": "Chikonesi • Sumba • Wa-Nyama kwa Wa-Ware (Bridge Island)",
+            "source": "Salt lick on River Nzoia where elephant and hippo slew each other in Kwehu’s reign • Sumba Island dwarfish elves • Lusinga twin monoliths of two bulls turned to stone",
+            "pronunciation": "chi-ko-ne-si / su-mba / wa-nya-ma kwa wa-wa-re",
+            "hint": "Hobley (1903, pp. 339–341)"
+          },
+          {
+            "target": "Masambwa / Muzimo • Sangaro • Mrumba (mlendege) • Siala / Mtarawanda",
+            "source": "Ancestral spirits • Sacred granite hill 12 mi. NE of Mumias • Ketosh 4-stone wild fig altar • Awa-Wanga 3-stone Markhamia lutea altar",
+            "pronunciation": "ma-sa-mbwa / mu-zi-mo / sa-nga-ro / m-ru-mba / si-a-la",
+            "hint": "Hobley (1903, pp. 342–343)"
+          },
+          {
+            "target": "Murembe (Ekirikiti) • Waka → Wanawaka (m.) / Newaka (f.)",
+            "source": "Sacred coral tree (Erythrina tomentosa, murembe = 'peace') • Python charm & names given to next boy or girl born",
+            "pronunciation": "mu-re-mbe / wa-ka / wa-na-wa-ka / ne-wa-ka",
+            "hint": "Hobley (1903, pp. 343–344)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Murembe! Were ankhonyere.",
+            "source": "Peace! May God help me (Hobley 1903, p. 343 & Stam 1929, p. 160)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In C. W. Hobley (1903, p. 344), if an Awa-Wanga person sees or accidentally kills a python ('waka'), what names are given to the next boy or girl born after the white-fowl purification rite?",
+            "correctAnswer": "Wanawaka (boy) or Newaka (girl)",
+            "options": [
+              "Wanawaka (boy) or Newaka (girl)",
+              "Mumia (boy) or Sakwa (girl)",
+              "Jaksinis (boy) or Obilos (girl)",
+              "Netia (boy) or Kiteji (girl)"
+            ],
+            "hint": "From 'waka' = python in Lu-Wanga (Hobley 1903, p. 344)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Bantu Kavirondo sacred site or ritual tree in Hobley (1903, pp. 339–344) with its description:",
+            "correctAnswer": "Sangaro Hill & Mrumba: Sacred Ketosh hill & 4-stone wild fig Masambwa altar",
+            "pairs": [
+              {
+                "left": "Sangaro Hill & Mrumba",
+                "right": "Sacred Ketosh hill & 4-stone wild fig Masambwa altar"
+              },
+              {
+                "left": "Siala / Mtarawanda",
+                "right": "Awa-Wanga 3-stone Muzimo altar tree (Markhamia lutea)"
+              },
+              {
+                "left": "Murembe (Ekirikiti)",
+                "right": "Sacred Erythrina peace tree ('murembe' = peace)"
+              },
+              {
+                "left": "Chikonesi",
+                "right": "Nzoia salt lick where the elephant and hippopotamus killed each other"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "luhya-hobley-1903-11-2",
+        "title": "The 8 Bantu Kavirondo Muziro Totems, Livoya, Kiketi Naming & Isira Law",
+        "icon": "Shield",
+        "description": "Practice the 8 clan totems (Muziro), Nyole rain-maker lineage, livoya tassels, quail & kiketi naming rites, and the Isira blood-feud taboo.",
+        "tips": "Hobley (1903, p. 347) lists 8 Bantu Kavirondo Muziro totems: Imbongo (bushbuck — Kisesi of Awa-Wanga), Kuru/Ikulu (waterbuck — Marama, Tsoso, Isukha), Liusi (pigeon — Awa-Genya & Awa-Mrashi), Njofu (elephant — Awa-Shekwi of Nyole), Makuyi (black-and-white stork — Ketosh), Isunu (reedbuck — Ngaki of Tasoni), Imbongo/Ngawe (bushbuck — Ithako, E. Tsoso, S. Kabras), and Mbiakalo (cooked flying white ants — Kabras).",
+        "words": [
+          {
+            "target": "Muziro: Imbongo (Ngawe) • Kuru (Ikulu) • Isunu",
+            "source": "Bushbuck (Kisesi of Awa-Wanga; Ithako, E. Tsoso, S. Kabras) • Waterbuck (Marama, Tsoso, Isukha) • Reedbuck (Ngaki of Tasoni)",
+            "pronunciation": "mu-zi-ro / i-mbo-ngo / nga-we / ku-ru / i-ku-lu / i-su-nu",
+            "hint": "Hobley (1903, p. 347 — Bantu Kavirondo Muziro totems #1, #2, #6, #7)"
+          },
+          {
+            "target": "Liusi • Njofu • Makuyi • Mbiakalo",
+            "source": "Pigeon (Awa-Genya & Awa-Mrashi) • Elephant (Awa-Shekwi of Nyole) • Locust stork (Ketosh) • Cooked flying white ants (Kabras)",
+            "pronunciation": "li-u-si / njo-fu / ma-ku-yi / m-bi-a-ka-lo",
+            "hint": "Hobley (1903, p. 347 — Bantu Kavirondo Muziro totems #3, #4, #5, #8)"
+          },
+          {
+            "target": "Mgahanya (Agine / Ashue → Luchiri → Namonwa → Mgahanya) • Kayenga",
+            "source": "Chief and rain-maker of the Shekwi clan of Nyole (descended from the Simbi abūr rain-witch) • Maragolia Hills host",
+            "pronunciation": "m-ga-ha-nya / a-gi-ne / a-shu-e / lu-chi-ri / na-mo-nwa / ka-ye-nga",
+            "hint": "Hobley (1903, pp. 349–350)"
+          },
+          {
+            "target": "Livoya • Kiketi (Mumia, Jaksinis, Martinis, Obilos) • Isira",
+            "source": "Married woman’s 12 in. black-dyed fibre tassel • Pale blue naming bead with live quail & cowrie • Fatal blood-feud meal taboo",
+            "pronunciation": "li-vo-ya / ki-ke-ti / mu-mi-a / i-si-ra",
+            "hint": "Hobley (1903, pp. 350–353, 357–358)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Muziro wa Kisesi ni Imbongo.",
+            "source": "The clan totem (muziro) of the Kisesi clan of Awa-Wanga is the bushbuck (imbongo) (Hobley 1903, p. 347)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "According to C. W. Hobley (1903, p. 347), which Muziro totem is observed by the Kabras tribe (who may eat the insect raw, but never cooked)?",
+            "correctAnswer": "Mbiakalo (flying white ants when cooked)",
+            "options": [
+              "Mbiakalo (flying white ants when cooked)",
+              "Makuyi (black-and-white locust stork)",
+              "Liusi (pigeon)",
+              "Isunu (reedbuck)"
+            ],
+            "hint": "Hobley (1903, p. 347 — Totem #8)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Bantu Kavirondo cultural term in Hobley (1903, pp. 347–358) with its meaning:",
+            "correctAnswer": "Livoya: Married woman’s 12-inch black-dyed fibre tassel (p. 350)",
+            "pairs": [
+              {
+                "left": "Livoya",
+                "right": "Married woman’s 12-inch black-dyed fibre tassel (p. 350)"
+              },
+              {
+                "left": "Kiketi",
+                "right": "Pale blue bead tied with a cowrie & live quail at child naming (p. 352)"
+              },
+              {
+                "left": "Isira",
+                "right": "Blood-feud taboo forbidding eating from a killer’s maternal pot (p. 357)"
+              },
+              {
+                "left": "Makuyi",
+                "right": "Ketosh clan totem: black-and-white locust-eating stork (p. 347)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];

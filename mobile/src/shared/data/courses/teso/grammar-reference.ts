@@ -97,4 +97,27 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
       }
     ]
   }
+  ,
+  {
+    id: "teso-hobley-1902-elgumi-wamia-clans-lexicon",
+    title: "C. W. Hobley (1902) Eastern Uganda: Wamia / Elgumi (Ba-Keddi) Clans & Chiefs (Telemo, Ngoma, Para), 10 West Elgon Tribes & Elgumi Vocabulary",
+    summary: "Hobley's 1902 monograph (pp. 9, 46–47, 57, 92–95) documents the Elgumi (Wamia / Ateso) southward migration to the Sio River, their 7 principal chiefs and 3 named subdivisions (Telemo, Ngoma, Para), 10 neighbouring West Elgon tribes, and a 4-page Elgumi vocabulary and numeral list.",
+    content: `From C. W. Hobley (*Eastern Uganda: An Ethnological Survey*, Anthropological Institute Occasional Papers No. 1, London, 1902, pp. 9, 46–47, 57, 92–95):
+1. **Elgumi / Wamia Territory, Migration & Chiefs (Ch. I p. 9 & Ch. V § 3 p. 57)**:
+   - Hobley notes that the irruption of the **Elgumi (Wamia)** people into the country south-west of Mount Elgon closed the corridor against further Nilotic movements from the north (p. 9), intermarried with the **Awa-Tindi (Khaiyo)** north of the Sio River (p. 46), and gave rise ~50 years earlier to the **Awa-Kikelelwa (Awa-Lewi)** (p. 47).
+   - Stretching from Tindi's on the north bank of the Sio River northward to Lake Kioga/Chioga (where the Baganda call them **Ba-Keddi**), the Elgumi are led by chiefs **Pakala, Lemugi, Mwenyikoi, Babukori, Eten, Oreddi, and Kuresi**, with three recorded subdivisions (p. 57):
+     1. **Telemo** — Chief **Nzoia**
+     2. **Ngoma** — Chiefs **Pakala** and **Kuresi**
+     3. **Para** — Chief **Kimi**.
+   - **Ten Miscellaneous Tribes West of Mount Elgon (p. 57)**: *Poto, Seguya, Brawa, Koko, Manguku (or Ngoko), Matanda (or Tanda), Mukonde (or Konde), Fumba, Mruma, and Wa-Muhasa*.
+2. **Elgumi Vocabulary, Pronouns, Interrogatives & Numerals (Ch. VII § II, pp. 92–95)**:
+   - **Pronouns & Possessives**: *ongo* ('I'), *iong* ('you'), *ungolo* ('he'); *borangi* ('my'), *langelo* ('your'), *elango* ('his'); *kajokisi* ('all').
+   - **Interrogatives & Salutations**: *inyanangoro?* ('what?'), *eborana?* ('where?'), *unguai?* ('who?'), *kanguai?* ('whose?'), *wa-mwasai?* ('how many?'); *mata* & *yoka yoka* ('salutation'), *ekinok* ('peace').
+   - **Numerals 1–10 (p. 95)**: *1 epe (apuru), 2 are, 3 auni (uni), 4 aungwen (ongwon), 5 ekan (akanyi), 6 kanyi kape (akanya kape), 7 kanyi-kare, 8 kanyi kauni, 9 kanyi-ki-ongwon (akanya kangwun), 10 atomon*.`,
+    examples: [
+      { teso: "Telemo (Nzoia) • Ngoma (Pakala, Kuresi) • Para (Kimi) • Lemugi, Mwenyikoi, Babukori, Eten, Oreddi", english: "Wamia / Elgumi subdivisions and principal chiefs recorded by C. W. Hobley in 1902", explanation: "Hobley (1902, Ch. V § 3, p. 57)" },
+      { teso: "ongo, iong, ungolo • borangi, langelo, elango • inyanangoro?, eborana?, unguai?, kanguai?", english: "I, you, he • my, your, his • what?, where?, who?, whose?", explanation: "Elgumi pronouns, possessives, and interrogatives in Hobley (1902, pp. 93–95)" },
+      { teso: "epe (apuru), are, auni, aungwen, ekan (akanyi), kanyi kape, kanyi-kare, kanyi kauni, kanyi-ki-ongwon, atomon", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10", explanation: "Elgumi quinary-decimal numerals in Hobley (1902, p. 95)" }
+    ]
+  }
 ];

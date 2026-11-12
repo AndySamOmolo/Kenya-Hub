@@ -3,7 +3,7 @@
 // Grounded in:
 // - C. W. Hobley (1902) "Eastern Uganda: An Ethnological Survey" (JAI, London — Public Domain)
 // - Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Hutchinson, London — Public Domain)
-// - C. W. Hobley (1903) "British East Africa: Anthropological Studies in Kavirondo and Nandi" (JAI Vol. 33 — Public Domain)
+// - C. W. Hobley (1903) "British East Africa: Anthropological Studies in Kavirondo and Nandi" (JAI Vol. 33, pp. 325–359 — Public Domain)
 // - G. A. S. Northcote (1907) "The Nilotic Kavirondo" (JRAI Vol. 37 — Public Domain)
 // - Rev. John Roscoe & Archdeacon J. J. Willis (1915) "The Northern Bantu" (Ch. XXV "The Nilotic Kavirondo" & Dholuo Kinship Table, pp. 275–293 — Public Domain)
 // - Mill-Hill Fathers (1920) "A Handbook of the Kavirondo Language" (London — Public Domain)
@@ -140,31 +140,31 @@ export const luoProverbs: ProverbEntry[] = [
   },
   {
     id: 17,
-    luo: "Kwero mar dhoot rito dala (Hobley 1903).",
-    english: "Respecting the clan totem/taboo (kwero) protects the homestead (dala).",
-    meaning: "Recorded by C. W. Hobley in 'Anthropological Studies in Kavirondo and Nandi' (1903, pp. 347–349), detailing the 20 Ja-Luo clan totems (Kwero) and ancestral stewardship.",
+    luo: "Kwero 20 mag Ja-Luo (Tho-Luo): Nyang, Ndiek, Okwach, Bīm, Ongner, Ogwang, Buwem, Achut-th, Agako, Otenga, Ngnech, Nyelo, Gori gori, Kumnēr, Upuku, Kuru, Imbirri, Ogwan, Iwang, Arumtich (Hobley 1903, p. 348).",
+    english: "The 20 Nilotic Ja-Luo totems/taboos (Kwero in Tho-Luo): Crocodile (Nyang), Hyæna (Ndiek), Leopard (Okwach), Baboon (Bīm), Cercopithecus Monkey (Ongner), Wild Cat (Ogwang — eaten by Gemi, Lego & Sakwa), Jackal (Buwem), Vulture (Achut-th), Crow (Agako), Kite (Otenga), Nile Monitor (Ngnech), Python (Nyelo — sacred ancestor of Kadimu), Mongoose (Gori gori), Rock Hyrax (Kumnēr), Tortoise (Upuku), Colobus Monkey (Kuru), Wart Hog (Imbirri), Frog (Ogwan), Crested Crane (Iwang — strictly preserved except in Gemi), and Ground Hornbill (Arumtich), plus women's Kwero (fowls, eggs, elephant, hippopotamus, and sheep among Kisumu & Gemi).",
+    meaning: "Recorded verbatim by C. W. Hobley in 'Anthropological Studies in Kavirondo and Nandi' (JAI Vol. 33, 1903, pp. 326, 348), detailing the 20 Ja-Luo Kwero totems, the Kadimu annual sacrifice to their python ancestor (Nyelo), and why violating a Kwero causes skin eruption.",
     category: "family"
   },
   {
     id: 18,
-    luo: "Apoyo (Apwoyo) oloyo sibuor gi rieko (Hobley 1903).",
-    english: "The Hare (Apoyo/Apwoyo) overcomes the Lion (Sibuor) through wisdom.",
-    meaning: "Grounded in the 7 Kavirondo animal fables recorded by C. W. Hobley (1903, pp. 339–344), where quick wit and discernment triumph over brute force.",
+    luo: "Apōdtho gi Ramogi e Got Ramogi: yath mar Were, Chindu, Anyango, Rajoki, Jimbo, Uyua, Mbunga, Owidi, Rachonyo, Chwanya, Kanu (Ja-Kanu), Alangu, gi Mugirango (Hobley 1903, pp. 326–331).",
+    english: "Apōdtho (the First Ancestor who descended from the heavens to Ramogi/Lamogi Hill) and Ramogi (first Ja-Luo settler on Ramogi Hill in Kadimu near the Nzoia mouth): the Were tree wooden milking bowls, Chindu (cf. Luganda Kintu), Anyango, Rajoki, Jimbo, Uyua, Mbunga, Owidi, Rachonyo, Chwanya, Kanu (progenitor of Ja-Kanu on the Kitoto plain), Alangu, and Mugirango.",
+    meaning: "Synthesizes the three oral histories and genealogical trees of the Ja-Luo recorded by C. W. Hobley (1903, pp. 326–331) from Chief Ugada Ndiek of Usakwa, Chief Ugada of Korando (aged over 70, son of Otiendi), and Chief Gori Kogalo of Kanyamwa, including Apōdtho carving two bowls from the Were tree, his shadow being cupped and speared before turning into a spear-sharpening rock, and his promise of the bright country in the heavens.",
     category: "wisdom"
   },
   {
     id: 19,
-    luo: "Ramogi noguro dala e Got Ramogi (Hobley 1902 & 1903).",
-    english: "Ramogi established the ancestral homestead at Ramogi Hill.",
-    meaning: "Honours the foundational migration and unity of the Luo people from Podho and Ramogi as documented by C. W. Hobley (1902, p. 27; 1903, pp. 326–331).",
-    category: "family"
+    luo: "Simbi abūr (abūr = bur) e Kalachonyo • Mgahanya (Agine/Ashue → Luchiri → Namonwa → Mgahanya) gi Kayenga (Hobley 1903, pp. 349–350).",
+    english: "The crater lake of Simbi abūr ('abūr' = hole/pit) in Kalachonyo • Chief Mgahanya of the Shekwi clan of Nyole (descended from Agine/Ashue and the Rain-Witch) and Kayenga of the Maragolia Hills.",
+    meaning: "Recorded by C. W. Hobley (1903, pp. 349–350): when the drunken elders of a village in Kalachonyo drove away a mysterious rain-woman, only one compassionate wife sheltered, fed, and warmed her; after summoning her husband from the beer-feast (tembo), the rain-woman sank the inhospitable village under a deluge that formed the natron crater lake Simbi abūr, before marrying Agine (Ashue) in Nyole.",
+    category: "character"
   },
   {
     id: 20,
-    luo: "Koth ma chwe miyo piny kwe (Northcote 1907 & Hobley 1903).",
-    english: "The rain that falls brings coolness and peace (kwe) to the land.",
-    meaning: "Reflects Dholuo ecological wisdom linking rain, harvest abundance, and social harmony (Northcote 1907, p. 65; Hobley 1903, p. 346).",
-    category: "life"
+    luo: "Chieng' (Nyasaye gi Wang'-chieng') gi Polo • Chieno mar tuoro • Omeni gi Thako mag Ruoth Ugada • Isira • Chik Loch mar Mikayi: Umoli, Agola (Odera Ulalo gi Sejenyi), kod Kakwari (Agina) • Kavirondo (Hobley 1903, pp. 343–359).",
+    english: "Chieng (both the Sun and the Supreme Deity) and Polo (the daylight sky/heavens) • The married woman's chieno tassel of tuoro aloe fibre • Chief Ugada's 4 omeni wrist sticks, 3-holed iron charm for his grandmother Thako, and 6 yellow Nya-Luo beads • The Isira blood-feud meal taboo • First-wife (mikayi) chieftainship succession: Umoli's younger son Sejenyi (by 1st wife Agola, full brother of Odera Ulalo) succeeding ahead of older half-brother Agina (by 2nd wife Kakwari) • Origin of the name 'Kavirondo'.",
+    meaning: "Recorded by C. W. Hobley (1903, pp. 343–346, 350–351, 357–359): documents Ja-Luo 4-direction meat/beer/mtama offerings to ancestral spirits, the sanctity of the chieno tassel, the 24-hour fatal Isira taboo against sharing a cooking pot with a killer's maternal kin, chieftainship succession in the first-married wife's line, and Kisumu elders' explanation of how 'Kavirondo' arose as an epithet between the south and north shores of Kavirondo Gulf.",
+    category: "truth"
   },
   {
     id: 21,

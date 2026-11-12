@@ -2849,16 +2849,16 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
   },
   {
     id: 'luo-unit-13-open-datasets-modern',
-    title: 'Unit 13: Cultural Institutions, Clan Totems & Classical Verbs',
-    description: 'Explore traditional Dholuo social institutions, clan totems recorded by Northcote (1907) and Hobley (1903), and classical verb forms.',
+    title: 'Unit 13: Customary Institutions, Hobley (1903) 20 Kwero Totems & Classical Verbs',
+    description: 'Explore traditional Dholuo social institutions, the 20 clan totems (Kwero) recorded verbatim by C. W. Hobley (1903, p. 348) and Northcote (1907), and classical verb forms.',
     icon: 'Globe',
     skills: [
       {
         id: 'luo-open-dataset-13-1',
-        title: 'Customary Institutions & Clan Totems',
+        title: 'Customary Institutions & Hobley’s (1903) 20 Kwero Totems',
         icon: 'Crown',
-        description: 'Learn Dholuo terms for traditional healers, bridewealth, taboos, and historical clan totems.',
-        tips: 'Early ethnographic records by Hobley (1903) and Northcote (1907) document how Dholuo clans (dhoudi) maintained sacred animal totems (kwero) such as ng’ielo (python), agak (crow), and rawo (hippopotamus).',
+        description: 'Learn Dholuo terms for traditional healers, bridewealth, taboos, and the 20 Ja-Luo Kwero totems in Tho-Luo recorded by C. W. Hobley (1903, p. 348).',
+        tips: 'C. W. Hobley (1903, pp. 326, 348) records 20 Ja-Luo Kwero totems in Tho-Luo: Nyang (crocodile), Ndiek (hyæna), Okwach (leopard), Bīm (baboon), Ongner (Cercopithecus monkey), Ogwang (wild cat — eaten by Gemi, Lego & Sakwa), Buwem (jackal), Achut-th (vulture), Agako (crow), Otenga (kite), Ngnech (Nile monitor), Nyelo (python — sacred ancestor of Kadimu), Gori gori (mongoose), Kumnēr (rock hyrax), Upuku (tortoise), Kuru (colobus), Imbirri (wart hog), Ogwan (frog), Iwang (crested crane — preserved by all except Gemi), and Arumtich (ground hornbill).',
         words: [
           {
             target: 'Ajuoga (pl. Ajuoge)',
@@ -2873,40 +2873,40 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             hint: 'Northcote (1907, p. 62)',
           },
           {
-            target: 'Chira / Kwer',
-            source: 'Ritual taboo / ceremonial prohibition',
-            pronunciation: 'chi-ra / kwer',
-            hint: 'Northcote (1907) & Hobley (1903)',
+            target: 'Chira / Kwero',
+            source: 'Ritual taboo / clan totem prohibition (causing skin eruption if eaten)',
+            pronunciation: 'chi-ra / kwe-ro',
+            hint: 'Hobley (1903, pp. 347–348) & Northcote (1907)',
           },
           {
-            target: "Okech (totem: Ng'ielo)",
-            source: "Okech clan (python totem — Ng'ielo)",
-            pronunciation: 'o-kech',
+            target: 'Nyelo (Kadimu ancestor) • Ngnech • Upuku',
+            source: 'Python (sacred ancestor of Kadimu) • Nile monitor lizard • Tortoise',
+            pronunciation: 'nye-lo / ng-nech / u-pu-ku',
+            hint: 'Hobley (1903, pp. 326, 348 — Ja-Luo Kwero totems #11, #12, #15)',
+          },
+          {
+            target: 'Nyang • Ndiek • Okwach • Buwem',
+            source: 'Crocodile • Hyæna • Leopard • Jackal (Ja-Luo Kwero totems #1–3, #7)',
+            pronunciation: 'nyang / ndiek / o-kwach / bu-wem',
             hint: 'Hobley (1903, p. 348)',
           },
           {
-            target: 'Othiambo (totem: Agak)',
-            source: 'Othiambo clan (crow totem — Agak)',
-            pronunciation: 'oth-iamb-o',
+            target: 'Bīm • Ongner • Kuru • Ogwang',
+            source: 'Baboon • Cercopithecus monkey • Colobus monkey • Wild cat (eaten by Gemi, Lego & Sakwa)',
+            pronunciation: 'bim / ong-ner / ku-ru / o-gwang',
+            hint: 'Hobley (1903, p. 348 — Ja-Luo Kwero totems #4–6, #16)',
+          },
+          {
+            target: 'Achut-th • Agako • Otenga • Iwang • Arumtich',
+            source: 'Vulture • Crow • Kite • Crested crane (preserved except in Gemi) • Ground hornbill',
+            pronunciation: 'a-chut-th / a-ga-ko / o-te-nga / i-wang / a-rum-tich',
+            hint: 'Hobley (1903, p. 348 — Ja-Luo Kwero totems #8–10, #19–20)',
+          },
+          {
+            target: 'Gori gori • Kumnēr • Imbirri • Ogwan',
+            source: 'Mongoose • Rock hyrax • Wart hog • Frog (Ja-Luo Kwero totems #13–14, #17–18)',
+            pronunciation: 'go-ri go-ri / kum-ner / im-bir-ri / o-gwan',
             hint: 'Hobley (1903, p. 348)',
-          },
-          {
-            target: 'Oguma (totem: Aidho)',
-            source: 'Oguma clan (squirrel totem — Aidho)',
-            pronunciation: 'o-gu-ma',
-            hint: 'Hobley (1903, p. 348)',
-          },
-          {
-            target: "Unyango (totem: Ng'ech)",
-            source: "Unyango clan (monitor lizard totem — Ng'ech)",
-            pronunciation: 'uny-ang-o',
-            hint: 'Hobley (1903, p. 347)',
-          },
-          {
-            target: 'Uwur',
-            source: 'Uwur clan (bushbuck totem)',
-            pronunciation: 'u-wur',
-            hint: 'Hobley (1903, p. 347)',
           }
         ],
         sentences: [
@@ -2916,25 +2916,25 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         authoredExercises: [
           {
             type: 'multiple_choice',
-            prompt: 'What is the English meaning of "Ajuoga (pl. Ajuoge)" in Dholuo?',
-            correctAnswer: 'Diviner / traditional healer',
+            prompt: 'In C. W. Hobley (1903, pp. 326, 348), which Ja-Luo tribe near the mouth of the River Nzoia regards the python ("Nyelo") as its sacred common ancestor and offers annual sacrifices to it?',
+            correctAnswer: 'The Kadimu tribe',
             options: [
-              'Diviner / traditional healer',
-              'Traditional bridewealth cattle settlement',
-              'Ritual taboo / ceremonial prohibition',
-              "Okech clan (python totem — Ng'ielo)"
+              'The Kadimu tribe',
+              'The Gemi tribe',
+              'The Karungu tribe',
+              'The Nyakach tribe'
             ],
-            hint: 'Northcote (1907, p. 64)',
+            hint: 'Originally a Bantu tribe that adopted the Nilotic Ja-Luo language (Hobley 1903, pp. 326, 348)',
           },
           {
             type: 'match_pairs',
-            prompt: 'Match each Dholuo cultural term with its English meaning:',
-            correctAnswer: 'Ajuoga (pl. Ajuoge): Diviner / traditional healer',
+            prompt: 'Match each Tho-Luo Kwero totem recorded by Hobley (1903, p. 348) with its English meaning:',
+            correctAnswer: 'Nyelo: Python (sacred ancestor of Kadimu)',
             pairs: [
-              { left: 'Ajuoga (pl. Ajuoge)', right: 'Diviner / traditional healer' },
-              { left: 'Keny / Dho keny', right: 'Traditional bridewealth cattle settlement' },
-              { left: 'Chira / Kwer', right: 'Ritual taboo / ceremonial prohibition' },
-              { left: "Okech (totem: Ng'ielo)", right: "Okech clan (python totem — Ng'ielo)" }
+              { left: 'Nyelo', right: 'Python (sacred ancestor of Kadimu)' },
+              { left: 'Iwang', right: 'Crested crane (Balearica gibbericeps)' },
+              { left: 'Arumtich', right: 'Ground hornbill' },
+              { left: 'Kumnēr', right: 'Rock hyrax' }
             ],
           },
           {
@@ -2944,8 +2944,8 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
             options: [
               'Keny / Dho keny',
               'Ajuoga (pl. Ajuoge)',
-              'Chira / Kwer',
-              'Othiambo (totem: Agak)'
+              'Chira / Kwero',
+              'Nyelo'
             ],
             hint: 'Northcote (1907, p. 62)',
           }
@@ -2953,58 +2953,58 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
       },
       {
         id: 'luo-open-dataset-13-2',
-        title: 'Action Clauses & Historical Transcriptions',
+        title: 'Hobley (1903) Origin Narratives, Charms, Cosmology & Classical Clauses',
         icon: 'Zap',
-        description: 'Practice short Dholuo verb clauses recorded in Johnston (1902) and the 1920 Mill-Hill Handbook.',
-        tips: 'Compare early 1902 phonetic transcriptions (such as "Wawaci" for modern "Wawacho" and "Ang\'eyo" for "I know") with standard Dholuo subject prefixes a- (I) and wa- (we).',
+        description: 'Master Apōdtho and Ramogi origin traditions, Chief Ugada’s charms, chieno tassels, mikayi succession, and Johnston (1902) / Mill-Hill (1920) verb clauses.',
+        tips: 'Hobley (1903, pp. 326–331, 345–359) records Apōdtho carving two milking/urine bowls from the Were tree, the Simbi abūr crater lake ("abūr" = hole/pit), the married woman’s chieno tassel of tuoro aloe fibre, Chief Ugada’s 4 omeni wrist sticks, Chieng (Sun & Deity) and Polo (sky/heavens), the Isira blood-feud taboo, and first-wife (mikayi) chieftainship succession.',
         words: [
           {
-            target: 'Ubei (totem: Rawo)',
-            source: 'Ubei clan (hippopotamus totem — Rawo)',
-            pronunciation: 'u-bei',
-            hint: 'Hobley (1903, p. 347)',
+            target: 'Apōdtho • Ramogi • Were',
+            source: 'First ancestor of the Ja-Luo • Founder of Kavirondo settlements at Ramogi Hill • Tree from which Apōdtho carved two milking bowls',
+            pronunciation: 'a-pod-tho / ra-mo-gi / we-re',
+            hint: 'Hobley (1903, pp. 326–331)',
           },
           {
-            target: 'Go bul',
-            source: 'Beat the drum',
-            pronunciation: 'go bul',
-            hint: 'Mill-Hill (1920)',
+            target: 'Chindu • Anyango • Rajoki • Jimbo • Uyua • Mbunga',
+            source: 'Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and Kanyamwa traditions',
+            pronunciation: 'chin-du / a-nya-ngo / ra-jo-ki / jim-bo / u-yu-a / m-bu-nga',
+            hint: 'Hobley (1903, pp. 327–331 — Chindu cf. Luganda Kintu, p. 332)',
           },
           {
-            target: 'Winyo orengo',
-            source: 'The birds flew away',
-            pronunciation: 'winy-o o-reng-o',
-            hint: 'Johnston (1902, pp. 926–935)',
+            target: 'Chieno (mar tuoro) • Omeni • Thako • Nya-Luo',
+            source: 'Married woman’s 6–8 in. aloe-fibre tassel • Chief Ugada’s 4 wooden wrist sticks • Grandmother’s 3-holed iron charm • Ancient yellow beads',
+            pronunciation: 'chie-no / tuo-ro / o-me-ni / tha-ko / nya-luo',
+            hint: 'Hobley (1903, pp. 345–346, 350–351)',
           },
           {
-            target: 'Wawacho',
-            source: 'We say / We speak',
-            pronunciation: 'wa-wach-o',
-            hint: 'Johnston (1902): Wawaci',
+            target: 'Chieng • Polo • Simbi abūr • Loka',
+            source: 'Sun & Supreme Deity • Heavens / daylight sky • Crater lake in Kalachonyo (abūr = hole/pit) • On the other side (south of Kavirondo Gulf)',
+            pronunciation: 'chieng / po-lo / sim-bi a-bur / lo-ka',
+            hint: 'Hobley (1903, pp. 329, 349–350, 358)',
           },
           {
-            target: 'Akia',
-            source: 'I do not know',
-            pronunciation: 'a-kia',
-            hint: 'Johnston (1902, pp. 926–935)',
+            target: 'Isira • Mikayi (Umoli, Agola → Odera Ulalo & Sejenyi vs. Kakwari → Agina)',
+            source: '24-hour fatal blood-feud meal taboo • First-wife chieftainship succession law',
+            pronunciation: 'i-si-ra / mi-ka-yi',
+            hint: 'Hobley (1903, pp. 357–359)',
           },
           {
-            target: "Ang'eyo",
-            source: 'I know',
-            pronunciation: "ang'-e-yo",
-            hint: 'Johnston (1902): Añeyo',
+            target: 'Winyo orengo • Go bul',
+            source: 'The birds flew away • Beat the drum',
+            pronunciation: 'winy-o o-reng-o / go bul',
+            hint: 'Johnston (1902, pp. 926–935) & Mill-Hill (1920)',
           },
           {
-            target: 'Adhiyo',
-            source: 'I went / I am going',
-            pronunciation: 'a-dhi-yo',
-            hint: 'Johnston (1902): Adio',
+            target: 'Wawacho • Ang’eyo • Akia',
+            source: 'We say / We speak • I know • I do not know',
+            pronunciation: 'wa-wach-o / ang-e-yo / a-kia',
+            hint: 'Johnston (1902): Wawaci, Añeyo, Akia',
           },
           {
-            target: 'abiro',
-            source: 'I am coming',
-            pronunciation: 'a-bi-ro',
-            hint: 'Standard Dholuo 1st-person verb',
+            target: 'Adhiyo • Abiro',
+            source: 'I went / I am going • I am coming',
+            pronunciation: 'a-dhi-yo / a-bi-ro',
+            hint: 'Johnston (1902): Adio & Standard Dholuo',
           }
         ],
         sentences: [
@@ -3014,25 +3014,25 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         authoredExercises: [
           {
             type: 'multiple_choice',
-            prompt: 'What is the English meaning of "Winyo orengo" in Dholuo?',
-            correctAnswer: 'The birds flew away',
+            prompt: 'In C. W. Hobley (1903, p. 359), when Chief Umoli’s eldest son Odera Ulalo (by first wife Agola) died, who succeeded to the chieftainship under Ja-Luo customary law?',
+            correctAnswer: 'Sejenyi (younger full brother by first wife Agola, ahead of older half-brother Agina by second wife Kakwari)',
             options: [
-              'The birds flew away',
-              'Beat the drum',
-              'We say / We speak',
-              'I do not know'
+              'Sejenyi (younger full brother by first wife Agola, ahead of older half-brother Agina by second wife Kakwari)',
+              'Agina (older half-brother by second wife Kakwari)',
+              'Ugada of Korando',
+              'Gori Kogalo of Kanyamwa'
             ],
-            hint: 'winyo = bird(s)',
+            hint: 'Chieftainship passes strictly to the sons of the first-married wife (Hobley 1903, p. 359)',
           },
           {
             type: 'match_pairs',
-            prompt: 'Match each Dholuo verb phrase with its English meaning:',
-            correctAnswer: 'Go bul: Beat the drum',
+            prompt: 'Match each Ja-Luo term recorded by C. W. Hobley (1903) with its meaning:',
+            correctAnswer: 'Chieng: Both the Sun and the Supreme Deity (p. 358)',
             pairs: [
-              { left: 'Go bul', right: 'Beat the drum' },
-              { left: 'Winyo orengo', right: 'The birds flew away' },
-              { left: 'Wawacho', right: 'We say / We speak' },
-              { left: "Ang'eyo", right: 'I know' }
+              { left: 'Chieng', right: 'Both the Sun and the Supreme Deity (p. 358)' },
+              { left: 'Polo', right: 'The daylight sky / heavens (p. 358)' },
+              { left: 'Chieno (tuoro)', right: 'Married woman’s white aloe-fibre tassel (pp. 350–351)' },
+              { left: 'Simbi abūr', right: 'Crater lake in Kalachonyo (abūr = hole/pit, p. 350)' }
             ],
           },
           {
