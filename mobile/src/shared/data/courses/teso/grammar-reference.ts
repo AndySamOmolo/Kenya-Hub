@@ -121,3 +121,21 @@ export const TESO_GRAMMAR_SECTIONS: TesoGrammarSection[] = [
     ]
   }
 ];
+
+TESO_GRAMMAR_SECTIONS.push({
+  id: "teso-johnston-1902-uganda-protectorate-elgumi-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 713–714, 840, 852–855, 885–889, 903–913): Chapter XVI Busoga-Elgumi History, Chapter XIX Elgumi (Wamia) Ethnography (Figs. 478–479) & Complete Vocabulary Set 1 (Elgumi, pp. 903–913)",
+  summary: "Complete line-by-line documentation of all Elgumi (Wamia / Ateso) material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902): Chapter XVI Busoga substratum (pp. 713–714), Chapter XIX Elgumi ethnography & Illustrations 478–479 (pp. 852–855), and Chapter XX Vocabulary Set 1 (pp. 903–913).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. 713–714, 840, 852–855, 885–889, 903–913):
+1. **Chapter XVI Busoga Substratum & Chapter XIX Elgumi (*Wamia*) Ethnography (pp. 713–714, 852–855, Figs. 478–479)**:
+   - **Historical Territory (pp. 713–714, 852)**: Johnston records that northern Busoga was formerly inhabited by the **Lango, Elgumi, and Masaba**, and that the **Elgumi** (called **Wamia** by the Bantu Kavirondo and **Ba-kedi** by the Baganda) occupy the rolling plains from the south-western base of Mount Elgon and the Sio River northward to Lake Kioga.
+   - **Illustrations 478–479 (pp. xix, 853–854)**: *478. Elgumi People* and *479. Elgumi Warriors*.
+   - **Close Linguistic Unity with Turkana & Karamojo (pp. 852–855, 886)**: Demonstrates that Elgumi (Ateso) is mutually intelligible with Karamojo and Turkana, sharing the masculine/feminine/neuter prefixes (*E-/A-/I-*), quinary-decimal numerals, and agricultural-pastoral vocabulary while adopting settled granaries and iron hoe cultivation southwest of Mount Elgon.
+2. **Complete Vocabulary Set 1 — *Elgumi* (Ateso / Wamia, pp. 903–913)**:
+   - **Nouns, Kinship, Body & Nature (pp. 904–908)**: *Man* **Ekile (pl. Ikiliok) / Etuñanan (pl. Ituña)**, *Woman* **Aberu (pl. Añgor)**, *Child* **Ikoku (pl. Idwe)**, *Father* **Papa**, *Mother* **Toto**, *Chief* **Ekapolon**, *God* **Akuj**, *Head* **Akou**, *Eye* **Akoñ (pl. Akoñen)**, *Ear* **Akit (pl. Aki)**, *Nose* **Ekume**, *Mouth* **Akutuk**, *Tooth* **Ekelai (pl. Ikel)**, *Tongue* **Añajep**, *Arm/Hand* **Akan**, *Leg* **Akeju**, *Blood* **Aokot**, *Bone* **Akoit**, *Sun* **Akoloñ**, *Moon* **Elap**, *Star* **Ekacerit**, *Rain* **Akiru**, *Water* **Akipi**, *Fire* **Akima**, *Grass* **Inyā**, *Tree* **Ekitoi**, *House* **Akai (pl. Akais)**, *Spear* **Akwan**, *Shield* **Ebuku**, *Cow* **Akiteñ (pl. Aatuk)**, *Goat* **Akine**, *Sheep* **Amerekek**, *Dog* **Ekiñok**, *Elephant* **Etom**, *Lion* **Eñatuny**, *Leopard* **Eris**, *Fish* **Ekole**.
+   - **Numerals, Pronouns & Verbs (pp. 909–912)**: *1* **Epe / Idiope**, *2* **Are / Iyarei**, *3* **Auni / Iuni**, *4* **Oñwon**, *5* **Akany**, *6* **Akany kape**, *7* **Akany kaare**, *8* **Akany kauni**, *9* **Akany kaoñwon**, *10* **Atomon / Itomon**, *20* **Atomon are**, *100* **Pokol**; *I* **Eño / Eoñ**, *Thou* **Iyoñ**, *He* **Ñges**, *We* **Isio / Oni**, *Ye* **Iyes**, *They* **Kes**; *Good* **Ejok**, *Bad* **Erono**, *No/Not* **Mam**.`,
+  examples: [
+    { teso: "Ekile (pl. Ikiliok) • Aberu (pl. Añgor) • Ikoku (pl. Idwe) • Akiteñ (pl. Aatuk) • Akoñ (pl. Akoñen) • Ekelai (pl. Ikel) • Añajep • Akipi • Akima • Inyā • Etom", english: "Man • Woman • Child • Cow • Eye • Tooth • Tongue • Water • Fire • Grass • Elephant", explanation: "Vocabulary Set 1 (Elgumi / Ateso), Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, pp. 904–908)" },
+    { teso: "Epe, Are, Auni, Oñwon, Akany, Akany kape, Akany kaare, Akany kauni, Akany kaoñwon, Atomon, Pokol • Ejok vs. Erono • Mam", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100 • Good vs. Bad • No/Not", explanation: "Vocabulary Set 1 (Elgumi / Ateso), Johnston (1902, pp. 908–912)" }
+  ]
+});

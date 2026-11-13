@@ -3034,3 +3034,59 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+LUHYA_UNITS.push({
+  id: "luhya-unit-johnston-1902-set8-lukonde-prefixes",
+  title: "Unit 12: Sir Harry Johnston (1902) Set 8 (Lukonde, Lusōkwia, Lunyara, Lukabarasi, Lurimi), 16 Lukonde Prefixes (p. 1001) & Ch. XVII Ethnography",
+  description: "Master the 16 archaic disyllabic prefixes of Lukonde (p. 1001), Set 8 comparative vocabulary across 5 Luhya/Masaba dialects (pp. 980–992), and Chapter XVII Bantu Kavirondo ethnography (pp. 722–755).",
+  icon: "Layers",
+  skills: [
+    {
+      id: "luhya-johnston-1902-set8-prefixes-skill",
+      title: "The 16 Lukonde Prefixes (p. 1001), Lusōkwia Tens & Set 8 Vocabulary (pp. 980–992)",
+      icon: "BookOpen",
+      description: "Practice the 16 Lukonde prefixes that solved Bleek's Bantu concord hypothesis and verified Set 8 entries.",
+      tips: "West Elgon Lukonde/Masaba preserves full disyllabic prefixes: Umu- (Cl. 1), Baba- (Cl. 2), Gumu- (Cl. 3), Gimi- (Cl. 4), Ili- (Cl. 5), Gama- (Cl. 6), Bibi- (Cl. 8), Lulu- (Cl. 11), Ruru-/Tutu- (Cl. 12), Kaka- (Cl. 13), Bubu- (Cl. 14), Kuku- (Cl. 15).",
+      words: [
+        {
+          target: "Umu- / Baba- • Gumu- / Gimi- • Ili- / Gama- • Ki-(Si-) / Bibi- • Lulu- / Zi-, Tsi-(Ci-) • Kaka- / Ruru-(Tutu-) • Bubu- • Kuku-(Gu-) • Ha-(Wa-)",
+          source: "The 16 Noun Prefixes of Lukonde (Johnston 1902, p. 1001)",
+          pronunciation: "u-mu ba-ba / gu-mu gi-mi / i-li ga-ma / ki bi-bi / lu-lu tsi / ka-ka ru-ru / bu-bu / ku-ku",
+          hint: "Johnston (1902, Vol. II, pp. 889–891, 1001)"
+        },
+        {
+          target: "Kamagumi kabili (20) • Kamagumi katatu (30) • Kamagumi kanne (40) • Kamagumi karano (50)",
+          source: "Twenty • Thirty • Forty • Fifty (in Lusōkwia, Set 8, p. 989)",
+          pronunciation: "ka-ma-gu-mi ka-bi-li / ka-ma-gu-mi ka-ta-tu / ka-ma-gu-mi kan-ne / ka-ma-gu-mi ka-ra-no",
+          hint: "Johnston (1902, Vol. II, p. 989)"
+        },
+        {
+          target: "Akhana (pl. Ruana) • Iduasi • Racari • Olumutana / Sirkhanga / Obukanga • Injugu / Imbande • Ihumba • Mwieka • Ehei • Alia efu",
+          source: "Little child • Female (of mammals & reptiles) • Male (of beasts) • Good spirit • Ground-nut • Small nose • Breeze • Castrated bullock • Our eating",
+          pronunciation: "a-kha-na ru-a-na / i-dua-si / ra-ca-ri / o-lu-mu-ta-na / i-nju-gu / i-hum-ba / mwie-ka / e-hei",
+          hint: "Johnston (1902, Vol. II, Set 8, pp. 980–992)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Lidala liefu (Esialo siefwe) — Ingo yeru — Ingo yefu — Alia efu.",
+          source: "Our town (Lunyara, Lukabarasi, Lurimi) — Our eating (Johnston 1902, pp. 989–990)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 889–891, 1001), which West Elgon Bantu prefixes solved Dr. Wilhelm Bleek's hypothesis regarding the origin of the concords gu-, gi-, and ga-?",
+          correctAnswer: "Lukonde / Masaba Class 3 Gumu- (concord gu-), Class 4 Gimi- (concord gi-), and Class 6 Gama- (concord ga-)",
+          options: [
+            "Lukonde / Masaba Class 3 Gumu- (concord gu-), Class 4 Gimi- (concord gi-), and Class 6 Gama- (concord ga-)",
+            "Swahili Class 3 M-, Class 4 Mi-, and Class 6 Ma-",
+            "Kikuyu Class 16 Ha- and Kamba Class 16 Pa-",
+            "Ja-luo prefixes Ja-, Jo-, and Nya-"
+          ],
+          hint: "See Johnston (1902, Vol. II, pp. 889–891, 1001)"
+        }
+      ]
+    }
+  ]
+});

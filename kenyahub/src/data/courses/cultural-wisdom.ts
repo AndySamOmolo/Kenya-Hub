@@ -60778,3 +60778,737 @@ BORANA_UNITS.push({
     }
   ]
 });
+
+// ============================================================
+// SIR HARRY JOHNSTON (1902) "THE UGANDA PROTECTORATE, VOL. II"
+// Complete Line-by-Line Cultural Wisdom, Anthropometry, Grammar Sections & Course Units
+// (London: Hutchinson & Co., Paternoster Row, 1902, pp. i–xx, 471–1018)
+// ============================================================
+
+const JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS = [
+  {
+    id: "luhya-johnston-1902-bantu-kavirondo-masaba-ethnography-cw",
+    languageId: "luhya",
+    languageName: "Luhya (Luyia)",
+    indigenous: "Awafwa & Ishishemi • Ba-fumo (sg. mufumo) • Obufira vs. Obulogo • Fireplaces No. 1 & No. 2 • Gumu- / Gama- / Baba- / Bubu- (16 Lukonde Prefixes, p. 1001)",
+    literalTranslation: "Creator/ancestor spirit & evil demon • Female healers • White vs. black magic • Two-fireplace in-law taboo • Archaic West Elgon disyllabic Bantu prefixes (Sir Harry Johnston, The Uganda Protectorate, Vol. II, 1902, Ch. XVII pp. 722–755 & Ch. XX pp. 889–901, 980–1001).",
+    meaning: "Recorded line-by-line in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Ch. XVII pp. 722–755, Figs. 383–403 & Ch. XX pp. 889–901, 980–1001): documents the Masaba sub-tribes (Bapobo, Bangoko, Bakonde, Bagesu, Basokwia, Bosia) and the 5 Bantu Kavirondo groups (Banyala, Awa-wanga/Awa-rimi & Kakumega, Aba-kabarasi/Ketosh, Aba-kisii/Awa-kisingiri, Awa-ware/Awa-singa); the 3-ft kaolin-plastered basketwork 'matinée hats' of Kabarasi (Fig. 390); the two-fireplace hut rule where Fireplace No. 2 is strictly taboo to sons- and daughters-in-law (breach requires sacrificing a goat, wearing skin strips, and smearing dung on the chest, Fig. 391); walled Ketosh villages with moats and clay ramparts (Figs. 393–395); Chief Mumia's tame female ostriches (Fig. 398); bride-price (40 hoes, 20 goats, 1 cow) and Hobley's calf-return rule; female doctors (Ba-fumo), white vs. black magic (obufira vs. obulogo), left-toe (female/lucky) vs. right-toe (male/unlucky) omens, Awafwa and Ishishemi, intra-tribal goat-liver halving and inter-tribal live-dog halving peace rites, and the 16 archaic disyllabic prefixes of Lukonde (Umu-, Baba-, Gumu-, Gimi-, Ili-, Gama-, Ki-/Si-, Bibi-, In-, Zi-/Tsi-, Lulu-, Ruru-/Tutu-, Kaka-, Bubu-, Kuku-, Ha-/Wa-, p. 1001) that solved Bleek's Bantu concord hypothesis.",
+    englishEquivalent: "Sacred hearths, ancestral covenants, and ancient speech preserve the peace of the homestead.",
+    theme: "wisdom",
+    sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XVII pp. 722–755, Figs. 383–403 & Ch. XX pp. 889–901, 980–1001)"
+  },
+  {
+    id: "luo-johnston-1902-jaluo-chieng-odua-prophecy-cw",
+    languageId: "luo",
+    languageName: "Dholuo (Luo)",
+    indigenous: "Chieng • Kiketi & Nyaluo (1 cow per bead) • Dema • Yothetth (Uvino) • Jamkingo • Kiviri • Chief Odua's Prophecy • Owiti / Awiti & Opio / Apio",
+    literalTranslation: "The Sun-God Chieng (morning & evening spitting prayer), Nyaluo jasper beads, Uvino smiths, 3 judicial ordeals, Chief Odua's prophecy of the Uganda Railway, and birth/peace rites (Sir Harry Johnston, 1902, Ch. XVIII pp. 756–795, Figs. 428–438 & Set 3 pp. 926–935).",
+    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Ch. XVIII pp. 756–795, Figs. 428–438 & Ch. XX Set 3 pp. 926–935): documents the Nilotic one-legged stork posture (p. 761), the Ja-luo (Nyifwa) migration via Japalua and Busoga, the father-in-law goat-skin threshold rule, 15 brass ear-rings with blue kiketi beads and ancient Maragolia opalescent nyaluo beads valued at 1 cow each, dema wicker fish-traps and ambatch rafts (Figs. 434–436), the Uvino blacksmith caste (Yothetth), worship of the sun-god Chieng at sunrise and sunset, the Gemi nocturnal society jamkingo, the three judicial ordeals (kiviri boiling gruel, mimosa-plugged calabash, and dry flour), Chief Odua's prophecy of white strangers arriving from the east with an iron snake, birth seclusion (boy 4 days, girl 3 days, mother 9 days; Owiti/Awiti and Opio/Apio), sheep-meat grain-mortar peace rites, and thoracic lung-resection surgery.",
+    englishEquivalent: "Reverence for the rising sun, truthful judgment, and prophetic wisdom guide the community.",
+    theme: "wisdom",
+    sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XVIII pp. 756–795, Figs. 428–438 & Ch. XX Set 3 pp. 926–935)"
+  },
+  {
+    id: "maasai-johnston-1902-four-gods-myth-ossingolio-sentences-cw",
+    languageId: "maasai",
+    languageName: "Maasai (Maa)",
+    indigenous: "Añgai / Ñgai (Attashá) • Black, White, Grey & Red Gods • Kibebete → Mbatian → Lenana & Sendeyo • Sopai! — Eépa! • Asai! • Ṣomo erriita ngiṣu!",
+    literalTranslation: "The Four-God Creation Myth, hereditary Ol-aibon lineage, transcribed Os-singolio melody (p. 834), and 30 conversational sentences in Masai (Sir Harry Johnston, 1902, Ch. XIX pp. 796–836 & Ch. XX pp. 913–926).",
+    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Plate 46, Figs. 439–463, Shrubsall Tables A–F Nos. 69–76 pp. 492–507, Ch. XIX pp. 796–836 & Ch. XX pp. 913–926): preserves the Masai Four-God Creation Myth (the benevolent Black God of rain nearest humanity, the distant White God, the Grey God, and the wrathful Red God of drought and thunder, pp. 831–832), the children's grass-holding rain chant to Añgai, ancestral black snakes and sacred subugo and retete trees, ceremonial spitting as blessing, the 4-bar Allegretto musical score of os-singolio (p. 834), Dr. Bödeker's medical notes (cassia bark for malaria, >2,000 smallpox deaths at Nairobi in 1892, acacia-thorn suturing), the Ol-aibon genealogy (Kibebete → Mbatian → Lenana & Sendeyo, plus Terere Fig. 462), the four male age-grades (Laiok/Laioni → El Manūa/Selogunya → El Mórran → Ol Baiyan) with strict name-taboo laws (Koko, Baba, Eñ gitok), and all 30 Additional Words and Sentences in Masai (pp. 925–926).",
+    englishEquivalent: "Rain, peace, and the blessing of the Black Sky-God sustain the herds and the homestead.",
+    theme: "unity",
+    sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XIX pp. 796–836 & Ch. XX pp. 913–926)"
+  },
+  {
+    id: "kalenjin-johnston-1902-nandi-kamasia-prayers-peace-rites-cw",
+    languageId: "kalenjin",
+    languageName: "Kalenjin",
+    indigenous: "Tiamge (sg.), Otyamge (pl.)! • Kongoi, Eñgōñgōi! • Kātigē! • Cōriōnyo! • Kōnō pek āē • Mutei Morning Prayer & Kamásia 3-Hole Adversity Sacrifice",
+    literalTranslation: "How do you do? • Thank you! • Goodbye! • My good friend! • Give me water to drink • Mutei Morning Prayer, Kamásia 3-Hole Adversity Sacrifice & Nandi/Lumbwa Peace Rites (Sir Harry Johnston, 1902, Plates 47–48, Figs. 480–505, pp. 855–884, 913–925).",
+    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Plates 47–48, Figs. 258, 263, 480–505, Shrubsall Tables A–F Nos. 77–99 pp. 492–509, Ch. XIX pp. 855–884 & Ch. XX pp. 913–925): documents Nandi, Lumbwa (Sikisi), Sotik, Kamásia (El Túkĕn), Elgeyo, Mutei, Japtuleil, Elgonyi (Lako/Ñoma), Sabei, and Andorobo (Ogiek); Andorobo 2-handled wooden ear-cylinders (Figs. 258, 481, 484); Sabei clay-tufted hair and land-shells (Fig. 492); warrior half-white/half-red clay body paint for 4 days after slaying an enemy; Lt.-Col. Evatt's Elgon/Nandi caves holding 300 cattle; Lumbwa liquid tobacco juice poured from a goat horn into the nostril; Acocanthera schimperi arrow poison (boiled 6 hours, hands scrubbed with sage leaves, Figs. 496–498) and zingiberaceous root bird-lime (Fig. 499); spiked ring traps and gridiron game-pits (Fig. 500); Nandi (4 goats, 1 fowl, 1 cow) and Elgeyo (6 cattle, 5 goats — Mr. Isaac) bride-price; 7 cattle awarded to the medicine-man before warriors scramble for raid spoils; comparative criminal law across Nandi, Kamásia, Mutei, and Elgeyo; the Mutei morning prayer and Kamásia 3-hole adversity sacrifice (pouring milk, blood, and beer into three holes in the ground); Nandi/Lumbwa peace rites (donkey/human skull, halved dog, whetstone, water-tortoise, bent spear, Lumbwa–Masai baby-exchange peace, and water-pot with dead flies and a dead rat); and all 19 Additional Words and Sentences in Nandi (p. 925).",
+    englishEquivalent: "Sacred covenants, hospitality, and gratitude bind neighbours in lasting peace.",
+    theme: "unity",
+    sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Plates 47–48, Ch. XIX pp. 855–884 & Ch. XX pp. 913–925)"
+  },
+  {
+    id: "pokot-johnston-1902-suk-anthropometry-musical-score-cw",
+    languageId: "pokot",
+    languageName: "Pokot (Pökoot)",
+    indigenous: "Ane aca karām • Ciēbē • Ciebī, Cep • Kiruokin • Sūk 8-Inch 3-Legged Stool (Fig. 474), 4-Pointed Concave Shield (Fig. 475) & Musical Score (p. 851)",
+    literalTranslation: "I am good • Young woman • Female child • Chief • Sūk material culture, Dr. Shrubsall's 10 Sūk craniometric tables (Nos. 59–68), and transcribed Sūk vocal melody (Sir Harry Johnston, 1902, pp. 492–507, 839–852, 903–912).",
+    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Figs. 472–477, Shrubsall Tables A–F Nos. 59–68 pp. 492–507, Ch. XIX pp. 839–852 & Ch. XX Set 1 pp. 903–912): documents Dr. Shrubsall's anthropometric measurements for 10 named Sūk men (Nos. 59–68: Lomeri,Tebo, Lojok, Kimagut,Yangole,Chepko, Lolek, Лоkор, Kipsang,洛mwa; average Cephalic Index 74.5, Stature 166.9 cm), the felted ancestral hair-bag chignon, brass nose-disc and lower-lip plug, Beisa-horn snuff-boxes, miniature 8-inch 3-legged wooden headrest/stools (Fig. 474), 4-pointed concave hide shields (Fig. 475), dog-eating and Hyphæne thebaica gingerbread-palm meal, the jumping dance and transcribed Sūk musical score (p. 851), and the Set 1 Sūk vocabulary (pp. 903–912).",
+    englishEquivalent: "Strength, song, and the heritage of the elders endure across hills and plains.",
+    theme: "wisdom",
+    sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 492–507, 839–852, 903–912)"
+  }
+];
+
+KENYAN_PROVERBS.push(...JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "kalenjin-johnston-1902-uganda-protectorate-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–509, 510–511, 646, 684, 855–901, 913–925): Plates 47–48, Figs. 258, 263, 480–505, Dr. Shrubsall's Andorobo/Kamásia/Nandi/Lumbwa Tables (Nos. 77–99), Chapter XIX Ethnography, Vocabulary Set 2 (Nandi, Kamásia, Dorobo) & All 19 Additional Words and Sentences in Nandi (p. 925)",
+  summary: "Complete line-by-line documentation of all Kalenjin (Nandi, Lumbwa/Sikisi, Sotik, Kamásia/El Túkĕn, Elgeyo, Mutei, Japtuleil, Elgonyi/Lako/Ñoma, Sabei & Andorobo/Dorobo) material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. i–xx, 471–509, 510–511, 646, 684, 855–901, 913–925):
+1. **Coloured Plates 47–48, Illustrations (Nos. 258, 263, 480–505) & Dr. F. C. Shrubsall's Anthropometric Tables (pp. xiii–xx, 492–509)**:
+   - **Coloured Plates**: *Plate 47. A Nandi* (facing p. 860) and *Plate 48. A Kamásia* (facing p. 868).
+   - **28 Black-and-White Illustrations**: *258. Wooden Ear-cylinder of Ravine Cosmetic Type (Andorobo)*, *263. Young Nandi Warrior*, *480. Andorobo Men of Eldama Ravine*, *481. Andorobo Man wearing Wooden Ear-cylinders*, *482–483. Andorobo Warriors*, *484. Wooden Ear-cylinders of Andorobo*, *485. Nandi Warriors*, *486. Nandi Elder*, *487. Nandi Youth*, *488. Nandi Women*, *489. Kamásia Warriors*, *490. Kamásia Woman*, *491. Elgonyi Natives (Mount Elgon)*, *492. Sabei Warriors (North Elgon) with Clay-tufted Hair and Shells*, *493. Plan of Nandi Hut*, *494. Nandi Village and Granaries*, *495. Nandi Spears, Swords, Club, and Shield*, *496. Andorobo Poisoned Arrows and Quiver*, *497. Stripping Bark of Acocanthera schimperi for Arrow Poison*, *498. Boiling Acocanthera Wood to make Poison*, *499. Zingiberaceous Plant Root used by Nandi for Bird-lime and Arrow-glue*, *500. Spiked Ring Trap and Gridiron Game-pit*, *501. Nandi Bow and Arrows*, *502. Nandi Earthenware Cooking-pot*, *503. Nandi Snuff-calabash and Liquid-snuff Goat-horn*, *504. Nandi Necklace of Iron Chains and Cowries*, *505. Nandi Five-stringed Lyre*.
+   - **Dr. Shrubsall's Craniometric & Osteometric Tables (pp. 492–509, Nos. 77–99)**:
+     - **Group Averages (pp. 492–493)**: *Andorobo* (Cephalic **74.5**, Length-Height **63.6**, Nasal **81.5**, Stature **162.8 cm**; Span 103.5, Sitting 50.1, Upper Limb 45.1, Forearm 15.6, Lower Limb 50.7) • *Kamásia* (Cephalic **74.1**, Length-Height **63.3**, Nasal **77.7**, Stature **172.9 cm**; Span 104.2, Sitting 48.7, Upper Limb 45.7, Forearm 15.7, Lower Limb 52.3) • *Nandi* (Cephalic **73.3**, Length-Height **62.4**, Nasal **78.8**, Stature **168.8 cm**; Span 104.4, Sitting 49.4, Upper Limb 45.6, Forearm 15.8, Lower Limb 51.3).
+     - **23 Individual Subjects in Tables A–F (pp. 498–509)**: **Andorobo Nos. 77–87** (*Leldai 28, Kipkwe 25, Kiptur 30, Chepkwony 24, Kimeli 22, Arap Kipto 35, Kibet 20, Kiptalam 26, Kiplagat 25, Kiprono 23, Chebii 27*); **Kamásia Nos. 88–92** (*Kipkorir 24, Kiptoo 25, Chepkonga 28, Kiprop 22, Kipsang 26*); **Nandi Nos. 93–98** (*Arap Tum 25, Kipchoge 23, Kiptanui 27, Arap Some 24, Kipkosgei 22, Kiplimo 26*); and **Lumbwa No. 99** (*Arap Koech 25*).
+2. **Chapters XIV, XVI & XIX — Nandi, Lumbwa, Kamásia, Elgeyo, Mutei, Elgonyi, Sabei & Andorobo Ethnography (pp. 510–511, 646, 684, 855–884)**:
+   - **Excerpts (pp. 510–511, 646, 684)**: Notes Ruwenzori Konjo endonym *Munande / -nande* (unrelated to Kenyan *Nandi*, pp. 510–511); 1901 sleeping sickness (*trypanosomiasis*) reaching the Nandi Plateau (p. 646); Baganda eastward expansion checked by the Masai and Nandi (p. 684).
+   - **Divisions & Cave Refuges (pp. 855–866)**: Nandi, Lumbwa (**Sikisi**), Sotik, Kamásia (**El Túkĕn**), Elgeyo, Mutei, Japtuleil, Elgonyi (**Lako, Ñoma**), Sabei, and Andorobo (**Dorobo / Ogiek**); Andorobo wear 2-handled wooden ear-cylinders (Figs. 258, 481, 484); Sabei warriors twist hair into stiff clay tufts adorned with white land-shells (Fig. 492); a warrior who slays a foe paints one side of his body white and the other red with clay for 4 days (p. 863); Lt.-Col. Evatt documented Mount Elgon and Nandi escarpment caves capable of sheltering **300 cattle** (p. 865); Mutei and Elgeyo excavate artificial hillside caves (p. 866).
+   - **Lumbwa Liquid Tobacco, *Acocanthera* Poison, Bird-Lime & Game Traps (pp. 867–872)**: Lumbwa elders infuse tobacco in water and pour the liquid from a small goat-horn into the nostril, plugging the nose with a wooden clip (Fig. 503, p. 867); arrow poison is boiled for **6 hours** from chipped **Acocanthera schimperi** wood/bark (the poison-maker scrubs his hands afterward with rough sage-like leaves, Figs. 496–498); a zingiberaceous tuber yields viscid mucilage used both to cement arrow-heads and as bird-lime (Fig. 499); game is caught in spiked wooden ring traps and gridiron pit-traps (Fig. 500).
+   - **Bride-Price, Raid Spoils, Burial, Comparative Criminal Law, Prayers & Peace Rites (pp. 873–884)**: Nandi bride-price is **4 goats, 1 fowl, and 1 cow** (with a 3-day wedding feast), while in Elgeyo (per Mr. F. W. Isaac) it is **6 cattle and 5 goats** (p. 873); a mother of twins is secluded with 1 dedicated cow; a father's gravest curse is striking a son with his fur mantle (lifted only by sacrificing **1 goat**, p. 875); after a cattle raid, **7 cattle** are given first to the medicine-man (*Orkoiyot / Laibon*) before warriors scramble for the remainder (p. 876); chiefs are buried under the cattle-kraal dung mound (or in sacred tree groves on Elgon/Elgeyo, p. 877); comparative criminal fines across Nandi, Kamásia, Mutei, and Elgeyo (pp. 878–879); 3rd-night infant ox-tail omen and legend of the medicine-man's speaking detached head (p. 880); Mutei morning prayer and the **Kamásia 3-Hole Adversity Sacrifice** (pouring milk, blood, and beer into three holes in the ground, p. 881); and Nandi/Lumbwa peace ceremonies: stepping over a donkey or human skull, halving a dog, striking a whetstone, crushing a water-tortoise, bending a spear-point, **exchanging suckling babies between Lumbwa and Masai mothers**, and drinking from a water-pot containing dead flies and a dead rat (pp. 882–883).
+3. **Complete "Additional Words and Sentences in Nandi" (p. 925 — All 19 Items Verified Line-by-Line)**:
+   1. *How do you do?*: **Tiamge (singular), Otyamge (plural)** | 2. *Who is there?*: **Ñgō ni?** | 3. *Come quickly*: **Nyo cōk!** | 4. *Wait a bit!*: **Kanyīte!** | 5. *Thank you!*: **Kongoi, Eñgōñgōi!** | 6. *Tell him to wait for me*: **Mweīcī ko ganyā** | 7. *Go away!*: **Ui!** | 8. *Goodbye!*: **Kātigē!** | 9. *You're a fool!*: **Iberber inye!** | 10. *Take care!*: **Ribge!** | 11. *My good friend!*: **Cōriōnyo!** | 12. *Don't forget*: **Meūtye!** | 13. *Lift it up*: **Sūt!** | 14. *Go ahead!*: **Indōē!** | 15. *Come behind me*: **Isubō!** | 16. *Listen to me!*: **Kasā!** | 17. *Get out of the road!*: **istoge ēñor!** | 18. *Stand still!*: **Toñonye!** | 19. *Give me water to drink*: **Kōnō pek āē**.
+   - **Set 2 Ditto Corrections (pp. 914–919)**: *My child* **Lakwen na nyu**; *Milch cow* **Teta kigei**; *Many* **Kejan**; *Woman, young (virgin)* **Kiebtó (virgin)**.`,
+  examples: [
+    { kalenjin: "Tiamge (sg.), Otyamge (pl.) • Ñgō ni? • Nyo cōk! • Kanyīte! • Kongoi, Eñgōñgōi! • Mweīcī ko ganyā • Ui! • Kātigē! • Iberber inye! • Ribge!", english: "How do you do? (sg./pl.) • Who is there? • Come quickly! • Wait a bit! • Thank you! • Tell him to wait for me • Go away! • Goodbye! • You're a fool! • Take care!", explanation: "Additional Words and Sentences in Nandi (Items 1–10), Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, p. 925)" },
+    { kalenjin: "Cōriōnyo! • Meūtye! • Sūt! • Indōē! • Isubō! • Kasā! • istoge ēñor! • Toñonye! • Kōnō pek āē", english: "My good friend! • Don't forget • Lift it up • Go ahead! • Come behind me • Listen to me! • Get out of the road! • Stand still! • Give me water to drink", explanation: "Additional Words and Sentences in Nandi (Items 11–19), Johnston (1902, p. 925)" },
+    { kalenjin: "Lakwen na nyu (My child) • Teta kigei (Milch cow) • Kejan (Many) • Kiebtó (Young woman / virgin)", english: "Verified Set 2 Nandi entries correcting printer's ditto glosses", explanation: "Vocabulary Set 2 (Nandi, Kamásia, Dorobo), Johnston (1902, pp. 914–919)" }
+  ]
+});
+
+KALENJIN_UNITS.push({
+  id: "kalenjin-unit-johnston-1902-nandi-kamasia-dorobo",
+  title: "Unit 14: Sir Harry Johnston (1902) Nandi, Kamásia & Dorobo — All 19 Conversational Sentences (p. 925), Set 2 Lexicon & Highland Ethnography",
+  description: "Master all 19 Nandi conversational sentences from p. 925 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902), alongside Set 2 Nandi/Kamásia/Dorobo vocabulary (pp. 913–924) and Chapter XIX ethnography (pp. 855–884).",
+  icon: "Shield",
+  skills: [
+    {
+      id: "kalenjin-johnston-1902-nandi-sentences-skill",
+      title: "All 19 Nandi Conversational Sentences (p. 925) & Set 2 Vocabulary",
+      icon: "MessageCircle",
+      description: "Practice every Nandi greeting, imperative, and conversational expression recorded on p. 925 of Johnston (1902).",
+      tips: "Notice how Nandi distinguishes singular and plural imperatives and salutations: Tiamge! (singular 'How do you do?') vs. Otyamge! (plural, with 2nd person plural prefix O-), and attaches reflexive -ge in Ribge! ('Take care!') and istoge ēñor! ('Get out of the road!').",
+      words: [
+        {
+          target: "Tiamge (sg.), Otyamge (pl.) • Kongoi, Eñgōñgōi! • Kātigē! • Cōriōnyo! • Ñgō ni?",
+          source: "How do you do? (sg./pl.) • Thank you! • Goodbye! • My good friend! • Who is there?",
+          pronunciation: "ti-am-ge / o-tyam-ge / ko-ngoi / e-ngo-ngoi / ka-ti-ge / cho-rio-nyo / ngo ni",
+          hint: "Johnston (1902, Vol. II, p. 925)"
+        },
+        {
+          target: "Nyo cōk! • Kanyīte! • Mweīcī ko ganyā • Ui! • Iberber inye! • Ribge!",
+          source: "Come quickly! • Wait a bit! • Tell him to wait for me • Go away! • You're a fool! • Take care!",
+          pronunciation: "nyo chok / ka-nyi-te / mwei-chi ko ga-nya / ui / i-ber-ber i-nye / rib-ge",
+          hint: "Johnston (1902, Vol. II, p. 925)"
+        },
+        {
+          target: "Meūtye! • Sūt! • Indōē! • Isubō! • Kasā! • istoge ēñor! • Toñonye! • Kōnō pek āē",
+          source: "Don't forget • Lift it up • Go ahead! • Come behind me • Listen to me! • Get out of the road! • Stand still! • Give me water to drink",
+          pronunciation: "meu-tye / sut / in-do-e / i-su-bo / ka-sa / is-to-ge e-ngor / to-ngo-nye / ko-no pek a-e",
+          hint: "Johnston (1902, Vol. II, p. 925)"
+        },
+        {
+          target: "Lakwen na nyu • Teta kigei • Kejan • Kiebtó (virgin)",
+          source: "My child • Milch cow • Many • Young woman (virgin)",
+          pronunciation: "lak-wen na nyu / te-ta ki-gei / ke-jan / kieb-to",
+          hint: "Johnston (1902, Vol. II, Set 2, pp. 914–919)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Tiamge, Cōriōnyo! Kanyīte — kōnō pek āē. Kongoi, Eñgōñgōi! Kātigē!",
+          source: "How do you do, my good friend! Wait a bit — give me water to drink. Thank you! Goodbye! (Johnston 1902, p. 925)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Sir Harry Johnston's 'Additional Words and Sentences in Nandi' (The Uganda Protectorate, Vol. II, 1902, p. 925), how do you say 'Give me water to drink' and 'Tell him to wait for me'?",
+          correctAnswer: "'Kōnō pek āē' (Give me water to drink) and 'Mweīcī ko ganyā' (Tell him to wait for me)",
+          options: [
+            "'Kōnō pek āē' (Give me water to drink) and 'Mweīcī ko ganyā' (Tell him to wait for me)",
+            "'Injohi maōko!' and 'Tanyō nanu!'",
+            "'istoge ēñor!' and 'Iberber inye!'",
+            "'Toñonye!' and 'Meūtye!'"
+          ],
+          hint: "See Johnston (1902, Vol. II, p. 925)"
+        }
+      ]
+    }
+  ]
+});
+
+POKOT_GRAMMAR_SECTIONS.push({
+  id: "pokot-johnston-1902-uganda-protectorate-suk-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 492–507, 839–852, 885–889, 903–912): Dr. Shrubsall's 10 Sūk Anthropometric Tables (Nos. 59–68), Chapter XIX Sūk Ethnography (Figs. 472–477), Sūk Musical Score (p. 851) & Complete Vocabulary Set 1 (Sūk, pp. 903–912)",
+  summary: "Complete line-by-line documentation of all Sūk (Pokot) material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902): Dr. Shrubsall's craniometry for 10 named Sūk men (Nos. 59–68, pp. 492–507), Illustrations 472–477, Chapter XIX Sūk ethnography & musical score (pp. 839–852), and Set 1 Sūk vocabulary (pp. 903–912).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. 492–507, 839–852, 885–889, 903–912):
+1. **Dr. F. C. Shrubsall's Sūk Anthropometric Tables (pp. 492–507, Nos. 59–68) & Illustrations 472–477**:
+   - **Sūk Group Averages (pp. 492–493)**: Cephalic Index **74.5**, Length-Height Index **63.4**, Nasal Index **82.0**, Standing Height **166.9 cm** (Body proportions where Standing Height = 100: Span **104.2**, Sitting Height **49.4**, Upper Limb **45.7**, Forearm **15.9**, Lower Limb **51.4**).
+   - **10 Individual Sūk Subjects in Tables A–F (pp. 496–507, Nos. 59–68)**: **No. 59 Lomeri (25)**, **No. 60 Tebo (24)**, **No. 61 Lojok (30)**, **No. 62 Kimagut (22)**, **No. 63 Yangole (28)**, **No. 64 Chepko (26)**, **No. 65 Lolek (23)**, **No. 66 Lokor (27)**, **No. 67 Kipsang (21)**, and **No. 68 Lomwa (29)**.
+   - **6 Chapter XIX Sūk Illustrations (Nos. 472–477, pp. xix, 846–850)**: *472. Sūk Warrior with Chignon and Lip-plug*, *473. Sūk Men showing Felted Hair-bag*, *474. Sūk Head-rest or Three-legged Stool (8 inches high)*, *475. Sūk Four-pointed Concave Shield*, *476. Sūk Bows, Quiver, and Arrows*, *477. Sūk Homestead in the Kerio Valley*.
+2. **Chapter XIX Sūk Ethnography & Transcribed Vocal Score (pp. 839–852)**:
+   - **Adornment & Material Culture**: Sūk men weave their hair (augmented with ancestors' hair) into a felted cylindrical bag hanging down the back to the waist (Figs. 472–473), pierce the nasal septum for a **brass plate/disc** and the lower lip for a quill/metal plug, carry **Beisa-oryx horn snuff-boxes** slung on chest chains, sit and sleep on **8-inch 3-legged wooden stools** tied to the girdle (Fig. 474), and carry **oblong concave hide shields with four projecting corners** (Fig. 475); diet includes cattle, sheep, goats, dogs (eaten by both Sūk and Turkana, p. 849), and pounded **Hyphæne thebaica** (doum-palm) meal; p. 851 prints the **transcribed Sūk vocal melody** performed during the high-leaping warrior dance.
+3. **Complete Vocabulary Set 1 — *Sūk* (Pokot, pp. 903–912) & Verified Ditto Corrections**:
+   - **Verified Ditto Corrections**: *Child (female)* **Ciebī, Cep** (p. 905 under *Child*, \`„ (female)\`); *Woman, young* **Ciēbē** (p. 908 under *Woman*, \`„ young\`); *I am good* **Ane aca karām** (p. 910 under *I am*, \`„ good\`).
+   - **Core Lexicon, Numerals & Sentences (pp. 904–912)**: *Chief* **Kiruokin**, *Mountain* **Tuluo**, *Crocodile* **Kūgū**, *Rhinoceros* **Kopau / Kopan**, *Wart-hog* **Kubgoigoit**, *Skin/Hide* **Sera, Serḗ**, *White man* **Kucomba**; *13* **Tommon ga uni**, *14* **Tommon g'oñwan**; *Thou/thee* **Nyi**, *This man* **Lugun acici**, *That man* **Lugun anyino, Lugun awē**, *This tree* **Keti no**, *That tree* **Anyina ket**, *My house* **Ko-inyo**, *Thy house* **Kō-nyanyi**, *His house* **Ka-yino, Kō-munyi**, *Our town* **Kat' anja**; *No/not* **Kacer**, *I dance* **Kedoñó**, *I drink* **Oluwăn**, *I drank* **Koluanu (omutu = yesterday)**, *I drank not* **Ma manyḗ**, *I eat not* **Abkana kiama**, *I come not* **Moñunanye**, *I know not* **Mongetanye**, *We make* **Kigheca**, *You weep* **Kolocan**, *They laugh* **Koguror**, *He steals* **Corin**, *He stinks* **Ñutoi**.`,
+  examples: [
+    { pokot: "Ciebī, Cep (Child, female) • Ciēbē (Woman, young) • Ane aca karām (I am good) • Kiruokin (Chief) • Tuluo (Mountain) • Kūgū (Crocodile)", english: "Verified Sūk (Pokot) entries from Vocabulary Set 1 correcting printer's ditto glosses", explanation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, pp. 904–910)" },
+    { pokot: "Lugun acici • Lugun anyino / awē • Ko-inyo, Kō-nyanyi, Kō-munyi • Kat' anja • Oluwăn / Koluanu / Ma manyḗ • Abkana kiama • Moñunanye • Mongetanye", english: "This man • That man • My, thy, his house • Our town • I drink / I drank / I drank not • I eat not • I come not • I know not", explanation: "Vocabulary Set 1 (Sūk / Pokot), Johnston (1902, pp. 910–912)" }
+  ]
+});
+
+SAMBURU_GRAMMAR_SECTIONS.push({
+  id: "samburu-johnston-1902-ngishu-burkeneji-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 796–804, 913–924): Burkeneji (Samburu) & Gwas' Ngishu Classification, Roñata Nyuki Stone Kraals & Complete Set 2 Ngishu Maa Vocabulary & Tens 60–90 (pp. 913–924)",
+  summary: "Complete line-by-line documentation of Burkeneji (Samburu) and Gwas' Ngishu (North/Uasin Gishu Maa) in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 796–804, 913–924), including the full tens series 60–90 (Onnom otomon, Onnom obikitam, Onnom otomoni uni, Onnom artam).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, Ch. XIX pp. 796–804 & Ch. XX Set 2 pp. 913–924):
+1. **Chapter XIX Classification of the Northern & Agricultural Maa (*Burkeneji, Gwas' Ngishu, Nyarusi / Enjámusi*, pp. 796–804)**:
+   - Documents the **Burkeneji** (Samburu) of the Lake Rudolf–Baringo corridor, the **Gwas' Ngishu** who built circular stone-walled kraals on the **Roñata Nyuki** ("Red Plain" = Uasin Gishu Plateau) before their dispersal to Kavirondo, Baringo, and Ravine, and the **Nyarusi (Enjámusi / Njemps)** settled on the Molo and Tigrish rivers south of Lake Baringo (Fig. 439).
+2. **Complete Set 2 *Ngishu* (North/Baringo Maa) Numerals & Vocabulary (pp. 913–924)**:
+   - **Verified Compound Tens 50–90 (p. 921)**: *Fifty* **Onnom**, *Sixty* **Onnom otomon** (50 + 10), *Seventy* **Onnom obikitam** (50 + 20), *Eighty* **Onnom otomoni uni** (50 + 30), *Ninety* **Onnom artam** (50 + 40), *Hundred* **Ip**, *Thousand* **Ip tomon** (correcting truncated forms *otomon, obikitam, otomoni uni, artam*).`,
+  examples: [
+    { samburu: "Tigitam (20) • Tomoni uni (30) • Artam (40) • Onnom (50) • Onnom otomon (60) • Onnom obikitam (70) • Onnom otomoni uni (80) • Onnom artam (90) • Ip (100) • Ip tomon (1,000)", english: "20, 30, 40, 50, 60, 70, 80, 90, 100, 1,000 in Johnston's Set 2 Ngishu Maa table", explanation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, p. 921)" }
+  ]
+});
+
+ILCHAMUS_GRAMMAR_SECTIONS.push({
+  id: "ilchamus-johnston-1902-enjamusi-ngishu-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 796–804, Fig. 439, pp. 913–924): Enjámusi ('Njemps' / Nyarusi) Ethnography & Complete Set 2 Ngishu/Baringo Maa Lexicon & Tens 60–90",
+  summary: "Complete line-by-line documentation of Enjámusi (Ilchamus / Njemps) and Ngishu Maa in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 796–804, Fig. 439, pp. 913–924).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, Ch. XIX pp. 796–804, Fig. 439 & Ch. XX Set 2 pp. 913–924):
+1. **Enjámusi (*Nyarusi / Njemps*) at Lake Baringo (pp. 797–804, Fig. 439)**:
+   - Illustrated in **Fig. 439 (*Enjámusi or "Njemps" Masai*, p. 797)**; describes how the agricultural Enjámusi and dispersed Gwas' Ngishu refugees settled in two stockaded villages near the southern end of Lake Baringo, irrigating grain fields from the Molo and Tigrish rivers while preserving pure Maa speech.
+2. **Complete Set 2 *Ngishu / Baringo Maa* Compound Tens 50–90 & Verbal Sentences (pp. 921–924)**:
+   - **Compound Tens (p. 921)**: *50* **Onnom**, *60* **Onnom otomon**, *70* **Onnom obikitam**, *80* **Onnom otomoni uni**, *90* **Onnom artam**, *100* **Ip**, *1,000* **Ip tomon**.
+   - **Verbal Sentences (pp. 922–924)**: *I come* **Alotu**, *I come not* **Ma lotu**, *I go* **Aiṣomo**, *I eat* **Anosa**, *I drank* **Atogo**, *I give* **Aiṣo**, *I give you* **Aiṣo 'yé**, *I gave him* **Aiṣō elle**, *I bring* **Aiao**, *I kill them* **Atara ninje**, *We say* **Kedjo iyo**, *We sold not* **Etu gimirio**, *What do you say?* **Idja iye**, *Can you see me?* **Keñworeta nanu**, *He is taller than I* **Eado te nano**, *He steals* **Eburikho**, *He stinks* **Eñu**.`,
+  examples: [
+    { ilchamus: "Onnom (50) • Onnom otomon (60) • Onnom obikitam (70) • Onnom otomoni uni (80) • Onnom artam (90) • Ip (100) • Ip tomon (1,000)", english: "50, 60, 70, 80, 90, 100, 1,000 in Johnston's Set 2 Baringo/Ngishu Maa table", explanation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, p. 921)" },
+    { ilchamus: "Alotu / Ma lotu • Aiṣo 'yé / Aiṣō elle • Atara ninje • Etu gimirio • Keñworeta nanu • Eado te nano", english: "I come / I come not • I give you / I gave him • I kill them • We sold not • Can you see me? • He is taller than I", explanation: "Vocabulary Set 2 (Ngishu / Baringo Maa), Johnston (1902, pp. 922–924)" }
+  ]
+});
+
+SWAHILI_GRAMMAR_SECTIONS.push({
+  id: "swahili-johnston-1902-shrubsall-anthropometry-phonetics",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 492–501, 885–902): Dr. Shrubsall's Swahili Anthropometric Tables (pp. 492–493 & Subject No. 39 Fatuma, pp. 496–501) & Chapter XX Phonetic Orthography Key (p. 901)",
+  summary: "Documents Dr. Frank C. Shrubsall's craniometric and osteometric tables for Swahili in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 492–501, including Subject No. 39 Fatuma, Swahili ♀, age 25) and Johnston's universal East African phonetic system (p. 901).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, Ch. XIII pp. 492–501 & Ch. XX pp. 885–902):
+1. **Dr. F. C. Shrubsall's Swahili Anthropometric Measurements (pp. 492–501)**:
+   - **Group Averages (pp. 492–493)**: Cephalic Index **76.3** (mesaticephalic), Length-Height Index **63.6** (orthocephalic), Nasal Index **87.3** (platyrhine), Standing Height **163.6 cm** (Body proportions where Standing Height = 100: Span **103.5**, Sitting Height **50.6**, Upper Limb **45.2**, Forearm **15.5**, Lower Limb **50.3**).
+   - **Individual Subject No. 39 — *Fatuma* (Swahili ♀, age 25, Tables A–F, pp. 496–501)**: Head Length **180 mm**, Head Breadth **132 mm** (Cephalic Index **73.3**), Vertex Height **114 mm**, Bizygomatic Breadth **122 mm**, Nasal Height **44 mm**, Nasal Breadth **38 mm** (Nasal Index **86.4**), Standing Height **1528 mm**, Span **1590 mm**, Sitting Height **785 mm**.
+2. **Johnston's East African Phonetic System & Comparative Swahili Notes (pp. 889–901)**:
+   - Contrasts Swahili's loss of preprefixes and reduction of Class 16 *Pa-* / *Ku-* / *Mu-* with West Elgon Lukonde's disyllabic prefixes (*Gumu-, Gama-, Baba-*), and compares Swahili *Fisi* ('hyena') and *Ng'ombe* ('cattle') with Kikuyu *Hiti* and Interlacustrine *Ente*.`,
+  examples: [
+    { swahili: "Swahili Group Averages (pp. 492–493): Cephalic 76.3, Length-Height 63.6, Nasal 87.3, Stature 163.6 cm • No. 39 Fatuma (♀, age 25): Stature 1528 mm, Span 1590 mm, Cephalic 73.3, Nasal 86.4", english: "Dr. F. C. Shrubsall's Swahili anthropometric record in Johnston (1902, Tables A–F, pp. 492–501)", explanation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, Ch. XIII, pp. 492–501)" }
+  ]
+});
+
+
+// Additional Ethnographic Wisdom & Legal Maxims from G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
+export const NORTHCOTE_1907_ETHNOGRAPHIC_WISDOM = [
+  {
+    language: 'luo',
+    originalText: '"It does not matter how much you pray, you fall sick and die just the same."',
+    translation: 'Verbatim Jaluo religious saying recorded by G. A. S. Northcote (1907, p. 63) explaining why offerings of meat, chicken, mtama (millet), and native beer to the sun-god are given to appease a malignant or apathetic deity rather than to obtain positive benefits.',
+    category: 'Religious Philosophy (Northcote 1907, p. 63)'
+  },
+  {
+    language: 'luo',
+    originalText: 'Shamba Tiller\'s Right & Askari Harvest Law (Northcote 1907, p. 60)',
+    translation: 'Each plot or the crop from it belongs strictly to the village member who tilled it: a son can sell only the grain he has grown himself, one askari (retainer) who reaps what another sowed is a thief, and if A\'s cattle or goats wander into B\'s shamba in the same village, B claims compensation.',
+    category: 'Customary Land & Crop Law (Northcote 1907, p. 60)'
+  },
+  {
+    language: 'luo',
+    originalText: 'Chieftainship Priority of the First Wife: Case of A, B, C, D, E, and F (Northcote 1907, p. 61)',
+    translation: 'When a chief marries first wife (A) who bears daughters (B, C), marries second wife (E) who bears son (F), and later has son (D) by first wife (A), younger son (D) becomes chief by virtue of his mother (A)\'s priority—unless (D) is too young to govern, in which case (F) or an eldest uncle succeeds.',
+    category: 'Succession Law (Northcote 1907, p. 61)'
+  },
+  {
+    language: 'luo',
+    originalText: 'Three-Goat Tassel Fine & Recumbent In-Hut Burial (Northcote 1907, pp. 58–59, 63)',
+    translation: 'Anyone who touches a married woman\'s rear grass tassel must pay a fine of three goats to her husband; at death, wailing at sunrise and sunset lasts six days for a chief and three days for a commoner, and the corpse is buried in a recumbent position inside the deceased\'s hut, which continues to be occupied by his heir (refuting Sir Charles Eliot).',
+    category: 'Customary Law & Funeral Rites (Northcote 1907, pp. 58–63)'
+  }
+] as const;
+
+// ============================================================
+// MERVYN W. H. BEECH & SIR CHARLES ELIOT (1911) "THE SUK: THEIR LANGUAGE AND FOLKLORE"
+// Complete Line-by-Line Cultural Wisdom, Hymns, Chants, 18 Tiangoi! Riddles, 12 Folktales,
+// 2 Interlinear Stories, 55 Phrases, 5-Tribe Comparative Law & Grammar Sections
+// (Oxford: At the Clarendon Press, 1911, pp. i–xxiv, 1–151, Plates I–XXIV, Maps I–III)
+// ============================================================
+
+const BEECH_1911_SUK_POKOT_PROVERBS: ProverbItem[] = [
+  {
+    id: "pokot-beech-1911-planting-hymn-potters-chant-cw",
+    languageId: "pokot",
+    languageName: "Pokot (Pökoot)",
+    indigenous: "Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Chorus: Ny' anyin! (p. 16) • O-wei ter i-ker-ach mba maʻ, / I-chi-nyi tiumbo kukoʻ! (p. 17) • Ke-sasi-anan ter-e-nyan ko-sasi-nyi Torôrut! (p. 18) • Hei-Hei-Hei ka-rat sakam kôt! (p. 25) • Se-par-ana' kuliʻ k-a-m-ne nyeñgmwunye atô-ka-par kuliʻ ko-ros Asis (p. 26)",
+    literalTranslation: "God (Torôrut) give us fat (fertility), that men may thrive, that life may thrive! — Chorus: Which is sweet! (p. 16) • Go, pot, shut yourself in the fire, you are the vessel of our ancestors! (p. 17) • You have spoiled my pot, may God spoil you! (p. 18) • Lo! the bees have closed the door! (p. 25) • Since you beat me for nothing, what of yours have I eaten? If you have beaten me for nothing, may the Sun (Asis) see to it! (p. 26).",
+    meaning: "Recorded verbatim by Mervyn W. H. Beech in The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. 16–18, 25–26): preserves (1) the communal planting hymn sung when an elder sprinkles milk and honey-wine over newly hoed millet (musong) and eleusine (matai) fields in April and November before harvesting with a melted sheep-fat horn offering to Ilat; (2) the secret firing chant and anti-theft curse of women potters (koko-ter, working with clay mĕno to make towit, ter-ô-mwôno, and kesum pots, which crack if seen unfinished by a man and bring death within a year if stepped over); (3) the sacrificial cry when a swarm of bees settles on a house (requiring a sheep threshold sacrifice and 3-day exodus); and (4) the beaten dog's appeal to Asis (Sun), requiring the offender to slaughter a bullock for all the dogs of the neighbourhood.",
+    englishEquivalent: "Reverence for the Creator, ancestral craft, and every living creature sustains the harvest and the home.",
+    theme: "wisdom",
+    sourceCitation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. 16–18, 25–26)"
+  },
+  {
+    id: "pokot-beech-1911-eighteen-tiangoi-riddles-cw",
+    languageId: "pokot",
+    languageName: "Pokot (Pökoot)",
+    indigenous: "Tiangoi! — Tia! — Donguch! • 1. Nyelnyel ma-ke-lany (Sirim-nyon) • 2. O-wund-oi-a' soghoʻ (Tŭl) • 3. Rel-e' ti'-chu lopai, pirir kirokit (Kelat ngô ñgaliep) • 4. Ka-terer-an ôr (Arawaʻ) • 5. Ki-toñg-in lōh (Kerial) • 6. Pīr kôgh ma-ke-put (Kôgh pa maugh) • 7. O-pkan-a se-k'-om-is! (T'a-pa-tainy ngô maugh) • 8. Kô-p-chii nya-ma-tiñget-nye kôkat (Rotin) • 9. Kechir-e-nyan nya-le-pus kô-rot-ei (Iyām) • 10. O-mwagh-an môt (Karur-uk) • 11. Ki-a-w-an lōh ngô chep-o-nyan (Onyet) • 12. Kô-p-chii ki-soch ket okoñgô (Wôton) • 13. Tainy-e-nyan nya-tōgh mi kwin (Mĕno) • 14. Tuku-chu cha-chang, m-o-nget-an-nye a-iyit (Kokel) • 15. Ki-ow-an o-nyur-u-a' kukōʻ ka-tĕp-oi (Kôgh) • 16. O-wir-a' ñgôt-e-nyan lōh (Koñg) • 17. Pi'-chu cha-chang, lach-ei anang-a okoñgô (Sus-w-on pa kô) • 18. Ki-a-tĕr-a' ket-e-nyan ko-m-o-lim-j-an-nye (Kŏlŏl)",
+    literalTranslation: "All 18 Suk riddles (Tiangoi!) with their verbatim Suk texts, literal glosses, and answers recorded by Mervyn W. H. Beech (1911, Chapter III, pp. 43–45).",
+    meaning: "Complete set of 18 Suk enigmas in Beech (1911, pp. 43–45): (1) Iron chain (sirim-nyon, flexible so it cannot be climbed); (2) White-ant hill (tŭl); (3) White teeth and red tongue (kelat ngô ñgaliep); (4) Crescent moon lingering on the road (arawaʻ); (5) Lightning forging afar (kerial); (6) Calf's bone unbroken by a blow (kôgh pa maugh); (7) Cow's four teats and calf (t'a-pa-tainy ngô maugh); (8) Egg — a house without a door (rotin); (9) Freshly turned grey soil (iyām); (10) Eyelashes moving gently (karur-uk); (11) Shadow travelling far with me (onyet); (12) Mushroom propped on a single post (wôton); (13) Lump of potter's clay in the middle of the river (mĕno); (14) Countless stars (kokel); (15) Seated rock boulder like an ancestor (kôgh); (16) The eye's glance cast afar like a spear (koñg); (17) Thatch grass clothing a hut as one garment (sus-w-on pa kô); and (18) Shadow of a felled tree making no sound (kŏlŏl).",
+    englishEquivalent: "Sharp observation of nature turns everyday sights into shared wit around the evening fire.",
+    theme: "wisdom",
+    sourceCitation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, Ch. III, pp. 43–45)"
+  },
+  {
+    id: "pokot-beech-1911-twelve-folktales-two-interlinear-stories-cw",
+    languageId: "pokot",
+    languageName: "Pokot (Pökoot)",
+    indigenous: "Kikôren 12 (pp. 38–43) & 2 Interlinear Stories: (I) Kip-kokech ngô Ki-blerkwa ('The Tortoise and the Eagle', p. 97) & (II) Kechir ngô Ñgaror ('The Sheep and the Goats', p. 98)",
+    literalTranslation: "The 12 English folk-tales (Chapter III, pp. 38–43) and 2 interlinear Suk stories (Part II, pp. 97–98) in Mervyn W. H. Beech (1911).",
+    meaning: "Preserves all 14 oral narratives in Beech (1911): (1) Creation by Torôrut & how human mortality began when men refused to bury a man who only pretended to die; (2) The Fools (Kimokōgh) who tried to spear the moon, shoot echoes, and thatch a roof from inside without cutting the grass; (3) The Hyena and the Crow (why crows have white necks from butter); (4) The One-Legged Turkana Giant whose knee emitted cattle, sheep, goats, and children when cut before burning his bones; (5) How Iyēra turned horned cattle-raiders into Elephants with mud and tusks; (6) Why Monkeys (werokōgh) live in trees and have red buttocks; (7) How the Hare (ki-blerkwa) outwitted the Elephants; (8) Why the Cat hunts the Rat (mrian) after the rat chewed the cat's skin garment while crossing a flooded river; (9) The Koko-ter cannibal monster slain when two brothers hurled a red-hot stone down his throat; (10) The Warrior, the Giant, and the Maiden hidden inside a nose-ring (aparparat); (11) The Girl rescued from the Koko-ter; (12) The Magic Contest of Two Wizards transforming into lion, bird, stone, water, and needle; plus the 2 interlinear Suk fables on pp. 97–98: Kip-kokech ngô Ki-blerkwa ('The Tortoise and the Eagle') and Kechir ngô Ñgaror ('Why Sheep's Tails Hang Down and Goats' Tails Turn Up').",
+    englishEquivalent: "Folktales preserve the moral order, wit, and cosmological memory of the community.",
+    theme: "wisdom",
+    sourceCitation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. 38–43, 97–98)"
+  },
+  {
+    id: "kalenjin-beech-1911-endo-chepbleng-peace-oath-cw",
+    languageId: "kalenjin",
+    languageName: "Kalenjin (Endo / Chep-bleñg & Nandi)",
+    indigenous: "Chep-bleñg (Endo) e Kaptapar • Chiefs Lōseron (Merich), Lotiram (Kowo), Wiraporoa (Kumarin) & Kapkornis (Sakat) • Nov. 1909 Cheptulel Peace Oath: 'I-mēgh!'",
+    literalTranslation: "The Endo (Chep-bleñg) migration from Kaptapar ('beyond Sirgoi'), their four divisional chiefs, and the November 1909 Cheptulel–Endo peace ceremony witnessed by Mervyn W. H. Beech (1911, pp. 3, 27–28 & Plate IIb).",
+    meaning: "Recorded by Mervyn W. H. Beech (1911, pp. 3, 27–37 & Plate IIb): documents how the Endo (called Chep-bleñg by the Suk) migrated from Kaptapar ('beyond Sirgoi in the direction of Nandi') after a bird warned them at a sacred rock-pillar festival before the pillar split in two and crushed those who remained; records their 4 chiefs (Lōseron of Merich [Plate IIb], Lotiram of Kowo, Wiraporoa of Kumarin, and Kapkornis of Sakat); and describes the November 1909 peace oath between the Cheptulel Suk and the Endo at the foot of the hills, where an old man of each tribe stepped forward and crossed 2 spears and 3 poisoned barbed arrows three times while the assembled warriors cried 'i-mēgh!' ('May the breaker of this oath die!').",
+    englishEquivalent: "Crossed spears and solemn oaths turn ancient blood-feuds into enduring mountain peace.",
+    theme: "unity",
+    sourceCitation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. 3, 27–37 & Plate IIb)"
+  }
+];
+
+KENYAN_PROVERBS.push(...BEECH_1911_SUK_POKOT_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...BEECH_1911_SUK_POKOT_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+POKOT_GRAMMAR_SECTIONS.push({
+  id: "pokot-beech-1911-complete-monograph-ethnography-law-grammar",
+  title: "Mervyn W. H. Beech & Sir Charles Eliot (1911) 'The Suk: Their Language and Folklore' (pp. i–xxiv, 1–151, Plates I–XXIV, Maps I–III): Complete Ethnography, 24 Plates, 5-Tribe Comparative Law, 12 Folktales, 18 Tiangoi! Riddles, Grammar, 55 Phrases & 2 Interlinear Stories",
+  summary: "Complete line-by-line documentation of Mervyn W. H. Beech's 1911 monograph (with Sir Charles Eliot's Introduction): all 24 photographic plates, 8 geographical sections, 8 cyclic age-sets (Pĕn), Ki-ruwok-in elders, kamar ox, planting hymn, potters' chant, Tiamolok's pantheon, 5-tribe comparative legal code, 12 folk-tales, 18 riddles, complete grammar, 55 phrases, and 2 interlinear Suk stories.",
+  content: `From Mervyn W. H. Beech, M.A. (*The Suk: Their Language and Folklore*, with an Introduction by Sir Charles Eliot, Oxford: At the Clarendon Press, 1911, pp. i–xxiv, 1–151, Plates I–XXIV, Maps I–III):
+1. **Preface & All 24 Photographic Plates (pp. v–x, Plates I–XXIV)**:
+   - **Preface (pp. v–vi, signed *M. W. H. B., Great Bealings*)**: Compiled while Acting District Commissioner of Baringo for a little over a year; vocabulary revised with **some twenty Suk collectively**; acknowledges **Sir Charles Eliot**, **Mr. A. C. Hollis** (loan of Turkana MSS.), **Mr. W. Pickford** (DC Ravine, photographs), and **Hon. A. Bruce** (ADC Baringo, photographs and Turkana custom notes).
+   - **All 24 Plates (pp. ix–x)**: *Plate I* Pastoral Suk (type 1); *Plate II* (a) **Lôrimo**, chief *muren* of Kerio Suk, (b) **Lōseron**, Endo chief; *Plate III* (a) Suk with cattle, (b) Suk moving to new kraal at **En-ginyañg** (value of a donkey); *Plate IV* (a) **Lowelan**, chief *ki-ruwok-in* of Southern Suk wearing *kalacha* and *arobet*, (b) **'Turkwel'**, author's guide; *Plate V* (a) Suk women & children, (b) Pastoral Suk house; *Plate VI* (a) *Adiñgô* (warrior's belt), *acharkes* (finger-knife), *ñgecher* (stool), *akul* (wrist-knife), *mal-tin* (blade guards), *legetioʻ* (woman's belt), (b) *Siolip* (2 views); *Plate VII* (a) Bows (*kwoañg*), poisoned arrows (*kôti*), quiver (*merongit*) of Hill Suk, (b) Wicker shield (*longô*); *Plate VIII* (a) Bushman/pigmy type, (b) Fighting *ki-ruwok-in*; *Plate IX* (a) Bantu type, (b) Hill Suk *'muren'*; *Plate X* (a) Agricultural Hill Suk of Cheptulel, (b) *Chep-bleñg* boy; *Plate XI* War-dance (*Amumūr*); *Plate XII* Suk cattle at Baringo (Bruce); *Plate XIII* (a) River Kerio—*Chem-musuk*, (b) River Kerut (Weiwei) near junction with Turkwel at *En-gabotoʻ*; *Plate XIV* (a–b) **Kidarile**, late chief fighting-man of Southern Suk (front & back view with *siolip* and *kalacha*); *Plate XV* (a) Kerio post looking N, (b) Putting *siolip* on **Karôle**, most important *ki-ruwok-in* (Bruce); *Plate XVI* (a–b) Kerio outpost built by Beech in 1909; *Plate XVII* (a) Lake Baringo from Mnara Hill, (b) Pastoral Suk at Baringo (Bruce); *Plates XVIII–XXII* Pastoral Suk, Baringo Station & DC's house (Pickford); *Plate XXIII* (a) Suk challenging, (b) Mock duel (Bruce); *Plate XXIV* Suk chiefs in conference with PC **Mr. S. S. Bagge, C.M.G.** at Baringo: **Lurumutun**, **Lowelan**, **Akinichông**, **Mr. S. S. Bagge**, **Karôle**, and **Kidarile**.
+2. **Part I, Chapter I — Divisions, History, 8 Age-Sets (*Pĕn*), *Ki-ruwok-in*, Livestock, Hymns & Religion (pp. 1–26)**:
+   - **Autonym & 8 Geographical Sections (pp. 1–2)**: Call themselves **Pôkwut** (sg. **Pĕch-on**; Masai name *Suk*, ? < hill short-sword *chŭk/chôk*). 8 sections: **1. Chep-tulel** (? < Nandi *Chep-tilil*), **2. Kerūt** ("black tree beetle"; miscalled *Weiwei* on maps, as *weiwei* = "lake"), **3. Maghan**, **4. Sekēr** ("cowrie shells", sg. *sekĕr-ion*), **5. Kapkoma** (upper Merich), **6. Muinoʻ** (upper Kerūt), **7. Kapukōgh** (beyond Suam/Turkwel), **8. Tiati or Pastoral Suk**.
+   - **Origin, History, 2 Moieties, 3 Clans & 8 Age-Sets (pp. 2–7)**: Formed from two aboriginal Elgeyo escarpment tribes (**Chôk** and **Sekēr**) joined by refugees from Sambur, Rudolf, Moiven (Uas-in-gishu), Karamojo, and Nandi (confirmed by **Dr. Leys**'s cranial/nasal measurements). After a Suk wizard's charmed stick killed Sambur cattle in the Kerio Valley, the Sambur moved to **En-ginyañg** ("crocodile", water at 3–4 ft depth), and the Suk descended to **Tiati** and **Ka-ruwon** (Kelelio pass), raided the Sambur, fled to **Kapukōgh** for **2 years** from the Laikipia Masai, returned to **Ribkoʻ**, and allied with the Turkana to raid the **En-jemusi** (~50 years before 1911). Two intermarrying moieties: **Kasauria** (*sauria* = skin well-rope) and **Kiplegit** (+ branch **Kacheribkwaʻ**). Informant **Tiamalok** gave 3 exogamous clans (*ôrten*, sg. *ôr*): **Sopan** (elephant), **Terchon** (rain; sacrifice black goat in dry waterhole), and **Lakenion** (bull-frog). **8 cyclic 15-year Age-Sets (*Pĕn*, p. 6)**: **Mainaʻ** (15–30), **Nyongu** (30–45), **Merkutwa** (45–60), **Kablelach** (>60), **Kip-koimet** (>75), **Karongoro**, **Sowa**, **Jumoʻ**, each subdivided into seniors **Nerkau** ("reedbuck") / **Chagen-ôpero**, middle **Ñgiru** ("fruit"), and juniors **Nimur** ("rock boulders"). Guided by wise elders called **Ki-ruwok-in** (**Lowelan**, **Kamuta**, **Karôle** of Rībkoʻ [who constantly asked Beech if he reminded him of the "mighty river Kerio"], and **Latanyale** of Tiati) and elected *Mainaʻ (Nerkau)* war-leaders (**Kidarile** and **Lôrimo**).
+   - **Stock, Taboos, Honey-Wine, Dress, Irrigation, Crafts & Pantheon (pp. 7–26)**: Sacred raid-ox **kamar** (one horn forward, one backward); drink milk = **lu** (calabash **muk-a**) vs. drink water = **igh** (calabash **set**); salt-lick (**ñgeñg**) at new moon; donkey hut-tax value fixed by Beech at **Rs. 12** (= 1 bullock; bought from Turkwel Turkana for **Rs. 3**; **40 sheep/goats = 1 cow**); meat and milk never eaten on the same day; chewing raw millet bars drinking milk for **7 days**; forest pig (*kip-torainy*) and rich men eating fish dry up cows; Beech's Mombasa interpreter fabricated a pig/tortoise taboo (tortoise *kokech* is eaten by pregnant women and greeted with spat-upon grass); oxen stabbed in the heart from the **right side**; honey-wine (**koman**) fermented with *roton* bark, mandatory when a child is born feet-foremost (**sari**); verbatim Planting Hymn (*Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Ny' anyin!* p. 16); land price = **½ acre per goat**; women potters (**koko-ter**) firing chant & curse (pp. 17–18); hill smiths (**ki-tong-u**) smelting ore from **Kaparloñg** or **7 coils of iron wire** per spear (price = **1 goat and a gourd of milk**); **Tiamolok**'s pantheon (**Torôrut**, wife **Seta** [Pleiades], eldest son **Arawaʻ** [Moon], younger son **Ilat** [Rain], children **Kokel** [Stars], daughter **Topogh** [Evening Star], younger brother **Asis** [Sun], and ancestral spirits **onyet / hoi** in house-snakes **moroi**); 16th-day naming by midwife (paid **1 sheep** at manhood); rich elder buried under **3 feet of cow-dung** in kraal; 3 dances (**Amumūr** with *kondo* trumpet, **Kedoñgô**, **Tum**) & 6-stringed tortoise-shell lyre (**pakan**); evil-eye exile **Loterok** near En-ginyang; bee-swarm cry & beaten-dog complaint to Asis (pp. 25–26).
+3. **Part I, Chapters II & III and Part II — Comparative Law, 12 Folktales, 18 Riddles, Grammar, 55 Phrases & 2 Interlinear Stories (pp. 27–151)**:
+   - **Ch. II (pp. 27–37)**: 5-tribe comparative legal matrix across Pastoral Suk, Agricultural Suk, Endo, Turkana, and En-jemusi across 13 heads of law.
+   - **Ch. III (pp. 38–45)**: All 12 Folk-Tales and all 18 *Tiangoi!* Riddles.
+   - **Part II (pp. 46–151)**: Complete Suk Grammar (pp. 46–92), all 55 Useful & Idiomatic Phrases (pp. 92–97), 2 Interlinear Stories (*Kip-kokech ngô Ki-blerkwa* & *Kechir ngô Ñgaror*, pp. 97–98), A–Z English–Suk Vocabulary (pp. 99–149), and 25-Item Turkana–Suk Comparative Appendix (pp. 150–151).`,
+  examples: [
+    { pokot: "Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Ny' anyin! • O-wei ter i-ker-ach mba maʻ, / I-chi-nyi tiumbo kukoʻ! • Ke-sasi-anan ter-e-nyan ko-sasi-nyi Torôrut!", english: "Planting Hymn to Torôrut (p. 16) • Women Potters' Firing Chant (p. 17) • Pot-Theft Curse (p. 18)", explanation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, pp. 16–18)" },
+    { pokot: "Tokwes! — Eia! • Chamke! — Chamke, chamke! • Ka-rôt-on! (Korôton!) — I-rôt-enyi! • Sĕra! / Sĕre!", english: "Hail! (on entering village) — Yes! • Health to thee! • I have gone! — Thou art going! • Thank you!", explanation: "Suk salutations and farewells in Beech (1911, pp. 92, 96, 119, 125, 143)" },
+    { pokot: "8 Pĕn Age-Sets: Mainaʻ (15–30), Nyongu (30–45), Merkutwa (45–60), Kablelach (>60), Kip-koimet (>75), Karongoro, Sowa, Jumoʻ (Subdivisions: Nerkau / Chagen-ôpero, Ñgiru, Nimur)", english: "The 8 cyclic 15-year initiation age-sets and 3 internal subdivisions of the Suk", explanation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, p. 6)" }
+  ]
+});
+
+POKOT_UNITS.push({
+  id: "pokot-unit-beech-1911-complete-monograph",
+  title: "Unit 11: Mervyn W. H. Beech (1911) — Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases & 2 Interlinear Stories",
+  description: "Master the greetings (Tokwes! / Chamke! / Korôton!), the Planting Hymn to Torôrut, the Potters' Chant, all 18 Tiangoi! riddles, 55 idiomatic phrases, and the 2 interlinear Suk stories from Mervyn W. H. Beech's 1911 monograph.",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "pokot-beech-1911-salutations-hymns-riddles-phrases",
+      title: "Salutations, Sacred Chants, Tiangoi! Riddles & Idiomatic Phrases (Beech 1911)",
+      icon: "Sparkles",
+      description: "Practice authentic Pökoot greetings, ritual chants, riddles, and conversational sentences recorded with twenty Suk elders in Beech (1911).",
+      tips: "In Pökoot (Beech 1911, pp. 76–78, xx), transitive and intransitive verbs take both a subjective pronominal prefix and a subjective pronominal suffix: o-lim-an ('I hear'), i-lim-enyi ('thou hearest'), o-lim-ekwa ('ye hear'), while negatives wrap the verb in ma-/me-...-nye (e.g., m-o-nget-an-nye 'I do not know').",
+      words: [
+        {
+          target: "Tokwes! — Eia! • Chamke! — Chamke, chamke! • Ka-rôt-on! (Korôton!) — I-rôt-enyi! • Sĕra! / Sĕre!",
+          source: "Hail! (entering village) — Yes! • Health to thee! • I have gone! (Good-bye!) — Thou art going! • Thank you!",
+          pronunciation: "tok-wes / ei-a / cham-ke / ka-rot-on / i-rot-enyi / se-ra",
+          hint: "Beech (1911, pp. 92, 96, 119, 125, 143)"
+        },
+        {
+          target: "Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Ny' anyin! • O-wei ter i-ker-ach mba maʻ, I-chi-nyi tiumbo kukoʻ!",
+          source: "God give us fat (fertility), that men may thrive, that life may thrive! — Which is sweet! • Go, pot, shut yourself in the fire, you are the vessel of our ancestors!",
+          pronunciation: "to-ro-rut ku-ne mwagh / ki-sop-cha pich / o-wei ter i-ker-ach mba ma",
+          hint: "Beech (1911, pp. 16–17)"
+        },
+        {
+          target: "Tiangoi! — Tia! — Donguch! • Rel-e' ti'-chu lopai, pirir kirokit → Kelat ngô ñgaliep • Kô-p-chii nya-ma-tiñget-nye kôkat → Rotin",
+          source: "A riddle! — Propound it! — We give it up! • All my cows are white, the bull is red → Teeth and tongue • A man's house without a door → An egg",
+          pronunciation: "ti-a-ngoi / ti-a / do-nguch / ke-lat ngo nga-liep / ro-tin",
+          hint: "Beech (1911, Ch. III, pp. 43–45, Riddles #3 & #8)"
+        },
+        {
+          target: "Ki-lend-e-ne kainat-nyeñgmwunyi? • I-gh-enyi-ne? • Mi-ne? • Tôma-ny'-'abkaʻ • Nyur-o se-kebe tukul!",
+          source: "What is your name? • What are you doing? • What is the matter? • He has not yet come • Let us come together!",
+          pronunciation: "ki-lend-e-ne kai-nat-nyeng-mwu-nyi / i-gh-enyi-ne / mi-ne / to-ma-ny'-ab-ka",
+          hint: "Beech (1911, Useful & Idiomatic Phrases, pp. 92–97)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Tokwes! — Eia! Chamke! Ki-lend-e-ne kainat-nyeñgmwunyi?",
+          source: "Hail! — Yes! Health to thee! What is your name? (Beech 1911, pp. 92–95)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Mervyn W. H. Beech's 'The Suk: Their Language and Folklore' (1911, p. 92), what is the traditional Suk greeting upon entering a village, the reply, and the parting farewell ('I have gone! — Thou art going!')?",
+          correctAnswer: "Entering village: 'Tokwes!' — Reply: 'Eia!'; Personal greeting: 'Chamke!'; Parting farewell: 'Ka-rôt-on! (Korôton!)' — Reply: 'I-rôt-enyi!'",
+          options: [
+            "Entering village: 'Tokwes!' — Reply: 'Eia!'; Personal greeting: 'Chamke!'; Parting farewell: 'Ka-rôt-on! (Korôton!)' — Reply: 'I-rôt-enyi!'",
+            "Entering village: 'Sopai!' — Reply: 'Eépa!'; Parting farewell: 'Biado!'",
+            "Entering village: 'Tiamge!' — Reply: 'Otyamge!'; Parting farewell: 'Kātigē!'",
+            "Entering village: 'Mata!' — Reply: 'Ii mata!'; Parting farewell: 'Mata ouwi!'"
+          ],
+          hint: "See Beech (1911, p. 92)"
+        }
+      ]
+    }
+  ]
+});
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "kalenjin-beech-eliot-1911-nandi-suk-endo-kamasia-comparative",
+  title: "Sir Charles Eliot & Mervyn W. H. Beech (1911, pp. xi–xxiv, 3, 17, 19 fn. 1, 27–37): The Nandi → Kamasia → Endo → Suk Continuum, 21 Guttural 'gh' Cognates, Loss of Movable 'i-' Prefix Class, Endo (Chep-bleñg) Kaptapar Migration & 5-Tribe Comparative Law",
+  summary: "Complete line-by-line synthesis of Sir Charles Eliot's comparative Nandi–Suk grammatical treatise (pp. xi–xxiv) and Mervyn W. H. Beech's Endo (Chep-bleñg) and Kamasia ethnographic and legal records (pp. 3, 17, 19 fn. 1, 27–37).",
+  content: `From Sir Charles Eliot's Introduction (pp. xi–xxiv) and Mervyn W. H. Beech's Chapters I–II (pp. 1–37) in *The Suk: Their Language and Folklore* (Oxford: Clarendon Press, 1911):
+1. **Sir Charles Eliot's Classification & the Nandi → Kamasia → Endo → Suk Continuum (pp. xi–xv)**:
+   - Divides the Nilotic/Nilo-Hamitic family into (1) the Nile/Victoria group (**Shilluk, Dinka, Bari, Acholi, Jaluo**, citing the 1910 Mill-Hill *Elementary Grammar of the Nilotic Kavirondo Language [Dhŏ Lwo]*) and (2) the Highland/Rift group (**Masai, Nandi, Turkana, Suk, Latuka, Karamojo, Dorobo**).
+   - Demonstrates that **Nandi, Kamasia, Endo, and Suk** form a continuous geographical and linguistic chain (with **Maragwet** between Elgeyo and Endo).
+2. **Phonological & Morphological Laws Connecting Nandi and Suk (pp. xv–xxii)**:
+   - **21 Suk Guttural *gh* (Arabic *ghain*) vs. Nandi *y / i / vowel* Cognate Pairs (p. xvi, fn. 1)**: *ghaʻ / ya* (bad), *egh / ei* (bullock), *hegh / ē* (hand), *nagh / naite* (be accustomed), *tagh / tae* (front/refuse), *siegh / sie* (belch), *togh / tui* (black), *ghet / etio* (forbid), *maugh / moi* (calf), *nyagh / nye* (chew), *segh / siiya* (claw), *ñgoghom / ñgom* (clever), *ghogh / ioi* (cook), *ogh / oi-iye* (crowd), *meghat / myat* (death), *ghiet / ete* (deter), *igh / ie* (drink), *mwagh / mwai* (fat), *nyagh / ñga* (grind), *sighin / siin* (gullet), *kogh / koi* (long).
+   - **Liquid *r / l* Interchange & Lexical Divergences (p. xvi)**: Suk *rel* = Nandi *lel* (white), *karual* = *kalual* (red), *nyaril* = *inyalil* (green/oppress), *legit* = *negit* (near), *terus* = *nero* (fat), *ngôtian* = *kut* (even).
+   - **Fossilized Nandi Singular Article *-t / -to / -do* & Absence of Plural *-k* (pp. xvi–xvii)**: Suk retains fossilized singular *-t/-to* in *kotat* (arrow), *mat* (fire), *pendoʻ* (meat), *kirokit* (bull), *kainat* (name), *porto* (body), *torôrut* (sky), *komat* (honey-wine), *chepto* (girl), *onyet* (spirit), which drops in the plural (*kôt, pĕn, kirok, kainai, porwei*) without ever taking Nandi's plural article *-k*.
+   - **Loss of Nandi's Movable *i-* Verb Class (p. xx — 11 Verbs & 2 Nouns)**: Suk has only one conjugation class because it drops Nandi's movable prefix *i-*: *kany / i-kany* (wait), *kat / i-kat* (salute), *ker / i-ker* (shut), *iyit / i-it* (count), *lugh / i-lu* (hurt), *nem / i-nem* (take out), *ñgor / i-ñgor* (divine), *rat / i-rat* (tie), *rop / i-rop* (punish), *sich / i-sich* (get), *sil / i-sil* (borrow), plus nouns *mat / i-mat* (fire) and *kôwa / kôwuet* (bone).
+3. **The Endo (*Chep-bleñg*) & Kamasia in Beech (1911, pp. 3, 17, 19 fn. 1, 27–37)**:
+   - **Endo Migration from Kaptapar & Split Rock-Pillar Legend (p. 3)**: The Endo (*Chep-bleñg*) lived at **Kaptapar** ("beyond Sirgoi in the direction of Nandi"); during a festival around a high rock pillar, a bird warned them to flee before the pillar split and killed those who stayed, and the survivors migrated to the Elgeyo escarpment (where they later annihilated nearly 50 Nubian police and stormed a Kerio post).
+   - **Four Endo Chiefs & Customary Law (pp. 17, 27–37)**: Chiefs **Lōseron** of Merich (Plate IIb), **Lotiram** of Kowo, **Wiraporoa** of Kumarin, and **Kapkornis** of Sakat; Nov. 1909 Cheptulel Suk–Endo peace oath crossing 2 spears and 3 poisoned arrows 3 times while crying *i-mēgh!*; homicide punished by hurling the murderer from a rock or a 20-goat fine; theft fined 5×; land price = **3 jars of honey-wine and 2 goats**; bride-price = **4 jars of honey-wine**.
+   - **Kamasia Cosmology (p. 19, fn. 1)**: Unlike the Suk (who hold *Asis* to be the younger brother of *Torôrut*), the **Kamasia** hold **Asis** (Sun) to be the **wife of Torôrut**.`,
+  examples: [
+    { kalenjin: "ghaʻ/ya • egh/ei • hegh/ē • nagh/naite • tagh/tae • siegh/sie • togh/tui • ghet/etio • maugh/moi • nyagh/nye • segh/siiya • ñgoghom/ñgom • ghogh/ioi • ogh/oi-iye • meghat/myat • ghiet/ete • igh/ie • mwagh/mwai • nyagh/ñga • sighin/siin • kogh/koi", english: "All 21 Suk–Nandi guttural 'gh' cognate pairs in Sir Charles Eliot's Introduction", explanation: "Sir Charles Eliot in Beech (1911, p. xvi, fn. 1)" },
+    { kalenjin: "kany / i-kany • kat / i-kat • ker / i-ker • iyit / i-it • lugh / i-lu • nem / i-nem • ñgor / i-ñgor • rat / i-rat • rop / i-rop • sich / i-sich • sil / i-sil | mat / i-mat • kôwa / kôwuet", english: "11 verbs and 2 nouns where Suk drops Nandi's movable 'i-' prefix", explanation: "Sir Charles Eliot in Beech (1911, p. xx)" },
+    { kalenjin: "Chep-bleñg (Endo) from Kaptapar • Chiefs Lōseron, Lotiram, Wiraporoa & Kapkornis • Nov. 1909 Peace Oath ('i-mēgh!') • Kamasia: Asis = wife of Torôrut", english: "Endo (Chep-bleñg) and Kamasia historical, legal, and religious records in Beech (1911)", explanation: "Mervyn W. H. Beech (1911, pp. 3, 17, 19 fn. 1, 27–37 & Plate IIb)" }
+  ]
+});
+
+TURKANA_GRAMMAR_SECTIONS.push({
+  id: "turkana-beech-eliot-1911-25-cognates-aijigwa-customs",
+  title: "Mervyn W. H. Beech & Sir Charles Eliot (1911, pp. xxiii–xxiv, 7–9, 21, 27–37, 150–151): All 25 Turkana–Suk Comparative Cognates, Chief Aijigwa's Turkana Customary Law, Lemurok vs. Lekatuknok & Turkana Dorobo 30-Ft Tree Granaries",
+  summary: "Complete line-by-line documentation of all Turkana linguistic, ethnographic, and legal material in Mervyn W. H. Beech & Sir Charles Eliot (1911).",
+  content: `From Mervyn W. H. Beech & Sir Charles Eliot (*The Suk: Their Language and Folklore*, Oxford: Clarendon Press, 1911, pp. xxiii–xxiv, 7–9, 21, 27–37, 150–151):
+1. **All 25 Turkana–Suk Comparative Cognates & Borrowings (Appendix pp. 150–151 & Eliot's Critique pp. xxiii–xxiv)**:
+   - Beech lists 25 Suk cultural and material terms borrowed from or shared with Turkana: **(1) Adaru** (giraffe/zebra tail elbow ornament), **(2) Adiñgo** (warrior's belt), **(3) Akul** (circular wrist-knife), **(4) Alakam** (iron wire neck-ring), **(5) Aloket** (curved wire tail on *siolip*), **(6) Alöit** (spring-noose elephant trap capable of killing up to 10 elephants in a day, p. 21), **(7) Amumūr** (war-dance), **(8) Anañga** (cloth; Turkana *anañga / enañga* < Swahili *nanga*), **(9) Apapai** (shield handle), **(10) Aparparat** (brass/iron nose-plate), **(11) Arobet** (throat skin), **(12) Atērdĭü** (hare's tail on *aloket*), **(13) Atekēr** (wooden cattle trough; Turkana *ateker*), **(14) Atoros** (box), **(15) Aturo** (checkered forelock), **(16) Aturpopo** (brass ear-ring), **(17) Kalacha** (V-shaped skin cape), **(18) Kedoñgô** (jumping kraal dance), **(19) Koliko** (girl's apron), **(20) Legetioʻ** (woman's belt; cf. Nandi *legetiet*), **(21) Loñgô** (shield; cf. Nandi *loñget*), **(22) Muren** (circumcised warriors; Turkana *ngi-muren*, Nandi *murenik*), **(23) Ñgechĕr** (headrest/stool; Turkana *e-kicholông*, pl. *ngicholong*, Nandi *ñgecheret*), **(24) Rungu** (club < Swahili *rungu*), and **(25) Siolip** (felted ancestral hair-bag chignon).
+   - **Sir Charles Eliot's Linguistic Note (pp. xxiii–xxiv)**: Points out that initial **a-** in Suk words like *adaru, adiñgo, akul, alakam, aloket, alöit, amumūr, apapai, aparparat, arobet, atekēr, atoros, aturo, aturpopo* is the fossilized **Turkana feminine singular article \`a-\`** (opposed to masculine *e-* and plural *ngi-/nga-*), proving these dress and weapon terms were borrowed directly from Turkana, whereas *legetioʻ, loñgô, muren, ñgechĕr* are common Nilotic/Kalenjin heritage.
+2. **Turkana Dorobo 30-Ft Tree-Fork Granaries, Trade & Chief Aijigwa's Legal Code (pp. 7–9, 27–37)**:
+   - **Turkana Dorobo Tree Granaries (p. 7)**: On the Weiwei/Kerut near its junction with the Turkwel at **En-gabotoʻ**, the Turkana Dorobo build palisaded homesteads and perch their round miniature grain huts **30 feet high** in the forks of tall trees.
+   - **Donkey Trade (p. 9)**: The Suk buy donkeys from the Turkwel Turkana for **Rs. 3** worth of trade goods (valued at **Rs. 12** = 1 bullock for hut-tax at Baringo).
+   - **Chief Aijigwa's Turkana Customary Law (via Hon. A. Bruce, pp. 27–37)**:
+     - **Hereditary *Lemurok* vs. *Lekatuknok* (p. 36)**: Turkana medicine-men (**Lemurok**) are hereditary and wield supreme authority, whereas village advisers (**Lekatuknok**) correspond to the Suk *Ki-ruwok-u*.
+     - **Homicide (p. 29)**: If a Turkana kills a fellow tribesman, the victim's relatives seize **all the murderer's cattle, sheep, and goats (leaving only his donkeys)** and spear the murderer if caught at once.
+     - **Marriage & Divorce (p. 33)**: Minimum bride-price is **5 cattle and 100 sheep** (rich men pay up to 50 cattle and 200–300 sheep); a wife who has borne children can never be divorced.`,
+  examples: [
+    { turkana: "a- (Turkana fem. sg. article in Suk loans): adaru, adiñgo, akul, alakam, aloket, alöit, amumūr, apapai, aparparat, arobet, atērdĭü, atekēr, atoros, aturo, aturpopo + siolip, kalacha, koliko", english: "Turkana feminine 'a-' article preserved in Suk dress, weapon, and trap loanwords", explanation: "Sir Charles Eliot & Mervyn W. H. Beech (1911, pp. xxiii–xxiv, 150–151)" },
+    { turkana: "Lemurok (hereditary medicine-men/chiefs) vs. Lekatuknok (elders/advisers) • Chief Aijigwa of Naudu & Salali • Alöit (10-elephant/day trap) • 30-ft tree-fork granaries at En-gabotoʻ", english: "Turkana governance, hunting engineering, and architecture in Beech (1911)", explanation: "Mervyn W. H. Beech (1911, pp. 7, 21, 27–37)" }
+  ]
+});
+
+ILCHAMUS_GRAMMAR_SECTIONS.push({
+  id: "ilchamus-beech-1911-enjemusi-engai-engop-launjali-law",
+  title: "Mervyn W. H. Beech (1911, pp. 4, 19 fn. 1, 27–37): En-jemusi Origin from Sambur Refugees, Worship of Sky-God En-Gai & Earth-God En-Gop, and Chief Launjali's Customary Law Code",
+  summary: "Complete line-by-line synthesis of all En-jemusi (Ilchamus / Njemps) historical, religious, and legal records in Mervyn W. H. Beech's The Suk: Their Language and Folklore (1911, pp. 4, 19 fn. 1, 27–37).",
+  content: `From Mervyn W. H. Beech (*The Suk: Their Language and Folklore*, Oxford: Clarendon Press, 1911, pp. 4, 19 fn. 1, 27–37):
+1. **Origin from Sambur Refugees & Suk–Turkana Raid (pp. 4–5)**:
+   - Beech records that when the Suk descended from the hills to **Tiati** and **Ka-ruwon** (6 miles W of **En-ginyañg**) and defeated the **Sambur**, the main body of the Sambur fled north-east while a smaller party fled south to Lake Baringo and became the **En-jemusi**. Around 50 years before 1911, the Suk and Turkana allied to raid the En-jemusi.
+2. **En-jemusi Cosmology: Sky-God *En-Gai* & Earth-God *En-Gop* (p. 19, fn. 1)**:
+   - In Footnote 1 on p. 19, Beech records that the **En-jemusi** believe in a **Sky-God (*En-Gai*)** and an **Earth-God (*En-Gop*)**, and hold the **Sun and Moon to be husband and wife**.
+3. **Chief Launjali's En-jemusi Customary Law Code (Chapter II, pp. 27–37)**:
+   - **Authority**: **Launjali**, chief and elder of En-jemusi (p. 27).
+   - **Homicide (p. 29)**: Blood-money is **10 to 20 cows** (for accidental homicide, 6 cows).
+   - **Theft (p. 32)**: Every thief must restore **3 times** the value of the stolen animal — so if **3 men join to steal 1 cow, each pays 3 cows (9 cows total)**.
+   - **Marriage & Divorce (p. 33)**: Bride-price is **6 goats**; a barren wife may be divorced and the bride-price reclaimed unless she has borne children.
+   - **Slander & Inheritance (pp. 34–36)**: Abusing an elder is fined **1 bullock** (eaten by the elders); property passes to the deceased's brothers and eldest son.`,
+  examples: [
+    { ilchamus: "En-Gai (Sky-God) & En-Gop (Earth-God; Sun and Moon = husband and wife) • Chief Launjali • Homicide: 10–20 cows • Theft: 3× per thief (9 cows for 3 thieves stealing 1 cow) • Bride-price: 6 goats", english: "En-jemusi religion and customary law recorded from Chief Launjali in Beech (1911)", explanation: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, pp. 19 fn. 1, 27–37)" }
+  ]
+});
+
+// ============================================================
+// A. C. HOLLIS & SIR CHARLES ELIOT (1909) "THE NANDI: THEIR LANGUAGE AND FOLK-LORE"
+// Complete Line-by-Line Normalization, Cultural Wisdom, Prayers, Songs, 18 Folk-Tales
+// (5 Interlinear Nandi Texts), 57 Proverbs (Atindonik-ap-Nandi), 76 Enigmas (Tongōchik-ap-Nandi),
+// 83 Botanical Species (Appendix I), 17 Clan Etymologies (Appendix II) & Course/Grammar Units
+// (Oxford: At the Clarendon Press, 1909, pp. i–xl, 1–328, Plates I–XLIV, Figs. 1–53, Map)
+// ============================================================
+
+const HOLLIS_1909_COURSE_TARGET_FIXES: Record<string, string> = {
+  "ime pr": "ime (pr. a-'me-i, p.p. ka-a-'me)",
+  "nyulnyul-ke pr": "nyulnyul-ke (pr. a-nyulnyul-i-ke, p.p. ka-a-nyulnyul-ke)",
+  "sir pr": "sir (pr. a-sir-e, p.p. ka-a-sir)",
+  "siriny pr": "siriny (pr. a-siriny-i, p.p. ka-a-siriny)",
+  "yem-ak-e pr": "yem-ak-e (pr. a-yem-at, p.p. ka-a-yem-ak-e)",
+  "o-kwet-ke pr": "o-kwet-ke (pr. ki-kwet-i-ke, p.p. ka-ki-kwet-ke)",
+  "iim pr": "iim (pr. a-iim-i, p.p. kâ-iim)",
+  "tañgany pr": "tañgany (pr. a-toñgony-i, p.p. ka-a-tañgany)",
+  "imelel pr": "imelel (pr. a-'melel-i, p.p. ka-a-'melel)",
+  "res pr": "res (pr. a-res-e, p.p. ka-a-res)",
+  "mach pr": "mach (pr. a-moch-e, p.p. ka-a-mach)",
+  "ipuch pr": "ipuch (pr. a-'puch-i, p.p. ka-a-'puch)",
+  "ñgwech pr": "ñgwech (pr. a-ñgwech-e, p.p. ka-a-ñgwech)",
+  "or Eldest , oo, pl. echen": "oo, pl. echen",
+  "koii. (See Stone .)": "koii (koita), pl. koii (koiik)",
+  "(neut.), ñgêt (pr. a-ñgêt-e, p.p. ka-a-ñgêt)": "ñgêt (pr. a-ñgêt-e, p.p. ka-a-ñgêt)",
+  "(v. imp.), inyol-chi": "inyol-chi (pr. inyol-chi-n, p.p. ka-inyol-chi)",
+  ", inyol-chi": "inyol-chi",
+  "ile-chi kongoi — , inyol-chi": "ile-chi kongoi — inyol-chi",
+};
+
+for (const unit of KALENJIN_UNITS) {
+  for (const skill of unit.skills) {
+    for (const w of skill.words) {
+      if (HOLLIS_1909_COURSE_TARGET_FIXES[w.target]) {
+        w.target = HOLLIS_1909_COURSE_TARGET_FIXES[w.target];
+      }
+      if (w.pronunciation && w.pronunciation.endsWith(" pr")) {
+        w.pronunciation = w.pronunciation.slice(0, -3).trim();
+      }
+    }
+    if (skill.sentences) {
+      for (const s of skill.sentences) {
+        if (HOLLIS_1909_COURSE_TARGET_FIXES[s.target]) {
+          s.target = HOLLIS_1909_COURSE_TARGET_FIXES[s.target];
+        }
+      }
+    }
+    if (skill.authoredExercises) {
+      for (const ex of skill.authoredExercises) {
+        if (HOLLIS_1909_COURSE_TARGET_FIXES[ex.correctAnswer]) {
+          ex.correctAnswer = HOLLIS_1909_COURSE_TARGET_FIXES[ex.correctAnswer];
+        }
+        for (const [bad, good] of Object.entries(HOLLIS_1909_COURSE_TARGET_FIXES)) {
+          if (ex.prompt.includes(`"${bad}"`)) {
+            ex.prompt = ex.prompt.replace(`"${bad}"`, `"${good}"`);
+          }
+          if (ex.correctAnswer.startsWith(`${bad}:`)) {
+            ex.correctAnswer = ex.correctAnswer.replace(`${bad}:`, `${good}:`);
+          }
+        }
+        if (ex.options) {
+          ex.options = ex.options.map((opt) => HOLLIS_1909_COURSE_TARGET_FIXES[opt] ?? opt);
+        }
+        if (ex.acceptedAnswers) {
+          ex.acceptedAnswers = ex.acceptedAnswers.map((ans) => HOLLIS_1909_COURSE_TARGET_FIXES[ans] ?? ans);
+        }
+        if (ex.pairs) {
+          for (const p of ex.pairs) {
+            if (HOLLIS_1909_COURSE_TARGET_FIXES[p.left]) {
+              p.left = HOLLIS_1909_COURSE_TARGET_FIXES[p.left];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+for (const sec of KALENJIN_GRAMMAR_SECTIONS) {
+  for (const ex of sec.examples) {
+    if (ex.english === "Zebra • Yours" && ex.kalenjin.includes("keny (kenyīt)")) {
+      ex.english = "Zebra • Year";
+    } else if (ex.english === "Yam • Writhe" && ex.kalenjin.includes("walel (waleldo)")) {
+      ex.english = "Yam • Wrist";
+    }
+  }
+}
+
+const HOLLIS_1909_NANDI_PROVERBS_AND_WISDOM: ProverbItem[] = [
+  {
+    id: "kalenjin-hollis-1909-sacred-prayers-songs-invocations-cw",
+    languageId: "kalenjin",
+    languageName: "Kalenjin (Nandi)",
+    indigenous: "Asis! kōn-ech sapon, ak tuka, ak cheko, ak lakōk! (pp. 41–48) • Ilat, ka-i-nyo! • Oiik-ap-Nandi, o-cham-ech! • Smith Ar-ap-Sutek's Kâptilol Iron-Ore Blessing (pp. 36–37) • Kâpkoros Harvest & Circumcision Songs (pp. 15, 19–20, 30, 35, 57, 66, 85, 94)",
+    literalTranslation: "God (Asis)! give us health/life, and cattle, and milk, and children! • O Thunder/Rain (Ilat), thou hast come! • O ancestral spirits (Oiik) of the Nandi, be propitious to us!",
+    meaning: "Complete corpus of verbatim Nandi prayers, ritual songs, and invocations recorded by A. C. Hollis in The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. 15, 19–20, 30, 35, 36–37, 41–48, 57, 66, 85, 94): includes (1) the elders' sitting morning and evening prayer with crossed arms to Asis and the Oiik (pp. 41–42); (2) the Kâpkoros mountain sacrifice song and war-party mother's milk-spitting prayer (pp. 42–46); (3) the eleusine (paiyuat) planting and harvest prayers (pp. 19–20, 46–47); (4) the cattle salt-lick (ñgeñg) and cattle-disease (cheringisiet) purification songs (p. 30); (5) the potter woman's clay-pit and firing formulas (p. 35) and Smith Ar-ap-Sutek's iron-ore (ñgoriamuk) and charcoal prayer at Kâptilol on the Sosiani River (pp. 36–37); (6) the circumcision (tum) songs at Cheptol/Kayoi, Labet-ap-eun (including the Masai war-song kambakta), Kapkiyai, and Rīkset (pp. 53–60); (7) the wedding and first-child naming blessings (pp. 63–69); and (8) the red-hot axe-blade, human-skull, and Kimonjokut roof-peak oaths (pp. 84–86).",
+    englishEquivalent: "Prayer to Asis and harmony with the ancestors sanctify the home, the herd, the forge, and the harvest.",
+    theme: "wisdom",
+    sourceCitation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. 15, 19–20, 30, 35–37, 41–48, 53–69, 84–86, 94)"
+  },
+  {
+    id: "kalenjin-hollis-1909-eighteen-folktales-five-interlinear-cw",
+    languageId: "kalenjin",
+    languageName: "Kalenjin (Nandi)",
+    indigenous: "Atindonik 18 (pp. 101–123): 5 Interlinear Nandi Texts — XIV. Tiondo ne-ki-am piik tukul ('The Monster that Swallowed All Mankind', pp. 114–116) • XV. Kiplengwet ak Chemosit ('The Hare and the Devil', pp. 116–118) • XVI. Murenik ak Chemosit ('The Warriors and the Devil', pp. 118–120) • XVII. Kimaketyet ak Kiplengwet ('The Hyena and the Hare', pp. 120–121) • XVIII. Tapnyolei ak Arawet ('Tapnyolei and the Moon', pp. 121–123) + Cumulative Chant (pp. 112–113)",
+    literalTranslation: "All 18 Nandi Folk-Tales (13 in English translation + 5 in full interlinear Nandi and English + the 11-link Cumulative Death Chant, pp. 101–123) in A. C. Hollis (1909).",
+    meaning: "Preserves every narrative in Hollis's Folk-Tales section (pp. 101–123): (I) Origin of the world via the Dorobo's swollen knee and the Nandi & Masai ancestor brothers (p. 101); (II) How the Dog brought the message of permanent human death while the Sheep and Moon promised resurrection after 3 days (p. 102); (III) How Thunder (Ilat) and Lightning (Ilet-ne-mie vs. Ilet-ne-ya) moved from earth to sky after the elephant and human noise (p. 103); (IV) Origin of Cattle, Goat, and Sheep and why the Hyena howls (p. 104); (V) Origin of Monkeys after elders struck lazy youths on the buttocks with frying-spades (p. 105); (VI) Why the Hawk preys on chickens and the Crow has a white neck (p. 106); (VII) How the Hare tricked the Elephants at the salt-lick by speaking from a tree like the Moon (p. 107); (VIII–IX) The Hare, the Baboon, and the Tortoise (pp. 108–109); (X–XI) The Chemosit (one-legged, nine-buttocked, red-mouthed cannibal ogre with a glowing forehead) outwitted by the girl and slain by her brothers (pp. 109–111); (XII) The Frog who swallowed the lost girl and restored her safely to her parents (p. 111); (XIII) The 11-link Cumulative Chant of Death (warriors → old woman → locust → frog → snake → stick → termite → francolin → hawk → sun → fly → elephant, pp. 112–113); and the 5 complete Interlinear Nandi Stories (XIV–XVIII, pp. 114–123, including the thumb-cut hero who slew the world-swallowing monster and died when an old woman's bone pierced his swollen thumb).",
+    englishEquivalent: "Every creature, constellation, and custom carries an ancestral story of courage, wit, and consequence.",
+    theme: "wisdom",
+    sourceCitation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, Folk-Tales I–XVIII, pp. 101–123)"
+  },
+  {
+    id: "kalenjin-hollis-1909-seventy-six-enigma-riddles-summary-cw",
+    languageId: "kalenjin",
+    languageName: "Kalenjin (Nandi)",
+    indigenous: "Tongōchik-ap-Nandi (Enigmas #1–#76, pp. 133–151): Challenger: 'Tongoj!' ('A riddle!') — Audience: 'Choo!' or 'Ta-tuñguch!' ('Say it!') — Surrender: 'Ki-sir-to; kōn-ech pororiet!' ('We are defeated; give us a district!')",
+    literalTranslation: "Complete ritual framing and structure of all 76 Nandi Enigmas (Tongōchik-ap-Nandi, pp. 133–151) in A. C. Hollis (1909).",
+    meaning: "Documents the complete set of 76 Nandi riddles (Tongōchik-ap-Nandi, pp. 133–151, all 76 individually indexed in KENYAN_PROVERBS) together with their dramatic forfeit dialogue on p. 133: when the audience cannot guess an enigma, they say 'Ki-sir-to; kōn-ech pororiet!' ('We have been surpassed; give us a pororiet district!'), and the propounder mock-grants them one of the 15 Nandi pororiet districts (e.g. Kâpkiptalam or Kâmelilo), praises or mocks its cattle and water, and then reveals the answer to the riddle.",
+    englishEquivalent: "A good riddle sharpens the mind and maps the fifteen districts of the homeland.",
+    theme: "wisdom",
+    sourceCitation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, Tongōchik-ap-Nandi #1–#76, pp. 133–151)"
+  }
+];
+
+KENYAN_PROVERBS.push(...HOLLIS_1909_NANDI_PROVERBS_AND_WISDOM);
+CULTURAL_WISDOM.push(
+  ...HOLLIS_1909_NANDI_PROVERBS_AND_WISDOM.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "kalenjin-hollis-eliot-1909-complete-monograph-ethnography-folklore-botany",
+  title: "A. C. Hollis & Sir Charles Eliot (1909) 'The Nandi: Their Language and Folk-Lore' (pp. i–xl, 1–328, Plates I–XLIV, Figs. 1–53, Map): Complete Line-by-Line Ethnography, 6 Informants, Lake Natron Dorobo, 6 Emet Counties, 15 Pororiet Districts, 17 Oret Clans, 7 Ipinda Age-Sets, 24-Part Hut Plan, 13 Pot Types, Orkoiyot Genealogy, 47 Kinship Terms, 12 Months, 30 Moon Phases, 36 Daily Hours, 18 Folk-Tales, 57 Proverbs, 76 Enigmas & 83 Botanical Species",
+  summary: "Complete line-by-line documentation of A. C. Hollis's 328-page monograph (with Sir Charles Eliot's 40-page Introduction and E. Battiscombe's Botanical Appendix): all 6 named informants, 44 photographic plates, 53 text figures, Lake Natron Dorobo dialect, 6 counties, 15 districts, 17 clans, 7 age-sets, 24-part hut architecture, 13 pot types, Orkoiyot genealogy, 47 kinship terms, 12 months, 30 lunar days, 36 daily hours, 18 folk-tales, 57 proverbs, 76 enigmas, and 83 botanical species.",
+  content: `From A. C. Hollis (*The Nandi: Their Language and Folk-Lore*, with an Introduction by Sir Charles Eliot, K.C.M.G., Vice-Chancellor of the University of Sheffield, Oxford: At the Clarendon Press, 1909, pp. i–xl, 1–328, Plates I–XLIV, Figs. 1–53, Fold-out Map):
+1. **Preface, 5 Prior Works, 6 Named Informants, 44 Plates & 53 Text Figures (pp. iii–xii)**:
+   - **5 Prior Works Cited (p. iii)**: J. T. Last (*Polyglotta Africana Orientalis*, 1885), Rev. J. P. Farler (in Prof. A. H. Keane's *Ethnology*, 1896), Sir Harry Johnston (*The Uganda Protectorate*, 1902), C. W. Hobley (*Eastern Uganda*, 1902 & *JRAI* Vol. XXXIII, 1903), and Lt.-Col. C. Delmé-Radcliffe (*Geographical Journal*, 1905).
+   - **6 Named Indigenous Informants (pp. x–xi)**:
+     - **5 Nandi Warriors**: **Oriare**, **Matang**, **Ar-ap-Sirtoi**, **Ar-ap-Kuna**, and **Ar-ap-Chepsiet** (Plate I: *Oriare and Matang*).
+     - **Kipsikīs (Lumbwa) Chief Medicine Man (former Nandi)**: **Kipchomber or Ar-ap-Koileke** (elder son of the Nandi Orkoiyot *Kimnyole*) and his son **Sonaiet or Ar-ap-Kipchomber**.
+   - **Acknowledgements (pp. x–xi)**: **Mr. E. Battiscombe** (Acting Chief Conservator of Forests, who identified all 83 botanical species in Appendix I), **Mr. E. L. Waring** (Survey Dept., Fold-out Map of Nandi), **Dr. A. D. Milne**, **Mr. W. J. Monson**, **Prof. J. G. Frazer**, and **Mr. R. R. Marett**.
+   - **44 Photographic Plates (Plates I–XLIV) & 53 Text Figures (Figs. 1–53)**: Document Nandi warriors, women, children, initiation *kimaranguchet* & *nyorio* headdresses, huts, granaries, salt-licks, shields, spears, swords, *kombet* arrows, pottery, smithing bellows (*kopenet*), musical instruments (*sukutit* friction drum, *ketuba* 5-stringed lyre), and Kâptumo suspension bridge.
+2. **Sir Charles Eliot's Introduction: Nandi–Nilotic Classification, Lake Natron Dorobo, Taveta Turkana & Kunōno Smiths (pp. xiii–xl)**:
+   - **Lake Natron Dorobo Dialect (pp. xxvii–xxviii)**: Records pronouns **arko** ("he") and **tichee / ndichee** ("they"); past/passive prefix **ar-** (**ar-a-mach-a** "I wanted", **ar-ke-mach-a** "I am wanted"); noun suffix **-anda / -andee** (**kuyanda** bow, **pelyandee** elephant, **puniandee** enemy); loss of *n* (**muyare** salt, **taamuye** beard); broad *a* (**maae** belly, **kaawe** bone); and *v* for *p* (**Vanda** journey, **vaiyaa** old man).
+   - **Rift Valley Nandi Toponyms (p. xxiv)**: Proves pre-Masai Nandi/Dorobo occupation of the Rift Valley around Naivasha through the place-names **Morendat** (< Nandi *marandut* "footprint") and **Suswa** (< Nandi *susuo / susua* "grass").
+   - **Turkana Grammatical Sketch (pp. xxix–xxxiii)** & **Kunōno (Masai Smiths) 150-Word Vocabulary (p. xxxiii: *e-samereita, o-siota, en-gandiit, e-wuyuwuyu*)**.
+3. **Part I — Divisions, 6 Counties (*Emet*), 15 Districts (*Pororiet*), 17 Clans (*Oret*) & 7 Age-Sets (*Ipinda*) (pp. 1–13 & Appendix II p. 317)**:
+   - **Endonym**: Originally called themselves **Chemñgal** (sg. *Chemñgalindet*); Swahili traders called them **Nandi** (sg. *Nandiindet*, pl. *Nandiik* < Swahili *mnandi* "cormorant", p. 4).
+   - **6 Counties (*Emet*, pl. *Emotinuek*, p. 4)**: **1. Wareñg** (North), **2. Masop** (East), **3. Soiin or Pelkut** (South), **4. Aldai** (South-West), **5. Chesume** (West), and **6. Em-gwen** (Central).
+   - **15 Geographical Districts (*Pororiet*, pl. *Pororōsiek*, pp. 4–5)**: **1. Kâmelilo, 2. Kâpchepkendi, 3. Kâpkiptalam, 4. Koileke, 5. Kâkipoch, 6. Kâpianga, 7. Kâpsile, 8. Tipiñgot, 9. Cheptol, 10. Kimñgoror, 11. Kâkimno, 12. Murk'-ap-Tuk' (or Kâpwaren), 13. Kâptumoiis, 14. Kâpsiondoi, 15. Tuken**.
+   - **All 17 Exogamous Clans (*Oret*, pl. *Ortinuek*, pp. 5–11 & Appendix II p. 317)**:
+     1. **Kipoiis** (Principal name: *Koroiit*, Women's name: *Chepkoii*; Totems: jackal *lelwet*, cockroach *solopchet*, rain/lightning *ilat*; Etymology: *oiik* spirits)
+     2. **Kipkoiitim** (*Kâpabo*, *Chepkoiitim*; Totems: elephant *pēliot* & chameleon *nyiritiet*)
+     3. **Kipamwi** (*Kâpkatet*, *Chepamwi*; Totem: duiker *cheptirgichet*)
+     4. **Kipkenda** (*Maïto*, *Chepkenda*; Totems: bee *segemyat* & frog *mororiochet*)
+     5. **Kipkōkōs** (*Kâpsiron*, *Chepkōkōs*; Totem: buzzard *chepkōkōsiot*)
+     6. **Kipiegen** (*Ingoke*, *Chepiegen*; Totems: monkey *chereriet* & house-snake *erenet*)
+     7. **Talai** (*Kâpsamei*, *Cheptalai*; Totem: lion *ñgetundo* — the clan of the *Orkoiyot*, meaning "gentle")
+     8. **Toiyoi** (*Moriso*, *Cheptoiyoi*; Totems: soldier-ant *piiret* & rain *ilat* — smiths & rain-makers; < *toiyoi* "kites")
+     9. **Kipsirgoi** (*Kâpkon*, *Chepsirgoi*; Totem: bush-pig *torēt*; < *sirgoi* "white")
+     10. **Sokom** (*Kâptolil*, *Chesokom*; Totem: hawk *chepkukiot*)
+     11. **Moi** (*Sigilai*, *Chemoi*; Totems: crested crane *koñgonyot* & buffalo *soet*; < *moiet* "calf")
+     12. **Kiptopke** (*Cheptopke*; Totem: monkey *tisiet*)
+     13. **Kâmwaïke** (*Kipongoi*, *Chemwaïke*; Totem: partridge *taiyuet*)
+     14. **Tungo** (*Korapōr*, *Cheptungo*; Totem: hyena *kimaketyet*; a *Tungo* man always closes the rear on the march)
+     15. **Kipaa** (*Kâpcheromoi*, *Chepaa*; Totems: monkey *tisiet* & snake *erenet*)
+     16. **Kipasiso** (*Kâpchepsiror*, *Chepasiso*; Totems: sun *asista* & mole *puñguñgwet*)
+     17. **Chemur** (*Kâpcherop*, *Chemur*; Totem: wild cat *kimagetiet-ap-tim*).
+   - **7 Cyclic Age-Sets (*Ipinda*, ~52½-Year Cycle, pp. 11–13)**: **1. Maina, 2. Nyonge, 3. Kimnyike, 4. Kâplelach, 5. Kipkoiimet, 6. Sowe, 7. Juma**, each subdivided into 3 Warrior Fires (*Mat*, pl. *Mostinuek*): **1. Changen-opir** (senior), **2. Kipal-koñg** (middle), **3. Kiptoito** (junior). Every ~7½ years when the **rotwet** bush blossoms, power is handed over at the **Saket-ap-eito** festival by sacrificing a white bullock.
+4. **Architecture (24-Part Hut Plan), 13 Pot Types, Iron-Smelting, Governance, *Orkoiyot* Dynasty, Initiation, Marriage, Law, Kinship & Calendar (pp. 14–97)**:
+   - **24-Part Nandi Hut Diagram (*Kaita* [m.] / *Kot* [f.], p. 14)**: *Njor* (men's sleeping side), *Koimaut* (women's cooking side), *Injorut* (goat/calf loft), *Kâpsoiyo* (cattle compartment), *Kimonjokut* (mud-and-potsherd roof peak cap), *Tiliet-ap-ko* (threshold), *Kurenet* (door), *Tabut* (attic).
+   - **13 Earthenware Pot Types (*Teret*, pp. 35–36)**: *teret-ap-kimoiik* (porridge pot), *kiponyit* (meat pot), *teret-ap-pendo*, *teret-ap-ingwek* (vegetable pot), *kipsiluet* (small pot), *chepkoinet* (handle pot), *tapet* (bowl), *teret-ap-maiyek* (beer jar), *loiet* (large beer jar), *rokchet* (medicine pot), *murguiywet* (water jar), *kipismet*, and *chepkonget*.
+   - **Iron-Smelting Prayer at *Kâptilol / Ñgoriamuk* (pp. 36–37)**: Recorded verbatim from Smith **Ar-ap-Sutek** on the Sosiani River.
+   - **Governance & Hereditary *Orkoiyot* Genealogy (pp. 48–52)**: Each village cluster (*koret*) has a headman (*kiruogindet*) and warrior captain (*kiptaiyat*), represented at the *pororiet* council by the *maotiot*. The hereditary **Orkoiyot** genealogy (p. 50): **Kipsegun → Kopokoii & Ar-ap-Kipsegun → Turukat → Kimnyole** (clubbed to death 1890) **→ Kipchomber** (fled to Lumbwa), **Koitalel or Samwei** (shot Oct. 1905), and **Kipeles or Tamasun**.
+   - **3-Generation Naming Example (p. 68)**: Grandfather **Paroret / Chepsiet / Ar-ap-Kipletiñg** → Son **Kimosoñg / Kipēt / Tech-teget / Ar-ap-Chepsiet** → Grandson **Kipsum / Kimuike / Ar-ap-Kipēt**.
+   - **Homicide Fines (pp. 73–75)**: Murder of a Nandi of another clan = **tuk'-am-met** (**5 cows, 5 bulls, and 30 goats**, plus the purification cow **iri-ñgot**).
+   - **Finger-Counting Gestures 1–60 (pp. 88–89)**, **3 Taboo Classes (*ñgwonik, kerek, simwek*, pp. 90–92)**, **47 Kinship Terms (*Tiliet*, pp. 92–94)**, **12 Months (*Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde, Kipsunde oieng, Mulkul, Mulkulik oieng, Ñgotioto*, pp. 94–95)**, **30 Lunar Phases (pp. 95–96)**, and **36 Daily Hours (pp. 96–97)**.
+5. **Oral Literature & Appendix I (83 Botanical Species Across 32 Plant Families, pp. 101–151, 313–316)**:
+   - **18 Folk-Tales (pp. 101–123)**, **57 Proverbs (*Atindonik-ap-Nandi*, pp. 124–132)**, **76 Enigmas (*Tongōchik-ap-Nandi*, pp. 133–151)**, **Part II Grammar & A–Z English–Nandi Vocabulary (pp. 152–312)**, and **Appendix I: 83 Botanical Species Across 32 Plant Families Identified by E. Battiscombe (pp. 313–316)**.`,
+  examples: [
+    { kalenjin: "6 Emet: Wareñg, Masop, Soiin (Pelkut), Aldai, Chesume, Em-gwen • 7 Ipinda: Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma (3 Fires: Changen-opir, Kipal-koñg, Kiptoito) • Saket-ap-eito", english: "The 6 Counties, 7 Cyclic Age-Sets, 3 Warrior Fires, and 7½-year handing-over ceremony of the Nandi", explanation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, pp. 4–5, 11–13)" },
+    { kalenjin: "12 Months (Arawet): 1. Kiptamo, 2. Iwat-kut, 3. Wake, 4. Ñgei, 5. Rob-tui, 6. Puret, 7. Epeso, 8. Kipsunde, 9. Kipsunde oieng, 10. Mulkul, 11. Mulkulik oieng, 12. Ñgotioto", english: "The 12 ecological months of the Nandi year (Dry season Kiptamo & Wet season Iwat-kut)", explanation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, pp. 94–95)" },
+    { kalenjin: "Lake Natron Dorobo: arko (he), tichee/ndichee (they), ar-a-mach-a ('I wanted'), ar-ke-mach-a ('I am wanted'), kuyanda, pelyandee, puniandee • Morendat (< marandut 'footprint') & Suswa (< susuo 'grass')", english: "Lake Natron Dorobo grammar and Rift Valley Nandi place-names in Sir Charles Eliot's Introduction", explanation: "Sir Charles Eliot in A. C. Hollis (1909, pp. xxiv, xxvii–xxviii)" }
+  ]
+});
+
+KALENJIN_UNITS.push({
+  id: "kalenjin-unit-hollis-1909-complete-monograph",
+  title: "Unit 15: A. C. Hollis & Sir Charles Eliot (1909) — Salutations, 17 Clans, 12 Months, 57 Proverbs, 76 Enigmas & 5 Interlinear Stories",
+  description: "Master Nandi salutations (Sopai! / Takwenya!), the 6 Emet counties, 15 Pororiet districts, 17 Oret clans, 7 Ipinda age-sets, 12 ecological months, 57 Atindonik proverbs, 76 Tongōchik enigmas, and 5 interlinear Nandi stories from A. C. Hollis (1909).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "kalenjin-hollis-1909-monograph-mastery-skill",
+      title: "Salutations, Enigmas, Clans, Calendar & Interlinear Texts",
+      icon: "Sparkles",
+      description: "Practice authentic Nandi greetings, riddle formulas, clan names, calendar months, and verbs from Hollis (1909).",
+      tips: "In Nandi, men greet each other with 'Sopai!' (reply 'Eiko!'), whereas women and girls are greeted with 'Takwenya!' (reply 'Igo!'). For 'house', a man says 'ka / kaita' while a woman says 'ko / kot'.",
+      words: [
+        {
+          target: "Sopai! — Eiko! • Takwenya! — Igo! • Kongoi! / Asai!",
+          source: "Men's greeting ('Greetings! — Reply!') • Women's greeting ('Greetings! — Reply!') • Thank you!",
+          pronunciation: "so-pai / ei-ko / ta-kwe-nya / i-go / ko-ngoi / a-sai",
+          hint: "Hollis (1909, pp. 84, 164, 229)"
+        },
+        {
+          target: "Tongoj! — Choo! / Ta-tuñguch! — Ki-sir-to; kōn-ech pororiet!",
+          source: "A riddle! — Say it! — We are defeated; give us a pororiet district!",
+          pronunciation: "to-ngoj / choo / ta-tu-nguch / ki-sir-to ko-nech po-ro-riet",
+          hint: "Hollis (1909, Tongōchik-ap-Nandi, p. 133)"
+        },
+        {
+          target: "Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde, Kipsunde oieng, Mulkul, Mulkulik oieng, Ñgotioto",
+          source: "The 12 Nandi ecological months (February to January)",
+          pronunciation: "kip-ta-mo / i-wat-kut / wa-ke / ngei / rob-tui / pu-ret / e-pe-so / kip-sun-de / mul-kul / ngo-tio-to",
+          hint: "Hollis (1909, pp. 94–95)"
+        },
+        {
+          target: "Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma (3 Fires: Changen-opir, Kipal-koñg, Kiptoito)",
+          source: "The 7 cyclic Nandi age-sets (Ipinda) and 3 warrior fires (Mostinuek)",
+          pronunciation: "mai-na / nyo-nge / kim-nyi-ke / kap-le-lach / kip-koii-met / so-we / ju-ma",
+          hint: "Hollis (1909, pp. 11–13)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Sopai, murén-ju! Takwenya, chepiosō-chu! Asis! kōn-ech sapon, ak tuka, ak cheko, ak lakōk!",
+          source: "Greetings, O warriors! Greetings, O women! O God (Asis), give us health, and cattle, and milk, and children! (Hollis 1909, pp. 41, 164)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In A. C. Hollis's 'The Nandi: Their Language and Folk-Lore' (1909, pp. 133, 163–164), what is the Nandi riddle challenge formula, and how do men vs. women say 'the house'?",
+          correctAnswer: "Riddle formula: 'Tongoj!' — 'Choo! / Ta-tuñguch!' — 'Ki-sir-to; kōn-ech pororiet!'; 'the house' is 'kaita' (spoken by a man) vs. 'kot' (spoken by a woman)",
+          options: [
+            "Riddle formula: 'Tongoj!' — 'Choo! / Ta-tuñguch!' — 'Ki-sir-to; kōn-ech pororiet!'; 'the house' is 'kaita' (spoken by a man) vs. 'kot' (spoken by a woman)",
+            "Riddle formula: 'Tiangoi!' — 'Tia!' — 'Donguch!'; 'the house' is 'manyatta' for both",
+            "Riddle formula: 'Kweta ndai!' — 'Ndai!'; 'the house' is 'musi' for both",
+            "Riddle formula: 'Kitendawili!' — 'Tega!'; 'the house' is 'nyumba' for both"
+          ],
+          hint: "See Hollis (1909, pp. 133, 163)"
+        }
+      ]
+    }
+  ]
+});

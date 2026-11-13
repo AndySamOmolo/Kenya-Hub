@@ -549,3 +549,80 @@ export function getRelatedWords(word: string): string[] {
 }
 
 export const POSSESSIVE_SUFFIXES = POSSESSIVE_SUFFIXES_SIMPLE;
+
+// ============================================================
+// SIR HARRY JOHNSTON (1902) "THE UGANDA PROTECTORATE, VOL. II"
+// Chapter XVIII Nilotic Kavirondo (Ja-luo / Nyifwa, pp. 756–795, Figs. 428–438)
+// & Chapter XX Vocabulary Set 3 (Ja-luo, pp. 926–935 with Footnotes [-11], [-12], [-13])
+// ============================================================
+export const JOHNSTON_1902_JALUO_ETHNOGRAPHY_AND_LEXICON = {
+  citation: "Sir Harry Johnston, G.C.M.G., K.C.B., The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XVIII pp. 756–795, Figs. 428–438 & Ch. XX Set 3 pp. 926–935)",
+  illustrations: [
+    "428. Nilotic Kavirondo Type (Ja-luo)",
+    "429. Ja-luo Woman",
+    "430. Ja-luo Warrior with Ostrich Feather Headdress and Long Shield",
+    "431. Ja-luo Village near Kisumu",
+    "432. Ja-luo Women making Earthenware Pots",
+    "433. Ja-luo Elders smoking Long-stemmed Water-pipes",
+    "434. Ja-luo Wicker Fish-traps (Dema) and Papyrus Seines",
+    "435. Ja-luo Fishermen on Ambatch Rafts in Kavirondo Gulf",
+    "436. Ja-luo Canoe with High Prow",
+    "437. Ja-luo Musicians with Eight-stringed Lyre (Thum)",
+    "438. Ja-luo Warriors in Ceremonial Dance"
+  ],
+  ethnographyHighlights: [
+    "Nilotic Stork-Posture & Migration (pp. 761, 777): Characteristic Nilotic habit of standing on one leg with the other foot resting against the knee; the Ja-luo (called Nyifwa by Bantu Kavirondo and Abanyoro in the south) migrated from the Nile valley via Japalua and Busoga into the Kavirondo Gulf.",
+    "In-Law Goat-Skin Rule, Ornaments & Nyaluo Jasper Beads (pp. 780–782): A father-in-law may not enter his son-in-law's hut until presented with a goat-skin; married women wear a rear string tail and raised skin cicatrices ('poker-work'); 4 lower incisors (plus canines in boys) are extracted; men pierce the ear rim with up to 15 brass rings threaded with small blue glass beads (kiketi), and prize ancient blue/green opalescent jasper beads (nyaluo) found in the soil near the Maragolia Hills, valued at 1 cow per bead.",
+    "Diet, Livestock Slaughter, Dema Traps & Uvino Blacksmiths (pp. 783–787): Milk is mixed with cow's urine aged 1–2 days; livestock are killed by thrusting a knife into the jugular vein with the animal's head pointing west (unlike the Bantu Kavirondo club blow or Masai/Turkana suffocation); wicker fish-traps (dema), papyrus nets, and ambatch-wood rafts (Figs. 434–436); hereditary blacksmiths (Yothetth) form a distinct clan caste (Uvino).",
+    "Marriage, Chieng Sun Worship, Jamkingo & Three Judicial Ordeals (pp. 787–790): Bride-price up to 6 cows; supreme sun-deity Chieng (worshipped at sunrise and sunset by spitting towards the sun); secret nocturnal society jamkingo in Gemi; three judicial ordeals — (1) kiviri (plunging hands into boiling wimbi gruel), (2) drinking from a perforated calabash plugged with mimosa leaves, and (3) chewing dry flour.",
+    "Chief Odua's Prophecy, Birth Seclusion (Owiti/Awiti & Opio/Apio), Burial, Peace Rites & Lung Surgery (pp. 790–795): Chief Odua foretold the coming of red/white strangers from the east who would build an iron snake (the Uganda Railway); birth seclusion lasts 4 days for a boy and 3 days for a girl (mother secluded 9 days), infants symbolically cast away at the threshold are named Owiti (m.) / Awiti (f.), and twins are named Opio/Apio (first) and Odongo/Adongo (second) with O- for males and A- for females; chiefs are buried inside a new hut wrapped in an ox-hide with a pot over the head and all grain seeds except sweet potatoes; a warrior who slays a foe ties a live fowl round his neck and decapitates it; red cock sacrificed after lightning strikes a hut; peace sealed by eating sheep-meat from a grain-mortar and sweeping a kraal; thoracic pleurisy/lung surgery performed by resecting a portion of protruding lung tissue; recreation includes bao and field hockey."
+  ],
+  set3FootnotesAndCorrections: [
+    { headword: "Fish", luo: "Retc (pronounced 'Retch')", note: "Footnote [-11] on p. 928: 'Pronounced \"Retch.\"' (correcting raw tag Retc[-11])." },
+    { headword: "Bad", luo: "Ratc (often sounds like 'Raty')", note: "Footnote [-12] on p. 933: 'Often sounds like \"Raty.\"' (correcting raw tag Ratc[-12])." },
+    { headword: "I eat", luo: "Aciemo (C in Ja-luo is pronounced very like ty)", note: "Footnote [-13] on p. 934: 'The c in Ja-luo is pronounced very like ty.' (correcting raw tag Aciemo[-13])." },
+    { headword: "Great man", luo: "Ñama ñongo", note: "Page 929 under Great, '„ man' (correcting ditto gloss 'To man')." },
+    { headword: "Ground-nut", luo: "Kalīni", note: "Page 929 under Ground, '„ nut' (correcting ditto gloss 'To nut')." },
+    { headword: "Tooth, molar", luo: "Nyapuñ lak", note: "Page 932 under Tooth, '„ molar' (correcting ditto gloss 'To molar')." },
+    { headword: "Tooth, canine", luo: "Nyaluógono", note: "Page 932 under Tooth, '„ canine' (correcting ditto gloss 'To canine')." },
+    { headword: "Woman, young", luo: "Ñutu", note: "Page 933 under Woman, '„ young' (correcting ditto gloss 'To young')." },
+    { headword: "I give not", luo: "Ukanamī", note: "Page 934 under I give, '„ not' (correcting ditto gloss 'To not')." }
+  ]
+};
+
+
+export const NORTHCOTE_1907_GRAMMAR_AND_CULTURAL_SUPPLEMENT = {
+  source: 'G. A. S. Northcote (1907), "The Nilotic Kavirondo", JRAI Vol. 37, pp. 58–66 (http://www.jstor.org/stable/2843247)',
+  lexicalItemsAndLoanwords: [
+    { term: 'Jaluo', gloss: 'Proper endonym of the Nilotic Kavirondo (related to Dinka, Aluri/Alur, and Acholi near Wadilai)', page: 58 },
+    { term: 'askari', gloss: 'Retainer, page, or poor relation living in a family village; also policeman (adopted Swahili loanword, fn. 1)', page: 60 },
+    { term: 'shamba', gloss: 'Agricultural land / individual cultivation plot marked out by each adult male and female (adopted Swahili loanword, fn. 1)', page: 60 },
+    { term: 'mtama', gloss: 'Millet used in the wedding feast sun-god offering and eponymous nickname obele (adopted Swahili loanword, fn. 1)', page: 62 },
+    { term: 'onyango', gloss: 'Born in the morning (widespread time-of-day birth name)', page: 62 },
+    { term: 'oching', gloss: 'Born at noon (widespread time-of-day birth name; standard Ochieng)', page: 62 },
+    { term: 'odiambo', gloss: 'Born in the afternoon (widespread time-of-day birth name; standard Odhiambo)', page: 62 },
+    { term: 'otieno', gloss: 'Born at night (widespread time-of-day birth name)', page: 62 },
+    { term: 'obele', gloss: '"The man who owned much mtama [millet]" (hereditary nickname)', page: 62 },
+    { term: 'oliech', gloss: '"The man who killed an elephant" (hereditary nickname)', page: 62 },
+    { term: 'obonyo', gloss: '"The man like a locust" (hereditary nickname)', page: 62 },
+    { term: 'Bwana', gloss: 'Colonial administrative officer / magistrate (invoked in the rain-maker summons anecdote)', page: 64 }
+  ],
+  quantitativeAndLegalFacts: [
+    '3 goats: Fine paid to the husband by anyone who touches a married woman\'s rear grass tassel (pp. 58–59).',
+    '6 to 8 inches: Breadth of the waist cloth strip latterly worn by women, just meeting in front (p. 59).',
+    '6 to 10 pieces: Number of polished iron wire pieces wound round men\'s arms and legs (p. 59).',
+    '3 rupees a year: Annual hut tax paid for every hut, encouraging the shift from iron wire to the rupee (p. 59).',
+    '1 or 2 small iron beads: Contained inside each broad-bean-pod-shaped iron-wire bell fastened to the warrior\'s knee and ankle in full dress (p. 59).',
+    '3 feet 6 inches high by nearly 6 feet long: Dimensions of the heavy curved buffalo-hide shield painted red, white, and black (p. 59).',
+    '10 to 50 villages: Size of a clan dependency placed under a sub-chief or headman (p. 60).',
+    '1 or 2 askari: Retainers (pages or poor relations) living in a family village (p. 60).',
+    '2 feet raised, 5 feet high, 3 feet diameter: Dimensions of the circular basket/wicker-work grain storehouses (granaries) around the central cattle pen (p. 60).',
+    '4 hut categories per married man: His own hut, a hut for each wife, a smaller hut for his sons, and a smaller hut for his daughters with their grandmother (p. 61).',
+    'Chieftainship Case Study (A, B, C, D, E, F): First wife (A) bears daughters (B, C) and later son (D), while second wife (E) bears older son (F); (D) succeeds by his mother (A)\'s priority unless too young, in which case (F) or an eldest uncle rules (p. 61).',
+    '1883 vs. 1907 bride-price (dot): 20 head of cattle (plus goats and grain) before the 1883 cattle plague; 7 head is a handsome dot in 1907, down to 1 bull and 20 goats, or 1 heifer and 1 bull as the usual minimum (p. 62).',
+    '6 days vs. 3 days: Sunrise and sunset wailing lasts 6 days for a chief and 3 days for a common person, with recumbent burial inside the occupied hut (p. 63).',
+    '5 fishing methods: Rod and line, sunken trawl line, weirs, woven grass substitutes for nets, and four-pronged wooden spears (pp. 64–65).',
+    '8-stringed harp: Musical instrument accompanying extempore heroic or comic songs (p. 65).',
+    '9 modern occupations at Kisumu: Soldiers, sailors, police, masons, carpenters, sawyers, blacksmiths, gardeners, and boys, plus a Jaluo native sergeant instructor at Kisumu after 4–5 years of administration (p. 65).'
+  ]
+} as const;

@@ -649,3 +649,72 @@ export const HOBLEY_1902_EASTERN_UGANDA_THOLUO = {
         want: "Inf. oduaro | Pres. 1s aduaro, 2s iniduaro/iduaro, 3s oduaro/enouaro, 1p wanuwaduaro, 2p unuduaro, 3p giduaro | Fut. 1s anganaduari | Past 1s naduaro | Neg. Pres. 1s adagi (p. 85)"
     }
 };
+
+
+// Complete Line-by-Line Expansion of Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
+export const NORTHCOTE_1907_COMPLETE_LINE_BY_LINE_ARCHIVE = {
+  citation: 'Northcote, G. A. S. (1907). "The Nilotic Kavirondo." Journal of the Royal Anthropological Institute of Great Britain and Ireland, Vol. 37, pp. 58–66.',
+  stableUrl: 'http://www.jstor.org/stable/2843247',
+  migrationAndKinship: {
+    properName: 'Jaluo (Nilotic Kavirondo)',
+    habitat: 'North-eastern shore of the Victoria Nyanza',
+    linguisticKin: 'Belong to the same family as the Dinka tribe of the Soudan, and are very near relations of the Aluri (Alur) and Acholi tribes on both sides of the Nile near Wadilai (less difference than between two adjoining Bantu tribes).',
+    migrationTradition: 'Originally one tribe with the Acholi; migrated from the north-west in a body under one big chief due to overcrowding or a dispute about the chieftaincy, later splitting into smaller chieftaincies via passive secession rather than conquest.'
+  },
+  physiqueDietAndDress: {
+    physiqueComparison: 'Large-boned, deep-chested, somewhat fleshy, and very muscular—contrasting with the Masai, Nandi, and Lumbwa (who have great endurance but are not muscular races because until the great cattle plague of 1883 they lived entirely on animal food, whereas the Jaluo are agricultural/industrial with a mainly vegetable diet).',
+    facialFeatures: 'Rather squat noses, large mouths, and big wide-opened eyes, with occasional structural faces and fine noses.',
+    everydayDressAndTasselLaw: 'Men wear a goat skin hung over the right shoulder or nothing, with 6 to 10 pieces of iron wire wound round arms and legs (polished with oil and fat, though causing continual sores and ulcers) and strings of neck beads. Married women wear a small grass tassel behind hanging from the waist (discarded on the husband\'s death until re-marriage; anyone touching this tassel pays a fine of 3 goats to the husband), and latterly a strip of cloth 6 or 8 inches wide round the waist just meeting in front.',
+    hutTaxAndCurrencyTransition: 'Keen traders who are realizing the advantages of the rupee over iron wire, accelerated by the 3-rupee annual hut tax (3 rupees a year for every hut).',
+    fullCeremonialDress: [
+      'Head: Huge hat of monkey or goat skin, or of feathers (often ostrich feathers).',
+      'Face: Well-oiled face ornamented by lines of small white beads leading across the forehead, nose, upper lip, and chin, fastened behind the ear.',
+      'Neck: Strings of beads, brass cartridge cases, fetishes, and 1 or 2 rounds of iron wire.',
+      'Chest & Back: Rows of cowries sewn on to strips of leather across the chest and sometimes hanging down the back.',
+      'Right Shoulder: Big black feather boa, or an ornament made of the long hair from the wildebeest\'s tail (the everyday goat skin is discarded).',
+      'Waist: Strings of iron beads made by the native blacksmith out of extra-polished iron wire, with hanging bunches of feathers (transferred to his wife or wives after the dance so they may also have their fling).',
+      'Body & Hair: Body oiled and covered with red clay or charcoal, or striped/spotted with yellow clay in imitation of the zebra or leopard; hair twisted into long thin strings dressed with oil and red clay/charcoal, or partially shaved leaving at least one little tuft (cut off and worn by the chief mourner at the owner\'s funeral).',
+      'Knee & Ankle Bells: Small bells made of iron wire in the shape of broad-bean pods, with 1 or 2 small iron beads inside.'
+    ],
+    weaponsAndShields: 'Long-hafted, short-bladed spear, a Masai sword on the right hip, and occasionally a bow and arrows instead of the spear. Buffalo-hide shields measure ~3 feet 6 inches vertically and nearly 6 feet horizontally, curved back to cover left side, back, and front, painted red, white, and black in artistic designs (originally family heraldry, now individual taste).'
+  },
+  polityLandAndArchitecture: {
+    semiFeudalPolity: 'Divided into chieftaincies or clans without an overlord; each chief places dependencies of 10 to 50 villages under sub-chiefs or headmen. In a crisis, an informal council of village heads (patres familiarum) expresses views without any voting, final decision resting with the chief. Tyranny is met by passive secession (headmen setting up as independent chiefs).',
+    landTenureAndSwahiliLoans: 'Clan land is held in common and guarded against other chiefs\' subjects (trespass causes bloody quarrels), though outsiders may settle freely without payment if they obey the chief. Each village is a family headed by the father or eldest brother, with 1 or 2 retainers called askari (Swahili loanword = police/retainers). In laying out the shamba (Swahili loanword = agricultural land), every adult male and female marks out and tills an individual plot. Crops belong strictly to the tiller: a son can sell only grain he grew himself; one askari reaping what another sowed is a thief; if A\'s cattle or goats wander into B\'s shamba in the same village, B claims compensation. Broader land tenure is only temporary squatter\'s rights (no claim in perpetuo).',
+    circularVillageAndGranaries: 'Circular village fenced with euphorbia bush, stone or mud wall, or watling. Central cattle pen surrounded by basket/wicker-work store houses (granaries) raised ~2 feet off the ground, ~5 feet high and 3 feet in diameter, with a small top opening for a man\'s head and shoulders and a grass roof.',
+    fourHutSystem: 'Outside the granaries stands the circle of huts (sticks and grass plastered with dung and mud): every married male has (1) his own hut, (2) a hut for each wife, (3) a smaller hut for his sons, and (4) a smaller hut for his daughters (who live with an old woman, often their grandmother), keeping unmarried sexes rigidly apart.'
+  },
+  marriageInheritanceAndChieftainshipCase: {
+    exogamyAndPolygyny: 'Strict clan exogamy; a son may marry his father\'s non-blood-related wife (step-mother), and two sisters are often simultaneously the wives of one man.',
+    propertyInheritance: 'A husband allocates cattle to each wife (chief/first wife receiving the largest share); at his death, each wife and her cattle pass to her own sons (eldest son receiving the largest share as pater familias). If the first wife has no sons, all property (including the first wife and her daughters) passes to sons by another wife; if he has no sons at all, it passes to his brother or nearest male blood relation. Females can own no property.',
+    chieftainshipCaseStudy: 'Documented succession case (p. 61): A chief married first wife (A) who bore two daughters (B and C); meanwhile he married second wife (E) who bore a son (F); later first wife (A) bore a son (D). On the chief\'s death, (D) became chief by virtue of the priority of his mother (A). Exceptions occur if (D) is too young to govern—then (F) may become chief since regency is unknown—or if both (D) and (F) are infants, an elder male blood relation such as their eldest uncle succeeds (often causing quarrels when the dispossessed heir grows up).',
+    courtingAndWeddingRites: 'Suitor brings a bull or goats as earnest money after the two fathers set the dowry; at the preliminary feast an offering is set aside for the sun-god consisting of a little meat, part of a chicken, some mtama (millet), and native beer. Days later he carries the bride off by simulated force to his village, where she performs the rite of cooking the first dinner for him (signifying acceptance as husband), then returns home while he pays dowry installments (carrying her away for a few days at each payment). All offspring of the dowry livestock transfer at completion. If childless or dying early, the dowry is reclaimable or her sister takes her place; pre-existing children belong to the husband; dowry is recoverable if she deserts him.',
+    dowryPreAndPost1883: 'Before the 1883 cattle plague: 20 head of cattle (plus goats, grain, etc.). In 1907: 7 head of cattle is a handsome dot, falling as low as 1 bull and 20 goats, with 1 heifer and 1 bull as the usual minimum.'
+  },
+  onomasticsFuneralsAndReligion: {
+    birthAndGhostNames: 'Time-of-day names: onyango (morning), oching (noon), odiambo (afternoon), otieno (night). Dream names from a deceased relative appearing to the mother in sleep before birth, or posthumous names dictated by the dead father\'s ghost. Hereditary nicknames: obele ("the man who owned much mtama"), oliech ("the man who killed an elephant"), obonyo ("the man like a locust").',
+    funeralCeremonies: 'While dying, relatives howl outside while doctors rattle stones in gourds and blow clouds of tobacco smoke around the invalid to drive out evil spirits. Next day, mourners in full war paint bring their best bulls; the mother or chief wife wears the dead man\'s goat skin and cut-off hair tuft, running round the village rattling a gourd and singing incantations; visitors refresh with beer and tobacco, charge up and down hanging on to their bulls\' tails and pricking them, then fight invisible evil spirits singly or in twos and threes behind their huge shields, feast, and make the sun offering.',
+    wailingAndRecumbentBurial: 'Wailing at sunrise and sunset lasts 6 days for a chief (each village mourning separately after the dance day) and 3 days for a common person. The corpse is buried in a recumbent position inside the deceased\'s hut, which continues to be occupied by his heir (refuting Sir Charles Eliot\'s statement that the hut is destroyed or disused). At the end of mourning, beer, grain, and chicken flesh are offered on the grave.',
+    sunWorshipAndVerbatimQuote: 'Worship the sun and to a lesser extent the moon, viewing the sun as rarely beneficent, often malignant, and usually apathetic. Verbatim native quote (p. 63): "It does not matter how much you pray, you fall sick and die just the same." Offerings are made to appease rather than obtain positive benefits.'
+  },
+  courtCasesMedicineAndRainMaking: {
+    case1MissingRazorWitchcraftTrial: 'A man missed his razor, gave his two wives till evening to find it, allegedly struck one pregnant wife, and affixed two charms to their huts warning the thief would shortly die. Next day the pregnant wife delivered a still-born child and died. Tried for murder, his accusers blamed his witchcraft while the court held guilt lay only in the alleged blow; when the blow was proved a myth, he was discharged to his accusers\' disgust.',
+    secretMurderDoorCharm: 'Burying a dead rat or chicken at the victim\'s door so that when he steps on the spot next morning he will die that day.',
+    case2HutRoofCureAssault: 'Against the evil eye and illness, remedies include noise, drugs, herbs, and expert wet and dry cupping. In one case, a native practitioner ordered a sick wife to climb to the roof of her hut and stay there until better; when she died under this open-air cure, her husband beat the doctor violently with a club and was charged with assault.',
+    case3LimeQuarryFatalSurgery: 'A Government employee suffered a broken thigh and internal injuries in a lime-quarry; Northcote bound a temporary splint, sent for the Indian apothecary, and forbade moving him, but a native surgeon called in during the night cut the man open to make a better diagnosis, killing him.',
+    rainMakerRitualAndIndianShopkeeperAnecdote: 'Living near a big sacred tree, the rain-maker boils herbs in a large pot beneath it, draws decoction into a smaller pot over which he squats on his haunches, draws liquid through a hollow reed, blows to make the pot bubble, and squirts the liquid into the air with mutterings. When valley residents complained he was deflecting the lesser rains to the hills and asked the Bwana (Northcote) for a policeman, Northcote gave them a paper scribbled with crooked lines as a summons; the rain-maker refused to come, declaring the paper emanated from an Indian shopkeeper, but a tremendous storm broke that evening and the villagers praised Northcote\'s letter for frightening the magician into giving rain.'
+  },
+  subsistenceCharacterAndModernization: {
+    cattleBleedingAndHemp: 'Drawing blood from living cattle and drinking it (justified as the only way to obtain salt in many parts of Kavirondo); heavy beer drinking; older men smoke hemp (bhang).',
+    fiveFishingMethods: [
+      '1. Rod and line',
+      '2. Sunken trawl line',
+      '3. Weirs',
+      '4. Woven grass substitutes for nets',
+      '5. Spearing with four-pronged wooden spears hurled with extraordinary accuracy at water swirls'
+    ],
+    huntingDogsAndThrowingSticks: 'Well-trained hunting dogs that run down an oribi or a hare, or retrieve a wounded guinea fowl knocked down by throwing sticks.',
+    characterMusicAndLitigation: 'Post-puberty unmarried girls may have male "friends" from another clan with a strict veto on unchastity, and married women must be strictly faithful. Fond of fun, horse-play, and roars of laughter; skilled blacksmiths and shield painters; play the eight-stringed harp with extempore heroic or comic songs (yet cannot build a cornered room without painful apprenticeship). Better fighters than the Swahili and more disciplined policemen than the Masai. Painfully litigious like the natives of Hindustan, bringing civil cases from the time of their grandfathers to reverse pre-colonial decisions.',
+    nineModernOccupationsAtKisumu: 'Employed as (1) soldiers, (2) sailors, (3) police, (4) masons, (5) carpenters, (6) sawyers, (7) blacksmiths, (8) gardeners, and (9) boys—including a smart native Jaluo sergeant instructor at Kisumu Provincial Headquarters after only 4–5 years of administration.'
+  }
+} as const;

@@ -2847,3 +2847,59 @@ export const KISII_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+KISII_UNITS.push({
+  id: "kisii-unit-johnston-1902-set9-igizii-lusinga",
+  title: "Unit 11: Sir Harry Johnston (1902) Set 9 Igizii (Ekegusii) & Lusinga — Complete Vocabulary, Numerals & Pronouns (pp. 993–1001)",
+  description: "Master all Igizii (Ekegusii) and Lusinga (Rusinga Island) vocabulary, numerals 1–1,000, pronouns, and verbal sentences from Set 9 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 993–1001).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "kisii-johnston-1902-set9-skill",
+      title: "Set 9 Igizii & Lusinga Lexicon, Numerals & Verbal Sentences (pp. 993–1001)",
+      icon: "Sparkles",
+      description: "Practice verified Igizii (Ekegusii) headwords, pronouns, and sentences from pp. 993–1001 of Johnston (1902).",
+      tips: "In Johnston's Set 9 table (1902, pp. 993–1001), Igizii preserves the 7-vowel root system and Class 5 Eri- / Class 6 Ama- concords: Erioba (sun/God), Erino → Amaino (tooth → teeth), Eritimo → Amatimo (spear → spears), Riroba rienu (your country).",
+      words: [
+        {
+          target: "Omundu (pl. Abanto) • Omukari (pl. Abakari) • Engoro / Erioba • Amace • Omurero",
+          source: "Man/Person (pl. People) • Woman (pl. Women) • God / Sun • Water • Fire",
+          pronunciation: "o-mu-ndu a-ba-nto / o-mu-ka-ri / e-ngo-ro e-rio-ba / a-ma-ce / o-mu-re-ro",
+          hint: "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+        },
+        {
+          target: "Eritimo (pl. Amatimo) • Enguba • Obuta • Omugwe (pl. Emigwe) • Ekisiri / Ekenabo • Obuatō",
+          source: "Spear (pl. Spears) • Shield • Bow • Arrow (pl. Arrows) • Axe • Canoe",
+          pronunciation: "e-ri-ti-mo a-ma-ti-mo / e-ngu-ba / o-bu-ta / o-mu-gwe / e-ki-si-ri / o-bua-to",
+          hint: "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+        },
+        {
+          target: "Ngotenga • Nangire • Emuamu • Aīya, Aiga • Omuji uitu • Riroba rienu • Abana babo",
+          source: "I dance • I come not • Black • Here • Our town • Your country • Their children",
+          pronunciation: "ngo-te-nga / na-ngi-re / e-mua-mu / ai-ya ai-ga / o-mu-ji ui-tu / ri-ro-ba rie-nu",
+          hint: "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Omuntu oyu — Umute uyu — Omuji uitu — Riroba rienu — Abana babo.",
+          source: "This man — This tree — Our town — Your country — Their children (Johnston 1902, pp. 999–1001)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Sir Harry Johnston's Vocabulary Set 9 (The Uganda Protectorate, Vol. II, 1902, pp. 993–1001), what do 'Ngotenga' and 'Nangire' mean in Igizii (Ekegusii)?",
+          correctAnswer: "'Ngotenga' means 'I dance' and 'Nangire' means 'I come not'",
+          options: [
+            "'Ngotenga' means 'I dance' and 'Nangire' means 'I come not'",
+            "'Ngotenga' means 'Our town' and 'Nangire' means 'Your country'",
+            "'Ngotenga' means 'This tree' and 'Nangire' means 'This man'",
+            "'Ngotenga' means 'Black' and 'Nangire' means 'Here'"
+          ],
+          hint: "See Johnston (1902, Vol. II, p. 1000)"
+        }
+      ]
+    }
+  ]
+});

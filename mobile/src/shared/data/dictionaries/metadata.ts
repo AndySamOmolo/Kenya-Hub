@@ -4230,3 +4230,221 @@ INITIAL_RANDOM_WORDS.push(
     langId: "kamba",
   }
 );
+
+// ============================================================
+// Sir Harry Johnston (1902) "The Uganda Protectorate, Vol. II"
+// (London: Hutchinson & Co., Paternoster Row, 1902, pp. i–xx, 471–1018 — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Ch. XVII Bantu Kavirondo & Masaba Ethnography (pp. 722–755, Figs. 383–403), Lukonde 16 Noun Prefixes (p. 1001) & Set 8 / Set 9 Vocabularies (pp. 980–1001)",
+      translation: "16 Lukonde Prefixes: Umu-, Baba-, Gumu-, Gimi-, Ili-, Gama-, Ki-(Si-), Bibi-, In-, Zi-/Tsi-(Ci-), Lulu-, Ruru-(Tutu-), Kaka-, Bubu-, Kuku-(Gu-), Ha-(Wa-) • Kamagumi kabili (20), Kamagumi katatu (30), Kamagumi kanne (40), Kamagumi karano (50) • Akhana (pl. Ruana) • Iduasi • Racari • Olumutana / Sirkhanga / Obukanga • Injugu / Imbande • Ihumba • Mwieka • Ehei • Alia efu",
+      pronunciation: "gu-mu ga-ma ba-ba bu-bu / ka-ma-gu-mi ka-ta-tu / a-kha-na / i-dua-si / ra-ca-ri / mwie-ka",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 722–755, 889–901, 980–1001)",
+      audioFile: null,
+    },
+    langName: "Luhya (Luyia)",
+    langId: "luhya",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Ch. XVIII Ja-luo (Nyifwa) Ethnography (pp. 756–795, Figs. 428–438), Set 3 Vocabulary & Phonetic Footnotes [-11], [-12], [-13] (pp. 926–935)",
+      translation: "Retc (fn. [-11]: pronounced 'Retch' = Fish) • Ratc (fn. [-12]: often sounds like 'Raty' = Bad) • Aciemo (fn. [-13]: c in Ja-luo is pronounced very like ty = I eat) • Ñama ñongo (Great man) • Kalīni (Ground-nut) • Nyapuñ lak (Tooth, molar) • Nyaluógono (Tooth, canine) • Ñutu (Woman, young) • Ukanamī (I give not) • Chieng, Nyaluo beads (1 cow/bead), Dema, Uvino (Yothetth), Jamkingo, Kiviri & Chief Odua's Prophecy",
+      pronunciation: "retch / raty / a-tye-mo / nga-ma ngo-ngo / ka-li-ni / nya-pung lak / u-ka-na-mi",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 756–795, 926–935)",
+      audioFile: null,
+    },
+    langName: "Dholuo (Luo)",
+    langId: "luo",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Ch. XIX Masai Ethnography (pp. 796–836, Plate 46, Figs. 439–463), Shrubsall Tables A–F (Nos. 69–76), 4-God Myth, Os-singolio Score (p. 834) & All 30 Additional Words and Sentences in Masai (pp. 925–926)",
+      translation: "Sopai! — Eépa! • Asai! • T'anyō! / Tanyō nanu! • Elotu taīsere • Totóna enné! • Ino! ṣōmō! • Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Wōu tāsīū! • Neningo! • Tōtónna! • Imīñāni iye! • Biado! • Baīya! • Āiya! • Ékĭnō! • Eñnoyik akīma • Kálo? • Gīniñ? • Iwa! • Ṣomo erriita ngiṣu! • Ol aṣe / eñgaṣe • Ol airini • Ol bāhe • Ol canni • Anyorr • Yao el gēk",
+      pronunciation: "so-pai e-e-pa / a-sai / ta-nyo na-nu / e-lo-tu tai-se-re / in-jo-hi ma-o-ko / bi-a-do",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 492–507, 796–836, 913–926)",
+      audioFile: null,
+    },
+    langName: "Maasai (Maa)",
+    langId: "maasai",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Ch. XIX Nandi, Kamásia, Elgeyo, Mutei, Elgonyi, Sabei & Andorobo Ethnography (pp. 855–884, Plates 47–48, Figs. 480–505), Shrubsall Tables A–F (Nos. 77–99) & All 19 Additional Words and Sentences in Nandi (p. 925)",
+      translation: "Tiamge (sg.), Otyamge (pl.) • Ñgō ni? • Nyo cōk! • Kanyīte! • Kongoi, Eñgōñgōi! • Mweīcī ko ganyā • Ui! • Kātigē! • Iberber inye! • Ribge! • Cōriōnyo! • Meūtye! • Sūt! • Indōē! • Isubō! • Kasā! • istoge ēñor! • Toñonye! • Kōnō pek āē • Lakwen na nyu (My child) • Teta kigei (Milch cow) • Kejan (Many) • Kiebtó (Young woman, virgin)",
+      pronunciation: "ti-am-ge o-tyam-ge / ko-ngoi / ka-ti-ge / cho-rio-nyo / ko-no pek a-e / lak-wen na nyu",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 492–509, 855–884, 913–925)",
+      audioFile: null,
+    },
+    langName: "Kalenjin",
+    langId: "kalenjin",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Ch. XIX Sūk (Pokot) Ethnography (pp. 839–852, Figs. 472–477), Sūk Musical Score (p. 851), Shrubsall Tables A–F (Nos. 59–68) & Set 1 Sūk Vocabulary (pp. 903–912)",
+      translation: "Ciebī, Cep (Child, female) • Ciēbē (Woman, young) • Ane aca karām (I am good) • Kiruokin (Chief) • Tuluo (Mountain) • Kūgū (Crocodile) • Kopau / Kopan (Rhinoceros) • Oluwăn / Koluanu / Ma manyḗ (I drink / drank / drank not) • Abkana kiama (I eat not) • Moñunanye (I come not) • Mongetanye (I know not)",
+      pronunciation: "cie-bi cep / cie-be / a-ne a-ca ka-ram / ki-ruo-kin / tu-luo / ku-gu / mo-nge-ta-nye",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 492–507, 839–852, 903–912)",
+      audioFile: null,
+    },
+    langName: "Pokot (Pökoot)",
+    langId: "pokot",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Set 2 Ngishu / Baringo Maa (Ilchamus & Samburu) Compound Tens 50–90 (p. 921) & Verbal Sentences (pp. 922–924)",
+      translation: "Onnom (50) • Onnom otomon (60) • Onnom obikitam (70) • Onnom otomoni uni (80) • Onnom artam (90) • Ip (100) • Ip tomon (1,000) • Alotu / Ma lotu • Aiṣo 'yé / Aiṣō elle • Atara ninje • Etu gimirio • Keñworeta nanu • Eado te nano",
+      pronunciation: "on-nom o-to-mon / on-nom o-bi-ki-tam / on-nom o-to-mo-ni u-ni / on-nom ar-tam / ip to-mon",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 796–804, 913–924)",
+      audioFile: null,
+    },
+    langName: "Ilchamus (Njemps)",
+    langId: "ilchamus",
+  },
+  {
+    entry: {
+      english: "Sir Harry Johnston (1902) Set 9 Igizii (Ekegusii) & Ikuyu (Kikuyu) Comparative Vocabulary, Numerals & Pronouns (pp. 993–1001)",
+      translation: "Igizii: Omundu (pl. Abanto), Engoro / Erioba, Amace, Omurero, Eritimo (pl. Amatimo), Enguba, Ngotenga (I dance), Nangire (I come not), Emuamu (Black), Aīya / Aiga (Here) • Ikuyu: Fisi → Hiti (hyena), Pa- → Ha- (Class 16), Mundu (pl. Andu), Ngai, Mai, Mwaki, Itimu, Ngo",
+      pronunciation: "o-mu-ndu a-ba-nto / e-ngo-ro e-rio-ba / a-ma-ce / ngo-te-nga / na-ngi-re / hi-ti",
+      context: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Set 9, pp. 993–1001)",
+      audioFile: null,
+    },
+    langName: "Kisii (Ekegusii)",
+    langId: "kisii",
+  }
+);
+
+
+// Complete Northcote (1907) Lexical & Ethnographic Highlights (JRAI Vol. 37, pp. 58-66)
+export const NORTHCOTE_1907_LEXICAL_HIGHLIGHTS = [
+  { word: 'Jaluo', translation: 'Proper name of the Nilotic Kavirondo (related to Dinka, Aluri, and Acholi near Wadilai)', language: 'luo', page: 58 },
+  { word: 'askari', translation: 'Retainer, page, or poor relation in a family village; policeman (Swahili loanword)', language: 'luo', page: 60 },
+  { word: 'shamba', translation: 'Individually tilled agricultural plot within communal clan land (Swahili loanword)', language: 'luo', page: 60 },
+  { word: 'mtama', translation: 'Millet offered to the sun-god at wedding feasts and in the nickname obele (Swahili loanword)', language: 'luo', page: 62 },
+  { word: 'onyango', translation: 'Born in the morning (time-of-day birth name)', language: 'luo', page: 62 },
+  { word: 'oching', translation: 'Born at noon (time-of-day birth name; Ochieng)', language: 'luo', page: 62 },
+  { word: 'odiambo', translation: 'Born in the afternoon (time-of-day birth name; Odhiambo)', language: 'luo', page: 62 },
+  { word: 'otieno', translation: 'Born at night (time-of-day birth name)', language: 'luo', page: 62 },
+  { word: 'obele', translation: '"The man who owned much mtama [millet]" (hereditary nickname)', language: 'luo', page: 62 },
+  { word: 'oliech', translation: '"The man who killed an elephant" (hereditary nickname)', language: 'luo', page: 62 },
+  { word: 'obonyo', translation: '"The man like a locust" (hereditary nickname)', language: 'luo', page: 62 },
+  { word: 'Bwana', translation: 'Colonial official / magistrate (rain-maker summons anecdote)', language: 'luo', page: 64 }
+] as const;
+
+// ============================================================
+// Mervyn W. H. Beech & Sir Charles Eliot (1911) "The Suk: Their Language and Folklore"
+// (Oxford: At the Clarendon Press, 1911, pp. i–xxiv, 1–151, Plates I–XXIV, Maps I–III — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Mervyn W. H. Beech (1911) Chs. I–III & Part II: 8 Suk Divisions, 8 Cyclic Age-Sets (Pĕn), Tiamolok's Pantheon (Torôrut, Seta, Arawaʻ, Ilat, Kokel, Topogh, Asis), Planting Hymn, Potters' Chant, 18 Tiangoi! Riddles & 2 Interlinear Stories",
+      translation: "Pôkwut (sg. Pĕch-on) • Tokwes! — Eia! • Chamke! • Korôton! — I-rôt-enyi! • Planting Hymn: Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Ny' anyin! • Potter's Chant: O-wei ter i-ker-ach mba maʻ, I-chi-nyi tiumbo kukoʻ! • Curse: Ke-sasi-anan ter-e-nyan ko-sasi-nyi Torôrut! • Bee-Swarm: Hei-Hei-Hei ka-rat sakam kôt! • Tiangoi! — Tia! — Donguch! • Kip-kokech ngô Ki-blerkwa & Kechir ngô Ñgaror",
+      pronunciation: "po-kwut / tok-wes / cham-ke / ko-ro-ton / to-ro-rut / ti-a-ngoi",
+      context: "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. i–xxiv, 1–151, Plates I–XXIV, Maps I–III)",
+      audioFile: null,
+    },
+    langName: "Pokot (Pökoot)",
+    langId: "pokot",
+  },
+  {
+    entry: {
+      english: "Sir Charles Eliot (1911, pp. xi–xxiv): 21 Suk–Nandi Guttural 'gh' Cognates, 'r/l' Interchange, 13 Movable 'i-' Prefix Verbs & Endo (Chep-bleñg) Kaptapar Rock-Pillar Legend",
+      translation: "21 'gh' Cognates: ghaʻ/ya, egh/ei, hegh/ē, nagh/naite, tagh/tae, siegh/sie, togh/tui, ghet/etio, maugh/moi, nyagh/nye, segh/siiya, ñgoghom/ñgom, ghogh/ioi, ogh/oi-iye, meghat/myat, ghiet/ete, igh/ie, mwagh/mwai, nyagh/ñga, sighin/siin, kogh/koi • rel/lel, karual/kalual, nyaril/inyalil • Endo (Chep-bleñg) Chiefs Lōseron, Lotiram, Wiraporoa & Kapkornis • Nov. 1909 Cheptulel Peace Oath (i-mēgh!)",
+      pronunciation: "gha / ya • egh / ei • rel / lel • chep-bleng / lo-se-ron / i-megh",
+      context: "Sir Charles Eliot & Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. xi–xxiv, 3, 17, 19 fn. 1, 27–37)",
+      audioFile: null,
+    },
+    langName: "Kalenjin",
+    langId: "kalenjin",
+  },
+  {
+    entry: {
+      english: "Mervyn W. H. Beech (1911, pp. 7–9, 21, 27–37, 150–151): 25 Turkana–Suk Comparative Cognates, Chief Aijigwa's Turkana Legal Code, Lemurok vs. Lekatuknok & 30-Ft Tree-Fork Granaries",
+      translation: "25 Cognates: Adaru, Adiñgo, Akul, Alakam, Aloket, Alöit (10-elephant/day spring-noose trap), Amumūr, Anañga (enanga), Apapai, Aparparat, Arobet, Atērdĭü, Atekēr, Atoros, Aturo, Aturpopo, Kalacha, Kedoñgô, Koliko, Legetioʻ, Loñgô, Muren (ngi-muren), Ñgechĕr (e-kicholông / ngicholong), Rungu, Siolip • Chief Aijigwa (Naudu & Salali) • Hereditary Lemurok vs. Lekatuknok • Turkana Dorobo 30-ft tree-fork granaries at En-gabotoʻ",
+      pronunciation: "a-da-ru / a-kul / a-lo-it / a-te-ker / si-o-lip / le-mu-rok / le-ka-tuk-nok",
+      context: "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. xxiii–xxiv, 7–9, 21, 27–37, 150–151)",
+      audioFile: null,
+    },
+    langName: "Turkana",
+    langId: "turkana",
+  },
+  {
+    entry: {
+      english: "Mervyn W. H. Beech (1911, pp. 4, 19 fn. 1, 27–37): En-jemusi Sky-God (En-Gai) & Earth-God (En-Gop) and Chief Launjali's Customary Law Code",
+      translation: "En-Gai (Sky-God) & En-Gop (Earth-God; Sun and Moon are husband and wife, p. 19 fn. 1) • Chief Launjali (p. 27) • Homicide: 10–20 cows • Theft: 3× restitution per thief (9 cows for 3 thieves stealing 1 cow) • Bride-price: 6 goats • Slander of elder: 1 bullock",
+      pronunciation: "en-gai / en-gop / lau-nja-li / en-je-mu-si",
+      context: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford: Clarendon Press, 1911, pp. 4, 19 fn. 1, 27–37)",
+      audioFile: null,
+    },
+    langName: "Ilchamus (Njemps)",
+    langId: "ilchamus",
+  }
+);
+
+export const BEECH_1911_LEXICAL_HIGHLIGHTS = [
+  { word: 'Pôkwut (sg. Pĕch-on)', translation: 'Indigenous autonym of the Suk nation ("Suk" being the Masai name, ? from hill short-sword chŭk / chôk)', language: 'pokot', page: 1 },
+  { word: 'Torôrut, Seta, Arawaʻ, Ilat, Kokel, Topogh & Asis', translation: 'Tiamolok\'s celestial pantheon: Supreme winged God Torôrut, wife Seta (Pleiades), eldest son Arawaʻ (Moon), younger son Ilat (Rain), children Kokel (Stars), daughter Topogh (Evening Star), and younger brother Asis (Sun)', language: 'pokot', page: 19 },
+  { word: 'Ki-ruwok-in (pl. Ki-ruwok-u)', translation: 'Influential elder/adviser presiding over a cluster of villages (Lowelan, Kamuta, Karôle, Latanyale) alongside elected Mainaʻ (Nerkau) war-leaders (Kidarile, Lôrimo)', language: 'pokot', page: 6 },
+  { word: 'Kamar (pl. kamar-tin)', translation: 'Sacred raid-ox with one horn pointing forward and one backward, bedecked with ostrich feathers', language: 'pokot', page: 8 },
+  { word: 'Lu vs. Igh & Muk-a vs. Set', translation: 'To drink milk (lu) vs. to drink water (igh); milk calabash (muk-a) vs. water calabash (set)', language: 'pokot', page: 8 },
+  { word: 'Tiangoi! — Tia! — Donguch!', translation: 'Riddle challenge ("A riddle!"), listener response ("Propound it!"), and surrender ("We give it up!") across all 18 Suk riddles', language: 'pokot', page: 44 },
+  { word: 'Tokwes! — Eia! / Chamke! / Korôton! — I-rôt-enyi!', translation: 'Village entry greeting ("Hail! — Yes!"), personal greeting ("Health to thee!"), and parting farewell ("I have gone! — Thou art going!")', language: 'pokot', page: 92 },
+  { word: 'Chep-bleñg (Endo) & Kaptapar', translation: 'Indigenous Suk name for the Endo people of the Elgeyo escarpment, who migrated from Kaptapar ("beyond Sirgoi") after a bird warned them before a sacred rock-pillar split', language: 'kalenjin', page: 3 },
+  { word: 'Lemurok vs. Lekatuknok', translation: 'Hereditary Turkana medicine-men/chiefs (Lemurok) vs. non-hereditary elders/advisers (Lekatuknok) recorded from Chief Aijigwa', language: 'turkana', page: 36 },
+  { word: 'En-Gai & En-Gop', translation: 'En-jemusi (Ilchamus) Sky-God and Earth-God, with Sun and Moon held to be husband and wife', language: 'ilchamus', page: 19 }
+] as const;
+
+// ============================================================
+// A. C. Hollis & Sir Charles Eliot (1909) "The Nandi: Their Language and Folk-Lore"
+// (Oxford: At the Clarendon Press, 1909, pp. i–xl, 1–328, Plates I–XLIV, Figs. 1–53, Map — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "A. C. Hollis (1909) Part I & II: 6 Informants (Oriare, Matang, Ar-ap-Sirtoi, Ar-ap-Kuna, Ar-ap-Chepsiet, Kipchomber), 6 Emet Counties, 15 Pororiet Districts, 17 Oret Clans, 7 Ipinda Age-Sets, 57 Proverbs, 76 Enigmas & 83 Botanical Species",
+      translation: "Sopai! — Eiko! • Takwenya! — Igo! • Tongoj! — Choo! / Ta-tuñguch! — Ki-sir-to; kōn-ech pororiet! • 6 Emet: Wareñg, Masop, Soiin/Pelkut, Aldai, Chesume, Em-gwen • 7 Ipinda: Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma (3 Fires: Changen-opir, Kipal-koñg, Kiptoito) • Orkoiyot: Kipsegun → Kopokoii → Turukat → Kimnyole → Kipchomber, Koitalel/Samwei & Kipeles/Tamasun • 12 Months: Kiptamo to Ñgotioto",
+      pronunciation: "so-pai ei-ko / ta-kwe-nya i-go / to-ngoj choo / wa-reng ma-sop / mai-na nyo-nge",
+      context: "A. C. Hollis & Sir Charles Eliot, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. i–xl, 1–328, Plates I–XLIV, Figs. 1–53, Map)",
+      audioFile: null,
+    },
+    langName: "Kalenjin",
+    langId: "kalenjin",
+  },
+  {
+    entry: {
+      english: "Sir Charles Eliot (1909, pp. xxvii–xxxiii): Lake Natron Dorobo Dialect, Rift Valley Nandi Toponyms (Morendat & Suswa) & Taveta-Collected Turkana Grammatical Sketch",
+      translation: "Lake Natron Dorobo: arko (he), tichee/ndichee (they), ar-a-mach-a ('I wanted'), ar-ke-mach-a ('I am wanted'), kuyanda (bow), pelyandee (elephant), puniandee (enemy), muyare (salt), taamuye (beard), maae (belly), kaawe (bone), Vanda (journey), vaiyaa (old man) • Morendat (< marandut 'footprint') & Suswa (< susuo 'grass') • Turkana: nye-takho/ñgi-takh, nya-takho/ñga-takh, Ayoñg/Iyoñg/nyezi, A-cham-it, ka-cham-it, ki-cham-it, ny-a-cham-it",
+      pronunciation: "ar-ko / ti-chee / ar-a-ma-cha / mo-ren-dat / su-swa / nye-ta-kho / a-cham-it",
+      context: "Sir Charles Eliot, Introduction to A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. xxvii–xxxiii)",
+      audioFile: null,
+    },
+    langName: "Turkana",
+    langId: "turkana",
+  },
+  {
+    entry: {
+      english: "A. C. Hollis & Sir Charles Eliot (1909, pp. xxxiii, 44, 50): 150-Word Kunōno (Masai Smiths) Dialect Study (4 Unique Metallurgical Terms), Uasin Gishu Orkoiyot Genealogy & 'Kambakta' Masai War-Song",
+      translation: "4 Unique Kunōno Forge Words: e-samereita (iron), o-siota (knife), en-gandiit (spear), e-wuyuwuyu (axe) (+ >100 Masai words & 12 Nandi cognates) • Masai war-song sung by Nandi circumcision novices at Labet-ap-eun: kambakta",
+      pronunciation: "e-sa-me-rei-ta / o-sio-ta / en-gan-diit / e-wu-yu-wu-yu / kam-bak-ta",
+      context: "Sir Charles Eliot & A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. xxxiii, 44, 50)",
+      audioFile: null,
+    },
+    langName: "Maasai (Maa)",
+    langId: "maasai",
+  }
+);
+
+export const HOLLIS_1909_LEXICAL_HIGHLIGHTS = [
+  { word: 'Chemñgal (sg. Chemñgalindet) / Nandi (sg. Nandiindet, pl. Nandiik)', translation: 'Original endonym Chemñgal vs. Swahili-derived name Nandi (from mnandi "cormorant", applied to raiders swooping down like cormorants)', language: 'kalenjin', page: 4 },
+  { word: 'Oriare, Matang, Ar-ap-Sirtoi, Ar-ap-Kuna, Ar-ap-Chepsiet & Kipchomber (Ar-ap-Koileke)', translation: 'The 5 Nandi warrior informants and the Kipsikīs/Lumbwa Chief Medicine Man (with his son Sonaiet / Ar-ap-Kipchomber) credited in Hollis\'s Preface', language: 'kalenjin', page: 10 },
+  { word: '6 Emet, 15 Pororiet & 17 Oret', translation: 'The 6 Counties (Wareñg, Masop, Soiin/Pelkut, Aldai, Chesume, Em-gwen), 15 Districts (Kâmelilo to Tuken), and 17 Exogamous Clans (Kipoiis to Chemur) with women\'s names, totems, and Appendix II etymologies', language: 'kalenjin', page: 4 },
+  { word: '7 Ipinda, 3 Mostinuek & Saket-ap-eito', translation: 'The 7 cyclic age-sets (Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma), 3 warrior fires (Changen-opir, Kipal-koñg, Kiptoito), and the ~7½-year handing-over ceremony', language: 'kalenjin', page: 11 },
+  { word: 'Kaita (m.) vs. Kot (f.) & 13 Teret Pot Types', translation: 'Speaker-gendered noun for "house" (men say ka/kaita, women say ko/kot) with 24 architectural parts, and 13 distinct earthenware pot types crafted by women potters', language: 'kalenjin', page: 14 },
+  { word: 'Kipsegun → Kopokoii → Turukat → Kimnyole → Kipchomber, Koitalel (Samwei) & Kipeles (Tamasun)', translation: 'Genealogy of the hereditary Nandi Orkoiyot dynasty of Uasin Gishu Masai origin (Talai clan)', language: 'kalenjin', page: 50 },
+  { word: 'Tongoj! — Choo! / Ta-tuñguch! — Ki-sir-to; kōn-ech pororiet!', translation: 'Formula opening the 76 Nandi Enigmas (Tongōchik-ap-Nandi, pp. 133–151) alongside the 57 Proverbs (Atindonik-ap-Nandi, pp. 124–132) and 18 Folk-Tales (pp. 101–123)', language: 'kalenjin', page: 133 },
+  { word: 'arko, tichee/ndichee, ar-a-mach-a, kuyanda, pelyandee • Morendat & Suswa', translation: 'Lake Natron Dorobo dialect pronouns/prefixes and Rift Valley Nandi place-names (Morendat < marandut "footprint", Suswa < susuo "grass") in Sir Charles Eliot\'s Introduction', language: 'kalenjin', page: 27 },
+  { word: 'nye-takho / ñgi-takh, nya-takho / ñga-takh, A-cham-it, ka-cham-it, ki-cham-it', translation: 'Turkana gender articles, noun plurals, and combined subject-object verb prefixes in Sir Charles Eliot\'s Taveta-collected Turkana sketch (pp. xxix–xxxiii)', language: 'turkana', page: 29 },
+  { word: 'e-samereita, o-siota, en-gandiit & e-wuyuwuyu', translation: 'The 4 unique metallurgical words (iron, knife, spear, axe) peculiar to the Kunōno (Masai Smiths) caste in Hollis\'s 150-word vocabulary (p. xxxiii)', language: 'maasai', page: 33 }
+] as const;

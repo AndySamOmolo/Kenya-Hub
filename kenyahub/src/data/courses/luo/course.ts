@@ -3062,3 +3062,90 @@ export const LUO_UNITS: CourseUnit[] = [
 ];
 
 export default LUO_COURSE;
+
+LUO_UNITS.push({
+  id: "luo-unit-johnston-1902-jaluo-set3",
+  title: "Unit 11: Sir Harry Johnston (1902) Ch. XVIII Ja-luo (Nyifwa) Ethnography & Set 3 Vocabulary (pp. 756–795, 926–935)",
+  description: "Explore Chapter XVIII Ja-luo ethnography (Chieng sun worship, Nyaluo jasper beads, Uvino smiths, Kiviri ordeal, Chief Odua's prophecy) and Set 3 vocabulary & phonetic footnotes [-11], [-12], [-13] (pp. 926–935).",
+  icon: "Sun",
+  skills: [
+    {
+      id: "luo-johnston-1902-set3-skill",
+      title: "Set 3 Ja-luo Vocabulary, Phonetic Footnotes & Chapter XVIII Ethnography",
+      icon: "BookOpen",
+      description: "Master verified Set 3 Ja-luo headwords, footnotes [-11]–[-13], and Chapter XVIII cultural terms.",
+      tips: "Johnston's three phonetic footnotes to Set 3 (pp. 928, 933, 934) explain palatal stop articulation in 1902 Ja-luo: [-11] Retc ('Fish') is pronounced 'Retch'; [-12] Ratc ('Bad') often sounds like 'Raty'; and [-13] in Aciemo ('I eat'), 'The c in Ja-luo is pronounced very like ty.'",
+      words: [
+        {
+          target: "Retc (fn. [-11]: pronounced 'Retch') • Ratc (fn. [-12]: often sounds like 'Raty') • Aciemo (fn. [-13]: c pronounced like ty)",
+          source: "Fish • Bad • I eat (with Johnston's 3 phonetic footnotes, pp. 928, 933, 934)",
+          pronunciation: "retch / raty / a-tye-mo",
+          hint: "Johnston (1902, Vol. II, Set 3, pp. 928, 933, 934)"
+        },
+        {
+          target: "Ñama ñongo • Kalīni • Nyapuñ lak • Nyaluógono • Ñutu • Ukanamī",
+          source: "Great man • Ground-nut • Tooth, molar • Tooth, canine • Woman, young • I give not",
+          pronunciation: "nga-ma ngo-ngo / ka-li-ni / nya-pung lak / nya-luo-go-no / ngu-tu / u-ka-na-mi",
+          hint: "Johnston (1902, Vol. II, Set 3, pp. 929–934)"
+        },
+        {
+          target: "Chieng • Kiketi & Nyaluo (1 cow per bead) • Dema • Yothetth (Uvino) • Jamkingo • Kiviri • Owiti / Awiti & Opio / Apio",
+          source: "Sun-god • Blue glass & Maragolia jasper beads • Wicker fish-trap • Blacksmith caste • Secret society • Boiling-gruel ordeal • Threshold & twin names",
+          pronunciation: "chieng / ki-ke-ti / nya-luo / de-ma / yo-thetth u-vi-no / ja-mki-ngo / ki-vi-ri",
+          hint: "Johnston (1902, Vol. II, Ch. XVIII, pp. 780–795)"
+        }
+      ],
+      sentences: [
+        {
+          target: "An nakel — Atugo — Watimo — Wawaci — Añeyo — Ukanamī.",
+          source: "I bring — I dance — We make — We say — I know — I give not (Johnston 1902, Set 3, pp. 933–935)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Sir Harry Johnston's Vocabulary Set 3 (The Uganda Protectorate, Vol. II, 1902, pp. 929, 932, 934), what do 'Ñama ñongo', 'Nyapuñ lak', 'Nyaluógono', and 'Ukanamī' mean in Ja-luo?",
+          correctAnswer: "'Ñama ñongo' = Great man, 'Nyapuñ lak' = Molar tooth, 'Nyaluógono' = Canine tooth, and 'Ukanamī' = I give not",
+          options: [
+            "'Ñama ñongo' = Great man, 'Nyapuñ lak' = Molar tooth, 'Nyaluógono' = Canine tooth, and 'Ukanamī' = I give not",
+            "'Ñama ñongo' = Young woman, 'Nyapuñ lak' = Ground-nut, 'Nyaluógono' = Fish, and 'Ukanamī' = I eat",
+            "'Ñama ñongo' = Our town, 'Nyapuñ lak' = Buttocks, 'Nyaluógono' = Wart-hog, and 'Ukanamī' = Plenty",
+            "'Ñama ñongo' = Blacksmith, 'Nyapuñ lak' = Fish-trap, 'Nyaluógono' = Jasper bead, and 'Ukanamī' = Sun-god"
+          ],
+          hint: "See Johnston (1902, Vol. II, Set 3, pp. 929, 932, 934)"
+        }
+      ]
+    }
+  ]
+});
+
+
+// Complete Line-by-Line Curriculum Supplement for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
+export const NORTHCOTE_1907_COURSE_EXTENSION = {
+  id: 'luo-u14-northcote-complete-audit',
+  title: 'Northcote (1907) Complete Line-by-Line Ethnographic & Legal Audit (pp. 58–66)',
+  description: 'Exhaustive line-by-line study of G. A. S. Northcote\'s 1907 JRAI monograph (Vol. 37, pp. 58–66): Wadilai/Acholi/Aluri/Dinka kinship, 1883 cattle plague diet & dowry shift, 3-goat tassel fine, 3-rupee hut tax, full gala dress, 3 ft 6 in. × 6 ft buffalo shields, semi-feudal council & passive secession, individual shamba plots, 2 ft raised × 5 ft × 3 ft wicker granaries, Case Study A–F succession, sun-god wedding offering & first dinner rite, 6-day vs. 3-day wailing & recumbent burial, 3 court/medical cases, rain-maker\'s reed ritual & Indian shopkeeper letter, 5 fishing methods, 8-stringed harp, grandfather litigation, and 9 Kisumu occupations.',
+  lessons: [
+    {
+      id: 'luo-u14-l1',
+      title: 'Pages 58–59: Origins, Physique, 3-Goat Tassel Fine, 3-Rupee Hut Tax & Full Gala Dress',
+      summary: 'Dinka, Aluri, and Acholi kinship near Wadilai; muscular vegetable-diet physique vs. pre-1883 animal-food Masai/Nandi/Lumbwa; 3-goat tassel fine; 6–8 in. waist cloth; 6–10 iron wire coils & 3-rupee hut tax; full gala dress with broad-bean pod knee/ankle bells & wildebeest tail; 3 ft 6 in. × 6 ft buffalo-hide shield & mourning hair tuft.'
+    },
+    {
+      id: 'luo-u14-l2',
+      title: 'Pages 59–61: Semi-Feudal Polity, Shamba & Askari Law, Wicker Granaries & Succession Case A–F',
+      summary: 'Chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba crop ownership and askari retainers; circular village with 2 ft raised × 5 ft × 3 ft wicker granaries and 4 hut types; exogamy, sororal polygyny, step-mother marriage, and Chieftainship Case Study (A, B, C, D, E, F).'
+    },
+    {
+      id: 'luo-u14-l3',
+      title: 'Pages 61–63: Sun-God Wedding Offering, First Dinner Rite, 1883 Dowry Shift, Naming & Recumbent Burial',
+      summary: 'Sun-god wedding offering (meat, chicken, mtama millet, beer) and bride\'s first dinner rite; pre-1883 (20 cattle) vs. 1907 (7 cattle, or 1 bull + 20 goats, or 1 heifer + 1 bull minimum) dowry; onyango/oching/odiambo/otieno birth names, ghost names, and obele/oliech/obonyo nicknames; gourd-rattling and tobacco-smoke deathbed rite, bull-tail charging, mock spirit battle, 6-day vs. 3-day wailing, and recumbent in-hut burial (correcting Sir C. Eliot).'
+    },
+    {
+      id: 'luo-u14-l4',
+      title: 'Pages 63–66: Sun-Prayer Quote, 3 Court/Medical Cases, Rain-Maker Summons, 5 Fishing Methods & 9 Kisumu Occupations',
+      summary: 'Verbatim prayer quote ("It does not matter how much you pray, you fall sick and die just the same"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, Hut-Roof open-air cure assault trial, and Lime-Quarry fatal surgical diagnosis; rain-maker\'s sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; cattle bleeding for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; grandfather litigation; and 9 modern occupations + Kisumu Jaluo sergeant instructor.'
+    }
+  ]
+} as const;
+LUO_UNITS.push(NORTHCOTE_1907_COURSE_EXTENSION as any);

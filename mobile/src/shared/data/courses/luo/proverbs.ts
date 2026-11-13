@@ -174,3 +174,20 @@ export const luoProverbs: ProverbEntry[] = [
     category: "family"
   }
 ];
+
+luoProverbs.push(
+  {
+    id: 22,
+    luo: '"It does not matter how much you pray, you fall sick and die just the same." — Chieng\' (Sun) & Dwe (Moon) Appeasement (Northcote 1907, p. 63).',
+    english: 'Verbatim Jaluo religious proverb/saying recorded by G. A. S. Northcote (JRAI Vol. 37, 1907, p. 63): offerings of meat, part of a chicken, mtama (millet), and native beer at daily milestones and wedding feasts are given to appease the sun-god (regarded as rarely beneficent, often malignant, and usually apathetic) rather than to obtain positive benefits.',
+    meaning: 'Explains the pragmatic, non-petitionary theology of pre-colonial Jaluo sun and moon offerings documented by G. A. S. Northcote (1907, pp. 61–63).',
+    category: 'truth'
+  },
+  {
+    id: 23,
+    luo: 'Chik mar Shamba gi Askari • Loch Ruoth (A, B, C, D, E, F) • Faini mar Diel 3 kuom Chieno • Yiko e Ot (Northcote 1907, pp. 58–63).',
+    english: 'Individual Shamba crop ownership & Askari harvest law (a son sells only grain he grew himself; an askari reaping what another sowed is a thief; if A\'s cattle wander into B\'s shamba in the same village, B claims compensation) • Chieftainship priority of the first wife (D, younger son of first wife A after daughters B & C, succeeds ahead of older half-brother F born to second wife E) • 3-goat fine paid to the husband for touching a married woman\'s grass tassel • 6-day (chief) vs. 3-day (commoner) sunrise/sunset wailing & recumbent burial inside the occupied hut (correcting Sir C. Eliot).',
+    meaning: 'Synthesizes the customary legal, agricultural, succession, and funerary statutes recorded line by line in G. A. S. Northcote\'s "The Nilotic Kavirondo" (JRAI Vol. 37, 1907, pp. 58–63).',
+    category: 'wisdom'
+  }
+);

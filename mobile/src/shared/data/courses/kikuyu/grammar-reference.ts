@@ -380,3 +380,24 @@ export const KIKUYU_GRAMMAR_SECTIONS: KikuyuGrammarSection[] = [
     ]
   }
 ];
+
+KIKUYU_GRAMMAR_SECTIONS.push({
+  id: "kikuyu-johnston-1902-uganda-protectorate-set9-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. 885–902, 993–1001): Chapter XX Kikuyu Phonology (P/F → H Shift, Fisi → Hiti), Kikamba Pa- vs. Kikuyu Ha- (Class 16), Orthography (p. 901) & Complete Vocabulary Set 9 (Ikuyu, pp. 993–1001)",
+  summary: "Complete line-by-line documentation of Ikuyu (Gĩkũyũ) in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 885–902, 993–1001), including the systematic p/f → h sound law (Fisi → Hiti), Class 16 Ha- vs. Kikamba Pa-, and all Set 9 Ikuyu vocabulary, numerals, pronouns, and verbal phrases on pp. 993–1001.",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, Ch. XX pp. 885–902, 993–1001):
+1. **Chapter XX Comparative Bantu Analysis of Kikuyu (*Ikuyu*, pp. 889–902)**:
+   - **Systematic Labial Lenition (*p / f → h*, p. 900)**: Johnston highlights Kikuyu's regular replacement of Proto-Bantu and coastal *p* and *f* by the aspirate **h**, exemplified by Swahili *Fisi* ('hyena') → Kikuyu **Hiti**, *piga / figa* ('cooking stone') → **Ihiga**, and *pa-* (Class 16 locative) → **Ha-** (whereas neighbouring Kikamba retains archaic **Pa-**, p. 892).
+   - **Retention of Archaic *-ñombe* ('Cattle', p. 894)**: Notes that Kikuyu (**Ñombe / Ng'ombe**), Igizii (**Engombe**), and Kavirondo (**Ingombe**) retain the original East African Bantu root *-ñombe* rather than the Interlacustrine innovation *-nte* (*Ente*).
+2. **Complete Vocabulary Set 9 — *Ikuyu* (Kikuyu) on pp. 993–1001**:
+   - **People, Kinship & Body Parts (pp. 993–998)**: *Man/Person* **Mundu (pl. Andu)**, *Man/Husband* **Muthuri**, *Woman/Wife* **Muka (pl. Aka) / Mutumia**, *Father* **Baba / Thoguo / Ithe**, *Mother* **Maito / Nyukwa / Nyina**, *Child* **Mwana (pl. Ciana)**, *Chief* **Muthamaki / Munene**, *Doctor (medicine-man)* **Mundu mugu**, *God* **Ngai**, *Head* **Mutwe (pl. Mitwe)**, *Eye* **Riitho (pl. Maitho)**, *Ear* **Kutu (pl. Matu)**, *Nose* **Iniuru**, *Mouth* **Kanua**, *Tooth* **Igego (pl. Magego)**, *Tongue* **Rurimi (pl. Ndimi)**, *Arm* **Guoko (pl. Moko)**, *Leg* **Kuguru (pl. Maguru)**, *Blood* **Thakame**, *Bone* **Ihindi (pl. Mahindi)**.
+   - **Nature, Animals & Material Culture (pp. 993–998)**: *Sun* **Riua**, *Moon* **Mweri**, *Star* **Njata**, *Rain* **Mbura**, *Water* **Mai**, *Fire* **Mwaki**, *Stone* **Ihiga (pl. Mahiga)**, *Mountain* **Kirima (pl. Irima)**, *Forest* **Mutitu**, *Tree* **Muti (pl. Miti)**, *House* **Nyumba**, *Spear* **Itimu (pl. Matimu)**, *Shield* **Ngo**, *Bow* **Uta**, *Arrow* **Mugwi (pl. Migwi)**, *Sword* **Ruhiu**, *Cow* **Ng'ombe**, *Goat* **Mburi**, *Sheep* **Ng'ondu**, *Dog* **Ngui**, *Elephant* **Njogu**, *Buffalo* **Mbogo**, *Lion* **Muruthi / Ngatia**, *Leopard* **Ngari**, *Hyena* **Hiti**, *Hippopotamus* **Nguo**, *Rhinoceros* **Huria**, *Zebra* **Njagi**, *Snake* **Njoka**.
+   - **Adjectives, Numerals 1–1,000, Pronouns & Sentences (pp. 998–1001)**:
+     - **Adjectives (p. 998)**: *Good* **-ega (mwega)**, *Bad* **-uru (muru)**, *Great* **-nene**, *Little* **-nini**, *White* **-eru**, *Black* **-iru**, *Red* **-tune**, *All* **-othe (othe, mothe)**.
+     - **Numerals (pp. 998–999)**: *1* **-mwe (imwe)**, *2* **-iri (igiri)**, *3* **-thatu (ithatu)**, *4* **-inya (inya)**, *5* **-thano (ithano)**, *6* **-thanthatu (ithanthatu)**, *7* **muanja**, *8* **inyanya**, *9* **kenda**, *10* **ikumi**, *11* **ikumi na imwe**, *20* **mirongo iiri**, *30* **mirongo ithatu**, *40* **mirongo inya**, *50* **mirongo ithano**, *100* **igana**, *1,000* **ngiri**.
+     - **Pronouns & Sentences (pp. 999–1001)**: *I* **Nie**, *Thou* **We (Wee)**, *He* **We (Uyu)**, *We* **Ithui**, *Ye* **Inyui**, *They* **Ao**; *Possessives* **-akwa, -aku, -ake, -itu, -anyu, -ao**; *This man* **Mundu uyu**, *That man* **Mundu uria**, *This tree* **Muti uyu**, *My house* **Nyumba yakwa**, *Our town* **Mucii witu**, *No, not* **Aca / Ti**.`,
+  examples: [
+    { kikuyu: "Fisi → Hiti (hyena) • Figa → Ihiga (stone) • Pa- → Ha- (Class 16 locative, vs. Kikamba Pa-) • Ñombe (cattle, vs. Interlacustrine Ente)", english: "Johnston's (1902, pp. 892, 894, 900) phonological and morphological laws for Ikuyu (Gĩkũyũ)", explanation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, Ch. XX, pp. 892–900)" },
+    { kikuyu: "-mwe, -iri, -thatu, -inya, -thano, -thanthatu, muanja, inyanya, kenda, ikumi, mirongo iiri, igana, ngiri", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 100, 1,000 in Set 9 Ikuyu", explanation: "Vocabulary Set 9 (Ikuyu), Johnston (1902, pp. 998–999)" }
+  ]
+});

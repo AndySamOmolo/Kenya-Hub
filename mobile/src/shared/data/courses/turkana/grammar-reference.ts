@@ -252,3 +252,60 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
     ]
   }
 ];
+
+TURKANA_GRAMMAR_SECTIONS.push({
+  id: "turkana-johnston-1902-uganda-protectorate-complete",
+  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. xviii–xix, 839–852, 885–889, 903–913): Caucasian Admixture Table (p. 840), Figs. 467–471, Chapter XIX Turkana Ethnography & Complete Vocabulary Set 1 (pp. 903–913)",
+  summary: "Complete line-by-line documentation of all Turkana material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902): Illustrations 467–471, the p. 840 Masai-Turkana-Nandi Caucasian admixture footnote table, Chapter XIX Turkana ethnography (pp. 839–852), Chapter XX Nilotic prefix/negative classification (pp. 885–889), and Vocabulary Set 1 (Turkana, Sūk & Elgumi, pp. 903–913).",
+  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. xviii–xix, 839–852, 885–889, 903–913):
+1. **Chapter XIX Turkana Ethnography, p. 840 Admixture Table & Illustrations 467–471 (pp. xviii–xix, 839–852)**:
+   - **Comparative Caucasian Admixture Footnote Table (p. 840 fn. 1)**: Johnston ranks the relative proportion of Hamitic ("Caucasian") blood across the Rift Valley and Lake Rudolf peoples as: **Somali & Galla = 1/2 to 2/3**, **Masai & Latuka = 1/4**, **Nandi, Kamásia &Dorobo = 1/6 to 1/8**, **Sūk = 1/8**, and **Turkana, Karamojo & Elgumi = 1/10 to 1/16**.
+   - **Illustrations 467–471 (pp. xviii–xix, 841–845)**: *467. Young Turkana Man*, *468. Turkana Elder showing Bag of Felted Hair*, *469. Turkana Men*, *470. Turkana Warriors*, *471. Turkana Warrior with Hide Shield and Chignon*.
+   - **Stature, Hair-Bag Chignon, Circular Wrist-Knife & Ecology (pp. 840–851)**: Contrasts the giant stature of Turkana men along the Turkwel and Lake Rudolf (**frequently 6 ft to 6 ft 6 in.**) with shorter pygmoid hill elements; men weave ancestral and personal hair with grey clay into a **felted bag chignon reaching down the back to the waist** (used as a pocket for snuff, fire-sticks, and charms, stocked with ostrich plumes, Fig. 468); warriors wear the **circular iron wrist-knife** (sheathed in leather on the march) and carry long narrow hide shields (Fig. 471); women wear V-shaped leather aprons beaded with ostrich-eggshell discs; dry-season diet includes pounded **Hyphæne thebaica** (doum-palm) gingerbread-like pericarp meal, camels, cattle, donkeys, and Lake Rudolf fish.
+2. **Chapter XX Grammatical Classification & Vocabulary Set 1: Turkana (pp. 885–889, 903–913)**:
+   - **Grammatical Markers (pp. 887–888)**: Masculine singular prefix **E- / Ek-** (pl. **Ñgi- / Ñgik-**), Feminine singular **A- / Ak-** (pl. **Ñga- / Ñgak-**), Neuter/Diminutive **I-** (pl. **Ñgi-**); negative verbal prefix **Nya- / Nye-** (*Nyayeni ao* 'I know not', *Nyelot* 'I go not'); and stopped final *-k / -t* in plurals.
+   - **Core Lexicon, Numerals & Verbal Sentences (pp. 904–913)**: *Man* **Ekile (pl. Ñgikiliok) / Etuñanan (pl. Ñgituña)**, *Woman* **Aberu (pl. Ñgaberu)**, *Child* **Ikoku (pl. Ñgide)**, *Father* **Papa**, *Mother* **Itō**, *God / Sky* **Akuj**, *Sun* **Akoloñ**, *Moon* **Elap**, *Rain* **Akiru**, *Water* **Akipi**, *Fire* **Akima**, *Cow* **Aite (pl. Ñgatuk)**, *Ox* **Emoñ**, *Camel* **Ekhal**, *Elephant* **Etom**, *Lion* **Eñatuny**, *One* **Epei**, *Two* **Ari**, *Three* **Uni**, *Four* **Omwon**, *Five* **Akhan**, *Ten* **Tomon**, *Twenty* **Tomon ari**, *Hundred* **Tomon tomon (Pokol)**; *I* **Ayoñ (Ao)**, *Thou* **Iyoñ**, *He* **Ñges**, *We* **Suwa**, *Ye* **Yes**, *They* **Kes**; *I know* **Ayeni** vs. *I know not* **Nyayeni ao**, *You weep* **Kalōme**, *They laugh* **Ekiyō**.`,
+  examples: [
+    { turkana: "Ekile (pl. Ñgikiliok) • Aberu (pl. Ñgaberu) • Ikoku (pl. Ñgide) • Aite (pl. Ñgatuk) • Akuj • Akoloñ • Elap • Akipi • Akima", english: "Man (pl. Men) • Woman (pl. Women) • Child (pl. Children) • Cow (pl. Cattle) • God/Sky • Sun • Moon • Water • Fire", explanation: "Vocabulary Set 1 (Turkana), Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, pp. 904–908)" },
+    { turkana: "Ayeni vs. Nyayeni ao • Kalōme • Ekiyō • Epei, Ari, Uni, Omwon, Akhan, Tomon", english: "I know vs. I know not • You weep • They laugh • 1, 2, 3, 4, 5, 10", explanation: "Vocabulary Set 1 (Turkana), Johnston (1902, pp. 909–912)" }
+  ]
+});
+
+TURKANA_GRAMMAR_SECTIONS.push({
+  id: "turkana-eliot-hollis-1909-taveta-grammatical-sketch",
+  title: "Sir Charles Eliot (1909, Introduction to Hollis's 'The Nandi', pp. xxix–xxxiii): Complete Taveta-Collected Turkana Grammatical Sketch (Articles, Nouns, Numerals 1–100, Pronouns, Demonstratives & Verb Conjugations)",
+  summary: "Complete line-by-line synthesis of the Turkana grammatical sketch collected by a Mission-educated native of Taveta and published by Sir Charles Eliot in A. C. Hollis's The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. xxix–xxxiii).",
+  content: `From Sir Charles Eliot, K.C.M.G. (*Introduction* to A. C. Hollis, *The Nandi: Their Language and Folk-Lore*, Oxford: At the Clarendon Press, 1909, pp. xxix–xxxiii — collected by a native of Taveta educated at the Mission Station who travelled in the Lake Rudolf region):
+1. **Gender Prefixes / Articles & Noun Plurals (pp. xxix–xxx)**:
+   - **Masculine Singular**: **e-** or **nye-** (before vowels **ek-**); **Plural**: **ñgi-** or **i-**.
+   - **Feminine Singular**: **a-** or **nya-**; **Plural**: **ñga-** or **a-**.
+   - **Noun Plural Formations & Gender Polarity (p. xxx)**:
+     - *nye-takho* ("he-calf") → pl. **ñgi-takh**; *nya-takho* ("she-calf") → pl. **ñga-takh**.
+     - *nye-kile* ("man") → pl. **ñgiliokh**; *nya-khaal* ("camel") → pl. **ñgaal**.
+     - *nye-kileñg* ("knife", masc. sg.) → pl. **ñgilenya** (fem. pl.); *nye-kasgout* ("elder", masc. sg.) → pl. **ñgasgou** (fem. pl.).
+     - Verbal agent noun: *nye-kalepan* ("milker") → pl. **ñgi-kalepakh**.
+   - **Genitive & Locative Preposition (p. xxx)**: Both the genitive ("of") and the general locative preposition ("at, in, to") are expressed by **a**.
+2. **Cardinal Numerals 1–20 & 100 (p. xxx)**:
+   - **1**: *ēpei* (masc.) / *āpei* (fem.) • **2**: *are* • **3**: *uni* • **4**: *omwon* • **5**: *akhan* or *ñgan*
+   - **6**: *akhan ka pei* (5 + 1) • **7**: *akhan ka are* (5 + 2) • **8**: *akhan ka uni* (5 + 3) • **9**: *akhan ka omwon* (5 + 4) • **10**: *tomon*
+   - **11**: *tomon ka pei* • **20**: *ñgi tomon are* • **100**: *pokol* (borrowed from or shared with Somali/Galla/Nandi).
+3. **Personal, Possessive, Demonstrative & Interrogative Pronouns (pp. xxx–xxxi)**:
+   - **Independent Personal Pronouns**: 1s **Ayoñg** ("I"), 2s **Iyoñg** ("thou"), 3s **nyezi** ("he/she/it"); 1p **sua** or **thua** ("we"), 2p **Ezi** ("ye"), 3p **Ikezi** ("they").
+   - **Possessive Pronouns**: 1s **khañg / kañg** ("my"), 2s **khon / kon** ("thy"), 3s **keny / keñg** ("his/her"); 1p **khosi / iyokh** ("our"), 2p **kus** ("your"), 3p **kech** ("their").
+   - **Demonstrative Pronouns**:
+     - *This* (near): masc. **lo**, fem. **na**, neut. **ne**; *These* (pl.): masc. **lu**, fem. **nu**, neut. **ne**.
+     - *That* (distant): masc. **ye**, fem. **ya**, neut. **inne**; *Those* (pl.): masc. **ñgul**, fem. **ñgun**, neut. **nege**.
+   - **Interrogatives**: **ñgae?** ("who?"), **ani?** ("which?" sg.), **alu?** (masc. pl.) / **anu?** (fem. pl.).
+4. **Verbal Conjugation, Combined Subject-Object Prefixes, Tenses & Derivative Affixes (pp. xxxi–xxxiii)**:
+   - **Present Continuous (*-it*)**: **A-cham-it** ("I love"), **i-cham-it** ("thou lovest"), **e-cham-it** ("he loves"); pl. **ki-cham-it** ("we love"), **i-cham-it-o** ("ye love"), **e-cham-it-o** ("they love").
+   - **Combined Subject + Object Prefixes (like Masai *aa-* / *ki-*, p. xxxi)**: **ka-cham-it** ("I love thee"), **ki-cham-it** ("thou lovest me").
+   - **Indefinite Present (*-i*)**: **a-cham-i** ("I love").
+   - **Past & Narrative Tenses (pp. xxxi–xxxii)**: **a-k-inok** ("I lit"), **a-yeñg** ("I skinned"), **K-irimo** ("he went round").
+   - **Imperative, Conditional, Negative & Passive (p. xxxii)**: Imperative **ta-ma!** ("say!"); Conditional **ani-a-nyam-i** ("if I eat"); Negative prefix **ny-** (**ny-a-cham-it** "I do not love"); Passive suffix **-ae** (**ka-cham-it-ae** "I am loved").
+   - **Derivative Verbal Affixes (pp. xxxii–xxxiii)**: Motion hither **-un** (cf. Masai/Nandi *-u*), dative/applied **-kino** (cf. Masai *-aki*, Nandi *-chi*), and causative prefix **ita-** (cf. Masai *ita-*).`,
+  examples: [
+    { turkana: "nye-takho / ñgi-takh (m.) • nya-takho / ñga-takh (f.) • nye-kile / ñgiliokh • nya-khaal / ñgaal • nye-kileñg / ñgilenya • nye-kasgout / ñgasgou • nye-kalepan / ñgi-kalepakh", english: "he-calf / calves • she-calf / calves • man / men • camel / camels • knife / knives • elder / elders • milker / milkers", explanation: "Sir Charles Eliot, Introduction to Hollis (1909, p. xxx)" },
+    { turkana: "Ayoñg, Iyoñg, nyezi; sua (thua), Ezi, Ikezi • khañg/kañg, khon/kon, keny/keñg; khosi/iyokh, kus, kech • lo/na/ne (pl. lu/nu/ne), ye/ya/inne (pl. ñgul/ñgun/nege)", english: "Personal pronouns • Possessive pronouns • Near & distant demonstratives", explanation: "Sir Charles Eliot, Introduction to Hollis (1909, pp. xxx–xxxi)" },
+    { turkana: "A-cham-it • ka-cham-it ('I love thee') • ki-cham-it ('thou lovest me') • ny-a-cham-it • ka-cham-it-ae • a-k-inok • a-yeñg • K-irimo • ta-ma! • ani-a-nyam-i • -un, -kino, ita-", english: "Complete verbal conjugation and derivative affixes in the Taveta-collected Turkana sketch", explanation: "Sir Charles Eliot, Introduction to Hollis (1909, pp. xxxi–xxxiii)" }
+  ]
+});
