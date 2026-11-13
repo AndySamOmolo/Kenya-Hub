@@ -49,7 +49,7 @@ function isPillMarkedActive(props: any, goldColor?: string): boolean {
 // Gentle 16-step feather alpha progression for edge fade without harsh vertical lines
 const FADE_STEPS = [
   0.0, 0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35,
-  0.44, 0.53, 0.62, 0.71, 0.79, 0.86, 0.92, 0.96,
+  0.44, 0.53, 0.62, 0.71, 0.79, 0.85, 0.9, 0.94,
 ];
 
 function EdgePocketShadow({
@@ -97,10 +97,10 @@ export interface ExpandablePillRowProps {
 
 /**
  * Unified ExpandablePillRow matching the web ExpandablePillRow component:
- * - Single-row horizontal scroll bar when collapsed (gap: 8, paddingVertical: 4)
+ * - Single-row horizontal scroll bar when collapsed with full vertical breathing room
  * - Automatically scrolls the active pill into the horizontal center of the viewport
  * - Subtle surface-matched edge dissolve when overflowing horizontally
- * - Centered 32x32 circular chevron toggle button on the right (expands into a wrapped grid)
+ * - Centered circular chevron toggle button on the right (expands into a wrapped grid)
  */
 export function ExpandablePillRow({
   children,
@@ -178,7 +178,6 @@ export function ExpandablePillRow({
     [updateScrollState]
   );
 
-  // Flatten root pill children and find active index for auto-centering (matches web ExpandablePillRow)
   let runningPillIdx = 0;
   let detectedActiveIdx = -1;
 
@@ -211,8 +210,8 @@ export function ExpandablePillRow({
         const flatPillStyle = StyleSheet.flatten(props.style) || {};
         const pv =
           typeof flatPillStyle.paddingVertical === "number"
-            ? Math.max(7, Math.ceil(flatPillStyle.paddingVertical))
-            : 7;
+            ? Math.max(8, Math.ceil(flatPillStyle.paddingVertical))
+            : 8;
         const ph =
           typeof flatPillStyle.paddingHorizontal === "number"
             ? Math.max(13, Math.ceil(flatPillStyle.paddingHorizontal))
@@ -237,7 +236,7 @@ export function ExpandablePillRow({
                 justifyContent: "center",
                 paddingVertical: pv,
                 paddingHorizontal: ph,
-                minHeight: Math.max(flatPillStyle.minHeight || 0, 34),
+                minHeight: Math.max(flatPillStyle.minHeight || 0, 36),
                 borderRadius: isExpanded
                   ? 16
                   : flatPillStyle.borderRadius ?? 999,
@@ -254,7 +253,6 @@ export function ExpandablePillRow({
         );
       }
 
-      // Normalize nested Text elements so descenders (g, y, p, q) never clip on Android
       const flatChildStyle = StyleSheet.flatten(props.style) || {};
       const isTextNode =
         child.type === Text ||
@@ -269,9 +267,9 @@ export function ExpandablePillRow({
             : 12;
         const lineHeight =
           typeof flatChildStyle.lineHeight === "number" &&
-          flatChildStyle.lineHeight >= fontSize + 5
+          flatChildStyle.lineHeight >= fontSize + 6
             ? flatChildStyle.lineHeight
-            : Math.max(fontSize + 6, Math.ceil(fontSize * 1.45));
+            : Math.max(fontSize + 7, Math.ceil(fontSize * 1.5));
 
         return React.cloneElement(
           child as React.ReactElement<any>,
@@ -284,8 +282,7 @@ export function ExpandablePillRow({
               {
                 fontSize,
                 lineHeight,
-                paddingBottom: 1,
-                includeFontPadding: false,
+                includeFontPadding: true,
                 textAlignVertical: "center",
               },
               isExpanded ? { flexShrink: 1 } : null,
@@ -358,20 +355,21 @@ export function ExpandablePillRow({
           <ScrollView
             ref={scrollViewRef}
             horizontal
+            overScrollMode="never"
             showsHorizontalScrollIndicator={false}
             scrollEventThrottle={16}
             onLayout={handleLayout}
             onContentSizeChange={handleContentSizeChange}
             onScroll={handleScroll}
             contentContainerStyle={[
+              innerContentStyle,
               {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 8,
-                paddingVertical: 4,
+                paddingVertical: 5,
                 paddingRight: canScrollRight ? 12 : 2,
               },
-              innerContentStyle,
             ]}
           >
             {renderedPills}
@@ -408,7 +406,7 @@ export function ExpandablePillRow({
               flexWrap: "wrap",
               alignItems: "center",
               gap: 8,
-              paddingVertical: 4,
+              paddingVertical: 5,
             },
           ]}
         >
@@ -419,21 +417,21 @@ export function ExpandablePillRow({
           <ScrollView
             ref={scrollViewRef}
             horizontal
+            overScrollMode="never"
             showsHorizontalScrollIndicator={false}
             scrollEventThrottle={16}
             onLayout={handleLayout}
             onContentSizeChange={handleContentSizeChange}
             onScroll={handleScroll}
-            style={{ flex: 1, minWidth: 0 }}
             contentContainerStyle={[
+              innerContentStyle,
               {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 8,
-                paddingVertical: 4,
-                paddingRight: canScrollRight ? 12 : 2,
+                paddingVertical: 5,
+                paddingRight: canScrollRight ? 14 : 2,
               },
-              innerContentStyle,
             ]}
           >
             {renderedPills}
@@ -470,11 +468,6 @@ export function ExpandablePillRow({
           name={expanded ? "chevron-up" : "chevron-down"}
           size={15}
           color={theme.gold}
-          style={{
-            includeFontPadding: false,
-            textAlign: "center",
-            textAlignVertical: "center",
-          }}
         />
       </Pressable>
     </View>
@@ -488,19 +481,21 @@ const rowStyles = StyleSheet.create({
     gap: 8,
     minWidth: 0,
     maxWidth: "100%",
+    minHeight: 46,
   },
   viewportWrap: {
     flex: 1,
     minWidth: 0,
+    flexDirection: "row",
+    alignItems: "center",
     position: "relative",
     overflow: "hidden",
-    justifyContent: "center",
   },
   edgeShadowContainer: {
     position: "absolute",
     top: 0,
     bottom: 0,
-    width: 16,
+    width: 14,
     zIndex: 10,
   },
   edgeShadowLeft: {
@@ -516,9 +511,9 @@ const rowStyles = StyleSheet.create({
     height: "100%",
   },
   actionBtn: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",

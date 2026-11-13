@@ -655,7 +655,7 @@ export default function KenyanTranslatorPage() {
               <button
                 key={mode.id}
                 onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3.5 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -672,8 +672,8 @@ export default function KenyanTranslatorPage() {
         {/* ═══════════════════════════════════════ */}
         {viewMode === "translate" && (
           <>
-            {/* Language Selector */}
-            <div className="bg-bg-card border border-border rounded-xl p-3.5 sm:p-5">
+            {/* Language Selector & Search Controls (No Outer Box Container) */}
+            <div className="space-y-3">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                 <div className="w-full sm:flex-1 min-w-0">
                   <label className="block text-[0.6rem] uppercase tracking-wider text-text-muted mb-1 font-medium">From (Source Language)</label>
@@ -978,7 +978,7 @@ export default function KenyanTranslatorPage() {
                           key={cat.id}
                           onClick={() => { setActiveCategory(active ? null : cat.id); }}
                           disabled={!hasEntries}
-                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1 text-xs font-medium border transition-all ${
+                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-medium border transition-all cursor-pointer ${
                             active
                               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                               : hasEntries

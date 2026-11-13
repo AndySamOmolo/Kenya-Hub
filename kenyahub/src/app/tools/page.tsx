@@ -310,8 +310,8 @@ export default function ToolsHubPage() {
         </div>
       )}
 
-      {/* Unified Filter Header Card (Search, Category Pills & Single-Line Sort Bar) */}
-      <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 mb-6 shadow-xs space-y-3.5">
+      {/* Search, Category Pills & Single-Line Sort Bar */}
+      <div className="mb-6 space-y-3">
         <SearchInput
           type="text"
           placeholder="Search tools (PAYE, M-Pesa, KRA)..."
@@ -376,7 +376,7 @@ export default function ToolsHubPage() {
         </ExpandablePillRow>
 
         {/* Single-Line Sort By Pill Bar */}
-        <div className="flex items-center gap-2 pt-1.5 border-t border-border/50 flex-nowrap overflow-hidden">
+        <div className="flex items-center gap-2 pt-0.5 flex-nowrap overflow-hidden">
           <span className="text-[0.7rem] font-bold uppercase tracking-wider text-text-muted shrink-0 whitespace-nowrap">
             Sort By
           </span>

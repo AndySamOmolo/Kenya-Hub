@@ -164,7 +164,7 @@ export default function LearnPage() {
     <ToolShell tool={LEARN_TOOL} hideSource>
       <div className="mx-auto max-w-4xl px-1 sm:px-4 pt-4 pb-10 space-y-6">
         {/* ── Flagship Learner Dashboard & Quick Translator Banner ── */}
-        <div className="rounded-2xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-4 sm:p-6 space-y-4">
+        <div className="space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold mb-2">
@@ -200,7 +200,7 @@ export default function LearnPage() {
           </div>
 
           {/* 3-Column Learner Summary & Daily Word Spotlight */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 border-t border-border/60">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             <div className="grid grid-cols-3 gap-2 md:col-span-1">
               <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2.5 text-center">
                 <div className="text-base sm:text-lg font-bold text-gold flex items-center justify-center gap-1">
@@ -293,7 +293,7 @@ export default function LearnPage() {
         ) : (
           <>
             {/* Search & Family Filter Controls */}
-            <div className="bg-bg-card border border-border rounded-2xl p-4 space-y-3">
+            <div className="space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div className="flex-1">
                   <SearchInput
@@ -330,7 +330,7 @@ export default function LearnPage() {
                       key={fam}
                       type="button"
                       onClick={() => setFamilyFilter(fam)}
-                      className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all cursor-pointer ${
+                      className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
                         active
                           ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"

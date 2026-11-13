@@ -323,7 +323,8 @@ const stripeStyles = StyleSheet.create({
 
 const appBarStyles = StyleSheet.create({
   container: {
-    height: 52,
+    minHeight: 56,
+    paddingVertical: 6,
     paddingHorizontal: 14,
     flexDirection: "row",
     alignItems: "center",
@@ -348,14 +349,14 @@ const appBarStyles = StyleSheet.create({
   },
   title: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 15.5,
-    lineHeight: 19,
+    fontSize: 16,
+    lineHeight: 22,
     letterSpacing: -0.2,
   },
   subtitle: {
     fontFamily: "Inter_500Medium",
-    fontSize: 10.5,
-    lineHeight: 13,
+    fontSize: 11,
+    lineHeight: 16,
     marginTop: 1,
   },
   actionsRow: {

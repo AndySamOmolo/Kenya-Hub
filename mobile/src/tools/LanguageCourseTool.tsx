@@ -1574,16 +1574,7 @@ export default function LanguageCourseTool({
     return (
       <View style={styles.container}>
         {/* Learner Summary & Welcome Banner */}
-        <View
-          style={{
-            backgroundColor: colors.surfaceContainerLow,
-            borderColor: `${colors.gold}55`,
-            borderWidth: 1,
-            borderRadius: 20,
-            padding: 16,
-            gap: 12,
-          }}
-        >
+        <View style={{ gap: 12 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
             <View
               style={{
@@ -1707,17 +1698,8 @@ export default function LanguageCourseTool({
           </View>
         </View>
 
-        {/* Search & Language Family Filter Card */}
-        <View
-          style={{
-            backgroundColor: colors.surfaceContainerLow,
-            borderColor: colors.outlineVariant,
-            borderWidth: 1,
-            borderRadius: 18,
-            padding: 13,
-            gap: 10,
-          }}
-        >
+        {/* Search & Language Family Filter Controls */}
+        <View style={{ gap: 10 }}>
           <View
             style={{
               flexDirection: 'row',
@@ -1754,7 +1736,7 @@ export default function LanguageCourseTool({
           </View>
 
           <ExpandablePillRow
-            fadeColor={colors.surfaceContainerLow}
+            fadeColor={colors.bgPrimary}
             contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
           >
             {menuFamilies.map((fam) => {

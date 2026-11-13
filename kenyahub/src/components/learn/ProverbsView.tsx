@@ -308,7 +308,7 @@ export default function ProverbsView({
         </ExpandablePillRow>
       )}
 
-      <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 space-y-3.5">
+      <div className="space-y-3.5">
         <div>
           <h2 className="text-base sm:text-lg font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)]">
             {activeLang === "kikuyu"
