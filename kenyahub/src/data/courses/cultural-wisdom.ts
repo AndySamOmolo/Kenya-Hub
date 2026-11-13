@@ -60785,7 +60785,7 @@ BORANA_UNITS.push({
 // (London: Hutchinson & Co., Paternoster Row, 1902, pp. i–xx, 471–1018)
 // ============================================================
 
-const JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS = [
+const JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS: ProverbItem[] = [
   {
     id: "luhya-johnston-1902-bantu-kavirondo-masaba-ethnography-cw",
     languageId: "luhya",
@@ -60836,7 +60836,7 @@ const JOHNSTON_1902_UGANDA_PROTECTORATE_PROVERBS = [
     languageName: "Pokot (Pökoot)",
     indigenous: "Ane aca karām • Ciēbē • Ciebī, Cep • Kiruokin • Sūk 8-Inch 3-Legged Stool (Fig. 474), 4-Pointed Concave Shield (Fig. 475) & Musical Score (p. 851)",
     literalTranslation: "I am good • Young woman • Female child • Chief • Sūk material culture, Dr. Shrubsall's 10 Sūk craniometric tables (Nos. 59–68), and transcribed Sūk vocal melody (Sir Harry Johnston, 1902, pp. 492–507, 839–852, 903–912).",
-    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Figs. 472–477, Shrubsall Tables A–F Nos. 59–68 pp. 492–507, Ch. XIX pp. 839–852 & Ch. XX Set 1 pp. 903–912): documents Dr. Shrubsall's anthropometric measurements for 10 named Sūk men (Nos. 59–68: Lomeri,Tebo, Lojok, Kimagut,Yangole,Chepko, Lolek, Лоkор, Kipsang,洛mwa; average Cephalic Index 74.5, Stature 166.9 cm), the felted ancestral hair-bag chignon, brass nose-disc and lower-lip plug, Beisa-horn snuff-boxes, miniature 8-inch 3-legged wooden headrest/stools (Fig. 474), 4-pointed concave hide shields (Fig. 475), dog-eating and Hyphæne thebaica gingerbread-palm meal, the jumping dance and transcribed Sūk musical score (p. 851), and the Set 1 Sūk vocabulary (pp. 903–912).",
+    meaning: "Recorded in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, Figs. 472–477, Shrubsall Tables A–F Nos. 59–68 pp. 492–507, Ch. XIX pp. 839–852 & Ch. XX Set 1 pp. 903–912): documents Dr. Shrubsall's anthropometric measurements for 10 named Sūk men (Nos. 59–68: Lomeri, Tebo, Lojok, Kimagut, Yangole, Chepko, Lolek, Lokor, Kipsang, Lomwa; average Cephalic Index 74.5, Stature 166.9 cm), the felted ancestral hair-bag chignon, brass nose-disc and lower-lip plug, Beisa-horn snuff-boxes, miniature 8-inch 3-legged wooden headrest/stools (Fig. 474), 4-pointed concave hide shields (Fig. 475), dog-eating and Hyphæne thebaica gingerbread-palm meal, the jumping dance and transcribed Sūk musical score (p. 851), and the Set 1 Sūk vocabulary (pp. 903–912).",
     englishEquivalent: "Strength, song, and the heritage of the elders endure across hills and plains.",
     theme: "wisdom",
     sourceCitation: "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, pp. 492–507, 839–852, 903–912)"
@@ -61213,27 +61213,6 @@ KALENJIN_GRAMMAR_SECTIONS.push({
     { kalenjin: "ghaʻ/ya • egh/ei • hegh/ē • nagh/naite • tagh/tae • siegh/sie • togh/tui • ghet/etio • maugh/moi • nyagh/nye • segh/siiya • ñgoghom/ñgom • ghogh/ioi • ogh/oi-iye • meghat/myat • ghiet/ete • igh/ie • mwagh/mwai • nyagh/ñga • sighin/siin • kogh/koi", english: "All 21 Suk–Nandi guttural 'gh' cognate pairs in Sir Charles Eliot's Introduction", explanation: "Sir Charles Eliot in Beech (1911, p. xvi, fn. 1)" },
     { kalenjin: "kany / i-kany • kat / i-kat • ker / i-ker • iyit / i-it • lugh / i-lu • nem / i-nem • ñgor / i-ñgor • rat / i-rat • rop / i-rop • sich / i-sich • sil / i-sil | mat / i-mat • kôwa / kôwuet", english: "11 verbs and 2 nouns where Suk drops Nandi's movable 'i-' prefix", explanation: "Sir Charles Eliot in Beech (1911, p. xx)" },
     { kalenjin: "Chep-bleñg (Endo) from Kaptapar • Chiefs Lōseron, Lotiram, Wiraporoa & Kapkornis • Nov. 1909 Peace Oath ('i-mēgh!') • Kamasia: Asis = wife of Torôrut", english: "Endo (Chep-bleñg) and Kamasia historical, legal, and religious records in Beech (1911)", explanation: "Mervyn W. H. Beech (1911, pp. 3, 17, 19 fn. 1, 27–37 & Plate IIb)" }
-  ]
-});
-
-TURKANA_GRAMMAR_SECTIONS.push({
-  id: "turkana-beech-eliot-1911-25-cognates-aijigwa-customs",
-  title: "Mervyn W. H. Beech & Sir Charles Eliot (1911, pp. xxiii–xxiv, 7–9, 21, 27–37, 150–151): All 25 Turkana–Suk Comparative Cognates, Chief Aijigwa's Turkana Customary Law, Lemurok vs. Lekatuknok & Turkana Dorobo 30-Ft Tree Granaries",
-  summary: "Complete line-by-line documentation of all Turkana linguistic, ethnographic, and legal material in Mervyn W. H. Beech & Sir Charles Eliot (1911).",
-  content: `From Mervyn W. H. Beech & Sir Charles Eliot (*The Suk: Their Language and Folklore*, Oxford: Clarendon Press, 1911, pp. xxiii–xxiv, 7–9, 21, 27–37, 150–151):
-1. **All 25 Turkana–Suk Comparative Cognates & Borrowings (Appendix pp. 150–151 & Eliot's Critique pp. xxiii–xxiv)**:
-   - Beech lists 25 Suk cultural and material terms borrowed from or shared with Turkana: **(1) Adaru** (giraffe/zebra tail elbow ornament), **(2) Adiñgo** (warrior's belt), **(3) Akul** (circular wrist-knife), **(4) Alakam** (iron wire neck-ring), **(5) Aloket** (curved wire tail on *siolip*), **(6) Alöit** (spring-noose elephant trap capable of killing up to 10 elephants in a day, p. 21), **(7) Amumūr** (war-dance), **(8) Anañga** (cloth; Turkana *anañga / enañga* < Swahili *nanga*), **(9) Apapai** (shield handle), **(10) Aparparat** (brass/iron nose-plate), **(11) Arobet** (throat skin), **(12) Atērdĭü** (hare's tail on *aloket*), **(13) Atekēr** (wooden cattle trough; Turkana *ateker*), **(14) Atoros** (box), **(15) Aturo** (checkered forelock), **(16) Aturpopo** (brass ear-ring), **(17) Kalacha** (V-shaped skin cape), **(18) Kedoñgô** (jumping kraal dance), **(19) Koliko** (girl's apron), **(20) Legetioʻ** (woman's belt; cf. Nandi *legetiet*), **(21) Loñgô** (shield; cf. Nandi *loñget*), **(22) Muren** (circumcised warriors; Turkana *ngi-muren*, Nandi *murenik*), **(23) Ñgechĕr** (headrest/stool; Turkana *e-kicholông*, pl. *ngicholong*, Nandi *ñgecheret*), **(24) Rungu** (club < Swahili *rungu*), and **(25) Siolip** (felted ancestral hair-bag chignon).
-   - **Sir Charles Eliot's Linguistic Note (pp. xxiii–xxiv)**: Points out that initial **a-** in Suk words like *adaru, adiñgo, akul, alakam, aloket, alöit, amumūr, apapai, aparparat, arobet, atekēr, atoros, aturo, aturpopo* is the fossilized **Turkana feminine singular article \`a-\`** (opposed to masculine *e-* and plural *ngi-/nga-*), proving these dress and weapon terms were borrowed directly from Turkana, whereas *legetioʻ, loñgô, muren, ñgechĕr* are common Nilotic/Kalenjin heritage.
-2. **Turkana Dorobo 30-Ft Tree-Fork Granaries, Trade & Chief Aijigwa's Legal Code (pp. 7–9, 27–37)**:
-   - **Turkana Dorobo Tree Granaries (p. 7)**: On the Weiwei/Kerut near its junction with the Turkwel at **En-gabotoʻ**, the Turkana Dorobo build palisaded homesteads and perch their round miniature grain huts **30 feet high** in the forks of tall trees.
-   - **Donkey Trade (p. 9)**: The Suk buy donkeys from the Turkwel Turkana for **Rs. 3** worth of trade goods (valued at **Rs. 12** = 1 bullock for hut-tax at Baringo).
-   - **Chief Aijigwa's Turkana Customary Law (via Hon. A. Bruce, pp. 27–37)**:
-     - **Hereditary *Lemurok* vs. *Lekatuknok* (p. 36)**: Turkana medicine-men (**Lemurok**) are hereditary and wield supreme authority, whereas village advisers (**Lekatuknok**) correspond to the Suk *Ki-ruwok-u*.
-     - **Homicide (p. 29)**: If a Turkana kills a fellow tribesman, the victim's relatives seize **all the murderer's cattle, sheep, and goats (leaving only his donkeys)** and spear the murderer if caught at once.
-     - **Marriage & Divorce (p. 33)**: Minimum bride-price is **5 cattle and 100 sheep** (rich men pay up to 50 cattle and 200–300 sheep); a wife who has borne children can never be divorced.`,
-  examples: [
-    { turkana: "a- (Turkana fem. sg. article in Suk loans): adaru, adiñgo, akul, alakam, aloket, alöit, amumūr, apapai, aparparat, arobet, atērdĭü, atekēr, atoros, aturo, aturpopo + siolip, kalacha, koliko", english: "Turkana feminine 'a-' article preserved in Suk dress, weapon, and trap loanwords", explanation: "Sir Charles Eliot & Mervyn W. H. Beech (1911, pp. xxiii–xxiv, 150–151)" },
-    { turkana: "Lemurok (hereditary medicine-men/chiefs) vs. Lekatuknok (elders/advisers) • Chief Aijigwa of Naudu & Salali • Alöit (10-elephant/day trap) • 30-ft tree-fork granaries at En-gabotoʻ", english: "Turkana governance, hunting engineering, and architecture in Beech (1911)", explanation: "Mervyn W. H. Beech (1911, pp. 7, 21, 27–37)" }
   ]
 });
 
