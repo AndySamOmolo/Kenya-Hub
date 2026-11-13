@@ -1167,3 +1167,17 @@ At the close of Vocabulary Set 2 (pp. 925–926), Johnston appended **19 convers
 - [Compare Kenyan Languages in the Translator & Dictionary](/tools/kenyan-translator/)
 - [Explore Interactive Language Courses & Grammar Reference Guides](/tools/learn/)`
 });
+
+
+// Complete Line-by-Line Reference Guide for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
+export const NORTHCOTE_1907_BLOG_SUPPLEMENT = {
+  slug: 'northcote-1907-nilotic-kavirondo-complete-line-by-line-edition',
+  title: 'G. A. S. Northcote (1907): Complete Line-by-Line Audit of "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58–66)',
+  stableUrl: 'http://www.jstor.org/stable/2843247',
+  highlights: [
+    'Pages 58–59: Kinship with Dinka, Aluri (Alur), and Acholi near Wadilai; migration under one big chief and passive secession; muscular vegetable-diet physique vs. animal-diet Masai, Nandi, and Lumbwa prior to the 1883 cattle plague; 3-goat fine for touching a married woman\'s rear grass tassel; 6–8 inch waist cloth; 6–10 iron wire coils, sores/ulcers, and the 3-rupee annual hut tax; full gala dress with white bead facial lines, brass cartridge cases, cowrie leather strips, black feather boa or wildebeest-tail shoulder ornament, polished iron waist beads, and broad-bean-pod knee/ankle bells containing 1–2 iron beads; 3 ft 6 in. × 6 ft curved buffalo-hide shields painted red, white, and black; funeral hair-tuft worn by the chief mourner.',
+    'Pages 59–61: Semi-feudal chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba plot ownership and askari retainers; circular village fenced with euphorbia, stone, mud, or watling, central cattle pen, basket/wicker granaries raised 2 ft off the ground (5 ft high × 3 ft diameter), and 4 hut types keeping unmarried youth rigidly segregated; clan exogamy, step-mother marriage, sororal polygyny, cattle inheritance, and the Chieftainship Succession Case Study (A, B, C, D, E, F).',
+    'Pages 61–63: Courting earnest money, sun-god wedding offering (meat, chicken, mtama millet, native beer), simulated capture, and the bride\'s first dinner rite; pre-1883 dowry (20 head of cattle) vs. 1907 dowry (7 head handsome dot, down to 1 bull + 20 goats, or 1 heifer + 1 bull minimum); time-of-day birth names (onyango, oching, odiambo, otieno), dream/posthumous ghost naming, and hereditary nicknames (obele, oliech, obonyo); deathbed gourd-rattling and tobacco smoke, bull-tail charging, mock shield battle against evil spirits, 6-day (chief) vs. 3-day (commoner) sunrise/sunset wailing, and recumbent in-hut burial (refuting Sir Charles Eliot).',
+    'Pages 63–66: Negative sun/moon worship and verbatim prayer quote ("It does not matter how much you pray, you fall sick and die just the same"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, wet/dry cupping, Hut-Roof open-air cure assault case, and Lime-Quarry fatal surgical diagnosis; rain-maker\'s sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; bleeding live cattle for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; civil litigation from the time of their grandfathers; and 9 modern occupations at Kisumu including a native Jaluo sergeant instructor.'
+  ]
+} as const;
