@@ -1,14 +1,22 @@
-export interface LuoProverb {
-  id: string;
-  dholuo: string;
-  literalTranslation: string;
-  meaning: string;
-  englishEquivalent?: string;
-  theme: string;
-  sourcePage: number;
+export interface ProverbEntry {
+  id?: number;
+  luo: string;
+  english: string;
+  literal_translation?: string;
+  meaning?: string;
+  meanings?: string[];
+  explanation?: string;
+  moral?: string;
+  morals?: string[];
+  answer_luo?: string;
+  answer_english?: string;
+  letter_section?: string;
+  category?: 'wisdom' | 'warning' | 'truth' | 'patience' | 'family' | 'character' | 'life' | 'other';
 }
 
-export const luoProverbs: LuoProverb[] = [
+export type LuoProverb = ProverbEntry;
+
+export const luoProverbs: ProverbEntry[] = [
   {
     "id": 1,
     "luo": "Alot michayo ema tieko kuon.",

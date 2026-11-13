@@ -1,16 +1,14 @@
 export interface LanguageSource {
   id: string;
   title: string;
-  authors: string[];
-  year: number | null;
-  languages: string[];
-  license: string;
-  sourceUrl?: string;
+  fileName: string;
   processedPath?: string;
-  appUses: ('dictionary' | 'comparative translator' | 'course lessons' | 'grammar lessons' | 'cultural wisdom' | 'blog research')[];
-  contentTypes: ('vocabulary' | 'grammar' | 'proverbs' | 'riddles' | 'folktales' | 'orthography' | 'dialogue' | 'cultural-reference')[];
+  languages: string[];
+  published: string;
   contribution: string;
-  coverageStatus: 'complete' | 'curated' | 'metadata-only';
+  appUses: string[];
+  contentTypes: ('vocabulary' | 'grammar' | 'dialogue' | 'cultural-reference')[];
+  ingestionStatus: 'integrated' | 'research-only';
   coverageNote: string;
 }
 

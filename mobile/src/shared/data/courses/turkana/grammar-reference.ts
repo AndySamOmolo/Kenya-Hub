@@ -1,3 +1,5 @@
+export type GrammarSection = TurkanaGrammarSection;
+
 export interface TurkanaGrammarSection {
   id: string;
   title: string;

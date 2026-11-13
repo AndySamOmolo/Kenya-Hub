@@ -1,14 +1,13 @@
-export interface LuoRiddle {
-  id: string;
-  promptDholuo: string;
-  promptEnglish: string;
-  answerDholuo: string;
-  answerEnglish: string;
-  culturalNote?: string;
-  sourcePage: number;
+export interface RiddleEntry {
+  id: number;
+  luo: string;
+  english: string;
+  answer: string;
 }
 
-export const luoRiddles: LuoRiddle[] = [
+export type LuoRiddle = RiddleEntry;
+
+export const luoRiddles: RiddleEntry[] = [
   {
     "id": 1,
     "luo": "Oda ma onge dhoot.",
