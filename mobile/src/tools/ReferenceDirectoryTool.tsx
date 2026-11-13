@@ -10,7 +10,7 @@ import {
   ScrollView,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useDynamicStyles, ThemeColors } from "../theme";
+import { useDynamicStyles, type ThemeColors } from "../theme";
 
 // Import directory datasets
 import hospitalsData from "../shared/data/nhif-hospitals.json";

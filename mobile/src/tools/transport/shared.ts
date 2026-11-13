@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { ThemeColors } from "../../theme";
+import type { ThemeColors } from "../../theme";
 
 export function daysUntilHoliday(dateStr: string) {
   const target = new Date(dateStr + "T00:00:00");

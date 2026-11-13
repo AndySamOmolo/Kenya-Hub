@@ -29,7 +29,7 @@ import {
 } from "../../src/shared/lib/tools-registry";
 import {
   STATIC_BLOG_POSTS,
-  StaticBlogPost,
+  type StaticBlogPost,
 } from "../../src/shared/data/blog-posts";
 import {
   INITIAL_RANDOM_WORDS,

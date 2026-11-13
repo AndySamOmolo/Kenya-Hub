@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, TextInput } from "react-native";
-import { useDynamicStyles, ThemeColors } from "../../theme";
+import { useDynamicStyles, type ThemeColors } from "../../theme";
 
 export function KESInput({
   label,

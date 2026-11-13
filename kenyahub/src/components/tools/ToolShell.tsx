@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Tool } from "@/lib/types";
+import type { Tool } from "@/lib/types";
 import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
 import { getRelatedBlogPostsForTool } from "@/lib/seo";
 import DynamicIcon from "@/components/ui/DynamicIcon";

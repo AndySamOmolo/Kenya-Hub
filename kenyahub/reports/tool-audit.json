@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T08:00:31.215Z",
+  "generatedAt": "2026-11-13T11:48:01.615Z",
   "registryCount": 25,
   "routeCount": 25,
   "courseCount": 23,
@@ -381,6 +381,15 @@
   ],
   "courses": [
     {
+      "languageId": "swahili",
+      "courseFile": "src/data/courses/swahili/course.ts",
+      "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
+      "proverbsFile": "src/data/courses/proverbs/swahili.ts",
+      "dictionaryFile": "src/data/dictionaries/swahili.json",
+      "dictionaryEntries": 17350,
+      "status": "ok"
+    },
+    {
       "languageId": "kikuyu",
       "courseFile": "src/data/courses/kikuyu/course.ts",
       "grammarFile": "src/data/courses/kikuyu/grammar-reference.ts",
@@ -399,39 +408,21 @@
       "status": "ok"
     },
     {
-      "languageId": "kamba",
-      "courseFile": "src/data/courses/kamba/course.ts",
-      "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/kamba.ts",
-      "dictionaryFile": "src/data/dictionaries/kamba.json",
-      "dictionaryEntries": 4078,
-      "status": "ok"
-    },
-    {
-      "languageId": "turkana",
-      "courseFile": "src/data/courses/turkana/course.ts",
-      "grammarFile": "src/data/courses/turkana/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/turkana.ts",
-      "dictionaryFile": "src/data/dictionaries/turkana.json",
-      "dictionaryEntries": 2020,
-      "status": "ok"
-    },
-    {
-      "languageId": "swahili",
-      "courseFile": "src/data/courses/swahili/course.ts",
-      "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/swahili.ts",
-      "dictionaryFile": "src/data/dictionaries/swahili.json",
-      "dictionaryEntries": 17350,
-      "status": "ok"
-    },
-    {
       "languageId": "luhya",
       "courseFile": "src/data/courses/luhya/course.ts",
       "grammarFile": "src/data/courses/luhya/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/luhya.ts",
       "dictionaryFile": "src/data/dictionaries/luhya.json",
       "dictionaryEntries": 3547,
+      "status": "ok"
+    },
+    {
+      "languageId": "kamba",
+      "courseFile": "src/data/courses/kamba/course.ts",
+      "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
+      "proverbsFile": "src/data/courses/proverbs/kamba.ts",
+      "dictionaryFile": "src/data/dictionaries/kamba.json",
+      "dictionaryEntries": 4078,
       "status": "ok"
     },
     {
@@ -462,12 +453,12 @@
       "status": "ok"
     },
     {
-      "languageId": "mijikenda",
-      "courseFile": "src/data/courses/mijikenda/course.ts",
-      "grammarFile": "src/data/courses/mijikenda/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/mijikenda.ts",
-      "dictionaryFile": "src/data/dictionaries/mijikenda.json",
-      "dictionaryEntries": 7923,
+      "languageId": "somali",
+      "courseFile": "src/data/courses/somali/course.ts",
+      "grammarFile": "src/data/courses/somali/grammar-reference.ts",
+      "proverbsFile": "src/data/courses/proverbs/somali.ts",
+      "dictionaryFile": "src/data/dictionaries/somali.json",
+      "dictionaryEntries": 2516,
       "status": "ok"
     },
     {
@@ -480,12 +471,21 @@
       "status": "ok"
     },
     {
-      "languageId": "somali",
-      "courseFile": "src/data/courses/somali/course.ts",
-      "grammarFile": "src/data/courses/somali/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/somali.ts",
-      "dictionaryFile": "src/data/dictionaries/somali.json",
-      "dictionaryEntries": 2516,
+      "languageId": "turkana",
+      "courseFile": "src/data/courses/turkana/course.ts",
+      "grammarFile": "src/data/courses/turkana/grammar-reference.ts",
+      "proverbsFile": "src/data/courses/proverbs/turkana.ts",
+      "dictionaryFile": "src/data/dictionaries/turkana.json",
+      "dictionaryEntries": 2020,
+      "status": "ok"
+    },
+    {
+      "languageId": "mijikenda",
+      "courseFile": "src/data/courses/mijikenda/course.ts",
+      "grammarFile": "src/data/courses/mijikenda/grammar-reference.ts",
+      "proverbsFile": "src/data/courses/proverbs/mijikenda.ts",
+      "dictionaryFile": "src/data/dictionaries/mijikenda.json",
+      "dictionaryEntries": 7923,
       "status": "ok"
     },
     {

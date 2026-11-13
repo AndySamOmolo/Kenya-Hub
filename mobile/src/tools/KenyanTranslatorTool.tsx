@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useDynamicStyles, ThemeColors } from "../theme";
+import { useDynamicStyles, type ThemeColors } from "../theme";
 
 import { getLanguageIdentity } from "../shared/data/language-identity";
 import {

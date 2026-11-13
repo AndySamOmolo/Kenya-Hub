@@ -2144,7 +2144,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "nget"
           },
           {
-            "target": "ñgêt (pr. a-ñgêt-e, p.p. ka-a-ñgêt)",
+            "target": "ñgêt / kas (pr. a-ñgêt-e, p.p. ka-a-ñgêt)",
             "source": "Awake",
             "pronunciation": "ngget"
           }

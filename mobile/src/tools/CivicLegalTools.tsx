@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { StyleSheet, Text, View, TextInput, Pressable, Linking } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useDynamicStyles, ThemeColors } from "../theme";
+import { useDynamicStyles, type ThemeColors } from "../theme";
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 
 import shaData from "../shared/data/sha-benefit-data.json";

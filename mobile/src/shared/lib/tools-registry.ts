@@ -1,4 +1,4 @@
-import { ToolCategory, Tool } from './types';
+import type { ToolCategory, Tool } from './types';
 
 export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; description: string; badgeClass: string }[] = [
   { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Flagship interactive courses for 22 Kenyan languages, bidirectional translator, grammar references & oral wisdom', badgeClass: 'badge-reference' },

@@ -1,4 +1,12 @@
-import type { DictMeta } from "./types";
+import type {
+  DictEntry,
+  DictCategory,
+  Dictionary,
+  DictCategoryMeta,
+  DictMeta,
+} from "./types";
+
+export type { DictEntry, DictCategory, Dictionary, DictCategoryMeta, DictMeta };
 
 // ============================================================
 // Dictionary Metadata Catalog & Category Index (22 Languages)

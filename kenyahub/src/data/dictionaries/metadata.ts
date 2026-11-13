@@ -1,14 +1,16 @@
-import { INITIAL_RANDOM_WORDS as GENERATED_RANDOM_WORDS } from "../random-words";
+import { INITIAL_RANDOM_WORDS as GENERATED_RANDOM_WORDS } from "./random-words";
+import type {
+  DictEntry,
+  DictCategory,
+  Dictionary,
+  DictCategoryMeta,
+  DictMeta,
+} from "./types";
 import {
   ALL_DICT_METAS,
   DICT_META_MAP,
   ALL_CATEGORY_IDS,
   TOTAL_DICTIONARY_ENTRIES,
-  type DictEntry,
-  type DictCategory,
-  type Dictionary,
-  type DictCategoryMeta,
-  type DictMeta,
 } from "./catalog";
 import {
   NORTHCOTE_1907_LEXICAL_HIGHLIGHTS,
@@ -35,4 +37,8 @@ export {
   LINDBLOM_1920_LEXICAL_HIGHLIGHTS,
 };
 
-export const INITIAL_RANDOM_WORDS: DictEntry[] = GENERATED_RANDOM_WORDS;
+export const INITIAL_RANDOM_WORDS: {
+  entry: DictEntry;
+  langName: string;
+  langId: string;
+}[] = GENERATED_RANDOM_WORDS;
