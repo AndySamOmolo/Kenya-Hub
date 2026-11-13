@@ -1,7 +1,7 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import { DynamicIcon } from "../../components/DynamicIcon";
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
+import { StyleSheet, Text, View, TextInput, Pressable, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
 import { createStyles, daysUntilHoliday } from "./shared";

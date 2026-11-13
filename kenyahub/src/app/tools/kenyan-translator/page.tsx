@@ -38,6 +38,7 @@ import {
   COMING_SOON_LANGUAGES,
   ALL_CONTRIBUTE_LANGUAGES,
   TRANSLATOR_FAQ as faq,
+  DICT_CACHE,
   loadDictionary,
   type TranslationResultItem,
 } from "@/lib/dictionary-loader";

@@ -33,7 +33,7 @@ import {
   type IndexedDictEntry,
 } from "../shared/lib/dictionary-search";
 
-import { CATEGORY_PAGE_SIZE, SEARCH_PAGE_SIZE, loadDictionary } from "./translator/loader";
+import { CATEGORY_PAGE_SIZE, SEARCH_PAGE_SIZE, LOADED_DICTS_CACHE, loadDictionary } from "./translator/loader";
 import { createStyles } from "./translator/styles";
 
 export function KenyanTranslatorTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {

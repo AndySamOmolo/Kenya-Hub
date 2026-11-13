@@ -37,7 +37,7 @@ const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
   daasanach: () => import("../data/dictionaries/daasanach.json") as Promise<{ default: Dictionary }>,
 };
 
-const DICT_CACHE: Record<string, Dictionary> = {};
+export const DICT_CACHE: Record<string, Dictionary> = {};
 const DICT_PROMISES: Record<string, Promise<Dictionary>> = {};
 
 export async function loadDictionary(langId: string): Promise<Dictionary | null> {
@@ -80,7 +80,6 @@ export const COMING_SOON_LANGUAGES = langData.languages
     counties: l.counties,
   }));
 
-const CONTACT_EMAIL = "contact@kenyahub.me";
 
 export const ALL_CONTRIBUTE_LANGUAGES = Array.from(
   new Set([

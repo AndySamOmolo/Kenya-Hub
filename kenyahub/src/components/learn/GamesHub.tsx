@@ -11,6 +11,7 @@ import {
   Zap,
   GalleryHorizontal,
   Sparkles,
+  Trophy,
 } from "lucide-react";
 import type { CourseUnit } from "@/data/courses/types";
 import { getAllWords } from "./games/shared";

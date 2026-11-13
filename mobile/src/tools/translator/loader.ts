@@ -29,7 +29,7 @@ const DICT_LOADERS: Record<string, () => Promise<{ default: any }>> = {
   daasanach: () => import("../../shared/data/dictionaries/daasanach.json"),
 };
 
-const LOADED_DICTS_CACHE: Record<string, Dictionary> = {};
+export const LOADED_DICTS_CACHE: Record<string, Dictionary> = {};
 const INFLIGHT_LOADS: Record<string, Promise<Dictionary | null>> = {};
 
 export async function loadDictionary(langId: string): Promise<Dictionary | null> {
