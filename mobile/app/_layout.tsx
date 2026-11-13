@@ -63,13 +63,7 @@ export default function RootLayout() {
     return null;
   }
 
-  // Set default Inter typography globally
-  if ((Text as any).defaultProps == null) {
-    (Text as any).defaultProps = {};
-  }
-  (Text as any).defaultProps.style = { fontFamily: "Inter_400Regular" };
-
-  return (
+    return (
     <SafeAreaProvider>
       <ThemeProvider>
         <LayoutContent />

@@ -413,12 +413,13 @@ export default function CountyScreen() {
       >
         {/* Consolidated Mode Tabs with Refined Scroll-Fade Bars */}
         <ExpandablePillRow
+          threshold={4}
           fadeColor={theme.surfaceContainerLow}
+          style={{ marginBottom: activeTab !== "compare" ? 8 : 2 }}
           contentContainerStyle={{
             flexDirection: "row",
             alignItems: "center",
             gap: 6,
-            paddingBottom: activeTab !== "compare" ? 8 : 2,
           }}
         >
           {(
@@ -451,6 +452,10 @@ export default function CountyScreen() {
                 <Text
                   style={{
                     fontSize: 12,
+                    lineHeight: 18,
+                    paddingBottom: 1,
+                    includeFontPadding: false,
+                    textAlignVertical: "center",
                     fontFamily: "Outfit_700Bold",
                     color: active ? theme.kenyaBlack : theme.textPrimary,
                   }}
@@ -755,9 +760,11 @@ const styles = StyleSheet.create({
   modeChip: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 12,
-    paddingVertical: 6.5,
+    justifyContent: "center",
+    gap: 6,
+    paddingHorizontal: 13,
+    paddingVertical: 7,
+    minHeight: 34,
     borderRadius: 999,
     borderWidth: 1,
   },
@@ -767,11 +774,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 24,
     paddingHorizontal: 14,
-    height: 40,
+    height: 42,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchInput: {
     flex: 1,
+    height: "100%",
     marginLeft: 9,
     fontSize: 13,
     paddingVertical: 0,
@@ -781,24 +789,36 @@ const styles = StyleSheet.create({
   sortRow: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
     marginTop: 8,
     gap: 8,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
     fontSize: 10,
+    lineHeight: 14,
     letterSpacing: 0.8,
     flexShrink: 0,
+    includeFontPadding: false,
+    textAlignVertical: "center",
   },
   segmentBtn: {
-    paddingHorizontal: 11,
-    paddingVertical: 5.5,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 13,
+    paddingVertical: 7,
+    minHeight: 34,
     borderRadius: 999,
     borderWidth: 1,
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 11.5,
+    fontSize: 12,
+    lineHeight: 18,
+    paddingBottom: 1,
+    includeFontPadding: false,
+    textAlignVertical: "center",
   },
   listContent: { padding: 14, paddingBottom: 32 },
   miniStat: {

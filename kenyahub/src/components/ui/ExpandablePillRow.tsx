@@ -42,7 +42,7 @@ function prepareExpandedChildren(children: React.ReactNode): React.ReactNode {
         style?: React.CSSProperties;
       }>,
       {
-        className: `${cleanedClass} max-w-full min-w-0 break-words text-left`.trim(),
+        className: `${cleanedClass} max-w-full min-w-0 break-words text-center inline-flex items-center justify-center`.trim(),
         style: {
           ...(props.style || {}),
           whiteSpace: "normal",
@@ -52,7 +52,7 @@ function prepareExpandedChildren(children: React.ReactNode): React.ReactNode {
           overflowWrap: "anywhere",
           wordBreak: "break-word",
           height: "auto",
-          textAlign: "left",
+          lineHeight: "1.35",
         },
       }
     );
@@ -67,33 +67,27 @@ export interface ExpandablePillRowProps {
 
 function getScrollMaskImage(left: boolean, right: boolean): string | undefined {
   if (left && right) {
-    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.25) 6px, black 26px, black calc(100% - 26px), rgba(0,0,0,0.25) calc(100% - 6px), transparent 100%)";
+    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.35) 8px, black 24px, black calc(100% - 24px), rgba(0,0,0,0.35) calc(100% - 8px), transparent 100%)";
   }
   if (left) {
-    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.25) 6px, black 26px, black 100%)";
+    return "linear-gradient(to right, transparent 0px, rgba(0,0,0,0.35) 8px, black 24px, black 100%)";
   }
   if (right) {
-    return "linear-gradient(to right, black 0px, black calc(100% - 26px), rgba(0,0,0,0.25) calc(100% - 6px), transparent 100%)";
+    return "linear-gradient(to right, black 0px, black calc(100% - 24px), rgba(0,0,0,0.35) calc(100% - 8px), transparent 100%)";
   }
   return undefined;
 }
 
-/**
- * Renders a single-row horizontal scrolling pill bar with smooth edge fade masks
- * and refined left/right scroll depth indicators when pills overflow.
- * When there are more than `threshold` (default 5) pills, displays a dropdown icon button
- * pinned on the right that toggles displaying all pills vertically (wrapped) without clipping.
- */
 export default function ExpandablePillRow({
   children,
   className = "",
-  threshold = 5,
+  threshold = 4,
 }: ExpandablePillRowProps) {
   const [expanded, setExpanded] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const count = countPillChildren(children);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(count > 3);
+  const [canScrollRight, setCanScrollRight] = useState(count > threshold);
 
   const updateScrollShadows = useCallback(() => {
     const el = scrollContainerRef.current;
@@ -149,7 +143,9 @@ export default function ExpandablePillRow({
     ? getScrollMaskImage(canScrollLeft, canScrollRight)
     : undefined;
 
-  if (count <= threshold) {
+  const showToggle = count > threshold || canScrollLeft || canScrollRight || expanded;
+
+  if (!showToggle) {
     return (
       <div
         className={`expandable-pill-scroll-viewport ${className}`}
@@ -168,13 +164,13 @@ export default function ExpandablePillRow({
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            gap: "6px",
+            gap: "8px",
             width: "100%",
             maxWidth: "100%",
             overflowX: "auto",
             position: "relative",
-            paddingTop: "2px",
-            paddingBottom: "2px",
+            paddingTop: "4px",
+            paddingBottom: "4px",
             ...(maskImage
               ? {
                   WebkitMaskImage: maskImage,
@@ -185,18 +181,6 @@ export default function ExpandablePillRow({
         >
           {children}
         </div>
-        {canScrollLeft && (
-          <div
-            aria-hidden="true"
-            className="expandable-pill-shadow expandable-pill-shadow--left"
-          />
-        )}
-        {canScrollRight && (
-          <div
-            aria-hidden="true"
-            className="expandable-pill-shadow expandable-pill-shadow--right"
-          />
-        )}
       </div>
     );
   }
@@ -207,8 +191,8 @@ export default function ExpandablePillRow({
       style={{
         display: "flex",
         flexDirection: "row",
-        alignItems: expanded ? "flex-start" : "center",
-        gap: "6px",
+        alignItems: "center",
+        gap: "8px",
         width: "100%",
         maxWidth: "100%",
         overflow: "hidden",
@@ -240,10 +224,10 @@ export default function ExpandablePillRow({
                   display: "flex",
                   flexWrap: "wrap",
                   alignItems: "center",
-                  gap: "6px",
+                  gap: "8px",
                   position: "relative",
-                  paddingTop: "2px",
-                  paddingBottom: "2px",
+                  paddingTop: "4px",
+                  paddingBottom: "4px",
                 }
               : {
                   width: "100%",
@@ -251,11 +235,12 @@ export default function ExpandablePillRow({
                   display: "flex",
                   flexWrap: "nowrap",
                   alignItems: "center",
-                  gap: "6px",
+                  gap: "8px",
                   overflowX: "auto",
                   position: "relative",
-                  paddingTop: "2px",
-                  paddingBottom: "2px",
+                  paddingTop: "4px",
+                  paddingBottom: "4px",
+                  paddingRight: canScrollRight ? "12px" : "2px",
                   ...(maskImage
                     ? {
                         WebkitMaskImage: maskImage,
@@ -267,18 +252,6 @@ export default function ExpandablePillRow({
         >
           {expanded ? prepareExpandedChildren(children) : children}
         </div>
-        {!expanded && canScrollLeft && (
-          <div
-            aria-hidden="true"
-            className="expandable-pill-shadow expandable-pill-shadow--left"
-          />
-        )}
-        {!expanded && canScrollRight && (
-          <div
-            aria-hidden="true"
-            className="expandable-pill-shadow expandable-pill-shadow--right"
-          />
-        )}
       </div>
       <button
         type="button"
@@ -289,23 +262,24 @@ export default function ExpandablePillRow({
         }
         title={expanded ? "Collapse to single row" : `Show all (${count})`}
         style={{
-          width: "26px",
-          height: "26px",
+          width: "32px",
+          height: "32px",
           borderRadius: "9999px",
           flexShrink: 0,
           display: "inline-flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: expanded ? "2px" : "0px",
+          alignSelf: expanded ? "flex-start" : "center",
+          marginTop: expanded ? "4px" : "0px",
         }}
-        className={`border transition-all cursor-pointer shadow-sm ${
+        className={`border transition-all cursor-pointer shadow-xs ${
           expanded
             ? "border-gold bg-gold/20 text-gold"
-            : "border-gold/40 bg-bg-card text-gold hover:border-gold hover:bg-gold/10"
+            : "border-border bg-bg-elevated text-gold hover:border-gold hover:bg-gold/10"
         }`}
       >
         <ChevronDown
-          className={`w-3.5 h-3.5 transition-transform duration-200 ${
+          className={`w-4 h-4 transition-transform duration-200 m-auto ${
             expanded ? "rotate-180" : ""
           }`}
         />

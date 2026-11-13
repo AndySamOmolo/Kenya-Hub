@@ -16,18 +16,20 @@ export default function SearchInput({
   ...props
 }: SearchInputProps) {
   const hasClearButton = Boolean(value && onClear);
+  const wrapperClass = className.includes("flex-1") ? "relative flex-1 min-w-0 w-full" : "relative w-full";
 
   return (
-    <div className="relative w-full">
-      <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none shrink-0 z-10" />
+    <div className={wrapperClass}>
+      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gold pointer-events-none shrink-0 z-10" />
       <input
         type="text"
         value={value}
         placeholder={placeholder}
-        className="w-full h-8.5 sm:h-9.5 rounded-xl bg-bg-surface border border-border text-[0.75rem] sm:text-xs text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold/70 focus:ring-2 focus:ring-gold/15 search-input-compact"
+        className="w-full h-10 sm:h-10.5 rounded-full bg-bg-elevated/70 border border-border text-xs sm:text-sm text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/15 search-input-compact"
         style={{
-          paddingLeft: "2rem", fontSize: "0.75rem",
-          paddingRight: hasClearButton ? "2.25rem" : "0.875rem",
+          paddingLeft: "2.5rem",
+          paddingRight: hasClearButton ? "2.5rem" : "1rem",
+          lineHeight: "1.4",
           ...style,
         }}
         autoComplete="off"
@@ -37,7 +39,7 @@ export default function SearchInput({
         <button
           type="button"
           onClick={onClear}
-          className="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors cursor-pointer z-10"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-card border border-border hover:border-gold/50 flex items-center justify-center transition-colors cursor-pointer z-10"
           aria-label="Clear search"
         >
           <X className="w-3 h-3 text-text-muted shrink-0" />

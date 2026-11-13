@@ -1088,15 +1088,17 @@ table td.text-center {
 }
 
 
-/* ── Horizontal Pill Menu Scroll Shadows (shows items going into the edges) ── */
+/* ── Horizontal Pill Menu Scroll Shadows (clean surface dissolve without dark box artifacts) ── */
 .expandable-pill-scroll-viewport {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .expandable-pill-shadow {
   position: absolute;
-  top: 1px;
-  bottom: 1px;
+  top: 0;
+  bottom: 0;
   width: 24px;
   pointer-events: none;
   z-index: 5;
@@ -1105,64 +1107,18 @@ table td.text-center {
 
 .expandable-pill-shadow--left {
   left: 0;
+  background: linear-gradient(
+    to right,
+    var(--bg-card) 0%,
+    transparent 100%
+  );
 }
 
 .expandable-pill-shadow--right {
   right: 0;
-}
-
-[data-theme="dark"] .expandable-pill-shadow--left,
-:root .expandable-pill-shadow--left {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  background: linear-gradient(
-    to right,
-    rgba(12, 10, 8, 0.86) 0%,
-    rgba(12, 10, 8, 0.45) 48%,
-    rgba(12, 10, 8, 0) 100%
-  );
-  box-shadow: inset 7px 0 9px -5px rgba(0, 0, 0, 0.65);
-}
-
-[data-theme="dark"] .expandable-pill-shadow--right,
-:root .expandable-pill-shadow--right {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
   background: linear-gradient(
     to left,
-    rgba(12, 10, 8, 0.86) 0%,
-    rgba(12, 10, 8, 0.45) 48%,
-    rgba(12, 10, 8, 0) 100%
+    var(--bg-card) 0%,
+    transparent 100%
   );
-  box-shadow: inset -7px 0 9px -5px rgba(0, 0, 0, 0.65);
-}
-
-[data-theme="light"] .expandable-pill-shadow--left {
-  width: 28px;
-  border-radius: 0;
-  border-left: 2px solid rgba(26, 17, 8, 0.16);
-  background: linear-gradient(
-    to right,
-    rgba(26, 17, 8, 0.16) 0%,
-    rgba(26, 17, 8, 0.06) 48%,
-    rgba(26, 17, 8, 0) 100%
-  );
-  box-shadow: inset 8px 0 10px -6px rgba(26, 17, 8, 0.22);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-}
-
-[data-theme="light"] .expandable-pill-shadow--right {
-  width: 28px;
-  border-radius: 0;
-  border-right: 2px solid rgba(26, 17, 8, 0.16);
-  background: linear-gradient(
-    to left,
-    rgba(26, 17, 8, 0.16) 0%,
-    rgba(26, 17, 8, 0.06) 48%,
-    rgba(26, 17, 8, 0) 100%
-  );
-  box-shadow: inset -8px 0 10px -6px rgba(26, 17, 8, 0.22);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
 }

@@ -310,84 +310,104 @@ export default function ToolsHubPage() {
         </div>
       )}
 
-      {/* Search and Sort */}
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5 items-stretch sm:items-center justify-between mb-2.5 sm:mb-3">
-        <div className="flex-1 max-w-lg">
-          <SearchInput
-            type="text"
-            placeholder="Search tools (e.g. PAYE, M-Pesa, KRA)..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="input-field w-full text-sm"
-            id="tools-search"
-            onClear={() => setSearchQuery("")}
-          />
-        </div>
-        <div className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center gap-2 w-full sm:w-auto">
-            <label htmlFor="tools-sort" className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-text-muted shrink-0">
-              Sort:
-            </label>
-            <div className="relative inline-flex items-center w-full sm:w-auto">
-              {sortBy === "popular" ? (
-                <TrendingUp className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-              ) : sortBy === "category" ? (
-                <LayoutList className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-              ) : (
-                <ArrowDownAZ className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gold z-10" />
-              )}
-              <CustomSelect
-                id="tools-sort"
-                value={sortBy}
-                onChange={(event) => setSortBy(event.target.value as typeof sortBy)}
-                options={[
-                  { value: "popular", label: "Most used" },
-                  { value: "alphabetical", label: "A-Z" },
-                  { value: "category", label: "Category" },
-                ]}
-                className="w-full sm:min-w-[9rem] has-leading-icon text-xs"
-              />
-            </div>
+      {/* Unified Filter Header Card (Search, Category Pills & Centered Sort Bar) */}
+      <div className="bg-bg-card border border-border rounded-2xl p-3.5 sm:p-4 mb-5 shadow-xs space-y-3">
+        <SearchInput
+          type="text"
+          placeholder="Search tools (PAYE, M-Pesa, KRA)..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          id="tools-search"
+          onClear={() => setSearchQuery("")}
+        />
+
+        {/* Category Pills with Colored Accent Dots */}
+        <ExpandablePillRow>
+          <button
+            type="button"
+            data-active={selectedCategory === "all"}
+            aria-pressed={selectedCategory === "all"}
+            onClick={() => handleSelectCategory("all")}
+            className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+              selectedCategory === "all"
+                ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
+                : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
+            }`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+            <span className="leading-normal">All ({TOOLS.length})</span>
+          </button>
+          {TOOL_CATEGORIES.map((cat) => {
+            const count = TOOLS.filter((t) => t.category === cat.id).length;
+            const active = selectedCategory === cat.id;
+            const dotColor = ({
+  "language-learning": "#C75B39",
+  "finance-tax": "#C8961E",
+  "education-cbc": "#1A8BD1",
+  "transport-travel": "#2FA463",
+  "business-investment": "#B87A4B",
+  "utilities-energy": "#F5A623",
+  "government-legal": "#BE2126",
+  "health-wellness": "#E05A5A",
+  "data-reference": "#5BBFEA",
+  "agriculture-environment": "#006B3F",
+} as Record<string, string>)[cat.id] || "#C8961E";
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                data-active={active}
+                aria-pressed={active}
+                onClick={() => handleSelectCategory(cat.id)}
+                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+                  active
+                    ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
+                    : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
+                }`}
+              >
+                <span
+                  className="w-1.5 h-1.5 rounded-full shrink-0"
+                  style={{ backgroundColor: active ? "#C8961E" : dotColor }}
+                />
+                <span className="leading-normal">{cat.name} ({count})</span>
+              </button>
+            );
+          })}
+        </ExpandablePillRow>
+
+        {/* Centered Sort By Pill Bar */}
+        <div className="flex items-center justify-center sm:justify-start gap-2 pt-0.5 border-t border-border/50">
+          <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0">
+            Sort By
+          </span>
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {(
+              [
+                { id: "popular", label: "Most used", Icon: TrendingUp },
+                { id: "alphabetical", label: "A–Z", Icon: ArrowDownAZ },
+                { id: "category", label: "Category", Icon: LayoutList },
+              ] as const
+            ).map(({ id, label, Icon }) => {
+              const active = sortBy === id;
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => setSortBy(id)}
+                  className={`rounded-full px-3 py-1 min-h-[30px] inline-flex items-center justify-center gap-1.5 text-xs font-bold border transition-all cursor-pointer ${
+                    active
+                      ? "border-gold bg-gold/15 text-gold"
+                      : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
+                  }`}
+                >
+                  <Icon className="w-3.5 h-3.5 text-gold shrink-0" />
+                  <span className="leading-normal">{label}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
-
-      {/* Category Pills */}
-      <ExpandablePillRow className="mb-3 sm:mb-3.5">
-        <button
-          type="button"
-          data-active={selectedCategory === "all"}
-          aria-pressed={selectedCategory === "all"}
-          onClick={() => handleSelectCategory("all")}
-          className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
-            selectedCategory === "all"
-              ? "border-gold/50 bg-gold/15 text-gold font-semibold"
-              : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
-          }`}
-        >
-          All ({TOOLS.length})
-        </button>
-        {TOOL_CATEGORIES.map((cat) => {
-          const count = TOOLS.filter((t) => t.category === cat.id).length;
-          const active = selectedCategory === cat.id;
-          return (
-            <button
-              key={cat.id}
-              type="button"
-              data-active={active}
-              aria-pressed={active}
-              onClick={() => handleSelectCategory(cat.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.6875rem] sm:text-xs font-medium border transition-all ${
-                active
-                  ? "border-gold/50 bg-gold/15 text-gold font-semibold"
-                  : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
-              }`}
-            >
-              {cat.name} ({count})
-            </button>
-          );
-        })}
-      </ExpandablePillRow>
 
       {/* Results count */}
       {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (
@@ -429,31 +449,64 @@ export default function ToolsHubPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
           {filteredTools.map((tool) => {
             const cat = getCategoryInfo(tool.category);
+            const accentColor = ({
+  "language-learning": "#C75B39",
+  "finance-tax": "#C8961E",
+  "education-cbc": "#1A8BD1",
+  "transport-travel": "#2FA463",
+  "business-investment": "#B87A4B",
+  "utilities-energy": "#F5A623",
+  "government-legal": "#BE2126",
+  "health-wellness": "#E05A5A",
+  "data-reference": "#5BBFEA",
+  "agriculture-environment": "#006B3F",
+} as Record<string, string>)[tool.category] || "#C8961E";
             return (
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
-                className="tool-card bg-bg-card border border-border rounded-xl p-3 sm:p-4 block group w-full"
+                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-5 block group w-full"
               >
-                <div className="flex items-start gap-2.5 sm:gap-3 w-full">
-                  <span className="text-xl sm:text-2xl tool-icon transition-transform flex-shrink-0 mt-0.5">
-                    <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em]" />
-                  </span>
+                <div className="flex items-center gap-3 mb-2.5">
+                  <div
+                    className="w-11 h-11 rounded-xl border flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
+                    style={{
+                      backgroundColor: `${accentColor}1A`,
+                      borderColor: `${accentColor}38`,
+                      color: accentColor,
+                    }}
+                  >
+                    <DynamicIcon emoji={tool.icon} className="w-5 h-5" />
+                  </div>
                   <div className="min-w-0 flex-1">
-                    <h2 className="text-sm sm:text-base font-bold text-text-primary mb-1 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                    {cat && (
+                      <div className="flex items-center gap-1.5 mb-0.5">
+                        <span
+                          className="w-1.5 h-1.5 rounded-full shrink-0"
+                          style={{ backgroundColor: accentColor }}
+                        />
+                        <span
+                          className="text-[0.65rem] font-bold uppercase tracking-wider truncate"
+                          style={{ color: accentColor }}
+                        >
+                          {cat.name}
+                        </span>
+                      </div>
+                    )}
+                    <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                       {tool.shortTitle}
                     </h2>
-                    <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-2">
-                      {tool.description}
-                    </p>
-                    {cat && (
-                      <span
-                        className={`badge ${cat.badgeClass} text-[0.625rem] py-0.5 px-2`}
-                      >
-                        <DynamicIcon emoji={cat.icon} className="w-[0.9em] h-[0.9em] inline-block mb-[0.1em]" /> {cat.name}
-                      </span>
-                    )}
                   </div>
+                  <div className="w-8 h-8 rounded-full bg-bg-elevated flex items-center justify-center text-text-secondary group-hover:text-gold group-hover:bg-gold/10 transition-colors shrink-0">
+                    →
+                  </div>
+                </div>
+                <p className="text-xs text-text-secondary line-clamp-2 leading-relaxed mb-3">
+                  {tool.description}
+                </p>
+                <div className="pt-2.5 border-t border-border/60 flex items-center gap-1.5 text-[0.6875rem] text-text-muted">
+                  <span className="text-kenya-green-light">✓</span>
+                  <span className="truncate">{tool.dataSource}</span>
                 </div>
               </Link>
             );

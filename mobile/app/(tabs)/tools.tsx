@@ -318,9 +318,11 @@ export default function ToolsScreen() {
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
+                  justifyContent: "center",
                   gap: 6,
-                  paddingHorizontal: 12,
-                  paddingVertical: 5.5,
+                  paddingHorizontal: 13,
+                  paddingVertical: 7,
+                  minHeight: 34,
                   borderRadius: 999,
                   borderWidth: 1,
                   backgroundColor: active
@@ -340,6 +342,10 @@ export default function ToolsScreen() {
                 <Text
                   style={{
                     fontSize: 12,
+                    lineHeight: 18,
+                    paddingBottom: 1,
+                    includeFontPadding: false,
+                    textAlignVertical: "center",
                     fontFamily: active ? "Outfit_700Bold" : "Inter_600SemiBold",
                     color: active
                       ? theme.onPrimaryContainer
@@ -383,9 +389,11 @@ export default function ToolsScreen() {
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    gap: 5,
-                    paddingHorizontal: 12,
-                    paddingVertical: 5.5,
+                    justifyContent: "center",
+                    gap: 6,
+                    paddingHorizontal: 13,
+                    paddingVertical: 7,
+                    minHeight: 34,
                     borderRadius: 999,
                     borderWidth: 1,
                     backgroundColor: active
@@ -548,18 +556,26 @@ const styles = StyleSheet.create({
   sortRow: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
     gap: 8,
-    marginTop: 7,
+    marginTop: 8,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
     fontSize: 10,
+    lineHeight: 14,
     letterSpacing: 0.8,
     flexShrink: 0,
+    includeFontPadding: false,
+    textAlignVertical: "center",
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 11.5,
+    fontSize: 12,
+    lineHeight: 18,
+    paddingBottom: 1,
+    includeFontPadding: false,
+    textAlignVertical: "center",
   },
   list: {
     padding: 14,
