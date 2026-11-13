@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import {
   View,
   Text,
@@ -29,105 +29,27 @@ function countPillChildren(children: React.ReactNode): number {
   return count;
 }
 
-function normalizePillChildren(
-  children: React.ReactNode,
-  expanded: boolean,
-  isRootPill = true
-): React.ReactNode {
-  return React.Children.map(children, (child) => {
-    if (!React.isValidElement(child)) return child;
-    if (child.type === React.Fragment) {
-      const fragProps = child.props as { children?: React.ReactNode };
-      return <>{normalizePillChildren(fragProps.children, expanded, isRootPill)}</>;
-    }
-    const props = child.props as {
-      style?: StyleProp<any>;
-      children?: React.ReactNode;
-      numberOfLines?: number;
-    };
-    const nextChildren = props.children
-      ? normalizePillChildren(props.children, expanded, false)
-      : props.children;
-
-    if (isRootPill) {
-      const flatPillStyle = StyleSheet.flatten(props.style) || {};
-      const pv = typeof flatPillStyle.paddingVertical === "number"
-        ? Math.max(7, Math.ceil(flatPillStyle.paddingVertical))
-        : 7;
-      return React.cloneElement(
-        child as React.ReactElement<any>,
-        {
-          style: [
-            props.style,
-            {
-              flexDirection: flatPillStyle.flexDirection || "row",
-              alignItems: "center",
-              justifyContent: "center",
-              paddingVertical: pv,
-              minHeight: Math.max(flatPillStyle.minHeight || 0, 34),
-            },
-            expanded
-              ? {
-                  maxWidth: "100%",
-                  flexShrink: 1,
-                }
-              : null,
-          ],
-        },
-        nextChildren
-      );
-    }
-
-    // Normalize nested Text elements so descenders (g, y, p, q, ,) never clip at the bottom on Android
-    const flatChildStyle = StyleSheet.flatten(props.style) || {};
-    const isTextNode =
-      child.type === Text ||
-      typeof flatChildStyle.fontSize === "number" ||
-      typeof flatChildStyle.fontFamily === "string" ||
-      typeof flatChildStyle.fontWeight === "string";
-
-    if (isTextNode) {
-      const fontSize = typeof flatChildStyle.fontSize === "number" ? Math.ceil(flatChildStyle.fontSize) : 12;
-      const lineHeight =
-        typeof flatChildStyle.lineHeight === "number" && flatChildStyle.lineHeight >= fontSize + 5
-          ? flatChildStyle.lineHeight
-          : Math.max(fontSize + 6, Math.ceil(fontSize * 1.45));
-
-      return React.cloneElement(
-        child as React.ReactElement<any>,
-        {
-          ...(expanded && props.numberOfLines === 1 ? { numberOfLines: undefined } : {}),
-          style: [
-            props.style,
-            {
-              fontSize,
-              lineHeight,
-              paddingBottom: 1,
-              includeFontPadding: false,
-              textAlignVertical: "center",
-            },
-            expanded ? { flexShrink: 1 } : null,
-          ],
-        },
-        nextChildren
-      );
-    }
-
-    return React.cloneElement(
-      child as React.ReactElement<any>,
-      {
-        ...(expanded && props.numberOfLines === 1 ? { numberOfLines: undefined } : {}),
-        style: expanded ? [props.style, { flexShrink: 1 }] : props.style,
-      },
-      nextChildren
-    );
-  });
+function isPillMarkedActive(props: any, goldColor?: string): boolean {
+  if (!props) return false;
+  if (
+    props["data-active"] === true ||
+    props["data-active"] === "true" ||
+    props.accessibilityState?.selected === true ||
+    props.accessibilityState?.checked === true
+  ) {
+    return true;
+  }
+  const flat = StyleSheet.flatten(props.style) || {};
+  if (goldColor && (flat.borderColor === goldColor || flat.backgroundColor === goldColor)) {
+    return true;
+  }
+  return false;
 }
 
-// Smooth 16-step alpha progression for surface dissolve without harsh vertical border lines
+// Gentle 16-step feather alpha progression for edge fade without harsh vertical lines
 const FADE_STEPS = [
-  0.0, 0.03, 0.07, 0.12, 0.19, 0.27, 0.36, 0.46,
-  0.56, 0.66, 0.75, 0.83, 0.9, 0.95, 0.98, 1.0,
+  0.0, 0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35,
+  0.44, 0.53, 0.62, 0.71, 0.79, 0.86, 0.92, 0.96,
 ];
 
 function EdgePocketShadow({
@@ -174,10 +96,11 @@ export interface ExpandablePillRowProps {
 }
 
 /**
- * Renders a single-row horizontal scrolling pill bar on mobile with smooth,
- * surface-matched left/right scroll-fade dissolves whenever pills overflow.
- * When pills overflow or exceed `threshold` (default 4), renders a centered
- * circular chevron toggle button on the right that expands all pills into a wrapped grid.
+ * Unified ExpandablePillRow matching the web ExpandablePillRow component:
+ * - Single-row horizontal scroll bar when collapsed (gap: 8, paddingVertical: 4)
+ * - Automatically scrolls the active pill into the horizontal center of the viewport
+ * - Subtle surface-matched edge dissolve when overflowing horizontally
+ * - Centered 32x32 circular chevron toggle button on the right (expands into a wrapped grid)
  */
 export function ExpandablePillRow({
   children,
@@ -195,18 +118,41 @@ export function ExpandablePillRow({
   const scrollXRef = useRef(0);
   const contentWidthRef = useRef(0);
   const layoutWidthRef = useRef(0);
+  const pillLayoutsRef = useRef<Record<number, { x: number; width: number }>>({});
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(count > threshold);
 
   const updateScrollState = useCallback(() => {
+    if (expanded) {
+      setCanScrollLeft(false);
+      setCanScrollRight(false);
+      return;
+    }
     const x = scrollXRef.current;
     const cw = contentWidthRef.current;
     const lw = layoutWidthRef.current;
     if (lw <= 0 || cw <= 0) return;
-    setCanScrollLeft(x > 4);
-    setCanScrollRight(cw - lw - x > 4);
-  }, []);
+    setCanScrollLeft(x > 3);
+    setCanScrollRight(cw - lw - x > 3);
+  }, [expanded]);
+
+  const centerActivePill = useCallback(
+    (activeIndex: number) => {
+      if (expanded || activeIndex < 0) return;
+      const layout = pillLayoutsRef.current[activeIndex];
+      const lw = layoutWidthRef.current;
+      const cw = contentWidthRef.current;
+      if (!layout || lw <= 0) return;
+      const maxScroll = Math.max(0, cw - lw);
+      const targetX = Math.min(
+        maxScroll,
+        Math.max(0, layout.x - lw / 2 + layout.width / 2)
+      );
+      scrollViewRef.current?.scrollTo({ x: targetX, animated: true });
+    },
+    [expanded]
+  );
 
   const handleLayout = useCallback(
     (e: LayoutChangeEvent) => {
@@ -231,6 +177,145 @@ export function ExpandablePillRow({
     },
     [updateScrollState]
   );
+
+  // Flatten root pill children and find active index for auto-centering (matches web ExpandablePillRow)
+  let runningPillIdx = 0;
+  let detectedActiveIdx = -1;
+
+  const renderNormalizedChildren = (
+    nodes: React.ReactNode,
+    isExpanded: boolean,
+    isRootPill = true
+  ): React.ReactNode => {
+    return React.Children.map(nodes, (child) => {
+      if (!React.isValidElement(child)) return child;
+      if (child.type === React.Fragment) {
+        const fragProps = child.props as { children?: React.ReactNode };
+        return <>{renderNormalizedChildren(fragProps.children, isExpanded, isRootPill)}</>;
+      }
+      const props = child.props as {
+        style?: StyleProp<any>;
+        children?: React.ReactNode;
+        numberOfLines?: number;
+        onLayout?: (e: LayoutChangeEvent) => void;
+      };
+      const nextChildren = props.children
+        ? renderNormalizedChildren(props.children, isExpanded, false)
+        : props.children;
+
+      if (isRootPill) {
+        const pillIdx = runningPillIdx++;
+        if (detectedActiveIdx === -1 && isPillMarkedActive(props, theme.gold)) {
+          detectedActiveIdx = pillIdx;
+        }
+        const flatPillStyle = StyleSheet.flatten(props.style) || {};
+        const pv =
+          typeof flatPillStyle.paddingVertical === "number"
+            ? Math.max(7, Math.ceil(flatPillStyle.paddingVertical))
+            : 7;
+        const ph =
+          typeof flatPillStyle.paddingHorizontal === "number"
+            ? Math.max(13, Math.ceil(flatPillStyle.paddingHorizontal))
+            : 14;
+        const origOnLayout = props.onLayout;
+
+        return React.cloneElement(
+          child as React.ReactElement<any>,
+          {
+            onLayout: (e: LayoutChangeEvent) => {
+              pillLayoutsRef.current[pillIdx] = {
+                x: e.nativeEvent.layout.x,
+                width: e.nativeEvent.layout.width,
+              };
+              if (origOnLayout) origOnLayout(e);
+            },
+            style: [
+              props.style,
+              {
+                flexDirection: flatPillStyle.flexDirection || "row",
+                alignItems: "center",
+                justifyContent: "center",
+                paddingVertical: pv,
+                paddingHorizontal: ph,
+                minHeight: Math.max(flatPillStyle.minHeight || 0, 34),
+                borderRadius: isExpanded
+                  ? 16
+                  : flatPillStyle.borderRadius ?? 999,
+              },
+              isExpanded
+                ? {
+                    maxWidth: "100%",
+                    flexShrink: 1,
+                  }
+                : null,
+            ],
+          },
+          nextChildren
+        );
+      }
+
+      // Normalize nested Text elements so descenders (g, y, p, q) never clip on Android
+      const flatChildStyle = StyleSheet.flatten(props.style) || {};
+      const isTextNode =
+        child.type === Text ||
+        typeof flatChildStyle.fontSize === "number" ||
+        typeof flatChildStyle.fontFamily === "string" ||
+        typeof flatChildStyle.fontWeight === "string";
+
+      if (isTextNode) {
+        const fontSize =
+          typeof flatChildStyle.fontSize === "number"
+            ? Math.ceil(flatChildStyle.fontSize)
+            : 12;
+        const lineHeight =
+          typeof flatChildStyle.lineHeight === "number" &&
+          flatChildStyle.lineHeight >= fontSize + 5
+            ? flatChildStyle.lineHeight
+            : Math.max(fontSize + 6, Math.ceil(fontSize * 1.45));
+
+        return React.cloneElement(
+          child as React.ReactElement<any>,
+          {
+            ...(isExpanded && props.numberOfLines === 1
+              ? { numberOfLines: undefined }
+              : {}),
+            style: [
+              props.style,
+              {
+                fontSize,
+                lineHeight,
+                paddingBottom: 1,
+                includeFontPadding: false,
+                textAlignVertical: "center",
+              },
+              isExpanded ? { flexShrink: 1 } : null,
+            ],
+          },
+          nextChildren
+        );
+      }
+
+      return React.cloneElement(
+        child as React.ReactElement<any>,
+        {
+          ...(isExpanded && props.numberOfLines === 1
+            ? { numberOfLines: undefined }
+            : {}),
+          style: isExpanded ? [props.style, { flexShrink: 1 }] : props.style,
+        },
+        nextChildren
+      );
+    });
+  };
+
+  const renderedPills = renderNormalizedChildren(children, expanded, true);
+
+  useEffect(() => {
+    if (detectedActiveIdx >= 0 && !expanded) {
+      const timer = setTimeout(() => centerActivePill(detectedActiveIdx), 40);
+      return () => clearTimeout(timer);
+    }
+  }, [detectedActiveIdx, expanded, centerActivePill]);
 
   const flatContent = StyleSheet.flatten(contentContainerStyle) || {};
   const {
@@ -261,7 +346,7 @@ export function ExpandablePillRow({
     ...(paddingRight !== undefined ? { paddingRight } : {}),
   };
 
-  const resolvedFadeColor = fadeColor || theme.surfaceContainerLow;
+  const resolvedFadeColor = fadeColor || theme.bgPrimary;
   const canExpand =
     showExpandButton &&
     (count > threshold || canScrollRight || canScrollLeft || expanded);
@@ -283,13 +368,13 @@ export function ExpandablePillRow({
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 8,
-                paddingVertical: 3,
-                paddingRight: canScrollRight ? 16 : 2,
+                paddingVertical: 4,
+                paddingRight: canScrollRight ? 12 : 2,
               },
               innerContentStyle,
             ]}
           >
-            {normalizePillChildren(children, false, true)}
+            {renderedPills}
           </ScrollView>
           {canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
@@ -322,12 +407,12 @@ export function ExpandablePillRow({
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
-              gap: innerContentStyle.gap ?? 8,
-              paddingVertical: 3,
+              gap: 8,
+              paddingVertical: 4,
             },
           ]}
         >
-          {normalizePillChildren(children, true, true)}
+          {renderedPills}
         </View>
       ) : (
         <View style={rowStyles.viewportWrap}>
@@ -345,13 +430,13 @@ export function ExpandablePillRow({
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 8,
-                paddingVertical: 3,
-                paddingRight: canScrollRight ? 18 : 2,
+                paddingVertical: 4,
+                paddingRight: canScrollRight ? 12 : 2,
               },
               innerContentStyle,
             ]}
           >
-            {normalizePillChildren(children, false, true)}
+            {renderedPills}
           </ScrollView>
           {canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
@@ -373,11 +458,10 @@ export function ExpandablePillRow({
         style={[
           rowStyles.actionBtn,
           {
-            alignSelf: expanded ? "flex-start" : "center",
-            marginTop: expanded ? 3 : 0,
+            alignSelf: "center",
             borderColor: expanded ? theme.gold : theme.outlineVariant,
             backgroundColor: expanded
-              ? theme.primaryContainer
+              ? `${theme.gold}26`
               : theme.surfaceContainerHigh,
           },
         ]}
@@ -410,13 +494,13 @@ const rowStyles = StyleSheet.create({
     minWidth: 0,
     position: "relative",
     overflow: "hidden",
-     justifyContent: "center",
+    justifyContent: "center",
   },
   edgeShadowContainer: {
     position: "absolute",
     top: 0,
     bottom: 0,
-    width: 24,
+    width: 16,
     zIndex: 10,
   },
   edgeShadowLeft: {

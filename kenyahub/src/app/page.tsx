@@ -130,7 +130,7 @@ export default function HomePage() {
                 &amp; everyday public tools
               </h1>
 
-              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-5 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
+              <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-6 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
                 Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
@@ -167,8 +167,8 @@ export default function HomePage() {
       </section>
 
       {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
-      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-16">
-        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-5 sm:p-8 lg:p-10 shadow-xl">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6 sm:mb-8">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[0.65rem] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
@@ -247,7 +247,7 @@ export default function HomePage() {
                 View all {PUBLISHED_COURSES.length} courses →
               </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-3.5">
               {PUBLISHED_COURSES.slice(0, 12).map(({ config, units }) => {
                 const skillCount = units.reduce((s, u) => s + u.skills.length, 0);
                 const identity = getLanguageIdentity(config.id);

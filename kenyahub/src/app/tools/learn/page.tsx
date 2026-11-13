@@ -162,7 +162,7 @@ export default function LearnPage() {
 
   return (
     <ToolShell tool={LEARN_TOOL} hideSource>
-      <div className="mx-auto max-w-4xl px-3.5 sm:px-4 pt-7 pb-10 space-y-5">
+      <div className="mx-auto max-w-4xl px-1 sm:px-4 pt-4 pb-10 space-y-6">
         {/* ── Flagship Learner Dashboard & Quick Translator Banner ── */}
         <div className="rounded-2xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-4 sm:p-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -359,7 +359,7 @@ export default function LearnPage() {
                 return (
                   <div
                     key={lang.id}
-                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-3.5 sm:p-5 transition-all hover:border-gold/50 flex flex-col justify-between shadow-sm"
+                    className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4.5 sm:p-5 transition-all hover:border-gold/50 flex flex-col justify-between shadow-sm"
                   >
                     <div>
                       <Link href={`/tools/learn/${lang.id}/`} className="block">

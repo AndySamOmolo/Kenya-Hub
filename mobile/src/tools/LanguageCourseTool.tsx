@@ -86,17 +86,24 @@ export default function LanguageCourseTool({
   const { colors, isDark } = useTheme();
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
 
-  // ── Language & Tab State ──
+  // ── Language Selection Menu & Active Course State ──
+  const [showLanguageMenu, setShowLanguageMenu] = useState<boolean>(
+    !(initialLanguageId && getCourse(initialLanguageId))
+  );
+  const [menuSearchQuery, setMenuSearchQuery] = useState<string>('');
+  const [menuFamilyFilter, setMenuFamilyFilter] = useState<string>('All');
+
   const [selectedLangId, setSelectedLangId] = useState<string>(
     initialLanguageId && getCourse(initialLanguageId)
       ? initialLanguageId
-      : PUBLISHED_COURSES[0]?.config.id || 'kikuyu'
+      : PUBLISHED_COURSES[0]?.config.id || 'swahili'
   );
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab || 'learn');
 
   useEffect(() => {
     if (initialLanguageId && getCourse(initialLanguageId)) {
       setSelectedLangId(initialLanguageId);
+      setShowLanguageMenu(false);
     }
   }, [initialLanguageId]);
 
@@ -1497,11 +1504,574 @@ export default function LanguageCourseTool({
     );
   }
 
+  // ── Derived Language Menu Data (All 23 Courses, Search, Family Filter & Overall Stats) ──
+  const menuFamilies = useMemo(() => {
+    const set = new Set<string>();
+    PUBLISHED_COURSES.forEach((c) => {
+      if (c.config.family) set.add(c.config.family);
+    });
+    return ['All', ...Array.from(set)];
+  }, []);
+
+  const filteredMenuCourses = useMemo(() => {
+    const q = menuSearchQuery.trim().toLowerCase();
+    return PUBLISHED_COURSES.filter((c) => {
+      if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
+      if (!q) return true;
+      return (
+        c.config.name.toLowerCase().includes(q) ||
+        (c.config.nativeName || '').toLowerCase().includes(q) ||
+        c.config.description.toLowerCase().includes(q) ||
+        c.config.family.toLowerCase().includes(q) ||
+        (c.config.counties || []).some((cnt) => cnt.toLowerCase().includes(q))
+      );
+    });
+  }, [menuFamilyFilter, menuSearchQuery]);
+
+  const overallMenuStats = useMemo(() => {
+    let totalXp = 0;
+    let bestStreak = 0;
+    let totalWords = 0;
+    let topLangId = PUBLISHED_COURSES[0]?.config.id || 'swahili';
+    let topLangXp = -1;
+
+    for (const course of PUBLISHED_COURSES) {
+      const lid = course.config.id;
+      const st = allProgress[lid];
+      if (!st) continue;
+      totalXp += st.totalXP || 0;
+      totalWords += Object.keys(st.wordStrengths || {}).length;
+      if ((st.streak || 0) > bestStreak) bestStreak = st.streak || 0;
+      if ((st.totalXP || 0) > topLangXp) {
+        topLangXp = st.totalXP || 0;
+        topLangId = lid;
+      }
+    }
+    const resumeCourse =
+      PUBLISHED_COURSES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSES[0];
+    return { totalXp, bestStreak, totalWords, resumeCourse };
+  }, [allProgress]);
+
+  const handleSelectLanguageFromMenu = useCallback(
+    (langId: string) => {
+      setSelectedLangId(langId);
+      setShowLanguageMenu(false);
+      setProverbCategory('All');
+      setProverbSearch('');
+      setProverbPage(1);
+      setCardIndex(0);
+      setIsCardFlipped(false);
+      setActiveGame('menu');
+      onScrollToTop?.();
+    },
+    [onScrollToTop]
+  );
+
+  // ============================================================================
+  // LANGUAGE SELECTION MENU (FIRST VIEW IN MOBILE LEARN TAB)
+  // ============================================================================
+  if (showLanguageMenu) {
+    return (
+      <View style={styles.container}>
+        {/* Learner Summary & Welcome Banner */}
+        <View
+          style={{
+            backgroundColor: colors.surfaceContainerLow,
+            borderColor: `${colors.gold}55`,
+            borderWidth: 1,
+            borderRadius: 20,
+            padding: 16,
+            gap: 12,
+          }}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                gap: 6,
+                paddingHorizontal: 10,
+                paddingVertical: 4,
+                borderRadius: 999,
+                backgroundColor: `${colors.gold}20`,
+                borderWidth: 1,
+                borderColor: `${colors.gold}45`,
+              }}
+            >
+              <Feather name="globe" size={12} color={colors.gold} />
+              <Text style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
+                {PUBLISHED_COURSES.length} KENYAN LANGUAGE COURSES
+              </Text>
+            </View>
+            {overallMenuStats.totalXp > 0 && overallMenuStats.resumeCourse && (
+              <Pressable
+                android_ripple={ripple}
+                onPress={() => handleSelectLanguageFromMenu(overallMenuStats.resumeCourse.config.id)}
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: 6,
+                  paddingHorizontal: 12,
+                  paddingVertical: 6,
+                  borderRadius: 999,
+                  backgroundColor: colors.gold,
+                }}
+              >
+                <Text style={{ fontSize: 11.5, fontWeight: '800', color: '#000' }}>
+                  Resume {overallMenuStats.resumeCourse.config.name}
+                </Text>
+                <Feather name="arrow-right" size={13} color="#000" />
+              </Pressable>
+            )}
+          </View>
+
+          <View>
+            <Text style={{ fontSize: 18, fontWeight: '800', color: colors.text, lineHeight: 24 }}>
+              Choose a Kenyan Language to Learn
+            </Text>
+            <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 19, marginTop: 4 }}>
+              Select any of {PUBLISHED_COURSES.length} interactive courses below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.
+            </Text>
+          </View>
+
+          {/* 3-Column Learner Summary */}
+          <View style={{ flexDirection: 'row', gap: 8 }}>
+            <View
+              style={{
+                flex: 1,
+                backgroundColor: colors.surfaceContainerHigh,
+                borderRadius: 12,
+                paddingVertical: 9,
+                paddingHorizontal: 8,
+                alignItems: 'center',
+                borderWidth: 1,
+                borderColor: colors.outlineVariant,
+              }}
+            >
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                <Feather name="zap" size={13} color={colors.gold} />
+                <Text style={{ fontSize: 15, fontWeight: '800', color: colors.gold }}>
+                  {overallMenuStats.totalXp}
+                </Text>
+              </View>
+              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+                Total XP
+              </Text>
+            </View>
+
+            <View
+              style={{
+                flex: 1,
+                backgroundColor: colors.surfaceContainerHigh,
+                borderRadius: 12,
+                paddingVertical: 9,
+                paddingHorizontal: 8,
+                alignItems: 'center',
+                borderWidth: 1,
+                borderColor: colors.outlineVariant,
+              }}
+            >
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                <Feather name="trending-up" size={13} color="#F59E0B" />
+                <Text style={{ fontSize: 15, fontWeight: '800', color: '#F59E0B' }}>
+                  {overallMenuStats.bestStreak}d
+                </Text>
+              </View>
+              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+                Best Streak
+              </Text>
+            </View>
+
+            <View
+              style={{
+                flex: 1,
+                backgroundColor: colors.surfaceContainerHigh,
+                borderRadius: 12,
+                paddingVertical: 9,
+                paddingHorizontal: 8,
+                alignItems: 'center',
+                borderWidth: 1,
+                borderColor: colors.outlineVariant,
+              }}
+            >
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                <Feather name="award" size={13} color="#10B981" />
+                <Text style={{ fontSize: 15, fontWeight: '800', color: '#10B981' }}>
+                  {overallMenuStats.totalWords}
+                </Text>
+              </View>
+              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+                Words Learned
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Search & Language Family Filter Card */}
+        <View
+          style={{
+            backgroundColor: colors.surfaceContainerLow,
+            borderColor: colors.outlineVariant,
+            borderWidth: 1,
+            borderRadius: 18,
+            padding: 13,
+            gap: 10,
+          }}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              backgroundColor: colors.surfaceContainerHigh,
+              borderColor: colors.outlineVariant,
+              borderWidth: 1,
+              borderRadius: 999,
+              paddingHorizontal: 14,
+              minHeight: 44,
+              gap: 8,
+            }}
+          >
+            <Feather name="search" size={16} color={colors.gold} />
+            <TextInput
+              key={`menu-search-${isDark ? 'dark' : 'light'}`}
+              value={menuSearchQuery}
+              onChangeText={setMenuSearchQuery}
+              placeholder="Search language, native name, or county..."
+              placeholderTextColor={colors.textMuted}
+              style={{
+                flex: 1,
+                fontSize: 13.5,
+                color: colors.text,
+                paddingVertical: 8,
+              }}
+              autoCorrect={false}
+            />
+            {menuSearchQuery.length > 0 && (
+              <Pressable onPress={() => setMenuSearchQuery('')} hitSlop={8}>
+                <Feather name="x-circle" size={16} color={colors.textMuted} />
+              </Pressable>
+            )}
+          </View>
+
+          <ExpandablePillRow
+            fadeColor={colors.surfaceContainerLow}
+            contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
+          >
+            {menuFamilies.map((fam) => {
+              const active = menuFamilyFilter === fam;
+              const count =
+                fam === 'All'
+                  ? PUBLISHED_COURSES.length
+                  : PUBLISHED_COURSES.filter((c) => c.config.family === fam).length;
+              return (
+                <Pressable
+                  key={fam}
+                  android_ripple={ripple}
+                  accessibilityState={{ selected: active }}
+                  onPress={() => setMenuFamilyFilter(fam)}
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: 6,
+                    paddingHorizontal: 13,
+                    paddingVertical: 7,
+                    minHeight: 34,
+                    borderRadius: 999,
+                    borderWidth: 1,
+                    backgroundColor: active
+                      ? colors.primaryContainer
+                      : colors.surfaceContainer,
+                    borderColor: active ? colors.gold : colors.outlineVariant,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontWeight: active ? '800' : '600',
+                      color: active ? colors.gold : colors.textSecondary,
+                    }}
+                  >
+                    {fam === 'All' ? `All Families (${count})` : `${fam} (${count})`}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </ExpandablePillRow>
+        </View>
+
+        {/* Language Courses Directory Cards */}
+        <View style={{ gap: 12 }}>
+          {filteredMenuCourses.map((course) => {
+            const { config, units } = course;
+            const iden = getLanguageIdentity(config.id);
+            const skillsCount = units.reduce((acc, u) => acc + u.skills.length, 0);
+            const wordsCount = units.reduce(
+              (acc, u) => acc + u.skills.reduce((s, sk) => s + sk.words.length, 0),
+              0
+            );
+            const courseProg = allProgress[config.id];
+            const courseXp = courseProg?.totalXP || 0;
+            const completedSkillsCount = courseProg
+              ? Object.values(courseProg.skills || {}).filter((sk) => sk.level >= 1).length
+              : 0;
+            const showNative =
+              config.nativeName &&
+              !config.name.toLowerCase().includes(config.nativeName.toLowerCase());
+
+            return (
+              <Pressable
+                key={config.id}
+                android_ripple={ripple}
+                onPress={() => handleSelectLanguageFromMenu(config.id)}
+                style={{
+                  backgroundColor: colors.surfaceContainerLow,
+                  borderColor: courseXp > 0 ? `${config.color}66` : colors.outlineVariant,
+                  borderWidth: 1,
+                  borderRadius: 18,
+                  padding: 16,
+                  gap: 10,
+                }}
+              >
+                <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10 }}>
+                  <View style={{ flex: 1, gap: 6 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 }}>
+                      <View
+                        style={{
+                          paddingHorizontal: 9,
+                          paddingVertical: 3,
+                          borderRadius: 999,
+                          backgroundColor: `${config.color}20`,
+                          borderWidth: 1,
+                          borderColor: `${config.color}45`,
+                        }}
+                      >
+                        <Text style={{ fontSize: 11, fontWeight: '800', color: config.color }}>
+                          “{iden.greeting}”
+                        </Text>
+                      </View>
+                      <View
+                        style={{
+                          paddingHorizontal: 8,
+                          paddingVertical: 3,
+                          borderRadius: 999,
+                          backgroundColor: colors.surfaceContainerHigh,
+                          borderWidth: 1,
+                          borderColor: colors.outlineVariant,
+                        }}
+                      >
+                        <Text style={{ fontSize: 10.5, fontWeight: '600', color: colors.textSecondary }}>
+                          {iden.region}
+                        </Text>
+                      </View>
+                    </View>
+
+                    <Text style={{ fontSize: 17, fontWeight: '800', color: colors.text, lineHeight: 23 }}>
+                      {config.name}
+                      {showNative ? (
+                        <Text style={{ fontSize: 13.5, fontWeight: '500', color: colors.textMuted }}>
+                          {` (${config.nativeName})`}
+                        </Text>
+                      ) : null}
+                    </Text>
+                  </View>
+
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      gap: 5,
+                      paddingHorizontal: 12,
+                      paddingVertical: 7,
+                      borderRadius: 12,
+                      backgroundColor: courseXp > 0 ? config.color : `${colors.gold}20`,
+                      borderWidth: 1,
+                      borderColor: courseXp > 0 ? config.color : `${colors.gold}45`,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        fontWeight: '800',
+                        color: courseXp > 0 ? '#000' : colors.gold,
+                      }}
+                    >
+                      {courseXp > 0 ? 'Continue' : 'Start'}
+                    </Text>
+                    <Feather
+                      name="arrow-right"
+                      size={13}
+                      color={courseXp > 0 ? '#000' : colors.gold}
+                    />
+                  </View>
+                </View>
+
+                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 19 }}>
+                  {config.description}
+                </Text>
+
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 2 }}>
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      gap: 4,
+                      paddingHorizontal: 9,
+                      paddingVertical: 4,
+                      borderRadius: 999,
+                      backgroundColor: colors.surfaceContainerHigh,
+                      borderWidth: 1,
+                      borderColor: colors.outlineVariant,
+                    }}
+                  >
+                    <Feather name="book-open" size={11} color="#10B981" />
+                    <Text style={{ fontSize: 11, fontWeight: '700', color: '#10B981' }}>
+                      {units.length} units · {skillsCount} modules · {wordsCount} words
+                    </Text>
+                  </View>
+
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      gap: 4,
+                      paddingHorizontal: 9,
+                      paddingVertical: 4,
+                      borderRadius: 999,
+                      backgroundColor: colors.surfaceContainerHigh,
+                      borderWidth: 1,
+                      borderColor: colors.outlineVariant,
+                    }}
+                  >
+                    <Feather name="users" size={11} color={colors.gold} />
+                    <Text style={{ fontSize: 11, fontWeight: '600', color: colors.textSecondary }}>
+                      {config.speakers}
+                    </Text>
+                  </View>
+
+                  <View
+                    style={{
+                      paddingHorizontal: 9,
+                      paddingVertical: 4,
+                      borderRadius: 999,
+                      backgroundColor: colors.surfaceContainerHigh,
+                      borderWidth: 1,
+                      borderColor: colors.outlineVariant,
+                    }}
+                  >
+                    <Text style={{ fontSize: 11, fontWeight: '600', color: colors.textMuted }}>
+                      {config.family}
+                    </Text>
+                  </View>
+                </View>
+
+                {courseXp > 0 && (
+                  <View
+                    style={{
+                      marginTop: 4,
+                      paddingTop: 10,
+                      borderTopWidth: 1,
+                      borderTopColor: colors.outlineVariant,
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      gap: 10,
+                    }}
+                  >
+                    <View
+                      style={{
+                        flex: 1,
+                        height: 7,
+                        borderRadius: 999,
+                        backgroundColor: colors.surfaceContainerHighest,
+                        overflow: 'hidden',
+                      }}
+                    >
+                      <View
+                        style={{
+                          height: '100%',
+                          borderRadius: 999,
+                          backgroundColor: config.color,
+                          width: `${Math.min(
+                            100,
+                            Math.max(8, Math.round((completedSkillsCount / Math.max(1, skillsCount)) * 100))
+                          )}%`,
+                        }}
+                      />
+                    </View>
+                    <Text style={{ fontSize: 11.5, fontWeight: '800', color: colors.gold }}>
+                      ⚡ {courseXp} XP
+                    </Text>
+                  </View>
+                )}
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+    );
+  }
+
   // ============================================================================
   // MAIN COURSE DASHBOARD (LANGUAGE SELECTOR + GAMIFICATION BAR + 4 TABS)
   // ============================================================================
   return (
     <View style={styles.container}>
+      {/* Top Bar to Return to Full 23-Language Selection Menu */}
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 8,
+        }}
+      >
+        <Pressable
+          android_ripple={ripple}
+          onPress={() => {
+            setShowLanguageMenu(true);
+            onScrollToTop?.();
+          }}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 6,
+            paddingHorizontal: 13,
+            paddingVertical: 8,
+            borderRadius: 999,
+            backgroundColor: colors.surfaceContainerLow,
+            borderWidth: 1,
+            borderColor: `${colors.gold}55`,
+          }}
+        >
+          <Feather name="grid" size={13} color={colors.gold} />
+          <Text style={{ fontSize: 12, fontWeight: '800', color: colors.gold }}>
+            All {PUBLISHED_COURSES.length} Languages
+          </Text>
+          <Feather name="chevron-down" size={13} color={colors.gold} />
+        </Pressable>
+
+        {currentCourse && (
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              gap: 6,
+              paddingHorizontal: 12,
+              paddingVertical: 6,
+              borderRadius: 999,
+              backgroundColor: `${langColor}18`,
+              borderWidth: 1,
+              borderColor: `${langColor}45`,
+            }}
+          >
+            <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: langColor }} />
+            <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
+              {currentCourse.config.name}
+            </Text>
+          </View>
+        )}
+      </View>
+
       {/* 1. Material 3 Gamification & Level Status Card */}
       <View
         style={[
@@ -1615,6 +2185,7 @@ export default function LanguageCourseTool({
             <Pressable
               key={course.config.id}
               android_ripple={ripple}
+              accessibilityState={{ selected: isSelected }}
               onPress={() => {
                 setSelectedLangId(course.config.id);
                 setProverbCategory('All');

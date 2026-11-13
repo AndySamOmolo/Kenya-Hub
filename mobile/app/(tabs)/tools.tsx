@@ -366,11 +366,12 @@ export default function ToolsScreen() {
           </Text>
           <ExpandablePillRow
             style={{ flex: 1 }}
+            showExpandButton={false}
             fadeColor={theme.surfaceContainerLow}
             contentContainerStyle={{
               flexDirection: "row",
               alignItems: "center",
-              gap: 6,
+              gap: 8,
             }}
           >
             {(

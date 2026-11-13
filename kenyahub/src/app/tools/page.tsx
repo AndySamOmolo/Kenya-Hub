@@ -219,7 +219,7 @@ export default function ToolsHubPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-10">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:py-10">
       <Suspense fallback={null}>
         <ToolsUrlSync onSync={handleUrlSync} />
       </Suspense>
@@ -256,10 +256,10 @@ export default function ToolsHubPage() {
           </>
         ) : (
           <>
-            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-2.5 sm:mb-3">
+            <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-3">
               <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
             </h1>
-            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
+            <p className="text-sm sm:text-base text-text-secondary max-w-3xl leading-relaxed">
               Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
             </p>
           </>
@@ -310,8 +310,8 @@ export default function ToolsHubPage() {
         </div>
       )}
 
-      {/* Unified Filter Header Card (Search, Category Pills & Centered Sort Bar) */}
-      <div className="bg-bg-card border border-border rounded-2xl p-3.5 sm:p-4 mb-5 shadow-xs space-y-3">
+      {/* Unified Filter Header Card (Search, Category Pills & Single-Line Sort Bar) */}
+      <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 mb-6 shadow-xs space-y-3.5">
         <SearchInput
           type="text"
           placeholder="Search tools (PAYE, M-Pesa, KRA)..."
@@ -375,12 +375,12 @@ export default function ToolsHubPage() {
           })}
         </ExpandablePillRow>
 
-        {/* Centered Sort By Pill Bar */}
-        <div className="flex items-center justify-center sm:justify-start gap-2 pt-0.5 border-t border-border/50">
-          <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0">
+        {/* Single-Line Sort By Pill Bar */}
+        <div className="flex items-center gap-2 pt-1.5 border-t border-border/50 flex-nowrap overflow-hidden">
+          <span className="text-[0.7rem] font-bold uppercase tracking-wider text-text-muted shrink-0 whitespace-nowrap">
             Sort By
           </span>
-          <div className="flex items-center gap-1.5 flex-wrap">
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-nowrap overflow-x-auto no-scrollbar py-0.5 flex-1 min-w-0">
             {(
               [
                 { id: "popular", label: "Most used", Icon: TrendingUp },
@@ -394,9 +394,9 @@ export default function ToolsHubPage() {
                   key={id}
                   type="button"
                   onClick={() => setSortBy(id)}
-                  className={`rounded-full px-3 py-1 min-h-[30px] inline-flex items-center justify-center gap-1.5 text-xs font-bold border transition-all cursor-pointer ${
+                  className={`shrink-0 whitespace-nowrap rounded-full px-2.5 sm:px-3.5 py-1.5 min-h-[32px] inline-flex items-center justify-center gap-1.5 text-xs font-bold border transition-all cursor-pointer ${
                     active
-                      ? "border-gold bg-gold/15 text-gold"
+                      ? "border-gold bg-gold/15 text-gold shadow-2xs"
                       : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
                   }`}
                 >
@@ -446,7 +446,7 @@ export default function ToolsHubPage() {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {filteredTools.map((tool) => {
             const cat = getCategoryInfo(tool.category);
             const accentColor = ({
@@ -465,48 +465,48 @@ export default function ToolsHubPage() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
-                className="tool-card bg-bg-card border border-border rounded-2xl p-4 sm:p-5 block group w-full"
+                className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-5.5 block group w-full"
               >
-                <div className="flex items-center gap-3 mb-2.5">
+                <div className="flex items-center gap-3.5 mb-3">
                   <div
-                    className="w-11 h-11 rounded-xl border flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
+                    className="w-12 h-12 rounded-xl border flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
                     style={{
                       backgroundColor: `${accentColor}1A`,
                       borderColor: `${accentColor}38`,
                       color: accentColor,
                     }}
                   >
-                    <DynamicIcon emoji={tool.icon} className="w-5 h-5" />
+                    <DynamicIcon emoji={tool.icon} className="w-5.5 h-5.5" />
                   </div>
                   <div className="min-w-0 flex-1">
                     {cat && (
-                      <div className="flex items-center gap-1.5 mb-0.5">
+                      <div className="flex items-center gap-1.5 mb-1">
                         <span
                           className="w-1.5 h-1.5 rounded-full shrink-0"
                           style={{ backgroundColor: accentColor }}
                         />
                         <span
-                          className="text-[0.65rem] font-bold uppercase tracking-wider truncate"
+                          className="text-[0.6875rem] font-bold uppercase tracking-wider leading-snug"
                           style={{ color: accentColor }}
                         >
                           {cat.name}
                         </span>
                       </div>
                     )}
-                    <h2 className="text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                    <h2 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                       {tool.shortTitle}
                     </h2>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-bg-elevated flex items-center justify-center text-text-secondary group-hover:text-gold group-hover:bg-gold/10 transition-colors shrink-0">
+                  <div className="w-9 h-9 rounded-full bg-bg-elevated flex items-center justify-center text-text-secondary group-hover:text-gold group-hover:bg-gold/10 transition-colors shrink-0">
                     →
                   </div>
                 </div>
-                <p className="text-xs text-text-secondary line-clamp-2 leading-relaxed mb-3">
+                <p className="text-sm text-text-secondary leading-relaxed mb-3.5">
                   {tool.description}
                 </p>
-                <div className="pt-2.5 border-t border-border/60 flex items-center gap-1.5 text-[0.6875rem] text-text-muted">
-                  <span className="text-kenya-green-light">✓</span>
-                  <span className="truncate">{tool.dataSource}</span>
+                <div className="pt-3 border-t border-border/60 flex items-center gap-2 text-xs text-text-muted leading-snug">
+                  <span className="text-kenya-green-light shrink-0">✓</span>
+                  <span>{tool.dataSource}</span>
                 </div>
               </Link>
             );

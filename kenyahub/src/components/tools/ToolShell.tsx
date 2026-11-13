@@ -52,7 +52,7 @@ export default function ToolShell({
 }: ToolShellProps) {
   if (!tool) {
     return (
-      <div className="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {children}
       </div>
     );
@@ -216,7 +216,7 @@ export default function ToolShell({
       : null;
 
   return (
-    <div className={`max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 ${hideHeader ? "py-3 sm:py-5" : "py-5 sm:py-10"}`}>
+    <div className={`max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ${hideHeader ? "py-3 sm:py-5" : "py-5 sm:py-10"}`}>
       {/* Structured Data */}
       <script
         type="application/ld+json"

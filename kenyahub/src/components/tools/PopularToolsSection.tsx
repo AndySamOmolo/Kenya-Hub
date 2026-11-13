@@ -47,7 +47,7 @@ export default function PopularToolsSection() {
   const hasUsage = mounted && hasAnyVisits();
 
   return (
-    <section className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-7 sm:py-20">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-20">
       <div className="flex items-end justify-between mb-4 sm:mb-10">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold mb-1 sm:mb-2">
@@ -68,7 +68,7 @@ export default function PopularToolsSection() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {popularTools.map((tool, i) => {
           const cat = TOOL_CATEGORIES.find((c) => c.id === tool.category);
           const visits = visitCounts[tool.slug] ?? 0;
@@ -76,7 +76,7 @@ export default function PopularToolsSection() {
             <Link
               key={tool.slug}
               href={`/tools/${tool.slug}/`}
-              className="tool-card bg-bg-card border border-border rounded-xl sm:rounded-2xl p-3.5 sm:p-6 block group"
+              className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-6 block group"
               style={{ animationDelay: `${i * 80}ms` }}
             >
               <div className="flex items-start gap-3 sm:gap-4">
@@ -87,7 +87,7 @@ export default function PopularToolsSection() {
                   <h3 className="text-sm sm:text-[0.9375rem] font-semibold text-text-primary mb-1 sm:mb-1.5 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                     {tool.shortTitle}
                   </h3>
-                  <p className="text-xs text-text-muted line-clamp-2 leading-relaxed mb-2 sm:mb-3">
+                  <p className="text-sm text-text-secondary leading-relaxed mb-3">
                     {tool.description}
                   </p>
                   <div className="flex items-center gap-2 flex-wrap">

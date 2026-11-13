@@ -501,11 +501,12 @@ export default function CountyScreen() {
               <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
               <ExpandablePillRow
                 style={{ flex: 1 }}
+                showExpandButton={false}
                 fadeColor={theme.surfaceContainerLow}
                 contentContainerStyle={{
                   flexDirection: "row",
                   alignItems: "center",
-                  gap: 5,
+                  gap: 8,
                 }}
               >
                 {(

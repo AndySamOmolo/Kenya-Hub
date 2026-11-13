@@ -20,16 +20,16 @@ export default function SearchInput({
 
   return (
     <div className={wrapperClass}>
-      <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gold pointer-events-none shrink-0 z-10" />
+      <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-gold pointer-events-none shrink-0 z-10" />
       <input
         type="text"
         value={value}
         placeholder={placeholder}
-        className="w-full h-10 sm:h-10.5 rounded-full bg-bg-elevated/70 border border-border text-xs sm:text-sm text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/15 search-input-compact"
+        className="w-full h-11.5 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/15 search-input-compact"
         style={{
-          paddingLeft: "2.5rem",
-          paddingRight: hasClearButton ? "2.5rem" : "1rem",
-          lineHeight: "1.4",
+          paddingLeft: "2.75rem",
+          paddingRight: hasClearButton ? "2.5rem" : "1.125rem",
+          lineHeight: "1.45",
           ...style,
         }}
         autoComplete="off"
@@ -39,10 +39,10 @@ export default function SearchInput({
         <button
           type="button"
           onClick={onClear}
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-bg-card border border-border hover:border-gold/50 flex items-center justify-center transition-colors cursor-pointer z-10"
+          className="absolute right-3.5 top-1/2 -translate-y-1/2 w-5.5 h-5.5 rounded-full bg-bg-card border border-border hover:border-gold/50 flex items-center justify-center transition-colors cursor-pointer z-10"
           aria-label="Clear search"
         >
-          <X className="w-3 h-3 text-text-muted shrink-0" />
+          <X className="w-3.5 h-3.5 text-text-muted shrink-0" />
         </button>
       )}
     </div>
