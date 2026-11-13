@@ -3119,33 +3119,66 @@ LUO_UNITS.push({
   ]
 });
 
-
 // Complete Line-by-Line Curriculum Supplement for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
-export const NORTHCOTE_1907_COURSE_EXTENSION = {
+export const NORTHCOTE_1907_COURSE_EXTENSION: CourseUnit = {
   id: 'luo-u14-northcote-complete-audit',
-  title: 'Northcote (1907) Complete Line-by-Line Ethnographic & Legal Audit (pp. 58–66)',
+  title: 'Unit 14: G. A. S. Northcote (1907) Complete Line-by-Line Ethnographic & Legal Audit (JRAI Vol. 37, pp. 58–66)',
   description: 'Exhaustive line-by-line study of G. A. S. Northcote\'s 1907 JRAI monograph (Vol. 37, pp. 58–66): Wadilai/Acholi/Aluri/Dinka kinship, 1883 cattle plague diet & dowry shift, 3-goat tassel fine, 3-rupee hut tax, full gala dress, 3 ft 6 in. × 6 ft buffalo shields, semi-feudal council & passive secession, individual shamba plots, 2 ft raised × 5 ft × 3 ft wicker granaries, Case Study A–F succession, sun-god wedding offering & first dinner rite, 6-day vs. 3-day wailing & recumbent burial, 3 court/medical cases, rain-maker\'s reed ritual & Indian shopkeeper letter, 5 fishing methods, 8-stringed harp, grandfather litigation, and 9 Kisumu occupations.',
-  lessons: [
+  icon: 'BookOpen',
+  skills: [
     {
-      id: 'luo-u14-l1',
-      title: 'Pages 58–59: Origins, Physique, 3-Goat Tassel Fine, 3-Rupee Hut Tax & Full Gala Dress',
-      summary: 'Dinka, Aluri, and Acholi kinship near Wadilai; muscular vegetable-diet physique vs. pre-1883 animal-food Masai/Nandi/Lumbwa; 3-goat tassel fine; 6–8 in. waist cloth; 6–10 iron wire coils & 3-rupee hut tax; full gala dress with broad-bean pod knee/ankle bells & wildebeest tail; 3 ft 6 in. × 6 ft buffalo-hide shield & mourning hair tuft.'
-    },
-    {
-      id: 'luo-u14-l2',
-      title: 'Pages 59–61: Semi-Feudal Polity, Shamba & Askari Law, Wicker Granaries & Succession Case A–F',
-      summary: 'Chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba crop ownership and askari retainers; circular village with 2 ft raised × 5 ft × 3 ft wicker granaries and 4 hut types; exogamy, sororal polygyny, step-mother marriage, and Chieftainship Case Study (A, B, C, D, E, F).'
-    },
-    {
-      id: 'luo-u14-l3',
-      title: 'Pages 61–63: Sun-God Wedding Offering, First Dinner Rite, 1883 Dowry Shift, Naming & Recumbent Burial',
-      summary: 'Sun-god wedding offering (meat, chicken, mtama millet, beer) and bride\'s first dinner rite; pre-1883 (20 cattle) vs. 1907 (7 cattle, or 1 bull + 20 goats, or 1 heifer + 1 bull minimum) dowry; onyango/oching/odiambo/otieno birth names, ghost names, and obele/oliech/obonyo nicknames; gourd-rattling and tobacco-smoke deathbed rite, bull-tail charging, mock spirit battle, 6-day vs. 3-day wailing, and recumbent in-hut burial (correcting Sir C. Eliot).'
-    },
-    {
-      id: 'luo-u14-l4',
-      title: 'Pages 63–66: Sun-Prayer Quote, 3 Court/Medical Cases, Rain-Maker Summons, 5 Fishing Methods & 9 Kisumu Occupations',
-      summary: 'Verbatim prayer quote ("It does not matter how much you pray, you fall sick and die just the same"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, Hut-Roof open-air cure assault trial, and Lime-Quarry fatal surgical diagnosis; rain-maker\'s sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; cattle bleeding for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; grandfather litigation; and 9 modern occupations + Kisumu Jaluo sergeant instructor.'
+      id: 'luo-u14-northcote-1907-skill-1',
+      title: 'Northcote (1907, pp. 58–66): Naming, Shamba & Askari Law, Succession Case A–F & Sun-God Offerings',
+      icon: 'Scale',
+      description: 'Master all 12 indigenous terms, naming traditions, customary land/succession rules, and ethnographic records from G. A. S. Northcote (1907, pp. 58–66).',
+      tips: 'Northcote (1907, p. 62) records the 4 time-of-day birth names (onyango, oching, odiambo, otieno) alongside 3 hereditary nicknames: obele ("the man who owned much mtama [millet]"), oliech ("the man who killed an elephant"), and obonyo ("the man like a locust").',
+      words: [
+        {
+          target: 'Jaluo (proper tribal endonym; kin to Dinka, Aluri & Acholi near Wadilai)',
+          source: 'Nilotic Kavirondo (Northcote 1907, p. 58)',
+          pronunciation: 'ja-lu-o',
+          hint: 'Northcote (1907, JRAI Vol. 37, p. 58)'
+        },
+        {
+          target: 'onyango (morning) • oching (noon) • odiambo (afternoon) • otieno (night)',
+          source: 'The 4 time-of-day birth names recorded by Northcote (1907, p. 62)',
+          pronunciation: 'o-nya-ngo / o-ching / o-dia-mbo / o-tie-no',
+          hint: 'Northcote (1907, JRAI Vol. 37, p. 62)'
+        },
+        {
+          target: 'obele ("much mtama") • oliech ("killed an elephant") • obonyo ("like a locust")',
+          source: 'The 3 hereditary nicknames recorded by Northcote (1907, p. 62)',
+          pronunciation: 'o-be-le / o-li-ech / o-bo-nyo',
+          hint: 'Northcote (1907, JRAI Vol. 37, p. 62)'
+        },
+        {
+          target: 'shamba (individual plot) • askari (retainer/page) • mtama (millet) • Bwana (magistrate)',
+          source: 'Adopted Swahili legal, agricultural, and administrative terms in Northcote (1907, pp. 60, 62, 64)',
+          pronunciation: 'sha-mba / as-ka-ri / m-ta-ma / bwa-na',
+          hint: 'Northcote (1907, JRAI Vol. 37, pp. 60, 62, 64)'
+        }
+      ],
+      sentences: [
+        {
+          target: 'Onyango nonyuol gokinyi, Oching odiechieng, Odiambo godhiambo, to Otieno gotieno.',
+          source: 'Onyango was born in the morning, Oching at noon, Odiambo in the afternoon, and Otieno at night (Northcote 1907, p. 62).'
+        }
+      ],
+      authoredExercises: [
+        {
+          type: 'multiple_choice',
+          prompt: 'In G. A. S. Northcote\'s "The Nilotic Kavirondo" (JRAI Vol. 37, 1907, p. 62), what do the three hereditary Jaluo nicknames "obele", "oliech", and "obonyo" mean?',
+          correctAnswer: '"obele" = the man who owned much mtama (millet), "oliech" = the man who killed an elephant, and "obonyo" = the man like a locust',
+          options: [
+            '"obele" = the man who owned much mtama (millet), "oliech" = the man who killed an elephant, and "obonyo" = the man like a locust',
+            '"obele" = born in the morning, "oliech" = born at noon, and "obonyo" = born at night',
+            '"obele" = rain-maker, "oliech" = blacksmith, and "obonyo" = fisherman',
+            '"obele" = first wife, "oliech" = second wife, and "obonyo" = retainer'
+          ],
+          hint: 'See Northcote (1907, p. 62)'
+        }
+      ]
     }
   ]
-} as const;
-LUO_UNITS.push(NORTHCOTE_1907_COURSE_EXTENSION as any);
+};
+LUO_UNITS.push(NORTHCOTE_1907_COURSE_EXTENSION);
