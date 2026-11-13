@@ -6475,3 +6475,141 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ============================================================
+// Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District"
+// (JRAI Vol. 40, Jan.–Jun. 1910, pp. 66–70, Plates XVI–XVII — Public Domain)
+// ============================================================
+TURKANA_UNITS.push({
+  id: "turkana-unit-dundas-1910-tribes-clans-calendar",
+  title: "Unit 20: Dundas (1910) 16 Tribes, 19 Attegir Clans, Life Stages & 12-Month Calendar",
+  description: "Master the 16 principal Turkana tribes, 19 Ngoitunya & Ngolio exogamous clans (attegir), 6 male & female life stages, asavanissia warrior ages, Agipie & the nether-world god, and the 12-month Nakiborror / Nakamou / Nait calendar from Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "turkana-dundas-1910-tribes-clans-life-stages",
+      title: "16 Principal Tribes, 19 Attegir Clans & 6 Life Stages (pp. 66–69)",
+      icon: "Users",
+      description: "Learn the 16 Turkana tribes, 19 Ngoitunya & Ngolio clans (attegir), life-stage titles, marriage & slaughter customs, and deities recorded by Hon. K. R. Dundas (1910).",
+      tips: "Dundas (1910, p. 67) notes that Turkana clans (attegir) are strictly exogamous and have no totems; Ngaruwo (#12) is the rain-makers' clan, and a new warrior generation (asavanissia) is instituted every 4 or 5 years.",
+      culturalNote: "Source attribution: Hon. Kenneth R. Dundas, 'Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 40 (1910, pp. 66–70, Plates XVI–XVII).",
+      words: [
+        {
+          target: "Ngolio, Ngoitunya, Nittacha, Nessetou, Nbochoross, Ngissir, Nissikir, Kamatak, Lugumong, Oiuaeguara, Nijiye, Ngirriomong, Ngakumuk, Ngalabong, Ngorr, Nikotomungwa",
+          source: "The 16 principal Turkana tribes (Ngolio & Ngoitunya live south of Lake Rudolph on the Kerio, Sogota & Tirkwel)",
+          pronunciation: "ngo-li-o / ngoi-tu-nya / nit-ta-cha / nes-se-tou / nbo-cho-ross / ngis-sir / nis-si-kir / ka-ma-tak",
+          hint: "Hon. K. R. Dundas (1910, p. 66)"
+        },
+        {
+          target: "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang, Kaleso, Ngonom, Ngatap, Moana, Nittacha, Egurerr, Ngaruwo (rain-makers), Neturana, Erarak, Eraraket, Abuchaw, Ngattigo, Ekkadenya, Ogorok",
+          source: "All 19 exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes (#1–8 occur in all 16 tribes; #12 Ngaruwo = rain-makers' clan)",
+          pronunciation: "at-te-gir / ni-te-gorr / mo-le-re-to / tu-du-ya / nga-ru-wo",
+          hint: "Hon. K. R. Dundas (1910, p. 67)"
+        },
+        {
+          target: "nidue → egile → kasikou (oppa) • apesur → aberu → agemat • asavanissia",
+          source: "Boy → warrior → old man (oppa wears beaded cap headdress, Plate XVI Fig. 7) • Girl → married woman → old woman • Warrior age-generations (every 4–5 years)",
+          pronunciation: "ni-du-e / e-gi-le / ka-si-kou / op-pa / a-pe-sur / a-be-ru / a-ge-mat / a-sa-va-nis-si-a",
+          hint: "Hon. K. R. Dundas (1910, p. 67 & Plates XVI–XVII)"
+        },
+        {
+          target: "Nessegonn • Agipie vs. Nether-world god",
+          source: "Evergreen bush on the lower Sogota with sweet berries & leathery fodder leaves • Benevolent sky god vs. malevolent god of rocks and rivers",
+          pronunciation: "nes-se-gonn / a-gi-pi-e",
+          hint: "Hon. K. R. Dundas (1910, pp. 67, 69)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Nidue → Egile → Kasikou (Oppa) • Apesur → Aberu → Agemat.",
+          source: "Young boy → Warrior → Old man • Unmarried girl → Married woman → Old woman (Dundas 1910, p. 67)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Hon. K. R. Dundas (1910, p. 67), which of the 19 exogamous clans (attegir) of the Ngoitunya and Ngolio Turkana is the hereditary rain-makers' clan?",
+          correctAnswer: "Ngaruwo",
+          options: [
+            "Ngaruwo",
+            "Nitegorr",
+            "Molereto",
+            "Ogorok"
+          ],
+          hint: "12th clan in Dundas's list of 19 attegir (p. 67)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each Turkana term from Hon. K. R. Dundas (1910, pp. 67, 69) with its meaning:",
+          correctAnswer: "nidue, egile, kasikou (oppa): Boy, warrior, and old man life stages (p. 67)",
+          pairs: [
+            {
+              left: "nidue, egile, kasikou (oppa)",
+              right: "Boy, warrior, and old man life stages (p. 67)"
+            },
+            {
+              left: "apesur, aberu, agemat",
+              right: "Girl, married woman, and old woman life stages (p. 67)"
+            },
+            {
+              left: "asavanissia",
+              right: "Warrior age-generations instituted every 4 or 5 years (p. 67)"
+            },
+            {
+              left: "Agipie",
+              right: "Benevolent god of the skies prayed to in sickness (p. 69)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "turkana-dundas-1910-12-month-calendar",
+      title: "The 12-Month Calendar: Nakiborror, Nakamou & Nait (p. 70)",
+      icon: "Sun",
+      description: "Master all 12 months and 3 seasonal divisions of the Turkana year recorded by Hon. K. R. Dundas (1910, p. 70).",
+      tips: "The Turkana year begins in March with Lomaruk (Wet season: Nakiborror, March–August) followed by Lolongo (Dry season: Nakamou, September–February); August, September, and October (Loitiak, Lolongo, Lopo) are called Nait because the grass turns yellow.",
+      culturalNote: "Source attribution: Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70).",
+      words: [
+        {
+          target: "Nakiborror (Wet season, Mar–Aug): 1. Lomaruk, 2. Tetimaru, 3. Eliel, 4. Loichoto, 5. Loisoban, 6. Loitiak",
+          source: "The 6 Wet-Season months of the Turkana year (March to August)",
+          pronunciation: "na-ki-bor-ror / lo-ma-ruk / te-ti-ma-ru / e-li-el / loi-cho-to / loi-so-ban / loi-ti-ak",
+          hint: "Hon. K. R. Dundas (1910, p. 70)"
+        },
+        {
+          target: "Nakamou (Dry season, Sept–Feb): 7. Lolongo, 8. Lopo, 9. Lorara, 10. Lomuk, 11. Logwang, 12. Lodunge",
+          source: "The 6 Dry-Season months of the Turkana year (September to February)",
+          pronunciation: "na-ka-mou / lo-lo-ngo / lo-po / lo-ra-ra / lo-muk / lo-gwang / lo-du-nge",
+          hint: "Hon. K. R. Dundas (1910, p. 70)"
+        },
+        {
+          target: "Nait (Loitiak, Lolongo & Lopo — August, September & October)",
+          source: "Three-month transitional period so called because the grass turns yellow",
+          pronunciation: "nait / loi-ti-ak / lo-lo-ngo / lo-po",
+          hint: "Hon. K. R. Dundas (1910, p. 70)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak • Nakamou: Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge.",
+          source: "Wet Season (March–August) & Dry Season (September–February) in Dundas (1910, p. 70)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "Why are the months of Loitiak (August), Lolongo (September), and Lopo (October) collectively called 'Nait' in the Turkana calendar (Dundas 1910, p. 70)?",
+          correctAnswer: "Because the grass turns yellow during those three months",
+          options: [
+            "Because the grass turns yellow during those three months",
+            "Because flying ants swarm",
+            "Because the Pleiades disappear",
+            "Because bulls are tied up"
+          ],
+          hint: "See Dundas (1910, p. 70)"
+        }
+      ]
+    }
+  ]
+});

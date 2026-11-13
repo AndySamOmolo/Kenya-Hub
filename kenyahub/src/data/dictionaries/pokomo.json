@@ -3330,7 +3330,7 @@
           "audioFile": null
         },
         {
-          "english": "Like, v. J should",
+          "english": "Like, v. (I should like) [Like, v. J should-, p. 25]",
           "translation": "nazakka",
           "pronunciation": "na-zak-ka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -3379,28 +3379,28 @@
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make angry",
           "translation": "gisa ngóro",
           "pronunciation": "gisa ngoro",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "To feel",
+          "english": "To feel pain",
           "translation": "kúkáma",
           "pronunciation": "kukama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make peace",
           "translation": "henda arára or nagea",
           "pronunciation": "henda arara or nagea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make war",
           "translation": "henda wiha",
           "pronunciation": "hend-a wi-ha",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -3498,7 +3498,7 @@
           "audioFile": null
         },
         {
-          "english": "To make- maker",
+          "english": "Peace-maker",
           "translation": "muntu ararsania",
           "pronunciation": "munt-u a-rar-sa-nia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -3533,7 +3533,7 @@
           "audioFile": null
         },
         {
-          "english": "Upraid, (find fault)",
+          "english": "Upbraid (find fault) [Upraid, p. 56]",
           "translation": "simbuia",
           "pronunciation": "simb-uia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -3554,21 +3554,21 @@
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be sick",
           "translation": "uma",
           "pronunciation": "u-ma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be weak",
           "translation": "kunta maṣaka",
           "pronunciation": "kunta masaka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "To get",
+          "english": "To get tipsy",
           "translation": "rúma",
           "pronunciation": "ruma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -4471,7 +4471,7 @@
           "audioFile": null
         },
         {
-          "english": "To become",
+          "english": "To become surety",
           "translation": "huaia rándo",
           "pronunciation": "huaia rando",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -4492,7 +4492,7 @@
           "audioFile": null
         },
         {
-          "english": "Breakfeast",
+          "english": "Breakfast [Breakfeast, p. 6]",
           "translation": "kilizuío",
           "pronunciation": "kilizuio",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -4563,7 +4563,7 @@
         },
         {
           "english": "To become cold",
-          "translation": "kífóa",
+          "translation": "kífóa; hendéka pepo",
           "pronunciation": "kifoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
@@ -5157,7 +5157,7 @@
           "audioFile": null
         },
         {
-          "english": "Ill-treate",
+          "english": "Ill-treat [Ill-treate, p. 21]",
           "translation": "henda wiwi",
           "pronunciation": "hend-a wi-wi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
@@ -5199,7 +5199,7 @@
           "audioFile": null
         },
         {
-          "english": "From the dead",
+          "english": "Rise from the dead",
           "translation": "fufúka niuffuni",
           "pronunciation": "fufuka niuffuni",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -5507,7 +5507,7 @@
           "audioFile": null
         },
         {
-          "english": "Ths day before Yesterday",
+          "english": "The day before yesterday [ths day before —, p. 63]",
           "translation": "zána",
           "pronunciation": "zana",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -7943,7 +7943,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Measure, s.",
           "translation": "talla",
           "pronunciation": "tal-la",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -8083,7 +8083,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Quarrel, s.",
           "translation": "maheho",
           "pronunciation": "ma-he-ho",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -8328,7 +8328,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Silence, s.",
           "translation": "magniamao",
           "pronunciation": "mag-nia-mao",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -8433,7 +8433,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Stamp, s.",
           "translation": "aláma",
           "pronunciation": "alama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -8545,7 +8545,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Thank, s. (thanks)",
           "translation": "ṣadduméa",
           "pronunciation": "saddumea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -9994,7 +9994,7 @@
           "audioFile": null
         },
         {
-          "english": "Sqeeze",
+          "english": "Squeeze [Sqeeze, p. 48]",
           "translation": "minka kamassi",
           "pronunciation": "mink-a ka-mas-si",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
@@ -10365,63 +10365,63 @@
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Boil, v. n.",
           "translation": "hokóha",
           "pronunciation": "hokoha",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Dry, v. n.",
           "translation": "yúma",
           "pronunciation": "yuma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sleep, v. n.",
           "translation": "ya",
           "pronunciation": "ya",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Suit, v. n.",
           "translation": "ngána",
           "pronunciation": "ngana",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sweat, v. n.",
           "translation": "uhuéka",
           "pronunciation": "uhueka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Teeth, v. n. (to teethe)",
           "translation": "yáfia magégo",
           "pronunciation": "yafia magego",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wind, v. n.",
           "translation": "lingíla",
           "pronunciation": "lingila",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Witness, v. n.",
           "translation": "ṣahidía",
           "pronunciation": "sahidia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wonder, v. n.",
           "translation": "taájabu",
           "pronunciation": "taajabu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -10449,7 +10449,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "iága",
           "pronunciation": "iaga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
@@ -10604,8 +10604,8 @@
         },
         {
           "english": "Collect",
-          "translation": "hendéka pepo / gúráta",
-          "pronunciation": "hendeka pepo",
+          "translation": "gúráta",
+          "pronunciation": "gurata",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
           "audioFile": null
         },
@@ -11261,7 +11261,7 @@
           "audioFile": null
         },
         {
-          "english": "Secresy",
+          "english": "Secrecy [Secresy, p. 43]",
           "translation": "mnéno ya dáho",
           "pronunciation": "mneno ya daho",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -11555,7 +11555,7 @@
           "audioFile": null
         },
         {
-          "english": "Laurate",
+          "english": "Lacerate [Laurate, p. 23]",
           "translation": "báa",
           "pronunciation": "baa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
@@ -11660,91 +11660,91 @@
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Force, v. a.",
           "translation": "gisa ngufu",
           "pronunciation": "gi-sa ngu-fu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Harvest, v. a.",
           "translation": "wuna",
           "pronunciation": "wu-na",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Labour, v. a.",
           "translation": "dédia wéa",
           "pronunciation": "dedia wea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Melt, v. a.",
           "translation": "bakkísa",
           "pronunciation": "bakkisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Mind, v. a.",
           "translation": "zakka",
           "pronunciation": "zak-ka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Name, v. a.",
           "translation": "va sari",
           "pronunciation": "va sa-ri",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Poison, v. a.",
           "translation": "issa ṣummu",
           "pronunciation": "issa summu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Remedy, v. a.",
           "translation": "fósa",
           "pronunciation": "fosa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Return, v. a.",
           "translation": "uza",
           "pronunciation": "u-za",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Salt, v. a.",
           "translation": "gisa muniu",
           "pronunciation": "gi-sa mu-niu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Sink, v. a.",
           "translation": "sámia",
           "pronunciation": "samia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Swear, v. a.",
           "translation": "yáfisa jiápo",
           "pronunciation": "yafisa jiapo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Whisper, v. a.",
           "translation": "ambia fizo",
           "pronunciation": "amb-ia fi-zo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -11758,7 +11758,7 @@
           "audioFile": null
         },
         {
-          "english": "Oneself",
+          "english": "Wash oneself",
           "translation": "oga",
           "pronunciation": "o-ga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -11940,7 +11940,7 @@
           "audioFile": null
         },
         {
-          "english": "Daugther",
+          "english": "Daughter [Daugther, p. 9]",
           "translation": "mana muke",
           "pronunciation": "ma-na mu-ke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -12262,7 +12262,7 @@
           "audioFile": null
         },
         {
-          "english": "After to",
+          "english": "Day after to-morrow",
           "translation": "késo kútoa",
           "pronunciation": "keso kutoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -12276,7 +12276,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "wáji",
           "pronunciation": "waji",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -12437,7 +12437,7 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
+          "english": "Scissors [Scissars, p. 42]",
           "translation": "makassi (ya ku hunía)",
           "pronunciation": "ma-kas-si",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -12528,7 +12528,7 @@
           "audioFile": null
         },
         {
-          "english": "Trousert",
+          "english": "Trousers [Trousert, p. 55]",
           "translation": "suruáli",
           "pronunciation": "suruali",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -13312,7 +13312,7 @@
           "audioFile": null
         },
         {
-          "english": "Gum arabii",
+          "english": "Gum arabic [Gum arabii, p. 18]",
           "translation": "hómfu",
           "pronunciation": "homfu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -13347,14 +13347,14 @@
           "audioFile": null
         },
         {
-          "english": "Point of a",
+          "english": "Point of a knife",
           "translation": "nsá ya kissu",
           "pronunciation": "nsa ya kissu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
           "audioFile": null
         },
         {
-          "english": "Not in the",
+          "english": "Not in the least",
           "translation": "hatta",
           "pronunciation": "hat-ta",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -13515,7 +13515,7 @@
           "audioFile": null
         },
         {
-          "english": "Lightening",
+          "english": "Lightning [Lightening, p. 25]",
           "translation": "yuféfe",
           "pronunciation": "yufefe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -13837,7 +13837,7 @@
           "audioFile": null
         },
         {
-          "english": "What is the",
+          "english": "What is the news?",
           "translation": "mágu gani yaziéo máfia?",
           "pronunciation": "magu gani yazieo mafia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -13900,7 +13900,7 @@
           "audioFile": null
         },
         {
-          "english": "Ha can do it",
+          "english": "He can do it [ha can do it, p. 6]",
           "translation": "anawésa ku henda",
           "pronunciation": "anawesa ku henda",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -13935,7 +13935,7 @@
           "audioFile": null
         },
         {
-          "english": "Hippopotamos",
+          "english": "Hippopotamus [Hippopotamos, p. 20]",
           "translation": "ungúu jua zána",
           "pronunciation": "unguu jua zana",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)",
@@ -14012,7 +14012,7 @@
           "audioFile": null
         },
         {
-          "english": "Nought, tobe",
+          "english": "Nought, to be [Nought, tobe, p. 31]",
           "translation": "táku kántu",
           "pronunciation": "taku kantu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -14089,7 +14089,7 @@
           "audioFile": null
         },
         {
-          "english": "Self, Imyself",
+          "english": "Self, I myself [Self, Imyself, p. 43]",
           "translation": "mimi muignie",
           "pronunciation": "mi-mi muig-nie",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -14243,7 +14243,7 @@
           "audioFile": null
         },
         {
-          "english": "Reins of a horu",
+          "english": "Reins of a horse [Reins of a horu, p. 39]",
           "translation": "háwako ya ferada",
           "pronunciation": "hawako ya ferada",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)",
@@ -14320,7 +14320,7 @@
           "audioFile": null
         },
         {
-          "english": "Conceal [Conecal]",
+          "english": "Conceal [Conecal, p. 8]",
           "translation": "fiza",
           "pronunciation": "fi-za",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.)",
@@ -16243,6 +16243,13 @@
           "pronunciation": "bfu-ya / mu-yu-me / mu-yu-ngu / wa-ho ma-ho",
           "context": "13. Pωkωmω (Pfωkωmω) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 99–104 & 1922, Vol. II, pp. 31–32)",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Dr. J. L. Krapf (1850) Preface on the Pokomo (Kipokómo, pp. vii–viii) & Comparative Vocabulary (pp. 1–64)",
+          "translation": "Pokomo (Kipokómo, 4th column of Krapf 1850): Agricultural, peaceable, industrious people inhabiting the banks of the River Dána (called Pokómo or Pokomóni by the Pokomo, Máro by the Galla, and Quilimancy ['Kilimansi' = mountain-water] on maps, rising in snow-clad Mount Kénia directly under the Equator and entering the Indian Ocean at the bay of Formosa in ~2°35' S. lat.) • Trade: Pokomo corn and ivory exchanged for coastal beads, cloth, and brass wire via a fixed rocky station and custom-house near Káu, while subjects to the surrounding Galla who protect them from Somáli invasions • Informant (1845 at Takaóngo near Kilefi bay): Hadji Omar, brother of Bonnaia Dadia (chief of the Pokomo village Kalindi on the Dána) and interpreter to the Galla chieftain of the Berraráta tribe • Migration traditions of the Pokomóni cradleland: Wasegéju near Tanga, Wateita of Kadiáro, Ndara & Bura (who still call the Wanika 'Ambakómo'), and the Kiriama tribe (from Mount Mángea near the Pokomóni)",
+          "pronunciation": "ki-po-ko-mo / po-ko-mo-ni / da-na / ma-ro / ha-dji o-mar / bon-nai-a da-di-a / ka-li-ndi / ber-ra-ra-ta",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. vii–viii & Vocabulary pp. 1–64)",
+          "audioFile": null
         }
       ]
     }
@@ -16250,5 +16257,5 @@
   "source": "Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 2302
+  "totalEntries": 2303
 }

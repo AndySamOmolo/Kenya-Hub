@@ -110,7 +110,7 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-7 pb-8 sm:pt-12 sm:pb-14">
             <div className="max-w-3xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
               {/* Centered Hero Badge Pill on Mobile */}
               <div className="flex justify-center sm:justify-start mb-4 sm:mb-6 w-full">
@@ -130,32 +130,32 @@ export default function HomePage() {
                 &amp; everyday public tools
               </h1>
 
-              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-6 sm:mb-8 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
+              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-5 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
                 Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
               {/* Comfortable, prominent hero action buttons */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-3.5 w-full">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 w-full">
                 <Link
                   href="/tools/learn/"
-                  className="btn-gold hero-cta-btn text-sm sm:text-base px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-md w-auto font-semibold"
+                  className="btn-gold hero-cta-btn text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-2 shadow-md w-auto font-semibold"
                 >
-                  <Languages className="w-4.5 h-4.5 shrink-0" />
+                  <Languages className="w-4 h-4 shrink-0" />
                   <span>Start Learning Kenyan Languages</span>
-                  <ArrowRight className="w-4.5 h-4.5 shrink-0" />
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
                 <Link
                   href="/tools/kenyan-translator/"
-                  className="btn-outline hero-cta-btn text-sm sm:text-base px-4.5 py-3.5 sm:px-5.5 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
+                  className="btn-outline hero-cta-btn text-xs sm:text-sm px-3.5 py-2.5 sm:px-4.5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-1.5 w-auto font-medium"
                 >
-                  <Globe className="w-4.5 h-4.5 text-kenya-green-light shrink-0" />
+                  <Globe className="w-4 h-4 text-kenya-green-light shrink-0" />
                   <span>22-Language Translator</span>
                 </Link>
                 <Link
                   href="/tools/"
-                  className="btn-outline hero-cta-btn text-sm sm:text-base px-4.5 py-3.5 sm:px-5.5 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2 w-auto font-medium"
+                  className="btn-outline hero-cta-btn text-xs sm:text-sm px-3.5 py-2.5 sm:px-4.5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-1.5 w-auto font-medium"
                 >
-                  <Wrench className="w-4.5 h-4.5 text-gold shrink-0" />
+                  <Wrench className="w-4 h-4 text-gold shrink-0" />
                   <span>All {TOOLS.length} Tools</span>
                 </Link>
               </div>

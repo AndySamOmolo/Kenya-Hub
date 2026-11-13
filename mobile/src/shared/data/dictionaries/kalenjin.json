@@ -16,9 +16,9 @@
     "West Pokot"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.2",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
+  "dictionaryVersion": "3.3",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
   "categories": [
     {
       "id": "greetings",
@@ -17195,6 +17195,76 @@
           "pronunciation": "ng'ei-yeet rooptui bu-reet e-pee-so",
           "context": "Kalenjin — GitHub unicode-org/cldr (kln.xml)",
           "audioFile": null
+        },
+        {
+          "english": "Ndo (Endo / Chebleng) Wet Season ('The months of empty bellies': Kamei, September to February) in Dundas (1910, p. 72)",
+          "translation": "Kamei: Sept Tapach (fn. 5: Low-country sowing), Oct Kipsunde (1: Windy months), Nov Mukul, Dec Kwarra (2: Starry nights), Jan yoboi, Feb Kiptamo (3: Caterpillar comes and eats up the grass)",
+          "pronunciation": "ka-mei / ta-pach / kip-su-nde / mu-kul / kwar-ra / yo-boi / kip-ta-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "Ndo (Endo / Chebleng) Dry Season ('The months of full bellies': Sengartat, March to August) in Dundas (1910, p. 72)",
+          "translation": "Sengartat: Mar Miengi (4: Month of flying ants), Apr Ilat, May Perrowa, Jun Meluwon / Meldag (5: Months of heavy rains; fn. 10: also Meldag), Jul Sukuku, Aug Mugeyon (6: Months of mists; fn. 6: Circumcision ceremonies)",
+          "pronunciation": "se-ngar-tat / mi-e-ngi / i-lat / per-ro-wa / me-lu-won / mel-dag / su-ku-ku / mu-ge-yon",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fns. 6, 10)",
+          "audioFile": null
+        },
+        {
+          "english": "Maragwetta (Marakwet / Chebleng) Wet Season ('The months of empty bellies': Kipgugen, September to February) in Dundas (1910, p. 72)",
+          "translation": "Kipgugen: Sept Tapach (fn. 5: Low-country sowing), Oct Kipsunde (1: Windy months), Nov Kibelga, Dec Kwarra (2: Starry nights; fn. 6: Circumcision ceremonies), Jan Mukul, Feb Kiptamo (3: Caterpillar comes and eats up the grass)",
+          "pronunciation": "kip-gu-gen / ta-pach / kip-su-nde / ki-bel-ga / kwar-ra / mu-kul / kip-ta-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fns. 5, 6)",
+          "audioFile": null
+        },
+        {
+          "english": "Maragwetta (Marakwet / Chebleng) Dry Season ('The months of full bellies': Uwawtgot, March to August) in Dundas (1910, p. 72)",
+          "translation": "Uwawtgot: Mar Biritwa (4: Month of flying ants), Apr Ilat, May Taptulya, Jun Roptui (5: Months of heavy rains), Jul Bureret, Aug Ebbes (6: Months of mists)",
+          "pronunciation": "u-wawt-got / bi-ri-twa / i-lat / tap-tu-lya / rop-tui / bu-re-ret / eb-bes",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "Kabkamat (Kapkamat — Olmo Calendar) Wet Season ('The months of empty bellies': Kipgugen, September to February) in Dundas (1910, p. 72)",
+          "translation": "Kipgugen (Olmo calendar of the Kapkamat tribe, an offshoot of the Ndo living immediately south of Chebleng): Sept Kipsunde (fn. 5: Low-country sowing), Oct Kipsunde oieng (1: Windy months), Nov Ibiegwa, Dec Chumo (2: Starry nights), Jan Ngatiat, Feb Kiptamo (3: Caterpillar comes and eats up the grass)",
+          "pronunciation": "ol-mo / kip-gu-gen / kip-su-nde / i-bie-gwa / chu-mo / nga-ti-at / kip-ta-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fns. 2, 5)",
+          "audioFile": null
+        },
+        {
+          "english": "Kabkamat (Kapkamat — Olmo Calendar) Dry Season ('The months of full bellies': Uwawt, March to August) in Dundas (1910, p. 72)",
+          "translation": "Uwawt (Olmo calendar): Mar Uwawtgot (4: Month of flying ants), Apr Mamut, May Wagi, Jun Ngei (5: Months of heavy rains), Jul Roptui, Aug Bureret (6: Months of mists)",
+          "pronunciation": "ol-mo / u-wawt / u-wawt-got / ma-mut / wa-gi / ngei / rop-tui / bu-re-ret",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fn. 2)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamasia (Tugen — Kapteberewa / Northern) Wet Season ('The months of empty bellies': Terrelaw, September to February) in Dundas (1910, p. 72)",
+          "translation": "Terrelaw: Sept Tapach, Oct Kipsunde (1: Windy months; fn. 7: Hill sowing), Nov Mukul (fn. 8: Millet sown), Dec Kibelga (2: Starry nights), Jan Arapmoi, Feb Kiptamo (3: Caterpillar comes and eats up the grass)",
+          "pronunciation": "ter-re-law / ta-pach / kip-su-nde / mu-kul / ki-bel-ga / a-rap-moi / kip-ta-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fns. 3, 7, 8)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamasia (Tugen — Kapteberewa / Northern) Dry Season ('The months of full bellies': Uwawt, March to August) in Dundas (1910, p. 72)",
+          "translation": "Uwawt: Mar Uwawtgot (4: Month of flying ants), Apr Saki, May Sumatwa, Jun Roptui (5: Months of heavy rains), Jul Ngei, Aug Kipsunde (6: Months of mists)",
+          "pronunciation": "u-wawt / u-wawt-got / sa-ki / su-ma-twa / rop-tui / ngei / kip-su-nde",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fn. 3)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamasia (Tugen — Nderois / Southern) Wet Season ('The months of empty bellies': Terrelaw, September to February) in Dundas (1910, p. 72)",
+          "translation": "Terrelaw: Sept Tapach (fn. 8: Millet sown), Oct Kipsunde (1: Windy months; fn. 9: Millet reaped), Nov Kibelga, Dec Mukul (2: Starry nights), Jan Ngatiat (fn. 7: Hill sowing), Feb Kiptamo (3: Caterpillar comes and eats up the grass)",
+          "pronunciation": "ter-re-law / ta-pach / kip-su-nde / ki-bel-ga / mu-kul / nga-ti-at / kip-ta-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fns. 4, 7, 8, 9)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamasia (Tugen — Nderois / Southern) Dry Season ('The months of full bellies': Uwawt, March to August) in Dundas (1910, p. 72)",
+          "translation": "Uwawt: Mar Uwawtgot (4: Month of flying ants), Apr Mamut, May Wagi, Jun Roptui (5: Months of heavy rains), Jul Bureret, Aug Ngei (6: Months of mists)",
+          "pronunciation": "u-wawt / u-wawt-got / ma-mut / wa-gi / rop-tui / bu-re-ret / ngei",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72 & fn. 4)",
+          "audioFile": null
         }
       ]
     },
@@ -17953,7 +18023,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "par (pr. a-por-e, p.p. ka-a-par)",
           "pronunciation": "par",
           "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
@@ -20627,7 +20697,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er of a Nandi",
+          "english": "Murderer [Homicide / taking of life] of a Nandi",
           "translation": "rumin (rumindet), pl. rum (rumik)",
           "pronunciation": "ru-min",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
@@ -29706,7 +29776,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "porin (porindet), pl. por (porik)",
           "pronunciation": "porin",
           "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)",
@@ -32393,6 +32463,76 @@
           "pronunciation": "mo-set mo-so-nik / e-oot e-u-ek / kot ko-ri-ek / ma-sa-mbo-nin ma-sa-mbwan",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VI, p. 87)",
           "audioFile": null
+        },
+        {
+          "english": "Chebleng (collective name for the Maragwetta & Ndo along ~50 miles of the western wall of the Elgeyo Valley) & Northern 5 Geographical Sections, Clans & Totems in Dundas (1910, p. 61)",
+          "translation": "Chebleng • Northern 5 Sections visited by Dundas (p. 61): 1. Beya (Clan: Tallai, Totem: Kogai [the crow]), 2. Kaksegai (Clan: Oreon, Totem: —), 3. Katut (Clan: Sirichon, Totem: Seran [the dikdik]), 4. Kabioso (Clan: Kamugo, Totem: Kogai [the crow]), 5. Bogorror (Clan: Tallai, Totem: Kogai [the crow])",
+          "pronunciation": "che-ble-ng / be-ya / kak-se-gai / ka-tut / ka-bi-o-so / bo-gor-ror / ko-gai / se-ran",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 61)",
+          "audioFile": null
+        },
+        {
+          "english": "Southern 8 Maragwetta & Ndo Geographical Sections, Clans, Totems & Migrations in Dundas (1910, pp. 61–62)",
+          "translation": "1. Sibo (Clan: Saban, Totem: The elephant — migrated from Krut), 2. Kapsagat (Clan: Tallai or Tulin, Totems: The crow and the jackal), 3. Kagsegom (Clan: Kapsegom, Totem: Sirere [the kite] — migrated from Angata e-'m-barta via the Kito River), 4. Kapsekerr (Clan: Tallai, Totem: Kogai [the crow]), 5. Kamarein (Clan: Tallai, Totem: Kogai [the crow]), 6. Kauwau (Clan: Kapsegom, Totem: Sirere [the kite]), 7. Mareich (Clans: Tallai and Legen, Totems: The crow and the frog), 8. Kabell (Clan: Chepbogamwoi, Totem: The buffalo — migrated from Chemmorgoi with Kamugo & Tallai)",
+          "pronunciation": "si-bo / sa-ban / kap-sa-gat / tu-lin / kag-se-gom / si-re-re / kap-se-kerr / ka-ma-rein / kau-wau / ma-reich / ka-bell / chep-bo-gam-woi / chem-mor-goi",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 61–62)",
+          "audioFile": null
+        },
+        {
+          "english": "Sangwirr (mixed Nandi–Masai tribe akin to the Elgonyi/Kony of Mt. Elgon living on the plateau behind Kapsagat) & Kabkamat (Kapkamat offshoot of the Ndo south of Chebleng) in Dundas (1910, pp. 62, 65, 72)",
+          "translation": "Sangwirr (mixed Nandi–Masai tribe behind Kapsagat; ancestral origin with Elgeyo of the Kamasia clan Tungaw) & Kabkamat (Kapkamat — offshoot of the Ndo living immediately south of Chebleng, whose calendar is called Olmo)",
+          "pronunciation": "sa-ngwirr / kab-ka-mat / kap-ka-mat / ol-mo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 62, 65, 72)",
+          "audioFile": null
+        },
+        {
+          "english": "Chebleng (Maragwetta & Ndo) Terraced Platform Villages, 10–12 Mile Ndo Single-River Irrigation Canal, Digging Sticks, Half-Trowel Miniature Adze-Spade & Low-Country Land Price in Dundas (1910, pp. 62–65)",
+          "translation": "Terraced stone-and-timber platforms for huts & granaries; 10–12 mile Ndo single-river irrigation canal; hillside eleusine & irrigated low-country millet; wooden digging stick & half-trowel miniature iron adze-spade; honey-beer; low bride-price (a pot of honey to a few sheep/goats); low-country land price = 1 female goat per ~1/2 acre; stone-covered deep hill graves vs. grass-covered low-country trenches & stone cairns for violent death, lightning, or meteors",
+          "pronunciation": "che-ble-ng irrigation & land law",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 62–65)",
+          "audioFile": null
+        },
+        {
+          "english": "Kapteberewa (Northern Kamasia / Tugen) 10 Sun-Totem (Sot) Clans & Intermarriage Rule in Dundas (1910, p. 65)",
+          "translation": "1. Kapkeruwa (migrated from the Sogota River), 2. Kaptogongo, 3. Kamengo, 4. Kapchessoito, 5. Kapalangwa, 6. Kameiwan, 7. Kaperchino, 8. Kapsonok, 9. Kapartaber, 10. Kapkolumon — Totem of all 10 clans: The sun (Sot); clans 2–10 came from the east (Angata e-'m-barta & Mokotan); members of the Sot clans may intermarry",
+          "pronunciation": "kap-te-be-re-wa / sot / kap-ke-ru-wa / kap-to-go-ngo / ka-me-ngo / kap-ches-soi-to / ka-pa-la-ngwa / ka-mei-wan / ka-per-chi-no / kap-so-nok / ka-par-ta-ber / kap-ko-lu-mon",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 65)",
+          "audioFile": null
+        },
+        {
+          "english": "Kapteberewa (Northern Kamasia / Tugen) Leopard (Tallai), Porcupine (Kawbil — sabet) & Hyena (Tungaw & Kirimos — chesin) Clans in Dundas (1910, p. 65)",
+          "translation": "11. Tallai — Totem: The leopard (of Chebleng origin); 12. Kawbil — Totem: The porcupine (sabet; of Moiven origin; strictly exogamous); 13. Tungaw — Totem: The hyena (chesin; of Elgeyo and Sangwir origin; strictly exogamous); 14. Kirimos — Totem: The hyena (chesin; of Moiven origin)",
+          "pronunciation": "tal-lai / kaw-bil / sa-bet / tu-ngaw / ki-ri-mos / che-sin",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 65)",
+          "audioFile": null
+        },
+        {
+          "english": "Nderois (Southern Kamasia / Tugen) 6 Clans & Totems + Sessivi (Ararat) Highlands in Dundas (1910, p. 65)",
+          "translation": "1. Kimoi (Totem: The buffalo), 2. Mogei (Totem: The bee), 3. Tallai (Totem: The frog), 4. Sot (Totem: The sun — came from the east), 5. Kimwan (Totem: The guinea fowl — of Samburu origin), 6. Terriki (Totem: The elephant — originally occupied the Sessivi highlands E of Lake Hannington, called Ararat by them)",
+          "pronunciation": "nde-rois / ki-moi / mo-gei / tal-lai / sot / ki-mwan / ter-ri-ki / ses-si-vi / a-ra-rat",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 65)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Chabichab & Owolell Sections of the Kamasia (Tugen) in Dundas (1910, p. 53)",
+          "translation": "Il Chabichab (Kamasia section with whom the Il Mayek clan first resided) & Owolell (Kamasia section from which the Njamus clan Masari originated)",
+          "pronunciation": "il cha-bi-chab / o-wo-lell / ma-sa-ri",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "I-Sirikwa (Nandi name for the prehistoric stone-kraal builders on the Uasin Gishu Plateau around Sirgoit, called Moiven / Muttia by the Suk and Il-Mokwan by the Masai) & Il Kakesan (Masai name for the Lumbwa / Kipsikis) in Dundas (1910, pp. 50, 52–53, 57, 65)",
+          "translation": "I-Sirikwa / Moiven / Muttia / Il-Mokwan (builders of the circular stone kraals around Sirgoit; Kaparamen salt-lick raid by the Suk; ancestors of the Njamus clan Barsaina and Kamasia clans Kawbil & Kirimos) & Il Kakesan (Kipsikis / Lumbwa)",
+          "pronunciation": "i-si-ri-kwa / moi-ven / mut-ti-a / il-mo-kwan / sir-goit / il ka-ke-san / kip-si-kis",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50, 52–53, 57, 65)",
+          "audioFile": null
+        },
+        {
+          "english": "Kamasia (Tugen) Ethnography, Dress, Circumcision & Plate XVII Figs. 5–6 in Dundas (1910, pp. 65–66 & Plate XVII)",
+          "translation": "Pastoral and agricultural economy on the Kamasia range; Nandi-style dress, ornaments & circumcision for both sexes; Plate XVII Fig. 5 (2 Kamasia Youths) & Fig. 6 (2 Kamasia Girls)",
+          "pronunciation": "ka-ma-si-a plate xvii",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 65–66, 71 & Plate XVII Figs. 5–6)",
+          "audioFile": null
         }
       ]
     }
@@ -32400,5 +32540,5 @@
   "source": "Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 4613
+  "totalEntries": 4633
 }

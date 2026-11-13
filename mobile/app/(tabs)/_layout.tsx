@@ -1,8 +1,8 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Platform, Pressable, StyleSheet, View } from "react-native";
-import { useTheme, androidRipple } from "../../src/theme";
+import { Platform, StyleSheet, View } from "react-native";
+import { useTheme } from "../../src/theme";
 
 function M3TabIcon({
   name,
@@ -48,12 +48,6 @@ export default function TabLayout() {
         ],
         tabBarLabelStyle: styles.tabLabel,
         tabBarItemStyle: styles.tabItem,
-        tabBarButton: (props) => (
-          <Pressable
-            {...(props as any)}
-            android_ripple={androidRipple(theme.rippleColor, true)}
-          />
-        ),
       }}
     >
       <Tabs.Screen
@@ -102,8 +96,6 @@ export default function TabLayout() {
         name="matatu"
         options={{
           href: null,
-          tabBarButton: () => null,
-          tabBarItemStyle: { display: "none" },
         }}
       />
       <Tabs.Screen

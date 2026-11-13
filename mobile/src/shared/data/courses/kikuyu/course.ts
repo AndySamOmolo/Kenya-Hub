@@ -29,7 +29,7 @@ export const KIKUYU_CONFIG: LanguageConfig = {
     "hemery-kikuyu-1903",
     "kamba-kikuyu-vocabularies",
     "mcgregor-kikuyu-1904",
-    "routledge-kikuyu-1910",
+    "routledge-prehistoric-people-1910",
     "hobley-akamba-ethnology-1910",
     "johnston-bantu-1919",
     "bantu-beliefs",
@@ -3968,6 +3968,178 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               {
                 "left": "Itara (Ma-) & Ikombi (Ma-)",
                 "right": "Garner, granary, loft & food storehouse (pp. 72, 103, 162, 183)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-unit-routledge-1910-ethnography",
+    "title": "Unit 15: Routledge (1910) 'With a Prehistoric People: The Akikúyu of British East Africa' — 10 Ages, 17 Initiation Years, 13 Clans, Metallurgy, 30-Item Market List, Ki-shan'-di Rattles, 12 Dances, 9 Trials, 29 Thá-hu Causes & 13 Folktales",
+    "description": "Master the historical, technical, legal, musical, ritual, and narrative vocabulary recorded by W. Scoresby & Katherine Routledge across Fort Hall and Nyeri (1902–1910, pp. i–xxxii, 1–392, Plates I–CXXXVI).",
+    "icon": "BookOpen",
+    "skills": [
+      {
+        "id": "kikuyu-routledge-1910-history-clans-crafts-15-1",
+        "title": "10 Ages, 17 Initiation Years (1891–1907), 13 Clans, Metallurgy, 6-Step Chain-Making & Wa-wer'-u Market",
+        "icon": "Sparkles",
+        "description": "Study the 10 generation ages, 17 annual initiation cohorts, 13 i-ri-ka clans, 17 age-stage terms, iron smelting, cold wire-drawing, 6-step chain-making, 2-stage pottery, and 30-item Wa-wer'-u market price list in Routledge (1910, pp. 1–115).",
+        "tips": "In Routledge (1910, pp. 92–97), the 7-hole wire-drawing plate is called 'ú-ta' (same word as a bow, sized with needle 'mu-ku'-ha'), while the 3-piece clamp 'rú-ga' consists of the split bar 'ró-ga', wedge chisel 'ke-rá-si', and collar 'n'gó-me'.",
+        "words": [
+          {
+            "target": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
+            "source": "The 10 Ages Since the Creation of the World (from first man Mam'-ba & son N'jí-ri to rising generation Mu-i-run'-gu)",
+            "pronunciation": "man-ji-ri / mam-ba / n-ji-ri / man-do-ti / chi-e-ra / ma-tha-thi / n-de-mi / i-re-gi / ma-i-na / mwan-gi / mu-i-run-gu",
+            "hint": "Routledge (1910, Introduction p. 9)"
+          },
+          {
+            "target": "1891 Ngan'do • 1892 Ngi'-ge • 1893 Nyon'go • 1894 Mutung'o • 1898 Nu'-thi • 1899 Ki-en-je'ku • 1901 Hit'-ti • 1903 Mo-chi'-ri • 1907 Ka-ban'go",
+            "source": "Key annual circumcision cohorts among the 17 named years (1891–1907: locusts, cattle plague, smallpox, jigger flea, septic wound, hyena, judge, 'year on the back')",
+            "pronunciation": "ngan-do / ngi-ge / nyon-go / mu-tung-o / nu-thi / ki-en-je-ku / hit-ti / mo-chi-ri / ka-ban-go",
+            "hint": "Routledge (1910, Introduction pp. 10–11)"
+          },
+          {
+            "target": "A'si (A-ki-e-ki / N'dor-ó-bo) & A-gum'-ba (A-mai-tho ma chi-a-na) • 13 i-ri-ka clans & ki-rú-me curse • 10 male & 7 female age terms",
+            "source": "Forest elephant hunters (30-goat clearing sale) & 4 ft 6 in. obsidian pit-dwellers • 13 exogamous clans & dying father's curse • Life stages from Ka'-he/Ka-re'-go to M'zur'-i a bou'i/I-he'-ti",
+            "pronunciation": "a-si a-ki-e-ki / a-gum-ba / i-ri-ka / ki-ru-me / ka-he / m-zur-i a bou-i / i-he-ti",
+            "hint": "Routledge (1910, pp. 3–6, 20–25, 138–141)"
+          },
+          {
+            "target": "mu-san'-ga • i-li'-ma • mu'-ra (mi-kum-ba'-ti, mer-u'-ki, ger'-u-a) • ki-ka'-ma & i-gan'-ga • mu-hi'-ga & ke-li'-ha • ú-ta & rú-ga (ró-ga, ke-rá-si, n'gó-me) • ga-zi'-ka → ki-len-ge'-ri / mu-i-nor'-o",
+            "source": "Washed magnetite ore • Pit crucible • Twin bellows (mouth-slips, wood nozzle, clay tuyère) • 2-lb iron bloom & slag • 50-lb granite anvil & 2.5-lb rotated bar hammer • 7-hole draw-plate & 3-piece clamp • Loose links → 6-step chain",
+            "pronunciation": "mu-san-ga / i-li-ma / mu-ra / ki-ka-ma / mu-hi-ga / ke-li-ha / u-ta / ru-ga / ga-zi-ka / ki-len-ge-ri",
+            "hint": "Routledge (1910, Part I Ch. IV & Appendix IV, pp. 79–97, 353–356)"
+          },
+          {
+            "target": "li-um'-ba (ki-ta-ru'-ru, nen-gu-hu'-ha) + m'bi-u / n'daka = 6-lb mun'-du-a • ku-i'-nya ki-shan'-di (47 & 38 symbols) • Ku-lan-gí-ri, Dú-mo, Mu-goí-i-o, Ku-lu-mí-si-a",
+            "source": "Winnowed granite sand + marsh clay = 6-lb clay bar (2-stage pottery) • Boy's pictographic gourd-rattle tour (Rattles I & II) • Transcribed songs by Dr. C. S. Myers",
+            "pronunciation": "li-um-ba / ki-ta-ru-ru / nen-gu-hu-ha / mun-du-a / ku-i-nya ki-shan-di / ku-lan-gi-ri / mu-goi-i-o",
+            "hint": "Routledge (1910, Part I Chs. V–VI, pp. 97–115)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ku-nor'-a → Ku-ta-nu'-ka → Ku-o-go'-sa (from Mu-gi'-o, Mon-du'-e, Mu-ke'-o, Mu-lin'-da n'gu-ru'-e & Mu-gu'-mu).",
+            "source": "Peel bark → Chew bark → Roll twine on the thigh (3-step string-making from 5 fibrous barks, Routledge 1910, pp. 77–79)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In W. Scoresby & Katherine Routledge's 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, p. 9), what is the exact sequence of the 10 Ages Since the Creation of the World?",
+            "correctAnswer": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
+            "options": [
+              "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
+              "Ngan'do → Ngi'-ge → Nyon'go → Mutung'o → Thungu'-ya → Ka-gi'-cha → Ki-angwa'chi → Nu'-thi → Ka-ban'go",
+              "Ka'-he → Ki'-he → Mu'-mo → M'wa-na'-ke → Wa-ka-ny-u-ku → Mun'-du mu-ge'-ma → Ka-ra-bai' → M'zur'-i",
+              "Mo-ran'-ja → N'dun'-du → Ke-thi-ga → Ki-á-ma → N'já-ma"
+            ],
+            "hint": "See Routledge (1910, Introduction p. 9)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu metallurgical or craft term from Routledge (1910, pp. 79–102, 367–379) with its exact function:",
+            "correctAnswer": "ú-ta (sized with needle mu-ku'-ha): 7-hole spindle-shaped iron wire-drawing plate (pp. 92–93)",
+            "pairs": [
+              {
+                "left": "ú-ta (sized with needle mu-ku'-ha)",
+                "right": "7-hole spindle-shaped iron wire-drawing plate (pp. 92–93)"
+              },
+              {
+                "left": "rú-ga (= ró-ga + ke-rá-si + n'gó-me)",
+                "right": "3-piece wire-drawer's clamp tightened with wooden mallet ju-gu'-ma (p. 93)"
+              },
+              {
+                "left": "i-li'-ma, mu'-ra & ki-ka'-ma",
+                "right": "Clay-lined smelting pit crucible, twin bellows & 2-lb steely wrought-iron bloom (pp. 82–86)"
+              },
+              {
+                "left": "li-um'-ba + m'bi-u / n'daka = mun'-du-a",
+                "right": "Winnowed granite sand + marsh clay kneaded into 6-lb pottery bars (pp. 98–99)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-routledge-1910-law-religion-folklore-15-2",
+        "title": "Second Birth, 12 Dances, Ki-á-ma & N'já-ma Governance, 9 Trials, N'gaí Sacrifice, 29 Thá-hu Causes, 14-Hole Ki-tha-si & 13 Folktales",
+        "icon": "MessageCircle",
+        "description": "Master the social rites, 12 classified dances, 3 elder grades, 9 dated court trials, 6 Mu-ma ordeals, N'gaí sacrifice, Ai-twi'-ka snake worship, Mun'-du Mu-gu divination, 29 Thá-hu causes, 14-hole Ki-tha-si stone, and 13 Ro-gá-nu folktales in Routledge (1910, pp. 117–333).",
+        "tips": "In Routledge (1910, pp. 198–208), the first elder grade is called Mo-ran'-ja in Mungé's district, N'dun'-du in Karúri's district, and Ke-thi-ga in Southern Kikúyu; the second grade is Ki-á-ma; and the co-optive inner executive circle is N'já-ma.",
+        "words": [
+          {
+            "target": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i • Mam-bú-ra, Ku-to-ni-a, Ku-en'-ja & ki-kan'-da • I-he'-ti & Ki-á-ma flexed burial",
+            "source": "Rite of Second Birth ('to be born again / born of a goat') • Initiation dances, ear-wood ceremony, 4th-day shaving & lodge • Privileged hillside burial for elders & toothless old women",
+            "pronunciation": "ko-chi-a-ru-o ke-ri / mam-bu-ra / ku-to-ni-a / ku-en-ja / ki-kan-da / i-he-ti",
+            "hint": "Routledge (1910, Part II Chs. III–V, pp. 151–173)"
+          },
+          {
+            "target": "Ke-boí-i-a, N'goi-í-sa, Mam-bú-ra (boys) • N'dor-ó-si, Ki-bá-ta, N'di'-ri & Maize-Sheath Clay Image Dance (men) • Mui-goí-o, Ke-chú-ki-a, Ke-o-na-no, Ku-i-ne-né-ra (mixed) • Ge-ti-ro, N'dú-mo (women)",
+            "source": "All 12 classified dances across 4 categories + the Gúra River harvest dance before the 9-in. clay image ('the little one')",
+            "pronunciation": "ke-boi-i-a / n-goi-i-sa / ki-ba-ta / mui-goi-o / ke-chu-ki-a / ku-i-ne-ne-ra / ge-ti-ro / n-du-mo",
+            "hint": "Routledge (1910, Part II Ch. VI, pp. 178–191)"
+          },
+          {
+            "target": "Mo-ran'-ja / N'dun'-du / Ke-thi-ga → Ki-á-ma (Ma-tu'-ra n'gu'-ru; Mu-ti'-gi, Mu-nder-en'-du, Mu-ta'-zi) → N'já-ma (n'der'-i feather; n'gi-ri'-a beetle) • 9 Trials & 6 Mu-ma Ordeals",
+            "source": "Three official elder grades, ceremonial leaf-bunch & 3 staff woods, eagle feather & eloquence beetle • 9 dated trials (Dec. 1907–Jan. 1908) & 6 ordeal forms",
+            "pronunciation": "mo-ran-ja / n-dun-du / ki-a-ma / ma-tu-ra n-gu-ru / n-ja-ma / n-gi-ri-a / mu-ma",
+            "hint": "Routledge (1910, Part II Chs. VII–VIII, pp. 195–221)"
+          },
+          {
+            "target": "N'gaí / Mwi-nin-ya-ga (8-shrub Mu-gú-mu sacrifice; 'N'ga-na! Sa-i!') • Ai-twi'-ka & N'da-ma-thi-a • N'gor'-o vs. N'gó-ma (Mi-i-ri-ni-ya Mi-kon-go-i)",
+            "source": "Supreme Creator ('Possessor of Whiteness'), 8-shrub fig-tree sacrifice & responses • Snake worship on the Ma-thi-oy-a • Living soul vs. ancestral spirit in the underworld",
+            "pronunciation": "n-gai / mwi-nin-ya-ga / mu-gu-mu / n-ga-na / sa-i / ai-twi-ka / n-da-ma-thi-a / n-gor-o / n-go-ma",
+            "hint": "Routledge (1910, Part III Chs. I–II, pp. 225–248)"
+          },
+          {
+            "target": "Mun'-du Mu-gu (5 m'boo-thu gourds: ru-sú-ku, gon'-du, u'-mu, u-then'-gi, í-ra; m'wá-no lot-gourd) • 29 Thá-hu causes & 9 Tuso plants • 14-Hole Ki-tha-si of De-gua wa Ki-ma-ni • 13 Ro-gá-nu (N'gá-nu)",
+            "source": "Medicine-Man's 5 gourds & divination gourd • 29 defilement causes & 9 purification herbs • 14-hole curse stone at Tú-su • 13 folktales dictated by Na-ga-tú-u & Mo-só-ni",
+            "pronunciation": "mun-du mu-gu / m-boo-thu / m-wa-no / tha-hu / ki-tha-si / ro-ga-nu / n-ga-nu",
+            "hint": "Routledge (1910, Part III Ch. III & Part IV, pp. 249–328)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "O N'gaí! Mwi-nin-ya-ga! — N'ga-na! Sa-i! Sa-i! • Ta-hí-ka thá-hu! Ta-hí-ka ki-ú-ru! Ni-da-ni-na thá-hu wa-ku.",
+            "source": "O God! Possessor of Whiteness! — So be it! Hear, hear! • Vomit the sin! Expel what is bad! I have ended your ceremonial uncleanness (Routledge 1910, pp. 231, 235–236, 262–263)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In W. Scoresby & Katherine Routledge (1910, Part III, pp. 251–254, 273–275), what are the five medicine gourds (m'boo-thu) carried by a fully initiated Mun'-du Mu-gu and what is the Ki-tha-si kept by De-gua wa Ki-ma-ni at Tú-su?",
+            "correctAnswer": "The 5 m'boo-thu gourds contain (1) ru-sú-ku, (2) gon'-du, (3) u'-mu, (4) u-then'-gi, and (5) white diatomaceous earth í-ra; the Ki-tha-si is a 14-hole reddish sandstone cylinder (1 central + 13 side holes, bought from the Akam'ba for 30 goats) poked with 7 grass stalks in judicial oaths",
+            "options": [
+              "The 5 m'boo-thu gourds contain (1) ru-sú-ku, (2) gon'-du, (3) u'-mu, (4) u-then'-gi, and (5) white diatomaceous earth í-ra; the Ki-tha-si is a 14-hole reddish sandstone cylinder (1 central + 13 side holes, bought from the Akam'ba for 30 goats) poked with 7 grass stalks in judicial oaths",
+              "The 5 gourds contain beer, milk, honey, blood, and water; the Ki-tha-si is a wooden drum",
+              "The 5 gourds contain iron sand; the Ki-tha-si is a warrior's shield",
+              "The 5 gourds are musical rattles; the Ki-tha-si is a granary basket"
+            ],
+            "hint": "See Routledge (1910, pp. 251–254, 273–275 & Plate CXXXV)"
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Kikuyu ritual, legal, or oral-literature term from Routledge (1910) with its exact description:",
+            "correctAnswer": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i: Rite of Second Birth ('to be born again / born of a goat', pp. 151–153)",
+            "pairs": [
+              {
+                "left": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i",
+                "right": "Rite of Second Birth ('to be born again / born of a goat', pp. 151–153)"
+              },
+              {
+                "left": "Ai-twi'-ka & N'da-ma-thi-a",
+                "right": "Periodical snake-worship festival & river-monster fed by Mu-tha-ka on the Ma-thi-oy-a (pp. 237–238)"
+              },
+              {
+                "left": "N'gor'-o vs. N'gó-ma (in Mi-i-ri-ni-ya Mi-kon-go-i)",
+                "right": "The soul in life vs. the disembodied spirit after death in the subterranean world (pp. 239–241)"
+              },
+              {
+                "left": "Ki-shu-ro & Nya-kai-ro ('wife of God')",
+                "right": "Two Akikúyu prophets who vanished bodily (translated) before 1897–1898 (p. 255)"
               }
             ]
           }

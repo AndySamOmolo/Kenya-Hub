@@ -12,9 +12,9 @@
     "Isiolo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
+  "dictionaryVersion": "3.2",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, Abbreviations p. xiv, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
   "categories": [
     {
       "id": "greetings",
@@ -8779,17 +8779,17 @@
           "audioFile": null
         },
         {
-          "english": "Sinin",
-          "translation": "plane, surface",
-          "pronunciation": "plane surface",
-          "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+          "english": "Plane, surface (m.n.)",
+          "translation": "siman,—ki, or sinin,—ti",
+          "pronunciation": "si-man / si-nin",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, p. 127) Somali-English and English-Somali Dictionary",
           "audioFile": null
         },
         {
-          "english": "Neigh",
-          "translation": "danan; neighing, n",
-          "pronunciation": "danan",
-          "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+          "english": "Neigh (v.i.) & Neighing (n.)",
+          "translation": "danan (v.i.); danan,—ki (neighing, n.)",
+          "pronunciation": "da-nan",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, p. 242) Somali-English and English-Somali Dictionary",
           "audioFile": null
         },
         {
@@ -9374,10 +9374,10 @@
           "audioFile": null
         },
         {
-          "english": "Slabberer",
-          "translation": "nin alyo muruh wein leh, slabberer slabberer weina",
-          "pronunciation": "nin alyo muruh wein leh slabberer slabberer weina",
-          "context": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+          "english": "Slabberer (n.)",
+          "translation": "nin alyo muruh wein leh,—ki, nin alyo muruh weina",
+          "pronunciation": "nin al-yo mu-ruh wein leh",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, p. 266) Somali-English and English-Somali Dictionary",
           "audioFile": null
         },
         {
@@ -14526,10 +14526,10 @@
           "audioFile": null
         },
         {
-          "english": "Slave",
-          "translation": "adon, bidai",
-          "pronunciation": "adon bidai",
-          "context": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [n.]",
+          "english": "Slave (n.) & Negro (n.) — Including Historical Reference to the Swahili Coast (Sawaheli / Sawahili)",
+          "translation": "sawaheli,—gi / sawahili,—gi • adon,—ki (mas.), adon,—ti (fem.) • bida or bidai,—ihi (mas.), bidad,—di (fem.)",
+          "pronunciation": "sa-wa-he-li / a-don / bi-dai / bi-dad",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, pp. 123, 242, 266) Somali-English and English-Somali Dictionary [n.]",
           "audioFile": null
         },
         {
@@ -15184,10 +15184,10 @@
           "audioFile": null
         },
         {
-          "english": "Sidedad",
-          "translation": "eighth",
-          "pronunciation": "eighth",
-          "context": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [num.ord.]",
+          "english": "Eighth (num.ord.)",
+          "translation": "sidedad,—ki, —di",
+          "pronunciation": "si-de-dad",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, p. 127) Somali-English and English-Somali Dictionary [num.ord.]",
           "audioFile": null
         },
         {
@@ -17611,6 +17611,132 @@
           "pronunciation": "wan imi wad timi wu yimi wei timi weinu nimi vs wan shega wad shegta wu shega",
           "context": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language, Introduction p. xiv",
           "audioFile": null
+        },
+        {
+          "english": "Front Matter, Cornell Sage Endowment Bookplate (PJ 2533 E92, A.110984 — 9/2/1898, Archive cu31924026888820) & Title Page of De Larajasse (1897)",
+          "translation": "Somali-English and English-Somali Dictionary, by Rev. Fr. Evangelist de Larajasse, Miss. Apost. Ord. SS. Francisci Cap. Provinciæ Lugdunensis Alumnus (London: Kegan Paul, Trench, Trübner & Co., Ltd., Paternoster House, Charing Cross Road, 1897)",
+          "pronunciation": "de la-ra-jas-se 1897",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, PDF pp. 2, 4, 7) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Preface Phonetic Table & Syrian Alphabet Transliteration System (pp. v–xiii) in De Larajasse (1897)",
+          "translation": "21 Roman letters + Syrian alphabet signs (S. J. Beyrouth): vowels a, e, i, o, u, w (w is a vowel only after a and o in aw, ow); diphthongs ai (diaeresis ï when sounded separately), ei, au, aw (used before vowels & in attributive verbs), ow (hollow sound like oh-oo in an empty cask); Arabic ع (‘aïn) marked ‘a/a‘, ‘e/e‘, ‘i/i‘, ‘o/o‘, ‘u/u‘; cerebral d (Sanscrit, tongue curved against front of palate, nearly rd in 'hard, card') vs. dental d (tongue between teeth); strong chest aspirate h (ح); guttural h = غ ق خ (like Swiss German ch in 'chirurg, hochzeit, loch'; nearly two-thirds begin with ق); reciprocal correspondence p → b, v → f/b, z → s",
+          "pronunciation": "preface pp v-xiii phonetic key",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Preface pp. v–xiii / PDF pp. 9–17) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Preface Pronunciation Minimal Pairs & Illustrative Words (ader, sōr vs. kol, gūr vs. gur, maya) in De Larajasse (1897, pp. vii–xii)",
+          "translation": "ader ('paternal uncle', pron. ah-dare) • sōr ('food', pron. sore) vs. kol ('time', pron. koll) • gūr ('marriage', pron. goore) vs. gur ('pick up', pron. goor) • maya ('no', pron. matha with y sounded like th in 'loathe')",
+          "pronunciation": "ah-dare / sore vs koll / goore vs goor / matha",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Preface pp. vii–xii) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Complete Table of 44 Grammatical Abbreviations (p. xiv / PDF p. 18) in De Larajasse (1897)",
+          "translation": "def., indef., gend., m., f., art., n., sing., pl., a., a.p., a.d., a.v., n.c., n.o., n.i., n.d., prn., p.pers., dem.prn., pos.prn., p.ref., p.rel., v., v.tr., v.int., v.p., v.c., v.r., v.att., v.imp., v.def., adv., prp., conj., int., part., part.int., part.neg., aff., ch., gram., see.",
+          "pronunciation": "44 grammatical abbreviations",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Explanation of the Abbreviations, PDF p. 18) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Ogaden, Dulbanteh & Darod Dialect Locution for Fornication/Adultery (Supplement p. 293) vs. Standard sino / sinaiso / sinaisi (p. 127) in De Larajasse (1897)",
+          "translation": "wa debai (locution: 'he has committed fornication, adultery') & wa i debai ('he has committed adultery with me' — 'These expressions are used in the Ogaden, and by the Dulbanteh and Darod', Supplement p. 293) • sino (f.n., adultery), sinaiso (v.i., commit adultery), sinaisi (v.c., cause to commit adultery, p. 127)",
+          "pronunciation": "wa de-bai / wa i de-bai / si-no / si-nai-so",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Part I p. 127 & Supplement p. 293) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Swahili / East African Coast Reference (sawaheli,—gi / sawahili,—gi, pp. 123, 242, 266), Galla / Oromo Reference (daba galla,—hi, pp. 26, 270) & Africa (p. 154) in De Larajasse (1897)",
+          "translation": "sawaheli,—gi (p. 123) / sawahili,—gi (pp. 242, 266) • daba galla,—hi / —ihi (earth squirrel living in holes, lit. 'Galla-tail', vs. rock squirrel walo,—adi, pp. 26, 270) • Africa (n., Africa, p. 154)",
+          "pronunciation": "sa-wa-he-li / da-ba gal-la / wa-lo",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, pp. 26, 123, 154, 242, 266, 270) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "East African & Kenyan Antelope Taxonomy in De Larajasse (1897, pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245)",
+          "translation": "si‘g,—gi (hartebrest or Coke's antelope / cow antelope, pp. 127, 221) • garanug,—ti (Gazella walleri / gerenuk, p. 54) & lig,—gi (male garanug, p. 100) • adéryo,—adi (female/general koodoo, Strepsiceros imberbis), adéryo ‘ari,—gi (lesser koodoo antelope, used for both genders) & godir,—ki (male greater koodoo, Strepsiceros kudu, pp. 4, 56, 231) • b‘e‘id,—ki / b‘i‘id / bi‘‘id,—ki (oryx / beisa antelope [misprinted 'bison antelope' on p. 170, corrected to 'beisa antelope' on p. 245], pp. 19, 170, 245) • sagaro or sakaro,—adi (dik-dik / sand antelope, pp. 120, 194) • dabatag,—ti (Clarke's roebuck, p. 26)",
+          "pronunciation": "si‘g / ga-ra-nug / lig / a-der-yo ‘a-ri / go-dir / b‘e‘id / sa-ga-ro / da-ba-tag",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Rupee & Shilling / 8-Anna Currency System & Money-Changing Idioms in De Larajasse (1897, pp. 118, 123)",
+          "translation": "rubiad,—di (f.n., rupee; pl. rubabi; in counting, Somals employ the contraction rubod instead of rubiadod, p. 118) • rubi (m.n., 1 shilling, 8 annas, p. 118) • sarrif,—ki (m.n., change of money) & sarrif (v.tr., change: rubiadda i sarrif = 'change me the rupee'; so sarrif = 'go and change', p. 123)",
+          "pronunciation": "ru-bi-ad / ru-ba-bi / ru-bod / ru-bi / sar-rif",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, pp. 118, 123) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 26 (DAB — 26 — DAF): Camel Suckling Separation (dabsi / dabsin / dabsis), Cannibal Terms (dadhal / dad‘un / dadhalato) & Ewer/Milk Pouring Sentences (dādi / ka dādi / ku dādi)",
+          "translation": "dabeir or dameir,—ki (ass) • dabsi (v.i.: 1. separate a young animal from its mother that it may not suck during the day; 2. exchange two sucklings, especially camels; 3. throw a child in order to get rid of), dabsin,—ti (f.n.), dabsis,—ki, —yo (m.n., suckling) • dad,—ki (people; dadki gabowbai = 'the old people'; dad hun,—ki, —mo = 'ferocity'), dadhal and dad‘un,—ki (m.n., cannibal), dadhalato (f.n., cannibal) • dādi (v.i., flow, leak, pour out: baldigu bihuhu dādiya = 'the ewer or bucket leaks'; biyaha dādi = 'pour out the water'), ka dādi (v.tr., spill: ‘anihi la dādi = 'the milk is poured out, spilt'), ku dādi (v.tr., sow)",
+          "pronunciation": "da-bsi / da-bsin / da-bsis / dad-hal / da-di",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 26 / PDF p. 50) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 26 (DAB — 26 — DAF): Big Stone vs. Dream Homographs (dadab), Taste Sentence (dadan / dadami), Well-Descent (dāf) & Passing-By Sentences (daf)",
+          "translation": "dadab,—ki, —yo (m.n., dream) & dadab (v.i., dream) vs. dadab,—ti (f.n., a big stone) • dadan,—ki (m.n., taste, flavour: hardadkaigi dadankisi wa hunyahai = 'I have a bad taste in my mouth') & dadami (v.tr., taste) • dāf (v.i., go down, descend in a well/pit: ‘elka u dāf = 'descend, go down into the pit') & dāf,—ti (f.n., bottom, below: ‘elka dāftisi ban gadai = 'I have reached the bottom of the well') • daf (v.i., pass, pass through, pass by without taking any notice: magalada yan dafai = 'I passed through the country'; anigu badrigi ban so dafai = 'I passed by the father'; war! i daf, na daf = 'pass, go away, let me or us be quiet')",
+          "pronunciation": "da-dab / da-dan / daf",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 26 / PDF p. 50) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 123 (SAR — 123 — SER): Paediatric Scarification Custom (sársar / sarsar), Room Flooring Sentences (sarab) & Fillet (sarar / diná‘)",
+          "translation": "sár (v.tr., cut, incise), sársar (v.tr., vaccinate, cut the skin), sarsar,—ki (m.n., vaccination, cutting of the skin: 'Somals have the habit of cutting the skin of their children when they are sick and especially when they are pot-bellied'), sarmo (f.n., cut, gash, incision) • sarab,—ki (m.n., row) & sarab with ku (v.tr., put in rows and join: lohyada ahalka ku sarab = 'floor the room [cover with planks]'; alwahda sarabkeda = 'the flooring') • sarar,—ti and diná‘,—hi (fillet, the loins of a horse, an ox...)",
+          "pronunciation": "sar / sar-sar / sa-rab / sa-rar di-na‘",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 123 / PDF p. 147) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 123 (SAR — 123 — SER): Persuasion (sasab), Dew vs. Goldsmith Homographs (sayah), Servant (sebiyan) & Sleep/Lamp-Extinguishing Sentences (seho / sehi / sehasho)",
+          "translation": "sasab (v.tr., induce, persuade: wa la sasabai = 'he is persuaded'), sasabo (v.tr., flatter), sasab or sasabnin,—ki, —ti (persuasion, enticement) • sayah,—hi (m.n., dew) & sayahsan (a., dewy: dulku wa sayahsanyahai = 'the earth is dewy') vs. sayah,—hi (m.n., goldsmith) • sebiyan,—ki (m.n., servant: sebiyan ba lehyahai = 'he has a servant') • seho (v.i., sleep; so seho = 'go to sleep'), sehi (v.i., make him sleep, blow, put out: ilmaha sehi = 'make the baby sleep'; siradka sehi = 'blow out the lamp'), sehasho (f.n., sleep) • se‘ni,—gi or su‘un,—ti, —yo (plate, dish) • sergad,—di or sergan,—ti (flogging, scourging)",
+          "pronunciation": "sa-sab / sa-yah / se-bi-yan / se-ho / se-hi",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 123 / PDF p. 147) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 127 (SIB — 127 — SIS): Slope (sibibah), Water-Bag Erratum (sibrar / shagul [chagul]), Carrying Sentences (sid / sido) & Torture Paradigm (silei‘ / sili‘i / sila‘n / sila‘san)",
+          "translation": "sibibah,—di (f.n., a declivity, slope: mel sibibahah = 'a sloping place') & sibibaho (v.i., slide) • sibrar,—ki (m.n., leathern water-bag, shagul [errata for chagul]) • sid (v.tr., carry, bring: war san ban ku sida = 'I bring to you good news') & sido (v.r., take and carry for yourself; sita: sortá sido, or iss ka sido = 'take your food') • silei‘,—hi (m.n., suffering, torment, torture; v.p., be tortured), sili‘i (v.tr., torment, torture, persecute), sila‘n (a., dull: shuhul sila‘n = 'dull work'), (nin) sila‘san (a.v., tortured man)",
+          "pronunciation": "si-bi-bah / si-brar / sid / si-do / si-lei‘",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 127 / PDF p. 151) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 127 (SIB — 127 — SIS): Parallel/Equal Geometry (sin / siman / sinin), Clientage (singal), Neologism Creation (sinif) & Lamp Lighting (sirad / siradan)",
+          "translation": "sin or iss ku sin (v.tr., flatten, level: sima, wan simi), siman (a.v., plain, smooth, straight, parallel: dilimihi wa simanyihin = 'the lines are parallel'; iss ku simanyihin = 'they are equal'), siman,—ki or sinin,—ti (m.n., plane, surface) • singal,—ki (m.n., client, a man who comes under the protection of a powerful man) • sinif (v.tr., introduce, produce: erai ‘usub sinif = 'create a new word') • sirad,—ki, —yo (m.n., lamp; v.tr., light: siradka sirad = 'light the lamp') & siradan (a.v., lit, lighted: siradka siradan i ken = 'bring me a lighted lamp') • siriri (v.tr., choke, strangle) & siririn,—ti or siriris,—ki (strangulation) • sisa or sesa,—di (dust, sandstorm)",
+          "pronunciation": "si-man / si-ngal / si-nif / si-rad / si-ri-ri",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 127 / PDF p. 151) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 242 (NAI — 242 — NEW): Naming (maga‘ / u bihi / ugu yed), Proximity Idioms (ag / dow / sokai / higta / durug), Needy ('aïdah), Never-Mind Idiom (yelkisa / yelkeda) & News Compounds (war / nabad / warhab)",
+          "translation": "name: maga‘,—hi & v.tr. u bihi, ugu yed • near: ag, agta, dow, sokai, higta; be near: dowow, hig; come near: so dowow, so durug; go near: u dowow, u durug; put near: so dowai, u dowai, iss ku dowai • needy (man): (nin) ‘aïdah, ‘aïd,—ki • never: abadan, abkai, abidkaina, weligai; never mind: yelkisa, yelkeda • news: war,—ki; good news: nabad,—di; bring news: war gei or ken; bring news from: ka war ken; a man receiving news: warhab,—ki",
+          "pronunciation": "ma-ga‘ / so do-wow / ‘ai-dah / yel-ki-sa / war-hab",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 242 / PDF p. 266) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 266 (SIN — 266 — SLA): Sixfold Expressions (leh jer), Seven Specialized Skin & Hide Terms (dub, harag, sān, dereb, furad, weilalis, gibil), Four Skull Regions (indolai, dako, kug, ges) & Five Slaughter Verbs",
+          "translation": "[since] you saw him: halkiyo gortad aragtai • sixfold: leh jer o min lehah, or leh jer o leh wada ah • skin (n.): dub,—ki, harag,—gi, sān,—ti; skin sewn to carry children: dereb,—ti, furad,—ki; skin sewn to make a couch: weilalis,—ti; skin placed for a shed: gibil,—shi • skull (n.): indolai,—ihi; upper part of the skull: dako,—adi, kug,—ti; each side of the skull: ges,—ti • slaughter (v.tr.): gowra‘, kaga kudi, ka kausi, kaga hawi, dil (n.: gowra‘,—ihi)",
+          "pronunciation": "de-reb / fu-rad / wei-la-lis / gi-bil / in-do-lai / gow-ra‘",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Book p. 266 / PDF p. 290) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 293 (Supplement: BUR — 293 — DER): Women's Singing (burambur), Mountain Range Plural (buro iss ku yal → burihi iss ku yil) & Triple-Divorce Oath Formula (dalah)",
+          "translation": "burambur (v.tr., sing — used only for women) • buro iss ku yal (m.n., a range of mountains; pl. burihi iss ku yil) • dabai (v.tr., affirm, assure; kaga dabai = 'make certain') • dalah,—di (f.n., divorce, see fur) & dalah (v.tr., divorce: sadehda dalahod bad igaga furaisantahai = 'a kind of swearing by which they pledge themselves to divorce')",
+          "pronunciation": "bu-ram-bur / bu-ro iss ku yal / da-lah",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Supplement p. 293 / PDF p. 317) Somali-English and English-Somali Dictionary",
+          "audioFile": null
+        },
+        {
+          "english": "Book Page 293 (Supplement: BUR — 293 — DER): Idioms of Concern (dan), Three-Stone Hearth (dardar), Perception Conjugation (daren) & Delator (dein ka tur)",
+          "translation": "dan (see Part I.): wa dantisi, or wa isagi iyo danti ('it is his concern'); aya dan leh? ('who has anything to say?'); ana dan leh ('I have something to say'); nin o dan u ma lihi ('I care for nobody') • dardar,—ki (m.n., 'the three stones on which they put their boiler') • daren (v.tr., perceive: darema, wan daremi; f.n. daren,—ti = 'perception, sensation') • dein,—ti (f.n., omission, leaving) & dein ka tur (m.n., delator, denunciator)",
+          "pronunciation": "wa dan-ti-si / dar-dar / da-ren / dein ka tur",
+          "context": "Rev. Fr. Evangelist de Larajasse (1897, Supplement p. 293 / PDF p. 317) Somali-English and English-Somali Dictionary",
+          "audioFile": null
         }
       ]
     }
@@ -17618,5 +17744,5 @@
   "source": "Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 2500
+  "totalEntries": 2518
 }

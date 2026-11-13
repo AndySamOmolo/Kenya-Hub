@@ -1033,11 +1033,11 @@ ins.adsbygoogle {
     gap: 0.4rem !important;
   }
   .hero-cta-btn {
-    padding: 0.725rem 1.1rem !important;
-    min-height: 2.85rem !important;
-    font-size: 0.875rem !important;
-    border-radius: 0.75rem !important;
-    gap: 0.45rem !important;
+    padding: 0.525rem 0.9rem !important;
+    min-height: 2.35rem !important;
+    font-size: 0.8125rem !important;
+    border-radius: 0.625rem !important;
+    gap: 0.375rem !important;
   }
   .badge {
     padding: 0.125rem 0.45rem !important;

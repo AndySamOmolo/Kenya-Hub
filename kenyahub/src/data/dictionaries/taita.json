@@ -25126,6 +25126,13 @@
           "pronunciation": "fi-ndu vi-ndu / m-fu-a m-vu-a / i-ru-va i-zu-va / n-do-nde / i-gha-na",
           "context": "14. Taita (Ki-dabida, s. Ki-sagala, k. Ki-siγau) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–107 & 1922, Vol. II, pp. 32–33)",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Dr. J. L. Krapf (1850) Preface on the Wateita of Kadiáro, Ndara & Bura and the Pokomóni Migration Tradition ('Ambakómo', pp. iii, viii)",
+          "translation": "Wateita (p. iii: one of the nine additional languages collected by Krapf alongside Wasegúa, Wasegéju, Wajagga, Wapári, Makúa, Wakuafi, Masai, and Galla; p. viii: the Wateita inhabiting the mountains of Kadiáro, Ndara, and Bura on the road to Jagga trace their original seats to the River Pokomóni [Dána], having been driven southward by the nomadic Galla and Kuafi tribes, and still call the Wanika 'Ambakómo', i.e., a people descending from the town or country of Komo or Pokomo)",
+          "pronunciation": "wa-tei-ta / ka-di-a-ro / n-da-ra / bu-ra / am-ba-ko-mo / po-ko-mo-ni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. iii, viii)",
+          "audioFile": null
         }
       ]
     }
@@ -25133,5 +25140,5 @@
   "source": "Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 3570
+  "totalEntries": 3571
 }

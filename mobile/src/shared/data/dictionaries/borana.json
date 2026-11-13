@@ -611,8 +611,8 @@
           "audioFile": null
         },
         {
-          "english": "Single",
-          "translation": "singly; adv. koba",
+          "english": "Single, adj. / Singly, adv.",
+          "translation": "koba",
           "pronunciation": "ly",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -6128,7 +6128,7 @@
         },
         {
           "english": "Spring",
-          "translation": "utāle",
+          "translation": "utāle; (originate) burke",
           "pronunciation": "u-tah-le",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -7647,7 +7647,7 @@
         },
         {
           "english": "Water",
-          "translation": "bisaniti obāse",
+          "translation": "bisaniti obāse; (to make drink, to irrigate, &c.) obāse",
           "pronunciation": "bi-sa-ni-ti o-bah-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -9201,7 +9201,7 @@
         },
         {
           "english": "Charcoal",
-          "translation": "kassala",
+          "translation": "kassala (Amh. ከሰል፡፡). A burning charcoal: mukukulu",
           "pronunciation": "kas-sa-la",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -10244,7 +10244,7 @@
         },
         {
           "english": "Give",
-          "translation": "kenne",
+          "translation": "kenne (Dank. kahhè). To give over, to deliver, daberse kenne",
           "pronunciation": "ken-ne",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -10391,8 +10391,8 @@
         },
         {
           "english": "Rise",
-          "translation": "bāĭè. The sun rises, adu bate. To",
-          "pronunciation": "ba-hi the sun ri-ses a-du ba-te",
+          "translation": "bāĭè. The sun rises, adu bate. To rise (from the dead), kaie. Rise of meats from the stomach, faeăme",
+          "pronunciation": "ba-i-e / a-du ba-te / ka-ie / fa-e-a-me",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -11791,7 +11791,7 @@
         },
         {
           "english": "Select",
-          "translation": "marate",
+          "translation": "marate (መረጠ፡), filate",
           "pronunciation": "ma-ra-te",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -12329,7 +12329,7 @@
           "audioFile": null
         },
         {
-          "english": "Like, v. J should",
+          "english": "Like, v. (I should like) [Like, v. J should-, p. 25]",
           "translation": "énfēda; nfjálata",
           "pronunciation": "enfeda",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -12378,9 +12378,9 @@
           "audioFile": null
         },
         {
-          "english": "Bear (To bring forth, daltshe. To carry)",
-          "translation": "bate",
-          "pronunciation": "to bring for dal-tshe to car",
+          "english": "Bear",
+          "translation": "To bring forth, daltshe. To carry, bate",
+          "pronunciation": "dal-tshe / ba-te",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -12546,28 +12546,28 @@
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make angry",
           "translation": "dellansu kāe",
           "pronunciation": "del-lan-su ka-he",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "To feel",
+          "english": "To feel pain",
           "translation": "kūkame; dūkübe",
           "pronunciation": "koo-ka-me",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make peace",
           "translation": "arárse; nagaia midáfate",
           "pronunciation": "ararse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make war",
           "translation": "dule; dula mideise; or dula kase",
           "pronunciation": "du-le",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -12917,7 +12917,7 @@
           "audioFile": null
         },
         {
-          "english": "To make- maker",
+          "english": "Peace-maker",
           "translation": "nama arárati; ka arársu",
           "pronunciation": "nama ararati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -13204,7 +13204,7 @@
           "audioFile": null
         },
         {
-          "english": "Upraid, (find fault)",
+          "english": "Upbraid (find fault) [Upraid, p. 56]",
           "translation": "iti lole; délane",
           "pronunciation": "i-ti lo-le",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -14191,14 +14191,14 @@
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be sick",
           "translation": "dúkube; dúkuba kaba",
           "pronunciation": "dukube",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be weak",
           "translation": "lafe; kúkăme",
           "pronunciation": "la-fe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -14226,7 +14226,7 @@
           "audioFile": null
         },
         {
-          "english": "To get",
+          "english": "To get tipsy",
           "translation": "matjái",
           "pronunciation": "matjai",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -16508,9 +16508,9 @@
           "audioFile": null
         },
         {
-          "english": "Quick",
-          "translation": "Quickly, adv. duffe, hurrise",
-          "pronunciation": "quic ad duf-fe hur-ri-se",
+          "english": "Quick, adj. / Quickly, adv.",
+          "translation": "daffe [printed duffe], hurrise",
+          "pronunciation": "daf-fe / hur-ri-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -16733,8 +16733,8 @@
         },
         {
           "english": "Fast, Fasting",
-          "translation": "tsoma. Abys",
-          "pronunciation": "tso-ma ab",
+          "translation": "tsoma (Abys. ጾም፡፡ Ar. صَوْم Heb. צוֹם)",
+          "pronunciation": "tso-ma",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -17649,7 +17649,7 @@
           "audioFile": null
         },
         {
-          "english": "To become",
+          "english": "To become surety",
           "translation": "gaddi fúdate",
           "pronunciation": "gaddi fudate",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -17670,7 +17670,7 @@
           "audioFile": null
         },
         {
-          "english": "Breakfeast",
+          "english": "Breakfast [Breakfeast, p. 6]",
           "translation": "ságale diramáti",
           "pronunciation": "sagale diramati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -18364,7 +18364,7 @@
         },
         {
           "english": "Tribute",
-          "translation": "gebara",
+          "translation": "gebara (Amh. ግብር፡፡; To pay tribute)",
           "pronunciation": "ge-ba-ra",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -18616,7 +18616,7 @@
         },
         {
           "english": "Help",
-          "translation": "barakata",
+          "translation": "barakata (Amh. በረከት፡ blessing), basuf",
           "pronunciation": "ba-ra-ka-ta",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -18770,7 +18770,7 @@
         },
         {
           "english": "Fever",
-          "translation": "woba",
+          "translation": "woba (Amh. ዋባ፡ tertian intermittent fever), bouwo",
           "pronunciation": "wo-ba",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -19196,7 +19196,7 @@
           "audioFile": null
         },
         {
-          "english": "Ill-treate",
+          "english": "Ill-treat [Ill-treate, p. 21]",
           "translation": "hamátjise",
           "pronunciation": "hamatjise",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
@@ -19287,7 +19287,7 @@
           "audioFile": null
         },
         {
-          "english": "From the dead",
+          "english": "Rise from the dead",
           "translation": "úrga ka dágga dùe iti behe",
           "pronunciation": "urga ka dagga due iti behe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -19456,7 +19456,7 @@
         },
         {
           "english": "Time",
-          "translation": "guya; zawani",
+          "translation": "guya; zawani (Amh. ዘመን፡፡), gafa. This time, gafa kana, zawani kanati. In time to come, zawaniti kanati",
           "pronunciation": "gu-ya",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -20029,7 +20029,7 @@
           "audioFile": null
         },
         {
-          "english": "Before last last year",
+          "english": "Year before last [before last —, p. 63]",
           "translation": "barkáni; bardingata dubbati",
           "pronunciation": "barkani",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -20128,8 +20128,8 @@
         },
         {
           "english": "Youth, young age",
-          "translation": "otshelluma, mutshama. Young man, gurba",
-          "pronunciation": "ots-hel-lu-ma muts-ha-ma young man gur-ba",
+          "translation": "otshelluma, mutshama. Young man, gurba; (of seventeen years) kondāla, dergegēsa. A vigorous youth, baiēsa",
+          "pronunciation": "ot-shel-lu-ma / mut-sha-ma / gur-ba / kon-da-la / der-ge-ge-sa / bai-e-sa",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -20162,7 +20162,7 @@
           "audioFile": null
         },
         {
-          "english": "Ths day before Yesterday",
+          "english": "The day before yesterday [ths day before —, p. 63]",
           "translation": "guiya dingetáti",
           "pronunciation": "guiya dingetati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -21752,7 +21752,7 @@
         },
         {
           "english": "For",
-          "translation": "da",
+          "translation": "—da (postposit.), egira. For he is great, guadada. prep. fi. For me, nafi",
           "pronunciation": "da",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -22200,8 +22200,8 @@
         },
         {
           "english": "Bed",
-          "translation": "affa. To be brought to",
-          "pronunciation": "af-fa to be brough to",
+          "translation": "affa. To be brought to bed (of women): dese. To bed, v. affe",
+          "pronunciation": "af-fa / de-se / af-fe",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -24930,7 +24930,7 @@
         },
         {
           "english": "Mild",
-          "translation": "artsha, gari",
+          "translation": "artsha, gari (Amh. ገር፡፡). To be mild, tole",
           "pronunciation": "ar-tsha ga-ri",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -24944,7 +24944,7 @@
         },
         {
           "english": "Name",
-          "translation": "maeka",
+          "translation": "maeka (Dankali, migāa). In my name, maekakiyāti",
           "pronunciation": "mae-ka",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -25133,7 +25133,7 @@
         },
         {
           "english": "Veil",
-          "translation": "kadāda",
+          "translation": "kadāda (Amharic, ቀዳዳ፡ a hole), dŭkko",
           "pronunciation": "ka-dah-da",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -26462,8 +26462,8 @@
           "audioFile": null
         },
         {
-          "english": "Sole",
-          "translation": "solely; adv. koba",
+          "english": "Sole, adj. / Solely, adv.",
+          "translation": "koba",
           "pronunciation": "so-lel",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -27085,10 +27085,10 @@
           "audioFile": null
         },
         {
-          "english": "Ingly",
-          "translation": "guda kadade",
-          "pronunciation": "gu-da ka-da-de",
-          "context": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [adv.]",
+          "english": "Instead",
+          "translation": "koda. Instead of the father, koda abba",
+          "pronunciation": "ko-da / ko-da ab-ba",
+          "context": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [prep.]",
           "audioFile": null
         },
         {
@@ -28394,7 +28394,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Measure, s.",
           "translation": "wadúdŭma",
           "pronunciation": "waduduma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -28534,7 +28534,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Quarrel, s.",
           "translation": "lola",
           "pronunciation": "lo-la",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -28779,7 +28779,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Silence, s.",
           "translation": "tjéllisa",
           "pronunciation": "tjellisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -28877,7 +28877,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Stamp, s.",
           "translation": "gúba",
           "pronunciation": "guba",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -28989,7 +28989,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Thank, s. (thanks)",
           "translation": "gálăta",
           "pronunciation": "galata",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -29494,7 +29494,7 @@
         },
         {
           "english": "Order",
-          "translation": "sēra",
+          "translation": "sēra (Amharic, ሥርዓት፡፡). In order that, aka",
           "pronunciation": "seh-ra",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -31111,8 +31111,8 @@
         },
         {
           "english": "Knock",
-          "translation": "at the door, dane",
-          "pronunciation": "at the door da-ne",
+          "translation": "at the door, dane (alāti), daie",
+          "pronunciation": "da-ne / a-la-ti / da-ie",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -31244,7 +31244,7 @@
         },
         {
           "english": "Smear",
-          "translation": "marige",
+          "translation": "marige (Amh. መረገ፡), dibbe",
           "pronunciation": "ma-ri-ge",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -31272,7 +31272,7 @@
         },
         {
           "english": "Stamp",
-          "translation": "berrese",
+          "translation": "berrese; (to pound) dite",
           "pronunciation": "ber-re-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -34113,7 +34113,7 @@
           "audioFile": null
         },
         {
-          "english": "Sqeeze",
+          "english": "Squeeze [Sqeeze, p. 48]",
           "translation": "mitjíre fúna fidde",
           "pronunciation": "mitjire funa fidde",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
@@ -34556,7 +34556,7 @@
         {
           "english": "Living",
           "translation": "kan [printed kau] tau",
-          "pronunciation": "kan print-ed kau tau",
+          "pronunciation": "kan tau",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -34653,7 +34653,7 @@
         },
         {
           "english": "Nature",
-          "translation": "amala",
+          "translation": "amala (quality); kan umame (creation)",
           "pronunciation": "a-ma-la",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -36486,7 +36486,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "atshese",
           "pronunciation": "ats-he-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
@@ -36983,7 +36983,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "adjeza",
           "pronunciation": "ad-je-za",
           "context": "Karl & Lawrence Tutschek, Dictionary of the Galla Language Part II (1845 — Public Domain)",
@@ -37186,84 +37186,84 @@
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Dry, v. n.",
           "translation": "gōge",
           "pronunciation": "goh-ge",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Prosper, v. n.",
           "translation": "midáge",
           "pronunciation": "midage",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sleep, v. n.",
           "translation": "raffe",
           "pronunciation": "raf-fe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Suit, v. n.",
           "translation": "gée; gítai nage",
           "pronunciation": "gee",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sweat, v. n.",
           "translation": "múrke báse",
           "pronunciation": "murke base",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Teeth, v. n. (to teethe)",
           "translation": "ilka báse",
           "pronunciation": "ilka base",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Thirst, v. n.",
           "translation": "débote; debu kaba",
           "pronunciation": "debote",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Tickle, v. n.",
           "translation": "hárfate bōe",
           "pronunciation": "harfate boe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Travail, v. n.",
           "translation": "hádaute; dadélate",
           "pronunciation": "hadaute",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wind, v. n.",
           "translation": "márăte",
           "pronunciation": "marate",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Witness, v. n.",
           "translation": "kabsisa kanne",
           "pronunciation": "kab-si-sa kan-ne",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wonder, v. n.",
           "translation": "māke; mamăke",
           "pronunciation": "mah-ke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -37333,7 +37333,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "atjése",
           "pronunciation": "atjese",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
@@ -39174,7 +39174,7 @@
           "audioFile": null
         },
         {
-          "english": "Secresy",
+          "english": "Secrecy [Secresy, p. 43]",
           "translation": "dáho; dubbi dahoáti",
           "pronunciation": "daho",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -40315,7 +40315,7 @@
           "audioFile": null
         },
         {
-          "english": "Laurate",
+          "english": "Lacerate [Laurate, p. 23]",
           "translation": "tersáse",
           "pronunciation": "tersase",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
@@ -41128,7 +41128,7 @@
         },
         {
           "english": "Besmear",
-          "translation": "marige",
+          "translation": "marige (dibbi) (Amh. መረገ፡፡)",
           "pronunciation": "ma-ri-ge",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -41163,8 +41163,8 @@
         },
         {
           "english": "Comfort",
-          "translation": "See Console",
-          "pronunciation": "see con-so-le",
+          "translation": "tshabese (See Console)",
+          "pronunciation": "tsha-be-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -42086,98 +42086,98 @@
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Force, v. a.",
           "translation": "irre tóltje",
           "pronunciation": "irre toltje",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Harvest, v. a.",
           "translation": "mida gúrati",
           "pronunciation": "mida gurati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Labour, v. a.",
           "translation": "hótjete; hutji mideise",
           "pronunciation": "hotjete",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Melt, v. a.",
           "translation": "bakisé",
           "pronunciation": "bakise",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Mind, v. a.",
           "translation": "lokonno mideise",
           "pronunciation": "lo-kon-no mi-dei-se",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Name, v. a.",
           "translation": "mekka base",
           "pronunciation": "mek-ka ba-se",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Poison, v. a.",
           "translation": "dirrea sorse or ajése",
           "pronunciation": "dirrea sorse or ajese",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Remedy, v. a.",
           "translation": "feise; báse",
           "pronunciation": "fei-se",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Return, v. a.",
           "translation": "débise",
           "pronunciation": "debise",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Salt, v. a.",
           "translation": "sógda buse",
           "pronunciation": "sogda buse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Saw, v. a.",
           "translation": "sibila murre",
           "pronunciation": "si-bi-la mur-re",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Sink, v. a.",
           "translation": "lékimse",
           "pronunciation": "lekimse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Swear, v. a.",
           "translation": "kakátjise",
           "pronunciation": "kakatjise",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Whisper, v. a.",
           "translation": "dóksa or lokónno hime",
           "pronunciation": "doksa or lokonno hime",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -42247,7 +42247,7 @@
           "audioFile": null
         },
         {
-          "english": "Oneself",
+          "english": "Wash oneself",
           "translation": "dike; dikáte",
           "pronunciation": "di-ke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -42604,7 +42604,7 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
+          "english": "Scissors [Scissars, p. 42]",
           "translation": "haraba",
           "pronunciation": "ha-ra-ba",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
@@ -43227,7 +43227,7 @@
           "audioFile": null
         },
         {
-          "english": "Daugther",
+          "english": "Daughter [Daugther, p. 9]",
           "translation": "ntála; dubra",
           "pronunciation": "ntala",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -43542,7 +43542,7 @@
           "audioFile": null
         },
         {
-          "english": "After to",
+          "english": "Day after to-morrow",
           "translation": "guiya aftáni",
           "pronunciation": "guiya aftani",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -43556,7 +43556,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "itjéftu",
           "pronunciation": "itjeftu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -43717,7 +43717,7 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
+          "english": "Scissors [Scissars, p. 42]",
           "translation": "billo muráti",
           "pronunciation": "billo murati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -43815,7 +43815,7 @@
           "audioFile": null
         },
         {
-          "english": "Trousert",
+          "english": "Trousers [Trousert, p. 55]",
           "translation": "madandáwi miláti",
           "pronunciation": "madandawi milati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -44053,7 +44053,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "birmadu atshese",
           "pronunciation": "bir-ma-du ats-he-se",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
@@ -44103,7 +44103,7 @@
         },
         {
           "english": "Potsherd",
-          "translation": "galli",
+          "translation": "galli (Amharic ገል፡), keratshi",
           "pronunciation": "gal-li",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -44165,8 +44165,8 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
-          "translation": "makassi",
+          "english": "Scissors [Scissars, p. 32]",
+          "translation": "makassi (Amh. and Arab. id.)",
           "pronunciation": "ma-kas-si",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -45265,15 +45265,15 @@
         },
         {
           "english": "Chastise",
-          "translation": "garafe",
+          "translation": "garafe (Amh. ገረፈ፡ to whip, scourge), kontute",
           "pronunciation": "ga-ra-fe",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
         {
           "english": "Commence",
-          "translation": "See Begin",
-          "pronunciation": "see be-gin",
+          "translation": "kabe (See Begin)",
+          "pronunciation": "ka-be",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -48470,7 +48470,7 @@
           "audioFile": null
         },
         {
-          "english": "Gum arabii",
+          "english": "Gum arabic [Gum arabii, p. 18]",
           "translation": "hanja",
           "pronunciation": "hanj-a",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -48505,14 +48505,14 @@
           "audioFile": null
         },
         {
-          "english": "Point of a",
+          "english": "Point of a knife",
           "translation": "birte billáti",
           "pronunciation": "birte billati",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
           "audioFile": null
         },
         {
-          "english": "Not in the",
+          "english": "Not in the least",
           "translation": "mali kábami?",
           "pronunciation": "mali kabami",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -48680,9 +48680,9 @@
           "audioFile": null
         },
         {
-          "english": "Entreating",
-          "translation": "Entreat",
-          "pronunciation": "ent-reat",
+          "english": "Entreating, part. / Entreatingly, adv.",
+          "translation": "guda kadade",
+          "pronunciation": "gu-da ka-da-de",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -48717,7 +48717,7 @@
         {
           "english": "Impossible",
           "translation": "hendandau [printed hendaudau]",
-          "pronunciation": "hend-and-au print-ed hend-au-dau",
+          "pronunciation": "hen-dan-dau",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -48765,7 +48765,7 @@
         },
         {
           "english": "Remarkable",
-          "translation": "denki",
+          "translation": "denki (Amh. ድንቅ፡ wonderful), guddi",
           "pronunciation": "denk-i",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -48814,7 +48814,7 @@
         },
         {
           "english": "Wilderness",
-          "translation": "wudĕma",
+          "translation": "wudĕma (Amharic, ውድማ፡), mōga, bosona",
           "pronunciation": "wu-de-ma",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -48841,7 +48841,7 @@
           "audioFile": null
         },
         {
-          "english": "Lightening",
+          "english": "Lightning [Lightening, p. 25]",
           "translation": "hángada?",
           "pronunciation": "hangada",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -49794,8 +49794,8 @@
         },
         {
           "english": "Circumspect",
-          "translation": "Considerate",
-          "pronunciation": "con-si-de-ra-te",
+          "translation": "luta tshedde (vid. Considerate)",
+          "pronunciation": "lu-ta tshed-de",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
         },
@@ -50073,7 +50073,7 @@
           "audioFile": null
         },
         {
-          "english": "What is the",
+          "english": "What is the news?",
           "translation": "odu máli ka harreisa duffe?",
           "pronunciation": "odu mali ka harreisa duffe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -50283,7 +50283,7 @@
           "audioFile": null
         },
         {
-          "english": "Ha can do it",
+          "english": "He can do it [ha can do it, p. 6]",
           "translation": "ha mídeisa dándee",
           "pronunciation": "ha mideisa dandee",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -50318,7 +50318,7 @@
           "audioFile": null
         },
         {
-          "english": "Hippopotamos",
+          "english": "Hippopotamus [Hippopotamos, p. 20]",
           "translation": "róbi",
           "pronunciation": "robi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
@@ -50500,7 +50500,7 @@
           "audioFile": null
         },
         {
-          "english": "Nought, tobe",
+          "english": "Nought, to be [Nought, tobe, p. 31]",
           "translation": "woiyu wánjiru",
           "pronunciation": "woiyu wanjiru",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -50759,7 +50759,7 @@
           "audioFile": null
         },
         {
-          "english": "Self, Imyself",
+          "english": "Self, I myself [Self, Imyself, p. 43]",
           "translation": "naffakía",
           "pronunciation": "naffakia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -51263,7 +51263,7 @@
           "audioFile": null
         },
         {
-          "english": "Reins of a horu",
+          "english": "Reins of a horse [Reins of a horu, p. 39]",
           "translation": "hidána sibila",
           "pronunciation": "hidana sibila",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)",
@@ -51599,7 +51599,7 @@
           "audioFile": null
         },
         {
-          "english": "Conceal [Conecal]",
+          "english": "Conceal [Conecal, p. 8]",
           "translation": "dókse",
           "pronunciation": "dokse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)",
@@ -51621,7 +51621,7 @@
         },
         {
           "english": "Deceit, deception",
-          "translation": "tankolli",
+          "translation": "tankolli (Amh. ተንኰል፡), hameia, sosobuf",
           "pronunciation": "tank-ol-li",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain)",
           "audioFile": null
@@ -53607,6 +53607,118 @@
           "pronunciation": "ba-kal-cha / goi-ba-na / za-ba-ta wa-ca-yo-ti / man-di-a / ca-bab-bi / hur-ri",
           "context": "Charles & Lawrence Tutschek (1844–1845) Dictionary of the Galla Language, Part I & Part II",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Dr. J. L. Krapf (1850) Preface on the Galla of the River Dana (Kigálla, pp. viii–x), 'Ormania' Etymology & 3-Point Proof on Shoan Amharic",
+          "translation": "Galla of the River Dana (Kigálla, 6th column of Krapf 1850): Studied in 1845 near Mombas (10–12 degrees S. of Shoa) from the Berraráta tribe on the River Dána (Máro), confirming high uniformity with the Shoan Galla vocabulary of 1842 and Dr. Charles Tutschek's 1844 Munich grammar & dictionary • Coined 'Ormania' from the autonym Orma / Oroma ('men' = brave men, explicitly contrasting orma with morma 'neck' on p. 30), while calling the Equator-regions the 'Germania of Africa' • Three-point linguistic proof that Galla modified Shoan Amharic (vs. Gojam & Dembia, pp. ix–x): (1) Common expressions lacking Ge'ez (Ethiopic) roots (e.g., tschamma 'shoe' = Galla gama 'foot-sole'; gasha 'shield' = Galla 'household, confidence, weapon of defence'; dshamma 'Become dim'), (2) Galla syntactic placement of verbs at the end of the sentence, and (3) Shared auxiliary compounding (Amharic ale / adarraga = Galla Gede / Gode 'he said / he made')",
+          "pronunciation": "ki-gal-la / or-ma / or-ma-ni-a / mor-ma / ga-ma / ga-sha / ge-de / go-de",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. viii–x & Vocabulary pp. 1–64)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842) Frontmatter, Mombasa/BMS Provenance, Preface (pp. i–ii) & Publisher's Advertisements (p. [43])",
+          "translation": "Title Page (p. [iii]): Vocabulary of the Galla Language, by the Rev. J. L. Krapf, London: Printed for the Church Missionary Society by Richard Watts, Crown Court, Temple Bar, 1842 • Provenance (PDF pp. 1–4, 54–56): Baptist Missionary Society Library bookplate (No. P. 1. 5, 'Presented by the Church M. Socy'), handwritten ink signature 'S. F. Hassan, Advocate, Mombasa' (Front Flyleaf Recto), £3/10/- price note, UCSB Library X-30265 & UC Southern Regional Library Facility barcode A 000 525 250 7 (digitized 2007, vocabularyofgall00krapiala) • Rev. C. W. Isenberg's Preface (pp. i–ii): Krapf sent the Vocabulary in summer 1841 from Shoa in Galla and German to assist incoming CMS missionaries; Isenberg translated the German into English, added part-of-speech tags (verifying contexts against Krapf's Galla translations of St. Matthew and St. John), added Amharic and cognate references, classified Galla, Dankali, and Somāli as a distinct species related to the Abyssinian (Semitic) family, noted the extension of the Gallas into Central Africa, and compared the Ashantees' language in Western Africa • Publisher's Advertisements (p. [43] / PDF p. 51): Other Works in the Galla Language by the Rev. J. L. Krapf — (1) St. Matthew's Gospel (fcp. 8vo), (2) St. John's Gospel, Five Chapters (fcp. 8vo, 6d.), (3) Grammatical Outline of the Galla Language (12mo, 8d.); and by the Rev. C. W. Isenberg — Vocabulary of the Dankali Language (12mo, 8d.)",
+          "pronunciation": "krapf / i-sen-berg / sho-a / da-nka-li / so-ma-li",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: Church Missionary Society / Richard Watts, 1842, Frontmatter, Preface pp. i–ii & Colophon p. [43])",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. C. W. Isenberg (1842) Comparative Cognate Annotations in Krapf's Galla Vocabulary: Dankali (Afar), Somāli, Shoa, Ethiopic (Ge'ez), Tigre, Arabic, Hebrew & Latin (pp. 1–42)",
+          "translation": "Dankali (Afar) Cognates (11): Camel = gala, gamela (Dank. idem, p. 6) • Fish = kortumi (Dank. kullum, p. 14) • Ford = melka (Dank. idem, p. 14) • Give = kenne (Dank. kahhè, p. 15) • Hippopotamus / River-horse = rōbi (Dankali idem, pp. 17, 31) • Milk = anan (Dank. hanna, p. 23) • Name (s.) = maeka (Dankali, migāa, p. 24) & Name (v. a.) = maeka tshedde (Dank. miggāe, p. 24) • Rock = dāga (Dankali, daa; Amh. ደንጊያ፡፡, p. 31) • Tongue = arrabda (Dankali, id., p. 37) • Somāli Cognate: Hyæna = warabēsa (Somal, idem, p. 18) • Shoa Usage: Gunpowder = dahêra (Shoa idem, p. 16) • Table = gabata (Shoa, p. 36) • Ethiopic (Ge'ez), Tigre, Arabic, Hebrew & Latin Cognates: Associate = herrēa (Heb. רֵעַ, p. 3) • Balance = mitshane (cf. Ar. مِيزَان and Amharic ሚዛን፡፡, p. 3) • Bible = kitāb kedūsi (Arab. كِتَابٌ مُقَدَّس, Amh. መጽሐፍ፡ቅዱስ፡፡, p. 5) • Book / Letter = kitāba (Arab. كِتَابٌ, Amh. ክታብ፡፡, pp. 5, 21) • Fast, Fasting = tsoma (Abys. ጾም፡፡ Ar. صَوْم Heb. צוֹם, p. 13) • Hoar-frost = korra (Eth. ቍር፡፡, p. 18) • I = ana (Eth. አነ፡፡ Ar. Heb. id., p. 18) • Limestone = nōra (Amh. and Arab. idem, p. 21) • Ocean = bar (from bāher Amh. Arab. Eth., p. 25) • Paper = kertāsa (Amh. ክርታስ፡ Lat. charta, p. 26) • Prophet = nabi (Amh. Eth. Arab. Heb. idem, p. 28) • Scissars = makassi (Amh. and Arab. id., p. 32) • Trace = fana (Ethiopic, ፍኖት፡ 'way', p. 37) • Venereal disease = fanto (Tig. ፍንጣጣ፡፡, p. 38) • Wool = tshibri (Eth. Tig. ጸምር፡፡ ጸምሪ፡፡, p. 41) • Worship = săgăde (Ar. سَجَدَ Abyss. ሰገደ፡፡, p. 41)",
+          "pronunciation": "ga-la ga-me-la / kor-tu-mi kul-lum / mel-ka / ro-bi / a-nan han-na / mae-ka mi-ga-a / wa-ra-be-sa",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: CMS, 1842, pp. 3, 5, 6, 13–18, 21, 23–26, 28, 31, 32, 36–38, 41)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. C. W. Isenberg (1842) Amharic & Abyssinian Cognate Annotations in Krapf's Galla Vocabulary, Part I: A–L (pp. 2–21)",
+          "translation": "Agriculturist = gebāri (Abyss. ገባሪ፡፡, p. 2) • Aim, object / Mark = mĕlĕkita (Amharic, ምልክት፡ 'mark', pp. 2, 22) • Avaricious = sesitu (Amh. ስሱ፡፡, p. 3) • Axe = kotto; matrabya (Amh. መጥረቢያ፡፡, p. 3) • Assistance / Blessing / Help = barakata (Amh. በረከት፡ blessing, pp. 3, 5, 17) • Bag / Purse = kortsho (Amh. ቁራጭት፡፡, pp. 3, 29) • Ball = arrari (Amh. አረር፡፡, p. 4) • Baptism = temkata (Amh. ጥምቀት፡፡, p. 4) • Barm / Dregs / Yest = atala (Amh. አተላ፡፡, pp. 4, 11, 42) • Bastard = dikala (Amh., p. 4) • Basket = kembitsha, masobi (Amh. idem, p. 4) • Besmear / Smear = marige (dibbi) (Amh. መረገ፡፡, pp. 4, 33) • Because = mekeniata (Amharic, መክንያት፡፡, p. 4) •Blow at = afūfe (Amh. እፍ፡አለ፡፡, p. 5) • Border / Confine / Limits = wassane / wassana / wassani (Amh. ወሰነ፡፡ / ወሰን፡፡, pp. 5, 8, 21) • Borrow = bedderefāte, beddere (Amh. ተበደረ፡፡, p. 5) & Lend = bederēse (Amh. አበደረ፡፡, p. 21) • Box / Chest = sateni / sāteni (Amh. ሣጽን፡፡, pp. 5, 7) • Bridle = leguma (Amh. ልጓም፡፡, p. 6) • Bug = tukāna (Amharic, ትኻን፡፡, p. 6) • Cap = kobi (Amh. ቆብ፡፡, p. 6) • Buttocks = huddu; fagāra (Amh. ፈጋራ፡፡, p. 6) • Button / Lock = kulfi / kolfi (Amharic, ቍልፍ፡፡, pp. 6, 21) • Chain = senselata (Amh. ሰንሰለት፡፡, p. 7) • Church = bêta Christiān (Amh., p. 7) • Chamber = guada (Amh. ጓዳ፡፡, p. 7) • Charcoal = kassala (Amh. ከሰል፡፡, p. 7) • Chastise / Scourge = garafe (Amh. ገረፈ፡ to whip, scourge, pp. 7, 32) • Cheap = rakasse (Amh., p. 7) • Clew = quāsi (Amharic, ኳስ፡፡, p. 7) • Choose / Select = marate (Amh. መረጠ፡፡, pp. 7, 32) • Commiserate / Mercy = māre (Amh. ማረ፡፡, pp. 8, 23) • Corpse = rĕfa (Amh. ረሳ፡፡, p. 8) • Cup / Drink-horn = wantsha / wāntsha (Abyssinian, ዋንጫ፡፡, pp. 9, 11) • Cover = kadāde (Amh. ቀደደ፡፡ to tear) & kadāda (Amharic, a rag, a hole, pp. 9, 18, 38) • Craft / Deceit = tankolle / tankolli (Amh. ተንኰል፡, pp. 9, 10) • Cross = maskala (Amharic, መስቀል፡፡, p. 9) • Debt = ida (Amh. ዕዳ፡፡, p. 9) • Dig = koture, koffere (Amh. ቆፈረ፡፡, p. 10) • Degree = māragi (Amh. ማዕረግ፡፡, p. 10) • Disciple = tamāri (Amh. ተማሪ፡፡, p. 10) • Dish, plate = wotshiti (Amh. ወጭት፡፡, p. 10) • Distress = fatana (Amh. ፈተና፡፡ temptation, p. 10) • Dough = litti (Amharic, ሊጥ፡፡, p. 11) • Ensnare = tsamade (Amh. አጸመደ፡፡, p. 12) • Fever = woba (Amh. ዋባ፡ tertian intermittent fever, p. 13) • File = morada (Amh. ሞረድ፡፡, p. 13) • Flour / Meal = duku / daku (Am. ዱቄት፡፡, pp. 14, 22) • Force / Necessitate / Oblige = giddi tshedde (Amh. ግድ፡አለ፡፡, pp. 14, 25) • Flower = ababio (Amh. አበባ፡፡, p. 14) • Fry / Roast = akaua / akana (Amh. አቈላ፡፡, pp. 15, 31) • Generation = dalota (Amh. ትውልድ፡፡, p. 15) • Glass = bertsheko (Amh. ብርጭቆ፡፡, p. 16) • Gold = worki (Am. ወርቅ፡፡, p. 16) • Handful = terengi (Amh. ጥርኝ፡፡, p. 17) • Harvest = makera (Amh. መከር፡፡, p. 17) • Hut = dasi (Amh. ዳስ፡፡, p. 18) • Hydromel = dādi (Amh. ጠጅ፡፡, p. 18) • Horse = ferda (Amharic, ፈረስ፡፡, p. 18) • Itch / Scratch = hōke / hoke (Amh. አከከ፡፡ 'it itched', pp. 19, 32) • Judge = ferĕde (Amh. ፈረደ፡፡, p. 19) & Judgment = ferdi (Amh. ፍርድ፡፡, p. 19) • Knee = tshelba (Amharic, ጉልበት፡፡, p. 20) • Legislate = atshatshe (Amharic, አዘዘ፡፡ 'to command', p. 21) • Lentil = mĕsĕra (Amh. ምስር፡፡, p. 21) • Line (flax) = talba (Amh. ተልባ፡፡, p. 21)",
+          "pronunciation": "ge-ba-ri / me-le-ki-ta / ba-ra-ka-ta / kor-tsho / tem-ka-ta / me-ke-ni-a-ta / wa-ntsha / ma-ska-la / da-di",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: CMS, 1842, pp. 2–21)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. C. W. Isenberg (1842) Amharic & Abyssinian Cognate Annotations in Krapf's Galla Vocabulary, Part II: M–Y (pp. 22–42)",
+          "translation": "Loom / Weaver's loom = arbi (Amh. አርብ፡፡, pp. 22, 40) • Mane = gāma (Amh. id., p. 22) • Market = gebeia (Amh. ገበያ፡፡, p. 22) • Lungs = somba (Amharic, ሳምባ፡፡, p. 22) • Maid-servant = gueradi / guredi (Amh. ገረድ፡፡, pp. 22, 32) • Maintain = kalabe (To feed, v. a. Amh., p. 22) • Measure = safare (Amh. ሰፈረ፡፡, p. 23) • Merchant = nagada (Amh. ነጋዴ፡፡, p. 23) • Mercury = bazêka (Amh., p. 23) • Mild = artsha, gari (Amh. ገር፡፡, p. 23) • Milk (v. a.) = ēlme (Amharic, አለበ፡፡, p. 23) • Mill = woftsho (Amh. id., p. 23) • Monk = monaksê (Amh. idem, p. 24) • Moth = tshenine (Amh. ትንኝ፡ a gnat, p. 24) • Pan = desti (Amh. id., p. 26) • Parchment = beranna (Amharic, id., p. 26) • Order = sēra (Amharic, ሥርዓት፡፡, p. 26) • Peasant = gebări (Amh. ገባሪ፡፡, p. 26) • Pepper = berberi (Amh. id., p. 26) • Plough = mārasha (Amh. id., p. 27) • Poison = merzi (Amh. መርዝ፡፡, p. 27) • Potsherd = galli (Amharic ገል፡), keratshi (p. 27) • Plait = gonagone (Amh. ጐነጐነ፡፡, p. 27) • Pound / Weight = mitshana (Amharic, ሚዛን፡ weight, balance, pp. 28, 40) & Weigh = mitshăne (Amh. መዘነ፡፡, p. 40) • Read = dagame (Amh. ደገመ፡፡, p. 29) • Reed = agada (Amharic, አገዳ፡፡, p. 30) • Remarkable / Wonder = denki (Amh. ድንቅ፡ wonderful, pp. 30, 41) • Righteous = tsādeki (Amh. ጻድቅ፡፡, p. 30) & Righteousness = tsedki (Amh. ጽድቅ፡፡, p. 30) • Ripen = biltshate (Amh. በሰለ፡፡, p. 31) • Salutation = salāmata (Am. ሰላምታ፡፡, p. 31) • Scatter / Waste = bittinise / betenese (Amh. በተነ፡፡ 'to scatter', pp. 32, 40) • Scourge / Whip = alange / alānge (Amh. አለንጋ፡፡, pp. 32, 41) • Sharpness = kara (Amh. ቃራ፡ knife, p. 32) • Sheaf = nado (Amh. ነዶ፡፡, p. 33) • Shield = wanta (Amh. ዋልታ፡፡, p. 33) • Shout = ellel tshedde (Amh. እልል፡አለ፡፡, p. 33) • Smile = seke (Amharic, ሳቀ፡ 'to laugh', p. 33) • Snare / Trap = watsmada (Amh. ወጽመድ፡፡, pp. 34, 38) • Spindle = enzerti (Amh. እንዘርት፡፡, p. 34) • Split = fallate (Amh. ፈለጠ፡፡, p. 34) • Stallion = korma ferda (Amh. ኮርማ፡፡, p. 35) • Suddenly = dengati (Amharic, በድንገት፡፡, p. 35) • Sugar = shonkŏri (Amh., p. 35) • Taste = kamasse (Amh. ቀመሰ፡፡, p. 36) • Tent = dukaniti (Amh. ድንኳን፡፡, p. 36) • Testify / Witness = mesekeri hime (Amh. መሰከረ፡፡, pp. 36, 41) • Time = zawani (Amh. ዘመን፡፡, p. 37) • Tower, steeple, spire = gembi (Amh., p. 37) • Trunk (main body) = gudeltsha (Amh. ጉንድ፡፡, p. 38) • Tribute = gebara (Amh. ግብር፡፡, p. 38) • Trowsers = surri (Amh. ሱሪ፡፡, p. 38) • Vice-regent = messeleni (Amh., p. 38) • Wall = gergeda (Amh. ግድግዳ፡፡, p. 39) • Weed = engerdad (Amh. እንክርዳድ፡፡, p. 40) • Wilderness = wudĕma (Amharic, ውድማ፡), mōga, bosona (p. 41)",
+          "pronunciation": "ar-bi / ge-be-ia / som-ba / wof-tsho / se-ra / ma-ra-sha / mer-zi / tsa-de-ki / wa-nta / ko-rma fer-da",
+          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: CMS, 1842, pp. 22–42)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Brace-Grouped, Split-Column, Cross-Reference & Unmarked POS Headwords Across A–Z (pp. 1–42)",
+          "translation": "Abolish / Abrogate, v. a. = tshikse (p. 1) • Bride, f. / Bridegroom, m. = durba (p. 6) • Certain, adj. / Certainly, adv. = dugada (p. 6) • Circumspect = vid. Considerate [luta tshedde] (p. 7) • Comfort, v. a. = See Console [tshabese] (p. 8) • Commence, c. derivv. = See Begin [kabe] (p. 8) • Considerable time = gafa gūda (p. 8) • Consequently, adv. & conj. = amma, ēga, seētsh (p. 8) • Coward, adj. & s. = kan sodatu, kalbi kan henkabtu (p. 9) • Each (every one) = toko toko (p. 11) • Entreating, part. / Entreatingly, adv. = guda kadade (p. 12) • First-born, adj. and s. = ilma angafa (p. 14) • Flat country = gama (p. 14) • Grinder = kan daktu (p. 16) • Habituate, c. derivv. = Vid. Accustom [bersise / berre] (p. 16) • Instead, prep. = koda; 'Instead of the father,' koda abba (p. 19) • Judge = feredu (s., p. 19; Judge, v. a. = ferĕde) • Late, adj. & adv. = dimimise (p. 20) • Liberate, v. a. = 'To liberate slaves,' gebruma dabate, —galakisse; basisse; 'To be liberated,' bida baie (p. 21) • Line (flax), s. = talba (Amh. ተልባ፡፡, p. 21) • Much, very much, adj. & adv. = gudda (p. 24) • Necessary things = udan; 'It is necessary,' eni sene (p. 24) • Nothing = 'To be nothing,' hentshiru (p. 25) • Out = 'To come out,' 'To go out,' baie; 'To be out of senses,' kalbi bade (p. 26) • Priest of Christians = kêsi sidāma; 'Galla priest,' kaletsha (p. 28) • Reins of a horse &c., s. = fulo (p. 30) • Repent, v. a. = Vid. Regret [gadde] (p. 30) • Ride (on horseback &c.), v. n. = ferda yabate (p. 30) • Sore-throat (to have a) = sagalle dude (p. 34) • Sorry (To be) = gade (p. 34) • Spotted, 'To be spotted,' v. n. = turraie (p. 34) • Stormy, 'To be stormy' = bubisse (p. 35) • Stretch out (one's hand), v. a. = dirirse (p. 35) • Trunk, s. (main body) = gudeltsha (Amh. ጉንድ፡፡, p. 38) • Up, up-hill = garra tulla (p. 39) • Us (dat. of We), pron. = nufi (p. 39)",
+          "pronunciation": "tshik-se / dur-ba / du-ga-da / ga-fa gu-da / to-ko to-ko / gu-da ka-da-de / ko-da ab-ba / bi-da ba-ie / ka-le-tsha",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 1, 6–9, 11, 12, 14, 16, 19–21, 24–26, 28, 30, 34, 35, 38, 39)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Complete Interrogatives, Pronouns, Prepositions, Conjunctions & Interjections Across A–Z (pp. 2–42)",
+          "translation": "Interjections: Ah! alas! / Alas! / Eh! ('oh!') / Woe!, interj. = Oh! Ker! (pp. 2, 12, 41) • Begone!, interj. = māek! (p. 4) • Farewell!, interj. = wak' nagaia si kakennu; 'To bid farewell,' nagaia hafu tshedde (p. 13) • Interrogatives: How?, adv. = atamì? (p. 18) • What?, pr. = mali (p. 40) • When?, adv. = yōme (p. 40) • Whence?, adv. = esei (p. 40) • Where?, adv. = bake kaniti? ēsa? (p. 40) • Whereby?, adv. = maliti? (p. 40) • Wherefore?, adv. = mali? mafi? (p. 40) • Whereto? whither? = hamma ēsa gauti? (p. 40) • Whither?, adv. = esa (p. 41) • Who? which? = eniu?; 'which in number?' mēka? (p. 41) • Why?, adv. = mafi, mali (p. 41) • Pronouns: I, pr. s. = ana (Eth. አነ፡፡ Ar. Heb. id.); 'I myself,' ana abaworra (p. 18) • Thou, pron. = ati (p. 37) • He, pron. = isa (p. 17) • Him, pr. acc. m. = uf (p. 17) • His, pron. = sa; 'His money,' metisa (p. 18) • We, pron. = nu (p. 40) • Us (dat. of We), pron. = nufi (p. 39) • You, pron. = issini (p. 42) • They, pr. pers. = isan (p. 37) • My, mine, pr. poss. = kiya; 'My house,' manna kiya (p. 24) • Thy, thine, pronoun = kanke; 'Thy house,' mana kanke; 'On thy account,' mekeniata kanketi (p. 37) • Our, pron. = kenia (p. 26) • Your, pr. poss. = kesani (p. 42) • Self, pron. = aba worra (p. 32) • Each other, pron. = isa isa, isan isan (p. 11) • This, pron. = kuni, masc.; tuni, fem.; 'On this side,' gamati (p. 37) • That, conj. & pron. demonstr. = 'In order that,' aka; sani, masc.; san, fem. (p. 36) • Conjunctions: And = —f (affix); e.g. 'This and that,' kanaf sani (p. 2) • Either — or — / Neither — nor = hokan —, hokan (pp. 12, 25) • In order to = aka (p. 37)",
+          "pronunciation": "oh ker / ma-ek / a-ta-mi / ma-li / yo-me / e-sei / e-sa / ma-li-ti / ma-fi / e-ni-u / me-ka / a-na / a-ti / i-sa / nu / is-si-ni / i-san",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 2, 4, 11–13, 17, 18, 24–26, 32, 36, 37, 39–42)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part I: A–B (Able to Burn, pp. 1–6)",
+          "translation": "Able, adj. ('To be able') = dandaie (p. 1) • Accustomed, adj. ('To be accustomed') = berregira (p. 1) • Accompany, v. a. = duffe — wotshin, gagēse (p. 1) • Accustom, v. a. = bersise; v. refl. 'To accustom oneself,' berre (p. 1) • Adultery, s. ('To commit adultery') = hallăle taie (p. 1) • Adverse, adj. ('To be adverse') = tshibbe (p. 1) • Against, prep. = irra, garra; 'To be against,' tshibbe (p. 2) • Agreeable, adj. ('To be agreeable') = midage (p. 2) • Alarmed, adj. ('To be alarmed') = dibbe (p. 2) • Almost, adv. = tenno hafe; hamma—gauti; 'Almost a hundred,' hamma dibba gauti (p. 2) • Alone, adv. = koba; 'He alone,' kobaisa (p. 2) • Angry, adj. = 'To be angry,' dekame; 'To make one angry,' dekamsisse (p. 2) • Ashamed, p. p. = 'To be ashamed,' sodate; 'To make ashamed,' ensodatshise (p. 3) • Ashes, s. = dara; 'To burn to ashes,' dara taie (p. 3) • Aside, adv. ('To set aside') = henulfese; tufate (p. 3) • Ass, s. = harre; 'A male ass,' wodāla; 'She ass,' harre daltu; 'Ass's colt,' ilma harre (p. 3) • Astonished, adj. ('To be astonished') = guddi tshedde, naie (p. 3) • Astray, adj. ('To go astray') = karra irra tshelate (p. 3) • Back, s. = dukta; 'On the back,' duktati (p. 3) • Bad, adj. = hāma; fem. hamtu; 'To be or become bad,' hamāte (p. 3) • Beautiful, adj. ('To be beautiful') = midăge (p. 4) • Beginning, s. = dura; 'In the beginning,' durati (p. 4) • Behalf, s. ('To be in behalf') = wa gode (p. 4) • Below, adv. = garra tshelà; 'Below this,' as tshelà (p. 4) • Bend, v. a. = dabse; n. dadabe; 'To be bent,' dabe (p. 4) • Better, adj. = woyu; e.g. 'Better than this,' kani woyu kana irra; 'To become better,' woyu taie; tola taie (p. 4) • Between, adv. = odduti; 'Between this,' as kesu (p. 4) • Beyond, prep. = gama; 'Beyond the sea,' bar gama (p. 5) • Bill (of a bird), s. = legemsitu; 'A written bill,' kitāba (p. 5) • Blaze, v. n. = (ibita) arraba base (p. 5) • Blow, v. a. = bobēse; 'To blow up,' fatshaie; 'To blow at,' afūfe (Amh. እፍ፡አለ፡፡, p. 5) • Booty, s. ('To take as booty') = aīe (p. 5) • Box, s. = sateni (Amh. ሣጽን፡፡); 'To give a box on the ear,' kabale gurrati (p. 5) • Break, v. a. = berite; tshabe, tshabse; 'To break into a house,' ure; 'To break off a habit,' kan berre dise (p. 5) • Bring, v. a. = fude; 'To bring forth,' daltshe; 'To bring up,' gudise (p. 6) • Burn, v. = bobaie; 'To burn down,' gube ibitati, gube (p. 6)",
+          "pronunciation": "dan-da-ie / ber-re-gi-ra / ga-ge-se / ko-ba-i-sa / de-ka-me / har-re wo-da-la / duk-ta-ti / ha-ma ham-tu / du-ra-ti",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 1–6)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part II: C–E (Call toEver, pp. 6–12)",
+          "translation": "Call, v. a. = tshedde; 'What do they call this,' kuni mali tsheddan; 'To call out,' yāme (p. 6) • Chaste, s. ('To be chaste') = adate (p. 7) • Cheap, v. n. ('To be cheap') = rakasse (Amh., p. 7) • Cheer, s. ('Be of good cheer') = hensodatiu (p. 7) • Chest (thorax), s. = kōma — 'Box,' sāteni (Amharic, ሣጽን፡፡, p. 7) • Child, s. = mutsha; 'With child,' ulfofte; 'To get with child,' ulfossise (p. 7) • Cold, adj. = damōte; 'To become cold,' 'to catch cold,' damote; s. damotsh, dilala; Catarrh, kufa (p. 7) • Comprehend, v. a. = illāle; 'I comprehend,' na sene (p. 8) • Considerate, adj. ('To be considerate') = luta tshedde (p. 8) • Content, adj. ('To be content') = kufe (p. 8) • Cost, v. ('What does it cost?') = gatti meka? (p. 8) • Covenant, s. ('To establish a covenant') = kakăte (p. 9) • Crooked, adj. ('To be crooked') = dabe, tshellate (p. 9) • Crop, craw, gorge, s. = enkerd; 'A person who has a crop,' enkerdāmi (p. 9) • Dark, adj. ('To become dark') = dukanaie (p. 9) • Day, s. = gafa; 'To-day,' arda; 'Day's journey,' karra gaf toko; 'On the following day,' borumti (p. 9) • Dear, adj. = miāwa miofte; 'To be dear,' meofte (p. 9) • Debt, s. = ida (Amh. ዕዳ፡፡); 'To be in debt,' ida kabe (p. 9) • Drown, v. a. = bisaniti gate; 'To drown oneself,' bisan fudate (p. 11) • Dry, adj. ('To be dry') = gogoge (p. 11) • Eat, v. a. = niade; 'To eat all,' sonan niade (p. 11) • Elephant, s. = arba; 'Elephant's tooth,' ilkan arba (p. 12) • Enraptured, adj. ('To be enraptured') = butade (p. 12) • Erect, v. a. = dābe; 'To erect a tent,' dunkaniti dābe (p. 12) • Eve, Evening, s. = galgálla; 'In the evening,' galgallati (p. 12) • Ever, adv. ('For ever') = garra dur (p. 12)",
+          "pronunciation": "tshed-de ya-me / ko-ma / mu-tsha ul-fof-te / da-mo-te di-la-la / gat-ti me-ka / ka-ka-te / ga-fa ar-da bo-rum-ti / il-kan ar-ba",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 6–12)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part III: F–H (False to Horn, pp. 13–18)",
+          "translation": "False, adj. = sobdu; 'To make a false step,' kufe mutshitshate (p. 13) • Fatigued, adj. ('To be fatigued') = derdabe (p. 13) • Fellow-servant, s. = herrēa gebăre; 'Fellow-man,' s. herrēa (p. 13) • File, s. (instrument) = morada (Amh. ሞረድ፡፡, p. 13) • Fire-place, s. = bake ibita; 'Fire-tongs,' kabdo (p. 14) • Flame, v. n. ('To blaze') = (ibita) arrăba base (p. 14) • Flow, v. n. = dangalaie; 'To make flow,' dangalese (p. 14) • Foot, s. = mila; 'Sole of the foot,' fanna mila (p. 14) • Forget, v. a. = irrafate; 'Not to forget,' hen irrafāte (p. 14) • Free, adj. = 'A free man,' ilma namma; 'To become free,' gebrumada baie (p. 15) • Fusty, adj. ('To become fusty') = ēle, ēlaie (p. 15) • Galla, n. gent. = ormo; pl. orma; 'This is a Galla,' kuni ormōda (p. 15) • Gap, s. ('To make a gap') = ure (p. 15) • Gape, v. n. (open the mouth widely) = hamomăte (p. 15) • General, adj. ('in general') = akanama (p. 15) • Giddy, adj. ('To be giddy') = kabale gurrati (p. 15) • Gnash, v. a. ('To gnash one's teeth') = ilkan doke (p. 16) • Go, v. n. = ademe; 'To go out,' baie; 'To go in,' sene (p. 16) • Governor, s. = shumi, moti, egdu; 'To appoint a governor,' motshise (p. 16) • Grieved, part. = kan marartame; 'To be grieved,' gāde (p. 16) • Hide, v. a. = dokse, dokate, dokatshise; 'To hide oneself,' dese (p. 17) • High, adj. = dera; 'To be high,' oli hike (p. 17) • Hilt, haft, s. = harka; 'Hilt of a knife,' harka albe (p. 17) • Hoarse, adj. ('To be hoarse') = sagelle dude (p. 18) • Home, s. = mana; 'At home,' manati; 'To be at home,' manati tshira (p. 18) • Horn, s. = gāfo; 'A very large horn,' buda (p. 18)",
+          "pronunciation": "sob-du / ba-ke i-bi-ta kab-do / fan-na mi-la / il-ma nam-ma / or-mo or-ma / ha-mo-ma-te / a-de-me ba-ie se-ne / ma-na ma-na-ti",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 13–18)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part IV: I–M (Intoxicated to Mountain, pp. 19–24)",
+          "translation": "Intoxicated, p. p. ('to be intoxicated') = matshaie (p. 19) • Knife, s. = albe; 'Point of a knife,' āfri (p. 20) • Known, part. = kan bekame; 'To make known,' beksisse (p. 20) • Lame, adj. = hokola; 'To lame,' hokole (p. 20) • Lay, v. a. = olkaie; 'To lay upon,' irra gode; fĕè; 'To lay open,' kulla gode; 'To lay up, to save,' hambise; 'To lay a foundation,' tshelkăbe (p. 20) • Least, adj. = tenno; 'At least,' tenno io taie (p. 21) • Let, v. a. = dise; 'To let on hire,' humnau oltshise (p. 21) • Like, v. ('I should like') = enantshalate (p. 21) • Load, charge, v. a. = batshise; 'To load a gun,' lugame (p. 21) • Loudly, adv. ('To speak loudly') = hime saggalli tshabati (p. 22) • Low, adj. ('To be low') = gadi hike, gadi tshedde (p. 22) • Mad, adj. = maratu; 'To be mad,' maerate (p. 22) • Maid, s. = tenenia, dubra, midagtu; 'Maid-servant,' gueradi (Amh. ገረድ፡፡, p. 22) • Mercy, s. ('To have mercy') = māre (Amh. ማረ፡፡, p. 23) • Mind, v. a. = suta tshedde; garra labbe sensisse; 'Not to mind,' yodo henkabe; 'To bear in mind,' garra labbe sensisse (p. 23) • Monthly, adv. = tshiāti; 'Monthly discharge,' turri narden (p. 24) • Morning, s. = diruma; 'Good morning,' naga ambulte (p. 24) • Mount, v. a. = baie; 'Mount a horse, &c.,' yabāte (p. 24) • Mountain, s. = tullu; 'Up the mountain,' garra tullu (p. 24)",
+          "pronunciation": "ma-tsha-ie / al-be af-ri / kan be-ka-me bek-sis-se / ho-ko-la / ol-ka-ie / e-nan-tsha-la-te / lu-ga-me / na-ga am-bul-te / tul-lu",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 19–24)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part V: N–P (Nail to Purge, pp. 24–29)",
+          "translation": "Nail, s. = (of iron, &c.) kūka; (on fingers, &c.) kiensa (p. 24) • Naked, adj. = kolla; 'To make naked,' kolla gode (p. 24) • Native, adj. = kan dalatame; 'Native place,' s. bake kan iti dalatame; biyeh (p. 24) • Nearly, adv. = tenno hafe; hamma — gauti; 'Nearly a hundred,' hamma dibba gauti (p. 24) • Needle, s. = milmo; 'Needle's eye,' gurra milmo; 'Needle's point,' afri milmo (p. 25) • News, s. = odu; 'What is the news?' mali odu harraia duffe? (p. 25) • Night, s. = halkan; 'At night,' 'By night,' halkaniti (p. 25) • Nought, s. ('To be nought') = gari moti (p. 25) • Nowhere, adv. = bake hundati hen — (p. 25) • Offended, p. p. ('To be offended') = wolkatamurre (p. 25) • Offer, v. a. = dese; 'To offer a gift,' dese horri (p. 25) • Old, adj. = 'Old man,' tsharsi; 'Old woman,' tsharti (p. 25) • Other, adj. = bira; 'Other wood,' muka bira (p. 26) • Pass, v. = dabre; 'To pass time,' ole (p. 26) • Passionate, adj. ('To be passionate') = dekame (p. 26) • Patient, adj. ('To be patient') = tsheluma tshedde (p. 26) • Peace, s. = arāra; 'To make peace,' ararse; 'Peace-maker,' s. kan ararsu (p. 26) • Pile, v. a. ('To pile up') = wolliratese (p. 27) • Plough, v. a. ('To plough up') = kote (p. 27) • Poor, adj. = hiesa; 'To become poor,' hie (p. 27) • Poorly, adj. ('To become poorly') = feia henkabne (p. 27) • Porter, s. (door-keeper) = ala egdu (p. 27) • Possible, adj. ('It is possible') = endandaia (p. 27) • Praise, v. a. = galatefāte; 'To praise oneself,' uf ulfese (p. 28) • Pray, v. a. (to God) = mukabe (p. 28) • Proper, adj. ('To be proper') = eni sene (p. 28) • Pulse, s. (of blood) = hida harka (p. 29) • Purge, v. n. (to have loose bowels) = albăè; v. a. albase (p. 29)",
+          "pronunciation": "ku-ka kien-sa / kol-la / mil-mo gur-ra mil-mo / o-du / hal-kan / tshar-si tshar-ti / a-ra-ra a-rar-se / hi-e-sa / mu-ka-be / hi-da har-ka",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 24–29)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part VI: Q–S (Quiet to Sword, pp. 29–36)",
+          "translation": "Quiet, adj. ('To be quiet') = tsheluma tshedde (p. 29) • Ready, adj. = kobai; 'To be ready,' fite, kobēse (p. 29) • Rebellious, adj. ('To be rebellious') = wotshi baie (p. 29) • Receive, v. a. = fudate; 'To receive a stranger,' kesuma irra fudate (p. 29) • Rest, s. = tesuma; 'To give rest,' tole tsheltshesise (p. 30) • Revenge, s. ('To take revenge') = wolli hamate (p. 30) • Right, adj. (not left) = mirga; 'It is right (proper),' tole, garida; 'On the right-hand side,' mirgati (p. 30) • Ring, v. ('To ring a bell') = bilbila dibe (p. 31) • Servant, s. = 'man-servant,' gabare, gurba; 'maid-servant,' guredi (p. 32) • Sick, adj. = dukuba kabe, feia dabate; 'To get sick,' feia henkabue; 'To be sick,' dukube (p. 33) • Side, s. = wollbira; 'On every side,' bake hundumati (p. 33) • Silent, adj. ('To be silent') = tsheluma tshedde (p. 33) • Slave, s. = (male) gerbitsha; (female) gerbiti (p. 33) • Softly, adv. ('To speak softly') = hasāse (p. 34) • Son, s. = ilma; 'Son-in-law,' sodda (p. 34) • Spit, v. n. = hautshuffa tuffe, didige; 'To spit through the teeth,' tsherichfate (p. 34) • Spring, s. (fountain) = burka (p. 34) • Stir, v. a. = tuke; 'Stir the fire,' gabisse ibita (p. 35) • Subject, s. (philos.) = dubbi (p. 35) • Sum, v. a. ('To sum up') = lakăie (p. 35) • Swelling, s. ('To have a swelling') = ditaie (p. 36) • Sword, s. = tshangăre; 'Handle of a sword,' kolba tshangăre; 'Sheath of a sword,' kolla (p. 36)",
+          "pronunciation": "tshe-lu-ma tshed-de / ko-ba-i / mir-ga mir-ga-ti / ga-ba-re gur-ba / du-ku-ba / ger-bi-tsha ger-bi-ti / il-ma sod-da / tshan-ga-re",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 29–36)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part VII: T–U (Tail to Urine, pp. 36–39)",
+          "translation": "Tail, s. = ēgē; 'To wag the tail,' ēgē fatshase (p. 36) • Take, v. a. = fudate, kābe; 'To take up,' fude (p. 36) • There, adv. = atshi; 'To be there,' tshira, taie; 'Who is there?' eniu tshira? (p. 36) • Tipsy, adj. = kan matshaie; 'To get tipsy,' matshaie (p. 37) • Tired, adj. = derdabtu; 'To be tired,' derdabe (p. 37) • Tooth, s. = ilkan; 'Molar tooth,' āo (p. 37) • Tight, adj. = dippo; 'To be tight,' dippate (p. 37) • Tremble, v. n. = hollate, naie; 'To make tremble,' hollatshise (p. 38) • Unclean, adj. = 'To be unclean,' turre; 'To make unclean,' turrēse (p. 39) • Upon, pr. = irra; 'Upon a house,' manna irrati (p. 39) • Urine, s. = fintshan; 'To pass urine,' fintshāne (p. 39; Urine, v. a. = fintshāne)",
+          "pronunciation": "e-ge fa-tsha-se / fu-da-te ka-be / a-tshi tshi-ra / der-dab-tu / il-kan a-o / dip-po / hol-la-te / fin-tshan fin-tsha-ne",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 36–39)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Sub-Entries & Idiomatic Constructions, Part VIII: V–Z (Vain to Zealous, pp. 38–42)",
+          "translation": "Vain, adj. = horrofe; 'In vain,' akanŭma, woyu hengone (p. 38) • War, s. = lola, wollolu, dula; 'To make war against,' tshibbe, wollŏle, worani, baie, dule (p. 40) • Warm, adj. = ōa; 'To be warm,' ōe (p. 40) • Wash, v. a. = mitshe; 'Wash oneself,' dike (p. 40) • Waste, deserted, adj. = dua, ona, wudema; 'To lay waste,' dule, dua gode (p. 40) • Water, s. = bisan; 'Water-closet,' bollo udăni (p. 40) • Way, s. = karrà; 'To open a way,' karra toltshe (p. 40) • Weak, adj. = humna henkabu; 'To be weak,' derdăbe (p. 40) • Well, adj. = garri, feyuma; 'To be well,' feiŭme, feie; 'To do well,' gari gode (p. 40) • Wet, adj. = tshida; 'To be wet,' tshide (p. 40) • White, adj. = adi; 'White horse,' ferda adi (p. 41) • Willingly, adv. = harkati; 'To do willingly,' tshalate gode (p. 41) • Wipe, v. a. = hattaie; 'To wipe one's nose,' furri fudate (p. 41) • Witchcraft ('to practise witchcraft') = degăma kenne (p. 41) • Without, a. = didati; prep. melehh; 'Without wages,' gatti melehh; 'Without knowing,' aton bekin (p. 41) • Year, s. = yogga; 'Last year,' berdingata; 'The year before last,' berekan (p. 42) • Yesterday, adv. = kallēsa; 'Day before yesterday,' dengādda (p. 42) • Zealous, adj. ('To be zealous') = hennafe (p. 42)",
+          "pronunciation": "lo-la wol-lo-lu du-la / mi-tshe di-ke / bi-san / kar-ra / fe-iu-me / tshi-da / fer-da a-di / yog-ga ber-din-ga-ta be-re-kan / kal-le-sa den-gad-da",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 38–42)",
+          "audioFile": null
+        },
+        {
+          "english": "Rev. J. L. Krapf (1842) Social, Legal, Medical & Ritual Terms (Adulterer to Whore, pp. 1–41)",
+          "translation": "Adulterer, s. = hallăle (p. 1) • Anus, s. = fagāra (p. 2) • Bastard, s. = dikala (Amh., p. 4) • Cannibal, s. = bulgu (p. 6) • Cohabit, v. a. = irrăfe niti wotshin (p. 7) • Corpse, s. = rĕfa (Amh. ረሳ፡፡, p. 8) • Fornicator, s. = hallale (p. 14) • Gonorrhœa, s. = fanto (p. 16) & Venereal disease, s. = fanto (Tig. ፍንጣጣ፡፡, p. 38) • Murder, v. a. = atshese (p. 24) & Murderer, s. = birmadu atshese (p. 24) • Prostitute / Whore, s. = gursuma (pp. 28, 41) • Sorcerer, s. = namma degăma (p. 34) & Sorceress, s. = degamtiti (p. 34) • Torture, v. a. = dibbe (p. 37)",
+          "pronunciation": "hal-la-le / fa-ga-ra / di-ka-la / bul-gu / re-fa / fan-to / ats-he-se / gur-su-ma / de-ga-ma / dib-be",
+          "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (London: CMS, 1842, pp. 1, 2, 4, 6–8, 14, 16, 24, 28, 34, 37, 38, 41)",
+          "audioFile": null
         }
       ]
     }
@@ -53614,5 +53726,5 @@
   "source": "Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 7647
+  "totalEntries": 7663
 }

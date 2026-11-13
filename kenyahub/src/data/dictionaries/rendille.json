@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976).",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976).",
   "categories": [
     {
       "id": "greetings",
@@ -1300,10 +1300,10 @@
           "audioFile": null
         },
         {
-          "english": "Naroshon (Rendille clan of the Sogota & Angata plains)",
-          "translation": "Naroshon",
-          "pronunciation": "na-rosh-on",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 51)",
+          "english": "Naroshon (Rendille clan that migrated with the Samburu Lorogishu / Kwakituk from Angata e-'m-barta across the Sogota and Lomello plains)",
+          "translation": "Naroshon (migrated alongside Samburu Lorogishu [Suk Kwakituk] to the Sogota & Lomello plains until driven out by Turkana & Suk; Rendile-Samburu physical admixture among southern Turkana)",
+          "pronunciation": "na-rosh-on / kwa-ki-tuk",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 51, 66)",
           "audioFile": null
         },
         {
@@ -1330,7 +1330,7 @@
       ]
     }
   ],
-  "source": "Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Hobley 1910, Fleming 1964 & Heine 1976)",
+  "source": "Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243",
   "totalEntries": 176

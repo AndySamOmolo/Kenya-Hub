@@ -13,8 +13,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982).",
   "categories": [
     {
       "id": "greetings",
@@ -4591,6 +4591,48 @@
           "pronunciation": "il-oi-kop / il-bur-ke-ne-ji / sam-pur",
           "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 159–160, 162 n.)",
           "audioFile": null
+        },
+        {
+          "english": "Ngingyang (dry river bed north of Lake Baringo; Samburu name for the crocodile, which burrows beneath the sand during the dry season)",
+          "translation": "Ngingyang (crocodile / Ngingyang River — crocodiles burrow beneath the sand in the dry season and emerge when the river flows)",
+          "pronunciation": "ngi-ngyang",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49 & fn. 1)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Doigio (Samburu section on Loroghi plateau 70–100 years ago: bird-with-a-green-grass-blade horn legend, 40 warriors' migration to Lake Baringo & Konyek / Maji a Moto)",
+          "translation": "Il Doigio & Konyek (Maji a Moto — migrated past Naudo, Ngingyang River, and Mount Paka to Lake Baringo, River Tim, Molo & Tigrish after an old man saw a bird with a green blade of grass and blew the village horn: 'Behold this bird which carries a blade of green grass in its beak...')",
+          "pronunciation": "il doi-gio / ko-nyek / nau-do",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50–52)",
+          "audioFile": null
+        },
+        {
+          "english": "Lorogishu (second Samburu section, called Kwakituk by the Suk, on the 4,000-ft Angata e-'m-barta plateau north of Loroghi)",
+          "translation": "Lorogishu (Suk: Kwakituk) & Angata e-'m-barta (migrated across the Sogota and Lomello plains alongside the Rendille clan Naroshon)",
+          "pronunciation": "lo-ro-gi-shu / kwa-ki-tuk / a-nga-ta e-m-bar-ta",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50–51)",
+          "audioFile": null
+        },
+        {
+          "english": "Lobbeyok (third Samburu section — Lobbeyok being the Suk name for the Samburu — who occupied Ngingyang, Sogota–Lomello, and Tiati / Il Maruroi)",
+          "translation": "Lobbeyok & Il Maruroi (Samburu name for Tiati; driven south to El Bogoi by the Masai Segellai of Nakuru/Mau)",
+          "pronunciation": "lob-be-yok / il ma-ru-roi / el bo-goi",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Moruanghakhulakh ('Hill of Thieves') — mountain refuge where defeated Samburu / Doigio lived as Dorobo hunters after Turkana and Suk raids",
+          "translation": "Moruanghakhulakh ('Hill of Thieves')",
+          "pronunciation": "mo-ru-a-ngha-khu-lakh",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 52)",
+          "audioFile": null
+        },
+        {
+          "english": "The 4 Samburu & 5 Il Doigio Clans Settled at Njamus in Dundas (1910, p. 53)",
+          "translation": "Samburu clans: 1. Il Mayek (first resided with the Il Chabichab section of Kamasia; irrigation furrow priests), 2. Ol Barasaero, 3. Ol Ouara (= Lugumai of the Masai), 4. Loimüsse • Il Doigio clans: 1. Ol Doimal, 2. El Gungwan, 3. Ol Gesiani, 4. Ol Murtanat, 5. Ol Gessei (plus Nderois Kamasia clan Kimwan of Samburu origin, p. 65)",
+          "pronunciation": "il ma-yek / ol ba-ra-sae-ro / ol o-wa-ra / loi-mus-se / ol doi-mal / el gung-wan / ol ge-si-a-ni / ol mur-ta-nat / ol ges-sei",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53, 65)",
+          "audioFile": null
         }
       ]
     },
@@ -4847,8 +4889,8 @@
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Hobley 1910 & Vossen 1982)",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
   "isoCode": "saq",
   "glottocode": "samb1315",
-  "totalEntries": 678
+  "totalEntries": 684
 }

@@ -83,7 +83,7 @@
     "id": 11,
     "kikuyu": "Ta gĩkwa na mũkũngũgũ.",
     "translation": "Like the yam vine and the mũkũngũgũ support tree.",
-    "explanation": "Describes two inseparable friends or partners whose lives and livelihoods are intertwined like a yam vine climbing its support tree (Wiktionary).",
+    "explanation": "Describes two inseparable friends or partners whose lives and livelihoods are intertwined like a yam vine climbing its support tree (Wiktionary & Routledge 1910, p. 371).",
     "englishEquivalent": "Inseparable companions / Thick as thieves.",
     "category": "unity"
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "kikuyu": "Mũndũ mũgo ndagũragĩra.",
     "translation": "A medicine man (mũndũ mũgo) does not divine for himself.",
-    "explanation": "Even an expert or elder needs the objective counsel of others when facing personal trials (cf. Routledge 1910 & Hobley 1922 on Mundu Mugo).",
+    "explanation": "Even an expert or elder needs the objective counsel of others when facing personal trials (cf. W. S. & K. Routledge 1910, pp. 249–272 & Hobley 1922 on Mun'-du Mu-gu).",
     "englishEquivalent": "A physician cannot heal himself.",
     "category": "humility"
   },
@@ -129,49 +129,49 @@
   },
   {
     "id": 17,
-    "kikuyu": "Guso! Ndathiĩ kwa mũrata wakwa, ndakora mũtumia wake aigĩte ciana igĩrĩ rũrĩmĩ-inĩ rũmwe. — Nĩ hĩndĩ mũtĩ ũhaaraga mahũa.",
-    "translation": "Riddle (Routledge 1910 #1): I went to my friend's house and found a woman who kept two children on one tongue. — Answer: When a tree puts forth flowers and fruit on one stem.",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge in 'With a pre-colonial People: The Akikuyu of British East Africa' (1910, p. 285). Traditional riddles open with the challenge 'Guso!' ('Guess!').",
-    "englishEquivalent": "Nature's twin blossoms on a single bough.",
-    "category": "wisdom"
+    "kikuyu": "Ki-nyan'-ga kya-ku a-ki-ni'-na ma-ru'-tu! (Wamahu's Ku-i-ne-né-ra Song, Routledge 1910, p. 185)",
+    "translation": "Your little market has finished the banana trees! — Wait until we have finished dancing, and then I will tell you what I have in my heart.",
+    "explanation": "Recorded verbatim by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 184–185) from Wamahu (brother of Chief Wombúgu on the Gúra River) on the Ku-i-ne-né-ra dance of warriors and young women.",
+    "englishEquivalent": "First the communal dance, then the words of the heart.",
+    "category": "unity"
   },
   {
     "id": 18,
-    "kikuyu": "Guso! Ndathiĩ gũceera ndakora mũndũ ũrĩ na mũtwe mũnene ũtarĩ maitho. — Nĩ kĩgũũ (fungus / mushroom).",
-    "translation": "Riddle (Routledge 1910 #2): I went for a walk and met a person with a big head and no eyes. — Answer: A mushroom / fungus (or round ant-hill).",
-    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285) among the Akikuyu of Nyeri and Murang'a.",
-    "englishEquivalent": "A head without eyes.",
+    "kikuyu": "O N'gaí! Mwi-nin-ya-ga! Give us health, give us children, give us rich increase of our flocks and herds and of the fruits of the earth! (Chief Mungé's Prayer, Routledge 1910, p. 231)",
+    "translation": "O N'gaí (God)! Mwi-nin-ya-ga (Possessor of Whiteness on Mount Kénya)! Give us health, children, and increase of flocks, herds, and crops!",
+    "explanation": "Recorded verbatim onto the phonograph by Chief Mungé for W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 230–231) during the sacrifice beneath the sacred Mu-gú-mu fig tree with eight sacrificial shrubs.",
+    "englishEquivalent": "Health, posterity, and the fruits of the earth are the blessings of peace.",
     "category": "wisdom"
   },
   {
     "id": 19,
-    "kikuyu": "Guso! Nyũmba yakwa ndĩrĩ mũromo. — Nĩ itumbi (an egg).",
-    "translation": "Riddle (Routledge 1910 #3): My house has no door. — Answer: An egg (itumbi).",
-    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285); shared across East African oral literature.",
-    "englishEquivalent": "A seamless house without a door.",
-    "category": "family"
+    "kikuyu": "N'ga-na! — Sa-i! Sa-i! (Sacrificial Beer Responses, Routledge 1910, pp. 235–236)",
+    "translation": "N'ga-na! ('So be it / Amen!') — Sa-i! Sa-i! ('Hear, hear!')",
+    "explanation": "Recorded verbatim by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 235–236): the elders' antiphonal responses on the third day after the Mu-gú-mu sacrifice when four officiating elders pour sacrificial sugar-cane beer (n'jó-hi) at the foot of the sacred tree.",
+    "englishEquivalent": "Let all the assembly say Amen.",
+    "category": "unity"
   },
   {
     "id": 20,
-    "kikuyu": "Guso! Ndathiĩ na njĩra ndakora mũtumia ũkuĩte mwana na mũgongo na ndarĩ mĩkwa. — Nĩ mbembe mũtĩ-inĩ wayo.",
-    "translation": "Riddle (Routledge 1910 #4): I went along the road and saw a woman carrying a child on her back without straps (mĩkwa). — Answer: A maize cob growing on its stalk.",
-    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285), comparing the maize cob (mbembe) clasping its stalk to a Kikuyu mother carrying her baby in a leather garment.",
-    "englishEquivalent": "A mother carrying her child without a strap.",
+    "kikuyu": "Ta-hí-ka thá-hu! Ta-hí-ka ki-ú-ru! Ni-da-ni-na thá-hu wa-ku. (Routledge 1910, pp. 262–263)",
+    "translation": "Vomit the ceremonial uncleanness (thá-hu)! Expel what is bad (ki-ú-ru)! I have ended your ceremonial uncleanness.",
+    "explanation": "Recorded verbatim by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 260–263): spoken by the Medicine-Man (Mun'-du Mu-gu) while brushing the patient's lips from left to right with a brush of nine Tuso purification herbs and gon'-du, u'-mu, and í-ra diatomite.",
+    "englishEquivalent": "Cast out the wrong and be restored to purity.",
     "category": "family"
   },
   {
     "id": 21,
-    "kikuyu": "Guso! Nĩ kĩĩ kĩrĩ mũromo mũnene gĩtarĩ nda? — Nĩ irima (a pit / hole in the ground).",
-    "translation": "Riddle (Routledge 1910 #5): What has a wide mouth and no stomach (or swallows everything without filling)? — Answer: A pit or hole in the ground.",
-    "explanation": "Recorded by W. S. & K. Routledge (1910, p. 285).",
-    "englishEquivalent": "An open mouth that never fills.",
-    "category": "wisdom"
+    "kikuyu": "Wanjíru (Ro-gá-nu #2, Routledge 1910, pp. 291–293): The Maiden Sacrificed for Rain & Rescued by True Loyalty",
+    "translation": "When severe drought parched the land, the Medicine-Man declared that the maiden Wanjíru must stand in the circle while each family gave a goat for her life; as she sank step by step into the earth, torrential rain fell, until a young warrior who loved her followed her track into the underworld ('a land of great plains') and restored her to her mother and sister.",
+    "explanation": "Recorded verbatim from the storyteller Na-ga-tú-u by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, Part IV: Folk-Lore, pp. 291–293).",
+    "englishEquivalent": "True devotion braves the underworld to rescue the innocent.",
+    "category": "family"
   },
   {
     "id": 22,
     "kikuyu": "Thahu wa mũciĩ ũhoragio na ng'ondu (kũhoria thahu).",
     "translation": "Ceremonial defilement (thahu) of the homestead is cooled and purified with a sacrificial sheep (ng'ondu).",
-    "explanation": "Documented in W. S. & K. Routledge (1910, pp. 254–260) and C. W. Hobley (1910, pp. 104–115): peace and moral order in the homestead require reconciliation and restoration ('cooling').",
+    "explanation": "Documented in W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 256–263, 29 causes of Thá-hu) and C. W. Hobley (1910, pp. 134–141): peace and moral order in the homestead require ritual reconciliation ('cooling').",
     "englishEquivalent": "Prevention and reconciliation restore peace.",
     "category": "family"
   },
@@ -179,22 +179,22 @@
     "id": 23,
     "kikuyu": "Kiama kia atumia gĩtũũragia bũrũri na thayũ.",
     "translation": "The council of elders (Kiama) sustains the land in peace.",
-    "explanation": "Documented by W. S. & K. Routledge (1910, pp. 195–220) and Rev. Fr. A. Hémery (1903, p. 88) on Agĩkũyũ deliberative justice and the sacred oath (muma / kithasi).",
+    "explanation": "Documented by W. Scoresby & Katherine Routledge in 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, pp. 195–221: Mo-ran'-ja / N'dun'-du / Ke-thi-ga, Ki-á-ma with Ma-tu-ra N'gu-ru leaf-bunch and staff of Mu-ti'-gi, Mun'-deren'-du or Mú-ta-zi, N'já-ma, 9 dated court trials, 6 Mu-ma ordeals, and 14-hole Ki-tha-si stone) and Rev. Fr. A. Hémery (1903).",
     "englishEquivalent": "Where there is wise counsel, the people flourish.",
     "category": "unity"
   },
   {
     "id": 24,
-    "kikuyu": "Mũndũ ũtarĩ mbũri ndarĩ mũciĩ (Hémery 1903).",
-    "translation": "A person who does not care for their flock does not build a lasting homestead.",
-    "explanation": "Grounded in Rev. Fr. A. Hémery's 'English-Kikuyu Handbook' (1903) and McGregor (1904) on pastoral-agricultural stewardship in Gĩkũyũ society.",
+    "kikuyu": "Mũndũ ũtarĩ mbũri ndarĩ mũciĩ (Hémery 1903 & Routledge 1910).",
+    "translation": "A person who does not care for their flock does not build a lasting homestead (fixed ratio: 13 goats = 1 cow, Routledge 1910, p. 44).",
+    "explanation": "Grounded in Rev. Fr. A. Hémery's 'English-Kikuyu Handbook' (1903), McGregor (1904), and W. S. & K. Routledge (1910, pp. 44, 124–133, where bride-wealth marli is 30 goats and 5–6 sheep).",
     "englishEquivalent": "Diligence builds the home.",
     "category": "character"
   },
   {
     "kikuyu": "Gũthũ (Guso)! — Aanake mathiĩ, athuri maikare? — Mũhu ũitwo, mahiga ma riiko matigare.",
     "translation": "Riddle (Do you hear)! — The young men go, the old men stay? — Answer: The ashes are poured out, the three hearth-stones remain.",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a pre-colonial People: The Akikuyu of British East Africa', p. 192): Kikuyu riddles are called 'Guso' ('Do you hear?'). Just as hot ashes are swept out while the three hearthstones (mahiga ma riiko) stay fixed, young warriors travel afar while the elders (kiama) remain at the homestead.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', p. 192, Riddle #4): Kikuyu riddles open with 'Guso!' ('Do you hear?'). Just as hot ashes are swept out while the three hearthstones (mahiga ma riiko) stay fixed, young warriors travel afar while the elders (kiama) remain at the homestead.",
     "englishEquivalent": "Youth wanders, age endures.",
     "category": "wisdom",
     "id": 25
@@ -202,7 +202,7 @@
   {
     "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩnyingĩtie? — Marigũ.",
     "translation": "Riddle (Do you hear)! — What hangs down? — Answer: Bananas (marigũ).",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu 'Guso' riddle reflecting the heavy banana bunches hanging in every homestead plantation (mũgũnda).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', pp. 191–192, Riddle #1): Traditional Kikuyu 'Guso' riddle reflecting the heavy banana bunches hanging in every homestead plantation (mũgũnda).",
     "englishEquivalent": "Bountiful harvest bows low.",
     "category": "character",
     "id": 26
@@ -210,15 +210,15 @@
   {
     "kikuyu": "Gũthũ (Guso)! — Nĩkĩ ndĩraigua inegene? — Nyoni irĩ mũgũnda.",
     "translation": "Riddle (Do you hear)! — Why do I hear a noise? — Answer: The birds are in the plantation (shamba).",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Refers to the commotion of grain-eating birds in the millet and maize fields, guarded by children on watch-platforms using the bull-roarer (kĩhuruta) and sling (kĩgũtha).",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', p. 192, Riddle #2): Refers to the commotion of grain-eating birds in the millet and maize fields, guarded by children on watch-platforms using the 26-in. bull-roarer (ke-hu-ru'-ta, Plate XXXII Fig. 1) and bark-twine mud-pellet sling (ki-gu'-tha, Plate XXXII Fig. 2).",
     "englishEquivalent": "Where there is commotion, there is a cause.",
     "category": "caution",
     "id": 27
   },
   {
     "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩgonderera njĩra-inĩ? — Ndorobo njĩra-inĩ.",
-    "translation": "Riddle (Do you hear)! — What takes a winding course? — Answer: A forest hunter (Ndorobo) on the path.",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Describes the winding forest tracks of the Ogiek/Ndorobo hunters across Mount Kenya and the Aberdares.",
+    "translation": "Riddle (Do you hear)! — What takes a winding course? — Answer: A forest hunter (N'doróbo / A'si) on the road.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', p. 192, Riddle #3): Describes the winding forest tracks of the A'si (A-ki-e-ki / N'doróbo) elephant hunters across Mount Kenya and the Aberdares (pp. 3–4).",
     "englishEquivalent": "The forest path winds.",
     "category": "patience",
     "id": 28
@@ -226,15 +226,15 @@
   {
     "kikuyu": "Gũthũ (Guso)! — Kĩĩ kĩambata kĩrĩma gĩkinye kĩrĩma kĩngĩ? — Kũgũrũ.",
     "translation": "Riddle (Do you hear)! — What goes from hill to hill? — Answer: The human foot (kũgũrũ).",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): In the ridge-and-valley topography of Kikuyuland, the human foot crosses from ridge to ridge.",
+    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', p. 192, Riddle #5): In the ridge-and-valley topography of Kikuyuland, the human foot crosses from ridge to ridge.",
     "englishEquivalent": "Step by step crosses the mountains.",
     "category": "work",
     "id": 29
   },
   {
     "kikuyu": "Warĩire kĩĩ ira, ka-Ndorobo? — Ũthĩ (ou-thi), na ngĩkoma. Wahuurire ta rwĩgĩ? — Ta rwĩgĩ rũtarĩ mũting'oe.",
-    "translation": "What did you eat yesterday, little Ndorobo? — Scraps of food (ou-thi), and went to sleep. Did you snatch up your food like a hawk? — Like a hawk that has lost its tail.",
-    "explanation": "Recorded by W. Scoresby & Katherine Routledge (1910, p. 192): Traditional Kikuyu boys' rapid-fire antiphonal wordplay game.",
+    "translation": "What did you eat yesterday, little N'doróbo? — Scraps of food (ou-thi), and went to sleep. Did you snatch up your food like a hawk? — Like a hawk that has lost its tail.",
+    "explanation": "Recorded verbatim by W. Scoresby & Katherine Routledge (1910, 'With a Prehistoric People: The Akikúyu of British East Africa', p. 192): Traditional Kikuyu boys' rapid-fire antiphonal wordplay game.",
     "englishEquivalent": "Quick wit parries every question.",
     "category": "wisdom",
     "id": 30

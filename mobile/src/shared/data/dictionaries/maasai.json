@@ -12,8 +12,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -16504,12 +16504,47 @@
           "pronunciation": "e-ngai / l-ai-ser ol-bi-tir / l-u-ku-mai ol-ku-rok / l-ma-su-la ol-ngo-ji-ne / l-ai-tai-ok en-de-ro-ni",
           "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part II, Ch. VI, p. 161 & (1922) Bantu Beliefs, Glossary p. 305",
           "audioFile": null
+        },
+        {
+          "english": "The 5 Main Divisions of the Laikipiak Masai in Dundas (1910, pp. 55–56)",
+          "translation": "1. Il Tarasaeriaini (foot of Mount Kenya, Euaso Ngiro, Ntarakwa & Subugu Olerigo), 2. Lornying (Loroghi Plateau), 3. Ngang Elima ('Ngang Elima — high veldt above the Mokotan plains), 4. Il Marma (Lariak), 5. Il Mungmunyot (subdivision of Il Tarasaeriaini that migrated east to the Lorian Swamp, where they were attacked and almost completely annihilated by the Naivasha Masai; rinderpest ~1890 & Masai raids broke Laikipiak power, leaving survivors on the Mokotan River and at Njemps)",
+          "pronunciation": "il ta-ra-sae-ri-ai-ni / lor-nying / ngang e-li-ma / il mar-ma / il mung-mu-nyot",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 55–56)",
+          "audioFile": null
+        },
+        {
+          "english": "Nyarusi (Laikipiak name for Njamus/Njemps) & The 3 Laikipiak Clans Settled at Njamus in Dundas (1910, pp. 49, 52–53, 55)",
+          "translation": "Nyarusi (corrupted by Swahili ivory traders into Njamus / Njemps) • 3 Laikipiak Clans at Njamus: 1. Il Kabes (Il Kabess — acts as substitute for Il Mayek in the Njamus crop-medicine ceremony), 2. Loiborgishu ('L-ooibor-kīshu, branch of 'Ngang Elima), 3. Il Barsegir (branch of Lornying)",
+          "pronunciation": "nya-ru-si / il ka-bes / loi-bor-gi-shu / il bar-se-gir",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49, 52–53, 55)",
+          "audioFile": null
+        },
+        {
+          "english": "Segellai, Tigirri, Il Kakesan (Lumbwa / Kipsikis) & Il-Mokwan (Moiven / I-Sirikwa) in Dundas (1910, pp. 51–53, 57)",
+          "translation": "Segellai (Masai tribe of the Nakuru plains & Mau slopes who defeated the Samburu Lobbeyok and drove them to El Bogoi, and were later wiped out by a combination of Laikipiak, Tigirri & Masai) • Tigirri • Il Kakesan (Masai name for the Lumbwa / Kipsikis, to whom survivors of the massacred Il Geroi fled) • Il-Mokwan (Masai name for the stone-kraal builders on the Uasin Gishu Plateau around Sirgoit, called Moiven / Muttia by the Suk and I-Sirikwa by the Nandi; Uasin Gishu clan at Njamus: Barsaina)",
+          "pronunciation": "se-gel-lai / ti-gir-ri / il ka-ke-san / il-mo-kwan / bar-sai-na",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 51–53, 57)",
+          "audioFile": null
+        },
+        {
+          "english": "The Masaí Warrior Kraal (Manyatta), Elected Colonel (Legooran), 5-Warrior Daily Ration, Lion-Mane War Helmet & Blood Song in Routledge (1910, Appendix II, pp. 344–349 & Plate CXXXVI)",
+          "translation": "Manyatta (military kraal of unmarried warriors) • Legooran ('colonel' elected by the warriors for eloquence and bravery; carries a club rather than a spear and arbitrates all disputes) • Strict Warrior Regimen (pp. 346–347): Unmarried warriors live in the manyatta attended by their mothers and 5 or 6 uninitiated girls per warrior, subsisting strictly on milk and mutton (1 sheep daily to every 5 warriors; neither beer nor tobacco is allowed to a warrior, whereas married elders drink honey-beer and take snuff) • Arms & Lion-Mane War Helmet (pp. 345–346, Plate CXXXVI): 4-ft long-bladed spear with short wood grip and long iron butt-spike, double-edged sword in red leather scabbard, knobkerrie club, painted buffalo-hide shield with heraldic clan devices, ostrich-feather face-ring, and the tall lion-mane war headdress awarded exclusively to a warrior who has killed a lion single-handed with his spear • The Blood Song (pp. 347–348): Danced by ~40 warriors after drinking warm blood drawn from a bullock's neck vein with a blocked arrow, spinning their 4-ft silver-bright spears vertically faster than the eye can follow",
+          "pronunciation": "ma-nyat-ta / le-goo-ran / il-mu-ran",
+          "context": "W. Scoresby & Katherine Routledge (1910) With a Prehistoric People: The Akikúyu of British East Africa, Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI",
+          "audioFile": null
+        },
+        {
+          "english": "Masaí–Akikúyu Trade, Intermarriage, Coalition Against the Somalis (Age of I-ré-gi), Post-Rinderpest Arthi Plain Battle (>1,000 Dead) & Removal to Lei-ki-pi-a in Routledge (1910, pp. 9, 12–16, 134, 344–349)",
+          "translation": "Historical & Trade Relations (pp. 9, 12–16, 134, 344–349): During the 4th Kikuyu generation age (Masaí, p. 9), smearing with red earth became fashionable; during the 7th generation age (I-ré-gi 'the revolters', pp. 9, 15), the Masaí, Akikúyu, N'doróbo (A'si), and Akam'ba united to drive back the southward-invading Somalis; despite mutual cattle raids, Masaí women regularly traded skins, milk, and beads in Akikúyu markets and intermarried with Akikúyu families (pp. 12–16, 134; informant Lou-be'-a bin Cha'-ris had a Swahili father and Masaí mother, p. xxi) • Post-Rinderpest Civil War on the Arthi Plain & Removal to Lei-ki-pi-a (pp. 345, 348–349): Following the catastrophic cattle plague (rinderpest) and smallpox of the early 1890s, two sections of the Masaí fought a pitched battle on the Arthi plain near Nairobi leaving over 1,000 dead on the field; the northern section subsequently settled on the Lei-ki-pi-a plateau north of Ny-er'-i",
+          "pronunciation": "ma-sai / i-re-gi / n-dor-o-bo / ar-thi / lei-ki-pi-a",
+          "context": "W. Scoresby & Katherine Routledge (1910) With a Prehistoric People: The Akikúyu of British East Africa, Introduction pp. 9, 12–16 & Appendix II pp. 344–349",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Hobley 1910/1922 & BFBS 1921)",
+  "source": "Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 2341
+  "totalEntries": 2346
 }

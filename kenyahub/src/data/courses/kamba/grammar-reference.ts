@@ -403,5 +403,41 @@ export const KAMBA_GRAMMAR_SECTIONS: GrammarSection[] = [
       { kamba: "Cl. 7/8 Ki-/Kī- → I-/Vi-/Si-/Sy- • Cl. 11/10 U-/Ū- → N- • Cl. 13/12 Ka- → Tu-/Tū- • Cl. 16 Va-", english: "Kamba noun class prefixes & concords in Johnston's 16-class table", explanation: "Johnston (1919, Vol. I, p. 111 & 1922, Vol. II, p. 261)" },
       { kamba: "-mwe, -īlī, -tatū, -nya, -tanω, -þanþatū, Mū-ūanza, N-yanya, Kenda, I-kūmi, Mī-oṅgω īlī, I-ana, Ṅ-gili", english: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 100, 1,000 in #12 Kamba", explanation: "Johnston (1919, Vol. I, p. 107 #12 Kamba)" }
     ]
+  },
+  {
+    id: "kamba-hinde-1904-complete-monograph",
+    title: "Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages of East Africa' (pp. i–xviii, 1–76): Preface (Fort Hall, Sept. 1902), 6 Plural Rules, Alphabet, 12-Paradigm Conjugation of Ku or Gu-tinda, Ulu vs. Nganyawa Lexicon, Numerals & All 65 Phrases",
+    summary: "Complete line-by-line documentation of Hildegarde Hinde (Mrs Sidney L. Hinde, author of A Masai Grammar), Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: at the University Press, 1904, pp. i–xviii, 1–76; Cornell University Library PL 8351.H66 from the Estate of L. L. Seaman).",
+    content: `From Hildegarde Hinde (Mrs Sidney L. Hinde, *Vocabularies of the Kamba and Kikuyu Languages of East Africa*, Cambridge: at the University Press, 1904, Preface signed Fort Hall, British East Africa, September 1902, pp. v–xviii, 1–76):
+1. **Preface: Ulu & Nganyawa Dialects, 6 Plural Formation Rules & Phonology (pp. v–viii)**:
+   - **Two Kamba Dialects**: **Ulu** (spoken from Machakos to the coast) and **Nganyawa** (spoken in part of the Kitui District; Hinde notes that the Akikuyu of the southern part of the Kenya Province and the Akamba of the adjoining Kitui District readily understand each other).
+   - **Six Plural Formation Rules (pp. vi–vii)**:
+     1. **Animate \`mu-\` → \`a-\`**: *muka* ('woman') → **aka** ('women'); native **Mukamba** (sing.) → **Akamba** (pl.) and **Mukikuyu** (sing.) → **Akikuyu** (pl.), contrasted with Swahili *Mkamba / Wakamba* and *Mkikuyu / Wakikuyu*.
+     2. **Inanimate \`mu-\` → \`mi-\`**: *muti* ('tree') → **miti** ('trees').
+     3. **\`i-\` → \`ma-\`**: *ihiga* ('stone') → **mahiga** ('stones') / Kamba *ibia → mavia* (p. 57).
+     4. **\`ki-\` → \`i-\`**: *kiratu / kiatu* ('sandal/boot') → **iratu / iatu** ('sandals/boots', p. 9).
+     5. **Invariable \`n-\`**: *nyumba* ('house') → **nyumba** ('houses').
+     6. **\`ka-\` or \`ki-\` → \`twa-\` or \`shi-\`**: *kana* ('child') → **twana** or **shiana** ('children'); *kiara / kia* ('finger') → **shiara / thia** ('fingers', p. 25).
+   - **Phonology & The Alphabet (pp. vii, ix–x)**: Absence of the letter **R** in Kamba owing to the lisp common to all Akamba (probably on account of their filed teeth; double **rr** used for a guttural burr); **K and G**, **B and V**, and **Th and S or Z** are interchangeable; Italian vowels + German **ö** and **ü**; penultimate stress marked with **¯** and **˘**; and prenasalized initial **M** and **N** before a consonant.
+2. **Complete 12-Paradigm Conjugation of \`Ku or gu-tinda\` ('to conquer', pp. xi–xviii)**:
+   - **Infinitive (p. xii)**: **Ku or gu-tinda** (u becomes *w* before *a, e, i* and almost disappears before *o*).
+   - **Indicative Present (\`-a-\`, p. xii)**: **n-a-tinda, w-a-tinda, a-tinda, tw-a-tinda, mw-a-tinda, m-a-tinda**.
+   - **Present Imperfect (\`-ki-\`, p. xiii)**: **ni-ki-tinda, wa or u-ki-tinda, a-ki-tinda, tu-ki-tinda, mu-ki-tinda, me or ma-ki-tinda**.
+   - **Present Perfect (\`-eti or -iti\`, p. xiii)**: **ni-tind-eti or iti, wa or u-tind-eti or iti, a-tind-eti or iti, tu-tind-eti or iti, mu-tind-eti or iti, me or ma-tind-eti or iti**.
+   - **Past Perfect (Kamba \`-na-...-ie\`, p. xiv)**: **ni-na-tind-ie, wa or u-na-tind-ie, a-na-tind-ie, tu-na-tind-ie, mu-na-tind-ie, me or ma-na-tind-ie** (vs. Kikuyu *-eri*).
+   - **Future (\`-ka- or -ga-\`, p. xiv)**: **ni or nin-ka or ga-tinda, wa or u-ka or ga-tinda, a-ka or ga-tinda, tu-ka or ga-tinda, mu-ka or ga-tinda, me or ma-ka or ga-tinda**.
+   - **Imperative (p. xv)**: sing. **tinda**, pl. **tindani or tindai**.
+   - **Subjunctive (\`-e\`, p. xv)**: **ni-tinde, wa or u-tinde, a-tinde, tu-tinde, mu-tinde, me or ma-tinde**.
+   - **Negative Present (\`-di- or -ndi-\`, p. xvi)**: **n-di-tinda, wa or u-di or ndi-tinda, a-di or ndi-tinda, tu-di or ndi-tinda, mu-di or ndi-tinda, me or ma-di or ndi-tinda**.
+   - **Negative Past Perfect (\`-di-na- or -ndi-na-\`, p. xvi)**: **n-di-na-tinda, wa or u-di or ndi-na-tinda, a-di or ndi-na-tinda, tu-di or ndi-na-tinda, mu-di or ndi-na-tinda, me or ma-di or ndi-na-tinda**.
+   - **Negative Future (\`-di-ka-/-ga- or -ndi-ka-/-ga-\`, p. xvii)**: **n-di-ka or ga-tinda, wa or u-di or ndi-ka or ga-tinda, a-di or ndi-ka or ga-tinda, tu-di or ndi-ka or ga-tinda, mu-di or ndi-ka or ga-tinda, me or ma-di or ndi-ka or ga-tinda**.
+   - **Negative Imperative (p. xvii)**: sing. **di or ndi-tinda**, pl. **di or ndi-tindani or tindai**.
+   - **Negative Subjunctive (p. xviii)**: **n-di-tinde, wa or u-di or ndi-tinde, a-di or ndi-tinde, tu-di or ndi-tinde, mu-di or ndi-tinde, me or ma-di or ndi-tinde**.
+   - **Conversational Infinitive Note (p. xviii)**: In short sentences, the infinitive prefix *ku-* is often used with pronominal prefixes instead of tense infixes, e.g., **ninkushoka** ('I will return') instead of **ninkashoka**.`,
+    examples: [
+      { kamba: "n-a-tinda • ni-ki-tinda • ni-tind-eti / iti • ni-na-tind-ie • ni / nin-ka / ga-tinda • tinda (pl. tindani / tindai) • ni-tinde", english: "I conquer • I am conquering • I have conquered • I conquered (Kamba -na-...-ie) • I shall conquer • conquer! • that I may conquer", explanation: "Affirmative paradigms of ku or gu-tinda in Hinde (1904, pp. xii–xv)" },
+      { kamba: "n-di-tinda • n-di-na-tinda • n-di-ka / ga-tinda • di / ndi-tinda (pl. di / ndi-tindani / tindai) • n-di-tinde", english: "I do not conquer • I did not conquer • I shall not conquer • conquer not! • that I may not conquer", explanation: "Negative paradigms of ku or gu-tinda in Hinde (1904, pp. xvi–xviii)" },
+      { kamba: "wita wata? • uthi naku? • wendakki? • uomanakko? • o voo — o voo nēza / nēza", english: "What is your name? • Where are you going? • What do you want? • Where do you come from? • Salutation — Reply", explanation: "Ulu Kamba conversational phrases in Hinde (1904, pp. 73, 75)" }
+    ]
   }
 ];

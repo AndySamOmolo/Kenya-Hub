@@ -7,8 +7,9 @@
 // 4. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
 // 5. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Masai & Njemps/Samburu comparative tables)
 // 6. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
-// 7. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
-// 8. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
+// 7. Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40, pp. 49–57)
+// 8. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
+// 9. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikúyu of British East Africa" (Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI)
 // ============================================================
 
 export interface MaasaiGrammarSection {
@@ -93,20 +94,20 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
     ]
   },
   {
-    "id": "maasai-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
-    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
-    "content": "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Hobley 1910/1922, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
-    "examples": [
+    id: "maasai-public-domain-dataset-synthesis",
+    title: "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
+    summary: "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
+    content: "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    examples: [
       {
-        "maasai": "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",
-        "english": "the day before yesterday, the day after to-morrow • the place where the ox is slaughtered in",
-        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+        maasai: "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",
+        english: "the day before yesterday, the day after to-morrow • the place where the ox is slaughtered in",
+        explanation: "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
       },
       {
-        "maasai": "Ol-alem liki-njo-sho • Ol-alem la-isho",
-        "english": "the sword which you give to me • the sword which he, she, or they give to me",
-        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+        maasai: "Ol-alem liki-njo-sho • Ol-alem la-isho",
+        english: "the sword which you give to me • the sword which he, she, or they give to me",
+        explanation: "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
       }
     ]
   },
@@ -121,10 +122,10 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
        1. **L'aiser** (9 *sub-gilat*: *En gidong* [the hereditary *Oloiboni* lineage of Mbatian, Lenana, and Sendeyo], *Parkinet, Parsingo, Partimaroi, Engaje oodo, Engaje nanuki, L'olokesen, L'okumai, L'oodokishu*).
        2. **L'ukumai** (6 *sub-gilat*: *Sitat, Maromai, L'ebusat, Partetiu, L'oiger, Kipuyoni*).
        3. **L'aitaiok** (7 *sub-gilat*: *Siria, L'ais, Machen, Pojos, Mohono, L'oodokishu, L'okamai*).
-       4. **L'molelyan** (5 *sub-gilat*: *Masangwa, Kiporon,タ-Moingo, L'oodokishu, Parsintaan*).
+       4. **L'molelyan** (5 *sub-gilat*: *Masangwa, Kiporon, L'moingo, L'oodokishu, Parsintaan*).
        5. **L'makesen** (3 *sub-gilat*: *Loiborkishu, Kipeles, Ptirbo*).
      - **II. Orok Kiteng ("The Black Cow")** — comprising **two primary *gilat*** and **6 *sub-gilat***:
-       6. **L'tarosero** (3 *sub-gilat*: *L'moingo,Nkidong, L'ais*).
+       6. **L'tarosero** (3 *sub-gilat*: *L'moingo, Nkidong, L'ais*).
        7. **L'mengana** (3 *sub-gilat*: *Kipuyoni, Kiporon, El Masula*).
 2. **The *Eo Endomono* Child-Naming Ceremony & 7 *Sirata* Shield Patterns (pp. 120–121)**:
    - **Eo Endomono (Naming Ceremony, p. 120)**: Held when a child's hair is first shaved; an unblemished sheep is slaughtered, three spots of blood are placed on the mother's forehead, nose, and chin, her hair is shaved with milk and water, and the elders bless the child's name.
@@ -143,6 +144,45 @@ export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
       { maasai: "Oodo Mongi ('Red Bull': L'aiser, L'ukumai, L'aitaiok, L'molelyan, L'makesen) vs. Orok Kiteng ('Black Cow': L'tarosero, L'mengana)", english: "The two primary Masai moieties and their 7 primary gilat (clans) and 36 sub-gilat", explanation: "Hobley (1910, Part II, Ch. I, pp. 119–120)" },
       { maasai: "Eo Endomono • Sirata e neilongu, Sirata el langarua, Sirata el oiboni, Sirata el ngatuny, Sirata e narok, Sirata e nanyokie, Sirata el keri", english: "Child-naming ceremony • The 7 named warrior shield (el-longo) heraldic patterns", explanation: "Hobley (1910, Part II, Ch. I, pp. 120–121)" },
       { maasai: "Uasingishu gilat & totems: L'aiser (ol-bitir wild pig), L'ukumai (ol-kurok crow), L'masula (ol-ngojine hyena), L'aitaiok (en-deroni rat)", english: "The 4 Uasingishu (Kwavi) clans and their sacred totems", explanation: "Hobley (1910, Part II, Ch. VI, p. 161)" }
+    ]
+  },
+  {
+    id: "mas-dundas-1910-laikipiak-baringo-maa",
+    title: "Hon. K. R. Dundas (1910, pp. 49–57): The Five Laikipiak Divisions, Uasin Gishu (Il-Mokwan), Segellai, Tigirri & Baringo Maa Clans",
+    summary: "Historical Maa divisions, migrations, and clan branches in the Baringo and Laikipia basins documented by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 49–57).",
+    content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *JRAI* Vol. 40, Jan.–Jun. 1910, pp. 49–57):
+1. **The Five Main Divisions of the Laikipiak Masai (pp. 55–56)**:
+   - **(1) Il Tarasaeriaini**: Inhabited the country at the foot of Mount Kenya and around the **Euaso Ngiro**, **Ntarakwa**, and **Subugu Olerigo**.
+   - **(2) Lornying**: Inhabited the **Loroghi Plateau** (parent division of the Njamus clan **Il Barsegir**, p. 53).
+   - **(3) Ngang Elima (*'Ngang Elima*)**: Inhabited the high veldt above the **Mokotan** plains (parent division of the Njamus clan **Loiborgishu / 'L-ooibor-kīshu**, p. 53).
+   - **(4) Il Marma**: Inhabited **Lariak**.
+   - **(5) Il Mungmunyot**: A subdivision of *Il Tarasaeriaini* who migrated east to the **Lorian Swamp**, where they were attacked and almost completely annihilated by the Naivasha Masai (p. 56). After the ~1890 rinderpest epidemic decimated the Laikipiak herds, small Laikipiak settlements survived on the Mokotan River near the Government station and at Njemps.
+2. **Historical Maa Groups, Ethnonyms & Baringo Clan Branches (pp. 49–57)**:
+   - **Nyarusi**: Laikipiak name for the Njamus/Ilchamus, corrupted by Swahili ivory traders into *Njamus / Njemps* (p. 49).
+   - **Il Kabes (*Il Kabess*), Loiborgishu (*'L-ooibor-kīshu*) & Il Barsegir**: The 3 Laikipiak clans settled at Njamus (*Il Kabess* substitutes for *Il Mayek* in the Njamus crop-medicine ceremony, pp. 53, 55).
+   - **Ol Ouara (= *Lugumai*)**: Samburu/Njamus clan corresponding to Masai *Lugumai* (p. 53); **Barsaina**: Uasin Gishu (*Moiven*) clan at Njamus descended from island settlers at Korvan (pp. 50, 53).
+   - **Segellai & Tigirri (p. 51)**: The *Segellai* Masai of the Nakuru plains and Mau slopes defeated the Samburu *Lobbeyok* and drove them to *El Bogoi*, before being wiped out by a coalition of *Laikipiak*, *Tigirri*, and *Masai*.
+   - **Il Kakesan (p. 52) & Il-Mokwan (p. 57)**: Masai names for the *Lumbwa* (Kipsikis, to whom survivors of the massacred *Il Geroi* fled) and the prehistoric Uasin Gishu plateau stone-kraal builders (called *Moiven / Muttia* by the Suk and *I-Sirikwa* by the Nandi).`,
+    examples: [
+      { maasai: "Il Tarasaeriaini • Lornying • 'Ngang Elima • Il Marma • Il Mungmunyot", english: "The five main territorial divisions of the Laikipiak Masai", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 55–56)" },
+      { maasai: "Nyarusi • Il Kabes (Il Kabess), 'L-ooibor-kīshu (of 'Ngang Elima), Il Barsegir (of Lornying) • Segellai & Tigirri • Il Kakesan • Il-Mokwan", english: "Baringo & Rift Valley Maa ethnonyms and clan branches in Dundas (1910)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 49–57)" }
+    ]
+  },
+  {
+    id: "mas-routledge-1910-appendix-ii",
+    title: "W. S. & K. Routledge (1910, Appendix II, pp. 344–349 & Plate CXXXVI): The Masaí Warrior Manyatta, Elected Legooran ('Colonel'), Lion-Mane War Helmet, Blood Song & Arthi Plain Battle",
+    summary: "Primary ethnographic record of Masaí military organisation, dietary discipline, arms, the Blood Song, and post-rinderpest history in W. Scoresby & Katherine Routledge (1910, pp. 9, 12–16, 344–349 & Plate CXXXVI).",
+    content: `From W. Scoresby & Katherine Routledge (*With a Prehistoric People: The Akikúyu of British East Africa*, London: Edward Arnold, 1910, Introduction pp. 9, 12–16, Appendix II: *The Masaí*, pp. 344–349 & Plate CXXXVI):
+1. **The Warrior *Manyatta*, Elected *Legooran* & Strict Dietary Regimen (pp. 346–347)**:
+   - Unmarried warriors live in a dedicated military kraal (**manyatta**) attended by their mothers and five or six uninitiated girls per warrior, governed by an elected **legooran** ("colonel" chosen for eloquence and bravery, who carries a knobkerrie club rather than a spear and arbitrates all disputes).
+   - Warriors subsist strictly on **milk and mutton** (**one sheep daily to every five warriors**), and **neither fermented beer nor tobacco** is permitted to a warrior.
+2. **4-Ft Spear, Lion-Mane War Headdress, The Blood Song & Post-Rinderpest History (pp. 9, 15, 345–349 & Plate CXXXVI)**:
+   - **Arms & Lion-Mane Headdress (pp. 345–346, Plate CXXXVI)**: Broad-bladed spear (blade nearly 4 ft long, short wooden mid-grip, long iron butt-spike) and tall lion-mane war headdress awarded only to a warrior who has killed a lion single-handed with his spear.
+   - **The Blood Song (pp. 347–348)**: Performed by ~40 warriors after drinking warm bullock blood drawn from the neck vein with a blocked arrow, spinning their 4-ft silver-bright spears vertically faster than the eye can follow.
+   - **Historical Alliances & Arthi Plain Battle (pp. 9, 15, 345, 348–349)**: Records the joint alliance of the Masaí, Akikúyu, N'doróbo (*A'si*), and Akam'ba to repel the southward Somali invasion during the 7th Kikuyu generation age (*I-ré-gi*, "the revolters"), and the pitched battle between the two Masaí sections on the **Arthi plain** near Nairobi after the 1890s cattle plague and smallpox (leaving **over 1,000 dead**), followed by the northern section's settlement on **Lei-ki-pi-a**.`,
+    examples: [
+      { maasai: "Manyatta • Legooran ('Colonel') • 1 sheep daily to 5 warriors + milk (no beer or tobacco)", english: "Warrior kraal • Elected leader • Strict warrior dietary discipline", explanation: "W. S. & K. Routledge (1910, Appendix II, pp. 346–347)" },
+      { maasai: "4-ft spear & lion-mane headdress • The Blood Song • Arthi plain battle (>1,000 dead) & Lei-ki-pi-a", english: "Single-handed lion-slayer helmet • Blood-drinking dance • Post-rinderpest history", explanation: "W. S. & K. Routledge (1910, Appendix II, pp. 345–349 & Plate CXXXVI)" }
     ]
   }
 ];

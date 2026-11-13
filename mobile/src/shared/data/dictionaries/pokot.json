@@ -10,9 +10,9 @@
     "Baringo"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
+  "dictionaryVersion": "3.1",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII — audited 100% line-by-line across 11 geographical divisions, 5 pastoral divisions, 3 Kasauria migrations, 11 Hill Suk sections, 24 orten clans & totems, Ellap/Ellat, Mt. Alongol & Kerial religion, verbatim sick prayer, and 12-month Kamei/Bengat calendar), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -563,13 +563,6 @@
           "translation": "Mbe-ne se-me-ñgalan ñgala chuno pa-tagh?",
           "pronunciation": "mbe-ne se-me-nggalan ngga-la chu-no pa-tagh",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)",
-          "audioFile": null
-        },
-        {
-          "english": "May (When people can once more get about)",
-          "translation": "Perrowa",
-          "pronunciation": "per-ro-wa",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
           "audioFile": null
         }
       ]
@@ -4976,52 +4969,10 @@
           "audioFile": null
         },
         {
-          "english": "August (When the grass commences drying up)",
-          "translation": "Mugeyon",
-          "pronunciation": "mu-ge-yon",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
           "english": "Potter (female clay-pot maker) & Blacksmith",
           "translation": "koko-ter (potter) & ki-tong-u (smith)",
           "pronunciation": "ko-ko-ter / ki-ton-gu",
           "context": "Beech (1911, pp. 17–18) — Suk crafts & guild chants",
-          "audioFile": null
-        },
-        {
-          "english": "September (When the waddy thorn trees are in bloom)",
-          "translation": "Tabatch",
-          "pronunciation": "ta-bat",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
-          "english": "April (When much rain prevents people going abroad)",
-          "translation": "Regesa",
-          "pronunciation": "re-ge-sa",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
-          "english": "February (When small showers come and lick up the dust)",
-          "translation": "Terter",
-          "pronunciation": "ter-ter",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
-          "english": "December (When the sheep and goats are calling to each other)",
-          "translation": "Kawgei",
-          "pronunciation": "kaw-gei",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
-          "english": "January (When the whole earth dries up, and there is no food)",
-          "translation": "Mou",
-          "pronunciation": "mou",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
           "audioFile": null
         },
         {
@@ -5809,24 +5760,10 @@
           "audioFile": null
         },
         {
-          "english": "Dry season (The months of full bellies)",
-          "translation": "Bengat",
-          "pronunciation": "beng-at",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
-          "audioFile": null
-        },
-        {
           "english": "Original contents of the calabash fruit",
           "translation": "tandar",
           "pronunciation": "tand-ar",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
-          "audioFile": null
-        },
-        {
-          "english": "June (When small supplies of early food are got from the shambas)",
-          "translation": "Meluwon",
-          "pronunciation": "me-lu-won",
-          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
           "audioFile": null
         }
       ]
@@ -10616,6 +10553,69 @@
           "pronunciation": "ka-mei",
           "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
           "audioFile": null
+        },
+        {
+          "english": "Dry season ('The months of full bellies': March to August)",
+          "translation": "Bengat",
+          "pronunciation": "be-ngat",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "September — 1st month of Kamei ('Windy months'; fn. 5: Low-country sowing takes place in this month)",
+          "translation": "Tabatch",
+          "pronunciation": "ta-batch",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72 & fn. 5)",
+          "audioFile": null
+        },
+        {
+          "english": "December — 4th month of Kamei ('Starry nights')",
+          "translation": "Kawgei",
+          "pronunciation": "kaw-gei",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "January — 5th month of Kamei ('During these months a small caterpillar comes and eats up the grass')",
+          "translation": "Mou",
+          "pronunciation": "mou",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "February — 6th month of Kamei ('During these months a small caterpillar comes and eats up the grass')",
+          "translation": "Terter",
+          "pronunciation": "ter-ter",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "April — 2nd month of Bengat ('The months of heavy rains')",
+          "translation": "Regesa",
+          "pronunciation": "re-ge-sa",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "May — 3rd month of Bengat ('The months of heavy rains')",
+          "translation": "Perrowa",
+          "pronunciation": "per-ro-wa",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "June — 4th month of Bengat ('The months of heavy rains'; fn. 10: also known as Meldag)",
+          "translation": "Meluwon (also known as Meldag)",
+          "pronunciation": "me-lu-won / mel-dag",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72 & fn. 10)",
+          "audioFile": null
+        },
+        {
+          "english": "August — 6th month of Bengat ('The months of mists')",
+          "translation": "Mugeyon",
+          "pronunciation": "mu-ge-yon",
+          "context": "Suk (Pökoot) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
         }
       ]
     },
@@ -14328,7 +14328,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "tigh-in, pl. tigh-ŭ",
           "pronunciation": "tigh-in",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
@@ -19716,6 +19716,132 @@
           "pronunciation": "wah-soo-koo / poh-koot",
           "context": "Ven. J. P. Farler & Rev. T. Wakefield (1882, p. 739) — Native Routes in East Africa (PRGS Vol. 4)",
           "audioFile": null
+        },
+        {
+          "english": "Bawgott (indigenous autonym of the Suk; Suk derived from Masai name ? < Shok) & Pastoral vs. Agricultural Suk in Dundas (1910, p. 56)",
+          "translation": "Bawgott (Suk — agricultural hill Suk W of Kerio vs. ~3,000 pastoral nomadic Suk in Baringo District between the Kerio River and Laikipiak Escarpment, N to Alongol, Masol & Laterok hills, S to Njemps Nkuba)",
+          "pronunciation": "baw-gott / suk",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 56)",
+          "audioFile": null
+        },
+        {
+          "english": "Kasauria (largest pastoral Suk section, named after a deep well drawn up in stages in a bullock skin) & Three Migrations from Koma in Kapukou across the Suom (Tirkwel) River",
+          "translation": "Kasauria • Koma • Kapukou • Suom (Suk name for the Tirkwel River) • 1st exodus: Murkassikor (Kachepkai River), Assassam & Suom; 2nd exodus: Barter, Kaibosso, Chepkerial, Tiati, Kolowa, Sawgott, Bennegh & Kaibategh; 3rd exodus: after Kiplegit went to Tiati",
+          "pronunciation": "ka-sau-ri-a / ko-ma / ka-pu-kou / su-om / mur-kas-si-kor",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 56–57)",
+          "audioFile": null
+        },
+        {
+          "english": "Moiven / Muttia (Suk names for the prehistoric stone-kraal builders on the Uasin Gishu Plateau around Sirgoit, called Il-Mokwan by the Masai and I-Sirikwa by the Nandi) & Kaparamen Salt-Lick Raid",
+          "translation": "Moiven / Muttia (Il-Mokwan / I-Sirikwa — raided by the Suk at Kolowa and while taking their cattle to lick salt at Kaparamen near the Kerio River)",
+          "pronunciation": "moi-ven / mut-ti-a / il-mo-kwan / i-si-ri-kwa / ka-pa-ra-men",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 57)",
+          "audioFile": null
+        },
+        {
+          "english": "The 11 Geographical Divisions of the Suk Country in Dundas (1910, p. 57)",
+          "translation": "1. Kapukou, 2. Shok, 3. Kapkoma, 4. Sekerr, 5. Magan, 6. Maerich, 7. Muino, 8. Ngorror, 9. Krut, 10. Cheptulel, 11. Pastoral nomadic Suk of Baringo",
+          "pronunciation": "ka-pu-kou / shok / kap-ko-ma / se-kerr / ma-gan / mae-rich / mui-no / ngor-ror / krut / chep-tu-lel",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 57)",
+          "audioFile": null
+        },
+        {
+          "english": "The 5 Pastoral Suk Divisions (Kasauria, Kacheripko, Cheptulel, Kiplegit & Exterminated Kachenwono at Ngingyang) + Kamiriongo & Tawl in Dundas (1910, pp. 57–58)",
+          "translation": "Kasauria, Kacheripko, Cheptulel, Kiplegit (named after their chief), Kachenwono (formerly at Ngingyang, exterminated before 1910), Kamiriongo (from Kapukou, decimated by Karamoja & rinderpest) & Tawl (from Kawin on upper Tirkwel & Chebleng Highlands)",
+          "pronunciation": "ka-sau-ri-a / ka-che-rip-ko / chep-tu-lel / kip-le-git / ka-chen-wo-no / ka-mi-ri-o-ngo / tawl",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 57–58)",
+          "audioFile": null
+        },
+        {
+          "english": "Shok (hill-tribe sword-smiths 2 days up Maerich Pass on the upper Krut / Swahili Wehe River, descended from the Tirruk of Angata e-'m-barta)",
+          "translation": "Shok (named after the short sword they manufacture) • Tirruk • Krut River (Swahili: Wehe)",
+          "pronunciation": "shok / tir-ruk / krut / we-he",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 58)",
+          "audioFile": null
+        },
+        {
+          "english": "The 11 Hill Suk Sections from South to North + Muino & Beyus (Kibeyus) in Dundas (1910, p. 62)",
+          "translation": "1. Laepei, 2. Chepkoa, 3. Kivas, 4. Seya, 5. Soito (1–5 known collectively as Cheptulel); 6. Kaptakau, 7. Ngorror (6–7 known collectively as Krut); 8. Songutua, 9. Maerich, 10. Chepbinyi (8–10 known collectively as Maerich); 11. Sekerr; plus Muino (on the Ngorror range bend) & Beyus (in the Kibeyus valley behind Maerich)",
+          "pronunciation": "lae-pei / chep-ko-a / ki-vas / se-ya / soi-to / kap-ta-kau / ngor-ror / so-ngu-tu-a / mae-rich / chep-bi-nyi / se-kerr / mui-no / be-yus",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 62)",
+          "audioFile": null
+        },
+        {
+          "english": "Orten (sg. Oro, Suk 'Clans') & Frog, Buffalo, Baboon, Sun & Kite Totem Clans (12 Clans) in Dundas (1910, p. 59)",
+          "translation": "orten (sg. oro) • Frog (3): Kagorondor, Kaborai, Chepbai • Buffalo (5): Chemmergwan, Sangei, Chebokvo, Kajonyir, Moiyoi • Baboon (1): Kachemmergaw • Sun (1): Kagiserr • Kite (2): Saniak, Kachigawk",
+          "pronunciation": "or-ten / o-ro / ka-go-ron-dor / ka-bo-rai / chep-bai / chem-mer-gwan / sa-ngei / che-bok-vo / ka-jo-nyir / moi-yoi / ka-chem-mer-gaw / ka-gi-serr / sa-ni-ak / ka-chi-gawk",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 59)",
+          "audioFile": null
+        },
+        {
+          "english": "Lion, God/Rain (Ellat), Hyena, Bee, Zebra, Ant-Eater, Elephant, Hyrax, Oil-Tree & Terem Totem Clans (12 Clans — Total 24 Suk Orten Clans) in Dundas (1910, p. 59)",
+          "translation": "Lion (2): Chibberwongo, Chebarsitch • God or Rain (Ellat, 2): Araboin, Kibbesetim • Hyena (2): Chibbekapturu, Legen • Bee (1): Chebajigwo • Zebra (1): Turgoll • Ant-eater (1): Orror • Elephant (1): Sopan • Hyrax (1): Chepbau • Oil-tree (1): Cheman • Unknown totem (?): Terem",
+          "pronunciation": "chib-ber-wo-ngo / che-bar-sitch / a-ra-boin / kib-be-se-tim / chib-be-kap-tu-ru / le-gen / che-ba-ji-gwo / tur-goll / or-ror / so-pan / chep-bau / che-man / te-rem",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 59)",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Burial Customs, Grave Libations & The Hill Community Undertaker in Dundas (1910, p. 59)",
+          "translation": "Married men buried in the kraal or hut with milk-gourd & tobacco, a black or red goat killed & its stomach contents and bones placed on the mound, and annual milk/honey/tobacco libations poured to ancestral spirits; hill Suk, Maragwetta & Ndo employ a community undertaker purified with milk after 1 month and paid a goat or ornaments",
+          "pronunciation": "baw-gott burial & hill undertaker",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 59)",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Circumcision in Sukuku (July), Adultery Compounding, Childbirth Taboos, Umbilical-Cord Bag & Twins Purification in Dundas (1910, pp. 59–60)",
+          "translation": "Circumcision in Sukuku (July) for boys (2–3 months bush isolation) and 3 weeks later for girls; adultery compounded by 1–2 bullock feast or stick duel; 2-month post-partum hut taboo & weaning abstinence; umbilical cord kept in a small bag in the hut; twins feast & prayer (a cow bearing twins is slaughtered with its progeny)",
+          "pronunciation": "su-ku-ku circumcision & customs",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 59–60)",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Inheritance & Levirate Marriage Laws in Dundas (1910, p. 60)",
+          "translation": "Each wife's separate cattle and sheep are divided equally among her own sons; the father's common herd goes to the eldest son (largest share) and remaining sons; widows pass to the deceased's brothers; a sister's marriage price is divided among her full and half brothers",
+          "pronunciation": "baw-gott inheritance law",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 60)",
+          "audioFile": null
+        },
+        {
+          "english": "Ellap / Ellat (Benevolent Rain God), Mount Alongol Nether-World God, Kerial (God of Thunder) & Verbatim Suk Sick Prayer in Dundas (1910, pp. 60–61)",
+          "translation": "Ellap / Ellat (benevolent rain god), Mount Alongol nether-world god (steam vents & mirages), Kerial (god of thunder) • Verbatim Sick Prayer: 'If this sickness be of the rain or of the grass or of the earth, or if it be from yourself, take it away'",
+          "pronunciation": "el-lap / el-lat / a-lo-ngol / ke-ri-al",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 60–61)",
+          "audioFile": null
+        },
+        {
+          "english": "Suk Mimicry Dances (Monkey Dance & Water-Spirit Drowning Dance) & Warrior Lowalan in Dundas (1910, p. 61 & Plate XV)",
+          "translation": "Animal mimicry dances (Monkey Dance, Plate XV; Water-spirit seizing a drowning man) & Lowalan (celebrated Suk warrior)",
+          "pronunciation": "lo-wa-lan",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 61 & Plate XV)",
+          "audioFile": null
+        },
+        {
+          "english": "Sectional Elephant Hunting Laws of Kaptakau, Maerich, Sekerr & Ngorror in Dundas (1910, p. 64)",
+          "translation": "The ivory belongs to the hunter who first draws blood, while the meat belongs to the section in whose country the elephant dies (Kaptakau hunt with poisoned arrows, Maerich & Sekerr on foot with spears, and Ngorror spear from platforms built in trees along elephant paths)",
+          "pronunciation": "kap-ta-kau / mae-rich / se-kerr / ngor-ror",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 64)",
+          "audioFile": null
+        },
+        {
+          "english": "Kwakituk (Suk name for the Samburu Lorogishu) & Lobbeyok (Suk name for the Samburu) in Dundas (1910, p. 51)",
+          "translation": "Kwakituk (Samburu Lorogishu) & Lobbeyok (Samburu)",
+          "pronunciation": "kwa-ki-tuk / lob-be-yok",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 51)",
+          "audioFile": null
+        },
+        {
+          "english": "Comparative 6-Tribe Hill Calendar Seasonal Notes (1–6) & Footnotes (1–10) in Dundas (1910, p. 72)",
+          "translation": "Kamei ('The months of empty bellies', Sept–Feb: 1. Windy months, 2. Starry nights, 3. Caterpillar comes and eats up the grass) & Bengat ('The months of full bellies', Mar–Aug: 4. Month of flying ants, 5. Months of heavy rains, 6. Months of mists; fn. 5: Low-country sowing in Sept; fn. 6: Circumcision in Sukuku/July for Suk; fn. 10: Meluwon also known as Meldag)",
+          "pronunciation": "ka-mei / be-ngat / me-lu-won / mel-dag",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 72)",
+          "audioFile": null
+        },
+        {
+          "english": "Ethnographic Photographs of the Suk in Dundas (1910, Plates XV, XVI Figs. 1, 3, 5, 6 & XVII Figs. 3, 4)",
+          "translation": "Plate XV: Suk Monkey Dance (2 views) & Suk Dance (2 views); Plate XVI: Fig. 1 Suk Youth, Fig. 3 Suk Girl, Fig. 5 Suk Women Dancing, Fig. 6 Suk Warriors Dancing; Plate XVII: Fig. 3 Old Suk with Long Hair Bag, Fig. 4 Young Suk Warrior showing Chignon",
+          "pronunciation": "plates xv xvi xvii suk",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 71 & Plates XV–XVII)",
+          "audioFile": null
         }
       ]
     }
@@ -19723,5 +19849,5 @@
   "source": "Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 2801
+  "totalEntries": 2819
 }

@@ -9,9 +9,9 @@
     "Turkana"
   ],
   "hasAudio": false,
-  "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
+  "dictionaryVersion": "3.1",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 66–70, Plates XVI–XVII — audited 100% line-by-line across 16 principal tribes, 19 Ngoitunya/Ngolio attegir clans, 6 life stages, asavanissia ages, Nessegonn bush, marriage & slaughter customs, Agipie & nether-world god, and 12-month Nakiborror/Nakamou/Nait calendar), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
   "categories": [
     {
       "id": "greetings",
@@ -8088,6 +8088,111 @@
           "pronunciation": "ah-thohm ah-koh-lohn",
           "context": "Declining afternoon sun. (Barton 1921)",
           "audioFile": null
+        },
+        {
+          "english": "Wet season (6 months: March to August — Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak)",
+          "translation": "Nakiborror",
+          "pronunciation": "na-ki-bor-ror",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "Dry season (6 months: September to February — Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge)",
+          "translation": "Nakamou",
+          "pronunciation": "na-ka-mou",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "Yellow-grass season (August, September & October: Loitiak, Lolongo, Lopo — so called because the grass turns yellow)",
+          "translation": "Nait (Loitiak, Lolongo & Lopo)",
+          "pronunciation": "nait",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "March — 1st month of the Turkana year (1st month of Nakiborror wet season)",
+          "translation": "Lomaruk",
+          "pronunciation": "lo-ma-ruk",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "April — 2nd month of the Turkana year (2nd month of Nakiborror wet season)",
+          "translation": "Tetimaru",
+          "pronunciation": "te-ti-ma-ru",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "May — 3rd month of the Turkana year (3rd month of Nakiborror wet season)",
+          "translation": "Eliel",
+          "pronunciation": "e-li-el",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "June — 4th month of the Turkana year (4th month of Nakiborror wet season)",
+          "translation": "Loichoto",
+          "pronunciation": "loi-cho-to",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "July — 5th month of the Turkana year (5th month of Nakiborror wet season)",
+          "translation": "Loisoban",
+          "pronunciation": "loi-so-ban",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "August — 6th month of the Turkana year (6th month of Nakiborror wet season & 1st month of Nait when grass turns yellow)",
+          "translation": "Loitiak",
+          "pronunciation": "loi-ti-ak",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "September — 7th month of the Turkana year (1st month of Nakamou dry season & 2nd month of Nait when grass turns yellow)",
+          "translation": "Lolongo",
+          "pronunciation": "lo-lo-ngo",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "October — 8th month of the Turkana year (2nd month of Nakamou dry season & 3rd month of Nait when grass turns yellow)",
+          "translation": "Lopo",
+          "pronunciation": "lo-po",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "November — 9th month of the Turkana year (3rd month of Nakamou dry season)",
+          "translation": "Lorara",
+          "pronunciation": "lo-ra-ra",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "December — 10th month of the Turkana year (4th month of Nakamou dry season)",
+          "translation": "Lomuk",
+          "pronunciation": "lo-muk",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "January — 11th month of the Turkana year (5th month of Nakamou dry season)",
+          "translation": "Logwang",
+          "pronunciation": "lo-gwang",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
+        },
+        {
+          "english": "February — 12th month of the Turkana year (6th month of Nakamou dry season)",
+          "translation": "Lodunge",
+          "pronunciation": "lo-du-nge",
+          "context": "Turkana traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)",
+          "audioFile": null
         }
       ]
     },
@@ -14087,6 +14192,76 @@
           "pronunciation": "e-ko-mom",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)",
           "audioFile": null
+        },
+        {
+          "english": "The 16 Principal Turkana Tribes in Dundas (1910, p. 66)",
+          "translation": "1. Ngolio, 2. Ngoitunya (both living south of Lake Rudolph around the Kerio, Sogota & Tirkwel rivers), 3. Nittacha, 4. Nessetou, 5. Nbochoross, 6. Ngissir, 7. Nissikir, 8. Kamatak, 9. Lugumong, 10. Oiuaeguara, 11. Nijiye, 12. Ngirriomong, 13. Ngakumuk, 14. Ngalabong, 15. Ngorr, 16. Nikotomungwa",
+          "pronunciation": "ngo-li-o / ngoi-tu-nya / nit-ta-cha / nes-se-tou / nbo-cho-ross / ngis-sir / nis-si-kir / ka-ma-tak / lu-gu-mong / oi-u-ae-gua-ra / ni-ji-ye / ngir-ri-o-mong / nga-ku-muk / nga-la-bong / ngorr / ni-ko-to-mu-ngwa",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 66)",
+          "audioFile": null
+        },
+        {
+          "english": "Attegir (Turkana 'Clans') & All 19 Exogamous Clans of the Ngoitunya and Ngolio Tribes in Dundas (1910, p. 67)",
+          "translation": "attegir (strictly exogamous clans with no totems): 1. Nitegorr, 2. Molereto, 3. Tuduya, 4. Ellelet, 5. Ebalang, 6. Kaleso, 7. Ngonom, 8. Ngatap (clans 1–8 occur in all 16 Turkana tribes), 9. Moana, 10. Nittacha, 11. Egurerr, 12. Ngaruwo (the rain-makers' clan), 13. Neturana, 14. Erarak, 15. Eraraket, 16. Abuchaw, 17. Ngattigo, 18. Ekkadenya, 19. Ogorok",
+          "pronunciation": "at-te-gir / ni-te-gorr / mo-le-re-to / tu-du-ya / el-le-let / e-ba-lang / ka-le-so / ngo-nom / nga-tap / mo-a-na / nit-ta-cha / e-gu-rerr / nga-ru-wo / ne-tu-ra-na / e-ra-rak / e-ra-ra-ket / a-bu-chaw / ngat-ti-go / ek-ka-de-nya / o-go-rok",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67)",
+          "audioFile": null
+        },
+        {
+          "english": "Ngaruwo (The Rain-Makers' Clan of the Turkana) in Dundas (1910, p. 67)",
+          "translation": "Ngaruwo (12th clan of the Ngoitunya and Ngolio tribes)",
+          "pronunciation": "nga-ru-wo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67)",
+          "audioFile": null
+        },
+        {
+          "english": "Male Life-Stage Terms (Nidue, Egile, Kasikou & Oppa) & Asavanissia Warrior Age-Generations in Dundas (1910, p. 67)",
+          "translation": "nidue (young boy) → egile (warrior) → kasikou / oppa (old man; oppa wears a beaded cap-like headdress, Plate XVI Fig. 7) • asavanissia (warrior age-generations instituted every 4 or 5 years)",
+          "pronunciation": "ni-du-e / e-gi-le / ka-si-kou / op-pa / a-sa-va-nis-si-a",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67 & Plate XVI Fig. 7)",
+          "audioFile": null
+        },
+        {
+          "english": "Female Life-Stage Terms (Apesur, Aberu & Agemat) in Dundas (1910, p. 67)",
+          "translation": "apesur (unmarried girl; wears V-shaped bead-and-ostrich-eggshell apron in front and wide hide skirt behind, Plate XVI Fig. 2) → aberu (married woman / wife; wears gazelle or goat-skin apron) → agemat (old woman)",
+          "pronunciation": "a-pe-sur / a-be-ru / a-ge-mat",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67 & Plate XVI Fig. 2)",
+          "audioFile": null
+        },
+        {
+          "english": "Nessegonn Bush of the Lower Sogota, Wild Coffee-Like Berry & Total Abstinence from Fermented Liquor in Dundas (1910, p. 67)",
+          "translation": "Nessegonn (dense evergreen bush on the lower Sogota with small sweet berries eaten by the Turkana and thick leathery leaves feeding camels, donkeys & goats), wild coffee-like berry (stains the teeth yellow), camels' milk diet, and total abstinence from fermented liquor",
+          "pronunciation": "nes-se-gonn",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkana Marriage Price, Unmarried Pregnancy Fine (30 Cattle per Lover), Post-Marriage 2-Bullock Mock-Stormed Enclosure Feast & Adultery Law in Dundas (1910, pp. 67–68)",
+          "translation": "Unmarried pregnancy fine: 30 cattle from each lover to the girl's father; Marriage price: 20 cattle + 30 donkeys to the bride's mother before marriage, 30 cattle + camels/donkeys/sheep/goats to the father, 5 cattle to each remaining wife of the father, and 2 cattle to each brother and sister of the bride (or the groom resides at his father-in-law's village paying in instalments); post-marriage 2-bullock mock-stormed enclosure feast before a daughter may enter her father's kraal; adultery punishable by death or confiscation of all livestock, wives & daughters",
+          "pronunciation": "turkana marriage & adultery law",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 67–68)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkana Twins Cowrie-Shell Neck Charm, Lung-Spearing & Circular Buttock-Piece Slaughter Custom, and Burial Rites in Dundas (1910, pp. 68–69)",
+          "translation": "Twins wear a cowrie-shell neck charm; beasts are speared through the lungs, a circular piece is cut out of the buttock first, and meat is roasted and eaten in the skin; married men & very old women are buried under stones with a slaughtered goat (young/middle-aged married women are left in their hut broken down over the corpse; distinguished elders are anointed with fat and honored with annual bullock sacrifices)",
+          "pronunciation": "turkana slaughter & burial customs",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 68–69)",
+          "audioFile": null
+        },
+        {
+          "english": "Agipie (Benevolent Sky God) & the Malevolent Nether-World God of Rocks and Rivers in Dundas (1910, p. 69)",
+          "translation": "Agipie (benevolent god of the skies, prayed to with an ox, sheep, or goat sacrifice in sickness) vs. the malevolent god dwelling in the nether world, rocks, and rivers (a thunderstorm is the two gods fighting and hurling lightning at each other)",
+          "pronunciation": "a-gi-pi-e",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 69)",
+          "audioFile": null
+        },
+        {
+          "english": "Turkana Physical Types, Weapons (8–9 ft Spear, Knobkerry, Finger Hook/Ring & Iron Wrist-Knife), Chignons & Plates XVI–XVII in Dundas (1910, pp. 66, 69–70 & Plates XVI–XVII)",
+          "translation": "Two physical types (tall dolichocephalic Samburu/Rendile admixture vs. shorter broad-headed pure Turkana; tallest measured 6 ft 6 in, average <=5 ft 11 in); 4 lower incisors extracted; clay-dressed human-hair bag reaching the waist; 8–9 ft spear, knobkerry, iron finger-hook/ring & circular wrist-knife; shaking hands unknown; Plate XVI Fig. 2 Turkana Girl (apesur), Fig. 4 Young Warrior (egile), Fig. 7 Old Man (oppa); Plate XVII Figs. 1–2 Turkana Warriors (front & back views)",
+          "pronunciation": "egile / apesur / oppa plates xvi xvii",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 66, 69–71 & Plates XVI–XVII)",
+          "audioFile": null
         }
       ]
     }
@@ -14094,5 +14269,5 @@
   "source": "Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
   "isoCode": "tuv",
   "glottocode": "turk1308",
-  "totalEntries": 1998
+  "totalEntries": 2023
 }

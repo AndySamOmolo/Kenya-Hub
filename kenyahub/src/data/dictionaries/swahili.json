@@ -2760,7 +2760,7 @@
           "audioFile": null
         },
         {
-          "english": "Woman (pregnant)",
+          "english": "Woman (young woman who has not left her father's house)",
           "translation": "mwanamwali (young woman who has not left her father's house)",
           "pronunciation": "mwanamwali",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
@@ -3488,9 +3488,9 @@
           "audioFile": null
         },
         {
-          "english": "Belt (warrior's)",
-          "translation": "tunda (of beads)",
-          "pronunciation": "tunda",
+          "english": "Bracelet (5 types in Hinde 1904, p. 8)",
+          "translation": "kekee (flat); kikuku, pl. vikuku (round); kingaja, pl. vingaja (of beads); banagiri (ornamented with points); timbi",
+          "pronunciation": "ke-kee / ki-ku-ku / ki-nga-ja / ba-na-gi-ri / tim-bi",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
@@ -12959,7 +12959,7 @@
           "audioFile": null
         },
         {
-          "english": "Monkey",
+          "english": "Mongoose (gracilis)",
           "translation": "kimburru (gracilis)",
           "pronunciation": "kimburru",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
@@ -15430,7 +15430,7 @@
           "audioFile": null
         },
         {
-          "english": "Anklets (brass)",
+          "english": "Anklets (big)",
           "translation": "furungu, pl. mafurungu (big)",
           "pronunciation": "furungu",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
@@ -27750,7 +27750,7 @@
           "audioFile": null
         },
         {
-          "english": "Like, v. J should",
+          "english": "Like, v. (I should like) [Like, v. J should-, p. 25]",
           "translation": "napenda",
           "pronunciation": "na-pend-a",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -28030,28 +28030,28 @@
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make angry",
           "translation": "kasiríkia",
           "pronunciation": "kasirikia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "To feel",
+          "english": "To feel pain",
           "translation": "umía",
           "pronunciation": "umia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make peace",
           "translation": "pataníṣa",
           "pronunciation": "patanisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make war",
           "translation": "fánia wita",
           "pronunciation": "fania wita",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -29122,7 +29122,7 @@
           "audioFile": null
         },
         {
-          "english": "To make- maker",
+          "english": "Peace-maker",
           "translation": "mpataníṣi",
           "pronunciation": "mpatanisi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -30333,7 +30333,7 @@
           "audioFile": null
         },
         {
-          "english": "Upraid, (find fault)",
+          "english": "Upbraid (find fault) [Upraid, p. 56]",
           "translation": "keméa; láumu; patilísa",
           "pronunciation": "kemea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -36885,21 +36885,21 @@
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be sick",
           "translation": "ugúa; úma",
           "pronunciation": "ugua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be weak",
           "translation": "daifíka; kúta maṣáka",
           "pronunciation": "daifika",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "To get",
+          "english": "To get tipsy",
           "translation": "léwa; léfioa ni-",
           "pronunciation": "lewa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -46861,8 +46861,8 @@
         },
         {
           "english": "Paint (red)",
-          "translation": "mekundu, nyuue",
-          "pronunciation": "me-kundu nyuue",
+          "translation": "rangi mekundu, nyune",
+          "pronunciation": "ra-ngi me-ku-ndu nyu-ne",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
@@ -46938,15 +46938,15 @@
         },
         {
           "english": "Paint (black)",
-          "translation": "neusi",
-          "pronunciation": "neu-si",
+          "translation": "rangi ueusi",
+          "pronunciation": "ra-ngi u-eu-si",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
         {
           "english": "Paint (white)",
-          "translation": "neupe",
-          "pronunciation": "neu-pe",
+          "translation": "rangi neupe",
+          "pronunciation": "ra-ngi ne-u-pe",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
           "audioFile": null
         },
@@ -48680,7 +48680,7 @@
           "audioFile": null
         },
         {
-          "english": "To become",
+          "english": "To become surety",
           "translation": "dámini déni",
           "pronunciation": "damini deni",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -48750,7 +48750,7 @@
           "audioFile": null
         },
         {
-          "english": "Breakfeast",
+          "english": "Breakfast [Breakfeast, p. 6]",
           "translation": "jamsakánoa",
           "pronunciation": "jamsakanoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -55239,7 +55239,7 @@
           "audioFile": null
         },
         {
-          "english": "Ill-treate",
+          "english": "Ill-treat [Ill-treate, p. 21]",
           "translation": "fania mabaia",
           "pronunciation": "fa-nia ma-baia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -55911,7 +55911,7 @@
           "audioFile": null
         },
         {
-          "english": "From the dead",
+          "english": "Rise from the dead",
           "translation": "fufúka niuffúni",
           "pronunciation": "fufuka niuffuni",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -58032,7 +58032,7 @@
           "audioFile": null
         },
         {
-          "english": "Before last last year",
+          "english": "Year before last [before last —, p. 63]",
           "translation": "muaka wa júsi",
           "pronunciation": "muaka wa jusi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -59019,7 +59019,7 @@
           "audioFile": null
         },
         {
-          "english": "Ths day before Yesterday",
+          "english": "The day before yesterday [ths day before —, p. 63]",
           "translation": "júsi",
           "pronunciation": "jusi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -70625,7 +70625,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Measure, s.",
           "translation": "kipímo; kiási",
           "pronunciation": "kipimo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -70765,7 +70765,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Quarrel, s.",
           "translation": "kóndo; ugomfi",
           "pronunciation": "kondo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -71010,7 +71010,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Silence, s.",
           "translation": "maniamáfu; kímia",
           "pronunciation": "maniamafu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -71115,7 +71115,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Stamp, s.",
           "translation": "jappa; jéti",
           "pronunciation": "jap-pa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -71234,7 +71234,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Thank, s. (thanks)",
           "translation": "ṣúkuru; hemdi",
           "pronunciation": "sukuru",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -76442,7 +76442,7 @@
           "audioFile": null
         },
         {
-          "english": "Sqeeze",
+          "english": "Squeeze [Sqeeze, p. 48]",
           "translation": "futa kámassi",
           "pronunciation": "futa kamassi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -78199,7 +78199,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "ua",
           "pronunciation": "ua",
           "context": "Madan (1917) English-Swahili Vocabulary (v.)",
@@ -78626,91 +78626,91 @@
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Boil, v. n.",
           "translation": "wía; tokóta",
           "pronunciation": "wia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Dry, v. n.",
           "translation": "kaúka",
           "pronunciation": "kauka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Prosper, v. n.",
           "translation": "pata bac̣ti ngéma",
           "pronunciation": "pata bac ti ngema",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sleep, v. n.",
           "translation": "lála",
           "pronunciation": "lala",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Stop, v. n.",
           "translation": "keti; kā; áta",
           "pronunciation": "ke-ti",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Suit, v. n.",
           "translation": "lingána; saua",
           "pronunciation": "lingana",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sweat, v. n.",
           "translation": "tókoa ni harri or jáṣo; fánia mfúke",
           "pronunciation": "tokoa ni harri or jaso",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Teeth, v. n. (to teethe)",
           "translation": "mésa or toka méno",
           "pronunciation": "mesa or toka meno",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Thirst, v. n.",
           "translation": "yuna kiu",
           "pronunciation": "yu-na kiu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Tickle, v. n.",
           "translation": "telésa; tekénia magu",
           "pronunciation": "telesa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wait, v. n.",
           "translation": "gojéa; fuáta; utéa",
           "pronunciation": "gojea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wind, v. n.",
           "translation": "tatilía",
           "pronunciation": "tatilia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wonder, v. n.",
           "translation": "taájăbu",
           "pronunciation": "taajabu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -78871,7 +78871,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "úa",
           "pronunciation": "ua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -78885,7 +78885,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "Uuwaji",
           "pronunciation": "uu-wa-ji",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 7]",
@@ -81377,7 +81377,7 @@
           "audioFile": null
         },
         {
-          "english": "Secresy",
+          "english": "Secrecy [Secresy, p. 43]",
           "translation": "manéno ya sirri or férăga",
           "pronunciation": "maneno ya sirri or feraga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -83120,7 +83120,7 @@
           "audioFile": null
         },
         {
-          "english": "Laurate",
+          "english": "Lacerate [Laurate, p. 23]",
           "translation": "papúa; tatúa; rarúa",
           "pronunciation": "papua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -84107,91 +84107,91 @@
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Force, v. a.",
           "translation": "tia ngúfu; lasimíṣa",
           "pronunciation": "tia ngufu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Harvest, v. a.",
           "translation": "funa",
           "pronunciation": "fu-na",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Labour, v. a.",
           "translation": "tenda or fania kasi",
           "pronunciation": "tend-a or fa-nia ka-si",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Melt, v. a.",
           "translation": "yáiṣa",
           "pronunciation": "yaisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Mind, v. a.",
           "translation": "dáka",
           "pronunciation": "daka",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Name, v. a.",
           "translation": "pa jína; tája",
           "pronunciation": "pa jina",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Poison, v. a.",
           "translation": "liṣa summu",
           "pronunciation": "lisa summu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Remedy, v. a.",
           "translation": "pósa",
           "pronunciation": "posa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Return, v. a.",
           "translation": "rúdiṣa; regéṣa",
           "pronunciation": "rudisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Salt, v. a.",
           "translation": "tia muniu",
           "pronunciation": "tia mu-niu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Sink, v. a.",
           "translation": "angúṣa; sámiṣa tossa",
           "pronunciation": "angusa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Swear, v. a.",
           "translation": "áfia; apiṣa; piga yamíni",
           "pronunciation": "afia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Whisper, v. a.",
           "translation": "nognognésa",
           "pronunciation": "nognognesa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -84233,7 +84233,7 @@
           "audioFile": null
         },
         {
-          "english": "Oneself",
+          "english": "Wash oneself",
           "translation": "oga; náwa",
           "pronunciation": "o-ga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -85353,7 +85353,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "mwuaji",
           "pronunciation": "mwua-ji",
           "context": "Madan (1917) English-Swahili Vocabulary (s.)",
@@ -85948,7 +85948,7 @@
           "audioFile": null
         },
         {
-          "english": "Daugther",
+          "english": "Daughter [Daugther, p. 9]",
           "translation": "mtóto manámke",
           "pronunciation": "mtoto manamke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -86263,7 +86263,7 @@
           "audioFile": null
         },
         {
-          "english": "After to",
+          "english": "Day after to-morrow",
           "translation": "kéṣo kútoa",
           "pronunciation": "keso kutoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -86277,7 +86277,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "muuwáji",
           "pronunciation": "muuwaji",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -86452,7 +86452,7 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
+          "english": "Scissors [Scissars, p. 42]",
           "translation": "makassi (ya ku ṣonéa)",
           "pronunciation": "ma-kas-si",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -86550,7 +86550,7 @@
           "audioFile": null
         },
         {
-          "english": "Trousert",
+          "english": "Trousers [Trousert, p. 55]",
           "translation": "suruáli",
           "pronunciation": "suruali",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -86725,7 +86725,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "Muuaji",
           "pronunciation": "muua-ji",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1]",
@@ -91968,7 +91968,7 @@
           "audioFile": null
         },
         {
-          "english": "Gum arabii",
+          "english": "Gum arabic [Gum arabii, p. 18]",
           "translation": "summac̣; haba",
           "pronunciation": "sum-mac",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -92003,14 +92003,14 @@
           "audioFile": null
         },
         {
-          "english": "Point of a",
+          "english": "Point of a knife",
           "translation": "nta ya kissu",
           "pronunciation": "nta ya kis-su",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
           "audioFile": null
         },
         {
-          "english": "Not in the",
+          "english": "Not in the least",
           "translation": "kábisa",
           "pronunciation": "kabisa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -92990,7 +92990,7 @@
           "audioFile": null
         },
         {
-          "english": "Lightening",
+          "english": "Lightning [Lightening, p. 25]",
           "translation": "uméme",
           "pronunciation": "umeme",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
@@ -95181,7 +95181,7 @@
           "audioFile": null
         },
         {
-          "english": "What is the",
+          "english": "What is the news?",
           "translation": "ni c̣ábari gani mpia ilio tungilia",
           "pronunciation": "ni kha-ba-ri ga-ni mpia i-lio tungi-lia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -95664,7 +95664,7 @@
           "audioFile": null
         },
         {
-          "english": "Ha can do it",
+          "english": "He can do it [ha can do it, p. 6]",
           "translation": "awésa ku fánia",
           "pronunciation": "awesa ku fania",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -95706,14 +95706,14 @@
           "audioFile": null
         },
         {
-          "english": "Hippopotamos",
+          "english": "Hippopotamus [Hippopotamos, p. 20]",
           "translation": "mamba",
           "pronunciation": "mamb-a",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)",
           "audioFile": null
         },
         {
-          "english": "Nought, tobe",
+          "english": "Nought, to be [Nought, tobe, p. 31]",
           "translation": "hapána jambo",
           "pronunciation": "hapana jambo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -96959,7 +96959,7 @@
           "audioFile": null
         },
         {
-          "english": "Self, Imyself",
+          "english": "Self, I myself [Self, Imyself, p. 43]",
           "translation": "mimi nafsiyángo",
           "pronunciation": "mimi nafsiyango",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -98975,7 +98975,7 @@
           "audioFile": null
         },
         {
-          "english": "Reins of a horu",
+          "english": "Reins of a horse [Reins of a horu, p. 39]",
           "translation": "luguámu ya ferasi",
           "pronunciation": "luguamu ya ferasi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
@@ -100977,7 +100977,7 @@
           "audioFile": null
         },
         {
-          "english": "Conceal [Conecal]",
+          "english": "Conceal [Conecal, p. 8]",
           "translation": "fíta",
           "pronunciation": "fita",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)",
@@ -121557,12 +121557,33 @@
           "pronunciation": "m-jo-mba / sha-nga-zi / m-pwa / bi-na-mu / m-kwe / she-me-ji / wi-fi / ju-ma / ki-a-po / di-a",
           "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. 1, 9, 57, 134, 178, 192, 249, 268, 276, 279, 282, 388)",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Dr. J. L. Krapf (1850) Preface (pp. iii–x) & Six-Column Comparative Vocabulary of Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu & Kigálla (pp. 1–64)",
+          "translation": "Kisuáheli (understood from Barawa 1½° N to Mosambic; spoken on Kiáma, Túla, Patta, Lámu, Káu, Mómbas, Tánga, Pémba, Sánsibar & Kiloa by 350,000–400,000 souls) • Makafiri (heathens / back-country peoples) vs. watu wa mrima (littoral inhabitants) • Patta vs. Malinde (destroyed by the Galla; overgrown stone ruins visited by Krapf) • Nilo-Hamitic or Nilotic [Bantu] family South of the Bahr El-Abiad sources vs. Nigro-Hamitic stock • 5th Column Kihiáu (Wahiau E. of Lake Niassa / Moráwi, recorded in 1848 at Mombas from a Kamanga lad enslaved via Kiloa Kibendje after the 1847 Mabiti / Mawizi raid that killed or captured 7,000 Wahiau: Mulúngu [God, p. 25], mundu / wandu [man/men, p. 33], mési [water, p. 61], móto [fire, p. 21], liúa [sun, p. 53], muési [moon, p. 36], ndóndua [star, p. 51], úla [rain, p. 45], nyúmba [house, p. 28], jombe [cow, p. 13], mbúsi [goat, p. 25], ngósa [sheep, p. 49], ngúku [fowl, p. 23], ndémbo [elephant, p. 19], kuaúlaga [kill, p. 30], kuijikána [know, p. 31], kupikána [hear, p. 27], kulóla [see, p. 48], kúdia [eat, p. 19], kumúa [drink, p. 18], kuenda [go, p. 25], kuísa [come, p. 12]; Numerals pp. 62–64: jumo [1], wawíri [2], watátu [3], wánne [4], watáno [5], watáno na jumo [6], watáno na wawíri [7], watáno na watátu [8], watáno na wánne [9], likúmi [10], makúmi mawíri [20], makúmi likúmi [100])",
+          "pronunciation": "ki-su-a-he-li / ma-ka-fi-ri / wa-tu wa m-ri-ma / ki-hi-a-u / mo-ra-wi / ma-bi-ti",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. iii–x & Vocabulary pp. 1–64)",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde (1904) Preface (pp. v–viii), Alphabet (pp. ix–x) & Complete 12-Paradigm Swahili Verb Conjugation of Ku-shinda ('To Conquer', pp. xi–xviii)",
+          "translation": "Preface (signed Fort Hall, British East Africa, September 1902, pp. v–viii): Swahili as the trade language of East Africa (Zanzibar, Mombasa, and Lamu dialects; Zanzibar dialect used in the tables); Swahili Mkamba / Wakamba and Mkikuyu / Wakikuyu vs. native Mukamba / Akamba and Mukikuyu / Akikuyu • Complete 12-Paradigm Swahili Conjugation of Ku-shinda ('to conquer', pp. xi–xviii): Indicative Present (n-a-shinda, w-a-shinda, a-shinda, tw-a-shinda, mw-a-shinda, w-a-shinda) • Present Imperfect (ni-na-shinda, u-na-shinda, a-na-shinda, tu-na-shinda, m-na-shinda, wa-na-shinda) • Present Perfect (ni-me-shinda, u-me-shinda, a-me-shinda, tu-me-shinda, m-me-shinda, wa-me-shinda) • Past Perfect (ni-li/n-ali-shinda, u-li/w-ali-shinda, a-li/w-ali-shinda, tu-li/tw-ali-shinda, m-li/mw-ali-shinda, wa-li/w-ali-shinda) • Future (ni-ta-shinda, u-ta-shinda, a-ta-shinda, tu-ta-shinda, m-ta-shinda, wa-ta-shinda) • Imperative (shinda or shinde, pl. shindani or shindeni) • Subjunctive (ni-shinde, u-shinde, a-shinde, tu-shinde, m-shinde, wa-shinde) • Negative Present (si-shindi, hu-shindi, ha-shindi, hatu-shindi, ham-shindi, hawa-shindi) • Negative Past Perfect (si-ku-shinda, hu-ku-shinda, ha-ku-shinda, hatu-ku-shinda, ham-ku-shinda, hawa-ku-shinda) • Negative Future (si-ta-shinda, hu-ta-shinda, ha-ta-shinda, hatu-ta-shinda, ham-ta-shinda, hawa-ta-shinda) • Negative Imperative (si-shinda or shinde, pl. si-shindeni) • Negative Subjunctive (ni-si-shinde, u-si-shinde, a-si-shinde, tu-si-shinde, m-si-shinde, wa-si-shinde)",
+          "pronunciation": "ku-shi-nda / na-shi-nda / ni-na-shi-nda / ni-me-shi-nda / ni-li-shi-nda / ni-ta-shi-nda / si-shi-ndi",
+          "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: University Press, 1904, Preface pp. v–viii, Alphabet pp. ix–x & Verbs pp. xi–xviii)",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde (1904) Complete 63 Zanzibar Swahili Conversational Phrases (pp. 72, 74), Numerals (p. 70) & Additional Vocabulary Items (pp. 2–68)",
+          "translation": "All 63 Swahili Phrases (pp. 72, 74): jina lako nani? (What is your name?) • wendapi? (Where are you going?) • wataka nini? (What do you want?) • watoka wapi? (Where do you come from?) • wafanya nini? (What are you doing?) • nini hii? (What is this?) • usemaji? (What do you say?) • maji wapi? (Where is the water?) • sijui (I do not know) • sitaki (I do not want) • sitaki kwenda (I do not want to go) • siwezi kwenda (I cannot go) • siendi (I will not go) • nitakwenda (I will go) • nitarudi (I will return) • nimzuri (I am good) • ninanja (I am hungry) • nataka maziwa (I want milk) • nina mtoto (I have a child) • sioni (I do not see) • naleta (I bring) • njo hapa (Come here) • lete chakula (Bring food) • lete maji (Bring water) • mwite (Call him) • fanya moto (Make a fire) • kaleli (Be quiet) • enda zako (Go away) • mtoto wango (My child) • watoto wako (Your children) • ngombe zake (His cows) • mkono wake (His hand) • mji wetu (Our village) • baba wetu (Our father) • mama wetu (Our mother) • wataka kula? (Do you want to eat?) • mtoto yule mbaya (That is a bad child) • mtoto mkubwa (A big child) • nyumba kubwa (A big house) • amekuja (He has come) • umesema wongo (You have lied) • tutakwenda wote wawili (We will both go) • wewe mtu mbaya (You are a bad man) • watoto wote wadogo (All the children are small) • hako (He is not here) • usiji (Do not come) • twaleta (We bring) • siwe (Not you) • siye (Not he) • sisisi (Not we) • mtoto mzuri (A good child) • mtu mzuri (A good man) • kisu kizuri (A good knife) • mti mzuri (A good tree) • watoto wazuri (Good children) • watu wazuri (Good men) • visu vizuri (Good knives) • miti mizuri (Good trees) • kitwani (In the head) • tumboni (In the stomach) • mitini (In the trees) • nyumbani (In the house) • Salutation: Jambo • Additional Lexicon (pp. 4–66): mkundu (anus, p. 4), mtoto waharam (bastard, p. 6), kisimi (clitoris, p. 14), mzoga, pl. mizoga (corpse, p. 14), kuenda (go, p. 28), kukata (mutilate, p. 40), -tupu, uchi (naked, p. 42), titi, bubu; chuchu ya ziwa (nipples, p. 42), hapana (none, p. 42), mavi (ordure, p. 44), mbo (penis, p. 46), kunyonga, kusonga (strangle, p. 56), mapumbu, tamboa (testicles, p. 58), kukojoa (urinate, p. 62), mkojo (urine, p. 62), kuma (vulva, p. 64), chunjua (wart, p. 64), uchawi (witchcraft, p. 66), mganga, pl. waganga (witch doctor, p. 66), mjakazi, pl. wajakazi (woman slave, p. 66)",
+          "pronunciation": "ji-na la-ko na-ni / we-nda-pi / wa-ta-ka ni-ni / ja-mbo",
+          "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: University Press, 1904, pp. 2–74)",
+          "audioFile": null
         }
       ]
     }
   ],
-  "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
+  "source": "Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
   "isoCode": "swh",
   "glottocode": "swah1253",
-  "totalEntries": 17349
+  "totalEntries": 17352
 }

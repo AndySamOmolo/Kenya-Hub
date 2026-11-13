@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-12",
   "families": [
     {
       "id": "bantu",
@@ -42,7 +42,7 @@
         "Kirinyaga",
         "Nyandarua"
       ],
-      "notes": "Largest mother-tongue community in the central highlands; documented in Höhnel (1894), Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Dundas (1915), Johnston (1919), and BFBS (1921).",
+      "notes": "Largest mother-tongue community in the central highlands (Kiambu/Kabeti, Murang'a/Metumi/Fort Hall, and Nyeri/Gaki around Mount Kenya [Kĩrĩnyaga / Kĩreĩra]); documented in Höhnel (1894), Hémery (1903), Hinde (1904), McGregor (1904), W. Scoresby & Katherine Routledge (1910 'With a Prehistoric People: The Akikúyu of British East Africa'), Hobley (1910, 1922), Dundas (1915), Johnston (1919), and BFBS (1921).",
       "id": "kikuyu",
       "isoCode": "kik",
       "glottocode": "kiku1240"
@@ -76,7 +76,7 @@
         "Trans Nzoia",
         "West Pokot"
       ],
-      "notes": "Highland Nilotes (Nandi, Kipsigis, Tugen, Marakwet, Keiyo, Sabaot); documented in Hollis (1909), Dundas (1910), BFBS (1921), Diercks & Rao (2019), Landman (2019), and Zwarts, Chelimo & Jerono (2024).",
+      "notes": "Highland Nilotes (Nandi, Kipsigis/Lumbwa [Il Kakesan], Tugen/Kamasia [Kapteberewa & Nderois], Marakwet & Endo/Ndo [Chebleng], Keiyo/Elgeyo, Kabkamat/Olmo, Sangwirr, Uasin Gishu Moiven/Muttia/Il-Mokwan/I-Sirikwa, Sabaot); documented in Hollis (1909), Hon. K. R. Dundas (1910), Hobley (1910), BFBS (1921), Diercks & Rao (2019), Landman (2019), and Zwarts, Chelimo & Jerono (2024).",
       "id": "kalenjin",
       "isoCode": "kln",
       "glottocode": "kale1246"
@@ -160,7 +160,7 @@
         "Kajiado",
         "Samburu (Samburu dialect)"
       ],
-      "notes": "Plains Nilotes (Eastern Nilotic); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hinde (1901), Hollis (1905), Hobley (1910), and BFBS (1921).",
+      "notes": "Plains Nilotes (Eastern Nilotic, including Laikipiak, Uasin Gishu, Segellai, and Tigirri historical divisions); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hinde (1901), Hollis (1905), Hon. K. R. Dundas (1910), Hobley (1910), W. S. & K. Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
       "id": "maasai",
       "isoCode": "mas",
       "glottocode": "masa1300"
@@ -172,7 +172,7 @@
       "counties": [
         "Turkana"
       ],
-      "notes": "Plains Nilotes (Ateker branch) across Turkana County; documented in Höhnel (1894), Johnston (1902), Purvis (1909), Dundas (1910), Beech (1911), and Barton (1921).",
+      "notes": "Plains Nilotes (Ateker branch: 16 principal tribes and 19 Ngoitunya & Ngolio attegir clans); documented in Höhnel (1894), Johnston (1902), Purvis (1909), Hon. K. R. Dundas (1910), Beech (1911), and Barton (1921).",
       "id": "turkana",
       "isoCode": "tuv",
       "glottocode": "turk1308"
@@ -252,7 +252,7 @@
       "counties": [
         "Marsabit"
       ],
-      "notes": "Omo-Tana East Cushitic camel-herding pastoralists of the Kaisut and Chalbi plains; documented in Farler & Wakefield (1882), Höhnel (1894), Hobley (1910), Fleming (1964), and Heine (1976).",
+      "notes": "Omo-Tana East Cushitic camel-herding pastoralists of the Kaisut and Chalbi plains (including the historical Naroshon section on the Sogota–Lomello plains); documented in Farler & Wakefield (1882), Höhnel (1894), Hon. K. R. Dundas (1910), Hobley (1910), Fleming (1964), and Heine (1976).",
       "id": "rendille",
       "isoCode": "rel",
       "glottocode": "rend1243"
@@ -289,7 +289,7 @@
         "Samburu",
         "Marsabit"
       ],
-      "notes": "Northern Maa (Plains Nilotic) pastoralists; documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), and Hobley (1910).",
+      "notes": "Northern Maa (Plains Nilotic) pastoralists (including historical Il Doigio, Lorogishu / Kwakituk on Angata e-'m-barta, and Lobbeyok sections); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Hobley (1910).",
       "id": "samburu",
       "isoCode": "saq",
       "glottocode": "samb1315"
@@ -301,7 +301,7 @@
       "counties": [
         "Baringo"
       ],
-      "notes": "Lake Baringo Maa-speaking irrigation farmers and fishermen (En-jemusi); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Dundas (1910), and Beech (1911).",
+      "notes": "Lake Baringo Maa-speaking irrigation farmers and fishermen (Njamus / Nyarusi across Njemps Kubwa [Liabori], Njemps Ndogo [Lekepir], and Korvan, comprising 16 clans from 6 tribes); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Beech (1911).",
       "id": "ilchamus",
       "isoCode": "saq-ilc",
       "glottocode": "chAM1234"
@@ -314,7 +314,7 @@
         "West Pokot",
         "Baringo"
       ],
-      "notes": "Highland Nilotes (Northern Kalenjin branch, historically Suk); documented in Farler & Wakefield (1882), Johnston (1902), Dundas (1910, 1915), Beech (1911), and Barton (1921).",
+      "notes": "Highland Nilotes (Northern Kalenjin branch, historically Suk / Bawgott across 11 geographical divisions and 24 orten clans); documented in Farler & Wakefield (1882), Johnston (1902), Hon. K. R. Dundas (1910), Beech (1911), and Barton (1921).",
       "id": "pokot",
       "isoCode": "pko",
       "glottocode": "poko1263"

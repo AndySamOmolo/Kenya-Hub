@@ -939,8 +939,8 @@
         },
         {
           "english": "Father-in-law",
-          "translation": "(Ulu)",
-          "pronunciation": "ulu",
+          "translation": "nau (Ulu) / atsa, baba (Nganyawa)",
+          "pronunciation": "na-u / a-tsa ba-ba",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -1246,9 +1246,9 @@
           "audioFile": null
         },
         {
-          "english": "Take away (to a person)",
-          "translation": "kutoa",
-          "pronunciation": "ku-toa",
+          "english": "Clitoris",
+          "translation": "unguthu",
+          "pronunciation": "u-ngu-thu",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -2289,9 +2289,9 @@
           "audioFile": null
         },
         {
-          "english": "Tooth-stick (hole in lower jaw)",
-          "translation": "enthawuni",
-          "pronunciation": "entha-wu-ni",
+          "english": "Corpse",
+          "translation": "nukwie (Ulu) / ekugua (Nganyawa)",
+          "pronunciation": "nu-kwi-e / e-ku-gua",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -5075,7 +5075,7 @@
           "audioFile": null
         },
         {
-          "english": "Anklets (brass)",
+          "english": "Anklets (big)",
           "translation": "uthuku",
           "pronunciation": "uthu-ku",
           "context": "Hildegarde Hinde (1904) — Kamba",
@@ -6923,8 +6923,8 @@
           "audioFile": null
         },
         {
-          "english": "Belt (sword)",
-          "translation": "kiketi",
+          "english": "Belt (sword / warrior's)",
+          "translation": "endoo (sword belt); kiketi (warrior's belt)",
           "pronunciation": "ki-ke-ti",
           "context": "Hildegarde Hinde (1904) — Kamba",
           "audioFile": null
@@ -7539,9 +7539,9 @@
           "audioFile": null
         },
         {
-          "english": "Put (light)",
-          "translation": "guthima (Ulu) / vozia (Nganyawa)",
-          "pronunciation": "guthima",
+          "english": "Mutilate",
+          "translation": "kudilla",
+          "pronunciation": "ku-dil-la",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -7560,16 +7560,16 @@
           "audioFile": null
         },
         {
-          "english": "Take away it",
-          "translation": "gutwa (Ulu) / kutwa (Nganyawa)",
-          "pronunciation": "gutwa",
+          "english": "Naked",
+          "translation": "muthei",
+          "pronunciation": "mu-the-i",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
         {
-          "english": "Take away off",
-          "translation": "kumia",
-          "pronunciation": "ku-mia",
+          "english": "Nipples",
+          "translation": "muthia wa noondo",
+          "pronunciation": "mu-thia wa noon-do",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -7609,16 +7609,16 @@
           "audioFile": null
         },
         {
-          "english": "Like, v. J should",
+          "english": "Like, v. (I should like) [Like, v. J should-, p. 25]",
           "translation": "nguénda",
           "pronunciation": "nguenda",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Take away care of",
-          "translation": "etuunya (Ulu) / kuthithia (Nganyawa)",
-          "pronunciation": "etuunya",
+          "english": "None",
+          "translation": "baiye (Ulu) / aiyee, batie (Nganyawa)",
+          "pronunciation": "ba-i-ye / ai-yee ba-ti-e",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -7763,21 +7763,21 @@
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make angry",
           "translation": "datía",
           "pronunciation": "datia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "To feel",
+          "english": "To feel pain",
           "translation": "niamai",
           "pronunciation": "nia-mai",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "To make",
+          "english": "To make peace",
           "translation": "uzania",
           "pronunciation": "u-za-nia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -7959,7 +7959,7 @@
           "audioFile": null
         },
         {
-          "english": "To make- maker",
+          "english": "Peace-maker",
           "translation": "muuzánia",
           "pronunciation": "muuzania",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -8204,7 +8204,7 @@
           "audioFile": null
         },
         {
-          "english": "Upraid, (find fault)",
+          "english": "Upbraid (find fault) [Upraid, p. 56]",
           "translation": "wedéa? tetéa",
           "pronunciation": "wedea tetea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -8239,21 +8239,21 @@
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be sick",
           "translation": "wā",
           "pronunciation": "wah",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "To be",
+          "english": "To be weak",
           "translation": "niamá",
           "pronunciation": "niama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "To get",
+          "english": "To get tipsy",
           "translation": "tóna",
           "pronunciation": "tona",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -9863,7 +9863,7 @@
           "audioFile": null
         },
         {
-          "english": "Breakfeast",
+          "english": "Breakfast [Breakfeast, p. 6]",
           "translation": "matuéto makaníoa",
           "pronunciation": "matueto makanioa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -11081,7 +11081,7 @@
           "audioFile": null
         },
         {
-          "english": "Ill-treate",
+          "english": "Ill-treat [Ill-treate, p. 21]",
           "translation": "ika uái",
           "pronunciation": "ika uai",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
@@ -11123,7 +11123,7 @@
           "audioFile": null
         },
         {
-          "english": "From the dead",
+          "english": "Rise from the dead",
           "translation": "jióka kigúni",
           "pronunciation": "jioka kiguni",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -11907,7 +11907,7 @@
           "audioFile": null
         },
         {
-          "english": "Ths day before Yesterday",
+          "english": "The day before yesterday [ths day before —, p. 63]",
           "translation": "izó",
           "pronunciation": "izo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -16436,7 +16436,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Measure, s.",
           "translation": "kidími",
           "pronunciation": "kidimi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -16569,7 +16569,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Quarrel, s.",
           "translation": "makáu",
           "pronunciation": "makau",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -16807,7 +16807,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Silence, s.",
           "translation": "ukilío",
           "pronunciation": "ukilio",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -16898,7 +16898,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Stamp, s.",
           "translation": "móla",
           "pronunciation": "mola",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -17017,7 +17017,7 @@
           "audioFile": null
         },
         {
-          "english": "Thank",
+          "english": "Thank, s. (thanks)",
           "translation": "muwéa",
           "pronunciation": "muwea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -19040,7 +19040,7 @@
           "audioFile": null
         },
         {
-          "english": "Sqeeze",
+          "english": "Squeeze [Sqeeze, p. 48]",
           "translation": "míjia kimía",
           "pronunciation": "mijia kimia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
@@ -19439,77 +19439,77 @@
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Boil, v. n.",
           "translation": "wiúwia",
           "pronunciation": "wiuwia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Dry, v. n.",
           "translation": "úma",
           "pronunciation": "uma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Prosper, v. n.",
           "translation": "kita kazámu kazéo",
           "pronunciation": "kita kazamu kazeo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sleep, v. n.",
           "translation": "máma",
           "pronunciation": "mama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Stop, v. n.",
           "translation": "ikala",
           "pronunciation": "i-ka-la",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Suit, v. n.",
           "translation": "kalakala",
           "pronunciation": "ka-la-ka-la",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Sweat, v. n.",
           "translation": "úmala ni yútia (mui)",
           "pronunciation": "umala ni yutia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Teeth, v. n. (to teethe)",
           "translation": "méa máyo",
           "pronunciation": "mea mayo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Tickle, v. n.",
           "translation": "tendéa",
           "pronunciation": "tendea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Wind, v. n.",
           "translation": "owélela",
           "pronunciation": "owelela",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Wonder",
+          "english": "Witness, v. n.",
           "translation": "nenga ngóze",
           "pronunciation": "nenga ngoze",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -19551,7 +19551,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)",
+          "english": "Murder [Homicide / taking of life]",
           "translation": "úa",
           "pronunciation": "ua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
@@ -19706,8 +19706,8 @@
         },
         {
           "english": "Anklets",
-          "translation": "chuma",
-          "pronunciation": "chu-ma",
+          "translation": "ehuma",
+          "pronunciation": "e-hu-ma",
           "context": "Hildegarde Hinde (1904) — Kamba",
           "audioFile": null
         },
@@ -20762,7 +20762,7 @@
           "audioFile": null
         },
         {
-          "english": "Secresy",
+          "english": "Secrecy [Secresy, p. 43]",
           "translation": "ndeto jia nsáma",
           "pronunciation": "ndeto jia nsama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -21070,7 +21070,7 @@
           "audioFile": null
         },
         {
-          "english": "Laurate",
+          "english": "Lacerate [Laurate, p. 23]",
           "translation": "tembúa",
           "pronunciation": "tembua",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
@@ -21189,98 +21189,98 @@
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Force, v. a.",
           "translation": "ikia iwinia",
           "pronunciation": "i-kia i-wi-nia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Harvest, v. a.",
           "translation": "úna",
           "pronunciation": "una",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Labour, v. a.",
           "translation": "zeuwia wéa",
           "pronunciation": "zeuwia wea",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Melt, v. a.",
           "translation": "kanga",
           "pronunciation": "kang-a",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Mind, v. a.",
           "translation": "manda",
           "pronunciation": "mand-a",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Name, v. a.",
           "translation": "etta jítoa",
           "pronunciation": "etta jitoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Poison, v. a.",
           "translation": "akilia uwói",
           "pronunciation": "akilia uwoi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Remedy, v. a.",
           "translation": "wónijia",
           "pronunciation": "wonijia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Return, v. a.",
           "translation": "túnga",
           "pronunciation": "tunga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Salt, v. a.",
           "translation": "ikía muniu",
           "pronunciation": "ikia muniu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Sink, v. a.",
           "translation": "wotokélia",
           "pronunciation": "wotokelia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Swear, v. a.",
           "translation": "múmia",
           "pronunciation": "mumia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Whisper",
+          "english": "Whisper, v. a.",
           "translation": "táwia kua mbóla",
           "pronunciation": "tawia kua mbola",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Oneself",
+          "english": "Wash oneself",
           "translation": "dámba",
           "pronunciation": "damba",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -21756,7 +21756,7 @@
           "audioFile": null
         },
         {
-          "english": "Daugther",
+          "english": "Daughter [Daugther, p. 9]",
           "translation": "kana kéletu",
           "pronunciation": "kana keletu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -22071,7 +22071,7 @@
           "audioFile": null
         },
         {
-          "english": "After to",
+          "english": "Day after to-morrow",
           "translation": "áũke",
           "pronunciation": "auke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -22085,7 +22085,7 @@
           "audioFile": null
         },
         {
-          "english": "Homicide / taking of life (historical lexicon)er",
+          "english": "Murderer [Homicide / taking of life]",
           "translation": "muuái",
           "pronunciation": "muuai",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -22253,7 +22253,7 @@
           "audioFile": null
         },
         {
-          "english": "Scissars",
+          "english": "Scissors [Scissars, p. 42]",
           "translation": "kidéngu",
           "pronunciation": "kidengu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -22344,7 +22344,7 @@
           "audioFile": null
         },
         {
-          "english": "Trousert",
+          "english": "Trousers [Trousert, p. 55]",
           "translation": "kitóniau ja máu",
           "pronunciation": "kitoniau ja mau",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -23681,7 +23681,7 @@
           "audioFile": null
         },
         {
-          "english": "Gum arabii",
+          "english": "Gum arabic [Gum arabii, p. 18]",
           "translation": "kidana",
           "pronunciation": "ki-da-na",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -23716,14 +23716,14 @@
           "audioFile": null
         },
         {
-          "english": "Point of a",
+          "english": "Point of a knife",
           "translation": "múdia wa kawio",
           "pronunciation": "mudia wa kawio",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
           "audioFile": null
         },
         {
-          "english": "Not in the",
+          "english": "Not in the least",
           "translation": "wiú",
           "pronunciation": "wiu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -24325,7 +24325,7 @@
           "audioFile": null
         },
         {
-          "english": "What is the",
+          "english": "What is the news?",
           "translation": "ni uwo muáu?",
           "pronunciation": "ni uwo muau",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -24451,7 +24451,7 @@
           "audioFile": null
         },
         {
-          "english": "Ha can do it",
+          "english": "He can do it [ha can do it, p. 6]",
           "translation": "ekutónia ku zeuwia",
           "pronunciation": "ekutonia ku zeuwia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -24486,7 +24486,7 @@
           "audioFile": null
         },
         {
-          "english": "Hippopotamos",
+          "english": "Hippopotamus [Hippopotamos, p. 20]",
           "translation": "mamba",
           "pronunciation": "mamba",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.)",
@@ -24598,7 +24598,7 @@
           "audioFile": null
         },
         {
-          "english": "Nought, tobe",
+          "english": "Nought, to be [Nought, tobe, p. 31]",
           "translation": "wadie undu",
           "pronunciation": "wa-die und-u",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -24801,7 +24801,7 @@
           "audioFile": null
         },
         {
-          "english": "Self, Imyself",
+          "english": "Self, I myself [Self, Imyself, p. 43]",
           "translation": "nigni ngooyágoa",
           "pronunciation": "nigni ngooyagoa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -25172,7 +25172,7 @@
           "audioFile": null
         },
         {
-          "english": "Reins of a horu",
+          "english": "Reins of a horse [Reins of a horu, p. 39]",
           "translation": "wingu",
           "pronunciation": "wing-u",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba)",
@@ -25508,16 +25508,16 @@
           "audioFile": null
         },
         {
-          "english": "By myself thyself",
-          "translation": "unu omwe",
-          "pronunciation": "unu omwe",
+          "english": "Ordure",
+          "translation": "mavia (Ulu) / mai (Nganyawa)",
+          "pronunciation": "ma-vi-a / ma-i",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
         {
-          "english": "By myself himself",
-          "translation": "wiweka (Ulu) / muundu menwe (Nganyawa)",
-          "pronunciation": "wiweka",
+          "english": "Penis",
+          "translation": "kia",
+          "pronunciation": "ki-a",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -25536,7 +25536,7 @@
           "audioFile": null
         },
         {
-          "english": "Conceal [Conecal]",
+          "english": "Conceal [Conecal, p. 8]",
           "translation": "wída",
           "pronunciation": "wida",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.)",
@@ -25718,9 +25718,9 @@
           "audioFile": null
         },
         {
-          "english": "By myself ourselves",
-          "translation": "eweeka",
-          "pronunciation": "e-wee-ka",
+          "english": "Strangle",
+          "translation": "kunyunga",
+          "pronunciation": "ku-nyu-nga",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -25837,16 +25837,16 @@
           "audioFile": null
         },
         {
-          "english": "By myself yourselves",
-          "translation": "eweka",
-          "pronunciation": "e-we-ka",
+          "english": "Testicles",
+          "translation": "mĕĕ",
+          "pronunciation": "me-e",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
         {
-          "english": "By myself themselves",
-          "translation": "andu meoka",
-          "pronunciation": "andu meo-ka",
+          "english": "Urinate / Urine",
+          "translation": "guma (Ulu) / kūma (Nganyawa) [urinate]; maūmau (Ulu) / moomoo (Nganyawa) [urine]",
+          "pronunciation": "gu-ma / ku-ma / ma-u-ma-u / moo-moo",
           "context": "Hildegarde Hinde (1904) Vocabularies of the Kamba and Kikuyu Languages (Ulu & Nganyawa Kamba)",
           "audioFile": null
         },
@@ -28650,6 +28650,27 @@
           "pronunciation": "kya-la / cha-la / na-ga na-go / na-ki na-cho",
           "context": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (London: SPCK, 1887, Book pp. v–vii, 20–21, 70, 297)",
           "audioFile": null
+        },
+        {
+          "english": "Rev. Dr. J. L. Krapf (1850) Preface on the Wakamba (Kikámba, pp. vi–vii) & Comparative Vocabulary (pp. 1–64)",
+          "translation": "Wakamba (Kikámba, 3rd column of Krapf 1850): 70,000 or 90,000 souls dwelling beyond the Wanika to a distance of ~400 miles from the coast (with weak colonies near the Wanika since the late 1820s when famine drove many to the sea-shore) • Principal traders between the interior and coast, travelling in caravans of 200–300 men to fetch ivory in exchange for coastal cloth, beads, copper wire, and brass, and hunting elephants • SW migration tradition (cognate with Krapf's fifth language, Kihiáu of Lake Niassa) • Phonology (p. vii): the Wakamba cannot pronounce the letter R (whereas the Wanika continually display R) and place the accent on the first radical letter, rendering Kikamba heavy unless spoken slowly • First printed Kikamba book: Gospel of St. Mark (Tübingen 1850, p. vii) • Proposed Equatorial Mission-chain across Africa (10–12 years, p. vii)",
+          "pronunciation": "wa-ka-mba / ki-ka-mba / mu-lu-ngu / mundu a-ndu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. vi–vii & Vocabulary pp. 1–64)",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde (1904) Preface (pp. v–viii), Alphabet (pp. ix–x) & Complete 12-Paradigm Verb Conjugation of Ku or Gu-tinda ('To Conquer', pp. xi–xviii)",
+          "translation": "Preface (signed Fort Hall, British East Africa, September 1902, pp. v–viii): Ulu dialect (Machakos to the coast) vs. Nganyawa dialect (part of Kitui District, mutually intelligible with Southern Kenya Province Akikuyu) • 6 Plural Rules: (1) animate mu- → a- (muka → aka; native Mukamba → Akamba & Mukikuyu → Akikuyu vs. Swahili Mkamba → Wakamba & Mkikuyu → Wakikuyu), (2) inanimate mu- → mi- (muti → miti), (3) i- → ma- (ihiga → mahiga), (4) ki- → i- (kiratu → iratu), (5) invariable n- (nyumba → nyumba), (6) ka-/ki- → twa-/shi- (kana → twana or shiana; kiara → shiara) • Phonology (pp. vii, ix–x): Kamba lacks R due to the lisp (probably from filed teeth; rr = guttural burr); K/G, B/V, Th/S/Z interchangeable; Italian vowels + German ö, ü; penultimate stress (¯, ˘); prenasalized initial M, N • Complete 12-Paradigm Conjugation of Ku or gu-tinda ('to conquer', pp. xi–xviii): Indicative Present (n-a-tinda, w-a-tinda, a-tinda, tw-a-tinda, mw-a-tinda, m-a-tinda) • Present Imperfect (ni-ki-tinda, wa/u-ki-tinda, a-ki-tinda, tu-ki-tinda, mu-ki-tinda, me/ma-ki-tinda) • Present Perfect (ni-tind-eti/iti, wa/u-tind-eti/iti, a-tind-eti/iti, tu-tind-eti/iti, mu-tind-eti/iti, me/ma-tind-eti/iti) • Past Perfect (Kamba: ni-na-tind-ie, wa/u-na-tind-ie, a-na-tind-ie, tu-na-tind-ie, mu-na-tind-ie, me/ma-na-tind-ie vs. Kikuyu: ni-tind-eri) • Future (ni/nin-ka/ga-tinda, wa/u-ka/ga-tinda, a-ka/ga-tinda, tu-ka/ga-tinda, mu-ka/ga-tinda, me/ma-ka/ga-tinda) • Imperative (tinda, pl. tindani or tindai) • Subjunctive (ni-tinde, wa/u-tinde, a-tinde, tu-tinde, mu-tinde, me/ma-tinde) • Negative Present (n-di-tinda, wa/u-di/ndi-tinda, a-di/ndi-tinda, tu-di/ndi-tinda, mu-di/ndi-tinda, me/ma-di/ndi-tinda) • Negative Past Perfect (n-di-na-tinda, etc.) • Negative Future (n-di-ka/ga-tinda, etc.) • Negative Imperative (di/ndi-tinda, pl. di/ndi-tindani or tindai) • Negative Subjunctive (n-di-tinde, etc.) • Conversational Infinitive Note (p. xviii): ninkushoka ('I will return') used in short sentences for ninkashoka",
+          "pronunciation": "mu-ka-mba a-ka-mba / ku-ti-nda gu-ti-nda / ni-na-ti-ndi-e / ni-nku-sho-ka",
+          "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: University Press, 1904, Preface pp. v–viii, Alphabet pp. ix–x & Verbs pp. xi–xviii)",
+          "audioFile": null
+        },
+        {
+          "english": "Hildegarde Hinde (1904) Complete 65 Ulu Kamba Conversational Phrases (pp. 72–75), Numerals (pp. 70–71) & Additional Vocabulary Items (pp. 1–69)",
+          "translation": "All 65 Ulu Kamba Phrases (pp. 73, 75): wita wata? (What is your name?) • uthi naku? (Where are you going?) • wendakki? (What do you want?) • uomanakko? (Where do you come from?) • weikatta? (What are you doing?) • kiinichao? (What is this?) • wenenatta? (What do you say?) • maiba maanzi? (Where is the water?) • ndimanya (I do not know) • ndikwenda (I do not want) • ndikwenda kuthi (I do not want to go) • nditona kuthi (I cannot go) • ndithi or ndikathi (I will not go) • nenkathi (I will go) • ningashoka (I will return) • nimaseo (I am good) • ninadja (I am hungry) • niguenda kalia (I want milk) • ninamwana (I have a child) • ndineona (I do not see) • niguete (I bring) • uka haha (Come here) • ete lēu (Bring food) • ete maanzi (Bring water) • mwite (Call him) • puba mwaki (Make a fire) • pindia (Be quiet) • eenda or thi (Go away) • kana kani kakwa (My child) • twana tuni nitwako (Your children) • ngombe shiakwi (His cows) • kuoko nikwaki (His hand) • musie ni witu (Our village) • nau witu (Our father) • inya witu (Our mother) • nukwenda kuya (Do you want to eat?) • kana kani kathuku (That is a bad child) • kana kanene (A big child) • nyumba ninene (A big house) • akuketi (He has come) • we neno wongo (You have lied) • itu kathi andu ele (We will both go) • we mundu muthuku (You are a bad man) • twana tonthe tunini (All the children are small) • tikwe (He is not here) • udikoke (Do not come) • twa kuete (We bring) • tiwe (Not you) • tinye (Not he) • tiithi (Not we) • kana kani museo (A good child) • mundu nimusea (A good man) • kabiu ni kaseo (A good knife) • muti ni museo (A good tree) • twana tuni tuseo (Good children) • andu anaseo (Good men) • kabiu kaseo (Good knives) • miti mino miseo (Good trees) • mutueni (In the head) • ebuni (In the stomach) • mitini (In the trees) • nyumbani (In the house) • Salutation: o voo — Reply: o voo nēza / nēza • Additional Lexicon: kinu (vulva, p. 65), ūoii (witchcraft, p. 67), muganga, pl. aganga (witch doctor, p. 67), nzao (bull, p. 11), ndata (star, p. 57), kathandatu (5 [6] times, p. 71)",
+          "pronunciation": "wi-ta wa-ta / u-thi na-ku / we-nda-kki / o voo / o voo ne-za",
+          "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: University Press, 1904, pp. 1–75)",
+          "audioFile": null
         }
       ]
     }
@@ -28657,5 +28678,5 @@
   "source": "Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 4073
+  "totalEntries": 4076
 }

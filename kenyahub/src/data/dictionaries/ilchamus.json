@@ -10,8 +10,8 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "3.0",
-  "lastUpdated": "2026-10-31",
-  "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
+  "lastUpdated": "2026-11-12",
+  "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55 — audited 100% line-by-line across all 3 settlements, 16 clans from 6 tribes, irrigation ditch & crop-medicine ceremonies, and 12-month Lare/Ngolong calendar), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
   "categories": [
     {
       "id": "greetings",
@@ -1809,6 +1809,90 @@
           "pronunciation": "ngoh-leh",
           "context": "Verified comparative entry across Kenyan nilotic corpus",
           "audioFile": null
+        },
+        {
+          "english": "Wet season (9 months: March to November)",
+          "translation": "Lare",
+          "pronunciation": "la-re",
+          "context": "Njamus (Ilchamus) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "Hot season (3 months: December to February)",
+          "translation": "Ngolong",
+          "pronunciation": "ngo-long",
+          "context": "Njamus (Ilchamus) traditional calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "March — 1st month of the Njamus year ('When the bulls have to be tied up')",
+          "translation": "Oäni-oingok (When the bulls have to be tied up)",
+          "pronunciation": "o-a-ni oi-ngok",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "April — 2nd month of the Njamus year ('Much rain')",
+          "translation": "Borgola (Much rain)",
+          "pronunciation": "bor-go-la",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "May — 3rd month of the Njamus year ('Pleiades disappear')",
+          "translation": "Loo-'n Gokwa (Pleiades disappear)",
+          "pronunciation": "loo-n go-kwa",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "June — 4th month of the Njamus year ('Pleiades reappear in the east in the early morning')",
+          "translation": "Lorigine (Pleiades reappear in the east in the early morning)",
+          "pronunciation": "lo-ri-gi-ne",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "July — 5th month of the Njamus year ('Great rains')",
+          "translation": "Lakodakol (Great rains)",
+          "pronunciation": "la-ko-da-kol",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "August — 6th month of the Njamus year ('Great rains')",
+          "translation": "Lekepirn (Great rains)",
+          "pronunciation": "le-ke-pirn",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "September, October & November — 7th, 8th & 9th months of the Njamus year ('Little rains')",
+          "translation": "Lolrochorot (Little rains — 3 months sharing one name)",
+          "pronunciation": "lol-ro-cho-rot",
+          "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "December — 10th month of the Njamus year (1st month of Ngolong hot season)",
+          "translation": "Gulua",
+          "pronunciation": "gu-lu-a",
+          "context": "Njamus Ngolong (Hot season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "January — 11th month of the Njamus year (2nd month of Ngolong hot season)",
+          "translation": "Rialbala",
+          "pronunciation": "ri-al-ba-la",
+          "context": "Njamus Ngolong (Hot season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
+        },
+        {
+          "english": "February — 12th month of the Njamus year (3rd month of Ngolong hot season)",
+          "translation": "Arat",
+          "pronunciation": "a-rat",
+          "context": "Njamus Ngolong (Hot season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)",
+          "audioFile": null
         }
       ]
     },
@@ -2140,87 +2224,171 @@
           "audioFile": null
         },
         {
-          "english": "Il Mayek (Ilchamus clan of Samburu origin)",
-          "translation": "Il Mayek",
-          "pronunciation": "il ma-yek",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
-          "audioFile": null
-        },
-        {
-          "english": "Loimüsse (Ilchamus clan of Samburu origin)",
-          "translation": "Loimüsse",
-          "pronunciation": "loimusse",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
-          "audioFile": null
-        },
-        {
-          "english": "Il Kabes (Ilchamus clan of Laikipiak origin)",
-          "translation": "Il Kabes",
-          "pronunciation": "il ka-bes",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
-          "audioFile": null
-        },
-        {
-          "english": "Ol Doimal (Ilchamus clan of Il Doigio origin)",
-          "translation": "Ol Doimal",
-          "pronunciation": "ol doi-mal",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)",
-          "audioFile": null
-        },
-        {
-          "english": "Il Barsegir (Ilchamus clan of Laikipiak origin)",
-          "translation": "Il Barsegir",
-          "pronunciation": "il bar-se-gir",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 52)",
-          "audioFile": null
-        },
-        {
-          "english": "Central island of Lake Baringo inhabited by Ilchamus",
-          "translation": "Ol Kokwa",
-          "pronunciation": "ohl koh-kwah",
-          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, p. 412) — Discovery of Lakes Rudolf and Stefanie",
-          "audioFile": null
-        },
-        {
-          "english": "Il Doigio (Samburu ancestral section of the Ilchamus)",
-          "translation": "Il Doigio",
-          "pronunciation": "il doi-gio",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
-          "audioFile": null
-        },
-        {
-          "english": "Njemps Kubwa (downstream Ilchamus settlement on Molo River)",
-          "translation": "Njemps Liabori (liabori = downstream)",
-          "pronunciation": "njemp lia-bo-ri",
+          "english": "Nyarusi (Laikipiak name for the Njamus, corrupted by Swahili ivory traders to Njamus / Njemps)",
+          "translation": "Nyarusi (Njamus / Njemps — population not exceeding 1,500 souls in 1910)",
+          "pronunciation": "nya-ru-si / nja-mus",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49)",
           "audioFile": null
         },
         {
-          "english": "Njemps Ndogo (upstream Ilchamus settlement on Tigrish River)",
-          "translation": "Njemps Lekepir (lekepir = upstream)",
-          "pronunciation": "njemp le-ke-pir",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "english": "Njemps Kubwa (downstream Ilchamus settlement on the Molo River)",
+          "translation": "Njemps Liabori (liabori = 'down stream')",
+          "pronunciation": "njemps li-a-bo-ri",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49)",
           "audioFile": null
         },
         {
-          "english": "Ambatch wood canoe of Lake Baringo (Aeschynomene elaphroxylon)",
-          "translation": "l-kadong'ot / nk-aboboki",
-          "pronunciation": "l ka-dong'-ot",
-          "context": "Ilchamus Lake Baringo Lexicon — Heine (1980)",
+          "english": "Njemps Ndogo (upstream Ilchamus settlement on the Tigrish River)",
+          "translation": "Njemps Lekepir (lekepir = 'up stream')",
+          "pronunciation": "njemps le-ke-pir",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–50)",
           "audioFile": null
         },
         {
-          "english": "Il Geroi (earliest hunting and fishing inhabitants of Lake Baringo)",
-          "translation": "Il Geroi",
-          "pronunciation": "il ge-roi",
-          "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 50)",
+          "english": "Korvan (3rd Ilchamus settlement on the Lake Baringo islands & mainland near the River Tim, first settled by Logogwa)",
+          "translation": "Korvan & Logogwa (first island settler, followed by an Uasin Gishu / Il Moiven, using basketwork canoes)",
+          "pronunciation": "kor-van / lo-go-gwa",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 50)",
           "audioFile": null
         },
         {
-          "english": "Perkerra River brushwood-and-boulder irrigation dams & sluice-canals at Njemps (1887)",
-          "translation": "Guaso Tigerish (Perkerra) irrigation canals of En-jemusi",
-          "pronunciation": "gwah-soh tee-geh-reesh",
-          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 390–402) — Discovery of Lakes Rudolf and Stefanie",
+          "english": "Il Geroi (earliest hunting, fishing, and cultivating inhabitants of Lake Baringo)",
+          "translation": "Il Geroi (massacred while hunting by the Laikipiak & Il Doigio; survivors fled to Nakuro and Il Kakesan [Lumbwa/Kipsikis])",
+          "pronunciation": "il ge-roi / il ka-ke-san",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50, 52)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Doigio (Samburu ancestral section on Loroghi whose 40 warriors migrated to Lake Baringo & Konyek / Maji a Moto)",
+          "translation": "Il Doigio & Konyek (Maji a Moto — migrated after an old man saw a bird with a green blade of grass in its beak and blew the village horn)",
+          "pronunciation": "il doi-gio / ko-nyek",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50–52)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Kabes / Il Kabess (Njamus clan #1 of Laikipiak origin; substitute officiant in the crop-medicine ceremony)",
+          "translation": "Il Kabes (Il Kabess)",
+          "pronunciation": "il ka-bes",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 52, 55)",
+          "audioFile": null
+        },
+        {
+          "english": "Loiborgishu (Njamus clan #2 of Laikipiak origin, a branch of the 'Ngang Elima division)",
+          "translation": "Loiborgishu ('L-ooibor-kīshu, branch of 'Ngang Elima)",
+          "pronunciation": "loi-bor-gi-shu / ngang e-li-ma",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 52–53)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Barsegir (Njamus clan #3 of Laikipiak origin, a branch of the Lornying division)",
+          "translation": "Il Barsegir (branch of Lornying)",
+          "pronunciation": "il bar-se-gir / lor-nying",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 52–53)",
+          "audioFile": null
+        },
+        {
+          "english": "Il Mayek (Njamus clan #4 of Samburu origin; first resided with the Il Chabichab section of Kamasia; irrigation furrow priests)",
+          "translation": "Il Mayek (first with Il Chabichab of Kamasia; hereditary furrow-opening clan)",
+          "pronunciation": "il ma-yek / il cha-bi-chab",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53–55)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Barasaero (Njamus clan #5 of Samburu origin)",
+          "translation": "Ol Barasaero",
+          "pronunciation": "ol ba-ra-sae-ro",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Ouara (Njamus clan #6 of Samburu origin, corresponding to the Lugumai clan of the Masai)",
+          "translation": "Ol Ouara (= Lugumai of the Masai)",
+          "pronunciation": "ol o-wa-ra / lu-gu-mai",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Loimüsse (Njamus clan #7 of Samburu origin)",
+          "translation": "Loimüsse",
+          "pronunciation": "loi-mus-se",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Doimal (Njamus clan #8 of Il Doigio origin)",
+          "translation": "Ol Doimal",
+          "pronunciation": "ol doi-mal",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "El Gungwan (Njamus clan #9 of Il Doigio origin)",
+          "translation": "El Gungwan",
+          "pronunciation": "el gung-wan",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Gesiani (Njamus clan #10 of Il Doigio origin)",
+          "translation": "Ol Gesiani",
+          "pronunciation": "ol ge-si-a-ni",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Murtanat (Njamus clan #11 of Il Doigio origin)",
+          "translation": "Ol Murtanat",
+          "pronunciation": "ol mur-ta-nat",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Ol Gessei (Njamus clan #12 of Il Doigio origin)",
+          "translation": "Ol Gessei",
+          "pronunciation": "ol ges-sei",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Masari (Njamus clan #13 of Kamasia origin, from the Owolell section)",
+          "translation": "Masari (from the Owolell section of Kamasia)",
+          "pronunciation": "ma-sa-ri / o-wo-lell",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "Barsaina (Njamus clan #14 of Uasin Gishu / Moiven origin)",
+          "translation": "Barsaina",
+          "pronunciation": "bar-sai-na",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53)",
+          "audioFile": null
+        },
+        {
+          "english": "'Ngang Lessamagan (Njamus clan #15 of Il Geroi origin; officiates crop-medicine ceremony near the Molo River)",
+          "translation": "'Ngang Lessamagan",
+          "pronunciation": "ngang les-sa-ma-gan",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53, 55)",
+          "audioFile": null
+        },
+        {
+          "english": "'Ngang Ngissegir / Lebarkilenya (Njamus clan #16 of Il Geroi origin; officiates crop-medicine ceremony towards Campi ya Samaki)",
+          "translation": "'Ngang Ngissegir (or Lebarkilenya)",
+          "pronunciation": "ngang ngis-se-gir / le-bar-ki-le-nya",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53, 55)",
+          "audioFile": null
+        },
+        {
+          "english": "Njamus 11-Man Irrigation Furrow Opening, Il Derito & Il Merishu Age-Sets, Sirwa Sheep, 6 Game Taboos & 4-Elder Crop-Medicine Ceremony",
+          "translation": "Il Derito (elders preceding Il Merishu warriors) + 1 Il Mayek (11 men) smother a sirwa-colored sheep with melted fat, dung & blood; 10 elders sleep celibate in grain huts until harvest; 6 game taboos (waterbuck, eland, oryx, zebra, rhino, hippo); 4-elder crop-medicine circuit with fat, honey & dung",
+          "pronunciation": "il de-ri-to / il me-ri-shu / sir-wa",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 54–55)",
+          "audioFile": null
+        },
+        {
+          "english": "Central island of Lake Baringo (Ol Kokwa) & Perkerra River (Guaso Tigerish) brushwood-and-boulder irrigation dams at Njemps (1887)",
+          "translation": "Ol Kokwa & Guaso Tigerish (Perkerra) irrigation canals of En-jemusi",
+          "pronunciation": "ohl koh-kwah / gwah-soh tee-geh-reesh",
+          "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 390–412) — Discovery of Lakes Rudolf and Stefanie",
           "audioFile": null
         }
       ]
@@ -2229,5 +2397,5 @@
   "source": "Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234",
-  "totalEntries": 304
+  "totalEntries": 328
 }

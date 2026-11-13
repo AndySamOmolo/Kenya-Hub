@@ -25,7 +25,7 @@ import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 // - Mrs. F. Burt (1910) "Swahili Grammar and Vocabulary" (SPCK, London)
 // - Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40)
 // - C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" (Cambridge)
-// - W. Scoresby & Katherine Routledge (1910) "With a pre-colonial People: The Akikuyu of British East Africa" (London)
+// - W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikúyu of British East Africa" (London)
 // - A. C. Hollis (1910–1911) "Taveta Sayings and Proverbs" & "Taveta Enigmas"
 // - Mervyn W. H. Beech (1911) "The Suk: Their Language and Folklore" (Clarendon Press, Oxford)
 // - Gerhard Lindblom (1920) "The Akamba in British East Africa" (Uppsala)
@@ -1472,10 +1472,10 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kikuyu (Gĩkũyũ)",
     "indigenous": "Guso (\"Do you hear?\")! — (1) \"What hangs down?\" — \"Bananas.\" (2) \"Why do I hear a noise?\" — \"The birds are in the shamba.\" (3) \"What takes a winding course?\" — \"An N'doróbo on the road.\" (4) \"The young men go, the old men stay?\" — \"The ashes are poured out, the hearth-stones remain.\" (5) \"What goes from hill to hill?\" — \"The foot.\"",
     "literalTranslation": "Five verbatim Akikúyu Guso riddles and the boys' rapid-fire Q&A game (\"What did you eat yesterday, little N'doróbo? — Ou-thi...\") recorded by W. Scoresby & Katherine Routledge (1910, pp. 191–192).",
-    "meaning": "Recorded verbatim in W. S. & K. Routledge, \"With a pre-colonial People: The Akikuyu of British East Africa\" (1910, pp. 191–192): illustrates how Akikúyu elders and youth sharpen memory and observation through evening riddle contests around the homestead hearthstones (ma-hí-ga).",
+    "meaning": "Recorded verbatim in W. S. & K. Routledge, \"With a Prehistoric People: The Akikúyu of British East Africa\" (1910, pp. 191–192): illustrates how Akikúyu elders and youth sharpen memory and observation through evening riddle contests around the homestead hearthstones (ma-hí-ga).",
     "englishEquivalent": "Youth passes like ashes swept away, while the ancestral hearthstones endure.",
     "theme": "wisdom",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, pp. 191–192)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (1910, pp. 191–192)"
   },
   {
     "id": "kikuyu-cw-5",
@@ -1483,9 +1483,9 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "languageName": "Kikuyu (Gĩkũyũ)",
     "indigenous": "\"O N'gaí / Mwi-nin-ya-ga! Give us health, give us children, give us rich increase of our flocks and herds and of the fruits of the earth!\" — Responses: \"N'ga-na!\" (\"So be it / Amen!\") & \"Sa-i! Sa-i!\" (\"Hear, hear!\") • Purification: \"Ta-hí-ka thá-hu! Ta-hí-ka ki-ú-ru! Ni-da-ni-na thá-hu wa-ku.\"",
     "literalTranslation": "Chief Mungé's verbatim prayer at the eight-shrub Mu-gú-mu sacrifice to N'gaí / Mwi-nin-ya-ga (\"Possessor of Whiteness\" on Ki-ri-nya-ga / Ki-re-í-ra) and the beer-offering responses \"N'ga-na!\" and \"Sa-i! Sa-i!\" (pp. 230–235), alongside the Mundu Mugo's purification formulas \"Vomit the sin! Expel what is bad! I have purged your sin\" (pp. 262–263).",
-    "meaning": "Recorded verbatim by W. Scoresby & Katherine Routledge in \"With a pre-colonial People\" (1910, pp. 225–236, 256–263): documents communal thanksgiving and rain-prayer beneath the sacred Mu-gú-mu fig tree, the distinction between living soul (N'gor'o) and ancestral spirit (N'góma in Mi-i-ri-ni-ya Mi-kon-go-i), and ritual reconciliation of the 29 causes of Thá-hu.",
+    "meaning": "Recorded verbatim by W. Scoresby & Katherine Routledge in \"With a Prehistoric People\" (1910, pp. 225–236, 256–263): documents communal thanksgiving and rain-prayer beneath the sacred Mu-gú-mu fig tree, the distinction between living soul (N'gor'o) and ancestral spirit (N'góma in Mi-i-ri-ni-ya Mi-kon-go-i), and ritual reconciliation of the 29 causes of Thá-hu.",
     "theme": "unity",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, pp. 225–236, 256–263)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (1910, pp. 225–236, 256–263)"
   },
   {
     "id": "kikuyu-cw-6",
@@ -1495,7 +1495,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
     "literalTranslation": "The 13 traditional Akikúyu folktales (N'gá-no) and creation myths (Mam'ba & N'jí-ri in the age of Man-jí-ri; Sun, Moon & Mu-ti-ru-m'we-ri) recorded by W. Scoresby & Katherine Routledge (1910, pp. 9, 283–328).",
     "meaning": "Recorded in Part IV of W. S. & K. Routledge (1910, pp. 283–328): these 13 fireside narratives teach loyalty to siblings (Wagacharaíbu rescuing M'wer'u; Washúma rescuing Wadúa; Washíshi rescuing Moiréwanyína), humility on the journey (in contrast to the Four Boastful Warriors), kindness to the mistreated (Wanjíru & the du-tu-ra doves), and courage over greed and monsters (Kacham'bi, M'wambía, and Sungúra the Hare).",
     "theme": "family",
-    "sourceCitation": "W. Scoresby & Katherine Routledge, With a pre-colonial People: The Akikuyu of British East Africa (1910, Part IV: Folk-Lore, pp. 283–328)"
+    "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (1910, Part IV: Folk-Lore, pp. 283–328)"
   },
   {
     "id": "luo-cw-1",
@@ -60247,6 +60247,532 @@ MIJIKENDA_UNITS.push({
               right: "Three commercial weight classes of elephant ivory tusks (p. 321)"
             }
           ]
+        }
+      ]
+    }
+  ]
+});
+
+// ============================================================
+// Hon. Kenneth R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate"
+// (Journal of the Royal Anthropological Institute of Great Britain and Ireland, Vol. 40, Jan.–Jun. 1910, pp. 49–72, Plates XV–XVII — Public Domain)
+// Complete Line-by-Line Oral Wisdom, Prayers, Speeches, Clan/Totem Systems & Ecological Calendars
+// ============================================================
+
+const DUNDAS_1910_BARINGO_PROVERBS: ProverbItem[] = [
+  {
+    id: "samburu-dundas-1910-doigio-horn-speech",
+    languageId: "samburu",
+    languageName: "Samburu (Sampur)",
+    indigenous: "\"Behold this bird which carries a blade of green grass in its beak. Go ye carefully in the direction from which it came, that ye may find this country where there is pasture for our cattle; go carefully and return again carefully, and report to us what manner of country it is.\" (Il Doigio on Loroghi, Dundas 1910, p. 50)",
+    literalTranslation: "Verbatim speech of the old man of the Il Doigio section of the Samburu on the Loroghi Plateau (70–100 years before 1910) when he blew the village horn during a severe drought and sent 40 young warriors south past Naudo, the Ngingyang ('crocodile') River, and Mount Paka to Lake Baringo, the River Tim, Molo, Tigrish, and Konyek (Maji a Moto).",
+    meaning: "Recorded verbatim by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 50–52): preserves the foundational migration tradition of the three Samburu sections — (1) Il Doigio (Loroghi to Baringo & Konyek/Maji a Moto), (2) Lorogishu (called Kwakituk by the Suk, from the 4,000-ft Angata e-'m-barta plateau north of Loroghi across the Sogota and Lomello plains alongside the Rendille clan Naroshon), and (3) Lobbeyok (Suk name for the Samburu, occupying Ngingyang, Sogota–Lomello, and Tiati, called Il Maruroi by the Samburu) — before their wars with the Masai Segellai (later wiped out by Laikipiak, Tigirri & Masai) and refuge at Moruanghakhulakh ('Hill of Thieves') and El Bogoi.",
+    theme: "wisdom",
+    sourceCitation: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–52)"
+  },
+  {
+    id: "ilchamus-dundas-1910-furrow-crop-ceremonies",
+    languageId: "ilchamus",
+    languageName: "Ilchamus (Njemps)",
+    indigenous: "Njemps Liabori ('down stream'), Njemps Lekepir ('up stream') & Korvan (Logogwa) • 16 Clans across 6 Tribes • Il Derito & Il Mayek 11-Man Sirwa-Sheep Furrow Ceremony & 6 Game Taboos • 12-Month Lare & Ngolong Calendar (Dundas 1910, pp. 49–55)",
+    literalTranslation: "The three Njamus (Laikipiak: Nyarusi) settlements, 16 clans from 6 tribes (Laikipiak: Il Kabes, Loiborgishu ['L-ooibor-kīshu of 'Ngang Elima], Il Barsegir [of Lornying]; Samburu: Il Mayek [first with Kamasia Il Chabichab], Ol Barasaero, Ol Ouara [= Lugumai], Loimüsse; Il Doigio: Ol Doimal, El Gungwan, Ol Gesiani, Ol Murtanat, Ol Gessei; Kamasia: Masari [from Owolell]; Uasin Gishu/Moiven: Barsaina; Il Geroi: 'Ngang Lessamagan, 'Ngang Ngissegir / Lebarkilenya), irrigation ceremonies, and 12-month calendar.",
+    meaning: "Recorded by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 49–55): before opening the irrigation ditch each year, 10 elders not younger than the Il Derito age-set (preceding the Il Merishu warriors) assist 1 male member of the Il Mayek clan (11 men present) to smother a sirwa-colored sheep and sprinkle melted fat, dung, and blood at the mouth of the furrow and in the water; the 10 elders sleep celibate in their grain huts until harvest, 6 game animals (waterbuck, eland, oryx, zebra, rhino, hippo) may not be killed or eaten while the water flows, and quarrelling with an Il Mayek priest stops the water (drying up the river for the season if he remains angry over 10 days). A second 4-elder crop-medicine circuit is officiated by 'Ngang Lessamagan (near Molo River), 'Ngang Ngissegir (towards Campi ya Samaki), and Il Mayek or substitute Il Kabess (towards Njemps Dogo) across the 12-month Lare (Oäni-oingok, Borgola, Loo-'n Gokwa, Lorigine, Lakodakol, Lekepirn, Lolrochorot) and Ngolong (Gulua, Rialbala, Arat) calendar.",
+    theme: "unity",
+    sourceCitation: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–55)"
+  },
+  {
+    id: "pokot-dundas-1910-sick-prayer-pantheon",
+    languageId: "pokot",
+    languageName: "Pokot (Pökoot)",
+    indigenous: "\"If this sickness be of the rain or of the grass or of the earth, or if it be from yourself, take it away.\" (Suk / Bawgott Prayer to Ellap / Ellat, Mount Alongol Nether-World God & Kerial, Dundas 1910, pp. 60–61)",
+    literalTranslation: "Verbatim prayer chanted by all present when a bullock is slaughtered in the kraal for a sick person among the Suk (Bawgott), addressed to Ellap / Ellat (the benevolent rain god), the nether-world god dwelling at Mount Alongol (a place of steam vents and mirages), or Kerial (the god of thunder).",
+    meaning: "Recorded verbatim by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 56–61, 72, Plates XV–XVII): documents the religious beliefs, 11 geographical divisions, 5 pastoral divisions & 3 Kasauria migrations from Koma across the Suom (Tirkwel), 11 Hill Suk sections, all 24 exogamous orten (sg. oro) clans across 14 totems, burial & hill-undertaker customs, Sukuku (July) circumcision, twins purification, inheritance laws, sectional elephant-hunting laws, warrior Lowalan, mimicry dances (Plate XV), and the 12-month Kamei ('months of empty bellies': Tabatch, Kapsatt, Kawgelyon, Kawgei, Mou, Terter) and Bengat ('months of full bellies': Bogogma, Regesa, Perrowa, Meluwon/Meldag, Sukuku, Mugeyon) calendar.",
+    theme: "wisdom",
+    sourceCitation: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 56–65, 72 & Plates XV–XVII)"
+  },
+  {
+    id: "kalenjin-dundas-1910-chebleng-kamasia-kabkamat",
+    languageId: "kalenjin",
+    languageName: "Kalenjin",
+    indigenous: "Chebleng (13 Maragwetta & Ndo Sections: Kogai crow, Seran dikdik, Sirere kite, Saban elephant, Chepbogamwoi buffalo) • Kamasia (14 Kapteberewa & 6 Nderois Clans: Sot sun, Sabet porcupine, Chesin hyena) • Kabkamat (Olmo Calendar) & I-Sirikwa / Moiven (Dundas 1910, pp. 57, 61–66, 72)",
+    literalTranslation: "Complete Highland Nilotic clan-totem, hydraulic engineering, land-tenure, and 5-calendar comparative record for the Maragwetta, Ndo, Kabkamat (Kapkamat), Sangwirr, Uasin Gishu (Moiven / Muttia / Il-Mokwan / I-Sirikwa), and Kamasia (Tugen: Kapteberewa & Nderois).",
+    meaning: "Recorded by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 57, 61–66, 72): documents the 10–12 mile Ndo single-river irrigation canal, wooden digging sticks and half-trowel miniature iron adze-spades, private low-country land sales at 1 female goat per half-acre, the 10 intermarrying Sot (sun-totem) clans of Kapteberewa alongside exogamous Kawbil (porcupine, sabet) and Tungaw (hyena, chesin), the Nderois Terriki clan of the Sessivi (Ararat) highlands, and the five 12-month ecological calendars across Kamei / Kipgugen / Terrelaw ('months of empty bellies', Sept–Feb) and Sengartat / Uwawtgot / Uwawt ('months of full bellies', Mar–Aug).",
+    theme: "hard-work",
+    sourceCitation: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 57, 61–66, 72 & Plate XVII)"
+  },
+  {
+    id: "turkana-dundas-1910-tribes-clans-calendar",
+    languageId: "turkana",
+    languageName: "Turkana (Ng'aturukana)",
+    indigenous: "16 Turkana Tribes & 19 Ngoitunya/Ngolio Attegir Clans (incl. Ngaruwo Rain-Makers) • Nidue → Egile → Kasikou (Oppa) & Apesur → Aberu → Agemat • Asavanissia • Agipie • Nakiborror, Nakamou & Nait 12-Month Calendar (Dundas 1910, pp. 66–70)",
+    literalTranslation: "Complete ethnographic, clan, life-stage, legal, religious, and 12-month calendar record of the Turkana from Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70, Plates XVI–XVII).",
+    meaning: "Recorded by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70): documents the 16 principal Turkana tribes, the 19 exogamous attegir clans (without totems) of Ngoitunya and Ngolio, the 6 male and female life stages and 4–5 year asavanissia warrior generations, total abstinence from fermented liquor, the Nessegonn bush of the lower Sogota, marriage bride-wealth (20 cattle + 30 donkeys to the bride's mother, 30 cattle + camels/donkeys/sheep/goats to the father, 5 cattle to each co-wife, 2 cattle to each brother and sister) and the post-marriage 2-bullock mock-stormed enclosure feast, lung-spearing and circular buttock-piece slaughter rites, the benevolent sky god Agipie versus the malevolent nether-world god, and the 12-month calendar across Nakiborror (Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak) and Nakamou (Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge, with Aug–Oct called Nait when grass turns yellow).",
+    theme: "unity",
+    sourceCitation: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 66–70 & Plates XVI–XVII)"
+  }
+];
+
+KENYAN_PROVERBS.push(...DUNDAS_1910_BARINGO_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...DUNDAS_1910_BARINGO_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+ILCHAMUS_GRAMMAR_SECTIONS.push({
+  id: "ilchamus-dundas-1910-settlements-16-clans-furrow-calendar",
+  title: "Hon. K. R. Dundas (1910, pp. 49–55): The 3 Njamus (Nyarusi) Settlements, 16 Clans Across 6 Tribes, 11-Man Furrow-Opening & 4-Elder Crop-Medicine Ceremonies, and the 12-Month Lare / Ngolong Calendar",
+  summary: "Complete line-by-line synthesis of Hon. K. R. Dundas's 1910 section on the Njemps or Njamus (Laikipiak: Nyarusi) of Lake Baringo (JRAI Vol. 40, pp. 49–55).",
+  content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *Journal of the Royal Anthropological Institute*, Vol. 40, Jan.–Jun. 1910, pp. 49–55):
+1. **Ethnonym, Population & Three Settlements (pp. 49–50)**:
+   - The name **Njamus** (written *Njemps* on maps) is a Swahili corruption of **Nyarusi**, the Laikipiak name for the tribe. In 1910 they numbered no more than **1,500 souls** across **three settlements**:
+     1. **Njemps Kubwa** or **Njemps Liabori** (*Liabori* = "down stream", on the Molo River).
+     2. **Njemps Ndogo** or **Njemps Lekepir** (*Lekepir* = "up stream", on the Tigrish River).
+     3. **Korvan**: Formerly inhabited the islands in Lake Baringo (first settled by an old man named **Logogwa**, followed by an Uasin Gishu or **Il Moiven**, using rude canoes of crisis-crossed sticks and basketwork before obtaining cattle when a rich Njamus fled to the island with his herd during a Masai raid); by 1910 the bulk lived on the mainland near the River Tim.
+2. **Aboriginal *Il Geroi*, Migration of *Il Doigio* & the 16 Clans Across 6 Tribes (pp. 50–53)**:
+   - The earliest inhabitants of Baringo were the **Il Geroi** (hunters, fishers, and cultivators). After the Samburu **Il Doigio** migrated from the Loroghi Plateau and allied with the **Laikipiak**, they treacherously massacred the Geroi while out hunting (survivors fled to Nakuro and to the **Il Kakesan** [Lumbwa/Kipsikis]).
+   - **All 16 Njamus Clans Across 6 Tribes (pp. 52–53)**:
+     - **Laikipiak (3 clans)**: **(1) Il Kabes (*Il Kabess*)**, **(2) Loiborgishu (*'L-ooibor-kīshu*, branch of *'Ngang Elima*)**, **(3) Il Barsegir (branch of *Lornying*)**.
+     - **Samburu (4 clans)**: **(4) Il Mayek** (first resided with the **Il Chabichab** section of Kamasia), **(5) Ol Barasaero**, **(6) Ol Ouara** (= **Lugumai** of the Masai), **(7) Loimüsse**.
+     - **Il Doigio (5 clans)**: **(8) Ol Doimal**, **(9) El Gungwan**, **(10) Ol Gesiani**, **(11) Ol Murtanat**, **(12) Ol Gessei**.
+     - **Kamasia (1 clan)**: **(13) Masari** (from the **Owolell** section).
+     - **Uasin Gishu / Moiven (1 clan)**: **(14) Barsaina**.
+     - **Il Geroi (2 clans)**: **(15) 'Ngang Lessamagan**, **(16) 'Ngang Ngissegir (or *Lebarkilenya*)**.
+3. **The Two Irrigation & Crop-Medicine Ceremonies (pp. 54–55)**:
+   - **(a) Furrow-Opening Ceremony**: Before water is turned into the irrigation ditch, **10 elders** not younger than the **Il Derito** age (which precedes the **Il Merishu** warriors) assist **1 male member of the Il Mayek clan** (11 men present in all) to smother a **sirwa**-colored sheep, melt its tail fat, and sprinkle the fat, stomach dung, and blood at the mouth of the furrow and into the river. The Il Mayek wears a strip of sheep skin on his head for 2 days; the 10 elders sleep celibate in their grain huts until harvest; and **6 game animals** (waterbuck, eland, oryx, zebra, rhinoceros, hippopotamus) may neither be killed nor eaten while the water flows. Quarrelling with the Il Mayek priest stops the water (if he stays angry over 10 days, the river dries up for the season).
+   - **(b) Crop-Medicine Ceremony**: When the grain is nearly ripe, **2 elders of the officiating clan** (**'Ngang Lessamagan** near the Molo River, **'Ngang Ngissegir** towards Campi ya Samaki at the SW corner of the lake, and **Il Mayek** or substitute **Il Kabess** towards Njemps Dogo) plus **2 elders from any other two clans** (4 elders total) kill and eat a *sirwa* sheep, wear skin strips on their heads for 2 days, and walk in opposite directions around the plantations sprinkling fat, honey, and dung; no one may enter the plantations for 2 days.
+4. **The 12-Month Njamus Calendar (p. 55)**:
+   - **Wet Season (*Lare* — 9 months)**: March **Oäni-oingok** (*"When the bulls have to be tied up"*), April **Borgola** (*"Much rain"*), May **Loo-'n Gokwa** (*"Pleiades disappear"*), June **Lorigine** (*"Pleiades reappear in the east in the early morning"*), July **Lakodakol** (*"Great rains"*), August **Lekepirn** (*"Great rains"*), Sept–Nov **Lolrochorot** (*"Little rains"*, 3 months sharing one name).
+   - **Hot Season (*Ngolong* — 3 months)**: December **Gulua**, January **Rialbala**, February **Arat**.`,
+  examples: [
+    { ilchamus: "Njemps Liabori ('down stream' on Molo) • Njemps Lekepir ('up stream' on Tigrish) • Korvan (Logogwa on Lake Baringo islands & River Tim)", english: "The three Njamus (Nyarusi) settlements in Dundas (1910, pp. 49–50)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 49–50)" },
+    { ilchamus: "Laikipiak: Il Kabes, Loiborgishu ('L-ooibor-kīshu), Il Barsegir • Samburu: Il Mayek, Ol Barasaero, Ol Ouara, Loimüsse • Il Doigio: Ol Doimal, El Gungwan, Ol Gesiani, Ol Murtanat, Ol Gessei • Kamasia: Masari • Uasin Gishu: Barsaina • Il Geroi: 'Ngang Lessamagan, 'Ngang Ngissegir (Lebarkilenya)", english: "All 16 Njamus clans across 6 tribes", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 52–53)" },
+    { ilchamus: "Lare (Wet): Oäni-oingok, Borgola, Loo-'n Gokwa, Lorigine, Lakodakol, Lekepirn, Lolrochorot (×3) • Ngolong (Hot): Gulua, Rialbala, Arat", english: "Complete 12-month Njamus calendar", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55)" }
+  ]
+});
+
+POKOT_GRAMMAR_SECTIONS.push({
+  id: "pokot-dundas-1910-suk-divisions-24-clans-religion-calendar",
+  title: "Hon. K. R. Dundas (1910, pp. 56–65, 72, Plates XV–XVII): The 11 Suk (Bawgott) Geographical Divisions, 5 Pastoral Divisions & 3 Kasauria Migrations, 11 Hill Suk Sections, All 24 Orten Clans & 14 Totems, Ellap/Ellat Religion, Customary Laws & 12-Month Kamei / Bengat Calendar",
+  summary: "Complete line-by-line synthesis of Hon. K. R. Dundas's 1910 sections on the Pastoral and Hill Suk (Bawgott) of Baringo and West Pokot (JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII).",
+  content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *JRAI* Vol. 40, Jan.–Jun. 1910, pp. 56–65, 72, Plates XV–XVII):
+1. **Autonym, Migrations & Geographical/Pastoral Divisions (pp. 56–58, 62)**:
+   - The Suk call themselves **Bawgott** (*Suk* being derived from the Masai name, probably from the **Shok** section on the upper **Krut** [Swahili **Wehe**] River, named after the short sword they manufacture and descended from the **Tirruk** of *Angata e-'m-barta*, p. 58).
+   - **Three *Kasauria* Migrations from *Koma* in *Kapukou* across the *Suom* (Tirkwel) River (pp. 56–57)**: Named after a deep well in Koma whose water was drawn up in stages in a bullock skin: (1) via Murkassikor (Kachepkai River), Assassam, and Suom; (2) to Barter, Kaibosso, Chepkerial, and Tiati on the Kerio, stopping at Kolowa to raid the **Moiven / Muttia** (Masai **Il-Mokwan**, Nandi **I-Sirikwa** — builders of the stone kraals around Sirgoit, surprised while salt-licking at Kaparamen), then to Sawgott, Bennegh, and Kaibategh; (3) after the **Kiplegit** clan (named after their chief) went to Tiati.
+   - **11 Geographical Divisions (p. 57)**: **1. Kapukou, 2. Shok, 3. Kapkoma, 4. Sekerr, 5. Magan, 6. Maerich, 7. Muino, 8. Ngorror, 9. Krut, 10. Cheptulel, 11. Pastoral nomadic Suk of Baringo** (~3,000 souls).
+   - **5 Pastoral Divisions (pp. 57–58)**: **Kasauria, Kacheripko, Cheptulel, Kiplegit**, and the exterminated **Kachenwono** (at Ngingyang), plus **Kamiriongo** (from Kapukou) and **Tawl** (from Kawin on upper Tirkwel & Chebleng Highlands).
+   - **11 Hill Suk Sections from South to North (p. 62)**: **1. Laepei, 2. Chepkoa, 3. Kivas, 4. Seya, 5. Soito** (1–5 = **Cheptulel**); **6. Kaptakau, 7. Ngorror** (6–7 = **Krut**); **8. Songutua, 9. Maerich, 10. Chepbinyi** (8–10 = **Maerich**); **11. Sekerr**; plus **Muino** (on the Ngorror range bend) and **Beyus** (in **Kibeyus** behind Maerich).
+2. **All 24 Suk Clans (*Orten*, sg. *Oro*) & Their 14 Totems (p. 59)**:
+   - **Frog (3)**: *Kagorondor, Kaborai, Chepbai* • **Buffalo (5)**: *Chemmergwan, Sangei, Chebokvo, Kajonyir, Moiyoi* • **Baboon (1)**: *Kachemmergaw* • **Sun (1)**: *Kagiserr* • **Kite (2)**: *Saniak, Kachigawk* • **Lion (2)**: *Chibberwongo, Chebarsitch* • **God or Rain — Ellat (2)**: *Araboin, Kibbesetim* • **Hyena (2)**: *Chibbekapturu, Legen* • **Bee (1)**: *Chebajigwo* • **Zebra (1)**: *Turgoll* • **Ant-eater (1)**: *Orror* • **Elephant (1)**: *Sopan* • **Hyrax (1)**: *Chepbau* • **Oil-tree (1)**: *Cheman* • **Unknown totem (?, 1)**: *Terem*.
+3. **Customs, Inheritance, Elephant Law & Religion (pp. 59–61, 64)**:
+   - **Burials & Hill Undertaker (p. 59)**: Married men buried in the kraal/hut with milk-gourd and tobacco, a black or red goat killed and its stomach contents/bones laid on the mound, and annual libations of milk, honey, and tobacco poured to ancestral spirits; hill Suk/Maragwetta/Ndo employ a community undertaker purified with milk after 1 month and paid a goat or ornaments.
+   - **Circumcision, Marriage, Twins & Inheritance (pp. 59–60)**: Circumcision in **Sukuku** (July) for boys (2–3 months bush isolation) and 3 weeks later for girls; adultery compounded by 1–2 bullock feast or stick duel; umbilical cord kept in a small bag in the hut; cow bearing twins slaughtered with its progeny; each wife's property divided equally among her own sons while the father's common herd goes primarily to the eldest son; widows pass to the deceased's brothers; sister's marriage price divided among full and half brothers.
+   - **Sectional Elephant Hunting Law (p. 64)**: Ivory goes to the hunter who first draws blood; meat goes to the section in whose territory the elephant dies (*Kaptakau* hunt with poisoned arrows, *Maerich* & *Sekerr* on foot with spears, *Ngorror* from tree platforms).
+   - **Three Gods & Verbatim Sick Prayer (pp. 60–61)**: **Ellap / Ellat** (benevolent rain god), the malevolent nether-world god at **Mount Alongol** (steam vents & mirages), and **Kerial** (thunder god). Sick prayer: *"If this sickness be of the rain or of the grass or of the earth, or if it be from yourself, take it away."* Also records mimicry dances (Monkey Dance, Plate XV; Water-spirit seizing a drowning man) and warrior **Lowalan**.
+4. **The 12-Month Suk Calendar (p. 72)**:
+   - **Wet Season (*Kamei* — "The months of empty bellies", Sept–Feb)**: Sept **Tabatch** (low-country sowing), Oct **Kapsatt** (*Windy months*), Nov **Kawgelyon**, Dec **Kawgei** (*Starry nights*), Jan **Mou**, Feb **Terter** (*Caterpillar eats grass*).
+   - **Dry Season (*Bengat* — "The months of full bellies", Mar–Aug)**: Mar **Bogogma** (*Month of flying ants*), Apr **Regesa**, May **Perrowa**, Jun **Meluwon** (fn. 10: also **Meldag**; *Months of heavy rains*), Jul **Sukuku** (circumcision), Aug **Mugeyon** (*Months of mists*).`,
+  examples: [
+    { pokot: "Bawgott • 11 Divisions: Kapukou, Shok (Tirruk of Wehe/Krut), Kapkoma, Sekerr, Magan, Maerich, Muino, Ngorror, Krut, Cheptulel, Pastoral Suk • 5 Pastoral Divisions: Kasauria, Kacheripko, Cheptulel, Kiplegit, Kachenwono (+ Kamiriongo & Tawl)", english: "All geographical and pastoral Suk divisions in Dundas (1910, pp. 56–58)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 56–58)" },
+    { pokot: "24 Orten (sg. Oro) Clans: Kagorondor, Kaborai, Chepbai (frog); Chemmergwan, Sangei, Chebokvo, Kajonyir, Moiyoi (buffalo); Kachemmergaw (baboon); Kagiserr (sun); Saniak, Kachigawk (kite); Chibberwongo, Chebarsitch (lion); Araboin, Kibbesetim (Ellat); Chibbekapturu, Legen (hyena); Chebajigwo (bee); Turgoll (zebra); Orror (ant-eater); Sopan (elephant); Chepbau (hyrax); Cheman (oil-tree); Terem", english: "All 24 Suk clans and their totems", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 59)" },
+    { pokot: "Kamei (Sept–Feb): Tabatch, Kapsatt, Kawgelyon, Kawgei, Mou, Terter • Bengat (Mar–Aug): Bogogma, Regesa, Perrowa, Meluwon (Meldag), Sukuku, Mugeyon", english: "Complete 12-month Suk calendar with seasonal notes", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)" }
+  ]
+});
+
+SAMBURU_GRAMMAR_SECTIONS.push({
+  id: "samburu-dundas-1910-doigio-lorogishu-lobbeyok-clans",
+  title: "Hon. K. R. Dundas (1910, pp. 49–53, 65–66): The Three Samburu Sections (Il Doigio, Lorogishu / Kwakituk on Angata e-'m-barta & Lobbeyok at Il Maruroi), Ngingyang ('Crocodile'), Moruanghakhulakh ('Hill of Thieves') & 9 Samburu/Doigio Clans at Njamus",
+  summary: "Complete line-by-line documentation of the Samburu historical migrations, toponyms, and clan branches recorded by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 49–53, 65–66).",
+  content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District*, *JRAI* Vol. 40, 1910, pp. 49–53, 65–66):
+1. **Toponyms & Etymologies (pp. 49–52)**:
+   - **Ngingyang** (p. 49 & fn. 1): Dry river bed north of Lake Baringo; **Ngingyang** is the Samburu name for the **crocodile**, which abounds in the river during the rains and burrows beneath the sand in the dry season.
+   - **Konyek** (p. 50): Samburu/Doigio name for **Maji a Moto** at the southern end of Lake Baringo.
+   - **Angata e-'m-barta** (p. 50): 4,000-ft plateau north of Loroghi where the **Lorogishu** lived.
+   - **Il Maruroi** (p. 51): Samburu name for **Tiati**.
+   - **Moruanghakhulakh** (*"Hill of Thieves"*, p. 52) & **El Bogoi** (p. 51): Refuges of defeated Samburu/Doigio warriors after the Masai **Segellai** and Turkana/Suk wars.
+2. **The Three Samburu Sections & the Loroghi Horn Legend (pp. 50–52)**:
+   - **(1) Il Doigio**: Lived on the Loroghi Plateau 70–100 years before 1910. During a severe drought, an old man saw a bird carrying a green blade of grass in its beak, blew the village horn, and sent **40 young warriors** south past Naudo, the Ngingyang River, and Mount Paka to Lake Baringo, the River Tim, Molo, Tigrish, and **Konyek** (*Maji a Moto*).
+   - **(2) Lorogishu** (called **Kwakituk** by the Suk): Spread from **Angata e-'m-barta** across the Sogota and Lomello plains alongside the Rendille clan **Naroshon**.
+   - **(3) Lobbeyok** (*Lobbeyok* being the Suk name for the Samburu): Occupied Ngingyang, the plains from Sogota to Lomello, and **Tiati** (**Il Maruroi**).
+3. **The 4 Samburu & 5 Il Doigio Clans Settled at Njamus (p. 53)**:
+   - **Samburu (4 clans)**: **(1) Il Mayek** (first resided with the **Il Chabichab** section of Kamasia; hereditary priests of the Njamus irrigation furrow ceremony), **(2) Ol Barasaero**, **(3) Ol Ouara** (= **Lugumai** of the Masai), **(4) Loimüsse**.
+   - **Il Doigio (5 clans)**: **(1) Ol Doimal**, **(2) El Gungwan**, **(3) Ol Gesiani**, **(4) Ol Murtanat**, **(5) Ol Gessei** (plus the Nderois Kamasia clan **Kimwan** of Samburu origin, p. 65).`,
+  examples: [
+    { samburu: "Ngingyang ('crocodile') • Konyek (Maji a Moto) • Angata e-'m-barta • Il Maruroi (Tiati) • Moruanghakhulakh ('Hill of Thieves') • El Bogoi", english: "Samburu toponyms and etymologies in Baringo District", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 49–52)" },
+    { samburu: "Il Doigio (Loroghi to Baringo) • Lorogishu (Suk: Kwakituk, with Rendille Naroshon) • Lobbeyok (at Ngingyang, Sogota–Lomello & Il Maruroi/Tiati)", english: "The three migrating Samburu sections in Dundas (1910, pp. 50–51)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 50–51)" },
+    { samburu: "Samburu clans: Il Mayek, Ol Barasaero, Ol Ouara (= Lugumai), Loimüsse • Il Doigio clans: Ol Doimal, El Gungwan, Ol Gesiani, Ol Murtanat, Ol Gessei", english: "All 9 Samburu and Il Doigio clans incorporated into the Njamus", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 53)" }
+  ]
+});
+
+RENDILLE_GRAMMAR_SECTIONS.push({
+  id: "rendille-dundas-1910-naroshon-sogota",
+  title: "Hon. K. R. Dundas (1910, pp. 51, 66): The Rendille Clan Naroshon on the Sogota–Lomello Plains and Rendile–Samburu Physical Admixture in Southern Turkana",
+  summary: "Historical record of the Rendille clan Naroshon migrating alongside the Samburu Lorogishu (Kwakituk) across the Sogota and Lomello plains in Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 51, 66).",
+  content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District*, *JRAI* Vol. 40, 1910, pp. 51, 66):
+1. **The Rendille Clan *Naroshon* on the Sogota & Lomello Plains (p. 51)**:
+   - Dundas records that when the Samburu **Lorogishu** (called **Kwakituk** by the Suk) descended from the 4,000-ft **Angata e-'m-barta** plateau north of Loroghi into the plains around the **Sogota** (a permanent river north of Baringo whose source is hot and strongly impregnated with salt, p. 49) and **Lomello**, they were accompanied by the Rendille clan **Naroshon**, who grazed the Sogota–Lomello plains with them until driven out by the advancing Turkana and Suk.
+2. **Rendile & Samburu Admixture Among the Southern Turkana (p. 66)**:
+   - On p. 66, Dundas notes two distinct physical types among the southern Turkana (**Ngolio** and **Ngoitunya**): a tall, slender, dolichocephalic type with small regular features representing a strong admixture of **Samburu and Rendile blood** (from captured women and absorbed clans like *Naroshon*), contrasted with the shorter, thick-set, broad-headed type of the pure Turkana.`,
+  examples: [
+    { rendille: "Naroshon (accompanied the Samburu Lorogishu / Kwakituk from Angata e-'m-barta across the Sogota and Lomello plains)", english: "Historical Rendille clan in the Baringo–Sogota basin", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 51)" }
+  ]
+});
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "kalenjin-dundas-1910-chebleng-kamasia-kabkamat-sirikwa",
+  title: "Hon. K. R. Dundas (1910, pp. 50, 52–53, 57, 61–66, 72, Plate XVII): The 13 Chebleng (Maragwetta & Ndo) Sections, Clans & Totems, 20 Kamasia (Kapteberewa & Nderois) Clans & Totems, Kabkamat (Olmo), Sangwirr, I-Sirikwa (Moiven) & 5 Comparative Hill-Tribe Calendars",
+  summary: "Complete line-by-line documentation of the Maragwetta, Ndo (Chebleng), Kabkamat (Olmo), Sangwirr, Uasin Gishu (Moiven / Muttia / Il-Mokwan / I-Sirikwa), Kipsikis (Il Kakesan), and Kamasia (Kapteberewa & Nderois) in Hon. K. R. Dundas (JRAI Vol. 40, 1910).",
+  content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District*, *JRAI* Vol. 40, 1910, pp. 50, 52–53, 57, 61–66, 72, Plate XVII):
+1. **The 13 *Chebleng* (Maragwetta & Ndo) Geographical Sections, Clans & Totems (pp. 61–62)**:
+   - **Northern 5 Sections visited by Dundas**: **(1) Beya** (Clan: *Tallai*, Totem: *Kogai* [the crow]), **(2) Kaksegai** (Clan: *Oreon*), **(3) Katut** (Clan: *Sirichon*, Totem: *Seran* [the dikdik]), **(4) Kabioso** (Clan: *Kamugo*, Totem: *Kogai* [crow]), **(5) Bogorror** (Clan: *Tallai*, Totem: *Kogai* [crow]).
+   - **Southern 8 Sections**: **(1) Sibo** (Clan: *Saban*, Totem: *The elephant* — migrated from Krut), **(2) Kapsagat** (Clan: *Tallai or Tulin*, Totems: *The crow and the jackal*), **(3) Kagsegom** (Clan: *Kapsegom*, Totem: *Sirere* [the kite] — from *Angata e-'m-barta* via the Kito River), **(4) Kapsekerr** (Clan: *Tallai*, Totem: *Kogai* [crow]), **(5) Kamarein** (Clan: *Tallai*, Totem: *Kogai* [crow]), **(6) Kauwau** (Clan: *Kapsegom*, Totem: *Sirere* [kite]), **(7) Mareich** (Clans: *Tallai and Legen*, Totems: *The crow and the frog*), **(8) Kabell** (Clan: *Chepbogamwoi*, Totem: *The buffalo* — from *Chemmorgoi* with *Kamugo* & *Tallai*).
+   - **Sangwirr & Kabkamat (pp. 62, 65, 72)**: Behind Kapsagat live the **Sangwirr** (mixed Nandi–Masai akin to the Elgonyi/Kony of Mt. Elgon); south of Chebleng live the **Kabkamat** (*Kapkamat*, an offshoot of the Ndo whose calendar is called **Olmo**).
+2. **Chebleng Terraced Villages, 10–12 Mile Ndo Canal, Tools & Land Price (pp. 62–65)**:
+   - Terraced stone-and-timber platforms on steep spurs; hillside eleusine (*wimbi*) and low-country millet watered by a **10–12 mile Ndo single-river irrigation canal**; wooden digging sticks and a **miniature iron adze-spade the size of half a trowel**; honey-beer in tree-trunk hives; circumcision in **Kwarra** (Dec) for Maragwetta and **Mugeyon** (Aug) for Ndo; stone-covered hill graves vs. grass-covered low-country trenches & stone cairns for violent death, lightning, or meteors; low-country land under the main canal sells for **1 female goat per half-acre** (p. 65).
+3. **The 14 *Kapteberewa* (Northern) & 6 *Nderois* (Southern) Kamasia (Tugen) Clans & Totems (pp. 53, 65–66, Plate XVII)**:
+   - **Kapteberewa (14 clans, p. 65)**: **(1) Kapkeruwa** (from the Sogota River), **(2) Kaptogongo, (3) Kamengo, (4) Kapchessoito, (5) Kapalangwa, (6) Kameiwan, (7) Kaperchino, (8) Kapsonok, (9) Kapartaber, (10) Kapkolumon** — Totem of 1–10: **The sun (*Sot*)** (clans 2–10 came from the east around *Angata e-'m-barta* & *Mokotan*; members of the *Sot* clans may intermarry); **(11) Tallai** — **The leopard** (Chebleng origin); **(12) Kawbil** — **The porcupine (*sabet*)** (Moiven origin; strictly exogamous); **(13) Tungaw** — **The hyena (*chesin*)** (Elgeyo & Sangwir origin; strictly exogamous); **(14) Kirimos** — **The hyena (*chesin*)** (Moiven origin).
+   - **Nderois (6 clans, p. 65)**: **(1) Kimoi** (*buffalo*), **(2) Mogei** (*bee*), **(3) Tallai** (*frog*), **(4) Sot** (*sun*, from the east), **(5) Kimwan** (*guinea fowl*, Samburu origin), **(6) Terriki** (*elephant*, originally occupied the **Sessivi** highlands E of Lake Hannington, called **Ararat** by them). Plus Kamasia sections **Il Chabichab** and **Owolell** (p. 53), and **Plate XVII Figs. 5–6** (*2 Kamasia Youths* & *2 Kamasia Girls*).
+4. **The Five Comparative 12-Month Hill-Tribe Calendars (p. 72)**:
+   - **Ndo**: *Kamei* (Sept *Tapach*, Oct *Kipsunde*, Nov *Mukul*, Dec *Kwarra*, Jan *yoboi*, Feb *Kiptamo*) & *Sengartat* (Mar *Miengi*, Apr *Ilat*, May *Perrowa*, Jun *Meluwon/Meldag*, Jul *Sukuku*, Aug *Mugeyon*).
+   - **Maragwetta**: *Kipgugen* (Sept *Tapach*, Oct *Kipsunde*, Nov *Kibelga*, Dec *Kwarra*, Jan *Mukul*, Feb *Kiptamo*) & *Uwawtgot* (Mar *Biritwa*, Apr *Ilat*, May *Taptulya*, Jun *Roptui*, Jul *Bureret*, Aug *Ebbes*).
+   - **Kabkamat (*Olmo* calendar)**: *Kipgugen* (Sept *Kipsunde*, Oct *Kipsunde oieng*, Nov *Ibiegwa*, Dec *Chumo*, Jan *Ngatiat*, Feb *Kiptamo*) & *Uwawt* (Mar *Uwawtgot*, Apr *Mamut*, May *Wagi*, Jun *Ngei*, Jul *Roptui*, Aug *Bureret*).
+   - **Kamasia (*Kapteberewa*)**: *Terrelaw* (Sept *Tapach*, Oct *Kipsunde*, Nov *Mukul*, Dec *Kibelga*, Jan *Arapmoi*, Feb *Kiptamo*) & *Uwawt* (Mar *Uwawtgot*, Apr *Saki*, May *Sumatwa*, Jun *Roptui*, Jul *Ngei*, Aug *Kipsunde*).
+   - **Kamasia (*Nderois*)**: *Terrelaw* (Sept *Tapach*, Oct *Kipsunde*, Nov *Kibelga*, Dec *Mukul*, Jan *Ngatiat*, Feb *Kiptamo*) & *Uwawt* (Mar *Uwawtgot*, Apr *Mamut*, May *Wagi*, Jun *Roptui*, Jul *Bureret*, Aug *Ngei*).`,
+  examples: [
+    { kalenjin: "Chebleng (Maragwetta & Ndo): Beya, Kaksegai, Katut, Kabioso, Bogorror, Sibo, Kapsagat, Kagsegom, Kapsekerr, Kamarein, Kauwau, Mareich, Kabell • Totems: Kogai (crow), Seran (dikdik), Sirere (kite), Saban (elephant), Chepbogamwoi (buffalo)", english: "All 13 Maragwetta and Ndo sections, clans, and totems", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 61–62)" },
+    { kalenjin: "Kapteberewa (14): 10 Sot (sun) clans + Tallai (leopard), Kawbil (sabet porcupine), Tungaw & Kirimos (chesin hyena) • Nderois (6): Kimoi, Mogei, Tallai, Sot, Kimwan, Terriki (Sessivi / Ararat)", english: "All 20 Kamasia (Tugen) clans and totems", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 65)" },
+    { kalenjin: "Kamei / Kipgugen / Terrelaw ('months of empty bellies', Sept–Feb) vs. Sengartat / Uwawtgot / Uwawt ('months of full bellies', Mar–Aug)", english: "The 5 comparative Kalenjin hill-tribe calendars (Ndo, Maragwetta, Kabkamat/Olmo, Kapteberewa & Nderois)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 72)" }
+  ]
+});
+
+// ============================================================
+// Rev. Fr. Evangelist de Larajasse (1897) "Somali-English and English-Somali Dictionary"
+// (London: Kegan Paul, Trench, Trübner & Co., Ltd., Paternoster House, Charing Cross Road, 1897 — Public Domain)
+// Complete Line-by-Line Audit of Front Matter, Preface (pp. v–xiii), Abbreviations (p. xiv),
+// 20-Row Kenya Reference Table & Full Two-Column Page Transcriptions (Book pp. 26, 123, 127, 242, 266 & 293)
+// ============================================================
+
+const LARAJASSE_1897_SOMALI_PROVERBS: ProverbItem[] = [
+  {
+    id: "somali-larajasse-1897-idioms-oaths-customs",
+    languageId: "somali",
+    languageName: "Somali (Af-Soomaali)",
+    indigenous: "Wa dantisi / Wa isagi iyo danti • Aya dan leh? — Ana dan leh • Nin o dan u ma lihi • Sadehda dalahod bad igaga furaisantahai • Wa debai / Wa i debai (Ogaden, Dulbanteh & Darod, p. 293) • War san ban ku sida • Dilimihi wa simanyihin / Iss ku simanyihin (p. 127)",
+    literalTranslation: "It is his concern • Who has anything to say? — I have something to say • I care for nobody • By the triple divorce thou art divorced from me (a solemn oath) • He has committed fornication/adultery (Ogaden, Dulbanteh & Darod dialect locution) • I bring to you good news • The lines are parallel / They are equal.",
+    meaning: "Recorded verbatim in Rev. Fr. Evangelist de Larajasse's Somali-English and English-Somali Dictionary (London: Kegan Paul, Trench, Trübner & Co., 1897, Preface pp. v–xiii, Part I pp. 26, 118, 123, 127, Part II pp. 242, 266, and Supplement p. 293): preserves 19th-century Somali conversational idioms, the Ogaden/Darod/Dulbanteh dialectal locution wa debai / wa i debai (p. 293), the triple-divorce oath formula sadehda dalahod bad igaga furaisantahai (p. 293), the paediatric therapeutic skin-incision custom sarsar (p. 123), camel suckling separation dabsi/dabsin/dabsis (p. 26), 7 specialized skin/hide terms (dub, harag, sān, dereb, furad, weilalis, gibil, p. 266), Swahili coastal reference (sawaheli,—gi / sawahili,—gi, pp. 123, 242, 266), Galla/Oromo reference (daba galla,—hi, pp. 26, 270), and East African antelope taxonomy (si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro).",
+    theme: "wisdom",
+    sourceCitation: "Rev. Fr. Evangelist de Larajasse, Somali-English and English-Somali Dictionary (London: Kegan Paul, Trench, Trübner & Co., 1897, pp. v–xiv, 4, 19, 26, 54, 56, 100, 118, 120, 123, 127, 154, 170, 194, 221, 231, 242, 245, 266, 270, 293)"
+  }
+];
+
+KENYAN_PROVERBS.push(...LARAJASSE_1897_SOMALI_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...LARAJASSE_1897_SOMALI_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+SOMALI_GRAMMAR_SECTIONS.push({
+  id: "somali-larajasse-1897-phonetics-lexicon-supplement",
+  title: "8. Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary: Syrian-Alphabet Phonetic System (pp. v–xiii), 44 Abbreviations (p. xiv), Ogaden/Darod Dialect Note (p. 293), Swahili/Galla/Fauna Terms & Full Page Transcriptions (pp. 26, 123, 127, 242, 266, 293)",
+  summary: "Complete line-by-line synthesis of Rev. Fr. Evangelist de Larajasse's 1897 Somali-English and English-Somali Dictionary (Kegan Paul, Trench, Trübner & Co., London): Preface phonetic key, 44 grammatical abbreviations, 20 Kenya-relevant entries, and all 6 full two-column page transcriptions.",
+  content: `From Rev. Fr. Evangelist de Larajasse, *Miss. Apost. Ord. SS. Francisci Cap. Provinciæ Lugdunensis Alumnus* (*Somali-English and English-Somali Dictionary*, London: Kegan Paul, Trench, Trübner & Co., Ltd., Paternoster House, Charing Cross Road, 1897 — Cornell University Library Sage Endowment copy \`PJ 2533 E92\`, \`A.110984 — 9/2/1898\`, Archive.org \`cu31924026888820\`):
+1. **Preface Phonetic System & Syrian Alphabet Transliteration (pp. v–xiii / PDF pp. 9–17)**:
+   - **Alphabet Table**: Employs 21 Roman letters with Latin pronunciation plus signs from the **Syrian alphabet (S. J. Beyrouth)**:
+     - **Vowels**: **a, e, i, o, u, w** (**w** is a vowel only when following **a** and **o** in the diphthongs **aw** and **ow**).
+     - **Diphthongs**: **ai** (marked **ï** with diaeresis when the two vowels are sounded separately), **ei** (as in "feign"), **au** (as *ow* in "cow"), **aw** (same sound as *au*, used where other vowels follow and in attributive verbs), and **ow** (a hollow sound like *oh-oo* pronounced in an empty cask).
+     - **Arabic *‘aïn* (ع)**: Marked with a reversed comma (**‘**) on the left or right of the vowel (**‘a a‘, ‘e e‘, ‘i i‘, ‘o o‘, ‘u u‘**). When **i** is preceded/followed by **h** or marked with **‘** (**‘i** / **i‘**), it sounds nearly like *e*; when **u** is adjacent to **h / h**, it sounds nearly like *u* in "tusk".
+     - **Minimal-Pair & Pronunciation Examples in Preface (pp. vii–xii)**:
+       - **ader** ("paternal uncle", pronounced *ah-dare*, showing *e* before a syllable-final consonant = *a* in "care").
+       - **sōr** ("food", long *ō* pronounced *sore*) vs. **kol** ("time", short *o* pronounced *koll*).
+       - **gūr** ("marriage", long *ū* pronounced *goore*) vs. **gur** ("pick up", short *u* pronounced *goor*).
+       - **maya** ("no", pronounced *matha*, where intervocalic **y** sounds like *th* in English "loathe").
+     - **Consonants**: **b** (forcible with a sort of *p* sound), **d** (clear dental with tongue appearing between teeth) vs. cerebral **d** (of the Sanscrit, nearly *rd* in "hard, card", with the tongue curved against the front of the palate), **f**, **g** (invariably hard), **h** (strong chest aspirate = Arabic ح), **h** (English "hare"), **h** (representing the three Arabic letters غ ق خ, pronounced like Swiss German *ch* in "chirurg, hochzeit, loch", with nearly two-thirds of words beginning with Arabic ق), **k** (interchangeable with **g**), **j, l, m, n**, **r** (strongly trilled like *rr* in "parrot", occasionally nearly cerebral **d**), **s, sh**, **t** (interchangeable with **d**), **w, y**. The letters **p, v, z** do not exist as separate letters in the Somali alphabet (**p** corresponds to **b**, **v** to **f** and **b**, **z** to **s**).
+   - **44 Grammatical Abbreviations (PDF p. 18)**: *def., indef., gend., m., f., art., n., sing., pl., a., a.p., a.d., a.v., n.c., n.o., n.i., n.d., prn., p.pers., dem.prn., pos.prn., p.ref., p.rel., v., v.tr., v.int., v.p., v.c., v.r., v.att., v.imp., v.def., adv., prp., conj., int., part., part.int., part.neg., aff., ch., gram., see.*
+2. **Direct References to Swahili, Ogaden/Darod, Galla/Oromo, East African Fauna & Currency**:
+   - **Swahili Coast**: **sawaheli,—gi** (Part I, p. 123: *m.n., negro, slave.—gi*) and **sawahili,—gi** (Part II, p. 242 under *negro* & p. 266 under *slave* alongside *adon,—ki [mas.], adon,—ti [fem.], bida or bidai,—ihi [mas.], bidad,—di [fem.]*).
+   - **Ogaden, Dulbanteh & Darod Dialect Locution (Supplement, p. 293)**: **wa debai** (*locution*, he has committed fornication, adultery) and **wa i debai** (he has committed adultery with me — *"These expressions are used in the Ogaden, and by the Dulbanteh and Darod"*), contrasted with standard **sino** (*f.n.*, adultery), **sinaiso** (*v.i.*), and **sinaisi** (*v.c.*, p. 127).
+   - **Galla / Oromo Reference (pp. 26, 270)**: **daba galla,—hi / —ihi** (*m.n.*, earth squirrel living in holes, lit. "Galla-tail", contrasted on p. 270 with rock squirrel **walo,—adi**).
+   - **East African Antelope Taxonomy**:
+     - **si‘g,—gi** (pp. 127, 221): Hartebrest or Coke's antelope (*Alcelaphus buselaphus cokii* / cow antelope).
+     - **garanug,—ti** (p. 54): *Gazella walleri* (gerenuk); **lig,—gi** (p. 100): male *garanug*.
+     - **adéryo,—adi** (pp. 4, 231): female/general koodoo antelope (*Strepsiceros imberbis*); **adéryo ‘ari,—gi** (pp. 4, 231): lesser koodoo antelope (used for both genders); **godir,—ki** (pp. 4, 56, 231): male greater koodoo antelope (*Strepsiceros kudu*).
+     - **b‘e‘id,—ki / b‘i‘id / bi‘‘id,—ki** (pp. 19, 170, 245): Oryx / beisa antelope (misprinted *"bison antelope"* on p. 170, corrected to *"beisa antelope"* on p. 245).
+     - **sagaro or sakaro,—adi** (pp. 120, 194): Sand antelope / dik-dik.
+     - **dabatag,—ti** (p. 26): Clarke's roebuck.
+   - **Rupee & Shilling Currency (pp. 118, 123)**: **rubiad,—di** (rupee; pl. **rubabi**; counting contraction **rubod** instead of *rubiadod*), **rubi** (*m.n.*, 1 shilling, 8 annas), and **sarrif,—ki** (*rubiadda i sarrif* = "change me the rupee"; *so sarrif* = "go and change").
+3. **Highlights of the Six Complete Two-Column Page Transcriptions (Book pp. 26, 123, 127, 242, 266, 293)**:
+   - **Book Page 26 (DAB — 26 — DAF)**: *dabsi / dabsin / dabsis* (separating young animals from mother by day / exchanging camel sucklings), *dad / dadki gabowbai / dad hun*, *dadhal / dad‘un / dadhalato* (cannibal), *dādi / ka dādi / ku dādi* (*baldigu bihuhu dādiya* 'the ewer leaks'; *biyaha dādi* 'pour out the water'; *‘anihi la dādi* 'the milk is spilt'), *dadab,—ki* (dream) vs. *dadab,—ti* (big stone), *dadan / dadami* (*hardadkaigi dadankisi wa hunyahai* 'I have a bad taste in my mouth'), *dāf* (*‘elka u dāf* 'descend into the pit'; *‘elka dāftisi ban gadai* 'I reached the bottom of the well'), and *daf* (*magalada yan dafai*; *anigu badrigi ban so dafai*; *war! i daf, na daf*).
+   - **Book Page 123 (SAR — 123 — SER)**: *sara ka‘* (rise / resurrection), *sár / sársar / sarsar / sarmo* (paediatric skin-incision custom for sick/pot-bellied children), *sarab* (*lohyada ahalka ku sarab* 'floor the room'; *alwahda sarabkeda* 'the flooring'), *sarar / diná‘* (fillet), *saren* (wheat flour), *sarir* (bed), *sarrah / sarrahi* (go/set free), *sarruh* (bandit), *sasab / sasabo / sasabnin* (*wa la sasabai*), *sawahan* (clamour), *sawir / sawiran* (picture/photograph), *sayad* (fisherman), *sayah* (dew; *dulku wa sayahsanyahai*) vs. *sayah* (goldsmith), *se* (but, never clause-initial), *seb* (oar), *sebiyan* (*sebiyan ba lehyahai*), *sefari* (string), *seho / sehi / sehasho* (*ilmaha sehi* 'make the baby sleep'; *siradka sehi* 'blow out the lamp'), *seïd* (sinew), *seif* (sword), *sem* (touch in playing), *se‘ni / su‘un* (plate), *sergad / sergan* (flogging), *serkal* (authority/government).
+   - **Book Page 127 (SIB — 127 — SIS)**: *(nin) sibahah* (dyer), *sibibah / sibibaho* (*mel sibibahah* 'sloping place'), *sibrar* (*shagul* [errata for *chagul*]), *sid / sido* (*war san ban ku sida*; *sortá sido / iss ka sido*), *sided / sidehtan / sidedad* (8, 80, 8th), *sigo / sisa / sesa* (dust/sandstorm), *sihin* (melted butter/ghee), *silei‘ / sili‘i / sila‘n / (nin) sila‘san*, *silsilad / silsiladai* (chain/fetter), *simbiririho / simbiririhi* (slide/slip), *simid* (cement), *sin / iss ku sin / siman / sinin* (*dilimihi wa simanyihin* 'the lines are parallel'; *iss ku simanyihin* 'they are equal'), *sīn / sīnso* (nasal mucus / wipe nose), *sin* (hip, pl. *sino / simo*), *sindi* (silver armlet), *singal* (protected client), *sinif* (*erai ‘usub sinif* 'create a new word'), *sinjibil* (ginger), *sirad / siradan* (*siradka sirad* 'light the lamp'; *siradka siradan i ken* 'bring me a lighted lamp'), *siriri / siririn / siriris* (strangle), *sisib / sisibi / sisibo* (sliding on a stone).
+   - **Book Page 242 (NAI — 242 — NEW)**: *‘iddi,—di* (fingernail) & *mismar / musmar,—ki* (iron nail), *hawan / hawanan* (naked/nakedness), *maga‘,—hi & u bihi / ugu yed* (name), *sagan-madon,—ti* (nape), *sheko u mari / u shekai & sheko,—adi* (narrate/narrative), *‘edidi* (narrow/narrowness), *habilo,—adi* (nation), *dalnin,—ti* (nativity), *wa‘al,—ki* (natural child), *dunyo,—adi & abur,—ki, —ti* (nature/temper), *yihyihsi,—gi* (nausea), *hundur,—ti & hudun,—ti* (navel & navel-string), *dof & dofnin,—ti* (navigate/navigation), *dafirad,—di* (nayword/refusal), *ag, agta, dow, sokai, higta, dowow, so dowow, so durug, u dowow, u durug, so dowai, u dowai, iss ku dowai & dowan,—ti* (near/nearness), *shuban* (neat), *hor,—ti* (neck), *horhid,—ki, kul,—shi, jilbad,—di* (necklace), *dan,—ti, tabalo,—adi, bāho,—adi & (nin) ‘aïdah, ‘aïd,—ki* (need/needy), *irbad,—di & mahad,—ki* (needle & big needle), *fojiglaan,—ti & mog, mogai* (negligence/negligent), *deh-gal* (negotiate), *danan* (neigh), *deris,—ki & derisnimo,—adi* (neighbour/neighbourhood), *midna* (neither), *inanki / ina walalkai, walalkai ba dalai, walashai ba dashai* (nephew), *bul,—ki* (nest), *shabak,—gi* (net), *ged hajin,—ki & addo,—adi / hajin,—ti* (nettle & nettle-rash), *owlaled* (neutral tint), *abadan, abkai, abidkaina, weligai & yelkisa, yelkeda* (never & never mind), *ha ahato, ha ahataie* (nevertheless), *‘usub, ‘usba* (new), *war,—ki, nabad,—di, war gei / ken, ka war ken & warhab,—ki* (news).
+   - **Book Page 266 (SIN — 266 — SLA)**: *halkiyo gortad aragtai* ([since] you saw him), *dembileh & dad dembileh / dadka dembigaleh* (sinful/sinner), *lilahiah, aminah* (sincere), *seid,—di, bohon,—ti, bohon hore, bohon dambe, hanjid,—ki* (sinew), *gabai, hes, gabaya,—ihi & hes,—ti* (sing/singer/singing), *goniah, keliah, hud, hudah* (single), *deg, dus, ka dus & deji, ka dusi* (sink), *fihso & fihsi / fuhsi,—gi* (sip), *saheb,—ki* (sir), *walal,—shi, dumashi,—di & walalnimo,—adi* (sister, sister-in-law, sisterhood), *fadiso, salka dig, fadi, si fadi & fadi,—gi* (sit/sitting), *leh,—di, leh jer o min lehah / leh jer o leh wada ah, leh iyo toban,—ki, lehad / kan lehad, lehdan,—ki* (6, sixfold, 16, 6th, 60), *hiyas,—ti, dumo‘,—di* (size), *fi‘an, farsamo badan, wah haban og & farsamo,—adi, fi‘,—hi, fi‘nan,—ti* (skilful/skill), *usarka ka safai & hudda,—ihi* (skim/skimmer), *dub,—ki, harag,—gi, sān,—ti, dereb,—ti, furad,—ki, weilalis,—ti, gibil,—shi & dubka/haragga/sānta ka bihi / ka mudhi* (7 skin nouns & flaying verbs), *indolai,—ihi, dako,—adi, kug,—ti, ges,—ti* (4 skull terms), *‘ir,—ki* (sky), *dirih,—di, didi,—gi* (slab/puddle), *alyo muruh ku dādi / iss ka buhi & nin alyo muruh wein leh,—ki, nin alyo muruh weina* (slabber/slabberer), *deb‘i & deb‘isan* (slack), *bahti & iss harad tir / iss on tir* (slake), *‘eibai, hano, hafar & han,—ti, ‘eib,—ti* (slander), *darbah & darbaho,—adi, faragorgor,—ki* (slap), *loh,—hi* (school slate), *gowra‘, kaga kudi, ka kausi, kaga hawi, dil* (slaughter), *adonimo,—adi* (slavery).
+   - **Book Page 293 (Supplement: BUR — 293 — DER)**: *burambur* (women's singing), *buro‘ / bura‘ha* (sand mound), *buro iss ku yal / burihi iss ku yil* (mountain range), *burush,—ki* (brush), *da‘nin,—ti* (sack/pillage), *dab,—ti* (lap; certainly), *dabai / kaga dabai & dabain,—ti* (affirm/affirmation), *dabah & dabīhad,—di* (sacrifice/victim), *dad‘unah* (fierce/wild), *dadki dintai* (the dead), *daghi / dagihi* (lapidate/stone), *daha* (often), *an dal lahain* (without limit), *dalan,—ki* (children), *dalah,—di & sadehda dalahod bad igaga furaisantahai* (divorce & triple-divorce oath), *dalo* (top of head), *dalol,—ki* (1/3), *damoh / ku damoh* (poultice), *damur,—ki* (tar/pitch), *dan* (*wa dantisi / wa isagi iyo danti; aya dan leh?; ana dan leh; nin o dan u ma lihi*), *dardar,—ki* (three hearth stones), *daren* (*darema, wan daremi* — perceive/perception), *darfa‘,—i‘hi* (equine/bovine dysentery), *wa debai / wa i debai* (Ogaden, Dulbanteh & Darod), *deg / ku dega, ku degta* (adhesive), *degta dahasheda* (tip of ear), *dein,—ti & dein ka tur* (omission & delator/denunciator), *deman,—ki* (diamond), *dembab / dembabi* (sin / make sin), *si derai* (deepen).`,
+  examples: [
+    { somali: "ader (ah-dare) • sōr (sore) vs. kol (koll) • gūr (goore) vs. gur (goor) • maya (matha)", english: "paternal uncle • food vs. time • marriage vs. pick up • no (Preface pp. vii–xii minimal pairs)", explanation: "Rev. Fr. Evangelist de Larajasse (1897, Preface pp. vii–xii)" },
+    { somali: "wa debai / wa i debai (Ogaden, Dulbanteh & Darod, p. 293) • sadehda dalahod bad igaga furaisantahai (p. 293) • wa dantisi / aya dan leh? — ana dan leh / nin o dan u ma lihi (p. 293)", english: "Ogaden/Darod dialect locution • Triple-divorce oath formula • Idioms of concern with dan", explanation: "Rev. Fr. Evangelist de Larajasse (1897, Supplement p. 293)" },
+    { somali: "si‘g,—gi (Coke's hartebeest) • garanug,—ti & lig,—gi (female & male gerenuk) • adéryo,—adi, adéryo ‘ari,—gi & godir,—ki (female, lesser & male greater kudu) • b‘e‘id / bi‘‘id,—ki (beisa oryx) • sagaro / sakaro,—adi (dik-dik) • dabatag,—ti (Clarke's roebuck)", english: "East African antelope taxonomy in De Larajasse (1897)", explanation: "Rev. Fr. Evangelist de Larajasse (1897, pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245)" }
+  ]
+});
+
+SOMALI_UNITS.push({
+  id: "somali-unit-larajasse-1897-dictionary-supplement",
+  title: "Unit 11: De Larajasse (1897) Phonetics, Ogaden/Darod Idioms, Fauna & Lexicon",
+  description: "Master Rev. Fr. Evangelist de Larajasse's 1897 Somali-English and English-Somali Dictionary: Preface minimal pairs, Ogaden/Darod dialect expressions, East African wildlife taxonomy, rupee currency, and conversational sentences from Book Pages 26, 123, 127, 242, 266 & 293.",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "somali-larajasse-1897-preface-fauna-currency",
+      title: "Preface Minimal Pairs, East African Fauna, Currency & Clan Dialect Notes",
+      icon: "Compass",
+      description: "Learn the vowel-length minimal pairs in De Larajasse's 1897 Preface, East African antelope names, rupee currency, and Ogaden/Darod dialect idioms.",
+      tips: "De Larajasse (1897, pp. vii–viii) contrasts long vs. short vowels in sōr ('food') vs. kol ('time') and gūr ('marriage') vs. gur ('pick up'), and notes on p. 118 that rubiad ('rupee', pl. rubabi) contracts to rubod in counting.",
+      culturalNote: "Source attribution: Rev. Fr. Evangelist de Larajasse, 'Somali-English and English-Somali Dictionary' (London: Kegan Paul, Trench, Trübner & Co., 1897 — Public Domain).",
+      words: [
+        {
+          target: "ader (ah-dare) • sōr vs. kol • gūr vs. gur • maya (matha)",
+          source: "Paternal uncle • Food vs. time • Marriage vs. pick up • No (Preface pp. vii–xii pronunciation examples)",
+          pronunciation: "ah-dare / sore vs koll / goore vs goor / matha",
+          hint: "De Larajasse (1897, Preface pp. vii–xii)"
+        },
+        {
+          target: "si‘g,—gi • garanug,—ti & lig,—gi • adéryo,—adi, adéryo ‘ari,—gi & godir,—ki • b‘e‘id / bi‘‘id,—ki • sagaro / sakaro,—adi • dabatag,—ti",
+          source: "Coke's hartebeest • Female & male gerenuk • Female, lesser & male greater kudu • Beisa oryx • Dik-dik • Clarke's roebuck",
+          pronunciation: "si‘g / ga-ra-nug / lig / a-der-yo ‘a-ri / go-dir / b‘e‘id / sa-ga-ro / da-ba-tag",
+          hint: "De Larajasse (1897, pp. 4, 19, 26, 54, 56, 100, 120, 127, 170, 194, 221, 231, 245)"
+        },
+        {
+          target: "rubiad,—di (pl. rubabi; counting: rubod) & rubi,—gi (1s. / 8 annas) • rubiadda i sarrif!",
+          source: "Rupee & half-rupee (1 shilling / 8 annas) • Change me the rupee!",
+          pronunciation: "ru-bi-ad / ru-ba-bi / ru-bod / ru-bi / sar-rif",
+          hint: "De Larajasse (1897, pp. 118, 123)"
+        },
+        {
+          target: "wa debai / wa i debai (Ogaden, Dulbanteh & Darod, p. 293) • daba galla,—hi vs. walo,—adi (pp. 26, 270) • sawaheli,—gi / sawahili,—gi (pp. 123, 242, 266)",
+          source: "Ogaden, Dulbanteh & Darod dialect locution • Earth squirrel ('Galla-tail') vs. rock squirrel • Swahili coast reference",
+          pronunciation: "wa de-bai / da-ba gal-la / wa-lo / sa-wa-he-li",
+          hint: "De Larajasse (1897, pp. 26, 123, 242, 266, 270, 293)"
+        }
+      ],
+      sentences: [
+        {
+          target: "War san ban ku sida! Rubiadda i sarrif.",
+          source: "I bring to you good news! Change me the rupee (De Larajasse 1897, pp. 123, 127)."
+        },
+        {
+          target: "Wa dantisi; aya dan leh? — Ana dan leh.",
+          source: "It is his concern; who has anything to say? — I have something to say (De Larajasse 1897, Supplement p. 293)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Rev. Fr. Evangelist de Larajasse's Somali-English Dictionary (1897, pp. 4, 54, 56, 100, 231), how are male and female kudu and gerenuk antelopes distinguished?",
+          correctAnswer: "Female/general kudu is 'adéryo' (lesser kudu: 'adéryo ‘ari') and male kudu is 'godir'; female gerenuk is 'garanug' and male gerenuk is 'lig'",
+          options: [
+            "Female/general kudu is 'adéryo' (lesser kudu: 'adéryo ‘ari') and male kudu is 'godir'; female gerenuk is 'garanug' and male gerenuk is 'lig'",
+            "Male kudu is 'si‘g' and female kudu is 'sakaro'",
+            "Male gerenuk is 'daba galla' and female gerenuk is 'walo'",
+            "Male kudu is 'dabatag' and female kudu is 'b‘e‘id'"
+          ],
+          hint: "See De Larajasse (1897, pp. 4, 54, 56, 100, 231)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each Somali minimal pair or idiom from De Larajasse (1897) with its English meaning:",
+          correctAnswer: "gūr vs. gur: Marriage (long ū) vs. pick up (short u) (Preface p. viii)",
+          pairs: [
+            {
+              left: "gūr vs. gur",
+              right: "Marriage (long ū) vs. pick up (short u) (Preface p. viii)"
+            },
+            {
+              left: "sōr vs. kol",
+              right: "Food (long ō) vs. time (short o) (Preface p. vii)"
+            },
+            {
+              left: "dereb, furad, weilalis, gibil",
+              right: "Skins sewn to carry children, make a couch, or cover a shed (p. 266)"
+            },
+            {
+              left: "dilimihi wa simanyihin",
+              right: "The lines are parallel (p. 127)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+
+// ============================================================
+// Routledge (1910), Krapf (1850), Krapf & Isenberg (1842) & Hinde (1904)
+// ============================================================
+const ROUTLEDGE_KRAPF_HINDE_PROVERBS: ProverbItem[] = [
+  {
+    id: "kikuyu-routledge-1910-ages-clans-market-rattles-cw",
+    languageId: "kikuyu",
+    languageName: "Kikuyu (Gĩkũyũ)",
+    indigenous: "10 Ages (Man-jí-ri [Mam'-ba & N'jí-ri] → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu) • 17 Initiation Years (1891 Ngan'do to 1907 Ka-ban'go) • 13 Clans (i-ri-ka) • Ki-shan'-di Rattles I & II (47 & 38 Symbols) • 6 Musical Scores (Ku-lan-gí-ri, Dú-mo, Mu-goí-i-o, Ku-lu-mí-si-a) • 9 Trials, 6 Mu-ma Ordeals & 14-Hole Ki-tha-si",
+    literalTranslation: "Complete historical, legal, artistic, and ritual institutions of the Akikúyu recorded by W. Scoresby & Katherine Routledge (1910, pp. i–xxxii, 1–392, Plates I–CXXXVI).",
+    meaning: "Documents the 17 named informants (Wa-ma'-hu, Wa-nang'-a, N'jar'-ge, Ka-no'-hi-a, Ki-ran-ju'-i, Ka-ran'-ja, Ki-lan'-go; Do'-sa, Ali bin Sha-ku'-a, Ali bin Salim, Lou-be'-a; Chiefs Mun'-gé, Ka-ru'-ri [and woman lieutenant Wan'-gu], N'du-i-'ni, medicine-man Ra-zi'-mi, 'Jash'-u' wa Ka'-ru'-ri, N'jo-ro'-gi, plus Na-ga-tú-u, Mo-só-ni, Kahiga & De-gua wa Ki-ma-ni), the A'si (A-ki-e-ki / N'dor-ó-bo, 30-goat forest purchase) and Agum'ba (A-mai-tho ma chi-a-na, 4 ft 6 in., obsidian pit-dwelling excavation), 13 i-ri-ka clans & Hobley's 9 totems, 10 male & 7 female age terms, 30-item Wa-wer'-u market price list (Feb. 16, 1908; 13 goats = 1 cow), 6-step chain-making, 2-stage pottery, 12 dances + maize-harvest clay image dance, 9 dated Ki-á-ma trials, 6 Mu-ma ordeals, 4-district penalty tables, Ai-twi-ka / N'da-ma-thi-a snake worship, 5 m'boo-thu gourds & m'wá-no lot-gourd, 29 Thá-hu causes, 9 Tuso purification plants, and 15 medicines from Kahiga.",
+    englishEquivalent: "Every generation, year, symbol, and tally-stick preserves the law and memory of the ridges.",
+    theme: "wisdom",
+    sourceCitation: "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (London: Edward Arnold, 1910, pp. i–xxxii, 1–392)"
+  },
+  {
+    id: "maasai-routledge-1910-appendix-ii-cw",
+    languageId: "maasai",
+    languageName: "Maasai (Maa)",
+    indigenous: "Manyatta • Legooran ('Colonel') • Lion-Mane War Helmet (earned by single-handed spear combat) • 5-Warrior Daily Ration (1 sheep + milk) • The Blood Song & Spinning 4-Ft Spear Blade • Arthi Plain Battle (>1,000 dead) & Removal to Lei-ki-pi-a",
+    literalTranslation: "Ethnographic record of the Masaí warrior organisation, camp discipline, arms, and history in W. Scoresby & Katherine Routledge (1910, Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI).",
+    meaning: "Recorded in Appendix II of W. Scoresby & Katherine Routledge (1910, pp. 344–349 & Plate CXXXVI): documents the Masaí warrior kraal (manyatta) under an elected legooran ('colonel'), where unmarried warriors live strictly on milk and mutton (one sheep daily to every five warriors, with neither beer nor tobacco allowed) attended by their mothers and five or six uninitiated girls per warrior; the tall lion-mane war headdress awarded only to a warrior who has slain a lion single-handed with his spear; the dramatic Blood Song performed after drinking warm bullock's blood while spinning the 4-ft long-bladed spear faster than the eye can follow; and the post-rinderpest pitched battle between the two Masaí sections on the Arthi plain near Nairobi (leaving over 1,000 dead) and subsequent settlement on Lei-ki-pi-a.",
+    englishEquivalent: "Discipline, courage, and unity sustain the warrior kraal.",
+    theme: "courage",
+    sourceCitation: "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (1910, Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI)"
+  },
+  {
+    id: "swahili-krapf-1850-six-languages-preface-cw",
+    languageId: "swahili",
+    languageName: "Swahili (Kiswahili)",
+    indigenous: "Kisuáheli • Kiníka • Kikámba • Kipokómo • Kihiáu • Kigálla (Watu wa Mrima vs. Makafiri • Mulungu • Pokómo / Pokomóni / Máro • Orma / Ormania)",
+    literalTranslation: "Comparative linguistic, geographic, and historical record of the six East African peoples and the Nilo-Hamitic (Nilotic / Bantu) language family in Rev. Dr. J. L. Krapf (1850, Preface pp. iii–x & Vocabulary pp. 1–64).",
+    meaning: "Recorded by Rev. Dr. Johann Ludwig Krapf in his Vocabulary of Six East-African Languages (Tübingen: Printed by Lud. Friedr. Fues, dated Dagersheim in Würtemberg, 14 October 1850, pp. iii–x, 1–64): establishes the unity of the South-African ('Nilo-Hamitic or Nilotic' [Bantu]) language family from the Equator to the Cape of Good Hope as distinct from both the 'Nigro-Hamitic' (Niger) stock and the Cushitic/Nilotic Wakuafi, Masai, and Galla; documents Kisuáheli (350,000–400,000 speakers across Kiáma, Túla, Patta, Lámu, Káu, Mómbas, Tánga, Pémba, Sánsibar, and Kiloa; the rivalry of Patta and Malinde, whose stone ruins Krapf inspected after its destruction by the Galla; and the coastal term Makafiri vs. watu wa mrima), Kiníka (50,000–60,000 speakers at 1,200–2,000 ft, invoking Mulungu 'heaven' and preserving a 150-year migration tradition from Jagga/Kilimanjáro to Rabbai), Kikámba (70,000–90,000 speakers up to 400 miles inland, travelling in 200–300-man ivory caravans, lacking the consonant R, and placing stress on the first radical letter), Kipokómo (learned in 1845 at Takaóngo from Hadji Omar, brother of Chief Bonnaia Dadia of Kalindi on the River Dána/Pokomóni/Máro, with migration traditions linking the Wasegéju, the Wateita of Kadiáro, Ndara, and Bura who call the Wanika 'Ambakómo', and the Kiriama from Mount Mángea), Kihiáu (learned in 1848 at Mombas from a Kamanga lad enslaved via Kiloa Kibendje after the 1847 Mabiti/Mawizi raid that killed or captured 7,000 Wahiau east of Lake Niassa/Moráwi), and Kigálla (coining 'Ormania' from Orma 'men' vs. morma 'neck' [p. 30] and proving via three linguistic arguments that Galla reshaped Shoan Amharic).",
+    englishEquivalent: "Understanding the shared roots and histories of neighbouring tongues unites the coast and the interior.",
+    theme: "wisdom",
+    sourceCitation: "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. iii–x & Vocabulary pp. 1–64)"
+  },
+  {
+    id: "borana-krapf-isenberg-1842-farewell-benediction-cw",
+    languageId: "borana",
+    languageName: "Borana (Oromo)",
+    indigenous: "Wak' nagaia si kakennu! • Nagaia hafu tshedde • Naga ambulte! (Orma / Oromo • Waka • Kaletsha • Mukaba)",
+    literalTranslation: "May God (Waka) grant thee peace (nagaia)! • To bid farewell ('Remain in peace') • Good morning ('Hast thou spent the night in peace?') — Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. i–ii, 13, 15, 24, 28).",
+    meaning: "Recorded in Rev. J. L. Krapf's Vocabulary of the Galla Language (compiled in Shoa in summer 1841, translated from German and edited with Preface and comparative Amharic, Dankali, Somāli, Ethiopic, Arabic, and Hebrew annotations by Rev. C. W. Isenberg, London: Church Missionary Society / Richard Watts, 1842, pp. i–ii, 1–42, Colophon p. [43]; digitized copy bearing the bookplate of the Baptist Missionary Society Library No. P. 1. 5 and the ink signature of S. F. Hassan, Advocate, Mombasa): preserves the traditional Oromo farewell benediction Wak' nagaia si kakennu! ('May God give thee peace!', p. 13), the morning greeting Naga ambulte! ('Good morning!', p. 24), the news inquiry Mali odu harraia duffe? ('What is the news?', p. 25), the autonym Ormo / pl. Orma ('This is a Galla: kuni ormōda', p. 15), the indigenous priesthood kaletsha and prayer mukaba (p. 28), and the 7-day calendar and relative year system (berdingata 'last year', berekan 'the year before last', p. 42).",
+    englishEquivalent: "Peace and the blessing of God accompany both the greeting of dawn and the parting of ways.",
+    theme: "unity",
+    sourceCitation: "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1842, Preface pp. i–ii & Vocabulary pp. 1–42)"
+  },
+  {
+    id: "kamba-kikuyu-hinde-1904-mutual-intelligibility-salutations-cw",
+    languageId: "kamba",
+    languageName: "Kamba (Kĩkamba)",
+    indigenous: "O voo! — O voo nēza! / Nēza! (Kamba Ulu) • Mwohoro! — Mwohoro mwēga! / Mwēga munnu! (Kikuyu Jogowini) • Mukamba (pl. Akamba) & Mukikuyu (pl. Akikuyu)",
+    literalTranslation: "Peaceful salutations and replies in Ulu Kamba and Jogowini Kikuyu, with native singular/plural ethnonyms (Hildegarde Hinde, Fort Hall, September 1902 / Cambridge University Press, 1904, pp. vi–vii, 74–75).",
+    meaning: "Recorded by Hildegarde Hinde (Mrs Sidney L. Hinde) in Vocabularies of the Kamba and Kikuyu Languages of East Africa (signed at Fort Hall, British East Africa, September 1902; published at Cambridge University Press, 1904, pp. v–xviii, 1–76): highlights the close kinship and mutual intelligibility between the Akikuyu of the southern Kenya Province (Jogowini) and the Akamba of the adjoining Kitui District (Nganyawa) alongside Ulu Kamba (Machakos to the coast), documents the authentic indigenous ethnonyms Mukamba (pl. Akamba) and Mukikuyu (pl. Akikuyu) as opposed to the coastal Swahili forms Mkamba/Wakamba and Mkikuyu/Wakikuyu, and preserves 65 parallel everyday conversational phrases culminating in the traditional exchange of greetings: O voo! — O voo nēza! (Ulu Kamba) and Mwohoro! — Mwohoro mwēga! (Jogowini Kikuyu).",
+    englishEquivalent: "Neighbouring peoples who share roots and greetings understand one another across hills and plains.",
+    theme: "unity",
+    sourceCitation: "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: at the University Press, 1904, Preface pp. v–viii & Phrases pp. 72–75)"
+  }
+];
+
+KENYAN_PROVERBS.push(...ROUTLEDGE_KRAPF_HINDE_PROVERBS);
+CULTURAL_WISDOM.push(
+  ...ROUTLEDGE_KRAPF_HINDE_PROVERBS.map((item) => ({
+    id: item.id,
+    languageId: item.languageId,
+    nativeText: item.indigenous,
+    literalTranslation: item.literalTranslation,
+    meaning: item.meaning,
+    englishEquivalent: item.englishEquivalent,
+    category: item.theme,
+    source: item.sourceCitation,
+  }))
+);
+
+BORANA_GRAMMAR_SECTIONS.push({
+  id: "borana-krapf-isenberg-1842-galla-vocabulary",
+  title: "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842) Vocabulary of the Galla Language: Preface (pp. i–ii), Comparative Cushitic–Ethiosemitic Cognates & Shoan Oromo Lexicon (pp. 1–42)",
+  summary: "Complete line-by-line grammatical and lexical synthesis of Rev. J. L. Krapf's 1842 Vocabulary of the Galla Language (edited and translated from German by Rev. C. W. Isenberg, London: CMS / Richard Watts, 1842, pp. i–ii, 1–42, Colophon p. [43]): Isenberg's comparative classification of Galla, Dankali (Afar), and Somāli, 120+ Amharic/Ethiopic/Dankali/Somali/Arabic/Hebrew cognate notes, and Shoan Oromo grammatical constructions.",
+  content: `From Rev. J. L. Krapf & Rev. C. W. Isenberg (*Vocabulary of the Galla Language*, London: Printed for the Church Missionary Society by Richard Watts, Crown Court, Temple Bar, 1842, Preface pp. i–ii, Vocabulary pp. 1–42, Colophon p. [43]):
+1. **Historical Genesis, Mombasa Provenance & Rev. C. W. Isenberg's Preface (pp. i–ii & Colophon p. [43])**:
+   - Compiled in **Shoa** in summer 1841 by **Rev. J. L. Krapf** in Galla and German to assist incoming CMS missionaries alongside his *Grammatical Outline of the Galla Language* (1840, 12mo, 8d.), *St. Matthew's Gospel* (fcp. 8vo), and *St. John's Gospel, Five Chapters* (fcp. 8vo, 6d.).
+   - **Rev. C. W. Isenberg** (author of *Vocabulary of the Dankali Language*, 12mo, 8d.) translated the German headwords into English, assigned a part-of-speech label to every entry by checking Krapf's Galla translations of St. Matthew and St. John whenever in doubt, and added comparative etymological notes across **Amharic**, **Ethiopic (Ge'ez)**, **Tigre**, **Dankali (Afar)**, **Somāli**, **Shoan**, **Arabic**, **Hebrew**, and **Latin**.
+   - **Provenance of the Digitized Copy**: Bears the bookplate of the **Baptist Missionary Society Library** (No. P. 1. 5, *'Presented by the Church M. Socy'*), the handwritten ownership signature of ***S. F. Hassan, Advocate, Mombasa***, and the stamps of **UCSB Library (\`X-30265\`)** and **UC Southern Regional Library Facility (\`A 000 525 250 7\`)**.
+2. **Comparative Cushitic & Ethio-Semitic Cognate Correspondences (pp. 1–42)**:
+   - **Dankali (Afar) Correspondences (11)**: **\`gala, gamela\`** ('camel', *Dank. idem*, p. 6), **\`kortumi\`** ('fish', *Dank.* **\`kullum\`**, p. 14), **\`melka\`** ('ford', *Dank. idem*, p. 14), **\`kenne\`** ('give', *Dank.* **\`kahhè\`**, p. 15), **\`rōbi\`** ('hippopotamus / river-horse', *Dankali idem*, pp. 17, 31), **\`anan\`** ('milk', *Dank.* **\`hanna\`**, p. 23), **\`maeka\`** ('name, s.', *Dankali* **\`migāa\`**, p. 24), **\`maeka tshedde\`** ('name, v. a.', *Dank.* **\`miggāe\`**, p. 24), **\`dāga\`** ('rock', *Dankali* **\`daa\`**; *Amh.* ደንጊያ፡፡, p. 31), and **\`arrabda\`** ('tongue', *Dankali, id.*, p. 37).
+   - **Somāli & Shoa Correspondences**: **\`warabēsa\`** ('hyæna', *Somal, idem*, p. 18); **\`dahêra\`** ('gunpowder', *Shoa idem*, p. 16); and **\`gabata\`** ('table', *Shoa*, p. 36).
+   - **Indigenous Oromo vs. Christian/Muslim Religious & Social Terminology**: Contrasts **\`Waka\`** ('God / heaven', pp. 16–17), **\`kaletsha\`** ('Galla priest', p. 28), **\`mukabe / mukaba\`** ('pray / prayer to God', p. 28), **\`tibāra\`** ('soothsaying / foretelling', pp. 14, 34), and **\`ayanna\`** ('festival', p. 13) with Christian (**\`sidāma\`**, p. 7; **\`kêsi sidāma\`** 'Priest of Christians', p. 28; **\`bêta Christiān\`** 'Church', p. 7) and Muslim (**\`Iltshāma\`** 'Mohammedan', p. 23) terms.
+3. **Grammatical & Idiomatic Constructions in Krapf (1842, pp. 1–42)**:
+   - **Affixed Conjunction & Postpositions**: **\`—f\`** ('and', e.g., *kanaf sani* 'this and that', p. 2), **\`—da\`** (postposition 'for' / copula, e.g., *guadada* 'for he is great', *kuni ormōda* 'this is a Galla', pp. 14–15), **\`fi\`** ('for', *nafi* 'for me', *nufi* 'to/for us', pp. 14, 39), and **\`—ti\`** ('in / at / on / by', *mannati* 'in the house', *halkaniti* 'at/by night', *maekakiyāti* 'in my name', pp. 19, 24–25).
+   - **Days of the Week & Relative Years**: **\`hutshi dura\`** ('Monday', lit. 'first work-day', p. 24), **\`hutshi lamafa\`** ('Tuesday', lit. 'second work-day', p. 38), **\`rōbi\`** ('Wednesday', p. 40), **\`kāmis\`** ('Thursday', p. 37), **\`tshimāta\`** ('Friday', p. 15), **\`sanbata tenna\`** ('Saturday', lit. 'little Sabbath', p. 31), and **\`sanbata gudda\`** ('Sunday', lit. 'great Sabbath', p. 35); **\`yogga\`** ('year'), **\`berdingata\`** ('last year'), **\`berekan\`** ('the year before last', p. 42), **\`arda\`** ('to-day', p. 9), **\`borumti\`** ('on the following day', p. 9), **\`iftān\`** ('after to-morrow', p. 24), **\`kallēsa\`** ('yesterday'), and **\`dengādda\`** ('day before yesterday', p. 42).`,
+  examples: [
+    { borana: "hutshi dura (Mon.) • hutshi lamafa (Tue.) • rōbi (Wed.) • kāmis (Thu.) • tshimāta (Fri.) • sanbata tenna (Sat.) • sanbata gudda (Sun.)", english: "Monday ('first work-day') • Tuesday ('second work-day') • Wednesday • Thursday • Friday • Saturday ('little Sabbath') • Sunday ('great Sabbath')", explanation: "Complete 7-day week recorded in Krapf (1842, pp. 15, 24, 31, 35, 37, 38, 40)" },
+    { borana: "arda • borumti • iftān • kallēsa • dengādda | yogga • berdingata • berekan", english: "To-day • On the following day • After to-morrow • Yesterday • Day before yesterday | Year • Last year • The year before last", explanation: "Temporal adverbs and relative day/year series in Krapf (1842, pp. 9, 24, 42)" },
+    { borana: "gala / gamela • kortumi (Dank. kullum) • melka • kenne (Dank. kahhè) • rōbi • anan (Dank. hanna) • maeka (Dank. migāa) • dāga (Dank. daa) • arrabda • warabēsa (Somal id.)", english: "Camel • Fish • Ford • Give • Hippopotamus • Milk • Name • Rock • Tongue • Hyæna", explanation: "East Cushitic (Dankali/Afar & Somali) cognate series annotated by Rev. C. W. Isenberg in Krapf (1842, pp. 6, 14, 15, 17, 18, 23, 24, 31, 37)" }
+  ]
+});
+
+BORANA_UNITS.push({
+  id: "borana-unit-14-krapf-isenberg-1842-vocabulary",
+  title: "Unit 14: Krapf & Isenberg (1842) Vocabulary of the Galla Language — 7-Day Week, Relative Years, East Cushitic Cognates & Idioms",
+  description: "Explore the first English–Oromo dictionary compiled by Rev. J. L. Krapf in Shoa (1841) and edited by Rev. C. W. Isenberg in London (1842, pp. i–ii, 1–42): the 7-day week, relative day and year expressions, East Cushitic (Dankali & Somali) cognates, and conversational idioms.",
+  icon: "Book",
+  skills: [
+    {
+      id: "borana-krapf-1842-week-calendar-cognates-14-1",
+      title: "The 1842 7-Day Week, Relative Years & East Cushitic Cognates",
+      icon: "Calendar",
+      description: "Learn the 7 days of the week, relative day/year markers, and Dankali/Somali/Amharic cognates from Krapf & Isenberg (1842).",
+      tips: "In Krapf (1842), Monday and Tuesday are named after work ('hutshi dura' = first work-day, 'hutshi lamafa' = second work-day), Wednesday through Friday use Arabic/Ethio-Semitic names (rōbi, kāmis, tshimāta), and Saturday and Sunday distinguish the 'little Sabbath' (sanbata tenna) from the 'great Sabbath' (sanbata gudda).",
+      words: [
+        {
+          target: "hutshi dura • hutshi lamafa • rōbi • kāmis • tshimāta • sanbata tenna • sanbata gudda",
+          source: "Monday • Tuesday • Wednesday • Thursday • Friday • Saturday • Sunday",
+          pronunciation: "hu-tshi du-ra / hu-tshi la-ma-fa / ro-bi / ka-mis / tshi-ma-ta / san-ba-ta ten-na / san-ba-ta gud-da",
+          hint: "Krapf (1842, pp. 15, 24, 31, 35, 37, 38, 40)"
+        },
+        {
+          target: "arda • borumti • iftān • kallēsa • dengādda • yogga • berdingata • berekan",
+          source: "To-day • On the following day • After to-morrow • Yesterday • Day before yesterday • Year • Last year • The year before last",
+          pronunciation: "ar-da / bo-rum-ti / if-tan / kal-le-sa / den-gad-da / yog-ga / ber-din-ga-ta / be-re-kan",
+          hint: "Krapf (1842, pp. 9, 24, 42)"
+        },
+        {
+          target: "Waka • mukabe / mukaba • kaletsha vs. kêsi sidāma & Iltshāma",
+          source: "God / heaven • To pray / prayer (to God) • Galla priest vs. Priest of Christians & Mohammedan",
+          pronunciation: "wa-ka / mu-ka-be / ka-le-tsha / ke-si si-da-ma / il-tsha-ma",
+          hint: "Krapf (1842, pp. 7, 16, 17, 23, 28)"
+        },
+        {
+          target: "Wak' nagaia si kakennu! • Nagaia hafu tshedde • Naga ambulte! • Mali odu harraia duffe?",
+          source: "Farewell! ('May God give thee peace!') • To bid farewell • Good morning! • What is the news?",
+          pronunciation: "wak na-ga-ia si ka-ken-nu / na-ga am-bul-te / ma-li o-du har-ra-ia duf-fe",
+          hint: "Krapf (1842, pp. 13, 24, 25)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Wak' nagaia si kakennu! Naga ambulte! Mali odu harraia duffe?",
+          source: "May God give thee peace! Good morning! What is the news? (Krapf & Isenberg 1842, pp. 13, 24, 25)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Rev. J. L. Krapf & Rev. C. W. Isenberg's Vocabulary of the Galla Language (1842, pp. 15, 24, 31, 35, 37, 38, 40), how are Monday, Tuesday, Saturday, and Sunday named?",
+          correctAnswer: "Monday is 'hutshi dura' (first work-day), Tuesday is 'hutshi lamafa' (second work-day), Saturday is 'sanbata tenna' (little Sabbath), and Sunday is 'sanbata gudda' (great Sabbath)",
+          options: [
+            "Monday is 'hutshi dura' (first work-day), Tuesday is 'hutshi lamafa' (second work-day), Saturday is 'sanbata tenna' (little Sabbath), and Sunday is 'sanbata gudda' (great Sabbath)",
+            "Monday is 'rōbi', Tuesday is 'kāmis', Saturday is 'tshimāta', and Sunday is 'arda'",
+            "Monday is 'berdingata', Tuesday is 'berekan', Saturday is 'kallēsa', and Sunday is 'dengādda'",
+            "Monday is 'kaletsha', Tuesday is 'mukaba', Saturday is 'sidāma', and Sunday is 'Iltshāma'"
+          ],
+          hint: "See Krapf & Isenberg (1842, pp. 24, 31, 35, 38)"
         }
       ]
     }

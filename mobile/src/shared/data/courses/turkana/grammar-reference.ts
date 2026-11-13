@@ -4,7 +4,7 @@
 // 1. Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie" (1888 expedition through Turkana)
 // 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Turkana / Elgume comparative vocabulary)
 // 3. Rev. J. B. Purvis (1909) "Through Uganda to Mount Elgon" (Ch. XIII "The Turkana, a Tribe of Giantari")
-// 4. Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40)
+// 4. Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40, pp. 66–70, Plates XVI–XVII)
 // 5. Mervyn W. H. Beech (1911) "The Suk: Their Language and Folklore" (Turkana–Suk comparative notes)
 // 6. Juxon Barton (1921) "Turkana Grammatical Notes and Vocabulary" (JRAI Vol. 51 — Public Domain)
 // ============================================================
@@ -212,21 +212,43 @@ export const TURKANA_GRAMMAR_SECTIONS: GrammarSection[] = [
     ]
   },
   {
-    "id": "turkana-public-domain-dataset-synthesis",
-    "title": "Historical Orthography & Dialectal Reference Notes for Turkana",
-    "summary": "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Turkana.",
-    "content": "1. **Archival & Open-Dataset Integration for Turkana**:\n   - Combines primary historical documentation (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911, Barton 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
-    "examples": [
+    id: "turkana-public-domain-dataset-synthesis",
+    title: "Historical Orthography & Dialectal Reference Notes for Turkana",
+    summary: "Reference guide to classical 19th- and early 20th-century transcriptions, tone/vowel markings, and regional dialectal forms in Turkana.",
+    content: "1. **Archival & Open-Dataset Integration for Turkana**:\n   - Combines primary historical documentation (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911, Barton 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    examples: [
       {
-        "turkana": "Kalωme • Ekiyω",
-        "english": "You weep • They laugh",
-        "explanation": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+        turkana: "Kalωme • Ekiyω",
+        english: "You weep • They laugh",
+        explanation: "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
       },
       {
-        "turkana": "Nyayeni ao • Ayeni",
-        "english": "I know not • I know",
-        "explanation": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
+        turkana: "Nyayeni ao • Ayeni",
+        english: "I know not • I know",
+        explanation: "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
       }
+    ]
+  },
+  {
+    id: "tur-dundas-1910-ethnography-calendar",
+    title: "Hon. K. R. Dundas (1910, pp. 66–70, Plates XVI–XVII): The 16 Principal Turkana Tribes, 19 Ngoitunya & Ngolio Attegir Clans, 6 Life Stages & 12-Month Nakiborror / Nakamou / Nait Calendar",
+    summary: "Complete ethnographic, clan, life-stage, legal, religious, and 12-month ecological calendar record from Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70, Plates XVI–XVII).",
+    content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *JRAI* Vol. 40, Jan.–Jun. 1910, pp. 66–70, Plates XVI–XVII):
+1. **Physical Types, 16 Principal Tribes & 19 Exogamous *Attegir* Clans (pp. 66–67)**:
+   - **Two Physical Types (p. 66)**: A tall, slender, dolichocephalic type with a strong admixture of Samburu and Rendile blood, and a shorter, thick-set, broad-headed pure Turkana type (average stature <= 5 ft 11 in; tallest measured by Dundas: 6 ft 6 in).
+   - **16 Principal Turkana Tribes (p. 66)**: **1. Ngolio, 2. Ngoitunya, 3. Nittacha, 4. Nessetou, 5. Nbochoross, 6. Ngissir, 7. Nissikir, 8. Kamatak, 9. Lugumong, 10. Oiuaeguara, 11. Nijiye, 12. Ngirriomong, 13. Ngakumuk, 14. Ngalabong, 15. Ngorr, 16. Nikotomungwa** (*Ngolio* & *Ngoitunya* live south of Lake Rudolph around the Kerio, Sogota & Tirkwel).
+   - **19 Exogamous Clans (*Attegir*, without totems) of *Ngoitunya* & *Ngolio* (p. 67)**: **1. Nitegorr, 2. Molereto, 3. Tuduya, 4. Ellelet, 5. Ebalang, 6. Kaleso, 7. Ngonom, 8. Ngatap** (#1–8 occur in all 16 tribes), **9. Moana, 10. Nittacha, 11. Egurerr, 12. Ngaruwo** (the rain-makers' clan), **13. Neturana, 14. Erarak, 15. Eraraket, 16. Abuchaw, 17. Ngattigo, 18. Ekkadenya, 19. Ogorok**.
+2. **Six Life-Stage Terms, *Asavanissia* Ages, Customs & *Agipie* (pp. 67–69)**:
+   - **Male Life Stages (p. 67)**: **nidue** (young boy; 4 lower incisors extracted) → **egile** (warrior; wears clay-dressed human-hair bag to the waist, ostrich feathers, and iron/zebra-tail neck rings, Plates XVI–XVII) → **kasikou / oppa** (old man; *oppa* wears a beaded cap headdress, Plate XVI Fig. 7).
+   - **Female Life Stages (p. 67)**: **apesur** (unmarried girl; wears V-shaped bead-and-ostrich-eggshell apron in front, Plate XVI Fig. 2) → **aberu** (married woman/wife) → **agemat** (old woman).
+   - **Age-Generations (*Asavanissia*, p. 67)**: A new warrior age is instituted every 4 or 5 years; total abstinence from fermented liquor; **Nessegonn** evergreen bush on the lower Sogota provides sweet berries and fodder leaves.
+   - **Marriage, Slaughter & Deities (pp. 68–69)**: Bride-wealth of 20 cattle + 30 donkeys to the bride's mother, 30 cattle + camels/donkeys/sheep/goats to the father, 5 cattle to each co-wife, and 2 cattle to each brother and sister, followed by a mock-stormed 2-bullock feast; oxen/sheep are slaughtered by spearing through the lungs, cutting a circular piece out of the buttock first, and roasting the meat in the skin; benevolent sky god **Agipie** vs. malevolent nether-world/rock/river god.
+3. **The 12-Month Calendar: *Nakiborror*, *Nakamou* & *Nait* (p. 70)**:
+   - **Wet Season (*Nakiborror*, Mar–Aug)**: **1. Lomaruk, 2. Tetimaru, 3. Eliel, 4. Loichoto, 5. Loisoban, 6. Loitiak**.
+   - **Dry Season (*Nakamou*, Sept–Feb)**: **7. Lolongo, 8. Lopo, 9. Lorara, 10. Lomuk, 11. Logwang, 12. Lodunge** (with Aug–Oct — **Loitiak, Lolongo, Lopo** — called **Nait** because the grass turns yellow).`,
+    examples: [
+      { turkana: "Nidue → Egile → Kasikou (Oppa) • Apesur → Aberu → Agemat • Asavanissia", english: "Boy → Warrior → Old Man • Girl → Married Woman → Old Woman • 4–5 year warrior age-generations", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 67)" },
+      { turkana: "Nakiborror (Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak) & Nakamou (Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge) • Nait (Loitiak, Lolongo, Lopo)", english: "The 6 Wet-Season months, 6 Dry-Season months, and 3 yellow-grass Nait months of the Turkana year", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70)" }
     ]
   }
 ];

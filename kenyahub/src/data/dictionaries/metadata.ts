@@ -71,7 +71,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.1",
     "lastUpdated": "2026-11-12",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022).",
-    "totalEntries": 17349,
+    "totalEntries": 17352,
     "categories": [
       {
         "id": "greetings",
@@ -167,7 +167,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 177
+        "count": 180
       }
     ]
   },
@@ -188,8 +188,8 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "hasAudio": false,
     "dictionaryVersion": "3.2",
     "lastUpdated": "2026-11-12",
-    "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
-    "totalEntries": 10687,
+    "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910 \"With a Prehistoric People: The Akikúyu of British East Africa\", Edward Arnold London, pp. i–xxxii, 1–392, Plates I–CXXXVI), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).",
+    "totalEntries": 10707,
     "categories": [
       {
         "id": "greetings",
@@ -285,7 +285,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 2968
+        "count": 2988
       }
     ]
   },
@@ -426,8 +426,8 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "hasAudio": false,
     "dictionaryVersion": "3.4",
     "lastUpdated": "2026-11-12",
-    "contributorNote": "Kalenjin (Nandi / Kipsigis / Keyo / Tugen / Sabaot / Ogiek) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96, 1903 \"Anthropological Studies in Kavirondo and Nandi\", 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
-    "totalEntries": 4613,
+    "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa] / Sabaot / Ogiek) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96, 1903 \"Anthropological Studies in Kavirondo and Nandi\", 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024).",
+    "totalEntries": 4633,
     "categories": [
       {
         "id": "greetings",
@@ -511,7 +511,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 136
+        "count": 146
       },
       {
         "id": "phrases",
@@ -523,7 +523,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1547
+        "count": 1557
       }
     ]
   },
@@ -660,7 +660,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019).",
-    "totalEntries": 4073,
+    "totalEntries": 4076,
     "categories": [
       {
         "id": "greetings",
@@ -756,7 +756,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 314
+        "count": 317
       }
     ]
   },
@@ -883,9 +883,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), C. W. Hobley (1910, 1922), and BFBS (1921).",
-    "totalEntries": 2341,
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), W. Scoresby & Katherine Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
+    "totalEntries": 2346,
     "categories": [
       {
         "id": "greetings",
@@ -981,7 +981,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 608
+        "count": 613
       }
     ]
   },
@@ -1114,10 +1114,10 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Isiolo"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.1",
-    "lastUpdated": "2026-11-11",
-    "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language with Examples in Prose and Verse and an Account of the Yibir and Midgan Dialects\" — audited 100% line-by-line across §§ 1–289, Appendices I–III, Prose Stories I–XI, Songs I–XIV, and Yibir/Midgan Vocabularies), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
-    "totalEntries": 2500,
+    "dictionaryVersion": "3.2",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\" — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, 44 Abbreviations, 20-row Kenya Reference Table, and Full Two-Column Page Transcriptions of Book pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language with Examples in Prose and Verse and an Account of the Yibir and Midgan Dialects\" — audited 100% line-by-line across §§ 1–289, Appendices I–III, Prose Stories I–XI, Songs I–XIV, and Yibir/Midgan Vocabularies), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019).",
+    "totalEntries": 2518,
     "categories": [
       {
         "id": "greetings",
@@ -1213,7 +1213,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 544
+        "count": 562
       }
     ]
   },
@@ -1229,9 +1229,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
-    "totalEntries": 1998,
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 66–70, Plates XVI–XVII), Mervyn W. H. Beech (1911), and Juxon Barton (1921).",
+    "totalEntries": 2023,
     "categories": [
       {
         "id": "greetings",
@@ -1315,7 +1315,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 84
+        "count": 99
       },
       {
         "id": "phrases",
@@ -1327,7 +1327,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 212
+        "count": 222
       }
     ]
   },
@@ -1347,7 +1347,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016).",
-    "totalEntries": 7927,
+    "totalEntries": 7928,
     "categories": [
       {
         "id": "greetings",
@@ -1443,7 +1443,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 308
+        "count": 309
       }
     ]
   },
@@ -1671,7 +1671,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.4",
     "lastUpdated": "2026-11-11",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled and verified line-by-line from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London — 100% of Preface pp. ii–iii, Part I Grammar pp. 5–76, and Part II English–Sagalla Vocabulary pp. 77–128), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921).",
-    "totalEntries": 3570,
+    "totalEntries": 3571,
     "categories": [
       {
         "id": "greetings",
@@ -1767,7 +1767,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1018
+        "count": 1019
       }
     ]
   },
@@ -1899,7 +1899,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.0",
     "lastUpdated": "2026-10-31",
     "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73).",
-    "totalEntries": 2302,
+    "totalEntries": 2303,
     "categories": [
       {
         "id": "greetings",
@@ -1995,7 +1995,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 250
+        "count": 251
       }
     ]
   },
@@ -2017,7 +2017,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "3.6",
     "lastUpdated": "2026-11-12",
     "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Charles & Lawrence Tutschek (1844 \"Dictionary of the Galla Language / Lexicon der Galla Sprache\" Part I pp. I–LIX, 1–205; 1845 Part II pp. 1–126 & \"A Grammar of the Galla Language\" pp. I–VIII, 1–107, with Akafed'e Dalle of Hambo, Otshu Aga of Sibu, Bilile of Guma, Aman Gonda of Goma, and Duke Paul William of Württemberg), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996).",
-    "totalEntries": 7647,
+    "totalEntries": 7663,
     "categories": [
       {
         "id": "greetings",
@@ -2113,7 +2113,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 76
+        "count": 92
       }
     ]
   },
@@ -2129,8 +2129,8 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976).",
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976).",
     "totalEntries": 176,
     "categories": [
       {
@@ -2222,9 +2222,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), C. W. Hobley (1910), and Rainer Vossen (1982).",
-    "totalEntries": 678,
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982).",
+    "totalEntries": 684,
     "categories": [
       {
         "id": "greetings",
@@ -2290,7 +2290,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 336
+        "count": 342
       },
       {
         "id": "time",
@@ -2312,9 +2312,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Ilchamus (Njemps / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
-    "totalEntries": 304,
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), Mervyn W. H. Beech (1911), and Bernd Heine (1980).",
+    "totalEntries": 328,
     "categories": [
       {
         "id": "greetings",
@@ -2380,13 +2380,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 7
+        "count": 19
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 58
+        "count": 70
       }
     ]
   },
@@ -2403,9 +2403,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "hasAudio": false,
     "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-10-31",
-    "contributorNote": "Pokot (Pökoot / Suk) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
-    "totalEntries": 2801,
+    "lastUpdated": "2026-11-12",
+    "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921).",
+    "totalEntries": 2819,
     "categories": [
       {
         "id": "greetings",
@@ -2417,7 +2417,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 68
+        "count": 67
       },
       {
         "id": "family",
@@ -2441,13 +2441,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 163
+        "count": 157
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 113
+        "count": 111
       },
       {
         "id": "home",
@@ -2489,7 +2489,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 67
+        "count": 76
       },
       {
         "id": "phrases",
@@ -2501,7 +2501,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 217
+        "count": 235
       }
     ]
   },
@@ -2690,7 +2690,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 78007;
+export const TOTAL_DICTIONARY_ENTRIES: number = 78168;
 
 export const INITIAL_RANDOM_WORDS: { entry: DictEntry; langName: string; langId: string }[] = [
   {
@@ -4077,5 +4077,156 @@ INITIAL_RANDOM_WORDS.push(
     },
     langName: "Mijikenda (Giriama)",
     langId: "mijikenda",
+  }
+);
+
+// ============================================================
+// Hon. Kenneth R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate"
+// (Journal of the Royal Anthropological Institute Vol. 40, Jan.–Jun. 1910, pp. 49–72, Plates XV–XVII — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "The 3 Njamus (Nyarusi) Settlements, 16 Clans Across 6 Tribes, 11-Man Sirwa-Sheep Furrow Ceremony & 12-Month Lare / Ngolong Calendar",
+      translation: "Njemps Liabori ('down stream'), Njemps Lekepir ('up stream') & Korvan (Logogwa) • 16 Clans (Laikipiak: Il Kabes, Loiborgishu, Il Barsegir; Samburu: Il Mayek, Ol Barasaero, Ol Ouara, Loimüsse; Il Doigio: Ol Doimal, El Gungwan, Ol Gesiani, Ol Murtanat, Ol Gessei; Kamasia: Masari; Uasin Gishu: Barsaina; Il Geroi: 'Ngang Lessamagan, 'Ngang Ngissegir) • Lare (Oäni-oingok to Lolrochorot) & Ngolong (Gulua, Rialbala, Arat)",
+      pronunciation: "nya-ru-si / li-a-bo-ri / le-ke-pir / kor-van / il ma-yek / la-re / ngo-long",
+      context: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–55)",
+      audioFile: null,
+    },
+    langName: "Ilchamus (Njemps)",
+    langId: "ilchamus",
+  },
+  {
+    entry: {
+      english: "Bawgott (Suk) 11 Geographical Divisions, 24 Orten Clans & 14 Totems, 3 Gods (Ellap/Ellat, Mt. Alongol & Kerial), Verbatim Sick Prayer & 12-Month Kamei / Bengat Calendar",
+      translation: "Bawgott • 24 Orten (sg. Oro) Clans • Ellap/Ellat, Mt. Alongol & Kerial ('If this sickness be of the rain or of the grass or of the earth, or if it be from yourself, take it away') • Kamei (Tabatch, Kapsatt, Kawgelyon, Kawgei, Mou, Terter) & Bengat (Bogogma, Regesa, Perrowa, Meluwon/Meldag, Sukuku, Mugeyon)",
+      pronunciation: "baw-gott / or-ten / el-lap / a-lo-ngol / ke-ri-al / ka-mei / be-ngat",
+      context: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 56–65, 72 & Plates XV–XVII)",
+      audioFile: null,
+    },
+    langName: "Pokot (Pökoot)",
+    langId: "pokot",
+  },
+  {
+    entry: {
+      english: "Chebleng (13 Maragwetta & Ndo Sections, Clans & Totems), Kamasia (14 Kapteberewa & 6 Nderois Clans), Kabkamat (Olmo) & 5 Comparative Hill-Tribe Calendars",
+      translation: "Chebleng (Kogai crow, Seran dikdik, Sirere kite, Saban elephant, Chepbogamwoi buffalo) • Kamasia (10 Sot sun clans, Tallai leopard, Kawbil sabet porcupine, Tungaw & Kirimos chesin hyena; Nderois: Kimoi, Mogei, Tallai, Sot, Kimwan, Terriki of Sessivi/Ararat) • Kamei / Kipgugen / Terrelaw vs. Sengartat / Uwawtgot / Uwawt",
+      pronunciation: "che-ble-ng / ko-gai / se-ran / si-re-re / sot / sa-bet / che-sin / ol-mo",
+      context: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 57, 61–66, 72 & Plate XVII)",
+      audioFile: null,
+    },
+    langName: "Kalenjin",
+    langId: "kalenjin",
+  },
+  {
+    entry: {
+      english: "16 Principal Turkana Tribes, 19 Ngoitunya & Ngolio Attegir Clans (incl. Ngaruwo Rain-Makers), 6 Life Stages, Agipie & 12-Month Nakiborror / Nakamou / Nait Calendar",
+      translation: "16 Tribes & 19 Attegir Clans • nidue → egile → kasikou (oppa) & apesur → aberu → agemat • asavanissia • Agipie • Nakiborror (Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak) & Nakamou (Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge; Aug–Oct = Nait)",
+      pronunciation: "at-te-gir / nga-ru-wo / ni-du-e / e-gi-le / ka-si-kou / a-gi-pi-e / na-ki-bor-ror / na-ka-mou / nait",
+      context: "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 66–70 & Plates XVI–XVII)",
+      audioFile: null,
+    },
+    langName: "Turkana",
+    langId: "turkana",
+  }
+);
+
+// ============================================================
+// Rev. Fr. Evangelist de Larajasse (1897) "Somali-English and English-Somali Dictionary"
+// (Kegan Paul, Trench, Trübner & Co., London, 1897 — Public Domain)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "De Larajasse (1897) Minimal Pairs (ader, sōr/kol, gūr/gur, maya), Ogaden/Darod Locution (wa debai), Swahili (sawaheli) & East African Antelopes (si‘g, garanug/lig, adéryo/godir, b‘e‘id, sagaro)",
+      translation: "ader • sōr vs. kol • gūr vs. gur • maya • wa debai / wa i debai (Ogaden, Dulbanteh & Darod, p. 293) • sawaheli,—gi / sawahili,—gi (pp. 123, 242, 266) • daba galla,—hi (p. 26) • si‘g,—gi, garanug,—ti & lig,—gi, adéryo ‘ari,—gi & godir,—ki, b‘e‘id / bi‘‘id,—ki, sagaro / sakaro,—adi",
+      pronunciation: "ah-dare / sore vs koll / goore vs goor / wa de-bai / sa-wa-he-li / ga-ra-nug / go-dir",
+      context: "Rev. Fr. Evangelist de Larajasse, Somali-English and English-Somali Dictionary (London, 1897, pp. v–xiv, 4, 19, 26, 54, 56, 100, 118, 120, 123, 127, 221, 231, 242, 245, 266, 270, 293)",
+      audioFile: null,
+    },
+    langName: "Somali",
+    langId: "somali",
+  }
+);
+
+// ============================================================
+// W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikúyu of British East Africa"
+// (Edward Arnold, London, 1910 — Public Domain, pp. i–xxxii, 1–392, Frontispiece + Plates I–CXXXVI + Map)
+// ============================================================
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "10 Ages (Man-jí-ri to Mu-i-run'-gu), 17 Initiation Years (1891 Ngan'do to 1907 Ka-ban'go), 13 Clans (i-ri-ka), 30-Item Wa-wer'-u Market List & 2 Ki-shan'-di Rattle Keys (47 & 38 Symbols)",
+      translation: "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu • 1891 Ngan'do to 1907 Ka-ban'go • ku-i'-nya ki-shan'-di (47 & 38 symbols) • i-li'-ma, mu-hi'-ga, ke-li'-ha, ú-ta & rú-ga (ró-ga, ke-rá-si, n'gó-me) • 6-step chain ki-len-ge'-ri / mu-i-nor'-o",
+      pronunciation: "man-ji-ri / ma-tha-thi / i-re-gi / ku-i-nya ki-shan-di / i-li-ma / ke-li-ha / ru-ga",
+      context: "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (London: Edward Arnold, 1910, pp. i–xxxii, 1–392, Plates I–CXXXVI)",
+      audioFile: null,
+    },
+    langName: "Kikuyu (Gĩkũyũ)",
+    langId: "kikuyu",
+  },
+  {
+    entry: {
+      english: "The Masaí Warrior Manyatta, Elected Legooran ('Colonel'), 5-Warrior Daily Ration (1 Sheep + Milk), Lion-Mane War Helmet, Blood Song & Arthi Plain Battle (>1,000 Dead)",
+      translation: "manyatta • legooran ('colonel') • 1 sheep daily to 5 warriors + milk (neither beer nor tobacco allowed) • lion-mane war headdress (for killing a lion single-handed with spear) • Blood Song with spinning 4-ft spear • Arthi plain battle & removal to Lei-ki-pi-a",
+      pronunciation: "ma-nyat-ta / le-goo-ran / ar-thi / lei-ki-pi-a",
+      context: "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (1910, Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI)",
+      audioFile: null,
+    },
+    langName: "Maasai (Maa)",
+    langId: "maasai",
+  }
+);
+
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Rev. Dr. J. L. Krapf (1850) Preface (pp. iii–x) & Six-Column Comparative Vocabulary of Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu & Kigálla (pp. 1–64)",
+      translation: "Kisuáheli (understood from Barawa 1½° N to Mosambic; spoken on Kiáma, Túla, Patta, Lámu, Káu, Mómbas, Tánga, Pémba, Sánsibar & Kiloa by 350,000–400,000 souls) • Makafiri vs. watu wa mrima • Patta vs. Malinde • Nilo-Hamitic or Nilotic [Bantu] family vs. Nigro-Hamitic stock • 5th Column Kihiáu (Wahiau E. of Lake Niassa / Moráwi, 1848 Mombas Kamanga informant after 1847 Mabiti raid)",
+      pronunciation: "ki-su-a-he-li / ma-ka-fi-ri / wa-tu wa m-ri-ma / ki-hi-a-u / mo-ra-wi / ma-bi-ti",
+      context: "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. iii–x & Vocabulary pp. 1–64)",
+      audioFile: null,
+    },
+    langName: "Swahili (Kiswahili)",
+    langId: "swahili",
+  },
+  {
+    entry: {
+      english: "Rev. Dr. J. L. Krapf (1850) Preface on the Galla of the River Dana (Kigálla, pp. viii–x), 'Ormania' Etymology & 3-Point Proof on Shoan Amharic",
+      translation: "Galla of the River Dana (Kigálla, 6th column of Krapf 1850): Berraráta tribe on the River Dána (Máro) • Coined 'Ormania' from Orma ('men' = brave men vs. morma 'neck', p. 30) • 3-point proof that Galla modified Shoan Amharic (tschamma = gama 'foot-sole', gasha 'shield', dshamma; verb-final syntax; ale/adarraga = Gede/Gode)",
+      pronunciation: "ki-gal-la / or-ma / or-ma-ni-a / mor-ma / ga-ma / ga-sha / ge-de / go-de",
+      context: "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. viii–x & Vocabulary pp. 1–64)",
+      audioFile: null,
+    },
+    langName: "Borana (Oromo)",
+    langId: "borana",
+  }
+);
+
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Rev. J. L. Krapf & Rev. C. W. Isenberg (1842) Frontmatter, Mombasa/BMS Provenance, Preface (pp. i–ii) & Publisher's Advertisements (p. [43])",
+      translation: "Title Page: Vocabulary of the Galla Language, by the Rev. J. L. Krapf (London: CMS / Richard Watts, 1842) • Provenance: Baptist Missionary Society Library No. P. 1. 5 & S. F. Hassan, Advocate, Mombasa (UCSB Library X-30265) • Rev. C. W. Isenberg's Preface (pp. i–ii): translated from Krapf's 1841 Shoa Galla-German MS, POS-tagged via St. Matthew & St. John, with Dankali, Somāli, Amharic, Ethiopic, Tigre, Arabic & Hebrew cognates",
+      pronunciation: "krapf / i-sen-berg / sho-a / da-nka-li / so-ma-li",
+      context: "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: Church Missionary Society / Richard Watts, 1842, Frontmatter, Preface pp. i–ii & Colophon p. [43])",
+      audioFile: null,
+    },
+    langName: "Borana (Oromo)",
+    langId: "borana",
+  }
+);
+
+INITIAL_RANDOM_WORDS.push(
+  {
+    entry: {
+      english: "Hildegarde Hinde (1904) Preface (pp. v–viii), Alphabet (pp. ix–x) & Complete 12-Paradigm Verb Conjugation of Ku or Gu-tinda ('To Conquer', pp. xi–xviii)",
+      translation: "Preface (Fort Hall, Sept. 1902): Ulu Kamba (Machakos to coast), Nganyawa Kamba (Kitui District), and Jogowini Kikuyu (Kenya Province) • 6 Plural Rules: Mukamba → Akamba & Mukikuyu → Akikuyu • 12-Paradigm Conjugation of Ku or gu-tinda (Past Perfect: Kamba ni-na-tind-ie vs. Kikuyu ni-tind-eri)",
+      pronunciation: "mu-ka-mba a-ka-mba / mu-ki-ku-yu a-ki-ku-yu / ku-ti-nda gu-ti-nda",
+      context: "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: University Press, 1904, pp. v–xviii)",
+      audioFile: null,
+    },
+    langName: "Kamba (Kĩkamba)",
+    langId: "kamba",
   }
 );
