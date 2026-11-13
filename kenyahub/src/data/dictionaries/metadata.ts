@@ -1,31 +1,38 @@
-// ============================================================
-// Dictionary Metadata Barrel Module
-// Split into modular files for clean auditing and editing:
-// - ./types.ts: Dictionary & entry interfaces
-// - ./catalog.ts: ALL_DICT_METAS, DICT_META_MAP, ALL_CATEGORY_IDS, TOTAL_DICTIONARY_ENTRIES
-// - ./random-words.ts: INITIAL_RANDOM_WORDS
-// - ./lexical-highlights.ts: Historical lexical highlights
-// ============================================================
+import { INITIAL_RANDOM_WORDS as GENERATED_RANDOM_WORDS } from "../random-words";
+import {
+  ALL_DICT_METAS,
+  DICT_META_MAP,
+  ALL_CATEGORY_IDS,
+  TOTAL_DICTIONARY_ENTRIES,
+  type DictEntry,
+  type DictCategory,
+  type Dictionary,
+  type DictCategoryMeta,
+  type DictMeta,
+} from "./catalog";
+import {
+  NORTHCOTE_1907_LEXICAL_HIGHLIGHTS,
+  BEECH_1911_LEXICAL_HIGHLIGHTS,
+  HOLLIS_1909_LEXICAL_HIGHLIGHTS,
+  HOLLIS_1905_LEXICAL_HIGHLIGHTS,
+  HINDE_1901_LEXICAL_HIGHLIGHTS,
+  STAM_1929_LEXICAL_HIGHLIGHTS,
+  LINDBLOM_1920_LEXICAL_HIGHLIGHTS,
+} from "./lexical-highlights";
 
-export type {
-  DictEntry,
-  DictCategory,
-  Dictionary,
-  DictCategoryMeta,
-  DictMeta,
-} from "./types";
-
+export type { DictEntry, DictCategory, Dictionary, DictCategoryMeta, DictMeta };
 export {
   ALL_DICT_METAS,
   DICT_META_MAP,
   ALL_CATEGORY_IDS,
   TOTAL_DICTIONARY_ENTRIES,
-} from "./catalog";
-
-export { INITIAL_RANDOM_WORDS } from "./random-words";
-
-export {
   NORTHCOTE_1907_LEXICAL_HIGHLIGHTS,
   BEECH_1911_LEXICAL_HIGHLIGHTS,
   HOLLIS_1909_LEXICAL_HIGHLIGHTS,
-} from "./lexical-highlights";
+  HOLLIS_1905_LEXICAL_HIGHLIGHTS,
+  HINDE_1901_LEXICAL_HIGHLIGHTS,
+  STAM_1929_LEXICAL_HIGHLIGHTS,
+  LINDBLOM_1920_LEXICAL_HIGHLIGHTS,
+};
+
+export const INITIAL_RANDOM_WORDS: DictEntry[] = GENERATED_RANDOM_WORDS;

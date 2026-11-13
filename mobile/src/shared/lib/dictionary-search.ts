@@ -2,7 +2,7 @@ import type {
   DictCategory,
   DictEntry,
   Dictionary,
-} from "../data/dictionaries/metadata";
+} from "@/data/dictionaries/metadata";
 
 /**
  * Standard language family color palette used across web and mobile views.
@@ -176,6 +176,26 @@ const JOHNSTON_1902_SUPPLEMENTARY_ENTRIES: Record<string, { catId: string; entry
     { catId: "phrases", entry: { english: "Take away!", translation: "Iwa!", pronunciation: "i-wa", context: "Additional Words and Sentences in Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, p. 926)", audioFile: null } },
     { catId: "phrases", entry: { english: "Go and herd the cattle", translation: "Ṣomo erriita ngiṣu!", pronunciation: "so-mo er-rii-ta ngi-su", context: "Additional Words and Sentences in Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, p. 926)", audioFile: null } },
     { catId: "culture-history", entry: { english: "Kunōno (Masai Smiths) Dialect: 4 Unique Metallurgical Words & 12 Nandi Cognates Collected by A. C. Hollis (1909, p. xxxiii)", translation: "e-samereita (iron) • o-siota (knife) • en-gandiit (spear) • e-wuyuwuyu (axe) — out of 150 Kunōno words collected by A. C. Hollis, over two-thirds are ordinary Masai, 12 are Nandi, and these 4 forge terms are peculiar to the Kunōno smiths • Masai war-song sung by Nandi boys at Labet-ap-eun: kambakta (p. 44)", pronunciation: "e-sa-me-rei-ta / o-sio-ta / en-gan-diit / e-wu-yu-wu-yu / kam-bak-ta", context: "Sir Charles Eliot & A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, pp. xxxiii, 44)", audioFile: null } },
+    { catId: "adjectives", entry: { english: "The 6 Substantive Plural Classes in Masai (Hollis 1905, pp. 18–34): Class I (-i/-n/-in), Class II (Drops Singular Suffix -ni/-a/-i/-o/-oi/-u), Class III (-ok/-ak/-ek & Doubling Stem), Class IV (-ra/-ri/-ro/-ru & -ta/-ti/-to/-tu), Class V (Changes Final Letter or Syllables), Class VI (Irregular Plurals)", translation: "Class I: ol-tungani / il-tungana-i (man), en-gaji / in-gajijik or in-gaji-n (hut), ol-dia / il-die-in (dog) • Class II: ol-Maasani / il-Maasae (Masai), ol-keju / il-kejek (river), ol-choni / il-chon (hide), en-goshoke / in-goshua (stomach) • Class III: ol-murani / il-muran (warrior), ol-chekuti / il-chekut-ok (herdsman), ol-oiboni / il-oibon-ok (medicine man), ol-ashe / il-asho (calf), en-gerai / in-gera (child) • Class IV: ol-alem / il-alema-ra (sword), ol-oito / il-oik (bone), ol-chata / il-keek (firewood), ol-tuli / il-tuli-li (buttock) • Class V: ol-bitir / il-bitiro (wart-hog), ol-kine / il-kineji (he-goat), en-gine / in-gineji (she-goat) • Class VI: en-giteng / in-gishu (cow/cattle), ol-kiteng / il-mongi (ox), ol-chore / il-choreta (friend), ol-kila / il-kilani (garment)", pronunciation: "ol-tu-nga-ni / il-ma-a-sae / il-mu-ran / il-oi-bo-nok / en-gi-teng / in-gi-shu", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part I, pp. 18–34)", audioFile: null } },
+    { catId: "family", entry: { english: "Masai Kinship Terms & Possessive Suffix Paradigm (Hollis 1905, pp. 32–34, 48–49): Father (Papa), Mother (Yeyo), Brother (Ol-alashe), Sister (En-ganashe), Wife (En-aisul / En-gerai), Co-Wife (En-gaini)", translation: "My father: Papa-lai (pl. il-oo-papa) • Thy father: Menye • His/her father: Menye • My mother: Yeyo-ai (pl. in-oo-yeyo) • Thy/his/her mother: Ñgotonye • My brother: Ol-alashe-lai (pl. Il-alashera-lainei) • My sister: En-ganashe-ai (pl. In-ganashera-ainei) • Son-in-law / Daughter-in-law / Parents-in-law: Ol-aputani / En-gaputani (pl. Il-aputanak)", pronunciation: "pa-pa-lai / me-nye / ye-yo-ai / ngo-to-nye / ol-a-la-she / en-ga-na-she", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part I, pp. 32–34, 48–49)", audioFile: null } },
+    { catId: "numbers", entry: { english: "The 5 Masai Finger Names & Finger-Counting System from 1 to 60 (Hollis 1905, pp. 45–47)", translation: "5 Finger Names (Ol-kimojino, pl. Il-kimojik): 1. Ol-morijoi (thumb), 2. Ol-o-ilale-en-gorio (forefinger), 3. Ol-o-do-kimojino (middle finger), 4. Ol-le-lubo (ring finger), 5. Ol-o-ti-kimojino (little finger) • Finger-counting gestures: 1 (obo/nabo: raise forefinger), 2 (are/aare: forefinger + middle), 3 (okuni/uni: three fingers), 4 (oongwan/ongwan: four fingers with gap between middle & ring), 5 (imiet: closed fist with thumb between forefinger & middle), 6 (ile: click thumb nail & ring finger nail), 7 (naapishana: rub thumb & middle finger), 8 (oisyet [m.] / isyet [f.]: four fingers shaken), 9 (naaudo: thumb & forefinger tip ring), 10 (tomon: fillip thumb & forefinger), 20 (tikitam), 30 (osom), 40 (artam), 50 (onom), 60 (ntomoni-ile)", pronunciation: "ol-ki-mo-ji-no / ol-mo-ri-joi / o-bo / a-re / o-ku-ni / o-o-ngwan / i-miet / i-le / na-a-pi-sha-na / oi-syet / na-au-do / to-mon", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part I, pp. 41–47)", audioFile: null } },
+    { catId: "verbs", entry: { english: "Complete 27-Row Pronominal Subject–Object Verb Prefix Table & 8 Derivative Verb Formations (Hollis 1905, pp. 50–51, 80–90)", translation: "Subject–Object Prefixes (with a-suj 'to follow'): aa-suj (I follow thee / he follows me), ki-suj (thou followest me / we follow him / he follows thee), a-suj (I follow him), i-suj (thou followest him), e-suj (he/they follow him/them) • 8 Derivative Verb Formations: 1. Neuter/Quasi-Passive (-a/-o + -ta/-to; e.g., a-fung-o 'to be open'), 2. Dative/Applied (-aki/-oki, past -aka/-oko; e.g., a-suj-aki 'to follow for'), 3. Motion Towards Speaker (-u, past -ua/-uo, imp. -u; e.g., a-suj-u, a-lot-u 'to come'), 4. Motion Away from Speaker (-aa/-oo, past -ayie/-oyie; e.g., a-ipir-aa), 5. Instrumental (-ie; e.g., a-rem-ie 'to stab with'), 6. Causative (Class I ita- prefix: a-ita-suj; Class II -ie suffix: a-rrip-ie), 7. Intransitive (-isho/-isho-re; e.g., a-suj-isho), 8. Reduplicated Intensive (a-suj-a-suj) • True Passive adds -i to active tenses (aa-suj-i 'I am followed', ki-suj-i 'thou art followed')", pronunciation: "a-a-suj / ki-suj / a-suj-a-ki / a-suj-u / a-lo-tu / a-ita-suj / a-suj-i-sho", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part I, pp. 50–51, 80–90)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "All 20 Traditional Masai Stories ('N-Atinin, Hollis 1905, Part II, pp. 103–237)", translation: "1. E-limoto oo-'l-muran oo-'l-ñgojine (The Warriors and the Hyena, p. 103) • 2. Ol-ñgojine o en-gine (The Hyena and the Crow, p. 107) • 3. Ol-owaru o en-gwirata (The Wild Beast and the Fire-Stick, p. 111) • 4. Ol-kiteñg le-kine o ol-o-'ñgishu (The He-Goat and the Herd, p. 117) • 5. E-limoto e-Konyek (The Story of Konyek the Half-Man/Half-Demon Son, p. 122) • 6. E-limoto oo-'l-muran o-'l-Torobo (The Warriors and the Dorobo, p. 133) • 7. En-dim le-Subai (The Caterpillar / Subai Forest, p. 142) • 8. En-gerai na-ata in-gonyek pokira aare (The Two-Eyed Girl Among the One-Eyed Demon Family, p. 151) • 9. Ol-tungani o-ata in-gera uni (The Man and His Three Sons, p. 166) • 10. En-giteñg oo-'l-Maasae (The Cow of the Masai, p. 176) • 11. Ol-owaru o en-gesalia (The Demon and the Swing, p. 180) • 12. En-daaroto e-Marikon (The Flight from Marikon, p. 187) • 13. En-dukuya e-moti (The Story of the Cooking-Pot, p. 193) • 14. Ol-tungani o ol-owaru (The Man and the Wild Beast, p. 197) • 15. Ol-owaru o en-gerai (The Demon and the Child, p. 203) • 16. Ol-ñgatuny o ol-owaru o ol-ñgojine (The Lion, the Leopard, and the Hyena, p. 207) • 17. En-dite o ol-owaru (The Girl and the Demon, p. 211) • 18. En-gerai o en-gopiro (The Boy and the Feather, p. 217) • 19. En-gerai o el-lulungata (The Child and the Python, p. 224) • 20. Ol-tungani o-boitare in-gishu (The Man Who Lived with His Cattle / Elephants & Mosquitoes, p. 230)", pronunciation: "n-a-ti-nin / ko-nyek / en-dim le-su-bai / ma-ri-kon / el-lu-lu-nga-ta", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part II, pp. 103–237)", audioFile: null } },
+    { catId: "phrases", entry: { english: "All 75 Masai Proverbs & Sayings ('N-dungueta oo-'l-Maasae, Hollis 1905, Part III, pp. 238–252)", translation: "Representative proverbs from Nos. 1–75: #1 Me-eta en-gop ol-chore ('The earth has no friend') • #12 E-shomo ol-karsis en-goshoke e-ñgotonye ('The rich man has gone back to his mother's womb') • #32 Me-im-ie ol-kimojino obo e-shei ('One finger cannot kill a louse') • #48 Me-nyok-ie ol-tungani en-gima a-ibung e-ata ol-chekut ('A man does not take hold of the fire with his hand while he has a poker') • #49 Me-eta en-goshoke oik ('The stomach has no bones') • #54 Me-limu en-gutuk en-a-inos ('The mouth does not tell what it has eaten') • #63 E-risio il-kiu o in-gonyek ('Ant-hills and eyes are alike') • #75 Me-pal ol-tomia i-sirkon ('The elephant does not tire of his tusks')", pronunciation: "n-du-ngue-ta / me-im-ie ol-ki-mo-ji-no o-bo e-shei / me-pal ol-to-mia i-sir-kon", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part III, Nos. 1–75, pp. 238–252)", audioFile: null } },
+    { catId: "phrases", entry: { english: "All 24 Masai Enigmas / Riddles ('L-oyeti) & Challenge Formula 'Oiyote! — E-euo!' (Hollis 1905, Part III, pp. 253–259)", translation: "Opening formula: Oiyote! ('Are you ready? / A riddle!') — Reply: E-euo! ('It has come! Let us hear it!') • Representative riddles from Nos. 1–24: #1 A-ata in-gishu ainei naa-nyokioo pokira, ne-ton ol-kiteng orok te-polos → Il-ala o en-gineji ('My cattle are all red and a black bullock stands in their midst → The teeth and the tongue', Note: red teeth stained from chewing tobacco/roots) • #4 En-gaji nabo na-ata il-turrur aare → En-gume ('One house with two rafters/passages → The nose') • #6 A-ata en-gine ai na-nyorr a-lo en-dim ne-itu e-nyorr a-lo ang → Ol-tim ('I have a goat that likes to go to the bush and does not like to come home → The thorn-branch gate barrier') • #18 E-ton ol-moruo te-boo ne-iput il-kilani en-gaji → En-gima o e-puruo ('The old man sits outside while his cloak fills the house → Fire and smoke') • #24 E-shomo ol-murani en-dim ne-shomo a-ar ol-mangati ne-boitare → Ol-kila ('The warrior went to the forest to fight the enemy and stayed with him → The garment/burr')", pronunciation: "oi-yo-te / e-eu-o / il-a-la o en-gi-ne-ji / en-gu-me / en-gi-ma o e-pu-ruo", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part III, Enigmas Nos. 1–24, pp. 253–259)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "The 4 Principal Masai Clans ('Orot), 2 Cattle-Dividing Moieties ('L-oodo-kishu & 'L-oorook-kishu) & 19 Sub-Families (Il-gilat) (Hollis 1905, Part IV, pp. 260–261)", translation: "4 Clans ('Orot, sg. Ol-orere / En-ishomi): I. Il-Aiser (sub-families: 'L-ugumai, 'L-idokoki, Il-partimaro, 'L-ongiito, 'L-ukumae, Il-parsinko, En-gidoñg — hereditary clan of the 'L-oibonok chief medicine-men), II. Il-Meñana (sub-families: 'L-okesen, 'L-okimai, Il-masakwa, Il-poosat, Il-kiboron), III. Il-Mokesen (sub-families: Il-mokesen, Il-kiporon, Il-tarosero, Il-aiser-le-mokesen), IV. Il-Molelian (sub-families: Il-molelian, Il-masula, Il-kipuyoni — includes the Il-kunono blacksmith caste) • 2 Cattle-Dividing Moieties (formed when dividing captured raid cattle): 'L-oodo-kishu ('Red Cattle', comprising Il-Aiser + Il-Meñana) vs. 'L-oorook-kishu ('Black Cattle', comprising Il-Mokesen + Il-Molelian)", pronunciation: "il-ai-ser / en-gi-dong / il-me-nga-na / il-mo-ke-sen / il-mo-le-lian / l-oo-do-ki-shu / l-oo-rook-ki-shu", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part IV, pp. 260–261)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "The 5 Masai Geographical Districts (Il-oshon) & 15 Remembered Generation Ages (Il-poror, c. 1791–1904) (Hollis 1905, Part IV, pp. 260–263)", translation: "5 Districts (Il-oshon): 1. Il-Kaputie (Athi/Kapiti plains), 2. Il-Keek-onyokie (Naivasha/Kinangop/Kedong), 3. Il-Matapato (Namanga/Kajiado border), 4. Il-Purko (Nakuru/Mau/Laikipia), 5. Il-Loitai (Loita hills) [plus pastoral/agricultural sections: Il-Uasin-gishu, Il-Laikipiak, Il-Dalalekutuk, Il-Loodokilani, Il-Siria, Il-Damat, Il-Lumbwa/Il-Oikop] • 15 Remembered Generation Ages (Il-poror, each split into Right-hand E-murut e-tatene & Left-hand E-murut e-kedianye circumcision): 1. Il-Tiyioki (~1791), 2. Il-Merisho (~1806), 3. Il-Kidotu (~1821), 4. Il-Tuati I (~1836), 5. Il-Nyangusi I (~1851), 6. Il-Laimer (~1866), 7. Il-Talala (~1881), 8. Il-Tuati II (~1896, right-hand Il-Kishumu, left-hand Il-Majeshi circumscribed 1904)", pronunciation: "il-ka-pu-tie / il-keek-o-nyo-kie / il-ma-ta-pa-to / il-pur-ko / il-loi-tai / il-ti-yio-ki / il-ta-la-la / il-tu-a-ti", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part IV, pp. 260–263)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "Masai Cosmology & Myths: Black & Red Sky-Gods (Eng-ai Narok & Eng-ai Nanyokye), Naiteru-kop, and Le-eyo's Origin of Cattle & Origin of Death (Hollis 1905, Part V, pp. 264–273)", translation: "Two Sky-Beings: Eng-ai Narok (The Black Benevolent God who sends rain; rolling thunder is his voice saying 'E-m-bunga! Leave them alone!') & Eng-ai Nanyokye (The Red Malevolent God who wants to burn the earth; sharp lightning crash is his voice crying 'Ta-pala ma-puku! Let me go that I may kill them!') • Naiteru-kop ('The Beginner of the Earth', mediator who lowered cattle down a strip of hide from the sky to the Dorobo and Le-eyo) • Origin of Death (pp. 271–272): Le-eyo was instructed to chant over a dying child 'Man, die and return; Moon, die and remain away!' (Tungani taa-me ni-nyorr-u; Ol-apa taa-me ni-tu-turro!), but reversed the formula for a neighbor's child and was forced to repeat the fatal curse over his own son", pronunciation: "eng-ai na-rok / eng-ai na-nyo-kye / nai-te-ru-kop / le-e-yo / ol-a-pa", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part V, pp. 264–273)", audioFile: null } },
+    { catId: "nature", entry: { english: "Masai Astronomy: The Sun (Eng-olong), Moon (Ol-apa), Pleiades (Il-kokua), Orion (Il-morijo & E-naibor-lukunya), Venus (Kileken & Ol-okira le-'n-gop), Jupiter (Eng-akakwai) & Milky Way (En-gikwei e-'n-gajijik) (Hollis 1905, Part V, pp. 273–279)", translation: "Sun (Eng-olong) married Moon (Ol-apa); they fought and Moon's face was scarred and one eye put out • Pleiades: Il-kokua (6 stars whose setting/rising marks the rainy season Ol-tumuret) • Orion's Belt: Il-morijo (Three Old Men) pursued by three widows E-naibor-lukunya (Orion's Sword) • Morning Star: Kileken (bringer of cattle) • Evening Star: Ol-okira le-'n-gop • Jupiter: Eng-akakwai • Milky Way: En-gikwei e-'n-gajijik • Rainbows: Ol-oidimani • Halos around sun/moon: En-gata ('cattle kraal') • Comets: Ol-okira le-'n-gop o-ata ol-kidongoi • Earthquakes: E-ipiri en-gop (caused by warriors walking in the underworld or Naiteru-kop shifting)", pronunciation: "eng-o-long / ol-a-pa / il-ko-kua / ki-le-ken / ol-o-ki-ra / eng-a-ka-kwai", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part V, pp. 273–279)", audioFile: null } },
+    { catId: "animals", entry: { english: "Masai Cattle Hide Brands (Il-mishiren), Ear-Slit Marks (Il-ponot) & Ear-Flaps (Il-kipulul) Across the 4 Clans (Hollis 1905, Part VI, pp. 289–291 & Figs. 1–37)", translation: "Cattle ownership marks: 1. Il-mishiren (sg. Ol-mishire, red-hot iron hide brands burned on the flanks, thighs, shoulders, and cheeks representing the owner's clan and sub-family), 2. Il-ponot (sg. Ol-ponoto, distinctive notches and slits cut into the right and left ears of cattle, sheep, and goats), 3. Il-kipulul (dangling skin ear-flaps cut below the ear) • Illustrated in Hollis (1905) Figures 1–37 for Il-Aiser (En-gidong, Il-partimaro, 'L-oodo-kishu), Il-Meñana, Il-Mokesen, and Il-Molelian", pronunciation: "il-mi-shi-ren / ol-mi-shi-re / il-po-not / ol-po-no-to / il-ki-pu-lul", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 289–291 & Figs. 1–37)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "Complete 9-Generation Hereditary Genealogy of the Masai Chief Medicine-Men ('L-oibonok of the En-gidong Sub-Clan of Il-Aiser, Hollis 1905, pp. 324–330)", translation: "1. Ol-le-Mweiya (came down from heaven / Ngong Hills, found by an Il-Aiser elder) → 2. Kipet → 3. Marimbe → 4.iga / Sitonik → 5. Sitonik → 6. Supeet (consulted by Krapf & Rebmann's era) → 7. Mbatiany (d. ~1890, supreme prophet during the Great Rinderpest & Laikipiak wars) → 8. Lenana (Ol-onana, d. 1911, Paramount Chief in British East Africa) & Sendeyo (rival brother in German East Africa who made peace with Lenana in 1902) → 9. Segi (son of Lenana)", pronunciation: "ol-le-mwei-ya / su-peet / mba-tia-ny / le-na-na / sen-de-yo / se-gi", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 324–330)", audioFile: null } },
+    { catId: "emergency", entry: { english: "Masai Customary Law: Blood-Money Restitution (Il-ooo / En-gurore), Assault Fines, Theft Penalties & Trial by Ordeal Oaths (Ol-mumai) (Hollis 1905, Part VI, pp. 310–312, 344–345)", translation: "Intentional murder of a Masai man: 49 head of cattle (Il-ooo) • Murder of a woman: 29 head of cattle (or 19 cows + 2 ox-loads of honey) • Accidental homicide within the same clan: 14 to 29 cattle • Knocking out a tooth or blinding an eye: 1 cow and 1 calf (or 1 bullock) • Breaking an arm, leg, or collarbone: 2 to 8 cattle • Theft of a cow or ox: 7 cattle restitution • Three solemn Oaths / Ordeals (Ol-mumai): 1. Drinking blood mixed with milk/earth from a spear blade, 2. Striking the iron anvil/axe of the Il-kunono smiths, 3. Stepping over a warrior's sword or spear", pronunciation: "il-o-o-o / en-gu-ro-re / ol-mu-mai", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 310–312, 344–345)", audioFile: null } },
+    { catId: "home", entry: { english: "The Il-kunono Blacksmith Caste (Sub-Section of Il-Kipuyoni / Il-Molelian) & Oiling the Hand Before Touching Iron Weapons (Hollis 1905, Part VI, pp. 330–331)", translation: "Il-kunono (sg. Ol-kunoni, the hereditary endogamous blacksmith caste belonging to the Il-Kipuyoni sub-family of the Il-Molelian clan) • Smelt iron sand (ol-nyorri) in clay-tuyere furnaces to forge spears (em-bere), swords (ol-alem), cow-bells (ol-korikor), branding irons (ol-mishire), and razors (ol-murunya) • Pastoral Masai oil their hands with fat (e-ilata) before picking up any weapon forged by an Ol-kunoni lest the smith's curse (en-gooki) cling to their skin", pronunciation: "il-ku-no-no / ol-ku-no-ni / ol-nyor-ri / em-be-re / ol-a-lem / ol-mu-ru-nya", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 330–331)", audioFile: null } },
+    { catId: "time", entry: { english: "The 10 Masai Divisions of the Day, 4 Seasons & 12 Lunar Months (Il-apaitin) (Hollis 1905, Part VI, pp. 332–334)", translation: "10 Divisions of the Day: 1. E-nyorikarie (4–5 a.m., before dawn), 2. E-ikenyu en-gop (5–6 a.m., red dawn), 3. E-ilep eng-olong (6–7 a.m., sunrise), 4. En-dama (morning), 5. E-ipenari in-gishu (7–8 a.m., cattle go to pasture), 6. En-dama o-nguan / E-ton eng-olong te-weji nabo (12 noon), 7. E-ibelibel eng-olong (1–3 p.m., sun declines), 8. E-tul-a eng-olong / Te-ipa (4–6 p.m., evening), 9. E-sul-a eng-olong (6 p.m., sunset), 10. En-gairiamari / En-gewarie (night, 7 p.m.–4 a.m.) • 4 Seasons: 1. Ol-oirujuruj (drizzling rains), 2. Kujorok (heavy long rains, green pastures), 3. Ol-ameyu (hot dry season), 4. Ol-tumuret (short rains) • 12 Months (Il-apaitin): I. Ol-okua (Kara-obo), II. Kujorok, III. O-somed, IV. Moro-usin, V. O-loiboni, VI. Karat-apus, VII. Kiok, VIII. E-ruru, IX. O-sinyai, X. Ol-oibor-are, XI. Ngishu-naa-asha, XII. Ol-tumuret", pronunciation: "ol-oi-ru-ju-ruj / ku-jo-rok / ol-a-me-yu / ol-tu-mu-ret / il-a-pai-tin", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 332–334)", audioFile: null } },
+    { catId: "nature", entry: { english: "45+ Masai Botanical Species (Il-kak / Il-keek): Sacred Fig (Ol-reteti), Olive (Ol-oirien), Firesticks (Ol-piron & En-dole) & Soup-Bark Trees (Hollis 1905, Part VI, pp. 335–342)", translation: "Sacred & ritual trees: Ol-reteti (Ficus sp., sacred parasitic fig tree at mountain passes where travellers throw stones/grass), Ol-oirien (Olea chrysophylla, wild olive used for smoking milk gourds and blessing ceremonies), Ol-timigomi (Pappea capensis, warrior soup-bark), Ol-kiloriti (Acacia abyssinica, astringent bark boiled with meat by warriors in the ol-pul meat-camp to inspire courage), Ol-mokotan (Albizzia anthelmintica, tapeworm medicine), Ol-sinoni (Lippia sp., fragrant leaves), Ol-tarakwa (Juniperus procera, pencil cedar used for the male drilling firestick ol-piron), Ol-oibor-benek (Dombeya sp., soft wood used for the female hearth firestick en-dole), Ol-oilalei (Zizyphus mucronata), Ol-tukai (Phoenix reclinata, wild date palm)", pronunciation: "ol-re-te-ti / ol-oi-rien / ol-ki-lo-ri-ti / ol-mo-ko-tan / ol-ta-ra-kwa / ol-pi-ron / en-do-le", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 335–342)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "All 8 Traditional Masai Songs & Prayers ('Singolioitin oo-'l-Maasae, Hollis 1905, Part VI, pp. 345–355)", translation: "1. Women's Prayer for Warriors on a Raid (p. 346: Na-Ai n-a-isho-o in-gera...) • 2. Women's Song Welcoming Returning Raiders (p. 347) • 3. Elders' & Women's Rain Prayer around the Sacred Ol-reteti Fig Tree (p. 348: Na-Ai Narok! Taa-shao!) • 4. Circumcision Candidates' Song (E-murata, p. 349) • 5. E-unoto Ceremony Song at the Installation of the Ol-aunoni Ritual Leader (p. 351) • 6. Warriors' Praise Song for Their Bullocks and Sweethearts (p. 352) • 7. Song Praising the Chief Medicine-Man Mbatiany / Lenana (p. 353) • 8. Children's & Mothers' Lullaby and Evening Prayer to the New Moon (p. 354: Kileken! Na-Ai!)", pronunciation: "si-ngo-lioi-tin / na-ai na-rok / e-mu-ra-ta / e-u-no-to / ol-au-no-ni", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 345–355)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "Masai Life-Cycle & Age-Grade Rites: Birth Feast (E-naisho oo-'n-gera), Ear-Piercing, Circumcision (E-murata, Sipolio), Warrior Kraal (E-manyata), E-unoto (Ol-aunoni) & Ol-ngesher Meat Feast (Hollis 1905, Part VI, pp. 294–304)", translation: "Birth feast: E-naisho oo-'n-gera (slaughter of ol-kiteng le-kulal) • Ear-piercing with hot iron awls and insertion of wooden ear-blocks (il-karash) • Circumcision (E-murata, held every ~4–5 years after the Elephants' Tusk horn e-mowuo ol-owaru sounds): novices wear black ostrich plumes (il-kalia) and shoot blunt arrows (ol-marisian) at girls as Sipolio initiates • Warriors (Il-muran) live in the E-manyata with their mothers and uninitiated sweethearts (in-dito), eating only beef, milk, and blood (never mixing milk and meat on the same day) • E-unoto ceremony installs the Ol-aunoni moral/ritual leader before graduation to elderhood (Il-moruak) at the Ol-ngesher feast", pronunciation: "e-mu-ra-ta / si-po-lio / e-ma-nya-ta / e-u-no-to / ol-au-no-ni / ol-nge-sher", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 294–304)", audioFile: null } },
+    { catId: "culture-history", entry: { english: "Masai Death & Burial Customs: Exposed Corpses vs. Stone Cairn Burial for Chief Medicine-Men ('L-oibonok) & Rich Elders (Hollis 1905, Part VI, pp. 304–306)", translation: "Ordinary Masai are not buried in the earth (which would pollute the soil that grows grass for cattle); instead the corpse is carried out to the west side of the kraal, laid on its left side with the head towards the north, and left with sandals, a walking stick, and grass for hyenas (il-ngojinia) to consume • Exception: A great medicine-man (Ol-oiboni) or wealthy chief elder (Ol-karsis) is buried in a trench under a stone cairn after an ox or goat is sacrificed; every passer-by throws a stone and a tuft of grass onto the cairn while belief holds his soul turns into a sacred python or cobra (ol-asurai) that visits his family's cattle kraal", pronunciation: "ol-oi-bo-ni / ol-kar-sis / ol-a-su-rai / il-ngo-ji-nia", context: "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 304–306)", audioFile: null } },
   ],
   pokot: [
     { catId: "greetings", entry: { english: "Greeting on entering a village: Hail! (and reply)", translation: "Tokwes! (Reply: Eia!)", pronunciation: "tok-wes / ei-a", context: "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, p. 92)", audioFile: null } },
@@ -201,6 +221,225 @@ const JOHNSTON_1902_SUPPLEMENTARY_ENTRIES: Record<string, { catId: string; entry
 };
 
 function normalizeJohnston1902DictionaryEntries(dict: Dictionary): void {
+  // For maasai.json: clean Hinde (1901) table headers, footnote backslashes, brace artifacts, reversed curses/toponyms, and Hollis (1905) OCR typos
+  if (dict.languageId === "maasai") {
+    for (const cat of dict.categories) {
+      const cleanedMaasaiEntries: DictEntry[] = [];
+      for (const e of cat.entries) {
+        // 1. Skip ingested Markdown table headers & prose fragments
+        if (
+          (e.english === "Occasion / Addressee" && e.translation === "Masai") ||
+          (e.english === "Present or Future Tense" && e.translation === "Masai") ||
+          (e.english === "Masai Curse" && e.translation === "Meaning / Usage") ||
+          (e.english === "Geographic Name" && e.translation === "Masai Name & Meaning") ||
+          (e.english === "The phonetics are simple and easy" &&
+            e.translation === "Except for the length of the words")
+        ) {
+          continue;
+        }
+
+        // 2. Strip trailing/embedded footnote escape backslashes (\) from Hinde (1901) headwords (e.g. Basket\, Jigger\, Potato\, Syphilis\, Adjudge\, His father\, etc.)
+        if (e.english.includes("\\")) {
+          e.english = e.english.replace(/\\/g, "").trim();
+        }
+
+        // 3. Clean Markdown brace artifacts (`{` and `}`) in Hinde (1901) headwords and translations
+        if (e.english.includes("`{`") || e.english.includes("`}`")) {
+          e.english = e.english.replace(/\s*`[{}]`\s*/g, " ").replace(/\s+/g, " ").trim();
+        }
+        if (e.translation.includes("`{`") || e.translation.includes("`}`")) {
+          e.translation = e.translation.replace(/\s*`[{}]`\s*/g, " ").replace(/\s+/g, " ").trim();
+        }
+
+        // 4. Fix reversed Hinde (1901) Curses (p. 43) and Toponyms (p. 42) where the Masai form was placed in `english` and the English gloss in `translation`
+        if (e.english === "Djerrterrā" && e.translation === "A curse against the man addressed") {
+          e.english = "Curse against the man addressed (Hinde 1901, p. 43 #1)";
+          e.translation = "Djerrterrā";
+          e.pronunciation = "djerr-ter-ra";
+        } else if (e.english === "Njertērrda" && e.translation === "Against the man addressed") {
+          e.english = "Curse against the man addressed (Hinde 1901, p. 43 #2)";
+          e.translation = "Njertērrda";
+          e.pronunciation = "njer-terr-da";
+        } else if (e.english === "Mining jangayenda" && e.translation === "Against a man and his father") {
+          e.english = "Curse against a man and his father (Hinde 1901, p. 43 #3)";
+          e.translation = "Mining jangayenda";
+          e.pronunciation = "mi-ning ja-nga-yen-da";
+        } else if (
+          e.english === "Kirrigūmini" &&
+          e.translation === "A curse on the father saying that the person cursed is a bastard"
+        ) {
+          e.english = "Curse on the father saying the person cursed is a bastard (Hinde 1901, p. 43 #4)";
+          e.translation = "Kirrigūmini";
+          e.pronunciation = "kir-ri-gu-mi-ni";
+        } else if (
+          e.english === "Injeraii" &&
+          e.translation === "This curse is supposed to cause the death of a brother or sister"
+        ) {
+          e.english = "Curse supposed to cause the death of a brother or sister (Hinde 1901, p. 43 #5)";
+          e.translation = "Injeraii";
+          e.pronunciation = "in-je-raii";
+        } else if (
+          e.english === "Tadui munigilidoigi" &&
+          e.translation === "Supposed to cause the person addressed to die"
+        ) {
+          e.english = "Curse supposed to cause the person addressed to die (Hinde 1901, p. 43 #6)";
+          e.translation = "Tadui munigilidoigi";
+          e.pronunciation = "ta-dui mu-ni-gi-li-doi-gi";
+        } else if (e.english === "Injerai kordai" && e.translation === "A child's curse") {
+          e.english = "A child's curse (Hinde 1901, p. 43 #7)";
+          e.translation = "Injerai kordai";
+          e.pronunciation = "in-je-rai kor-dai";
+        } else if (e.english === "Miinjirria nigiruk" && e.translation === "A child's curse") {
+          e.english = "A child's curse (Hinde 1901, p. 43 #8)";
+          e.translation = "Miinjirria nigiruk";
+          e.pronunciation = "miin-jir-ria ni-gi-ruk";
+        } else if (e.english === "Mbussa bwaara" && e.translation === "Fool") {
+          e.english = "Fool! (curse/expletive, Hinde 1901, p. 43 #9)";
+          e.translation = "Mbussa bwaara";
+          e.pronunciation = "mbus-sa bwaa-ra";
+        } else if (
+          e.english === "Mbarra" &&
+          e.translation === "This is accompanied by spitting and is the equivalent of damn"
+        ) {
+          e.english = "Damn! (curse accompanied by spitting, Hinde 1901, p. 43 #10)";
+          e.translation = "Mbarra";
+          e.pronunciation = "mbar-ra";
+        } else if (e.english === "Nairobi (river)" && e.translation.startsWith("Cold (ngare nairobi")) {
+          e.english = "Nairobi River (lit. 'cold water', emerging cold from the forest, Hinde 1901, p. 42)";
+          e.translation = "ngare nairobi";
+          e.pronunciation = "nga-re nai-ro-bi";
+        } else if (e.english === "Ngongo bagas (river)" && e.translation === "the eye of the Spring") {
+          e.english = "Ngong River / Spring ('the eye of the Spring', Hinde 1901, p. 42)";
+          e.translation = "Ngongo bagas";
+          e.pronunciation = "ngo-ngo ba-gas";
+        } else if (e.english === "Eldonyo sabuk (mt.)" && e.translation === "the big mountain") {
+          e.english = "Ol Donyo Sabuk ('the big mountain', Hinde 1901, p. 42)";
+          e.translation = "Eldonyo sabuk";
+          e.pronunciation = "el-do-nyo sa-buk";
+        } else if (
+          e.english === "Gwasso kidong (river)" &&
+          e.translation.startsWith("the river of the ollokidong trees")
+        ) {
+          e.english = "Kedong River ('the river of the ollokidong trees', whose wood is used for making quivers, Hinde 1901, p. 42)";
+          e.translation = "Gwasso kidong";
+          e.pronunciation = "gwas-so ki-dong";
+        } else if (e.english === "Enaibasha (lake)" && e.translation === "the great water or sea") {
+          e.english = "Lake Naivasha ('the great water or sea', Hinde 1901, p. 42)";
+          e.translation = "Enaibasha";
+          e.pronunciation = "e-nai-ba-sha";
+        }
+
+        // 5. Fix Hollis (1905) OCR typos in maasai.json
+        if (e.translation === "E-wSji ne-ra sapuk") {
+          e.translation = "E-weji ne-ra sapuk";
+          e.pronunciation = "e-we-ji ne-ra sa-puk";
+        } else if (e.translation === "Ol-kiteSg orok sinyati li-opa") {
+          e.translation = "Ol-kiteng orok sinyati li-opa";
+          e.pronunciation = "ol-ki-teng o-rok si-nya-ti li-o-pa";
+        } else if (e.translation === "E-uliilu" || e.translation === "E-uliilu (for en-ululu)") {
+          e.translation = "E-ululu (for en-ululu)";
+          e.pronunciation = "e-u-lu-lu";
+        } else if (e.translation === "H-tungana (for il-tunganak)") {
+          e.translation = "'L-tungana (for il-tunganak)";
+          e.pronunciation = "l-tu-nga-na";
+        } else if (e.english === "The middle" && e.translation === "The loin") {
+          e.english = "The middle, the loin";
+          e.translation = "Em-polos (pl. Im-polosi, Hollis 1905, p. 33)";
+          e.pronunciation = "em-po-los";
+        } else if (
+          e.english === "The belief" &&
+          e.translation === "In-girukot En-girukoto iruk The reply"
+        ) {
+          e.english = "The belief, the reply (verbal noun from a-iruk, 'to believe / reply')";
+          e.translation = "En-girukoto, pl. In-girukot (Hollis 1905, p. 22)";
+          e.pronunciation = "en-gi-ru-ko-to / in-gi-ru-kot";
+        } else if (e.english === "The buttocks" && e.translation === "The seat") {
+          e.english = "The buttocks, the seat";
+          e.translation = "El-lulterish, pl. Il-lulterishi / O-siadi, pl. I-siadini (Hollis 1905, p. 33)";
+          e.pronunciation = "el-lul-te-rish / o-sia-di";
+        } else if (e.translation === "'N-giri naa-tuflgwaita") {
+          e.translation = "'N-giri naa-tuñgwaita";
+          e.pronunciation = "n-gi-ri naa-tu-ngwai-ta";
+        } else if (e.translation === "Ol-tuSgani kitok") {
+          e.translation = "Ol-tuñgani kitok";
+          e.pronunciation = "ol-tu-nga-ni ki-tok";
+        } else if (e.translation === "Ol-kitok-tu5gani") {
+          e.translation = "Ol-kitok-tuñgani";
+          e.pronunciation = "ol-ki-tok-tu-nga-ni";
+        } else if (e.translation === "Ol-oing5ni Il-oiflgok The bull") {
+          e.translation = "Ol-oiñgoni, pl. Il-oiñgok (the bull)";
+          e.pronunciation = "ol-oi-ngo-ni / il-oi-ngok";
+        } else if (e.translation === "Ejngoroyoni na-nana") {
+          e.translation = "E-ñgoroyoni na-nana";
+          e.pronunciation = "e-ngo-ro-yo-ni na-na-na";
+        } else if (e.translation === "Ol-tungani o-ra3 sapuk") {
+          e.translation = "Ol-tuñgani o-ra sapuk";
+          e.pronunciation = "ol-tu-nga-ni o-ra sa-puk";
+        } else if (e.translation === "Ol-tuilgani liki-suj") {
+          e.translation = "Ol-tuñgani liki-suj";
+          e.pronunciation = "ol-tu-nga-ni li-ki-suj";
+        } else if (e.translation === "Ol-tuflgani o-tu-suj-a" || e.translation === "Ol-tungani 0-tu-suj-a") {
+          e.translation = "Ol-tuñgani o-tu-suj-a";
+          e.pronunciation = "ol-tu-nga-ni o-tu-suj-a";
+        } else if (e.translation === "0-sarge (for ol-sarge)") {
+          e.translation = "O-sarge (for ol-sarge)";
+          e.pronunciation = "o-sar-ge";
+        } else if (e.translation === "Ol-alem la-isho J") {
+          e.translation = "Ol-alem la-isho";
+          e.pronunciation = "ol-a-lem la-i-sho";
+        } else if (e.translation === "A-iy5lo-u") {
+          e.translation = "A-iyolo-u";
+          e.pronunciation = "a-i-yo-lo-u";
+        } else if (e.translation === "A-tonfe (for a-tonye)") {
+          e.translation = "A-tonie (for a-tonye)";
+          e.pronunciation = "a-to-nie";
+        } else if (e.translation === "A-isud-6-rie") {
+          e.translation = "A-isud-o-rie";
+          e.pronunciation = "a-i-su-do-rie";
+        } else if (e.translation === "Il-tuftganak oo-ibor") {
+          e.translation = "Il-tuñganak oo-ibor";
+          e.pronunciation = "il-tu-nga-nak oo-i-bor";
+        } else if (e.translation === "'ftgoroyok kutiti") {
+          e.translation = "'Ñgoroyok kutiti";
+          e.pronunciation = "ngo-ro-yok ku-ti-ti";
+        } else if (e.translation === "Il-nmran oo-gol") {
+          e.translation = "Il-muran oo-gol";
+          e.pronunciation = "il-mu-ran oo-gol";
+        } else if (e.translation === "Il-nganaiyo (for il-Sganaiyok)") {
+          e.translation = "Il-ñganaiyo (for il-ñganaiyok)";
+          e.pronunciation = "il-nga-nai-yo";
+        } else if (e.translation === "'N-gishu (for 'n-klshu)") {
+          e.translation = "'N-gishu (for 'n-kishu)";
+          e.pronunciation = "n-gi-shu";
+        } else if (e.translation === "Ol-le-'ng-aina (the-of-the-hand 1)") {
+          e.translation = "Ol-le-'ng-aina (the-of-the-hand)";
+          e.pronunciation = "ol-le-ng-ai-na";
+        } else if (e.translation === "Ol-oirien Il-oirieuito The wild olive-tree") {
+          e.english = "The wild olive-tree (log of wood, heart of a tree)";
+          e.translation = "Ol-oirien, pl. Il-oirienito";
+          e.pronunciation = "ol-oi-rien / il-oi-rie-ni-to";
+        } else if (e.translation === "Kishomi J") {
+          e.translation = "Kishomi";
+          e.pronunciation = "ki-sho-mi";
+        } else if (e.translation === "El-loft1 go (for en-longo)") {
+          e.translation = "El-loñgo (for en-loñgo)";
+          e.pronunciation = "el-lo-ngo";
+        } else if (e.translation === "1 A-nyal") {
+          e.translation = "A-nyal";
+          e.pronunciation = "a-nyal";
+        } else if (e.english === "To cause to fol low for (some one) to (a place)") {
+          e.english = "To cause to follow for (some one) to (a place)";
+        } else if (e.translation === "Il-chaSgit le-'n-dim") {
+          e.translation = "Il-chañgit le-'n-dim";
+          e.pronunciation = "il-cha-ngit le-n-dim";
+        }
+
+        cleanedMaasaiEntries.push(e);
+      }
+      cat.entries = cleanedMaasaiEntries;
+    }
+  }
+
   // For kalenjin.json: clean truncated " pr" verbs, leading comma/parenthetical fragments, and ". (See ...)" stubs from Hollis (1909)
   if (dict.languageId === "kalenjin") {
     for (const cat of dict.categories) {
@@ -228,7 +467,7 @@ function normalizeJohnston1902DictionaryEntries(dict: Dictionary): void {
           const commaIdx = t.indexOf("), ");
           if (commaIdx !== -1) {
             const tag = t.slice(0, commaIdx + 1);
-            const rest = t.slice(commaIdx + 3).trim();
+            const rest = t.slice(0, commaIdx) ? t.slice(commaIdx + 3).trim() : t;
             if (!e.english.includes(tag)) {
               e.english = `${e.english} ${tag}`;
             }
@@ -463,7 +702,6 @@ export function getDictIndex(dict: Dictionary): DictSearchIndex {
   return index;
 }
 
-
 // Complete G. A. S. Northcote (1907) "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66) Lexical & Ethnographic Dictionary Supplement
 if (!JOHNSTON_1902_SUPPLEMENTARY_ENTRIES['luo']) {
   JOHNSTON_1902_SUPPLEMENTARY_ENTRIES['luo'] = [];
@@ -481,4 +719,435 @@ JOHNSTON_1902_SUPPLEMENTARY_ENTRIES['luo'].push(
   { catId: 'people', entry: { english: 'Hereditary nickname: "the man who killed an elephant"', translation: 'oliech (Northcote 1907, p. 62)', pronunciation: 'o-li-ech', context: 'G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 62)', audioFile: null } },
   { catId: 'people', entry: { english: 'Hereditary nickname: "the man like a locust"', translation: 'obonyo (Northcote 1907, p. 62)', pronunciation: 'o-bo-nyo', context: 'G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 62)', audioFile: null } },
   { catId: 'people', entry: { english: 'Colonial administrative official / magistrate (rain-maker summons anecdote)', translation: 'Bwana (Northcote 1907, p. 64)', pronunciation: 'bwa-na', context: 'G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 64)', audioFile: null } }
+);
+
+// Complete Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (pp. i–xii, 1–75) & A. C. Hollis (1905) Dictionary Supplement and Normalization
+if (!JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["maasai"]) {
+  JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["maasai"] = [];
+}
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["maasai"].push(
+  {
+    catId: "greetings",
+    entry: {
+      english: "Salutations in Hinde (1901, p. 41): To a woman (sg. & pl.), to a man, and on shaking hands",
+      translation: "To a woman: tagwenia (lit. 'laugh'), pl. tagwenia bōōgi — Reply: īgo • To a man: soboi — Reply: eber • On shaking hands: nassak",
+      pronunciation: "ta-gwe-nia / i-go / so-boi / e-ber / nas-sak",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 41)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Song the Children Sing for Rain (Hinde 1901, p. 42): 'God we sing, God rain we pray thee oh!'",
+      translation: "Siumbi aielisiumbi ngai kijaiga eo!",
+      pronunciation: "si-um-bi ai-e-li-si-um-bi ngai ki-jai-ga e-o",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Masai Medicine Song Invoking Ngai & Great Prophet Mbatian (Hinde 1901, p. 42): 'We pray God, we pray Batian.'",
+      translation: "Aamon yi ngai, aamon m'Batian.",
+      pronunciation: "aa-mon yi ngai aa-mon m-ba-tian",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Song Sung by the Warriors When Going to Fight Sendeyo (Hinde 1901, p. 42): 'Sendeyo has done evil, we were friends once but now we go to fight him with our spears, the big ones in front, the small behind.'",
+      translation: "Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta.",
+      pronunciation: "sen-de-yo ma-no-loi-mo-ti ten-de-boi er-ra-ke-nja bo-nik ol-dash ir-re-me-ta",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "The 3 Social & Occupational Group Ethnonyms in Hinde (1901, p. 42): Masai, Dorobo Hunters & Il-kunono Ironworkers",
+      translation: "Masai: Orrmāssani (sing.), elmāsai (pl.) • Hunters: olldōrrobon (sing.), dōrrobo (pl.) • Iron workers: orrgunoni (sing.), elgunonu (pl.)",
+      pronunciation: "orr-mas-sa-ni / el-ma-sai / oll-dor-ro-bon / dor-ro-bo / orr-gu-no-ni / el-gu-no-nu",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "nature",
+    entry: {
+      english: "All 8 Kenyan & East African Geographical Names Recorded by Hildegarde Hinde (1901, p. 42)",
+      translation: "1. Kenia (mt.): oldonyo gēri ('the striped mountain') • 2. Kilima Njaro (mt.): oldonyo eborr ('the white mountain') • 3. Suswa (mt.): oldonyo kenyuki ('the red mountain') • 4. Nairobi (river): ngare nairobi ('Cold — the river comes from the forest and is very cold as it emerges into the open') • 5. Ngongo bagas (river): 'the eye of the Spring' • 6. Eldonyo sabuk (mt.): 'the big mountain' • 7. Gwasso kidong (river): 'the river of the ollokidong trees (the wood of which is used for making quivers)' • 8. Enaibasha (lake): 'the great water or sea'",
+      pronunciation: "ol-do-nyo ge-ri / ol-do-nyo e-borr / ol-do-nyo ke-nyu-ki / nga-re nai-ro-bi / ngo-ngo ba-gas / el-do-nyo sa-buk / gwas-so ki-dong / e-nai-ba-sha",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "emergency",
+    entry: {
+      english: "All 10 Traditional Masai Curses & Imprecations Recorded by Hildegarde Hinde (1901, p. 43)",
+      translation: "1. Djerrterrā (against the man addressed) • 2. Njertērrda (against the man addressed) • 3. Mining jangayenda (against a man and his father) • 4. Kirrigūmini (curse on the father saying the person cursed is a bastard) • 5. Injeraii (supposed to cause the death of a brother or sister) • 6. Tadui munigilidoigi (supposed to cause the person addressed to die) • 7. Injerai kordai (a child's curse) • 8. Miinjirria nigiruk (a child's curse) • 9. Mbussa bwaara ('Fool') • 10. Mbarra (accompanied by spitting; equivalent of 'damn')",
+      pronunciation: "djerr-ter-ra / njer-terr-da / mi-ning ja-nga-yen-da / kir-ri-gu-mi-ni / in-je-raii / ta-dui mu-ni-gi-li-doi-gi / mbus-sa bwaa-ra / mbar-ra",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 43)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "numbers",
+    entry: {
+      english: "Sexagesimal (Base-60) Warrior-Company Counting System & Finger-Snapping Signs (Hinde 1901, Rules 9–10, pp. 4–5)",
+      translation: "1 nabu, 2 ari/are, 3 ūni, 4 ungwun, 5 miet (closed fist), 6 elle, 7 nabishāna, 8 issiet, 9 nawdu/endōrroi, 10 tomon (two closed fists), 20 tigitum, 30 ossom, 40 arrtam, 50 orrnom, 60 īp ('which equals our 100. The Masai count in sixties, and a company of warriors is composed of 60 men', signed by snapping the fingers of one hand), 120 īp ari (two sixties), First tangasaino, Last korom",
+      pronunciation: "na-bu / a-ri / u-ni / u-ngwun / miet / el-le / na-bi-sha-na / is-siet / naw-du / to-mon / ti-gi-tum / os-som / arr-tam / orr-nom / ip",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, Rules 9–10, pp. 4–5)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "adjectives",
+    entry: {
+      english: "The 9 Regular Noun Plural Suffix Methods, 2 Prefix Plurals, 7 Irregular Plurals & 5 Invariables (Hinde 1901, Rules 18–21, pp. 8–10)",
+      translation: "9 Regular Suffixes: 1. -i/-oi/-ni (engela → engelani, ndap → ndapi, orlōrro → orlōrroi) • 2. -a/-ia (oldulet → olduleta, essurutie → essorudia, essondai → essondā) • 3. -u/-tu (ingobirr → ingobirru, emurrt → emurrtu, oldonyi → elōnitu) • 4. -n/-in (ossesi → essessin, ōrgenoss → ergenossin, mbarrda → mbarrdan) • 5. -k/-ak/-ok (ngorraion → ngorroiok, emoworr → mowarrak, orlāmonon → lamonok) • 6. -g (ngaina → ngaieg, ndāridigi → ndāridig) • 7. -r/-rr (ngera → ngerr, emossori → emossorr, endōlu → endōluer) • 8. -o (olashi → olasho, endōlit → endōlo) • 9. -t (ollogurrto → ollogurrt, engumoru → engumurrt, engias → engiaset) • 2 Prefix Plurals: yeyu → noiyeyu (mother), loom → eloom (twig) • 7 Irregulars: orromashere → ellemasher (tick), ingirigura → maigurana (dance), ollomagaw → errmagawl (hippopotamus), orrigena → ellgiē (breast), orrborrnoto → irrgonot (mark), oloirika → lorrigaishi (chair), emālo → miggibi (kudu) • 5 Invariables: ngolong (sun), orrümünyi (beard), loisusu (flea), ngima (fire), baba (father)",
+      pronunciation: "en-ge-la-ni / ol-du-le-ta / e-murr-tu / es-ses-sin / la-mo-nok / ngai-eg / ol-a-sho / noi-ye-yu / e-loom / mig-gi-bi",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, Rules 18–21, pp. 8–10)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "The 5 Ethnographic & Lexical Footnotes in Hinde's Vocabulary & Phrases (1901, pp. 35, 47, 48, 59, 65, 70)",
+      translation: "1. Kinship Suppletion (p. 35 fn. *): baba ('father') and yeyu ('mother') are never used in the 2nd or 3rd person, which substitute minyi/menye ('your/his/their father') and ngutungy/ngotongy/nutun/notorn ('your/his/their mother') • 2. Imperative Verb Entry Format (p. 47 fn. * under adjudge): all verbs are given in the Imperative so learners can make themselves understood before mastering complex conjugations • 3. Kikuyu Basket Loanword (p. 48 fn. *): engiondo [kikuyu] pl. engiondoni (baskets obtained from the Kikuyu) • 4. Swahili Jigger Loanword (p. 59 fn. *): ndudu [kiswahili] (jigger flea introduced by Swahilis) • 5. Kikuyu Potato Loanword (p. 65 fn. *): ngwashin [kikuyu] (potatoes known through the Wakikuyu medium) • 6. Syphilis Etymology (p. 70 fn. *): ngaioulu (literally 'God knows', introduced by Swahilis)",
+      pronunciation: "ba-ba / mi-nyi / me-nye / ngu-tu-ngy / en-gion-do / ndu-du / ngwa-shin / ngai-ou-lu",
+      context: "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, pp. 35, 47, 48, 59, 65, 70)",
+      audioFile: null,
+    },
+  }
+);
+
+// Complete Rev. N. Stam (1929) "The Bahanga" (Publications of the Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179) Dictionary Supplement
+if (!JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luhya"]) {
+  JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luhya"] = [];
+}
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luhya"].push(
+  {
+    catId: "nature",
+    entry: {
+      english: "Country of the Bahanga (Wanga Kingdom), Language, and Native (sing. & plur.) on the 1929 Map (Stam 1929, p. 145)",
+      translation: "Country: Buhanga • Language: Luhanga • Native (sing.): Muhanga • Natives (plur.): Bahanga • Rivers & Sites: Nzoia R. (Nzoya), Lusumu R., Lugose R., Viratsi R., Mumias, Matawa, Imanga, Matungo, Khyimuli, Khyira, Bwagwe, Bijifi, Marakalu, Ndangalasya, Lwanda, Mukulu",
+      pronunciation: "bu-ha-nga / lu-ha-nga / mu-ha-nga / ba-ha-nga / ma-tu-ngo / khyi-mu-li",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 143–148 & Map p. 145)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Complete 11-Generation Royal Genealogy of the Bahanga (Bakhitsetse Family) from Kwandedi & Wanga to Mumia, Osundwa II & Rapando (Stam 1929, pp. 143–148)",
+      translation: "Kwandedi (born in Teriki, moved to Khyira in Kabras) → Wanga & Khabiagala (at Bwagwe) • Wanga (served Muyima at Imanga hiding his thick copper bracelet, joined at Bijifi by Bakyero/Bakhyero, Banamagwa & Bakhyikawa clans, built Mumias & Matungo) → Waballa & Murono (→ Kitai at Marakalu near Ndangalasya) • Waballa (sawed horn tips in Bukhayo; sent Wakhalivu of Bakyero to Matawa with 4 arrows) → Muswi ('name of a girl who has not brought forth', slew 4 of Murono's men) → Wamukoya [I] → (1) Netya (fought Abetakho, Babukusu, Wamia, Nilotic Kavirondo & Uasin-Gishu Masai; killed at Lwanda) → Osundwa [I] ('death or victory') → Wamukoya [II] → Khyihundu (allied with rifle-armed Swahili caravan) → Mumia (kraals at Mumias & Jinja, retired 1928), Murunga (N. Kitosh & Wamia), Mulama (Marama), Katima (Samia), Were (Wahola) & Kiteki (→ Osundwa [II], succeeded 1928); and (2) Kweyu (at Khyimuli, fought Abekwe & Abarebe) → Lumbasi → Sakwa → Lutomiya (→ Rapando, chief of Mukulu), Lwambami & Kiwundu",
+      pronunciation: "kwa-nde-di / wa-nga / wa-bal-la / mu-swi / wa-mu-ko-ya / ne-tya / o-su-ndwa / khyi-hu-ndu / mu-mi-a / kwe-yu / ra-pa-ndo",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 143–148)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Paramount Chief / King of the Bahanga (of the royal Bakhitsetse family, nominated & strangled when dying by the Bakyero / Bakhyero clan) (Stam 1929, pp. 146–149)",
+      translation: "mwami / omwami (genitive: ekhyo mwami 'of the chief'; royal dynasty: Bakhitsetse; kingmaking clan who bestow the thick copper bracelet: Bakyero / Bakhyero, headed under Waballa by Wakhalivu)",
+      pronunciation: "mwa-mi / o-mwa-mi / ba-khi-tse-tse / ba-khye-ro / wa-kha-li-vu",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 146–149)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "verbs",
+    entry: {
+      english: "To die / death, to be buried / burial, and grave in Luhanga (Stam 1929, pp. 149, 151)",
+      translation: "okhufwa (death / to die) • okhuyaberwa (burial / to be buried) • ekhyirindwa (grave)",
+      pronunciation: "o-khu-fwa / o-khu-ya-be-rwa / e-khyi-ri-ndwa",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 149, 151)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "To Fix the Grave of the Chief (1–2 Years After Sitting Burial in His Hut, Exhuming & Carrying Bones in a Beerpot to Matungo) (Stam 1929, pp. 148–149)",
+      translation: "okhusenera ekhyirindwa ekhyo mwami ('to fix the grave of the chief': after the chief is strangled by Bakhyero elders and buried naked sitting in a fresh bull's hide in his hut with a beer-sucker in his mouth, 2 reedgrass pieces under his eyelids, and a bottomless beerpot over his head tended by his 1st wife, 1–2 years later his bones are washed with water, polished with butter, placed in a beerpot, and carried in procession to Matungo under the sacred trees)",
+      pronunciation: "o-khu-se-ne-ra e-khyi-ri-ndwa e-khyo mwa-mi",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 148–149)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Commoner Burial Diagram (Fig. 1, p. 150), Pierced Fig-Leaf Ear Rite & Mourning Feasts (Stam 1929, pp. 149–152)",
+      translation: "Fig. 1 Burial Positions: Kraal owner (man) inside middle of hut on right side (hair shaved on right forehead); Woman outside to left of entrance on left side (hair shaved on left); Male child outside under right eaves; Female child outside under left eaves (hair shaved in middle nearest forehead); wild-fig bark-cloth leaf under right ear & pierced leaf over left ear so the dead can hear sacrifices • Feasts: 1. inkokho eyo mukulikho ('chicken of the burial', roasted unplucked), 2. okhuba khu maziga ('the great bewailing', shaving on 3rd day for man / 2nd day for woman, bull killed on 4th day), 3. okhukalusya evigumba ('to return the bones', 2 weeks later by sons-in-law & wives without greeting anyone or looking back on the road), 4. okhusenera ekhyirindwa ('to fasten the grave') & omuyima ('the burial dance', 1 year later)",
+      pronunciation: "i-nko-kho e-yo mu-ku-li-kho / o-khu-ba khu ma-zi-ga / o-khu-ka-lu-sya e-vi-gu-mba / o-khu-se-ne-ra e-khyi-ri-ndwa / o-mu-yi-ma",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 149–152 & Fig. 1 p. 150)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Sacrificer, Sacrifice, Kraal Sacrificial Stones Diagram (Fig. 2, p. 153) & Reversive Verb Rule (-a → -ula) (Stam 1929, pp. 152–156)",
+      translation: "omumali owe misango (sacrificer) • omusango (sacrifice) • okhumala omusango (to sacrifice) • Fig. 2 Layout: 1. amagina ake misambwa ('stones of the ancestral spirits', 2 stones 10 ft in front of 1st wife's hut: right stone 1 × 1.5 ft inherited by eldest son, left stone 4–5 in. inherited by 2nd son) flanking the 4-ft lusambwa / lusiola pole (Markhamia platycalyx, up to 40 ft, cut from the khyemebekho / khyembekho family sacred grove; from obsolete samba 'to build/erect' → reversive sambula 'to break down' by changing -a to -ula), 2. khatsu khe misango ('little hut of the sacrifices', to left of 1st wife's hut, inherited by eldest son), 3. amagina ako lunganyi ('stones on the pathway', 2 flat stones outside kraal gate dedicated to Nasayi / Were) • Offerings: amalwa ake misango (beer), ingombe eye misango (cow / earless bull), inkokho eye misango (chicken), isindu eye misango (quail)",
+      pronunciation: "o-mu-ma-li o-we mi-sa-ngo / a-ma-gi-na a-ke mi-sa-mbwa / lu-sa-mbwa / kha-tsu khe mi-sa-ngo / a-ma-gi-na a-ko lu-nga-nyi",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 152–156 & Fig. 2 p. 153)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "phrases",
+    entry: {
+      english: "Three-Generation Ancestral Sacrificial Invocation: 'Grandfathers, Great-Grandfathers, Great-Great-Grandfathers, Eat Here!' (Stam 1929, p. 155)",
+      translation: "abakuku mulire omu ('grandfathers, eat here') • evinambwa mulire omu ('great-grandfathers, eat here') • evisoni mulire omu ('great-great-grandfathers, eat here')",
+      pronunciation: "a-ba-ku-ku mu-li-re o-mu / e-vi-na-mbwa mu-li-re o-mu / e-vi-so-ni mu-li-re o-mu",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, p. 155)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "The Five Special Sacrifices: Okhutisa Imbusi (4 Domestic/Neighbor Taboos) & Inkokho Eyakulikhirwamwo (In-Law Naming Fowl) (Stam 1929, pp. 156–158)",
+      translation: "1–4. okhutisa imbusi (banging a young goat's head on the ground around the hut while singing, smearing dung on chests, tying wrist skin strips on women/children & thumb covers on men for 2 days, and halving the meat) required when: (1) a beaten wife suffers a skull fracture and flees bleeding into another's hut, (2) a beaten wife tears off her clothes and runs naked into another's hut, (3) a woman's waterpot falls from her head and breaks just past a hut, or (4) a woman carrying a perforated earthenware grass-ash salt filter stops to gossip in a neighbor's hut and lets salty water drip on the floor • 5. inkokho eyakulikhirwamwo ('the chicken by which the child receives its name', holding a live white cock/hen against the center pole and sticking 2 wing feathers in the ground when naming a crying 2-day baby after the father-in-law or mother-in-law)",
+      pronunciation: "o-khu-ti-sa i-mbu-si / i-nko-kho e-ya-ku-li-khi-rwa-mwo",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 156–158)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "phrases",
+    entry: {
+      english: "Supreme Being (Nasayi / Were), Morning Spitting Towards the Sun (Liyuba), Thanksgiving & Farewell Blessing (Stam 1929, pp. 159–162)",
+      translation: "Nasayi ('the one adored', derived from sayo 'to adore') • Were (God, who makes the clouds move and gives life to every child) • liyuba (the sun; morning spitting towards the east & wrestler spitting into opponent's face because spittle = life) • Were ankhonyere ('God has helped me', said after escaping danger, p. 160) • Nasayi akhulinde ('May God protect you', said when bidding goodbye for a long trek, p. 161) • ekhyinekha (immortal human soul / shadow, p. 162) • vikhyeno (evil spirits / departed spirits, p. 162)",
+      pronunciation: "na-sa-yi / we-re / li-yu-ba / we-re a-nkho-nye-re / na-sa-yi a-khu-li-nde / e-khyi-ne-kha / vi-khye-no",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 159–162)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "emergency",
+    entry: {
+      english: "The Six Medical/Magical Practitioners, Two Judicial Ordeals (Ekhyilulu & Skull Ordeal) & 10 Omens (Amayoni Amabi) (Stam 1929, pp. 162–170)",
+      translation: "1. omusebe / musebe / sitani (Masai-grave spirit possession cured by smoking under a blanket & throwing a burning stick on a Masai grave) • 2. balosi, sg. mulosi (night bewitchers carrying coal in a pot & keeping pet pythons/cobras/crocodiles/leopards) • 3. omundu owe misala ('man of the trees', herbalist & wet-cupping horn surgeon) • 4. omundu owe mikalo ('man of charms', hangs banana-bark cattle-plague bundle on kraal pole & puts burnt-wood ash in a hollow reed or wild pig's hollow tooth for court trials) • 5. omufumo (diviner shaking pebbles/millet in a gourd or reading entrails) • 6. omufira (poison-man with poison-pointed walking stick & wild onion; 2-cow cure fee) • Ordeals (ekhyilulu, pp. 167–168): pounded-stick water draught (innocent vomits in 15 min.; thief pays 2 cows, false accuser pays 3 cows) & Skull Ordeal (drinking water from or stepping over a relative's skull) • 10 Omens (amayoni amabi 'bad birds', pp. 169–170): wagtail (Motacilla vidua, visitors), crested crane (grey hair), crow on lusambwa pole (death), night owl on roof (death), rat gnawing hair/clothes, antelope crossing war path, dog howling like hyena or climbing roof (ears cut off on threshold), red ants (wealth), cats pairing by day (death), black field bird on right (lucky) vs. left (unlucky)",
+      pronunciation: "o-mu-se-be / ba-lo-si / o-mu-ndu o-we mi-sa-la / o-mu-ndu o-we mi-ka-lo / o-mu-fu-mo / o-mu-fi-ra / e-khyi-lu-lu / a-ma-yo-ni a-ma-bi",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 162–170)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Foundling Adoption (Makokha), Twins (Amakhwana), Marriage (Okhutekherana), Dowry (Okhukhua Omukhana), Totems (Musiro), Mutilations & Circumcision (Okhukhyebwa) (Stam 1929, pp. 170–179)",
+      translation: "Makokha ('rubbish', roadway foundling adopted with loin-fringe, right-wrist mussel shell, waist bead & ear ring, p. 171) • amakhwana (twins) & okhutsiya khu makwana ('to go to the twins' after 2-month confinement, with Passifloraceae creeper, Trifolium clover, Caesalpiniaceae & sheep-dung sprinkling across 10-mile radius, pp. 172–173) • okhutekherana ('to boil for one another' = to marry, p. 173) • okhukhua omukhana (dowry: 1 young bull + 1 heifer + 8 cows, 3 goats = 1 cow, p. 174) • okhusira imbusi ('to jump over the goat', p. 175) • ingombe yarando ('stripped cow' sent if bride is a virgin, speared by paternal aunt, p. 175) • 8-piece household outfit after 5–6 months with water-throwing & brother's stick-beating rite earning a heifer (pp. 175–176) • musiro ('the thing abstained from': Isaac's antelope Boöcercus eurycerus for all Bahanga, eland in Marama; patrilineal & non-exogamous; women abstain from chickens, guinea fowl, eggs, sheep, suckling goat & lepidosiren mudfish, pp. 176–177) • 4 lower incisors extracted at age ~10, 2 rows of ~25 forehead incisions & 3-stroke cheek mark (\\|/, 1.25 in.) burnt with isambirire grass, saliva & cobwebs (p. 178) • okhukhyebwa (standing circumcision every 2–3 yrs, ages 15–25, by Kakalelwa/Abarebe operators) & irumbi (4–5 month seclusion hut, pp. 178–179)",
+      pronunciation: "ma-ko-kha / a-ma-khwa-na / o-khu-tsi-ya khu ma-kwa-na / o-khu-te-khe-ra-na / o-khu-khu-a o-mu-kha-na / o-khu-si-ra i-mbu-si / i-ngo-mbe ya-ra-ndo / mu-si-ro / i-sa-mbi-ri-re / o-khu-khye-bwa / i-ru-mbi",
+      context: "Rev. N. Stam, The Bahanga, Publications of the Catholic Anthropological Conference Vol. I, No. 4 (1929, pp. 170–179)",
+      audioFile: null,
+    },
+  }
+);
+
+// Complete Gerhard Lindblom (1920) "The Akamba in British East Africa: An Ethnological Monograph" (2nd Ed., Enlarged, Archives d'Études Orientales Vol. 17, Uppsala 1918–1920, pp. I–XII, 1–607, Figs. 1–167) Dictionary Supplement
+if (!JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kamba"]) {
+  JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kamba"] = [];
+}
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kamba"].push(
+  {
+    catId: "culture-history",
+    entry: {
+      english: "The 7 Named Primary Kamba Informants & Custom Formula in Lindblom (1920, pp. 3, 6)",
+      translation: "Custom formula: ni matindu ma andu ala ma tænə ('It is a custom handed down from our fathers', p. 3) • 7 Informants (p. 6): 1. Kioko wa Malata (Machakos), 2. Malata wa Kiambi (father of Kioko, specialist in ŋgondu purifications & cow twin-birth rites, p. 489), 3. Mbonge wa Kithome (ītīma herbal doctor, Machakos, p. 319), 4. Muhindi (respected elder, Machakos), 5. Mbindia / Vindia (mundu muə at Kibwezi, initiated Lindblom into the 3rd nžaīko [mbæβanī] & performed conjuring tricks kīama, pp. 61, 266–268), 6. Makiti (headman at Kibwezi, þaβu case pp. 299–300), 7. Muli (near Ikutha, Atharaka kīþītū rock crevice, pp. 170–171)",
+      pronunciation: "ni ma-ti-ndu ma a-ndu a-la ma te-ne / ki-o-ko wa ma-la-ta / mbi-ndia / ma-ki-ti / mu-li",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Introduction, pp. 3, 6)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "nature",
+    entry: {
+      english: "Ukamba Geography, Toponyms, 4 Divisions/Dialects, 12 Neighbour Ethnonyms & J. Hofmann's 1897–1910 Ikutha Rainfall Table (Lindblom 1920, Ch. I, pp. 9–26 & Addenda pp. 569–574)",
+      translation: "Toponyms (p. 9): Donyo Sabuk = kīma kīa nžaβī ('the nžaβī bean mountain'); Mtoto Andei = mutītu wa ndeī ('the vulture forest'); Mt. Noka = inhabited by hunting Anoka speaking a Kamba dialect (p. 10 fn. 1); 1836 Rabai famine emigrants = atumwa ('slaves') or madīkīlambua ('rain-followers', p. 11) • 4 Divisions & Dialects (pp. 15–17): 1. Ulu / Yulu (kīkamba kīluŋgalu 'real Kikamba', with SW Kīluŋgu calling other Ulu Akamba æβau 'cousins'), 2. East Ukamba / Kitui (aþaisu speaking kīþaisu; cattle-rich ŋgoβə vs. beehive-climbing īkulī 'baboons', p. 16), 3. Kīkumbuliu, 4. Mumonī • 12 Neighbour Ethnonyms (pp. 17–22, 573–574): akīkuyu (Kikuyu), akaβī / akīþoŋgo / alakī ('wild-honey seekers' during raids, p. 289, Masai), andī (Wataita < ndī 'baobab strings'), aþaka (Atharaka), asumba / maþomba ('burden-bearers', Swahili), aswī (Wagiriama, lang. kīswī, country uswīnī), aluluma (Waduruma), ambele (Wambere), atwa (country utwa) / akala (Galla), aŋgoloŋgo (Somali), anoβī (Nubians), asuŋgu / andu atunə ('red people', Europeans); Swahili name for Akamba: Waumanguo / Warimangao; Masai name: el lunghu; Coast Kamba name for Ulu Kamba: nžaβī • Ikutha Rainfall in German zoll (p. 24): 1897 (17.36), 1899 (9.22 — Great Famine īoa īa ŋgalī / muβuŋga), 1902 (29.74), 1903 (21.75), 1904 (32.15), 1905 (24.57), 1906 (38.94), 1907 (26.34), 1908 (16.71), 1909 (21.26), 1910 (20.49)",
+      pronunciation: "ki-ma ki-a nza-vi / mu-ti-tu wa nde-i / u-lu / a-thai-su / ki-ku-mbu-liu / mu-mo-ni / a-ka-vi",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Ch. I pp. 9–26 & Addenda pp. 569–574)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Child-Birth, 4th-Day Īþa Neck-Chain, Turning the Child (Olula Kana), Abnormal Births, Abortion Plants & Menstruation (Lindblom 1920, Ch. II, pp. 29–41)",
+      translation: "Pregnant announcement: naβītanītie mwæī ('I have passed the month', p. 29) • Navel cord: mukautī • Placenta: nsuu / ŋgua īa kana ('the child's dress', p. 31) • Birth charm: nðesīo (< þesīa 'to help') • Premature baby: muīndə (wrapped in a clay pot, p. 31) • Boy-and-girl water rite with wild fig (kīumo) & īkoka grass, even-numbered women's feast (never odd mwa) eating utīndītī (īsīo) & Eleusine porridge (ŋgīma), baby-carrier (ŋgoī), and 4th-day iron neck-chain (īþa, before which infant is kīīmu 'spirit-child', p. 33) • Turning the child (olula kana, p. 34): husband says 'nīnīonīə nðakamə nīnaolulə kana' ('I saw blood, I turned the child') • Abnormal births (pp. 37–38): breech birth (mundu wa kīu / mumo), born with caul (ŋgunīkīlīa), cutting upper teeth first (mundu wa kīumīlo / kīludu), twins (maβaþa) • Abortion substances (p. 39): soot (mwae), kīlīa mbitī (Jatropha), mutanda-mbo, ma-mbumbu (Phytolacca) • Menstruation: mwæŋgə (pp. 39–41) & parental coitus rite kuseuβīa mwītū",
+      pronunciation: "na-vi-ta-ni-tie mwe-i / mu-kau-ti / nsu-u / nthe-sio / mu-i-nde / i-tha / ki-i-mu / o-lu-la ka-na / ma-va-tha",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. II, pp. 29–41)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "The 3 Nžaīko Initiations: 1. Nžaīko Īla Nīnī (Kaβīu), 2. Nžaīko Īla Nænə (Mbusīa; Musaī Sticks Figs. 1–8 & Sand Drawings Figs. 9–16), 3. Nžaīko Īa Aumə (Mbæβanī) (Lindblom 1920, Ch. III, pp. 42–71)",
+      translation: "1. nžaīko īla nīnī / nžaīko īa kaβīu ('with the knife') / nžaīko īekondə (foreskin = īkondə / īkolə; operator = mwaīkī, pp. 42–45) • 2. nžaīko īla nænə / nžaīko īa mbusīa ('of the rhinoceros') / nžaīko īa mbaβī (7 days in þano, pp. 45–60): hut (īβunu in E. Ukamba; kīeŋgo kīa nžaīko / īlwanda in Ulu), novices (asīŋgī, sg. musīŋgī), instructors (aβwīkī, sg. muβwīkī; duty kuta), song-leader (ŋguī), obstacle songs (madīŋgo / mukīamo) & alternating boys'/girls' songs (kīno & kea, pp. 47–50), roaring mbusīa pot blown through mwaeþa tube (kwaþa mbusīa: 'wīkou nī mwana wa ŋganīa', pp. 50–51), miniature bows & bird-arrows (maŋgī of mukulwa / muluīla-mbīa), 80-cm musaī (ukaī) pictographic sticks of muþīwa wood (Figs. 1–8: 1. þomə yard, 2. tortoise, 3. ornamented mumbə stool seat, 4. python, 5. cow's tail, 6–7. stars, 8. millipede, beehive clan-mark, moon & star) & sand drawings (Figs. 9–16: 9. snake, 10. sun with ray legs, 11. 3-legged stool, 12. moon & stars, 13. chain with side links, 14. centipede, 15. cowry belt, 16. narrow-necked calabash), 5th-day wild fig (mumbu) prayer ('kīumbu kī, nītukīə ukuβoīa, utunæŋgə wumbu wa uīkīīa asīŋgī') with uki wa utulīa wumbu & glans cut (muβwa), and 7th-day sham Masai cattle raid pelting ndoŋgu fruits & nžuma dances (extended to ~1 month by anžaunī clan) • 3. nžaīko īa aumə ('circumcision of the men', called mbæβanī in Kikumbuliu / mbaβanī in Kitui & Mumoni, pp. 60–68): 10-cow fine or death for revealing secrets, V-angled mbæβanī pipes of kīusīa wood bound with mwaþa fibre & smeared with muīo, 4 rank fires (asīŋgī, ŋgala, aβwīkī, nžama), ordeal tests by the ŋgala (sucking sand, swallowing excrement crying 'aah!', pulling ground peg with teeth squatting handless, gauntlet, wood-tied erection & water-pit copulation), 4 Kikumbuliu secret twig/path recognition signs (p. 67), forehead shaving ('nītænzīə asīŋgī') & rebirth (kusīawa)",
+      pronunciation: "nzai-ko i-la ni-ni / nzai-ko i-a mbu-sia / mu-sai / a-si-ngi / a-vwi-ki / mbe-va-ni / nga-la",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. III, pp. 42–71 & Figs. 1–16)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Marriage (Kwasīa / Kuþoa Mwītū), Bride-Price, Kuþoka (Nðokī), Kudīta & 26-Family Machakos Demographic Table (Lindblom 1920, Ch. IV, pp. 72–88)",
+      translation: "To woo / buy a girl: kwasīa / kuþoa mwītū • Proposal goats: mbuī sīa nðeo • Beer gifts: kuβīkīla uki waβīkīla mbuī & uki wa uþambīa nžælə • Slaughter buck: ndæŋgə īa kwītīa mbuī nðakamə nðī • Bride-price: 2 cows + 2 bulls/oxen + 40–50 goats (in tsetse Kikumbuliu 60–100 goats; 1 goat/sheep = 5–6 Rs., ox/bull = 20–25 Rs., cow = 60+ Rs.; cattle called kīīŋgo 'pot splinter') • Mother-in-law food gifts: kuþoka (child born during gifts named nðokī, p. 75) • Bride's weeping songs: mbaþī sīa maīo • Mother-in-law goat: mbuī īa kwona kana • Barren woman: ŋguŋguu • Impotent man: ndæwa • Tally stick: kīka kīa kutala mbuī • Hospitality wife-lending: kudīta (p. 82) • Sole full-brother: kīmwæmwə • Chief wife: kīβætī kīnænə / kīku • Widow: muka wa ndīwa & purification kuseuβīa kīβætī • 26-Family Statistics in Machakos (p. 87): 26 fathers, 52 wives, 100 living boys, 70 living girls, 61 dead children",
+      pronunciation: "kwa-sia / ku-tho-a mwi-tu / mbui sia nthe-o / ku-tho-ka / ntho-ki / ngung-guu / ku-di-ta / ki-ve-ti",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. IV, pp. 72–88)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Nðonī In-Law Avoidance, Ua Nðonī / Ua Ŋgeano, All 11 Kwiūa Name-Taboo Pairs & All 7 Women's Language Words (Lindblom 1920, Ch. V pp. 89–98 & Addenda p. 574)",
+      translation: "In-law: muþonī (pl. aþonī; mutual greeting 'muþonwa!') • Buying fire: þoa mwakī • Kisese's 'killing nðonī' feast: ua nðonī (ox + goats, p. 91) • Ending brother-in-law avoidance: ua ŋgeano (< leana, p. 92) • All 11 Kwiūa Name-Taboo Substitution Pairs (pp. 93–94): 1. kīoko → unī (to-morrow), 2. kīlonžo → ŋguaīa (noise), 3. īlondu → ŋgondu (sheep), 4. nžukī → ndoŋgoŋgī (bee), 5. nžoka → niamu īa ndī / īkūū (snake), 6. wa mbua → nduþu (of rain), 7. ŋgomo → ndæwa (chisel), 8. mbesa → īβulī (ear-ring for pice coin), 9. -æu / nžaū → ndeuβu (white/clean), 10. þomə → īβuβeonī / muumaloni (kraal sitting-place), 11. mwatū → mwaŋgo (beehive), plus ītwīku → wīīuka (ravine) & mwæī → musesīa nðī (moon) • All 7 Women's Vocabulary Words (Addenda p. 574): 1. mbunu for mbaīkī (castor-oil seeds), 2. kīβwū for manžī (water), 3. kīseβə for ŋgutanī (wind), 4. kusonolīa for kwīwīa nðonī (to be ashamed), 5. īŋa / īsuma mīīo ('which seeks the sweet potato peels') for īlondu (sheep), 6. mbuþæŋgə for ŋgū (firewood), 7. ukatī ('horn') for uŋuþu (clitoris)",
+      pronunciation: "ntho-ni / mu-tho-nwa / u-a ntho-ni / kwi-u-a / u-ni / ngu-ai-a / ngo-ndu / ndo-ngo-ngi / mbu-nu / ki-vwu",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. V pp. 89–98 & Addenda p. 574)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Complete Kamba Kinship Terminology, Ŋga- Bride Prefix & Sīo- Teknonym Prefix (Lindblom 1920, Ch. VI, pp. 99–102)",
+      translation: "Father: naū / tata / asa (thy father: au; his father: īþə) • Mother: mwaitū / inīa / nīa / nana / mukwə (thy mother: mwænīu) • Full brother/sister: mwanaaīa (half-sibling: mwanaasa / mwanaæþə; full sister: mwītūīaīa; half-sister: mwītūī-asa) • Elder brother/sister: mukuwa / mukuu / mukuə (eldest: īkīþoβī; youngest: īlumaita) • Younger brother/sister: mwīnawa / mwīnau / mwīnaə (dim. kalīnawa) • Husband: mwīmæwa / mutumīa wakwa • Wife: muka wakwa / kīβætī kīakwa / kīwandu kīakwa • Grandfather: umau • Grandmother: susu / usū • Grandchild: nžukulu / musukua • Paternal uncle: mwændwasa / mwændwau / mwændwīþə • Maternal uncle: mama / mwīβau / īnaīmu / īnaumə • Maternal aunt: mwændīa / mwændwa-mukwə • Cousin: mwīβawa / mwīβau • Co-parents-in-law: sīīawa / sīīau • Younger sister-in-law: mwamwa / mwamu / mwamwə • Husband's elder sibling: ukulu / asa munīnī • Young childless bride prefix: ŋga- (e.g. ŋga-kīoko) • Mother teknonym prefix: sīo- (e.g. sīo-mulī 'Muli's mother')",
+      pronunciation: "na-u / ta-ta / a-sa / mwai-tu / mwa-na-ai-a / mu-ku-wa / mwi-na-wa / u-ma-u / su-su / ma-ma / sio-mu-li",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. VI, pp. 99–102)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Death, Right/Left Flexed Burial (Kwoko kwa Aumə vs. Aka), Βululīlīa, Mbea Death-Hut & Mutumīa wa Makwa / Uku Purification (Lindblom 1920, Ch. VII, pp. 103–110)",
+      translation: "Man buried flexed on right side: kwoko kwa aumə ('men's hand', head facing E/NE) • Woman buried flexed on left side: kwoko kwa aka ('women's hand') • Paternal grandson turns first sod (βululīlīa, rewarded with a cow, p. 104) • Deserted death-hut: mbea • Knocking out 2 lower middle incisors of dead young child lest next child die (p. 106) • Purification by mutumīa wa makwa / mutumīa wa uku using goat stomach chyme (muīo from the kīþatīa / kīþīlīko stomach) mixed with ŋgondu herbs, widow purification coitus (kuseuβīa kīβætī), and burying a proxy corpse-stick for an absent family member (p. 109)",
+      pronunciation: "kwo-ko kwa au-me / kwo-ko kwa a-ka / vu-lu-li-lia / mbe-a / mu-tu-mia wa ma-kwa / mu-i-o / ki-tha-tia",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part I, Ch. VII, pp. 103–110)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "All 25+ Kamba Clans (Mbaī), Totems (Niamu), Taboos, Cattle Brands (Kīo, Figs. 17–22), Arrow Marks (Uβano, Figs. 23–38) & Beehive Marks (Figs. 39–51) (Lindblom 1920, Ch. VIII, pp. 113–142)",
+      translation: "Clan: mbaī (collective prefix mba-; totem question: 'niamu īaku nī īaū?' 'What is your animal?', p. 116) • 23 Machakos Clans & Sub-Clans (pp. 136–137): 1. aiīenī, 2. anžaunī (jackal mbīwa; beautiful but unlucky brides, p. 124), 3. anžīu (drongo kīndalī; congenital evil eye kīænī neutralized by spitting, p. 123), 4. awinī (hyena mbitī), 5. æombə (mba-maī & mba-mululu; monkey ŋgīma), 6. akīþumbə / akīmiī (bushbuck nðwaīa; women forbidden to make pottery, p. 124), 7. aþaŋga / æþaŋga (iron sand kīlea), 8. ætaŋgwa (mba-mulela/ŋguŋguu, mba-katætī, mba-muþækə, mba-mukuβa; baboon ŋgulī/īlaī & hawk mbulusīa), 9. asī & 10. amuī (lion munīambu; never eat or touch liver ītema; heal burns by chewing musu leaves on an empty stomach, pp. 118, 124), 11. akītutu (hawk mbulusīa), 12. atwī (smiths), 13. amwīī / amwæī (moon mwæī; never sweep refuse out of hut on last day of month, p. 124), 14. akītondo (mba-mbulī & mba-nðīmba; crow ŋguŋguu), 15. amumonī (wild fig mumo), 16. ambua (rain mbua), 17. akītuo (shoulder kītuo), 18. æwanī (leopard ŋgo), 19. amunda (mba-muīeþīa & mba-nžalu; leopard ŋgo), 20. amutī, 21. amutæī (secretary bird nðeī; 1-hole beehive mark, p. 494 fn. 1), 22. aæī / mba-mulata-īβīa / mba-kīīmu / mba-anžīkwa (descended from first couple cast down on Mt. Nzaui; forbidden to swing a child in one's arms lest it rise into the air and vanish, p. 125), 23. anðunðu (porcupine nžæ & bat uβuβu) • Kikumbuliu, Ikutha, Kitui & Mumoni Clans (p. 138): amwīlu, anžī, awīlī, mba-mule-ītema, mba-kītuku, mba-ŋgo, aŋgokī, kana/aæī (green parrot ŋgwæī) • Clan Marks (pp. 129–135): cattle brands (kīo < oa, Figs. 17–22), arrow marks (uβano, Figs. 23–38), beehive marks (Figs. 39–51) • Blood-brotherhood & breast-sucking asylum (pp. 140–142)",
+      pronunciation: "mba-i / nia-mu ia-ku ni ia-u / a-nzau-ni / a-nzi-u / ki-e-ni / e-ta-ngwa / a-si / a-mu-i / ki-o / u-va-no",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part II, Ch. VIII, pp. 113–142 & Figs. 17–51)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Age-Grades, The 5 Meat-Sharing Promotions of Atumīa (Kukula / Kukusa), Kīsuka Police Club & Chief Kivui (Lindblom 1920, Chs. IX–X, pp. 143–151)",
+      translation: "Life-stages: kana → kaβīsī → kīβīsī → mwanakə → nðælə → mutumīa (carrying round stool mumbə) → atumīa ma nžama / atumīa ma īþæmbo (carrying forked staff maka; female īβætī sīa īþæmbo) • The 5 Meat-Sharing Promotion Fees (kukula / kukusa, pp. 144–145): 1. 1 goat = mutumīa wa mutwə (right to eat goat's head), 2. 1st bull = lower leg of cattle, 3. 2nd bull = upper leg, 4. 3rd bull = loins & brisket, 5. 4th bull = hump (kīaə), 6. 5th bull = cattle tongue & head (all parts) • Executive police club in Ulu: kīsuka (pp. 146, 153) • Age-grade: īīka / ndukə (p. 147) • Celebrated Kitui leader: Kivui (met Krapf in 1849, p. 149)",
+      pronunciation: "ka-vi-si / ki-vi-si / mwa-na-ke / nthe-le / mu-tu-mia wa mu-twe / ku-ku-la / ki-a-e / ki-su-ka / ki-vu-i",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part II, Chs. IX–X, pp. 143–151)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "emergency",
+    entry: {
+      english: "Customary Law (Nsīlī), Homicide Blood-Money (Ŋgombə īa Ndulota & Wumo), Kīþītū (Fig. 52) & Ndundu Oaths, All 6 Ordeals, Kīŋgolə Lynch-Law & All 4 Curses (Kīumo) (Lindblom 1920, Ch. XI, pp. 152–185)",
+      translation: "Lawsuit: nžwanī (undecided case: 'nžwanī yanīwa manžī' 'the case drank water', p. 152; to judge: sīla / sīlīla) • Homicide Blood-Money (pp. 154–156): Man in Ulu = 11 cows + 1 bull (10 cows to kin + 11th cow ŋgombə īa ndulota 'cow of the broken bow' to chief widow; 1st cow paid by killer himself = ŋgombə īa wumo; in Kitui = 13 cows + 1 bull); Woman in Ulu = 4–5 cows + 1 bull (in Kitui = 7 cows + 1 bull) • Bodily Injury Fines (p. 156): 1 finger = 1 goat to 1 bull; 2 fingers = 1 bull; 1 eye = 1 bull + 1 goat; 1 arm = 1 cow + 1 bull; 1 leg = 5 cows; both legs = ~8 cows; plus post-mortem autopsy (p. 157), honey-theft fine (1 bull + 5 goats, doubled/trebled, p. 160), boycotted outcast mukoə ('saliva', p. 161), and land fence goat mbuī īa maþanzū (p. 164) • Kīþītū (muma, Fig. 52 p. 166) placed on 3 stones with mwæa twigs while swearer stands naked on 7 stones striking it with a mukulwa twig (kuna / kuīa kīþītū: 'mukancæŋga ŋgombə īmwə; nīkīsīoka kwænda īngī ītīna, ŋgaīwa nī kīu!', p. 169; carried with mutton-fat hands by musænzælī bast and purified with kīluŋgu sap) vs. Relative Oath ndundu (bull gall-bladder pierced with mwæa thorn, p. 172) • All 6 Ordeals (pp. 173–176): (A) kīþītū kīa kīβīu (licking red-hot knife: 'æþwa nīnīosetə mbuī īa ŋganīa, kīβīu mbīβīe!'), (B) red-hot needle through lower lip, (C) kīuma (2 china beads in eyes), (D) ŋgunīko (wax-plugged water calabash spurting through straw), (E) mbæŋgolo bark poison draught, (F) jumping over burning basket • Kīŋgolə Lynch-Law (pp. 176–180, case of Kaβuβa) • Women's Collective Drum Intervention (kīþæmbə, pp. 180–182) • All 4 Curses (kīumo, pp. 182–185): (A) father urinating on red-hot kīo branding iron toward setting sun (revoked by milk+Eleusine blessing kīaþīmo), (B) mother burning grain or splashing water from ndamī loin-cloth, (D) youths' dance-boycott curse striking a red china bead (kīto) against a girl with ŋgulu ('self-will')",
+      pronunciation: "nsi-li / nzwa-ni / ngo-mbe ia ndu-lo-ta / ngo-mbe ia wu-mo / ki-thi-tu / ndu-ndu / ki-ngo-le / ki-u-mo / ki-a-thi-mo",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part II, Ch. XI, pp. 152–185 & Fig. 52)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Kamba Warfare: 3 Tactical Divisions (Muena, Ŋgīla, Īta), Ŋgulī War-Flute (Fig. 53), Wea Frame (Fig. 54), Tula Mbaŋga & Mutīætumo Slayer Honours (Lindblom 1920, Ch. XII, pp. 186–205)",
+      translation: "War leaders: asīlīlī • Spies: aþīanī (putting soporific medicine in enemy fire; Masai ol umigumi = Kamba muβa, p. 205) • 3 Tactical Divisions (pp. 191–195): 1. muena (50% anakə + 50% nðælə best archers surrounding Masai warriors' kraal mbīlī), 2. ŋgīla (seizing cattle), 3. īta (driving booty away) • Thomson's gazelle horn war-flute: ŋgulī (Fig. 53, blowing 'aka-βī, aka-βī, mæ-kuka, mæ-kuka!' 'The Masai are coming!', p. 192) • Zebra-mane chest frame: wea (Fig. 54 p. 194) • Fallen warriors are never buried (lest another die, p. 195) • Purifying captured weapons (matuso): tula mbaŋga ('break the peril', shooting a wooden arrow at the captured spear, p. 197) • Slayer Titles (pp. 198–200): mutīætumo (took Masai spear), mutīota (bow), mutīoβīu (sword), mutīaŋgua (dress), mutīaþīaka (quiver), mutīando (scabbard), wearing split ox-skin finger strip ukwalo (pl. ŋgwalə), marching in kwaŋga victory procession greeted by women's 'līlī, līlī, līlī!' trills while parents perform 'nītusæuβīə uta wa mwana'",
+      pronunciation: "a-si-li-li / a-thia-ni / mu-e-na / ngi-la / i-ta / ngu-li / we-a / tu-la mba-nga / mu-ti-e-tu-mo / u-kwa-lo / kwa-nga",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part II, Ch. XII, pp. 186–205 & Figs. 53–54)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Kamba Religion: Soul (Kīu) vs. Breath (Þaīu), Aīmu Spirits, Īþæmbo Groves (Figs. 55–56), Kīlumi & Kīesu (Figs. 57–58), and Muluŋgu / Ŋgaī = Mumbī & Mwatwaŋgagī (Lindblom 1920, Ch. XIII, pp. 209–253)",
+      translation: "Soul/shadow: kīu vs. physical breath/life: þaīu / mīæβa • Ancestral spirits: aīmu (sg. īīmu, dwelling underground or on Mt. Kyumbe, Kivauni, Muutha, Nengia, Nsambani & Kilui's Pond; elephant = spirits' cattle, tortoise = spirits' grindstone, praying mantis = mwaŋgī wa aīmu / muŋgaīmu 'spirit's snuff-box', spider's web = woman spirit's kīondo, p. 213) • Sacrifices (kīþaŋgona: 14 pieces of meat, or 7+7 with guest, p. 218) at sacred fig/baobab groves (īþæmbo, Figs. 55–56, with atumīa ma īþæmbo, anakə ma īþæmbo / atumīa anīnī, and īβætī sīa īþæmbo initiated at the mboka ripened-banana festival, p. 221) • Foreign spirits & exorcism (pp. 229–240): mbæβo, kīsulīa (cured with maβuo & 3 belly feathers), kīlumi dance (Figs. 57–58, with kīutu woodpecker-hole woodflour), and the 1906–1908 kīesu pith-helmet epidemic • Supreme Creator: Muluŋgu / Ŋgaī = Mumbī ('the Fashioner/Potter') & Mwatwaŋgagī ('the Cleaver' who shapes fingers & toes, p. 244; calabash Fig. 59 p. 251; verbatim child-birth prayer 'mumbī, we umbīə mwana uyu...' & rain prayer pp. 244–245) • 2 Myths (pp. 252–253): Creation from termite hole (muþumbīnī) & Mt. Nsaue, and Chameleon vs. Weaver-Bird origin of death",
+      pronunciation: "ki-u / thai-u / ai-mu / i-the-mbo / ki-tha-ngo-na / mbo-ka / ki-lu-mi / ki-e-su / mu-lu-ngu / mu-mbi / mwa-twa-nga-gi",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part III, Ch. XIII, pp. 209–253 & Figs. 55–59)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "emergency",
+    entry: {
+      english: "Medicine-Men (Mundu Muə vs. Ītīma vs. Mundu Mwoī), Divination (Kuausīa, Fig. 60), Unīka / Mwītano Epidemic Arch, Kūtīea Name Magic, Ŋgomakomī (6 Directions), 17 Ŋgondu Substances & Snake-Charmers (Lindblom 1920, Chs. XIV–XVI, pp. 254–333)",
+      translation: "Diviner/healer: mundu muə (born with peg, 5 stones, or red mbuu seeds) vs. herbalist ītīma vs. sorcerer mundu mwoī (witchcraft woī; anti-witchcraft drink makīo sold by Mutune wa Taula of Nzaui, p. 283) • Divination (kuausīa, Fig. 60 p. 260): wire musical bow (uta) + kītītī gourd shaking out mbu pebbles/seeds onto leopard skin • Herbal medicine (mutī) vs. magical medicine (muþæa, activated by ritual key kīþīao < þīaa, p. 270) • Epidemic expulsion (kwīndukīa uwau, pp. 271–275): passing through the unīka banana/post arch with musoka garlands, mutaa sprinkling, munaβu whip, and 7-day right-instep goat-skin strip (mwītano: 'mwænə mwīmu, osa nusu!'), or offerings on Mt. Mutitu to one-legged spirit Mwītualalī & rainbow-serpent mukuŋga-mbua (rainbow utaþī) • Women's ŋgolano rain march to Ngunu (p. 277) • 9 Amulets (kīþītū / mbīŋgu, pp. 285–288) • Name Magic (kūtīea, pp. 288–290): elephants called nde ŋgu ('old poles'), mbonda malīa, wata, maβīa ('stones'); hippo = ŋgwaūlə; rain = Ŋgaī; honey-jar = kīnaþī; carrion = maþaŋgo ('dry leaves') • Omens (muþana musæo / muþuku, pp. 291–295): twitching (kīoīo), sneezing (kwaþīmwa → 'kula mwana wa ŋganīa!'), and red-headed woodpecker (ŋgomakomī, 6 directions: front mīsīa, behind ŋguŋguo, high right īna, low right βwaþī wa aumə, high left womu, low left βwaþī wa aka, p. 294) • 17 Ŋgondu Purification Substances (pp. 295–303): goat stomach chyme (muīo from kīþatīa / kīþīlīko) or rock hyrax (kīgond / kīkīla, called īlondū when snared), mutaa, mulīndītī, kīoŋgwa, mukunda mbuī, mulalə, etc., curing þaβu (-kuþunūa) & makwa (Kesungu of Kilungu taught by Siomuteti, p. 302) • Snake-Charmers Kimia of Ikutha & Kivuvu inoculating βīnīa ('power', Fig. 62 pp. 303–306) • Odd numbers taboo (mwa, especially 7, pp. 306–310) • Surgery & 45+ Medicinal Plants (pp. 311–320: uvula kalīmə excision with giraffe hairs, thorn suturing, kīaþī) & Botany/Zoology (pp. 321–333: gerenuk kawīla īma, road-rat katīwa nī nžīa, hornbill īlumī, hammerkop ŋgunə, oxpecker ndīæī, house-snake sīomeluka / kīænda ndæto, giant snake īaīa, Solanum snake ŋguluku, blindworm kīþī)",
+      pronunciation: "mu-ndu mu-e / i-ti-ma / mu-ndu mwo-i / ku-au-sia / mu-the-a / ki-thi-ao / u-ni-ka / mwi-ta-no / ku-tie-a / ngo-ndu / tha-vu",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part III, Chs. XIV–XVI, pp. 254–333 & Figs. 60–62)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "time",
+    entry: {
+      english: "Kamba Cosmology, All 9 Named Historical Famines (Īoa, 1836–1909), All 3 Variants of the 11-Month Calendar & Compass Points (Lindblom 1920, Chs. XVII–XIX, pp. 334–354)",
+      translation: "Cosmology (pp. 334–338, Fig. 63): hail (maβīa), clouds (matu), fog (mumbī), rainbow (utaþī), lightning (utīsī), thunder (kītandalīkī / kītundumu), stars (ndata), evening star (ŋgæmandī), morning star (kithioi), comet (ndata īa kīsīþə / ndata īa īoa), rock crystal (maβīa ma ndata), solar eclipse (sīua īaþotə muþæna), lunar halo (kīβuīo), male vs. female moon (ndamba vs. muka, Fig. 63), solar horizon observatory (kīsūæsīo kīa sīua, p. 338), cricket night-watch (ŋgīlī) & Crinum flower (īla mwaka) • All 9 Historical Famines (īoa, pp. 339–340): 1. īoa īa malakwə (1908–09, beans), 2. īoa īa muβuŋga / ŋgalī (1898–99, rice / Uganda Railway), 3. īoa īa ndata (~1888, comet), 4. īoa īa ŋgætīsīə (bleeding cattle), 5. īoa īa uβoə (binding), 6. īoa īa kīasa (long drought), 7. īoa īoŋgela (double famine), 8. īoa īa īta (~1850, python famine), 9. īoa īa kudīkīla mbua (~1836, rain-following famine) • 4 Seasons & 3 Lists of the 11-Month Calendar (pp. 340–342): Year = mwaka (mbua īa uwa Mar.–June, nundu July–Aug., þano Sept.–Oct., mbua īa ndoa Nov.–Dec.); List I (Muutha): 1. mwa, 2. wīu, 3. mweu, 4. tulīa, 5. þanu wa mbēe, 6. wa mwonža, 7. wa nīanīa, 8. wa kænda, 9. wa īkumi, 10. muβīu, 11. oŋgonono; List II (Machakos): 1. kaīa, 2. wīu, 3. mweu, 4. wa katano, 5. wa þandatu, 6. wa mwonža, 7. wa nīanīa, 8. wa kænda, 9. wa īkumi, 10. muβīu, 11. wīŋgonono; List III: 1. mwa, 2. wīma, 3. mwanža, 4. mweu, 5. wa katano, 6. wa þandatu, 7. wa mwonža, 8. wa nīanīa, 9. wa kænda, 10. wa īkumi, 11. wīŋgonono • Compass & Travel (pp. 343–354): East = (m)uīnīlo wa sīua, West = uþuīlo / ndīwīlo wa sīua, horizon = kītulīa kīa ītu, first-time traveler = muþo (sucks bow-tip before drinking river water, p. 347), and origin myth of the 3 brothers Mukaβī, Mukīkuyu & Mukamba (pp. 353–354)",
+      pronunciation: "ki-su-e-sio kia si-u-a / i-o-a ia ŋga-li / i-o-a ia ku-di-ki-la mbu-a / mwa / kai-a / wi-u / mwe-u / o-ngo-no-no",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part III, Chs. XVII–XIX, pp. 334–354 & Fig. 63)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Decorative Art, Dress (Ua, Muþīta, Kīmæŋgo), Ornaments, Teeth-Chipping (Kuseuβīa Maīo & Bone False Teeth), 11 Musical Instruments, Dances & Games (Lindblom 1920, Chs. XX–XXIII, pp. 355–428, Figs. 64–120)",
+      translation: "Carved calabashes (Figs. 64–71, sīo-manðala crab Fig. 69b), painted drums (Figs. 72–73), wooden youth statue & staff (Figs. 74–75), wire-inlaid elder's stool (mumbə, Fig. 76) • Dress & Ornaments (pp. 371–389, Figs. 77–92): skin dress (ua stretched on kīβao frame), bifurcated rear leather tail (muþīta, Fig. 77; older īseso), girl's beaded katuŋgə & 700-cylinder 4.5-lb brass apron (kīmæŋgo of nžalī cylinders, Fig. 78), cotton ndamī, sandals (īatu), sitting leather (kīdīþə), bead belt (kīβīna of blue kītætī), wire spirals (mulīa / ndīīa), cowries (ŋgūu), white neck-ring (īmīlī / īdatī), collar (ŋgala / īsoa) with Conus disc (kīβuo), iron-chain collar (ŋgunī, Fig. 79), metal beads (ndekə, Fig. 80), elder's ukumū (Figs. 81–82), fragrant kīulu & kīþua grass-root necklets (Fig. 83), Job's tears (ŋgaīə), metal armlets (kītaŋga / kīlaŋga, Figs. 84–87), upper-arm beadwork (īambə), elephant ivory/hind-foot armlets (ukoþo / ŋgoþo, Fig. 88), ear-rings (īβulī, Figs. 89–92; peg kīkulu) & finger-rings (ŋgomo) • Hair, Cicatrization & Teeth-Chipping (pp. 387–397, Figs. 93–108): hairstyles (mutīundū, kīþuku), razor (wænzī), whetstone (īno), tweezers (ŋgosə & ŋgola, Figs. 93–95), kīutu perfume & pigments (mbu red ochre, ndo red earth, īea white chalk, īkaŋga yellow pollen), cicatrization (ndə īa kaβīu / mukuβa & ndækaþo, Figs. 96–103), and Teeth-Chipping (kuseuβīa maīo, Figs. 104–108: 6–8 teeth in Ulu, 4 in Kitui, 2 in E. Ukamba) with ŋæsa chisel, hartebeest/goat-bone false teeth pegged into roots with an awl (mukuβa), removal of 2 lower incisors (kwīβa), and 2 dental riddles (p. 397) • 11 Musical Instruments & Dances (pp. 398–417, Figs. 109–116): 4 drums (mbalīa / ŋguþa Fig. 109, kīþæmbə, ŋgoma, spool-shaped kīa / muβuŋgu Fig. 110), wire musical bow (uta, Fig. 111), bowed fiddle (mbæβə < Arabic rebab, Fig. 112, played by blind bard Kieti of Ikutha, p. 416), kudu/oryx horns, war-flute (ŋgulī), 4-hole flute (mutulælə), 1-m calabash trumpet (so, pl. maso, Fig. 113), boys' reed clarionet (nžumalī, Fig. 114), double Ricinus pipe (ŋgulī); dances (waþī, leader ŋguī, ground kītuto): cheek-rubbing mbalīa (Figs. 115–116), musīa (with leg bells kīambə), kīlamu, Kitui stilt dance, īβūulu, kīlumī, ŋgoma, mbæβo, kīesu, nžuma (tail mwīŋgu) • Toys & Games (īþau, kuþauka, pp. 418–428, Figs. 117–120): musīlī rattle, stalk/clay dolls (Figs. 117–118), whip-top (nðælælī, Fig. 119), hoop (ndīa), calabash wheel (kīsæŋgæla kīa kīku), sling (kīkuþa, Fig. 120), river-crossing riddle game (mutumīa aβota / alīsa, p. 425), 10-word counting-out rhyme ('tali, talita... mwitango', p. 426), and kīūīśī (mancala board game with ŋgaīə seeds, pp. 427–428)",
+      pronunciation: "mu-thi-ta / ki-me-ngo / ku-se-u-via mai-o / nge-sa / mba-lia / ki-a / mbe-ve / so / nzu-ma-li / ki-u-i-si",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part IV, Chs. XX–XXIII, pp. 355–428 & Figs. 64–120)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "home",
+    entry: {
+      english: "Village (Musīə), 13-Part Hut Floor Plan (Nyumba, Fig. 125), 20-Sec Fire-Drilling (Ulīndī & Kīka, Fig. 126), Archery, Īβaī Poison & All 7 Traps (Lindblom 1920, Chs. XXIV–XXVI, pp. 431–474, Figs. 121–138)",
+      translation: "Village (musīə, Figs. 121–124): thorn fence (maþanzū), narrow entrance (muβīa), hanging-pole gate (Fig. 124), outside men's council tree (þomə, headed by mutumīa wa þomə), raised storehouse (īkumbī / kītsumba), refuse heap (utunda, pl. ndundə) • 13-Part Beehive Hut Plan (nyumba, Fig. 125 p. 438): center post (kītuə), rafters (ŋgetī), basketwork partition (ututu), inner sleeping room (we), elastic stick bed (mwau, pl. mīau), wood store (kībæta), 3 hearthstones (maβīa), mother's bed, children's beds, sheep/goat pen, calves' place, poultry perch & grinding stone; 'wife's bow' = kīondo hung with husband's bow when building; 20-second fire-drilling with male drill (ulīndī) & female hearth (kīka, Fig. 126 p. 440); baby skin carrier (ŋgoī); boys' spit challenge ('twīla mata, mβalaīnə!', p. 448) • Weapons (pp. 449–464, Figs. 127–133): bow (uta: upper tip mbīa īa muþīa, lower tip mbīa īa ītīna, sinew string ua), arrows (musīə: notch mbalīo, wooden foreshaft uþunžī, iron head vīano, unfeathered shaft muluka, Fig. 127; weight 21.8 g / 19 g), arrow-poison (īβaī from muβaī Acocanthera + kīlīa mbitī, kalamba, kīþūī, spider mbua-mbuī, applied with spatula kīβalū, Fig. 128), bird arrows (īaŋgī, pl. maŋgī, with ndaī & nžæþo cross-pegs, Fig. 129), quiver (þīaka) & ostrich-plume kītuku (Fig. 130), sword (uβīu, sheath ndo, Fig. 131), dance stick (nžuma / ndata, Fig. 132), and leather-encased quartz-ball club (Fig. 133) • Elephant hunting party (nžīma / uīma < kusīma; novices forbidden to eat uβulīo or īþə or see uncut tail/trunk/dugs, pp. 465–469) & All 7 Traps (pp. 469–474, Figs. 134–138): 1. kīambu (falling poisoned elephant spear), 2. īkæŋgə (falling log trap, Fig. 134), 3. live-hen pit noose, 4. mukwa & ndīndīlīo (bent-pole running nooses, Figs. 135–136), 5. īkæŋgə (arched bird-snare, Fig. 137), 6. stone-slab drop trap, 7. kītatī / kīsuŋgula (hollow wooden mole trap, Fig. 138), plus wild-fig bird-lime (ulæmbwa / læmbwa, p. 579)",
+      pronunciation: "mu-si-e / tho-me / ki-tu-e / u-tu-tu / mwa-u / u-li-ndi / ki-ka / mu-si-e / i-va-i / ki-a-mbu / i-ke-nge",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part V, Chs. XXIV–XXVI, pp. 431–474 & Figs. 121–138)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "animals",
+    entry: {
+      english: "All 28 Kamba Livestock & Domestic Animal Terms, 6 Cow Names, Malata's Twin-Calf Rite, Cattle Diseases & Mwatu Beekeeping (Lindblom 1920, Chs. XXVII–XXVIII, pp. 475–500, Figs. 139–142)",
+      translation: "Cattle-post: kīeŋgo • Taming fierce cattle with night-jar (īawə) ash: kuβoβīa • Crook: mboloī • Cow-bell: mbuī • Castration: kuβakua (cattle) vs. kutua (sheep/goats) • Cattle-bleeding blunt arrow: ndīa (Figs. 139–140) • All 28 Livestock Terms (pp. 486–487): ŋgombə (ox/cattle), nžau (bull), ndæwa (castrated ox), morī / mwætī (heifer), kīlætī (older heifer), nžao (calf), kīluu (male calf), ītaŋgwa (first-born calf); mbuī (goat), nðæŋgə (he-goat), ntīa (castrated buck), mbuī īa mwatī (young she-goat), mbuī īa kīlætī (older she-goat), katæna (kid); īlondu (sheep), ndūmə (ram), ndūlū (wether), mwatī (young ewe), kīlætī (older ewe), kæna ka īlondu (lamb); īŋgoī (donkey); sululu / ŋgitī (dog); mbaka (cat); ŋguku (fowl), nžamba (cock), mwæla (young hen), kīswī (chick), īkī (egg) • 6 Cow Names (p. 487): mwaī (white), mbæa (hornless), mbaīa, nžīu (black), nðunə (red), mbuu (spotted) • Malata wa Kyambi's beehive-passage rite for twin calves (pp. 489–490) • Cattle diseases: ŋgaī, kīo kīa maβuī (lung brand, Fig. 141), muŋgutu / muþunī, īkænə, ndelu, nžamba (leeches) • Beekeeping (mwatu, pp. 494–500): lid mbæŋgæo / mbalaa, hook mboloī, taming bees (kuβoβīa) with molo lizard & mutton, honey bag (Fig. 142), container kīþæmbə, wax mawa, harvesting kutwa vs. wild-honey hunting kulaīa, telling bees of owner's death (p. 499)",
+      pronunciation: "ki-e-ngo / ku-vo-via / ndia / ngo-mbe / nzau / nde-wa / mo-ri / mbu-i / nthe-nge / i-lo-ndu / mwa-tu / ku-twa",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Part V, Chs. XXVII–XXVIII, pp. 475–500 & Figs. 139–142)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "food",
+    entry: {
+      english: "Agriculture, Dishes (Īsīo, Usu, Ŋgīma), Beer Brewing (Ukī), Ironworking, Munīo S-Link Chains (Figs. 156–161), Kīondə/Nduŋgū Bags, Rabai Text & Addenda Color/Market Lexicon (Lindblom 1920, Chs. XXIX–XXXV & Addenda, pp. 501–584)",
+      translation: "Agriculture (pp. 501–510, Figs. 143–145): field (munda, pl. mīundə), irrigation ditch (mutau), clearing knife (nžomo / kasomo, Fig. 143), 2–3 m sod-breaking pole (nde), woman's digging stick (mīo / mwīo / kamolo, Fig. 144), bird-scaring platform (Fig. 145), threshing (kuβūa on kīβuīo), grass granary (kīīŋgə) • Food & Stimulants (pp. 511–526, Figs. 146–155): blood-whisk (muþekæþī, Fig. 146), fresh milk (īþumo), sour milk (īīa), colostrum (kīþana), milk gourd (kītīa in kīkamī), butter (mauta in kīþulī), dishes īsīo, usu (eaten with index finger kīaa kīa kusuna), kīna, ŋgīma, kītækə, maize bread (mukaə / mukatə / kīmutu / kīkīə), flying ants (mba), resin (kīþana); beer (ukī wa kīwa / nžukī) pounded with muþī in nde mortar, strained through kīkælə (kukæla ukī) with kītumbu pulp, fermented with mwatīnə (Kigelia), frothy top (kīβuo), buying father's permission to drink beer (kuþa / kuþaīa, pp. 519–520); tobacco (kumbato) & snuff (mbakī + īatī natron) in kīaŋgī bottles (Figs. 147–152) & pipes (ndozo, Figs. 153–155) • Ironworking, Chains, Stools, Pottery & Bags (pp. 527–542, Figs. 156–167): iron (kīaa), ore (kīlea), tuyere (kīīa), charcoal (maka), smith (mutwī < kutua), hammer (kīβa, Fig. 156), tongs (mwīβīsto, Fig. 157; smith's word-taboos on ua, īumba, ŋgola p. 530); wire (uþuku) drawn through uta drawplate, wound on kīlīŋgī (Fig. 158), cut on kītatī (Fig. 161a) & pinched with ŋgola pincers (Fig. 161b–c) into triangular S-link chains (munīo, Fig. 159 vs. Kikuyu chain Fig. 160); axe (īþoka), adze (ŋgomo, Fig. 164), stools (kīβīla, woman's kītumbə Fig. 162, elder's mumbə Fig. 163); pottery (nyuŋgu, large kītænə, father's muna / kamuna, potter's marks Fig. 165); chewed-bark string (ulī, pl. ndīī, in kīlīŋga balls) plaited into kīondə & girl's dowry bag (nduŋgū, Figs. 166–167); and verbatim Rabai Kamba reading-book text (Kitabu tja kutsoma) on Woman's vs. Man's Work (pp. 543–545) • Somatic & Addenda (pp. 561–584): 60 Kitui prisoners' weight (mean 117.56 lbs, min 79.5, max 133), 6th finger/toe (child named ndula), pigeon-toed runners (ndaŋgī / matæŋgo), one-eyed/cross-eyed (nžoŋgo), blind (kīlīnda), pointing with tongue (p. 565), Chagga lineages from Ukamba (Mareale from Mumoni, Ngovi, p. 573), īþaβu wayside stone/branch custom (p. 576), 3 basic color roots (-īu black = soot mbīo, -æu / nžaū white = lime īea, -tunə red = clay ndo, color = īlaŋgī, p. 580), and women's market day (kīŋgaŋga, p. 580)",
+      pronunciation: "mu-nda / nzo-mo / i-si-o / u-su / ngi-ma / u-ki / ki-ke-le / mu-twi / mu-ni-o / ki-o-nde / ndu-ngu / ki-nga-nga",
+      context: "Gerhard Lindblom, The Akamba in British East Africa (2nd Ed., Uppsala, 1920, Parts V–VI & Addenda, pp. 501–584 & Figs. 143–167)",
+      audioFile: null,
+    },
+  }
 );

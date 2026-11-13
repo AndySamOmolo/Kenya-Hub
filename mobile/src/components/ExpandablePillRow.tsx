@@ -79,21 +79,25 @@ function prepareExpandedMobileChildren(
   });
 }
 
-const SHADOW_STEPS = [
-  0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35, 0.44, 0.54, 0.64, 0.74, 0.83, 0.91, 0.97,
+// 20-step smooth ease-in-out alpha progression for seamless sub-pixel surface dissolve
+const FADE_STEPS = [
+  0.01, 0.03, 0.06, 0.1, 0.15, 0.21, 0.28, 0.36, 0.45, 0.54,
+  0.63, 0.72, 0.8, 0.86, 0.91, 0.95, 0.97, 0.99, 1.0, 1.0,
 ];
 
 function EdgePocketShadow({
   side,
   isDark,
   bgColor,
+  accentColor,
 }: {
   side: "left" | "right";
   isDark: boolean;
   bgColor: string;
+  accentColor: string;
 }) {
   const orderedSteps =
-    side === "right" ? SHADOW_STEPS : [...SHADOW_STEPS].reverse();
+    side === "right" ? FADE_STEPS : [...FADE_STEPS].reverse();
 
   return (
     <View
@@ -103,7 +107,7 @@ function EdgePocketShadow({
         side === "left" ? rowStyles.edgeShadowLeft : rowStyles.edgeShadowRight,
       ]}
     >
-      {/* Layer 1: Smooth surface fade so clipped pill text/borders dissolve cleanly */}
+      {/* Layer 1: Seamless 20-step surface dissolve matching the parent header/card surface */}
       <View style={rowStyles.gradientStripRow}>
         {orderedSteps.map((alpha, idx) => (
           <View
@@ -111,38 +115,38 @@ function EdgePocketShadow({
             style={{
               flex: 1,
               backgroundColor: bgColor,
-              opacity: isDark ? alpha * 0.92 : alpha * 0.88,
+              opacity: alpha,
             }}
           />
         ))}
       </View>
 
-      {/* Layer 2: Warm sculpted pocket shadow indicating recessed overflowing pills */}
+      {/* Layer 2: Subtle warm tonal pocket shading concentrated near the outer rim */}
       <View style={[rowStyles.gradientStripRow, StyleSheet.absoluteFillObject]}>
         {orderedSteps.map((alpha, idx) => {
-          const curve = alpha * alpha;
+          const rimCurve = alpha * alpha * alpha;
           return (
             <View
               key={`shade-${idx}`}
               style={{
                 flex: 1,
-                backgroundColor: isDark ? "#000000" : "#1A1108",
-                opacity: isDark ? curve * 0.68 : curve * 0.22,
+                backgroundColor: isDark ? "#000000" : accentColor,
+                opacity: isDark ? rimCurve * 0.38 : rimCurve * 0.1,
               }}
             />
           );
         })}
       </View>
 
-      {/* Layer 3: Crisp inner-pocket vertical shadow crease at the outer edge */}
+      {/* Layer 3: Refined 1.5px warm gold-tinted pocket crease inset at the outer edge */}
       <View
         style={[
           rowStyles.pocketCrease,
           side === "left" ? { left: 0 } : { right: 0 },
           {
             backgroundColor: isDark
-              ? "rgba(200, 150, 30, 0.28)"
-              : "rgba(26, 17, 8, 0.18)",
+              ? "rgba(200, 150, 30, 0.34)"
+              : "rgba(184, 134, 11, 0.26)",
           },
         ]}
       />
@@ -155,19 +159,23 @@ export interface ExpandablePillRowProps {
   style?: StyleProp<ViewStyle>;
   contentContainerStyle?: StyleProp<ViewStyle>;
   threshold?: number;
+  showExpandButton?: boolean;
+  fadeColor?: string;
 }
 
 /**
- * Renders a single-row horizontal scrolling pill bar on mobile with sculpted
- * left/right scroll-pocket shadows whenever pills overflow to either side.
- * When there are more than `threshold` (default 5) pills, renders a single dropdown
- * icon button on the right that toggles displaying all pills vertically (wrapped).
+ * Renders a single-row horizontal scrolling pill bar on mobile with refined,
+ * surface-matched left/right scroll-fade bars whenever pills overflow to either side.
+ * When there are more than `threshold` (default 5) pills, renders a compact dropdown
+ * icon button on the right that toggles displaying all pills in a wrapped grid.
  */
 export function ExpandablePillRow({
   children,
   style,
   contentContainerStyle,
   threshold = 5,
+  showExpandButton = true,
+  fadeColor,
 }: ExpandablePillRowProps) {
   const { theme } = useTheme();
   const [expanded, setExpanded] = useState(false);
@@ -179,15 +187,15 @@ export function ExpandablePillRow({
   const layoutWidthRef = useRef(0);
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(count > 3);
+  const [canScrollRight, setCanScrollRight] = useState(false);
 
   const updateScrollState = useCallback(() => {
     const x = scrollXRef.current;
     const cw = contentWidthRef.current;
     const lw = layoutWidthRef.current;
     if (lw <= 0 || cw <= 0) return;
-    setCanScrollLeft(x > 3);
-    setCanScrollRight(cw - lw - x > 3);
+    setCanScrollLeft(x > 4);
+    setCanScrollRight(cw - lw - x > 4);
   }, []);
 
   const handleLayout = useCallback(
@@ -234,7 +242,10 @@ export function ExpandablePillRow({
     ...(paddingRight !== undefined ? { paddingRight } : {}),
   };
 
-  if (count <= threshold) {
+  const resolvedFadeColor = fadeColor || theme.surfaceContainerLow;
+  const canExpand = showExpandButton && count > threshold;
+
+  if (!canExpand) {
     return (
       <View style={[rowStyles.rowWrap, outerSpacing, style]}>
         <View style={rowStyles.viewportWrap}>
@@ -252,7 +263,7 @@ export function ExpandablePillRow({
                 alignItems: "center",
                 gap: 8,
                 paddingVertical: 2,
-                paddingRight: canScrollRight ? 14 : 0,
+                paddingRight: canScrollRight ? 16 : 2,
               },
               innerContentStyle,
             ]}
@@ -263,14 +274,16 @@ export function ExpandablePillRow({
             <EdgePocketShadow
               side="left"
               isDark={theme.isDark}
-              bgColor={theme.bgPrimary}
+              bgColor={resolvedFadeColor}
+              accentColor={theme.gold}
             />
           )}
           {canScrollRight && (
             <EdgePocketShadow
               side="right"
               isDark={theme.isDark}
-              bgColor={theme.bgPrimary}
+              bgColor={resolvedFadeColor}
+              accentColor={theme.gold}
             />
           )}
         </View>
@@ -322,7 +335,7 @@ export function ExpandablePillRow({
                 alignItems: "center",
                 gap: 8,
                 paddingVertical: 2,
-                paddingRight: canScrollRight ? 14 : 0,
+                paddingRight: canScrollRight ? 16 : 2,
               },
               innerContentStyle,
             ]}
@@ -333,14 +346,16 @@ export function ExpandablePillRow({
             <EdgePocketShadow
               side="left"
               isDark={theme.isDark}
-              bgColor={theme.bgPrimary}
+              bgColor={resolvedFadeColor}
+              accentColor={theme.gold}
             />
           )}
           {canScrollRight && (
             <EdgePocketShadow
               side="right"
               isDark={theme.isDark}
-              bgColor={theme.bgPrimary}
+              bgColor={resolvedFadeColor}
+              accentColor={theme.gold}
             />
           )}
         </View>
@@ -379,10 +394,9 @@ const rowStyles = StyleSheet.create({
   rowWrap: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
-    width: "100%",
+    gap: 6,
+    minWidth: 0,
     maxWidth: "100%",
-    overflow: "hidden",
   },
   viewportWrap: {
     flex: 1,
@@ -392,9 +406,9 @@ const rowStyles = StyleSheet.create({
   },
   edgeShadowContainer: {
     position: "absolute",
-    top: 0,
-    bottom: 0,
-    width: 32,
+    top: 1,
+    bottom: 1,
+    width: 22,
     zIndex: 10,
   },
   edgeShadowLeft: {
@@ -411,10 +425,10 @@ const rowStyles = StyleSheet.create({
   },
   pocketCrease: {
     position: "absolute",
-    top: 3,
-    bottom: 3,
-    width: 2,
-    borderRadius: 2,
+    top: 4,
+    bottom: 4,
+    width: 1.5,
+    borderRadius: 1,
   },
   actionBtn: {
     width: 30,

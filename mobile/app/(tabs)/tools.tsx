@@ -6,7 +6,6 @@ import {
   FlatList,
   Platform,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -95,10 +94,7 @@ function ToolItem({
                 </View>
               )}
             </View>
-            <Text
-              style={[styles.title, { color: theme.textPrimary }]}
-              
-            >
+            <Text style={[styles.title, { color: theme.textPrimary }]}>
               {item.shortTitle}
             </Text>
           </View>
@@ -116,10 +112,7 @@ function ToolItem({
           </View>
         </View>
 
-        <Text
-          style={[styles.description, { color: theme.textSecondary }]}
-          
-        >
+        <Text style={[styles.description, { color: theme.textSecondary }]}>
           {item.description}
         </Text>
 
@@ -131,10 +124,7 @@ function ToolItem({
             size={13}
             color={theme.kenyaGreenLight}
           />
-          <Text
-            style={[styles.source, { color: theme.textMuted }]}
-            
-          >
+          <Text style={[styles.source, { color: theme.textMuted }]}>
             {item.dataSource}
           </Text>
         </View>
@@ -149,7 +139,6 @@ export default function ToolsScreen() {
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
   const listRef = useRef<FlatList>(null);
-  const [showAllCats, setShowAllCats] = useState(true);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
   );
@@ -218,8 +207,6 @@ export default function ToolsScreen() {
       if (sortBy === "category")
         return a.category.localeCompare(b.category) || labelComparison;
 
-      // "popular" (Most used) — matches web tools/page.tsx:
-      // use real visit counts if user has any, otherwise curated baseline usage scores
       if (hasAnyVisits) {
         const aVisits = visitCounts[a.slug] ?? 0;
         const bVisits = visitCounts[b.slug] ?? 0;
@@ -281,7 +268,7 @@ export default function ToolsScreen() {
         >
           <Ionicons
             name="search"
-            size={20}
+            size={18}
             color={theme.gold}
             style={styles.searchIcon}
           />
@@ -300,36 +287,63 @@ export default function ToolsScreen() {
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
               <Ionicons
                 name="close-circle"
-                size={20}
+                size={18}
                 color={theme.textMuted}
               />
             </Pressable>
           )}
         </View>
 
-        {/* Horizontal Scrolling Category Pills (Standalone rounded-full pills) */}
-        <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 2 }}>
+        {/* Horizontal Scrolling Category Pills with Refined Scroll-Fade Bars & Expand Toggle */}
+        <ExpandablePillRow
+          fadeColor={theme.surfaceContainerLow}
+          contentContainerStyle={{
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 6,
+            paddingVertical: 2,
+          }}
+        >
           {categories.map((item) => {
             const active = item.id === category;
+            const dotColor =
+              item.id === "all"
+                ? theme.gold
+                : categoryColorMap[item.id] || theme.gold;
             return (
               <Pressable
                 key={item.id}
                 android_ripple={androidRipple(theme.rippleColor)}
                 onPress={() => setCategory(item.id)}
                 style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 6,
                   paddingHorizontal: 12,
-                  paddingVertical: 4.5,
+                  paddingVertical: 5.5,
                   borderRadius: 999,
                   borderWidth: 1,
-                  backgroundColor: active ? `${theme.gold}22` : theme.surfaceContainer,
+                  backgroundColor: active
+                    ? theme.primaryContainer
+                    : theme.surfaceContainer,
                   borderColor: active ? theme.gold : theme.outlineVariant,
                 }}
               >
+                <View
+                  style={{
+                    width: 6,
+                    height: 6,
+                    borderRadius: 3,
+                    backgroundColor: active ? theme.gold : dotColor,
+                  }}
+                />
                 <Text
                   style={{
                     fontSize: 12,
                     fontFamily: active ? "Outfit_700Bold" : "Inter_600SemiBold",
-                    color: active ? theme.gold : theme.textSecondary,
+                    color: active
+                      ? theme.onPrimaryContainer
+                      : theme.textSecondary,
                   }}
                 >
                   {item.name} ({item.count})
@@ -339,12 +353,20 @@ export default function ToolsScreen() {
           })}
         </ExpandablePillRow>
 
-        {/* Material 3 Segmented Sort Row (mirrors web Sort: Most used | A-Z | Category) */}
+        {/* Compact Single-Line Sort Row with Refined Scroll-Fade Bars */}
         <View style={styles.sortRow}>
           <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
             SORT BY
           </Text>
-          <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+          <ExpandablePillRow
+            style={{ flex: 1 }}
+            fadeColor={theme.surfaceContainerLow}
+            contentContainerStyle={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
             {(
               [
                 { id: "popular", label: "Most used", icon: "trending-up" as const },
@@ -363,10 +385,12 @@ export default function ToolsScreen() {
                     alignItems: "center",
                     gap: 5,
                     paddingHorizontal: 12,
-                    paddingVertical: 6,
+                    paddingVertical: 5.5,
                     borderRadius: 999,
                     borderWidth: 1,
-                    backgroundColor: active ? theme.primaryContainer : theme.surfaceContainer,
+                    backgroundColor: active
+                      ? theme.primaryContainer
+                      : theme.surfaceContainer,
                     borderColor: active ? theme.gold : theme.outlineVariant,
                   }}
                 >
@@ -495,9 +519,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   filterHeader: {
-    paddingHorizontal: 10,
+    paddingHorizontal: 14,
     paddingTop: 8,
-    paddingBottom: 9,
+    paddingBottom: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchWrap: {
@@ -506,82 +530,39 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     borderWidth: 1,
     paddingHorizontal: 14,
-    height: 38,
+    height: 40,
     marginBottom: 8,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
-    marginRight: 10,
+    marginRight: 9,
   },
   searchInput: {
     flex: 1,
     height: "100%",
-    fontSize: 12,
+    fontSize: 13,
     paddingVertical: 0,
     textAlignVertical: "center",
     includeFontPadding: false,
   },
-  catHeaderRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: 10,
-    marginBottom: 6,
-  },
-  chipsWrapGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 6,
-    paddingBottom: 4,
-  },
-  chipWrap: {
-    borderRadius: 8,
-    borderWidth: 1,
-    overflow: "hidden",
-  },
-  chip: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-  },
-  chipText: {
-    fontFamily: "Inter_600SemiBold",
-    fontSize: 12,
-  },
   sortRow: {
     flexDirection: "row",
-    flexWrap: "wrap",
     alignItems: "center",
-    justifyContent: "space-between",
     gap: 8,
     marginTop: 7,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
     fontSize: 10,
-    letterSpacing: 1,
-  },
-  segmentedGroup: {
-    flexDirection: "row",
-    borderRadius: 16,
-    borderWidth: 1,
-    overflow: "hidden",
-  },
-  segmentBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
+    letterSpacing: 0.8,
+    flexShrink: 0,
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 11,
+    fontSize: 11.5,
   },
   list: {
-    padding: 16,
+    padding: 14,
     paddingBottom: 32,
     gap: 10,
   },

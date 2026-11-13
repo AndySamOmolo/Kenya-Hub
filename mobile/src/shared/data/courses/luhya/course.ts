@@ -3066,3 +3066,280 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+LUHYA_UNITS.push({
+  "id": "luhya-unit-13-stam-1929-bahanga",
+  "title": "Unit 13: Rev. N. Stam (1929) 'The Bahanga' — Complete Wanga Royal Genealogy, Burial & Sacrificial Diagrams (Figs. 1–2), Religion, Practitioners, Omens, Marriage & Totems",
+  "description": "Master 100% of Rev. N. Stam's 1929 monograph 'The Bahanga' (Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179): the 11-generation Bakhitsetse royal genealogy from Kwandedi & Wanga to Mumia, Osundwa II, and Rapando, burial & sacrificial diagrams (Figs. 1–2), 5 special sacrifices, 6 practitioners, 2 ordeals, 10 omens, twins, marriage, and musiro totems.",
+  "icon": "Crown",
+  "skills": [
+    {
+      "id": "luhya-stam-1929-13-1-history-genealogy-burial",
+      "title": "Tribal History, 11-Generation Bakhitsetse Genealogy & Burial Rites (pp. 143–152, Map & Fig. 1)",
+      "icon": "Crown",
+      "description": "Learn the p. 145 Map terms, the royal lineage from Kwandedi and Wanga to Mumia, Osundwa II, and Rapando, royal sitting burial & Matungo bone procession, and Fig. 1 commoner burial positions.",
+      "tips": "On the p. 145 Map, the country is Buhanga, the language Luhanga, a native Muhanga, and the people Bahanga. Wanga hid his royal thick copper bracelet under his skin cloak while sweeping for Muyima on Imanga hill, was joined at Bijifi by 3 Kabras clans (Bakyero/Bakhyero, Banamagwa, Bakhyikawa), founded Mumias and Matungo, and founded the Bakhitsetse royal line.",
+      "words": [
+        {
+          "target": "Buhanga • Luhanga • Muhanga (sg.) • Bahanga (pl.)",
+          "source": "Country of the Bahanga • Language of the Bahanga • Native (singular) • Natives (plural) (Map, p. 145)",
+          "pronunciation": "bu-ha-nga / lu-ha-nga / mu-ha-nga / ba-ha-nga",
+          "hint": "Rev. N. Stam, The Bahanga (1929, p. 145 Map)"
+        },
+        {
+          "target": "Kwandedi → Wanga & Khabiagala → Waballa (→ Muswi → Wamukoya [I]) & Murono (→ Kitai)",
+          "source": "Early Bahanga royal genealogy from Teriki & Khyira/Bwagwe (Kabras) to Imanga (Muyima), Bijifi (Bakyero, Banamagwa, Bakhyikawa), Mumias, Matungo, Bukhayo & Matawa (Wakhalivu & Muswi's 4 arrows)",
+          "pronunciation": "kwa-nde-di / wa-nga / kha-bi-a-ga-la / wa-bal-la / mu-swi / wa-mu-ko-ya / mu-ro-no / ki-ta-i",
+          "hint": "Stam (1929, pp. 143–148)"
+        },
+        {
+          "target": "Wamukoya [I] → Netya (→ Osundwa [I] → Wamukoya [II] → Khyihundu → Mumia, Murunga, Mulama, Katima, Were & Kiteki [→ Osundwa II]) & Kweyu (→ Lumbasi → Sakwa → Lutomiya [→ Rapando], Lwambami & Kiwundu)",
+          "source": "Later Bahanga royal genealogy of the Bakhitsetse family at Mumias/Matungo and Khyimuli/Mukulu (pp. 146–148)",
+          "pronunciation": "ne-tya / o-su-ndwa / khyi-hu-ndu / mu-mi-a / kwe-yu / lu-mba-si / sa-kwa / lu-to-mi-ya / ra-pa-ndo",
+          "hint": "Stam (1929, pp. 146–148)"
+        },
+        {
+          "target": "okhufwa • okhuyaberwa • ekhyirindwa • okhusenera ekhyirindwa ekhyo mwami",
+          "source": "Death / to die • Burial / to be buried • Grave • 'To fix the grave of the chief' (exhuming, washing & butter-polishing the chief's bones to carry in a beerpot to Matungo 1–2 years after sitting burial in his hut)",
+          "pronunciation": "o-khu-fwa / o-khu-ya-be-rwa / e-khyi-ri-ndwa / o-khu-se-ne-ra e-khyi-ri-ndwa e-khyo mwa-mi",
+          "hint": "Stam (1929, pp. 148–149)"
+        },
+        {
+          "target": "inkokho eyo mukulikho • okhuba khu maziga • okhukalusya evigumba • okhusenera ekhyirindwa • omuyima",
+          "source": "Chicken of the burial (roasted unplucked) • The great bewailing • 'To return the bones' (by sons-in-law & wives without greeting or looking back) • 'To fasten the grave' • Burial dance (1 year later)",
+          "pronunciation": "i-nko-kho e-yo mu-ku-li-kho / o-khu-ba khu ma-zi-ga / o-khu-ka-lu-sya e-vi-gu-mba / o-mu-yi-ma",
+          "hint": "Stam (1929, pp. 150–151 & Fig. 1 p. 150)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Okhusenera ekhyirindwa ekhyo mwami khu Matungo.",
+          "source": "To fix the grave of the chief at Matungo (Stam 1929, p. 149)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Rev. N. Stam's 'The Bahanga' (1929, p. 146), which three devoted Kabras clans joined Wanga at Bijifi near Imanga hill, and which clan's head (Wakhalivu) nominates the chief by investing him with the copper bracelet and strangles a dying chief of the Bakhitsetse family?",
+          "correctAnswer": "Bakyero (Bakhyero), Banamagwa, and Bakhyikawa — with the Bakyero (Bakhyero) clan serving as kingmakers",
+          "options": [
+            "Bakyero (Bakhyero), Banamagwa, and Bakhyikawa — with the Bakyero (Bakhyero) clan serving as kingmakers",
+            "Bamakambo, Abekwe, and Abarebe",
+            "Abetakho, Babukusu, and Wamia",
+            "Bakhayo,Bamarama, and Batsotso"
+          ],
+          "hint": "See Stam (1929, pp. 146, 148)"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "According to Figure 1 and pp. 149–150 of Stam (1929), how are a kraal owner (man), a woman, and children positioned in burial, and why is a pierced wild-fig leaf placed over the corpse's left ear?",
+          "correctAnswer": "Man inside the middle of his hut on his right side; woman outside to the left of the entrance on her left side; male child under right eaves & female child under left eaves — with a pierced leaf over the left ear so the dead can hear sacrifices",
+          "options": [
+            "Man inside the middle of his hut on his right side; woman outside to the left of the entrance on her left side; male child under right eaves & female child under left eaves — with a pierced leaf over the left ear so the dead can hear sacrifices",
+            "All commoners are buried sitting upright at Matungo hill",
+            "Men are buried outside the kraal gate and women inside the cattle pen",
+            "Corpses are cremated on the river bank immediately after death"
+          ],
+          "hint": "See Stam (1929, pp. 149–150, Fig. 1)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Bahanga historical ruler in Stam (1929, pp. 143–148) with his key deed or succession:",
+          "correctAnswer": "Muswi: Posthumous son of Waballa given a girl's name at Matawa who slew 4 of Murono's followers with 4 arrows",
+          "pairs": [
+            {
+              "left": "Muswi",
+              "right": "Posthumous son of Waballa given a girl's name at Matawa who slew 4 of Murono's followers with 4 arrows"
+            },
+            {
+              "left": "Osundwa [I]",
+              "right": "Son of Netya proclaimed chief after Netya's death at Lwanda; rallied the Bahanga with 'death or victory'"
+            },
+            {
+              "left": "Mumia (retired 1928 → Osundwa [II])",
+              "right": "Son of Khyihundu; paramount chief with kraals at Mumias & Jinja, succeeded in 1928 by Kiteki's son Osundwa [II]"
+            },
+            {
+              "left": "Rapando (son of Lutomiya)",
+              "right": "Descendant of Kweyu (Kweyu → Lumbasi → Sakwa → Lutomiya → Rapando), chief of Mukulu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luhya-stam-1929-13-2-sacrifices-religion-practitioners",
+      "title": "Kraal Sacrificial Stones (Fig. 2), 5 Special Sacrifices, Rainmaking, Religion & 6 Practitioners (pp. 152–170)",
+      "icon": "Sparkles",
+      "description": "Master the Fig. 2 sacrificial stone layout, the 3-generation ancestral invocation, the 5 special sacrifices, Nasayi/Were prayers, 6 medical/magical practitioners, 2 ordeals, and 10 omens.",
+      "tips": "In Fig. 2 (p. 153), two ancestral stones (amagina ake misambwa) stand 10 ft in front of the first wife's hut flanking the 4-ft lusambwa/lusiola pole (from obsolete samba 'build' → reversive sambula 'break down'), with the miniature khatsu khe misango hut to the left and two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were.",
+      "words": [
+        {
+          "target": "omumali owe misango • omusango (okhumala omusango) • amagina ake misambwa • lusambwa / lusiola (samba → sambula)",
+          "source": "The sacrificer • Sacrifice (to sacrifice) • Two stones of the ancestral spirits (right stone to eldest son, left to 2nd son) • 4-ft Markhamia platycalyx pole from the khyemebekho/khyembekho grove",
+          "pronunciation": "o-mu-ma-li o-we mi-sa-ngo / a-ma-gi-na a-ke mi-sa-mbwa / lu-sa-mbwa / sa-mba sa-mbu-la",
+          "hint": "Stam (1929, pp. 152–153 & Fig. 2)"
+        },
+        {
+          "target": "khatsu khe misango • amagina ako lunganyi • amalwa / ingombe / inkokho / isindu eye misango",
+          "source": "Little hut of the sacrifices (left of 1st wife's hut) • Two flat stones on the pathway outside kraal gate dedicated to Nasayi/Were • Sacrificial beer, cow, chicken & quail",
+          "pronunciation": "kha-tsu khe mi-sa-ngo / a-ma-gi-na a-ko lu-nga-nyi / i-si-ndu e-ye mi-sa-ngo",
+          "hint": "Stam (1929, pp. 153–156 & Fig. 2)"
+        },
+        {
+          "target": "abakuku mulire omu • evinambwa mulire omu • evisoni mulire omu",
+          "source": "'Grandfathers, eat here • Great-grandfathers, eat here • Great-great-grandfathers, eat here' (3-generation sacrificial invocation, p. 155)",
+          "pronunciation": "a-ba-ku-ku mu-li-re o-mu / e-vi-na-mbwa mu-li-re o-mu / e-vi-so-ni mu-li-re o-mu",
+          "hint": "Stam (1929, p. 155)"
+        },
+        {
+          "target": "okhutisa imbusi (4 cases) • inkokho eyakulikhirwamwo",
+          "source": "Banging a goat's head around the hut (for skull fracture, running naked into a hut, broken waterpot, or dripping grass-ash salt filter) • Live white chicken held at center pole with 2 wing feathers stuck in ground to name a baby after a parent-in-law",
+          "pronunciation": "o-khu-ti-sa i-mbu-si / i-nko-kho e-ya-ku-li-khi-rwa-mwo",
+          "hint": "Stam (1929, pp. 156–158)"
+        },
+        {
+          "target": "Nasayi (< sayo) & Were • liyuba • Were ankhonyere • Nasayi akhulinde • ekhyinekha & vikhyeno",
+          "source": "God ('the one adored' < sayo) & Creator • The sun • 'God has helped me' (p. 160) • 'May God protect you' (p. 161) • Immortal soul/shadow & evil spirits (p. 162)",
+          "pronunciation": "na-sa-yi / we-re a-nkho-nye-re / na-sa-yi a-khu-li-nde / e-khyi-ne-kha / vi-khye-no",
+          "hint": "Stam (1929, pp. 159–162)"
+        },
+        {
+          "target": "omusebe (sitani) • balosi (mulosi) • omundu owe misala • omundu owe mikalo • omufumo • omufira • ekhyilulu • amayoni amabi",
+          "source": "Masai-grave possession • Bewitchers • Herbalist/cupping surgeon • Charm doctor (wild pig's tooth court charm) • Diviner • Poison-man (2-cow cure) • Ordeal (2-cow theft / 3-cow false accusation fine & Skull Ordeal) • 10 bad-bird omens",
+          "pronunciation": "o-mu-se-be / ba-lo-si / o-mu-ndu o-we mi-sa-la / o-mu-ndu o-we mi-ka-lo / o-mu-fu-mo / o-mu-fi-ra / e-khyi-lu-lu / a-ma-yo-ni a-ma-bi",
+          "hint": "Stam (1929, pp. 162–170)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Abakuku mulire omu; evinambwa mulire omu; evisoni mulire omu.",
+          "source": "Grandfathers, eat here; great-grandfathers, eat here; great-great-grandfathers, eat here (Stam 1929, p. 155)."
+        },
+        {
+          "target": "Were ankhonyere! Nasayi akhulinde.",
+          "source": "God has helped me! May God protect you (Stam 1929, pp. 160–161)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Figure 2 and pp. 152–154 of Stam (1929), what are the three sacrificial installations of a Bahanga kraal and how are the stones inherited?",
+          "correctAnswer": "(1) Two ancestral stones (amagina ake misambwa, right to eldest son, left to 2nd son) 10 ft in front of the 1st wife's hut flanking the 4-ft lusambwa pole; (2) the miniature khatsu khe misango hut to the left; and (3) two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were",
+          "options": [
+            "(1) Two ancestral stones (amagina ake misambwa, right to eldest son, left to 2nd son) 10 ft in front of the 1st wife's hut flanking the 4-ft lusambwa pole; (2) the miniature khatsu khe misango hut to the left; and (3) two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were",
+            "Four stones inside the cattle kraal inherited by the youngest daughter",
+            "A single stone inside the chief's granary",
+            "Three stones on the river bank dedicated to evil spirits (vikhyeno)"
+          ],
+          "hint": "See Stam (1929, pp. 152–154 & Fig. 2 p. 153)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each practitioner or legal/ritual term in Stam (1929, pp. 156–168) with its exact definition:",
+          "correctAnswer": "omundu owe mikalo: Charm doctor who hangs a banana-bark cattle-plague bundle on a kraal pole & puts burnt-wood ash in a wild pig's hollow tooth for court trials",
+          "pairs": [
+            {
+              "left": "omundu owe mikalo",
+              "right": "Charm doctor who hangs a banana-bark cattle-plague bundle on a kraal pole & puts burnt-wood ash in a wild pig's hollow tooth for court trials"
+            },
+            {
+              "left": "omundu owe misala",
+              "right": "Herbalist & surgeon who performs wet cupping with a perforated cow-horn tip sealed with beeswax"
+            },
+            {
+              "left": "omufira",
+              "right": "Poison-man who pricks a victim's toe with a poison-pointed walking stick or rubs a wild onion on his leg (2-cow cure fee)"
+            },
+            {
+              "left": "ekhyilulu",
+              "right": "Trial by ordeal: pounded-stick draught (2-cow theft fine / 3-cow false accusation fine) or drinking from a relative's skull"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luhya-stam-1929-13-3-adoption-twins-marriage-totems-circumcision",
+      "title": "Makokha Adoption, Twins (Amakhwana), Marriage Rites, Musiro Totems & Circumcision (pp. 170–179)",
+      "icon": "Heart",
+      "description": "Practice the Luhanga terminology and customs for roadway foundling adoption, twin purification, 10-cattle dowry & wedding rites, Isaac's antelope totem, mutilations, and circumcision.",
+      "tips": "All Bahanga have Isaac's antelope (Boöcercus eurycerus) as their totem (musiro, 'the thing abstained from'), while Bahanga of Marama have the eland; totems are patrilineal and do not prevent intermarriage (only blood kinship bars marriage). Women never eat chickens, guinea fowl, eggs, sheep, suckling goat, or lepidosiren mudfish.",
+      "words": [
+        {
+          "target": "Makokha ('rubbish', p. 171)",
+          "source": "Name given to an illegitimate child exposed on a road junction and adopted by a childless woman (who throws her loin-fringe over it, ties a mussel shell to its right wrist, strings a waist bead, puts an ear ring in its ear & shaves its head)",
+          "pronunciation": "ma-ko-kha",
+          "hint": "Stam (1929, p. 171)"
+        },
+        {
+          "target": "amakhwana • okhutsiya khu makwana",
+          "source": "Twins • 'To go to the twins' (after 2-month seclusion, draping a Passifloraceae creeper, sprinkling Trifolium clover, Caesalpiniaceae & sheep dung across a 10-mile radius, and sinking the excrement pot in a deep river)",
+          "pronunciation": "a-ma-khwa-na / o-khu-tsi-ya khu ma-kwa-na",
+          "hint": "Stam (1929, pp. 172–173)"
+        },
+        {
+          "target": "okhutekherana • okhukhua omukhana (1 bull + 1 heifer + 8 cows; 3 goats = 1 cow)",
+          "source": "To marry (lit. 'to boil for one another') • To pay the dowry (10 head of cattle total, paid in installments as calves are born)",
+          "pronunciation": "o-khu-te-khe-ra-na / o-khu-khu-a o-mu-kha-na",
+          "hint": "Stam (1929, pp. 173–174)"
+        },
+        {
+          "target": "okhusira imbusi • ingombe yarando",
+          "source": "'To jump over the goat' (bridal rite before eating at the groom's kraal) • 'The stripped cow' (sent by the groom next day if the bride is a virgin, speared by her paternal aunt)",
+          "pronunciation": "o-khu-si-ra i-mbu-si / i-ngo-mbe ya-ra-ndo",
+          "hint": "Stam (1929, p. 175)"
+        },
+        {
+          "target": "musiro (Boöcercus eurycerus & eland) • isambirire • okhukhyebwa & irumbi",
+          "source": "Clan totem ('the thing abstained from': Isaac's antelope for all Bahanga; eland in Marama; patrilineal & non-exogamous) • Grass used with saliva & cobwebs to burn the 3-stroke cheek mark (\\|/, 1.25 in.) • Circumcision (every 2–3 yrs, ages 15–25, by Kakalelwa/Abarebe operators) & 4–5 month seclusion hut",
+          "pronunciation": "mu-si-ro / i-sa-mbi-ri-re / o-khu-khye-bwa / i-ru-mbi",
+          "hint": "Stam (1929, pp. 176–179)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Okhutekherana nende okhukhua omukhana: okhusira imbusi.",
+          "source": "To marry ('boil for one another') and to pay the bride-dowry: jumping over the goat (Stam 1929, pp. 173–175)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Rev. N. Stam's 'The Bahanga' (1929, pp. 173–176), what is the literal meaning of 'okhutekherana' (to marry), what is the dowry ('okhukhua omukhana'), and what happens 5–6 months after the wedding?",
+          "correctAnswer": "'To boil for one another'; dowry is 1 young bull, 1 heifer, and 8 cows (3 goats = 1 cow); after 5–6 months of eating cold food from her mother-in-law's kitchen, the bride brings an 8-piece cooking outfit, throws river water at her husband, and her brother beats her with a stick (earning a heifer) before she cooks her first meal",
+          "options": [
+            "'To boil for one another'; dowry is 1 young bull, 1 heifer, and 8 cows (3 goats = 1 cow); after 5–6 months of eating cold food from her mother-in-law's kitchen, the bride brings an 8-piece cooking outfit, throws river water at her husband, and her brother beats her with a stick (earning a heifer) before she cooks her first meal",
+            "'To build a kraal'; dowry is 50 camels and the bride cooks on the wedding night",
+            "'To cross the river'; dowry is 6 goats and no cattle",
+            "'To herd cattle'; dowry is paid by the bride's father to the groom"
+          ],
+          "hint": "See Stam (1929, pp. 173–176)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Bahanga custom in Stam (1929, pp. 171–179) with its ethnographic detail:",
+          "correctAnswer": "musiro: Isaac's antelope (Boöcercus eurycerus) for all Bahanga (eland in Marama); patrilineal & does not bar marriage between same-totem families",
+          "pairs": [
+            {
+              "left": "musiro",
+              "right": "Isaac's antelope (Boöcercus eurycerus) for all Bahanga (eland in Marama); patrilineal & does not bar marriage between same-totem families"
+            },
+            {
+              "left": "Makokha",
+              "right": "Roadway foundling ('rubbish') adopted with loin-fringe, right-wrist mussel shell, waist bead & ear ring"
+            },
+            {
+              "left": "okhutsiya khu makwana",
+              "right": "Twin purification after 2 months using Passifloraceae creeper & Trifolium/Caesalpiniaceae/sheep-dung sprinkling across 10 miles"
+            },
+            {
+              "left": "okhukhyebwa & irumbi",
+              "right": "Circumcision every 2–3 years (ages 15–25) by Kakalelwa (Abarebe) operators, followed by 4–5 months in seclusion lodges"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

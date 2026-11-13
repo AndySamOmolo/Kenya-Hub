@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "families": [
     {
       "id": "bantu",
@@ -91,7 +91,7 @@
         "Vihiga",
         "Busia"
       ],
-      "notes": "17+ Western Bantu dialects including Wanga, Bukusu/Masaba, and Maragoli (Logoori); documented in Hobley (1902, 1903), Purvis (1909), Roscoe (1915), Johnston (1919), Stam (1929), and Payne, Pacchiarotti & Bosire eds. (2016).",
+      "notes": "17+ Western Bantu dialects including Wanga (Luhanga of Buhanga), Bukusu/Masaba, Kabras, Nyala, Marama, Tsotso, Tiriki, Idakho, Isukha, and Maragoli (Logoori); documented in Hobley (1902, 1903), Johnston (1902, 1919), Purvis (1907, 1909), Roscoe (1915), Rev. N. Stam (1929 'The Bahanga', Catholic Anthropological Conference Vol. I, No. 4, pp. 143–179 — audited 100% line-by-line across the p. 145 Map, 11-generation Bakhitsetse royal genealogy from Kwandedi & Wanga to Mumia, Osundwa II & Rapando, royal sitting burial & Matungo bone procession, Fig. 1 commoner burial diagram, Fig. 2 kraal sacrificial stones & khatsu khe misango diagram, reversive -ula, 5 special sacrifices, khyembekho rainmaking, Nasayi/Were prayers & Chameleon myth, 6 practitioners, 2 ordeals, 10 omens, Makokha adoption, amakhwana twin rites, okhutekherana marriage, musiro totems & okhukhyebwa circumcision), and Payne, Pacchiarotti & Bosire eds. (2016).",
       "id": "luhya",
       "isoCode": "luy",
       "glottocode": "luyi1234"
@@ -105,7 +105,7 @@
         "Makueni",
         "Kitui"
       ],
-      "notes": "Central Bantu language of Eastern Kenya; documented in Krapf (1850), Last (1885), Hinde (1904), Hobley (1910), Dundas (1915), Johnston (1919), Lindblom (1920), BFBS (1921), and Jones & Freyer (2019).",
+      "notes": "Central Bantu language of Eastern Kenya across 4 regional divisions (Ulu/Yulu [kīkamba kīluŋgalu & Kīluŋgu], East Ukamba/Kitui [aþaisu / kīþaisu], Kīkumbuliu & Mumonī, plus Anoka on Mt. Noka and the 1836 Rabai diaspora); documented in Krapf (1850), Last (1885), Hinde (1904), Hobley (1910, 1922), Dundas (1915), Johnston (1919), Gerhard Lindblom (1920 'The Akamba in British East Africa: An Ethnological Monograph', 2nd Ed., Enlarged, Archives d'Études Orientales Vol. 17, Uppsala, pp. I–XII, 1–607, Figs. 1–167 — audited 100% line-by-line across all 35 chapters, Addenda, 7 informants, 25+ mbaī clans & brands [Figs. 17–51], 3 nžaīko initiations, musaī sticks [Figs. 1–8] & sand drawings [Figs. 9–16], nðonī & 11 kwiūa pairs, 7 women's words, kinship table, 5 atumīa meat-sharing grades, nsīlī law, kīþītū [Fig. 52] & ndundu oaths, 6 ordeals, kīŋgolə, 3 war divisions & mutīætumo honours, aīmu, īþæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī prayers, kuausīa divination, unīka/mwītano arch, 17 ŋgondu substances, 45+ medicinal plants, 9 famines, 3 11-month calendars, kuseuβīa maīo teeth-chipping & bone false teeth, 11 musical instruments, kīūīśī board game, 13-part hut plan [Fig. 125], 7 traps, 28 livestock terms, mwatu beekeeping, munīo S-link chains & 3 color roots), BFBS (1921), and Jones & Freyer (2019).",
       "id": "kamba",
       "isoCode": "kam",
       "glottocode": "kamb1297"
@@ -160,7 +160,7 @@
         "Kajiado",
         "Samburu (Samburu dialect)"
       ],
-      "notes": "Plains Nilotes (Eastern Nilotic, including Laikipiak, Uasin Gishu, Segellai, and Tigirri historical divisions); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hinde (1901), Hollis (1905), Hon. K. R. Dundas (1910), Hobley (1910), W. S. & K. Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
+      "notes": "Plains Nilotes (Eastern Nilotic, across 4 Clans ['L-Aiser, Il-Meñgana, Il-Mokesen, Il-Molelyan], 2 Moieties ['L-oodo-kishu & 'L-oorook-kishu], 19 Sub-Families [Il-gilat], and 5 Districts [Il-Kaputiei, En-aiposha, 'L-Oitai, Il-Kisonko, 'L-Uasinkishu], plus Laikipiak, Segellai, and Tigirri); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hildegarde Hinde (1901 'The Masai Language: Grammatical Notes Together with a Vocabulary' — audited 100% line-by-line across pp. i–xii, 1–75 [PDF pp. 1–98]: Preface critiquing Ehrhardt 1857 & Johnston, Errata slip, Rules §§ 1–23, 9 Regular Plural Suffix Methods, Sexagesimal Base-60 Counting [īp = 60], 65 Verb Conjugation Paradigms, 340 Conversational Phrases, Salutations, 3 Songs, 3 Ethnonyms, 8 Kenyan Toponyms, 10 Curses & ~1,050-entry Vocabulary with 5 Footnotes), Johnston (1902), A. C. Hollis & Sir Charles Eliot (1905 'The Masai: Their Language and Folklore' — audited 100% line-by-line across Parts I–VI, pp. i–xxviii, 1–359, Frontispiece & Plates I–XXVII), Hon. K. R. Dundas (1910), Hobley (1910), W. S. & K. Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
       "id": "maasai",
       "isoCode": "mas",
       "glottocode": "masa1300"
@@ -348,20 +348,18 @@
     {
       "language": "English",
       "status": "Official language",
-      "use": "Government, judiciary, higher education, formal business"
+      "notes": "Used in government, courts, parliament, and education (from Grade 4 onwards)."
     },
     {
       "language": "Swahili (Kiswahili)",
       "status": "National & official language",
-      "use": "Everyday communication, National Assembly, primary education, media"
+      "notes": "Lingua franca spoken by over 90% of Kenyans as a first or second language."
+    },
+    {
+      "language": "Kenyan Sign Language (KSL)",
+      "status": "Recognised under Constitution (2010, Art. 7)",
+      "notes": "Promoted alongside Braille and other communication formats."
     }
   ],
-  "notes": [
-    "Kenya has 42+ recognized ethnic groups speaking 60+ distinct languages and dialects.",
-    "Speaker numbers are estimates based on KNBS 2019 Census ethnic population data (language ≈ ethnicity for most groups).",
-    "County-level language dominance is approximate. Urban areas (especially Nairobi, Mombasa) are highly multilingual.",
-    "Several Kenyan languages are classified as endangered by UNESCO, including El Molo (~300 speakers), Yaaku, Dahalo (with dental clicks, documented in Werner 1915 and Sands & Güldemann 2019), Suba, Ilchamus, and Omotik.",
-    "Data compiled from KNBS 2019 Census, UNESCO Atlas of the World's Languages in Danger, and 65 historical & contemporary linguistic works (1840–2024)."
-  ],
-  "source": "Kenya National Bureau of Statistics (KNBS) 2019 Population and Housing Census & Constitution of Kenya"
+  "source": "KNBS 2019 Census, Ethnologue, Glottolog"
 }

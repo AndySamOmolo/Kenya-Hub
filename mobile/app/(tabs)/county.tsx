@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import {
   Platform,
   StyleSheet,
@@ -29,7 +29,6 @@ type CountyHubTab = "directory" | "budgets" | "constituencies" | "climate" | "co
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-
 
 // Precompute static lookups once at module level for instant tab loads
 const HOSPITAL_COUNT_MAP = new Map<string, number>();
@@ -73,7 +72,6 @@ const NATIONAL_TOTALS = (() => {
       : "0";
   return { totalAlloc, totalOsr, avgAbs };
 })();
-
 
 const DirectoryCardItem = React.memo(function DirectoryCardItem({
   item,
@@ -401,7 +399,7 @@ export default function CountyScreen() {
       <AndroidTopAppBar
         showBrandLogo
         title="47 Counties Hub"
-        subtitle={`Budgets · 290 Constituencies · Climate · Compare`}
+        subtitle="Budgets · 290 Constituencies · Climate · Compare"
       />
 
       <View
@@ -413,15 +411,25 @@ export default function CountyScreen() {
           },
         ]}
       >
-        {/* Consolidated Mode Tabs */}
-        <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6, paddingBottom: 10 }}>
-          {([
-            { id: "directory", label: "Directory" },
-            { id: "budgets", label: "Budgets (FY 25/26)" },
-            { id: "constituencies", label: "290 Constituencies" },
-            { id: "climate", label: "Climate & Rain" },
-            { id: "compare", label: "Compare 2" },
-          ] as const).map((tab) => {
+        {/* Consolidated Mode Tabs with Refined Scroll-Fade Bars */}
+        <ExpandablePillRow
+          fadeColor={theme.surfaceContainerLow}
+          contentContainerStyle={{
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 6,
+            paddingBottom: activeTab !== "compare" ? 8 : 2,
+          }}
+        >
+          {(
+            [
+              { id: "directory", label: "Directory", icon: "grid-outline" as const },
+              { id: "budgets", label: "Budgets (FY 25/26)", icon: "wallet-outline" as const },
+              { id: "constituencies", label: "290 Constituencies", icon: "people-outline" as const },
+              { id: "climate", label: "Climate & Rain", icon: "rainy-outline" as const },
+              { id: "compare", label: "Compare 2", icon: "git-compare-outline" as const },
+            ] as const
+          ).map((tab) => {
             const active = activeTab === tab.id;
             return (
               <Pressable
@@ -430,11 +438,16 @@ export default function CountyScreen() {
                 style={[
                   styles.modeChip,
                   {
-                    backgroundColor: active ? theme.gold : theme.surfaceContainerHigh,
+                    backgroundColor: active ? theme.gold : theme.surfaceContainer,
                     borderColor: active ? theme.gold : theme.outlineVariant,
                   },
                 ]}
               >
+                <Ionicons
+                  name={tab.icon}
+                  size={13}
+                  color={active ? theme.kenyaBlack : theme.gold}
+                />
                 <Text
                   style={{
                     fontSize: 12,
@@ -460,10 +473,10 @@ export default function CountyScreen() {
                 },
               ]}
             >
-              <Ionicons name="search" size={20} color={theme.gold} />
+              <Ionicons name="search" size={18} color={theme.gold} />
               <TextInput
-            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
-            multiline={false}
+                key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+                multiline={false}
                 placeholder="Search county, governor, or HQ..."
                 numberOfLines={1}
                 placeholderTextColor={theme.textMuted}
@@ -473,15 +486,23 @@ export default function CountyScreen() {
               />
               {query.length > 0 && (
                 <Pressable onPress={() => setQuery("")} hitSlop={8}>
-                  <Ionicons name="close-circle" size={20} color={theme.textMuted} />
+                  <Ionicons name="close-circle" size={18} color={theme.textMuted} />
                 </Pressable>
               )}
             </View>
 
-            {/* Sort By Row */}
+            {/* Sort By Row — Inline with Refined Scroll-Fade Bars */}
             <View style={styles.sortRow}>
               <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
-              <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+              <ExpandablePillRow
+                style={{ flex: 1 }}
+                fadeColor={theme.surfaceContainerLow}
+                contentContainerStyle={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 5,
+                }}
+              >
                 {(
                   [
                     { id: "code", label: "Code" },
@@ -500,9 +521,9 @@ export default function CountyScreen() {
                       style={[
                         styles.segmentBtn,
                         {
-                          backgroundColor: active ? theme.primaryContainer : theme.surfaceContainer,
-                          borderRadius: 999,
-                          borderWidth: 1,
+                          backgroundColor: active
+                            ? theme.primaryContainer
+                            : theme.surfaceContainer,
                           borderColor: active ? theme.gold : theme.outlineVariant,
                         },
                       ]}
@@ -511,7 +532,9 @@ export default function CountyScreen() {
                         style={[
                           styles.segmentText,
                           {
-                            color: active ? theme.onPrimaryContainer : theme.textSecondary,
+                            color: active
+                              ? theme.onPrimaryContainer
+                              : theme.textSecondary,
                           },
                         ]}
                       >
@@ -526,139 +549,144 @@ export default function CountyScreen() {
         )}
       </View>
 
-            {activeTab === "compare" ? (
+      {activeTab === "compare" ? (
         <ScrollView
           ref={scrollRef}
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
         >
           {/* TAB 5: COMPARE 2 COUNTIES */}
-        {activeTab === "compare" && countyA && countyB && (
-          <View
-            style={[
-              styles.notesCard,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
-            <Text style={[styles.notesHeading, { color: theme.gold }]}>
-              Compare Two Counties Side-by-Side
-            </Text>
-            <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-              Select First County ({countyA.name}):
-            </Text>
-            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-              {enrichedCounties.map((c) => (
-                <Pressable
-                  key={`a-${c.slug}`}
-                  onPress={() => setCompareSlugA(c.slug)}
-                  style={[
-                    styles.modeChip,
-                    {
-                      backgroundColor: compareSlugA === c.slug ? theme.gold : theme.surfaceContainerHigh,
-                      borderColor: compareSlugA === c.slug ? theme.gold : theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      fontWeight: "700",
-                      color: compareSlugA === c.slug ? theme.kenyaBlack : theme.textPrimary,
-                    }}
+          {activeTab === "compare" && countyA && countyB && (
+            <View
+              style={[
+                styles.notesCard,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Text style={[styles.notesHeading, { color: theme.gold }]}>
+                Compare Two Counties Side-by-Side
+              </Text>
+              <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+                Select First County ({countyA.name}):
+              </Text>
+              <ExpandablePillRow
+                fadeColor={theme.surfaceContainer}
+                contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+              >
+                {enrichedCounties.map((c) => (
+                  <Pressable
+                    key={`a-${c.slug}`}
+                    onPress={() => setCompareSlugA(c.slug)}
+                    style={[
+                      styles.modeChip,
+                      {
+                        backgroundColor: compareSlugA === c.slug ? theme.gold : theme.surfaceContainerHigh,
+                        borderColor: compareSlugA === c.slug ? theme.gold : theme.outlineVariant,
+                      },
+                    ]}
                   >
-                    {String(c.code).padStart(3, "0")} {c.name}
-                  </Text>
-                </Pressable>
-              ))}
-            </ExpandablePillRow>
+                    <Text
+                      style={{
+                        fontSize: 11,
+                        fontWeight: "700",
+                        color: compareSlugA === c.slug ? theme.kenyaBlack : theme.textPrimary,
+                      }}
+                    >
+                      {String(c.code).padStart(3, "0")} {c.name}
+                    </Text>
+                  </Pressable>
+                ))}
+              </ExpandablePillRow>
 
-            <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
-              Select Second County ({countyB.name}):
-            </Text>
-            <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-              {enrichedCounties.map((c) => (
-                <Pressable
-                  key={`b-${c.slug}`}
-                  onPress={() => setCompareSlugB(c.slug)}
-                  style={[
-                    styles.modeChip,
-                    {
-                      backgroundColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.surfaceContainerHigh,
-                      borderColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.outlineVariant,
-                    },
-                  ]}
-                >
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      fontWeight: "700",
-                      color: compareSlugB === c.slug ? theme.kenyaBlack : theme.textPrimary,
-                    }}
+              <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
+                Select Second County ({countyB.name}):
+              </Text>
+              <ExpandablePillRow
+                fadeColor={theme.surfaceContainer}
+                contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+              >
+                {enrichedCounties.map((c) => (
+                  <Pressable
+                    key={`b-${c.slug}`}
+                    onPress={() => setCompareSlugB(c.slug)}
+                    style={[
+                      styles.modeChip,
+                      {
+                        backgroundColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.surfaceContainerHigh,
+                        borderColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.outlineVariant,
+                      },
+                    ]}
                   >
-                    {String(c.code).padStart(3, "0")} {c.name}
-                  </Text>
-                </Pressable>
-              ))}
-            </ExpandablePillRow>
+                    <Text
+                      style={{
+                        fontSize: 11,
+                        fontWeight: "700",
+                        color: compareSlugB === c.slug ? theme.kenyaBlack : theme.textPrimary,
+                      }}
+                    >
+                      {String(c.code).padStart(3, "0")} {c.name}
+                    </Text>
+                  </Pressable>
+                ))}
+              </ExpandablePillRow>
 
-            <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8 }}>
-              {/* Aligned Table Column Header */}
-              <View style={{ flexDirection: "row", justifyContent: "space-between", paddingBottom: 6, borderBottomWidth: 1, borderBottomColor: theme.outlineVariant }}>
-                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.textMuted, flex: 1.2, textAlign: "left" }}>METRIC</Text>
-                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.gold, flex: 1, textAlign: "right" }}>{countyA.name.toUpperCase()}</Text>
-                <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.kenyaGreenLight, flex: 1, textAlign: "right" }}>{countyB.name.toUpperCase()}</Text>
+              <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8 }}>
+                <View style={{ flexDirection: "row", justifyContent: "space-between", paddingBottom: 6, borderBottomWidth: 1, borderBottomColor: theme.outlineVariant }}>
+                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.textMuted, flex: 1.2, textAlign: "left" }}>METRIC</Text>
+                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.gold, flex: 1, textAlign: "right" }}>{countyA.name.toUpperCase()}</Text>
+                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.kenyaGreenLight, flex: 1, textAlign: "right" }}>{countyB.name.toUpperCase()}</Text>
+                </View>
+                {[
+                  { label: "Capital HQ", a: countyA.capital, b: countyB.capital },
+                  { label: "Governor", a: countyA.governor, b: countyB.governor },
+                  { label: "Senator", a: countyA.senator || "—", b: countyB.senator || "—" },
+                  { label: "Woman Rep", a: countyA.womenRep || "—", b: countyB.womenRep || "—" },
+                  { label: "Population", a: countyA.population.toLocaleString(), b: countyB.population.toLocaleString() },
+                  { label: "Land Area", a: `${countyA.area.toLocaleString()} km²`, b: `${countyB.area.toLocaleString()} km²` },
+                  { label: "Density", a: `${countyA.density}/km²`, b: `${countyB.density}/km²` },
+                  { label: "Constituencies", a: `${countyA.constituencies.length}`, b: `${countyB.constituencies.length}` },
+                  { label: "FY 25/26 Share", a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M` },
+                  { label: "Own Revenue", a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M` },
+                  { label: "Absorption %", a: `${countyA.budget?.absorptionRate || 0}%`, b: `${countyB.budget?.absorptionRate || 0}%` },
+                  { label: "Annual Rainfall", a: `${countyA.rain?.annualRainfall || 0} mm`, b: `${countyB.rain?.annualRainfall || 0} mm` },
+                ].map((row) => (
+                  <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 5, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: theme.outlineVariant }}>
+                    <Text style={{ fontSize: 11, color: theme.textMuted, flex: 1.2, textAlign: "left" }}>{row.label}</Text>
+                    <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.a}</Text>
+                    <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.b}</Text>
+                  </View>
+                ))}
               </View>
-              {[
-                { label: "Capital HQ", a: countyA.capital, b: countyB.capital },
-                { label: "Governor", a: countyA.governor, b: countyB.governor },
-                { label: "Senator", a: countyA.senator || "—", b: countyB.senator || "—" },
-                { label: "Woman Rep", a: countyA.womenRep || "—", b: countyB.womenRep || "—" },
-                { label: "Population", a: countyA.population.toLocaleString(), b: countyB.population.toLocaleString() },
-                { label: "Land Area", a: `${countyA.area.toLocaleString()} km²`, b: `${countyB.area.toLocaleString()} km²` },
-                { label: "Density", a: `${countyA.density}/km²`, b: `${countyB.density}/km²` },
-                { label: "Constituencies", a: `${countyA.constituencies.length}`, b: `${countyB.constituencies.length}` },
-                { label: "FY 25/26 Share", a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M` },
-                { label: "Own Revenue", a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M` },
-                { label: "Absorption %", a: `${countyA.budget?.absorptionRate || 0}%`, b: `${countyB.budget?.absorptionRate || 0}%` },
-                { label: "Annual Rainfall", a: `${countyA.rain?.annualRainfall || 0} mm`, b: `${countyB.rain?.annualRainfall || 0} mm` },
-              ].map((row) => (
-                <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 5, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: theme.outlineVariant }}>
-                  <Text style={{ fontSize: 11, color: theme.textMuted, flex: 1.2, textAlign: "left" }}>{row.label}</Text>
-                  <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.a}</Text>
-                  <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.b}</Text>
+            </View>
+          )}
+
+          {/* About the Data Notes */}
+          {notes.length > 0 && (
+            <View
+              style={[
+                styles.notesCard,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Text style={[styles.notesHeading, { color: theme.gold }]}>
+                About Kenya&apos;s 47 Counties
+              </Text>
+              {notes.map((n, idx) => (
+                <View key={idx} style={styles.noteRow}>
+                  <Text style={{ color: theme.gold, fontWeight: "900" }}>•</Text>
+                  <Text style={[styles.noteText, { color: theme.textSecondary }]}>
+                    {n}
+                  </Text>
                 </View>
               ))}
             </View>
-          </View>
-        )}
-
-        {/* About the Data Notes */}
-        {notes.length > 0 && (
-          <View
-            style={[
-              styles.notesCard,
-              {
-                backgroundColor: theme.surfaceContainer,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
-          >
-            <Text style={[styles.notesHeading, { color: theme.gold }]}>
-              About Kenya&apos;s 47 Counties
-            </Text>
-            {notes.map((n, idx) => (
-              <View key={idx} style={styles.noteRow}>
-                <Text style={{ color: theme.gold, fontWeight: "900" }}>•</Text>
-                <Text style={[styles.noteText, { color: theme.textSecondary }]}>
-                  {n}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
+          )}
         </ScrollView>
       ) : (
         <FlatList
@@ -674,22 +702,22 @@ export default function CountyScreen() {
           ListHeaderComponent={
             <>
               {/* National Summary Strip */}
-              <View style={{ flexDirection: "row", gap: 8, marginBottom: 14 }}>
+              <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
                 <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>EQUITABLE SHARE</Text>
-                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.gold }}>
+                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>EQUITABLE SHARE</Text>
+                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.gold, marginTop: 2 }}>
                     KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
                   </Text>
                 </View>
                 <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>OWN REVENUE</Text>
-                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.sky }}>
+                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>OWN REVENUE</Text>
+                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.sky, marginTop: 2 }}>
                     KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
                   </Text>
                 </View>
                 <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 9, fontWeight: "800", color: theme.textMuted }}>AVG ABSORPTION</Text>
-                  <Text style={{ fontSize: 14, fontWeight: "900", color: theme.kenyaGreenLight }}>
+                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>AVG ABSORPTION</Text>
+                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaGreenLight, marginTop: 2 }}>
                     {nationalTotals.avgAbs}%
                   </Text>
                 </View>
@@ -719,14 +747,17 @@ export default function CountyScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   header: {
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 12,
+    paddingHorizontal: 14,
+    paddingTop: 8,
+    paddingBottom: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   modeChip: {
-    paddingHorizontal: 14,
-    paddingVertical: 7,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 6.5,
     borderRadius: 999,
     borderWidth: 1,
   },
@@ -734,31 +765,51 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderRadius: 26,
-    paddingHorizontal: 16,
-    height: 46,
+    borderRadius: 24,
+    paddingHorizontal: 14,
+    height: 40,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
-  searchInput: { flex: 1, marginLeft: 10, fontSize: 13.5, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false },
+  searchInput: {
+    flex: 1,
+    marginLeft: 9,
+    fontSize: 13,
+    paddingVertical: 0,
+    textAlignVertical: "center",
+    includeFontPadding: false,
+  },
   sortRow: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: 10,
+    marginTop: 8,
     gap: 8,
   },
-  sortLabel: { fontFamily: "Outfit_700Bold", fontSize: 10, letterSpacing: 1 },
-  segmentBtn: { paddingHorizontal: 10, paddingVertical: 5 },
-  segmentText: { fontFamily: "Outfit_700Bold", fontSize: 11 },
-  listContent: { padding: 16, paddingBottom: 32 },
+  sortLabel: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 10,
+    letterSpacing: 0.8,
+    flexShrink: 0,
+  },
+  segmentBtn: {
+    paddingHorizontal: 11,
+    paddingVertical: 5.5,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+  segmentText: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 11.5,
+  },
+  listContent: { padding: 14, paddingBottom: 32 },
   miniStat: {
     flex: 1,
-    padding: 10,
+    paddingVertical: 9,
+    paddingHorizontal: 8,
     borderRadius: 12,
     borderWidth: 1,
     alignItems: "center",
   },
-  resultsCount: { fontSize: 12, marginBottom: 12 },
+  resultsCount: { fontSize: 12, marginBottom: 10 },
   countyCardWrap: {
     borderRadius: 16,
     borderWidth: 1,
@@ -798,21 +849,20 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
-    paddingHorizontal: 7,
-    paddingVertical: 3.5,
-    borderRadius: 6,
-    borderWidth: StyleSheet.hairlineWidth,
-    maxWidth: "100%",
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 8,
+    borderWidth: 1,
   },
-  infoPillText: { fontSize: 10.5, fontFamily: "Inter_500Medium", flexShrink: 1 },
+  infoPillText: { fontSize: 11, fontFamily: "Inter_500Medium" },
   notesCard: {
+    padding: 16,
     borderRadius: 16,
     borderWidth: 1,
-    padding: 16,
     marginTop: 8,
     gap: 8,
   },
-  notesHeading: { fontFamily: "Outfit_700Bold", fontSize: 14, marginBottom: 2 },
-  noteRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 },
-  noteText: { flex: 1, fontSize: 12, lineHeight: 17 },
+  notesHeading: { fontFamily: "Outfit_700Bold", fontSize: 14 },
+  noteRow: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
+  noteText: { flex: 1, fontSize: 12, lineHeight: 18 },
 });

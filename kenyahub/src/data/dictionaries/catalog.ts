@@ -834,9 +834,9 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Samburu"
     ],
     "hasAudio": false,
-    "dictionaryVersion": "3.0",
-    "lastUpdated": "2026-11-12",
-    "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), W. Scoresby & Katherine Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
+    "dictionaryVersion": "3.2",
+    "lastUpdated": "2026-11-13",
+    "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901 \"The Masai Language: Grammatical Notes Together with a Vocabulary\", Cambridge University Press, pp. i–xii, 1–75 [PDF pp. 1–98]: Preface critiquing Ehrhardt 1857 & Johnston, Errata slip, Grammatical Rules §§ 1–23, 9 Regular Plural Suffix Methods, Sexagesimal Base-60 Counting [īp = 60], 65 Verb Conjugation Paradigms, 340 Conversational Phrases, Salutations, 3 Songs, 3 Ethnonyms, 8 Kenyan Place-Names, 10 Curses & ~1,050-entry Vocabulary with 5 Footnotes), Sir Harry H. Johnston (1902), A. C. Hollis (1905 \"The Masai: Their Language and Folklore\", Oxford: Clarendon Press, pp. i–xxviii, 1–359: Part I Grammar with 6 Substantive Plural Classes, Kinship Terms, Finger-Counting 1–60, 27-Row Subject–Object Verb Prefix Table & 8 Derivative Verb Formations; Part II All 20 Masai Stories; Part III All 75 Proverbs & Sayings and All 24 Enigmas; Part IV 4 Clans, 2 Moieties, 19 Sub-Families, 5 Districts & 15 Ages 1791–1904; Part V Cosmology, Myths & Astronomy; Part VI Customs, Cattle Brands Il-mishiren & Il-ponot, 9-Generation 'L-oibonok Genealogy, 10 Divisions of the Day, 4 Seasons & 12 Lunar Months, 45+ Botanical Species & 8 Songs/Prayers), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), W. Scoresby & Katherine Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
     "totalEntries": 2346,
     "categories": [
       {

@@ -5051,3 +5051,481 @@ export const KAMBA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+KAMBA_UNITS.push({
+  id: "kamba-unit-19-lindblom-1920-monograph",
+  title:
+    "Unit 19: Lindblom (1920) The Akamba in British East Africa — Complete 35-Chapter Monograph (pp. I–XII, 1–607 & Figs. 1–167)",
+  description:
+    "Master the complete ethnographic, legal, religious, artistic, and material-culture lexicon of Gerhard Lindblom's 607-page monograph 'The Akamba in British East Africa' (2nd Ed., Enlarged, Uppsala 1918–1920).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "kamba-lindblom-1920-dialects-nzaiko-nthoni-19-1",
+      title:
+        "4 Dialects, 12 Ethnonyms, 3 Nžaīko Initiations (Musaī Figs. 1–16 & Mbæβanī), Nðonī / Kwiūa & Kinship (Chs. I–VII)",
+      icon: "Users",
+      description:
+        "Study Ukamba's 4 regional divisions, 12 neighbour ethnonyms, childbirth rites, the 3 Nžaīko initiations, marriage, the 11 Kwiūa name-taboo pairs, 7 women's words, and kinship terms (pp. 1–110, 569–574).",
+      tips: "In Chapters I–VII (pp. 9–110) and Addenda (pp. 569–574), Lindblom documents the 4 divisions (Ulu/Yulu, Kitui/Aþaisu, Kīkumbuliu, Mumonī), the 3 Nžaīko degrees (Kaβīu, Mbusīa with Musaī sticks Figs. 1–8 & sand drawings Figs. 9–16, and secret men's Mbæβanī), and the 11 Kwiūa in-law avoidance substitutions.",
+      words: [
+        {
+          target:
+            "kīma kīa nžaβī (Donyo Sabuk) • mutītu wa ndeī (Mtoto Andei) • Ulu (kīkamba kīluŋgalu & Kīluŋgu æβau), Kitui (aþaisu / kīþaisu; ŋgoβə vs. īkulī), Kīkumbuliu & Mumonī",
+          source:
+            "The nžaβī bean mountain • The vulture forest • The 4 Kamba divisions and dialects",
+          pronunciation:
+            "ki-ma ki-a nza-vi / mu-ti-tu wa nde-i / ki-ka-mba ki-lu-nga-lu / a-thai-su",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. I, pp. 9–17",
+        },
+        {
+          target:
+            "akīkuyu • akaβī / akīþoŋgo / alakī • andī • aþaka • asumba / maþomba • aswī (kīswī / uswīnī) • atwa (utwa) / akala • aŋgoloŋgo • asuŋgu / andu atunə",
+          source:
+            "Kamba ethnonyms for Kikuyu, Masai, Taita, Tharaka, Swahili, Giriama, Galla, Somali, and Europeans",
+          pronunciation:
+            "a-ki-ku-yu / a-ka-vi / a-ndi / a-tha-ka / a-su-mba / a-swi / a-twa / a-ngo-lo-ngo",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. I, pp. 17–22 & Addenda pp. 573–574",
+        },
+        {
+          target:
+            "1. nžaīko īla nīnī (kaβīu / īekondə) → 2. nžaīko īla nænə (mbusīa; musaī sticks Figs. 1–8 & sand drawings Figs. 9–16; mumbu prayer & muβwa cut) → 3. nžaīko īa aumə (mbæβanī / mbaβanī; ŋgala ordeals)",
+          source:
+            "The 3 Kamba initiations: knife circumcision, 7-day rhinoceros-roar initiation, and secret men's mbæβanī initiation",
+          pronunciation:
+            "nzai-ko i-la ni-ni / nzai-ko i-la ne-ne / mbu-sia / mu-sai / mbe-va-ni / nga-la",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. III, pp. 42–71 & Figs. 1–16",
+        },
+        {
+          target:
+            "nðonī (muþonwa!; ua nðonī / ua ŋgeano) • 11 kwiūa pairs: kīoko→unī, kīlonžo→ŋguaīa, īlondu→ŋgondu, nžukī→ndoŋgoŋgī, nžoka→niamu īa ndī, þomə→īβuβeonī, mwatū→mwaŋgo • 7 women's words: mbunu, kīβwū, kīseβə, kusonolīa, īŋa, mbuþæŋgə, ukatī",
+          source:
+            "In-law avoidance, 11 married women's name-taboo substitutions (pp. 93–94), and 7 women's vocabulary words (p. 574)",
+          pronunciation:
+            "ntho-ni / mu-tho-nwa / kwi-u-a / u-ni / ngu-ai-a / ngo-ndu / ndo-ngo-ngi / mbu-nu / ki-vwu",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. V pp. 89–98 & Addenda p. 574",
+        },
+        {
+          target:
+            "naū/tata/asa (au, īþə) • mwaitū/inīa (mwænīu) • mwanaaīa vs. mwanaasa • mukuwa (īkīþoβī vs. īlumaita) & mwīnawa • ŋga- & sīo- • kwoko kwa aumə (right) vs. kwoko kwa aka (left) & βululīlīa",
+          source:
+            "Kinship terms, young bride (ŋga-) & mother teknonym (sīo-) prefixes, flexed right/left burial, and grandson's first sod",
+          pronunciation:
+            "na-u / mwai-tu / mwa-na-ai-a / mu-ku-wa / mwi-na-wa / kwo-ko kwa au-me / vu-lu-li-lia",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. VI–VII, pp. 99–110",
+        },
+      ],
+      sentences: [
+        {
+          target:
+            "Ni matindu ma andu ala ma tænə. | Nīnīonīə nðakamə nīnaolulə kana.",
+          source:
+            "It is a custom handed down from our fathers (p. 3). | I saw blood, I turned the child (olula kana rite, p. 34).",
+        },
+        {
+          target:
+            "Kīumbu kī, nītukīə ukuβoīa, utunæŋgə wumbu wa uīkīīa asīŋgī!",
+          source:
+            "O sacred wild fig tree (mumbu), we have come to pray to thee; give us milky sap to smear the novices! (5th day of the 2nd nžaīko, p. 55).",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Gerhard Lindblom's Chapter I (1920, p. 9), what are the original Kamba names and meanings of Mount Donyo Sabuk and Mtoto Andei?",
+          correctAnswer:
+            "\"kīma kīa nžaβī\" ('the nžaβī bean mountain') and \"mutītu wa ndeī\" ('the vulture forest')",
+          options: [
+            "\"kīma kīa nžaβī\" ('the nžaβī bean mountain') and \"mutītu wa ndeī\" ('the vulture forest')",
+            "\"oldonyo gēri\" and \"ngare nairobi\"",
+            "\"kīeŋgo kīa nžaīko\" and \"īβuβeonī\"",
+            "\"kīsūæsīo kīa sīua\" and \"kītulīa kīa ītu\"",
+          ],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. I, p. 9",
+        },
+        {
+          type: "match_pairs",
+          prompt:
+            "Match each married woman's \"kwiūa\" name-taboo substitution or women's word in Lindblom (1920, pp. 93–94, 574) with the ordinary Kamba word it replaces:",
+          correctAnswer: "unī: Replaces kīoko ('to-morrow')",
+          pairs: [
+            {
+              left: "unī",
+              right: "Replaces kīoko ('to-morrow')",
+            },
+            {
+              left: "ndoŋgoŋgī",
+              right: "Replaces nžukī ('bee')",
+            },
+            {
+              left: "mwaŋgo",
+              right: "Replaces mwatū ('beehive')",
+            },
+            {
+              left: "kīβwū & mbunu (Addenda p. 574)",
+              right: "Women's words for manžī ('water') & mbaīkī ('castor seeds')",
+            },
+          ],
+        },
+        {
+          type: "fill_blank",
+          prompt:
+            "Complete the name of the secret 3rd Kamba initiation ('circumcision of the men', nžaīko īa aumə) into which medicine-man Mbindia initiated Lindblom at Kibwezi (1920, pp. 60–68): ___",
+          correctAnswer: "mbæβanī",
+          options: ["mbæβanī", "mukautī", "βululīlīa", "ŋgunīkīlīa"],
+          hint: "Also called mbaβanī in Kitui and Mumoni (Lindblom 1920, p. 60)",
+        },
+      ],
+    },
+    {
+      id: "kamba-lindblom-1920-clans-law-warfare-19-2",
+      title:
+        "25+ Mbaī Clans & Brands (Figs. 17–51), 5 Atumīa Meat Grades, Nsīlī Law, Kīþītū (Fig. 52), 6 Ordeals, Kīŋgolə & Warfare (Chs. VIII–XII)",
+      icon: "Shield",
+      description:
+        "Master the 25+ Kamba clans, totems, taboos, cattle/arrow/beehive marks, 5 meat-sharing grades of Atumīa, blood-money, Kīþītū & Ndundu oaths, 6 ordeals, Kīŋgolə, and the 3 war divisions (pp. 111–205).",
+      tips: "In Chapters VIII–XII (pp. 113–205), Lindblom documents the 23 Machakos clans & sub-clans, the 5 meat-sharing promotions (kukula/kukusa), the 7-stone kīþītū oath (Fig. 52), the 6 judicial ordeals, kīŋgolə lynch-law, and the 3 tactical war divisions (muena, ŋgīla, īta).",
+      words: [
+        {
+          target:
+            "mbaī (niamu īaku nī īaū?) • asī & amuī (munīambu; never touch liver ītema) • amwīī (moon mwæī; never sweep on last day of month) • aæī (never swing a child) • anžīu (drongo kīndalī; evil eye kīænī) • akīþumbə (bushbuck nðwaīa; no pottery)",
+          source:
+            "Kamba clans, totem question, and distinctive clan taboos and magical powers",
+          pronunciation:
+            "mba-i / nia-mu ia-ku ni ia-u / a-si / a-mu-i / i-te-ma / a-mwi-i / a-nzi-u / ki-e-ni",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. VIII, pp. 116–138",
+        },
+        {
+          target:
+            "kīo (cattle brands, Figs. 17–22) • uβano (arrow marks, Figs. 23–38) • mwatū beehive marks (Figs. 39–51) • 5 Atumīa Meat Grades (kukula / kukusa): 1. mutumīa wa mutwə (1 goat) → 4th bull hump (kīaə) → 5th bull cattle tongue & head",
+          source:
+            "Clan ownership brands on livestock, arrows & beehives, and the 5 meat-sharing promotions of elders",
+          pronunciation:
+            "ki-o / u-va-no / ku-ku-la / ku-ku-sa / mu-tu-mia wa mu-twe / ki-a-e",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. VIII–IX, pp. 129–145",
+        },
+        {
+          target:
+            "Nsīlī Law: Ulu man = 11 cows + 1 bull (11th cow ŋgombə īa ndulota to chief widow; 1st cow ŋgombə īa wumo by killer; Kitui = 13 cows + 1 bull); Ulu woman = 4–5 cows + 1 bull (Kitui = 7 cows + 1 bull) • mukoə ('saliva' outcast)",
+          source:
+            "Homicide blood-money schedule in Ulu and Kitui, widow's 'cow of the broken bow', and boycotted outcast",
+          pronunciation:
+            "nsi-li / ngo-mbe ia ndu-lo-ta / ngo-mbe ia wu-mo / mu-ko-e",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XI, pp. 154–161",
+        },
+        {
+          target:
+            "kuna / kuīa kīþītū (on 3 stones while standing naked on 7 stones with mukulwa twig, Fig. 52) vs. ndundu (relative's bull gall-bladder pierced with mwæa thorn) • 6 Ordeals (kīþītū kīa kīβīu, lip needle, kīuma, ŋgunīko, mbæŋgolo, burning basket) • kīŋgolə • 4 kīumo curses (revoked by kīaþīmo)",
+          source:
+            "Supreme 7-stone kīþītū oath vs. kin gall-bladder oath, 6 judicial ordeals, lynch-law assembly, and 4 curses",
+          pronunciation:
+            "ku-na ki-thi-tu / ndu-ndu / ki-u-ma / ngu-ni-ko / mbe-ngo-lo / ki-ngo-le / ki-u-mo / ki-a-thi-mo",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XI, pp. 165–185 & Fig. 52",
+        },
+        {
+          target:
+            "3 War Divisions: 1. muena (surrounding Masai mbīlī), 2. ŋgīla (seizing cattle), 3. īta (driving booty away) • ŋgulī war-flute (Fig. 53) & wea frame (Fig. 54) • tula mbaŋga • mutīætumo, mutīota, mutīoβīu & ukwalo (kwaŋga procession)",
+          source:
+            "Three tactical attack divisions, gazelle-horn war-flute, weapon purification, and warrior slayer honours",
+          pronunciation:
+            "mu-e-na / ngi-la / i-ta / ngu-li / we-a / tu-la mba-nga / mu-ti-e-tu-mo / u-kwa-lo / kwa-nga",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XII, pp. 186–205 & Figs. 53–54",
+        },
+      ],
+      sentences: [
+        {
+          target:
+            "Mukancæŋga ŋgombə īmwə; nīkīsīoka kwænda īngī ītīna, ŋgaīwa nī kīu!",
+          source:
+            "You shall flay a cow for me; if I come back and demand more afterwards, may I be eaten by this [kīþītū]! (Oath formula on 7 stones, p. 169).",
+        },
+        {
+          target:
+            "Aka-βī, aka-βī, mæ-kuka, mæ-kuka! | Nītusæuβīə uta wa mwana.",
+          source:
+            "The Masai, the Masai, they are coming, they are coming! (blown on the ŋgulī war-flute, p. 192) | We shall purify our son's bow (p. 200).",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Lindblom's account of Kamba homicide compensation (1920, pp. 154–155), what is the 11th cow (\"ŋgombə īa ndulota\") paid in Ulu for a slain man?",
+          correctAnswer:
+            "'The cow of the broken bow', given personally to the deceased's chief widow (whose brother breaks the dead man's bow string) and kept outside the clan division",
+          options: [
+            "'The cow of the broken bow', given personally to the deceased's chief widow (whose brother breaks the dead man's bow string) and kept outside the clan division",
+            "A bull sacrificed to the smiths' clan (atwī)",
+            "A heifer paid to the song-leader (ŋguī) at a dance",
+            "A calf exchanged for a beehive (mwatū)",
+          ],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XI, pp. 154–155",
+        },
+        {
+          type: "match_pairs",
+          prompt:
+            "Match each Kamba military or legal term from Lindblom (1920, pp. 165–200) with its exact definition:",
+          correctAnswer:
+            "muena, ŋgīla & īta: The 3 tactical attack divisions of a Kamba war party",
+          pairs: [
+            {
+              left: "muena, ŋgīla & īta",
+              right: "The 3 tactical attack divisions of a Kamba war party",
+            },
+            {
+              left: "mutīætumo (wearing ukwalo strip)",
+              right: "Title of honour for a warrior who slays a Masai and captures his spear",
+            },
+            {
+              left: "tula mbaŋga",
+              right: "'Break the peril' — shooting a wooden arrow at a captured weapon before use",
+            },
+            {
+              left: "ndundu (pierced with mwæa thorn)",
+              right: "Bull gall-bladder oath used between close relatives instead of the deadly kīþītū",
+            },
+          ],
+        },
+        {
+          type: "fill_blank",
+          prompt:
+            "According to Lindblom (1920, pp. 118, 124), members of the lion-totem clans \"asī\" and \"amuī\" must never eat or touch ___ ('liver'):",
+          correctAnswer: "ītema",
+          options: ["ītema", "kīænī", "mukoə", "kīaþīmo"],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. VIII, pp. 118, 124",
+        },
+      ],
+    },
+    {
+      id: "kamba-lindblom-1920-religion-medicine-calendar-19-3",
+      title:
+        "Religion (Aīmu, Īþæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī), Kuausīa Divination, Unīka Arch, 17 Ŋgondu Substances, 9 Famines & 3 Calendars (Chs. XIII–XIX)",
+      icon: "Sparkles",
+      description:
+        "Learn Kamba soul/breath dualism, sacred grove sacrifices, foreign spirit exorcism, Supreme Creator epithets, divination, epidemic expulsion, 17 ŋgondu substances, 45+ medicinal plants, 9 famines, and the 3 11-month calendars (pp. 207–354).",
+      tips: "In Chapters XIII–XIX (pp. 209–354), Lindblom documents Muluŋgu/Ŋgaī's epithets Mumbī ('Potter') and Mwatwaŋgagī ('Cleaver'), bow-and-gourd divination (kuausīa, Fig. 60), the unīka/mwītano epidemic arch, 17 ŋgondu purification herbs, 9 named famines (1836–1909), and 3 lists of the 11-month calendar.",
+      words: [
+        {
+          target:
+            "kīu (soul/shadow) vs. þaīu / mīæβa (breath/life) • aīmu & īþæmbo (14-piece kīþaŋgona & mboka banana festival) • kīlumi (with kīutu woodflour, Figs. 57–58) & 1906–1908 kīesu mania • Muluŋgu / Ŋgaī = Mumbī ('Fashioner/Potter') & Mwatwaŋgagī ('Cleaver')",
+          source:
+            "Soul vs. breath, ancestral spirits & sacred groves, exorcism dances, and Supreme Creator epithets",
+          pronunciation:
+            "ki-u / thai-u / ai-mu / i-the-mbo / ki-tha-ngo-na / mbo-ka / ki-lu-mi / mu-lu-ngu / mu-mbi / mwa-twa-nga-gi",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIII, pp. 209–253 & Figs. 55–59",
+        },
+        {
+          target:
+            "mundu muə vs. ītīma vs. mundu mwoī (makīo antidote) • kuausīa (uta musical bow + kītītī gourd with mbu pebbles, Fig. 60) • mutī (herb) vs. muþæa (magic charm activated by kīþīao) • unīka / mwītano epidemic arch & one-legged spirit Mwītualalī",
+          source:
+            "Diviner, herbalist & sorcerer, bow-and-gourd divination, magic key kīþīao, and epidemic expulsion arch",
+          pronunciation:
+            "mu-ndu mu-e / i-ti-ma / mu-ndu mwo-i / ku-au-sia / mu-the-a / ki-thi-ao / u-ni-ka / mwi-ta-no",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIV, pp. 254–275 & Figs. 60–61",
+        },
+        {
+          target:
+            "kūtīea Name Magic: elephants = nde ŋgu ('old poles'), mbonda malīa, wata, maβīa ('stones'); hippo = ŋgwaūlə; rain = Ŋgaī; honey-jar = kīnaþī; carrion = maþaŋgo • ŋgomakomī woodpecker augury (6 directions: mīsīa, ŋguŋguo, īna, βwaþī wa aumə, womu, βwaþī wa aka)",
+          source:
+            "Hunting/apicultural euphemisms and the 6 directional augury calls of the red-headed woodpecker",
+          pronunciation:
+            "ku-tie-a / nde ngu / mbo-nda ma-lia / ngwa-u-le / ngo-ma-ko-mi / mi-sia / ngu-nguo / wo-mu",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIV, pp. 288–295",
+        },
+        {
+          target:
+            "17 ŋgondu purification substances (goat chyme muīo from kīþatīa/kīþīlīko or rock hyrax kīgond/kīkīla [īlondū], mutaa, mulīndītī, kīoŋgwa, mukunda mbuī, mulalə) curing þaβu (-kuþunūa) & makwa • Snake-charmers Kimia & Kivuvu (βīnīa, Fig. 62) • Odd number taboo (mwa & 7)",
+          source:
+            "Purification substances curing ceremonial uncleanness (þaβu & makwa), snake-charming inoculation, and number magic",
+          pronunciation:
+            "ngo-ndu / ki-tha-tia / ki-ki-la / mu-ta-a / tha-vu / ma-kwa / vi-nia / mwa",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIV, pp. 295–310 & Fig. 62",
+        },
+        {
+          target:
+            "9 Historical Famines (īoa): 1. malakwə (1908–09), 2. muβuŋga / ŋgalī (1898–99), 3. ndata (~1888), 4. ŋgætīsīə, 5. uβoə, 6. kīasa, 7. īoŋgela, 8. īta (~1850), 9. kudīkīla mbua (~1836) • 3 Lists of the 11-Month Calendar (mwa/kaīa to oŋgonono/wīŋgonono, pp. 341–342) • kīsūæsīo kīa sīua",
+          source:
+            "The 9 named historical famines (1836–1909), 3 regional lists of the 11-month calendar, and solar observatory",
+          pronunciation:
+            "i-o-a ia ma-la-kwe / i-o-a ia mu-vu-nga / i-o-a ia ku-di-ki-la mbu-a / o-ngo-no-no / ki-su-e-sio kia si-u-a",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XVII–XVIII, pp. 338–342",
+        },
+      ],
+      sentences: [
+        {
+          target:
+            "Mumbī, we umbīə mwana uyu, umuīkīə næsa! | Mwænə mwīmu, osa nusu!",
+          source:
+            "O Fashioner (Mumbī), Thou who hast fashioned this child, keep it well! (p. 244) | Owner of the spirit, take a half-rupee! (epidemic expulsion prayer, p. 273).",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Lindblom's Chapter XIII (1920, p. 244), what two special names do the Akamba give to Muluŋgu (Ŋgaī) as the creator and shaper of human beings?",
+          correctAnswer:
+            "\"Mumbī\" ('the Fashioner / Potter', from kuumba) and \"Mwatwaŋgagī\" ('the Cleaver', who cleaves the fingers and toes)",
+          options: [
+            "\"Mumbī\" ('the Fashioner / Potter', from kuumba) and \"Mwatwaŋgagī\" ('the Cleaver', who cleaves the fingers and toes)",
+            "\"Kīlumi\" and \"Kīesu\"",
+            "\"Kīþītū\" and \"Ndundu\"",
+            "\"Muena\" and \"Ŋgīla\"",
+          ],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIII, p. 244",
+        },
+        {
+          type: "match_pairs",
+          prompt:
+            "Match each Kamba ritual or historical term from Lindblom (1920, pp. 270–340) with its meaning:",
+          correctAnswer:
+            "unīka & mwītano: Banana-tree/post arch and 7-day instep goat-skin strip used to expel an epidemic (kwīndukīa uwau)",
+          pairs: [
+            {
+              left: "unīka & mwītano",
+              right:
+                "Banana-tree/post arch and 7-day instep goat-skin strip used to expel an epidemic (kwīndukīa uwau)",
+            },
+            {
+              left: "kīþīao (< þīaa)",
+              right:
+                "Ritual prescriptive action that unlocks the magical power of a muþæa medicine",
+            },
+            {
+              left: "īoa īa ŋgalī / īoa īa muβuŋga",
+              right:
+                "The Great Famine of 1898–1899 ('the carriage / Uganda Railway famine' or 'rice famine')",
+            },
+            {
+              left: "īoa īa kudīkīla mbua (~1836)",
+              right:
+                "'The rain-following famine' that drove Kamba emigrants to settle at Rabai near Mombasa",
+            },
+          ],
+        },
+        {
+          type: "fill_blank",
+          prompt:
+            "Complete the Kamba term for the praying mantis, which must never be harmed because it is called 'the spirit's snuff-box' (\"mwaŋgī wa aīmu\" or ___, Lindblom 1920, p. 213):",
+          correctAnswer: "muŋgaīmu",
+          options: ["muŋgaīmu", "ŋgomakomī", "kīþaŋgona", "mukuŋga-mbua"],
+          hint: "Contracted from mwaŋgī wa aīmu (Lindblom 1920, p. 213)",
+        },
+      ],
+    },
+    {
+      id: "kamba-lindblom-1920-arts-economy-addenda-19-4",
+      title:
+        "Dress, Teeth-Chipping & Bone False Teeth, 11 Instruments, Kīūīśī, 13-Part Hut Plan (Fig. 125), 7 Traps, 28 Livestock Terms, Munīo Chains & Addenda (Chs. XX–XXXV)",
+      icon: "Hammer",
+      description:
+        "Master Kamba dress, teeth-chipping (kuseuβīa maīo) & pegged false teeth, 11 musical instruments, games, the 13-part nyumba floor plan, archery & 7 traps, 28 livestock terms, beekeeping, iron/chain-making, and Addenda (pp. 355–607).",
+      tips: "In Parts IV–VI and Addenda (pp. 355–607, Figs. 64–167), Lindblom documents the 700-cylinder brass apron (kīmæŋgo), bone false teeth pegged into tooth roots, 11 musical instruments, the 13-part hut plan (Fig. 125), 7 traps (Figs. 134–138), 28 livestock terms (pp. 486–487), munīo S-link chains (Fig. 159), and the 3 basic color roots (p. 580).",
+      words: [
+        {
+          target:
+            "ua (stretched on kīβao) • muþīta (rear bifurcated tail, Fig. 77) • kīmæŋgo (4.5-lb apron of 700 brass nžalī cylinders, Fig. 78) • ŋgunī (Fig. 79), ndekə (Fig. 80), ukumū (Figs. 81–82), kītaŋga (Figs. 84–87) & ukoþo (Fig. 88) • kuseuβīa maīo (ŋæsa chisel & pegged bone false teeth, Figs. 104–108)",
+          source:
+            "Women's dress & brass apron, ornaments, and teeth-chipping & hartebeest/goat-bone false teeth",
+          pronunciation:
+            "u-a / mu-thi-ta / ki-me-ngo / nza-li / ngu-ni / u-ku-mu / ku-se-u-via mai-o / nge-sa",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XXI, pp. 371–397 & Figs. 77–108",
+        },
+        {
+          target:
+            "4 Drums: mbalīa (ŋguþa, Fig. 109), kīþæmbə, ŋgoma & spool-shaped kīa (muβuŋgu, Fig. 110) • uta bow (Fig. 111) & mbæβə fiddle (Fig. 112, blind bard Kieti) • ŋgulī, mutulælə, so trumpet (Fig. 113) & nžumalī clarionet (Fig. 114) • kīūīśī (mancala with ŋgaīə seeds)",
+          source:
+            "The 11 Kamba musical instruments, dances, and the kīūīśī board game",
+          pronunciation:
+            "mba-lia / ki-the-mbe / ngo-ma / ki-a / mbe-ve / mu-tu-le-le / so / nzu-ma-li / ki-u-i-si",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XXII–XXIII, pp. 398–428 & Figs. 109–120",
+        },
+        {
+          target:
+            "musīə (maþanzū fence, muβīa passage, þomə council tree, īkumbī/kītsumba storehouse) • 13-Part Nyumba Hut Plan (Fig. 125: kītuə center post, ŋgetī rafters, ututu partition, we sleeping room, mwau bed, kībæta wood store) • 20-sec Fire-Drilling (male ulīndī + female kīka, Fig. 126)",
+          source:
+            "Homestead layout, 13-part beehive hut plan, and 20-second fire-drilling sticks",
+          pronunciation:
+            "mu-si-e / tho-me / ki-tu-e / u-tu-tu / we / mwa-u / u-li-ndi / ki-ka",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XXIV, pp. 431–448 & Figs. 121–126",
+        },
+        {
+          target:
+            "uta & musīə (mbalīo, uþunžī, vīano, muluka, Fig. 127) • īβaī poison (muβaī + kīlīa mbitī, kalamba, kīþūī, spider mbua-mbuī, spatula kīβalū, Fig. 128) • maŋgī bird-arrows (Fig. 129) • 7 Traps: kīambu, īkæŋgə (Figs. 134, 137), mukwa & ndīndīlīo (Figs. 135–136), kītatī / kīsuŋgula mole trap (Fig. 138)",
+          source:
+            "Archery anatomy, Acocanthera arrow-poison recipe, bird-arrows, and all 7 hunting traps",
+          pronunciation:
+            "u-ta / mu-si-e / u-thu-nzi / vi-a-no / i-va-i / ki-va-lu / ki-a-mbu / i-ke-nge / ki-su-ngu-la",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XXV–XXVI, pp. 449–474 & Figs. 127–138",
+        },
+        {
+          target:
+            "28 Livestock Terms (pp. 486–487: ŋgombə, nžau, ndæwa, morī/mwætī, kīlætī, nžao, kīluu, ītaŋgwa; mbuī, nðæŋgə, ntīa; īlondu, ndūmə, ndūlū) • mwatu beekeeping • ukī beer (nde mortar, kīkælə strainer, mwatīnə sausage fruit) • mutwī smith (kīβa hammer, mwīβīsto tongs) & munīo S-link chains (Fig. 159) • 3 Color Roots: -īu (mbīo), -æu/nžaū (īea), -tunə (ndo) & kīŋgaŋga market",
+          source:
+            "Livestock taxonomy, beekeeping, beer brewing, ironworking & S-link chains, 3 basic color roots, and women's market",
+          pronunciation:
+            "ngo-mbe / nzau / nde-wa / mwa-tu / ki-ke-le / mu-twi / mu-ni-o / ki-nga-nga",
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XXVII–XXXV & Addenda, pp. 475–584 & Figs. 139–167",
+        },
+      ],
+      sentences: [
+        {
+          target:
+            "Tali, talita, katali, mbonge, kasonzo, moli, kanyange, ngila, ngilili, mwitango!",
+          source:
+            "10-word children's counting-out rhyme recorded verbatim by Lindblom (1920, Ch. XXIII, p. 426).",
+        },
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt:
+            "In Lindblom's Chapter XXI (1920, pp. 392–396 & Figs. 104–108), how did Kamba dental specialists replace a broken chipped incisor during \"kuseuβīa maīo\"?",
+          correctAnswer:
+            "They carved a matching tooth from hartebeest or goat bone with an iron peg at the base, bored a canal into the living root with an awl (mukuβa), and tapped the bone tooth firmly into the socket",
+          options: [
+            "They carved a matching tooth from hartebeest or goat bone with an iron peg at the base, bored a canal into the living root with an awl (mukuβa), and tapped the bone tooth firmly into the socket",
+            "They tied a cowry shell (ŋgūu) to the neighbouring teeth with baobab string",
+            "They filled the gap with beeswax (mawa) and red ochre (mbu)",
+            "They extracted all remaining upper teeth",
+          ],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XXI, pp. 394–395 & Fig. 106",
+        },
+        {
+          type: "match_pairs",
+          prompt:
+            "Match each Kamba craft, trap, or architectural term from Lindblom (1920, pp. 373, 438, 473, 531) with its description:",
+          correctAnswer:
+            "kīmæŋgo (made of ~700 nžalī cylinders, Fig. 78): Girl's 4.5-lb Kikumbuliu apron of brass wire cylinders",
+          pairs: [
+            {
+              left: "kīmæŋgo (made of ~700 nžalī cylinders, Fig. 78)",
+              right: "Girl's 4.5-lb Kikumbuliu apron of brass wire cylinders",
+            },
+            {
+              left: "ulīndī (male drill) & kīka (female hearth, Fig. 126)",
+              right: "Fire-sticks that produce glowing tinder in 20 seconds",
+            },
+            {
+              left: "kītatī / kīsuŋgula (Fig. 138)",
+              right: "Hollow wooden cylinder noose-trap set inside a mole burrow",
+            },
+            {
+              left: "munīo (pinched with ŋgola on kītatī, Fig. 159)",
+              right: "Fine triangular S-link brass/iron/copper chains crafted by Kamba wire-workers",
+            },
+          ],
+        },
+        {
+          type: "fill_blank",
+          prompt:
+            "In Lindblom's Addenda (1920, p. 580), what is the traditional Kamba women's barter market day held in open places during times of scarcity: ___?",
+          correctAnswer: "kīŋgaŋga",
+          options: ["kīŋgaŋga", "kīūīśī", "kīβuīo", "kītuto"],
+          hint: "Gerhard Lindblom (1920) The Akamba in British East Africa, Addenda, p. 580",
+        },
+      ],
+    },
+  ],
+});
