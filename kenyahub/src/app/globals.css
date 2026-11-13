@@ -1138,31 +1138,31 @@ table td.text-center {
 }
 
 [data-theme="light"] .expandable-pill-shadow--left {
-  width: 18px;
+  width: 28px;
   border-radius: 0;
-  border-left: 1px solid rgba(26, 17, 8, 0.08);
+  border-left: 2px solid rgba(26, 17, 8, 0.16);
   background: linear-gradient(
     to right,
-    rgba(26, 17, 8, 0.055) 0%,
-    rgba(26, 17, 8, 0.02) 45%,
+    rgba(26, 17, 8, 0.16) 0%,
+    rgba(26, 17, 8, 0.06) 48%,
     rgba(26, 17, 8, 0) 100%
   );
-  box-shadow: none;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+  box-shadow: inset 8px 0 10px -6px rgba(26, 17, 8, 0.22);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
 }
 
 [data-theme="light"] .expandable-pill-shadow--right {
-  width: 18px;
+  width: 28px;
   border-radius: 0;
-  border-right: 1px solid rgba(26, 17, 8, 0.08);
+  border-right: 2px solid rgba(26, 17, 8, 0.16);
   background: linear-gradient(
     to left,
-    rgba(26, 17, 8, 0.055) 0%,
-    rgba(26, 17, 8, 0.02) 45%,
+    rgba(26, 17, 8, 0.16) 0%,
+    rgba(26, 17, 8, 0.06) 48%,
     rgba(26, 17, 8, 0) 100%
   );
-  box-shadow: none;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+  box-shadow: inset -8px 0 10px -6px rgba(26, 17, 8, 0.22);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
 }

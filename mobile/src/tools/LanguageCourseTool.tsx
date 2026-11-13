@@ -1514,7 +1514,7 @@ export default function LanguageCourseTool({
             <DynamicIcon emoji={currentLevel.icon} size={20} color={langColor} />
             <View style={{ flex: 1, minWidth: 0 }}>
               <Text style={[styles.levelTitleText, { color: colors.text }]}>
-                {currentLevel.name} • {progress.totalXP} XP
+                {currentLevel.name} • {progress.totalXP} XP
               </Text>
               <Text style={[styles.levelSubText, { color: colors.textMuted }]}>
                 {nextLevel
@@ -1786,8 +1786,8 @@ export default function LanguageCourseTool({
               },
             ]}
           >
-            <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: 12.5, fontWeight: '800', color: colors.text }}>
+            <View style={{ flex: 1, minWidth: 170 }}>
+              <Text style={{ fontSize: 13, fontWeight: '800', color: colors.text }}>
                 {progress.unlockAll ? 'All Modules Unlocked' : 'Progressive Skill Path'}
               </Text>
               <Text style={{ fontSize: 11, color: colors.textSecondary, marginTop: 2 }}>

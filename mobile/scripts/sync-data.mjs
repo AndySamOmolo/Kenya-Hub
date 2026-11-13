@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -29,6 +29,7 @@ function copyDirFiltered(srcDir, destDir) {
   }
 }
 
+rmSync(resolve(destination, "data/language-sources/raw"), { recursive: true, force: true });
 copyDirFiltered(resolve(source, "data"), resolve(destination, "data"));
 
 ensureDir(resolve(destination, "lib"));

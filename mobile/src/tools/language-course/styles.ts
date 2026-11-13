@@ -181,7 +181,7 @@ export const styles = StyleSheet.create({
   },
   unitHeaderCard: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: 12,
     padding: 16,
     borderRadius: 18,
@@ -191,6 +191,7 @@ export const styles = StyleSheet.create({
     width: 34,
     height: 34,
     borderRadius: 17,
+    marginTop: 2,
     alignItems: 'center',
     justifyContent: 'center',
   },

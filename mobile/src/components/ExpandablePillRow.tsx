@@ -79,6 +79,77 @@ function prepareExpandedMobileChildren(
   });
 }
 
+const SHADOW_STEPS = [
+  0.02, 0.05, 0.09, 0.14, 0.2, 0.27, 0.35, 0.44, 0.54, 0.64, 0.74, 0.83, 0.91, 0.97,
+];
+
+function EdgePocketShadow({
+  side,
+  isDark,
+  bgColor,
+}: {
+  side: "left" | "right";
+  isDark: boolean;
+  bgColor: string;
+}) {
+  const orderedSteps =
+    side === "right" ? SHADOW_STEPS : [...SHADOW_STEPS].reverse();
+
+  return (
+    <View
+      pointerEvents="none"
+      style={[
+        rowStyles.edgeShadowContainer,
+        side === "left" ? rowStyles.edgeShadowLeft : rowStyles.edgeShadowRight,
+      ]}
+    >
+      {/* Layer 1: Smooth surface fade so clipped pill text/borders dissolve cleanly */}
+      <View style={rowStyles.gradientStripRow}>
+        {orderedSteps.map((alpha, idx) => (
+          <View
+            key={`fade-${idx}`}
+            style={{
+              flex: 1,
+              backgroundColor: bgColor,
+              opacity: isDark ? alpha * 0.92 : alpha * 0.88,
+            }}
+          />
+        ))}
+      </View>
+
+      {/* Layer 2: Warm sculpted pocket shadow indicating recessed overflowing pills */}
+      <View style={[rowStyles.gradientStripRow, StyleSheet.absoluteFillObject]}>
+        {orderedSteps.map((alpha, idx) => {
+          const curve = alpha * alpha;
+          return (
+            <View
+              key={`shade-${idx}`}
+              style={{
+                flex: 1,
+                backgroundColor: isDark ? "#000000" : "#1A1108",
+                opacity: isDark ? curve * 0.68 : curve * 0.22,
+              }}
+            />
+          );
+        })}
+      </View>
+
+      {/* Layer 3: Crisp inner-pocket vertical shadow crease at the outer edge */}
+      <View
+        style={[
+          rowStyles.pocketCrease,
+          side === "left" ? { left: 0 } : { right: 0 },
+          {
+            backgroundColor: isDark
+              ? "rgba(200, 150, 30, 0.28)"
+              : "rgba(26, 17, 8, 0.18)",
+          },
+        ]}
+      />
+    </View>
+  );
+}
+
 export interface ExpandablePillRowProps {
   children: React.ReactNode;
   style?: StyleProp<ViewStyle>;
@@ -87,11 +158,10 @@ export interface ExpandablePillRowProps {
 }
 
 /**
- * Renders a single-row horizontal scrolling pill bar on mobile without any left-side
- * fade or shadow, and with a clear, high-contrast right-scroll chevron indicator
- * whenever additional pills overflow to the right.
- * When there are more than `threshold` (default 5) pills, also renders a dropdown icon
- * button on the right that toggles displaying all pills vertically (wrapped).
+ * Renders a single-row horizontal scrolling pill bar on mobile with sculpted
+ * left/right scroll-pocket shadows whenever pills overflow to either side.
+ * When there are more than `threshold` (default 5) pills, renders a single dropdown
+ * icon button on the right that toggles displaying all pills vertically (wrapped).
  */
 export function ExpandablePillRow({
   children,
@@ -108,6 +178,7 @@ export function ExpandablePillRow({
   const contentWidthRef = useRef(0);
   const layoutWidthRef = useRef(0);
 
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > 3);
 
   const updateScrollState = useCallback(() => {
@@ -115,7 +186,8 @@ export function ExpandablePillRow({
     const cw = contentWidthRef.current;
     const lw = layoutWidthRef.current;
     if (lw <= 0 || cw <= 0) return;
-    setCanScrollRight(cw - lw - x > 4);
+    setCanScrollLeft(x > 3);
+    setCanScrollRight(cw - lw - x > 3);
   }, []);
 
   const handleLayout = useCallback(
@@ -142,16 +214,6 @@ export function ExpandablePillRow({
     [updateScrollState]
   );
 
-  const handleScrollRightPress = useCallback(() => {
-    const step = Math.max(140, layoutWidthRef.current * 0.65);
-    const maxOffset = Math.max(
-      0,
-      contentWidthRef.current - layoutWidthRef.current
-    );
-    const targetX = Math.min(scrollXRef.current + step, maxOffset);
-    scrollViewRef.current?.scrollTo({ x: targetX, animated: true });
-  }, []);
-
   const flatContent = StyleSheet.flatten(contentContainerStyle) || {};
   const {
     marginBottom,
@@ -174,13 +236,7 @@ export function ExpandablePillRow({
 
   if (count <= threshold) {
     return (
-      <View
-        style={[
-          rowStyles.rowWrap,
-          outerSpacing,
-          style,
-        ]}
-      >
+      <View style={[rowStyles.rowWrap, outerSpacing, style]}>
         <View style={rowStyles.viewportWrap}>
           <ScrollView
             ref={scrollViewRef}
@@ -196,35 +252,28 @@ export function ExpandablePillRow({
                 alignItems: "center",
                 gap: 8,
                 paddingVertical: 2,
+                paddingRight: canScrollRight ? 14 : 0,
               },
               innerContentStyle,
             ]}
           >
             {children}
           </ScrollView>
-        </View>
-        {canScrollRight && (
-          <Pressable
-            android_ripple={androidRipple(theme.rippleColor, true)}
-            onPress={handleScrollRightPress}
-            hitSlop={8}
-            accessibilityRole="button"
-            accessibilityLabel="Scroll right to see more options"
-            style={[
-              rowStyles.actionBtn,
-              {
-                borderColor: theme.gold,
-                backgroundColor: theme.surfaceContainerHigh,
-              },
-            ]}
-          >
-            <Ionicons
-              name="chevron-forward"
-              size={15}
-              color={theme.gold}
+          {canScrollLeft && (
+            <EdgePocketShadow
+              side="left"
+              isDark={theme.isDark}
+              bgColor={theme.bgPrimary}
             />
-          </Pressable>
-        )}
+          )}
+          {canScrollRight && (
+            <EdgePocketShadow
+              side="right"
+              isDark={theme.isDark}
+              bgColor={theme.bgPrimary}
+            />
+          )}
+        </View>
       </View>
     );
   }
@@ -233,6 +282,7 @@ export function ExpandablePillRow({
     <View
       style={[
         rowStyles.rowWrap,
+        { alignItems: expanded ? "flex-start" : "center" },
         outerSpacing,
         style,
       ]}
@@ -272,36 +322,28 @@ export function ExpandablePillRow({
                 alignItems: "center",
                 gap: 8,
                 paddingVertical: 2,
+                paddingRight: canScrollRight ? 14 : 0,
               },
               innerContentStyle,
             ]}
           >
             {children}
           </ScrollView>
+          {canScrollLeft && (
+            <EdgePocketShadow
+              side="left"
+              isDark={theme.isDark}
+              bgColor={theme.bgPrimary}
+            />
+          )}
+          {canScrollRight && (
+            <EdgePocketShadow
+              side="right"
+              isDark={theme.isDark}
+              bgColor={theme.bgPrimary}
+            />
+          )}
         </View>
-      )}
-
-      {!expanded && canScrollRight && (
-        <Pressable
-          android_ripple={androidRipple(theme.rippleColor, true)}
-          onPress={handleScrollRightPress}
-          hitSlop={8}
-          accessibilityRole="button"
-          accessibilityLabel="Scroll right to see more pills"
-          style={[
-            rowStyles.actionBtn,
-            {
-              borderColor: theme.gold,
-              backgroundColor: theme.surfaceContainerHigh,
-            },
-          ]}
-        >
-          <Ionicons
-            name="chevron-forward"
-            size={15}
-            color={theme.gold}
-          />
-        </Pressable>
       )}
 
       <Pressable
@@ -315,6 +357,7 @@ export function ExpandablePillRow({
         style={[
           rowStyles.actionBtn,
           {
+            marginTop: expanded ? 2 : 0,
             borderColor: expanded ? theme.gold : theme.outlineVariant,
             backgroundColor: expanded
               ? theme.primaryContainer
@@ -335,8 +378,8 @@ export function ExpandablePillRow({
 const rowStyles = StyleSheet.create({
   rowWrap: {
     flexDirection: "row",
-    alignItems: "flex-start",
-    gap: 6,
+    alignItems: "center",
+    gap: 8,
     width: "100%",
     maxWidth: "100%",
     overflow: "hidden",
@@ -347,6 +390,32 @@ const rowStyles = StyleSheet.create({
     position: "relative",
     overflow: "hidden",
   },
+  edgeShadowContainer: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    width: 32,
+    zIndex: 10,
+  },
+  edgeShadowLeft: {
+    left: 0,
+  },
+  edgeShadowRight: {
+    right: 0,
+  },
+  gradientStripRow: {
+    flex: 1,
+    flexDirection: "row",
+    width: "100%",
+    height: "100%",
+  },
+  pocketCrease: {
+    position: "absolute",
+    top: 3,
+    bottom: 3,
+    width: 2,
+    borderRadius: 2,
+  },
   actionBtn: {
     width: 30,
     height: 30,
@@ -354,7 +423,6 @@ const rowStyles = StyleSheet.create({
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 2,
     flexShrink: 0,
   },
 });
