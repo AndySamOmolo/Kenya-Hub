@@ -490,3 +490,25 @@ flowchart LR
 2. **Dual-Platform Offline Synergy**: The `scripts/sync-data.mjs` bridge shares verified datasets between the Next.js web application and the Expo React Native mobile app, allowing both platforms to maintain identical calculations and data without code duplication.
 3. **Privacy-Preserving Local Analytics**: Tool usage and pinned favorites are stored in the user's browser `localStorage` and mobile `AsyncStorage`, providing personalized dashboards and popularity metrics without intrusive trackers or advertising cookies.
 4. **Automated Regulatory Auditing**: The `scripts/audit-tools.mjs` test runner verifies route coverage, dataset freshness, and official government sources during CI/CD to prevent stale data in production.
+
+---
+
+## 10. Modularity & Auditability Refactoring Summary
+
+To make every course, dictionary, proverb collection, and interactive tool easy to audit and edit independently without navigating multi-thousand-line files or hidden post-hoc `.push()` mutations:
+
+1. **Per-Language Course & Grammar Modules (`kenyahub/src/data/courses/<lang>/`)**:
+   - Extracted all 15 previously embedded courses (`swahili`, `kalenjin`, `mijikenda`, `meru`, `somali`, `embu`, `taita`, `taveta`, `pokomo`, `borana`, `rendille`, `samburu`, `ilchamus`, `pokot`, `daasanach`) out of the 61,493-line `cultural-wisdom.ts` monolith into dedicated `courses/<lang>/course.ts` and `courses/<lang>/grammar-reference.ts` modules matching the other 8 languages.
+   - Folded all 50+ scattered runtime `.push()` mutations and string-replacement loops into clean, declarative arrays.
+2. **Per-Language Proverb Modules (`kenyahub/src/data/courses/proverbs/`)**:
+   - Split all 973 verified proverbs across 23 per-language files (`proverbs/<lang>.ts`), `proverbs/types.ts`, `proverbs/ethnographic-wisdom.ts`, and `proverbs/index.ts`, reducing `cultural-wisdom.ts` from 61,493 lines to a 61-line re-export barrel.
+3. **Dictionary & Language-Source Sub-Modules (`kenyahub/src/data/dictionaries/` & `language-sources/`)**:
+   - Split the 4,450-line `dictionaries/metadata.ts` into `types.ts`, `catalog.ts`, `random-words.ts`, `lexical-highlights.ts`, and a 31-line `metadata.ts` barrel.
+   - Extracted monograph summaries into `language-sources/ethnographic-summaries.ts` and folded post-hoc mutations in `language-sources/index.ts` and `blog-posts.ts` directly into their declarative arrays.
+4. **Web & Mobile Component Decomposition**:
+   - Split `kenyahub/src/components/learn/GamesHub.tsx` (1,442 lines) into 6 individual game modules under `components/learn/games/` plus a 278-line hub orchestrator.
+   - Extracted `kenyahub/src/lib/dictionary-loader.ts` from `app/tools/kenyan-translator/page.tsx`.
+   - Split mobile multi-tool bundles into one-tool-per-file directories under `mobile/src/tools/finance/` (11 tools), `mobile/src/tools/transport/` (8 tools), `mobile/src/tools/education/` (5 tools), `mobile/src/tools/advanced/` (4 tools), `mobile/src/tools/language-course/`, `mobile/src/tools/translator/`, `mobile/src/tools/directory/`, and `mobile/src/components/home/` while keeping barrel re-exports for backwards compatibility.
+5. **Zero-Error Strict Auditing (`kenyahub/scripts/audit-tools.mjs`)**:
+   - Cleaned all 14 deprecated/unregistered tool route directories via `scripts/clean-removed-tools.mjs` and upgraded `scripts/audit-tools.mjs` to validate all 25 registered tools, 25 routes, and all 23 modular language courses, grammar references, proverb files, and dictionaries (`OK: 25 | Courses OK: 23/23 | Errors: 0`).
+

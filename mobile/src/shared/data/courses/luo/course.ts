@@ -3053,17 +3053,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
   }
 ];
 
-export const LUO_UNITS: CourseUnit[] = [
-  ...GRAMMAR_MODULE_UNITS,
-  PHRASEBOOK_UNIT,
-  EXERCISES_UNIT,
-  ORAL_LITERATURE_UNIT,
-  ...PUBLIC_DOMAIN_DATASET_UNITS
-];
-
-export default LUO_COURSE;
-
-LUO_UNITS.push({
+export const JOHNSTON_1902_COURSE_EXTENSION: CourseUnit = {
   id: "luo-unit-johnston-1902-jaluo-set3",
   title: "Unit 11: Sir Harry Johnston (1902) Ch. XVIII Ja-luo (Nyifwa) Ethnography & Set 3 Vocabulary (pp. 756–795, 926–935)",
   description: "Explore Chapter XVIII Ja-luo ethnography (Chieng sun worship, Nyaluo jasper beads, Uvino smiths, Kiviri ordeal, Chief Odua's prophecy) and Set 3 vocabulary & phonetic footnotes [-11], [-12], [-13] (pp. 926–935).",
@@ -3117,7 +3107,7 @@ LUO_UNITS.push({
       ]
     }
   ]
-});
+};
 
 // Complete Line-by-Line Curriculum Supplement for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
 export const NORTHCOTE_1907_COURSE_EXTENSION: CourseUnit = {
@@ -3181,4 +3171,14 @@ export const NORTHCOTE_1907_COURSE_EXTENSION: CourseUnit = {
     }
   ]
 };
-LUO_UNITS.push(NORTHCOTE_1907_COURSE_EXTENSION);
+export const LUO_UNITS: CourseUnit[] = [
+  ...GRAMMAR_MODULE_UNITS,
+  PHRASEBOOK_UNIT,
+  EXERCISES_UNIT,
+  ORAL_LITERATURE_UNIT,
+  ...PUBLIC_DOMAIN_DATASET_UNITS,
+  JOHNSTON_1902_COURSE_EXTENSION,
+  NORTHCOTE_1907_COURSE_EXTENSION,
+];
+
+export default LUO_COURSE;

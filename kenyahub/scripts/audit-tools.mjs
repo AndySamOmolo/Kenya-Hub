@@ -6,6 +6,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const sourceRoot = join(root, "src");
 const toolsRoot = join(sourceRoot, "app", "tools");
 const dataRoot = join(sourceRoot, "data");
+const coursesRoot = join(dataRoot, "courses");
+const proverbsRoot = join(coursesRoot, "proverbs");
+const dictionariesRoot = join(dataRoot, "dictionaries");
 const manifestPath = join(dataRoot, "tool-data-sources.json");
 const reportRoot = join(root, "reports");
 const checkSources = process.argv.includes("--check-sources");
@@ -41,15 +44,19 @@ function findImportedData(slug) {
 
 function inspectData(filePath, config = {}) {
   if (extname(filePath) !== ".json") {
-    return { file: relative(root, filePath).replaceAll("\\", "/"), lastUpdated: config.lastUpdated ?? null, source: config.source ?? config.sourceUrl ?? null };
+    return {
+      file: relative(root, filePath).replaceAll("\\", "/"),
+      lastUpdated: config.lastUpdated ?? null,
+      source: config.source ?? config.sourceUrl ?? null,
+    };
   }
   try {
     const data = JSON.parse(readFileSync(filePath, "utf8"));
     const isArray = Array.isArray(data);
     return {
       file: relative(root, filePath).replaceAll("\\", "/"),
-      lastUpdated: (!isArray && data.lastUpdated) ? data.lastUpdated : (config.lastUpdated ?? null),
-      source: (!isArray && (data.source ?? data.sourceUrl)) ? (data.source ?? data.sourceUrl) : (config.source ?? config.sourceUrl ?? null),
+      lastUpdated: !isArray && data.lastUpdated ? data.lastUpdated : (config.lastUpdated ?? null),
+      source: !isArray && (data.source ?? data.sourceUrl) ? (data.source ?? data.sourceUrl) : (config.source ?? config.sourceUrl ?? null),
     };
   } catch (error) {
     return {
@@ -123,6 +130,49 @@ for (const slug of orphanRoutes) {
   issues.push(`${slug}: route exists in src/app/tools but is missing from src/lib/tools-registry.ts`);
 }
 
+// ── Audit Modular Language Courses, Grammar References & Proverbs ──
+const courseMetaText = readFileSync(join(coursesRoot, "metadata.ts"), "utf8");
+const courseIds = [...courseMetaText.matchAll(/"([a-z]+)"/g)].map((m) => m[1]);
+const coursesAudit = [];
+
+for (const langId of courseIds) {
+  const coursePath = join(coursesRoot, langId, "course.ts");
+  const grammarPath = join(coursesRoot, langId, "grammar-reference.ts");
+  const proverbPath = join(proverbsRoot, `${langId}.ts`);
+  const dictJsonPath = join(dictionariesRoot, `${langId}.json`);
+
+  const hasCourseFile = existsSync(coursePath);
+  const hasGrammarFile = langId === "luo" ? existsSync(join(coursesRoot, "luo", "grammar-reference.ts")) : existsSync(grammarPath);
+  const hasProverbFile = existsSync(proverbPath);
+  const hasDictJson = existsSync(dictJsonPath);
+
+  let dictEntries = 0;
+  if (hasDictJson) {
+    try {
+      const parsedDict = JSON.parse(readFileSync(dictJsonPath, "utf8"));
+      dictEntries = (parsedDict.categories || []).reduce((acc, c) => acc + (c.entries?.length || 0), 0);
+    } catch (err) {
+      issues.push(`dictionary/${langId}.json: JSON parse error (${err.message})`);
+    }
+  } else {
+    issues.push(`dictionary/${langId}.json: missing dictionary JSON file`);
+  }
+
+  if (!hasCourseFile) issues.push(`courses/${langId}/course.ts: missing modular course file`);
+  if (!hasGrammarFile) issues.push(`courses/${langId}/grammar-reference.ts: missing modular grammar file`);
+  if (!hasProverbFile) issues.push(`courses/proverbs/${langId}.ts: missing modular proverbs file`);
+
+  coursesAudit.push({
+    languageId: langId,
+    courseFile: hasCourseFile ? `src/data/courses/${langId}/course.ts` : null,
+    grammarFile: hasGrammarFile ? `src/data/courses/${langId}/grammar-reference.ts` : null,
+    proverbsFile: hasProverbFile ? `src/data/courses/proverbs/${langId}.ts` : null,
+    dictionaryFile: hasDictJson ? `src/data/dictionaries/${langId}.json` : null,
+    dictionaryEntries: dictEntries,
+    status: hasCourseFile && hasGrammarFile && hasProverbFile && hasDictJson ? "ok" : "error",
+  });
+}
+
 if (checkSources) {
   const urls = [...new Set(tools.map((tool) => tool.sourceUrl).filter(Boolean))];
   const urlResults = new Map();
@@ -140,23 +190,26 @@ if (checkSources) {
   }
 }
 
+const courseErrors = coursesAudit.filter((c) => c.status !== "ok").length;
 const summary = {
   generatedAt: today.toISOString(),
   registryCount: uniqueRegistrySlugs.length,
   routeCount: routeSlugs.length,
+  courseCount: coursesAudit.length,
   okCount: tools.filter((tool) => tool.status === "ok").length,
   reviewCount: tools.filter((tool) => tool.status === "review").length,
   staleCount: tools.filter((tool) => tool.status === "stale").length,
-  errorCount: tools.filter((tool) => tool.status === "error").length + orphanRoutes.length,
+  errorCount: tools.filter((tool) => tool.status === "error").length + orphanRoutes.length + courseErrors,
   issues,
   tools,
+  courses: coursesAudit,
 };
 
 mkdirSync(reportRoot, { recursive: true });
 writeFileSync(join(reportRoot, "tool-audit.json"), `${JSON.stringify(summary, null, 2)}\n`);
 
-console.log(`Audited ${summary.registryCount} registered tools across ${summary.routeCount} route directories.`);
-console.log(`OK: ${summary.okCount} | Review: ${summary.reviewCount} | Stale: ${summary.staleCount} | Errors: ${summary.errorCount}`);
+console.log(`Audited ${summary.registryCount} registered tools (${summary.routeCount} routes) and ${summary.courseCount} modular language courses.`);
+console.log(`OK: ${summary.okCount} | Courses OK: ${coursesAudit.length - courseErrors}/${coursesAudit.length} | Review: ${summary.reviewCount} | Stale: ${summary.staleCount} | Errors: ${summary.errorCount}`);
 if (issues.length) {
   console.log("\nIssues requiring attention:");
   for (const issue of issues) console.log(`- ${issue}`);

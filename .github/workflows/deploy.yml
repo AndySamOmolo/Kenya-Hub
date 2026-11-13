@@ -25,22 +25,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Remove deprecated tool route directories if present
-        run: |
-          rm -rf src/app/tools/child-growth-schedule \
-                 src/app/tools/driving-license-guide \
-                 src/app/tools/housing-levy-calculator \
-                 src/app/tools/kcse-school-rankings \
-                 src/app/tools/kenya-postal-codes \
-                 src/app/tools/kikuyu-proverbs \
-                 src/app/tools/matatu-routes \
-                 src/app/tools/passport-id-fees \
-                 src/app/tools/public-holidays \
-                 src/app/tools/school-terms \
-                 src/app/tools/solar-roi-calculator \
-                 src/app/tools/vehicle-insurance-calculator \
-                 src/app/tools/ward-constituency-finder
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -48,8 +32,14 @@ jobs:
           cache: npm
           cache-dependency-path: kenyahub/package-lock.json
 
+      - name: Remove deprecated tool route directories if present
+        run: node scripts/clean-removed-tools.mjs
+
       - name: Install web dependencies
         run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Audit tools and modular courses
+        run: npm run audit:tools:strict
 
       - name: Build static web export
         run: npm run build

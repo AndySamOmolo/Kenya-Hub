@@ -1055,6 +1055,35 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
       }
     ],
     "content": "## The Grammatical Precision of Dholuo (*Tho-Luo*)\n\nAcross **C. W. Hobley's *Eastern Uganda*** (1902), **G. A. S. Northcote's *The Nilotic Kavirondo*** (1907), and the **Mill-Hill Fathers' *A Handbook of the Kavirondo Language*** (Kisumu, 1920), early linguists marveled at the morphological elegance of **Dholuo**—especially its consonant-mutation plurals, its construct state (*apocope*), and its regular alternation between transitive and intransitive verb stems.\n\n## 1. Consonant Mutation in Dholuo Noun Plurals & Construct State (Mill-Hill 1920 & Hobley 1902)\n\nUnlike prefixing or simple suffixing languages, Dholuo forms plurals by **mutating the final stem consonant** (voiceless ↔ voiced, nasal+stop ↔ voiceless stop, or *l/r* → *nd*) and adding *-e / -ni / -i*:\n\n| Singular Noun | Plural Noun | Construct State (\"of...\") | Consonant Mutation Rule (Mill-Hill 1920) |\n|---|---|---|---|\n| **ot** (house) | **udi** (houses) | **od** (*od ruoth* = house of the chief) | Final *-t* voices to *-d-*, root vowel raises *o → u* |\n| **got** (hill) | **gode** (hills) | **god** (*god Kisumu* = hill of Kisumu) | Final *-t* voices to *-d-* |\n| **kid-i** (stone) | **kit-e** (stones) | **kit** (*kit nam* = stone of the lake) | Voiced *-d-* devoiced to *-t-* in plural & construct |\n| **puodh-o** (garden) | **puoth-e** (gardens) | **puoth** | Voiced dental *-dh-* devoiced to *-th-* |\n| **chogo** (bone) | **choke** (bones) | **chok** | Voiced *-g-* devoiced to *-k-* |\n| **guok** (dog) | **guogi** (dogs) | **guok** | Voiceless *-k* voiced to *-g-* |\n| **kom** (chair) | **kombe** (chairs) | **kom** | Final *-m* expands to *-mb-* |\n| **pala** (knife) | **pelni** (knives) | **ik** | Vowel harmony *a → e* + *-ni* |\n| **dhiang'** (cow) | **dhok** (cattle) | **dher** (*dherano* = that cow of mine) | Suppletive Nilotic pastoral root |\n\n## 2. Transitive vs. Intransitive Verb Pairs (Mill-Hill 1920, Chapter VIII)\n\nIn Chapter VIII of *A Handbook of the Kavirondo Language* (1920), the Mill-Hill Fathers document how Dholuo converts a **transitive verb** (taking a direct object) into an **intransitive / antipassive verb** (describing the general activity) by softening the stem vowel (*a → e*, *o → e*) and mutating the consonant:\n- **chamo** (to eat something, *trans.*: *Achamo kuon*, \"I eat ugali\") → **chiemo** (to dine / eat, *intrans.*: *Achiemo*, \"I am eating\").\n- **madho** (to drink something, *trans.*: *Amadho pi*, \"I drink water\") → **metho** (to drink / carouse, *intrans.*).\n- **tedo** (to cook a meal, *trans.*) → **teto** (to do the cooking, *intrans.*).\n- **goyo** (to beat/strike someone, *trans.*) → **gocho** (to strike/fight, *intrans.*).\n- **chulo** (to pay a debt, *trans.*) → **chudo** (to make payment, *intrans.*).\n\n\n## 3. Personal Subject Prefixes, Aspect & Directionals in the 1920 *Kavirondo Handbook*\n\nChapters V–IX of the Mill-Hill Fathers' *A Handbook of the Kavirondo Language* (1920, pp. 24–68) demonstrate how Dholuo verbs combine pronominal prefixes, aspectual tone, and directional extensions:\n1. **Six Pronominal Subject Prefixes**:\n   - **a-** (1st sg. \"I\": *a-dhi* \"I go\")\n   - **i-** (2nd sg. \"you\": *i-dhi* \"you go\")\n   - **o-** (3rd sg. \"he/she/it\": *o-dhi* \"he/she goes\")\n   - **wa-** (1st pl. \"we\": *wa-dhi* \"we go\")\n   - **u-** (2nd pl. \"you all\": *u-dhi* \"you all go\")\n   - **gi-** (3rd pl. \"they\": *gi-dhi* \"they go\")\n2. **Completive (*-se-*) vs. Habitual (*ga*) & Future (*biro /ang'*)**:\n   - Inserting **-se-** after the subject prefix marks completed action (*a-se-chiemo* \"I have already eaten\"; *o-se-chopo* \"he has arrived\").\n   - Placing **biro** (\"to come\") before the infinitive marks the near future (*a-biro dhi Kisumo* \"I am going to go to Kisumu\").\n3. **Ventive (\"Hither\") vs. Itive (\"Thither\") Verbal Endings**: Many Dholuo motion verbs distinguish movement toward the speaker from movement away: e.g., **biro** (\"to come hither\") vs. **dhiyo** (\"to go thither\"); **kelo** (\"to bring here\") vs. **tero** (\"to take/carry away\").\n\n## 4. Traditional Time-of-Day Birth Naming (*Nying' mag Sa*) & Oral Fables\n\nBoth G. A. S. Northcote (*\"The Nilotic Kavirondo\"*, JRAI Vol. 37, 1907, pp. 58–66) and C. W. Hobley (1902, 1903) documented how Dholuo personal names record the exact hour of the solar cycle or agricultural circumstance of a child's birth (with **O-** for boys and **A-** for girls):\n- **Okinyi / Akinyi**: Born at early dawn (*okinyi*).\n- **Onyango / Anyango**: Born in the mid-morning sun (c. 8:00–10:00 a.m.).\n- **Ochieng' / Achieng'**: Born at high noon when the sun (*chieng'*) shines fiercely overhead.\n- **Odhiambo / Adhiambo**: Born in the late afternoon (*odhiambo*, c. 4:00–6:00 p.m.).\n- **Otieno / Atieno**: Born at night (*otieno*).\n- **Okoth / Akoth**: Born during a rainstorm (*koth*); **Okeyo / Akeyo**: Born during the millet harvest (*keyo*).\n### Explore Dholuo on KenyaHub:\n- [Learn Dholuo (10-Unit / 30-Module Interactive Course & Phrasebook)](/tools/learn/luo/)\n- [Search 1,928 Verified Dholuo Dictionary Entries](/tools/kenyan-translator/)"
+  },
+  {
+    "slug": "johnston-1902-uganda-protectorate-vol2-kenya-languages-ethnology-anthropometry",
+    "title": "Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (1902): West Elgon's Solution to Bleek's Bantu Prefix Enigma, Dr. Shrubsall's Anthropometric Tables, and Comparative Vocabularies Across 19 Kenyan Languages",
+    "excerpt": "Inside the complete 1902 Kenya chapters and vocabularies of Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–1018): how Mount Elgon's Lukonde/Masaba dialects solved Bleek's prefix hypothesis, Dr. F. C. Shrubsall's craniometric tables, 86 plates/maps/illustrations, and parallel lexicons from Turkana and Pokot to Maasai, Nandi, Dholuo, Luhya, Ekegusii, and Gĩkũyũ.",
+    "author": "KenyaHub Linguistic Heritage",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "updatedAt": "2026-11-12T18:00:00.000Z",
+    "tags": [
+      "Languages",
+      "Culture & History",
+      "Luhya",
+      "Luo",
+      "Maasai",
+      "Kalenjin",
+      "Pokot",
+      "Turkana",
+      "Kisii",
+      "Kikuyu"
+    ],
+    "readTime": 8,
+    "sources": [
+      {
+        "sourceId": "johnston-uganda-protectorate-1902",
+        "title": "The Uganda Protectorate, Vol. II (Sir Harry H. Johnston, G.C.M.G., K.C.B., London: Hutchinson & Co., 1902, pp. i–xx, 471–1018)",
+        "note": "3 Coloured Plates (46–48), Maps 8 & 9 (1:4,000,000), 81 Illustrations, Ch. XIII Anthropology & Dr. F. C. Shrubsall's Tables A–F (pp. 471–509), Ch. XVII Bantu Kavirondo & Masaba (pp. 722–755), Ch. XVIII Nilotic Ja-luo (pp. 756–795), Ch. XIX Masai, Turkana, Sūk, Elgumi, Nandi, Kamásia & Andorobo (pp. 796–884), and Ch. XX Languages & Vocabularies Sets 1, 2, 3, 8, 9 (pp. 885–1001) + Index (pp. 1003–1018)."
+      }
+    ],
+    "content": "## A Monument of Early 20th-Century East African Ethnology and Comparative Philology\n\nPublished in London by Hutchinson & Co. in 1902, Volume II of **Sir Harry Johnston's *The Uganda Protectorate*** (covering what was then the Eastern Province of the Uganda Protectorate—stretching from the Sio River, Mount Elgon, and Lake Rudolf across Kavirondo, Nandi, Baringo, and the Rift Valley to Nairobi and Kikuyu) remains one of the foundational primary sources for Kenyan linguistics, ethnography, and physical anthropology.\n\n---\n\n## 1. How Mount Elgon's *Lukonde* and *Masaba* Solved Bleek's Bantu Prefix Enigma (pp. 889–891, 1001)\n\nFor half a century after **Dr. Wilhelm Bleek** coined the term *Bantu*, comparative philologists struggled to explain why Bantu noun classes with nasal prefixes—such as Class 1 **mu-**, Class 3 **mu-**, Class 4 **mi-**, and Class 6 **ma-**—governed pronominal, adjectival, and verbal concords with **gu- (u-)**, **gi- (i-)**, and **ga- (a-)** instead of *mu-*, *mi-*, and *ma-*.\n\nDuring his 1900–1901 expedition around the western and southern slopes of **Mount Elgon**, Sir Harry Johnston (together with Sub-Commissioner **C. W. Hobley**, who independently reported the 10th prefix *Tsi-/Ci-* in January 1901) discovered that the archaic **Lukonde** and **Lumasaba** dialects preserve the original **disyllabic Bantu prefixes** intact (p. 1001):\n\n| Class | Lukonde Archaic Disyllabic Prefix (p. 1001) | Concord Particle | Standard Contracted Bantu Prefix | Example Meaning |\n|---|---|---|---|---|\n| **Class 1** | **Umu-** | *u-, mu-* | *Mu- / M-* | Singular person (*Umu-ndu*) |\n| **Class 2** | **Baba-** | *ba-* | *Ba- / Wa-* | Plural people (*Baba-ndu*) |\n| **Class 3** | **Gumu- (Kumu-)** | *gu-* | *Mu- / M-* | Tree, arm (*Gumu-kono*) |\n| **Class 4** | **Gimi- (Kimi-)** | *gi-* | *Mi-* | Trees, arms (*Gimi-kono*) |\n| **Class 5** | **Ili-** | *li-* | *Li- / Ri- / I-* | Eye, tooth, stone |\n| **Class 6** | **Gama- (Kama-)** | *ga-* | *Ma-* | Liquids, plurals (*Gama-lasiri* 'blood') |\n| **Class 7** | **Ki- (Si-)** | *ki-, si-* | *Ki- / Chi-* | Thing, custom, instrument |\n| **Class 8** | **Bibi-** | *bi-* | *Bi- / Vi-* | Things (plural of Class 7) |\n| **Class 9** | **In- (Im-)** | *i-, yi-* | *N- / In-* | Animals, house |\n| **Class 10** | **Zi-, Tsi- (Ci-)** | *zi-, tsi-, ci-* | *N- / Tsi- / Zi-* | Plural of Classes 9 & 11 |\n| **Class 11** | **Lulu-** | *lu-* | *Lu- / U-* | Long/thin objects, tongue |\n| **Class 12** | **Ruru- (Tutu-)** | *ru-, tu-* | *Tu-* | Plural of Class 13 diminutives |\n| **Class 13** | **Kaka-** | *ka-* | *Ka-* | Diminutive singular (*Akhana* 'little child') |\n| **Class 14** | **Bubu-** | *bu-* | *Bu- / U-* | Abstract nouns, night, bow |\n| **Class 15** | **Kuku- (Gu-)** | *ku-, gu-* | *Ku-* | Verbal infinitive, arm/leg/ear |\n| **Class 16** | **Ha- (Wa-)** | *ha-, wa-* | *Pa- / Ha-* | Near locative ('at / upon') |\n\n---\n\n## 2. Dr. Frank C. Shrubsall's Craniometric & Osteometric Tables (Chapter XIII, pp. 488–509)\n\nIn Chapter XIII (pp. 488–509), **Dr. Frank C. Shrubsall** of Cambridge University analyzed the physical measurements taken by Sir Harry Johnston and Mr. Walter Doggett across twenty East African populations, including **39 individual Kenyan subjects** recorded by name and age across **Tables A–F (pp. 496–509)**:\n\n| Group (pp. 492–493) | Cephalic Index | Length-Height Index | Nasal Index | Mean Stature (cm) | Span (Stature=100) | Sitting Height | Lower Limb |\n|---|---|---|---|---|---|---|---|\n| **Kavirondo (Nos. 25–32)** | 74.5 | 63.9 | 89.0 | 168.4 | 104.7 | 50.8 | 50.5 |\n| **Swahili (incl. No. 39 Fatuma ♀)** | 76.3 | 63.6 | 87.3 | 163.6 | 103.5 | 50.6 | 50.3 |\n| **Sūk / Pokot (Nos. 59–68)** | 74.5 | 63.4 | 82.0 | 166.9 | 104.2 | 49.4 | 51.4 |\n| **Masai (Nos. 69–76)** | 72.9 | 63.6 | 76.1 | 171.2 | 103.5 | 49.0 | 51.4 |\n| **Andorobo / Ogiek (Nos. 77–87)** | 74.5 | 63.6 | 81.5 | 162.8 | 103.5 | 50.1 | 50.7 |\n| **Kamásia / Tugen (Nos. 88–92)** | 74.1 | 63.3 | 77.7 | 172.9 | 104.2 | 48.7 | 52.3 |\n| **Nandi & Lumbwa (Nos. 93–99)** | 73.3 | 62.4 | 78.8 | 168.8 | 104.4 | 49.4 | 51.3 |\n\n---\n\n## 3. Conversational Nandi and Masai Phrases (Chapter XX, pp. 925–926)\n\nAt the close of Vocabulary Set 2 (pp. 925–926), Johnston appended **19 conversational phrases in Nandi** and **30 words and sentences in Masai**, comparing everyday Highland and Plains Nilotic speech side by side:\n\n| English Meaning | Nandi (p. 925) | Masai (pp. 925–926) |\n|---|---|---|\n| **How do you do? / Good morning!** | *Tiamge (sg.), Otyamge (pl.)* | *Sopai!* (Reply: *Eépa!*) |\n| **Thank you! / Many thanks!** | *Kongoi, Eñgōñgōi!* | *Asai!* |\n| **Goodbye!** | *Kātigē!* | *Biado!* |\n| **Who is there?** | *Ñgō ni?* | *Kálo?* |\n| **Come quickly!** | *Nyo cōk!* | *Wōu tāsīū!* |\n| **Wait a bit! / Wait for me!** | *Kanyīte!* / *Mweīcī ko ganyā* | *T'anyō!* / *Tanyō nanu!* |\n| **Go away!** | *Ui!* | *Ino! ṣōmō!* |\n| **You're a fool!** | *Iberber inye!* | *Imīñāni iye!* |\n| **Take care!** | *Ribge!* | *Ndámăti!* |\n| **Don't forget!** | *Meūtye!* | *Emī damisso!* |\n| **Lift it up!** | *Sūt!* | *Dumú!* |\n| **Listen! / Listen to me!** | *Kasā!* | *Neningo!* |\n| **Stand still!** | *Toñonye!* | *Tōtónna!* |\n| **Give me water to drink!** | *Kōnō pek āē* | *Injohi maōko!* |\n\n### Explore All 19 Varieties on KenyaHub:\n- [Compare Kenyan Languages in the Translator & Dictionary](/tools/kenyan-translator/)\n- [Explore Interactive Language Courses & Grammar Reference Guides](/tools/learn/)"
   }
 ];
 
@@ -1066,104 +1095,14 @@ export function getStaticBlogSlugs(): string[] {
   return STATIC_BLOG_POSTS.map((post) => post.slug);
 }
 
-STATIC_BLOG_POSTS.push({
-  slug: "johnston-1902-uganda-protectorate-vol2-kenya-languages-ethnology-anthropometry",
-  title: "Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (1902): West Elgon's Solution to Bleek's Bantu Prefix Enigma, Dr. Shrubsall's Anthropometric Tables, and Comparative Vocabularies Across 19 Kenyan Languages",
-  excerpt: "Inside the complete 1902 Kenya chapters and vocabularies of Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–1018): how Mount Elgon's Lukonde/Masaba dialects solved Bleek's prefix hypothesis, Dr. F. C. Shrubsall's craniometric tables, 86 plates/maps/illustrations, and parallel lexicons from Turkana and Pokot to Maasai, Nandi, Dholuo, Luhya, Ekegusii, and Gĩkũyũ.",
-  author: "KenyaHub Linguistic Heritage",
-  publishedAt: "2026-11-12T12:00:00.000Z",
-  updatedAt: "2026-11-12T18:00:00.000Z",
-  tags: [
-    "Languages",
-    "Culture & History",
-    "Luhya",
-    "Luo",
-    "Maasai",
-    "Kalenjin",
-    "Pokot",
-    "Turkana",
-    "Kisii",
-    "Kikuyu"
-  ],
-  readTime: 8,
-  sources: [
-    {
-      sourceId: "johnston-uganda-protectorate-1902",
-      title: "The Uganda Protectorate, Vol. II (Sir Harry H. Johnston, G.C.M.G., K.C.B., London: Hutchinson & Co., 1902, pp. i–xx, 471–1018)",
-      note: "3 Coloured Plates (46–48), Maps 8 & 9 (1:4,000,000), 81 Illustrations, Ch. XIII Anthropology & Dr. F. C. Shrubsall's Tables A–F (pp. 471–509), Ch. XVII Bantu Kavirondo & Masaba (pp. 722–755), Ch. XVIII Nilotic Ja-luo (pp. 756–795), Ch. XIX Masai, Turkana, Sūk, Elgumi, Nandi, Kamásia & Andorobo (pp. 796–884), and Ch. XX Languages & Vocabularies Sets 1, 2, 3, 8, 9 (pp. 885–1001) + Index (pp. 1003–1018)."
-    }
-  ],
-  content: `## A Monument of Early 20th-Century East African Ethnology and Comparative Philology
-
-Published in London by Hutchinson & Co. in 1902, Volume II of **Sir Harry Johnston's *The Uganda Protectorate*** (covering what was then the Eastern Province of the Uganda Protectorate—stretching from the Sio River, Mount Elgon, and Lake Rudolf across Kavirondo, Nandi, Baringo, and the Rift Valley to Nairobi and Kikuyu) remains one of the foundational primary sources for Kenyan linguistics, ethnography, and physical anthropology.
-
----
-
-## 1. How Mount Elgon's *Lukonde* and *Masaba* Solved Bleek's Bantu Prefix Enigma (pp. 889–891, 1001)
-
-For half a century after **Dr. Wilhelm Bleek** coined the term *Bantu*, comparative philologists struggled to explain why Bantu noun classes with nasal prefixes—such as Class 1 **mu-**, Class 3 **mu-**, Class 4 **mi-**, and Class 6 **ma-**—governed pronominal, adjectival, and verbal concords with **gu- (u-)**, **gi- (i-)**, and **ga- (a-)** instead of *mu-*, *mi-*, and *ma-*.
-
-During his 1900–1901 expedition around the western and southern slopes of **Mount Elgon**, Sir Harry Johnston (together with Sub-Commissioner **C. W. Hobley**, who independently reported the 10th prefix *Tsi-/Ci-* in January 1901) discovered that the archaic **Lukonde** and **Lumasaba** dialects preserve the original **disyllabic Bantu prefixes** intact (p. 1001):
-
-| Class | Lukonde Archaic Disyllabic Prefix (p. 1001) | Concord Particle | Standard Contracted Bantu Prefix | Example Meaning |
-|---|---|---|---|---|
-| **Class 1** | **Umu-** | *u-, mu-* | *Mu- / M-* | Singular person (*Umu-ndu*) |
-| **Class 2** | **Baba-** | *ba-* | *Ba- / Wa-* | Plural people (*Baba-ndu*) |
-| **Class 3** | **Gumu- (Kumu-)** | *gu-* | *Mu- / M-* | Tree, arm (*Gumu-kono*) |
-| **Class 4** | **Gimi- (Kimi-)** | *gi-* | *Mi-* | Trees, arms (*Gimi-kono*) |
-| **Class 5** | **Ili-** | *li-* | *Li- / Ri- / I-* | Eye, tooth, stone |
-| **Class 6** | **Gama- (Kama-)** | *ga-* | *Ma-* | Liquids, plurals (*Gama-lasiri* 'blood') |
-| **Class 7** | **Ki- (Si-)** | *ki-, si-* | *Ki- / Chi-* | Thing, custom, instrument |
-| **Class 8** | **Bibi-** | *bi-* | *Bi- / Vi-* | Things (plural of Class 7) |
-| **Class 9** | **In- (Im-)** | *i-, yi-* | *N- / In-* | Animals, house |
-| **Class 10** | **Zi-, Tsi- (Ci-)** | *zi-, tsi-, ci-* | *N- / Tsi- / Zi-* | Plural of Classes 9 & 11 |
-| **Class 11** | **Lulu-** | *lu-* | *Lu- / U-* | Long/thin objects, tongue |
-| **Class 12** | **Ruru- (Tutu-)** | *ru-, tu-* | *Tu-* | Plural of Class 13 diminutives |
-| **Class 13** | **Kaka-** | *ka-* | *Ka-* | Diminutive singular (*Akhana* 'little child') |
-| **Class 14** | **Bubu-** | *bu-* | *Bu- / U-* | Abstract nouns, night, bow |
-| **Class 15** | **Kuku- (Gu-)** | *ku-, gu-* | *Ku-* | Verbal infinitive, arm/leg/ear |
-| **Class 16** | **Ha- (Wa-)** | *ha-, wa-* | *Pa- / Ha-* | Near locative ('at / upon') |
-
----
-
-## 2. Dr. Frank C. Shrubsall's Craniometric & Osteometric Tables (Chapter XIII, pp. 488–509)
-
-In Chapter XIII (pp. 488–509), **Dr. Frank C. Shrubsall** of Cambridge University analyzed the physical measurements taken by Sir Harry Johnston and Mr. Walter Doggett across twenty East African populations, including **39 individual Kenyan subjects** recorded by name and age across **Tables A–F (pp. 496–509)**:
-
-| Group (pp. 492–493) | Cephalic Index | Length-Height Index | Nasal Index | Mean Stature (cm) | Span (Stature=100) | Sitting Height | Lower Limb |
-|---|---|---|---|---|---|---|---|
-| **Kavirondo (Nos. 25–32)** | 74.5 | 63.9 | 89.0 | 168.4 | 104.7 | 50.8 | 50.5 |
-| **Swahili (incl. No. 39 Fatuma ♀)** | 76.3 | 63.6 | 87.3 | 163.6 | 103.5 | 50.6 | 50.3 |
-| **Sūk / Pokot (Nos. 59–68)** | 74.5 | 63.4 | 82.0 | 166.9 | 104.2 | 49.4 | 51.4 |
-| **Masai (Nos. 69–76)** | 72.9 | 63.6 | 76.1 | 171.2 | 103.5 | 49.0 | 51.4 |
-| **Andorobo / Ogiek (Nos. 77–87)** | 74.5 | 63.6 | 81.5 | 162.8 | 103.5 | 50.1 | 50.7 |
-| **Kamásia / Tugen (Nos. 88–92)** | 74.1 | 63.3 | 77.7 | 172.9 | 104.2 | 48.7 | 52.3 |
-| **Nandi & Lumbwa (Nos. 93–99)** | 73.3 | 62.4 | 78.8 | 168.8 | 104.4 | 49.4 | 51.3 |
-
----
-
-## 3. Conversational Nandi and Masai Phrases (Chapter XX, pp. 925–926)
-
-At the close of Vocabulary Set 2 (pp. 925–926), Johnston appended **19 conversational phrases in Nandi** and **30 words and sentences in Masai**, comparing everyday Highland and Plains Nilotic speech side by side:
-
-| English Meaning | Nandi (p. 925) | Masai (pp. 925–926) |
-|---|---|---|
-| **How do you do? / Good morning!** | *Tiamge (sg.), Otyamge (pl.)* | *Sopai!* (Reply: *Eépa!*) |
-| **Thank you! / Many thanks!** | *Kongoi, Eñgōñgōi!* | *Asai!* |
-| **Goodbye!** | *Kātigē!* | *Biado!* |
-| **Who is there?** | *Ñgō ni?* | *Kálo?* |
-| **Come quickly!** | *Nyo cōk!* | *Wōu tāsīū!* |
-| **Wait a bit! / Wait for me!** | *Kanyīte!* / *Mweīcī ko ganyā* | *T'anyō!* / *Tanyō nanu!* |
-| **Go away!** | *Ui!* | *Ino! ṣōmō!* |
-| **You're a fool!** | *Iberber inye!* | *Imīñāni iye!* |
-| **Take care!** | *Ribge!* | *Ndámăti!* |
-| **Don't forget!** | *Meūtye!* | *Emī damisso!* |
-| **Lift it up!** | *Sūt!* | *Dumú!* |
-| **Listen! / Listen to me!** | *Kasā!* | *Neningo!* |
-| **Stand still!** | *Toñonye!* | *Tōtónna!* |
-| **Give me water to drink!** | *Kōnō pek āē* | *Injohi maōko!* |
-
-### Explore All 19 Varieties on KenyaHub:
-- [Compare Kenyan Languages in the Translator & Dictionary](/tools/kenyan-translator/)
-- [Explore Interactive Language Courses & Grammar Reference Guides](/tools/learn/)`
-});
+export const NORTHCOTE_1907_BLOG_SUPPLEMENT = {
+  "slug": "northcote-1907-nilotic-kavirondo-complete-line-by-line-edition",
+  "title": "G. A. S. Northcote (1907): Complete Line-by-Line Audit of \"The Nilotic Kavirondo\" (JRAI Vol. 37, pp. 58–66)",
+  "stableUrl": "http://www.jstor.org/stable/2843247",
+  "highlights": [
+    "Pages 58–59: Kinship with Dinka, Aluri (Alur), and Acholi near Wadilai; migration under one big chief and passive secession; muscular vegetable-diet physique vs. animal-diet Masai, Nandi, and Lumbwa prior to the 1883 cattle plague; 3-goat fine for touching a married woman's rear grass tassel; 6–8 inch waist cloth; 6–10 iron wire coils, sores/ulcers, and the 3-rupee annual hut tax; full gala dress with white bead facial lines, brass cartridge cases, cowrie leather strips, black feather boa or wildebeest-tail shoulder ornament, polished iron waist beads, and broad-bean-pod knee/ankle bells containing 1–2 iron beads; 3 ft 6 in. × 6 ft curved buffalo-hide shields painted red, white, and black; funeral hair-tuft worn by the chief mourner.",
+    "Pages 59–61: Semi-feudal chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba plot ownership and askari retainers; circular village fenced with euphorbia, stone, mud, or watling, central cattle pen, basket/wicker granaries raised 2 ft off the ground (5 ft high × 3 ft diameter), and 4 hut types keeping unmarried youth rigidly segregated; clan exogamy, step-mother marriage, sororal polygyny, cattle inheritance, and the Chieftainship Succession Case Study (A, B, C, D, E, F).",
+    "Pages 61–63: Courting earnest money, sun-god wedding offering (meat, chicken, mtama millet, native beer), simulated capture, and the bride's first dinner rite; pre-1883 dowry (20 head of cattle) vs. 1907 dowry (7 head handsome dot, down to 1 bull + 20 goats, or 1 heifer + 1 bull minimum); time-of-day birth names (onyango, oching, odiambo, otieno), dream/posthumous ghost naming, and hereditary nicknames (obele, oliech, obonyo); deathbed gourd-rattling and tobacco smoke, bull-tail charging, mock shield battle against evil spirits, 6-day (chief) vs. 3-day (commoner) sunrise/sunset wailing, and recumbent in-hut burial (refuting Sir Charles Eliot).",
+    "Pages 63–66: Negative sun/moon worship and verbatim prayer quote (\"It does not matter how much you pray, you fall sick and die just the same\"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, wet/dry cupping, Hut-Roof open-air cure assault case, and Lime-Quarry fatal surgical diagnosis; rain-maker's sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; bleeding live cattle for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; civil litigation from the time of their grandfathers; and 9 modern occupations at Kisumu including a native Jaluo sergeant instructor."
+  ]
+} as const;

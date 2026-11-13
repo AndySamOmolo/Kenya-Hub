@@ -1,17 +1,3 @@
-// ============================================================
-// Maasai (ɔl Maa) Grammar Reference Guide
-// Based on Public Domain & Open-Web Linguistic Sources:
-// 1. Ven. J. P. Farler & Rev. T. Wakefield (1882) "Native Routes in East Africa" (PRGS Vol. 4)
-// 2. Robert Needham Cust (1883) "A Sketch of the Modern Languages of Africa, Vol. I" (Kwafi & Masai historiography)
-// 3. Lieut. Ludwig von Höhnel (1894) "Discovery of Lakes Rudolf and Stefanie, Vol. I" (1887–1888 Maasai & Laikipia observations)
-// 4. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
-// 5. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Masai & Njemps/Samburu comparative tables)
-// 6. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
-// 7. Hon. K. R. Dundas (1910) "Notes on the Tribes Inhabiting the Baringo District" (JRAI Vol. 40, pp. 49–57)
-// 8. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
-// 9. W. Scoresby & Katherine Routledge (1910) "With a Prehistoric People: The Akikúyu of British East Africa" (Appendix II: The Masaí, pp. 344–349 & Plate CXXXVI)
-// ============================================================
-
 export interface MaasaiGrammarSection {
   id: string;
   title: string;
@@ -22,217 +8,185 @@ export interface MaasaiGrammarSection {
 
 export const MAASAI_GRAMMAR_SECTIONS: MaasaiGrammarSection[] = [
   {
-    id: "maasai-atr-vowel-harmony-tone",
-    title: "Nine-Vowel ATR Harmony, Consonant Mutations & Grammatical Tone in ɔl Maa (Hollis 1905, Hinde 1901 & Vossen 1982)",
-    summary: "Maa contrasts +ATR (/i, e, o, u/) and -ATR (/ɪ, ɛ, ʊ, ɔ/) vowel sets with neutral /a/, regular consonant mutations after the feminine nasal article (pp. 2–7), and tonal case/aspect inflection in VSO word order (pp. 7–9).",
-    content: `As documented in A. C. Hollis (*The Masai: Their Language and Folklore*, 1905, pp. 1–102), Hildegarde Hinde (*The Masai Language*, 1901, pp. v–ix, 1–43), and Nilotic linguistics:
-1. **Advanced Tongue Root (ATR) Vowel Harmony & Consonant Mutations (Hollis 1905, pp. 1–7)**:
-   - Maa has nine vowel phonemes divided into two harmonic sets plus neutral **/a/**:
-   - **+ATR Set (/i, e, o, u/)**: e.g., **ébúl** (S/he will pierce it), **ol-mosorrî** (egg), **en-kitojó** (rabbit/hare), **atumokî** (to have a good opportunity).
-   - **-ATR Set (/ɪ ⟨ɨ⟩, ɛ, ʊ ⟨ʉ⟩, ɔ/)**: e.g., **ɛ́bʉ́l** (S/he will prosper), **ɛn-kʉ́tʉ́k** (mouth), **kɨʉ́tɨshɔ** (index finger), **atʉmʉ́k** (to brew).
-   - **Consonant Mutations after the Feminine Nasal Article (*en- / em- / eng-*, Hollis 1905, pp. 2–7)**:
-     - **k → g**: *ol-kimojino* (finger) vs. *en-gimojino* (little finger/toe); *il-keek* (trees) vs. *en-geju* (leg); *a-kur* (to dig) → *ol-kurto* (caterpillar).
-     - **p → b**: *ol-purkel* (steppe/dry country) vs. *em-burkel* (small steppe); *il-papit* (hairs) vs. *em-barta* (horse).
-     - **t → d**: *ol-tungani* (man/person) vs. *en-dungani* (little man); *il-tuleta* (gourds) vs. *en-dulet* (small gourd).
-     - **ch / sh → j**: *ol-chani* (tree) vs. *en-jani* (small tree/medicine); *ol-chorro* (spring) vs. *en-jorro* (small spring).
-     - **s → j** (optionally after *n*): *o-soit* (stone) vs. *en-joit / e-soit* (small stone).
-2. **Tonal Case & Voice Inflection in VSO Word Order (Hollis 1905, pp. 7–9)**:
-   - Word order is predominantly **Verb–Subject–Object (VSO)**, and tone patterns alone distinguish Nominative (subject) from Accusative (object) case as well as active vs. middle voice:
-   - In Hollis (1905, p. 8), the tone rises on the subject (Nominative) and stays low/normal on the object (Accusative): **Edol ol-túngani en-gíteng** ("The man sees the cow") vs. **Edol ol-tungani en-giténg** ("The cow sees the man").
-   - **ɛ́yɛ́tá ɛmʊtí** = "She removed (meat) from the pot" (active perfective; *ɛmʊtí* in Low-High accusative tone) vs. **ɛyɛ́ta ɛmʊ́ti** = "The pot is de-meated" (imperfective middle; *ɛmʊ́ti* in High-Low nominative tone).`,
-    examples: [
-      { maasai: "ébúl (+ATR) vs. ɛ́bʉ́l (-ATR)", english: "S/he will pierce it vs. S/he will prosper", explanation: "Minimal pair contrasting +ATR /u/ and -ATR /ʊ/" },
-      { maasai: "ol-chani → en-jani • ol-kimojino → en-gimojino • ol-tungani → en-dungani", english: "tree → small tree • finger → little finger • man → little man", explanation: "Consonant voicing (ch→j, k→g, t→d, p→b) after the feminine diminutive article en- (Hollis 1905, pp. 3–10)" },
-      { maasai: "Edol ol-túngani en-gíteng vs. Edol ol-tungani en-giténg", english: "The man sees the cow vs. The cow sees the man", explanation: "Grammatical tone distinguishing Subject (Nominative) from Object (Accusative) in VSO syntax (Hollis 1905, p. 8)" }
-    ]
-  },
-  {
-    id: "maasai-noun-genders-numerals-folklore",
-    title: "Three Gender Articles (Ol-, En-, E-), Six Noun Plural Classes, Two Verb Classes, 9 Derivative Stems & Oral Literature (Hollis 1905 & Hinde 1901)",
-    summary: "Maa prefixes mark Masculine/Augmentative (ol-/il-), Feminine/Diminutive (en-/in-), and Place (e-), with 6 Noun Declension Classes (pp. 18–34), Gendered Numerals & Finger Signs (pp. 39–41), and 9 Verb Derivative Stems (pp. 71–87).",
-    content: `From A. C. Hollis (1905, pp. 9–102) *The Masai: Their Language and Folklore* and Hildegarde Hinde (1901, pp. 1–43):
-1. **Three Grammatical Genders & Six Substantive Classes (Hollis 1905, pp. 9–34)**:
-   - **Masculine / Augmentative (*ol- / o-*, pl. *il- / i-*, pp. 9–14)**: Denotes male beings, strength, or large size: *ol-tungani → il-tungana* (man/person → people), *ol-murani → il-muran* (warrior → warriors), *ol-oiboni → il-oibonok* (medicine-man/ritual prophet), *ol-ngatuny* (lion), *ol-chani → il-keek* (tree → trees/firewood).
-   - **Feminine / Diminutive (*en- / em- / eng- / e-*, pl. *in- / im- / ing- / i-*, pp. 9–14)**: Denotes female beings, smaller items, or diminutives: *en-gerai → in-gera* (child → children), *en-kitok → in-kituak* (woman/wife → women), *Eng-ai* (God/sky/rain), *en-gare* (water/river), *eng-aji → ing-ajijik* (hut → huts), *en-giteng → in-gishu* (cow → cattle). Replacing *ol-* with *en-* forms diminutives (*ol-doinyo* 'mountain' → *en-doinyo* 'hill'), while replacing *en-* with *ol-* forms augmentatives (*en-dap* 'palm of hand' → *ol-dap* 'broad hand', p. 10).
-   - **Place Gender (*e- / e-weji*, p. 11)**: *e-weji nabo* / *nebo* (one place).
-   - **Six Noun Plural Classes (Hollis 1905, pp. 18–34)**:
-     - **Class I** (singular in *-i / -ni*, dropping *-i / -ni* in plural, pp. 18–21): *ol-murani → il-muran* (warrior), *ol-ashe → il-asho* (calf), *ol-tuli → il-tuli* (haunch), *en-goshoke → in-goshua* (stomach).
-     - **Class II** (adding *-i, -ni, -n, -in* in plural, pp. 21–24): *ol-chore → il-chorei* (friend), *ol-gilata → il-gilat* (clan/room), *ol-oiboni → il-oibonok* (medicine-man), *ol-alashe → il-alashera* (brother), *en-dap → in-dapi* (palm of hand).
-     - **Class III** (adding *-a* in plural, pp. 24–27): *ol-alem → il-alema* (sword), *ol-tulet → il-tuleta* (gourd), *e-surutya → i-surutya* (coiled brass ear-ring), *en-geju → in-gejek* (foot/leg).
-     - **Class IV** (adding *-k / -ak / -ek / -ik / -ok / -uk* in plural, plus ethnonyms on pp. 27–30): *eng-aji → ing-ajijik* (hut), *em-bae → im-baa* (arrow/matter), *ol-Maasani → il-Maasae* (a Masai → the Masai), *ol-Toroboni → il-Torobo* (Dorobo hunter), *ol-Meeki → il-Meek* (agriculturalist/non-Masai), *ol-Ashumpani → il-Ashumpa* (Swahili/coastal trader), *ol-Mangati → il-Mangati* (enemy, specifically Barabaig/Tatoga).
-     - **Class V** (changing final vowel/syllable to *-o / -u / -ra / -itin*, pp. 30–32): *ol-coro → il-coroi* (spring), *e-murt → i-murto* (neck), *en-gata → in-gataitin* (time/occasion).
-     - **Class VI** (Suppletive / Irregular plurals, pp. 33–34): *en-giteng → in-gishu* (cow → cattle), *ol-chani → il-keek* (tree → trees), *en-gerai → in-gera* (child → children), *ol-lee → il-lewa* (man → men), *en-kitok → in-kituak* (woman → women), *eng-ongu → ing-onyek* (eye → eyes), *en-giook → in-giyaa* (ear → ears).
-2. **Adjectives, Gendered Numerals & Finger-Counting Signs (Hollis 1905, pp. 35–41 & Hinde 1901, p. 5)**:
-   - **Adjectives (pp. 35–38)**: Inflect for number (*kitok → kituak* 'great/big', *oti / kiti → ooti / kutiti* 'small', *supat → supati* 'good/well-behaved', *sidai → sidan* 'beautiful/good', *torono → torok* 'bad', *ibor → iboor* 'white', *rok → rook* 'black', *nyokye → nyokyo* 'red').
-   - **Gendered Numerals (pp. 39–41)**: Numbers 1, 2, 3, 4, 7, and 9 inflect for Feminine vs. Masculine: **1** *nabo* (f.) / *obo* (m.) / *nebo* (place); **2** *are* (f.) / *aare* (m.); **3** *uni* (f.) / *okuni* (m.); **4** *ongwan* (f.) / *oongwan* (m.); **5** *imiet*; **6** *ile*; **7** *naapishana* (f.) / *oopishana* (m.); **8** *isiet*; **9** *naaudo* (f.) / *oodo* (m.); **10** *tomon*; **20** *tikitam*; **30** *osom*; **40** *artam*; **50** *onom*; **60** *ntomoni-ile* (Hinde 1901 p. 5: *īp* = 60, a warrior company, signaled by snapping fingers); **100** *ip*.
-3. **Two Verb Classes & Nine Derivative Extensions (Hollis 1905, pp. 48–97)**:
-   - **Class I Verbs** (roots not beginning with *i*, pp. 48–63): e.g., *a-suj* (to follow), *a-nyor* (to love), *a-lo* (to go, pl. *a-puo*).
-   - **Class II Verbs** (roots beginning with *i*, pp. 63–71): e.g., *a-irorie* (to speak to), *a-ipot* (to call), *a-ining* (to hear).
-   - **Subject-Object Portmanteau Prefixes (p. 48)**: **aa-** ("I...thee" or "he/they...me": *aa-suj*, I follow thee / he follows me), **ki-** ("thou...me" or "we": *ki-suj*, thou followest me / we follow).
-   - **Nine Derivative Stems (Hollis 1905, pp. 71–87)**: (1) Motion towards speaker (**-u / -unye**, pp. 71–73: *a-lotu* 'come hither', *a-nyorru* 'fall in love with'), (2) Motion away (**-aa / -aya / -oo**, pp. 73–75: *a-lo-aa* 'go away', *a-suj-aa* 'follow away'), (3) Dative/Applied "for/to" (**-aki / -oki**, pp. 75–77: *a-suj-aki* 'follow for'), (4) Instrumental/Locative "with/at" (**-ie**, pp. 77–79: *a-suj-ie* 'follow with'), (5) Inchoative/Become (**-u / -isho**, pp. 79–81: *a-rok-u* 'become black', *a-ibor-u* 'become white'), (6) Intransitive (**-isho / -asho / -osho**, pp. 81–83: *a-suj-isho*), (7) Neuter/Quasi-Passive (**-a / -o / -ye**, pp. 83–84: *a-dany-a* 'be broken/split'), (8) Reciprocal (**-ro / -no**, pp. 84–85: *a-nyor-ro* 'love one another'), and (9) Causative (**a-ita-** for Class I, **-ie** for Class II, pp. 85–87: *a-ita-suj* 'cause to follow').`,
-    examples: [
-      { maasai: "Sopai! — Epa! (Hepa!) | Takwenya! — Iko! (Igho!)", english: "Greetings (to men/warriors)! — Reply! | Greetings (to women/elders)! — Reply!", explanation: "Traditional Maa salutations (Hinde 1901, p. 41 & Hollis 1905, pp. 101–102, 284–285)" },
-      { maasai: "aa-suj (I follow thee / he follows me) • ki-suj (thou followest me / we follow)", english: "Portmanteau subject-object prefixes on Class I verb a-suj ('to follow')", explanation: "Hollis (1905, p. 48)" },
-      { maasai: "a-lo (sg.) / a-puo (pl.) • a-lotu (come hither) • a-lo-aa (go away)", english: "to go (sg./pl.) • to come towards speaker (-u) • to go away (-aa)", explanation: "Suppletive plural stem and directional extensions in Hollis (1905, pp. 71–75, 90)" }
-    ]
-  },
-  {
-    id: "maasai-hohnel-1894-farler-1882-toponymy",
-    title: "19th-Century Maa Toponymy, Age-Grades & Kwafi/Loikop Historiography (Farler 1882, Cust 1883 & Höhnel 1894)",
-    summary: "Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), and Lieut. Ludwig von Höhnel (1894) record the earliest Maa mountain and river toponyms across Kenya alongside age-grade and pastoral institutions.",
-    content: `From Ven. J. P. Farler & Rev. T. Wakefield (*"Native Routes in East Africa"*, PRGS Vol. 4, 1882, pp. 742–746), R. N. Cust (*A Sketch of the Modern Languages of Africa*, Vol. I, 1883, pp. 146–150), and Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, Ch. IV, pp. 226–285):
-1. **Classical Maa Mountain & River Toponymy in Kenya (Farler 1882 & Höhnel 1894)**:
-   - **Donyo Egere** (*Ol-doinyo Keri*, "Spotted/Dappled Mountain"): Mount Kenya, named from the black crags and white glaciers above the forest line (Farler 1882, p. 743 & Höhnel 1894, p. 363).
-   - **Donyo Erok** ("Black Mountain", at the southern border near Matumbato), **Donyo Longonot** (steep crater cone in the Rift Valley), **Donyo Suswa**, **Donyo Lamuyu** (Ngong Hills), and **Donyo Sattima** (highest peak of the Aberdare range, Höhnel 1894, p. 325).
-   - **Guaso Nyiro** (*Ewaso Ng'iro*, "Brown/Muddy River"), **Guaso Narok** ("Black River"), and **Guaso Nagut** (Rift Valley streams).
-2. **Age-Grades, Material Culture & Early Grammars (Cust 1883 & Höhnel 1894, pp. 242–265)**:
-   - Cust (1883, pp. 146–150) documents Krapf's 1854 *Vocabulary of the Engútuk Eloikób* (compiled at Mombasa from the Kwafi/Iloikop speaker *Lemásegnot* of *Enganglima*) and Erhardt's 1857 *Masai Vocabulary*.
-   - Höhnel (1894, pp. 242–265) describes the age-grades **Elmoran** (warriors), **Elmorua** (married elders), and **Ditto** (*en-dito*, unmarried maidens), the spokesman **Leigwanan** (*ol-aigwanani*) and ritual leader **Leibon** (*ol-oiboni*), the ostrich-feather face-halo (**en-gopiro**), thigh war-bell (**ol-twala**), and smoking milk-calabashes with wild olive (**ol-oirien**) embers.`,
-    examples: [
-      { maasai: "Donyo Egere (Ol-doinyo Keri) • Donyo Erok • Donyo Lamuyu • Donyo Sattima • Guaso Nyiro", english: "Mount Kenya ('Dappled Mountain') • Black Mountain • Ngong Hills • Aberdare Peak • Ewaso Ng'iro ('Brown River')", explanation: "19th-century Maa mountain and river names in Farler (1882) and Höhnel (1894)" },
-      { maasai: "Elmoran • Elmorua • Ditto • Leigwanan • Leibon • ol-oirien", english: "Warriors • Elders • Maidens • Spokesman • Ritual prophet • Wild olive tree", explanation: "Maa social grades and material culture recorded by Höhnel (1894, Vol. I, pp. 242–265)" }
-    ]
-  },
-  {
-    id: "maasai-public-domain-dataset-synthesis",
-    title: "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
-    summary: "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
-    content: "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
-    examples: [
+    "id": "maasai-atr-vowel-harmony-tone",
+    "title": "Nine-Vowel ATR Harmony, Consonant Mutations & Grammatical Tone in ɔl Maa (Hollis 1905, Hinde 1901 & Vossen 1982)",
+    "summary": "Maa contrasts +ATR (/i, e, o, u/) and -ATR (/ɪ, ɛ, ʊ, ɔ/) vowel sets with neutral /a/, regular consonant mutations after the feminine nasal article (pp. 2–7), and tonal case/aspect inflection in VSO word order (pp. 7–9).",
+    "content": "As documented in A. C. Hollis (*The Masai: Their Language and Folklore*, 1905, pp. 1–102), Hildegarde Hinde (*The Masai Language*, 1901, pp. v–ix, 1–43), and Nilotic linguistics:\n1. **Advanced Tongue Root (ATR) Vowel Harmony & Consonant Mutations (Hollis 1905, pp. 1–7)**:\n   - Maa has nine vowel phonemes divided into two harmonic sets plus neutral **/a/**:\n   - **+ATR Set (/i, e, o, u/)**: e.g., **ébúl** (S/he will pierce it), **ol-mosorrî** (egg), **en-kitojó** (rabbit/hare), **atumokî** (to have a good opportunity).\n   - **-ATR Set (/ɪ ⟨ɨ⟩, ɛ, ʊ ⟨ʉ⟩, ɔ/)**: e.g., **ɛ́bʉ́l** (S/he will prosper), **ɛn-kʉ́tʉ́k** (mouth), **kɨʉ́tɨshɔ** (index finger), **atʉmʉ́k** (to brew).\n   - **Consonant Mutations after the Feminine Nasal Article (*en- / em- / eng-*, Hollis 1905, pp. 2–7)**:\n     - **k → g**: *ol-kimojino* (finger) vs. *en-gimojino* (little finger/toe); *il-keek* (trees) vs. *en-geju* (leg); *a-kur* (to dig) → *ol-kurto* (caterpillar).\n     - **p → b**: *ol-purkel* (steppe/dry country) vs. *em-burkel* (small steppe); *il-papit* (hairs) vs. *em-barta* (horse).\n     - **t → d**: *ol-tungani* (man/person) vs. *en-dungani* (little man); *il-tuleta* (gourds) vs. *en-dulet* (small gourd).\n     - **ch / sh → j**: *ol-chani* (tree) vs. *en-jani* (small tree/medicine); *ol-chorro* (spring) vs. *en-jorro* (small spring).\n     - **s → j** (optionally after *n*): *o-soit* (stone) vs. *en-joit / e-soit* (small stone).\n2. **Tonal Case & Voice Inflection in VSO Word Order (Hollis 1905, pp. 7–9)**:\n   - Word order is predominantly **Verb–Subject–Object (VSO)**, and tone patterns alone distinguish Nominative (subject) from Accusative (object) case as well as active vs. middle voice:\n   - In Hollis (1905, p. 8), the tone rises on the subject (Nominative) and stays low/normal on the object (Accusative): **Edol ol-túngani en-gíteng** (\"The man sees the cow\") vs. **Edol ol-tungani en-giténg** (\"The cow sees the man\").\n   - **ɛ́yɛ́tá ɛmʊtí** = \"She removed (meat) from the pot\" (active perfective; *ɛmʊtí* in Low-High accusative tone) vs. **ɛyɛ́ta ɛmʊ́ti** = \"The pot is de-meated\" (imperfective middle; *ɛmʊ́ti* in High-Low nominative tone).",
+    "examples": [
       {
-        maasai: "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",
-        english: "the day before yesterday, the day after to-morrow • the place where the ox is slaughtered in",
-        explanation: "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+        "maasai": "ébúl (+ATR) vs. ɛ́bʉ́l (-ATR)",
+        "english": "S/he will pierce it vs. S/he will prosper",
+        "explanation": "Minimal pair contrasting +ATR /u/ and -ATR /ʊ/"
       },
       {
-        maasai: "Ol-alem liki-njo-sho • Ol-alem la-isho",
-        english: "the sword which you give to me • the sword which he, she, or they give to me",
-        explanation: "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+        "maasai": "ol-chani → en-jani • ol-kimojino → en-gimojino • ol-tungani → en-dungani",
+        "english": "tree → small tree • finger → little finger • man → little man",
+        "explanation": "Consonant voicing (ch→j, k→g, t→d, p→b) after the feminine diminutive article en- (Hollis 1905, pp. 3–10)"
+      },
+      {
+        "maasai": "Edol ol-túngani en-gíteng vs. Edol ol-tungani en-giténg",
+        "english": "The man sees the cow vs. The cow sees the man",
+        "explanation": "Grammatical tone distinguishing Subject (Nominative) from Object (Accusative) in VSO syntax (Hollis 1905, p. 8)"
       }
     ]
   },
   {
-    id: "maasai-hobley-1910-social-organization-cattle-brands",
-    title: "C. W. Hobley (1910) Part II Chapters I, II & VI: Masai Moieties (Oodo Mongi & Orok Kiteng), 7 Gilat & 36 Sub-Gilat, Eo Endomono Naming Ceremony, 7 Sirata Shield Patterns & Clan Cattle Brands (pp. 119–133, 159–161)",
-    summary: "Complete line-by-line documentation of C. W. Hobley's 1910 Masai chapters: the two main divisions (Oodo Mongi 'Red Bull' & Orok Kiteng 'Black Cow'), all 7 primary gilat and 36 sub-gilat, the Eo Endomono child-naming ceremony, the 7 Sirata shield heraldry patterns, and the comparative Masai clan cattle brands.",
-    content: `From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters I, II & VI, pp. 119–133, 159–161):
-1. **Part II, Chapter I — The Two Main Divisions (*Oodo Mongi* & *Orok Kiteng*), 7 *Gilat* & 36 *Sub-Gilat* (pp. 119–120)**:
-   - Hobley records that the Masai nation is divided into two great exogamous moieties named after the colour of the sacrificial bullock and cow at the original division of the tribe:
-     - **I. Oodo Mongi ("The Red Bull")** — comprising **five primary *gilat* (clans)** and **24 *sub-gilat***:
-       1. **L'aiser** (9 *sub-gilat*: *En gidong* [the hereditary *Oloiboni* lineage of Mbatian, Lenana, and Sendeyo], *Parkinet, Parsingo, Partimaroi, Engaje oodo, Engaje nanuki, L'olokesen, L'okumai, L'oodokishu*).
-       2. **L'ukumai** (6 *sub-gilat*: *Sitat, Maromai, L'ebusat, Partetiu, L'oiger, Kipuyoni*).
-       3. **L'aitaiok** (7 *sub-gilat*: *Siria, L'ais, Machen, Pojos, Mohono, L'oodokishu, L'okamai*).
-       4. **L'molelyan** (5 *sub-gilat*: *Masangwa, Kiporon, L'moingo, L'oodokishu, Parsintaan*).
-       5. **L'makesen** (3 *sub-gilat*: *Loiborkishu, Kipeles, Ptirbo*).
-     - **II. Orok Kiteng ("The Black Cow")** — comprising **two primary *gilat*** and **6 *sub-gilat***:
-       6. **L'tarosero** (3 *sub-gilat*: *L'moingo, Nkidong, L'ais*).
-       7. **L'mengana** (3 *sub-gilat*: *Kipuyoni, Kiporon, El Masula*).
-2. **The *Eo Endomono* Child-Naming Ceremony & 7 *Sirata* Shield Patterns (pp. 120–121)**:
-   - **Eo Endomono (Naming Ceremony, p. 120)**: Held when a child's hair is first shaved; an unblemished sheep is slaughtered, three spots of blood are placed on the mother's forehead, nose, and chin, her hair is shaved with milk and water, and the elders bless the child's name.
-   - **Seven Named *Sirata* Shield Heraldry Designs (p. 121)**:
-     1. **Sirata e neilongu**: Circular target-like boss pattern in the centre of the buffalo-hide shield (*el-longo*).
-     2. **Sirata el langarua**: Diagonal/chevron band across the shield face.
-     3. **Sirata el oiboni**: Sacred heraldic mark reserved for warriors affiliated with the *Oloiboni*.
-     4. **Sirata el ngatuny**: "Lion-mark" (*ol-ngatuny*) awarded for conspicuous bravery.
-     5. **Sirata e narok**: Black half-field (*narok*) painted with burnt gourd-ash and blood.
-     6. **Sirata e nanyokie**: Crimson/red field (*nanyokie*) painted with red ochre (*ol-karia*) mixed with fat; reserved for proven veterans.
-     7. **Sirata el keri**: Checkered/dappled black-and-white border (*keri*).
-3. **Part II, Chapter II & VI — Masai Clan Cattle Brands (pp. 122–133, Figs. LXXXVIII–CXI) & Northern/Western Maa Sections (pp. 159–161)**:
-   - **Masai Clan Brands & Ear-Slits (pp. 128–133, Figs. LXXXVIII–CXI)**: Illustrates the linear and curved iron-brand marks and ear-cuts (*ol-ponoto*) distinguishing cattle of **L'aiser, L'ukumai, L'molelyan, L'tarosero, and L'mengana**, showing how several Kikuyu and Kamba clans adopted neighbouring Masai brand motifs through trade and intermarriage.
-   - **Sambur, Laikipiak & Uasingishu Sections (pp. 159–161)**: Documents the **9 Sambur sub-tribes** (*L'masula, L'pisikishu, L'nyaparai, L'ngwesi, L'orongwe, L'ukumai, L'mosiat, L'oimisi, L'doigio*) and 3 *gilat* (*Sitat, Ol Lesilali, Maletis*, laibon *Ol Segeteti*), the **6 Laikipiak sub-tribes** (*L'ngwesi, L'tikirri, L'leleta, L'purko, L'oodokishu, L'momonyot*, 3 *gilat* *Bartaolin, Sioma, Kisengeni*), and the **4 Uasingishu *gilat* & totems** (*L'aiser* [wild pig *ol-bitir*], *L'ukumai* [crow *ol-kurok*], *L'masula* [hyena *ol-ngojine*], *L'aitaiok* [rat *en-deroni*]).`,
-    examples: [
-      { maasai: "Oodo Mongi ('Red Bull': L'aiser, L'ukumai, L'aitaiok, L'molelyan, L'makesen) vs. Orok Kiteng ('Black Cow': L'tarosero, L'mengana)", english: "The two primary Masai moieties and their 7 primary gilat (clans) and 36 sub-gilat", explanation: "Hobley (1910, Part II, Ch. I, pp. 119–120)" },
-      { maasai: "Eo Endomono • Sirata e neilongu, Sirata el langarua, Sirata el oiboni, Sirata el ngatuny, Sirata e narok, Sirata e nanyokie, Sirata el keri", english: "Child-naming ceremony • The 7 named warrior shield (el-longo) heraldic patterns", explanation: "Hobley (1910, Part II, Ch. I, pp. 120–121)" },
-      { maasai: "Uasingishu gilat & totems: L'aiser (ol-bitir wild pig), L'ukumai (ol-kurok crow), L'masula (ol-ngojine hyena), L'aitaiok (en-deroni rat)", english: "The 4 Uasingishu (Kwavi) clans and their sacred totems", explanation: "Hobley (1910, Part II, Ch. VI, p. 161)" }
+    "id": "maasai-noun-genders-numerals-folklore",
+    "title": "Three Gender Articles (Ol-, En-, E-), Six Noun Plural Classes, Two Verb Classes, 9 Derivative Stems & Oral Literature (Hollis 1905 & Hinde 1901)",
+    "summary": "Maa prefixes mark Masculine/Augmentative (ol-/il-), Feminine/Diminutive (en-/in-), and Place (e-), with 6 Noun Declension Classes (pp. 18–34), Gendered Numerals & Finger Signs (pp. 39–41), and 9 Verb Derivative Stems (pp. 71–87).",
+    "content": "From A. C. Hollis (1905, pp. 9–102) *The Masai: Their Language and Folklore* and Hildegarde Hinde (1901, pp. 1–43):\n1. **Three Grammatical Genders & Six Substantive Classes (Hollis 1905, pp. 9–34)**:\n   - **Masculine / Augmentative (*ol- / o-*, pl. *il- / i-*, pp. 9–14)**: Denotes male beings, strength, or large size: *ol-tungani → il-tungana* (man/person → people), *ol-murani → il-muran* (warrior → warriors), *ol-oiboni → il-oibonok* (medicine-man/ritual prophet), *ol-ngatuny* (lion), *ol-chani → il-keek* (tree → trees/firewood).\n   - **Feminine / Diminutive (*en- / em- / eng- / e-*, pl. *in- / im- / ing- / i-*, pp. 9–14)**: Denotes female beings, smaller items, or diminutives: *en-gerai → in-gera* (child → children), *en-kitok → in-kituak* (woman/wife → women), *Eng-ai* (God/sky/rain), *en-gare* (water/river), *eng-aji → ing-ajijik* (hut → huts), *en-giteng → in-gishu* (cow → cattle). Replacing *ol-* with *en-* forms diminutives (*ol-doinyo* 'mountain' → *en-doinyo* 'hill'), while replacing *en-* with *ol-* forms augmentatives (*en-dap* 'palm of hand' → *ol-dap* 'broad hand', p. 10).\n   - **Place Gender (*e- / e-weji*, p. 11)**: *e-weji nabo* / *nebo* (one place).\n   - **Six Noun Plural Classes (Hollis 1905, pp. 18–34)**:\n     - **Class I** (singular in *-i / -ni*, dropping *-i / -ni* in plural, pp. 18–21): *ol-murani → il-muran* (warrior), *ol-ashe → il-asho* (calf), *ol-tuli → il-tuli* (haunch), *en-goshoke → in-goshua* (stomach).\n     - **Class II** (adding *-i, -ni, -n, -in* in plural, pp. 21–24): *ol-chore → il-chorei* (friend), *ol-gilata → il-gilat* (clan/room), *ol-oiboni → il-oibonok* (medicine-man), *ol-alashe → il-alashera* (brother), *en-dap → in-dapi* (palm of hand).\n     - **Class III** (adding *-a* in plural, pp. 24–27): *ol-alem → il-alema* (sword), *ol-tulet → il-tuleta* (gourd), *e-surutya → i-surutya* (coiled brass ear-ring), *en-geju → in-gejek* (foot/leg).\n     - **Class IV** (adding *-k / -ak / -ek / -ik / -ok / -uk* in plural, plus ethnonyms on pp. 27–30): *eng-aji → ing-ajijik* (hut), *em-bae → im-baa* (arrow/matter), *ol-Maasani → il-Maasae* (a Masai → the Masai), *ol-Toroboni → il-Torobo* (Dorobo hunter), *ol-Meeki → il-Meek* (agriculturalist/non-Masai), *ol-Ashumpani → il-Ashumpa* (Swahili/coastal trader), *ol-Mangati → il-Mangati* (enemy, specifically Barabaig/Tatoga).\n     - **Class V** (changing final vowel/syllable to *-o / -u / -ra / -itin*, pp. 30–32): *ol-coro → il-coroi* (spring), *e-murt → i-murto* (neck), *en-gata → in-gataitin* (time/occasion).\n     - **Class VI** (Suppletive / Irregular plurals, pp. 33–34): *en-giteng → in-gishu* (cow → cattle), *ol-chani → il-keek* (tree → trees), *en-gerai → in-gera* (child → children), *ol-lee → il-lewa* (man → men), *en-kitok → in-kituak* (woman → women), *eng-ongu → ing-onyek* (eye → eyes), *en-giook → in-giyaa* (ear → ears).\n2. **Adjectives, Gendered Numerals & Finger-Counting Signs (Hollis 1905, pp. 35–41 & Hinde 1901, p. 5)**:\n   - **Adjectives (pp. 35–38)**: Inflect for number (*kitok → kituak* 'great/big', *oti / kiti → ooti / kutiti* 'small', *supat → supati* 'good/well-behaved', *sidai → sidan* 'beautiful/good', *torono → torok* 'bad', *ibor → iboor* 'white', *rok → rook* 'black', *nyokye → nyokyo* 'red').\n   - **Gendered Numerals (pp. 39–41)**: Numbers 1, 2, 3, 4, 7, and 9 inflect for Feminine vs. Masculine: **1** *nabo* (f.) / *obo* (m.) / *nebo* (place); **2** *are* (f.) / *aare* (m.); **3** *uni* (f.) / *okuni* (m.); **4** *ongwan* (f.) / *oongwan* (m.); **5** *imiet*; **6** *ile*; **7** *naapishana* (f.) / *oopishana* (m.); **8** *isiet*; **9** *naaudo* (f.) / *oodo* (m.); **10** *tomon*; **20** *tikitam*; **30** *osom*; **40** *artam*; **50** *onom*; **60** *ntomoni-ile* (Hinde 1901 p. 5: *īp* = 60, a warrior company, signaled by snapping fingers); **100** *ip*.\n3. **Two Verb Classes & Nine Derivative Extensions (Hollis 1905, pp. 48–97)**:\n   - **Class I Verbs** (roots not beginning with *i*, pp. 48–63): e.g., *a-suj* (to follow), *a-nyor* (to love), *a-lo* (to go, pl. *a-puo*).\n   - **Class II Verbs** (roots beginning with *i*, pp. 63–71): e.g., *a-irorie* (to speak to), *a-ipot* (to call), *a-ining* (to hear).\n   - **Subject-Object Portmanteau Prefixes (p. 48)**: **aa-** (\"I...thee\" or \"he/they...me\": *aa-suj*, I follow thee / he follows me), **ki-** (\"thou...me\" or \"we\": *ki-suj*, thou followest me / we follow).\n   - **Nine Derivative Stems (Hollis 1905, pp. 71–87)**: (1) Motion towards speaker (**-u / -unye**, pp. 71–73: *a-lotu* 'come hither', *a-nyorru* 'fall in love with'), (2) Motion away (**-aa / -aya / -oo**, pp. 73–75: *a-lo-aa* 'go away', *a-suj-aa* 'follow away'), (3) Dative/Applied \"for/to\" (**-aki / -oki**, pp. 75–77: *a-suj-aki* 'follow for'), (4) Instrumental/Locative \"with/at\" (**-ie**, pp. 77–79: *a-suj-ie* 'follow with'), (5) Inchoative/Become (**-u / -isho**, pp. 79–81: *a-rok-u* 'become black', *a-ibor-u* 'become white'), (6) Intransitive (**-isho / -asho / -osho**, pp. 81–83: *a-suj-isho*), (7) Neuter/Quasi-Passive (**-a / -o / -ye**, pp. 83–84: *a-dany-a* 'be broken/split'), (8) Reciprocal (**-ro / -no**, pp. 84–85: *a-nyor-ro* 'love one another'), and (9) Causative (**a-ita-** for Class I, **-ie** for Class II, pp. 85–87: *a-ita-suj* 'cause to follow').",
+    "examples": [
+      {
+        "maasai": "Sopai! — Epa! (Hepa!) | Takwenya! — Iko! (Igho!)",
+        "english": "Greetings (to men/warriors)! — Reply! | Greetings (to women/elders)! — Reply!",
+        "explanation": "Traditional Maa salutations (Hinde 1901, p. 41 & Hollis 1905, pp. 101–102, 284–285)"
+      },
+      {
+        "maasai": "aa-suj (I follow thee / he follows me) • ki-suj (thou followest me / we follow)",
+        "english": "Portmanteau subject-object prefixes on Class I verb a-suj ('to follow')",
+        "explanation": "Hollis (1905, p. 48)"
+      },
+      {
+        "maasai": "a-lo (sg.) / a-puo (pl.) • a-lotu (come hither) • a-lo-aa (go away)",
+        "english": "to go (sg./pl.) • to come towards speaker (-u) • to go away (-aa)",
+        "explanation": "Suppletive plural stem and directional extensions in Hollis (1905, pp. 71–75, 90)"
+      }
     ]
   },
   {
-    id: "mas-dundas-1910-laikipiak-baringo-maa",
-    title: "Hon. K. R. Dundas (1910, pp. 49–57): The Five Laikipiak Divisions, Uasin Gishu (Il-Mokwan), Segellai, Tigirri & Baringo Maa Clans",
-    summary: "Historical Maa divisions, migrations, and clan branches in the Baringo and Laikipia basins documented by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 49–57).",
-    content: `From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *JRAI* Vol. 40, Jan.–Jun. 1910, pp. 49–57):
-1. **The Five Main Divisions of the Laikipiak Masai (pp. 55–56)**:
-   - **(1) Il Tarasaeriaini**: Inhabited the country at the foot of Mount Kenya and around the **Euaso Ngiro**, **Ntarakwa**, and **Subugu Olerigo**.
-   - **(2) Lornying**: Inhabited the **Loroghi Plateau** (parent division of the Njamus clan **Il Barsegir**, p. 53).
-   - **(3) Ngang Elima (*'Ngang Elima*)**: Inhabited the high veldt above the **Mokotan** plains (parent division of the Njamus clan **Loiborgishu / 'L-ooibor-kīshu**, p. 53).
-   - **(4) Il Marma**: Inhabited **Lariak**.
-   - **(5) Il Mungmunyot**: A subdivision of *Il Tarasaeriaini* who migrated east to the **Lorian Swamp**, where they were attacked and almost completely annihilated by the Naivasha Masai (p. 56). After the ~1890 rinderpest epidemic decimated the Laikipiak herds, small Laikipiak settlements survived on the Mokotan River near the Government station and at Njemps.
-2. **Historical Maa Groups, Ethnonyms & Baringo Clan Branches (pp. 49–57)**:
-   - **Nyarusi**: Laikipiak name for the Njamus/Ilchamus, corrupted by Swahili ivory traders into *Njamus / Njemps* (p. 49).
-   - **Il Kabes (*Il Kabess*), Loiborgishu (*'L-ooibor-kīshu*) & Il Barsegir**: The 3 Laikipiak clans settled at Njamus (*Il Kabess* substitutes for *Il Mayek* in the Njamus crop-medicine ceremony, pp. 53, 55).
-   - **Ol Ouara (= *Lugumai*)**: Samburu/Njamus clan corresponding to Masai *Lugumai* (p. 53); **Barsaina**: Uasin Gishu (*Moiven*) clan at Njamus descended from island settlers at Korvan (pp. 50, 53).
-   - **Segellai & Tigirri (p. 51)**: The *Segellai* Masai of the Nakuru plains and Mau slopes defeated the Samburu *Lobbeyok* and drove them to *El Bogoi*, before being wiped out by a coalition of *Laikipiak*, *Tigirri*, and *Masai*.
-   - **Il Kakesan (p. 52) & Il-Mokwan (p. 57)**: Masai names for the *Lumbwa* (Kipsikis, to whom survivors of the massacred *Il Geroi* fled) and the prehistoric Uasin Gishu plateau stone-kraal builders (called *Moiven / Muttia* by the Suk and *I-Sirikwa* by the Nandi).`,
-    examples: [
-      { maasai: "Il Tarasaeriaini • Lornying • 'Ngang Elima • Il Marma • Il Mungmunyot", english: "The five main territorial divisions of the Laikipiak Masai", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 55–56)" },
-      { maasai: "Nyarusi • Il Kabes (Il Kabess), 'L-ooibor-kīshu (of 'Ngang Elima), Il Barsegir (of Lornying) • Segellai & Tigirri • Il Kakesan • Il-Mokwan", english: "Baringo & Rift Valley Maa ethnonyms and clan branches in Dundas (1910)", explanation: "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 49–57)" }
+    "id": "maasai-hohnel-1894-farler-1882-toponymy",
+    "title": "19th-Century Maa Toponymy, Age-Grades & Kwafi/Loikop Historiography (Farler 1882, Cust 1883 & Höhnel 1894)",
+    "summary": "Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), and Lieut. Ludwig von Höhnel (1894) record the earliest Maa mountain and river toponyms across Kenya alongside age-grade and pastoral institutions.",
+    "content": "From Ven. J. P. Farler & Rev. T. Wakefield (*\"Native Routes in East Africa\"*, PRGS Vol. 4, 1882, pp. 742–746), R. N. Cust (*A Sketch of the Modern Languages of Africa*, Vol. I, 1883, pp. 146–150), and Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, Ch. IV, pp. 226–285):\n1. **Classical Maa Mountain & River Toponymy in Kenya (Farler 1882 & Höhnel 1894)**:\n   - **Donyo Egere** (*Ol-doinyo Keri*, \"Spotted/Dappled Mountain\"): Mount Kenya, named from the black crags and white glaciers above the forest line (Farler 1882, p. 743 & Höhnel 1894, p. 363).\n   - **Donyo Erok** (\"Black Mountain\", at the southern border near Matumbato), **Donyo Longonot** (steep crater cone in the Rift Valley), **Donyo Suswa**, **Donyo Lamuyu** (Ngong Hills), and **Donyo Sattima** (highest peak of the Aberdare range, Höhnel 1894, p. 325).\n   - **Guaso Nyiro** (*Ewaso Ng'iro*, \"Brown/Muddy River\"), **Guaso Narok** (\"Black River\"), and **Guaso Nagut** (Rift Valley streams).\n2. **Age-Grades, Material Culture & Early Grammars (Cust 1883 & Höhnel 1894, pp. 242–265)**:\n   - Cust (1883, pp. 146–150) documents Krapf's 1854 *Vocabulary of the Engútuk Eloikób* (compiled at Mombasa from the Kwafi/Iloikop speaker *Lemásegnot* of *Enganglima*) and Erhardt's 1857 *Masai Vocabulary*.\n   - Höhnel (1894, pp. 242–265) describes the age-grades **Elmoran** (warriors), **Elmorua** (married elders), and **Ditto** (*en-dito*, unmarried maidens), the spokesman **Leigwanan** (*ol-aigwanani*) and ritual leader **Leibon** (*ol-oiboni*), the ostrich-feather face-halo (**en-gopiro**), thigh war-bell (**ol-twala**), and smoking milk-calabashes with wild olive (**ol-oirien**) embers.",
+    "examples": [
+      {
+        "maasai": "Donyo Egere (Ol-doinyo Keri) • Donyo Erok • Donyo Lamuyu • Donyo Sattima • Guaso Nyiro",
+        "english": "Mount Kenya ('Dappled Mountain') • Black Mountain • Ngong Hills • Aberdare Peak • Ewaso Ng'iro ('Brown River')",
+        "explanation": "19th-century Maa mountain and river names in Farler (1882) and Höhnel (1894)"
+      },
+      {
+        "maasai": "Elmoran • Elmorua • Ditto • Leigwanan • Leibon • ol-oirien",
+        "english": "Warriors • Elders • Maidens • Spokesman • Ritual prophet • Wild olive tree",
+        "explanation": "Maa social grades and material culture recorded by Höhnel (1894, Vol. I, pp. 242–265)"
+      }
     ]
   },
   {
-    id: "mas-routledge-1910-appendix-ii",
-    title: "W. S. & K. Routledge (1910, Appendix II, pp. 344–349 & Plate CXXXVI): The Masaí Warrior Manyatta, Elected Legooran ('Colonel'), Lion-Mane War Helmet, Blood Song & Arthi Plain Battle",
-    summary: "Primary ethnographic record of Masaí military organisation, dietary discipline, arms, the Blood Song, and post-rinderpest history in W. Scoresby & Katherine Routledge (1910, pp. 9, 12–16, 344–349 & Plate CXXXVI).",
-    content: `From W. Scoresby & Katherine Routledge (*With a Prehistoric People: The Akikúyu of British East Africa*, London: Edward Arnold, 1910, Introduction pp. 9, 12–16, Appendix II: *The Masaí*, pp. 344–349 & Plate CXXXVI):
-1. **The Warrior *Manyatta*, Elected *Legooran* & Strict Dietary Regimen (pp. 346–347)**:
-   - Unmarried warriors live in a dedicated military kraal (**manyatta**) attended by their mothers and five or six uninitiated girls per warrior, governed by an elected **legooran** ("colonel" chosen for eloquence and bravery, who carries a knobkerrie club rather than a spear and arbitrates all disputes).
-   - Warriors subsist strictly on **milk and mutton** (**one sheep daily to every five warriors**), and **neither fermented beer nor tobacco** is permitted to a warrior.
-2. **4-Ft Spear, Lion-Mane War Headdress, The Blood Song & Post-Rinderpest History (pp. 9, 15, 345–349 & Plate CXXXVI)**:
-   - **Arms & Lion-Mane Headdress (pp. 345–346, Plate CXXXVI)**: Broad-bladed spear (blade nearly 4 ft long, short wooden mid-grip, long iron butt-spike) and tall lion-mane war headdress awarded only to a warrior who has killed a lion single-handed with his spear.
-   - **The Blood Song (pp. 347–348)**: Performed by ~40 warriors after drinking warm bullock blood drawn from the neck vein with a blocked arrow, spinning their 4-ft silver-bright spears vertically faster than the eye can follow.
-   - **Historical Alliances & Arthi Plain Battle (pp. 9, 15, 345, 348–349)**: Records the joint alliance of the Masaí, Akikúyu, N'doróbo (*A'si*), and Akam'ba to repel the southward Somali invasion during the 7th Kikuyu generation age (*I-ré-gi*, "the revolters"), and the pitched battle between the two Masaí sections on the **Arthi plain** near Nairobi after the 1890s cattle plague and smallpox (leaving **over 1,000 dead**), followed by the northern section's settlement on **Lei-ki-pi-a**.`,
-    examples: [
-      { maasai: "Manyatta • Legooran ('Colonel') • 1 sheep daily to 5 warriors + milk (no beer or tobacco)", english: "Warrior kraal • Elected leader • Strict warrior dietary discipline", explanation: "W. S. & K. Routledge (1910, Appendix II, pp. 346–347)" },
-      { maasai: "4-ft spear & lion-mane headdress • The Blood Song • Arthi plain battle (>1,000 dead) & Lei-ki-pi-a", english: "Single-handed lion-slayer helmet • Blood-drinking dance • Post-rinderpest history", explanation: "W. S. & K. Routledge (1910, Appendix II, pp. 345–349 & Plate CXXXVI)" }
+    "id": "maasai-public-domain-dataset-synthesis",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Maasai (Maa))",
+    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Maasai (Maa).",
+    "content": "1. **Archival & Open-Dataset Integration for Maasai (Maa)**:\n   - Combines primary historical documentation (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910, BFBS 1921) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "examples": [
+      {
+        "maasai": "Idya-ae-olong (that-other-day) • E-weji ne-yeng-ye-ki en-giteng",
+        "english": "the day before yesterday, the day after to-morrow • the place where the ox is slaughtered in",
+        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+      },
+      {
+        "maasai": "Ol-alem liki-njo-sho • Ol-alem la-isho",
+        "english": "the sword which you give to me • the sword which he, she, or they give to me",
+        "explanation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar)"
+      }
+    ]
+  },
+  {
+    "id": "maasai-hobley-1910-social-organization-cattle-brands",
+    "title": "C. W. Hobley (1910) Part II Chapters I, II & VI: Masai Moieties (Oodo Mongi & Orok Kiteng), 7 Gilat & 36 Sub-Gilat, Eo Endomono Naming Ceremony, 7 Sirata Shield Patterns & Clan Cattle Brands (pp. 119–133, 159–161)",
+    "summary": "Complete line-by-line documentation of C. W. Hobley's 1910 Masai chapters: the two main divisions (Oodo Mongi 'Red Bull' & Orok Kiteng 'Black Cow'), all 7 primary gilat and 36 sub-gilat, the Eo Endomono child-naming ceremony, the 7 Sirata shield heraldry patterns, and the comparative Masai clan cattle brands.",
+    "content": "From C. W. Hobley, C.M.G. (*Ethnology of A-Kamba and Other East African Tribes*, Cambridge University Press, 1910, Part II, Chapters I, II & VI, pp. 119–133, 159–161):\n1. **Part II, Chapter I — The Two Main Divisions (*Oodo Mongi* & *Orok Kiteng*), 7 *Gilat* & 36 *Sub-Gilat* (pp. 119–120)**:\n   - Hobley records that the Masai nation is divided into two great exogamous moieties named after the colour of the sacrificial bullock and cow at the original division of the tribe:\n     - **I. Oodo Mongi (\"The Red Bull\")** — comprising **five primary *gilat* (clans)** and **24 *sub-gilat***:\n       1. **L'aiser** (9 *sub-gilat*: *En gidong* [the hereditary *Oloiboni* lineage of Mbatian, Lenana, and Sendeyo], *Parkinet, Parsingo, Partimaroi, Engaje oodo, Engaje nanuki, L'olokesen, L'okumai, L'oodokishu*).\n       2. **L'ukumai** (6 *sub-gilat*: *Sitat, Maromai, L'ebusat, Partetiu, L'oiger, Kipuyoni*).\n       3. **L'aitaiok** (7 *sub-gilat*: *Siria, L'ais, Machen, Pojos, Mohono, L'oodokishu, L'okamai*).\n       4. **L'molelyan** (5 *sub-gilat*: *Masangwa, Kiporon, L'moingo, L'oodokishu, Parsintaan*).\n       5. **L'makesen** (3 *sub-gilat*: *Loiborkishu, Kipeles, Ptirbo*).\n     - **II. Orok Kiteng (\"The Black Cow\")** — comprising **two primary *gilat*** and **6 *sub-gilat***:\n       6. **L'tarosero** (3 *sub-gilat*: *L'moingo, Nkidong, L'ais*).\n       7. **L'mengana** (3 *sub-gilat*: *Kipuyoni, Kiporon, El Masula*).\n2. **The *Eo Endomono* Child-Naming Ceremony & 7 *Sirata* Shield Patterns (pp. 120–121)**:\n   - **Eo Endomono (Naming Ceremony, p. 120)**: Held when a child's hair is first shaved; an unblemished sheep is slaughtered, three spots of blood are placed on the mother's forehead, nose, and chin, her hair is shaved with milk and water, and the elders bless the child's name.\n   - **Seven Named *Sirata* Shield Heraldry Designs (p. 121)**:\n     1. **Sirata e neilongu**: Circular target-like boss pattern in the centre of the buffalo-hide shield (*el-longo*).\n     2. **Sirata el langarua**: Diagonal/chevron band across the shield face.\n     3. **Sirata el oiboni**: Sacred heraldic mark reserved for warriors affiliated with the *Oloiboni*.\n     4. **Sirata el ngatuny**: \"Lion-mark\" (*ol-ngatuny*) awarded for conspicuous bravery.\n     5. **Sirata e narok**: Black half-field (*narok*) painted with burnt gourd-ash and blood.\n     6. **Sirata e nanyokie**: Crimson/red field (*nanyokie*) painted with red ochre (*ol-karia*) mixed with fat; reserved for proven veterans.\n     7. **Sirata el keri**: Checkered/dappled black-and-white border (*keri*).\n3. **Part II, Chapter II & VI — Masai Clan Cattle Brands (pp. 122–133, Figs. LXXXVIII–CXI) & Northern/Western Maa Sections (pp. 159–161)**:\n   - **Masai Clan Brands & Ear-Slits (pp. 128–133, Figs. LXXXVIII–CXI)**: Illustrates the linear and curved iron-brand marks and ear-cuts (*ol-ponoto*) distinguishing cattle of **L'aiser, L'ukumai, L'molelyan, L'tarosero, and L'mengana**, showing how several Kikuyu and Kamba clans adopted neighbouring Masai brand motifs through trade and intermarriage.\n   - **Sambur, Laikipiak & Uasingishu Sections (pp. 159–161)**: Documents the **9 Sambur sub-tribes** (*L'masula, L'pisikishu, L'nyaparai, L'ngwesi, L'orongwe, L'ukumai, L'mosiat, L'oimisi, L'doigio*) and 3 *gilat* (*Sitat, Ol Lesilali, Maletis*, laibon *Ol Segeteti*), the **6 Laikipiak sub-tribes** (*L'ngwesi, L'tikirri, L'leleta, L'purko, L'oodokishu, L'momonyot*, 3 *gilat* *Bartaolin, Sioma, Kisengeni*), and the **4 Uasingishu *gilat* & totems** (*L'aiser* [wild pig *ol-bitir*], *L'ukumai* [crow *ol-kurok*], *L'masula* [hyena *ol-ngojine*], *L'aitaiok* [rat *en-deroni*]).",
+    "examples": [
+      {
+        "maasai": "Oodo Mongi ('Red Bull': L'aiser, L'ukumai, L'aitaiok, L'molelyan, L'makesen) vs. Orok Kiteng ('Black Cow': L'tarosero, L'mengana)",
+        "english": "The two primary Masai moieties and their 7 primary gilat (clans) and 36 sub-gilat",
+        "explanation": "Hobley (1910, Part II, Ch. I, pp. 119–120)"
+      },
+      {
+        "maasai": "Eo Endomono • Sirata e neilongu, Sirata el langarua, Sirata el oiboni, Sirata el ngatuny, Sirata e narok, Sirata e nanyokie, Sirata el keri",
+        "english": "Child-naming ceremony • The 7 named warrior shield (el-longo) heraldic patterns",
+        "explanation": "Hobley (1910, Part II, Ch. I, pp. 120–121)"
+      },
+      {
+        "maasai": "Uasingishu gilat & totems: L'aiser (ol-bitir wild pig), L'ukumai (ol-kurok crow), L'masula (ol-ngojine hyena), L'aitaiok (en-deroni rat)",
+        "english": "The 4 Uasingishu (Kwavi) clans and their sacred totems",
+        "explanation": "Hobley (1910, Part II, Ch. VI, p. 161)"
+      }
+    ]
+  },
+  {
+    "id": "mas-dundas-1910-laikipiak-baringo-maa",
+    "title": "Hon. K. R. Dundas (1910, pp. 49–57): The Five Laikipiak Divisions, Uasin Gishu (Il-Mokwan), Segellai, Tigirri & Baringo Maa Clans",
+    "summary": "Historical Maa divisions, migrations, and clan branches in the Baringo and Laikipia basins documented by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 49–57).",
+    "content": "From Hon. Kenneth R. Dundas (*Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate*, *JRAI* Vol. 40, Jan.–Jun. 1910, pp. 49–57):\n1. **The Five Main Divisions of the Laikipiak Masai (pp. 55–56)**:\n   - **(1) Il Tarasaeriaini**: Inhabited the country at the foot of Mount Kenya and around the **Euaso Ngiro**, **Ntarakwa**, and **Subugu Olerigo**.\n   - **(2) Lornying**: Inhabited the **Loroghi Plateau** (parent division of the Njamus clan **Il Barsegir**, p. 53).\n   - **(3) Ngang Elima (*'Ngang Elima*)**: Inhabited the high veldt above the **Mokotan** plains (parent division of the Njamus clan **Loiborgishu / 'L-ooibor-kīshu**, p. 53).\n   - **(4) Il Marma**: Inhabited **Lariak**.\n   - **(5) Il Mungmunyot**: A subdivision of *Il Tarasaeriaini* who migrated east to the **Lorian Swamp**, where they were attacked and almost completely annihilated by the Naivasha Masai (p. 56). After the ~1890 rinderpest epidemic decimated the Laikipiak herds, small Laikipiak settlements survived on the Mokotan River near the Government station and at Njemps.\n2. **Historical Maa Groups, Ethnonyms & Baringo Clan Branches (pp. 49–57)**:\n   - **Nyarusi**: Laikipiak name for the Njamus/Ilchamus, corrupted by Swahili ivory traders into *Njamus / Njemps* (p. 49).\n   - **Il Kabes (*Il Kabess*), Loiborgishu (*'L-ooibor-kīshu*) & Il Barsegir**: The 3 Laikipiak clans settled at Njamus (*Il Kabess* substitutes for *Il Mayek* in the Njamus crop-medicine ceremony, pp. 53, 55).\n   - **Ol Ouara (= *Lugumai*)**: Samburu/Njamus clan corresponding to Masai *Lugumai* (p. 53); **Barsaina**: Uasin Gishu (*Moiven*) clan at Njamus descended from island settlers at Korvan (pp. 50, 53).\n   - **Segellai & Tigirri (p. 51)**: The *Segellai* Masai of the Nakuru plains and Mau slopes defeated the Samburu *Lobbeyok* and drove them to *El Bogoi*, before being wiped out by a coalition of *Laikipiak*, *Tigirri*, and *Masai*.\n   - **Il Kakesan (p. 52) & Il-Mokwan (p. 57)**: Masai names for the *Lumbwa* (Kipsikis, to whom survivors of the massacred *Il Geroi* fled) and the prehistoric Uasin Gishu plateau stone-kraal builders (called *Moiven / Muttia* by the Suk and *I-Sirikwa* by the Nandi).",
+    "examples": [
+      {
+        "maasai": "Il Tarasaeriaini • Lornying • 'Ngang Elima • Il Marma • Il Mungmunyot",
+        "english": "The five main territorial divisions of the Laikipiak Masai",
+        "explanation": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 55–56)"
+      },
+      {
+        "maasai": "Nyarusi • Il Kabes (Il Kabess), 'L-ooibor-kīshu (of 'Ngang Elima), Il Barsegir (of Lornying) • Segellai & Tigirri • Il Kakesan • Il-Mokwan",
+        "english": "Baringo & Rift Valley Maa ethnonyms and clan branches in Dundas (1910)",
+        "explanation": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, pp. 49–57)"
+      }
+    ]
+  },
+  {
+    "id": "mas-routledge-1910-appendix-ii",
+    "title": "W. S. & K. Routledge (1910, Appendix II, pp. 344–349 & Plate CXXXVI): The Masaí Warrior Manyatta, Elected Legooran ('Colonel'), Lion-Mane War Helmet, Blood Song & Arthi Plain Battle",
+    "summary": "Primary ethnographic record of Masaí military organisation, dietary discipline, arms, the Blood Song, and post-rinderpest history in W. Scoresby & Katherine Routledge (1910, pp. 9, 12–16, 344–349 & Plate CXXXVI).",
+    "content": "From W. Scoresby & Katherine Routledge (*With a Prehistoric People: The Akikúyu of British East Africa*, London: Edward Arnold, 1910, Introduction pp. 9, 12–16, Appendix II: *The Masaí*, pp. 344–349 & Plate CXXXVI):\n1. **The Warrior *Manyatta*, Elected *Legooran* & Strict Dietary Regimen (pp. 346–347)**:\n   - Unmarried warriors live in a dedicated military kraal (**manyatta**) attended by their mothers and five or six uninitiated girls per warrior, governed by an elected **legooran** (\"colonel\" chosen for eloquence and bravery, who carries a knobkerrie club rather than a spear and arbitrates all disputes).\n   - Warriors subsist strictly on **milk and mutton** (**one sheep daily to every five warriors**), and **neither fermented beer nor tobacco** is permitted to a warrior.\n2. **4-Ft Spear, Lion-Mane War Headdress, The Blood Song & Post-Rinderpest History (pp. 9, 15, 345–349 & Plate CXXXVI)**:\n   - **Arms & Lion-Mane Headdress (pp. 345–346, Plate CXXXVI)**: Broad-bladed spear (blade nearly 4 ft long, short wooden mid-grip, long iron butt-spike) and tall lion-mane war headdress awarded only to a warrior who has killed a lion single-handed with his spear.\n   - **The Blood Song (pp. 347–348)**: Performed by ~40 warriors after drinking warm bullock blood drawn from the neck vein with a blocked arrow, spinning their 4-ft silver-bright spears vertically faster than the eye can follow.\n   - **Historical Alliances & Arthi Plain Battle (pp. 9, 15, 345, 348–349)**: Records the joint alliance of the Masaí, Akikúyu, N'doróbo (*A'si*), and Akam'ba to repel the southward Somali invasion during the 7th Kikuyu generation age (*I-ré-gi*, \"the revolters\"), and the pitched battle between the two Masaí sections on the **Arthi plain** near Nairobi after the 1890s cattle plague and smallpox (leaving **over 1,000 dead**), followed by the northern section's settlement on **Lei-ki-pi-a**.",
+    "examples": [
+      {
+        "maasai": "Manyatta • Legooran ('Colonel') • 1 sheep daily to 5 warriors + milk (no beer or tobacco)",
+        "english": "Warrior kraal • Elected leader • Strict warrior dietary discipline",
+        "explanation": "W. S. & K. Routledge (1910, Appendix II, pp. 346–347)"
+      },
+      {
+        "maasai": "4-ft spear & lion-mane headdress • The Blood Song • Arthi plain battle (>1,000 dead) & Lei-ki-pi-a",
+        "english": "Single-handed lion-slayer helmet • Blood-drinking dance • Post-rinderpest history",
+        "explanation": "W. S. & K. Routledge (1910, Appendix II, pp. 345–349 & Plate CXXXVI)"
+      }
+    ]
+  },
+  {
+    "id": "maasai-johnston-1902-uganda-protectorate-complete",
+    "title": "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–509, 796–836, 885–901, 913–926): Plate 46, Figs. 439–463, Dr. Shrubsall's Masai Anthropometry (Nos. 69–76), Chapter XIX Masai Ethnography, 4-God Creation Myth, Os-singolio Musical Score (p. 834), Vocabulary Set 2 (pp. 913–924) & All 30 Additional Words and Sentences in Masai (pp. 925–926)",
+    "summary": "Complete line-by-line documentation of all Masai and Ngishu/Enjámusi/Samburu material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902): Coloured Plate 46 ('A Masai Warrior', p. 824), 25 Illustrations (Nos. 439–463), Dr. Shrubsall's anthropometric tables for 8 Masai subjects (Nos. 69–76, pp. 492–507), Chapter XIX ethnography, Dr. Bödeker's medical notes, the 4-God creation myth, the os-singolio musical score (p. 834), Set 2 vocabulary (pp. 913–924), and all 30 Additional Words and Sentences in Masai (pp. 925–926).",
+    "content": "From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. i–xx, 471–509, 796–836, 885–901, 913–926):\n1. **Coloured Plate 46, Illustrations 439–463 & Dr. Shrubsall's Masai Anthropometry (pp. xiii–xix, 492–507, 796–836)**:\n   - **Coloured Plate 46 (facing p. 824)**: *A Masai Warrior* painted by Sir Harry Johnston.\n   - **25 Chapter XIX Masai Illustrations (Nos. 439–463, pp. xviii, 797–835)**: *439. Enjámusi or \"Njemps\" Masai*, *440. The Edge of the Nandi Plateau*, *441. An Eating of Meat: Masai Warriors*, *442. A Masai Elder*, *443. Masai Women*, *444. Masai Warriors*, *445. A Young Masai Matron*, *446. A Masai Girl*, *447. Masai \"Dito\" or Unmarried Young Woman*, *448. Ear Ornaments of Masai Men and Women*, *449–450. Masai Kraals*, *451. Masai Hut in framing*, *452. Completed Hut plastered with Mud and Cow-dung*, *453. Gate in Thorn Hedge of Masai Kraal*, *454. Masai Asses*, *455. Masai Goats*, *456. Masai Women driving Bowed Donkeys*, *457. Masai Warrior in Ostrich Feather Headdress*, *458. Masai Shields and Spears*, *459. Masai Bow and Arrows and Quiver*, *460. Masai War Horn and Ivory Snuff-box*, *461. Masai Woman with Iron Coils*, *462. Terere, a Masai \"Ol-aibon\" or Medicine Man*, *463. Masai Elders playing \"Bao\"*.\n   - **Dr. F. C. Shrubsall's Masai Anthropometry (pp. 492–507, Nos. 69–76)**: Average Cephalic Index **72.9** (dolichocephalic), Length-Height Index **63.6**, Nasal Index **76.1** (mesorhine), Stature **171.2 cm** (Span 103.5, Sitting Height 49.0, Upper Limb 45.7, Forearm 15.6, Lower Limb 51.4); Individual Tables A–F (pp. 496–507) record 8 named Masai subjects: **No. 69 Ol-le-matian (24), No. 70 Ol-le-batiet (23), No. 71 Ol-le-keli (25), No. 72 Ol-le-tome (25), No. 73 Ol-le-seroni (26), No. 74 Ol-le-gelia (25), No. 75 Ol-le-merigo (27), and No. 76 Ol-le-kiseku (24)**.\n2. **Chapter XIX — Masai Ethnography, Age-Grades, Name-Taboo Laws, Medicine, Religion & Musical Score (pp. 796–836)**:\n   - **Pastoral (*Il-Oikob*) vs. Agricultural (*Il-lumbwa / Burkeneji, Gwas' Ngishu, Nyarusi / Enjámusi, Essegelli, Kwavi*) Masai (pp. 796–804)**: The **Gwas' Ngishu** built stone-walled kraals on the **Roñata Nyuki** (\"Red Plain\" = Uasin Gishu Plateau) before being dispersed by the Naivasha/Laikipia Masai.\n   - **Dentition, Circumcision, Ornamentation & Livestock (pp. 805–819)**: Two central lower incisors extracted (attributed by Sidney Hinde to feeding milk/water during lockjaw/tetanus, p. 806); special circumcision method leaving a hanging fleshy process of *frænum* and *præputium* (p. 807); unmarried girls (**dito**, Fig. 447) encase arms and legs in coiled iron wire and wear \"catherine-wheel\" brass ear-coils (**es-surutia**, Fig. 448); cows refuse milk unless shown a stuffed calf-skin (p. 817); **Equus tæniopus** donkeys (Fig. 454); warriors chew **Acacia verrugosa** bark before raids for berserk courage (p. 820).\n   - **Four Male Life Stages & Strict Name-Taboo Rules (pp. 824–828)**: **(1) Laiok / Laioni** (uncircumcised boy) → **(2) El Manūa / Selogunya** (novice during circumcision recovery, shooting small birds for his sweetheart's headdress) → **(3) El Mórran** (warrior living in the *manyatta* with unmarried *dito* girls) → **(4) Ol Baiyan** (married elder). A man takes a patronymic (**Ol-le-...**) at circumcision, changes his name if a namesake dies, and **never utters his own name or his wife's name** (calling an old woman **Koko**, an elder **Baba**, and a wife **Eñ gitok**, p. 827).\n   - **Burial, Dr. Bödeker's Medical Notes & Hereditary *Ol-aibon* Dynasty (pp. 828–831)**: Commoners are left to hyenas, whereas a great chief is buried and **his skull is exhumed after 1 year** for honey-beer libations (p. 828); Dr. Bödeker documents Masai use of **cassia bark** for malaria, the **1892 smallpox epidemic at Nairobi that killed >2,000 Masai**, Somali forehead variolation, and **acacia-thorn wound suturing** (pp. 828–829); hereditary *Ol-aibon* genealogy: **Kibebete → Mbatian (d. c. 1890) → Lenana** (at Nairobi/Ngong) and **Sendeyo** (at Loita), plus Naivasha medicine-man **Terere** (Fig. 462, pp. 830–831).\n   - **Religion (*Añgai / Ñgai*), Rain Chant, 4-God Creation Myth, Sacred Trees & Musical Score (pp. 831–836)**: Prayers to **Añgai / Ñgai** (and **Attashá**, the sun); children hold a bunch of grass in the hand during drought and chant a rain-song (p. 831); **The Four-God Creation Myth (pp. 831–832)**: Originally there were four gods—the **Black God** (kindest, closest to humanity, sending rain), the **White God** (aloof in the upper sky), the **Grey God**, and the **Red God** (fierce and wrathful, causing famine and thunder); deceased elders return as harmless **black snakes** guarding the kraal (p. 833); sacred **subugo** and **retete** fig trees and ceremonial **spitting** as a sign of blessing and peace (p. 833); 4-bar **os-singolio** vocal score in 2/4 time (*Allegretto*, p. 834); and serf blacksmith caste **Elgunono** (p. 835).\n3. **Complete \"Additional Words and Sentences in Masai\" (pp. 925–926 — All 30 Items Verified Line-by-Line)**:\n   1. *Calf*: **Ol aṣe (m.), eñgaṣe (f.)** | 2. *Kidney*: **Ol airini** | 3. *Wait a bit!*: **T'anyō!** | 4. *Many thanks!*: **Asai!** | 5. *He will return to-morrow*: **Elotu taīsere** | 6. *Sit here!*: **Totóna enné!** | 7. *Go away!*: **Ino! ṣōmō!** | 8. *Don't forget*: **Emī damisso!** | 9. *Lift it up*: **Dumú!** | 10. *Give me to drink*: **Injohi maōko!** | 11. *Take care*: **Ndámăti!** | 12. *A barren woman*: **Ol bāhe** | 13. *Medicine, trees*: **Ol canni** | 14. *I love*: **Anyorr** | 15. *Bring firewood*: **Yao el gēk** | 16. *Come quickly!*: **Wōu tāsīū!** | 17. *Listen!*: **Neningo!** | 18. *Stand still!*: **Tōtónna!** | 19. *Wait for me!*: **Tanyō nanu!** | 20. *You're a fool!*: **Imīñāni iye!** | 21. *Goodbye!*: **Biado!** | 22. *Never mind!*: **Baīya!** | 23. *Good morning!*: **Sopai!**, reply **Eépa!** | 24. *Very well!*: **Āiya!** | 25. *Truly!*: **Ékĭnō!** | 26. *Make a fire*: **Eñnoyik akīma** | 27. *Who's there?*: **Kálo?** | 28. *Do you hear?*: **Gīniñ?** | 29. *Take away!*: **Iwa!** | 30. *Go and herd the cattle*: **Ṣomo erriita ngiṣu!**.\n   - **Set 2 Ditto Corrections (pp. 914–921)**: *Bullock (white)* **Ol giteñ oibor** (Masai) / **L'eñōni ĕpor** (Ngishu); *My child* **Eñgaraiai**; *Tooth, molar* **Entakolla**; *Woman, young* **Endīto**; *Ngishu Tens 60–90 (p. 921)*: Sixty **Onnom otomon**, Seventy **Onnom obikitam**, Eighty **Onnom otomoni uni**, Ninety **Onnom artam**.",
+    "examples": [
+      {
+        "maasai": "T'anyō! • Asai! • Elotu taīsere • Totóna enné! • Ino! ṣōmō! • Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Wōu tāsīū! • Neningo! • Tōtónna! • Tanyō nanu!",
+        "english": "Wait a bit! • Many thanks! • He will return to-morrow • Sit here! • Go away! • Don't forget • Lift it up • Give me to drink • Take care • Come quickly! • Listen! • Stand still! • Wait for me!",
+        "explanation": "Additional Words and Sentences in Masai, Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, pp. 925–926)"
+      },
+      {
+        "maasai": "Imīñāni iye! • Biado! • Baīya! • Sopai! — Eépa! • Āiya! • Ékĭnō! • Eñnoyik akīma • Kálo? • Gīniñ? • Iwa! • Ṣomo erriita ngiṣu! • Ol aṣe / eñgaṣe • Ol airini • Ol bāhe • Ol canni • Anyorr • Yao el gēk",
+        "english": "You're a fool! • Goodbye! • Never mind! • Good morning! — Reply • Very well! • Truly! • Make a fire • Who's there? • Do you hear? • Take away! • Go and herd the cattle! • Calf (m./f.) • Kidney • Barren woman • Medicine/trees • I love • Bring firewood",
+        "explanation": "Additional Words and Sentences in Masai, Johnston (1902, pp. 925–926)"
+      },
+      {
+        "maasai": "Laiok / Laioni → El Manūa / Selogunya → El Mórran → Ol Baiyan • Kibebete → Mbatian → Lenana & Sendeyo ( + Terere) • Black, White, Grey & Red Gods • Subugo & Retete trees • Os-singolio (p. 834)",
+        "english": "Four Masai male life stages • Hereditary Ol-aibon genealogy • Four-God creation myth • Sacred trees • Transcribed vocal melody",
+        "explanation": "Chapter XIX Masai ethnography, Johnston (1902, pp. 824–835)"
+      }
+    ]
+  },
+  {
+    "id": "maasai-hollis-eliot-1909-kunono-smiths-kambakta-nandi-relations",
+    "title": "A. C. Hollis & Sir Charles Eliot (1909, pp. xxiv–xxxiii, 4–12, 44, 50): The Kunōno (Masai Smiths) Dialect (4 Unique Metallurgical Nouns + 12 Nandi Cognates), Uasin Gishu Orkoiyot Dynasty & The 'Kambakta' Masai War-Song",
+    "summary": "Complete line-by-line documentation of A. C. Hollis's 150-word Kunōno (Masai Smiths) dialect study (p. xxxiii), Sir Charles Eliot's Masai–Nandi comparative grammar (pp. xxiv–xl), the Uasin Gishu Masai origin of the Nandi Orkoiyot dynasty (p. 50), and the Masai war-song 'kambakta' sung at Nandi initiation (p. 44).",
+    "content": "From A. C. Hollis & Sir Charles Eliot (*The Nandi: Their Language and Folk-Lore*, Oxford: At the Clarendon Press, 1909, pp. xxiv–xxxiii, 4–12, 44, 50):\n1. **A. C. Hollis's 150-Word Vocabulary of the *Kunōno* (Masai Smiths) Dialect (p. xxxiii)**:\n   - Sir Charles Eliot reports that A. C. Hollis collected a vocabulary of **about 150 words** of the dialect spoken by the **Kunōno (Il-Kunono)**, the endogamous serf caste of Masai blacksmiths:\n     - **Over two-thirds (>100 words)** of the Kunōno vocabulary are ordinary **Masai** words or clear derivatives thereof.\n     - **12 words** are **Nandi** cognates or borrowings.\n     - **4 core metallurgical & forge words** belong neither to Masai nor to Nandi and are peculiar to the Kunōno caste:\n       1. *Iron*: **e-samereita**\n       2. *Knife*: **o-siota**\n       3. *Spear*: **en-gandiit**\n       4. *Axe*: **e-wuyuwuyu**\n2. **Uasin Gishu & Segelai Masai Origin of the Nandi *Orkoiyot* Dynasty & Clans (pp. 4–12, 50)**:\n   - After the **Uasin Gishu (*Wuasin-Gishu*)** and **Segelai** Masai were broken up by the Naivasha/Laikipia Masai, segments of the **Kipoiis, Kipkenda, Talai, Toiyoi, Sokom, Kiptopke**, and **Chemur** clans in Nandi absorbed Masai lineages (pp. 8–11).\n   - The hereditary Nandi Chief Medicine Man (**Orkoiyot**, pl. *Orkoiik*, corresponding to the Masai **Ol-oiboni**) belongs to the **Talai** clan and migrated directly from the **Uasin Gishu Masai**, with the recorded genealogy (p. 50): **Kipsegun → Kopokoii & Ar-ap-Kipsegun → Turukat → Kimnyole** (clubbed to death in 1890 for prophesying prosperity before a disastrous raid) **→ Kipchomber** (fled to become Chief Medicine Man of the Kipsikīs/Lumbwa), **Koitalel or Samwei** (shot in Oct. 1905), and **Kipeles or Tamasun**.\n3. **The Masai War-Song *Kambakta* in the Nandi *Labet-ap-eun* Circumcision Rite (p. 44)**:\n   - During the **Labet-ap-eun** (\"dipping of the hands\") ceremony when Nandi boys recover from circumcision, they sing a war-song called **kambakta**, which Hollis notes is **composed in the Masai language**.",
+    "examples": [
+      {
+        "maasai": "e-samereita (iron) • o-siota (knife) • en-gandiit (spear) • e-wuyuwuyu (axe)",
+        "english": "The 4 unique metallurgical words peculiar to the Kunōno (Masai Smiths) dialect out of 150 words collected by A. C. Hollis",
+        "explanation": "Sir Charles Eliot & A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, p. xxxiii)"
+      },
+      {
+        "maasai": "Ol-oiboni → Nandi Orkoiyot (Kipsegun → Kopokoii → Turukat → Kimnyole → Kipchomber, Koitalel/Samwei & Kipeles/Tamasun) • kambakta (Masai war-song sung at Labet-ap-eun)",
+        "english": "Uasin Gishu Masai origin of the Nandi Orkoiyot dynasty and Masai ritual war-song in Nandi initiation",
+        "explanation": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, pp. 44, 50)"
+      }
     ]
   }
 ];
-
-MAASAI_GRAMMAR_SECTIONS.push({
-  id: "maasai-johnston-1902-uganda-protectorate-complete",
-  title: "Sir Harry Johnston (1902) 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–509, 796–836, 885–901, 913–926): Plate 46, Figs. 439–463, Dr. Shrubsall's Masai Anthropometry (Nos. 69–76), Chapter XIX Masai Ethnography, 4-God Creation Myth, Os-singolio Musical Score (p. 834), Vocabulary Set 2 (pp. 913–924) & All 30 Additional Words and Sentences in Masai (pp. 925–926)",
-  summary: "Complete line-by-line documentation of all Masai and Ngishu/Enjámusi/Samburu material in Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902): Coloured Plate 46 ('A Masai Warrior', p. 824), 25 Illustrations (Nos. 439–463), Dr. Shrubsall's anthropometric tables for 8 Masai subjects (Nos. 69–76, pp. 492–507), Chapter XIX ethnography, Dr. Bödeker's medical notes, the 4-God creation myth, the os-singolio musical score (p. 834), Set 2 vocabulary (pp. 913–924), and all 30 Additional Words and Sentences in Masai (pp. 925–926).",
-  content: `From Sir Harry Johnston, G.C.M.G., K.C.B. (*The Uganda Protectorate*, Vol. II, London: Hutchinson & Co., 1902, pp. i–xx, 471–509, 796–836, 885–901, 913–926):
-1. **Coloured Plate 46, Illustrations 439–463 & Dr. Shrubsall's Masai Anthropometry (pp. xiii–xix, 492–507, 796–836)**:
-   - **Coloured Plate 46 (facing p. 824)**: *A Masai Warrior* painted by Sir Harry Johnston.
-   - **25 Chapter XIX Masai Illustrations (Nos. 439–463, pp. xviii, 797–835)**: *439. Enjámusi or "Njemps" Masai*, *440. The Edge of the Nandi Plateau*, *441. An Eating of Meat: Masai Warriors*, *442. A Masai Elder*, *443. Masai Women*, *444. Masai Warriors*, *445. A Young Masai Matron*, *446. A Masai Girl*, *447. Masai "Dito" or Unmarried Young Woman*, *448. Ear Ornaments of Masai Men and Women*, *449–450. Masai Kraals*, *451. Masai Hut in framing*, *452. Completed Hut plastered with Mud and Cow-dung*, *453. Gate in Thorn Hedge of Masai Kraal*, *454. Masai Asses*, *455. Masai Goats*, *456. Masai Women driving Bowed Donkeys*, *457. Masai Warrior in Ostrich Feather Headdress*, *458. Masai Shields and Spears*, *459. Masai Bow and Arrows and Quiver*, *460. Masai War Horn and Ivory Snuff-box*, *461. Masai Woman with Iron Coils*, *462. Terere, a Masai "Ol-aibon" or Medicine Man*, *463. Masai Elders playing "Bao"*.
-   - **Dr. F. C. Shrubsall's Masai Anthropometry (pp. 492–507, Nos. 69–76)**: Average Cephalic Index **72.9** (dolichocephalic), Length-Height Index **63.6**, Nasal Index **76.1** (mesorhine), Stature **171.2 cm** (Span 103.5, Sitting Height 49.0, Upper Limb 45.7, Forearm 15.6, Lower Limb 51.4); Individual Tables A–F (pp. 496–507) record 8 named Masai subjects: **No. 69 Ol-le-matian (24), No. 70 Ol-le-batiet (23), No. 71 Ol-le-keli (25), No. 72 Ol-le-tome (25), No. 73 Ol-le-seroni (26), No. 74 Ol-le-gelia (25), No. 75 Ol-le-merigo (27), and No. 76 Ol-le-kiseku (24)**.
-2. **Chapter XIX — Masai Ethnography, Age-Grades, Name-Taboo Laws, Medicine, Religion & Musical Score (pp. 796–836)**:
-   - **Pastoral (*Il-Oikob*) vs. Agricultural (*Il-lumbwa / Burkeneji, Gwas' Ngishu, Nyarusi / Enjámusi, Essegelli, Kwavi*) Masai (pp. 796–804)**: The **Gwas' Ngishu** built stone-walled kraals on the **Roñata Nyuki** ("Red Plain" = Uasin Gishu Plateau) before being dispersed by the Naivasha/Laikipia Masai.
-   - **Dentition, Circumcision, Ornamentation & Livestock (pp. 805–819)**: Two central lower incisors extracted (attributed by Sidney Hinde to feeding milk/water during lockjaw/tetanus, p. 806); special circumcision method leaving a hanging fleshy process of *frænum* and *præputium* (p. 807); unmarried girls (**dito**, Fig. 447) encase arms and legs in coiled iron wire and wear "catherine-wheel" brass ear-coils (**es-surutia**, Fig. 448); cows refuse milk unless shown a stuffed calf-skin (p. 817); **Equus tæniopus** donkeys (Fig. 454); warriors chew **Acacia verrugosa** bark before raids for berserk courage (p. 820).
-   - **Four Male Life Stages & Strict Name-Taboo Rules (pp. 824–828)**: **(1) Laiok / Laioni** (uncircumcised boy) → **(2) El Manūa / Selogunya** (novice during circumcision recovery, shooting small birds for his sweetheart's headdress) → **(3) El Mórran** (warrior living in the *manyatta* with unmarried *dito* girls) → **(4) Ol Baiyan** (married elder). A man takes a patronymic (**Ol-le-...**) at circumcision, changes his name if a namesake dies, and **never utters his own name or his wife's name** (calling an old woman **Koko**, an elder **Baba**, and a wife **Eñ gitok**, p. 827).
-   - **Burial, Dr. Bödeker's Medical Notes & Hereditary *Ol-aibon* Dynasty (pp. 828–831)**: Commoners are left to hyenas, whereas a great chief is buried and **his skull is exhumed after 1 year** for honey-beer libations (p. 828); Dr. Bödeker documents Masai use of **cassia bark** for malaria, the **1892 smallpox epidemic at Nairobi that killed >2,000 Masai**, Somali forehead variolation, and **acacia-thorn wound suturing** (pp. 828–829); hereditary *Ol-aibon* genealogy: **Kibebete → Mbatian (d. c. 1890) → Lenana** (at Nairobi/Ngong) and **Sendeyo** (at Loita), plus Naivasha medicine-man **Terere** (Fig. 462, pp. 830–831).
-   - **Religion (*Añgai / Ñgai*), Rain Chant, 4-God Creation Myth, Sacred Trees & Musical Score (pp. 831–836)**: Prayers to **Añgai / Ñgai** (and **Attashá**, the sun); children hold a bunch of grass in the hand during drought and chant a rain-song (p. 831); **The Four-God Creation Myth (pp. 831–832)**: Originally there were four gods—the **Black God** (kindest, closest to humanity, sending rain), the **White God** (aloof in the upper sky), the **Grey God**, and the **Red God** (fierce and wrathful, causing famine and thunder); deceased elders return as harmless **black snakes** guarding the kraal (p. 833); sacred **subugo** and **retete** fig trees and ceremonial **spitting** as a sign of blessing and peace (p. 833); 4-bar **os-singolio** vocal score in 2/4 time (*Allegretto*, p. 834); and serf blacksmith caste **Elgunono** (p. 835).
-3. **Complete "Additional Words and Sentences in Masai" (pp. 925–926 — All 30 Items Verified Line-by-Line)**:
-   1. *Calf*: **Ol aṣe (m.), eñgaṣe (f.)** | 2. *Kidney*: **Ol airini** | 3. *Wait a bit!*: **T'anyō!** | 4. *Many thanks!*: **Asai!** | 5. *He will return to-morrow*: **Elotu taīsere** | 6. *Sit here!*: **Totóna enné!** | 7. *Go away!*: **Ino! ṣōmō!** | 8. *Don't forget*: **Emī damisso!** | 9. *Lift it up*: **Dumú!** | 10. *Give me to drink*: **Injohi maōko!** | 11. *Take care*: **Ndámăti!** | 12. *A barren woman*: **Ol bāhe** | 13. *Medicine, trees*: **Ol canni** | 14. *I love*: **Anyorr** | 15. *Bring firewood*: **Yao el gēk** | 16. *Come quickly!*: **Wōu tāsīū!** | 17. *Listen!*: **Neningo!** | 18. *Stand still!*: **Tōtónna!** | 19. *Wait for me!*: **Tanyō nanu!** | 20. *You're a fool!*: **Imīñāni iye!** | 21. *Goodbye!*: **Biado!** | 22. *Never mind!*: **Baīya!** | 23. *Good morning!*: **Sopai!**, reply **Eépa!** | 24. *Very well!*: **Āiya!** | 25. *Truly!*: **Ékĭnō!** | 26. *Make a fire*: **Eñnoyik akīma** | 27. *Who's there?*: **Kálo?** | 28. *Do you hear?*: **Gīniñ?** | 29. *Take away!*: **Iwa!** | 30. *Go and herd the cattle*: **Ṣomo erriita ngiṣu!**.
-   - **Set 2 Ditto Corrections (pp. 914–921)**: *Bullock (white)* **Ol giteñ oibor** (Masai) / **L'eñōni ĕpor** (Ngishu); *My child* **Eñgaraiai**; *Tooth, molar* **Entakolla**; *Woman, young* **Endīto**; *Ngishu Tens 60–90 (p. 921)*: Sixty **Onnom otomon**, Seventy **Onnom obikitam**, Eighty **Onnom otomoni uni**, Ninety **Onnom artam**.`,
-  examples: [
-    { maasai: "T'anyō! • Asai! • Elotu taīsere • Totóna enné! • Ino! ṣōmō! • Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Wōu tāsīū! • Neningo! • Tōtónna! • Tanyō nanu!", english: "Wait a bit! • Many thanks! • He will return to-morrow • Sit here! • Go away! • Don't forget • Lift it up • Give me to drink • Take care • Come quickly! • Listen! • Stand still! • Wait for me!", explanation: "Additional Words and Sentences in Masai, Sir Harry Johnston, The Uganda Protectorate, Vol. II (1902, pp. 925–926)" },
-    { maasai: "Imīñāni iye! • Biado! • Baīya! • Sopai! — Eépa! • Āiya! • Ékĭnō! • Eñnoyik akīma • Kálo? • Gīniñ? • Iwa! • Ṣomo erriita ngiṣu! • Ol aṣe / eñgaṣe • Ol airini • Ol bāhe • Ol canni • Anyorr • Yao el gēk", english: "You're a fool! • Goodbye! • Never mind! • Good morning! — Reply • Very well! • Truly! • Make a fire • Who's there? • Do you hear? • Take away! • Go and herd the cattle! • Calf (m./f.) • Kidney • Barren woman • Medicine/trees • I love • Bring firewood", explanation: "Additional Words and Sentences in Masai, Johnston (1902, pp. 925–926)" },
-    { maasai: "Laiok / Laioni → El Manūa / Selogunya → El Mórran → Ol Baiyan • Kibebete → Mbatian → Lenana & Sendeyo ( + Terere) • Black, White, Grey & Red Gods • Subugo & Retete trees • Os-singolio (p. 834)", english: "Four Masai male life stages • Hereditary Ol-aibon genealogy • Four-God creation myth • Sacred trees • Transcribed vocal melody", explanation: "Chapter XIX Masai ethnography, Johnston (1902, pp. 824–835)" }
-  ]
-});
-
-MAASAI_GRAMMAR_SECTIONS.push({
-  id: "maasai-hollis-eliot-1909-kunono-smiths-kambakta-nandi-relations",
-  title: "A. C. Hollis & Sir Charles Eliot (1909, pp. xxiv–xxxiii, 4–12, 44, 50): The Kunōno (Masai Smiths) Dialect (4 Unique Metallurgical Nouns + 12 Nandi Cognates), Uasin Gishu Orkoiyot Dynasty & The 'Kambakta' Masai War-Song",
-  summary: "Complete line-by-line documentation of A. C. Hollis's 150-word Kunōno (Masai Smiths) dialect study (p. xxxiii), Sir Charles Eliot's Masai–Nandi comparative grammar (pp. xxiv–xl), the Uasin Gishu Masai origin of the Nandi Orkoiyot dynasty (p. 50), and the Masai war-song 'kambakta' sung at Nandi initiation (p. 44).",
-  content: `From A. C. Hollis & Sir Charles Eliot (*The Nandi: Their Language and Folk-Lore*, Oxford: At the Clarendon Press, 1909, pp. xxiv–xxxiii, 4–12, 44, 50):
-1. **A. C. Hollis's 150-Word Vocabulary of the *Kunōno* (Masai Smiths) Dialect (p. xxxiii)**:
-   - Sir Charles Eliot reports that A. C. Hollis collected a vocabulary of **about 150 words** of the dialect spoken by the **Kunōno (Il-Kunono)**, the endogamous serf caste of Masai blacksmiths:
-     - **Over two-thirds (>100 words)** of the Kunōno vocabulary are ordinary **Masai** words or clear derivatives thereof.
-     - **12 words** are **Nandi** cognates or borrowings.
-     - **4 core metallurgical & forge words** belong neither to Masai nor to Nandi and are peculiar to the Kunōno caste:
-       1. *Iron*: **e-samereita**
-       2. *Knife*: **o-siota**
-       3. *Spear*: **en-gandiit**
-       4. *Axe*: **e-wuyuwuyu**
-2. **Uasin Gishu & Segelai Masai Origin of the Nandi *Orkoiyot* Dynasty & Clans (pp. 4–12, 50)**:
-   - After the **Uasin Gishu (*Wuasin-Gishu*)** and **Segelai** Masai were broken up by the Naivasha/Laikipia Masai, segments of the **Kipoiis, Kipkenda, Talai, Toiyoi, Sokom, Kiptopke**, and **Chemur** clans in Nandi absorbed Masai lineages (pp. 8–11).
-   - The hereditary Nandi Chief Medicine Man (**Orkoiyot**, pl. *Orkoiik*, corresponding to the Masai **Ol-oiboni**) belongs to the **Talai** clan and migrated directly from the **Uasin Gishu Masai**, with the recorded genealogy (p. 50): **Kipsegun → Kopokoii & Ar-ap-Kipsegun → Turukat → Kimnyole** (clubbed to death in 1890 for prophesying prosperity before a disastrous raid) **→ Kipchomber** (fled to become Chief Medicine Man of the Kipsikīs/Lumbwa), **Koitalel or Samwei** (shot in Oct. 1905), and **Kipeles or Tamasun**.
-3. **The Masai War-Song *Kambakta* in the Nandi *Labet-ap-eun* Circumcision Rite (p. 44)**:
-   - During the **Labet-ap-eun** ("dipping of the hands") ceremony when Nandi boys recover from circumcision, they sing a war-song called **kambakta**, which Hollis notes is **composed in the Masai language**.`,
-  examples: [
-    { maasai: "e-samereita (iron) • o-siota (knife) • en-gandiit (spear) • e-wuyuwuyu (axe)", english: "The 4 unique metallurgical words peculiar to the Kunōno (Masai Smiths) dialect out of 150 words collected by A. C. Hollis", explanation: "Sir Charles Eliot & A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, p. xxxiii)" },
-    { maasai: "Ol-oiboni → Nandi Orkoiyot (Kipsegun → Kopokoii → Turukat → Kimnyole → Kipchomber, Koitalel/Samwei & Kipeles/Tamasun) • kambakta (Masai war-song sung at Labet-ap-eun)", english: "Uasin Gishu Masai origin of the Nandi Orkoiyot dynasty and Masai ritual war-song in Nandi initiation", explanation: "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909, pp. 44, 50)" }
-  ]
-});

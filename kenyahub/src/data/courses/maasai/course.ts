@@ -1,14 +1,4 @@
-// ============================================================
-// Maasai (ɔl Maa) Language Course Configuration & Units
-// Based on Public Domain & Open-Web Linguistic Sources:
-// 1. Hildegarde Hinde (1901) "The Masai Language: Grammatical Notes Together with a Vocabulary" (Cambridge Univ. Press)
-// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II"
-// 3. A. C. Hollis (1905) "The Masai: Their Language and Folklore" (Clarendon Press, Oxford — Public Domain)
-// 4. C. W. Hobley (1910) "Ethnology of A-Kamba and Other East African Tribes" & (1922) "Bantu Beliefs and Customary Institutions"
-// 5. Wikipedia Maasai_language, Eastern_Nilotic_languages (Vossen 1982) & Nilotic_languages
-// ============================================================
-
-import type { LanguageConfig, CourseUnit } from '../types';
+import type { CourseUnit, LanguageConfig } from "../types";
 
 export const MAASAI_CONFIG: LanguageConfig = {
   "id": "maasai",
@@ -115,7 +105,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Sopai! Epa! Kejaa in-gishu o in-gera?",
             "source": "Greetings! Reply! How are the cattle and the children?"
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -472,7 +462,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Medany ol-kimojino obo el-lashei.",
             "source": "One finger will not kill a louse (Hollis 1905, p. 244, Proverb #32)."
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -642,8 +632,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [
-          ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -947,8 +936,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           }
         ],
-        "sentences": [
-          ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1091,7 +1079,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "kumuk ndari nārok",
             "source": "Many black goats"
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1249,8 +1237,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Maasai language — Morphosyntax"
           }
         ],
-        "sentences": [
-          ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1805,8 +1792,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [
-          ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1973,7 +1959,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "aia ngoshogi",
             "source": "I have a stomach-ache"
           }
-          ],
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2143,8 +2129,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           }
         ],
-        "sentences": [
-          ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3436,67 +3421,66 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "maasai-unit-johnston-1902-30-sentences-ethnography",
+    "title": "Unit 13: Sir Harry Johnston (1902) All 30 Masai Conversational Sentences (pp. 925–926), Set 2 Lexicon & Ch. XIX Ethnography",
+    "description": "Master all 30 words and conversational sentences in Masai from pp. 925–926 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902), alongside the 4-God Creation Myth, Ol-aibon lineage, and Set 2 vocabulary.",
+    "icon": "Flame",
+    "skills": [
+      {
+        "id": "maasai-johnston-1902-30-sentences-skill",
+        "title": "All 30 Masai Words & Conversational Sentences (pp. 925–926)",
+        "icon": "MessageCircle",
+        "description": "Practice every Masai greeting, command, question, and noun recorded on pp. 925–926 of Johnston (1902).",
+        "tips": "In Johnston's 30 Masai items (pp. 925–926), masculine nouns take Ol- and feminine nouns take eñg- (Ol aṣe 'male calf' vs. eñgaṣe 'female calf'), while imperatives use T-/To- or Dumú! ('Lift it up'), Totóna enné! ('Sit here!'), and Tanyō nanu! ('Wait for me!').",
+        "words": [
+          {
+            "target": "Sopai! — Eépa! • Asai! • Biado! • Baīya! • Āiya! • Ékĭnō! • Kálo? • Gīniñ?",
+            "source": "Good morning! — Reply • Many thanks! • Goodbye! • Never mind! • Very well! • Truly! • Who's there? • Do you hear?",
+            "pronunciation": "so-pai e-e-pa / a-sai / bi-a-do / bai-ya / ai-ya / e-ki-no / ka-lo / gi-ning",
+            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+          },
+          {
+            "target": "T'anyō! • Tanyō nanu! • Elotu taīsere • Totóna enné! • Tōtónna! • Ino! ṣōmō! • Wōu tāsīū! • Neningo!",
+            "source": "Wait a bit! • Wait for me! • He will return to-morrow • Sit here! • Stand still! • Go away! • Come quickly! • Listen!",
+            "pronunciation": "ta-nyo na-nu / e-lo-tu tai-se-re / to-to-na en-ne / i-no so-mo / wou ta-si-u / ne-ni-ngo",
+            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+          },
+          {
+            "target": "Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Imīñāni iye! • Iwa! • Eñnoyik akīma • Yao el gēk • Ṣomo erriita ngiṣu!",
+            "source": "Don't forget • Lift it up • Give me to drink • Take care • You're a fool! • Take away! • Make a fire • Bring firewood • Go and herd the cattle!",
+            "pronunciation": "e-mi da-mis-so / du-mu / in-jo-hi ma-o-ko / nda-ma-ti / i-mi-nga-ni i-ye / i-wa / so-mo er-rii-ta ngi-su",
+            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+          },
+          {
+            "target": "Ol aṣe (m.), eñgaṣe (f.) • Ol airini • Ol bāhe • Ol canni • Anyorr • Ol giteñ oibor • Eñgaraiai • Entakolla • Endīto",
+            "source": "Calf (m./f.) • Kidney • A barren woman • Medicine, trees • I love • White bullock • My child • Molar tooth • Young woman",
+            "pronunciation": "ol a-se e-nga-se / ol ai-ri-ni / ol ba-he / ol chan-ni / a-nyorr / ol gi-teng oi-bor",
+            "hint": "Johnston (1902, Vol. II, Set 2, pp. 914–926)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Sopai! — Eépa! Totóna enné! Injohi maōko! — Asai! Elotu taīsere. Biado!",
+            "source": "Good morning! — Reply! Sit here! Give me to drink! — Many thanks! He will return to-morrow. Goodbye! (Johnston 1902, pp. 925–926)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "In Sir Harry Johnston's 'Additional Words and Sentences in Masai' (The Uganda Protectorate, Vol. II, 1902, pp. 925–926), what do 'Injohi maōko!', 'Yao el gēk', 'Eñnoyik akīma', and 'Ṣomo erriita ngiṣu!' mean?",
+            "correctAnswer": "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
+            "options": [
+              "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
+              "'Wait a bit!', 'Stand still!', 'Come quickly!', and 'You're a fool!'",
+              "'Good morning!', 'Many thanks!', 'Goodbye!', and 'Never mind!'",
+              "'Who's there?', 'Do you hear?', 'Don't forget', and 'Lift it up'"
+            ],
+            "hint": "See Johnston (1902, Vol. II, pp. 925–926)"
+          }
+        ]
+      }
+    ]
   }
 ];
-
-MAASAI_UNITS.push({
-  id: "maasai-unit-johnston-1902-30-sentences-ethnography",
-  title: "Unit 13: Sir Harry Johnston (1902) All 30 Masai Conversational Sentences (pp. 925–926), Set 2 Lexicon & Ch. XIX Ethnography",
-  description: "Master all 30 words and conversational sentences in Masai from pp. 925–926 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902), alongside the 4-God Creation Myth, Ol-aibon lineage, and Set 2 vocabulary.",
-  icon: "Flame",
-  skills: [
-    {
-      id: "maasai-johnston-1902-30-sentences-skill",
-      title: "All 30 Masai Words & Conversational Sentences (pp. 925–926)",
-      icon: "MessageCircle",
-      description: "Practice every Masai greeting, command, question, and noun recorded on pp. 925–926 of Johnston (1902).",
-      tips: "In Johnston's 30 Masai items (pp. 925–926), masculine nouns take Ol- and feminine nouns take eñg- (Ol aṣe 'male calf' vs. eñgaṣe 'female calf'), while imperatives use T-/To- or Dumú! ('Lift it up'), Totóna enné! ('Sit here!'), and Tanyō nanu! ('Wait for me!').",
-      words: [
-        {
-          target: "Sopai! — Eépa! • Asai! • Biado! • Baīya! • Āiya! • Ékĭnō! • Kálo? • Gīniñ?",
-          source: "Good morning! — Reply • Many thanks! • Goodbye! • Never mind! • Very well! • Truly! • Who's there? • Do you hear?",
-          pronunciation: "so-pai e-e-pa / a-sai / bi-a-do / bai-ya / ai-ya / e-ki-no / ka-lo / gi-ning",
-          hint: "Johnston (1902, Vol. II, pp. 925–926)"
-        },
-        {
-          target: "T'anyō! • Tanyō nanu! • Elotu taīsere • Totóna enné! • Tōtónna! • Ino! ṣōmō! • Wōu tāsīū! • Neningo!",
-          source: "Wait a bit! • Wait for me! • He will return to-morrow • Sit here! • Stand still! • Go away! • Come quickly! • Listen!",
-          pronunciation: "ta-nyo na-nu / e-lo-tu tai-se-re / to-to-na en-ne / i-no so-mo / wou ta-si-u / ne-ni-ngo",
-          hint: "Johnston (1902, Vol. II, pp. 925–926)"
-        },
-        {
-          target: "Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Imīñāni iye! • Iwa! • Eñnoyik akīma • Yao el gēk • Ṣomo erriita ngiṣu!",
-          source: "Don't forget • Lift it up • Give me to drink • Take care • You're a fool! • Take away! • Make a fire • Bring firewood • Go and herd the cattle!",
-          pronunciation: "e-mi da-mis-so / du-mu / in-jo-hi ma-o-ko / nda-ma-ti / i-mi-nga-ni i-ye / i-wa / so-mo er-rii-ta ngi-su",
-          hint: "Johnston (1902, Vol. II, pp. 925–926)"
-        },
-        {
-          target: "Ol aṣe (m.), eñgaṣe (f.) • Ol airini • Ol bāhe • Ol canni • Anyorr • Ol giteñ oibor • Eñgaraiai • Entakolla • Endīto",
-          source: "Calf (m./f.) • Kidney • A barren woman • Medicine, trees • I love • White bullock • My child • Molar tooth • Young woman",
-          pronunciation: "ol a-se e-nga-se / ol ai-ri-ni / ol ba-he / ol chan-ni / a-nyorr / ol gi-teng oi-bor",
-          hint: "Johnston (1902, Vol. II, Set 2, pp. 914–926)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Sopai! — Eépa! Totóna enné! Injohi maōko! — Asai! Elotu taīsere. Biado!",
-          source: "Good morning! — Reply! Sit here! Give me to drink! — Many thanks! He will return to-morrow. Goodbye! (Johnston 1902, pp. 925–926)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Sir Harry Johnston's 'Additional Words and Sentences in Masai' (The Uganda Protectorate, Vol. II, 1902, pp. 925–926), what do 'Injohi maōko!', 'Yao el gēk', 'Eñnoyik akīma', and 'Ṣomo erriita ngiṣu!' mean?",
-          correctAnswer: "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
-          options: [
-            "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
-            "'Wait a bit!', 'Stand still!', 'Come quickly!', and 'You're a fool!'",
-            "'Good morning!', 'Many thanks!', 'Goodbye!', and 'Never mind!'",
-            "'Who's there?', 'Do you hear?', 'Don't forget', and 'Lift it up'"
-          ],
-          hint: "See Johnston (1902, Vol. II, pp. 925–926)"
-        }
-      ]
-    }
-  ]
-});

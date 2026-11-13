@@ -1,69 +1,74 @@
-import { LUO_CONFIG, LUO_UNITS, LUO_GRAMMAR_SECTIONS } from "./luo/course";
-import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
-import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
-import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
-import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
-import { TESO_CONFIG, TESO_UNITS } from "./teso/course";
-import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
-import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
 import type { CourseUnit, LanguageConfig, GrammarSection } from "./types";
 import { validateCourse, type CourseValidationIssue } from "./validation";
 import { getSourcesForLanguage } from "../language-sources";
 
+import { KIKUYU_CONFIG, KIKUYU_UNITS } from "./kikuyu/course";
 import { KIKUYU_GRAMMAR_SECTIONS } from "./kikuyu/grammar-reference";
-import { KISII_GRAMMAR_SECTIONS } from "./kisii/grammar-reference";
-import { LUHYA_GRAMMAR_SECTIONS } from "./luhya/grammar-reference";
-import { TESO_GRAMMAR_SECTIONS } from "./teso/grammar-reference";
+
+import { LUO_CONFIG, LUO_UNITS, LUO_GRAMMAR_SECTIONS } from "./luo/course";
+
+import { KAMBA_CONFIG, KAMBA_UNITS } from "./kamba/course";
 import { KAMBA_GRAMMAR_SECTIONS } from "./kamba/grammar-reference";
-import { MAASAI_GRAMMAR_SECTIONS } from "./maasai/grammar-reference";
+
+import { TURKANA_CONFIG, TURKANA_UNITS } from "./turkana/course";
 import { TURKANA_GRAMMAR_SECTIONS } from "./turkana/grammar-reference";
-import {
-  SWAHILI_CONFIG,
-  SWAHILI_UNITS,
-  SWAHILI_GRAMMAR_SECTIONS,
-  KALENJIN_CONFIG,
-  KALENJIN_UNITS,
-  KALENJIN_GRAMMAR_SECTIONS,
-  MIJIKENDA_CONFIG,
-  MIJIKENDA_UNITS,
-  MIJIKENDA_GRAMMAR_SECTIONS,
-  MERU_CONFIG,
-  MERU_UNITS,
-  MERU_GRAMMAR_SECTIONS,
-  SOMALI_CONFIG,
-  SOMALI_UNITS,
-  SOMALI_GRAMMAR_SECTIONS,
-  EMBU_CONFIG,
-  EMBU_UNITS,
-  EMBU_GRAMMAR_SECTIONS,
-  TAITA_CONFIG,
-  TAITA_UNITS,
-  TAITA_GRAMMAR_SECTIONS,
-  TAVETA_CONFIG,
-  TAVETA_UNITS,
-  TAVETA_GRAMMAR_SECTIONS,
-  POKOMO_CONFIG,
-  POKOMO_UNITS,
-  POKOMO_GRAMMAR_SECTIONS,
-  BORANA_CONFIG,
-  BORANA_UNITS,
-  BORANA_GRAMMAR_SECTIONS,
-  RENDILLE_CONFIG,
-  RENDILLE_UNITS,
-  RENDILLE_GRAMMAR_SECTIONS,
-  SAMBURU_CONFIG,
-  SAMBURU_UNITS,
-  SAMBURU_GRAMMAR_SECTIONS,
-  ILCHAMUS_CONFIG,
-  ILCHAMUS_UNITS,
-  ILCHAMUS_GRAMMAR_SECTIONS,
-  POKOT_CONFIG,
-  POKOT_UNITS,
-  POKOT_GRAMMAR_SECTIONS,
-  DAASANACH_CONFIG,
-  DAASANACH_UNITS,
-  DAASANACH_GRAMMAR_SECTIONS,
-} from "./cultural-wisdom";
+
+import { SWAHILI_CONFIG, SWAHILI_UNITS } from "./swahili/course";
+import { SWAHILI_GRAMMAR_SECTIONS } from "./swahili/grammar-reference";
+
+import { LUHYA_CONFIG, LUHYA_UNITS } from "./luhya/course";
+import { LUHYA_GRAMMAR_SECTIONS } from "./luhya/grammar-reference";
+
+import { KALENJIN_CONFIG, KALENJIN_UNITS } from "./kalenjin/course";
+import { KALENJIN_GRAMMAR_SECTIONS } from "./kalenjin/grammar-reference";
+
+import { KISII_CONFIG, KISII_UNITS } from "./kisii/course";
+import { KISII_GRAMMAR_SECTIONS } from "./kisii/grammar-reference";
+
+import { MERU_CONFIG, MERU_UNITS } from "./meru/course";
+import { MERU_GRAMMAR_SECTIONS } from "./meru/grammar-reference";
+
+import { MIJIKENDA_CONFIG, MIJIKENDA_UNITS } from "./mijikenda/course";
+import { MIJIKENDA_GRAMMAR_SECTIONS } from "./mijikenda/grammar-reference";
+
+import { MAASAI_CONFIG, MAASAI_UNITS } from "./maasai/course";
+import { MAASAI_GRAMMAR_SECTIONS } from "./maasai/grammar-reference";
+
+import { SOMALI_CONFIG, SOMALI_UNITS } from "./somali/course";
+import { SOMALI_GRAMMAR_SECTIONS } from "./somali/grammar-reference";
+
+import { TESO_CONFIG, TESO_UNITS } from "./teso/course";
+import { TESO_GRAMMAR_SECTIONS } from "./teso/grammar-reference";
+
+import { EMBU_CONFIG, EMBU_UNITS } from "./embu/course";
+import { EMBU_GRAMMAR_SECTIONS } from "./embu/grammar-reference";
+
+import { TAITA_CONFIG, TAITA_UNITS } from "./taita/course";
+import { TAITA_GRAMMAR_SECTIONS } from "./taita/grammar-reference";
+
+import { TAVETA_CONFIG, TAVETA_UNITS } from "./taveta/course";
+import { TAVETA_GRAMMAR_SECTIONS } from "./taveta/grammar-reference";
+
+import { POKOMO_CONFIG, POKOMO_UNITS } from "./pokomo/course";
+import { POKOMO_GRAMMAR_SECTIONS } from "./pokomo/grammar-reference";
+
+import { BORANA_CONFIG, BORANA_UNITS } from "./borana/course";
+import { BORANA_GRAMMAR_SECTIONS } from "./borana/grammar-reference";
+
+import { RENDILLE_CONFIG, RENDILLE_UNITS } from "./rendille/course";
+import { RENDILLE_GRAMMAR_SECTIONS } from "./rendille/grammar-reference";
+
+import { SAMBURU_CONFIG, SAMBURU_UNITS } from "./samburu/course";
+import { SAMBURU_GRAMMAR_SECTIONS } from "./samburu/grammar-reference";
+
+import { ILCHAMUS_CONFIG, ILCHAMUS_UNITS } from "./ilchamus/course";
+import { ILCHAMUS_GRAMMAR_SECTIONS } from "./ilchamus/grammar-reference";
+
+import { POKOT_CONFIG, POKOT_UNITS } from "./pokot/course";
+import { POKOT_GRAMMAR_SECTIONS } from "./pokot/grammar-reference";
+
+import { DAASANACH_CONFIG, DAASANACH_UNITS } from "./daasanach/course";
+import { DAASANACH_GRAMMAR_SECTIONS } from "./daasanach/grammar-reference";
 
 export interface CourseDefinition {
   config: LanguageConfig;

@@ -9,9 +9,7 @@ const destination = resolve(__dirname, "../src/shared");
 
 function ensureDir(dir) {
   if (!existsSync(dir)) {
-    const parent = dirname(dir);
-    if (parent !== dir && !existsSync(parent)) ensureDir(parent);
-    try { mkdirSync(dir); } catch {}
+    mkdirSync(dir, { recursive: true });
   }
 }
 
@@ -33,32 +31,6 @@ function copyDirFiltered(srcDir, destDir) {
 
 copyDirFiltered(resolve(source, "data"), resolve(destination, "data"));
 
-const explicitDataFiles = [
-  "kra-car-import-crsp.json",
-  "mjengo-construction-rates.json",
-  "sacco-chama-rates.json",
-  "tool-guides.json",
-  "kikuyu-proverbs.json",
-  "blog-posts.ts",
-  "language-identity.ts",
-  "courses/metadata.ts",
-  "dictionaries/metadata.ts",
-];
-for (const df of explicitDataFiles) {
-  writeFileSync(resolve(destination, "data", df), readFileSync(resolve(source, "data", df)));
-}
-
-for (const lang of ["swahili", "kalenjin", "mijikenda", "meru", "somali", "daasanach"]) {
-  ensureDir(resolve(destination, "data/courses", lang));
-  for (const fn of ["course.ts", "grammar-reference.ts"]) {
-    const s = resolve(source, "data/courses", lang, fn);
-    const d = resolve(destination, "data/courses", lang, fn);
-    if (existsSync(s)) {
-      writeFileSync(d, readFileSync(s));
-    }
-  }
-}
-
 ensureDir(resolve(destination, "lib"));
 const libFiles = [
   "types.ts",
@@ -66,23 +38,28 @@ const libFiles = [
   "learn-engine.ts",
   "learn-progress.ts",
   "dictionary-search.ts",
+  "dictionary-loader.ts",
 ];
 for (const file of libFiles) {
   const srcPath = resolve(source, "lib", file);
+  if (!existsSync(srcPath)) continue;
   const destPath = resolve(destination, "lib", file);
   const content = readFileSync(srcPath, "utf8");
   const normalized = content
     .replace(/from\s+(['"])@\/data\//g, "from $1../data/")
-    .replace(/from\s+(['"])@\/lib\//g, "from $1./");
+    .replace(/from\s+(['"])@\/lib\//g, "from $1./")
+    .replace(/import\(\s*(['"])@\/data\//g, "import($1../data/");
   writeFileSync(destPath, normalized, "utf8");
 }
 
 const registryPath = resolve(destination, "data/courses/registry.ts");
-const registryContent = readFileSync(registryPath, "utf8");
-writeFileSync(
-  registryPath,
-  registryContent.replace(/from\s+(['"])@\/data\/language-sources(['"])/g, "from $1../language-sources$2"),
-  "utf8"
-);
+if (existsSync(registryPath)) {
+  const registryContent = readFileSync(registryPath, "utf8");
+  writeFileSync(
+    registryPath,
+    registryContent.replace(/from\s+(['"])@\/data\/language-sources(['"])/g, "from $1../language-sources$2"),
+    "utf8"
+  );
+}
 
-console.log("Synchronized KenyaHub tool registry, courses, learn engine, and datasets.");
+console.log("Synchronized KenyaHub modular tool registry, 23 language courses, proverbs, dictionaries, and datasets to mobile/src/shared.");
