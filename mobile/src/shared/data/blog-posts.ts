@@ -1095,7 +1095,6 @@ export function getStaticBlogSlugs(): string[] {
   return STATIC_BLOG_POSTS.map((post) => post.slug);
 }
 
-<<<<<<< HEAD
 export const NORTHCOTE_1907_BLOG_SUPPLEMENT = {
   "slug": "northcote-1907-nilotic-kavirondo-complete-line-by-line-edition",
   "title": "G. A. S. Northcote (1907): Complete Line-by-Line Audit of \"The Nilotic Kavirondo\" (JRAI Vol. 37, pp. 58–66)",
@@ -1105,120 +1104,5 @@ export const NORTHCOTE_1907_BLOG_SUPPLEMENT = {
     "Pages 59–61: Semi-feudal chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba plot ownership and askari retainers; circular village fenced with euphorbia, stone, mud, or watling, central cattle pen, basket/wicker granaries raised 2 ft off the ground (5 ft high × 3 ft diameter), and 4 hut types keeping unmarried youth rigidly segregated; clan exogamy, step-mother marriage, sororal polygyny, cattle inheritance, and the Chieftainship Succession Case Study (A, B, C, D, E, F).",
     "Pages 61–63: Courting earnest money, sun-god wedding offering (meat, chicken, mtama millet, native beer), simulated capture, and the bride's first dinner rite; pre-1883 dowry (20 head of cattle) vs. 1907 dowry (7 head handsome dot, down to 1 bull + 20 goats, or 1 heifer + 1 bull minimum); time-of-day birth names (onyango, oching, odiambo, otieno), dream/posthumous ghost naming, and hereditary nicknames (obele, oliech, obonyo); deathbed gourd-rattling and tobacco smoke, bull-tail charging, mock shield battle against evil spirits, 6-day (chief) vs. 3-day (commoner) sunrise/sunset wailing, and recumbent in-hut burial (refuting Sir Charles Eliot).",
     "Pages 63–66: Negative sun/moon worship and verbatim prayer quote (\"It does not matter how much you pray, you fall sick and die just the same\"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, wet/dry cupping, Hut-Roof open-air cure assault case, and Lime-Quarry fatal surgical diagnosis; rain-maker's sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; bleeding live cattle for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; civil litigation from the time of their grandfathers; and 9 modern occupations at Kisumu including a native Jaluo sergeant instructor."
-=======
-STATIC_BLOG_POSTS.push({
-  slug: "johnston-1902-uganda-protectorate-vol2-kenya-languages-ethnology-anthropometry",
-  title: "Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (1902): West Elgon's Solution to Bleek's Bantu Prefix Enigma, Dr. Shrubsall's Anthropometric Tables, and Comparative Vocabularies Across 19 Kenyan Languages",
-  excerpt: "Inside the complete 1902 Kenya chapters and vocabularies of Sir Harry Johnston's 'The Uganda Protectorate, Vol. II' (pp. i–xx, 471–1018): how Mount Elgon's Lukonde/Masaba dialects solved Bleek's prefix hypothesis, Dr. F. C. Shrubsall's craniometric tables, 86 plates/maps/illustrations, and parallel lexicons from Turkana and Pokot to Maasai, Nandi, Dholuo, Luhya, Ekegusii, and Gĩkũyũ.",
-  author: "KenyaHub Linguistic Heritage",
-  publishedAt: "2026-11-12T12:00:00.000Z",
-  updatedAt: "2026-11-12T18:00:00.000Z",
-  tags: [
-    "Languages",
-    "Culture & History",
-    "Luhya",
-    "Luo",
-    "Maasai",
-    "Kalenjin",
-    "Pokot",
-    "Turkana",
-    "Kisii",
-    "Kikuyu"
-  ],
-  readTime: 8,
-  sources: [
-    {
-      sourceId: "johnston-uganda-protectorate-1902",
-      title: "The Uganda Protectorate, Vol. II (Sir Harry H. Johnston, G.C.M.G., K.C.B., London: Hutchinson & Co., 1902, pp. i–xx, 471–1018)",
-      note: "3 Coloured Plates (46–48), Maps 8 & 9 (1:4,000,000), 81 Illustrations, Ch. XIII Anthropology & Dr. F. C. Shrubsall's Tables A–F (pp. 471–509), Ch. XVII Bantu Kavirondo & Masaba (pp. 722–755), Ch. XVIII Nilotic Ja-luo (pp. 756–795), Ch. XIX Masai, Turkana, Sūk, Elgumi, Nandi, Kamásia & Andorobo (pp. 796–884), and Ch. XX Languages & Vocabularies Sets 1, 2, 3, 8, 9 (pp. 885–1001) + Index (pp. 1003–1018)."
-    }
-  ],
-  content: `## A Monument of Early 20th-Century East African Ethnology and Comparative Philology
-
-Published in London by Hutchinson & Co. in 1902, Volume II of **Sir Harry Johnston's *The Uganda Protectorate*** (covering what was then the Eastern Province of the Uganda Protectorate—stretching from the Sio River, Mount Elgon, and Lake Rudolf across Kavirondo, Nandi, Baringo, and the Rift Valley to Nairobi and Kikuyu) remains one of the foundational primary sources for Kenyan linguistics, ethnography, and physical anthropology.
-
----
-
-## 1. How Mount Elgon's *Lukonde* and *Masaba* Solved Bleek's Bantu Prefix Enigma (pp. 889–891, 1001)
-
-For half a century after **Dr. Wilhelm Bleek** coined the term *Bantu*, comparative philologists struggled to explain why Bantu noun classes with nasal prefixes—such as Class 1 **mu-**, Class 3 **mu-**, Class 4 **mi-**, and Class 6 **ma-**—governed pronominal, adjectival, and verbal concords with **gu- (u-)**, **gi- (i-)**, and **ga- (a-)** instead of *mu-*, *mi-*, and *ma-*.
-
-During his 1900–1901 expedition around the western and southern slopes of **Mount Elgon**, Sir Harry Johnston (together with Sub-Commissioner **C. W. Hobley**, who independently reported the 10th prefix *Tsi-/Ci-* in January 1901) discovered that the archaic **Lukonde** and **Lumasaba** dialects preserve the original **disyllabic Bantu prefixes** intact (p. 1001):
-
-| Class | Lukonde Archaic Disyllabic Prefix (p. 1001) | Concord Particle | Standard Contracted Bantu Prefix | Example Meaning |
-|---|---|---|---|---|
-| **Class 1** | **Umu-** | *u-, mu-* | *Mu- / M-* | Singular person (*Umu-ndu*) |
-| **Class 2** | **Baba-** | *ba-* | *Ba- / Wa-* | Plural people (*Baba-ndu*) |
-| **Class 3** | **Gumu- (Kumu-)** | *gu-* | *Mu- / M-* | Tree, arm (*Gumu-kono*) |
-| **Class 4** | **Gimi- (Kimi-)** | *gi-* | *Mi-* | Trees, arms (*Gimi-kono*) |
-| **Class 5** | **Ili-** | *li-* | *Li- / Ri- / I-* | Eye, tooth, stone |
-| **Class 6** | **Gama- (Kama-)** | *ga-* | *Ma-* | Liquids, plurals (*Gama-lasiri* 'blood') |
-| **Class 7** | **Ki- (Si-)** | *ki-, si-* | *Ki- / Chi-* | Thing, custom, instrument |
-| **Class 8** | **Bibi-** | *bi-* | *Bi- / Vi-* | Things (plural of Class 7) |
-| **Class 9** | **In- (Im-)** | *i-, yi-* | *N- / In-* | Animals, house |
-| **Class 10** | **Zi-, Tsi- (Ci-)** | *zi-, tsi-, ci-* | *N- / Tsi- / Zi-* | Plural of Classes 9 & 11 |
-| **Class 11** | **Lulu-** | *lu-* | *Lu- / U-* | Long/thin objects, tongue |
-| **Class 12** | **Ruru- (Tutu-)** | *ru-, tu-* | *Tu-* | Plural of Class 13 diminutives |
-| **Class 13** | **Kaka-** | *ka-* | *Ka-* | Diminutive singular (*Akhana* 'little child') |
-| **Class 14** | **Bubu-** | *bu-* | *Bu- / U-* | Abstract nouns, night, bow |
-| **Class 15** | **Kuku- (Gu-)** | *ku-, gu-* | *Ku-* | Verbal infinitive, arm/leg/ear |
-| **Class 16** | **Ha- (Wa-)** | *ha-, wa-* | *Pa- / Ha-* | Near locative ('at / upon') |
-
----
-
-## 2. Dr. Frank C. Shrubsall's Craniometric & Osteometric Tables (Chapter XIII, pp. 488–509)
-
-In Chapter XIII (pp. 488–509), **Dr. Frank C. Shrubsall** of Cambridge University analyzed the physical measurements taken by Sir Harry Johnston and Mr. Walter Doggett across twenty East African populations, including **39 individual Kenyan subjects** recorded by name and age across **Tables A–F (pp. 496–509)**:
-
-| Group (pp. 492–493) | Cephalic Index | Length-Height Index | Nasal Index | Mean Stature (cm) | Span (Stature=100) | Sitting Height | Lower Limb |
-|---|---|---|---|---|---|---|---|
-| **Kavirondo (Nos. 25–32)** | 74.5 | 63.9 | 89.0 | 168.4 | 104.7 | 50.8 | 50.5 |
-| **Swahili (incl. No. 39 Fatuma ♀)** | 76.3 | 63.6 | 87.3 | 163.6 | 103.5 | 50.6 | 50.3 |
-| **Sūk / Pokot (Nos. 59–68)** | 74.5 | 63.4 | 82.0 | 166.9 | 104.2 | 49.4 | 51.4 |
-| **Masai (Nos. 69–76)** | 72.9 | 63.6 | 76.1 | 171.2 | 103.5 | 49.0 | 51.4 |
-| **Andorobo / Ogiek (Nos. 77–87)** | 74.5 | 63.6 | 81.5 | 162.8 | 103.5 | 50.1 | 50.7 |
-| **Kamásia / Tugen (Nos. 88–92)** | 74.1 | 63.3 | 77.7 | 172.9 | 104.2 | 48.7 | 52.3 |
-| **Nandi & Lumbwa (Nos. 93–99)** | 73.3 | 62.4 | 78.8 | 168.8 | 104.4 | 49.4 | 51.3 |
-
----
-
-## 3. Conversational Nandi and Masai Phrases (Chapter XX, pp. 925–926)
-
-At the close of Vocabulary Set 2 (pp. 925–926), Johnston appended **19 conversational phrases in Nandi** and **30 words and sentences in Masai**, comparing everyday Highland and Plains Nilotic speech side by side:
-
-| English Meaning | Nandi (p. 925) | Masai (pp. 925–926) |
-|---|---|---|
-| **How do you do? / Good morning!** | *Tiamge (sg.), Otyamge (pl.)* | *Sopai!* (Reply: *Eépa!*) |
-| **Thank you! / Many thanks!** | *Kongoi, Eñgōñgōi!* | *Asai!* |
-| **Goodbye!** | *Kātigē!* | *Biado!* |
-| **Who is there?** | *Ñgō ni?* | *Kálo?* |
-| **Come quickly!** | *Nyo cōk!* | *Wōu tāsīū!* |
-| **Wait a bit! / Wait for me!** | *Kanyīte!* / *Mweīcī ko ganyā* | *T'anyō!* / *Tanyō nanu!* |
-| **Go away!** | *Ui!* | *Ino! ṣōmō!* |
-| **You're a fool!** | *Iberber inye!* | *Imīñāni iye!* |
-| **Take care!** | *Ribge!* | *Ndámăti!* |
-| **Don't forget!** | *Meūtye!* | *Emī damisso!* |
-| **Lift it up!** | *Sūt!* | *Dumú!* |
-| **Listen! / Listen to me!** | *Kasā!* | *Neningo!* |
-| **Stand still!** | *Toñonye!* | *Tōtónna!* |
-| **Give me water to drink!** | *Kōnō pek āē* | *Injohi maōko!* |
-
-### Explore All 19 Varieties on KenyaHub:
-- [Compare Kenyan Languages in the Translator & Dictionary](/tools/kenyan-translator/)
-- [Explore Interactive Language Courses & Grammar Reference Guides](/tools/learn/)`
-});
-
-
-// Complete Line-by-Line Reference Guide for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
-export const NORTHCOTE_1907_BLOG_SUPPLEMENT = {
-  slug: 'northcote-1907-nilotic-kavirondo-complete-line-by-line-edition',
-  title: 'G. A. S. Northcote (1907): Complete Line-by-Line Audit of "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58–66)',
-  stableUrl: 'http://www.jstor.org/stable/2843247',
-  highlights: [
-    'Pages 58–59: Kinship with Dinka, Aluri (Alur), and Acholi near Wadilai; migration under one big chief and passive secession; muscular vegetable-diet physique vs. animal-diet Masai, Nandi, and Lumbwa prior to the 1883 cattle plague; 3-goat fine for touching a married woman\'s rear grass tassel; 6–8 inch waist cloth; 6–10 iron wire coils, sores/ulcers, and the 3-rupee annual hut tax; full gala dress with white bead facial lines, brass cartridge cases, cowrie leather strips, black feather boa or wildebeest-tail shoulder ornament, polished iron waist beads, and broad-bean-pod knee/ankle bells containing 1–2 iron beads; 3 ft 6 in. × 6 ft curved buffalo-hide shields painted red, white, and black; funeral hair-tuft worn by the chief mourner.',
-    'Pages 59–61: Semi-feudal chieftaincies with sub-chiefs (10–50 villages), non-voting council of patres familiarum, and passive secession; communal clan land vs. individual shamba plot ownership and askari retainers; circular village fenced with euphorbia, stone, mud, or watling, central cattle pen, basket/wicker granaries raised 2 ft off the ground (5 ft high × 3 ft diameter), and 4 hut types keeping unmarried youth rigidly segregated; clan exogamy, step-mother marriage, sororal polygyny, cattle inheritance, and the Chieftainship Succession Case Study (A, B, C, D, E, F).',
-    'Pages 61–63: Courting earnest money, sun-god wedding offering (meat, chicken, mtama millet, native beer), simulated capture, and the bride\'s first dinner rite; pre-1883 dowry (20 head of cattle) vs. 1907 dowry (7 head handsome dot, down to 1 bull + 20 goats, or 1 heifer + 1 bull minimum); time-of-day birth names (onyango, oching, odiambo, otieno), dream/posthumous ghost naming, and hereditary nicknames (obele, oliech, obonyo); deathbed gourd-rattling and tobacco smoke, bull-tail charging, mock shield battle against evil spirits, 6-day (chief) vs. 3-day (commoner) sunrise/sunset wailing, and recumbent in-hut burial (refuting Sir Charles Eliot).',
-    'Pages 63–66: Negative sun/moon worship and verbatim prayer quote ("It does not matter how much you pray, you fall sick and die just the same"); Missing Razor witchcraft murder trial, dead rat/chicken door charm, wet/dry cupping, Hut-Roof open-air cure assault case, and Lime-Quarry fatal surgical diagnosis; rain-maker\'s sacred-tree hollow-reed ritual and Indian-shopkeeper summons anecdote; bleeding live cattle for salt; 5 fishing methods (including 4-pronged wooden spears); hunting dogs & throwing sticks; 8-stringed harp; civil litigation from the time of their grandfathers; and 9 modern occupations at Kisumu including a native Jaluo sergeant instructor.'
->>>>>>> 8555d28d32a04404fa421adb5ab33b370384772e
   ]
 } as const;
