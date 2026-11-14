@@ -1240,7 +1240,7 @@ JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"].push(
 );
 
 // ── Complete Line-by-Line Supplemental Lexicon from Bishop Edward Steere & A. C. Madan's "A Handbook of the Swahili Language, as Spoken at Zanzibar" (4th Ed., SPCK London, 1894, pp. i–xxii, 1–458 [PDF pp. 1–488]) ──
-SWAHILI_SUPPLEMENTAL_ENTRIES.push(
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"].push(
   {
     catId: "culture-history",
     entry: {
@@ -1334,7 +1334,7 @@ SWAHILI_SUPPLEMENTAL_ENTRIES.push(
 );
 
 // ── Complete Line-by-Line Specialized Entries from Mrs. F. Burt & Rev. W. E. Taylor's "Swahili Grammar and Vocabulary" (SPCK London, 1910, Book pp. 1–252 [PDF pp. 1–260]) ──
-SWAHILI_STEERE_1870_SUPPLEMENT.push(
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"].push(
   {
     catId: "culture-history",
     entry: {
@@ -1388,7 +1388,7 @@ SWAHILI_STEERE_1870_SUPPLEMENT.push(
 );
 
 // ── Complete Line-by-Line Specialized Entries from A. C. Madan's "Swahili-English Dictionary" (Clarendon Press Oxford, 1903, Book pp. i–xix, 1–238, 442 [PDF pp. 1–260 & 464–478]) ──
-SWAHILI_STEERE_1870_SUPPLEMENT.push(
+JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"].push(
   {
     catId: "verbs-grammar",
     entry: {
