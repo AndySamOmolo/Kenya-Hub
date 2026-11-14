@@ -2752,3 +2752,52 @@ if (_kikuyuMeta) {
   _kikuyuMeta.contributorNote =
     'Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 "Discovery of Lakes Rudolf and Stefanie", Vol. I, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–375), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 "English-Kikuyu Hand-Book", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904 "Vocabularies of the Kamba and Kikuyu Languages of East Africa"), Rev. A. W. McGregor (1904 "English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa", C.M.S. / SPCK London, printed by Richard Clay & Sons, Limited, London and Bungay, Fort Smith / Kabeti 1901–1902, Preface dated London, May 1903, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate] — audited 100% line-by-line across all 7,094 Markdown lines, Front Matter & Stanford provenance, Preface on Fort Smith/Kabeti, Uganda Railway miles 326–360, Mount Kenia = Kirinyaga/Kilinyatha/Kireira [4,000–18,000 ft] & 200,000–300,000 population, R.G.S. Note on Th for S/Z, L/R interchangeability, ng\' vs. ng\'g, 9 Abbreviations, Observe A–B across 10 noun classes, suppletive kinship, 7-day relative time sequence, agricultural seasons Kathano, Kehu, Njahi, Mweri, Mohea, customary law Chira, Magambo, Konyua muma, Oramati, and all 3 printing gaps, 9 printer\'s errata & 30 edge-reconstructed pages), W. Scoresby & Katherine Routledge (1910 "With a Prehistoric People: The Akikúyu of British East Africa", Edward Arnold London, pp. i–xxxii, 1–392, Plates I–CXXXVI), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).';
 }
+
+// ── Update contributorNotes in ALL_DICT_METAS with Commercially Free Kenyan ↔ English Text Datasets (2022–2026) ──
+const _luhyaMeta = ALL_DICT_METAS.find((m) => m.languageId === "luhya");
+if (_luhyaMeta) {
+  _luhyaMeta.dictionaryVersion = "3.5";
+  _luhyaMeta.lastUpdated = "2026-11-14";
+  _luhyaMeta.contributorNote =
+    (_luhyaMeta.contributorNote ? _luhyaMeta.contributorNote + " " : "") +
+    'Also integrates commercially free text entries from Dr. Moody Amakobe\'s Project Tafsiri v2.0 (2025 "mamakobe/luhya-multilingual-dataset", CC-BY-4.0: 20,271 commercial-safe Dictionary, Conversational & Proverb entries across Bukusu, Wanga, Maragoli, Marachi, Kisa, Marama, Tsotso, Isukha & Nyala, including Michael Marlo, Adrian Sifuna & Aggrey Wasike 2008 Lubukusu-English Dictionary [~6,200 words], Alfred Anangwe 2008 Wanga-English Dictionary [~4,000 words], Kevin Namatsi Okubo 2016 Collection of 100 Nyala Proverbs, and Tim Wambunya Luyia Proverbs from Kisa, Marama, Tsotso and Wanga, strictly excluding Bible rows) and Kencorpus/KenPOS, KenTrans & KenLumachiQuAD (Wanjawa et al. 2022/2023, CC-BY-4.0).';
+}
+
+const _mijikendaMeta = ALL_DICT_METAS.find((m) => m.languageId === "mijikenda");
+if (_mijikendaMeta) {
+  _mijikendaMeta.dictionaryVersion = "3.5";
+  _mijikendaMeta.lastUpdated = "2026-11-14";
+  _mijikendaMeta.contributorNote =
+    (_mijikendaMeta.contributorNote ? _mijikendaMeta.contributorNote + " " : "") +
+    'Also integrates the curated agricultural and rural extension sentence corpus (~600 English ↔ Kigiryama farming sentence pairs, excluding Bible rows) from Lingua-Connect/English-Giriama-Dataset (2025, CC-BY-4.0).';
+}
+
+if (_swahiliMeta) {
+  _swahiliMeta.dictionaryVersion = "3.6";
+  _swahiliMeta.lastUpdated = "2026-11-14";
+  _swahiliMeta.contributorNote +=
+    ' Also integrates Thilo Schadeberg\'s World Loanword Database (WOLD) Swahili Vocabulary (1,815 entries with Loanword Typology codes and Arabic/Persian/Hindi-Urdu/Bantu borrowing provenance, CC-BY-4.0), Tatu Ylönen\'s Kaikki.org / Wiktextract English Wiktionary Swahili Dictionary (20,625 word forms, CC-BY-SA-4.0), The Thiomi Dataset (80,214 Swahili–English pairs, CC-BY-4.0), Google SMOL (en_swh, CC-BY-4.0), Kencorpus KenSwQuAD & KenSpeech pronunciation lexicon (CC-BY-4.0), FLORES+ (CC-BY-SA-4.0), TICO-19 (CC0-1.0), and PolitiKweli (CC-BY-4.0).';
+}
+
+if (_kikuyuMeta) {
+  _kikuyuMeta.dictionaryVersion = "3.5";
+  _kikuyuMeta.lastUpdated = "2026-11-14";
+  _kikuyuMeta.contributorNote +=
+    ' Also integrates Tsammalex Kikuyu Ethnobiology Lexicon (CC-BY-4.0), Kaikki.org / Wiktextract Kikuyu Dictionary (1,497 word forms, CC-BY-SA-4.0), Google Research SMOL & GATITOS (en_kik: 130 SmolDoc documents, 863 SmolSent sentences & 3,994 GATITOS lexical items, CC-BY-4.0), The Thiomi Dataset (102,294 approved Kikuyu–English sentences, CC-BY-4.0), CGIAR/KikuyuEnglish_translation (Vineet Singh 2024, Apache-2.0), and FLORES+ / SIB-200 (kik_Latn, CC-BY-SA-4.0 / CC-BY-4.0).';
+}
+
+if (_luoMeta) {
+  _luoMeta.dictionaryVersion = "3.5";
+  _luoMeta.lastUpdated = "2026-11-14";
+  _luoMeta.contributorNote +=
+    ' Also integrates Google Research SMOL & GATITOS (en_luo: 342 SmolDoc documents, 863 SmolSent sentences & 3,941 GATITOS lexical items, CC-BY-4.0), The Thiomi Dataset (101,367 approved Dholuo–English sentences, CC-BY-4.0), Kencorpus/KenPOS (54.7k UD POS-tagged Dholuo tokens) & KenTrans (4,222 Dholuo–Swahili pairs, CC-BY-4.0), ThinkKenya / Waleghwa (29,308 Dholuo–Swahili pairs, CC-BY-4.0), and FLORES+ / SIB-200 (luo_Latn, CC-BY-SA-4.0 / CC-BY-4.0).';
+}
+
+const _tesoMeta = ALL_DICT_METAS.find((m) => m.languageId === "teso");
+if (_tesoMeta) {
+  _tesoMeta.dictionaryVersion = "3.4";
+  _tesoMeta.lastUpdated = "2026-11-14";
+  _tesoMeta.contributorNote =
+    (_tesoMeta.contributorNote ? _tesoMeta.contributorNote + " " : "") +
+    'Also integrates Sunbird AI SALT (25,000 English ↔ Ateso [teo] ↔ Swahili parallel sentences, CC-BY-SA-4.0 / CC-BY-4.0) and SALT-31 (multi-turn Ateso discourse dialogues).';
+}

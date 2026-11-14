@@ -1376,3 +1376,15 @@ MIJIKENDA_PROVERBS.push({
   "theme": "patience",
   "sourceCitation": "Steve Nicolle, 'Variation in the expression of information structure in eastern Bantu languages', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 20, pp. 377–395, Ex. 8, 11, 22, 25)"
 });
+
+MIJIKENDA_PROVERBS.push({
+  "id": "mijikenda-18-lingua-connect-giriama-agriculture-2025",
+  "languageId": "mijikenda",
+  "languageName": "Mijikenda (Kigiryama Agricultural Extension — Lingua-Connect 2025, CC-BY-4.0)",
+  "indigenous": "'Mihogo chikala kinywe chingonji.' • Attested Kigiryama Lexicon: mudzi (pl. midzi), muthawali, nyenyezi, mwambolero wa dzuwa, muho, ziya, avuhi, vimia, dau, murima, munyu, mulangaza, tsoka, muhi, matunda madzo, moho, ngano, lungo, lutsaga, wiswa, kw'eth'eth'e, uchi wa nyuchi, mukahe (pl. mikahe), ndzala, k'ihu.",
+  "literalTranslation": "'The crops need to be watered.' • Town/village (mudzi/midzi), king/ruler (muthawali), star (nyenyezi), east/sunrise (mwambolero wa dzuwa), river (muho), lake (ziya), fishermen (avuhi), fishing nets (vimia), boat (dau), mountain/hill (murima), salt (munyu), light (mulangaza), axe (tsoka), tree (muhi), good fruits (matunda madzo), fire (moho), grain/wheat (ngano), winnowing tray (lungo), granary (lutsaga), chaff (wiswa), locusts (kw'eth'eth'e), wild honey (uchi wa nyuchi), bread/loaf (mukahe/mikahe), hunger/famine (ndzala), thirst (k'ihu).",
+  "meaning": "Curated agricultural and rural extension sentence corpus (~600 farming pairs in Lingua-Connect/English-Giriama-Dataset, 2025, CC-BY-4.0, https://huggingface.co/datasets/Lingua-Connect/English-Giriama-Dataset) supporting smallholder farmers and agricultural field officers across Kilifi and the Mijikenda coast.",
+  "englishEquivalent": "Timely watering and a well-kept granary sustain the homestead.",
+  "theme": "patience",
+  "sourceCitation": "Lingua-Connect, English-Giriama-Dataset (Hugging Face Lingua-Connect/English-Giriama-Dataset, 2025, CC-BY-4.0)"
+});

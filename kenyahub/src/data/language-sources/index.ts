@@ -2217,3 +2217,112 @@ for (const _src of _booksZipSources) {
     SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
   }
 }
+
+export {
+  COMMERCIALLY_FREE_KENYAN_ENGLISH_TEXT_DATASETS_2026_SUMMARY,
+} from "./ethnographic-summaries";
+
+// ── Register Commercially Free Kenyan ↔ English Text Datasets (Text Only, Excluding Audio & Copyrighted Bible Texts) in LANGUAGE_SOURCES & Lookup Maps ──
+const _commercialTextDatasetSources: LanguageSource[] = [
+  {
+    id: "thiomi-multilingual-text-2026",
+    title: "The Thiomi Dataset: 601,409 Approved English-Aligned Kenyan Sentence Pairs & thiomi-5k Benchmark (Mutisya, Mugane et al., March 2026, arXiv:2603.29244v1; Hugging Face thiomi/thiomi-5k & NjeriKahoro/thiomi-multilingual-text — CC-BY-4.0)",
+    fileName: "https://huggingface.co/datasets/thiomi/thiomi-5k",
+    languages: ["kikuyu", "luo", "somali", "meru", "kamba", "swahili", "maasai", "kalenjin"],
+    published: "2026 (CC-BY-4.0)",
+    contribution:
+      "Large-scale human-translated and expert-validated Kenyan ↔ English parallel text corpus (Mutisya, Mugane et al., March 2026, 'The Thiomi Dataset: Advancing Sovereign AI Across Eight African Languages', arXiv:2603.29244v1; https://huggingface.co/datasets/thiomi/thiomi-5k & https://huggingface.co/datasets/NjeriKahoro/thiomi-multilingual-text, CC-BY-4.0): comprises 601,409 approved English-aligned sentence pairs across 8 East African/Kenyan languages — Kikuyu (102,294 approved sentences; 5,453 thiomi-5k train samples), Dholuo (101,367 approved sentences; 5,453 thiomi-5k train samples), Somali (103,086 approved sentences; 5,453 thiomi-5k train samples), Kimeru / Meru (94,933 approved sentences; 5,453 thiomi-5k train samples), Kamba (89,504 approved sentences; 5,453 thiomi-5k train samples), Swahili (80,214 parallel pairs), Maasai (20,997 approved sentences), and Kipsigis / Kalenjin (3,007 approved sentences).",
+    appUses: ["dictionary", "comparative translator", "grammar lessons", "course lessons", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "grammar"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated commercially free CC-BY-4.0 text metadata and parallel English–Kenyan language coverage across kikuyu, luo, somali, meru, kamba, swahili, maasai, and kalenjin in dictionary-search.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "google-smol-gatitos-2025",
+    title: "Google Research SMOL (SmolDoc & SmolSent) and GATITOS Bilingual Lexicons for Kikuyu, Dholuo, Swahili, Somali & Oromo (Caswell et al., 2025/2026, arXiv:2502.12301v2; Hugging Face google/smol — CC-BY-4.0)",
+    fileName: "https://huggingface.co/datasets/google/smol",
+    languages: ["kikuyu", "luo", "swahili", "somali", "borana"],
+    published: "2025–2026 (CC-BY-4.0)",
+    contribution:
+      "Google Research professionally translated low-resource text suite (Isaac Caswell et al., 2025/2026, 'SMOL: Professionally translated parallel data for 115 under-represented languages', arXiv:2502.12301v2; https://huggingface.co/datasets/google/smol, CC-BY-4.0): provides SmolDoc (584 English source documents), SmolSent (863 English sentences covering 5.5k common English tokens), and GATITOS (token and trigram bilingual lexicons) across Kikuyu (en_kik / kik_Latn, Glottocode kiku1242: 130 SmolDoc documents, 863 SmolSent sentences, 3,994 GATITOS lexical items), Dholuo (en_luo / luo_Latn, Glottocode luoo1242: 342 SmolDoc documents, 863 SmolSent sentences, 3,941 GATITOS lexical items), Swahili (en_swh), Somali (en_som), and Oromo/Borana (en_orm), plus 661 SmolDoc-factuality-annotations.",
+    appUses: ["dictionary", "comparative translator", "course lessons", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "grammar"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated commercially free CC-BY-4.0 SmolDoc, SmolSent, and GATITOS lexical/sentence coverage for Kikuyu (3,994 GATITOS items), Dholuo (3,941 GATITOS items), Swahili, Somali, and Oromo/Borana into dictionary-search.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "mamakobe-luhya-tafsiri-v2-2025",
+    title: "Project Tafsiri v2.0: Luhya Multilingual Dataset — 20,271 Commercial-Safe Dictionary, Conversational & Proverb Entries across 9 Luhya Dialects (Dr. Moody Amakobe, 2025; Hugging Face mamakobe/luhya-multilingual-dataset — CC-BY-4.0)",
+    fileName: "https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset",
+    languages: ["luhya", "swahili"],
+    published: "2025 (CC-BY-4.0)",
+    contribution:
+      "Trilingual Luhya ↔ English ↔ Swahili dataset compiled by Dr. Moody Amakobe (Project Tafsiri v2.0, 2025, https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset, CC-BY-4.0): covers 9 Luhya dialects (Bukusu, Wanga/Luwanga, Maragoli, Marachi, Kisa, Marama, Tsotso, Isukha, Nyala) with 99.9% English coverage and 29.3% Swahili coverage. Strictly filtering out the 1,998 Bible-domain rows yields 20,271 commercially safe rows across 3 secular domains: Dictionary (11,493 word-level entries from Michael Marlo, Adrian Sifuna & Aggrey Wasike 2008 Lubukusu-English Dictionary [~6,200 words] and Alfred Anangwe 2008 Wanga-English Dictionary [~4,000 words], e.g. Wanga eliaro n. 'boat; canoe'), Conversational (6,447 everyday sentences across Bukusu, Marachi, Maragoli, Wanga, Kisa, Marama, Tsotso, Isukha, and Nyala), and Proverbs (2,331 traditional Luhya proverbs and riddles from Kevin Namatsi Okubo 2016 Collection of 100 Nyala Proverbs and Tim Wambunya Luyia Proverbs from Kisa, Marama, Tsotso and Wanga).",
+    appUses: ["dictionary", "comparative translator", "course lessons", "cultural wisdom", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "cultural-reference", "grammar"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated verbatim commercial-safe Dictionary, Conversational, and Proverb/Riddle entries across Wanga, Marachi, Maragoli, Bukusu, Kisa, Marama, Tsotso, Isukha, and Nyala (strictly excluding Bible rows) into dictionary-search.ts, proverbs/luhya.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "lingua-connect-english-giriama-2025",
+    title: "Lingua-Connect English–Giriama Agricultural & Extension Text Dataset (Lingua-Connect, 2025; Hugging Face Lingua-Connect/English-Giriama-Dataset — CC-BY-4.0)",
+    fileName: "https://huggingface.co/datasets/Lingua-Connect/English-Giriama-Dataset",
+    languages: ["mijikenda"],
+    published: "2025 (CC-BY-4.0)",
+    contribution:
+      "Bilingual English ↔ Giriama (Kigiryama, Mijikenda) sentence corpus (https://huggingface.co/datasets/Lingua-Connect/English-Giriama-Dataset, CC-BY-4.0): provides ~600 curated agricultural and farming sentence pairs designed for field officers, smallholder farmers, and rural agricultural extension services (strictly excluding modern Bible verses from commercial ingestion), e.g., 'The crops need to be watered.' → 'Mihogo chikala kinywe chingonji.' alongside attested Kigiryama vocabulary (mudzi/midzi, muthawali, nyenyezi, mwambolero wa dzuwa, muho, ziya, avuhi, vimia, dau, murima, munyu, mulangaza, tsoka, muhi, matunda madzo, moho, ngano, lungo, lutsaga, wiswa, kw'eth'eth'e, uchi wa nyuchi, mukahe/mikahe, ndzala, k'ihu).",
+    appUses: ["dictionary", "comparative translator", "course lessons", "cultural wisdom", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated curated English ↔ Giriama agricultural sentence pairs and attested Kigiryama lexical items (excluding modern Bible rows) into dictionary-search.ts, proverbs/mijikenda.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "cldf-wold-tsammalex-bantubvd-kaikki-2026",
+    title: "WOLD Swahili Loanword Database (Thilo Schadeberg, CC-BY-4.0), Tsammalex Kikuyu Ethnobiology (CC-BY-4.0), Lexibank BantuBVD/ASJP (CC-BY-4.0) & Kaikki.org / Wiktextract Swahili & Kikuyu Dictionaries (Tatu Ylönen, CC-BY-SA-4.0)",
+    fileName: "https://wold.clld.org/vocabulary/1",
+    languages: ["swahili", "kikuyu", "luo", "luhya", "kalenjin", "kamba", "meru", "maasai", "somali", "borana", "mijikenda", "pokomo", "taveta", "teso", "turkana", "samburu", "rendille", "daasanach"],
+    published: "2009–2026 (CC-BY-4.0 / CC-BY-SA-4.0)",
+    contribution:
+      "Combines 4 open-access English-glossed lexical databases: (1) World Loanword Database (WOLD) Swahili Vocabulary #1 by Thilo Schadeberg (https://wold.clld.org/vocabulary/1, CC-BY-4.0: 1,815 Swahili meaning-word pairs mapped to Loanword Typology [LWT] codes and 5 borrowing-evidence levels, documenting Arabic, Persian, Hindi-Urdu, and Bantu etymologies such as dunia < Arabic dunyā, bara < Arabic barr / Persian bar, bahari < Arabic baḥr, ghuba < Indian Ocean Arabic ġubb/ġubba(t), rasi < Arabic raˀs, mbuga < Nyamwezi mbʊgá, radi < Arabic raˁd, tufani < Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung, nuru < Arabic nūr, theluji < Arabic ṯalǧ, hali ya hewa < Arabic hawāˀ); (2) Tsammalex Kikuyu Ethnobiology Lexicon (https://tsammalex.clld.org/languages/kik, CC-BY-4.0: Kikuyu livestock and wildlife taxa with scientific binomials, including kui/gwii/hu Canis lupus familiaris 'dog', m-bori/m-buri Capra hircus 'goat', k-ori 'kid', ka-harika/a-gωma/mu-gωma 'female goat', n-degwa/ma-tekwa Bos taurus 'bull, ox', mori 'heifer, young cow', and n-durume/n-dωromi Ovis aries 'sheep'); (3) CLDF / Lexibank Bantu Basic Vocabulary Database (Greenhill et al. 2023, https://github.com/lexibank/bantubvd, CC-BY-4.0, 210 English Concepticon glosses) & ASJP v20 (Wichmann et al. 2022, https://github.com/lexibank/asjp, CC-BY-4.0); and (4) Kaikki.org / Wiktextract Machine-Readable English Wiktionary Dictionaries by Tatu Ylönen (https://kaikki.org/dictionary/Swahili/index.html & https://kaikki.org/dictionary/Kikuyu/index.html, CC-BY-SA-4.0: 20,625 Swahili word forms [13,373 nouns, 7,953 verbs, 1,123 adjectives, 34 proverbs] and 1,497 Kikuyu word forms [1,347 nouns, 457 verbs, 36 adjectives, 15 proverbs]).",
+    appUses: ["dictionary", "comparative translator", "grammar lessons", "course lessons", "cultural wisdom", "blog research"],
+    contentTypes: ["vocabulary", "grammar", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated WOLD Swahili loanword-annotated entries, Tsammalex Kikuyu ethnobiology taxa, Lexibank BantuBVD/ASJP cognates, and Kaikki.org Swahili & Kikuyu lexical entries into dictionary-search.ts, proverbs/swahili.ts, proverbs/kikuyu.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "kencorpus-text-sunbird-salt-flores-tico19",
+    title: "Kencorpus Text Suite (KenPOS, KenTrans, KenSwQuAD, KenLumachiQuAD, KenSpeech Lexicon — CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), ThinkKenya / Waleghwa Parallel & Common Voice Text (CC-BY-4.0 / CC0-1.0), Sunbird AI SALT & SALT-31 (Ateso, Pokot & Swahili — CC-BY-SA-4.0), FLORES+ / SIB-200 & TICO-19 (CC0-1.0)",
+    fileName: "https://huggingface.co/datasets/Kencorpus/KenPOS",
+    languages: ["swahili", "luo", "luhya", "kikuyu", "kalenjin", "taveta", "teso", "kamba", "somali", "borana"],
+    published: "2020–2026 (CC0-1.0 / Apache-2.0 / CC-BY-4.0 / CC-BY-SA-4.0)",
+    contribution:
+      "Comprehensive commercially permissive Kenyan text corpus collection (strictly excluding audio files, NOODL-restricted DhoNam, and CC BY-NC Leipzig Gikuyu): (1) Kencorpus Text Suite by Wanjawa et al. (2022/2023, https://aclanthology.org/2023.jlcl-2.1/, CC-BY-4.0) — Kencorpus/KenPOS (https://huggingface.co/datasets/Kencorpus/KenPOS, 143,000+ words annotated with English Universal Dependencies POS tags across Dholuo [54.7k], Lubukusu [51.9k], Lumarachi [25.9k], and Lulogooli), Kencorpus/KenTrans (https://huggingface.co/datasets/Kencorpus/KenTrans, 13,400 parallel sentences across Dholuo [4,222], Lumarachi [2,475], Lulogooli [3,692], and Lubukusu [1,406] ↔ Swahili), Kencorpus/KenSwQuAD (https://huggingface.co/datasets/Kencorpus/KenSwQuAD/tree/main, 7,537 QA pairs across 1,445 Swahili texts), KenLumachiQuAD (DOI: 10.17632/b6bybwnpxh.2, 1,000 QA pairs on 137 Lumarachi texts), and Kencorpus/KenSpeech/lexicon.csv (https://huggingface.co/datasets/Kencorpus/KenSpeech/blob/main/lexicon.csv, 1.61 MB Swahili grapheme-to-phoneme pronunciation lexicon); (2) CGIAR/KikuyuEnglish_translation by Vineet Singh (2024, https://kencorpus.ke/items/41385202-0349-4ee5-93d0-a6c8eefaf365/full & https://huggingface.co/datasets/CGIAR/KikuyuEnglish_translation, Apache-2.0, 1K–10K Kikuyu–English agricultural sentence pairs); (3) waleghwa/low-resource-language-data / thinkKenya (https://zenodo.org/records/13355021 & https://huggingface.co/datasets/thinkKenya/kenyan-low-resource-language-data, CC-BY-4.0, 91,097 parallel sentences pairing Kiswahili with Kidaw'ida [26,662], Kalenjin [35,127], and Dholuo [29,308] + 31,892 Kidaw'ida and 29,961 Kalenjin CC0-1.0 text sentences on Common Voice 25.0); (4) Sunbird AI SALT & SALT-31 (https://huggingface.co/datasets/Sunbird/salt & https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0 / CC-BY-4.0, 25,000 English ↔ Ateso [teo] ↔ Swahili [swa] parallel sentences + 5-sentence multi-turn dialogues in Ateso and Pokot [pok]); (5) FLORES+ (https://huggingface.co/datasets/openlanguagedata/flores_plus, CC-BY-SA-4.0) & SIB-200 (CC-BY-4.0) covering 2,009 English-aligned sentences in Swahili, Kikuyu, Dholuo, Kamba, Somali, and West Central Oromo; (6) TICO-19 (https://arxiv.org/pdf/2007.01788, CC0-1.0, 3,071 English ↔ Swahili/Somali public-health sentences); and (7) PolitiKweli (https://mcaai.maseno.ac.ke/datasets, CC-BY-4.0, 6,345 Swahili–English code-switched sentences).",
+    appUses: ["dictionary", "comparative translator", "grammar lessons", "course lessons", "cultural wisdom", "blog research"],
+    contentTypes: ["vocabulary", "grammar", "dialogue", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated commercially free text datasets across swahili, luo, luhya, kikuyu, kalenjin, taveta, teso, kamba, somali, and borana into dictionary-search.ts, proverbs/teso.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+];
+
+for (const _src of _commercialTextDatasetSources) {
+  const _idx = LANGUAGE_SOURCES.findIndex((s) => s.id === _src.id);
+  if (_idx >= 0) {
+    LANGUAGE_SOURCES[_idx] = _src;
+  } else {
+    LANGUAGE_SOURCES.push(_src);
+  }
+  SOURCES_BY_ID_MAP.set(_src.id, _src);
+  for (const _langKey of _src.languages) {
+    const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter(
+      (s) => s.id !== _src.id
+    );
+    _bucket.push(_src);
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}

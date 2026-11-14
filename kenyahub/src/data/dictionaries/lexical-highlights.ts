@@ -1054,3 +1054,36 @@ export const BOOKS_ZIP_2026_LEXICAL_HIGHLIGHTS = [
     "page": 119
   }
 ] as const;
+
+export const COMMERCIAL_TEXT_DATASETS_2026_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Project Tafsiri v2.0 — Luhya Multilingual Dataset (Dr. Moody Amakobe 2025, CC-BY-4.0, 20,271 commercial-safe rows across 9 dialects): Wanga Dictionary: eliaro ('boat; canoe', Anangwe 2008) • Marachi Conversational & Proverbs: 'Namwana ahila nyina amachesi' ('A child surpasses their mother in intelligence') • 'Munaee!! Kwitse.' ('Once upon a time!! Listen.' / 'Kitendaliwa!! Tega.') • 'Nafula yali yaria imbako. Leelo yomilanila okhulima.' ('Nafula used to fear the hoe. Now she has become dedicated to farming.') • Maragoli Riddles: 'Kidaho change kigetsa amatsi dave - Kukutsaa, kulitsaa' ('My river never runs out of water - Death is there') • 'Kwagani na guga ne likoti limwamu - Lugiita' ('We met with grandfather with a black coat - Lice') • Bukusu: 'Chikhaafu chingali ne bibiaayo bikali' ('Many cattle and much livestock')",
+    "translation": "20,271 commercially clear Dictionary (Lubukusu ~6,200 words & Wanga ~4,000 words), Conversational (6,447 sentences), and Proverb (2,331 proverbs) rows across Bukusu, Wanga, Maragoli, Marachi, Kisa, Marama, Tsotso, Isukha & Nyala (https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset)",
+    "language": "luhya",
+    "page": 1
+  },
+  {
+    "word": "Lingua-Connect English–Giriama Agricultural Dataset (2025, CC-BY-4.0): 'Mihogo chikala kinywe chingonji.' ('The crops need to be watered.') • Attested Kigiryama Lexicon: mudzi (pl. midzi 'town/village'), muthawali ('king/ruler'), nyenyezi ('star'), mwambolero wa dzuwa ('east / sunrise'), muho ('river'), ziya ('lake'), avuhi ('fishermen'), vimia ('fishing nets'), dau ('boat'), murima ('mountain/hill'), munyu ('salt'), mulangaza ('light'), tsoka ('axe'), muhi ('tree'), matunda madzo ('good fruits'), moho ('fire'), ngano ('wheat/grain'), lungo ('winnowing tray'), lutsaga ('granary/barn'), wiswa ('chaff/straw'), kw'eth'eth'e ('locusts'), uchi wa nyuchi ('wild bee honey'), mukahe (pl. mikahe 'bread/loaf'), ndzala ('hunger/famine'), k'ihu ('thirst')",
+    "translation": "Curated English ↔ Giriama (Kigiryama) agricultural and rural extension sentence corpus (~600 farming pairs, CC-BY-4.0, https://huggingface.co/datasets/Lingua-Connect/English-Giriama-Dataset)",
+    "language": "mijikenda",
+    "page": 1
+  },
+  {
+    "word": "World Loanword Database (WOLD) Swahili Vocabulary (Thilo Schadeberg, CC-BY-4.0, 1,815 entries) & Kaikki.org Swahili Dictionary (20,625 words, CC-BY-SA-4.0): dunia (LWT 1.1 'the world' < Arabic dunyā) • nchi kavu (1.21 'the land', native) • udongo (1.212 'soil'), vumbi (1.213 'dust'), matope (1.214 'mud'), mchanga (1.215 'sand') • bara (1.26 'the mainland' < Arabic barr / Persian bar) • bahari (1.32/1.329 'sea/ocean' < Arabic baḥr) • ghuba (1.34 'the bay' < Indian Ocean Arabic ġubb/ġubba[t]) • wangwa (1.341 'the lagoon', native) • rasi (1.343 'the cape' < Arabic raˀs) • maji (ya) kujaa na kupwa (1.352 'the tide') • kinamasi (1.38 'the swamp') • mbuga (1.411 'the savanna' < Nyamwezi mbʊgá) • radi (1.57 'bolt of lightning' < Arabic raˁd) • tufani (1.58 'the storm' < Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung) vs. kimbunga (native) • nuru (1.61 'light' < Arabic nūr) vs. mwanga (native) • theluji (1.76 'snow' < Arabic ṯalǧ) • hali ya hewa (1.78 'weather' < Arabic hawāˀ)",
+    "translation": "Loanword Typology (LWT) semantic codes and borrowing provenance across 1,815 Swahili entries in Thilo Schadeberg's WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1) & 20,625 entries in Kaikki.org (https://kaikki.org/dictionary/Swahili/index.html)",
+    "language": "swahili",
+    "page": 1
+  },
+  {
+    "word": "Tsammalex Kikuyu Ethnobiology Lexicon (CC-BY-4.0), Kaikki.org Kikuyu Dictionary (1,497 words, CC-BY-SA-4.0), Google SMOL/GATITOS (3,994 Kikuyu items, CC-BY-4.0), Thiomi (102,294 Kikuyu pairs, CC-BY-4.0) & CGIAR Kikuyu–English (Apache-2.0): kui / gwii / hu (Canis lupus familiaris 'dog') • m-bori / m-buri (Capra hircus 'goat'), k-ori ('kid'), ka-harika / a-gωma / mu-gωma ('female goat') • n-degwa / ma-tekwa (Bos taurus 'bull, ox'), mori ('heifer, young cow') • n-durume / n-dωromi (Ovis aries 'sheep')",
+    "translation": "Kikuyu biological taxonomy (https://tsammalex.clld.org/languages/kik), 1,497 English Wiktionary headwords (https://kaikki.org/dictionary/Kikuyu/index.html), 3,994 Google GATITOS lexical items (https://huggingface.co/datasets/google/smol), 102,294 Thiomi sentences (https://huggingface.co/datasets/thiomi/thiomi-5k), and CGIAR agricultural sentences (https://huggingface.co/datasets/CGIAR/KikuyuEnglish_translation)",
+    "language": "kikuyu",
+    "page": 1
+  },
+  {
+    "word": "The Thiomi Dataset (601,409 English-aligned sentences, CC-BY-4.0), Google SMOL/GATITOS (Dholuo 3,941 items, CC-BY-4.0), Kencorpus KenPOS (143k UD POS tokens, CC-BY-4.0), ThinkKenya / Waleghwa (91,097 pairs, CC-BY-4.0) & Sunbird AI SALT / SALT-31 (25,000 English ↔ Ateso ↔ Swahili sentences & Pokot dialogues, CC-BY-SA-4.0): Kikuyu (102,294), Dholuo (101,367 + 54.7k KenPOS tokens), Somali (103,086), Kimeru (94,933), Kamba (89,504), Swahili (80,214), Maasai (20,997), Kipsigis/Kalenjin (3,007 + 35,127 Waleghwa pairs + 29,961 CC0 sentences), Kidaw'ida/Taveta (26,662 Waleghwa pairs + 31,892 CC0 sentences), Ateso (25,000 SALT pairs), Pokot (SALT-31 dialogues)",
+    "translation": "Multi-language Kenyan ↔ English parallel text, POS-tagged, and lexical benchmarks across Thiomi (arXiv:2603.29244v1), Google SMOL (arXiv:2502.12301v2), Kencorpus (ACL Anthology 2023.jlcl-2.1), ThinkKenya (Zenodo 13355021), and Sunbird SALT (https://huggingface.co/datasets/Sunbird/salt)",
+    "language": "luo",
+    "page": 1
+  }
+] as const;

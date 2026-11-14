@@ -7145,3 +7145,16 @@ SWAHILI_PROVERBS.push({
   "theme": "family",
   "sourceCitation": "Isaac Gould & Tessa Scott (Ch. 23, pp. 441–462), Jonathan Pesetsky (Ch. 29, pp. 555–570) & Derek Nurse (Ch. 33, pp. 649–665), in Theory and description in African linguistics (2019)"
 });
+
+// ── Append WOLD Swahili Loanword Typology (Thilo Schadeberg, CC-BY-4.0) & Kaikki.org Swahili Dictionary (Tatu Ylönen, CC-BY-SA-4.0) to SWAHILI_PROVERBS ──
+SWAHILI_PROVERBS.push({
+  "id": "swahili-wold-schadeberg-kaikki-2026",
+  "languageId": "swahili",
+  "languageName": "Kiswahili (WOLD Swahili Loanword Database & Kaikki.org — Schadeberg & Ylönen, CC-BY-4.0 / CC-BY-SA-4.0)",
+  "indigenous": "Native Bantu vs. Indian Ocean Loanword Doublets (WOLD Vocabulary #1, https://wold.clld.org/vocabulary/1): nchi kavu (native) vs. dunia (< Arabic dunyā) & bara (< Arabic barr / Persian bar) • ziwa, mto, wangwa & maji (ya) kujaa na kupwa (native) vs. bahari (< Arabic baḥr), ghuba (< Indian Ocean Arabic ġubb/ġubba[t]) & rasi (< Arabic raˀs) • umeme, ngurumo & kimbunga (native) vs. radi (< Arabic raˁd) & tufani (< Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung) • mwanga (native) vs. nuru (< Arabic nūr) • mbuga (< Nyamwezi mbʊgá 'savanna').",
+  "literalTranslation": "Earth/mainland, sea/bay/cape, lightning/storm, light, and savanna across native East Coast Bantu roots and Indian Ocean Arabic, Persian, Hindi-Urdu, and interior Bantu loanwords.",
+  "meaning": "Documented across 1,815 Swahili meaning-word pairs in Thilo Schadeberg's World Loanword Database (WOLD, Max Planck Institute for Evolutionary Anthropology, https://wold.clld.org/vocabulary/1, CC-BY-4.0) and 20,625 Swahili word forms (including 34 proverbs and 44 idiomatic phrases) in Tatu Ylönen's Kaikki.org / Wiktextract English Wiktionary Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0).",
+  "englishEquivalent": "A maritime crossroads weaves the speech of many shores onto a steadfast Bantu foundation.",
+  "theme": "wisdom",
+  "sourceCitation": "Thilo Schadeberg, WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1, CC-BY-4.0) & Tatu Ylönen, Kaikki.org Swahili Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0)"
+});

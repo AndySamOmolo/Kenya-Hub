@@ -2219,3 +2219,114 @@ JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["borana"].push(
     audioFile: null,
   },
 });
+
+// ── Commercially Free Kenyan ↔ English Text Datasets Integration (2022–2026: Project Tafsiri Luhya v2.0, Lingua-Connect Giriama, WOLD Swahili, Tsammalex Kikuyu, Kaikki.org, Google SMOL/GATITOS, The Thiomi Dataset, Kencorpus Text Suite, CGIAR Kikuyu, ThinkKenya/Waleghwa, Sunbird SALT/SALT-31, FLORES+ & TICO-19) ──
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luhya"] ??= []).push(
+  {
+    catId: "travel",
+    entry: {
+      english: "Boat; canoe (Luwanga / Wanga — Anangwe 2008 Wanga-English Dictionary, ID 4200, in Project Tafsiri v2.0, CC-BY-4.0)",
+      translation: "eliaro (n.)",
+      pronunciation: "e-li-a-ro",
+      context: "Dr. Moody Amakobe, mamakobe/luhya-multilingual-dataset v2.0 (2025, CC-BY-4.0, citing Alfred Anangwe 2008 'Wanga-English Dictionary', ID 4200; https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "phrases",
+    entry: {
+      english: "Marachi (Lumarachi) Conversational Sentences & Proverbs (Project Tafsiri v2.0, Dr. Moody Amakobe 2025, CC-BY-4.0 — Trilingual Lumarachi ↔ English ↔ Swahili)",
+      translation: "(1) ':huri nende bebusi bangi ebehalanga husunga lumarachi likiranga bandu bathia hulalamika.' → English: 'We have many parents who sit speaking Kimarachi which makes people complain.' | Swahili: 'tuna wazazi wengi wanaoketi kuzungumza kimarachi kinachofanya watu walalamike.' • (2) 'OBULWAYE BWA KORONA.' → English: 'CORONA DISEASE' | Swahili: 'UGONJWA WA KORONA' • (3) 'Ifaini ya shilingi elfu ndala x2' → English: 'Fine of one thousand shillings x2' | Swahili: 'TFaini ya shilingi elfu moja x2' • (4) 'Ing'ombe yosi yenyekhana inyole olwa iria nibari ingo kanyasichia muno khubera aumao abundu aambi ari nende obunyasi bwa ing'ombe ikhoyere khuria khuikura.' → English: 'Cattle also need to get proper food and when they are at their homes they cause a lot of trouble because there is no nearby place where there is grass that cattle should eat and be satisfied.' • (5) 'Omusiani owa makhumbo niyesinga ari nende indalo iria naringa amira sa amare.' → English: 'A boy with club feet when bathing has a field that when he looks at it he just swallows saliva.' • (6) 'Ebweneyo newayanyoola obulaiburula mumukuunda.' → English: 'That's where she discovered that beauty comes from the farm.' | Swahili: 'Huko ndiko alipopata kuwa uzuri unatoka kwa shamba.' • (7) 'Nafula yali yaria imbako. Leelo yomilanila okhulima.' → English: 'Nafula used to fear the hoe. Now she has become dedicated to farming.' | Swahili: 'Nafula alikuwa ameogopa jembe siku hizi amekazana na ukulima' • (8) 'Munaee!! Kwitse.' → English: 'Once upon a time!! Listen.' | Swahili: 'Kitendaliwa!! Tega.' • (9) 'Neshichilanga Abaluyia nibaboola mbu \"Namwana ahila nyina amachesi\"' → English: 'This is what made the Luhya say that \"a child surpasses their mother in intelligence.\"' | Swahili: 'Hii ndiyo iliyosababisha Waluyia wakasema kuwa \"mtoto anashinda mamake akili\"' • (10) 'itsulila oluechelo mbu omwikholelela shikufubanga tawe' → English: 'remember the lesson that what you are doing does not benefit' • (11) 'Kuuka, orio muno okhukhuchetsihia. Ababuukha abanji abolubaka lwefwe baboolanga nibashiili okhupaara eshufune shielikhuwa.' → English: 'Grandfather, thank you for teaching us. Many grandfathers of our generation speak before thinking about the source of the matter.'",
+      pronunciation: "munaee kwitse / namwana ahila nyina amachesi / nafula yali yaria imbako",
+      context: "Dr. Moody Amakobe, mamakobe/luhya-multilingual-dataset v2.0 (2025, CC-BY-4.0, Marachi conversational & proverb domain; https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "phrases",
+    entry: {
+      english: "Maragoli (Lulogooli) & Bukusu (Lubukusu) Conversational Sentences, Riddles & Proverbs (Project Tafsiri v2.0, Dr. Moody Amakobe 2025, CC-BY-4.0 & Kencorpus KenPOS/KenTrans)",
+      translation: "Maragoli (Lulogooli): (1) 'Lise mu vivanda lyali linene lyene' → English: 'The rivers had very big grass.' | Swahili: 'Mito ilikuwa na nyasi kubwa kubwa.' • (2) 'Mwana ni yivisanga mu si yali anyala kololeka dave.' → English: 'When a child hides there, it was not easy to be found.' • (3) 'Yavandu vakulundu isaa ya mugolova inyima wa saa nane. Na vana mugamba isaa ya mbasu.' → English: 'The elders studied at eight o'clock while the children studied during the day.' • (4) Riddle: 'Kidaho change kigetsa amatsi dave - Kukutsaa, kulitsaa' → English: 'My river never runs out of water - Death is there' | Swahili: 'Mto wangu haupungui maji - Kifo kipo' • (5) Riddle: 'Kwagani na guga ne likoti limwamu - Lugiita' → English: 'We met with grandfather with a black coat - Lice' | Swahili: 'Tumekutana na babu na koti jeusi - Dudumanyoa' • (6) 'Niwivulwa mu mwandu naïve utatsia kandi mwandu mba.' → English: 'If you are born by an inherited widow, you too do not inherit a widow.' • (7) 'Mirembe munyumba yange' → English: 'How are you, those who are inside' | Swahili: 'Hamjambo waliomo' • (8) 'Mulina wange ogoti' → English: 'My friend is lost' | Swahili: 'Rafiki yangu amepotea' • Bukusu (Lubukusu): (9) 'Chikhaafu chingali ne bibiaayo bikali.' → English: 'Many cattle and much livestock.' | Swahili: 'Ng'ombe wengi na mifugo wengi.' • (10) 'Endaalo yino mucha se khulaukhakho tawe.' → English: 'Today, just go like that. Don't turn even a little.' • (11) 'Niko balomile kali ng'ali.' → English: 'What they said is true.' | Swahili: 'Ambayo wamesema ni ya kweli.' • (12) 'Kumulaasi kwe luufu' → English: 'Death announcement.' | Swahili: 'Tangazo la kifo' • (13) 'Ne onyoola siswi sie nyuni khumurongoro.' → English: 'And if you find a bird's nest in a tree.' | Swahili: 'Na ukipata kiota cha ndege mtini.' • (14) 'Ne siise esio naboola muchiililile ne lukeendo.' → English: 'And at that time I said continue with the journey.' | Swahili: 'Na muda huo nikasema muendelee na safari.' • Also integrates Kencorpus/KenPOS (51.9k Lubukusu + 25.9k Lumarachi + Lulogooli UD POS-tagged words), Kencorpus/KenTrans (3,692 Lulogooli + 2,475 Lumarachi + 1,406 Lubukusu ↔ Swahili pairs), and KenLumachiQuAD (1,000 Lumarachi QA pairs, CC-BY-4.0).",
+      pronunciation: "mirembe munyumba yange / mulina wange ogoti / chikhaafu chingali ne bibiaayo bikali",
+      context: "Dr. Moody Amakobe, mamakobe/luhya-multilingual-dataset v2.0 (2025, CC-BY-4.0) & Wanjawa et al., Kencorpus (2022/2023, CC-BY-4.0)",
+      audioFile: null,
+    },
+  }
+);
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["mijikenda"] ??= []).push({
+  catId: "food",
+  entry: {
+    english: "Lingua-Connect English–Giriama Agricultural & Extension Corpus (2025, CC-BY-4.0): 'The crops need to be watered.' & 25 Attested Kigiryama Agricultural & Natural-World Headwords",
+    translation: "'Mihogo chikala kinywe chingonji.' ('The crops need to be watered.') • Attested Kigiryama Lexicon (CC-BY-4.0, excluding Bible rows): mudzi (pl. midzi, 'town, village, homestead') • muthawali ('king, ruler') • nyenyezi ('star') • mwambolero wa dzuwa ('east, sunrise') • muho ('river') • ziya ('lake, sea') • avuhi ('fishermen') • vimia ('fishing nets') • dau ('boat, dhow') • murima ('mountain, hill') • munyu ('salt') • mulangaza ('light') • tsoka ('axe') • muhi ('tree') • matunda madzo ('good fruits') • moho ('fire') • ngano ('wheat, grain') • lungo ('winnowing tray') • lutsaga ('granary, barn') • wiswa ('chaff, straw') • kw'eth'eth'e ('locusts') • uchi wa nyuchi ('wild bee honey') • mukahe (pl. mikahe, 'bread, loaf') • ndzala ('hunger, famine') • k'ihu ('thirst')",
+    pronunciation: "mi-ho-go chi-ka-la ki-nywe chi-ngo-nji / mu-dzi mi-dzi / lu-ngo / lu-tsa-ga / u-chi wa nyu-chi",
+    context: "Lingua-Connect/English-Giriama-Dataset (2025, CC-BY-4.0, ~600 curated agricultural extension sentence pairs; https://huggingface.co/datasets/Lingua-Connect/English-Giriama-Dataset)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"] ??= []).push({
+  catId: "nature",
+  entry: {
+    english: "World Loanword Database (WOLD) Swahili Vocabulary (Thilo Schadeberg, CC-BY-4.0, 1,815 Entries), Kaikki.org Swahili Wiktionary (20,625 Words, CC-BY-SA-4.0), Kencorpus KenSpeech Lexicon & TICO-19 (CC0-1.0)",
+    translation: "WOLD Semantic Field 1 'The Physical World' (https://wold.clld.org/vocabulary/1, CC-BY-4.0): dunia (LWT 1.1 'the world', status 1. clearly borrowed < Arabic dunyā) • nchi kavu (1.21 'the land', 5. native), udongo (1.212 'the soil', 5), vumbi (1.213 'the dust', 5), matope (1.214 'the mud', 5), mchanga (1.215 'the sand', 5) • mlima / kilima (1.22 'the mountain or hill', 5), mwamba (1.222 'the cliff or precipice' & 1.342 'the reef', 5), tambarare (1.23 'the plain', 5), bonde (1.24 'the valley', 5), kisiwa (1.25 'the island', 5) • bara (1.26 'the mainland', 1. clearly borrowed < Arabic barr / Persian bar), ufuko / pwani (1.27 'the shore', 5), pango (1.28 'the cave', 5) • maji (1.31 'the water', 5), bahari (1.32 'the sea' & 1.329 'the ocean', 1. clearly borrowed < Arabic baḥr / Persian bahra / Hindi-Urdu baḥr), -chafuka (1.323 'rough [sea]', 5), povu (1.324 'the foam', 5) • ziwa (1.33 'the lake', 5), ghuba (1.34 'the bay', 1. clearly borrowed < Indian Ocean Arabic ġubb, ġubba[t] 'gulf'), wangwa (1.341 'the lagoon', 5), rasi (1.343 'the cape', 1. clearly borrowed < Arabic raˀs 'head; cape') • wimbi (1.35 'the wave', 5), maji (ya) kujaa na kupwa (1.352 'the tide', 5), maji kupwa (1.353 'the low tide', 5), maji kujaa (1.354 'the high tide', 5), mto (1.36 'the river or stream', 5), chemchemi / kisima (1.37 'the spring or well', 5), kinamasi (1.38 'the swamp', 5), maporomoko (ya maji) (1.39 'the waterfall', 5) • msitu / mwitu (1.41 'the woods or forest', 5), mbuga (1.411 'the savanna', 3. perhaps borrowed < Nyamwezi mbʊgá 'plain'), mti (1.43 'the wood', 5), jiwe (1.44 'the stone or rock', 5), tetemeko (la ardhi) (1.45 'the earthquake', 5) • mbingu / anga (1.51 'the sky', 5), jua (1.52 'the sun', 5), mwezi (1.53 'the moon', 5), nyota (1.54 'the star', 5), umeme (1.55 'the lightning', 5), ngurumo (1.56 'the thunder', 5), radi (1.57 'the bolt of lightning', 1. clearly borrowed < Arabic raˁd 'thunder') • tufani (1.58 'the storm', 1. clearly borrowed < Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung) vs. kimbunga (1.58 'the storm', 5), upinde (wa mvua) (1.59 'the rainbow', 5) • mwanga (1.61 'the light', 5) vs. nuru (1.61 'the light', 1. clearly borrowed < Arabic nūr), kivuli (1.63 'the shade or shadow', 5), umande (1.64 'the dew', 4. cf. Arabic nadā) • upepo (1.72 'the wind', 5), wingu (1.73 'the cloud', 5), ukungu (1.74 'the fog', 5), mvua (1.75 'the rain', 5), theluji (1.76 'the snow', 1. clearly borrowed < Arabic ṯalǧ, pl. ṯulūğ), -ganda (1.775 'to freeze', 5), hali ya hewa (1.78 'the weather' < Arabic hawāˀ / Hindi-Urdu havā 'air'), moto (1.81 'the fire', 5), ulimi wa moto ('flame') • Also integrates Kaikki.org Swahili (20,625 word forms: 13,373 nouns, 7,953 verbs, 1,123 adjectives, 34 proverbs, CC-BY-SA-4.0), Kencorpus/KenSpeech/lexicon.csv (1.61 MB G2P lexicon) & KenSwQuAD (7,537 QA pairs, CC-BY-4.0), The Thiomi Dataset (80,214 Swahili–English pairs, CC-BY-4.0), TICO-19 (3,071 English–Swahili sentences, CC0-1.0), and PolitiKweli (6,345 Swahili–English code-switched sentences, CC-BY-4.0).",
+    pronunciation: "du-ni-a / ba-ha-ri / ghu-ba / wa-ngwa / ra-si / ki-na-ma-si / mbu-ga / tu-fa-ni / the-lu-ji",
+    context: "Thilo Schadeberg, WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1, CC-BY-4.0) & Tatu Ylönen, Kaikki.org Swahili Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kikuyu"] ??= []).push({
+  catId: "animals",
+  entry: {
+    english: "Tsammalex Kikuyu Ethnobiology Lexicon (CC-BY-4.0), Kaikki.org Kikuyu Dictionary (1,497 Words, CC-BY-SA-4.0), Google SMOL/GATITOS (3,994 Items, CC-BY-4.0), The Thiomi Dataset (102,294 Pairs, CC-BY-4.0) & CGIAR Kikuyu–English (Apache-2.0)",
+    translation: "Tsammalex Kikuyu Ethnobiology (https://tsammalex.clld.org/languages/kik, CC-BY-4.0): kui / gwii / hu (Canis lupus familiaris 'dog') • m-bori / m-buri (Capra hircus 'goat'), k-ori ('kid'), ka-harika / a-gωma / mu-gωma ('female goat') • n-degwa / ma-tekwa (Bos taurus 'bull, ox'), mori ('heifer, young cow') • n-durume / n-dωromi (Ovis aries 'sheep') • Kaikki.org / Wiktextract Kikuyu Dictionary (https://kaikki.org/dictionary/Kikuyu/index.html, CC-BY-SA-4.0): 1,497 Kikuyu word forms (1,347 nouns, 457 verbs, 36 adjectives, 20 phrases, 20 pronouns, 15 proverbs, 14 adverbs, 13 particles, 11 infixes, 6 numerals, 6 prefixes) • Google Research SMOL & GATITOS (https://huggingface.co/datasets/google/smol, CC-BY-4.0): en_kik / kik_Latn (130 SmolDoc documents, 863 SmolSent sentences, 3,994 GATITOS lexical entries) • The Thiomi Dataset (https://huggingface.co/datasets/thiomi/thiomi-5k, CC-BY-4.0): 102,294 approved Kikuyu–English sentence pairs (5,453 thiomi-5k train samples) • CGIAR/KikuyuEnglish_translation (Vineet Singh 2024, https://huggingface.co/datasets/CGIAR/KikuyuEnglish_translation, Apache-2.0): 1K–10K Kikuyu–English agricultural sentence pairs • FLORES+ / SIB-200 (kik_Latn, 2,009 sentences, CC-BY-SA-4.0 / CC-BY-4.0).",
+    pronunciation: "kui gwii / m-bu-ri / k-o-ri / ka-ha-ri-ka / n-de-gwa / mo-ri / n-du-ru-me",
+    context: "Tsammalex Kikuyu Lexicon (https://tsammalex.clld.org/languages/kik, CC-BY-4.0), Kaikki.org Kikuyu (CC-BY-SA-4.0), Google SMOL/GATITOS (CC-BY-4.0), Thiomi (CC-BY-4.0) & CGIAR (Apache-2.0)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luo"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Google Research SMOL & GATITOS Dholuo Lexicon (3,941 Items, CC-BY-4.0), The Thiomi Dataset (101,367 Dholuo–English Pairs, CC-BY-4.0), Kencorpus KenPOS (54.7k UD POS Tokens) & KenTrans (4,222 Pairs, CC-BY-4.0)",
+    translation: "Google Research SMOL & GATITOS (Caswell et al. 2025/2026, https://huggingface.co/datasets/google/smol, CC-BY-4.0): en_luo / luo_Latn (Glottocode luoo1242: 342 SmolDoc documents, 863 SmolSent sentences, and 3,941 GATITOS Dholuo–English token/trigram lexical items) • The Thiomi Dataset (Mutisya, Mugane et al. 2026, https://huggingface.co/datasets/thiomi/thiomi-5k, CC-BY-4.0): 101,367 approved English–Dholuo sentence pairs (5,453 thiomi-5k train samples) • Kencorpus/KenPOS (Wanjawa et al. 2022/2023, https://huggingface.co/datasets/Kencorpus/KenPOS, CC-BY-4.0): 54,700 Dholuo words tagged with English Universal Dependencies POS tags • Kencorpus/KenTrans (https://huggingface.co/datasets/Kencorpus/KenTrans, CC-BY-4.0): 4,222 Dholuo–Swahili parallel sentences • ThinkKenya / Waleghwa (Zenodo 13355021, CC-BY-4.0): 29,308 Dholuo–Swahili parallel sentences • FLORES+ / SIB-200 (luo_Latn, 2,009 English–Dholuo sentences, CC-BY-SA-4.0 / CC-BY-4.0).",
+    pronunciation: "dho-lu-o / thi-o-mi / ga-ti-tos / ken-pos",
+    context: "Google Research SMOL/GATITOS (arXiv:2502.12301v2, CC-BY-4.0), The Thiomi Dataset (arXiv:2603.29244v1, CC-BY-4.0) & Kencorpus (ACL Anthology 2023.jlcl-2.1, CC-BY-4.0)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["teso"] ??= []).push({
+  catId: "phrases",
+  entry: {
+    english: "Sunbird AI SALT (25,000 English ↔ Ateso ↔ Swahili Parallel Sentences, CC-BY-SA-4.0) & SALT-31 Multi-Turn Ateso Dialogues",
+    translation: "Sunbird AI SALT (https://huggingface.co/datasets/Sunbird/salt & https://salt.sunbird.ai/datasets/salt/, CC-BY-SA-4.0 / CC-BY-4.0): 25,000 professional human-translated multi-way parallel sentences pairing English (eng) with Ateso (teo) and Swahili (swa) across healthcare, agriculture, education, finance, and daily life • SALT-31 (https://huggingface.co/datasets/Sunbird/salt-31): 5-sentence contextual dialogues in Ateso (teo) paired with English.",
+    pronunciation: "a-te-so / salt",
+    context: "Sunbird AI, SALT & SALT-31 Parallel Text Corpora (https://huggingface.co/datasets/Sunbird/salt & https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0 / CC-BY-4.0)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["taveta"] ??= []).push({
+  catId: "phrases",
+  entry: {
+    english: "ThinkKenya / Waleghwa Kidaw'ida–Swahili Parallel Corpus (26,662 Sentence Pairs, CC-BY-4.0) & Common Voice 25.0 Kidaw'ida Text Corpus (31,892 Sentences, CC0-1.0)",
+    translation: "waleghwa/low-resource-language-data / thinkKenya (https://zenodo.org/records/13355021 & https://huggingface.co/datasets/thinkKenya/kenyan-low-resource-language-data, CC-BY-4.0): 26,662 parallel sentences pairing Kidaw'ida (Taita / Dawida) with Kiswahili • Mozilla Common Voice 25.0 Kidaw'ida Text Corpus (https://kencorpus.ke/items/fcd15c26-d1ed-487e-be48-ada4ac3d8d5d/full, CC0-1.0 public domain): 31,892 Kidaw'ida text sentences.",
+    pronunciation: "ki-da-wi-da",
+    context: "ThinkKenya / Waleghwa (Zenodo 13355021, arXiv:2501.11003v1, CC-BY-4.0) & Kencorpus / Common Voice 25.0 Kidaw'ida Text (CC0-1.0)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kalenjin"] ??= []).push({
+  catId: "phrases",
+  entry: {
+    english: "The Thiomi Dataset Kipsigis–English Corpus (3,007 Approved Pairs, CC-BY-4.0), ThinkKenya Kalenjin–Swahili (35,127 Pairs, CC-BY-4.0), Common Voice 25.0 Kalenjin Text (29,961 Sentences, CC0-1.0) & Sunbird SALT-31 Pokot Dialogues",
+    translation: "The Thiomi Dataset (Mutisya, Mugane et al. 2026, arXiv:2603.29244v1, CC-BY-4.0): 3,007 approved English–Kipsigis (Kalenjin) sentence pairs • ThinkKenya / Waleghwa (Zenodo 13355021, CC-BY-4.0): 35,127 Kalenjin–Swahili parallel sentences • Common Voice 25.0 Kalenjin Text (https://kencorpus.ke/items/044a6987-fc04-4e86-86bd-1e27eb82cf21/full, CC0-1.0): 29,961 Kalenjin text sentences • Sunbird AI SALT-31 (https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0): 5-sentence contextual dialogues in Pokot (pok) paired with English.",
+    pronunciation: "kip-si-gis / ka-len-jin / po-kot",
+    context: "The Thiomi Dataset (2026, CC-BY-4.0), ThinkKenya / Waleghwa (2024/2025, CC-BY-4.0), Common Voice 25.0 Kalenjin Text (CC0-1.0) & Sunbird SALT-31 (CC-BY-SA-4.0)",
+    audioFile: null,
+  },
+});

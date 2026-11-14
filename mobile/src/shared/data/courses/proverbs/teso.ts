@@ -59,3 +59,15 @@ export const TESO_PROVERBS: ProverbItem[] = [
     "sourceCitation": "C. W. Hobley, Eastern Uganda: An Ethnological Survey, Anthropological Institute Occasional Papers No. 1 (1902, pp. 9, 46–47, 57, 92–95)"
   }
 ];
+
+TESO_PROVERBS.push({
+  "id": "teso-sunbird-salt-2025",
+  "languageId": "teso",
+  "languageName": "Teso (Ateso — Sunbird AI SALT & SALT-31 Parallel Corpus, CC-BY-SA-4.0 / CC-BY-4.0)",
+  "indigenous": "Sunbird AI SALT (25,000 English ↔ Ateso [teo] ↔ Swahili [swa] Parallel Sentences) & SALT-31 (5-Sentence Contextual Ateso Dialogues across Agriculture, Health, Education & Daily Commerce).",
+  "literalTranslation": "25,000 human-translated multi-way sentences and 5-turn discourse dialogues pairing English with Ateso and Swahili.",
+  "meaning": "Compiled by Sunbird AI (https://huggingface.co/datasets/Sunbird/salt & https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0 / CC-BY-4.0): provides modern cross-border Ateso–English–Swahili conversational and domain terminology.",
+  "englishEquivalent": "Shared speech across borders strengthens community knowledge.",
+  "theme": "unity",
+  "sourceCitation": "Sunbird AI, SALT & SALT-31 Parallel Corpora (https://huggingface.co/datasets/Sunbird/salt & https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0 / CC-BY-4.0)"
+});
