@@ -3399,9 +3399,10 @@ SOMALI_UNITS.push({
   "id": "somali-unit-16-nilsson-2016-gender-polarity-complete",
   "title": "Unit 16: Somali Gender Polarity Revisited (Nilsson 2016)",
   "description": "Master Morgan Nilsson's (2016, Ch. 23, pp. 451–466) complete analysis of Somali definite article allomorphy ({k} vs. {t}), penultimate vs. final tonal accent, Corbett's agreement criterion, stem-syllable plural article rules, 5th-declension collectives, Arabic broken plurals, and corporate/generic agreement.",
-  "order": 16,
+  "icon": "BookOpen",
+  "number": 16,
   "color": "#0284C7",
-  "lessons": [
+  "skills": [
     {
       "id": "somali-nilsson-2016-16-1-articles-tone-syllables",
       "title": "Tonal Accent, Corbett's Agreement Criterion & Stem-Syllable Plural Article Rules (Tables 1–8 & 15, pp. 451–457, 465)",

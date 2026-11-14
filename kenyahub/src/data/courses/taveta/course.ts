@@ -2873,9 +2873,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
   }
 ];
 
-TAVETA_COURSE[TAVETA_COURSE.length - 1].lessons.push({
+TAVETA_UNITS[TAVETA_UNITS.length - 1].skills.push({
   "id": "taveta-hohnel-1894-vol1-lesson",
   "title": "Höhnel (1894, Vol. I, Chs. II–IV): Kiruvu 7-Turn Greeting Dialogue, Taveta (10 Wazee, Pombo, Naiberes), Chaga (Sultan Miriali) & Meru",
+  "icon": "Compass",
   "description": "Master the verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga (p. 66), the 4-prefix Bantu rule (p. 61), Taveta forest governance and trade units (pp. 94–205), Sultan Miriali's Kichaga phrases (p. 113), and the first ascent of Kilimanjaro to 17,387 ft. in Lieut. Ludwig von Höhnel (1894, Vol. I).",
   "tips": "On p. 66 of Volume I (1894), Höhnel records the exact 7-question Kiruvu greeting ceremony at Mafi with Sultan Sedenga of Mkarama, where every line is answered by a resonant nasal 'Hm! — Hm!' before closing with 'Yambo!'.",
   "culturalNote": "During their three-month stay in Taveta (March 31–July 15, 1887), Count Teleki and Lieut. von Höhnel documented the peaceful coexistence of >1,500 Bantu Wataveta (governed by 10 Wazee elders) with agricultural Wakwafi settled toward Lake Jipe, as well as the Kahe people whose Bantu dialect was identical to Kitaveta (pp. 100–104, 167–169).",

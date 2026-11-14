@@ -3774,7 +3774,7 @@ BORANA_UNITS.push({
   ]
 });
 
-if (!BORANA_CONFIG.sources.includes("krapf-isenberg-galla-outline-1840")) {
+if (BORANA_CONFIG.sources && !BORANA_CONFIG.sources.includes("krapf-isenberg-galla-outline-1840")) {
   BORANA_CONFIG.sources.unshift("krapf-isenberg-galla-outline-1840");
 }
 

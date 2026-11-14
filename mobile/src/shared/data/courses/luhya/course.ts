@@ -3349,9 +3349,10 @@ LUHYA_UNITS.push({
   "id": "luhya-unit-14-payne-2016-diversity-complete",
   "title": "Unit 14: Logoori, Luragooli & Lubukusu in Payne, Pacchiarotti & Bosire (2016)",
   "description": "Master all six Luhya-focused studies in 'Diversity in African languages' (2016): Logoori coronal palatalization (Ch. 9), 6 future inflections & 4 future constructions (Ch. 11), universal quantifiers vuri vs. -oosi (Ch. 12), Luragooli anticausative -Vk (Ch. 15), Lubukusu Transitive Reciprocal Constructions (Ch. 25), and Luhya enclitics in Kenyan comedy (Ch. 28).",
-  "order": 14,
+  "icon": "BookOpen",
+  "number": 14,
   "color": "#0D9488",
-  "lessons": [
+  "skills": [
     {
       "id": "luhya-payne-2016-14-1-logoori-palatalization-futures",
       "title": "Logoori Coronal Palatalization (Ch. 9, pp. 165–183) & Oral-Text Future Tenses (Ch. 11, pp. 201–219)",

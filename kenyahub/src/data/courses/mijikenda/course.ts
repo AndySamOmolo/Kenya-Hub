@@ -3779,9 +3779,10 @@ MIJIKENDA_UNITS.push({
   "id": "mijikenda-unit-15-nicolle-2016-digo-information-structure-complete",
   "title": "Unit 15: Digo (Chidigo) Information Structure (Nicolle 2016)",
   "description": "Master Steve Nicolle's (2016, Ch. 20, pp. 377–395) corpus analysis of Digo ([dig] E73, Kwale District, Kenya, 864 clauses) and 10 other Eastern Bantu languages across topic dislocation, clefted subject focus, and VS thetic sentences.",
-  "order": 15,
+  "icon": "BookOpen",
+  "number": 15,
   "color": "#059669",
-  "lessons": [
+  "skills": [
     {
       "id": "mijikenda-nicolle-2016-15-1-digo-topic-focus-thetic",
       "title": "Digo Left/Right Topic Dislocation, Clefted Subject Focus & VS Thetic Sentences (Ch. 20, pp. 377–395)",

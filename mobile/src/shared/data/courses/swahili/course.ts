@@ -6930,9 +6930,10 @@ SWAHILI_UNITS.push({
   "id": "swahili-unit-26-payne-2016-reversive-and-kenyan-comedy-complete",
   "title": "Unit 26: Swahili Reversives & Kenyan Comedy Discourse (Payne et al. 2016)",
   "description": "Master Deo Ngonyani & Nancy Jumwa Ngowa's (2016, Ch. 14, pp. 255–271) study of Standard Swahili reversives (-u/-o/-ul/-ol & -uk/-ok) at Pwani University (Kilifi) and Martha Michieka & Leonard Muaka's (2016, Ch. 28, pp. 559–576) linguistic analysis of Kenyan comedy from Vitimbi and Redykyulass to Churchill Show.",
-  "order": 26,
+  "icon": "BookOpen",
+  "number": 26,
   "color": "#7C3AED",
-  "lessons": [
+  "skills": [
     {
       "id": "swahili-payne-2016-26-1-ngonyani-ngowa-reversive",
       "title": "Productivity of the Reversive Extension in Standard Swahili (Ngonyani & Ngowa 2016, Ch. 14, pp. 255–271)",

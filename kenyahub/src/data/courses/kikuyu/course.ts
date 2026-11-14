@@ -4149,9 +4149,10 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   }
 ];
 
-KIKUYU_COURSE[KIKUYU_COURSE.length - 1].lessons.push({
+KIKUYU_UNITS[KIKUYU_UNITS.length - 1].skills.push({
   "id": "kikuyu-hohnel-1894-vol1-lesson",
   "title": "Höhnel (1894, Vol. I, Chs. V–VI): 1887 Traverse of 68 Ravines, Kuhoria Tatha & Mathira Githathi Covenants, 3-Tier Crop Zoning & Ascent of Mount Kenia to 15,355 ft.",
+  "icon": "Mountain",
   "description": "Explore Lieut. Ludwig von Höhnel's (1894, Vol. I) complete record of the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887): Ngongo Bagas blood-brotherhood with Miani, Karanja, and Waiyaki, the 68 parallel ravines from Nairobi to Thegu, ridge peace ceremonies ('Mirema! — Thayu! Thayu!'), Aturi smiths and 7–8 ft. muro digging-sticks, and the Oct. 11, 1887 ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
   "tips": "On p. 305 of Volume I (1894), Höhnel documents how every Kikuyu ridge (rugongo) is zoned into three agricultural belts: grain and beans (mtama, wimbi, maize, njahi, mboso) on the crest, sweet potatoes (ngwaci), staked yams, bananas (marigu), and tobacco on the middle slopes, and taro (nduma) with 10–12 ft. sugar-cane in the marshy valley bottoms.",
   "culturalNote": "On Sept. 16, 1887 in northern Mathira (p. 298), four medicine-men concluded a solemn githathi peace covenant by breaking the legs of a white ram and a black goat with clubs and slitting them longitudinally while Count Teleki, Jumbe Kimemeta, and six Kikuyu chiefs stepped across the bleeding carcasses seven times swearing eternal peace.",

@@ -111,14 +111,18 @@ export const ILCHAMUS_GRAMMAR_SECTIONS: GrammarSection[] = [
   }
 ];
 
+
 const _existingHohnelIlchamusIdx = ILCHAMUS_GRAMMAR_SECTIONS.findIndex(
   (s) => s.id === "ilchamus-hohnel-1894-farler-1882-baringo"
 );
 if (_existingHohnelIlchamusIdx >= 0) {
   ILCHAMUS_GRAMMAR_SECTIONS[_existingHohnelIlchamusIdx].content =
     "From Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, Vol. I, 1894, Ch. VI, pp. 367–385 [417–435]) and Ven. J. P. Farler & Rev. T. Wakefield (*\"Native Routes in East Africa\"*, PRGS Vol. 4, 1882, pp. 730–746):\n1. **Njemps Mkubwa & Njemps Ndogo on the Guaso Tigerish (Perkerra) and Guaso Molo Rivers (Höhnel 1894, Vol. I, pp. 381–385)**:\n   - Documents the two double-stockaded Maa-speaking settlements **Njemps Mkubwa** ('Great Njemps', *Njemps Liabori*) and **Njemps Ndogo** ('Little Njemps', *Njemps Lekepir*) at 3,220 ft. on the **Guaso Tigerish (Perkerra)** and **Guaso Molo** rivers south of Lake Baringo, inhabited by 1,500 to 2,000 agricultural Wakwafi (*Il Oogolala*, descendants of Leikipia and Naivasha refugees).\n   - Describes the communal timber-pile, brushwood, and boulder **irrigation dam** built across the Guaso Tigerish a mile above Njemps Mkubwa, feeding a network of main and secondary canals regulated by earthen sluice-gates opened in strict rotation to irrigate fields of **wimbi** (*Eleusine coracana*), **mtama** (sorghum), melons, pumpkins, beans, and tobacco (pp. 382–383).\n   - Records the Kerio valley grain-buying expedition to the **Elgeyo** and **Marakwet** (65 loads of *mtama* and *wimbi*, Nov. 22–Dec. 7, 1887) and Count Teleki's exploration of **Lake Baringo** (3,190 ft., 14 miles long by 7 miles wide, fresh water drained subterraneously northward through porous basalt) and its 5 volcanic islands, notably **Ol Kokwa** (2½ miles long, 400 ft. high, tuff-crater with boiling sulphurous springs), where Wakwafi fishermen and goat-herds paddle 6–8-log rafts (**oboro / l-kadong'ot**) of cork-like **ambatch** wood (*Herminiera elaphroxylon*, pp. 384–385).";
-  ILCHAMUS_GRAMMAR_SECTIONS[_existingHohnelIlchamusIdx].examples[0].explanation =
-    "Lake Baringo Ilchamus geography and irrigation culture in Höhnel (1894, Vol. I, Ch. VI, pp. 367–385 [417–435]) & Dundas (1910)";
+  const _hohnelIlchamusExamples = ILCHAMUS_GRAMMAR_SECTIONS[_existingHohnelIlchamusIdx].examples;
+  if (_hohnelIlchamusExamples && _hohnelIlchamusExamples[0]) {
+    _hohnelIlchamusExamples[0].explanation =
+      "Lake Baringo Ilchamus geography and irrigation culture in Höhnel (1894, Vol. I, Ch. VI, pp. 367–385 [417–435]) & Dundas (1910)";
+  }
 }
 
 ILCHAMUS_GRAMMAR_SECTIONS.push({

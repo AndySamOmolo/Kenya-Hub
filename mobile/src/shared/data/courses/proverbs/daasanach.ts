@@ -45,7 +45,7 @@ export const DAASANACH_PROVERBS: ProverbItem[] = [
     "literalTranslation": "Archaic reduplicated colour and stature plurals • The four ancestral prefix-conjugated verbs of d’áasannæc.",
     "meaning": "From Václav Blažek ('Dasanech Language – State-of-the-Art', Folia Orientalia Vol. 48, 2011, reviewing Mauro Tosco's 'The Dhaasanac Language', Köln: Köppe, 2001, pp. 207, 320–475): highlights two deep Cushitic archaisms preserved in Dasanech (d’áasannæc, which shares 53.3% of its 100-word core lexicon with Arbore, 50.0% with Elmolo, 38.9% with Oromo, 35.8% with Konso and Somali, and 35.6% with Rendille): (1) adjectival plurals formed by partial reduplication as in Beja (búr → búubur, ɗér → ɗeeɗír, ðát → ðáaðat) alongside -gV- reduplication (ráar → ráagar, niní → niiginí, ʔéð → ʔéegeð), and (2) four verbs retaining the ancient Afroasiatic prefixal conjugation (3sg. m. impf. ʔás, yaalla, yeeðe, yimii).",
     "englishEquivalent": "Ancient roots endure in the colours of the herd and the verbs of life.",
-    "theme": "heritage",
+    "theme": "wisdom",
     "sourceCitation": "Václav Blažek, 'Dasanech Language – State-of-the-Art', Folia Orientalia Vol. 48 (2011, reviewing Mauro Tosco 2001, pp. 207, 320–475)"
   }
 ];

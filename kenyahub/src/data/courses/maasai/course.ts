@@ -3940,9 +3940,10 @@ export const MAASAI_UNITS: CourseUnit[] = [
   }
 ];
 
-MAASAI_COURSE[MAASAI_COURSE.length - 1].lessons.push({
+MAASAI_UNITS[MAASAI_UNITS.length - 1].skills.push({
   "id": "maasai-hohnel-1894-vol1-lesson",
   "title": "Höhnel (1894, Vol. I, Chs. III, IV & VI): Il Oikob vs. Il Oogolala, Elmoran Diet (ol-pul & kiloriti), Loitokitok Oratory & Mfuto Variolation",
+  "icon": "Shield",
   "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I) firsthand records of the Masai (Il Oikob) and Wakwafi (Il Oogolala / Il Lumbwa), Sigirari and Loitokitok greetings, Count Teleki's smallpox variolation of ~200 porters at Mfuto, the strict Elmoran milk-and-meat dietary separation, and Chief Laibon Mbatian of the Engidong clan.",
   "tips": "In Chapter IV (pp. 218–219), Höhnel notes that Masai warriors (Elmoran) never eat milk and beef on the same day, always taking a strong emetic and purgative before switching between their wet-season milk-and-blood diet (drawn with the blocked arrow l-ngoret) and their secluded forest meat-camp (ol-pul) seasoned with astringent kiloriti bark.",
   "culturalNote": "At Mfuto camp (3,580 ft., July 31–Aug. 10, 1887, pp. 225–228), when 28 porters fell ill with smallpox (maradhi ya ndui), Count Teleki inoculated ~200 healthy men on the upper arm with clear humanized varioloid lymph using a lancet, producing a mild 2-day reaction fever on Aug. 5–6 and saving the expedition.",
