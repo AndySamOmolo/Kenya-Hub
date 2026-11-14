@@ -1804,3 +1804,47 @@ if (!LANGUAGE_SOURCES.some((s) => s.id === _cust1883Vol1Source.id)) {
     SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
   }
 }
+
+export {
+  BEECH_1918_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register beech-aids-study-kiswahili-1918 ("Aids To The Study Of Ki Swahili.md", PDF pp. 1–184 / Book pp. v–xvi, 1–159) in LANGUAGE_SOURCES & lookup maps
+const _beech1918Source: LanguageSource = {
+  id: "beech-aids-study-kiswahili-1918",
+  title: "Aids to the Study of Ki-Swahili: Four Studies Compiled and Annotated (By Mervyn W. H. Beech, M.A., F.R.A.I., Examiner in Ki-Swahili in the East Africa Protectorate, London: Kegan Paul, Trench, Trübner & Co., Ltd.; New York: E. P. Dutton & Co.; Printed by Butler & Tanner, Frome, Somerset, [1918], Book pp. v–xvi, 1–159 [PDF pp. 1–184])",
+  fileName: "Aids To The Study Of Ki Swahili.md",
+  processedPath: "language-sources/raw/Aids To The Study Of Ki Swahili.md",
+  languages: ["swahili"],
+  published: "1918",
+  contribution:
+    "Complete 184-PDF-page (Book pp. v–xvi, 1–159) monograph by Mervyn W. H. Beech, M.A., F.R.A.I., Examiner in Ki-Swahili in the East Africa Protectorate (London: Kegan Paul, Trench, Trübner & Co., Ltd.; New York: E. P. Dutton & Co.; Printed by Butler & Tanner, Frome, Somerset, [1918] — Public Domain; UC Berkeley Library copy UC-NRLF B 4 234 205, Barcode C020864156, Call No. PL8701 / B44 / 1918 / MAIN): Preface (pp. v–vii, signed M. W. H. B., MOMBASA: Higher Standard Examination guide; notes that an official fluent in clear Arabic script can decipher only ~1 in 6 native Swahili letters; quotes Ovid 'Video meliora proboque deteriora sequor' p. vi; thanks A. C. Hollis, Rev. John Hamshere [H.], Sir Harry Johnston, Chief Justice Hamilton, and 5 primary Arab/Swahili authorities: late Sheikh Muhamad bin Salim bin Hamis 'l-Mazarui [Liwali of Takaungu], Sharif Ahmad bin Uusuf [Kadhi of Fort Smith], Sharif Said Hasan bin Aloï [of Pemba], Muhamad bin Salim, and Shaaban bin Muhamad [of Mombasa]); 'Swahili Traditions as to Themselves' (pp. xi–xvi: Three Stages, 500-year-old Persian rice-paper MS, sahil → suahil → Swahiliyi, Mombasa's Thelatha Taifa [Wa-Kilindini, Wa-Changamwe, Wa-Tangana] & Tissa Taifa [Wa-Jomvu, Wa-Kilifi, Wa-Mtwapa, Wa-Pate, Wa-Siyu, Wa-Gunia, Wa-Malindi {5th town destroyed 1017 A.H. with Gedi/Kilifi/Ngomeni; 6th town 1271 A.H.}, Wa-Shimazi, Wa-Faza] & Wa-Pemba [1771 A.D., Ki-Jezirati], Wa-Shambara slaves, Suria vs. Mzalia vs. masikini vs. Wa-ungwana vs. Ma-Haji, and Mambrui); Study I Ki-Swahili Writing (pp. 1–55: 28-letter Ajami alphabet p. 5, numerals & addition sum 479+123+647=1249 p. 6, hamzah contrasts p. 7, 12 Swahili/Arabic months & 7 weekdays p. 8, 10 Arabic compliments & 3 salutation templates pp. 8–10, all 16 original letters in Roman & Arabic script pp. 12–43 incl. 6 Ki-Amu coconut-toddy/oil terms in Letter 16 [Kishinda, Shinda, Inda, Ufucho/infucho, Kitunguu, Mai tini], and the 4-stream Ki-Jizirat story 'Asiye hurumiwa ni Mngu usimhurumie' pp. 44–55); Study II Ki-Swahili Stories (pp. 57–113: 'Banawasi' pp. 58–85 with 67 footnotes, 7 uses of -ka- fn. 59-9, 8-Point Wind Compass Diagram p. 69, ughaibu betel-box lexicon fn. 81-7 & Note on Past Tense Infixes p. 85; and 'Fathili za Punda ni Mashuzi' pp. 86–113 with 78 footnotes, 8 daily time-divisions fn. 93-6, complete smithy lexicon fn. 95-3 & 7 Mosque thieves' vows pp. 98–99); Study III Enigmas and Aphorisms (pp. 115–132: all 67 Mafumbo pp. 117–126, all 4 Ki-Mvita Enigmas/Tambo pp. 126–128, all 7 Ki-Jizirat Kitendawili p. 129 & all 23 Ki-Mvita Kitendawili pp. 129–132); and Study IV Magic in Pemba (pp. 133–159 in parallel English & Ki-Jizirat: Ngoma ya Pepo pp. 134–143, Kikoa kia Wachawi pp. 144–149, and Sihiri charms pp. 150–159 incl. Sharif Hasan's fugue to Baghdad fn. 153-1 & Mariamu binti Saidi Ahmad Sharifu under the kunge tree pp. 158–159).",
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 184 PDF pages / Book pp. v–xvi, 1–159) into swahili/grammar-reference.ts (fixed Section 5 & added Section 20), swahili/course.ts (Unit 24), proverbs/swahili.ts (fixed swahili-beech-1918-1 & added all 67 Mafumbo, 4 Enigmas/Tambo & 30 Kitendawili), swahili.json, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _beech1918Source.id)) {
+  LANGUAGE_SOURCES.push(_beech1918Source);
+  SOURCES_BY_ID_MAP.set(_beech1918Source.id, _beech1918Source);
+  for (const _langKey of ["swahili"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_beech1918Source)) {
+      _bucket.push(_beech1918Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}

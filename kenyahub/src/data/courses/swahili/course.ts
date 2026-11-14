@@ -6392,7 +6392,7 @@ SWAHILI_UNITS.push({
 });
 
 // ── Unit 23: Complete Line-by-Line Integration of Mohamed Mwamzandi's "The pragmatics of Swahili relative clauses" (Language Science Press, 2022, Ch. 13, pp. 227–246, DOI: 10.5281/zenodo.6393758) ──
-if (!SWAHILI_CONFIG.sources.includes("mwamzandi-swahili-relative-clauses-2022")) {
+if (SWAHILI_CONFIG.sources && !SWAHILI_CONFIG.sources.includes("mwamzandi-swahili-relative-clauses-2022")) {
   SWAHILI_CONFIG.sources.push("mwamzandi-swahili-relative-clauses-2022");
 }
 
@@ -6655,6 +6655,268 @@ SWAHILI_UNITS.push({
             {
               "left": "(32) Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242)",
               "right": "'In a ruling that was given yesterday by Judge Bernard Luand' — Tensed RC on PP complement with passivized verb to-lew-a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+
+// ── Unit 24: Complete Line-by-Line Integration of Mervyn W. H. Beech's "Aids to the Study of Ki-Swahili: Four Studies Compiled and Annotated" (London: Kegan Paul, Trench, Trübner & Co., Ltd., [1918], Book pp. v–xvi, 1–159 [PDF pp. 1–184]) ──
+if (SWAHILI_CONFIG.sources && !SWAHILI_CONFIG.sources.includes("beech-aids-study-kiswahili-1918")) {
+  SWAHILI_CONFIG.sources.push("beech-aids-study-kiswahili-1918");
+}
+
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-24-beech-1918-complete",
+  "number": 24,
+  "title": "Unit 24: Beech (1918) 'Aids to the Study of Ki-Swahili' — Swahili Traditions (pp. xi–xvi) & Studies I–IV (pp. 1–159)",
+  "description": "Master Mervyn W. H. Beech's 1918 'Aids to the Study of Ki-Swahili' line by line: Preface & Three Stages of Swahili Traditions (Thelatha Taifa, Tissa Taifa, Ki-Jezirati, Wa-ungwana vs. Mzalia), Study I (28-Letter Ajami Alphabet, 16 Letters, 6 Ki-Amu terms & the 4-stream Ki-Jizirat story), Study II (Banawasi, 8-Point Wind Compass, 7 Uses of -ka-, Past Tense Note & Fathili za Punda ni Mashuzi), Study III (67 Mafumbo, 4 Enigmas/Tambo & 30 Kitendawili), and Study IV (Magic in Pemba: Ngoma ya Pepo, Kikoa kia Wachawi & Sihiri).",
+  "icon": "BookOpen",
+  "color": "#0F766E",
+  "skills": [
+    {
+      "id": "swahili-u24-m1-traditions-and-study1-ajami-letters",
+      "title": "Swahili Traditions (pp. xi–xvi) & Study I: Ki-Swahili Writing, 16 Letters & 4-Stream Story (pp. 1–55)",
+      "icon": "FileText",
+      "description": "Learn the Three Stages of Swahili ethnogenesis, Mombasa's Thelatha & Tissa Taifa, the 28-letter Ajami alphabet, Letters 1–16 (incl. 6 Ki-Amu coconut-toddy terms), and 'Asiye hurumiwa ni Mngu usimhurumie'.",
+      "tips": "In Study I (pp. 3–7), Beech shows that Arabic script lacks p (written ب ba or beginner پ), ch (written ش shin or Lamu/Bajun چ), v (written ف fa or beginner ڤ), hard g (written غ ghain), ñg, and ny, drops n before consonants (ku-andika كُودِكَ, ñgombe غُمْبِ / غُوبِ, nyumba يُمْبَ), and uses hamzah (ء) to distinguish uli-o-pata (أُلِوْبَاتَ) from uli-yo-pata (أُلِيَبَاتَ) and Mombasa baada-e (بَعَدائ) from Zanzibar baada-ye (بَعَدايَ).",
+      "words": [
+        {
+          "target": "Preface (pp. v–vii, M. W. H. B., MOMBASA): Higher Standard Exam (~1 in 6 native letters legible) • 5 Authorities: Sheikh Muhamad bin Salim bin Hamis 'l-Mazarui (Liwali of Takaungu), Sharif Ahmad bin Uusuf (Kadhi of Fort Smith), Sharif Said Hasan bin Aloï (Pemba), Muhamad bin Salim & Shaaban bin Muhamad (Mombasa) + Rev. John Hamshere (H.)",
+          "source": "Compiler's Preface, examination context, Ovid quotation ('Video meliora proboque deteriora sequor', p. vi), and five named Arab/Swahili authorities",
+          "pronunciation": "mu-ha-mad bin sa-lim / sha-rif ah-mad bin yu-suf / sha-rif sa-id ha-san bin a-loi",
+          "hint": "Beech (1918, Preface, pp. v–vii)"
+        },
+        {
+          "target": "First Stage (pp. xi–xiv): sahil → suahil → Swahiliyi ('of the coasts') • 500-yr Persian rice-paper MS (fn. xii-1) • Thelatha Taifa (Miji mitatu): Wa-Kilindini (Jilindan-iyi / Ki-lindi-ni), Wa-Changamwe (Taghamaw-iyi / ku-changanya), Wa-Tangana (Shiraz / ku-tangamana) • Tissa Taifa & Towns: Wa-Jomvu (Jauf), Wa-Kilifi (Kulfah bin Hanthalah), Wa-Mtwapa (Tabia), Wa-Pate ('Ajam), Wa-Siyu, Wa-Gunia (Kangoni & Muüli of Bana), Wa-Malindi (Muludh; 5th town destroyed 1017 A.H. with Gedi/Kilifi/Ngomeni; 6th town 1271 A.H.), Wa-Shimazi, Wa-Faza (Halab), Wa-Pemba (1771 A.D., Ki-Jezirati)",
+          "source": "First Stage of Swahili Traditions: Arabic etymology, Mombasa's Three Tribes and Nine Tribes, Pate/Siyu subdivisions, Malindi's 6 towns, and Pemba's Ki-Jezirati dialect",
+          "pronunciation": "swa-hi-li-yi / the-la-tha tai-fa / tis-sa tai-fa / ki-je-zi-ra-ti",
+          "hint": "Beech (1918, 'Swahili Traditions as to Themselves', pp. xi–xiv)"
+        },
+        {
+          "target": "Second & Third Stages (pp. xiv–xvi): Wa-Shambara (Nyassa slaves at Kilwa & Zanzibar, fn. xiv-2) • Suria (slave-concubine; Arab's son = 'Arab') vs. Mzalia (pl. wa-zalia, child of hybrid female + native, or of two slaves) • masikini (freed in expiation of sins) • Wa-ungwana (sg. Mu-ungwana < ku-ungana) • Ma-Haji (Islamized Africans; Ngombeni & Kidutani, fn. xv-2) • Mazrui ('children of their mothers') & Mambrui",
+          "source": "Second and Third Stages of Swahili social stratification and patrilineal genealogy",
+          "pronunciation": "wa-sha-mba-ra / su-ri-a / m-za-li-a / wa-u-ngwa-na / ma-ha-ji",
+          "hint": "Beech (1918, 'Swahili Traditions as to Themselves', pp. xiv–xvi)"
+        },
+        {
+          "target": "28-Letter Alphabet (p. 5): Alifu, Bei, Tei, Thei, Jîmu, Hhei, Khei, Dâli, Thâli, Rei, Zei, Sîni, Shîni, Sâdi, Thâdi, Twei, Thwei, 'Aini, Ghaini, Fei, Kāfu, Kiáfu, Lamu, Mimu, Nunu, Hei, Wau, Ya • Addition Sum (p. 6): 479 + 123 + 647 = 1249 • 10 Compliments (pp. 8–9): 'l-Hathwarat, 'l-Jenab, 'l-Moheb, 'l-akaram, 'l-muhtaram, 'l-aziz, 'l-mukaram, 'l-afham, 'l-heshim, 'l-maatham • sanat 1332 h. (Hegeira) vs. sanat 1914 m. (Miladia)",
+          "source": "Ki-Swahili 28-letter Ajami alphabet, left-to-right Arabic numerals, 10 epistolary compliments, and Islamic vs. Christian dating",
+          "pronunciation": "a-li-fu bei tei thei ji-mu / l-ha-thwa-rat l-je-nab l-mo-heb",
+          "hint": "Beech (1918, Study I, pp. 5–10)"
+        },
+        {
+          "target": "Letters 1–16 (pp. 12–43) & 6 Ki-Amu Terms in Letter 16 (pp. 42–43, with پ چ ڤ): 1. Kishinda (scraped half coconut shell) • 2. Shinda (plugged half shell for measuring tembo = Ki-Mvita upawa/kasi) • 3. Inda (cotton wool soaked in mafuta ya ucho [Ki-Mvita uto]) • 4. Ufucho / infucho (skimming stick for toddy) • 5. Kitunguu (ladle for tembo) • 6. Mai tini (maji chini = scum of oil) | 4-Stream Story (pp. 44–55): 'Asiye hurumiwa ni Mngu usimhurumie' (Ramadhan 5 sanat 1330)",
+          "source": "All 16 original administrative/legal/personal letters (Takaungu, Mombasa, Dagoreti, Fort Smith, Naivasha, Ngongo), the 6 Lamu coconut-toddy terms, and the 4-stream Ki-Jizirat story",
+          "pronunciation": "ki-shi-nda / shi-nda / i-nda / u-fu-cho / ki-tu-ngu-u / ma-i ti-ni",
+          "hint": "Beech (1918, Study I, pp. 12–55)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Barua ni nussu ya kuonana (Letter 7, p. 25) • Barua ni adaabu zaidi kama kukabiliana kwa midomo (Letter 9, p. 28) • Asiye hurumiwa ni Mngu usimhurumie (pp. 44–55)",
+          "source": "A letter is half of meeting face to face • A letter is more polite than confronting one another by word of mouth • For whom God has no pity, have no pity."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Mervyn W. H. Beech's 'Swahili Traditions as to Themselves' (1918, pp. xii–xiv), which tribes compose Mombasa's 'Thelatha Taifa' (Miji mitatu = Three Tribes), and what happened to the 5th town of Malindi (Muludh)?",
+          "correctAnswer": "The Thelatha Taifa are the Wa-Kilindini (from Arab Jilindan-iyi near Maskat or Bantu Ki-lindi-ni), Wa-Changamwe (from Syrian Taghamaw-iyi or ku-changanya), and Wa-Tangana (from Shiraz or ku-tangamana); the 5th town of Malindi—along with Gedi, Kilifi, and Ngomeni—was destroyed in 1017 A.H. after attempting to enslave the Galla and being overwhelmed by the people of Witu, and the 6th (present) town dates from 1271 A.H.",
+          "options": [
+            "The Thelatha Taifa are the Wa-Kilindini (from Arab Jilindan-iyi near Maskat or Bantu Ki-lindi-ni), Wa-Changamwe (from Syrian Taghamaw-iyi or ku-changanya), and Wa-Tangana (from Shiraz or ku-tangamana); the 5th town of Malindi—along with Gedi, Kilifi, and Ngomeni—was destroyed in 1017 A.H. after attempting to enslave the Galla and being overwhelmed by the people of Witu, and the 6th (present) town dates from 1271 A.H.",
+            "The Thelatha Taifa are the Wa-Pemba, Wa-Zanzibar, and Wa-Kilwa, founded in 1850 A.D.",
+            "Malindi has never been rebuilt since the Portuguese era",
+            "The Thelatha Taifa are subdivisions of the Masai"
+          ],
+          "hint": "See Beech (1918, pp. xii–xiii & fn. xiii-2)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Ki-Amu (Lamu dialect) term from Letter 16 (written by Muhamad bin Muhedin bin Ali bin Ahmad-l-Bajuni, Beech 1918, pp. 42–43) with its exact definition:",
+          "correctAnswer": "Shinda: Half a coconut shell with its 3 holes plugged with wood, used as a measure for tembo toddy (= Ki-Mvita upawa or kasi)",
+          "pairs": [
+            {
+              "left": "Shinda (vs. Kishinda)",
+              "right": "Half a coconut shell with its 3 holes plugged with wood, used as a measure for tembo toddy (= Ki-Mvita upawa or kasi; kishinda = empty scraped half-shell)"
+            },
+            {
+              "left": "Inda",
+              "right": "Cotton wool (pamba) soaked in coconut oil (mafuta ya ucho = Ki-Mvita uto) and wrung out"
+            },
+            {
+              "left": "Ufucho (or infucho)",
+              "right": "Piece of wood sharpened at the end like an msuaki toothbrush, used to skim the scum off palm toddy"
+            },
+            {
+              "left": "Mai tini (= maji chini) & Kitunguu",
+              "right": "The scum of oil/fat (mafuta) & the ladle for putting tembo into the shinda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-u24-m2-study2-banawasi-compass-fathili-za-punda",
+      "title": "Study II: 'Banawasi', 8-Point Wind Compass, 7 Uses of -ka- & 'Fathili za Punda ni Mashuzi' (pp. 57–113)",
+      "icon": "Compass",
+      "description": "Master the two Ki-Jizirat folktales told by Sharif Hasan bin Aloi of Pemba, their 145 footnotes, the 8-point wind compass (p. 69), the 7 uses of -ka- (p. 59), the Note on Past Tense Infixes (p. 85), and the smithy & time-of-day lexicons (pp. 93–95).",
+      "tips": "On p. 85 ('Note on Past Tense Infixes'), Beech contrasts Ki-Unguja—where -na- is Present Progressive (n'nakwenda 'I am going'), -me- is Perfect, and -li- is Past—with Mombasa (Ki-Mvita), where -na- and -me- are both Perfect (n'nakwenda = n'mekwenda 'I have gone'; n'nampenda = n'mempenda 'I have loved him') while Present Progressive is expressed by n'nakwenda sasa hivi or ni katika kwenda.",
+      "words": [
+        {
+          "target": "Banawasi (< Abu-nawasi: 'ni mtu mwenyi akili nyingi na maarifa, asiyeshindika kwa neno', fn. 59-1) • kichinja-mimba ('last-born child after whom the mother bears no more', fn. 61-7) • mwikanga ('dappled ox', p. 65) • maturuma & vifundo ('boat ribs & seat-knots', p. 71) • fumba ('sleeping-mat bag', p. 76) • ughaibu (betel mixture: timbaku, chokaa, katu, tambuu/mjengo, popoo in a Jaluba box; kuvuata = chewing lime & tobacco only, fn. 81-7)",
+          "source": "Key vocabulary and idioms from Story 1 ('Banawasi', pp. 58–85)",
+          "pronunciation": "ba-na-wa-si / ki-chi-nja mi-mba / mwi-ka-nga / ma-tu-ru-ma / u-ghai-bu / ja-lu-ba",
+          "hint": "Beech (1918, Study II, Story 1 'Banawasi', pp. 58–85)"
+        },
+        {
+          "target": "8-Point Swahili Wind Compass (p. 69): N Kasikazi • NE Maṯalai Kasikazi • E Maṯalai (Mashariki / maawio / Mawao / Matokeo) • SE Maṯalai Kusi • S Kusi • SW Mmande Kusi • W Mmande (Mangaribi / kutwa maiwio / matweo; westerly morning creek breeze) • NW Mmande Kasikazi",
+          "source": "Complete 8-Point Swahili Wind Compass diagram on p. 69 of Beech (1918)",
+          "pronunciation": "ka-si-ka-zi / ma-ta-la-i ka-si-ka-zi / ma-ta-la-i / ma-ta-la-i ku-si / ku-si / m-ma-nde ku-si / m-ma-nde / m-ma-nde ka-si-ka-zi",
+          "hint": "Beech (1918, Study II, p. 69)"
+        },
+        {
+          "target": "7 Uses of Connective -ka- (fn. 59-9): (a) Narrative (akaondoka akaenda) • (b) Final = ili (n'nakwenda 'kamwambia) • (c) Subjunctive connective after haifai (haifai mkaenda nyote) • (d) Future connective after akitaka (akitaka akaenda = atakwenda) • (e) Infinitival after naona vyema (naona vyema akaenda) • (f) Consecutive (nimekuja hapa n'kaona) • (g) With Imperative (enenda 'kamwambie) | Note on Past Tense Infixes (p. 85): Mombasa n'nakwenda = n'mekwenda ('I have gone') & Waungwana women's kana for kama",
+          "source": "Seven grammatical functions of the connective -ka- tense (fn. 59-9) and the Note on Past Tense Infixes (p. 85)",
+          "pronunciation": "a-ka-o-ndo-ka / n-na-kwe-nda / n-me-kwe-nda / ka-na",
+          "hint": "Beech (1918, Study II, p. 59 fn. 9 & p. 85)"
+        },
+        {
+          "target": "8 Daily Time-Divisions (fn. 93-6): alafagiri (5:30 a.m.) • sabahe (6:30 a.m.) • adhuhuri / mtanakati / mtikati (12 noon) • alasiri (3 p.m.) • ahurubu shems (5:30 p.m.) • mangaribi (6 p.m.) • liisha (7:30 p.m.) • leli / usiku makungu (12 midnight; usiku wa manane = 2 a.m.)",
+          "source": "Complete schedule of Swahili and Islamic daily time divisions in Story 2 ('Fathili za Punda ni Mashuzi', p. 93 fn. 6)",
+          "pronunciation": "a-la-fa-gi-ri / sa-ba-he / a-dhu-hu-ri / m-ta-na-ka-ti / a-la-si-ri / a-hu-ru-bu she-ms / ma-nga-ri-bi / li-i-sha",
+          "hint": "Beech (1918, Study II, p. 93 fn. 6)"
+        },
+        {
+          "target": "Blacksmith & Goldsmith Lexicon (fn. 95-3): sonara (worker in gold/silver) vs. mjua chuma / mfuaji (blacksmith) • kiwanda (workshop) • kweleo (tongs) • nyundo (hammer) • kiriba (skin bellows) • fuawe (anvil) • kalibu (clay nozzle) • ruwao (iron stirrup) • tindo (chisel) • kuvukuta (blow bellows) • mkando (bar of iron/copper) • chomwe (red-hot iron) • macheche (sparks) | 7 Mosque Thieves' Vows (pp. 98–99): 1. dinari (sword), 2. fetha (kiti cha enzi), 3. thahabu (ring), 4. mbuzi (kilemba), 5. almasi (jembia), 6. kondoo na mwanawe (viatu), 7. nundu ya ngamia (mwanamwali)",
+          "source": "Complete smithy terminology (fn. 95-3) and the 7 thieves' vows at the Mosque in 'Fathili za Punda ni Mashuzi' (pp. 86–113)",
+          "pronunciation": "so-na-ra / m-fu-a-ji / ki-wa-nda / kwe-le-o / ki-ri-ba / fu-a-we / ka-li-bu / ru-wa-o / ti-ndo / cho-mwe",
+          "hint": "Beech (1918, Study II, pp. 95 fn. 3, 98–99)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Hiyari hushinda utumwa (p. 82) • Mtenda wema halipwi wema (p. 111) • Fathili za punda ni mashuzi (pp. 86, 111)",
+          "source": "Freewill overcomes slavery (voluntary service beats forced labour) • The doer of good is not repaid with good • The gratitude of a donkey is flatulence ('Don't cast your pearls before swine')."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In the 8-Point Swahili Wind Compass diagram on p. 69 of Beech (1918), what are the exact Swahili names for North, East, South, West, and the four intercardinal points?",
+          "correctAnswer": "N = Kasikazi, NE = Maṯalai Kasikazi, E = Maṯalai (also Mashariki / maawio / Mawao / Matokeo), SE = Maṯalai Kusi, S = Kusi, SW = Mmande Kusi, W = Mmande (also Mangaribi / kutwa maiwio / matweo), and NW = Mmande Kasikazi",
+          "options": [
+            "N = Kasikazi, NE = Maṯalai Kasikazi, E = Maṯalai (also Mashariki / maawio / Mawao / Matokeo), SE = Maṯalai Kusi, S = Kusi, SW = Mmande Kusi, W = Mmande (also Mangaribi / kutwa maiwio / matweo), and NW = Mmande Kasikazi",
+            "N = Kusi, S = Kasikazi, E = Mmande, W = Maṯalai",
+            "Swahili has only four wind points and no intercardinal terms",
+            "Mmande means the midday southerly gale"
+          ],
+          "hint": "See the Wind Compass diagram on p. 69 of Beech (1918)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each metallurgical term from Footnote 95-3 of Beech (1918, p. 95) with its exact English meaning:",
+          "correctAnswer": "fuawe & kalibu: Anvil & the clay nozzle/tuyere into which the skin bellows (kiriba) are fitted",
+          "pairs": [
+            {
+              "left": "sonara vs. mjua chuma (or mfuaji)",
+              "right": "Worker in gold and silver vs. blacksmith (worker in iron)"
+            },
+            {
+              "left": "fuawe & kalibu",
+              "right": "Anvil & the clay nozzle/tuyere into which the skin bellows (kiriba) are fitted"
+            },
+            {
+              "left": "kweleo, tindo & ruwao",
+              "right": "Pincers/tongs, cold chisel & the iron stirrup through which the blacksmith puts his foot"
+            },
+            {
+              "left": "mkando, chomwe & macheche",
+              "right": "Long bar of iron/copper, red-hot iron & flying sparks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-u24-m3-study3-aphorisms-riddles-and-study4-pemba-magic",
+      "title": "Study III: 67 Aphorisms, 4 Enigmas & 30 Kitendawili (pp. 115–132) & Study IV: Magic in Pemba (pp. 133–159)",
+      "icon": "Sparkles",
+      "description": "Master all 67 Mafumbo, 4 Enigmas/Tambo, 30 Kitendawili, and the bilingual Ki-Jizirat treatise on Ngoma ya Pepo, Kikoa kia Wachawi, and Sihiri charms in Pemba.",
+      "tips": "In Ki-Jizirat (Pemba dialect, Studies II–IV), Class 7 prefix ki- before vowels remains ki- rather than palatalizing to ch- (e.g., kikoa kia wachawi 'banquet of the wizards' p. 145, kitambaa kia sanda 'cloth of a shroud' p. 151, kiungu 'cooking pot' p. 117 #3, kiombo 'vessel' p. 122 #37, kiakula 'food' p. 139).",
+      "words": [
+        {
+          "target": "Study III Aphorisms (Mafumbo #1–#67, pp. 117–126): (1) Mpiga la kuanza hunyamaziwa / Mpiga la pili huitwa akambiwa / Mpiga la tatu huonguliwa • (4) Wema hauozi • (13) Kuagiza kufikile • (14) Kuambiana kuko kusikilizana hapana • (35) Hiyari ya mtu ni mwenyewe • (54) Ndugu mbaya killa siku hukukumbusha killa jambo • (58) Wa mbili havai moja: mja wa sitara hasumbuki • (59) Akutwekae ndiye akutuae • (61) Tissia mkononi bora kuliko kumi nenda, uje • (65) Kuinamako ndiko kuinukako • (67) Liharibikalo hufanywa",
+          "source": "Representative aphorisms across the 67 numbered Mafumbo in Ki-Jizirat and Ki-Mvita (pp. 117–126)",
+          "pronunciation": "m-pi-ga la ku-a-nza / we-ma ha-u-o-zi / a-ku-twe-ka-e ndi-ye a-ku-tu-a-e",
+          "hint": "Beech (1918, Study III, pp. 117–126)"
+        },
+        {
+          "target": "4 Enigmas / Tambo in Ki-Mvita (pp. 126–128): (1) Kinyume: Mbarakita pecheu waju kalikito nasa = Kitambara cheupe juwa likitoka sana • (2) Ughaibu Riddle: Tambuu (Ntampiga), popoo, tumbaku (mtumba wangu), tokaa (ntakaa), katu (kaa tu) • (3) River-Crossing Tambo: tui (leopard), mbuzi (goat) & mzigo wa nyasi (bundle of grass) in a 2-seat kidau • (4) Sour Lime & Jinn Tambo: 15 doctors throw a stone at the Jinn so he throws back the sour lime (ndimu moja ya kali)",
+          "source": "All four Ki-Mvita Enigmas and Tambo puzzles in Study III (pp. 126–128)",
+          "pronunciation": "m-ba-ra-ki-ta pe-che-u / ki-ta-mba-ra che-u-pe / tu-i m-bu-zi m-zi-go wa nya-si",
+          "hint": "Beech (1918, Study III, pp. 126–128)"
+        },
+        {
+          "target": "7 Ki-Jizirat & 23 Ki-Mvita Kitendawili (pp. 129–132): Ki-Jizirat (1) Kifa kifanana → Maziwa na tui la nazi • (2) Li papo; hulioni? → Juvuli • (3) Hango lifunika hango: jihango linafunika nini? → Nazi • (6) Mtoto wangu anyelea mbavani → Jiwe la kusagia mtama | Ki-Mvita (1) Juni linajifunika utaji → Tanga la Jehazi • (2) Asikari wangu hamtuma harudi → Rasasi • (14) Nyumba yangu ina milango mingi → Ema (lobster-pot) • (22) Banyani anapiga ubinda → Sindano na uzi • (23) Ni papo hunioni → Kishogo",
+          "source": "Representative riddles across the 7 Ki-Jizirat and 23 Ki-Mvita Kitendawili in Study III (pp. 129–132)",
+          "pronunciation": "ki-fa ki-fa-na-na / ha-ngo li-fu-ni-ka ha-ngo / ju-ni li-na-ji-fu-ni-ka u-ta-ji / ki-sho-go",
+          "hint": "Beech (1918, Study III, pp. 129–132)"
+        },
+        {
+          "target": "Study IV §1–§2 (pp. 134–149): Ngoma ya Pepo — bau / Furukani ('Ewe Ramli we nibainia haki usibaine batili'), 3 yungi (water-lilies), tumba ya mkadi, utanga (white mat), kiti ('chair' = possessed patient), cheo (heirloom wand), Pepo wa Tari (sea-spirits), vishuka (day feast) vs. kijio (night feast), hupasua ulimi ('splitting the tongue'), mchomozi ('Finder' spirit incised with chale), 27 Mwerisho (Shaaban) kufunga with vue & mafusho, post-Ramadhan kiano ('Plate') feast • Kikoa kia Wachawi — 3,000 naked wachawi at midnight Wed./Sat. in Mava / Uchanjaa, chango (Ki-Mvita tango) rotating family victim called ñgombe beaten with human shin-bones (miundi that hutebanya), ransom with pweza (cuttle-fish), emetic vuo (Mpacha & Mwenyika nguu), and 3 Arabic grimoires (Babu, Mjarabati, Shems-l-maarifa)",
+          "source": "Complete terminology of the Pemba Spirit-Dance (Ngoma ya Pepo) and Witches' Sabbath (Kikoa kia Wachawi) in Study IV (pp. 134–149)",
+          "pronunciation": "ngo-ma ya pe-po / u-ta-nga / che-o / vi-shu-ka / ki-ji-o / m-cho-mo-zi / ki-a-no / ki-ko-a ki-a wa-cha-wi / mi-u-ndi / vu-o",
+          "hint": "Beech (1918, Study IV, §§ 1–2, pp. 134–149)"
+        },
+        {
+          "target": "Study IV §3–§5 (pp. 150–159): Sihiri Charms — 1. Footprint sand + Mviru root in a grave; 2. Spittle/hair + shroud (kitambaa kia sanda) + corpse-water (maji ya ufuo) at the red-flowered Mvunja huruma tree at star-hour Kamari or Shemshi; 3. Body grime (nongo = Malay daki) at river/crossroads; 4. Talisman on a pigeon (njiwa) that drove Sharif Hasan bin Said Aloi from his 3,000 Mikirafu clove trees in Pemba to Baghdad for 4 months (fn. 153-1) • Mviza Tree Charm ('Ewe Mviza uvizae jua na mvua na simba...', pp. 154–155) • Separation & Kunge Charms (pp. 156–159): Mvuma nyuki (Mnamia kumbweni), Msasa (Mcheka wanawake), Mwinga Jinni, and burying luck under the dead kunge ('Blasted One') tree (case of Mariamu binti Saidi Ahmad Sharifu bewitched by Mwalimu Jafari)",
+          "source": "All botanical, astrological, and talismanic Sihiri charms and true Pemba case histories in Study IV (pp. 150–159)",
+          "pronunciation": "si-hi-ri / m-vi-ru / m-vu-nja hu-ru-ma / ka-ma-ri / no-ngo / m-vi-za / m-vu-ma nyu-ki / m-sa-sa / ku-nge",
+          "hint": "Beech (1918, Study IV, §§ 3–5, pp. 150–159)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ewe Ramli we nibainia haki usibaine batili (p. 135) • Ewe Mviza uvizae jua na mvua na simba, mimi n'nataka unipatie haja yangu (p. 155)",
+          "source": "O Thou Oracle, show me the truth and do not show me falsehood! • O Mviza tree who keepest off sun and rain and lion, I want thee to obtain for me my desire!"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Study IV ('Magic in Pemba', Beech 1918, pp. 141–143 & 152–153), what happens to possessed spirits on the 27th of Mwerisho (Shaaban), and what true case illustrates the fourth Sihiri charm with a pigeon (njiwa)?",
+          "correctAnswer": "On 27 Mwerisho (Shaaban), every Pemba medicine-man binds/fasts (kufunga) his spirits for Ramadhan using vue (vumbani & Mrihani pate grass) and mafusho incense, releasing them after Ramadhan with the kiano ('Plate') feast; the pigeon charm is illustrated by Sharif Hasan bin Said Aloi, whose uncle Sharif Said Ahmad bin Ali coveted his 3,000 clove trees (Mikirafu) and cast the spell on a pigeon, driving him in a fugue from Pemba via Zanzibar and Mombasa to Baghdad for 4 months",
+          "options": [
+            "On 27 Mwerisho (Shaaban), every Pemba medicine-man binds/fasts (kufunga) his spirits for Ramadhan using vue (vumbani & Mrihani pate grass) and mafusho incense, releasing them after Ramadhan with the kiano ('Plate') feast; the pigeon charm is illustrated by Sharif Hasan bin Said Aloi, whose uncle Sharif Said Ahmad bin Ali coveted his 3,000 clove trees (Mikirafu) and cast the spell on a pigeon, driving him in a fugue from Pemba via Zanzibar and Mombasa to Baghdad for 4 months",
+            "Spirits are only active during Ramadhan and never bound",
+            "The pigeon charm is used only for finding lost cattle in Kikuyu",
+            "Kiano is the name of the iron anvil in a blacksmith's shop"
+          ],
+          "hint": "See Beech (1918, Study IV, pp. 141–143 & p. 153 fn. 1)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each ritual plant or object in Study IV of Beech (1918, pp. 137–159) with its exact Pemba magical role:",
+          "correctAnswer": "Kunge ('Blasted One', pp. 158–159): Ancient hollow, barkless dead tree deserted by birds, under which a victim's hair, nails, spittle, nongo, and Mjarabati talisman are buried naked to destroy their luck (as Mwalimu Jafari did to Mariamu binti Saidi Ahmad Sharifu)",
+          "pairs": [
+            {
+              "left": "Kiti & Cheo (pp. 137, 139)",
+              "right": "The possessed patient (the spirit's 'chair') & the mganga's heirloom iron/brass/ivory wand"
+            },
+            {
+              "left": "Miundi & Vuo (Mpacha & Mwenyika nguu, pp. 147–149)",
+              "right": "Enchanted human shin-bones that fracture invisibly (hutebanya) at the Witches' Sabbath & the emetic decoction that expels bewitched food"
+            },
+            {
+              "left": "Mviza, Mvuma nyuki (Mnamia kumbweni) & Msasa (Mcheka wanawake, pp. 154–157)",
+              "right": "Evergreen lion-repelling tree for winning a suit/bride, heliotropic plant, and sandpaper-leaf plant used in marriage-separating charms"
+            },
+            {
+              "left": "Kunge ('Blasted One', pp. 158–159)",
+              "right": "Ancient hollow, barkless dead tree deserted by birds, under which a victim's hair, nails, spittle, nongo, and Mjarabati talisman are buried naked to destroy their luck (as Mwalimu Jafari did to Mariamu binti Saidi Ahmad Sharifu)"
             }
           ]
         }

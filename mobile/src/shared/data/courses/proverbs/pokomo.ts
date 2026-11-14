@@ -53,7 +53,7 @@ export const POKOMO_PROVERBS: ProverbItem[] = [
     "indigenous": "Mumaitha kadza ndio odu / Mbuu ni mzuka, endani / mukayowe kumea mani kubfaa / miima, azi na mfungu za / Witu nazo huziona, mudzi / wehu mudzi wa mbinguni / hutamisaa huichamba huyawe / na manya.",
     "literalTranslation": "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills, we have seen the portions of Witu, our village was of the heavens, we are troubled, we did not want to be lost out in the bush.",
     "meaning": "Recorded verbatim in Kipokomo and translated into English in Mikael Samson & R. G. Darroch (1944, p. 385): sung by Buu elders and women with tears in their eyes to lament the drying up of their three former river channels (the Milaoni/Magogoni, the Ngambwa, and the Mbewee) and the loss of their great village Chikovu, which they evacuated at 4:00 a.m. before a Somali attack, marching via Kokane Gobu, Mlango wa Simba, and Lake Tamaso in the Nyangoro forest to Ngao under Chief Buko.",
-    "theme": "perseverance",
+    "theme": "courage",
     "sourceCitation": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued' (1944, p. 385)"
   },
   {

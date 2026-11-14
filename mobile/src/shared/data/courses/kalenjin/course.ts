@@ -3395,7 +3395,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
 ];
 
 // ── Unit 16: Complete Line-by-Line Integration of Joost Zwarts, Andrew Chelimo & Prisca Jerono's "The reflexive in Kalenjin: Its syntactic status and semantic functions" (Language Science Press, 2024, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482) ──
-if (!KALENJIN_CONFIG.sources.includes("zwarts-chelimo-jerono-kalenjin-reflexive-2024")) {
+if (KALENJIN_CONFIG.sources && !KALENJIN_CONFIG.sources.includes("zwarts-chelimo-jerono-kalenjin-reflexive-2024")) {
   KALENJIN_CONFIG.sources.push("zwarts-chelimo-jerono-kalenjin-reflexive-2024");
 }
 

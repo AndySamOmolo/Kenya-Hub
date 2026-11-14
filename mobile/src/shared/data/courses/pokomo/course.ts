@@ -2758,10 +2758,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
 ];
 
 // ── Register samson-darroch-pokomo-history-1944 & Unit 11: Mikael Samson & R. G. Darroch (1944, pp. 370–394 & Map) ──
-if (!POKOMO_CONFIG.sources.includes("samson-darroch-pokomo-history-1944")) {
+if (POKOMO_CONFIG.sources && !POKOMO_CONFIG.sources.includes("samson-darroch-pokomo-history-1944")) {
   POKOMO_CONFIG.sources.push("samson-darroch-pokomo-history-1944");
 }
-if (!POKOMO_CONFIG.sources.includes("werner-bantu-coast-pokomo-1915")) {
+if (POKOMO_CONFIG.sources && !POKOMO_CONFIG.sources.includes("werner-bantu-coast-pokomo-1915")) {
   POKOMO_CONFIG.sources.push("werner-bantu-coast-pokomo-1915");
 }
 

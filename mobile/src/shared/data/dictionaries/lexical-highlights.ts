@@ -790,3 +790,42 @@ export const CUST_1883_VOL1_LEXICAL_HIGHLIGHTS = [
     "page": 42
   }
 ] as const;
+
+export const BEECH_1918_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "sahil → suahil → Swahiliyi ('of the coasts', p. xi) • 500-yr Persian rice-paper Swahili MS (fn. xii-1) • Thelatha Taifa (Miji mitatu): Wa-Kilindini (Jilindan-iyi / Ki-lindi-ni), Wa-Changamwe (Taghamaw-iyi / ku-changanya), Wa-Tangana (Shiraz / ku-tangamana) • Tissa Taifa & Northern Towns: Wa-Jomvu (Jauf), Wa-Kilifi (Kulfah bin Hanthalah), Wa-Mtwapa (Tabia), Wa-Pate ('Ajam), Wa-Siyu, Wa-Gunia (Kangoni & Muüli of Bana), Wa-Malindi (Muludh; 5th town destroyed 1017 A.H. with Gedi/Kilifi/Ngomeni; 6th town 1271 A.H.), Wa-Shimazi, Wa-Faza (Halab), Wa-Pemba (1771 A.D., Ki-Jezirati) • Wa-Shambara, Suria vs. Mzalia, masikini, Wa-ungwana & Ma-Haji (pp. xi–xvi)",
+    "translation": "Three Stages of Swahili Traditions, Mombasa's Three Tribes and Nine Tribes, Pate/Siyu subdivisions, Malindi's six historical towns, Pemba's Ki-Jezirati dialect, and coastal genealogical status terms in Mervyn W. H. Beech (1918, pp. xi–xvi)",
+    "language": "swahili",
+    "page": 11
+  },
+  {
+    "word": "28-Letter Ki-Swahili Ajami Alphabet (Alifu to Ya, p. 5) • Missing Bantu consonants p (ب/پ), ch (ش/چ), v (ف/ڤ), g (غ), ñg, ny & omitted preconsonantal n (ku-andika كُودِكَ, ñgombe غُمْبِ, nyumba يُمْبَ, pp. 3–4) • Hamzah contrasts uli-o-pata vs. uli-yo-pata & baada-e vs. baada-ye (p. 7) • 10 Arabic Epistolary Compliments ('l-Hathwarat to 'l-maatham) & 3 Salutation Templates (pp. 8–10) • Letters 1–16 (pp. 12–43) & 6 Ki-Amu Coconut-Toddy Terms in Letter 16: Kishinda, Shinda (= Ki-Mvita upawa/kasi), Inda (mafuta ya ucho = uto), Ufucho/infucho, Kitunguu & Mai tini (= maji chini, pp. 42–43) • 4-Stream Ki-Jizirat Story 'Asiye hurumiwa ni Mngu usimhurumie' (pp. 44–55)",
+    "translation": "Study I ('Ki-Swahili Writing', pp. 1–55): Arabic-script orthography, 16 administrative/legal/personal letters from Takaungu, Mombasa, Dagoreti, Fort Smith, Naivasha & Ngongo, 6 Lamu toddy/oil terms, and the 4-stream Ki-Jizirat story",
+    "language": "swahili",
+    "page": 5
+  },
+  {
+    "word": "Banawasi (< Abu-nawasi, pp. 58–85) • kichinja-mimba ('last-born child', pp. 61, 87) • mwikanga ('dappled ox', p. 65) • maturuma & vifundo ('boat ribs & seat-knots', p. 71) • fumba ('sleeping-mat bag', p. 76) • ughaibu (betel mixture: timbaku, chokaa, katu, tambuu/mjengo, popoo in a Jaluba box; kuvuata = chewing lime & tobacco only, fn. 81-7) • 8-Point Wind Compass Diagram (p. 69: Kasikazi, Maṯalai Kasikazi, Maṯalai, Maṯalai Kusi, Kusi, Mmande Kusi, Mmande, Mmande Kasikazi) • 7 Uses of Connective -ka- (fn. 59-9) & Note on Past Tense Infixes (p. 85: Mombasa perfect -na- vs. Zanzibar progressive -na-)",
+    "translation": "Study II Story 1 ('Banawasi', pp. 58–85): Pemba (Ki-Jizirat) trickster lexicon, 8-point wind compass diagram, 7 grammatical uses of -ka-, and Note on Past Tense Infixes",
+    "language": "swahili",
+    "page": 58
+  },
+  {
+    "word": "Fathili za Punda ni Mashuzi ('Don't Cast Your Pearls Before Swine', pp. 86–113) • Pathani, ajuza ('old crone'), satu ('python/serpent-jini'), boma la sifuri ('copper fortress') • 8 Daily Time-Divisions (fn. 93-6: alafagiri 5:30 a.m., sabahe 6:30 a.m., adhuhuri/mtanakati/mtikati noon, alasiri 3 p.m., ahurubu shems 5:30 p.m., mangaribi 6 p.m., liisha 7:30 p.m., leli/usiku makungu midnight, usiku wa manane 2 a.m.) • Complete Smithy Lexicon (fn. 95-3: sonara vs. mjua chuma/mfuaji, kiwanda, kweleo, nyundo, kiriba, fuawe, kalibu, ruwao, tindo, kuvukuta, mkando, chomwe, macheche) • 7 Mosque Thieves' Vows (pp. 98–99)",
+    "translation": "Study II Story 2 ('Fathili za Punda ni Mashuzi', pp. 86–113): Islamic time-of-day schedule, complete goldsmith & blacksmith forge terminology, and narrative idioms",
+    "language": "swahili",
+    "page": 86
+  },
+  {
+    "word": "67 Numbered Aphorisms (Mafumbo, pp. 117–126: Nos. 1–57 & 62–67 in Ki-Jizirat, Nos. 58–61 in Ki-Mvita) • 4 Ki-Mvita Enigmas / Tambo (pp. 126–128: 1. Kinyume 'Mbarakita pecheu waju kalikito nasa' = Kitambara cheupe juwa likitoka sana; 2. Ughaibu onomatopoeic riddle; 3. Tui, mbuzi & mzigo wa nyasi river-crossing tambo; 4. 15 doctors & the Jinn guarding the sour lime tree) • 7 Ki-Jizirat Kitendawili (p. 129) & 23 Ki-Mvita Kitendawili (pp. 129–132)",
+    "translation": "Study III ('Enigmas and Aphorisms with Explanations as Given by Wa-Swahili', pp. 115–132): All 67 Mafumbo, 4 Enigmas/Tambo, and 30 Kitendawili",
+    "language": "swahili",
+    "page": 117
+  },
+  {
+    "word": "Ngoma ya Pepo (pp. 134–143): bau/Furukani ('Ewe Ramli we nibainia haki usibaine batili'), 3 yungi, tumba ya mkadi, utanga, kiti ('chair' = patient), cheo wand, Pepo wa Tari, vishuka vs. kijio, hupasua ulimi, mchomozi & chale, 27 Mwerisho (Shaaban) kufunga with vue & mafusho, post-Ramadhan kiano ('Plate') feast • Kikoa kia Wachawi (pp. 144–149): 3,000 naked wachawi at midnight Wed./Sat. in Mava/Uchanjaa, chango (tango) ñgombe victim, miundi shin-bones that hutebanya, pweza, emetic vuo (Mpacha & Mwenyika nguu), and 3 Arabic grimoires (Babu, Mjarabati, Shems-l-maarifa) • Sihiri Charms (pp. 150–159): Mviru, Mvunja huruma (at Kamari/Shemshi), nongo (Malay daki), njiwa pigeon spell (driving Sharif Hasan bin Said Aloi from his 3,000 Mikirafu clove trees in Pemba to Baghdad for 4 months, fn. 153-1), Mviza, Mvuma nyuki (Mnamia kumbweni), Msasa (Mcheka wanawake), Mwinga Jinni & kunge ('Blasted One') dead tree (Mariamu binti Saidi Ahmad Sharifu bewitched by Mwalimu Jafari)",
+    "translation": "Study IV ('Magic in Pemba', pp. 133–159): Parallel English and Ki-Jizirat ethnography of spirit-possession, the Witches' Sabbath, and botanical/talismanic Sihiri charms",
+    "language": "swahili",
+    "page": 133
+  }
+] as const;
