@@ -294,3 +294,16 @@ KALENJIN_PROVERBS.push(
     "sourceCitation": "Joost Zwarts, Andrew Chelimo & Prisca Jerono, 'The reflexive in Kalenjin: Its syntactic status and semantic functions', in ACAL in SoCAL (Berlin: Language Science Press, 2024, Ch. 21, pp. 539–556, Examples 1–24)"
   }
 );
+
+// ── Append Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393) and Meredith Landman (2019, Ch. 25, pp. 481–498) Kipsigis Complementizer Agreement & Quantification to KALENJIN_PROVERBS ──
+KALENJIN_PROVERBS.push({
+  "id": "kalenjin-diercks-rao-landman-2019-kipsigis-complete",
+  "languageId": "kalenjin",
+  "languageName": "Kalenjin (Kipsigis — Diercks & Rao 2019, Ch. 20 & Landman 2019, Ch. 25)",
+  "indigenous": "Subj-CA: ɑ-lɛ (1SG), i-lɛ (2SG), kɔ-lɛ (3), kɛ-lɛ (1PL), o-lɛ (2PL) • Obj-CA: Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono ('I told you [2SG] that[1SG.SUBJ-2SG.OBJ] Kiprono slept') • Overt C-Raising (Ex. 44): Kɑ-ɑ-mwaa-un kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut • Quantification: Ru-e lagok tugul ('All the children are sleeping') vs. Ru-e lakwet *(age) tugul ('Every child is sleeping').",
+  "literalTranslation": "Upward-oriented subject and matrix-object complementizer agreement (-lɛ-ndʒ-ɑn, -lɛ-ndʒ-in, -lɛ-ndʒ-i, -lɛ-ndʒ-ɛtʃ, -lɛ-ndʒ-ɔɔɣ) with verum focus and overt C-raising in Kipsigis (Diercks & Rao 2019, pp. 369–393), alongside plural tugul ('all') vs. singular Skolemized choice-function age tugul ('every') (Landman 2019, pp. 481–498).",
+  "meaning": "Documented in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics (Berlin: Language Science Press, 2019, Ch. 20 pp. 369–393, DOI: 10.5281/zenodo.3367166 & Ch. 25 pp. 481–498, DOI: 10.5281/zenodo.3367177, with Kipsigis consultants Sammy Kiprono Bor and Robert Kipkemoi Langat).",
+  "englishEquivalent": "Every truthful word links speaker, listener, and message.",
+  "theme": "wisdom",
+  "sourceCitation": "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393) & Meredith Landman (2019, Ch. 25, pp. 481–498), in Theory and description in African linguistics"
+});

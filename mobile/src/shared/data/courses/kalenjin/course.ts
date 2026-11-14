@@ -3577,3 +3577,74 @@ KALENJIN_UNITS.push({
     }
   ]
 });
+
+// ── Register Clem, Jenks & Sande (2019: Diercks & Rao Ch. 20 pp. 369–393 & Landman Ch. 25 pp. 481–498) in KALENJIN_CONFIG.sources and append Kipsigis Complementizer Agreement & Quantification Skill ──
+for (const _srcId of [
+  "clem-jenks-sande-theory-description-2019",
+  "diercks-rao-kipsigis-ca-2019",
+  "landman-kipsigis-quantification-2019",
+]) {
+  if (KALENJIN_CONFIG.sources && !KALENJIN_CONFIG.sources.includes(_srcId)) {
+    KALENJIN_CONFIG.sources.push(_srcId);
+  }
+}
+
+KALENJIN_UNITS[KALENJIN_UNITS.length - 1].skills.push({
+  id: "kalenjin-kipsigis-diercks-rao-landman-2019",
+  title: "Kipsigis Subject & Object Complementizer Agreement (Diercks & Rao 2019, Ch. 20, pp. 369–393) & Quantification (Landman 2019, Ch. 25, pp. 481–498)",
+  icon: "Sparkles",
+  description:
+    "Master upward-oriented Subject and Object Complementizer Agreement (Subj-CA & Obj-CA, verum focus, and overt C-raising) in Kipsigis (Diercks & Rao 2019, Ch. 20, pp. 369–393) and universal quantification with tugul vs. age tugul (Landman 2019, Ch. 25, pp. 481–498).",
+  tips: "In Kipsigis (Diercks & Rao 2019, pp. 369–393), the complementizer -lɛ agrees upward with the matrix subject via prefixes (ɑ-lɛ, i-lɛ, kɔ-lɛ, kɛ-lɛ, o-lɛ) AND with the matrix object via applicative suffixes (-lɛ-ndʒ-ɑn, -lɛ-ndʒ-in, -lɛ-ndʒ-i, -lɛ-ndʒ-ɛtʃ, -lɛ-ndʒ-ɔɔɣ), expressing verum focus and licensing overt raising across C.",
+  words: [
+    {
+      target: "Subj-CA: ɑ-lɛ (1SG), i-lɛ (2SG), kɔ-lɛ (3SG/PL), kɛ-lɛ (1PL / impers.), o-lɛ (2PL) • Non-agreeing: kɔlɛ",
+      source: "Upward-oriented Subject Complementizer Agreement prefixes on -lɛ in Kipsigis",
+      pronunciation: "a-lɛ / i-lɛ / kɔ-lɛ / kɛ-lɛ / o-lɛ",
+      hint: "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 371–376, DOI: 10.5281/zenodo.3367166)"
+    },
+    {
+      target: "Obj-CA: -lɛ-ndʒ-ɑn (1SG), -lɛ-ndʒ-in (2SG), -lɛ-ndʒ-i (3SG/PL), -lɛ-ndʒ-ɛtʃ (1PL), -lɛ-ndʒ-ɔɔɣ (2PL) • Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono",
+      source: "Suffixed Object Complementizer Agreement parasitic on Subj-CA: 'I told you [2SG] that[1SG.SUBJ-2SG.OBJ] Kiprono slept'",
+      pronunciation: "a-lɛ-ndʒin / kɔ-lɛ-ndʒi / kɛ-lɛ-ndʒɛtʃ / o-lɛ-ndʒɔɔɣ",
+      hint: "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 376–385, DOI: 10.5281/zenodo.3367166)"
+    },
+    {
+      target: "Overt C-Raising (Ex. 44, p. 388): Kɑ-ɑ-mwaa-un kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut | Quantification (Landman 2019, Ch. 25, pp. 481–498): Ru-e lagok tugul vs. Ru-e lakwet *(age) tugul",
+      source: "Overt raising of embedded subject across agreeing C | Plural tugul ('all') vs. singular Skolemized choice-function age tugul ('every')",
+      pronunciation: "kɔ-lɛ-ndʒin ki-proo-no / ru-e la-gok tu-gul / ru-e la-kwet a-ge tu-gul",
+      hint: "Diercks & Rao (2019, Ch. 20, p. 388) & Meredith Landman (2019, Ch. 25, pp. 481–498, DOI: 10.5281/zenodo.3367177)"
+    }
+  ],
+  sentences: [
+    {
+      target: "Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono • Ru-e lakwet age tugul.",
+      source: "I told you that Kiprono slept (with 1SG Subj-CA + 2SG Obj-CA) • Every child is sleeping (Diercks & Rao 2019, p. 377; Landman 2019, p. 483)."
+    }
+  ],
+  authoredExercises: [
+    {
+      type: "match_pairs",
+      prompt: "Match each Kipsigis syntactic or semantic structure in Clem, Jenks & Sande (2019, Chs. 20 & 25) with its analysis:",
+      correctAnswer: "ɑ-lɛ-ndʒ-in ('that[1SG.SUBJ-2SG.OBJ]', Diercks & Rao 2019, Ch. 20): Upward-oriented Object Complementizer Agreement parasitic on Subject Complementizer Agreement and encoding verum focus",
+      pairs: [
+        {
+          left: "ɑ-lɛ-ndʒ-in ('that[1SG.SUBJ-2SG.OBJ]', Diercks & Rao 2019, Ch. 20)",
+          right: "Upward-oriented Object Complementizer Agreement parasitic on Subject Complementizer Agreement and encoding verum focus"
+        },
+        {
+          left: "Kɑ-ɑ-mwaa-un kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut (Ex. 44, p. 388)",
+          right: "Overt C-raising across the embedded subject Kiprono licensed by agreeing C"
+        },
+        {
+          left: "Ru-e lagok tugul (Landman 2019, Ch. 25, p. 482)",
+          right: "Universal quantifier tugul ('all/whole') combining directly with a plural definite DP"
+        },
+        {
+          left: "Ru-e lakwet *(age) tugul (Landman 2019, Ch. 25, p. 483)",
+          right: "Distributive singular quantification ('every child') requiring the Skolemized choice-function determiner age before tugul"
+        }
+      ]
+    }
+  ]
+});

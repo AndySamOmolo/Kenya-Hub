@@ -490,3 +490,44 @@ KAMBA_GRAMMAR_SECTIONS.push({
     },
   ],
 });
+
+// ── Update kamba-melodic-tone-jones-freyer-2019 with exact author name (Patrick Jones & Jake Freyer), title ("Reconsidering tone and melodies in Kikamba"), page numbers (Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138), and Tables 1–7 / Examples 1–16 ──
+const _kamToneSec = KAMBA_GRAMMAR_SECTIONS.find(
+  (s) => s.id === "kamba-melodic-tone-jones-freyer-2019"
+);
+if (_kamToneSec) {
+  _kamToneSec.title =
+    "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138): 'Reconsidering tone and melodies in Kikamba' — Four Surface Tone Levels (H, L, Super-High, Super-Low), Reduction of 10 Melodies to 5 Primary Stem Melodies, Final H Lowering, Long Retraction & Assertive Boundary Tone Lφ";
+  _kamToneSec.summary =
+    "Patrick Jones & Jake Freyer (in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138, Tables 1–7, Examples 1–16, Fig. 1) reanalyze Roberts-Kohno's (2000, 2014) 10 Kikamba verbal tone melodies into 5 primary stem melodies ({HV2}, {HFV}, {LFV}, {HV2+HFV}, {HV2+LFV}) interacting with Final H Lowering, Long Retraction in -eet-ɛ, Assertive phrasal boundary tone Lφ, and suffixal floating tones {LSuf} & {HSuf}.";
+  _kamToneSec.content = [
+    "From Patrick Jones & Jake Freyer (*\"Reconsidering tone and melodies in Kikamba\"*, in Emily Clem, Peter Jenks & Hannah Sande, eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: `10.5281/zenodo.3367138`, Tables 1–7, Examples 1–16, Fig. 1):",
+    "1. **Four Surface Tone Levels & Assertive Phrasal Boundary Tone (`Lφ`, pp. 177–182, Tables 1–2, Ex. 1–4)**:",
+    "   - Kĩkamba contrasts four surface tone heights: **High (H, `á`)**, **Low (L, `à`)**, **Super-High (SH, `a̋`)**, and **Super-Low / Extra-Low (SL, `ȁ`)**.",
+    "   - Phrase-final **Super-Low (`ȁ`)** is derived when the assertive phrasal boundary tone **`Lφ`** docks onto a phrase-final Low tone (`ko-konȁ` 'to hit' in isolation vs. `ko-konà ma-i.ò` 'to hit bananas' when non-final, Ex. 1).",
+    "   - Phrase-final **Super-High–Low falling contour (`â`)** vs. medial **Super-High (`a̋`)** arises when a floating suffixal Low tone `{LSuf}` or `Lφ` interacts with a final High tone (`to-í-kon-ááng-á-â` 'we do not usually hit' vs. `to-í-kon-ááng-á-a̋ ma-i.ò` 'we do not usually hit bananas', Ex. 2).",
+    "2. **Reduction of Roberts-Kohno's (2000, 2014) 10 Melodies to 5 Primary Verbal Stem Melodies (pp. 182–196, Tables 3–7, Ex. 5–16, Fig. 1)**:",
+    "   - Rather than positing 10 arbitrary tense/aspect melodies, Jones & Freyer show that Kĩkamba verb stems use **5 compositional primary melodies** combining two locus positions—the **second stem mora (`V2`)** and the **final vowel (`FV`)**:",
+    "     1. **`{LFV}`**: Low on the final vowel (e.g., Infinitive `ko-konȁ` [L-stem] vs. `ko-tálȁ` [H-stem]).",
+    "     2. **`{HFV}`**: High on the final vowel.",
+    "     3. **`{HV2}`**: High on the second stem mora.",
+    "     4. **`{HV2 + HFV}`**: High on the second stem mora and High on the final vowel (with plateauing across intervening moras).",
+    "     5. **`{HV2 + LFV}`**: High on the second stem mora and Low on the final vowel.",
+    "   - **Three Regular Phonological/Morphophonological Processes Account for All Remaining Alternations**:",
+    "     - **(a) Final H Lowering (pp. 186–190)**: Lowers `{HFV}` to Low in **object-focus / non-assertive contexts** and with **3SG Class 1 subjects (`a-` / `n-a-`)**.",
+    "     - **(b) Long Retraction in Anterior `-eet-ɛ` (pp. 190–192)**: Retracts `{HFV}` from `-ɛ` onto the long penultimate suffix vowel `-eet-` (`-éét-ɛ̀`).",
+    "     - **(c) Floating Suffixal Tones `{LSuf}` & `{HSuf}` (pp. 192–196)**: Dock at the right edge of the verb word to trigger Super-High raising (`a̋`) or contour formation (`â`)."
+  ].join("\n");
+  _kamToneSec.examples = [
+    {
+      kamba: "ko-konȁ (phrase-final SL) vs. ko-konà ma-i.ò (non-final L) • to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò",
+      english: "to hit vs. to hit bananas • we do not usually hit vs. we do not usually hit bananas",
+      explanation: "Assertive phrasal boundary tone Lφ and floating suffixal tone {LSuf} in Kĩkamba (Patrick Jones & Jake Freyer 2019, Ch. 10, pp. 179–181, Ex. 1–2)"
+    },
+    {
+      kamba: "5 Primary Stem Melodies: {LFV}, {HFV}, {HV2}, {HV2 + HFV}, {HV2 + LFV} + Final H Lowering (3SG & object focus) + Long Retraction (-éét-ɛ̀) + {LSuf}/{HSuf}",
+      english: "Compositional reanalysis of Roberts-Kohno's 10 Kikamba verb melodies into 5 stem melodies",
+      explanation: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 182–196, Tables 3–7 & Fig. 1)"
+    }
+  ];
+}

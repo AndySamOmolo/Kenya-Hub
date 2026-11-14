@@ -5529,3 +5529,63 @@ KAMBA_UNITS.push({
     },
   ],
 });
+
+// ── Register Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138) in KAMBA_CONFIG.sources and append Kĩkamba Tone & Melodies Skill ──
+for (const _srcId of [
+  "clem-jenks-sande-theory-description-2019",
+  "jones-freyer-kikamba-tone-2019",
+  "payne-pacchiarotti-bosire-diversity-2016",
+]) {
+  if (KAMBA_CONFIG.sources && !KAMBA_CONFIG.sources.includes(_srcId)) {
+    KAMBA_CONFIG.sources.push(_srcId);
+  }
+}
+
+KAMBA_UNITS[KAMBA_UNITS.length - 1].skills.push({
+  id: "kamba-jones-freyer-2019-tone-melodies",
+  title: "Kĩkamba Four-Level Surface Tone & Five Stem Melodies (Patrick Jones & Jake Freyer 2019, Ch. 10, pp. 177–198)",
+  icon: "Sparkles",
+  description:
+    "Master Patrick Jones & Jake Freyer's (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138) reanalysis of Kĩkamba's 4 surface tone heights (H, L, Super-High, Super-Low) and 5 primary verbal stem melodies.",
+  tips: "In Jones & Freyer (2019, pp. 177–198, Tables 1–7, Ex. 1–16), Roberts-Kohno's 10 Kikamba verb melodies reduce to 5 compositional stem melodies ({LFV}, {HFV}, {HV2}, {HV2+HFV}, {HV2+LFV}) interacting with Final H Lowering (3SG & object focus), Long Retraction (-éét-ɛ̀), Assertive phrasal boundary tone Lφ, and floating suffixal tones {LSuf} & {HSuf}.",
+  words: [
+    {
+      target: "ko-konȁ (phrase-final Super-Low) vs. ko-konà ma-i.ò (non-final Low) • ko-tálȁ (H-stem infinitive)",
+      source: "to hit (with Assertive phrasal boundary tone Lφ lowering final Low to Super-Low ȁ) vs. to hit bananas • to count",
+      pronunciation: "ko-ko-nȁ / ko-ko-nà ma-i-ò / ko-tá-lȁ",
+      hint: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 178–180, Tables 1–2 & Ex. 1)"
+    },
+    {
+      target: "to-í-kon-ááng-á-â (phrase-final SH-L contour) vs. to-í-kon-ááng-á-a̋ ma-i.ò (medial Super-High a̋)",
+      source: "we do not usually hit vs. we do not usually hit bananas (floating suffixal tone + Lφ)",
+      pronunciation: "to-í-ko-náá-ngá-â / to-í-ko-náá-ngá-a̋ ma-i-ò",
+      hint: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 180–181, Ex. 2)"
+    },
+    {
+      target: "5 Primary Stem Melodies (Tables 3–7, Fig. 1): {LFV}, {HFV}, {HV2}, {HV2 + HFV}, {HV2 + LFV} + Final H Lowering + Long Retraction (-éét-ɛ̀)",
+      source: "Five compositional stem melodies replacing the 10-melody stipulation in Kikamba verbal tonology",
+      pronunciation: "LFV / HFV / HV2 / e-e-tɛ",
+      hint: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 182–196, Tables 3–7 & Fig. 1)"
+    }
+  ],
+  sentences: [
+    {
+      target: "ko-konȁ vs. ko-konà ma-i.ò • to-í-kon-ááng-á-a̋ ma-i.ò.",
+      source: "to hit (Super-Low in isolation) vs. to hit bananas (Low non-finally) • we do not usually hit bananas (Super-High before object) (Jones & Freyer 2019, pp. 179–181, Ex. 1–2)."
+    }
+  ],
+  authoredExercises: [
+    {
+      type: "multiple_choice",
+      prompt: "In Patrick Jones & Jake Freyer's 'Reconsidering tone and melodies in Kikamba' (2019, Ch. 10, pp. 177–198), how are Roberts-Kohno's (2000, 2014) 10 Kikamba verbal tone melodies simplified?",
+      correctAnswer: "They are reduced to 5 primary stem melodies ({LFV}, {HFV}, {HV2}, {HV2+HFV}, {HV2+LFV}) combined with Final H Lowering (in 3SG and object focus), Long Retraction in anterior -eet-ɛ, Assertive boundary tone Lφ, and floating suffixal tones {LSuf}/{HSuf}",
+      options: [
+        "They are reduced to 5 primary stem melodies ({LFV}, {HFV}, {HV2}, {HV2+HFV}, {HV2+LFV}) combined with Final H Lowering (in 3SG and object focus), Long Retraction in anterior -eet-ɛ, Assertive boundary tone Lφ, and floating suffixal tones {LSuf}/{HSuf}",
+        "Kikamba is shown to have no lexical or grammatical tone",
+        "All Kikamba verbs are assigned a single invariant High tone",
+        "Tone only occurs on borrowed English words"
+      ],
+      hint: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138)"
+    }
+  ]
+});

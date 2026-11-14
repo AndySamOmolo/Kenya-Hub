@@ -3534,3 +3534,91 @@ SOMALI_UNITS.push({
     }
   ]
 });
+
+// ── Register Kirk (1903) & Clem, Jenks & Sande (2019: Green & Jones Ch. 7, Kimper et al. Ch. 11, Nurse Ch. 33) in SOMALI_CONFIG.sources and append Unit 7 ──
+for (const _srcId of [
+  "kirk-somali-notes-1903",
+  "clem-jenks-sande-theory-description-2019",
+  "kimper-somali-harmony-2019",
+  "green-jones-marka-ashraaf-2019",
+  "nurse-northern-swahili-southern-somali-2019",
+]) {
+  if (SOMALI_CONFIG.sources && !SOMALI_CONFIG.sources.includes(_srcId)) {
+    SOMALI_CONFIG.sources.push(_srcId);
+  }
+}
+
+SOMALI_UNITS.push({
+  id: "somali-unit-kirk-1903-clem-2019-harmony-ashraaf",
+  title: "Unit 7: Kirk (1903) Burao Grammar & Clem et al. (2019) ATR Harmony, Af-Ashraaf & Swahili–Somali Contact",
+  description:
+    "Master Lt. J. W. C. Kirk's (1903, pp. i–xii, 1–83) Burao grammatical paradigms and stories alongside Wendell Kimper et al. (2019, Ch. 11, pp. 199–212) on acoustic ATR vowel harmony, Christopher R. Green & Evan Jones (2019, Ch. 7, pp. 119–134) on Marka (Af-Ashraaf) morphology, and Derek Nurse (2019, Ch. 33, pp. 649–665) on Northern Swahili–southern Somali contact.",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "somali-kirk-1903-articles-pronouns-stories",
+      title: "Kirk (1903) Three Article Vowels (-i, -a, -u), Clusivity & Two Stories (pp. i–xii, 1–83)",
+      icon: "BookOpen",
+      description:
+        "Learn Kirk's (1903) three definite article vowel grades (-ki/-ti, -ka/-ta, -ku/-tu), 4 demonstratives, inclusive innaga vs. exclusive annaga, and Burao oral stories.",
+      tips: "In Kirk (1903, pp. 5–12), -ki/-ti marks remote or previously mentioned referents, -ka/-ta marks present/general referents, and -ku/-tu marks the grammatical subject before the focus marker wa (nin-ku wa yimi 'the man came').",
+      words: [
+        {
+          target: "nin-ki / naag-ti (remote/past) • nin-ka / naag-ta (present/proximate) • nin-ku / naag-tu (subject before wa) • il + -ta → isha ('the eye'), ul + -ta → usha ('the stick')",
+          source: "Three vowel grades of the Somali definite article and feminine l + t → sh fusion",
+          pronunciation: "nin-ki / nin-ka / nin-ku / i-sha / u-sha",
+          hint: "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 5–8)"
+        },
+        {
+          target: "4 Demonstratives: kan / tan ('this') • kèr / tèr ('that near') • kas / tas ('that yonder') • kò / tò ('that far away') | Inclusive innaga / inna vs. Exclusive annaga / anna",
+          source: "Four distance grades of Somali demonstratives and inclusive vs. exclusive 1PL pronouns",
+          pronunciation: "kan tan / ker ter / kas tas / ko to / in-na-ga / an-na-ga",
+          hint: "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 9–12)"
+        },
+        {
+          target: "ATR Vowel Harmony Minimal Pairs (Kimper et al. 2019, Ch. 11, pp. 199–212): dhis, hel, qod, tus, kab, hees, laab, diiday, duushay",
+          source: "Series A (-ATR, higher F1) vs. Series B (+ATR, lower F1) morphological and lexical minimal pairs",
+          pronunciation: "dhis / hel / qod / tus / kab / hees / laab / dii-day / duu-shay",
+          hint: "Wendell Kimper, Wm. G. Bennett, Christopher R. Green & Kristine Yu (2019, Ch. 11, pp. 199–212, DOI: 10.5281/zenodo.3367140)"
+        },
+        {
+          target: "Marka / Af-Ashraaf Morphology (Green & Jones 2019, Ch. 7, pp. 119–134) & Northern Swahili–Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665)",
+          source: "Southern Somali Af-Ashraaf nominal/verbal paradigms and historical contact with Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu)",
+          pronunciation: "af-ash-raaf / mwii-ni / ba-ju-ni",
+          hint: "Christopher R. Green & Evan Jones (2019, Ch. 7, pp. 119–134) & Derek Nurse (2019, Ch. 33, pp. 649–665)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Nin-ku wa yimi • Innaga iyo idinka wa inna wada tagayna.",
+          source: "The man came (subject article -ku + focus wa) • We (inclusive) and you are going together (Lt. J. W. C. Kirk 1903, pp. 6–12)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "match_pairs",
+          prompt: "Match each Somali grammatical or acoustic finding from Kirk (1903) and Clem, Jenks & Sande (2019) with its description:",
+          correctAnswer: "Kimper, Bennett, Green & Yu (2019, Ch. 11, pp. 199–212): [+ATR] (Series B) vowels exhibit systematically lower F1 than [-ATR] (Series A) vowels across minimal pairs like dhis, hel, qod, tus, kab, hees, laab, diiday, duushay",
+          pairs: [
+            {
+              left: "Kimper, Bennett, Green & Yu (2019, Ch. 11, pp. 199–212)",
+              right: "[+ATR] (Series B) vowels exhibit systematically lower F1 than [-ATR] (Series A) vowels across minimal pairs like dhis, hel, qod, tus, kab, hees, laab, diiday, duushay"
+            },
+            {
+              left: "Green & Jones (2019, Ch. 7, pp. 119–134)",
+              right: "Morphological description of Marka (Af-Ashraaf) plural formation, demonstratives, pronouns, and prefix/suffix verb classes"
+            },
+            {
+              left: "Nurse (2019, Ch. 33, pp. 649–665)",
+              right: "Historical contact between Northern Swahili (Mwiini, Bajuni, Siu, Pate, Amu) and southern Somali (Tunni, Dabarre, Maay, Ashraaf, Garre, Boni)"
+            },
+            {
+              left: "Kirk (1903, pp. 5–12, 80–83)",
+              right: "Three article vowels (-ki/-ti, -ka/-ta, -ku/-tu), inclusive innaga vs. exclusive annaga, and Burao stories 'Two Fools' & 'Two Starving Orphans'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

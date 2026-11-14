@@ -290,3 +290,30 @@ export const KALENJIN_GRAMMAR_SECTIONS: KalenjinGrammarSection[] = [
     ]
   }
 ];
+
+// ── Update kalenjin-zwarts-2024-reflexive-kipsigis-2019 with exact page numbers and paradigms for Diercks & Rao (2019, Ch. 20, pp. 369–393, DOI: 10.5281/zenodo.3367166) and Landman (2019, Ch. 25, pp. 481–498, DOI: 10.5281/zenodo.3367177) ──
+const _kalKipsigisSec = KALENJIN_GRAMMAR_SECTIONS.find(
+  (s) => s.id === "kalenjin-zwarts-2024-reflexive-kipsigis-2019"
+);
+if (_kalKipsigisSec) {
+  _kalKipsigisSec.title =
+    "The Reflexive in Kalenjin *kee(y)* (Zwarts, Chelimo & Jerono 2024, Ch. 21, pp. 539–556), Kipsigis Upward-Oriented Subject & Object Complementizer Agreement (Diercks & Rao 2019, Ch. 20, pp. 369–393) & Kipsigis Nominal Quantification (Landman 2019, Ch. 25, pp. 481–498)";
+  _kalKipsigisSec.summary =
+    "Synthesizes Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, Ch. 21, pp. 539–556) on the enclitic reflexive/middle/intensifier kee(y), Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393, DOI: 10.5281/zenodo.3367166) on Kipsigis upward-oriented subject and object complementizer agreement (Subj-CA & Obj-CA), and Meredith Landman (2019, Ch. 25, pp. 481–498, DOI: 10.5281/zenodo.3367177) on Kipsigis universal quantification (tugul vs. age tugul).";
+  _kalKipsigisSec.content =
+    _kalKipsigisSec.content
+      .replace("pp. 435–450", "pp. 481–498, DOI: `10.5281/zenodo.3367177`, consultant Robert Kipkemoi Langat")
+      .replace("pp. 349–366", "pp. 369–393, DOI: `10.5281/zenodo.3367166`, consultants Sammy Kiprono Bor & Robert Langat") +
+    "\n3. **Upward-Oriented Complementizer Agreement with Subjects and Objects in Kipsigis (Michael Diercks & Meghana Rao 2019, Ch. 20, pp. 369–393, DOI: `10.5281/zenodo.3367166`, Consultants Sammy Kiprono Bor & Robert Langat)**:\n" +
+    "   - **Prefixed Subject Complementizer Agreement (Subj-CA, pp. 371–376)**: The Kipsigis declarative complementizer `-lɛ` agrees upward with the **matrix subject** via subject prefixes: 1SG **`ɑ-lɛ`**, 2SG **`i-lɛ`**, 3SG/PL **`kɔ-lɛ`**, 1PL **`kɛ-lɛ`**, 2PL **`o-lɛ`** (plus non-agreeing **`kɔlɛ`** and impersonal passive **`kɛ-lɛ`**), e.g., `Kɑ-ɑ-mwaa ɑ-lɛ kɔ-rʊ Kiproono` ('I said that Kiprono slept').\n" +
+    "   - **Novel Suffixed Object Complementizer Agreement (Obj-CA, pp. 376–388)**: Kipsigis also allows `-lɛ` to agree upward with the **matrix indirect/applied object** via the applicative `-ndʒi` + object suffixes: 1SG **`-lɛ-ndʒ-ɑn`**, 2SG **`-lɛ-ndʒ-in`**, 3SG/PL **`-lɛ-ndʒ-i`**, 1PL **`-lɛ-ndʒ-ɛtʃ`**, 2PL **`-lɛ-ndʒ-ɔɔɣ`**, e.g., `Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono` ('I told you [2SG] that[1SG.SUBJ-2SG.OBJ] Kiprono slept').\n" +
+    "   - **Parasitic Licensing, Verum Focus & Overt C-Raising (pp. 379–391)**: Obj-CA is **strictly parasitic on Subj-CA** (cannot occur on non-agreeing `kɔlɛ`), expresses **verum / certainty focus** on the embedded proposition, and licenses **overt raising of the embedded subject across the agreeing complementizer** into the matrix clause: `Kɑ-ɑ-mwaa-un kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut` (Ex. 44, p. 388).";
+  _kalKipsigisSec.examples.push({
+    kalenjin:
+      "Subj-CA: ɑ-lɛ (1SG), i-lɛ (2SG), kɔ-lɛ (3), kɛ-lɛ (1PL), o-lɛ (2PL) • Obj-CA: ɑ-lɛ-ndʒ-in ('that[1SG.SUBJ-2SG.OBJ]') • (44) kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut",
+    english:
+      "Upward-oriented subject and object complementizer agreement and overt C-raising in Kipsigis",
+    explanation:
+      "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393, DOI: 10.5281/zenodo.3367166, consultants Sammy Kiprono Bor & Robert Langat)",
+  });
+}

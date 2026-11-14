@@ -134,3 +134,16 @@ export const SOMALI_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Morgan Nilsson, 'Somali gender polarity revisited', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 23, pp. 451–466, DOI: 10.17169/langsci.b121.494)"
   }
 ];
+
+// ── Append Lt. J. W. C. Kirk (1903, pp. 80–83: Two Fools & Two Starving Orphans) & Clem, Jenks & Sande (2019: Green & Jones Ch. 7, Kimper et al. Ch. 11 & Nurse Ch. 33) to SOMALI_PROVERBS ──
+SOMALI_PROVERBS.push({
+  "id": "somali-kirk-1903-two-fools-and-orphans-clem-2019",
+  "languageId": "somali",
+  "languageName": "Somali (Af-Soomaali & Af-Ashraaf — Kirk 1903 & Clem et al. 2019)",
+  "indigenous": "Kirk (1903, pp. 80–83): Labadi Dabaal ('The Two Fools') & Labadi Agoon ('The Two Starving Orphans') • Inclusive innaga vs. Exclusive annaga • Article vowels -ki/-ti (past/remote), -ka/-ta (present), -ku/-tu (subject) • ATR Harmony Minimal Pairs (Kimper et al. 2019, Ch. 11, pp. 199–212): dhis, hel, qod, tus, kab, hees, laab, diiday, duushay • Marka / Af-Ashraaf Morphology (Green & Jones 2019, Ch. 7, pp. 119–134) & Northern Swahili–Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665).",
+  "literalTranslation": "The Two Fools (who argued over imaginary herds of camels until they fought) and The Two Starving Orphans (recorded in Burao by Lt. J. W. C. Kirk, 1903, pp. 80–83) • Acoustic correlates of Somali [+ATR]/[-ATR] vowel harmony (Kimper, Bennett, Green & Yu 2019), Marka (Af-Ashraaf) coastal morphology (Green & Jones 2019), and Northern Swahili–southern Somali historical contact (Nurse 2019).",
+  "meaning": "Synthesizes Lt. J. W. C. Kirk's Notes on the Somali Language (London: Henry Frowde / OUP, 1903, pp. i–xii, 1–83, recorded from Drawish, Gibaneh, Dualeh, and Abdi) with Chapters 7, 11, and 33 of Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Berlin: Language Science Press, 2019, DOI: 10.5281/zenodo.3365789).",
+  "englishEquivalent": "Do not quarrel over uncounted camels before the herd is yours.",
+  "theme": "wisdom",
+  "sourceCitation": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. i–xii, 1–83) & Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Language Science Press, 2019, Chs. 7, 11 & 33)"
+});

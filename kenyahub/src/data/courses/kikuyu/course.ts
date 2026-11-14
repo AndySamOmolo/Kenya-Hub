@@ -4204,7 +4204,7 @@ KIKUYU_UNITS[KIKUYU_UNITS.length - 1].skills.push({
   ]
 });
 
-if (!KIKUYU_CONFIG.sources.includes("mcgregor-kikuyu-vocabulary-1904")) {
+if (KIKUYU_CONFIG.sources && !KIKUYU_CONFIG.sources.includes("mcgregor-kikuyu-vocabulary-1904")) {
   KIKUYU_CONFIG.sources.push("mcgregor-kikuyu-vocabulary-1904");
 }
 

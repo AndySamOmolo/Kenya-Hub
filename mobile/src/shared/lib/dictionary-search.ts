@@ -2,7 +2,7 @@ import type {
   DictCategory,
   DictEntry,
   Dictionary,
-} from "@/data/dictionaries/metadata";
+} from "../data/dictionaries/metadata";
 
 /**
  * Standard language family color palette used across web and mobile views.
@@ -2140,3 +2140,82 @@ JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["borana"].push(
     },
   }
 );
+
+// ── Complete Line-by-Line Entries from Prof. Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 45–57), Arthur M. Champion (1912, JRAI Vol. 42, pp. 68–90 + Plate X), Lt. J. W. C. Kirk (1903, pp. i–xii, 1–83), Rev. J. B. Purvis (1909, Chs. XV–XVI, pp. 317–351), and Emily Clem, Peter Jenks & Hannah Sande, eds. (2019, Chs. 7, 10, 11, 20, 23, 25, 29, 32 & 33) ──
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["meru"] ??= []).push(
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Prof. Kithaka wa Mberia (2004, Occasional Papers in Language and Linguistics Vol. 2, pp. 45–57, Examples 1–18): Complete Kĩtharaka Loanword Phonology, Productive Dahl's Law (/k/ → /ɣ/ in moɣatɛ & karaɣita), Consonant Propping of /d/ (ndawa, nderesa) & Noun-Class Prefix Reanalysis (duka → ruka → nduka)",
+      translation: "7 Vowels (/i, e, ɛ, a, ɔ, o, u/, short & long) & 14 Consonants (/β, m, ð, t, n, r, s, ɲ, c, k, ɣ, ŋ, h, w, j/) • Ex. (1) /p, b, f, v/ → /β/: moβira (< mpira 'ball'), βaði (< pasi 'iron'), moβukɔ (< mfukɔ 'bag'), βurana (< fulana 'vest'), βaisikiri (< baiskɛli 'bicycle'), βetɛrɔri (< petrəl 'petrol'), βesti (< vest) • Ex. (2) [b] after N-: mbuŋgɛ (< buŋgɛ 'parliament'), mbureki (< breɪk 'brake'), mbɔksi (< bɔks 'box') • Ex. (3) Exceptions: mpɛŋgo (< piŋgu 'handcuffs'), faɛri (< faɪl 'file'), morao (< plao 'plough'), morengeti (< blæŋkɪt 'blanket') • Ex. (4) /l/ → /r/: ŋkengɛrɛ, ŋkare, βiriŋgi, suruare, karamu, ɔiri • Ex. (5)–(6) /s, z/ → /s/ (mosoŋko, mbɛsa, mataŋgasɔ, sito:, situ:) or /ð/ (ðimo, mɛða, ða:, monaði, mosɛðɔ) • Ex. (7) /tʃ, ʃ/ → /s/ & /dʒ/ → [ɲɟ]: so:βa, saβusiβo, sati, ɲɟɛrikani (word-final exception: tɔtʃi) • Ex. (8)–(11) Productive Dahl's Law (/k/ → /ɣ/ before voiceless obstruent): moɣatɛ (< mkatɛ 'bread') & karaɣita (< træktə 'tractor') vs. karamu, moβukɔ, mbereka, βikiβiki, kurutu, motuka:, sukuru, kamete; /g/ → /k/ (ŋkare, mokɔndɔrɔ, ŋkunea) or [ŋg] (ŋkɛŋgɛrɛ, mbuŋgɛ, mpɛŋgo, keβaŋga) • Ex. (12)–(13) Vowel adaptation: βatere (< padri), eβaβae (< papai), suβana (< spænə), sukurundɛrɛβa (< skru:draɪvə), asiβirini (< æsprɪn), eβuku (< bʊk) • Ex. (14)–(18) n-Propping of /d/ (ndawa, nderesa, ndasita, ndiŋgiri), Class 3/9/10 prefixation (βamba, ŋgɔrβa), epenthesis (siβirini, nsɛra), and prefix reanalysis (duka → ruka [Cl. 11] → pl. nduka [Cl. 10], sanduku → esanduku [Cl. 5], dʒerikæn → ŋjɛrikani → jɛrikani, sʌmənz → samansi → nsamansi)",
+      pronunciation: "mo-βi-ra / βa-ði / mo-ɣa-tɛ / ka-ra-ɣi-ta / nda-wa / nde-re-sa / ru-ka ndu-ka",
+      context: "Prof. Kithaka wa Mberia, 'The Phonology of Borrowed Words in Kitharaka', Occasional Papers in Language and Linguistics Vol. 2 (2004, pp. 45–57, Examples 1–18)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 68–90 + Plate X): Complete Atharaka Ethnography — 5 Male & 6 Female Age-Grades, Mutialu Smithy (kianda), 4 Dances, Thela Luku Death Rite, Blood-Money, Chiama & All 14 Clans",
+      translation: "5,000–6,000 Atharaka in the Tana (Kilaluma) Valley from Mkong'go R. to Ngoro Rock (1,500 ft); informants Mzee Kamundi, Mundu wa Mirigi, Mundu wa Kaibero, Tuto, Kivuvi & Kiema's elders • 5 Male Grades: Karna → Kaegi → Ntheka/Ngoromo (circumcision-year sets Mbabu & Mkilamana) → Ntheka Nguru → Kisungi / Mundu Mukuru • 6 Female Grades: Karna → Kali → Idika (pl. Matika) → Mwiki → Mukaa/Mubiki → Mwekuru • Architecture & Dress: irigi, ithithu, mbuyu, kinga, munyakai, ngoromo; ngigi, nguo, kathari, ngotonggi, ndugira, mituitu, marengo, ndorira, ikuli, matulutia, ndingi, ndiro • Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle), luiyo (clay tuyere), njorma (hammer), ithoka + muthembesu = kithoka (axe), miwa (tongs), mgwadi (poker), kiriba (water trough) • Crops, Anatomy & Beehives: muweli, mbazi, matama, kundi, ngenna, mobia, mau, iiga & intheo, nzeli, usuu, uki, ikura; wengo (spleen), muliro (neck), kwoko (foreleg), kuuru (hindleg), lutu (ribs); mwatu (pl. matu) in Mekoma palm • 4 Dances: Kisboso (with lukongoro & keusia), Nzungo, Mungeri, Mboboi • Marriage (30 goats + kilembi/kithembi of honey + axe + iron necklace), 5th-night death rite Thela Luku (= Kamba Kuana), Blood-money (40–60 goats + Movinga + choro + axe + 1 sheep; eye: 7 or 14 goats to mother's clan if left, father's if right), Chiama (Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo) • 14 Clans (pp. 88–89): Utonga, Kandi, Mululu, Nyaga, Mbula (kueni), Nginna, Kamurigi, Ndue, Kanzero, Kamararo, Mutwa, Kamogwe, Kanthakami, Kathoga • Plate X: Kathai (stool), kiko (snuff bottle), Kibumbi (gourd)",
+      pronunciation: "ka-rna / ka-e-gi / nthe-ka ngo-ro-mo / ki-su-ngi / i-di-ka ma-ti-ka / ki-a-nda / the-la lu-ku / chi-a-ma",
+      context: "Arthur M. Champion, 'The Atharaka', Journal of the Royal Anthropological Institute Vol. 42 (1912, pp. 68–90 + Plate X)",
+      audioFile: null,
+    },
+  }
+);
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kamba"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138): 'Reconsidering tone and melodies in Kikamba' — 4 Surface Tones (H, L, Super-High, Super-Low) & 5 Primary Stem Melodies",
+    translation: "4 Surface Pitch Levels: High (á), Low (à), Super-High (a̋), Super-Low (ȁ) • Assertive Phrasal Boundary Tone Lφ (Ex. 1–2): ko-konȁ ('to hit', phrase-final SL) vs. ko-konà ma-i.ò ('to hit bananas', non-final L); to-í-kon-ááng-á-â (phrase-final SH-L contour) vs. to-í-kon-ááng-á-a̋ ma-i.ò (medial SH) • 5 Compositional Verbal Stem Melodies (Tables 3–7, Fig. 1, reducing Roberts-Kohno's 10 melodies): (1) {LFV}, (2) {HFV}, (3) {HV2}, (4) {HV2 + HFV}, (5) {HV2 + LFV} + Final H Lowering (in 3SG and object focus) + Long Retraction in anterior -eet-ɛ (-éét-ɛ̀) + floating suffixal tones {LSuf} & {HSuf}",
+    pronunciation: "ko-ko-nȁ / ko-ko-nà ma-i-ò / to-í-ko-náá-ngá-a̋",
+    context: "Patrick Jones & Jake Freyer, 'Reconsidering tone and melodies in Kikamba', in Theory and description in African linguistics (Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kalenjin"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393, DOI: 10.5281/zenodo.3367166) & Meredith Landman (2019, Ch. 25, pp. 481–498, DOI: 10.5281/zenodo.3367177): Kipsigis Upward-Oriented Subject/Object Complementizer Agreement & Nominal Quantification",
+    translation: "Diercks & Rao (2019, Ch. 20, pp. 369–393, consultants Sammy Kiprono Bor & Robert Langat): Prefixed Subj-CA on declarative complementizer -lɛ (1SG ɑ-lɛ, 2SG i-lɛ, 3 kɔ-lɛ, 1PL/impers. kɛ-lɛ, 2PL o-lɛ; non-agreeing kɔlɛ) & suffixed Obj-CA via applicative -ndʒi (-lɛ-ndʒ-ɑn, -lɛ-ndʒ-in, -lɛ-ndʒ-i, -lɛ-ndʒ-ɛtʃ, -lɛ-ndʒ-ɔɔɣ, e.g. Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono 'I told you [2SG] that[1SG.SUBJ-2SG.OBJ] Kiprono slept'), parasitic on Subj-CA, expressing verum focus, and licensing overt C-raising across the embedded subject (Ex. 44: Kɑ-ɑ-mwaa-un kɔ-lɛ-ndʒin Kiproono ko-Ø-ɾuuja tuɣa amut) • Landman (2019, Ch. 25, pp. 481–498, consultant Robert Kipkemoi Langat): Plural universal quantifier tugul ('all/whole': Ru-e lagok tugul 'All the children are sleeping') vs. singular distributive Skolemized choice-function age tugul ('every': Ru-e lakwet *(age) tugul 'Every child is sleeping')",
+    pronunciation: "a-lɛ-ndʒin / kɔ-lɛ-ndʒin ki-proo-no / ru-e la-gok tu-gul / ru-e la-kwet a-ge tu-gul",
+    context: "Michael Diercks & Meghana Rao (Ch. 20, pp. 369–393) & Meredith Landman (Ch. 25, pp. 481–498), in Theory and description in African linguistics (Language Science Press, 2019)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["luhya"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) Lubukusu IAV Focus & Rev. J. B. Purvis (1909, Chs. XV–XVI, pp. 317–351) Lumasaba Grammar, July 20, 1907 Native Letter & 3 Bagisu Fables",
+    translation: "Selvanathan (2019, Ch. 32, pp. 623–645, Lubukusu consultant Justine Sikuku): Focused nominal DPs must move to Spec,FP in the Immediate-After-Verb (IAV) position for Case licensing (Wekesa a-a-ra embeba kalaha; *Wekesa a-a-ra kalaha embeba), whereas focused non-nominal manner adjuncts (kalaha 'slowly') only appear immediately after the verb when the object DP is dislocated with an object marker (Wekesa a-ki-ra kalaha ekikombe) • Purvis (1909, Ch. XV pp. 317–332 & Ch. XVI pp. 333–351): 6 Lumasaba double-prefix classes vs. Luganda (pp. 320–323), first primers Bimanyisa Kusoma & Katabo Kanyoherwako (p. 324), verbatim July 20, 1907 letter Ibaruwa ya Nayu (pp. 324–325), Lord's Prayer (p. 326), 3 hymns (pp. 326–329), 17 ways of asking 'Why?' (pp. 330–331), daily greetings (pp. 331–332), and 3 Bagisu fables (pp. 333–351: Hawk & Hen, Disobedient Twins Mukwana & Mulongo, Woman & Bird in Famine)",
+    pronunciation: "we-ke-sa a-a-ra e-mbe-ba ka-la-ha / a-ki-ra ka-la-ha / i-ba-ru-wa ya na-yu",
+    context: "Naga Selvanathan (2019, Ch. 32, pp. 623–645) & Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Chs. XV–XVI, pp. 317–351)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["somali"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Lt. J. W. C. Kirk (1903, pp. i–xii, 1–83) Notes on the Somali Language & Clem, Jenks & Sande, eds. (2019: Green & Jones Ch. 7 pp. 119–134, Kimper et al. Ch. 11 pp. 199–212 & Nurse Ch. 33 pp. 649–665)",
+    translation: "Kirk (1903, Burao fieldwork with Drawish, Gibaneh, Dualeh & Abdi): 3 definite article vowel grades (-ki/-ti remote/past, -ka/-ta present/general, -ku/-tu subject before focus wa), 4 demonstratives (kan/tan, kèr/tèr, kas/tas, kò/tò), inclusive innaga vs. exclusive annaga, and 2 stories (Two Fools & Two Starving Orphans, pp. 80–83) • Green & Jones (2019, Ch. 7, pp. 119–134, DOI: 10.5281/zenodo.3367132): Marka (Af-Ashraaf) nominal/verbal morphology • Kimper, Bennett, Green & Yu (2019, Ch. 11, pp. 199–212, DOI: 10.5281/zenodo.3367140): Acoustic correlates (F1 & spectral tilt) of Somali [+ATR]/[-ATR] vowel harmony across minimal pairs (dhis, hel, qod, tus, kab, hees, laab, diiday, duushay) • Derek Nurse (2019, Ch. 33, pp. 649–665, DOI: 10.5281/zenodo.3367193): Historical contact between Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) and southern Somali (Tunni, Dabarre, Maay, Ashraaf, Garre, Boni)",
+    pronunciation: "nin-ki nin-ka nin-ku / in-na-ga an-na-ga / dhis hel qod tus / af-ash-raaf",
+    context: "Lt. J. W. C. Kirk (OUP, 1903, pp. i–xii, 1–83) & Emily Clem, Peter Jenks & Hannah Sande, eds. (Language Science Press, 2019, Chs. 7, 11 & 33)",
+    audioFile: null,
+  },
+});
+
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["swahili"] ??= []).push({
+  catId: "culture-history",
+  entry: {
+    english: "Isaac Gould & Tessa Scott (2019, Ch. 23, pp. 441–462), Jonathan Pesetsky (2019, Ch. 29, pp. 555–570) & Derek Nurse (2019, Ch. 33, pp. 649–665) in Theory and description in African linguistics",
+    translation: "Gould & Scott (2019, Ch. 23, pp. 441–462, DOI: 10.5281/zenodo.3367173, Kenyan Swahili consultant David Mburu): Scope reconstruction and Principle C/A connectivity across amba-, tensed prefixal (-li-cho-), and tenseless suffixal (-cho) relative clauses with and without Object Markers • Pesetsky (2019, Ch. 29, pp. 555–570, DOI: 10.5281/zenodo.3367185): Semantic animate gender [[+ANIMATE]] = λP_et : animate(P). P and the immunity of immediately post-nominal possessives on Class 9/10 kinship nouns (N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka; pl. N-dugu z-angu wa-refu wa-li-anguka) • Nurse (2019, Ch. 33, pp. 649–665, DOI: 10.5281/zenodo.3367193): Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) and southern Somali contact",
+    pronunciation: "n-du-gu ya-ngu m-re-fu a-li-a-ngu-ka / ki-ta-bu a-mba-cho",
+    context: "Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Berlin: Language Science Press, 2019, Chs. 23, 29 & 33)",
+    audioFile: null,
+  },
+});

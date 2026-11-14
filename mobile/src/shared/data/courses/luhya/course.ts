@@ -3484,3 +3484,63 @@ LUHYA_UNITS.push({
     }
   ]
 });
+
+// ── Register Purvis (1909) & Naga Selvanathan (2019, Ch. 32, pp. 623–645) in LUHYA_CONFIG.sources and append Lubukusu IAV Focus & Lumasaba Skill ──
+for (const _srcId of [
+  "purvis-masaba-1909",
+  "clem-jenks-sande-theory-description-2019",
+  "selvanathan-bantu-iav-focus-2019",
+]) {
+  if (LUHYA_CONFIG.sources && !LUHYA_CONFIG.sources.includes(_srcId)) {
+    LUHYA_CONFIG.sources.push(_srcId);
+  }
+}
+
+LUHYA_UNITS[LUHYA_UNITS.length - 1].skills.push({
+  id: "luhya-selvanathan-2019-lubukusu-iav-focus-purvis-1909",
+  title: "Lubukusu IAV Focus Asymmetry (Selvanathan 2019, Ch. 32, pp. 623–645) & Purvis (1909, Chs. XV–XVI, pp. 317–351)",
+  icon: "Sparkles",
+  description:
+    "Master Naga Selvanathan's (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) case-based analysis of Lubukusu Immediate-After-Verb (IAV) focus alongside Rev. J. B. Purvis's (1909, Chs. XV–XVI, pp. 317–351) Lumasaba grammar, July 20, 1907 letter, and 3 Bagisu fables.",
+  tips: "In Lubukusu (Selvanathan 2019, pp. 625–636, consultant Justine Sikuku), a focused nominal DP must move to the Immediate-After-Verb (IAV) Spec,FP position (Wekesa a-a-ra embeba kalaha; *Wekesa a-a-ra kalaha embeba), whereas a focused non-nominal manner adjunct (kalaha 'slowly') only appears immediately after the verb when the object DP is dislocated with an object marker (Wekesa a-ki-ra kalaha ekikombe).",
+  words: [
+    {
+      target: "Wekesa a-a-ra embeba kalaha (focused DP embeba MUST be IAV; *Wekesa a-a-ra kalaha embeba) vs. Wekesa a-ki-ra kalaha (ekikombe)",
+      source: "Lubukusu nominal DP vs. non-nominal manner adjunct IAV focus asymmetry explained via Case-licensing on F⁰",
+      pronunciation: "we-ke-sa a-a-ra e-mbe-ba ka-la-ha / a-ki-ra ka-la-ha",
+      hint: "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku)"
+    },
+    {
+      target: "Ibaruwa ya Nayu (July 20, 1907, Purvis 1909, pp. 324–325): 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena? Ne bimutsu barye? Ubambonere bosi... Byaweye. Ise wakyo, Nayu.'",
+      source: "Verbatim 1907 Lumasaba letter ('I salute you very much, my brother... The words are finished. I am yours, Nayu.')",
+      pronunciation: "na-ku-chye-se-re lu-ga-li mu-le-be wa-se / bya-we-ye i-se wa-kyo na-yu",
+      hint: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XV, pp. 324–325)"
+    },
+    {
+      target: "Bimanyisa Kusoma & Katabo Kanyoherwako (p. 324) • 17 'Why?' Idioms (pp. 330–331: Kiki?, Busa kiki?, Lwaki?, Niki?, Kiri kiki?) • 3 Bagisu Fables (Ch. XVI, pp. 333–351)",
+      source: "First Lumasaba primers, 17 ways of asking 'Why?', and the 3 Bagisu fables (Hawk & Hen, Disobedient Twins Mukwana & Mulongo, Woman & Bird in Famine)",
+      pronunciation: "bi-ma-nyi-sa ku-so-ma / ka-ta-bo ka-nyo-he-rwa-ko / mu-kwa-na mu-lo-ngo",
+      hint: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Chs. XV–XVI, pp. 317–351)"
+    }
+  ],
+  sentences: [
+    {
+      target: "Wekesa a-a-ra embeba kalaha • Wekesa a-ki-ra kalaha ekikombe.",
+      source: "Wekesa killed the rat slowly (object DP focus in IAV) • Wekesa broke it (the cup) slowly (manner adjunct focus with object marker -ki-) (Selvanathan 2019, Ch. 32, pp. 626–631)."
+    }
+  ],
+  authoredExercises: [
+    {
+      type: "multiple_choice",
+      prompt: "In Naga Selvanathan's 'A case based account of Bantu IAV-focus' (2019, Ch. 32, pp. 623–645), why must focused nominal DPs in Lubukusu occupy the Immediate-After-Verb (IAV) position whereas focused manner adverbs like 'kalaha' ('slowly') need not move over an in-situ object?",
+      correctAnswer: "Because the Lubukusu focus head F⁰ bundles [uFocus] with structural [uCase] licensing, forcing focused nominal DPs (which need Case) to move to Spec,FP while caseless adverbs are licensed in situ via Agree",
+      options: [
+        "Because the Lubukusu focus head F⁰ bundles [uFocus] with structural [uCase] licensing, forcing focused nominal DPs (which need Case) to move to Spec,FP while caseless adverbs are licensed in situ via Agree",
+        "Because Lubukusu has no adverbs of manner",
+        "Because Lubukusu verbs always appear at the end of the sentence",
+        "Because object markers are prohibited in Lubukusu"
+      ],
+      hint: "Naga Selvanathan (2019, Ch. 32, pp. 634–643, DOI: 10.5281/zenodo.3367191)"
+    }
+  ]
+});

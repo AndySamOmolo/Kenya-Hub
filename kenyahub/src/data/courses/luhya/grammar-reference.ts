@@ -257,3 +257,54 @@ LUHYA_GRAMMAR_SECTIONS.push({
     }
   ]
 });
+
+// ── Update luhya-purvis-1909-roscoe-1915-lumasaba (fixing Purvis 1909 Ch. XV pp. 317–332 & Ch. XVI pp. 333–351) & Append Section on Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) Lubukusu IAV Focus ──
+const _luhyaPurvisSec = LUHYA_GRAMMAR_SECTIONS.find(
+  (s) => s.id === "luhya-purvis-1909-roscoe-1915-lumasaba"
+);
+if (_luhyaPurvisSec) {
+  _luhyaPurvisSec.title =
+    "Lumasaba / Bukusu-Masaba Double Preprefixes, Salutations, 1907 Native Letter & 3 Bagisu Fables (Purvis 1909, Chs. XV–XVI, pp. 317–351) & Bagesu Kinship System (Roscoe 1915)";
+  _luhyaPurvisSec.summary =
+    "Rev. J. B. Purvis (Through Uganda to Mount Elgon, 1909, Ch. XV pp. 317–332 & Ch. XVI pp. 333–351) and Rev. John Roscoe (The Northern Bantu, 1915, Part III) document Lumasaba's archaic CV- preprefixes, 17 'Why?' idioms, conversational greetings, Nayu's verbatim July 20, 1907 native letter, 3 Bagisu fables, and the complete Bagesu/Masaba kinship table.";
+  _luhyaPurvisSec.content = [
+    "From Rev. J. B. Purvis (*Through Uganda to Mount Elgon*, London: T. Fisher Unwin, 1909, Ch. XV *\"The Language of the Bagisu (Lumasaba)\"*, pp. 317–332 & Ch. XVI *\"Folklore\"*, pp. 333–351) and Rev. John Roscoe (*The Northern Bantu*, 1915, pp. 161–196, 291–293):",
+    "1. **Six Lumasaba Double-Prefix Noun Classes vs. Luganda & Possessive Concords (Purvis 1909, Ch. XV, pp. 320–323)**:",
+    "   - **Class I (*umu- / baba-*)**: *umundu → babandu* (person → people); possessive *wase / base* ('my').",
+    "   - **Class II (*kumu- / kimi-*)**: *kumubano → kimibano* (knife → knives), *kumusala* (tree/bewitching stick), *kumutikinyi* (morning); possessive *kwase / kyase* ('my').",
+    "   - **Class III (*in- / tsin-*)**: *ingafu → tsingafu* (cow → cows), *ingoma* (long festival drum); possessive *yase / tsase* ('my').",
+    "   - **Class IV (*kiki- / bibi-*)**: *kikindu → bibindu* (thing → things), *kifuku* (day), *kikosefu* (whiteness/cleanness/holiness); possessive *kyase / byase* ('my').",
+    "   - **Class V (*li- / kama-*)**: *libali → kamabali* (stone → stones), *kametsi* (water); possessive *lyase / kase* ('my').",
+    "   - **Class VI (*lu- / tsin-*)**: *lugoye → tsingoye* (bark-cloth/string → strings); possessive *lwase / tsase* ('my').",
+    "2. **First Lumasaba Primer (*Bimanyisa Kusoma*), July 20, 1907 Native Letter (*Ibaruwa ya Nayu*), Lord's Prayer, 3 Hymns, 17 'Why?' Idioms & Salutations (Purvis 1909, Ch. XV, pp. 324–332)**:",
+    "   - **First Lumasaba Books (p. 324)**: *Bimanyisa Kusoma* ('Helps to Read') and *Katabo Kanyoherwako* ('The Book Shown First').",
+    "   - **Verbatim July 20, 1907 Letter (*Ibaruwa ya Nayu*, pp. 324–325)**: *\"Nakuchyesere lugali mulebe wase: Wena? ugona oryena? Ne bimutsu barye? Ubambonere bosi, ni babolera ngana kubabona wangu. Byaweye. Ise wakyo, Nayu.\"* (\"I salute you very much, my brother: How are you? How have you slept? And how are all in the house? See them all for me, and tell them I wish to see them soon. The words are finished. I am yours, Nayu.\")",
+    "   - **Lord's Prayer (p. 326), 3 Lumasaba Hymns (pp. 326–329), 17 Ways of Expressing 'Why?' (pp. 330–331, e.g. *Kiki?*, *Busa kiki?*, *Lwaki?*, *Niki?*, *Kiri kiki?*) & Daily Greetings (pp. 331–332)**: *Mulembe? / Mirembe?*, *Ulame?*, *Wena?*, *Wagonere oryena? — Nagonere bulahi, njebewe?*, *Bengo baryena? — Baliyo balwakire*, *Wabuyire oryena? — Nabuyire bulahi*, *Nitsya, nule bulahi — Nutsye wule bulahi*, *Nutsye ugona bulahi — Ngone bulahi*.",
+    "   - **Three Bagisu Fables in Ch. XVI (pp. 333–351)**: (1) *Why the Hawk Preys on Chickens* (pp. 334–336), (2) *The Story of the Disobedient Twins (Mukwana andMulongo)* (pp. 336–343), and (3) *The Woman and the Bird in the Famine* (pp. 343–351).",
+    "3. **Bagesu / Lumasaba Kinship System (Roscoe 1915, pp. 193–196, 291–293)**:",
+    "   - *Papa / Baba* (my father / FB), *So / Sowo* (your father), *Sewe* (his/her father); *Mayi* (my mother / MZ), *Nyoko* (your mother), *Ng'ina* (his/her mother); *Kuga* (grandfather), *Kukhu* (grandmother), *Mama* (maternal uncle = MB), *Senge* (paternal aunt = FZ), *Wandayase* (sibling/parallel cousin), *Mukhwewase* (brother-in-law), *Namwandu* (widow)."
+  ].join("\n");
+}
+
+LUHYA_GRAMMAR_SECTIONS.push({
+  id: "luhya-selvanathan-2019-lubukusu-iav-focus",
+  title: "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191): 'A case based account of Bantu IAV-focus' — Lubukusu Immediate-After-Verb (IAV) Focus Asymmetry Between Nominal DPs and Non-Nominal Adjuncts",
+  summary: "Complete synthesis of Chapter 32 ('A case based account of Bantu IAV-focus', pp. 623–645) by Naga Selvanathan (Rutgers University) in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Berlin: Language Science Press, 2019), based on Lubukusu fieldwork with consultant Justine Sikuku.",
+  content: [
+    "From Naga Selvanathan (*\"A case based account of Bantu IAV-focus\"*, in Emily Clem, Peter Jenks & Hannah Sande, eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, Berlin: Language Science Press, 2019, Ch. 32, pp. 623–645, DOI: `10.5281/zenodo.3367191`, Lubukusu consultant Prof. Justine Sikuku):",
+    "1. **The Lubukusu IAV Focus Asymmetry (pp. 623–634)**:",
+    "   - In Lubukusu (canonical SVO word order: `Wekesa a-a-ra embeba kalaha` 'Wekesa killed the rat slowly'), a **focused nominal argument (DP)** must appear in the **Immediate-After-Verb (IAV)** position (`Spec, FP` above `vP`):",
+    "     - **Object DP Focus**: `Naanu o-wa Wekesa a-a-ra?` ('What/Who did Wekesa kill?') → **`Wekesa a-a-ra embeba kalaha`** (strictly ungrammatical if the adverb intervenes: `*Wekesa a-a-ra kalaha embeba`).",
+    "     - **Subject DP Focus**: Requires subject inversion or an anti-agreement/cleft construction (`Wekesa e-ra embeba kalaha` with Class 1 anti-agreement `e-` instead of `a-`).",
+    "   - By contrast, a **focused non-nominal manner adjunct** (`kalaha` 'slowly', answering `Wekesa a-a-ra a-rieena embeba?` 'How did Wekesa kill the rat?') **does NOT require IAV adjacency** when the object DP remains in situ (`Wekesa a-a-ra embeba kalaha` is fully grammatical under manner focus!), **unless** the object DP is dislocated out of `vP` via an object marker (`-ki-` for Class 7 `ekikombe` or `-yi-` for Class 9 `embeba`): **`Wekesa a-ki-ra kalaha (ekikombe)`**.",
+    "2. **Case-Licensing Account of `Spec, FP` Movement (pp. 634–643)**:",
+    "   - Selvanathan compares Lubukusu with Bemba, Matengo, Makhuwa, Zulu, and Aghem, proposing that in Lubukusu the low focus head `F⁰` (immediately below `T⁰` and above `vP`) bears an unvalued `[uFocus]` feature bundled with structural **Case licensing** (`[uCase]`): because only nominal DPs require Case licensing, a focused DP must raise to `Spec, FP` (followed by `V-to-T` raising, yielding IAV order), whereas a caseless adverbial adjunct (`kalaha`) is licensed in situ by `F⁰` via Agree without movement."
+  ].join("\n"),
+  examples: [
+    {
+      luhya: "Wekesa a-a-ra embeba kalaha (focused DP embeba MUST be IAV; *Wekesa a-a-ra kalaha embeba) vs. Wekesa a-ki-ra kalaha (ekikombe)",
+      english: "Wekesa killed the rat slowly (nominal DP vs. non-nominal manner adjunct IAV focus asymmetry in Lubukusu)",
+      explanation: "Naga Selvanathan (2019, Ch. 32, pp. 625–636, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku)"
+    }
+  ]
+});

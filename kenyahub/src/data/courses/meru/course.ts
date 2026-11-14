@@ -2797,3 +2797,144 @@ export const MERU_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ── Register Champion (1912) & Kithaka wa Mberia (2004) in MERU_CONFIG.sources and append dedicated Kĩtharaka Phonology & Atharaka Ethnography Unit ──
+for (const _srcId of [
+  "champion-atharaka-1912",
+  "mberia-kitharaka-loanwords-2004",
+  "dundas-bantu-laws-1915",
+  "payne-pacchiarotti-bosire-diversity-2016",
+]) {
+  if (MERU_CONFIG.sources && !MERU_CONFIG.sources.includes(_srcId)) {
+    MERU_CONFIG.sources.push(_srcId);
+  }
+}
+
+MERU_UNITS.push({
+  id: "meru-unit-kitharaka-mberia-2004-champion-1912",
+  title: "Unit 5: Kĩtharaka Loanword Phonology (Mberia 2004) & Atharaka Ethnography (Champion 1912)",
+  description:
+    "Master Prof. Kithaka wa Mberia's (2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) analysis of Kĩtharaka borrowed words (7 vowels, /β, ð, ɣ/, Dahl's Law, n-propping of /d/, and prefix reanalysis) alongside Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) Atharaka age-grades, smithy, and 14 clans.",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "meru-kitharaka-loanword-phonology-mberia-2004",
+      title: "Kĩtharaka Loanword Phonology & Dahl's Law (Kithaka wa Mberia 2004, pp. 45–57)",
+      icon: "Sparkles",
+      description:
+        "Learn how Kĩtharaka adapts Swahili and English loanwords across Examples (1)–(18) in Kithaka wa Mberia (2004).",
+      tips: "In Kĩtharaka (Mberia 2004, pp. 45–57), foreign /p, b, f, v/ become /β/ (moβira, βaði, βurana) except [b] after Class 9/10 N- (mbuŋgɛ, mbureki); /k/ voices to /ɣ/ before a voiceless consonant via Dahl's Law (moɣatɛ < mkatɛ, karaɣita < træktə); and foreign /d/ is propped with /n/ to form [nd] (ndawa, nderesa, ndasita).",
+      words: [
+        {
+          target: "moβira (< mpira) • βaði (< pasi) • moβukɔ (< mfukɔ) • βurana (< fulana) • βaisikiri (< baiskɛli) • βetɛrɔri (< petrəl)",
+          source: "ball • iron box • bag/pocket • vest/undershirt • bicycle • petrol (Ex. 1: /p, b, f, v/ → /β/)",
+          pronunciation: "mo-βi-ra / βa-ði / mo-βu-kɔ / βu-ra-na / βa-i-si-ki-ri",
+          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 47–48, Ex. 1)"
+        },
+        {
+          target: "mbuŋgɛ (< buŋgɛ) • mbureki (< breɪk) • mbɔksi (< bɔks) | ðimo (< simu) • mɛða (< mɛza) • ða: (< sa:) • monaði (< mnazi) • mosɛðɔ (< mtʃɛzɔ)",
+          source: "parliament • brake • box (Ex. 2: [b] after N-) | telephone • table • hour/watch • coconut tree • game (Ex. 6: /s, z/ → /ð/)",
+          pronunciation: "mbu-ŋgɛ / mbu-re-ki / ði-mo / mɛ-ða / mo-na-ði / mo-sɛ-ðɔ",
+          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 48–50, Ex. 2 & 6)"
+        },
+        {
+          target: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka: (< mɔtəka:) & sukuru (< sku:l)",
+          source: "bread & tractor (Dahl's Law: /k/ → /ɣ/ before voiceless consonant) vs. pen, motorcar & school (/k/ retained)",
+          pronunciation: "mo-ɣa-tɛ / ka-ra-ɣi-ta / ka-ra-mu / mo-tu-kaa / su-ku-ru",
+          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 50–51, Ex. 8–9)"
+        },
+        {
+          target: "ndawa (< dawa) • nderesa (< dirisha) • ndasita (< dʌstə) • ndiŋgiri (< digri:) | duka → ruka (Cl. 11) → pl. nduka (Cl. 10) • sanduku → esanduku (Cl. 5)",
+          source: "medicine • window • duster • degree (Ex. 14: n-propping of /d/) | shop → shops • box (Ex. 18: prefix reanalysis)",
+          pronunciation: "nda-wa / nde-re-sa / nda-si-ta / ndi-ŋgi-ri / ru-ka ndu-ka / e-sa-ndu-ku",
+          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 53–56, Ex. 14 & 18)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Moɣatɛ na караmu irĩ mɛða-inĩ • Ruka rũmwe → Nduka inyingĩ.",
+          source: "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða) • One shop (Cl. 11 ruka) → many shops (Cl. 10 nduka) (Kithaka wa Mberia 2004, pp. 49–55)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "match_pairs",
+          prompt: "Match each Kĩtharaka loanword nativization pattern from Prof. Kithaka wa Mberia (2004, pp. 47–56) with its phonological rule:",
+          correctAnswer: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) (Ex. 9): Productive Dahl's Law voicing /k/ to /ɣ/ before a voiceless obstruent in the next syllable",
+          pairs: [
+            {
+              left: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) (Ex. 9)",
+              right: "Productive Dahl's Law voicing /k/ to /ɣ/ before a voiceless obstruent in the next syllable"
+            },
+            {
+              left: "ndawa (< dawa), nderesa (< dirisha), ndasita (< dʌstə) (Ex. 14)",
+              right: "Consonant propping of foreign /d/ with homorganic /n/ to yield [nd]"
+            },
+            {
+              left: "moβira (< mpira), βaði (< pasi), βurana (< fulana) (Ex. 1)",
+              right: "Replacement of foreign /p, b, f, v/ by bilabial fricative /β/"
+            },
+            {
+              left: "duka → ruka (Cl. 11) → nduka (Cl. 10) & sanduku → esanduku (Cl. 5) (Ex. 18)",
+              right: "Back-formation and reanalysis of initial syllables into Kĩtharaka noun classes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "meru-atharaka-ethnography-champion-1912",
+      title: "Atharaka Age-Grades, Mutialu Smithy, Customary Law & 14 Clans (Champion 1912, pp. 68–90)",
+      icon: "Shield",
+      description:
+        "Explore Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) ethnography of the Atharaka along the Tana (Kilaluma) River.",
+      tips: "Champion (1912, pp. 72–89) documents the 5 male grades (Karna, Kaegi, Ntheka/Ngoromo, Ntheka Nguru, Kisungi/Mundu Mukuru), 6 female grades (Karna, Kali, Idika [pl. Matika], Mwiki, Mukaa/Mubiki, Mwekuru), the Mutialu smithy (kianda), the 5th-night death rite Thela Luku, and all 14 Atharaka clans.",
+      words: [
+        {
+          target: "Male Grades: Karna → Kaegi → Ntheka/Ngoromo (Mbabu & Mkilamana) → Ntheka Nguru → Kisungi / Mundu Mukuru | Female Grades: Karna → Kali → Idika (pl. Matika) → Mwiki → Mukaa/Mubiki → Mwekuru",
+          source: "Complete Atharaka male and female life-stage grades and circumcision-year sets (pp. 72–73)",
+          pronunciation: "ka-rna / ka-e-gi / nthe-ka ngo-ro-mo / ki-su-ngi / i-di-ka ma-ti-ka / mwe-ku-ru",
+          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 72–73)"
+        },
+        {
+          target: "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle), luiyo (clay tuyere), njorma (hammer), ithoka + muthembesu = kithoka (axe), miwa (tongs), mgwadi (poker), kiriba (trough)",
+          source: "Complete blacksmithing terminology at Mutialu in Atharaka",
+          pronunciation: "ki-a-nda / lo-ngo / lu-i-yo / njo-rma / ki-tho-ka / mi-wa / ki-ri-ba",
+          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 77–78)"
+        },
+        {
+          target: "4 Dances (p. 82): Kisboso (with lukongoro bells & keusia plume), Nzungo, Mungeri, Mboboi • Thela Luku (5th-night burial purification, p. 85) • Chiama (Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo, pp. 86–87)",
+          source: "Atharaka dances, mortuary purification, and judicial elder council grades",
+          pronunciation: "ki-sbo-so / lu-ko-ngo-ro / the-la lu-ku / chi-a-ma / i-the-mbo",
+          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 82–87)"
+        },
+        {
+          target: "14 Atharaka Clans (pp. 88–89): Utonga, Kandi, Mululu, Nyaga, Mbula (kueni), Nginna, Kamurigi, Ndue, Kanzero, Kamararo, Mutwa, Kamogwe, Kanthakami, Kathoga • Plate X: Kathai (stool), kiko (snuff bottle), Kibumbi (gourd)",
+          source: "Complete table of 14 Atharaka clans and Plate X material artifacts",
+          pronunciation: "u-to-nga / ka-ndi / mu-lu-lu / nya-ga / mbu-la / ka-mu-ri-gi / ka-tha-i / ki-bu-mbi",
+          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 88–90 & Plate X)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Akuru ya Chiama marĩ Ithembo-inĩ • Mwatũ wĩ mũtĩ-inĩ wa Mekoma.",
+          source: "The elders of the Chiama council are at the sacred grove (Ithembo) • The log beehive (mwatũ) is in the doum palm (Mekoma) (Champion 1912, pp. 80, 87)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Arthur M. Champion's 'The Atharaka' (JRAI Vol. 42, 1912, p. 86), how is blood-money for the loss of an eye (7 or 14 goats) distributed between clans?",
+          correctAnswer: "If the left eye is destroyed, compensation goes to the mother's clan; if the right eye is destroyed, it goes to the father's clan",
+          options: [
+            "If the left eye is destroyed, compensation goes to the mother's clan; if the right eye is destroyed, it goes to the father's clan",
+            "Both eyes are compensated exclusively to the maternal grandmother",
+            "No compensation is paid for eye injuries",
+            "Compensation is paid in iron hoes to the smiths of Mutialu"
+          ],
+          hint: "Arthur M. Champion (1912, JRAI Vol. 42, p. 86)"
+        }
+      ]
+    }
+  ]
+});

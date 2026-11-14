@@ -7132,3 +7132,16 @@ SWAHILI_PROVERBS.push(
     "sourceCitation": "Martha Michieka & Leonard Muaka, 'Humor in Kenyan comedy', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 28, pp. 559–576, Ex. 1–16)"
   }
 );
+
+// ── Append Clem, Jenks & Sande (2019: Gould & Scott Ch. 23, Pesetsky Ch. 29 & Nurse Ch. 33) and Goldsmith & Mpiranya (2022) to SWAHILI_PROVERBS ──
+SWAHILI_PROVERBS.push({
+  "id": "swahili-clem-2019-pesetsky-gould-scott-nurse",
+  "languageId": "swahili",
+  "languageName": "Kiswahili (Clem, Jenks & Sande, eds., 2019, Chs. 23, 29 & 33)",
+  "indigenous": "N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka • N-dugu z-angu wa-refu wa-li-anguka (Pesetsky 2019, Ch. 29, pp. 555–570) • Kitabu amba-cho kila mwanafunzi a-li-(ki)-soma / Kitabu a-li-cho-(ki)-soma kila mwanafunzi (Gould & Scott 2019, Ch. 23, pp. 441–462, consultant David Mburu) • Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) & Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665).",
+  "literalTranslation": "My tall sibling fell (where immediately post-nominal possessive y-angu/z-angu takes Class 9/10 morphological agreement while m-refu/wa-refu and a-li-/wa-li- take Class 1/2 semantic animate agreement) • Kenyan Swahili relative clause scope and OM reconstruction • Northern Swahili and southern Somali contact along the Benadir and Tana–Juba coast.",
+  "meaning": "Documented in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics (Berlin: Language Science Press, 2019, Ch. 23 pp. 441–462, DOI: 10.5281/zenodo.3367173; Ch. 29 pp. 555–570, DOI: 10.5281/zenodo.3367185; Ch. 33 pp. 649–665, DOI: 10.5281/zenodo.3367193).",
+  "englishEquivalent": "Close kin keep their ancient bond even when the wider world shifts around them.",
+  "theme": "family",
+  "sourceCitation": "Isaac Gould & Tessa Scott (Ch. 23, pp. 441–462), Jonathan Pesetsky (Ch. 29, pp. 555–570) & Derek Nurse (Ch. 33, pp. 649–665), in Theory and description in African linguistics (2019)"
+});

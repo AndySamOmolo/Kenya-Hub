@@ -518,3 +518,34 @@ SWAHILI_GRAMMAR_SECTIONS.push({
     }
   ]
 });
+
+// ── Section 23: Complete Integration of Clem, Jenks & Sande, eds. (2019: Gould & Scott Ch. 23 pp. 441–462, Pesetsky Ch. 29 pp. 555–570 & Nurse Ch. 33 pp. 649–665), Goldsmith & Mpiranya (2022), Steere (1918), Werner (1918), Bateman (1901) & Farler & Wakefield (1882) ──
+SWAHILI_GRAMMAR_SECTIONS.push({
+  "id": "swahili-clem-2019-gould-scott-pesetsky-nurse-goldsmith-2022",
+  "title": "23. Clem, Jenks & Sande, eds. (2019): Relative Clause Scope & Reconstruction in Kenyan Swahili (Gould & Scott, Ch. 23, pp. 441–462), Semantic Gender & Kinship Possessor Immunity (Pesetsky, Ch. 29, pp. 555–570), Northern Swahili–Southern Somali Contact (Nurse, Ch. 33, pp. 649–665) & MDL Computational Morphology (Goldsmith & Mpiranya 2022)",
+  "summary": "Complete line-by-line documentation of Chapters 23 (Isaac Gould & Tessa Scott, pp. 441–462, DOI: 10.5281/zenodo.3367173), 29 (Jonathan Pesetsky, pp. 555–570, DOI: 10.5281/zenodo.3367185), and 33 (Derek Nurse, pp. 649–665, DOI: 10.5281/zenodo.3367193) in Theory and description in African linguistics (Berlin: Language Science Press, 2019), plus John Goldsmith & Fidèle Mpiranya (2022) on Minimum Description Length (MDL) Swahili verb morphology.",
+  "content": [
+    "1. **Chapter 23 — Scope and Reconstruction in Kenyan Swahili Relative Clauses (Isaac Gould & Tessa Scott, 2019, pp. 441–462, DOI: `10.5281/zenodo.3367173`, Consultant David Mburu)**:",
+    "   - Investigates head-raising vs. matching derivations in Kenyan Swahili relative clauses across three strategy types: **(1) `amba-` relative pronoun**, **(2) tensed prefixal relative (`-li-cho-`)**, and **(3) tenseless suffixal relative (`kitabu a-ki-soma-cho`)**.",
+    "   - Using scope reconstruction (`kila` 'every' under `mmoja` 'one') and Principle C/A binding connectivity diagnostics with Kenyan Swahili speaker **David Mburu**, demonstrates that when an **Object Marker (OM)** is present inside the relative clause, high/matching readings are forced (`mmoja > kila`) when the matrix nominal precedes `kila`, whereas absence of OM allows low reconstructed readings (`kila > mmoja`).",
+    "2. **Chapter 29 — Semantic Gender in Swahili & Immunity of Class 9/10 Kinship Possessors (Jonathan Pesetsky, MIT, 2019, pp. 555–570, DOI: `10.5281/zenodo.3367185`)**:",
+    "   - Analyzes why animate nouns belonging to non-Class 1/2 morphological classes (such as Class 7/8 `ki-boko → vi-boko` 'hippopotamus', Class 5/6 `joka → ma-joka` 'giant snake', and Class 9/10 `n-dugu` 'sibling/relative', `rafiki` 'friend', `baba` 'father', `mama` 'mother') trigger **Class 1/2 semantic animate agreement (`a-/wa-`, `yu-/wa-`, `m-/wa-`)** on adjectives, demonstratives, verbs, and external possessives (`ki-boko m-kubwa wa Juma a-li-anguka` 'Juma's big hippo fell').",
+    "   - **The Kinship Possessor Immunity Puzzle (pp. 557–566)**: Uniquely, **Class 9/10 human kinship nouns** (`ndugu, baba, mama, dada, bibi, shangazi`) resist Class 1/2 semantic agreement **only on immediately post-nominal possessive pronouns**, taking **Class 9/10 `y-/z-`** (`N-dugu y-angu m-refu a-li-anguka` 'My tall sibling fell', pl. `N-dugu z-angu wa-refu wa-li-anguka`), whereas if an adjective intervenes between the kinship noun and the possessive, the possessive shifts to Class 1/2 (`N-dugu m-refu w-angu a-li-anguka`)!",
+    "   - **Formal Account**: Models `[+ANIMATE]` as a semantic presuppositional feature `[[+ANIMATE]] = λP_et : animate(P). P` merged above `nP` (above the low `PossP` where inalienable kinship possessors are merged, so low `Poss⁰` agrees with morphological Class 9/10 `n⁰` before `[+ANIMATE]` projects).",
+    "3. **Chapter 33 — When Northern Swahili Met Southern Somali (Derek Nurse, 2019, pp. 649–665, DOI: `10.5281/zenodo.3367193`) & MDL Computational Morphology (John Goldsmith & Fidèle Mpiranya 2022, *Language Dynamics and Change*)**:",
+    "   - **Nurse (2019, Ch. 33, pp. 649–665)**: Documents contact between **Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu)** and **southern Somali (Tunni, Dabarre, Maay, Ashraaf, Garre, Boni)** along the Benadir and northern Kenya coast: dental stops (`t̪, d̪, nd̪`), loss/shift of nasal-stop clusters, tense/aspect calques, and shared pastoral/maritime vocabulary.",
+    "   - **Goldsmith & Mpiranya (2022)**: Applies unsupervised **Minimum Description Length (MDL)** information-theoretic segmentation to the Swahili verbal template (`Neg – SM – TAM – Rel – OM – Root – Ext – FV`), quantifying the bit-length compression gained by factoring subject prefixes (`ni-, u-, a-, tu-, m-, wa-` + noun classes), TAM markers (`-na-, -li-, -ta-, -me-, -hu-, -ka-, -ki-, -nge-, -ngali-`), object markers, and extensions (`-i/-e/-li/-le`, `-ish/-esh`, `-ik/-ek`, `-an`, `-u/-o/-ul/-ol`, `-w`)."
+  ].join("\n"),
+  "examples": [
+    {
+      "swahili": "N-dugu y-angu m-refu a-li-anguka (Cl. 9 y-angu + Cl. 1 m-refu, a-li-) vs. N-dugu m-refu w-angu a-li-anguka • N-dugu z-angu wa-refu wa-li-anguka",
+      "english": "My tall sibling fell (low inalienable PossP agrees with Class 9/10 y-/z-, while higher adjectives/verbs and post-adjectival possessives agree with Class 1/2 [+ANIMATE])",
+      "explanation": "Jonathan Pesetsky, 'Semantic gender in Swahili', in Theory and description in African linguistics (2019, Ch. 29, pp. 555–570, DOI: 10.5281/zenodo.3367185)"
+    },
+    {
+      "swahili": "kitabu amba-cho kila mwanafunzi a-li-(ki)-soma • kitabu a-li-cho-(ki)-soma kila mwanafunzi • kitabu a-ki-soma-cho",
+      "english": "Relative clause strategies and OM reconstruction diagnostics in Kenyan Swahili",
+      "explanation": "Isaac Gould & Tessa Scott (2019, Ch. 23, pp. 441–462, DOI: 10.5281/zenodo.3367173, consultant David Mburu)"
+    }
+  ]
+});

@@ -1033,3 +1033,24 @@ export const MCGREGOR_1904_LEXICAL_HIGHLIGHTS = [
     "page": 157
   }
 ] as const;
+
+export const BOOKS_ZIP_2026_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Kĩtharaka Loanword Phonology (Prof. Kithaka wa Mberia 2004, OPLL Vol. 2, pp. 45–57, Ex. 1–18): (1) moβira, βaði, moβukɔ, βurana, βaisikiri, βetɛrɔri, βesti • (2) mbuŋgɛ, mbureki, mbɔksi • (4) ŋkengɛrɛ, ŋkare, βiriŋgi, suruare, karamu, ɔiri • (6) ðimo, mɛða, ða:, monaði, mosɛðɔ • (7) so:βa, saβusiβo, sati, ɲɟɛrikani • (9) Dahl's Law: moɣatɛ (< mkatɛ) & karaɣita (< træktə) • (14) n-Propping: ndawa, nderesa, ndasita, ndiŋgiri • (18) Prefix Reanalysis: duka → ruka (Cl. 11) → nduka (Cl. 10), sanduku → esanduku (Cl. 5)",
+    "translation": "Complete 18-example synthesis of Kĩtharaka loanword nativization, productive Dahl's Law (/k/ → /ɣ/), consonant propping, and noun-class reanalysis in Prof. Kithaka wa Mberia (2004, pp. 45–57)",
+    "language": "meru",
+    "page": 45
+  },
+  {
+    "word": "Atharaka Ethnography (Arthur M. Champion 1912, JRAI Vol. 42, pp. 68–90 + Plate X): 5 Male Grades (Karna, Kaegi, Ntheka/Ngoromo [Mbabu & Mkilamana], Ntheka Nguru, Kisungi/Mundu Mukuru) & 6 Female Grades (Karna, Kali, Idika [pl. Matika], Mwiki, Mukaa/Mubiki, Mwekuru) • Mutialu Smithy (kianda: longo, ngao, luiyo, njorma, ithoka + muthembesu = kithoka, miwa, mgwadi, kiriba) • 4 Dances (Kisboso, Nzungo, Mungeri, Mboboi) • Thela Luku • Chiama (Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo) • 14 Clans (Utonga, Kandi, Mululu, Nyaga, Mbula [kueni], Nginna, Kamurigi, Ndue, Kanzero, Kamararo, Mutwa, Kamogwe, Kanthakami, Kathoga) • Plate X (Kathai, kiko, Kibumbi)",
+    "translation": "Complete Atharaka age-grades, smithing vocabulary, dances, mortuary purification, blood-money rules, and 14 totemic clans along the Tana (Kilaluma) River in Arthur M. Champion (1912, pp. 68–90 + Plate X)",
+    "language": "meru",
+    "page": 68
+  },
+  {
+    "word": "Clem, Jenks & Sande, eds. (2019, Theory and description in African linguistics, DOI: 10.5281/zenodo.3365789): Ch. 7 Marka/Af-Ashraaf (Green & Jones, pp. 119–134) • Ch. 10 Kikamba 4 Surface Tones & 5 Stem Melodies {LFV}, {HFV}, {HV2}, {HV2+HFV}, {HV2+LFV} + Lφ (Patrick Jones & Jake Freyer, pp. 177–198) • Ch. 11 Somali ATR Harmony Acoustics (Kimper, Bennett, Green & Yu, pp. 199–212) • Ch. 20 Kipsigis Subj-CA (ɑ-lɛ, i-lɛ, kɔ-lɛ, kɛ-lɛ, o-lɛ) & Obj-CA (-lɛ-ndʒ-ɑn/-in/-i/-ɛtʃ/-ɔɔɣ) + Overt C-Raising (Diercks & Rao, pp. 369–393) • Ch. 23 Kenyan Swahili Relative Clause Scope (Gould & Scott, pp. 441–462) • Ch. 25 Kipsigis tugul vs. age tugul (Landman, pp. 481–498) • Ch. 29 Swahili Semantic Gender & Kinship Possessors N-dugu y-angu m-refu a-li-anguka (Pesetsky, pp. 555–570) • Ch. 32 Lubukusu IAV Focus Wekesa a-a-ra embeba kalaha (Selvanathan, pp. 623–645) • Ch. 33 Northern Swahili–Southern Somali Contact (Nurse, pp. 649–665)",
+    "translation": "Complete synthesis of all 9 East African linguistics chapters in Emily Clem, Peter Jenks & Hannah Sande, eds. (2019, Berlin: Language Science Press, pp. 119–665)",
+    "language": "swahili",
+    "page": 119
+  }
+] as const;

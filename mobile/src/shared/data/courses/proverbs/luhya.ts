@@ -152,3 +152,16 @@ export const LUHYA_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Ken Safir & Naga Selvanathan (2016, Ch. 25, pp. 495–512) & Martha Michieka & Leonard Muaka (2016, Ch. 28, pp. 559–576), in Diversity in African languages"
   }
 ];
+
+// ── Append Rev. J. B. Purvis (1909, Chs. XV–XVI, pp. 317–351: Ibaruwa ya Nayu & 3 Bagisu Fables) and Naga Selvanathan (2019, Ch. 32, pp. 623–645: Lubukusu IAV Focus) to LUHYA_PROVERBS ──
+LUHYA_PROVERBS.push({
+  "id": "luhya-purvis-1909-nayu-letter-fables-selvanathan-2019",
+  "languageId": "luhya",
+  "languageName": "Luhya (Lumasaba & Lubukusu — Purvis 1909 & Selvanathan 2019)",
+  "indigenous": "Ibaruwa ya Nayu (July 20, 1907, Purvis 1909, pp. 324–325): 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena? Ne bimutsu barye? Ubambonere bosi, ni babolera ngana kubabona wangu. Byaweye. Ise wakyo, Nayu.' • 17 Ways of Saying 'Why?' (pp. 330–331) & 3 Bagisu Fables (pp. 333–351: Hawk & Hen, Twins Mukwana & Mulongo, Woman & Bird in Famine) • Lubukusu IAV Focus (Selvanathan 2019, Ch. 32, pp. 623–645): Wekesa a-a-ra embeba kalaha vs. Wekesa a-ki-ra kalaha (ekikombe).",
+  "literalTranslation": "'I salute you very much, my brother: How are you? How have you slept? And how are all in the house? See them all for me, and tell them I wish to see them soon. The words are finished. I am yours, Nayu.' (July 20, 1907) • Lubukusu Immediate-After-Verb (IAV) focus: Wekesa killed the rat slowly.",
+  "meaning": "Combines Rev. J. B. Purvis's Lumasaba grammatical sketch, July 20, 1907 native letter, Lord's Prayer, 3 hymns, 17 'Why?' idioms, and 3 Bagisu fables in Through Uganda to Mount Elgon (1909, Chs. XV–XVI, pp. 317–351) with Naga Selvanathan's (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku) analysis of Lubukusu IAV focus.",
+  "englishEquivalent": "Warm greetings bind kin across the mountain ridges.",
+  "theme": "family",
+  "sourceCitation": "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Chs. XV–XVI, pp. 317–351) & Naga Selvanathan, in Theory and description in African linguistics (2019, Ch. 32, pp. 623–645)"
+});

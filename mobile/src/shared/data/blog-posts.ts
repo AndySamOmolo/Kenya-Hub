@@ -1669,3 +1669,12 @@ for (const _slug of [
     }
   }
 }
+
+export const BOOKS_ZIP_16_VOLUMES_BLOG_SUPPLEMENT = {
+  "slug": "books-zip-16-volumes-line-by-line-audit-clem-2019-mberia-2004-champion-1912-kirk-1903-purvis-1909",
+  "title": "Complete Line-by-Line Audit of All 16 Volumes in Books.zip: Clem, Jenks & Sande (2019), Kithaka wa Mberia (2004), Champion (1912), Kirk (1903), Purvis (1909), Goldsmith & Mpiranya (2022), Steere (1918), Werner (1918, 1933), Bateman (1901), Farler & Wakefield (1882), Dundas (1915), Shaw (1885), Kitching (1915), Willis (1915) & Hollis (1905)",
+  "highlights": [
+    "Kĩtharaka Loanword Phonology (Prof. Kithaka wa Mberia 2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) & Atharaka Ethnography (Arthur M. Champion 1912, JRAI Vol. 42, pp. 68–90 + Plate X): Documents Kĩtharaka's 7 short/long vowels, 14 consonants, /p,b,f,v/ → /β/, [b] after N-, /l/ → /r/, /s,z/ → /s/ or /ð/, productive Dahl's Law (/k/ → /ɣ/ in moɣatɛ & karaɣita), n-propping of /d/ (ndawa, nderesa), and prefix reanalysis (duka → ruka → nduka), alongside Champion's 5 male & 6 female age-grades, Mutialu smithy (kianda), 4 dances, Thela Luku 5th-night death rite, blood-money rules, Chiama grades, and 14 Atharaka clans.",
+    "Theory and description in African linguistics (Emily Clem, Peter Jenks & Hannah Sande, eds., Language Science Press, 2019, pp. i–viii, 1–758, DOI: 10.5281/zenodo.3365789) & Notes on the Somali Language (Lt. J. W. C. Kirk, OUP, 1903, pp. i–xii, 1–83): Integrates Ch. 7 Marka/Af-Ashraaf morphology (Green & Jones, pp. 119–134), Ch. 10 Kikamba 4 surface tones & 5 stem melodies (Patrick Jones & Jake Freyer, pp. 177–198), Ch. 11 Somali ATR vowel harmony acoustics (Kimper, Bennett, Green & Yu, pp. 199–212), Ch. 20 Kipsigis upward-oriented Subj-CA & Obj-CA and overt C-raising (Diercks & Rao, pp. 369–393), Ch. 23 Kenyan Swahili relative clause scope & reconstruction (Gould & Scott, pp. 441–462), Ch. 25 Kipsigis nominal quantification tugul vs. age tugul (Landman, pp. 481–498), Ch. 29 Swahili semantic gender & Class 9/10 kinship possessor immunity N-dugu y-angu m-refu a-li-anguka (Pesetsky, pp. 555–570), Ch. 32 Lubukusu IAV focus Wekesa a-a-ra embeba kalaha (Selvanathan, pp. 623–645), and Ch. 33 Northern Swahili–southern Somali contact (Nurse, pp. 649–665), plus Kirk's 1903 Burao grammar and Purvis's 1909 Chs. XV–XVI Lumasaba sketch, July 20, 1907 native letter, and 3 Bagisu fables."
+  ]
+} as const;

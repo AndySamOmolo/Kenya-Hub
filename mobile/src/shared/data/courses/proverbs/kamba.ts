@@ -78,3 +78,16 @@ export const KAMBA_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages of East Africa (Cambridge: at the University Press, 1904, Preface pp. v–viii & Phrases pp. 72–75)"
   }
 ];
+
+// ── Update KAMBA_PROVERBS with exact citation for Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138) ──
+KAMBA_PROVERBS.push({
+  "id": "kamba-jones-freyer-2019-melodic-tonology",
+  "languageId": "kamba",
+  "languageName": "Kamba (Kĩkamba — Patrick Jones & Jake Freyer 2019, Ch. 10)",
+  "indigenous": "ko-konȁ (phrase-final Super-Low) vs. ko-konà ma-i.ò (non-final Low) • to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò • 5 Primary Melodies: {LFV}, {HFV}, {HV2}, {HV2 + HFV}, {HV2 + LFV} + Lφ.",
+  "literalTranslation": "to hit (with Assertive boundary tone Lφ yielding Super-Low ȁ) vs. to hit bananas • we do not usually hit vs. we do not usually hit bananas (with floating suffixal tone yielding Super-High a̋).",
+  "meaning": "Documented by Patrick Jones & Jake Freyer in 'Reconsidering tone and melodies in Kikamba' (in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138, Tables 1–7, Examples 1–16, Fig. 1): shows how Kĩkamba's 4 surface tone heights (H, L, Super-High, Super-Low) and 10 apparent tense/aspect paradigms reduce to 5 primary stem melodies interacting with Final H Lowering, Long Retraction in -eet-ɛ, Assertive phrasal Lφ, and suffixal floating tones.",
+  "englishEquivalent": "Four pitches and five melodies carry the full cadence of Kĩkamba speech.",
+  "theme": "wisdom",
+  "sourceCitation": "Patrick Jones & Jake Freyer, 'Reconsidering tone and melodies in Kikamba', in Theory and description in African linguistics (Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138)"
+});

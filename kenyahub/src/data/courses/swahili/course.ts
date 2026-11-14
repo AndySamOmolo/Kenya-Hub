@@ -7065,3 +7065,76 @@ SWAHILI_UNITS.push({
     }
   ]
 });
+
+// ── Register Clem, Jenks & Sande (2019: Gould & Scott Ch. 23, Pesetsky Ch. 29 & Nurse Ch. 33) and Goldsmith & Mpiranya (2022) in SWAHILI_CONFIG.sources and append Unit 9 Skill ──
+for (const _srcId of [
+  "clem-jenks-sande-theory-description-2019",
+  "gould-scott-swahili-relatives-2019",
+  "pesetsky-swahili-semantic-gender-2019",
+  "nurse-northern-swahili-southern-somali-2019",
+  "goldsmith-mpiranya-swahili-mdl-2022",
+]) {
+  if (SWAHILI_CONFIG.sources && !SWAHILI_CONFIG.sources.includes(_srcId)) {
+    SWAHILI_CONFIG.sources.push(_srcId);
+  }
+}
+
+SWAHILI_UNITS[SWAHILI_UNITS.length - 1].skills.push({
+  id: "swahili-clem-2019-pesetsky-gould-scott-nurse-skill",
+  title: "Semantic Gender & Kinship Possessors (Pesetsky 2019, Ch. 29), Relative Scope (Gould & Scott 2019, Ch. 23) & Northern Swahili Contact (Nurse 2019, Ch. 33)",
+  icon: "Sparkles",
+  description:
+    "Master Jonathan Pesetsky's (2019, Ch. 29, pp. 555–570) analysis of Class 9/10 kinship possessor agreement, Isaac Gould & Tessa Scott's (2019, Ch. 23, pp. 441–462) Kenyan Swahili relative clause scope diagnostics, and Derek Nurse's (2019, Ch. 33, pp. 649–665) Northern Swahili–southern Somali contact study.",
+  tips: "In Swahili (Pesetsky 2019, pp. 555–570), animate nouns in non-human classes take Class 1/2 semantic agreement (ki-boko m-kubwa wa Juma a-li-anguka), EXCEPT immediately post-nominal possessives on Class 9/10 kinship nouns, which take Class 9/10 y-/z- (N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka).",
+  words: [
+    {
+      target: "N-dugu y-angu m-refu a-li-anguka (Cl. 9 y-angu + Cl. 1 m-refu, a-li-) vs. N-dugu m-refu w-angu a-li-anguka • N-dugu z-angu wa-refu wa-li-anguka",
+      source: "Class 9/10 kinship possessor immunity when immediately post-nominal vs. Class 1/2 semantic agreement when separated by an adjective",
+      pronunciation: "n-du-gu ya-ngu m-re-fu a-li-a-ngu-ka / w-a-ngu / za-ngu",
+      hint: "Jonathan Pesetsky (2019, Ch. 29, pp. 555–570, DOI: 10.5281/zenodo.3367185)"
+    },
+    {
+      target: "kitabu amba-cho kila mwanafunzi a-li-(ki)-soma • kitabu a-li-cho-(ki)-soma kila mwanafunzi • kitabu a-ki-soma-cho",
+      source: "Three Kenyan Swahili relative clause strategies and Object Marker (OM) scope reconstruction diagnostics",
+      pronunciation: "ki-ta-bu a-mba-cho / a-li-cho-ki-so-ma / a-ki-so-ma-cho",
+      hint: "Isaac Gould & Tessa Scott (2019, Ch. 23, pp. 441–462, DOI: 10.5281/zenodo.3367173, consultant David Mburu)"
+    },
+    {
+      target: "Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) ↔ Southern Somali (Tunni, Dabarre, Maay, Ashraaf, Garre, Boni)",
+      source: "Historical phonological, morphological, and lexical contact along the Benadir and Tana–Juba coast (c. 900–1500 CE)",
+      pronunciation: "mwii-ni / ba-ju-ni / ti-kuu / si-u / pa-te / a-mu",
+      hint: "Derek Nurse (2019, Ch. 33, pp. 649–665, DOI: 10.5281/zenodo.3367193)"
+    }
+  ],
+  sentences: [
+    {
+      target: "Ndugu yangu mrefu alianguka • Ndugu mrefu wangu alianguka.",
+      source: "My tall sibling fell (Class 9 y-angu adjacent to ndugu vs. Class 1 w-angu after mrefu) (Pesetsky 2019, Ch. 29, pp. 557–560)."
+    }
+  ],
+  authoredExercises: [
+    {
+      type: "match_pairs",
+      prompt: "Match each Swahili linguistic analysis in Clem, Jenks & Sande (2019, Chs. 23, 29 & 33) with its core finding:",
+      correctAnswer: "Jonathan Pesetsky (2019, Ch. 29, pp. 555–570): Class 9/10 kinship nouns take Class 9/10 y-/z- on immediately adjacent possessives (ndugu y-angu m-refu) because low inalienable Poss⁰ merges below the [+ANIMATE] presupposition head",
+      pairs: [
+        {
+          left: "Jonathan Pesetsky (2019, Ch. 29, pp. 555–570)",
+          right: "Class 9/10 kinship nouns take Class 9/10 y-/z- on immediately adjacent possessives (ndugu y-angu m-refu) because low inalienable Poss⁰ merges below the [+ANIMATE] presupposition head"
+        },
+        {
+          left: "Isaac Gould & Tessa Scott (2019, Ch. 23, pp. 441–462)",
+          right: "In Kenyan Swahili relative clauses, the presence of an Object Marker (OM) bleeds low scope reconstruction when the head noun precedes a universal quantifier"
+        },
+        {
+          left: "Derek Nurse (2019, Ch. 33, pp. 649–665)",
+          right: "Northern Swahili dialects (Mwiini, Bajuni, Siu, Pate, Amu) underwent bidirectional contact with southern Somali (Tunni, Dabarre, Maay, Ashraaf, Garre, Boni)"
+        },
+        {
+          left: "Goldsmith & Mpiranya (2022)",
+          right: "Minimum Description Length (MDL) computational segmentation of the Swahili verbal template (Neg-SM-TAM-Rel-OM-Root-Ext-FV)"
+        }
+      ]
+    }
+  ]
+});
