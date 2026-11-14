@@ -2194,7 +2194,7 @@ const _booksZipSources: LanguageSource[] = [
     contribution:
       "Complete 95-page grammatical manual and vocabulary (London: Henry Frowde / OUP, 1903, pp. i–xii, 1–83) recorded in Burao from Drawish & Gibaneh (Musa Arreh, Habr Yunis), Dualeh (Habr Toljaala), and Abdi (Dolbahanta): documents the 6 Somali tribes and outcaste Midgan/Tomal/Yibir, 3 definite article vowel grades (-ki/-ti, -ka/-ta, -ku/-tu), 4 demonstratives (kan/tan, kèr/tèr, kas/tas, kò/tò), inclusive innaga vs. exclusive annaga, numerals, verb conjugations, categorized vocabularies, conversational phrases, and 2 verbatim stories (Two Fools & Two Starving Orphans, pp. 80–83).",
     appUses: ["dictionary", "comparative translator", "grammar lessons", "course lessons", "cultural wisdom", "blog research"],
-    contentTypes: ["grammar", "vocabulary", "dialogue", "proverbs"],
+    contentTypes: ["grammar", "vocabulary", "dialogue", "cultural-reference"],
     ingestionStatus: "integrated",
     coverageNote:
       "Audited and integrated 100% line-by-line (pp. i–xii, 1–83) into somali/grammar-reference.ts, somali/course.ts, proverbs/somali.ts, dictionary-search.ts, kenya-languages.json, and blog-posts.ts.",
