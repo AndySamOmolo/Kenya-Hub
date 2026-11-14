@@ -5398,3 +5398,995 @@ export const SWAHILI_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ============================================================
+// Complete Unit 19 & Unit 1/2 Verification for Bishop Edward Steere (1870)
+// "Swahili Tales, as Told by Natives of Zanzibar" (pp. i–xvi, 1–504)
+// ============================================================
+const _unit1 = SWAHILI_UNITS.find((u) => u.id === "swahili-unit-1");
+if (_unit1) {
+  for (const sk of _unit1.skills) {
+    for (const w of sk.words) {
+      if (w.target === "Haraka haraka haina baraka") {
+        w.hint = "Steere (1870, p. 192, Mifano #1) & W. E. Taylor (1891, Proverb #86)";
+      } else if (w.target.startsWith("Mtaka cha mvunguni")) {
+        w.hint = "W. E. Taylor (1891, p. 71 #316) & Steere & Madan (1894)";
+      } else if (w.target === "Haba na haba hujaza kibaba") {
+        w.hint = "W. E. Taylor (1891, p. 13 #70) & Steere & Madan (1894)";
+      }
+    }
+    for (const s of sk.sentences) {
+      if (s.target === "Haba na haba hujaza kibaba.") {
+        s.source = "Little by little fills the measure (Taylor 1891 #70 & Steere 1894).";
+      }
+    }
+  }
+}
+
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-19",
+  "title": "Unit 19: Bishop Edward Steere's (1870) 'Swahili Tales, as Told by Natives of Zanzibar' — 18 Tales, 20 Mifano, 14 Vitendawili, Liongo & Gungu Poetics, and 103 Notes",
+  "description": "Master the complete oral narratives, 20 verbatim Mifano proverbs (pp. 191–195), 14 Vitendawili riddles (pp. 417–421 & p. 492), Kimvita vs. Kiunguja vs. Kingozi/Kiamu poetics, 37 italicized terms (p. 490), 103 ethnographic notes (pp. 490–503), and 12 corrigenda (p. 504) of Steere (1870).",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "swahili-steere-1870-mifano-vitendawili-19-1",
+      "title": "All 20 Verbatim Mifano (pp. 191–195) & 14 Vitendawili (pp. 417–421, Note 6 p. 492)",
+      "icon": "Sparkles",
+      "description": "Learn all 20 proverbs (Mifano #1–#20) and 14 riddles (Vitendawili #1–#14) dictated by Hamisi wa Kayi in Steere (1870).",
+      "tips": "In Steere (1870, pp. 191–195), Mifano #1–#20 include Haraka, haraka, haina baraka (#1), Ulimi hauna mfupa (#2, Note 62), Mvunda nti mwana nti, mgeni mzo mpima (#3), Kipya kinyemi, kigawa kionda (#4, Note 63), Mbio za sakafuni hwisha ukingoni (#5, Note 64), Kazi mbi si mtezo mwema? (#6), Kilimia kikizama kwa jua... (#8, Corrigenda p. 504), Abadi, abadi, ukambaa watinda jiwe (#13, Note 65), Ndovu wawili wakisongana ziumiazo nyika (#14), Kikulacho kinguoni mwako (#17), and Ametumbukia kisimani (#20, Note 66).",
+      "words": [
+        {
+          "target": "(1) Haraka, haraka, haina baraka • (2) Ulimi hauna mfupa • (3) Mvunda nti mwana nti, mgeni mzo mpima • (4) Kipya kinyemi, kigawa kionda • (5) Mbio za sakafuni hwisha ukingoni",
+          "source": "(1) Hurrying has no blessing • (2) The tongue has no bone • (3) The destroyer of the country is a child of the country; a stranger does not weigh two hundred-weight • (4) A new thing is good, though it be a sore • (5) Running on a flat stone roof ends at the edge",
+          "pronunciation": "ha-ra-ka ha-ra-ka / u-li-mi / m-vu-nda n-ti / ki-pya ki-nye-mi / m-bi-o za sa-ka-fu-ni",
+          "hint": "Steere (1870, pp. 192–193, Mifano #1–#5 & Notes 62–64, p. 499)"
+        },
+        {
+          "target": "(6) Kazi mbi si mtezo mwema? • (8) Kilimia kikizama kwa jua, huzuka kwa mvua • (11) Angurumapo simba, mteza nani? • (12) Saburi ni ufunguo wa faraja • (13) Abadi, abadi, ukambaa watinda jiwe",
+          "source": "(6) Is not poor work good play? • (8) If the Pleiades set in sun, they rise in rain (Corrigenda p. 504) • (11) Who will dance to a lion's roaring? • (12) Patience is the key of consolation • (13) Continually, the well-cord cuts the stone",
+          "pronunciation": "ka-zi m-bi / ki-li-mi-a / a-ngu-ru-ma-po si-mba / sa-bu-ri / a-ba-di u-ka-mba-a",
+          "hint": "Steere (1870, pp. 192–195, Mifano #6, #8, #11–#13, Note 65 p. 499 & Corrigenda p. 504)"
+        },
+        {
+          "target": "(14) Ndovu wawili wakisongana ziumiazo nyika • (15) Udongo upate uli maji • (16) Mlevi wa mvinyo hulevuka, mlevi wa mali halevuki • (17) Kikulacho kinguoni mwako • (19) Usubi aweza kupenya mote • (20) Ametumbukia kisimani",
+          "source": "(14) When two elephants struggle it is the grass that suffers • (15) Use your clay while it is wet • (16) Drunk with wine gets sober; drunk with wealth does not • (17) What bites is in your own clothes • (19) A sand-fly can get through anything • (20) He has fallen into a well (got into a scrape)",
+          "pronunciation": "ndo-vu wa-wi-li / u-do-ngo / m-le-vi wa ma-li / ki-ku-la-cho / u-su-bi / ki-si-ma-ni",
+          "hint": "Steere (1870, pp. 194–195, Mifano #14–#20 & Note 66, p. 499)"
+        },
+        {
+          "target": "Kitendawili! — Tega! • Nipe mji! — Unguja / Mvita / Kilwa • (1) Yayi • (2) Nanasi • (3) Nyota • (4) Kitanda • (5) Kisima • (6) Fuu • (7) Jua • (8) Kata • (9–10) Mkufu • (11) Nyele • (12) Utelezi • (13) Macho • (14) Kisuto / Mate ya tambuu",
+          "source": "Riddle challenge & prize-town protocol + all 14 riddle solutions: (1) Egg, (2) Pineapple, (3) Stars, (4) Bedstead, (5) Well, (6) Fuu fruit, (7) Sun, (8) Coconut ladle, (9–10) Chain, (11) Hair, (12) Slipping, (13) Eyes, (14) Red betel spittle",
+          "pronunciation": "ki-te-nda-wi-li te-ga / ni-pe m-ji / ya-yi / na-na-si / nyo-ta / ki-su-to",
+          "hint": "Steere (1870, pp. 417–421, Enigmas #1–#13 & Note 6, p. 492)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ndovu wawili wakisongana ziumiazo nyika; abadi, abadi, ukambaa watinda jiwe.",
+          "source": "When two elephants struggle it is the grass that suffers; continually, continually, the well-cord cuts the stone (Steere 1870, pp. 194–195, Mifano #13–#14)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Bishop Edward Steere's 'Swahili Tales' (1870, pp. 192–195 & Notes 64–66, p. 499), what are the exact Swahili texts and meanings of Mifano #5, #13, and #14?",
+          "correctAnswer": "#5 'Mbio za sakafuni hwisha ukingoni' (Running on a flat stone roof ends at the edge); #13 'Abadi, abadi, ukambaa watinda jiwe' (Continually, the well-cord cuts the stone); #14 'Ndovu wawili wakisongana ziumiazo nyika' (When two elephants struggle it is the grass that suffers)",
+          "options": [
+            "#5 'Mbio za sakafuni hwisha ukingoni' (Running on a flat stone roof ends at the edge); #13 'Abadi, abadi, ukambaa watinda jiwe' (Continually, the well-cord cuts the stone); #14 'Ndovu wawili wakisongana ziumiazo nyika' (When two elephants struggle it is the grass that suffers)",
+            "#5 'Mpanda farasi wawili'; #13 'Usipoziba ufa'; #14 'Ahadi ni deni'",
+            "#5 'Kidole kimoja'; #13 'Kimya kingi'; #14 'Akili mali'",
+            "#5 'Maji yakimwagika'; #13 'Kikulacho'; #14 'Mtu ni watu'"
+          ],
+          "hint": "See Steere (1870, pp. 192–195 & Notes 64–65, p. 499)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Swahili riddle (Kitendawili) from Steere (1870, pp. 417–421 & Note 6, p. 492) with its exact solution:",
+          "correctAnswer": "Tandika kitanga, tule kunazi: Nyota (The stars — Riddle #3, p. 418)",
+          "pairs": [
+            {
+              "left": "Tandika kitanga, tule kunazi",
+              "right": "Nyota (The stars — Riddle #3, p. 418)"
+            },
+            {
+              "left": "Watoto wangu wana vilemba, asio kilemba si mwanangu",
+              "right": "Fuu (Fuu fruit in its calyx cup — Riddle #6, p. 418)"
+            },
+            {
+              "left": "Parra hatta Maka / Ntipo mbili zavuka mto",
+              "right": "Utelezi (Slipping) / Macho (The eyes — Riddles #12–#13, p. 420)"
+            },
+            {
+              "left": "Nimekwenda njiani, nimeona kisuto; mwenyi kisuto sikumwona",
+              "right": "Mate ya tambuu (Red betel-nut spittle — Note 6, p. 492)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-steere-1870-tales-liongo-gungu-notes-19-2",
+      "title": "18 Prose Tales, Liongo Fumo & Gungu Poetics, 37 Italicized Words & 103 Notes (pp. 1–504)",
+      "icon": "Award",
+      "description": "Explore the 6 informants, Kimvita 'Kititi, na Fisi, na Simba', 'Hadithi ya Liongo', Kingozi–Kiunguja poetry, wedding/culinary/plantation notes, and 12 corrigenda.",
+      "tips": "Steere (1870) contrasts Kiunguja, Kimvita (pp. 325–329: kititi = sungura, tinyango = chinyango, kitoka = shoka, mtanga = mchanga, mato = macho, tini = chini), and archaic Kingozi/Kiamu (pp. 455–483: mja = mtumwa, mbasi = rafiki, mwana = bibi, mbwene = nimeona, tima = moyo, mawi = mavi, zema = njema).",
+      "words": [
+        {
+          "target": "Kititi (Kimvita) = Sungura (Kiunguja) • tinyango = chinyango • kitoka = shoka • mtanga = mchanga • mato = macho • tini = chini",
+          "source": "Hare/rabbit • small piece of meat • small axe • sand • eyes • below/down (Mombasa Kimvita vs. Zanzibar Kiunguja in 'Kititi, na Fisi, na Simba', pp. 325–329 & Notes 82–88)",
+          "pronunciation": "ki-ti-ti / ti-nya-ngo / ki-to-ka / m-ta-nga / ma-to / ti-ni",
+          "hint": "Steere (1870, pp. 325–329 & Notes 82–88, pp. 501–502, narrated by Kathi Mohammed bin Abd en Nuri)"
+        },
+        {
+          "target": "Liongo Fumo (Shanga / Ozi) • Kijakazi Saa • tupa & chachu • pingu & minyororo • kikoa • sindano ya shaba kitovuni • Mashairi ya Liongo (Muyuweni)",
+          "source": "Hero of the Kenyan coast • Slave-girl Saa • Steel file & millet bran • Fetters & chains • Rotational feast • Copper needle in the navel • 29 five-line takhmisi stanzas + 7-stanza Epilogue",
+          "pronunciation": "li-o-ngo fu-mo / ki-ja-ka-zi sa-a / tu-pa / cha-chu / ki-ko-a / si-nda-no ya sha-ba",
+          "hint": "Steere (1870, pp. 439–471 & Notes 99–103, p. 503)"
+        },
+        {
+          "target": "Kingozi / Kiamu → Kiunguja: Mja → Mtumwa • Mbasi → Rafiki • Mwana → Bibi • Mbwene → Nimeona • Tima → Moyo • Mawi → Mavi • Zema → Njema • Mewaza → Nimefikiri",
+          "source": "Servant/bondsman • Friend • Lady/mistress • I have seen (archaic -ene perfect) • Heart • Dung/refuse • Good things • I have pondered ('Mashairi ya Liongo' & 'Utumbuizo wa Gungu', pp. 455–483)",
+          "pronunciation": "m-ja / m-ba-si / mwa-na / m-bwe-ne / ti-ma / ma-wi / ze-ma / me-wa-za",
+          "hint": "Steere (1870, pp. 455–483, transcribed and glossed by Hassan bin Yusuf)"
+        },
+        {
+          "target": "Mahari, Kilemba, Mkaja & Ubeleko (Note 16) • Kungwi, Kifungua mlango, Kiosha miguu & Kipa mkono (Note 17) • Fungate (Note 1) • Msimamizi, Nokoa & Kadamu (Note 68) • Bumunda (Note 76) & Ladu (Note 77)",
+          "source": "Bride's dower, father's turban, mother's belt & baby-sling gifts • Bridal matron & 3 groom fees • 7-day wedding feast • Arab plantation overlooker, 1st & 2nd slave foremen • Soft mtama meal dumpling & spiced sesame-treacle ball",
+          "pronunciation": "ma-ha-ri ki-le-mba m-ka-ja u-be-le-ko / ku-ngwi / fu-nga-te / m-si-ma-mi-zi no-ko-a ka-da-mu / bu-mu-nda la-du",
+          "hint": "Steere (1870, Notes #1, #16, #17, #68, #76, #77, pp. 490–501)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ewe kijakazi nakutuma, ukatumike: kamwambie mama, mwana muinga amelimuka, afanye mkate, katikati tupa aike.",
+          "source": "O slave-girl, I send you to be sent: go tell my mother her simple son has grown wise; let her make a loaf and put a file in the middle (Steere 1870, Hadithi ya Liongo, p. 442)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Bishop Edward Steere's Ethnographic Notes (1870, Notes #68, #76, and #77, pp. 500–501), what are the exact definitions of 'Msimamizi / Nokoa / Kadamu' (Note 68), 'Bumunda' (Note 76), and 'Ladu' (Note 77)?",
+          "correctAnswer": "Note 68: Msimamizi = Arab plantation overlooker, Nokoa = chief slave foreman, Kadamu = second head slave; Note 76: Bumunda = soft cake/dumpling of mtama meal; Note 77: Ladu = round balls (1–2 in.) of semsem seed, treacle, and spice",
+          "options": [
+            "Note 68: Msimamizi = Arab plantation overlooker, Nokoa = chief slave foreman, Kadamu = second head slave; Note 76: Bumunda = soft cake/dumpling of mtama meal; Note 77: Ladu = round balls (1–2 in.) of semsem seed, treacle, and spice",
+            "Note 68: Three types of dhow sails; Note 76: Coconut grater; Note 77: Betel pouch",
+            "Note 68: Three wedding gifts; Note 76: Roasted fish; Note 77: Clove measure",
+            "Note 68: Three board games; Note 76: Earthenware pot; Note 77: Woven mat"
+          ],
+          "hint": "See Steere (1870, Note 68 p. 500 & Notes 76–77 p. 501)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each archaic Kingozi/Kiamu or Kimvita term in Steere (1870, pp. 325–329, 455–483) with its Kiunguja equivalent and meaning:",
+          "correctAnswer": "Kititi (Kimvita, p. 325): Sungura (Hare / rabbit)",
+          "pairs": [
+            {
+              "left": "Kititi (Kimvita, p. 325)",
+              "right": "Sungura (Hare / rabbit)"
+            },
+            {
+              "left": "Mbwene (Kingozi, pp. 456, 474)",
+              "right": "Nimeona (I have seen — archaic -ene perfect)"
+            },
+            {
+              "left": "Tima & Mbasi (Kingozi, pp. 458, 474)",
+              "right": "Moyo (Heart) & Rafiki (Friend)"
+            },
+            {
+              "left": "Mja & Mwana (Kingozi, pp. 456, 474)",
+              "right": "Mtumwa (Servant/bondsman) & Bibi (Noble lady)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+
+// ── Complete Line-by-Line Verification & Unit 20 Integration of Bishop Edward Steere & A. C. Madan's "A Handbook of the Swahili Language, as Spoken at Zanzibar" (4th Ed., SPCK London, 1894, pp. i–xxii, 1–458 [PDF pp. 1–488]) ──
+const _unit2Steere1894 = SWAHILI_UNITS.find((u) => u.id === "swahili-unit-2");
+const _madanDerivSkill = _unit2Steere1894?.skills.find((s) => s.id === "swahili-verb-derivations-madan");
+if (_madanDerivSkill) {
+  const _kinyumeWord = _madanDerivSkill.words.find((w) => w.target.startsWith("Kinyume"));
+  if (_kinyumeWord) {
+    _kinyumeWord.source =
+      "Syllable-inversion wordplay written out by Johari in Merima dialect (all 52 pairs on pp. 425–426, e.g., Ng'ombe → Mbeng'o, Nyumba → Mbanyu, Mguru → Rumgu ['A leg'], Mwanamuke → Kemwanamu ['A woman'], Kitabu → Bukita)";
+  }
+}
+
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-20",
+  "title": "Unit 20: Steere & Madan (1894) — Complete Swahili Handbook (Taxonomies, 18 Kanzu Parts, 41 Zanzibar Mita & Appendices I–V)",
+  "description": "Master the complete grammatical, lexical, comparative, epistolary, interlinear, phraseological, and metrological corpus of Bishop Edward Steere & A. C. Madan's 'A Handbook of the Swahili Language, as Spoken at Zanzibar' (4th Ed., SPCK London, 1894, pp. i–xxii, 1–458 [PDF pp. 1–488]).",
+  "icon": "Compass",
+  "skills": [
+    {
+      "id": "swahili-steere-1894-part1-taxonomies",
+      "title": "Part I Taxonomies: 26 Coconut Terms, 8 Dhows, 10 Rice Varieties, Calendar & 16 Dollar Fractions (pp. 1–101)",
+      "icon": "Layers",
+      "description": "Study the specialized cultural and technical vocabularies of Part I: the 26 coconut terms, 8 dhow types, 10 rice varieties, 7 evil spirits, lunar/solar calendars, and 16 dollar fractions.",
+      "tips": "In Part I (pp. 1–101), Bishop Steere & A. C. Madan organize Zanzibari nouns and numerals into exhaustive domain taxonomies, including 26 terms for the coconut palm and nut (pp. 33–34), 8 dhow types (p. 38), 10 rice varieties (p. 65), 12 lunar months & 365-day solar miongo decades (pp. 75–77), and 16 fractions of the silver dollar (p. 93).",
+      "culturalNote": "Digitized from the University of Toronto Library copy (PL 8702 S724 1894, inscribed 'CHUO CHA KISWAHILI'), the 1894 Fourth Edition preserves manuscript marginalia on p. 6 (Arabic ligature امغزف for the Kilwa letter amekufa vs. amevuka), p. 429, and p. 453.",
+      "words": [
+        {
+          "target": "upunga → kidaka → kitale → dafu → koroma → nazi → joya → mbata (pp. 33–34)",
+          "source": "The 8 maturation stages of the coconut: flower-embryo → tiny nut → half-grown → milk-drinking stage → nutty-lined → ripe nut → spongy-kernel nut → dried copra",
+          "pronunciation": "u-pu-nga / ki-da-ka / ki-ta-le / da-fu / ko-ro-ma / na-zi / jo-ya / m-ba-ta",
+          "hint": "Steere & Madan (1894, pp. 33–34, plus kichilema/shaha, kilifu, makuti, pakacha, karara, makumbi, usumba, kifuo, mbuzi, tui, kifumbu & chicha)"
+        },
+        {
+          "target": "Dau • Mtepe • Betela • Bágala (mlingote wa kalmi) • Ghangi • Batili • Bedeni • Awesia (p. 38)",
+          "source": "The 8 named coastal dhow vessels: sharp-sterned flat-bottomed dau, sewn square-rigged mtepe, ordinary boat-sterned betela, high-pooped two-masted bágala, ghangi, long sharp-prowed batili, upright-prowed bedeni & awesia",
+          "pronunciation": "da-u / m-te-pe / be-te-la / ba-ga-la / gha-ngi / ba-ti-li / be-de-ni / a-we-si-a",
+          "hint": "Steere & Madan (1894, p. 38, with duumi, gubeti, shetri, makanadili, darumeti, deheni & feuli)"
+        },
+        {
+          "target": "Bungala • Kapwai • Madevu • Uchukwi • Kimoto • Sifara • Kichooko • Shindano • Sena • Bora kupata (p. 65)",
+          "source": "The 10 named varieties of rice (mpunga / mchele / wali / ukoko / masalufu) cultivated on the Zanzibar coast",
+          "pronunciation": "bu-nga-la / ka-pwa-i / ma-de-vu / u-chu-kwi / ki-mo-to / si-fa-ra / ki-cho-o-ko / shi-nda-no / se-na / bo-ra ku-pa-ta",
+          "hint": "Steere & Madan (1894, p. 65)"
+        },
+        {
+          "target": "Siku a mwaka (Kigunzi) • Mwongo mosi (10 days) to Mwongo miamoja wa sitini • Daakuu (2:30 A.M.) • Mafungulia ng'ombe makuu (8 A.M.) & madogo (9 A.M., pp. 75–77)",
+          "source": "New Year's Day (day before the 1st of the 365-day solar/nautical year) • 10-day decades • 2:30 A.M. Ramathan meal gun • Major (8 A.M.) & minor (9 A.M.) cattle-unloosing hours",
+          "pronunciation": "si-ku a mwa-ka / ki-gu-nzi / mwo-ngo mo-si / da-a-ku-u / ma-fu-ngu-li-a ng'o-mbe",
+          "hint": "Steere & Madan (1894, pp. 75–77, alongside the 12 Arab/Swahili lunar months Mfunguo wa mosi to Ramathani)"
+        },
+        {
+          "target": "Nuss ya themuni (1/16) • Themuni / Ze'mni (1/8) • Zerenge (1/5) • Robo (1/4) • Nuss (1/2) • Kassa robo (3/4) • Kassa themuni (7/8) • Kassa nuss ya themuni (15/16, p. 93)",
+          "source": "The 16 fractions of a silver dollar (reale) in Zanzibari accounting, plus the 5 coin types: reale ya mizinga (Pillar dollar), reale ya Sham, reale ya thahabu ($20 gold), reale ya kifransa / bwara (5-franc piece, p. 39)",
+          "pronunciation": "nuss ya the-mu-ni / the-mu-ni / ze-re-nge / ro-bo / nuss / ka-ssa ro-bo / ka-ssa the-mu-ni",
+          "hint": "Steere & Madan (1894, pp. 39, 93)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kesho na kesho ni madanganya, ao ni makatazanya. — Si madanganya wala si makatazanya, ni mazuizanya.",
+          "source": "To-morrow and to-morrow are deceivers, or are they forbidders? — They are not deceivers nor forbidders, they are hinderers (Dr. Krapf's Delay Proverb, Steere & Madan 1894, p. 48)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Bishop Edward Steere & A. C. Madan's 'A Handbook of the Swahili Language' (1894, pp. 33–34), what is the exact chronological order of the 8 maturation stages of the coconut fruit?",
+          "correctAnswer": "upunga (flower-embryo) → kidaka (tiny nut) → kitale (half-grown) → dafu (full size with milk, no nutty rind) → koroma (nutty lining formed) → nazi (full ripe nut) → joya (filled with spongy substance) → mbata (dried copra)",
+          "options": [
+            "upunga (flower-embryo) → kidaka (tiny nut) → kitale (half-grown) → dafu (full size with milk, no nutty rind) → koroma (nutty lining formed) → nazi (full ripe nut) → joya (filled with spongy substance) → mbata (dried copra)",
+            "nazi → dafu → kitale → kidaka → upunga → koroma → mbata → joya",
+            "makumbi → usumba → kifuo → kifuu → tui → chicha → pakacha → karara",
+            "bungala → kapwai → madevu → uchukwi → kimoto → sifara → shindano → sena"
+          ],
+          "hint": "See Steere & Madan (1894, Part I Substantives, s.v. Coco-nut, pp. 33–34)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each dollar fraction or time division in Steere & Madan (1894, pp. 75–77, 93) with its exact meaning:",
+          "correctAnswer": "Nuss ya themuni & Kassa nuss ya themuni (p. 93): 1/16 of a dollar & 15/16 of a dollar ('less 1/16')",
+          "pairs": [
+            {
+              "left": "Nuss ya themuni & Kassa nuss ya themuni (p. 93)",
+              "right": "1/16 of a dollar & 15/16 of a dollar ('less 1/16')"
+            },
+            {
+              "left": "Themuni (Ze'mni) & Zerenge (p. 93)",
+              "right": "1/8 of a dollar & 1/5 of a dollar"
+            },
+            {
+              "left": "Daakuu & Mafungulia ng'ombe makuu / madogo (p. 77)",
+              "right": "2:30 A.M. Ramathan meal gun & 8 A.M. / 9 A.M. cattle-unloosing hours"
+            },
+            {
+              "left": "Siku a mwaka (Kigunzi) & Miongo (pp. 75–76)",
+              "right": "New Year's Day of the 365-day solar/nautical year & 10-day decades"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-steere-1894-part2-kanzu-mita",
+      "title": "Part II Lexicon & Comparative Tables: 18 Kanzu Parts, 41 Zanzibar Mita & 9 Bantu Languages (pp. 234–421)",
+      "icon": "MapPin",
+      "description": "Master the 9-language Bantu prefix table (p. 234), dialect sound correspondences (p. 243), the 18 named parts of a man's Kanzu (p. 299), and all 41 named Mita of Zanzibar Town (pp. 346–347).",
+      "tips": "Part II (pp. 239–421) opens with 12 morphological stripping rules and the Coastal Dialect Sound-Correspondence Table (p. 243), followed by ~5,500 Swahili–English entries including the 18 tailoring parts of a Kanzu (p. 299) and all 41 quarters (Mita) of Zanzibar Town (pp. 346–347).",
+      "words": [
+        {
+          "target": "Tao la kanzu • Magongo nene • Badani (Kimo) • Taharizi • Sijafu • Vikwapa • Lisani • Jabali • Mhalbori • Kaaba • Shada • Kitanzi • Kazi ya shingo (Tiki, Mrera, Viboko, Vinara) • Darizi • Mjuzi (shararaji) • Mkia wa mjuzi • Vipaji (viguu) • Kanzu ya ziki (p. 299)",
+          "source": "All 18 named parts of a Zanzibari man's Kanzu tunic: bottom hem, broad/narrow seams, body strip, side gores, breast linings, gussets, under-flap, neck stitching, red silk braid, back piece, tassel, loop, 4 neck embroidery rows, chest line, point & tail, side eyelets, and white cotton embroidery",
+          "pronunciation": "ta-o la ka-nzu / ba-da-ni / ta-ha-ri-zi / si-ja-fu / vi-kwa-pa / li-sa-ni / ka-zi ya shi-ngo / ti-ki m-re-ra vi-bo-ko vi-na-ra / m-ju-zi / vi-pa-ji",
+          "hint": "Steere & Madan (1894, Part II, s.v. Kanzu, p. 299)"
+        },
+        {
+          "target": "30 Peninsula Mita of Zanzibar Town: Shangani, Baghani, Gerezani, Forthani, Mita ya pwani, Kiponda, Mbuyuni, Malindi, Funguni, Jungiani, Kokoni, Mkunazini, Kibokoni, Kidutani, Mzambarauni, Kijukakuni, Vuga, Mnazimoja, Mji mpya, Mtakuja, Jumea, Soko la Mahogo, Kajificheni, Mfuuni, Migomboni, Tiuyani, Sham, Hurumzi, Kutani, Mwavi (pp. 346–347)",
+          "source": "All 30 named quarters (Mita) on the Stone Town peninsula of Zanzibar documented in Steere & Madan (1894, pp. 346–347)",
+          "pronunciation": "sha-nga-ni / ba-gha-ni / ge-re-za-ni / fo-rtha-ni / ki-po-nda / ma-li-ndi / fu-ngu-ni / m-ku-na-zi-ni / vu-ga / ka-ji-fi-che-ni / hu-ru-mzi",
+          "hint": "Steere & Madan (1894, Part II, s.v. Mta, pp. 346–347)"
+        },
+        {
+          "target": "11 Ng'ambo Mita Across the Creek: Ng'ambo, Mchangani, Gulioni, Kwa Buki, Vikokotoni, Kisimani kwa kema, Mchinjani, Mwembe mjugu, Kikwajuni, Mkadini, Mnazi moja (p. 347)",
+          "source": "All 11 named quarters (Mita) on the other side of the creek at Ng'ambo in Zanzibar Town",
+          "pronunciation": "ng'a-mbo / m-cha-nga-ni / gu-li-o-ni / kwa bu-ki / vi-ko-ko-to-ni / ki-si-ma-ni kwa ke-ma / m-chi-nja-ni / mwe-mbe m-ju-gu / ki-kwa-ju-ni / m-ka-di-ni",
+          "hint": "Steere & Madan (1894, Part II, s.v. Mta, p. 347)"
+        },
+        {
+          "target": "Zanzibar ch = t (M.) • e = a (M.) • h = kh (Ar.) • j = d (M.) / y (A., N.) • t = ch (Ozi.) • v = z (A.) • z = v (Mer.) / th (Patta & Ozi.) / j (vulgar, p. 243)",
+          "source": "Steere's Coastal Dialect Sound-Correspondence Table linking Zanzibar (Kiunguja), Mombasa (M.), Lamu (A.), Merima (Mer.), and Patta/Ozi",
+          "pronunciation": "za-nzi-bar / mo-mba-sa / la-mu / me-ri-ma / pa-tta / o-zi",
+          "hint": "Steere & Madan (1894, Part II Preliminary Observations, p. 243)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kooo! — Mwigo! — Kooo! — Niagulie! — Kooo! — Kwema nendako? — Kooo!",
+          "source": "Kooo! — You mwigo! — Kooo! — Prophesy for me! — Kooo! — Is it good where I am going? — Kooo! (Traveler's omen-bird dialogue, Steere & Madan 1894, s.v. Mwigo, p. 352)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Steere & Madan (1894, Part II, s.v. Kanzu, p. 299), what are the four named varieties of red-silk stitching that make up the 'Kazi ya shingo' (neck-work) of a Zanzibari man's Kanzu?",
+          "correctAnswer": "Tiki (innermost pattern closest to the neck), Mrera (first pattern beyond tiki), Viboko (zigzags beyond mrera), and Vinara (little spots beyond the zigzags)",
+          "options": [
+            "Tiki (innermost pattern closest to the neck), Mrera (first pattern beyond tiki), Viboko (zigzags beyond mrera), and Vinara (little spots beyond the zigzags)",
+            "Shangani, Baghani, Gerezani, and Forthani",
+            "Wakia, Rattel, Mani, and Frasila",
+            "Jaa, Kutubu, Matlai, and Magaribi"
+          ],
+          "hint": "See Steere & Madan (1894, p. 299, s.v. Kanzu #13)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each item from Part II of Steere & Madan (1894, pp. 243, 287, 346–349) with its exact description:",
+          "correctAnswer": "Shangani, Baghani, Vuga, Kajificheni & Hurumzi (pp. 346–347): Named Mita (quarters) on the Stone Town peninsula of Zanzibar",
+          "pairs": [
+            {
+              "left": "Shangani, Baghani, Vuga, Kajificheni & Hurumzi (pp. 346–347)",
+              "right": "Named Mita (quarters) on the Stone Town peninsula of Zanzibar"
+            },
+            {
+              "left": "Mchangani, Gulioni, Kwa Buki, Vikokotoni & Kikwajuni (p. 347)",
+              "right": "Named Mita (quarters) across the creek at Ng'ambo in Zanzibar Town"
+            },
+            {
+              "left": "Wahadimu & Munyi mkuu at Dunga (pp. 82, 349)",
+              "right": "Original inhabitants of Zanzibar paying $2 per house shared between Seyed Majid and their royal family"
+            },
+            {
+              "left": "Hua dove calls (s.v. Hua, p. 287)",
+              "right": "'Mama akafa, Baba akafa, nimesalia mimi, tu, tu, tu, tu, tu' & 'Kuku mfupa mtupu, mimi nyama tele tele tele'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-steere-1894-appendices-1-to-5",
+      "title": "Appendices I–V: 52 Kinyume Pairs, 4 Letters/Poems, Interlinear Tale, 197 Phrases & 32-Point Compass (pp. 423–458)",
+      "icon": "Compass",
+      "description": "Master Johari's 52 Merima Kinyume specimens (pp. 425–426), the 4 letters/poems (pp. 427–429), the interlinear tale of Sinébar (pp. 431–442), the 197 phrases (pp. 443–453), and Appendix V's weights, measures, and 32-Point Compass (pp. 455–458).",
+      "tips": "In Appendix I (pp. 425–426), Johari's 52 Merima-dialect Kinyume pairs move only the single last syllable to the front (e.g., Mguru → Rumgu 'A leg', Mwanamuke → Kemwanamu 'A woman', Njara inaniuma → Ranja mainaniu 'I ache with hunger'). Appendix V (pp. 455–458) records the 47 dollars = 100 rupees scale, regional kanda capacities, and all 32 points of the Zanzibar compass.",
+      "words": [
+        {
+          "target": "Ng'ombe → Mbeng'o • Mbuzi → Zimbu • Punda → Ndapu • Nyamiya → Yangami • Nyumba → Mbanyu • Mwanamuke → Kemwanamu • Mguru → Rumgu • Njara inaniuma → Ranja mainaniu • Twende zetu → Tutwendeze • Senendi → Ndisene • Mutu → Tumu • Msahafu → Fumsaha (Appendix I, pp. 425–426)",
+          "source": "Johari's 52 verbatim Merima-dialect Kinyume syllable-inversion pairs (ox, goat, donkey, camel, house, woman, leg, 'I ache with hunger', 'Let us be off', 'I am not going', man, Koran)",
+          "pronunciation": "mbe-ng'o / zi-mbu / nda-pu / ya-nga-mi / mba-nyu / ke-mwa-na-mu / ru-mgu / ra-nja ma-i-na-ni-u / tu-twe-nde-ze / ndi-se-ne",
+          "hint": "Steere & Madan (1894, Appendix I, pp. 425–426)"
+        },
+        {
+          "target": "Risala enda kwa hima / Kwa Edward Istira... (16 lines, p. 428) • Hatukiati kisiwa kwa uvambume na upembe... (Pemba–Mombasa quatrain, p. 429) • Hadithi ya Waridi, na Ureda, na Jindi, na Sinébar (kofia mbovu & taa mbovumbovu ya chuma, pp. 431–442)",
+          "source": "16-line poetic epistle to Edward Steere & Pemba–Mombasa quatrain (Appendix II) • Interlinear tale of Sinébar with the 7-headed snake, magic invisibility cap & magic iron lamp (Appendix III)",
+          "pronunciation": "ri-sa-la e-nda kwa hi-ma / ha-tu-ki-a-ti ki-si-wa / wa-ri-di u-re-da ji-ndi si-ne-bar / ko-fi-a m-bo-vu / ta-a m-bo-vu-m-bo-vu ya chu-ma",
+          "hint": "Steere & Madan (1894, Appendices II & III, pp. 427–442)"
+        },
+        {
+          "target": "47 dollars (reale) = 100 rupees (rupia) • 3 robo pesa = 1 pesa • Dunga = saa 'nne (4 hrs) & Kokotoni = saa sita (6 hrs) • Kanda at Kwale/Mgao/Mvita (rice 10–12 pishi, maize 10 pishi) vs. Pangani/Tanga/Mtang'ata (rice 15–17 pishi, maize 13–13½ pishi, pp. 455–457)",
+          "source": "Appendix V currency scale, walking-hour distances in Zanzibar, and regional matting-bag (kanda) grain capacities furnished to Rev. P. L. Jones-Bateman",
+          "pronunciation": "re-a-le / ru-pi-a / ro-bo pe-sa / du-nga sa-a 'nne / ko-ko-to-ni sa-a si-ta / ka-nda / pi-shi",
+          "hint": "Steere & Madan (1894, Appendix V, pp. 455–457)"
+        },
+        {
+          "target": "32-Point Compass (p. 458): North = Jaa • South = Kutubu • East = Matlai • West = Magaribi • N. to E./W.: Faragadi, Nash, Nagr, Luagr, Dayabu, Semak, Seria • S. of E./W.: Sosa, Tiri, Lakadiri, Lakarabu, Hamareni, Seheli, Sonoobari (Matlai / Magaribi)",
+          "source": "All 32 points of the Zanzibar mariner's star-compass in Appendix V (p. 458; cf. pp. 329, 334 Matlaa/Maghrib ayuk & akrab)",
+          "pronunciation": "ja-a / ku-tu-bu / ma-tla-i / ma-ga-ri-bi / fa-ra-ga-di / na-sh / na-gr / lu-a-gr / da-ya-bu / se-ma-k / se-ri-a / so-sa / ti-ri / la-ka-di-ri / la-ka-ra-bu / ha-ma-re-ni / se-he-li / so-no-o-ba-ri",
+          "hint": "Steere & Madan (1894, Appendix V, p. 458)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Unayo haja tena? — Sina haja ila haja yangu uwe na afya. / Haja yangu ya kuishi wewe sana na furaha.",
+          "source": "Is there anything else you want? — I want nothing save that I wish you health. / What I want is that you may live long and happily (Phrase #197, Steere & Madan 1894, p. 453, with reader's vocalized Ajami transcription)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Appendix I of Steere & Madan (1894, pp. 425–426, written out by Johari in the Merima dialect), how are 'A woman' and 'A leg' actually inverted into Kinyume?",
+          "correctAnswer": "'Mwanamuke' → 'Kemwanamu' (A woman) and 'Mguru' → 'Rumgu' (A leg)",
+          "options": [
+            "'Mwanamuke' → 'Kemwanamu' (A woman) and 'Mguru' → 'Rumgu' (A leg)",
+            "'mwanamke' → 'mkemwana' and 'mguu' → 'umgu'",
+            "'mkono' → 'nomko' and 'kisu' → 'suki'",
+            "'mtoto' → 'tomto' and 'chakula' → 'kulacha'"
+          ],
+          "hint": "Johari's Merima-dialect list moves only the single final syllable to the front (pp. 425–426 #15 & #24)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each bearing from the 32-Point Compass on p. 458 of Steere & Madan (1894) with its exact Swahili star-name:",
+          "correctAnswer": "N. by E. / N.N.E. / N.E. by N. / N.E. (p. 458): Faragadi Matlai / Nash Matlai / Nagr Matlai / Luagr Matlai",
+          "pairs": [
+            {
+              "left": "N. by E. / N.N.E. / N.E. by N. / N.E. (p. 458)",
+              "right": "Faragadi Matlai / Nash Matlai / Nagr Matlai / Luagr Matlai"
+            },
+            {
+              "left": "N.E. by E. / E.N.E. / E. by N. (p. 458)",
+              "right": "Dayabu Matlai / Semak Matlai / Seria Matlai"
+            },
+            {
+              "left": "E. by S. / E.S.E. / S.E. by E. / S.E. (p. 458)",
+              "right": "Sosa Matlai / Tiri Matlai / Lakadiri Matlai / Lakarabu Matlai"
+            },
+            {
+              "left": "S.E. by S. / S.S.E. / S. by E. / South (p. 458)",
+              "right": "Hamareni Matlai / Seheli Matlai / Sonoobari Matlai / Kutubu"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+
+// ── Unit 21: Complete Line-by-Line Integration of Mrs. F. Burt & Rev. W. E. Taylor's "Swahili Grammar and Vocabulary" (SPCK London, 1910, Book pp. 1–252 [PDF pp. 1–260]) ──
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-21",
+  "title": "Unit 21: Mrs. F. Burt & Rev. W. E. Taylor (1910) — Mombasa (Ki-Mvita) Dialect Tables I–IV, Phonetic Exercises 1–21, 21 Studies, 3 Mombasa Letters (A.H. 1324), Synonyms & All 44 Homonym Groups",
+  "description": "Master the complete Mombasa (Ki-Mvita) Swahili grammar, Rev. W. E. Taylor's Dialect Tables I–IV & Phonetic Exercises 1–21, all 21 Daily-Life Studies, 10 Noun Classes (including Class VI Monster Class), the 23-form kufunga derivative table, Mombasa Money/Weights/Measures, the 3 Mombasa Letters of A.H. 1324 (1906 CE), Synonym Groups, and all 44 Aspirated/Dental Homonym Groups from Mrs. F. Burt's 'Swahili Grammar and Vocabulary' (SPCK London, 1910).",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "swahili-burt-1910-taylor-dialects-phonetics-21",
+      "title": "Rev. W. E. Taylor's Dialect Tables I–IV, Phonetic Exercises 1–21 & Complete Syllabary (Part I, pp. 7–23)",
+      "icon": "Volume2",
+      "description": "Compare Southern (Ki-Unguja, Ki-P'emba, Ki-Mrima), Central (Ki-Mvita), and Northern (Ki-Amu, Ki-Pate, Ki-Gunya, Ki-ti-kuu) Swahili across Tables I–IV and master Taylor's 21 graded ear/voice exercises.",
+      "tips": "In Part I (pp. 7–23), Rev. W. E. Taylor introduces the 'Sandwiching' pronunciation drill (10 repetitions by the native teacher, 1 by the student, 1 by the teacher, then 1 by the student between 2 teacher repetitions, p. 11) and contrasts cerebral t/d against dental *t*/*d*, sonant m'/n', and aspirated ch'/p'/k'/t'/*t*'.",
+      "culturalNote": "Drawn up by Mrs. F. Burt (signed A. E. B., Bourne End Parsonage, Boxmoor, 1910) on the Berlitz method, with Part I and the Syllabary contributed by Rev. W. E. Taylor, M.A. (author of African Aphorisms, 1891, and Giryama Vocabulary and Collections, 1891).",
+      "words": [
+        {
+          "target": "ninakuja (Southern: Ki-Unguja) / naja (Central: Ki-Mvita) / niyao (Northern: Ki-Amu)",
+          "source": "I am coming (Table III Three-Way Dialect Divergence, p. 9)",
+          "pronunciation": "ni-na-ku-ja / na-ja / ni-ya-o",
+          "hint": "Burt & Taylor (1910, Part I, Table III, p. 9)"
+        },
+        {
+          "target": "nawapenda (Central & Northern) vs. ninakupendani (Southern 'barbarous' form, p. 9)",
+          "source": "I love you [plural] (Table II Central & Northern vs. Southern, p. 9)",
+          "pronunciation": "na-wa-pe-nda / ni-na-ku-pe-nda-ni",
+          "hint": "Burt & Taylor (1910, Part I, Table II, p. 9)"
+        },
+        {
+          "target": "-akwe (Central: Ki-Mvita) vs. -ake (Southern & Northern, p. 9)",
+          "source": "His / Her / Its (Table IV Central advantage avoiding ambiguity with wake 'females', p. 9)",
+          "pronunciation": "a-kwe / a-ke",
+          "hint": "Burt & Taylor (1910, Part I, Table IV, p. 9)"
+        },
+        {
+          "target": "au, ai!, oa, ua, aoa, aua, aoe, aue, aoae, uuao, uuae, auuae, uuuao, auae, auuao, aiuae",
+          "source": "Exercise 4 All-Vowel Swahili Words (marry, kill, flower, backyard, he who marries/kills..., p. 13)",
+          "pronunciation": "a-u / o-a / u-a / a-o-a / a-u-a / a-u-u-a-e",
+          "hint": "Burt & Taylor (1910, Part I, Exercise 4, p. 13)"
+        },
+        {
+          "target": "’a ’a ('No!') • ’a ’a ’a ('Not at all!') • ’ee (woman's 'Yes!') • Haa’! ('No indeed!')",
+          "source": "Glottal Hamza & Laryngeal Interjections (Exercises 5 & 7, pp. 14–15)",
+          "pronunciation": "’a-’a / ’e-e / ha-a’",
+          "hint": "Burt & Taylor (1910, Part I, Exercises 5 & 7, pp. 14–15)"
+        },
+        {
+          "target": "Ham’, hamu, hamo, ham’muui, m’memuua... hm’ (Ex. 8, p. 16) • Mng’wpe (Ex. 21, p. 21 fn. 1)",
+          "source": "Sonant m’ (suppressing u) vs. open m, and the vocal gymnastic 'Mng’wpe' (African Aphorisms § 396)",
+          "pronunciation": "ha-m’ / ha-mu / m-ng’w-pe",
+          "hint": "Burt & Taylor (1910, Part I, Exercises 8 & 21, pp. 16, 21)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Tua mto wako mtoni; mti huu utue na tini. Namtuma kutuma; natumia atumacho. (Exercises 19–20, p. 20)",
+          "source": "Set down your pillow (mto, dental) by the river (mtoni, cerebral); let this tree settle down below. I send him to earn; I use what he earns."
+        },
+        {
+          "target": "Kuthani, -dhani, dhambi, thalatha (Central Ki-Mvita) vs. kuzani, ramazani, zambi, selasa (Southern & Northern, Table IV, p. 9)",
+          "source": "Central Swahili preserves true Arabic interdentals whereas Southern and Northern replace them with Z and S."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Rev. W. E. Taylor's Table III (Part I, p. 9 of Burt 1910), how is 'I am coming' expressed across the Southern, Central, and Northern dialect-groups?",
+          "correctAnswer": "'ninakuja' (Southern: Ki-Unguja) / 'naja' (Central: Ki-Mvita) / 'niyao' (Northern: Ki-Amu)",
+          "options": [
+            "'ninakuja' (Southern: Ki-Unguja) / 'naja' (Central: Ki-Mvita) / 'niyao' (Northern: Ki-Amu)",
+            "'naja' (Southern) / 'ninakuja' (Central) / 'nakuya' (Northern)",
+            "'niyao' (Southern) / 'ninakuja' (Central) / 'naja' (Northern)",
+            "'nakwenda' (Southern) / 'nenda' (Central) / 'niendao' (Northern)"
+          ],
+          "hint": "See Table III on p. 9 of Part I"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each item from Rev. W. E. Taylor's Part I (pp. 7–21) with its exact description:",
+          "correctAnswer": "Ki-P'emba on the Emerald Isle (pp. 7–8): Supplies half the clove crop and substitutes 'fy' for 'sh'",
+          "pairs": [
+            {
+              "left": "Ki-P'emba on the Emerald Isle (pp. 7–8)",
+              "right": "Supplies half the clove crop and substitutes 'fy' for 'sh'"
+            },
+            {
+              "left": "Exercise 4 All-Vowel Words (p. 13)",
+              "right": "au, ai!, oa, ua, aoa, aua, aoe, aue, aoae, uuao, uuae, auuae, uuuao, auae, auuao, aiuae"
+            },
+            {
+              "left": "4 Arabic Words with Double 'll' (Exercise 12, p. 17)",
+              "right": "Allahu, illa, illi, killa (or kulla)"
+            },
+            {
+              "left": "Exercise 21 Vocal Gymnastic (p. 21 fn. 1)",
+              "right": "Mng’wpe (African Aphorisms § 396) & women's closed-lip click assentive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-burt-1910-studies-grammar-paradigms-21",
+      "title": "Studies I–XXI, 10 Noun Classes (incl. Class VI Monster Class), Kwisha Perfect & 23-Form kufunga Table (Part II, pp. 24–151)",
+      "icon": "Layers",
+      "description": "Master the 21 thematic studies of daily Mombasa life, the 10-class concord system, contracted possessives, nasal-aspiration sound laws, and the 23 derivative forms of kufunga.",
+      "tips": "Pay special attention to Class VI '(JI) or Monster Class' (jit'u / mijit'u, nyonge / minyonge, pp. 26–27), the contracted kwisha perfect (nsha, unsha, ansha, tunsha, mnsha, wansha, p. 39 fn. 1), and the phonological chain nik → nk → k' → h (ha-, hi-, hu-; nita → n'ta → t'; mbwa = ni wa; nda = ni ya, p. 93).",
+      "culturalNote": "Studies I–XXI (pp. 24–131) and their complete bidirectional Exercise Keys (pp. 132–151) cover greetings, servants, teachers, house, table, kitchen, town, friendship, dress, market, shop, body, river/shore, plantation, safari, weather/time, up-country, animals, hospital, school, and religion.",
+      "words": [
+        {
+          "target": "Class VI (JI) or Monster Class: jit’u lote lile (pl. mijit’u yote ile) • nyonge (pl. minyonge, pp. 26–27)",
+          "source": "Augmentative 'Monster Class' taking Class V concords in the singular and Class II (mi-) concords in the plural",
+          "pronunciation": "ji-t’u lo-te li-le / mi-ji-t’u yo-te i-le",
+          "hint": "Burt (1910, Study I Table of Concords, pp. 26–27)"
+        },
+        {
+          "target": "nsha, unsha, ansha, tunsha, mnsha, wansha (p. 39 fn. 1)",
+          "source": "Idiomatic Mombasa contracted perfect of kwisha ('I have already...', e.g., Nsha kukuambia mara nyingi)",
+          "pronunciation": "n-sha / u-n-sha / a-n-sha / tu-n-sha / m-n-sha / wa-n-sha",
+          "hint": "Burt (1910, Study IV, p. 39 fn. 1)"
+        },
+        {
+          "target": "kupiga mstari, k’engele, ch’apa, k’elele, t’eke, fundo, magot’i, pasi, mbinja, k’ura, yowe (p. 43 fn. 3)",
+          "source": "12 Idioms with kupiga (draw a line, ring a bell, print, shout, kick, tie a knot, kneel, iron clothes, whistle, cast lots, halloo)",
+          "pronunciation": "ku-pi-ga m-sta-ri / k’e-nge-le / ma-go-t’i / pa-si / m-bi-nja",
+          "hint": "Burt (1910, Study V, p. 43 fn. 3)"
+        },
+        {
+          "target": "shambani pa (near) / shambani kwa (to/at) / shambani mwa (inside) / mashambani mwa (in the country, p. 81 fn. 4)",
+          "source": "Four-Way Locative Concord Distinction (Classes VIII PA, IX KU, and X MU)",
+          "pronunciation": "sha-mba-ni pa / kwa / mwa / ma-sha-mba-ni mwa",
+          "hint": "Burt (1910, Study XIV, p. 81 fn. 4)"
+        },
+        {
+          "target": "kit’uche, jambole, vituvye, kufakwe, watumwaze • mwanangu, mwenetu, mwenenu • babangu/babako/babazo/babakwe/babae/babaze (p. 92)",
+          "source": "Contracted Enclitic Possessive Suffixes across Classes I–X",
+          "pronunciation": "ki-t’u-che / ja-mbo-le / vi-tu-vye / ku-fa-kwe / wa-tu-mwa-ze",
+          "hint": "Burt (1910, Study XVI, p. 92)"
+        },
+        {
+          "target": "nik → nk → k’ → h (ha-, hi-, hu-) • nita → n’ta → t’ • mbwa (< ni wa) • nda (< ni ya, p. 93)",
+          "source": "Mombasa Nasal-Aspiration Sound Law explaining 1st sg. ha-/hi-/hu-/t’a- and copular mbwa/nda",
+          "pronunciation": "ha / hi / hu / t’a / m-bwa / n-da",
+          "hint": "Burt (1910, Study XVI, p. 93)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Zina Salehe [funguo]! (Study VII, p. 58 Note III) • Mji unangia maradhi (Study XVI, p. 91 fn. 9) • Ukiumwa ni siafu (Study XV, p. 87 fn. 3)",
+          "source": "Salehe has the keys! (emphatic subject-object inversion) • Sickness is entering the town • If you are bitten by biting ants ('ni' = 'by' after passive)"
+        },
+        {
+          "target": "Mwana umleavyo, ndivyo akuavyo! (p. 116) • Kafiri akufaae si Muisilamu asiyekufaa (p. 122) • Adhabu ya kaburi ajua maiti (pp. 124, 151)",
+          "source": "As you bring up a child, so he grows! • An infidel who helps you is better than a Muslim who does not • The torment of the grave only the corpse knows"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Study XIV (p. 81 fn. 5–6 of Burt 1910), what is noted as the sole lexical exception to the rule that a fruit's name is formed from its tree by changing Class II prefix 'm-' to Class V '(ma-)'?",
+          "correctAnswer": "'mgomba' (banana tree) → 'ndizi' (banana fruit, instead of a regular Class V form)",
+          "options": [
+            "'mgomba' (banana tree) → 'ndizi' (banana fruit, instead of a regular Class V form)",
+            "'mnazi' (coconut palm) → 'nazi' (coconut)",
+            "'mtende' (date palm) → 't'ende' (date)",
+            "'mwembe' (mango tree) → 'embe' (mango)"
+          ],
+          "hint": "See Study XIV, p. 81 fn. 5–6"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each grammatical feature in Part II of Burt (1910) with its exact Mombasa (Ki-Mvita) rule:",
+          "correctAnswer": "Only 2 Irregular Imperatives in Swahili (p. 29 fn. 2): ndoo (< kuja, pl. ndooni) and lete (< kuleta, pl. leteni)",
+          "pairs": [
+            {
+              "left": "Only 2 Irregular Imperatives in Swahili (p. 29 fn. 2)",
+              "right": "ndoo (< kuja, pl. ndooni) and lete (< kuleta, pl. leteni)"
+            },
+            {
+              "left": "1st Person Sg. Object Imperative Rule (p. 34 fn. 7)",
+              "right": "Retains final '-a' (Nipeleka! Nambia!) whereas other objects change '-a' to '-e' (Mpeleke!)"
+            },
+            {
+              "left": "23-Form Derivative Table of kufunga (p. 102)",
+              "right": "7 Derivative Stems (Causative, Neuter, Applied, Reciprocal, Reflexive, Subtractive -ua, Reduplicated)"
+            },
+            {
+              "left": "Nouns in '-ni' Taking No Second '-ni' (p. 78 fn. 1)",
+              "right": "p’wani (on the coast), jioni (in the evening), mizani (scales), roshani (balcony)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-burt-1910-letters-measures-synonyms-homonyms-21",
+      "title": "Mombasa Money & Measures, 3 Letters (A.H. 1324), Calendar, Synonyms, All 44 Homonym Groups & Part III Vocabulary (pp. 152–252)",
+      "icon": "FileText",
+      "description": "Master Mombasa coinage & capacity tables, the 3 letters of Rabiu l-Awwal 1324 A.H. (1906 CE), monsoon seasons, 14 synonym groups, and all 44 minimal-pair homonym groups.",
+      "tips": "Notice the historical currency distinction on p. 152 between 'Roboo ya zamani' (32 pice = 8 annas = ¼ riale) and 'Roboo rupia' (16 pice = ¼ rupee), and between 'Thumuni' (16 pice = ⅛ riale) and 'Thumuni rupia' (8 pice = ⅛ rupee).",
+      "culturalNote": "Pages 154–161 preserve three authentic Mombasa letters dated Rabiu l-Awwal 1324 A.H. (1906 CE), the coastal monsoon calendar, 14 classified synonym groups, and 44 homonym groups contrasting aspiration and dental vs. cerebral stops.",
+      "words": [
+        {
+          "target": "Roboo ya zamani (32 pice = ¼ riale) vs. Roboo rupia (16 pice) • Thumuni (16 pice = ⅛ riale) vs. Thumuni rupia (8 pice, p. 152)",
+          "source": "Mombasa Riale vs. Rupee Quarter and Eighth Coinage Distinctions (1 Silver Rupee = 16 annas = 64 pice)",
+          "pronunciation": "ro-bo-o ya za-ma-ni / ro-bo-o ru-pi-a / thu-mu-ni",
+          "hint": "Burt (1910, Tables of Money, Weights and Measures, p. 152)"
+        },
+        {
+          "target": "1 Kibaba • 1 Kisaga (2 vibaba) • 1 Pishi (2 visaga = 4 vibaba) • 1 Jizila (60 pishi) • 1 Ratili (1 lb.) • 1 Mani (3 ratili) • 1 Farasila (36 ratili, pp. 152–153)",
+          "source": "Mombasa Corn Capacity and Weight Hierarchy",
+          "pronunciation": "ki-ba-ba / ki-sa-ga / pi-shi / ji-zi-la / ra-ti-li / ma-ni / fa-ra-si-la",
+          "hint": "Burt (1910, Tables of Money, Weights and Measures, pp. 152–153)"
+        },
+        {
+          "target": "Walio mbali huonana kwa barua, na barua ni nusu ya kuonana (Letter No. 1, p. 154)",
+          "source": "Those who are far apart see each other by letter, and a letter is half of meeting face to face (Muhammad bin Maalim bin Bwana Kombo to Hamis bin Shaibu il Kilifi, 8 Rabiu l-Awwal 1324 A.H.)",
+          "pronunciation": "wa-li-o m-ba-li hu-o-na-na kwa ba-ru-a",
+          "hint": "Burt (1910, Specimens of Swahili Letter-Writing, Letter No. 1, p. 154)"
+        },
+        {
+          "target": "Kasikazi/Musimu (Nov.–Mar.), Maleleji (calms), Kusi (Apr.–Sept.), Kipupwe (June–July), Demani (Aug.–Sept.), T’anga Mbili (Sept.–Oct.) • Mwaka, Mchoo, Vuli (pp. 157–158)",
+          "source": "Mombasa Monsoon Winds and Three Rainy Seasons (Swahili Calendar, pp. 157–158)",
+          "pronunciation": "ka-si-ka-zi / ma-le-le-ji / ku-si / ki-pu-pwe / de-ma-ni / t’a-nga m-bi-li",
+          "hint": "Burt (1910, Swahili Calendar, pp. 157–158)"
+        },
+        {
+          "target": "k’aa (crab) / kaa (ember) / kukaa (stay) • k’ofi (clap hands) / kofi (box ears) • mt’u (man) / mtu (tamarisk tree) • nt’i (earth) / nt’i (earrings) / nti (chart, pp. 159–161)",
+          "source": "Minimal Pairs from the 44 Aspirated and Dental/Cerebral Homonym Groups (pp. 159–161)",
+          "pronunciation": "k’a-a / ka-a / k’o-fi / ko-fi / m-t’u / m-tu / n-t’i / n-ti",
+          "hint": "Burt (1910, A List of Homonyms, pp. 159–161)"
+        },
+        {
+          "target": "Fungat’o haiumizi mkono (s.v. Ufungat’o, p. 236) • Kulia juu tini ku moto (s.v. Kulia, p. 191) • Kisiwani (= Mombasa, p. 77) • Kisauni (= Frere Town, p. 77) • Ughaibu (betel mixture, p. 241)",
+          "source": "Proverbs and Cultural Glosses Embedded in Part III Swahili–English Vocabulary (pp. 163–252)",
+          "pronunciation": "fu-nga-t’o ha-i-u-mi-zi m-ko-no / ki-si-wa-ni / ki-sa-u-ni / u-gha-i-bu",
+          "hint": "Burt (1910, Part III Vocabulary, pp. 77, 191, 236, 241)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kulla neno aletalo Mngu ndiyo kheri (Letter No. 2, p. 155, on the earthquake in Ulaya ya Paris killing watu alifu tano) • Kodi ya majumba itazidi mwaka huu (Letter No. 3, p. 156)",
+          "source": "Every matter that God sends is for the best (Letter 2, 12 Rabii Liawal 1324) • The house tax will be increased this year (Letter 3 to a lady)"
+        },
+        {
+          "target": "Ko*t*o (mason's trowel) • koto (curved) • k’oto (hook/crook) • k’o*t*o (ground-nuts) • kiko*t*o (whip, p. 160)",
+          "source": "Five-way minimal set contrasting aspiration (k' vs. k) and dental (*t*) vs. cerebral (t) articulation in Mombasa Swahili."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In the Tables of Money, Weights and Measures on p. 152 of Burt (1910), what is the difference between 'Roboo ya zamani' and 'Roboo rupia'?",
+          "correctAnswer": "'Roboo ya zamani' is 32 pice (8 annas = ¼ riale/dollar), whereas 'Roboo rupia' is 16 pice (4 annas = ¼ rupee)",
+          "options": [
+            "'Roboo ya zamani' is 32 pice (8 annas = ¼ riale/dollar), whereas 'Roboo rupia' is 16 pice (4 annas = ¼ rupee)",
+            "'Roboo ya zamani' is 16 pice, whereas 'Roboo rupia' is 32 pice",
+            "'Roboo ya zamani' is 64 pice, whereas 'Roboo rupia' is 8 pice",
+            "Both equal 24 pice"
+          ],
+          "hint": "See Coinage on p. 152 of Burt (1910)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each item from pp. 154–241 of Burt (1910) with its exact meaning:",
+          "correctAnswer": "Letter No. 1 (8 Rabiu l-Awwal 1324 A.H., p. 154): Muhammad bin Maalim bin Bwana Kombo to Hamis bin Shaibu il Kilifi ('barua ni nusu ya kuonana', 1 doz. kanzus, ½ doz. kofias, 3 vikois)",
+          "pairs": [
+            {
+              "left": "Letter No. 1 (8 Rabiu l-Awwal 1324 A.H., p. 154)",
+              "right": "Muhammad bin Maalim bin Bwana Kombo to Hamis bin Shaibu il Kilifi ('barua ni nusu ya kuonana', 1 doz. kanzus, ½ doz. kofias, 3 vikois)"
+            },
+            {
+              "left": "Letter No. 2 & Letter No. 3 (12 Rabii Liawal 1324 A.H., pp. 155–156)",
+              "right": "Mula Alii bin Abdirrahaman on the earthquake in Ulaya ya Paris (~5,000 dead) and the increased house tax (kodi ya majumba)"
+            },
+            {
+              "left": "mt’u vs. m*t*u & n*t*’i vs. nt’i vs. n*t*i (pp. 160–161)",
+              "right": "'man' vs. 'tamarisk tree' & 'earth/country' vs. 'earrings' vs. 'chart'"
+            },
+            {
+              "left": "Fungat’o haiumizi mkono (p. 236) & Ughaibu (p. 241)",
+              "right": "'Grasping does not hurt the hand' & mixture chewed with betel-leaf (nutmeg, cloves, lime, tobacco)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+
+// ── Unit 22: Complete Line-by-Line Integration of A. C. Madan's "Swahili-English Dictionary" (Clarendon Press Oxford, 1903, Book pp. i–xix, 1–238, 442 [PDF pp. 1–260 & 464–478]) ──
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-22",
+  "title": "Unit 22: A. C. Madan (1903) — Swahili-English Dictionary (8 Verb-Stem Forms, Conspectus II, Encyclopedic Taxonomies & 65+ Proverbs)",
+  "description": "Master the complete grammatical, morphological, etymological, and ethnographic corpus of A. C. Madan's 'Swahili-English Dictionary' (Clarendon Press Oxford, 1903, pp. i–xix, 1–442): the 'Bantize rather than Arabize' principle & asterisk (*) loanword system, the 8 Principal Verb-Stem Forms (including 6 Causal & 5 Reciprocal varieties), Conspectus II of the 8 Noun Declensions (D 1–D 8), encyclopedic cultural taxonomies, and 65+ embedded proverbs and riddles.",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "swahili-madan-1903-verb-stems-conspectus-22",
+      "title": "Preface, 8 Principal Verb-Stem Forms (6 Causal & 5 Reciprocal Varieties) & Conspectus II (pp. iii–xix)",
+      "icon": "Layers",
+      "description": "Master Madan's 'Bantize rather than Arabize' principle, the asterisk (*) loanword convention, the 8 Principal Forms of Verb-Stem, and Conspectus II of the 8 Noun Declensions.",
+      "tips": "In his Introduction (pp. ix–xiii), Madan classifies all Swahili verb derivations into 8 Principal Forms—Primary (Pr., with Passive Ps. -w- & Neuter Nt. -k-/-ik-/-ek-), Applied (Ap. -i-/-e-), Causal (Cs. -z-/-sh-/-s-/-y- in 6 varieties), Reciprocal (Rp. -an- in 5 aspects + -kana), Reflexive (Rf. ji-), Reduplicated (Rd.), Reversive (Rv. -u-/-o-), and Stative (St. -am-/-aman-).",
+      "culturalNote": "Published at the Clarendon Press, Oxford in July 1903 by Arthur Cornwallis Madan, M.A., Student of Christ Church, Oxford (UC Berkeley copy PL 8703 / M33 / 1903 / MAIN), this dictionary ranks Swahili among the twelve great languages of the modern world.",
+      "words": [
+        {
+          "target": "1. Primary (Pr.) • 2. Applied (Ap. -i-/-e-) • 3. Causal (Cs. -z-/-sh-/-s-/-y-) • 4. Reciprocal (Rp. -an-) • 5. Reflexive (Rf. ji-) • 6. Reduplicated (Rd.) • 7. Reversive (Rv. -u-/-o-) • 8. Stative (St. -am-/-aman-, pp. xi–xiii)",
+          "source": "The 8 Principal Forms of Verb-Stem in Madan (1903, Introduction, pp. xi–xiii)",
+          "pronunciation": "pri-ma-ry / a-ppli-ed / cau-sal / re-ci-pro-cal / re-fle-xi-ve / re-ver-si-ve / sta-ti-ve",
+          "hint": "Madan (1903, Introduction, pp. xi–xiii)"
+        },
+        {
+          "target": "6 Varieties of Causal (Cs., pp. xii–xiii): 1. Simple (tazamisha) • 2. Compulsive (lipisha) • 3. Permissive (poteza) • 4. Suasive (fanyiza) • 5. Passive/non-interfering (limisha) • 6. Consequential (chukiza)",
+          "source": "Make look • Force to pay • Let get lost • Induce/persuade to make • Allow hoeing • Cause to hate / be hateful",
+          "pronunciation": "ta-za-mi-sha / li-pi-sha / po-te-za / fa-nyi-za / li-mi-sha / chu-ki-za",
+          "hint": "Madan (1903, Introduction, pp. xii–xiii)"
+        },
+        {
+          "target": "5 Aspects of Reciprocal (Rp. -an-, p. xiii): 1. Reciprocal (pigana) • 2. Connected (tokana na, fuatana na) • 3. Combined (endana, liana) • 4. Internal interaction (shikana, kazana) • 5. Practicability with -ka (-kana: onekana, wezekana)",
+          "source": "Fight each other • Part from / accompany • Go / weep together • Hold together / be compact • Be visible / be possible",
+          "pronunciation": "pi-ga-na / to-ka-na na / e-nda-na / shi-ka-na / o-ne-ka-na",
+          "hint": "Madan (1903, Introduction, p. xiii)"
+        },
+        {
+          "target": "Decl. 1 (m/wa): mtu mwema huyu ampenda • Decl. 2 (m/mi): mti mdogo huu waota • Decl. 3 (ki/vi): kitu kizuri hiki chapendeza • Decl. 4 (u, w/ny): uimbo mbaya huu wachukiza • Decl. 5 (—/ma): kasha kubwa hili latosha • Decl. 6 (—/—): kazi ngumu hii yachosha • Decl. 7 (pa, p): mahali pembamba hapa pafaa • Decl. 8 (ku, kw): kufa kutukufu huku kwasifiwa (pp. xvi–xvii)",
+          "source": "Conspectus II: Complete 8-Declension Concord Table of the Zanzibar Swahili Noun",
+          "pronunciation": "m-tu mwe-ma / m-ti m-do-go / ki-tu ki-zu-ri / u-i-mbo m-ba-ya / ka-sha ku-bwa / ka-zi ngu-mu / ma-ha-li pe-mba-mba / ku-fa ku-tu-ku-fu",
+          "hint": "Madan (1903, Conspectus II, pp. xvi–xvii)"
+        },
+        {
+          "target": "A-aa (rising pitch = yes, assent) vs. Aa-a (falling pitch = no, dissent, p. 1) • akaenda e-e-e, kule-e-e, peupe-e-e (rising pitch = remoteness, p. 57) • Only 3 Simple Colour Adjectives: -ekundu, -eupe, -eusi (p. 58)",
+          "source": "Intonation & pitch-lengthening rules and the three primary Bantu colour roots in Zanzibar Swahili",
+          "pronunciation": "a-aa / aa-a / ku-le-e-e / e-ku-ndu / e-u-pe / e-u-si",
+          "hint": "Madan (1903, pp. 1, 57, 58)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Njia hii yaendeka / yaendekana (Introduction, p. xii) • Pinda → pindua, kama → kamua, zima → zimua (Reversive Rv., p. xiii)",
+          "source": "This road is passable / practicable (Neuter -ka / -kana) • Bend → reverse/turn, squeeze → wring out, extinguish → quench heat."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In A. C. Madan's Introduction (1903, pp. xi–xiii), what are the 8 Principal Forms of Verb-Stem and how many varieties of the Causal (Cs.) form does he distinguish?",
+          "correctAnswer": "Primary (Pr.), Applied (Ap.), Causal (Cs. — with 6 varieties: simple, compulsive, permissive, suasive, passive/non-interfering, consequential), Reciprocal (Rp. — with 5 aspects), Reflexive (Rf.), Reduplicated (Rd.), Reversive (Rv.), and Stative (St.)",
+          "options": [
+            "Primary (Pr.), Applied (Ap.), Causal (Cs. — with 6 varieties: simple, compulsive, permissive, suasive, passive/non-interfering, consequential), Reciprocal (Rp. — with 5 aspects), Reflexive (Rf.), Reduplicated (Rd.), Reversive (Rv.), and Stative (St.)",
+            "Only 4 forms: Simple, Passive, Causative, and Reciprocal",
+            "Only 5 forms without Reversive or Stative",
+            "10 forms without Causal varieties"
+          ],
+          "hint": "See Madan (1903, Introduction, pp. xi–xiii)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Declension in Madan's Conspectus II (1903, pp. xvi–xvii) with its exact model concord sentence:",
+          "correctAnswer": "Decl. 1 (Living beings, m/wa) & Decl. 2 (Plants, m/mi): mtu mwema huyu ampenda & mti mdogo huu waota",
+          "pairs": [
+            {
+              "left": "Decl. 1 (Living beings, m/wa) & Decl. 2 (Plants, m/mi)",
+              "right": "mtu mwema huyu ampenda & mti mdogo huu waota"
+            },
+            {
+              "left": "Decl. 3 (Diminutives, ki/vi) & Decl. 4 (Abstracts, u, w/ny)",
+              "right": "kitu kizuri hiki chapendeza & uimbo mbaya huu wachukiza"
+            },
+            {
+              "left": "Decl. 5 (Amplificatives, —/ma) & Decl. 6 (Foreign/N-class, —/—)",
+              "right": "kasha kubwa hili latosha & kazi ngumu hii yachosha"
+            },
+            {
+              "left": "Decl. 7 (Local mahali, pa) & Decl. 8 (Verbal, ku, kw)",
+              "right": "mahali pembamba hapa pafaa & kufa kutukufu huku kwasifiwa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-madan-1903-taxonomies-culture-22",
+      "title": "Encyclopedic Cultural Taxonomies: 29 Gift Terms, 6 Guns, 11 Dhows, 10 Ropes, 6 Ordeals, Loom/Door Anatomy & 19 English Loans (pp. 1–238)",
+      "icon": "Compass",
+      "description": "Explore Madan's classified articles on gifts/bribes (*Bakshishi), sticks (Bakora), guns (*Bunduki), dhows (Chombo), ropes (Kamba), ordeals (Kiapo), looms (Kitanda cha mfumi), doors (Mlango), and English loans (Manowari).",
+      "tips": "Madan (1903) groups entire semantic fields under key headwords: 29 gift/bribe/fee terms under *Bakshishi (p. 21), 11 sticks under Bakora (p. 21), 6 gun types under *Bunduki (pp. 31–32), 10 dhow ropes & 6 fibres under Kamba (p. 128), 6 ordeal types under Kiapo (p. 139), 19 English loanwords under Manowari (p. 207), and 18 perfumes under Manukato (p. 208).",
+      "words": [
+        {
+          "target": "29 Gift/Present/Bribe/Fee Terms under *Bakshishi (p. 21): zawadi, tunu, hiba, atia, karama, kipaji, hidaya, takrima, ikiramu, sadaka, daka, nadhiri, kafara, mchango, ada, kilemba, ufito, kinyosha mgongo, kifungua mlango, kipa mkono, kiokozi, kiongozi, mlungula, rushwa, chichiri/kijiri, hongo, ubani, ubani waayarabu, jalidi",
+          "source": "Complete classification of gifts, keepsakes, hospitality offerings, wedding/work fees, salvage/guide fees, bribes, and toll tribute",
+          "pronunciation": "ba-kshi-shi / za-wa-di / tu-nu / ka-ra-ma / ki-pa-ji / ki-le-mba / m-lu-ngu-la / ru-shwa / ho-ngo",
+          "hint": "Madan (1903, s.v. *Ada p. 3 & *Bakshishi p. 21)"
+        },
+        {
+          "target": "6 Gun Types under *Bunduki (pp. 31–32): ya jiwe/gumegume (flintlock) • ya mrao (matchlock) • ya kushindiliwa/fataki (muzzle-loader) • ya kuvunja/kukunja (breech-loader) • ya viasi (cartridge gun) • ya midomo miwili/kasiba mbili (double-barrelled) • ya kindoro/makoa",
+          "source": "Zanzibar firearms taxonomy in Madan (1903, pp. 31–32), plus 11 sticks under Bakora (p. 21: fimbo, ufito, gongo, mbarango, rungu, mkongojo, mpiko, mpweke, kipigi, mtobwe)",
+          "pronunciation": "bu-ndu-ki ya ji-we / gu-me-gu-me / ya m-ra-o / ya fa-ta-ki / ya ku-vu-nja / ya vi-a-si",
+          "hint": "Madan (1903, s.v. Bakora p. 21 & *Bunduki pp. 31–32)"
+        },
+        {
+          "target": "10 Dhow Ropes & 6 Binding Fibres under Kamba (p. 128): amari, baraji, hamarawi, dasi, henza, jarari, demani, goshi, dakawa, mjiari/ujari • Fibres: ubugu, ugomba, ung'ong'o, ununu, ukindu, miwaa",
+          "source": "Cable, sheet, tie, bolt-rope, halyard, tackle, lee-sheet, tack-rope, tow-rope & tiller-rope, plus 6 plant cordage fibres",
+          "pronunciation": "a-ma-ri / ba-ra-ji / ha-ma-ra-wi / da-si / he-nza / ja-ra-ri / de-ma-ni / go-shi / da-ka-wa / m-ji-a-ri",
+          "hint": "Madan (1903, s.v. Kamba, p. 128)"
+        },
+        {
+          "target": "6 Ordeal Types under Kiapo (p. 139): kiapo cha moto (red-hot iron) • cha mkate (dry bread) • cha sindano (red-hot needle through lip/ear) • cha mibano (wooden splints on temples) • cha mchele (chewing dry rice) • cha kibao (bread with Koran ink)",
+          "source": "The six judicial trials by ordeal (Kula kiapo) documented in Madan (1903, s.v. Kiapo, p. 139)",
+          "pronunciation": "ki-a-po cha mo-to / cha m-ka-te / cha si-nda-no / cha mi-ba-no / cha m-che-le / cha ki-ba-o",
+          "hint": "Madan (1903, s.v. Kiapo, p. 139)"
+        },
+        {
+          "target": "Kitanda cha mfumi (Loom, pp. 165–166): mdoshi (treadle), faraka/mfariki (comb divider), marufaa (warp boards), kashabu (web rod), mladi/upanga (woof batten), mtande (warp), mshindio (woof) • Mlango (Door, p. 236): mwale vs. ubau, mfaa, mwimo, kizingiti, kimandu",
+          "source": "Complete technical anatomy of the Zanzibari weaver's loom, bow-drill (Keke: kekee, msuka, jivu, uta, p. 136), water-pipe (Kiko: digali, bori, shilamu, p. 149), and carved double doors",
+          "pronunciation": "m-do-shi / fa-ra-ka / ma-ru-fa-a / ka-sha-bu / m-la-di / m-fa-a / mwi-mo / ki-zi-ngi-ti",
+          "hint": "Madan (1903, pp. 136, 149, 165–166, 236)"
+        },
+        {
+          "target": "19 English Loanwords under Manowari (p. 207): manowari, boi, kala, shati, koti, fulana, sitoki, kabati, bira, burashi, daktari, stima, meli, afsa, dazin, inche, spitali, posta, afisi",
+          "source": "Early English loanwords established in Zanzibar Swahili by 1903 (man-of-war, boy, collar, shirt, coat, flannel, stocking, cupboard, beer, brush, doctor, steamer, mail-steamer, officer, dozen, inch, hospital, post, office)",
+          "pronunciation": "ma-no-wa-ri / bo-i / sha-ti / ko-ti / fu-la-na / si-to-ki / ka-ba-ti / da-kta-ri / sti-ma / me-li",
+          "hint": "Madan (1903, s.v. Manowari, p. 207)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kimbunga kikaangusha minazi na majumba yote (s.v. Kimbunga, pp. 153–154) • Mtu ni kiumbe; mti si kiumbe, na nyama si kiumbe (s.v. Kiumbe, p. 169)",
+          "source": "The typhoon (of April 15, 1872 at Zanzibar) threw down all the coconut trees and houses • Only man is strictly a 'kiumbe' (rational creature), not a tree or an animal."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Under 'Kiapo' (p. 139) and 'Kitanda cha mfumi' (pp. 165–166) in A. C. Madan's Swahili-English Dictionary (1903), what are the 6 judicial ordeal types and the 5 named parts of a native weaver's loom?",
+          "correctAnswer": "6 Ordeals: kiapo cha moto, cha mkate, cha sindano, cha mibano, cha mchele, cha kibao; 5 Loom parts: mdoshi (treadle), faraka/mfariki (comb divider), marufaa (warp boards), kashabu (web rod), mladi/upanga (woof batten)",
+          "options": [
+            "6 Ordeals: kiapo cha moto, cha mkate, cha sindano, cha mibano, cha mchele, cha kibao; 5 Loom parts: mdoshi (treadle), faraka/mfariki (comb divider), marufaa (warp boards), kashabu (web rod), mladi/upanga (woof batten)",
+            "Only water and poison ordeals; loom has no named parts",
+            "6 wedding fees; 5 dhow mast parts",
+            "6 coconut stages; 5 fishing traps"
+          ],
+          "hint": "See Madan (1903, s.v. Kiapo p. 139 & Kitanda pp. 165–166)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each specialized Zanzibari cultural or technical term in Madan (1903) with its exact definition:",
+          "correctAnswer": "Kasimele / Tui la kasimele vs. Tui la nyuma (p. 132): Thick first-press coconut cream before adding water vs. second-press milk with water",
+          "pairs": [
+            {
+              "left": "Kasimele / Tui la kasimele vs. Tui la nyuma (p. 132)",
+              "right": "Thick first-press coconut cream before adding water vs. second-press milk with water"
+            },
+            {
+              "left": "Keke bow-drill parts (p. 136)",
+              "right": "kekee (steel bit), msuka/msukano (wooden handle), jivu (socket), uta (bow & string)"
+            },
+            {
+              "left": "Kiko water-pipe parts (p. 149)",
+              "right": "kiko (coconut water-shell), digali/mdakali (tubes), bori (clay bowl), shilamu (mouthpiece tube), malio ya kiko (bubbling)"
+            },
+            {
+              "left": "Mgonjwa vs. Mwele (s.v. Mgonjwa, p. 226)",
+              "right": "Mgonjwa can still move about a little, whereas Mwele is bedridden/crippled by malady"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-madan-1903-proverbs-riddles-22",
+      "title": "65+ Embedded Proverbs, Riddles & Semantic Contrasts in Madan (1903, pp. 1–238, 442)",
+      "icon": "Award",
+      "description": "Study the 65+ Swahili proverbs, riddles (Vitendawili), and semantic distinctions (-kuu vs. -kubwa, *Badili vs. Geuza, *Maisha vs. Umri vs. Uzima vs. Roho) embedded across Madan (1903).",
+      "tips": "Madan (1903) illustrates headwords with authentic Zanzibari proverbs, riddles (such as 'Kitendawili! — Tega! Nyumba yangu kubwa, haina taa. — Kaburi' on p. 167 and 'Marra chako, marra changu — mali' on p. 210), and precise semantic contrasts.",
+      "words": [
+        {
+          "target": "Baa pia hutokana na vijana na watumwa (p. 18) • Mchea mwana kulia, hulia yeye & Mchelea bahari si msafiri (p. 34) • Mchagua jembe si mkulima & Mwana wa kuku hafunzwi kuchakura (p. 36) • Kidole kimoja hakivunji chawa (p. 40) • Mtu huchongewa na ulimi wake (p. 45) • Hukushiba mikundeni, utashiba michorokoni? & Mchovya asali hachovyi marra moja (p. 46)",
+          "source": "Proverbs in Sections B and CH of Madan (1903, pp. 18–46)",
+          "pronunciation": "ba-a pi-a / m-che-a mwa-na / m-cha-gu-a je-mbe / ki-do-le ki-mo-ja / m-cho-vya a-sa-li",
+          "hint": "Madan (1903, pp. 18, 34, 36, 40, 45, 46)"
+        },
+        {
+          "target": "Elimu ndio mwanga uongozao (p. 59) • Nakimbia pafiwapo, nakimbilia paliwapo & Mafahali wawili hawakai zizi moja (p. 64) • Kufarakana hakuvunji kujuana (p. 66) • Fumbo humfumba mjinga (p. 73) • Konzi ya maji haifumbatiki (p. 74) • Liandikwalo halifutiki (p. 78) • Kaa akiinua gando mambo yamekatika (p. 80) • Nazi mbovu harabu ya nzima (p. 93) • Mwenyi ghathabu mbele yake amesimama shetani (p. 95)",
+          "source": "Proverbs in Sections E, F, G, and H of Madan (1903, pp. 59–95)",
+          "pronunciation": "e-li-mu ndi-o mwa-nga / ma-fa-ha-li wa-wi-li / ko-nzi ya ma-ji / li-a-ndi-kwa-lo",
+          "hint": "Madan (1903, pp. 59, 64, 66, 73, 74, 78, 80, 93, 95)"
+        },
+        {
+          "target": "Lijaliwalo kuwa, halina uzuio (p. 112) • Jawabu la kesho huandaa leo (p. 114) • Jitahidi haiondoi amri ya Muungu (p. 118) • Majogoo ndio saa la shamba, Johari za mtu ni mbili, akili na haya & Mtupa jongoo hutupa na mti wake (p. 119) • Juhudi si pato (p. 120) • Majuto ni mjukuu, mwishowe huja kinyume & Aliyoko juu, mngojee chini (p. 121)",
+          "source": "Proverbs in Section J of Madan (1903, pp. 112–121)",
+          "pronunciation": "li-ja-li-wa-lo / ja-wa-bu la ke-sho / ma-jo-go-o / jo-ha-ri za m-tu / ma-ju-to ni m-ju-ku-u",
+          "hint": "Madan (1903, pp. 112, 114, 118, 119, 120, 121)"
+        },
+        {
+          "target": "Ukukuu wa kamba si upya wa ukambaa & Mkamia maji hayanywi (p. 128) • Aliye kando, haangukiwi na mti (p. 129) • Maji mafu, mvuvi mkafu (p. 135) • Kufa kikondoo ndiko kufa kiungwana (p. 150) • Kimya kingi kina mshindo mkuu (p. 154) • Kinga na kinga, ndipo moto uwakapo (p. 156) • Mtu wa kikoa asilipe ana kipara cheupe (p. 159) • Ganda la mua chungu kaona kivuno (p. 170) • Mwana wa mtu ni kizushi, akizuka zuka naye (p. 173) • Kuzima koleo si mwisho wa uhunzi & Lisilo mkoma, hujikoma lilo (p. 175) • Asiosikia mkubwa, huona makubwa (p. 181) • Wa kuume haukati wa kushoto (p. 187) • Mkwaia nyoka, aonapo ukuti hushituka (p. 188) • Kweli iliyo uchungu si uwongo ulio tamu (p. 190)",
+          "source": "Proverbs in Section K of Madan (1903, pp. 128–190)",
+          "pronunciation": "u-ku-ku-u wa ka-mba / ku-fa ki-ko-ndo-o / ki-mya ki-ngi / ku-zi-ma ko-le-o / kwe-li i-li-yo u-chu-ngu",
+          "hint": "Madan (1903, pp. 128, 129, 135, 150, 154, 156, 159, 170, 173, 175, 181, 187, 188, 190)"
+        },
+        {
+          "target": "Mlaji ni mla leo, mla jana kalani? (p. 191) • Haulambwi mkono mtupu (p. 193) • Mambo ni maarifa, si nguvu (p. 201) • Mama ni Muungu wa pili (p. 207) • Mapenzi hayana macho (p. 209) • Siogopi unene wa mbuyu (p. 218) • Mchuzi ni maji (p. 221) • Mfinyanzi hulia gae (p. 224) • Mgemi akisifiwa tembo hulitia maji & Mgeni na aje mwenyeji apone (p. 226) • Ada ya mja, hunena; mngwana ni kitendo & Kwenyi miti hakuna mjenzi (p. 229) • Mjinga ni mtu, usinene ni ng'ombe & Mjumbe hauawi (p. 230) • Mkata hana kinyongo (p. 231) • Penyi wimbi na mlango ni papo (p. 236) • Mlimwengu ni mwanawe (p. 237)",
+          "source": "Proverbs in Sections L and M of Madan (1903, pp. 191–237)",
+          "pronunciation": "m-la-ji ni m-la le-o / ma-mbo ni ma-a-ri-fa / ma-ma ni mu-u-ngu wa pi-li / m-fi-nya-nzi hu-li-a ga-e / m-ju-mbe ha-u-a-wi",
+          "hint": "Madan (1903, pp. 191, 193, 201, 207, 209, 218, 221, 224, 226, 229, 230, 231, 236, 237)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kitendawili! — Tega! Nyumba yangu kubwa, haina taa. — Kaburi (p. 167) • Marra chako, marra changu. — Mali (pp. 210–211)",
+          "source": "Here's a riddle! — Out with it! My house is large, but has no lamp. — The grave • Now yours, now mine. — Wealth/property."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In A. C. Madan's Swahili-English Dictionary (1903), how does Madan distinguish '-kuu' from '-kubwa' (p. 187) and '*Maisha' from 'Umri', 'Uzima', and 'Roho' (p. 203)?",
+          "correctAnswer": "'-kuu' denotes moral/social pre-eminence (so the rabbit sungura is 'mkuu wa nyama', king of beasts), whereas '-kubwa' denotes physical size (so the elephant tembo is 'nyama mkubwa'); '*Maisha' is life in duration/mode of living, 'Umri' is age/time of life, 'Uzima' is living health/vitality, and 'Roho' is the soul/life-principle",
+          "options": [
+            "'-kuu' denotes moral/social pre-eminence (so the rabbit sungura is 'mkuu wa nyama', king of beasts), whereas '-kubwa' denotes physical size (so the elephant tembo is 'nyama mkubwa'); '*Maisha' is life in duration/mode of living, 'Umri' is age/time of life, 'Uzima' is living health/vitality, and 'Roho' is the soul/life-principle",
+            "'-kuu' and '-kubwa' are identical; '*Maisha' means only wealth",
+            "'-kuu' is used only of trees; '-kubwa' is used only of water",
+            "'-kuu' is Arabic; '-kubwa' is Portuguese"
+          ],
+          "hint": "See Madan (1903, s.v. -kuu p. 187 & *Maisha p. 203)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Swahili proverb in Madan (1903) with its exact English translation and explanation:",
+          "correctAnswer": "Kufa kikondoo ndiko kufa kiungwana (p. 150) & Kuzima koleo si mwisho wa uhunzi (p. 175): 'To die like a sheep (unresistingly) is to die like a hero/gentleman' & 'Cooling the tongs is not the end of the smith's job'",
+          "pairs": [
+            {
+              "left": "Kufa kikondoo ndiko kufa kiungwana (p. 150) & Kuzima koleo si mwisho wa uhunzi (p. 175)",
+              "right": "'To die like a sheep (unresistingly) is to die like a hero/gentleman' & 'Cooling the tongs is not the end of the smith's job'"
+            },
+            {
+              "left": "Mfinyanzi hulia gae (p. 224) & Mgemi akisifiwa tembo hulitia maji (p. 226)",
+              "right": "'A potter eats off a potsherd' & 'If the palm-tapper hears his palm-wine praised, he waters it'"
+            },
+            {
+              "left": "Ada ya mja, hunena; mngwana ni kitendo (p. 229) & Mjumbe hauawi (p. 230)",
+              "right": "'A slave talks, a free man acts' & 'A messenger's person is sacred (is not killed)'"
+            },
+            {
+              "left": "Kitendawili: Nyumba yangu kubwa, haina taa (p. 167) & Marra chako, marra changu (p. 210)",
+              "right": "Kaburi (The grave) & Mali (Wealth/property)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
