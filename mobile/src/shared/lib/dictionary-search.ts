@@ -2,7 +2,7 @@ import type {
   DictCategory,
   DictEntry,
   Dictionary,
-} from "@/data/dictionaries/metadata";
+} from "../data/dictionaries/metadata";
 
 /**
  * Standard language family color palette used across web and mobile views.
