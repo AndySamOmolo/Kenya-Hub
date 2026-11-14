@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Somali (Af-Soomaali) Proverbs & Oral Literature (11 verified entries)
+// Somali (Af-Soomaali) Proverbs & Oral Literature (12 verified entries)
 // ============================================================
 
 export const SOMALI_PROVERBS: ProverbItem[] = [
@@ -121,5 +121,16 @@ export const SOMALI_PROVERBS: ProverbItem[] = [
     "meaning": "Recorded verbatim in Rev. Fr. Evangelist de Larajasse's Somali-English and English-Somali Dictionary (London: Kegan Paul, Trench, Trübner & Co., 1897, Preface pp. v–xiii, Part I pp. 26, 118, 123, 127, Part II pp. 242, 266, and Supplement p. 293): preserves 19th-century Somali conversational idioms, the Ogaden/Darod/Dulbanteh dialectal locution wa debai / wa i debai (p. 293), the triple-divorce oath formula sadehda dalahod bad igaga furaisantahai (p. 293), the paediatric therapeutic skin-incision custom sarsar (p. 123), camel suckling separation dabsi/dabsin/dabsis (p. 26), 7 specialized skin/hide terms (dub, harag, sān, dereb, furad, weilalis, gibil, p. 266), Swahili coastal reference (sawaheli,—gi / sawahili,—gi, pp. 123, 242, 266), Galla/Oromo reference (daba galla,—hi, pp. 26, 270), and East African antelope taxonomy (si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro).",
     "theme": "wisdom",
     "sourceCitation": "Rev. Fr. Evangelist de Larajasse, Somali-English and English-Somali Dictionary (London: Kegan Paul, Trench, Trübner & Co., 1897, pp. v–xiv, 4, 19, 26, 54, 56, 100, 118, 120, 123, 127, 154, 170, 194, 221, 231, 242, 245, 266, 270, 293)"
+  },
+  {
+    "id": "somali-nilsson-2016-collectives-corporates-generics",
+    "languageId": "somali",
+    "languageName": "Somali (Af-Soomaali — Nilsson 2016, Ch. 23)",
+    "indigenous": "Dibí-d-u waa ay daaq-ay-aan / daaq-ay-saa (vs. Dibi-ya-d-u w-ay daaq-ay-aan) • Carruur-t-u waa ay qayli-n-ay-aan / qayli-n-ay-saa • Culima-d-a islaam-k-u waxa ay qab-t-aa... w-ay is-ku raac-san y-ih-iin • Diin-k-u waxa uu u nool-aa-d-aa si ka duwan... marka ay dheddig-g-u ukun-t-a dhig-t-o w-ay aas-t-aa, kadib-na w-ay ka tag-t-aa, marka ay dillaac-d-o-na iyada ayaa is-kor-i-s-a.",
+    "literalTranslation": "The oxen (collective) are grazing [3PL or 3SG.F] (vs. The oxen [plural] are grazing [3PL only]) • The children are shouting [3PL or 3SG.F] • The Islamic scholars hold the opinion [3SG.F]... they agree with each other [3PL] • The turtle lives [3SG.M] in a way different... when the female lays the eggs, she buries them and leaves them, and when they hatch [3SG.F collective], they raise themselves [3SG.F].",
+    "meaning": "Recorded verbatim by Morgan Nilsson in 'Somali gender polarity revisited' (in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages, Berlin: Language Science Press, 2016, Ch. 23, pp. 451–466, Ex. 2–4, 7, 11): demonstrates that 5th-declension collectives (dibí-d-a), Arabic broken plurals (culima-d-a, kuraas-t-a), lexical collectives (carruur-t-a, lo’-d-a, dumar-k-a, dad-k-a, rag-g-a), corporate nouns (qoys-k-a, koox-d-a, geel-a), and generic singulars (Diin-k-u, ukun-t-a) are morphosyntactically singular nouns that license both syntactic 3SG and semantic 3PL agreement.",
+    "englishEquivalent": "Many individuals act as one body, and one species speaks for all its kind.",
+    "theme": "unity",
+    "sourceCitation": "Morgan Nilsson, 'Somali gender polarity revisited', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 23, pp. 451–466, DOI: 10.17169/langsci.b121.494)"
   }
 ];

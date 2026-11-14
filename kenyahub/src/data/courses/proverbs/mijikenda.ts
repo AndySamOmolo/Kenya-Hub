@@ -1364,3 +1364,15 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Rev. Dr. L. Krapf, Rev. J. Rebmann & Rev. T. H. Sparshott, A Nika-English Dictionary (SPCK London, 1887, Book pp. 169, 178, 256, 259–260, 284, 314, 323, 347)"
   }
 ];
+
+MIJIKENDA_PROVERBS.push({
+  "id": "mijikenda-17-nicolle-2016-digo-narratives",
+  "languageId": "mijikenda",
+  "languageName": "Mijikenda (Chidigo / Digo [dig] E73 — Steve Nicolle 2016, Ch. 20)",
+  "indigenous": "Yuya bwana warima munda uchifika dza Mazera, na hiku uchifika dza Malindi ela kaguwire hata tsere mwenga (Ex. 8, p. 382) • Lakini achinyamala mutu yuyu wala kayagomba na mutu (Ex. 11, p. 383) • Ndipho atu achimanya kukala iye ndi=ye ariyehenda mambo higo (Ex. 22, p. 388) • Achiuka mwanache mmwenga achenda mwituni kutsonga ngoma. Phahi rero, chisha chindi, ratuluka fisi, rina chitswa dza cha mutu, rina mikono minane na magulu manane, rina m’yo wa chuma (Ex. 25, p. 390).",
+  "literalTranslation": "That man cultivated a farm reaching as far as Mazeras, and in the other direction reaching as far as Malindi, yet he did not harvest even one cob of maize (p. 382) • However, this person kept quiet and did not speak with anyone (p. 383) • That is when people knew that it was he who did these things (p. 388) • One youngster arose and went to the forest to carve a drum. Then today, after a short time, out came a giant hyena, having a head like a person's, eight hands and eight legs, and an iron heart (p. 390).",
+  "meaning": "Verbatim Chidigo (Digo `[dig]` E73, spoken in Kwale County, Kenya) oral narrative excerpts analyzed by Steve Nicolle in 'Variation in the expression of information structure in eastern Bantu languages' (in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages, Berlin: Language Science Press, 2016, Ch. 20, pp. 377–395, DOI: 10.17169/langsci.b121.491), illustrating hyperbolic narrative comparison (Mazeras to Malindi), right-dislocated continued topics, clefted subject focus, and VS thetic presentation.",
+  "englishEquivalent": "Great toil without rain yields no harvest; deeds reveal the doer.",
+  "theme": "patience",
+  "sourceCitation": "Steve Nicolle, 'Variation in the expression of information structure in eastern Bantu languages', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 20, pp. 377–395, Ex. 8, 11, 22, 25)"
+});

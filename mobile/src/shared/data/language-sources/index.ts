@@ -1848,3 +1848,235 @@ if (!LANGUAGE_SOURCES.some((s) => s.id === _beech1918Source.id)) {
     SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
   }
 }
+
+export {
+  KRAPF_ISENBERG_1840_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register krapf-isenberg-galla-outline-1840 ("An Imperfect Outline Of The Elements Of The Galla Language.md", Book pp. [i]–xiv, [1]–16) in LANGUAGE_SOURCES & lookup maps
+const _krapf1840Source: LanguageSource = {
+  id: "krapf-isenberg-galla-outline-1840",
+  title: "An Imperfect Outline of the Elements of the Galla Language (By the Rev. J. L. Krapf, Preceded by A Few Remarks Concerning the Nation of the Gallas, and an Evangelical Mission Among Them, by the Rev. C. W. Isenberg, London: Printed for the Church Missionary Society, and Sold by L. & G. Seeley, Fleet Street; Printed by Richard Watts, Crown Court, Temple Bar, M DCCC XL [1840], pp. [i]–xiv, [1]–16)",
+  fileName: "An Imperfect Outline Of The Elements Of The Galla Language.md",
+  processedPath: "language-sources/raw/An Imperfect Outline Of The Elements Of The Galla Language.md",
+  languages: ["borana", "somali"],
+  published: "1840",
+  contribution:
+    "First printed grammatical monograph on the Oromo/Galla language (30 pages: Title Page & Imprint pp. [i]–[ii] with BIBLIOTHECA BODLEIANA stamp; Rev. C. W. Isenberg's Preface 'A Few Remarks Concerning the Nation of the Gallas, and an Evangelical Mission Among Them' pp. [iii]–xiv; and Rev. J. L. Krapf's 'An Imperfect Outline of the Elements of the Galla Language' Sects. I–XI, pp. [1]–16, London: Printed for the Church Missionary Society, and Sold by L. & G. Seeley, Fleet Street; Printed by Richard Watts, Crown Court, Temple Bar, 1840 — Public Domain): Isenberg's Preface (pp. [iii]–xiv, gathered during his June–Nov. 1839 stay in Shoa): Galla family of Rās Guxa and his descendant Rās Āli (tutor of the nominal king of Gondar); borders (Dankali, Hurrur/Horror, Sŏmāli, Zindjero, Gurāgue, Caffa, Nārĕa) and mountains east of the Hawāsh (Gebel Achmar, Farsis, Afrăba, Assebot, inhabited by Ittoo and Alla); complete numbered Table of 50 Galla Tribes across 6 regional groups (Nos. 1–2 SE of Tigrè [Dob'a, Assebo]; Nos. 3–15 N of Shoa in Amhara/Angot [Wohhela, Wello, Karraīo, Yedjoo, Dawê, Wārā, Gafra, Watshelé, Sāko, Botoho, Torāderē, Gillê, Azzalo]; Nos. 16–20 E of Shoa [Ittoo, Aroosi, Saroya, Tcherk'er, Alla with fn. * on Arrowsmith's Map]; Nos. 21–24 S & SW of Shoa on the Hawāsh [Abedjoo, Adāī, Soddo, Abbo]; Nos. 25–43 S & SW of Shoa in Shoa Proper/Shoa Mêda & bordering Gurāgue [Lēbān, Wobarê, Djitān, Afsălă, Yerrer, Gelān, Mêta, Moolofallada, Mughir, Mugār, Djirroo, Allamālê, Bergamo, Garāo, Gumār, Bugāmo, Sugāmo, Abado, Babilee]; Nos. 44–50 W of Shoa & SW of Gondar on the Abyssinian Nile [Mêtcha, Gooderoo, Gumbitshoo, Betsho, Borenna, Hădera, Anko]); tributary relations to King Sahhela Selassieh of Shoa, Rās Ali & Berroo of Argobba; Queen Tshāmê of Moolofallada (her 'silk and velvet road' reply to the King of Shoa, and her son's request to Krapf for instruction) & the former Queen of Anko in Efat (fn. * Anko-ber = 'Gate of the Anko'); worship of Wāk and Kalitshas priests (compared to Tigrè Zekārotsh, carrying a whip and bell with goats' intestines round their necks), goat-intestine fat war haruspicy (red blood-distended veins), pit-and-lance oath under an animal's hide, 100-cattle homicide fine & sheep-intestine peace rite, field burial under slightly burnt wood (vegetating wood = happiness in afterlife, with separate stations for Gallas, Christians & Mohammedans), pilgrimage tree Wodanābè on the Hawāsh in Soddo (no women allowed), 3 named Gallas in Shoa—Berkiè of Gelān (Krapf's servant, guide & St. John Chs. 1–5 co-translator who conversed mutually with Dankali speakers), Chief Aito Berkiè of Adaī (with his Bulga priest-confessor, treated for mania), and Commander-in-chief Aito Meretch on the river Tchātchā (with fn. * on Galla, Sidama & Gurague women at Tadjurra)—plus the Debra Dāmo MS history, ~4,000 Scriptures in Tigrè, meeting M. Dufey, the Shoa school of 30–40 scholars, and the linguistic kinship of Galla, Danākil & Somāl. Krapf's Grammatical Outline (Sects. I–XI, pp. [1]–16): Sect. I Nature of the Language (Semitic pronouns/verb flexion + Japhetitic syntax; 4 origin traditions incl. Nile = Abaÿ & Jidda in Arabia); Sect. II Letters (3 reasons for choosing Roman over Ethiopic script); Sect. III No Article; Sect. IV Pronouns (Separable Personal, Demonstrative, Possessive, Relative kan, Interrogative, and Inseparable Noun/Verb Affixes on Mana & dai/kenne); Sect. V Declension of Gofta / Goftawon; Sect. VI All 17 Classes of Adverbs; Sect. VII Prepositions (20), Conjunctions (5 classes) & Interjections (4); Sect. VIII Verbs (Auxiliary To be, To become, To make/do Active & Passive, illalame, Causative in -sisse [Dekamsisse, Iamsisse], and Negative paradigms); Sect. IX Cardinals (1–2,000) & Ordinals in -fa (1st–1,000th); Sect. X Small Syntax (Parts I–VI); and Sect. XI All 31 Conversational Expressions & Sentences (p. 16, including village Metātit).",
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 977 Markdown lines: Title Page & Imprint pp. [i]–[ii], Isenberg's Preface & 50-Tribe Table pp. [iii]–xiv, and Krapf's Sections I–XI pp. [1]–16) into borana/grammar-reference.ts (updated borana-krapf-1840-griefenow-mewis-1996-werner-1915 & added Section 9), borana/course.ts (Unit 16), proverbs/borana.ts, borana.json, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _krapf1840Source.id)) {
+  LANGUAGE_SOURCES.push(_krapf1840Source);
+  SOURCES_BY_ID_MAP.set(_krapf1840Source.id, _krapf1840Source);
+  for (const _langKey of ["borana", "somali"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_krapf1840Source)) {
+      _bucket.push(_krapf1840Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}
+
+export {
+  NISHIGUCHI_2004_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register nishiguchi-daasanach-2004 ("Consonant Assimilation And Sonority A Case Study In Daasanach.md", OUPEL Vol. 9, pp. 39–51, 2004, DOI: 10.18910/70792) in LANGUAGE_SOURCES & lookup maps
+const _nishiguchi2004Source: LanguageSource = {
+  id: "nishiguchi-daasanach-2004",
+  title: "Consonant Assimilation and Sonority : A Case Study in Daasanach (By Sumiyo Nishiguchi, OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, 2004, Osaka University Knowledge Archive [OUKA], DOI: 10.18910/70792)",
+  fileName: "Consonant Assimilation And Sonority A Case Study In Daasanach.md",
+  processedPath: "language-sources/raw/Consonant Assimilation And Sonority A Case Study In Daasanach.md",
+  languages: ["daasanach"],
+  published: "2004",
+  contribution:
+    "Complete 13-page (589-line) phonological and Optimality Theory study of Daasanach ('Af Dhaasanac) by Sumiyo Nishiguchi (OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, 2004, Y. Oba [ed.], Osaka University Knowledge Archive [OUKA], https://ir.library.osaka-u.ac.jp/, DOI: 10.18910/70792; fieldwork carried out in New York State from September 2004 to May 2005 with a native Daasanach speaker from Kenya, acknowledging Ellen Broselow, Lori Repetti, Donka Steriade & the Kenyan informant in Footnote * p. 39): Section 1 Introduction (pp. 39–40, Ex. 1–4: Tosco 2001: 23 rules {n, l}+t → {nn, ll}, {r, d}+t → ɗɗ [printed: Îî], {s, t}+t → t; Tosco 2001: 52 hierarchy L > N > F > S[Cor] > S[-Cor]; st → t in /duus + ti/ → [duuti] 'farted' vs. t + s → s in /it + su/ → [isu] 'to tear off for oneself' [Tosco 2001: 24]; and the 3 governing factors at morpheme boundaries); Section 2 CC Sequences within Morphemes (pp. 40–43, Ex. 5–18, fns. 1–6 & Tableau 1: Son+Son L+L /rl/ marli — /mar+li/ 'Arbore', L+N /lm/ ɗolmisu — /ɗolis+miso/ 'to peep', /rm/ nirm 'newborn camels', /rn/ kernɲo 'bottom backbone'; Son+Obs L+F /rs/ karsic 'old, elder', /ls/ balsam — balt+sam 'kind of grass', L+C /lt/ bilti — bilt+e 'the knife for circumcision', N+F /ns/ kansic 'chief' [with fn. 3 correcting Tosco's 'L' typo for 'F'], N+C /nt/ inti — inti+e 'the gazelle'; Obs+Son C+N /ɗm/ duɗmo — dudum+o 'round calabashes', /dn/ koɗodnos — koɗodno+s 'to make someone bend for himself'; Obs+Obs C+F /df/ kuɗfu — kuɗf+o 'ankles'; Cooccurrence Restriction in Ex. 9 & Nishiguchi's hierarchy L > N, F, C [*N, F, C > L] in Ex. 11–12; Geminates in Ex. 13 [Sasse 1974: 409: GG yy, ww; LL ll, rr; NN mm, nn; FF ʃʃ; CC gg, dd, bb, tt, ɟɟ]; and Syllable Contact Law [Vennemann 1988: 40; Davis & Shin 1999], SyllCon [Bat-El 1996: 304], *Complex & Onset [Kager 1999] in Tableau 1 p. 43); Section 3 CC Sequences Across Morpheme Boundaries (pp. 44–45, Ex. 19–22 & Tableau 2: L+N /lm/ uolmosu — olol+mo+su 'to feed oneself'; L+F /rs/ ʔoʔorsis — ʔoʔor+sis 'make black', /ls/ ololso — olol+so 'to feed oneself'; L+C /rt/ ʕuurti — ʕuur+ti 'shaved oneself'; N+C /nt/ ɗuuninti — ɗuunin+ti 'mosquito'; F+N /sm/ duusma — duus+m+a 'to fart', /ɗm/ diiɗma — diit+m+a 'to refuse'; C+N /dm/ sʔuudmis — sʔuudis- 'to rub'; and *C_ObsC_Obs in Tableau 2 p. 45); Section 4 Consonant Assimilation and Deletion (pp. 46–50, Ex. 23–34, fns. 7–9 & Tableaux 3–4: G+C → G /zaaby+t+a/ → [zaaya] 'you sew' [Sasse 1976]; L+C → L without gemination in informant's speech: /maal+t+a/ → [maala] '(You) hear', /həl+ta/ → [həlaa] '(YOU) enter', /bil+t+o/ → [bilo] 'bows'; L+C → CC /fuur+t+a/ → [fuuDDA] 'you open' [Sasse 1976], /cir+t+i/ → [ciɗɗi] / [ciri] 'you held for yourself' [Tosco 2001: 187, fn. 9]; N+C → N+N /tuun+t+a/ → [tuunna] 'you beat', /zaas+am+t+a/ → [zaasanna] 'you see' [Sasse 1976]; F+C → C /us+te/ → [ute] 'scoop + Past Mid Sg', /fuus+te/ → [fuute] 'tear off + Benefactive', /hees+t+i/ → [heeti] 'you asked', /ɗis+t+i/ → [ɗiti] 'you built for yourself' [Tosco 2001: 187], /duus+t+i/ → [duuti] 'you farted' [Tosco 2001: 128]; C+F → F /it+su/ → [isu] 'to tear off' [Tosco 2001: 24]; C+C → CC /maɗ+t+i/ → [maɗɗi] 'you went and bought'; and *CC_Obs, Max-C_son-IO & Faith-affix-IO >> Max-IO, Ident-IO in Tableaux 3–4); and Section 5 Summary & all 13 References (pp. 50–51).",
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 589 Markdown lines: OUKA metadata, Sections 1–5, Examples 1–34, Tableaux 1–4, Footnotes 1–9, and all 13 References, pp. 39–51) into daasanach/grammar-reference.ts, daasanach/course.ts (updated Units 1–8 & added Unit 9), proverbs/daasanach.ts, daasanach.json, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _nishiguchi2004Source.id)) {
+  LANGUAGE_SOURCES.push(_nishiguchi2004Source);
+  SOURCES_BY_ID_MAP.set(_nishiguchi2004Source.id, _nishiguchi2004Source);
+  for (const _langKey of ["daasanach"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_nishiguchi2004Source)) {
+      _bucket.push(_nishiguchi2004Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}
+
+export {
+  BLAZEK_2011_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register/Update blazek-dasanech-2011 ("Dasanech Language State Of The Art Blazek 2011.md", Folia Orientalia Vol. 48, 2011) in LANGUAGE_SOURCES & lookup maps
+const _blazek2011Source: LanguageSource = {
+  id: "blazek-dasanech-2011",
+  title: "Dasanech Language – State-of-the-Art (By Václav Blažek, Masaryk University, Brno, Folia Orientalia, Vol. 48, 2011, reviewing Mauro Tosco, 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia', Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6)",
+  fileName: "Dasanech Language State Of The Art Blazek 2011.md",
+  processedPath: "language-sources/raw/Dasanech Language State Of The Art Blazek 2011.md",
+  languages: ["daasanach", "rendille", "borana", "somali"],
+  published: "2011",
+  contribution:
+    "Complete 338-line comparative and grammatical review article by Prof. Václav Blažek (Masaryk University, Brno, blazek@phil.muni.cz, Folia Orientalia, Vol. 48, 2011) reviewing Mauro Tosco's 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia' (Kuschitische Sprachstudien Band 17, founded by Hans-Jürgen Sasse in 1982, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6): Monograph Breakdown & Demographics (lines 9–15: autonym d’áasannæc, earlier Galab or Geleba; grammar pp. 1–301, texts pp. 302–319, key to verbal forms pp. 320–475, Dasanech-English vocabulary c. 1,400 units pp. 476–532, English-Dasanech vocabulary pp. 533–570, thematic glossaries pp. 571–581 [Plants, Insects & Invertebrates, Fish, Birds, Reptiles, Wild mammals, Domesticated animals, Geographical terms, Ethnic terms, Ox-names], color terminology pp. 582–584, references pp. 585–592, subject index pp. 593–597, plus 20 photos; 1994 Ethiopian census: 32,029; 1980 Kenyan estimation: 2,500; Tosco's contemporary estimate: 35,000–40,000); Three Classification Models & Glottochronology (lines 15–95: Greenberg 1963: 49, Sasse 1975: 19 & 23, Heine 1976: 179 & 1978: 31, and Blažek 1997: 173–74 glottochronological tree showing Galaboid–Oromoid -2050 BC / 37.7%, Elmolo–Arbore -180 BC / 68.5%, Dasaneč -1080 BC / 51.7%, and the 14-language cognate ranking: Arbore 53.3%, Elmolo 50.0%, Oromo 38.9%, Konso 35.8%, Somali 35.8%, Rendille 35.6%, D’irayta 31.2%, Bayso 27.7%, Afar 25.0%, Yaaku 18.0%, Gollango 16.5%, Harso 16.1%, Sidamo 14.6%, Dahalo 11.9%); Phonology & Morphology (lines 97–120: 24 consonant phonemes [b, d, t, j, c, g, k, ʔ; implosives ɓ, ɗ, ʄ, ɠ; nasals m, n, ɲ, ŋ; fricatives f, ð, s, š; trill r; approximants w, y, l], 5 short/long vowels [i, e, a, o, u] & 2 diphthongs [ie, uo]; singulative m. -(i)c/-(i)ɲ, -(a)c/-(a)ɲ & f. -ti; plural -u, -a, -i, -V(V)m/-sV(V)m, -anu, -ono, -s, -tu; numerals 1 tákac / tikiɗɗi, 2 naama, 3 seddi, 4 ʔaffur, 5 cen, 6 li, 7 tiyya, 8 siet, 9 saal, 10 tommon, 100 kúɗ tikiɗɗi ~ tikilli, 1000 ši tikiɗɗi ~ tikilli; 4-column Personal Pronoun Table on p. 211 [yú, kúuni, múuni, ɲíini, ʔitíni]; Beja-type partial-reduplication adjectival plurals [búubur, ɗeeɗír, ðáaðat] vs. -gV- plurals [ráagar, niiginí, ʔéegeð] on p. 207; and the 4 prefix-conjugated verbs ʔás, yaalla, yeeðe, yimii); and the 6-Source 101-Gloss Comparative Wordlist (lines 122–275: da Trento 1941 [60], Haberland 1966 [91], Fleming 1965 [102] & 1971 [146], Bender 1971 [97], Sasse 1973–82, Tosco 2001 [c. 1,400]), 48 Abbreviations (lines 280–282), and 50 References (lines 284–335).",
+  appUses: [
+    "dictionary",
+    "comparative translator",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 338 Markdown lines: review of Tosco 2001, 3 classification trees, 14-language cognate ranking, 24-consonant phoneme table, pronoun/numeral/adjective/verb paradigms, 6-column 101-gloss comparative wordlist, 48 Abbreviations & 50 References) into daasanach/grammar-reference.ts, daasanach/course.ts (updated Units 1–8 & added Unit 10), proverbs/daasanach.ts, daasanach.json (185 verified entries), dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+const _existingBlazekIdx = LANGUAGE_SOURCES.findIndex((s) => s.id === _blazek2011Source.id);
+if (_existingBlazekIdx >= 0) {
+  LANGUAGE_SOURCES[_existingBlazekIdx] = _blazek2011Source;
+} else {
+  LANGUAGE_SOURCES.push(_blazek2011Source);
+}
+SOURCES_BY_ID_MAP.set(_blazek2011Source.id, _blazek2011Source);
+for (const _langKey of ["daasanach", "rendille", "borana", "somali"]) {
+  const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter((s) => s.id !== _blazek2011Source.id);
+  _bucket.push(_blazek2011Source);
+  SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+}
+
+export {
+  HOHNEL_1894_VOL1_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register/Update hohnel-lakes-rudolf-stefanie-1894-vol1 ("Discovery Of Lakes Rudolf And Stefanie Vol I.md", Longmans, Green, and Co., 1894) in LANGUAGE_SOURCES & lookup maps
+const _hohnel1894Vol1Source: LanguageSource = {
+  id: "hohnel-lakes-rudolf-stefanie-1894-vol1",
+  title: "Discovery of Lakes Rudolf and Stefanie: A Narrative of Count Samuel Teleki's Exploring & Hunting Expedition in Eastern Equatorial Africa in 1887 & 1888, Vol. I (By Lieut. Ludwig von Höhnel, tr. Nancy Bell [N. D'Anvers], London: Longmans, Green, and Co., 1894, pp. [v]–xx, 1–385 [435] + 94 Illustrations + 4 Fold-out Maps)",
+  fileName: "Discovery Of Lakes Rudolf And Stefanie Vol I.md",
+  processedPath: "language-sources/raw/Discovery Of Lakes Rudolf And Stefanie Vol I.md",
+  languages: ["swahili", "taveta", "maasai", "kikuyu", "ilchamus", "samburu", "kalenjin", "somali"],
+  published: "1894",
+  contribution:
+    "Complete 2,908-line (Book pp. [v]–xx, 1–385 [435] + 4 Fold-out Maps) primary narrative by Lieut. Ludwig von Höhnel (translated by Nancy Bell [N. D'Anvers], London: Longmans, Green, and Co., 1894): Front Matter (Dedication to Emperor Francis Joseph I; Translator's Note thanking George Philip jun. & Miss E. Frost; Preface thanking Baron von Sterneck, Vice-Admiral von Knorr, Gen. Lloyd Matthews, Victor Escher, William Oswald, Lieut.-Col. Fred. M. Hunter, Dr. Gregory d'Arbela, A. Mielichhofer & L. H. Fischer; 94 Illustrations; and all 14 Errata on p. xx); Ch. I (Zanzibar & Coast, Oct. 5, 1886–Feb. 4, 1887, pp. 1–37: Jumbe Kimemeta, Qualla Idris & 8 Somalis, 9 guides, Bwana mkubwa/mdogo/katikati, Zanzibari naming & 12 Almäss nicknames, trade goods & 19-row Mawia load table of 470+ loads, motto 'Baringo na mbele kidogo'); Ch. II (Pangani to Taveta, Feb. 4–March 31, 1887, pp. 38–93: Leva pombe mutiny, Kwa Mgumi battle, 4-prefix Bantu rule U-/M-/Wa-/Ki- p. 61, verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga of Mkarama p. 66, Sultan Sembodja's smallpox dream-cure, 14 Swahili caravan camp toponyms pp. 75–76, Wapare fire-drill & telekesa march, Angata Lesulenge, Lake Jipe & Taveta); Ch. III (Taveta, Chaga, Mount Meru & First Ascent of Kilimanjaro, March 31–July 15, 1887, pp. 94–205: >1,500 Wataveta under 10 Wazee elders & Wakwafi, pombo bead strings, naiberes vs. schukas, 1 doti = 2 schuka = 8 mikono, Sultan Miriali of Marangu, kilengele & 'Tonga mbuya!', 7 Chaga states, Mandara's Swahili taunts, Sultan Matunda of Meru & maize-ear accounting, Lake Balbal, Little Arusha & Kahe, and June 20, 1887 ascent of Kibo to 16,240 ft. [Höhnel] & 17,387 ft. [Teleki] with Tylophora bicolor & Erigeron Telekii); Ch. IV (Through Masailand to Ngongo Bagas, July 15–Aug. 27, 1887, pp. 206–236 [285]: Kimangelia, Loitokitok Leigwanan twig-oratory, Olokii magadi & Lake Nyiri, Mfuto smallpox variolation of ~200 porters by Teleki, Donyo Erok el Matumbato & Ngare Naju kibuyu milk-gourds smoked with ol-oirien, Kapotei Elmoran in en-gopiro & ol-twala jumping 3 ft., Ngongo Bagas under Donyo Lamuyu, and connected ethnography of Il Oikob vs. Il Oogolala/Il Lumbwa, l-poror, Elmoran/Ditto/Elmorua, l-ngoret blood-arrows, ol-pul & kiloriti bark, najosho, ngoroyok & surutia, and Chief Laibon Mbatian of Engidong); Ch. V (First European Traverse of Kikuyuland, Aug. 27–Oct. 8, 1887, pp. 220–221, 234–236, 286–309 [361]: Ngongo Bagas blood-brotherhood with Miani, Karanja & Waiyaki; 68 parallel ravines from Nairobi to Thegu; Subugo forest belt, kihingo & ngurunga pitfalls with muriju poison; 'U-u-u-ui! Ngai!' & 'Mirema!'; Muthamaki/Athuri & Anake; mburi ya thayu & kuhoria tatha chanting 'Thayu! Thayu!'; Aturi smiths, ruhiu, kahiu, kiondo, mwatũ, njingiri, corno & 7–8 ft. muro digging-sticks; 3-tier ridge crop zoning; chiefs Kihara, Gathirimu, Getura, Karanja wa Maragua, Wamugunda of Tetu, Sept. 16 Mathira githathi peace covenant over white ram & black goat stepped across 7 times, and Chief Kihura at Ndoro under Mount Kenia [Donyo Egere]); and Ch. VI (First Ascent of Mount Kenia, Leikipia & Njemps on Lake Baringo, Oct. 8–Dec. 7, 1887, pp. 362–385 [435] & 4 Fold-out Maps: 5 vertical zones of Mt. Kenia, Lobelia Telekii Schweinfurth, Oct. 11, 1887 ascent to 15,355 ft. [4,680 m] on the western crater-rim; 8 glacier streams & upper Guaso Nyiro; Leikipia plateau [Il Leikipiak], Marmanet swamp, Ongalea mountains [172-lb elephant tusks] & Larabwal [60 loads of charqui]; Njemps Mkubwa & Njemps Ndogo on the Guaso Tigerish & Molo with timber-and-boulder dam & rotational sluice-canals; Kerio valley grain trip to Elgeyo & Marakwet; and exploration of Lake Baringo [3,190 ft.] & Ol Kokwa island with 6–8-log oboro ambatch rafts).",
+  appUses: [
+    "dictionary",
+    "comparative translator",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 2,908 Markdown lines: Front Matter, 14 Errata, Chs. I–VI, 94 Illustrations & 4 Fold-out Maps) into taveta, maasai, kikuyu, ilchamus, and swahili grammar-reference.ts, course.ts, and proverbs/*.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+const _existingHohnel1894Idx = LANGUAGE_SOURCES.findIndex(
+  (s) => s.id === _hohnel1894Vol1Source.id
+);
+if (_existingHohnel1894Idx >= 0) {
+  LANGUAGE_SOURCES[_existingHohnel1894Idx] = _hohnel1894Vol1Source;
+} else {
+  LANGUAGE_SOURCES.push(_hohnel1894Vol1Source);
+}
+SOURCES_BY_ID_MAP.set(_hohnel1894Vol1Source.id, _hohnel1894Vol1Source);
+for (const _langKey of ["swahili", "taveta", "maasai", "kikuyu", "ilchamus", "samburu", "kalenjin", "somali"]) {
+  const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter(
+    (s) => s.id !== _hohnel1894Vol1Source.id
+  );
+  _bucket.push(_hohnel1894Vol1Source);
+  SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+}
+
+export {
+  PAYNE_PACCHIAROTTI_BOSIRE_2016_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register/Update payne-pacchiarotti-bosire-diversity-2016 ("Diversity In African Languages.md", Language Science Press, 2016, pp. vii, 1–595, DOI: 10.17169/langsci.b121.281) in LANGUAGE_SOURCES & lookup maps
+const _payne2016DiversitySource: LanguageSource = {
+  id: "payne-pacchiarotti-bosire-diversity-2016",
+  title: "Diversity in African languages: Selected papers from the 46th Annual Conference on African Linguistics (Edited by Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, Contemporary African Linguistics 1, Series Editors: Lee Bickmore & Akinbiyi Akinlabi, Berlin: Language Science Press, 2016, pp. vii, 1–595, ISBN 978-3-946234-70-8, DOI: 10.17169/langsci.b121.281, CC BY 4.0)",
+  fileName: "Diversity In African Languages.md",
+  processedPath: "language-sources/raw/Diversity In African Languages.md",
+  languages: ["luhya", "swahili", "mijikenda", "somali", "maasai", "turkana", "teso", "luo", "kikuyu", "meru", "kamba"],
+  published: "2016 (CC-BY-4.0)",
+  contribution:
+    "Complete 595-page peer-reviewed edited volume (28 chapters + Preface p. vii + Name Index pp. 577–584 + Language Index pp. 585–595) edited by Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire from the 46th Annual Conference on African Linguistics (ACAL 46, University of Oregon, March 26–28, 2015, including a dedicated workshop on the Luhya languages of East Africa; Berlin: Language Science Press, 2016, DOI: 10.17169/langsci.b121.281, CC BY 4.0): Ch. 1 Seenku 4-tone featural system (Laura McPherson, pp. 5–22); Ch. 2 Kɔnni intonation & 5 emotions (Michael Cahill, pp. 25–41); Ch. 3 Mooré identifiability /-a/ & focus /~/ (Amos Teo, pp. 41–61); Ch. 4 Mooré symmetrical ditransitives (Sara Pacchiarotti, pp. 61–80); Ch. 5 Buli thetic structures lē (nē) (Anne Schwarz, pp. 81–100); Ch. 6 Akan 3 ɛ- pro-forms & No-Subject-Gap constraint (Sampson Korsah, pp. 103–117); Ch. 7 Akan valency-changing processes across >3,500 verb stems (E. Kweku Osam, pp. 117–139); Ch. 8 Degema clitics & SVCs (Nicholas Rolle & Ethelbert E. Kari, pp. 141–163); Ch. 9 Logoori [rag] JE41 coronal palatalization sj → ʃ, /h/-plosivization h → b / N__ & nasal deletion (Eleanor Glewwe & Ann M. Aly, pp. 165–183, DOI: 10.17169/langsci.b121.480, consultant Mwabeni Indire); Ch. 10 Kaonde 10 remote past -ile allomorphs (Boniface Kawasha, pp. 183–201); Ch. 11 Logoori 6 future inflections (SP-ra- -a, na-SP- -e, SP-raka- -e / SP-aaka- -e, SP-rika- -e, SP-ri- -a, naa-SP- -e) & 4 future-time constructions (Subjunctive, kʊzja, kʊman̪a + Subjunctive, ma-/aa- + Subjunctive) across 20 oral texts (Hannah Sarvasy, pp. 201–219, DOI: 10.17169/langsci.b121.482); Ch. 12 Logoori universal quantifiers vuri ('every', D-head) vs. -oosi ('all, whole, any', 15-class AP modifier) (Meredith Landman, pp. 219–234, DOI: 10.17169/langsci.b121.483, consultant Isaac K. Thomas); Ch. 13 Ndebele bipartite negation (Ross Burkholder, pp. 235–254); Ch. 14 Standard Swahili reversive extension (-u, -o, -ul, -ol & -uk/-ok) tested on 56 Pwani University (Kilifi) students across nonce-word coinage & top 20 SALAMA / Helsinki Corpus verbs incl. innovative kufanyua 'to undo' (Deo Ngonyani & Nancy Jumwa Ngowa, pp. 255–271, DOI: 10.17169/langsci.b121.485); Ch. 15 Luragooli anticausative -Vk (-ek/-ik/-ok/-uk) across Classes I–III & Class Ia/Ib transitive roots (John Gluckman & Margit Bowler, pp. 271–289, DOI: 10.17169/langsci.b121.486, consultant Mwabeni Indire); Ch. 16 Kinyarwanda locative applicative -ir/-er (Kyle Jerro, pp. 289–309); Ch. 17 Ndebele applicative -el (Galen Sibanda, pp. 309–333); Ch. 18 Differential object marking in Mozambican Bantu (Ngunga, Duarte & Camargos, pp. 333–354); Ch. 19 Luganda focus strategies IAV, PFC & [-A] (Jenneke van der Wal & Saudah Namyalo, pp. 355–377); Ch. 20 Information structure across 11 Eastern Bantu languages incl. Digo [dig] E73 (Kwale District, Kenya, 864 clauses) & Suba-Simbiti [ssc] EJ403 (513 clauses) (Steve Nicolle, pp. 377–395, DOI: 10.17169/langsci.b121.491); Ch. 21 Tripartite number marking, Greater Plural (Lopit kérr → kèrr-á → kèrr-ítí, Maasai eng-ker → ing-kerr-a → ing-kerr-ai 'herds of sheep', Teso e-tunga-nan → i-tunga → i-tunga-sinei 'mankind', Table 18) & Greater Singular in Lopit and Eastern Nilotic (Jonathan Moodie, pp. 397–416, DOI: 10.17169/langsci.b121.492); Ch. 22 Newly identified Daatsʼíin [dtn] language of western Ethiopia (Colleen Ahland, pp. 417–449); Ch. 23 Somali gender polarity revisited across 1,182 nouns, Corbett's agreement criterion, stem-syllable plural article rules, 5th-declension collectives (dibí-d-a vs. dibi-yá-d-a), Arabic broken plurals, lexical collectives, corporate nouns & generic singulars (Morgan Nilsson, pp. 451–466, DOI: 10.17169/langsci.b121.494); Ch. 24 Northern Mao finite verbs from nominalizations (Michael Ahland, pp. 467–492); Ch. 25 Lubukusu Transitive Reciprocal Constructions (-an + ba-b-eene khu b-eene, consultant Justine Sikuku) & Niger-Congo reflexive/reciprocal polysemy (Ken Safir & Naga Selvanathan, pp. 495–512, DOI: 10.17169/langsci.b121.496); Ch. 26 STAMP morphs in the Macro-Sudan Belt (Gregory D. S. Anderson, pp. 513–539); Ch. 27 Igbo–English codeswitching (Kelechukwu Ihemere, pp. 539–559); and Ch. 28 Humor in Kenyan comedy across Vitimbi, Redykyulass & Churchill Show with 16 verbatim multilingual excerpts (Martha Michieka & Leonard Muaka, pp. 559–576, DOI: 10.17169/langsci.b121.499).",
+  appUses: [
+    "dictionary",
+    "comparative translator",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 28 chapters, Preface p. vii, Name Index pp. 577–584 & Language Index pp. 585–595) into luhya, swahili, mijikenda, somali, maasai, and teso grammar-reference.ts, course.ts, and proverbs/*.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+const _existingPayne2016Idx = LANGUAGE_SOURCES.findIndex(
+  (s) => s.id === _payne2016DiversitySource.id
+);
+if (_existingPayne2016Idx >= 0) {
+  LANGUAGE_SOURCES[_existingPayne2016Idx] = _payne2016DiversitySource;
+} else {
+  LANGUAGE_SOURCES.push(_payne2016DiversitySource);
+}
+SOURCES_BY_ID_MAP.set(_payne2016DiversitySource.id, _payne2016DiversitySource);
+for (const _langKey of ["luhya", "swahili", "mijikenda", "somali", "maasai", "turkana", "teso", "luo", "kikuyu", "meru", "kamba"]) {
+  const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter(
+    (s) => s.id !== _payne2016DiversitySource.id
+  );
+  _bucket.push(_payne2016DiversitySource);
+  SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+}

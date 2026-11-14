@@ -3393,3 +3393,143 @@ export const SOMALI_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ── Unit 16: Complete Line-by-Line Integration of Morgan Nilsson (2016, Ch. 23, pp. 451–466, DOI: 10.17169/langsci.b121.494), "Somali gender polarity revisited", in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages ──
+SOMALI_UNITS.push({
+  "id": "somali-unit-16-nilsson-2016-gender-polarity-complete",
+  "title": "Unit 16: Somali Gender Polarity Revisited (Nilsson 2016)",
+  "description": "Master Morgan Nilsson's (2016, Ch. 23, pp. 451–466) complete analysis of Somali definite article allomorphy ({k} vs. {t}), penultimate vs. final tonal accent, Corbett's agreement criterion, stem-syllable plural article rules, 5th-declension collectives, Arabic broken plurals, and corporate/generic agreement.",
+  "order": 16,
+  "color": "#0284C7",
+  "lessons": [
+    {
+      "id": "somali-nilsson-2016-16-1-articles-tone-syllables",
+      "title": "Tonal Accent, Corbett's Agreement Criterion & Stem-Syllable Plural Article Rules (Tables 1–8 & 15, pp. 451–457, 465)",
+      "icon": "BookOpen",
+      "description": "Learn why Somali nouns have a single invariant gender and how the plural definite article {k} vs. {t} is predicted from singular gender and stem syllable count.",
+      "tips": "In Nilsson (2016, Ch. 23, Table 5, p. 454), plural agreement targets have a single gender-neutral form: verb -aan/-een, pronoun ay/iyaga, demonstrative kuwan, possessive -ood. The plural definite article is {k} for all feminine nouns and for masculine nouns with monosyllabic stems before the plural suffix, and {t} for masculine nouns with polysyllabic stems (Tables 6 & 15).",
+      "words": [
+        {
+          "target": "ínan → ínan-k-a (M) vs. inán → inán-t-a (F) • gámbar-k-a (M) vs. sabáb-t-a (F)",
+          "source": "the boy (penultimate H tone + {k}) vs. the girl (final H tone + {t}) • the stool vs. the reason",
+          "pronunciation": "í-nan-ka / i-nán-ta / gám-bar-ka / sa-báb-ta",
+          "hint": "Nilsson (2016, Ch. 23, pp. 452–453, Tables 1–3)"
+        },
+        {
+          "target": "Plural Agreement Targets (Table 5): -aan/-een (verbs) • ay / iyaga (pronouns) • kuwan (demonstrative) • -ood (possessive)",
+          "source": "Single gender-neutral plural target forms proving that Somali has no gender distinction in the plural",
+          "pronunciation": "-aan / -een / ay / i-ya-ga / ku-wan / -ood",
+          "hint": "Nilsson (2016, Ch. 23, p. 454, Table 5)"
+        },
+        {
+          "target": "Feminine Plurals with {k}: sabab-a-h-a • mindi-ya-h-a • hooyo-oyin-k-a",
+          "source": "the reasons • the knives • the mothers (feminine nouns regularly take {k} in the plural)",
+          "pronunciation": "sa-ba-ba-ha / min-di-ya-ha / hoo-yo-o-yin-ka",
+          "hint": "Nilsson (2016, Ch. 23, pp. 455, 465, Tables 6 & 15)"
+        },
+        {
+          "target": "Masculine Monosyllabic Stems with {k}: miis-as-k-a • geed-a-h-a • jilb-a-h-a (vs. wiil-a-sh-a & walaal-a-h-a, fn. 8)",
+          "source": "the tables • the trees • the knees (masculine 1-syllable stems before the plural suffix take {k})",
+          "pronunciation": "mii-sas-ka / gee-da-ha / jil-ba-ha / wii-la-sha",
+          "hint": "Nilsson (2016, Ch. 23, pp. 455–456, 465, Tables 6 & 15, fn. 8)"
+        },
+        {
+          "target": "Masculine Polysyllabic Stems with {t}: gambar-ra-d-a • derbi-ya-d-a • aabba-yaa-sh-a",
+          "source": "the stools • the walls • the fathers (masculine polysyllabic stems take {t} in the plural)",
+          "pronunciation": "gam-bar-ra-da / der-bi-ya-da / aab-ba-yaa-sha",
+          "hint": "Nilsson (2016, Ch. 23, pp. 455, 465, Tables 6 & 15)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Sabab-t-a → sabab-a-h-a • Miis-k-a → miis-as-k-a • Gambar-k-a → gambar-ra-d-a.",
+          "source": "The reason → the reasons (Fem. → {k}) • The table → the tables (Masc. 1-σ → {k}) • The stool → the stools (Masc. 2-σ → {t}) (Nilsson 2016, Ch. 23, p. 455, Table 6)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "According to Morgan Nilsson (2016, Ch. 23, pp. 454–457, Tables 5–8 & 15), why does Somali not have true plural gender polarity under Corbett's (1991) agreement criterion, and what determines whether a plural noun takes the {k} or {t} definite article?",
+          "correctAnswer": "Plural agreement targets (-aan/-een, ay/iyaga, kuwan, -ood) never distinguish gender; {k} is used for feminine plurals and masculine monosyllabic-stem plurals (miis-as-k-a, jilb-a-h-a), while {t} is used for masculine polysyllabic-stem plurals (gambar-ra-d-a)",
+          "options": [
+            "Plural agreement targets (-aan/-een, ay/iyaga, kuwan, -ood) never distinguish gender; {k} is used for feminine plurals and masculine monosyllabic-stem plurals (miis-as-k-a, jilb-a-h-a), while {t} is used for masculine polysyllabic-stem plurals (gambar-ra-d-a)",
+            "Every Somali noun takes {t} in the singular and {k} in the plural",
+            "Only borrowed Arabic nouns take definite articles in Somali",
+            "Plural verbs distinguish four genders in Somali"
+          ],
+          "hint": "See Nilsson (2016, Ch. 23, pp. 454–457, 465, Tables 5–6 & 15)"
+        }
+      ]
+    },
+    {
+      "id": "somali-nilsson-2016-16-2-collectives-corporates-generics",
+      "title": "5th-Declension Collectives, Arabic Broken Plurals, Corporate Nouns & Generic Singulars (Tables 9–14, Ex. 1–11, pp. 457–464)",
+      "icon": "Users",
+      "description": "Practice syntactic (3SG) vs. semantic (3PL) agreement across 5th-declension collectives, Arabic broken plurals, lexical collectives, corporate nouns, and generic singulars.",
+      "tips": "In Nilsson (2016, Ch. 23, pp. 458–460, Ex. 4), 5th-declension collectives like dibí-d-u ('the oxen') allow both 3PL (daaq-ay-aan) and 3SG.F (daaq-ay-saa) agreement, whereas regular plurals like dibi-ya-d-u allow ONLY 3PL (*Dibi-ya-d-u w-ay daaq-ay-saa is ungrammatical).",
+      "words": [
+        {
+          "target": "díbi-g-a → coll. dibí-d-a vs. pl. dibi-yá-d-a • báabuur-k-a → coll. baabuúr-t-a vs. pl. baabuur-rá-d-a • búug-g-a → coll. buúg-t-a vs. pl. buug-ág-g-a",
+          "source": "the ox → collective vs. regular plural • the truck → collective vs. regular plural • the book → collective vs. regular plural",
+          "pronunciation": "dí-bi-ga / di-bí-da / di-bi-yá-da / baa-buúr-ta / buúg-ta / buu-gág-ga",
+          "hint": "Nilsson (2016, Ch. 23, pp. 457–458, Tables 9–10)"
+        },
+        {
+          "target": "Dibí-d-u waa ay daaq-ay-aan / daaq-ay-saa vs. Dibi-ya-d-u w-ay daaq-ay-aan (*daaq-ay-saa)",
+          "source": "The oxen (collective) are grazing [3PL or 3SG.F] vs. The oxen (true plural) are grazing [3PL only; *3SG.F ungrammatical]",
+          "pronunciation": "di-bí-du waa ay daa-qa-yaan / daa-qay-saa / di-bi-ya-du",
+          "hint": "Nilsson (2016, Ch. 23, pp. 458–460, Ex. 2 & 4)"
+        },
+        {
+          "target": "kuraas-t-a (broken pl. coll.) vs. kursi-ya-d-a (regular pl.) • culima-d-a / culimo-d-a • macallimiin-t-a",
+          "source": "the chairs (Arabic broken plural collective vs. regular suffixed plural) • the scholars • the teachers",
+          "pronunciation": "ku-raas-ta / kur-si-ya-da / cu-li-ma-da / ma-cal-li-miin-ta",
+          "hint": "Nilsson (2016, Ch. 23, p. 461, Table 12 & Ex. 5–7)"
+        },
+        {
+          "target": "Lexical Collectives (Table 13): carruur-t-a (children) • lo’-d-a (dairy cattle) • dumar-k-a (women) • dad-k-a (people) • rag-g-a (men)",
+          "source": "Underived singular collective nouns allowing syntactic 3SG or semantic 3PL agreement",
+          "pronunciation": "car-ruur-ta / lo’-da / du-mar-ka / dad-ka / rag-ga",
+          "hint": "Nilsson (2016, Ch. 23, pp. 459, 462, Ex. 3 & Table 13)"
+        },
+        {
+          "target": "Corporate & Generic Nouns (Table 14, Ex. 8–11): qoys-k-a (family) • koox-d-a (group/team) • geel-a (camel herd) • Diin-k-u (the turtle)",
+          "source": "Singular corporate and generic nouns allowing 3SG or 3PL agreement in Somali discourse",
+          "pronunciation": "qoys-ka / koox-da / gee-la / diin-ku",
+          "hint": "Nilsson (2016, Ch. 23, pp. 462–464, Table 14 & Ex. 8–11)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Carruur-t-u waa ay qayli-n-ay-aan • Carruur-t-u waa ay qayli-n-ay-saa.",
+          "source": "The children are shouting [3PL semantic agreement vs. 3SG.F syntactic agreement] (Nilsson 2016, Ch. 23, p. 459, Ex. 3a–b)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Somali noun class in Morgan Nilsson (2016, Ch. 23, pp. 457–464) with its morphosyntactic agreement behavior:",
+          "correctAnswer": "dibí-d-a vs. dibi-yá-d-a (Tables 9–10, Ex. 4): 5th-declension feminine singular collective (allows 3SG.F or 3PL) vs. true suffixed plural (allows 3PL only)",
+          "pairs": [
+            {
+              "left": "dibí-d-a vs. dibi-yá-d-a (Tables 9–10, Ex. 4)",
+              "right": "5th-declension feminine singular collective (allows 3SG.F or 3PL) vs. true suffixed plural (allows 3PL only)"
+            },
+            {
+              "left": "kuraas-t-a & culima-d-a (Table 12, Ex. 5–7)",
+              "right": "Borrowed Arabic broken plurals treated as feminine singular collectives taking 3SG.F or 3PL agreement"
+            },
+            {
+              "left": "carruur-t-a, lo’-d-a, dumar-k-a, dad-k-a, rag-g-a (Table 13)",
+              "right": "Lexical collective nouns without a plural morpheme that trigger either 3SG or 3PL agreement"
+            },
+            {
+              "left": "qoys-k-a, koox-d-a, geel-a & Diin-k-u (Table 14, Ex. 8–11)",
+              "right": "Corporate nouns and generic singulars that switch between 3SG and 3PL agreement in the same sentence"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

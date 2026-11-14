@@ -996,3 +996,14 @@ export const MAASAI_PROVERBS: ProverbItem[] = [
     "sourceCitation": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Enigma #24, p. 259)"
   }
 ];
+
+MAASAI_PROVERBS.push({
+  "id": "maasai-hohnel-1894-vol1-sobai-leigwanan-olpul",
+  "languageId": "maasai",
+  "languageName": "Maasai (Il Oikob — Höhnel 1894, Vol. I)",
+  "indigenous": "Leibon, sobaj! — Ebaj, moran! (p. 131) • Sobai! — Eba! (p. 214) • Leigwanan Twig-Oratory ('Eh-eh!', p. 223) • White Turban Truce Sign at Ngare Naju (p. 229) • Il Oikob vs. Il Oogolala / Il Lumbwa & Chief Laibon Mbatian of Engidong (pp. 218–219).",
+  "literalTranslation": "Medicine-man, good day! — Good day, warrior! (Sigirari salutation, p. 131) • Spitting blessing & greeting 'Sobai! — Eba!' (p. 214) • The Leigwanan speaker laying down a twig for each clause while his warriors answer 'Eh-eh!' at Loitokitok (p. 223) • Jumbe Kimemeta throwing down his white turban between armed ranks as an inviolable peace sign at Ngare Naju (p. 229) • Pastoral Il Oikob vs. agricultural Il Oogolala (Il Lumbwa) and Chief Laibon Mbatian of the Engidong clan at Kisongo (pp. 218–219).",
+  "meaning": "Recorded firsthand by Lieut. Ludwig von Höhnel in 'Discovery of Lakes Rudolf and Stefanie' (Vol. I, 1894, Chs. III, IV & VI, pp. 84, 131, 206–236, 367–385): documents Masai spitting salutations, parliamentary twig-oratory at Loitokitok, the white-turban truce custom, milk-gourds (kibuyu) smoked with wild olive (ol-oirien), Kapotei Elmoran jumping 3 feet high in ostrich-feather face-frames (en-gopiro) and thigh war-bells (ol-twala), the strict Elmoran dietary separation of milk+blood (l-ngoret) from forest meat-feasts (ol-pul with kiloriti bark), married women (ngoroyok) slipping off one shoulder mantle in respectful greeting, and the buffalo-horn pebble oracle of Chief Laibon Mbatian.",
+  "theme": "unity",
+  "sourceCitation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (London: Longmans, Green, and Co., 1894, Chs. III, IV & VI, pp. 84, 131, 206–236, 367–385)"
+});

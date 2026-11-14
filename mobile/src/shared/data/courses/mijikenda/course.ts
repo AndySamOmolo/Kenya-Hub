@@ -3773,3 +3773,73 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ── Unit 15: Complete Line-by-Line Integration of Steve Nicolle (2016, Ch. 20, pp. 377–395, DOI: 10.17169/langsci.b121.491), "Variation in the expression of information structure in eastern Bantu languages", in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages ──
+MIJIKENDA_UNITS.push({
+  "id": "mijikenda-unit-15-nicolle-2016-digo-information-structure-complete",
+  "title": "Unit 15: Digo (Chidigo) Information Structure (Nicolle 2016)",
+  "description": "Master Steve Nicolle's (2016, Ch. 20, pp. 377–395) corpus analysis of Digo ([dig] E73, Kwale District, Kenya, 864 clauses) and 10 other Eastern Bantu languages across topic dislocation, clefted subject focus, and VS thetic sentences.",
+  "order": 15,
+  "color": "#059669",
+  "lessons": [
+    {
+      "id": "mijikenda-nicolle-2016-15-1-digo-topic-focus-thetic",
+      "title": "Digo Left/Right Topic Dislocation, Clefted Subject Focus & VS Thetic Sentences (Ch. 20, pp. 377–395)",
+      "icon": "MessageSquare",
+      "description": "Practice the exact Digo oral narrative sentences from Nicolle (2016, Ch. 20, Ex. 2–3, 7–8, 11, 22, 25) alongside comparative Suba-Simbiti ([ssc] EJ403) patterns.",
+      "tips": "In Digo ([dig] E73), left-dislocated object topics trigger an object prefix on the verb ([Barabara] ndipho [a-ka-i-rich-a], Ex. 2), whereas topicalized objects omit the object prefix when the verb is focused ([Pesa] sino [hu-na-Ø-hew-a], Ex. 3). Continued subject topics are left-dislocated across a paragraph break (Ex. 8) but right-dislocated within a paragraph (Lakini [achinyamala] [mutu yuyu], Ex. 11). Post-verbal subjects in Digo are never focal—subject focus requires a cleft (iye ndi=ye..., Ex. 22), and thetic sentences are strictly VS (ratuluka fisi, Ex. 25).",
+      "words": [
+        {
+          "target": "[Barabara]_TOPIC ndipho [a-ka-i-rich-a]_COMMENT • [Pesa]_TOPIC sino [hu-na-Ø-hew-a]_COMMENT",
+          "source": "The main road, that is when he left it (left-dislocated object with OP -i-) • That money, we have been given [it] (topicalized object without OP)",
+          "pronunciation": "ba-ra-ba-ra ndi-pho a-ka-i-ri-cha / pe-sa si-no hu-na-he-wa",
+          "hint": "Nicolle (2016, Ch. 20, pp. 379–380, Ex. 2–3)"
+        },
+        {
+          "target": "ela [go mafuha ga taa]_TOPIC ndo [n’yarya?]_COMMENT • Yuya bwana warima munda uchifika dza Mazera, na hiku uchifika dza Malindi ela kaguwire hata tsere mwenga",
+          "source": "but that lamp oil, what was it? (switch topic) • That man cultivated a farm reaching as far as Mazeras and Malindi, but he didn't harvest even one cob of maize (continued topic across paragraph break)",
+          "pronunciation": "go ma-fu-ha ga taa ndo nya-rya / yu-ya bwa-na wa-ri-ma mun-da",
+          "hint": "Nicolle (2016, Ch. 20, pp. 381–382, Ex. 7–8)"
+        },
+        {
+          "target": "Lakini [achinyamala]_COMMENT [mutu yuyu]_TOPIC wala kayagomba na mutu",
+          "source": "However, he kept quiet, this person, and didn't speak with anyone (right-dislocated continued subject topic within a paragraph)",
+          "pronunciation": "la-ki-ni a-chi-nya-ma-la mu-tu yu-yu wa-la ka-ya-gom-ba na mu-tu",
+          "hint": "Nicolle (2016, Ch. 20, p. 383, Ex. 11)"
+        },
+        {
+          "target": "Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo higo]_PRESUPPOSITION",
+          "source": "That is when people knew that [it was] he [who did these things] (cleft construction required for subject argument focus in Digo)",
+          "pronunciation": "ndi-pho a-tu a-chi-ma-nya ku-ka-la i-ye ndi-ye a-ri-ye-hen-da mam-bo hi-go",
+          "hint": "Nicolle (2016, Ch. 20, p. 388, Ex. 22)"
+        },
+        {
+          "target": "Phahi rero, chisha chindi, [ratuluka] [fisi], rina chitswa dza cha mutu, rina mikono minane na magulu manane, rina m’yo wa chuma",
+          "source": "Then today, after a short time, out came a giant hyena, having a head like a person's, eight hands, eight legs, and an iron heart (VS thetic sentence in Digo)",
+          "pronunciation": "ra-tu-lu-ka fi-si ri-na chi-tswa dza cha mu-tu",
+          "hint": "Nicolle (2016, Ch. 20, p. 390, Ex. 25)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Lakini achinyamala mutu yuyu wala kayagomba na mutu • Ndipho atu achimanya kukala iye ndiye ariyehenda mambo higo.",
+          "source": "However, this person kept quiet and didn't speak with anyone • That is when people knew that it was he who did these things (Nicolle 2016, Ch. 20, pp. 383, 388, Ex. 11 & 22)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "According to Steve Nicolle (2016, Ch. 20, pp. 381–391), how does Digo ([dig] E73) express (a) a continued subject topic within a paragraph, (b) subject argument focus, and (c) a thetic (all-new) sentence?",
+          "correctAnswer": "(a) Right-dislocation after the verb (Lakini achinyamala mutu yuyu), (b) a cleft construction (iye ndi=ye ariyehenda mambo higo) since post-verbal subjects cannot be focal in Digo, and (c) VS constituent order (ratuluka fisi) or locative-class agreement",
+          "options": [
+            "(a) Right-dislocation after the verb (Lakini achinyamala mutu yuyu), (b) a cleft construction (iye ndi=ye ariyehenda mambo higo) since post-verbal subjects cannot be focal in Digo, and (c) VS constituent order (ratuluka fisi) or locative-class agreement",
+            "(a) Obligatory SVO order in all contexts without clefts or right-dislocation",
+            "(a) Post-verbal subject focus without clefts, as in Rangi and Mwani",
+            "(a) SV thetic order only, prohibiting VS sentences"
+          ],
+          "hint": "See Nicolle (2016, Ch. 20, Ex. 11, 22 & 25, pp. 383, 388, 390)"
+        }
+      ]
+    }
+  ]
+});

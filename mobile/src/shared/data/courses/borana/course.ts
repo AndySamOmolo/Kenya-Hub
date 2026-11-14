@@ -3773,3 +3773,212 @@ BORANA_UNITS.push({
     }
   ]
 });
+
+if (!BORANA_CONFIG.sources.includes("krapf-isenberg-galla-outline-1840")) {
+  BORANA_CONFIG.sources.unshift("krapf-isenberg-galla-outline-1840");
+}
+
+BORANA_UNITS.push({
+  id: "borana-unit-16-krapf-isenberg-1840-elements-outline",
+  title: "Unit 16: Krapf & Isenberg (1840) — 'An Imperfect Outline of the Elements of the Galla Language' (50 Tribes, Queen Tshāmê, Wāk & Kalitshas, Wodanābè & Sects. I–XI)",
+  description: "Master the first printed Oromo/Galla grammar (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16): Isenberg's 50-tribe geographic table, Queen Tshāmê of Moolofallada, Anko-ber, Wāk & Kalitshas, pit-and-lance oaths, Wodanābè tree, Berkiè of Gelān, Aito Berkiè & Aito Meretch, and Krapf's Sections I–XI.",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "borana-krapf-isenberg-1840-preface-50-tribes-16-1",
+      title: "Isenberg's 1840 Preface (pp. [iii]–xiv): 50 Galla Tribes, Queen Tshāmê, Wāk & Kalitshas, Oaths, Wodanābè & Shoa Informants",
+      icon: "Compass",
+      description: "Explore Rev. C. W. Isenberg's June–Nov. 1839 Shoa ethnography (pp. [iii]–xiv): the 50 Galla tribes across 6 regions, Queen Tshāmê, Anko-ber, Wāk & Kalitshas, haruspicy, pit-and-lance oaths, 100-cattle homicide law, vegetating grave-wood, Wodanābè tree, and informants Berkiè, Aito Berkiè & Aito Meretch.",
+      tips: "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
+      words: [
+        {
+          target: "1–2 Dob'a, Assebo (SE of Tigrè) • 3–15 Wohhela, Wello, Karraīo, Yedjoo, Dawê, Wārā, Gafra, Watshelé, Sāko, Botoho, Torāderē, Gillê, Azzalo (N of Shoa) • 16–20 Ittoo, Aroosi, Saroya, Tcherk'er, Alla (E of Shoa, with Gebel Achmar, Farsis, Afrăba & Assebot mts.)",
+          source: "Tribes 1–20 in Isenberg's 1840 Table (SE of Tigrè, N of Shoa in Amhara/Angot, and E of Shoa toward Hawāsh, Danākil, Somāl & Hurrur)",
+          pronunciation: "do-b'a / as-se-bo / wel-lo / kar-ra-io / it-too / a-roo-si / al-la",
+          hint: "Isenberg in Krapf (1840, pp. iv–v)"
+        },
+        {
+          target: "21–24 Abedjoo, Adāī, Soddo, Abbo (S/SW on Hawāsh) • 25–43 Lēbān, Wobarê, Djitān, Afsălă, Yerrer, Gelān, Mêta, Moolofallada, Mughir, Mugār, Djirroo, Allamālê, Bergamo, Garāo, Gumār, Bugāmo, Sugāmo, Abado, Babilee (S/SW of Shoa) • 44–50 Mêtcha, Gooderoo, Gumbitshoo, Betsho, Borenna, Hădera, Anko (W of Shoa on the Abaÿ/Nile)",
+          source: "Tribes 21–50 in Isenberg's 1840 Table (S, SW & W of Shoa on the Hawāsh, Shoa Mêda, Gurāgue border & Abyssinian Nile)",
+          pronunciation: "a-da-i / sod-do / le-ban / ge-lan / me-ta / moo-lo-fal-la-da / met-cha / bo-ren-na / an-ko",
+          hint: "Isenberg in Krapf (1840, p. v)"
+        },
+        {
+          target: "Queen Tshāmê of Moolofallada (and her son) • Queen of Anko & Anko-ber / bar ('Gate of the Anko') • Rās Guxa & Rās Āli • King Sahhela Selassieh of Shoa • Berroo of Argobba",
+          source: "Female rulers (Queen Tshāmê's 'silk and velvet road' reply to the King of Shoa; Anko-ber etymology) & political rulers in Isenberg (1840, pp. [iii], vi, xii–xiii)",
+          pronunciation: "tsha-me / moo-lo-fal-la-da / an-ko-ber / ras gu-xa / ras a-li / sah-he-la se-las-sieh",
+          hint: "Isenberg in Krapf (1840, pp. [iii], vi, xii–xiii)"
+        },
+        {
+          target: "Wāk (Supreme Being) • Kalitshas (priests carrying whip, bell & goats' intestines round their necks, cf. Tigrè Zekārotsh) • Goat-intestine fat war haruspicy (red blood-distended veins = victory) • Sacred tree Wodanābè on the Hawāsh in Soddo (no women allowed)",
+          source: "Galla religion, priesthood, war divination, and pan-tribal pilgrimage tree in Isenberg (1840, pp. vii–ix)",
+          pronunciation: "wak / ka-lit-shas / ze-ka-rotsh / wo-da-na-be / ha-wash / sod-do",
+          hint: "Isenberg in Krapf (1840, pp. vii–ix)"
+        },
+        {
+          target: "Pit-and-Lance Oath covered with an animal's hide • 100-Cattle homicide fine & opening a sheep's belly peace rite • Field burial under slightly burnt wood (vegetating wood = state of happiness; separate afterlife stations for Gallas, Christians & Mohammedans)",
+          source: "Oaths, homicide law-suits, peace ratification, burial customs, and afterlife beliefs in Isenberg (1840, pp. vii–viii)",
+          pronunciation: "wak / ka-lit-shas / wo-da-na-be",
+          hint: "Isenberg in Krapf (1840, pp. vii–viii)"
+        },
+        {
+          target: "Berkiè of Gelān ('my Gelan-man', St. John Chs. 1–5 co-translator & Dankali interlocutor) • Chief Aito Berkiè of Adaī (with his Bulga priest-confessor, treated for mania) • Commander-in-chief Aito Meretch (on the river Tchātchā, treated by Isenberg & M. Rochet) • Debra Dāmo MS",
+          source: "Three named Gallas in Shoa, mutual intelligibility with Dankali/Somāl, and the Debra Dāmo History MS in Isenberg (1840, pp. ix–xiv, 8)",
+          pronunciation: "ber-kie / ge-lan / ai-to ber-kie / a-da-i / ai-to me-retch / tcha-tcha / de-bra da-mo",
+          hint: "Isenberg in Krapf (1840, pp. ix–xiv, 8)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Anko-ber, or bar, signifies the Gate of the Anko, having been the residence of their queen.",
+          source: "Isenberg's footnote on the etymology of Ankober from the Galla Anko tribe and its queen (1840, p. vi fn. *)."
+        },
+        {
+          target: "Berkiè, Mr. Krapf's Galla servant, could converse with Dankali people, both parties speaking their own language and yet understanding each other.",
+          source: "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl (1840, p. xiii)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Rev. C. W. Isenberg's 1840 Preface (pp. vi, viii–ix, xii–xiii), who governed the Galla tribe Moolofallada, how did she reply to King Sahhela Selassieh's invitation to Ankober/Angollala, and what is the sacred pilgrimage tree on the Hawāsh in Soddo?",
+          correctAnswer: "Queen Tshāmê governed Moolofallada and replied that he should overlay all the road from Moolofallada to his palace with silk and velvet (while her son later asked Krapf for instruction); the sacred pilgrimage tree on the Hawāsh in Soddo (where no women may approach) is Wodanābè",
+          options: [
+            "Queen Tshāmê governed Moolofallada and replied that he should overlay all the road from Moolofallada to his palace with silk and velvet (while her son later asked Krapf for instruction); the sacred pilgrimage tree on the Hawāsh in Soddo (where no women may approach) is Wodanābè",
+            "Queen Mwana Mkisi governed Kongowea and worshipped under the baobab tree",
+            "Aito Meretch governed Debra Dāmo and forbade men from approaching the Tchātchā river",
+            "Berroo of Argobba governed Gondar and planted the Gebel Achmar tree"
+          ],
+          hint: "See Isenberg in Krapf (1840, pp. vi, viii–ix, xii–xiii)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each person, institution, or custom in Isenberg's 1840 Preface (pp. [iii]–xiv) with its exact description:",
+          correctAnswer: "Berkiè of the Gelān tribe: Krapf's Galla teacher, guide & St. John (Chs. 1–5) co-translator who conversed directly with Dankali speakers (pp. ix, xiii, 8)",
+          pairs: [
+            {
+              left: "Berkiè of the Gelān tribe",
+              right: "Krapf's Galla teacher, guide & St. John (Chs. 1–5) co-translator who conversed directly with Dankali speakers (pp. ix, xiii, 8)"
+            },
+            {
+              left: "Aito Berkiè of the Adaī tribe",
+              right: "Baptized Galla chief attended by a priest from Bulga and his sons; treated by Isenberg for mania (p. ix)"
+            },
+            {
+              left: "Aito Meretch",
+              right: "Commander-in-chief of the King of Shoa's forces governing a large district on the river Tchātchā (pp. ix–x)"
+            },
+            {
+              left: "Kalitshas & Pit-and-Lance Oath",
+              right: "Priests of Wāk wearing goats' intestines & divining war from red veins in intestinal fat; oath over a hide-covered pit with lances (p. vii)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "borana-krapf-1840-grammar-sections-1-to-11-16-2",
+      title: "Krapf's 1840 Grammatical Outline (Sects. I–XI, pp. [1]–16): Pronouns, Gofta Declension, 17 Adverb Classes, Verbs, -fa Ordinals, Syntax & 31 Sentences",
+      icon: "Languages",
+      description: "Master all 11 sections of Krapf's 1840 Outline (pp. [1]–16): 4 origin traditions (Abaÿ & Jidda), Roman script, 6 pronoun classes, Gofta declension, 17 adverb classes, prepositions/conjunctions/interjections, verb paradigms (Active, Passive -ame, Causative -sisse, Negative), cardinals & -fa ordinals, Small Syntax, and all 31 expressions & sentences.",
+      tips: "In Section V (p. 4), Krapf declines 'Gofta' (Lord/Master): Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!; Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko! In Section IX (p. 11), ordinals are formed with '-fa' (toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa... dibbafa, kumafa).",
+      words: [
+        {
+          target: "āna (anāfi, na; ani abbaworra) • ati (sifi; ati abbaworra) • isa / ui [eni] (isafi) • isi (isifi) • nu (nufi, garra kenin, nu irra) • issini (issinifi, garra kesani, issin irra) • isan (isanifi, garra isani, isan irra)",
+          source: "Separable personal, directional, ablative, and reflexive pronouns in Krapf (1840, Sect. IV.I, p. 2)",
+          pronunciation: "a-na / a-na-fi / a-ti / si-fi / i-sa / i-si / nu / is-si-ni / i-san / ab-ba-wor-ra",
+          hint: "Krapf (1840, Sect. IV.I, p. 2)"
+        },
+        {
+          target: "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita, manakenia, manikesani, manisani | eni na/si/isa/isi/nu/issin/isan dai • eni na kenne • na kenni (sg.) / na kenna (pl.) • eni na hendane • eni na henkennu",
+          source: "Inseparable pronouns affixed to Mana ('house') and joined to verbs ('beat' & 'give') in Krapf (1840, Sect. IV.VI, pp. 3–4)",
+          pronunciation: "ma-na-ki-ya / ma-na-ko / e-ni na dai / e-ni na ken-ne / e-ni na hen-da-ne",
+          hint: "Krapf (1840, Sect. IV.VI, pp. 3–4)"
+        },
+        {
+          target: "Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! | Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko!",
+          source: "Declension of Noun Substantives ('Gofta' = Lord/Master, Sing. & Plur.) in Krapf (1840, Sect. V, p. 4)",
+          pronunciation: "gof-ta / gof-ta-da / gof-ta-fi / gof-tan / gof-ta-ko / gof-ta-won",
+          hint: "Krapf (1840, Sect. V, p. 4)"
+        },
+        {
+          target: "Suni mana kana woya ('That house is better than this') • Suni mana kana irra tshira ('That house is greater than this') • Hoda issin! / Hodu ati! / Hodu ana! ('Look you / thou / I!') • atombekin ('Unless he know')",
+          source: "Adverbs of comparison, demonstration, and exclusion (atom—in) in Krapf (1840, Sect. VI.2, 3 & 5, pp. 4–5)",
+          pronunciation: "su-ni ma-na ka-na wo-ya / ho-da is-sin / ho-du a-ti / a-tom-be-kin",
+          hint: "Krapf (1840, Sect. VI, pp. 4–5)"
+        },
+        {
+          target: "ani tshira / ana tā / tai (hentain) / ani tae | Active: ani godi, eni gode, nu gonne, issini godana, isan goddan | Passive: ani godame, nu godamna & ani illalame, ati illalamta (illalame tshira) | Causative (-sisse): Dekame → Dekamsisse, iame → Iamsisse",
+          source: "Auxiliary, Active, Passive (-ame), and Causative (-sisse) verb paradigms in Krapf (1840, Sect. VIII, pp. 8–9)",
+          pronunciation: "a-ni tshi-ra / a-ni go-di / nu gon-ne / a-ni go-da-me / il-la-la-me / de-kam-sis-se / iam-sis-se",
+          hint: "Krapf (1840, Sect. VIII, pp. 8–9)"
+        },
+        {
+          target: "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba, sadēti, sagall, kudana ... diktama (20), sodoma (30), afurtama (40), shantama (50), tshātāma (60), torbātăma (70), sadētăma (80), sagaltama (90), dibba (100), kūma (1000) | Ordinals (-fa): toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa, kuda toko (11th), kuda lamafa (12th) ... diktamifa (20th), sodomifa (30th), afurtamafa (40th), shantamafa (50th), dibbafa (100th), kumafa (1000th)",
+          source: "Complete Cardinal (1–2,000) and Ordinal (-fa, 1st–1,000th) numeral tables in Krapf (1840, Sect. IX, p. 11)",
+          pronunciation: "tok / tak / tsha / ku-da-na / dik-ta-ma / la-ma-fa / sa-di-fa / dib-ba-fa / ku-ma-fa",
+          hint: "Krapf (1840, Sect. IX, p. 11)"
+        },
+        {
+          target: "Eni dufufi / bekufi / diatufi (Infin. dativo: 'He must come/know/be near') • Eni sila endufa / embeka / endiata • Eni kankennu tua ('He will give') • Daga kennaf • Gofta regariti dau tshalate ('The king likes the beating of the drum') • Nama hamawon & Daga gudawon • Nama kan manna henkabna • henkābu / hedkabtu / henkăbu / henkabne / henkabtan / henkaban • Workef meti, Dagaf maka, Kan duef kan tshira",
+          source: "Syntactic constructions of verbs, nouns, pronouns, negative possession ('henkābu'), prepositions, and affixed '-f' ('and') in Krapf (1840, Sect. X, pp. 12–15)",
+          pronunciation: "e-ni du-fu-fi / e-ni si-la en-du-fa / gof-ta re-ga-ri-ti dau tsha-la-te / hen-ka-bu / hed-kab-tu / wor-kef me-ti",
+          hint: "Krapf (1840, Sect. X, pp. 12–15)"
+        },
+        {
+          target: "Naga ambulte — Bulla bulte naguma • Nagam bultani? — Bulle bulta / Enaganaga, feyuma • Naga oltani? — Ollo olte • Marabatis, nagana oli (sg.) / nagaia ole (pl.) • Naga tshedde? / tsheddani? — Atis feiuma / Issinis feiuma • Naguma galgalesite? — Naguma atigalgalesite? • Naguma galgalesate — Nagai ambula • Gondi kuni mekan eniu? — Metātit tsheddan • Esa dukta? • Esei duffe? • Gadi meka? • Na hime esa isa tshira • Dafi tai • Kai • Kod / As kod • Anda atam tshirte?",
+          source: "All 31 Galla conversational expressions, salutations, and sentences in Krapf (1840, Sect. XI, p. 16)",
+          pronunciation: "na-ga am-bul-te / bul-la bul-te na-gu-ma / ma-ra-ba-tis na-ga-na o-li / gon-di ku-ni me-kan e-ni-u / me-ta-tit tshed-dan",
+          hint: "Krapf (1840, Sect. XI, p. 16)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Gofta regariti dau tshalate. — Nama kan manna henkabna. — Workef meti; Dagaf maka; Kan duef kan tshira.",
+          source: "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead (Krapf 1840, Sect. X, pp. 12, 14–15)."
+        },
+        {
+          target: "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",
+          source: "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? (Krapf 1840, Sect. XI, p. 16)."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Rev. J. L. Krapf's 'An Imperfect Outline of the Elements of the Galla Language' (1840, Sects. V, VIII & IX, pp. 4, 9, 11), how is the noun 'Gofta' (Lord/Master) declined in the singular, how is the Causative verb formed, and how are Ordinal numerals formed?",
+          correctAnswer: "Gofta declines as N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! (pl. Goftawon); the Causative adds '-sisse' (Dekame → Dekamsisse, iame → Iamsisse); and Ordinals add '-fa' (toko, lamafa, sadīfa, afrafa... dibbafa, kumafa)",
+          options: [
+            "Gofta declines as N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! (pl. Goftawon); the Causative adds '-sisse' (Dekame → Dekamsisse, iame → Iamsisse); and Ordinals add '-fa' (toko, lamafa, sadīfa, afrafa... dibbafa, kumafa)",
+            "Gofta is invariable; the Causative prefixes 'ta-'; and Ordinals prefix 'm-'",
+            "Gofta takes Bantu class prefixes; the Causative adds '-eka'; and Ordinals use '-tiana' exclusively",
+            "Gofta is declined only in the Ethiopic syllabary"
+          ],
+          hint: "See Krapf (1840, Sects. V, VIII & IX, pp. 4, 9, 11)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each Galla sentence from Krapf's 1840 Outline (Sects. X & XI, pp. 12–16) with its exact English translation:",
+          correctAnswer: "Gofta regariti dau tshalate: The king likes the beating of the drum (p. 12)",
+          pairs: [
+            {
+              left: "Gofta regariti dau tshalate",
+              right: "The king likes the beating of the drum (p. 12)"
+            },
+            {
+              left: "Gondi kuni mekan eniu? — Metātit tsheddan",
+              right: "How do they call this village? — It is called Metātit (p. 16)"
+            },
+            {
+              left: "Marabatis, nagana oli (sg.) / Marabatis, nagaia ole (pl.)",
+              right: "Good bye (singular / plural, p. 16)"
+            },
+            {
+              left: "Sonna egi aka henbāne",
+              right: "Make that it may not perish (p. 15)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

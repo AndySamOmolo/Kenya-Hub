@@ -6924,3 +6924,143 @@ SWAHILI_UNITS.push({
     }
   ]
 });
+
+// ── Unit 26: Complete Line-by-Line Integration of Chapters 14 (Ngonyani & Ngowa, pp. 255–271) & 28 (Michieka & Muaka, pp. 559–576) in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., "Diversity in African languages" (Berlin: Language Science Press, 2016) ──
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-26-payne-2016-reversive-and-kenyan-comedy-complete",
+  "title": "Unit 26: Swahili Reversives & Kenyan Comedy Discourse (Payne et al. 2016)",
+  "description": "Master Deo Ngonyani & Nancy Jumwa Ngowa's (2016, Ch. 14, pp. 255–271) study of Standard Swahili reversives (-u/-o/-ul/-ol & -uk/-ok) at Pwani University (Kilifi) and Martha Michieka & Leonard Muaka's (2016, Ch. 28, pp. 559–576) linguistic analysis of Kenyan comedy from Vitimbi and Redykyulass to Churchill Show.",
+  "order": 26,
+  "color": "#7C3AED",
+  "lessons": [
+    {
+      "id": "swahili-payne-2016-26-1-ngonyani-ngowa-reversive",
+      "title": "Productivity of the Reversive Extension in Standard Swahili (Ngonyani & Ngowa 2016, Ch. 14, pp. 255–271)",
+      "icon": "RefreshCw",
+      "description": "Learn the 4 reversive allomorphs (-u, -o, -ul, -ol), fused stative -uk/-ok, semantic subclasses, and the Pwani University nonce-word and Helsinki Corpus acceptability experiments.",
+      "tips": "In Ngonyani & Ngowa (2016, Ch. 14, pp. 255–271), mid back /o/ in the verb root selects -o/-ol (chom-a → chom-o-a / chom-ol-e-a / chom-ok-a), while /i, e, a, u/ select -u/-ul (zib-a → zib-u-a / zib-ul-i-a / zib-uk-a). In the Pwani University acceptability test on the top 20 SALAMA / Helsinki Corpus verbs, 10 of 16 speakers accepted innovative kufanyua ('to undo' < kufanya)!",
+      "words": [
+        {
+          "target": "ziba → zibua (zibulia, zibulisha, zibuliwa, zibuka) • tega → tegua (tegulia, teguka) • panga → pangua (pangulia, pangulisha, panguka) • funga → fungua",
+          "source": "block/plug → unblock • set trap → disarm trap • arrange → disarrange • tie/shut → untie/open (high-vowel reversive -u / -ul- and stative -uk-)",
+          "pronunciation": "zi-bu-a / zi-bu-li-a / zi-bu-ka / te-gu-a / pa-ngu-a / fu-ngu-a",
+          "hint": "Ngonyani & Ngowa (2016, Ch. 14, pp. 256–259, Ex. 2–8)"
+        },
+        {
+          "target": "choma → chomoa (chomolea, chomolewa, chomoka) • songa → songoa • kosa → kosoa • koma → komoa",
+          "source": "stick in → pull out • press together → wring • err → criticize/correct • come to an end → lock up (mid-vowel harmony -o / -ol- and stative -ok- after root /o/)",
+          "pronunciation": "cho-mo-a / cho-mo-le-a / cho-mo-ka / so-ngo-a / ko-so-a / ko-mo-a",
+          "hint": "Ngonyani & Ngowa (2016, Ch. 14, pp. 258–260, Ex. 7, 9, 10)"
+        },
+        {
+          "target": "simba → simbua • tanza → tanzua • tata → tatua • vaa → vua | Intensive: kama → kamua • mega → megua",
+          "source": "dig → dig up • tangle → untangle • tangle/complicate → untangle/solve • dress → undress | squeeze → squeeze/wring out • break off piece",
+          "pronunciation": "si-mbu-a / ta-nzu-a / ta-tu-a / vu-a / ka-mu-a / me-gu-a",
+          "hint": "Ngonyani & Ngowa (2016, Ch. 14, pp. 258–260, Ex. 5 & 9)"
+        },
+        {
+          "target": "Idiosyncratic & Fossilized: tamba → tambua • remba → rembua • enga → engua | kagua, fufua, kwangua, zindua, chukua, nyofoa",
+          "source": "recognize, deface, skim | inspect, resurrect, scrape, inaugurate, take/carry, strip off flesh (fossilized verbs with no synchronic base)",
+          "pronunciation": "ta-mbu-a / re-mbu-a / e-ngu-a / ka-gu-a / fu-fu-a / kwa-ngu-a / zi-ndu-a",
+          "hint": "Ngonyani & Ngowa (2016, Ch. 14, pp. 260–261, Ex. 10–11)"
+        },
+        {
+          "target": "Pwani Univ. Tests (Tables 1–4): kugola → kugoloa, kupeza → kupezua (60% List A; 65% List B) • kufanya → kufanyua ('to undo', 10/16 existing/possible)",
+          "source": "Nonce-word coinage test (40 students) and SALAMA / Helsinki Corpus acceptability test (16 students) at Pwani University, Kilifi",
+          "pronunciation": "ku-go-lo-a / ku-pe-zu-a / ku-fa-nyu-a",
+          "hint": "Ngonyani & Ngowa (2016, Ch. 14, pp. 262–268, Tables 1–4)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Fundi a-me-zib-u-a bomba • Bomba li-me-zib-uk-a • Mwalimu a-li-m-chom-ol-e-a mwanafunzi kalamu.",
+          "source": "The plumber has unplugged the pipe • The pipe is unplugged • The teacher pulled out a pen for the student (Ngonyani & Ngowa 2016, Ch. 14, pp. 256–259, Ex. 2b, 7b, 8a)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Deo Ngonyani & Nancy Jumwa Ngowa's (2016, Ch. 14, pp. 257–268) study at Pwani University (Kilifi), what governs the choice between the four Standard Swahili reversive allomorphs (-u, -o, -ul, -ol), and which innovative reversive from the Helsinki Corpus of Swahili was accepted as existing or possible by 10 out of 16 speakers?",
+          "correctAnswer": "Mid back /o/ in the root selects -o/-ol (chomoa, chomolea) while /i, e, a, u/ select -u/-ul (zibua, zibulia), with /l/ surfacing before vowel-initial suffixes (-i/-e, -ish, -iw/-ew); 10/16 speakers accepted kufanyua ('to undo' < kufanya)",
+          "options": [
+            "Mid back /o/ in the root selects -o/-ol (chomoa, chomolea) while /i, e, a, u/ select -u/-ul (zibua, zibulia), with /l/ surfacing before vowel-initial suffixes (-i/-e, -ish, -iw/-ew); 10/16 speakers accepted kufanyua ('to undo' < kufanya)",
+            "All Swahili verbs take -o regardless of root vowel",
+            "The lateral /l/ only appears in imperative verbs",
+            "Reversive suffixes can only attach to Arabic loanwords"
+          ],
+          "hint": "See Ngonyani & Ngowa (2016, Ch. 14, pp. 257–259, 267–268, Table 4)"
+        }
+      ]
+    },
+    {
+      "id": "swahili-payne-2016-26-2-michieka-muaka-kenyan-comedy",
+      "title": "Humor, Polysemy & Sheng in Kenyan Comedy (Michieka & Muaka 2016, Ch. 28, pp. 559–576)",
+      "icon": "Smile",
+      "description": "Explore the linguistic mechanisms of Kenyan humor across Vitimbi, Redykyulass, and Churchill Show: polysemous punning (wizi wa mabavu), sociophonetic 'shrubbing' (sida, shitikashel), and face-saving strategies.",
+      "tips": "In Michieka & Muaka (2016, Ch. 28, pp. 559–576), Kenyan comedians blend Swahili, Sheng, English, and indigenous languages (Luhya, Luo, Kikuyu, Meru, Kamba), using three face-saving strategies—self-effacing humor, inclusivity, and outright apology—to navigate ethnic stereotypes safely.",
+      "words": [
+        {
+          "target": "Vitimbi (Mzee Ojwang Hatari, Mama Kayai, Amka Twende, Othorong’ong’o, Mutiso, Masanduku arap Simiti, Wariahe, Otoyo) • Redykyulass • Churchill Show",
+          "source": "Historical evolution of Kenyan television and stand-up comedy from 1980s KBC Vitimbi and 1990s Redykyulass to Daniel 'Churchill' Ndambuki's Churchill Show",
+          "pronunciation": "vi-ti-mbi / m-zee o-jwa-ng / ma-ma ka-ya-i / chu-rchi-ll",
+          "hint": "Michieka & Muaka (2016, Ch. 28, pp. 560–562)"
+        },
+        {
+          "target": "wizi wa mabavu ('violent robbery' in Swahili vs. 'stealing of ribs' < mbavu in Meru, Majimoto Ex. 1) • VIP = Very Improved Peasant (Pablo Ex. 7)",
+          "source": "Bilingual Swahili–Meru polysemy pun and acronym incongruity in Churchill Show routines",
+          "pronunciation": "wi-zi wa ma-ba-vu / m-ba-vu",
+          "hint": "Michieka & Muaka (2016, Ch. 28, pp. 562, 566, Ex. 1 & 7)"
+        },
+        {
+          "target": "Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa (Eric Omondi Ex. 5) • mkaza mwana, mtoto wa high class (Majimoto Ex. 12)",
+          "source": "Safaricom customer-care politeness parody ('Sorry, the subscriber you have dialed cannot be reached') • Daughter-in-law / high-class bride",
+          "pronunciation": "sa-ma-ha-ni m-te-ja wa na-mba-ri u-li-yo-pi-ga ha-pa-ti-ka-ni",
+          "hint": "Michieka & Muaka (2016, Ch. 28, pp. 565, 569, Ex. 5 & 12)"
+        },
+        {
+          "target": "Nyanza Prefixes ('Dr Geofrey Otieno, Engineer Obado') vs. Central Suffixes ('Mwangi wa Equity, Wanjiku wa makara', Owago-Onyiro Ex. 10)",
+          "source": "Morphological wordplay contrasting Nyanza academic titles (prefixes) with Central Kenya occupational/business tags (suffixes)",
+          "pronunciation": "mwa-ngi wa e-qui-ty / wa-nji-ku wa ma-ka-ra",
+          "hint": "Michieka & Muaka (2016, Ch. 28, p. 568, Ex. 10)"
+        },
+        {
+          "target": "Sheng 'shrubbing / srub' (Owago-Onyiro Ex. 13): sida (< shida), shitikashel (< City Council), aishishi (< ICC) vs. Mercedes (*Mashidishi)",
+          "source": "Metalinguistic routine on [ʃ] ↔ [s] substitution ('shrubbing'), humorous claim that Luo speakers only 'srub' things they dislike",
+          "pronunciation": "si-da / shi-ti-ka-shel / a-i-shi-shi",
+          "hint": "Michieka & Muaka (2016, Ch. 28, p. 570, Ex. 13)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa • Katiba ya wezi ilisemanga hautakiwi kuipia mama mja mzito.",
+          "source": "Sorry, the customer of the number you have dialed cannot be reached right now • The robbers' constitution used to say you are not supposed to steal from a pregnant woman (Michieka & Muaka 2016, Ch. 28, pp. 565, 567, Ex. 5 & 9)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Kenyan comedy excerpt in Martha Michieka & Leonard Muaka (2016, Ch. 28, pp. 562–572) with its linguistic humor mechanism:",
+          "correctAnswer": "Majimoto in Meru ('wizi wa mabavu', Ex. 1): Cross-linguistic punning on Swahili mabavu ('force/violence') vs. Meru/Swahili mbavu ('ribs')",
+          "pairs": [
+            {
+              "left": "Majimoto in Meru ('wizi wa mabavu', Ex. 1)",
+              "right": "Cross-linguistic punning on Swahili mabavu ('force/violence') vs. Meru/Swahili mbavu ('ribs')"
+            },
+            {
+              "left": "Owago-Onyiro on 'shrubbing / srub' (sida, shitikashel, aishishi, Ex. 13)",
+              "right": "Sociophonetic [ʃ] ↔ [s] substitution framed via self-deprecation as targeting only disliked entities"
+            },
+            {
+              "left": "Owago-Onyiro on Prefixes vs. Suffixes (Ex. 10)",
+              "right": "Grammatical metaphor contrasting Nyanza academic titles before names with Central Kenya business modifiers after names"
+            },
+            {
+              "left": "Smart Joker ('ilisemanga', 'kuipia', Ex. 9) & Omwami ('-ko', '-nga', Ex. 11)",
+              "right": "Luhya phonological devoicing (b → p) and habitual/partitive enclitics (-ko, -nga) in Kenyan Swahili"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

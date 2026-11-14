@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Luhya (Oluluyia) Proverbs & Oral Literature (12 verified entries)
+// Luhya (Oluluyia) Proverbs & Oral Literature (14 verified entries)
 // ============================================================
 
 export const LUHYA_PROVERBS: ProverbItem[] = [
@@ -128,5 +128,27 @@ export const LUHYA_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "Sacred hearths, ancestral covenants, and ancient speech preserve the peace of the homestead.",
     "theme": "wisdom",
     "sourceCitation": "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XVII pp. 722–755, Figs. 383–403 & Ch. XX pp. 889–901, 980–1001)"
+  },
+  {
+    "id": "luhya-payne-2016-logoori-oral-narratives-sarvasy",
+    "languageId": "luhya",
+    "languageName": "Luhya (Logoori / Luragooli — Sarvasy 2016, Landman 2016 & Gluckman & Bowler 2016)",
+    "indigenous": "V-oosi va-ra-ɲor-a ɪ-taʤi • Mi-handa ʤi-ra-v-a mi-rahɪ • Mu-kana mu-rara neva a-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani • Si va-ri-ɲar-a mba • Soom-i vuri ki-tabu ch-oosi • Muriaŋgo gu-aram-ik-i kuturona na imboza.",
+    "literalTranslation": "All will find a crown • The paths will be good • If one girl should drop this waterpot, I will take her to the ogre's place • They will not be able to [at any time] • I read every whole book • The door opened from the wind.",
+    "meaning": "Verbatim Logoori / Luragooli oral-text sentences and grammatical paradigms recorded in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., 'Diversity in African languages' (Berlin: Language Science Press, 2016): Hannah Sarvasy (Ch. 11, pp. 201–219, Ex. 3–4, 14, 17, from Linette Mbone's sermon, Hellen Makungu's narrative, and Mwabeni Indire's ogre story), Meredith Landman (Ch. 12, pp. 219–234, Ex. 19), and John Gluckman & Margit Bowler (Ch. 15, pp. 271–289, Ex. 4b).",
+    "englishEquivalent": "Every faithful worker shall receive a crown; every whole book yields its wisdom.",
+    "theme": "patience",
+    "sourceCitation": "Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages (Berlin: Language Science Press, 2016, Chs. 9, 11, 12 & 15, pp. 165–183, 201–234, 271–289)"
+  },
+  {
+    "id": "luhya-payne-2016-lubukusu-reciprocals-and-comedy",
+    "languageId": "luhya",
+    "languageName": "Luhya (Lubukusu & Luhya Discourse — Safir & Selvanathan 2016 & Michieka & Muaka 2016)",
+    "indigenous": "Ba-saani ba-a-biyil-an-a (ba-b-eene khu b-eene) khu-khil-a ba-khasi • Ba-saani ba-fumi-an-a ba-be-ene khu be-ene lukali • O-mu-hayi ne e-twika bi-a-bon-an-a • Ba-khasi ba-a-i-yeet-an-a (ba-b-eene khu ba-b-eene) • Enclitics -ko & -nga (ilisemanga).",
+    "literalTranslation": "The men hate each other more than the women [hate each other / hate the men] • The men praised each other a lot • The hunter and the giraffe saw each other • The women helped each other and themselves • Luhya habitual/partitive enclitics -ko and -nga.",
+    "meaning": "Recorded verbatim in Ken Safir & Naga Selvanathan (2016, Ch. 25 'Niger-Congo transitive reciprocal constructions and polysemy with reflexives', pp. 495–512, consultant Justine Sikuku) and Martha Michieka & Leonard Muaka (2016, Ch. 28 'Humor in Kenyan comedy', pp. 559–576, Ex. 9 & 11): demonstrates Lubukusu's transitive reciprocal construction (-an + ba-b-eene khu b-eene), prefixal reflexive i- + suffixal reciprocal -an co-occurrence, and the iconic Luhya enclitics -ko and -nga in Kenyan popular discourse.",
+    "englishEquivalent": "Mutual help and self-reliance go hand in hand.",
+    "theme": "unity",
+    "sourceCitation": "Ken Safir & Naga Selvanathan (2016, Ch. 25, pp. 495–512) & Martha Michieka & Leonard Muaka (2016, Ch. 28, pp. 559–576), in Diversity in African languages"
   }
 ];

@@ -164,3 +164,15 @@ BORANA_PROVERBS.push({
   theme: "unity",
   sourceCitation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125)"
 });
+
+BORANA_PROVERBS.push({
+  id: "borana-krapf-isenberg-1840-queen-tshame-wodanabe-salutations",
+  languageId: "borana",
+  languageName: "Borana / Oromo (Afaan Borana / Shoa & Gelān Galla)",
+  indigenous: "Queen Tshāmê of Moolofallada & Anko-ber ('Gate of the Anko', p. vi) • Wāk, Kalitshas, Pit-and-Lance Oath, 100-Cattle Fine & Sacred Tree Wodanābè on the Hawāsh (pp. vii–ix) • Workef meti; Dagaf maka; Kan duef kan tshira; Namma garif namma duga (p. 15) • Naga ambulte! — Bulla bulte naguma! — Marabatis, nagana oli / nagaia ole! — Gondi kuni mekan eniu? Metātit tsheddan (p. 16)",
+  literalTranslation: "Queen Tshāmê's reply to King Sahhela Selassieh: 'If he wished to see her at his capital, it would be proper for him, as a king, to overlay all the road from Moolofallada to his palace with silk and velvet; as she would certainly have done, if she had invited him' (p. vi) • Gold and silver; Stone and wood; The living and the dead; A good and upright man (p. 15) • Good morning! — Thanks to God! — Good bye (sg./pl.)! — How do they call this village? It is called Metātit (p. 16).",
+  meaning: "Recorded in Rev. J. L. Krapf & Rev. C. W. Isenberg's pioneering 1840 monograph 'An Imperfect Outline of the Elements of the Galla Language' (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16, compiled in Shoa in 1839–1840 with Berkiè of the Gelān tribe): preserves the 50 Galla tribes across 6 regions (including #48 Borenna, #5 Karraīo, #30 Gelān, #31 Mêta, #32 Moolofallada, #44 Mêtcha, #50 Anko), Queen Tshāmê's royal dignity, the etymology of Ankober ('Gate of the Anko'), worship of Wāk and the Kalitshas priests, goat-intestine haruspicy, the pit-and-lance oath covered with an animal's hide, the 100-cattle homicide settlement ratified by opening a sheep's belly, belief in afterlife happiness when the burnt wood heaped on a grave sprouts anew, the pan-Galla pilgrimage tree Wodanābè on the Hawāsh in Soddo, and all 31 conversational salutations and sentences in Section XI.",
+  englishEquivalent: "Royal dignity demands mutual honour; peace and uprightness bind the living community together.",
+  theme: "wisdom",
+  sourceCitation: "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1840, pp. [i]–xiv, [1]–16)"
+});

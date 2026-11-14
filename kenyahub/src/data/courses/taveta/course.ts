@@ -2872,3 +2872,61 @@ export const TAVETA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+TAVETA_COURSE[TAVETA_COURSE.length - 1].lessons.push({
+  "id": "taveta-hohnel-1894-vol1-lesson",
+  "title": "Höhnel (1894, Vol. I, Chs. II–IV): Kiruvu 7-Turn Greeting Dialogue, Taveta (10 Wazee, Pombo, Naiberes), Chaga (Sultan Miriali) & Meru",
+  "description": "Master the verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga (p. 66), the 4-prefix Bantu rule (p. 61), Taveta forest governance and trade units (pp. 94–205), Sultan Miriali's Kichaga phrases (p. 113), and the first ascent of Kilimanjaro to 17,387 ft. in Lieut. Ludwig von Höhnel (1894, Vol. I).",
+  "tips": "On p. 66 of Volume I (1894), Höhnel records the exact 7-question Kiruvu greeting ceremony at Mafi with Sultan Sedenga of Mkarama, where every line is answered by a resonant nasal 'Hm! — Hm!' before closing with 'Yambo!'.",
+  "culturalNote": "During their three-month stay in Taveta (March 31–July 15, 1887), Count Teleki and Lieut. von Höhnel documented the peaceful coexistence of >1,500 Bantu Wataveta (governed by 10 Wazee elders) with agricultural Wakwafi settled toward Lake Jipe, as well as the Kahe people whose Bantu dialect was identical to Kitaveta (pp. 100–104, 167–169).",
+  "words": [
+    {
+      "target": "Kilo vedi? — Hm! — Hm! • Si vedi? — Hm! — Hm! • Ho kaja? — Hm! — Hm! • Ho kaja kilo vedi? — Hm! — Hm! • Mzima? — Hm! — Hm! • Sana — Hm! — Hm! • Yambo — Hm! — Hm!",
+      "source": "7-Turn Kiruvu Greeting Dialogue with Sultan Sedenga of Mkarama: 'Did you have a good night? Did you have a good day? Is all well at home? Did they all have a good night? Are you well? Very well. Bless you!' (Höhnel 1894, Vol. I, p. 66)",
+      "pronunciation": "ki-lo ve-di / si ve-di / ho ka-ja / m-zi-ma / sa-na / yam-bo",
+      "hint": "Höhnel (1894, Vol. I, Ch. II, p. 66; Europeans = Wasangu)"
+    },
+    {
+      "target": "Ta-veta / M-taveta / Wa-taveta / Ki-taveta (p. 61) • Wazee (10 elders, Mkamba) • kitoweo ('tit-bit', p. 99 fn. 1) • pombo (10 strings of 21–22 in. beads) • naiberes vs. schukas (1 doti = 2 schuka = 8 mikono, p. 141 fn. 1)",
+      "source": "Bantu 4-Prefix Rule (U-/M-/Wa-/Ki-), Taveta 10-Elder Council, Market Delicacy, Bead-String Bundle & Cloth Units (Höhnel 1894, Vol. I, pp. 61, 99–105, 141 fn. 1, 172, 205)",
+      "pronunciation": "ta-ve-ta / m-ta-ve-ta / wa-ta-ve-ta / ki-ta-ve-ta / wa-zee / ki-to-we-o / pom-bo / nai-be-res / schu-kas",
+      "hint": "Höhnel (1894, Vol. I, Chs. II–III)"
+    },
+    {
+      "target": "Mangi (Sultan Miriali of Marangu) • kilengele ('beads', p. 113) • 'Tonga mbuya!' ('Off with you now, friend!', p. 113) • 7 Chaga States: Mamba, Samanga, Marangu, Kilema, Kirua, Mochi, Tela (p. 184)",
+      "source": "Kichaga Royal Title, Bead Request, Dismissal Phrase & the 7 Chaga States on Kilimanjaro (Höhnel 1894, Vol. I, pp. 113, 184)",
+      "pronunciation": "man-gi / ki-len-ge-le / ton-ga m-bu-ya",
+      "hint": "Höhnel (1894, Vol. I, Ch. III, pp. 113, 184)"
+    },
+    {
+      "target": "'wasunga Kana wanaona ugombe a mafuta, saua kana mafissi' & 'mtschunga a punda a wasungu' (pp. 198–199) • Ascent of Kibo: 16,240 ft. (Höhnel) & 17,387 ft. (Teleki, June 20, 1887; Tylophora bicolor & Erigeron Telekii, pp. 192–196)",
+      "source": "Sultan Mandara of Mochi's Swahili Taunts & First High Ascent of Kilimanjaro with Two New Alpine Species (Höhnel 1894, Vol. I, pp. 183–199)",
+      "pronunciation": "wa-sun-ga ka-na wa-na-o-na u-gom-be a ma-fu-ta / m-tschun-ga a pun-da a wa-sun-gu",
+      "hint": "Höhnel (1894, Vol. I, Ch. III, pp. 183–199)"
+    }
+  ],
+  "sentences": [
+    {
+      "target": "Kilo vedi? — Hm! Si vedi? — Hm! Ho kaja? — Hm! Ho kaja kilo vedi? — Hm! Mzima? — Hm! Sana — Hm! Yambo — Hm!",
+      "source": "Did you have a good night? Did you have a good day? Is all well at home? Did they all have a good night? Are you well? Very well. Bless you! (Höhnel 1894, Vol. I, p. 66)"
+    },
+    {
+      "target": "Yambo, Yambo, sana! Sabalcheir! Uhali ghani? Habari ghani? — Tonga mbuya!",
+      "source": "Good day! God bless you! How are you? What's the news? (p. 93) — Off with you now, friend! (Sultan Miriali, p. 113)"
+    }
+  ],
+  "authoredExercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "In Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (1894, Vol. I, pp. 66, 102–105, 113, 141 fn. 1), what is the verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga, how is Taveta governed, and what do 'kilengele' and 'Tonga mbuya!' mean at Sultan Miriali's court?",
+      "correctAnswer": "The 7-turn Kiruvu greeting is 'Kilo vedi? / Si vedi? / Ho kaja? / Ho kaja kilo vedi? / Mzima? / Sana / Yambo' (each answered 'Hm! — Hm!'); Taveta (>1,500 Wataveta + Wakwafi) is governed by 10 Wazee elders; and at Marangu 'kilengele' means 'beads' and 'Tonga mbuya!' means 'Off with you now, friend!'",
+      "options": [
+        "The 7-turn Kiruvu greeting is 'Kilo vedi? / Si vedi? / Ho kaja? / Ho kaja kilo vedi? / Mzima? / Sana / Yambo' (each answered 'Hm! — Hm!'); Taveta (>1,500 Wataveta + Wakwafi) is governed by 10 Wazee elders; and at Marangu 'kilengele' means 'beads' and 'Tonga mbuya!' means 'Off with you now, friend!'",
+        "Taveta is ruled by Sultan Mandara; 'kilengele' means 'spear' and 'Tonga mbuya!' means 'Bring cattle!'",
+        "The Kiruvu greeting has 3 turns; Taveta has 40 elders; 'kilengele' means 'water'",
+        "Taveta is uninhabited forest; 'Tonga mbuya!' is a Masai war-cry"
+      ],
+      "hint": "See Höhnel (1894, Vol. I, pp. 66, 102–105, 113)"
+    }
+  ]
+});

@@ -2660,3 +2660,57 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+ILCHAMUS_COURSE[ILCHAMUS_COURSE.length - 1].lessons.push({
+  "id": "ilchamus-hohnel-1894-vol1-lesson",
+  "title": "Höhnel (1894, Vol. I, Ch. VI): Leikipia (Il Leikipiak), Njemps Mkubwa & Ndogo Irrigation Dam, Lake Baringo & Ol Kokwa Oboro Rafts",
+  "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I, Ch. VI, pp. 367–385) firsthand account of the Leikipia plateau (Il Leikipiak), the descent via Morijo and Mukutan to Njemps Mkubwa and Njemps Ndogo (3,220 ft.), their Guaso Tigerish timber-and-boulder dam and rotational sluice-gate canals, and Lake Baringo (3,190 ft.) with Ol Kokwa island and 6–8-log ambatch oboro rafts.",
+  "tips": "On pp. 382–385 of Volume I (1894), Höhnel explains both how the 1,500–2,000 Wakwafi of Njemps Mkubwa and Njemps Ndogo dammed the Guaso Tigerish (Perkerra) river a mile above Njemps Mkubwa to irrigate wimbi and mtama in rotation, and why Lake Baringo (3,190 ft.) stays fresh without a surface outlet through subterranean seepage northward across porous basalt.",
+  "culturalNote": "In the center of Lake Baringo rises the volcanic tuff-crater island of Ol Kokwa (2½ miles long, 400 ft. high, with boiling sulphurous springs on its NE shore), whose Wakwafi fishermen and goat-herds cross from the mainland on V-shaped oboro rafts lashed together from 6–8 stems of cork-like ambatch wood (Herminiera elaphroxylon, pp. 384–385).",
+  "words": [
+    {
+      "target": "Njemps Mkubwa ('Great Njemps') & Njemps Ndogo ('Little Njemps', 3,220 ft.) • 1,500–2,000 agricultural Wakwafi (Il Oogolala, Leikipia & Naivasha refugees) on the Guaso Tigerish (Perkerra) & Guaso Molo (pp. 381–383)",
+      "source": "The Two Double-Stockaded Njemps Villages & Their Population in Nov.–Dec. 1887 (Höhnel 1894, Vol. I, pp. 381–383)",
+      "pronunciation": "njemps m-ku-bwa / njemps n-do-go / il oo-go-la-la / gua-so ti-ge-rish / gua-so mo-lo",
+      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 381–383)"
+    },
+    {
+      "target": "Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam (1 mi. above Njemps Mkubwa) • Rotational earthen sluice-gate canals irrigating wimbi (Eleusine coracana), mtama (sorghum), melons, pumpkins, beans & tobacco (pp. 382–383)",
+      "source": "Njemps Hydraulic Engineering & Irrigated Crops (Höhnel 1894, Vol. I, pp. 382–383)",
+      "pronunciation": "wim-bi / m-ta-ma / gua-so ti-ge-rish",
+      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 382–383)"
+    },
+    {
+      "target": "Lake Baringo (3,190 ft., 14 mi. × 7 mi., fresh water via subterranean northern basalt seepage; fed by Guaso Molo, Guaso Arabel & Ol Arabel) • Ol Kokwa island (2½ mi. long, 400 ft. high, boiling sulphur springs) • oboro (6–8-log ambatch raft, Herminiera elaphroxylon, pp. 384–385)",
+      "source": "Lake Baringo Hydrology, Ol Kokwa Geothermal Island & Ambatch Rafts (Höhnel 1894, Vol. I, pp. 384–385)",
+      "pronunciation": "ba-rin-go / ol ko-kwa / o-bo-ro / gua-so a-ra-bel / ol a-ra-bel",
+      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 384–385)"
+    },
+    {
+      "target": "Leikipia plateau (6,000–6,850 ft., Il Leikipiak kraals) • 8 Mt. Kenia glacier streams (Guaso Narok, Nairobi, Burguret, Rongai, Nanyuki [0° 0'], Likii, Sirimon, Ngare Naju) → Upper Guaso Nyiro (5,650 ft., leleshwa) → Marmanet, Ongalea (172-lb tusks), Larabwal (5,820 ft., 60 loads charqui), Morijo & Mukutan (pp. 367–381)",
+      "source": "Route from Ndoro across Leikipia to Njemps (Höhnel 1894, Vol. I, Ch. VI, pp. 367–381)",
+      "pronunciation": "lei-ki-pia / il lei-ki-piak / le-lesh-wa / la-ra-bwal / mo-ri-jo / mu-ku-tan",
+      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 367–381)"
+    }
+  ],
+  "sentences": [
+    {
+      "target": "Njemps Mkubwa o Njemps Ndogo: Guaso Tigerish o Guaso Molo, Lake Baringo (3,190 ft.), Ol Kokwa & oboro.",
+      "source": "Great Njemps and Little Njemps on the Tigrish and Molo rivers, Lake Baringo (3,190 ft.), Ol Kokwa island, and ambatch oboro rafts (Höhnel 1894, Vol. I, pp. 381–385)."
+    }
+  ],
+  "authoredExercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "In Chapter VI of Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (1894, Vol. I, pp. 381–385), how did the Wakwafi of Njemps Mkubwa and Njemps Ndogo irrigate their fields, why is Lake Baringo's water fresh despite lacking a visible outlet, and how did islanders cross to Ol Kokwa?",
+      "correctAnswer": "They dammed the Guaso Tigerish a mile above Njemps Mkubwa with timber piles, brushwood, and boulders and opened earthen canal sluice-gates in rotation; Lake Baringo (3,190 ft., 14 × 7 mi.) stays fresh via subterranean seepage northward through porous basalt; and Ol Kokwa islanders used V-shaped oboro rafts of 6–8 ambatch logs",
+      "options": [
+        "They dammed the Guaso Tigerish a mile above Njemps Mkubwa with timber piles, brushwood, and boulders and opened earthen canal sluice-gates in rotation; Lake Baringo (3,190 ft., 14 × 7 mi.) stays fresh via subterranean seepage northward through porous basalt; and Ol Kokwa islanders used V-shaped oboro rafts of 6–8 ambatch logs",
+        "They relied solely on rainfall; Lake Baringo flows into the Indian Ocean; and islanders used iron boats",
+        "They pumped water from Lake Nakuro; Lake Baringo is saltier than the Dead Sea; and Ol Kokwa is uninhabited",
+        "They dammed the Kerio river; Lake Baringo drains southward into Lake Naivasha; and islanders swam across"
+      ],
+      "hint": "See Höhnel (1894, Vol. I, Ch. VI, pp. 382–385)"
+    }
+  ]
+});

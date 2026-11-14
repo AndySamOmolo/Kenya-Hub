@@ -123,3 +123,13 @@ export const KIKUYU_PROVERBS: ProverbItem[] = [
     "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (London: Edward Arnold, 1910, pp. i–xxxii, 1–392)"
   }
 ];
+
+const _existingHohnelKikuyuProvIdx = KIKUYU_PROVERBS.findIndex(
+  (p) => p.id === "kikuyu-hohnel-1894-dundas-1915"
+);
+if (_existingHohnelKikuyuProvIdx >= 0) {
+  KIKUYU_PROVERBS[_existingHohnelKikuyuProvIdx].meaning =
+    "Recorded firsthand by Lieut. Ludwig von Höhnel during the 1887 traverse of Kikuyuland ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) with elders Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu), and Kihura (Ndoro), and by Hon. Charles Dundas (JRAI Vol. 45, 1915): solemn peace covenants (gĩthathi / kuhoria tatha over mburi ya thayu) and deliberative justice sustain harmony across all 68 parallel ravines and ridges (mĩgongo).";
+  KIKUYU_PROVERBS[_existingHohnelKikuyuProvIdx].sourceCitation =
+    "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) & Hon. Charles Dundas, JRAI Vol. 45 (1915)";
+}

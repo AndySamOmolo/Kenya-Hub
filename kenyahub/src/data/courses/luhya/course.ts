@@ -3343,3 +3343,143 @@ LUHYA_UNITS.push({
     }
   ]
 });
+
+// ── Unit 14: Complete Line-by-Line Integration of Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., "Diversity in African languages: Selected papers from the 46th Annual Conference on African Linguistics" (Berlin: Language Science Press, 2016, Chs. 9, 11, 12, 15, 25 & 28) ──
+LUHYA_UNITS.push({
+  "id": "luhya-unit-14-payne-2016-diversity-complete",
+  "title": "Unit 14: Logoori, Luragooli & Lubukusu in Payne, Pacchiarotti & Bosire (2016)",
+  "description": "Master all six Luhya-focused studies in 'Diversity in African languages' (2016): Logoori coronal palatalization (Ch. 9), 6 future inflections & 4 future constructions (Ch. 11), universal quantifiers vuri vs. -oosi (Ch. 12), Luragooli anticausative -Vk (Ch. 15), Lubukusu Transitive Reciprocal Constructions (Ch. 25), and Luhya enclitics in Kenyan comedy (Ch. 28).",
+  "order": 14,
+  "color": "#0D9488",
+  "lessons": [
+    {
+      "id": "luhya-payne-2016-14-1-logoori-palatalization-futures",
+      "title": "Logoori Coronal Palatalization (Ch. 9, pp. 165–183) & Oral-Text Future Tenses (Ch. 11, pp. 201–219)",
+      "icon": "Volume2",
+      "description": "Learn Logoori's 7-vowel system, dental/glottal palatalization, /h/-plosivization, coronal consonant-glide reduction (sj → ʃ), and the 6 future inflections and 4 auxiliary/subjunctive future constructions.",
+      "tips": "In Glewwe & Aly (2016, Ch. 9, pp. 165–183), verbs with [ʃ] in the infinitive whose 1SG is [ʃ] rather than [mb] have underlying /si/ (e.g., /ko-siɛ-a/ → [koʃja] 'to grind', 1SG [ʃjɛɛzaa]) rather than /h/ (/ko-he-a/ → [koʃa] 'to burn', 1SG [mbezaa]). In Sarvasy (2016, Ch. 11, pp. 201–219), Logoori oral texts use SP-ra- -a for both near (hodiernal/crastinal) and general future, plus auxiliary kʊman̪a ('to know') + Subjunctive.",
+      "words": [
+        {
+          "target": "Nj̪-anz-aa → n̪anzaa • N-man̪-aa → man̪aa vs. N-man̪-i → maɲi • ka-n̪un̪i → kaɲuɲi",
+          "source": "I like • I know vs. I knew • small bird (dental j̪ → j and n̪ → ɲ before /i, u/)",
+          "pronunciation": "n̪a-nzaa / ma-n̪aa / ma-ɲi / ka-ɲu-ɲi",
+          "hint": "Glewwe & Aly (2016, Ch. 9, p. 167, Ex. 8)"
+        },
+        {
+          "target": "a-hir-aa → aʃiɾaa • ko-roh-a → koroha vs. ko-roh-i → koroʃi • ke-hia → keʃa vs. eN-hia → embja",
+          "source": "s/he is taking • to get tired vs. we got tired (h → ʃ / __ i) • new in Class 7 (hj → ʃ) vs. Class 9 (N-h → mb)",
+          "pronunciation": "a-ʃi-ɾaa / ko-ro-ha / ko-ro-ʃi / ke-ʃa / e-mbja",
+          "hint": "Glewwe & Aly (2016, Ch. 9, pp. 168–173, Ex. 9, 12, 18)"
+        },
+        {
+          "target": "ko-siɛ-a → koʃja (1SG ʃjɛɛzaa, CL1 aʃjɛɛzaa) vs. ko-he-a → koʃa (1SG mbezaa, CL1 ahezaa)",
+          "source": "to grind (underlying /si/, undergoing sj → ʃ) vs. to burn (underlying /h/, undergoing h → b / N__ in 1SG)",
+          "pronunciation": "ko-ʃja / ʃjɛɛ-zaa / ko-ʃa / mbe-zaa",
+          "hint": "Glewwe & Aly (2016, Ch. 9, pp. 176–179, Ex. 22, 26)"
+        },
+        {
+          "target": "SP-ra- -a (Near/General) • na-SP- -e (Middle) • SP-raka- -e / SP-aaka- -e (Remote) • naa-SP- -e (Long-Vowel Remote) • SP-ri- -a (Indefinite)",
+          "source": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru & V-oosi va-ra-ɲor-a ɪ-taʤi • Na-kʊ-sjaj-e Majki w-etu ma-uwa • a-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani • Naa-a-kor-e ɪ-gaasi • si va-ri-ɲar-a mba",
+          "pronunciation": "a-ra-zja / na-kʊ-sja-je / a-ra-ka-a-ta-ɲe / naa-a-ko-re / si va-ri-ɲa-ra mba",
+          "hint": "Sarvasy (2016, Ch. 11, pp. 203–212, Table 1 & Ex. 1–21)"
+        },
+        {
+          "target": "Mu-gamba, man̪-a n-zj-e mʊ ɪ-skuru • Ma mu-gamba ma-m-bok-e, ma-n-zj-e kʊ ɪ-gaasi j-eende",
+          "source": "Tomorrow, I will go to school (auxiliary kʊman̪a 'to know' + Subjunctive) • And tomorrow I will wake up and go to my work (ma- + Subjunctive)",
+          "pronunciation": "mu-ga-mba ma-n̪a n-zje / ma-m-bo-ke ma-n-zje",
+          "hint": "Sarvasy (2016, Ch. 11, pp. 214–217, Ex. 24, 29)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru • V-oosi va-ra-ɲor-a ɪ-taʤi.",
+          "source": "Tomorrow, s/he will go to school • All will find a crown (Sarvasy 2016, Ch. 11, pp. 204–205, Ex. 1 & 3)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "How do Eleanor Glewwe & Ann M. Aly (2016, Ch. 9, pp. 174–180) resolve the apparent rule-ordering paradox in Logoori between /h/-Plosivization (h → b / N__) and Nasal Deletion in 1SG forms like [ʃoovaa] ('I am throwing out') and [ʃjɛɛzaa] ('I am grinding')?",
+          "correctAnswer": "Those verbs have underlying /si/ rather than /h/ (/N-siov-aa/, /ko-siɛ-a/), so Nasal Deletion deletes /N/ before /s/, Gliding turns /i/ into [j], and Coronal Consonant-Glide Reduction (sj → ʃ) produces [ʃ]",
+          "options": [
+            "Those verbs have underlying /si/ rather than /h/ (/N-siov-aa/, /ko-siɛ-a/), so Nasal Deletion deletes /N/ before /s/, Gliding turns /i/ into [j], and Coronal Consonant-Glide Reduction (sj → ʃ) produces [ʃ]",
+            "Logoori has no nasal prefixes in the 1st person singular",
+            "All /b/ consonants turn into [ʃ] before back vowels",
+            "Those verbs are borrowed from Arabic without prefixes"
+          ],
+          "hint": "See Glewwe & Aly (2016, Ch. 9, §4.2, pp. 176–179)"
+        }
+      ]
+    },
+    {
+      "id": "luhya-payne-2016-14-2-quantifiers-anticausative-bukusu-trc",
+      "title": "Logoori Quantifiers Vuri vs. -oosi (Ch. 12), Luragooli Anticausative -Vk (Ch. 15), Lubukusu Reciprocals (Ch. 25) & Comedy Enclitics (Ch. 28)",
+      "icon": "Layers",
+      "description": "Compare distributive vuri ('every') vs. modifier -oosi ('all/whole/any'), Luragooli telic anticausative -Vk, Lubukusu transitive reciprocals (-an + ba-b-eene khu b-eene), and Luhya discourse markers in Kenyan stand-up comedy.",
+      "tips": "In Landman (2016, Ch. 12), vuri ('every') is a strictly distributive D-head, whereas -oosi ('all, whole, any') is an agreeing AP modifier that can co-occur with vuri: soom-i vuri ki-tabu ch-oosi ('I read every whole book', p. 224). In Safir & Selvanathan (2016, Ch. 25), Lubukusu Ba-saani ba-a-biyil-an-a khu-khil-a ba-khasi allows both sloppy ('more than women hate each other') and strict ('more than women hate the men') readings, proving ba-b-eene khu b-eene is a direct object.",
+      "words": [
+        {
+          "target": "vuri muundu a-syeev-i vs. vaandu v-oosi va-syeev-i • soom-i vuri ki-tabu ch-oosi",
+          "source": "Every person danced (strictly distributive D-head vuri) vs. All the people danced (agreeing modifier -oosi across 15 classes) • I read every whole book",
+          "pronunciation": "vu-ri muu-ndu a-syee-vi / vaa-ndu voo-si va-syee-vi / ki-ta-bu choo-si",
+          "hint": "Landman (2016, Ch. 12, pp. 221–225, Table 1 & Ex. 2, 13, 19)"
+        },
+        {
+          "target": "muriaŋgo gu-aram-ik-i kuturona na imboza • n-eny-a murianggo gu-han-ek-ɛ",
+          "source": "The door opened from the wind (anticausative -Vk licenses oblique causer, rejects agent) • I want the door to be in a closed state (telic result state of -Vk)",
+          "pronunciation": "mu-ria-ŋgo gu-a-ra-mi-ki / gu-ha-ne-kɛ",
+          "hint": "Gluckman & Bowler (2016, Ch. 15, pp. 276–279, Tables 1–3 & Ex. 4b, 10b)"
+        },
+        {
+          "target": "Class Ia (kuholeka 'be heard', kuroreka 'be seen', kudiirika 'be touched', kumeneka 'be tasted') vs. Class Ib (kuholeka 'be punched', kuliika 'be eaten')",
+          "source": "Luragooli Class Ia experiencer verbs vs. Class Ib affected-object verbs taking -Vk",
+          "pronunciation": "ku-ho-le-ka / ku-ro-re-ka / ku-dii-ri-ka / ku-me-ne-ka / ku-lii-ka",
+          "hint": "Gluckman & Bowler (2016, Ch. 15, p. 283, Table 4)"
+        },
+        {
+          "target": "Ba-saani ba-a-biyil-an-a (ba-b-eene khu b-eene) khu-khil-a ba-khasi • Ba-khasi ba-a-i-yeet-an-a (ba-b-eene khu ba-b-eene)",
+          "source": "The men hate each other more than the women [hate each other / hate the men] • The women helped each other and themselves (Lubukusu prefixal RFM i- + suffixal RCM -an)",
+          "pronunciation": "ba-saa-ni ba-a-bi-yi-la-na ba-bee-ne khu bee-ne / ba-kha-si ba-a-i-yee-ta-na",
+          "hint": "Safir & Selvanathan (2016, Ch. 25, pp. 500–505, Ex. 13, 18–23)"
+        },
+        {
+          "target": "ilisemanga • kuipia mama mja mzito (Smart Joker, Ex. 9) • -ko & -nga (Omwami, Ex. 11)",
+          "source": "Luhya-accented Swahili in Kenyan stand-up comedy (devoicing b → p in kuipia < kuibia, habitual -nga, and enclitics -ko & -nga)",
+          "pronunciation": "i-li-se-ma-nga / ku-i-pi-a / -ko / -nga",
+          "hint": "Michieka & Muaka (2016, Ch. 28, pp. 567–568, Ex. 9 & 11)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Ba-saani ba-fumi-an-a ba-be-ene khu be-ene lukali • O-mu-hayi ne e-twika bi-a-bon-an-a.",
+          "source": "The men praised each other a lot • The hunter and the giraffe saw each other (Safir & Selvanathan 2016, Ch. 25, pp. 503–504, Ex. 18a & 21a)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Luhya linguistic phenomenon in Payne, Pacchiarotti & Bosire (2016) with its diagnostic property:",
+          "correctAnswer": "vuri vs. -oosi (Landman 2016, Ch. 12): Pre-nominal invariant D-quantifier ('every', strictly distributive) vs. post-nominal 15-class agreeing AP modifier ('all, whole, any')",
+          "pairs": [
+            {
+              "left": "vuri vs. -oosi (Landman 2016, Ch. 12)",
+              "right": "Pre-nominal invariant D-quantifier ('every', strictly distributive) vs. post-nominal 15-class agreeing AP modifier ('all, whole, any')"
+            },
+            {
+              "left": "-Vk in Luragooli (Gluckman & Bowler 2016, Ch. 15)",
+              "right": "Telic anticausative suffix (-ek/-ik/-ok/-uk) that targets the result state under kwenya/daave and rejects progressive -ang- and agentive by-phrases"
+            },
+            {
+              "left": "ba-b-eene khu b-eene (Safir & Selvanathan 2016, Ch. 25)",
+              "right": "Lubukusu reciprocal anaphor occupying IAV direct-object position and licensing both sloppy and strict comparative ellipsis readings"
+            },
+            {
+              "left": "-ko and -nga (Michieka & Muaka 2016, Ch. 28, Ex. 11)",
+              "right": "Luhya verbal/clausal enclitics transferred into Kenyan Swahili/English comedy routines"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

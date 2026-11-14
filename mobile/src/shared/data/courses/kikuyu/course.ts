@@ -4148,3 +4148,57 @@ export const KIKUYU_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+KIKUYU_COURSE[KIKUYU_COURSE.length - 1].lessons.push({
+  "id": "kikuyu-hohnel-1894-vol1-lesson",
+  "title": "Höhnel (1894, Vol. I, Chs. V–VI): 1887 Traverse of 68 Ravines, Kuhoria Tatha & Mathira Githathi Covenants, 3-Tier Crop Zoning & Ascent of Mount Kenia to 15,355 ft.",
+  "description": "Explore Lieut. Ludwig von Höhnel's (1894, Vol. I) complete record of the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887): Ngongo Bagas blood-brotherhood with Miani, Karanja, and Waiyaki, the 68 parallel ravines from Nairobi to Thegu, ridge peace ceremonies ('Mirema! — Thayu! Thayu!'), Aturi smiths and 7–8 ft. muro digging-sticks, and the Oct. 11, 1887 ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
+  "tips": "On p. 305 of Volume I (1894), Höhnel documents how every Kikuyu ridge (rugongo) is zoned into three agricultural belts: grain and beans (mtama, wimbi, maize, njahi, mboso) on the crest, sweet potatoes (ngwaci), staked yams, bananas (marigu), and tobacco on the middle slopes, and taro (nduma) with 10–12 ft. sugar-cane in the marshy valley bottoms.",
+  "culturalNote": "On Sept. 16, 1887 in northern Mathira (p. 298), four medicine-men concluded a solemn githathi peace covenant by breaking the legs of a white ram and a black goat with clubs and slitting them longitudinally while Count Teleki, Jumbe Kimemeta, and six Kikuyu chiefs stepped across the bleeding carcasses seven times swearing eternal peace.",
+  "words": [
+    {
+      "target": "'U-u-u-ui! Ngai!' & 'Mirema! Mirema!' (p. 287) • mburi ya thayu & kuhoria tatha chanting 'Thayu! Thayu!' ('Peace! Peace!', pp. 288, 291, 303) • kuringa githathi (Aug. 23 Ngongo Bagas & Sept. 16 Mathira 7-step covenant, pp. 221, 298)",
+      "source": "Kikuyu Exclamations, Peace Salutations, Stomach-Contents Sprinkling Ceremony & Solemn Peace Covenants (Höhnel 1894, Vol. I, pp. 221, 287–298, 303)",
+      "pronunciation": "u-u-u-ui ngai / mi-re-ma / m-bu-ri ya tha-yu / ku-ho-ria ta-tha / tha-yu / ku-rin-ga gi-tha-thi",
+      "hint": "Höhnel (1894, Vol. I, Chs. IV–V)"
+    },
+    {
+      "target": "rugongo (pl. migongo) • Muthamaki / Muthuri (pl. Athuri) & Anake • Subugo, kihingo & ngurunga pitfalls with muriju (Acokanthera Schimperi) arrow-poison • itura & mugumo (pp. 220, 286–307)",
+      "source": "Ridge Governance, Boundary Forest Fortifications, Poisoned Pitfalls, Homesteads & Sacred Fig-Trees (Höhnel 1894, Vol. I, pp. 220, 286–307)",
+      "pronunciation": "ru-gon-go / mi-gon-go / mu-tha-ma-ki / a-thu-ri / a-na-ke / su-bu-go / ki-hin-go / ngu-run-ga / mu-ri-ju / i-tu-ra / mu-gu-mo",
+      "hint": "Höhnel (1894, Vol. I, Ch. V)"
+    },
+    {
+      "target": "Aturi smiths, ruhiu (spatulate sword), kahiu (knife), kiondo (string bag), mwatũ (branded log beehive), njohi / uhi (beer), njingiri (boat-shell ankle rattle), corno (war-horn) & 7–8 ft. muro digging-sticks (pp. 288–289, 304–305)",
+      "source": "Kikuyu Metallurgy, Weapons, Crafts, Musical Instruments & Communal Digging-Poles (Höhnel 1894, Vol. I, pp. 288–289, 304–305)",
+      "pronunciation": "a-tu-ri / ru-hiu / ka-hiu / kion-do / mwa-tu / njo-hi / u-hi / njin-gi-ri / cor-no / mu-ro",
+      "hint": "Höhnel (1894, Vol. I, Ch. V)"
+    },
+    {
+      "target": "68 Parallel Ravines (Nairobi, Chania liana bridge, Thika, Maragua 600-ft. gorge, Mathioya 700-ft. chasm, Sagana, Thegu) • Chiefs Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu) & Kihura (Ndoro) • Mount Kenia (Donyo Egere) ascent to 15,355 ft. & Lobelia Telekii Schweinfurth (pp. 287–309, 362–375)",
+      "source": "All 68 Ravines, 9 Named Stages & First Ascent of Mount Kenia across 5 Vertical Zones (Höhnel 1894, Vol. I, Chs. V–VI)",
+      "pronunciation": "cha-nia / ma-ra-gua / ma-thio-ya / sa-ga-na / the-gu / wai-ya-ki / wa-mu-gun-da / ki-hu-ra / do-nyo e-ge-re / lo-be-lia te-le-kii",
+      "hint": "Höhnel (1894, Vol. I, Chs. V–VI, pp. 287–309, 362–375)"
+    }
+  ],
+  "sentences": [
+    {
+      "target": "U-u-u-ui! Ngai! — Mirema! Mirema! — Thayu! Thayu!",
+      "source": "Exclamation of wonder ('O God!'), peaceful greeting ('Mirema!'), and the peace-sprinkling chorus ('Peace! Peace!') recorded across Kikuyuland in Aug.–Sept. 1887 (Höhnel 1894, Vol. I, pp. 287–288, 291, 303)."
+    }
+  ],
+  "authoredExercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "In Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (1894, Vol. I, Chs. V–VI, pp. 286–309, 362–375), how many parallel ravines did the expedition cross between Ngongo Bagas and Ndoro, how were Kikuyu ridges agriculturally zoned, and what elevation did Count Teleki reach on Mount Kenia on Oct. 11, 1887?",
+      "correctAnswer": "They crossed 68 parallel ravines in 17 marching days (from Nairobi to Thegu); ridges were zoned into crest grains/beans (mtama, wimbi, maize, njahi, mboso), mid-slope sweet potatoes (ngwaci), staked yams, bananas (marigu) & tobacco, and valley-bottom taro (nduma) & 10–12 ft. sugar-cane; and Teleki reached 15,355 ft. (4,680 m) on the western crater-rim of Mount Kenia, discovering Lobelia Telekii Schweinfurth",
+      "options": [
+        "They crossed 68 parallel ravines in 17 marching days (from Nairobi to Thegu); ridges were zoned into crest grains/beans (mtama, wimbi, maize, njahi, mboso), mid-slope sweet potatoes (ngwaci), staked yams, bananas (marigu) & tobacco, and valley-bottom taro (nduma) & 10–12 ft. sugar-cane; and Teleki reached 15,355 ft. (4,680 m) on the western crater-rim of Mount Kenia, discovering Lobelia Telekii Schweinfurth",
+        "They crossed 12 rivers; only bananas were grown on the ridges; and Teleki reached 10,000 ft. in the bamboo belt",
+        "They crossed 30 valleys; coffee and wheat grew in the valleys; and Höhnel reached 19,000 ft. alone",
+        "They bypassed Kikuyuland via Naivasha and never ascended Mount Kenia"
+      ],
+      "hint": "See Höhnel (1894, Vol. I, Chs. V–VI, pp. 299, 302, 305, 364–365, 373–374)"
+    }
+  ]
+});

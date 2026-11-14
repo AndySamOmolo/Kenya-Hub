@@ -7107,3 +7107,28 @@ SWAHILI_PROVERBS.push(
     "sourceCitation": "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili (London: Kegan Paul, 1918, Study III, Ki-Mvita Kitendawili Nos. 1–23, pp. 129–132)"
   }
 );
+
+SWAHILI_PROVERBS.push(
+  {
+    "id": "payne-2016-ch14-ngonyani-ngowa-reversive-proverbs",
+    "languageId": "swahili",
+    "languageName": "Kiswahili (Standard Swahili — Ngonyani & Ngowa 2016, Ch. 14)",
+    "indigenous": "Funga → fungua (fungulia, fungulisha, funguka) • Ziba → zibua (zibulia, zibulisha, zibuliwa, zibuka) • Tega → tegua (tegulia, teguka) • Panga → pangua (pangulia, pangulisha, panguka) • Choma → chomoa (chomolea, chomolewa, chomoka) • Tata → tatua • Tanza → tanzua • Kufanya → kufanyua ('to undo').",
+    "literalTranslation": "Tie/shut → untie/open • Block/plug → unblock/unplug • Set a trap → disarm/spring a trap • Arrange → disarrange • Stick in → pull out • Tangle/complicate → untangle/solve • Tangle → untangle • To do/make → to undo.",
+    "meaning": "Documented by Deo Ngonyani and Nancy Jumwa Ngowa (Pwani University, Kilifi) in 'The productivity of the reversive extension in Standard Swahili' (in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages, Berlin: Language Science Press, 2016, Ch. 14, pp. 255–271, DOI: 10.17169/langsci.b121.485): illustrates how Swahili pairs every binding, blocking, trapping, or tangling action with its morphological reversal (-u/-o/-ul/-ol) and stative release (-uk/-ok; cf. classical proverb 'Mtega mtego huteguka').",
+    "englishEquivalent": "What is bound can be loosed; every knot can be untied.",
+    "theme": "wisdom",
+    "sourceCitation": "Deo Ngonyani & Nancy Jumwa Ngowa, 'The productivity of the reversive extension in Standard Swahili', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 14, pp. 255–271)"
+  },
+  {
+    "id": "payne-2016-ch28-michieka-muaka-kenyan-comedy",
+    "languageId": "swahili",
+    "languageName": "Kiswahili & Sheng (Kenyan Stand-Up Comedy — Michieka & Muaka 2016, Ch. 28)",
+    "indigenous": "(Ex. 1, Majimoto) 'Wizi wa mabavu' ('violent robbery' vs. Meru mbavu 'ribs') • (Ex. 5, Eric Omondi) 'Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa' • (Ex. 8, MC Jessy) 'Wale wote wako pande hii ya reft...' • (Ex. 9, Smart Joker) 'Katiba ya wezi ilisemanga hautakiwi kuipia mama mja mzito...' • (Ex. 10, Owago-Onyiro) Nyanza Prefixes ('Dr Geofrey Otieno, Engineer Obado') vs. Central Suffixes ('Mwangi wa Equity, Wanjiku wa makara') • (Ex. 11, Omwami) Luhya enclitics -ko & -nga • (Ex. 12, Majimoto) 'Mkaza mwana, mtoto wa high class' • (Ex. 13, Owago-Onyiro) Sheng 'shrubbing / srub': sida (< shida), shitikashel (< City Council), aishishi (< ICC) • (Ex. 14, Eric Omondi) 'Tukae kwa nyumba moja turent hiyo ingine!' • (Ex. 16, Mammito) 'Watu wa Gor walitengenezwa na mawe... Stone Age people.'",
+    "literalTranslation": "(Ex. 1) Cross-linguistic pun on mabavu ('violence') vs. mbavu ('ribs') • (Ex. 5) Safaricom polite customer-care voice prompt • (Ex. 8) Kikuyu-accented televangelist ('this left side') • (Ex. 9) Luhya-accented robbers' constitution waiting for the unborn baby's school laptop • (Ex. 10) Nyanza academic prefixes vs. Central Kenya occupational suffixes • (Ex. 11) Luhya enclitics -ko and -nga • (Ex. 12) Mombasa mother praising her Kamba daughter-in-law • (Ex. 13) Luo sibilant substitution ('shrubbing') applied only to disliked things • (Ex. 14) Renting out one's mansion in heaven • (Ex. 16) Gor Mahia football fans carved from stone (mawe).",
+    "meaning": "All 16 verbatim Kenyan comedy routines from Churchill Show (against the historical backdrop of KBC's 1980s Vitimbi—Mzee Ojwang Hatari, Mama Kayai, Amka Twende, Othorong’ong’o, Mutiso, Masanduku arap Simiti, Wariahe, Otoyo—and 1990s Redykyulass) analyzed by Martha Michieka & Leonard Muaka in 'Humor in Kenyan comedy' (in Diversity in African languages, Berlin: Language Science Press, 2016, Ch. 28, pp. 559–576, DOI: 10.17169/langsci.b121.499).",
+    "englishEquivalent": "Shared laughter bridges diverse tongues and turns stereotypes into national camaraderie.",
+    "theme": "unity",
+    "sourceCitation": "Martha Michieka & Leonard Muaka, 'Humor in Kenyan comedy', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 28, pp. 559–576, Ex. 1–16)"
+  }
+);

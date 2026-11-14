@@ -2693,3 +2693,54 @@ if (_luoMeta) {
   _luoMeta.contributorNote =
     'Dholuo (Luo / Kavirondo) vocabulary compiled from Rev. Charles New (1873 "Life, Wanderings, and Labours in Eastern Africa"), Rev. Thomas Wakefield & Robert Needham Cust (1883 "A Sketch of the Modern Languages of Africa", Vol. I, Ch. XI.D "Nile Sub-Group", pp. 273–287: XXI. Kavirondo on Victoria Nyanza pp. 284–285, Wakefield\'s MS Kavirondo Vocabulary from a Swahíli caravan traveller, and comparative proof of marked affinity with I. Shilluk/Dyur [Luoh/Lwo, Bellanda & Dembo] pp. 275–276, XVIII. Lúr [Luoh] pp. 282–283 & XX. Shúli [Gani/Shefalu] pp. 283–284), C. W. Hobley (1902 "Eastern Uganda: An Ethnological Survey" pp. 1–96 & 1903 "Anthropological Studies in Kavirondo and Nandi"), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 "The Northern Bantu", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph\'s Society / Mill-Hill Fathers (1920–1921 "A Handbook of the Kavirondo Language"), and BFBS (1921).';
 }
+
+if (_boranaMeta) {
+  _boranaMeta.contributorNote =
+    'Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 "An Imperfect Outline of the Elements of the Galla Language", London: CMS / L. & G. Seeley / Richard Watts, pp. [i]–xiv, [1]–16 [Bodleian Library copy] — audited 100% line-by-line across Isenberg\'s Preface on the 50 Galla tribes, Queen Tshāmê of Moolofallada, Anko-ber, Wāk & Kalitshas, goat-intestine haruspicy, pit-and-lance oaths, 100-cattle homicide law, vegetating grave-wood, sacred tree Wodanābè on the Hawāsh in Soddo, informants Berkiè of Gelān, Aito Berkiè of Adaī & Aito Meretch on the Tchātchā, and Krapf\'s Sections I–XI covering pronouns, Gofta declension, 17 adverb classes, prepositions/conjunctions/interjections, Active/Passive/Causative [-sisse]/Negative verbs, cardinals & -fa ordinals, Small Syntax, and all 31 conversational expressions & sentences; 1842 "Vocabulary of the Galla Language" pp. i–ii, 1–42, Colophon p. [43]; 1850 "Vocabulary of Six East-African Languages" pp. i–x, 1–64), Charles & Lawrence Tutschek (1844 "Dictionary of the Galla Language / Lexicon der Galla Sprache" Part I pp. I–LIX, 1–205; 1845 Part II pp. 1–126 & "A Grammar of the Galla Language" pp. I–VIII, 1–107), Robert Needham Cust (1883 "A Sketch of the Modern Languages of Africa", Vol. I, Ch. IX.C.II "Galla or Orómo" pp. 122–125), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), Mikael Samson & R. G. Darroch (1944, pp. 370–394), and Catherine Griefenow-Mewis (1996).';
+}
+
+const _daasanachMeta = ALL_DICT_METAS.find((m) => m.languageId === "daasanach");
+if (_daasanachMeta) {
+  _daasanachMeta.dictionaryVersion = "3.6";
+  _daasanachMeta.lastUpdated = "2026-11-14";
+  _daasanachMeta.totalEntries = 176;
+  _daasanachMeta.contributorNote =
+    'Daasanach (\'Af Dhaasanac / Dasanech / Geleba / Reshiat) Lowland East Cushitic (Omo-Tana) dictionary compiled manually from Sumiyo Nishiguchi (2004 "Consonant Assimilation and Sonority : A Case Study in Daasanach", OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, Osaka University Knowledge Archive [OUKA], DOI: 10.18910/70792 — fieldwork carried out in New York State from September 2004 to May 2005 with a native Daasanach speaker from Kenya; audited 100% line-by-line across Sections 1–5, Examples 1–34, Tableaux 1–4, Footnotes 1–9, and all 13 References), Václav Blažek (2011 "Dasanech Language: State-of-the-Art", citing Mauro Tosco 2001 "The Dhaasanac Language", Hans-Jürgen Sasse 1974/1976, E. R. Shackleton 1933), and Lieut. Ludwig von Höhnel (1894 "Discovery of Lakes Rudolf and Stefanie": Reshiat / Buma / Marle on the northeastern shore of Lake Turkana).';
+  const _catCounts: Record<string, number> = {
+    family: 14,
+    body: 23,
+    animals: 17,
+    nature: 20,
+    home: 7,
+    verbs: 41,
+    adjectives: 19,
+  };
+  for (const _c of _daasanachMeta.categories) {
+    if (_catCounts[_c.id] !== undefined) {
+      _c.count = _catCounts[_c.id];
+    }
+  }
+}
+
+if (_daasanachMeta) {
+  _daasanachMeta.dictionaryVersion = "3.7";
+  _daasanachMeta.lastUpdated = "2026-11-14";
+  _daasanachMeta.totalEntries = 185;
+  _daasanachMeta.contributorNote =
+    'Daasanach (\'Af Dhaasanac / d’áasannæc / Dasanech / Dasenech / Galab / Geleba / Reshiat) Lowland East Cushitic (Western Omo-Tana / Galaboid) dictionary compiled manually and audited 100% line-by-line from Václav Blažek (2011 "Dasanech Language – State-of-the-Art", Folia Orientalia, Vol. 48, 2011, Masaryk University, Brno, reviewing Mauro Tosco 2001 "The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia", Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln, xiv + 598 pp. + 20 photos, ISBN 3-89645-064-6, and comparing Gabriele da Trento 1941 [60 units], Eike Haberland 1966 [91], Harold C. Fleming 1965 [102] & 1971 [146], M. Lionel Bender 1971 [97], Hans-Jürgen Sasse 1973–1982 [ca. 11 studies], and Mauro Tosco 2001 [c. 1,400 units] across 101 Swadesh glosses, 48 Abbreviations & 50 References), Sumiyo Nishiguchi (2004 "Consonant Assimilation and Sonority : A Case Study in Daasanach", OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, Osaka University Knowledge Archive [OUKA], DOI: 10.18910/70792 — fieldwork carried out in New York State from September 2004 to May 2005 with a native Daasanach speaker from Kenya; audited 100% line-by-line across Sections 1–5, Examples 1–34, Tableaux 1–4, Footnotes 1–9, and all 13 References), and Lieut. Ludwig von Höhnel (1894 "Discovery of Lakes Rudolf and Stefanie": Reshiat / Buma / Marle on the northeastern shore of Lake Turkana).';
+  const _catCounts185: Record<string, number> = {
+    family: 14,
+    body: 23,
+    animals: 19,
+    nature: 21,
+    home: 7,
+    verbs: 41,
+    adjectives: 23,
+    "culture-history": 5,
+  };
+  for (const _c of _daasanachMeta.categories) {
+    if (_catCounts185[_c.id] !== undefined) {
+      _c.count = _catCounts185[_c.id];
+    }
+  }
+}

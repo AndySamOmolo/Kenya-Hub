@@ -3939,3 +3939,57 @@ export const MAASAI_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+MAASAI_COURSE[MAASAI_COURSE.length - 1].lessons.push({
+  "id": "maasai-hohnel-1894-vol1-lesson",
+  "title": "Höhnel (1894, Vol. I, Chs. III, IV & VI): Il Oikob vs. Il Oogolala, Elmoran Diet (ol-pul & kiloriti), Loitokitok Oratory & Mfuto Variolation",
+  "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I) firsthand records of the Masai (Il Oikob) and Wakwafi (Il Oogolala / Il Lumbwa), Sigirari and Loitokitok greetings, Count Teleki's smallpox variolation of ~200 porters at Mfuto, the strict Elmoran milk-and-meat dietary separation, and Chief Laibon Mbatian of the Engidong clan.",
+  "tips": "In Chapter IV (pp. 218–219), Höhnel notes that Masai warriors (Elmoran) never eat milk and beef on the same day, always taking a strong emetic and purgative before switching between their wet-season milk-and-blood diet (drawn with the blocked arrow l-ngoret) and their secluded forest meat-camp (ol-pul) seasoned with astringent kiloriti bark.",
+  "culturalNote": "At Mfuto camp (3,580 ft., July 31–Aug. 10, 1887, pp. 225–228), when 28 porters fell ill with smallpox (maradhi ya ndui), Count Teleki inoculated ~200 healthy men on the upper arm with clear humanized varioloid lymph using a lancet, producing a mild 2-day reaction fever on Aug. 5–6 and saving the expedition.",
+  "words": [
+    {
+      "target": "Leibon, sobaj! — Ebaj, moran! (p. 131) • Sobai! — Eba! (p. 214) • Angata Lesulenge ('pasture or meadow lands', p. 84) • Leigwanan twig-oratory with chorus 'Eh-eh!' at Loitokitok (pp. 214, 223)",
+      "source": "Sigirari & Loitokitok Salutations, Pasture Toponymy & Parliamentary Twig-Oratory (Höhnel 1894, Vol. I, pp. 84, 131, 214, 223)",
+      "pronunciation": "lei-bon so-baj / e-baj mo-ran / so-bai e-ba / an-ga-ta le-su-len-ge / lei-gwa-nan",
+      "hint": "Höhnel (1894, Vol. I, Chs. II–IV)"
+    },
+    {
+      "target": "Il Oikob (pastoral Masai) vs. Il Oogolala / Il Lumbwa (Wakwafi) & Il Leikipiak (pp. 218, 376) • l-poror (age-set every 4–5 yrs.) • Elmoran & Ditto in manyatta vs. Elmorua • ngoroyok & surutia (brass ear-discs)",
+      "source": "Masai & Wakwafi Subdivisions, Age-Sets, Warrior Kraals & Married Women's Regalia (Höhnel 1894, Vol. I, pp. 218–219, 376)",
+      "pronunciation": "il oi-kob / il oo-go-la-la / il lum-bwa / l-po-ror / el-mo-ran / dit-to / el-mo-rua / ngo-ro-yok / su-ru-tia",
+      "hint": "Höhnel (1894, Vol. I, Ch. IV, pp. 218–219)"
+    },
+    {
+      "target": "l-ngoret (blocked blood-arrow) • ol-pul (forest meat-camp) & kiloriti (Mimosa nilotica bark) • najosho (elders' honey-beer) • kibuyu smoked with ol-oirien (wild olive, p. 229) • en-gopiro & ol-twala (p. 231)",
+      "source": "Elmoran Dietary Separation, Milk-Gourd Smoking & Kapotei Warrior Regalia (Höhnel 1894, Vol. I, pp. 218–219, 229, 231)",
+      "pronunciation": "l-ngo-ret / ol-pul / ki-lo-ri-ti / na-jo-sho / ki-bu-yu / ol-oi-rien / en-go-pi-ro / ol-twa-la",
+      "hint": "Höhnel (1894, Vol. I, Ch. IV, pp. 218–231)"
+    },
+    {
+      "target": "Engai • Chief Laibon Mbatian of the Engidong clan at Kisongo (brother-in-law of Jumbe Kimemeta) & tasim war-charms (pp. 218–219) • Trade beads: samesame, madschibahari, aschanga meupe, ukuta, sambaj, murtinarok, mboro & senenge wire (pp. 12–14)",
+      "source": "Masai Religion, Paramount Prophet Mbatian & Expedition Trade Goods (Höhnel 1894, Vol. I, pp. 12–14, 218–219)",
+      "pronunciation": "en-gai / lai-bon m-ba-tian / en-gi-dong / ta-sim / sa-me-sa-me / mur-ti-na-rok / se-nen-ge",
+      "hint": "Höhnel (1894, Vol. I, Chs. I & IV)"
+    }
+  ],
+  "sentences": [
+    {
+      "target": "Leibon, sobaj! — Ebaj, moran! • Sobai! — Eba!",
+      "source": "Greeting to a medicine-man/leader and warrior reply at Sigirari and Loitokitok (Höhnel 1894, Vol. I, pp. 131, 214)"
+    }
+  ],
+  "authoredExercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "According to Lieut. Ludwig von Höhnel (1894, Vol. I, Ch. IV, pp. 218–219, 223, 225–229), how do Masai warriors (Elmoran) regulate their milk and meat diets, how do Loitokitok spokesmen (Leigwanan) punctuate their speeches, and how did Count Teleki halt the smallpox outbreak at Mfuto?",
+      "correctAnswer": "Elmoran never eat milk and beef on the same day, taking a strong emetic and purgative before switching between milk+blood (l-ngoret) and forest beef-feasts (ol-pul with kiloriti bark); Loitokitok Leigwanan lay a twig on the ground per clause while warriors chant 'Eh-eh!'; and at Mfuto Teleki variolated ~200 men on the upper arm with humanized lymph",
+      "options": [
+        "Elmoran never eat milk and beef on the same day, taking a strong emetic and purgative before switching between milk+blood (l-ngoret) and forest beef-feasts (ol-pul with kiloriti bark); Loitokitok Leigwanan lay a twig on the ground per clause while warriors chant 'Eh-eh!'; and at Mfuto Teleki variolated ~200 men on the upper arm with humanized lymph",
+        "Elmoran boil beef in milk every morning; Leigwanan beat drums; and Teleki burned the camp at Mfuto",
+        "Elmoran eat only maize and bananas; Leigwanan shoot arrows into a tree; and Sembodja cured Mfuto with hens",
+        "Elmoran drink honey-beer (najosho) daily; Leigwanan blow kudu horns; and Mbatian visited Mfuto"
+      ],
+      "hint": "See Höhnel (1894, Vol. I, Ch. IV, pp. 218–228)"
+    }
+  ]
+});

@@ -829,3 +829,168 @@ export const BEECH_1918_LEXICAL_HIGHLIGHTS = [
     "page": 133
   }
 ] as const;
+
+export const KRAPF_ISENBERG_1840_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "50 Galla Tribes in 6 Regions (pp. iv–v): 1–2 Dob'a, Assebo (SE of Tigrè) • 3–15 Wohhela, Wello, Karraīo, Yedjoo, Dawê, Wārā, Gafra, Watshelé, Sāko, Botoho, Torāderē, Gillê, Azzalo (N of Shoa) • 16–20 Ittoo, Aroosi, Saroya, Tcherk'er, Alla* (E of Shoa, with Gebel Achmar, Farsis, Afrăba & Assebot mts.) • 21–24 Abedjoo, Adāī, Soddo, Abbo (S/SW on Hawāsh) • 25–43 Lēbān, Wobarê, Djitān, Afsălă, Yerrer, Gelān, Mêta, Moolofallada, Mughir, Mugār, Djirroo, Allamālê, Bergamo, Garāo, Gumār, Bugāmo, Sugāmo, Abado, Babilee (S/SW of Shoa) • 44–50 Mêtcha, Gooderoo, Gumbitshoo, Betsho, Borenna, Hădera, Anko (W of Shoa on the Abaÿ/Nile)",
+    "translation": "Complete numbered inventory of 50 Galla tribes and their geographical positions gathered in Shoa (June–Nov. 1839) in Rev. C. W. Isenberg's Preface to Krapf's 'An Imperfect Outline of the Elements of the Galla Language' (1840, pp. iv–v)",
+    "language": "borana",
+    "page": 4
+  },
+  {
+    "word": "Queen Tshāmê of Moolofallada (and her son, pp. vi, xii–xiii) • Anko-ber / bar ('Gate of the Anko', former queen's residence in Efat, p. vi fn. *) • Wāk (Supreme Being) & Kalitshas (priests carrying whip, bell & goats' intestines round their necks, cf. Tigrè Zekārotsh, p. vii) • Goat-intestine fat war haruspicy (red blood-distended veins = victory, p. vii) • Pit-and-Lance Oath under an animal's hide (p. vii) • 100-cattle homicide fine & sheep-intestine peace rite (pp. vii–viii) • Vegetating grave-wood belief (p. viii) • Sacred tree Wodanābè on the Hawāsh in Soddo (no women allowed, pp. viii–ix) • Berkiè of Gelān, Chief Aito Berkiè of Adaī (with Bulga priest) & Commander-in-chief Aito Meretch on the river Tchātchā (pp. ix–x, xiii, 8)",
+    "translation": "Political, religious, judicial, funerary, and biographical records in Rev. C. W. Isenberg's Preface (1840, pp. [iii]–xiv), including mutual intelligibility between Berkiè's Galla and Dankali",
+    "language": "borana",
+    "page": 6
+  },
+  {
+    "word": "Abaÿ (Abyssinian name of the Nile, p. [1]) • 4 Origin Traditions (Nile/Abaÿ, West/South, East, Jidda in Arabia, p. [1]) • Pronouns (pp. 2–4): āna (anāfi, na; ani abbaworra), ati (sifi; ati abbaworra), isa/ui [eni] (isafi), isi (isifi), nu (nufi, garra kenin, nu irra), issini (issinifi, garra kesani, issin irra), isan (isanifi, garra isani, isan irra); kuni/kana (m.), tuni/tana (f.), sun/suni/sani/sanifi/san irra; kiya, kanketi, kanisati, kanisiti, kenia, kunike sani, kanisaniti; kan; Eniu? Eniuti? Eniufi? Māti? Atami tshiru?; manakiya (manako, manakoti) to manisani; eni na/si/isa/isi/nu/issin/isan dai, eni na kenne, na kenni/kenna, eni na hendane, eni na henkennu • Declension of Gofta (p. 4): Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!; Plur. N./Ac. Goftawon, G. Goftawōni, D. Goftawonifi, V. Goftawonko!",
+    "translation": "Sections I–V of Rev. J. L. Krapf's 'An Imperfect Outline of the Elements of the Galla Language' (1840, pp. [1]–4): nature of the language, choice of the Roman alphabet over Ethiopic, absence of article, 6 pronoun classes, and substantive declension",
+    "language": "borana",
+    "page": 2
+  },
+  {
+    "word": "17 Adverb Classes (Sect. VI, pp. 4–6): Suni mana kana woya ('That house is better than this'), Suni mana kana irra tshira ('That house is greater than this'), Hodu! / Hoda! (Hoda issin!, Hodu ati!, Hodu ana!), atom—in (atombekin 'Unless he know'), dua ('only'), koba ('alone'), gofa guduma ('often'), Esa? Esai? Karra kami? Mae esa? Hamma esa gaute? Atami? Iomēka? Iome? Malesini? Māfi? Mekeniata malifi?, baketancti to bake hundu, kana moti, io toko/lama/sadi/afur, tshenfu ('lastly'), ani bade! ('far be it from me!'), hengodini, hamtu/vanamtu ('in vain'), homa-gauti, tenno tenno, aka/akana/akanakan/akana ammo/akana tsheddan, amma, anda ('to-day'), kalesa, dangeta ('before day'), boru, dirama, galgala, guīya, halcan, iftani, sawani ('in eternity') • 20 Prepositions, 5 Conjunction Classes & 4 Interjections (Sect. VII, p. 7: enna isati / herkasa, mers, tshenan, atonhafin, ēga, io—dabate, ammo, hokan--hokan, Ker!, Mae!, Gudi mal!, Woi good!)",
+    "translation": "Sections VI–VII of Krapf (1840, pp. 4–7): complete classification of 17 adverb categories, 20 prepositions, 5 conjunction classes, and 4 interjections",
+    "language": "borana",
+    "page": 5
+  },
+  {
+    "word": "Verbs (Sect. VIII, pp. 8–10): Auxiliary 'To be' (ani, ati, isa/eni, nu, issini, isan; Past ani tshira, ati tshirta, issini tshirtu; Future ana tā, ati tata, isa tāa, isi tati, nu tāna, issini tatǎna, isan taāna; Imp. tai/tāa, hentain/hentaina) • 'To Become' (ani/eni tae, ati tate, nu tāne, issini tātan, isan taàn) • 'To Make/Do' Active (ani/ati godi, eni gode, nu gonne, issini godana, isan goddan, godi/goda, kan godu/godan, godu) & Passive (ani/ati/eni godame, nu godamna, issini godamtana, isan godaman; ani/eni illalame, ati illalamta, nu illalamne, issini illalamtana, isan illalamana, illalame tshira) • Causative in -sisse (Dekame → Dekamsisse, iame → Iamsisse; ani/eni decamsisse, ati decamsista, nu decamsisne, issini decamsistana, isan decamsissana, dekamsisi/decamsisa, kan decamsisu/decamsisan, decamsisu) • Negatives (ana/ati/isa moti, nu/issin/isan imoti; hentshalatu/hentshalanu/hentshalatan; hentshiru/hentshirtu/hentshirru/hentshirtan/hentshiran; hendandau/hendandesu/hendandeniu/hendandesana/hendandaian; hendandenie; hentshalane) • Cardinals 1–2,000 & Ordinals in -fa (Sect. IX, p. 11: tok./tak. to kuma lama; toko, lamafa, sadīfa... dibbafa, kumafa)",
+    "translation": "Sections VIII–IX of Krapf (1840, pp. 8–11): complete verbal conjugations (compiled with Berkiè, 'my Gelan-man') and cardinal/ordinal numeral tables",
+    "language": "borana",
+    "page": 8
+  },
+  {
+    "word": "Small Syntax (Sect. X, pp. 12–15): Eni dufufi/bekufi/diatufi (Infin. dativo 'He must come/know/be near'), Eni sila endufa/embeka/endiata, Eni kankennu tua ('He will give'), Daga kennaf, Gofta regariti dau tshalate ('The king likes the beating of the drum'), Shoa-Mēda tshira, Ilma gofta, Mana abakiya, Nama hamawon, Daga gudawon, Niti hamtu, ani kobakiya... isan kobasaniti, Gafa mēka?, Ioga mēka?, Nammi kuni Ankōber, Ankobari bai, Angollalada bai, Afur gergerfudi, Nama kan manna henkabna, henkābu / hedkabtu / henkăbu / henkabne / henkabtan / henkaban, Dukuba na bira gai, Kuni bise kenia duffe, Sonna egi aka henbāne, Workef meti, Dagaf maka, Kan duef kan tshira • 31 Expressions & Sentences (Sect. XI, p. 16): Naga ambulte — Bulla bulte naguma, Nagam bultani? — Bulle bulta / Enaganaga, feyuma, Naga oltani? — Ollo olte, Marabatis, nagana oli / nagaia ole, Naga tshedde? — Atis feiuma / Issinis feiuma, Naguma galgalesite? / galgalesate — Nagai ambula, Gondi kuni mekan eniu? — Metātit tsheddan, Esa dukta?, Esei duffe?, Kuni malini?, Gadi meka?, Na hime esa isa tshira, Dafi tai, Kai, Kod, As kod, Anda atam tshirte?",
+    "translation": "Sections X–XI of Krapf (1840, pp. 12–16): complete syntactic rules and all 31 conversational salutations, questions, imperatives, and responses (including village Metātit)",
+    "language": "borana",
+    "page": 16
+  }
+] as const;
+
+export const NISHIGUCHI_2004_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Ex. (1)–(4) (pp. 39–40): Tosco (2001: 23) {n, l}+t → {nn, ll}, {r, d}+t → ɗɗ [printed: Îî], {s, t}+t → t • Tosco (2001: 52) L > N > F > S[Cor] > S[-Cor] • Ex. (3) st → t: /duus + ti/ → [duuti] (fart + Perf = 'farted'; printed: /fwB + vkl → [fwwvk]) • Ex. (4) t + s → s: /it + su/ → [isu] (tear apart + Middle = 'to tear off for oneself', Tosco 2001: 24; printed: likB + uwl → [ikBw])",
+    "translation": "Section 1 ('Introduction: Consonant Cooccurrence and Deletion in Daasanach', pp. 39–40 & fn. *): Fieldwork with a native Kenyan Daasanach speaker in New York State (Sept. 2004–May 2005) and the 3 governing factors at morpheme boundaries (Sumiyo Nishiguchi, OUPEL 9, 2004, DOI: 10.18910/70792)",
+    "language": "daasanach",
+    "page": 39
+  },
+  {
+    "word": "Within-Morpheme CC Sequences (Ex. 5–8, p. 41): 5a L+L /rl/ marli — /mar+li/ ('Arbore') • 5b L+N /lm/ ɗolmisu — /ɗolis+miso/ ('to peep'), /rm/ nirm ('newborn camels'), /rn/ kernɲo ('bottom backbone') • 6a L+F /rs/ karsic ('old, elder'), /ls/ balsam — balt+sam ('kind of grass') • 6b L+C /lt/ bilti — bilt+e ('the knife for circumcision') • 6c N+F /ns/ kansic ('chief', fn. 3) • 6d N+C /nt/ inti — inti+e ('the gazelle') • 7 C+N /ɗm/ duɗmo — dudum+o ('round calabashes'), /dn/ koɗodnos — koɗodno+s ('to make someone bend for himself') • 8 C+F /df/ kuɗfu — kuɗf+o ('ankles')",
+    "translation": "Section 2 ('CC Sequences within Morphemes', pp. 40–43, Ex. 5–18 & Tableau 1): Complete inventory of tautomorphemic consonant clusters, Nishiguchi's hierarchy L > N, F, C (*N, F, C > L), Sasse's (1974: 409) geminates (GG yy, ww; LL ll, rr; NN mm, nn; FF ʃʃ; CC gg, dd, bb, tt, ɟɟ), and Tableau 1 (*Complex, Onset >> SyllCon)",
+    "language": "daasanach",
+    "page": 41
+  },
+  {
+    "word": "Across-Morpheme CC Sequences (Ex. 19–22, pp. 44–45): 19 L+N /lm/ uolmosu — olol+mo+su ('to feed oneself') • 20a L+F /rs/ ʔoʔorsis — ʔoʔor+sis ('make black'), /ls/ ololso — olol+so ('to feed oneself') • 20b L+C /rt/ ʕuurti — ʕuur+ti ('shaved oneself') • 20c N+C /nt/ ɗuuninti — ɗuunin+ti ('mosquito') • 21a F+N /sm/ duusma — duus+m+a ('to fart'), /ɗm/ diiɗma — diit+m+a ('to refuse') • 21b C+N /dm/ sʔuudmis — sʔuudis- ('to rub') • 22 *C_ObsC_Obs & Tableau 2 (p. 45)",
+    "translation": "Section 3 ('CC Sequences Across Morpheme Boundaries', pp. 44–45, Ex. 19–22 & Tableau 2): Heteromorphemic clusters and the constraint *C_ObsC_Obs ('Avoid a sequence of obstruents')",
+    "language": "daasanach",
+    "page": 44
+  },
+  {
+    "word": "Consonant Assimilation & Deletion (Ex. 23–31, pp. 46–48): 25 G+C → G /zaaby+t+a/ → [zaaya] ('you sew', Sasse 1976) • 26a–c L+C → L /maal+t+a/ → [maala] ('(You) hear'), /həl+ta/ → [həlaa] ('(YOU) enter'), /bil+t+o/ → [bilo] ('bows') • 27a–b L+C → CC /fuur+t+a/ → [fuuDDA] ('you open', Sasse 1976), /cir+t+i/ → [ciɗɗi] / [ciri] ('you held for yourself', Tosco 2001: 187, fn. 9) • 28a–b N+C → N+N /tuun+t+a/ → [tuunna] ('you beat'), /zaas+am+t+a/ → [zaasanna] ('you see', Sasse 1976) • 29a–e F+C → C /us+te/ → [ute], /fuus+te/ → [fuute], /hees+t+i/ → [heeti] ('you asked'), /ɗis+t+i/ → [ɗiti] ('you built for yourself'), /duus+t+i/ → [duuti] ('you farted') • 30 C+F → F /it+su/ → [isu] ('to tear off') • 31 C+C → CC /maɗ+t+i/ → [maɗɗi] ('you went and bought')",
+    "translation": "Section 4 ('Consonant Assimilation and Deletion', pp. 46–50, Ex. 23–34 & Tableaux 3–4): Complete paradigm of sonorant preservation, nasal/implosive gemination, and affix-faithful obstruent deletion under *CC_Obs, Max-C_son-IO, Faith-affix-IO >> Max-IO, Ident-IO",
+    "language": "daasanach",
+    "page": 47
+  }
+] as const;
+
+export const BLAZEK_2011_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "d’áasannæc (earlier Galab / Geleba; 1994 Ethiopian census: 32,029; 1980 Kenyan est.: 2,500; Tosco est.: 35,000–40,000) • Cognate Shares (line 95): Arbore 53.3% > Elmolo 50.0% > Oromo 38.9% > Konso 35.8% = Somali 35.8% > Rendille 35.6% > D’irayta 31.2% > Bayso 27.7% > Afar 25.0% > Yaaku 18.0% > Gollango 16.5% > Harso 16.1% > Sidamo 14.6% > Dahalo 11.9%",
+    "translation": "Demographics, Sasse (1975) & Heine (1976/1978) classification trees, and Blažek's (1997: 173–74) glottochronological model of East Cushitic disintegration in Václav Blažek (Folia Orientalia Vol. 48, 2011, lines 1–95)",
+    "language": "daasanach",
+    "page": 1
+  },
+  {
+    "word": "24 Consonant Phonemes (pp. 16–18): oral plosives b, d, t, j, c, g, k, ʔ; implosives ɓ, ɗ, ʄ, ɠ; nasals m, n, ɲ, ŋ; fricatives f, ð, s, š; trill r; approximants w, y, l • 5 Short/Long Vowels (i, e, a, o, u) & 2 Diphthongs (ie, uo, pp. 25–26) • Singulative: m. -(i)c/-(i)ɲ, -(a)c/-(a)ɲ; f. -ti (pp. 75–82) • Plural: -u, -a, -i, -V(V)m/-sV(V)m, -anu, -ono, -s, -tu (pp. 83–93)",
+    "translation": "Phonological inventory and nominal number morphology of Mauro Tosco's The Dhaasanac Language (2001) in Václav Blažek (Folia Orientalia Vol. 48, 2011, lines 97–108)",
+    "language": "daasanach",
+    "page": 3
+  },
+  {
+    "word": "Numerals (pp. 105–110): 1 tákac (counting) / tikiɗɗi (modifier), 2 naama, 3 seddi, 4 ʔaffur, 5 cen, 6 li, 7 tiyya, 8 siet, 9 saal, 10 tommon, 100 kúɗ tikiɗɗi ~ tikilli, 1000 ši tikiɗɗi ~ tikilli • Personal Pronouns (p. 211): 1sg yú/yáa/ye/cú~cu; 2sg kúuni/kúo/ko/kú~ku; 1pl incl. múuni/(ⁿé) ké~kí/kúnnu; 1pl excl. ɲíini/ɲaaɲi/ɲí/kíɲɲu; 2pl ʔitíni/ʔití/ʔitíni/kíccu • Adjectival Plurals (p. 207): búr → búubur, ɗér → ɗeeɗír, ðát → ðáaðat; ráar → ráagar, niní → niiginí, ʔéð → ʔéegeð • 4 Prefix Verbs (pp. 320–475): ʔás ('kills'), yaalla ('stands'), yeeðe ('says'), yimii ('comes')",
+    "translation": "Complete numeral, pronominal, adjectival, and prefix-verb paradigms in Tosco (2001) & Blažek (Folia Orientalia Vol. 48, 2011, lines 108–118)",
+    "language": "daasanach",
+    "page": 4
+  },
+  {
+    "word": "101-Gloss Comparative Wordlist Across 6 Authorities (da Trento 1941 [60], Haberland 1966 [91], Fleming 1965 [102] & 1971 [146], Bender 1971 [97], Sasse 1973–82, Tosco 2001 [c. 1,400]): lulli ('all'), ʔége & ɗíl ('ashes / hot ashes'), boort-i & ɓokot-i ('bark'), geer-e ('belly'), guddu ('big'), kimír-ri & ⁿurum ('bird'), ɠínin ('bite'), ʔoŋor ('black'), fás ('blood'), láf-u ('bone'), ʔóðu, ɠán & bál ('breast/udder/chest'), bólob & duun-ay- ('burn'), ⁿáɗ & konof ('claw/hoof'), derri-c ('cloud'), ɗéeɲ & ʔabbúnab ('cold'), káɗe! & yimeðe ('come'), kúf & dɛd ('die'), cér ('dog'), ʔík ('drink'), gogu ('dry'), nee ('ear'), lés & bii ('earth'), kóm ('eat'), ɠonɠ-o ('egg'), ʔíl pl. ʔinnù ('eye'), sálab & buoddi ('fat'), bal-li ('feather'), ʄíet pl. ʔéðe ('fire'), bée & kāra ('fish'), kiiðiɲ ('fly'), ɠás & beḍi ('foot'), kóc ('full'), šíiš ('give'), sí ('go'), miðáb & ɗabán ('good/pretty'), ʔíiš ('grass'), ðúur ('hair'), gíl ('hand'), mé pl. met-u ('head'), máal ('hear'), ⁿuoðin-ni ('heart'), gáas ('horn'), kur pl. kurram ('knee'), ʔók ('know'), ráš ('leaf'), círa ('liver'), ʔiðír-ri ('louse'), mí~mu & yáb ('man/males'), búrnab ('be many'), só pl. sogim ('meat'), ɠuí ('moon'), gummuti, wār, labur & siri ('mountain/hill'), ʔaf-u ('mouth'), mée ('name'), lúut-i pl. lug-u ('neck'), káana ('new'), cuur-i ('night'), sóon-o ('nose'), máa & gáal ('person/people'), ʔír ('rain'), ɠíeric ('road'), ⁿíð ('root'), yùoc ('sand'), ʔárik ('see'), ʔár ('seed'), yédik ('sit=live'), r/lokóɗ ('skin'), ráf & ɗínaʔ ('sleep/lie down'), ʔéer ('smoke'), cár ('snake'), ʔiðin ('star'), wáar & dʌb ('stone'), ʔáaðu ('sun'), ðánu ('swim'), wáas, dúm & sugu ('tail/tip/back'), dáɗab ('thin'), ⁿíé(é)-là ('this'), ʔére pl. ʔerbu ('tongue'), kác-u ('tooth'), ɠór ('tree'), kulláʔ ('warm/hot'), bie ('water'), ɲuru ('wet'), méete ('what'), máaya ('who'), min-ni & ɗég-i ('woman/women')",
+    "translation": "Complete 6-column 101-gloss comparative table, 48 Abbreviations, and 50 References in Václav Blažek (Folia Orientalia Vol. 48, 2011, lines 122–335)",
+    "language": "daasanach",
+    "page": 5
+  }
+] as const;
+
+export const HOHNEL_1894_VOL1_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Bwana mkubwa (Teleki), Bwana mdogo (Höhnel) & Bwana katikati (James Martin, p. 8) • Jumbe Kimemeta ($2,000, brother-in-law of Laibon Mbatian, pp. 7, 9, 218) • Qualla Idris & 8 Somalis (pp. 10–12, 33) • 12 Almäss Nicknames (Almäss Neussi, Njekundu, Msangu, Manjeina Unjanweri, bischibu, mitende, pp. 15–16) • 14 Caravan Toponyms in -ni & Malago (pp. 75–76 fn. 1) • 'Baringo na mbele kidogo' (p. 37)",
+    "translation": "Chapters I–II (pp. [v]–xx, 1–93): Zanzibar & Caravan Kiswahili hierarchy titles, Zanzibari onomastics, 19-row Mawia load table (470+ loads), 14 Errata (p. xx), and locative camp toponymy in Lieut. Ludwig von Höhnel (1894, Vol. I)",
+    "language": "swahili",
+    "page": 15
+  },
+  {
+    "word": "Kilo vedi? — Hm! Si vedi? — Hm! Ho kaja? — Hm! Ho kaja kilo vedi? — Hm! Mzima? — Hm! Sana — Hm! Yambo — Hm! (p. 66) • Ta-veta / M-taveta / Wa-taveta / Ki-taveta (p. 61) • 10 Wazee elders & Wakwafi (pp. 100–104) • pombo (10 strings of 21–22 in. beads) • naiberes vs. schukas (1 doti = 2 schuka = 8 mikono, pp. 105, 141 fn. 1) • Sultan Miriali: kilengele ('beads') & 'Tonga mbuya!' ('Off with you now, friend!', p. 113) • 7 Chaga States (p. 184) • Kibo ascent to 16,240 ft. & 17,387 ft. (June 20, 1887, pp. 192–196)",
+    "translation": "Chapters II–III (pp. 61–205): Verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga, Taveta & Kahe ethnography, Chaga Sultan Miriali & Mandara's Swahili taunts, Wameru Sultan Matunda's maize-ear accounting, and First Ascent of Kilimanjaro in Höhnel (1894, Vol. I)",
+    "language": "taveta",
+    "page": 66
+  },
+  {
+    "word": "Leibon, sobaj! — Ebaj, moran! (p. 131) • Sobai! — Eba! (p. 214) • Angata Lesulenge (p. 84) • Loitokitok Leigwanan twig-oratory ('Eh-eh!', p. 223) • Mfuto smallpox variolation of ~200 porters by Teleki (pp. 225–228) • kibuyu smoked with ol-oirien (p. 229) • Kapotei Elmoran in en-gopiro & ol-twala jumping 3 ft. (p. 231) • Il Oikob vs. Il Oogolala / Il Lumbwa & Il Leikipiak (pp. 218–219, 376) • l-poror, Elmoran/Ditto/Elmorua, l-ngoret, ol-pul & kiloriti bark, najosho, ngoroyok & surutia, Chief Laibon Mbatian of Engidong & tasim (pp. 218–219)",
+    "translation": "Chapters III, IV & VI (pp. 84, 131, 206–236, 367–380): Complete Masai (Il Oikob) and Wakwafi ethnography, dietary laws, salutations, and Mfuto variolation in Höhnel (1894, Vol. I)",
+    "language": "maasai",
+    "page": 218
+  },
+  {
+    "word": "'U-u-u-ui! Ngai!' & 'Mirema! Mirema!' (p. 287) • mburi ya thayu & kuhoria tatha chanting 'Thayu! Thayu!' (pp. 288, 291, 303) • Ngongo Bagas (Aug. 23, p. 221) & Mathira 7-step white-ram/black-goat githathi peace covenants (Sept. 16, p. 298) • 68 Parallel Ravines (Nairobi to Thegu, pp. 287–302) • Subugo, kihingo & ngurunga pitfalls with muriju poison • Aturi smiths, ruhiu, kahiu, kiondo, mwatũ, njohi/uhi, njingiri, corno & 7–8 ft. muro digging-sticks • 3-tier ridge crop zoning (p. 305) • Mount Kenia (Donyo Egere) ascent to 15,355 ft. (Oct. 11, 1887) & Lobelia Telekii Schweinfurth (pp. 362–375)",
+    "translation": "Chapters V–VI (pp. 220–221, 234–236, 286–309, 362–375): First European traverse of Kikuyuland across 68 ravines and first ascent of Mount Kenia across 5 vertical zones in Höhnel (1894, Vol. I)",
+    "language": "kikuyu",
+    "page": 288
+  },
+  {
+    "word": "Njemps Mkubwa & Njemps Ndogo (3,220 ft., 1,500–2,000 Il Oogolala Wakwafi on Guaso Tigerish & Guaso Molo, pp. 381–383) • Timber-pile, brushwood & boulder dam (1 mi. above Njemps Mkubwa) & rotational sluice-gate canals irrigating wimbi, mtama, melons, pumpkins, beans & tobacco • 65 grain loads from Elgeyo & Marakwet • Lake Baringo (3,190 ft., 14 × 7 mi., fresh water via subterranean basalt seepage) • Ol Kokwa island (2½ mi., 400 ft., boiling sulphur springs) & 6–8-log ambatch oboro rafts (Herminiera elaphroxylon, pp. 384–385)",
+    "translation": "Chapter VI (pp. 367–385 & 4 Fold-out Maps): Njemps hydraulic engineering, Kerio valley grain trade, and Lake Baringo exploration in Höhnel (1894, Vol. I)",
+    "language": "ilchamus",
+    "page": 382
+  }
+] as const;
+
+export const PAYNE_PACCHIAROTTI_BOSIRE_2016_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Logoori Palatalization (Glewwe & Aly 2016, Ch. 9, pp. 165–183): ohandekaa → mbandekaa • ke-hia → keʃa vs. eN-hia → embja • ko-siɛ-a → koʃja (1SG ʃjɛɛzaa) vs. ko-he-a → koʃa (1SG mbezaa) • [ko-ʃookeɾ-a] & [ko-ʃoog-a] | Logoori 6 Future Inflections & 4 Constructions (Sarvasy 2016, Ch. 11, pp. 201–219): SP-ra- -a (Near/General), na-SP- -e (Middle), SP-raka- -e / SP-aaka- -e (Remote), SP-rika- -e, SP-ri- -a (Indefinite), naa-SP- -e (Long-Vowel Remote) + Subjunctive, kʊzja, kʊman̪a + Subjunctive & ma-/aa- + Subjunctive",
+    "translation": "Chapters 9 & 11 (pp. 165–183, 201–219): Coronal consonant-glide reduction (sj → ʃ) resolving the /h/-plosivization vs. nasal-deletion ordering paradox, and the 6 future tense inflections and 4 auxiliary/subjunctive future constructions in Logoori oral texts in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "luhya",
+    "page": 165
+  },
+  {
+    "word": "Logoori Quantifiers (Landman 2016, Ch. 12, pp. 219–234): vuri ('every', pre-nominal invariant D-quantifier) vs. -oosi ('all, whole, any', post-nominal 15-class AP modifier: woosi, voosi, gwoosi, joosi, rioosi, goosi, choosi, vyoosi, yoosi, zyoosi, ruwoosi, koosi, twoosi, vwoosi, gwoosi) • soom-i vuri ki-tabu ch-oosi ('I read every whole book') | Luragooli Anticausative -Vk (Gluckman & Bowler 2016, Ch. 15, pp. 271–289): muriaŋgo gu-aram-ik-i kuturona na imboza • Class Ia (kuholeka 'be heard', kuroreka 'be seen', kudiirika 'be touched', kumeneka 'be tasted') vs. Class Ib (kuholeka 'be punched', kuliika 'be eaten') | Lubukusu TRC (Safir & Selvanathan 2016, Ch. 25, pp. 495–512): Ba-saani ba-a-biyil-an-a (ba-b-eene khu b-eene) khu-khil-a ba-khasi • Ba-khasi ba-a-i-yeet-an-a",
+    "translation": "Chapters 12, 15 & 25 (pp. 219–234, 271–289, 495–512): Universal quantifiers vuri vs. -oosi, telic anticausative -Vk in Luragooli, and Transitive Reciprocal Constructions (-an + ba-b-eene khu b-eene) in Lubukusu in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "luhya",
+    "page": 219
+  },
+  {
+    "word": "Standard Swahili Reversive -u / -o / -ul / -ol & Stative -uk / -ok (Ngonyani & Ngowa 2016, Ch. 14, pp. 255–271): ziba → zibua / zibulia / zibulisha / zibuliwa / zibuka • tega → tegua / tegulia / teguka • panga → pangua / pangulia / pangulisha / panguka • funga → fungua • choma → chomoa / chomolea / chomolewa / chomoka • Pwani Univ. Nonce Tests (60% List A; 65% List B) & HCS Acceptability of kufanyua ('to undo' < kufanya, 10/16 speakers) | Kenyan Comedy (Michieka & Muaka 2016, Ch. 28, pp. 559–576): Vitimbi, Redykyulass & Churchill Show (Ex. 1–16: 'wizi wa mabavu', 'Samahani, mteja wa nambari uliyopiga hapatikani', 'ilisemanga / kuipia', Nyanza prefixes vs. Central suffixes, Luhya -ko/-nga, Sheng 'shrubbing' sida / shitikashel / aishishi)",
+    "translation": "Chapters 14 & 28 (pp. 255–271, 559–576): Productivity of the Standard Swahili reversive extension at Pwani University (Kilifi) and linguistic humor across 16 Kenyan stand-up comedy excerpts in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "swahili",
+    "page": 255
+  },
+  {
+    "word": "Digo ([dig] E73, Kwale District, Kenya, 864 clauses) Information Structure (Steve Nicolle 2016, Ch. 20, pp. 377–395): [Barabara]_TOPIC ndipho [a-ka-i-rich-a]_COMMENT (Ex. 2) • [Pesa]_TOPIC sino [hu-na-Ø-hew-a]_COMMENT (Ex. 3) • [go mafuha ga taa]_TOPIC ndo [n’yarya?]_COMMENT (Ex. 7) • Yuya bwana warima munda uchifika dza Mazera, na hiku uchifika dza Malindi ela kaguwire hata tsere mwenga (Ex. 8) • Lakini [achinyamala]_COMMENT [mutu yuyu]_TOPIC wala kayagomba na mutu (Ex. 11) • Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo higo]_PRESUPPOSITION (Ex. 22) • [ratuluka] [fisi], rina chitswa dza cha mutu... (Ex. 25)",
+    "translation": "Chapter 20 (pp. 377–395): Left-dislocated vs. right-dislocated topics, clefted subject argument focus, and VS thetic sentences in Digo ([dig] E73) and 10 other Eastern Bantu languages in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "mijikenda",
+    "page": 377
+  },
+  {
+    "word": "Somali Gender Polarity Revisited (Morgan Nilsson 2016, Ch. 23, pp. 451–466): ínan-k-a (M) vs. inán-t-a (F) • Plural Agreement Targets (Table 5): -aan/-een, ay/iyaga, kuwan, -ood • Plural Definite Article Rules (Tables 6 & 15): Fem. → {k} (sabab-a-h-a, hooyo-oyin-k-a), Masc. 1-σ → {k} (miis-as-k-a, geed-a-h-a, jilb-a-h-a), Masc. 2+-σ → {t} (gambar-ra-d-a, aabba-yaa-sh-a) • 5th-Declension Collectives vs. Plurals (Tables 9–10, Ex. 4): Dibí-d-u waa ay daaq-ay-aan / daaq-ay-saa vs. Dibi-ya-d-u w-ay daaq-ay-aan (*daaq-ay-saa) • Collectives, Corporates & Generics: kuraas-t-a, culima-d-a, carruur-t-a, lo’-d-a, dumar-k-a, dad-k-a, rag-g-a, qoys-k-a, koox-d-a, geel-a, Diin-k-u",
+    "translation": "Chapter 23 (pp. 451–466): Single invariant gender, stem-syllable plural definite article selection, and syntactic (3SG) vs. semantic (3PL) agreement in Somali collectives, corporates, and generics in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "somali",
+    "page": 451
+  },
+  {
+    "word": "Eastern Nilotic Tripartite Number Marking, Greater Plural & Greater Singular (Jonathan Moodie 2016, Ch. 21, pp. 397–416): Maasai eng-ker ('sheep') → ing-kerr-a ('sheep [pl.]') → ing-kerr-ai ('herds of sheep', Table 18) • Teso e-tunga-nan ('person') → i-tunga ('people') → i-tunga-sinei ('mankind', Table 18) • Lopit kérr → kèrr-á → kèrr-ítí & xìtéŋ → xísúŋ → xìsúŋ-í (Table 17) • Greenberg's movable k- > hi- (hì-yòk → yòh-ì 'ear') • Greater Singular lòmé-tí ('so much millet!'), hìfióng-í ('flood'), hìténg-í ('so many cows'), tòhòní ('all the people in Nairobi', Ex. 6–14)",
+    "translation": "Chapter 21 (pp. 397–416): Tripartite number marking across 446 Dorik Lopit nouns and comparative Greater Plural and Greater Singular in Maasai, Teso, Lopit, Lotuko, and Bari in Payne, Pacchiarotti & Bosire, eds. (2016)",
+    "language": "maasai",
+    "page": 397
+  }
+] as const;

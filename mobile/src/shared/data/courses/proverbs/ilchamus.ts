@@ -37,3 +37,15 @@ export const ILCHAMUS_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–55)"
   }
 ];
+
+ILCHAMUS_PROVERBS.push({
+  "id": "ilchamus-hohnel-1894-njemps-dam-olkokwa-oboro",
+  "languageId": "ilchamus",
+  "languageName": "Ilchamus (Njemps — Höhnel 1894, Vol. I, Ch. VI)",
+  "indigenous": "Njemps Mkubwa & Njemps Ndogo (3,220 ft., 1,500–2,000 Il Oogolala Wakwafi) • Guaso Tigerish Timber-and-Boulder Dam & Rotational Sluice-Gate Canals • Lake Baringo (3,190 ft., 14 × 7 mi.) & Ol Kokwa Island (2½ mi., 400 ft., Boiling Sulphur Springs) • 6–8-Log Ambatch Oboro Rafts (pp. 381–385).",
+  "literalTranslation": "The two double-stockaded villages of Great and Little Njemps on the Guaso Tigerish and Guaso Molo rivers, their communal timber-pile and boulder irrigation dam with rotational sluice-canals, fresh-water Lake Baringo and its geothermal crater-island Ol Kokwa, and the 6–8-log ambatch rafts (oboro).",
+  "meaning": "Recorded firsthand by Lieut. Ludwig von Höhnel in 'Discovery of Lakes Rudolf and Stefanie' (Vol. I, 1894, Ch. VI, pp. 367–385): demonstrates howLeikipia and Naivasha Wakwafi refugees transformed the semi-arid Baringo basin into a granary through cooperative hydraulic engineering on the Guaso Tigerish and linked mainland Njemps with Ol Kokwa island via buoyant ambatch-wood oboro rafts.",
+  "englishEquivalent": "Shared water and bound logs sustain the community.",
+  "theme": "unity",
+  "sourceCitation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (London: Longmans, Green, and Co., 1894, Ch. VI, pp. 367–385)"
+});
