@@ -2,7 +2,7 @@ import type {
   DictCategory,
   DictEntry,
   Dictionary,
-} from "../data/dictionaries/metadata";
+} from "@/data/dictionaries/metadata";
 
 /**
  * Standard language family color palette used across web and mobile views.
@@ -1992,6 +1992,150 @@ JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["borana"].push(
       translation: "Teso Three-Way Number Paradigm (Table 18, p. 412, citing Hilders & Lawrance 1956: 3 & Corbett 2000: 30): Singulative e-tunga-nan ('person') → Unmarked Plural i-tunga ('people') → Greater Plural i-tunga-sinei ('mankind / vast crowds of people'), compared with Maasai eng-ker → ing-kerr-a → ing-kerr-ai ('herds of sheep'), Lopit kérr → kèrr-á → kèrr-ítí ('herds of sheep') & tórú → tòrú-ò → tòrú-sèn ('many types of axes'), Lotuko nenie → nedye → nedye-jin ('herds of goats'), and Bari nyomot-i → nyomot → nyomot-an ('very many seeds'), plus shared Eastern Nilotic agentive replacement plurals in -k (< Nilo-Saharan *-k: Teso -an/-on → -ak/-ok ≈ Lopit há-bárà-nì → há-bàrà-k 'cow farmer', há-itíyénà-nì → há-itíyénà-k 'teacher', Table 3)",
       pronunciation: "e-tu-nga-nan / i-tu-nga / i-tu-nga-si-nei",
       context: "Jonathan Moodie, 'Number marking in Lopit, an Eastern Nilotic language', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 21, pp. 397–416)",
+      audioFile: null,
+    },
+  }
+);
+
+// ── Complete Line-by-Line Specialized & Reconciled Entries from Rev. A. W. McGregor's "English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa" (SPCK London, 1904, Fort Smith / Kabeti 1901–1902, Book pp. [i]–iv, 5–192 / PDF pp. 1–201) ──
+(JOHNSTON_1902_SUPPLEMENTARY_ENTRIES["kikuyu"] ??= []).push(
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, PDF pp. 1–9, 100, 197–201 / Book pp. [i]–iv, 95, 192): Stanford University Libraries Provenance (PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie Bookplate), Colophon & Preface (Fort Smith / Kabeti 1901–1902, Uganda Railway Miles 326–360, Mount Kenia = Kirinyaga / Kilinyatha / Kireira & Population 200,000–300,000)",
+      translation: "Physical & Library Provenance (PDF pp. 1–7, 197–201): Digitized by Google Book Search from the Cecil H. Green Library, Stanford University Libraries (Stanford, California 94305-6063, (650) 723-1493, grncirc@stanford.edu, call number PL 8379.4 .M3 C.1, barcode 3 6105 037 215 303, flyleaf notation A45- / U7 [A45- / 47], bookplate on PDF p. 3: 'In tribute to Dr. & Mrs. Robert A. Rennie from a gift by Nationwide Foundation / Stanford University Memorial Fund', circulation stamps SEP 17 1990, MAR 21 1991, MAY 23 19[91], JUN 15 2005, DEC 05 2005; printed by Richard Clay & Sons, Limited, London and Bungay, p. 192) • Preface (Book pp. iii–iv, signed 'A. W. MCGREGOR. London, May 1903'): First printed vocabulary of the Kikuyu language; collected at Fort Smith (native name, Kabeti) during 1901 and 1902 while stationed there by the Church Missionary Society; bounded on the SW by the Uganda Railway from about mile 326 to mile 360 (round Nairobi & Kikuyu stations) and stretching NE to Mount Kenia (native name Kirinyaga on p. iv; Kilinyatha. Kireira on p. 95); altitude 4,000 to 18,000 feet (inhabited parts 4,000 to 7,000 feet); population estimated at 200,000 to 300,000",
+      pronunciation: "ka-be-ti / ki-ri-nya-ga / ki-li-nya-tha / ki-rei-ra",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Front Matter, Preface & Back Matter, PDF pp. 1–9, 100, 197–201 / Book pp. [i]–iv, 95, 192)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "adjectives",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, PDF pp. 10–11 / Book pp. 5–6): Orthographic Note (R.G.S. System), Absence of S/Z in Kabeti (Th Substitution), L/R Interchangeability, Velar Nasal ng' (koteng'era) vs. Prenasalized ng'g (kuing'gata), 9 Abbreviations & Observe A–B Across 10 Noun Classes",
+      translation: "Royal Geographical Society (R.G.S.) Orthography (p. 5): Consonants as in English, vowels as in Italian, every letter pronounced • 4 Phonological Rules of Kabeti (Fort Smith): (1) S and Z do not appear to be used, Th always taking their places (Muthungu, Muthamaki, Muthuri, -theru, kothie, Thetani, Mathihi/Krithto, Mutha, Kithwaeri); (2) L and R are often indistinguishable or used interchangeably (kolekia/korekia, lochuthi, lokwaro); (3) Velar nasal ng' with a point after ng (koteng'era 'to abscond/run', pronounced koteng-era, not koten-gera; ng'ombe, ng'ondu, ng'aragu, ng'ania, kong'orota, kong'athia, king'ang'aini); (4) Prenasalized hard g written ng'g (kuing'gata 'to accelerate/banish/conquer/drive away', ketung'guru [I-] 'ball/sphere') • 9 Abbreviations (p. 5): n. = noun, pron. = pronoun, adj. = adjective, conj. = conjunction, prep. = preposition, adv. = adverb, int. = interjection, pass. = passive, neu. = neuter • Observe A & B (pp. 5–6): A. Infinitive in Ko-/Ku-/Kw- always given; B. Invariable plurals marked (s. & p.); variable plurals give full plural in brackets as Mwetereri (Etereri) or plural prefix in brackets as Gechunji (I-) → Ichunji across 10 noun class pairings (Mu-/A-, Mu-/Mi-, Ge-,Ke-,Ki-/I-,Chi-, I-,Re-,Ri-/Ma-, Ro-,Ru-/N-,M-,Ny-,Nd-,Ng- or Ma-, Ka-/To-,Tu-,Twa-, O-,U-,W-/Ma-, Ko-,Ku-,Gu-/Ma-, invariable N- [s. & p.], and Ha-/Ku- & -ini)",
+      pronunciation: "ko-teng-e-ra / ku-ing-ga-ta / ke-tung-gu-ru / mw-e-te-re-ri e-te-re-ri / ge-chu-nji i-chu-nji",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Note & Observe A–B, Book pp. 5–6 / PDF pp. 10–11)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "family",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, Book pp. 11–192): Suppletive Kinship Paradigm (Baba/Thoguo/Ithi/Maithi & Maito/Nyukwa/Nyina/Manyina), Age-Grades & Marriage Lexicon (Rorachio & Wathiomo)",
+      translation: "Father (p. 63): Baba (my), Thoguo (your), Ithi (his/her), Maithi (pl. all persons; Baba watene → Maithiwa tene 'forefather', p. 69; Baba munyinyi / Babawa keri 'uncle', p. 176) • Mother (p. 114): Maito (my), Nyukwa (your), Nyina (his/her), Manyina (pl. all persons; Tata 'aunt', p. 17) • Siblings, Grandparents & In-Laws: Mwana or Muru wa maito ('brother of same mother', p. 27), Mwari wa maito (pl. Ari, 'sister', p. 158), Mwari wa nyina / Maramu (A-) ('sister-in-law', p. 158), Muthoni (A-) ('brother-in-law / cousin / son-in-law', pp. 27, 40, 159), Guka (Maguka) / Gukawe (Magukawe) ('grandchild / grand-daughter', pp. 43, 76), Chocho (Machocho) ('grandmother', p. 76) • Life Stages & Marriage: Kakengi (To-) / Rokengi (Ma-/To-) / Kaana (Twaana) ('baby in arms / infant', pp. 18, 89), Kahee (Tohee) ('boy/lad', Ohee 'boyhood', pp. 26, 96), Karego (To-) → Kirego (I-) → Muiretu (Airetu) & Kairetu (Tuiretu) ('little girl → big girl → maiden/virgin', pp. 74, 181), -a regithathi / -a irigathathi ('eldest/firstborn', pp. 55, 67), Chiana chiangoriai ('orphan', p. 125), Mwanake (Aanake) ('young man/warrior'), Muhiki (A-) / Muguruo (A-) ('bride') & Mugurani (A-) ('bridegroom', p. 26), Rorachio (Marorachio) ('bride-wealth gift to bride's father', p. 73), Wathiomo ('gift of a goat', pp. 73, 122, 137), Kohikia/Kogurana (of man) vs. Kohika/Koguruo (of woman) & Kohikania ('to marry', pp. 108, 185), Muthuri (Athuri) / Mukuru (Akuru) ('elder/old man', Othuri 'old age'), Keheti/Kiheti (I-) ('old woman'), Akuiriruo na murumi (Makuiriruo na arumi) ('widow', p. 187)",
+      pronunciation: "ba-ba tho-gu-o i-thi ma-i-thi / ma-i-to nyu-kwa nyi-na ma-nyi-na / ro-ra-chi-o / wa-thi-o-mo",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book pp. 11, 17–27, 40–76, 89–125, 158–189)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "time",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, Book pp. 12–192): 7-Day Relative Time Sequence, Daily Solar Divisions, Rainy Seasons (Kathano & Mwaka wa kehu), 3-Crop Seasonal Calendar (Njahi, Mweri, Mohea) & Astronomy",
+      translation: "7-Day Relative Sequence (pp. 44, 114, 170, 191–192): Iyo ('day before yesterday') → Ira ('yesterday') → Reu / Omothi / Muthenya uyu / Otuko uyu ('to-day') → Rochio ('to-morrow') → Oke ('day after to-morrow') → Matukwatatu ('two days after to-morrow') → Matukwana ('three days after to-morrow') • Daily Solar Divisions & Meals: Ngwaraini / Rochiini ('dawn/sunrise/morning'; Merori 'sun-gleams at dawn', pp. 74, 142, 164; Iro chia rochiini 'breakfast', p. 26) → Miaraho ('forenoon/noon', pp. 69, 111, 119; Irio chia muthenya 'dinner', p. 48) → Miarahoko ('afternoon', p. 12) → Waiini / Kothoa ('evening/sunset', pp. 59, 164; Katheri ka waiini 'twilight/dusk', pp. 52, 175; Irio chia waiini 'supper', p. 164) → Otuku / Otuku katakati ('night / midnight', p. 111) • Rainy & Crop Seasons (pp. 76, 142, 154, 188, 191): Kathano ('greater rainy season / winter', Mwaka wa heho) & Mwaka wa kehu ('lesser rainy season'); 3-crop seasonal year cycle Mwaka wa Njahi, Mweri, Mohea ('last year: Mwaka wa njahi or mweri as the case may be'); Mwaka wa kohona ('year of grace') • Directions & Astronomy: Itherero / Ithereru ('East / South / Coast', pp. 34, 54, 160), Naruguru / Gothoa ('West', p. 186), Kima kyathinwa ('eclipse of moon', p. 54), Gechigo kya njata (I-) ('constellation/cluster of stars', pp. 34, 38), Njata ya kimure ('meteor', p. 111), Nyata ya rochiini ('Lucifer/morning star', p. 104), Mukunga wa mbura ('rainbow', pp. 25, 142)",
+      pronunciation: "i-yo i-ra re-u ro-chi-o o-ke ma-tu-kwa-ta-tu ma-tu-kwa-na / ka-tha-no / mwa-ka wa nja-hi mwe-ri mo-he-a",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book pp. 12, 25–76, 104–192)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "emergency",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, Book pp. 9–190): Customary Law (Chira & Machiraini), Murder Composition (Magambo), Ordeal Cup (Konyua muma), Inheritance (Oramati), Peacemaking (Mutaithorani) & Ethnomedicine (Mundu mugo, Muthaiga, Murututu)",
+      translation: "Governance & Courts: Muthamaki (A-) / Muathi (A-) / Munene (A-) ('administrator, chief, king, governor, magistrate'; Othamaki / Onene / Wathi 'chieftainship/kingdom'); Muramati (A-) ('heir/inheritor'; Oramati 'birthright/heritage/inheritance'; Koramata 'to inherit', Koruta oramati 'to disinherit', pp. 23, 49, 81–82, 90, 138); Chira (Ma-) ('adjudication, council, decision, discussion, law'; Machiraini 'parliament'; Kochira 'to adjudge/decide/try'; Muchiri [A-] 'judge, arbitrator, orator, linguist, referee, umpire'; Muchirithia [A-] 'plaintiff/prosecutor'; Muchirithio [A-] 'defendant'); Magambo / Mugambo (Mi-) ('composition / fine for murder', pp. 36, 66; Irehi [Ma-] 'fine', Kotua chira 'to fine'); Muma ('ordeal cup'; Konyua muma 'to take an oath / take ordeal cup', pp. 120, 124); Mutaithorani (A-) / Mugwithania (A-) / Mukiri (A-) ('advocate, comforter, intercessor, mediator, peacemaker'; Kotaithorana 'to make peace / adjust a quarrel / separate combatants'); Mukori (Akori) / Mukai (A-) ('redeemer/ransomer'; Okori 'ransom/redemption') • Religion & Ethnomedicine: Ngai (Makai) ('God', p. 75; Kerima kya Ngai / Kerima kya mwaki 'volcano', p. 182; Kegongaini [I-] 'altar', p. 14; Igongona [Magongona] 'sacrifice/offering/victim'); Rehiya (Mehiya), Oru (Mauru), Mugiru (Migiri) & Thahu ('sin / ceremonial taboo', p. 157); Nyoni njega ('good omen') vs. Nyoni njoru ('bad omen', pp. 88, 112, 123); Mundu mugo (A-) / Murigiti (A-) ('doctor/medicine-man'; Uino wa mundu mugo 'incantation', p. 88; Kahiyu ka mundu mugo 'lancet', p. 97) vs. Murogi (A-) / Murogi muka ('wizard/witch'; Orogi 'witchcraft/venom'; Gethito [I-] 'charm'); Muthaiga (Mi-) ('medicine'; Muthaiga wa ndaa / hinguranda 'emetic', p. 56; Muthaiga wa koharithia 'purgative', p. 139; Murututu 'sulphate of copper / vitriol', pp. 164, 181); Mutung'o (Mitung'o) ('small-pox', p. 159), Wonji ('leprosy', p. 100), Murimo wa ngoma ('fit', p. 67), Koharuo / Koharua thakami ('diarrhœa / dysentery', pp. 47, 53)",
+      pronunciation: "mu-tha-ma-ki / mu-ra-ma-ti o-ra-ma-ti / chi-ra mu-chi-ri / ma-ga-mbo / ko-nyu-a mu-ma / mu-ta-i-tho-ra-ni / mu-ndu mu-go / mu-tha-i-ga / mu-ru-tu-tu",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book pp. 9–190)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "home",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, Book pp. 12–192): Homestead Architecture (Thingira, Itara, Ikombi, Kyugo, Mungu, Kegandaini), Ornaments, Tools, Weapons, Flora/Fauna & Ethnonyms",
+      translation: "Architecture & Granaries: Muchiyi (Michiyi) / Keturi (Ma-/I-) ('village, town, abode, camp'), Nyumba (s. & p.) ('house'), Thingira (Ma-) ('house/hut for males', pp. 84–85), Kethaku ('veranda', p. 180), Itara (Ma-) & Ikombi (Ma-) ('garner, granary, loft, pantry, food store, warehouse', pp. 67, 72, 103, 128, 162, 183), Kyugo (Chiugo) ('cattle-pen / sheep-fold', pp. 31, 56, 68), Mungu (Miungu) ('refuge pit of men', p. 146), Kegandaini ('furnace', p. 71) • Ornaments & Dress: Regwiko (Megwiko) ('clothes/garment'), Dareto ('ankle ornament', p. 16), Njingirri ('small anklet bell', p. 21), Kechangu (I-) / Kachangu (To-) / Gechi (I-) ('armlet/bracelet', pp. 17, 26), Muti wa goto ('ear-block', p. 53), Ronyori (Nyori) ('ear-stick', pp. 53, 162), Ndebi ('ear-rings', p. 53), Lokwaro (Ngwaro) ('goat-skin ring', p. 151), Mukathi wa mutumi / mweru & Kehahi / Mukunung'o / Mukonunga ('gold-lustre & white beads, string of beads, necklace', pp. 20, 117, 163), Ira ('chalk', p. 31) • Utensils & Weapons: Kithigethi (I-) ('firesticks / boring instrument', pp. 25, 66), Kewochi kya ngorono (Iwochi) / Katete ('butter churn', p. 33), Mwatu (Mi-) ('beehive / honey barrel', pp. 19, 21), Ndirri ('corn mortar', p. 39), Ithanwa (Ma-) / Thiya ('adze, axe, bill-hook, hoe, spade', pp. 12, 18, 22, 83, 160), Itimu (Ma-) ('spear/lance/javelin'), Rohiyo (Hiyo) ('sword'; handle Muti wa rohiyo; sheath Njora; sword-belt Ndoho, p. 165), Kaiyu (To-) ('dagger', p. 42), Uta & Thiaka (Ma-) ('bow & quiver', pp. 25, 141), Ngo ('shield', p. 156), Njoguma ('club/knobkerry', pp. 34, 96) • Flora, Fauna & Peoples: Mutamaiuyu (Mi-) & Muthethe (Mi-) ('ebony', p. 54), Murangi (Mi-) ('bamboo', p. 19), Mukindu (Mi-) ('date palm', p. 43; Ikindu 'wild banana', p. 19), Mutari / Matari / Ndari ('blackberry tree, leaves, fruit', p. 23), Nyamuathi / Ndamathia ('python/serpent', pp. 140, 155), Ngima & Nguyo ('black & Colobus monkey', p. 114), Olaiya ('Europe', p. 59), Muthungu (A-) ('European'; Muthungu wa Amerika 'Yankee', pp. 59, 191), Mudachi (A-) ('German', p. 73), Muarabu (A-) ('Arab', p. 17), Muhindi (A-) ('Indian', p. 88), Muyahudi (A-) ('Jew', p. 94), Unguja ('Zanzibar', p. 192), Kithwaeri ('Coast language / Swahili', p. 34)",
+      pronunciation: "thi-ngi-ra / i-ta-ra i-ko-mbi / mu-ngu / ke-ga-nda-i-ni / da-re-to / nji-ngi-rri / lo-kwa-ro / nda-ma-thi-a",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book pp. 12–192)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Rev. A. W. McGregor (1904, Book pp. 7–172 / PDF pp. 12–177): Complete Reconciled Table of All 3 Original Printing Gaps, All 9 Printer's Errata & All 30 Outer-Margin Reconstructed Pages",
+      translation: "3 Original Alphabetical Composition Gaps in the 1904 Printing: (1) Book p. 17 (PDF p. 22): jumps from 'Arms, n. (weapons) | Indu chia ita.' to 'Astonishment, n. | Kimako.'; (2) Book p. 45 (PDF p. 50): jumps from 'Defiance, n. | Kuenda ita or mbara. Uhoro wa kuenda ita.' to 'Deluge, to | Kuikira mai mengi.'; (3) Book p. 153 (PDF p. 158): under S, begins directly at 'Scare, to | Kuitigiria. (drive away) Koteng'eria.' after 'Ruthless, adj. | -tari ohoreri.' • 9 Original Printer's Errata Reconciled: (1) Book p. 18 'Aze, n. | Ithanwa (Ma-).' = Axe, n.; (2) Book p. 29 'Call up, to (call to mind) | Koririkana. Nonenya.' = Komenya (for Nonenya); (3) Book p. 41 under Crop, n. (Magethi.), ditto line '„ n. | Muthalaba (Mi-). Keigereri (I-).' = Cross, n. (preceding 'Cross, to be | Korakara'); (4) Book p. 66 'First, adj. | -a mbere. -kuru. -a kiamkereria.' = -a kiambereria; (5) Book p. 83 under Honest, ditto line '„ n. | Onene. Ogochi. Ngumo. Okumio. Otei.' = Honour, n. (preceding 'Honour, to | Kotea. Kogocha.' on p. 84); (6) Book p. 85 'Hush, n. | Makoro.' = Husk, n. (preceding 'Husk, to | Kuoa'); (7) Book p. 116 'My, poss. pron. | -awka' = -akwa; (8) Book p. 168 'Thirteenth, adj. | -ai kumi na ithathatu' = -a ikumi na ithatu (ithathatu = 6); (9) Book p. 171 'Topple, to | (new) Kogoa. (overthrow) Kogoithia.' = (neu.) Kogoa • Reconciled Unbracketed Forms for All 30 Margin-Cropped Pages (Book pp. 7, 10, 12, 14, 16, 18, 30, 32, 34, 35, 40, 52, 54, 58, 60, 68, 76, 78, 88, 90, 98, 106, 108, 140, 146, 156, 158, 161, 170, 172): Adapt (Kothondeka, Kuigana), Add to (Kuongerera), Address (Konegena na), Adequate (-a kuigana), Adhesion (Okwatani), Adjoin/Adjoining (hakuhi), Adjust (Kuigana, Kotaithorana), Administer/Administrator (Kuikaria, Muikaria, Muthondekiri), Admit (Kuitikia, Kombuka), Adze (Thiya), Afar (Hariya), Affable (-a kuenda andu), Aforetime (Matuku ma tene), Afraid (Kuitigira), Alienate (Koheeria ndugu), Alike (-a kuiganana), Alleviate (Kohoreria), Allowance (Igero [Ma-]), Alms (Igongona [Ma-]), Captive (Muohuo [A-]), Carcass (Nyama ya kokua), Card (Kohura Getanwa), Care (Kuigoleka), Champion (Muitani [A-]), Change (Kogorania, Kothira, Kogaruruka), Character (Muikarire [Mi-]), Charge (Kochirithia), Circumspect (-goleku), Clasp (Kokwata), Class (Gechigo [I-]), Collect/Collection/Collective/Colour (Kochokaniriria, Machokaniririo, -othihamwe, Muhianano), Creep/Creeper (Kotambatamba, Kotonya kahora, Kohiuhiriria), Dwelling (Nyumba), Either (Kana), Eject (Kuing'gata), Eradicate (Komunya), Erect (Korogamia), Eventually (Mothia), Ever (Matuku mothi), Evident (-a tiitheru), Evil (Rehiya [Me-]), Fly/flee (Koteng'era), Grateful (-a kogaithia), Grave (Irima [Ma-]), Gravel (Mahiga manyinyi), Gush (Kuuma na hinya), Gust (Rohuho rwa hinya [Huho]), Guzzle (Koria muno), Habit (Muthiire), Incite–Incorruptible (p. 88), Indifferent–Indurate (p. 90), Languid/Languor/Lap (Kohoha, Ohenju, Kochuna), Make/Maker (Komba, Korutithia kwa hinya, Muthondeki), Map (Muhianano wa porori [Mi-]), Margin (Rigi, Muhaka [Mi-]), Refuse/Refute/Regain/Regal/Regale (Kote, Kogarura uhoro, Kokwata ringi, -a munene, Kokenia), Shift (Kothama), Sinful/Sink/Sinner/Sip (-ehia, Kotobokia, Muru [A-], Konyua kahora), Specimen–Splash (p. 161), Thrash (Kohura mbembi), Thread (Rorigi [Ndigi], Ndathi), Title (Onene)",
+      pronunciation: "mu-hia-na-no wa po-ro-ri / ko-cha-ma-cha-ma ko-nyu-a ka-ho-ra / kua-ria kue-ra ko-ne-ge-na na kui-ta / mu-tha-la-ba / ma-ko-ro",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Editorial & Philological Audit across Book pp. 7–172 / PDF pp. 12–177)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "home",
+    entry: {
+      english: "Axe (printed: Aze, McGregor 1904, Book p. 18 / PDF p. 23)",
+      translation: "Ithanwa (Ma-).",
+      pronunciation: "i-tha-nwa / ma-tha-nwa",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 18 / PDF p. 23)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Cross, n. (printed as ditto under Crop, n., McGregor 1904, Book p. 41 / PDF p. 46)",
+      translation: "Muthalaba (Mi-). Keigereri (I-).",
+      pronunciation: "mu-tha-la-ba / ke-i-ge-re-ri",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 41 / PDF p. 46)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "culture-history",
+    entry: {
+      english: "Honour, n. (printed as ditto under Honest, McGregor 1904, Book p. 83 / PDF p. 88)",
+      translation: "Onene. Ogochi. Ngumo. Okumio. Otei.",
+      pronunciation: "o-ne-ne / o-go-chi / ngu-mo / o-ku-mi-o / o-te-i",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 83 / PDF p. 88)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "food",
+    entry: {
+      english: "Husk, n. (printed: Hush, n., preceding Husk, to | Kuoa, McGregor 1904, Book p. 85 / PDF p. 90)",
+      translation: "Makoro.",
+      pronunciation: "ma-ko-ro",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 85 / PDF p. 90)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "travel",
+    entry: {
+      english: "Map, n. (McGregor 1904, Book p. 108 / PDF p. 113)",
+      translation: "Muhianano wa porori (Mi-).",
+      pronunciation: "mu-hia-na-no wa po-ro-ri",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 108 / PDF p. 113)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "verbs",
+    entry: {
+      english: "Sip, to (McGregor 1904, Book p. 158 / PDF p. 163)",
+      translation: "Kochamachama. Konyua kahora.",
+      pronunciation: "ko-cha-ma-cha-ma / ko-nyu-a ka-ho-ra",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 158 / PDF p. 163)",
+      audioFile: null,
+    },
+  },
+  {
+    catId: "verbs",
+    entry: {
+      english: "Address, to (McGregor 1904, Book p. 10 / PDF p. 15)",
+      translation: "Kuaria. Kuera. Konegena na. Kuita.",
+      pronunciation: "kua-ria / kue-ra / ko-ne-ge-na na / kui-ta",
+      context: "Rev. A. W. McGregor, 'English-Kikuyu Vocabulary' (SPCK London, 1904, Book p. 10 / PDF p. 15)",
       audioFile: null,
     },
   }

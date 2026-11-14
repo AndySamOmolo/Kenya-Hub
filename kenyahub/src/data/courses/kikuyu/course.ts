@@ -4203,3 +4203,67 @@ KIKUYU_UNITS[KIKUYU_UNITS.length - 1].skills.push({
     }
   ]
 });
+
+if (!KIKUYU_CONFIG.sources.includes("mcgregor-kikuyu-vocabulary-1904")) {
+  KIKUYU_CONFIG.sources.push("mcgregor-kikuyu-vocabulary-1904");
+}
+
+const _mcgregor1904Unit = KIKUYU_UNITS.find(
+  (u) => u.id === "kikuyu-unit-mcgregor-1904-vocabulary"
+);
+if (_mcgregor1904Unit) {
+  _mcgregor1904Unit.skills.push({
+    "id": "kikuyu-mcgregor-1904-provenance-grammar-editorial-14-3",
+    "title": "Stanford Provenance (PDF pp. 1–201), 10 Noun Classes, Pronouns/Enclitics & 1904 Printing Audit",
+    "icon": "BookOpen",
+    "description": "Examine the physical provenance of the Stanford University Libraries copy (PL 8379.4 .M3 C.1), the 10 noun class prefix pairings, pronominal/interrogative enclitics, and the 3 printing gaps & 9 errata of the 1904 SPCK edition.",
+    "tips": "In the original 1904 printing by Richard Clay & Sons, Limited (London and Bungay), three alphabetical transitions jump across omitted galleys (p. 17 Arms → Astonishment; p. 45 Defiance → Deluge; p. 153 Ruthless → Scare) and two ditto marks („) shift headwords under Crop (= Cross, p. 41) and Honest (= Honour, p. 83).",
+    "culturalNote": "Compiled by Rev. A. W. McGregor at Fort Smith (native name Kabeti) in 1901–1902 (Preface signed London, May 1903), this 192-page volume is the first printed vocabulary of the Kikuyu language, documenting the speech of 200,000–300,000 Agĩkũyũ from the Uganda Railway (miles 326–360) to Mount Kenia (Kirinyaga / Kilinyatha / Kireira, 4,000–18,000 ft).",
+    "words": [
+      {
+        "target": "Fort Smith (Kabeti, 1901–1902) • Uganda Railway (miles 326–360) • Kirinyaga (p. iv) / Kilinyatha. Kireira (p. 95) • Stanford Copy PL 8379.4 .M3 C.1 (Dr. & Mrs. Robert A. Rennie bookplate, barcode 3 6105 037 215 303, Richard Clay & Sons, p. 192)",
+        "source": "Fieldwork Site, Geographic Bounds, Three Native Names of Mount Kenia & Stanford University Libraries Provenance (PDF pp. 1–9, 100, 197–201)",
+        "pronunciation": "ka-be-ti / ki-ri-nya-ga / ki-li-nya-tha / ki-rei-ra",
+        "hint": "McGregor (1904, PDF pp. 1–9, 100, 197–201 / Book pp. i–iv, 95, 192)"
+      },
+      {
+        "target": "Nie / Nie mweni / Nie nyiki • We / We mweni • Oria / We wiki • Ithui / Ithui eni / Ithui wiki • Inyui / Inyui eni • Aria / Iria / Maria / Haria • Kwangu, Kwaku, Kwake, Kwitu, Kwanyu, Kwao",
+        "source": "Personal, Reflexive & Exclusive ('Only we') Pronouns and Possessive Home Locatives (McGregor 1904, pp. 14, 80–85, 116, 124, 167–192)",
+        "pronunciation": "ni-e mwe-ni / i-thu-i e-ni / i-thu-i wi-ki / kwa-ngu kwa-ku kwa-ke kwi-tu kwa-nyu kwa-o",
+        "hint": "McGregor (1904, Book pp. 14, 83, 124, 167–192)"
+      },
+      {
+        "target": "No? Niweo? • Nike? Niatea? • Akuugatea? (-atea) • Kotariatea? • -riko? • Niri? • Meha? (-ha / -ka) • -ko? • Goro uriko?",
+        "source": "Who? Who are you? • What? What is the matter? • How does he speak? • What kind of weather? • Which/What kind? • When? • Where are they? • Whence/Whither? • What price?",
+        "pronunciation": "no ni-we-o / ni-ke ni-a-te-a / a-ku-u-ga-te-a / ko-ta-ri-a-te-a / me-ha / go-ro u-ri-ko",
+        "hint": "McGregor (1904, Book pp. 84, 95, 109, 185–190)"
+      },
+      {
+        "target": "Aze [Axe] = Ithanwa (Ma-) (p. 18) • Crop [Cross], n. = Muthalaba (Mi-). Keigereri (I-). (p. 41) • Honest [Honour], n. = Onene. Ogochi. Ngumo. Okumio. Otei. (p. 83) • Hush [Husk], n. = Makoro. (p. 85) • My = -awka [-akwa] (p. 116) • Topple, to = (new [neu.]) Kogoa (p. 171)",
+        "source": "Key Original 1904 Printer's Errata & Ditto-Mark Shifts Audited Line-by-Line Across McGregor (1904)",
+        "pronunciation": "i-tha-nwa / mu-tha-la-ba ke-i-ge-re-ri / o-ne-ne o-go-chi ngu-mo o-ku-mi-o o-te-i / ma-ko-ro / a-kwa / ko-go-a",
+        "hint": "McGregor (1904, Book pp. 18, 29, 41, 66, 83, 85, 116, 168, 171)"
+      }
+    ],
+    "sentences": [
+      {
+        "target": "Niweo? — Nie nyiki (Nie mweni). — Meha? — Goro uriko?",
+        "source": "Who are you? — I alone (I myself). — Where are they? — What price (worth)? (McGregor 1904, Book pp. 14, 186–190)"
+      }
+    ],
+    "authoredExercises": [
+      {
+        "type": "multiple_choice",
+        "prompt": "In Rev. A. W. McGregor's 'English-Kikuyu Vocabulary' (1904, Preface pp. iii–iv & Book p. 95), what three indigenous Gĩkũyũ names are recorded for Mount Kenia, and where was the vocabulary collected in 1901–1902?",
+        "correctAnswer": "'Kirinyaga' (Preface p. iv) and 'Kilinyatha. Kireira.' (under 'Kenia, Mount', p. 95), collected at Fort Smith (native name 'Kabeti') in 1901–1902",
+        "options": [
+          "'Kirinyaga' (Preface p. iv) and 'Kilinyatha. Kireira.' (under 'Kenia, Mount', p. 95), collected at Fort Smith (native name 'Kabeti') in 1901–1902",
+          "'Donyo Egere' and 'Ol-doinyo Oibor', collected in Mombasa in 1887",
+          "'Kibo' and 'Kimawenzi', collected in Taveta in 1894",
+          "'Setima' and 'Donyo Sabuk', collected in Machakos in 1910"
+        ],
+        "hint": "See McGregor (1904, Preface pp. iii–iv & p. 95 'Kenia, Mount, n. | Kilinyatha. Kireira.')"
+      }
+    ]
+  });
+}

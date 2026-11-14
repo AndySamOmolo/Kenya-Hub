@@ -994,3 +994,42 @@ export const PAYNE_PACCHIAROTTI_BOSIRE_2016_LEXICAL_HIGHLIGHTS = [
     "page": 397
   }
 ] as const;
+
+export const MCGREGOR_1904_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Fort Smith (Kabeti, 1901–1902) • Uganda Railway (miles 326–360, Nairobi & Kikuyu stations) • Mount Kenia = Kirinyaga (p. iv) / Kilinyatha. Kireira (p. 95; 4,000–18,000 ft., inhabited 4,000–7,000 ft.) • Population 200,000–300,000 • Stanford University Libraries Copy PL 8379.4 .M3 C.1 (Dr. & Mrs. Robert A. Rennie bookplate, barcode 3 6105 037 215 303, Richard Clay & Sons, Limited, London and Bungay, p. 192)",
+    "translation": "Front Matter, Preface (London, May 1903, pp. iii–iv), Provenance & Colophon (PDF pp. 1–9, 197–201) in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 3
+  },
+  {
+    "word": "Th for S/Z (Muthungu, Muthamaki, Muthuri, -theru, kothie, Thetani, Mathihi/Krithto, Mutha, Kithwaeri) • L/R interchangeable (kolekia/korekia, lochuthi, lokwaro) • Velar nasal ng' (koteng'era = koteng-era, not koten-gera) vs. prenasalized hard ng'g (kuing'gata, ketung'guru) • Observe A (Infinitive Ko-/Ku-/Kw-) & Observe B: (s. & p.), Mwetereri (Etereri), Gechunji (I-) → Ichunji",
+    "translation": "Orthographic Note (R.G.S. System), 9 Abbreviations & Noun Class Plural Bracket Notation (Book pp. 5–6, PDF pp. 10–11) in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 5
+  },
+  {
+    "word": "Baba / Thoguo / Ithi / Maithi ('my / your / his-her / our-your-their father', p. 63) • Maito / Nyukwa / Nyina / Manyina ('my / your / his-her / our-your-their mother', p. 114) • Mwana or Muru wa maito ('brother', p. 27) & Mwari wa maito (pl. Ari, 'sister', p. 158) • Muthoni (A-), Maramu (A-), Tata, Guka (Maguka) & Chocho (Machocho) • Rorachio (Marorachio, 'bride-wealth gift to bride's father', p. 73) & Wathiomo ('gift of a goat', pp. 73, 122, 137)",
+    "translation": "Suppletive Kinship System, Life Stages (Kakengi → Kahee / Karego → Kirego → Mwanake / Muiretu → Muhiki / Mugurani → Muthuri / Keheti) & Marriage Lexicon in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 63
+  },
+  {
+    "word": "Iyo ('day before yesterday') → Ira ('yesterday') → Reu / Omothi ('to-day') → Rochio ('to-morrow') → Oke ('day after to-morrow') → Matukwatatu ('2 days after to-morrow') → Matukwana ('3 days after to-morrow') • Ngwaraini / Rochiini (Merori) → Miaraho → Miarahoko → Waiini / Kothoa (Katheri ka waiini) → Otuku katakati • Kathano ('greater rains') & Mwaka wa kehu ('lesser rains') • Mwaka wa Njahi, Mweri, Mohea ('3-crop seasonal year cycle', pp. 154, 191)",
+    "translation": "7-Day Relative Time Sequence, Daily Solar Divisions, Rainy Seasons & 3-Crop Agricultural Year Reckoning in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 154
+  },
+  {
+    "word": "Chira (Ma-) & Machiraini ('council/law/parliament') • Muchiri (A-), Muchirithia (A-) & Muchirithio (A-) ('judge/orator, plaintiff, defendant') • Magambo / Mugambo (Mi-) ('composition/fine for murder', pp. 36, 66) & Irehi (Ma-) ('fine') • Konyua muma ('to take oath / ordeal cup', pp. 120, 124) • Mutaithorani (A-) / Kotaithorana ('peacemaker / to make peace') • Muramati / Oramati ('heir / birthright')",
+    "translation": "Customary Law, Judicial Procedure, Murder Composition, Ordeal Oaths, Peacemaking & Inheritance in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 36
+  },
+  {
+    "word": "Ngai (Makai, p. 75; Kerima kya Ngai 'volcano', p. 182) • Kegongaini (I-) ('altar') & Igongona (Magongona) ('sacrifice/offering') • Rehiya, Oru, Mugiru (Migiri) & Thahu ('sin/taboo', p. 157) • Nyoni njega / Nyoni njoru ('good / bad omen') • Mundu mugo (A-) vs. Murogi (A-) • Muthaiga wa ndaa / hinguranda ('emetic') & Muthaiga wa koharithia ('purgative') • Thingira (Ma-), Itara (Ma-), Ikombi (Ma-), Kyugo (Chiugo), Mungu (Miungu, 'refuge pit of men', p. 146) & Kegandaini ('furnace', p. 71)",
+    "translation": "Religion, Sacrifice, Ceremonial Taboo (Thahu/Mugiru), Omens, Ethnomedicine, Homestead Architecture & Metallurgy in Rev. A. W. McGregor (1904)",
+    "language": "kikuyu",
+    "page": 157
+  }
+] as const;

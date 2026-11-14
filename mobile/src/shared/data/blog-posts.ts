@@ -1633,3 +1633,39 @@ for (const _slug of [
     }
   }
 }
+
+export const MCGREGOR_1904_BLOG_SUPPLEMENT = {
+  "slug": "mcgregor-1904-english-kikuyu-vocabulary-cms-spck-fort-smith-kabeti-complete-line-by-line-edition",
+  "title": "Rev. A. W. McGregor (1904): Complete Line-by-Line Audit of \"English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa\" (SPCK London, Fort Smith / Kabeti 1901–1902, Book pp. [i]–iv, 5–192 / PDF pp. 1–201)",
+  "highlights": [
+    "Stanford University Libraries Provenance, Title Page, Colophon & Preface (PDF pp. 1–9, 197–201; Book pp. [i]–iv, 192): Digitized from the Cecil H. Green Library / Stanford University Libraries volume (call number PL 8379.4 .M3 C.1, barcode 3 6105 037 215 303, flyleaf mark A45- / U7, bookplate 'In tribute to Dr. & Mrs. Robert A. Rennie from a gift by Nationwide Foundation / Stanford University Memorial Fund', circulation stamps SEP 17 1990, MAR 21 1991, MAY 23 19[91], JUN 15 2005, DEC 05 2005; printed by Richard Clay & Sons, Limited, London and Bungay, p. 192). In the Preface (signed 'A. W. MCGREGOR. London, May 1903', pp. iii–iv), McGregor notes that this is the first printed vocabulary of the Kikuyu language, collected in 1901–1902 at Fort Smith (native name, Kabeti), bounded on the SW by the Uganda Railway from mile 326 to mile 360 (round the Nairobi and Kikuyu stations) and stretching NE to Mount Kenia (native name Kirinyaga on p. iv; Kilinyatha. Kireira on p. 95), across altitudes of 4,000–18,000 feet (inhabited zone 4,000–7,000 feet) and an estimated population of 200,000 to 300,000.",
+    "Orthographic Note (R.G.S. System), 9 Abbreviations, Observe A–B, 10 Noun Classes, Pronouns, Suppletive Kinship & 7-Day/Seasonal Calendar (PDF pp. 10–197; Book pp. 5–192): Documents the Royal Geographical Society (R.G.S.) system where in Kabeti S and Z are replaced by Th (Muthungu, Muthamaki, Muthuri, -theru, kothie, Thetani, Mathihi/Krithto, Mutha, Kithwaeri), L and R are interchangeable, velar nasal ng' with a point after ng (koteng'era = koteng-era, not koten-gera) contrasts with prenasalized hard g written ng'g (kuing'gata, ketung'guru), verbs are cited in the Ko-/Ku-/Kw- infinitive (Observe A), and plurals use (s. & p.), full bracketed forms like Mwetereri (Etereri), or prefix replacement like Gechunji (I-) → Ichunji across 10 noun classes (Observe B). Synthesizes Kabeti personal/reflexive pronouns (Nie/Nie mweni/Nie nyiki, We/We mweni, Oria/We wiki, Ithui/Ithui eni/Ithui wiki, Inyui/Inyui eni, Aria/Iria/Maria/Haria), object infixes (-nd-/-nj-/-ng-, -mu-/-mo-/-mw-, -tu-/-to-/-tw-, -ma-/-chia-), home locatives (Kwangu, Kwaku, Kwake, Kwitu, Kwanyu, Kwao & -ini), interrogative enclitics (-atea in Akuugatea & Kotariatea?, -ha/-ka in Meha?, -ko, -riko), suppletive kinship (Baba/Thoguo/Ithi pl. Maithi; Maito/Nyukwa/Nyina pl. Manyina; Rorachio & Wathiomo), the 7-day relative sequence (Iyo → Ira → Reu/Omothi → Rochio → Oke → Matukwatatu → Matukwana), and the rainy/crop seasons (Kathano, Mwaka wa kehu, and Mwaka wa Njahi, Mweri, Mohea).",
+    "Customary Law (Chira & Muma), Religion (Ngai, Igongona & Thahu), Ethnomedicine (Mundu Mugo), Material Culture & Complete Editorial Audit of 1904 Printing Anomalies (Book pp. 6–192): Preserves the lexicon of Kikuyu courts (Chira, Machiraini, Muchiri, Muchirithia, Muchirithio), murder composition (Magambo / Mugambo, pp. 36, 66; Irehi 'fine'), the ordeal cup (Konyua muma, pp. 120, 124), inheritance (Muramati / Oramati), peacemaking (Mutaithorani / Mugwithania / Kotaithorana), religion & ethnomedicine (Ngai [Makai], Kerima kya Ngai 'volcano', Kegongaini 'altar', Igongona 'sacrifice', Thahu/Mugiru/Rehiya 'taboo/sin', Nyoni njega/njoru 'good/bad omens', Mundu mugo vs. Murogi, Muthaiga wa ndaa/hinguranda 'emetic' & koharithia 'purgative', Murututu 'copper sulphate', Mutung'o 'smallpox', Wonji 'leprosy'), architecture (Thingira, Itara, Ikombi, Kyugo, Mungu 'refuge pit of men', Kegandaini 'furnace'), plus the complete philological audit of all 3 original alphabetical gaps (p. 17 Arms → Astonishment; p. 45 Defiance → Deluge; p. 153 Ruthless → Scare), 9 printer's errata (p. 18 Aze for Axe; p. 29 Nonenya for Komenya; p. 41 Crop ditto for Cross, n.; p. 66 kiamkereria for kiambereria; p. 83 Honest ditto for Honour, n.; p. 85 Hush, n. for Husk, n.; p. 116 -awka for -akwa; p. 168 Thirteenth -ai kumi na ithathatu; p. 171 Topple (new) for (neu.)), and 30 outer-margin bracket-reconstructed pages."
+  ]
+} as const;
+
+for (const _slug of [
+  "agikuyu-precolonial-life-routledge-1910-hemery-1903-mcgregor-1904",
+  "kikuyu-language-proverbs-covenants-routledge-1910-hobley-1922",
+]) {
+  const _post = STATIC_BLOG_POSTS.find((p) => p.slug === _slug);
+  if (_post && _post.sources) {
+    const _existingMcg = _post.sources.find(
+      (s) => s.sourceId === "mcgregor-kikuyu-vocabulary-1904"
+    );
+    const _fullNote =
+      "Complete line-by-line audit of all 201 PDF pages / Book pp. [i]–iv, 5–192 (Stanford University Libraries copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate, Richard Clay & Sons colophon): Preface (Fort Smith / Kabeti 1901–1902, Uganda Railway miles 326–360, Mount Kenia = Kirinyaga / Kilinyatha / Kireira [4,000–18,000 ft], 200,000–300,000 population), R.G.S. Note (Th for S/Z, L/R interchangeability, ng' vs. ng'g, 9 Abbreviations, Observe A–B across 10 noun classes), suppletive kinship, 7-day relative time sequence, agricultural seasons (Kathano, Kehu, Njahi, Mweri, Mohea), customary law (Chira, Magambo, Konyua muma, Oramati), and all 3 printing gaps, 9 printer's errata & 30 edge-reconstructed pages.";
+    if (_existingMcg) {
+      _existingMcg.title =
+        "Rev. A. W. McGregor — English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa (SPCK London, 1904, pp. [i]–iv, 5–192 [PDF pp. 1–201])";
+      _existingMcg.note = _fullNote;
+    } else {
+      _post.sources.push({
+        sourceId: "mcgregor-kikuyu-vocabulary-1904",
+        title:
+          "Rev. A. W. McGregor — English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa (SPCK London, 1904, pp. [i]–iv, 5–192 [PDF pp. 1–201])",
+        note: _fullNote,
+      });
+    }
+  }
+}

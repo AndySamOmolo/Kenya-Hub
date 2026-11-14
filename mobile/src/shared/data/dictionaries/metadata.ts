@@ -65,3 +65,4 @@ export { NISHIGUCHI_2004_LEXICAL_HIGHLIGHTS } from "./lexical-highlights";
 export { BLAZEK_2011_LEXICAL_HIGHLIGHTS } from "./lexical-highlights";
 export { HOHNEL_1894_VOL1_LEXICAL_HIGHLIGHTS } from "./lexical-highlights";
 export { PAYNE_PACCHIAROTTI_BOSIRE_2016_LEXICAL_HIGHLIGHTS } from "./lexical-highlights";
+export { MCGREGOR_1904_LEXICAL_HIGHLIGHTS } from "./lexical-highlights";

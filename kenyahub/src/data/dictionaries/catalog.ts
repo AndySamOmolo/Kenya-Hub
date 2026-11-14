@@ -2744,3 +2744,11 @@ if (_daasanachMeta) {
     }
   }
 }
+
+const _kikuyuMeta = ALL_DICT_METAS.find((m) => m.languageId === "kikuyu");
+if (_kikuyuMeta) {
+  _kikuyuMeta.dictionaryVersion = "3.4";
+  _kikuyuMeta.lastUpdated = "2026-11-14";
+  _kikuyuMeta.contributorNote =
+    'Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 "Discovery of Lakes Rudolf and Stefanie", Vol. I, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–375), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 "English-Kikuyu Hand-Book", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904 "Vocabularies of the Kamba and Kikuyu Languages of East Africa"), Rev. A. W. McGregor (1904 "English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa", C.M.S. / SPCK London, printed by Richard Clay & Sons, Limited, London and Bungay, Fort Smith / Kabeti 1901–1902, Preface dated London, May 1903, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate] — audited 100% line-by-line across all 7,094 Markdown lines, Front Matter & Stanford provenance, Preface on Fort Smith/Kabeti, Uganda Railway miles 326–360, Mount Kenia = Kirinyaga/Kilinyatha/Kireira [4,000–18,000 ft] & 200,000–300,000 population, R.G.S. Note on Th for S/Z, L/R interchangeability, ng\' vs. ng\'g, 9 Abbreviations, Observe A–B across 10 noun classes, suppletive kinship, 7-day relative time sequence, agricultural seasons Kathano, Kehu, Njahi, Mweri, Mohea, customary law Chira, Magambo, Konyua muma, Oramati, and all 3 printing gaps, 9 printer\'s errata & 30 edge-reconstructed pages), W. Scoresby & Katherine Routledge (1910 "With a Prehistoric People: The Akikúyu of British East Africa", Edward Arnold London, pp. i–xxxii, 1–392, Plates I–CXXXVI), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921).';
+}

@@ -133,3 +133,15 @@ if (_existingHohnelKikuyuProvIdx >= 0) {
   KIKUYU_PROVERBS[_existingHohnelKikuyuProvIdx].sourceCitation =
     "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) & Hon. Charles Dundas, JRAI Vol. 45 (1915)";
 }
+
+KIKUYU_PROVERBS.push({
+  "id": "kikuyu-mcgregor-1904-3",
+  "languageId": "kikuyu",
+  "languageName": "Kikuyu (Gĩkũyũ — Rev. A. W. McGregor, 1904 Fort Smith / Kabeti Vocabulary: Orthography, Religion & Material Culture)",
+  "indigenous": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) (p. 5) • Mwetereri (Etereri) & Gechunji (I-) → Ichunji (p. 6) • Ngai (Makai), Kegongaini (I-), Igongona (Magongona), Thahu / Mugiru (Migiri) & Nyoni njega / Nyoni njoru (pp. 14, 75, 88, 112, 122–123, 157) • Thingira (Ma-), Itara (Ma-), Ikombi (Ma-), Kyugo (Chiugo), Mungu (Miungu) & Kegandaini (pp. 31, 71–72, 84–85, 103, 146, 162, 183).",
+  "literalTranslation": "To abscond/run (pronounced koteng-era, not koten-gera) vs. to banish/conquer/drive away & ball/sphere (p. 5) • Servant (pl. Etereri) & Portion (pl. Ichunji, p. 6) • God, altar, sacrifice/offering, ceremonial taboo/sin, and good vs. bad omens • Man's hut (Thingira), granaries (Itara & Ikombi), livestock fold (Kyugo), refuge pit of men (Mungu), and smith's furnace (Kegandaini).",
+  "meaning": "Audited 100% line-by-line from Rev. A. W. McGregor's 'English-Kikuyu Vocabulary' (SPCK London, 1904, printed by Richard Clay & Sons, Limited, London and Bungay, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate]): documents the Royal Geographical Society (R.G.S.) orthography of Kabeti (Fort Smith) where Th replaces S and Z, L and R alternate, and ng' vs. ng'g distinguishes the pure velar nasal from prenasalized hard g, alongside the full ritual, medical, architectural, and metallurgical lexicon and all 9 original printer's errata.",
+  "englishEquivalent": "Precision in speech and reverence for sacred custom preserve the wisdom of the community.",
+  "theme": "wisdom",
+  "sourceCitation": "Rev. A. W. McGregor, English-Kikuyu Vocabulary (C.M.S. / SPCK London, 1904, Fort Smith / Kabeti 1901–1902, PDF pp. 1–201 / Book pp. [i]–iv, 5–192)"
+});

@@ -2080,3 +2080,54 @@ for (const _langKey of ["luhya", "swahili", "mijikenda", "somali", "maasai", "tu
   _bucket.push(_payne2016DiversitySource);
   SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
 }
+
+export {
+  MCGREGOR_1904_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register/Update mcgregor-kikuyu-vocabulary-1904 ("English Kikuyu Vocabulary Mcgregor 1904.md", SPCK London, 1904, pp. [i]–iv, 5–192 [PDF pp. 1–201]) in LANGUAGE_SOURCES & lookup maps
+const _mcgregor1904VocabularySource: LanguageSource = {
+  id: "mcgregor-kikuyu-vocabulary-1904",
+  title: "English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa (By A. W. McGregor of the Church Missionary Society, Society for Promoting Christian Knowledge, London: Northumberland Avenue, W.C., 1904; printed by Richard Clay & Sons, Limited, London and Bungay, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1])",
+  fileName: "English Kikuyu Vocabulary Mcgregor 1904.md",
+  processedPath: "language-sources/raw/English Kikuyu Vocabulary Mcgregor 1904.md",
+  languages: ["kikuyu", "swahili"],
+  published: "1904",
+  contribution:
+    "Complete 192-page (201-PDF-page, 7,094-line) A–Z English–Kikuyu Vocabulary (~3,250 entries) compiled by Rev. A. W. McGregor of the Church Missionary Society (London: Society for Promoting Christian Knowledge, Northumberland Avenue, W.C., printed by Richard Clay & Sons, Limited, London and Bungay, 1904; Preface pp. iii–iv dated London, May 1903 — Public Domain, digitized from Stanford University Libraries Cecil H. Green Library copy PL 8379.4 .M3 C.1, barcode 3 6105 037 215 303, flyleaf mark A45- / U7, bookplate 'In tribute to Dr. & Mrs. Robert A. Rennie from a gift by Nationwide Foundation / Stanford University Memorial Fund', stamped SEP 17 1990, MAR 21 1991, MAY 23 19[91], JUN 15 2005, DEC 05 2005): Preface (pp. iii–iv) documenting collection at Fort Smith (native name Kabeti) in 1901 and 1902, SW boundary along the Uganda Railway from mile 326 to mile 360 (round Nairobi & Kikuyu stations), territory stretching NE to Mount Kenia (native name Kirinyaga on p. iv; Kilinyatha. Kireira on p. 95), altitude 4,000–18,000 ft (inhabited 4,000–7,000 ft), and population 200,000–300,000; Orthographic Note (pp. 5–6) on the Royal Geographical Society (R.G.S.) system, absence of S and Z in Kabeti with Th always taking their places, interchangeability of L and R, pure velar nasal ng' with a point after ng (as koteng'era = koteng-era, not koten-gera; ng'ombe, ng'ondu, ng'aragu, ng'ania, kong'orota, kong'athia, king'ang'aini) vs. prenasalized hard g written ng'g (as kuing'gata, ketung'guru), 9 grammatical abbreviations (n., pron., adj., conj., prep., adv., int., pass., neu.), Observe A (infinitives in Ko-/Ku-/Kw-) & Observe B (invariable s. & p. vs. bracketed plural Mwetereri [Etereri] or prefix replacement Gechunji [I-] → Ichunji across 10 noun classes); and complete A–Z English–Kikuyu Vocabulary (pp. 6–192) from 'Abandon, to (Kolekia. Kotiga.)' to 'Zigzag, adj. (-a hokana.)', preserving Kabeti pronouns, object infixes (-nd-/-nj-/-ng-, -mu-/-mo-/-mw-, -tu-/-to-/-tw-, -ma-/-chia-), demonstratives, locatives (Kw- & -ini), interrogative enclitics (-atea, -ha/-ka, -ko, -riko), suppletive kinship (Baba/Thoguo/Ithi pl. Maithi; Maito/Nyukwa/Nyina pl. Manyina), life stages & marriage (Rorachio, Wathiomo), 7-day relative time sequence (Iyo → Ira → Reu/Omothi → Rochio → Oke → Matukwatatu → Matukwana), agricultural seasons (Kathano, Mwaka wa kehu, Mwaka wa Njahi, Mweri, Mohea), customary law (Chira, Muchiri, Muchirithia, Muchirithio, Magambo murder fine, Konyua muma ordeal cup, Muramati/Oramati inheritance, Mutaithorani/Kotaithorana peacemaking), religion & ethnomedicine (Ngai, Kegongaini, Igongona, Thahu/Mugiru/Rehiya, Nyoni njega/njoru, Mundu mugo vs. Murogi, Muthaiga wa ndaa/hinguranda emetic & koharithia purgative, Murututu copper sulphate), architecture (Thingira, Itara, Ikombi, Kyugo, Mungu refuge pit, Kegandaini furnace), and full editorial audit of all 3 original printing gaps (pp. 17, 45, 153), 9 printer's errata (Aze, Nonenya, Cross ditto, kiamkereria, Honour ditto, Hush/Husk, -awka, Thirteenth, Topple new/neu.), and 30 outer-margin bracket-reconstructed pages.",
+  appUses: [
+    "dictionary",
+    "comparative translator",
+    "course lessons",
+    "grammar lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "vocabulary",
+    "grammar",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 7,094 Markdown lines across PDF pp. 1–201 / Book pp. [i]–iv, 5–192) into kikuyu.json, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, catalog.ts, courses/kikuyu/grammar-reference.ts, courses/kikuyu/course.ts, courses/proverbs/kikuyu.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+const _existingMcgregor1904Idx = LANGUAGE_SOURCES.findIndex(
+  (s) => s.id === _mcgregor1904VocabularySource.id
+);
+if (_existingMcgregor1904Idx >= 0) {
+  LANGUAGE_SOURCES[_existingMcgregor1904Idx] = _mcgregor1904VocabularySource;
+} else {
+  LANGUAGE_SOURCES.push(_mcgregor1904VocabularySource);
+}
+SOURCES_BY_ID_MAP.set(_mcgregor1904VocabularySource.id, _mcgregor1904VocabularySource);
+SOURCES_BY_ID_MAP.set("mcgregor-kikuyu-1904", _mcgregor1904VocabularySource);
+for (const _langKey of ["kikuyu", "swahili"]) {
+  const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter(
+    (s) => s.id !== _mcgregor1904VocabularySource.id && s.id !== "mcgregor-kikuyu-1904"
+  );
+  _bucket.push(_mcgregor1904VocabularySource);
+  SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+}
