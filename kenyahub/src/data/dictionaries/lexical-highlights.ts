@@ -634,3 +634,159 @@ export const MADAN_1903_LEXICAL_HIGHLIGHTS = [
     "page": 150
   }
 ] as const;
+
+export const MWAMZANDI_2022_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "(1) Askari [a-li-ye-ki-ongoza kikosi] (Tensed RC) • (2) Askari [amba-ye a-li-ki-ongoza kikosi] (amba RC) • (3) Askari a-ki-ongoz-a-ye kikosi (General relative, p. 228)",
+    "translation": "Three Swahili relative clause constructions: (1) Tensed RC with SRM ye- prefixed after past tense li-, (2) Analytic amba RC with SRM -ye suffixed to amba, and (3) General relative with SRM -ye suffixed after final vowel -a ('The policeman who led / is leading the squad')",
+    "language": "swahili",
+    "page": 228
+  },
+  {
+    "word": "(6) Kikosi [amba-cho Kisaka a-li-ki-ongoza] vs. (7) Kikosi [a-li-cho-ki-ongoza Kisaka] (p. 230) • (8) Mwivi [a-li-ye-mw-ona mtoto] • (9) Mwivi [amba-ye mtoto a-li-mw-ona] • (10) Mwivi wa-li-ye-mu-ona watoto • (11) Mwivi [amba-ye a-li-mw-ona mtoto] (pp. 231–232)",
+    "translation": "Preverbal vs. postposed lexical subjects in object relative clauses ('The squad which Kisaka led') and evaluation of Russell's (1992) SVO/OVS disambiguation account ('The thief who saw the child / whom the child/children saw')",
+    "language": "swahili",
+    "page": 230
+  },
+  {
+    "word": "(12) Masanduku [amba-yo sisi watu wa-wili au wa-tatu ha-tu-wez-i]₁ [ku-ya-enua]₂ vs. (13) Masanduku [tu-si-yo-weza sisi watu wa-wili au watatu] ku-ya-enua]₂ (p. 232, Ashton 1944: 310)",
+    "translation": "Grammatical complexity in 2-clause, 8-word object relative clauses ('Boxes which two or three of us cannot lift') using amba-yo vs. negative tensed tu-si-yo-weza",
+    "language": "swahili",
+    "page": 232
+  },
+  {
+    "word": "Figure 1 (p. 234): amba RCs (N=155: 32 Restrictive, 123 Non-restrictive) vs. Tensed RCs (N=285: 245 Restrictive, 40 Non-restrictive; χ²(1, N=440) = 180.89, p < 0.001) • (14) Bwana yule [a-na-ye-sinzia] • (15) A-li-m-rud-i-a Adili [a-li-ye-kuwa a-na-pata fahamu] • (16) Krapf [a-li-ye-li-tumikia dhehebu la C.M.S] • (17) rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] • (18) Mambo muhimu [[amba-yo ya-na-fanya]₁ [shairi li-it-w-e la Ki-swahili]₂]",
+    "translation": "Corpus distribution of restrictive vs. non-restrictive RCs in the 25M-word Helsinki Corpus of Swahili (HCS 2.0) and verbatim corpus examples (14)–(18) (pp. 234–236)",
+    "language": "swahili",
+    "page": 234
+  },
+  {
+    "word": "Table 1 (p. 237): Mean (SD) RC Length — amba Restrictive 6.34 (3.25), amba Non-restrictive 7.21 (3.71) vs. Tensed Restrictive 3.09 (2.34), Tensed Non-restrictive 4.25 (2.61) (F(1,440) = 197.49, p < 0.001) • (19–20) Mwanamke mjane amba-ye / a-li-ye-kuwa jirani yao (hapo zamani) • (21) Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] vs. (22) *Wa-po wananchi kwa makusudi [wa-na-o-ziba mifereji]",
+    "translation": "Quantitative word-length analysis of Swahili relative clauses and grammaticality of fronted adverbial phrases (kwa makusudi 'deliberately') in amba vs. tensed RCs (pp. 236–238)",
+    "language": "swahili",
+    "page": 237
+  },
+  {
+    "word": "Table 2 (p. 240): HN = Subj, topic (28 amba vs. 70 tensed, χ²=18, p<0.001) • HN = Obj, topic (65 amba vs. 36 tensed, shift transition) • HN = Obj, non-topic (27 amba vs. 99 tensed) • HN = PP, topic (23 amba vs. 18 tensed) • HN = PP, non-topic (11 amba vs. 57 tensed, χ²=31, p<0.001) • Examples (25a–c)–(32): Nyumba [a-li-yo-kaa Beneti], Adili a-li-vunja amri [a-li-yo-p-ew-a], Waandishi [wa-li-o-fuata], Waandamanaji... polisi [amba-o wa-li-jibu mapigo], Rehema... Bikiza [a-li-ye-leta taarifa ya kifo], ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo, Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand",
+    "translation": "Information-structure and topic transition matrix across all 440 HCS relative clauses (continue vs. shift transitions) and verbatim discourse examples (25)–(32) (pp. 238–242)",
+    "language": "swahili",
+    "page": 240
+  }
+] as const;
+
+export const ZWARTS_2024_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "kee(y) ([kɛː], [kɛːj], or Pökoot [kɛːx]; Endo-Marakwet & Tugen keey, Keiyo kee, Kipsigis keen with pronouns vs. kee with verbs, pp. 539–541, 546 fn. 8) • 1,815 Endo-Marakwet NT occurrences (1,653 separate-word tokens + 162 in karkeey, cheepaykeey & peerkeey, p. 541 & fn. 1)",
+    "translation": "Syntactic status of Kalenjin kee(y) as a separate enclitic word (not a suffix, with no known nominal origin, p. 553) across Endo-Marakwet, Keiyo, Tugen, Nandi, Kipsigis, Cherang'any, Sabaot, and Pökoot",
+    "language": "kalenjin",
+    "page": 539
+  },
+  {
+    "word": "(1a) kaa-kee-syaak nyuun keey ('we judged ourselves then') • (1b) a-kuskuus aneen keey ('I make myself weak', p. 542) • (2a–c) āmāraa, kichāmēēchaan, āchāmēēkwaan, keemwaanyēēn; wēēchiikwaak, mālāktiing'waang', koonēētiisyeenyiin; kookeelyaanoonēē, taapukeechoochēē, paannyēēnyi • (3) i-kerkeéy keè laak-o-chu ('These kids are copying each other', p. 543) • (4a) Ki-ng'war ng'oo cheepyoos-ee? Ki-ng'war kee. • (4b) Ki-iim ng'oo piichooto? Ki-iim kee. (p. 544)",
+    "translation": "Section 3 proofs that kee(y) is an enclitic word rather than a verbal suffix: intervening adverb/pronoun (Ex. 1), opacity to ATR vowel harmony (Ex. 2), lexicalised karkeey → karkayiit / kārkēēyin taking a second kee(y) plus cheepaykeeyaan, peerkeeyaan, kimekeyaan/kipekeyaan (Ex. 3), and inability to stand alone as a fragment answer (Ex. 4)",
+    "language": "kalenjin",
+    "page": 542
+  },
+  {
+    "word": "(5a) las-at-aa keey ('praise of oneself, pride') • (5b) riip-ot-oo keey ('guarding of oneself, self-control') • (5c) toorēt-ēēt-aap keey ('the helping of each other, collaboration') • (5d) wiirun-ēēt-aap keey ('the falling, lit. throwing of oneself') vs. (6) las-keey-nat-ēēt (pp. 544–545) • (7) ki-sooman Kiptuum ak Kipēēt kitaapuu-syek-aap keey • (8) ma-po keey chii ('No man is an island, lit. of himself') • (9a–b) a-riir-ee keey ākōō laak-ōō-k-wook vs. *a-riir-ee laak-ōō-k-wook ākōō keey • (10a) inyēēn keey ('Only him') • (10b) a-ku-ng'ālool-chi akwaaneek keey ('and he spoke to them privately', p. 546)",
+    "translation": "Section 4 non-verbal hosts of kee(y): nominalised verbs with -aa(p) (Ex. 5–6), non-deverbal nouns (Ex. 7), preposition po 'of' (Ex. 8), ungrammaticality after ākōō 'and, with' (Ex. 9), and emphatic personal pronouns (Ex. 10)",
+    "language": "kalenjin",
+    "page": 544
+  },
+  {
+    "word": "(11a) ā-ng'ālool-ēē keey ('I am talking about myself') • (11b) a-taakwees keey ('greet each other!') • neet keey ('learn, lit. teach oneself') • (13a–f) Endo-Marakwet middles: takus keey ('drown'), wiiru keey ('fall'); rum/ruruuk/tuuyo keey ('gather'), pēēsyō keey ('separate'); walak keey ('turn'), ng'uruuk keey ('bend'); wēēchi keey ('go'), ng'unta keey ('walk quickly'); iim keey ('worry'), las keey ('boast'); uun keey ('wash'), laak keey ('dress') • (14a–b) Keiyo: tēēp kee ('sit down'), teleel kee ('stand up'); sus kee ('[body] itch'), liil kee ('[teeth] ache') (pp. 546–548)",
+    "translation": "Section 5 reflexive, reciprocal, and middle voice taxonomy (Kemmer 1993) across spontaneous, collective, non-translational/translational motion, emotion, grooming, posture, and body-activity verbs",
+    "language": "kalenjin",
+    "page": 547
+  },
+  {
+    "word": "(15a) roong' kee kārātiik ('the blood gushed') • (15b) choor kee asiis ('the sun rose') • (15c) tum kee pēy ('water poured') • (15d) mil kee koyin ('stones fell', p. 548) • (16) Contemporative -yō Reciprocals: choomnyō ('reconcile'), chuunchuunnyō ('disagree'), tuupchō ('be brothers'), pēēsyō ('disperse'), pooryō ('fight'), tēēniityō ('be equal'), tuuyō ('meet') • (17a) si-mē-ē-tēēniit-yō keey nkōō chiitō aka • (17b) kii nēē kaa-kuu-tuu-yō keey pi-choochēē (p. 549)",
+    "translation": "Keiyo inanimate anticausative middle clauses (Ex. 15) and Endo-Marakwet natural reciprocity via the contemporative suffix -yō (and -sōōt) with or without transitive + keey (Ex. 16–17)",
+    "language": "kalenjin",
+    "page": 548
+  },
+  {
+    "word": "(18a) si-ku-ng'ālool-chi keey • (18b) ku-ung'-a keey akwaaneek • (18c) chēēr-ēēn-ook keey • (19a) a-ku-wēē-chi keey ('and he went away') • (19b) paani kaa-ku-pēē-chi keey saang' vs. (19c) ku-pa saang' • (20a) ki-ng'wār-chin-i kee John patay ('John was scratching his own back') • (20b) ng'wār-chin-i kee pātooy • (21a–c) ki-chām-ē keey acheek eng' acheek / okweek eng' okweek / icheek eng' icheek • (22) ak o-tēpii eng' kaalyeet okweeke eng' okweeke • (23) Ā-ām-iisyēy ani-kee ('I am eating by myself') • (24a) Ki-mwoo-chi Mary tiip-ik akopo ichee-keey • (24b) ki-sooman kitapuu-syek-aap ichee-keey (pp. 549–553)",
+    "translation": "Section 6 arity reduction ($P_2 + kee(y) \\rightarrow P_1$, $P_3 + kee(y) \\rightarrow P_2$), dative -chi licensing with motion verbs (wō/pa) and external possessors, Tugen reduplicated reciprocal adjuncts, and non-arity-reducing pronoun intensifier/anaphor combinations (ani-kee, ichee-keey)",
+    "language": "kalenjin",
+    "page": 550
+  }
+] as const;
+
+export const SAMSON_DARROCH_1944_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "Oromo (not Galla) • Wata (not Boni) • Elwana (not Malakote) • Munyo (not Korokoro, pp. 371, 380, 393) • Kalindi clans: Namboo & Mangwe (Gomeni) • Hidabo (Mrio / Kina Inti, Kilindi) • Shaka (Waungwana wa Mashaa, A.H. 121) • Liongo Fumo (A.D. 1306–1344) & Ozi (Ozo Swahilis at Kau) • mlango (family land tenure) • Mbelezo ('canal' → Belezoni on the Sheriko, pp. 371–373, 391–392)",
+    "translation": "Introduction, Kalindi history, Hidabo Hill & pre-Islamic Mrio (Kina Inti), Shaka & Liongo Fumo, family mlango land tenure, Mahindini bottle boundary (Chama & Abanyata), and 1900 Headmen (Kiriole, Rangi, Kombo Mitambo) in Mikael Samson & R. G. Darroch (1944, pp. 370–373, 391–392)",
+    "language": "pokomo",
+    "page": 370
+  },
+  {
+    "word": "Mumaitha kadza ndio odu / Mbuu ni mzuka, endani / mukayowe kumea mani kubfaa / miima, azi na mfungu za / Witu nazo huziona, mudzi / wehu mudzi wa mbinguni / hutamisaa huichamba huyawe / na manya. (p. 385) • Three former Buu rivers: Milaoni (Magogoni, with Sanye hippo covenant), Ngambwa (Chikovu & 1941 Kopole/Mihaja forest award), Mbewee (Muhoni, Murikicha, Nyangu, Gawisa)",
+    "translation": "Verbatim 8-line Kipokomo lament song of the Buu for their abandoned village Chikovu ('If an enemy comes the Buu have bad news... our village was of the heavens, we are troubled, we did not want to be lost out in the bush', p. 385), their 4:00 a.m. flight under Chief Buko via Kokane Gobu, Mlango wa Simba & Lake Tamaso to Ngao, and the 14-section map drawn with Johana Daji & Luluta (pp. 372–374, 384–385)",
+    "language": "pokomo",
+    "page": 385
+  },
+  {
+    "word": "Abamogo ('wayfarer', p. 376 & Note 8 p. 392) • Ndera clans: Kinamoto/Kinamaziwani (Karayu), Kinambare (Karara), Kinankaru (Sukana), Kinauru (Gamadho — Kinyadu: Herbae/Rehema/Magombe & Bawata Tutu/Kimtovu/Hamadi), Kinanato (Gashiro & Hadiribo freed by Ana Abio) • maro ('free canoe relay' defeated at Kirungu where Buya Gafo killed Arab leader Mwenye Era, pp. 374–376, 392)",
+    "translation": "Mutual greeting Abamogo between Malachini and Upper Pokomo from the meeting of Sango Vere and Ana Dima at Lake Lemu / Mitole, Ndera clan table & origins, and the defeat of Arab tribute demands at Kirungu (pp. 374–377, 385–386, 392)",
+    "language": "pokomo",
+    "page": 374
+  },
+  {
+    "word": "Gwano clans: Kinauru (Gamado — Ana Dima at Takafu near Makere; Red & Black septs of Chief Dadho Moroa), Kinadyasi (Karayu — Kokane Didha), Kinakale / Karara Dulo (Karara — Dulo at Wenje) • Treacherous War of Jilo Bune (drugged bull & thorn-stockade ambush, witnessed by Herbae Gafo) • Kiaponi cattle recovery (recalled by Chalalu Herbae, pp. 375–378, 392–393)",
+    "translation": "Gwano clan table, division of Ana Dima (Gwano), Ana Bake (Kofira Oromo) & Ana Kare (Migo Oromo), the Oromo watering/ferrying ox pact (Note 6), Jilo Bune's ambush, and the Upper Pokomo victory over Somalis at Kiaponi (pp. 375–378, 386, 392–393)",
+    "language": "pokomo",
+    "page": 375
+  },
+  {
+    "word": "Kinakomba clans: Kinambolo & Mandoyo (Karara — Boran Ali Gutu at Mankombe/Dakacha below Kiaponi), Kinamuyani (Garjeda), Kinamulunde (Uta), Kinambura (Wayu — Kokane Ware), Kinanguu • Ndura clans: Sindo wa Ndura (Karayu — Galole Hirimani & Gababa Kitole), Kinambare (Uta — Mzuka Wayu), Kinanato (Karara — Omara Oda & Chief Dadho Bahola), Kinagasere (Baretu), Kinajasi (Hajeji), Kinambolo (Karara), Kinambura (Wayole) (pp. 378–379, 386–387)",
+    "translation": "Kinakomba (Kiaponi vs. Masalani) and Ndura bilingual clan tables, Somali attacks at Mangulo & Mazuni, Fanjua–Mazuni club fight stopped by Christian teacher Ibrahim Kitere, and Ndura secret night cultivation (pp. 378–379, 386–387)",
+    "language": "pokomo",
+    "page": 378
+  },
+  {
+    "word": "Zubaki clans: Uta (Hiye at Hola), Ilani (Gavere), Karayu (Mtabashi; Boran Royal Clan of Chief Gedu), Jaba (Munyo), Kinagasere (Baretu wa Maji), Kinakaliani (Garjeda — Maro Wayu → Dulo Maro → Sarumbe & Kamba Machika Mwemwere), Meta (Komora Eba), Kinagaiba (Wayu Abae), Karara (Komora Diribo) • Malalulu clans: Wayu Duko, Wayu Chireti (Gatokombo/Maro < tokombo 'mud' → Igu, Ibae & Kimtu), Uta, Meta, Dulo/Karara, Garjeda, Ilani • Galana Maro • Kijo & Ngaji • Waganga • Muunguni • Bwana Muchinjeni (Mr. Anderssen, 1895) (pp. 380–394)",
+    "translation": "Zubaki and Malalulu clan tables, the 4 Zubaki wars (Hola against Oromo chief Gungumi, Wata under Chief Wayu Umuru becoming Ngatana at Lake Jange, and Somalis & Kamba at Kadada witnessed by Malim Jilo), Chief Mukaraji Maro's 6-generation genealogy, Elwana female circumcision, Kijo/Ngaji forest protection, 7th-month pregnancy farming exemption, Muunguni heaven & 'God's portion', Missions (1884–1887), and 1895 Government arrival (pp. 380–394)",
+    "language": "pokomo",
+    "page": 380
+  }
+] as const;
+
+export const CUST_1883_VOL1_LEXICAL_HIGHLIGHTS = [
+  {
+    "word": "abántu ('men', Bántu) • Orma / Oromo ('men', Galla, pp. 12, 122) vs. 'Sons of Galla' (war title per D'Abbadie, p. 122) • Loikób / pl. Eloikób ('Men', Kwáfi & Masai, pp. 149–151) • Luoh / Lwo (self-designation of Shilluk/Dyur, Bellanda, Dembo, Lúr & Shúli/Shefalu, linked to Kavirondo [Dholuo], pp. 275–285)",
+    "translation": "Comparative African ethnonym semantics ('men') and self-designations across Bantu, Oromo/Borana, Maa (Kwáfi & Masai), and Lwo/Kavirondo (Dholuo) in Robert Needham Cust's A Sketch of the Modern Languages of Africa, Vol. I (1883)",
+    "language": "borana",
+    "page": 12
+  },
+  {
+    "word": "Galla or Orómo (Ch. IX.C.II, pp. 122–125): 5–6 million speakers from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása • 5 Chief Dialects (Krapf & Schmidt): I. North of Shoa, II. East of Shoa, III. South of Shoa on the Hawash (Schmidt), IV. River Godjeb (Tutschek 1844–45), V. Equatorial / South Galla on the Dana/Tana River (Krapf 1850 & Wakefield at Ribé) • Huma Royal Race (U-Ganda, U-Nyoro, Karagwe; King Mtesa speaking 7 languages incl. Galla, pp. 16, 122–123) • Wata 'Helot Races' (Charles New, pp. 122–123) • Lango or Kidi (p. 125)",
+    "translation": "Complete dialectal, demographic, and comparative profile of Galla/Orómo in Cust (1883, Vol. I, pp. 122–125), including Cust's manuscript copy of Krapf's rare 1840 'Elements of the Galla Language' transcribed from the RGS library for Rev. T. Wakefield at Ribé",
+    "language": "borana",
+    "page": 122
+  },
+  {
+    "word": "Somáli (Ch. IX.C.I, p. 121) & Reinisch's First Hamitic Cluster (p. 119: A. Bishári, B. Saho, C. Dankálí, D. Somáli, E. Galla) • Regio Aromatifera (Bab el Mandal → Cape Guardafui → Bántu Frontier) • Rigby (1850 Bombay Grammar/Vocab & 1866 Origin Essay), Burton (1856 First Footsteps), Hunter (1880 Aden Grammar & Bidirectional Vocabulary), Van der Decken, Prætorius, Revoil (1881 Venice Greek-affinity claim critiqued) & Krapf ('a multitude of tribes speaking one Language')",
+    "translation": "Somáli classification, geographic range, and 19th-century grammatical/lexical bibliography in Cust (1883, Vol. I, pp. 119, 121)",
+    "language": "somali",
+    "page": 121
+  },
+  {
+    "word": "V. Kwáfi (Loikób / pl. Eloikób — Engútuk Eloikób, pp. 149–151: Krapf's 1854 Tübingen Vocabulary, Grammatical Note, 1 John Ch. 1 & Texts; J. T. Last's 6,000-word Humba vocabulary at Mamboia; Archdeacon Farler at Magíla; Wakefield & New on Arúsha) • VI. Masai (Loikob — Enguduk Iloigob, pp. 151–152: Erhardt & Krapf's 1857 Württemberg Vocabulary; Ndorobo 'Helot Race'; Joseph Thomson's 1883 RGS expedition supplied by Cust; Lepsius's 1880 6 structural features)",
+    "translation": "Complete treatment of Kwáfi and Masai in the Nuba Sub-Group in Cust (1883, Vol. I, Ch. X.A.V–VI, pp. 149–152)",
+    "language": "maasai",
+    "page": 149
+  },
+  {
+    "word": "XXI. Kavirondo (Dholuo on the eastern shore of Victoria Nyanza, pp. 284–285): Rev. Charles New's (1873) non-Bantu Kavirondo Vocabulary & Rev. Thomas Wakefield's MS Kavirondo Vocabulary compiled from a Swahíli caravan traveller along the Mombása–Masai–Kavirondo route • Marked affinity with I. Shilluk alias Dyur (Behr / Luoh / Lwo; Bellanda & Dembo, ~1,000,000 speakers in 3,000 villages, pp. 275–276), XVIII. Lúr (Luoh, pp. 282–283) & XX. Shúli (Gani / Shefalu / Obbo / Farajoke, pp. 283–284)",
+    "translation": "First comparative demonstration linking Kenyan Kavirondo (Dholuo) on Lake Victoria to the Luoh (Lwo) languages of the Upper White Nile and Albert Nyanza in Cust (1883, Vol. I, Ch. XI.D, pp. 273–287)",
+    "language": "luo",
+    "page": 284
+  },
+  {
+    "word": "Sawáhil ('the shores'), Káfir ('the unbeliever') & Kabáil ('the tribes', p. 85) • Prætorius on the Arabic Dialect of Zanzibár agreeing with Muskát (p. 84) • Indian Bhattia (Hindu), Borah & Khoja (Mahometan) shopkeepers from Zanzibár to Mozambík, Madagascar & Cape Guardafui keeping accounts in Gujaráti & Kachchi, and Bishop Steere's call for a Gujaráti missionary (pp. 42–43, 76) • Steere's critique of Bagamóyo RC pidgin Swahili catechisms (p. 48) • Antiquated East Coast Arabic script vs. Krapf, Steere & Lepsius Roman transliterations (pp. 74, 77) • Appeal to collect freed-slave vocabularies at Frere Town (Mombasa) & Zanzibár (p. 211)",
+    "translation": "East African coastal sociolinguistics, Zanzibár Omanite Arabic, Gujarati/Kachchi mercantile diglossia, and Swahili orthography in Cust (1883, Vol. I, pp. 42–43, 48, 74, 76–77, 84–85, 211)",
+    "language": "swahili",
+    "page": 42
+  }
+] as const;

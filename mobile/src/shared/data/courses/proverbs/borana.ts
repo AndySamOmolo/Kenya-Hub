@@ -152,3 +152,15 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1842, Preface pp. i–ii & Vocabulary pp. 1–42)"
   }
 ];
+
+BORANA_PROVERBS.push({
+  id: "borana-cust-1883-vol1-oromo-dialects-huma-cw",
+  languageId: "borana",
+  languageName: "Borana / Oromo (Afaan Borana / Equatorial Orma)",
+  indigenous: "Orma / Oromo ('men') vs. 'Sons of Galla' (D'Abbadie) • 5 Chief Dialects (I. North of Shoa, II. East of Shoa, III. South of Shoa on the Hawash [Schmidt], IV. River Godjeb [Tutschek], V. Equatorial / Dana River Galla [Krapf 1850 & Wakefield at Ribé]) • Huma Royal Race (U-Ganda, U-Nyoro, Karagwe) & Wata 'Helot Races' (Charles New)",
+  literalTranslation: "Self-designation Orma or Oromo ('men', matched with Bantu abántu 'men' on p. 12 and Masai/Kwáfi Loikób/Eloikób 'men' on p. 150) vs. war-title 'Sons of Galla' • The 5 Chief Dialects from 10° N to the mouth of the Dana (Tana) River near Mombása — Robert Needham Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II pp. 122–125).",
+  meaning: "Recorded in Robert Needham Cust's A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125): synthesizes how the 5–6 million Oromo stretch from Abyssinia (10° N) to the Dana (Tana) River mouth near Mombása across 5 chief dialects, how the Huma royal dynasties of U-Ganda (where King Mtesa spoke Galla alongside Nyoro, Ganda, Swahíli, Soga, Zulu, and Arabic), U-Nyoro, and Karagwe belong to the Galla race, how hunting 'Helot Races' (Wata) live among and speak Galla (per Charles New), and how Cust had a manuscript copy of Krapf's rare 1840 'Elements of the Galla Language' transcribed from the sole Royal Geographical Society copy and sent to Rev. Thomas Wakefield at Ribé.",
+  englishEquivalent: "One language and five dialects unite the Oromo from the highlands of Shoa to the mouth of the Tana River.",
+  theme: "unity",
+  sourceCitation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125)"
+});

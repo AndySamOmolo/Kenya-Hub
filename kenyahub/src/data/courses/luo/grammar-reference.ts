@@ -718,3 +718,73 @@ export const NORTHCOTE_1907_COMPLETE_LINE_BY_LINE_ARCHIVE = {
     nineModernOccupationsAtKisumu: 'Employed as (1) soldiers, (2) sailors, (3) police, (4) masons, (5) carpenters, (6) sawyers, (7) blacksmiths, (8) gardeners, and (9) boys—including a smart native Jaluo sergeant instructor at Kisumu Provincial Headquarters after only 4–5 years of administration.'
   }
 } as const;
+
+// ============================================================
+// ROBERT NEEDHAM CUST (1883, VOL. I, CH. XI.D, PP. 273–287) — NILE SUB-GROUP:
+// SHILLUK (LUOH / LWO), NUER, DINKA, BARI, LÚR (LUOH), SHÚLI & XXI. KAVIRONDO (DHOLUO)
+// ============================================================
+export const CUST_1883_VOL1_NILE_SUBGROUP_AND_KAVIRONDO = {
+  citation:
+    'Cust, Robert Needham (1883). A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map. Vol. I, Chapter XI "IV. Negro Group — D. Nile Sub-Group", pp. 273–287 (specifically I. Shilluk pp. 275–276, XVIII. Lúr pp. 282–283, XX. Shúli pp. 283–284, and XXI. Kavirondo pp. 284–285). London: Trübner & Co., Ludgate Hill.',
+  nileSubGroupOverview:
+    'Contains 31 languages spoken along the Upper White Nile, Bahr-el-Ghazal, Sobat, Albert Nyanza, and Victoria Nyanza (pp. 273–287), establishing for the first time in comparative African philology the direct lexical and genetic link between Kavirondo (Dholuo) on the eastern shore of Lake Victoria in Kenya and the Lwo/Luoh languages of the Upper Nile (Shilluk, Lúr, and Shúli/Shefalu).',
+  lwoCorrespondencesInCust1883: [
+    {
+      number: 'I',
+      language: 'Shilluk alias Dyur (Behr; self-designation Luoh or Lwo, with branches Bellanda & Dembo, pp. 275–276)',
+      details:
+        'Spoken by ~1,000,000 people in 3,000 villages along 200 miles of the west bank of the White Nile down to the Sobat mouth; documented by Schweinfurth, Ruppell, Seetzen, Brun Rollet, Lepsius, and Emin Bey.'
+    },
+    {
+      number: 'XVIII',
+      language: 'Lúr (self-designation Luoh, pp. 282–283)',
+      details:
+        'West of the Upper Nile around Albert Nyanza; Emin Bey supplied vocabularies proving that Lúr, Dyur, Bellanda, and Shúli all call themselves Luoh and share immediate lexical identity with Shilluk.'
+    },
+    {
+      number: 'XX',
+      language: 'Shúli (including Gani, Wa-Nyóro Shefalu at the Victoria Nile falls, Obbo & Farajoke, pp. 283–284)',
+      details:
+        'Spoken east of the Nile from Laboré to Magungo on Albert Nyanza; Grant first noticed them at Unyóro as Gani, New gave a Gani vocabulary, and Emin Bey proved their identity with Shilluk/Luoh.'
+    },
+    {
+      number: 'XXI',
+      language: 'Kavirondo (Dholuo on the Eastern Shore of Victoria Nyanza, Kenya, pp. 284–285)',
+      details:
+        'Marks the southernmost equatorial advance of the Nile Sub-Group along the eastern shore of Victoria Nyanza. First brought to knowledge by Rev. Charles New (Life, Wanderings, and Labours in Eastern Africa, 1873), who published a Vocabulary collected via a Swahíli interpreter from pastoralists in the plains, describing the Kavirondo as numerous, divided into many clans, occupying the country stretching northwards along the eastern shores of Victoria Nyanza, and speaking a language entirely distinct from the Bántu family. Confirmed by missionaries at Mombása and Mamboia, and by Rev. Thomas Wakefield at Ribé, who just before returning to East Africa sent Cust a manuscript Kavirondo Vocabulary compiled from the lips of a competent Swahíli caravan traveller along the Mombása–Masai–Kavirondo route (the route of Joseph Thomson\'s 1883 RGS expedition). Crucially, Cust notes the marked affinity between the Kavirondo Vocabulary and Shilluk (Luoh/Lwo).'
+    }
+  ],
+  allThirtyOneNileSubGroupLanguages: [
+    'I. Shilluk (Dyur / Behr / Luoh / Lwo; Bellanda & Dembo, pp. 275–276)',
+    'II. Nuer (Byor, p. 276)',
+    'III. Dinka (Denka / Janghey, pp. 276–277 — Beltráme, Knoblecher, Kirchner, Morlang, Kaufmann, Mitterrutzner 1866)',
+    'IV. Bari (including Moru, p. 278 — Knoblecher, Ueberbacher, Morlang, F. Müller 1864, Mitterrutzner 1867)',
+    'V. Al Waj (p. 279)',
+    'VI. Bongo (Dor / A-Kuma / O-Bong, pp. 279–280 — 100,000 speakers; Schweinfurth, Heuglin, Petherick, Barth)',
+    'VII. Mittu (Mattu / Moro, p. 280)',
+    'VIII. Sofi (Rohl, p. 280)',
+    'IX. Behli (p. 281)',
+    'X. Lehsi (p. 281)',
+    'XI. Atwot (p. 281)',
+    'XII. Bofi (p. 281)',
+    'XIII. Nyangbára (p. 281 — Morlang & Emin Bey)',
+    'XIV. Kederu (p. 281 — Emin Bey & Felkin)',
+    'XV. Mundu (p. 282 — Marno)',
+    'XVI. Babúkr (p. 282)',
+    'XVII. Liggi (Yeshkhko, p. 282 — Morlang)',
+    'XVIII. Lúr (Luoh, pp. 282–283 — Emin Bey)',
+    'XIX. Madi (including Chopi & Lira, p. 283 — Emin Bey, Grant, Baker, Felkin)',
+    'XX. Shúli (Gani, Shefalu, Obbo & Farajoke, pp. 283–284 — Grant, New, Emin Bey, Baker)',
+    'XXI. Kavirondo (Dholuo on Victoria Nyanza, Kenya, pp. 284–285 — New 1873 & Wakefield MS Vocabulary)',
+    'XXII. Latúka (p. 285 — Baker & Emin Bey)',
+    'XXIII. Berri (p. 285)',
+    'XXIV. Kunkung (p. 285 — Junker on the Sobat)',
+    'XXV. Jibbe (p. 285 — Junker)',
+    'XXVI. Niuak (Anuak, p. 286 — Junker)',
+    'XXVII. Fallangh (p. 286 — Junker)',
+    'XXVIII. Yambo (p. 286 — D\'Abbadie)',
+    'XXIX. Gatzamba (Aruro, east of Bako, p. 286 — D\'Abbadie)',
+    'XXX. Goma (Amase, near Fazogl, p. 286 — Schuver)',
+    'XXXI. Gindjár (Abu Ramla & Sennar, p. 286 — Beke & Bruce)'
+  ]
+} as const;

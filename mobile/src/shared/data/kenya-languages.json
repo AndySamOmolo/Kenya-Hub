@@ -57,7 +57,7 @@
         "Homa Bay",
         "Migori"
       ],
-      "notes": "River-Lake Nilotes of the Lake Victoria basin; documented in Hobley (1902, 1903), Johnston (1902), Northcote (1907), Roscoe/Willis (1915), Mill-Hill Fathers (1920), and BFBS (1921).",
+      "notes": "River-Lake Nilotes of the Lake Victoria basin; documented in Rev. Charles New (1873), Rev. Thomas Wakefield & Robert Needham Cust (1883 'A Sketch of the Modern Languages of Africa', Vol. I, Ch. XI.D 'Nile Sub-Group', pp. 273–287: XXI. Kavirondo on Victoria Nyanza pp. 284–285, Wakefield's MS Kavirondo Vocabulary from a Swahíli caravan traveller, and first comparative proof of marked affinity with I. Shilluk/Dyur [Luoh/Lwo, Bellanda & Dembo] pp. 275–276, XVIII. Lúr [Luoh] pp. 282–283 & XX. Shúli [Gani/Shefalu] pp. 283–284), Hobley (1902, 1903), Johnston (1902), Northcote (1907), Roscoe/Willis (1915), Mill-Hill Fathers (1920), and BFBS (1921).",
       "id": "luo",
       "isoCode": "luo",
       "glottocode": "luoo1235"
@@ -76,7 +76,7 @@
         "Trans Nzoia",
         "West Pokot"
       ],
-      "notes": "Highland Nilotes (Nandi, Kipsigis/Lumbwa [Il Kakesan], Tugen/Kamasia [Kapteberewa & Nderois], Marakwet & Endo/Ndo [Chebleng], Keiyo/Elgeyo, Kabkamat/Olmo, Sangwirr, Uasin Gishu Moiven/Muttia/Il-Mokwan/I-Sirikwa, Sabaot); documented in Hollis (1909), Hon. K. R. Dundas (1910), Hobley (1910), BFBS (1921), Diercks & Rao (2019), Landman (2019), and Zwarts, Chelimo & Jerono (2024).",
+      "notes": "Highland Nilotes (Nandi, Kipsigis/Lumbwa [Il Kakesan], Tugen/Kamasia [Kapteberewa & Nderois], Marakwet & Endo/Ndo [Chebleng], Keiyo/Elgeyo, Cherang'any, Kabkamat/Olmo, Sangwirr, Uasin Gishu Moiven/Muttia/Il-Mokwan/I-Sirikwa, Sabaot, Pökoot); documented in Hobley (1902, 1903, 1910), Johnston (1902), A. C. Hollis (1909 'The Nandi: Their Language and Folk-Lore'), Hon. K. R. Dundas (1910), Beech (1911), BFBS (1921), Rottland (1982), Creider & Creider (1983, 1989), Toweett (1979), Mietzner (2016), Jerono (2018), Sitienei Jepkoech (2018), Diercks & Rao (2019), Landman (2019), Kouneli (2021), and Joost Zwarts, Andrew Chelimo & Prisca Jerono (2023; 2024 'The reflexive in Kalenjin: Its syntactic status and semantic functions', in Yaqian Huang, Nina Hagen Kaldhol, Jun Jie Lim, Sharon Rose & Anthony Struthers-Young, eds., ACAL in SoCAL: Selected papers from the 53rd Annual Conference on African Linguistics, Berlin: Language Science Press, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482 — audited 100% line-by-line across §§1–7, 1,815 Endo-Marakwet NT occurrences of keey [1,653 separate-word tokens + 162 in karkeey, cheepaykeey & peerkeey], Examples 1–24, Footnotes 1–12, 5 Abbreviations & 17 References).",
       "id": "kalenjin",
       "isoCode": "kln",
       "glottocode": "kale1246"
@@ -120,7 +120,7 @@
         "Mandera",
         "Isiolo (part)"
       ],
-      "notes": "Lowland East Cushitic language of North Eastern Kenya; documented in Cust (1883), de Larajasse (1897), Kirk (1903, 1905), BFBS (1921), Nilsson (2016), Kimper et al. (2019), and Nurse (2019).",
+      "notes": "Lowland East Cushitic language of North Eastern Kenya; documented in Rigby (1850, 1866), Burton (1856), Hunter (1880), Robert Needham Cust (1883 'A Sketch of the Modern Languages of Africa', Vol. I, Ch. IX.C.I 'Somáli', pp. 119, 121: Reinisch's First Ethiopic-Hamitic Cluster [Bishári, Saho, Dankálí, Somáli, Galla], Regio Aromatifera from Bab el Mandal & Cape Guardafui to the Bantu frontier, and Krapf's testimony that the Somáli 'consist of a multitude of tribes speaking one Language'), de Larajasse (1897), Kirk (1903, 1905), BFBS (1921), Nilsson (2016), Kimper et al. (2019), and Nurse (2019).",
       "id": "somali",
       "isoCode": "som",
       "glottocode": "soma1255"
@@ -160,7 +160,7 @@
         "Kajiado",
         "Samburu (Samburu dialect)"
       ],
-      "notes": "Plains Nilotes (Eastern Nilotic, across 4 Clans ['L-Aiser, Il-Meñgana, Il-Mokesen, Il-Molelyan], 2 Moieties ['L-oodo-kishu & 'L-oorook-kishu], 19 Sub-Families [Il-gilat], and 5 Districts [Il-Kaputiei, En-aiposha, 'L-Oitai, Il-Kisonko, 'L-Uasinkishu], plus Laikipiak, Segellai, and Tigirri); documented in Farler & Wakefield (1882), Cust (1883), Höhnel (1894), Hildegarde Hinde (1901 'The Masai Language: Grammatical Notes Together with a Vocabulary' — audited 100% line-by-line across pp. i–xii, 1–75 [PDF pp. 1–98]: Preface critiquing Ehrhardt 1857 & Johnston, Errata slip, Rules §§ 1–23, 9 Regular Plural Suffix Methods, Sexagesimal Base-60 Counting [īp = 60], 65 Verb Conjugation Paradigms, 340 Conversational Phrases, Salutations, 3 Songs, 3 Ethnonyms, 8 Kenyan Toponyms, 10 Curses & ~1,050-entry Vocabulary with 5 Footnotes), Johnston (1902), A. C. Hollis & Sir Charles Eliot (1905 'The Masai: Their Language and Folklore' — audited 100% line-by-line across Parts I–VI, pp. i–xxviii, 1–359, Frontispiece & Plates I–XXVII), Hon. K. R. Dundas (1910), Hobley (1910), W. S. & K. Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
+      "notes": "Plains Nilotes (Eastern Nilotic, across 4 Clans ['L-Aiser, Il-Meñgana, Il-Mokesen, Il-Molelyan], 2 Moieties ['L-oodo-kishu & 'L-oorook-kishu], 19 Sub-Families [Il-gilat], and 5 Districts [Il-Kaputiei, En-aiposha, 'L-Oitai, Il-Kisonko, 'L-Uasinkishu], plus Laikipiak, Segellai, and Tigirri); documented in Krapf (1854 'Vocabulary of the Engútuk Eloikób'), Erhardt & Krapf (1857 'Vocabulary of the Enguduk Iloigob'), Farler & Wakefield (1882), Robert Needham Cust (1883 'A Sketch of the Modern Languages of Africa', Vol. I, Ch. X.A.V–VI 'Kwáfi' & 'Masai', pp. 149–152: autonyms Loikób/Eloikób 'Men', J. T. Last's 6,000-word Humba vocabulary at Mamboia, Arúsha & Ndorobo 'Helot Races', Joseph Thomson's 1883 RGS expedition supplied by Cust, and Lepsius's 1880 6 structural features), Höhnel (1894), Hildegarde Hinde (1901 'The Masai Language: Grammatical Notes Together with a Vocabulary' — audited 100% line-by-line across pp. i–xii, 1–75 [PDF pp. 1–98]), Johnston (1902), A. C. Hollis & Sir Charles Eliot (1905 'The Masai: Their Language and Folklore' — audited 100% line-by-line across Parts I–VI, pp. i–xxviii, 1–359, Frontispiece & Plates I–XXVII), Hon. K. R. Dundas (1910), Hobley (1910), W. S. & K. Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921).",
       "id": "maasai",
       "isoCode": "mas",
       "glottocode": "masa1300"
@@ -212,7 +212,7 @@
         "Kwale",
         "Tana River"
       ],
-      "notes": "National & official language of Kenya (including Kiamu, Kimvita, Kitikuu/Bajuni, Kipate, Kingozi, and Kiunguja); documented in Krapf (1850, 1882), Bishop Edward Steere (1870 'Swahili Tales, as Told by Natives of Zanzibar', Bell & Daldy London, pp. i–xvi, 1–504 [PDF pp. 1–529] — audited 100% line-by-line across J. F. Campbell's Aug. 1, 1870 provenance & Kalila and Dimna marginalia, 6 named informants, 3 Mombasa Preface poems, 18 prose tales incl. Kimvita 'Kititi, na Fisi, na Simba' & 'Hadithi ya Liongo', all 20 verbatim Mifano, all 14 Vitendawili, 'Mashairi ya Liongo', 'Utumbuizo wa Gungu', 'Mwanzo wa Utenzi wa Ayubu', all 37 Italicized Words, all 103 Notes & all 12 Corrigenda), Bishop Edward Steere & A. C. Madan (1894 'A Handbook of the Swahili Language, as Spoken at Zanzibar', 4th Ed., SPCK London, pp. i–xxii, 1–458 [PDF pp. 1–488] — audited 100% line-by-line across U of Toronto copy PL 8702 S724 1894, Advertisements & Preface, Part I Grammar & Categorized Vocabularies pp. 1–235, 9-Language Bantu Prefix Tables pp. 234–235, Part II Vocabulary pp. 245–421 incl. all 18 Named Parts of a Kanzu p. 299 & all 41 Named Mita of Zanzibar Town pp. 346–347, and Appendices I–V pp. 425–458; plus 1918), Taylor (1891), Bateman (1901), A. C. Madan (1903 'Swahili-English Dictionary', Clarendon Press Oxford, pp. i–xix, 1–442 [PDF pp. 1–478] — audited 100% line-by-line across UC Berkeley copy PL 8703 / M33 / 1903 / MAIN, July 1903 Preface ['Bantize rather than Arabize' & asterisk (*) non-Bantu loanword system], Introduction & 8 Principal Verb-Stem Forms [incl. 6 Causal & 5 Reciprocal varieties] pp. ix–xiii, Conspectus II of 8 Noun Declensions D 1–D 8 pp. xvi–xvii, Abbreviations pp. xviii–xix, Dictionary Sections A–M Part 1 pp. 1–238 [incl. 29 gift/bribe/fee terms under *Bakshishi, 11 sticks under Bakora, 6 gun types under *Bunduki, 11 dhows under Chombo, 10 dhow ropes & 6 fibres under Kamba, Kasimele first-press coconut cream, Keke bow-drill, 6 ordeal types under Kiapo, Kiko water-pipe, April 15, 1872 Zanzibar hurricane Kimbunga, Kitanda cha mfumi loom, 19 English loans under Manowari, 18 perfumes under Manukato, Mlango carved doors, 8 palm species under Mnazi, and 65+ embedded proverbs & riddles], Closing Page of Section Z p. 442 & Clarendon Press Catalogue pp. 1–8; plus 1902, 1905, 1917), Mrs. F. Burt & Rev. W. E. Taylor (1910 'Swahili Grammar and Vocabulary', SPCK London, pp. 1–252 [PDF pp. 1–260] — audited 100% line-by-line across UCSB copy X-30323, 1910 Preface by A. E. B., Rev. W. E. Taylor's Part I Dialect Tables I–IV pp. 7–10, Phonetic Exercises 1–21 pp. 11–21 & Syllabary pp. 22–23, Part II Studies I–XXI & Grammar Tables pp. 24–131, Complete Exercise Keys pp. 132–151, Money/Weights/Measures pp. 152–153, 3 Mombasa Letters of Rabiu l-Awwal 1324 A.H. pp. 154–156, Calendar & Monsoons pp. 157–158, 14 Synonym Groups pp. 158–159, All 44 Homonym Groups pp. 159–161, and Part III A–Z Vocabulary pp. 162–252), Stigand (1915), Beech (1918), Werner (1918, 1919, 1933), Mwamzandi (2022), and Goldsmith & Mpiranya (2022).",
+      "notes": "National & official language of Kenya (including Kiamu, Kimvita, Kitikuu/Bajuni, Kipate, Kingozi, and Kiunguja); documented in Krapf (1850, 1882), Bishop Edward Steere (1870 'Swahili Tales, as Told by Natives of Zanzibar', Bell & Daldy London, pp. i–xvi, 1–504 [PDF pp. 1–529] — audited 100% line-by-line across J. F. Campbell's Aug. 1, 1870 provenance & Kalila and Dimna marginalia, 6 named informants, 3 Mombasa Preface poems, 18 prose tales incl. Kimvita 'Kititi, na Fisi, na Simba' & 'Hadithi ya Liongo', all 20 verbatim Mifano, all 14 Vitendawili, 'Mashairi ya Liongo', 'Utumbuizo wa Gungu', 'Mwanzo wa Utenzi wa Ayubu', all 37 Italicized Words, all 103 Notes & all 12 Corrigenda), Robert Needham Cust (1883 'A Sketch of the Modern Languages of Africa', Vol. I, pp. 11–16, 42–43, 48, 54, 74, 76–77, 84–85, 119, 211: Zanzibár Omanite Arabic per Prætorius, Sawáhil/Káfir/Kabáil/Zinjian etymologies, Indian Bhattia/Borah/Khoja traders keeping accounts in Gujaráti & Kachchi from Zanzibár to Cape Guardafui, Steere's critique of Bagamóyo pidgin Swahili, East Coast Arabic script vs. Krapf/Steere/Lepsius Roman orthographies, and Frere Town freed-slave vocabulary appeal), Bishop Edward Steere & A. C. Madan (1894 'A Handbook of the Swahili Language, as Spoken at Zanzibar', 4th Ed., SPCK London, pp. i–xxii, 1–458 [PDF pp. 1–488] — audited 100% line-by-line; plus 1918), Taylor (1891), Bateman (1901), A. C. Madan (1903 'Swahili-English Dictionary', Clarendon Press Oxford, pp. i–xix, 1–442 [PDF pp. 1–478] — audited 100% line-by-line; plus 1902, 1905, 1917), Mrs. F. Burt & Rev. W. E. Taylor (1910 'Swahili Grammar and Vocabulary', SPCK London, pp. 1–252 [PDF pp. 1–260] — audited 100% line-by-line), Stigand (1915), Beech (1918), Werner (1918, 1919, 1933), Mohamed Mwamzandi (2022 'The pragmatics of Swahili relative clauses', Language Science Press, Ch. 13, pp. 227–246, DOI: 10.5281/zenodo.6393758 — audited 100% line-by-line across all 440 HCS 2.0 relative clauses, Examples 1–32, Figure 1 & Tables 1–2), and Goldsmith & Mpiranya (2022).",
       "id": "swahili",
       "isoCode": "swh",
       "glottocode": "swah1253"
@@ -240,7 +240,7 @@
         "Isiolo",
         "Tana River"
       ],
-      "notes": "Lowland East Cushitic language (Borana, Gabbra, Sakuye, and Tana River Orma/Bararetta); documented in Krapf (1840, 1842, 1850), Tutschek (1844–1845), Cust (1883), Foot (1913), Werner (1915), BFBS (1921), and Griefenow-Mewis (1996).",
+      "notes": "Lowland East Cushitic language (Borana [including the Royal Clan Karayu of Chief Gedu in Ethiopia], Gabbra, Sakuye, Wata, and Tana River Orma — Barareta Oromo [descended from Ana Bake], Kofira Oromo [from Ana Dima/Ana Bake], and Migo Oromo [from Ana Kare]); documented in Krapf (1840, 1842, 1850), Tutschek (1844–1845), Robert Needham Cust (1883 'A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map', Vol. I, London: Trübner & Co., pp. [i]–xvi, 1–287 [PDF pp. 1–340] — audited 100% line-by-line across Portrait Plates I–VI [31 portraits], Chs. I–XI, and Ch. IX.C.II 'Galla or Orómo' pp. 122–125: 5–6 million speakers from 10° N to the Dana/Tana River mouth near Mombása, Huma royal dynasty of Uganda/Unyoro/Karagwe, autonym Orma/Oromo 'men' vs. war-title 'Sons of Galla', 5 Chief Dialects incl. the Equatorial/Tana River dialect studied by Wakefield at Ribé & Krapf 1850, Charles New's Wata 'Helot Races', Cust's hand-copied MS of Krapf's 1840 Elements sent to Wakefield at Ribé, Newman, Bleek, Massaia, Tutschek, Enaréa & Lango/Kidi), Foot (1913), Werner (1915), BFBS (1921), Mikael Samson & R. G. Darroch (1944, pp. 370–394), and Griefenow-Mewis (1996).",
       "id": "borana",
       "isoCode": "gax",
       "glottocode": "bora1271"
@@ -276,7 +276,7 @@
       "counties": [
         "Tana River"
       ],
-      "notes": "Tana River Sabaki Bantu language across 13 Upper and Lower Pokomo vyeti; documented in Krapf (1850), Würtz (1895), Werner (1913, 1915, 1933), Johnston (1919), BFBS (1921), and Mikael Samson & Darroch (1944).",
+      "notes": "Tana River (Galana Maro) Sabaki Bantu language across Malachini (Kalindi [Namboo & Mangwe/Gomeni], Buu, Yunda/Dzunza, Ngatana, Kulesa, Mwina) and Upper Pokomo (Ndera, Gwano, Kinakomba, Ndura, Zubaki, Malalulu — bordered on the north by the non-Pokomo Elwana and Munyo); documented in Krapf (1850), Würtz (1895, 1896), Werner (1913, 1915, 1933), Johnston (1919–1922 #13 Pωkωmω), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 'A History of the Pokomo by Mikael Samson — Continued, with an Introduction and Notes by R. G. Darroch', Journal of the East Africa Natural History Society, Vol. XVII, Nos. 5 & 6 [79–80], Sept. 1944, pp. 370–394 & Full-Page Sketch Map — audited 100% line-by-line across all 14 map sections from Elwana to Ras Shaka, Hidabo Hill [Mrio / Kina Inti], Shaka [Waungwana wa Mashaa, A.H. 121], Liongo Fumo & Ozi, family mlango land tenure, the 3 dried Buu rivers [Milaoni/Magogoni with Sanye hippo covenant, Ngambwa with Chikovu & 1941 Kopole/Mihaja forest award, and Mbewee], the verbatim 8-line Kipokomo lament song for Chikovu on p. 385, all 6 Upper Pokomo tribes and their Bantu/Oromo clan tables, Sango Vere & Ana Dima's 'Abamogo' wayfarer greeting at Lake Lemu/Mitole, the Treacherous War of Jilo Bune & Chief Dadho Moroa, the Battles of Kirungu [Buya Gafo & Mwenye Era] & Kadada [Karayu Wayu, Goyoi & Malim Jilo], Chief Mukaraji Maro's 6-generation genealogy, Ngaji/Kijo forest guardians, 7th-month pregnancy farming exemption, Waganga, Muunguni heaven & 'God's portion', Missions 1884–1887, Islam, 1895 arrival of first D.C. Mr. Anderssen 'Bwana Muchinjeni' at Ngao, and Notes 1–13).",
       "id": "pokomo",
       "isoCode": "pkb",
       "glottocode": "poko1261"
@@ -289,7 +289,7 @@
         "Samburu",
         "Marsabit"
       ],
-      "notes": "Northern Maa (Plains Nilotic) pastoralists (including historical Il Doigio, Lorogishu / Kwakituk on Angata e-'m-barta, and Lobbeyok sections); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Hobley (1910).",
+      "notes": "Northern Maa (Plains Nilotic) pastoralists (including historical Il Doigio, Lorogishu / Kwakituk on Angata e-'m-barta, and Lobbeyok sections); documented in Krapf (1854), Farler & Wakefield (1882), Cust (1883, Vol. I, pp. 149–152), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Hobley (1910).",
       "id": "samburu",
       "isoCode": "saq",
       "glottocode": "samb1315"
@@ -301,7 +301,7 @@
       "counties": [
         "Baringo"
       ],
-      "notes": "Lake Baringo Maa-speaking irrigation farmers and fishermen (Njamus / Nyarusi across Njemps Kubwa [Liabori], Njemps Ndogo [Lekepir], and Korvan, comprising 16 clans from 6 tribes); documented in Farler & Wakefield (1882), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Beech (1911).",
+      "notes": "Lake Baringo Maa-speaking irrigation farmers and fishermen (Njamus / Nyarusi across Njemps Kubwa [Liabori], Njemps Ndogo [Lekepir], and Korvan, comprising 16 clans from 6 tribes); documented in Farler & Wakefield (1882), Cust (1883, Vol. I, pp. 149–152), Höhnel (1894), Johnston (1902), Hon. K. R. Dundas (1910), and Beech (1911).",
       "id": "ilchamus",
       "isoCode": "saq-ilc",
       "glottocode": "chAM1234"
@@ -314,7 +314,7 @@
         "West Pokot",
         "Baringo"
       ],
-      "notes": "Highland Nilotes (Northern Kalenjin branch, historically Suk / Bawgott across 11 geographical divisions and 24 orten clans); documented in Farler & Wakefield (1882), Johnston (1902), Hon. K. R. Dundas (1910), Beech (1911), and Barton (1921).",
+      "notes": "Highland Nilotes (Northern Kalenjin branch, historically Suk / Bawgott across 11 geographical divisions and 24 orten clans; reflexive/middle/emphatic enclitic pronounced [kɛːx] with a final velar fricative and written as a separate word in the Pökoot Bible per Zwarts, Chelimo & Jerono 2024: 539–540); documented in Farler & Wakefield (1882), Johnston (1902), Hon. K. R. Dundas (1910), Beech (1911), Barton (1921), Rottland (1982), and Zwarts, Chelimo & Jerono (2024).",
       "id": "pokot",
       "isoCode": "pko",
       "glottocode": "poko1263"
@@ -348,18 +348,17 @@
     {
       "language": "English",
       "status": "Official language",
-      "notes": "Used in government, courts, parliament, and education (from Grade 4 onwards)."
+      "role": "Language of government, courts, higher education, and media (Article 7(2), Constitution of Kenya 2010)"
     },
     {
       "language": "Swahili (Kiswahili)",
-      "status": "National & official language",
-      "notes": "Lingua franca spoken by over 90% of Kenyans as a first or second language."
+      "status": "National and official language",
+      "role": "National lingua franca, parliamentary co-official language, and primary language of inter-ethnic communication (Article 7(1)–(2), Constitution of Kenya 2010)"
     },
     {
-      "language": "Kenyan Sign Language (KSL)",
-      "status": "Recognised under Constitution (2010, Art. 7)",
-      "notes": "Promoted alongside Braille and other communication formats."
+      "language": "Kenyan Sign Language (KSL), Braille & Indigenous Languages",
+      "status": "Constitutionally promoted languages",
+      "role": "Protected and promoted by the State under Article 7(3) of the Constitution of Kenya 2010"
     }
-  ],
-  "source": "KNBS 2019 Census, Ethnologue, Glottolog"
+  ]
 }

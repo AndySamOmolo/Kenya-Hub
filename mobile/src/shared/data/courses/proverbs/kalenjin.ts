@@ -270,3 +270,27 @@ export const KALENJIN_PROVERBS: ProverbItem[] = [
     "sourceCitation": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford: Clarendon Press, 1909, Tongōchik-ap-Nandi #1–#76, pp. 133–151)"
   }
 ];
+
+// ── Update kalenjin-kipsigis-2019-2024 and append complete corpus examples from Joost Zwarts, Andrew Chelimo & Prisca Jerono's "The reflexive in Kalenjin: Its syntactic status and semantic functions" (Language Science Press, 2024, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482) ──
+const _kalZwartsProverb = KALENJIN_PROVERBS.find((p) => p.id === "kalenjin-kipsigis-2019-2024");
+if (_kalZwartsProverb) {
+  _kalZwartsProverb.languageName = "Kalenjin (Endo-Marakwet, Keiyo, Tugen & Kipsigis — Zwarts, Chelimo & Jerono 2024 & Landman 2019)";
+  _kalZwartsProverb.indigenous = "ma-po keey chii (Tugen, Ex. 8 p. 545) • toorēt-ēēt-aap keey ('the helping of each other, collaboration', Ex. 5c p. 544) • ak o-tēpii eng' kaalyeet okweeke eng' okweeke ('and stay in peace with one another', Ex. 22 p. 552) • Ru-e lakwet age tugul ('Every child is sleeping', Landman 2019).";
+  _kalZwartsProverb.literalTranslation = "No man is an island (lit. of himself, ma-po keey chii) • The helping of each other, collaboration (toorēt-ēēt-aap keey) • And stay in peace with one another • Every child is sleeping.";
+  _kalZwartsProverb.meaning = "Grounded in Joost Zwarts, Andrew Chelimo & Prisca Jerono ('The reflexive in Kalenjin: Its syntactic status and semantic functions', in Huang et al., eds., ACAL in SoCAL: Selected papers from the 53rd Annual Conference on African Linguistics, Language Science Press, 2024, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482) and Meredith Landman (2019, Ch. 25): illustrates the enclitic reflexive/reciprocal/middle/intensifier word kee(y) across Endo-Marakwet, Keiyo, and Tugen alongside Kipsigis universal quantification.";
+  _kalZwartsProverb.sourceCitation = "Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, ACAL in SoCAL, Ch. 21, pp. 539–556, Examples 1–24) & Meredith Landman (2019, Ch. 25)";
+}
+
+KALENJIN_PROVERBS.push(
+  {
+    "id": "zwarts-chelimo-jerono-2024-examples-1-to-24-complete",
+    "languageId": "kalenjin",
+    "languageName": "Kalenjin (Endo-Marakwet, Keiyo & Tugen)",
+    "indigenous": "(1a) kaa-kee-syaak nyuun keey • (1b) a-kuskuus aneen keey (p. 542) • (3) i-kerkeéy keè laak-o-chu (p. 543) • (4a–b) Ki-ng'war ng'oo cheepyoos-ee? Ki-ng'war kee / Ki-iim ng'oo piichooto? Ki-iim kee (p. 544) • (5a–d) las-at-aa keey, riip-ot-oo keey, toorēt-ēēt-aap keey, wiirun-ēēt-aap keey • (6) las-keey-nat-ēēt • (7) ki-sooman Kiptuum ak Kipēēt kitaapuu-syek-aap keey • (8) ma-po keey chii • (9a) a-riir-ee keey ākōō laak-ōō-k-wook • (10a–b) inyēēn keey / a-ku-ng'ālool-chi akwaaneek keey (pp. 544–546) • (11a–b) ā-ng'ālool-ēē keey / a-taakwees keey • (13a–f) takus keey, wiiru keey, rum/ruruuk/tuuyo keey, pēēsyō keey, walak keey, ng'uruuk keey, wēēchi keey, ng'unta keey, iim keey, las keey, uun keey, laak keey • (14a–b) tēēp kee, teleel kee, sus kee, liil kee • (15a–d) roong' kee kārātiik, choor kee asiis, tum kee pēy, mil kee koyin • (16–17) choomnyō, chuunchuunnyō, tuupchō, pēēsyō, pooryō, tēēniityō, tuuyō / si-mē-ē-tēēniit-yō keey nkōō chiitō aka / kii nēē kaa-kuu-tuu-yō keey pi-choochēē • (18–20) si-ku-ng'ālool-chi keey, ku-ung'-a keey akwaaneek, chēēr-ēēn-ook keey, a-ku-wēē-chi keey, paani kaa-ku-pēē-chi keey saang', ki-ng'wār-chin-i kee John patay, ng'wār-chin-i kee pātooy • (21–24) ki-chām-ē keey acheek eng' acheek, ak o-tēpii eng' kaalyeet okweeke eng' okweeke, Ā-ām-iisyēy ani-kee, Ki-mwoo-chi Mary tiip-ik akopo ichee-keey, ki-sooman kitapuu-syek-aap ichee-keey.",
+    "literalTranslation": "(1a) We judged ourselves then • (1b) I make myself weak • (3) These kids are copying each other (to look the same) • (4a–b) Who did the lady scratch? (She scratched) herself / Who did those people annoy? (They annoyed) each other • (5a–d) Praise of oneself (pride), guarding of oneself (self-control), helping of each other (collaboration), falling (throwing of oneself) • (7) Kiptum and Kibet read their own/each other's books • (8) No man is an island (lit. of himself) • (9a) Weep about yourself and your children • (10a–b) Only him / and he spoke to them privately • (15a–d) The blood gushed, the sun rose, water poured, stones fell • (17a–b) So that you do not compare yourself with somebody else / when those people had assembled • (20a–b) John was scratching his own back / They were scratching each other's backs • (21–24) We love each other, and stay in peace with one another, I am eating by myself/alone/without help, Mary told the girls about themselves, They read each other's books.",
+    "meaning": "Complete inventory of all 24 numbered example sets across Endo-Marakwet, Keiyo, and Tugen in Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024), 'The reflexive in Kalenjin: Its syntactic status and semantic functions' (in Huang et al., eds., ACAL in SoCAL, Berlin: Language Science Press, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482).",
+    "englishEquivalent": "No man is an island (ma-po keey chii); mutual help (toorēt-ēēt-aap keey) and peace (kaalyeet) sustain the community.",
+    "theme": "unity",
+    "sourceCitation": "Joost Zwarts, Andrew Chelimo & Prisca Jerono, 'The reflexive in Kalenjin: Its syntactic status and semantic functions', in ACAL in SoCAL (Berlin: Language Science Press, 2024, Ch. 21, pp. 539–556, Examples 1–24)"
+  }
+);

@@ -3676,3 +3676,100 @@ export const BORANA_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+BORANA_UNITS.push({
+  id: "borana-unit-15-cust-1883-modern-languages-vol1",
+  title: "Unit 15: Robert Needham Cust (1883, Vol. I) — 'A Sketch of the Modern Languages of Africa' (Chs. I–XI: Galla/Orómo, Somáli, Kwáfi/Masai & Kavirondo)",
+  description: "Explore Robert Needham Cust's 1883 Volume I (pp. [i]–xvi, 1–287, Portrait Plates I–VI & Trübner Catalogue): the 5 Chief Dialects of Galla/Orómo (pp. 122–125, including the Equatorial/Tana River dialect studied by Krapf & Wakefield at Ribé), Huma royal lineages, Wata 'Helot Races', Somáli (p. 121), Kwáfi & Masai (pp. 149–152), and Kavirondo/Luoh (pp. 275–285).",
+  icon: "Globe",
+  skills: [
+    {
+      id: "borana-cust-1883-five-dialects-huma-wata-15-1",
+      title: "The 5 Chief Galla/Orómo Dialects, Equatorial Orma (Wakefield & Krapf), Huma & Wata (Cust 1883, Vol. I, pp. 122–125)",
+      icon: "Map",
+      description: "Master Cust's (1883, Vol. I, Ch. IX.C.II, pp. 122–125) classification of the 5 Oromo dialects, the Huma royal dynasty of Uganda/Unyoro/Karagwe, Charles New's Wata hunter tributaries, and Reinisch's Lowland East Cushitic cluster.",
+      tips: "In Chapter IX.C.II (pp. 122–125), Cust records that while in war the Galla call themselves 'Sons of Galla' (per D'Abbadie), their national autonym is Orma or Oromo ('men', p. 12 & p. 122), stretching from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása.",
+      words: [
+        {
+          target: "Orma / Oromo ('men', pp. 12, 122) vs. 'Sons of Galla' (war title per D'Abbadie, p. 122)",
+          source: "Indigenous Oromo self-designation vs. wartime title in Cust (1883, Vol. I, pp. 12, 122)",
+          pronunciation: "or-ma / o-ro-mo",
+          hint: "Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II p. 122)"
+        },
+        {
+          target: "1. North of Shoa • 2. East of Shoa • 3. South of Shoa on the Hawash (Schmidt) • 4. River Godjeb (Tutschek) • 5. Equatorial or South Galla on the Dana/Tana River (Krapf 1850 & Wakefield at Ribé)",
+          source: "The 5 Chief Galla/Orómo Dialects enumerated by Krapf, Schmidt & Cust (1883, Vol. I, pp. 122–123)",
+          pronunciation: "sho-a / ha-wash / go-djeb / da-na / ri-be",
+          hint: "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–123)"
+        },
+        {
+          target: "Huma (Galla Royal Race of U-Ganda, U-Nyoro & Karagwe; King Mtesa speaking Nyoro, Ganda, Swahíli, Soga, Zulu, Arabic & Galla, pp. 16, 122–123)",
+          source: "Great Lakes royal dynasty of Galla origin and King Mtesa's 7-language polyglottism",
+          pronunciation: "hu-ma / m-te-sa",
+          hint: "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
+        },
+        {
+          target: "Helot Races (Wata hunter tributaries speaking Galla — Charles New, pp. 122–123; Ndorobo among Masai, p. 151) • Lango or Kidi (Somerset Nile, p. 125)",
+          source: "Hunter-gatherer tributary castes among the Galla and Masai, and Upper Nile relatives",
+          pronunciation: "wa-ta / n-do-ro-bo / la-ngo / ki-di",
+          hint: "Cust (1883, Vol. I, Ch. IX.C.II pp. 122–125 & Ch. X.A.VI p. 151)"
+        },
+        {
+          target: "Reinisch Cluster I (p. 119): A. Bishári (To'bedauie) • B. Saho • C. Dankálí (Afar) • D. Somáli (p. 121) • E. Galla (Orómo, pp. 122–125)",
+          source: "Prof. Leo Reinisch's 5-language Lowland East Cushitic cluster in the Ethiopic Sub-Group of Hamitic",
+          pronunciation: "bi-sha-ri / sa-ho / dan-ka-li / so-ma-li / gal-la",
+          hint: "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
+        },
+        {
+          target: "Loikób / pl. Eloikób ('Men') • Engútuk Eloikób (Kwáfi — Krapf 1854 & Last's 6,000-word Humba vocabulary) • Enguduk Iloigob (Masai — Erhardt 1857 & Thomson 1883, pp. 149–152) • Kavirondo & Luoh/Lwo (New 1873 & Wakefield MS, pp. 275–285)",
+          source: "East African Nuba-Fulah (Kwáfi & Masai) and Nile Sub-Group (Kavirondo/Dholuo & Shilluk/Lúr/Shúli) entries in Cust (1883, Vol. I)",
+          pronunciation: "loi-kob / e-loi-kob / en-gu-tuk e-loi-kob / ka-vi-ron-do / lu-oh",
+          hint: "Cust (1883, Vol. I, Ch. X pp. 149–152 & Ch. XI.D pp. 275–285)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Orma (Oromo = 'men') stretches from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása across 5 chief dialects.",
+          source: "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125) on the geographic extent and 5 dialects of Galla or Orómo."
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In Robert Needham Cust's 'A Sketch of the Modern Languages of Africa', Vol. I (1883, Ch. IX.C.II, pp. 122–125), what are the Five Chief Dialects of Galla or Orómo enumerated by Krapf and Schmidt, and how did Cust assist Rev. Thomas Wakefield at Ribé near Mombása?",
+          correctAnswer: "(1) North of Shoa, (2) East of Shoa toward Somáli/Dankáli-Land, (3) South of Shoa on the Hawash, (4) On the River Godjeb (Tutschek), and (5) The Equatorial or South Galla on the Dana/Tana River; Cust had a hand-copied MS of Krapf's rare 1840 'Elements' made from the RGS copy and sent to Wakefield at Ribé",
+          options: [
+            "(1) North of Shoa, (2) East of Shoa toward Somáli/Dankáli-Land, (3) South of Shoa on the Hawash, (4) On the River Godjeb (Tutschek), and (5) The Equatorial or South Galla on the Dana/Tana River; Cust had a hand-copied MS of Krapf's rare 1840 'Elements' made from the RGS copy and sent to Wakefield at Ribé",
+            "(1) Memphitic, (2) Sahidic, and (3) Bashmúric Koptic dialects",
+            "(1) Samhar, (2) Menza, (3) Barka, and (4) Habab Tigré dialects",
+            "(1) Mahas, (2) Kenús, (3) Dongola, and (4) Fadidsha Nuba dialects"
+          ],
+          hint: "See Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each East African language or group in Cust (1883, Vol. I) with its exact classification and documentation:",
+          correctAnswer: "Galla or Orómo (Ch. IX.C.II, pp. 122–125): 5–6 million speakers from 10° N to the Dana (Tana) mouth; 5 dialects; Krapf (1840, 1842, 1850), Tutschek (1844–45), Newman, Massaia & Wakefield",
+          pairs: [
+            {
+              left: "Galla or Orómo (Ch. IX.C.II, pp. 122–125)",
+              right: "5–6 million speakers from 10° N to the Dana (Tana) mouth; 5 dialects; Krapf (1840, 1842, 1850), Tutschek (1844–45), Newman, Massaia & Wakefield"
+            },
+            {
+              left: "Somáli (Ch. IX.C.I, p. 121)",
+              right: "Eastern Horn (Regio Aromatifera) from Bab el Mandal & Cape Guardafui to the Bantu frontier; Rigby (1850, 1866), Burton (1856) & Hunter (1880)"
+            },
+            {
+              left: "Kwáfi & Masai (Ch. X.A.V–VI, pp. 149–152)",
+              right: "Autonym Loikób/Eloikób ('Men'); Krapf (1854 Engútuk Eloikób), Erhardt (1857 Enguduk Iloigob), Last's 6,000-word Humba vocabulary & Lepsius (1880)"
+            },
+            {
+              left: "Kavirondo (Ch. XI.D.XXI, pp. 284–285)",
+              right: "Eastern shore of Victoria Nyanza; non-Bantu Nilotic language with marked affinity to Shilluk (Luoh/Lwo); Charles New (1873) & Wakefield MS Vocabulary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

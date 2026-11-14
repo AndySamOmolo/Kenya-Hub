@@ -2756,3 +2756,242 @@ export const POKOMO_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ── Register samson-darroch-pokomo-history-1944 & Unit 11: Mikael Samson & R. G. Darroch (1944, pp. 370–394 & Map) ──
+if (!POKOMO_CONFIG.sources.includes("samson-darroch-pokomo-history-1944")) {
+  POKOMO_CONFIG.sources.push("samson-darroch-pokomo-history-1944");
+}
+if (!POKOMO_CONFIG.sources.includes("werner-bantu-coast-pokomo-1915")) {
+  POKOMO_CONFIG.sources.push("werner-bantu-coast-pokomo-1915");
+}
+
+POKOMO_UNITS.push({
+  id: "pokomo-unit-11-samson-darroch-1944",
+  title: "Unit 11: A History of the Pokomo — Malachini & Upper Pokomo Clans, the Chikovu Lament Song, Galana Maro Map & Kijo/Ngaji Charter (Mikael Samson & R. G. Darroch 1944, pp. 370–394)",
+  description: "Master 100% of Mikael Samson & R. G. Darroch (1944, pp. 370–394 & Map): the Kalindi & Buu histories, the 3 dried Buu rivers, the verbatim Kipokomo Lament Song for Chikovu (p. 385), all 6 Upper Pokomo tribes and their Bantu/Oromo clan tables, the Abamogo greeting, Jilo Bune's war, Ngaji/Kijo & Waganga, Missions (1884–1887), and Notes (1)–(13).",
+  icon: "BookOpen",
+  skills: [
+    {
+      id: "pokomo-samson-1944-malachini-chikovu-map",
+      title: "Kalindi, Buu, the Three Former Rivers, the Chikovu Lament Song & the 14-Section Tana Map (pp. 370–374, 383–385 & Notes 1–4)",
+      icon: "Compass",
+      description: "Learn the Kalindi migration under Hidabo to Shaka (Waungwana wa Mashaa), Liongo Fumo & Ozi, family mlango land tenure, the Buu–Sanye hippo covenant, the 3 dried Buu rivers (Milaoni/Magogoni, Ngambwa, Mbewee), and the verbatim Buu Lament Song for Chikovu (p. 385).",
+      tips: "In Kipokomo, cultivated land belongs to the family lineage (mlango) and cannot be sold; 'Mbelezo' means a canal (hence Belezoni where the present Tana leaves the old Sheriko); and the true Pokomo name of the Tana River is 'Galana Maro' ('Maro's river').",
+      culturalNote: "Mikael Samson (a Buu clerk at Kipini) drew a 4+ foot map with Garsen school-teacher Johana Daji and elder Luluta documenting all 14 river sections from Elwana to Ras Shaka, and recorded the verbatim Kipokomo lament sung by Buu elders and women with tears in their eyes for their lost village of Chikovu (p. 385).",
+      words: [
+        {
+          target: "Mumaitha kadza ndio odu / Mbuu ni mzuka, endani / mukayowe kumea mani kubfaa / miima, azi na mfungu za / Witu nazo huziona, mudzi / wehu mudzi wa mbinguni / hutamisaa huichamba huyawe / na manya.",
+          source: "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills, we have seen the portions of Witu, our village was of the heavens, we are troubled, we did not want to be lost out in the bush.",
+          pronunciation: "mu-mai-tha ka-dza ndi-o o-du m-bu-u ni m-zu-ka",
+          hint: "Mikael Samson & R. G. Darroch (1944, p. 385) — Verbatim Buu lament song for Chikovu"
+        },
+        {
+          target: "Galana Maro • Milaoni (Magogoni) • Ngambwa • Mbewee • Sheriko",
+          source: "Maro's river (the Tana River) • First former Buu river (Nkombeni/Mowa to Kau, shared with the Sanye) • Second former Buu river (Koloni to Chikovu) • Third former Buu river (Muhoni, Murikicha, Nyangu, Gawisa to Mbalahini) • Old Tana River channel at Belezoni",
+          pronunciation: "ga-la-na ma-ro / mi-la-o-ni / nga-mbwa / m-be-we-e / she-ri-ko",
+          hint: "Mikael Samson & R. G. Darroch (1944, Map & pp. 373–374, 384, 387–388, 392)"
+        },
+        {
+          target: "Kalindi (Namboo & Mangwe / Gomeni) • Hidabo (Mrio / Kina Inti) • Shaka (Waungwana wa Mashaa) • Liongo Fumo & Ozi (Ozo Swahilis at Kau)",
+          source: "The two Kalindi clans • Chief Hidabo & Hidabo Hill south of Lamu (pre-Islamic town Mrio of the Kina Inti, Note 1) • Shaka (founded A.H. 121 under Harun al Rashid, Note 2) • Stranger chief Liongo Fumo (A.D. 1306–1344) who built Ozi",
+          pronunciation: "ka-li-ndi / na-mbo-o / ma-ngwe / hi-da-bo / ki-na i-nti / sha-ka / li-o-ngo fu-mo",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 371–372, 383–384 & Notes 1–3 pp. 391–392)"
+        },
+        {
+          target: "mlango • Mbelezo (Belezoni) • maro",
+          source: "Family lineage holding inalienable cultivated land (Note 3, p. 392) • A canal in Pokomo (hence Belezoni, Note 4, p. 392) • System of free village-to-village canoe transport demanded by Arabs and defeated at Kirungu (p. 375 & Note 7)",
+          pronunciation: "m-la-ngo / m-be-le-zo / ma-ro",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 375, 391–392)"
+        },
+        {
+          target: "Kiriole (at Meli) • Rangi (at Bura / Golbanti) • Kombo Mitambo (at Belezoni) • Abdalla Bashora (Headman of Chara)",
+          source: "The two Kalindi Headmen and one Ndera Headman (~1,000 Upper Pokomo in Chara) listed in 1900 by first D.C. Mr. Anderssen, plus the 1944 Ndera Headman of Chara (p. 373 & Note 4, p. 392)",
+          pronunciation: "ki-ri-o-le / ra-ngi / ko-mbo mi-ta-mbo / a-bda-lla ba-sho-ra",
+          hint: "Mikael Samson & R. G. Darroch (1944, p. 373 & Note 4 p. 392)"
+        },
+        {
+          target: "Oromo (not Galla) • Wata (not Boni) • Elwana (not Malakote) • Munyo (not Korokoro)",
+          source: "The four non-Pokomo peoples' true self-designations used by R. G. Darroch (pp. 371, 380 & Note 11, p. 393; Oromo also use 'Munyo' for all river tribes)",
+          pronunciation: "o-ro-mo / wa-ta / e-lwa-na / mu-nyo",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 371, 380, 393)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Mudzi wehu mudzi wa mbinguni hutamisaa huichamba huyawe na manya.",
+          source: "Our village (Chikovu) was a village of the heavens; we are troubled, we did not want to be lost out in the bush. (Buu Lament Song, p. 385)"
+        },
+        {
+          target: "Mumaitha kadza ndio odu Mbuu ni mzuka, endani mukayowe kumea mani kubfaa miima.",
+          source: "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills. (Buu Lament Song, p. 385)"
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "In the verbatim Kipokomo Lament Song of the Buu for their lost village Chikovu (Mikael Samson 1944, p. 385), what does 'mudzi wehu mudzi wa mbinguni hutamisaa huichamba huyawe na manya' mean?",
+          correctAnswer: "Our village was of the heavens, we are troubled, we did not want to be lost out in the bush",
+          options: [
+            "Our village was of the heavens, we are troubled, we did not want to be lost out in the bush",
+            "The Tana River has flooded our rice fields twice this year",
+            "Liongo Fumo built the town of Ozi beyond Shaka",
+            "We paddles our canoes from Baumo to Lake Lemu"
+          ],
+          hint: "From the 8-line Kipokomo song on p. 385"
+        },
+        {
+          type: "multiple_choice",
+          prompt: "According to Mikael Samson & R. G. Darroch (1944, pp. 373–374, 384), what were the three successive former river channels occupied by the Buu before they moved to Ngao on the present Tana?",
+          correctAnswer: "The Milaoni (Magogoni), the Ngambwa (where Chikovu stood), and the Mbewee",
+          options: [
+            "The Milaoni (Magogoni), the Ngambwa (where Chikovu stood), and the Mbewee",
+            "The Sabaki, the Voi, and the Lumi",
+            "The Ewaso Ng'iro, the Daua, and the Omo",
+            "The Athi, the Thika, and the Ramisi"
+          ],
+          hint: "Explained in 'Explanation of the Map of Malachini Country' (pp. 373–374)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each term from Mikael Samson & R. G. Darroch (1944) with its meaning:",
+          correctAnswer: "Galana Maro: Maro's river (true Pokomo name of the Tana River)",
+          pairs: [
+            {
+              left: "Galana Maro",
+              right: "Maro's river (true Pokomo name of the Tana River)"
+            },
+            {
+              left: "Mbelezo (Belezoni)",
+              right: "Pokomo word for a canal (where the present Tana leaves the Sheriko)"
+            },
+            {
+              left: "mlango",
+              right: "Family lineage holding inalienable cultivated land"
+            },
+            {
+              left: "maro",
+              right: "Free village-to-village canoe relay demanded by Arabs and defeated at Kirungu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pokomo-samson-1944-upper-pokomo-clans-kijo",
+      title: "All 6 Upper Pokomo Tribes, Bilingual Bantu/Oromo Clan Tables, 'Abamogo', Jilo Bune's War & Kijo/Ngaji (pp. 374–394)",
+      icon: "Crown",
+      description: "Master the complete clan tables (Bantu & Oromo names) and histories of Ndera, Gwano, Kinakomba, Ndura, Zubaki, and Malalulu, the 'Abamogo' greeting, the Treacherous War of Jilo Bune, the Battles of Kirungu & Kadada, Chief Mukaraji Maro's genealogy, Ngaji/Kijo, Waganga, Muunguni, Missions (1884–1887), and 1895 Government arrival.",
+      tips: "Most Upper Pokomo clans have both a Bantu name and an Oromo/Hamitic name (including 'Karayu', the Boran Royal Clan of Chief Gedu in Ethiopia), except the Malalulu whose 7 clans have only Hamitic names (Note 5, p. 392).",
+      culturalNote: "When Ana Dima (ancestor of the Gwano Kinauru clan) followed his lost canoe downstream to Lake Lemu (or Mitole on the Ngambwa), he met Sango Vere (ancestor of the Buu), who was looking for fire; they greeted each other as 'Abamogo' ('wayfarer'), which remains the mutual greeting between Malachini and Upper Pokomo to this day (p. 376 & Note 8 p. 392).",
+      words: [
+        {
+          target: "Abamogo! ('Wayfarer!' — greeting of Ana Dima of Gwano & Sango Vere of Buu at Lake Lemu / Mitole, pp. 376, 392)",
+          source: "Mutual greeting used to this day between Malachini and Upper Pokomo commemorating the meeting of Ana Dima and Sango Vere (or his father Vere)",
+          pronunciation: "a-ba-mo-go",
+          hint: "Mikael Samson & R. G. Darroch (1944, p. 376 & Note 8 p. 392)"
+        },
+        {
+          target: "Ndera Clans: Kinamoto / Kinamaziwani (Karayu) • Kinambare (Karara) • Kinankaru (Sukana) • Kinauru (Gamadho) • Kinanato (from Gashiro & Hadiribo, freed by Ana Abio)",
+          source: "The 4 tabulated Ndera clans + Kinanato (pp. 374–377, 385–386; at Kirungu, Gwano warrior Buya Gafo killed Arab leader Mwenye Era, Note 7 p. 392)",
+          pronunciation: "ki-na-mo-to / ki-na-ma-zi-wa-ni / ka-ra-yu / ki-na-mba-re / ki-na-nka-ru / ki-na-u-ru / ki-na-na-to",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 374–377, 385–386, 392)"
+        },
+        {
+          target: "Gwano Clans: Kinauru (Gamado — Red & Black septs of Chief Dadho Moroa) • Kinadyasi (Karayu — Kokane Didha) • Kinakale / Karara Dulo (Karara — Dulo at Wenje)",
+          source: "The 3 Gwano clans (pp. 375–378; Ana Dima at Takafu near Makere, with Ana Bake = Kofira Oromo & Ana Kare = Migo Oromo; survived Oromo chief Jilo Bune's drugged-bull stockade ambush)",
+          pronunciation: "ki-na-u-ru / ga-ma-do / da-dho mo-ro-a / ki-na-dya-si / ki-na-ka-le / ka-ra-ra du-lo",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 375–378, 386 & Notes 6, 9 pp. 392–393)"
+        },
+        {
+          target: "Kinakomba Clans: Kinambolo & Mandoyo (Karara — Boran Ali Gutu at Mankombe/Dakacha below Kiaponi) • Kinamuyani (Garjeda) • Kinamulunde (Uta) • Kinambura (Wayu — Kokane Ware) • Kinanguu",
+          source: "The Kinakomba clans split between Lower Kinakomba at Kiaponi (chiefs & Ngaji house, descended from Ali Gutu) and Upper Kinakomba at Masalani (pp. 378, 386–387)",
+          pronunciation: "ki-na-mbo-lo / ma-ndo-yo / a-li gu-tu / ki-na-mu-ya-ni / ki-na-mu-lu-nde / ki-na-mbu-ra",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 378, 386–387)"
+        },
+        {
+          target: "Ndura Clans: Sindo wa Ndura (Karayu — Galole Hirimani & Gababa Kitole) • Kinambare (Uta — Mzuka Wayu) • Kinanato (Karara — Omara Oda & Chief Dadho Bahola) • Kinagasere (Baretu) • Kinajasi (Hajeji) • Kinambolo (Karara) • Kinambura (Wayole)",
+          source: "The 7 Ndura clans, famous for secret night cultivation, Somali attacks at Mangulo & Mazuni, and the Fanjua–Mazuni club fight stopped by teacher Ibrahim Kitere (pp. 378–379, 387)",
+          pronunciation: "si-ndo wa ndu-ra / ga-lo-le hi-ri-ma-ni / o-ma-ra o-da / da-dho ba-ho-la / i-bra-him ki-te-re",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 378–379, 387)"
+        },
+        {
+          target: "Zubaki Clans: Uta (Hiye at Hola) • Ilani (Gavere) • Karayu (Mtabashi) • Jaba (Munyo) • Kinagasere (Baretu wa Maji) • Kinakaliani (Garjeda — Maro Wayu, Dulo Maro, Sarumbe & Kamba Machika Mwemwere) • Meta (Komora Eba) • Kinagaiba (Wayu Abae) • Karara (Komora Diribo)",
+          source: "The 9 Zubaki clans and 4 wars: killing Oromo chief Gungumi at Hola, Chief Wayu Umuru defeating Wata (who became Ngatana at Lake Jange), Chief Karayu Wayu shooting Somalis at Kadada, and Kamba burning Kadada stockade (Goyoi & blind elder Malim Jilo, pp. 380–382)",
+          pronunciation: "u-ta / i-la-ni / ka-ra-yu / ja-ba / ki-na-ga-se-re / ki-na-ka-li-a-ni / ma-chi-ka mwe-mwe-re / ka-da-da",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 380–382, 387–388)"
+        },
+        {
+          target: "Malalulu Clans (All Hamitic): Wayu Duko & Wayu Chireti (Gatokombo/Maro < tokombo 'mud' → Igu, Ibae & Kimtu) • Uta (Bakai Galgalo) • Meta (Kuyo) • Dulo/Karara (Dulo) • Garjeda (Ganyare) • Ilani (Malalulu & Bashora)",
+          source: "The 7 Malalulu clans and Chief Mukaraji Maro's 6-generation genealogy: Gatokombo (Maro)—Igu—Maro—Dadho—Maro—Mukaraji (pp. 382–383, 388 & Note 11 p. 393)",
+          pronunciation: "wa-yu du-ko / wa-yu chi-re-ti / ga-to-ko-mbo / to-ko-mbo / mu-ka-ra-ji ma-ro",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 382–383, 388 & Note 11 p. 393)"
+        },
+        {
+          target: "Kijo & Ngaji • Waganga • Muunguni & 'God's Portion' • 1884 Golbanti (Methodist) & Kulesa (Swedish) • 1887 Ngao (Neukirchen Mission: Wietts, Chief Buko Doyo, Kadiko Herbae, Abadula Gerera) • 1895 Mr. Anderssen (Bwana Muchinjeni)",
+          source: "Pokomo religious, legal, missionary, and administrative milestones (pp. 388–394, Notes 12–13; including the 7th-month pregnancy exemption from field cultivation)",
+          pronunciation: "ki-jo / nga-ji / wa-ga-nga / mu-u-ngu-ni / bwa-na mu-chi-nje-ni",
+          hint: "Mikael Samson & R. G. Darroch (1944, pp. 388–394)"
+        }
+      ],
+      sentences: [
+        {
+          target: "Sango Vere na Ana Dima wakasalimiana kwa dzina la Abamogo.",
+          source: "Sango Vere and Ana Dima greeted each other by the name of Abamogo ('wayfarer'). (p. 376)"
+        },
+        {
+          target: "Wapokomo hawawezi kuvuna bila kuweka fungu la Mungu huko Muunguni.",
+          source: "The Pokomo could not begin to reap without setting aside 'God's portion' for God in heaven (Muunguni). (p. 389)"
+        }
+      ],
+      authoredExercises: [
+        {
+          type: "multiple_choice",
+          prompt: "Why do Malachini and Upper Pokomo greet each other as 'Abamogo' ('wayfarer') to this day (Mikael Samson & R. G. Darroch 1944, p. 376 & Note 8 p. 392)?",
+          correctAnswer: "Because Ana Dima (ancestor of the Gwano) and Sango Vere (ancestor of the Buu) greeted each other as 'Abamogo' when they met at Lake Lemu / Mitole",
+          options: [
+            "Because Ana Dima (ancestor of the Gwano) and Sango Vere (ancestor of the Buu) greeted each other as 'Abamogo' when they met at Lake Lemu / Mitole",
+            "Because Chief Hidabo used the word when naming Hidabo Hill south of Lamu",
+            "Because Oromo chief Jilo Bune used it before the stockade ambush",
+            "Because Mr. Anderssen (Bwana Muchinjeni) introduced it at Ngao in 1895"
+          ],
+          hint: "See 'Ana Dima's Journey Downstream' (p. 376) and Note 8 (p. 392)"
+        },
+        {
+          type: "multiple_choice",
+          prompt: "Why was the founder of the Malalulu clans Wayu Duko and Wayu Chireti (whose real name was Maro) nicknamed 'Gatokombo' (Mikael Samson & R. G. Darroch 1944, p. 382 & Note 11 p. 393)?",
+          correctAnswer: "Because he was found eating mud, which is called 'tokombo' in the Malalulu dialect",
+          options: [
+            "Because he was found eating mud, which is called 'tokombo' in the Malalulu dialect",
+            "Because he built the first dugout canoe on the Milaoni River",
+            "Because he defeated the Arab leader Mwenye Era at Kirungu",
+            "Because he carved the first honey-barrel Ngaji drum for the Kijo"
+          ],
+          hint: "See 'The Malalulu' (p. 382)"
+        },
+        {
+          type: "match_pairs",
+          prompt: "Match each historical figure or institution in Mikael Samson & R. G. Darroch (1944) with its description:",
+          correctAnswer: "Dadho Moroa: Sole surviving Gwano chief after Jilo Bune's drugged-bull ambush (ancestor of Red & Black Kinauru septs)",
+          pairs: [
+            {
+              left: "Dadho Moroa",
+              right: "Sole surviving Gwano chief after Jilo Bune's drugged-bull ambush (ancestor of Red & Black Kinauru septs)"
+            },
+            {
+              left: "Buya Gafo",
+              right: "Gwano warrior living in Ndera who killed Arab leader Mwenye Era at Kirungu"
+            },
+            {
+              left: "Bwana Muchinjeni",
+              right: "Pokomo name for Mr. Anderssen, first District Commissioner at Ngao in 1895"
+            },
+            {
+              left: "Muunguni",
+              right: "Pokomo name for the heavens ('where God lives')"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

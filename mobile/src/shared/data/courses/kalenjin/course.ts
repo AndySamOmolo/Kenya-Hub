@@ -3393,3 +3393,187 @@ export const KALENJIN_UNITS: CourseUnit[] = [
     ]
   }
 ];
+
+// ── Unit 16: Complete Line-by-Line Integration of Joost Zwarts, Andrew Chelimo & Prisca Jerono's "The reflexive in Kalenjin: Its syntactic status and semantic functions" (Language Science Press, 2024, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482) ──
+if (!KALENJIN_CONFIG.sources.includes("zwarts-chelimo-jerono-kalenjin-reflexive-2024")) {
+  KALENJIN_CONFIG.sources.push("zwarts-chelimo-jerono-kalenjin-reflexive-2024");
+}
+
+KALENJIN_UNITS.push({
+  "id": "kalenjin-unit-16-zwarts-chelimo-jerono-2024",
+  "title": "Unit 16: Zwarts, Chelimo & Jerono (2024) — The Reflexive in Kalenjin: Syntactic Status & Semantic Functions of kee(y) (pp. 539–556, Examples 1–24)",
+  "description": "Master all 18 pages (pp. 539–556) of Joost Zwarts, Andrew Chelimo & Prisca Jerono's 2024 study 'The reflexive in Kalenjin: Its syntactic status and semantic functions' across Endo-Marakwet (1,815 NT tokens), Keiyo, Tugen, Pökoot, Nandi, Kipsigis, and Cherang'any: enclitic vs. suffix status, ATR opacity, nominal/prepositional/pronoun uses, middle voice & inanimate anticausatives, arity reduction, and three-way typological polysemy.",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "kalenjin-zwarts-2024-enclitic-nonverbal-16-1",
+      "title": "Syntactic Status of kee(y): Enclitic, ATR Opacity, Lexicalisation & Non-Verbal Uses (§§1–4, pp. 539–546, Examples 1–10)",
+      "icon": "Layers",
+      "description": "Learn why Kalenjin kee(y) ([kɛː], [kɛːj], Pökoot [kɛːx]) is a separate enclitic word rather than a verbal suffix, how it behaves in the 1,815-token Endo-Marakwet New Testament corpus, and how it combines with nominalisations, nouns, the preposition po, and pronouns across Examples (1)–(10).",
+      "tips": "Two facts prove kee(y) is not a verbal suffix: (1) adverbs and subject pronouns can intervene between the verb and kee(y) (kaa-kee-syaak nyuun keey, Ex. 1a; a-kuskuus aneen keey, Ex. 1b), and (2) kee(y) is opaque to +ATR vowel harmony (toorēt keey vs. 1PL object suffix toorēt-ēēch, p. 542).",
+      "words": [
+        {
+          "target": "(1a) kaa-kee-syaak nyuun keey • (1b) a-kuskuus aneen keey (Endo-Marakwet, p. 542)",
+          "source": "we judged ourselves then (adverb nyuun intervenes) • I make myself weak (subject pronoun aneen intervenes)",
+          "pronunciation": "kaa-kee-sya-ak nyu-un ke-ey / a-ku-sku-us a-ne-en ke-ey",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §3, p. 542, Example 1a–b)"
+        },
+        {
+          "target": "ATR Opacity (p. 542): neet-eech ('teach us') vs. toorēt-ēēch ('help us') • neet keey & toorēt keey • Contemporative +ATR -yō / -sōōt: ng'eet ('stand up') → ng'ēētyō, ng'ēētsōōt",
+          "source": "1PL suffix -eech and contemporative -yō/-sōōt harmonise in +ATR, whereas enclitic keey remains −ATR like pronominals in (2a–c) (āmāraa, kichāmēēchaan, āchāmēēkwaan, keemwaanyēēn; wēēchiikwaak, mālāktiing'waang', koonēētiisyeenyiin; kookeelyaanoonēē, taapukeechoochēē, paannyēēnyi)",
+          "pronunciation": "ne-et-e-ech / too-rē-t-ē-ēch / ne-et ke-ey / too-rēt ke-ey / ng'ē-ēt-yō",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §3, pp. 542–543, Example 2a–c; citing Lodge 1995, Rottland 1982: 229 & Zwarts et al. 2023)"
+        },
+        {
+          "target": "Lexicalised Stems (pp. 541, 543) & (3) i-kerkeéy keè laak-o-chu (Keiyo, p. 543) • (4a) Ki-ng'war ng'oo cheepyoos-ee? Ki-ng'war kee. • (4b) Ki-iim ng'oo piichooto? Ki-iim kee. (Keiyo, p. 544)",
+          "source": "karkeey ('be like' → karkayiit, kārkēēyin), cheepaykeey(aan) ('prostitute'), peerkeey(aan) ('virgin'), kimekeyaan / kipekeyaan ('selfish person') • (3) These kids are copying each other (to look the same) • (4a–b) Who did the lady scratch? (She scratched) herself • Who did those people annoy? (They annoyed) each other",
+          "pronunciation": "i-ker-ke-ey ke-e laa-ko-chu / ki-ng'war kee / ki-iim kee",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §§2–3, pp. 541, 543–544, Examples 3–4)"
+        },
+        {
+          "target": "(5a) las-at-aa keey • (5b) riip-ot-oo keey (Endo-Marakwet) • (5c) toorēt-ēēt-aap keey • (5d) wiirun-ēēt-aap keey • (6) las-keey-nat-ēēt (Tugen, pp. 544–545)",
+          "source": "(5a) praise of oneself, i.e. pride • (5b) guarding of oneself, self-control • (5c) the helping of each other, collaboration • (5d) the falling, lit. throwing of oneself • (6) praise of oneself, i.e. pride (internal lexicalised stem)",
+          "pronunciation": "la-sa-taa ke-ey / rii-po-too ke-ey / too-rē-tē-ē-taap ke-ey / wii-ru-nē-ē-taap ke-ey / las-ke-ey-na-tē-ēt",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §4, pp. 544–545, Examples 5–6)"
+        },
+        {
+          "target": "(7) ki-sooman Kiptuum ak Kipēēt kitaapuu-syek-aap keey (Tugen) • (8) ma-po keey chii (Tugen) • (9a) a-riir-ee keey ākōō laak-ōō-k-wook vs. (9b) *a-riir-ee laak-ōō-k-wook ākōō keey • (10a) inyēēn keey • (10b) a-ku-ng'ālool-chi akwaaneek keey (Endo-Marakwet, pp. 545–546)",
+          "source": "(7) Kiptum and Kibet read their own/each other's books • (8) No man is an island (lit. of himself) • (9a) Weep about yourself and your children • (10a) (Who came?) Only him • (10b) and he spoke to them privately",
+          "pronunciation": "ki-soo-man kip-tuum ak ki-pē-ēt ki-taa-puu-syek-aap ke-ey / ma-po ke-ey chii / i-nyē-ēn ke-ey",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §4, pp. 545–546, Examples 7–10)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "kaa-kee-syaak nyuun keey (p. 542) • ma-po keey chii (p. 545) • las-at-aa keey & riip-ot-oo keey (p. 544)",
+          "source": "We judged ourselves then • No man is an island (lit. of himself) • Praise of oneself (pride) & guarding of oneself (self-control)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, §§2–3, pp. 541–544), what are the two primary morphosyntactic arguments showing that Kalenjin 'kee(y)' is not a verbal suffix, and how many occurrences were found in the Endo-Marakwet New Testament?",
+          "correctAnswer": "(1) Words such as adverbs ('nyuun' in Ex. 1a) and subject pronouns ('aneen' in Ex. 1b) can intervene between the verb and 'kee(y)', and (2) 'kee(y)' is opaque to +ATR vowel harmony ('toorēt keey' vs. 'toorēt-ēēch'); out of 1,815 occurrences in the Endo-Marakwet NT, 1,653 are written as a separate word and 162 occur in the lexicalised stems 'karkeey', 'cheepaykeey', and 'peerkeey'",
+          "options": [
+            "(1) Words such as adverbs ('nyuun' in Ex. 1a) and subject pronouns ('aneen' in Ex. 1b) can intervene between the verb and 'kee(y)', and (2) 'kee(y)' is opaque to +ATR vowel harmony ('toorēt keey' vs. 'toorēt-ēēch'); out of 1,815 occurrences in the Endo-Marakwet NT, 1,653 are written as a separate word and 162 occur in the lexicalised stems 'karkeey', 'cheepaykeey', and 'peerkeey'",
+            "'kee(y)' always precedes the verb at the start of a sentence and harmonises in +ATR with every verb root",
+            "'kee(y)' only occurs with nouns and never with verbs in the Endo-Marakwet New Testament",
+            "'kee(y)' can stand alone as a single-word fragment answer to a 'who' question"
+          ],
+          "hint": "See Zwarts, Chelimo & Jerono (2024, §§2–3, pp. 541–544)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each non-verbal or enclitic example from Sections 3–4 of Zwarts, Chelimo & Jerono (2024, pp. 542–546) with its exact English translation:",
+          "correctAnswer": "(1a) kaa-kee-syaak nyuun keey (Endo-Marakwet, p. 542): 'we judged ourselves then'",
+          "pairs": [
+            {
+              "left": "(1a) kaa-kee-syaak nyuun keey (Endo-Marakwet, p. 542)",
+              "right": "'we judged ourselves then'"
+            },
+            {
+              "left": "(3) i-kerkeéy keè laak-o-chu (Keiyo, p. 543)",
+              "right": "'These kids are copying each other (to look the same)'"
+            },
+            {
+              "left": "(5b) riip-ot-oo keey (Endo-Marakwet) & (5c) toorēt-ēēt-aap keey (Tugen, p. 544)",
+              "right": "'guarding of oneself, self-control' & 'the helping of each other, collaboration'"
+            },
+            {
+              "left": "(8) ma-po keey chii (Tugen, p. 545)",
+              "right": "'No man is an island (lit. of himself)'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kalenjin-zwarts-2024-middle-arity-intensifier-16-2",
+      "title": "Middle Voice, Inanimate Anticausatives, Arity Reduction & Pronoun Intensification (§§5–7, pp. 546–556, Examples 11–24)",
+      "icon": "Compass",
+      "description": "Master the middle voice categories of kee(y) (Kemmer 1993), inanimate anticausatives (Ex. 15), contemporative natural reciprocals (-yō / -sōōt, Ex. 16–17), syntactic arity reduction (Ex. 18–22), pronoun intensification (Ex. 23–24), and the typological conclusions of Zwarts, Chelimo & Jerono (2024).",
+      "tips": "In Kalenjin, kee(y) expresses both direct reflexive/reciprocal and Kemmer (1993) middle meanings—including inanimate anticausatives like roong' kee kārātiik ('the blood gushed') and choor kee asiis ('the sun rose')—AND acts as an intensifying adjunct on pronouns (Ā-ām-iisyēy ani-kee 'I am eating by myself/alone'), counterexemplifying König & Siemund (2000: 59) and Kemmer (1993: 196).",
+      "words": [
+        {
+          "target": "(11a) ā-ng'ālool-ēē keey ('I am talking about myself') • (11b) a-taakwees keey ('greet each other!') • neet keey ('teach oneself' → 'learn', pp. 546–547)",
+          "source": "Reflexive, reciprocal, and cognitive middle uses of keey in Endo-Marakwet",
+          "pronunciation": "ā-ng'ā-loo-lē-ē ke-ey / a-taa-kwe-es ke-ey / ne-et ke-ey",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §5, pp. 546–547, Example 11)"
+        },
+        {
+          "target": "(13a–f) Endo-Marakwet Middle Categories (p. 547): Spontaneous: takus keey ('drown'), wiiru keey ('fall') • Collective: rum keey, ruruuk keey, tuuyo keey ('gather'), pēēsyō keey ('separate') • Non-translational motion: walak keey ('turn'), ng'uruuk keey ('bend') • Translational motion: wēēchi keey ('go'), ng'unta keey ('walk quickly') • Emotion: iim keey ('worry'), las keey ('boast') • Grooming: uun keey ('wash'), laak keey ('dress')",
+          "source": "Complete classification of Endo-Marakwet middle voice constructions with keey following Kemmer (1993)",
+          "pronunciation": "ta-kus ke-ey / wii-ru ke-ey / rum ke-ey / wa-lak ke-ey / ng'u-ru-uk ke-ey / wē-ē-chi ke-ey / u-un ke-ey / la-ak ke-ey",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §5, p. 547, Example 13a–f)"
+        },
+        {
+          "target": "(14a–b) Keiyo Posture & Body Activity (p. 548): tēēp kee ('sit down'), teleel kee ('stand up') • sus kee ('[body] itch'), liil kee ('[teeth] ache') | (15a–d) Keiyo Inanimate Anticausatives (p. 548): (15a) roong' kee kārātiik • (15b) choor kee asiis • (15c) tum kee pēy • (15d) mil kee koyin",
+          "source": "(14a–b) Sit down, stand up • itch, ache | (15a) the blood gushed • (15b) the sun rose • (15c) water poured • (15d) stones fell",
+          "pronunciation": "tē-ēp kee / te-le-el kee / ro-ong' kee kā-rā-ti-ik / cho-or kee a-si-is / tum kee pēy / mil kee ko-yin",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §5, p. 548, Examples 14–15)"
+        },
+        {
+          "target": "(16) Contemporative -yō Natural Reciprocals (p. 549): choomnyō ('reconcile'), chuunchuunnyō ('disagree'), tuupchō ('be brothers'), pēēsyō ('disperse'), pooryō ('fight'), tēēniityō ('be equal'), tuuyō ('meet') • (17a) si-mē-ē-tēēniit-yō keey nkōō chiitō aka • (17b) kii nēē kaa-kuu-tuu-yō keey pi-choochēē",
+          "source": "Natural reciprocal verbs in -yō (Rottland 1982: 127) and their causative/anticausative alternants with keey: (17a) 'so that you do not compare yourself with somebody else' • (17b) 'when those people had assembled'",
+          "pronunciation": "cho-om-nyō / tu-up-chō / pē-ēs-yō / po-or-yō / tē-ē-ni-it-yō / tu-u-yō",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §5, pp. 548–549, Examples 16–17)"
+        },
+        {
+          "target": "(18a) si-ku-ng'ālool-chi keey • (18b) ku-ung'-a keey akwaaneek • (18c) chēēr-ēēn-ook keey • (19a) a-ku-wēē-chi keey • (19b) paani kaa-ku-pēē-chi keey saang' vs. (19c) ku-pa saang' • (20a) ki-ng'wār-chin-i kee John patay • (20b) ng'wār-chin-i kee pātooy (pp. 549–551)",
+          "source": "(18a) so that he talks to himself • (18b) he hid himself for them • (18c) strengthen oneself with you • (19a) and he went away • (19b) when they had gone outside • (20a) John was scratching his own back • (20b) They were scratching each other's backs",
+          "pronunciation": "si-ku-ng'ā-lool-chi ke-ey / ku-u-ng'a ke-ey a-kwaa-ne-ek / ki-ng'wār-chi-ni kee john pa-tay",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §6, pp. 549–551, Examples 18–20)"
+        },
+        {
+          "target": "(21a–c) ki-chām-ē keey acheek eng' acheek / o-chām-ē keey okweek eng' okweek / chām-ē keey icheek eng' icheek • (22) ak o-tēpii eng' kaalyeet okweeke eng' okweeke • (23) Ā-ām-iisyēy ani-kee • (24a) Ki-mwoo-chi Mary tiip-ik akopo ichee-keey • (24b) ki-sooman kitapuu-syek-aap ichee-keey (pp. 551–553)",
+          "source": "(21a–c) We / You / They love each other • (22) and stay in peace with one another • (23) I am eating by myself/alone/without help • (24a) Mary told the girls about themselves • (24b) They read each other's books",
+          "pronunciation": "ki-chā-mē ke-ey a-che-ek eng' a-che-ek / ā-ā-mii-syēy a-ni-ke-e / i-che-e-ke-ey",
+          "hint": "Zwarts, Chelimo & Jerono (2024, §6, pp. 551–553, Examples 21–24; plus fn. 11 p. 552 contrasting demonstrative Cherang'any kɛy / Endo-Marakwet kay and §7 p. 554 competing emphatics kipaat & ākityōōn)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "roong' kee kārātiik • choor kee asiis • tum kee pēy • mil kee koyin (Keiyo, p. 548) • Ā-ām-iisyēy ani-kee (Keiyo, p. 552)",
+          "source": "The blood gushed • The sun rose • Water poured • Stones fell (inanimate anticausatives) • I am eating by myself/alone/without help (pronoun intensifier)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Why does the polysemy of Kalenjin 'kee(y)' documented by Zwarts, Chelimo & Jerono (2024, §7, p. 553) challenge the typological generalisations of König & Siemund (2000: 59) and Kemmer (1993: 196)?",
+          "correctAnswer": "Because König & Siemund (2000: 59) and Kemmer (1993: 196) claim that a language may have either emphatic/direct-reflexive polysemy or direct-reflexive/middle polysemy, but not a three-way polysemy combining intensifier (emphatic), reflexive/reciprocal, and derived-intransitivity (middle) functions—all three of which are united in Kalenjin 'kee(y)'",
+          "options": [
+            "Because König & Siemund (2000: 59) and Kemmer (1993: 196) claim that a language may have either emphatic/direct-reflexive polysemy or direct-reflexive/middle polysemy, but not a three-way polysemy combining intensifier (emphatic), reflexive/reciprocal, and derived-intransitivity (middle) functions—all three of which are united in Kalenjin 'kee(y)'",
+            "Because Kalenjin has no middle voice or reciprocal constructions",
+            "Because 'kee(y)' only occurs with inanimate subjects",
+            "Because 'kee(y)' inflects for singular, dual, and plural number in all Kalenjin dialects"
+          ],
+          "hint": "See Zwarts, Chelimo & Jerono (2024, §7, p. 553)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Keiyo, Tugen, or Endo-Marakwet example from Sections 5–6 of Zwarts, Chelimo & Jerono (2024, pp. 547–553) with its exact translation and semantic function:",
+          "correctAnswer": "(15a) roong' kee kārātiik & (15b) choor kee asiis (Keiyo, p. 548): 'the blood gushed' & 'the sun rose' — inanimate anticausative middle",
+          "pairs": [
+            {
+              "left": "(15a) roong' kee kārātiik & (15b) choor kee asiis (Keiyo, p. 548)",
+              "right": "'the blood gushed' & 'the sun rose' — inanimate anticausative middle"
+            },
+            {
+              "left": "(16) choomnyō, chuunchuunnyō, tuupchō, pēēsyō, pooryō, tēēniityō, tuuyō (Endo-Marakwet, p. 549)",
+              "right": "'reconcile, disagree, be brothers, disperse, fight, be equal, meet' — natural reciprocals in contemporative -yō"
+            },
+            {
+              "left": "(20a) ki-ng'wār-chin-i kee John patay (Keiyo, p. 551)",
+              "right": "'John was scratching his own back' — external possessor saturated via dative -chi"
+            },
+            {
+              "left": "(23) Ā-ām-iisyēy ani-kee (Keiyo, p. 552)",
+              "right": "'I am eating by myself/alone/without help' — non-arity-reducing pronoun intensifier"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

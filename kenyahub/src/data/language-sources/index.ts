@@ -1631,3 +1631,176 @@ if (_madan1903Entry) {
   _madan1903Entry.coverageNote =
     "Audited and integrated 100% line-by-line (all 9,541 Markdown lines: Front Matter & Preface pp. i–viii, Introduction & 8 Verb-Stem Forms pp. ix–xiii, Conspectus II pp. xvi–xvii, Abbreviations pp. xviii–xix, Dictionary Sections A to M Part 1 pp. 1–238, Closing Page of Section Z p. 442, Colophon & Clarendon Press Catalogue pp. 1–8) into swahili/grammar-reference.ts (Section 18), swahili/course.ts (Unit 22), proverbs/swahili.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.";
 }
+
+export {
+  MWAMZANDI_2022_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register mwamzandi-swahili-relative-clauses-2022 ("306 Sibanda 2022 13.md", pp. 227–246) in LANGUAGE_SOURCES & lookup maps
+const _mwamzandi2022Source: LanguageSource = {
+  id: "mwamzandi-swahili-relative-clauses-2022",
+  title: "The pragmatics of Swahili relative clauses (Mohamed Mwamzandi, in Galen Sibanda, Deo Ngonyani, Jonathan Choti & Ann Biersteker, eds., Descriptive and theoretical approaches to African linguistics: Selected papers from the 49th Annual Conference on African Linguistics, pp. 227–246, Berlin: Language Science Press, 2022, DOI: 10.5281/zenodo.6393758)",
+  fileName: "306 Sibanda 2022 13.md",
+  processedPath: "language-sources/raw/306 Sibanda 2022 13.md",
+  languages: ["swahili"],
+  published: "2022 (CC-BY-4.0)",
+  contribution:
+    'Complete 20-page (pp. 227–246, Chapter 13) peer-reviewed corpus-linguistic and pragmatic study by Mohamed Mwamzandi (University of North Carolina at Chapel Hill), published in Galen Sibanda, Deo Ngonyani, Jonathan Choti & Ann Biersteker (eds.), Descriptive and theoretical approaches to African linguistics: Selected papers from the 49th Annual Conference on African Linguistics, pp. 227–246, Berlin: Language Science Press, 2022 (DOI: 10.5281/zenodo.6393758): Abstract (p. 227: 440 Swahili relative clauses [RCs] extracted from the 25-million-word Helsinki Corpus of Swahili [HCS 2.0, http://urn.fi/urn:nbn:fi:lb-2014032624] via Korp, coded for relative marker [amba / tensed], relative type [restrictive / non-restrictive], length in words, and information status [topic / non-topic]); Section 1 Introduction (pp. 227–230: syntactic derivation of RMs in Vitale 1981, Keach 1985, Demuth & Harford 1999, Ngonyani 2001, 2006; SRM/ORM notation; Examples [1] Tensed RC Askari [a-li-ye-ki-ongoza kikosi], [2] amba RC Askari [amba-ye a-li-ki-ongoza kikosi], and [3] General relative Askari a-ki-ongoz-a-ye kikosi; pragmatics per Huang 2007: 2; restrictive vs. non-restrictive RCs per Ashton 1944, Schadeberg 1989, Andrews 2007: 206, Keenan 1985: 168 [Examples 4–5], Comrie 1989: 139; and 3 research questions citing Durrleman et al. 2016, Rizzi 2013, Levy et al. 2013, Hemforth et al. 2015, Gundel 1985, Lambrecht 1994); Section 2 Previous Studies (pp. 230–233: TAM restrictions to li, na, taka, si for tensed RCs vs. unrestricted amba; subject postposing in object RCs [Examples 6–7 Kikosi amba-cho Kisaka a-li-ki-ongoza vs. Kikosi a-li-cho-ki-ongoza Kisaka]; evaluation of Russell\'s 1992: 125–126 disambiguation account [Examples 8–11 Mwivi a-li-ye-mw-ona mtoto / amba-ye mtoto a-li-mw-ona / wa-li-ye-mu-ona watoto / amba-ye a-li-mw-ona mtoto] & Centering Theory [Grosz et al. 1995, Grosz & Sidner 1998]; and grammatical complexity / Keenan & Comrie 1977 Accessibility Hierarchy [Examples 12–13 Masanduku amba-yo... vs. tu-si-yo-weza..., Ashton 1944: 310, Green 1996: 133]); Section 3 Methodology (p. 233: 440 RCs = 285 tensed + 155 amba from HCS 2.0 via Korp); Section 4.1 Restrictiveness & Figure 1 (pp. 234–236: amba RCs = 32 restrictive, 123 non-restrictive [N=155]; tensed RCs = 245 restrictive, 40 non-restrictive [N=285]; χ²(1, N=440) = 180.89, p < 0.001; Examples 14–18 incl. Bwana yule [a-na-ye-sinzia], Adili, Krapf [a-li-ye-li-tumikia dhehebu la C.M.S], rubega nyeupe, and Mambo muhimu [[amba-yo ya-na-fanya]₁ [shairi li-it-w-e la Ki-swahili]₂]); Section 4.2 RC Length & Table 1 (pp. 236–238: Mean [SD] word length: amba Restrictive 6.34 [3.25], amba Non-restrictive 7.21 [3.71], Tensed Restrictive 3.09 [2.34], Tensed Non-restrictive 4.25 [2.61]; ANOVA F(1,440) = 197.49, p < 0.001 for RM and F(1,440) = 11.11, p < 0.001 for relative type; Examples 19a–b, 20a–b Mwanamke mjane... hapo zamani, and Examples 21–24 on fronted AP kwa makusudi in Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji]); Section 4.3 Grammatical Role & Topic & Table 2 (pp. 238–243: Halliday 1967, Lambrecht 1994, Prince 1981, 1992, Gundel & Fretheim 2006, Chiarcos et al. 2011; Examples 25a–c Nyumba [a-li-yo-kaa Beneti]... kuukuu & 26 Adili a-li-vunja amri [a-li-yo-p-ew-a]; Table 2 across 6 rows [HN = Subj/Obj/PP × topic/non-topic, N=440] showing tensed RCs favored in continue transitions [HN = Subj, topic: 70 tensed vs. 28 amba, χ²=18, p<0.001] and non-topic NPs [HN = Obj, non-topic: 99 vs. 27; HN = PP, non-topic: 57 vs. 11, χ²=31, p<0.001] and amba RCs favored in topic shift transitions [HN = Obj, topic: 65 amba vs. 36 tensed]; and Examples 27–32 incl. Waandishi, Waandamanaji... polisi, Rehema... Bikiza, ghadhabu ya ndugu yake... u-rithi huo, nyumba kubwa sana, and Jaji Bernard Luand); and Section 5 Conclusion, Source, all 20 Abbreviations (p. 244), and all 27 References (pp. 244–246).',
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 20 pages, pp. 227–246, Examples 1–32, Figure 1 p. 234, Table 1 p. 237, Table 2 p. 240, Source & 20 Abbreviations p. 244, and 27 References pp. 244–246) into swahili/grammar-reference.ts (Section 19 & Section 7), swahili/course.ts (Unit 23), dictionary-search.ts, proverbs/swahili.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _mwamzandi2022Source.id)) {
+  LANGUAGE_SOURCES.push(_mwamzandi2022Source);
+  SOURCES_BY_ID_MAP.set(_mwamzandi2022Source.id, _mwamzandi2022Source);
+  const _swBucket = SOURCES_BY_LANGUAGE_MAP.get("swahili") || [];
+  if (!_swBucket.includes(_mwamzandi2022Source)) {
+    _swBucket.push(_mwamzandi2022Source);
+  }
+  SOURCES_BY_LANGUAGE_MAP.set("swahili", _swBucket);
+}
+
+export {
+  ZWARTS_2024_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register zwarts-chelimo-jerono-kalenjin-reflexive-2024 ("438 Huangetal 2024 21.md", pp. 539–556) in LANGUAGE_SOURCES & lookup maps
+const _zwarts2024Source: LanguageSource = {
+  id: "zwarts-chelimo-jerono-kalenjin-reflexive-2024",
+  title: "The reflexive in Kalenjin: Its syntactic status and semantic functions (Joost Zwarts, Andrew Chelimo & Prisca Jerono, in Yaqian Huang, Nina Hagen Kaldhol, Jun Jie Lim, Sharon Rose & Anthony Struthers-Young, eds., ACAL in SoCAL: Selected papers from the 53rd Annual Conference on African Linguistics, Ch. 21, pp. 539–556, Berlin: Language Science Press, 2024, DOI: 10.5281/zenodo.11210482)",
+  fileName: "438 Huangetal 2024 21.md",
+  processedPath: "language-sources/raw/438 Huangetal 2024 21.md",
+  languages: ["kalenjin", "pokot"],
+  published: "2024 (CC-BY-4.0)",
+  contribution:
+    'Complete 18-page (pp. 539–556, Chapter 21) peer-reviewed syntactic and semantic study by Joost Zwarts (Utrecht University), Andrew Chelimo (Moi University) & Prisca Jerono (University of Nairobi), published in Yaqian Huang, Nina Hagen Kaldhol, Jun Jie Lim, Sharon Rose & Anthony Struthers-Young (eds.), ACAL in SoCAL: Selected papers from the 53rd Annual Conference on African Linguistics, pp. 539–556, Berlin: Language Science Press, 2024 (DOI: 10.5281/zenodo.11210482): Abstract & Section 1 Introduction (pp. 539–540: phonological realizations [kɛː], [kɛːj], or Pökoot [kɛːx]; spelled keey in Endo-Marakwet & Tugen, kee in Keiyo, and in Kipsigis keen with pronouns vs. kee with verbs [fn. 8]; proves that kee(y) is a separate word [enclitic] rather than a suffix, with two main functions—(1) object of a verb or preposition contributing an arity-reducing middle meaning broader than reflexive and reciprocal, and (2) intensifying modifier of pronouns); Section 2 Kalenjin kee(y) (pp. 540–541: verb-initial VSO syntax with tonal nominative subject vs. unmarked absolutive object [Creider & Creider 1983]; review of Rottland 1982, Toweett 1979, Mietzner 2016: 76 [Cherang\'any íɲɛ́ɛ́-kɛ̂y], Jerono 2018, Sitienei Jepkoech 2018, Creider & Creider 1989, Heine 2000 & Kemmer 1993; Kalenjin Union Bible vs. Marakwet/Pökoot/Sabaot Bible orthography; Endo-Marakwet Bible orthography where +ATR is marked by macron on <ā, ē(ē), ō(ō)> and long +ATR <a> is <oo>; and Endo-Marakwet New Testament corpus counts of 1,815 relevant occurrences = 1,653 separate-word tokens + 162 non-separate tokens in karkeey, cheepaykeey & peerkeey [fn. 1: kumwoochikeey, keeyaat, kikeeyeeng\']); Section 3 Kee(y) is not a suffix (pp. 541–544, Examples 1–4 & fns. 2–5: intervening words nyuun & aneen in Ex. 1a kaa-kee-syaak nyuun keey & Ex. 1b a-kuskuus aneen keey; opacity to ATR vowel harmony [Lodge 1995, Rottland 1982: 229 fn. 2] vs. harmonising 1PL -eech in neet-eech / toorēt-ēēch and contemporative/sociative -yō & -sōōt in ng\'ēētyō / ng\'ēētsōōt [Zwarts et al. 2023] alongside non-harmonising pronominal suffixes in Ex. 2a–c; lexicalised karkeey → karkayiit / kārkēēyin taking a second kee(y) in Ex. 3 i-kerkeéy keè laak-o-chu, plus cheepaykeeyaan, peerkeeyaan, kimekeyaan/kipekeyaan; and enclitic impossibility as a fragment answer in Ex. 4a–b Ki-ng\'war kee / Ki-iim kee); Section 4 Kee(y) is not only for verbs (pp. 544–546, Examples 5–10 & fns. 6–8: nominalisations with -aa(p) in Ex. 5a las-at-aa keey, 5b riip-ot-oo keey, 5c toorēt-ēēt-aap keey, 5d wiirun-ēēt-aap keey vs. internal Ex. 6 las-keey-nat-ēēt; non-deverbal noun in Ex. 7 ki-sooman Kiptuum ak Kipēēt kitaapuu-syek-aap keey; preposition po in Ex. 8 ma-po keey chii; ungrammaticality after ākōō in Ex. 9a–b; and emphatic pronouns in Ex. 10a inyēēn keey & 10b a-ku-ng\'ālool-chi akwaaneek keey); Section 5 Kee(y) is not only reflexive and reciprocal (pp. 546–549, Examples 11–17 & fns. 9–10: Ex. 11a–b; German sich comparison in Ex. 12a–h; neet keey "learn"; Endo-Marakwet middle categories in Ex. 13a–f [takus keey, wiiru keey; rum/ruruuk/tuuyo/pēēsyō keey; walak/ng\'uruuk keey; wēēchi/ng\'unta keey; iim/las keey; uun/laak keey]; Keiyo posture & body activity in Ex. 14a–b [tēēp/teleel kee; sus/liil kee]; Keiyo inanimate anticausatives in Ex. 15a–d [roong\' kee kārātiik, choor kee asiis, tum kee pēy, mil kee koyin]; and natural reciprocity via contemporative -yō & -sōōt in Ex. 16 [choomnyō, chuunchuunnyō, tuupchō, pēēsyō, pooryō, tēēniityō, tuuyō] & Ex. 17a–b); Section 6 Kee(y) is arity-reducing, but not always (pp. 549–553, Examples 18–24 & fn. 11: $P_2 + kee(y) \\rightarrow P_1$ and $P_3 + kee(y) \\rightarrow P_2$ in Ex. 18a–c; dative -chi with wō/pa in Ex. 19a–c; external possessor with -chi in Ex. 20a–b; Tugen reduplicated reciprocals in Ex. 21a–c & Ex. 22; and non-arity-reducing pronoun intensifier/anaphor in Ex. 23 Ā-ām-iisyēy ani-kee & Ex. 24a–b ichee-keey [fn. 11: Cherang\'any kɛy / Endo-Marakwet kay]); and Section 7 Conclusion, 5 Non-Leipzig Abbreviations (CL2, CONT, DP, RP, TH), Acknowledgements (incl. Datooga & Omotik singular/plural contrast per Rottland 1982: 151, 191, Gertrud Schneider-Blum & Alice Mitchell; no known nominal origin of kee(y); emphatic kipaat & ākityōōn; Safir & Selvanathan 2016; Kouneli 2021 on Kipsigis -ak), and all 17 References (pp. 553–556).',
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 18 pages, pp. 539–556, Sections 1–7, Examples 1–24, Footnotes 1–12, 5 Abbreviations p. 555, Acknowledgements p. 555, and 17 References pp. 555–556) into kalenjin/grammar-reference.ts (Section 10 & fixed Section 9), kalenjin/course.ts (Unit 16), proverbs/kalenjin.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _zwarts2024Source.id)) {
+  LANGUAGE_SOURCES.push(_zwarts2024Source);
+  SOURCES_BY_ID_MAP.set(_zwarts2024Source.id, _zwarts2024Source);
+  for (const _langKey of ["kalenjin", "pokot"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_zwarts2024Source)) {
+      _bucket.push(_zwarts2024Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}
+
+export {
+  SAMSON_DARROCH_1944_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register samson-darroch-pokomo-history-1944 ("A History Of The Pokomo By Mikael Samson 1944.md", pp. 370–394 & Map) in LANGUAGE_SOURCES & lookup maps
+const _samson1944Source: LanguageSource = {
+  id: "samson-darroch-pokomo-history-1944",
+  title: "A History of the Pokomo by Mikael Samson — Continued, with an Introduction and Notes by R. G. Darroch (Journal of the East Africa Natural History Society, Vol. XVII, Nos. 5 & 6 [79–80], Sept. 1944, pp. 370–394 & Full-Page Sketch Map)",
+  fileName: "A History Of The Pokomo By Mikael Samson 1944.md",
+  processedPath: "language-sources/raw/A History Of The Pokomo By Mikael Samson 1944.md",
+  languages: ["pokomo", "borana", "swahili", "kamba", "somali"],
+  published: "1944",
+  contribution:
+    'Complete 25-page + Full-Page Sketch Map (pp. 370–394) indigenous historical, ethnographic, clan-genealogical, and linguistic monograph by Mikael Samson (a Pokomo of the Buu tribe, clerk in the District Commissioner\'s Office, Kipini), translated with an Introduction (pp. 370–371) and 13 Ethnographic Notes (pp. 391–394) by District Commissioner R. G. Darroch: Introduction (pp. 370–371: Ten-Mile Strip freehold vs. Pokomo land claims; Hamitic/Oromo origins of Upper Pokomo clans vs. coastal/Giriama origins of Malachini; Ndera abandoning Oromo speech 3+ generations ago; Malachini learning canoe-making from Upper Pokomo; 4+ foot map scaled down; and 4 indigenous self-designations Oromo, Wata, Elwana, Munyo); The Story of the Kalindi, Kalindi Land & Buu and Upper Pokomo (pp. 371–373 & Notes 1–4 pp. 391–392: migration from Arabia → Pate → Mungini/Mundini → Lamu under Chief Hidabo [Hidabo Hill; Talbot-Smith on Mrio & Kina Inti; Banu Lami of Zeid Ali A.H. 39 / A.D. 661; Werner on Dindi vs. Darroch on Kilindi / Kina Inti] → Shaka [Waungwana wa Mashaa, founded A.H. 121 under Harun al Rashid]; 2 Kalindi clans Namboo & Mangwe/Gomeni; Liongo Fumo [flourished A.D. 1306–1344 under Pate Sultan Omar Mohammed] building Ozi [Ozo Swahilis at Kau] and refused land purchase under family mlango tenure; Mahindini bottle boundary with Yunda shown by Chama & Abanyata; Chara double-crop rice farming; Buu founding Ngao to Kikomo above Anasa; 1900 Headmen Kiriole at Meli, Rangi at Bura/Golbanti & Kombo Mitambo at Belezoni [Mbelezo = "canal" on the Sheriko], and 1944 Headman Abdalla Bashora); Full-Page Sketch Map (between pp. 372 & 373) & Explanation of Malachini Country (pp. 373–374, 383–385: drawn with Garsen teacher Johana Daji & elder Luluta across 14 river sections from Elwana to Ras Shaka; 3 dried Buu river channels—Milaoni/Magogoni [with Sanye reciprocal hippo-meat covenant & Mulanja/Mkoma hunting monopoly], Ngambwa [with Chikovu & 1941 Kopole/Mihaja forest award], and Mbewee [Muhoni, Murikicha, Nyangu, Gawisa]—plus the verbatim 8-line Kipokomo lament song for Chikovu on p. 385 and 4:00 a.m. flight under Chief Buko via Kokane Gobu, Mlango wa Simba & Lake Tamaso to Ngao); All 6 Upper Pokomo Tribes with Bilingual Bantu/Oromo Clan Tables (pp. 374–388 & Notes 5–11 pp. 392–393: 1. Ndera [Kinamoto/Kinamaziwani=Karayu, Kinambare=Karara, Kinankaru=Sukana, Kinauru=Gamadho (Kinyadu village: Herbae/Rehema/Magombe & Bawata Tutu/Kimtovu/Hamadi), plus Kinanato from escaped slaves Gashiro & Hadiribo freed by Ana Abio; Lake Makange given to Wamboo; Somali attack at Bwobwoya; defeat of Arab leader Mwenye Era by Buya Gafo at Kirungu over free "maro" canoe relay]; 2. Gwano [Kinauru=Gamado (Ana Dima at Takafu near Makere, with Ana Bake=Kofira Oromo & Ana Kare=Migo Oromo), Kinadyasi=Karayu (Kokane Didha), Kinakale/Karara Dulo=Karara (Dulo near Wenje); Ana Dima & Sango Vere\'s "Abamogo" wayfarer greeting at Lake Lemu/Mitole; Treacherous War of Oromo chief Jilo Bune & drugged bull survived by Chief Dadho Moroa (Red & Black Kinauru septs) and witness Herbae Gafo; joint Upper Pokomo recovery of Oromo cattle at Kiaponi recalled by Chalalu Herbae]; 3. Kinakomba [Kinambolo & Mandoyo=Karara (Boran Ali Gutu at Mankombe/Dakacha below Kiaponi), Kinamuyani=Garjeda (Ware Hamesa & Gamahara Wachu), Kinamulunde=Uta, Kinambura=Wayu (Kokane Ware), plus Kinanguu; Kiaponi vs. Masalani rivalry]; 4. Ndura [Sindo wa Ndura=Karayu (Galole Hirimani & Gababa Kitole at Sagari), Kinambare=Uta (Mzuka Wayu), Kinanato=Karara (Omara Oda & 1944 chief Dadho Bahola), Kinagasere=Baretu (Madawa son of Humacha Jilo), Kinajasi=Hajeji (Ntungulu & Ade Abas), Kinambolo=Karara (Wario Gobu & Herbae Bahola), Kinambura=Wayole (Herbae Bwoe); Somali attacks at Mangulo & Mazuni; Fanjua–Mazuni club fight stopped by teacher Ibrahim Kitere; secret night cultivation]; 5. Zubaki [Uta (Hiye at Hola), Ilani (Gavere), Karayu (Mtabashi; Boran Royal Clan of Chief Gedu), Jaba (Munyo/Korokoro), Kinagasere (Baretu wa Maji), Kinakaliani (Garjeda: Maro Wayu → Dulo Maro → Sarumbe & escaped Kamba slave Machika Mwemwere), Meta (Komora Eba), Kinagaiba (Wayu Abae), Karara (Komora Diribo); 4 wars against Oromo chief Gungumi at Hola, Wata under Chief Wayu Umuru (survivors becoming Ngatana at Lake Jange near Wema), Somalis at Kadada under Chief Karayu Wayu, and Kamba burning Kadada stockade (Goyoi & blind elder Malim Jilo); Tana River name Galana Maro]; 6. Malalulu & Elwana [Wayu Duko & Wayu Chireti (Gatokombo/Maro eating mud "tokombo" at Malbati → Igu, Ibae & Kimtu), Uta (Bakai Galgalo → Galgalo & Kofa), Meta (Kuyo → Bashora & Didha), Dulo/Karara (Dulo → Saluba & Guyo), Garjeda (Ganyare → Babuya & Dae), Ilani (Malalulu → Bauru & Bashora → Muda at Galomani); Chief Mukaraji Maro\'s 6-generation genealogy Gatokombo (Maro)—Igu—Maro—Dadho—Maro—Mukaraji; Elwana female circumcision]); and Religions (Ngaji drum & Kijo forest guardians, 7th-month pregnancy farming exemption, Waganga, Muunguni heaven & "God\'s portion"), Missions (1884 British Methodist at Golbanti & Swedish at Kulesa; 1887 German Neukirchen Mission under Wietts at Ngao with Buko Doyo, Kadiko Herbae & Abadula Gerera; 22+ churches), Islam (Chara & Riatha Mosque in Lamu), and Government (1895 arrival of first D.C. Mr. Anderssen "Bwana Muchinjeni" at Ngao, 14,000+ population, LNC bank account shared with Oromo & 1941 petition for a single Superior Chief).',
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "vocabulary",
+    "grammar",
+    "dialogue",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 25 pages + Full-Page Sketch Map, pp. 370–394, Notes 1–13) into pokomo/grammar-reference.ts (Section 5 & Section 3), pokomo/course.ts (Unit 11), proverbs/pokomo.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _samson1944Source.id)) {
+  LANGUAGE_SOURCES.push(_samson1944Source);
+  SOURCES_BY_ID_MAP.set(_samson1944Source.id, _samson1944Source);
+  for (const _langKey of ["pokomo", "borana", "swahili", "kamba", "somali"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_samson1944Source)) {
+      _bucket.push(_samson1944Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}
+
+export {
+  CUST_1883_VOL1_COMPLETE_ETHNOGRAPHIC_SUMMARY,
+} from "./ethnographic-summaries";
+
+// Register cust-modern-languages-africa-vol1-1883 ("A Sketch Of The Modern Languages Of Africa Vol I.md", PDF pp. 1–340 / Book pp. [i]–xvi, 1–287) in LANGUAGE_SOURCES & lookup maps
+const _cust1883Vol1Source: LanguageSource = {
+  id: "cust-modern-languages-africa-vol1-1883",
+  title: "A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map (By Robert Needham Cust, Barrister-at-Law, and Late of Her Majesty's Indian Civil Service, Vol. I, Trübner's Oriental Series, London: Trübner & Co., Ludgate Hill; Hertford: Printed by Stephen Austin and Sons, 1883, Book pp. [i]–xvi, 1–287 + 16-Page Trübner's Oriental Series Catalogue + Portrait Plates I–VI [PDF pp. 1–340])",
+  fileName: "A Sketch Of The Modern Languages Of Africa Vol I.md",
+  processedPath: "language-sources/raw/A Sketch Of The Modern Languages Of Africa Vol I.md",
+  languages: ["borana", "somali", "maasai", "samburu", "ilchamus", "luo", "swahili"],
+  published: "1883",
+  contribution:
+    'Complete 340-PDF-page encyclopedic comparative monograph by Robert Needham Cust, Barrister-at-Law, Hon. Sec. of the Royal Asiatic Society, Member of Council of the Royal Geographical Society, and Committee Member of the C.M.S., B.F.B.S., and S.P.C.K. (London: Trübner & Co., Ludgate Hill; Hertford: Printed by Stephen Austin and Sons, 1883, Book pp. [i]–xvi, 1–287 + 16-page Trübner\'s Oriental Series Catalogue dated "500—17/9/83" + Portrait Plates I–VI [31 portraits] — Public Domain; Universiteit van Pretoria Merensky-Biblioteek copy stamped 10 DEC. 1941, Klasnommer ZTP.2-64, Registernommer 68959 CUST; dedicated to His Majesty Leopold II., King of the Belgians): Front Matter & 6 Photographic Portrait Plates (31 portraits across Plates I–VI: Lepsius, Koelle, Schön, F. Müller, Bleek, Latham; J. L. Wilson, F. W. Newman, Krapf, Barth, Saker, Christaller; Stanley, Moffat, Nachtigall, Grout, Steere, Ravenstein; Norris, Livingstone, Hanoteau, Faidherbe, Rebman, Reinisch; Beke, Baikie, Duveyrier, Archdeacon H. Johnson, Archdeacon D. Crowther, Schweinfurth; and Bishop Samuel Crowther, D.D. ["HIC NIGER EST", p. 212]); Chs. I–VII General Methodology, History, Foreign/Mixed Languages, Classification, Materials & Scripts (pp. 1–80: Krapf\'s final East African map & notes sent weeks before his Nov. 1881 death p. 6; Ravenstein\'s Venice Congress prize Language-Map & two-test rule pp. 7–9; root-naming rule & ethnonym meanings "men" for abántu and oromo pp. 11–14; King Mtesa of Uganda speaking 7 languages [Nyoro, Ganda, Swahíli, Soga, Zulu, Arabic & Galla] pp. 16, 123; Sir Bartle Frere on Indian Bhattia, Borah & Khoja traders keeping accounts in Gujaráti and Kachchi from Zanzibár to Cape Guardafui & Steere\'s request for a Gujaráti missionary pp. 42–43; Steere\'s critique of Bagamóyo Roman Catholic pidgin Swahili publications p. 48; Friedrich Müller\'s 6-family classification & Krapf\'s Nilo-Hamitic/Nilotic and Nigro-Hamitic/Nigritic terms pp. 50–60; sorting posthumous MSS of Krapf, Rebman & Schlenker p. 71; and East Coast Swahili Arabic script & Krapf vs. Steere vs. Lepsius Roman orthographies pp. 74–77); Ch. VIII Semitic Family (pp. 81–93, 10 Languages: Punic, Arabic [incl. Prætorius on Zanzibár dialect = Muskát p. 84 & Sawáhil/Káfir/Kabáil etymologies p. 85], Ethiopic/Gíz, Amháric, Tigré/Tigrínna, Harári, Argobba, Gafat, Kambat, Gurague); Ch. IX Hamitic Group (pp. 94–140, 28 Languages across Egyptian [Koptic], Libyan/Berber [9 languages], and Ethiopic [18 languages, with Reinisch\'s 2 clusters on p. 119], featuring I. Somáli on p. 121 [Rigby 1850/1866, Burton 1856, Hunter 1880, Prætorius, Revoil & Krapf] and II. Galla or Orómo on pp. 122–125 [5–6 million speakers from 10° N to the Dana/Tana River mouth near Mombása; Huma royal dynasty of Uganda/Unyoro/Karagwe; Orma/Oromo vs. "Sons of Galla"; 5 Chief Dialects including the Equatorial/Tana River dialect studied by Wakefield at Ribé & Krapf 1850; Charles New on Wata "Helot Races"; Cust\'s hand-copied MS of Krapf\'s 1840 Elements sent to Wakefield at Ribé; Newman, Bleek, Massaia, Tutschek, Enaréa & Lango/Kidi]); Ch. X Nuba-Fulah Group (pp. 141–161, 17 Languages: 16 Nuba + Fulah, featuring V. Kwáfi on pp. 149–151 [Loikób/Eloikób "Men" from Equator to slopes of Mt. Kenia & Victoria Nyanza; Krapf\'s 1854 Tübingen Engútuk Eloikób Vocabulary & 1 John Ch. 1; J. T. Last\'s 6,000-word Humba vocabulary at Mamboia; Farler on mutual intelligibility with Masai; Wakefield & New on Arúsha] and VI. Masai on pp. 151–152 [Loikob / Enguduk Iloigob; anti-slavery ethos; Ndorobo "Helot Race"; Joseph Thomson\'s 1883 RGS expedition supplied by Cust; Erhardt & Krapf\'s 1857 Württemberg Vocabulary; and Lepsius\'s 1880 6 structural features]); and Ch. XI Negro Group (pp. 162–287, 194 Languages across Atlantic [67, with p. 211 appeal for Frere Town/Zanzibár slave vocabularies], Niger [38], Central [59], and Nile [31, featuring I. Shilluk/Dyur/Luoh/Lwo pp. 275–276, XVIII. Lúr/Luoh pp. 282–283, XX. Shúli/Gani/Shefalu pp. 283–284, and XXI. Kavirondo (Dholuo) on Victoria Nyanza pp. 284–285, recorded in New\'s 1873 vocabulary and Wakefield\'s MS vocabulary from a Swahíli caravan traveller and linked directly to Shilluk/Luoh]).',
+  appUses: [
+    "dictionary",
+    "grammar lessons",
+    "course lessons",
+    "cultural wisdom",
+    "blog research",
+  ],
+  contentTypes: [
+    "grammar",
+    "vocabulary",
+    "cultural-reference",
+  ],
+  ingestionStatus: "integrated",
+  coverageNote:
+    "Audited and integrated 100% line-by-line (all 340 PDF pages / Book pp. [i]–xvi, 1–287, 16-page Trübner Catalogue & Portrait Plates I–VI [31 portraits]) into borana/grammar-reference.ts (fixed pp. 122–125 & added Section 8), somali/grammar-reference.ts (Section 9), maasai/grammar-reference.ts (Section 14), luo/grammar-reference.ts, borana/course.ts (Unit 15), proverbs/borana.ts, proverbs/luo.ts, dictionary-search.ts, ethnographic-summaries.ts, lexical-highlights.ts, kenya-languages.json, and blog-posts.ts.",
+};
+
+if (!LANGUAGE_SOURCES.some((s) => s.id === _cust1883Vol1Source.id)) {
+  LANGUAGE_SOURCES.push(_cust1883Vol1Source);
+  SOURCES_BY_ID_MAP.set(_cust1883Vol1Source.id, _cust1883Vol1Source);
+  for (const _langKey of ["borana", "somali", "maasai", "samburu", "ilchamus", "luo", "swahili"]) {
+    const _bucket = SOURCES_BY_LANGUAGE_MAP.get(_langKey) || [];
+    if (!_bucket.includes(_cust1883Vol1Source)) {
+      _bucket.push(_cust1883Vol1Source);
+    }
+    SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
+  }
+}

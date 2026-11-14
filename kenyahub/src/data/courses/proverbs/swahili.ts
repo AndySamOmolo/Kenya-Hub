@@ -7002,3 +7002,29 @@ SWAHILI_PROVERBS.push(
     "sourceCitation": "A. C. Madan, M.A., Swahili-English Dictionary (Clarendon Press Oxford, 1903, Sections L–M, pp. 191–237)"
   }
 );
+
+// ── Complete Line-by-Line Discourse & Literary Corpus Examples from Mohamed Mwamzandi's "The pragmatics of Swahili relative clauses" (Language Science Press, 2022, Ch. 13, pp. 227–246, DOI: 10.5281/zenodo.6393758) ──
+SWAHILI_PROVERBS.push(
+  {
+    "id": "mwamzandi-2022-examples-1-to-24-pp228-238",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "(1) Askari [a-li-ye-ki-ongoza kikosi] • (2) Askari [amba-ye a-li-ki-ongoza kikosi] • (3) Askari a-ki-ongoz-a-ye kikosi (p. 228) • (6) Kikosi [amba-cho Kisaka a-li-ki-ongoza] vs. (7) Kikosi [a-li-cho-ki-ongoza Kisaka] (p. 230) • (8) Mwivi [a-li-ye-mw-ona mtoto] • (9) Mwivi [amba-ye mtoto a-li-mw-ona] • (10) Mwivi wa-li-ye-mu-ona watoto • (11) Mwivi [amba-ye a-li-mw-ona mtoto] (pp. 231–232) • (12) Masanduku [amba-yo sisi watu wa-wili au wa-tatu ha-tu-wez-i]₁ [ku-ya-enua]₂ vs. (13) Masanduku [tu-si-yo-weza sisi watu wa-wili au watatu] ku-ya-enua]₂ (p. 232) • (14) Bwana yule [a-na-ye-sinzia] (p. 234) • (15) A-li-m-rud-i-a Adili [a-li-ye-kuwa a-na-pata fahamu] (p. 235) • (16) Krapf [a-li-ye-li-tumikia dhehebu la C.M.S] (p. 235) • (17) A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] (p. 235) • (18) Mambo muhimu [[amba-yo ya-na-fanya]₁ [shairi li-it-w-e la Ki-swahili]₂] (p. 236) • (19–20) Mwanamke mjane amba-ye / a-li-ye-kuwa jirani yao (hapo zamani) (p. 236) • (21) Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] (p. 237).",
+    "literalTranslation": "(1–2) The policeman who led the squad • (3) The policeman who is leading the squad (p. 228) • (6–7) The squad which Kisaka led (p. 230) • (8–11) The thief who saw the child / whom the child/children saw (pp. 231–232) • (12–13) Boxes which two or three of us cannot lift (p. 232, Ashton 1944: 310) • (14) That man (over there) who is dozing (p. 234) • (15) He got back to Adili, who was regaining his consciousness (p. 235) • (16) Krapf, who served the C.M.S Christian denomination (p. 235) • (17) He was wearing a white cloak that had started to lose its whiteness (p. 235) • (18) Important things that make a poem be called a Swahili poem (p. 236) • (19–20) A (woman) widow who was their neighbor (long ago) (p. 236) • (21) There are some citizens who deliberately block taps (p. 237).",
+    "meaning": "Verbatim interlinear Swahili relative clause examples (1)–(24) from Mohamed Mwamzandi's 'The pragmatics of Swahili relative clauses' (2022, Ch. 13, pp. 228–238), illustrating tensed vs. amba vs. general relatives, restrictiveness (Figure 1: χ²(1, N=440) = 180.89, p < 0.001), and clause length / fronted adverbial phrases (Table 1: F(1, 440) = 197.49, p < 0.001).",
+    "englishEquivalent": "Form and discourse function in Swahili relative clause variation.",
+    "theme": "wisdom",
+    "sourceCitation": "Mohamed Mwamzandi, 'The pragmatics of Swahili relative clauses', in Sibanda, Ngonyani, Choti & Biersteker (eds.), Descriptive and theoretical approaches to African linguistics (Berlin: Language Science Press, 2022, Ch. 13, pp. 228–238, Examples 1–24)"
+  },
+  {
+    "id": "mwamzandi-2022-examples-25-to-32-pp238-242",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "(25a) Nyumba [a-li-yo-kaa Beneti]. (25b) I-li-kuwa ya Kiswahili kabisa, (25c) I-li-on-ek-an-a kuukuu (pp. 238–239) • (26) Adili a-li-vunja amri [a-li-yo-p-ew-a] (p. 239) • (27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240) • (28) [Waandamanaji wa-li-kaidi amri hiyo]₁ [na ku-wa-rush-i-a mawe polisi]₂ [amba-o wa-li-jibu mapigo]₃ [kwa ku-fyatua risasi za moto]₄ (p. 241) • (29) Bali Rehema a-li-po-nyanyua macho ku-m-tazama Bikiza [a-li-ye-leta taarifa ya kifo]... (p. 241) • (30) A-li-anza ku-safiri ili ku-epuka ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo (p. 242) • (31) A-li-ji-ona katika nyumba kubwa sana i-li-yo-kuwa n-zuri ajabu (p. 242) • (32) Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242).",
+    "literalTranslation": "(25a–c) The house which Beneti stayed. It was a typical Swahili house, it looked old (pp. 238–239) • (26) Adili broke the command he was given (p. 239) • (27) The writers who followed have abandoned this style (of writing) (p. 240) • (28) The demonstrators disobeyed the command and threw stones to the policemen who responded to the beatings (of stones) by shooting live bullets (p. 241) • (29) But when Rehema raised her eyes to look at Bikiza who brought the meassage of death... (p. 241) • (30) He started traveling to avoid the anger of his sibling who had missed the inheritance (p. 242) • (31) He found himself in a very big house that was surprisingly beautiful (p. 242) • (32) In a ruling that was given yesterday by Judge Bernard Luand (p. 242).",
+    "meaning": "Verbatim literary and newspaper discourse examples (25a–c)–(32) extracted from the 25-million-word Helsinki Corpus of Swahili 2.0 in Mohamed Mwamzandi (2022, Ch. 13, §4.3, pp. 238–242 & Table 2 p. 240), demonstrating how tensed RCs maintain topic continuity (continue transitions) while amba RCs signal topic shift transitions.",
+    "englishEquivalent": "Discourse topic continuity and topic shift in Swahili prose.",
+    "theme": "unity",
+    "sourceCitation": "Mohamed Mwamzandi, 'The pragmatics of Swahili relative clauses', in Sibanda, Ngonyani, Choti & Biersteker (eds.), Descriptive and theoretical approaches to African linguistics (Berlin: Language Science Press, 2022, Ch. 13, pp. 238–242, Table 2 & Examples 25–32)"
+  }
+);

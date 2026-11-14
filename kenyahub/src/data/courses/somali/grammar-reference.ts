@@ -215,3 +215,22 @@ export const SOMALI_GRAMMAR_SECTIONS: SomaliGrammarSection[] = [
     ]
   }
 ];
+
+SOMALI_GRAMMAR_SECTIONS.push({
+  id: "somali-cust-1883-modern-languages-africa-vol1",
+  title: "9. Robert Needham Cust (1883, Vol. I, Ch. IX.C.I, p. 121): 'A Sketch of the Modern Languages of Africa' — Somáli in the Ethiopic Sub-Group of Hamitic, Reinisch's First Hamitic Cluster & Early Lexicographers (Rigby, Burton, Hunter, Prætorius & Krapf)",
+  summary: "Complete synthesis of Robert Needham Cust's account of Somáli in 'A Sketch of the Modern Languages of Africa', Vol. I (London: Trübner & Co., 1883, Ch. IX.C.I, p. 121 & pp. 42–43, 119): habitat from Bab el Mandal and Cape Guardafui to the Bantu frontier, Reinisch's 5-language Lowland East Cushitic cluster (Bishári, Saho, Dankálí, Somáli, Galla), Krapf's testimony on linguistic unity across tribes, and works by Rigby (1850, 1866), Burton (1856), Hunter (1880), Van der Decken, Prætorius, and Revoil.",
+  content: "From Robert Needham Cust (*A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map*, Vol. I, London: Trübner & Co., 1883, Ch. III pp. 42–43 & Ch. IX.C.I, pp. 119, 121):\n1. **Position in Reinisch's First Ethiopic-Hamitic Cluster (Ch. IX.C, p. 119)**:\n   - **Prof. Leo Reinisch** (in a private letter to Cust, p. 119) divides the **Ethiopic Sub-Group of the Hamitic Group** into two great linguistic clusters, placing **Somáli** in the **First Cluster** alongside **A. Bishári (*To'bedauie*)**, **B. Saho**, **C. Dankálí (*Afar*)**, **D. Somáli**, and **E. Galla (*Orómo*)** (contrasted with the Second/Agau Cluster: *A. Bilin, B. Agau of Lasta, C. Agaumidr, D. Falásha, E. Kamant*).\n2. **Habitat, Ethnography & Linguistic Unity of Somáli (Ch. IX.C.I, p. 121)**:\n   - Occupies the entire Eastern Horn of Africa (*Regio Aromatifera*), stretching from the **Straits of Báb el Mandal** round by **Cape Guardafui** down the East Coast to the **confines of the Bántu Language-Field** in Equatorial East Africa (where Indian **Bhattia, Borah, and Khoja** traders also keep accounts in **Gujaráti** and **Kachchi** along the coast up to Cape Guardafui, pp. 42–43).\n   - The Somáli claim descent from Arabia, lead a nomadic pastoral life, are Mahometans, and are described by travellers as *\"full of fun and humour\"* (p. 121).\n   - **Rev. Dr. J. L. Krapf** wrote directly to Cust confirming that the Somáli *\"consist of a multitude of tribes speaking one Language\"* (p. 121).\n3. **Early Grammatical & Lexical Authorities on Somáli (p. 121)**:\n   - **General C. P. Rigby**: Published a Grammatical Note, Sentences, and Vocabulary in the *Proceedings of the Bombay Geographical Society* (**1850**), and a subsequent essay on the origin of the Somáli Race in the *Transactions of the Ethnological Society* (**1866**).\n   - **Capt. Sir Richard F. Burton**: Included a Grammatical Note and Vocabulary in *First Footsteps in East Africa* (**1856**).\n   - **Major F. M. Hunter**: Published at Aden in **1880** a complete *Grammar of the Somali Language, together with an English-Somáli and Somáli-English Vocabulary*.\n   - **Baron Carl Claus von der Decken** & **Prof. Franz Prætorius**: Contributed comparative and dialectal notes (Prætorius in *ZDMG*).\n   - **M. Georges Revoil**: Visited the Somáli Coast in 1880–1881 and suggested at the Venice Geographical Congress (Sept. 1881) that Somáli had affinities with Greek—a speculation Cust critiques by noting that *\"both the bricks and mortar of the edifice are wanting\"* (p. 121).",
+  examples: [
+    {
+      somali: "Cluster I (Reinisch, p. 119): A. Bishári • B. Saho • C. Dankálí • D. Somáli • E. Galla | Regio Aromatifera (Bab el Mandal → Cape Guardafui → Bántu Frontier)",
+      english: "Reinisch's Lowland East Cushitic cluster and the geographic boundaries of the Somáli Language-Field in Cust (1883, Vol. I, pp. 119, 121)",
+      explanation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (1883, Ch. IX.C, pp. 119, 121)"
+    },
+    {
+      somali: "Rigby (1850 Bombay Grammar/Vocab & 1866 Origin Essay) • Burton (1856 First Footsteps) • Hunter (1880 Aden Grammar & Bidirectional Vocabulary) • Krapf ('a multitude of tribes speaking one Language')",
+      english: "Pioneering 19th-century grammatical and lexical sources for Somáli documented in Cust (1883, Vol. I, p. 121)",
+      explanation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (1883, Ch. IX.C.I, p. 121)"
+    }
+  ]
+});

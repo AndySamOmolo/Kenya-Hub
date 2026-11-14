@@ -6390,3 +6390,275 @@ SWAHILI_UNITS.push({
     }
   ]
 });
+
+// ── Unit 23: Complete Line-by-Line Integration of Mohamed Mwamzandi's "The pragmatics of Swahili relative clauses" (Language Science Press, 2022, Ch. 13, pp. 227–246, DOI: 10.5281/zenodo.6393758) ──
+if (!SWAHILI_CONFIG.sources.includes("mwamzandi-swahili-relative-clauses-2022")) {
+  SWAHILI_CONFIG.sources.push("mwamzandi-swahili-relative-clauses-2022");
+}
+
+SWAHILI_UNITS.push({
+  "id": "swahili-unit-23",
+  "title": "Unit 23: Mohamed Mwamzandi (2022) — The Pragmatics of Swahili Relative Clauses (Helsinki Corpus 440 RCs, Examples 1–32, Figure 1 & Tables 1–2)",
+  "description": "Master all 20 pages (pp. 227–246) of Mohamed Mwamzandi's 2022 study 'The pragmatics of Swahili relative clauses' (in Sibanda, Ngonyani, Choti & Biersteker, eds., Language Science Press): the 3 RC strategies (tensed, amba, general), TAM & subject-postposing rules, Russell's (1992) disambiguation test, the 440-RC Helsinki Corpus of Swahili study, Figure 1 (restrictiveness), Table 1 (word length & adverbial fronting), Table 2 (grammatical role & continue vs. shift topic transitions), all 32 interlinear examples, 20 abbreviations, and 27 references.",
+  "icon": "BookOpen",
+  "skills": [
+    {
+      "id": "swahili-mwamzandi-2022-three-relatives-morphosyntax-23",
+      "title": "Three RC Strategies, Subject Postposing, Disambiguation & Complexity (pp. 227–233, Examples 1–13)",
+      "icon": "Layers",
+      "description": "Learn the morphosyntactic structure of Swahili tensed, amba, and general relative clauses, TAM constraints (Keach 1985), subject postposing in object RCs, Russell's (1992) disambiguation account, and Keenan & Comrie's (1977) Accessibility Hierarchy across Examples (1)–(13).",
+      "tips": "In tensed RCs, the relative marker (SRM/ORM) is prefixed to the verb right after the tense marker (li-, na-, taka-, or negative si-), and nothing may intervene between the head noun and the verb—forcing lexical subjects in object RCs to be postposed (Kikosi [a-li-cho-ki-ongoza Kisaka], Ex. 7). In amba RCs, the RM is suffixed to amba, allowing all TAM markers and preverbal subjects (Kikosi [amba-cho Kisaka a-li-ki-ongoza], Ex. 6).",
+      "words": [
+        {
+          "target": "(1) Askari [a-li-ye-ki-ongoza kikosi] (Tensed RC) • (2) Askari [amba-ye a-li-ki-ongoza kikosi] (amba RC) • (3) Askari a-ki-ongoz-a-ye kikosi (General relative, p. 228)",
+          "source": "The policeman who led the squad (Tensed & amba RCs) • The policeman who is leading the squad (General relative, time unspecified/present/habitual per Ashton 1944)",
+          "pronunciation": "a-ska-ri a-li-ye-ki-o-ngo-za ki-ko-si / a-mba-ye a-li-ki-o-ngo-za / a-ki-o-ngo-za-ye",
+          "hint": "Mwamzandi (2022, §1, p. 228, Examples 1–3: 1.SM = a- [Class 1 askari], PST = -li-, 1.SRM = -ye-, 7.OM = -ki- [Class 7 kikosi])"
+        },
+        {
+          "target": "TAM Restriction (Keach 1985, p. 230): Tensed RCs only with past li-, present na-, future taka-, and negation si- • amba RCs with all TAM markers",
+          "source": "Morphosyntactic distribution of tensed vs. amba relative markers across Swahili tense-aspect-mood prefixes",
+          "pronunciation": "li / na / ta-ka / si / a-mba",
+          "hint": "Mwamzandi (2022, §2, p. 230)"
+        },
+        {
+          "target": "(6) Kikosi [amba-cho Kisaka a-li-ki-ongoza] (preverbal subject) vs. (7) Kikosi [a-li-cho-ki-ongoza Kisaka] (postverbal subject, p. 230)",
+          "source": "The squad which Kisaka led (amba object RC with preverbal lexical subject Kisaka vs. tensed object RC with postposed subject Kisaka)",
+          "pronunciation": "ki-ko-si a-mba-cho ki-sa-ka a-li-ki-o-ngo-za / a-li-cho-ki-o-ngo-za ki-sa-ka",
+          "hint": "Mwamzandi (2022, §2, p. 230, Examples 6–7; citing Vitale 1981, Keach 1985, Demuth & Harford 1999, Ngonyani 2001, 2006)"
+        },
+        {
+          "target": "(8) Mwivi [a-li-ye-mw-ona mtoto] (ambiguous SVO/OVS) • (9) Mwivi [amba-ye mtoto a-li-mw-ona] • (10) Mwivi wa-li-ye-mu-ona watoto (Class 2 SM wa-) • (11) Mwivi [amba-ye a-li-mw-ona mtoto] (pp. 231–232)",
+          "source": "The thief who saw the child / whom the child saw (Ex. 8) • The thief whom the child saw (Ex. 9 & 11) • The thief who the children saw (Ex. 10)",
+          "pronunciation": "mwi-vi a-li-ye-mwo-na m-to-to / a-mba-ye m-to-to a-li-mwo-na / wa-li-ye-mu-o-na wa-to-to",
+          "hint": "Mwamzandi (2022, §2, pp. 231–232, Examples 8–11: critique of Russell 1992: 125–126 & Centering Theory per Grosz et al. 1995, Grosz & Sidner 1998)"
+        },
+        {
+          "target": "(12) Masanduku [amba-yo sisi watu wa-wili au wa-tatu ha-tu-wez-i]₁ [ku-ya-enua]₂ vs. (13) Masanduku [tu-si-yo-weza sisi watu wa-wili au watatu] ku-ya-enua]₂ (p. 232)",
+          "source": "Boxes which two or three of us cannot lift (8-word, 2-clause complex RC with amba-yo vs. tensed negative tu-si-yo-weza)",
+          "pronunciation": "ma-sa-ndu-ku a-mba-yo si-si wa-tu wa-wi-li au wa-ta-tu ha-tu-we-zi ku-ya-e-nu-a",
+          "hint": "Mwamzandi (2022, §2, p. 232, Examples 12–13; citing Ashton 1944: 310, Keenan & Comrie 1977, Green 1996: 133)"
+        },
+        {
+          "target": "20 Glossing Abbreviations (p. 244): 1, 2, 3... (Noun classes), AGR, APPL, AUX, FUT, FV, INF, OM, ORM, PASS, PFV, PROG, PRS, PST, RECP, REFL, SBJV, SM, SRM, STV",
+          "source": "Complete morphological glossing conventions used across Examples (1)–(32) in Mwamzandi (2022, p. 244)",
+          "pronunciation": "s-r-m / o-r-m / s-m / o-m / a-p-p-l / p-a-s-s / p-f-v / r-e-c-p / s-t-v",
+          "hint": "Mwamzandi (2022, Abbreviations, p. 244)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Askari [a-li-ye-ki-ongoza kikosi] • Kikosi [amba-cho Kisaka a-li-ki-ongoza] vs. Kikosi [a-li-cho-ki-ongoza Kisaka] (pp. 228, 230)",
+          "source": "The policeman who led the squad • The squad which Kisaka led (preverbal subject with amba-cho vs. postposed subject with a-li-cho-ki-ongoza)."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Mohamed Mwamzandi (2022, pp. 230–232), why does he argue that Russell's (1992: 125–126) disambiguation account of 'amba' relative clauses is insufficient?",
+          "correctAnswer": "Because (1) when subject and object belong to different noun classes (e.g., Ex. 10 'Mwivi wa-li-ye-mu-ona watoto'), the subject marker 'wa-' already disambiguates the tensed RC, and (2) an 'amba' RC with a postverbal subject (Ex. 11 'Mwivi [amba-ye a-li-mw-ona mtoto]') remains structurally ambiguous and is resolved pragmatically via discourse salience / Centering Theory",
+          "options": [
+            "Because (1) when subject and object belong to different noun classes (e.g., Ex. 10 'Mwivi wa-li-ye-mu-ona watoto'), the subject marker 'wa-' already disambiguates the tensed RC, and (2) an 'amba' RC with a postverbal subject (Ex. 11 'Mwivi [amba-ye a-li-mw-ona mtoto]') remains structurally ambiguous and is resolved pragmatically via discourse salience / Centering Theory",
+            "Because Swahili does not allow OVS word order in any clause type",
+            "Because 'amba' can only be used with inanimate noun classes",
+            "Because tensed relative clauses never take object markers"
+          ],
+          "hint": "See Mwamzandi (2022, §2, pp. 231–232, Examples 8–11)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each verbatim Swahili relative clause example from Mwamzandi (2022, pp. 228–232) with its exact grammatical characterization:",
+          "correctAnswer": "(1) Askari [a-li-ye-ki-ongoza kikosi] (p. 228): Tensed subject RC with SRM -ye- prefixed after past tense -li-",
+          "pairs": [
+            {
+              "left": "(1) Askari [a-li-ye-ki-ongoza kikosi] (p. 228)",
+              "right": "Tensed subject RC with SRM -ye- prefixed after past tense -li-"
+            },
+            {
+              "left": "(3) Askari a-ki-ongoz-a-ye kikosi (p. 228)",
+              "right": "General tenseless relative with SRM -ye suffixed after final vowel -a"
+            },
+            {
+              "left": "(6) Kikosi [amba-cho Kisaka a-li-ki-ongoza] vs. (7) Kikosi [a-li-cho-ki-ongoza Kisaka] (p. 230)",
+              "right": "Preverbal subject Kisaka in amba object RC vs. postposed subject Kisaka in tensed object RC"
+            },
+            {
+              "left": "(12) Masanduku [amba-yo sisi watu wa-wili au wa-tatu ha-tu-wez-i]₁ [ku-ya-enua]₂ (p. 232)",
+              "right": "Complex 2-clause, 8-word object RC from Ashton (1944: 310)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-mwamzandi-2022-corpus-restrictiveness-length-23",
+      "title": "Helsinki Corpus Methodology, Restrictiveness (Figure 1) & RC Length / Adverbial Fronting (Table 1 & Examples 14–24)",
+      "icon": "BarChart2",
+      "description": "Study Mwamzandi's (2022, pp. 233–238) methodology using the 25M-word Helsinki Corpus of Swahili (HCS 2.0) and Korp, the Chi-squared distribution of restrictive vs. non-restrictive RCs (Figure 1), ANOVA word-length results (Table 1), and fronted adverbial phrases across Examples (14)–(24).",
+      "tips": "In the 440-RC sample from HCS 2.0 (285 tensed + 155 amba), 86.0% of tensed RCs are restrictive (245 vs. 40 non-restrictive), whereas 79.4% of amba RCs are non-restrictive (123 vs. 32 restrictive; χ² = 180.89, p < 0.001). Mean RC length is ~7 words for amba (6.34 restrictive, 7.21 non-restrictive) vs. ~4 words for tensed RCs (3.09 restrictive, 4.25 non-restrictive; F = 197.49, p < 0.001).",
+      "words": [
+        {
+          "target": "Helsinki Corpus of Swahili 2.0 (HCS 2.0, 25M words, Korp concordance, p. 233 & p. 244): N = 440 RCs (285 Tensed RCs + 155 amba RCs)",
+          "source": "Primary corpus dataset of mid-20th-century to 2015 Swahili newspaper, literary, educational & scientific texts (http://urn.fi/urn:nbn:fi:lb-2014032624)",
+          "pronunciation": "he-lsi-nki co-rpus / ko-rp",
+          "hint": "Mwamzandi (2022, §3 p. 233 & Source p. 244)"
+        },
+        {
+          "target": "Figure 1 (p. 234): amba RCs (N=155): 32 Restrictive (20.6%), 123 Non-restrictive (79.4%) • Tensed RCs (N=285): 245 Restrictive (86.0%), 40 Non-restrictive (14.0%) • χ²(1, N = 440) = 180.89, p < 0.001",
+          "source": "Distribution of restrictive and non-restrictive relative clauses in the 440-RC Helsinki Corpus sample",
+          "pronunciation": "a-mba / te-nsed",
+          "hint": "Mwamzandi (2022, §4.1, Figure 1, p. 234)"
+        },
+        {
+          "target": "(14) Bwana yule [a-na-ye-sinzia] (p. 234) • (15) A-li-m-rud-i-a Adili [a-li-ye-kuwa a-na-pata fahamu] (p. 235) • (16) Krapf [a-li-ye-li-tumikia dhehebu la C.M.S] (p. 235)",
+          "source": "That man (over there) who is dozing (tensed restrictive) • He got back to Adili, who was regaining his consciousness (tensed non-restrictive) • Krapf, who served the C.M.S Christian denomination (tensed non-restrictive)",
+          "pronunciation": "bwa-na yu-le a-na-ye-si-nzi-a / a-li-m-ru-di-a a-di-li / kra-pf a-li-ye-li-tu-mi-ki-a dhe-he-bu la c-m-s",
+          "hint": "Mwamzandi (2022, §4.1, pp. 234–235, Examples 14–16)"
+        },
+        {
+          "target": "(17) A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] (p. 235) • (18) Mambo muhimu [[amba-yo ya-na-fanya]₁ [shairi li-it-w-e la Ki-swahili]₂] (p. 236)",
+          "source": "He was wearing a white cloak that had started to lose its whiteness (amba non-restrictive) • Important things that make a poem be called a Swahili poem (6-word, 2-clause amba restrictive)",
+          "pronunciation": "ru-be-ga nye-u-pe a-mba-yo i-li-a-nza ku-po-te-za we-u-pe wa-ke / ma-mbo mu-hi-mu a-mba-yo ya-na-fa-nya sha-i-ri li-i-twe la ki-swa-hi-li",
+          "hint": "Mwamzandi (2022, §4.1, pp. 235–236, Examples 17–18)"
+        },
+        {
+          "target": "Table 1 (p. 237): amba Restrictive Mean = 6.34 (SD 3.25), Non-restrictive Mean = 7.21 (SD 3.71) • Tensed Restrictive Mean = 3.09 (SD 2.34), Non-restrictive Mean = 4.25 (SD 2.61) • ANOVA: RM F(1, 440) = 197.49, p < 0.001; Type F(1, 440) = 11.11, p < 0.001",
+          "source": "Mean and standard deviation of RC word length across restrictive and non-restrictive clauses, plus Examples (19a–b) & (20a–b) Mwanamke mjane amba-ye / a-li-ye-kuwa jirani yao (hapo zamani)",
+          "pronunciation": "mwa-na-mke m-ja-ne a-mba-ye a-li-ku-wa ji-ra-ni ya-o ha-po za-ma-ni",
+          "hint": "Mwamzandi (2022, §4.2, pp. 236–237, Examples 19–20 & Table 1)"
+        },
+        {
+          "target": "(21) Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] vs. (22) *Wa-po wananchi kwa makusudi [wa-na-o-ziba mifereji] • (23–24) Wa-po wananchi [amba-o / wa-na-o-ziba mifereji kwa makusudi] (pp. 237–238)",
+          "source": "There are some citizens who deliberately block taps (grammatical with fronted AP kwa makusudi after amba-o in Ex. 21, ungrammatical before a tensed RC in Ex. 22, and grammatical postverbally in Ex. 23–24)",
+          "pronunciation": "wa-po wa-na-nchi a-mba-o kwa ma-ku-su-di wa-na-zi-ba mi-fe-re-ji",
+          "hint": "Mwamzandi (2022, §4.2, pp. 237–238, Examples 21–24)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] (p. 235) • Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] (p. 237)",
+          "source": "He was wearing a white cloak that had started to lose its whiteness • There are some citizens who deliberately block taps."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "According to Figure 1 (p. 234) and Table 1 (p. 237) in Mohamed Mwamzandi (2022), what are the exact restrictive vs. non-restrictive counts and mean word lengths (with SDs) for 'amba' and tensed RCs across the 440 tokens in the Helsinki Corpus of Swahili?",
+          "correctAnswer": "Figure 1: amba RCs (N=155) = 32 restrictive, 123 non-restrictive; Tensed RCs (N=285) = 245 restrictive, 40 non-restrictive (χ² = 180.89, p < 0.001) • Table 1 Mean (SD) length: amba restrictive 6.34 (3.25), amba non-restrictive 7.21 (3.71); Tensed restrictive 3.09 (2.34), Tensed non-restrictive 4.25 (2.61) (F = 197.49, p < 0.001)",
+          "options": [
+            "Figure 1: amba RCs (N=155) = 32 restrictive, 123 non-restrictive; Tensed RCs (N=285) = 245 restrictive, 40 non-restrictive (χ² = 180.89, p < 0.001) • Table 1 Mean (SD) length: amba restrictive 6.34 (3.25), amba non-restrictive 7.21 (3.71); Tensed restrictive 3.09 (2.34), Tensed non-restrictive 4.25 (2.61) (F = 197.49, p < 0.001)",
+            "Both amba and tensed RCs have 220 tokens and an identical mean length of 5.00 words",
+            "Tensed RCs are longer than amba RCs and mostly non-restrictive",
+            "Only 100 RCs were sampled and length had no statistically significant effect"
+          ],
+          "hint": "See Mwamzandi (2022, Figure 1 p. 234 & Table 1 p. 237)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each corpus example from Section 4.1–4.2 of Mwamzandi (2022, pp. 234–238) with its exact English translation and syntactic property:",
+          "correctAnswer": "(14) Bwana yule [a-na-ye-sinzia] (p. 234): 'That man (over there) who is dozing' — 1-word tensed restrictive RC",
+          "pairs": [
+            {
+              "left": "(14) Bwana yule [a-na-ye-sinzia] (p. 234)",
+              "right": "'That man (over there) who is dozing' — 1-word tensed restrictive RC"
+            },
+            {
+              "left": "(16) Krapf [a-li-ye-li-tumikia dhehebu la C.M.S] (p. 235)",
+              "right": "'Krapf, who served the C.M.S Christian denomination' — tensed non-restrictive RC on a proper noun"
+            },
+            {
+              "left": "(17) A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] (p. 235)",
+              "right": "'He was wearing a white cloak that had started to lose its whiteness' — amba non-restrictive topic-comment RC"
+            },
+            {
+              "left": "(21) Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] (p. 237)",
+              "right": "'There are some citizens who deliberately block taps' — fronted adverbial phrase kwa makusudi licensed by amba-o"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swahili-mwamzandi-2022-topic-transitions-table2-23",
+      "title": "Information Structure, Grammatical Role & Continue vs. Shift Topic Transitions (Table 2 & Examples 25–32, pp. 238–246)",
+      "icon": "Compass",
+      "description": "Master Section 4.3 and Section 5 of Mwamzandi (2022, pp. 238–246): Table 2 (Head Noun grammatical role × topic status), continue transitions (HN = Subj, topic) vs. shift transitions (HN = Obj/PP, topic), Examples (25a–c)–(32), and all 27 scholarly references.",
+      "tips": "When the Head Noun (HN) is the matrix subject and discourse topic (continue transition, Table 2 Row 1), tensed RCs dominate (70 tensed [62 restr., 8 non-restr.] vs. 28 amba; χ² = 18, p < 0.001). When the HN is a matrix object that becomes the new topic of the RC and subsequent clauses (shift transition, Table 2 Row 3), amba RCs dominate (65 amba [10 restr., 55 non-restr.] vs. 36 tensed).",
+      "words": [
+        {
+          "target": "(25a) Nyumba [a-li-yo-kaa Beneti]. (25b) I-li-kuwa ya Kiswahili kabisa, (25c) I-li-on-ek-an-a kuukuu (pp. 238–239) • (26) Adili a-li-vunja amri [a-li-yo-p-ew-a] (p. 239)",
+          "source": "The house which Beneti stayed. It was a typical Swahili house, it looked old (postposed Beneti keeps nyumba as sole preverbal topic) • Adili broke the command he was given (amri is non-topic object; Adili is topic)",
+          "pronunciation": "nyu-mba a-li-yo-ka-a be-ne-ti / i-li-o-ne-ka-na ku-u-ku-u / a-di-li a-li-vu-nja a-mri a-li-yo-pe-wa",
+          "hint": "Mwamzandi (2022, §4.3, pp. 238–239, Examples 25a–c & 26)"
+        },
+        {
+          "target": "Table 2 (p. 240, N=440): HN = Subj, topic (7 amba restr., 21 non-restr. [28] vs. 62 tensed restr., 8 non-restr. [70], Total 98, χ²=18, p<0.001) • HN = Subj, non-topic (1, 0 vs. 4, 1, Total 6) • HN = Obj, topic (10, 55 [65] vs. 21, 15 [36], Total 101) • HN = Obj, non-topic (3, 24 [27] vs. 94, 5 [99], Total 126) • HN = PP, topic (5, 18 [23] vs. 9, 9 [18], Total 41, p>0.05) • HN = PP, non-topic (6, 5 [11] vs. 55, 2 [57], Total 68, χ²=31, p<0.001)",
+          "source": "Complete 6-row contingency table of Head Noun grammatical role (Subject, Object, PP complement) and topic status across all 440 HCS relative clauses",
+          "pronunciation": "su-bje-ct / o-bje-ct / t-o-p-i-c",
+          "hint": "Mwamzandi (2022, §4.3, Table 2, p. 240)"
+        },
+        {
+          "target": "(27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (Continue transition, p. 240) • (28) [Waandamanaji wa-li-kaidi amri hiyo]₁ [na ku-wa-rush-i-a mawe polisi]₂ [amba-o wa-li-jibu mapigo]₃ [kwa ku-fyatua risasi za moto]₄ (Shift transition, p. 241)",
+          "source": "The writers who followed have abandoned this style (of writing) • The demonstrators disobeyed the command and threw stones to the policemen who responded to the beatings (of stones) by shooting live bullets",
+          "pronunciation": "wa-a-ndi-shi wa-li-o-fu-a-ta wa-me-a-cha-na na m-ti-ndo hu-u / wa-a-nda-ma-na-ji wa-li-ka-i-di a-mri hi-yo",
+          "hint": "Mwamzandi (2022, §4.3, pp. 240–241, Examples 27–28)"
+        },
+        {
+          "target": "(29) Bali Rehema a-li-po-nyanyua macho ku-m-tazama Bikiza [a-li-ye-leta taarifa ya kifo]... (p. 241) • (30) A-li-anza ku-safiri ili ku-epuka ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo (p. 242)",
+          "source": "But when Rehema raised her eyes to look at Bikiza who brought the message of death... (tensed shift on proper noun Bikiza) • He started traveling to avoid the anger of his sibling who had missed the inheritance (amba shift on PP complement)",
+          "pronunciation": "ba-li re-he-ma a-li-po-nya-nyu-a ma-cho ku-m-ta-za-ma bi-ki-za / gha-dha-bu ya ndu-gu ya-ke a-mba-ye a-li-u-ko-sa u-ri-thi hu-o",
+          "hint": "Mwamzandi (2022, §4.3, pp. 241–242, Examples 29–30)"
+        },
+        {
+          "target": "(31) A-li-ji-ona katika nyumba kubwa sana i-li-yo-kuwa n-zuri ajabu (p. 242) • (32) Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242)",
+          "source": "He found himself in a very big house that was surprisingly beautiful (tensed RC on PP complement with intransitive kuwa) • In a ruling that was given yesterday by Judge Bernard Luand (tensed RC on PP complement with passivized to-lew-a)",
+          "pronunciation": "a-li-ji-o-na ka-ti-ka nyu-mba ku-bwa sa-na i-li-yo-ku-wa n-zu-ri a-ja-bu / ka-ti-ka hu-ku-mu i-li-yo-to-le-wa ja-na na ja-ji be-rna-rd lu-a-nd",
+          "hint": "Mwamzandi (2022, §4.3, p. 242, Examples 31–32)"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240) • Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242)",
+          "source": "The writers who followed have abandoned this style (of writing) • In a ruling that was given yesterday by Judge Bernard Luand."
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In Table 2 ('Effect of grammatical role and topic on Swahili RC variation', p. 240) of Mohamed Mwamzandi (2022), how do 'continue transitions' (HN = Subj, topic) contrast with 'shift transitions' (HN = Obj, topic)?",
+          "correctAnswer": "In continue transitions (HN = Subj, topic, Total = 98), tensed RCs are strongly preferred (70 tensed [62 restrictive, 8 non-restrictive] vs. 28 amba [7 restrictive, 21 non-restrictive], χ² = 18, p < 0.001); in shift transitions (HN = Obj, topic, Total = 101), amba RCs are preferred (65 amba [10 restrictive, 55 non-restrictive] vs. 36 tensed [21 restrictive, 15 non-restrictive])",
+          "options": [
+            "In continue transitions (HN = Subj, topic, Total = 98), tensed RCs are strongly preferred (70 tensed [62 restrictive, 8 non-restrictive] vs. 28 amba [7 restrictive, 21 non-restrictive], χ² = 18, p < 0.001); in shift transitions (HN = Obj, topic, Total = 101), amba RCs are preferred (65 amba [10 restrictive, 55 non-restrictive] vs. 36 tensed [21 restrictive, 15 non-restrictive])",
+            "amba RCs are preferred in continue transitions and tensed RCs are preferred in shift transitions",
+            "Grammatical role and topic status have no effect on relative marker choice",
+            "Prepositional phrase complements (HN = PP) never take tensed relative clauses"
+          ],
+          "hint": "See Mwamzandi (2022, §4.3, Table 2, p. 240)"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each discourse example from Section 4.3 of Mwamzandi (2022, pp. 240–242) with its exact translation and information-structure transition:",
+          "correctAnswer": "(27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240): 'The writers who followed have abandoned this style' — Continue transition (HN = Subj, topic) with tensed RC",
+          "pairs": [
+            {
+              "left": "(27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240)",
+              "right": "'The writers who followed have abandoned this style' — Continue transition (HN = Subj, topic) with tensed RC"
+            },
+            {
+              "left": "(28) [Waandamanaji wa-li-kaidi amri hiyo]₁ [na ku-wa-rush-i-a mawe polisi]₂ [amba-o wa-li-jibu mapigo]₃ [kwa ku-fyatua risasi za moto]₄ (p. 241)",
+              "right": "'The demonstrators disobeyed the command and threw stones to the policemen who responded...' — Shift transition (HN = Obj, topic) with amba-o"
+            },
+            {
+              "left": "(30) A-li-anza ku-safiri ili ku-epuka ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo (p. 242)",
+              "right": "'He started traveling to avoid the anger of his sibling who had missed the inheritance' — Shift transition on PP complement with amba-ye"
+            },
+            {
+              "left": "(32) Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242)",
+              "right": "'In a ruling that was given yesterday by Judge Bernard Luand' — Tensed RC on PP complement with passivized verb to-lew-a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});

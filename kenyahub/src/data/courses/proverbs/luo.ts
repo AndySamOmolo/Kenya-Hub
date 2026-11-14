@@ -79,3 +79,15 @@ export const LUO_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Sir Harry Johnston, The Uganda Protectorate, Vol. II (London: Hutchinson & Co., 1902, Ch. XVIII pp. 756–795, Figs. 428–438 & Ch. XX Set 3 pp. 926–935)"
   }
 ];
+
+LUO_PROVERBS.push({
+  id: "luo-cust-1883-vol1-kavirondo-luoh-affinity-cw",
+  languageId: "luo",
+  languageName: "Dholuo (Luo / Kavirondo)",
+  indigenous: "Kavirondo (Victoria Nyanza) ↔ Luoh / Lwo (I. Shilluk alias Dyur, Bellanda & Dembo [pp. 275–276]; XVIII. Lúr [pp. 282–283]; XX. Shúli, Gani & Shefalu [pp. 283–284]; XXI. Kavirondo [pp. 284–285])",
+  literalTranslation: "The Kavirondo on the eastern shores of Victoria Nyanza speak a language entirely different from the Bántu family and share a marked lexical affinity with the Shilluk, Lúr, and Shúli who call themselves Luoh or Lwo — Robert Needham Cust (1883, Vol. I, Ch. XI.D, pp. 275–285).",
+  meaning: "Recorded in Robert Needham Cust's A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map, Vol. I (London: Trübner & Co., 1883, Ch. XI.D 'Nile Sub-Group', pp. 273–287): documents the earliest comparative proof in African linguistics linking Kavirondo (Dholuo) on the eastern shore of Lake Victoria in Kenya—first recorded in a vocabulary by Rev. Charles New (1873) and in a manuscript Kavirondo Vocabulary compiled from a Swahíli caravan traveller and sent to Cust by Rev. Thomas Wakefield at Ribé just before Joseph Thomson's 1883 expedition—directly to the Luoh (Lwo) languages of the White Nile and Albert Nyanza (Shilluk/Dyur/Bellanda/Dembo, Lúr, and Shúli/Gani/Shefalu).",
+  englishEquivalent: "From the White Nile to the eastern shores of Lake Victoria, the voice of Luoh (Lwo) endures.",
+  theme: "unity",
+  sourceCitation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. XI.D, pp. 275–285)"
+});
