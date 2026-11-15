@@ -179,3 +179,48 @@ export const luoProverbs: ProverbEntry[] = [
     "category": "wisdom"
   }
 ];
+
+luoProverbs.push(
+  {
+    id: 201,
+    luo: "Acham ayieng' ne onego suna.",
+    english: "'Let me eat until I am completely full' killed the mosquito.",
+    meaning: "Greed and refusal to know when one has had enough lead to ruin (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "warning"
+  },
+  {
+    id: 202,
+    luo: "Ade tienda to awe ng'uta.",
+    english: "Let me tire my feet rather than lose my neck.",
+    meaning: "Taking a longer, safer path is far wiser than risking your life with a dangerous shortcut (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "wisdom"
+  },
+  {
+    id: 203,
+    luo: "Adiera en kwiri.",
+    english: "Truth is an antidote (medicine).",
+    meaning: "Speaking the truth heals disputes and protects the community from poison and deceit (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "truth"
+  },
+  {
+    id: 204,
+    luo: "Adiera ok tow.",
+    english: "Truth never rots.",
+    meaning: "No matter how much time passes, the truth remains intact and cannot decay (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "truth"
+  },
+  {
+    id: 205,
+    luo: "Adita ma ipimone e wadu ema in bende nipimni godo.",
+    english: "The basket you use to measure for your neighbor is the one that will be used to measure for you.",
+    meaning: "How you treat others is the exact measure by which you yourself will be treated (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "character"
+  },
+  {
+    id: 206,
+    luo: "Ang'e ok tel.",
+    english: "Regret ('Had I known') never comes first; it always comes last.",
+    meaning: "Foresight and careful deliberation are essential before acting, because hindsight only arrives after the mistake (Kencorpus/KenCorpus_text, story_id 139, CC-BY-4.0).",
+    category: "wisdom"
+  }
+);

@@ -307,3 +307,15 @@ KALENJIN_PROVERBS.push({
   "theme": "wisdom",
   "sourceCitation": "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393) & Meredith Landman (2019, Ch. 25, pp. 481–498), in Theory and description in African linguistics"
 });
+
+KALENJIN_PROVERBS.push({
+  "id": "kalenjin-cv-prov-1",
+  "languageId": "kalenjin",
+  "languageName": "Kalenjin",
+  "indigenous": "Somanet ko taitab ng'omnotet eng' lagok tugul.",
+  "literalTranslation": "Education is the lamp of wisdom for all children.",
+  "meaning": "Knowledge illuminates the path of every child and strengthens the community.",
+  "englishEquivalent": "Knowledge is light.",
+  "theme": "wisdom",
+  "sourceCitation": "Mozilla Common Voice 25.0 Kalenjin Corpus (CC0-1.0) & ThinkKenya Kalenjin"
+});

@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Borana (Oromo) (Afaan Borana) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const BORANA_CONFIG: LanguageConfig = {
   "id": "borana",
@@ -22,6 +17,7 @@ export const BORANA_CONFIG: LanguageConfig = {
   "description": "A major Lowland East Cushitic language spoken by the Borana, Gabra, Sakuye, and Orma communities of Northern and Eastern Kenya.",
   "color": "#B45309",
   "sources": [
+    "krapf-isenberg-galla-outline-1840",
     "krapf-galla-vocab-1842",
     "tutschek-galla-oromo-1844",
     "tutschek-galla-grammar-1845",
@@ -33,13 +29,15 @@ export const BORANA_CONFIG: LanguageConfig = {
 export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-1",
-    "title": "Unit 1: Nagaa Borana Greetings, Cushitic Cases, Numerals, 3 Conjugations & Tutschek (1845) Prayers",
+    "unitNumber": 1,
+    "title": "Nagaa Borana Greetings, Cushitic Cases, Numerals, 3 Conjugations",
     "description": "Master Afaan Borana greetings (Akkam jirta? / Nagaa!), Nominative vs. Accusative cases, Cardinals/Ordinals (-tiana), Social Numerals (-anu), Amole salt-bar fractions, 8 Derived Verbal Forms, 3 Conjugations, 5 Particle Modes, 4 Negative Verbs, and Verbatim 1840–1845 Prayers & Letters.",
     "icon": "BookOpen",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-greetings-nouns",
-        "title": "Greetings, Nagaa (Peace), Kinship, Cases & Tutschek (1845) Prayers & Letters",
+        "title": "Greetings, Nagaa (Peace), Kinship, Cases & Tutschek Prayers &",
         "icon": "Handshake",
         "description": "Learn Afaan Borana greetings, pronouns, Nominative case formations (-n, -i, -fni, -ti, -ñi), and verbatim prayers and letters from the 1842–1845 corpus.",
         "tips": "In Afaan Borana (Tutschek 1845, §§ 177–195, pp. 54–57), collective nouns (dargago, mangudo, hatu, hidjole) govern a 3rd person feminine singular verb, and the Accusative/Absolutive is the citation form (nama 'person', lafa 'earth', muka 'tree', boka 'rain', kaniza 'bee', barziza 'teacher', gawa 'hole'), while grammatical subjects take Nominative suffixes (namni, lafti, mukni, bokeñi, kanifni, barzifni, gofni).",
@@ -48,60 +46,60 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Akkam jirta? / Naga, naga! Fayaketi! / Ati naga olte had'a?",
             "source": "How are you? / Peace, peace! Thy health! / Hast thou passed this day in peace?",
-            "pronunciation": "akkam jirta / na-ga na-ga fa-ya-ke-ti / a-ti na-ga ol-te ha-d'a",
+            "pronunciation": "akkam-jirta",
             "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
-            "target": "Galatoomi / Wacayon iza ha tolu / Nagaiti buli! / Nagan hafi hama nu wal agaruti!",
+            "target": "Galatoomi / Wacayon iza ha tolu / Nagaiti buli! / Nagan hafi hama nu",
             "source": "Thank you / May God do good to him / Good night! / Rest in peace until we meet again!",
-            "pronunciation": "ga-la-too-mi / wa-ca-yon iza ha to-lu / na-gai-ti bu-li / na-gan ha-fi",
+            "pronunciation": "galatoomi",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
-            "target": "nama (nom. namni) / dhiira (d'ira, nom. d'irri) / dubartii (niti) / mangudo & dargago",
+            "target": "nama (nom. namni) / dhiira (d'ira, nom. d'irri) / dubartii (niti) /",
             "source": "Person / Man / Woman, wife / Elders & Youth (collective fem. sg.)",
             "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
             "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
-            "target": "abbaa (nom. aban, voc. abo/abe) / haadha (had'a, nom. had'i, voc. had'o/had'e) / mutsha (pl. hidjole)",
+            "target": "abbaa / haadha / mutsha (pl. hidjole)",
             "source": "Father (my/thy father) / Mother (my/thy mother) / Child (pl. collective children)",
             "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
             "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
-            "target": "kaniza (nom. kanifni) / barziza (nom. barzifni) / gawa (nom. gofni) / lafa (nom. lafti) / boka (nom. bokeñi)",
+            "target": "kaniza (nom. kanifni) / barziza (nom. barzifni) / gawa (nom. gofni) /",
             "source": "Bee / Teacher / Hole (-fni Nominative) / Earth (-ti) / Rain (-ñi)",
             "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
             "hint": "Tutschek (1845, § 184, pp. 55–56)"
           },
           {
-            "target": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati, nom. batin)",
+            "target": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati, nom.",
             "source": "Water / Fire / Sun / Moon",
             "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
-            "target": "loon (godiyo) / gaala / reeʿ (pl. rooda / rooni) / farda (pl. faratoni d'êd'ti)",
+            "target": "loon (godiyo) / gaala / reeʿ (pl. rooda / rooni) / farda",
             "source": "Cattle / Camel / Goat / Horse (the horses graze — fem. sg. concord)",
             "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
             "target": "Ya Waca nagan na bultshite nagan na oltshi ... milkiko na gadyêlzi!",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace ... lead my steps! (Morning Prayer)",
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace ...",
             "pronunciation": "ya wa-ca na-gan na bultshi-te na-gan na oltshi",
             "hint": "Tutschek (1845, pp. 87–88, Morning Prayer)"
           },
           {
-            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu, ati hama nati cabi, goftako, gadiza na tai!",
-            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun from me, mayest thou keep off misfortune, my Lord, be thou my shadow! (Prayer 1 vv. 1–2)",
+            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu,",
+            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the",
             "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko ... ga-di-za na tai",
             "hint": "Tutschek (1845, p. 84, Akafed'e's Prayer after the Hambo–Hamaya War)"
           },
           {
             "target": "D'ad'an ibidti bue hindebiu",
-            "source": "Butter fallen into the fire comes not back (Proverb in Akafed'e's Letter of Oct. 21, 1840)",
+            "source": "Butter fallen into the fire comes not back",
             "pronunciation": "d'ad'an i-bidti bue hinde-biu",
             "hint": "Tutschek (1845, p. 90, Letter 5)"
           }
@@ -109,15 +107,15 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi.",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me, O God, lead my steps (Tutschek 1845, pp. 87–88)."
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me,"
           },
           {
             "target": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
-            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou my father (Tutschek 1845, p. 88)."
+            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy"
           },
           {
             "target": "Wara Hambo fi wara Hamaya waliti ararzi, goftako! Lola biyakeña baza, naga biyakeñati debizi!",
-            "source": "Reconcile the people of Hambo and the people of Hamaya with one another, my Lord! Drive war out of our country, bring peace back to our country! (Tutschek 1845, p. 86, Prayer 1 vv. 12–13)."
+            "source": "Reconcile the people of Hambo and the people of Hamaya with one another, my Lord! Drive war out of our country, bring peace back to our country!"
           },
           {
             "target": "D'ad'an ibidti bue hindebiu.",
@@ -201,10 +199,6 @@ export const BORANA_UNITS: CourseUnit[] = [
               {
                 "left": "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
                 "right": "Person / Man / Woman, wife"
-              },
-              {
-                "left": "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)",
-                "right": "Father / Mother / Child (pl. collective children)"
               }
             ]
           },
@@ -224,19 +218,19 @@ export const BORANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "borana-numbers-verbs",
-        "title": "Numerals, Ordinals (-tiana), 21 Social Numbers (-anu), Amole Fractions, 8 Verbal Forms & 3 Conjugations",
+        "title": "Numerals, Ordinals (-tiana), 21 Social Numbers (-anu), Amole",
         "icon": "Hash",
         "description": "Count in Afaan Borana and master Tutschek’s (1845) ordinals, 21 social numbers, 4 salt-bar fractions, 8 derived verb stems, 3 conjugations, 5 particle modes, and 4 negative verbs.",
         "tips": "Tutschek (1845, §§ 38–176, 201–215, pp. 9–53, 58–63) documents cardinals 1–100,000, ordinals in -tiana (tokotiana '2nd', lamatiana '3rd', while '1st' is ini dura or hangafa, opposed to gudiru 'youngest' & ini boda 'last'), 21 social numbers in -anu (latshanu '2 together' ... kumatanu '1,000 together' + ladz'u 'both'), 4 amole fractions: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele/gadele (1/8), 3 conjugations (adema, tshiza, tà/boa), 5 particle modes (-re, -mi, -ti, -yi, -ni), and 4 negative verbs (dida, bad'a, d'aba, ola).",
         "words": [
           {
-            "target": "tokko (toko, 1), lama (2), sadii (zadi, 3), afur (afuri, 4), shan (z'ani, 5)",
+            "target": "tokko (toko, 1), lama (2), sadii (zadi, 3), afur (afuri, 4), shan",
             "source": "Cardinals 1 to 5",
             "pronunciation": "tokko la-ma sa-dii a-fur shan",
             "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
           },
           {
-            "target": "ja'a (dya, 6), torba (7; torban = week), saddeet (zadeta, 8), sagal (zagala, 9), kudhan (kudani, 10; kurna = 10-day period)",
+            "target": "ja'a (dya, 6), torba (7; torban = week), saddeet (zadeta, 8), sagal",
             "source": "Cardinals 6 to 10 (plus 7-day week & 10-day decade)",
             "pronunciation": "ja'a torba saddeet sa-gal kudhan",
             "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
@@ -248,22 +242,21 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 7, 202, pp. 3, 59)"
           },
           {
-            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60), torbatama (70), zadettama (80), zagaltama (90), d'iba (100), kuma (1,000), kuntuma (100,000)",
+            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60),",
             "source": "20 to 90, 100, 1,000, and 100,000 ('a fist-full of thousands')",
             "pronunciation": "digda-ma so-do-ma dhibba ku-ma kuntu-ma",
             "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
           },
           {
-            "target": "ini dura / hangafa (1st, opp. gudiru 'youngest' & ini boda 'last'), tokotiana (2nd), lamatiana (3rd), zaditiana (4th) ... kudanitiana / kurnatiana (11th)",
+            "target": "ini dura / hangafa, tokotiana (2nd), lamatiana (3rd), zaditiana (4th)",
             "source": "Ordinals 1st to 11th (-tiana = 'hanging on')",
             "pronunciation": "ini du-ra / hanga-fa to-ko-tia-na la-ma-tia-na za-di-tia-na",
             "hint": "Tutschek (1845, §§ 207–208, pp. 60–61)"
           },
           {
-            "target": "latshanu (2), zadanu (3), arfanu (4), z'ananu (5), dyanu (6), torbanu (7), zadetanu (8), zagaltanu (9), kurnanu (10) ... d'ibatanu (100), kumatanu (1,000); ladz'u (both)",
-            "source": "All 21 social numerals (-anu = 'together') & ladz'u ('both')",
-            "pronunciation": "latsha-nu za-da-nu arfa-nu kur-na-nu lad-z'u",
-            "hint": "Tutschek (1845, §§ 209–210, p. 61)"
+            "target": "ladz'u",
+            "source": "both",
+            "pronunciation": "ladz'u"
           },
           {
             "target": "amole: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
@@ -272,31 +265,31 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 212, p. 62)"
           },
           {
-            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at once), lafa dyala (at first) | diriba, datchâ, lamefad'a, zadifad'a, afurifad'a, z'anifad'a",
+            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at",
             "source": "Numeral adverbs & numeral verbs (double; do for the 2nd, 3rd, 4th, 5th time)",
             "pronunciation": "ga-fa-to-ko / di-ri-ba / la-me-fad'a",
             "hint": "Tutschek (1845, §§ 213–215, pp. 62–63)"
           },
           {
-            "target": "bâ → bad'a → baza → bafad'a → baziza → bazifad'a → baziziza → bazizifad'a (+ pass. -ama, inchoat. -oma)",
-            "source": "The 8 derived verbal forms of bâ (go out → middle → causative → middle-causative)",
-            "pronunciation": "ba → bad'a → ba-za → ba-fad'a → ba-zi-za → ba-zi-fad'a → ba-zi-zi-za → ba-zi-zi-fad'a",
+            "target": "bâ → bad'a → baza → bafad'a → baziza → bazifad'a → baziziza → bazizifad'a",
+            "source": "The 8 derived verbal forms of bâ",
+            "pronunciation": "bâ-bad'a-baza-bafad'a",
             "hint": "Tutschek (1845, §§ 44–50, 98, 105, pp. 11–12, 28, 30)"
           },
           {
-            "target": "Conj. I: adema, ademta, ademna | Conj. II: tshiza, tshifta, tshifna | Conj. III: tà, teza, teña (boa, boza, boña)",
+            "target": "Conj. I: adema, ademta, ademna",
             "source": "The 3 Verbal Conjugations (1s, 2s, 1p Present Indicative)",
             "pronunciation": "a-de-ma / tshi-za tshif-ta / ta te-za te-nya",
             "hint": "Tutschek (1845, §§ 132–135, pp. 38–42)"
           },
           {
-            "target": "Modes: -u (subj.), -re (interrog.), -mi (nonne), -ti (until), -yi (while), -ni (without)",
+            "target": "Modes: -u (subj.), -re (interrog.), -mi (nonne), -ti (until), -yi",
             "source": "Subjunctive in -u & the 5 affixed particle modes",
             "pronunciation": "-u / -re / -mi / -ti / -yi / -ni",
             "hint": "Tutschek (1845, §§ 113–119, pp. 32–34)"
           },
           {
-            "target": "dida (refuse: oad'z'udide) / bad'a (neglect: oad'z'ubad'te) / d'aba (lack power: oad'z'u d'abe) / ola (pass by / fail)",
+            "target": "dida (refuse: oad'z'udide) / bad'a / d'aba / ola (pass by / fail)",
             "source": "The 4 negative auxiliary verbs in Galla/Borana",
             "pronunciation": "di-da / bad'a / d'a-ba / ola",
             "hint": "Tutschek (1845, § 176, pp. 52–53)"
@@ -317,7 +310,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi? — Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe.",
-            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it weeps; its belly aches, therefore it weeps (Tutschek 1845, § 255, p. 83)."
+            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it"
           }
         ],
         "authoredExercises": [
@@ -344,29 +337,6 @@ export const BORANA_UNITS: CourseUnit[] = [
               "6, 7, 8, 9, 10"
             ],
             "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Borana grammatical or numeral series with its English meaning:",
-            "correctAnswer": "tokko (toko), lama, sadii (zadi), afur (afuri), shan (z'ani): 1, 2, 3, 4, 5",
-            "pairs": [
-              {
-                "left": "tokko (toko), lama, sadii (zadi), afur (afuri), shan (z'ani)",
-                "right": "1, 2, 3, 4, 5"
-              },
-              {
-                "left": "ja'a (dya), torba (torban = week), saddeet (zadeta), sagal (zagala), kudhan (kudani; kurna = 10-day period)",
-                "right": "6, 7, 8, 9, 10"
-              },
-              {
-                "left": "digdama (digetama = 20), sodoma (zodoma = 30), dhibba (d'iba = 100), kuma (1,000), kuntuma (100,000)",
-                "right": "20, 30, 100, 1,000, 100,000"
-              },
-              {
-                "left": "ini dura / hangafa (1st), tokotiana (2nd), lamatiana (3rd), zaditiana (4th)",
-                "right": "First (first-born), Second, Third, Fourth"
-              }
-            ]
           }
         ]
       }
@@ -374,9 +344,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Users",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-family-kinship-kinship-elders-2",
@@ -441,7 +413,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -603,7 +574,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -658,9 +628,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Scale",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-numbers-measures-cardinals-ordinals-3",
@@ -725,7 +697,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 201, p. 58)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -957,9 +928,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Tractor",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-food-agriculture-staple-foods-cookery-4",
@@ -1107,7 +1080,8 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "sórate; lékemse",
-            "source": "Eat"
+            "source": "Eat",
+            "pronunciation": "sórate"
           },
           {
             "target": "damfe",
@@ -1223,9 +1197,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "PawPrint",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-nature-wildlife-land-sky-water-5",
@@ -1290,7 +1266,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1524,9 +1499,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "User",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-body-health-anatomy-senses-6",
@@ -1591,7 +1568,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1753,7 +1729,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [s.]"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1856,9 +1831,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Compass",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-verbs-grammar-action-verbs-7",
@@ -2130,9 +2107,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Map",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-time-calendar-seasons-months-8",
@@ -2167,7 +2146,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla adv.)"
           },
           {
-            "target": " barii / ganama",
+            "target": "barii / ganama",
             "source": "Morning / Dawn",
             "pronunciation": "ba-rii / ga-na-ma",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
@@ -2185,7 +2164,8 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "sawani",
-            "source": "Age"
+            "source": "Age",
+            "pronunciation": "sawani"
           },
           {
             "target": "safaia",
@@ -2401,9 +2381,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-9",
-    "title": "Unit 9: Conversational Phrases, Idioms & Daily Dialogue",
+    "unitNumber": 9,
+    "title": "Conversational Phrases, Idioms & Daily Dialogue",
     "description": "Master conversational phrases, idioms & daily dialogue in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "MessageCircle",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-phrases-idioms-everyday-dialogue-9",
@@ -2674,9 +2656,11 @@ export const BORANA_UNITS: CourseUnit[] = [
   },
   {
     "id": "borana-unit-10",
-    "title": "Unit 10: Classical Proverbs, Riddles & Ethnographic Heritage",
+    "unitNumber": 10,
+    "title": "Classical Proverbs, Riddles & Ethnographic Heritage",
     "description": "Master classical proverbs, riddles & ethnographic heritage in Borana (Oromo) built directly from Rev. Dr. J. L. Krapf (1842, 1850), Karl & Lawrence Tutschek (1844, 1845), and E. C. Foot (1913).",
     "icon": "Globe",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-oral-wisdom-literature-proverbs-riddles-10",
@@ -2741,7 +2725,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf 1842 & Tutschek 1844"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2903,7 +2886,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3005,10 +2987,12 @@ export const BORANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "borana-unit-11-public-domain-corpus",
-    "title": "Unit 11: Archival Monograph & Comparative Lexicon",
+    "id": "borana-unit-11",
+    "unitNumber": 11,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Borana (Oromo) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-pd-corpus-11-1",
@@ -3066,7 +3050,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3173,7 +3156,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adj.]"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3227,10 +3209,12 @@ export const BORANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "borana-unit-12-open-datasets-modern",
-    "title": "Unit 12: Core Swadesh & Everyday Community Vocabulary",
+    "id": "borana-unit-12",
+    "unitNumber": 12,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Borana (Oromo) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-open-dataset-12-1",
@@ -3288,7 +3272,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adv.]"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3395,7 +3378,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3449,10 +3431,12 @@ export const BORANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "borana-unit-13-tutschek-1844-1845-complete",
-    "title": "Unit 13: Tutschek (1844–1845) Dictionary Parts I & II — Daily Clock (Oba), Oaths (Kalatcha), Currency (Amole & Biri), Ethnomedicine (Het'o) & Songs (Wetu)",
+    "id": "borana-unit-13",
+    "unitNumber": 13,
+    "title": "Tutschek Dictionary Parts I & II",
     "description": "Master the complete 1844–1845 Galla Dictionary of Charles & Lawrence Tutschek: the 4 redeemed youths and 3 Galla authorities, the daily solar clock (ganama aboro to oba lamuti–z'aniti), the kalatcha and tili oaths, amole & biri currency, het'o/d'ogonu ethnomedicine, and all 23 Magm. proverbs and 9 Wetu songs.",
     "icon": "BookOpen",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-tutschek-1844-clock-currency-law-13-1",
@@ -3463,63 +3447,88 @@ export const BORANA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ganama aboro → ganama → dirama → ware → ware korate → oba (oba dyabi)",
-            "source": "Very early dawn → Morning (to ~8 a.m.) → Forenoon (~8–9 a.m.) → ~9–10 a.m. → Late forenoon → High noon (12 o'clock; 'noon of the calves')",
-            "pronunciation": "ga-na-ma a-bo-ro / di-ra-ma / wa-re / wa-re ko-ra-te / o-ba dya-bi",
+            "source": "Very early dawn → Morning (to ~8 a.m.) → Forenoon (~8–9 a.m.) → ~9–10 a.m. → Late",
+            "pronunciation": "ganama-aboro-ganama-dirama",
             "hint": "Tutschek (1844, Part I, pp. 23, 59, 100, 148–149)"
           },
           {
-            "target": "oba lamuti • oba zaditi • oba afuriti • oba z'aniti • galgala dimemeza",
-            "source": "2nd hour after noon • 3rd hour • 4th hour • 5th hour • Midnight",
-            "pronunciation": "o-ba la-mu-ti / o-ba za-di-ti / o-ba a-fu-ri-ti / o-ba z'a-ni-ti / gal-ga-la di-me-me-za",
-            "hint": "Tutschek (1844, Part I, pp. 23, 101)"
+            "target": "oba lamuti",
+            "source": "2nd hour after noon",
+            "pronunciation": "oba-lamuti"
           },
           {
-            "target": "amole (mogor = 2; tchabnana = 1/2; kurmana = 1/4; gimaz'i = 1/8; gedele / fotoqe = 1/12; zanaga / çarmama) • biri (S. F. = 23 / 20 amole)",
-            "source": "Rock-salt bar currency & its fractions • Austrian Maria Theresa silver dollar with initials S. F. (worth 23 amole [Ak.] or 20 amole [Am.])",
-            "pronunciation": "a-mo-le / mo-gor / tchab-na-na / kur-ma-na / gi-ma-z'i / ge-de-le / fo-to-qe / bi-ri",
-            "hint": "Tutschek (1844, Part I, pp. 13, 60, 122, 135, 172, 183, 188)"
+            "target": "oba zaditi",
+            "source": "3rd hour",
+            "pronunciation": "oba-zaditi"
           },
           {
-            "target": "qit'e (sharecropper) vs. yagudo / yaguto (wage day-labourer) & d'abo • gubziza (vassal) • findja Lali",
-            "source": "Sharecropper receiving half the harvest vs. fixed-wage day-labourer & assistant • Settled vassal • Cascade in Hambo where capital sentences were executed",
-            "pronunciation": "qi-t'e / ya-gu-do / d'a-bo / gub-zi-za / fin-dja la-li",
-            "hint": "Tutschek (1844, Part I, pp. 46, 68, 108, 122, 145)"
+            "target": "oba afuriti",
+            "source": "4th hour",
+            "pronunciation": "oba-afuriti"
           },
           {
-            "target": "kalatcha (under lafto Michaila) • „t'wu — aki — t'wu — tili!\" • mora wal cabad'a • cote wal cabad'u",
-            "source": "Oath staff wreathed with meeça twigs licked under the lafto Michaila tree • Grass-spitting oath • Holding sacrificial fat together for peace • Hooking little fingers to wager",
-            "pronunciation": "ka-lat-cha / laf-to mi-chai-la / t'wu a-ki t'wu ti-li / mo-ra wal ca-ba-d'a",
-            "hint": "Tutschek (1844, Part I, pp. 31, 47, 66, 91, 172)"
+            "target": "oba z'aniti",
+            "source": "5th hour",
+            "pronunciation": "oba-z'aniti"
+          },
+          {
+            "target": "galgala dimemeza",
+            "source": "Midnight",
+            "pronunciation": "galgala-dimemeza"
+          },
+          {
+            "target": "amole",
+            "source": "Rock-salt bar currency & its fractions",
+            "pronunciation": "amole"
+          },
+          {
+            "target": "biri",
+            "source": "Austrian Maria Theresa silver dollar with initials S. F.",
+            "pronunciation": "biri"
+          },
+          {
+            "target": "gubziza (vassal)",
+            "source": "Settled vassal",
+            "pronunciation": "gubziza"
+          },
+          {
+            "target": "findja Lali",
+            "source": "Cascade in Hambo where capital sentences were executed",
+            "pronunciation": "findja-lali"
+          },
+          {
+            "target": "kalatcha",
+            "source": "Oath staff wreathed with meeça twigs licked under the lafto Michaila tree",
+            "pronunciation": "kalatcha"
+          },
+          {
+            "target": "„t'wu — aki — t'wu — tili!\"",
+            "source": "Grass-spitting oath",
+            "pronunciation": "t'wu-aki-t'wu-tili"
+          },
+          {
+            "target": "mora wal cabad'a",
+            "source": "Holding sacrificial fat together for peace",
+            "pronunciation": "mora-wal-cabad'a"
+          },
+          {
+            "target": "cote wal cabad'u",
+            "source": "Hooking little fingers to wager",
+            "pronunciation": "cote-wal-cabad'u"
           }
         ],
         "sentences": [
           {
             "target": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a: „Hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!\" djed'eti.",
-            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all the cattle and goods I possess!' (Tutschek 1844, Part I, p. 31)"
+            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all the"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Tutschek (1844, Part I, p. 23 s.v. oba), what does 'oba' signify in Oromo/Borana timekeeping, and how are the afternoon hours counted?",
-            "correctAnswer": "High noon (12 o'clock; with oba dyabi = watering-noon of the calves), and afternoon hours are counted from oba with cardinals (oba lamuti, oba zaditi, oba afuriti, oba z'aniti)",
-            "options": [
-              "High noon (12 o'clock; with oba dyabi = watering-noon of the calves), and afternoon hours are counted from oba with cardinals (oba lamuti, oba zaditi, oba afuriti, oba z'aniti)",
-              "Midnight (galgala dimemeza)",
-              "Early dawn before sunrise (ganama aboro)",
-              "The New Year festival in mid-September (Magzala)"
-            ],
-            "hint": "See Tutschek (1844, Part I, p. 23 s.v. oba)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each economic or legal term from Tutschek (1844, Part I) with its definition:",
             "correctAnswer": "qit'e: Sharecropper who supplies seed and receives half the harvest (p. 46)",
             "pairs": [
-              {
-                "left": "qit'e",
-                "right": "Sharecropper who supplies seed and receives half the harvest (p. 46)"
-              },
               {
                 "left": "yagudo / yaguto",
                 "right": "Day-labourer paid a fixed wage without harvest share (p. 145)"
@@ -3538,32 +3547,55 @@ export const BORANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "borana-tutschek-1844-medicine-songs-proverbs-13-2",
-        "title": "Ethnomedicine (Het'o & D'ogonu), Botanical Lore, 23 Magm. Proverbs & 9 Wetu Songs",
+        "title": "Ethnomedicine (Het'o & D'ogonu), Botanical Lore, 23 Magm.",
         "icon": "Sparkles",
         "description": "Study Akafed'e Dalle's treatise on curing tapeworm (mini/d'uma) with het'o and d'ogonu, Duke Paul of Württemberg's plant identifications, and the complete Magm. proverbs and Wetu songs.",
         "tips": "Akafed'e Dalle (from Botchi in Hambo, province of Liban), Otshu Aga (from Urgeza in Sibu), Bilile (from Guma), and Aman Gonda (from Hibi in Goma) contributed the 23 proverbs (Magm.) and 9 rhyming songs (Wetu) in Part I (1844).",
         "words": [
           {
-            "target": "het'o (Brayera anthelminthica) + d'ogonu (mallow bark) → mini & d'uma",
-            "source": "Dried, pounded het'o flowers drunk fasting in d'ogonu bark infusion to expel tapeworm (early stage mini, mature jointed stage d'uma)",
+            "target": "het'o + d'ogonu (mallow bark) → mini & d'uma",
+            "source": "Dried, pounded het'o flowers drunk fasting in d'ogonu bark infusion to expel tapeworm",
             "pronunciation": "he-t'o / d'o-go-nu / mi-ni / d'u-ma",
             "hint": "Tutschek (1844, Part I, pp. 101, 110, 170, 196–197)"
           },
           {
-            "target": "kelo (Stevia orientalis, Birra & Magzala) • wandabiu & nadaduda • handode (Phytolacca abyssinica)",
-            "source": "Yellow flower heralding spring (birra) and the Magzala New Year feast • Pterocarpus tree yielding sweet white manna • Soap-berry plant for washing clothes",
-            "pronunciation": "ke-lo / mag-za-la / wan-da-bi-u / na-da-du-da / han-do-de",
-            "hint": "Tutschek (1844, Part I, pp. 34, 77, 147, 192 — identified with Duke Paul of Württemberg, H. P.)"
+            "target": "kelo",
+            "source": "Yellow flower heralding spring (birra) and the Magzala New Year feast",
+            "pronunciation": "kelo"
           },
           {
-            "target": "Hodjadz'u wayo mo tau wai? • Lubun lamaṅ dyirtu • Madirati hinkolfini • Bokeṅi mit'ileṅ adjezu, zi adjeza?",
-            "source": "Is it better to work or to sit idle? • There are not two lives • Laugh not at a scar! • The rain kills not an ant; will it kill thee?",
-            "pronunciation": "ho-dja-dz'u wa-yo mo tau wai / lu-bun la-man dyir-tu / ma-di-ra-ti hin-kol-fi-ni",
-            "hint": "Tutschek (1844, Part I, pp. 146, 161, 163, 170, 201 — Magm. proverbs)"
+            "target": "wandabiu & nadaduda",
+            "source": "Pterocarpus tree yielding sweet white manna",
+            "pronunciation": "wandabiu-nadaduda"
           },
           {
-            "target": "Zila zimalan yaba, Zimali dameṅ cabu; — Zila gandaran gala, Gandatu wareṅ cabu • Cotani cotani yaa babazani; Djed'ani djed'ani gargar nu bazani",
-            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through the village, the village has no inhabitants • They ploughed and ploughed and dug out the yaa-root; they talked and talked and parted us asunder",
+            "target": "handode",
+            "source": "Soap-berry plant for washing clothes",
+            "pronunciation": "handode"
+          },
+          {
+            "target": "Hodjadz'u wayo mo tau wai?",
+            "source": "Is it better to work or to sit idle?",
+            "pronunciation": "hodjadz'u-wayo-mo-tau"
+          },
+          {
+            "target": "Lubun lamaṅ dyirtu",
+            "source": "There are not two lives",
+            "pronunciation": "lubun-laman-dyirtu"
+          },
+          {
+            "target": "Madirati hinkolfini",
+            "source": "Laugh not at a scar!",
+            "pronunciation": "madirati-hinkolfini"
+          },
+          {
+            "target": "Bokeṅi mit'ileṅ adjezu, zi adjeza?",
+            "source": "The rain kills not an ant; will it kill thee?",
+            "pronunciation": "bokeni-mit'ilen-adjezu"
+          },
+          {
+            "target": "Zila zimalan yaba, Zimali dameṅ cabu;",
+            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through the",
             "pronunciation": "zi-la zi-ma-lan ya-ba / co-ta-ni co-ta-ni yaa ba-ba-za-ni",
             "hint": "Tutschek (1844, Part I, pp. 127, 148 — Wetu songs)"
           }
@@ -3575,18 +3607,6 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Akafed'e Dalle's ethnomedical account in Tutschek (1844, Part I, pp. 110, 196–197), how are the flowers of the 'het'o' tree (Brayera anthelminthica) prepared and taken to cure the tapeworm ('d'uma', early stage 'mini')?",
-            "correctAnswer": "Dried, pounded, sieved, and drunk fasting in the early morning mixed in a mucilaginous bark infusion of 'd'ogonu' (mallow), while resting in the shade and drinking farzo",
-            "options": [
-              "Dried, pounded, sieved, and drunk fasting in the early morning mixed in a mucilaginous bark infusion of 'd'ogonu' (mallow), while resting in the shade and drinking farzo",
-              "Boiled with coffee beans (buna) and cardamom (ogio) at midnight",
-              "Applied externally with the yellow petals of the kelo flower (Stevia orientalis)",
-              "Chewed raw with a piece of rock-salt (amole)"
-            ],
-            "hint": "See Tutschek (1844, Part I, pp. 110, 196–197 s.v. het'o & d'ogonu)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each verbatim Galla proverb (Magm.) or song (Wetu) from Tutschek (1844, Part I) with its English translation:",
@@ -3615,10 +3635,12 @@ export const BORANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "borana-unit-14-krapf-isenberg-1842-vocabulary",
-    "title": "Unit 14: Krapf & Isenberg (1842) Vocabulary of the Galla Language — 7-Day Week, Relative Years, East Cushitic Cognates & Idioms",
+    "id": "borana-unit-14",
+    "unitNumber": 14,
+    "title": "Krapf & Isenberg Vocabulary of the Galla Language",
     "description": "Explore the first English–Oromo dictionary compiled by Rev. J. L. Krapf in Shoa (1841) and edited by Rev. C. W. Isenberg in London (1842, pp. i–ii, 1–42): the 7-day week, relative day and year expressions, East Cushitic (Dankali & Somali) cognates, and conversational idioms.",
     "icon": "Book",
+    "color": "#B45309",
     "skills": [
       {
         "id": "borana-krapf-1842-week-calendar-cognates-14-1",
@@ -3628,28 +3650,114 @@ export const BORANA_UNITS: CourseUnit[] = [
         "tips": "In Krapf (1842), Monday and Tuesday are named after work ('hutshi dura' = first work-day, 'hutshi lamafa' = second work-day), Wednesday through Friday use Arabic/Ethio-Semitic names (rōbi, kāmis, tshimāta), and Saturday and Sunday distinguish the 'little Sabbath' (sanbata tenna) from the 'great Sabbath' (sanbata gudda).",
         "words": [
           {
-            "target": "hutshi dura • hutshi lamafa • rōbi • kāmis • tshimāta • sanbata tenna • sanbata gudda",
-            "source": "Monday • Tuesday • Wednesday • Thursday • Friday • Saturday • Sunday",
-            "pronunciation": "hu-tshi du-ra / hu-tshi la-ma-fa / ro-bi / ka-mis / tshi-ma-ta / san-ba-ta ten-na / san-ba-ta gud-da",
-            "hint": "Krapf (1842, pp. 15, 24, 31, 35, 37, 38, 40)"
+            "target": "hutshi dura",
+            "source": "Monday",
+            "pronunciation": "hutshi-dura"
           },
           {
-            "target": "arda • borumti • iftān • kallēsa • dengādda • yogga • berdingata • berekan",
-            "source": "To-day • On the following day • After to-morrow • Yesterday • Day before yesterday • Year • Last year • The year before last",
-            "pronunciation": "ar-da / bo-rum-ti / if-tan / kal-le-sa / den-gad-da / yog-ga / ber-din-ga-ta / be-re-kan",
-            "hint": "Krapf (1842, pp. 9, 24, 42)"
+            "target": "hutshi lamafa",
+            "source": "Tuesday",
+            "pronunciation": "hutshi-lamafa"
           },
           {
-            "target": "Waka • mukabe / mukaba • kaletsha vs. kêsi sidāma & Iltshāma",
-            "source": "God / heaven • To pray / prayer (to God) • Galla priest vs. Priest of Christians & Mohammedan",
-            "pronunciation": "wa-ka / mu-ka-be / ka-le-tsha / ke-si si-da-ma / il-tsha-ma",
-            "hint": "Krapf (1842, pp. 7, 16, 17, 23, 28)"
+            "target": "rōbi",
+            "source": "Wednesday",
+            "pronunciation": "rōbi"
           },
           {
-            "target": "Wak' nagaia si kakennu! • Nagaia hafu tshedde • Naga ambulte! • Mali odu harraia duffe?",
-            "source": "Farewell! ('May God give thee peace!') • To bid farewell • Good morning! • What is the news?",
-            "pronunciation": "wak na-ga-ia si ka-ken-nu / na-ga am-bul-te / ma-li o-du har-ra-ia duf-fe",
-            "hint": "Krapf (1842, pp. 13, 24, 25)"
+            "target": "kāmis",
+            "source": "Thursday",
+            "pronunciation": "kāmis"
+          },
+          {
+            "target": "tshimāta",
+            "source": "Friday",
+            "pronunciation": "tshimāta"
+          },
+          {
+            "target": "sanbata tenna",
+            "source": "Saturday",
+            "pronunciation": "sanbata-tenna"
+          },
+          {
+            "target": "sanbata gudda",
+            "source": "Sunday",
+            "pronunciation": "sanbata-gudda"
+          },
+          {
+            "target": "arda",
+            "source": "To-day",
+            "pronunciation": "arda"
+          },
+          {
+            "target": "borumti",
+            "source": "On the following day",
+            "pronunciation": "borumti"
+          },
+          {
+            "target": "iftān",
+            "source": "After to-morrow",
+            "pronunciation": "iftān"
+          },
+          {
+            "target": "kallēsa",
+            "source": "Yesterday",
+            "pronunciation": "kallēsa"
+          },
+          {
+            "target": "dengādda",
+            "source": "Day before yesterday",
+            "pronunciation": "dengādda"
+          },
+          {
+            "target": "yogga",
+            "source": "Year",
+            "pronunciation": "yogga"
+          },
+          {
+            "target": "berdingata",
+            "source": "Last year",
+            "pronunciation": "berdingata"
+          },
+          {
+            "target": "berekan",
+            "source": "The year before last",
+            "pronunciation": "berekan"
+          },
+          {
+            "target": "Waka",
+            "source": "God / heaven",
+            "pronunciation": "waka"
+          },
+          {
+            "target": "mukabe / mukaba",
+            "source": "To pray / prayer (to God)",
+            "pronunciation": "mukabe"
+          },
+          {
+            "target": "kaletsha vs. kêsi sidāma & Iltshāma",
+            "source": "Galla priest vs. Priest of Christians & Mohammedan",
+            "pronunciation": "kaletsha-vs-kêsi-sidāma"
+          },
+          {
+            "target": "Wak' nagaia si kakennu!",
+            "source": "Farewell!",
+            "pronunciation": "wak'-nagaia-si-kakennu"
+          },
+          {
+            "target": "Nagaia hafu tshedde",
+            "source": "To bid farewell",
+            "pronunciation": "nagaia-hafu-tshedde"
+          },
+          {
+            "target": "Naga ambulte!",
+            "source": "Good morning!",
+            "pronunciation": "naga-ambulte"
+          },
+          {
+            "target": "Mali odu harraia duffe?",
+            "source": "What is the news?",
+            "pronunciation": "mali-odu-harraia-duffe"
           }
         ],
         "sentences": [
@@ -3657,328 +3765,542 @@ export const BORANA_UNITS: CourseUnit[] = [
             "target": "Wak' nagaia si kakennu! Naga ambulte! Mali odu harraia duffe?",
             "source": "May God give thee peace! Good morning! What is the news? (Krapf & Isenberg 1842, pp. 13, 24, 25)."
           }
-        ],
-        "authoredExercises": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "borana-unit-15",
+    "unitNumber": 15,
+    "title": "Robert Needham Cust",
+    "description": "Explore Robert Needham Cust's 1883 Volume I (pp. [i]–xvi, 1–287, Portrait Plates I–VI & Trübner Catalogue): the 5 Chief Dialects of Galla/Orómo (pp. 122–125, including the Equatorial/Tana River dialect studied by Krapf & Wakefield at Ribé), Huma royal lineages, Wata 'Helot Races', Somáli (p. 121), Kwáfi & Masai (pp. 149–152), and Kavirondo/Luoh (pp. 275–285).",
+    "icon": "Globe",
+    "color": "#B45309",
+    "skills": [
+      {
+        "id": "borana-cust-1883-five-dialects-huma-wata-15-1",
+        "title": "The 5 Chief Galla/Orómo Dialects, Equatorial Orma, Huma & Wata",
+        "icon": "Map",
+        "description": "Master Cust's (1883, Vol. I, Ch. IX.C.II, pp. 122–125) classification of the 5 Oromo dialects, the Huma royal dynasty of Uganda/Unyoro/Karagwe, Charles New's Wata hunter tributaries, and Reinisch's Lowland East Cushitic cluster.",
+        "tips": "In Chapter IX.C.II (pp. 122–125), Cust records that while in war the Galla call themselves 'Sons of Galla' (per D'Abbadie), their national autonym is Orma or Oromo ('men', p. 12 & p. 122), stretching from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása.",
+        "words": [
           {
-            "type": "multiple_choice",
-            "prompt": "In Rev. J. L. Krapf & Rev. C. W. Isenberg's Vocabulary of the Galla Language (1842, pp. 15, 24, 31, 35, 37, 38, 40), how are Monday, Tuesday, Saturday, and Sunday named?",
-            "correctAnswer": "Monday is 'hutshi dura' (first work-day), Tuesday is 'hutshi lamafa' (second work-day), Saturday is 'sanbata tenna' (little Sabbath), and Sunday is 'sanbata gudda' (great Sabbath)",
-            "options": [
-              "Monday is 'hutshi dura' (first work-day), Tuesday is 'hutshi lamafa' (second work-day), Saturday is 'sanbata tenna' (little Sabbath), and Sunday is 'sanbata gudda' (great Sabbath)",
-              "Monday is 'rōbi', Tuesday is 'kāmis', Saturday is 'tshimāta', and Sunday is 'arda'",
-              "Monday is 'berdingata', Tuesday is 'berekan', Saturday is 'kallēsa', and Sunday is 'dengādda'",
-              "Monday is 'kaletsha', Tuesday is 'mukaba', Saturday is 'sidāma', and Sunday is 'Iltshāma'"
-            ],
-            "hint": "See Krapf & Isenberg (1842, pp. 24, 31, 35, 38)"
+            "target": "Orma / Oromo ('men', pp. 12, 122) vs. 'Sons of Galla'",
+            "source": "Indigenous Oromo self-designation vs. wartime title in Cust",
+            "pronunciation": "or-ma / o-ro-mo",
+            "hint": "Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II p. 122)"
+          },
+          {
+            "target": "1. North of Shoa",
+            "source": "The 5 Chief Galla/Orómo Dialects enumerated by Krapf, Schmidt & Cust",
+            "pronunciation": "sho-a / ha-wash / go-djeb / da-na / ri-be",
+            "hint": "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–123)"
+          },
+          {
+            "target": "Huma",
+            "source": "Great Lakes royal dynasty of Galla origin and King Mtesa's 7-language polyglottism",
+            "pronunciation": "hu-ma / m-te-sa",
+            "hint": "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
+          },
+          {
+            "target": "Lango or Kidi",
+            "source": "Somerset Nile, p. 125",
+            "pronunciation": "lango-or-kidi"
+          },
+          {
+            "target": "Reinisch Cluster I (p. 119): A. Bishári (To'bedauie)",
+            "source": "Prof. Leo Reinisch's 5-language Lowland East Cushitic cluster in the Ethiopic",
+            "pronunciation": "bi-sha-ri / sa-ho / dan-ka-li / so-ma-li / gal-la",
+            "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
+          },
+          {
+            "target": "Enguduk Iloigob",
+            "source": "Masai — Erhardt 1857 & Thomson 1883, pp. 149–152",
+            "pronunciation": "enguduk-iloigob"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Orma (Oromo = 'men') stretches from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása across 5 chief dialects.",
+            "source": "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125) on the geographic extent and 5 dialects of Galla or Orómo."
           }
         ]
       }
     ]
+  },
+  {
+    "id": "borana-unit-16",
+    "unitNumber": 16,
+    "title": "Krapf & Isenberg",
+    "description": "Master the first printed Oromo/Galla grammar (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16): Isenberg's 50-tribe geographic table, Queen Tshāmê of Moolofallada, Anko-ber, Wāk & Kalitshas, pit-and-lance oaths, Wodanābè tree, Berkiè of Gelān, Aito Berkiè & Aito Meretch, and Krapf's Sections I–XI.",
+    "icon": "BookOpen",
+    "color": "#B45309",
+    "skills": [
+      {
+        "id": "borana-krapf-isenberg-1840-preface-50-tribes-16-1",
+        "title": "Isenberg's 1840 Preface",
+        "icon": "Compass",
+        "description": "Explore Rev. C. W. Isenberg's June–Nov. 1839 Shoa ethnography (pp. [iii]–xiv): the 50 Galla tribes across 6 regions, Queen Tshāmê, Anko-ber, Wāk & Kalitshas, haruspicy, pit-and-lance oaths, 100-cattle homicide law, vegetating grave-wood, Wodanābè tree, and informants Berkiè, Aito Berkiè & Aito Meretch.",
+        "tips": "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
+        "words": [
+          {
+            "target": "1–2 Dob'a, Assebo (SE of Tigrè)",
+            "source": "Tribes 1–20 in Isenberg's 1840 Table",
+            "pronunciation": "12-dob'a",
+            "hint": "Isenberg in Krapf (1840, pp. iv–v)"
+          },
+          {
+            "target": "21–24 Abedjoo, Adāī, Soddo, Abbo (S/SW on Hawāsh)",
+            "source": "Tribes 21–50 in Isenberg's 1840 Table",
+            "pronunciation": "2124-abedjoo",
+            "hint": "Isenberg in Krapf (1840, p. v)"
+          },
+          {
+            "target": "Queen Tshāmê of Moolofallada",
+            "source": "and her son",
+            "pronunciation": "queen-tshāmê-of-moolofallada"
+          },
+          {
+            "target": "Wāk",
+            "source": "Supreme Being",
+            "pronunciation": "wāk"
+          },
+          {
+            "target": "Goat-intestine fat war haruspicy",
+            "source": "red blood-distended veins = victory",
+            "pronunciation": "goat-intestine-fat-war-haruspicy"
+          },
+          {
+            "target": "Pit-and-Lance Oath covered with an animal's hide",
+            "source": "Oaths, homicide law-suits, peace ratification, burial customs, and afterlife beliefs",
+            "pronunciation": "wak / ka-lit-shas / wo-da-na-be",
+            "hint": "Isenberg in Krapf (1840, pp. vii–viii)"
+          },
+          {
+            "target": "Commander-in-chief Aito Meretch",
+            "source": "on the river Tchātchā, treated by Isenberg & M. Rochet",
+            "pronunciation": "commander-in-chief-aito-meretch"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Anko-ber, or bar, signifies the Gate of the Anko, having been the residence of their queen.",
+            "source": "Isenberg's footnote on the etymology of Ankober from the Galla Anko tribe and its queen (1840, p. vi fn. *)."
+          },
+          {
+            "target": "Berkiè, Mr. Krapf's Galla servant, could converse with Dankali people, both parties speaking their own language and yet understanding",
+            "source": "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl (1840, p. xiii)."
+          }
+        ]
+      },
+      {
+        "id": "borana-krapf-1840-grammar-sections-1-to-11-16-2",
+        "title": "Krapf's 1840 Grammatical Outline",
+        "icon": "Languages",
+        "description": "Master all 11 sections of Krapf's 1840 Outline (pp. [1]–16): 4 origin traditions (Abaÿ & Jidda), Roman script, 6 pronoun classes, Gofta declension, 17 adverb classes, prepositions/conjunctions/interjections, verb paradigms (Active, Passive -ame, Causative -sisse, Negative), cardinals & -fa ordinals, Small Syntax, and all 31 expressions & sentences.",
+        "tips": "In Section V (p. 4), Krapf declines 'Gofta' (Lord/Master): Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!; Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko! In Section IX (p. 11), ordinals are formed with '-fa' (toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa... dibbafa, kumafa).",
+        "words": [
+          {
+            "target": "isi",
+            "source": "isifi",
+            "pronunciation": "isi"
+          },
+          {
+            "target": "nu",
+            "source": "nufi, garra kenin, nu irra",
+            "pronunciation": "nu"
+          },
+          {
+            "target": "issini",
+            "source": "issinifi, garra kesani, issin irra",
+            "pronunciation": "issini"
+          },
+          {
+            "target": "isan",
+            "source": "isanifi, garra isani, isan irra",
+            "pronunciation": "isan"
+          },
+          {
+            "target": "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita,",
+            "source": "Inseparable pronouns affixed to Mana ('house') and joined to verbs ('beat' & 'give')",
+            "pronunciation": "manakiya",
+            "hint": "Krapf (1840, Sect. IV.VI, pp. 3–4)"
+          },
+          {
+            "target": "Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!",
+            "source": "Declension of Noun Substantives in Krapf (1840, Sect. V, p. 4)",
+            "pronunciation": "sing-n-gofta",
+            "hint": "Krapf (1840, Sect. V, p. 4)"
+          },
+          {
+            "target": "Suni mana kana woya",
+            "source": "That house is better than this",
+            "pronunciation": "suni-mana-kana-woya"
+          },
+          {
+            "target": "atombekin",
+            "source": "Unless he know",
+            "pronunciation": "atombekin"
+          },
+          {
+            "target": "ani tshira / ana tā / tai (hentain) / ani tae",
+            "source": "Auxiliary, Active, Passive (-ame), and Causative (-sisse) verb paradigms in Krapf",
+            "pronunciation": "ani-tshira",
+            "hint": "Krapf (1840, Sect. VIII, pp. 8–9)"
+          },
+          {
+            "target": "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba,",
+            "source": "Complete Cardinal (1–2,000) and Ordinal (-fa, 1st–1,000th) numeral tables in Krapf",
+            "pronunciation": "cardinals-tok",
+            "hint": "Krapf (1840, Sect. IX, p. 11)"
+          },
+          {
+            "target": "Eni kankennu tua",
+            "source": "He will give",
+            "pronunciation": "eni-kankennu-tua"
+          },
+          {
+            "target": "Gofta regariti dau tshalate",
+            "source": "The king likes the beating of the drum",
+            "pronunciation": "gofta-regariti-dau-tshalate"
+          },
+          {
+            "target": "Naga ambulte",
+            "source": "All 31 Galla conversational expressions, salutations, and sentences in Krapf (1840,",
+            "pronunciation": "naga-ambulte",
+            "hint": "Krapf (1840, Sect. XI, p. 16)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Gofta regariti dau tshalate. — Nama kan manna henkabna. — Workef meti; Dagaf maka; Kan duef kan tshira.",
+            "source": "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead (Krapf 1840, Sect."
+          },
+          {
+            "target": "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",
+            "source": "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? (Krapf 1840, Sect. XI, p. 16)."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Galla sentence from Krapf's 1840 Outline (Sects. X & XI, pp. 12–16) with its exact English translation:",
+            "correctAnswer": "Gofta regariti dau tshalate: The king likes the beating of the drum (p. 12)",
+            "pairs": [
+              {
+                "left": "Gofta regariti dau tshalate",
+                "right": "The king likes the beating of the drum (p. 12)"
+              },
+              {
+                "left": "Gondi kuni mekan eniu? — Metātit tsheddan",
+                "right": "How do they call this village? — It is called Metātit (p. 16)"
+              },
+              {
+                "left": "Sonna egi aka henbāne",
+                "right": "Make that it may not perish (p. 15)"
+              }
+            ]
+          }
+        ]
+      },
+{
+        "id": "borana-peace-wells-environment",
+        "title": "Deep Wells (Tulaa), Peacebuilding & Ecology",
+        "icon": "Droplets",
+        "description": "Practice Borana expressions for traditional well stewardship, environmental conservation, and peaceful coexistence.",
+        "culturalNote": "In Borana custom across Marsabit and Isiolo, the administration of the nine deep singing wells (Tulaa Saglan) and protection of dry-season pastures are governed by consensus and peace (nagaa).",
+        "grammarTip": "In Borana/Oromo, verbal nouns (infinitives) end in -uu (e.g., nagaa buusuu 'to establish peace', eeguu 'to protect', jiraachuun 'living').",
+        "words": [
+                {
+                        "target": "Nagaa buusuu",
+                        "source": "To establish peace",
+                        "pronunciation": "nah-gaa boo-soo"
+                },
+                {
+                        "target": "Qabeenya uumamaa",
+                        "source": "Natural resources",
+                        "pronunciation": "kah-bee-nyah oo-mah-maa"
+                },
+                {
+                        "target": "Eeguu",
+                        "source": "To protect / conserve",
+                        "pronunciation": "ee-goo"
+                },
+                {
+                        "target": "Eela tulaa",
+                        "source": "Deep traditional singing well",
+                        "pronunciation": "ee-lah too-laa"
+                },
+                {
+                        "target": "Bishaan loonii",
+                        "source": "Water for cattle",
+                        "pronunciation": "bee-shaan loo-nee"
+                },
+                {
+                        "target": "Ollaa",
+                        "source": "Neighbor / Encampment",
+                        "pronunciation": "ohl-laa"
+                },
+                {
+                        "target": "Badhaadhina",
+                        "source": "Prosperity / Well-being",
+                        "pronunciation": "bah-dhaa-dhee-nah"
+                },
+                {
+                        "target": "Aadaa ganamaa",
+                        "source": "Ancestral heritage",
+                        "pronunciation": "aa-daa gah-nah-maa"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Bulchiinsi eela tulaa bona keessa bishaan looniif mirkaneessa.",
+                        "source": "Traditional well management ensures water for cattle in dry seasons."
+                },
+                {
+                        "target": "Ollaa waliin nagaan jiraachuun badhaadhina fida.",
+                        "source": "Living in peace with neighbors brings prosperity."
+                }
+        ]
+},
+        {
+        "id": "borana-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Borana (Oromo) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-S",
+        "words": [
+                {
+                        "target": "Oolte nagaa? / Akkam oolte? / Ati naga olte har'a?",
+                        "source": "Good afternoon / Hast thou passed this day in peace?",
+                        "pronunciation": "ool-te na-gaa / a-ti na-ga ol-te har-a"
+                },
+                {
+                        "target": "Naga ambulte.",
+                        "source": "Good morning . . . . . . . . . . . . . . .",
+                        "pronunciation": "naga-ambulte"
+                },
+                {
+                        "target": "Bulla bulte naguma.",
+                        "source": "Thanks to God! . . . . . . . . . . . . .",
+                        "pronunciation": "bulla-bulte-naguma"
+                },
+                {
+                        "target": "Anda atam tshirte ?",
+                        "source": "How are you to-day ? . . . . . . . . .",
+                        "pronunciation": "anda-atam-tshirte"
+                },
+                {
+                        "target": "lakíse; kase; gate",
+                        "source": "Pardon, v. a",
+                        "pronunciation": "lakíse"
+                },
+                {
+                        "target": "kasa",
+                        "source": "Pardon, s",
+                        "pronunciation": "kasa"
+                },
+                {
+                        "target": "nágaia; arára",
+                        "source": "Peace, s",
+                        "pronunciation": "nágaia"
+                },
+                {
+                        "target": "gelatéfate",
+                        "source": "Thank, v. a",
+                        "pronunciation": "gelatéfate"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti sibila tikfanna",
+                        "source": "We keep iron in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti sibila tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti woftsho tikfanna",
+                        "source": "We keep mill in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti woftsho tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti muka tikfanna",
+                        "source": "We keep wood in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti muka tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti balbala tikfanna",
+                        "source": "We keep gate in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti balbala tikfanna"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Nuti waliin bafad'a barbaanna",
+                        "source": "We want to pluck together"
+                },
+                {
+                        "target": "Nuti waliin d'abad'a barbaanna",
+                        "source": "We want to stand together"
+                },
+                {
+                        "target": "Nuti waliin gonogona barbaanna",
+                        "source": "We want to twist together"
+                },
+                {
+                        "target": "Nuti waliin furra barbaanna",
+                        "source": "We want to untie together"
+                },
+                {
+                        "target": "Nuti waliin hoqiza barbaanna",
+                        "source": "We want to vomit together"
+                },
+                {
+                        "target": "Nuti waliin woltaie barbaanna",
+                        "source": "We want to agree together"
+                },
+                {
+                        "target": "Nuti waliin hirriba kaie barbaanna",
+                        "source": "We want to awake together"
+                },
+                {
+                        "target": "Nuti waliin mitshe. refl. dikate barbaanna",
+                        "source": "We want to bathe together"
+                },
+                {
+                        "target": "Nuti waliin itshare barbaanna",
+                        "source": "We want to build together"
+                },
+                {
+                        "target": "Nuti waliin kabe barbaanna",
+                        "source": "We want to catch together"
+                },
+                {
+                        "target": "Nuti waliin kufae barbaanna",
+                        "source": "We want to cough together"
+                },
+                {
+                        "target": "Nuti waliin lakăie barbaanna",
+                        "source": "We want to count together"
+                }
+        ]
+},
+        {
+        "id": "borana-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Borana (Oromo) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-S",
+        "words": [
+                {
+                        "target": "Nuti ollaa keenya keessatti galgalo tikfanna",
+                        "source": "We keep sack in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti galgalo tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti faqe tikfanna",
+                        "source": "We keep comb in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti faqe tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti kewéla tikfanna",
+                        "source": "We keep anvil in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti kewéla tikfanna"
+                },
+                {
+                        "target": "Nuti ollaa keenya keessatti háfersa tikfanna",
+                        "source": "We keep broom in our pastoral camp",
+                        "pronunciation": "nuti ollaa keenya keessatti háfersa tikfanna"
+                },
+                {
+                        "target": "Gatiin róbi gabaa keessatti meeqa?",
+                        "source": "What is the price of „ horse at the market?",
+                        "pronunciation": "gatiin róbi gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin mutta gabaa keessatti meeqa?",
+                        "source": "What is the price of awl at the market?",
+                        "pronunciation": "gatiin mutta gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin dágara. gabaa keessatti meeqa?",
+                        "source": "What is the price of axe at the market?",
+                        "pronunciation": "gatiin dágara gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin sūgūba gabaa keessatti meeqa?",
+                        "source": "What is the price of bag at the market?",
+                        "pronunciation": "gatiin sūgūba gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin kóntjoro gabaa keessatti meeqa?",
+                        "source": "What is the price of bed at the market?",
+                        "pronunciation": "gatiin kóntjoro gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin búdūko gabaa keessatti meeqa?",
+                        "source": "What is the price of cup at the market?",
+                        "pronunciation": "gatiin búdūko gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin minna dikkío gabaa keessatti meeqa?",
+                        "source": "What is the price of hut at the market?",
+                        "pronunciation": "gatiin minna dikkío gabaa keessatti meeqa"
+                },
+                {
+                        "target": "Gatiin t'uwe gabaa keessatti meeqa?",
+                        "source": "What is the price of pot at the market?",
+                        "pronunciation": "gatiin t'uwe gabaa keessatti meeqa"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Nuti waliin dokse barbaanna",
+                        "source": "We want to cover together"
+                },
+                {
+                        "target": "Nuti waliin sirbe barbaanna",
+                        "source": "We want to dance together"
+                },
+                {
+                        "target": "Nuti waliin duge barbaanna",
+                        "source": "We want to drink together"
+                },
+                {
+                        "target": "Gatiin gindjirti gabaa keessatti meeqa?",
+                        "source": "What is the price of collar-sticks at the market?"
+                },
+                {
+                        "target": "Gatiin huumbii gabaa keessatti meeqa?",
+                        "source": "What is the price of elephant trunk at the market?"
+                },
+                {
+                        "target": "Gatiin sattawwaa gabaa keessatti meeqa?",
+                        "source": "What is the price of giraffe at the market?"
+                },
+                {
+                        "target": "Gatiin aallaattii gabaa keessatti meeqa?",
+                        "source": "What is the price of pelican at the market?"
+                },
+                {
+                        "target": "Gatiin hillesa gabaa keessatti meeqa?",
+                        "source": "What is the price of hare at the market?"
+                },
+                {
+                        "target": "Gatiin dókse gabaa keessatti meeqa?",
+                        "source": "What is the price of hide at the market?"
+                },
+                {
+                        "target": "Gatiin kerensa gabaa keessatti meeqa?",
+                        "source": "What is the price of leopard at the market?"
+                },
+                {
+                        "target": "Gatiin róbi gabaa keessatti meeqa?",
+                        "source": "What is the price of „ horse at the market?"
+                },
+                {
+                        "target": "Gatiin mutta gabaa keessatti meeqa?",
+                        "source": "What is the price of awl at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
-
-BORANA_UNITS.push({
-  id: "borana-unit-15-cust-1883-modern-languages-vol1",
-  title: "Unit 15: Robert Needham Cust (1883, Vol. I) — 'A Sketch of the Modern Languages of Africa' (Chs. I–XI: Galla/Orómo, Somáli, Kwáfi/Masai & Kavirondo)",
-  description: "Explore Robert Needham Cust's 1883 Volume I (pp. [i]–xvi, 1–287, Portrait Plates I–VI & Trübner Catalogue): the 5 Chief Dialects of Galla/Orómo (pp. 122–125, including the Equatorial/Tana River dialect studied by Krapf & Wakefield at Ribé), Huma royal lineages, Wata 'Helot Races', Somáli (p. 121), Kwáfi & Masai (pp. 149–152), and Kavirondo/Luoh (pp. 275–285).",
-  icon: "Globe",
-  skills: [
-    {
-      id: "borana-cust-1883-five-dialects-huma-wata-15-1",
-      title: "The 5 Chief Galla/Orómo Dialects, Equatorial Orma (Wakefield & Krapf), Huma & Wata (Cust 1883, Vol. I, pp. 122–125)",
-      icon: "Map",
-      description: "Master Cust's (1883, Vol. I, Ch. IX.C.II, pp. 122–125) classification of the 5 Oromo dialects, the Huma royal dynasty of Uganda/Unyoro/Karagwe, Charles New's Wata hunter tributaries, and Reinisch's Lowland East Cushitic cluster.",
-      tips: "In Chapter IX.C.II (pp. 122–125), Cust records that while in war the Galla call themselves 'Sons of Galla' (per D'Abbadie), their national autonym is Orma or Oromo ('men', p. 12 & p. 122), stretching from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása.",
-      words: [
-        {
-          target: "Orma / Oromo ('men', pp. 12, 122) vs. 'Sons of Galla' (war title per D'Abbadie, p. 122)",
-          source: "Indigenous Oromo self-designation vs. wartime title in Cust (1883, Vol. I, pp. 12, 122)",
-          pronunciation: "or-ma / o-ro-mo",
-          hint: "Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II p. 122)"
-        },
-        {
-          target: "1. North of Shoa • 2. East of Shoa • 3. South of Shoa on the Hawash (Schmidt) • 4. River Godjeb (Tutschek) • 5. Equatorial or South Galla on the Dana/Tana River (Krapf 1850 & Wakefield at Ribé)",
-          source: "The 5 Chief Galla/Orómo Dialects enumerated by Krapf, Schmidt & Cust (1883, Vol. I, pp. 122–123)",
-          pronunciation: "sho-a / ha-wash / go-djeb / da-na / ri-be",
-          hint: "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–123)"
-        },
-        {
-          target: "Huma (Galla Royal Race of U-Ganda, U-Nyoro & Karagwe; King Mtesa speaking Nyoro, Ganda, Swahíli, Soga, Zulu, Arabic & Galla, pp. 16, 122–123)",
-          source: "Great Lakes royal dynasty of Galla origin and King Mtesa's 7-language polyglottism",
-          pronunciation: "hu-ma / m-te-sa",
-          hint: "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
-        },
-        {
-          target: "Helot Races (Wata hunter tributaries speaking Galla — Charles New, pp. 122–123; Ndorobo among Masai, p. 151) • Lango or Kidi (Somerset Nile, p. 125)",
-          source: "Hunter-gatherer tributary castes among the Galla and Masai, and Upper Nile relatives",
-          pronunciation: "wa-ta / n-do-ro-bo / la-ngo / ki-di",
-          hint: "Cust (1883, Vol. I, Ch. IX.C.II pp. 122–125 & Ch. X.A.VI p. 151)"
-        },
-        {
-          target: "Reinisch Cluster I (p. 119): A. Bishári (To'bedauie) • B. Saho • C. Dankálí (Afar) • D. Somáli (p. 121) • E. Galla (Orómo, pp. 122–125)",
-          source: "Prof. Leo Reinisch's 5-language Lowland East Cushitic cluster in the Ethiopic Sub-Group of Hamitic",
-          pronunciation: "bi-sha-ri / sa-ho / dan-ka-li / so-ma-li / gal-la",
-          hint: "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
-        },
-        {
-          target: "Loikób / pl. Eloikób ('Men') • Engútuk Eloikób (Kwáfi — Krapf 1854 & Last's 6,000-word Humba vocabulary) • Enguduk Iloigob (Masai — Erhardt 1857 & Thomson 1883, pp. 149–152) • Kavirondo & Luoh/Lwo (New 1873 & Wakefield MS, pp. 275–285)",
-          source: "East African Nuba-Fulah (Kwáfi & Masai) and Nile Sub-Group (Kavirondo/Dholuo & Shilluk/Lúr/Shúli) entries in Cust (1883, Vol. I)",
-          pronunciation: "loi-kob / e-loi-kob / en-gu-tuk e-loi-kob / ka-vi-ron-do / lu-oh",
-          hint: "Cust (1883, Vol. I, Ch. X pp. 149–152 & Ch. XI.D pp. 275–285)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Orma (Oromo = 'men') stretches from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása across 5 chief dialects.",
-          source: "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125) on the geographic extent and 5 dialects of Galla or Orómo."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Robert Needham Cust's 'A Sketch of the Modern Languages of Africa', Vol. I (1883, Ch. IX.C.II, pp. 122–125), what are the Five Chief Dialects of Galla or Orómo enumerated by Krapf and Schmidt, and how did Cust assist Rev. Thomas Wakefield at Ribé near Mombása?",
-          correctAnswer: "(1) North of Shoa, (2) East of Shoa toward Somáli/Dankáli-Land, (3) South of Shoa on the Hawash, (4) On the River Godjeb (Tutschek), and (5) The Equatorial or South Galla on the Dana/Tana River; Cust had a hand-copied MS of Krapf's rare 1840 'Elements' made from the RGS copy and sent to Wakefield at Ribé",
-          options: [
-            "(1) North of Shoa, (2) East of Shoa toward Somáli/Dankáli-Land, (3) South of Shoa on the Hawash, (4) On the River Godjeb (Tutschek), and (5) The Equatorial or South Galla on the Dana/Tana River; Cust had a hand-copied MS of Krapf's rare 1840 'Elements' made from the RGS copy and sent to Wakefield at Ribé",
-            "(1) Memphitic, (2) Sahidic, and (3) Bashmúric Koptic dialects",
-            "(1) Samhar, (2) Menza, (3) Barka, and (4) Habab Tigré dialects",
-            "(1) Mahas, (2) Kenús, (3) Dongola, and (4) Fadidsha Nuba dialects"
-          ],
-          hint: "See Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125)"
-        },
-        {
-          type: "match_pairs",
-          prompt: "Match each East African language or group in Cust (1883, Vol. I) with its exact classification and documentation:",
-          correctAnswer: "Galla or Orómo (Ch. IX.C.II, pp. 122–125): 5–6 million speakers from 10° N to the Dana (Tana) mouth; 5 dialects; Krapf (1840, 1842, 1850), Tutschek (1844–45), Newman, Massaia & Wakefield",
-          pairs: [
-            {
-              left: "Galla or Orómo (Ch. IX.C.II, pp. 122–125)",
-              right: "5–6 million speakers from 10° N to the Dana (Tana) mouth; 5 dialects; Krapf (1840, 1842, 1850), Tutschek (1844–45), Newman, Massaia & Wakefield"
-            },
-            {
-              left: "Somáli (Ch. IX.C.I, p. 121)",
-              right: "Eastern Horn (Regio Aromatifera) from Bab el Mandal & Cape Guardafui to the Bantu frontier; Rigby (1850, 1866), Burton (1856) & Hunter (1880)"
-            },
-            {
-              left: "Kwáfi & Masai (Ch. X.A.V–VI, pp. 149–152)",
-              right: "Autonym Loikób/Eloikób ('Men'); Krapf (1854 Engútuk Eloikób), Erhardt (1857 Enguduk Iloigob), Last's 6,000-word Humba vocabulary & Lepsius (1880)"
-            },
-            {
-              left: "Kavirondo (Ch. XI.D.XXI, pp. 284–285)",
-              right: "Eastern shore of Victoria Nyanza; non-Bantu Nilotic language with marked affinity to Shilluk (Luoh/Lwo); Charles New (1873) & Wakefield MS Vocabulary"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-});
-
-if (BORANA_CONFIG.sources && !BORANA_CONFIG.sources.includes("krapf-isenberg-galla-outline-1840")) {
-  BORANA_CONFIG.sources.unshift("krapf-isenberg-galla-outline-1840");
-}
-
-BORANA_UNITS.push({
-  id: "borana-unit-16-krapf-isenberg-1840-elements-outline",
-  title: "Unit 16: Krapf & Isenberg (1840) — 'An Imperfect Outline of the Elements of the Galla Language' (50 Tribes, Queen Tshāmê, Wāk & Kalitshas, Wodanābè & Sects. I–XI)",
-  description: "Master the first printed Oromo/Galla grammar (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16): Isenberg's 50-tribe geographic table, Queen Tshāmê of Moolofallada, Anko-ber, Wāk & Kalitshas, pit-and-lance oaths, Wodanābè tree, Berkiè of Gelān, Aito Berkiè & Aito Meretch, and Krapf's Sections I–XI.",
-  icon: "BookOpen",
-  skills: [
-    {
-      id: "borana-krapf-isenberg-1840-preface-50-tribes-16-1",
-      title: "Isenberg's 1840 Preface (pp. [iii]–xiv): 50 Galla Tribes, Queen Tshāmê, Wāk & Kalitshas, Oaths, Wodanābè & Shoa Informants",
-      icon: "Compass",
-      description: "Explore Rev. C. W. Isenberg's June–Nov. 1839 Shoa ethnography (pp. [iii]–xiv): the 50 Galla tribes across 6 regions, Queen Tshāmê, Anko-ber, Wāk & Kalitshas, haruspicy, pit-and-lance oaths, 100-cattle homicide law, vegetating grave-wood, Wodanābè tree, and informants Berkiè, Aito Berkiè & Aito Meretch.",
-      tips: "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
-      words: [
-        {
-          target: "1–2 Dob'a, Assebo (SE of Tigrè) • 3–15 Wohhela, Wello, Karraīo, Yedjoo, Dawê, Wārā, Gafra, Watshelé, Sāko, Botoho, Torāderē, Gillê, Azzalo (N of Shoa) • 16–20 Ittoo, Aroosi, Saroya, Tcherk'er, Alla (E of Shoa, with Gebel Achmar, Farsis, Afrăba & Assebot mts.)",
-          source: "Tribes 1–20 in Isenberg's 1840 Table (SE of Tigrè, N of Shoa in Amhara/Angot, and E of Shoa toward Hawāsh, Danākil, Somāl & Hurrur)",
-          pronunciation: "do-b'a / as-se-bo / wel-lo / kar-ra-io / it-too / a-roo-si / al-la",
-          hint: "Isenberg in Krapf (1840, pp. iv–v)"
-        },
-        {
-          target: "21–24 Abedjoo, Adāī, Soddo, Abbo (S/SW on Hawāsh) • 25–43 Lēbān, Wobarê, Djitān, Afsălă, Yerrer, Gelān, Mêta, Moolofallada, Mughir, Mugār, Djirroo, Allamālê, Bergamo, Garāo, Gumār, Bugāmo, Sugāmo, Abado, Babilee (S/SW of Shoa) • 44–50 Mêtcha, Gooderoo, Gumbitshoo, Betsho, Borenna, Hădera, Anko (W of Shoa on the Abaÿ/Nile)",
-          source: "Tribes 21–50 in Isenberg's 1840 Table (S, SW & W of Shoa on the Hawāsh, Shoa Mêda, Gurāgue border & Abyssinian Nile)",
-          pronunciation: "a-da-i / sod-do / le-ban / ge-lan / me-ta / moo-lo-fal-la-da / met-cha / bo-ren-na / an-ko",
-          hint: "Isenberg in Krapf (1840, p. v)"
-        },
-        {
-          target: "Queen Tshāmê of Moolofallada (and her son) • Queen of Anko & Anko-ber / bar ('Gate of the Anko') • Rās Guxa & Rās Āli • King Sahhela Selassieh of Shoa • Berroo of Argobba",
-          source: "Female rulers (Queen Tshāmê's 'silk and velvet road' reply to the King of Shoa; Anko-ber etymology) & political rulers in Isenberg (1840, pp. [iii], vi, xii–xiii)",
-          pronunciation: "tsha-me / moo-lo-fal-la-da / an-ko-ber / ras gu-xa / ras a-li / sah-he-la se-las-sieh",
-          hint: "Isenberg in Krapf (1840, pp. [iii], vi, xii–xiii)"
-        },
-        {
-          target: "Wāk (Supreme Being) • Kalitshas (priests carrying whip, bell & goats' intestines round their necks, cf. Tigrè Zekārotsh) • Goat-intestine fat war haruspicy (red blood-distended veins = victory) • Sacred tree Wodanābè on the Hawāsh in Soddo (no women allowed)",
-          source: "Galla religion, priesthood, war divination, and pan-tribal pilgrimage tree in Isenberg (1840, pp. vii–ix)",
-          pronunciation: "wak / ka-lit-shas / ze-ka-rotsh / wo-da-na-be / ha-wash / sod-do",
-          hint: "Isenberg in Krapf (1840, pp. vii–ix)"
-        },
-        {
-          target: "Pit-and-Lance Oath covered with an animal's hide • 100-Cattle homicide fine & opening a sheep's belly peace rite • Field burial under slightly burnt wood (vegetating wood = state of happiness; separate afterlife stations for Gallas, Christians & Mohammedans)",
-          source: "Oaths, homicide law-suits, peace ratification, burial customs, and afterlife beliefs in Isenberg (1840, pp. vii–viii)",
-          pronunciation: "wak / ka-lit-shas / wo-da-na-be",
-          hint: "Isenberg in Krapf (1840, pp. vii–viii)"
-        },
-        {
-          target: "Berkiè of Gelān ('my Gelan-man', St. John Chs. 1–5 co-translator & Dankali interlocutor) • Chief Aito Berkiè of Adaī (with his Bulga priest-confessor, treated for mania) • Commander-in-chief Aito Meretch (on the river Tchātchā, treated by Isenberg & M. Rochet) • Debra Dāmo MS",
-          source: "Three named Gallas in Shoa, mutual intelligibility with Dankali/Somāl, and the Debra Dāmo History MS in Isenberg (1840, pp. ix–xiv, 8)",
-          pronunciation: "ber-kie / ge-lan / ai-to ber-kie / a-da-i / ai-to me-retch / tcha-tcha / de-bra da-mo",
-          hint: "Isenberg in Krapf (1840, pp. ix–xiv, 8)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Anko-ber, or bar, signifies the Gate of the Anko, having been the residence of their queen.",
-          source: "Isenberg's footnote on the etymology of Ankober from the Galla Anko tribe and its queen (1840, p. vi fn. *)."
-        },
-        {
-          target: "Berkiè, Mr. Krapf's Galla servant, could converse with Dankali people, both parties speaking their own language and yet understanding each other.",
-          source: "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl (1840, p. xiii)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Rev. C. W. Isenberg's 1840 Preface (pp. vi, viii–ix, xii–xiii), who governed the Galla tribe Moolofallada, how did she reply to King Sahhela Selassieh's invitation to Ankober/Angollala, and what is the sacred pilgrimage tree on the Hawāsh in Soddo?",
-          correctAnswer: "Queen Tshāmê governed Moolofallada and replied that he should overlay all the road from Moolofallada to his palace with silk and velvet (while her son later asked Krapf for instruction); the sacred pilgrimage tree on the Hawāsh in Soddo (where no women may approach) is Wodanābè",
-          options: [
-            "Queen Tshāmê governed Moolofallada and replied that he should overlay all the road from Moolofallada to his palace with silk and velvet (while her son later asked Krapf for instruction); the sacred pilgrimage tree on the Hawāsh in Soddo (where no women may approach) is Wodanābè",
-            "Queen Mwana Mkisi governed Kongowea and worshipped under the baobab tree",
-            "Aito Meretch governed Debra Dāmo and forbade men from approaching the Tchātchā river",
-            "Berroo of Argobba governed Gondar and planted the Gebel Achmar tree"
-          ],
-          hint: "See Isenberg in Krapf (1840, pp. vi, viii–ix, xii–xiii)"
-        },
-        {
-          type: "match_pairs",
-          prompt: "Match each person, institution, or custom in Isenberg's 1840 Preface (pp. [iii]–xiv) with its exact description:",
-          correctAnswer: "Berkiè of the Gelān tribe: Krapf's Galla teacher, guide & St. John (Chs. 1–5) co-translator who conversed directly with Dankali speakers (pp. ix, xiii, 8)",
-          pairs: [
-            {
-              left: "Berkiè of the Gelān tribe",
-              right: "Krapf's Galla teacher, guide & St. John (Chs. 1–5) co-translator who conversed directly with Dankali speakers (pp. ix, xiii, 8)"
-            },
-            {
-              left: "Aito Berkiè of the Adaī tribe",
-              right: "Baptized Galla chief attended by a priest from Bulga and his sons; treated by Isenberg for mania (p. ix)"
-            },
-            {
-              left: "Aito Meretch",
-              right: "Commander-in-chief of the King of Shoa's forces governing a large district on the river Tchātchā (pp. ix–x)"
-            },
-            {
-              left: "Kalitshas & Pit-and-Lance Oath",
-              right: "Priests of Wāk wearing goats' intestines & divining war from red veins in intestinal fat; oath over a hide-covered pit with lances (p. vii)"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "borana-krapf-1840-grammar-sections-1-to-11-16-2",
-      title: "Krapf's 1840 Grammatical Outline (Sects. I–XI, pp. [1]–16): Pronouns, Gofta Declension, 17 Adverb Classes, Verbs, -fa Ordinals, Syntax & 31 Sentences",
-      icon: "Languages",
-      description: "Master all 11 sections of Krapf's 1840 Outline (pp. [1]–16): 4 origin traditions (Abaÿ & Jidda), Roman script, 6 pronoun classes, Gofta declension, 17 adverb classes, prepositions/conjunctions/interjections, verb paradigms (Active, Passive -ame, Causative -sisse, Negative), cardinals & -fa ordinals, Small Syntax, and all 31 expressions & sentences.",
-      tips: "In Section V (p. 4), Krapf declines 'Gofta' (Lord/Master): Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!; Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko! In Section IX (p. 11), ordinals are formed with '-fa' (toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa... dibbafa, kumafa).",
-      words: [
-        {
-          target: "āna (anāfi, na; ani abbaworra) • ati (sifi; ati abbaworra) • isa / ui [eni] (isafi) • isi (isifi) • nu (nufi, garra kenin, nu irra) • issini (issinifi, garra kesani, issin irra) • isan (isanifi, garra isani, isan irra)",
-          source: "Separable personal, directional, ablative, and reflexive pronouns in Krapf (1840, Sect. IV.I, p. 2)",
-          pronunciation: "a-na / a-na-fi / a-ti / si-fi / i-sa / i-si / nu / is-si-ni / i-san / ab-ba-wor-ra",
-          hint: "Krapf (1840, Sect. IV.I, p. 2)"
-        },
-        {
-          target: "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita, manakenia, manikesani, manisani | eni na/si/isa/isi/nu/issin/isan dai • eni na kenne • na kenni (sg.) / na kenna (pl.) • eni na hendane • eni na henkennu",
-          source: "Inseparable pronouns affixed to Mana ('house') and joined to verbs ('beat' & 'give') in Krapf (1840, Sect. IV.VI, pp. 3–4)",
-          pronunciation: "ma-na-ki-ya / ma-na-ko / e-ni na dai / e-ni na ken-ne / e-ni na hen-da-ne",
-          hint: "Krapf (1840, Sect. IV.VI, pp. 3–4)"
-        },
-        {
-          target: "Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! | Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko!",
-          source: "Declension of Noun Substantives ('Gofta' = Lord/Master, Sing. & Plur.) in Krapf (1840, Sect. V, p. 4)",
-          pronunciation: "gof-ta / gof-ta-da / gof-ta-fi / gof-tan / gof-ta-ko / gof-ta-won",
-          hint: "Krapf (1840, Sect. V, p. 4)"
-        },
-        {
-          target: "Suni mana kana woya ('That house is better than this') • Suni mana kana irra tshira ('That house is greater than this') • Hoda issin! / Hodu ati! / Hodu ana! ('Look you / thou / I!') • atombekin ('Unless he know')",
-          source: "Adverbs of comparison, demonstration, and exclusion (atom—in) in Krapf (1840, Sect. VI.2, 3 & 5, pp. 4–5)",
-          pronunciation: "su-ni ma-na ka-na wo-ya / ho-da is-sin / ho-du a-ti / a-tom-be-kin",
-          hint: "Krapf (1840, Sect. VI, pp. 4–5)"
-        },
-        {
-          target: "ani tshira / ana tā / tai (hentain) / ani tae | Active: ani godi, eni gode, nu gonne, issini godana, isan goddan | Passive: ani godame, nu godamna & ani illalame, ati illalamta (illalame tshira) | Causative (-sisse): Dekame → Dekamsisse, iame → Iamsisse",
-          source: "Auxiliary, Active, Passive (-ame), and Causative (-sisse) verb paradigms in Krapf (1840, Sect. VIII, pp. 8–9)",
-          pronunciation: "a-ni tshi-ra / a-ni go-di / nu gon-ne / a-ni go-da-me / il-la-la-me / de-kam-sis-se / iam-sis-se",
-          hint: "Krapf (1840, Sect. VIII, pp. 8–9)"
-        },
-        {
-          target: "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba, sadēti, sagall, kudana ... diktama (20), sodoma (30), afurtama (40), shantama (50), tshātāma (60), torbātăma (70), sadētăma (80), sagaltama (90), dibba (100), kūma (1000) | Ordinals (-fa): toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa, kuda toko (11th), kuda lamafa (12th) ... diktamifa (20th), sodomifa (30th), afurtamafa (40th), shantamafa (50th), dibbafa (100th), kumafa (1000th)",
-          source: "Complete Cardinal (1–2,000) and Ordinal (-fa, 1st–1,000th) numeral tables in Krapf (1840, Sect. IX, p. 11)",
-          pronunciation: "tok / tak / tsha / ku-da-na / dik-ta-ma / la-ma-fa / sa-di-fa / dib-ba-fa / ku-ma-fa",
-          hint: "Krapf (1840, Sect. IX, p. 11)"
-        },
-        {
-          target: "Eni dufufi / bekufi / diatufi (Infin. dativo: 'He must come/know/be near') • Eni sila endufa / embeka / endiata • Eni kankennu tua ('He will give') • Daga kennaf • Gofta regariti dau tshalate ('The king likes the beating of the drum') • Nama hamawon & Daga gudawon • Nama kan manna henkabna • henkābu / hedkabtu / henkăbu / henkabne / henkabtan / henkaban • Workef meti, Dagaf maka, Kan duef kan tshira",
-          source: "Syntactic constructions of verbs, nouns, pronouns, negative possession ('henkābu'), prepositions, and affixed '-f' ('and') in Krapf (1840, Sect. X, pp. 12–15)",
-          pronunciation: "e-ni du-fu-fi / e-ni si-la en-du-fa / gof-ta re-ga-ri-ti dau tsha-la-te / hen-ka-bu / hed-kab-tu / wor-kef me-ti",
-          hint: "Krapf (1840, Sect. X, pp. 12–15)"
-        },
-        {
-          target: "Naga ambulte — Bulla bulte naguma • Nagam bultani? — Bulle bulta / Enaganaga, feyuma • Naga oltani? — Ollo olte • Marabatis, nagana oli (sg.) / nagaia ole (pl.) • Naga tshedde? / tsheddani? — Atis feiuma / Issinis feiuma • Naguma galgalesite? — Naguma atigalgalesite? • Naguma galgalesate — Nagai ambula • Gondi kuni mekan eniu? — Metātit tsheddan • Esa dukta? • Esei duffe? • Gadi meka? • Na hime esa isa tshira • Dafi tai • Kai • Kod / As kod • Anda atam tshirte?",
-          source: "All 31 Galla conversational expressions, salutations, and sentences in Krapf (1840, Sect. XI, p. 16)",
-          pronunciation: "na-ga am-bul-te / bul-la bul-te na-gu-ma / ma-ra-ba-tis na-ga-na o-li / gon-di ku-ni me-kan e-ni-u / me-ta-tit tshed-dan",
-          hint: "Krapf (1840, Sect. XI, p. 16)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Gofta regariti dau tshalate. — Nama kan manna henkabna. — Workef meti; Dagaf maka; Kan duef kan tshira.",
-          source: "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead (Krapf 1840, Sect. X, pp. 12, 14–15)."
-        },
-        {
-          target: "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",
-          source: "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? (Krapf 1840, Sect. XI, p. 16)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Rev. J. L. Krapf's 'An Imperfect Outline of the Elements of the Galla Language' (1840, Sects. V, VIII & IX, pp. 4, 9, 11), how is the noun 'Gofta' (Lord/Master) declined in the singular, how is the Causative verb formed, and how are Ordinal numerals formed?",
-          correctAnswer: "Gofta declines as N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! (pl. Goftawon); the Causative adds '-sisse' (Dekame → Dekamsisse, iame → Iamsisse); and Ordinals add '-fa' (toko, lamafa, sadīfa, afrafa... dibbafa, kumafa)",
-          options: [
-            "Gofta declines as N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako! (pl. Goftawon); the Causative adds '-sisse' (Dekame → Dekamsisse, iame → Iamsisse); and Ordinals add '-fa' (toko, lamafa, sadīfa, afrafa... dibbafa, kumafa)",
-            "Gofta is invariable; the Causative prefixes 'ta-'; and Ordinals prefix 'm-'",
-            "Gofta takes Bantu class prefixes; the Causative adds '-eka'; and Ordinals use '-tiana' exclusively",
-            "Gofta is declined only in the Ethiopic syllabary"
-          ],
-          hint: "See Krapf (1840, Sects. V, VIII & IX, pp. 4, 9, 11)"
-        },
-        {
-          type: "match_pairs",
-          prompt: "Match each Galla sentence from Krapf's 1840 Outline (Sects. X & XI, pp. 12–16) with its exact English translation:",
-          correctAnswer: "Gofta regariti dau tshalate: The king likes the beating of the drum (p. 12)",
-          pairs: [
-            {
-              left: "Gofta regariti dau tshalate",
-              right: "The king likes the beating of the drum (p. 12)"
-            },
-            {
-              left: "Gondi kuni mekan eniu? — Metātit tsheddan",
-              right: "How do they call this village? — It is called Metātit (p. 16)"
-            },
-            {
-              left: "Marabatis, nagana oli (sg.) / Marabatis, nagaia ole (pl.)",
-              right: "Good bye (singular / plural, p. 16)"
-            },
-            {
-              left: "Sonna egi aka henbāne",
-              right: "Make that it may not perish (p. 15)"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-});

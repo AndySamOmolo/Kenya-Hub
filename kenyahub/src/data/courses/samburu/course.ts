@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Samburu (Sampur / Loikop) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const SAMBURU_CONFIG: LanguageConfig = {
   "id": "samburu",
@@ -32,9 +27,11 @@ export const SAMBURU_CONFIG: LanguageConfig = {
 export const SAMBURU_UNITS: CourseUnit[] = [
   {
     "id": "samburu-unit-1",
-    "title": "Unit 1: Northern Maa Salutations, Gender Prefixes (L- / N-), Numerals & Mount Nyiro Heritage",
+    "unitNumber": 1,
+    "title": "Northern Maa Salutations, Gender Prefixes (L- / N-), Numerals &",
     "description": "Master Samburu greetings (Supai! / Takwenya!), l-/n- noun prefixes, counting 1–10, and Northern Maa pastoral culture.",
     "icon": "Tractor",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-nouns-numerals",
@@ -198,10 +195,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
                 "right": "Thank you very much / Peace"
               },
               {
-                "left": "saamburr (Sampur) / Loikop",
-                "right": "Traditional leather bag / Samburu self-designation (owners of the land)"
-              },
-              {
                 "left": "l-murani (pl. l-muran) / l-payian / n-gitok",
                 "right": "Warrior / Elder / Woman"
               }
@@ -225,9 +218,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "Users",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-family-kinship-kinship-elders-2",
@@ -292,7 +287,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Samburu (North Maa) Supreme Being"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -528,9 +522,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "Scale",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-numbers-measures-cardinals-ordinals-3",
@@ -595,7 +591,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Nilotic_languages — Samburu numerals"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -826,9 +821,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "Milk",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-food-agriculture-staple-foods-cookery-4",
@@ -1099,9 +1096,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "PawPrint",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-nature-wildlife-land-sky-water-5",
@@ -1166,7 +1165,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Samburu (North Maa)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1399,9 +1397,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "User",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-body-health-anatomy-senses-6",
@@ -1466,7 +1466,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Samburu (North Maa)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1702,9 +1701,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "BookOpen",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-verbs-grammar-action-verbs-7",
@@ -1769,7 +1770,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Samburu (North Maa)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2004,9 +2004,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   },
   {
     "id": "samburu-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
     "icon": "Compass",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-time-calendar-seasons-months-8",
@@ -2144,7 +2146,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "mpari",
-            "source": "Day"
+            "source": "Day",
+            "pronunciation": "mpari"
           },
           {
             "target": "Lapa le okuni (Oku)",
@@ -2262,10 +2265,12 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "samburu-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "samburu-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Samburu (Sampur) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-pd-corpus-9-1",
@@ -2323,7 +2328,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2493,10 +2497,12 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "samburu-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "samburu-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Samburu (Sampur) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#E11D48",
     "skills": [
       {
         "id": "samburu-open-dataset-10-1",
@@ -2680,7 +2686,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2730,7 +2735,245 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ]
-      }
+      },
+        {
+        "id": "samburu-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Samburu (Sampur) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Joh",
+        "words": [
+                {
+                        "target": "Kiserian",
+                        "source": "Goodbye / Stay in peace",
+                        "pronunciation": "ki-seh-ri-an"
+                },
+                {
+                        "target": "Chamge / Nabo",
+                        "source": "Greetings to elders / Respectful greeting",
+                        "pronunciation": "nah-boh"
+                },
+                {
+                        "target": "Nkare naibor oo lkujita onyori ntarikini nkishu ang'",
+                        "source": "Clean water and green pasture sustain our livestock",
+                        "pronunciation": "n-kah-reh nah-ee-bohr oh l-koo-jee-tah oh-nyoh-ree"
+                },
+                {
+                        "target": "Lpayiani nemayiana lmurran peetum serian te nkop",
+                        "source": "Elders bless the youth to guard peace across the rangelands",
+                        "pronunciation": "lpayiani-nemayiana-lmurran-peetum"
+                },
+                {
+                        "target": "Supa",
+                        "source": "Hello (to a man)",
+                        "pronunciation": "supa"
+                },
+                {
+                        "target": "Takwenya",
+                        "source": "Hello (to a woman)",
+                        "pronunciation": "takwenya"
+                },
+                {
+                        "target": "Ipa / Eiko",
+                        "source": "Response: Fine / Peaceful",
+                        "pronunciation": "ipa"
+                },
+                {
+                        "target": "Ashe oleng",
+                        "source": "Thank you very much",
+                        "pronunciation": "ashe oleng"
+                },
+                {
+                        "target": "Kirrip Atara ninje te nkang' ang'",
+                        "source": "We keep i kill them in our manyatta",
+                        "pronunciation": "kirrip atara ninje te nkang ang"
+                },
+                {
+                        "target": "Kirrip Etu gimirio te nkang' ang'",
+                        "source": "We keep we sold not in our manyatta",
+                        "pronunciation": "kirrip etu gimirio te nkang ang"
+                },
+                {
+                        "target": "Kirrip l-ora te nkang' ang'",
+                        "source": "We keep ceremonial homestead in our manyatta",
+                        "pronunciation": "kirrip l-ora te nkang ang"
+                },
+                {
+                        "target": "Kirrip Habi te nkang' ang'",
+                        "source": "We keep go in our manyatta",
+                        "pronunciation": "kirrip habi te nkang ang"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ee, kiata Atara ninje supat",
+                        "source": "Yes, we have good i kill them"
+                },
+                {
+                        "target": "Ke iata Etu gimirio taata?",
+                        "source": "Do you have we sold not today?"
+                },
+                {
+                        "target": "Ee, kiata Etu gimirio supat",
+                        "source": "Yes, we have good we sold not"
+                },
+                {
+                        "target": "Ke iata l-ora taata?",
+                        "source": "Do you have ceremonial homestead today?"
+                },
+                {
+                        "target": "Ee, kiata l-ora supat",
+                        "source": "Yes, we have good ceremonial homestead"
+                },
+                {
+                        "target": "Ke iata Habi taata?",
+                        "source": "Do you have go today?"
+                },
+                {
+                        "target": "Ee, kiata Habi supat",
+                        "source": "Yes, we have good go"
+                },
+                {
+                        "target": "Ke iata Keiolei taata?",
+                        "source": "Do you have no today?"
+                },
+                {
+                        "target": "Ee, kiata Keiolei supat",
+                        "source": "Yes, we have good no"
+                },
+                {
+                        "target": "Ke iata Tukutuk taata?",
+                        "source": "Do you have all today?"
+                },
+                {
+                        "target": "Ee, kiata Tukutuk supat",
+                        "source": "Yes, we have good all"
+                },
+                {
+                        "target": "Ke iata Hegoi taata?",
+                        "source": "Do you have axe today?"
+                }
+        ]
+},
+        {
+        "id": "samburu-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Samburu (Sampur) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Joh",
+        "words": [
+                {
+                        "target": "Kirrip Keiolei te nkang' ang'",
+                        "source": "We keep no in our manyatta",
+                        "pronunciation": "kirrip keiolei te nkang ang"
+                },
+                {
+                        "target": "Kirrip Tukutuk te nkang' ang'",
+                        "source": "We keep all in our manyatta",
+                        "pronunciation": "kirrip tukutuk te nkang ang"
+                },
+                {
+                        "target": "Kirrip Hegoi te nkang' ang'",
+                        "source": "We keep axe in our manyatta",
+                        "pronunciation": "kirrip hegoi te nkang ang"
+                },
+                {
+                        "target": "Kirrip Tepiter te nkang' ang'",
+                        "source": "We keep bad in our manyatta",
+                        "pronunciation": "kirrip tepiter te nkang ang"
+                },
+                {
+                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
+                        "source": "What is the value of money at the market?",
+                        "pronunciation": "kaja lbeyi le ropiyiani te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Lbeyi te sokoni?",
+                        "source": "What is the value of price at the market?",
+                        "pronunciation": "kaja lbeyi le lbeyi te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Lduka te sokoni?",
+                        "source": "What is the value of shop at the market?",
+                        "pronunciation": "kaja lbeyi le lduka te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Lamei te sokoni?",
+                        "source": "What is the value of drought at the market?",
+                        "pronunciation": "kaja lbeyi le lamei te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Lchani te sokoni?",
+                        "source": "What is the value of medicine at the market?",
+                        "pronunciation": "kaja lbeyi le lchani te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Moyian te sokoni?",
+                        "source": "What is the value of sickness at the market?",
+                        "pronunciation": "kaja lbeyi le moyian te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Sipitali te sokoni?",
+                        "source": "What is the value of hospital at the market?",
+                        "pronunciation": "kaja lbeyi le sipitali te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Serian te sokoni?",
+                        "source": "What is the value of peace at the market?",
+                        "pronunciation": "kaja lbeyi le serian te sokoni"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ee, kiata Hegoi supat",
+                        "source": "Yes, we have good axe"
+                },
+                {
+                        "target": "Ke iata Tepiter taata?",
+                        "source": "Do you have bad today?"
+                },
+                {
+                        "target": "Ee, kiata Tepiter supat",
+                        "source": "Yes, we have good bad"
+                },
+                {
+                        "target": "Kaja lbeyi le Nkai te sokoni?",
+                        "source": "What is the value of god at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Nkoitoi te sokoni?",
+                        "source": "What is the value of road at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Ldonyo Nyiro te sokoni?",
+                        "source": "What is the value of sacred mountain at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Ldoinyo Lenkiyio te sokoni?",
+                        "source": "What is the value of mathews range at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Lale te sokoni?",
+                        "source": "What is the value of cattle camp at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Lkisima te sokoni?",
+                        "source": "What is the value of water well at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Sokoni te sokoni?",
+                        "source": "What is the value of market at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
+                        "source": "What is the value of money at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Lbeyi te sokoni?",
+                        "source": "What is the value of price at the market?"
+                }
+        ]
+}
     ]
   }
 ];

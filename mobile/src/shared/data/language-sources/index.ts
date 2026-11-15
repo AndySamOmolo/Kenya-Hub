@@ -2172,8 +2172,8 @@ const _booksZipSources: LanguageSource[] = [
   {
     id: "champion-atharaka-1912",
     title: "The Atharaka (By Arthur M. Champion, Assistant District Commissioner, East Africa Protectorate, Journal of the Royal Anthropological Institute of Great Britain and Ireland, Vol. 42, Jan.–Jun. 1912, pp. 68–90 + Plate X)",
-    fileName: "The Atharaka.md",
-    processedPath: "language-sources/raw/The Atharaka.md",
+    fileName: "The Atharaka Arthur M Champion 1912.md",
+    processedPath: "language-sources/raw/The Atharaka Arthur M Champion 1912.md",
     languages: ["meru", "kamba"],
     published: "1912",
     contribution:
@@ -2187,8 +2187,8 @@ const _booksZipSources: LanguageSource[] = [
   {
     id: "kirk-somali-notes-1903",
     title: "Notes on the Somali Language (By Lt. J. W. C. Kirk, King's African Rifles, London: Henry Frowde, Oxford University Press Warehouse, Amen Corner, E.C., 1903, pp. i–xii, 1–83)",
-    fileName: "Notes On The Somali Language.md",
-    processedPath: "language-sources/raw/Notes On The Somali Language.md",
+    fileName: "Notes On The Somali Language Kirk 1903.md",
+    processedPath: "language-sources/raw/Notes On The Somali Language Kirk 1903.md",
     languages: ["somali"],
     published: "1903",
     contribution:
@@ -2307,6 +2307,34 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     ingestionStatus: "integrated",
     coverageNote:
       "Integrated commercially free text datasets across swahili, luo, luhya, kikuyu, kalenjin, taveta, teso, kamba, somali, and borana into dictionary-search.ts, proverbs/teso.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+  },
+  {
+    id: "lughagen-multilingual-kenyan-corpus-2026",
+    title: "LughaGen Multilingual Kenyan Language Corpus: Swahili (11.09M), Sheng Code-Switching (189.8k), Dholuo (461.7k + 1,000 Native-Speaker Items), Kikuyu (226.7k) & Kamba (163.8k) (JHUB Africa / JKUAT, Nkirote, Mayabi, Baraka & Koros, 2025/2026 — CC-BY-SA-4.0)",
+    fileName: "https://huggingface.co/datasets/LughaGen-Organization/LughaGen-Multilingual-African-Corpus",
+    languages: ["swahili", "luo", "kikuyu", "kamba"],
+    published: "2025–2026 (CC-BY-SA-4.0)",
+    contribution:
+      "Large-scale Kenyan multilingual text corpus developed at JHUB Africa (Jomo Kenyatta University of Agriculture and Technology, Juja; https://huggingface.co/datasets/LughaGen-Organization/LughaGen-Multilingual-African-Corpus, CC-BY-SA-4.0): comprises 12,138,203 records (607 MB) across 5 Kenyan configurations (filtering out source == 'STEP Bible' for commercial deployments) — Swahili (10,950,047 authentic secondary rows + 145,128 Tier-2 synthetic rows), Sheng Swahili–English–Sheng code-switching (189,834 rule-based and manually reviewed urban utterances curated by Innocent Baraka), Dholuo (325,370 authentic secondary rows + 136,328 Tier-1 synthetic rows + 1,000 Native-Speaker-Informed Dholuo words, phrases, and cultural expressions curated by Godfrey Koros), Kikuyu (93,846 authentic + 132,895 synthetic rows), and Kamba (36,891 authentic + 126,864 synthetic rows).",
+    appUses: ["dictionary", "comparative translator", "course lessons", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated commercial-safe Sheng code-switching and Godfrey Koros's native-speaker Dholuo, Kikuyu, Kamba, and Swahili entries (strictly excluding STEP Bible rows) into swahili.json, luo.json, kikuyu.json, kamba.json, and blog-posts.ts.",
+  },
+  {
+    id: "african-next-voices-ddd-gusii-michsethowusu-ngusadeep-2026",
+    title: "African Next Voices Kenya (MCAA1-MSU/anv_data_ke — CC-BY-4.0), DDD Kenya Ekegusii Intent & Somali (CC-BY-4.0), Kikuyu & Kamba Emotion Corpora (MIT), Kikamba First Corpus (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), Swahili 12-Domain Corpus (1.69M, Apache-2.0) & Leipzig Gikuyu CURL (CC-BY)",
+    fileName: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke",
+    languages: ["luo", "kikuyu", "somali", "kalenjin", "maasai", "kamba", "meru", "luhya", "kisii", "swahili", "taita", "pokot", "teso"],
+    published: "2020–2026 (CC0-1.0 / MIT / Apache-2.0 / CC-BY-4.0)",
+    contribution:
+      "Commercially permissive domain and indigenous Kenyan text corpora: (1) African Next Voices Kenya (https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke, https://huggingface.co/datasets/Anv-ke/kikuyu & https://huggingface.co/datasets/Anv-ke/Dholuo, Maseno Center for Applied AI / KenCorpus Consortium, CC-BY-4.0) covering agriculture, healthcare, mobile finance, digital government, and commerce across Dholuo, Kikuyu, Somali, Kalenjin, Maasai, Kamba, Meru, and Luhya; (2) Digital Divide Data (DDD) Kenya Indigenous Datasets (https://huggingface.co/datasets/Digital-Divide-Data/DDD-Kenya-Gusii-Intent [61,600 Ekegusii intent/text rows], https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H [100K+ Ekegusii transcriptions], and DDD-Kenya-Somali-Extending-Benchmark [20,800 Somali rows], CC-BY-4.0); (3) Mich-Seth Owusu Emotion & Technical Corpora (https://huggingface.co/datasets/michsethowusu/kikuyu-emotions-corpus [34,696 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-emotions-corpus [26,394 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-kikuyu_sentence-pairs [CC-BY-4.0], and https://huggingface.co/datasets/michsethowusu/Code-170k-luo [169,000 Dholuo programming QA pairs, CC-BY-4.0]); (4) Kikamba First Open Corpus (https://huggingface.co/datasets/kndomboi/kikamba-first-corpus, Kitui Translation Team, CC-BY-4.0); (5) Swahili Corpus Dataset (https://huggingface.co/datasets/ngusadeep/Swahili-Corpus-Dataset, Samwel Ngusa et al., Mendeley Data doi:10.17632/d4yhn5b9n6.2, Apache-2.0 / CC-BY-4.0, 1,693,227 Swahili texts across 12 civic domains: Afya, Biashara, Bunge, Dini, Elimu, Habari, Kilimo, Mitandao, Mashirika ya Kiraia, Serikali, Sheria, Siasa + 18,000 Swahili-FineTome-20k STEM instructions); and (6) Leipzig Gikuyu CURL Web Corpus (https://kencorpus.ke/items/f22f815f-a9e4-49b3-af48-34d5a95af5f9, CC-BY) & Tonative XNLI Kikuyu/Luo (https://tonative.org/dataset-tools, CC-BY-4.0, 31,500 NLI records).",
+    appUses: ["dictionary", "comparative translator", "course lessons", "grammar lessons", "blog research"],
+    contentTypes: ["vocabulary", "dialogue", "grammar", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated across kisii.json, kamba.json, kikuyu.json, luo.json, swahili.json, kalenjin.json, taita.json, pokot.json, teso.json, somali.json, maasai.json, meru.json, and blog-posts.ts.",
   },
 ];
 

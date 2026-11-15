@@ -1,4 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const TURKANA_CONFIG: LanguageConfig = {
   "id": "turkana",
@@ -19,10 +19,12 @@ export const TURKANA_CONFIG: LanguageConfig = {
 
 export const TURKANA_UNITS: CourseUnit[] = [
   {
-    "id": "turkana-unit-1-greetings",
-    "title": "Unit 1: Greetings & Farewells",
+    "id": "turkana-unit-1",
+    "unitNumber": 1,
+    "title": "Greetings & Farewells",
     "description": "Comprehensive Turkana curriculum for Greetings & Farewells, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "BookOpen",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-greetings",
@@ -35,8 +37,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Mata",
             "source": "Health (Pastoral greeting enquiry)",
-            "pronunciation": "ma-ta",
-            "hint": "Traditional pastoral greeting inquiry between adults (lit. 'health'). Response: 'Ii mata'. (Barton 1921)"
+            "pronunciation": "ma-ta"
           },
           {
             "target": "Ii mata",
@@ -47,8 +48,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Mata ng'atuk",
             "source": "Health to your cattle",
-            "pronunciation": "ma-ta ng'a-tuk",
-            "hint": "Pastoral greeting inquiring after cattle herds. Response: 'Mata ouwi' (health to your village). (Barton 1921)"
+            "pronunciation": "ma-ta ng'a-tuk"
           }
         ],
         "sentences": [
@@ -164,8 +164,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Mata ejik",
             "source": "Complete health",
-            "pronunciation": "ma-ta e-jik",
-            "hint": "Spoken together by both parties at the close of greetings; signifies total wellbeing and absolute peace. (Barton 1921)"
+            "pronunciation": "ma-ta e-jik"
           },
           {
             "target": "Na? / Baiya",
@@ -301,10 +300,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-2-numbers",
-    "title": "Unit 2: Numbers",
+    "id": "turkana-unit-2",
+    "unitNumber": 2,
+    "title": "Numbers",
     "description": "Comprehensive Turkana curriculum for Numbers, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Compass",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-numbers",
@@ -695,10 +696,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-3-calendar-seasons",
-    "title": "Unit 3: Calendar & Seasons",
+    "id": "turkana-unit-3",
+    "unitNumber": 3,
+    "title": "Calendar & Seasons",
     "description": "Comprehensive Turkana curriculum for Calendar & Seasons, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Clock",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-calendar-seasons",
@@ -746,7 +749,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Erwait (pl. ngurwa)",
-            "source": "Day"
+            "source": "Day",
+            "pronunciation": "erwait"
           },
           {
             "target": "Lopo",
@@ -874,8 +878,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ekaru (pl. ngaro)",
             "source": "Year",
-            "pronunciation": "e-ka-ru",
-            "hint": "Year or annual cycle. This year: 'Ekaru lo'; next year: 'Ekaru echi'; last year: 'Ekaru ye'. (Barton 1921)"
+            "pronunciation": "e-ka-ru"
           },
           {
             "target": "Elap (pl. ngelapio)",
@@ -1218,10 +1221,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-4-family",
-    "title": "Unit 4: Family & People",
+    "id": "turkana-unit-4",
+    "unitNumber": 4,
+    "title": "Family & People",
     "description": "Comprehensive Turkana curriculum for Family & People, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Users",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-family",
@@ -1592,10 +1597,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-5-animals",
-    "title": "Unit 5: Animals & Wildlife",
+    "id": "turkana-unit-5",
+    "unitNumber": 5,
+    "title": "Animals & Wildlife",
     "description": "Comprehensive Turkana curriculum for Animals & Wildlife, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "PawPrint",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-animals",
@@ -2505,10 +2512,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-6-nature",
-    "title": "Unit 6: Nature & Environment",
+    "id": "turkana-unit-6",
+    "unitNumber": 6,
+    "title": "Nature & Environment",
     "description": "Comprehensive Turkana curriculum for Nature & Environment, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "TreePine",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-nature",
@@ -2992,10 +3001,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-7-body",
-    "title": "Unit 7: Body Parts",
+    "id": "turkana-unit-7",
+    "unitNumber": 7,
+    "title": "Body Parts",
     "description": "Comprehensive Turkana curriculum for Body Parts, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Activity",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-body",
@@ -3557,10 +3568,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-8-food",
-    "title": "Unit 8: Food & Drink",
+    "id": "turkana-unit-8",
+    "unitNumber": 8,
+    "title": "Food & Drink",
     "description": "Comprehensive Turkana curriculum for Food & Drink, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Soup",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-food",
@@ -3909,10 +3922,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-9-home",
-    "title": "Unit 9: Home & Material Culture",
+    "id": "turkana-unit-9",
+    "unitNumber": 9,
+    "title": "Home & Material Culture",
     "description": "Comprehensive Turkana curriculum for Home & Material Culture, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Home",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-home",
@@ -4410,10 +4425,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-10-weapons-tools",
-    "title": "Unit 10: Weapons & Tools",
+    "id": "turkana-unit-10",
+    "unitNumber": 10,
+    "title": "Weapons & Tools",
     "description": "Comprehensive Turkana curriculum for Weapons & Tools, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Globe",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-weapons-tools",
@@ -4456,8 +4473,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Abarait (pl. ngibara)",
             "source": "Wrist knife (Abarait)",
-            "pronunciation": "a-ba-rait",
-            "hint": "Famous circular razor-sharp steel blade worn on the wrist for hand combat and daily tasks. (Barton 1921)"
+            "pronunciation": "a-ba-rait"
           },
           {
             "target": "Akoli (pl. ngakoli)",
@@ -4780,10 +4796,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-11-verbs",
-    "title": "Unit 11: Verbs & Actions",
+    "id": "turkana-unit-11",
+    "unitNumber": 11,
+    "title": "Verbs & Actions",
     "description": "Comprehensive Turkana curriculum for Verbs & Actions, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Layers",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-verbs",
@@ -5363,10 +5381,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-12-phrases",
-    "title": "Unit 12: Common Phrases",
+    "id": "turkana-unit-12",
+    "unitNumber": 12,
+    "title": "Common Phrases",
     "description": "Comprehensive Turkana curriculum for Common Phrases, vetted from Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' and 'A Classified Vocabulary of Turkana'.",
     "icon": "Award",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-exp-phrases",
@@ -6005,10 +6025,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-13-public-domain-corpus",
-    "title": "Unit 13: Archival Monograph & Comparative Lexicon",
+    "id": "turkana-unit-13",
+    "unitNumber": 13,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Turkana vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-pd-corpus-18-1",
@@ -6066,7 +6088,6 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -6236,10 +6257,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-14-open-datasets-modern",
-    "title": "Unit 14: Core Swadesh & Everyday Community Vocabulary",
+    "id": "turkana-unit-14",
+    "unitNumber": 14,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Turkana vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-open-dataset-19-1",
@@ -6468,63 +6491,66 @@ export const TURKANA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "turkana-unit-dundas-1910-tribes-clans-calendar",
-    "title": "Unit 20: Dundas (1910) 16 Tribes, 19 Attegir Clans, Life Stages & 12-Month Calendar",
+    "id": "turkana-unit-15",
+    "unitNumber": 15,
+    "title": "Dundas 16 Tribes, 19 Attegir Clans, Life Stages & 12-Month Calendar",
     "description": "Master the 16 principal Turkana tribes, 19 Ngoitunya & Ngolio exogamous clans (attegir), 6 male & female life stages, asavanissia warrior ages, Agipie & the nether-world god, and the 12-month Nakiborror / Nakamou / Nait calendar from Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70).",
     "icon": "BookOpen",
+    "color": "#00897B",
     "skills": [
       {
         "id": "turkana-dundas-1910-tribes-clans-life-stages",
-        "title": "16 Principal Tribes, 19 Attegir Clans & 6 Life Stages (pp. 66–69)",
+        "title": "16 Principal Tribes, 19 Attegir Clans & 6 Life Stages",
         "icon": "Users",
         "description": "Learn the 16 Turkana tribes, 19 Ngoitunya & Ngolio clans (attegir), life-stage titles, marriage & slaughter customs, and deities recorded by Hon. K. R. Dundas (1910).",
         "tips": "Dundas (1910, p. 67) notes that Turkana clans (attegir) are strictly exogamous and have no totems; Ngaruwo (#12) is the rain-makers' clan, and a new warrior generation (asavanissia) is instituted every 4 or 5 years.",
         "culturalNote": "Source attribution: Hon. Kenneth R. Dundas, 'Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 40 (1910, pp. 66–70, Plates XVI–XVII).",
         "words": [
           {
-            "target": "Ngolio, Ngoitunya, Nittacha, Nessetou, Nbochoross, Ngissir, Nissikir, Kamatak, Lugumong, Oiuaeguara, Nijiye, Ngirriomong, Ngakumuk, Ngalabong, Ngorr, Nikotomungwa",
-            "source": "The 16 principal Turkana tribes (Ngolio & Ngoitunya live south of Lake Rudolph on the Kerio, Sogota & Tirkwel)",
-            "pronunciation": "ngo-li-o / ngoi-tu-nya / nit-ta-cha / nes-se-tou / nbo-cho-ross / ngis-sir / nis-si-kir / ka-ma-tak",
+            "target": "Ngolio, Ngoitunya, Nittacha, Nessetou, Nbochoross, Ngissir, Nissikir,",
+            "source": "The 16 principal Turkana tribes",
+            "pronunciation": "ngolio",
             "hint": "Hon. K. R. Dundas (1910, p. 66)"
           },
           {
-            "target": "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang, Kaleso, Ngonom, Ngatap, Moana, Nittacha, Egurerr, Ngaruwo (rain-makers), Neturana, Erarak, Eraraket, Abuchaw, Ngattigo, Ekkadenya, Ogorok",
-            "source": "All 19 exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes (#1–8 occur in all 16 tribes; #12 Ngaruwo = rain-makers' clan)",
+            "target": "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang,",
+            "source": "All 19 exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes",
             "pronunciation": "at-te-gir / ni-te-gorr / mo-le-re-to / tu-du-ya / nga-ru-wo",
             "hint": "Hon. K. R. Dundas (1910, p. 67)"
           },
           {
-            "target": "nidue → egile → kasikou (oppa) • apesur → aberu → agemat • asavanissia",
-            "source": "Boy → warrior → old man (oppa wears beaded cap headdress, Plate XVI Fig. 7) • Girl → married woman → old woman • Warrior age-generations (every 4–5 years)",
-            "pronunciation": "ni-du-e / e-gi-le / ka-si-kou / op-pa / a-pe-sur / a-be-ru / a-ge-mat / a-sa-va-nis-si-a",
-            "hint": "Hon. K. R. Dundas (1910, p. 67 & Plates XVI–XVII)"
+            "target": "nidue → egile → kasikou (oppa)",
+            "source": "Boy → warrior → old man",
+            "pronunciation": "nidue-egile-kasikou"
           },
           {
-            "target": "Nessegonn • Agipie vs. Nether-world god",
-            "source": "Evergreen bush on the lower Sogota with sweet berries & leathery fodder leaves • Benevolent sky god vs. malevolent god of rocks and rivers",
-            "pronunciation": "nes-se-gonn / a-gi-pi-e",
-            "hint": "Hon. K. R. Dundas (1910, pp. 67, 69)"
+            "target": "apesur → aberu → agemat",
+            "source": "Girl → married woman → old woman",
+            "pronunciation": "apesur-aberu-agemat"
+          },
+          {
+            "target": "asavanissia",
+            "source": "Warrior age-generations (every 4–5 years)",
+            "pronunciation": "asavanissia"
+          },
+          {
+            "target": "Nessegonn",
+            "source": "Evergreen bush on the lower Sogota with sweet berries & leathery fodder leaves",
+            "pronunciation": "nessegonn"
+          },
+          {
+            "target": "Agipie vs. Nether-world god",
+            "source": "Benevolent sky god vs. malevolent god of rocks and rivers",
+            "pronunciation": "agipie-vs-nether-world-god"
           }
         ],
         "sentences": [
           {
-            "target": "Nidue → Egile → Kasikou (Oppa) • Apesur → Aberu → Agemat.",
-            "source": "Young boy → Warrior → Old man • Unmarried girl → Married woman → Old woman (Dundas 1910, p. 67)."
+            "target": "Nidue → Egile → Kasikou (Oppa)",
+            "source": "Young boy → Warrior → Old man"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Hon. K. R. Dundas (1910, p. 67), which of the 19 exogamous clans (attegir) of the Ngoitunya and Ngolio Turkana is the hereditary rain-makers' clan?",
-            "correctAnswer": "Ngaruwo",
-            "options": [
-              "Ngaruwo",
-              "Nitegorr",
-              "Molereto",
-              "Ogorok"
-            ],
-            "hint": "12th clan in Dundas's list of 19 attegir (p. 67)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Turkana term from Hon. K. R. Dundas (1910, pp. 67, 69) with its meaning:",
@@ -6552,22 +6578,22 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-dundas-1910-12-month-calendar",
-        "title": "The 12-Month Calendar: Nakiborror, Nakamou & Nait (p. 70)",
+        "title": "The 12-Month Calendar: Nakiborror, Nakamou & Nait",
         "icon": "Sun",
         "description": "Master all 12 months and 3 seasonal divisions of the Turkana year recorded by Hon. K. R. Dundas (1910, p. 70).",
         "tips": "The Turkana year begins in March with Lomaruk (Wet season: Nakiborror, March–August) followed by Lolongo (Dry season: Nakamou, September–February); August, September, and October (Loitiak, Lolongo, Lopo) are called Nait because the grass turns yellow.",
         "culturalNote": "Source attribution: Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70).",
         "words": [
           {
-            "target": "Nakiborror (Wet season, Mar–Aug): 1. Lomaruk, 2. Tetimaru, 3. Eliel, 4. Loichoto, 5. Loisoban, 6. Loitiak",
+            "target": "Nakiborror (Wet season, Mar–Aug): 1. Lomaruk, 2. Tetimaru, 3. Eliel, 4.",
             "source": "The 6 Wet-Season months of the Turkana year (March to August)",
-            "pronunciation": "na-ki-bor-ror / lo-ma-ruk / te-ti-ma-ru / e-li-el / loi-cho-to / loi-so-ban / loi-ti-ak",
+            "pronunciation": "nakiborror-1-lomaruk",
             "hint": "Hon. K. R. Dundas (1910, p. 70)"
           },
           {
-            "target": "Nakamou (Dry season, Sept–Feb): 7. Lolongo, 8. Lopo, 9. Lorara, 10. Lomuk, 11. Logwang, 12. Lodunge",
+            "target": "Nakamou: 7. Lolongo, 8. Lopo, 9. Lorara, 10. Lomuk, 11. Logwang, 12.",
             "source": "The 6 Dry-Season months of the Turkana year (September to February)",
-            "pronunciation": "na-ka-mou / lo-lo-ngo / lo-po / lo-ra-ra / lo-muk / lo-gwang / lo-du-nge",
+            "pronunciation": "nakamou-7-lolongo",
             "hint": "Hon. K. R. Dundas (1910, p. 70)"
           },
           {
@@ -6579,25 +6605,249 @@ export const TURKANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak • Nakamou: Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge.",
+            "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak",
             "source": "Wet Season (March–August) & Dry Season (September–February) in Dundas (1910, p. 70)."
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "Why are the months of Loitiak (August), Lolongo (September), and Lopo (October) collectively called 'Nait' in the Turkana calendar (Dundas 1910, p. 70)?",
-            "correctAnswer": "Because the grass turns yellow during those three months",
-            "options": [
-              "Because the grass turns yellow during those three months",
-              "Because flying ants swarm",
-              "Because the Pleiades disappear",
-              "Because bulls are tied up"
-            ],
-            "hint": "See Dundas (1910, p. 70)"
-          }
         ]
-      }
+      },
+        {
+        "id": "turkana-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Turkana parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dunda",
+        "words": [
+                {
+                        "target": "alakari",
+                        "source": "Please, to",
+                        "pronunciation": "a-la-ka-ri"
+                },
+                {
+                        "target": "Tolot-ion / Ejok alothi",
+                        "source": "Farewell exchange",
+                        "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee"
+                },
+                {
+                        "target": "Abe / Ii",
+                        "source": "Goodbye (Parting)",
+                        "pronunciation": "ah-beh / ee-ee"
+                },
+                {
+                        "target": "tolot-ion, go thou ; answer, ejok alothi, good, I go",
+                        "source": "Of farewell",
+                        "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
+                },
+                {
+                        "target": "Na? / Baiya",
+                        "source": "Traditional salutation",
+                        "pronunciation": "nah / bah-ee-yah"
+                },
+                {
+                        "target": "Ii mata",
+                        "source": "Health to you (Greeting reply)",
+                        "pronunciation": "ee-ee mah-tah"
+                },
+                {
+                        "target": "Mata",
+                        "source": "Health (Pastoral greeting enquiry)",
+                        "pronunciation": "mah-tah"
+                },
+                {
+                        "target": "mata ejik (complete health)",
+                        "source": "Complete health! (Unison greeting response)",
+                        "pronunciation": "mata ejik"
+                },
+                {
+                        "target": "Kidarunit ng'oni Lokoi-likalω nawi yok",
+                        "source": "We keep thy house at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni lokoi-likal nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Ekokωlan nawi yok",
+                        "source": "We keep he steals at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni ekoklan nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Akolon nawi yok",
+                        "source": "We keep sun at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni akolon nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Echoto nawi yok",
+                        "source": "We keep mud at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni echoto nawi yok"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ejok angoligini ng'irwa daang'",
+                        "source": "It is good to watch every day"
+                },
+                {
+                        "target": "Kichamit ng'oni arimi daang'",
+                        "source": "We want to guard together"
+                },
+                {
+                        "target": "Ejok arimi ng'irwa daang'",
+                        "source": "It is good to guard every day"
+                },
+                {
+                        "target": "Kichamit ng'oni akikiri daang'",
+                        "source": "We want to write together"
+                },
+                {
+                        "target": "Ejok akikiri ng'irwa daang'",
+                        "source": "It is good to write every day"
+                },
+                {
+                        "target": "Kichamit ng'oni achami daang'",
+                        "source": "We want to accept together"
+                },
+                {
+                        "target": "Ejok achami ng'irwa daang'",
+                        "source": "It is good to accept every day"
+                },
+                {
+                        "target": "Kichamit ng'oni atheri daang'",
+                        "source": "We want to choose together"
+                },
+                {
+                        "target": "Ejok atheri ng'irwa daang'",
+                        "source": "It is good to choose every day"
+                },
+                {
+                        "target": "Kichamit ng'oni atopoki daang'",
+                        "source": "We want to cleave together"
+                },
+                {
+                        "target": "Ejok atopoki ng'irwa daang'",
+                        "source": "It is good to cleave every day"
+                },
+                {
+                        "target": "Kichamit ng'oni adoli daang'",
+                        "source": "We want to arrive together"
+                }
+        ]
+},
+        {
+        "id": "turkana-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Turkana sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dunda",
+        "words": [
+                {
+                        "target": "Kidarunit ng'oni akuich nawi yok",
+                        "source": "We keep sky at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni akuich nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Akiru nawi yok",
+                        "source": "We keep rain at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni akiru nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Amukora nawi yok",
+                        "source": "We keep hill at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni amukora nawi yok"
+                },
+                {
+                        "target": "Kidarunit ng'oni Elap nawi yok",
+                        "source": "We keep moon at our pastoral camp",
+                        "pronunciation": "kidarunit ngoni elap nawi yok"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a asowat alosokoni?",
+                        "source": "What is the price of bracelet at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a asowat alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a erwaro alosokoni?",
+                        "source": "What is the price of cloth at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a erwaro alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Echui alosokoni?",
+                        "source": "What is the price of skin pouch at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a echui alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Ebela alosokoni?",
+                        "source": "What is the price of shepherd's stick at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a ebela alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Akidor alosokoni?",
+                        "source": "What is the price of door at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a akidor alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Akikoi akim alosokoni?",
+                        "source": "What is the price of fire-making stick at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a akikoi akim alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Akobito alosokoni?",
+                        "source": "What is the price of fiber rope at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a akobito alosokoni"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Atom alosokoni?",
+                        "source": "What is the price of war horn at the market?",
+                        "pronunciation": "ngirupia ngiai etiai a atom alosokoni"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ejok adoli ng'irwa daang'",
+                        "source": "It is good to arrive every day"
+                },
+                {
+                        "target": "Kichamit ng'oni anyoni daang'",
+                        "source": "We want to depart together"
+                },
+                {
+                        "target": "Ejok anyoni ng'irwa daang'",
+                        "source": "It is good to depart every day"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Maritoit alosokoni?",
+                        "source": "What is the price of brass bracelet at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Amedok alosokoni?",
+                        "source": "What is the price of mud head-dress at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a ekechelom alosokoni?",
+                        "source": "What is the price of stool at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a akopol alosokoni?",
+                        "source": "What is the price of umbilical cord at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Eteker alosokoni?",
+                        "source": "What is the price of watering trough at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a Amukat alosokoni?",
+                        "source": "What is the price of leather sandals at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a atiake alosokoni?",
+                        "source": "What is the price of boundary at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a asowat alosokoni?",
+                        "source": "What is the price of bracelet at the market?"
+                },
+                {
+                        "target": "Ng'irupia ng'iai etiai a erwaro alosokoni?",
+                        "source": "What is the price of cloth at the market?"
+                }
+        ]
+}
     ]
   }
 ];

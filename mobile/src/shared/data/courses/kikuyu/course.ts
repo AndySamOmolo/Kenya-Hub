@@ -1,12 +1,4 @@
-// ============================================================
-// Kikuyu (Gĩkũyũ) Language Course Configuration & Units
-// Based 100% on Public Domain Sources:
-// 1. Hildegarde Hinde (1904) "Vocabularies of the Kamba and Kikuyu Languages of East Africa" (Cambridge Univ. Press)
-// 2. C. W. Hobley (1922) "Bantu Beliefs and Customary Institutions" (H. F. & G. Witherby, London)
-// 3. Wiktionary Appendix:Bantu Swadesh lists (Zone E20 Kikuyu core lexical roots)
-// ============================================================
-
-import type { LanguageConfig, CourseUnit } from '../types';
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const KIKUYU_CONFIG: LanguageConfig = {
   "id": "kikuyu",
@@ -33,72 +25,66 @@ export const KIKUYU_CONFIG: LanguageConfig = {
     "hobley-akamba-ethnology-1910",
     "johnston-bantu-1919",
     "bantu-beliefs",
-    "open-web-swadesh-comparative"
+    "open-web-swadesh-comparative",
+    "mcgregor-kikuyu-vocabulary-1904"
   ]
 };
 
 export const KIKUYU_UNITS: CourseUnit[] = [
   {
     "id": "kikuyu-unit-1",
-    "title": "Unit 1: Greetings, Courtesies & Everyday Inquiries",
+    "unitNumber": 1,
+    "title": "Greetings, Courtesies & Everyday Inquiries",
     "description": "Master traditional Gĩkũyũ salutations, polite replies, and essential conversational questions recorded by Hildegarde Hinde (1904).",
     "icon": "Handshake",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-greetings-1",
         "title": "Salutations & Welcoming Guests",
         "icon": "Handshake",
         "description": "Learn traditional salutations, responses, and welcoming hospitality phrases from Hinde (1904).",
-        "tips": "In Hildegarde Hinde's 1904 vocabulary, the foundational salutation is 'Mwohoro?' ('What is the news/peace?'), answered with 'Mwohoro mwēga' ('Good news/peace') or 'Mwēga munnu' ('Very good'). Welcoming a visitor home involves 'Uka haha' ('Come here') and offering water ('Rehe maii').",
         "culturalNote": "Among the Agĩkũyũ of the Central Highlands, inquiring after the peace ('mwohoro') of the homestead, children, and herds precedes any formal conversation.",
         "words": [
           {
             "target": "Mwohoro",
             "source": "Salutation / How is the news?",
-            "pronunciation": "mwo-ho-ro",
-            "hint": "Hinde (1904) p. 67 salutation"
+            "pronunciation": "mwo-ho-ro"
           },
           {
             "target": "Mwohoro mwēga",
             "source": "Good news / Fine",
-            "pronunciation": "mwo-ho-ro mwe-ga",
-            "hint": "Hinde (1904) p. 67 reply"
+            "pronunciation": "mwo-ho-ro mwe-ga"
           },
           {
             "target": "Mwēga munnu",
             "source": "Very good / Very well",
-            "pronunciation": "mwe-ga munnu",
-            "hint": "Hinde (1904) p. 67 emphatic reply"
+            "pronunciation": "mwe-ga munnu"
           },
           {
             "target": "Nimwega",
             "source": "I am good / well",
-            "pronunciation": "nimwe-ga",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "nimwe-ga"
           },
           {
             "target": "Uka haha",
             "source": "Come here",
-            "pronunciation": "uka ha-ha",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "uka ha-ha"
           },
           {
             "target": "Rehe maii",
             "source": "Bring water",
-            "pronunciation": "re-he maii",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "re-he maii"
           },
           {
             "target": "Reherria",
             "source": "Bring food",
-            "pronunciation": "re-herria",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "re-herria"
           },
           {
             "target": "Aca",
             "source": "No",
-            "pronunciation": "aca",
-            "hint": "Core negative particle"
+            "pronunciation": "aca"
           }
         ],
         "sentences": [
@@ -166,55 +152,46 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Essential Questions & Conversational Replies",
         "icon": "Coffee",
         "description": "Ask names, origins, destinations, and intentions using Hinde (1904) phraseology.",
-        "tips": "Question words in Gĩkũyũ typically stand at the end of the clause or attach as interrogative enclitics: '-atia?' (how?), '-ku?' (where?), '-ki?' (what?), as in 'Wita gwatia?' (What is your name?) and 'Wathiiku?' (Where are you going?).",
         "words": [
           {
             "target": "Wita gwatia?",
             "source": "What is your name?",
-            "pronunciation": "wi-ta gwa-tia",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "wi-ta gwa-tia"
           },
           {
             "target": "Wathiiku?",
             "source": "Where are you going?",
-            "pronunciation": "wathii-ku",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "wathii-ku"
           },
           {
             "target": "Ukwendakki?",
             "source": "What do you want?",
-            "pronunciation": "ukwendakki",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ukwendakki"
           },
           {
             "target": "Umaku?",
             "source": "Where do you come from?",
-            "pronunciation": "u-ma-ku",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "u-ma-ku"
           },
           {
             "target": "Uguikatia?",
             "source": "What are you doing?",
-            "pronunciation": "u-gui-ka-tia",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "u-gui-ka-tia"
           },
           {
             "target": "Nikkigekki?",
             "source": "What is this?",
-            "pronunciation": "nikki-gekki",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "nikki-gekki"
           },
           {
             "target": "Meku maii?",
             "source": "Where is the water?",
-            "pronunciation": "me-ku maii",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "me-ku maii"
           },
           {
             "target": "Ndiui",
             "source": "I do not know",
-            "pronunciation": "ndiui",
-            "hint": "Hinde (1904) p. 64 (also ndikumenya)"
+            "pronunciation": "ndiui"
           }
         ],
         "sentences": [
@@ -333,76 +310,67 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-2",
-    "title": "Unit 2: Numbers, Counting & Multipliers",
+    "unitNumber": 2,
+    "title": "Numbers, Counting & Multipliers",
     "description": "Learn the decimal counting system from 1 to 100, ordinals, and frequency multipliers from Hinde (1904).",
     "icon": "BookOpen",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-numbers-1-10",
         "title": "Cardinal Numbers 1 to 10",
         "icon": "Hash",
         "description": "Count from 1 (imue) to 10 (ikumi) in Gĩkũyũ.",
-        "tips": "In Hinde (1904, p. 62), Kikuyu cardinal numbers 1–10 are: imue (1), igiri (2), ithatu (3), inya (4), ithanu (5), thanthatu (6), muguanja (7), inyanya (8), ikenda (9), and ikumi (10).",
         "words": [
           {
             "target": "Imue",
             "source": "One (1)",
-            "pronunciation": "i-mue",
-            "hint": "Hinde (1904) p. 62 (modern: ĩmwe)"
+            "pronunciation": "i-mue"
           },
           {
             "target": "Igiri",
             "source": "Two (2)",
-            "pronunciation": "i-gi-ri",
-            "hint": "Hinde (1904) p. 62 (modern: igĩrĩ)"
+            "pronunciation": "i-gi-ri"
           },
           {
             "target": "Ithatu",
             "source": "Three (3)",
-            "pronunciation": "itha-tu",
-            "hint": "Hinde (1904) p. 62 (modern: ithatũ)"
+            "pronunciation": "itha-tu"
           },
           {
             "target": "Inya",
             "source": "Four (4)",
-            "pronunciation": "inya",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "inya"
           },
           {
             "target": "Ithanu",
             "source": "Five (5)",
-            "pronunciation": "itha-nu",
-            "hint": "Hinde (1904) p. 62 (modern: ithano)"
+            "pronunciation": "itha-nu"
           },
           {
             "target": "Thanthatu",
             "source": "Six (6)",
-            "pronunciation": "thantha-tu",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "thantha-tu"
           },
           {
             "target": "Muguanja",
             "source": "Seven (7)",
-            "pronunciation": "mu-guanja",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "mu-guanja"
           },
           {
             "target": "Inyanya",
             "source": "Eight (8)",
-            "pronunciation": "inyanya",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "inyanya"
           },
           {
             "target": "Ikenda",
             "source": "Nine (9)",
-            "pronunciation": "i-kenda",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "i-kenda"
           },
           {
             "target": "Ikumi",
             "source": "Ten (10)",
-            "pronunciation": "i-ku-mi",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "i-ku-mi"
           }
         ],
         "sentences": [
@@ -518,61 +486,51 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Tens (Mirongo), Hundreds & Multipliers",
         "icon": "Calculator",
         "description": "Count by tens from 20 to 100 and express \"once, twice, thrice, first, last\".",
-        "tips": "Tens are formed with 'mirongo' + the unit numeral: mirongoiri (20), mirongo itatu (30), mirongo inya (40), mirongo ithanu (50), up to igana (100). Frequency multipliers prefix ka-/kĩ-: kirrimue (once), kēēri (twice), kathatu (thrice).",
         "words": [
           {
             "target": "Mirongoiri",
             "source": "Twenty (20)",
-            "pronunciation": "mi-rongoi-ri",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "mi-rongoi-ri"
           },
           {
             "target": "Mirongo itatu",
             "source": "Thirty (30)",
-            "pronunciation": "mi-rongo i-ta-tu",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "mi-rongo i-ta-tu"
           },
           {
             "target": "Mirongo inya",
             "source": "Forty (40)",
-            "pronunciation": "mi-rongo inya",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "mi-rongo inya"
           },
           {
             "target": "Mirongo ithanu",
             "source": "Fifty (50)",
-            "pronunciation": "mi-rongo itha-nu",
-            "hint": "Hinde (1904) p. 62"
+            "pronunciation": "mi-rongo itha-nu"
           },
           {
             "target": "Igana",
             "source": "One hundred (100)",
-            "pronunciation": "i-ga-na",
-            "hint": "Hinde (1904) p. 63"
+            "pronunciation": "i-ga-na"
           },
           {
             "target": "Kirrimue",
             "source": "Once (one time)",
-            "pronunciation": "kirri-mue",
-            "hint": "Hinde (1904) p. 63"
+            "pronunciation": "kirri-mue"
           },
           {
             "target": "Kēēri",
             "source": "Twice (two times)",
-            "pronunciation": "kee-ri",
-            "hint": "Hinde (1904) p. 63"
+            "pronunciation": "kee-ri"
           },
           {
             "target": "Kathatu",
             "source": "Thrice (three times)",
-            "pronunciation": "katha-tu",
-            "hint": "Hinde (1904) p. 63"
+            "pronunciation": "katha-tu"
           },
           {
             "target": "Kuambirrira",
             "source": "First",
-            "pronunciation": "kuambirri-ra",
-            "hint": "Hinde (1904) p. 63"
+            "pronunciation": "kuambirri-ra"
           },
           {
             "target": "imue",
@@ -656,70 +614,62 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-3",
-    "title": "Unit 3: Family, Kinship & Social Ranks",
+    "unitNumber": 3,
+    "title": "Family, Kinship & Social Ranks",
     "description": "Learn terms for family members, life stages, and possessives from Hinde (1904) and Hobley (1922).",
     "icon": "Users",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-family-kinship",
         "title": "Parents, Children & Homestead Kin",
         "icon": "Users",
         "description": "Master core kinship nouns and possessive phrases.",
-        "tips": "Class 1 animate nouns replace 'mu-' with 'a-' in the plural (mundu → andu, muka → aka), while diminutive 'kana' (child) becomes 'twana' or 'siana' (children).",
         "words": [
           {
             "target": "Baba wiitu",
             "source": "Our father",
-            "pronunciation": "ba-ba wii-tu",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "ba-ba wii-tu"
           },
           {
             "target": "Nyina wiitu",
             "source": "Our mother",
-            "pronunciation": "nyi-na wii-tu",
-            "hint": "Hinde (1904) p. 65 (also Mwaitu)"
+            "pronunciation": "nyi-na wii-tu"
           },
           {
             "target": "Mwana wakua",
             "source": "My child",
-            "pronunciation": "mwa-na wa-kua",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "mwa-na wa-kua"
           },
           {
             "target": "Siana siaku",
             "source": "Your children",
-            "pronunciation": "sia-na sia-ku",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "sia-na sia-ku"
           },
           {
             "target": "Mundu (pl. Andu)",
             "source": "Person (pl. People)",
-            "pronunciation": "mundu",
-            "hint": "Hinde (1904) p. vi"
+            "pronunciation": "mundu"
           },
           {
             "target": "Muka (pl. Aka)",
             "source": "Woman / Wife (pl. Women / Wives)",
-            "pronunciation": "mu-ka",
-            "hint": "Hinde (1904) p. vi"
+            "pronunciation": "mu-ka"
           },
           {
             "target": "Mwanake (pl. Anake)",
             "source": "Warrior / Young man (pl. Warriors)",
-            "pronunciation": "mwa-na-ke",
-            "hint": "Hobley (1922) p. 305"
+            "pronunciation": "mwa-na-ke"
           },
           {
             "target": "Muiritu (pl. Airitu)",
             "source": "Maiden / Unmarried girl",
-            "pronunciation": "mui-ri-tu",
-            "hint": "Hobley (1922) p. 306"
+            "pronunciation": "mui-ri-tu"
           },
           {
             "target": "Mutumia (pl. Atumia)",
             "source": "Elder of the community",
-            "pronunciation": "mu-tu-mia",
-            "hint": "Hobley (1922) p. 307"
+            "pronunciation": "mu-tu-mia"
           }
         ],
         "sentences": [
@@ -838,70 +788,62 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-4",
-    "title": "Unit 4: Homestead, Food, Livestock & Daily Sustenance",
+    "unitNumber": 4,
+    "title": "Homestead, Food, Livestock & Daily Sustenance",
     "description": "Talk about food, milk, hunger, cattle, and household items using Hinde (1904).",
     "icon": "Tractor",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-food-homestead",
         "title": "Food, Milk, Fire & Homestead Life",
         "icon": "MessageCircle",
         "description": "Express hunger, request milk and food, and name household items.",
-        "tips": "Notice the locative suffix '-ini / -eni' in 'nyumbani' (in the house) and the concord on 'nyumba ninene' (a big house) vs. 'ruhiu rwega' (a good knife).",
         "words": [
           {
             "target": "Nihūtie",
             "source": "I am hungry",
-            "pronunciation": "ni-hu-tie",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ni-hu-tie"
           },
           {
             "target": "Ningwenda irria",
             "source": "I want milk",
-            "pronunciation": "ningwenda irria",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ningwenda irria"
           },
           {
             "target": "Ugika kurria?",
             "source": "Do you want to eat?",
-            "pronunciation": "u-gi-ka kurria",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "u-gi-ka kurria"
           },
           {
             "target": "Ngombe siake",
             "source": "His cows / cattle",
-            "pronunciation": "ngombe sia-ke",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "ngombe sia-ke"
           },
           {
             "target": "Nyumba ninene",
             "source": "A big house",
-            "pronunciation": "nyumba ni-ne-ne",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "nyumba ni-ne-ne"
           },
           {
             "target": "Mwitzi wiitu",
             "source": "Our village / homestead",
-            "pronunciation": "mwitzi wii-tu",
-            "hint": "Hinde (1904) p. 65 (modern: mũciĩ witũ)"
+            "pronunciation": "mwitzi wii-tu"
           },
           {
             "target": "Akiamwaki",
             "source": "Make a fire",
-            "pronunciation": "a-kiamwa-ki",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "a-kiamwa-ki"
           },
           {
             "target": "Ruhiu rwega",
             "source": "A good knife / sword",
-            "pronunciation": "ru-hiu rwe-ga",
-            "hint": "Hinde (1904) p. 66"
+            "pronunciation": "ru-hiu rwe-ga"
           },
           {
             "target": "Kiratu (pl. Iratu)",
             "source": "Sandal / shoe (pl. Sandals)",
-            "pronunciation": "ki-ra-tu",
-            "hint": "Hinde (1904) p. vii"
+            "pronunciation": "ki-ra-tu"
           }
         ],
         "sentences": [
@@ -1016,76 +958,67 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-5",
-    "title": "Unit 5: Verbs, Tenses & Negation",
+    "unitNumber": 5,
+    "title": "Verbs, Tenses & Negation",
     "description": "Master affirmative and negative verb conjugations, imperatives, and everyday actions from Hinde (1904).",
     "icon": "Zap",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-verbs-actions",
         "title": "Everyday Verbs, Commands & Negatives",
         "icon": "Zap",
         "description": "Express going, returning, bringing, seeing, and negative statements.",
-        "tips": "Affirmative future uses -ka-/-ga- ('ningathi' = I will go; 'ningashōka' = I will return), while negative verbs prefix nd-/ndi- ('ndithie / ndikathie' = I will not go; 'ndionna' = I do not see).",
         "words": [
           {
             "target": "Ningathi",
             "source": "I will go",
-            "pronunciation": "ningathi",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ningathi"
           },
           {
             "target": "Ndikathie",
             "source": "I will not go",
-            "pronunciation": "ndi-kathie",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ndi-kathie"
           },
           {
             "target": "Ndingihotta kuthi",
             "source": "I cannot go",
-            "pronunciation": "ndingi-hotta kuthi",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ndingi-hotta kuthi"
           },
           {
             "target": "Ningashōka",
             "source": "I will return",
-            "pronunciation": "ningasho-ka",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ningasho-ka"
           },
           {
             "target": "Ndikwenda",
             "source": "I do not want",
-            "pronunciation": "ndikwenda",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ndikwenda"
           },
           {
             "target": "Ndionna",
             "source": "I do not see",
-            "pronunciation": "ndionna",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ndionna"
           },
           {
             "target": "Nikurehe",
             "source": "I bring",
-            "pronunciation": "ni-ku-re-he",
-            "hint": "Hinde (1904) p. 64"
+            "pronunciation": "ni-ku-re-he"
           },
           {
             "target": "Aniuka",
             "source": "He has come",
-            "pronunciation": "a-niu-ka",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "a-niu-ka"
           },
           {
             "target": "Udikuka",
             "source": "Do not come",
-            "pronunciation": "u-di-ku-ka",
-            "hint": "Hinde (1904) p. 66"
+            "pronunciation": "u-di-ku-ka"
           },
           {
             "target": "Kirra",
             "source": "Be quiet",
-            "pronunciation": "kirra",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "kirra"
           }
         ],
         "sentences": [
@@ -1200,34 +1133,32 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-6",
-    "title": "Unit 6: Nature, Body Parts & Cultural Heritage",
+    "unitNumber": 6,
+    "title": "Nature, Body Parts & Cultural Heritage",
     "description": "Explore natural landscapes, anatomy, and classical Agĩkũyũ cultural institutions from Hinde (1904) and Hobley (1922).",
     "icon": "Activity",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-nature-body",
         "title": "Nature, Anatomy & Locatives",
         "icon": "Activity",
         "description": "Name features of the highland landscape and parts of the body.",
-        "tips": "Class 3/4 trees ('muti → miti'), Class 5/6 stones ('ihiga → mahiga'), and Class 7/8 mountains ('kirima → irima') illustrate the core inanimate noun classes.",
         "words": [
           {
             "target": "Kiara (pl. Shiara)",
             "source": "Finger (pl. Fingers)",
-            "pronunciation": "kia-ra",
-            "hint": "Hinde (1904) p. vii"
+            "pronunciation": "kia-ra"
           },
           {
             "target": "Uwoko wake",
             "source": "His hand / arm",
-            "pronunciation": "u-wo-ko wa-ke",
-            "hint": "Hinde (1904) p. 65"
+            "pronunciation": "u-wo-ko wa-ke"
           },
           {
             "target": "Mtueni",
             "source": "In the head",
-            "pronunciation": "mtue-ni",
-            "hint": "Hinde (1904) p. 67"
+            "pronunciation": "mtue-ni"
           },
           {
             "target": "kutu",
@@ -1332,13 +1263,11 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Agĩkũyũ Council, Age-Sets & Sacred Heritage",
         "icon": "Crown",
         "description": "Learn the institutional vocabulary of the Kiama council, Itwika generational transfer, and sacred Mugumo tree from C. W. Hobley (1922).",
-        "tips": "C. W. Hobley's 1922 Glossary documents how Agĩkũyũ governance revolved around the 'Kiama' (council of elders), 'Chira' (deliberation/lawsuit), and the alternating generational moieties 'Maina' and 'Mwangi' who transferred authority at the 'Itwika' ceremony.",
         "words": [
           {
             "target": "Mundu Mugo",
             "source": "Traditional healer and diviner",
-            "pronunciation": "mundu mu-go",
-            "hint": "Hobley (1922) p. 306"
+            "pronunciation": "mundu mu-go"
           },
           {
             "target": "gũtũ (pl. matũ)",
@@ -1457,65 +1386,63 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-7",
-    "title": "Unit 7: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 7,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "User",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-family-kinship-kinship-elders-7",
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "muundu, pl. andu",
-            "source": "Man"
+            "source": "Man",
+            "pronunciation": "muundu"
           },
           {
             "target": "Mwana",
-            "source": "Son"
+            "source": "Son",
+            "pronunciation": "mwana"
           },
           {
             "target": "karegu",
-            "source": "Girl"
+            "source": "Girl",
+            "pronunciation": "karegu"
           },
           {
             "target": "kahi",
             "source": "boy",
-            "pronunciation": "ka-hi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ka-hi"
           },
           {
             "target": "mundu murume",
             "source": "boy (circumcised)",
-            "pronunciation": "mundu mu-ru-me",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mundu mu-ru-me"
           },
           {
             "target": "murāta",
             "source": "brother",
-            "pronunciation": "mu-ra-ta",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mu-ra-ta"
           },
           {
             "target": "mthoni",
             "source": "brother in law",
-            "pronunciation": "mtho-ni",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mtho-ni"
           },
           {
             "target": "muthamaki",
             "source": "chief",
-            "pronunciation": "mutha-ma-ki",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mutha-ma-ki"
           },
           {
             "target": "kana, pl. twana",
             "source": "child",
-            "pronunciation": "ka-na",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ka-na"
           }
         ],
         "sentences": [
@@ -1595,56 +1522,47 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "kukigamma",
             "source": "crawl (a man)",
-            "pronunciation": "ku-ki-gamma",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-ki-gamma"
           },
           {
             "target": "muthuri, pl. athuri",
             "source": "elder",
-            "pronunciation": "muthu-ri",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "muthu-ri"
           },
           {
             "target": "baba",
             "source": "father",
-            "pronunciation": "ba-ba",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ba-ba"
           },
           {
             "target": "wathiomo",
             "source": "father-in-law",
-            "pronunciation": "wathio-mo",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "wathio-mo"
           },
           {
             "target": "karegu",
             "source": "girl",
-            "pronunciation": "ka-re-gu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ka-re-gu"
           },
           {
             "target": "murume wakwa",
             "source": "husband",
-            "pronunciation": "mu-ru-me wakwa",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mu-ru-me wakwa"
           },
           {
             "target": "muundu, pl. andu",
             "source": "man",
-            "pronunciation": "muundu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "muundu"
           },
           {
             "target": "maiitu",
             "source": "mother",
-            "pronunciation": "maii-tu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "maii-tu"
           },
           {
             "target": "Mwana",
@@ -1728,67 +1646,63 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-8",
-    "title": "Unit 8: Numbers, Counting, Currency & Measures",
+    "unitNumber": 8,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "Scale",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-numbers-measures-cardinals-ordinals-8",
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "Ithathatũ",
             "source": "Six",
-            "pronunciation": "ithatha-tu",
-            "hint": "Hinde: thanthatu"
+            "pronunciation": "ithatha-tu"
           },
           {
             "target": "-õthe",
             "source": "all",
-            "pronunciation": "othe",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "othe"
           },
           {
             "target": "ithiwi õthe",
             "source": "all of us",
-            "pronunciation": "ithi-wi othe",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ithi-wi othe"
           },
           {
             "target": "imue",
-            "source": "One"
+            "source": "One",
+            "pronunciation": "imue"
           },
           {
             "target": "ikumi",
-            "source": "Ten"
+            "source": "Ten",
+            "pronunciation": "ikumi"
           },
           {
             "target": "andu ere",
             "source": "both",
-            "pronunciation": "andu ere",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "andu ere"
           },
           {
             "target": "kutara",
             "source": "count",
-            "pronunciation": "ku-ta-ra",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-ta-ra"
           },
           {
             "target": "inyanga",
             "source": "eight",
-            "pronunciation": "inyanga",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "inyanga"
           },
           {
             "target": "kanyanya",
             "source": "eight times",
-            "pronunciation": "kanyanya",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kanyanya"
           }
         ],
         "sentences": [
@@ -1868,62 +1782,52 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "mirongoiri na itanu",
             "source": "fifty",
-            "pronunciation": "mi-rongoi-ri na i-ta-nu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mi-rongoi-ri na i-ta-nu"
           },
           {
             "target": "kiarra ki morroto",
             "source": "finger (first)",
-            "pronunciation": "kiarra ki morro-to",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kiarra ki morro-to"
           },
           {
             "target": "ikinya or kuambirrira",
             "source": "first",
-            "pronunciation": "i-kinya or kuambirri-ra",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-kinya or kuambirri-ra"
           },
           {
             "target": "katanu",
             "source": "five times",
-            "pronunciation": "ka-ta-nu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ka-ta-nu"
           },
           {
             "target": "mirongo iri na ena",
             "source": "forty",
-            "pronunciation": "mi-rongo iri na ena",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mi-rongo iri na ena"
           },
           {
             "target": "kanna",
             "source": "four times",
-            "pronunciation": "kanna",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kanna"
           },
           {
             "target": "kishuinji",
             "source": "half",
-            "pronunciation": "kishuinji",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kishuinji"
           },
           {
             "target": "nichigana",
             "source": "how many",
-            "pronunciation": "nichi-ga-na",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nichi-ga-na"
           },
           {
             "target": "riingi",
             "source": "many",
-            "pronunciation": "riingi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "riingi"
           }
         ],
         "sentences": [
@@ -2034,71 +1938,63 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-9",
-    "title": "Unit 9: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 9,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "Milk",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-food-agriculture-staple-foods-cookery-9",
         "title": "Staple Foods, Cookery & Beverages",
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "marigu",
             "source": "banana",
-            "pronunciation": "ma-ri-gu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ma-ri-gu"
           },
           {
             "target": "kutziara",
             "source": "bear fruit (to)",
-            "pronunciation": "kutzia-ra",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kutzia-ra"
           },
           {
             "target": "enjohi",
             "source": "beer (native)",
-            "pronunciation": "enjo-hi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "enjo-hi"
           },
           {
             "target": "-nyungu",
             "source": "bitter",
-            "pronunciation": "nyungu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nyungu"
           },
           {
             "target": "ngorrono",
             "source": "butter",
-            "pronunciation": "ngorro-no",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ngorro-no"
           },
           {
             "target": "maguta",
             "source": "butter (clarified)",
-            "pronunciation": "ma-gu-ta",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ma-gu-ta"
           },
           {
             "target": "uria",
             "source": "butter milk",
-            "pronunciation": "u-ria",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "u-ria"
           },
           {
             "target": "mweer",
             "source": "caffre corn",
-            "pronunciation": "mweer",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mweer"
           },
           {
             "target": "mugwatchi",
             "source": "cassava",
-            "pronunciation": "mugwatchi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mugwatchi"
           }
         ],
         "sentences": [
@@ -2210,50 +2106,42 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Crops, Cultivation & Pastoral Livestock",
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "mbariki",
             "source": "castor-oil tree",
-            "pronunciation": "mba-ri-ki",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mba-ri-ki"
           },
           {
             "target": "kurri ambakki",
             "source": "chew (tobacco)",
-            "pronunciation": "kurri ambakki",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kurri ambakki"
           },
           {
             "target": "kuruga",
             "source": "cook",
-            "pronunciation": "ku-ru-ga",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-ru-ga"
           },
           {
             "target": "kumea",
             "source": "drink",
-            "pronunciation": "ku-mea",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-mea"
           },
           {
             "target": "kunigurria",
             "source": "eat",
-            "pronunciation": "ku-ni-gurria",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-ni-gurria"
           },
           {
             "target": "itumbi, pl. matumbi",
             "source": "egg",
-            "pronunciation": "i-tumbi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-tumbi"
           },
           {
             "target": "mutŭ",
             "source": "flour",
-            "pronunciation": "mu-tu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mu-tu"
           },
           {
             "target": "maguta",
@@ -2342,65 +2230,58 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-10",
-    "title": "Unit 10: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 10,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "PawPrint",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-nature-wildlife-land-sky-water-10",
         "title": "Sky, Weather, Rivers & Landforms",
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "hiti",
             "source": "Hyena",
-            "pronunciation": "hi-ti",
-            "hint": "Hémery 1903, McGregor 1904 & Routledge 1910"
+            "pronunciation": "hi-ti"
           },
           {
             "target": "mũgumo (pl. mĩgumo)",
             "source": "Sacred Fig Tree",
-            "pronunciation": "mu-gu-mo",
-            "hint": "Routledge 1910 & Hobley 1922 sacred shrine tree"
+            "pronunciation": "mu-gu-mo"
           },
           {
             "target": "thigirriri",
             "source": "ant (small black)",
-            "pronunciation": "thi-girri-ri",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "thi-girri-ri"
           },
           {
             "target": "tharaku",
             "source": "ant (red)",
-            "pronunciation": "tha-ra-ku",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "tha-ra-ku"
           },
           {
             "target": "muthua",
             "source": "ant (white)",
-            "pronunciation": "muthua",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "muthua"
           },
           {
             "target": "irõõnga",
             "source": "antelope",
-            "pronunciation": "i-roonga",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-roonga"
           },
           {
             "target": "muhu",
             "source": "ashes",
-            "pronunciation": "mu-hu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mu-hu"
           },
           {
             "target": "nugu ao ithinwa",
             "source": "baboon",
-            "pronunciation": "nu-gu ao ithinwa",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nu-gu ao ithinwa"
           },
           {
             "target": "nempaka",
@@ -2485,50 +2366,42 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "East African Fauna, Birds & Sacred Trees",
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "mugiyo",
             "source": "baobab tree",
-            "pronunciation": "mu-gi-yo",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mu-gi-yo"
           },
           {
             "target": "kugambu",
             "source": "bark",
-            "pronunciation": "ku-gambu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-gambu"
           },
           {
             "target": "makonni",
             "source": "bark (of tree)",
-            "pronunciation": "ma-konni",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ma-konni"
           },
           {
             "target": "enjugu",
             "source": "beans (tree)",
-            "pronunciation": "enju-gu",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "enju-gu"
           },
           {
             "target": "njuki",
             "source": "bee",
-            "pronunciation": "nju-ki",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nju-ki"
           },
           {
             "target": "mbuggi",
             "source": "bell (cow)",
-            "pronunciation": "mbuggi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mbuggi"
           },
           {
             "target": "nyoni",
             "source": "bird",
-            "pronunciation": "nyo-ni",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nyo-ni"
           },
           {
             "target": "imme",
@@ -2617,59 +2490,53 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-11",
-    "title": "Unit 11: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 11,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "Heart",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-body-health-anatomy-senses-11",
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "nda",
             "source": "abdomen",
-            "pronunciation": "nda",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nda"
           },
           {
             "target": "runyadide",
             "source": "ankle",
-            "pronunciation": "runya-di-de",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "runya-di-de"
           },
           {
             "target": "wuoko",
             "source": "arm (the whole)",
-            "pronunciation": "wuo-ko",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "wuo-ko"
           },
           {
             "target": "kuwoko",
             "source": "arm (fore)",
-            "pronunciation": "ku-wo-ko",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-wo-ko"
           },
           {
             "target": "kichako",
             "source": "arm (upper)",
-            "pronunciation": "kicha-ko",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "kicha-ko"
           },
           {
             "target": "mgongo",
             "source": "back",
-            "pronunciation": "mgongo",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mgongo"
           },
           {
             "target": "ihindi",
             "source": "back (small of)",
-            "pronunciation": "i-hindi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-hindi"
           },
           {
             "target": "Koto (pl. mato)",
@@ -2759,54 +2626,47 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Health, Traditional Medicine & Emergency Terms",
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "nderu",
             "source": "beard",
-            "pronunciation": "nde-ru",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nde-ru"
           },
           {
             "target": "sakame",
             "source": "blood",
-            "pronunciation": "sa-ka-me",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "sa-ka-me"
           },
           {
             "target": "kumirra",
             "source": "blow nose",
-            "pronunciation": "ku-mirra",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "ku-mirra"
           },
           {
             "target": "mwiri",
             "source": "body",
-            "pronunciation": "mwi-ri",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "mwi-ri"
           },
           {
             "target": "ihuha, pl. mahuha",
             "source": "boil",
-            "pronunciation": "i-hu-ha",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-hu-ha"
           },
           {
             "target": "kutu",
-            "source": "Ear"
+            "source": "Ear",
+            "pronunciation": "kutu"
           },
           {
             "target": "ihindi, pl. mahindi",
             "source": "bone",
-            "pronunciation": "i-hindi",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "i-hindi"
           },
           {
             "target": "nyondo",
             "source": "breast",
-            "pronunciation": "nyondo",
-            "hint": "Hildegarde Hinde (1904) — Kikuyu (Jogowini)"
+            "pronunciation": "nyondo"
           },
           {
             "target": "Guoko (Moko)",
@@ -2890,47 +2750,43 @@ export const KIKUYU_UNITS: CourseUnit[] = [
   },
   {
     "id": "kikuyu-unit-12",
-    "title": "Unit 12: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 12,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Kikuyu (Gĩkũyũ) built directly from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927).",
     "icon": "Compass",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-verbs-grammar-action-verbs-12",
         "title": "Essential Action & Motion Verbs",
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
             "target": "kwaria (-aria) / kuuga",
             "source": "Speak",
-            "pronunciation": "kwa-ria / kuu-ga",
-            "hint": "Hémery 1903 & McGregor 1904"
+            "pronunciation": "kwa-ria / kuu-ga"
           },
           {
             "target": "kũkoma (-koma)",
             "source": "Sleep",
-            "pronunciation": "ku-ko-ma",
-            "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
+            "pronunciation": "ku-ko-ma"
           },
           {
             "target": "gũthiĩ (-thiĩ)",
             "source": "Go",
-            "pronunciation": "guthii",
-            "hint": "McGregor 1904 (Dahl's Law: kū-thiĩ > gũthiĩ)"
+            "pronunciation": "guthii"
           },
           {
             "target": "kũnyua (-nyua)",
             "source": "Drink",
-            "pronunciation": "kunyua",
-            "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
+            "pronunciation": "kunyua"
           },
           {
             "target": "kũrĩa (-rĩa)",
             "source": "Eat",
-            "pronunciation": "ku-ria",
-            "hint": "Hémery 1903, McGregor 1904 & Hinde 1904"
+            "pronunciation": "ku-ria"
           },
           {
             "target": "Koeka",
@@ -3030,7 +2886,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
@@ -3154,65 +3009,58 @@ export const KIKUYU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "kikuyu-unit-13-public-domain-corpus",
-    "title": "Unit 13: Archival Monograph & Comparative Lexicon",
+    "id": "kikuyu-unit-13",
+    "unitNumber": 13,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Kikuyu (Gĩkũyũ) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-pd-corpus-13-1",
         "title": "Classical Roots & Naming Traditions",
         "icon": "Baby",
         "description": "Study verified Kikuyu (Gĩkũyũ) headwords and dialect forms extracted from primary public-domain monographs.",
-        "tips": "Every item in this skill is grounded directly in the historical Kikuyu (Gĩkũyũ) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
           {
             "target": "riika (pl. mariika)",
             "source": "Age-grade / initiation generation",
-            "pronunciation": "rii-ka",
-            "hint": "Hobley (1922, p. 308) & Routledge (1910)"
+            "pronunciation": "rii-ka"
           },
           {
             "target": "ituĩka",
             "source": "Generational transfer of governance ceremony",
-            "pronunciation": "i-tui-ka",
-            "hint": "Hobley (1922) & Routledge (1910)"
+            "pronunciation": "i-tui-ka"
           },
           {
             "target": "thahu",
             "source": "Ritual impurity / ceremonial curse",
-            "pronunciation": "tha-hu",
-            "hint": "Hobley (1922, p. 308)"
+            "pronunciation": "tha-hu"
           },
           {
             "target": "gũtahĩkia",
             "source": "To purify ceremonially from thahu",
-            "pronunciation": "gu-ta-hi-kia",
-            "hint": "Hobley (1922, p. 308)"
+            "pronunciation": "gu-ta-hi-kia"
           },
           {
             "target": "thengira",
             "source": "Unmarried men's bachelor hut / council hut",
-            "pronunciation": "thengi-ra",
-            "hint": "Hobley (1922, p. 308)"
+            "pronunciation": "thengi-ra"
           },
           {
             "target": "rũkwarũ",
             "source": "Goat-skin wrist/waist strip of ceremonial peace",
-            "pronunciation": "rukwa-ru",
-            "hint": "Hobley (1922, p. 308)"
+            "pronunciation": "rukwa-ru"
           },
           {
             "target": "rũenji / rũoro",
             "source": "Traditional razor / Cattle-branding iron knife",
-            "pronunciation": "ruenji / ruo-ro",
-            "hint": "Hobley (1922, p. 308)"
+            "pronunciation": "ruenji / ruo-ro"
           },
           {
             "target": "mũgũnda / gĩthaka",
             "source": "Cultivated garden farm / Uncultivated bushland",
-            "pronunciation": "mu-gunda / githa-ka",
-            "hint": "Wiktionary Bantu Swadesh & CGIAR Kikuyu"
+            "pronunciation": "mu-gunda / githa-ka"
           }
         ],
         "sentences": [
@@ -3276,55 +3124,46 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Homestead, Nature & Everyday Expressions",
         "icon": "Users",
         "description": "Expand your command of Kikuyu (Gĩkũyũ) ecological, kinship, and action vocabulary from the archival corpus.",
-        "tips": "Compare classical 19th- and early 20th-century Kikuyu (Gĩkũyũ) transcriptions with modern standardized orthography.",
         "words": [
           {
             "target": "gũtũma mbeca na thimũ",
             "source": "To send money via mobile phone (M-Pesa)",
-            "pronunciation": "gu-tu-ma mbe-ca na thi-mu",
-            "hint": "Anv-ke Gĩkũyũ Financial Corpus"
+            "pronunciation": "gu-tu-ma mbe-ca na thi-mu"
           },
           {
             "target": "ũrĩmi wa mĩmera na mahiũ",
             "source": "Crop farming and livestock husbandry",
-            "pronunciation": "u-ri-mi wa mi-me-ra na ma-hiu",
-            "hint": "CGIAR Kikuyu-English Translation Dataset"
+            "pronunciation": "u-ri-mi wa mi-me-ra na ma-hiu"
           },
           {
             "target": "mbeũ njega cia mbembe",
             "source": "Certified / high-yield maize seeds",
-            "pronunciation": "mbeu nje-ga cia mbembe",
-            "hint": "CGIAR & Anv-ke Agriculture Corpus"
+            "pronunciation": "mbeu nje-ga cia mbembe"
           },
           {
             "target": "thibitarĩ / nyũmba ya ũrigiti",
             "source": "Hospital / health dispensary",
-            "pronunciation": "thi-bi-ta-ri / nyumba ya u-ri-gi-ti",
-            "hint": "Anv-ke Healthcare Corpus"
+            "pronunciation": "thi-bi-ta-ri / nyumba ya u-ri-gi-ti"
           },
           {
             "target": "gwĩciria / kũmenya",
             "source": "To think / To know",
-            "pronunciation": "gwi-ci-ria / ku-menya",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+            "pronunciation": "gwi-ci-ria / ku-menya"
           },
           {
             "target": "gũtindĩka / kũgucia",
             "source": "To push / To pull",
-            "pronunciation": "gu-tindi-ka / ku-gu-cia",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+            "pronunciation": "gu-tindi-ka / ku-gu-cia"
           },
           {
             "target": "kũatũra / gũtinia",
             "source": "To split wood / To cut",
-            "pronunciation": "kua-tu-ra / gu-ti-nia",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+            "pronunciation": "kua-tu-ra / gu-ti-nia"
           },
           {
             "target": "kũnyoroka / kũrũnga",
             "source": "To be smooth / To be straight",
-            "pronunciation": "kunyo-ro-ka / ku-runga",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+            "pronunciation": "kunyo-ro-ka / ku-runga"
           }
         ],
         "sentences": [
@@ -3390,65 +3229,58 @@ export const KIKUYU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "kikuyu-unit-14-open-datasets-modern",
-    "title": "Unit 14: Core Swadesh & Everyday Community Vocabulary",
+    "id": "kikuyu-unit-14",
+    "unitNumber": 14,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Kikuyu (Gĩkũyũ) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-open-dataset-14-1",
         "title": "Core Swadesh & Cultural Vocabulary",
         "icon": "Baby",
         "description": "Learn core Kikuyu (Gĩkũyũ) verbs, nouns, and cultural terms integrated from open-web linguistic datasets.",
-        "tips": "Focus on high-frequency roots shared across Kikuyu (Gĩkũyũ) dialects and everyday speech.",
         "words": [
           {
             "target": "Ku-Tahikia",
             "source": "To purify. Ku is the infinitive prefix common to all verbs",
-            "pronunciation": "ku-tahikia",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ku-tahikia"
           },
           {
             "target": "Ruoro",
             "source": "Knife used for branding cattle",
-            "pronunciation": "ruo-ro",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ruo-ro"
           },
           {
             "target": "Ruenji",
             "source": "A razor",
-            "pronunciation": "ruenji",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ruenji"
           },
           {
             "target": "Rika",
             "source": "Generation—age grade",
-            "pronunciation": "ri-ka",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ri-ka"
           },
           {
             "target": "Njohi",
             "source": "Native beer, usually made from sugar cane",
-            "pronunciation": "njo-hi",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "njo-hi"
           },
           {
             "target": "Ngunga",
             "source": "Caterpillars",
-            "pronunciation": "ngunga",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ngunga"
           },
           {
             "target": "Ndorume",
             "source": "A ram, a favourite form of sacrifice",
-            "pronunciation": "ndo-ru-me",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ndo-ru-me"
           },
           {
             "target": "Ngoma",
             "source": "Ancestral spirit",
-            "pronunciation": "ngo-ma",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ngo-ma"
           }
         ],
         "sentences": [
@@ -3512,55 +3344,46 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "title": "Agriculture, Community & Everyday Life",
         "icon": "TreePine",
         "description": "Practice Kikuyu (Gĩkũyũ) terms for agriculture, environment, social organization, and daily communication.",
-        "tips": "Review how traditional Kikuyu (Gĩkũyũ) roots extend naturally to modern community, farming, and civic contexts.",
         "words": [
           {
             "target": "Muburi",
             "source": "Goat",
-            "pronunciation": "mu-bu-ri",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "mu-bu-ri"
           },
           {
             "target": "Murogi",
             "source": "Medicine man who deals in black magic",
-            "pronunciation": "mu-ro-gi",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "mu-ro-gi"
           },
           {
             "target": "Mugumu",
             "source": "Sacred fig tree, often called muti wa Engai",
-            "pronunciation": "mu-gu-mu",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "mu-gu-mu"
           },
           {
             "target": "Kiama",
             "source": "Council of elders",
-            "pronunciation": "kia-ma",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "kia-ma"
           },
           {
             "target": "Kita",
             "source": "The power of the evil eye",
-            "pronunciation": "ki-ta",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ki-ta"
           },
           {
             "target": "Kihe",
             "source": "An uncircumcised boy",
-            "pronunciation": "ki-he",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ki-he"
           },
           {
             "target": "Kithangaona",
             "source": "Sacred place",
-            "pronunciation": "kithangao-na",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "kithangao-na"
           },
           {
             "target": "Ichua",
             "source": "A sacrificial fire",
-            "pronunciation": "ichua",
-            "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
+            "pronunciation": "ichua"
           }
         ],
         "sentences": [
@@ -3620,50 +3443,50 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ]
       }
     ]
-  }
-  ,
+  },
   {
-    "id": "kikuyu-unit-hemery-1903-handbook",
-    "title": "Unit 13: Hémery (1903) English-Kikuyu Hand-Book — 9 Noun Classes, Kohora Paradigm, Enclitics (-le & -tya) & 5-Part Phrase-Book",
+    "id": "kikuyu-unit-15",
+    "unitNumber": 15,
+    "title": "Hémery English-Kikuyu Hand-Book — 9 Noun Classes,",
     "description": "Master the complete grammar, 3-way demonstratives, Kohora verb paradigm, 5 derived verb stems, particles (pp. 13–14), and 5-part Phrase-Book (Usual, Servants & Meals, Village Visit, Working, In Caravan) from Rev. Fr. A. Hémery's 1903 English-Kikuyu Hand-Book.",
     "icon": "BookOpen",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-hemery-1903-grammar-particles-13-1",
-        "title": "9 Noun Classes, 3-Way Demonstratives, Kohora Conjugation & Enclitics (-le & -tya)",
+        "title": "9 Noun Classes, 3-Way Demonstratives, Kohora Conjugation &",
         "icon": "Sparkles",
         "description": "Study Hémery's (1903, pp. 1–14) 9 noun classes, ka-/to- diminutives, ke- augmentatives, 3-way demonstratives, full Kohora paradigm, and enclitic particles.",
-        "tips": "In Rev. Fr. A. Hémery's English-Kikuyu Hand-Book (1903, pp. 8, 13–14), demonstratives distinguish Near (oyo, geke, rere), Distant (olya, kelya, relya), and Spoken of Beforehand (oshio, keo, reo); the enclitic -le affixed to a verb means 'when / as / if' (Ndalutara werale negokwata rupia), and -tya means 'how / what?' (Waekatya?).",
         "words": [
           {
-            "target": "Cl. VI Letwa → Maletwa, Ondo → Maondo, Taama → Mataama • Cl. VII Logito → Ngito, Loleme → Ndeme, Loara → Ndoara • Cl. VIII Kiombe → Shiombe, Kiongoyo → Shiongoyo",
-            "source": "Name, cause, cloth (Ø → ma-) • Roof, tongue, nail (l-/lo- → n-/nd-) • Person, fish (ki- → shi-)",
-            "pronunciation": "le-twa ma-le-twa / lo-gi-to ngi-to / lo-le-me nde-me / ki-o-mbe shi-o-mbe",
-            "hint": "Hémery (1903, Ch. I, Book pp. 2–3)"
+            "target": "Cl. VI Letwa → Maletwa, Ondo → Maondo, Taama → Mataama",
+            "source": "Name, cause, cloth (Ø → ma-)",
+            "pronunciation": "cl-vi-letwa-maletwa"
           },
           {
             "target": "Kangondu, Kamunyu, Kangombe • Tomae, Toirio • Kengombe, Kemunyu",
-            "source": "Small sheep, little salt, little ox (ka- dimin.) • Little water, little food (to- dimin.) • Big ox, plenty of salt (ke- augm.)",
-            "pronunciation": "ka-ngo-ndu / ka-mu-nyu / to-ma-e / to-i-ri-o / ke-ngo-mbe",
-            "hint": "Hémery (1903, Ch. I, Book pp. 3–4)"
+            "source": "Small sheep, little salt, little ox (ka- dimin.)",
+            "pronunciation": "ka-ngo-ndu / ka-mu-nyu / to-ma-e / to-i-ri-o / ke-ngo-mbe"
           },
           {
-            "target": "Mundu oyo / olya / oshio • Kendo geke / kelya / keo • Ihiga rere / relya / reo",
+            "target": "Mundu oyo / olya / oshio",
             "source": "This (near) / that (distant) / that (spoken of beforehand) man, thing, and stone",
-            "pronunciation": "o-yo o-lya o-shi-o / ge-ke ke-lya ke-o / re-re re-lya re-o",
-            "hint": "Hémery (1903, Ch. IV Art. III, Book p. 8)"
+            "pronunciation": "o-yo o-lya o-shi-o / ge-ke ke-lya ke-o / re-re re-lya re-o"
           },
           {
-            "target": "Ndahora (Neg. Ndihora) • Nderahora / Ndehorete / Ndehorile (Neg. Ndinahora) • Ndakehora • Ne ngohora (Neg. Ndikohora) • Ningehora / Ningehorile",
-            "source": "I beat (do not beat) • I beat / have beaten (did not beat) • I beat (narrative) • I shall beat (shall not beat) • I would beat / would have beaten",
-            "pronunciation": "nda-ho-ra / ndi-ho-ra / nde-ra-ho-ra / nda-ke-ho-ra / ne ngo-ho-ra / ni-nge-ho-ra",
-            "hint": "Hémery (1903, Ch. V Art. I, Book pp. 9–10)"
+            "target": "Ndahora",
+            "source": "Neg. Ndihora",
+            "pronunciation": "ndahora"
           },
           {
-            "target": "Aderere! • Ndalutara werale negokwata rupia • Waekatya? • Ne muhoro — Nde muhoro, muhoro mweg • Tiguo uhoro (pl. tigwoni uhoro)",
-            "source": "Listen to me! • If I do work I shall get Rupees (-le = if/when) • What do you do? (-tya = how?) • Good day — I am well • Good-bye (sg. / pl.)",
-            "pronunciation": "a-de-re-re / nda-lu-ta-ra we-ra-le / wa-e-ka-tya / ne mu-ho-ro / ti-gu-o u-ho-ro",
-            "hint": "Hémery (1903, Book pp. 13–14)"
+            "target": "Ne ngohora",
+            "source": "Neg. Ndikohora",
+            "pronunciation": "ne-ngohora"
+          },
+          {
+            "target": "Tiguo uhoro",
+            "source": "pl. tigwoni uhoro",
+            "pronunciation": "tiguo-uhoro"
           }
         ],
         "sentences": [
@@ -3678,18 +3501,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "authoredExercises": [
           {
-            "type": "multiple_choice",
-            "prompt": "In Rev. Fr. A. Hémery's English-Kikuyu Hand-Book (1903, Book p. 13), what does the enclitic suffix '-le' attached to a verb (as in 'Ndalutara werale negokwata rupia') express?",
-            "correctAnswer": "'When, as, if' (conditional/temporal clause marker)",
-            "options": [
-              "'When, as, if' (conditional/temporal clause marker)",
-              "Negative imperative prefix",
-              "Augmentative noun class prefix",
-              "Passive voice suffix"
-            ],
-            "hint": "See Hémery (1903, Book p. 13: '-le, affixed to the verb, is equivalent to our when, as, if')"
-          },
-          {
             "type": "match_pairs",
             "prompt": "Match each Kikuyu demonstrative or particle from Hémery (1903, Book pp. 8, 13–14) with its meaning:",
             "correctAnswer": "Mundu oshio / Kendo keo / Ihiga reo: That man / thing / stone spoken of beforehand",
@@ -3703,10 +3514,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "Listen, listen to me! (call for attention before talking)"
               },
               {
-                "left": "Rochio / Oke / Ira / Iyo",
-                "right": "To-morrow / Day after to-morrow / Yesterday / Day before yesterday"
-              },
-              {
                 "left": "Tiguo uhoro (pl. tigwoni uhoro)",
                 "right": "Good-bye, farewell (sg. & pl.)"
               }
@@ -3716,40 +3523,34 @@ export const KIKUYU_UNITS: CourseUnit[] = [
       },
       {
         "id": "kikuyu-hemery-1903-phrasebook-13-2",
-        "title": "Phrase-Book Sections I–V: Village Visit, Household, Agriculture & Caravan Dialogues",
+        "title": "Phrase-Book Sections I",
         "icon": "MessageCircle",
         "description": "Practice authentic 1903 Kikuyu dialogues from Hémery's 5-part Phrase-Book (Book pp. 77–87): Usual, Servants & Meals, A Visit to a Village, Working, and In Caravan.",
-        "tips": "Hémery's Phrase-Book (1903, pp. 77–87) records everyday 1902–1903 Nairobi/Kiambu Kikuyu conversations on village life, staple crops (ngwadje, mbosho, mohea, mbembe), honey/sugar-cane brewing (djohi na oke kana na igwa), medical care, and 500-porter caravan logistics.",
         "words": [
           {
             "target": "Waetagwa-tya? • We moona-ko? • We huma-ko? • Wasie-ko?",
-            "source": "What is your name? • What tribe do you belong to? • Where do you come from? • Where are you going?",
-            "pronunciation": "wa-e-ta-gwa-tya / we moo-na-ko / we hu-ma-ko / wa-si-e-ko",
-            "hint": "Hémery (1903, Phrase-Book I, Book p. 78)"
+            "source": "What is your name?",
+            "pronunciation": "wa-e-ta-gwa-tya / we moo-na-ko / we hu-ma-ko / wa-si-e-ko"
           },
           {
-            "target": "Okolya saa shiigana? — Ta saa kumi na igere, rochine (6 a.m.) • Irio lya mosenya, lya saa inya (10 a.m.)",
-            "source": "When have you your meals? — About 6 a.m. • Breakfast is at 10 a.m. (Swahili-style 12-hour daylight clock)",
-            "pronunciation": "o-ko-lya saa shi-i-ga-na / ta saa ku-mi na i-ge-re ro-chi-ne",
-            "hint": "Hémery (1903, Phrase-Book II, Book p. 79)"
+            "target": "Okolya saa shiigana?",
+            "source": "When have you your meals? — About 6 a.m.",
+            "pronunciation": "o-ko-lya saa shi-i-ga-na / ta saa ku-mi na i-ge-re ro-chi-ne"
           },
           {
-            "target": "Kozondeka-tya ucholo? • Kozondeka-tya djohi eno? Na oke, kana na igwa?",
-            "source": "How do you prepare the gruel? • How do you make this liquor? With honey or sugar-cane?",
-            "pronunciation": "ko-zo-nde-ka-tya u-cho-lo / djo-hi e-no / na o-ke ka-na na i-gwa",
-            "hint": "Hémery (1903, Phrase-Book III, Book p. 81)"
+            "target": "Kozondeka-tya ucholo?",
+            "source": "How do you prepare the gruel?",
+            "pronunciation": "kozondeka-tya-ucholo"
           },
           {
-            "target": "Ndena kehuti • Ndaharwo / Ndaharwo katema • Wasisina-le? ne ogohona • Guoko kwakwa ne ekonekete",
-            "source": "I have fever • I have diarrhœa / dysentery • If you perspire, you will feel better • My arm is broken",
-            "pronunciation": "nde-na ke-hu-ti / nda-ha-rwo ka-te-ma / wa-si-si-na-le ne o-go-ho-na",
-            "hint": "Hémery (1903, Phrase-Book III, Book p. 82)"
+            "target": "Ndena kehuti",
+            "source": "I have fever",
+            "pronunciation": "ndena-kehuti"
           },
           {
-            "target": "Akui magana atano • Mnyampara mwega • Huha choro! • Keraro kya mbele • Twahota koringa na magoro?",
-            "source": "Five hundred porters • A good headman • Beat the drum/horn! • The first camp • Can we wade across on foot?",
-            "pronunciation": "a-ku-i ma-ga-na a-ta-no / m-nya-mpa-ra mwe-ga / hu-ha cho-ro / ke-ra-ro",
-            "hint": "Hémery (1903, Phrase-Book V, Book pp. 84–85)"
+            "target": "Akui magana atano",
+            "source": "Five hundred porters",
+            "pronunciation": "akui-magana-atano"
           }
         ],
         "sentences": [
@@ -3759,18 +3560,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Hémery's Phrase-Book III ('A Visit to a Village', 1903, Book p. 81), what two ingredients are asked about in 'Kozondeka-tya djohi eno? Na oke, kana na igwa?' for brewing traditional Kikuyu liquor (djohi)?",
-            "correctAnswer": "Honey (oke) or sugar-cane (igwa)",
-            "options": [
-              "Honey (oke) or sugar-cane (igwa)",
-              "Sweet potatoes (nguadje) or yams (ikwa)",
-              "Beans (mbosho) or rice (mchele)",
-              "Castor-oil (mbariki) or ghee (maguta)"
-            ],
-            "hint": "oke = honey; igwa = sugar-cane (Hémery 1903, Book p. 81)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each conversational Kikuyu sentence from Hémery's Phrase-Book (1903, pp. 78–85) with its English meaning:",
@@ -3797,50 +3586,45 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ]
       }
     ]
-  }
-  ,
+  },
   {
-    "id": "kikuyu-unit-mcgregor-1904-vocabulary",
-    "title": "Unit 14: McGregor (1904) English-Kikuyu Vocabulary (Fort Smith / Kabeti, 1901–1902) — Orthography, Kinship, 7-Day Sequence, Seasons & Customary Law",
+    "id": "kikuyu-unit-16",
+    "unitNumber": 16,
+    "title": "McGregor English-Kikuyu Vocabulary — Orthography,",
     "description": "Master the Kabeti (Fort Smith) orthography (th for s/z, ng' vs. ng'g), plural bracket conventions, suppletive kinship, 7-day time sequence, agricultural seasons (Kathano, Kehu, Njahi, Mweri, Mohea), customary law (Chira, Magambo, Muma, Oramati), and conversational idioms from Rev. A. W. McGregor's 1904 English-Kikuyu Vocabulary.",
     "icon": "BookOpen",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-mcgregor-1904-orthography-kinship-time-14-1",
-        "title": "Kabeti Orthography (Th, Ng' vs. Ng'g), Suppletive Kinship, 7-Day Sequence & Seasons",
+        "title": "Kabeti Orthography (Th, Ng' vs. Ng'g), Suppletive Kinship, 7-Day",
         "icon": "Sparkles",
         "description": "Study McGregor's (1904, pp. iii–iv, 5–192) Fort Smith (Kabeti) phonological rules, plural bracket system, kinship possessives, 7-day sequence, and seasonal calendar.",
-        "tips": "In Fort Smith / Kabeti (McGregor 1904, p. 5), S and Z are replaced by Th; ng' (as in koteng'era) is pronounced koteng-era (velar nasal), whereas ng'g (as in kuing'gata) sounds both the velar nasal and hard g.",
         "words": [
           {
-            "target": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) • Mwetereri (Etereri) • Gechunji (I-) → Ichunji",
-            "source": "To run/abscond (koteng-era) vs. to banish/conquer & ball • Servant (pl. Etereri) • Portion (pl. Ichunji)",
-            "pronunciation": "ko-teng-e-ra / ku-ing-ga-ta / mw-e-te-re-ri e-te-re-ri / ge-chu-nji i-chu-nji",
-            "hint": "McGregor (1904, Note & Observe A–B, Book pp. 5–6)"
+            "target": "Mwetereri",
+            "source": "Etereri",
+            "pronunciation": "mwetereri"
           },
           {
-            "target": "Baba / Thoguo / Ithi (pl. Maithi) • Maito / Nyukwa / Nyina (pl. Manyina) • Rorachio (Marorachio) & Wathiomo",
-            "source": "My / your / his-her father (pl. fathers) • My / your / his-her mother (pl. mothers) • Bride-wealth gift to bride's father & gift of a goat",
-            "pronunciation": "ba-ba tho-gu-o i-thi ma-i-thi / ma-i-to nyu-kwa nyi-na ma-nyi-na / ro-ra-chi-o / wa-thi-o-mo",
-            "hint": "McGregor (1904, Book pp. 63, 73, 114, 122, 137)"
+            "target": "Baba / Thoguo / Ithi (pl. Maithi)",
+            "source": "My / your / his-her father (pl. fathers)",
+            "pronunciation": "baba"
           },
           {
             "target": "Iyo → Ira → Reu / Omothi → Rochio → Oke → Matukwatatu → Matukwana",
-            "source": "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 2 days after to-morrow → 3 days after to-morrow",
-            "pronunciation": "i-yo / i-ra / re-u o-mo-thi / ro-chi-o / o-ke / ma-tu-kwa-ta-tu / ma-tu-kwa-na",
-            "hint": "McGregor (1904, Book pp. 44, 114, 170, 191–192)"
+            "source": "Day before yesterday → Yesterday → To-day → To-morrow → Day after to-morrow → 2 days",
+            "pronunciation": "iyo-ira-reu"
           },
           {
-            "target": "Kathano (Mwaka wa heho) & Mwaka wa kehu • Mwaka wa Njahi, Mweri, Mohea",
-            "source": "Greater rainy season (winter) & lesser rainy season • Agricultural seasons of Lablab beans (Njahi), bulrush millet (Mweri), and sorghum (Mohea)",
-            "pronunciation": "ka-tha-no / mwa-ka wa ke-hu / mwa-ka wa nja-hi mwe-ri mo-he-a",
-            "hint": "McGregor (1904, Book pp. 142, 154, 188, 191)"
+            "target": "Kathano (Mwaka wa heho) & Mwaka wa kehu",
+            "source": "Greater rainy season (winter) & lesser rainy season",
+            "pronunciation": "kathano-mwaka-wa-kehu"
           },
           {
-            "target": "Kilinyatha / Kireira / Kirinyaga • Kabeti (Fort Smith) • Itherero / Ithereru & Naruguru / Gothoa",
-            "source": "Mount Kenia (4,000–18,000 ft) • Kabeti (Fort Smith) • East/South/Coast & West",
-            "pronunciation": "ki-li-nya-tha / ki-rei-ra / ki-ri-nya-ga / ka-be-ti / i-the-re-ro / na-ru-gu-ru",
-            "hint": "McGregor (1904, Preface pp. iii–iv & Book pp. 34, 54, 95, 160, 186)"
+            "target": "Kabeti",
+            "source": "Fort Smith",
+            "pronunciation": "kabeti"
           }
         ],
         "sentences": [
@@ -3855,18 +3639,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         ],
         "authoredExercises": [
           {
-            "type": "multiple_choice",
-            "prompt": "In Rev. A. W. McGregor's English-Kikuyu Vocabulary (1904, Book p. 5), how does the Fort Smith (Kabeti) orthography distinguish 'koteng'era' (to run/abscond) from 'kuing'gata' (to banish/conquer/drive away)?",
-            "correctAnswer": "'ng'' (with a point after ng) represents the pure velar nasal (pronounced koteng-era, not koten-gera), whereas 'ng'g' represents both the velar nasal and the hard g sound",
-            "options": [
-              "'ng'' (with a point after ng) represents the pure velar nasal (pronounced koteng-era, not koten-gera), whereas 'ng'g' represents both the velar nasal and the hard g sound",
-              "'ng'' is a glottal stop, whereas 'ng'g' is a labial-velar click",
-              "'ng'' only occurs in borrowed Swahili words, whereas 'ng'g' only occurs in numerals",
-              "Both are pronounced identically as 'nj'"
-            ],
-            "hint": "See McGregor (1904, Note p. 5: 'koteng'era, with a point after ng. This must be pronounced koteng-era, not koten-gera. Some words have both the nasal ng and the g hard sound, as kuing'gata')"
-          },
-          {
             "type": "match_pairs",
             "prompt": "Match each Kikuyu seasonal or temporal term from McGregor (1904, pp. 114, 142, 154, 191) with its English meaning:",
             "correctAnswer": "Kathano vs. Mwaka wa kehu: Greater rainy season (winter) vs. lesser rainy season (p. 142)",
@@ -3874,14 +3646,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               {
                 "left": "Kathano vs. Mwaka wa kehu",
                 "right": "Greater rainy season (winter) vs. lesser rainy season (p. 142)"
-              },
-              {
-                "left": "Mwaka wa Njahi, Mweri, Mohea",
-                "right": "Crop-year seasons of lablab beans, bulrush millet & sorghum (pp. 154, 191)"
-              },
-              {
-                "left": "Rochio → Oke → Matukwatatu → Matukwana",
-                "right": "To-morrow → Day after to-morrow → 2 & 3 days after to-morrow (p. 114)"
               },
               {
                 "left": "Kilinyatha / Kireira / Kirinyaga",
@@ -3893,40 +3657,44 @@ export const KIKUYU_UNITS: CourseUnit[] = [
       },
       {
         "id": "kikuyu-mcgregor-1904-law-religion-idioms-14-2",
-        "title": "Customary Law (Chira, Magambo, Muma, Oramati), Ethnomedicine & Conversational Idioms",
+        "title": "Customary Law (Chira, Magambo, Muma, Oramati), Ethnomedicine &",
         "icon": "MessageCircle",
         "description": "Learn McGregor's (1904, pp. 6–192) terminology for Kikuyu courts, murder composition, ordeal oaths, peacemaking, ritual, and everyday questions.",
-        "tips": "Notice how McGregor (1904) records judicial and ritual institutions: Chira (council/law), Magambo (composition for murder, p. 36), Konyua muma (taking the ordeal cup/oath, pp. 120, 124), Oramati (inheritance/birthright, pp. 23, 90), and Kotaithorana (to make peace / reconcile, p. 130).",
         "words": [
           {
-            "target": "Chira (Ma-) • Muchiri (A-) • Muchirithia (A-) vs. Muchirithio (A-) • Magambo / Mugambo (Mi-) • Konyua muma",
-            "source": "Council/law/decision • Judge/arbitrator/orator • Plaintiff/prosecutor vs. Defendant • Composition/fine for murder • To take an oath (ordeal cup)",
-            "pronunciation": "chi-ra / mu-chi-ri / mu-chi-ri-thi-a / ma-ga-mbo / ko-nyu-a mu-ma",
-            "hint": "McGregor (1904, Book pp. 10, 36, 45, 66, 94, 120, 124, 133, 139)"
+            "target": "Chira",
+            "source": "Ma-",
+            "pronunciation": "chira"
           },
           {
-            "target": "Muramati (A-) & Oramati • Mutaithorani (A-) / Mugwithania (A-) & Kotaithorana • Mukori (Akori) & Okori",
-            "source": "Heir/inheritor & birthright/inheritance • Peacemaker/mediator/advocate & to make peace • Redeemer/ransomer & redemption/ransom",
-            "pronunciation": "mu-ra-ma-ti o-ra-ma-ti / mu-ta-i-tho-ra-ni / ko-ta-i-tho-ra-na / mu-ko-ri o-ko-ri",
-            "hint": "McGregor (1904, Book pp. 11, 23, 36, 81–82, 90, 109, 130, 142, 146)"
+            "target": "Muchiri",
+            "source": "A-",
+            "pronunciation": "muchiri"
           },
           {
-            "target": "Ngai (Makai) & Ngai angienda • Kegongaini (I-) & Igongona (Magongona) • Thahu / Mugiru (Migiri) • Nyoni njega vs. Nyoni njoru",
-            "source": "God & 'If God wills (D.V.)' • Altar & sacrifice/offering • Ceremonial pollution/taboo • Good omen vs. bad omen/mischance",
-            "pronunciation": "nga-i a-ngi-e-nda / ke-go-nga-i-ni / i-go-ngo-na / tha-hu mu-gi-ru / ny-o-ni nje-ga njo-ru",
-            "hint": "McGregor (1904, Book pp. 14, 75, 88, 112, 122–123, 138, 157, 181)"
+            "target": "Muramati (A-) & Oramati",
+            "source": "Heir/inheritor & birthright/inheritance",
+            "pronunciation": "muramati-oramati"
           },
           {
-            "target": "Mundu mugo (A-) & Kahiyu ka mundu mugo (To-) • Muthaiga wa ndaa / hinguranda & Muthaiga wa koharithia • Murututu",
-            "source": "Doctor/medicine-man & lancet • Emetic medicine & purgative medicine • Sulphate of copper (vitriol)",
-            "pronunciation": "mu-ndu mu-go / mu-tha-i-ga wa hi-ngu-ra-nda / mu-ru-tu-tu",
-            "hint": "McGregor (1904, Book pp. 50, 56, 97, 109, 132, 139, 164, 181)"
+            "target": "Ngai (Makai) & Ngai angienda",
+            "source": "God & 'If God wills (D.V.)'",
+            "pronunciation": "ngai-ngai-angienda"
           },
           {
-            "target": "Thingira (Ma-) • Itara (Ma-) & Ikombi (Ma-) • Mungu (Miungu) • Kewochi kya ngorono (Iwochi) / Katete",
-            "source": "Man's hut • Granary/garner/loft/store • Refuge pit of men • Butter churn",
-            "pronunciation": "thi-ngi-ra / i-ta-ra i-ko-mbi / mu-ngu / ke-wo-chi kya ngo-ro-no",
-            "hint": "McGregor (1904, Book pp. 33, 72, 84–85, 103, 146, 162, 183)"
+            "target": "Mundu mugo (A-) & Kahiyu ka mundu mugo (To-)",
+            "source": "Doctor/medicine-man & lancet",
+            "pronunciation": "mu-ndu mu-go / mu-tha-i-ga wa hi-ngu-ra-nda / mu-ru-tu-tu"
+          },
+          {
+            "target": "Thingira",
+            "source": "Ma-",
+            "pronunciation": "thingira"
+          },
+          {
+            "target": "Mungu",
+            "source": "Miungu",
+            "pronunciation": "mungu"
           }
         ],
         "sentences": [
@@ -3936,18 +3704,6 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Rev. A. W. McGregor's English-Kikuyu Vocabulary (1904, Book pp. 36, 66, 120, 124), which two legal terms denote (1) the composition/fine paid for murder and (2) taking the solemn ordeal cup / oath?",
-            "correctAnswer": "'Magambo / Mugambo (Mi-)' (composition/fine for murder) and 'Konyua muma' (to take the ordeal cup / oath)",
-            "options": [
-              "'Magambo / Mugambo (Mi-)' (composition/fine for murder) and 'Konyua muma' (to take the ordeal cup / oath)",
-              "'Rorachio' (bride-wealth) and 'Wathiomo' (gift of a goat)",
-              "'Itara' (granary) and 'Thingira' (man's hut)",
-              "'Kathano' (greater rains) and 'Kehu' (lesser rains)"
-            ],
-            "hint": "See McGregor (1904, p. 36 'Composition [for murder]: Magambo', p. 66 'Fine [for murder]: Mugambo [Mi-]', pp. 120, 124 'Oath, to take an [take ordeal cup]: Konyua muma')"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Kikuyu institutional or architectural term from McGregor (1904) with its meaning:",
@@ -3972,51 +3728,87 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "kikuyu-mcgregor-1904-provenance-grammar-editorial-14-3",
+        "title": "Stanford Provenance, 10 Noun Classes, Pronouns/Enclitics & 1904",
+        "icon": "BookOpen",
+        "description": "Examine the physical provenance of the Stanford University Libraries copy (PL 8379.4 .M3 C.1), the 10 noun class prefix pairings, pronominal/interrogative enclitics, and the 3 printing gaps & 9 errata of the 1904 SPCK edition.",
+        "culturalNote": "Compiled by Rev. A. W. McGregor at Fort Smith (native name Kabeti) in 1901–1902 (Preface signed London, May 1903), this 192-page volume is the first printed vocabulary of the Kikuyu language, documenting the speech of 200,000–300,000 Agĩkũyũ from the Uganda Railway (miles 326–360) to Mount Kenia (Kirinyaga / Kilinyatha / Kireira, 4,000–18,000 ft).",
+        "words": [
+          {
+            "target": "Fort Smith",
+            "source": "Kabeti, 1901–1902",
+            "pronunciation": "fort-smith"
+          },
+          {
+            "target": "Uganda Railway",
+            "source": "miles 326–360",
+            "pronunciation": "uganda-railway"
+          },
+          {
+            "target": "Nie / Nie mweni / Nie nyiki",
+            "source": "Personal, Reflexive & Exclusive ('Only we') Pronouns and Possessive Home Locatives",
+            "pronunciation": "nie"
+          },
+          {
+            "target": "No? Niweo?",
+            "source": "Who? Who are you?",
+            "pronunciation": "no-niweo"
+          },
+          {
+            "target": "Aze [Axe] = Ithanwa (Ma-) (p. 18)",
+            "source": "Key Original 1904 Printer's Errata & Ditto-Mark Shifts Audited Line-by-Line Across",
+            "pronunciation": "aze-ithanwa"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Niweo? — Nie nyiki (Nie mweni). — Meha? — Goro uriko?",
+            "source": "Who are you? — I alone (I myself). — Where are they? — What price (worth)? (McGregor 1904, Book pp. 14, 186–190)"
+          }
+        ]
       }
     ]
   },
   {
-    "id": "kikuyu-unit-routledge-1910-ethnography",
-    "title": "Unit 15: Routledge (1910) 'With a Prehistoric People: The Akikúyu of British East Africa' — 10 Ages, 17 Initiation Years, 13 Clans, Metallurgy, 30-Item Market List, Ki-shan'-di Rattles, 12 Dances, 9 Trials, 29 Thá-hu Causes & 13 Folktales",
+    "id": "kikuyu-unit-17",
+    "unitNumber": 17,
+    "title": "Routledge 'With a Prehistoric People: The Akikúyu of",
     "description": "Master the historical, technical, legal, musical, ritual, and narrative vocabulary recorded by W. Scoresby & Katherine Routledge across Fort Hall and Nyeri (1902–1910, pp. i–xxxii, 1–392, Plates I–CXXXVI).",
     "icon": "BookOpen",
+    "color": "#10B981",
     "skills": [
       {
         "id": "kikuyu-routledge-1910-history-clans-crafts-15-1",
-        "title": "10 Ages, 17 Initiation Years (1891–1907), 13 Clans, Metallurgy, 6-Step Chain-Making & Wa-wer'-u Market",
+        "title": "10 Ages, 17 Initiation Years, 13 Clans, Metallurgy, 6-Step",
         "icon": "Sparkles",
         "description": "Study the 10 generation ages, 17 annual initiation cohorts, 13 i-ri-ka clans, 17 age-stage terms, iron smelting, cold wire-drawing, 6-step chain-making, 2-stage pottery, and 30-item Wa-wer'-u market price list in Routledge (1910, pp. 1–115).",
-        "tips": "In Routledge (1910, pp. 92–97), the 7-hole wire-drawing plate is called 'ú-ta' (same word as a bow, sized with needle 'mu-ku'-ha'), while the 3-piece clamp 'rú-ga' consists of the split bar 'ró-ga', wedge chisel 'ke-rá-si', and collar 'n'gó-me'.",
         "words": [
           {
-            "target": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
-            "source": "The 10 Ages Since the Creation of the World (from first man Mam'-ba & son N'jí-ri to rising generation Mu-i-run'-gu)",
-            "pronunciation": "man-ji-ri / mam-ba / n-ji-ri / man-do-ti / chi-e-ra / ma-tha-thi / n-de-mi / i-re-gi / ma-i-na / mwan-gi / mu-i-run-gu",
-            "hint": "Routledge (1910, Introduction p. 9)"
+            "target": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí →",
+            "source": "The 10 Ages Since the Creation of the World",
+            "pronunciation": "man-jí-ri-man-dó-ti-chi-éra-masaí"
           },
           {
-            "target": "1891 Ngan'do • 1892 Ngi'-ge • 1893 Nyon'go • 1894 Mutung'o • 1898 Nu'-thi • 1899 Ki-en-je'ku • 1901 Hit'-ti • 1903 Mo-chi'-ri • 1907 Ka-ban'go",
-            "source": "Key annual circumcision cohorts among the 17 named years (1891–1907: locusts, cattle plague, smallpox, jigger flea, septic wound, hyena, judge, 'year on the back')",
-            "pronunciation": "ngan-do / ngi-ge / nyon-go / mu-tung-o / nu-thi / ki-en-je-ku / hit-ti / mo-chi-ri / ka-ban-go",
-            "hint": "Routledge (1910, Introduction pp. 10–11)"
+            "target": "1891 Ngan'do",
+            "source": "Key annual circumcision cohorts among the 17 named years",
+            "pronunciation": "1891-ngan'do"
           },
           {
-            "target": "A'si (A-ki-e-ki / N'dor-ó-bo) & A-gum'-ba (A-mai-tho ma chi-a-na) • 13 i-ri-ka clans & ki-rú-me curse • 10 male & 7 female age terms",
-            "source": "Forest elephant hunters (30-goat clearing sale) & 4 ft 6 in. obsidian pit-dwellers • 13 exogamous clans & dying father's curse • Life stages from Ka'-he/Ka-re'-go to M'zur'-i a bou'i/I-he'-ti",
-            "pronunciation": "a-si a-ki-e-ki / a-gum-ba / i-ri-ka / ki-ru-me / ka-he / m-zur-i a bou-i / i-he-ti",
-            "hint": "Routledge (1910, pp. 3–6, 20–25, 138–141)"
+            "target": "A'si (A-ki-e-ki / N'dor-ó-bo) & A-gum'-ba (A-mai-tho ma chi-a-na)",
+            "source": "Forest elephant hunters (30-goat clearing sale) & 4 ft 6 in. obsidian pit-dwellers",
+            "pronunciation": "a'si-a-gum'-ba"
           },
           {
-            "target": "mu-san'-ga • i-li'-ma • mu'-ra (mi-kum-ba'-ti, mer-u'-ki, ger'-u-a) • ki-ka'-ma & i-gan'-ga • mu-hi'-ga & ke-li'-ha • ú-ta & rú-ga (ró-ga, ke-rá-si, n'gó-me) • ga-zi'-ka → ki-len-ge'-ri / mu-i-nor'-o",
-            "source": "Washed magnetite ore • Pit crucible • Twin bellows (mouth-slips, wood nozzle, clay tuyère) • 2-lb iron bloom & slag • 50-lb granite anvil & 2.5-lb rotated bar hammer • 7-hole draw-plate & 3-piece clamp • Loose links → 6-step chain",
-            "pronunciation": "mu-san-ga / i-li-ma / mu-ra / ki-ka-ma / mu-hi-ga / ke-li-ha / u-ta / ru-ga / ga-zi-ka / ki-len-ge-ri",
-            "hint": "Routledge (1910, Part I Ch. IV & Appendix IV, pp. 79–97, 353–356)"
+            "target": "mu-san'-ga",
+            "source": "Washed magnetite ore",
+            "pronunciation": "mu-san'-ga"
           },
           {
-            "target": "li-um'-ba (ki-ta-ru'-ru, nen-gu-hu'-ha) + m'bi-u / n'daka = 6-lb mun'-du-a • ku-i'-nya ki-shan'-di (47 & 38 symbols) • Ku-lan-gí-ri, Dú-mo, Mu-goí-i-o, Ku-lu-mí-si-a",
-            "source": "Winnowed granite sand + marsh clay = 6-lb clay bar (2-stage pottery) • Boy's pictographic gourd-rattle tour (Rattles I & II) • Transcribed songs by Dr. C. S. Myers",
-            "pronunciation": "li-um-ba / ki-ta-ru-ru / nen-gu-hu-ha / mun-du-a / ku-i-nya ki-shan-di / ku-lan-gi-ri / mu-goi-i-o",
-            "hint": "Routledge (1910, Part I Chs. V–VI, pp. 97–115)"
+            "target": "ku-i'-nya ki-shan'-di",
+            "source": "47 & 38 symbols",
+            "pronunciation": "ku-i'-nya-ki-shan'-di"
           }
         ],
         "sentences": [
@@ -4024,246 +3816,410 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "target": "Ku-nor'-a → Ku-ta-nu'-ka → Ku-o-go'-sa (from Mu-gi'-o, Mon-du'-e, Mu-ke'-o, Mu-lin'-da n'gu-ru'-e & Mu-gu'-mu).",
             "source": "Peel bark → Chew bark → Roll twine on the thigh (3-step string-making from 5 fibrous barks, Routledge 1910, pp. 77–79)."
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In W. Scoresby & Katherine Routledge's 'With a Prehistoric People: The Akikúyu of British East Africa' (1910, p. 9), what is the exact sequence of the 10 Ages Since the Creation of the World?",
-            "correctAnswer": "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
-            "options": [
-              "Man-jí-ri (Mam'-ba & N'jí-ri) → Man-dó-ti → Chi-éra → Masaí → Ma-thá-thi → N'dé-mi → I-ré-gi → Ma-í-na → Mwan'gi → Mu-i-run'-gu",
-              "Ngan'do → Ngi'-ge → Nyon'go → Mutung'o → Thungu'-ya → Ka-gi'-cha → Ki-angwa'chi → Nu'-thi → Ka-ban'go",
-              "Ka'-he → Ki'-he → Mu'-mo → M'wa-na'-ke → Wa-ka-ny-u-ku → Mun'-du mu-ge'-ma → Ka-ra-bai' → M'zur'-i",
-              "Mo-ran'-ja → N'dun'-du → Ke-thi-ga → Ki-á-ma → N'já-ma"
-            ],
-            "hint": "See Routledge (1910, Introduction p. 9)"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Kikuyu metallurgical or craft term from Routledge (1910, pp. 79–102, 367–379) with its exact function:",
-            "correctAnswer": "ú-ta (sized with needle mu-ku'-ha): 7-hole spindle-shaped iron wire-drawing plate (pp. 92–93)",
-            "pairs": [
-              {
-                "left": "ú-ta (sized with needle mu-ku'-ha)",
-                "right": "7-hole spindle-shaped iron wire-drawing plate (pp. 92–93)"
-              },
-              {
-                "left": "rú-ga (= ró-ga + ke-rá-si + n'gó-me)",
-                "right": "3-piece wire-drawer's clamp tightened with wooden mallet ju-gu'-ma (p. 93)"
-              },
-              {
-                "left": "i-li'-ma, mu'-ra & ki-ka'-ma",
-                "right": "Clay-lined smelting pit crucible, twin bellows & 2-lb steely wrought-iron bloom (pp. 82–86)"
-              },
-              {
-                "left": "li-um'-ba + m'bi-u / n'daka = mun'-du-a",
-                "right": "Winnowed granite sand + marsh clay kneaded into 6-lb pottery bars (pp. 98–99)"
-              }
-            ]
-          }
         ]
       },
       {
         "id": "kikuyu-routledge-1910-law-religion-folklore-15-2",
-        "title": "Second Birth, 12 Dances, Ki-á-ma & N'já-ma Governance, 9 Trials, N'gaí Sacrifice, 29 Thá-hu Causes, 14-Hole Ki-tha-si & 13 Folktales",
+        "title": "Second Birth, 12 Dances, Ki-á-ma & N'já-ma Governance, 9 Trials,",
         "icon": "MessageCircle",
         "description": "Master the social rites, 12 classified dances, 3 elder grades, 9 dated court trials, 6 Mu-ma ordeals, N'gaí sacrifice, Ai-twi'-ka snake worship, Mun'-du Mu-gu divination, 29 Thá-hu causes, 14-hole Ki-tha-si stone, and 13 Ro-gá-nu folktales in Routledge (1910, pp. 117–333).",
-        "tips": "In Routledge (1910, pp. 198–208), the first elder grade is called Mo-ran'-ja in Mungé's district, N'dun'-du in Karúri's district, and Ke-thi-ga in Southern Kikúyu; the second grade is Ki-á-ma; and the co-optive inner executive circle is N'já-ma.",
         "words": [
           {
-            "target": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i • Mam-bú-ra, Ku-to-ni-a, Ku-en'-ja & ki-kan'-da • I-he'-ti & Ki-á-ma flexed burial",
-            "source": "Rite of Second Birth ('to be born again / born of a goat') • Initiation dances, ear-wood ceremony, 4th-day shaving & lodge • Privileged hillside burial for elders & toothless old women",
-            "pronunciation": "ko-chi-a-ru-o ke-ri / mam-bu-ra / ku-to-ni-a / ku-en-ja / ki-kan-da / i-he-ti",
-            "hint": "Routledge (1910, Part II Chs. III–V, pp. 151–173)"
+            "target": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i",
+            "source": "Rite of Second Birth",
+            "pronunciation": "ko-chi-a-rú-o-ke'-ri"
           },
           {
-            "target": "Ke-boí-i-a, N'goi-í-sa, Mam-bú-ra (boys) • N'dor-ó-si, Ki-bá-ta, N'di'-ri & Maize-Sheath Clay Image Dance (men) • Mui-goí-o, Ke-chú-ki-a, Ke-o-na-no, Ku-i-ne-né-ra (mixed) • Ge-ti-ro, N'dú-mo (women)",
-            "source": "All 12 classified dances across 4 categories + the Gúra River harvest dance before the 9-in. clay image ('the little one')",
-            "pronunciation": "ke-boi-i-a / n-goi-i-sa / ki-ba-ta / mui-goi-o / ke-chu-ki-a / ku-i-ne-ne-ra / ge-ti-ro / n-du-mo",
-            "hint": "Routledge (1910, Part II Ch. VI, pp. 178–191)"
+            "target": "Ke-boí-i-a, N'goi-í-sa, Mam-bú-ra (boys)",
+            "source": "All 12 classified dances across 4 categories + the Gúra River harvest dance before",
+            "pronunciation": "ke-boí-i-a"
           },
           {
-            "target": "Mo-ran'-ja / N'dun'-du / Ke-thi-ga → Ki-á-ma (Ma-tu'-ra n'gu'-ru; Mu-ti'-gi, Mu-nder-en'-du, Mu-ta'-zi) → N'já-ma (n'der'-i feather; n'gi-ri'-a beetle) • 9 Trials & 6 Mu-ma Ordeals",
-            "source": "Three official elder grades, ceremonial leaf-bunch & 3 staff woods, eagle feather & eloquence beetle • 9 dated trials (Dec. 1907–Jan. 1908) & 6 ordeal forms",
-            "pronunciation": "mo-ran-ja / n-dun-du / ki-a-ma / ma-tu-ra n-gu-ru / n-ja-ma / n-gi-ri-a / mu-ma",
-            "hint": "Routledge (1910, Part II Chs. VII–VIII, pp. 195–221)"
+            "target": "Mo-ran'-ja / N'dun'-du / Ke-thi-ga → Ki-á-ma → N'já-ma",
+            "source": "Three official elder grades, ceremonial leaf-bunch & 3 staff woods, eagle feather &",
+            "pronunciation": "mo-ran'-ja"
           },
           {
-            "target": "N'gaí / Mwi-nin-ya-ga (8-shrub Mu-gú-mu sacrifice; 'N'ga-na! Sa-i!') • Ai-twi'-ka & N'da-ma-thi-a • N'gor'-o vs. N'gó-ma (Mi-i-ri-ni-ya Mi-kon-go-i)",
-            "source": "Supreme Creator ('Possessor of Whiteness'), 8-shrub fig-tree sacrifice & responses • Snake worship on the Ma-thi-oy-a • Living soul vs. ancestral spirit in the underworld",
-            "pronunciation": "n-gai / mwi-nin-ya-ga / mu-gu-mu / n-ga-na / sa-i / ai-twi-ka / n-da-ma-thi-a / n-gor-o / n-go-ma",
-            "hint": "Routledge (1910, Part III Chs. I–II, pp. 225–248)"
+            "target": "N'gaí / Mwi-nin-ya-ga",
+            "source": "Supreme Creator ('Possessor of Whiteness'), 8-shrub fig-tree sacrifice & responses",
+            "pronunciation": "n'gaí"
           },
           {
-            "target": "Mun'-du Mu-gu (5 m'boo-thu gourds: ru-sú-ku, gon'-du, u'-mu, u-then'-gi, í-ra; m'wá-no lot-gourd) • 29 Thá-hu causes & 9 Tuso plants • 14-Hole Ki-tha-si of De-gua wa Ki-ma-ni • 13 Ro-gá-nu (N'gá-nu)",
-            "source": "Medicine-Man's 5 gourds & divination gourd • 29 defilement causes & 9 purification herbs • 14-hole curse stone at Tú-su • 13 folktales dictated by Na-ga-tú-u & Mo-só-ni",
-            "pronunciation": "mun-du mu-gu / m-boo-thu / m-wa-no / tha-hu / ki-tha-si / ro-ga-nu / n-ga-nu",
-            "hint": "Routledge (1910, Part III Ch. III & Part IV, pp. 249–328)"
+            "target": "Mun'-du Mu-gu",
+            "source": "Medicine-Man's 5 gourds & divination gourd",
+            "pronunciation": "mun'-du-mu-gu"
           }
         ],
         "sentences": [
           {
-            "target": "O N'gaí! Mwi-nin-ya-ga! — N'ga-na! Sa-i! Sa-i! • Ta-hí-ka thá-hu! Ta-hí-ka ki-ú-ru! Ni-da-ni-na thá-hu wa-ku.",
-            "source": "O God! Possessor of Whiteness! — So be it! Hear, hear! • Vomit the sin! Expel what is bad! I have ended your ceremonial uncleanness (Routledge 1910, pp. 231, 235–236, 262–263)."
+            "target": "O N'gaí! Mwi-nin-ya-ga! — N'ga-na! Sa-i! Sa-i!",
+            "source": "O God! Possessor of Whiteness! — So be it! Hear, hear!"
           }
-        ],
-        "authoredExercises": [
+        ]
+      },
+      {
+        "id": "kikuyu-hohnel-1894-vol1-lesson",
+        "title": "Höhnel: 1887 Traverse of 68 Ravines, Kuhoria Tatha & Mathira",
+        "icon": "Mountain",
+        "description": "Explore Lieut. Ludwig von Höhnel's (1894, Vol. I) complete record of the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887): Ngongo Bagas blood-brotherhood with Miani, Karanja, and Waiyaki, the 68 parallel ravines from Nairobi to Thegu, ridge peace ceremonies ('Mirema! — Thayu! Thayu!'), Aturi smiths and 7–8 ft. muro digging-sticks, and the Oct. 11, 1887 ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
+        "culturalNote": "On Sept. 16, 1887 in northern Mathira (p. 298), four medicine-men concluded a solemn githathi peace covenant by breaking the legs of a white ram and a black goat with clubs and slitting them longitudinally while Count Teleki, Jumbe Kimemeta, and six Kikuyu chiefs stepped across the bleeding carcasses seven times swearing eternal peace.",
+        "words": [
           {
-            "type": "multiple_choice",
-            "prompt": "In W. Scoresby & Katherine Routledge (1910, Part III, pp. 251–254, 273–275), what are the five medicine gourds (m'boo-thu) carried by a fully initiated Mun'-du Mu-gu and what is the Ki-tha-si kept by De-gua wa Ki-ma-ni at Tú-su?",
-            "correctAnswer": "The 5 m'boo-thu gourds contain (1) ru-sú-ku, (2) gon'-du, (3) u'-mu, (4) u-then'-gi, and (5) white diatomaceous earth í-ra; the Ki-tha-si is a 14-hole reddish sandstone cylinder (1 central + 13 side holes, bought from the Akam'ba for 30 goats) poked with 7 grass stalks in judicial oaths",
-            "options": [
-              "The 5 m'boo-thu gourds contain (1) ru-sú-ku, (2) gon'-du, (3) u'-mu, (4) u-then'-gi, and (5) white diatomaceous earth í-ra; the Ki-tha-si is a 14-hole reddish sandstone cylinder (1 central + 13 side holes, bought from the Akam'ba for 30 goats) poked with 7 grass stalks in judicial oaths",
-              "The 5 gourds contain beer, milk, honey, blood, and water; the Ki-tha-si is a wooden drum",
-              "The 5 gourds contain iron sand; the Ki-tha-si is a warrior's shield",
-              "The 5 gourds are musical rattles; the Ki-tha-si is a granary basket"
-            ],
-            "hint": "See Routledge (1910, pp. 251–254, 273–275 & Plate CXXXV)"
+            "target": "kuringa githathi",
+            "source": "Aug. 23 Ngongo Bagas & Sept. 16 Mathira 7-step covenant, pp. 221, 298",
+            "pronunciation": "kuringa-githathi"
           },
           {
-            "type": "match_pairs",
-            "prompt": "Match each Kikuyu ritual, legal, or oral-literature term from Routledge (1910) with its exact description:",
-            "correctAnswer": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i: Rite of Second Birth ('to be born again / born of a goat', pp. 151–153)",
-            "pairs": [
-              {
-                "left": "ko-chi-a-rú-o ke'-ri / ko-chi-a-re-i-rú-o m'bór-i",
-                "right": "Rite of Second Birth ('to be born again / born of a goat', pp. 151–153)"
-              },
-              {
-                "left": "Ai-twi'-ka & N'da-ma-thi-a",
-                "right": "Periodical snake-worship festival & river-monster fed by Mu-tha-ka on the Ma-thi-oy-a (pp. 237–238)"
-              },
-              {
-                "left": "N'gor'-o vs. N'gó-ma (in Mi-i-ri-ni-ya Mi-kon-go-i)",
-                "right": "The soul in life vs. the disembodied spirit after death in the subterranean world (pp. 239–241)"
-              },
-              {
-                "left": "Ki-shu-ro & Nya-kai-ro ('wife of God')",
-                "right": "Two Akikúyu prophets who vanished bodily (translated) before 1897–1898 (p. 255)"
-              }
-            ]
+            "target": "rugongo",
+            "source": "pl. migongo",
+            "pronunciation": "rugongo"
+          },
+          {
+            "target": "Aturi smiths, ruhiu (spatulate sword), kahiu (knife), kiondo (string",
+            "source": "Kikuyu Metallurgy, Weapons, Crafts, Musical Instruments & Communal Digging-Poles",
+            "pronunciation": "aturi-smiths"
+          },
+          {
+            "target": "68 Parallel Ravines",
+            "source": "All 68 Ravines, 9 Named Stages & First Ascent of Mount Kenia across 5 Vertical Zones",
+            "pronunciation": "68-parallel-ravines"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "U-u-u-ui! Ngai! — Mirema! Mirema! — Thayu! Thayu!",
+            "source": "Exclamation of wonder ('O God!'), peaceful greeting ('Mirema!'), and the peace-sprinkling chorus ('Peace! Peace!') recorded across Kikuyuland in"
           }
         ]
       }
     ]
+  },
+  {
+    "id": "kikuyu-unit-18",
+    "unitNumber": 18,
+    "title": "Ethnobiology, Botanicals & Modern Gĩkũyũ",
+    "description": "Gĩkũyũ highland trees, wildlife, farming, and everyday vocabulary from Tsammalex, Kaikki.org, Google SMOL/GATITOS, CGIAR, and Thiomi",
+    "icon": "🌳",
+    "color": "#16A34A",
+    "skills": [
+      {
+        "id": "kikuyu-open-skill-1",
+        "title": "Highland Flora, Fauna & Daily Life",
+        "icon": "🌿",
+        "description": "Authentic Gĩkũyũ botanicals, livestock terms, and everyday nouns",
+        "grammarTip": "Class 3/4 trees and plants in Gĩkũyũ take the singular prefix mũ- and plural prefix mĩ- (e.g., mũtamaiyũ 'wild olive', mũringa 'cordia tree').",
+        "culturalNote": "Sourced from Tsammalex Kikuyu Ethnobiology (CC-BY-4.0), Kaikki.org Kikuyu Wiktionary (CC-BY-SA-4.0), Google SMOL/GATITOS (CC-BY-4.0), CGIAR (Apache-2.0), and The Thiomi Dataset (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "mũgũnda",
+            "source": "Cultivated field or garden",
+            "pronunciation": "mu-gu-nda"
+          },
+          {
+            "target": "ũrĩmi",
+            "source": "Agriculture / farming",
+            "pronunciation": "u-ri-mi"
+          },
+          {
+            "target": "mũrĩmi",
+            "source": "Farmer or cultivator",
+            "pronunciation": "mu-ri-mi"
+          },
+          {
+            "target": "mũrutani",
+            "source": "Teacher or instructor",
+            "pronunciation": "mu-ru-ta-ni"
+          },
+          {
+            "target": "ngwacĩ",
+            "source": "Sweet potato",
+            "pronunciation": "ngwa-ci"
+          },
+          {
+            "target": "mũgĩmbĩ",
+            "source": "Finger millet",
+            "pronunciation": "mu-gi-mbi"
+          },
+          {
+            "target": "mũtamaiyũ",
+            "source": "Wild brown olive tree",
+            "pronunciation": "mu-ta-mai-yu"
+          },
+          {
+            "target": "mũthaitĩ",
+            "source": "East African camphorwood",
+            "pronunciation": "mu-thai-ti"
+          },
+          {
+            "target": "mũthĩga",
+            "source": "East African greenheart medicinal tree",
+            "pronunciation": "mu-thi-ga"
+          },
+          {
+            "target": "ndereti",
+            "source": "Conversation or dialogue",
+            "pronunciation": "nde-re-ti"
+          },
+          {
+            "target": "ũrata",
+            "source": "Friendship",
+            "pronunciation": "u-ra-ta"
+          },
+          {
+            "target": "ririkana",
+            "source": "To remember",
+            "pronunciation": "ri-ri-ka-na"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kĩara kĩmwe gĩtiũragaga ndaa.",
+            "source": "One finger cannot kill a louse (unity proverb)."
+          },
+          {
+            "target": "Kamũingĩ koyaga ndĩrĩ.",
+            "source": "A small group together lifts the heavy mortar."
+          }
+        ]
+      },
+        {
+        "id": "kikuyu-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Kikuyu (Gĩkũyũ) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Par",
+        "words": [
+                {
+                        "target": "Kotaithorana",
+                        "source": "Peace (to make)",
+                        "pronunciation": "kotaithorana"
+                },
+                {
+                        "target": "horeri. -ega",
+                        "source": "Peaceable, adj",
+                        "pronunciation": "horeri -ega"
+                },
+                {
+                        "target": "Mutaithorani (A-)",
+                        "source": "Peacemaker, n",
+                        "pronunciation": "mutaithorani"
+                },
+                {
+                        "target": "a kikenni",
+                        "source": "Welcome, adj",
+                        "pronunciation": "a kikenni"
+                },
+                {
+                        "target": "Koohera",
+                        "source": "Excuse, v",
+                        "pronunciation": "koohera"
+                },
+                {
+                        "target": "Muhoro, ne muhoro",
+                        "source": "Good morning, good-day, etc",
+                        "pronunciation": "muhoro"
+                },
+                {
+                        "target": "Koohera",
+                        "source": "Pardon, v",
+                        "pronunciation": "koohera"
+                },
+                {
+                        "target": "Koonya wega",
+                        "source": "Thank, v",
+                        "pronunciation": "koonya wega"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Ngondu kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce sheep in our county",
+                        "pronunciation": "arĩmi nĩmarutaga ngondu kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Ndinoho kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce snail in our county",
+                        "pronunciation": "arĩmi nĩmarutaga ndinoho kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Nyama ya se kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce snake in our county",
+                        "pronunciation": "arĩmi nĩmarutaga nyama ya se kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Njage kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce zebra in our county",
+                        "pronunciation": "arĩmi nĩmarutaga njage kaũndĩ-inĩ gaitũ"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Nĩmoĩ Kochiria wega",
+                        "source": "They know how to judge well"
+                },
+                {
+                        "target": "Tũrathiĩ Kolela rĩu",
+                        "source": "We are going to mourn now"
+                },
+                {
+                        "target": "Nĩmoĩ Kolela wega",
+                        "source": "They know how to mourn well"
+                },
+                {
+                        "target": "Tũrathiĩ Kolutera rĩu",
+                        "source": "We are going to offer now"
+                },
+                {
+                        "target": "Nĩmoĩ Kolutera wega",
+                        "source": "They know how to offer well"
+                },
+                {
+                        "target": "Tũrathiĩ Kogwaza rĩu",
+                        "source": "We are going to order now"
+                },
+                {
+                        "target": "Nĩmoĩ Kogwaza wega",
+                        "source": "They know how to order well"
+                },
+                {
+                        "target": "Tũrathiĩ Koekera rĩu",
+                        "source": "We are going to place now"
+                },
+                {
+                        "target": "Nĩmoĩ Koekera wega",
+                        "source": "They know how to place well"
+                },
+                {
+                        "target": "Tũrathiĩ Kohanda rĩu",
+                        "source": "We are going to plant now"
+                },
+                {
+                        "target": "Nĩmoĩ Kohanda wega",
+                        "source": "They know how to plant well"
+                },
+                {
+                        "target": "Tũrathiĩ Kokinya rĩu",
+                        "source": "We are going to reach now"
+                }
+        ]
+},
+        {
+        "id": "kikuyu-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Kikuyu (Gĩkũyũ) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Par",
+        "words": [
+                {
+                        "target": "Arĩmi nĩmarutaga Bea kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce mouse in our county",
+                        "pronunciation": "arĩmi nĩmarutaga bea kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Nyamuyathi. Muraru kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce viper in our county",
+                        "pronunciation": "arĩmi nĩmarutaga nyamuyathi muraru kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Hiti kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce hyena in our county",
+                        "pronunciation": "arĩmi nĩmarutaga hiti kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Arĩmi nĩmarutaga Nyamo kaũndĩ-inĩ gaitũ",
+                        "source": "Farmers produce beast in our county",
+                        "pronunciation": "arĩmi nĩmarutaga nyamo kaũndĩ-inĩ gaitũ"
+                },
+                {
+                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
+                        "source": "How much is hawk at the market?",
+                        "pronunciation": "thogora wa hongo thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
+                        "source": "How much is herd at the market?",
+                        "pronunciation": "thogora wa ikunde thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Izagiro thoko-inĩ nĩigana?",
+                        "source": "How much is hoof at the market?",
+                        "pronunciation": "thogora wa izagiro thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Isea thoko-inĩ nĩigana?",
+                        "source": "How much is horn at the market?",
+                        "pronunciation": "thogora wa isea thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Morosi thoko-inĩ nĩigana?",
+                        "source": "How much is lion at the market?",
+                        "pronunciation": "thogora wa morosi thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Nyumbu thoko-inĩ nĩigana?",
+                        "source": "How much is mule at the market?",
+                        "pronunciation": "thogora wa nyumbu thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Kesita thoko-inĩ nĩigana?",
+                        "source": "How much is tail at the market?",
+                        "pronunciation": "thogora wa kesita thoko-inĩ nĩigana"
+                },
+                {
+                        "target": "Thogora wa Ndutu thoko-inĩ nĩigana?",
+                        "source": "How much is worm at the market?",
+                        "pronunciation": "thogora wa ndutu thoko-inĩ nĩigana"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Nĩmoĩ Kokinya wega",
+                        "source": "They know how to reach well"
+                },
+                {
+                        "target": "Tũrathiĩ Koetekia rĩu",
+                        "source": "We are going to reply now"
+                },
+                {
+                        "target": "Nĩmoĩ Koetekia wega",
+                        "source": "They know how to reply well"
+                },
+                {
+                        "target": "Thogora wa Kengangi thoko-inĩ nĩigana?",
+                        "source": "How much is crab at the market?"
+                },
+                {
+                        "target": "Thogora wa Ndira-hoge thoko-inĩ nĩigana?",
+                        "source": "How much is dove at the market?"
+                },
+                {
+                        "target": "Thogora wa Zamberi thoko-inĩ nĩigana?",
+                        "source": "How much is duck at the market?"
+                },
+                {
+                        "target": "Thogora wa Kiongoyo thoko-inĩ nĩigana?",
+                        "source": "How much is fish at the market?"
+                },
+                {
+                        "target": "Thogora wa Nguku thoko-inĩ nĩigana?",
+                        "source": "How much is fowl at the market?"
+                },
+                {
+                        "target": "Thogora wa Kuira thoko-inĩ nĩigana?",
+                        "source": "How much is frog at the market?"
+                },
+                {
+                        "target": "Thogora wa Mburi thoko-inĩ nĩigana?",
+                        "source": "How much is goat at the market?"
+                },
+                {
+                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
+                        "source": "How much is hawk at the market?"
+                },
+                {
+                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
+                        "source": "How much is herd at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
-
-KIKUYU_UNITS[KIKUYU_UNITS.length - 1].skills.push({
-  "id": "kikuyu-hohnel-1894-vol1-lesson",
-  "title": "Höhnel (1894, Vol. I, Chs. V–VI): 1887 Traverse of 68 Ravines, Kuhoria Tatha & Mathira Githathi Covenants, 3-Tier Crop Zoning & Ascent of Mount Kenia to 15,355 ft.",
-  "icon": "Mountain",
-  "description": "Explore Lieut. Ludwig von Höhnel's (1894, Vol. I) complete record of the first European traverse of Kikuyuland (Aug. 27–Oct. 8, 1887): Ngongo Bagas blood-brotherhood with Miani, Karanja, and Waiyaki, the 68 parallel ravines from Nairobi to Thegu, ridge peace ceremonies ('Mirema! — Thayu! Thayu!'), Aturi smiths and 7–8 ft. muro digging-sticks, and the Oct. 11, 1887 ascent of Mount Kenia (Donyo Egere) to 15,355 ft.",
-  "tips": "On p. 305 of Volume I (1894), Höhnel documents how every Kikuyu ridge (rugongo) is zoned into three agricultural belts: grain and beans (mtama, wimbi, maize, njahi, mboso) on the crest, sweet potatoes (ngwaci), staked yams, bananas (marigu), and tobacco on the middle slopes, and taro (nduma) with 10–12 ft. sugar-cane in the marshy valley bottoms.",
-  "culturalNote": "On Sept. 16, 1887 in northern Mathira (p. 298), four medicine-men concluded a solemn githathi peace covenant by breaking the legs of a white ram and a black goat with clubs and slitting them longitudinally while Count Teleki, Jumbe Kimemeta, and six Kikuyu chiefs stepped across the bleeding carcasses seven times swearing eternal peace.",
-  "words": [
-    {
-      "target": "'U-u-u-ui! Ngai!' & 'Mirema! Mirema!' (p. 287) • mburi ya thayu & kuhoria tatha chanting 'Thayu! Thayu!' ('Peace! Peace!', pp. 288, 291, 303) • kuringa githathi (Aug. 23 Ngongo Bagas & Sept. 16 Mathira 7-step covenant, pp. 221, 298)",
-      "source": "Kikuyu Exclamations, Peace Salutations, Stomach-Contents Sprinkling Ceremony & Solemn Peace Covenants (Höhnel 1894, Vol. I, pp. 221, 287–298, 303)",
-      "pronunciation": "u-u-u-ui ngai / mi-re-ma / m-bu-ri ya tha-yu / ku-ho-ria ta-tha / tha-yu / ku-rin-ga gi-tha-thi",
-      "hint": "Höhnel (1894, Vol. I, Chs. IV–V)"
-    },
-    {
-      "target": "rugongo (pl. migongo) • Muthamaki / Muthuri (pl. Athuri) & Anake • Subugo, kihingo & ngurunga pitfalls with muriju (Acokanthera Schimperi) arrow-poison • itura & mugumo (pp. 220, 286–307)",
-      "source": "Ridge Governance, Boundary Forest Fortifications, Poisoned Pitfalls, Homesteads & Sacred Fig-Trees (Höhnel 1894, Vol. I, pp. 220, 286–307)",
-      "pronunciation": "ru-gon-go / mi-gon-go / mu-tha-ma-ki / a-thu-ri / a-na-ke / su-bu-go / ki-hin-go / ngu-run-ga / mu-ri-ju / i-tu-ra / mu-gu-mo",
-      "hint": "Höhnel (1894, Vol. I, Ch. V)"
-    },
-    {
-      "target": "Aturi smiths, ruhiu (spatulate sword), kahiu (knife), kiondo (string bag), mwatũ (branded log beehive), njohi / uhi (beer), njingiri (boat-shell ankle rattle), corno (war-horn) & 7–8 ft. muro digging-sticks (pp. 288–289, 304–305)",
-      "source": "Kikuyu Metallurgy, Weapons, Crafts, Musical Instruments & Communal Digging-Poles (Höhnel 1894, Vol. I, pp. 288–289, 304–305)",
-      "pronunciation": "a-tu-ri / ru-hiu / ka-hiu / kion-do / mwa-tu / njo-hi / u-hi / njin-gi-ri / cor-no / mu-ro",
-      "hint": "Höhnel (1894, Vol. I, Ch. V)"
-    },
-    {
-      "target": "68 Parallel Ravines (Nairobi, Chania liana bridge, Thika, Maragua 600-ft. gorge, Mathioya 700-ft. chasm, Sagana, Thegu) • Chiefs Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu) & Kihura (Ndoro) • Mount Kenia (Donyo Egere) ascent to 15,355 ft. & Lobelia Telekii Schweinfurth (pp. 287–309, 362–375)",
-      "source": "All 68 Ravines, 9 Named Stages & First Ascent of Mount Kenia across 5 Vertical Zones (Höhnel 1894, Vol. I, Chs. V–VI)",
-      "pronunciation": "cha-nia / ma-ra-gua / ma-thio-ya / sa-ga-na / the-gu / wai-ya-ki / wa-mu-gun-da / ki-hu-ra / do-nyo e-ge-re / lo-be-lia te-le-kii",
-      "hint": "Höhnel (1894, Vol. I, Chs. V–VI, pp. 287–309, 362–375)"
-    }
-  ],
-  "sentences": [
-    {
-      "target": "U-u-u-ui! Ngai! — Mirema! Mirema! — Thayu! Thayu!",
-      "source": "Exclamation of wonder ('O God!'), peaceful greeting ('Mirema!'), and the peace-sprinkling chorus ('Peace! Peace!') recorded across Kikuyuland in Aug.–Sept. 1887 (Höhnel 1894, Vol. I, pp. 287–288, 291, 303)."
-    }
-  ],
-  "authoredExercises": [
-    {
-      "type": "multiple_choice",
-      "prompt": "In Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (1894, Vol. I, Chs. V–VI, pp. 286–309, 362–375), how many parallel ravines did the expedition cross between Ngongo Bagas and Ndoro, how were Kikuyu ridges agriculturally zoned, and what elevation did Count Teleki reach on Mount Kenia on Oct. 11, 1887?",
-      "correctAnswer": "They crossed 68 parallel ravines in 17 marching days (from Nairobi to Thegu); ridges were zoned into crest grains/beans (mtama, wimbi, maize, njahi, mboso), mid-slope sweet potatoes (ngwaci), staked yams, bananas (marigu) & tobacco, and valley-bottom taro (nduma) & 10–12 ft. sugar-cane; and Teleki reached 15,355 ft. (4,680 m) on the western crater-rim of Mount Kenia, discovering Lobelia Telekii Schweinfurth",
-      "options": [
-        "They crossed 68 parallel ravines in 17 marching days (from Nairobi to Thegu); ridges were zoned into crest grains/beans (mtama, wimbi, maize, njahi, mboso), mid-slope sweet potatoes (ngwaci), staked yams, bananas (marigu) & tobacco, and valley-bottom taro (nduma) & 10–12 ft. sugar-cane; and Teleki reached 15,355 ft. (4,680 m) on the western crater-rim of Mount Kenia, discovering Lobelia Telekii Schweinfurth",
-        "They crossed 12 rivers; only bananas were grown on the ridges; and Teleki reached 10,000 ft. in the bamboo belt",
-        "They crossed 30 valleys; coffee and wheat grew in the valleys; and Höhnel reached 19,000 ft. alone",
-        "They bypassed Kikuyuland via Naivasha and never ascended Mount Kenia"
-      ],
-      "hint": "See Höhnel (1894, Vol. I, Chs. V–VI, pp. 299, 302, 305, 364–365, 373–374)"
-    }
-  ]
-});
-
-if (KIKUYU_CONFIG.sources && !KIKUYU_CONFIG.sources.includes("mcgregor-kikuyu-vocabulary-1904")) {
-  KIKUYU_CONFIG.sources.push("mcgregor-kikuyu-vocabulary-1904");
-}
-
-const _mcgregor1904Unit = KIKUYU_UNITS.find(
-  (u) => u.id === "kikuyu-unit-mcgregor-1904-vocabulary"
-);
-if (_mcgregor1904Unit) {
-  _mcgregor1904Unit.skills.push({
-    "id": "kikuyu-mcgregor-1904-provenance-grammar-editorial-14-3",
-    "title": "Stanford Provenance (PDF pp. 1–201), 10 Noun Classes, Pronouns/Enclitics & 1904 Printing Audit",
-    "icon": "BookOpen",
-    "description": "Examine the physical provenance of the Stanford University Libraries copy (PL 8379.4 .M3 C.1), the 10 noun class prefix pairings, pronominal/interrogative enclitics, and the 3 printing gaps & 9 errata of the 1904 SPCK edition.",
-    "tips": "In the original 1904 printing by Richard Clay & Sons, Limited (London and Bungay), three alphabetical transitions jump across omitted galleys (p. 17 Arms → Astonishment; p. 45 Defiance → Deluge; p. 153 Ruthless → Scare) and two ditto marks („) shift headwords under Crop (= Cross, p. 41) and Honest (= Honour, p. 83).",
-    "culturalNote": "Compiled by Rev. A. W. McGregor at Fort Smith (native name Kabeti) in 1901–1902 (Preface signed London, May 1903), this 192-page volume is the first printed vocabulary of the Kikuyu language, documenting the speech of 200,000–300,000 Agĩkũyũ from the Uganda Railway (miles 326–360) to Mount Kenia (Kirinyaga / Kilinyatha / Kireira, 4,000–18,000 ft).",
-    "words": [
-      {
-        "target": "Fort Smith (Kabeti, 1901–1902) • Uganda Railway (miles 326–360) • Kirinyaga (p. iv) / Kilinyatha. Kireira (p. 95) • Stanford Copy PL 8379.4 .M3 C.1 (Dr. & Mrs. Robert A. Rennie bookplate, barcode 3 6105 037 215 303, Richard Clay & Sons, p. 192)",
-        "source": "Fieldwork Site, Geographic Bounds, Three Native Names of Mount Kenia & Stanford University Libraries Provenance (PDF pp. 1–9, 100, 197–201)",
-        "pronunciation": "ka-be-ti / ki-ri-nya-ga / ki-li-nya-tha / ki-rei-ra",
-        "hint": "McGregor (1904, PDF pp. 1–9, 100, 197–201 / Book pp. i–iv, 95, 192)"
-      },
-      {
-        "target": "Nie / Nie mweni / Nie nyiki • We / We mweni • Oria / We wiki • Ithui / Ithui eni / Ithui wiki • Inyui / Inyui eni • Aria / Iria / Maria / Haria • Kwangu, Kwaku, Kwake, Kwitu, Kwanyu, Kwao",
-        "source": "Personal, Reflexive & Exclusive ('Only we') Pronouns and Possessive Home Locatives (McGregor 1904, pp. 14, 80–85, 116, 124, 167–192)",
-        "pronunciation": "ni-e mwe-ni / i-thu-i e-ni / i-thu-i wi-ki / kwa-ngu kwa-ku kwa-ke kwi-tu kwa-nyu kwa-o",
-        "hint": "McGregor (1904, Book pp. 14, 83, 124, 167–192)"
-      },
-      {
-        "target": "No? Niweo? • Nike? Niatea? • Akuugatea? (-atea) • Kotariatea? • -riko? • Niri? • Meha? (-ha / -ka) • -ko? • Goro uriko?",
-        "source": "Who? Who are you? • What? What is the matter? • How does he speak? • What kind of weather? • Which/What kind? • When? • Where are they? • Whence/Whither? • What price?",
-        "pronunciation": "no ni-we-o / ni-ke ni-a-te-a / a-ku-u-ga-te-a / ko-ta-ri-a-te-a / me-ha / go-ro u-ri-ko",
-        "hint": "McGregor (1904, Book pp. 84, 95, 109, 185–190)"
-      },
-      {
-        "target": "Aze [Axe] = Ithanwa (Ma-) (p. 18) • Crop [Cross], n. = Muthalaba (Mi-). Keigereri (I-). (p. 41) • Honest [Honour], n. = Onene. Ogochi. Ngumo. Okumio. Otei. (p. 83) • Hush [Husk], n. = Makoro. (p. 85) • My = -awka [-akwa] (p. 116) • Topple, to = (new [neu.]) Kogoa (p. 171)",
-        "source": "Key Original 1904 Printer's Errata & Ditto-Mark Shifts Audited Line-by-Line Across McGregor (1904)",
-        "pronunciation": "i-tha-nwa / mu-tha-la-ba ke-i-ge-re-ri / o-ne-ne o-go-chi ngu-mo o-ku-mi-o o-te-i / ma-ko-ro / a-kwa / ko-go-a",
-        "hint": "McGregor (1904, Book pp. 18, 29, 41, 66, 83, 85, 116, 168, 171)"
-      }
-    ],
-    "sentences": [
-      {
-        "target": "Niweo? — Nie nyiki (Nie mweni). — Meha? — Goro uriko?",
-        "source": "Who are you? — I alone (I myself). — Where are they? — What price (worth)? (McGregor 1904, Book pp. 14, 186–190)"
-      }
-    ],
-    "authoredExercises": [
-      {
-        "type": "multiple_choice",
-        "prompt": "In Rev. A. W. McGregor's 'English-Kikuyu Vocabulary' (1904, Preface pp. iii–iv & Book p. 95), what three indigenous Gĩkũyũ names are recorded for Mount Kenia, and where was the vocabulary collected in 1901–1902?",
-        "correctAnswer": "'Kirinyaga' (Preface p. iv) and 'Kilinyatha. Kireira.' (under 'Kenia, Mount', p. 95), collected at Fort Smith (native name 'Kabeti') in 1901–1902",
-        "options": [
-          "'Kirinyaga' (Preface p. iv) and 'Kilinyatha. Kireira.' (under 'Kenia, Mount', p. 95), collected at Fort Smith (native name 'Kabeti') in 1901–1902",
-          "'Donyo Egere' and 'Ol-doinyo Oibor', collected in Mombasa in 1887",
-          "'Kibo' and 'Kimawenzi', collected in Taveta in 1894",
-          "'Setima' and 'Donyo Sabuk', collected in Machakos in 1910"
-        ],
-        "hint": "See McGregor (1904, Preface pp. iii–iv & p. 95 'Kenia, Mount, n. | Kilinyatha. Kireira.')"
-      }
-    ]
-  });
-}

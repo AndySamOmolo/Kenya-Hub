@@ -17,7 +17,8 @@ import { Feather } from '@expo/vector-icons';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
 import { getLanguageIdentity } from '../shared/data/language-identity';
-import { getSourcesForLanguage } from '../shared/data/language-sources';
+import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
+import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
@@ -259,9 +260,63 @@ export default function LanguageCourseTool({
   const [showThemePicker, setShowThemePicker] = useState<boolean>(false);
   const [activeSkillId, setActiveSkillId] = useState<string>('');
 
+  const [loadedDict, setLoadedDict] = useState<Dictionary | null>(
+    () => LOADED_DICTS_CACHE[selectedLangId] || null
+  );
+
+  useEffect(() => {
+    let active = true;
+    if (LOADED_DICTS_CACHE[selectedLangId]) {
+      setLoadedDict(LOADED_DICTS_CACHE[selectedLangId]);
+    } else {
+      loadDictionary(selectedLangId).then((d) => {
+        if (active && d) setLoadedDict(d);
+      });
+    }
+    return () => {
+      active = false;
+    };
+  }, [selectedLangId]);
+
+  const dictSkills: CourseSkill[] = useMemo(() => {
+    if (!loadedDict) return [];
+    const seen = new Set<string>();
+    (currentCourse?.units || []).forEach((u) =>
+      u.skills.forEach((s) =>
+        s.words.forEach((w) => seen.add(`${w.target.toLowerCase()}::${w.source.toLowerCase()}`))
+      )
+    );
+    return loadedDict.categories
+      .map((cat) => {
+        const words: WordPair[] = [];
+        for (const e of cat.entries) {
+          const t = e.translation.trim();
+          const s = e.english.trim();
+          if (!t || !s) continue;
+          const k = `${t.toLowerCase()}::${s.toLowerCase()}`;
+          if (seen.has(k)) continue;
+          words.push({
+            target: t,
+            source: s,
+            pronunciation: e.pronunciation || undefined,
+            example: e.context || undefined,
+          });
+        }
+        return {
+          id: `dict-cat-${cat.id}`,
+          title: `Dictionary: ${cat.name}`,
+          icon: cat.icon || '📖',
+          description: `${words.length.toLocaleString()} verified ${loadedDict.languageName} dictionary entries in ${cat.name}.`,
+          words,
+          sentences: [],
+        } as CourseSkill;
+      })
+      .filter((sk) => sk.words.length > 0);
+  }, [loadedDict, currentCourse]);
+
   const allSkills = useMemo(
-    () => currentCourse?.units.flatMap((u) => u.skills) || [],
-    [currentCourse]
+    () => [...(currentCourse?.units.flatMap((u) => u.skills) || []), ...dictSkills],
+    [currentCourse, dictSkills]
   );
   const allSkillIds = useMemo(() => allSkills.map((s) => s.id), [allSkills]);
 

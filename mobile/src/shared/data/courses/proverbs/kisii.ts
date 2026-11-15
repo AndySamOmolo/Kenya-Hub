@@ -58,3 +58,15 @@ export const KISII_PROVERBS: ProverbItem[] = [
     "sourceCitation": "C. W. Hobley, Eastern Uganda: An Ethnological Survey, Anthropological Institute Occasional Papers No. 1 (1902, pp. 8–9, 51, 86, 89–91)"
   }
 ];
+
+KISII_PROVERBS.push({
+  "id": "kisii-ddd-prov-1",
+  "languageId": "kisii",
+  "languageName": "Kisii (Ekegusii)",
+  "indigenous": "Omokungu omonyabwango tagotama nyomba.",
+  "literalTranslation": "A diligent homemaker never lacks provisions in the house.",
+  "meaning": "Foresight and steady industry protect the household from scarcity.",
+  "englishEquivalent": "A stitch in time saves nine.",
+  "theme": "hard-work",
+  "sourceCitation": "Ekegusii Oral Wisdom & SIL Bloom Ekegusii Corpus (CC-BY-4.0)"
+});

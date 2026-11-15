@@ -6,6 +6,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import { Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
+import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from "@/data/courses/proverbs";
 import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
 import { luoRiddles, type RiddleEntry } from "@/data/courses/luo/riddles";
 import { luoTongueTwisters, type TongueTwisterEntry } from "@/data/courses/luo/tongue-twisters";
@@ -25,9 +26,17 @@ export interface KikuyuProverbItem {
   category: string;
 }
 
-const KIKUYU_PROVERBS: KikuyuProverbItem[] = Array.isArray(kikuyuProverbsData)
-  ? (kikuyuProverbsData as KikuyuProverbItem[])
-  : [];
+const KIKUYU_PROVERBS: KikuyuProverbItem[] = [
+  ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as KikuyuProverbItem[]) : []),
+  ...KIKUYU_CW_ITEMS.map((item, idx) => ({
+    id: 1001 + idx,
+    kikuyu: item.indigenous,
+    translation: item.literalTranslation,
+    explanation: item.meaning,
+    englishEquivalent: item.englishEquivalent || null,
+    category: item.theme || "wisdom",
+  })),
+];
 
 function normalizeDiacritics(str: string): string {
   return str

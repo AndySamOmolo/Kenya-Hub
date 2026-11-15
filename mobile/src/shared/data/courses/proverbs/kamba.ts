@@ -91,3 +91,15 @@ KAMBA_PROVERBS.push({
   "theme": "wisdom",
   "sourceCitation": "Patrick Jones & Jake Freyer, 'Reconsidering tone and melodies in Kikamba', in Theory and description in African linguistics (Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138)"
 });
+
+KAMBA_PROVERBS.push({
+  "id": "kamba-thiomi-prov-1",
+  "languageId": "kamba",
+  "languageName": "Kamba (Kĩkamba)",
+  "indigenous": "Kĩla mũndũ avandaa nĩkyoethaa.",
+  "literalTranslation": "Whatever a person plants is what they harvest.",
+  "meaning": "Good deeds and diligent effort yield a good reward.",
+  "englishEquivalent": "You reap what you sow.",
+  "theme": "hard-work",
+  "sourceCitation": "Kikamba First Corpus (Kitui, CC-BY-4.0) & Thiomi Kamba Corpus"
+});

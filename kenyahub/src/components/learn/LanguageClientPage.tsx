@@ -20,6 +20,8 @@ import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 import type {
   CourseSkill,
+  CourseUnit,
+  WordPair,
   UserProgress,
   LessonResult,
 } from "@/data/courses/types";
@@ -34,7 +36,8 @@ import {
 import { TOOLS } from "@/lib/tools-registry";
 import type { Tool } from "@/lib/types";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
-import { getSourcesForLanguage } from "@/data/language-sources";
+import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from "@/data/language-sources";
+import { loadDictionary, DICT_CACHE } from "@/lib/dictionary-loader";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -100,6 +103,24 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [flashcardSkillId, setFlashcardSkillId] = useState<string>("all");
   const [flashcardIndex, setFlashcardIndex] = useState<number>(0);
   const [isCardFlipped, setIsCardFlipped] = useState<boolean>(false);
+  const [loadedDict, setLoadedDict] = useState<Dictionary | null>(
+    () => DICT_CACHE[languageId] || null
+  );
+
+  useEffect(() => {
+    let active = true;
+    if (DICT_CACHE[languageId]) {
+      setLoadedDict(DICT_CACHE[languageId]);
+    } else {
+      loadDictionary(languageId).then((d) => {
+        if (active && d) setLoadedDict(d);
+      });
+    }
+    return () => {
+      active = false;
+    };
+  }, [languageId]);
+
 
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
@@ -133,16 +154,75 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     setProgress(loaded);
   }, [languageId, course]);
 
+  const dictUnit: CourseUnit | null = useMemo(() => {
+    if (!loadedDict) return null;
+    const courseWordSet = new Set<string>();
+    if (course) {
+      course.units.forEach((u) =>
+        u.skills.forEach((sk) =>
+          sk.words.forEach((w) =>
+            courseWordSet.add(`${w.target.toLowerCase().trim()}::${w.source.toLowerCase().trim()}`)
+          )
+        )
+      );
+    }
+
+    const skills: CourseSkill[] = [];
+    for (const cat of loadedDict.categories) {
+      if (!cat.entries || cat.entries.length === 0) continue;
+      const words: WordPair[] = [];
+      for (const e of cat.entries) {
+        const t = e.translation.trim();
+        const s = e.english.trim();
+        if (!t || !s) continue;
+        const key = `${t.toLowerCase()}::${s.toLowerCase()}`;
+        if (courseWordSet.has(key)) continue;
+        words.push({
+          target: t,
+          source: s,
+          pronunciation: e.pronunciation || undefined,
+          example: e.context || undefined,
+        });
+      }
+      if (words.length === 0) continue;
+      skills.push({
+        id: `dict-cat-${cat.id}`,
+        title: `Dictionary: ${cat.name}`,
+        icon: cat.icon || "📖",
+        description: `Complete ${loadedDict.languageName} dictionary entries for ${cat.name.toLowerCase()} (${words.length.toLocaleString()} verified entries).`,
+        tips: `Practice and search ${words.length.toLocaleString()} verified ${loadedDict.languageName} dictionary entries in the ${cat.name} category.`,
+        words,
+        sentences: [],
+      });
+    }
+
+    if (skills.length === 0) return null;
+    return {
+      id: `dict-unit-${languageId}`,
+      unitNumber: (course?.units.length || 0) + 1,
+      title: `${loadedDict.languageName} Complete Dictionary (${loadedDict.categories.reduce((acc, c) => acc + c.entries.length, 0).toLocaleString()} Entries)`,
+      description: `All verified ${loadedDict.languageName} dictionary categories integrated for flashcards, vocabulary search, interactive practice, and mini-games.`,
+      icon: "BookOpen",
+      color: "#D4A017",
+      skills,
+    };
+  }, [loadedDict, course, languageId]);
+
+  const combinedUnits: CourseUnit[] = useMemo(() => {
+    if (!course) return [];
+    return dictUnit ? [...course.units, dictUnit] : course.units;
+  }, [course, dictUnit]);
+
   const allSkillsFlat = useMemo(() => {
     if (!course) return [];
     const list: { unitId: string; unitTitle: string; skill: CourseSkill }[] = [];
-    course.units.forEach((unit) => {
+    combinedUnits.forEach((unit) => {
       unit.skills.forEach((skill) => {
         list.push({ unitId: unit.id, unitTitle: unit.title, skill });
       });
     });
     return list;
-  }, [course]);
+  }, [course, combinedUnits]);
 
   const flashcardDeck = useMemo(() => {
     if (flashcardSkillId === "all") {
@@ -195,8 +275,20 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       const found = allSkillsFlat.find((s) => s.skill.id === skillId);
       if (!found) return;
       const due = getDueReviews(progress);
+      let lessonSkill = found.skill;
+      if (lessonSkill.words.length > 14) {
+        const batchSize = 12;
+        const maxStart = Math.max(0, lessonSkill.words.length - batchSize);
+        const offset = ((level - 1) * batchSize) <= maxStart
+          ? (level - 1) * batchSize
+          : Math.floor(Math.random() * (maxStart + 1));
+        lessonSkill = {
+          ...lessonSkill,
+          words: lessonSkill.words.slice(offset, offset + batchSize),
+        };
+      }
       setActiveLesson({
-        skill: found.skill,
+        skill: lessonSkill,
         level,
         reviewItems: due.slice(0, 3),
         reviewOnly: false,
@@ -284,9 +376,18 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     course.grammarSections && course.grammarSections.length > 0
   );
 
-  const totalWords = course.units.reduce(
+  const dictMeta = DICT_META_MAP[course.config.id];
+  const courseWordsCount = course.units.reduce(
     (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
     0
+  );
+  const totalWords = Math.max(
+    courseWordsCount,
+    combinedUnits.reduce(
+      (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
+      0
+    ),
+    dictMeta?.totalEntries || 0
   );
   const totalSkills = course.units.reduce((sum, u) => sum + u.skills.length, 0);
   const sources = getSourcesForLanguage(course.config.id);
@@ -388,8 +489,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <ExpandablePillRow className="mb-5">
           {[
             { id: "lessons" as const, label: "Skill Path" },
-            { id: "flashcards" as const, label: `Flashcards (${totalWords})` },
-            { id: "modules" as const, label: "All Vocab" },
+            { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString()})` },
+            { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString()})` },
             { id: "games" as const, label: "Mini-Games" },
             ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
@@ -571,8 +672,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 value={selectedUnitFilter}
                 onValueChange={(val) => setSelectedUnitFilter(val)}
                 options={[
-                  { value: "all", label: `All Units (${course.units.length})` },
-                  ...course.units.map((u, idx) => ({
+                  { value: "all", label: `All Units & Dictionary (${combinedUnits.length})` },
+                  ...combinedUnits.map((u, idx) => ({
                     value: u.id,
                     label: `Unit ${idx + 1}: ${u.title.replace(/^Unit \d+:\s*/i, "")}`,
                   })),
@@ -628,7 +729,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                   )}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    {skill.words.map((w, wIdx) => (
+                    {(moduleSearch.trim()
+                      ? skill.words.filter(
+                          (w) =>
+                            w.target.toLowerCase().includes(moduleSearch.trim().toLowerCase()) ||
+                            w.source.toLowerCase().includes(moduleSearch.trim().toLowerCase())
+                        )
+                      : skill.words
+                    )
+                      .slice(0, 60)
+                      .map((w, wIdx) => (
                       <div
                         key={wIdx}
                         className="rounded-xl bg-bg-elevated/60 border border-border/60 p-3.5 flex flex-col justify-between gap-1"
@@ -674,7 +784,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       ) : view === "games" ? (
         <div data-adsense-pause="true">
           <GamesHub
-            units={course.units}
+            units={combinedUnits}
             languageName={course.config.name}
             onBack={() => setView("lessons")}
           />
@@ -688,7 +798,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <ProverbsView lockedLanguageId={course.config.id} />
       ) : (
         <SkillTree
-          units={course.units}
+          units={combinedUnits}
           progress={progress}
           config={course.config}
           onStartLesson={handleStartLesson}

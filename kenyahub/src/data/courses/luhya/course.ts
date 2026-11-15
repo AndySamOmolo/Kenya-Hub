@@ -1,4 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const LUHYA_CONFIG: LanguageConfig = {
   "id": "luhya",
@@ -22,16 +22,21 @@ export const LUHYA_CONFIG: LanguageConfig = {
     "hobley-kavirondo-nandi-1903",
     "johnston-bantu-1919",
     "stam-bahanga-1929",
-    "open-web-swadesh-comparative"
+    "open-web-swadesh-comparative",
+    "purvis-masaba-1909",
+    "clem-jenks-sande-theory-description-2019",
+    "selvanathan-bantu-iav-focus-2019"
   ]
 };
 
 export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-1",
-    "title": "Unit 1: Pronouns, People, Kinship & Numbers",
+    "unitNumber": 1,
+    "title": "Pronouns, People, Kinship & Numbers",
     "description": "Learn core personal pronouns, human & family nouns (omu-/aba-), and cardinal numbers in Oluluyia.",
     "icon": "Hash",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-pronouns-people",
@@ -211,7 +216,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-numbers-adjectives",
-        "title": "Numbers 1–10 (Hobley 1902 & Johnston 1919) & Core Descriptive Roots",
+        "title": "Numbers 1–10 & Core Descriptive Roots",
         "icon": "Hash",
         "description": "Count from 1 to 10 in Luwanga/Oluluyia and use core descriptive stems.",
         "tips": "Hobley (1902, pp. 84, 95) and Johnston (1919, Vol. I, p. 81) record Luwanga/Lunyara numerals 1–10: ndala (-lala, 1), tsimbili (-bili, 2), tsitaru (-taru, 3), tsine (-ne, 4), tsiraano (-raano, 5), tsisaasaba (6), mufungate (tsisaba, 7), munane (8), shenda (9), ikhumi (10).",
@@ -395,9 +400,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-2",
-    "title": "Unit 2: Nature, Core Verbs (Okhu-) & Wanga Heritage",
+    "unitNumber": 2,
+    "title": "Nature, Core Verbs (Okhu-) & Wanga Heritage",
     "description": "Explore natural elements, high-frequency okhu- verbs, and Luhanga cultural vocabulary from Rev. N. Stam (1929) and C. W. Hobley (1903).",
     "icon": "TreePine",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-nature-verbs",
@@ -579,9 +586,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-3",
-    "title": "Unit 3: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 3,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Users",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-family-kinship-kinship-elders-3",
@@ -642,11 +651,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Omw-ami; aw-ami / Omw-ami / Omw-ami. Omu-kuru",
             "source": "Chief",
-            "pronunciation": "omw-ami",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "omw-ami"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -708,8 +715,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Omw-ana / Omw-ana; bab-ana. Om-soriri",
             "source": "Son, boy",
-            "pronunciation": "omw-ana / omw-ana",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "omw-ana / omw-ana"
           },
           {
             "target": "senge",
@@ -760,7 +766,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -863,9 +868,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-4",
-    "title": "Unit 4: Numbers, Counting, Currency & Measures",
+    "unitNumber": 4,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Scale",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-numbers-measures-cardinals-ordinals-4",
@@ -930,7 +937,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1058,41 +1064,34 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Sekunde",
             "source": "Second (time unit)",
-            "pronunciation": "se-kunde",
-            "hint": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "se-kunde"
           },
           {
             "target": "Ama-kumi ka-tarru / Ama-kumi ka-datu / Kama-gumi ka-taru",
             "source": "Thirty",
-            "pronunciation": "ama-kumi ka-tarru / ama-kumi ka-datu / kama-gumi ka-taru",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-kumi ka-tarru / ama-kumi ka-datu / kama-gumi ka-taru"
           },
           {
             "target": "Ama-kumi ka-nne / Kama-gumi ka-nne",
             "source": "Forty",
-            "pronunciation": "ama-kumi ka-nne / kama-gumi ka-nne",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-kumi ka-nne / kama-gumi ka-nne"
           },
           {
             "target": "Ama-kumi ka-rrano / Ama-kumi ka-tano / Kama-gumi ka-rano",
             "source": "Fifty",
-            "pronunciation": "ama-kumi ka-rrano / ama-kumi ka-tano / kama-gumi ka-rano",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-kumi ka-rrano / ama-kumi ka-tano / kama-gumi ka-rano"
           },
           {
             "target": "Ama-kana ma-khumi / Si-zumi / Kama-tondo ki-kumi",
             "source": "Thousand",
-            "pronunciation": "ama-kana ma-khumi / si-zumi / kama-tondo ki-kumi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-kana ma-khumi / si-zumi / kama-tondo ki-kumi"
           },
           {
             "target": "-nggi / -inggi",
             "source": "Plenty, many",
-            "pronunciation": "nggi / inggi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "nggi / inggi"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1195,9 +1194,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-5",
-    "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 5,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "Tractor",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-food-agriculture-staple-foods-cookery-5",
@@ -1344,38 +1345,32 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Ama-furra / Ama-futa / Kimi-nawa (pl.). Kama-futa",
             "source": "Fat, oil",
-            "pronunciation": "ama-furra / ama-futa / kimi-nawa kama-futa",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-furra / ama-futa / kimi-nawa kama-futa"
           },
           {
             "target": "In-zala / In-jala / In-jara, In-zala",
             "source": "Hunger",
-            "pronunciation": "in-zala / in-jala / in-jara in-zala",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "in-zala / in-jala / in-jara in-zala"
           },
           {
             "target": "Ama-duma. Ka-duma (5 b) / Ama-dumwa / Nabu-kubo",
             "source": "Maize",
-            "pronunciation": "ama-duma ka-duma / ama-dumwa / nabu-kubo",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "ama-duma ka-duma / ama-dumwa / nabu-kubo"
           },
           {
             "target": "Omw-engge. Ama-lua / Omw-engge / Kama-rwa",
             "source": "Palm wine, beer",
-            "pronunciation": "omw-engge ama-lua / omw-engge / kama-rwa",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "omw-engge ama-lua / omw-engge / kama-rwa"
           },
           {
             "target": "I-fukwa / Ki-kwa or Si-kwa",
             "source": "Yam",
-            "pronunciation": "i-fukwa / ki-kwa or si-kwa",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "i-fukwa / ki-kwa or si-kwa"
           },
           {
             "target": "-dia / -dia, -lia / -lya",
             "source": "To eat",
-            "pronunciation": "dia / dia lia / lya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)"
+            "pronunciation": "dia / dia lia / lya"
           },
           {
             "target": "shilulu",
@@ -1390,7 +1385,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1434,9 +1428,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-6",
-    "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 6,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "PawPrint",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-nature-wildlife-land-sky-water-6",
@@ -1501,7 +1497,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1663,7 +1658,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1766,9 +1760,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-7",
-    "title": "Unit 7: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 7,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "User",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-body-health-anatomy-senses-7",
@@ -1967,7 +1963,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2070,9 +2065,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
   },
   {
     "id": "luhya-unit-8",
-    "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 8,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Luhya (Luyia) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902, 1919), Rev. J. B. Purvis (1909), and Rev. John Roscoe (1915).",
     "icon": "BookOpen",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-verbs-grammar-action-verbs-8",
@@ -2137,7 +2134,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2299,7 +2295,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2401,10 +2396,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "luhya-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "luhya-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Luhya (Luyia) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-pd-corpus-9-1",
@@ -2462,7 +2459,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2569,7 +2565,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2623,10 +2618,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "luhya-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "luhya-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Luhya (Luyia) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-open-dataset-10-1",
@@ -2684,7 +2681,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2791,7 +2787,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2845,10 +2840,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "luhya-unit-11-hobley-1903",
-    "title": "Unit 11: Hobley (1903) Awa-Wanga Royal Chronicle, 8 Fables, Altars & 8 Muziro Totems",
+    "id": "luhya-unit-11",
+    "unitNumber": 11,
+    "title": "Hobley Awa-Wanga Royal Chronicle, 8 Fables, Altars & 8 Muziro Totems",
     "description": "Master the 12-generation Awa-Wanga genealogy, 8 Ama-Wanga fables, Masambwa/Muzimo altars, 8 Bantu Kavirondo Muziro totems, livoya tassels, kiketi child naming, and Isira law from C. W. Hobley (1903, pp. 333–358).",
     "icon": "Crown",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-hobley-1903-11-1",
@@ -2859,33 +2856,60 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Kuau → Wanga → Kisesi (Wawala) → Mzui (Chewi) → Msindalo → Netia & Kiteji",
-            "source": "First 6 generations of the Awa-Wanga royal dynasty (from Tsoso/Viratsi & Manga Hill to Shikulu & Rekho)",
+            "source": "First 6 generations of the Awa-Wanga royal dynasty",
             "pronunciation": "ku-a-u / wa-nga / ki-se-si / m-zu-i / m-si-nda-lo / ne-ti-a",
             "hint": "Hobley (1903, pp. 333–336)"
           },
           {
-            "target": "Sundwa → Mkoya (→ Sundu → Mumia) & Kwehu (→ Sakwa → Tomia & Wombani)",
+            "target": "Sundwa → Mkoya (→ Sundu → Mumia) & Kwehu",
             "source": "Later 6 generations of the Awa-Wanga royal dynasty at Mumias, Lumino, and Kimuri",
             "pronunciation": "su-ndwa / m-ko-ya / su-ndu / mu-mi-a / kwe-hu / sa-kwa",
             "hint": "Hobley (1903, pp. 334–336)"
           },
           {
-            "target": "Chikonesi • Sumba • Wa-Nyama kwa Wa-Ware (Bridge Island)",
-            "source": "Salt lick on River Nzoia where elephant and hippo slew each other in Kwehu’s reign • Sumba Island dwarfish elves • Lusinga twin monoliths of two bulls turned to stone",
-            "pronunciation": "chi-ko-ne-si / su-mba / wa-nya-ma kwa wa-wa-re",
-            "hint": "Hobley (1903, pp. 339–341)"
+            "target": "Chikonesi",
+            "source": "Salt lick on River Nzoia where elephant and hippo slew each other in Kwehu’s reign",
+            "pronunciation": "chikonesi"
           },
           {
-            "target": "Masambwa / Muzimo • Sangaro • Mrumba (mlendege) • Siala / Mtarawanda",
-            "source": "Ancestral spirits • Sacred granite hill 12 mi. NE of Mumias • Ketosh 4-stone wild fig altar • Awa-Wanga 3-stone Markhamia lutea altar",
-            "pronunciation": "ma-sa-mbwa / mu-zi-mo / sa-nga-ro / m-ru-mba / si-a-la",
-            "hint": "Hobley (1903, pp. 342–343)"
+            "target": "Sumba",
+            "source": "Sumba Island dwarfish elves",
+            "pronunciation": "sumba"
           },
           {
-            "target": "Murembe (Ekirikiti) • Waka → Wanawaka (m.) / Newaka (f.)",
-            "source": "Sacred coral tree (Erythrina tomentosa, murembe = 'peace') • Python charm & names given to next boy or girl born",
-            "pronunciation": "mu-re-mbe / wa-ka / wa-na-wa-ka / ne-wa-ka",
-            "hint": "Hobley (1903, pp. 343–344)"
+            "target": "Wa-Nyama kwa Wa-Ware (Bridge Island)",
+            "source": "Lusinga twin monoliths of two bulls turned to stone",
+            "pronunciation": "wa-nyama-kwa-wa-ware"
+          },
+          {
+            "target": "Masambwa / Muzimo",
+            "source": "Ancestral spirits",
+            "pronunciation": "masambwa"
+          },
+          {
+            "target": "Sangaro",
+            "source": "Sacred granite hill 12 mi. NE of Mumias",
+            "pronunciation": "sangaro"
+          },
+          {
+            "target": "Mrumba (mlendege)",
+            "source": "Ketosh 4-stone wild fig altar",
+            "pronunciation": "mrumba"
+          },
+          {
+            "target": "Siala / Mtarawanda",
+            "source": "Awa-Wanga 3-stone Markhamia lutea altar",
+            "pronunciation": "siala"
+          },
+          {
+            "target": "Murembe (Ekirikiti)",
+            "source": "Sacred coral tree",
+            "pronunciation": "murembe"
+          },
+          {
+            "target": "Waka → Wanawaka (m.) / Newaka (f.)",
+            "source": "Python charm & names given to next boy or girl born",
+            "pronunciation": "waka-wanawaka"
           }
         ],
         "sentences": [
@@ -2895,18 +2919,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In C. W. Hobley (1903, p. 344), if an Awa-Wanga person sees or accidentally kills a python ('waka'), what names are given to the next boy or girl born after the white-fowl purification rite?",
-            "correctAnswer": "Wanawaka (boy) or Newaka (girl)",
-            "options": [
-              "Wanawaka (boy) or Newaka (girl)",
-              "Mumia (boy) or Sakwa (girl)",
-              "Jaksinis (boy) or Obilos (girl)",
-              "Netia (boy) or Kiteji (girl)"
-            ],
-            "hint": "From 'waka' = python in Lu-Wanga (Hobley 1903, p. 344)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Bantu Kavirondo sacred site or ritual tree in Hobley (1903, pp. 339–344) with its description:",
@@ -2923,10 +2935,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
               {
                 "left": "Murembe (Ekirikiti)",
                 "right": "Sacred Erythrina peace tree ('murembe' = peace)"
-              },
-              {
-                "left": "Chikonesi",
-                "right": "Nzoia salt lick where the elephant and hippopotamus killed each other"
               }
             ]
           }
@@ -2934,34 +2942,70 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-hobley-1903-11-2",
-        "title": "The 8 Bantu Kavirondo Muziro Totems, Livoya, Kiketi Naming & Isira Law",
+        "title": "The 8 Bantu Kavirondo Muziro Totems, Livoya, Kiketi Naming &",
         "icon": "Shield",
         "description": "Practice the 8 clan totems (Muziro), Nyole rain-maker lineage, livoya tassels, quail & kiketi naming rites, and the Isira blood-feud taboo.",
         "tips": "Hobley (1903, p. 347) lists 8 Bantu Kavirondo Muziro totems: Imbongo (bushbuck — Kisesi of Awa-Wanga), Kuru/Ikulu (waterbuck — Marama, Tsoso, Isukha), Liusi (pigeon — Awa-Genya & Awa-Mrashi), Njofu (elephant — Awa-Shekwi of Nyole), Makuyi (black-and-white stork — Ketosh), Isunu (reedbuck — Ngaki of Tasoni), Imbongo/Ngawe (bushbuck — Ithako, E. Tsoso, S. Kabras), and Mbiakalo (cooked flying white ants — Kabras).",
         "words": [
           {
-            "target": "Muziro: Imbongo (Ngawe) • Kuru (Ikulu) • Isunu",
-            "source": "Bushbuck (Kisesi of Awa-Wanga; Ithako, E. Tsoso, S. Kabras) • Waterbuck (Marama, Tsoso, Isukha) • Reedbuck (Ngaki of Tasoni)",
-            "pronunciation": "mu-zi-ro / i-mbo-ngo / nga-we / ku-ru / i-ku-lu / i-su-nu",
-            "hint": "Hobley (1903, p. 347 — Bantu Kavirondo Muziro totems #1, #2, #6, #7)"
+            "target": "Muziro: Imbongo (Ngawe)",
+            "source": "Bushbuck",
+            "pronunciation": "muziro-imbongo"
           },
           {
-            "target": "Liusi • Njofu • Makuyi • Mbiakalo",
-            "source": "Pigeon (Awa-Genya & Awa-Mrashi) • Elephant (Awa-Shekwi of Nyole) • Locust stork (Ketosh) • Cooked flying white ants (Kabras)",
-            "pronunciation": "li-u-si / njo-fu / ma-ku-yi / m-bi-a-ka-lo",
-            "hint": "Hobley (1903, p. 347 — Bantu Kavirondo Muziro totems #3, #4, #5, #8)"
+            "target": "Kuru (Ikulu)",
+            "source": "Waterbuck (Marama, Tsoso, Isukha)",
+            "pronunciation": "kuru"
           },
           {
-            "target": "Mgahanya (Agine / Ashue → Luchiri → Namonwa → Mgahanya) • Kayenga",
-            "source": "Chief and rain-maker of the Shekwi clan of Nyole (descended from the Simbi abūr rain-witch) • Maragolia Hills host",
-            "pronunciation": "m-ga-ha-nya / a-gi-ne / a-shu-e / lu-chi-ri / na-mo-nwa / ka-ye-nga",
-            "hint": "Hobley (1903, pp. 349–350)"
+            "target": "Isunu",
+            "source": "Reedbuck (Ngaki of Tasoni)",
+            "pronunciation": "isunu"
           },
           {
-            "target": "Livoya • Kiketi (Mumia, Jaksinis, Martinis, Obilos) • Isira",
-            "source": "Married woman’s 12 in. black-dyed fibre tassel • Pale blue naming bead with live quail & cowrie • Fatal blood-feud meal taboo",
-            "pronunciation": "li-vo-ya / ki-ke-ti / mu-mi-a / i-si-ra",
-            "hint": "Hobley (1903, pp. 350–353, 357–358)"
+            "target": "Liusi",
+            "source": "Pigeon (Awa-Genya & Awa-Mrashi)",
+            "pronunciation": "liusi"
+          },
+          {
+            "target": "Njofu",
+            "source": "Elephant (Awa-Shekwi of Nyole)",
+            "pronunciation": "njofu"
+          },
+          {
+            "target": "Makuyi",
+            "source": "Locust stork (Ketosh)",
+            "pronunciation": "makuyi"
+          },
+          {
+            "target": "Mbiakalo",
+            "source": "Cooked flying white ants (Kabras)",
+            "pronunciation": "mbiakalo"
+          },
+          {
+            "target": "Mgahanya",
+            "source": "Chief and rain-maker of the Shekwi clan of Nyole",
+            "pronunciation": "mgahanya"
+          },
+          {
+            "target": "Kayenga",
+            "source": "Maragolia Hills host",
+            "pronunciation": "kayenga"
+          },
+          {
+            "target": "Livoya",
+            "source": "Married woman’s 12 in. black-dyed fibre tassel",
+            "pronunciation": "livoya"
+          },
+          {
+            "target": "Kiketi",
+            "source": "Pale blue naming bead with live quail & cowrie",
+            "pronunciation": "kiketi"
+          },
+          {
+            "target": "Isira",
+            "source": "Fatal blood-feud meal taboo",
+            "pronunciation": "isira"
           }
         ],
         "sentences": [
@@ -2993,14 +3037,6 @@ export const LUHYA_UNITS: CourseUnit[] = [
                 "right": "Married woman’s 12-inch black-dyed fibre tassel (p. 350)"
               },
               {
-                "left": "Kiketi",
-                "right": "Pale blue bead tied with a cowrie & live quail at child naming (p. 352)"
-              },
-              {
-                "left": "Isira",
-                "right": "Blood-feud taboo forbidding eating from a killer’s maternal pot (p. 357)"
-              },
-              {
                 "left": "Makuyi",
                 "right": "Ketosh clan totem: black-and-white locust-eating stork (p. 347)"
               }
@@ -3011,35 +3047,94 @@ export const LUHYA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "luhya-unit-johnston-1902-set8-lukonde-prefixes",
-    "title": "Unit 12: Sir Harry Johnston (1902) Set 8 (Lukonde, Lusōkwia, Lunyara, Lukabarasi, Lurimi), 16 Lukonde Prefixes (p. 1001) & Ch. XVII Ethnography",
+    "id": "luhya-unit-12",
+    "unitNumber": 12,
+    "title": "Set 8 (Lukonde, Lusōkwia, Lunyara, Lukabarasi, Lurimi), 16",
     "description": "Master the 16 archaic disyllabic prefixes of Lukonde (p. 1001), Set 8 comparative vocabulary across 5 Luhya/Masaba dialects (pp. 980–992), and Chapter XVII Bantu Kavirondo ethnography (pp. 722–755).",
     "icon": "Layers",
+    "color": "#2FA463",
     "skills": [
       {
         "id": "luhya-johnston-1902-set8-prefixes-skill",
-        "title": "The 16 Lukonde Prefixes (p. 1001), Lusōkwia Tens & Set 8 Vocabulary (pp. 980–992)",
+        "title": "The 16 Lukonde Prefixes, Lusōkwia Tens & Set 8 Vocabulary",
         "icon": "BookOpen",
         "description": "Practice the 16 Lukonde prefixes that solved Bleek's Bantu concord hypothesis and verified Set 8 entries.",
         "tips": "West Elgon Lukonde/Masaba preserves full disyllabic prefixes: Umu- (Cl. 1), Baba- (Cl. 2), Gumu- (Cl. 3), Gimi- (Cl. 4), Ili- (Cl. 5), Gama- (Cl. 6), Bibi- (Cl. 8), Lulu- (Cl. 11), Ruru-/Tutu- (Cl. 12), Kaka- (Cl. 13), Bubu- (Cl. 14), Kuku- (Cl. 15).",
         "words": [
           {
-            "target": "Umu- / Baba- • Gumu- / Gimi- • Ili- / Gama- • Ki-(Si-) / Bibi- • Lulu- / Zi-, Tsi-(Ci-) • Kaka- / Ruru-(Tutu-) • Bubu- • Kuku-(Gu-) • Ha-(Wa-)",
-            "source": "The 16 Noun Prefixes of Lukonde (Johnston 1902, p. 1001)",
-            "pronunciation": "u-mu ba-ba / gu-mu gi-mi / i-li ga-ma / ki bi-bi / lu-lu tsi / ka-ka ru-ru / bu-bu / ku-ku",
-            "hint": "Johnston (1902, Vol. II, pp. 889–891, 1001)"
+            "target": "Kuku-",
+            "source": "Gu-",
+            "pronunciation": "kuku-"
           },
           {
-            "target": "Kamagumi kabili (20) • Kamagumi katatu (30) • Kamagumi kanne (40) • Kamagumi karano (50)",
-            "source": "Twenty • Thirty • Forty • Fifty (in Lusōkwia, Set 8, p. 989)",
-            "pronunciation": "ka-ma-gu-mi ka-bi-li / ka-ma-gu-mi ka-ta-tu / ka-ma-gu-mi kan-ne / ka-ma-gu-mi ka-ra-no",
-            "hint": "Johnston (1902, Vol. II, p. 989)"
+            "target": "Ha-",
+            "source": "Wa-",
+            "pronunciation": "ha-"
           },
           {
-            "target": "Akhana (pl. Ruana) • Iduasi • Racari • Olumutana / Sirkhanga / Obukanga • Injugu / Imbande • Ihumba • Mwieka • Ehei • Alia efu",
-            "source": "Little child • Female (of mammals & reptiles) • Male (of beasts) • Good spirit • Ground-nut • Small nose • Breeze • Castrated bullock • Our eating",
-            "pronunciation": "a-kha-na ru-a-na / i-dua-si / ra-ca-ri / o-lu-mu-ta-na / i-nju-gu / i-hum-ba / mwie-ka / e-hei",
-            "hint": "Johnston (1902, Vol. II, Set 8, pp. 980–992)"
+            "target": "Kamagumi kabili (20)",
+            "source": "Twenty",
+            "pronunciation": "kamagumi-kabili"
+          },
+          {
+            "target": "Kamagumi katatu (30)",
+            "source": "Thirty",
+            "pronunciation": "kamagumi-katatu"
+          },
+          {
+            "target": "Kamagumi kanne (40)",
+            "source": "Forty",
+            "pronunciation": "kamagumi-kanne"
+          },
+          {
+            "target": "Kamagumi karano (50)",
+            "source": "Fifty",
+            "pronunciation": "kamagumi-karano"
+          },
+          {
+            "target": "Akhana (pl. Ruana)",
+            "source": "Little child",
+            "pronunciation": "akhana"
+          },
+          {
+            "target": "Iduasi",
+            "source": "Female (of mammals & reptiles)",
+            "pronunciation": "iduasi"
+          },
+          {
+            "target": "Racari",
+            "source": "Male (of beasts)",
+            "pronunciation": "racari"
+          },
+          {
+            "target": "Olumutana / Sirkhanga / Obukanga",
+            "source": "Good spirit",
+            "pronunciation": "olumutana"
+          },
+          {
+            "target": "Injugu / Imbande",
+            "source": "Ground-nut",
+            "pronunciation": "injugu"
+          },
+          {
+            "target": "Ihumba",
+            "source": "Small nose",
+            "pronunciation": "ihumba"
+          },
+          {
+            "target": "Mwieka",
+            "source": "Breeze",
+            "pronunciation": "mwieka"
+          },
+          {
+            "target": "Ehei",
+            "source": "Castrated bullock",
+            "pronunciation": "ehei"
+          },
+          {
+            "target": "Alia efu",
+            "source": "Our eating",
+            "pronunciation": "alia-efu"
           }
         ],
         "sentences": [
@@ -3047,500 +3142,825 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "target": "Lidala liefu (Esialo siefwe) — Ingo yeru — Ingo yefu — Alia efu.",
             "source": "Our town (Lunyara, Lukabarasi, Lurimi) — Our eating (Johnston 1902, pp. 989–990)."
           }
-        ],
-        "authoredExercises": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luhya-unit-13",
+    "unitNumber": 13,
+    "title": "Rev. N. Stam 'The Bahanga'",
+    "description": "Master 100% of Rev. N. Stam's 1929 monograph 'The Bahanga' (Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179): the 11-generation Bakhitsetse royal genealogy from Kwandedi & Wanga to Mumia, Osundwa II, and Rapando, burial & sacrificial diagrams (Figs. 1–2), 5 special sacrifices, 6 practitioners, 2 ordeals, 10 omens, twins, marriage, and musiro totems.",
+    "icon": "Crown",
+    "color": "#2FA463",
+    "skills": [
+      {
+        "id": "luhya-stam-1929-13-1-history-genealogy-burial",
+        "title": "Tribal History, 11-Generation Bakhitsetse Genealogy & Burial Rites",
+        "icon": "Crown",
+        "description": "Learn the p. 145 Map terms, the royal lineage from Kwandedi and Wanga to Mumia, Osundwa II, and Rapando, royal sitting burial & Matungo bone procession, and Fig. 1 commoner burial positions.",
+        "tips": "On the p. 145 Map, the country is Buhanga, the language Luhanga, a native Muhanga, and the people Bahanga. Wanga hid his royal thick copper bracelet under his skin cloak while sweeping for Muyima on Imanga hill, was joined at Bijifi by 3 Kabras clans (Bakyero/Bakhyero, Banamagwa, Bakhyikawa), founded Mumias and Matungo, and founded the Bakhitsetse royal line.",
+        "words": [
           {
-            "type": "multiple_choice",
-            "prompt": "In Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902, pp. 889–891, 1001), which West Elgon Bantu prefixes solved Dr. Wilhelm Bleek's hypothesis regarding the origin of the concords gu-, gi-, and ga-?",
-            "correctAnswer": "Lukonde / Masaba Class 3 Gumu- (concord gu-), Class 4 Gimi- (concord gi-), and Class 6 Gama- (concord ga-)",
-            "options": [
-              "Lukonde / Masaba Class 3 Gumu- (concord gu-), Class 4 Gimi- (concord gi-), and Class 6 Gama- (concord ga-)",
-              "Swahili Class 3 M-, Class 4 Mi-, and Class 6 Ma-",
-              "Kikuyu Class 16 Ha- and Kamba Class 16 Pa-",
-              "Ja-luo prefixes Ja-, Jo-, and Nya-"
-            ],
-            "hint": "See Johnston (1902, Vol. II, pp. 889–891, 1001)"
+            "target": "Buhanga",
+            "source": "Country of the Bahanga",
+            "pronunciation": "buhanga"
+          },
+          {
+            "target": "Luhanga",
+            "source": "Language of the Bahanga",
+            "pronunciation": "luhanga"
+          },
+          {
+            "target": "Muhanga (sg.)",
+            "source": "Native (singular)",
+            "pronunciation": "muhanga"
+          },
+          {
+            "target": "Bahanga (pl.)",
+            "source": "Natives (plural) (Map, p. 145)",
+            "pronunciation": "bahanga"
+          },
+          {
+            "target": "Kwandedi → Wanga & Khabiagala → Waballa & Murono (→ Kitai)",
+            "source": "Early Bahanga royal genealogy from Teriki & Khyira/Bwagwe (Kabras) to Imanga",
+            "pronunciation": "kwandedi-wanga-khabiagala-waballa",
+            "hint": "Stam (1929, pp. 143–148)"
+          },
+          {
+            "target": "Wamukoya [I] → Netya & Kweyu",
+            "source": "Later Bahanga royal genealogy of the Bakhitsetse family at Mumias/Matungo and",
+            "pronunciation": "wamukoya-netya-kweyu",
+            "hint": "Stam (1929, pp. 146–148)"
+          },
+          {
+            "target": "okhufwa",
+            "source": "Death / to die",
+            "pronunciation": "okhufwa"
+          },
+          {
+            "target": "okhuyaberwa",
+            "source": "Burial / to be buried",
+            "pronunciation": "okhuyaberwa"
+          },
+          {
+            "target": "ekhyirindwa",
+            "source": "Grave",
+            "pronunciation": "ekhyirindwa"
+          },
+          {
+            "target": "okhusenera ekhyirindwa ekhyo mwami",
+            "source": "'To fix the grave of the chief'",
+            "pronunciation": "okhusenera-ekhyirindwa-ekhyo-mwami"
+          },
+          {
+            "target": "inkokho eyo mukulikho",
+            "source": "Chicken of the burial (roasted unplucked)",
+            "pronunciation": "inkokho-eyo-mukulikho"
+          },
+          {
+            "target": "okhuba khu maziga",
+            "source": "The great bewailing",
+            "pronunciation": "okhuba-khu-maziga"
+          },
+          {
+            "target": "okhukalusya evigumba",
+            "source": "'To return the bones'",
+            "pronunciation": "okhukalusya-evigumba"
+          },
+          {
+            "target": "okhusenera ekhyirindwa",
+            "source": "'To fasten the grave'",
+            "pronunciation": "okhusenera-ekhyirindwa"
+          },
+          {
+            "target": "omuyima",
+            "source": "Burial dance (1 year later)",
+            "pronunciation": "omuyima"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Okhusenera ekhyirindwa ekhyo mwami khu Matungo.",
+            "source": "To fix the grave of the chief at Matungo (Stam 1929, p. 149)."
+          }
+        ]
+      },
+      {
+        "id": "luhya-stam-1929-13-2-sacrifices-religion-practitioners",
+        "title": "Kraal Sacrificial Stones (Fig. 2), 5 Special Sacrifices,",
+        "icon": "Sparkles",
+        "description": "Master the Fig. 2 sacrificial stone layout, the 3-generation ancestral invocation, the 5 special sacrifices, Nasayi/Were prayers, 6 medical/magical practitioners, 2 ordeals, and 10 omens.",
+        "tips": "In Fig. 2 (p. 153), two ancestral stones (amagina ake misambwa) stand 10 ft in front of the first wife's hut flanking the 4-ft lusambwa/lusiola pole (from obsolete samba 'build' → reversive sambula 'break down'), with the miniature khatsu khe misango hut to the left and two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were.",
+        "words": [
+          {
+            "target": "omumali owe misango",
+            "source": "The sacrificer",
+            "pronunciation": "omumali-owe-misango"
+          },
+          {
+            "target": "omusango (okhumala omusango)",
+            "source": "Sacrifice (to sacrifice)",
+            "pronunciation": "omusango"
+          },
+          {
+            "target": "amagina ake misambwa",
+            "source": "Two stones of the ancestral spirits",
+            "pronunciation": "amagina-ake-misambwa"
+          },
+          {
+            "target": "lusambwa / lusiola (samba → sambula)",
+            "source": "4-ft Markhamia platycalyx pole from the khyemebekho/khyembekho grove",
+            "pronunciation": "lusambwa"
+          },
+          {
+            "target": "khatsu khe misango",
+            "source": "Little hut of the sacrifices (left of 1st wife's hut)",
+            "pronunciation": "khatsu-khe-misango"
+          },
+          {
+            "target": "amagina ako lunganyi",
+            "source": "Two flat stones on the pathway outside kraal gate dedicated to Nasayi/Were",
+            "pronunciation": "amagina-ako-lunganyi"
+          },
+          {
+            "target": "amalwa / ingombe / inkokho / isindu eye misango",
+            "source": "Sacrificial beer, cow, chicken & quail",
+            "pronunciation": "amalwa"
+          },
+          {
+            "target": "abakuku mulire omu",
+            "source": "'Grandfathers, eat here",
+            "pronunciation": "abakuku-mulire-omu"
+          },
+          {
+            "target": "evinambwa mulire omu",
+            "source": "Great-grandfathers, eat here",
+            "pronunciation": "evinambwa-mulire-omu"
+          },
+          {
+            "target": "evisoni mulire omu",
+            "source": "Great-great-grandfathers, eat here'",
+            "pronunciation": "evisoni-mulire-omu"
+          },
+          {
+            "target": "okhutisa imbusi (4 cases)",
+            "source": "Banging a goat's head around the hut",
+            "pronunciation": "okhutisa-imbusi"
+          },
+          {
+            "target": "Nasayi (< sayo) & Were",
+            "source": "God ('the one adored' < sayo) & Creator",
+            "pronunciation": "nasayi-were"
+          },
+          {
+            "target": "liyuba",
+            "source": "The sun",
+            "pronunciation": "liyuba"
+          },
+          {
+            "target": "Were ankhonyere",
+            "source": "'God has helped me' (p. 160)",
+            "pronunciation": "were-ankhonyere"
+          },
+          {
+            "target": "Nasayi akhulinde",
+            "source": "'May God protect you' (p. 161)",
+            "pronunciation": "nasayi-akhulinde"
+          },
+          {
+            "target": "ekhyinekha & vikhyeno",
+            "source": "Immortal soul/shadow & evil spirits (p. 162)",
+            "pronunciation": "ekhyinekha-vikhyeno"
+          },
+          {
+            "target": "omusebe (sitani)",
+            "source": "Masai-grave possession",
+            "pronunciation": "omusebe"
+          },
+          {
+            "target": "balosi (mulosi)",
+            "source": "Bewitchers",
+            "pronunciation": "balosi"
+          },
+          {
+            "target": "omundu owe misala",
+            "source": "Herbalist/cupping surgeon",
+            "pronunciation": "omundu-owe-misala"
+          },
+          {
+            "target": "omundu owe mikalo",
+            "source": "Charm doctor",
+            "pronunciation": "omundu-owe-mikalo"
+          },
+          {
+            "target": "omufumo",
+            "source": "Diviner",
+            "pronunciation": "omufumo"
+          },
+          {
+            "target": "omufira",
+            "source": "Poison-man (2-cow cure)",
+            "pronunciation": "omufira"
+          },
+          {
+            "target": "ekhyilulu",
+            "source": "Ordeal",
+            "pronunciation": "ekhyilulu"
+          },
+          {
+            "target": "amayoni amabi",
+            "source": "10 bad-bird omens",
+            "pronunciation": "amayoni-amabi"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Abakuku mulire omu; evinambwa mulire omu; evisoni mulire omu.",
+            "source": "Grandfathers, eat here; great-grandfathers, eat here; great-great-grandfathers, eat here (Stam 1929, p. 155)."
+          },
+          {
+            "target": "Were ankhonyere! Nasayi akhulinde.",
+            "source": "God has helped me! May God protect you (Stam 1929, pp. 160–161)."
+          }
+        ]
+      },
+      {
+        "id": "luhya-stam-1929-13-3-adoption-twins-marriage-totems-circumcision",
+        "title": "Makokha Adoption, Twins (Amakhwana), Marriage Rites, Musiro",
+        "icon": "Heart",
+        "description": "Practice the Luhanga terminology and customs for roadway foundling adoption, twin purification, 10-cattle dowry & wedding rites, Isaac's antelope totem, mutilations, and circumcision.",
+        "tips": "All Bahanga have Isaac's antelope (Boöcercus eurycerus) as their totem (musiro, 'the thing abstained from'), while Bahanga of Marama have the eland; totems are patrilineal and do not prevent intermarriage (only blood kinship bars marriage). Women never eat chickens, guinea fowl, eggs, sheep, suckling goat, or lepidosiren mudfish.",
+        "words": [
+          {
+            "target": "Makokha ('rubbish', p. 171)",
+            "source": "Name given to an illegitimate child exposed on a road junction and adopted by a",
+            "pronunciation": "ma-ko-kha",
+            "hint": "Stam (1929, p. 171)"
+          },
+          {
+            "target": "amakhwana",
+            "source": "Twins",
+            "pronunciation": "amakhwana"
+          },
+          {
+            "target": "okhutsiya khu makwana",
+            "source": "'To go to the twins'",
+            "pronunciation": "okhutsiya-khu-makwana"
+          },
+          {
+            "target": "okhutekherana",
+            "source": "To marry",
+            "pronunciation": "okhutekherana"
+          },
+          {
+            "target": "okhukhua omukhana",
+            "source": "To pay the dowry",
+            "pronunciation": "okhukhua-omukhana"
+          },
+          {
+            "target": "okhusira imbusi",
+            "source": "'To jump over the goat'",
+            "pronunciation": "okhusira-imbusi"
+          },
+          {
+            "target": "ingombe yarando",
+            "source": "'The stripped cow'",
+            "pronunciation": "ingombe-yarando"
+          },
+          {
+            "target": "musiro",
+            "source": "Clan totem",
+            "pronunciation": "musiro"
+          },
+          {
+            "target": "isambirire",
+            "source": "Grass used with saliva & cobwebs to burn the 3-stroke cheek mark (\\|/, 1.25 in.)",
+            "pronunciation": "isambirire"
+          },
+          {
+            "target": "okhukhyebwa & irumbi",
+            "source": "Circumcision & 4–5 month seclusion hut",
+            "pronunciation": "okhukhyebwa-irumbi"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Okhutekherana nende okhukhua omukhana: okhusira imbusi.",
+            "source": "To marry ('boil for one another') and to pay the bride-dowry: jumping over the goat (Stam 1929, pp. 173–175)."
           }
         ]
       }
     ]
+  },
+  {
+    "id": "luhya-unit-14",
+    "unitNumber": 14,
+    "title": "Logoori, Luragooli & Lubukusu in Payne, Pacchiarotti & Bosire",
+    "description": "Master all six Luhya-focused studies in 'Diversity in African languages' (2016): Logoori coronal palatalization (Ch. 9), 6 future inflections & 4 future constructions (Ch. 11), universal quantifiers vuri vs. -oosi (Ch. 12), Luragooli anticausative -Vk (Ch. 15), Lubukusu Transitive Reciprocal Constructions (Ch. 25), and Luhya enclitics in Kenyan comedy (Ch. 28).",
+    "icon": "BookOpen",
+    "color": "#0D9488",
+    "skills": [
+      {
+        "id": "luhya-payne-2016-14-1-logoori-palatalization-futures",
+        "title": "Logoori Coronal Palatalization & Oral-Text Future Tenses",
+        "icon": "Volume2",
+        "description": "Learn Logoori's 7-vowel system, dental/glottal palatalization, /h/-plosivization, coronal consonant-glide reduction (sj → ʃ), and the 6 future inflections and 4 auxiliary/subjunctive future constructions.",
+        "tips": "In Glewwe & Aly (2016, Ch. 9, pp. 165–183), verbs with [ʃ] in the infinitive whose 1SG is [ʃ] rather than [mb] have underlying /si/ (e.g., /ko-siɛ-a/ → [koʃja] 'to grind', 1SG [ʃjɛɛzaa]) rather than /h/ (/ko-he-a/ → [koʃa] 'to burn', 1SG [mbezaa]). In Sarvasy (2016, Ch. 11, pp. 201–219), Logoori oral texts use SP-ra- -a for both near (hodiernal/crastinal) and general future, plus auxiliary kʊman̪a ('to know') + Subjunctive.",
+        "words": [
+          {
+            "target": "Nj̪-anz-aa → n̪anzaa",
+            "source": "I like",
+            "pronunciation": "nj-anz-aa-nanzaa"
+          },
+          {
+            "target": "N-man̪-aa → man̪aa vs. N-man̪-i → maɲi",
+            "source": "I know vs. I knew",
+            "pronunciation": "n-man-aa-manaa-vs-n-man-i"
+          },
+          {
+            "target": "ka-n̪un̪i → kaɲuɲi",
+            "source": "small bird",
+            "pronunciation": "ka-nuni-kaui"
+          },
+          {
+            "target": "a-hir-aa → aʃiɾaa",
+            "source": "s/he is taking",
+            "pronunciation": "a-hir-aa-aiaa"
+          },
+          {
+            "target": "ko-roh-a → koroha vs. ko-roh-i → koroʃi",
+            "source": "to get tired vs. we got tired (h → ʃ / __ i)",
+            "pronunciation": "ko-roh-a-koroha-vs-ko-roh-i"
+          },
+          {
+            "target": "ke-hia → keʃa vs. eN-hia → embja",
+            "source": "new in Class 7 (hj → ʃ) vs. Class 9 (N-h → mb)",
+            "pronunciation": "ke-hia-kea-vs-en-hia"
+          },
+          {
+            "target": "ko-siɛ-a → koʃja vs. ko-he-a → koʃa",
+            "source": "to grind vs. to burn",
+            "pronunciation": "ko-ʃja / ʃjɛɛ-zaa / ko-ʃa / mbe-zaa",
+            "hint": "Glewwe & Aly (2016, Ch. 9, pp. 176–179, Ex. 22, 26)"
+          },
+          {
+            "target": "SP-ra- -a (Near/General)",
+            "source": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru & V-oosi va-ra-ɲor-a ɪ-taʤi",
+            "pronunciation": "sp-ra---a"
+          },
+          {
+            "target": "na-SP- -e (Middle)",
+            "source": "Na-kʊ-sjaj-e Majki w-etu ma-uwa",
+            "pronunciation": "na-sp---e"
+          },
+          {
+            "target": "SP-raka- -e / SP-aaka- -e (Remote)",
+            "source": "a-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani",
+            "pronunciation": "sp-raka---e"
+          },
+          {
+            "target": "naa-SP- -e (Long-Vowel Remote)",
+            "source": "Naa-a-kor-e ɪ-gaasi",
+            "pronunciation": "naa-sp---e"
+          },
+          {
+            "target": "SP-ri- -a (Indefinite)",
+            "source": "si va-ri-ɲar-a mba",
+            "pronunciation": "sp-ri---a"
+          },
+          {
+            "target": "Mu-gamba, man̪-a n-zj-e mʊ ɪ-skuru",
+            "source": "Tomorrow, I will go to school",
+            "pronunciation": "mu-gamba"
+          },
+          {
+            "target": "Ma mu-gamba ma-m-bok-e, ma-n-zj-e kʊ ɪ-gaasi j-eende",
+            "source": "And tomorrow I will wake up and go to my work (ma- + Subjunctive)",
+            "pronunciation": "ma-mu-gamba-ma-m-bok-e"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru",
+            "source": "Tomorrow, s/he will go to school"
+          }
+        ]
+      },
+      {
+        "id": "luhya-payne-2016-14-2-quantifiers-anticausative-bukusu-trc",
+        "title": "Logoori Quantifiers Vuri vs. -oosi, Luragooli Anticausative -Vk,",
+        "icon": "Layers",
+        "description": "Compare distributive vuri ('every') vs. modifier -oosi ('all/whole/any'), Luragooli telic anticausative -Vk, Lubukusu transitive reciprocals (-an + ba-b-eene khu b-eene), and Luhya discourse markers in Kenyan stand-up comedy.",
+        "tips": "In Landman (2016, Ch. 12), vuri ('every') is a strictly distributive D-head, whereas -oosi ('all, whole, any') is an agreeing AP modifier that can co-occur with vuri: soom-i vuri ki-tabu ch-oosi ('I read every whole book', p. 224). In Safir & Selvanathan (2016, Ch. 25), Lubukusu Ba-saani ba-a-biyil-an-a khu-khil-a ba-khasi allows both sloppy ('more than women hate each other') and strict ('more than women hate the men') readings, proving ba-b-eene khu b-eene is a direct object.",
+        "words": [
+          {
+            "target": "vuri muundu a-syeev-i vs. vaandu v-oosi va-syeev-i",
+            "source": "Every person danced vs. All the people danced",
+            "pronunciation": "vuri-muundu-a-syeev-i-vs"
+          },
+          {
+            "target": "soom-i vuri ki-tabu ch-oosi",
+            "source": "I read every whole book",
+            "pronunciation": "soom-i-vuri-ki-tabu-ch-oosi"
+          },
+          {
+            "target": "muriaŋgo gu-aram-ik-i kuturona na imboza",
+            "source": "The door opened from the wind",
+            "pronunciation": "muriaŋgo-gu-aram-ik-i-kuturona-na"
+          },
+          {
+            "target": "n-eny-a murianggo gu-han-ek-ɛ",
+            "source": "I want the door to be in a closed state",
+            "pronunciation": "n-eny-a-murianggo-gu-han-ek-"
+          },
+          {
+            "target": "Class Ia vs. Class Ib",
+            "source": "Luragooli Class Ia experiencer verbs vs. Class Ib affected-object verbs taking -Vk",
+            "pronunciation": "class-ia-vs-class",
+            "hint": "Gluckman & Bowler (2016, Ch. 15, p. 283, Table 4)"
+          },
+          {
+            "target": "Ba-saani ba-a-biyil-an-a khu-khil-a ba-khasi",
+            "source": "The men hate each other more than the women [hate each other / hate the men]",
+            "pronunciation": "ba-saani-ba-a-biyil-an-a-khu-khil-a-ba-khasi"
+          },
+          {
+            "target": "Ba-khasi ba-a-i-yeet-an-a",
+            "source": "The women helped each other and themselves",
+            "pronunciation": "ba-khasi-ba-a-i-yeet-an-a"
+          },
+          {
+            "target": "kuipia mama mja mzito",
+            "source": "Smart Joker, Ex. 9",
+            "pronunciation": "kuipia-mama-mja-mzito"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ba-saani ba-fumi-an-a ba-be-ene khu be-ene lukali",
+            "source": "The men praised each other a lot"
+          }
+        ]
+      },
+      {
+        "id": "luhya-selvanathan-2019-lubukusu-iav-focus-purvis-1909",
+        "title": "Lubukusu IAV Focus Asymmetry & Purvis",
+        "icon": "Sparkles",
+        "description": "Master Naga Selvanathan's (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) case-based analysis of Lubukusu Immediate-After-Verb (IAV) focus alongside Rev. J. B. Purvis's (1909, Chs. XV–XVI, pp. 317–351) Lumasaba grammar, July 20, 1907 letter, and 3 Bagisu fables.",
+        "tips": "In Lubukusu (Selvanathan 2019, pp. 625–636, consultant Justine Sikuku), a focused nominal DP must move to the Immediate-After-Verb (IAV) Spec,FP position (Wekesa a-a-ra embeba kalaha; *Wekesa a-a-ra kalaha embeba), whereas a focused non-nominal manner adjunct (kalaha 'slowly') only appears immediately after the verb when the object DP is dislocated with an object marker (Wekesa a-ki-ra kalaha ekikombe).",
+        "words": [
+          {
+            "target": "Wekesa a-a-ra embeba kalaha vs. Wekesa a-ki-ra kalaha (ekikombe)",
+            "source": "Lubukusu nominal DP vs. non-nominal manner adjunct IAV focus asymmetry explained via",
+            "pronunciation": "we-ke-sa a-a-ra e-mbe-ba ka-la-ha / a-ki-ra ka-la-ha",
+            "hint": "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku)"
+          },
+          {
+            "target": "Ibaruwa ya Nayu: 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena?",
+            "source": "Verbatim 1907 Lumasaba letter",
+            "pronunciation": "ibaruwa-ya-nayu-'nakuchyesere",
+            "hint": "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XV, pp. 324–325)"
+          },
+          {
+            "target": "3 Bagisu Fables",
+            "source": "Ch. XVI, pp. 333–351",
+            "pronunciation": "3-bagisu-fables"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Wekesa a-a-ra embeba kalaha",
+            "source": "Wekesa killed the rat slowly (object DP focus in IAV)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luhya-unit-15",
+    "unitNumber": 15,
+    "title": "Modern Luhya Conversation & Civic Life",
+    "description": "Everyday Marachi, Maragoli, Wanga, and Bukusu sentences, riddles, and civic vocabulary from Project Tafsiri v2.0 and Kencorpus",
+    "icon": "💬",
+    "color": "#10B981",
+    "skills": [
+      {
+        "id": "luhya-open-skill-1",
+        "title": "Everyday Conversation & Community",
+        "icon": "🗣️",
+        "description": "Conversational expressions across Lumarachi, Lulogooli, Luwanga, and Lubukusu",
+        "grammarTip": "In Luhya dialects, 'Mirembe' expresses peace and greeting, while 'tawe' (Lubukusu/Lumarachi) and 'dave' (Lulogooli) mark clause-final negation.",
+        "culturalNote": "Sourced from Dr. Moody Amakobe's Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, CC-BY-4.0) and Kencorpus (Wanjawa et al. 2022/2023, CC-BY-4.0).",
+        "words": [
+          {
+            "target": "Mirembe munyumba yange",
+            "source": "Peace in my house / Hello everyone inside",
+            "pronunciation": "mi-re-mbe mu-nyu-mba ya-nge"
+          },
+          {
+            "target": "Mulina wange ogoti",
+            "source": "My friend is lost",
+            "pronunciation": "mu-li-na wa-nge o-go-ti"
+          },
+          {
+            "target": "eliaro",
+            "source": "Boat or canoe (Luwanga)",
+            "pronunciation": "e-li-a-ro"
+          },
+          {
+            "target": "Obulwaye bwa Korona",
+            "source": "Coronavirus disease",
+            "pronunciation": "o-bu-lwa-ye bwa ko-ro-na"
+          },
+          {
+            "target": "Olarusia ifaini",
+            "source": "You will pay a fine",
+            "pronunciation": "o-la-ru-sia i-fa-i-ni"
+          },
+          {
+            "target": "Omuruki we sibala",
+            "source": "President of the Republic (Lubukusu)",
+            "pronunciation": "o-mu-ru-ki we si-ba-la"
+          },
+          {
+            "target": "Omujumbe",
+            "source": "Member of Parliament (Lubukusu)",
+            "pronunciation": "o-mu-ju-mbe"
+          },
+          {
+            "target": "Kamakangilo ka serekali",
+            "source": "Public hospitals (Lubukusu)",
+            "pronunciation": "ka-ma-ka-ngi-lo ka se-re-ka-li"
+          },
+          {
+            "target": "Chirupia che kamasomo",
+            "source": "School fees (Lubukusu)",
+            "pronunciation": "chi-ru-pia che ka-ma-so-mo"
+          },
+          {
+            "target": "Embako sebea ta!",
+            "source": "A hoe never tells a lie (proverb)",
+            "pronunciation": "e-mba-ko se-be-a ta"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Indede wefwe sangala kho abakeni basangale.",
+            "source": "Rejoice so that our guests may also rejoice."
+          },
+          {
+            "target": "Nafula yali yaria imbako; leelo yomilanila okhulima.",
+            "source": "Nafula used to fear the hoe; today she is dedicated to farming."
+          },
+          {
+            "target": "Niko balomile kali ng'ali.",
+            "source": "What they said is true."
+          },
+          {
+            "target": "Chikhaafu chingali ne bibiaayo bikali.",
+            "source": "Many cattle and much livestock."
+          }
+        ]
+      },
+        {
+        "id": "luhya-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Luhya (Luyia) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-",
+        "words": [
+                {
+                        "target": "Orio muno / Nyasaye akhasie",
+                        "source": "Thank you very much (Mulembe)",
+                        "pronunciation": "orio muno"
+                },
+                {
+                        "target": "leshiri",
+                        "source": "Pardon, to (Luwanga)",
+                        "pronunciation": "leshiri"
+                },
+                {
+                        "target": "miaiano",
+                        "source": "Peace (Luwanga)",
+                        "pronunciation": "miaiano"
+                },
+                {
+                        "target": "murembe and yoga",
+                        "source": "Salutation (Luwanga)",
+                        "pronunciation": "murembe and yoga"
+                },
+                {
+                        "target": "alubiri",
+                        "source": "Sorry, to be (Luwanga)",
+                        "pronunciation": "alubiri"
+                },
+                {
+                        "target": "unyanziri",
+                        "source": "Thanks (Luwanga)",
+                        "pronunciation": "unyanziri"
+                },
+                {
+                        "target": "usali",
+                        "source": "Peace (Lubukusu/Ketosh)",
+                        "pronunciation": "usali"
+                },
+                {
+                        "target": "murembi",
+                        "source": "Salutation (Lubukusu/Ketosh)",
+                        "pronunciation": "murembi"
+                },
+                {
+                        "target": "Abalimi balombanga In-kiω mushitsala",
+                        "source": "Farmers prepare to-morrow in the village",
+                        "pronunciation": "abalimi balombanga in-ki mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga Ama-χana mushitsala",
+                        "source": "Farmers prepare twins in the village",
+                        "pronunciation": "abalimi balombanga ama-ana mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga Ωmu-lωsi mushitsala",
+                        "source": "Farmers prepare witch in the village",
+                        "pronunciation": "abalimi balombanga mu-lsi mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga Ωbu-lωsi mushitsala",
+                        "source": "Farmers prepare witchcraft in the village",
+                        "pronunciation": "abalimi balombanga bu-lsi mushitsala"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Muli nende Eri-ta hango?",
+                        "source": "Do you have name at home?"
+                },
+                {
+                        "target": "Muli nende Iṅ-gusω hango?",
+                        "source": "Do you have parrot at home?"
+                },
+                {
+                        "target": "Muli nende Im-bωlω hango?",
+                        "source": "Do you have penis at home?"
+                },
+                {
+                        "target": "Muli nende Tsi-sωni hango?",
+                        "source": "Do you have shame at home?"
+                },
+                {
+                        "target": "Muli nende Umu-sumba hango?",
+                        "source": "Do you have slave at home?"
+                },
+                {
+                        "target": "Muli nende Ama-neke hango?",
+                        "source": "Do you have testicles at home?"
+                },
+                {
+                        "target": "Muli nende Esi-ndu hango?",
+                        "source": "Do you have thing at home?"
+                },
+                {
+                        "target": "Muli nende In-kiω hango?",
+                        "source": "Do you have to-morrow at home?"
+                },
+                {
+                        "target": "Muli nende Ama-χana hango?",
+                        "source": "Do you have twins at home?"
+                },
+                {
+                        "target": "Muli nende Ωmu-lωsi hango?",
+                        "source": "Do you have witch at home?"
+                },
+                {
+                        "target": "Muli nende Ωbu-lωsi hango?",
+                        "source": "Do you have witchcraft at home?"
+                },
+                {
+                        "target": "Muli nende E-we. U-. -χu- hango?",
+                        "source": "Do you have thou at home?"
+                }
+        ]
+},
+        {
+        "id": "luhya-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Luhya (Luyia) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-",
+        "words": [
+                {
+                        "target": "Abalimi balombanga E-we. U-. -χu- mushitsala",
+                        "source": "Farmers prepare thou in the village",
+                        "pronunciation": "abalimi balombanga e-we u- -u- mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga Ye. U-yu. Yi- mushitsala",
+                        "source": "Farmers prepare he in the village",
+                        "pronunciation": "abalimi balombanga ye u-yu yi- mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga E-fwe. Χω-. -χu-. -e-fu mushitsala",
+                        "source": "Farmers prepare we in the village",
+                        "pronunciation": "abalimi balombanga e-fwe - -u- -e-fu mushitsala"
+                },
+                {
+                        "target": "Abalimi balombanga E-nwe. Mu-. -ba-?. -e-nwe mushitsala",
+                        "source": "Farmers prepare ye in the village",
+                        "pronunciation": "abalimi balombanga e-nwe mu- -ba- -e-nwe mushitsala"
+                },
+                {
+                        "target": "Ebei ya ulukanga musokoni ni shina?",
+                        "source": "How much is sword at the market?",
+                        "pronunciation": "ebei ya ulukanga musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya awuliri musokoni ni shina?",
+                        "source": "How much is sleeping-place at the market?",
+                        "pronunciation": "ebei ya awuliri musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya lisero musokoni ni shina?",
+                        "source": "How much is mat at the market?",
+                        "pronunciation": "ebei ya lisero musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya linyonje musokoni ni shina?",
+                        "source": "How much is bracelet at the market?",
+                        "pronunciation": "ebei ya linyonje musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya lidala musokoni ni shina?",
+                        "source": "How much is homestead at the market?",
+                        "pronunciation": "ebei ya lidala musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya lasso musokoni ni shina?",
+                        "source": "How much is shoot at the market?",
+                        "pronunciation": "ebei ya lasso musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya shirungu musokoni ni shina?",
+                        "source": "How much is handle at the market?",
+                        "pronunciation": "ebei ya shirungu musokoni ni shina"
+                },
+                {
+                        "target": "Ebei ya Mma musokoni ni shina?",
+                        "source": "How much is mother at the market?",
+                        "pronunciation": "ebei ya mma musokoni ni shina"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Muli nende Ye. U-yu. Yi- hango?",
+                        "source": "Do you have he at home?"
+                },
+                {
+                        "target": "Muli nende E-fwe. Χω-. -χu-. -e-fu hango?",
+                        "source": "Do you have we at home?"
+                },
+                {
+                        "target": "Muli nende E-nwe. Mu-. -ba-?. -e-nwe hango?",
+                        "source": "Do you have ye at home?"
+                },
+                {
+                        "target": "Ebei ya Inyumba yañge musokoni ni shina?",
+                        "source": "How much is my house at the market?"
+                },
+                {
+                        "target": "Ebei ya enalo musokoni ni shina?",
+                        "source": "How much is iron wire at the market?"
+                },
+                {
+                        "target": "Ebei ya inzio musokoni ni shina?",
+                        "source": "How much is thy house at the market?"
+                },
+                {
+                        "target": "Ebei ya inzu iyo musokoni ni shina?",
+                        "source": "How much is his house at the market?"
+                },
+                {
+                        "target": "Ebei ya kikomo musokoni ni shina?",
+                        "source": "How much is brass wire at the market?"
+                },
+                {
+                        "target": "Ebei ya uwufwa musokoni ni shina?",
+                        "source": "How much is powder at the market?"
+                },
+                {
+                        "target": "Ebei ya indekero musokoni ni shina?",
+                        "source": "How much is cooking pot at the market?"
+                },
+                {
+                        "target": "Ebei ya ulukanga musokoni ni shina?",
+                        "source": "How much is sword at the market?"
+                },
+                {
+                        "target": "Ebei ya awuliri musokoni ni shina?",
+                        "source": "How much is sleeping-place at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
-
-LUHYA_UNITS.push({
-  "id": "luhya-unit-13-stam-1929-bahanga",
-  "title": "Unit 13: Rev. N. Stam (1929) 'The Bahanga' — Complete Wanga Royal Genealogy, Burial & Sacrificial Diagrams (Figs. 1–2), Religion, Practitioners, Omens, Marriage & Totems",
-  "description": "Master 100% of Rev. N. Stam's 1929 monograph 'The Bahanga' (Catholic Anthropological Conference, Vol. I, No. 4, pp. 143–179): the 11-generation Bakhitsetse royal genealogy from Kwandedi & Wanga to Mumia, Osundwa II, and Rapando, burial & sacrificial diagrams (Figs. 1–2), 5 special sacrifices, 6 practitioners, 2 ordeals, 10 omens, twins, marriage, and musiro totems.",
-  "icon": "Crown",
-  "skills": [
-    {
-      "id": "luhya-stam-1929-13-1-history-genealogy-burial",
-      "title": "Tribal History, 11-Generation Bakhitsetse Genealogy & Burial Rites (pp. 143–152, Map & Fig. 1)",
-      "icon": "Crown",
-      "description": "Learn the p. 145 Map terms, the royal lineage from Kwandedi and Wanga to Mumia, Osundwa II, and Rapando, royal sitting burial & Matungo bone procession, and Fig. 1 commoner burial positions.",
-      "tips": "On the p. 145 Map, the country is Buhanga, the language Luhanga, a native Muhanga, and the people Bahanga. Wanga hid his royal thick copper bracelet under his skin cloak while sweeping for Muyima on Imanga hill, was joined at Bijifi by 3 Kabras clans (Bakyero/Bakhyero, Banamagwa, Bakhyikawa), founded Mumias and Matungo, and founded the Bakhitsetse royal line.",
-      "words": [
-        {
-          "target": "Buhanga • Luhanga • Muhanga (sg.) • Bahanga (pl.)",
-          "source": "Country of the Bahanga • Language of the Bahanga • Native (singular) • Natives (plural) (Map, p. 145)",
-          "pronunciation": "bu-ha-nga / lu-ha-nga / mu-ha-nga / ba-ha-nga",
-          "hint": "Rev. N. Stam, The Bahanga (1929, p. 145 Map)"
-        },
-        {
-          "target": "Kwandedi → Wanga & Khabiagala → Waballa (→ Muswi → Wamukoya [I]) & Murono (→ Kitai)",
-          "source": "Early Bahanga royal genealogy from Teriki & Khyira/Bwagwe (Kabras) to Imanga (Muyima), Bijifi (Bakyero, Banamagwa, Bakhyikawa), Mumias, Matungo, Bukhayo & Matawa (Wakhalivu & Muswi's 4 arrows)",
-          "pronunciation": "kwa-nde-di / wa-nga / kha-bi-a-ga-la / wa-bal-la / mu-swi / wa-mu-ko-ya / mu-ro-no / ki-ta-i",
-          "hint": "Stam (1929, pp. 143–148)"
-        },
-        {
-          "target": "Wamukoya [I] → Netya (→ Osundwa [I] → Wamukoya [II] → Khyihundu → Mumia, Murunga, Mulama, Katima, Were & Kiteki [→ Osundwa II]) & Kweyu (→ Lumbasi → Sakwa → Lutomiya [→ Rapando], Lwambami & Kiwundu)",
-          "source": "Later Bahanga royal genealogy of the Bakhitsetse family at Mumias/Matungo and Khyimuli/Mukulu (pp. 146–148)",
-          "pronunciation": "ne-tya / o-su-ndwa / khyi-hu-ndu / mu-mi-a / kwe-yu / lu-mba-si / sa-kwa / lu-to-mi-ya / ra-pa-ndo",
-          "hint": "Stam (1929, pp. 146–148)"
-        },
-        {
-          "target": "okhufwa • okhuyaberwa • ekhyirindwa • okhusenera ekhyirindwa ekhyo mwami",
-          "source": "Death / to die • Burial / to be buried • Grave • 'To fix the grave of the chief' (exhuming, washing & butter-polishing the chief's bones to carry in a beerpot to Matungo 1–2 years after sitting burial in his hut)",
-          "pronunciation": "o-khu-fwa / o-khu-ya-be-rwa / e-khyi-ri-ndwa / o-khu-se-ne-ra e-khyi-ri-ndwa e-khyo mwa-mi",
-          "hint": "Stam (1929, pp. 148–149)"
-        },
-        {
-          "target": "inkokho eyo mukulikho • okhuba khu maziga • okhukalusya evigumba • okhusenera ekhyirindwa • omuyima",
-          "source": "Chicken of the burial (roasted unplucked) • The great bewailing • 'To return the bones' (by sons-in-law & wives without greeting or looking back) • 'To fasten the grave' • Burial dance (1 year later)",
-          "pronunciation": "i-nko-kho e-yo mu-ku-li-kho / o-khu-ba khu ma-zi-ga / o-khu-ka-lu-sya e-vi-gu-mba / o-mu-yi-ma",
-          "hint": "Stam (1929, pp. 150–151 & Fig. 1 p. 150)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Okhusenera ekhyirindwa ekhyo mwami khu Matungo.",
-          "source": "To fix the grave of the chief at Matungo (Stam 1929, p. 149)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "multiple_choice",
-          "prompt": "In Rev. N. Stam's 'The Bahanga' (1929, p. 146), which three devoted Kabras clans joined Wanga at Bijifi near Imanga hill, and which clan's head (Wakhalivu) nominates the chief by investing him with the copper bracelet and strangles a dying chief of the Bakhitsetse family?",
-          "correctAnswer": "Bakyero (Bakhyero), Banamagwa, and Bakhyikawa — with the Bakyero (Bakhyero) clan serving as kingmakers",
-          "options": [
-            "Bakyero (Bakhyero), Banamagwa, and Bakhyikawa — with the Bakyero (Bakhyero) clan serving as kingmakers",
-            "Bamakambo, Abekwe, and Abarebe",
-            "Abetakho, Babukusu, and Wamia",
-            "Bakhayo,Bamarama, and Batsotso"
-          ],
-          "hint": "See Stam (1929, pp. 146, 148)"
-        },
-        {
-          "type": "multiple_choice",
-          "prompt": "According to Figure 1 and pp. 149–150 of Stam (1929), how are a kraal owner (man), a woman, and children positioned in burial, and why is a pierced wild-fig leaf placed over the corpse's left ear?",
-          "correctAnswer": "Man inside the middle of his hut on his right side; woman outside to the left of the entrance on her left side; male child under right eaves & female child under left eaves — with a pierced leaf over the left ear so the dead can hear sacrifices",
-          "options": [
-            "Man inside the middle of his hut on his right side; woman outside to the left of the entrance on her left side; male child under right eaves & female child under left eaves — with a pierced leaf over the left ear so the dead can hear sacrifices",
-            "All commoners are buried sitting upright at Matungo hill",
-            "Men are buried outside the kraal gate and women inside the cattle pen",
-            "Corpses are cremated on the river bank immediately after death"
-          ],
-          "hint": "See Stam (1929, pp. 149–150, Fig. 1)"
-        },
-        {
-          "type": "match_pairs",
-          "prompt": "Match each Bahanga historical ruler in Stam (1929, pp. 143–148) with his key deed or succession:",
-          "correctAnswer": "Muswi: Posthumous son of Waballa given a girl's name at Matawa who slew 4 of Murono's followers with 4 arrows",
-          "pairs": [
-            {
-              "left": "Muswi",
-              "right": "Posthumous son of Waballa given a girl's name at Matawa who slew 4 of Murono's followers with 4 arrows"
-            },
-            {
-              "left": "Osundwa [I]",
-              "right": "Son of Netya proclaimed chief after Netya's death at Lwanda; rallied the Bahanga with 'death or victory'"
-            },
-            {
-              "left": "Mumia (retired 1928 → Osundwa [II])",
-              "right": "Son of Khyihundu; paramount chief with kraals at Mumias & Jinja, succeeded in 1928 by Kiteki's son Osundwa [II]"
-            },
-            {
-              "left": "Rapando (son of Lutomiya)",
-              "right": "Descendant of Kweyu (Kweyu → Lumbasi → Sakwa → Lutomiya → Rapando), chief of Mukulu"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "luhya-stam-1929-13-2-sacrifices-religion-practitioners",
-      "title": "Kraal Sacrificial Stones (Fig. 2), 5 Special Sacrifices, Rainmaking, Religion & 6 Practitioners (pp. 152–170)",
-      "icon": "Sparkles",
-      "description": "Master the Fig. 2 sacrificial stone layout, the 3-generation ancestral invocation, the 5 special sacrifices, Nasayi/Were prayers, 6 medical/magical practitioners, 2 ordeals, and 10 omens.",
-      "tips": "In Fig. 2 (p. 153), two ancestral stones (amagina ake misambwa) stand 10 ft in front of the first wife's hut flanking the 4-ft lusambwa/lusiola pole (from obsolete samba 'build' → reversive sambula 'break down'), with the miniature khatsu khe misango hut to the left and two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were.",
-      "words": [
-        {
-          "target": "omumali owe misango • omusango (okhumala omusango) • amagina ake misambwa • lusambwa / lusiola (samba → sambula)",
-          "source": "The sacrificer • Sacrifice (to sacrifice) • Two stones of the ancestral spirits (right stone to eldest son, left to 2nd son) • 4-ft Markhamia platycalyx pole from the khyemebekho/khyembekho grove",
-          "pronunciation": "o-mu-ma-li o-we mi-sa-ngo / a-ma-gi-na a-ke mi-sa-mbwa / lu-sa-mbwa / sa-mba sa-mbu-la",
-          "hint": "Stam (1929, pp. 152–153 & Fig. 2)"
-        },
-        {
-          "target": "khatsu khe misango • amagina ako lunganyi • amalwa / ingombe / inkokho / isindu eye misango",
-          "source": "Little hut of the sacrifices (left of 1st wife's hut) • Two flat stones on the pathway outside kraal gate dedicated to Nasayi/Were • Sacrificial beer, cow, chicken & quail",
-          "pronunciation": "kha-tsu khe mi-sa-ngo / a-ma-gi-na a-ko lu-nga-nyi / i-si-ndu e-ye mi-sa-ngo",
-          "hint": "Stam (1929, pp. 153–156 & Fig. 2)"
-        },
-        {
-          "target": "abakuku mulire omu • evinambwa mulire omu • evisoni mulire omu",
-          "source": "'Grandfathers, eat here • Great-grandfathers, eat here • Great-great-grandfathers, eat here' (3-generation sacrificial invocation, p. 155)",
-          "pronunciation": "a-ba-ku-ku mu-li-re o-mu / e-vi-na-mbwa mu-li-re o-mu / e-vi-so-ni mu-li-re o-mu",
-          "hint": "Stam (1929, p. 155)"
-        },
-        {
-          "target": "okhutisa imbusi (4 cases) • inkokho eyakulikhirwamwo",
-          "source": "Banging a goat's head around the hut (for skull fracture, running naked into a hut, broken waterpot, or dripping grass-ash salt filter) • Live white chicken held at center pole with 2 wing feathers stuck in ground to name a baby after a parent-in-law",
-          "pronunciation": "o-khu-ti-sa i-mbu-si / i-nko-kho e-ya-ku-li-khi-rwa-mwo",
-          "hint": "Stam (1929, pp. 156–158)"
-        },
-        {
-          "target": "Nasayi (< sayo) & Were • liyuba • Were ankhonyere • Nasayi akhulinde • ekhyinekha & vikhyeno",
-          "source": "God ('the one adored' < sayo) & Creator • The sun • 'God has helped me' (p. 160) • 'May God protect you' (p. 161) • Immortal soul/shadow & evil spirits (p. 162)",
-          "pronunciation": "na-sa-yi / we-re a-nkho-nye-re / na-sa-yi a-khu-li-nde / e-khyi-ne-kha / vi-khye-no",
-          "hint": "Stam (1929, pp. 159–162)"
-        },
-        {
-          "target": "omusebe (sitani) • balosi (mulosi) • omundu owe misala • omundu owe mikalo • omufumo • omufira • ekhyilulu • amayoni amabi",
-          "source": "Masai-grave possession • Bewitchers • Herbalist/cupping surgeon • Charm doctor (wild pig's tooth court charm) • Diviner • Poison-man (2-cow cure) • Ordeal (2-cow theft / 3-cow false accusation fine & Skull Ordeal) • 10 bad-bird omens",
-          "pronunciation": "o-mu-se-be / ba-lo-si / o-mu-ndu o-we mi-sa-la / o-mu-ndu o-we mi-ka-lo / o-mu-fu-mo / o-mu-fi-ra / e-khyi-lu-lu / a-ma-yo-ni a-ma-bi",
-          "hint": "Stam (1929, pp. 162–170)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Abakuku mulire omu; evinambwa mulire omu; evisoni mulire omu.",
-          "source": "Grandfathers, eat here; great-grandfathers, eat here; great-great-grandfathers, eat here (Stam 1929, p. 155)."
-        },
-        {
-          "target": "Were ankhonyere! Nasayi akhulinde.",
-          "source": "God has helped me! May God protect you (Stam 1929, pp. 160–161)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "multiple_choice",
-          "prompt": "In Figure 2 and pp. 152–154 of Stam (1929), what are the three sacrificial installations of a Bahanga kraal and how are the stones inherited?",
-          "correctAnswer": "(1) Two ancestral stones (amagina ake misambwa, right to eldest son, left to 2nd son) 10 ft in front of the 1st wife's hut flanking the 4-ft lusambwa pole; (2) the miniature khatsu khe misango hut to the left; and (3) two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were",
-          "options": [
-            "(1) Two ancestral stones (amagina ake misambwa, right to eldest son, left to 2nd son) 10 ft in front of the 1st wife's hut flanking the 4-ft lusambwa pole; (2) the miniature khatsu khe misango hut to the left; and (3) two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were",
-            "Four stones inside the cattle kraal inherited by the youngest daughter",
-            "A single stone inside the chief's granary",
-            "Three stones on the river bank dedicated to evil spirits (vikhyeno)"
-          ],
-          "hint": "See Stam (1929, pp. 152–154 & Fig. 2 p. 153)"
-        },
-        {
-          "type": "match_pairs",
-          "prompt": "Match each practitioner or legal/ritual term in Stam (1929, pp. 156–168) with its exact definition:",
-          "correctAnswer": "omundu owe mikalo: Charm doctor who hangs a banana-bark cattle-plague bundle on a kraal pole & puts burnt-wood ash in a wild pig's hollow tooth for court trials",
-          "pairs": [
-            {
-              "left": "omundu owe mikalo",
-              "right": "Charm doctor who hangs a banana-bark cattle-plague bundle on a kraal pole & puts burnt-wood ash in a wild pig's hollow tooth for court trials"
-            },
-            {
-              "left": "omundu owe misala",
-              "right": "Herbalist & surgeon who performs wet cupping with a perforated cow-horn tip sealed with beeswax"
-            },
-            {
-              "left": "omufira",
-              "right": "Poison-man who pricks a victim's toe with a poison-pointed walking stick or rubs a wild onion on his leg (2-cow cure fee)"
-            },
-            {
-              "left": "ekhyilulu",
-              "right": "Trial by ordeal: pounded-stick draught (2-cow theft fine / 3-cow false accusation fine) or drinking from a relative's skull"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "luhya-stam-1929-13-3-adoption-twins-marriage-totems-circumcision",
-      "title": "Makokha Adoption, Twins (Amakhwana), Marriage Rites, Musiro Totems & Circumcision (pp. 170–179)",
-      "icon": "Heart",
-      "description": "Practice the Luhanga terminology and customs for roadway foundling adoption, twin purification, 10-cattle dowry & wedding rites, Isaac's antelope totem, mutilations, and circumcision.",
-      "tips": "All Bahanga have Isaac's antelope (Boöcercus eurycerus) as their totem (musiro, 'the thing abstained from'), while Bahanga of Marama have the eland; totems are patrilineal and do not prevent intermarriage (only blood kinship bars marriage). Women never eat chickens, guinea fowl, eggs, sheep, suckling goat, or lepidosiren mudfish.",
-      "words": [
-        {
-          "target": "Makokha ('rubbish', p. 171)",
-          "source": "Name given to an illegitimate child exposed on a road junction and adopted by a childless woman (who throws her loin-fringe over it, ties a mussel shell to its right wrist, strings a waist bead, puts an ear ring in its ear & shaves its head)",
-          "pronunciation": "ma-ko-kha",
-          "hint": "Stam (1929, p. 171)"
-        },
-        {
-          "target": "amakhwana • okhutsiya khu makwana",
-          "source": "Twins • 'To go to the twins' (after 2-month seclusion, draping a Passifloraceae creeper, sprinkling Trifolium clover, Caesalpiniaceae & sheep dung across a 10-mile radius, and sinking the excrement pot in a deep river)",
-          "pronunciation": "a-ma-khwa-na / o-khu-tsi-ya khu ma-kwa-na",
-          "hint": "Stam (1929, pp. 172–173)"
-        },
-        {
-          "target": "okhutekherana • okhukhua omukhana (1 bull + 1 heifer + 8 cows; 3 goats = 1 cow)",
-          "source": "To marry (lit. 'to boil for one another') • To pay the dowry (10 head of cattle total, paid in installments as calves are born)",
-          "pronunciation": "o-khu-te-khe-ra-na / o-khu-khu-a o-mu-kha-na",
-          "hint": "Stam (1929, pp. 173–174)"
-        },
-        {
-          "target": "okhusira imbusi • ingombe yarando",
-          "source": "'To jump over the goat' (bridal rite before eating at the groom's kraal) • 'The stripped cow' (sent by the groom next day if the bride is a virgin, speared by her paternal aunt)",
-          "pronunciation": "o-khu-si-ra i-mbu-si / i-ngo-mbe ya-ra-ndo",
-          "hint": "Stam (1929, p. 175)"
-        },
-        {
-          "target": "musiro (Boöcercus eurycerus & eland) • isambirire • okhukhyebwa & irumbi",
-          "source": "Clan totem ('the thing abstained from': Isaac's antelope for all Bahanga; eland in Marama; patrilineal & non-exogamous) • Grass used with saliva & cobwebs to burn the 3-stroke cheek mark (\\|/, 1.25 in.) • Circumcision (every 2–3 yrs, ages 15–25, by Kakalelwa/Abarebe operators) & 4–5 month seclusion hut",
-          "pronunciation": "mu-si-ro / i-sa-mbi-ri-re / o-khu-khye-bwa / i-ru-mbi",
-          "hint": "Stam (1929, pp. 176–179)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Okhutekherana nende okhukhua omukhana: okhusira imbusi.",
-          "source": "To marry ('boil for one another') and to pay the bride-dowry: jumping over the goat (Stam 1929, pp. 173–175)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "multiple_choice",
-          "prompt": "In Rev. N. Stam's 'The Bahanga' (1929, pp. 173–176), what is the literal meaning of 'okhutekherana' (to marry), what is the dowry ('okhukhua omukhana'), and what happens 5–6 months after the wedding?",
-          "correctAnswer": "'To boil for one another'; dowry is 1 young bull, 1 heifer, and 8 cows (3 goats = 1 cow); after 5–6 months of eating cold food from her mother-in-law's kitchen, the bride brings an 8-piece cooking outfit, throws river water at her husband, and her brother beats her with a stick (earning a heifer) before she cooks her first meal",
-          "options": [
-            "'To boil for one another'; dowry is 1 young bull, 1 heifer, and 8 cows (3 goats = 1 cow); after 5–6 months of eating cold food from her mother-in-law's kitchen, the bride brings an 8-piece cooking outfit, throws river water at her husband, and her brother beats her with a stick (earning a heifer) before she cooks her first meal",
-            "'To build a kraal'; dowry is 50 camels and the bride cooks on the wedding night",
-            "'To cross the river'; dowry is 6 goats and no cattle",
-            "'To herd cattle'; dowry is paid by the bride's father to the groom"
-          ],
-          "hint": "See Stam (1929, pp. 173–176)"
-        },
-        {
-          "type": "match_pairs",
-          "prompt": "Match each Bahanga custom in Stam (1929, pp. 171–179) with its ethnographic detail:",
-          "correctAnswer": "musiro: Isaac's antelope (Boöcercus eurycerus) for all Bahanga (eland in Marama); patrilineal & does not bar marriage between same-totem families",
-          "pairs": [
-            {
-              "left": "musiro",
-              "right": "Isaac's antelope (Boöcercus eurycerus) for all Bahanga (eland in Marama); patrilineal & does not bar marriage between same-totem families"
-            },
-            {
-              "left": "Makokha",
-              "right": "Roadway foundling ('rubbish') adopted with loin-fringe, right-wrist mussel shell, waist bead & ear ring"
-            },
-            {
-              "left": "okhutsiya khu makwana",
-              "right": "Twin purification after 2 months using Passifloraceae creeper & Trifolium/Caesalpiniaceae/sheep-dung sprinkling across 10 miles"
-            },
-            {
-              "left": "okhukhyebwa & irumbi",
-              "right": "Circumcision every 2–3 years (ages 15–25) by Kakalelwa (Abarebe) operators, followed by 4–5 months in seclusion lodges"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-});
-
-// ── Unit 14: Complete Line-by-Line Integration of Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., "Diversity in African languages: Selected papers from the 46th Annual Conference on African Linguistics" (Berlin: Language Science Press, 2016, Chs. 9, 11, 12, 15, 25 & 28) ──
-LUHYA_UNITS.push({
-  "id": "luhya-unit-14-payne-2016-diversity-complete",
-  "title": "Unit 14: Logoori, Luragooli & Lubukusu in Payne, Pacchiarotti & Bosire (2016)",
-  "description": "Master all six Luhya-focused studies in 'Diversity in African languages' (2016): Logoori coronal palatalization (Ch. 9), 6 future inflections & 4 future constructions (Ch. 11), universal quantifiers vuri vs. -oosi (Ch. 12), Luragooli anticausative -Vk (Ch. 15), Lubukusu Transitive Reciprocal Constructions (Ch. 25), and Luhya enclitics in Kenyan comedy (Ch. 28).",
-  "icon": "BookOpen",
-  "number": 14,
-  "color": "#0D9488",
-  "skills": [
-    {
-      "id": "luhya-payne-2016-14-1-logoori-palatalization-futures",
-      "title": "Logoori Coronal Palatalization (Ch. 9, pp. 165–183) & Oral-Text Future Tenses (Ch. 11, pp. 201–219)",
-      "icon": "Volume2",
-      "description": "Learn Logoori's 7-vowel system, dental/glottal palatalization, /h/-plosivization, coronal consonant-glide reduction (sj → ʃ), and the 6 future inflections and 4 auxiliary/subjunctive future constructions.",
-      "tips": "In Glewwe & Aly (2016, Ch. 9, pp. 165–183), verbs with [ʃ] in the infinitive whose 1SG is [ʃ] rather than [mb] have underlying /si/ (e.g., /ko-siɛ-a/ → [koʃja] 'to grind', 1SG [ʃjɛɛzaa]) rather than /h/ (/ko-he-a/ → [koʃa] 'to burn', 1SG [mbezaa]). In Sarvasy (2016, Ch. 11, pp. 201–219), Logoori oral texts use SP-ra- -a for both near (hodiernal/crastinal) and general future, plus auxiliary kʊman̪a ('to know') + Subjunctive.",
-      "words": [
-        {
-          "target": "Nj̪-anz-aa → n̪anzaa • N-man̪-aa → man̪aa vs. N-man̪-i → maɲi • ka-n̪un̪i → kaɲuɲi",
-          "source": "I like • I know vs. I knew • small bird (dental j̪ → j and n̪ → ɲ before /i, u/)",
-          "pronunciation": "n̪a-nzaa / ma-n̪aa / ma-ɲi / ka-ɲu-ɲi",
-          "hint": "Glewwe & Aly (2016, Ch. 9, p. 167, Ex. 8)"
-        },
-        {
-          "target": "a-hir-aa → aʃiɾaa • ko-roh-a → koroha vs. ko-roh-i → koroʃi • ke-hia → keʃa vs. eN-hia → embja",
-          "source": "s/he is taking • to get tired vs. we got tired (h → ʃ / __ i) • new in Class 7 (hj → ʃ) vs. Class 9 (N-h → mb)",
-          "pronunciation": "a-ʃi-ɾaa / ko-ro-ha / ko-ro-ʃi / ke-ʃa / e-mbja",
-          "hint": "Glewwe & Aly (2016, Ch. 9, pp. 168–173, Ex. 9, 12, 18)"
-        },
-        {
-          "target": "ko-siɛ-a → koʃja (1SG ʃjɛɛzaa, CL1 aʃjɛɛzaa) vs. ko-he-a → koʃa (1SG mbezaa, CL1 ahezaa)",
-          "source": "to grind (underlying /si/, undergoing sj → ʃ) vs. to burn (underlying /h/, undergoing h → b / N__ in 1SG)",
-          "pronunciation": "ko-ʃja / ʃjɛɛ-zaa / ko-ʃa / mbe-zaa",
-          "hint": "Glewwe & Aly (2016, Ch. 9, pp. 176–179, Ex. 22, 26)"
-        },
-        {
-          "target": "SP-ra- -a (Near/General) • na-SP- -e (Middle) • SP-raka- -e / SP-aaka- -e (Remote) • naa-SP- -e (Long-Vowel Remote) • SP-ri- -a (Indefinite)",
-          "source": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru & V-oosi va-ra-ɲor-a ɪ-taʤi • Na-kʊ-sjaj-e Majki w-etu ma-uwa • a-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani • Naa-a-kor-e ɪ-gaasi • si va-ri-ɲar-a mba",
-          "pronunciation": "a-ra-zja / na-kʊ-sja-je / a-ra-ka-a-ta-ɲe / naa-a-ko-re / si va-ri-ɲa-ra mba",
-          "hint": "Sarvasy (2016, Ch. 11, pp. 203–212, Table 1 & Ex. 1–21)"
-        },
-        {
-          "target": "Mu-gamba, man̪-a n-zj-e mʊ ɪ-skuru • Ma mu-gamba ma-m-bok-e, ma-n-zj-e kʊ ɪ-gaasi j-eende",
-          "source": "Tomorrow, I will go to school (auxiliary kʊman̪a 'to know' + Subjunctive) • And tomorrow I will wake up and go to my work (ma- + Subjunctive)",
-          "pronunciation": "mu-ga-mba ma-n̪a n-zje / ma-m-bo-ke ma-n-zje",
-          "hint": "Sarvasy (2016, Ch. 11, pp. 214–217, Ex. 24, 29)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru • V-oosi va-ra-ɲor-a ɪ-taʤi.",
-          "source": "Tomorrow, s/he will go to school • All will find a crown (Sarvasy 2016, Ch. 11, pp. 204–205, Ex. 1 & 3)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "multiple_choice",
-          "prompt": "How do Eleanor Glewwe & Ann M. Aly (2016, Ch. 9, pp. 174–180) resolve the apparent rule-ordering paradox in Logoori between /h/-Plosivization (h → b / N__) and Nasal Deletion in 1SG forms like [ʃoovaa] ('I am throwing out') and [ʃjɛɛzaa] ('I am grinding')?",
-          "correctAnswer": "Those verbs have underlying /si/ rather than /h/ (/N-siov-aa/, /ko-siɛ-a/), so Nasal Deletion deletes /N/ before /s/, Gliding turns /i/ into [j], and Coronal Consonant-Glide Reduction (sj → ʃ) produces [ʃ]",
-          "options": [
-            "Those verbs have underlying /si/ rather than /h/ (/N-siov-aa/, /ko-siɛ-a/), so Nasal Deletion deletes /N/ before /s/, Gliding turns /i/ into [j], and Coronal Consonant-Glide Reduction (sj → ʃ) produces [ʃ]",
-            "Logoori has no nasal prefixes in the 1st person singular",
-            "All /b/ consonants turn into [ʃ] before back vowels",
-            "Those verbs are borrowed from Arabic without prefixes"
-          ],
-          "hint": "See Glewwe & Aly (2016, Ch. 9, §4.2, pp. 176–179)"
-        }
-      ]
-    },
-    {
-      "id": "luhya-payne-2016-14-2-quantifiers-anticausative-bukusu-trc",
-      "title": "Logoori Quantifiers Vuri vs. -oosi (Ch. 12), Luragooli Anticausative -Vk (Ch. 15), Lubukusu Reciprocals (Ch. 25) & Comedy Enclitics (Ch. 28)",
-      "icon": "Layers",
-      "description": "Compare distributive vuri ('every') vs. modifier -oosi ('all/whole/any'), Luragooli telic anticausative -Vk, Lubukusu transitive reciprocals (-an + ba-b-eene khu b-eene), and Luhya discourse markers in Kenyan stand-up comedy.",
-      "tips": "In Landman (2016, Ch. 12), vuri ('every') is a strictly distributive D-head, whereas -oosi ('all, whole, any') is an agreeing AP modifier that can co-occur with vuri: soom-i vuri ki-tabu ch-oosi ('I read every whole book', p. 224). In Safir & Selvanathan (2016, Ch. 25), Lubukusu Ba-saani ba-a-biyil-an-a khu-khil-a ba-khasi allows both sloppy ('more than women hate each other') and strict ('more than women hate the men') readings, proving ba-b-eene khu b-eene is a direct object.",
-      "words": [
-        {
-          "target": "vuri muundu a-syeev-i vs. vaandu v-oosi va-syeev-i • soom-i vuri ki-tabu ch-oosi",
-          "source": "Every person danced (strictly distributive D-head vuri) vs. All the people danced (agreeing modifier -oosi across 15 classes) • I read every whole book",
-          "pronunciation": "vu-ri muu-ndu a-syee-vi / vaa-ndu voo-si va-syee-vi / ki-ta-bu choo-si",
-          "hint": "Landman (2016, Ch. 12, pp. 221–225, Table 1 & Ex. 2, 13, 19)"
-        },
-        {
-          "target": "muriaŋgo gu-aram-ik-i kuturona na imboza • n-eny-a murianggo gu-han-ek-ɛ",
-          "source": "The door opened from the wind (anticausative -Vk licenses oblique causer, rejects agent) • I want the door to be in a closed state (telic result state of -Vk)",
-          "pronunciation": "mu-ria-ŋgo gu-a-ra-mi-ki / gu-ha-ne-kɛ",
-          "hint": "Gluckman & Bowler (2016, Ch. 15, pp. 276–279, Tables 1–3 & Ex. 4b, 10b)"
-        },
-        {
-          "target": "Class Ia (kuholeka 'be heard', kuroreka 'be seen', kudiirika 'be touched', kumeneka 'be tasted') vs. Class Ib (kuholeka 'be punched', kuliika 'be eaten')",
-          "source": "Luragooli Class Ia experiencer verbs vs. Class Ib affected-object verbs taking -Vk",
-          "pronunciation": "ku-ho-le-ka / ku-ro-re-ka / ku-dii-ri-ka / ku-me-ne-ka / ku-lii-ka",
-          "hint": "Gluckman & Bowler (2016, Ch. 15, p. 283, Table 4)"
-        },
-        {
-          "target": "Ba-saani ba-a-biyil-an-a (ba-b-eene khu b-eene) khu-khil-a ba-khasi • Ba-khasi ba-a-i-yeet-an-a (ba-b-eene khu ba-b-eene)",
-          "source": "The men hate each other more than the women [hate each other / hate the men] • The women helped each other and themselves (Lubukusu prefixal RFM i- + suffixal RCM -an)",
-          "pronunciation": "ba-saa-ni ba-a-bi-yi-la-na ba-bee-ne khu bee-ne / ba-kha-si ba-a-i-yee-ta-na",
-          "hint": "Safir & Selvanathan (2016, Ch. 25, pp. 500–505, Ex. 13, 18–23)"
-        },
-        {
-          "target": "ilisemanga • kuipia mama mja mzito (Smart Joker, Ex. 9) • -ko & -nga (Omwami, Ex. 11)",
-          "source": "Luhya-accented Swahili in Kenyan stand-up comedy (devoicing b → p in kuipia < kuibia, habitual -nga, and enclitics -ko & -nga)",
-          "pronunciation": "i-li-se-ma-nga / ku-i-pi-a / -ko / -nga",
-          "hint": "Michieka & Muaka (2016, Ch. 28, pp. 567–568, Ex. 9 & 11)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Ba-saani ba-fumi-an-a ba-be-ene khu be-ene lukali • O-mu-hayi ne e-twika bi-a-bon-an-a.",
-          "source": "The men praised each other a lot • The hunter and the giraffe saw each other (Safir & Selvanathan 2016, Ch. 25, pp. 503–504, Ex. 18a & 21a)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "match_pairs",
-          "prompt": "Match each Luhya linguistic phenomenon in Payne, Pacchiarotti & Bosire (2016) with its diagnostic property:",
-          "correctAnswer": "vuri vs. -oosi (Landman 2016, Ch. 12): Pre-nominal invariant D-quantifier ('every', strictly distributive) vs. post-nominal 15-class agreeing AP modifier ('all, whole, any')",
-          "pairs": [
-            {
-              "left": "vuri vs. -oosi (Landman 2016, Ch. 12)",
-              "right": "Pre-nominal invariant D-quantifier ('every', strictly distributive) vs. post-nominal 15-class agreeing AP modifier ('all, whole, any')"
-            },
-            {
-              "left": "-Vk in Luragooli (Gluckman & Bowler 2016, Ch. 15)",
-              "right": "Telic anticausative suffix (-ek/-ik/-ok/-uk) that targets the result state under kwenya/daave and rejects progressive -ang- and agentive by-phrases"
-            },
-            {
-              "left": "ba-b-eene khu b-eene (Safir & Selvanathan 2016, Ch. 25)",
-              "right": "Lubukusu reciprocal anaphor occupying IAV direct-object position and licensing both sloppy and strict comparative ellipsis readings"
-            },
-            {
-              "left": "-ko and -nga (Michieka & Muaka 2016, Ch. 28, Ex. 11)",
-              "right": "Luhya verbal/clausal enclitics transferred into Kenyan Swahili/English comedy routines"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-});
-
-// ── Register Purvis (1909) & Naga Selvanathan (2019, Ch. 32, pp. 623–645) in LUHYA_CONFIG.sources and append Lubukusu IAV Focus & Lumasaba Skill ──
-for (const _srcId of [
-  "purvis-masaba-1909",
-  "clem-jenks-sande-theory-description-2019",
-  "selvanathan-bantu-iav-focus-2019",
-]) {
-  if (LUHYA_CONFIG.sources && !LUHYA_CONFIG.sources.includes(_srcId)) {
-    LUHYA_CONFIG.sources.push(_srcId);
-  }
-}
-
-LUHYA_UNITS[LUHYA_UNITS.length - 1].skills.push({
-  id: "luhya-selvanathan-2019-lubukusu-iav-focus-purvis-1909",
-  title: "Lubukusu IAV Focus Asymmetry (Selvanathan 2019, Ch. 32, pp. 623–645) & Purvis (1909, Chs. XV–XVI, pp. 317–351)",
-  icon: "Sparkles",
-  description:
-    "Master Naga Selvanathan's (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) case-based analysis of Lubukusu Immediate-After-Verb (IAV) focus alongside Rev. J. B. Purvis's (1909, Chs. XV–XVI, pp. 317–351) Lumasaba grammar, July 20, 1907 letter, and 3 Bagisu fables.",
-  tips: "In Lubukusu (Selvanathan 2019, pp. 625–636, consultant Justine Sikuku), a focused nominal DP must move to the Immediate-After-Verb (IAV) Spec,FP position (Wekesa a-a-ra embeba kalaha; *Wekesa a-a-ra kalaha embeba), whereas a focused non-nominal manner adjunct (kalaha 'slowly') only appears immediately after the verb when the object DP is dislocated with an object marker (Wekesa a-ki-ra kalaha ekikombe).",
-  words: [
-    {
-      target: "Wekesa a-a-ra embeba kalaha (focused DP embeba MUST be IAV; *Wekesa a-a-ra kalaha embeba) vs. Wekesa a-ki-ra kalaha (ekikombe)",
-      source: "Lubukusu nominal DP vs. non-nominal manner adjunct IAV focus asymmetry explained via Case-licensing on F⁰",
-      pronunciation: "we-ke-sa a-a-ra e-mbe-ba ka-la-ha / a-ki-ra ka-la-ha",
-      hint: "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku)"
-    },
-    {
-      target: "Ibaruwa ya Nayu (July 20, 1907, Purvis 1909, pp. 324–325): 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena? Ne bimutsu barye? Ubambonere bosi... Byaweye. Ise wakyo, Nayu.'",
-      source: "Verbatim 1907 Lumasaba letter ('I salute you very much, my brother... The words are finished. I am yours, Nayu.')",
-      pronunciation: "na-ku-chye-se-re lu-ga-li mu-le-be wa-se / bya-we-ye i-se wa-kyo na-yu",
-      hint: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XV, pp. 324–325)"
-    },
-    {
-      target: "Bimanyisa Kusoma & Katabo Kanyoherwako (p. 324) • 17 'Why?' Idioms (pp. 330–331: Kiki?, Busa kiki?, Lwaki?, Niki?, Kiri kiki?) • 3 Bagisu Fables (Ch. XVI, pp. 333–351)",
-      source: "First Lumasaba primers, 17 ways of asking 'Why?', and the 3 Bagisu fables (Hawk & Hen, Disobedient Twins Mukwana & Mulongo, Woman & Bird in Famine)",
-      pronunciation: "bi-ma-nyi-sa ku-so-ma / ka-ta-bo ka-nyo-he-rwa-ko / mu-kwa-na mu-lo-ngo",
-      hint: "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Chs. XV–XVI, pp. 317–351)"
-    }
-  ],
-  sentences: [
-    {
-      target: "Wekesa a-a-ra embeba kalaha • Wekesa a-ki-ra kalaha ekikombe.",
-      source: "Wekesa killed the rat slowly (object DP focus in IAV) • Wekesa broke it (the cup) slowly (manner adjunct focus with object marker -ki-) (Selvanathan 2019, Ch. 32, pp. 626–631)."
-    }
-  ],
-  authoredExercises: [
-    {
-      type: "multiple_choice",
-      prompt: "In Naga Selvanathan's 'A case based account of Bantu IAV-focus' (2019, Ch. 32, pp. 623–645), why must focused nominal DPs in Lubukusu occupy the Immediate-After-Verb (IAV) position whereas focused manner adverbs like 'kalaha' ('slowly') need not move over an in-situ object?",
-      correctAnswer: "Because the Lubukusu focus head F⁰ bundles [uFocus] with structural [uCase] licensing, forcing focused nominal DPs (which need Case) to move to Spec,FP while caseless adverbs are licensed in situ via Agree",
-      options: [
-        "Because the Lubukusu focus head F⁰ bundles [uFocus] with structural [uCase] licensing, forcing focused nominal DPs (which need Case) to move to Spec,FP while caseless adverbs are licensed in situ via Agree",
-        "Because Lubukusu has no adverbs of manner",
-        "Because Lubukusu verbs always appear at the end of the sentence",
-        "Because object markers are prohibited in Lubukusu"
-      ],
-      hint: "Naga Selvanathan (2019, Ch. 32, pp. 634–643, DOI: 10.5281/zenodo.3367191)"
-    }
-  ]
-});

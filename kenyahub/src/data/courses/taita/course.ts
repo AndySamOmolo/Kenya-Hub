@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Taita (Kidawida / Kisagala) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const TAITA_CONFIG: LanguageConfig = {
   "id": "taita",
@@ -30,9 +25,11 @@ export const TAITA_CONFIG: LanguageConfig = {
 export const TAITA_UNITS: CourseUnit[] = [
   {
     "id": "taita-unit-1",
-    "title": "Unit 1: Salutations (pp. 115–116), Wray’s (1894) 9 Noun Classes & Numerals 1–1,000",
+    "unitNumber": 1,
+    "title": "Salutations, Wray’s 9 Noun Classes & Numerals 1–1,000",
     "description": "Master Kisagala and Kidawida salutations (Una maana? / Hodi! / Voro! Mzima? / Mwakucha!), Wray’s 9 noun classes (pp. 9–13), and counting 1–1,000 (pp. 20–24).",
     "icon": "BookOpen",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-greetings-nouns",
@@ -43,16 +40,29 @@ export const TAITA_UNITS: CourseUnit[] = [
         "culturalNote": "In Rev. J. Alfred Wray's 'An Elementary Introduction to the Taita Language' (1894, pp. 93, 114, 115–116), the complete Kisagala village salutation ('Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli / Sikwesi. — Una maana? — Na maana. — Kukeja maana? — Kweja maana'), morning ('Walamsaje? — Nalamuka banana'), evening ('Wasindaje? — Nasinda banana'), and parting ('Ko mbole — Haya ko mbole, genda banana') greetings are recorded alongside the baobab-pod riddle 'Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba' and Shaw's (1885) 'Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!'",
         "words": [
           {
-            "target": "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-            "source": "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-            "pronunciation": "u-na maa-na — na maa-na • wa-lamsa-je — na-la-mu-ka ba-na-na • wa-sinda-je — na-sinda ba-na-na",
-            "hint": "Wray (1894, pp. 115–116) Kisagala meeting, morning & evening salutations (kurogoa)"
+            "target": "Una maana? — Na maana",
+            "source": "Are you well? — I am well",
+            "pronunciation": "una-maana-na-maana"
           },
           {
-            "target": "Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana",
-            "source": "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)",
-            "pronunciation": "ko mbo-le — ha-ya ko mbo-le genda ba-na-na • na-ga-la ndam kalle maa-na",
-            "hint": "Wray (1894, p. 116) & Shaw (1885) Parting salutations"
+            "target": "Walamsaje? — Nalamuka banana",
+            "source": "How did you wake? — I awoke well",
+            "pronunciation": "walamsaje-nalamuka-banana"
+          },
+          {
+            "target": "Wasindaje? — Nasinda banana",
+            "source": "How have you spent the day? — I have spent it well",
+            "pronunciation": "wasindaje-nasinda-banana"
+          },
+          {
+            "target": "Ko mbole — Haya ko mbole, genda banana",
+            "source": "Good-bye — All right, good-bye, go in peace",
+            "pronunciation": "ko-mbole-haya-ko"
+          },
+          {
+            "target": "Nagala ndam kalle maana — Aya! nawe gale banana",
+            "source": "Goodbye, stay well — Yes! go well too (Parting salutations)",
+            "pronunciation": "nagala-ndam-kalle-maana"
           },
           {
             "target": "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
@@ -94,108 +104,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli.",
-            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is good (Wray 1894, pp. 115–116)."
+            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is"
           },
           {
             "target": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
             "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree (Wray 1894, pp. 93, 114)."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana\" in Taita?",
-            "correctAnswer": "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-            "options": [
-              "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)",
-              "Person (pl. People) / Old man, elder, gentleman",
-              "Child / Young woman / Young man",
-              "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well"
-            ],
-            "hint": "Wray (1894, pp. 115–116) Kisagala meeting, morning & evening salutations (kurogoa)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana\" in Taita?",
-            "correctAnswer": "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)",
-            "options": [
-              "Person (pl. People) / Old man, elder, gentleman",
-              "Child / Young woman / Young man",
-              "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)",
-              "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well"
-            ],
-            "hint": "Wray (1894, p. 116) & Shaw (1885) Parting salutations"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)\" in Taita?",
-            "correctAnswer": "Person (pl. People) / Old man, elder, gentleman",
-            "options": [
-              "Child / Young woman / Young man",
-              "Person (pl. People) / Old man, elder, gentleman",
-              "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-              "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)"
-            ],
-            "hint": "Wray (1894, pp. 9, 97, 108) Class I (m-/wa-)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Person (pl. People) / Old man, elder, gentleman\" in Taita?",
-            "correctAnswer": "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-            "options": [
-              "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-              "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-              "Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana",
-              "mwanake (pl. waanake) / mchana (pl. wachana) / mtawana (pl. watawana)"
-            ],
-            "hint": "mundu / mdu / m'go-si"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Child / Young woman / Young man\" in Taita?",
-            "correctAnswer": "mwanake (pl. waanake) / mchana (pl. wachana) / mtawana (pl. watawana)",
-            "options": [
-              "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-              "Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana",
-              "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-              "mwanake (pl. waanake) / mchana (pl. wachana) / mtawana (pl. watawana)"
-            ],
-            "hint": "mwa-na-ke / m-cha-na / m-ta-wa-na"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Taita expression with its English meaning:",
-            "correctAnswer": "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana: Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-            "pairs": [
-              {
-                "left": "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-                "right": "Are you well? — I am well • How did you wake? — I awoke well • How have you spent the day? — I have spent it well"
-              },
-              {
-                "left": "Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana",
-                "right": "Good-bye — All right, good-bye, go in peace • Goodbye, stay well — Yes! go well too (Parting salutations)"
-              },
-              {
-                "left": "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-                "right": "Person (pl. People) / Old man, elder, gentleman"
-              },
-              {
-                "left": "mwanake (pl. waanake) / mchana (pl. wachana) / mtawana (pl. watawana)",
-                "right": "Child / Young woman / Young man"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Taita term for \"Water / Fire / Sun (or day)\": ___",
-            "correctAnswer": "meji (machi) / moto / ijua (pl. majua)",
-            "options": [
-              "Una maana? — Na maana • Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-              "Ko mbole — Haya ko mbole, genda banana • Nagala ndam kalle maana — Aya! nawe gale banana",
-              "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-              "meji (machi) / moto / ijua (pl. majua)"
-            ],
-            "hint": "Wray (1894, pp. 11–12) Class V"
           }
         ]
       },
@@ -207,33 +120,33 @@ export const TAITA_UNITS: CourseUnit[] = [
         "tips": "Wray (1894, pp. 20–24) records Kisagala cardinals mosi/-moju (1), pili/mbili/-ili (2), tatu/ndatu (3), ine/-ne (4), sano (5), tandatu/ndandatu (6), mfungate (7), nane (8), ikenda (9), ikumi or afwa (10), mirongo miili or koruja (20/score), i'gana (100), and ma'gana ikumi (1,000), alongside all 13 adverbial enclitics (chwi, chululu, buu, lu, pi/fi, tse, doo, go, ku, tuku, ng'a, ng'we, ng'o, pp. 75–76).",
         "words": [
           {
-            "target": "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
+            "target": "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano",
             "source": "1, 2, 3, 4, 5",
             "pronunciation": "mo-si pi-li ta-tu ine sa-no",
             "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14 Taita) Kidawida"
           },
           {
-            "target": "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
+            "target": "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa",
             "source": "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)",
             "pronunciation": "tanda-tu mfunga-te na-ne i-kenda i-ku-mi / afwa",
             "hint": "Wray (1894, pp. 20–22)"
           },
           {
-            "target": "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
+            "target": "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last)",
             "source": "Ordinals & Adverbial Numerals",
             "pronunciation": "a hambi-ri a kai-li a ka-ta-tu a mba-le • ka-mo-ju kai-li",
             "hint": "Wray (1894, p. 23)"
           },
           {
-            "target": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to cultivate)",
+            "target": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to",
             "source": "Core Class IX ku- Infinitive Verbs",
             "pronunciation": "kushaia / ku-go-ra / ku-dea / ku-li-ma",
             "hint": "Wray (1894, pp. 13, 27–62) paradigm verb kushaia"
           },
           {
-            "target": "Nyamala chwi! / Mkundu lu / Onyilu pi (fi) / Omnyangi tse / Ikumi chululu / Chaoma ng'a (ng'we) / Si-shaia ng'o",
-            "source": "Dead silent! / Bright red / Jet black / Snow white / Ten and only ten / Bone dry / Not love at all",
-            "pronunciation": "nya-ma-la chwi / mkundu lu / onyi-lu pi / omnyangi tse / i-ku-mi chu-lu-lu / chao-ma ng'a / si-shaia ng'o",
+            "target": "Nyamala chwi! / Mkundu lu / Onyilu pi (fi) / Omnyangi tse / Ikumi",
+            "source": "Dead silent! / Bright red / Jet black / Snow white / Ten and only ten / Bone dry /",
+            "pronunciation": "nyamala-chwi",
             "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
           }
         ],
@@ -244,18 +157,6 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)\" in Taita?",
-            "correctAnswer": "1, 2, 3, 4, 5",
-            "options": [
-              "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)",
-              "Ordinals & Adverbial Numerals",
-              "Core Class IX ku- Infinitive Verbs",
-              "1, 2, 3, 4, 5"
-            ],
-            "hint": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14 Taita) Kidawida"
-          },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)\" in Taita?",
@@ -279,65 +180,6 @@ export const TAITA_UNITS: CourseUnit[] = [
               "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)"
             ],
             "hint": "Wray (1894, p. 23)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Ordinals & Adverbial Numerals\" in Taita?",
-            "correctAnswer": "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
-            "options": [
-              "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
-              "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
-              "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
-              "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to cultivate)"
-            ],
-            "hint": "-a ham-bi-ri, -a ka-i-li, -a m-ba-le, ka-mo-ju"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Core Class IX ku- Infinitive Verbs\" in Taita?",
-            "correctAnswer": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to cultivate)",
-            "options": [
-              "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
-              "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
-              "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
-              "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to cultivate)"
-            ],
-            "hint": "ku-sha-i-a / ku-go-ra / ku-de-a / ku-li-ma"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Taita expression with its English meaning:",
-            "correctAnswer": "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu): 1, 2, 3, 4, 5",
-            "pairs": [
-              {
-                "left": "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
-                "right": "1, 2, 3, 4, 5"
-              },
-              {
-                "left": "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
-                "right": "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)"
-              },
-              {
-                "left": "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
-                "right": "Ordinals & Adverbial Numerals"
-              },
-              {
-                "left": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to cultivate)",
-                "right": "Core Class IX ku- Infinitive Verbs"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Taita term for \"Dead silent! / Bright red / Jet black / Snow white / Ten and only ten / Bone dry / Not love at all\": ___",
-            "correctAnswer": "Nyamala chwi! / Mkundu lu / Onyilu pi (fi) / Omnyangi tse / Ikumi chululu / Chaoma ng'a (ng'we) / Si-shaia ng'o",
-            "options": [
-              "mosi (-moju), pili (mbili), tatu (ndatu), ine (-ne), sano (Kidawida: imweri, iwi, idadu, ina, isanu)",
-              "tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)",
-              "-a hambiri (1st), -a kaili (2nd), -a katatu (3rd), -a mbale (last) • kamoju (once), kaili (twice)",
-              "Nyamala chwi! / Mkundu lu / Onyilu pi (fi) / Omnyangi tse / Ikumi chululu / Chaoma ng'a (ng'we) / Si-shaia ng'o"
-            ],
-            "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
           }
         ]
       }
@@ -345,9 +187,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "Users",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-family-kinship-kinship-elders-2",
@@ -412,7 +256,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Sakamoto (2003) — Kidawida"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -574,7 +417,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -677,9 +519,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "Scale",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-numbers-measures-cardinals-ordinals-3",
@@ -715,11 +559,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "mosi / -moju (Kisagala) • imweri / -mweri (Kidawida)",
-            "source": "One"
+            "source": "One",
+            "pronunciation": "mosi"
           },
           {
             "target": "pili / mbili / -ili (Kisagala) • iwi / -wi (Kidawida)",
-            "source": "Two"
+            "source": "Two",
+            "pronunciation": "pili"
           },
           {
             "target": "-ose, putu",
@@ -728,8 +574,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           },
           {
-            "target": "tandatu / ndandatu / -tandatu (Kisagala) • irandadu (Kidawida)",
-            "source": "Six"
+            "target": "irandadu",
+            "source": "Kidawida",
+            "pronunciation": "irandadu"
           },
           {
             "target": "-ose -ile",
@@ -873,7 +720,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -976,9 +822,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "Tractor",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-food-agriculture-staple-foods-cookery-4",
@@ -1120,7 +968,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "culturalNote": "In Rev. J. Alfred Wray (1894, pp. 81, 91, 100, 125), boiled maize-meal bread is 'kinolo' and sorghum bread is 'kinaburi', native honey ('uki') comprises liquid honey ('ulonzi'), beeswax ('isungu'), brood ('mwana'), and underground stingless-bee honey ('mzata'), while traditional drinks include sugar-cane liquor ('mabangwa / njovi'), unfermented cane juice ('ulindi'), boiled sour milk ('maziwa, kivulala'), and maize gruel ('musa').",
         "words": [
           {
-            "target": "irugu (plant: ndembo — kisukari, ilalyi, mzuu, chiana, mrabalu, kigulugulu, ikono lya njovu)",
+            "target": "irugu",
             "source": "Banana & 7 Taita banana varieties",
             "pronunciation": "i-ru-gu / ndembo",
             "hint": "Wray (1894, p. 80) Banana fruit, plant & 7 named varieties"
@@ -1132,7 +980,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 80) Beef"
           },
           {
-            "target": "njovi / mabangwa (sweet beer: marami; unfermented juice: ulindi; gruel: musa)",
+            "target": "njovi / mabangwa",
             "source": "Beer & traditional Taita drinks",
             "pronunciation": "njo-vi / ma-bangwa / ma-ra-mi / u-lindi / mu-sa",
             "hint": "Wray (1894, pp. 80, 91) Beer & Drinks"
@@ -1162,13 +1010,17 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 82) Butter"
           },
           {
-            "target": "manga • ikaji, pl. makaji (Kipapa, Munjisoka, Nyagali, Kifumbe, Mserere, Marungura, Kisagai, Kitojo, Murizandata)",
-            "source": "Cassava • Sweet potato & 9 Taita varieties",
-            "pronunciation": "manga • i-ka-ji / ma-ka-ji",
-            "hint": "Wray (1894, pp. 83, 111) Cassava & Sweet potato"
+            "target": "manga",
+            "source": "Cassava",
+            "pronunciation": "manga"
           },
           {
-            "target": "-ishi; makes mbishi with nouns of the third class (nyama mbishi = raw meat)",
+            "target": "ikaji, pl. makaji",
+            "source": "Sweet potato & 9 Taita varieties",
+            "pronunciation": "ikaji"
+          },
+          {
+            "target": "-ishi; makes mbishi with nouns of the third class",
             "source": "Raw, unripe, uncooked",
             "pronunciation": "ish-i / mbish-i",
             "hint": "Wray (1894, pp. 14, 113) Raw"
@@ -1249,9 +1101,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "PawPrint",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-nature-wildlife-land-sky-water-5",
@@ -1316,7 +1170,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1550,9 +1403,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "User",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-body-health-anatomy-senses-6",
@@ -1617,7 +1472,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1779,7 +1633,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1882,9 +1735,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "Compass",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-verbs-grammar-action-verbs-7",
@@ -1949,7 +1804,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894) — Taita"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2111,7 +1965,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2214,9 +2067,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Taita (Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. A. Downes Shaw (1885), C. W. Hobley (1895), and Sir Harry H. Johnston (1919).",
     "icon": "Map",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-time-calendar-seasons-months-8",
@@ -2360,40 +2215,85 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, pp. 89, 110, 114, 126) Road, Path & Crossway"
           },
           {
-            "target": "charo (pl. varo) • mtambi, mcharo • mchukuzi, mtwali msigo",
-            "source": "Journey, caravan • Traveller • Porter, carrier",
-            "pronunciation": "cha-ro / va-ro • mtambi • mchu-ku-zi",
-            "hint": "Wray (1894, pp. 10, 83, 102, 111, 124) Caravan, Journey, Traveller & Porter"
+            "target": "charo (pl. varo)",
+            "source": "Journey, caravan",
+            "pronunciation": "charo"
           },
           {
-            "target": "kilongozi • chengo • kiambuko, andu kuambuka (bridge: ulalo)",
-            "source": "Guide, leader • Camp • Ford, river crossing (bridge)",
-            "pronunciation": "ki-longo-zi • chengo • kiam-bu-ko / u-la-lo",
-            "hint": "Wray (1894, pp. 82, 89, 96, 98) Guide, Camp, Ford & Bridge"
+            "target": "mtambi, mcharo",
+            "source": "Traveller",
+            "pronunciation": "mtambi"
           },
           {
-            "target": "andu ijua lyifuma (East) • mfumingovi (West, where the sun sets)",
-            "source": "East (where the sun rises) • West (where the sun sets)",
-            "pronunciation": "andu i-jua lyi-fu-ma • mfu-mingo-vi",
-            "hint": "Wray (1894, pp. 92, 122, 127) East & Sunset/West"
+            "target": "mchukuzi, mtwali msigo",
+            "source": "Porter, carrier",
+            "pronunciation": "mchukuzi"
           },
           {
-            "target": "ku-genda (to return: ku-gala, ku-uya; to follow: ku-irima; to go before: ku-kaiai)",
+            "target": "kilongozi",
+            "source": "Guide, leader",
+            "pronunciation": "kilongozi"
+          },
+          {
+            "target": "chengo",
+            "source": "Camp",
+            "pronunciation": "chengo"
+          },
+          {
+            "target": "kiambuko, andu kuambuka (bridge: ulalo)",
+            "source": "Ford, river crossing (bridge)",
+            "pronunciation": "kiambuko"
+          },
+          {
+            "target": "andu ijua lyifuma (East)",
+            "source": "East (where the sun rises)",
+            "pronunciation": "andu-ijua-lyifuma"
+          },
+          {
+            "target": "mfumingovi",
+            "source": "West (where the sun sets)",
+            "pronunciation": "mfumingovi"
+          },
+          {
+            "target": "ku-genda",
             "source": "To go (to return; to follow; to precede)",
             "pronunciation": "ku-genda / ku-gala / ku-uya / ku-irima / ku-kaiai",
             "hint": "Wray (1894, pp. 97–98) Go, to"
           },
           {
-            "target": "ku-joka, ku-kwela (to go up) • ku-selela, ku-jika (to go down) • ku-ambuka (to cross over)",
-            "source": "To ascend / climb • To descend • To cross over",
-            "pronunciation": "ku-joka / ku-kwela • ku-selela / ku-jika • ku-ambuka",
-            "hint": "Wray (1894, pp. 97–98) Go up, down & over"
+            "target": "ku-joka, ku-kwela (to go up)",
+            "source": "To ascend / climb",
+            "pronunciation": "ku-joka"
           },
           {
-            "target": "hambiri (in front, before) • nyuma (behind, after) • kulele, sa ndigi (far) • avui na (near)",
-            "source": "In front / before • Behind / after • Far away • Near to",
-            "pronunciation": "hambi-ri • nyu-ma • ku-le-le • a-vui na",
-            "hint": "Wray (1894, pp. 71–73, 78, 80, 94, 107) Spatial adverbs & prepositions"
+            "target": "ku-selela, ku-jika (to go down)",
+            "source": "To descend",
+            "pronunciation": "ku-selela"
+          },
+          {
+            "target": "ku-ambuka (to cross over)",
+            "source": "To cross over",
+            "pronunciation": "ku-ambuka"
+          },
+          {
+            "target": "hambiri (in front, before)",
+            "source": "In front / before",
+            "pronunciation": "hambiri"
+          },
+          {
+            "target": "nyuma (behind, after)",
+            "source": "Behind / after",
+            "pronunciation": "nyuma"
+          },
+          {
+            "target": "kulele, sa ndigi (far)",
+            "source": "Far away",
+            "pronunciation": "kulele"
+          },
+          {
+            "target": "avui na (near)",
+            "source": "Near to",
+            "pronunciation": "avui-na"
           },
           {
             "target": "mfingiri",
@@ -2402,7 +2302,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 99 under Heap) Wayside cairn"
           },
           {
-            "target": "ndege (ndege ya kwita = good omen to proceed; ndege ya kuuya = omen to turn back)",
+            "target": "ndege",
             "source": "Bird omen consulted by travellers on the road",
             "pronunciation": "nde-ge ya kwi-ta / nde-ge ya ku-uya",
             "hint": "Wray (1894, p. 108 under Omen)"
@@ -2482,9 +2382,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-9",
-    "title": "Unit 9: Conversational Phrases, Idioms & Daily Dialogue",
+    "unitNumber": 9,
+    "title": "Conversational Phrases, Idioms & Daily Dialogue",
     "description": "Master conversational phrases, salutations, interrogatives, narrative idioms & daily dialogue in Taita (Kisagala & Kidawida) built directly from Rev. J. Alfred Wray (1894, pp. 38–42, 58–59, 66, 73–76, 115–116) and Rev. A. Downes Shaw (1885).",
     "icon": "MessageCircle",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-phrases-idioms-everyday-dialogue-9",
@@ -2501,22 +2403,34 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 115) Village arrival salutation"
           },
           {
-            "target": "Ufuma kwihi? — Nafuma kisirani • Uvoro wa kisirani? — Ni 'gwaloli (or Sikwesi)",
-            "source": "Where do you come from? — I come from the hill-top • What is the news from the hill-top? — It is good (or There is none)",
-            "pronunciation": "u-fu-ma kwi-hi — na-fu-ma ki-si-ra-ni • u-vo-ro wa ki-si-ra-ni — ni 'gwa-lo-li / si-kwe-si",
-            "hint": "Wray (1894, p. 115) Asking news on visiting a village"
+            "target": "Ufuma kwihi? — Nafuma kisirani",
+            "source": "Where do you come from? — I come from the hill-top",
+            "pronunciation": "ufuma-kwihi-nafuma-kisirani"
           },
           {
-            "target": "Una maana? — Na maana • Kukeja maana? — Kweja maana",
-            "source": "Are you well? — I am well • Are they well at your village? — It is well",
-            "pronunciation": "u-na maa-na — na maa-na • ku-ke-ja maa-na — kwe-ja maa-na",
-            "hint": "Wray (1894, pp. 115–116) Personal & village health inquiry"
+            "target": "Uvoro wa kisirani? — Ni 'gwaloli (or Sikwesi)",
+            "source": "What is the news from the hill-top? — It is good (or There is none)",
+            "pronunciation": "uvoro-wa-kisirani-ni"
           },
           {
-            "target": "Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana",
-            "source": "How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-            "pronunciation": "wa-lamsa-je — na-la-mu-ka ba-na-na • wa-sinda-je — na-sinda ba-na-na",
-            "hint": "Wray (1894, p. 116) Morning & evening salutations"
+            "target": "Una maana? — Na maana",
+            "source": "Are you well? — I am well",
+            "pronunciation": "una-maana-na-maana"
+          },
+          {
+            "target": "Kukeja maana? — Kweja maana",
+            "source": "Are they well at your village? — It is well",
+            "pronunciation": "kukeja-maana-kweja-maana"
+          },
+          {
+            "target": "Walamsaje? — Nalamuka banana",
+            "source": "How did you wake? — I awoke well",
+            "pronunciation": "walamsaje-nalamuka-banana"
+          },
+          {
+            "target": "Wasindaje? — Nasinda banana",
+            "source": "How have you spent the day? — I have spent it well",
+            "pronunciation": "wasindaje-nasinda-banana"
           },
           {
             "target": "Ko mbole — Haya ko mbole, genda banana",
@@ -2525,28 +2439,55 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 116) Parting salutation"
           },
           {
-            "target": "Washaiani? (Udeshani?) • Izina lyako u ani? • Mdu uyu ni wani?",
-            "source": "What do you want? • What (who) is your name? • Whose man is this?",
-            "pronunciation": "wa-shaia-ni / u-desha-ni • i-zi-na lya-ko u a-ni • mdu u-yu ni wa-ni",
-            "hint": "Wray (1894, pp. 39–40) Interrogative pronouns ani? & ini? (-ni?)"
+            "target": "Washaiani? (Udeshani?)",
+            "source": "What do you want?",
+            "pronunciation": "washaiani"
           },
           {
-            "target": "Ushaia chihi? • Mwiti u'gu ni 'gwa kulonga ije? • Mbulani weja aha? (Wejila-ni aha?)",
-            "source": "Which thing do you want? • What is this pole for? • Why have you come here?",
-            "pronunciation": "u-shaia chi-hi • mwi-ti u'gu ni 'gwa ku-longa i-je • mbu-la-ni we-ja a-ha",
-            "hint": "Wray (1894, pp. 40–42, 60–61) Interrogatives -hi?, ije?, mbulani?"
+            "target": "Izina lyako u ani?",
+            "source": "What (who) is your name?",
+            "pronunciation": "izina-lyako-u-ani"
+          },
+          {
+            "target": "Mdu uyu ni wani?",
+            "source": "Whose man is this?",
+            "pronunciation": "mdu-uyu-ni-wani"
+          },
+          {
+            "target": "Ushaia chihi?",
+            "source": "Which thing do you want?",
+            "pronunciation": "ushaia-chihi"
+          },
+          {
+            "target": "Mwiti u'gu ni 'gwa kulonga ije?",
+            "source": "What is this pole for?",
+            "pronunciation": "mwiti-u'gu-ni-'gwa"
+          },
+          {
+            "target": "Mbulani weja aha? (Wejila-ni aha?)",
+            "source": "Why have you come here?",
+            "pronunciation": "mbulani-weja-aha"
           },
           {
             "target": "Si-gend-e! (Su-gend-e! / Sa-gend-e! / Si-shaie!)",
-            "source": "Oh yes, I am going! (You are going! / He is going! / I do love!) — Emphatic affirmative from negative",
+            "source": "Oh yes, I am going! — Emphatic affirmative from negative",
             "pronunciation": "si-gende / su-gende / sa-gende / si-shaie",
             "hint": "Wray (1894, pp. 58–59) Negative present + final -e for emphatic affirmation"
           },
           {
-            "target": "Weja-kugora n'ini? • Ke-wa'gamba? • Wandu-ba? Waloli-ba? Walima-ba?",
-            "source": "Why did you speak? • Then why do you say so? • Are they men? Are they good? Do they cultivate?",
-            "pronunciation": "we-ja-ku-go-ra n'i-ni • ke-wa'gamba • wandu-ba / wa-lo-li-ba / wa-li-ma-ba",
-            "hint": "Wray (1894, pp. 66, 74–75) keja-... n'ini?, proclitic ke- & interrogative -ba"
+            "target": "Weja-kugora n'ini?",
+            "source": "Why did you speak?",
+            "pronunciation": "weja-kugora-n'ini"
+          },
+          {
+            "target": "Ke-wa'gamba?",
+            "source": "Then why do you say so?",
+            "pronunciation": "ke-wa'gamba"
+          },
+          {
+            "target": "Wandu-ba? Waloli-ba? Walima-ba?",
+            "source": "Are they men? Are they good? Do they cultivate?",
+            "pronunciation": "wandu-ba-waloli-ba-walima-ba"
           }
         ],
         "sentences": [
@@ -2561,18 +2502,6 @@ export const TAITA_UNITS: CourseUnit[] = [
         ],
         "authoredExercises": [
           {
-            "type": "multiple_choice",
-            "prompt": "What does \"Hodi? — Hodi! karibu! Uka kitembo\" mean in English?",
-            "correctAnswer": "May I come in? — Come in! Come near! Sit down",
-            "options": [
-              "May I come in? — Come in! Come near! Sit down",
-              "Where do you come from? — I come from the hill-top • What is the news from the hill-top? — It is good (or There is none)",
-              "Are you well? — I am well • Are they well at your village? — It is well",
-              "Good-bye — All right, good-bye, go in peace"
-            ],
-            "hint": "Wray (1894, p. 115) Village arrival salutation"
-          },
-          {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Good-bye — All right, good-bye, go in peace\"",
             "correctAnswer": "Ko mbole — Haya ko mbole, genda banana",
@@ -2581,15 +2510,6 @@ export const TAITA_UNITS: CourseUnit[] = [
               "Ko mbole"
             ],
             "hint": "Starts with \"Ko mbole\" (Wray 1894, p. 116)"
-          },
-          {
-            "type": "translate_to_english",
-            "prompt": "Translate to English: \"Walamsaje? — Nalamuka banana • Wasindaje? — Nasinda banana\"",
-            "correctAnswer": "How did you wake? — I awoke well • How have you spent the day? — I have spent it well",
-            "acceptedAnswers": [
-              "How did you wake? — I awoke well • How have you spent the day? — I have spent it well"
-            ],
-            "hint": "Wray (1894, p. 116) Morning & evening salutations"
           },
           {
             "type": "match_pairs",
@@ -2630,57 +2550,108 @@ export const TAITA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Ando kungigenda aho mbele nikotū kuwona nyamandu",
-            "source": "Wait a bit and you will hear that on my going forward a little I saw a beast (Narrative idiom)",
+            "source": "Wait a bit and you will hear that on my going forward a little I saw a beast",
             "pronunciation": "ando kungi-genda a-ho mbe-le ni-ko-tu ku-wo-na nya-mandu",
             "hint": "Wray (1894, p. 59) Narrative idiom #1: Ando kungi... nikotū"
           },
           {
-            "target": "Angoije? (Simkukwita angoije? / Bwana agomba mwandu mwingi angoije?)",
+            "target": "Angoije?",
             "source": "Is it not so? (You beat him, didn't you? / The master spoke much, didn't he?)",
             "pronunciation": "ango-i-je",
             "hint": "Wray (1894, p. 59) Narrative idiom #2: Angoije?"
           },
           {
-            "target": "Eee (Yes) • A-a / Bai / nasal Ēēē (No) • N'ikweli, Atigoni! (Truly! Indeed!)",
-            "source": "Yes • No • Truly! Indeed!",
-            "pronunciation": "eee • a-a / bai • n'i-kwe-li / a-ti-go-ni",
-            "hint": "Wray (1894, pp. 71, 73, 107, 128) Yes, No & Truly"
+            "target": "Eee (Yes)",
+            "source": "Yes",
+            "pronunciation": "eee"
           },
           {
-            "target": "Ola! (Behold!) • Ado! (Speak well!) • Sumilani! (Make way!) • Usi! (Be quiet!) • Chubwi! (Gone!)",
-            "source": "Behold! • Speak well! • Make way! • Don't make a noise! • Gone!",
-            "pronunciation": "o-la • a-do • su-mi-la-ni • u-si • chubwi",
-            "hint": "Wray (1894, pp. 73–74) Interjections"
+            "target": "A-a / Bai / nasal Ēēē (No)",
+            "source": "No",
+            "pronunciation": "a-a"
           },
           {
-            "target": "kaleri (only a little), kaileri (only twice), kichacheri (not very bad), mojori (one only)",
+            "target": "N'ikweli, Atigoni! (Truly! Indeed!)",
+            "source": "Truly! Indeed!",
+            "pronunciation": "n'ikweli"
+          },
+          {
+            "target": "Ola! (Behold!)",
+            "source": "Behold!",
+            "pronunciation": "ola"
+          },
+          {
+            "target": "Ado! (Speak well!)",
+            "source": "Speak well!",
+            "pronunciation": "ado"
+          },
+          {
+            "target": "Sumilani! (Make way!)",
+            "source": "Make way!",
+            "pronunciation": "sumilani"
+          },
+          {
+            "target": "Usi! (Be quiet!)",
+            "source": "Don't make a noise!",
+            "pronunciation": "usi"
+          },
+          {
+            "target": "Chubwi! (Gone!)",
+            "source": "Gone!",
+            "pronunciation": "chubwi"
+          },
+          {
+            "target": "kaleri (only a little), kaileri (only twice), kichacheri (not very",
             "source": "Diminutive/restrictive enclitic -ri ('only / not very')",
             "pronunciation": "ka-le-ri / kai-le-ri / ki-chache-ri / mo-jo-ri",
             "hint": "Wray (1894, p. 74) Enclitic -ri"
           },
           {
-            "target": "Letema! (Do bring!) • Gendama! (Do go away!) • Cho! / pl. Choni! (Come!)",
+            "target": "Letema! (Do bring!)",
             "source": "Emphatic imperative enclitic -ima/-ma & irregular imperative of kuja",
             "pronunciation": "le-te-ma / genda-ma / cho / cho-ni",
             "hint": "Wray (1894, pp. 43, 63, 74) Imperatives"
           },
           {
-            "target": "Chanuka buu (smells horridly) • Chakesua doo (fading red) • Nagora go (said all) • Chanakulile ku (very hard) • Chamanga tuku (very firm)",
-            "source": "Ideophones: buu (foul smell) • doo (fading red) • go (completely) • ku (very hard) • tuku (very firm)",
-            "pronunciation": "cha-nu-ka buu • cha-ke-sua doo • na-go-ra go • cha-na-ku-li-le ku • cha-manga tu-ku",
-            "hint": "Wray (1894, pp. 75–76) Adverbial enclitics #3, #7, #8, #9, #10"
+            "target": "Chanuka buu (smells horridly)",
+            "source": "Ideophones: buu (foul smell)",
+            "pronunciation": "chanuka-buu"
+          },
+          {
+            "target": "Chakesua doo (fading red)",
+            "source": "doo (fading red)",
+            "pronunciation": "chakesua-doo"
+          },
+          {
+            "target": "Nagora go (said all)",
+            "source": "go (completely)",
+            "pronunciation": "nagora-go"
+          },
+          {
+            "target": "Chanakulile ku (very hard)",
+            "source": "ku (very hard)",
+            "pronunciation": "chanakulile-ku"
+          },
+          {
+            "target": "Chamanga tuku (very firm)",
+            "source": "tuku (very firm)",
+            "pronunciation": "chamanga-tuku"
           },
           {
             "target": "Kamba wejile igulo mangu wekeona nyamandu",
-            "source": "If you had come yesterday you would have seen a beast (Contingent conditional with kamba & mangu)",
+            "source": "If you had come yesterday you would have seen a beast",
             "pronunciation": "kamba we-ji-le i-gu-lo mangu we-ke-o-na nya-mandu",
             "hint": "Wray (1894, p. 54) Contingent conditional tense"
           },
           {
-            "target": "Si-na-kaile ku-shaia (I do not yet love) • Si-kaile ku-shaia (I had not yet loved)",
-            "source": "Present & Past 'Not yet' tense (-na-kaile / -kaile + infinitive)",
-            "pronunciation": "si-na-kai-le ku-shaia • si-kai-le ku-shaia",
-            "hint": "Wray (1894, p. 58) 'Not yet' tenses"
+            "target": "Si-na-kaile ku-shaia",
+            "source": "I do not yet love",
+            "pronunciation": "si-na-kaile-ku-shaia"
+          },
+          {
+            "target": "Si-kaile ku-shaia",
+            "source": "I had not yet loved",
+            "pronunciation": "si-kaile-ku-shaia"
           }
         ],
         "sentences": [
@@ -2694,30 +2665,6 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ando kungigenda aho mbele nikotū kuwona nyamandu\" in Taita?",
-            "correctAnswer": "Wait a bit and you will hear that on my going forward a little I saw a beast (Narrative idiom)",
-            "options": [
-              "Is it not so? (You beat him, didn't you? / The master spoke much, didn't he?)",
-              "Yes • No • Truly! Indeed!",
-              "Behold! • Speak well! • Make way! • Don't make a noise! • Gone!",
-              "Wait a bit and you will hear that on my going forward a little I saw a beast (Narrative idiom)"
-            ],
-            "hint": "Wray (1894, p. 59) Narrative idiom #1: Ando kungi... nikotū"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Angoije? (Simkukwita angoije? / Bwana agomba mwandu mwingi angoije?)\" in Taita?",
-            "correctAnswer": "Is it not so? (You beat him, didn't you? / The master spoke much, didn't he?)",
-            "options": [
-              "Yes • No • Truly! Indeed!",
-              "Is it not so? (You beat him, didn't you? / The master spoke much, didn't he?)",
-              "Wait a bit and you will hear that on my going forward a little I saw a beast (Narrative idiom)",
-              "Behold! • Speak well! • Make way! • Don't make a noise! • Gone!"
-            ],
-            "hint": "Wray (1894, p. 59) Narrative idiom #2: Angoije?"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Taita expression from Wray (1894) with its English meaning:",
@@ -2740,18 +2687,6 @@ export const TAITA_UNITS: CourseUnit[] = [
                 "right": "Do bring! • Do go away! (-ma)"
               }
             ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete Wray's (1894, p. 54) contingent conditional sentence: \"Kamba wejile igulo ___ wekeona nyamandu\" (If you had come yesterday you would have seen a beast):",
-            "correctAnswer": "mangu",
-            "options": [
-              "mangu",
-              "nikotū",
-              "kaleri",
-              "chubwi"
-            ],
-            "hint": "Wray (1894, p. 54) Contingent conditional particle ('would/should')"
           }
         ]
       }
@@ -2759,9 +2694,11 @@ export const TAITA_UNITS: CourseUnit[] = [
   },
   {
     "id": "taita-unit-10",
-    "title": "Unit 10: Classical Proverbs, Riddles & Ethnographic Heritage",
+    "unitNumber": 10,
+    "title": "Classical Proverbs, Riddles & Ethnographic Heritage",
     "description": "Master classical proverbs, riddles, war-cries, trade currencies, seasons & ethnographic heritage in Taita (Kisagala & Kidawida) built directly from Rev. J. Alfred Wray (1894), Rev. W. E. Taylor (1891), and Rev. A. Downes Shaw (1885).",
     "icon": "Globe",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-oral-wisdom-literature-proverbs-riddles-10",
@@ -2779,39 +2716,48 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
-            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree.",
-            "pronunciation": "wa-da na wa-da — mwa-nangu a-gende-le u-jomba-ni e-la sau-ja — ki-lamba",
+            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed",
+            "pronunciation": "wada-na-wadamwanangu-agendele",
             "hint": "Wray (1894, pp. 93 & 114, Enigma / Riddle)"
           },
           {
-            "target": "Wada! — Na wada! Nyumba yangu siiwesi mjango? — Ni-hawe muzi. — Igi.",
+            "target": "Wada!",
             "source": "Riddle! — Come on! My house has no door? — Give me a town. — An egg.",
-            "pronunciation": "wa-da — na wa-da nyumba yangu sii-we-si mjango — ni-ha-we mu-zi — i-gi",
+            "pronunciation": "wada",
             "hint": "Shaw (1885) & Wray (1894, pp. 93, 114) Taita riddle & town-forfeit ceremony"
           },
           {
             "target": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
             "source": "Traditional Kisagala war-cry rallying the clan (under 'Cry, a, kilio')",
-            "pronunciation": "mwa-sa-si mwa-sa-si wo-me mwa-na wa ng'a-nya mba-re-ni ngo-lo",
+            "pronunciation": "mwasasi",
             "hint": "Wray (1894, p. 89 under Cry)"
           },
           {
-            "target": "Voro! — Voro! Mzima? — Mzima. — Ndo vidzo! — Simanya uwe. — A! nami ni mzima. — Ndo vidzo.",
-            "source": "Peace/Greeting! — Greeting! Are you well? — I am well. — That is good! — I do not know about you. — Ah! I also am well.",
+            "target": "Voro!",
+            "source": "Peace/Greeting! — Greeting! Are you well? — I am well. — That is good! — I do not",
             "pronunciation": "vo-ro — vo-ro mzi-ma — mzi-ma — ndo vidzo",
             "hint": "Rev. A. Downes Shaw (1885) Pocket Vocabulary of Ki-Taita"
           },
           {
-            "target": "izina lya kudaria: mekupe (blinks eyes), metukurya (thin), mefinju (high shoulders), meng'ong'o (large temples), medonenyonyi (toes eaten by ants)",
+            "target": "izina lya kudaria: mekupe (blinks eyes), metukurya (thin), mefinju",
             "source": "Nickname & 5 traditional Taita descriptive nicknames",
-            "pronunciation": "i-zi-na lya ku-da-ria: me-ku-pe / me-tu-ku-rya / me-finju / me-ng'ong'o / me-do-ne-nyo-nyi",
+            "pronunciation": "izina-lya-kudaria-mekupe",
             "hint": "Wray (1894, p. 107 under Nickname)"
           },
           {
-            "target": "lumbo (pl. nyumbo) • mboze • ngoma",
-            "source": "Song (pl. Songs) • Music • Drum or dance",
-            "pronunciation": "lumbo / nyumbo • mbo-ze • ngo-ma",
-            "hint": "Wray (1894, pp. 12, 89, 91, 107, 119) Song, Music, Dance & Drum"
+            "target": "lumbo (pl. nyumbo)",
+            "source": "Song (pl. Songs)",
+            "pronunciation": "lumbo"
+          },
+          {
+            "target": "mboze",
+            "source": "Music",
+            "pronunciation": "mboze"
+          },
+          {
+            "target": "ngoma",
+            "source": "Drum or dance",
+            "pronunciation": "ngoma"
           },
           {
             "target": "mbari, kikuku (kichuku), lukolo",
@@ -2820,10 +2766,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, pp. 78, 94, 124) Akin, Family & Tribe"
           },
           {
-            "target": "wawa (reciprocal grandfather & grandchild address) • ake (reciprocal grandmother & grandchild address)",
-            "source": "Reciprocal grandparent–grandchild kinship titles",
-            "pronunciation": "wa-wa • a-ke",
-            "hint": "Wray (1894, p. 98 under Grandchild & Grandfather/Grandmother)"
+            "target": "wawa",
+            "source": "reciprocal grandfather & grandchild address",
+            "pronunciation": "wawa"
+          },
+          {
+            "target": "ake",
+            "source": "reciprocal grandmother & grandchild address",
+            "pronunciation": "ake"
           }
         ],
         "sentences": [
@@ -2913,51 +2863,50 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 118 under Skull)"
           },
           {
-            "target": "usanga (9 Taita bead varieties: kamsanga, mchuchuri, mlanyuni, nyekundu, samisami, mboro, masere, ngolola, matunda)",
+            "target": "usanga",
             "source": "Beads & 9 traditional Taita bead varieties",
             "pronunciation": "u-sanga / kamsanga / sa-mi-sa-mi / ma-se-re",
             "hint": "Wray (1894, p. 80 under Beads)"
           },
           {
-            "target": "nguo: lupande (1 yd), shuka (2 yds = 2 strings of beads), doti (4 yds = 4 strings), jora (30 yds), koruja (20 doti); kaba (16 in. bead string), fundo (10 strings = 1 shuka)",
+            "target": "nguo: lupande (1 yd), shuka, doti (4 yds = 4 strings), jora (30 yds),",
             "source": "Cloth & bead trade currency measures (Merikani, Kaniki, Bandira, Bafta,uli)",
             "pronunciation": "lu-pande / shu-ka / do-ti / jo-ra / ko-ru-ja / ka-ba / fundo",
             "hint": "Wray (1894, p. 85 under Cloth)"
           },
           {
-            "target": "njovu, lwembe lwa njovu: Kibori (~7 lbs, 2 hands), Tofwa (3½ hands), Tofwa shagangi (4 hands), Isange (5–6 hands)",
+            "target": "njovu, lwembe lwa njovu: Kibori (~7 lbs, 2 hands), Tofwa (3½ hands),",
             "source": "Ivory tusk & 4 traditional Taita weight/length grades",
             "pronunciation": "njo-vu / ki-bo-ri / tofwa / tofwa sha-gangi / i-sange",
             "hint": "Wray (1894, p. 102 under Ivory)"
           },
           {
-            "target": "mavalo: mshuru (small front apron), kisorori (regulation apron), kizema (larger back apron)",
+            "target": "mavalo: mshuru (small front apron), kisorori (regulation apron), kizema",
             "source": "Traditional woman's dress articles",
             "pronunciation": "ma-va-lo: mshu-ru / ki-so-ro-ri / ki-ze-ma",
             "hint": "Wray (1894, p. 91 under Dress)"
           },
           {
-            "target": "juiri, pl. majuiri: kidole (front tuft), kishungi (crown tuft), mabutu (twisted with red earth & fat), mavore (long twisted locks)",
+            "target": "juiri, pl. majuiri: kidole (front tuft), kishungi (crown tuft), mabutu,",
             "source": "Hair & 4 traditional Taita coiffures",
             "pronunciation": "jui-ri: ki-do-le / kishungi / ma-bu-tu / ma-vo-re",
             "hint": "Wray (1894, p. 99 under Hair)"
           },
           {
-            "target": "ngaru (mbuzi ya ngaru = company's goat held by 2+ persons) • ng'ombe ya wada (cow placed on agistment loan)",
-            "source": "Shared livestock partnership (ngaru) & cattle agistment loan (wada)",
-            "pronunciation": "nga-ru / mbu-zi ya nga-ru • ng'ombe ya wa-da",
-            "hint": "Wray (1894, pp. 87 & 104 under Company and Loan)"
+            "target": "ng'ombe ya wada",
+            "source": "cow placed on agistment loan",
+            "pronunciation": "ng'ombe-ya-wada"
           },
           {
-            "target": "Isika (cold foggy season, May–Sept), Kwalazi (Oct–Dec rains), Kaskazi (hot clear season, Jan–Feb), Kifuku (heavy rains, Mar–Apr)",
+            "target": "Isika, Kwalazi (Oct–Dec rains), Kaskazi, Kifuku",
             "source": "The 4 Taita seasons of the year (mwaka)",
             "pronunciation": "i-si-ka / kwa-la-zi / kaska-zi / ki-fu-ku",
             "hint": "Wray (1894, pp. 113 & 116 under Rain and Seasons)"
           },
           {
-            "target": "makeo (4 am), madioro (5 am), ikesho (6 am), nyang'alamu (8 am), musigati (noon), ijua lyagaluka (2 pm), mnyambele (4 pm), mahunguro (5:30 pm), hafuka (6 pm), kiza (7 pm), usiku 'gwa kati (midnight)",
+            "target": "makeo (4 am), madioro (5 am), ikesho (6 am), nyang'alamu (8 am),",
             "source": "Traditional Taita divisions of the day & night",
-            "pronunciation": "ma-keo / ma-dio-ro / i-ke-sho / nyang'a-la-mu / mu-si-ga-ti / mnya-mbe-le / ma-hungu-ro / ha-fu-ka",
+            "pronunciation": "makeo",
             "hint": "Wray (1894, p. 123 under Time)"
           }
         ],
@@ -2972,18 +2921,6 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Wray (1894, p. 118), what is \"ngomeni\" among the Wa-taita?",
-            "correctAnswer": "A sacred cave or place of ancestral skulls (exhumed after the flesh has left the bones)",
-            "options": [
-              "A sacred cave or place of ancestral skulls (exhumed after the flesh has left the bones)",
-              "A bundle of ten strings of red samisami beads",
-              "An ivory tusk measuring five to six hands",
-              "The hot clear season between January and February"
-            ],
-            "hint": "Wray (1894, p. 118 under Skull, ngoma)"
-          },
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"The 4 Taita seasons of the year (mwaka)\"",
@@ -3036,10 +2973,12 @@ export const TAITA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "taita-unit-11-public-domain-corpus",
-    "title": "Unit 11: Archival Monograph & Comparative Lexicon (Wray 1894 Part II Vocabulary)",
+    "id": "taita-unit-11",
+    "unitNumber": 11,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master verified Taita (Kisagala & Kidawida) vocabulary, transitive vs. intransitive verb pairs, and literal etymologies from Rev. J. Alfred Wray’s 1894 English–Sagalla Vocabulary (pp. 77–128).",
     "icon": "ScrollText",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-pd-corpus-11-1",
@@ -3057,8 +2996,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "-ako (thy, your sg.); -enyu / -enu (your pl.)",
             "source": "Your",
-            "pronunciation": "a-ko / e-nyu / e-nu",
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 28, 128)"
+            "pronunciation": "a-ko / e-nyu / e-nu"
           },
           {
             "target": "igulo; [the day before yesterday], ijuzi",
@@ -3187,8 +3125,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "-mnyangi (mnynge); [the white neck of a raven], ikombe",
             "source": "White (and the white collar of a raven)",
-            "pronunciation": "mnyangi / i-kombe",
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 75, 127)"
+            "pronunciation": "mnyangi / i-kombe"
           },
           {
             "target": "ku-nola, ku-kabanya [lit. to strike knives together]",
@@ -3268,10 +3205,12 @@ export const TAITA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "taita-unit-12-open-datasets-modern",
-    "title": "Unit 12: Core Verbs, Body & Community Vocabulary (Wray 1894 T–W)",
+    "id": "taita-unit-12",
+    "unitNumber": 12,
+    "title": "Core Verbs, Body & Community Vocabulary",
     "description": "Master unabridged Taita (Kisagala) verbs, nouns, and literal idioms from Rev. J. Alfred Wray’s 1894 Vocabulary (pp. 123–126).",
     "icon": "Landmark",
+    "color": "#0891B2",
     "skills": [
       {
         "id": "taita-open-dataset-12-1",
@@ -3401,14 +3340,12 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "pili, -ili; with nouns of the third class, mbili",
             "source": "Two",
-            "pronunciation": "pi-li / i-li / mbi-li",
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 20, 125)"
+            "pronunciation": "pi-li / i-li / mbi-li"
           },
           {
             "target": "ikumi na mbili",
             "source": "Twelve",
-            "pronunciation": "i-ku-mi na mbi-li",
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 21, 125)"
+            "pronunciation": "i-ku-mi na mbi-li"
           },
           {
             "target": "ku-galula, T.; ku-galuka, I.; [round], ku-zungulusha, T.; ku-zunguluka, I.",
@@ -3431,8 +3368,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "target": "mwiti (pl. mīti)",
             "source": "Tree (pl. Trees)",
-            "pronunciation": "mwi-ti / mi-ti",
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 10, 124)"
+            "pronunciation": "mwi-ti / mi-ti"
           },
           {
             "target": "nguo ya ku-kuagila [lit. a cloth for wiping]",
@@ -3496,7 +3432,305 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124)"
           }
         ]
-      }
+      },
+{
+        "id": "taita-open-datasets-thinkkenya",
+        "title": "Community Unity, Hillside Farming & Peace",
+        "icon": "Database",
+        "description": "Practice Kidaw'ida (Taita) parallel sentences from ThinkKenya / Waleghwa (26,662 pairs, CC-BY-4.0) and Mozilla Common Voice 25.0 (31,892 CC0 sentences).",
+        "culturalNote": "Kidaw'ida (Taita) is one of Kenya's best-represented coastal-hinterland Bantu languages in open NLP thanks to Prof. Audrey Mbogho and the ThinkKenya team's 26,662 Kidaw'ida–Kiswahili parallel sentences and 31,892 CC0-1.0 sentences on Common Voice 25.0.",
+        "grammarTip": "Compare Class 2 plural prefix wa- in wandru wose ('all people') with Class 7 prefix ch- in chawia cha kudighana ('peaceful cooperation').",
+        "words": [
+                {
+                        "target": "Wandru wa Wughanga",
+                        "source": "People of Taita",
+                        "pronunciation": "wah-ndroo wah woo-ghah-ngah"
+                },
+                {
+                        "target": "Mbuwa",
+                        "source": "Farms / Cultivated fields",
+                        "pronunciation": "mboo-wah"
+                },
+                {
+                        "target": "Chawia cha kudighana",
+                        "source": "Peaceful cooperation",
+                        "pronunciation": "chah-wee-ah chah koo-dee-ghah-nah"
+                },
+                {
+                        "target": "Wandru wose",
+                        "source": "All people",
+                        "pronunciation": "wah-ndroo woh-seh"
+                },
+                {
+                        "target": "Wumoja",
+                        "source": "Unity / Togetherness",
+                        "pronunciation": "woo-moh-jah"
+                },
+                {
+                        "target": "Kulima",
+                        "source": "To cultivate / farm",
+                        "pronunciation": "koo-lee-mah"
+                },
+                {
+                        "target": "Chuo",
+                        "source": "School / Place of learning",
+                        "pronunciation": "choo-oh"
+                },
+                {
+                        "target": "Machi",
+                        "source": "Water",
+                        "pronunciation": "mah-chee"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Wandru wa Wughanga wanalima mbuwa jawo kwa wumoja.",
+                        "source": "The people of Taita cultivate their farms in unity."
+                },
+                {
+                        "target": "Chawia cha kudighana ni chuo cha wandru wose.",
+                        "source": "Peaceful cooperation is the school of all people."
+                }
+        ]
+},
+        {
+        "id": "taita-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Taita (Kidawida) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "words": [
+                {
+                        "target": "ku-rogoa, ku-lamusa",
+                        "source": "Salute, to",
+                        "pronunciation": "ku-rogoa ku-lamusa"
+                },
+                {
+                        "target": "ku-siga",
+                        "source": "Pardon, to",
+                        "pronunciation": "ku si-ga lit"
+                },
+                {
+                        "target": "ku-siga [lit. to leave alone]",
+                        "source": "Forgive, to",
+                        "pronunciation": "ku-siga"
+                },
+                {
+                        "target": "ku-siga",
+                        "source": "Forgive, to",
+                        "pronunciation": "ku si-ga lit"
+                },
+                {
+                        "target": "Wedi",
+                        "source": "Peace / Goodness",
+                        "pronunciation": "we-di"
+                },
+                {
+                        "target": "Mwakucha / Uko wedi?",
+                        "source": "Hello / How are you? (Dawida)",
+                        "pronunciation": "mwakucha / uko wedi"
+                },
+                {
+                        "target": "ku-siga [lit. to leave alone]",
+                        "source": "Remit, to [to pardon]",
+                        "pronunciation": "ku-siga"
+                },
+                {
+                        "target": "Kusesa",
+                        "source": "To make peace",
+                        "pronunciation": "kusesa"
+                },
+                {
+                        "target": "Dunarinda itsango magondini ga Dawida",
+                        "source": "We keep brass wire in Taita Hills",
+                        "pronunciation": "dunarinda itsango magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nguo ya chunu magondini ga Dawida",
+                        "source": "We keep loin-cloth in Taita Hills",
+                        "pronunciation": "dunarinda nguo ya chunu magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nyungu magondini ga Dawida",
+                        "source": "We keep cooking-pot in Taita Hills",
+                        "pronunciation": "dunarinda nyungu magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nyungu magondini ga Dawida",
+                        "source": "We keep pot cooking in Taita Hills",
+                        "pronunciation": "dunarinda nyungu magondini ga dawida"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ni kuboie ku-lola kula matuku",
+                        "source": "It is good to behold every day"
+                },
+                {
+                        "target": "Duzaka ku-goshaose",
+                        "source": "We want to borrow together"
+                },
+                {
+                        "target": "Ni kuboie ku-gosha kula matuku",
+                        "source": "It is good to borrow every day"
+                },
+                {
+                        "target": "Duzaka ku-sagulaose",
+                        "source": "We want to choose together"
+                },
+                {
+                        "target": "Ni kuboie ku-sagula kula matuku",
+                        "source": "It is good to choose every day"
+                },
+                {
+                        "target": "Duzaka ku-umbaose",
+                        "source": "We want to create together"
+                },
+                {
+                        "target": "Ni kuboie ku-umba kula matuku",
+                        "source": "It is good to create every day"
+                },
+                {
+                        "target": "Duzaka ku-gendaose",
+                        "source": "We want to depart together"
+                },
+                {
+                        "target": "Ni kuboie ku-genda kula matuku",
+                        "source": "It is good to depart every day"
+                },
+                {
+                        "target": "Duzaka ku-shaiaose",
+                        "source": "We want to desire together"
+                },
+                {
+                        "target": "Ni kuboie ku-shaia kula matuku",
+                        "source": "It is good to desire every day"
+                },
+                {
+                        "target": "Duzaka ku-kilaose",
+                        "source": "We want to escape together"
+                }
+        ]
+},
+        {
+        "id": "taita-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Taita (Kidawida) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "words": [
+                {
+                        "target": "Dunarinda kitundu magondini ga Dawida",
+                        "source": "We keep store-house in Taita Hills",
+                        "pronunciation": "dunarinda kitundu magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nguo ya meza magondini ga Dawida",
+                        "source": "We keep table-cloth in Taita Hills",
+                        "pronunciation": "dunarinda nguo ya meza magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda kinengele magondini ga Dawida",
+                        "source": "We keep string of beads in Taita Hills",
+                        "pronunciation": "dunarinda kinengele magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda garo magondini ga Dawida",
+                        "source": "We keep bachelor's house in Taita Hills",
+                        "pronunciation": "dunarinda garo magondini ga dawida"
+                },
+                {
+                        "target": "Bei ya nguli sokoni ni ingahi?",
+                        "source": "What is the price of flute at the market?",
+                        "pronunciation": "bei ya nguli sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya kihoro sokoni ni ingahi?",
+                        "source": "What is the price of plate at the market?",
+                        "pronunciation": "bei ya kihoro sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya mtego sokoni ni ingahi?",
+                        "source": "What is the price of snare at the market?",
+                        "pronunciation": "bei ya mtego sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya luko sokoni ni ingahi?",
+                        "source": "What is the price of spoon at the market?",
+                        "pronunciation": "bei ya luko sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya ndata sokoni ni ingahi?",
+                        "source": "What is the price of staff at the market?",
+                        "pronunciation": "bei ya ndata sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya lufu sokoni ni ingahi?",
+                        "source": "What is the price of sword at the market?",
+                        "pronunciation": "bei ya lufu sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya I-rawa sokoni ni ingahi?",
+                        "source": "What is the price of arrow at the market?",
+                        "pronunciation": "bei ya i-rawa sokoni ni ingahi"
+                },
+                {
+                        "target": "Bei ya M-songgolo sokoni ni ingahi?",
+                        "source": "What is the price of canoe at the market?",
+                        "pronunciation": "bei ya m-songgolo sokoni ni ingahi"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ni kuboie ku-kila kula matuku",
+                        "source": "It is good to escape every day"
+                },
+                {
+                        "target": "Duzaka ku-fungaose",
+                        "source": "We want to fasten together"
+                },
+                {
+                        "target": "Ni kuboie ku-funga kula matuku",
+                        "source": "It is good to fasten every day"
+                },
+                {
+                        "target": "Bei ya kipesa sokoni ni ingahi?",
+                        "source": "What is the price of wall at the market?"
+                },
+                {
+                        "target": "Bei ya Mo-ma sokoni ni ingahi?",
+                        "source": "What is the price of adze at the market?"
+                },
+                {
+                        "target": "Bei ya Lu-kūni sokoni ni ingahi?",
+                        "source": "What is the price of wood at the market?"
+                },
+                {
+                        "target": "Bei ya fulai sokoni ni ingahi?",
+                        "source": "What is the price of anvil at the market?"
+                },
+                {
+                        "target": "Bei ya mshuru sokoni ni ingahi?",
+                        "source": "What is the price of apron at the market?"
+                },
+                {
+                        "target": "Bei ya dina sokoni ni ingahi?",
+                        "source": "What is the price of chain at the market?"
+                },
+                {
+                        "target": "Bei ya kifumbi sokoni ni ingahi?",
+                        "source": "What is the price of chair at the market?"
+                },
+                {
+                        "target": "Bei ya nguli sokoni ni ingahi?",
+                        "source": "What is the price of flute at the market?"
+                },
+                {
+                        "target": "Bei ya kihoro sokoni ni ingahi?",
+                        "source": "What is the price of plate at the market?"
+                }
+        ]
+}
     ]
   }
 ];

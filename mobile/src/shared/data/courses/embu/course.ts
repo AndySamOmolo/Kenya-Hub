@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Embu (Kîembu / Kîmbeere) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const EMBU_CONFIG: LanguageConfig = {
   "id": "embu",
@@ -30,9 +25,11 @@ export const EMBU_CONFIG: LanguageConfig = {
 export const EMBU_UNITS: CourseUnit[] = [
   {
     "id": "embu-unit-1",
-    "title": "Unit 1: Greetings, Noun Classes, Numerals 1–10 & Kiama Heritage",
+    "unitNumber": 1,
+    "title": "Greetings, Noun Classes, Numerals 1–10 & Kiama Heritage",
     "description": "Master Kîembu and Kîmbeere greetings, mũ-/a- and kĩ-/ci- noun classes, Dahl’s Law, and numbers 1–10.",
     "icon": "Crown",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-greetings-nouns",
@@ -369,9 +366,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Users",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-family-kinship-kinship-elders-2",
@@ -436,7 +435,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -552,38 +550,32 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Mu-ru wa maiya (K.); a-rūa maiya. Mū-rata (M., Mw.)",
             "source": "Brother",
-            "pronunciation": "mu-ru wa mai-ya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mu-ru wa mai-ya"
           },
           {
             "target": "Mu-thamaki; a-. Mu-nene; a-",
             "source": "Chief",
-            "pronunciation": "mu-thamaki",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mu-thamaki"
           },
           {
             "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tu-",
             "source": "Child",
-            "pronunciation": "mwa-na",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mwa-na"
           },
           {
             "target": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
             "source": "Sister",
-            "pronunciation": "mu-ru wa mai-ya mu-ari wa mai-tu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mu-ru wa mai-ya mu-ari wa mai-tu"
           },
           {
             "target": "Mū-rīū; a-rīū. Kī-hīī; i-hīī (boy)",
             "source": "Son, boy",
-            "pronunciation": "mu-riu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mu-riu"
           },
           {
             "target": "Mū-kā; a-kā",
             "source": "Wife",
-            "pronunciation": "mu-ka",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mu-ka"
           },
           {
             "target": "mũka (pl. aka) / mũtumĩĩa",
@@ -672,9 +664,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Scale",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-numbers-measures-cardinals-ordinals-3",
@@ -739,7 +733,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language — Kîembu numerals"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -855,53 +848,44 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Mī-rōnggo ī-gīrī",
             "source": "Twenty",
-            "pronunciation": "mi-ronggo i-giri",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mi-ronggo i-giri"
           },
           {
             "target": "Mī-rōnggo ī-tātū",
             "source": "Thirty",
-            "pronunciation": "mi-ronggo i-tatu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mi-ronggo i-tatu"
           },
           {
             "target": "Mī-rōnggo ī-nā",
             "source": "Forty",
-            "pronunciation": "mi-ronggo i-na",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mi-ronggo i-na"
           },
           {
             "target": "Mī-rōnggo ī-tāno",
             "source": "Fifty",
-            "pronunciation": "mi-ronggo i-tano",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "mi-ronggo i-tano"
           },
           {
             "target": "I-gāna; ma-gāna",
             "source": "Hundred",
-            "pronunciation": "i-gana",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "i-gana"
           },
           {
             "target": "Ngīrī; ma-ngīrī",
             "source": "Thousand",
-            "pronunciation": "ngi-ri",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "ngi-ri"
           },
           {
             "target": "-ōthē",
             "source": "All",
-            "pronunciation": "othe",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "othe"
           },
           {
             "target": "-īnggī",
             "source": "Plenty, many",
-            "pronunciation": "inggi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "inggi"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1004,9 +988,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Tractor",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-food-agriculture-staple-foods-cookery-4",
@@ -1151,20 +1137,17 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "I-rigo; ma-. Gi-toke (fruit)",
             "source": "Banana",
-            "pronunciation": "i-rigo",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "i-rigo"
           },
           {
             "target": "Ma-guta. Ṅ-gorono (butter)",
             "source": "Fat, oil",
-            "pronunciation": "ma-guta ng-gorono",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "ma-guta ng-gorono"
           },
           {
             "target": "Ū-ūkī; mō-ūkī",
             "source": "Honey",
-            "pronunciation": "u-uki",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
+            "pronunciation": "u-uki"
           },
           {
             "target": "nyama",
@@ -1273,9 +1256,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "PawPrint",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-nature-wildlife-land-sky-water-5",
@@ -1340,7 +1325,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1577,9 +1561,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "User",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-body-health-anatomy-senses-6",
@@ -1644,7 +1630,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1881,9 +1866,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "BookOpen",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-verbs-grammar-action-verbs-7",
@@ -2157,9 +2144,11 @@ export const EMBU_UNITS: CourseUnit[] = [
   },
   {
     "id": "embu-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Embu (Kĩembu) built directly from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Compass",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-time-calendar-seasons-months-8",
@@ -2297,7 +2286,8 @@ export const EMBU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ũtukũ",
-            "source": "Night"
+            "source": "Night",
+            "pronunciation": "ũtukũ"
           },
           {
             "target": "Mweri wa kana (Kan)",
@@ -2415,10 +2405,12 @@ export const EMBU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "embu-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "embu-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Embu (Kĩembu) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-pd-corpus-9-1",
@@ -2430,53 +2422,44 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "-īyā",
             "source": "To steal",
-            "pronunciation": "iya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "iya"
           },
           {
             "target": "-rūgāmā",
             "source": "To stand / stop",
-            "pronunciation": "ru-ga-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ru-ga-ma"
           },
           {
             "target": "-kōmā",
             "source": "To sleep",
-            "pronunciation": "ko-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ko-ma"
           },
           {
             "target": "-īkāra",
             "source": "To sit / remain / abide",
-            "pronunciation": "i-ka-ra",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "i-ka-ra"
           },
           {
             "target": "-ōnā, -rōrā",
             "source": "To see",
-            "pronunciation": "ona ro-ra",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ona ro-ra"
           },
           {
             "target": "-ēndā",
             "source": "To love / want",
-            "pronunciation": "enda",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "enda"
           },
           {
             "target": "-tīgā",
             "source": "To leave off / cease",
-            "pronunciation": "ti-ga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ti-ga"
           },
           {
             "target": "-thēkā",
             "source": "To laugh",
-            "pronunciation": "the-ka",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "the-ka"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2537,53 +2520,44 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "-mēnyā",
             "source": "To know",
-            "pronunciation": "menya",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "menya"
           },
           {
             "target": "-ūragā",
             "source": "To kill",
-            "pronunciation": "u-ra-ga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "u-ra-ga"
           },
           {
             "target": "-thiī",
             "source": "To go",
-            "pronunciation": "thii",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "thii"
           },
           {
             "target": "-hē",
             "source": "To give",
-            "pronunciation": "he",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "he"
           },
           {
             "target": "-kūā",
             "source": "To die",
-            "pronunciation": "kua",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "kua"
           },
           {
             "target": "-īnā",
             "source": "To dance",
-            "pronunciation": "ina",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ina"
           },
           {
             "target": "-tīniā, -tēmā",
             "source": "To cut",
-            "pronunciation": "ti-nia te-ma",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ti-nia te-ma"
           },
           {
             "target": "-ūkā",
             "source": "To come",
-            "pronunciation": "uka",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "uka"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2637,10 +2611,12 @@ export const EMBU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "embu-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "embu-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Embu (Kĩembu) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#059669",
     "skills": [
       {
         "id": "embu-open-dataset-10-1",
@@ -2652,53 +2628,44 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "-gūrā, -ēndia",
             "source": "To buy / To sell",
-            "pronunciation": "gu-ra endia",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "gu-ra endia"
           },
           {
             "target": "-hūrā, -rīnggā",
             "source": "To beat",
-            "pronunciation": "hu-ra ringga",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "hu-ra ringga"
           },
           {
             "target": "Ndi-, Tī-, -tī-, -tā-",
             "source": "Not (with verb, as prefix, infix, or suffix)",
-            "pronunciation": "ndi ti ti ta",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ndi ti ti ta"
           },
           {
             "target": "Ācā!, Tī-gō!",
             "source": "No!",
-            "pronunciation": "aca ti-go",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "aca ti-go"
           },
           {
             "target": "Hā-rīa, Kū-rīa",
             "source": "There",
-            "pronunciation": "ha-ria ku-ria",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ha-ria ku-ria"
           },
           {
             "target": "N-jā",
             "source": "Outside",
-            "pronunciation": "n-ja",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "n-ja"
           },
           {
             "target": "Hā-kūhī",
             "source": "Near",
-            "pronunciation": "ha-kuhi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ha-kuhi"
           },
           {
             "target": "Gā-tīgātī",
             "source": "Middle",
-            "pronunciation": "ga-tigati",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ga-tigati"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2759,53 +2726,44 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "-thēnī",
             "source": "In, inside",
-            "pronunciation": "the-ni",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "the-ni"
           },
           {
             "target": "Hā-hā",
             "source": "Here",
-            "pronunciation": "ha-ha",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ha-ha"
           },
           {
             "target": "Kū-raihū",
             "source": "Far",
-            "pronunciation": "ku-raihu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "ku-raihu"
           },
           {
             "target": "Thī",
             "source": "Below, down",
-            "pronunciation": "thi",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "thi"
           },
           {
             "target": "Thūtha",
             "source": "Behind",
-            "pronunciation": "thutha",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "thutha"
           },
           {
             "target": "M-bērē",
             "source": "Before",
-            "pronunciation": "m-bere",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "m-bere"
           },
           {
             "target": "I-gūrū",
             "source": "Above, up, on top",
-            "pronunciation": "i-guru",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "i-guru"
           },
           {
             "target": "-rūārū",
             "source": "Sick",
-            "pronunciation": "rua-ru",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "pronunciation": "rua-ru"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2855,7 +2813,245 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
-      }
+      },
+        {
+        "id": "embu-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Embu (Kĩembu) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
+        "words": [
+                {
+                        "target": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
+                        "source": "Hello",
+                        "pronunciation": "wee mweh-gah"
+                },
+                {
+                        "target": "Nĩ wega (Nĩ wega mũno)",
+                        "source": "Thank you",
+                        "pronunciation": "nee weh-gah moo-noh"
+                },
+                {
+                        "target": "Thayũ",
+                        "source": "Peace / blessing",
+                        "pronunciation": "thayu"
+                },
+                {
+                        "target": "Tigwa na wega / Tigwaa na thayũ",
+                        "source": "Goodbye, be blessed",
+                        "pronunciation": "tigwa na wega / tigwaa na thayu"
+                },
+                {
+                        "target": "Nĩwega mũno",
+                        "source": "Thank you very much",
+                        "pronunciation": "ni-we-ga mu-no"
+                },
+                {
+                        "target": "Mve maĩ / Ngundia maĩ",
+                        "source": "Please give me some water",
+                        "pronunciation": "mve mai / ngundia mai"
+                },
+                {
+                        "target": "Ndarauka wega, nĩ wega mũno",
+                        "source": "I woke up well, thank you",
+                        "pronunciation": "nda-rau-ka we-ga nee we-ga moo-no"
+                },
+                {
+                        "target": "Thiĩ na thayũ",
+                        "source": "Safe journey / Go in peace",
+                        "pronunciation": "thiee na tha-yoo"
+                },
+                {
+                        "target": "Tũrĩmenyerera Ivinda mũciĩ witũ",
+                        "source": "We keep era at our homestead",
+                        "pronunciation": "tũrĩmenyerera ivinda mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera KI mũciĩ witũ",
+                        "source": "We keep in the morning at our homestead",
+                        "pronunciation": "tũrĩmenyerera ki mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Wĩ mwega mũciĩ witũ",
+                        "source": "We keep good morning at our homestead",
+                        "pronunciation": "tũrĩmenyerera wĩ mwega mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera UT mũciĩ witũ",
+                        "source": "We keep in the afternoon at our homestead",
+                        "pronunciation": "tũrĩmenyerera ut mũciĩ witũ"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ĩĩ, tũrĩ na Ivinda njega",
+                        "source": "Yes, we have good era"
+                },
+                {
+                        "target": "Ũrĩ na KI ũmũnthĩ?",
+                        "source": "Do you have in the morning today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na KI njega",
+                        "source": "Yes, we have good in the morning"
+                },
+                {
+                        "target": "Ũrĩ na Wĩ mwega ũmũnthĩ?",
+                        "source": "Do you have good morning today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Wĩ mwega njega",
+                        "source": "Yes, we have good good morning"
+                },
+                {
+                        "target": "Ũrĩ na UT ũmũnthĩ?",
+                        "source": "Do you have in the afternoon today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na UT njega",
+                        "source": "Yes, we have good in the afternoon"
+                },
+                {
+                        "target": "Ũrĩ na Kī-būtū ũmũnthĩ?",
+                        "source": "Do you have hoe today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Kī-būtū njega",
+                        "source": "Yes, we have good hoe"
+                },
+                {
+                        "target": "Ũrĩ na Kī-gwū ũmũnthĩ?",
+                        "source": "Do you have song today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Kī-gwū njega",
+                        "source": "Yes, we have good song"
+                },
+                {
+                        "target": "Ũrĩ na Ngai nĩ mwaro ũmũnthĩ?",
+                        "source": "Do you have god is good today?"
+                }
+        ]
+},
+        {
+        "id": "embu-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Embu (Kĩembu) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
+        "words": [
+                {
+                        "target": "Tũrĩmenyerera Kī-būtū mũciĩ witũ",
+                        "source": "We keep hoe at our homestead",
+                        "pronunciation": "tũrĩmenyerera kī-būtū mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Kī-gwū mũciĩ witũ",
+                        "source": "We keep song at our homestead",
+                        "pronunciation": "tũrĩmenyerera kī-gwū mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Ngai nĩ mwaro mũciĩ witũ",
+                        "source": "We keep god is good at our homestead",
+                        "pronunciation": "tũrĩmenyerera ngai nĩ mwaro mũciĩ witũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera kiama kĩa athuri mũciĩ witũ",
+                        "source": "We keep council of elders at our homestead",
+                        "pronunciation": "tũrĩmenyerera kiama kĩa athuri mũciĩ witũ"
+                },
+                {
+                        "target": "Thogora wa imba thoko-inĩ nĩ igana?",
+                        "source": "What is the price of swell at the market?",
+                        "pronunciation": "thogora wa imba thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Ndethia thoko-inĩ nĩ igana?",
+                        "source": "What is the price of help me at the market?",
+                        "pronunciation": "thogora wa ndethia thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Thibitari thoko-inĩ nĩ igana?",
+                        "source": "What is the price of hospital at the market?",
+                        "pronunciation": "thogora wa thibitari thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Muthiga thoko-inĩ nĩ igana?",
+                        "source": "What is the price of medicine at the market?",
+                        "pronunciation": "thogora wa muthiga thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Murimu thoko-inĩ nĩ igana?",
+                        "source": "What is the price of sickness at the market?",
+                        "pronunciation": "thogora wa murimu thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Mundugo thoko-inĩ nĩ igana?",
+                        "source": "What is the price of doctor at the market?",
+                        "pronunciation": "thogora wa mundugo thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Ugwati thoko-inĩ nĩ igana?",
+                        "source": "What is the price of danger at the market?",
+                        "pronunciation": "thogora wa ugwati thoko-inĩ nĩ igana"
+                },
+                {
+                        "target": "Thogora wa Thayũ thoko-inĩ nĩ igana?",
+                        "source": "What is the price of peace at the market?",
+                        "pronunciation": "thogora wa thayũ thoko-inĩ nĩ igana"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ĩĩ, tũrĩ na Ngai nĩ mwaro njega",
+                        "source": "Yes, we have good god is good"
+                },
+                {
+                        "target": "Ũrĩ na kiama kĩa athuri ũmũnthĩ?",
+                        "source": "Do you have council of elders today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na kiama kĩa athuri njega",
+                        "source": "Yes, we have good council of elders"
+                },
+                {
+                        "target": "Thogora wa Thoko thoko-inĩ nĩ igana?",
+                        "source": "What is the price of market at the market?"
+                },
+                {
+                        "target": "Thogora wa Mbeca thoko-inĩ nĩ igana?",
+                        "source": "What is the price of money at the market?"
+                },
+                {
+                        "target": "Thogora wa Thogora thoko-inĩ nĩ igana?",
+                        "source": "What is the price of price at the market?"
+                },
+                {
+                        "target": "Thogora wa Nduka thoko-inĩ nĩ igana?",
+                        "source": "What is the price of shop at the market?"
+                },
+                {
+                        "target": "Thogora wa Thiiri thoko-inĩ nĩ igana?",
+                        "source": "What is the price of debt at the market?"
+                },
+                {
+                        "target": "Thogora wa mbaara thoko-inĩ nĩ igana?",
+                        "source": "What is the price of war at the market?"
+                },
+                {
+                        "target": "Thogora wa ĩtũmũ thoko-inĩ nĩ igana?",
+                        "source": "What is the price of spear at the market?"
+                },
+                {
+                        "target": "Thogora wa imba thoko-inĩ nĩ igana?",
+                        "source": "What is the price of swell at the market?"
+                },
+                {
+                        "target": "Thogora wa Ndethia thoko-inĩ nĩ igana?",
+                        "source": "What is the price of help me at the market?"
+                }
+        ]
+}
     ]
   }
 ];

@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Mijikenda (Kigiryama / Chidigo (Midzi Chenda)) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const MIJIKENDA_CONFIG: LanguageConfig = {
   "id": "mijikenda",
@@ -35,9 +30,11 @@ export const MIJIKENDA_CONFIG: LanguageConfig = {
 export const MIJIKENDA_UNITS: CourseUnit[] = [
   {
     "id": "mijikenda-unit-1",
-    "title": "Unit 1: Sacred Kaya Heritage, Sabaki Nouns & W. E. Taylor (1891) Riddles",
+    "unitNumber": 1,
+    "title": "Sacred Kaya Heritage, Sabaki Nouns & W. E. Taylor Riddles",
     "description": "Learn Kigiryama, Kirabai, and Chidigo nouns, numerals, verbs, and 1891 riddles and folktales from W. E. Taylor and Krapf & Rebmann (1887).",
     "icon": "BookOpen",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-kaya-nouns",
@@ -213,7 +210,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       },
       {
         "id": "mijikenda-verbs-folklore",
-        "title": "Kigiryama Verbs, Numerals, 4-Day Week & Taylor (1891) Proverbs & Folktales",
+        "title": "Kigiryama Verbs, Numerals, 4-Day Week & Taylor Proverbs & Folktales",
         "icon": "Scale",
         "description": "Learn Mijikenda action verbs, numbers, traditional 4-day market week, proverbs, and folktale characters from W. E. Taylor (1891).",
         "tips": "W. E. Taylor (1891, p. 78) documents the traditional 4-day Giriama week (Jumwa, Kuramuka, Kurima-hiri, Kuisa), 5 folktales starring Katsungula (the Little Hare), 22 riddles, and 64 Giryama/Nyika proverbs.",
@@ -227,24 +224,24 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "mumwenga",
             "source": "One (1)",
-            "pronunciation": "mumwenga mai-ri a-ha-hu an-ne atsa-no handa-hu funga-he na-ne chenda ku-mi",
+            "pronunciation": "mumwenga",
             "hint": "Mijikenda numerals 1–10 (Taylor 1891 & Krapf 1887)"
           },
           {
             "target": "mairi",
             "source": "Two (2)",
-            "pronunciation": "mumwenga mai-ri a-ha-hu an-ne atsa-no handa-hu funga-he na-ne chenda ku-mi",
+            "pronunciation": "mairi",
             "hint": "Mijikenda numerals 1–10 (Taylor 1891 & Krapf 1887)"
           },
           {
             "target": "ahahu",
             "source": "Three (3)",
-            "pronunciation": "mumwenga mai-ri a-ha-hu an-ne atsa-no handa-hu funga-he na-ne chenda ku-mi",
+            "pronunciation": "ahahu",
             "hint": "Mijikenda numerals 1–10 (Taylor 1891 & Krapf 1887)"
           },
           {
             "target": "Jumwa, Kuramuka, Kurima-hiri, Kuisa",
-            "source": "The traditional 4-day Giriama week (rest day, 1st, 2nd, and 3rd cultivating days)",
+            "source": "The traditional 4-day Giriama week",
             "pronunciation": "jumwa ku-ra-mu-ka kurima-hiri kui-sa",
             "hint": "W. E. Taylor (1891, p. 78 under Moon)"
           },
@@ -261,10 +258,14 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf & Rebmann (1887) & Taylor (1891)"
           },
           {
-            "target": "Bandzu, bandzu rámala gogo (#602) • Chuwo k'akina mumwenga (#602a)",
-            "source": "Chip, chip finished the block • Counsel is not of one alone (Taylor 1891)",
-            "pronunciation": "bandzu bandzu ra-ma-la go-go • chu-wo k'a-ki-na mumwenga",
-            "hint": "W. E. Taylor (1891, p. 136, Giryama Proverbs #602 & #602a)"
+            "target": "Bandzu, bandzu rámala gogo (#602)",
+            "source": "Chip, chip finished the block",
+            "pronunciation": "bandzu"
+          },
+          {
+            "target": "Chuwo k'akina mumwenga (#602a)",
+            "source": "Counsel is not of one alone (Taylor 1891)",
+            "pronunciation": "chuwo-k'akina-mumwenga"
           },
           {
             "target": "K'akilumika. Ni kikokora.",
@@ -274,7 +275,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Magoma mairi lwanda-ni. Ni mahombo.",
-            "source": "Two cows, in the open field. — It is the breasts / maternal nourishment (Taylor 1891 Riddle #18)",
+            "source": "Two cows, in the open field. — It is the breasts / maternal nourishment (Taylor 1891",
             "pronunciation": "ma-go-ma mai-ri lwanda-ni ni ma-hombo",
             "hint": "lwanda-ni = in the open field"
           }
@@ -312,18 +313,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Jumwa, Kuramuka, Kurima-hiri, Kuisa\" in Mijikenda?",
-            "correctAnswer": "The traditional 4-day Giriama week (rest day, 1st, 2nd, and 3rd cultivating days)",
-            "options": [
-              "to eat / to cook",
-              "The traditional 4-day Giriama week (rest day, 1st, 2nd, and 3rd cultivating days)",
-              "little hare / lion / hyena",
-              "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
-            ],
-            "hint": "W. E. Taylor (1891, p. 78 under Moon)"
-          },
-          {
-            "type": "multiple_choice",
             "prompt": "How do you say \"The traditional 4-day Giriama week (rest day, 1st, 2nd, and 3rd cultivating days)\" in Mijikenda?",
             "correctAnswer": "Jumwa, Kuramuka, Kurima-hiri, Kuisa",
             "options": [
@@ -356,14 +345,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "little hare / lion / hyena"
               },
               {
-                "left": "mumwenga, mairi, ahahu, an-ne, atsano, handahu, fungahe, nane, chenda, kumi",
-                "right": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
-              },
-              {
-                "left": "Jumwa, Kuramuka, Kurima-hiri, Kuisa",
-                "right": "The traditional 4-day Giriama week (rest day, 1st, 2nd, and 3rd cultivating days)"
-              },
-              {
                 "left": "kurya / kugit'ira",
                 "right": "to eat / to cook"
               }
@@ -387,9 +368,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Users",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-family-kinship-kinship-elders-2",
@@ -454,7 +437,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -640,9 +622,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Scale",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-numbers-measures-cardinals-ordinals-3",
@@ -909,9 +893,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Tractor",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-food-agriculture-staple-foods-cookery-4",
@@ -929,7 +915,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ídji pl. ma-",
-            "source": "Egg"
+            "source": "Egg",
+            "pronunciation": "ídji-pl-ma-"
           },
           {
             "target": "jíta; jăkána",
@@ -1179,9 +1166,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "PawPrint",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-nature-wildlife-land-sky-water-5",
@@ -1447,9 +1436,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "User",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-body-health-anatomy-senses-6",
@@ -1713,9 +1704,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Compass",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-verbs-grammar-action-verbs-7",
@@ -1774,7 +1767,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Kinika"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2004,9 +1996,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Map",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-time-calendar-seasons-months-8",
@@ -2169,7 +2163,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Kinika"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2272,9 +2265,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-9",
-    "title": "Unit 9: Conversational Phrases, Idioms & Daily Dialogue",
+    "unitNumber": 9,
+    "title": "Conversational Phrases, Idioms & Daily Dialogue",
     "description": "Master conversational phrases, idioms & daily dialogue in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "MessageCircle",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-phrases-idioms-everyday-dialogue-9",
@@ -2472,7 +2467,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2575,9 +2569,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
   },
   {
     "id": "mijikenda-unit-10",
-    "title": "Unit 10: Classical Proverbs, Riddles & Ethnographic Heritage",
+    "unitNumber": 10,
+    "title": "Classical Proverbs, Riddles & Ethnographic Heritage",
     "description": "Master classical proverbs, riddles & ethnographic heritage in Mijikenda (Giriama) built directly from Rev. Dr. J. L. Krapf (1850, 1887), Rev. J. Rebmann (1887), Rev. W. E. Taylor (1891), Alice Werner (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Globe",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-oral-wisdom-literature-proverbs-riddles-10",
@@ -2642,7 +2638,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2804,7 +2799,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2906,10 +2900,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "mijikenda-unit-11-public-domain-corpus",
-    "title": "Unit 11: Archival Monograph & Comparative Lexicon",
+    "id": "mijikenda-unit-11",
+    "unitNumber": 11,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Mijikenda (Giriama) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-pd-corpus-11-1",
@@ -2967,7 +2963,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3074,7 +3069,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3128,10 +3122,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "mijikenda-unit-12-open-datasets-modern",
-    "title": "Unit 12: Core Swadesh & Everyday Community Vocabulary",
+    "id": "mijikenda-unit-12",
+    "unitNumber": 12,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Mijikenda (Giriama) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-open-dataset-12-1",
@@ -3383,10 +3379,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "mijikenda-unit-13-krapf-rebmann-1887",
-    "title": "Unit 13: 1887 Nika Dictionary — Solar Clock, Kaya Institutions & Ecological Taxonomies",
+    "id": "mijikenda-unit-13",
+    "unitNumber": 13,
+    "title": "1887 Nika Dictionary",
     "description": "Master the 13-stage Mijikenda solar clock (Dzua), the 5 indigenous finger names (Chala), the 7 coconut maturation stages (Pungapunga to Muvala), the 8 palm-tapping steps (Ugema), and Kaya governance from Krapf, Rebmann & Sparshott (1887).",
     "icon": "Sun",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-1887-solar-clock-fingers",
@@ -3410,7 +3408,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "Dzua ridzifika murauko wa gnombe wegnie",
             "source": "Morning cattle-turning-out time (c. 8:30–9:00 a.m.)",
-            "pronunciation": "dzoo-ah ree-dzee-fee-kah moo-rah-oo-koh wah ng'ohm-beh weh-nyeh",
+            "pronunciation": "dzua-ridzifika-murauko-wa",
             "hint": "Stage 4 of the solar day (Krapf & Rebmann 1887, p. 66)"
           },
           {
@@ -3506,32 +3504,45 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       },
       {
         "id": "mijikenda-1887-kaya-coconuts-ugema",
-        "title": "Kaya Architecture (Mumfiria, M'oro, Rungu), Coconut Stages & Palm-Tapping",
+        "title": "Kaya Architecture (Mumfiria, M'oro, Rungu), Coconut Stages &",
         "icon": "TreePine",
         "description": "Explore the three defining institutions of a Mijikenda Kaya, the 7 stages of coconut maturation (Pungapunga to Muvala), the 8 stages of palm-wine tapping (Dangadza), and the 8 stages of child motor development (Koko).",
         "tips": "As recorded by Krapf & Rebmann (1887, p. 259 s.v. M'oro), a settlement without a fortified gate (mumfiria), central council green (m'oro), and sacred elders' lodge (rungu) is called merely a mudzi ('village'), never a kaya.",
         "words": [
           {
-            "target": "Mumfiria • M'oro • Rungu",
-            "source": "Fortified narrow Kaya gate • Central council green • Sacred elders' lodge",
-            "pronunciation": "moom-fee-ree-ah • moh-roh • roon-goo",
-            "hint": "The three defining institutions of a Mijikenda Kaya (Krapf & Rebmann 1887, pp. 259, 285, 338)"
+            "target": "Mumfiria",
+            "source": "Fortified narrow Kaya gate",
+            "pronunciation": "mumfiria"
           },
           {
-            "target": "Ugnaro (men) & Gundi (women) • Ku thura (Mumondo → Govu)",
-            "source": "Youth initiation into Kambi • Highest elder investiture conferring the lumfo armlet",
-            "pronunciation": "oo-nyah-roh • goon-dee • koo thoo-rah",
-            "hint": "Mijikenda age-grades and ritual orders (Krapf & Rebmann 1887, pp. 111, 115, 356, 365)"
+            "target": "M'oro",
+            "source": "Central council green",
+            "pronunciation": "m'oro"
+          },
+          {
+            "target": "Rungu",
+            "source": "Sacred elders' lodge",
+            "pronunciation": "rungu"
+          },
+          {
+            "target": "Ugnaro (men) & Gundi (women)",
+            "source": "Youth initiation into Kambi",
+            "pronunciation": "ugnaro-gundi"
+          },
+          {
+            "target": "Ku thura (Mumondo → Govu)",
+            "source": "Highest elder investiture conferring the lumfo armlet",
+            "pronunciation": "ku-thura"
           },
           {
             "target": "Pungapunga → Kidagna → Kidale → Dafu → Koloma → Nazi → Muvala",
             "source": "7 stages of coconut maturation from embryo bud to ripe nut (nazi) and dried copra (muvala)",
-            "pronunciation": "poon-gah-poon-gah • kee-dah-nyah • kee-dah-leh • dah-foo • koh-loh-mah • nah-zee • moo-vah-lah",
+            "pronunciation": "pungapunga-kidagna-kidale-dafu",
             "hint": "Krapf & Rebmann (1887, p. 325 s.v. Pungapunga)"
           },
           {
             "target": "Nafunga vanda → Nadangadza muanso → Nakueza vibaria → N'enda nikageme",
-            "source": "Cutting trunk notches → Stripping/binding the spadix → Hanging calabashes → Tapping palm wine",
+            "source": "Cutting trunk notches → Stripping/binding the spadix → Hanging calabashes → Tapping",
             "pronunciation": "nah-foon-gah vahn-dah • nah-dahn-gah-dzah mwahn-soh",
             "hint": "8-stage palm-wine tapping sequence (Krapf & Rebmann 1887, p. 35 s.v. Dangadza)"
           },
@@ -3553,18 +3564,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "According to Krapf & Rebmann (1887, p. 259 s.v. M'oro), which three structures distinguish a sacred Mijikenda Kaya from an ordinary village (mudzi)?",
-            "correctAnswer": "Mumfiria (fortified gateway), M'oro (central assembly green), and Rungu (sacred lodge)",
-            "options": [
-              "Mumfiria (fortified gateway), M'oro (central assembly green), and Rungu (sacred lodge)",
-              "Kidagna, Kidale, and Dafu",
-              "Kibaria, Muanso, and Vanda",
-              "Chala, Koko, and Dzua"
-            ],
-            "hint": "See Krapf & Rebmann (1887, p. 259 s.v. M'oro)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each stage of coconut maturation (Krapf & Rebmann 1887, p. 325) with its meaning:",
@@ -3593,10 +3592,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "mijikenda-unit-14-krapf-rebmann-1887-complete",
-    "title": "Unit 14: 1887 Nika Dictionary II — Verb Sets, 12-Class Na- Table, Kinship, Ordeals & Prayers",
+    "id": "mijikenda-unit-14",
+    "unitNumber": 14,
+    "title": "1887 Nika Dictionary II",
     "description": "Master the 6 answer verbs, 7 harvesting verbs, 4 pounding verbs, 12-class Na- pronouns, teknonymy (Abe-/Mayo-), 9 Kibaria calabashes, 6 Kiravo ordeals, Kore blood-money, 5 Mulungu prayers, and 3 fables from Krapf, Rebmann & Sparshott (1887).",
     "icon": "BookOpen",
+    "color": "#0D9488",
     "skills": [
       {
         "id": "mijikenda-1887-verbs-pronouns-kinship",
@@ -3606,34 +3607,96 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "tips": "In Kinika (p. 126 s.v. Hongoza), three verbs for 'to answer' (ku hongoza, ku runga, ku shudia) are used strictly in negative clauses ('he did not answer a word'), whereas ku lungukiza, ku udzikiza, and ku udzira are used in both affirmative and negative clauses.",
         "words": [
           {
-            "target": "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza, Ku udzira",
-            "source": "3 negative-only verbs for 'to answer' vs. 3 affirmative & negative verbs for 'to reply / answer a call'",
+            "target": "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza,",
+            "source": "3 negative-only verbs for 'to answer' vs. 3 affirmative & negative verbs for 'to",
             "pronunciation": "koo hohn-goh-zah / koo loon-goo-kee-zah",
             "hint": "Krapf, Rebmann & Sparshott (1887, p. 126 s.v. Hongoza)"
           },
           {
-            "target": "Ku funa • Ku guha • Ku tola • Ku poa • Ku hunda • Ku kwachula • Ku kopa",
-            "source": "7 harvesting verbs: reap stalks • break cobs • pick pods • thresh pods • pluck fruit • strip clusters • cut fronds/bunches",
-            "pronunciation": "koo foo-nah • koo goo-hah • koo toh-lah • koo poh-ah • koo hoon-dah",
-            "hint": "Krapf, Rebmann & Sparshott (1887, p. 93 s.v. Funa)"
+            "target": "Ku funa",
+            "source": "7 harvesting verbs: reap stalks",
+            "pronunciation": "ku-funa"
           },
           {
-            "target": "Ku bonda • Ku vonda • Ku huaga • Ku pura",
-            "source": "4 pounding verbs: mash soft food • 1st husking pound • 2nd cleaning pound • final flour pounding",
-            "pronunciation": "koo bohn-dah • koo vohn-dah • koo hwah-gah • koo poo-rah",
-            "hint": "Krapf, Rebmann & Sparshott (1887, p. 127 s.v. Huaga & p. 384 s.v. Vonda)"
+            "target": "Ku guha",
+            "source": "break cobs",
+            "pronunciation": "ku-guha"
           },
           {
-            "target": "Na-ga/Na-go (Cl. 6) • Na-ki/Na-cho (Cl. 7) • Na-lu/Na-lo (Cl. 11) • Na-ri/Na-ro (Cl. 5) • Na-vi/Na-vio (Cl. 8)",
+            "target": "Ku tola",
+            "source": "pick pods",
+            "pronunciation": "ku-tola"
+          },
+          {
+            "target": "Ku poa",
+            "source": "thresh pods",
+            "pronunciation": "ku-poa"
+          },
+          {
+            "target": "Ku hunda",
+            "source": "pluck fruit",
+            "pronunciation": "ku-hunda"
+          },
+          {
+            "target": "Ku kwachula",
+            "source": "strip clusters",
+            "pronunciation": "ku-kwachula"
+          },
+          {
+            "target": "Ku kopa",
+            "source": "cut fronds/bunches",
+            "pronunciation": "ku-kopa"
+          },
+          {
+            "target": "Ku bonda",
+            "source": "4 pounding verbs: mash soft food",
+            "pronunciation": "ku-bonda"
+          },
+          {
+            "target": "Ku vonda",
+            "source": "1st husking pound",
+            "pronunciation": "ku-vonda"
+          },
+          {
+            "target": "Ku huaga",
+            "source": "2nd cleaning pound",
+            "pronunciation": "ku-huaga"
+          },
+          {
+            "target": "Ku pura",
+            "source": "final flour pounding",
+            "pronunciation": "ku-pura"
+          },
+          {
+            "target": "Na-ga/Na-go (Cl. 6)",
             "source": "Class-concordant 'also / and it / with it' pronouns across the 12 noun classes",
-            "pronunciation": "nah-gah nah-goh • nah-kee nah-choh • nah-loo nah-loh • nah-ree nah-roh",
+            "pronunciation": "na-ga",
             "hint": "12-class Na- table in Krapf, Rebmann & Sparshott (1887, p. 297 s.v. Na)"
           },
           {
-            "target": "Abe-Gunja (pl. Abe-yehu / Abe-zehu) • Avu • Dzangasimi • Muhua • Mukoi",
-            "source": "Father-of-Gunja (teknonym) • Maternal uncle • Paternal aunt • Sister's child • Cross-cousin (child of avu)",
-            "pronunciation": "ah-beh goon-jah • ah-voo • dzahn-gah-see-mee • moo-hoo-ah • moo-koh-ee",
-            "hint": "Kinship & teknonymy in Krapf, Rebmann & Sparshott (1887, pp. 1, 9, 57, 276, 279)"
+            "target": "Abe-Gunja",
+            "source": "Father-of-Gunja (teknonym)",
+            "pronunciation": "abe-gunja"
+          },
+          {
+            "target": "Avu",
+            "source": "Maternal uncle",
+            "pronunciation": "avu"
+          },
+          {
+            "target": "Dzangasimi",
+            "source": "Paternal aunt",
+            "pronunciation": "dzangasimi"
+          },
+          {
+            "target": "Muhua",
+            "source": "Sister's child",
+            "pronunciation": "muhua"
+          },
+          {
+            "target": "Mukoi",
+            "source": "Cross-cousin (child of avu)",
+            "pronunciation": "mukoi"
           }
         ],
         "sentences": [
@@ -3647,18 +3710,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "Which three Kinika verbs for 'to answer' are used ONLY in negative sentences according to Krapf, Rebmann & Sparshott (1887, p. 126 s.v. Hongoza)?",
-            "correctAnswer": "Ku hongoza, Ku runga, and Ku shudia",
-            "options": [
-              "Ku hongoza, Ku runga, and Ku shudia",
-              "Ku lungukiza, Ku udzikiza, and Ku udzira",
-              "Ku bonda, Ku vonda, and Ku huaga",
-              "Ku funa, Ku guha, and Ku tola"
-            ],
-            "hint": "See p. 126 s.v. Hongoza"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Mijikenda kinship or pounding term (Krapf, Rebmann & Sparshott 1887) with its exact meaning:",
@@ -3686,40 +3737,46 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       },
       {
         "id": "mijikenda-1887-ordeals-prayers-fables",
-        "title": "6 Kiravo Ordeals, Kore Blood-Money, 9 Calabashes, 5 Mulungu Prayers & 3 Fables",
+        "title": "6 Kiravo Ordeals, Kore Blood-Money, 9 Calabashes, 5 Mulungu",
         "icon": "Scale",
         "description": "Explore Mijikenda customary law (6 Kiravo ordeals, Kore blood-money, Ku funsa chala), the 9 Kibaria calabash sizes, the 5 prayers to Mulungu, and the 3 fables in Krapf, Rebmann & Sparshott (1887).",
         "tips": "In Mijikenda customary jurisprudence (p. 192 s.v. Kore), intentional murder required two anafiale (a youth and a maiden) to replace the victim's kifurifuri ('shadow'), whereas accidental homicide (kua zani, p. 339) required one kore.",
         "words": [
           {
-            "target": "Kiravo cha mukate (kikahe) • luembe • luiga • chuma • lukuni • mvuga • Ku piga niungu",
-            "source": "6 judicial ordeals (poisoned cake, hot razor, hot horn/needle, hot iron, firebrand, boiling water) & pot-smashing oath",
-            "pronunciation": "kee-rah-voh chah moo-kah-teh • lwem-beh • lwee-gah • choo-mah",
-            "hint": "Krapf, Rebmann & Sparshott (1887, pp. 169, 178 s.v. Kikahe & Kiravo)"
+            "target": "Kiravo cha mukate",
+            "source": "kikahe",
+            "pronunciation": "kiravo-cha-mukate"
           },
           {
-            "target": "Kore (2 anafiale for kifurifuri shadow vs. 1 kore for kua zani) • Ku funsa chala",
-            "source": "Blood-money compensation (intentional vs. accidental homicide) • Bending a finger to forgive twice before fighting on the 3rd offence",
-            "pronunciation": "koh-reh • kee-foo-ree-foo-ree • koo foon-sah chah-lah",
-            "hint": "Krapf, Rebmann & Sparshott (1887, pp. 94–95, 192, 339)"
+            "target": "Kore",
+            "source": "Blood-money compensation",
+            "pronunciation": "kore"
           },
           {
-            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo → Dunda",
-            "source": "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to the largest storage gourd (dunda)",
-            "pronunciation": "kee-bah-ree-ah • kee-reh-ah • toom-bee • ndzoh-mah • doon-dah",
+            "target": "Ku funsa chala",
+            "source": "Bending a finger to forgive twice before fighting on the 3rd offence",
+            "pronunciation": "ku-funsa-chala"
+          },
+          {
+            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo",
+            "source": "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to the",
+            "pronunciation": "kibaria-kirea-tumbi-ndzoma",
             "hint": "Krapf, Rebmann & Sparshott (1887, pp. 151–152 s.v. Kibaria)"
           },
           {
-            "target": "Similani kambi! — Hai! • Kula Abegnania! — Hosi nahu kule!",
-            "source": "Give ear, O council! — Aye! • May Father-of-So-and-so live long! — May we all live long! (M'oro assembly formulas)",
-            "pronunciation": "see-mee-lah-nee kahm-bee • hah-ee • koo-lah ah-beh-nyah-nee-ah",
-            "hint": "Krapf, Rebmann & Sparshott (1887, pp. 259–260, 347)"
+            "target": "Similani kambi! — Hai!",
+            "source": "Give ear, O council! — Aye!",
+            "pronunciation": "similani-kambi-hai"
           },
           {
-            "target": "Pingi na Kuku na Ninga (p. 323) • Nundu (bat, p. 314) • Mignio vs. Ludzoa (p. 256)",
-            "source": "Three traditional Kinika fables: Charm-wood, Fowl & Wild Pigeon; the Bat rejected by birds and beasts; Black Ants vs. Termites",
-            "pronunciation": "peen-gee nah koo-koo nah neen-gah • noon-doo • mee-nyoh",
-            "hint": "Krapf, Rebmann & Sparshott (1887, pp. 256, 314, 323)"
+            "target": "Kula Abegnania! — Hosi nahu kule!",
+            "source": "May Father-of-So-and-so live long! — May we all live long! (M'oro assembly formulas)",
+            "pronunciation": "kula-abegnania-hosi-nahu"
+          },
+          {
+            "target": "Nundu",
+            "source": "bat, p. 314",
+            "pronunciation": "nundu"
           }
         ],
         "sentences": [
@@ -3731,116 +3788,380 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "target": "Similani kambi! — Hai! Kula Abegnania! — Hosi nahu kule!",
             "source": "Give ear, O council! — Aye! May Father-of-So-and-so live long! — May we all live long! (pp. 259–260, 347)"
           }
-        ],
-        "authoredExercises": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mijikenda-unit-15",
+    "unitNumber": 15,
+    "title": "Digo (Chidigo) Information Structure",
+    "description": "Master Steve Nicolle's (2016, Ch. 20, pp. 377–395) corpus analysis of Digo ([dig] E73, Kwale District, Kenya, 864 clauses) and 10 other Eastern Bantu languages across topic dislocation, clefted subject focus, and VS thetic sentences.",
+    "icon": "BookOpen",
+    "color": "#059669",
+    "skills": [
+      {
+        "id": "mijikenda-nicolle-2016-15-1-digo-topic-focus-thetic",
+        "title": "Digo Left/Right Topic Dislocation, Clefted Subject Focus & VS",
+        "icon": "MessageSquare",
+        "description": "Practice the exact Digo oral narrative sentences from Nicolle (2016, Ch. 20, Ex. 2–3, 7–8, 11, 22, 25) alongside comparative Suba-Simbiti ([ssc] EJ403) patterns.",
+        "tips": "In Digo ([dig] E73), left-dislocated object topics trigger an object prefix on the verb ([Barabara] ndipho [a-ka-i-rich-a], Ex. 2), whereas topicalized objects omit the object prefix when the verb is focused ([Pesa] sino [hu-na-Ø-hew-a], Ex. 3). Continued subject topics are left-dislocated across a paragraph break (Ex. 8) but right-dislocated within a paragraph (Lakini [achinyamala] [mutu yuyu], Ex. 11). Post-verbal subjects in Digo are never focal—subject focus requires a cleft (iye ndi=ye..., Ex. 22), and thetic sentences are strictly VS (ratuluka fisi, Ex. 25).",
+        "words": [
           {
-            "type": "multiple_choice",
-            "prompt": "In Mijikenda customary law (Krapf, Rebmann & Sparshott 1887, pp. 192, 339), why did intentional homicide require paying two young people (anafiale) as kore blood-money?",
-            "correctAnswer": "To stand in place of the slain person's kifurifuri ('shadow') and perpetuate their lineage",
-            "options": [
-              "To stand in place of the slain person's kifurifuri ('shadow') and perpetuate their lineage",
-              "To tap palm-wine in the Kaya",
-              "To guard the mumfiria gateway",
-              "To administer the kiravo ordeal"
-            ],
-            "hint": "See p. 192 s.v. Kore"
+            "target": "[Barabara]_TOPIC ndipho [a-ka-i-rich-a]_COMMENT",
+            "source": "The main road, that is when he left it",
+            "pronunciation": "topic-ndipho-comment"
           },
           {
-            "type": "match_pairs",
-            "prompt": "Match each cultural item from Krapf, Rebmann & Sparshott (1887) with its description:",
-            "correctAnswer": "Kibaria → Dunda: 9 graded calabash sizes from smallest tapping gourd to largest vessel (pp. 151–152)",
-            "pairs": [
-              {
-                "left": "Kibaria → Dunda",
-                "right": "9 graded calabash sizes from smallest tapping gourd to largest vessel (pp. 151–152)"
-              },
-              {
-                "left": "Ku funsa chala",
-                "right": "Bending a finger to forgive twice before fighting on the third offence (pp. 94–95)"
-              },
-              {
-                "left": "Nundu (p. 314)",
-                "right": "Fable of the bat rejected by both birds and beasts for double-dealing"
-              },
-              {
-                "left": "Bori, Ndzao, Mugoma",
-                "right": "Three commercial weight classes of elephant ivory tusks (p. 321)"
-              }
-            ]
+            "target": "[Pesa]_TOPIC sino [hu-na-Ø-hew-a]_COMMENT",
+            "source": "That money, we have been given [it]",
+            "pronunciation": "topic-sino-comment"
+          },
+          {
+            "target": "ela [go mafuha ga taa]_TOPIC ndo [n’yarya?]_COMMENT",
+            "source": "but that lamp oil, what was it? (switch topic)",
+            "pronunciation": "ela-topic-ndo-comment"
+          },
+          {
+            "target": "Lakini [achinyamala]_COMMENT [mutu yuyu]_TOPIC wala kayagomba na mutu",
+            "source": "However, he kept quiet, this person, and didn't speak with anyone",
+            "pronunciation": "lakini-comment-topic-wala",
+            "hint": "Nicolle (2016, Ch. 20, p. 383, Ex. 11)"
+          },
+          {
+            "target": "Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo",
+            "source": "That is when people knew that [it was] he [who did these things]",
+            "pronunciation": "ndipho-atu-achimanya-kukala",
+            "hint": "Nicolle (2016, Ch. 20, p. 388, Ex. 22)"
+          },
+          {
+            "target": "Phahi rero, chisha chindi, [ratuluka] [fisi], rina chitswa dza cha",
+            "source": "Then today, after a short time, out came a giant hyena, having a head like a",
+            "pronunciation": "ra-tu-lu-ka fi-si ri-na chi-tswa dza cha mu-tu",
+            "hint": "Nicolle (2016, Ch. 20, p. 390, Ex. 25)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Lakini achinyamala mutu yuyu wala kayagomba na mutu",
+            "source": "However, this person kept quiet and didn't speak with anyone"
           }
         ]
       }
     ]
+  },
+  {
+    "id": "mijikenda-unit-16",
+    "unitNumber": 16,
+    "title": "Kigiryama Agriculture & Homestead Life",
+    "description": "Curated Kigiryama farming, irrigation, and natural-world vocabulary from the Lingua-Connect English–Giriama Corpus",
+    "icon": "🌾",
+    "color": "#D97706",
+    "skills": [
+      {
+        "id": "mijikenda-open-skill-1",
+        "title": "Farming, Harvest & Coastal Nature",
+        "icon": "🌱",
+        "description": "Agricultural extension terms and everyday Kigiryama nouns",
+        "grammarTip": "In Kigiryama, locative and genitive phrases use 'wa / za / cha' agreeing with the head noun class (e.g., mwambolero wa dzuwa 'sunrise / east', uchi wa nyuchi 'wild bee honey').",
+        "culturalNote": "Sourced from the Lingua-Connect/English-Giriama-Dataset (2025, CC-BY-4.0).",
+        "words": [
+          {
+            "target": "mudzi",
+            "source": "Town, village, or homestead (pl. midzi)",
+            "pronunciation": "mu-dzi"
+          },
+          {
+            "target": "mwambolero wa dzuwa",
+            "source": "East / sunrise",
+            "pronunciation": "mwa-mbo-le-ro wa dzu-wa"
+          },
+          {
+            "target": "muho",
+            "source": "River",
+            "pronunciation": "mu-ho"
+          },
+          {
+            "target": "ziya",
+            "source": "Lake or sea",
+            "pronunciation": "zi-ya"
+          },
+          {
+            "target": "avuhi",
+            "source": "Fishermen",
+            "pronunciation": "a-vu-hi"
+          },
+          {
+            "target": "vimia",
+            "source": "Fishing nets",
+            "pronunciation": "vi-mi-a"
+          },
+          {
+            "target": "lungo",
+            "source": "Winnowing tray",
+            "pronunciation": "lu-ngo"
+          },
+          {
+            "target": "lutsaga",
+            "source": "Granary or corn barn",
+            "pronunciation": "lu-tsa-ga"
+          },
+          {
+            "target": "uchi wa nyuchi",
+            "source": "Wild bee honey",
+            "pronunciation": "u-chi wa nyu-chi"
+          },
+          {
+            "target": "matunda madzo",
+            "source": "Good fruits",
+            "pronunciation": "ma-tu-nda ma-dzo"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Mihogo chikala kinywe chingonji.",
+            "source": "The crops need to be watered."
+          }
+        ]
+      },
+        {
+        "id": "mijikenda-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Mijikenda (Giriama) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain",
+        "words": [
+                {
+                        "target": "shukuru",
+                        "source": "To thank",
+                        "pronunciation": "shu-ku-ru"
+                },
+                {
+                        "target": "Udzamuka dze? / Mulamuka dze?",
+                        "source": "How are you this morning? (Kigiryama)",
+                        "pronunciation": "udzamuka dze"
+                },
+                {
+                        "target": "Ndzamukaeri",
+                        "source": "I woke up well",
+                        "pronunciation": "ndzamukaeri"
+                },
+                {
+                        "target": "rija; usíra",
+                        "source": "Pardon, v. a",
+                        "pronunciation": "rija"
+                },
+                {
+                        "target": "mausso",
+                        "source": "Pardon, s",
+                        "pronunciation": "mausso"
+                },
+                {
+                        "target": "uokófu; réri",
+                        "source": "Peace, s",
+                        "pronunciation": "uokófu"
+                },
+                {
+                        "target": "yuna",
+                        "source": "Sorry, to be",
+                        "pronunciation": "yuna"
+                },
+                {
+                        "target": "pa mumvéra",
+                        "source": "Thank, v. a",
+                        "pronunciation": "pa mumvéra"
+                },
+                {
+                        "target": "Hunarinda mbíga mudzini mwehu",
+                        "source": "We keep dish in our homestead",
+                        "pronunciation": "hunarinda mbíga mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda mriángo mudzini mwehu",
+                        "source": "We keep door in our homestead",
+                        "pronunciation": "hunarinda mriángo mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda niúmba mudzini mwehu",
+                        "source": "We keep home in our homestead",
+                        "pronunciation": "hunarinda niúmba mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda pẹhe mudzini mwehu",
+                        "source": "We keep ring in our homestead",
+                        "pronunciation": "hunarinda pẹhe mudzini mwehu"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Hunazaka ongokera hamwenga",
+                        "source": "We want to grow up together"
+                },
+                {
+                        "target": "Hunazaka usira hamwenga",
+                        "source": "We want to ask for together"
+                },
+                {
+                        "target": "Hunazaka finama hamwenga",
+                        "source": "We want to lie down together"
+                },
+                {
+                        "target": "Hunazaka godzera hamwenga",
+                        "source": "We want to wait for together"
+                },
+                {
+                        "target": "Hunazaka hendera hamwenga",
+                        "source": "We want to make for together"
+                },
+                {
+                        "target": "Hunazaka kumbukira hamwenga",
+                        "source": "We want to remember together"
+                },
+                {
+                        "target": "Hunazaka vakuza hamwenga",
+                        "source": "We want to wipe off together"
+                },
+                {
+                        "target": "Hunazaka voniosa hamwenga",
+                        "source": "We want to let drop together"
+                },
+                {
+                        "target": "Hunazaka Sumbula hamwenga",
+                        "source": "We want to find out together"
+                },
+                {
+                        "target": "Hunazaka gnola hamwenga",
+                        "source": "We want to pluck out together"
+                },
+                {
+                        "target": "Hunazaka lasira hamwenga",
+                        "source": "We want to put aside together"
+                },
+                {
+                        "target": "Hunazaka sugasuga hamwenga",
+                        "source": "We want to go astray together"
+                }
+        ]
+},
+        {
+        "id": "mijikenda-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Mijikenda (Giriama) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain",
+        "words": [
+                {
+                        "target": "Hunarinda dári mudzini mwehu",
+                        "source": "We keep roof in our homestead",
+                        "pronunciation": "hunarinda dári mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda lukambála lugue mudzini mwehu",
+                        "source": "We keep rope in our homestead",
+                        "pronunciation": "hunarinda lukambála lugue mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda kiráhu mudzini mwehu",
+                        "source": "We keep shoe in our homestead",
+                        "pronunciation": "hunarinda kiráhu mudzini mwehu"
+                },
+                {
+                        "target": "Hunarinda muhámbo mudzini mwehu",
+                        "source": "We keep trap in our homestead",
+                        "pronunciation": "hunarinda muhámbo mudzini mwehu"
+                },
+                {
+                        "target": "Bei ya pánia sokoni ni ngani?",
+                        "source": "What is the price of mouse at the market?",
+                        "pronunciation": "bei ya pánia sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya njía manga sokoni ni ngani?",
+                        "source": "What is the price of pigeon at the market?",
+                        "pronunciation": "bei ya njía manga sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya mamba sokoni ni ngani?",
+                        "source": "What is the price of „ horse at the market?",
+                        "pronunciation": "bei ya mamba sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya gnónsi sokoni ni ngani?",
+                        "source": "What is the price of sheep at the market?",
+                        "pronunciation": "bei ya gnónsi sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya jipúngu sokoni ni ngani?",
+                        "source": "What is the price of vulture at the market?",
+                        "pronunciation": "bei ya jipúngu sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya muítio sokoni ni ngani?",
+                        "source": "What is the price of awl at the market?",
+                        "pronunciation": "bei ya muítio sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya zóka sokoni ni ngani?",
+                        "source": "What is the price of axe at the market?",
+                        "pronunciation": "bei ya zóka sokoni ni ngani"
+                },
+                {
+                        "target": "Bei ya mkóba sokoni ni ngani?",
+                        "source": "What is the price of bag at the market?",
+                        "pronunciation": "bei ya mkóba sokoni ni ngani"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Hunazaka sulumiza hamwenga",
+                        "source": "We want to wash down together"
+                },
+                {
+                        "target": "Hunazaka dzembera hamwenga",
+                        "source": "We want to walk about together"
+                },
+                {
+                        "target": "Hunazaka dzukuza hamwenga",
+                        "source": "We want to make carry together"
+                },
+                {
+                        "target": "Bei ya kizungúla sokoni ni ngani?",
+                        "source": "What is the price of hare at the market?"
+                },
+                {
+                        "target": "Bei ya kúku sokoni ni ngani?",
+                        "source": "What is the price of hen at the market?"
+                },
+                {
+                        "target": "Bei ya ferási sokoni ni ngani?",
+                        "source": "What is the price of horse at the market?"
+                },
+                {
+                        "target": "Bei ya zui sokoni ni ngani?",
+                        "source": "What is the price of leopard at the market?"
+                },
+                {
+                        "target": "Bei ya jusu sokoni ni ngani?",
+                        "source": "What is the price of lizard at the market?"
+                },
+                {
+                        "target": "Bei ya záha sokoni ni ngani?",
+                        "source": "What is the price of louse at the market?"
+                },
+                {
+                        "target": "Bei ya nianni sokoni ni ngani?",
+                        "source": "What is the price of monkey at the market?"
+                },
+                {
+                        "target": "Bei ya pánia sokoni ni ngani?",
+                        "source": "What is the price of mouse at the market?"
+                },
+                {
+                        "target": "Bei ya njía manga sokoni ni ngani?",
+                        "source": "What is the price of pigeon at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
-
-// ── Unit 15: Complete Line-by-Line Integration of Steve Nicolle (2016, Ch. 20, pp. 377–395, DOI: 10.17169/langsci.b121.491), "Variation in the expression of information structure in eastern Bantu languages", in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages ──
-MIJIKENDA_UNITS.push({
-  "id": "mijikenda-unit-15-nicolle-2016-digo-information-structure-complete",
-  "title": "Unit 15: Digo (Chidigo) Information Structure (Nicolle 2016)",
-  "description": "Master Steve Nicolle's (2016, Ch. 20, pp. 377–395) corpus analysis of Digo ([dig] E73, Kwale District, Kenya, 864 clauses) and 10 other Eastern Bantu languages across topic dislocation, clefted subject focus, and VS thetic sentences.",
-  "icon": "BookOpen",
-  "number": 15,
-  "color": "#059669",
-  "skills": [
-    {
-      "id": "mijikenda-nicolle-2016-15-1-digo-topic-focus-thetic",
-      "title": "Digo Left/Right Topic Dislocation, Clefted Subject Focus & VS Thetic Sentences (Ch. 20, pp. 377–395)",
-      "icon": "MessageSquare",
-      "description": "Practice the exact Digo oral narrative sentences from Nicolle (2016, Ch. 20, Ex. 2–3, 7–8, 11, 22, 25) alongside comparative Suba-Simbiti ([ssc] EJ403) patterns.",
-      "tips": "In Digo ([dig] E73), left-dislocated object topics trigger an object prefix on the verb ([Barabara] ndipho [a-ka-i-rich-a], Ex. 2), whereas topicalized objects omit the object prefix when the verb is focused ([Pesa] sino [hu-na-Ø-hew-a], Ex. 3). Continued subject topics are left-dislocated across a paragraph break (Ex. 8) but right-dislocated within a paragraph (Lakini [achinyamala] [mutu yuyu], Ex. 11). Post-verbal subjects in Digo are never focal—subject focus requires a cleft (iye ndi=ye..., Ex. 22), and thetic sentences are strictly VS (ratuluka fisi, Ex. 25).",
-      "words": [
-        {
-          "target": "[Barabara]_TOPIC ndipho [a-ka-i-rich-a]_COMMENT • [Pesa]_TOPIC sino [hu-na-Ø-hew-a]_COMMENT",
-          "source": "The main road, that is when he left it (left-dislocated object with OP -i-) • That money, we have been given [it] (topicalized object without OP)",
-          "pronunciation": "ba-ra-ba-ra ndi-pho a-ka-i-ri-cha / pe-sa si-no hu-na-he-wa",
-          "hint": "Nicolle (2016, Ch. 20, pp. 379–380, Ex. 2–3)"
-        },
-        {
-          "target": "ela [go mafuha ga taa]_TOPIC ndo [n’yarya?]_COMMENT • Yuya bwana warima munda uchifika dza Mazera, na hiku uchifika dza Malindi ela kaguwire hata tsere mwenga",
-          "source": "but that lamp oil, what was it? (switch topic) • That man cultivated a farm reaching as far as Mazeras and Malindi, but he didn't harvest even one cob of maize (continued topic across paragraph break)",
-          "pronunciation": "go ma-fu-ha ga taa ndo nya-rya / yu-ya bwa-na wa-ri-ma mun-da",
-          "hint": "Nicolle (2016, Ch. 20, pp. 381–382, Ex. 7–8)"
-        },
-        {
-          "target": "Lakini [achinyamala]_COMMENT [mutu yuyu]_TOPIC wala kayagomba na mutu",
-          "source": "However, he kept quiet, this person, and didn't speak with anyone (right-dislocated continued subject topic within a paragraph)",
-          "pronunciation": "la-ki-ni a-chi-nya-ma-la mu-tu yu-yu wa-la ka-ya-gom-ba na mu-tu",
-          "hint": "Nicolle (2016, Ch. 20, p. 383, Ex. 11)"
-        },
-        {
-          "target": "Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo higo]_PRESUPPOSITION",
-          "source": "That is when people knew that [it was] he [who did these things] (cleft construction required for subject argument focus in Digo)",
-          "pronunciation": "ndi-pho a-tu a-chi-ma-nya ku-ka-la i-ye ndi-ye a-ri-ye-hen-da mam-bo hi-go",
-          "hint": "Nicolle (2016, Ch. 20, p. 388, Ex. 22)"
-        },
-        {
-          "target": "Phahi rero, chisha chindi, [ratuluka] [fisi], rina chitswa dza cha mutu, rina mikono minane na magulu manane, rina m’yo wa chuma",
-          "source": "Then today, after a short time, out came a giant hyena, having a head like a person's, eight hands, eight legs, and an iron heart (VS thetic sentence in Digo)",
-          "pronunciation": "ra-tu-lu-ka fi-si ri-na chi-tswa dza cha mu-tu",
-          "hint": "Nicolle (2016, Ch. 20, p. 390, Ex. 25)"
-        }
-      ],
-      "sentences": [
-        {
-          "target": "Lakini achinyamala mutu yuyu wala kayagomba na mutu • Ndipho atu achimanya kukala iye ndiye ariyehenda mambo higo.",
-          "source": "However, this person kept quiet and didn't speak with anyone • That is when people knew that it was he who did these things (Nicolle 2016, Ch. 20, pp. 383, 388, Ex. 11 & 22)."
-        }
-      ],
-      "authoredExercises": [
-        {
-          "type": "multiple_choice",
-          "prompt": "According to Steve Nicolle (2016, Ch. 20, pp. 381–391), how does Digo ([dig] E73) express (a) a continued subject topic within a paragraph, (b) subject argument focus, and (c) a thetic (all-new) sentence?",
-          "correctAnswer": "(a) Right-dislocation after the verb (Lakini achinyamala mutu yuyu), (b) a cleft construction (iye ndi=ye ariyehenda mambo higo) since post-verbal subjects cannot be focal in Digo, and (c) VS constituent order (ratuluka fisi) or locative-class agreement",
-          "options": [
-            "(a) Right-dislocation after the verb (Lakini achinyamala mutu yuyu), (b) a cleft construction (iye ndi=ye ariyehenda mambo higo) since post-verbal subjects cannot be focal in Digo, and (c) VS constituent order (ratuluka fisi) or locative-class agreement",
-            "(a) Obligatory SVO order in all contexts without clefts or right-dislocation",
-            "(a) Post-verbal subject focus without clefts, as in Rangi and Mwani",
-            "(a) SV thetic order only, prohibiting VS sentences"
-          ],
-          "hint": "See Nicolle (2016, Ch. 20, Ex. 11, 22 & 25, pp. 383, 388, 390)"
-        }
-      ]
-    }
-  ]
-});

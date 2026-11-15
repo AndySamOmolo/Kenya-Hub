@@ -28,13 +28,15 @@ export function extractMarkdownToc(content: string): TocHeading[] {
     if (match) {
       const rawLevel = match[1].length;
       const level = rawLevel === 1 ? 2 : rawLevel;
-      const cleanText = match[2]
+      const rawText = match[2].trim();
+      const cleanText = rawText
         .replace(/\*\*([^*]+)\*\*/g, "$1")
         .replace(/\*([^*]+)\*/g, "$1")
         .replace(/`([^`]+)`/g, "$1")
         .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/^\d+[.)]\s+/, "")
         .trim();
-      const baseId = slugifyHeading(cleanText) || "section";
+      const baseId = slugifyHeading(rawText) || "section";
       const count = usedIds.get(baseId) || 0;
       usedIds.set(baseId, count + 1);
       const id = count === 0 ? baseId : `${baseId}-${count + 1}`;

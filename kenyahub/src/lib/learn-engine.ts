@@ -45,7 +45,7 @@ export function cleanExerciseText(text: string): string {
  */
 export function getPrimaryForm(text: string): string {
   const cleaned = cleanExerciseText(text);
-  const primary = cleaned.split(/\s*[/;]\s*/)[0]?.trim();
+  const primary = cleaned.split(/\s*[/;•|→—–]\s*/)[0]?.trim();
   return primary || cleaned;
 }
 

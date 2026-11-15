@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-text-muted leading-relaxed max-w-xs">
-              Interactive Kenyan language learning platform (22 languages, proverbs &amp; dictionaries) and verified statutory calculators built for Kenya.
+              Interactive Kenyan language learning platform (23 languages, proverbs &amp; dictionaries) and verified statutory calculators built for Kenya.
             </p>
           </div>
 

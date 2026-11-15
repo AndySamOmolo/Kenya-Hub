@@ -91,3 +91,51 @@ LUO_PROVERBS.push({
   theme: "unity",
   sourceCitation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. XI.D, pp. 275–285)"
 });
+
+LUO_PROVERBS.push({
+  "id": "luo-kencorpus-prov-1",
+  "languageId": "luo",
+  "languageName": "Luo (Dholuo)",
+  "indigenous": "Wat imedo gi osiep; kuon ok cham kend.",
+  "literalTranslation": "Kinship is strengthened by friendship; ugali is never eaten alone.",
+  "meaning": "Hospitality and friendship reinforce family bonds; prosperity is meant to be shared with the community.",
+  "englishEquivalent": "No man is an island.",
+  "theme": "unity",
+  "sourceCitation": "Kencorpus Dholuo Proverbs (story_id 139, Wanjawa et al. 2023, CC-BY-4.0)"
+});
+
+LUO_PROVERBS.push({
+  "id": "luo-kencorpus-prov-2",
+  "languageId": "luo",
+  "languageName": "Luo (Dholuo)",
+  "indigenous": "Adiera en kwiri, to adiera ok tow.",
+  "literalTranslation": "Truth is an antidote, and truth never rots.",
+  "meaning": "Even when suppressed for a long time, truth heals injustice and outlasts falsehood.",
+  "englishEquivalent": "Truth will out.",
+  "theme": "wisdom",
+  "sourceCitation": "Kencorpus Dholuo Proverbs (story_id 139, Wanjawa et al. 2023, CC-BY-4.0)"
+});
+
+LUO_PROVERBS.push({
+  "id": "luo-kencorpus-prov-3",
+  "languageId": "luo",
+  "languageName": "Luo (Dholuo)",
+  "indigenous": "Adita ma ipimone e wadu ema in bende nipimni godo.",
+  "literalTranslation": "The basket you use to measure for your neighbor is the same one that will measure for you.",
+  "meaning": "How you treat others determines how the community will treat you in turn.",
+  "englishEquivalent": "What goes around comes around.",
+  "theme": "humility",
+  "sourceCitation": "Kencorpus Dholuo Proverbs (story_id 139, Wanjawa et al. 2023, CC-BY-4.0)"
+});
+
+LUO_PROVERBS.push({
+  "id": "luo-lughagen-prov-4",
+  "languageId": "luo",
+  "languageName": "Luo (Dholuo)",
+  "indigenous": "Chakruok maber kelo giko maber.",
+  "literalTranslation": "A good beginning brings a good ending.",
+  "meaning": "Careful preparation and honest foundations lead to lasting success in work and learning.",
+  "englishEquivalent": "Well begun is half done.",
+  "theme": "hard-work",
+  "sourceCitation": "LughaGen Native-Speaker Dholuo Corpus (Godfrey Koros, JHUB Africa 2026, CC-BY-SA-4.0)"
+});

@@ -87,3 +87,15 @@ export const TAITA_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language' (SPCK, London), pp. 84, 89, 99, 108, 118"
   }
 ];
+
+TAITA_PROVERBS.push({
+  "id": "taita-thinkkenya-prov-1",
+  "languageId": "taita",
+  "languageName": "Taita (Kidaw'ida)",
+  "indigenous": "Chawia cha kudighana ni chuo cha wandru wose.",
+  "literalTranslation": "Peaceful cooperation is the school of all people.",
+  "meaning": "Working together in harmony teaches wisdom to the entire community.",
+  "englishEquivalent": "Unity is strength.",
+  "theme": "unity",
+  "sourceCitation": "Mozilla Common Voice 25.0 Kidaw'ida Corpus (CC0-1.0) & ThinkKenya Kidaw'ida"
+});

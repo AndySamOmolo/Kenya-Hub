@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Daasanach (Dhaasanac) ('Af Dhaasanac / d’áasannæc) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const DAASANACH_CONFIG: LanguageConfig = {
   "id": "daasanach",
@@ -27,13 +22,15 @@ export const DAASANACH_CONFIG: LanguageConfig = {
 export const DAASANACH_UNITS: CourseUnit[] = [
   {
     "id": "daasanach-unit-1",
-    "title": "Unit 1: Greetings, Clusivity Pronouns (p. 211) & Galaboid Numerals (1–1,000, pp. 105–110)",
+    "unitNumber": 1,
+    "title": "Greetings, Clusivity Pronouns & Galaboid Numerals",
     "description": "Master Daasanach ('Af Dhaasanac / d’áasannæc) greetings, the 4-column Personal Pronoun Table (Tosco 2001 p. 211), and Galaboid numerals (Tosco 2001 pp. 105–110) from Václav Blažek (Folia Orientalia Vol. 48, 2011).",
     "icon": "BookOpen",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-greetings-pronouns",
-        "title": "Greetings & the 4-Column Personal Pronoun Table (Tosco 2001, p. 211)",
+        "title": "Greetings & the 4-Column Personal Pronoun Table",
         "icon": "Users",
         "description": "Learn essential Daasanach greetings and the complete absolute, subject, object, and possessive pronoun paradigm in Blažek (2011) & Tosco (2001: 211).",
         "tips": "In Tosco (2001, p. 211; cited in Blažek 2011), Daasanach distinguishes absolute, subject, object, and possessive pronouns across 1 sg. (yú / yáa / ye / cú ~ cu), 2 sg. (kúuni / kúo / ko / kú ~ ku), 1 pl. incl. (múuni / (ⁿé) ké ~ kí / — / kúnnu), 1 pl. excl. (ɲíini / ɲaaɲi / ɲí / kíɲɲu), and 2 pl. (ʔitíni / ʔití / ʔitíni / kíccu).",
@@ -54,8 +51,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           {
             "target": "kúuni (subj. kúo, obj. ko, poss. kú / ku)",
             "source": "Thou / you / thy (2 sg. absolute, subject, object, possessive)",
-            "pronunciation": "kuu-ni / ku-oh / koh / kuu",
-            "hint": "Blažek (2011, p. 3 & Comparative Table: Hb kuno, Fl kuˑni, Bd kuuni, Sa kúúni, To kúun-i; Tosco 2001 p. 211)"
+            "pronunciation": "kuu-ni / ku-oh / koh / kuu"
           },
           {
             "target": "múuni (subj. (ⁿé) ké ~ kí, poss. kúnnu)",
@@ -66,14 +62,12 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           {
             "target": "ɲíini (subj. ɲaaɲi, obj. ɲí, poss. kíɲɲu)",
             "source": "We (1 pl. exclusive: 'we without you' — absolute, subject, object, possessive)",
-            "pronunciation": "nyee-ni / nyaa-nyi / nyee / keen-nyu",
-            "hint": "Blažek (2011, p. 3 & Comparative Table: Bd ńiina, Sa ɲíínì, To ɲiini excl., cf. Bu naanu, Ya nííni’, Dah ɲáɲi, *ʔinno; Tosco 2001 p. 211)"
+            "pronunciation": "nyee-ni / nyaa-nyi / nyee / keen-nyu"
           },
           {
             "target": "ʔitíni (subj. ʔití, obj. ʔitíni, poss. kíccu)",
             "source": "Ye / you all (2 pl. absolute, subject, object, possessive)",
-            "pronunciation": "ee-tee-ni / ee-tee / keech-chu",
-            "hint": "Blažek (2011, p. 3 & Comparative Table: Fl/Bd itini, Sa/To ʔitíni < *ʔatin- EC 11; Tosco 2001 p. 211)"
+            "pronunciation": "ee-tee-ni / ee-tee / keech-chu"
           }
         ],
         "sentences": [
@@ -126,7 +120,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-numerals-counting",
-        "title": "Galaboid Numerals & Counting (1–1,000, Tosco 2001 pp. 105–110)",
+        "title": "Galaboid Numerals & Counting",
         "icon": "Hash",
         "description": "Count from 1 (tákac / tikiɗɗi) to 100 (kúɗ tikiɗɗi ~ tikilli) and 1,000 (ši tikiɗɗi ~ tikilli) in Daasanach.",
         "tips": "In Tosco (2001, pp. 105–110; cited in Blažek 2011), 1 is tákac in counting only and tikiɗɗi (~ tikilli) as a modifier; 100 is kúɗ tikiɗɗi ~ tikilli and 1,000 is ši tikiɗɗi ~ tikilli.",
@@ -134,9 +128,8 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "tákac (in counting only) / tikiɗɗi (as a modifier)",
-            "source": "One (1) — dT tacar, Hb tákkač & tíkkidə, Fl tɪgɪdi, Bd taqac, Sa tákàc, To takac / tikiɗ-ɗi",
-            "pronunciation": "tah-kach / tee-keed-dee",
-            "hint": "Blažek (2011, citing Tosco 2001 pp. 105–110: cf. Arb takká/tokkó, El tóko/taka, Or tokko/takka, Ko tákka)"
+            "source": "One (1) — dT tacar, Hb tákkač & tíkkidə, Fl tɪgɪdi, Bd taqac, Sa tákàc, To takac /",
+            "pronunciation": "tah-kach / tee-keed-dee"
           },
           {
             "target": "naama",
@@ -146,7 +139,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           },
           {
             "target": "seddi (sed-di)",
-            "source": "Three (3) — dT sedde, Hb sédde, Bd sɛd(d)e, Sa seddi, To sed-di (< *s/šaz(z)iḥ- EC_Z 134, 138)",
+            "source": "Three (3) — dT sedde, Hb sédde, Bd sɛd(d)e, Sa seddi, To sed-di (< *s/šaz(z)iḥ- EC_Z",
             "pronunciation": "sed-dee",
             "hint": "Blažek (2011, citing Tosco 2001 pp. 105–110)"
           },
@@ -190,29 +183,17 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "target": "6 li, 7 tiyya, 8 siet, 9 saal, 10 tommon, 100 kúɗ tikiɗɗi ~ tikilli, 1000 ši tikiɗɗi ~ tikilli",
             "source": "Six, seven, eight, nine, ten, one hundred, one thousand (Tosco 2001 pp. 105–110)"
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Mauro Tosco (2001, pp. 105–110) and Václav Blažek (2011), how does Daasanach distinguish '1 (in counting only)' from '1 (as a modifier)', and how does it express '100' and '1,000'?",
-            "correctAnswer": "1 tákac (counting) / tikiɗɗi (modifier); 100 kúɗ tikiɗɗi ~ tikilli; 1000 ši tikiɗɗi ~ tikilli",
-            "options": [
-              "1 tákac (counting) / tikiɗɗi (modifier); 100 kúɗ tikiɗɗi ~ tikilli; 1000 ši tikiɗɗi ~ tikilli",
-              "1 naama; 100 tommon; 1000 saal",
-              "1 seddi; 100 ʔaffur; 1000 cen",
-              "1 li; 100 tiyya; 1000 siet"
-            ],
-            "hint": "Blažek (2011, citing Tosco 2001 pp. 105–110)"
-          }
         ]
       }
     ]
   },
   {
     "id": "daasanach-unit-2",
-    "title": "Unit 2: Head & Sense Organs, Pastoral Ecology & Sonority Assimilation",
+    "unitNumber": 2,
+    "title": "Head & Sense Organs, Pastoral Ecology & Sonority Assimilation",
     "description": "Explore Daasanach head/sensory nouns (ʔíl, nee, mé, sóon-o, lúut-i) from Blažek (2011) & Tosco (2001) and sonority-driven consonant assimilation from Nishiguchi (2004, OUPEL 9, pp. 39–51).",
     "icon": "Compass",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-ecology-nouns-verbs",
@@ -224,7 +205,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ʔíl (Sasse pl. ʔinnù)",
-            "source": "Eye (Hb il, Fl il = ʔɪl, Bd iil, Sa ʔíl pl. ʔinnù, To ʔíl < *ʔil- EC_B 104 / *ʔinḍ- LEC 196)",
+            "source": "Eye",
             "pronunciation": "eel / een-nuu"
           },
           {
@@ -325,9 +306,11 @@ export const DAASANACH_UNITS: CourseUnit[] = [
   },
   {
     "id": "daasanach-unit-3",
-    "title": "Unit 3: Family, Kinship & the Eight Territorial Sections (Shir)",
+    "unitNumber": 3,
+    "title": "Family, Kinship & the Eight Territorial Sections (Shir)",
     "description": "Learn Daasanach kinship and human nouns (máa / gáal, mí ~ mu / yáb, min-ni / ɗég-i, karsic, kansic) from Blažek (2011), Tosco (2001), Nishiguchi (2004), and Almagor (1978).",
     "icon": "Users",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-family-kinship",
@@ -344,22 +327,34 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, line 13) & Tosco (2001)"
           },
           {
-            "target": "máa (Sasse mú) • pl. gáal ('people', Sasse gáál 'men', Fleming gal)",
-            "source": "Person / Human being (homo) • People / Men",
-            "pronunciation": "maa / gaal",
-            "hint": "Blažek (2011, 'person = homo': cf. El mố, Arb mó(h), *megel- MS 220)"
+            "target": "máa (Sasse mú)",
+            "source": "Person / Human being (homo)",
+            "pronunciation": "máa"
           },
           {
-            "target": "mí ~ mu (cf. maaðát 'somebody', Sasse máá, Bender maaðət) • pl. yáb ('males', Fl mayɛp, Hb māyop, dT maliab)",
-            "source": "Man / Husband (vir) • Males",
-            "pronunciation": "mee ~ muu / yaab",
-            "hint": "Blažek (2011, 'man = vir': cf. El mɔ-lɛpa, So lab, Rd lábo, Af lab 'male', Om Sheko ya:b)"
+            "target": "pl. gáal",
+            "source": "People / Men",
+            "pronunciation": "pl-gáal"
           },
           {
-            "target": "min-ni (Sasse mìnnì, Hb mínnə 'Ehefrau', dT minni) • pl. ɗég-i ('women', Sasse ɗágì 'wifes'; Fl sʌlle, Hb mādədət, Fl maḍeṭi, Bd maaḍIðit, Fl galyiɛt)",
-            "source": "Woman / Wife • Women / Wives",
-            "pronunciation": "min-nee / deh-gee",
-            "hint": "Blažek (2011, 'woman': HEC *mento, Bu mand-ây, Iraqw amena, So min-ka weyn; pl. *dazk- EC 41 & EC_Z 139)"
+            "target": "mí ~ mu",
+            "source": "Man / Husband (vir)",
+            "pronunciation": "mí-mu"
+          },
+          {
+            "target": "pl. yáb",
+            "source": "Males",
+            "pronunciation": "pl-yáb"
+          },
+          {
+            "target": "min-ni",
+            "source": "Woman / Wife",
+            "pronunciation": "min-ni"
+          },
+          {
+            "target": "pl. ɗég-i",
+            "source": "Women / Wives",
+            "pronunciation": "pl-ég-i"
           },
           {
             "target": "múù / 'íny (pl. 'íyyí)",
@@ -385,18 +380,6 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Václav Blažek (2011) and Mauro Tosco (2001), what are the singular and plural forms for 'Woman / Wife (pl. women/wives)'?",
-            "correctAnswer": "min-ni (Sasse mìnnì, Hb mínnə 'Ehefrau', dT minni) • pl. ɗég-i ('women', Sasse ɗágì 'wifes'; Fl sʌlle, Hb mādədət, Fl maḍeṭi, Bd maaḍIðit, Fl galyiɛt)",
-            "options": [
-              "min-ni (Sasse mìnnì, Hb mínnə 'Ehefrau', dT minni) • pl. ɗég-i ('women', Sasse ɗágì 'wifes'; Fl sʌlle, Hb mādədət, Fl maḍeṭi, Bd maaḍIðit, Fl galyiɛt)",
-              "mí ~ mu (cf. maaðát 'somebody', Sasse máá, Bender maaðət) • pl. yáb ('males', Fl mayɛp, Hb māyop, dT maliab)",
-              "karsic & kansic",
-              "múù / 'íny (pl. 'íyyí)"
-            ],
-            "hint": "Blažek (2011, 'woman': min-ni, pl. ɗég-i < *dazk-)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Daasanach human noun from Blažek (2011) and Nishiguchi (2004) with its English meaning:",
@@ -455,13 +438,13 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           },
           {
             "target": "Reshiat, Buma & Marle (marli = /mar + li/ 'Arbore Fem')",
-            "source": "1888 historical names recorded by Lieut. Ludwig von Höhnel & Arbore feminine marli in Nishiguchi (2004, p. 40)",
+            "source": "1888 historical names recorded by Lieut. Ludwig von Höhnel & Arbore feminine marli in",
             "pronunciation": "reh-shee-aht, boo-mah, mahr-leh / mar-li",
             "hint": "Höhnel (1894, Vol. I, pp. 161–175) & Nishiguchi (2004, p. 40, Ex. 5a)"
           },
           {
             "target": "géléb",
-            "source": "Traditional Daasanach dome-hut village / pastoral kraal (cf. exonym Galab / Geleba in Blažek 2011, line 11)",
+            "source": "Traditional Daasanach dome-hut village / pastoral kraal",
             "pronunciation": "geh-leb",
             "hint": "Höhnel (1894), Tosco (2001) & Blažek (2011, line 11)"
           }
@@ -471,33 +454,21 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "target": "Dímì: gáàl, sé, 'áyyì, sálab (buoddi), bún",
             "source": "The Dimi ceremony: camels, cattle, small stock, fat/butter, and coffee beans"
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the name of the major annual Daasanach festival in which fathers bless their daughters for marriage and elders are anointed with butter?",
-            "correctAnswer": "Dímì",
-            "options": [
-              "Dímì",
-              "géléb",
-              "karsic",
-              "Reshiat"
-            ],
-            "hint": "Almagor (1978) & Tosco (2001)"
-          }
         ]
       }
     ]
   },
   {
     "id": "daasanach-unit-4",
-    "title": "Unit 4: Complete Anatomical Lexicon & Body Care (Blažek 2011 & Nishiguchi 2004)",
+    "unitNumber": 4,
+    "title": "Complete Anatomical Lexicon & Body Care",
     "description": "Master Daasanach anatomical nouns from Václav Blažek's (2011) 101-gloss comparative table, Sumiyo Nishiguchi (2004, OUPEL 9, pp. 40–44), and Mauro Tosco (2001).",
     "icon": "Heart",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-body-limbs-organs",
-        "title": "Limbs, Organs & Internal Anatomy (gíl, ɠás, kur, láf-u, ⁿuoðin-ni, círa, fás)",
+        "title": "Limbs, Organs & Internal Anatomy (gíl, ɠás, kur, láf-u,",
         "icon": "Heart",
         "description": "Learn Daasanach nouns for hand/arm (gíl), foot/leg (ɠás / beḍi), ankles (kuɗfu), bottom backbone (kernɲo), knee (kur, pl. kurram / duk), bone (láf-u), heart (ⁿuoðin-ni), liver (círa), blood (fás), breast (ʔóðu / ɠán), and chest (bál).",
         "tips": "Note the exact forms in Blažek (2011): ɠás ('foot', Sasse g’ás pl. g’àssu, Fleming beḍi), kur pl. kurram ('knee' < *kurs- 'round', Fleming duk), láf-u ('bone', Sasse láf-iti pl. láff-ù < *laf-), ⁿuoðin-ni ('heart', Sasse wòzinni < *wozin-ti < *wazn-), círa ('liver' < *tir-), fás ('blood'), ʔóðu ('human breast', Sasse pl. ʔòt-ù), ɠán ('animal breast/udder'), and bál ('chest').",
@@ -539,10 +510,14 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'liver')"
           },
           {
-            "target": "fás (Sa/To fás, Bd fəs, Fl fʌs) • ʔóðu (human breast, pl. ʔòt-ù), ɠán (animal udder) & bál (chest)",
-            "source": "Blood (fás) • Human breast (ʔóðu), Animal breast/udder (ɠán) & Chest (bál)",
-            "pronunciation": "fahs / oh-dhu / gahn / bahl",
-            "hint": "Blažek (2011, 'blood' & 'breast')"
+            "target": "fás",
+            "source": "Blood (fás)",
+            "pronunciation": "fás"
+          },
+          {
+            "target": "ʔóðu, ɠán (animal udder) & bál (chest)",
+            "source": "Human breast (ʔóðu), Animal breast/udder (ɠán) & Chest (bál)",
+            "pronunciation": "óðu"
           }
         ],
         "sentences": [
@@ -625,8 +600,8 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'skin')"
           },
           {
-            "target": "ðúur (Sa/Fl zur, Bd zurr, Hb zūra), bal-li (Sa bààlli 'feather' < *baal-) & ʕuurti (ʕuur + ti)",
-            "source": "Hair (ðúur), Feather (bal-li / zur) & Shaved oneself (ʕuurti < ʕuur 'hair' + -ti Mid Perf)",
+            "target": "ðúur, bal-li & ʕuurti (ʕuur + ti)",
+            "source": "Hair (ðúur), Feather (bal-li / zur) & Shaved oneself",
             "pronunciation": "dhuur / bahl-lee / uur-ti",
             "hint": "Blažek (2011, 'hair' & 'feather') & Nishiguchi (2004, p. 44, Ex. 20b)"
           },
@@ -637,16 +612,16 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'belly')"
           },
           {
-            "target": "ⁿáɗ (fingernail < *ʕiddi) & konof (hoof, finger, claw; Sa kònòf, Fl gənif)",
-            "source": "Fingernail / Claw (ⁿáɗ) & Hoof / Finger / Claw (konof, cf. Arb kunúf, El kúnuf, Rd góffan)",
+            "target": "ⁿáɗ (fingernail < *ʕiddi) & konof",
+            "source": "Fingernail / Claw (ⁿáɗ) & Hoof / Finger / Claw",
             "pronunciation": "nahd & koh-nohf",
             "hint": "Blažek (2011, 'claw')"
           }
         ],
         "sentences": [
           {
-            "target": "ʔaf-u • ʔére (pl. ʔerbu) • kác-u (sg. kácìntì) • r/lokóɗ (pl. lòkòrù)",
-            "source": "mouth • tongue • tooth • skin (Blažek 2011 / Tosco 2001)"
+            "target": "ʔaf-u",
+            "source": "mouth"
           }
         ],
         "authoredExercises": [
@@ -668,9 +643,11 @@ export const DAASANACH_UNITS: CourseUnit[] = [
   },
   {
     "id": "daasanach-unit-5",
-    "title": "Unit 5: Pastoral Livestock, Lake Turkana Fisheries & Wildlife",
+    "unitNumber": 5,
+    "title": "Pastoral Livestock, Lake Turkana Fisheries & Wildlife",
     "description": "Master the Daasanach pastoral lexicon and Lake Turkana / Omo delta fauna (bée / kāra, kimír-ri / ⁿurum, cér, cár, ʔiðír-ri, kiiðiɲ, wáas / dúm) from Blažek (2011), Nishiguchi (2004), and Tosco (2001).",
     "icon": "Compass",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-pastoral-herds",
@@ -716,10 +693,19 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'horn')"
           },
           {
-            "target": "wáas (Sa wáás, Bd waas) • dúm ('tip of the tail' < *dub-) • sugu (Fl sugo 'back')",
-            "source": "Tail (wáas) • Tip of the tail (dúm) • Back (sugu)",
-            "pronunciation": "waas / duum / suu-guu",
-            "hint": "Blažek (2011, 'tail')"
+            "target": "wáas (Sa wáás, Bd waas)",
+            "source": "Tail (wáas)",
+            "pronunciation": "wáas"
+          },
+          {
+            "target": "dúm",
+            "source": "Tip of the tail (dúm)",
+            "pronunciation": "dúm"
+          },
+          {
+            "target": "sugu (Fl sugo 'back')",
+            "source": "Back (sugu)",
+            "pronunciation": "sugu"
           }
         ],
         "sentences": [
@@ -729,18 +715,6 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What are the Daasanach words for 'Tail' and 'Tip of the tail' in Blažek (2011)?",
-            "correctAnswer": "wáas (Sa wáás, Bd waas) • dúm ('tip of the tail' < *dub-) • sugu (Fl sugo 'back')",
-            "options": [
-              "wáas (Sa wáás, Bd waas) • dúm ('tip of the tail' < *dub-) • sugu (Fl sugo 'back')",
-              "gáas (Sa gáás, Bd gaaso, Fl gas)",
-              "cér (Sa cir, Bd cIIrr, Fl čere, Hb čer, dT cer)",
-              "gáàl (pl. gáàllí) & nirm"
-            ],
-            "hint": "Blažek (2011, 'tail')"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Daasanach animal/livestock term with its English meaning:",
@@ -768,25 +742,25 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-turkana-wildlife-fish",
-        "title": "Fish (bée / kāra), Birds (kimír-ri / ⁿurum), Snakes (cár), Flies (kiiðiɲ), Lice (ʔiðír-ri) & Wildlife",
+        "title": "Fish (bée / kāra), Birds (kimír-ri / ⁿurum), Snakes (cár), Flies",
         "icon": "TreePine",
         "description": "Learn the exact Daasanach fauna forms from Blažek (2011), Nishiguchi (2004), and Tosco (2001).",
         "tips": "In Blažek (2011): 'fish' is bée (Sasse béé, coll. bèè-c, Bender bɛɛc, Fleming beič, Haberland bēč, da Trento bèc < *bahag- LEC 262) plus Haberland kāra; 'bird' is kimír-ri (Sasse kimiɗɗi, pl. kimírri 'small bird' < *kimbir- EC 13) plus Sasse ⁿurum ('big bird', Haberland húrum, da Trento urrin); 'snake' is cár (Sasse pl. cààrà); 'fly (n.)' is kiiðiɲ; and 'louse' is ʔiðír-ri (Sasse ʔìðiɗɗi, pl. ʔìðírè < *ʔingir-).",
         "words": [
           {
-            "target": "bée (Sa béé, coll. bèè-c, Bd bɛɛc, Fl beič, Hb bēč, dT bèc < *bahag-) & Hb kāra",
+            "target": "bée & Hb kāra",
             "source": "Fish (bée / coll. bèè-c; Hb kāra, cf. Dullay *xaar-, Banna kaara, Hamer kara)",
             "pronunciation": "bee / beeh-ch / kaa-rah",
             "hint": "Blažek (2011, 'fish')"
           },
           {
-            "target": "kimír-ri (Sa sg. kimiɗɗi, pl. kimírri 'small bird' < *kimbir-) & ⁿurum ('big bird', Hb húrum, dT urrin)",
+            "target": "kimír-ri & ⁿurum",
             "source": "Small bird (kimiɗɗi, pl. kimír-ri) & Big bird (ⁿurum)",
             "pronunciation": "kee-meer-ree / nuu-ruum",
             "hint": "Blažek (2011, 'bird')"
           },
           {
-            "target": "inti (inti + e = 'the gazelle') & ɗuuninti (ɗuunin + ti = 'mosquito')",
+            "target": "inti & ɗuuninti",
             "source": "The gazelle (inti) & Mosquito (ɗuuninti, Fem. Sg.)",
             "pronunciation": "in-ti & dhuu-nin-ti",
             "hint": "Nishiguchi (2004, p. 41 Ex. 6d & p. 44 Ex. 20c)"
@@ -818,22 +792,8 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "bée (coll. bèè-c) • kimiɗɗi (pl. kimír-ri) • ⁿurum • cár (pl. cààrà) • kiiðiɲ • ʔiðír-ri",
-            "source": "fish • small bird • big bird • snake • fly • louse (Blažek 2011)"
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Václav Blažek (2011), how does Daasanach distinguish 'small bird' from 'big bird', and what is the word for 'snake'?",
-            "correctAnswer": "kimiɗɗi, pl. kimír-ri ('small bird' < *kimbir-), ⁿurum ('big bird'), and cár (pl. cààrà, 'snake')",
-            "options": [
-              "kimiɗɗi, pl. kimír-ri ('small bird' < *kimbir-), ⁿurum ('big bird'), and cár (pl. cààrà, 'snake')",
-              "bée, kiiðiɲ, and ʔiðír-ri",
-              "sé, gáàl, and nirm",
-              "inti, ɗuuninti, and nyáàng"
-            ],
-            "hint": "Blažek (2011, 'bird' & 'snake')"
+            "target": "bée (coll. bèè-c)",
+            "source": "fish"
           }
         ]
       }
@@ -841,13 +801,15 @@ export const DAASANACH_UNITS: CourseUnit[] = [
   },
   {
     "id": "daasanach-unit-6",
-    "title": "Unit 6: Omo Delta & Lake Turkana Ecology, Sky & Elements (Blažek 2011)",
+    "unitNumber": 6,
+    "title": "Omo Delta & Lake Turkana Ecology, Sky & Elements",
     "description": "Explore water (bie), sun (ʔáaðu), moon (ɠuí), star (ʔiðin), rain (ʔír), cloud (derri-c), night (cuur-i), tree (ɠór), bark (boort-i / ɓokot-i), leaf (ráš / nee), grass (ʔíiš / balsam), fire (ʄíet, pl. ʔéðe), smoke (ʔéer), and ashes (ʔége / ɗíl).",
     "icon": "Sun",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-water-sky-weather",
-        "title": "Water (bie), Sun (ʔáaðu), Moon (ɠuí), Star (ʔiðin), Rain (ʔír), Cloud (derri-c) & Night (cuur-i)",
+        "title": "Water (bie), Sun (ʔáaðu), Moon (ɠuí), Star (ʔiðin), Rain (ʔír),",
         "icon": "Sun",
         "description": "Learn the exact environmental and celestial nouns from Blažek (2011) and Tosco (2001).",
         "tips": "In Blažek (2011): 'water' is bie (< *bik-ee EC 13); 'sun' is ʔáaðu (< *ʕaz-); 'moon' is ɠuí (Sasse g’úy, Haberland gúiyo, da Trento cui); 'star' is ʔiðin (Sasse ⁿizintti < *hizk-/*huzk-); 'rain' is ʔír (< *ʕír-); 'cloud' is Sasse derri-c (< *daruur-, Fleming ñʌdo = ñebo!); and 'night' is cuur-i.",
@@ -941,52 +903,77 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-trees-earth-fire",
-        "title": "Trees (ɠór), Bark (boort-i / ɓokot-i), Leaf (ráš / nee), Grass (ʔíiš / balsam), Earth (lés / bii), Mountains & Fire (ʄíet)",
+        "title": "Trees (ɠór), Bark (boort-i / ɓokot-i), Leaf (ráš / nee), Grass",
         "icon": "TreePine",
         "description": "Master botanical, geological, and fire/ash vocabulary from Blažek (2011) and Nishiguchi (2004).",
         "tips": "In Blažek (2011): 'tree' is ɠór (Sasse g’òr, pl. g’ùòrù < *ḳor-); 'bark' is boort-i and ɓokot-i; 'leaf' is ráš (plus iš = grass in Fleming, nee/neti = ear in Tosco/Sasse/Bender); 'grass' is ʔíiš (< *ʕawš-); 'seed' is ʔár (Bender rruba, Fleming fa’); 'root' is ⁿíð (< *hizz-); 'earth' is lés ('land, ground') and bii ('soil, ground'); 'mountain/hill' is gummuti (pl. gùmù), wār/wáar (also 'stone'), labur, and siri (pl. sirgam); 'sand' is yùoc; 'fire' is ʄíet, pl. ʔéðe; 'smoke' is ʔéer; and 'ashes' is ʔége plus ɗíl ('hot ashes').",
         "words": [
           {
-            "target": "ɠór (Sa g’òr, pl. g’ùòrù, dT/Fl gor < *ḳor-) • boort-i & ɓokot-i ('bark')",
-            "source": "Tree (ɠór) • Bark of tree (boort-i & ɓokot-i)",
-            "pronunciation": "gohr / boor-tee & boh-koh-tee",
-            "hint": "Blažek (2011, 'tree' & 'bark')"
+            "target": "ɠór",
+            "source": "Tree (ɠór)",
+            "pronunciation": "ór"
           },
           {
-            "target": "ráš (and nee / neti = 'ear', Fl iš = 'grass') • ʔíiš ('grass' < *ʕawš-) & balsam (balt + sam)",
-            "source": "Leaf (ráš / nee) • Grass (ʔíiš) & Kind of grass (balsam < balt + sam)",
-            "pronunciation": "rahsh / eesh / bahl-sahm",
-            "hint": "Blažek (2011, 'leaf' & 'grass') & Nishiguchi (2004, p. 41, Ex. 6a)"
+            "target": "boort-i & ɓokot-i ('bark')",
+            "source": "Bark of tree (boort-i & ɓokot-i)",
+            "pronunciation": "boort-i-okot-i"
           },
           {
-            "target": "ⁿíð (Sa ⁿìð, Bd (h)ið, Fl yiz < *hizz-) • ʔár (Bd rruba, Fl fa’ 'seed')",
-            "source": "Root (ⁿíð) • Seed (ʔár / rruba / fa’)",
-            "pronunciation": "needh / ahr",
-            "hint": "Blažek (2011, 'root' & 'seed')"
+            "target": "ráš",
+            "source": "Leaf (ráš / nee)",
+            "pronunciation": "ráš"
           },
           {
-            "target": "lés ('land, ground', Sa lès, Fl lɛs, dT/Hb les) • bii ('soil, ground' < *biy-) • yùoc ('sand', Bd yɔɔc, Fl yuč)",
-            "source": "Earth / Land (lés) • Soil / Ground (bii) • Sand (yùoc, cf. Rendille yoóh)",
-            "pronunciation": "lehs / bee / ywoch",
-            "hint": "Blažek (2011, 'earth' & 'sand')"
+            "target": "ʔíiš ('grass' < *ʕawš-) & balsam (balt + sam)",
+            "source": "Grass (ʔíiš) & Kind of grass (balsam < balt + sam)",
+            "pronunciation": "íiš-balsam"
           },
           {
-            "target": "wáar ('stone' & 'mountain',Fl dʌb 'stone') • gummuti (Sa gùmìti, pl. gùmù 'hill') • siri (pl. sirgam 'hill') • dT/Hb labur",
-            "source": "Stone / Mountain (wáar / dʌb) & Hill / Mountain (gummuti, siri pl. sirgam, labur)",
+            "target": "ⁿíð (Sa ⁿìð, Bd (h)ið, Fl yiz < *hizz-)",
+            "source": "Root (ⁿíð)",
+            "pronunciation": "íð-ið"
+          },
+          {
+            "target": "ʔár",
+            "source": "Seed (ʔár / rruba / fa’)",
+            "pronunciation": "ár"
+          },
+          {
+            "target": "lés",
+            "source": "Earth / Land (lés)",
+            "pronunciation": "lés"
+          },
+          {
+            "target": "bii",
+            "source": "Soil / Ground (bii)",
+            "pronunciation": "bii"
+          },
+          {
+            "target": "yùoc",
+            "source": "Sand (yùoc, cf. Rendille yoóh)",
+            "pronunciation": "yùoc"
+          },
+          {
+            "target": "wáar",
+            "source": "Stone / Mountain (wáar / dʌb) & Hill / Mountain",
             "pronunciation": "waar / goom-muu-tee / see-ree",
             "hint": "Blažek (2011, 'stone' & 'mountain')"
           },
           {
-            "target": "ʄíet (pl. ʔéðe; Sa g’íé-té, Bd g’iɛtɛ, Fl giete, Hb iyēta, dT iete)",
+            "target": "ʄíet",
             "source": "Fire (pl. ʔéðe)",
             "pronunciation": "jeet / eh-dheh",
             "hint": "Blažek (2011, 'fire')"
           },
           {
-            "target": "ʔéer ('smoke', Sa ʔeer, Bd ɛrr, Fl err) • ʔége ('ashes', Sa ʔege) & ɗíl ('hot ashes')",
-            "source": "Smoke (ʔéer) • Ashes (ʔége) & Hot ashes (ɗíl < Dullay *ɗil- 'burn')",
-            "pronunciation": "eer / eh-geh & deel",
-            "hint": "Blažek (2011, 'smoke' & 'ashes')"
+            "target": "ʔéer",
+            "source": "Smoke (ʔéer)",
+            "pronunciation": "éer"
+          },
+          {
+            "target": "ʔége ('ashes', Sa ʔege) & ɗíl ('hot ashes')",
+            "source": "Ashes (ʔége) & Hot ashes",
+            "pronunciation": "ége-íl"
           }
         ],
         "sentences": [
@@ -1018,13 +1005,15 @@ export const DAASANACH_UNITS: CourseUnit[] = [
   },
   {
     "id": "daasanach-unit-7",
-    "title": "Unit 7: Food, Tools, Roads & Core Action Verbs (Blažek 2011 & Nishiguchi 2004)",
+    "unitNumber": 7,
+    "title": "Food, Tools, Roads & Core Action Verbs",
     "description": "Learn Daasanach dietary staples (só pl. sogim, sálab / buoddi, ɠonɠ-o), calabashes (duɗmo), bows (bilo), circumcision knives (bilti), roads (ɠíeric), and verbs (including the 4 prefix-conjugated verbs ʔás, yaalla, yeeðe, yimii).",
     "icon": "Zap",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-food-home-canoe",
-        "title": "Meat (só pl. sogim), Fat (sálab / buoddi), Egg (ɠonɠ-o), Road (ɠíeric), Calabashes, Bows & Knives",
+        "title": "Meat (só pl. sogim), Fat (sálab / buoddi), Egg (ɠonɠ-o), Road",
         "icon": "BookOpen",
         "description": "Master vocabulary for meat (só, pl. sogim), fat/butter (sálab / buoddi / giɛ), egg (ɠonɠ-o), milk ('éèn), round calabashes (duɗmo), bows (bilo), circumcision knives (bilti), houses (bíl), roads (ɠíeric, pl. g’íér-im), and canoes (góngò).",
         "tips": "In Blažek (2011): 'meat' is só, pl. sogim (< *soʔ- EC 50); 'fat (n.)' is Tosco sálab, Sasse buoddi (< *buor-ti, Bender b’ɔdo), and Fleming giɛ; 'egg' is ɠonɠ-o (Sasse g’òng’ó); and 'road' is ɠíeric (Sasse g’íér-ic, pl. g’íér-im).",
@@ -1042,10 +1031,9 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'meat')"
           },
           {
-            "target": "sálab (To) • buoddi (< *buor-ti, Sa; Bd b’ɔdo) • giɛ (Fl)",
-            "source": "Fat / Butter / Grease (cf. Somali bur, Sidamo bur-o, Arbore gehen 'fat meat')",
-            "pronunciation": "sah-lahb / bwod-dee / gee-eh",
-            "hint": "Blažek (2011, 'fat n.')"
+            "target": "sálab",
+            "source": "To",
+            "pronunciation": "sálab"
           },
           {
             "target": "ɠonɠ-o (Sa g’òng’ó, Bd g’ong’o, Fl gòngo)",
@@ -1055,12 +1043,12 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           },
           {
             "target": "duɗmo (/dudum + o/) & bilo (/bil + t + o/) & bilti (/bilt + e/)",
-            "source": "Round calabashes (duɗmo), Bows (bilo < bil 'bow' + -to Pl) & The knife for circumcision (bilti < bilt + e Def)",
+            "source": "Round calabashes (duɗmo), Bows & The knife for circumcision (bilti < bilt + e Def)",
             "pronunciation": "dudh-mo & bi-lo & bil-ti",
             "hint": "Nishiguchi (2004, p. 41 Ex. 6b & 7, p. 47 Ex. 26c)"
           },
           {
-            "target": "bíl (pl. bíllí) & ɠíeric (Sa g’íér-ic, pl. g’íér-im, Bd g’ʸeeric, Fl gerič)",
+            "target": "bíl (pl. bíllí) & ɠíeric",
             "source": "House / Dome-hut (bíl) & Road / Path (ɠíeric, cf. Arbore gor, Elmolo gôr)",
             "pronunciation": "beel & gee-eh-reech",
             "hint": "Tosco (2001) & Blažek (2011, 'road')"
@@ -1078,8 +1066,8 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "source": "Milk — Meat — Fat/butter — Egg — Round calabashes (Blažek 2011 & Nishiguchi 2004)"
           },
           {
-            "target": "bilt + e → bilti • /bil + t + o/ → [bilo] • ɠíeric (pl. g’íér-im) • góngò",
-            "source": "the knife for circumcision • bows • road • dugout canoe"
+            "target": "bilt + e → bilti",
+            "source": "the knife for circumcision"
           }
         ],
         "authoredExercises": [
@@ -1099,7 +1087,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-verbs-assimilation",
-        "title": "Core Action Verbs, the 4 Prefix Verbs (ʔás, yaalla, yeeðe, yimii) & Sonority Assimilation",
+        "title": "Core Action Verbs, the 4 Prefix Verbs (ʔás, yaalla, yeeðe,",
         "icon": "Zap",
         "description": "Practice Daasanach verbs from Blažek (2011) and Tosco (2001) alongside their morpheme-boundary consonant assimilation patterns from Nishiguchi (2004, OUPEL 9, pp. 39–51).",
         "tips": "In Blažek (2011, citing Tosco 2001 pp. 320–475), four verbs preserve the archaic Afroasiatic prefixal conjugation (3rd sg. m. impf.): ʔás ('kills', imp. ʔás!, Sasse 3sg. yeese), yaalla ('stands', inf./root yáal; also ɠeé 'get up/stand'), yeeðe ('says', imp. ʔát!), and yimii ('comes', Sasse 3sg. yimeðe, imp. káɗe / kári!).",
@@ -1111,51 +1099,51 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'eat') & Nishiguchi (2004, p. 44, Ex. 19 & 20a)"
           },
           {
-            "target": "ʔík (Sa ʔik, Bd Ik, Hb/Fl ik-, dT igh < *ʕa/i/ug-) & ɠínin ('bite', Sa/Fl g’inin- < *kaniin-)",
+            "target": "ʔík & ɠínin",
             "source": "To drink (ʔík) & To bite (ɠínin)",
             "pronunciation": "eek & gee-neen",
             "hint": "Blažek (2011, 'drink' & 'bite')"
           },
           {
-            "target": "máal (Hb yāmāl-, Bd maale; 2Sg /maal+t+a/ → [maala]) & həl (2Pl /həl+ta/ → [həlaa])",
+            "target": "máal & həl",
             "source": "To hear (máal; (you) hear: [maala]) & To enter ((YOU) enter: [həlaa])",
             "pronunciation": "maal / maa-la & hal / ha-laa",
             "hint": "Blažek (2011, 'hear') & Nishiguchi (2004, p. 47, Ex. 26a–b & Tableau 4 p. 50)"
           },
           {
-            "target": "ʔárik (Sa/Fl arg-, Bd argiiyɛ, Hb ilid- 'see'), ʔók ('know' < *ʔog-, dT iàarghe) & zaas (2Sg [zaasanna])",
+            "target": "ʔárik, ʔók & zaas (2Sg [zaasanna])",
             "source": "To see (ʔárik / zaas: 2Sg [zaasanna] 'you see') & To know (ʔók)",
             "pronunciation": "ah-reek, ohk & zaa-san-na",
             "hint": "Blažek (2011, 'see' & 'know') & Nishiguchi (2004, p. 47, Ex. 28b)"
           },
           {
-            "target": "sí ('go', Sa se-eme, Bd seðe, dT sasen < Sam *soʕo) • káɗe! (Sa kári!) / 3sg. yimii (Sa yimeðe 'come') • maɗ ([maɗɗi])",
-            "source": "To go (sí), Come! (káɗe! / 3sg. impf. yimii, Sasse yimeðe) & To go and buy (2Sg Perf [maɗɗi])",
+            "target": "sí",
+            "source": "To go (sí), Come! & To go and buy (2Sg Perf [maɗɗi])",
             "pronunciation": "see / kah-deh / yee-mee / madh-dhi",
             "hint": "Blažek (2011, 'go' & 'come', line 118) & Nishiguchi (2004, p. 48, Ex. 31)"
           },
           {
-            "target": "ráf ('sleep / spend the night' < *raf-), ɗínaʔ ('lie down', Sa ɗiin-ik) & yédik ('sit = live', Sa dik, Fl ledik-)",
+            "target": "ráf, ɗínaʔ & yédik",
             "source": "To sleep (ráf), To lie down (ɗínaʔ) & To sit / live (yédik)",
             "pronunciation": "rahf, dee-nah & yeh-deek",
             "hint": "Blažek (2011, 'sleep' & 'sit')"
           },
           {
-            "target": "ʔás ('kills', Sa 3sg. yeese), yaalla ('stands', yáal / ɠeé 'get up'), yeeðe ('says', imp. ʔát!) & kúf ('die' < *kuf- 'fall', Fl dɛd)",
-            "source": "Prefix verbs: kills (ʔás), stands (yaalla / yáal / ɠeé), says (yeeðe / ʔát!) & To die (kúf)",
+            "target": "ʔás, yaalla, yeeðe ('says', imp. ʔát!) & kúf",
+            "source": "Prefix verbs: kills (ʔás), stands (yaalla / yáal / ɠeé), says (yeeðe / ʔát!) & To die",
             "pronunciation": "ahs, yaal-lah, yee-dheh, aht, kuuf",
             "hint": "Blažek (2011, line 118 & 'kill', 'stand', 'say', 'die')"
           },
           {
-            "target": "šíiš ('give', Sa šii-š, Bd šiyɛ), bólob ('burn', Sa duun-ay-) & ðánu ('swim', Sa ðaanða, Bd aðaanða)",
+            "target": "šíiš, bólob ('burn', Sa duun-ay-) & ðánu",
             "source": "To give (šíiš), To burn (bólob / duun-ay-) & To swim (ðánu)",
             "pronunciation": "sheesh, boh-lohb & dhah-nuu",
             "hint": "Blažek (2011, 'give', 'burn' & 'swim')"
           },
           {
-            "target": "fuur ([fuuDDA]), cir ([ciɗɗi]), tuun ([tuunna]), zaaby ([zaaya]), hees ([heeti]), ɗis ([ɗiti]), us ([ute]), fuus ([fuute]) & it ([isu])",
-            "source": "Nishiguchi (2004) verbs: open ([fuuDDA]), hold ([ciɗɗi]), beat ([tuunna]), sew ([zaaya]), ask ([heeti]), build ([ɗiti]), scoop ([ute]), tear off ([fuute] / [isu])",
-            "pronunciation": "fuu-dda, chidh-dhi, tuun-na, zaa-ya, hee-ti, dhi-ti, u-te, fuu-te, i-su",
+            "target": "fuur ([fuuDDA]), cir ([ciɗɗi]), tuun ([tuunna]), zaaby ([zaaya]), hees",
+            "source": "Nishiguchi (2004) verbs: open ([fuuDDA]), hold ([ciɗɗi]), beat ([tuunna]), sew",
+            "pronunciation": "fuur",
             "hint": "Nishiguchi (2004, pp. 47–48, Ex. 25–30)"
           }
         ],
@@ -1165,23 +1153,11 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "source": "The four Dasanech verbs preserving the archaic prefixal conjugation (Tosco 2001 pp. 320–475 / Blažek 2011 line 118)"
           },
           {
-            "target": "/maal+t+a/ → [maala] • /tuun+t+a/ → [tuunna] • /cir+t+i/ → [ciɗɗi] • /hees+t+i/ → [heeti] • /it+su/ → [isu]",
-            "source": "(you) hear • you beat • you held for yourself • you asked • to tear off (Nishiguchi 2004, pp. 47–50)"
+            "target": "/maal+t+a/ → [maala]",
+            "source": "(you) hear"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Mauro Tosco (2001, pp. 320–475) and Václav Blažek (2011, line 118), which four Daasanach verbs preserve the archaic Cushitic prefixal conjugation (3rd sg. m. impf.)?",
-            "correctAnswer": "ʔás ('kills'), yaalla ('stands'), yeeðe ('says'), and yimii ('comes')",
-            "options": [
-              "ʔás ('kills'), yaalla ('stands'), yeeðe ('says'), and yimii ('comes')",
-              "kóm ('eat'), ʔík ('drink'), ráf ('sleep'), and ðánu ('swim')",
-              "šíiš ('give'), bólob ('burn'), kúf ('die'), and ɠínin ('bite')",
-              "fuur ('open'), tuun ('beat'), hees ('ask'), and ɗis ('build')"
-            ],
-            "hint": "Blažek (2011, line 118)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Daasanach verb from Blažek (2011) with its English meaning:",
@@ -1211,13 +1187,15 @@ export const DAASANACH_UNITS: CourseUnit[] = [
   },
   {
     "id": "daasanach-unit-8",
-    "title": "Unit 8: Adjectives, Reduplicated Plurals (p. 207), Colors & Interrogatives (Blažek 2011)",
+    "unitNumber": 8,
+    "title": "Adjectives, Reduplicated Plurals, Colors & Interrogatives",
     "description": "Master Daasanach adjectives, archaic Beja-type partial-reduplication plurals (búubur, ɗeeɗír, ðáaðat) vs. -gV- plurals (ráagar, niiginí, ʔéegeð) from Tosco (2001: 207) & Blažek (2011), demonstratives, and question words.",
     "icon": "Sparkles",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-adjectives-colors",
-        "title": "Adjectives, Reduplicated Plurals (Tosco 2001 p. 207) & Colors",
+        "title": "Adjectives, Reduplicated Plurals & Colors",
         "icon": "Sparkles",
         "description": "Learn Daasanach adjectives for good (miðáb / ɗabán), big (guddu), small (níni, pl. niiginí / nigginí), long/tall (ɗér, pl. ɗeeɗír), new (káana), dry (gogu), full (kóc), warm/hot (kulláʔ), cold (ɗéeɲ / ʔabbúnab), thin (dáɗab), and primary colors.",
         "tips": "In Tosco (2001, p. 207; cited in Blažek 2011, line 118), some Daasanach adjectives preserve an East Cushitic archaism shared with Beja—partial reduplication in the plural: búr → pl. búubur ('red'), ɗér → pl. ɗeeɗír ('long, tall'), ðát → pl. ðáaðat ('dark-skinned')—while a more general pattern inserts -gV-: ráar → pl. ráagar ('yellow'), niní → pl. niiginí / nigginí ('little/small'), ʔéð → pl. ʔéegeð ('white').",
@@ -1229,13 +1207,13 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'good')"
           },
           {
-            "target": "guddu (Fl/Bd guddo, Hb gūdo, dT gudogà < *gudd-) vs. níni (pl. niiginí / nigginí)",
+            "target": "guddu vs. níni",
             "source": "Big / Large (guddu) vs. Small / Little (níni, pl. niiginí / nigginí)",
             "pronunciation": "good-duu vs. nee-nee / nee-gee-nee",
             "hint": "Blažek (2011, line 118 & 'big', 'small')"
           },
           {
-            "target": "ɗér (pl. ɗeeɗír; Sa/Fl dir, Bd dIrr < *deer-) & dáɗab ('become thin' < Sam *duuban)",
+            "target": "ɗér & dáɗab",
             "source": "Long / Tall (ɗér, pl. ɗeeɗír) & Become thin (dáɗab)",
             "pronunciation": "dehr / dee-deer & dah-dahb",
             "hint": "Blažek (2011, line 118 & '(be) long', 'thin')"
@@ -1247,15 +1225,15 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, 'new', 'dry', '(be) full')"
           },
           {
-            "target": "kulláʔ ('hot', Sa kul, Bd mošoc) vs. ɗéeɲ ('cold', Sa deeɲ, Fl/Bd ḍen < *damh-) & ʔabbúnab ('be cold' < *ḳab(b)-)",
+            "target": "kulláʔ vs. ɗéeɲ & ʔabbúnab ('be cold' < *ḳab(b)-)",
             "source": "Warm / Hot (kulláʔ / kul) vs. Cold (ɗéeɲ) & Be cold (ʔabbúnab)",
             "pronunciation": "kool-lah vs. deeny & ab-buu-nahb",
             "hint": "Blažek (2011, 'warm' & 'cold')"
           },
           {
-            "target": "ʔéð (pl. ʔéegeð 'white' < *ʕazz-) • ʔoŋor ('black', Caus. ʔoʔorsis) • ðát (pl. ðáaðat 'dark-skinned') • búr (pl. búubur 'red' < *boʔr-)",
-            "source": "White (ʔéð, pl. ʔéegeð), Black (ʔoŋor / make black ʔoʔorsis), Dark-skinned (ðát, pl. ðáaðat) & Red (búr, pl. búubur)",
-            "pronunciation": "ehdh / ee-gehdh, oh-ngohr, dhaht / dhaa-dhaht, buur / buu-buur",
+            "target": "ʔéð",
+            "source": "White (ʔéð, pl. ʔéegeð), Black, Dark-skinned (ðát, pl. ðáaðat) & Red (búr, pl. búubur)",
+            "pronunciation": "éð",
             "hint": "Blažek (2011, line 118 & 'white', 'black', 'red') & Nishiguchi (2004, p. 44, Ex. 20a)"
           },
           {
@@ -1265,7 +1243,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
             "hint": "Blažek (2011, line 118 & 'wet', 'yellow')"
           },
           {
-            "target": "lulli ('all', Sa luulli, Fl/Bd luule) & búrnab ('be many', Bd burrnay, Hb burne < Sam *buur-)",
+            "target": "lulli & búrnab",
             "source": "All / Whole (lulli) & Be many / Much (búrnab)",
             "pronunciation": "lool-lee & buur-nahb",
             "hint": "Blažek (2011, 'all' & 'many')"
@@ -1273,34 +1251,20 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "búr → búubur ('red') • ɗér → ɗeeɗír ('long') • ðát → ðáaðat ('dark-skinned') • ráar → ráagar ('yellow') • niní → niiginí ('little') • ʔéð → ʔéegeð ('white')",
+            "target": "búr → búubur ('red')",
             "source": "Complete adjectival plural patterns in Tosco (2001, p. 207) & Blažek (2011, line 118)"
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Mauro Tosco (2001, p. 207) and Václav Blažek (2011, line 118), how do the Daasanach adjectives búr ('red'), ɗér ('long, tall'), and ðát ('dark-skinned') form their plurals, and how do ráar ('yellow'), niní ('little'), and ʔéð ('white') form theirs?",
-            "correctAnswer": "Partial reduplication: búr → búubur, ɗér → ɗeeɗír, ðát → ðáaðat (shared with Beja); and -gV- pattern: ráar → ráagar, niní → niiginí, ʔéð → ʔéegeð",
-            "options": [
-              "Partial reduplication: búr → búubur, ɗér → ɗeeɗír, ðát → ðáaðat (shared with Beja); and -gV- pattern: ráar → ráagar, niní → niiginí, ʔéð → ʔéegeð",
-              "By adding the suffix -ti to all adjectives",
-              "By changing all vowels to uo",
-              "Adjectives are invariable in Daasanach"
-            ],
-            "hint": "Blažek (2011, line 118, citing Tosco 2001 p. 207)"
           }
         ]
       },
       {
         "id": "daasanach-demonstratives-questions",
-        "title": "Demonstratives (ⁿíé(é)-là / ello / yē, hē), Name (mée) & Question Words (máaya?, méete?)",
+        "title": "Demonstratives (ⁿíé(é)-là / ello / yē, hē), Name (mée) &",
         "icon": "Lightbulb",
         "description": "Master proximal/distal demonstratives, yes/no particles, 'name' (mée), and interrogatives ('who?' máaya, 'what?' méete) from Blažek (2011).",
         "tips": "In Blažek (2011): 'who?' is máaya (Sasse mááyà, Bender maaya, Fleming maya < *maa ʔayy-a 'which man' EC_B 30); 'what?' is méete (Sasse méétè, Bender meyte, Fleming mete < *maʔ waha 'what thing' EC_B 146); 'name' is mée (Sasse mé, Bender maaya, Fleming mɛ < *magʕ- EC_B 139); and 'this' is Sasse ⁿíé(é)-là, Bender ela-, Fleming ello, Haberland yē/hē m./f. (cf. Arbore hálo m.).",
         "words": [
           {
-            "target": "ⁿíé(é)-là (Sa), ela- (Bd), ello (Fl), yē / hē m./f. (Hb) & hé (fem. té, pl. kú)",
+            "target": "ⁿíé(é)-là (Sa), ela- (Bd), ello (Fl), yē / hē m./f. (Hb) & hé (fem. té,",
             "source": "This / These (proximal demonstrative — cf. Arbore hálo m.)",
             "pronunciation": "nyee-eh-lah / el-loh / yeh / heh",
             "hint": "Blažek (2011, 'this')"
@@ -1338,23 +1302,11 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "máaya? ('who?' < *maa ʔayy-a) • méete? ('what?' < *maʔ waha) • mée ('name' < *magʕ-)",
+            "target": "máaya? ('who?' < *maa ʔayy-a)",
             "source": "Interrogatives and 'name' with East Cushitic reconstructions in Blažek (2011)"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Václav Blažek (2011), what are the Daasanach interrogative pronouns for 'Who?' and 'What?', and their Proto-East Cushitic etymologies?",
-            "correctAnswer": "máaya ('who?' < *maa ʔayy-a 'which man') and méete ('what?' < *maʔ waha 'what thing')",
-            "options": [
-              "máaya ('who?' < *maa ʔayy-a 'which man') and méete ('what?' < *maʔ waha 'what thing')",
-              "lulli ('all') and búrnab ('be many')",
-              "káana ('new') and gogu ('dry')",
-              "kulláʔ ('hot') and ɗéeɲ ('cold')"
-            ],
-            "hint": "Blažek (2011, 'who' & 'what')"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Daasanach form from Blažek (2011) with its English meaning:",
@@ -1383,54 +1335,111 @@ export const DAASANACH_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "daasanach-unit-9-nishiguchi-2004-sonority-ot",
-    "title": "Unit 9: Consonant Assimilation, Syllable Contact & Optimality Theory (Sumiyo Nishiguchi 2004, OUPEL 9, pp. 39–51)",
+    "id": "daasanach-unit-9",
+    "unitNumber": 9,
+    "title": "Consonant Assimilation, Syllable Contact & Optimality Theory",
     "description": "Complete line-by-line mastery of Sumiyo Nishiguchi's 'Consonant Assimilation and Sonority: A Case Study in Daasanach' (OUPEL Vol. 9, pp. 39–51, 2004, DOI: 10.18910/70792): Sections 1–5, all Examples (1)–(34), Tableaux 1–4, Footnotes 1–9, and 13 References.",
     "icon": "BookOpen",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-nishiguchi-2004-clusters-sections-1-to-3",
-        "title": "Morpheme-Internal vs. Cross-Boundary Clusters & Tableau 1–2 (Sects. 1–3, pp. 39–45)",
+        "title": "Morpheme-Internal vs. Cross-Boundary Clusters & Tableau 1–2",
         "icon": "BookOpen",
         "description": "Master all 12 morpheme-internal CC cluster words (Examples 5–8), geminates (13), Syllable Contact Law (14–18 & Tableau 1), and all 8 cross-boundary CC cluster words (Examples 19–22 & Tableau 2).",
         "tips": "Within morphemes (Sect. 2, pp. 40–43), *Complex and Onset dominate SyllCon, allowing L > N, F, C (and even C+N duɗ.mo and C+F kuɗ.fu, while *N, F, C > L is banned). Across morpheme boundaries (Sect. 3, pp. 44–45), *C_ObsC_Obs bans any Obstruent + Obstruent sequence.",
         "culturalNote": "Carried out in New York State (Sept. 2004–May 2005) with a native Kenyan Daasanach speaker (acknowledging Ellen Broselow, Lori Repetti & Donka Steriade, fn. * p. 39), Sumiyo Nishiguchi's OUPEL 9 study corrects Tosco's (2001: 52–53) cluster table (noting in fn. 3 p. 42 that Tosco printed 'L' instead of 'F' after N) and confirms the informant's syllabification intuition (fn. 6 p. 43).",
         "words": [
           {
-            "target": "marli (/mar + li/) • ɗolmisu (/ɗolis + miso/) • nirm • kernɲo",
-            "source": "Sonorant + Sonorant within morphemes (Ex. 5a–b, p. 40): Arbore Fem ('Arbore') • to peep (Nasal-ext Intensive) • newborn camels (/rm/) • bottom backbone (/rn/)",
-            "pronunciation": "mar-li / dhol-mi-su / nirm / kern-nyo",
-            "hint": "Nishiguchi (2004, Sect. 2, Ex. 5a–b, p. 40)"
+            "target": "marli (/mar + li/)",
+            "source": "Sonorant + Sonorant within morphemes (Ex. 5a–b, p. 40): Arbore Fem ('Arbore')",
+            "pronunciation": "marli"
           },
           {
-            "target": "karsic • balsam (balt + sam) • bilti (bilt + e) • kansic • inti (inti + e)",
-            "source": "Sonorant + Obstruent within morphemes (Ex. 6a–d, p. 41): old, elder (/rs/) • kind of grass (/ls/) • the knife for circumcision (/lt/) • chief (/ns/) • the gazelle (/nt/)",
-            "pronunciation": "kar-sich / bal-sam / bil-ti / kan-sich / in-ti",
-            "hint": "Nishiguchi (2004, Sect. 2, Ex. 6a–d, p. 41 & Tableau 1 p. 43: kar.sic)"
+            "target": "ɗolmisu (/ɗolis + miso/)",
+            "source": "to peep (Nasal-ext Intensive)",
+            "pronunciation": "olmisu"
           },
           {
-            "target": "duɗmo (dudum + o) • koɗodnos (koɗodno + s) • kuɗfu (kuɗf + o)",
-            "source": "Obstruent + Sonorant & Obstruent + Obstruent within morphemes (Ex. 7–8, p. 41): round calabashes (/ɗm/) • to make someone bend for himself (/dn/) • ankles (/df/)",
-            "pronunciation": "dudh-mo / ko-dhod-nos / kudh-fu",
-            "hint": "Nishiguchi (2004, Sect. 2, Ex. 7–8, p. 41 & Tableau 1 p. 43: duɗ.mo, kuɗ.fu)"
+            "target": "nirm",
+            "source": "newborn camels (/rm/)",
+            "pronunciation": "nirm"
           },
           {
-            "target": "GG: yy, ww • LL: ll, rr • NN: mm, nn • FF: ʃʃ • CC: gg, dd, bb, tt, ɟɟ",
-            "source": "Geminate consonant inventory in Daasanach (Ex. 13, p. 42, citing Sasse 1974: 409; G = glides)",
+            "target": "kernɲo",
+            "source": "bottom backbone (/rn/)",
+            "pronunciation": "kerno"
+          },
+          {
+            "target": "karsic",
+            "source": "Sonorant + Obstruent within morphemes (Ex. 6a–d, p. 41): old, elder (/rs/)",
+            "pronunciation": "karsic"
+          },
+          {
+            "target": "balsam (balt + sam)",
+            "source": "kind of grass (/ls/)",
+            "pronunciation": "balsam"
+          },
+          {
+            "target": "bilti (bilt + e)",
+            "source": "the knife for circumcision (/lt/)",
+            "pronunciation": "bilti"
+          },
+          {
+            "target": "kansic",
+            "source": "chief (/ns/)",
+            "pronunciation": "kansic"
+          },
+          {
+            "target": "inti (inti + e)",
+            "source": "the gazelle (/nt/)",
+            "pronunciation": "inti"
+          },
+          {
+            "target": "koɗodnos (koɗodno + s)",
+            "source": "to make someone bend for himself (/dn/)",
+            "pronunciation": "koodnos"
+          },
+          {
+            "target": "kuɗfu (kuɗf + o)",
+            "source": "ankles (/df/)",
+            "pronunciation": "kufu"
+          },
+          {
+            "target": "GG: yy, ww",
+            "source": "Geminate consonant inventory in Daasanach",
             "pronunciation": "yy, ww / ll, rr / mm, nn / sh-sh / gg, dd, bb, tt, jj",
             "hint": "Nishiguchi (2004, Sect. 2, Ex. 13 & fn. 4, p. 42)"
           },
           {
-            "target": "uolmosu (olol + mo + su) • ʔoʔorsis (ʔoʔor + sis) • ololso (olol + so) • ʕuurti (ʕuur + ti) • ɗuuninti (ɗuunin + ti)",
-            "source": "Sonorant + Sonorant & Sonorant + Obstruent across morpheme boundaries (Ex. 19–20, p. 44): to feed oneself (Nasal Mid) • make black (Caus) • to feed oneself (Mid) • shaved oneself (Mid Perf) • mosquito (Fem Sg)",
-            "pronunciation": "u-ol-mo-su / o-or-sis / o-lol-so / uur-ti / dhuu-nin-ti",
-            "hint": "Nishiguchi (2004, Sect. 3, Ex. 19–20a–c, p. 44)"
+            "target": "ʔoʔorsis (ʔoʔor + sis)",
+            "source": "make black (Caus)",
+            "pronunciation": "oorsis"
           },
           {
-            "target": "duusma (duus + m + a) • diiɗma (diit + m + a) • sʔuudmis (sʔuudis-)",
-            "source": "Obstruent + Sonorant across morpheme boundaries (Ex. 21a–b, pp. 44–45): to fart (Impf /sm/) • to refuse (Impf /ɗm/) • to rub (Nasal Ext /dm/)",
-            "pronunciation": "duus-ma / diidh-ma / suud-mis",
-            "hint": "Nishiguchi (2004, Sect. 3, Ex. 21a–b & Tableau 2, pp. 44–45: duus.ma)"
+            "target": "ololso (olol + so)",
+            "source": "to feed oneself (Mid)",
+            "pronunciation": "ololso"
+          },
+          {
+            "target": "ʕuurti (ʕuur + ti)",
+            "source": "shaved oneself (Mid Perf)",
+            "pronunciation": "uurti"
+          },
+          {
+            "target": "ɗuuninti (ɗuunin + ti)",
+            "source": "mosquito (Fem Sg)",
+            "pronunciation": "uuninti"
+          },
+          {
+            "target": "diiɗma (diit + m + a)",
+            "source": "to refuse (Impf /ɗm/)",
+            "pronunciation": "diima"
+          },
+          {
+            "target": "sʔuudmis (sʔuudis-)",
+            "source": "to rub (Nasal Ext /dm/)",
+            "pronunciation": "suudmis"
           }
         ],
         "sentences": [
@@ -1444,18 +1453,6 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Nishiguchi (2004, Sect. 2, p. 42, Examples 11–12), which consonant class strictly obeys the morpheme-internal cooccurrence restriction such that *N, F, C > L never occurs?",
-            "correctAnswer": "Liquids (L > N, F, C; whereas *N, F, C > L is never found)",
-            "options": [
-              "Liquids (L > N, F, C; whereas *N, F, C > L is never found)",
-              "Fricatives (F > L, N, C)",
-              "Plain stops (C > L, N, F)",
-              "Glides only"
-            ],
-            "hint": "Nishiguchi (2004, p. 42, Examples 11–12)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each Daasanach word from Nishiguchi (2004, pp. 40–44) with its morphological decomposition and gloss:",
@@ -1483,45 +1480,91 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-nishiguchi-2004-assimilation-ot-sections-4-to-5",
-        "title": "Consonant Assimilation, Deletion & Tableaux 3–4 (Sects. 4–5, pp. 46–51)",
+        "title": "Consonant Assimilation, Deletion & Tableaux 3–4",
         "icon": "Sparkles",
         "description": "Master all 15 consonant assimilation/deletion derivations (Examples 25–31) and the Optimality Theory ranking *CC_Obs, Max-C_son-IO >> Faith-affix-IO (Examples 32–34 & Tableaux 3–4).",
         "tips": "Across morpheme boundaries (p. 48): (a) Son+Son -> Son+Son; (b) Son+Obs -> Son (preserving the sonorant via Max-C_son-IO); (c) Obs+Son -> Obs+Son; (d) Obs₁+Obs₂ -> Obs₂ (preserving the affix obstruent via Faith-affix-IO).",
         "culturalNote": "Nishiguchi (2004, pp. 48–50) shows why neither pure stem-faithfulness, pure affix-faithfulness, pure sonority maximization, nor Donka Steriade's (2001) P-map prevocalic onset salience alone can account for Daasanach: instead, the interaction of *CC_Obs ('Avoid a sequence of a consonant followed by an obstruent'), Max-C_son-IO, and Faith-affix-IO predicts both sonorant survival in (25)–(28) and affix-obstruent survival in (29)–(30).",
         "words": [
           {
-            "target": "/zaaby + t + a/ → [zaaya] (G+C → G) • /maal + t + a/ → [maala] • /həl + ta/ → [həlaa] • /bil + t + o/ → [bilo] (L+C → L)",
-            "source": "Glide/Liquid + Stop deletion of affix /t/ (Ex. 25–26a–c, p. 47): you sew (Sasse 1976) • (you) hear • (YOU) enter (2Pl) • bows (bow + Pl)",
-            "pronunciation": "zaa-ya / maa-la / ha-laa / bi-lo",
-            "hint": "Nishiguchi (2004, Sect. 4, Ex. 25–26, p. 47 & Tableau 4 p. 50)"
+            "target": "/zaaby + t + a/ → [zaaya] (G+C → G)",
+            "source": "Glide/Liquid + Stop deletion of affix /t/ (Ex. 25–26a–c, p. 47): you sew (Sasse 1976)",
+            "pronunciation": "pron"
           },
           {
-            "target": "/fuur + t + a/ → [fuuDDA] • /cir + t + i/ → [ciɗɗi] (r+t → ɗɗ) • /maɗ + t + i/ → [maɗɗi] (d+t → ɗɗ)",
-            "source": "Coalescence to voiced implosive geminate ɗɗ / DD (Ex. 27a–b & 31, pp. 47–48, fn. 9 p. 50): you open (Sasse 1976) • you held for yourself (Tosco 2001: 187) • you went and bought (2Sg Perf)",
-            "pronunciation": "fuu-dda / chidh-dhi / madh-dhi",
-            "hint": "Nishiguchi (2004, Sect. 4, Ex. 27 & 31, pp. 47–48, fn. 9 p. 50)"
+            "target": "/maal + t + a/ → [maala]",
+            "source": "(you) hear",
+            "pronunciation": "pron"
           },
           {
-            "target": "/tuun + t + a/ → [tuunna] • /zaas + am + t + a/ → [zaasanna] ({m, n, l}+t → {nn, ll})",
-            "source": "Nasal + Stop assimilation to geminate nn (Ex. 28a–b, p. 47): you beat (beat + 2Sg) • you see (see + 2Sg, Sasse 1976)",
-            "pronunciation": "tuun-na / zaa-san-na",
-            "hint": "Nishiguchi (2004, Sect. 4, Ex. 28a–b, p. 47 & Tableau 4 p. 50)"
+            "target": "/həl + ta/ → [həlaa]",
+            "source": "(YOU) enter (2Pl)",
+            "pronunciation": "pron"
           },
           {
-            "target": "/us + te/ → [ute] • /fuus + te/ → [fuute] • /hees + t + i/ → [heeti] • /ɗis + t + i/ → [ɗiti] • /duus + t + i/ → [duuti] (s+t → t)",
-            "source": "Fricative + Stop deletion of stem /s/ preserving affix /t/ (Ex. 3 & 29a–e, pp. 39, 47–48): scoop (Past Mid Sg) • tear off (Benefactive) • you asked (2Sg Perf) • you built for yourself (Tosco 2001: 187) • you farted (Tosco 2001: 128)",
-            "pronunciation": "u-te / fuu-te / hee-ti / dhi-ti / duu-ti",
-            "hint": "Nishiguchi (2004, Sect. 1 Ex. 3 p. 39 & Sect. 4 Ex. 29a–e pp. 47–48, Tableau 4 p. 50)"
+            "target": "/bil + t + o/ → [bilo] (L+C → L)",
+            "source": "bows (bow + Pl)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/fuur + t + a/ → [fuuDDA]",
+            "source": "Coalescence to voiced implosive geminate ɗɗ / DD: you open (Sasse 1976)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/cir + t + i/ → [ciɗɗi] (r+t → ɗɗ)",
+            "source": "you held for yourself (Tosco 2001: 187)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/maɗ + t + i/ → [maɗɗi] (d+t → ɗɗ)",
+            "source": "you went and bought (2Sg Perf)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/tuun + t + a/ → [tuunna]",
+            "source": "Nasal + Stop assimilation to geminate nn (Ex. 28a–b, p. 47): you beat (beat + 2Sg)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/zaas + am + t + a/ → [zaasanna]",
+            "source": "you see (see + 2Sg, Sasse 1976)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/us + te/ → [ute]",
+            "source": "Fricative + Stop deletion of stem /s/ preserving affix /t/: scoop (Past Mid Sg)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/fuus + te/ → [fuute]",
+            "source": "tear off (Benefactive)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/hees + t + i/ → [heeti]",
+            "source": "you asked (2Sg Perf)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/ɗis + t + i/ → [ɗiti]",
+            "source": "you built for yourself (Tosco 2001: 187)",
+            "pronunciation": "pron"
+          },
+          {
+            "target": "/duus + t + i/ → [duuti] (s+t → t)",
+            "source": "you farted (Tosco 2001: 128)",
+            "pronunciation": "pron"
           },
           {
             "target": "/it + su/ → [isu] (t+s → s)",
-            "source": "Stop + Fricative deletion of stem /t/ preserving affix /s/ (Ex. 4 & 30, pp. 40, 48, Tosco 2001: 24): tear apart + Middle = 'to tear off (for oneself)'",
+            "source": "Stop + Fricative deletion of stem /t/ preserving affix /s/: tear apart + Middle = 'to",
             "pronunciation": "i-su",
             "hint": "Nishiguchi (2004, Sect. 1 Ex. 4 p. 40 & Sect. 4 Ex. 30 p. 48, Tableau 4 p. 50)"
           },
           {
             "target": "(32) *CC_Obs • (33) Max-C_son-IO • (34) Faith-affix-IO",
-            "source": "The 3 Optimality-Theoretic constraints governing Daasanach morpheme boundaries (pp. 48–50): Avoid C+Obstruent (*CC_Obs), Preserve input sonorants (Max-C_son-IO), Preserve input affix segments (Faith-affix-IO)",
+            "source": "The 3 Optimality-Theoretic constraints governing Daasanach morpheme boundaries (pp.",
             "pronunciation": "star-C-C-obs / max-C-son-I-O / faith-affix-I-O",
             "hint": "Nishiguchi (2004, Sect. 4, Examples 32–34 & Tableaux 3–4, pp. 48–50)"
           }
@@ -1533,18 +1576,6 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "Why does /duus + t + i/ surface as [duuti] (retaining affix /t/) and /it + su/ surface as [isu] (retaining affix /s/) in Nishiguchi's (2004, pp. 48–50) Optimality-Theoretic analysis?",
-            "correctAnswer": "Because *CC_Obs eliminates the faithful Obstruent+Obstruent cluster, Max-C_son-IO is vacuous, and Faith-affix-IO preserves the consonant in the affix",
-            "options": [
-              "Because *CC_Obs eliminates the faithful Obstruent+Obstruent cluster, Max-C_son-IO is vacuous, and Faith-affix-IO preserves the consonant in the affix",
-              "Because stem consonants are always preserved over affix consonants",
-              "Because the more sonorous consonant is always preserved",
-              "Because Complex Onsets are preferred in Daasanach"
-            ],
-            "hint": "Nishiguchi (2004, pp. 48–50, Tableaux 3–4)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each underlying Daasanach form in Nishiguchi (2004, pp. 47–48) with its surface realization and meaning:",
@@ -1573,63 +1604,53 @@ export const DAASANACH_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "daasanach-unit-10-blazek-2011-state-of-the-art-swadesh-etymologies",
-    "title": "Unit 10: Dasanech Language – State-of-the-Art (Václav Blažek, Folia Orientalia Vol. 48, 2011 & Mauro Tosco 2001)",
+    "id": "daasanach-unit-10",
+    "unitNumber": 10,
+    "title": "Dasanech Language – State-of-the-Art",
     "description": "Complete line-by-line mastery of Václav Blažek (Folia Orientalia Vol. 48, 2011): Sasse (1975), Heine (1976/1978) & Blažek (1997) classification trees, 14-language cognate ranking, 24-consonant phonology, nominal/verbal morphology, and the 6-source 101-gloss comparative wordlist.",
     "icon": "Globe",
+    "color": "#991B1B",
     "skills": [
       {
         "id": "daasanach-blazek-2011-classification-phonology-morphology",
-        "title": "Classification Trees, Glottochronology, 24 Consonants & Morphology (Lines 1–120)",
+        "title": "Classification Trees, Glottochronology, 24 Consonants &",
         "icon": "Globe",
         "description": "Master the structure of Tosco (2001), the 3 genealogical trees, the 14-language cognate percentages, the 24 consonant phonemes, and nominal/verbal morphology.",
         "tips": "In Blažek's (1997: 173–74) glottochronological model, Galaboid (Elmolo–Arbore -180 BC / 68.5%; Dasaneč -1080 BC / 51.7%) is closer to Oromoid (-2050 BC / 37.7%) than to Somaloid (-2330 BC / 34.2%). Dasanech shares 53.3% of its 100-word list with Arbore, 50.0% with Elmolo, 38.9% with Oromo, 35.8% with Konso and Somali, and 35.6% with Rendille.",
         "culturalNote": "Published in Folia Orientalia Vol. 48 (2011) by Prof. Václav Blažek (Masaryk University, Brno, blazek@phil.muni.cz), 'Dasanech Language – State-of-the-Art' reviews Mauro Tosco's landmark monograph 'The Dhaasanac Language' (Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6).",
         "words": [
           {
-            "target": "Arbore 53.3% > Elmolo 50.0% > Oromo 38.9% > Konso 35.8% = Somali 35.8% > Rendille 35.6% > D’irayta 31.2% > Bayso 27.7% > Afar 25.0% > Yaaku 18.0% > Gollango 16.5% > Harso 16.1% > Sidamo 14.6% > Dahalo 11.9%",
-            "source": "Complete 14-language ranking of common cognate percentages with Dasanech on the 100-word list (Blažek 2011, line 95)",
+            "target": "Arbore 53.3% > Elmolo 50.0% > Oromo 38.9% > Konso 35.8% = Somali 35.8%",
+            "source": "Complete 14-language ranking of common cognate percentages with Dasanech on the",
             "pronunciation": "cognate shares with Dasanech",
             "hint": "Blažek (2011, line 95, based on Blažek 1997: 173–74)"
           },
           {
-            "target": "Oral plosives: b, d, t, j, c, g, k, ʔ • Implosives: ɓ, ɗ, ʄ, ɠ • Nasals: m, n, ɲ, ŋ • Fricatives: f, ð, s, š • Trill: r • Approximants: w, y, l",
-            "source": "All 24 consonant phonemes of Dasanech + 5 short/long vowels (i, e, a, o, u) + 2 diphthongs (ie, uo) (Tosco 2001, pp. 16–18, 25–26)",
+            "target": "Oral plosives: b, d, t, j, c, g, k, ʔ",
+            "source": "All 24 consonant phonemes of Dasanech + 5 short/long vowels (i, e, a, o, u) + 2",
             "pronunciation": "24 consonant phonemes & 2 diphthongs",
             "hint": "Blažek (2011, lines 97–106, citing Tosco 2001 pp. 16–18, 25–26)"
           },
           {
-            "target": "Singulative: m. -(i)c / -(i)ɲ, -(a)c / -(a)ɲ; f. -ti (pp. 75–82) • Plural: -u (with final C gemination), -a, -i, -V(V)m (m.) / -sV(V)m (f.), -anu, -ono, -s, -tu (pp. 83–93)",
-            "source": "Complete inventory of Dasanech singulative and plural nominal suffixes (Tosco 2001, Ch. 3, pp. 75–93)",
+            "target": "Singulative: m. -(i)c / -(i)ɲ, -(a)c / -(a)ɲ; f. -ti (pp. 75–82)",
+            "source": "Complete inventory of Dasanech singulative and plural nominal suffixes",
             "pronunciation": "singulative and plural markers",
             "hint": "Blažek (2011, line 108)"
           },
           {
-            "target": "3rd sg. m. impf. prefix verbs: ʔás ('kills'), yaalla ('stands'), yeeðe ('says'), yimii ('comes')",
-            "source": "The 4 Dasanech verbs preserving the archaic Afroasiatic prefixal conjugation (Tosco 2001, Appendix 2, pp. 320–475)",
+            "target": "3rd sg. m. impf. prefix verbs: ʔás ('kills'), yaalla ('stands'), yeeðe",
+            "source": "The 4 Dasanech verbs preserving the archaic Afroasiatic prefixal conjugation",
             "pronunciation": "ahs / yaal-lah / yee-dheh / yee-mee",
             "hint": "Blažek (2011, line 118)"
           }
         ],
         "sentences": [
           {
-            "target": "Galaboid: Elmolo–Arbore (-180 BC / 68.5%) & Dasaneč (-1080 BC / 51.7%) • Galaboid–Oromoid (-2050 BC / 37.7%)",
+            "target": "Galaboid: Elmolo–Arbore (-180 BC / 68.5%) & Dasaneč (-1080 BC / 51.7%)",
             "source": "Glottochronological disintegration dates and cognate percentages in Blažek (1997: 173–74; 2011: lines 58–93)"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "According to Václav Blažek (2011, line 95), which six languages share the highest percentage of common cognates with Dasanech on the standard 100-word list?",
-            "correctAnswer": "Arbore (53.3%), Elmolo (50.0%), Oromo (38.9%), Konso (35.8%), Somali (35.8%), and Rendille (35.6%)",
-            "options": [
-              "Arbore (53.3%), Elmolo (50.0%), Oromo (38.9%), Konso (35.8%), Somali (35.8%), and Rendille (35.6%)",
-              "Dahalo (11.9%), Sidamo (14.6%), Harso (16.1%), Gollango (16.5%), Yaaku (18.0%), and Afar (25.0%)",
-              "Swahili, Kikuyu, Kamba, Luhya, Gusii, and Pokomo",
-              "Maasai, Turkana, Samburu, Kalenjin, Pokot, and Luo"
-            ],
-            "hint": "Blažek (2011, line 95)"
-          },
           {
             "type": "match_pairs",
             "prompt": "Match each grammatical category in Tosco (2001) & Blažek (2011) with its exact Dasanech forms:",
@@ -1657,69 +1678,462 @@ export const DAASANACH_UNITS: CourseUnit[] = [
       },
       {
         "id": "daasanach-blazek-2011-comparative-101-wordlist",
-        "title": "The 6-Column Comparative Wordlist (da Trento 1941 to Tosco 2001) & 50 References (Lines 122–338)",
+        "title": "The 6-Column Comparative Wordlist & 50 References (Lines 122–338)",
         "icon": "BookOpen",
         "description": "Compare lexical forms across da Trento 1941 (60 units), Haberland 1966 (91), Fleming 1965 (102) & 1971 (146), Bender 1971 (97), Sasse (1973–1982), and Tosco 2001 (c. 1,400) with East Cushitic reconstructions.",
         "tips": "Blažek's (2011) comparative table aligns 67 years of fieldwork on Galab / Geleba / Dasanech (1941–2001) with reconstructions from Sasse (1976, 1979, 1982), Heine (1978, 1980, 1981, 1982), Hayward (1979, 1984), Black (1974), and Pillinger & Galboran (1999).",
         "words": [
           {
-            "target": "da Trento 1941 (60) • Haberland 1966 (91) • Fleming 1965 (102) & 1971 (146) • Bender 1971 (97) • Sasse 1973–1982 (ca. 11 studies) • Tosco 2001 (c. 1,400)",
-            "source": "The six lexical authorities compared in Blažek's (2011, line 122) 101-gloss Swadesh table (with lexical unit counts in brackets)",
-            "pronunciation": "six comparative Dasanech wordlists",
-            "hint": "Blažek (2011, lines 122, 278)"
+            "target": "da Trento 1941",
+            "source": "60",
+            "pronunciation": "da-trento-1941"
           },
           {
-            "target": "lulli ('all') • ʔége ('ashes') & ɗíl ('hot ashes') • boort-i & ɓokot-i ('bark') • geer-e ('belly') • guddu ('big') • kimír-ri ('small bird') & ⁿurum ('big bird') • ɠínin ('bite') • ʔoŋor ('black') • fás ('blood') • láf-u ('bone')",
-            "source": "Comparative Table Items 1–10 (Tosco 2001 forms with Sasse/Bender/Fleming/Haberland/da Trento variants & East Cushitic etymologies)",
-            "pronunciation": "lool-lee / eh-geh / deel / boor-tee / gee-reh / good-duu / kee-meer-ree / gee-neen / oh-ngohr / fahs / lah-fuu",
-            "hint": "Blažek (2011, lines 126–138)"
+            "target": "Haberland 1966",
+            "source": "91",
+            "pronunciation": "haberland-1966"
           },
           {
-            "target": "ʔóðu ('human breast'), ɠán ('animal breast') & bál ('chest') • bólob & duun-ay- ('burn') • ⁿáɗ ('fingernail') & konof ('hoof, finger') • derri-c ('cloud') • ɗéeɲ & ʔabbúnab ('cold') • káɗe! & yimeðe ('come') • kúf & dɛd ('die') • cér ('dog') • ʔík ('drink') • gogu ('dry')",
-            "source": "Comparative Table Items 11–20 (Tosco 2001 & Sasse/Fleming/Bender forms)",
-            "pronunciation": "oh-dhu / gahn / bahl / boh-lohb / nahd / koh-nohf / der-reech / deeny / kah-deh / kuuf / cher / eek / goh-guu",
-            "hint": "Blažek (2011, lines 139–158)"
+            "target": "Bender 1971",
+            "source": "97",
+            "pronunciation": "bender-1971"
           },
           {
-            "target": "nee ('ear') • lés ('land') & bii ('soil') • kóm ('eat') • ɠonɠ-o ('egg') • ʔíl (pl. ʔinnù 'eye') • sálab, buoddi & giɛ ('fat') • bal-li ('feather') • ʄíet (pl. ʔéðe 'fire') • bée & kāra ('fish') • kiiðiɲ ('fly n.') • ɠás & beḍi ('foot') • kóc ('full') • šíiš ('give') • sí ('go') • miðáb & ɗabán ('good/pretty')",
-            "source": "Comparative Table Items 21–35 (Tosco 2001 & Sasse/Fleming/Bender/Haberland forms)",
-            "pronunciation": "neh / lehs / bee / kohm / gohn-goh / eel / sah-lahb / bahl-lee / jeet / bee / kee-dheeny / gahs / kohch / sheesh / see / mee-dhahb",
-            "hint": "Blažek (2011, lines 159–180)"
+            "target": "Tosco 2001",
+            "source": "c. 1,400",
+            "pronunciation": "tosco-2001"
           },
           {
-            "target": "ʔíiš ('grass') • ðúur ('hair') • gíl ('hand') • mé (pl. met-u 'head') • máal ('hear') • ⁿuoðin-ni ('heart') • gáas ('horn') • yú ('I') • ʔás ('kill') • kur (pl. kurram) & duk ('knee') • ʔók & iàarghe ('know') • ráš & nee ('leaf') • círa ('liver') • ɗér ('long') • ʔiðír-ri ('louse')",
-            "source": "Comparative Table Items 36–50 (Tosco 2001 & Sasse/Fleming/Bender/Haberland/da Trento forms)",
-            "pronunciation": "eesh / dhuur / geel / meh / maal / nwo-dhin-nee / gaas / yuu / ahs / kur / ohk / rahsh / chee-rah / dehr / ee-dheer-ree",
-            "hint": "Blažek (2011, lines 181–199)"
+            "target": "lulli",
+            "source": "all",
+            "pronunciation": "lulli"
           },
           {
-            "target": "mí ~ mu & yáb ('man/males') • búrnab ('be many') • só (pl. sogim 'meat') • ɠuí ('moon') • gummuti, wār, labur & siri ('mountain/hill') • ʔaf-u ('mouth') • mée ('name') • lúut-i (pl. lug-u 'neck') • káana ('new') • cuur-i ('night') • sóon-o ('nose') • takac / tikiɗ-ɗi ('one') • máa & gáal ('person/people') • ʔír ('rain') • búr ('red') • ɠíeric ('road') • ⁿíð ('root') • yùoc ('sand') • ʔát / yeeðe ('say') • ʔárik ('see') • ʔár / rruba / fa’ ('seed') • yédik ('sit=live') • r/lokóɗ ('skin') • ráf & ɗínaʔ ('sleep/lie down') • níni (pl. nigginí 'small') • ʔéer ('smoke') • cár ('snake') • yáal & ɠeé ('stand/get up') • ʔiðin ('star') • wáar & dʌb ('stone') • ʔáaðu ('sun') • ðánu ('swim') • wáas, dúm & sugu ('tail/tip/back') • dáɗab ('thin') • ⁿíé(é)-là / ello / yē, hē ('this') • kúun-i ('thou') • sed-di ('three') • ʔére (pl. ʔerbu 'tongue') • kác-u ('tooth') • ɠór ('tree') • naama ('two') • kulláʔ ('warm/hot') • bie ('water') • ɲiini (excl.) & múuni (incl. 'we') • ɲuru ('wet') • méete ('what') • ʔéð (pl. ʔéegeð 'white') • máaya ('who') • min-ni & ɗég-i ('woman/women') • ʔitíni ('ye') • ráar (pl. ráagar 'yellow')",
-            "source": "Comparative Table Items 51–101 (Tosco 2001 & Sasse/Fleming/Bender/Haberland/da Trento forms)",
-            "pronunciation": "complete 101-gloss Swadesh inventory",
-            "hint": "Blažek (2011, lines 200–274)"
+            "target": "geer-e",
+            "source": "belly",
+            "pronunciation": "geer-e"
+          },
+          {
+            "target": "guddu",
+            "source": "big",
+            "pronunciation": "guddu"
+          },
+          {
+            "target": "fás",
+            "source": "blood",
+            "pronunciation": "fás"
+          },
+          {
+            "target": "láf-u",
+            "source": "bone",
+            "pronunciation": "láf-u"
+          },
+          {
+            "target": "derri-c",
+            "source": "cloud",
+            "pronunciation": "derri-c"
+          },
+          {
+            "target": "cér",
+            "source": "dog",
+            "pronunciation": "cér"
+          },
+          {
+            "target": "gogu",
+            "source": "dry",
+            "pronunciation": "gogu"
+          },
+          {
+            "target": "nee",
+            "source": "ear",
+            "pronunciation": "nee"
+          },
+          {
+            "target": "kóm",
+            "source": "eat",
+            "pronunciation": "kóm"
+          },
+          {
+            "target": "bal-li",
+            "source": "feather",
+            "pronunciation": "bal-li"
+          },
+          {
+            "target": "kóc",
+            "source": "full",
+            "pronunciation": "kóc"
+          },
+          {
+            "target": "šíiš",
+            "source": "give",
+            "pronunciation": "šíiš"
+          },
+          {
+            "target": "sí",
+            "source": "go",
+            "pronunciation": "sí"
+          },
+          {
+            "target": "ðúur",
+            "source": "hair",
+            "pronunciation": "ðúur"
+          },
+          {
+            "target": "gíl",
+            "source": "hand",
+            "pronunciation": "gíl"
+          },
+          {
+            "target": "máal",
+            "source": "hear",
+            "pronunciation": "máal"
+          },
+          {
+            "target": "gáas",
+            "source": "horn",
+            "pronunciation": "gáas"
+          },
+          {
+            "target": "yú",
+            "source": "I",
+            "pronunciation": "yú"
+          },
+          {
+            "target": "círa",
+            "source": "liver",
+            "pronunciation": "círa"
+          },
+          {
+            "target": "búrnab",
+            "source": "be many",
+            "pronunciation": "búrnab"
+          },
+          {
+            "target": "mée",
+            "source": "name",
+            "pronunciation": "mée"
+          },
+          {
+            "target": "káana",
+            "source": "new",
+            "pronunciation": "káana"
+          },
+          {
+            "target": "cuur-i",
+            "source": "night",
+            "pronunciation": "cuur-i"
+          },
+          {
+            "target": "sóon-o",
+            "source": "nose",
+            "pronunciation": "sóon-o"
+          },
+          {
+            "target": "búr",
+            "source": "red",
+            "pronunciation": "búr"
+          },
+          {
+            "target": "yùoc",
+            "source": "sand",
+            "pronunciation": "yùoc"
+          },
+          {
+            "target": "yédik",
+            "source": "sit=live",
+            "pronunciation": "yédik"
+          },
+          {
+            "target": "cár",
+            "source": "snake",
+            "pronunciation": "cár"
+          },
+          {
+            "target": "ðánu",
+            "source": "swim",
+            "pronunciation": "ðánu"
+          },
+          {
+            "target": "kúun-i",
+            "source": "thou",
+            "pronunciation": "kúun-i"
+          },
+          {
+            "target": "sed-di",
+            "source": "three",
+            "pronunciation": "sed-di"
+          },
+          {
+            "target": "kác-u",
+            "source": "tooth",
+            "pronunciation": "kác-u"
+          },
+          {
+            "target": "naama",
+            "source": "two",
+            "pronunciation": "naama"
+          },
+          {
+            "target": "bie",
+            "source": "water",
+            "pronunciation": "bie"
+          },
+          {
+            "target": "méete",
+            "source": "what",
+            "pronunciation": "méete"
+          },
+          {
+            "target": "máaya",
+            "source": "who",
+            "pronunciation": "máaya"
           }
         ],
         "sentences": [
           {
-            "target": "da Trento 1941 (60) • Haberland 1966 (91) • Fleming 1965 (102) & 1971 (146) • Bender 1971 (97) • Sasse 1973–82 • Tosco 2001 (c. 1,400)",
+            "target": "da Trento 1941 (60)",
             "source": "Chronological progression of Dasanech lexical documentation in Blažek (2011, lines 122, 278)"
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Václav Blažek (2011, line 122), how many lexical units were recorded in each of the historical wordlists compared against Mauro Tosco's (2001) c. 1,400-unit vocabulary?",
-            "correctAnswer": "da Trento 1941 (60), Haberland 1966 (91), Fleming 1965 (102) & 1971 (146), Bender 1971 (97), and Sasse 1973–1982 (ca. 11 studies)",
-            "options": [
-              "da Trento 1941 (60), Haberland 1966 (91), Fleming 1965 (102) & 1971 (146), Bender 1971 (97), and Sasse 1973–1982 (ca. 11 studies)",
-              "Höhnel 1894 (500) and Shackleton 1933 (800)",
-              "Krapf 1840 (100) and Tutschek 1844 (2,000)",
-              "Kirk 1905 (300) and De Larajasse 1897 (3,000)"
-            ],
-            "hint": "Blažek (2011, lines 122, 278)"
-          }
         ]
-      }
+      },
+        {
+        "id": "daasanach-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Daasanach (Dhaasanac) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasana",
+        "words": [
+                {
+                        "target": "nagaa / nagaay",
+                        "source": "Peace / Well-being",
+                        "pronunciation": "nah-gaa / nah-gaay"
+                },
+                {
+                        "target": "Nagaa",
+                        "source": "It is peace / I am well",
+                        "pronunciation": "nah-gaa"
+                },
+                {
+                        "target": "Ma nagaa?",
+                        "source": "Is it peace? / Are you well?",
+                        "pronunciation": "mah nah-gaa"
+                },
+                {
+                        "target": "Nagaa / Nagaya",
+                        "source": "Hello / Peace be with you",
+                        "pronunciation": "nagaa"
+                },
+                {
+                        "target": "Subax midhab / Nagaa kuno?",
+                        "source": "How are you? (Morning greeting)",
+                        "pronunciation": "subax midhab"
+                },
+                {
+                        "target": "Waag ku midhabis / Galatoomi",
+                        "source": "Thank you / Be blessed",
+                        "pronunciation": "waag ku midhabis"
+                },
+                {
+                        "target": "Káɗe bila / Káɗe geer",
+                        "source": "Welcome to our home",
+                        "pronunciation": "káe bila"
+                },
+                {
+                        "target": "Ɲiɲi bila Azu káɗe hayna",
+                        "source": "We keep morning in our village",
+                        "pronunciation": "ɲii bila azu káe hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila Azu kana hayna",
+                        "source": "We keep today in our village",
+                        "pronunciation": "ɲii bila azu kana hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila Boru hayna",
+                        "source": "We keep tomorrow in our village",
+                        "pronunciation": "ɲii bila boru hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila Gogu hayna",
+                        "source": "We keep dry season in our village",
+                        "pronunciation": "ɲii bila gogu hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila Irr hayna",
+                        "source": "We keep rainy season in our village",
+                        "pronunciation": "ɲii bila irr hayna"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Kuni maanta Gogu qabtaa?",
+                        "source": "Do you have dry season today?"
+                },
+                {
+                        "target": "Ee, ɲiɲi Gogu miðáb qabna",
+                        "source": "Yes, we have good dry season"
+                },
+                {
+                        "target": "Ɲiɲi Gogu šíiš",
+                        "source": "Give us dry season now"
+                },
+                {
+                        "target": "Kuni maanta Irr qabtaa?",
+                        "source": "Do you have rainy season today?"
+                },
+                {
+                        "target": "Ee, ɲiɲi Irr miðáb qabna",
+                        "source": "Yes, we have good rainy season"
+                },
+                {
+                        "target": "Ɲiɲi Irr šíiš",
+                        "source": "Give us rainy season now"
+                },
+                {
+                        "target": "Kuni maanta kana qabtaa?",
+                        "source": "Do you have new today?"
+                },
+                {
+                        "target": "Ee, ɲiɲi kana miðáb qabna",
+                        "source": "Yes, we have good new"
+                },
+                {
+                        "target": "Ɲiɲi kana šíiš",
+                        "source": "Give us new now"
+                },
+                {
+                        "target": "Kuni maanta kul qabtaa?",
+                        "source": "Do you have warm today?"
+                },
+                {
+                        "target": "Ee, ɲiɲi kul miðáb qabna",
+                        "source": "Yes, we have good warm"
+                },
+                {
+                        "target": "Ɲiɲi kul šíiš",
+                        "source": "Give us warm now"
+                }
+        ]
+},
+        {
+        "id": "daasanach-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Daasanach (Dhaasanac) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasana",
+        "words": [
+                {
+                        "target": "Ɲiɲi bila kana hayna",
+                        "source": "We keep new in our village",
+                        "pronunciation": "ɲii bila kana hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila kul hayna",
+                        "source": "We keep warm in our village",
+                        "pronunciation": "ɲii bila kul hayna"
+                },
+                {
+                        "target": "Ɲiɲi bila Dímì hayna",
+                        "source": "We keep dimi ceremony in our village",
+                        "pronunciation": "ɲii bila dímì hayna"
+                },
+                {
+                        "target": "Gatii Biiy suug meeqa?",
+                        "source": "How much is money at the market?",
+                        "pronunciation": "gatii biiy suug meeqa"
+                },
+                {
+                        "target": "Gatii Gatii suug meeqa?",
+                        "source": "How much is price at the market?",
+                        "pronunciation": "gatii gatii suug meeqa"
+                },
+                {
+                        "target": "Gatii Naab suug meeqa?",
+                        "source": "How much is danger at the market?",
+                        "pronunciation": "gatii naab suug meeqa"
+                },
+                {
+                        "target": "Gatii Dawa suug meeqa?",
+                        "source": "How much is medicine at the market?",
+                        "pronunciation": "gatii dawa suug meeqa"
+                },
+                {
+                        "target": "Gatii Gogu suug meeqa?",
+                        "source": "How much is drought at the market?",
+                        "pronunciation": "gatii gogu suug meeqa"
+                },
+                {
+                        "target": "Gatii Nagaa suug meeqa?",
+                        "source": "How much is peace at the market?",
+                        "pronunciation": "gatii nagaa suug meeqa"
+                },
+                {
+                        "target": "Gatii dunay suug meeqa?",
+                        "source": "How much is burn at the market?",
+                        "pronunciation": "gatii dunay suug meeqa"
+                },
+                {
+                        "target": "Gatii Sg suug meeqa?",
+                        "source": "How much is you beat at the market?",
+                        "pronunciation": "gatii sg suug meeqa"
+                },
+                {
+                        "target": "Azu káɗe nagaa iyo fayyaa eegaa",
+                        "source": "Protect morning for peace and health",
+                        "pronunciation": "azu káe nagaa iyo fayyaa eegaa"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Kuni maanta Dímì qabtaa?",
+                        "source": "Do you have dimi ceremony today?"
+                },
+                {
+                        "target": "Ee, ɲiɲi Dímì miðáb qabna",
+                        "source": "Yes, we have good dimi ceremony"
+                },
+                {
+                        "target": "Ɲiɲi Dímì šíiš",
+                        "source": "Give us dimi ceremony now"
+                },
+                {
+                        "target": "Gatii Manyatta suug meeqa?",
+                        "source": "How much is village camp at the market?"
+                },
+                {
+                        "target": "Gatii Gúm suug meeqa?",
+                        "source": "How much is north at the market?"
+                },
+                {
+                        "target": "Gatii Bie guddu suug meeqa?",
+                        "source": "How much is south at the market?"
+                },
+                {
+                        "target": "Gatii kade! suug meeqa?",
+                        "source": "How much is come at the market?"
+                },
+                {
+                        "target": "Gatii $^{\\text{}}$sasen suug meeqa?",
+                        "source": "How much is go at the market?"
+                },
+                {
+                        "target": "Gatii Pl suug meeqa?",
+                        "source": "How much is enter at the market?"
+                },
+                {
+                        "target": "Gatii Suug suug meeqa?",
+                        "source": "How much is market at the market?"
+                },
+                {
+                        "target": "Gatii Biiy suug meeqa?",
+                        "source": "How much is money at the market?"
+                },
+                {
+                        "target": "Gatii Gatii suug meeqa?",
+                        "source": "How much is price at the market?"
+                }
+        ]
+}
     ]
   }
 ];

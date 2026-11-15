@@ -117,7 +117,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-          <span className="text-text-secondary truncate max-w-[260px] sm:max-w-[420px]">{post.title}</span>
+          <span className="text-text-secondary break-words">{post.title}</span>
         </nav>
 
         {post.coverImage && (
@@ -132,7 +132,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
         )}
 
         <header className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">
+          <h1 className="text-2xl sm:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4 leading-tight">
             {post.title}
           </h1>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-text-muted">
@@ -180,21 +180,24 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
             aria-label="Table of Contents"
             className="mb-8 bg-bg-card border border-border rounded-xl p-4 sm:p-5"
           >
-            <p className="text-xs font-bold uppercase tracking-wider text-gold mb-2.5 flex items-center gap-1.5">
-              <DynamicIcon emoji="📑" className="w-3.5 h-3.5" /> In This Guide ({tocHeadings.length} Sections)
+            <p className="text-xs font-bold uppercase tracking-wider text-gold mb-3 flex items-center gap-1.5">
+              <DynamicIcon emoji="📑" className="w-3.5 h-3.5 shrink-0" /> In This Guide ({tocHeadings.length} Sections)
             </p>
-            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-text-secondary">
-              {tocHeadings.map((h, idx) => (
-                <li key={h.id} className="truncate">
-                  <a
-                    href={`#${h.id}`}
-                    className="hover:text-gold transition-colors inline-flex items-baseline gap-1.5"
-                  >
-                    <span className="text-gold font-semibold">{idx + 1}.</span>
-                    <span className="truncate">{h.text}</span>
-                  </a>
-                </li>
-              ))}
+            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-xs sm:text-[13px] text-text-secondary">
+              {tocHeadings.map((h, idx) => {
+                const displayHeading = h.text.replace(/^\d+[.)]\s*/, "").trim();
+                return (
+                  <li key={h.id} className="min-w-0">
+                    <a
+                      href={`#${h.id}`}
+                      className="hover:text-gold transition-colors flex items-baseline gap-2 leading-snug"
+                    >
+                      <span className="text-gold font-semibold shrink-0">{idx + 1}.</span>
+                      <span className="min-w-0 break-words">{displayHeading}</span>
+                    </a>
+                  </li>
+                );
+              })}
             </ol>
           </nav>
         )}

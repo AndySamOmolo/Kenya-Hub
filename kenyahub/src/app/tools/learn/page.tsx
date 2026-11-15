@@ -24,7 +24,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
 import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { INITIAL_RANDOM_WORDS } from "@/data/language-sources";
+import { INITIAL_RANDOM_WORDS, DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_ENTRIES } from "@/data/language-sources";
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 
@@ -194,7 +194,7 @@ export default function LearnPage() {
                 className="btn-outline text-xs sm:text-sm px-3 py-2 sm:px-3.5 sm:py-2.5"
               >
                 <Globe className="w-4 h-4 text-kenya-green-light" />
-                22-Language Translator
+                {ALL_DICT_METAS.length}-Language Translator ({TOTAL_DICTIONARY_ENTRIES.toLocaleString()} Words)
               </Link>
             </div>
           </div>
@@ -396,7 +396,7 @@ export default function LearnPage() {
 
                         <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
                           <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-kenya-green-light font-semibold">
-                            <BookOpen className="h-3 w-3" /> {lang.skills} modules · {lang.wordsCount} words
+                            <BookOpen className="h-3 w-3" /> {lang.skills} modules · {(DICT_META_MAP[lang.id]?.totalEntries || lang.wordsCount).toLocaleString()} dictionary & course words
                           </span>
                           <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-text-secondary">
                             <Users className="h-3 w-3 text-gold" /> {lang.speakers}

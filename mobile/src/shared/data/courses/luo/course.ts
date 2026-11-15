@@ -2288,7 +2288,7 @@ function getDholuoExampleSentence(luo: string, english: string, lessonId: string
 const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
   return {
     id: mod.moduleId,
-    title: `Unit ${mod.moduleNumber}: ${mod.title}`,
+    title: mod.title,
     description: mod.description,
     icon: MODULE_ICONS[mod.moduleId] || 'BookOpen',
     skills: mod.lessons.flatMap((lesson) => {
@@ -2419,7 +2419,7 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
 // Build Unit 9 from PHRASEBOOK_SECTIONS
 const PHRASEBOOK_UNIT: CourseUnit = {
   id: 'mod-9-phrasebook-dialogues',
-  title: 'Unit 9: Situational Phrasebook & Everyday Dialogues',
+  title: 'Situational Phrasebook & Everyday Dialogues',
   description:
     'Practical conversational Dholuo across greetings, household tasks, market shopping, health care, farming, and travel.',
   icon: 'MessageSquare',
@@ -2482,7 +2482,7 @@ const EXERCISE_SKILL_ICONS = [
 // Build Unit 10 from COURSE_EXERCISES
 const EXERCISES_UNIT: CourseUnit = {
   id: 'mod-10-handbook-exercises',
-  title: 'Unit 10: Translation & Grammar Practice Drills',
+  title: 'Translation & Grammar Practice Drills',
   description:
     'Comprehensive translation and morphology drills from the 1920 Handbook with model solutions and grammatical commentary.',
   icon: 'Target',
@@ -2634,7 +2634,7 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
 
   return {
     id: 'mod-11-oral-literature',
-    title: 'Unit 11: Dholuo Oral Literature — Proverbs, Riddles & Diction',
+    title: 'Dholuo Oral Literature — Proverbs, Riddles & Diction',
     description: 'Master classical Dholuo proverbs (Ngeche), evening riddles (Miero), and alliterative tongue twisters.',
     icon: 'Award',
     skills: [...proverbSkills, ...riddleSkills, ...twisterSkills],
@@ -2643,542 +2643,1132 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
 
 export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
   {
-    id: 'luo-unit-12-public-domain-corpus',
-    title: 'Unit 12: Traditional Naming (Juogi) & Homestead Expressions',
-    description: 'Master Dholuo time-of-day birth names (Juogi), agricultural expressions, and modern everyday phrases.',
-    icon: 'Sun',
-    skills: [
+    "id": "luo-unit-1",
+    "unitNumber": 1,
+    "title": "Traditional Naming (Juogi) & Homestead Expressions",
+    "description": "Master Dholuo time-of-day birth names (Juogi), agricultural expressions, and modern everyday phrases.",
+    "icon": "Sun",
+    "color": "#D4A843",
+    "skills": [
       {
-        id: 'luo-pd-corpus-12-1',
-        title: 'Time-of-Day & Seasonal Naming (Juogi)',
-        icon: 'Baby',
-        description: 'Learn how Dholuo personal names reflect the time of day, weather, and birth order.',
-        tips: 'Traditional Dholuo birth names (nying juogi) pair masculine O- prefixes with feminine A- prefixes according to the hour or season of birth (e.g., Okinyi / Akinyi for dawn, Ochieng’ / Achieng’ for midday sun, Otieno / Atieno for night).',
-        words: [
+        "id": "luo-pd-corpus-12-1",
+        "title": "Time-of-Day & Seasonal Naming (Juogi)",
+        "icon": "Baby",
+        "description": "Learn how Dholuo personal names reflect the time of day, weather, and birth order.",
+        "tips": "Traditional Dholuo birth names (nying juogi) pair masculine O- prefixes with feminine A- prefixes according to the hour or season of birth (e.g., Okinyi / Akinyi for dawn, Ochieng’ / Achieng’ for midday sun, Otieno / Atieno for night).",
+        "words": [
           {
-            target: 'Okinyi (m.) / Akinyi (f.)',
-            source: 'Born at dawn (6–10 a.m. — okinyi)',
-            pronunciation: 'o-kiny-i',
-            hint: 'Dholuo dawn birth name',
+            "target": "Okinyi (m.) / Akinyi (f.)",
+            "source": "Born at dawn (6–10 a.m. — okinyi)",
+            "pronunciation": "o-kiny-i",
+            "hint": "Dholuo dawn birth name"
           },
           {
-            target: 'Onyango (m.) / Anyango (f.)',
-            source: 'Born in the mid-morning sun (9–11 a.m.)',
-            pronunciation: 'ony-ang-o',
-            hint: 'Dholuo mid-morning birth name',
+            "target": "Onyango (m.) / Anyango (f.)",
+            "source": "Born in the mid-morning sun (9–11 a.m.)",
+            "pronunciation": "ony-ang-o",
+            "hint": "Dholuo mid-morning birth name"
           },
           {
-            target: "Ochieng' (m.) / Achieng' (f.)",
-            source: "Born when the midday sun shines fiercely (chieng')",
-            pronunciation: "och-ieng'",
-            hint: 'Dholuo midday birth name',
+            "target": "Ochieng' (m.) / Achieng' (f.)",
+            "source": "Born when the midday sun shines fiercely (chieng')",
+            "pronunciation": "och-ieng'",
+            "hint": "Dholuo midday birth name"
           },
           {
-            target: 'Odhiambo (m.) / Adhiambo (f.)',
-            source: 'Born in the late afternoon or evening (odhiambo)',
-            pronunciation: 'odh-iamb-o',
-            hint: 'Dholuo afternoon birth name',
+            "target": "Odhiambo (m.) / Adhiambo (f.)",
+            "source": "Born in the late afternoon or evening (odhiambo)",
+            "pronunciation": "odh-iamb-o",
+            "hint": "Dholuo afternoon birth name"
           },
           {
-            target: 'Otieno (m.) / Atieno (f.)',
-            source: 'Born at night (otieno)',
-            pronunciation: 'o-tie-no',
-            hint: 'Dholuo night birth name',
+            "target": "Otieno (m.) / Atieno (f.)",
+            "source": "Born at night (otieno)",
+            "pronunciation": "o-tie-no",
+            "hint": "Dholuo night birth name"
           },
           {
-            target: 'Opiyo / Apiyo & Odongo / Adongo',
-            source: 'First-born twin (piyo = quick) & Second-born twin',
-            pronunciation: 'o-pi-yo / o-dong-o',
-            hint: 'Dholuo twin birth names',
+            "target": "Opiyo / Apiyo & Odongo / Adongo",
+            "source": "First-born twin (piyo = quick) & Second-born twin",
+            "pronunciation": "o-pi-yo / o-dong-o",
+            "hint": "Dholuo twin birth names"
           },
           {
-            target: 'Okoth / Akoth & Ooro / Aoro',
-            source: 'Born during rain (koth) & Born during dry season (oro)',
-            pronunciation: 'o-koth / o-o-ro',
-            hint: 'Dholuo weather birth names',
+            "target": "Okoth / Akoth & Ooro / Aoro",
+            "source": "Born during rain (koth) & Born during dry season (oro)",
+            "pronunciation": "o-koth / o-o-ro",
+            "hint": "Dholuo weather birth names"
           },
           {
-            target: 'Odero / Adero & Okeyo / Akeyo',
-            source: 'Born during granary abundance (dero) & Born at harvest (keyo)',
-            pronunciation: 'o-de-ro / o-ke-yo',
-            hint: 'Dholuo harvest birth names',
+            "target": "Odero / Adero & Okeyo / Akeyo",
+            "source": "Born during granary abundance (dero) & Born at harvest (keyo)",
+            "pronunciation": "o-de-ro / o-ke-yo",
+            "hint": "Dholuo harvest birth names"
           }
         ],
-        sentences: [
-          { target: 'Otieno nonyuol gotieno.', source: 'Otieno was born at night.' },
-          { target: 'Akinyi nonyuol gokinyi.', source: 'Akinyi was born in the morning.' }
-        ],
-        authoredExercises: [
+        "sentences": [
           {
-            type: 'multiple_choice',
-            prompt: 'What is the English meaning of "Okinyi (m.) / Akinyi (f.)" in Dholuo?',
-            correctAnswer: 'Born at dawn (6–10 a.m. — okinyi)',
-            options: [
-              'Born at dawn (6–10 a.m. — okinyi)',
-              'Born in the mid-morning sun (9–11 a.m.)',
+            "target": "Otieno nonyuol gotieno.",
+            "source": "Otieno was born at night."
+          },
+          {
+            "target": "Akinyi nonyuol gokinyi.",
+            "source": "Akinyi was born in the morning."
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Okinyi (m.) / Akinyi (f.)\" in Dholuo?",
+            "correctAnswer": "Born at dawn (6–10 a.m. — okinyi)",
+            "options": [
+              "Born at dawn (6–10 a.m. — okinyi)",
+              "Born in the mid-morning sun (9–11 a.m.)",
               "Born when the midday sun shines fiercely (chieng')",
-              'Born in the late afternoon or evening (odhiambo)'
+              "Born in the late afternoon or evening (odhiambo)"
             ],
-            hint: 'okinyi = morning/dawn',
+            "hint": "okinyi = morning/dawn"
           },
           {
-            type: 'match_pairs',
-            prompt: 'Match each Dholuo birth name pair with its meaning:',
-            correctAnswer: 'Okinyi (m.) / Akinyi (f.): Born at dawn (6–10 a.m. — okinyi)',
-            pairs: [
-              { left: 'Okinyi (m.) / Akinyi (f.)', right: 'Born at dawn (6–10 a.m. — okinyi)' },
-              { left: 'Onyango (m.) / Anyango (f.)', right: 'Born in the mid-morning sun (9–11 a.m.)' },
-              { left: "Ochieng' (m.) / Achieng' (f.)", right: "Born when the midday sun shines fiercely (chieng')" },
-              { left: 'Odhiambo (m.) / Adhiambo (f.)', right: 'Born in the late afternoon or evening (odhiambo)' }
-            ],
+            "type": "match_pairs",
+            "prompt": "Match each Dholuo birth name pair with its meaning:",
+            "correctAnswer": "Okinyi (m.) / Akinyi (f.): Born at dawn (6–10 a.m. — okinyi)",
+            "pairs": [
+              {
+                "left": "Okinyi (m.) / Akinyi (f.)",
+                "right": "Born at dawn (6–10 a.m. — okinyi)"
+              },
+              {
+                "left": "Onyango (m.) / Anyango (f.)",
+                "right": "Born in the mid-morning sun (9–11 a.m.)"
+              },
+              {
+                "left": "Ochieng' (m.) / Achieng' (f.)",
+                "right": "Born when the midday sun shines fiercely (chieng')"
+              },
+              {
+                "left": "Odhiambo (m.) / Adhiambo (f.)",
+                "right": "Born in the late afternoon or evening (odhiambo)"
+              }
+            ]
           },
           {
-            type: 'fill_blank',
-            prompt: 'Complete the Dholuo name pair for "Born at night (otieno)": ___',
-            correctAnswer: 'Otieno (m.) / Atieno (f.)',
-            options: [
-              'Otieno (m.) / Atieno (f.)',
-              'Opiyo / Apiyo & Odongo / Adongo',
-              'Okinyi (m.) / Akinyi (f.)',
-              'Onyango (m.) / Anyango (f.)'
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo name pair for \"Born at night (otieno)\": ___",
+            "correctAnswer": "Otieno (m.) / Atieno (f.)",
+            "options": [
+              "Otieno (m.) / Atieno (f.)",
+              "Opiyo / Apiyo & Odongo / Adongo",
+              "Okinyi (m.) / Akinyi (f.)",
+              "Onyango (m.) / Anyango (f.)"
             ],
-            hint: 'otieno = night',
+            "hint": "otieno = night"
           }
-        ],
+        ]
       },
       {
-        id: 'luo-pd-corpus-12-2',
-        title: 'Homestead, Farming & Everyday Expressions',
-        icon: 'Home',
-        description: 'Practice conversational Dholuo expressions for homestead peace, farming, river crossings, and daily life.',
-        tips: 'Notice how imperative verbs like "Wach mos" (Speak slowly), "Maki kwer" (Take a hoe), and "Kuny rabuon mos" (Dig up the sweet potatoes carefully) use concise verb-object order.',
-        words: [
+        "id": "luo-pd-corpus-12-2",
+        "title": "Homestead, Farming & Everyday Expressions",
+        "icon": "Home",
+        "description": "Practice conversational Dholuo expressions for homestead peace, farming, river crossings, and daily life.",
+        "tips": "Notice how imperative verbs like \"Wach mos\" (Speak slowly), \"Maki kwer\" (Take a hoe), and \"Kuny rabuon mos\" (Dig up the sweet potatoes carefully) use concise verb-object order.",
+        "words": [
           {
-            target: "Dala wacho ang'o? — Dala oling'.",
-            source: 'What is the news of the homestead? — The homestead is peaceful.',
-            pronunciation: "da-la wach-o ang'-o da-la o-ling'",
-            hint: 'Mill-Hill (1920, p. 102)',
+            "target": "Dala wacho ang'o? — Dala oling'.",
+            "source": "What is the news of the homestead? — The homestead is peaceful.",
+            "pronunciation": "da-la wach-o ang'-o da-la o-ling'",
+            "hint": "Mill-Hill (1920, p. 102)"
           },
           {
-            target: 'Wach mos. We ruyo.',
-            source: 'Speak slowly. Do not hurry.',
-            pronunciation: 'wach mos we ru-yo',
-            hint: 'Mill-Hill (1920, p. 103)',
+            "target": "Wach mos. We ruyo.",
+            "source": "Speak slowly. Do not hurry.",
+            "pronunciation": "wach mos we ru-yo",
+            "hint": "Mill-Hill (1920, p. 103)"
           },
           {
-            target: 'Polo otimo luoch; luoch oyawore.',
-            source: 'The sky is cloudy; the clouds are clearing up.',
-            pronunciation: 'po-lo o-ti-mo luoch',
-            hint: 'Mill-Hill (1920, p. 104)',
+            "target": "Polo otimo luoch; luoch oyawore.",
+            "source": "The sky is cloudy; the clouds are clearing up.",
+            "pronunciation": "po-lo o-ti-mo luoch",
+            "hint": "Mill-Hill (1920, p. 104)"
           },
           {
-            target: 'Maki kwer, wadhi puodho.',
-            source: 'Take a hoe, let us go to the garden.',
-            pronunciation: 'ma-ki kwer wadh-i puodh-o',
-            hint: 'Mill-Hill (1920, p. 112)',
+            "target": "Maki kwer, wadhi puodho.",
+            "source": "Take a hoe, let us go to the garden.",
+            "pronunciation": "ma-ki kwer wadh-i puodh-o",
+            "hint": "Mill-Hill (1920, p. 112)"
           },
           {
-            target: 'Kuny rabuon mos, kik ipudhigi.',
-            source: 'Dig up the sweet potatoes carefully, do not cut them.',
-            pronunciation: 'kuny ra-buon mos kik i-pudh-i-gi',
-            hint: 'Mill-Hill (1920, p. 113)',
+            "target": "Kuny rabuon mos, kik ipudhigi.",
+            "source": "Dig up the sweet potatoes carefully, do not cut them.",
+            "pronunciation": "kuny ra-buon mos kik i-pudh-i-gi",
+            "hint": "Mill-Hill (1920, p. 113)"
           },
           {
-            target: "Aorani tut? D'wanyal yoro?",
-            source: 'Is this river deep? Can we wade across?',
-            pronunciation: "ao-ra-ni tut d'-wany-al yo-ro",
-            hint: 'Mill-Hill (1920, p. 115)',
+            "target": "Aorani tut? D'wanyal yoro?",
+            "source": "Is this river deep? Can we wade across?",
+            "pronunciation": "ao-ra-ni tut d'-wany-al yo-ro",
+            "hint": "Mill-Hill (1920, p. 115)"
           },
           {
-            target: 'oro pesa e simu',
-            source: 'Sending money on a mobile phone',
-            pronunciation: 'o-ro pe-sa e si-mu',
-            hint: 'Modern Dholuo expression',
+            "target": "oro pesa e simu",
+            "source": "Sending money on a mobile phone",
+            "pronunciation": "o-ro pe-sa e si-mu",
+            "hint": "Modern Dholuo expression"
           },
           {
-            target: "od thieth mar gweng'",
-            source: 'Community health dispensary / clinic',
-            pronunciation: "od thieth mar gweng'",
-            hint: 'Modern Dholuo healthcare term',
+            "target": "od thieth mar gweng'",
+            "source": "Community health dispensary / clinic",
+            "pronunciation": "od thieth mar gweng'",
+            "hint": "Modern Dholuo healthcare term"
           }
         ],
-        sentences: [
-          { target: 'Wach mos. We ruyo.', source: 'Speak slowly. Do not hurry.' },
-          { target: 'Maki kwer, wadhi puodho.', source: 'Take a hoe, let us go to the garden.' },
-          { target: 'Kuny rabuon mos, kik ipudhigi.', source: 'Dig up the sweet potatoes carefully, do not cut them.' }
+        "sentences": [
+          {
+            "target": "Wach mos. We ruyo.",
+            "source": "Speak slowly. Do not hurry."
+          },
+          {
+            "target": "Maki kwer, wadhi puodho.",
+            "source": "Take a hoe, let us go to the garden."
+          },
+          {
+            "target": "Kuny rabuon mos, kik ipudhigi.",
+            "source": "Dig up the sweet potatoes carefully, do not cut them."
+          }
         ],
-        authoredExercises: [
+        "authoredExercises": [
           {
-            type: 'multiple_choice',
-            prompt: 'What is the English meaning of "Dala wacho ang\'o? — Dala oling\'." in Dholuo?',
-            correctAnswer: 'What is the news of the homestead? — The homestead is peaceful.',
-            options: [
-              'What is the news of the homestead? — The homestead is peaceful.',
-              'Speak slowly. Do not hurry.',
-              'The sky is cloudy; the clouds are clearing up.',
-              'Take a hoe, let us go to the garden.'
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"Dala wacho ang'o? — Dala oling'.\" in Dholuo?",
+            "correctAnswer": "What is the news of the homestead? — The homestead is peaceful.",
+            "options": [
+              "What is the news of the homestead? — The homestead is peaceful.",
+              "Speak slowly. Do not hurry.",
+              "The sky is cloudy; the clouds are clearing up.",
+              "Take a hoe, let us go to the garden."
             ],
-            hint: "dala = homestead; oling' = is peaceful/quiet",
+            "hint": "dala = homestead; oling' = is peaceful/quiet"
           },
           {
-            type: 'match_pairs',
-            prompt: 'Match each Dholuo expression with its English meaning:',
-            correctAnswer: 'Wach mos. We ruyo.: Speak slowly. Do not hurry.',
-            pairs: [
-              { left: "Dala wacho ang'o? — Dala oling'.", right: 'What is the news of the homestead? — The homestead is peaceful.' },
-              { left: 'Wach mos. We ruyo.', right: 'Speak slowly. Do not hurry.' },
-              { left: 'Polo otimo luoch; luoch oyawore.', right: 'The sky is cloudy; the clouds are clearing up.' },
-              { left: 'Maki kwer, wadhi puodho.', right: 'Take a hoe, let us go to the garden.' }
-            ],
+            "type": "match_pairs",
+            "prompt": "Match each Dholuo expression with its English meaning:",
+            "correctAnswer": "Wach mos. We ruyo.: Speak slowly. Do not hurry.",
+            "pairs": [
+              {
+                "left": "Dala wacho ang'o? — Dala oling'.",
+                "right": "What is the news of the homestead? — The homestead is peaceful."
+              },
+              {
+                "left": "Wach mos. We ruyo.",
+                "right": "Speak slowly. Do not hurry."
+              },
+              {
+                "left": "Polo otimo luoch; luoch oyawore.",
+                "right": "The sky is cloudy; the clouds are clearing up."
+              },
+              {
+                "left": "Maki kwer, wadhi puodho.",
+                "right": "Take a hoe, let us go to the garden."
+              }
+            ]
           },
           {
-            type: 'fill_blank',
-            prompt: 'Complete the Dholuo sentence for "Dig up the sweet potatoes carefully, do not cut them.": ___',
-            correctAnswer: 'Kuny rabuon mos, kik ipudhigi.',
-            options: [
-              'Kuny rabuon mos, kik ipudhigi.',
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo sentence for \"Dig up the sweet potatoes carefully, do not cut them.\": ___",
+            "correctAnswer": "Kuny rabuon mos, kik ipudhigi.",
+            "options": [
+              "Kuny rabuon mos, kik ipudhigi.",
               "Aorani tut? D'wanyal yoro?",
               "Dala wacho ang'o? — Dala oling'.",
-              'Wach mos. We ruyo.'
+              "Wach mos. We ruyo."
             ],
-            hint: 'rabuon = sweet potatoes',
+            "hint": "rabuon = sweet potatoes"
           }
-        ],
+        ]
       }
-    ],
+    ]
   },
   {
-    id: 'luo-unit-13-open-datasets-modern',
-    title: 'Unit 13: Customary Institutions, Hobley (1903) 20 Kwero Totems & Classical Verbs',
-    description: 'Explore traditional Dholuo social institutions, the 20 clan totems (Kwero) recorded verbatim by C. W. Hobley (1903, p. 348) and Northcote (1907), and classical verb forms.',
-    icon: 'Globe',
-    skills: [
+    "id": "luo-unit-2",
+    "unitNumber": 2,
+    "title": "Customary Institutions, Hobley 20 Kwero Totems & Classical Verbs",
+    "description": "Explore traditional Dholuo social institutions, the 20 clan totems (Kwero) recorded verbatim by C. W. Hobley (1903, p. 348) and Northcote (1907), and classical verb forms.",
+    "icon": "Globe",
+    "color": "#D4A843",
+    "skills": [
       {
-        id: 'luo-open-dataset-13-1',
-        title: 'Customary Institutions & Hobley’s (1903) 20 Kwero Totems',
-        icon: 'Crown',
-        description: 'Learn Dholuo terms for traditional healers, bridewealth, taboos, and the 20 Ja-Luo Kwero totems in Tho-Luo recorded by C. W. Hobley (1903, p. 348).',
-        tips: 'C. W. Hobley (1903, pp. 326, 348) records 20 Ja-Luo Kwero totems in Tho-Luo: Nyang (crocodile), Ndiek (hyæna), Okwach (leopard), Bīm (baboon), Ongner (Cercopithecus monkey), Ogwang (wild cat — eaten by Gemi, Lego & Sakwa), Buwem (jackal), Achut-th (vulture), Agako (crow), Otenga (kite), Ngnech (Nile monitor), Nyelo (python — sacred ancestor of Kadimu), Gori gori (mongoose), Kumnēr (rock hyrax), Upuku (tortoise), Kuru (colobus), Imbirri (wart hog), Ogwan (frog), Iwang (crested crane — preserved by all except Gemi), and Arumtich (ground hornbill).',
-        words: [
+        "id": "luo-open-dataset-13-1",
+        "title": "Customary Institutions & Hobley’s 20 Kwero Totems",
+        "icon": "Crown",
+        "description": "Learn Dholuo terms for traditional healers, bridewealth, taboos, and the 20 Ja-Luo Kwero totems in Tho-Luo recorded by C. W. Hobley (1903, p. 348).",
+        "tips": "C. W. Hobley (1903, pp. 326, 348) records 20 Ja-Luo Kwero totems in Tho-Luo: Nyang (crocodile), Ndiek (hyæna), Okwach (leopard), Bīm (baboon), Ongner (Cercopithecus monkey), Ogwang (wild cat — eaten by Gemi, Lego & Sakwa), Buwem (jackal), Achut-th (vulture), Agako (crow), Otenga (kite), Ngnech (Nile monitor), Nyelo (python — sacred ancestor of Kadimu), Gori gori (mongoose), Kumnēr (rock hyrax), Upuku (tortoise), Kuru (colobus), Imbirri (wart hog), Ogwan (frog), Iwang (crested crane — preserved by all except Gemi), and Arumtich (ground hornbill).",
+        "words": [
           {
-            target: 'Ajuoga (pl. Ajuoge)',
-            source: 'Diviner / traditional healer',
-            pronunciation: 'a-juo-ga',
-            hint: 'Northcote (1907, p. 64)',
+            "target": "Ajuoga (pl. Ajuoge)",
+            "source": "Diviner / traditional healer",
+            "pronunciation": "a-juo-ga",
+            "hint": "Northcote (1907, p. 64)"
           },
           {
-            target: 'Keny / Dho keny',
-            source: 'Traditional bridewealth cattle settlement',
-            pronunciation: 'keny / dho keny',
-            hint: 'Northcote (1907, p. 62)',
+            "target": "Keny / Dho keny",
+            "source": "Traditional bridewealth cattle settlement",
+            "pronunciation": "keny / dho keny",
+            "hint": "Northcote (1907, p. 62)"
           },
           {
-            target: 'Chira / Kwero',
-            source: 'Ritual taboo / clan totem prohibition (causing skin eruption if eaten)',
-            pronunciation: 'chi-ra / kwe-ro',
-            hint: 'Hobley (1903, pp. 347–348) & Northcote (1907)',
+            "target": "Chira / Kwero",
+            "source": "Ritual taboo / clan totem prohibition (causing skin eruption if eaten)",
+            "pronunciation": "chi-ra / kwe-ro",
+            "hint": "Hobley (1903, pp. 347–348) & Northcote (1907)"
           },
           {
-            target: 'Nyelo (Kadimu ancestor) • Ngnech • Upuku',
-            source: 'Python (sacred ancestor of Kadimu) • Nile monitor lizard • Tortoise',
-            pronunciation: 'nye-lo / ng-nech / u-pu-ku',
-            hint: 'Hobley (1903, pp. 326, 348 — Ja-Luo Kwero totems #11, #12, #15)',
+            "target": "Nyelo (Kadimu ancestor)",
+            "source": "Python",
+            "pronunciation": "nyelo"
           },
           {
-            target: 'Nyang • Ndiek • Okwach • Buwem',
-            source: 'Crocodile • Hyæna • Leopard • Jackal (Ja-Luo Kwero totems #1–3, #7)',
-            pronunciation: 'nyang / ndiek / o-kwach / bu-wem',
-            hint: 'Hobley (1903, p. 348)',
+            "target": "Ngnech",
+            "source": "Nile monitor lizard",
+            "pronunciation": "ngnech"
           },
           {
-            target: 'Bīm • Ongner • Kuru • Ogwang',
-            source: 'Baboon • Cercopithecus monkey • Colobus monkey • Wild cat (eaten by Gemi, Lego & Sakwa)',
-            pronunciation: 'bim / ong-ner / ku-ru / o-gwang',
-            hint: 'Hobley (1903, p. 348 — Ja-Luo Kwero totems #4–6, #16)',
+            "target": "Upuku",
+            "source": "Tortoise",
+            "pronunciation": "upuku"
           },
           {
-            target: 'Achut-th • Agako • Otenga • Iwang • Arumtich',
-            source: 'Vulture • Crow • Kite • Crested crane (preserved except in Gemi) • Ground hornbill',
-            pronunciation: 'a-chut-th / a-ga-ko / o-te-nga / i-wang / a-rum-tich',
-            hint: 'Hobley (1903, p. 348 — Ja-Luo Kwero totems #8–10, #19–20)',
+            "target": "Nyang",
+            "source": "Crocodile",
+            "pronunciation": "nyang"
           },
           {
-            target: 'Gori gori • Kumnēr • Imbirri • Ogwan',
-            source: 'Mongoose • Rock hyrax • Wart hog • Frog (Ja-Luo Kwero totems #13–14, #17–18)',
-            pronunciation: 'go-ri go-ri / kum-ner / im-bir-ri / o-gwan',
-            hint: 'Hobley (1903, p. 348)',
+            "target": "Ndiek",
+            "source": "Hyæna",
+            "pronunciation": "ndiek"
+          },
+          {
+            "target": "Okwach",
+            "source": "Leopard",
+            "pronunciation": "okwach"
+          },
+          {
+            "target": "Buwem",
+            "source": "Jackal",
+            "pronunciation": "buwem"
+          },
+          {
+            "target": "Bīm",
+            "source": "Baboon",
+            "pronunciation": "bīm"
+          },
+          {
+            "target": "Ongner",
+            "source": "Cercopithecus monkey",
+            "pronunciation": "ongner"
+          },
+          {
+            "target": "Kuru",
+            "source": "Colobus monkey",
+            "pronunciation": "kuru"
+          },
+          {
+            "target": "Ogwang",
+            "source": "Wild cat",
+            "pronunciation": "ogwang"
+          },
+          {
+            "target": "Achut-th",
+            "source": "Vulture",
+            "pronunciation": "achut-th"
+          },
+          {
+            "target": "Agako",
+            "source": "Crow",
+            "pronunciation": "agako"
+          },
+          {
+            "target": "Otenga",
+            "source": "Kite",
+            "pronunciation": "otenga"
+          },
+          {
+            "target": "Iwang",
+            "source": "Crested crane (preserved except in Gemi)",
+            "pronunciation": "iwang"
+          },
+          {
+            "target": "Arumtich",
+            "source": "Ground hornbill",
+            "pronunciation": "arumtich"
+          },
+          {
+            "target": "Gori gori",
+            "source": "Mongoose",
+            "pronunciation": "gori-gori"
+          },
+          {
+            "target": "Kumnēr",
+            "source": "Rock hyrax",
+            "pronunciation": "kumnēr"
+          },
+          {
+            "target": "Imbirri",
+            "source": "Wart hog",
+            "pronunciation": "imbirri"
+          },
+          {
+            "target": "Ogwan",
+            "source": "Frog",
+            "pronunciation": "ogwan"
           }
         ],
-        sentences: [
-          { target: 'Ajuoga thiedho jatuo.', source: 'The traditional healer treats the patient.' },
-          { target: 'Keny riwo anyuola ariyo.', source: 'Marriage unites two families.' }
-        ],
-        authoredExercises: [
+        "sentences": [
           {
-            type: 'multiple_choice',
-            prompt: 'In C. W. Hobley (1903, pp. 326, 348), which Ja-Luo tribe near the mouth of the River Nzoia regards the python ("Nyelo") as its sacred common ancestor and offers annual sacrifices to it?',
-            correctAnswer: 'The Kadimu tribe',
-            options: [
-              'The Kadimu tribe',
-              'The Gemi tribe',
-              'The Karungu tribe',
-              'The Nyakach tribe'
-            ],
-            hint: 'Originally a Bantu tribe that adopted the Nilotic Ja-Luo language (Hobley 1903, pp. 326, 348)',
+            "target": "Ajuoga thiedho jatuo.",
+            "source": "The traditional healer treats the patient."
           },
           {
-            type: 'match_pairs',
-            prompt: 'Match each Tho-Luo Kwero totem recorded by Hobley (1903, p. 348) with its English meaning:',
-            correctAnswer: 'Nyelo: Python (sacred ancestor of Kadimu)',
-            pairs: [
-              { left: 'Nyelo', right: 'Python (sacred ancestor of Kadimu)' },
-              { left: 'Iwang', right: 'Crested crane (Balearica gibbericeps)' },
-              { left: 'Arumtich', right: 'Ground hornbill' },
-              { left: 'Kumnēr', right: 'Rock hyrax' }
-            ],
-          },
-          {
-            type: 'fill_blank',
-            prompt: 'Complete the Dholuo term for "Traditional bridewealth cattle settlement": ___',
-            correctAnswer: 'Keny / Dho keny',
-            options: [
-              'Keny / Dho keny',
-              'Ajuoga (pl. Ajuoge)',
-              'Chira / Kwero',
-              'Nyelo'
-            ],
-            hint: 'Northcote (1907, p. 62)',
+            "target": "Keny riwo anyuola ariyo.",
+            "source": "Marriage unites two families."
           }
         ],
+        "authoredExercises": [
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Tho-Luo Kwero totem recorded by Hobley (1903, p. 348) with its English meaning:",
+            "correctAnswer": "Nyelo: Python (sacred ancestor of Kadimu)",
+            "pairs": [
+              {
+                "left": "Nyelo",
+                "right": "Python (sacred ancestor of Kadimu)"
+              },
+              {
+                "left": "Iwang",
+                "right": "Crested crane (Balearica gibbericeps)"
+              },
+              {
+                "left": "Arumtich",
+                "right": "Ground hornbill"
+              },
+              {
+                "left": "Kumnēr",
+                "right": "Rock hyrax"
+              }
+            ]
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo term for \"Traditional bridewealth cattle settlement\": ___",
+            "correctAnswer": "Keny / Dho keny",
+            "options": [
+              "Keny / Dho keny",
+              "Ajuoga (pl. Ajuoge)",
+              "Chira / Kwero",
+              "Nyelo"
+            ],
+            "hint": "Northcote (1907, p. 62)"
+          }
+        ]
       },
       {
-        id: 'luo-open-dataset-13-2',
-        title: 'Hobley (1903) Origin Narratives, Charms, Cosmology & Classical Clauses',
-        icon: 'Zap',
-        description: 'Master Apōdtho and Ramogi origin traditions, Chief Ugada’s charms, chieno tassels, mikayi succession, and Johnston (1902) / Mill-Hill (1920) verb clauses.',
-        tips: 'Hobley (1903, pp. 326–331, 345–359) records Apōdtho carving two milking/urine bowls from the Were tree, the Simbi abūr crater lake ("abūr" = hole/pit), the married woman’s chieno tassel of tuoro aloe fibre, Chief Ugada’s 4 omeni wrist sticks, Chieng (Sun & Deity) and Polo (sky/heavens), the Isira blood-feud taboo, and first-wife (mikayi) chieftainship succession.',
-        words: [
+        "id": "luo-open-dataset-13-2",
+        "title": "Hobley Origin Narratives, Charms, Cosmology & Classical Clauses",
+        "icon": "Zap",
+        "description": "Master Apōdtho and Ramogi origin traditions, Chief Ugada’s charms, chieno tassels, mikayi succession, and Johnston (1902) / Mill-Hill (1920) verb clauses.",
+        "tips": "Hobley (1903, pp. 326–331, 345–359) records Apōdtho carving two milking/urine bowls from the Were tree, the Simbi abūr crater lake (\"abūr\" = hole/pit), the married woman’s chieno tassel of tuoro aloe fibre, Chief Ugada’s 4 omeni wrist sticks, Chieng (Sun & Deity) and Polo (sky/heavens), the Isira blood-feud taboo, and first-wife (mikayi) chieftainship succession.",
+        "words": [
           {
-            target: 'Apōdtho • Ramogi • Were',
-            source: 'First ancestor of the Ja-Luo • Founder of Kavirondo settlements at Ramogi Hill • Tree from which Apōdtho carved two milking bowls',
-            pronunciation: 'a-pod-tho / ra-mo-gi / we-re',
-            hint: 'Hobley (1903, pp. 326–331)',
+            "target": "Apōdtho",
+            "source": "First ancestor of the Ja-Luo",
+            "pronunciation": "apōdtho"
           },
           {
-            target: 'Chindu • Anyango • Rajoki • Jimbo • Uyua • Mbunga',
-            source: 'Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and Kanyamwa traditions',
-            pronunciation: 'chin-du / a-nya-ngo / ra-jo-ki / jim-bo / u-yu-a / m-bu-nga',
-            hint: 'Hobley (1903, pp. 327–331 — Chindu cf. Luganda Kintu, p. 332)',
+            "target": "Ramogi",
+            "source": "Founder of Kavirondo settlements at Ramogi Hill",
+            "pronunciation": "ramogi"
           },
           {
-            target: 'Chieno (mar tuoro) • Omeni • Thako • Nya-Luo',
-            source: 'Married woman’s 6–8 in. aloe-fibre tassel • Chief Ugada’s 4 wooden wrist sticks • Grandmother’s 3-holed iron charm • Ancient yellow beads',
-            pronunciation: 'chie-no / tuo-ro / o-me-ni / tha-ko / nya-luo',
-            hint: 'Hobley (1903, pp. 345–346, 350–351)',
+            "target": "Were",
+            "source": "Tree from which Apōdtho carved two milking bowls",
+            "pronunciation": "were"
           },
           {
-            target: 'Chieng • Polo • Simbi abūr • Loka',
-            source: 'Sun & Supreme Deity • Heavens / daylight sky • Crater lake in Kalachonyo (abūr = hole/pit) • On the other side (south of Kavirondo Gulf)',
-            pronunciation: 'chieng / po-lo / sim-bi a-bur / lo-ka',
-            hint: 'Hobley (1903, pp. 329, 349–350, 358)',
+            "target": "Chindu • Anyango • Rajoki • Jimbo • Uyua • Mbunga",
+            "source": "Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and",
+            "pronunciation": "chin-du / a-nya-ngo / ra-jo-ki / jim-bo / u-yu-a / m-bu-nga",
+            "hint": "Hobley (1903, pp. 327–331 — Chindu cf. Luganda Kintu, p. 332)"
           },
           {
-            target: 'Isira • Mikayi (Umoli, Agola → Odera Ulalo & Sejenyi vs. Kakwari → Agina)',
-            source: '24-hour fatal blood-feud meal taboo • First-wife chieftainship succession law',
-            pronunciation: 'i-si-ra / mi-ka-yi',
-            hint: 'Hobley (1903, pp. 357–359)',
+            "target": "Chieno (mar tuoro)",
+            "source": "Married woman’s 6–8 in. aloe-fibre tassel",
+            "pronunciation": "chieno"
           },
           {
-            target: 'Winyo orengo • Go bul',
-            source: 'The birds flew away • Beat the drum',
-            pronunciation: 'winy-o o-reng-o / go bul',
-            hint: 'Johnston (1902, pp. 926–935) & Mill-Hill (1920)',
+            "target": "Omeni",
+            "source": "Chief Ugada’s 4 wooden wrist sticks",
+            "pronunciation": "omeni"
           },
           {
-            target: 'Wawacho • Ang’eyo • Akia',
-            source: 'We say / We speak • I know • I do not know',
-            pronunciation: 'wa-wach-o / ang-e-yo / a-kia',
-            hint: 'Johnston (1902): Wawaci, Añeyo, Akia',
+            "target": "Thako",
+            "source": "Grandmother’s 3-holed iron charm",
+            "pronunciation": "thako"
           },
           {
-            target: 'Adhiyo • Abiro',
-            source: 'I went / I am going • I am coming',
-            pronunciation: 'a-dhi-yo / a-bi-ro',
-            hint: 'Johnston (1902): Adio & Standard Dholuo',
+            "target": "Nya-Luo",
+            "source": "Ancient yellow beads",
+            "pronunciation": "nya-luo"
+          },
+          {
+            "target": "Chieng",
+            "source": "Sun & Supreme Deity",
+            "pronunciation": "chieng"
+          },
+          {
+            "target": "Polo",
+            "source": "Heavens / daylight sky",
+            "pronunciation": "polo"
+          },
+          {
+            "target": "Simbi abūr",
+            "source": "Crater lake in Kalachonyo (abūr = hole/pit)",
+            "pronunciation": "simbi-abūr"
+          },
+          {
+            "target": "Loka",
+            "source": "On the other side (south of Kavirondo Gulf)",
+            "pronunciation": "loka"
+          },
+          {
+            "target": "Isira",
+            "source": "24-hour fatal blood-feud meal taboo",
+            "pronunciation": "isira"
+          },
+          {
+            "target": "Mikayi",
+            "source": "First-wife chieftainship succession law",
+            "pronunciation": "mikayi"
+          },
+          {
+            "target": "Winyo orengo",
+            "source": "The birds flew away",
+            "pronunciation": "winyo-orengo"
+          },
+          {
+            "target": "Go bul",
+            "source": "Beat the drum",
+            "pronunciation": "go-bul"
+          },
+          {
+            "target": "Wawacho",
+            "source": "We say / We speak",
+            "pronunciation": "wawacho"
+          },
+          {
+            "target": "Ang’eyo",
+            "source": "I know",
+            "pronunciation": "angeyo"
+          },
+          {
+            "target": "Akia",
+            "source": "I do not know",
+            "pronunciation": "akia"
+          },
+          {
+            "target": "Adhiyo",
+            "source": "I went / I am going",
+            "pronunciation": "adhiyo"
+          },
+          {
+            "target": "Abiro",
+            "source": "I am coming",
+            "pronunciation": "abiro"
           }
         ],
-        sentences: [
-          { target: 'Go bul.', source: 'Beat the drum.' },
-          { target: 'Winyo orengo.', source: 'The birds flew away.' }
+        "sentences": [
+          {
+            "target": "Go bul.",
+            "source": "Beat the drum."
+          },
+          {
+            "target": "Winyo orengo.",
+            "source": "The birds flew away."
+          }
         ],
-        authoredExercises: [
+        "authoredExercises": [
           {
-            type: 'multiple_choice',
-            prompt: 'In C. W. Hobley (1903, p. 359), when Chief Umoli’s eldest son Odera Ulalo (by first wife Agola) died, who succeeded to the chieftainship under Ja-Luo customary law?',
-            correctAnswer: 'Sejenyi (younger full brother by first wife Agola, ahead of older half-brother Agina by second wife Kakwari)',
-            options: [
-              'Sejenyi (younger full brother by first wife Agola, ahead of older half-brother Agina by second wife Kakwari)',
-              'Agina (older half-brother by second wife Kakwari)',
-              'Ugada of Korando',
-              'Gori Kogalo of Kanyamwa'
-            ],
-            hint: 'Chieftainship passes strictly to the sons of the first-married wife (Hobley 1903, p. 359)',
+            "type": "match_pairs",
+            "prompt": "Match each Ja-Luo term recorded by C. W. Hobley (1903) with its meaning:",
+            "correctAnswer": "Chieng: Both the Sun and the Supreme Deity (p. 358)",
+            "pairs": [
+              {
+                "left": "Chieng",
+                "right": "Both the Sun and the Supreme Deity (p. 358)"
+              },
+              {
+                "left": "Polo",
+                "right": "The daylight sky / heavens (p. 358)"
+              },
+              {
+                "left": "Chieno (tuoro)",
+                "right": "Married woman’s white aloe-fibre tassel (pp. 350–351)"
+              },
+              {
+                "left": "Simbi abūr",
+                "right": "Crater lake in Kalachonyo (abūr = hole/pit, p. 350)"
+              }
+            ]
           },
           {
-            type: 'match_pairs',
-            prompt: 'Match each Ja-Luo term recorded by C. W. Hobley (1903) with its meaning:',
-            correctAnswer: 'Chieng: Both the Sun and the Supreme Deity (p. 358)',
-            pairs: [
-              { left: 'Chieng', right: 'Both the Sun and the Supreme Deity (p. 358)' },
-              { left: 'Polo', right: 'The daylight sky / heavens (p. 358)' },
-              { left: 'Chieno (tuoro)', right: 'Married woman’s white aloe-fibre tassel (pp. 350–351)' },
-              { left: 'Simbi abūr', right: 'Crater lake in Kalachonyo (abūr = hole/pit, p. 350)' }
-            ],
-          },
-          {
-            type: 'fill_blank',
-            prompt: 'Complete the Dholuo expression for "I do not know": ___',
-            correctAnswer: 'Akia',
-            options: [
-              'Akia',
+            "type": "fill_blank",
+            "prompt": "Complete the Dholuo expression for \"I do not know\": ___",
+            "correctAnswer": "Akia",
+            "options": [
+              "Akia",
               "Ang'eyo",
-              'Go bul',
-              'Winyo orengo'
+              "Go bul",
+              "Winyo orengo"
             ],
-            hint: 'Johnston (1902)',
+            "hint": "Johnston (1902)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-3",
+    "unitNumber": 3,
+    "title": "Ch. XVIII Ja-luo (Nyifwa) Ethnography & Set 3 Vocabulary",
+    "description": "Explore Chapter XVIII Ja-luo ethnography (Chieng sun worship, Nyaluo jasper beads, Uvino smiths, Kiviri ordeal, Chief Odua's prophecy) and Set 3 vocabulary & phonetic footnotes [-11], [-12], [-13] (pp. 926–935).",
+    "icon": "Sun",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-johnston-1902-set3-skill",
+        "title": "Set 3 Ja-luo Vocabulary, Phonetic Footnotes & Chapter XVIII",
+        "icon": "BookOpen",
+        "description": "Master verified Set 3 Ja-luo headwords, footnotes [-11]–[-13], and Chapter XVIII cultural terms.",
+        "tips": "Johnston's three phonetic footnotes to Set 3 (pp. 928, 933, 934) explain palatal stop articulation in 1902 Ja-luo: [-11] Retc ('Fish') is pronounced 'Retch'; [-12] Ratc ('Bad') often sounds like 'Raty'; and [-13] in Aciemo ('I eat'), 'The c in Ja-luo is pronounced very like ty.'",
+        "words": [
+          {
+            "target": "Retc",
+            "source": "Fish",
+            "pronunciation": "retc"
+          },
+          {
+            "target": "Ratc",
+            "source": "Bad",
+            "pronunciation": "ratc"
+          },
+          {
+            "target": "Aciemo",
+            "source": "I eat",
+            "pronunciation": "aciemo"
+          },
+          {
+            "target": "Ñama ñongo",
+            "source": "Great man",
+            "pronunciation": "ñama-ñongo"
+          },
+          {
+            "target": "Kalīni",
+            "source": "Ground-nut",
+            "pronunciation": "kalīni"
+          },
+          {
+            "target": "Nyapuñ lak",
+            "source": "Tooth, molar",
+            "pronunciation": "nyapuñ-lak"
+          },
+          {
+            "target": "Nyaluógono",
+            "source": "Tooth, canine",
+            "pronunciation": "nyaluógono"
+          },
+          {
+            "target": "Ñutu",
+            "source": "Woman, young",
+            "pronunciation": "ñutu"
+          },
+          {
+            "target": "Ukanamī",
+            "source": "I give not",
+            "pronunciation": "ukanamī"
+          },
+          {
+            "target": "Chieng",
+            "source": "Sun-god",
+            "pronunciation": "chieng"
+          },
+          {
+            "target": "Kiketi & Nyaluo (1 cow per bead)",
+            "source": "Blue glass & Maragolia jasper beads",
+            "pronunciation": "kiketi-nyaluo"
+          },
+          {
+            "target": "Dema",
+            "source": "Wicker fish-trap",
+            "pronunciation": "dema"
+          },
+          {
+            "target": "Yothetth (Uvino)",
+            "source": "Blacksmith caste",
+            "pronunciation": "yothetth"
+          },
+          {
+            "target": "Jamkingo",
+            "source": "Secret society",
+            "pronunciation": "jamkingo"
+          },
+          {
+            "target": "Kiviri",
+            "source": "Boiling-gruel ordeal",
+            "pronunciation": "kiviri"
+          },
+          {
+            "target": "Owiti / Awiti & Opio / Apio",
+            "source": "Threshold & twin names",
+            "pronunciation": "owiti"
           }
         ],
+        "sentences": [
+          {
+            "target": "An nakel — Atugo — Watimo — Wawaci — Añeyo — Ukanamī.",
+            "source": "I bring — I dance — We make — We say — I know — I give not (Johnston 1902, Set 3, pp. 933–935)."
+          }
+        ]
       }
-    ],
+    ]
+  },
+  {
+    "id": "luo-unit-4",
+    "unitNumber": 4,
+    "title": "Complete Line-by-Line Ethnographic & Legal Audit",
+    "description": "Exhaustive line-by-line study of G. A. S. Northcote's 1907 JRAI monograph (Vol. 37, pp. 58–66): Wadilai/Acholi/Aluri/Dinka kinship, 1883 cattle plague diet & dowry shift, 3-goat tassel fine, 3-rupee hut tax, full gala dress, 3 ft 6 in. × 6 ft buffalo shields, semi-feudal council & passive secession, individual shamba plots, 2 ft raised × 5 ft × 3 ft wicker granaries, Case Study A–F succession, sun-god wedding offering & first dinner rite, 6-day vs. 3-day wailing & recumbent burial, 3 court/medical cases, rain-maker's reed ritual & Indian shopkeeper letter, 5 fishing methods, 8-stringed harp, grandfather litigation, and 9 Kisumu occupations.",
+    "icon": "BookOpen",
+    "color": "#D4A843",
+    "skills": [
+      {
+        "id": "luo-u14-northcote-1907-skill-1",
+        "title": "Northcote: Naming, Shamba & Askari Law, Succession Case A–F &",
+        "icon": "Scale",
+        "description": "Master all 12 indigenous terms, naming traditions, customary land/succession rules, and ethnographic records from G. A. S. Northcote (1907, pp. 58–66).",
+        "tips": "Northcote (1907, p. 62) records the 4 time-of-day birth names (onyango, oching, odiambo, otieno) alongside 3 hereditary nicknames: obele (\"the man who owned much mtama [millet]\"), oliech (\"the man who killed an elephant\"), and obonyo (\"the man like a locust\").",
+        "words": [
+          {
+            "target": "Jaluo",
+            "source": "Nilotic Kavirondo (Northcote 1907, p. 58)",
+            "pronunciation": "ja-lu-o",
+            "hint": "Northcote (1907, JRAI Vol. 37, p. 58)"
+          },
+          {
+            "target": "onyango",
+            "source": "morning",
+            "pronunciation": "onyango"
+          },
+          {
+            "target": "oching",
+            "source": "noon",
+            "pronunciation": "oching"
+          },
+          {
+            "target": "odiambo",
+            "source": "afternoon",
+            "pronunciation": "odiambo"
+          },
+          {
+            "target": "otieno",
+            "source": "night",
+            "pronunciation": "otieno"
+          },
+          {
+            "target": "obele",
+            "source": "much mtama",
+            "pronunciation": "obele"
+          },
+          {
+            "target": "oliech",
+            "source": "killed an elephant",
+            "pronunciation": "oliech"
+          },
+          {
+            "target": "obonyo",
+            "source": "like a locust",
+            "pronunciation": "obonyo"
+          },
+          {
+            "target": "shamba",
+            "source": "individual plot",
+            "pronunciation": "shamba"
+          },
+          {
+            "target": "askari",
+            "source": "retainer/page",
+            "pronunciation": "askari"
+          },
+          {
+            "target": "mtama",
+            "source": "millet",
+            "pronunciation": "mtama"
+          },
+          {
+            "target": "Bwana",
+            "source": "magistrate",
+            "pronunciation": "bwana"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Onyango nonyuol gokinyi, Oching odiechieng, Odiambo godhiambo, to Otieno gotieno.",
+            "source": "Onyango was born in the morning, Oching at noon, Odiambo in the afternoon, and Otieno at night (Northcote 1907, p. 62)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "luo-unit-5",
+    "unitNumber": 5,
+    "title": "Modern Dholuo Verbs, Broadcast & Proverbs",
+    "description": "Core Dholuo action verbs, Dala FM civic vocabulary, and oral proverbs from Kencorpus, Google SMOL/GATITOS, and The Thiomi Dataset",
+    "icon": "📻",
+    "color": "#0EA5E9",
+    "skills": [
+      {
+        "id": "luo-open-skill-1",
+        "title": "Core Action Verbs & Civic Terms",
+        "icon": "⚡",
+        "description": "Essential Dholuo verbs and public life vocabulary from Kencorpus and GATITOS",
+        "grammarTip": "Most Dholuo transitive verbs in the citation form end in -o (e.g., chamo 'to eat', chulo 'to pay', doyo 'to weed', fwenyo 'to discover').",
+        "culturalNote": "Compiled from Kencorpus/KenCorpus_text & KenPOS (Wanjawa et al. 2022/2023, CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), and The Thiomi Dataset (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "chamo",
+            "source": "To eat",
+            "pronunciation": "cha-mo"
+          },
+          {
+            "target": "chielo",
+            "source": "To fry or roast",
+            "pronunciation": "chie-lo"
+          },
+          {
+            "target": "chulo",
+            "source": "To pay or compensate",
+            "pronunciation": "chu-lo"
+          },
+          {
+            "target": "chopo",
+            "source": "To arrive or reach",
+            "pronunciation": "cho-po"
+          },
+          {
+            "target": "choko",
+            "source": "To gather or collect",
+            "pronunciation": "cho-ko"
+          },
+          {
+            "target": "doyo",
+            "source": "To weed a farm",
+            "pronunciation": "do-yo"
+          },
+          {
+            "target": "dwoko",
+            "source": "To return or answer",
+            "pronunciation": "dwo-ko"
+          },
+          {
+            "target": "fwenyo",
+            "source": "To discover or recognize",
+            "pronunciation": "fwe-nyo"
+          },
+          {
+            "target": "Japuonjre",
+            "source": "Student or pupil",
+            "pronunciation": "ja-puo-njre"
+          },
+          {
+            "target": "Jaod Bura",
+            "source": "Member of Parliament",
+            "pronunciation": "ja-od bu-ra"
+          },
+          {
+            "target": "Jofwambo",
+            "source": "Journalists / news reporters",
+            "pronunciation": "jo-fwa-mbo"
+          },
+          {
+            "target": "Migao mar Pith gi Pur",
+            "source": "Ministry of Agriculture and Livestock",
+            "pronunciation": "mi-ga-o mar pith gi pur"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Adiera en kwiri, to adiera ok tow.",
+            "source": "Truth is medicine, and truth never rots."
+          },
+          {
+            "target": "Alot michayo ema tieko kuon.",
+            "source": "The despised vegetable is the one that finishes the ugali."
+          },
+          {
+            "target": "Sigana mar opuk gi apuoyo.",
+            "source": "The story of the tortoise and the hare."
+          }
+        ]
+      },
+        {
+        "id": "luo-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Dholuo (Luo) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), Af",
+        "words": [
+                {
+                        "target": "Ingima, Omera? — Angima, Omera, to in?",
+                        "source": "How are you, my friend? — I am well, my friend, and you?",
+                        "pronunciation": "ingima, omera? — angima, omera, to in?"
+                },
+                {
+                        "target": "Inindo nade? — Anindo maber (marach).",
+                        "source": "How did you sleep? — I slept well (unwell).",
+                        "pronunciation": "inindo nade? — anindo maber marach."
+                },
+                {
+                        "target": "Iriyo nade? — Ariyo maber (marach).",
+                        "source": "How have you spent the day? — I spent the day well (badly).",
+                        "pronunciation": "iriyo nade? — ariyo maber marach."
+                },
+                {
+                        "target": "Misawa",
+                        "source": "Peace! Hello! Good morning/evening! (also Okwe)",
+                        "pronunciation": "misawa"
+                },
+                {
+                        "target": "Inindi",
+                        "source": "Good-bye!",
+                        "pronunciation": "inindi"
+                },
+                {
+                        "target": "Tich mar programu / Migao mar kodi",
+                        "source": "Function / Computer program routine",
+                        "pronunciation": "teech mahr proh-grah-moo"
+                },
+                {
+                        "target": "Dongruok mar piny",
+                        "source": "National development / Progress",
+                        "pronunciation": "dohng-roo-ohk mahr peeny"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Kiet e puodho",
+                        "source": "The farmer produces excrement in the field",
+                        "pronunciation": "japur chweyo kata pidho kiet e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Lω e puodho",
+                        "source": "The farmer produces ground in the field",
+                        "pronunciation": "japur chweyo kata pidho l e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Obω e puodho",
+                        "source": "The farmer produces lungs in the field",
+                        "pronunciation": "japur chweyo kata pidho ob e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Cūl e puodho",
+                        "source": "The farmer produces penis in the field",
+                        "pronunciation": "japur chweyo kata pidho cūl e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Loño e puodho",
+                        "source": "The farmer produces testicles in the field",
+                        "pronunciation": "japur chweyo kata pidho loño e puodho"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ee, wan gi Kiet mang'eny",
+                        "source": "Yes, we have plenty of excrement"
+                },
+                {
+                        "target": "Bende in gi Lω kawuono?",
+                        "source": "Do you have ground today?"
+                },
+                {
+                        "target": "Ee, wan gi Lω mang'eny",
+                        "source": "Yes, we have plenty of ground"
+                },
+                {
+                        "target": "Bende in gi Obω kawuono?",
+                        "source": "Do you have lungs today?"
+                },
+                {
+                        "target": "Ee, wan gi Obω mang'eny",
+                        "source": "Yes, we have plenty of lungs"
+                },
+                {
+                        "target": "Bende in gi Cūl kawuono?",
+                        "source": "Do you have penis today?"
+                },
+                {
+                        "target": "Ee, wan gi Cūl mang'eny",
+                        "source": "Yes, we have plenty of penis"
+                },
+                {
+                        "target": "Bende in gi Loño kawuono?",
+                        "source": "Do you have testicles today?"
+                },
+                {
+                        "target": "Ee, wan gi Loño mang'eny",
+                        "source": "Yes, we have plenty of testicles"
+                },
+                {
+                        "target": "Bende in gi Nyaluώgono kawuono?",
+                        "source": "Do you have „ canine today?"
+                },
+                {
+                        "target": "Ee, wan gi Nyaluώgono mang'eny",
+                        "source": "Yes, we have plenty of „ canine"
+                },
+                {
+                        "target": "Bende in gi Nyapuñ lak kawuono?",
+                        "source": "Do you have „ molar today?"
+                }
+        ]
+},
+        {
+        "id": "luo-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Dholuo (Luo) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), Af",
+        "words": [
+                {
+                        "target": "Japur chweyo kata pidho Nyaluώgono e puodho",
+                        "source": "The farmer produces „ canine in the field",
+                        "pronunciation": "japur chweyo kata pidho nyalugono e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Nyapuñ lak e puodho",
+                        "source": "The farmer produces „ molar in the field",
+                        "pronunciation": "japur chweyo kata pidho nyapuñ lak e puodho"
+                },
+                {
+                        "target": "Japur chweyo kata pidho Ωwωk e puodho",
+                        "source": "The farmer produces twins in the field",
+                        "pronunciation": "japur chweyo kata pidho wk e puodho"
+                },
+                {
+                        "target": "Nengo mar Dapi e chiro en adi?",
+                        "source": "What is the price of water pot at the market?",
+                        "pronunciation": "nengo mar dapi e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar odi e chiro en adi?",
+                        "source": "What is the price of thy house at the market?",
+                        "pronunciation": "nengo mar odi e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar ode e chiro en adi?",
+                        "source": "What is the price of his house at the market?",
+                        "pronunciation": "nengo mar ode e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar Yo e chiro en adi?",
+                        "source": "What is the price of road at the market?",
+                        "pronunciation": "nengo mar yo e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar Gogo e chiro en adi?",
+                        "source": "What is the price of fishing net at the market?",
+                        "pronunciation": "nengo mar gogo e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar Agulu e chiro en adi?",
+                        "source": "What is the price of cooking pot at the market?",
+                        "pronunciation": "nengo mar agulu e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar Bug theth e chiro en adi?",
+                        "source": "What is the price of the bellows at the market?",
+                        "pronunciation": "nengo mar bug theth e chiro en adi"
+                },
+                {
+                        "target": "Nengo mar Puodhono e chiro en adi?",
+                        "source": "What is the price of that garden at the market?",
+                        "pronunciation": "nengo mar puodhono e chiro en adi"
+                },
+                {
+                        "target": "Rit Kiet maber ne ngima",
+                        "source": "Take care of excrement for good health",
+                        "pronunciation": "rit kiet maber ne ngima"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ee, wan gi Nyapuñ lak mang'eny",
+                        "source": "Yes, we have plenty of „ molar"
+                },
+                {
+                        "target": "Bende in gi Ωwωk kawuono?",
+                        "source": "Do you have twins today?"
+                },
+                {
+                        "target": "Ee, wan gi Ωwωk mang'eny",
+                        "source": "Yes, we have plenty of twins"
+                },
+                {
+                        "target": "Nengo mar Buk e chiro en adi?",
+                        "source": "What is the price of bellows at the market?"
+                },
+                {
+                        "target": "Nengo mar Pacho e chiro en adi?",
+                        "source": "What is the price of at home at the market?"
+                },
+                {
+                        "target": "Nengo mar Aluor e chiro en adi?",
+                        "source": "What is the price of a fence at the market?"
+                },
+                {
+                        "target": "Nengo mar Tong'gweng' e chiro en adi?",
+                        "source": "What is the price of boundary at the market?"
+                },
+                {
+                        "target": "Nengo mar Koma e chiro en adi?",
+                        "source": "What is the price of my chair at the market?"
+                },
+                {
+                        "target": "Nengo mar Athecha e chiro en adi?",
+                        "source": "What is the price of my arrow at the market?"
+                },
+                {
+                        "target": "Nengo mar oda e chiro en adi?",
+                        "source": "What is the price of my house at the market?"
+                },
+                {
+                        "target": "Nengo mar Dapi e chiro en adi?",
+                        "source": "What is the price of water pot at the market?"
+                },
+                {
+                        "target": "Nengo mar odi e chiro en adi?",
+                        "source": "What is the price of thy house at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
 
-export const JOHNSTON_1902_COURSE_EXTENSION: CourseUnit = {
-  id: "luo-unit-johnston-1902-jaluo-set3",
-  title: "Unit 11: Sir Harry Johnston (1902) Ch. XVIII Ja-luo (Nyifwa) Ethnography & Set 3 Vocabulary (pp. 756–795, 926–935)",
-  description: "Explore Chapter XVIII Ja-luo ethnography (Chieng sun worship, Nyaluo jasper beads, Uvino smiths, Kiviri ordeal, Chief Odua's prophecy) and Set 3 vocabulary & phonetic footnotes [-11], [-12], [-13] (pp. 926–935).",
-  icon: "Sun",
-  skills: [
-    {
-      id: "luo-johnston-1902-set3-skill",
-      title: "Set 3 Ja-luo Vocabulary, Phonetic Footnotes & Chapter XVIII Ethnography",
-      icon: "BookOpen",
-      description: "Master verified Set 3 Ja-luo headwords, footnotes [-11]–[-13], and Chapter XVIII cultural terms.",
-      tips: "Johnston's three phonetic footnotes to Set 3 (pp. 928, 933, 934) explain palatal stop articulation in 1902 Ja-luo: [-11] Retc ('Fish') is pronounced 'Retch'; [-12] Ratc ('Bad') often sounds like 'Raty'; and [-13] in Aciemo ('I eat'), 'The c in Ja-luo is pronounced very like ty.'",
-      words: [
-        {
-          target: "Retc (fn. [-11]: pronounced 'Retch') • Ratc (fn. [-12]: often sounds like 'Raty') • Aciemo (fn. [-13]: c pronounced like ty)",
-          source: "Fish • Bad • I eat (with Johnston's 3 phonetic footnotes, pp. 928, 933, 934)",
-          pronunciation: "retch / raty / a-tye-mo",
-          hint: "Johnston (1902, Vol. II, Set 3, pp. 928, 933, 934)"
-        },
-        {
-          target: "Ñama ñongo • Kalīni • Nyapuñ lak • Nyaluógono • Ñutu • Ukanamī",
-          source: "Great man • Ground-nut • Tooth, molar • Tooth, canine • Woman, young • I give not",
-          pronunciation: "nga-ma ngo-ngo / ka-li-ni / nya-pung lak / nya-luo-go-no / ngu-tu / u-ka-na-mi",
-          hint: "Johnston (1902, Vol. II, Set 3, pp. 929–934)"
-        },
-        {
-          target: "Chieng • Kiketi & Nyaluo (1 cow per bead) • Dema • Yothetth (Uvino) • Jamkingo • Kiviri • Owiti / Awiti & Opio / Apio",
-          source: "Sun-god • Blue glass & Maragolia jasper beads • Wicker fish-trap • Blacksmith caste • Secret society • Boiling-gruel ordeal • Threshold & twin names",
-          pronunciation: "chieng / ki-ke-ti / nya-luo / de-ma / yo-thetth u-vi-no / ja-mki-ngo / ki-vi-ri",
-          hint: "Johnston (1902, Vol. II, Ch. XVIII, pp. 780–795)"
-        }
-      ],
-      sentences: [
-        {
-          target: "An nakel — Atugo — Watimo — Wawaci — Añeyo — Ukanamī.",
-          source: "I bring — I dance — We make — We say — I know — I give not (Johnston 1902, Set 3, pp. 933–935)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Sir Harry Johnston's Vocabulary Set 3 (The Uganda Protectorate, Vol. II, 1902, pp. 929, 932, 934), what do 'Ñama ñongo', 'Nyapuñ lak', 'Nyaluógono', and 'Ukanamī' mean in Ja-luo?",
-          correctAnswer: "'Ñama ñongo' = Great man, 'Nyapuñ lak' = Molar tooth, 'Nyaluógono' = Canine tooth, and 'Ukanamī' = I give not",
-          options: [
-            "'Ñama ñongo' = Great man, 'Nyapuñ lak' = Molar tooth, 'Nyaluógono' = Canine tooth, and 'Ukanamī' = I give not",
-            "'Ñama ñongo' = Young woman, 'Nyapuñ lak' = Ground-nut, 'Nyaluógono' = Fish, and 'Ukanamī' = I eat",
-            "'Ñama ñongo' = Our town, 'Nyapuñ lak' = Buttocks, 'Nyaluógono' = Wart-hog, and 'Ukanamī' = Plenty",
-            "'Ñama ñongo' = Blacksmith, 'Nyapuñ lak' = Fish-trap, 'Nyaluógono' = Jasper bead, and 'Ukanamī' = Sun-god"
-          ],
-          hint: "See Johnston (1902, Vol. II, Set 3, pp. 929, 932, 934)"
-        }
-      ]
-    }
-  ]
-};
-
-// Complete Line-by-Line Curriculum Supplement for G. A. S. Northcote (1907), "The Nilotic Kavirondo" (JRAI Vol. 37, pp. 58-66)
-export const NORTHCOTE_1907_COURSE_EXTENSION: CourseUnit = {
-  id: 'luo-u14-northcote-complete-audit',
-  title: 'Unit 14: G. A. S. Northcote (1907) Complete Line-by-Line Ethnographic & Legal Audit (JRAI Vol. 37, pp. 58–66)',
-  description: 'Exhaustive line-by-line study of G. A. S. Northcote\'s 1907 JRAI monograph (Vol. 37, pp. 58–66): Wadilai/Acholi/Aluri/Dinka kinship, 1883 cattle plague diet & dowry shift, 3-goat tassel fine, 3-rupee hut tax, full gala dress, 3 ft 6 in. × 6 ft buffalo shields, semi-feudal council & passive secession, individual shamba plots, 2 ft raised × 5 ft × 3 ft wicker granaries, Case Study A–F succession, sun-god wedding offering & first dinner rite, 6-day vs. 3-day wailing & recumbent burial, 3 court/medical cases, rain-maker\'s reed ritual & Indian shopkeeper letter, 5 fishing methods, 8-stringed harp, grandfather litigation, and 9 Kisumu occupations.',
-  icon: 'BookOpen',
-  skills: [
-    {
-      id: 'luo-u14-northcote-1907-skill-1',
-      title: 'Northcote (1907, pp. 58–66): Naming, Shamba & Askari Law, Succession Case A–F & Sun-God Offerings',
-      icon: 'Scale',
-      description: 'Master all 12 indigenous terms, naming traditions, customary land/succession rules, and ethnographic records from G. A. S. Northcote (1907, pp. 58–66).',
-      tips: 'Northcote (1907, p. 62) records the 4 time-of-day birth names (onyango, oching, odiambo, otieno) alongside 3 hereditary nicknames: obele ("the man who owned much mtama [millet]"), oliech ("the man who killed an elephant"), and obonyo ("the man like a locust").',
-      words: [
-        {
-          target: 'Jaluo (proper tribal endonym; kin to Dinka, Aluri & Acholi near Wadilai)',
-          source: 'Nilotic Kavirondo (Northcote 1907, p. 58)',
-          pronunciation: 'ja-lu-o',
-          hint: 'Northcote (1907, JRAI Vol. 37, p. 58)'
-        },
-        {
-          target: 'onyango (morning) • oching (noon) • odiambo (afternoon) • otieno (night)',
-          source: 'The 4 time-of-day birth names recorded by Northcote (1907, p. 62)',
-          pronunciation: 'o-nya-ngo / o-ching / o-dia-mbo / o-tie-no',
-          hint: 'Northcote (1907, JRAI Vol. 37, p. 62)'
-        },
-        {
-          target: 'obele ("much mtama") • oliech ("killed an elephant") • obonyo ("like a locust")',
-          source: 'The 3 hereditary nicknames recorded by Northcote (1907, p. 62)',
-          pronunciation: 'o-be-le / o-li-ech / o-bo-nyo',
-          hint: 'Northcote (1907, JRAI Vol. 37, p. 62)'
-        },
-        {
-          target: 'shamba (individual plot) • askari (retainer/page) • mtama (millet) • Bwana (magistrate)',
-          source: 'Adopted Swahili legal, agricultural, and administrative terms in Northcote (1907, pp. 60, 62, 64)',
-          pronunciation: 'sha-mba / as-ka-ri / m-ta-ma / bwa-na',
-          hint: 'Northcote (1907, JRAI Vol. 37, pp. 60, 62, 64)'
-        }
-      ],
-      sentences: [
-        {
-          target: 'Onyango nonyuol gokinyi, Oching odiechieng, Odiambo godhiambo, to Otieno gotieno.',
-          source: 'Onyango was born in the morning, Oching at noon, Odiambo in the afternoon, and Otieno at night (Northcote 1907, p. 62).'
-        }
-      ],
-      authoredExercises: [
-        {
-          type: 'multiple_choice',
-          prompt: 'In G. A. S. Northcote\'s "The Nilotic Kavirondo" (JRAI Vol. 37, 1907, p. 62), what do the three hereditary Jaluo nicknames "obele", "oliech", and "obonyo" mean?',
-          correctAnswer: '"obele" = the man who owned much mtama (millet), "oliech" = the man who killed an elephant, and "obonyo" = the man like a locust',
-          options: [
-            '"obele" = the man who owned much mtama (millet), "oliech" = the man who killed an elephant, and "obonyo" = the man like a locust',
-            '"obele" = born in the morning, "oliech" = born at noon, and "obonyo" = born at night',
-            '"obele" = rain-maker, "oliech" = blacksmith, and "obonyo" = fisherman',
-            '"obele" = first wife, "oliech" = second wife, and "obonyo" = retainer'
-          ],
-          hint: 'See Northcote (1907, p. 62)'
-        }
-      ]
-    }
-  ]
-};
 export const LUO_UNITS: CourseUnit[] = [
   ...GRAMMAR_MODULE_UNITS,
   PHRASEBOOK_UNIT,
   EXERCISES_UNIT,
   ORAL_LITERATURE_UNIT,
   ...PUBLIC_DOMAIN_DATASET_UNITS,
-  JOHNSTON_1902_COURSE_EXTENSION,
-  NORTHCOTE_1907_COURSE_EXTENSION,
-];
+].map((u, idx) => ({
+  ...u,
+  id: `luo-unit-${idx + 1}`,
+  unitNumber: idx + 1,
+}));
 
 export default LUO_COURSE;

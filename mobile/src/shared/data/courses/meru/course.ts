@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Meru (Kĩmĩĩrũ) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const MERU_CONFIG: LanguageConfig = {
   "id": "meru",
@@ -22,16 +17,22 @@ export const MERU_CONFIG: LanguageConfig = {
   "sources": [
     "hobley-akamba-ethnology-1910",
     "johnston-bantu-1919",
-    "open-web-swadesh-comparative"
+    "open-web-swadesh-comparative",
+    "champion-atharaka-1912",
+    "mberia-kitharaka-loanwords-2004",
+    "dundas-bantu-laws-1915",
+    "payne-pacchiarotti-bosire-diversity-2016"
   ]
 };
 
 export const MERU_UNITS: CourseUnit[] = [
   {
     "id": "meru-unit-1",
-    "title": "Unit 1: Greetings, 16 Noun Classes, Numerals & Mount Kenya Culture",
+    "unitNumber": 1,
+    "title": "Greetings, 16 Noun Classes, Numerals & Mount Kenya Culture",
     "description": "Master Kĩmĩĩrũ, Kĩtharaka, and Kîembu greetings, noun-class concords, numbers 1–10 (Johnston 1919 #11–11a), and everyday verbs.",
     "icon": "BookOpen",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-greetings-nouns",
@@ -211,7 +212,7 @@ export const MERU_UNITS: CourseUnit[] = [
       },
       {
         "id": "meru-numbers-proverbs",
-        "title": "Numerals 1–10 (Johnston 1919 #11a), Dahl’s Law Verbs & Proverbs",
+        "title": "Numerals 1–10, Dahl’s Law Verbs & Proverbs",
         "icon": "Hash",
         "description": "Count from 1 to 10 across Meru, Tharaka, Chuka, and Embu and learn Mount Kenya Bantu proverbs.",
         "tips": "Sir Harry Johnston (1919, Vol. I, p. 107) records the numerals of Meru (#11a) and Embu/Chuka/Mwimbe/Tharaka (#11): imwe (1), iiri (2), ithatu (3), inya (4), ithano (5), ithanthatu (6), mũgwanja (7), inyanya (8), kenda (9), ikũmi (10).",
@@ -389,9 +390,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Users",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-family-kinship-kinship-elders-2",
@@ -658,9 +661,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Scale",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-numbers-measures-cardinals-ordinals-3",
@@ -846,50 +851,42 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Sekondi",
             "source": "Second (time unit)",
-            "pronunciation": "se-kondi",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "se-kondi"
           },
           {
             "target": "Mī-rōnggo ī-gīrī",
             "source": "Twenty",
-            "pronunciation": "mi-ronggo i-giri",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "mi-ronggo i-giri"
           },
           {
             "target": "Mī-rōnggo ī-tātū",
             "source": "Thirty",
-            "pronunciation": "mi-ronggo i-tatu",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "mi-ronggo i-tatu"
           },
           {
             "target": "Mī-rōnggo ī-nā",
             "source": "Forty",
-            "pronunciation": "mi-ronggo i-na",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "mi-ronggo i-na"
           },
           {
             "target": "Mī-rōnggo ī-tāno",
             "source": "Fifty",
-            "pronunciation": "mi-ronggo i-tano",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "mi-ronggo i-tano"
           },
           {
             "target": "I-gāna; ma-gāna",
             "source": "Hundred",
-            "pronunciation": "i-gana",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "i-gana"
           },
           {
             "target": "Ngīrī; ma-ngīrī",
             "source": "Thousand",
-            "pronunciation": "ngi-ri",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "ngi-ri"
           },
           {
             "target": "-ōthē",
             "source": "All",
-            "pronunciation": "othe",
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
+            "pronunciation": "othe"
           }
         ],
         "sentences": [
@@ -1000,9 +997,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Tractor",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-food-agriculture-staple-foods-cookery-4",
@@ -1262,9 +1261,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "PawPrint",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-nature-wildlife-land-sky-water-5",
@@ -1276,11 +1277,13 @@ export const MERU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "rũũji (rũĩ)",
-            "source": "River"
+            "source": "River",
+            "pronunciation": "rũũji"
           },
           {
             "target": "Rũũji / Rũĩ / Rũũyĩ",
-            "source": "Water"
+            "source": "Water",
+            "pronunciation": "rũũji"
           },
           {
             "target": "riũa",
@@ -1309,7 +1312,8 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
-            "source": "Hello"
+            "source": "Hello",
+            "pronunciation": "muuga"
           },
           {
             "target": "mweri (pl. mĩeri)",
@@ -1522,9 +1526,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "User",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-body-health-anatomy-senses-6",
@@ -1536,7 +1542,8 @@ export const MERU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "rũrĩmĩ (pl. ndĩmĩ)",
-            "source": "Tongue, language"
+            "source": "Tongue, language",
+            "pronunciation": "rũrĩmĩ"
           },
           {
             "target": "Riitho (pl. Meetho)",
@@ -1802,9 +1809,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Compass",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-verbs-grammar-action-verbs-7",
@@ -1840,11 +1849,13 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "target": "kũaa (-aa) / kũnenga",
-            "source": "To give"
+            "source": "To give",
+            "pronunciation": "kũaa"
           },
           {
             "target": "Njĩtagwa",
-            "source": "My name is"
+            "source": "My name is",
+            "pronunciation": "njĩtagwa"
           },
           {
             "target": "kuona (-ona)",
@@ -2064,9 +2075,11 @@ export const MERU_UNITS: CourseUnit[] = [
   },
   {
     "id": "meru-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Meru (Kĩmĩĩrũ) built directly from C. W. Hobley (1910), Arthur M. Champion (1912), Hon. Charles Dundas (1915), and Sir Harry H. Johnston (1919).",
     "icon": "Map",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-time-calendar-seasons-months-8",
@@ -2078,7 +2091,8 @@ export const MERU_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Njuraĩ (NJR)",
-            "source": "July (Month 7)"
+            "source": "July (Month 7)",
+            "pronunciation": "njuraĩ"
           },
           {
             "target": "mũthenya",
@@ -2204,44 +2218,37 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Kiumia (KIU)",
             "source": "Sunday (Day of the week)",
-            "pronunciation": "kiu-mia",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "kiu-mia"
           },
           {
             "target": "Muramuko (MRA)",
             "source": "Monday (Day of the week)",
-            "pronunciation": "mu-ra-mu-ko",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "mu-ra-mu-ko"
           },
           {
             "target": "Wairi (WAI)",
             "source": "Tuesday (Day of the week)",
-            "pronunciation": "wai-ri",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "wai-ri"
           },
           {
             "target": "Wethatu (WET)",
             "source": "Wednesday (Day of the week)",
-            "pronunciation": "wetha-tu",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "wetha-tu"
           },
           {
             "target": "Wena (WEN)",
             "source": "Thursday (Day of the week)",
-            "pronunciation": "we-na",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "we-na"
           },
           {
             "target": "Wetano (WTN)",
             "source": "Friday (Day of the week)",
-            "pronunciation": "we-ta-no",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "we-ta-no"
           },
           {
             "target": "Jumamosi (JUM)",
             "source": "Saturday (Day of the week)",
-            "pronunciation": "ju-ma-mo-si",
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-mo-si"
           },
           {
             "target": "Njuraĩ (NJR)",
@@ -2329,10 +2336,12 @@ export const MERU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "meru-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "meru-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Meru (Kĩmĩĩrũ) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-pd-corpus-9-1",
@@ -2466,44 +2475,37 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Kī-shīī",
             "source": "Womb",
-            "pronunciation": "ki-shii",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ki-shii"
           },
           {
             "target": "Mū-gūrra",
             "source": "Woman",
-            "pronunciation": "mu-gurra",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "mu-gurra"
           },
           {
             "target": "Mā-ī, Ro-e",
             "source": "Water",
-            "pronunciation": "ma-i ro-e",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ma-i ro-e"
           },
           {
             "target": "Mā-zigūma",
             "source": "Spring water",
-            "pronunciation": "ma-ziguma",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ma-ziguma"
           },
           {
             "target": "N-twmōi",
             "source": "Tail",
-            "pronunciation": "n-twmoi",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "n-twmoi"
           },
           {
             "target": "Siyare",
             "source": "Stick",
-            "pronunciation": "si-ya-re",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "si-ya-re"
           },
           {
             "target": "Kī-rāma",
             "source": "Spear",
-            "pronunciation": "ki-rama",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ki-rama"
           }
         ],
         "sentences": [
@@ -2565,10 +2567,12 @@ export const MERU_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "meru-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "meru-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Meru (Kĩmĩĩrũ) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#16A34A",
     "skills": [
       {
         "id": "meru-open-dataset-10-1",
@@ -2580,50 +2584,42 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Mū-ūmba",
             "source": "Song",
-            "pronunciation": "mu-umba",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "mu-umba"
           },
           {
             "target": "N-jīwa",
             "source": "Pigeon",
-            "pronunciation": "n-jiwa",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "n-jiwa"
           },
           {
             "target": "Mami",
             "source": "Mother",
-            "pronunciation": "ma-mi",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ma-mi"
           },
           {
             "target": "ma- N-kīma",
             "source": "Monkey",
-            "pronunciation": "ma n-kima",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ma n-kima"
           },
           {
             "target": "ma- N-gare",
             "source": "Leopard",
-            "pronunciation": "ma n-gare",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ma n-gare"
           },
           {
             "target": "M-būta",
             "source": "Hunger",
-            "pronunciation": "m-buta",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "m-buta"
           },
           {
             "target": "I-thanwa",
             "source": "Hoe",
-            "pronunciation": "i-thanwa",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "i-thanwa"
           },
           {
             "target": "Ki-songua",
             "source": "Heel",
-            "pronunciation": "ki-songua",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ki-songua"
           }
         ],
         "sentences": [
@@ -2692,50 +2688,42 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Ki-hīa",
             "source": "Goat (he)",
-            "pronunciation": "ki-hia",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ki-hia"
           },
           {
             "target": "N-kuā",
             "source": "Ghost",
-            "pronunciation": "n-kua",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "n-kua"
           },
           {
             "target": "Gi-thaka",
             "source": "Forest",
-            "pronunciation": "gi-thaka",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "gi-thaka"
           },
           {
             "target": "Ṅ-korora",
             "source": "Fear",
-            "pronunciation": "ng-korora",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (Mw.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ng-korora"
           },
           {
             "target": "Baba, Ba-ba, Ba-va",
             "source": "Father",
-            "pronunciation": "ba-ba ba-ba ba-va",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ba-ba ba-ba ba-va"
           },
           {
             "target": "Ci-eri",
             "source": "Face, forehead",
-            "pronunciation": "ci-eri",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ci-eri"
           },
           {
             "target": "Mū-ranggo",
             "source": "Door",
-            "pronunciation": "mu-ranggo",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "mu-ranggo"
           },
           {
             "target": "Rū-sena",
             "source": "Country",
-            "pronunciation": "ru-sena",
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "pronunciation": "ru-sena"
           }
         ],
         "sentences": [
@@ -2795,146 +2783,463 @@ export const MERU_UNITS: CourseUnit[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "meru-unit-11",
+    "unitNumber": 11,
+    "title": "Kĩtharaka Loanword Phonology & Atharaka Ethnography",
+    "description": "Master Prof. Kithaka wa Mberia's (2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) analysis of Kĩtharaka borrowed words (7 vowels, /β, ð, ɣ/, Dahl's Law, n-propping of /d/, and prefix reanalysis) alongside Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) Atharaka age-grades, smithy, and 14 clans.",
+    "icon": "BookOpen",
+    "color": "#16A34A",
+    "skills": [
+      {
+        "id": "meru-kitharaka-loanword-phonology-mberia-2004",
+        "title": "Kĩtharaka Loanword Phonology & Dahl's Law",
+        "icon": "Sparkles",
+        "description": "Learn how Kĩtharaka adapts Swahili and English loanwords across Examples (1)–(18) in Kithaka wa Mberia (2004).",
+        "tips": "In Kĩtharaka (Mberia 2004, pp. 45–57), foreign /p, b, f, v/ become /β/ (moβira, βaði, βurana) except [b] after Class 9/10 N- (mbuŋgɛ, mbureki); /k/ voices to /ɣ/ before a voiceless consonant via Dahl's Law (moɣatɛ < mkatɛ, karaɣita < træktə); and foreign /d/ is propped with /n/ to form [nd] (ndawa, nderesa, ndasita).",
+        "words": [
+          {
+            "target": "moβira (< mpira)",
+            "source": "ball",
+            "pronunciation": "moira"
+          },
+          {
+            "target": "βaði (< pasi)",
+            "source": "iron box",
+            "pronunciation": "aði"
+          },
+          {
+            "target": "moβukɔ (< mfukɔ)",
+            "source": "bag/pocket",
+            "pronunciation": "mouk"
+          },
+          {
+            "target": "βurana (< fulana)",
+            "source": "vest/undershirt",
+            "pronunciation": "urana"
+          },
+          {
+            "target": "βaisikiri (< baiskɛli)",
+            "source": "bicycle",
+            "pronunciation": "aisikiri"
+          },
+          {
+            "target": "βetɛrɔri (< petrəl)",
+            "source": "petrol",
+            "pronunciation": "etrri"
+          },
+          {
+            "target": "mbuŋgɛ (< buŋgɛ)",
+            "source": "parliament",
+            "pronunciation": "mbuŋg"
+          },
+          {
+            "target": "mbureki (< breɪk)",
+            "source": "brake",
+            "pronunciation": "mbureki"
+          },
+          {
+            "target": "mbɔksi (< bɔks) | ðimo (< simu)",
+            "source": "box (Ex. 2: [b] after N-) | telephone",
+            "pronunciation": "mbksi-ðimo"
+          },
+          {
+            "target": "mɛða (< mɛza)",
+            "source": "table",
+            "pronunciation": "mða"
+          },
+          {
+            "target": "ða: (< sa:)",
+            "source": "hour/watch",
+            "pronunciation": "ða"
+          },
+          {
+            "target": "monaði (< mnazi)",
+            "source": "coconut tree",
+            "pronunciation": "monaði"
+          },
+          {
+            "target": "mosɛðɔ (< mtʃɛzɔ)",
+            "source": "game (Ex. 6: /s, z/ → /ð/)",
+            "pronunciation": "mosð"
+          },
+          {
+            "target": "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka:",
+            "source": "bread & tractor vs. pen, motorcar & school (/k/ retained)",
+            "pronunciation": "mo-ɣa-tɛ / ka-ra-ɣi-ta / ka-ra-mu / mo-tu-kaa / su-ku-ru",
+            "hint": "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 50–51, Ex. 8–9)"
+          },
+          {
+            "target": "ndawa (< dawa)",
+            "source": "medicine",
+            "pronunciation": "ndawa"
+          },
+          {
+            "target": "nderesa (< dirisha)",
+            "source": "window",
+            "pronunciation": "nderesa"
+          },
+          {
+            "target": "ndasita (< dʌstə)",
+            "source": "duster",
+            "pronunciation": "ndasita"
+          },
+          {
+            "target": "ndiŋgiri (< digri:) | duka → ruka (Cl. 11) → pl. nduka (Cl. 10)",
+            "source": "degree | shop → shops",
+            "pronunciation": "ndiŋgiri-duka-ruka-pl"
+          },
+          {
+            "target": "sanduku → esanduku (Cl. 5)",
+            "source": "box",
+            "pronunciation": "sanduku-esanduku"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Moɣatɛ na караmu irĩ mɛða-inĩ",
+            "source": "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða)"
+          }
+        ]
+      },
+      {
+        "id": "meru-atharaka-ethnography-champion-1912",
+        "title": "Atharaka Age-Grades, Mutialu Smithy, Customary Law & 14 Clans",
+        "icon": "Shield",
+        "description": "Explore Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) ethnography of the Atharaka along the Tana (Kilaluma) River.",
+        "tips": "Champion (1912, pp. 72–89) documents the 5 male grades (Karna, Kaegi, Ntheka/Ngoromo, Ntheka Nguru, Kisungi/Mundu Mukuru), 6 female grades (Karna, Kali, Idika [pl. Matika], Mwiki, Mukaa/Mubiki, Mwekuru), the Mutialu smithy (kianda), the 5th-night death rite Thela Luku, and all 14 Atharaka clans.",
+        "words": [
+          {
+            "target": "Male Grades: Karna → Kaegi → Ntheka/Ngoromo (Mbabu & Mkilamana) →",
+            "source": "Complete Atharaka male and female life-stage grades and circumcision-year sets (pp. 72–73)",
+            "pronunciation": "male-grades-karna-kaegi",
+            "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 72–73)"
+          },
+          {
+            "target": "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle),",
+            "source": "Complete blacksmithing terminology at Mutialu in Atharaka",
+            "pronunciation": "mutialu-smithy-longo",
+            "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 77–78)"
+          },
+          {
+            "target": "Thela Luku",
+            "source": "5th-night burial purification, p. 85",
+            "pronunciation": "thela-luku"
+          },
+          {
+            "target": "Chiama",
+            "source": "Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo, pp. 86–87",
+            "pronunciation": "chiama"
+          },
+          {
+            "target": "14 Atharaka Clans (pp. 88–89): Utonga, Kandi, Mululu, Nyaga, Mbula",
+            "source": "Complete table of 14 Atharaka clans and Plate X material artifacts",
+            "pronunciation": "14-atharaka-clans-utonga",
+            "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 88–90 & Plate X)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Akuru ya Chiama marĩ Ithembo-inĩ",
+            "source": "The elders of the Chiama council are at the sacred grove (Ithembo)"
+          }
+        ]
+      },
+{
+        "id": "meru-open-datasets-thiomi",
+        "title": "Mother-Tongue Literacy, Farming & Community Life",
+        "icon": "Database",
+        "description": "Practice contemporary Kĩmĩĩrũ (Meru) sentences from the Thiomi Dataset (94,933 approved pairs, CC-BY-4.0) and African Next Voices Kenya.",
+        "culturalNote": "The Thiomi Dataset (Mutisya, Mugane et al. 2026, CC-BY-4.0) includes 94,933 expert-validated English–Kĩmĩĩrũ sentence pairs alongside 5,453 benchmark pairs in thiomi-5k.",
+        "grammarTip": "In Kĩmĩĩrũ, Class 2 human plural nouns take prefix a- (aana bontheethu 'all our children') and concord prefix ba-/a- on verbs.",
+        "words": [
+                {
+                        "target": "Aana bontheethu",
+                        "source": "All our children",
+                        "pronunciation": "ah-ah-nah boh-ntheh-eh-thoo"
+                },
+                {
+                        "target": "Kũthoma",
+                        "source": "To read / study",
+                        "pronunciation": "koo-thoh-mah"
+                },
+                {
+                        "target": "Rũthiomi rwa mũciĩ",
+                        "source": "Home / Mother language",
+                        "pronunciation": "roo-thyoh-mee rwah moo-chee-ee"
+                },
+                {
+                        "target": "Kũgwatithia",
+                        "source": "To support / assist",
+                        "pronunciation": "koo-gwah-tee-thyah"
+                },
+                {
+                        "target": "Mũnda (pl. Mĩnda)",
+                        "source": "Farm / Garden",
+                        "pronunciation": "moo-ndah"
+                },
+                {
+                        "target": "Mũrimi (pl. Arĩmi)",
+                        "source": "Farmer",
+                        "pronunciation": "moo-ree-mee"
+                },
+                {
+                        "target": "Thĩĩri",
+                        "source": "Peace",
+                        "pronunciation": "thee-ee-ree"
+                },
+                {
+                        "target": "Rũũjĩ",
+                        "source": "Water / River",
+                        "pronunciation": "roo-oo-jee"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Aana bontheethu nĩabatiĩ kũgwatithia kũthoma na rũthiomi rwao rwa mũciĩ.",
+                        "source": "All our children should be supported to read in their home language."
+                }
+        ]
+},
+        {
+        "id": "meru-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Meru (Kĩmĩĩrũ) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-R",
+        "words": [
+                {
+                        "target": "Tigwa bwega, tharimwa",
+                        "source": "Goodbye, be blessed",
+                        "pronunciation": "tigwa bwe-ga tha-rimwa"
+                },
+                {
+                        "target": "Nĩwega mũno",
+                        "source": "Thank you very much",
+                        "pronunciation": "ni-we-ga mu-no"
+                },
+                {
+                        "target": "Ndekera",
+                        "source": "I am sorry / Forgive me",
+                        "pronunciation": "nde-ke-ra"
+                },
+                {
+                        "target": "Tigwa na wega / Thiĩ na wega",
+                        "source": "Stay well / Go well (Goodbye)",
+                        "pronunciation": "tigwa na we-ga / thii na we-ga"
+                },
+                {
+                        "target": "Muuga rũũkũ / Mũũga",
+                        "source": "Good morning (Kimeru)",
+                        "pronunciation": "muuga rũũkũ"
+                },
+                {
+                        "target": "Ũrĩ mwega? / Mũrĩ bega?",
+                        "source": "How are you? (Singular / Plural)",
+                        "pronunciation": "ũrĩ mwega"
+                },
+                {
+                        "target": "Ndĩ mwega / Tũrĩ bega",
+                        "source": "I am fine / We are fine",
+                        "pronunciation": "ndĩ mwega"
+                },
+                {
+                        "target": "Nĩ wega mũno",
+                        "source": "Thank you very much",
+                        "pronunciation": "nĩ wega mũno"
+                },
+                {
+                        "target": "Tũrĩmenyerera -rūārū mũciĩ gwetũ",
+                        "source": "We keep sick at our homestead",
+                        "pronunciation": "tũrĩmenyerera -rūārū mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Hā-hā mũciĩ gwetũ",
+                        "source": "We keep here at our homestead",
+                        "pronunciation": "tũrĩmenyerera hā-hā mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Hā-kūhī mũciĩ gwetũ",
+                        "source": "We keep near at our homestead",
+                        "pronunciation": "tũrĩmenyerera hā-kūhī mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Mu-gui mũciĩ gwetũ",
+                        "source": "We keep arrow at our homestead",
+                        "pronunciation": "tũrĩmenyerera mu-gui mũciĩ gwetũ"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ĩĩ, tũrĩ na -rūārū nyingĩ",
+                        "source": "Yes, we have plenty of sick"
+                },
+                {
+                        "target": "Ũrĩ na Hā-hā ũmũnthĩ?",
+                        "source": "Do you have here today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Hā-hā nyingĩ",
+                        "source": "Yes, we have plenty of here"
+                },
+                {
+                        "target": "Ũrĩ na Hā-kūhī ũmũnthĩ?",
+                        "source": "Do you have near today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Hā-kūhī nyingĩ",
+                        "source": "Yes, we have plenty of near"
+                },
+                {
+                        "target": "Ũrĩ na Mu-gui ũmũnthĩ?",
+                        "source": "Do you have arrow today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Mu-gui nyingĩ",
+                        "source": "Yes, we have plenty of arrow"
+                },
+                {
+                        "target": "Ũrĩ na Mw-ato. Gi-taru ũmũnthĩ?",
+                        "source": "Do you have canoe today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Mw-ato. Gi-taru nyingĩ",
+                        "source": "Yes, we have plenty of canoe"
+                },
+                {
+                        "target": "Ũrĩ na Tama ũmũnthĩ?",
+                        "source": "Do you have cloth today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Tama nyingĩ",
+                        "source": "Yes, we have plenty of cloth"
+                },
+                {
+                        "target": "Ũrĩ na Kī-roto ũmũnthĩ?",
+                        "source": "Do you have dream today?"
+                }
+        ]
+},
+        {
+        "id": "meru-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Meru (Kĩmĩĩrũ) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-R",
+        "words": [
+                {
+                        "target": "Tũrĩmenyerera Mw-ato. Gi-taru mũciĩ gwetũ",
+                        "source": "We keep canoe at our homestead",
+                        "pronunciation": "tũrĩmenyerera mw-ato gi-taru mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Tama mũciĩ gwetũ",
+                        "source": "We keep cloth at our homestead",
+                        "pronunciation": "tũrĩmenyerera tama mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Kī-roto mũciĩ gwetũ",
+                        "source": "We keep dream at our homestead",
+                        "pronunciation": "tũrĩmenyerera kī-roto mũciĩ gwetũ"
+                },
+                {
+                        "target": "Tũrĩmenyerera Ngoma mũciĩ gwetũ",
+                        "source": "We keep ghost at our homestead",
+                        "pronunciation": "tũrĩmenyerera ngoma mũciĩ gwetũ"
+                },
+                {
+                        "target": "Thogora ya Ndagĩtarĩ thoko nĩ igana?",
+                        "source": "How much is doctor at the market?",
+                        "pronunciation": "thogora ya ndagĩtarĩ thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya Mũrimũ thoko nĩ igana?",
+                        "source": "How much is sickness at the market?",
+                        "pronunciation": "thogora ya mũrimũ thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya Kiama kia Njũrĩ Ncheke thoko nĩ igana?",
+                        "source": "How much is court at the market?",
+                        "pronunciation": "thogora ya kiama kia njũrĩ ncheke thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya Thayũ thoko nĩ igana?",
+                        "source": "How much is peace at the market?",
+                        "pronunciation": "thogora ya thayũ thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya Ũteithio thoko nĩ igana?",
+                        "source": "How much is help at the market?",
+                        "pronunciation": "thogora ya ũteithio thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya mbuŋgɛ thoko nĩ igana?",
+                        "source": "How much is parliament at the market?",
+                        "pronunciation": "thogora ya mbuŋg thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya ða: thoko nĩ igana?",
+                        "source": "How much is watch at the market?",
+                        "pronunciation": "thogora ya ða thoko nĩ igana"
+                },
+                {
+                        "target": "Thogora ya G-itigirra thoko nĩ igana?",
+                        "source": "How much is fear at the market?",
+                        "pronunciation": "thogora ya g-itigirra thoko nĩ igana"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ĩĩ, tũrĩ na Kī-roto nyingĩ",
+                        "source": "Yes, we have plenty of dream"
+                },
+                {
+                        "target": "Ũrĩ na Ngoma ũmũnthĩ?",
+                        "source": "Do you have ghost today?"
+                },
+                {
+                        "target": "Ĩĩ, tũrĩ na Ngoma nyingĩ",
+                        "source": "Yes, we have plenty of ghost"
+                },
+                {
+                        "target": "Thogora ya Dola ya Austrĩlia thoko nĩ igana?",
+                        "source": "How much is australian dollar at the market?"
+                },
+                {
+                        "target": "Thogora ya thoko thoko nĩ igana?",
+                        "source": "How much is market at the market?"
+                },
+                {
+                        "target": "Thogora ya kĩbũrĩ thoko nĩ igana?",
+                        "source": "How much is zero at the market?"
+                },
+                {
+                        "target": "Thogora ya mbɛsa thoko nĩ igana?",
+                        "source": "How much is money at the market?"
+                },
+                {
+                        "target": "Thogora ya duka thoko nĩ igana?",
+                        "source": "How much is shop at the market?"
+                },
+                {
+                        "target": "Thogora ya sito: thoko nĩ igana?",
+                        "source": "How much is store at the market?"
+                },
+                {
+                        "target": "Thogora ya Thibitarĩ thoko nĩ igana?",
+                        "source": "How much is hospital at the market?"
+                },
+                {
+                        "target": "Thogora ya Ndagĩtarĩ thoko nĩ igana?",
+                        "source": "How much is doctor at the market?"
+                },
+                {
+                        "target": "Thogora ya Mũrimũ thoko nĩ igana?",
+                        "source": "How much is sickness at the market?"
+                }
+        ]
+}
+    ]
   }
 ];
-
-// ── Register Champion (1912) & Kithaka wa Mberia (2004) in MERU_CONFIG.sources and append dedicated Kĩtharaka Phonology & Atharaka Ethnography Unit ──
-for (const _srcId of [
-  "champion-atharaka-1912",
-  "mberia-kitharaka-loanwords-2004",
-  "dundas-bantu-laws-1915",
-  "payne-pacchiarotti-bosire-diversity-2016",
-]) {
-  if (MERU_CONFIG.sources && !MERU_CONFIG.sources.includes(_srcId)) {
-    MERU_CONFIG.sources.push(_srcId);
-  }
-}
-
-MERU_UNITS.push({
-  id: "meru-unit-kitharaka-mberia-2004-champion-1912",
-  title: "Unit 5: Kĩtharaka Loanword Phonology (Mberia 2004) & Atharaka Ethnography (Champion 1912)",
-  description:
-    "Master Prof. Kithaka wa Mberia's (2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) analysis of Kĩtharaka borrowed words (7 vowels, /β, ð, ɣ/, Dahl's Law, n-propping of /d/, and prefix reanalysis) alongside Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) Atharaka age-grades, smithy, and 14 clans.",
-  icon: "BookOpen",
-  skills: [
-    {
-      id: "meru-kitharaka-loanword-phonology-mberia-2004",
-      title: "Kĩtharaka Loanword Phonology & Dahl's Law (Kithaka wa Mberia 2004, pp. 45–57)",
-      icon: "Sparkles",
-      description:
-        "Learn how Kĩtharaka adapts Swahili and English loanwords across Examples (1)–(18) in Kithaka wa Mberia (2004).",
-      tips: "In Kĩtharaka (Mberia 2004, pp. 45–57), foreign /p, b, f, v/ become /β/ (moβira, βaði, βurana) except [b] after Class 9/10 N- (mbuŋgɛ, mbureki); /k/ voices to /ɣ/ before a voiceless consonant via Dahl's Law (moɣatɛ < mkatɛ, karaɣita < træktə); and foreign /d/ is propped with /n/ to form [nd] (ndawa, nderesa, ndasita).",
-      words: [
-        {
-          target: "moβira (< mpira) • βaði (< pasi) • moβukɔ (< mfukɔ) • βurana (< fulana) • βaisikiri (< baiskɛli) • βetɛrɔri (< petrəl)",
-          source: "ball • iron box • bag/pocket • vest/undershirt • bicycle • petrol (Ex. 1: /p, b, f, v/ → /β/)",
-          pronunciation: "mo-βi-ra / βa-ði / mo-βu-kɔ / βu-ra-na / βa-i-si-ki-ri",
-          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 47–48, Ex. 1)"
-        },
-        {
-          target: "mbuŋgɛ (< buŋgɛ) • mbureki (< breɪk) • mbɔksi (< bɔks) | ðimo (< simu) • mɛða (< mɛza) • ða: (< sa:) • monaði (< mnazi) • mosɛðɔ (< mtʃɛzɔ)",
-          source: "parliament • brake • box (Ex. 2: [b] after N-) | telephone • table • hour/watch • coconut tree • game (Ex. 6: /s, z/ → /ð/)",
-          pronunciation: "mbu-ŋgɛ / mbu-re-ki / ði-mo / mɛ-ða / mo-na-ði / mo-sɛ-ðɔ",
-          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 48–50, Ex. 2 & 6)"
-        },
-        {
-          target: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka: (< mɔtəka:) & sukuru (< sku:l)",
-          source: "bread & tractor (Dahl's Law: /k/ → /ɣ/ before voiceless consonant) vs. pen, motorcar & school (/k/ retained)",
-          pronunciation: "mo-ɣa-tɛ / ka-ra-ɣi-ta / ka-ra-mu / mo-tu-kaa / su-ku-ru",
-          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 50–51, Ex. 8–9)"
-        },
-        {
-          target: "ndawa (< dawa) • nderesa (< dirisha) • ndasita (< dʌstə) • ndiŋgiri (< digri:) | duka → ruka (Cl. 11) → pl. nduka (Cl. 10) • sanduku → esanduku (Cl. 5)",
-          source: "medicine • window • duster • degree (Ex. 14: n-propping of /d/) | shop → shops • box (Ex. 18: prefix reanalysis)",
-          pronunciation: "nda-wa / nde-re-sa / nda-si-ta / ndi-ŋgi-ri / ru-ka ndu-ka / e-sa-ndu-ku",
-          hint: "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 53–56, Ex. 14 & 18)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Moɣatɛ na караmu irĩ mɛða-inĩ • Ruka rũmwe → Nduka inyingĩ.",
-          source: "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða) • One shop (Cl. 11 ruka) → many shops (Cl. 10 nduka) (Kithaka wa Mberia 2004, pp. 49–55)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "match_pairs",
-          prompt: "Match each Kĩtharaka loanword nativization pattern from Prof. Kithaka wa Mberia (2004, pp. 47–56) with its phonological rule:",
-          correctAnswer: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) (Ex. 9): Productive Dahl's Law voicing /k/ to /ɣ/ before a voiceless obstruent in the next syllable",
-          pairs: [
-            {
-              left: "moɣatɛ (< mkatɛ) & karaɣita (< træktə) (Ex. 9)",
-              right: "Productive Dahl's Law voicing /k/ to /ɣ/ before a voiceless obstruent in the next syllable"
-            },
-            {
-              left: "ndawa (< dawa), nderesa (< dirisha), ndasita (< dʌstə) (Ex. 14)",
-              right: "Consonant propping of foreign /d/ with homorganic /n/ to yield [nd]"
-            },
-            {
-              left: "moβira (< mpira), βaði (< pasi), βurana (< fulana) (Ex. 1)",
-              right: "Replacement of foreign /p, b, f, v/ by bilabial fricative /β/"
-            },
-            {
-              left: "duka → ruka (Cl. 11) → nduka (Cl. 10) & sanduku → esanduku (Cl. 5) (Ex. 18)",
-              right: "Back-formation and reanalysis of initial syllables into Kĩtharaka noun classes"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "meru-atharaka-ethnography-champion-1912",
-      title: "Atharaka Age-Grades, Mutialu Smithy, Customary Law & 14 Clans (Champion 1912, pp. 68–90)",
-      icon: "Shield",
-      description:
-        "Explore Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) ethnography of the Atharaka along the Tana (Kilaluma) River.",
-      tips: "Champion (1912, pp. 72–89) documents the 5 male grades (Karna, Kaegi, Ntheka/Ngoromo, Ntheka Nguru, Kisungi/Mundu Mukuru), 6 female grades (Karna, Kali, Idika [pl. Matika], Mwiki, Mukaa/Mubiki, Mwekuru), the Mutialu smithy (kianda), the 5th-night death rite Thela Luku, and all 14 Atharaka clans.",
-      words: [
-        {
-          target: "Male Grades: Karna → Kaegi → Ntheka/Ngoromo (Mbabu & Mkilamana) → Ntheka Nguru → Kisungi / Mundu Mukuru | Female Grades: Karna → Kali → Idika (pl. Matika) → Mwiki → Mukaa/Mubiki → Mwekuru",
-          source: "Complete Atharaka male and female life-stage grades and circumcision-year sets (pp. 72–73)",
-          pronunciation: "ka-rna / ka-e-gi / nthe-ka ngo-ro-mo / ki-su-ngi / i-di-ka ma-ti-ka / mwe-ku-ru",
-          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 72–73)"
-        },
-        {
-          target: "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle), luiyo (clay tuyere), njorma (hammer), ithoka + muthembesu = kithoka (axe), miwa (tongs), mgwadi (poker), kiriba (trough)",
-          source: "Complete blacksmithing terminology at Mutialu in Atharaka",
-          pronunciation: "ki-a-nda / lo-ngo / lu-i-yo / njo-rma / ki-tho-ka / mi-wa / ki-ri-ba",
-          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 77–78)"
-        },
-        {
-          target: "4 Dances (p. 82): Kisboso (with lukongoro bells & keusia plume), Nzungo, Mungeri, Mboboi • Thela Luku (5th-night burial purification, p. 85) • Chiama (Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo, pp. 86–87)",
-          source: "Atharaka dances, mortuary purification, and judicial elder council grades",
-          pronunciation: "ki-sbo-so / lu-ko-ngo-ro / the-la lu-ku / chi-a-ma / i-the-mbo",
-          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 82–87)"
-        },
-        {
-          target: "14 Atharaka Clans (pp. 88–89): Utonga, Kandi, Mululu, Nyaga, Mbula (kueni), Nginna, Kamurigi, Ndue, Kanzero, Kamararo, Mutwa, Kamogwe, Kanthakami, Kathoga • Plate X: Kathai (stool), kiko (snuff bottle), Kibumbi (gourd)",
-          source: "Complete table of 14 Atharaka clans and Plate X material artifacts",
-          pronunciation: "u-to-nga / ka-ndi / mu-lu-lu / nya-ga / mbu-la / ka-mu-ri-gi / ka-tha-i / ki-bu-mbi",
-          hint: "Arthur M. Champion (1912, JRAI Vol. 42, pp. 88–90 & Plate X)"
-        }
-      ],
-      sentences: [
-        {
-          target: "Akuru ya Chiama marĩ Ithembo-inĩ • Mwatũ wĩ mũtĩ-inĩ wa Mekoma.",
-          source: "The elders of the Chiama council are at the sacred grove (Ithembo) • The log beehive (mwatũ) is in the doum palm (Mekoma) (Champion 1912, pp. 80, 87)."
-        }
-      ],
-      authoredExercises: [
-        {
-          type: "multiple_choice",
-          prompt: "In Arthur M. Champion's 'The Atharaka' (JRAI Vol. 42, 1912, p. 86), how is blood-money for the loss of an eye (7 or 14 goats) distributed between clans?",
-          correctAnswer: "If the left eye is destroyed, compensation goes to the mother's clan; if the right eye is destroyed, it goes to the father's clan",
-          options: [
-            "If the left eye is destroyed, compensation goes to the mother's clan; if the right eye is destroyed, it goes to the father's clan",
-            "Both eyes are compensated exclusively to the maternal grandmother",
-            "No compensation is paid for eye injuries",
-            "Compensation is paid in iron hoes to the smiths of Mutialu"
-          ],
-          hint: "Arthur M. Champion (1912, JRAI Vol. 42, p. 86)"
-        }
-      ]
-    }
-  ]
-});

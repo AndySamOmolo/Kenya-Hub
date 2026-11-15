@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Maasai (ɔl Maa) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const MAASAI_CONFIG: LanguageConfig = {
   "id": "maasai",
@@ -33,14 +28,15 @@ export const MAASAI_CONFIG: LanguageConfig = {
 export const MAASAI_UNITS: CourseUnit[] = [
   {
     "id": "maasai-unit-1",
-    "title": "Unit 1: Salutations (Sopai! / Takwenya!), Gender Prefixes (Ol- / En-), People & Gendered Numerals",
+    "unitNumber": 1,
+    "title": "Salutations (Sopai! / Takwenya!), Gender Prefixes (Ol- / En-),",
     "description": "Master traditional Maa salutations, Masculine (ol-) and Feminine (en-) nouns, pastoral vocabulary, and gendered counting 1–10 in ɔl Maa.",
     "icon": "Users",
-    "number": 1,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-nouns-society",
-        "title": "Salutations & Masculine (Ol-) / Feminine (En-) Nouns in Pastoral Life",
+        "title": "Salutations & Masculine (Ol-) / Feminine (En-) Nouns in Pastoral",
         "icon": "Tractor",
         "description": "Learn greetings and core nouns for society, wildlife, and landscape from Hinde (1901), Hollis (1905), and Hobley (1922).",
         "tips": "In ɔl Maa (Hollis 1905, pp. 9–14), masculine/augmentative nouns carry the prefix 'ol- / ɔl-' (plural 'il-') and feminine/diminutive nouns carry 'en- / ɛn-' (plural 'in-'): ol-murani → il-muran (warrior → warriors), ol-oiboni → il-oibonok (medicine-man/prophet), Eng-ai (God/sky/rain), en-gare (water/river). Hinde (1901, p. 41) and Hollis (1905, pp. 101–102, 284–285) record 'Sopai! — Epa! (Hepa!)' and 'Takwenya! — Iko! (Igho!)'.",
@@ -179,10 +175,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "correctAnswer": "Sopai! (resp. Epa! / Hepa!) / Takwenya! (resp. Iko! / Igho!): Greetings to warriors/men! / Greetings to women/elders!",
             "pairs": [
               {
-                "left": "Sopai! (resp. Epa! / Hepa!) / Takwenya! (resp. Iko! / Igho!)",
-                "right": "Greetings to warriors/men! / Greetings to women/elders!"
-              },
-              {
                 "left": "Ashe (Ashe oleng) / Eserian (Sere!)",
                 "right": "Thank you (very much) / Peace (Goodbye in peace!)"
               },
@@ -212,7 +204,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
       },
       {
         "id": "maasai-numbers-proverbs",
-        "title": "Gendered Numerals 1–10 & Hollis (1905) Oral Wisdom (75 Proverbs & 24 Enigmas)",
+        "title": "Gendered Numerals 1",
         "icon": "Award",
         "description": "Count from 1 to 10 across feminine and masculine genders and study classical 1905 proverbs.",
         "tips": "In Maa (Hollis 1905, pp. 41–45), numbers 1–4, 7, 8, and 9 change form for masculine vs. feminine/place nouns: nabo f. / obo m. / nebo pl. (1), are f. / aare m. (2), uni f. / okuni m. (3), ongwan f. / oongwan m. (4), naapishana f. / oopishana m. (7), isyet f. / oisyet m. (8), and naaudo f. / oudo m. (9), whereas 5 (imiet), 6 (ile), and 10 (tomon) are invariable.",
@@ -390,10 +382,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-2",
-    "title": "Unit 2: Maa Place-Names (Hinde 1901), 4 Clans & 2 Moieties, Age-Sets & Folktales",
+    "unitNumber": 2,
+    "title": "Maa Place-Names, 4 Clans & 2 Moieties, Age-Sets & Folktales",
     "description": "Explore historical Maa toponyms, the 2 moieties and 4 principal clans, warrior ceremonies, and Hollis (1905) folktales and proverbs.",
     "icon": "Compass",
-    "number": 2,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-toponyms-clans-folklore",
@@ -422,8 +415,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Hinde (1901, p. 42) & Hollis (1905, p. 260)"
           },
           {
-            "target": "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)",
-            "source": "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)",
+            "target": "'L-oodo-kishu / 'L-oorook-kishu",
+            "source": "The 2 Moieties & 4 Principal Clans (Hollis 1905, p. 260)",
             "pronunciation": "'l-oodo-kishu / 'l-oorook-kishu",
             "hint": "'N-Gidongi (Oloiboni's family) belongs to 'L-Aiser; Il-Kipuyoni (smiths) to Il-Molelyan"
           },
@@ -473,42 +466,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"En-gare Nyrobi / Ngongo Bagas\" in Maasai?",
-            "correctAnswer": "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)",
-            "options": [
-              "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)",
-              "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)",
-              "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)",
-              "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)"
-            ],
-            "hint": "Hinde (1901, p. 42) & Hollis (1905)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ol-doinyo Oibor / Ol-doinyo Oger (Oldonyo gēri)\" in Maasai?",
-            "correctAnswer": "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)",
-            "options": [
-              "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)",
-              "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)",
-              "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)",
-              "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)"
-            ],
-            "hint": "Hinde (1901, p. 42) & Hollis (1905)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"E-waso Ngiro / En-aiposha (Enaibasha)\" in Maasai?",
-            "correctAnswer": "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)",
-            "options": [
-              "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)",
-              "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)",
-              "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)",
-              "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)"
-            ],
-            "hint": "Hinde (1901, p. 42) & Hollis (1905, p. 260)"
-          },
-          {
-            "type": "multiple_choice",
             "prompt": "How do you say \"Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)\" in Maasai?",
             "correctAnswer": "E-waso Ngiro / En-aiposha (Enaibasha)",
             "options": [
@@ -518,41 +475,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
               "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)"
             ],
             "hint": "eh-wah-soh n-gee-roh / eh-nah-ee-poh-shah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)\" in Maasai?",
-            "correctAnswer": "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)",
-            "options": [
-              "En-gare Nyrobi / Ngongo Bagas",
-              "Ol-doinyo Oibor / Ol-doinyo Oger (Oldonyo gēri)",
-              "E-waso Ngiro / En-aiposha (Enaibasha)",
-              "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)"
-            ],
-            "hint": "l-oo-doh-kee-shoo / l-oo-rook-kee-shoo"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Maasai expression with its English meaning:",
-            "correctAnswer": "En-gare Nyrobi / Ngongo Bagas: Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)",
-            "pairs": [
-              {
-                "left": "En-gare Nyrobi / Ngongo Bagas",
-                "right": "Nairobi (lit. Cold Water / Stream) / Ngong Springs (lit. The Eye of the Spring)"
-              },
-              {
-                "left": "Ol-doinyo Oibor / Ol-doinyo Oger (Oldonyo gēri)",
-                "right": "White Mountain (Kilimanjaro) / Striped Mountain (Mount Kenya)"
-              },
-              {
-                "left": "E-waso Ngiro / En-aiposha (Enaibasha)",
-                "right": "Ewaso Ng'iro (Brown/Muddy River) / Lake Naivasha (The Heaving Water)"
-              },
-              {
-                "left": "'L-oodo-kishu ('L-Aiser & Il-Mengana) / 'L-oorook-kishu (Il-Mokesen & Il-Molelyan)",
-                "right": "The 2 Moieties (Blood-Red Cattle & Black Cattle) & 4 Principal Clans (Hollis 1905, p. 260)"
-              }
-            ]
           },
           {
             "type": "fill_blank",
@@ -572,10 +494,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-3",
-    "title": "Unit 3: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 3,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "User",
-    "number": 3,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-family-kinship-kinship-elders-3",
@@ -640,7 +563,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -877,10 +799,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-4",
-    "title": "Unit 4: Numbers, Counting, Currency & Measures",
+    "unitNumber": 4,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "Scale",
-    "number": 4,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-numbers-measures-cardinals-ordinals-4",
@@ -945,7 +868,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1067,8 +989,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sekunde",
             "source": "Second (time unit)",
-            "pronunciation": "se-kunde",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "se-kunde"
           },
           {
             "target": "mereltungani, legai",
@@ -1191,10 +1112,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-5",
-    "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 5,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "Tractor",
-    "number": 5,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-food-agriculture-staple-foods-cookery-5",
@@ -1247,7 +1169,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Maasai language — Morphosyntax"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1464,10 +1385,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-6",
-    "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 6,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "PawPrint",
-    "number": 6,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-nature-wildlife-land-sky-water-6",
@@ -1736,10 +1658,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-7",
-    "title": "Unit 7: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 7,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "Heart",
-    "number": 7,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-body-health-anatomy-senses-7",
@@ -1804,7 +1727,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2074,10 +1996,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-8",
-    "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 8,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "BookOpen",
-    "number": 8,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-verbs-grammar-action-verbs-8",
@@ -2142,7 +2065,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2372,10 +2294,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-9",
-    "title": "Unit 9: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 9,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "Map",
-    "number": 9,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-time-calendar-seasons-months-9",
@@ -2515,38 +2438,32 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Jumapílí (Jpi)",
             "source": "Sunday (Day of the week)",
-            "pronunciation": "ju-ma-pi-li",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-pi-li"
           },
           {
             "target": "Jumatátu (Jtt)",
             "source": "Monday (Day of the week)",
-            "pronunciation": "ju-ma-ta-tu",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-ta-tu"
           },
           {
             "target": "Jumane (Jnn)",
             "source": "Tuesday (Day of the week)",
-            "pronunciation": "ju-ma-ne",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-ne"
           },
           {
             "target": "Jumatánɔ (Jtn)",
             "source": "Wednesday (Day of the week)",
-            "pronunciation": "ju-ma-ta-no",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-ta-no"
           },
           {
             "target": "Alaámisi (Alh)",
             "source": "Thursday (Day of the week)",
-            "pronunciation": "a-laa-mi-si",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "a-laa-mi-si"
           },
           {
             "target": "Jumáa (Iju)",
             "source": "Friday (Day of the week)",
-            "pronunciation": "ju-maa",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-maa"
           },
           {
             "target": "elaba pl. elabaitin",
@@ -2640,10 +2557,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
   },
   {
     "id": "maasai-unit-10",
-    "title": "Unit 10: Conversational Phrases, Idioms & Daily Dialogue",
+    "unitNumber": 10,
+    "title": "Conversational Phrases, Idioms & Daily Dialogue",
     "description": "Master conversational phrases, idioms & daily dialogue in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
     "icon": "MessageCircle",
-    "number": 10,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-phrases-idioms-everyday-dialogue-10",
@@ -2656,20 +2574,17 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Jumamósi (Jmo)",
             "source": "Saturday (Day of the week)",
-            "pronunciation": "ju-ma-mo-si",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "ju-ma-mo-si"
           },
           {
             "target": "Ɛnkátá",
             "source": "Era / historical age",
-            "pronunciation": "enka-ta",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "enka-ta"
           },
           {
             "target": "Ɛnkɔ́lɔŋ ewíkî",
             "source": "Day of the week",
-            "pronunciation": "enko-long e-wi-ki",
-            "hint": "ɔl Maa (Maasai) — GitHub unicode-org/cldr (mas.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "pronunciation": "enko-long e-wi-ki"
           },
           {
             "target": "Eserian (Serian)",
@@ -2878,11 +2793,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "maasai-unit-11-public-domain-corpus",
-    "title": "Unit 11: Archival Monograph & Comparative Lexicon",
+    "id": "maasai-unit-11",
+    "unitNumber": 11,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Maasai (Maa) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
-    "number": 11,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-pd-corpus-11-1",
@@ -3183,11 +3099,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "maasai-unit-12-open-datasets-modern",
-    "title": "Unit 12: Core Swadesh & Everyday Community Vocabulary",
+    "id": "maasai-unit-12",
+    "unitNumber": 12,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Maasai (Maa) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
-    "number": 12,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-open-dataset-12-1",
@@ -3440,42 +3357,189 @@ export const MAASAI_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "maasai-unit-johnston-1902-30-sentences-ethnography",
-    "title": "Unit 13: Sir Harry Johnston (1902) All 30 Masai Conversational Sentences (pp. 925–926), Set 2 Lexicon & Ch. XIX Ethnography",
+    "id": "maasai-unit-13",
+    "unitNumber": 13,
+    "title": "All 30 Masai Conversational Sentences, Set 2 Lexicon & Ch. XIX",
     "description": "Master all 30 words and conversational sentences in Masai from pp. 925–926 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902), alongside the 4-God Creation Myth, Ol-aibon lineage, and Set 2 vocabulary.",
     "icon": "Flame",
-    "number": 13,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-johnston-1902-30-sentences-skill",
-        "title": "All 30 Masai Words & Conversational Sentences (pp. 925–926)",
+        "title": "All 30 Masai Words & Conversational Sentences",
         "icon": "MessageCircle",
         "description": "Practice every Masai greeting, command, question, and noun recorded on pp. 925–926 of Johnston (1902).",
         "tips": "In Johnston's 30 Masai items (pp. 925–926), masculine nouns take Ol- and feminine nouns take eñg- (Ol aṣe 'male calf' vs. eñgaṣe 'female calf'), while imperatives use T-/To- or Dumú! ('Lift it up'), Totóna enné! ('Sit here!'), and Tanyō nanu! ('Wait for me!').",
         "words": [
           {
-            "target": "Sopai! — Eépa! • Asai! • Biado! • Baīya! • Āiya! • Ékĭnō! • Kálo? • Gīniñ?",
-            "source": "Good morning! — Reply • Many thanks! • Goodbye! • Never mind! • Very well! • Truly! • Who's there? • Do you hear?",
-            "pronunciation": "so-pai e-e-pa / a-sai / bi-a-do / bai-ya / ai-ya / e-ki-no / ka-lo / gi-ning",
-            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+            "target": "Sopai! — Eépa!",
+            "source": "Good morning! — Reply",
+            "pronunciation": "sopai-eépa"
           },
           {
-            "target": "T'anyō! • Tanyō nanu! • Elotu taīsere • Totóna enné! • Tōtónna! • Ino! ṣōmō! • Wōu tāsīū! • Neningo!",
-            "source": "Wait a bit! • Wait for me! • He will return to-morrow • Sit here! • Stand still! • Go away! • Come quickly! • Listen!",
-            "pronunciation": "ta-nyo na-nu / e-lo-tu tai-se-re / to-to-na en-ne / i-no so-mo / wou ta-si-u / ne-ni-ngo",
-            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+            "target": "Asai!",
+            "source": "Many thanks!",
+            "pronunciation": "asai"
           },
           {
-            "target": "Emī damisso! • Dumú! • Injohi maōko! • Ndámăti! • Imīñāni iye! • Iwa! • Eñnoyik akīma • Yao el gēk • Ṣomo erriita ngiṣu!",
-            "source": "Don't forget • Lift it up • Give me to drink • Take care • You're a fool! • Take away! • Make a fire • Bring firewood • Go and herd the cattle!",
-            "pronunciation": "e-mi da-mis-so / du-mu / in-jo-hi ma-o-ko / nda-ma-ti / i-mi-nga-ni i-ye / i-wa / so-mo er-rii-ta ngi-su",
-            "hint": "Johnston (1902, Vol. II, pp. 925–926)"
+            "target": "Biado!",
+            "source": "Goodbye!",
+            "pronunciation": "biado"
           },
           {
-            "target": "Ol aṣe (m.), eñgaṣe (f.) • Ol airini • Ol bāhe • Ol canni • Anyorr • Ol giteñ oibor • Eñgaraiai • Entakolla • Endīto",
-            "source": "Calf (m./f.) • Kidney • A barren woman • Medicine, trees • I love • White bullock • My child • Molar tooth • Young woman",
-            "pronunciation": "ol a-se e-nga-se / ol ai-ri-ni / ol ba-he / ol chan-ni / a-nyorr / ol gi-teng oi-bor",
-            "hint": "Johnston (1902, Vol. II, Set 2, pp. 914–926)"
+            "target": "Baīya!",
+            "source": "Never mind!",
+            "pronunciation": "baīya"
+          },
+          {
+            "target": "Āiya!",
+            "source": "Very well!",
+            "pronunciation": "āiya"
+          },
+          {
+            "target": "Ékĭnō!",
+            "source": "Truly!",
+            "pronunciation": "ékĭnō"
+          },
+          {
+            "target": "Kálo?",
+            "source": "Who's there?",
+            "pronunciation": "kálo"
+          },
+          {
+            "target": "Gīniñ?",
+            "source": "Do you hear?",
+            "pronunciation": "gīniñ"
+          },
+          {
+            "target": "T'anyō!",
+            "source": "Wait a bit!",
+            "pronunciation": "t'anyō"
+          },
+          {
+            "target": "Tanyō nanu!",
+            "source": "Wait for me!",
+            "pronunciation": "tanyō-nanu"
+          },
+          {
+            "target": "Elotu taīsere",
+            "source": "He will return to-morrow",
+            "pronunciation": "elotu-taīsere"
+          },
+          {
+            "target": "Totóna enné!",
+            "source": "Sit here!",
+            "pronunciation": "totóna-enné"
+          },
+          {
+            "target": "Tōtónna!",
+            "source": "Stand still!",
+            "pronunciation": "tōtónna"
+          },
+          {
+            "target": "Ino! ṣōmō!",
+            "source": "Go away!",
+            "pronunciation": "ino-ōmō"
+          },
+          {
+            "target": "Wōu tāsīū!",
+            "source": "Come quickly!",
+            "pronunciation": "wōu-tāsīū"
+          },
+          {
+            "target": "Neningo!",
+            "source": "Listen!",
+            "pronunciation": "neningo"
+          },
+          {
+            "target": "Emī damisso!",
+            "source": "Don't forget",
+            "pronunciation": "emī-damisso"
+          },
+          {
+            "target": "Dumú!",
+            "source": "Lift it up",
+            "pronunciation": "dumú"
+          },
+          {
+            "target": "Injohi maōko!",
+            "source": "Give me to drink",
+            "pronunciation": "injohi-maōko"
+          },
+          {
+            "target": "Ndámăti!",
+            "source": "Take care",
+            "pronunciation": "ndámăti"
+          },
+          {
+            "target": "Imīñāni iye!",
+            "source": "You're a fool!",
+            "pronunciation": "imīñāni-iye"
+          },
+          {
+            "target": "Iwa!",
+            "source": "Take away!",
+            "pronunciation": "iwa"
+          },
+          {
+            "target": "Eñnoyik akīma",
+            "source": "Make a fire",
+            "pronunciation": "eñnoyik-akīma"
+          },
+          {
+            "target": "Yao el gēk",
+            "source": "Bring firewood",
+            "pronunciation": "yao-el-gēk"
+          },
+          {
+            "target": "Ṣomo erriita ngiṣu!",
+            "source": "Go and herd the cattle!",
+            "pronunciation": "omo-erriita-ngiu"
+          },
+          {
+            "target": "Ol aṣe (m.), eñgaṣe (f.)",
+            "source": "Calf (m./f.)",
+            "pronunciation": "ol-ae"
+          },
+          {
+            "target": "Ol airini",
+            "source": "Kidney",
+            "pronunciation": "ol-airini"
+          },
+          {
+            "target": "Ol bāhe",
+            "source": "A barren woman",
+            "pronunciation": "ol-bāhe"
+          },
+          {
+            "target": "Ol canni",
+            "source": "Medicine, trees",
+            "pronunciation": "ol-canni"
+          },
+          {
+            "target": "Anyorr",
+            "source": "I love",
+            "pronunciation": "anyorr"
+          },
+          {
+            "target": "Ol giteñ oibor",
+            "source": "White bullock",
+            "pronunciation": "ol-giteñ-oibor"
+          },
+          {
+            "target": "Eñgaraiai",
+            "source": "My child",
+            "pronunciation": "eñgaraiai"
+          },
+          {
+            "target": "Entakolla",
+            "source": "Molar tooth",
+            "pronunciation": "entakolla"
+          },
+          {
+            "target": "Endīto",
+            "source": "Young woman",
+            "pronunciation": "endīto"
           }
         ],
         "sentences": [
@@ -3483,86 +3547,200 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Sopai! — Eépa! Totóna enné! Injohi maōko! — Asai! Elotu taīsere. Biado!",
             "source": "Good morning! — Reply! Sit here! Give me to drink! — Many thanks! He will return to-morrow. Goodbye! (Johnston 1902, pp. 925–926)."
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Sir Harry Johnston's 'Additional Words and Sentences in Masai' (The Uganda Protectorate, Vol. II, 1902, pp. 925–926), what do 'Injohi maōko!', 'Yao el gēk', 'Eñnoyik akīma', and 'Ṣomo erriita ngiṣu!' mean?",
-            "correctAnswer": "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
-            "options": [
-              "'Give me to drink', 'Bring firewood', 'Make a fire', and 'Go and herd the cattle'",
-              "'Wait a bit!', 'Stand still!', 'Come quickly!', and 'You're a fool!'",
-              "'Good morning!', 'Many thanks!', 'Goodbye!', and 'Never mind!'",
-              "'Who's there?', 'Do you hear?', 'Don't forget', and 'Lift it up'"
-            ],
-            "hint": "See Johnston (1902, Vol. II, pp. 925–926)"
-          }
         ]
       }
     ]
   },
   {
-    "id": "maasai-unit-hollis-1905-stories-proverbs-clans-customs",
-    "title": "Unit 14: A. C. Hollis (1905) Complete Monograph — 6 Noun Classes, Finger-Counting 1–60, 20 Stories, 75 Proverbs, 24 Enigmas, 4 Clans, 15 Ages, Myths, Customs, 45+ Trees & 8 Songs",
+    "id": "maasai-unit-14",
+    "unitNumber": 14,
+    "title": "Complete Monograph",
     "description": "Master the complete linguistic, literary, and ethnographic corpus of A. C. Hollis's 'The Masai: Their Language and Folklore' (Oxford: Clarendon Press, 1905, pp. i–xxviii, 1–359), dictated by Justin Ol-omeni.",
     "icon": "BookOpen",
-    "number": 14,
+    "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-hollis-1905-grammar-classes-fingers",
-        "title": "Part I Grammar: 6 Substantive Classes, 5 Finger Names, Finger-Counting 1–60 & 27 Verb Prefixes (pp. 1–102)",
+        "title": "Part I Grammar",
         "icon": "BookOpen",
         "description": "Master the 6 substantive plural classes, kinship morphology, 5 finger names, finger-counting signs (1–60), 27 subject–object verb prefixes, and 8 derivative verb formations in Hollis (1905, pp. 1–102).",
         "tips": "In Hollis (1905, pp. 18–34), substantives are divided into 6 Plural Classes: Class I (drops -i/-ni or adds -i/-n/-o/-k), Class II (adds -a/-na/-ishi/-shi/-sin/-tin), Class III (-a/-o → -i, -i/-oi → -ok, -i → -on), Class IV (reduplicates final consonant before -i/-o/-u: ol-alem → il-alema, en-geju → in-gejek), Class V (collective plurals forming singulars in -i/-ni/-oi), and Class VI (irregular/suppletive plurals: en-giteng → in-gishu). Numerals (pp. 41–45) inflect for gender on 1, 2, 3, 4, 7, 8 (oisyet m. / isyet f.), and 9 (oudo m. / naaudo f.), while 5 (imiet), 6 (ile), and 10 (tomon) are invariable.",
         "culturalNote": "Hollis (1905, pp. 43–45) documents both the 5 Maasai finger names (ol-morijoi thumb, ol-le-'ng-ojine 'the hyena's finger' = index finger, ol-kimojino o-ado middle finger, ol-le-'n-gila ring finger, en-gildipet little finger) and the complete silent finger-counting sign system from 1 to 60 used alongside spoken numerals.",
         "words": [
           {
-            "target": "Class I: ol-murani → il-muran • ol-tungani → il-tunganak • en-gerai → in-gera • ol-chorro → il-chorroi",
-            "source": "Substantive Class I Plurals (Hollis 1905, pp. 18–20): warrior → warriors • man → men • child → children • spring → springs",
-            "pronunciation": "ol-mu-ra-ni il-mu-ran / ol-tu-nga-ni il-tu-nga-nak / en-ge-rai in-ge-ra",
-            "hint": "Drops singular -i/-ni or suffixes -i, -n, -o, -k (Hollis 1905, pp. 18–20)"
+            "target": "Class I: ol-murani → il-muran",
+            "source": "Substantive Class I Plurals (Hollis 1905, pp. 18–20): warrior → warriors",
+            "pronunciation": "class-i-ol-murani-il-muran"
           },
           {
-            "target": "Class II: ol-chore → il-choreta • eng-ang → ing-angitie • ol-apa → il-apaitin • e-wueji → i-wuejitin",
-            "source": "Substantive Class II Plurals (Hollis 1905, pp. 21–24): friend → friends • kraal → kraals • moon/month → months • place → places",
-            "pronunciation": "ol-cho-re il-cho-re-ta / eng-ang ing-a-ngi-tie / ol-a-pa il-a-pai-tin",
-            "hint": "Suffixes -a/-na/-ta, -ishi/-shi/-itie, or -sin/-tin (Hollis 1905, pp. 21–24)"
+            "target": "ol-tungani → il-tunganak",
+            "source": "man → men",
+            "pronunciation": "ol-tungani-il-tunganak"
           },
           {
-            "target": "Class III: ol-dia → il-diei • ol-oiboni → il-oibonok • ol-karsis → il-karsisi • en-gerr → in-gerra",
-            "source": "Substantive Class III Plurals (Hollis 1905, pp. 24–27): dog → dogs • medicine-man → medicine-men • rich man → rich men • sheep",
-            "pronunciation": "ol-di-a il-di-ei / ol-oi-bo-ni il-oi-bo-nok / ol-kar-sis il-kar-si-si",
-            "hint": "Changes final -a/-o → -i, -i/-oi → -ok, or -i → -on (Hollis 1905, pp. 24–27)"
+            "target": "en-gerai → in-gera",
+            "source": "child → children",
+            "pronunciation": "en-gerai-in-gera"
           },
           {
-            "target": "Class IV: ol-alem → il-alema • eng-aji → ing-ajijik • en-geju → in-gejek • en-goshoke → in-goshua",
-            "source": "Substantive Class IV Plurals (Hollis 1905, pp. 27–28): sword → swords • hut → huts • leg/foot → legs/feet • stomach → stomachs",
-            "pronunciation": "ol-a-lem il-a-le-ma / eng-a-ji ing-a-ji-jik / en-ge-ju in-ge-jek",
-            "hint": "Reduplicates final consonant or mutates stem ending (Hollis 1905, pp. 27–28)"
+            "target": "ol-chorro → il-chorroi",
+            "source": "spring → springs",
+            "pronunciation": "ol-chorro-il-chorroi"
           },
           {
-            "target": "Class V & VI: il-Maasae (sg. ol-Maasani) • il-akir (sg. ol-akira) • en-giteng → in-gishu • ol-lee → il-lewa",
-            "source": "Substantive Classes V & VI (Hollis 1905, pp. 28–34): Masai • stars • cow → cattle • man/male → men",
-            "pronunciation": "il-maa-sae ol-maa-sa-ni / il-a-kir ol-a-ki-ra / en-gi-teng in-gi-shu",
-            "hint": "Class V collective plurals vs. Class VI suppletive plurals (Hollis 1905, pp. 28–34)"
+            "target": "Class II: ol-chore → il-choreta",
+            "source": "Substantive Class II Plurals (Hollis 1905, pp. 21–24): friend → friends",
+            "pronunciation": "class-ii-ol-chore-il-choreta"
           },
           {
-            "target": "ol-morijoi (1) • ol-le-'ng-ojine (2) • ol-kimojino o-ado (3) • ol-le-'n-gila (4) • en-gildipet (5)",
-            "source": "The 5 Finger Names (Hollis 1905, p. 43): thumb • index finger ('hyena's finger') • middle finger • ring finger ('finger of the cloak') • little finger",
-            "pronunciation": "ol-mo-ri-joi / ol-le-ng-o-ji-ne / ol-ki-mo-ji-no o-a-do / ol-le-n-gi-la / en-gil-di-pet",
-            "hint": "Hollis (1905, p. 43) finger names & finger-counting 1–60 (pp. 43–45)"
+            "target": "eng-ang → ing-angitie",
+            "source": "kraal → kraals",
+            "pronunciation": "eng-ang-ing-angitie"
           },
           {
-            "target": "oisyet (m.) / isyet (f. & n.) • oudo (m.) / naaudo (f. & n.) • tomon (10) • tikitem (20) • o-som (30) • artam (40) • onom (50) • ntomoni-ile (60) • iip (100)",
-            "source": "Gendered 8 & 9 and Tens 10–100 (Hollis 1905, pp. 41–43): eight (m./f.) • nine (m./f.) • 10 • 20 • 30 • 40 • 50 • 60 • 100",
-            "pronunciation": "oi-syet i-syet / ou-do naa-u-do / to-mon ti-ki-tem o-som ar-tam o-nom iip",
-            "hint": "Hollis (1905, pp. 41–43) cardinal numeral system"
+            "target": "ol-apa → il-apaitin",
+            "source": "moon/month → months",
+            "pronunciation": "ol-apa-il-apaitin"
           },
           {
-            "target": "aa-suj ('I follow thee' OR 'he/they follow me') • ki-suj ('thou followest me', 'he/they follow thee' OR 'we follow him/them')",
-            "source": "Portmanteau Subject–Object Verb Prefixes (Hollis 1905, pp. 51–55, 27-Row Prefix Table)",
-            "pronunciation": "aa-suj / ki-suj",
-            "hint": "Passive suffix -i resolves ambiguity when 3rd person acts on 1s/2s/1p/2p (Hollis 1905, pp. 51–55, 78–83)"
+            "target": "e-wueji → i-wuejitin",
+            "source": "place → places",
+            "pronunciation": "e-wueji-i-wuejitin"
+          },
+          {
+            "target": "Class III: ol-dia → il-diei",
+            "source": "Substantive Class III Plurals (Hollis 1905, pp. 24–27): dog → dogs",
+            "pronunciation": "class-iii-ol-dia-il-diei"
+          },
+          {
+            "target": "ol-oiboni → il-oibonok",
+            "source": "medicine-man → medicine-men",
+            "pronunciation": "ol-oiboni-il-oibonok"
+          },
+          {
+            "target": "ol-karsis → il-karsisi",
+            "source": "rich man → rich men",
+            "pronunciation": "ol-karsis-il-karsisi"
+          },
+          {
+            "target": "en-gerr → in-gerra",
+            "source": "sheep",
+            "pronunciation": "en-gerr-in-gerra"
+          },
+          {
+            "target": "Class IV: ol-alem → il-alema",
+            "source": "Substantive Class IV Plurals (Hollis 1905, pp. 27–28): sword → swords",
+            "pronunciation": "class-iv-ol-alem-il-alema"
+          },
+          {
+            "target": "eng-aji → ing-ajijik",
+            "source": "hut → huts",
+            "pronunciation": "eng-aji-ing-ajijik"
+          },
+          {
+            "target": "en-geju → in-gejek",
+            "source": "leg/foot → legs/feet",
+            "pronunciation": "en-geju-in-gejek"
+          },
+          {
+            "target": "en-goshoke → in-goshua",
+            "source": "stomach → stomachs",
+            "pronunciation": "en-goshoke-in-goshua"
+          },
+          {
+            "target": "Class V & VI: il-Maasae (sg. ol-Maasani)",
+            "source": "Substantive Classes V & VI (Hollis 1905, pp. 28–34): Masai",
+            "pronunciation": "class-v-vi-il-maasae"
+          },
+          {
+            "target": "il-akir (sg. ol-akira)",
+            "source": "stars",
+            "pronunciation": "il-akir"
+          },
+          {
+            "target": "en-giteng → in-gishu",
+            "source": "cow → cattle",
+            "pronunciation": "en-giteng-in-gishu"
+          },
+          {
+            "target": "ol-lee → il-lewa",
+            "source": "man/male → men",
+            "pronunciation": "ol-lee-il-lewa"
+          },
+          {
+            "target": "ol-morijoi (1)",
+            "source": "The 5 Finger Names (Hollis 1905, p. 43): thumb",
+            "pronunciation": "ol-morijoi"
+          },
+          {
+            "target": "ol-le-'ng-ojine (2)",
+            "source": "index finger ('hyena's finger')",
+            "pronunciation": "ol-le-'ng-ojine"
+          },
+          {
+            "target": "ol-kimojino o-ado (3)",
+            "source": "middle finger",
+            "pronunciation": "ol-kimojino-o-ado"
+          },
+          {
+            "target": "ol-le-'n-gila (4)",
+            "source": "ring finger ('finger of the cloak')",
+            "pronunciation": "ol-le-'n-gila"
+          },
+          {
+            "target": "en-gildipet (5)",
+            "source": "little finger",
+            "pronunciation": "en-gildipet"
+          },
+          {
+            "target": "oisyet (m.) / isyet (f. & n.)",
+            "source": "Gendered 8 & 9 and Tens 10–100 (Hollis 1905, pp. 41–43): eight (m./f.)",
+            "pronunciation": "oisyet"
+          },
+          {
+            "target": "oudo (m.) / naaudo (f. & n.)",
+            "source": "nine (m./f.)",
+            "pronunciation": "oudo"
+          },
+          {
+            "target": "tomon (10)",
+            "source": "10",
+            "pronunciation": "tomon"
+          },
+          {
+            "target": "tikitem (20)",
+            "source": "20",
+            "pronunciation": "tikitem"
+          },
+          {
+            "target": "o-som (30)",
+            "source": "30",
+            "pronunciation": "o-som"
+          },
+          {
+            "target": "artam (40)",
+            "source": "40",
+            "pronunciation": "artam"
+          },
+          {
+            "target": "onom (50)",
+            "source": "50",
+            "pronunciation": "onom"
+          },
+          {
+            "target": "ntomoni-ile (60)",
+            "source": "60",
+            "pronunciation": "ntomoni-ile"
+          },
+          {
+            "target": "iip (100)",
+            "source": "100",
+            "pronunciation": "iip"
+          },
+          {
+            "target": "aa-suj",
+            "source": "Portmanteau Subject–Object Verb Prefixes",
+            "pronunciation": "aa-suj / ki-suj"
           }
         ],
         "sentences": [
@@ -3574,71 +3752,120 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Ol-morijoi, ol-le-'ng-ojine, ol-kimojino o-ado, ol-le-'n-gila, o en-gildipet (Hollis 1905, p. 43).",
             "source": "The thumb, the index finger ('hyena's finger'), the middle finger, the ring finger, and the little finger."
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In A. C. Hollis's 'The Masai: Their Language and Folklore' (1905, p. 43), what are the five Masai finger names from thumb to little finger?",
-            "correctAnswer": "ol-morijoi (thumb), ol-le-'ng-ojine (index, 'hyena's finger'), ol-kimojino o-ado (middle), ol-le-'n-gila (ring), and en-gildipet (little finger)",
-            "options": [
-              "ol-morijoi (thumb), ol-le-'ng-ojine (index, 'hyena's finger'), ol-kimojino o-ado (middle), ol-le-'n-gila (ring), and en-gildipet (little finger)",
-              "nabo, are, uni, ongwan, and imiet",
-              "tikitem, o-som, artam, onom, and iip",
-              "'L-Aiser, Il-Meñgana, Il-Mokesen, and Il-Molelyan"
-            ],
-            "hint": "See Hollis (1905, p. 43)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How many Substantive Plural Classes does Hollis (1905, pp. 18–34) establish for the Masai language?",
-            "correctAnswer": "6 Substantive Plural Classes (Classes I–VI, from regular suffixation and stem-consonant reduplication to collective and suppletive plurals)",
-            "options": [
-              "6 Substantive Plural Classes (Classes I–VI, from regular suffixation and stem-consonant reduplication to collective and suppletive plurals)",
-              "2 Noun Classes",
-              "16 Bantu Noun Classes",
-              "3 Suffixed Definite Article Classes"
-            ],
-            "hint": "See Hollis (1905, pp. 18–34)"
-          }
         ]
       },
       {
         "id": "maasai-hollis-1905-20-stories-proverbs-enigmas",
-        "title": "Parts II & III: All 20 Masai Stories ('N-Atinin), 75 Proverbs & 24 Enigmas (pp. 103–259)",
+        "title": "Parts II & III",
         "icon": "Award",
         "description": "Study the 20 interlinear Masai stories (pp. 103–237), all 75 proverbs and sayings (pp. 238–252), and all 24 riddles/enigmas (pp. 253–259) in Hollis (1905).",
         "tips": "In Part III of Hollis (1905, p. 253), every riddle contest opens with the call 'Oiyote!' ('Are you ready?') and the response 'E-euo!' ('It has come!'), or 'Ki-te-jo!' ('We have spoken — propound your riddle!').",
         "culturalNote": "Part II (pp. 103–237) preserves 20 complete interlinear stories dictated primarily by Justin Ol-omeni (with Story 18 dictated by a small boy at Naivasha and Story 20 by En-gandini of 'L-Uasinkishu), while Part III records 75 Proverbs & Sayings (Nos. 1–75, pp. 238–252) and 24 Enigmas (Nos. 1–24, pp. 253–259).",
         "words": [
           {
-            "target": "Stories 1–5: En-gitojo oo 'l-tome (1) • 'L-omon loo-'l-muran o en-gukuu (2) • Ol-kurto oo 'l-changit (3) • E-ngoroyoni oo 'n-gera le-'l-ngaboli (4) • Ol-moruo o-ata ol-bitiro (5)",
-            "source": "Stories 1–5 (Hollis 1905, pp. 103–133): The Hare & the Elephants • The Warriors & the Nine-Headed Devil (Ol-le-tepes-apau) • The Caterpillar & the Wild Beasts • The Woman & the Children of the Sycamore Tree • The Greed of the Old Man",
-            "pronunciation": "en-gi-to-jo oo l-to-me / l-o-mon loo l-mu-ran o en-gu-kuu / ol-kur-to oo l-cha-ngit",
-            "hint": "Hollis (1905, Part II, pp. 103–133)"
+            "target": "Stories 1–5: En-gitojo oo 'l-tome (1)",
+            "source": "Stories 1–5 (Hollis 1905, pp. 103–133): The Hare & the Elephants",
+            "pronunciation": "stories-15-en-gitojo-oo"
           },
           {
-            "target": "Stories 6–10: Konyek o menye (6) • Ol-moruo o en-gungu enye (7) • En-dasat o es-singir (8) • Marogo o en-gukuu (9) • En-gitojo o ol-ngojine o eng-aji e-'n-gatuny (10)",
-            "source": "Stories 6–10 (Hollis 1905, pp. 133–169): Konyek and His Father • The Old Man and His Knee (Tinik o Ngurenyi) • The Old Woman and the Carp • Marogo and the Devil • The Hare, the Hyena, and the Lioness's Cave",
-            "pronunciation": "ko-nyek o me-nye / ol-mo-ruo o en-gu-ngu e-nye / en-da-sat o es-si-ngir / ma-ro-go o en-gu-kuu",
-            "hint": "Hollis (1905, Part II, pp. 133–169)"
+            "target": "'L-omon loo-'l-muran o en-gukuu (2)",
+            "source": "The Warriors & the Nine-Headed Devil (Ol-le-tepes-apau)",
+            "pronunciation": "'l-omon-loo-'l-muran-o-en-gukuu"
           },
           {
-            "target": "Stories 11–15: En-dimani o ol-ayoni (11) • Il-kinyanguk o en-gitojo (12) • Ol-murani oo 'l-Lumbwa (13) • Ol-ayoni o ol-alashe ('E-itu-rup-aka en-Dambu ang') (14) • In-gitojon are (15)",
-            "source": "Stories 11–15 (Hollis 1905, pp. 169–199): The Demon and the Boy • The Monkeys and the Hare • The Warrior and the Lumbwa • The Boy and His Brother and Their Song • The Two Hares",
-            "pronunciation": "en-di-ma-ni o ol-a-yo-ni / il-ki-nya-nguk o en-gi-to-jo / ol-mu-ra-ni oo l-lum-bwa",
-            "hint": "Hollis (1905, Part II, pp. 169–199)"
+            "target": "Ol-kurto oo 'l-changit (3)",
+            "source": "The Caterpillar & the Wild Beasts",
+            "pronunciation": "ol-kurto-oo-'l-changit"
           },
           {
-            "target": "Stories 16–20: Ol-toroboni o-inyang-ie en-gine (16) • Ol-kurok o-yam-aki e-ngoroyoni (17) • Ol-ngojine o em-barie (18) • In-gatiyok oo-'sidai o en-gatuny (19) • El-langat oo 'l-oidimani (20)",
-            "source": "Stories 16–20 (Hollis 1905, pp. 199–237): The Cunning Dorobo • The Crow Who Married a Woman • The Greed of the Hyena & the Cunning of the Jackal • The Ostrich Chickens & the Lioness • The Ford and the Cannibals",
-            "pronunciation": "ol-to-ro-bo-ni / ol-ku-rok / ol-ngo-ji-ne o em-ba-rie / el-la-ngat oo l-oi-di-ma-ni",
-            "hint": "Hollis (1905, Part II, pp. 199–237)"
+            "target": "E-ngoroyoni oo 'n-gera le-'l-ngaboli (4)",
+            "source": "The Woman & the Children of the Sycamore Tree",
+            "pronunciation": "e-ngoroyoni-oo-'n-gera-le-'l-ngaboli"
           },
           {
-            "target": "Oiyote! — E-euo! (Ki-te-jo!) • En-gukuu le-me-eta e-wueji ne-m-e-re. — Ol-oidikidiki (Enigma #9) • Ana-ke-ra ninye tukul, n-e-nyor-i! — En-gila e-'n-gitok (Enigma #7)",
-            "source": "Riddle Formula & Enigmas #7 & #9 (Hollis 1905, pp. 253–255): Are you ready? — It has come! • The devil which has no place he does not drive away (The flea) • Dirty though it be, all love it (A woman's greased garment)",
-            "pronunciation": "oi-yo-te e-e-uo ki-te-jo / ol-oi-di-ki-di-ki / en-gi-la e-n-gi-tok",
-            "hint": "Hollis (1905, Part III Enigmas, pp. 253–259)"
+            "target": "Ol-moruo o-ata ol-bitiro (5)",
+            "source": "The Greed of the Old Man",
+            "pronunciation": "ol-moruo-o-ata-ol-bitiro"
+          },
+          {
+            "target": "Stories 6–10: Konyek o menye (6)",
+            "source": "Stories 6–10 (Hollis 1905, pp. 133–169): Konyek and His Father",
+            "pronunciation": "stories-610-konyek-o"
+          },
+          {
+            "target": "Ol-moruo o en-gungu enye (7)",
+            "source": "The Old Man and His Knee (Tinik o Ngurenyi)",
+            "pronunciation": "ol-moruo-o-en-gungu-enye"
+          },
+          {
+            "target": "En-dasat o es-singir (8)",
+            "source": "The Old Woman and the Carp",
+            "pronunciation": "en-dasat-o-es-singir"
+          },
+          {
+            "target": "Marogo o en-gukuu (9)",
+            "source": "Marogo and the Devil",
+            "pronunciation": "marogo-o-en-gukuu"
+          },
+          {
+            "target": "En-gitojo o ol-ngojine o eng-aji e-'n-gatuny (10)",
+            "source": "The Hare, the Hyena, and the Lioness's Cave",
+            "pronunciation": "en-gitojo-o-ol-ngojine-o"
+          },
+          {
+            "target": "Stories 11–15: En-dimani o ol-ayoni (11)",
+            "source": "Stories 11–15 (Hollis 1905, pp. 169–199): The Demon and the Boy",
+            "pronunciation": "stories-1115-en-dimani-o"
+          },
+          {
+            "target": "Il-kinyanguk o en-gitojo (12)",
+            "source": "The Monkeys and the Hare",
+            "pronunciation": "il-kinyanguk-o-en-gitojo"
+          },
+          {
+            "target": "Ol-murani oo 'l-Lumbwa (13)",
+            "source": "The Warrior and the Lumbwa",
+            "pronunciation": "ol-murani-oo-'l-lumbwa"
+          },
+          {
+            "target": "Ol-ayoni o ol-alashe (14)",
+            "source": "The Boy and His Brother and Their Song",
+            "pronunciation": "ol-ayoni-o-ol-alashe"
+          },
+          {
+            "target": "In-gitojon are (15)",
+            "source": "The Two Hares",
+            "pronunciation": "in-gitojon-are"
+          },
+          {
+            "target": "Stories 16–20: Ol-toroboni o-inyang-ie en-gine (16)",
+            "source": "Stories 16–20 (Hollis 1905, pp. 199–237): The Cunning Dorobo",
+            "pronunciation": "stories-1620-ol-toroboni-o-inyang-ie"
+          },
+          {
+            "target": "Ol-kurok o-yam-aki e-ngoroyoni (17)",
+            "source": "The Crow Who Married a Woman",
+            "pronunciation": "ol-kurok-o-yam-aki-e-ngoroyoni"
+          },
+          {
+            "target": "Ol-ngojine o em-barie (18)",
+            "source": "The Greed of the Hyena & the Cunning of the Jackal",
+            "pronunciation": "ol-ngojine-o-em-barie"
+          },
+          {
+            "target": "In-gatiyok oo-'sidai o en-gatuny (19)",
+            "source": "The Ostrich Chickens & the Lioness",
+            "pronunciation": "in-gatiyok-oo-'sidai-o-en-gatuny"
+          },
+          {
+            "target": "El-langat oo 'l-oidimani (20)",
+            "source": "The Ford and the Cannibals",
+            "pronunciation": "el-langat-oo-'l-oidimani"
+          },
+          {
+            "target": "En-gukuu le-me-eta e-wueji ne-m-e-re. — Ol-oidikidiki (Enigma #9)",
+            "source": "The devil which has no place he does not drive away (The flea)",
+            "pronunciation": "en-gukuu-le-me-eta-e-wueji-ne-m-e-re"
           }
         ],
         "sentences": [
@@ -3647,74 +3874,75 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "source": "Are you ready? — It has come! The projecting rafter constantly moves at the entrance to the hut. — The calf's nose."
           },
           {
-            "target": "Me-eta en-gutyuk ol-kurto. • Me-mut el-lughunya nabo eng-eno (Hollis 1905, p. 247, Proverbs #48 & #49).",
-            "source": "The mouth has no gouge (caterpillar). • One head does not consume all knowledge."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Story 2 of Hollis (1905, pp. 108–116, \"'L-omon loo-'l-muran o en-gukuu\"), who slays the nine-headed, one-horned devil (e-mowuo nabo na-ata 'l-lughuny naaudo), and from what part of the monster do all the devoured people and cattle emerge?",
-            "correctAnswer": "The warrior Ol-le-tepes-apau slays the nine-headed devil, and all the people, cattle, sheep, goats, and donkeys emerge alive when his swollen great toe (ol-kimojino kitok) is cut open",
-            "options": [
-              "The warrior Ol-le-tepes-apau slays the nine-headed devil, and all the people, cattle, sheep, goats, and donkeys emerge alive when his swollen great toe (ol-kimojino kitok) is cut open",
-              "Konyek slays the devil and the people emerge from a sycamore tree",
-              "Marogo slays the devil at Lake Naivasha",
-              "Le-eyo slays the devil on Mount Kenya"
-            ],
-            "hint": "See Hollis (1905, Story 2, pp. 108–116)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the traditional Masai call-and-response opening formula before propounding an enigma/riddle ('L-oyeti) in Hollis (1905, p. 253)?",
-            "correctAnswer": "\"Oiyote!\" (\"Are you ready?\") — Reply: \"E-euo!\" (\"It has come!\") or \"Ki-te-jo!\" (\"We have spoken!\")",
-            "options": [
-              "\"Oiyote!\" (\"Are you ready?\") — Reply: \"E-euo!\" (\"It has come!\") or \"Ki-te-jo!\" (\"We have spoken!\")",
-              "\"Tiangoi!\" — Reply: \"Tia!\"",
-              "\"Chondoni!\" — Reply: \"Dekeha!\"",
-              "\"Guso!\" — Reply: \"Tegwo!\""
-            ],
-            "hint": "See Hollis (1905, Part III, p. 253)"
+            "target": "Me-eta en-gutyuk ol-kurto.",
+            "source": "The mouth has no gouge (caterpillar)."
           }
         ]
       },
       {
         "id": "maasai-hollis-1905-clans-ages-myths",
-        "title": "Parts IV & V: 4 Clans & 19 Sub-Families, 5 Districts, 15 Ages (1791–1904) & Myths of Eng-ai and Le-eyo (pp. 260–281)",
+        "title": "Parts IV & V",
         "icon": "Crown",
         "description": "Master the 4 Masai clans ('Orot), 19 sub-families (Il-gilat), 2 cattle-dividing moieties, 5 districts, 15 remembered generation ages (1791–1904), and cosmological myths of Eng-ai, Naiteru-kop, Le-eyo, and the stars.",
         "tips": "In Hollis (1905, pp. 260–261), the 4 Clans ('Orot oo-'l-Maasae) are 'L-Aiser (4 sub-families incl. 'N-Gidoñgi of the Oloiboni), Il-Meñgana (4 sub-families), Il-Mokesen (5 sub-families incl. Il-Kiporon snake-charmers/rain-makers), and Il-Molelyan (7 sub-families incl. Il-Kipuyoni smiths). When dividing raided cattle, 'L-Aiser + Il-Meñgana form 'L-oodo-kishu ('the blood-red cattle') and Il-Mokesen + Il-Molelyan form 'L-oorook-kishu ('the black cattle').",
         "culturalNote": "Part V (pp. 264–281) records the myths of Eng-ai Narok (Black God) vs. Eng-ai Nanyokye (Red God), Naiteru-kop ('The Beginner of the Earth'), Le-eyo and the Dorobo's arrow severing the sky-cord of cattle, Le-eyo's reversed chant bringing permanent death to humans while the moon (ol-apa) returns, the quarrel of the Sun (Eng-olong) and Moon (Ol-apa), and Masai star lore.",
         "words": [
           {
-            "target": "'L-Aiser ('N-Gidoñgi, Il-Parkeneti, Il-Lughumae, Il-Partimaro) + Il-Meñgana ('L-Aitayok, 'Siria, Il-Marumae, Il-Makuperia) = 'L-oodo-kishu",
+            "target": "'L-Aiser + Il-Meñgana = 'L-oodo-kishu",
             "source": "Clans 1 & 2 forming the 'L-oodo-kishu ('Blood-Red Cattle') Moiety (Hollis 1905, p. 260)",
             "pronunciation": "l-ai-ser n-gi-do-ngi / il-me-nga-na / l-oo-do-ki-shu",
             "hint": "'N-Gidoñgi is the sub-clan of all chief medicine-men ('L-oibonok, Hollis 1905, pp. 260, 324)"
           },
           {
-            "target": "Il-Mokesen (Il-Mokesen-aate, Il-Partalale, Il-Tarosero, Il-Kiporon, Il-Tanap-owaru) + Il-Molelyan (Il-Molelyan-aate, Il-Mamasita, Il-Pojos, Il-Kipuyoni, Il-Moshono, Il-Masañgua, Il-Mokorere) = 'L-oorook-kishu",
+            "target": "Il-Mokesen + Il-Molelyan = 'L-oorook-kishu",
             "source": "Clans 3 & 4 forming the 'L-oorook-kishu ('Black Cattle') Moiety (Hollis 1905, pp. 260–261)",
-            "pronunciation": "il-mo-ke-sen il-ki-po-ron / il-mo-le-lyan il-ki-pu-yo-ni / l-oo-rook-ki-shu",
-            "hint": "Il-Kiporon = snake-charmers & rain-makers (p. 308n); Il-Kipuyoni = clan of the smiths (Il-kunono, p. 261)"
+            "pronunciation": "il-mokesen-il-molelyan-'l-oorook-kishu"
           },
           {
-            "target": "Il-nyangusi (1791) → Il-merisho (1798) → Il-kidotu (1806) → Il-tiekere (1813) → Il-meshuki (1821) → Il-kisaruni (1828) → Il-kitoip (1836) → Il-kimirisho (1844) → Il-kujuka (1851) → Il-nyangusi II (1859) → 'L-aimer (1866) → Il-talala (1874) → Il-tuati (1881) → Il-kotiek (1889) → Il-kinyoyo / Il-merisho (1896–1904)",
-            "source": "All 15 Remembered Masai Generation Ages ('L-poror, 1791–1904, Hollis 1905, pp. 261–263)",
-            "pronunciation": "il-nya-ngu-si / il-me-ri-sho / l-ai-mer / il-ta-la-la / il-tu-a-ti / il-ko-tiek / il-ki-nyo-yo",
-            "hint": "2 circumcisions (right-hand & left-hand, ~7.5 yrs each) form 1 generation (ol-poror, ~15 yrs, Hollis 1905, pp. 261–263)"
+            "target": "Il-nyangusi (1791) → Il-merisho (1798) → Il-kidotu (1806) → Il-tiekere",
+            "source": "All 15 Remembered Masai Generation Ages",
+            "pronunciation": "il-nyangusi-il-merisho-il-kidotu-il-tiekere"
           },
           {
-            "target": "\"Ol-tungani, ta-ua n-i-tumi! Ol-apa, ta-ua n-i-wuap!\" (Reversed by Le-eyo to: \"Ol-tungani, ta-ua n-i-wuap! Ol-apa, ta-ua n-i-tumi!\")",
-            "source": "Le-eyo's Formula of Human Mortality vs. Lunar Renewal (Hollis 1905, pp. 271–272): \"Man, die and return! Moon, die and remain away!\"",
+            "target": "\"Ol-tungani, ta-ua n-i-tumi! Ol-apa, ta-ua n-i-wuap!\"",
+            "source": "Le-eyo's Formula of Human Mortality vs. Lunar Renewal (Hollis 1905, pp. 271–272):",
             "pronunciation": "ol-tu-nga-ni ta-u-a n-i-tu-mi / ol-a-pa ta-u-a n-i-wuap",
             "hint": "Hollis (1905, Part V Myths, pp. 271–272)"
           },
           {
-            "target": "Ol-kokua (Pleiades) • Il-merer (Orion's Belt) • Eng-akakwai (Orion's Sword) • Ol-okira le-'n-gop & E-naibor-lukunya (Venus) • Il-baak (Jupiter) • 'L-oidimani (Milky Way) • Ol-kila le-'Ng-ai (Rainbow)",
-            "source": "Masai Astronomy & Sky Lore (Hollis 1905, pp. 275–278): Pleiades • Orion's Belt ('running after the 6 widow-stars') • Orion's Sword ('old men'sloin-cloths') • Morning/Evening Star • Jupiter • Milky Way • Rainbow ('God's garment')",
-            "pronunciation": "ol-ko-kua / il-me-rer / eng-a-ka-kwai / ol-o-ki-ra le-n-gop / il-baak / l-oi-di-ma-ni",
-            "hint": "Hollis (1905, Part V Myths, pp. 275–278)"
+            "target": "Ol-kokua (Pleiades)",
+            "source": "Masai Astronomy & Sky Lore (Hollis 1905, pp. 275–278): Pleiades",
+            "pronunciation": "ol-kokua"
+          },
+          {
+            "target": "Il-merer (Orion's Belt)",
+            "source": "Orion's Belt",
+            "pronunciation": "il-merer"
+          },
+          {
+            "target": "Eng-akakwai (Orion's Sword)",
+            "source": "Orion's Sword ('old men'sloin-cloths')",
+            "pronunciation": "eng-akakwai"
+          },
+          {
+            "target": "Ol-okira le-'n-gop & E-naibor-lukunya (Venus)",
+            "source": "Morning/Evening Star",
+            "pronunciation": "ol-okira-le-'n-gop-e-naibor-lukunya"
+          },
+          {
+            "target": "Il-baak (Jupiter)",
+            "source": "Jupiter",
+            "pronunciation": "il-baak"
+          },
+          {
+            "target": "'L-oidimani (Milky Way)",
+            "source": "Milky Way",
+            "pronunciation": "'l-oidimani"
+          },
+          {
+            "target": "Ol-kila le-'Ng-ai (Rainbow)",
+            "source": "Rainbow ('God's garment')",
+            "pronunciation": "ol-kila-le-'ng-ai"
           }
         ],
         "sentences": [
@@ -3722,58 +3950,52 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "E-jo Eng-ai Nanyokye: \"To-joo m-a-ar!\" Ne-jo Eng-ai Narok: \"Ta-pala, m-i-ar, amu ki-ata te-'l-likai-ari!\" (Hollis 1905, pp. 264–265).",
             "source": "The Red God says: \"Say that I may slay them!\" And the Black God says: \"Leave them alone, slay them not, for we shall have them another year!\""
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Hollis (1905, pp. 260–261), how are the 4 Masai Clans ('L-Aiser, Il-Meñgana, Il-Mokesen, Il-Molelyan) paired when dividing raided cattle ('n-gishu naa-or-i)?",
-            "correctAnswer": "'L-Aiser + Il-Meñgana form 'L-oodo-kishu ('the blood-red cattle'), and Il-Mokesen + Il-Molelyan form 'L-oorook-kishu ('the black cattle')",
-            "options": [
-              "'L-Aiser + Il-Meñgana form 'L-oodo-kishu ('the blood-red cattle'), and Il-Mokesen + Il-Molelyan form 'L-oorook-kishu ('the black cattle')",
-              "'L-Aiser + Il-Mokesen form Il-Kaputiei, and Il-Meñgana + Il-Molelyan form Il-Kisonko",
-              "All 4 clans belong to 'N-Gidoñgi",
-              "They divide by the 12 lunar months"
-            ],
-            "hint": "See Hollis (1905, Part IV, pp. 260–261)"
-          }
         ]
       },
       {
         "id": "maasai-hollis-1905-customs-botany-songs",
-        "title": "Part VI: Masai Customs, Cattle Brands (Il-mishiren & Il-ponot), 'L-oibonok Genealogy, 10 Day-Divisions, 12 Months, 45+ Trees & 8 Songs (pp. 282–356)",
+        "title": "Part VI: Masai Customs, Cattle Brands (Il-mishiren & Il-ponot),",
         "icon": "TreePine",
         "description": "Master Part VI of Hollis (1905, pp. 282–356): cattle brands & ear-slits, the 9-generation Oloiboni genealogy, customary restitution fines, 10 day-divisions, 4 seasons & 12 months, 45+ botanical species (Il-kak), and 8 songs & prayers ('Singolioitin).",
         "tips": "In Hollis (1905, p. 290), cattle hide fire-brands are Il-mishiren (sg. ol-mishire; action: em-barisho), ear-slits are Il-ponot (sg. ol-ponoto; action: em-bonoto), and hanging ear-flaps on sheep and donkeys are Il-kipulul (sg. ol-kipululi). Fire is drilled with the hard vertical drill (ol-piron) twirled into the soft horizontal hearth-board (en-dole, pp. 342–344).",
         "culturalNote": "Pages 324–330 record the 9-generation genealogy of the 'N-Gidoñgi chief medicine-men ('L-oibonok) from Ol-le-Mweiya (who came down from Heaven and was found on the Ngong Hills by Kieku of 'L-Aiser) through Kidongoi, Sitonik, Kipepete, Parnyombe, Subet, and Mbatiany (d. c. 1890) to Lenana and Sendeyo.",
         "words": [
           {
-            "target": "Il-mishiren (sg. ol-mishire; em-barisho) • Il-ponot (sg. ol-ponoto; em-bonoto) • Il-kipulul (sg. ol-kipululi)",
-            "source": "Cattle Hide Fire-Brands • Cattle Ear-Slits • Pendant Ear-Flaps on Sheep & Donkeys (Hollis 1905, p. 290)",
-            "pronunciation": "il-mi-shi-ren ol-mi-shi-re / il-po-not ol-po-no-to / il-ki-pu-lul",
-            "hint": "Each ol-gilata (sub-family) owns its primary brand and ear-slit pattern (Hollis 1905, p. 290)"
+            "target": "Il-mishiren",
+            "source": "Cattle Hide Fire-Brands",
+            "pronunciation": "il-mishiren"
           },
           {
-            "target": "Ol-le-Mweiya → Kidongoi → Sitonik → Kipepete → Parnyombe → Subet → Mbatiany → Lenana & Sendeyo",
-            "source": "The 9-Generation Genealogy of the 'N-Gidoñgi Chief Medicine-Men ('L-oibonok, Hollis 1905, pp. 324–330)",
-            "pronunciation": "ol-le-mwei-ya / ki-do-ngoi / si-to-nik / ki-pe-pe-te / par-nyom-be / su-bet / mba-ti-any / le-na-na sen-de-yo",
+            "target": "Il-ponot",
+            "source": "Cattle Ear-Slits",
+            "pronunciation": "il-ponot"
+          },
+          {
+            "target": "Il-kipulul (sg. ol-kipululi)",
+            "source": "Pendant Ear-Flaps on Sheep & Donkeys (Hollis 1905, p. 290)",
+            "pronunciation": "il-kipulul"
+          },
+          {
+            "target": "Ol-le-Mweiya → Kidongoi → Sitonik → Kipepete → Parnyombe → Subet →",
+            "source": "The 9-Generation Genealogy of the 'N-Gidoñgi Chief Medicine-Men",
+            "pronunciation": "ol-le-mweiya-kidongoi-sitonik-kipepete",
             "hint": "Hollis (1905, Part VI, pp. 324–330)"
           },
           {
-            "target": "4 Seasons: Ol-tumerer (1–3: Ol-gisan, Ol-adalo, Ol-golua) • Eng-akwai (4–6: Le-erat, O-sarurungai, Oi-nxok) • Ol-ari (7–8: Ol-odoyiorie, O-lo-'n-gokua) • Ol-ameyu (9–12: Kara-obo, Kipisua, O-lo-'n-gushush, Narat)",
-            "source": "The 4 Masai Seasons ('L-apaitin le-'n-gop) & All 12 Lunar Months (Hollis 1905, pp. 333–334)",
-            "pronunciation": "ol-tu-me-rer / eng-a-kwai / ol-a-ri / ol-a-me-yu",
-            "hint": "Ol-tumerer (rain), Eng-akwai (drizzling rain), Ol-ari (heavy rain), Ol-ameyu (dry/hunger season, pp. 333–334)"
+            "target": "Eng-akwai",
+            "source": "4–6: Le-erat, O-sarurungai, Oi-nxok",
+            "pronunciation": "eng-akwai"
           },
           {
-            "target": "ol-piron (hard upper fire-drill: ol-okora, o-sinandei, ol-kiloriti, ol-oibor-benek) & en-dole (soft lower hearth: ol-ngaboli, o-reteti, ol-oponi, e-iti)",
-            "source": "Masai Fire-Sticks & Sacred Trees (Il-kak, Hollis 1905, pp. 335–344, recording 45+ botanical species)",
-            "pronunciation": "ol-pi-ron / en-do-le / ol-ki-lo-ri-ti / ol-nga-bo-li / o-re-te-ti",
+            "target": "ol-piron & en-dole",
+            "source": "Masai Fire-Sticks & Sacred Trees",
+            "pronunciation": "ol-piron-en-dole",
             "hint": "Hollis (1905, Part VI, pp. 335–344)"
           },
           {
-            "target": "\"Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Na-ai, m-i-ar-aki iyiook in-gera ang o in-gishu ang!\" • \"Ol-kokua, taa e-na-ishi!\"",
-            "source": "Women's Rain & Child Fertility Prayer to Eng-ai & Prayer to the Pleiades (Hollis 1905, Songs & Prayers Nos. 1–8, pp. 345–356)",
-            "pronunciation": "na-ai ki-o-mo-no i-ye k-i-njo-o i-yiook e-i-shoi / ol-ko-kua taa e-na-i-shi",
+            "target": "\"Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Na-ai, m-i-ar-aki",
+            "source": "Women's Rain & Child Fertility Prayer to Eng-ai & Prayer to the Pleiades",
+            "pronunciation": "na-ai",
             "hint": "All 8 Songs & Prayers ('Singolioitin, Hollis 1905, pp. 345–356)"
           }
         ],
@@ -3782,68 +4004,54 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Ol-kokua, taa e-na-ishi! (Hollis 1905, pp. 346–351).",
             "source": "O God, we pray Thee, give us offspring! O Pleiades, be like honey-wine to us!"
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Hollis (1905, p. 290, \"'L-mishiren oo 'l-ponot loo-'n-gishu\"), what is the exact distinction between Il-mishiren, Il-ponot, and Il-kipulul?",
-            "correctAnswer": "Il-mishiren (sg. ol-mishire) are cattle hide fire-brands (em-barisho), Il-ponot (sg. ol-ponoto) are ear-slits (em-bonoto), and Il-kipulul (sg. ol-kipululi) are small hanging ear-flaps on sheep and donkeys",
-            "options": [
-              "Il-mishiren (sg. ol-mishire) are cattle hide fire-brands (em-barisho), Il-ponot (sg. ol-ponoto) are ear-slits (em-bonoto), and Il-kipulul (sg. ol-kipululi) are small hanging ear-flaps on sheep and donkeys",
-              "Il-mishiren are shields, Il-ponot are spears, and Il-kipulul are swords",
-              "Il-mishiren are months, Il-ponot are seasons, and Il-kipulul are stars",
-              "They are three grades of blacksmiths"
-            ],
-            "hint": "See Hollis (1905, Part VI, p. 290)"
-          }
         ]
       }
     ]
   },
   {
     "id": "maasai-unit-15",
-    "title": "Hildegarde Hinde (1901): Grammatical Rules, 65 Verb Paradigms, 340 Phrases, Songs & Kenyan Place-Names",
+    "unitNumber": 15,
+    "title": "Hildegarde Hinde",
     "description": "Master the complete line-by-line corpus of Hildegarde Hinde's 'The Masai Language: Grammatical Notes Together with a Vocabulary' (Cambridge University Press, 1901, pp. i–xii, 1–75): Rules §§ 1–23, base-60 counting (īp = 60), 9 plural suffix methods, 65 verb conjugations, 340 phrases, salutations, 3 traditional songs, 8 Kenyan toponyms, 10 curses, and vocabulary footnotes.",
     "icon": "🏔️",
-    "number": 15,
     "color": "#B45309",
     "skills": [
       {
         "id": "maasai-u15-s1",
-        "title": "Hinde (1901) Grammatical Rules (§§ 1–23), Base-60 Numerals (īp = 60), 9 Plural Suffixes & 65 Verb Paradigms",
+        "title": "Hinde Grammatical Rules (§§ 1",
         "icon": "📐",
         "description": "Learn Hinde's 1901 grammatical rules (pp. 1–10), sexagesimal warrior-company counting (īp = 60), 9 regular noun plural suffix methods, singular vs. plural n- infinitives, and 65 verb conjugation tables (pp. 11–30).",
         "tips": "In Hinde (1901, pp. 4–5), īp means 60 ('which equals our 100. The Masai count in sixties, and a company of warriors is composed of 60 men'), signaled in finger-counting by snapping the fingers of one hand!",
         "culturalNote": "Compiled during two years among the Masai without interpreters (Preface pp. v–ix, dated British East Africa, 1900; Tipped-in Errata slip between pp. viii and ix; Editor's Note by E. C. M., p. xi), Hinde tested every rule across 20–30 parallel sentences and conjugated over 70 verbs (publishing 65 full tables on pp. 11–30 and 340 conversational phrases on pp. 31–40).",
         "words": [
           {
-            "target": "nanu (I), iye (thou), nenye / ninyi (he/she/it), iog / eeog (we), ndai / iye (you), nenje / ninji (they)",
-            "source": "Personal Pronouns & Euphonic Conjunction o/oi: nan oiye ('you and I'), neny oiye ('you and he') (Hinde 1901, Rules 1 & 4, pp. 2–3)",
+            "target": "nanu (I), iye (thou), nenye / ninyi (he/she/it), iog / eeog (we), ndai",
+            "source": "Personal Pronouns & Euphonic Conjunction o/oi: nan oiye ('you and I'), neny oiye",
             "pronunciation": "na-nu / i-ye / ne-nye / i-og / ndai / ne-nje",
             "hint": "Rule (1) & Rule (4) in Hinde (1901, pp. 2–3)"
           },
           {
-            "target": "mer torono (not bad), mer gule (not milk) • me sidai (not good), me sabuk (not large) • maiu (I do not want), maiulu (I do not know) • etwaolo (I am not going), eteau (he will not bring)",
-            "source": "The 4 Negation Prefix Types: mer- (before consonants except s), me- (before s), m- (before vowels), and ete-/etwa-/etu- (Hinde 1901, Rule 3, pp. 2–3)",
+            "target": "mer torono (not bad), mer gule (not milk)",
+            "source": "The 4 Negation Prefix Types: mer-, me- (before s), m- (before vowels), and ete-/etwa-/etu-",
             "pronunciation": "mer to-ro-no / me si-dai / mai-u / mai-u-lu / e-twa-o-lo",
             "hint": "Abbreviated from meti ('not', Rule 3, pp. 2–3)"
           },
           {
-            "target": "nabu (1), ari (2), ūni (3), ungwun (4), miet (5), elle (6), nabishāna (7), issiet (8), nawdu / endōrroi (9), tomon (10), tigitum (20), ossom (30), arrtam (40), orrnom (50), īp (60 = Masai '100'), īp ari (two sixties = 120)",
-            "source": "Sexagesimal Numerals & Finger-Counting Signs: closed fist = 5, two closed fists = 10, snapping fingers of one hand = 60 (īp, 1 warrior company) (Hinde 1901, Rules 9–10, pp. 4–5)",
-            "pronunciation": "na-bu / a-ri / u-ni / u-ngwun / miet / el-le / na-bi-sha-na / is-siet / naw-du / to-mon / ip",
+            "target": "nabu (1), ari (2), ūni (3), ungwun (4), miet (5), elle (6), nabishāna",
+            "source": "Sexagesimal Numerals & Finger-Counting Signs: closed fist = 5, two closed fists = 10,",
+            "pronunciation": "nabu",
             "hint": "Arradua ngishu iīp = 'I see a hundred [60] cows' (p. 4)"
           },
           {
-            "target": "baba lai (my father) vs. minyi / menye (thy/his father) • yeyu ai (my mother, pl. noiyeyu) vs. ngutungy / ngotongy / nutun / notorn (thy/his/their mother)",
-            "source": "Possessive Adjectives & Kinship Suppletion Note (Hinde 1901, Rule 12 p. 6, Rule 19 p. 9 & Phrase Footnote * p. 35)",
-            "pronunciation": "ba-ba lai / mi-nyi / me-nye / ye-yu ai / noi-ye-yu / ngu-tu-ngy",
+            "target": "baba lai (my father) vs. minyi / menye (thy/his father)",
+            "source": "Possessive Adjectives & Kinship Suppletion Note",
+            "pronunciation": "baba-lai-vs-minyi",
             "hint": "baba and yeyu are never used in the 2nd or 3rd person (p. 35 fn. *)"
           },
           {
-            "target": "nadung (sg.) / negidung (pl.) 'to cut' • nebong (sg.) / negibong (pl.) 'to catch' • naisoja (sg.) / negasoja (pl.) 'to bathe' • tarranya! (sg.) / endarrain! (pl.) 'sing!'",
-            "source": "Singular vs. Plural Infinitives in n- (Rule 13), Past Prefix edeba (Rule 14) & Singular t- vs. Plural en- Imperatives (Rule 16, pp. 6–8)",
-            "pronunciation": "na-dung / ne-gi-dung / ne-bong / ne-gi-bong / tar-ra-nya / en-dar-rain",
+            "target": "nadung (sg.) / negidung (pl.) 'to cut'",
+            "source": "Singular vs. Plural Infinitives in n- (Rule 13), Past Prefix edeba (Rule 14) &",
+            "pronunciation": "nadung",
             "hint": "65 verb conjugation tables (54 regular, 4 irregular, 7 negative, pp. 11–30)"
           }
         ],
@@ -3856,59 +4064,77 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Ainyo berora? Aiyu nanu nalo, kaki maiu nanya.",
             "source": "Why sleep? I want to go, but I do not want to eat. (Hinde 1901, pp. 2, 10, 31, 33)"
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Hildegarde Hinde's 'The Masai Language' (1901, Rules 9–10, pp. 4–5), what number does 'īp' (their '100') actually represent, why, and how is it signed on the hand?",
-            "correctAnswer": "60 — because the Masai count in sixties and a company of warriors is composed of 60 men; it is signed by snapping the fingers of one hand",
-            "options": [
-              "60 — because the Masai count in sixties and a company of warriors is composed of 60 men; it is signed by snapping the fingers of one hand",
-              "50 — because a herd of cattle has 50 cows; it is signed by raising both thumbs",
-              "120 — because two warrior companies march together; it is signed by clapping twice",
-              "40 — because forty days make a rainy season; it is signed by touching the forehead"
-            ],
-            "hint": "See Hinde (1901, Rules 9–10, pp. 4–5)"
-          }
         ]
       },
       {
         "id": "maasai-u15-s2",
-        "title": "Hinde (1901) Salutations, 3 Songs, 3 Ethnonyms, 8 Geographical Place-Names, 10 Curses & Loanword Footnotes (pp. 41–75)",
+        "title": "Hinde Salutations, 3 Songs, 3 Ethnonyms, 8 Geographical",
         "icon": "🎶",
         "description": "Explore the salutations, 3 traditional songs (Children's Rain Song, Medicine Song to Mbatian, and Warriors' Song against Sendeyo), 3 ethnonyms, 8 Kenyan geographical names, 10 curses, and 5 vocabulary footnotes on pp. 41–75.",
         "tips": "Notice how three major Rift Valley / Central Highlands mountains are named by colour on p. 42: Mt. Kenya = oldonyo gēri ('the striped mountain'), Kilimanjaro = oldonyo eborr ('the white mountain'), and Mt. Suswa = oldonyo kenyuki ('the red mountain').",
         "culturalNote": "Page 42 of Hinde (1901) preserves three historic songs from the 1890s—including the Medicine Song invoking the great prophet Mbatian ('Aamon yi ngai, aamon m'Batian') and the Warriors' War-Song when marching against Mbatian's son Sendeyo ('Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta').",
         "words": [
           {
-            "target": "tagwenia! (lit. 'laugh', pl. tagwenia bōōgi!) — Reply: īgo! • soboi! — Reply: eber! • nassak! (on shaking hands)",
+            "target": "tagwenia!",
             "source": "Salutations to a Woman, to a Man, and on Shaking Hands (Hinde 1901, p. 41)",
             "pronunciation": "ta-gwe-nia / i-go / so-boi / e-ber / nas-sak",
             "hint": "Hinde (1901, p. 41)"
           },
           {
-            "target": "1. \"Siumbi aielisiumbi ngai kijaiga eo!\" • 2. \"Aamon yi ngai, aamon m'Batian.\" • 3. \"Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta.\"",
-            "source": "All 3 Traditional Songs on p. 42: Children's Rain Song ('God we sing, God rain we pray thee oh!'), Medicine Song ('We pray God, we pray Batian'), and Warriors' Song When Going to Fight Sendeyo",
-            "pronunciation": "si-um-bi ai-e-li-si-um-bi ngai / aa-mon yi ngai aa-mon m-ba-tian / sen-de-yo ma-no-loi-mo-ti",
+            "target": "1. \"Siumbi aielisiumbi ngai kijaiga eo!\"",
+            "source": "All 3 Traditional Songs on p. 42: Children's Rain Song, Medicine Song, and Warriors'",
+            "pronunciation": "1-siumbi-aielisiumbi-ngai",
             "hint": "Recorded verbatim on p. 42 of Hinde (1901)"
           },
           {
-            "target": "Orrmāssani (pl. elmāsai, Masai) • olldōrrobon (pl. dōrrobo, Hunters) • orrgunoni (pl. elgunonu, Iron workers)",
-            "source": "The 3 Social & Occupational Group Ethnonyms (Hinde 1901, p. 42)",
-            "pronunciation": "orr-mas-sa-ni / el-ma-sai / oll-dor-ro-bon / orr-gu-no-ni / el-gu-no-nu",
-            "hint": "Pastoralists, forest hunters, and blacksmith caste (p. 42)"
+            "target": "Orrmāssani",
+            "source": "pl. elmāsai, Masai",
+            "pronunciation": "orrmāssani"
           },
           {
-            "target": "oldonyo gēri (Mt. Kenya, 'striped mountain') • oldonyo eborr (Kilimanjaro, 'white mountain') • oldonyo kenyuki (Suswa, 'red mountain') • ngare nairobi ('cold water') • Ngongo bagas ('eye of the Spring') • Eldonyo sabuk ('big mountain') • Gwasso kidong ('river of ollokidong quiver trees') • Enaibasha ('great water or sea')",
-            "source": "All 8 Geographical Names & Etymologies Recorded on p. 42 of Hinde (1901)",
-            "pronunciation": "ol-do-nyo ge-ri / ol-do-nyo e-borr / ol-do-nyo ke-nyu-ki / nga-re nai-ro-bi / e-nai-ba-sha",
-            "hint": "Hinde (1901, p. 42)"
+            "target": "olldōrrobon",
+            "source": "pl. dōrrobo, Hunters",
+            "pronunciation": "olldōrrobon"
           },
           {
-            "target": "engiondo pl. engiondoni (Kikuyu basket, p. 48) • ngwashin (Kikuyu potato, p. 65) • ndudu (Swahili jigger, p. 59) • ngaioulu (syphilis, lit. 'God knows', p. 70)",
-            "source": "The 4 Lexical Loanword & Medical History Footnotes in Hinde's Vocabulary (1901, pp. 48, 59, 65, 70)",
-            "pronunciation": "en-gion-do / ngwa-shin / ndu-du / ngai-ou-lu",
-            "hint": "Kikuyu agricultural trade loans and Swahili caravan-era disease terms"
+            "target": "orrgunoni",
+            "source": "pl. elgunonu, Iron workers",
+            "pronunciation": "orrgunoni"
+          },
+          {
+            "target": "ngare nairobi",
+            "source": "cold water",
+            "pronunciation": "ngare-nairobi"
+          },
+          {
+            "target": "Ngongo bagas",
+            "source": "eye of the Spring",
+            "pronunciation": "ngongo-bagas"
+          },
+          {
+            "target": "Eldonyo sabuk",
+            "source": "big mountain",
+            "pronunciation": "eldonyo-sabuk"
+          },
+          {
+            "target": "Gwasso kidong",
+            "source": "river of ollokidong quiver trees",
+            "pronunciation": "gwasso-kidong"
+          },
+          {
+            "target": "Enaibasha",
+            "source": "great water or sea",
+            "pronunciation": "enaibasha"
+          },
+          {
+            "target": "ngwashin",
+            "source": "Kikuyu potato, p. 65",
+            "pronunciation": "ngwashin"
+          },
+          {
+            "target": "ndudu",
+            "source": "Swahili jigger, p. 59",
+            "pronunciation": "ndudu"
           }
         ],
         "sentences": [
@@ -3920,77 +4146,349 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "target": "Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta.",
             "source": "Sendeyo has done evil, we were friends once but now we go to fight him with our spears, the big ones in front, the small behind. (Hinde 1901, p. 42)"
           }
-        ],
-        "authoredExercises": [
+        ]
+      },
+      {
+        "id": "maasai-hohnel-1894-vol1-lesson",
+        "title": "Höhnel: Il Oikob vs. Il Oogolala, Elmoran Diet (ol-pul &",
+        "icon": "Shield",
+        "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I) firsthand records of the Masai (Il Oikob) and Wakwafi (Il Oogolala / Il Lumbwa), Sigirari and Loitokitok greetings, Count Teleki's smallpox variolation of ~200 porters at Mfuto, the strict Elmoran milk-and-meat dietary separation, and Chief Laibon Mbatian of the Engidong clan.",
+        "tips": "In Chapter IV (pp. 218–219), Höhnel notes that Masai warriors (Elmoran) never eat milk and beef on the same day, always taking a strong emetic and purgative before switching between their wet-season milk-and-blood diet (drawn with the blocked arrow l-ngoret) and their secluded forest meat-camp (ol-pul) seasoned with astringent kiloriti bark.",
+        "culturalNote": "At Mfuto camp (3,580 ft., July 31–Aug. 10, 1887, pp. 225–228), when 28 porters fell ill with smallpox (maradhi ya ndui), Count Teleki inoculated ~200 healthy men on the upper arm with clear humanized varioloid lymph using a lancet, producing a mild 2-day reaction fever on Aug. 5–6 and saving the expedition.",
+        "words": [
           {
-            "type": "multiple_choice",
-            "prompt": "On page 42 of Hildegarde Hinde's 'The Masai Language' (1901), what are the exact Masai names and meanings given for Mount Kenya, Mount Kilimanjaro, Mount Suswa, and the Kedong River (Gwasso kidong)?",
-            "correctAnswer": "Mt. Kenya = oldonyo gēri ('the striped mountain'), Kilimanjaro = oldonyo eborr ('the white mountain'), Suswa = oldonyo kenyuki ('the red mountain'), and Gwasso kidong = 'the river of the ollokidong trees (the wood of which is used for making quivers)'",
-            "options": [
-              "Mt. Kenya = oldonyo gēri ('the striped mountain'), Kilimanjaro = oldonyo eborr ('the white mountain'), Suswa = oldonyo kenyuki ('the red mountain'), and Gwasso kidong = 'the river of the ollokidong trees (the wood of which is used for making quivers)'",
-              "Mt. Kenya = oldonyo eborr, Kilimanjaro = oldonyo kenyuki, Suswa = oldonyo sabuk, and Gwasso kidong = 'river of red stones'",
-              "Mt. Kenya = Eldonyo sabuk, Kilimanjaro = Enaibasha, Suswa = Ngongo bagas, and Gwasso kidong = 'eye of the spring'",
-              "They are all named after Masai medicine-men"
-            ],
-            "hint": "See Hinde (1901, Geographical Names, p. 42)"
+            "target": "Leibon, sobaj!",
+            "source": "Sigirari & Loitokitok Salutations, Pasture Toponymy & Parliamentary Twig-Oratory",
+            "pronunciation": "leibon",
+            "hint": "Höhnel (1894, Vol. I, Chs. II–IV)"
+          },
+          {
+            "target": "l-poror",
+            "source": "age-set every 4–5 yrs.",
+            "pronunciation": "l-poror"
+          },
+          {
+            "target": "l-ngoret",
+            "source": "blocked blood-arrow",
+            "pronunciation": "l-ngoret"
+          },
+          {
+            "target": "kibuyu smoked with ol-oirien",
+            "source": "wild olive, p. 229",
+            "pronunciation": "kibuyu-smoked-with-ol-oirien"
+          },
+          {
+            "target": "Engai",
+            "source": "Masai Religion, Paramount Prophet Mbatian & Expedition Trade Goods",
+            "pronunciation": "engai",
+            "hint": "Höhnel (1894, Vol. I, Chs. I & IV)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Leibon, sobaj! — Ebaj, moran!",
+            "source": "Greeting to a medicine-man/leader and warrior reply at Sigirari and Loitokitok (Höhnel 1894, Vol. I, pp. 131, 214)"
           }
         ]
-      }
+      },
+{
+        "id": "maasai-rangeland-education-health",
+        "title": "Rangeland Stewardship, Education & Community Health",
+        "icon": "Compass",
+        "description": "Practice contemporary Maa expressions for rotational grazing, children's education, and mobile health outreach.",
+        "culturalNote": "Modern Maa communities across Narok, Kajiado, and Samburu combine seasonal pasture conservation (olpurkel lowlands vs. osupuko highlands) with universal schooling and mobile clinics.",
+        "grammarTip": "Compare the feminine plural gender prefix in-/en- in inkishu ('cattle') and intoyie ('girls') with the masculine plural il-/ol- in ilayiok ('boys') and ilkeek ('trees / medicines').",
+        "words": [
+                {
+                        "target": "Olpurkel",
+                        "source": "Wet-season lowland pasture",
+                        "pronunciation": "ohl-poor-kehl"
+                },
+                {
+                        "target": "Osupuko",
+                        "source": "Dry-season highland forest pasture",
+                        "pronunciation": "oh-soo-poo-koh"
+                },
+                {
+                        "target": "Olkujita",
+                        "source": "Green grass / Pasture",
+                        "pronunciation": "ohl-koo-jee-tah"
+                },
+                {
+                        "target": "Enkisoma",
+                        "source": "Education / Reading",
+                        "pronunciation": "ehn-kee-soh-mah"
+                },
+                {
+                        "target": "Intoyie oo layiok",
+                        "source": "Girls and boys",
+                        "pronunciation": "een-toh-yee-eh oh lah-yee-ohk"
+                },
+                {
+                        "target": "Ilkeek le biotisho",
+                        "source": "Medicines for health",
+                        "pronunciation": "eel-kehk leh byoh-tee-shoh"
+                },
+                {
+                        "target": "Olosho le Maa",
+                        "source": "The Maasai community / nation",
+                        "pronunciation": "oh-loh-shoh leh maa"
+                },
+                {
+                        "target": "Erripata",
+                        "source": "Protection / Conservation",
+                        "pronunciation": "ehr-ree-pah-tah"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Eeta enkop ang' inkishu kumok ooirkujit ootii olpurkel.",
+                        "source": "Our land has many cattle and green pastures in the lowlands."
+                },
+                {
+                        "target": "Enkisoma oo ntoyie oo layiok nerrip olosho le Maa pooki.",
+                        "source": "Educating girls and boys strengthens the whole Maasai community."
+                }
+        ]
+},
+        {
+        "id": "maasai-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Maasai (Maa) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhne",
+        "words": [
+                {
+                        "target": "Ashe / Ashe oleng'",
+                        "source": "Thank you / Thank you very much",
+                        "pronunciation": "ashe / ashe o-leng'"
+                },
+                {
+                        "target": "tagwenia",
+                        "source": "Salutation to a woman (literally laugh)",
+                        "pronunciation": "tagwe-nia"
+                },
+                {
+                        "target": "Supa! (resp. Ipa!)",
+                        "source": "Hello! Good day! (general greeting among peers)",
+                        "pronunciation": "supa"
+                },
+                {
+                        "target": "Asai!",
+                        "source": "Many thanks!",
+                        "pronunciation": "a-sai"
+                },
+                {
+                        "target": "Biado!",
+                        "source": "Goodbye!",
+                        "pronunciation": "bi-a-do"
+                },
+                {
+                        "target": "Sopai! (reply: Eépa!)",
+                        "source": "Good morning! (and reply)",
+                        "pronunciation": "so-pai / e-e-pa"
+                },
+                {
+                        "target": "aāsi (lit. an expression of delight)",
+                        "source": "Thank you",
+                        "pronunciation": "aāsi"
+                },
+                {
+                        "target": "Kirrip emoti pl. motiu te nkang' ang'",
+                        "source": "We keep cooking vessel in our homestead",
+                        "pronunciation": "kirrip emoti pl motiu te nkang ang"
+                },
+                {
+                        "target": "Kirrip essudoii te nkang' ang'",
+                        "source": "We keep hide in our homestead",
+                        "pronunciation": "kirrip essudoii te nkang ang"
+                },
+                {
+                        "target": "Kirrip essebil pl. essebilli te nkang' ang'",
+                        "source": "We keep barb in our homestead",
+                        "pronunciation": "kirrip essebil pl essebilli te nkang ang"
+                },
+                {
+                        "target": "Kirrip E-moti te nkang' ang'",
+                        "source": "We keep the cooking pot in our homestead",
+                        "pronunciation": "kirrip e-moti te nkang ang"
+                },
+                {
+                        "target": "Kirrip essibirr orlalim te nkang' ang'",
+                        "source": "We keep blade in our homestead",
+                        "pronunciation": "kirrip essibirr orlalim te nkang ang"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ke iata ērdo ngāiiji taata?",
+                        "source": "Do you have a long house today?"
+                },
+                {
+                        "target": "Ke iata enjerdalalim taata?",
+                        "source": "Do you have knife-handle today?"
+                },
+                {
+                        "target": "Ke iata tobollo kutugaji taata?",
+                        "source": "Do you have open the door today?"
+                },
+                {
+                        "target": "Ke iata ingieno kutugaji taata?",
+                        "source": "Do you have shut the door today?"
+                },
+                {
+                        "target": "Ke iata engang pl. engangiti taata?",
+                        "source": "Do you have boma today?"
+                },
+                {
+                        "target": "Ke iata En-joni taata?",
+                        "source": "Do you have piece of hide today?"
+                },
+                {
+                        "target": "Ke iata Eng-aji e-ongwan taata?",
+                        "source": "Do you have the fourth hut today?"
+                },
+                {
+                        "target": "Ke iata emoti pl. motiu taata?",
+                        "source": "Do you have cooking vessel today?"
+                },
+                {
+                        "target": "Ke iata essudoii taata?",
+                        "source": "Do you have hide today?"
+                },
+                {
+                        "target": "Ke iata essebil pl. essebilli taata?",
+                        "source": "Do you have barb today?"
+                },
+                {
+                        "target": "Ke iata E-moti taata?",
+                        "source": "Do you have the cooking pot today?"
+                },
+                {
+                        "target": "Ke iata essibirr orlalim taata?",
+                        "source": "Do you have blade today?"
+                }
+        ]
+},
+        {
+        "id": "maasai-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Maasai (Maa) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhne",
+        "words": [
+                {
+                        "target": "Kirrip endao engilani te nkang' ang'",
+                        "source": "We keep put off in our homestead",
+                        "pronunciation": "kirrip endao engilani te nkang ang"
+                },
+                {
+                        "target": "Kirrip erremetino te nkang' ang'",
+                        "source": "We keep your spear in our homestead",
+                        "pronunciation": "kirrip erremetino te nkang ang"
+                },
+                {
+                        "target": "Kirrip olldedu te nkang' ang'",
+                        "source": "We keep nails in our homestead",
+                        "pronunciation": "kirrip olldedu te nkang ang"
+                },
+                {
+                        "target": "Kaja enkeene e enjerdalalim te sokoni?",
+                        "source": "What is the price of knife-handle at the market?",
+                        "pronunciation": "kaja enkeene e enjerdalalim te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e engang pl. engangiti te sokoni?",
+                        "source": "What is the price of boma at the market?",
+                        "pronunciation": "kaja enkeene e engang pl engangiti te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e emoti pl. motiu te sokoni?",
+                        "source": "What is the price of cooking vessel at the market?",
+                        "pronunciation": "kaja enkeene e emoti pl motiu te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e essudoii te sokoni?",
+                        "source": "What is the price of hide at the market?",
+                        "pronunciation": "kaja enkeene e essudoii te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e essebil pl. essebilli te sokoni?",
+                        "source": "What is the price of barb at the market?",
+                        "pronunciation": "kaja enkeene e essebil pl essebilli te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e essibirr orlalim te sokoni?",
+                        "source": "What is the price of blade at the market?",
+                        "pronunciation": "kaja enkeene e essibirr orlalim te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e endao engilani te sokoni?",
+                        "source": "What is the price of put off at the market?",
+                        "pronunciation": "kaja enkeene e endao engilani te sokoni"
+                },
+                {
+                        "target": "Kaja enkeene e erremetino te sokoni?",
+                        "source": "What is the price of your spear at the market?",
+                        "pronunciation": "kaja enkeene e erremetino te sokoni"
+                },
+                {
+                        "target": "Torripa emoti pl. motiu pee eaku serian enkop",
+                        "source": "Guard cooking vessel for the peace of the land",
+                        "pronunciation": "torripa emoti pl motiu pee eaku serian enkop"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ke iata endao engilani taata?",
+                        "source": "Do you have put off today?"
+                },
+                {
+                        "target": "Ke iata erremetino taata?",
+                        "source": "Do you have your spear today?"
+                },
+                {
+                        "target": "Ke iata olldedu taata?",
+                        "source": "Do you have nails today?"
+                },
+                {
+                        "target": "Kaja enkeene e Kutuk-aji te sokoni?",
+                        "source": "What is the price of the door at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e Kishomi J te sokoni?",
+                        "source": "What is the price of the gate at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e orrgerenget te sokoni?",
+                        "source": "What is the price of game trap at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e Em-bae te sokoni?",
+                        "source": "What is the price of the arrow at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e El-loft1 go te sokoni?",
+                        "source": "What is the price of the shield at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e engajenye te sokoni?",
+                        "source": "What is the price of their house at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e enduela pl. endwalan te sokoni?",
+                        "source": "What is the price of bell at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e enjerdalalim te sokoni?",
+                        "source": "What is the price of knife-handle at the market?"
+                },
+                {
+                        "target": "Kaja enkeene e engang pl. engangiti te sokoni?",
+                        "source": "What is the price of boma at the market?"
+                }
+        ]
+}
     ]
   }
 ];
-
-MAASAI_UNITS[MAASAI_UNITS.length - 1].skills.push({
-  "id": "maasai-hohnel-1894-vol1-lesson",
-  "title": "Höhnel (1894, Vol. I, Chs. III, IV & VI): Il Oikob vs. Il Oogolala, Elmoran Diet (ol-pul & kiloriti), Loitokitok Oratory & Mfuto Variolation",
-  "icon": "Shield",
-  "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I) firsthand records of the Masai (Il Oikob) and Wakwafi (Il Oogolala / Il Lumbwa), Sigirari and Loitokitok greetings, Count Teleki's smallpox variolation of ~200 porters at Mfuto, the strict Elmoran milk-and-meat dietary separation, and Chief Laibon Mbatian of the Engidong clan.",
-  "tips": "In Chapter IV (pp. 218–219), Höhnel notes that Masai warriors (Elmoran) never eat milk and beef on the same day, always taking a strong emetic and purgative before switching between their wet-season milk-and-blood diet (drawn with the blocked arrow l-ngoret) and their secluded forest meat-camp (ol-pul) seasoned with astringent kiloriti bark.",
-  "culturalNote": "At Mfuto camp (3,580 ft., July 31–Aug. 10, 1887, pp. 225–228), when 28 porters fell ill with smallpox (maradhi ya ndui), Count Teleki inoculated ~200 healthy men on the upper arm with clear humanized varioloid lymph using a lancet, producing a mild 2-day reaction fever on Aug. 5–6 and saving the expedition.",
-  "words": [
-    {
-      "target": "Leibon, sobaj! — Ebaj, moran! (p. 131) • Sobai! — Eba! (p. 214) • Angata Lesulenge ('pasture or meadow lands', p. 84) • Leigwanan twig-oratory with chorus 'Eh-eh!' at Loitokitok (pp. 214, 223)",
-      "source": "Sigirari & Loitokitok Salutations, Pasture Toponymy & Parliamentary Twig-Oratory (Höhnel 1894, Vol. I, pp. 84, 131, 214, 223)",
-      "pronunciation": "lei-bon so-baj / e-baj mo-ran / so-bai e-ba / an-ga-ta le-su-len-ge / lei-gwa-nan",
-      "hint": "Höhnel (1894, Vol. I, Chs. II–IV)"
-    },
-    {
-      "target": "Il Oikob (pastoral Masai) vs. Il Oogolala / Il Lumbwa (Wakwafi) & Il Leikipiak (pp. 218, 376) • l-poror (age-set every 4–5 yrs.) • Elmoran & Ditto in manyatta vs. Elmorua • ngoroyok & surutia (brass ear-discs)",
-      "source": "Masai & Wakwafi Subdivisions, Age-Sets, Warrior Kraals & Married Women's Regalia (Höhnel 1894, Vol. I, pp. 218–219, 376)",
-      "pronunciation": "il oi-kob / il oo-go-la-la / il lum-bwa / l-po-ror / el-mo-ran / dit-to / el-mo-rua / ngo-ro-yok / su-ru-tia",
-      "hint": "Höhnel (1894, Vol. I, Ch. IV, pp. 218–219)"
-    },
-    {
-      "target": "l-ngoret (blocked blood-arrow) • ol-pul (forest meat-camp) & kiloriti (Mimosa nilotica bark) • najosho (elders' honey-beer) • kibuyu smoked with ol-oirien (wild olive, p. 229) • en-gopiro & ol-twala (p. 231)",
-      "source": "Elmoran Dietary Separation, Milk-Gourd Smoking & Kapotei Warrior Regalia (Höhnel 1894, Vol. I, pp. 218–219, 229, 231)",
-      "pronunciation": "l-ngo-ret / ol-pul / ki-lo-ri-ti / na-jo-sho / ki-bu-yu / ol-oi-rien / en-go-pi-ro / ol-twa-la",
-      "hint": "Höhnel (1894, Vol. I, Ch. IV, pp. 218–231)"
-    },
-    {
-      "target": "Engai • Chief Laibon Mbatian of the Engidong clan at Kisongo (brother-in-law of Jumbe Kimemeta) & tasim war-charms (pp. 218–219) • Trade beads: samesame, madschibahari, aschanga meupe, ukuta, sambaj, murtinarok, mboro & senenge wire (pp. 12–14)",
-      "source": "Masai Religion, Paramount Prophet Mbatian & Expedition Trade Goods (Höhnel 1894, Vol. I, pp. 12–14, 218–219)",
-      "pronunciation": "en-gai / lai-bon m-ba-tian / en-gi-dong / ta-sim / sa-me-sa-me / mur-ti-na-rok / se-nen-ge",
-      "hint": "Höhnel (1894, Vol. I, Chs. I & IV)"
-    }
-  ],
-  "sentences": [
-    {
-      "target": "Leibon, sobaj! — Ebaj, moran! • Sobai! — Eba!",
-      "source": "Greeting to a medicine-man/leader and warrior reply at Sigirari and Loitokitok (Höhnel 1894, Vol. I, pp. 131, 214)"
-    }
-  ],
-  "authoredExercises": [
-    {
-      "type": "multiple_choice",
-      "prompt": "According to Lieut. Ludwig von Höhnel (1894, Vol. I, Ch. IV, pp. 218–219, 223, 225–229), how do Masai warriors (Elmoran) regulate their milk and meat diets, how do Loitokitok spokesmen (Leigwanan) punctuate their speeches, and how did Count Teleki halt the smallpox outbreak at Mfuto?",
-      "correctAnswer": "Elmoran never eat milk and beef on the same day, taking a strong emetic and purgative before switching between milk+blood (l-ngoret) and forest beef-feasts (ol-pul with kiloriti bark); Loitokitok Leigwanan lay a twig on the ground per clause while warriors chant 'Eh-eh!'; and at Mfuto Teleki variolated ~200 men on the upper arm with humanized lymph",
-      "options": [
-        "Elmoran never eat milk and beef on the same day, taking a strong emetic and purgative before switching between milk+blood (l-ngoret) and forest beef-feasts (ol-pul with kiloriti bark); Loitokitok Leigwanan lay a twig on the ground per clause while warriors chant 'Eh-eh!'; and at Mfuto Teleki variolated ~200 men on the upper arm with humanized lymph",
-        "Elmoran boil beef in milk every morning; Leigwanan beat drums; and Teleki burned the camp at Mfuto",
-        "Elmoran eat only maize and bananas; Leigwanan shoot arrows into a tree; and Sembodja cured Mfuto with hens",
-        "Elmoran drink honey-beer (najosho) daily; Leigwanan blow kudu horns; and Mbatian visited Mfuto"
-      ],
-      "hint": "See Höhnel (1894, Vol. I, Ch. IV, pp. 218–228)"
-    }
-  ]
-});

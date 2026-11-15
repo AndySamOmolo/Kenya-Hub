@@ -190,6 +190,21 @@ export default function KenyanTranslatorPage() {
     setContributeSubmitted(true);
   };
 
+  // Support ?lang=<languageId>&q=<query> URL deep links from courses and blog posts
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get("lang")?.toLowerCase().trim();
+    const qParam = params.get("q")?.trim();
+    if (langParam && DICT_META_MAP[langParam]) {
+      setTargetLanguage(langParam);
+      setSourceLanguage("english");
+    }
+    if (qParam) {
+      setSearchQuery(qParam);
+    }
+  }, []);
+
   // Load recent searches and favorites from localStorage
   useEffect(() => {
     try {
@@ -303,9 +318,13 @@ export default function KenyanTranslatorPage() {
       if (exactMatches.length < maxResults) {
         const longPivots = pivots.filter((pw) => pw.length >= 3);
         if (longPivots.length > 0) {
+          const wordBoundaryRegexes = longPivots.map(
+            (pw) => new RegExp(`\\b${pw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i")
+          );
+          // Pass 1: word-boundary matches (so "cat" matches "wild cat" before "cattle")
           for (const item of idx.all) {
             if (seen.has(item.entry)) continue;
-            if (longPivots.some((pw) => item.engLower.includes(pw) || item.engTerms.some((et) => et.includes(pw)))) {
+            if (wordBoundaryRegexes.some((rx) => rx.test(item.engLower))) {
               seen.add(item.entry);
               partialMatches.push({
                 entry: item.entry,
@@ -319,6 +338,27 @@ export default function KenyanTranslatorPage() {
                 matchType: "partial",
               });
               if (exactMatches.length + partialMatches.length >= maxResults) break;
+            }
+          }
+          // Pass 2: prefix/substring fallback if still below maxResults
+          if (exactMatches.length + partialMatches.length < maxResults) {
+            for (const item of idx.all) {
+              if (seen.has(item.entry)) continue;
+              if (longPivots.some((pw) => pw.length >= 4 && (item.engLower.includes(pw) || item.engTerms.some((et) => et.includes(pw))))) {
+                seen.add(item.entry);
+                partialMatches.push({
+                entry: item.entry,
+                sourceEntry: sourceMatch,
+                pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
+                categoryName: item.cat.name,
+                categoryIcon: item.cat.icon || "📖",
+                languageId: dict.languageId,
+                languageName: dict.languageName,
+                family: dict.family,
+                matchType: "partial",
+              });
+                if (exactMatches.length + partialMatches.length >= maxResults) break;
+              }
             }
           }
         }
@@ -647,8 +687,8 @@ export default function KenyanTranslatorPage() {
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
         <ExpandablePillRow>
           {([
-            { id: "translate" as const, label: "Translate & Dictionary (All 22 Languages)" },
-            { id: "browse" as const, label: "Browse 22 Dictionaries" },
+            { id: "translate" as const, label: `Translate & Dictionary (All ${ALL_DICT_METAS.length} Languages)` },
+            { id: "browse" as const, label: `Browse ${ALL_DICT_METAS.length} Dictionaries` },
           ]).map((mode) => {
             const active = viewMode === mode.id;
             return (
@@ -1257,7 +1297,7 @@ export default function KenyanTranslatorPage() {
           </div>
           <ul className="space-y-1.5">
             <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICT_METAS.length} languages at once) using English as an automatic semantic bridge.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), Unicode CLDR, and community linguistic contributions.</span></li>
+            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), 18 commercially permissive Kenyan text dataset suites (Kencorpus, Project Tafsiri v2.0, Thiomi, Google SMOL/GATITOS, LughaGen, ThinkKenya, Common Voice CC0, Sunbird SALT, DDD Kenya, CGIAR, WOLD & Kaikki.org), and Unicode CLDR.</span></li>
           </ul>
         </div>
 

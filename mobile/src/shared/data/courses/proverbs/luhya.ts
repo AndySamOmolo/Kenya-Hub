@@ -178,3 +178,86 @@ LUHYA_PROVERBS.push({
   "theme": "wisdom",
   "sourceCitation": "Dr. Moody Amakobe, Project Tafsiri v2.0: Luhya Multilingual Dataset (Hugging Face mamakobe/luhya-multilingual-dataset, 2025, CC-BY-4.0)"
 });
+
+LUHYA_PROVERBS.push(
+  {
+    id: "luhya-kencorpus-chisimo-1",
+    languageId: "luhya",
+    languageName: "Luhya (Lubukusu — Kencorpus CHISIMO #2542)",
+    indigenous: "Embako sebea ta!",
+    literalTranslation: "A hoe never tells a lie.",
+    meaning: "Documented in Kencorpus/KenCorpus_text (Wanjawa et al. 2022/2023, CC-BY-4.0, story_id 2542): diligent cultivation of the land always yields an honest harvest.",
+    englishEquivalent: "Hard work never deceives.",
+    theme: "hard-work",
+    sourceCitation: "Kencorpus/KenCorpus_text (Wanjawa et al. 2022/2023, CC-BY-4.0, story_id 2542)"
+  },
+  {
+    id: "luhya-kencorpus-chisimo-2",
+    languageId: "luhya",
+    languageName: "Luhya (Lubukusu — Kencorpus CHISIMO #2542)",
+    indigenous: "Eunwa efwichanga ne lunyasi mukhunwa.",
+    literalTranslation: "A bull dies with grass still in its mouth.",
+    meaning: "Documented in Kencorpus/KenCorpus_text (Wanjawa et al. 2022/2023, CC-BY-4.0, story_id 2542): a person of resolve perseveres in their duty to the very end.",
+    englishEquivalent: "Never give up the struggle.",
+    theme: "courage",
+    sourceCitation: "Kencorpus/KenCorpus_text (Wanjawa et al. 2022/2023, CC-BY-4.0, story_id 2542)"
+  },
+  {
+    id: "luhya-tafsiri-proverb-1",
+    languageId: "luhya",
+    languageName: "Luhya (Lumarachi — Project Tafsiri v2.0)",
+    indigenous: "Namwana ahila nyina amachesi.",
+    literalTranslation: "A child surpasses their mother in intelligence.",
+    meaning: "Documented in Dr. Moody Amakobe's Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, 2025, CC-BY-4.0): each new generation builds upon and expands the wisdom of its parents.",
+    englishEquivalent: "The pupil may surpass the master.",
+    theme: "wisdom",
+    sourceCitation: "Dr. Moody Amakobe, Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, 2025, CC-BY-4.0)"
+  },
+  {
+    id: "luhya-tafsiri-proverb-2",
+    languageId: "luhya",
+    languageName: "Luhya (Lumarachi — Project Tafsiri v2.0)",
+    indigenous: "Paara akoboola; chelaasia obulayi eshifune shielikhuwa elo noshiili okhuliboola.",
+    literalTranslation: "Think about what you say; examine well the root of the matter before speaking it.",
+    meaning: "Documented in Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, 2025, CC-BY-4.0): weigh the origin and consequences of your words before speaking in council.",
+    englishEquivalent: "Think before you speak.",
+    theme: "caution",
+    sourceCitation: "Dr. Moody Amakobe, Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, 2025, CC-BY-4.0)"
+  }
+);
+
+LUHYA_PROVERBS.push({
+  "id": "luhya-tafsiri-prov-1",
+  "languageId": "luhya",
+  "languageName": "Luhya (Nyala / Wanga / Bukusu)",
+  "indigenous": "Oluyia olulala lurianga obusuma halala.",
+  "literalTranslation": "One united Luhya homestead eats ugali together.",
+  "meaning": "Unity and shared meals around the family hearth sustain peace and collective strength.",
+  "englishEquivalent": "United we stand, divided we fall.",
+  "theme": "unity",
+  "sourceCitation": "Project Tafsiri v2.0 Luhya Dataset (Okubo 2016 Nyala Proverbs & Wambunya Luyia Proverbs, CC-BY-4.0)"
+});
+
+LUHYA_PROVERBS.push({
+  "id": "luhya-kencorpus-prov-2",
+  "languageId": "luhya",
+  "languageName": "Luhya (Lubukusu)",
+  "indigenous": "Embako sebea ta!",
+  "literalTranslation": "A hoe never tells a lie!",
+  "meaning": "Diligent cultivation of the soil always rewards the farmer with a harvest.",
+  "englishEquivalent": "Hard work always pays off.",
+  "theme": "hard-work",
+  "sourceCitation": "Kencorpus Lubukusu Chisimo Proverbs (story_id 2542, Wanjawa et al. 2023, CC-BY-4.0)"
+});
+
+LUHYA_PROVERBS.push({
+  "id": "luhya-kencorpus-prov-3",
+  "languageId": "luhya",
+  "languageName": "Luhya (Lubukusu)",
+  "indigenous": "Eunwa efwichanga ne lunyasi mukhunwa.",
+  "literalTranslation": "A bull dies still holding grass in its mouth.",
+  "meaning": "A person of courage and duty perseveres in their work to the very end.",
+  "englishEquivalent": "Never give up until the end.",
+  "theme": "courage",
+  "sourceCitation": "Kencorpus Lubukusu Chisimo Proverbs (story_id 2542, Wanjawa et al. 2023, CC-BY-4.0)"
+});

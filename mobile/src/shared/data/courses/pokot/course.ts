@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Pokot (Pökoot) (Pökoot) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const POKOT_CONFIG: LanguageConfig = {
   "id": "pokot",
@@ -30,9 +25,11 @@ export const POKOT_CONFIG: LanguageConfig = {
 export const POKOT_UNITS: CourseUnit[] = [
   {
     "id": "pokot-unit-1",
-    "title": "Unit 1: Pökoot Salutations (p. 91), Beech’s (1911) Suk Grammar, Quinary Numerals & Tiangoi! Riddles",
+    "unitNumber": 1,
+    "title": "Pökoot Salutations, Beech’s Suk Grammar, Quinary Numerals &",
     "description": "Master Pökoot salutations, nouns, quinary numerals 1–100 (pp. 66–68), riddles (pp. 43–45), and the Hymn to Torôrut (p. 16) from Mervyn Beech (1911).",
     "icon": "Megaphone",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-beech-1911-lexicon",
@@ -43,9 +40,9 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "In Mervyn Beech (1911, p. 19), the elder Tiamolok describes the Suk celestial pantheon: Torôrut (Supreme winged Sky God whose wings flash lightning kerial and thunder kotil), his wife Seta (the Pleiades), his first-born son Arawaʻ (the Moon), his son Ilat (the Rain), his first-born daughter Topogh (the Evening Star), his younger brother Asis (the Sun), and his children Kokel (the Stars).",
         "words": [
           {
-            "target": "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! / Subai! (resp. Ērpa!) / Tapkwenya! (resp. Īgo!)",
+            "target": "Tokwes! Chamke-t!",
             "source": "Elder greeting litany! / Male greeting! / Female greeting!",
-            "pronunciation": "tokwes chamke-t — chamke-cha — chamke-kau — chamke-sapon / su-bai / tapkwenya",
+            "pronunciation": "tokwes-chamke-t",
             "hint": "Beech (1911, p. 91) Suk salutations"
           },
           {
@@ -55,28 +52,94 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, pp. 92, 96, 119, 143)"
           },
           {
-            "target": "Torôrut • Seta • Arawaʻ • Ilat • Topogh • Asis • Kokel",
-            "source": "Supreme Sky God • Pleiades (wife) • Moon (1st son) • Rain (son) • Evening Star (1st daughter) • Sun (younger brother) • Stars",
-            "pronunciation": "to-ro-rut • se-ta • a-ra-wa' • i-lat • to-pogh • a-sis • ko-kel",
-            "hint": "Beech (1911, p. 19) Suk celestial family"
+            "target": "Torôrut",
+            "source": "Supreme Sky God",
+            "pronunciation": "torôrut"
           },
           {
-            "target": "chi (pl. pich / pik) • muren • kôrkôʻ (pl. kôru) • Pĕch-on (pl. Pôkwut)",
-            "source": "Person (pl. People) • Warrior • Woman (pl. Women) • Suk person (pl. Suk people)",
-            "pronunciation": "chi • mu-ren • korko' • pech-on",
-            "hint": "Beech (1911, pp. 1, 57, 61)"
+            "target": "Seta",
+            "source": "Pleiades (wife)",
+            "pronunciation": "seta"
           },
           {
-            "target": "pogh • maʻ (mat, pl. môat) • ôr-a-pogh • kōkwa (pl. kokwo-ten)",
-            "source": "Water • Fire • Irrigation ditch/furrow • Village council assembly place",
-            "pronunciation": "pogh • ma' • or-a-pogh • kokwa",
-            "hint": "Beech (1911, pp. 54, 61, 101, 112)"
+            "target": "Arawaʻ",
+            "source": "Moon (1st son)",
+            "pronunciation": "arawa"
           },
           {
-            "target": "tainy (pl. tich) / teta (pl. toka) • cheghwa (verb: lu) • pagh / musong / matai",
-            "source": "Cattle / Cow • Milk (lu = drink milk vs. igh = drink water) • Grain / Millet / Eleusine",
-            "pronunciation": "tainy / te-ta • cheghwa • pagh / mu-song / ma-tai",
-            "hint": "Beech (1911, pp. 4, 9, 51–52, 62, 112)"
+            "target": "Ilat",
+            "source": "Rain (son)",
+            "pronunciation": "ilat"
+          },
+          {
+            "target": "Topogh",
+            "source": "Evening Star (1st daughter)",
+            "pronunciation": "topogh"
+          },
+          {
+            "target": "Asis",
+            "source": "Sun (younger brother)",
+            "pronunciation": "asis"
+          },
+          {
+            "target": "Kokel",
+            "source": "Stars",
+            "pronunciation": "kokel"
+          },
+          {
+            "target": "chi (pl. pich / pik)",
+            "source": "Person (pl. People)",
+            "pronunciation": "chi"
+          },
+          {
+            "target": "muren",
+            "source": "Warrior",
+            "pronunciation": "muren"
+          },
+          {
+            "target": "kôrkôʻ (pl. kôru)",
+            "source": "Woman (pl. Women)",
+            "pronunciation": "kôrkô"
+          },
+          {
+            "target": "Pĕch-on (pl. Pôkwut)",
+            "source": "Suk person (pl. Suk people)",
+            "pronunciation": "pĕch-on"
+          },
+          {
+            "target": "pogh",
+            "source": "Water",
+            "pronunciation": "pogh"
+          },
+          {
+            "target": "maʻ (mat, pl. môat)",
+            "source": "Fire",
+            "pronunciation": "ma"
+          },
+          {
+            "target": "ôr-a-pogh",
+            "source": "Irrigation ditch/furrow",
+            "pronunciation": "ôr-a-pogh"
+          },
+          {
+            "target": "kōkwa (pl. kokwo-ten)",
+            "source": "Village council assembly place",
+            "pronunciation": "kōkwa"
+          },
+          {
+            "target": "tainy (pl. tich) / teta (pl. toka)",
+            "source": "Cattle / Cow",
+            "pronunciation": "tainy"
+          },
+          {
+            "target": "cheghwa (verb: lu)",
+            "source": "Milk",
+            "pronunciation": "cheghwa"
+          },
+          {
+            "target": "pagh / musong / matai",
+            "source": "Grain / Millet / Eleusine",
+            "pronunciation": "pagh"
           },
           {
             "target": "okoñgô",
@@ -99,76 +162,26 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "mut ngô okoñgô (akan-kapei)",
             "source": "6 (5+1)",
-            "pronunciation": "mut ngo o-konggo mut ngo oghiengg mut ngo so-mok mut ngo anggwan ta-man",
+            "pronunciation": "mut-ngô-okoñgô",
             "hint": "Beech (1911, p. 67) quinary & Turkana-borrowed numerals 6–10"
           },
           {
             "target": "mut ngô oghieñg (akan-kare)",
             "source": "7 (5+2)",
-            "pronunciation": "mut ngo o-konggo mut ngo oghiengg mut ngo so-mok mut ngo anggwan ta-man",
+            "pronunciation": "mut-ngô-oghieñg",
             "hint": "Beech (1911, p. 67) quinary & Turkana-borrowed numerals 6–10"
           },
           {
             "target": "mut ngô somok (akan-kowuni)",
             "source": "8 (5+3)",
-            "pronunciation": "mut ngo o-konggo mut ngo oghiengg mut ngo so-mok mut ngo anggwan ta-man",
+            "pronunciation": "mut-ngô-somok",
             "hint": "Beech (1911, p. 67) quinary & Turkana-borrowed numerals 6–10"
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon.",
-            "source": "Riddle: Unstable so-it-may-not-be-climbed. — Answer: A chain (Beech 1911, p. 43, Riddle #1)",
+            "source": "Riddle: Unstable so-it-may-not-be-climbed. — Answer: A chain",
             "pronunciation": "tiangoi — tia nyelnyel ma-ke-lany — sirim-nyon",
             "hint": "Mervyn Beech (1911, p. 43, Riddle #1)"
-          }
-        ],
-        "sentences": [],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Person (pl. People) • Warrior • Woman (pl. Women) • Suk person (pl. Suk people)\" in Pokot?",
-            "correctAnswer": "chi (pl. pich / pik) • muren • kôrkôʻ (pl. kôru) • Pĕch-on (pl. Pôkwut)",
-            "options": [
-              "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! / Subai! (resp. Ērpa!) / Tapkwenya! (resp. Īgo!)",
-              "Sĕra! (Sĕre!) / Korôton! (resp. I-rôt-enyi!)",
-              "Torôrut • Seta • Arawaʻ • Ilat • Topogh • Asis • Kokel",
-              "chi (pl. pich / pik) • muren • kôrkôʻ (pl. kôru) • Pĕch-on (pl. Pôkwut)"
-            ],
-            "hint": "chee / peech / moo-rehn / kohr-koh / peh-chohn / poh-kwoot"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match each Pokot expression with its English meaning:",
-            "correctAnswer": "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! / Subai! (resp. Ērpa!) / Tapkwenya! (resp. Īgo!): Elder greeting litany! / Male greeting! / Female greeting!",
-            "pairs": [
-              {
-                "left": "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! / Subai! (resp. Ērpa!) / Tapkwenya! (resp. Īgo!)",
-                "right": "Elder greeting litany! / Male greeting! / Female greeting!"
-              },
-              {
-                "left": "Sĕra! (Sĕre!) / Korôton! (resp. I-rôt-enyi!)",
-                "right": "Thank you! / Good-bye! (lit. I have gone! — Thou art going!)"
-              },
-              {
-                "left": "Torôrut • Seta • Arawaʻ • Ilat • Topogh • Asis • Kokel",
-                "right": "Supreme Sky God • Pleiades (wife) • Moon (1st son) • Rain (son) • Evening Star (1st daughter) • Sun (younger brother) • Stars"
-              },
-              {
-                "left": "chi (pl. pich / pik) • muren • kôrkôʻ (pl. kôru) • Pĕch-on (pl. Pôkwut)",
-                "right": "Person (pl. People) • Warrior • Woman (pl. Women) • Suk person (pl. Suk people)"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete the Pokot term for \"Water • Fire • Irrigation ditch/furrow • Village council assembly place\": ___",
-            "correctAnswer": "pogh • maʻ (mat, pl. môat) • ôr-a-pogh • kōkwa (pl. kokwo-ten)",
-            "options": [
-              "Tokwes! Chamke-t! — Chamke-cha! — Chamke-kau! — Chamke-sapon! / Subai! (resp. Ērpa!) / Tapkwenya! (resp. Īgo!)",
-              "Sĕra! (Sĕre!) / Korôton! (resp. I-rôt-enyi!)",
-              "Torôrut • Seta • Arawaʻ • Ilat • Topogh • Asis • Kokel",
-              "pogh • maʻ (mat, pl. môat) • ôr-a-pogh • kōkwa (pl. kokwo-ten)"
-            ],
-            "hint": "Beech (1911, pp. 54, 61, 101, 112)"
           }
         ]
       }
@@ -176,9 +189,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Users",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-family-kinship-kinship-elders-2",
@@ -243,7 +258,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -405,7 +419,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -460,9 +473,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Scale",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-numbers-measures-cardinals-ordinals-3",
@@ -527,7 +542,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -809,9 +823,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Tractor",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-food-agriculture-staple-foods-cookery-4",
@@ -853,7 +869,8 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "nyaril, pl. nyaril-ech",
-            "source": "Raw"
+            "source": "Raw",
+            "pronunciation": "nyaril"
           },
           {
             "target": "Pogh-po-maʻ",
@@ -1115,9 +1132,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "PawPrint",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-nature-wildlife-land-sky-water-5",
@@ -1424,9 +1443,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "User",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-body-health-anatomy-senses-6",
@@ -1491,7 +1512,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1769,9 +1789,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "BookOpen",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-verbs-grammar-action-verbs-7",
@@ -1836,7 +1858,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Pökoot_language & Beech (1911)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2023,9 +2044,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Compass",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-time-calendar-seasons-months-8",
@@ -2283,9 +2306,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-9",
-    "title": "Unit 9: Conversational Phrases, Idioms & Daily Dialogue",
+    "unitNumber": 9,
+    "title": "Conversational Phrases, Idioms & Daily Dialogue",
     "description": "Master conversational phrases, idioms & daily dialogue in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "MessageCircle",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-phrases-idioms-everyday-dialogue-9",
@@ -2556,9 +2581,11 @@ export const POKOT_UNITS: CourseUnit[] = [
   },
   {
     "id": "pokot-unit-10",
-    "title": "Unit 10: Classical Proverbs, Riddles & Ethnographic Heritage",
+    "unitNumber": 10,
+    "title": "Classical Proverbs, Riddles & Ethnographic Heritage",
     "description": "Master classical proverbs, riddles & ethnographic heritage in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Globe",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-oral-wisdom-literature-proverbs-riddles-10",
@@ -2582,37 +2609,40 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon.",
-            "source": "Riddle (Tiangoi! — Tia!): What is the unstable thing (which is strong) so-it-may-not-be-climbed? — Answer: A chain (Sirim-nyon).",
-            "hint": "Classical Pökoot riddle #1 recorded verbatim by Mervyn W. H. Beech (1911, p. 43), opened with the traditional challenge \"Tiangoi!\" and response \"Tia!\" (with \"Donguch!\" if guessed wrong)."
+            "source": "Riddle (Tiangoi! — Tia!): What is the unstable thing (which is strong)",
+            "pronunciation": "tiangoi-tia-nyelnyel-ma-ke-lany"
           },
           {
             "target": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? — Answer: A white-ant’s hill (Tŭl, when reaching inside a hollow termite mound to collect piyapai termites).",
-            "hint": "Recorded verbatim by Mervyn W. H. Beech (1911, pp. 43–44, Riddle #2), comparing a hollow ten-foot termite mound to an inverted drinking-horn."
+            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? —",
+            "pronunciation": "tiangoi-tia-o-wund-oi-a'-sogho"
           },
           {
-            "target": "Tiangoi! — Tia! Rel-e' ti'-chu lopai pirir kirokit. — Kelat ngô ñgaliep.",
-            "source": "Riddle: White are all my cows, red is the bull. — Answer: The teeth and the tongue (Kelat ngô ñgaliep).",
+            "target": "Tiangoi!",
+            "source": "Riddle: White are all my cows, red is the bull. — Answer: The teeth and the tongue",
+            "pronunciation": "tiangoi",
             "hint": "Pastoral Pökoot riddle recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #3)."
           },
           {
-            "target": "Tiangoi! — Tia! Ko-choit-a' sirim-nyon kowoʻ kiau. — Ôr ny'o-wet-ei.",
-            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer: The winding road which I shall take (Ôr ny’o-wet-ei).",
-            "hint": "Recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #5), comparing a winding path across the plain to the curves of a thrown iron chain."
+            "target": "Tiangoi!",
+            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer: The",
+            "pronunciation": "tiangoi"
           },
           {
             "target": "Tiangoi! — Tia! Ka-rat kwoañg. — Kuntopal.",
             "source": "Riddle: He has strung his bow. — Answer: The rainbow (Kuntopal).",
+            "pronunciation": "tiangoi-tia-ka-rat-kwoañg",
             "hint": "Recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #6)."
           },
           {
             "target": "Tiangoi! — Tia! Ki-meriensi-oʻ. — Nekergh-is.",
-            "source": "Riddle: They stood in a threatening attitude (facing one another without fighting). — Answer: The three cooking-pot hearthstones (Nekergh-is).",
-            "hint": "Recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #9): the three hearthstones face one another in a triangle to support the cooking-pot together."
+            "source": "Riddle: They stood in a threatening attitude. — Answer: The three cooking-pot",
+            "pronunciation": "tiangoi-tia-ki-meriensi-o-nekergh-is"
           },
           {
             "target": "Tiangoi! — Tia! K-o-p-a' set-a-pogh ka-ma-iyit-an. — Krīsioʻ.",
             "source": "Riddle: I carried a jar of water and did not spill it. — Answer: An udder (Krīsioʻ).",
+            "pronunciation": "tiangoi-tia-k-o-p-a'-set-a-pogh",
             "hint": "Pastoral riddle recorded verbatim by Mervyn W. H. Beech (1911, p. 45, Riddle #12)."
           }
         ],
@@ -2623,22 +2653,10 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon. — Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? — Answer: A white-ant’s hill."
+            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made"
           }
         ],
         "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"I-lend-ei-ne?\" mean in English?",
-            "correctAnswer": "What do you say?",
-            "options": [
-              "What do you say?",
-              "What did he say to you?",
-              "Riddle (Tiangoi! — Tia!): What is the unstable thing (which is strong) so-it-may-not-be-climbed? — Answer: A chain (Sirim-nyon).",
-              "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? — Answer: A white-ant’s hill (Tŭl, when reaching inside a hollow termite mound to collect piyapai termites)."
-            ],
-            "hint": "Core vocabulary in Traditional Proverbs, Riddles & Aphorisms"
-          },
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"What did he say to you?\"",
@@ -2648,16 +2666,6 @@ export const POKOT_UNITS: CourseUnit[] = [
               "Ka-len-j-i nyi ne?"
             ],
             "hint": "Starts with \"Ka\""
-          },
-          {
-            "type": "translate_to_english",
-            "prompt": "Translate to English: \"Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon.\"",
-            "correctAnswer": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain.",
-            "acceptedAnswers": [
-              "Riddle (Tiangoi! — Tia!): What is the unstable thing (which is strong) so-it-may-not-be-climbed? — Answer: A chain (Sirim-nyon).",
-              "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain."
-            ],
-            "hint": "Review Traditional Proverbs, Riddles & Aphorisms"
           },
           {
             "type": "match_pairs",
@@ -2671,18 +2679,6 @@ export const POKOT_UNITS: CourseUnit[] = [
               {
                 "left": "Ka-len-j-i nyi ne?",
                 "right": "What did he say to you?"
-              },
-              {
-                "left": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon.",
-                "right": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain."
-              },
-              {
-                "left": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-                "right": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? — Answer: A white-ant’s hill."
-              },
-              {
-                "left": "Tiangoi! — Tia! Rel-e' ti'-chu lopai pirir kirokit. — Kelat ngô ñgaliep.",
-                "right": "Riddle: White are all my cows, red is the bull. — Answer: The teeth and the tongue."
               }
             ]
           }
@@ -2870,10 +2866,12 @@ export const POKOT_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "pokot-unit-11-public-domain-corpus",
-    "title": "Unit 11: Archival Monograph & Comparative Lexicon",
+    "id": "pokot-unit-11",
+    "unitNumber": 11,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Pokot (Pökoot) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-pd-corpus-11-1",
@@ -2931,7 +2929,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3038,7 +3035,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3092,10 +3088,12 @@ export const POKOT_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "pokot-unit-12-open-datasets-modern",
-    "title": "Unit 12: Core Swadesh & Everyday Community Vocabulary",
+    "id": "pokot-unit-12",
+    "unitNumber": 12,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Pokot (Pökoot) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-open-dataset-12-1",
@@ -3153,7 +3151,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3260,7 +3257,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3314,41 +3310,84 @@ export const POKOT_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "pokot-unit-beech-1911-complete-monograph",
-    "title": "Unit 11: Mervyn W. H. Beech (1911) — Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases & 2 Interlinear Stories",
+    "id": "pokot-unit-13",
+    "unitNumber": 13,
+    "title": "— Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases &",
     "description": "Master the greetings (Tokwes! / Chamke! / Korôton!), the Planting Hymn to Torôrut, the Potters' Chant, all 18 Tiangoi! riddles, 55 idiomatic phrases, and the 2 interlinear Suk stories from Mervyn W. H. Beech's 1911 monograph.",
     "icon": "BookOpen",
+    "color": "#7C3AED",
     "skills": [
       {
         "id": "pokot-beech-1911-salutations-hymns-riddles-phrases",
-        "title": "Salutations, Sacred Chants, Tiangoi! Riddles & Idiomatic Phrases (Beech 1911)",
+        "title": "Salutations, Sacred Chants, Tiangoi! Riddles & Idiomatic Phrases",
         "icon": "Sparkles",
         "description": "Practice authentic Pökoot greetings, ritual chants, riddles, and conversational sentences recorded with twenty Suk elders in Beech (1911).",
         "tips": "In Pökoot (Beech 1911, pp. 76–78, xx), transitive and intransitive verbs take both a subjective pronominal prefix and a subjective pronominal suffix: o-lim-an ('I hear'), i-lim-enyi ('thou hearest'), o-lim-ekwa ('ye hear'), while negatives wrap the verb in ma-/me-...-nye (e.g., m-o-nget-an-nye 'I do not know').",
         "words": [
           {
-            "target": "Tokwes! — Eia! • Chamke! — Chamke, chamke! • Ka-rôt-on! (Korôton!) — I-rôt-enyi! • Sĕra! / Sĕre!",
-            "source": "Hail! (entering village) — Yes! • Health to thee! • I have gone! (Good-bye!) — Thou art going! • Thank you!",
-            "pronunciation": "tok-wes / ei-a / cham-ke / ka-rot-on / i-rot-enyi / se-ra",
-            "hint": "Beech (1911, pp. 92, 96, 119, 125, 143)"
+            "target": "Tokwes! — Eia!",
+            "source": "Hail! (entering village) — Yes!",
+            "pronunciation": "tokwes-eia"
           },
           {
-            "target": "Torôrut kun-e' mwagh / Ki-sop-'cha pich / Ki-sop sapon — Ny' anyin! • O-wei ter i-ker-ach mba maʻ, I-chi-nyi tiumbo kukoʻ!",
-            "source": "God give us fat (fertility), that men may thrive, that life may thrive! — Which is sweet! • Go, pot, shut yourself in the fire, you are the vessel of our ancestors!",
-            "pronunciation": "to-ro-rut ku-ne mwagh / ki-sop-cha pich / o-wei ter i-ker-ach mba ma",
-            "hint": "Beech (1911, pp. 16–17)"
+            "target": "Chamke! — Chamke, chamke!",
+            "source": "Health to thee!",
+            "pronunciation": "chamke-chamke"
           },
           {
-            "target": "Tiangoi! — Tia! — Donguch! • Rel-e' ti'-chu lopai, pirir kirokit → Kelat ngô ñgaliep • Kô-p-chii nya-ma-tiñget-nye kôkat → Rotin",
-            "source": "A riddle! — Propound it! — We give it up! • All my cows are white, the bull is red → Teeth and tongue • A man's house without a door → An egg",
-            "pronunciation": "ti-a-ngoi / ti-a / do-nguch / ke-lat ngo nga-liep / ro-tin",
-            "hint": "Beech (1911, Ch. III, pp. 43–45, Riddles #3 & #8)"
+            "target": "Ka-rôt-on! (Korôton!) — I-rôt-enyi!",
+            "source": "I have gone! (Good-bye!) — Thou art going!",
+            "pronunciation": "ka-rôt-on-i-rôt-enyi"
           },
           {
-            "target": "Ki-lend-e-ne kainat-nyeñgmwunyi? • I-gh-enyi-ne? • Mi-ne? • Tôma-ny'-'abkaʻ • Nyur-o se-kebe tukul!",
-            "source": "What is your name? • What are you doing? • What is the matter? • He has not yet come • Let us come together!",
-            "pronunciation": "ki-lend-e-ne kai-nat-nyeng-mwu-nyi / i-gh-enyi-ne / mi-ne / to-ma-ny'-ab-ka",
-            "hint": "Beech (1911, Useful & Idiomatic Phrases, pp. 92–97)"
+            "target": "Sĕra! / Sĕre!",
+            "source": "Thank you!",
+            "pronunciation": "sĕra"
+          },
+          {
+            "target": "O-wei ter i-ker-ach mba maʻ, I-chi-nyi tiumbo kukoʻ!",
+            "source": "Go, pot, shut yourself in the fire, you are the vessel of our ancestors!",
+            "pronunciation": "o-wei-ter-i-ker-ach-mba"
+          },
+          {
+            "target": "Tiangoi! — Tia! — Donguch!",
+            "source": "A riddle! — Propound it! — We give it up!",
+            "pronunciation": "tiangoi-tia-donguch"
+          },
+          {
+            "target": "Rel-e' ti'-chu lopai, pirir kirokit → Kelat ngô ñgaliep",
+            "source": "All my cows are white, the bull is red → Teeth and tongue",
+            "pronunciation": "rel-e'-ti'-chu-lopai"
+          },
+          {
+            "target": "Kô-p-chii nya-ma-tiñget-nye kôkat → Rotin",
+            "source": "A man's house without a door → An egg",
+            "pronunciation": "kô-p-chii-nya-ma-tiñget-nye-kôkat-rotin"
+          },
+          {
+            "target": "Ki-lend-e-ne kainat-nyeñgmwunyi?",
+            "source": "What is your name?",
+            "pronunciation": "ki-lend-e-ne-kainat-nyeñgmwunyi"
+          },
+          {
+            "target": "I-gh-enyi-ne?",
+            "source": "What are you doing?",
+            "pronunciation": "i-gh-enyi-ne"
+          },
+          {
+            "target": "Mi-ne?",
+            "source": "What is the matter?",
+            "pronunciation": "mi-ne"
+          },
+          {
+            "target": "Tôma-ny'-'abkaʻ",
+            "source": "He has not yet come",
+            "pronunciation": "tôma-ny'-'abka"
+          },
+          {
+            "target": "Nyur-o se-kebe tukul!",
+            "source": "Let us come together!",
+            "pronunciation": "nyur-o-se-kebe-tukul"
           }
         ],
         "sentences": [
@@ -3356,22 +3395,306 @@ export const POKOT_UNITS: CourseUnit[] = [
             "target": "Tokwes! — Eia! Chamke! Ki-lend-e-ne kainat-nyeñgmwunyi?",
             "source": "Hail! — Yes! Health to thee! What is your name? (Beech 1911, pp. 92–95)."
           }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "In Mervyn W. H. Beech's 'The Suk: Their Language and Folklore' (1911, p. 92), what is the traditional Suk greeting upon entering a village, the reply, and the parting farewell ('I have gone! — Thou art going!')?",
-            "correctAnswer": "Entering village: 'Tokwes!' — Reply: 'Eia!'; Personal greeting: 'Chamke!'; Parting farewell: 'Ka-rôt-on! (Korôton!)' — Reply: 'I-rôt-enyi!'",
-            "options": [
-              "Entering village: 'Tokwes!' — Reply: 'Eia!'; Personal greeting: 'Chamke!'; Parting farewell: 'Ka-rôt-on! (Korôton!)' — Reply: 'I-rôt-enyi!'",
-              "Entering village: 'Sopai!' — Reply: 'Eépa!'; Parting farewell: 'Biado!'",
-              "Entering village: 'Tiamge!' — Reply: 'Otyamge!'; Parting farewell: 'Kātigē!'",
-              "Entering village: 'Mata!' — Reply: 'Ii mata!'; Parting farewell: 'Mata ouwi!'"
-            ],
-            "hint": "See Beech (1911, p. 92)"
-          }
         ]
-      }
+      },
+{
+        "id": "pokot-rain-harvest-herds",
+        "title": "Seasonal Rain, Millet Harvest & Herd Care",
+        "icon": "CloudRain",
+        "description": "Practice Pökoot conversational expressions on weather, sorghum and millet cultivation, and livestock care.",
+        "culturalNote": "Across West Pokot and Baringo, Pökoot communities combine hillside cultivation of finger millet (matai) and sorghum (mosong'ion) with pastoralism in the plains.",
+        "grammarTip": "In Pökoot, kararan ('good / peaceful') stands clause-initially in predicate adjective constructions: Kararan koorin nyoo? ('Is the land peaceful today?').",
+        "words": [
+                {
+                        "target": "Koorin",
+                        "source": "Land / Country / Place",
+                        "pronunciation": "koh-reen"
+                },
+                {
+                        "target": "Rob",
+                        "source": "Rain",
+                        "pronunciation": "rohb"
+                },
+                {
+                        "target": "Mosong'ion",
+                        "source": "Sorghum",
+                        "pronunciation": "moh-soh-ngyohn"
+                },
+                {
+                        "target": "Matai",
+                        "source": "Finger millet",
+                        "pronunciation": "mah-tah-ee"
+                },
+                {
+                        "target": "Tich",
+                        "source": "Cattle",
+                        "pronunciation": "teech"
+                },
+                {
+                        "target": "Ng'oror",
+                        "source": "Goats",
+                        "pronunciation": "ngoh-rohr"
+                },
+                {
+                        "target": "Chego",
+                        "source": "Milk",
+                        "pronunciation": "cheh-goh"
+                },
+                {
+                        "target": "Moning'",
+                        "source": "Children",
+                        "pronunciation": "moh-neeng"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Kararan koorin nyoo? Kararan, kichamei rob.",
+                        "source": "How is the land today? It is peaceful, we are grateful for the rain."
+                },
+                {
+                        "target": "Tich ak ng'oror che kararanich kokonu chegoab moning'.",
+                        "source": "Healthy cattle and goats provide milk for the children."
+                }
+        ]
+},
+        {
+        "id": "pokot-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Pokot (Pökoot) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
+        "words": [
+                {
+                        "target": "Sera!",
+                        "source": "Thank-you!",
+                        "pronunciation": "se-ra"
+                },
+                {
+                        "target": "r. cham, pr. o-chem-chin-an, p.p. ko-chem-ch-an",
+                        "source": "Please, to",
+                        "pronunciation": "cham"
+                },
+                {
+                        "target": "Kalyon / Kalya",
+                        "source": "Peace / All is well",
+                        "pronunciation": "kal-yon / kal-ya"
+                },
+                {
+                        "target": "Chamnyan / Bo kalyon?",
+                        "source": "Hello / How are you?",
+                        "pronunciation": "cham-nyan / bo kal-yon"
+                },
+                {
+                        "target": "Tokwes! (Reply: Eia!)",
+                        "source": "Greeting on entering a village: Hail! (and reply)",
+                        "pronunciation": "tok-wes / ei-a"
+                },
+                {
+                        "target": "Chamke! (Reply: Chamke, chamke!)",
+                        "source": "Personal greeting: Health to thee! (and reply)",
+                        "pronunciation": "cham-ke"
+                },
+                {
+                        "target": "Kiripe merap kaa",
+                        "source": "We keep trap at the homestead",
+                        "pronunciation": "kiripe merap kaa"
+                },
+                {
+                        "target": "Kiripe sanai-yan kaa",
+                        "source": "We keep bead at the homestead",
+                        "pronunciation": "kiripe sanai-yan kaa"
+                },
+                {
+                        "target": "Kiripe kirugur kaa",
+                        "source": "We keep bell at the homestead",
+                        "pronunciation": "kiripe kirugur kaa"
+                },
+                {
+                        "target": "Kiripe añgw-a kaa",
+                        "source": "We keep belt at the homestead",
+                        "pronunciation": "kiripe añgw-a kaa"
+                },
+                {
+                        "target": "Kiripe kôkat kaa",
+                        "source": "We keep gate at the homestead",
+                        "pronunciation": "kiripe kôkat kaa"
+                },
+                {
+                        "target": "Kiripe kata-nyan kaa",
+                        "source": "We keep home at the homestead",
+                        "pronunciation": "kiripe kata-nyan kaa"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Kimache r. nērt tugul",
+                        "source": "We want to learn together"
+                },
+                {
+                        "target": "Kimache r. nagh tugul",
+                        "source": "We want to light together"
+                },
+                {
+                        "target": "Kimache r. loich tugul",
+                        "source": "We want to mourn together"
+                },
+                {
+                        "target": "Kimache r. ruwoch tugul",
+                        "source": "We want to order together"
+                },
+                {
+                        "target": "Kimache r. tit tugul",
+                        "source": "We want to reach together"
+                },
+                {
+                        "target": "Kimache r. iyĭt tugul",
+                        "source": "We want to spill together"
+                },
+                {
+                        "target": "Kimache r. ghany tugul",
+                        "source": "We want to stand together"
+                },
+                {
+                        "target": "Kimache r. chôr tugul",
+                        "source": "We want to steal together"
+                },
+                {
+                        "target": "Kimache r. puch tugul",
+                        "source": "We want to sweep together"
+                },
+                {
+                        "target": "Kimache r. cham tugul",
+                        "source": "We want to taste together"
+                },
+                {
+                        "target": "Kimache r. wīrt tugul",
+                        "source": "We want to throw together"
+                },
+                {
+                        "target": "Kimache r. ñgwut tugul",
+                        "source": "We want to touch together"
+                }
+        ]
+},
+        {
+        "id": "pokot-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Pokot (Pökoot) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
+        "words": [
+                {
+                        "target": "Kiripe ares kaa",
+                        "source": "We keep wall at the homestead",
+                        "pronunciation": "kiripe ares kaa"
+                },
+                {
+                        "target": "Kiripe wu kaa",
+                        "source": "We keep wood at the homestead",
+                        "pronunciation": "kiripe wu kaa"
+                },
+                {
+                        "target": "Ata r. iyakwiy ಒsokoni?",
+                        "source": "How much is feed cattle at the market?",
+                        "pronunciation": "ata r iyakwiy sokoni"
+                },
+                {
+                        "target": "Ata setīm ಒsokoni?",
+                        "source": "How much is castrated sheep at the market?",
+                        "pronunciation": "ata setīm sokoni"
+                },
+                {
+                        "target": "Ata cheptoya ಒsokoni?",
+                        "source": "How much is dark-coloured ox at the market?",
+                        "pronunciation": "ata cheptoya sokoni"
+                },
+                {
+                        "target": "Ata semiyu ಒsokoni?",
+                        "source": "How much is disease at the market?",
+                        "pronunciation": "ata semiyu sokoni"
+                },
+                {
+                        "target": "Ata r. pkwonsi ಒsokoni?",
+                        "source": "How much is bark at the market?",
+                        "pronunciation": "ata r pkwonsi sokoni"
+                },
+                {
+                        "target": "Ata r. toru ಒsokoni?",
+                        "source": "How much is miscarry at the market?",
+                        "pronunciation": "ata r toru sokoni"
+                },
+                {
+                        "target": "Ata r. wach ಒsokoni?",
+                        "source": "How much is bellow at the market?",
+                        "pronunciation": "ata r wach sokoni"
+                },
+                {
+                        "target": "Ata atekēr ಒsokoni?",
+                        "source": "How much is trough at the market?",
+                        "pronunciation": "ata atekēr sokoni"
+                },
+                {
+                        "target": "Rip merap ಒkokwö",
+                        "source": "Protect trap in the community",
+                        "pronunciation": "rip merap kokwö"
+                },
+                {
+                        "target": "Rip sanai-yan ಒkokwö",
+                        "source": "Protect bead in the community",
+                        "pronunciation": "rip sanai-yan kokwö"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Kimache r. riny tugul",
+                        "source": "We want to twist together"
+                },
+                {
+                        "target": "Kimache r. mwund tugul",
+                        "source": "We want to vomit together"
+                },
+                {
+                        "target": "Ata kulo-won ಒsokoni?",
+                        "source": "How much is cupping-horn at the market?"
+                },
+                {
+                        "target": "Ata kulum ಒsokoni?",
+                        "source": "How much is stingless bee at the market?"
+                },
+                {
+                        "target": "Ata piyapai-wa ಒsokoni?",
+                        "source": "How much is white termite at the market?"
+                },
+                {
+                        "target": "Ata min-yon ಒsokoni?",
+                        "source": "How much is leather at the market?"
+                },
+                {
+                        "target": "Ata ôr-a-tich ಒsokoni?",
+                        "source": "How much is of cattle-fold at the market?"
+                },
+                {
+                        "target": "Ata setīm ಒsokoni?",
+                        "source": "How much is castrated goat at the market?"
+                },
+                {
+                        "target": "Ata sepel-ion ಒsokoni?",
+                        "source": "How much is young she-goat at the market?"
+                },
+                {
+                        "target": "Ata r. iyakwiy ಒsokoni?",
+                        "source": "How much is feed cattle at the market?"
+                },
+                {
+                        "target": "Ata cheptoya ಒsokoni?",
+                        "source": "How much is dark-coloured ox at the market?"
+                },
+                {
+                        "target": "Ata semiyu ಒsokoni?",
+                        "source": "How much is disease at the market?"
+                }
+        ]
+}
     ]
   }
 ];

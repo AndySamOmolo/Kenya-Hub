@@ -1,12 +1,4 @@
-// ============================================================
-// Teso (Ateso / Elgumi / Wamia) Language Course Configuration & Units
-// Based on Public Domain & Open-Web Linguistic Sources:
-// 1. C. W. Hobley (1902) "Eastern Uganda: An Ethnological Survey" (Elgumi vocabulary, numerals & phrases)
-// 2. Sir Harry H. Johnston (1902) "The Uganda Protectorate, Vol. II" (Elgumi / Wamia)
-// 3. Wikipedia Teso_language & Eastern_Nilotic_languages (Vossen 1982)
-// ============================================================
-
-import type { LanguageConfig, CourseUnit } from '../types';
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const TESO_CONFIG: LanguageConfig = {
   "id": "teso",
@@ -30,9 +22,11 @@ export const TESO_CONFIG: LanguageConfig = {
 export const TESO_UNITS: CourseUnit[] = [
   {
     "id": "teso-unit-1",
-    "title": "Unit 1: Greetings, Kinship & The Three Noun Genders",
+    "unitNumber": 1,
+    "title": "Greetings, Kinship & The Three Noun Genders",
     "description": "Master Ateso greetings (Yoga, Ijai biai, Ejokuna), kinship terms, and Masculine (e-), Feminine (a-), and Neuter (i-) nouns.",
     "icon": "Users",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-greetings-kinship",
@@ -402,13 +396,15 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-2",
-    "title": "Unit 2: Hobley (1902) Elgumi Dialogues, Pronouns, Tools & Oral Wisdom",
+    "unitNumber": 2,
+    "title": "Hobley Elgumi Dialogues, Pronouns, Tools & Oral Wisdom",
     "description": "Learn conversational phrases, personal pronouns, tools, and proverbs from C. W. Hobley (1902) and Sir Harry Johnston (1902).",
     "icon": "Award",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-hobley-1902-phrases",
-        "title": "Pronouns, Homestead Tools & Hobley (1902) Phrases",
+        "title": "Pronouns, Homestead Tools & Hobley Phrases",
         "icon": "Home",
         "description": "Master Ateso pronouns, imperatives, and cultural terms recorded in 1902.",
         "tips": "Sir Harry Johnston (1902, p. 851) and C. W. Hobley (1902, pp. 92–95) recorded everyday salutations ('Mata!', 'Yoka yoka!') and conversational imperatives in Ateso (Elgumi/Wamia): 'Bia ne!' (Come here!), 'Kolot!' (Go away!), 'Koin akipi!' (Bring water!), and 'Icamit nyo?' (What do you want?).",
@@ -593,9 +589,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-3",
-    "title": "Unit 3: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 3,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "User",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-family-kinship-kinship-elders-3",
@@ -660,8 +658,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Neuter nouns"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -895,9 +891,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-4",
-    "title": "Unit 4: Numbers, Counting, Currency & Measures",
+    "unitNumber": 4,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "Scale",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-numbers-measures-cardinals-ordinals-4",
@@ -962,8 +960,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1125,8 +1121,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1229,9 +1223,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-5",
-    "title": "Unit 5: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 5,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "Tractor",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-food-agriculture-staple-foods-cookery-5",
@@ -1296,8 +1292,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Masculine nouns"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1441,8 +1435,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso)"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1545,9 +1537,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-6",
-    "title": "Unit 6: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 6,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "PawPrint",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-nature-wildlife-land-sky-water-6",
@@ -1612,8 +1606,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Vocabulary"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1848,9 +1840,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-7",
-    "title": "Unit 7: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 7,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "Heart",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-body-health-anatomy-senses-7",
@@ -1915,8 +1909,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2153,9 +2145,11 @@ export const TESO_UNITS: CourseUnit[] = [
   },
   {
     "id": "teso-unit-8",
-    "title": "Unit 8: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 8,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Teso (Ateso) built directly from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909), and Archdeacon A. L. Kitching (1915).",
     "icon": "BookOpen",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-verbs-grammar-action-verbs-8",
@@ -2220,8 +2214,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Orthography"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2383,8 +2375,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Feminine nouns"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2486,10 +2476,12 @@ export const TESO_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "teso-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "teso-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Teso (Ateso) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-pd-corpus-9-1",
@@ -2547,8 +2539,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2655,8 +2645,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II 1902, pp. 903–912"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2710,10 +2698,12 @@ export const TESO_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "teso-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "teso-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Teso (Ateso) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#6D4C41",
     "skills": [
       {
         "id": "teso-open-dataset-10-1",
@@ -2771,8 +2761,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2879,8 +2867,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           }
         ],
-        "sentences": [
-          ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2930,7 +2916,305 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           }
         ]
-      }
+      },
+{
+        "id": "teso-water-health-farming",
+        "title": "Clean Water, Clinic Visits & Crop Farming",
+        "icon": "Sprout",
+        "description": "Practice Ateso everyday dialogues for community water, healthcare clinics, and smallholder farming.",
+        "culturalNote": "Spoken across Busia County and eastern Uganda, contemporary Ateso emphasizes cooperative farming of cassava (emogo), sorghum (imomwa), and groundnuts (emaido).",
+        "grammarTip": "Notice the Ateso infinitive prefix a- in aanyun ('to get/find') and aira ('to plant'), and the locative preposition kotoma ('in / inside').",
+        "words": [
+                {
+                        "target": "Akipi nuekaleete",
+                        "source": "Clean drinking water",
+                        "pronunciation": "ah-kee-pee noo-eh-kah-leh-eh-teh"
+                },
+                {
+                        "target": "Adekis",
+                        "source": "Hospital / Health clinic",
+                        "pronunciation": "ah-deh-kees"
+                },
+                {
+                        "target": "Esomero",
+                        "source": "School",
+                        "pronunciation": "eh-soh-meh-roh"
+                },
+                {
+                        "target": "Ekorion",
+                        "source": "Farmer",
+                        "pronunciation": "eh-koh-ree-ohn"
+                },
+                {
+                        "target": "Esokoni",
+                        "source": "Market",
+                        "pronunciation": "eh-soh-koh-nee"
+                },
+                {
+                        "target": "Emogo",
+                        "source": "Cassava",
+                        "pronunciation": "eh-moh-goh"
+                },
+                {
+                        "target": "Imomwa",
+                        "source": "Sorghum",
+                        "pronunciation": "ee-moh-mwah"
+                },
+                {
+                        "target": "Emaido",
+                        "source": "Groundnuts / Peanuts",
+                        "pronunciation": "eh-mah-ee-doh"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ejok noi aanyun akipi nu elai kotoma ateker.",
+                        "source": "It is very good to have clean water in the community."
+                },
+                {
+                        "target": "Aira emogo, imomwa ka emaido eingarakini ateker.",
+                        "source": "Planting cassava, sorghum, and groundnuts supports the community."
+                }
+        ]
+},
+        {
+        "id": "teso-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Teso (Ateso) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, P",
+        "words": [
+                {
+                        "target": "ekinok",
+                        "source": "Peace",
+                        "pronunciation": "e-ki-nok"
+                },
+                {
+                        "target": "Eyalama (Eyalama noi)",
+                        "source": "Thank you",
+                        "pronunciation": "eh-yah-lah-mah noy"
+                },
+                {
+                        "target": "ainapakin",
+                        "source": "Peace / well-being",
+                        "pronunciation": "ai-na-pa-kin"
+                },
+                {
+                        "target": "Eyalama noi",
+                        "source": "Thank you very much",
+                        "pronunciation": "e-ya-la-ma noi"
+                },
+                {
+                        "target": "Eyalama ewanyun (or Eyalama aanyun)",
+                        "source": "Nice to see you / Thank you for seeing me",
+                        "pronunciation": "eyalama ewanyun"
+                },
+                {
+                        "target": "Ijai biai? / Eyalama",
+                        "source": "How did you sleep? / Good morning (Ateso)",
+                        "pronunciation": "ijai-biai"
+                },
+                {
+                        "target": "Esokoni",
+                        "source": "Market / trading place (Ateso)",
+                        "pronunciation": "esokoni"
+                },
+                {
+                        "target": "Idaritos isio kadidengan ore wok",
+                        "source": "We keep brave at our homestead",
+                        "pronunciation": "idaritos isio kadidengan ore wok"
+                },
+                {
+                        "target": "Idaritos isio kwaiona ore wok",
+                        "source": "We keep bring at our homestead",
+                        "pronunciation": "idaritos isio kwaiona ore wok"
+                },
+                {
+                        "target": "Idaritos isio echokima ore wok",
+                        "source": "We keep cheap at our homestead",
+                        "pronunciation": "idaritos isio echokima ore wok"
+                },
+                {
+                        "target": "Idaritos isio mkuli ore wok",
+                        "source": "We keep cloth at our homestead",
+                        "pronunciation": "idaritos isio mkuli ore wok"
+                },
+                {
+                        "target": "Idaritos isio ibileri ore wok",
+                        "source": "We keep false at our homestead",
+                        "pronunciation": "idaritos isio ibileri ore wok"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Eebo, ejai isio kadidengan luipu",
+                        "source": "Yes, we have plenty of brave"
+                },
+                {
+                        "target": " Ejai ijo kwaiona lolo?",
+                        "source": "Do you have bring today?"
+                },
+                {
+                        "target": "Eebo, ejai isio kwaiona luipu",
+                        "source": "Yes, we have plenty of bring"
+                },
+                {
+                        "target": " Ejai ijo echokima lolo?",
+                        "source": "Do you have cheap today?"
+                },
+                {
+                        "target": "Eebo, ejai isio echokima luipu",
+                        "source": "Yes, we have plenty of cheap"
+                },
+                {
+                        "target": " Ejai ijo mkuli lolo?",
+                        "source": "Do you have cloth today?"
+                },
+                {
+                        "target": "Eebo, ejai isio mkuli luipu",
+                        "source": "Yes, we have plenty of cloth"
+                },
+                {
+                        "target": " Ejai ijo ibileri lolo?",
+                        "source": "Do you have false today?"
+                },
+                {
+                        "target": "Eebo, ejai isio ibileri luipu",
+                        "source": "Yes, we have plenty of false"
+                },
+                {
+                        "target": " Ejai ijo loka polon lolo?",
+                        "source": "Do you have great today?"
+                },
+                {
+                        "target": "Eebo, ejai isio loka polon luipu",
+                        "source": "Yes, we have plenty of great"
+                },
+                {
+                        "target": " Ejai ijo ekileng lolo?",
+                        "source": "Do you have knife today?"
+                }
+        ]
+},
+        {
+        "id": "teso-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Teso (Ateso) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, P",
+        "words": [
+                {
+                        "target": "Idaritos isio loka polon ore wok",
+                        "source": "We keep great at our homestead",
+                        "pronunciation": "idaritos isio loka polon ore wok"
+                },
+                {
+                        "target": "Idaritos isio ekileng ore wok",
+                        "source": "We keep knife at our homestead",
+                        "pronunciation": "idaritos isio ekileng ore wok"
+                },
+                {
+                        "target": "Idaritos isio emumwa ore wok",
+                        "source": "We keep mtama at our homestead",
+                        "pronunciation": "idaritos isio emumwa ore wok"
+                },
+                {
+                        "target": "Ingai bo etiai loka Amic oitela?",
+                        "source": "What is the price of loan at the market?",
+                        "pronunciation": "ingai bo etiai loka amic oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Emuron oitela?",
+                        "source": "What is the price of doctor at the market?",
+                        "pronunciation": "ingai bo etiai loka emuron oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Ekitoi loka angaleu oitela?",
+                        "source": "What is the price of medicine at the market?",
+                        "pronunciation": "ingai bo etiai loka ekitoi loka angaleu oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Adek oitela?",
+                        "source": "What is the price of sickness at the market?",
+                        "pronunciation": "ingai bo etiai loka adek oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Apolis oitela?",
+                        "source": "What is the price of police at the market?",
+                        "pronunciation": "ingai bo etiai loka apolis oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Acan oitela?",
+                        "source": "What is the price of danger at the market?",
+                        "pronunciation": "ingai bo etiai loka acan oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka Ainapakin oitela?",
+                        "source": "What is the price of peace at the market?",
+                        "pronunciation": "ingai bo etiai loka ainapakin oitela"
+                },
+                {
+                        "target": "Ingai bo etiai loka ejir oitela?",
+                        "source": "What is the price of fight at the market?",
+                        "pronunciation": "ingai bo etiai loka ejir oitela"
+                },
+                {
+                        "target": "Kodara kadidengan kanuka angaleu naka itunga",
+                        "source": "Protect brave for community health",
+                        "pronunciation": "kodara kadidengan kanuka angaleu naka itunga"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Eebo, ejai isio ekileng luipu",
+                        "source": "Yes, we have plenty of knife"
+                },
+                {
+                        "target": " Ejai ijo emumwa lolo?",
+                        "source": "Do you have mtama today?"
+                },
+                {
+                        "target": "Eebo, ejai isio emumwa luipu",
+                        "source": "Yes, we have plenty of mtama"
+                },
+                {
+                        "target": "Ingai bo etiai loka Emotoka oitela?",
+                        "source": "What is the price of motor vehicle at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka etaun oitela?",
+                        "source": "What is the price of town at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Alosit oitela?",
+                        "source": "What is the price of journey at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Eitela oitela?",
+                        "source": "What is the price of market at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Apesan oitela?",
+                        "source": "What is the price of money at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Etiai oitela?",
+                        "source": "What is the price of price at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Eduka oitela?",
+                        "source": "What is the price of shop at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Amic oitela?",
+                        "source": "What is the price of loan at the market?"
+                },
+                {
+                        "target": "Ingai bo etiai loka Emuron oitela?",
+                        "source": "What is the price of doctor at the market?"
+                }
+        ]
+}
     ]
   }
 ];

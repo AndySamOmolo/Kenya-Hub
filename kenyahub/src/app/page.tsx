@@ -45,7 +45,7 @@ export default function HomePage() {
     url: "https://kenyahub.me",
     inLanguage: "en-KE",
     description:
-      "Learn 22 Kenyan languages (Swahili, Gĩkũyũ, Dholuo, Kalenjin, Luluhya, Kĩkamba, Maasai & more) with interactive courses, dictionaries, proverbs, and essential Kenyan statutory calculators (2026 PAYE, M-Pesa, KRA CRSP, 47 Counties & Matatu routes).",
+      "Learn 23 Kenyan languages (Swahili, Gĩkũyũ, Dholuo, Kalenjin, Luluhya, Kĩkamba, Maasai & more) with interactive courses, dictionaries, proverbs, and essential Kenyan statutory calculators (2026 PAYE, M-Pesa, KRA CRSP, 47 Counties & Matatu routes).",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://kenyahub.me/tools/?q={search_term_string}",

@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Rendille (Af-Rendille) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const RENDILLE_CONFIG: LanguageConfig = {
   "id": "rendille",
@@ -27,9 +22,11 @@ export const RENDILLE_CONFIG: LanguageConfig = {
 export const RENDILLE_UNITS: CourseUnit[] = [
   {
     "id": "rendille-unit-1",
-    "title": "Unit 1: Greetings, Hobley’s (1910) Rendille Camel & Desert Lexicon & Cushitic Numerals",
+    "unitNumber": 1,
+    "title": "Greetings, Hobley’s Rendille Camel & Desert Lexicon & Cushitic",
     "description": "Master Af-Rendille greetings, camel husbandry vocabulary, wildlife, and numerals 1–10 from C. W. Hobley (1910).",
     "icon": "Tractor",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-hobley-1910-lexicon",
@@ -220,9 +217,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization C. W. Hobley",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "Users",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-family-kinship-kinship-elders-2",
@@ -475,9 +474,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures C. W. Hobley",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "Scale",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-numbers-measures-cardinals-ordinals-3",
@@ -542,7 +543,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -744,9 +744,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry C. W. Hobley",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "Milk",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-food-agriculture-staple-foods-cookery-4",
@@ -982,9 +984,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife C. W. Hobley",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "PawPrint",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-nature-wildlife-land-sky-water-5",
@@ -1049,7 +1053,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1283,9 +1286,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety C. W. Hobley",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "User",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-body-health-anatomy-senses-6",
@@ -1350,7 +1355,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1560,9 +1564,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions C. W. Hobley",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "BookOpen",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-verbs-grammar-action-verbs-7",
@@ -1627,7 +1633,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1856,9 +1861,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   },
   {
     "id": "rendille-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation C. W. Hobley",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Rendille (Afi Ren'dille) built directly from Lieut. Ludwig von Höhnel (1894), C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1978).",
     "icon": "Compass",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-time-calendar-seasons-months-8",
@@ -1870,7 +1877,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ibéen",
-            "source": "Night"
+            "source": "Night",
+            "pronunciation": "ibéen"
           },
           {
             "target": "sáah",
@@ -1904,7 +1912,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "barri",
-            "source": "Tomorrow"
+            "source": "Tomorrow",
+            "pronunciation": "barri"
           }
         ],
         "sentences": [
@@ -2099,10 +2108,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "rendille-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "rendille-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Rendille (Afi Ren'dille) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-pd-corpus-9-1",
@@ -2331,10 +2342,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "rendille-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "rendille-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Rendille (Afi Ren'dille) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#DC2626",
     "skills": [
       {
         "id": "rendille-open-dataset-10-1",
@@ -2358,8 +2371,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Hahat",
             "source": "First day of the week (fast and prayer day)",
-            "pronunciation": "ha-hat",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
+            "pronunciation": "ha-hat"
           },
           {
             "target": "tumbo",
@@ -2392,7 +2404,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2499,7 +2510,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2549,7 +2559,245 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
         ]
-      }
+      },
+        {
+        "id": "rendille-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Rendille (Afi Ren'dille) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 18",
+        "words": [
+                {
+                        "target": "Nabad / Sooriyo",
+                        "source": "Hello / Peace",
+                        "pronunciation": "na-bad / soo-ri-yo"
+                },
+                {
+                        "target": "Waaq a ku barikoy",
+                        "source": "Thank you / Blessing",
+                        "pronunciation": "waaq a ku ba-ri-koy"
+                },
+                {
+                        "target": "Goob nabad!",
+                        "source": "Peace be upon the settlement!",
+                        "pronunciation": "goob na-bad"
+                },
+                {
+                        "target": "Aa nabad",
+                        "source": "It is peace / I am fine",
+                        "pronunciation": "aa na-bad"
+                },
+                {
+                        "target": "Ma nabad?",
+                        "source": "How are you? (Is it peace?)",
+                        "pronunciation": "ma na-bad"
+                },
+                {
+                        "target": "Aa",
+                        "source": "Yes",
+                        "pronunciation": "aa"
+                },
+                {
+                        "target": "Male / Ma-",
+                        "source": "No / Not",
+                        "pronunciation": "ma-le"
+                },
+                {
+                        "target": "Nabad gobsan gaal barako u keenti",
+                        "source": "Peace in the homestead brings blessing to the camels",
+                        "pronunciation": "nah-bahd gohb-sahn gaal bah-rah-koh oo kehn-tee"
+                },
+                {
+                        "target": "Ino gob oor ku hayna",
+                        "source": "We keep burden camel in our nomadic camp",
+                        "pronunciation": "ino gob oor ku hayna"
+                },
+                {
+                        "target": "Ino gob bilau ku hayna",
+                        "source": "We keep sword in our nomadic camp",
+                        "pronunciation": "ino gob bilau ku hayna"
+                },
+                {
+                        "target": "Ino gob gob ku hayna",
+                        "source": "We keep nomadic homestead in our nomadic camp",
+                        "pronunciation": "ino gob gob ku hayna"
+                },
+                {
+                        "target": "Ino gob daf ku hayna",
+                        "source": "We keep woven camel-loading mat in our nomadic camp",
+                        "pronunciation": "ino gob daf ku hayna"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Aa, ino Sorriyo wacan qabna",
+                        "source": "Yes, we have good sorriyo"
+                },
+                {
+                        "target": "Sorriyo i sii",
+                        "source": "Please give me sorriyo"
+                },
+                {
+                        "target": "Ceel agtiisa Sorriyo ku aragnay",
+                        "source": "We saw sorriyo near the well"
+                },
+                {
+                        "target": "Ati maanta Naroshon ma qabta?",
+                        "source": "Do you have naroshon today?"
+                },
+                {
+                        "target": "Aa, ino Naroshon wacan qabna",
+                        "source": "Yes, we have good naroshon"
+                },
+                {
+                        "target": "Naroshon i sii",
+                        "source": "Please give me naroshon"
+                },
+                {
+                        "target": "Ceel agtiisa Naroshon ku aragnay",
+                        "source": "We saw naroshon near the well"
+                },
+                {
+                        "target": "Ati maanta Burkeneji ma qabta?",
+                        "source": "Do you have white sheep today?"
+                },
+                {
+                        "target": "Aa, ino Burkeneji wacan qabna",
+                        "source": "Yes, we have good white sheep"
+                },
+                {
+                        "target": "Burkeneji i sii",
+                        "source": "Please give me white sheep"
+                },
+                {
+                        "target": "Ceel agtiisa Burkeneji ku aragnay",
+                        "source": "We saw white sheep near the well"
+                },
+                {
+                        "target": "Ati maanta magaca ma qabta?",
+                        "source": "Do you have name today?"
+                }
+        ]
+},
+        {
+        "id": "rendille-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Rendille (Afi Ren'dille) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 18",
+        "words": [
+                {
+                        "target": "Ino gob Sorriyo ku hayna",
+                        "source": "We keep sorriyo in our nomadic camp",
+                        "pronunciation": "ino gob sorriyo ku hayna"
+                },
+                {
+                        "target": "Ino gob Naroshon ku hayna",
+                        "source": "We keep naroshon in our nomadic camp",
+                        "pronunciation": "ino gob naroshon ku hayna"
+                },
+                {
+                        "target": "Ino gob Burkeneji ku hayna",
+                        "source": "We keep white sheep in our nomadic camp",
+                        "pronunciation": "ino gob burkeneji ku hayna"
+                },
+                {
+                        "target": "Ino gob magaca ku hayna",
+                        "source": "We keep name in our nomadic camp",
+                        "pronunciation": "ino gob magaca ku hayna"
+                },
+                {
+                        "target": "Gatii Besa suug meeqa?",
+                        "source": "What is the value of money at the trading post?",
+                        "pronunciation": "gatii besa suug meeqa"
+                },
+                {
+                        "target": "Gatii Gaal suug meeqa?",
+                        "source": "What is the value of camel bridewealth at the trading post?",
+                        "pronunciation": "gatii gaal suug meeqa"
+                },
+                {
+                        "target": "Gatii Abaar suug meeqa?",
+                        "source": "What is the value of drought at the trading post?",
+                        "pronunciation": "gatii abaar suug meeqa"
+                },
+                {
+                        "target": "Gatii Dawo suug meeqa?",
+                        "source": "What is the value of medicine at the trading post?",
+                        "pronunciation": "gatii dawo suug meeqa"
+                },
+                {
+                        "target": "Gatii Jiro suug meeqa?",
+                        "source": "What is the value of sickness at the trading post?",
+                        "pronunciation": "gatii jiro suug meeqa"
+                },
+                {
+                        "target": "Gatii Nabad suug meeqa?",
+                        "source": "What is the value of peace at the trading post?",
+                        "pronunciation": "gatii nabad suug meeqa"
+                },
+                {
+                        "target": "Gatii Gargaar suug meeqa?",
+                        "source": "What is the value of help at the trading post?",
+                        "pronunciation": "gatii gargaar suug meeqa"
+                },
+                {
+                        "target": "Gatii bolkha suug meeqa?",
+                        "source": "What is the value of burn at the trading post?",
+                        "pronunciation": "gatii bolkha suug meeqa"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Aa, ino magaca wacan qabna",
+                        "source": "Yes, we have good name"
+                },
+                {
+                        "target": "magaca i sii",
+                        "source": "Please give me name"
+                },
+                {
+                        "target": "Ceel agtiisa magaca ku aragnay",
+                        "source": "We saw name near the well"
+                },
+                {
+                        "target": "Gatii Foor suug meeqa?",
+                        "source": "What is the value of camel caravan at the trading post?"
+                },
+                {
+                        "target": "Gatii Ceel suug meeqa?",
+                        "source": "What is the value of waterhole at the trading post?"
+                },
+                {
+                        "target": "Gatii Diid suug meeqa?",
+                        "source": "What is the value of desert plain at the trading post?"
+                },
+                {
+                        "target": "Gatii Gob suug meeqa?",
+                        "source": "What is the value of camp enclosure at the trading post?"
+                },
+                {
+                        "target": "Gatii Fog suug meeqa?",
+                        "source": "What is the value of far at the trading post?"
+                },
+                {
+                        "target": "Gatii Dhow suug meeqa?",
+                        "source": "What is the value of near at the trading post?"
+                },
+                {
+                        "target": "Gatii Suug suug meeqa?",
+                        "source": "What is the value of market at the trading post?"
+                },
+                {
+                        "target": "Gatii Besa suug meeqa?",
+                        "source": "What is the value of money at the trading post?"
+                },
+                {
+                        "target": "Gatii Gaal suug meeqa?",
+                        "source": "What is the value of camel bridewealth at the trading post?"
+                }
+        ]
+}
     ]
   }
 ];

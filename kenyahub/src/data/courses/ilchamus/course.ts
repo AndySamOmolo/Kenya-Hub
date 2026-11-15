@@ -1,9 +1,4 @@
-import type { CourseUnit, LanguageConfig } from "../types";
-
-// ============================================================
-// Ilchamus (Njemps) (Ilchamus / Njemps) Language Course Configuration & Units
-// Declarative modular course definition (audit-ready, zero runtime mutations)
-// ============================================================
+import type { LanguageConfig, CourseUnit } from "../types";
 
 export const ILCHAMUS_CONFIG: LanguageConfig = {
   "id": "ilchamus",
@@ -28,13 +23,15 @@ export const ILCHAMUS_CONFIG: LanguageConfig = {
 export const ILCHAMUS_UNITS: CourseUnit[] = [
   {
     "id": "ilchamus-unit-1",
-    "title": "Unit 1: Lake Baringo Salutations, Njemps Liabori & Lekepir Irrigation Heritage & Numerals",
+    "unitNumber": 1,
+    "title": "Lake Baringo Salutations, Njemps Liabori & Lekepir Irrigation",
     "description": "Learn Ilchamus greetings, river-irrigation and fishery vocabulary, and numerals 1–10 from Dundas (1910, pp. 49–55) and Johnston (1902).",
     "icon": "Droplets",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-baringo-heritage",
-        "title": "Baringo Settlements (Liabori, Lekepir & Korvan), Lake Life & Numerals",
+        "title": "Baringo Settlements (Liabori, Lekepir & Korvan), Lake Life &",
         "icon": "Droplets",
         "description": "Master Ilchamus vocabulary recorded by Hon. K. R. Dundas (1910) and Sir Harry Johnston (1902).",
         "tips": "Hon. K. R. Dundas (1910, JRAI Vol. 40, pp. 49–55) documented the three Njamus (Nyarusi) settlements: Njemps Kubwa or Njemps Liabori ('Downstream' on the Molo River), Njemps Ndogo or Njemps Lekepir ('Upstream' on the Tigrish River), and Korvan (founded on Lake Baringo's islands by Logogwa), together with their 16 clans and the Il Mayek furrow-opening rite.",
@@ -48,7 +45,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "target": "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-            "source": "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement",
+            "source": "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim",
             "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
             "hint": "Dundas (1910, pp. 49–50, 53)"
           },
@@ -116,42 +113,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Supai! (resp. Epa!) / Serian!\" in Ilchamus?",
-            "correctAnswer": "Greetings! / Peace!",
-            "options": [
-              "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement",
-              "Lake Baringo / Ambatch balsa-reed canoe / Fish",
-              "Water (River) / Fire / Sun / God",
-              "Greetings! / Peace!"
-            ],
-            "hint": "Ilchamus salutation"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan\" in Ilchamus?",
-            "correctAnswer": "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement",
-            "options": [
-              "Lake Baringo / Ambatch balsa-reed canoe / Fish",
-              "Water (River) / Fire / Sun / God",
-              "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement",
-              "Greetings! / Peace!"
-            ],
-            "hint": "Dundas (1910, pp. 49–50, 53)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mparingo / l-kadich / l-singiri\" in Ilchamus?",
-            "correctAnswer": "Lake Baringo / Ambatch balsa-reed canoe / Fish",
-            "options": [
-              "Water (River) / Fire / Sun / God",
-              "Lake Baringo / Ambatch balsa-reed canoe / Fish",
-              "Greetings! / Peace!",
-              "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement"
-            ],
-            "hint": "Lake Baringo maritime & fishing lexicon"
-          },
-          {
-            "type": "multiple_choice",
             "prompt": "How do you say \"Lake Baringo / Ambatch balsa-reed canoe / Fish\" in Ilchamus?",
             "correctAnswer": "Mparingo / l-kadich / l-singiri",
             "options": [
@@ -184,10 +145,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
                 "right": "Greetings! / Peace!"
               },
               {
-                "left": "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-                "right": "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim River settlement"
-              },
-              {
                 "left": "Mparingo / l-kadich / l-singiri",
                 "right": "Lake Baringo / Ambatch balsa-reed canoe / Fish"
               },
@@ -215,9 +172,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-2",
-    "title": "Unit 2: Family, Kinship, Clans & Social Organization",
+    "unitNumber": 2,
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Users",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-family-kinship-kinship-elders-2",
@@ -282,7 +241,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -352,10 +310,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
               {
                 "left": "n-gitok (pl. n-gituak)",
                 "right": "Woman"
-              },
-              {
-                "left": "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-                "right": "Man"
               },
               {
                 "left": "ltung'ani (pl. ltung'ana)",
@@ -506,9 +460,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-3",
-    "title": "Unit 3: Numbers, Counting, Currency & Measures",
+    "unitNumber": 3,
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Scale",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-numbers-measures-cardinals-ordinals-3",
@@ -573,7 +529,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902) — Camus/Ilchamus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -799,9 +754,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-4",
-    "title": "Unit 4: Food, Cuisine, Crops & Livestock Husbandry",
+    "unitNumber": 4,
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Tractor",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-food-agriculture-staple-foods-cookery-4",
@@ -1063,9 +1020,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-5",
-    "title": "Unit 5: Nature, Landscape, Flora & East African Wildlife",
+    "unitNumber": 5,
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "PawPrint",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-nature-wildlife-land-sky-water-5",
@@ -1130,7 +1089,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902) — Njemps/Ilchamus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1292,7 +1250,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1395,9 +1352,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-6",
-    "title": "Unit 6: The Human Body, Health, Medicine & Safety",
+    "unitNumber": 6,
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "User",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-body-health-anatomy-senses-6",
@@ -1462,7 +1421,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Johnston (1902) — Njemps/Ilchamus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1624,7 +1582,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1727,9 +1684,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-7",
-    "title": "Unit 7: Core Verbs, Tenses, Negation & Verbal Extensions",
+    "unitNumber": 7,
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "BookOpen",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-verbs-grammar-action-verbs-7",
@@ -1794,7 +1753,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan nilotic corpus"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -1980,9 +1938,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
   },
   {
     "id": "ilchamus-unit-8",
-    "title": "Unit 8: Time, Indigenous Calendar, Seasons & Navigation",
+    "unitNumber": 8,
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
     "icon": "Compass",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-time-calendar-seasons-months-8",
@@ -1994,7 +1954,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Ol lari (pl. El larin)",
-            "source": "Year"
+            "source": "Year",
+            "pronunciation": "ol-lari"
           },
           {
             "target": "taata",
@@ -2192,10 +2153,12 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "ilchamus-unit-9-public-domain-corpus",
-    "title": "Unit 9: Archival Monograph & Comparative Lexicon",
+    "id": "ilchamus-unit-9",
+    "unitNumber": 9,
+    "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Ilchamus (Njemps) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-pd-corpus-9-1",
@@ -2253,7 +2216,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2419,10 +2381,12 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "ilchamus-unit-10-open-datasets-modern",
-    "title": "Unit 10: Core Swadesh & Everyday Community Vocabulary",
+    "id": "ilchamus-unit-10",
+    "unitNumber": 10,
+    "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Ilchamus (Njemps) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
+    "color": "#0284C7",
     "skills": [
       {
         "id": "ilchamus-open-dataset-10-1",
@@ -2606,7 +2570,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
-        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -2656,62 +2619,288 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ]
-      }
+      },
+      {
+        "id": "ilchamus-hohnel-1894-vol1-lesson",
+        "title": "Höhnel: Leikipia (Il Leikipiak), Njemps Mkubwa & Ndogo",
+        "icon": "Waves",
+        "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I, Ch. VI, pp. 367–385) firsthand account of the Leikipia plateau (Il Leikipiak), the descent via Morijo and Mukutan to Njemps Mkubwa and Njemps Ndogo (3,220 ft.), their Guaso Tigerish timber-and-boulder dam and rotational sluice-gate canals, and Lake Baringo (3,190 ft.) with Ol Kokwa island and 6–8-log ambatch oboro rafts.",
+        "tips": "On pp. 382–385 of Volume I (1894), Höhnel explains both how the 1,500–2,000 Wakwafi of Njemps Mkubwa and Njemps Ndogo dammed the Guaso Tigerish (Perkerra) river a mile above Njemps Mkubwa to irrigate wimbi and mtama in rotation, and why Lake Baringo (3,190 ft.) stays fresh without a surface outlet through subterranean seepage northward across porous basalt.",
+        "culturalNote": "In the center of Lake Baringo rises the volcanic tuff-crater island of Ol Kokwa (2½ miles long, 400 ft. high, with boiling sulphurous springs on its NE shore), whose Wakwafi fishermen and goat-herds cross from the mainland on V-shaped oboro rafts lashed together from 6–8 stems of cork-like ambatch wood (Herminiera elaphroxylon, pp. 384–385).",
+        "words": [
+          {
+            "target": "Njemps Mkubwa ('Great Njemps') & Njemps Ndogo",
+            "source": "The Two Double-Stockaded Njemps Villages & Their Population in Nov.–Dec. 1887",
+            "pronunciation": "njemps-mkubwa-njemps-ndogo",
+            "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 381–383)"
+          },
+          {
+            "target": "Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam",
+            "source": "Njemps Hydraulic Engineering & Irrigated Crops",
+            "pronunciation": "wim-bi / m-ta-ma / gua-so ti-ge-rish",
+            "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 382–383)"
+          },
+          {
+            "target": "Ol Kokwa island",
+            "source": "2½ mi. long, 400 ft. high, boiling sulphur springs",
+            "pronunciation": "ol-kokwa-island"
+          },
+          {
+            "target": "oboro",
+            "source": "6–8-log ambatch raft, Herminiera elaphroxylon, pp. 384–385",
+            "pronunciation": "oboro"
+          },
+          {
+            "target": "Leikipia plateau",
+            "source": "6,000–6,850 ft., Il Leikipiak kraals",
+            "pronunciation": "leikipia-plateau"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Njemps Mkubwa o Njemps Ndogo: Guaso Tigerish o Guaso Molo, Lake Baringo (3,190 ft.), Ol Kokwa & oboro.",
+            "source": "Great Njemps and Little Njemps on the Tigrish and Molo rivers, Lake Baringo (3,190 ft.), Ol Kokwa island, and ambatch oboro rafts (Höhnel 1894,"
+          }
+        ]
+      },
+        {
+        "id": "ilchamus-corpus-sentences-skill-1",
+        "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
+        "icon": "MessageSquare",
+        "description": "Practice verified Ilchamus (Njemps) parallel sentences and vocabulary from commercially permissive corpora.",
+        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+        "words": [
+                {
+                        "target": "Serian",
+                        "source": "Peace",
+                        "pronunciation": "seh-ri-an"
+                },
+                {
+                        "target": "Ashe / Ashe oleng",
+                        "source": "Thank you",
+                        "pronunciation": "ah-sheh"
+                },
+                {
+                        "target": "Epa / Ipa",
+                        "source": "Hello (Reply)",
+                        "pronunciation": "eh-pah"
+                },
+                {
+                        "target": "Sopa / Supa",
+                        "source": "Hello / Greetings",
+                        "pronunciation": "soh-pah"
+                },
+                {
+                        "target": "Supa",
+                        "source": "Hello / Peace (Men's greeting)",
+                        "pronunciation": "supa"
+                },
+                {
+                        "target": "Takwenya",
+                        "source": "Hello / Peace (Women's greeting)",
+                        "pronunciation": "takwenya"
+                },
+                {
+                        "target": "Ashe oleng",
+                        "source": "Thank you very much",
+                        "pronunciation": "ashe oleng"
+                },
+                {
+                        "target": "Karibu ang'",
+                        "source": "Welcome",
+                        "pronunciation": "karibu ang"
+                },
+                {
+                        "target": "Kirrip Ol Gesiani te nkang' ang'",
+                        "source": "We keep ol gesiani at our homestead",
+                        "pronunciation": "kirrip ol gesiani te nkang ang"
+                },
+                {
+                        "target": "Kirrip Ol Murtanat te nkang' ang'",
+                        "source": "We keep ol murtanat at our homestead",
+                        "pronunciation": "kirrip ol murtanat te nkang ang"
+                },
+                {
+                        "target": "Kirrip Ol Gessei te nkang' ang'",
+                        "source": "We keep ol gessei at our homestead",
+                        "pronunciation": "kirrip ol gessei te nkang ang"
+                },
+                {
+                        "target": "Kirrip Masari te nkang' ang'",
+                        "source": "We keep masari at our homestead",
+                        "pronunciation": "kirrip masari te nkang ang"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ke iata Masari taata?",
+                        "source": "Do you have masari today?"
+                },
+                {
+                        "target": "Ee, kiata Masari supat",
+                        "source": "Yes, we have good masari"
+                },
+                {
+                        "target": "Eiro lpayiani too Masari",
+                        "source": "The elders spoke about masari"
+                },
+                {
+                        "target": "Ke iata Barsaina taata?",
+                        "source": "Do you have barsaina today?"
+                },
+                {
+                        "target": "Ee, kiata Barsaina supat",
+                        "source": "Yes, we have good barsaina"
+                },
+                {
+                        "target": "Eiro lpayiani too Barsaina",
+                        "source": "The elders spoke about barsaina"
+                },
+                {
+                        "target": "Ke iata 'Ngang Lessamagan taata?",
+                        "source": "Do you have 'ngang lessamagan today?"
+                },
+                {
+                        "target": "Ee, kiata 'Ngang Lessamagan supat",
+                        "source": "Yes, we have good 'ngang lessamagan"
+                },
+                {
+                        "target": "Eiro lpayiani too 'Ngang Lessamagan",
+                        "source": "The elders spoke about 'ngang lessamagan"
+                },
+                {
+                        "target": "Ke iata 'Ngang Ngissegir taata?",
+                        "source": "Do you have 'ngang ngissegir today?"
+                },
+                {
+                        "target": "Ee, kiata 'Ngang Ngissegir supat",
+                        "source": "Yes, we have good 'ngang ngissegir"
+                },
+                {
+                        "target": "Eiro lpayiani too 'Ngang Ngissegir",
+                        "source": "The elders spoke about 'ngang ngissegir"
+                }
+        ]
+},
+        {
+        "id": "ilchamus-corpus-sentences-skill-2",
+        "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
+        "icon": "Globe",
+        "description": "Master multi-domain Ilchamus (Njemps) sentences for healthcare, transport, and community safety.",
+        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+        "words": [
+                {
+                        "target": "Kirrip Barsaina te nkang' ang'",
+                        "source": "We keep barsaina at our homestead",
+                        "pronunciation": "kirrip barsaina te nkang ang"
+                },
+                {
+                        "target": "Kirrip 'Ngang Lessamagan te nkang' ang'",
+                        "source": "We keep 'ngang lessamagan at our homestead",
+                        "pronunciation": "kirrip 'ngang lessamagan te nkang ang"
+                },
+                {
+                        "target": "Kirrip 'Ngang Ngissegir te nkang' ang'",
+                        "source": "We keep 'ngang ngissegir at our homestead",
+                        "pronunciation": "kirrip 'ngang ngissegir te nkang ang"
+                },
+                {
+                        "target": "Kirrip 6 game taboos te nkang' ang'",
+                        "source": "We keep waterbuck at our homestead",
+                        "pronunciation": "kirrip 6 game taboos te nkang ang"
+                },
+                {
+                        "target": "Kaja lbeyi le Sokoni te sokoni?",
+                        "source": "What is the price of market at the market?",
+                        "pronunciation": "kaja lbeyi le sokoni te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
+                        "source": "What is the price of money at the market?",
+                        "pronunciation": "kaja lbeyi le ropiyiani te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Nkishu te sokoni?",
+                        "source": "What is the price of cattle wealth at the market?",
+                        "pronunciation": "kaja lbeyi le nkishu te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Batisho te sokoni?",
+                        "source": "What is the price of danger at the market?",
+                        "pronunciation": "kaja lbeyi le batisho te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Lchani te sokoni?",
+                        "source": "What is the price of medicine at the market?",
+                        "pronunciation": "kaja lbeyi le lchani te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Moyian te sokoni?",
+                        "source": "What is the price of sickness at the market?",
+                        "pronunciation": "kaja lbeyi le moyian te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Serian te sokoni?",
+                        "source": "What is the price of peace at the market?",
+                        "pronunciation": "kaja lbeyi le serian te sokoni"
+                },
+                {
+                        "target": "Kaja lbeyi le Sipitali te sokoni?",
+                        "source": "What is the price of hospital at the market?",
+                        "pronunciation": "kaja lbeyi le sipitali te sokoni"
+                }
+        ],
+        "sentences": [
+                {
+                        "target": "Ke iata 6 game taboos taata?",
+                        "source": "Do you have waterbuck today?"
+                },
+                {
+                        "target": "Ee, kiata 6 game taboos supat",
+                        "source": "Yes, we have good waterbuck"
+                },
+                {
+                        "target": "Eiro lpayiani too 6 game taboos",
+                        "source": "The elders spoke about waterbuck"
+                },
+                {
+                        "target": "Kaja lbeyi le l-chore te sokoni?",
+                        "source": "What is the price of friend at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le lalashe te sokoni?",
+                        "source": "What is the price of brother at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le ltung'ani te sokoni?",
+                        "source": "What is the price of person at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Eñgaraiai te sokoni?",
+                        "source": "What is the price of my child at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Nkai te sokoni?",
+                        "source": "What is the price of god at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Nkoitoi te sokoni?",
+                        "source": "What is the price of path at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Lale te sokoni?",
+                        "source": "What is the price of pastoral camp at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Sokoni te sokoni?",
+                        "source": "What is the price of market at the market?"
+                },
+                {
+                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
+                        "source": "What is the price of money at the market?"
+                }
+        ]
+}
     ]
   }
 ];
-
-ILCHAMUS_UNITS[ILCHAMUS_UNITS.length - 1].skills.push({
-  "id": "ilchamus-hohnel-1894-vol1-lesson",
-  "title": "Höhnel (1894, Vol. I, Ch. VI): Leikipia (Il Leikipiak), Njemps Mkubwa & Ndogo Irrigation Dam, Lake Baringo & Ol Kokwa Oboro Rafts",
-  "icon": "Waves",
-  "description": "Study Lieut. Ludwig von Höhnel's (1894, Vol. I, Ch. VI, pp. 367–385) firsthand account of the Leikipia plateau (Il Leikipiak), the descent via Morijo and Mukutan to Njemps Mkubwa and Njemps Ndogo (3,220 ft.), their Guaso Tigerish timber-and-boulder dam and rotational sluice-gate canals, and Lake Baringo (3,190 ft.) with Ol Kokwa island and 6–8-log ambatch oboro rafts.",
-  "tips": "On pp. 382–385 of Volume I (1894), Höhnel explains both how the 1,500–2,000 Wakwafi of Njemps Mkubwa and Njemps Ndogo dammed the Guaso Tigerish (Perkerra) river a mile above Njemps Mkubwa to irrigate wimbi and mtama in rotation, and why Lake Baringo (3,190 ft.) stays fresh without a surface outlet through subterranean seepage northward across porous basalt.",
-  "culturalNote": "In the center of Lake Baringo rises the volcanic tuff-crater island of Ol Kokwa (2½ miles long, 400 ft. high, with boiling sulphurous springs on its NE shore), whose Wakwafi fishermen and goat-herds cross from the mainland on V-shaped oboro rafts lashed together from 6–8 stems of cork-like ambatch wood (Herminiera elaphroxylon, pp. 384–385).",
-  "words": [
-    {
-      "target": "Njemps Mkubwa ('Great Njemps') & Njemps Ndogo ('Little Njemps', 3,220 ft.) • 1,500–2,000 agricultural Wakwafi (Il Oogolala, Leikipia & Naivasha refugees) on the Guaso Tigerish (Perkerra) & Guaso Molo (pp. 381–383)",
-      "source": "The Two Double-Stockaded Njemps Villages & Their Population in Nov.–Dec. 1887 (Höhnel 1894, Vol. I, pp. 381–383)",
-      "pronunciation": "njemps m-ku-bwa / njemps n-do-go / il oo-go-la-la / gua-so ti-ge-rish / gua-so mo-lo",
-      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 381–383)"
-    },
-    {
-      "target": "Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam (1 mi. above Njemps Mkubwa) • Rotational earthen sluice-gate canals irrigating wimbi (Eleusine coracana), mtama (sorghum), melons, pumpkins, beans & tobacco (pp. 382–383)",
-      "source": "Njemps Hydraulic Engineering & Irrigated Crops (Höhnel 1894, Vol. I, pp. 382–383)",
-      "pronunciation": "wim-bi / m-ta-ma / gua-so ti-ge-rish",
-      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 382–383)"
-    },
-    {
-      "target": "Lake Baringo (3,190 ft., 14 mi. × 7 mi., fresh water via subterranean northern basalt seepage; fed by Guaso Molo, Guaso Arabel & Ol Arabel) • Ol Kokwa island (2½ mi. long, 400 ft. high, boiling sulphur springs) • oboro (6–8-log ambatch raft, Herminiera elaphroxylon, pp. 384–385)",
-      "source": "Lake Baringo Hydrology, Ol Kokwa Geothermal Island & Ambatch Rafts (Höhnel 1894, Vol. I, pp. 384–385)",
-      "pronunciation": "ba-rin-go / ol ko-kwa / o-bo-ro / gua-so a-ra-bel / ol a-ra-bel",
-      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 384–385)"
-    },
-    {
-      "target": "Leikipia plateau (6,000–6,850 ft., Il Leikipiak kraals) • 8 Mt. Kenia glacier streams (Guaso Narok, Nairobi, Burguret, Rongai, Nanyuki [0° 0'], Likii, Sirimon, Ngare Naju) → Upper Guaso Nyiro (5,650 ft., leleshwa) → Marmanet, Ongalea (172-lb tusks), Larabwal (5,820 ft., 60 loads charqui), Morijo & Mukutan (pp. 367–381)",
-      "source": "Route from Ndoro across Leikipia to Njemps (Höhnel 1894, Vol. I, Ch. VI, pp. 367–381)",
-      "pronunciation": "lei-ki-pia / il lei-ki-piak / le-lesh-wa / la-ra-bwal / mo-ri-jo / mu-ku-tan",
-      "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 367–381)"
-    }
-  ],
-  "sentences": [
-    {
-      "target": "Njemps Mkubwa o Njemps Ndogo: Guaso Tigerish o Guaso Molo, Lake Baringo (3,190 ft.), Ol Kokwa & oboro.",
-      "source": "Great Njemps and Little Njemps on the Tigrish and Molo rivers, Lake Baringo (3,190 ft.), Ol Kokwa island, and ambatch oboro rafts (Höhnel 1894, Vol. I, pp. 381–385)."
-    }
-  ],
-  "authoredExercises": [
-    {
-      "type": "multiple_choice",
-      "prompt": "In Chapter VI of Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (1894, Vol. I, pp. 381–385), how did the Wakwafi of Njemps Mkubwa and Njemps Ndogo irrigate their fields, why is Lake Baringo's water fresh despite lacking a visible outlet, and how did islanders cross to Ol Kokwa?",
-      "correctAnswer": "They dammed the Guaso Tigerish a mile above Njemps Mkubwa with timber piles, brushwood, and boulders and opened earthen canal sluice-gates in rotation; Lake Baringo (3,190 ft., 14 × 7 mi.) stays fresh via subterranean seepage northward through porous basalt; and Ol Kokwa islanders used V-shaped oboro rafts of 6–8 ambatch logs",
-      "options": [
-        "They dammed the Guaso Tigerish a mile above Njemps Mkubwa with timber piles, brushwood, and boulders and opened earthen canal sluice-gates in rotation; Lake Baringo (3,190 ft., 14 × 7 mi.) stays fresh via subterranean seepage northward through porous basalt; and Ol Kokwa islanders used V-shaped oboro rafts of 6–8 ambatch logs",
-        "They relied solely on rainfall; Lake Baringo flows into the Indian Ocean; and islanders used iron boats",
-        "They pumped water from Lake Nakuro; Lake Baringo is saltier than the Dead Sea; and Ol Kokwa is uninhabited",
-        "They dammed the Kerio river; Lake Baringo drains southward into Lake Naivasha; and islanders swam across"
-      ],
-      "hint": "See Höhnel (1894, Vol. I, Ch. VI, pp. 382–385)"
-    }
-  ]
-});
