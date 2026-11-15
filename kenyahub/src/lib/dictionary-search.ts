@@ -705,6 +705,7 @@ export function runTranslatorSearch(params: {
             entry: {
               english: synthesizedEnglish,
               translation: query.trim(),
+              pronunciation: "",
               context: `Word-by-word synthesis (${englishPivotTokens.length}/${wordTokens.length} words matched in ${sourceDict.languageName})`,
             },
             categoryName: "Word-by-Word Phrase Bridge",
@@ -729,11 +730,14 @@ export function runTranslatorSearch(params: {
               entry: {
                 english: synthesizedEnglish,
                 translation: targetParts.join(" + "),
+                pronunciation: "",
                 context: `Word-by-word bridge (${sourceDict.languageName} → English → ${targetDict.languageName})`,
               },
               sourceEntry: {
                 english: synthesizedEnglish,
                 translation: query.trim(),
+                pronunciation: "",
+                context: "",
               },
               pivotEnglish: synthesizedEnglish,
               categoryName: "Word-by-Word Phrase Bridge",

@@ -524,7 +524,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       `Review the Grammar Reference and Proverbs & Wisdom tabs alongside vocabulary modules to understand how ${course.config.name} morphology and oral idioms operate in context.`,
     ],
     notes: sources.map(
-      (s) => `${s.title} (${s.published}) — ${s.note || "Verified primary linguistic reference."}`
+      (s) => `${s.title} (${s.published}) — ${s.contribution || s.coverageNote || "Verified primary linguistic reference."}`
     ),
     faq: courseFaq,
   };

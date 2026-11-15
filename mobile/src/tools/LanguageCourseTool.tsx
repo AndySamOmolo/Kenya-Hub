@@ -4025,7 +4025,7 @@ export default function LanguageCourseTool({
               const allLuoProverbs = [
                 ...luoProverbs,
                 ...LUO_CW_ITEMS.map((item, idx) => ({
-                  id: `luo-cw-${idx + 1}`,
+                  id: 10000 + idx + 1,
                   luo: item.indigenous,
                   english: item.literalTranslation,
                   meaning: item.meaning,

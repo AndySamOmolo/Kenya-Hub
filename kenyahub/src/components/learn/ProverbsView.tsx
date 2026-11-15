@@ -41,7 +41,7 @@ const KIKUYU_PROVERBS: KikuyuProverbItem[] = [
 const ALL_LUO_PROVERBS: ProverbEntry[] = [
   ...luoProverbs,
   ...LUO_CW_ITEMS.map((item, idx) => ({
-    id: `luo-cw-${idx + 1}`,
+    id: 10000 + idx + 1,
     luo: item.indigenous,
     english: item.literalTranslation,
     meaning: item.meaning,
@@ -141,23 +141,23 @@ export default function ProverbsView({
     return [...proverbs, ...notes];
   }, [activeLang, activeCourse]);
 
-  const kikuyuCategories = useMemo(() => {
+  const kikuyuCategories = useMemo((): string[] => {
     const cats = Array.from(
-      new Set(KIKUYU_PROVERBS.map((p: KikuyuProverbItem) => p.category).filter(Boolean))
+      new Set(KIKUYU_PROVERBS.map((p: KikuyuProverbItem) => p.category).filter((c): c is string => Boolean(c)))
     );
     return ["All", ...cats];
   }, []);
 
-  const luoCategories = useMemo(() => {
+  const luoCategories = useMemo((): string[] => {
     const cats = Array.from(
-      new Set(ALL_LUO_PROVERBS.map((p) => p.category).filter(Boolean))
+      new Set(ALL_LUO_PROVERBS.map((p) => p.category).filter((c): c is NonNullable<ProverbEntry["category"]> => Boolean(c)))
     );
     return ["All", ...cats];
   }, []);
 
-  const otherCategories = useMemo(() => {
+  const otherCategories = useMemo((): string[] => {
     const cats = Array.from(
-      new Set(otherLangWisdom.map((item) => item.category).filter(Boolean))
+      new Set(otherLangWisdom.map((item) => item.category).filter((c): c is CulturalWisdomItem["category"] => Boolean(c)))
     );
     return ["All", ...cats];
   }, [otherLangWisdom]);

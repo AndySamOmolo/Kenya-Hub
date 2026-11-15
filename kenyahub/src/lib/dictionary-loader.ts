@@ -55,7 +55,7 @@ export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
         const newEntry: DictEntry = {
           english: contrib.english.trim(),
           translation: contrib.translation.trim(),
-          ...(contrib.pronunciation?.trim() ? { pronunciation: contrib.pronunciation.trim() } : {}),
+          pronunciation: contrib.pronunciation?.trim() || "",
           context: contrib.context?.trim()
             ? `${contrib.context.trim()} (Contributed by ${contrib.contributorName || "Community"})`
             : `Community contribution (${contrib.contributorName || "Verified"})`,
