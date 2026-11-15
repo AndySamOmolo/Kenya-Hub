@@ -3,7 +3,7 @@ import React, { useState, useMemo } from "react";
 import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
-import { KESInput, StatCard, Row, createStyles } from "./shared";
+import { KESInput, StatCard, Row, BreakdownBar, ShareCopyBar, createStyles } from "./shared";
 import crspData from "../../shared/data/kra-car-import-crsp.json";
 
 /** 9. KRA Car Import Duty & CRSP Calculator */
@@ -26,7 +26,9 @@ export function KraCarImportCalculator() {
     const depRate = depBand.rate;
 
     let exciseRate = crspData.rates.exciseSmallPetrol;
-    if (fuel === "petrol")
+    if (fuel === "electric")
+      exciseRate = (crspData.rates as any).exciseElectric ?? 0.1;
+    else if (fuel === "petrol")
       exciseRate = cc > 1500 ? crspData.rates.exciseLargePetrol : crspData.rates.exciseSmallPetrol;
     else if (fuel === "diesel")
       exciseRate = cc > 2500 ? crspData.rates.exciseLargeDiesel : crspData.rates.exciseSmallDiesel;
@@ -45,7 +47,8 @@ export function KraCarImportCalculator() {
     const ntsaFee =
       (crspData.ntsaRegistration.find((r) => cc <= r.maxCc) || crspData.ntsaRegistration[5]).fee;
     const portAndKebs = crspData.rates.kebsInspectionKes + crspData.rates.portClearingKes;
-    const cifKes = (Math.max(0, Number(cifUsdText) || preset.avgCifUsd)) * 129;
+    const cifUsd = cifUsdText.trim() === '' ? 0 : Math.max(0, Number(cifUsdText.replace(/,/g, '')) || 0);
+    const cifKes = cifUsd * 129;
     const totalLanded = cifKes + totalKraDuty + ntsaFee + portAndKebs;
 
     return {
@@ -114,6 +117,21 @@ export function KraCarImportCalculator() {
         value={`KES ${Math.round(calc.totalKraDuty).toLocaleString()}`}
         highlight
         subtext={`Estimated Total On-the-Road: KES ${Math.round(calc.totalLanded).toLocaleString()}`}
+      />
+
+      <BreakdownBar
+        title="On-the-Road Cost Split (CIF vs KRA Taxes vs Port/NTSA)"
+        segments={[
+          { label: "CIF Value", value: Math.round(calc.cifKes), color: theme.sky },
+          { label: "KRA Duties & VAT", value: Math.round(calc.totalKraDuty), color: theme.kenyaRedLight },
+          { label: "Port, KEBS & NTSA", value: Math.round(calc.ntsaFee + calc.portAndKebs), color: theme.gold },
+        ]}
+      />
+
+      <ShareCopyBar
+        title={`KRA Car Import Estimate — ${preset.make} ${preset.model}`}
+        summaryText={`Vehicle: ${preset.make} ${preset.model} (${preset.cc}cc ${preset.fuel})\nDepreciation: ${Math.round(calc.depBand.rate * 100)}% (${calc.depBand.minYears}–${calc.depBand.maxYears} yrs)\nCIF Value: KES ${Math.round(calc.cifKes).toLocaleString()}\nTotal KRA Port Taxes: KES ${Math.round(calc.totalKraDuty).toLocaleString()}\nNTSA + KEBS/Port: KES ${Math.round(calc.ntsaFee + calc.portAndKebs).toLocaleString()}\nTotal Landed On-the-Road Cost: KES ${Math.round(calc.totalLanded).toLocaleString()}`}
+        shareLabel="Share Import Duty Breakdown"
       />
 
       <Text style={styles.subHeading}>KRA Duty & Clearance Breakdown</Text>

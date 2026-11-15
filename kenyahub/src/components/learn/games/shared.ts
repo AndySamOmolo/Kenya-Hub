@@ -1,8 +1,11 @@
 import type { WordPair, CourseUnit } from "@/data/courses/types";
+import { getPrimaryForm, cleanExerciseText } from "@/lib/learn-engine";
 
 export interface GameProps {
   allWords: WordPair[];
   languageName: string;
+  languageId?: string;
+  onAwardXp?: (xp: number) => void;
 }
 
 export function shuffle<T>(arr: T[]): T[] {
@@ -18,28 +21,33 @@ export function pickRandom<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-/** Gather all words from all units/skills */
+/** Gather and normalize all words from all units/skills for mini-games */
 export function getAllWords(units: CourseUnit[]): WordPair[] {
   const words: WordPair[] = [];
   for (const unit of units) {
     for (const skill of unit.skills) {
-      words.push(
-        ...skill.words.filter((word) => {
-          const target = word.target.trim();
-          const source = word.source.trim();
-          return (
-            target.length >= 2 &&
-            target.length <= 40 &&
-            source.length > 0 &&
-            !source.includes(":") &&
-            !target.includes("→") &&
-            !target.startsWith("-")
-          );
-        })
-      );
+      for (const word of skill.words) {
+        const target = getPrimaryForm(word.target).trim();
+        const source = getPrimaryForm(word.source).trim();
+        if (
+          target.length >= 2 &&
+          target.length <= 36 &&
+          source.length > 0 &&
+          source.length <= 60 &&
+          !source.includes(":") &&
+          !target.includes("→") &&
+          !target.startsWith("-")
+        ) {
+          words.push({
+            ...word,
+            target,
+            source: cleanExerciseText(source),
+          });
+        }
+      }
     }
   }
   return Array.from(
-    new Map(words.map((word) => [`${word.target}:${word.source}`, word])).values()
+    new Map(words.map((word) => [`${word.target.toLowerCase()}:${word.source.toLowerCase()}`, word])).values()
   );
 }

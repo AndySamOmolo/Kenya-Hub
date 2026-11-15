@@ -14,7 +14,7 @@ import {
   RotateCcw,
   Layers,
 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
+import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
@@ -31,6 +31,7 @@ import {
   loadProgress,
   saveProgress,
   applyLessonResult,
+  awardActivityXp,
   getDueReviews,
 } from "@/lib/learn-progress";
 import { TOOLS } from "@/lib/tools-registry";
@@ -279,9 +280,18 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       if (lessonSkill.words.length > 14) {
         const batchSize = 12;
         const maxStart = Math.max(0, lessonSkill.words.length - batchSize);
-        const offset = ((level - 1) * batchSize) <= maxStart
-          ? (level - 1) * batchSize
-          : Math.floor(Math.random() * (maxStart + 1));
+        const savedCursor = progress.dictCursors?.[skillId];
+        const offset =
+          savedCursor !== undefined
+            ? Math.min(maxStart, savedCursor)
+            : ((level - 1) * batchSize) % Math.max(1, maxStart + 1);
+        const nextCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
+        const nextProg: UserProgress = {
+          ...progress,
+          dictCursors: { ...(progress.dictCursors || {}), [skillId]: nextCursor },
+        };
+        saveProgress(nextProg);
+        setProgress(nextProg);
         lessonSkill = {
           ...lessonSkill,
           words: lessonSkill.words.slice(offset, offset + batchSize),
@@ -423,10 +433,66 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     },
   ];
 
+  const sampleWords = course.units
+    .flatMap((u) => u.skills.flatMap((sk) => sk.words))
+    .filter((w) => w.target && w.source)
+    .slice(0, 5);
+  const grammarTitles = (course.grammarSections || [])
+    .slice(0, 4)
+    .map((g) => g.title)
+    .join("; ");
+  const unitNames = course.units
+    .slice(0, 6)
+    .map((u) => u.title.replace(/^Unit \d+:\s*/i, ""))
+    .join(", ");
+
+  const courseGuideOverride: RichGuideEntry = {
+    notesTitle: `Linguistic Guide, Curriculum & Methodology: ${langHeading}`,
+    overview: [
+      `${langHeading} is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya. ${course.config.description}`,
+      `This interactive ${course.config.name} course is structured into ${course.units.length} thematic units (${unitNames}) and ${totalSkills} skill modules covering ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, and cultural idioms${grammarTitles ? `, alongside reference grammar chapters on ${grammarTitles}` : ""}.`,
+      sources.length > 0
+        ? `Primary Linguistic Provenance: Vocabulary, orthography, and grammatical paradigms in this ${course.config.name} curriculum are compiled and cross-verified from ${sources.map((s) => `${s.title} (${s.published})`).join("; ")}.`
+        : `All ${course.config.name} lessons, spaced-repetition reviews, flashcards, and mini-games execute 100% locally in your browser with automatic progress persistence.`,
+    ],
+    howItWorks: [
+      `Select a ${course.config.name} skill node on the Skill Path to study vocabulary teaching cards with phonetic guides and contextual examples before starting the interactive quiz.`,
+      `Complete 5 progressive crown levels per ${course.config.name} module—combining multiple-choice recognition, sentence-tile construction, fill-in-the-blank cloze prompts, and active ${course.config.nativeName} typing with diacritic-aware grading.`,
+      `Practice due items in the Spaced Repetition System (SRS) review queue, which schedules missed ${course.config.name} words across 5 expanding Leitner intervals (10 minutes to 14 days).`,
+      `Switch to the All Vocab & Dictionary tab, 3D Flashcards, Grammar Reference, Proverbs & Wisdom, or Mini-Games Hub to explore all ${totalWords.toLocaleString()}+ ${course.config.name} entries.`,
+    ],
+    workedExample: {
+      title: `Core ${langHeading} Vocabulary & Structural Sample`,
+      scenario: `Foundational ${course.config.name} expressions and lexical pairs from the opening modules of the ${course.config.nativeName} curriculum:`,
+      steps:
+        sampleWords.length > 0
+          ? sampleWords.map(
+              (w) =>
+                `${w.target} → "${w.source}"${w.pronunciation ? ` [${w.pronunciation}]` : ""}${w.example ? ` — ${w.example}` : ""}`
+            )
+          : [
+              `Language Family: ${course.config.family}`,
+              `Primary Counties: ${course.config.counties.join(", ")}`,
+              `Verified Vocabulary & Dictionary Corpus: ${totalWords.toLocaleString()}+ entries`,
+            ],
+      takeaway: `Consistent daily practice (50 XP/day goal) across ${course.config.name} skill modules and spaced-repetition reviews builds lasting reading and conversational recall.`,
+    },
+    complianceTips: [
+      `Pay close attention to ${course.config.name} vowel length, diacritics, and prefixes—if you type an unaccented form, the grading engine accepts it with an "Almost exact" orthography reminder.`,
+      `Use the "Unlock All" toggle on the Skill Path if you already speak basic ${course.config.name} and want to jump directly to advanced grammar or dictionary categories.`,
+      `Review the Grammar Reference and Proverbs & Wisdom tabs alongside vocabulary modules to understand how ${course.config.name} morphology and oral idioms operate in context.`,
+    ],
+    notes: sources.map(
+      (s) => `${s.title} (${s.published}) — ${s.note || "Verified primary linguistic reference."}`
+    ),
+    faq: courseFaq,
+  };
+
   return (
     <ToolShell
       tool={courseTool}
       faq={courseFaq}
+      guideOverride={courseGuideOverride}
       breadcrumbSuffix={[
         {
           label: course.config.name,
@@ -530,7 +596,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         </div>
       ) : view === "flashcards" ? (
         /* ── Interactive 3D Flashcards Deck View (No Audio Buttons) ── */
-        <div className="mx-auto max-w-2xl space-y-5 pb-8">
+        <div data-adsense-pause="true" className="mx-auto max-w-2xl space-y-5 pb-8">
           <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
@@ -606,6 +672,33 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 </div>
               </div>
 
+              <div className="flex items-center justify-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                    setIsCardFlipped(false);
+                  }}
+                  className="flex-1 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-2.5 text-xs sm:text-sm font-bold text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer"
+                >
+                  Still Learning ↻
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setProgress((prev) => {
+                      const updated = awardActivityXp(prev, 2, false);
+                      saveProgress(updated);
+                      return updated;
+                    });
+                    setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                    setIsCardFlipped(false);
+                  }}
+                  className="flex-1 rounded-xl border border-kenya-green/50 bg-kenya-green/15 px-4 py-2.5 text-xs sm:text-sm font-bold text-kenya-green-light hover:bg-kenya-green/25 transition-colors cursor-pointer"
+                >
+                  Got It (+2 XP) ✓
+                </button>
+              </div>
               <div className="flex items-center justify-between gap-3">
                 <button
                   type="button"
@@ -786,6 +879,14 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           <GamesHub
             units={combinedUnits}
             languageName={course.config.name}
+            languageId={course.config.id}
+            onAwardXp={(xp) => {
+              setProgress((prev) => {
+                const updated = awardActivityXp(prev, xp, true);
+                saveProgress(updated);
+                return updated;
+              });
+            }}
             onBack={() => setView("lessons")}
           />
         </div>

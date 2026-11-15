@@ -21,6 +21,7 @@ interface BlogPost {
   coverImage?: string;
   content?: string;
   sources?: { sourceId: string; title: string; note: string }[];
+  adsensePause?: boolean;
 }
 
 export default function BlogPostContent({ post }: { post: BlogPost | null }) {
@@ -76,7 +77,12 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   if (!post) {
     return (
-      <div data-error-page="true" data-nosnippet="true" className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-16 text-center">
+      <div
+        data-error-page="true"
+        data-adsense-pause="true"
+        data-nosnippet="true"
+        className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-16 text-center"
+      >
         <div className="flex justify-center mb-4">
           <DynamicIcon emoji="📄" className="w-12 h-12 text-text-muted" />
         </div>
@@ -95,6 +101,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   const contentHtml = post.content ? markdownToHtml(post.content) : "";
   const isThinOrEmbedHeavy =
+    Boolean(post.adsensePause) ||
     (post.content?.length || 0) < 1200 ||
     Boolean(post.readTime && post.readTime <= 1) ||
     contentHtml.includes("<iframe");
@@ -103,8 +110,12 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
     <>
       <div ref={progressRef} className="fixed top-0 left-0 z-50 h-0.5 bg-gold transition-all duration-150 ease-out" style={{ width: "0%" }} />
 
-      <article data-error-page={isThinOrEmbedHeavy ? "true" : undefined} className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-8 sm:py-10">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8 flex-wrap">
+      <article
+        data-error-page={isThinOrEmbedHeavy ? "true" : undefined}
+        data-adsense-pause={isThinOrEmbedHeavy ? "true" : undefined}
+        className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-8 sm:py-10"
+      >
+        <nav aria-label="Breadcrumb" data-adsense-ignore="true" className="flex items-center gap-1.5 text-xs text-text-muted mb-8 flex-wrap">
           <Link href="/" className="hover:text-gold transition-colors">
             Home
           </Link>
@@ -174,31 +185,36 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
           )}
         </header>
 
-        {/* Automatic Table of Contents for SERP Jump-To Sitelinks */}
+        {/* Automatic Table of Contents — collapsible on mobile (<640px), expanded on desktop */}
         {tocHeadings.length >= 3 && (
           <nav
             aria-label="Table of Contents"
             className="mb-8 bg-bg-card border border-border rounded-xl p-4 sm:p-5"
           >
-            <p className="text-xs font-bold uppercase tracking-wider text-gold mb-3 flex items-center gap-1.5">
-              <DynamicIcon emoji="📑" className="w-3.5 h-3.5 shrink-0" /> In This Guide ({tocHeadings.length} Sections)
-            </p>
-            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-xs sm:text-[13px] text-text-secondary">
-              {tocHeadings.map((h, idx) => {
-                const displayHeading = h.text.replace(/^\d+[.)]\s*/, "").trim();
-                return (
-                  <li key={h.id} className="min-w-0">
-                    <a
-                      href={`#${h.id}`}
-                      className="hover:text-gold transition-colors flex items-baseline gap-2 leading-snug"
-                    >
-                      <span className="text-gold font-semibold shrink-0">{idx + 1}.</span>
-                      <span className="min-w-0 break-words">{displayHeading}</span>
-                    </a>
-                  </li>
-                );
-              })}
-            </ol>
+            <details className="group sm:open" open>
+              <summary className="cursor-pointer list-none flex items-center justify-between text-xs font-bold uppercase tracking-wider text-gold">
+                <span className="flex items-center gap-1.5">
+                  <DynamicIcon emoji="📑" className="w-3.5 h-3.5 shrink-0" /> In This Guide ({tocHeadings.length} Sections)
+                </span>
+                <span className="text-text-muted group-open:rotate-180 transition-transform text-sm">▾</span>
+              </summary>
+              <ol className="mt-3 pt-3 border-t border-border/60 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-xs sm:text-[13px] text-text-secondary">
+                {tocHeadings.map((h, idx) => {
+                  const displayHeading = h.text.replace(/^\d+[.)]\s*/, "").trim();
+                  return (
+                    <li key={h.id} className="min-w-0">
+                      <a
+                        href={`#${h.id}`}
+                        className="hover:text-gold transition-colors flex items-baseline gap-2 leading-snug"
+                      >
+                        <span className="text-gold font-semibold shrink-0">{idx + 1}.</span>
+                        <span className="min-w-0 break-words">{displayHeading}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ol>
+            </details>
           </nav>
         )}
 
@@ -247,7 +263,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
         {/* Related Interactive Calculators & Tools */}
         {relatedTools.length > 0 && (
-          <section className="mt-10 pt-8 border-t border-border">
+          <section data-adsense-ignore="true" className="mt-10 pt-8 border-t border-border">
             <div className="flex items-center justify-between gap-2 mb-4">
               <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
                 <DynamicIcon emoji="🧰" className="w-4 h-4 text-gold" /> Related Free Kenyan Calculators &amp; Tools
@@ -290,7 +306,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
         {/* Related Blog Guides */}
         {relatedPosts.length > 0 && (
-          <section className="mt-10 pt-8 border-t border-border">
+          <section data-adsense-ignore="true" className="mt-10 pt-8 border-t border-border">
             <div className="flex items-center justify-between gap-2 mb-4">
               <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
                 <DynamicIcon emoji="📚" className="w-4 h-4 text-gold" /> More Kenyan Guides &amp; Articles

@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/about/",
       en: "https://kenyahub.me/about/",
-    },
+        "x-default": "https://kenyahub.me/about/",
+      },
   },
   openGraph: {
     title: "About Us — Mission, Official Data Sources & Methodology | KenyaHub",

@@ -2,7 +2,8 @@
 "use client";
 import { useMemo, useState } from "react";
 import { Trophy } from "lucide-react";
-import { type GameProps } from "./shared";
+import { getCulturalWisdomForLanguage } from "@/data/courses/cultural-wisdom";
+import { type GameProps, shuffle } from "./shared";
 
 interface RiddleItem {
   riddle: string;
@@ -36,7 +37,7 @@ const TRADITIONAL_RIDDLES_BY_LANGUAGE: Record<string, RiddleItem[]> = {
     { riddle: "Kwagani na guga ne likoti limwamu", translation: "We met grandfather wearing a black coat", answer: "Lugiita (A louse)", origin: "Lulogooli — Project Tafsiri v2.0" },
   ],
   kikuyu: [
-    { riddle: "Mũندũ ũtathiaga na ndarĩ mũciĩ", translation: "What hangs down without walking away?", answer: "Marigũ (Bananas)", origin: "Gĩkũyũ — Ndai / Guso" },
+    { riddle: "Mũndũ ũtathiaga na ndarĩ mũciĩ", translation: "What hangs down without walking away?", answer: "Marigũ (Bananas)", origin: "Gĩkũyũ — Ndai / Guso" },
     { riddle: "Aanake mathiĩ, athuri matigwo", translation: "The young men depart, the elders remain behind", answer: "Mũhu na mahiga ma riiko (Ashes & three hearthstones)", origin: "Gĩkũyũ — Routledge 1910" },
     { riddle: "Kĩrĩa kĩambatanagia kĩrĩma na kĩrĩma", translation: "What travels from hill to hill?", answer: "Kũgũrũ (The foot)", origin: "Gĩkũyũ — Routledge 1910" },
     { riddle: "Nyũmba yakwa ndĩrĩ mũromo", translation: "My house has no doorway", answer: "Itumbĩ (An egg)", origin: "Gĩkũyũ — Ndai" },
@@ -94,61 +95,115 @@ const TRADITIONAL_RIDDLES_BY_LANGUAGE: Record<string, RiddleItem[]> = {
     { riddle: "Etogo ka emamei ekek", translation: "My house has no door", answer: "Abeele (An egg)", origin: "Ateso — Sunbird SALT & Kitching 1915" },
     { riddle: "Aicerit na elotari komamei akejen", translation: "That which journeys far without legs", answer: "Akipi (River water)", origin: "Ateso — Proverbial Riddle" },
   ],
+  embu: [
+    { riddle: "Nyũmba yakwa ndĩrĩ mũromo", translation: "My house has no doorway", answer: "Ĩtumbĩ (An egg)", origin: "Kĩembu — Ndai" },
+    { riddle: "Mũndũ ũthiaga atarĩ magũrũ", translation: "One who journeys far without legs", answer: "Mĩnĩ / Maĩ ma rũũĩ (River water)", origin: "Kĩembu — Ndai" },
+  ],
+  pokomo: [
+    { riddle: "Nyumba yangu kaina muryango", translation: "My house has no door", answer: "Iyi (An egg)", origin: "Kipokomo — Krapf 1850 & Samson 1944" },
+    { riddle: "Chombo chetu chaenda bila makasia", translation: "Our canoe travels downstream without paddles", answer: "Maji ya mto Tana (River water)", origin: "Kipokomo — Tana River Tradition" },
+  ],
+  taveta: [
+    { riddle: "Nyumba yango ndina mlyango", translation: "My house has no door", answer: "Igi (An egg)", origin: "Kitaveta — Hollis 1910–1911" },
+    { riddle: "Mndu aenda katali bila magu", translation: "A traveler who goes far without feet", answer: "Mazi (Water)", origin: "Kitaveta — Hollis 1910–1911" },
+  ],
+  samburu: [
+    { riddle: "Nkaji ai nemetii kutuk-aji", translation: "My house that has no doorway", answer: "Nkboliboli (An egg)", origin: "Sampur — Samburu Oral Riddle" },
+    { riddle: "Nkishu aainei naibor pooki, neton laing'oni onyokie terisio", translation: "All my cattle are white, and a red bull stands in their midst", answer: "Ilala oo ng'ejep (Teeth & tongue)", origin: "Sampur — Samburu Oral Riddle" },
+  ],
+  ilchamus: [
+    { riddle: "Nkaji ai nemetii kutuk", translation: "My house that has no door", answer: "Lboliboli (An egg)", origin: "Ilchamus — Baringo Oral Riddle" },
+    { riddle: "Ltung'ani lolotisho nemetii kejek", translation: "One who travels continuously without legs", answer: "Nkare (River water)", origin: "Ilchamus — Baringo Oral Riddle" },
+  ],
+  rendille: [
+    { riddle: "Minankay irid male", translation: "My house has no doorway", answer: "Ukux (An egg)", origin: "Af-Rendille — Northern Oral Riddle" },
+    { riddle: "Gaalankay dakhan waa dakhan, oor gududan dhex taagan", translation: "All my herd is white, and a red bull stands among them", answer: "Ilko icho harab (Teeth & tongue)", origin: "Af-Rendille — Northern Oral Riddle" },
+  ],
+  daasanach: [
+    { riddle: "Bíl yaá foka mále", translation: "My house has no doorway", answer: "Guobo / Ukung (An egg)", origin: "Daasanach — Lake Turkana Oral Riddle" },
+    { riddle: "Maa gálab irá d'áabate", translation: "Water that flows across the plain without feet", answer: "Bíye / War (River water)", origin: "Daasanach — Lake Turkana Oral Riddle" },
+  ],
 };
 
-export function RiddleGame({ allWords, languageName }: GameProps) {
+export function RiddleGame({ allWords, languageName, languageId, onAwardXp }: GameProps) {
   const [score, setScore] = useState(0);
   const [round, setRound] = useState(0);
   const [feedback, setFeedback] = useState<string | null>(null);
 
   const riddlesPool = useMemo(() => {
-    const langKey = (languageName || "").toLowerCase();
+    const langKey = (languageId || languageName || "").toLowerCase();
     let matchedKey = "";
-    for (const k of Object.keys(TRADITIONAL_RIDDLES_BY_LANGUAGE)) {
-      if (langKey.includes(k) || (k === "luo" && langKey.includes("dholuo")) || (k === "kikuyu" && langKey.includes("gĩkũyũ"))) {
-        matchedKey = k;
-        break;
+    if (languageId && TRADITIONAL_RIDDLES_BY_LANGUAGE[languageId]) {
+      matchedKey = languageId;
+    } else {
+      for (const k of Object.keys(TRADITIONAL_RIDDLES_BY_LANGUAGE)) {
+        if (
+          langKey.includes(k) ||
+          (k === "luo" && langKey.includes("dholuo")) ||
+          (k === "kikuyu" && langKey.includes("gĩkũyũ")) ||
+          (k === "pokot" && langKey.includes("pökoot")) ||
+          (k === "samburu" && langKey.includes("sampur")) ||
+          (k === "taita" && langKey.includes("kidaw"))
+        ) {
+          matchedKey = k;
+          break;
+        }
       }
     }
 
     const baseRiddles: RiddleItem[] = matchedKey
       ? [...TRADITIONAL_RIDDLES_BY_LANGUAGE[matchedKey]]
-      : Object.values(TRADITIONAL_RIDDLES_BY_LANGUAGE).flat();
+      : [];
+
+    // Also pull native proverbs/wisdom from getCulturalWisdomForLanguage so every language has rich oral tradition items
+    const wisdomItems = matchedKey ? getCulturalWisdomForLanguage(matchedKey) : [];
+    const wisdomClues: RiddleItem[] = wisdomItems.slice(0, 8).map((w) => ({
+      riddle: w.nativeText,
+      translation: w.meaning,
+      answer: w.literalTranslation.slice(0, 75),
+      origin: `${languageName || "Traditional"} Proverb & Oral Wisdom`,
+    }));
 
     // Also build interactive vocabulary clues from the course's own words
     const cleanWords = (allWords || []).filter(
       (w) => w.target && w.source && w.target.length <= 40 && w.source.length <= 50
     );
-    const wordClues: RiddleItem[] = cleanWords.slice(0, 12).map((w) => ({
+    const wordClues: RiddleItem[] = cleanWords.slice(0, 10).map((w) => ({
       riddle: w.target,
       translation: `Which ${languageName || "Kenyan"} meaning matches this term?`,
       answer: `${w.source} (${w.target})`,
       origin: `${languageName || "Course"} Vocabulary Riddle`,
     }));
 
-    return [...baseRiddles, ...wordClues];
-  }, [allWords, languageName]);
+    return [...baseRiddles, ...wisdomClues, ...wordClues];
+  }, [allWords, languageName, languageId]);
 
-  const currentRiddle = riddlesPool[round % riddlesPool.length];
+  const currentRiddle = riddlesPool[round % Math.max(1, riddlesPool.length)];
   const options = useMemo(() => {
-    const distractors = riddlesPool
-      .filter((r) => r.answer !== currentRiddle.answer)
-      .sort(() => Math.random() - 0.5)
+    if (!currentRiddle) return [];
+    const distractors = shuffle(
+      riddlesPool.filter((r) => r.answer !== currentRiddle.answer)
+    )
       .slice(0, 3)
       .map((r) => r.answer);
-    return [currentRiddle.answer, ...distractors].sort(() => Math.random() - 0.5);
-  }, [currentRiddle, riddlesPool]);
+    return shuffle([currentRiddle.answer, ...distractors]);
+  }, [currentRiddle, riddlesPool, round]);
 
   const handlePick = (ans: string) => {
-    if (feedback !== null) return;
+    if (feedback !== null || !currentRiddle) return;
     const isRight = ans === currentRiddle.answer;
     setFeedback(ans);
-    if (isRight) setScore((s) => s + 20);
+    if (isRight) {
+      setScore((s) => s + 20);
+      onAwardXp?.(20);
+    }
     setTimeout(() => {
       setFeedback(null);
       setRound((r) => r + 1);
     }, 800);
   };
+
+  if (!currentRiddle) return null;
 
   return (
     <div>
@@ -183,7 +238,7 @@ export function RiddleGame({ allWords, languageName }: GameProps) {
               key={opt}
               disabled={feedback !== null}
               onClick={() => handlePick(opt)}
-              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] ${btnStyle}`}
+              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] cursor-pointer ${btnStyle}`}
             >
               {opt}
             </button>

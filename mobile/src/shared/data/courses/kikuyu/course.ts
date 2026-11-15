@@ -3982,12 +3982,12 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           }
         ]
       },
-        {
+      {
         "id": "kikuyu-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kikuyu (Gĩkũyũ) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Par",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
         "words": [
                 {
                         "target": "Kotaithorana",
@@ -4011,18 +4011,13 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 },
                 {
                         "target": "Koohera",
-                        "source": "Excuse, v",
+                        "source": "Excuse, v / Pardon, v",
                         "pronunciation": "koohera"
                 },
                 {
                         "target": "Muhoro, ne muhoro",
                         "source": "Good morning, good-day, etc",
                         "pronunciation": "muhoro"
-                },
-                {
-                        "target": "Koohera",
-                        "source": "Pardon, v",
-                        "pronunciation": "koohera"
                 },
                 {
                         "target": "Koonya wega",
@@ -4101,12 +4096,12 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 }
         ]
 },
-        {
+      {
         "id": "kikuyu-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kikuyu (Gĩkũyũ) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Par",
+        "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
         "words": [
                 {
                         "target": "Arĩmi nĩmarutaga Bea kaũndĩ-inĩ gaitũ",

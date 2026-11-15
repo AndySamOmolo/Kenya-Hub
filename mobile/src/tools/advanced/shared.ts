@@ -6,7 +6,8 @@ export const styles = StyleSheet.create({
   },
   sectionLabel: {
     fontSize: 12,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
     textTransform: "uppercase",
     letterSpacing: 0.6,
   },
@@ -22,7 +23,8 @@ export const styles = StyleSheet.create({
   },
   langPillText: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   infoCard: {
     padding: 14,
@@ -37,7 +39,8 @@ export const styles = StyleSheet.create({
   },
   infoTitle: {
     fontSize: 16,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   badgePill: {
     paddingHorizontal: 8,
@@ -46,7 +49,8 @@ export const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: 10,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   infoDesc: {
     fontSize: 12,
@@ -73,7 +77,8 @@ export const styles = StyleSheet.create({
   },
   catPillText: {
     fontSize: 12,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: "600",
   },
   countLabel: {
     fontSize: 12,
@@ -94,7 +99,8 @@ export const styles = StyleSheet.create({
   },
   entryEnglish: {
     fontSize: 15,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   entryCategory: {
     fontSize: 11,
@@ -105,7 +111,8 @@ export const styles = StyleSheet.create({
   },
   entryTranslation: {
     fontSize: 18,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   pronounceRow: {
     flexDirection: "row",
@@ -114,7 +121,8 @@ export const styles = StyleSheet.create({
   },
   pronounceText: {
     fontSize: 12,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: "600",
   },
   entryContext: {
     fontSize: 11,
@@ -138,7 +146,8 @@ export const styles = StyleSheet.create({
   },
   fieldLabel: {
     fontSize: 13,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: "600",
   },
   kesInputRow: {
     flexDirection: "row",
@@ -147,11 +156,13 @@ export const styles = StyleSheet.create({
   },
   kesPrefix: {
     fontSize: 20,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   bigInput: {
     fontSize: 26,
-    fontWeight: "900",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
     flex: 1,
   },
   presetRow: {
@@ -168,7 +179,8 @@ export const styles = StyleSheet.create({
   },
   presetText: {
     fontSize: 12,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   regionGrid: {
     flexDirection: "row",
@@ -183,7 +195,8 @@ export const styles = StyleSheet.create({
   },
   regionName: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   regionIrradiance: {
     fontSize: 10,
@@ -197,7 +210,8 @@ export const styles = StyleSheet.create({
   },
   resultsHeader: {
     fontSize: 11,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
     letterSpacing: 0.8,
   },
   statsTwoCol: {
@@ -213,7 +227,8 @@ export const styles = StyleSheet.create({
   },
   statColVal: {
     fontSize: 18,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   statColSub: {
     fontSize: 10,
@@ -229,7 +244,8 @@ export const styles = StyleSheet.create({
   },
   highlightLabel: {
     fontSize: 13,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
 
   // Ward styles
@@ -249,7 +265,8 @@ export const styles = StyleSheet.create({
   },
   leaderVal: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   constituenciesGrid: {
     flexDirection: "row",
@@ -275,18 +292,21 @@ export const styles = StyleSheet.create({
   },
   numberCircleText: {
     fontSize: 10,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   constituencyTitle: {
     fontSize: 12,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: "600",
     flex: 1,
   },
 
   // CBC styles
   levelSub: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   levelOld: {
     fontSize: 11,
@@ -305,11 +325,13 @@ export const styles = StyleSheet.create({
   },
   areaNumberText: {
     fontSize: 11,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   areaName: {
     fontSize: 14,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
     flex: 1,
   },
   areaDesc: {
@@ -331,7 +353,8 @@ export const styles = StyleSheet.create({
   },
   subjName: {
     fontSize: 12,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
   },
   gradeScroll: {
     gap: 6,
@@ -344,7 +367,8 @@ export const styles = StyleSheet.create({
   },
   gradeBtnText: {
     fontSize: 12,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "800",
   },
   clusterHeaderRow: {
     flexDirection: "row",
@@ -354,7 +378,8 @@ export const styles = StyleSheet.create({
   },
   clusterName: {
     fontSize: 14,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
+      fontWeight: "700",
     flexShrink: 1,
   },
   clusterCutoff: {
@@ -368,7 +393,8 @@ export const styles = StyleSheet.create({
   },
   clusterPointsText: {
     fontSize: 14,
-    fontWeight: "900",
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: "900",
   },
   coursesRow: {
     flexDirection: "row",

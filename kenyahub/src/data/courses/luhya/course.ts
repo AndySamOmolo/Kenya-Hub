@@ -3728,7 +3728,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Luhya (Luyia) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-",
+        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
         "words": [
                 {
                         "target": "Orio muno / Nyasaye akhasie",
@@ -3771,7 +3771,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "pronunciation": "murembi"
                 },
                 {
-                        "target": "Abalimi balombanga In-kiω mushitsala",
+                        "target": "Abalimi balombanga In-kio mushitsala",
                         "source": "Farmers prepare to-morrow in the village",
                         "pronunciation": "abalimi balombanga in-ki mushitsala"
                 },
@@ -3781,12 +3781,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "pronunciation": "abalimi balombanga ama-ana mushitsala"
                 },
                 {
-                        "target": "Abalimi balombanga Ωmu-lωsi mushitsala",
+                        "target": "Abalimi balombanga Omu-losi mushitsala",
                         "source": "Farmers prepare witch in the village",
                         "pronunciation": "abalimi balombanga mu-lsi mushitsala"
                 },
                 {
-                        "target": "Abalimi balombanga Ωbu-lωsi mushitsala",
+                        "target": "Abalimi balombanga Obu-losi mushitsala",
                         "source": "Farmers prepare witchcraft in the village",
                         "pronunciation": "abalimi balombanga bu-lsi mushitsala"
                 }
@@ -3797,15 +3797,15 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "source": "Do you have name at home?"
                 },
                 {
-                        "target": "Muli nende Iṅ-gusω hango?",
+                        "target": "Muli nende Iṅ-guso hango?",
                         "source": "Do you have parrot at home?"
                 },
                 {
-                        "target": "Muli nende Im-bωlω hango?",
+                        "target": "Muli nende Im-bolo hango?",
                         "source": "Do you have penis at home?"
                 },
                 {
-                        "target": "Muli nende Tsi-sωni hango?",
+                        "target": "Muli nende Tsi-soni hango?",
                         "source": "Do you have shame at home?"
                 },
                 {
@@ -3821,7 +3821,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "source": "Do you have thing at home?"
                 },
                 {
-                        "target": "Muli nende In-kiω hango?",
+                        "target": "Muli nende In-kio hango?",
                         "source": "Do you have to-morrow at home?"
                 },
                 {
@@ -3829,11 +3829,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "source": "Do you have twins at home?"
                 },
                 {
-                        "target": "Muli nende Ωmu-lωsi hango?",
+                        "target": "Muli nende Omu-losi hango?",
                         "source": "Do you have witch at home?"
                 },
                 {
-                        "target": "Muli nende Ωbu-lωsi hango?",
+                        "target": "Muli nende Obu-losi hango?",
                         "source": "Do you have witchcraft at home?"
                 },
                 {
@@ -3847,7 +3847,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Luhya (Luyia) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-",
+        "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
         "words": [
                 {
                         "target": "Abalimi balombanga E-we. U-. -χu- mushitsala",
@@ -3860,7 +3860,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "pronunciation": "abalimi balombanga ye u-yu yi- mushitsala"
                 },
                 {
-                        "target": "Abalimi balombanga E-fwe. Χω-. -χu-. -e-fu mushitsala",
+                        "target": "Abalimi balombanga E-fwe. Χo-. -χu-. -e-fu mushitsala",
                         "source": "Farmers prepare we in the village",
                         "pronunciation": "abalimi balombanga e-fwe - -u- -e-fu mushitsala"
                 },
@@ -3916,7 +3916,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
                         "source": "Do you have he at home?"
                 },
                 {
-                        "target": "Muli nende E-fwe. Χω-. -χu-. -e-fu hango?",
+                        "target": "Muli nende E-fwe. Χo-. -χu-. -e-fu hango?",
                         "source": "Do you have we at home?"
                 },
                 {

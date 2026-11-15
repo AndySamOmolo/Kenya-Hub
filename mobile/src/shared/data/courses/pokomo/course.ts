@@ -2923,7 +2923,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kinambare",
-            "source": "Karara",
+            "source": "Karara / Uta — Mzuka Wayu",
             "pronunciation": "kinambare"
           },
           {
@@ -2938,7 +2938,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kinanato",
-            "source": "from Gashiro & Hadiribo, freed by Ana Abio",
+            "source": "from Gashiro & Hadiribo, freed by Ana Abio / Karara — Omara Oda & Chief Dadho Bahola",
             "pronunciation": "kinanato"
           },
           {
@@ -2958,22 +2958,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kinambura",
-            "source": "Wayu — Kokane Ware",
+            "source": "Wayu — Kokane Ware / Wayole",
             "pronunciation": "kinambura"
           },
           {
-            "target": "Kinambare",
-            "source": "Uta — Mzuka Wayu",
-            "pronunciation": "kinambare"
-          },
-          {
-            "target": "Kinanato",
-            "source": "Karara — Omara Oda & Chief Dadho Bahola",
-            "pronunciation": "kinanato"
-          },
-          {
             "target": "Kinagasere",
-            "source": "Baretu",
+            "source": "Baretu / Baretu wa Maji",
             "pronunciation": "kinagasere"
           },
           {
@@ -2987,13 +2977,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "pronunciation": "kinambolo"
           },
           {
-            "target": "Kinambura",
-            "source": "Wayole",
-            "pronunciation": "kinambura"
-          },
-          {
             "target": "Ilani",
-            "source": "Gavere",
+            "source": "Gavere / Malalulu & Bashora",
             "pronunciation": "ilani"
           },
           {
@@ -3007,18 +2992,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "pronunciation": "jaba"
           },
           {
-            "target": "Kinagasere",
-            "source": "Baretu wa Maji",
-            "pronunciation": "kinagasere"
-          },
-          {
             "target": "Kinakaliani",
             "source": "Garjeda — Maro Wayu, Dulo Maro, Sarumbe & Kamba Machika Mwemwere",
             "pronunciation": "kinakaliani"
           },
           {
             "target": "Meta",
-            "source": "Komora Eba",
+            "source": "Komora Eba / Kuyo",
             "pronunciation": "meta"
           },
           {
@@ -3037,19 +3017,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "pronunciation": "uta"
           },
           {
-            "target": "Meta",
-            "source": "Kuyo",
-            "pronunciation": "meta"
-          },
-          {
             "target": "Garjeda",
             "source": "Ganyare",
             "pronunciation": "garjeda"
-          },
-          {
-            "target": "Ilani",
-            "source": "Malalulu & Bashora",
-            "pronunciation": "ilani"
           },
           {
             "target": "1887 Ngao",
@@ -3068,12 +3038,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
           }
         ]
       },
-        {
+      {
         "id": "pokomo-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Pokomo (Kipfokomo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würt",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
         "words": [
                 {
                         "target": "Asante / Nashukuru",
@@ -3114,26 +3084,6 @@ export const POKOMO_UNITS: CourseUnit[] = [
                         "target": "ṣadda",
                         "source": "Thank, v. a",
                         "pronunciation": "ṣadda"
-                },
-                {
-                        "target": "Hunalinda henda jeússi mudzini mwehu",
-                        "source": "We keep blacken in our village",
-                        "pronunciation": "hunalinda henda jeússi mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda jíwa mudzini mwehu",
-                        "source": "We keep bladder in our village",
-                        "pronunciation": "hunalinda jíwa mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda húmfia mudzini mwehu",
-                        "source": "We keep blaspheme in our village",
-                        "pronunciation": "hunalinda húmfia mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda fúka móho mudzini mwehu",
-                        "source": "We keep blaze in our village",
-                        "pronunciation": "hunalinda fúka móho mudzini mwehu"
                 }
         ],
         "sentences": [
@@ -3187,33 +3137,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
                 }
         ]
 },
-        {
+      {
         "id": "pokomo-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Pokomo (Kipfokomo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würt",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
         "words": [
-                {
-                        "target": "Hunalinda yáfia muázi mudzini mwehu",
-                        "source": "We keep bleed in our village",
-                        "pronunciation": "hunalinda yáfia muázi mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda baríki mudzini mwehu",
-                        "source": "We keep bless in our village",
-                        "pronunciation": "hunalinda baríki mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda musífa wa muázi mudzini mwehu",
-                        "source": "We keep „ vessel in our village",
-                        "pronunciation": "hunalinda musífa wa muázi mudzini mwehu"
-                },
-                {
-                        "target": "Hunalinda zikádia mudzini mwehu",
-                        "source": "We keep boast in our village",
-                        "pronunciation": "hunalinda zikádia mudzini mwehu"
-                },
                 {
                         "target": "Bei ya ífu ni ngapi?",
                         "source": "What is the price of ashes?",

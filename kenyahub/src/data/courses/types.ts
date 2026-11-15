@@ -123,6 +123,8 @@ export interface UserProgress {
   languageId: string;
   /** Completed skill levels: { "basics-1": 3 } means level 3/5 completed */
   skillLevels: Record<string, number>;
+  /** Rotation cursors for large dictionary category skills */
+  dictCursors?: Record<string, number>;
   /** Explicit user toggle to unlock all units/skills without sequential gatekeeping */
   unlockAll?: boolean;
   /** Total XP earned */
@@ -162,13 +164,16 @@ export interface ReviewItem {
   prompt: string;
   answer: string;
   acceptedAnswers?: string[];
+  options?: string[];
   hint?: string;
+  box?: number;
   dueAt: number;
 }
 
 export interface LessonResult {
   skillId: string;
   level: number;
+  reviewOnly?: boolean;
   score: number;         // 0-100
   xpEarned: number;
   accuracy: number;      // 0-1
@@ -441,7 +446,22 @@ export const ACHIEVEMENTS: Achievement[] = [
     icon: "💯",
     xpReward: 350,
     category: "lessons",
-    condition: (p) => p.lessonsCompleted >= 100,
+    condition: (p) => {
+      if (typeof window === "undefined") return p.lessonsCompleted >= 100;
+      try {
+        let total = p.lessonsCompleted || 0;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw) total += Number(JSON.parse(raw)?.lessonsCompleted) || 0;
+          }
+        }
+        return total >= 100;
+      } catch {
+        return p.lessonsCompleted >= 100;
+      }
+    },
   },
   {
     id: "game-champion",
@@ -455,11 +475,11 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     id: "daily-champion",
     name: "Goal Crusher",
-    description: "Double your daily goal with 40+ XP in a single day",
+    description: "Double your daily XP goal in a single day",
     icon: "🎯",
     xpReward: 50,
     category: "streak",
-    condition: (p) => (p.todayXp || 0) >= Math.max(40, (p.dailyGoal || 20) * 2),
+    condition: (p) => (p.todayXp || 0) >= Math.max(40, (p.dailyGoal || 50) * 2),
   },
   {
     id: "polyglot-grandmaster",
@@ -468,6 +488,25 @@ export const ACHIEVEMENTS: Achievement[] = [
     icon: "🌍",
     xpReward: 500,
     category: "mastery",
-    condition: (p) => Object.values(p.skillLevels || {}).filter((lvl) => lvl >= 1).length >= 20,
+    condition: (p) => {
+      const ownCount = Object.values(p.skillLevels || {}).filter((lvl) => lvl >= 1).length;
+      if (typeof window === "undefined") return ownCount >= 20;
+      try {
+        let total = ownCount;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw) {
+              const sl = JSON.parse(raw)?.skillLevels || {};
+              total += Object.values(sl).filter((lvl) => Number(lvl) >= 1).length;
+            }
+          }
+        }
+        return total >= 20;
+      } catch {
+        return ownCount >= 20;
+      }
+    },
   }
 ];

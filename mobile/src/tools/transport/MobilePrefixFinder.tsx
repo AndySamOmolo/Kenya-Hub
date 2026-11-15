@@ -38,7 +38,6 @@ export function MobilePrefixFinder() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Phone Number or Prefix</Text>
         <TextInput
-            key={`ti-3-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
           value={num}

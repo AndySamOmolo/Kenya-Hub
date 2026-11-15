@@ -1,5 +1,16 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { View, Text, Pressable, StyleSheet, Platform } from "react-native";
+import {
+  View,
+  Text,
+  Pressable,
+  StyleSheet,
+  Platform,
+  Vibration,
+  useColorScheme,
+  type StyleProp,
+  type ViewStyle,
+  type TextStyle,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { BrandLogo } from "./components/BrandLogo";
@@ -95,14 +106,77 @@ export const lightColors = {
 export type ThemeColors = typeof darkColors;
 
 export const fonts = {
-  heading: "Outfit_700Bold",
+  headingRegular: "Outfit_400Regular",
+  headingMedium: "Outfit_500Medium",
   headingSemiBold: "Outfit_600SemiBold",
+  heading: "Outfit_700Bold",
   headingExtraBold: "Outfit_800ExtraBold",
   headingBlack: "Outfit_900Black",
   body: "Inter_400Regular",
   bodyMedium: "Inter_500Medium",
   bodySemiBold: "Inter_600SemiBold",
   bodyBold: "Inter_700Bold",
+};
+
+/**
+ * Standardized Material 3 Typography Presets (UX-14)
+ * Explicitly pairs custom Outfit/Inter font families with includeFontPadding: false
+ * so Android never falls back to system Roboto when fontWeight is set.
+ */
+export const typography: Record<
+  "h1" | "h2" | "title" | "subtitle" | "body" | "bodyBold" | "caption" | "mono",
+  TextStyle
+> = {
+  h1: {
+    fontFamily: fonts.headingExtraBold,
+    fontSize: 22,
+    lineHeight: 28,
+    letterSpacing: -0.3,
+    includeFontPadding: false,
+  },
+  h2: {
+    fontFamily: fonts.heading,
+    fontSize: 18,
+    lineHeight: 24,
+    letterSpacing: -0.2,
+    includeFontPadding: false,
+  },
+  title: {
+    fontFamily: fonts.heading,
+    fontSize: 15,
+    lineHeight: 21,
+    includeFontPadding: false,
+  },
+  subtitle: {
+    fontFamily: fonts.bodySemiBold,
+    fontSize: 13,
+    lineHeight: 18,
+    includeFontPadding: false,
+  },
+  body: {
+    fontFamily: fonts.body,
+    fontSize: 13.5,
+    lineHeight: 20,
+    includeFontPadding: false,
+  },
+  bodyBold: {
+    fontFamily: fonts.bodyBold,
+    fontSize: 13.5,
+    lineHeight: 20,
+    includeFontPadding: false,
+  },
+  caption: {
+    fontFamily: fonts.bodyMedium,
+    fontSize: 11.5,
+    lineHeight: 16,
+    includeFontPadding: false,
+  },
+  mono: {
+    fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace",
+    fontSize: 12.5,
+    lineHeight: 18,
+    includeFontPadding: false,
+  },
 };
 
 // Default export for backward compatibility
@@ -122,15 +196,90 @@ export const categoryColorMap: Record<string, string> = {
 };
 
 /**
- * Helper for native Android Material 3 ripple effect on Pressable components
+ * Native Android Material 3 ripple effect on Pressable components (UX-1)
  */
-export function androidRipple(_color?: string, _borderless = false) {
-  return undefined;
+export function androidRipple(color?: string, borderless = false) {
+  return {
+    color: color || "rgba(232, 190, 90, 0.16)",
+    borderless,
+  };
+}
+
+/**
+ * Tactile pressed state style helper for Pressable components (UX-1)
+ * Applies subtle scale + opacity response on touch across Android & iOS.
+ */
+export function pressableStyle(
+  baseStyle?: StyleProp<ViewStyle>,
+  pressedStyle?: StyleProp<ViewStyle>,
+  scaleOnPress = true
+) {
+  return ({ pressed }: { pressed: boolean }): StyleProp<ViewStyle> => [
+    baseStyle,
+    pressed && {
+      opacity: 0.84,
+      transform: scaleOnPress ? [{ scale: 0.985 }] : undefined,
+    },
+    pressed && pressedStyle,
+  ];
+}
+
+/**
+ * Lightweight haptic pulse for key interactions (UX-1)
+ */
+export function triggerHaptic(durationMs = 10) {
+  try {
+    if (Platform.OS === "android" || Platform.OS === "ios") {
+      Vibration.vibrate(durationMs);
+    }
+  } catch {
+    // Ignore on unsupported devices
+  }
+}
+
+/**
+ * Backward-compatible parser & serializer for kh-saved-tools (MOB-16)
+ * Reads both JSON array format ('["paye-calculator"]') and legacy comma-separated strings.
+ */
+export function parseSavedTools(raw: string | null | undefined): string[] {
+  if (!raw || !raw.trim()) return [];
+  const trimmed = raw.trim();
+  if (trimmed.startsWith("[")) {
+    try {
+      const parsed = JSON.parse(trimmed);
+      if (Array.isArray(parsed)) {
+        return Array.from(
+          new Set(
+            parsed
+              .filter((item): item is string => typeof item === "string")
+              .map((s) => s.trim())
+              .filter(Boolean)
+          )
+        );
+      }
+    } catch {
+      // Fall back to comma split below
+    }
+  }
+  return Array.from(
+    new Set(
+      trimmed
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean)
+    )
+  );
+}
+
+export function serializeSavedTools(slugs: string[]): string {
+  const unique = Array.from(new Set(slugs.map((s) => s.trim()).filter(Boolean)));
+  return JSON.stringify(unique);
 }
 
 interface ThemeContextType {
   theme: ThemeColors;
   isDark: boolean;
+  themeReady: boolean;
   toggleTheme: () => void;
   setThemeMode: (mode: "dark" | "light") => void;
 }
@@ -138,27 +287,47 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType>({
   theme: darkColors,
   isDark: true,
+  themeReady: false,
   toggleTheme: () => {},
   setThemeMode: () => {},
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState(true);
+  const systemColorScheme = useColorScheme();
+  const [isDark, setIsDark] = useState<boolean>(() => systemColorScheme !== "light");
+  const [themeReady, setThemeReady] = useState<boolean>(false);
 
   useEffect(() => {
-    AsyncStorage.getItem("kh-theme").then((saved) => {
-      if (saved === "light") {
-        setIsDark(false);
-      } else if (saved === "dark") {
-        setIsDark(true);
-      }
-    });
-  }, []);
+    let mounted = true;
+    AsyncStorage.getItem("kh-theme")
+      .then((saved) => {
+        if (!mounted) return;
+        if (saved === "light") {
+          setIsDark(false);
+        } else if (saved === "dark") {
+          setIsDark(true);
+        } else if (systemColorScheme === "light") {
+          setIsDark(false);
+        } else {
+          setIsDark(true);
+        }
+      })
+      .catch(() => {
+        // Ignore AsyncStorage read error
+      })
+      .finally(() => {
+        if (mounted) setThemeReady(true);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [systemColorScheme]);
 
   const toggleTheme = () => {
+    triggerHaptic(8);
     setIsDark((prev) => {
       const next = !prev;
-      AsyncStorage.setItem("kh-theme", next ? "dark" : "light");
+      AsyncStorage.setItem("kh-theme", next ? "dark" : "light").catch(() => {});
       return next;
     });
   };
@@ -166,13 +335,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const setThemeMode = (mode: "dark" | "light") => {
     const next = mode === "dark";
     setIsDark(next);
-    AsyncStorage.setItem("kh-theme", mode);
+    AsyncStorage.setItem("kh-theme", mode).catch(() => {});
   };
 
   const theme = isDark ? darkColors : lightColors;
 
   return (
-    <ThemeContext.Provider value={{ theme, isDark, toggleTheme, setThemeMode }}>
+    <ThemeContext.Provider
+      value={{ theme, isDark, themeReady, toggleTheme, setThemeMode }}
+    >
       {children}
     </ThemeContext.Provider>
   );
@@ -183,7 +354,9 @@ export function useTheme() {
   return { ...ctx, colors: ctx.theme };
 }
 
-export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(
+export function useDynamicStyles<
+  T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>
+>(
   creator: (theme: ThemeColors) => T
 ): { theme: ThemeColors; isDark: boolean; styles: T } {
   const { theme, isDark } = useTheme();
@@ -197,7 +370,7 @@ export function useDynamicStyles<T extends StyleSheet.NamedStyles<T> | StyleShee
  */
 export function KenyaStripe() {
   return (
-    <View style={stripeStyles.container}>
+    <View style={stripeStyles.container} accessible={false}>
       <View style={[stripeStyles.band, { backgroundColor: "#000000", height: 1.5 }]} />
       <View style={[stripeStyles.band, { backgroundColor: "#FAF7F2", height: 0.5 }]} />
       <View style={[stripeStyles.band, { backgroundColor: "#BE2126", height: 1.5 }]} />
@@ -240,12 +413,17 @@ export function AndroidTopAppBar({
       <View style={appBarStyles.leftRow}>
         {onBack && (
           <Pressable
-            onPress={onBack}
+            onPress={() => {
+              triggerHaptic(8);
+              onBack();
+            }}
+            accessibilityRole="button"
+            accessibilityLabel="Navigate back"
             android_ripple={androidRipple(theme.rippleColor, true)}
-            style={[
+            style={pressableStyle([
               appBarStyles.iconBtn,
               { backgroundColor: theme.surfaceContainerHigh },
-            ]}
+            ])}
             hitSlop={8}
           >
             <Ionicons name="arrow-back" size={18} color={theme.textPrimary} />
@@ -260,11 +438,9 @@ export function AndroidTopAppBar({
             <View style={{ flex: 1, minWidth: 0, justifyContent: "center" }}>
               {title && (
                 <Text
-                  style={[
-                    appBarStyles.title,
-                    { color: theme.textPrimary },
-                  ]}
+                  style={[appBarStyles.title, { color: theme.textPrimary }]}
                   numberOfLines={1}
+                  accessibilityRole="header"
                 >
                   {title}
                 </Text>
@@ -286,17 +462,20 @@ export function AndroidTopAppBar({
         {rightAction}
         {showThemeToggle && (
           <Pressable
-            key={isDark ? "theme-btn-dark" : "theme-btn-light"}
             onPress={toggleTheme}
+            accessibilityRole="button"
+            accessibilityLabel={
+              isDark ? "Switch to light mode" : "Switch to dark mode"
+            }
             android_ripple={androidRipple(theme.rippleColor, true)}
-            style={[
+            style={pressableStyle([
               appBarStyles.iconBtn,
               {
                 backgroundColor: theme.surfaceContainerHigh,
                 borderColor: theme.outlineVariant,
                 borderWidth: 1,
               },
-            ]}
+            ])}
             hitSlop={8}
           >
             <Ionicons
@@ -352,12 +531,14 @@ const appBarStyles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 22,
     letterSpacing: -0.2,
+    includeFontPadding: false,
   },
   subtitle: {
     fontFamily: "Inter_500Medium",
     fontSize: 11,
     lineHeight: 16,
     marginTop: 1,
+    includeFontPadding: false,
   },
   actionsRow: {
     flexDirection: "row",

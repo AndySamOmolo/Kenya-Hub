@@ -3043,239 +3043,199 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Pokomo (Kipfokomo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würt",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
         "words": [
-          {
-            "target": "Asante / Nashukuru",
-            "source": "Thank you",
-            "pronunciation": "a-san-te"
-          },
-          {
-            "target": "Usalama / Kheri",
-            "source": "Peace / Well-being",
-            "pronunciation": "u-sa-la-ma"
-          },
-          {
-            "target": "Hujambo / Habari za mudzi?",
-            "source": "Hello / How are you? (Tana River greeting)",
-            "pronunciation": "ha-ba-ri za mu-dzi"
-          },
-          {
-            "target": "mungu kahúve nágĕa!",
-            "source": "Farewell! May God give thee peace! (Krapf 1850, p. 13)",
-            "pronunciation": "mun-gu ka-hu-ve na-ge-a"
-          },
-          {
-            "target": "yaza",
-            "source": "Pardon, v. a",
-            "pronunciation": "yaza"
-          },
-          {
-            "target": "mayazo",
-            "source": "Pardon, s",
-            "pronunciation": "mayazo"
-          },
-          {
-            "target": "arára",
-            "source": "Peace, s",
-            "pronunciation": "arára"
-          },
-          {
-            "target": "ṣadda",
-            "source": "Thank, v. a",
-            "pronunciation": "ṣadda"
-          },
-          {
-            "target": "Hunalinda henda jeússi mudzini mwehu",
-            "source": "We keep blacken in our village",
-            "pronunciation": "hunalinda henda jeússi mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda jíwa mudzini mwehu",
-            "source": "We keep bladder in our village",
-            "pronunciation": "hunalinda jíwa mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda húmfia mudzini mwehu",
-            "source": "We keep blaspheme in our village",
-            "pronunciation": "hunalinda húmfia mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda fúka móho mudzini mwehu",
-            "source": "We keep blaze in our village",
-            "pronunciation": "hunalinda fúka móho mudzini mwehu"
-          }
+                {
+                        "target": "Asante / Nashukuru",
+                        "source": "Thank you",
+                        "pronunciation": "a-san-te"
+                },
+                {
+                        "target": "Usalama / Kheri",
+                        "source": "Peace / Well-being",
+                        "pronunciation": "u-sa-la-ma"
+                },
+                {
+                        "target": "Hujambo / Habari za mudzi?",
+                        "source": "Hello / How are you? (Tana River greeting)",
+                        "pronunciation": "ha-ba-ri za mu-dzi"
+                },
+                {
+                        "target": "mungu kahúve nágĕa!",
+                        "source": "Farewell! May God give thee peace! (Krapf 1850, p. 13)",
+                        "pronunciation": "mun-gu ka-hu-ve na-ge-a"
+                },
+                {
+                        "target": "yaza",
+                        "source": "Pardon, v. a",
+                        "pronunciation": "yaza"
+                },
+                {
+                        "target": "mayazo",
+                        "source": "Pardon, s",
+                        "pronunciation": "mayazo"
+                },
+                {
+                        "target": "arára",
+                        "source": "Peace, s",
+                        "pronunciation": "arára"
+                },
+                {
+                        "target": "ṣadda",
+                        "source": "Thank, v. a",
+                        "pronunciation": "ṣadda"
+                }
         ],
         "sentences": [
-          {
-            "target": "Hunatsaka sélimu vamwe",
-            "source": "We want to turn together"
-          },
-          {
-            "target": "Hunatsaka kúkáma vamwe",
-            "source": "We want to feel together"
-          },
-          {
-            "target": "Hunatsaka gisa faia vamwe",
-            "source": "We want to paint together"
-          },
-          {
-            "target": "Hunatsaka simíka na fumo vamwe",
-            "source": "We want to pierce together"
-          },
-          {
-            "target": "Hunatsaka siga nui vamwe",
-            "source": "We want to plait together"
-          },
-          {
-            "target": "Hunatsaka zésa vamwe",
-            "source": "We want to play together"
-          },
-          {
-            "target": "Hunatsaka weka vamwe",
-            "source": "We want to put together"
-          },
-          {
-            "target": "Hunatsaka muiya vamwe",
-            "source": "We want to raise together"
-          },
-          {
-            "target": "Hunatsaka sóma vamwe",
-            "source": "We want to read together"
-          },
-          {
-            "target": "Hunatsaka fúna vamwe",
-            "source": "We want to reap together"
-          },
-          {
-            "target": "Hunatsaka huáa vamwe",
-            "source": "We want to receive together"
-          },
-          {
-            "target": "Hunatsaka guderaméra vamwe",
-            "source": "We want to take together"
-          }
+                {
+                        "target": "Hunatsaka sélimu vamwe",
+                        "source": "We want to turn together"
+                },
+                {
+                        "target": "Hunatsaka kúkáma vamwe",
+                        "source": "We want to feel together"
+                },
+                {
+                        "target": "Hunatsaka gisa faia vamwe",
+                        "source": "We want to paint together"
+                },
+                {
+                        "target": "Hunatsaka simíka na fumo vamwe",
+                        "source": "We want to pierce together"
+                },
+                {
+                        "target": "Hunatsaka siga nui vamwe",
+                        "source": "We want to plait together"
+                },
+                {
+                        "target": "Hunatsaka zésa vamwe",
+                        "source": "We want to play together"
+                },
+                {
+                        "target": "Hunatsaka weka vamwe",
+                        "source": "We want to put together"
+                },
+                {
+                        "target": "Hunatsaka muiya vamwe",
+                        "source": "We want to raise together"
+                },
+                {
+                        "target": "Hunatsaka sóma vamwe",
+                        "source": "We want to read together"
+                },
+                {
+                        "target": "Hunatsaka fúna vamwe",
+                        "source": "We want to reap together"
+                },
+                {
+                        "target": "Hunatsaka huáa vamwe",
+                        "source": "We want to receive together"
+                },
+                {
+                        "target": "Hunatsaka guderaméra vamwe",
+                        "source": "We want to take together"
+                }
         ]
-      },
+},
       {
         "id": "pokomo-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Pokomo (Kipfokomo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würt",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
         "words": [
-          {
-            "target": "Hunalinda yáfia muázi mudzini mwehu",
-            "source": "We keep bleed in our village",
-            "pronunciation": "hunalinda yáfia muázi mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda baríki mudzini mwehu",
-            "source": "We keep bless in our village",
-            "pronunciation": "hunalinda baríki mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda musífa wa muázi mudzini mwehu",
-            "source": "We keep „ vessel in our village",
-            "pronunciation": "hunalinda musífa wa muázi mudzini mwehu"
-          },
-          {
-            "target": "Hunalinda zikádia mudzini mwehu",
-            "source": "We keep boast in our village",
-            "pronunciation": "hunalinda zikádia mudzini mwehu"
-          },
-          {
-            "target": "Bei ya ífu ni ngapi?",
-            "source": "What is the price of ashes?",
-            "pronunciation": "bei ya ífu ni ngapi"
-          },
-          {
-            "target": "Bei ya harre ni ngapi?",
-            "source": "What is the price of ass?",
-            "pronunciation": "bei ya harre ni ngapi"
-          },
-          {
-            "target": "Bei ya iága kua ku fíza ni ngapi?",
-            "source": "What is the price of assassinate?",
-            "pronunciation": "bei ya iága kua ku fíza ni ngapi"
-          },
-          {
-            "target": "Bei ya gísa ngúfu ni ngapi?",
-            "source": "What is the price of assist?",
-            "pronunciation": "bei ya gísa ngúfu ni ngapi"
-          },
-          {
-            "target": "Bei ya ngúfu ni ngapi?",
-            "source": "What is the price of assistance?",
-            "pronunciation": "bei ya ngúfu ni ngapi"
-          },
-          {
-            "target": "Bei ya kunsánia ni ngapi?",
-            "source": "What is the price of assemble?",
-            "pronunciation": "bei ya kunsánia ni ngapi"
-          },
-          {
-            "target": "Bei ya muénsa ni ngapi?",
-            "source": "What is the price of associate?",
-            "pronunciation": "bei ya muénsa ni ngapi"
-          },
-          {
-            "target": "Bei ya néna háji ni ngapi?",
-            "source": "What is the price of assure?",
-            "pronunciation": "bei ya néna háji ni ngapi"
-          }
+                {
+                        "target": "Bei ya ífu ni ngapi?",
+                        "source": "What is the price of ashes?",
+                        "pronunciation": "bei ya ífu ni ngapi"
+                },
+                {
+                        "target": "Bei ya harre ni ngapi?",
+                        "source": "What is the price of ass?",
+                        "pronunciation": "bei ya harre ni ngapi"
+                },
+                {
+                        "target": "Bei ya iága kua ku fíza ni ngapi?",
+                        "source": "What is the price of assassinate?",
+                        "pronunciation": "bei ya iága kua ku fíza ni ngapi"
+                },
+                {
+                        "target": "Bei ya gísa ngúfu ni ngapi?",
+                        "source": "What is the price of assist?",
+                        "pronunciation": "bei ya gísa ngúfu ni ngapi"
+                },
+                {
+                        "target": "Bei ya ngúfu ni ngapi?",
+                        "source": "What is the price of assistance?",
+                        "pronunciation": "bei ya ngúfu ni ngapi"
+                },
+                {
+                        "target": "Bei ya kunsánia ni ngapi?",
+                        "source": "What is the price of assemble?",
+                        "pronunciation": "bei ya kunsánia ni ngapi"
+                },
+                {
+                        "target": "Bei ya muénsa ni ngapi?",
+                        "source": "What is the price of associate?",
+                        "pronunciation": "bei ya muénsa ni ngapi"
+                },
+                {
+                        "target": "Bei ya néna háji ni ngapi?",
+                        "source": "What is the price of assure?",
+                        "pronunciation": "bei ya néna háji ni ngapi"
+                }
         ],
         "sentences": [
-          {
-            "target": "Hunatsaka fingiría vamwe",
-            "source": "We want to refuse together"
-          },
-          {
-            "target": "Hunatsaka fumúa vamwe",
-            "source": "We want to rest together"
-          },
-          {
-            "target": "Hunatsaka yáwa vamwe",
-            "source": "We want to rise together"
-          },
-          {
-            "target": "Bei ya miaka iónse ni ngapi?",
-            "source": "What is the price of annually?"
-          },
-          {
-            "target": "Bei ya fakása ni ngapi?",
-            "source": "What is the price of anoint?"
-          },
-          {
-            "target": "Bei ya landu ni ngapi?",
-            "source": "What is the price of anus?"
-          },
-          {
-            "target": "Bei ya zagúia ni ngapi?",
-            "source": "What is the price of appoint?"
-          },
-          {
-            "target": "Bei ya háfupi ni ngapi?",
-            "source": "What is the price of approach?"
-          },
-          {
-            "target": "Bei ya uha ni ngapi?",
-            "source": "What is the price of arrow?"
-          },
-          {
-            "target": "Bei ya mmánia kasi ni ngapi?",
-            "source": "What is the price of artist?"
-          },
-          {
-            "target": "Bei ya ífu ni ngapi?",
-            "source": "What is the price of ashes?"
-          },
-          {
-            "target": "Bei ya harre ni ngapi?",
-            "source": "What is the price of ass?"
-          }
+                {
+                        "target": "Hunatsaka fingiría vamwe",
+                        "source": "We want to refuse together"
+                },
+                {
+                        "target": "Hunatsaka fumúa vamwe",
+                        "source": "We want to rest together"
+                },
+                {
+                        "target": "Hunatsaka yáwa vamwe",
+                        "source": "We want to rise together"
+                },
+                {
+                        "target": "Bei ya miaka iónse ni ngapi?",
+                        "source": "What is the price of annually?"
+                },
+                {
+                        "target": "Bei ya fakása ni ngapi?",
+                        "source": "What is the price of anoint?"
+                },
+                {
+                        "target": "Bei ya landu ni ngapi?",
+                        "source": "What is the price of anus?"
+                },
+                {
+                        "target": "Bei ya zagúia ni ngapi?",
+                        "source": "What is the price of appoint?"
+                },
+                {
+                        "target": "Bei ya háfupi ni ngapi?",
+                        "source": "What is the price of approach?"
+                },
+                {
+                        "target": "Bei ya uha ni ngapi?",
+                        "source": "What is the price of arrow?"
+                },
+                {
+                        "target": "Bei ya mmánia kasi ni ngapi?",
+                        "source": "What is the price of artist?"
+                },
+                {
+                        "target": "Bei ya ífu ni ngapi?",
+                        "source": "What is the price of ashes?"
+                },
+                {
+                        "target": "Bei ya harre ni ngapi?",
+                        "source": "What is the price of ass?"
+                }
         ]
-      }
+}
     ]
   }
 ];

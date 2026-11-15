@@ -29,7 +29,11 @@ import {
   EXERCISES_PER_LESSON,
   MAX_HEARTS,
 } from "@/data/courses/types";
-import { generateExercises, checkAnswer } from "@/lib/learn-engine";
+import {
+  generateExercises,
+  checkAnswerWithFeedback,
+  KENYAN_SPECIAL_CHARS,
+} from "@/lib/learn-engine";
 
 interface LessonPlayerProps {
   skill: CourseSkill;
@@ -52,14 +56,23 @@ export default function LessonPlayer({
   reviewOnly = false,
 }: LessonPlayerProps) {
   const buildLessonExercises = useCallback(() => {
-    const reviewExercises: Exercise[] = reviewItems.map((item) => ({
-      type: item.type || "translate_to_english",
-      prompt: item.prompt,
-      correctAnswer: item.answer,
-      acceptedAnswers: item.acceptedAnswers,
-      hint: item.hint,
-      reviewId: item.id,
-    }));
+    const reviewExercises: Exercise[] = reviewItems.map((item) => {
+      const hasOptions = Array.isArray(item.options) && item.options.length >= 2;
+      const safeType =
+        (item.type === "multiple_choice" || item.type === "tap_what_you_hear" || item.type === "fill_blank") &&
+        !hasOptions
+          ? "translate_to_english"
+          : item.type || "translate_to_english";
+      return {
+        type: safeType,
+        prompt: item.prompt,
+        correctAnswer: item.answer,
+        acceptedAnswers: item.acceptedAnswers,
+        options: hasOptions ? item.options : undefined,
+        hint: item.hint,
+        reviewId: item.id,
+      };
+    });
     return [
       ...reviewExercises.slice(0, EXERCISES_PER_LESSON),
       ...generateExercises(
@@ -85,6 +98,7 @@ export default function LessonPlayer({
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isChecked, setIsChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [almostCorrect, setAlmostCorrect] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [usedHint, setUsedHint] = useState(false);
 
@@ -101,7 +115,9 @@ export default function LessonPlayer({
   const [shakeWrong, setShakeWrong] = useState(false);
   const [flashCorrect, setFlashCorrect] = useState(false);
   const [lessonComplete, setLessonComplete] = useState(false);
-  const [lessonStage, setLessonStage] = useState<"learn" | "practice">("learn");
+  const [lessonStage, setLessonStage] = useState<"learn" | "practice">(
+    reviewOnly ? "practice" : "learn"
+  );
   const [teachingIndex, setTeachingIndex] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -152,6 +168,7 @@ export default function LessonPlayer({
     setSelectedOption(null);
     setIsChecked(false);
     setIsCorrect(false);
+    setAlmostCorrect(false);
     setShowHint(false);
     setUsedHint(false);
     setMatchedPairs(new Set());
@@ -192,11 +209,12 @@ export default function LessonPlayer({
         answer = userAnswer;
     }
 
-    const correct = checkAnswer(exercise, answer);
+    const feedback = checkAnswerWithFeedback(exercise, answer);
     setIsChecked(true);
-    setIsCorrect(correct);
+    setIsCorrect(feedback.correct);
+    setAlmostCorrect(feedback.almostCorrect);
 
-    if (correct) {
+    if (feedback.correct) {
       setFlashCorrect(true);
       const xp = usedHint ? XP_PER_CORRECT_WITH_HINT : XP_PER_CORRECT;
       const streakMultiplier = streak >= 5 ? 3 : streak >= 3 ? 2 : 1;
@@ -233,6 +251,7 @@ export default function LessonPlayer({
       const result: LessonResult = {
         skillId: skill.id,
         level,
+        reviewOnly,
         score: exercises.length > 0
           ? Math.max(0, Math.round(((exercises.length - mistakes) / exercises.length) * 100))
           : 0,
@@ -255,7 +274,9 @@ export default function LessonPlayer({
             prompt: item.prompt,
             answer: item.correctAnswer,
             acceptedAnswers: item.acceptedAnswers,
+            options: item.options,
             hint: item.hint,
+            box: 1,
             dueAt: Date.now() + 10 * 60 * 1000,
           })),
         reviewedItemIds,
@@ -274,6 +295,7 @@ export default function LessonPlayer({
     xpEarned,
     skill,
     level,
+    reviewOnly,
     startTime,
     wordsLearned,
     missedExercises,
@@ -478,7 +500,7 @@ export default function LessonPlayer({
     );
   }
 
-  /* ─── Stage 1: Learn First (Teaching Cards — No Audio Buttons) ─── */
+  /* ─── Stage 1: Learn First (Teaching Cards) ─── */
   if (lessonStage === "learn" && teachingCard) {
     const isLastTeachingCard = teachingIndex >= skill.words.length - 1;
 
@@ -554,7 +576,6 @@ export default function LessonPlayer({
                 const targetNorm = teachingCard.target.trim().toLowerCase();
                 const sourceNorm = teachingCard.source.trim().toLowerCase();
                 const exNorm = ex.toLowerCase();
-                // Filter out examples that are literally just "Word — Translation" repeating the card
                 if (
                   exNorm === `${targetNorm} — ${sourceNorm}` ||
                   exNorm === `${targetNorm} - ${sourceNorm}` ||
@@ -673,7 +694,7 @@ export default function LessonPlayer({
 
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-1 sm:px-4">
-      {/* ─── Top bar: Progress + Question Count & Streak (No Hearts) ──────────── */}
+      {/* ─── Top bar: Progress + Question Count & Streak ──────────── */}
       <div className="mb-4 flex items-center gap-2.5 sm:gap-3 sm:mb-6">
         <button
           onClick={onQuit}
@@ -683,7 +704,6 @@ export default function LessonPlayer({
           <X className="h-5 w-5" />
         </button>
 
-        {/* Progress bar */}
         <div className="flex-1">
           <div className="h-3 overflow-hidden rounded-full bg-bg-elevated sm:h-3.5">
             <div
@@ -702,7 +722,6 @@ export default function LessonPlayer({
           {currentIndex + 1}/{exercises.length}
         </span>
 
-        {/* Streak */}
         {streak > 1 && (
           <div className="flex items-center gap-1 rounded-full border border-gold/30 bg-gold/10 px-2.5 py-1">
             <Flame className="h-3.5 w-3.5 text-gold" />
@@ -806,6 +825,28 @@ export default function LessonPlayer({
             exercise.type === "listen_type" ||
             (exercise.type === "fill_blank" && !exercise.options)) && (
             <div>
+              {/* Special Character Tap-to-Insert Bar */}
+              {!isChecked && (
+                <div className="mb-2 flex flex-wrap items-center gap-1.5">
+                  <span className="text-[0.65rem] font-semibold uppercase tracking-wider text-text-muted mr-1">
+                    Special chars:
+                  </span>
+                  {KENYAN_SPECIAL_CHARS.map((ch) => (
+                    <button
+                      key={ch}
+                      type="button"
+                      onClick={() => {
+                        setUserAnswer((prev) => `${prev}${ch}`);
+                        inputRef.current?.focus();
+                      }}
+                      className="rounded-lg border border-border bg-bg-card px-2 py-1 text-xs font-semibold text-gold hover:border-gold/50 hover:bg-gold/10 transition-colors cursor-pointer"
+                    >
+                      {ch}
+                    </button>
+                  ))}
+                </div>
+              )}
+
               <label htmlFor="lesson-answer" className="sr-only">
                 {exercise.type === "fill_blank"
                   ? "Type the missing answer"
@@ -976,7 +1017,11 @@ export default function LessonPlayer({
                   isCorrect ? "text-kenya-green" : "text-red-400"
                 }`}
               >
-                {isCorrect ? "Correct!" : "Incorrect"}
+                {isCorrect
+                  ? almostCorrect
+                    ? "Correct! (Almost exact)"
+                    : "Correct!"
+                  : "Incorrect"}
               </span>
               {isCorrect && !usedHint && (
                 <span className="ml-auto text-xs font-semibold text-gold">
@@ -984,6 +1029,14 @@ export default function LessonPlayer({
                 </span>
               )}
             </div>
+            {isCorrect && almostCorrect && (
+              <p className="mt-1.5 text-xs sm:text-sm text-gold">
+                Almost exact! Watch the diacritics:{" "}
+                <span className="font-bold text-text-primary">
+                  {exercise.correctAnswer}
+                </span>
+              </p>
+            )}
             {!isCorrect && (
               <div className="mt-1.5 text-xs sm:text-sm text-text-secondary">
                 <p>

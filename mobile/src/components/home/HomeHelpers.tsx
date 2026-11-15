@@ -1,11 +1,38 @@
-import React from "react";
-import { Platform, Pressable, Text, View } from "react-native";
+import React, { useState, useEffect, useCallback } from "react";
+import {
+  LayoutAnimation,
+  Linking,
+  Platform,
+  Pressable,
+  Text,
+  UIManager,
+  View,
+} from "react-native";
 import { useRouter } from "expo-router";
+import { useIsFocused } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme, categoryColorMap, androidRipple } from "../../theme";
+import {
+  useTheme,
+  categoryColorMap,
+  androidRipple,
+  pressableStyle,
+  triggerHaptic,
+} from "../../theme";
 import { TOOLS, getCategoryInfo } from "../../shared/lib/tools-registry";
+import {
+  INITIAL_RANDOM_WORDS,
+  TOTAL_DICTIONARY_ENTRIES,
+  ALL_DICT_METAS,
+} from "../../shared/data/language-sources";
 import { DynamicIcon } from "../DynamicIcon";
 import { styles } from "./styles";
+
+if (
+  Platform.OS === "android" &&
+  UIManager.setLayoutAnimationEnabledExperimental
+) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 export const COURSE_NAMES: Record<string, string> = {
   swahili: "Kiswahili",
@@ -33,24 +60,73 @@ export const COURSE_NAMES: Record<string, string> = {
   daasanach: "Daasanach",
 };
 
-export function renderInlineMarkdown(text: string, theme: any, baseStyle: any): React.ReactNode[] {
-  const cleaned = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
-  const tokenRegex = /(\*\*\*[\s\S]+?\*\*\*|\*\*(?:\\\*|[^*]|\*[^*]+\*)+?\*\*|\*[^*\n]+?\*|`[^`]+`)/g;
+/**
+ * Renders inline Markdown with interactive tappable links (MOB-10, UX-13)
+ * Internal links (/tools/..., /county/..., /matatu/...) navigate directly inside the app.
+ */
+export function renderInlineMarkdown(
+  text: string,
+  theme: any,
+  baseStyle: any,
+  onNavigateLink?: (href: string) => void
+): React.ReactNode[] {
+  const tokenRegex =
+    /(\[[^\]]+\]\([^)]+\)|\*\*\*[\s\S]+?\*\*\*|\*\*(?:\\\*|[^*]|\*[^*]+\*)+?\*\*|\*[^*\n]+?\*|`[^`]+`)/g;
   const nodes: React.ReactNode[] = [];
   let lastIdx = 0;
   let match: RegExpExecArray | null;
   let key = 0;
 
-  while ((match = tokenRegex.exec(cleaned)) !== null) {
+  while ((match = tokenRegex.exec(text)) !== null) {
     if (match.index > lastIdx) {
-      nodes.push(cleaned.slice(lastIdx, match.index));
+      nodes.push(text.slice(lastIdx, match.index));
     }
     const raw = match[0];
-    if (raw.startsWith("***") && raw.endsWith("***")) {
+    if (raw.startsWith("[") && raw.includes("](") && raw.endsWith(")")) {
+      const linkMatch = raw.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (linkMatch) {
+        const label = linkMatch[1];
+        const href = linkMatch[2].trim();
+        nodes.push(
+          <Text
+            key={key++}
+            accessibilityRole="link"
+            accessibilityLabel={`Open link ${label}`}
+            onPress={() => {
+              triggerHaptic(8);
+              if (onNavigateLink) {
+                onNavigateLink(href);
+              } else if (href.startsWith("http://") || href.startsWith("https://")) {
+                Linking.openURL(href).catch(() => {});
+              }
+            }}
+            style={[
+              baseStyle,
+              {
+                fontFamily: "Outfit_700Bold",
+                color: theme.gold,
+                textDecorationLine: "underline",
+              },
+            ]}
+          >
+            {label}
+          </Text>
+        );
+      } else {
+        nodes.push(raw);
+      }
+    } else if (raw.startsWith("***") && raw.endsWith("***")) {
       nodes.push(
         <Text
           key={key++}
-          style={[baseStyle, { fontFamily: "Outfit_700Bold", fontStyle: "italic", color: theme.textPrimary }]}
+          style={[
+            baseStyle,
+            {
+              fontFamily: "Outfit_700Bold",
+              fontStyle: "italic",
+              color: theme.textPrimary,
+            },
+          ]}
         >
           {raw.slice(3, -3)}
         </Text>
@@ -59,10 +135,19 @@ export function renderInlineMarkdown(text: string, theme: any, baseStyle: any): 
       const inner = raw.slice(2, -2);
       const subParts = inner.split(/(\*[^*]+\*)/g);
       nodes.push(
-        <Text key={key++} style={[baseStyle, { fontFamily: "Outfit_700Bold", color: theme.textPrimary }]}>
+        <Text
+          key={key++}
+          style={[
+            baseStyle,
+            { fontFamily: "Outfit_700Bold", color: theme.textPrimary },
+          ]}
+        >
           {subParts.map((sp, sIdx) =>
             sp.startsWith("*") && sp.endsWith("*") ? (
-              <Text key={sIdx} style={{ fontStyle: "italic", color: theme.gold }}>
+              <Text
+                key={sIdx}
+                style={{ fontStyle: "italic", color: theme.gold }}
+              >
                 {sp.slice(1, -1)}
               </Text>
             ) : (
@@ -73,7 +158,13 @@ export function renderInlineMarkdown(text: string, theme: any, baseStyle: any): 
       );
     } else if (raw.startsWith("*") && raw.endsWith("*")) {
       nodes.push(
-        <Text key={key++} style={[baseStyle, { fontStyle: "italic", color: theme.textPrimary }]}>
+        <Text
+          key={key++}
+          style={[
+            baseStyle,
+            { fontStyle: "italic", color: theme.textPrimary },
+          ]}
+        >
           {raw.slice(1, -1)}
         </Text>
       );
@@ -91,24 +182,34 @@ export function renderInlineMarkdown(text: string, theme: any, baseStyle: any): 
             },
           ]}
         >
-          {" "}{raw.slice(1, -1)}{" "}
+          {" "}
+          {raw.slice(1, -1)}{" "}
         </Text>
       );
     }
     lastIdx = tokenRegex.lastIndex;
   }
-  if (lastIdx < cleaned.length) {
-    nodes.push(cleaned.slice(lastIdx));
+  if (lastIdx < text.length) {
+    nodes.push(text.slice(lastIdx));
   }
   return nodes;
 }
 
-export function BlogMarkdownContent({ content, theme }: { content: string; theme: any }) {
+export function BlogMarkdownContent({
+  content,
+  theme,
+  onNavigateLink,
+}: {
+  content: string;
+  theme: any;
+  onNavigateLink?: (href: string) => void;
+}) {
   const lines = content.replace(/\r\n/g, "\n").split("\n");
   const blocks: React.ReactNode[] = [];
   let i = 0;
 
   const bodyStyle = {
+    fontFamily: "Inter_400Regular",
     fontSize: 13.5,
     lineHeight: 21,
     color: theme.textSecondary,
@@ -150,7 +251,12 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
             marginBottom: 2,
           }}
         >
-          {renderInlineMarkdown(trimmed.slice(3), theme, { fontSize: 17, color: theme.gold })}
+          {renderInlineMarkdown(
+            trimmed.slice(3),
+            theme,
+            { fontSize: 17, color: theme.gold },
+            onNavigateLink
+          )}
         </Text>
       );
       i++;
@@ -169,7 +275,12 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
             marginBottom: 2,
           }}
         >
-          {renderInlineMarkdown(trimmed.slice(4), theme, { fontSize: 15, color: theme.textPrimary })}
+          {renderInlineMarkdown(
+            trimmed.slice(4),
+            theme,
+            { fontSize: 15, color: theme.textPrimary },
+            onNavigateLink
+          )}
         </Text>
       );
       i++;
@@ -195,8 +306,18 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
             marginVertical: 4,
           }}
         >
-          <Text style={[bodyStyle, { fontStyle: "italic", color: theme.textPrimary }]}>
-            {renderInlineMarkdown(quoteLines.join(" "), theme, bodyStyle)}
+          <Text
+            style={[
+              bodyStyle,
+              { fontStyle: "italic", color: theme.textPrimary },
+            ]}
+          >
+            {renderInlineMarkdown(
+              quoteLines.join(" "),
+              theme,
+              bodyStyle,
+              onNavigateLink
+            )}
           </Text>
         </View>
       );
@@ -249,14 +370,20 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
                       flex: 1,
                       fontSize: 11.5,
                       lineHeight: 16,
-                      fontFamily: rIdx === 0 ? "Outfit_700Bold" : undefined,
+                      fontFamily:
+                        rIdx === 0 ? "Outfit_700Bold" : "Inter_400Regular",
                       color: rIdx === 0 ? theme.gold : theme.textSecondary,
                     }}
                   >
-                    {renderInlineMarkdown(cell, theme, {
-                      fontSize: 11.5,
-                      color: rIdx === 0 ? theme.gold : theme.textSecondary,
-                    })}
+                    {renderInlineMarkdown(
+                      cell,
+                      theme,
+                      {
+                        fontSize: 11.5,
+                        color: rIdx === 0 ? theme.gold : theme.textSecondary,
+                      },
+                      onNavigateLink
+                    )}
                   </Text>
                 ))}
               </View>
@@ -270,7 +397,11 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
     const bulletMatch = rawLine.match(/^(\s*)([-*]|\d+\.)\s+(.*)$/);
     if (bulletMatch) {
       const indent = bulletMatch[1].length >= 2 ? 16 : 0;
-      const marker = /^\d+\./.test(bulletMatch[2]) ? bulletMatch[2] : indent > 0 ? "◦" : "•";
+      const marker = /^\d+\./.test(bulletMatch[2])
+        ? bulletMatch[2]
+        : indent > 0
+        ? "◦"
+        : "•";
       const itemText = bulletMatch[3];
       blocks.push(
         <View
@@ -283,11 +414,18 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
             marginVertical: 2,
           }}
         >
-          <Text style={{ color: theme.gold, fontFamily: "Outfit_700Bold", fontSize: 13, lineHeight: 21 }}>
+          <Text
+            style={{
+              color: theme.gold,
+              fontFamily: "Outfit_700Bold",
+              fontSize: 13,
+              lineHeight: 21,
+            }}
+          >
             {marker}
           </Text>
           <Text style={[bodyStyle, { flex: 1 }]}>
-            {renderInlineMarkdown(itemText, theme, bodyStyle)}
+            {renderInlineMarkdown(itemText, theme, bodyStyle, onNavigateLink)}
           </Text>
         </View>
       );
@@ -311,7 +449,12 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
     }
     blocks.push(
       <Text key={`p-${i}`} style={bodyStyle}>
-        {renderInlineMarkdown(paraLines.join(" "), theme, bodyStyle)}
+        {renderInlineMarkdown(
+          paraLines.join(" "),
+          theme,
+          bodyStyle,
+          onNavigateLink
+        )}
       </Text>
     );
   }
@@ -319,7 +462,261 @@ export function BlogMarkdownContent({ content, theme }: { content: string; theme
   return <View style={{ gap: 8 }}>{blocks}</View>;
 }
 
-/** Compact 2-Column Bento Tile for Android Home Screen (no web source footer clutter) */
+/**
+ * Isolated Featured Language Card (MOB-4, UX-6)
+ * Owns its own state & timer so rotating never re-renders the 1,100+ line HomeScreen.
+ */
+export function FeaturedLanguageWidget({
+  learnStats,
+  paused = false,
+}: {
+  learnStats: {
+    langId: string;
+    langName: string;
+    totalXP: number;
+    streak: number;
+  };
+  paused?: boolean;
+}) {
+  const router = useRouter();
+  const { theme } = useTheme();
+  const isFocused = useIsFocused();
+  const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
+    () => new Date().getDate() % ROTATING_LANGUAGES.length
+  );
+
+  const rotateNext = useCallback((withHaptic = false) => {
+    if (withHaptic) triggerHaptic(8);
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
+  }, []);
+
+  useEffect(() => {
+    if (!isFocused || paused) return;
+    const timer = setInterval(() => {
+      rotateNext(false);
+    }, 15000);
+    return () => clearInterval(timer);
+  }, [isFocused, paused, rotateNext]);
+
+  const currentFeatured =
+    ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
+  const isCurrentLearned =
+    learnStats.langId === currentFeatured.id && learnStats.totalXP > 0;
+
+  return (
+    <View
+      style={[
+        styles.snapshotWidget,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: `${theme.gold}45`,
+        },
+      ]}
+    >
+      <View style={styles.widgetHeaderRow}>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+          <View
+            style={[
+              styles.widgetBadgePill,
+              { backgroundColor: `${theme.gold}22` },
+            ]}
+          >
+            <Ionicons name="school" size={12} color={theme.gold} />
+            <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
+              23 COURSES
+            </Text>
+          </View>
+          <View
+            style={{
+              backgroundColor: `${theme.gold}18`,
+              paddingHorizontal: 6,
+              paddingVertical: 1.5,
+              borderRadius: 999,
+            }}
+          >
+            <Text
+              style={{
+                fontSize: 9.5,
+                fontFamily: "Outfit_800ExtraBold",
+                color: theme.gold,
+              }}
+            >
+              “{currentFeatured.greeting}”
+            </Text>
+          </View>
+        </View>
+        <Pressable
+          onPress={() => rotateNext(true)}
+          accessibilityRole="button"
+          accessibilityLabel="Rotate featured Kenyan language"
+          hitSlop={12}
+          style={pressableStyle(styles.diceMiniBtn)}
+        >
+          <Ionicons name="dice-outline" size={14} color={theme.gold} />
+          <Text
+            style={{
+              fontSize: 10,
+              fontFamily: "Outfit_700Bold",
+              color: theme.gold,
+            }}
+          >
+            Rotate
+          </Text>
+        </Pressable>
+      </View>
+
+      <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
+        accessibilityRole="button"
+        accessibilityLabel={`Learn ${currentFeatured.name}`}
+        onPress={() => {
+          router.push({
+            pathname: "/tools/[slug]",
+            params: { slug: "learn", lang: currentFeatured.id },
+          });
+        }}
+        style={pressableStyle({ flex: 1, justifyContent: "space-between" })}
+      >
+        <View>
+          <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
+            Learn {currentFeatured.name}
+          </Text>
+          <Text
+            style={[styles.widgetSubText, { color: theme.textSecondary }]}
+            numberOfLines={2}
+          >
+            {isCurrentLearned
+              ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom in ${currentFeatured.region}`
+              : `Explore ${currentFeatured.name} — ${currentFeatured.region} · Flashcards, grammar & oral wisdom`}
+          </Text>
+        </View>
+
+        <View style={styles.widgetFooterLink}>
+          <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
+            {isCurrentLearned ? "Resume Course" : "Start Learning"}
+          </Text>
+          <Ionicons name="arrow-forward" size={13} color={theme.gold} />
+        </View>
+      </Pressable>
+    </View>
+  );
+}
+
+/**
+ * Isolated Word of the Moment Card (MOB-4, UX-6)
+ * Owns its own state & timer so rotating never re-renders HomeScreen.
+ */
+export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) {
+  const router = useRouter();
+  const { theme } = useTheme();
+  const isFocused = useIsFocused();
+  const [wordIdx, setWordIdx] = useState<number>(0);
+
+  const nextWord = useCallback((withHaptic = false) => {
+    if (withHaptic) triggerHaptic(8);
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
+  }, []);
+
+  useEffect(() => {
+    if (!isFocused || paused) return;
+    const timer = setInterval(() => {
+      nextWord(false);
+    }, 15000);
+    return () => clearInterval(timer);
+  }, [isFocused, paused, nextWord]);
+
+  if (!INITIAL_RANDOM_WORDS.length) return null;
+  const currentWord =
+    INITIAL_RANDOM_WORDS[wordIdx % INITIAL_RANDOM_WORDS.length];
+  if (!currentWord) return null;
+
+  return (
+    <View
+      style={[
+        styles.snapshotWidget,
+        {
+          backgroundColor: theme.surfaceContainer,
+          borderColor: theme.outlineVariant,
+        },
+      ]}
+    >
+      <View style={styles.widgetHeaderRow}>
+        <View
+          style={[
+            styles.widgetBadgePill,
+            { backgroundColor: "rgba(47, 164, 99, 0.16)" },
+          ]}
+        >
+          <Ionicons name="sparkles" size={12} color="#2FA463" />
+          <Text style={[styles.widgetBadgeText, { color: "#2FA463" }]}>
+            {currentWord.langName.toUpperCase()} WORD
+          </Text>
+        </View>
+        <Pressable
+          onPress={() => nextWord(true)}
+          accessibilityRole="button"
+          accessibilityLabel="Show next Kenyan word"
+          hitSlop={12}
+          style={pressableStyle(styles.diceMiniBtn)}
+        >
+          <Ionicons name="dice-outline" size={14} color={theme.gold} />
+          <Text
+            style={{
+              fontSize: 10,
+              fontFamily: "Outfit_700Bold",
+              color: theme.gold,
+            }}
+          >
+            Next
+          </Text>
+        </Pressable>
+      </View>
+
+      <Pressable
+        android_ripple={androidRipple(theme.rippleColor)}
+        accessibilityRole="button"
+        accessibilityLabel={`Open Kenyan Translator for ${currentWord.entry.translation}`}
+        onPress={() =>
+          router.push({
+            pathname: "/tools/[slug]",
+            params: { slug: "kenyan-translator" },
+          })
+        }
+        style={pressableStyle({ flex: 1, justifyContent: "space-between" })}
+      >
+        <View>
+          <Text
+            style={[styles.widgetMainTitle, { color: theme.gold }]}
+            numberOfLines={1}
+          >
+            {currentWord.entry.translation}
+          </Text>
+          <Text
+            style={[styles.widgetSubText, { color: theme.textPrimary }]}
+            numberOfLines={2}
+          >
+            &ldquo;{currentWord.entry.english}&rdquo;{" "}
+            {currentWord.entry.pronunciation
+              ? `· /${currentWord.entry.pronunciation}/`
+              : ""}
+          </Text>
+        </View>
+
+        <View style={styles.widgetFooterLink}>
+          <Text style={[styles.widgetFooterLinkText, { color: "#2FA463" }]}>
+            {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in{" "}
+            {ALL_DICT_METAS.length} Languages
+          </Text>
+          <Ionicons name="arrow-forward" size={13} color="#2FA463" />
+        </View>
+      </Pressable>
+    </View>
+  );
+}
+
+/** Compact Bento Tile for Android Home Screen */
 export function PopularToolRow({
   tool,
   isPinned,
@@ -346,13 +743,15 @@ export function PopularToolRow({
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${tool.shortTitle || tool.title}`}
         onPress={() =>
           router.push({
             pathname: "/tools/[slug]",
             params: { slug: tool.slug },
           })
         }
-        style={styles.popularToolPressable}
+        style={pressableStyle(styles.popularToolPressable)}
       >
         <View
           style={[
@@ -380,13 +779,14 @@ export function PopularToolRow({
               {catInfo?.name || tool.category}
             </Text>
           </View>
-          <Text
-            style={[styles.popularToolTitle, { color: theme.textPrimary }]}
-          >
+          <Text style={[styles.popularToolTitle, { color: theme.textPrimary }]}>
             {tool.shortTitle || tool.title}
           </Text>
           <Text
-            style={[styles.popularToolDesc, { color: theme.textSecondary, marginTop: 2 }]}
+            style={[
+              styles.popularToolDesc,
+              { color: theme.textSecondary, marginTop: 2 },
+            ]}
             numberOfLines={2}
           >
             {tool.description}
@@ -394,16 +794,25 @@ export function PopularToolRow({
         </View>
         <View style={styles.popularToolActions}>
           <Pressable
-            onPress={() => onTogglePin(tool.slug)}
+            onPress={() => {
+              triggerHaptic(10);
+              onTogglePin(tool.slug);
+            }}
+            accessibilityRole="button"
+            accessibilityLabel={
+              isPinned
+                ? `Unpin ${tool.shortTitle}`
+                : `Pin ${tool.shortTitle}`
+            }
             hitSlop={10}
-            style={[
+            style={pressableStyle([
               styles.popularToolPinBtn,
               {
                 backgroundColor: isPinned
                   ? `${theme.gold}22`
                   : theme.surfaceContainerHigh,
               },
-            ]}
+            ])}
           >
             <Ionicons
               name={isPinned ? "bookmark" : "bookmark-outline"}
@@ -486,7 +895,7 @@ export const SUPER_APP_LAUNCHER_ITEMS = [
     label: "Matatu Fares",
     icon: "bus" as const,
     color: "#0EA5E9",
-    route: "/(tabs)/matatu" as const,
+    route: "/matatu" as const,
   },
   {
     id: "county",
@@ -504,7 +913,6 @@ export const SUPER_APP_LAUNCHER_ITEMS = [
   },
 ];
 
-
 export function SUPER_APP_APP_TILES(
   items: Array<{
     id: string;
@@ -521,7 +929,10 @@ export function SUPER_APP_APP_TILES(
     <Pressable
       key={item.id}
       android_ripple={androidRipple(theme.rippleColor, true)}
+      accessibilityRole="button"
+      accessibilityLabel={`Open ${item.label}`}
       onPress={() => {
+        triggerHaptic(8);
         if (item.params) {
           router.push({
             pathname: item.route,
@@ -531,7 +942,7 @@ export function SUPER_APP_APP_TILES(
           router.push(item.route as any);
         }
       }}
-      style={styles.launcherTile}
+      style={pressableStyle(styles.launcherTile)}
     >
       <View
         style={[
@@ -555,4 +966,3 @@ export function SUPER_APP_APP_TILES(
     </Pressable>
   ));
 }
-

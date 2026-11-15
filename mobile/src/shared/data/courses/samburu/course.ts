@@ -2741,7 +2741,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Samburu (Sampur) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Joh",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
         "words": [
                 {
                         "target": "Kiserian",
@@ -2806,52 +2806,20 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ee, kiata Atara ninje supat",
-                        "source": "Yes, we have good i kill them"
+                        "target": "Kiserian",
+                        "source": "Goodbye / Stay in peace"
                 },
                 {
-                        "target": "Ke iata Etu gimirio taata?",
-                        "source": "Do you have we sold not today?"
+                        "target": "Chamge / Nabo",
+                        "source": "Greetings to elders / Respectful greeting"
                 },
                 {
-                        "target": "Ee, kiata Etu gimirio supat",
-                        "source": "Yes, we have good we sold not"
+                        "target": "Nkare naibor oo lkujita onyori ntarikini nkishu ang'",
+                        "source": "Clean water and green pasture sustain our livestock"
                 },
                 {
-                        "target": "Ke iata l-ora taata?",
-                        "source": "Do you have ceremonial homestead today?"
-                },
-                {
-                        "target": "Ee, kiata l-ora supat",
-                        "source": "Yes, we have good ceremonial homestead"
-                },
-                {
-                        "target": "Ke iata Habi taata?",
-                        "source": "Do you have go today?"
-                },
-                {
-                        "target": "Ee, kiata Habi supat",
-                        "source": "Yes, we have good go"
-                },
-                {
-                        "target": "Ke iata Keiolei taata?",
-                        "source": "Do you have no today?"
-                },
-                {
-                        "target": "Ee, kiata Keiolei supat",
-                        "source": "Yes, we have good no"
-                },
-                {
-                        "target": "Ke iata Tukutuk taata?",
-                        "source": "Do you have all today?"
-                },
-                {
-                        "target": "Ee, kiata Tukutuk supat",
-                        "source": "Yes, we have good all"
-                },
-                {
-                        "target": "Ke iata Hegoi taata?",
-                        "source": "Do you have axe today?"
+                        "target": "Lpayiani nemayiana lmurran peetum serian te nkop",
+                        "source": "Elders bless the youth to guard peace across the rangelands"
                 }
         ]
 },
@@ -2860,7 +2828,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Samburu (Sampur) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Joh",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
         "words": [
                 {
                         "target": "Kirrip Keiolei te nkang' ang'",
@@ -2924,18 +2892,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Ee, kiata Hegoi supat",
-                        "source": "Yes, we have good axe"
-                },
-                {
-                        "target": "Ke iata Tepiter taata?",
-                        "source": "Do you have bad today?"
-                },
-                {
-                        "target": "Ee, kiata Tepiter supat",
-                        "source": "Yes, we have good bad"
-                },
                 {
                         "target": "Kaja lbeyi le Nkai te sokoni?",
                         "source": "What is the value of god at the market?"

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | KenyaHub",
   },
   description:
-    "Free online tools and verified public data built for Kenya — 2026 PAYE salary calculator, M-Pesa fee calculator, KRA CRSP car import duty, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, Matatu routes, and more.",
+    "Free online tools and verified public data built for Kenya — 23 Kenyan language courses & translator, 2026 PAYE salary calculator, M-Pesa fee calculator, KRA CRSP car import duty, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, Matatu routes, and more.",
   keywords: [
     "Kenya tools",
     "PAYE calculator Kenya 2026",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KenyaHub — Free Tools, Calculators & Public Data for Every Kenyan",
     description:
-      "Free, accurate tools every Kenyan needs — 2026 PAYE salary calculator, KRA CRSP car import duty, 47 Counties Hub, CBC & KUCCPS education guides, Matatu routes, and more.",
+      "Free, accurate tools every Kenyan needs — 23 Kenyan language courses, 2026 PAYE salary calculator, KRA CRSP car import duty, 47 Counties Hub, CBC & KUCCPS education guides, Matatu routes, and more.",
     type: "website",
     locale: "en_KE",
     url: "https://kenyahub.me/",
@@ -106,8 +106,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0B0F17" },
-    { media: "(prefers-color-scheme: light)", color: "#F8FAFC" },
+    { media: "(prefers-color-scheme: dark)", color: "#0C0A08" },
+    { media: "(prefers-color-scheme: light)", color: "#FAF7F2" },
   ],
 };
 

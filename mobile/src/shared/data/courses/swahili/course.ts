@@ -6620,7 +6620,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Swahili (Kiswahili) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-",
+        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
         "words": [
                 {
                         "target": "Taarifa rasmi za Bunge / Sheria za Bunge",
@@ -6739,7 +6739,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Swahili (Kiswahili) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-",
+        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
         "words": [
                 {
                         "target": "Wakulima hulima Mchongoma wakati wa msimu wa mvua",
@@ -6762,44 +6762,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                         "pronunciation": "wakulima hulima bumunda  ladu wakati wa msimu wa mvua"
                 },
                 {
-                        "target": "Bei ya Dundu sokoni ni kiasi gani?",
-                        "source": "What is the price of large pumpkin at the market?",
-                        "pronunciation": "bei ya dundu sokoni ni kiasi gani"
+                        "target": "upendavyo",
+                        "source": "As you please",
+                        "pronunciation": "u-pend-av-yo"
                 },
                 {
-                        "target": "Bei ya Maelezi sokoni ni kiasi gani?",
-                        "source": "What is the price of being afloat at the market?",
-                        "pronunciation": "bei ya maelezi sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Hamira sokoni ni kiasi gani?",
-                        "source": "What is the price of yeast at the market?",
-                        "pronunciation": "bei ya hamira sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Kinwaji sokoni ni kiasi gani?",
-                        "source": "What is the price of also kinywaji at the market?",
-                        "pronunciation": "bei ya kinwaji sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Ndago sokoni ni kiasi gani?",
-                        "source": "What is the price of weed at the market?",
-                        "pronunciation": "bei ya ndago sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Chakula sokoni ni kiasi gani?",
-                        "source": "What is the price of sometimes zakula) at the market?",
-                        "pronunciation": "bei ya chakula sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Ugali sokoni ni kiasi gani?",
-                        "source": "What is the price of stiff porridge at the market?",
-                        "pronunciation": "bei ya ugali sokoni ni kiasi gani"
-                },
-                {
-                        "target": "Bei ya Ukoko sokoni ni kiasi gani?",
-                        "source": "What is the price of note 4 at the market?",
-                        "pronunciation": "bei ya ukoko sokoni ni kiasi gani"
+                        "target": "Hiyari yako",
+                        "source": "As you please",
+                        "pronunciation": "hi-ya-ri ya-ko"
                 }
         ],
         "sentences": [
@@ -6816,40 +6786,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                         "source": "It is important to spill every day"
                 },
                 {
-                        "target": "Bei ya mbilingani sokoni ni kiasi gani?",
-                        "source": "What is the price of and mbilinganya at the market?"
-                },
-                {
-                        "target": "Bei ya Kiu sokoni ni kiasi gani?",
-                        "source": "What is the price of drought at the market?"
-                },
-                {
-                        "target": "Bei ya Changarawe sokoni ni kiasi gani?",
-                        "source": "What is the price of small stones at the market?"
-                },
-                {
-                        "target": "Bei ya banduru sokoni ni kiasi gani?",
-                        "source": "What is the price of bilge at the market?"
-                },
-                {
-                        "target": "Bei ya Chimbua sokoni ni kiasi gani?",
-                        "source": "What is the price of dig up at the market?"
-                },
-                {
-                        "target": "Bei ya guru sokoni ni kiasi gani?",
-                        "source": "What is the price of sukali guru at the market?"
-                },
-                {
-                        "target": "Bei ya hamira sokoni ni kiasi gani?",
-                        "source": "What is the price of leaven at the market?"
-                },
-                {
-                        "target": "Bei ya Dundu sokoni ni kiasi gani?",
-                        "source": "What is the price of large pumpkin at the market?"
-                },
-                {
-                        "target": "Bei ya Maelezi sokoni ni kiasi gani?",
-                        "source": "What is the price of being afloat at the market?"
+                        "target": "Wakulima hulima Mchongoma wakati wa msimu wa mvua",
+                        "source": "Farmers cultivate a thorny shrub during the rainy season"
                 }
         ]
 }

@@ -4,7 +4,7 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useMemo, useEffect, useRef } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
-import { Shuffle, Eye, EyeOff, BookOpen, Compass } from "lucide-react";
+import { Shuffle, Eye, EyeOff, BookOpen, Compass, X, Sparkles } from "lucide-react";
 import kikuyuProverbsData from "@/data/kikuyu-proverbs.json";
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from "@/data/courses/proverbs";
 import { luoProverbs, type ProverbEntry } from "@/data/courses/luo/proverbs";
@@ -38,6 +38,18 @@ const KIKUYU_PROVERBS: KikuyuProverbItem[] = [
   })),
 ];
 
+const ALL_LUO_PROVERBS: ProverbEntry[] = [
+  ...luoProverbs,
+  ...LUO_CW_ITEMS.map((item, idx) => ({
+    id: `luo-cw-${idx + 1}`,
+    luo: item.indigenous,
+    english: item.literalTranslation,
+    meaning: item.meaning,
+    explanation: item.englishEquivalent || item.meaning,
+    category: (item.theme || "wisdom") as ProverbEntry["category"],
+  })),
+];
+
 function normalizeDiacritics(str: string): string {
   return str
     .toLowerCase()
@@ -47,12 +59,19 @@ function normalizeDiacritics(str: string): string {
 
 type LuoSubTab = "proverbs" | "riddles" | "twisters";
 
+interface SpotlightProverb {
+  badge: string;
+  nativeText: string;
+  literalTranslation: string;
+  meaning?: string | null;
+  englishEquivalent?: string | null;
+}
+
 export default function ProverbsView({
   lockedLanguageId,
   defaultLanguageId,
   initialLanguage = "kamba",
 }: {
-  /** When set (e.g. inside a specific language course), ONLY show wisdom of this language and hide cross-language tabs */
   lockedLanguageId?: string;
   defaultLanguageId?: string;
   initialLanguage?: string;
@@ -63,6 +82,7 @@ export default function ProverbsView({
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [revealedIds, setRevealedIds] = useState<Record<string, boolean>>({});
+  const [spotlight, setSpotlight] = useState<SpotlightProverb | null>(null);
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 24;
   const didMountRef = useRef(false);
@@ -80,6 +100,7 @@ export default function ProverbsView({
       setSelectedLang(lockedLanguageId);
       setSelectedCategory("All");
       setSearch("");
+      setSpotlight(null);
       setPage(1);
     }
   }, [lockedLanguageId]);
@@ -87,7 +108,6 @@ export default function ProverbsView({
   const activeLang = lockedLanguageId || selectedLang;
   const activeCourse = useMemo(() => getCourse(activeLang), [activeLang]);
 
-  // Build combined wisdom items for non-Kikuyu/non-Luo courses (proverbs + course cultural notes)
   const otherLangWisdom = useMemo((): CulturalWisdomItem[] => {
     if (activeLang === "kikuyu" || activeLang === "luo") return [];
     const proverbs = getCulturalWisdomForLanguage(activeLang);
@@ -128,16 +148,12 @@ export default function ProverbsView({
     return ["All", ...cats];
   }, []);
 
-  const luoCategories = [
-    "All",
-    "wisdom",
-    "warning",
-    "truth",
-    "patience",
-    "family",
-    "character",
-    "life",
-  ];
+  const luoCategories = useMemo(() => {
+    const cats = Array.from(
+      new Set(ALL_LUO_PROVERBS.map((p) => p.category).filter(Boolean))
+    );
+    return ["All", ...cats];
+  }, []);
 
   const otherCategories = useMemo(() => {
     const cats = Array.from(
@@ -165,7 +181,7 @@ export default function ProverbsView({
 
   const filteredLuoProverbs = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return luoProverbs.filter((p: ProverbEntry) => {
+    return ALL_LUO_PROVERBS.filter((p: ProverbEntry) => {
       if (selectedCategory !== "All" && p.category !== selectedCategory) return false;
       if (!q) return true;
       return (
@@ -213,24 +229,53 @@ export default function ProverbsView({
     });
   }, [otherLangWisdom, search, selectedCategory]);
 
+  // Highlight a random proverb in a dedicated spotlight card without polluting the search input
   const pickRandom = () => {
-    setSelectedCategory("All");
     if (activeLang === "kikuyu") {
       const item = KIKUYU_PROVERBS[Math.floor(Math.random() * KIKUYU_PROVERBS.length)];
-      if (item) setSearch(String(item.id));
+      if (item) {
+        setSpotlight({
+          badge: `Gĩkũyũ Proverb #${item.id}`,
+          nativeText: item.kikuyu,
+          literalTranslation: item.translation,
+          meaning: item.explanation,
+          englishEquivalent: item.englishEquivalent,
+        });
+      }
     } else if (activeLang === "luo") {
-      if (luoSubTab === "proverbs") {
-        const item = luoProverbs[Math.floor(Math.random() * luoProverbs.length)];
-        if (item) setSearch(item.luo.slice(0, 18));
-      } else if (luoSubTab === "riddles") {
+      if (luoSubTab === "riddles") {
         const item = luoRiddles[Math.floor(Math.random() * luoRiddles.length)];
-        if (item) setSearch(item.luo.slice(0, 18));
+        if (item) {
+          setSpotlight({
+            badge: "Dholuo Riddle",
+            nativeText: item.luo,
+            literalTranslation: item.english,
+            meaning: `Answer: ${item.answer}`,
+          });
+        }
+      } else {
+        const item = ALL_LUO_PROVERBS[Math.floor(Math.random() * ALL_LUO_PROVERBS.length)];
+        if (item) {
+          setSpotlight({
+            badge: "Dholuo Ngero",
+            nativeText: item.luo,
+            literalTranslation: item.english,
+            meaning: item.meaning || item.explanation,
+          });
+        }
       }
     } else if (otherLangWisdom.length > 0) {
       const item = otherLangWisdom[Math.floor(Math.random() * otherLangWisdom.length)];
-      if (item) setSearch(item.nativeText.slice(0, 14));
+      if (item) {
+        setSpotlight({
+          badge: `${activeCourse?.config.name || "Traditional"} Wisdom`,
+          nativeText: item.nativeText,
+          literalTranslation: item.literalTranslation,
+          meaning: item.meaning,
+          englishEquivalent: item.englishEquivalent,
+        });
+      }
     }
-    setPage(1);
   };
 
   const activeCategoryOptions =
@@ -250,7 +295,7 @@ export default function ProverbsView({
         config.id === "kikuyu"
           ? KIKUYU_PROVERBS.length
           : config.id === "luo"
-          ? luoProverbs.length + luoRiddles.length + luoTongueTwisters.length
+          ? ALL_LUO_PROVERBS.length + luoRiddles.length + luoTongueTwisters.length
           : getCulturalWisdomForLanguage(config.id).length;
     }
     return counts;
@@ -258,7 +303,6 @@ export default function ProverbsView({
 
   return (
     <div className="space-y-5">
-      {/* Only show cross-language selector on the main Hub when NOT locked to a specific language */}
       {!lockedLanguageId && (
         <ExpandablePillRow>
           {Object.values(COURSE_REGISTRY).map(({ config }) => {
@@ -271,6 +315,7 @@ export default function ProverbsView({
                   setSelectedLang(config.id);
                   setSelectedCategory("All");
                   setSearch("");
+                  setSpotlight(null);
                   setPage(1);
                 }}
                 className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
@@ -286,12 +331,11 @@ export default function ProverbsView({
         </ExpandablePillRow>
       )}
 
-      {/* Sub-tabs for Dholuo (Proverbs | Riddles | Tongue Twisters) */}
       {activeLang === "luo" && (
         <ExpandablePillRow>
           {(
             [
-              { id: "proverbs", label: `Proverbs (${luoProverbs.length})` },
+              { id: "proverbs", label: `Proverbs (${ALL_LUO_PROVERBS.length})` },
               { id: "riddles", label: `Riddles (${luoRiddles.length})` },
               { id: "twisters", label: `Twisters (${luoTongueTwisters.length})` },
             ] as const
@@ -330,12 +374,11 @@ export default function ProverbsView({
             {activeLang === "kikuyu"
               ? `${KIKUYU_PROVERBS.length} authentic Gĩkũyũ proverbs (Thimo cia Gĩkũyũ) with literal translations, cultural explanations, and English equivalents.`
               : activeLang === "luo"
-              ? `${luoProverbs.length} Dholuo proverbs, ${luoRiddles.length} interactive riddles, and ${luoTongueTwisters.length} tongue twisters.`
+              ? `${ALL_LUO_PROVERBS.length} Dholuo proverbs, ${luoRiddles.length} interactive riddles, and ${luoTongueTwisters.length} tongue twisters.`
               : `Authentic ${langDisplayName} (${langNativeName}) proverbs, moral sayings, and cultural traditions.`}
           </p>
         </div>
 
-        {/* Search + Random + Reset */}
         <div className="flex flex-col sm:flex-row gap-2">
           <SearchInput
             value={search}
@@ -360,11 +403,12 @@ export default function ProverbsView({
               <span>Random</span>
             </button>
 
-            {(search || selectedCategory !== "All") && (
+            {(search || selectedCategory !== "All" || spotlight) && (
               <button
                 onClick={() => {
                   setSearch("");
                   setSelectedCategory("All");
+                  setSpotlight(null);
                   setPage(1);
                 }}
                 className="px-3 py-2 rounded-xl bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 cursor-pointer shrink-0"
@@ -374,6 +418,44 @@ export default function ProverbsView({
             )}
           </div>
         </div>
+
+        {spotlight && (
+          <div className="rounded-2xl border-2 border-gold/45 bg-gradient-to-r from-gold/10 to-kenya-green/10 p-4 space-y-2">
+            <div className="flex items-center justify-between gap-2">
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-gold">
+                <Sparkles className="w-3.5 h-3.5" /> Random Spotlight · {spotlight.badge}
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={pickRandom}
+                  className="text-xs font-semibold text-gold hover:underline cursor-pointer"
+                >
+                  Roll Another
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSpotlight(null)}
+                  className="text-text-muted hover:text-text-primary cursor-pointer"
+                  aria-label="Close spotlight"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+            <p className="text-base font-bold text-text-primary">
+              &ldquo;{spotlight.nativeText}&rdquo;
+            </p>
+            <p className="text-xs font-medium text-emerald-400">
+              Literal: {renderInlineMarkdown(spotlight.literalTranslation)}
+            </p>
+            {spotlight.meaning && (
+              <p className="text-xs text-text-secondary leading-relaxed">
+                {renderInlineMarkdown(spotlight.meaning)}
+              </p>
+            )}
+          </div>
+        )}
 
         {(activeLang !== "luo" || luoSubTab === "proverbs") &&
           activeCategoryOptions.length > 1 && (
@@ -586,7 +668,7 @@ export default function ProverbsView({
         </div>
       )}
 
-      {/* 3. LUHYA, KAMBA, KISII, MAASAI, TESO & TURKANA PROVERBS & CULTURAL WISDOM */}
+      {/* 3. ALL OTHER LANGUAGES PROVERBS & CULTURAL WISDOM */}
       {activeLang !== "kikuyu" && activeLang !== "luo" && (
         <>
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--text-muted)] px-1">

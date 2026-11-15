@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/terms/",
       en: "https://kenyahub.me/terms/",
-    },
+        "x-default": "https://kenyahub.me/terms/",
+      },
   },
   openGraph: {
     title: "Terms of Service | KenyaHub",

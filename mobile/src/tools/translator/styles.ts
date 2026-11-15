@@ -19,6 +19,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     toastText: {
       fontSize: 12,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.kenyaGreenLight,
     },
@@ -88,6 +89,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     rollBtnText: {
       fontSize: 11,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.gold,
     },
@@ -121,6 +123,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     familyPillText: {
       fontSize: 10,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     modeWrap: {
@@ -149,6 +152,7 @@ export const createStyles = (theme: ThemeColors) =>
       fontSize: 10,
       color: theme.textMuted,
       textTransform: "uppercase",
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
     },
     langPickerValue: {
@@ -181,6 +185,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     langChipText: {
       fontSize: 12,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       color: theme.textPrimary,
     },
@@ -194,6 +199,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     catPillText: {
       fontSize: 12,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       color: theme.textPrimary,
     },
@@ -207,6 +213,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     compareChipText: {
       fontSize: 12,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       color: theme.textPrimary,
     },
@@ -224,6 +231,7 @@ export const createStyles = (theme: ThemeColors) =>
     searchInput: {
       flex: 1,
       fontSize: 14,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       color: theme.textPrimary,
       paddingVertical: 8,
@@ -236,6 +244,7 @@ export const createStyles = (theme: ThemeColors) =>
     recentsTitle: {
       fontSize: 11,
       color: theme.textMuted,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
     },
     recentsRow: {
@@ -263,6 +272,7 @@ export const createStyles = (theme: ThemeColors) =>
     resultsCount: {
       fontSize: 12,
       color: theme.textMuted,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
     },
     resultCard: {
@@ -296,6 +306,7 @@ export const createStyles = (theme: ThemeColors) =>
     catBadgeText: {
       fontSize: 10,
       color: theme.textSecondary,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
     },
     familyBadge: {
@@ -305,6 +316,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     familyBadgeText: {
       fontSize: 10,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     resultTranslation: {
@@ -316,6 +328,7 @@ export const createStyles = (theme: ThemeColors) =>
     resultEnglish: {
       fontSize: 14,
       color: theme.textPrimary,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       flexShrink: 1,
     },
@@ -329,6 +342,7 @@ export const createStyles = (theme: ThemeColors) =>
     pronounceText: {
       fontSize: 12,
       color: theme.sky,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       flex: 1,
       flexShrink: 1,
@@ -349,6 +363,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     loadMoreBtnText: {
       fontSize: 12,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: theme.gold,
     },
@@ -363,6 +378,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     emptyTitle: {
       fontSize: 14,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
       textAlign: "center",
@@ -384,6 +400,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     contributeBtnText: {
       fontSize: 12,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: "#1A1108",
     },
@@ -397,6 +414,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     quickPromptTitle: {
       fontSize: 12,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textSecondary,
     },
@@ -416,6 +434,7 @@ export const createStyles = (theme: ThemeColors) =>
     popularWordText: {
       fontSize: 12,
       color: theme.textPrimary,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
     },
     comparisonGrid: {
@@ -436,6 +455,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     compareLangName: {
       fontSize: 13,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: theme.textPrimary,
     },
@@ -474,6 +494,7 @@ export const createStyles = (theme: ThemeColors) =>
     addWordMiniText: {
       fontSize: 11,
       color: theme.gold,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
     },
     promptHelper: {
@@ -520,6 +541,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     inputLabel: {
       fontSize: 11,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textSecondary,
       marginBottom: 4,
@@ -534,6 +556,7 @@ export const createStyles = (theme: ThemeColors) =>
       paddingVertical: 8,
       fontSize: 13,
       color: theme.textPrimary,
+      fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
     },
     submitBtn: {
@@ -546,6 +569,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     submitBtnText: {
       fontSize: 14,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: "#1A1108",
     },

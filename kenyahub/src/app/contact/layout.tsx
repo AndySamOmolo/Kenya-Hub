@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/contact/",
       en: "https://kenyahub.me/contact/",
-    },
+        "x-default": "https://kenyahub.me/contact/",
+      },
   },
   openGraph: {
     title: "Contact Us — Feedback, Data Corrections & Inquiries | KenyaHub",

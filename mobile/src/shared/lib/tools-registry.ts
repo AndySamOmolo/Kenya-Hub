@@ -1,7 +1,7 @@
 import type { ToolCategory, Tool } from './types';
 
 export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; description: string; badgeClass: string }[] = [
-  { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Flagship interactive courses for 22 Kenyan languages, bidirectional translator, grammar references & oral wisdom', badgeClass: 'badge-reference' },
+  { id: 'language-learning', name: 'Languages, Proverbs & Culture', icon: '🗣️', description: 'Flagship interactive courses for 23 Kenyan languages, bidirectional translator, grammar references & oral wisdom', badgeClass: 'badge-reference' },
   { id: 'finance-tax', name: 'Finance, Tax & SACCOs', icon: '💰', description: '2026 PAYE reverse salary calculator, M-Pesa fees & split savings, SACCO loans, HELB & stamp duty', badgeClass: 'badge-finance' },
   { id: 'education-cbc', name: 'Education & CBC', icon: '🎓', description: 'CBC curriculum & grade-age mapper, KUCCPS degree cluster points & KCSE mean grade calculator', badgeClass: 'badge-education' },
   { id: 'transport-travel', name: 'Transport & Cars', icon: '🚗', description: 'KRA CRSP car import duty calculator, Kenyan number plate decoder & NTSA traffic fines lookup', badgeClass: 'badge-transport' },
@@ -17,7 +17,7 @@ export const TOOLS: Tool[] = [
     slug: 'learn',
     title: 'Learn Kenyan Languages, Proverbs & Oral Wisdom Hub',
     shortTitle: 'Learn Kenyan Languages',
-    description: 'Master 22 Kenyan languages through guided interactive lessons, flashcards, mini-games, grammar references, and historical oral wisdom (1842–1929).',
+    description: 'Master 23 Kenyan languages through guided interactive lessons, flashcards, mini-games, grammar references, and historical oral wisdom (1842–1929).',
     category: 'language-learning',
     keywords: ['learn Kenyan languages', 'Kikuyu proverbs Thimo cia Gikuyu', 'Dholuo proverbs and riddles', 'Swahili Kikuyu Luo Luhya Kamba Kisii Maasai Kalenjin lessons'],
     updateFrequency: 'periodic',
@@ -27,9 +27,9 @@ export const TOOLS: Tool[] = [
   },
   {
     slug: 'kenyan-translator',
-    title: 'Kenyan Languages Translator & Dictionary (22 Languages)',
-    shortTitle: '22-Language Translator',
-    description: 'Translate words and phrases across 22 Kenyan languages — Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, and Taveta.',
+    title: 'Kenyan Languages Translator & Dictionary (23 Languages)',
+    shortTitle: '23-Language Translator',
+    description: 'Translate words and phrases across 23 Kenyan languages — Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, Taveta, and Daasanach.',
     category: 'language-learning',
     keywords: ['Kenya language translator', 'Swahili Kikuyu Luo translator', 'Kenyan language dictionary', 'Kalenjin Kamba Maasai words'],
     updateFrequency: 'static',

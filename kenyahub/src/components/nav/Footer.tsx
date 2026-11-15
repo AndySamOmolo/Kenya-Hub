@@ -27,8 +27,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               {[
-                { href: "/tools/learn/", label: "All 22 Languages Hub" },
-                { href: "/tools/kenyan-translator/", label: "22-Language Translator" },
+                { href: "/tools/learn/", label: "All 23 Languages Hub" },
+                { href: "/tools/kenyan-translator/", label: "23-Language Translator" },
                 { href: "/tools/learn/swahili/", label: "Learn Kiswahili" },
                 { href: "/tools/learn/kikuyu/", label: "Learn Gĩkũyũ" },
                 { href: "/tools/learn/luo/", label: "Learn Dholuo" },

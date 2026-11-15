@@ -19,6 +19,8 @@ import {
   KenyaStripe,
   AndroidTopAppBar,
   androidRipple,
+  pressableStyle,
+  parseSavedTools,
 } from "../../src/theme";
 import {
   TOOLS,
@@ -26,7 +28,26 @@ import {
   getToolUsageScore,
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
+import matatuData from "../../src/shared/data/matatu-routes.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
+
+const MATATU_KEYWORDS = [
+  "matatu",
+  "sacco",
+  "bus",
+  "fare",
+  "stage",
+  "route",
+  "commute",
+  "terminus",
+  "transport",
+  "nairobi",
+  "mombasa",
+  "kisumu",
+  "nakuru",
+  "eldoret",
+  "thika",
+];
 
 function ToolItem({
   item,
@@ -134,6 +155,7 @@ function ToolItem({
 }
 
 export default function ToolsScreen() {
+  const router = useRouter();
   const { theme } = useTheme();
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
@@ -154,7 +176,7 @@ export default function ToolsScreen() {
     useCallback(() => {
       AsyncStorage.getItem("kh-saved-tools")
         .then((val) => {
-          setPinnedSlugs(val?.split(",").filter(Boolean) ?? []);
+          setPinnedSlugs(parseSavedTools(val));
         })
         .catch(() => setPinnedSlugs([]));
 
@@ -183,6 +205,28 @@ export default function ToolsScreen() {
         .filter(Boolean) as (typeof TOOLS)[0][],
     [pinnedSlugs]
   );
+
+  const matatuSummary = useMemo(() => {
+    const routesByTown = (matatuData as any).routes || {};
+    const towns = ((matatuData as any).towns || []).filter((t: any) => t.isActive);
+    let routeCount = 0;
+    let stageCount = 0;
+    for (const list of Object.values(routesByTown)) {
+      const arr = list as any[];
+      routeCount += arr.length;
+      for (const r of arr) {
+        stageCount += r.stages?.length || 0;
+      }
+    }
+    return { routeCount, stageCount, townCount: towns.length };
+  }, []);
+
+  const showMatatuHubCard = useMemo(() => {
+    if (category !== "all" && category !== "transport") return false;
+    const q = query.trim().toLowerCase();
+    if (!q) return true;
+    return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
+  }, [category, query]);
 
   const filtered = useMemo(() => {
     const list = TOOLS.filter((tool) => {
@@ -273,10 +317,10 @@ export default function ToolsScreen() {
             style={styles.searchIcon}
           />
           <TextInput
-            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+            
             value={query}
             onChangeText={setQuery}
-            placeholder="Search tools (PAYE, M-Pesa, KRA)..."
+            placeholder="Search tools & Matatu routes (PAYE, M-Pesa, KRA)..."
             numberOfLines={1}
             multiline={false}
             placeholderTextColor={theme.textMuted}
@@ -437,7 +481,7 @@ export default function ToolsScreen() {
         ListHeaderComponent={
           <>
             {(query.trim() !== "" || category !== "all") &&
-              filtered.length > 0 && (
+              (filtered.length > 0 || showMatatuHubCard) && (
                 <View style={styles.resultsBar}>
                   <Text style={[styles.resultsText, { color: theme.textMuted }]}>
                     Showing {filtered.length} of {TOOLS.length} tools
@@ -456,6 +500,103 @@ export default function ToolsScreen() {
                   </Pressable>
                 </View>
               )}
+
+            {showMatatuHubCard && (
+              <View
+                style={[
+                  styles.cardWrap,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: `${theme.gold}66`,
+                    marginBottom: 4,
+                  },
+                ]}
+              >
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    const q = query.trim();
+                    router.push({
+                      pathname: "/matatu",
+                      params:
+                        q && !MATATU_KEYWORDS.includes(q.toLowerCase())
+                          ? { q }
+                          : undefined,
+                    });
+                  }}
+                  style={styles.card}
+                >
+                  <View style={styles.cardHeaderRow}>
+                    <View
+                      style={[
+                        styles.cardIconWrap,
+                        {
+                          backgroundColor: "rgba(14, 165, 233, 0.16)",
+                          borderColor: "rgba(14, 165, 233, 0.38)",
+                        },
+                      ]}
+                    >
+                      <Ionicons name="bus" size={22} color="#0EA5E9" />
+                    </View>
+                    <View style={styles.body}>
+                      <View style={styles.categoryPillWrap}>
+                        <View
+                          style={[
+                            styles.categoryDot,
+                            { backgroundColor: "#0EA5E9" },
+                          ]}
+                        />
+                        <Text
+                          style={[
+                            styles.categoryPillText,
+                            { color: "#0EA5E9" },
+                          ]}
+                        >
+                          TRANSPORT & TRAVEL HUB
+                        </Text>
+                      </View>
+                      <Text style={[styles.title, { color: theme.textPrimary }]}>
+                        Matatu Routes & SACCO Fares
+                      </Text>
+                    </View>
+                    <View
+                      style={[
+                        styles.trailingCircle,
+                        { backgroundColor: theme.surfaceContainerHigh },
+                      ]}
+                    >
+                      <Ionicons
+                        name="arrow-forward"
+                        size={16}
+                        color={theme.textSecondary}
+                      />
+                    </View>
+                  </View>
+
+                  <Text
+                    style={[styles.description, { color: theme.textSecondary }]}
+                  >
+                    Explore {matatuSummary.routeCount} verified matatu routes, {matatuSummary.stageCount} stage stopovers, interactive maps, and off-peak/peak fares across {matatuSummary.townCount} Kenyan cities.
+                  </Text>
+
+                  <View
+                    style={[
+                      styles.sourceBadge,
+                      { borderTopColor: theme.outlineVariant },
+                    ]}
+                  >
+                    <Ionicons
+                      name="shield-checkmark"
+                      size={13}
+                      color={theme.kenyaGreenLight}
+                    />
+                    <Text style={[styles.source, { color: theme.textMuted }]}>
+                      NTSA Registered SACCOs & Commuter Stage Directory
+                    </Text>
+                  </View>
+                </Pressable>
+              </View>
+            )}
 
             {showPinnedSection && (
               <View style={styles.pinnedSection}>
@@ -488,35 +629,37 @@ export default function ToolsScreen() {
           <ToolItem item={item} isPinned={pinnedSlugs.includes(item.slug)} />
         )}
         ListEmptyComponent={
-          <View style={styles.emptyWrap}>
-            <Ionicons name="search-outline" size={44} color={theme.textMuted} />
-            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
-              No tools found matching &ldquo;{query}&rdquo;
-            </Text>
-            <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
-              Try clearing your search or selecting another category.
-            </Text>
-            <Pressable
-              onPress={() => {
-                setQuery("");
-                setCategory("all");
-              }}
-              style={[
-                styles.clearAllBtn,
-                { backgroundColor: theme.primaryContainer },
-              ]}
-            >
-              <Text
-                style={{
-                  color: theme.onPrimaryContainer,
-                  fontFamily: "Outfit_700Bold",
-                  fontSize: 12,
-                }}
-              >
-                Clear search & filters
+          !showMatatuHubCard ? (
+            <View style={styles.emptyWrap}>
+              <Ionicons name="search-outline" size={44} color={theme.textMuted} />
+              <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
+                No tools found matching &ldquo;{query}&rdquo;
               </Text>
-            </Pressable>
-          </View>
+              <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
+                Try clearing your search or selecting another category.
+              </Text>
+              <Pressable
+                onPress={() => {
+                  setQuery("");
+                  setCategory("all");
+                }}
+                style={[
+                  styles.clearAllBtn,
+                  { backgroundColor: theme.primaryContainer },
+                ]}
+              >
+                <Text
+                  style={{
+                    color: theme.onPrimaryContainer,
+                    fontFamily: "Outfit_700Bold",
+                    fontSize: 12,
+                  }}
+                >
+                  Clear search & filters
+                </Text>
+              </Pressable>
+            </View>
+          ) : null
         }
       />
     </SafeAreaView>

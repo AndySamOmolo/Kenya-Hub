@@ -7,6 +7,7 @@
     "start": "expo start",
     "android": "expo run:android",
     "sync-data": "node scripts/sync-data.mjs",
+    "typecheck": "tsc --noEmit",
     "build:apk": "npm run sync-data && eas build --platform android --profile preview",
     "build:production": "npm run sync-data && eas build --platform android --profile production",
     "ios": "expo run:ios"

@@ -26,7 +26,8 @@ export const styles = StyleSheet.create({
   },
   levelTitleText: {
     fontSize: 14,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   levelSubText: {
     fontSize: 11,
@@ -48,7 +49,8 @@ export const styles = StyleSheet.create({
   },
   dailyGoalLabel: {
     fontSize: 11,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
   },
   dailyGoalTrack: {
     height: 7,
@@ -125,11 +127,13 @@ export const styles = StyleSheet.create({
   },
   courseInfoTitle: {
     fontSize: 16,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   courseInfoMeta: {
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
     marginTop: 2,
   },
   courseInfoDesc: {
@@ -197,7 +201,8 @@ export const styles = StyleSheet.create({
   },
   unitTitleText: {
     fontSize: 14.5,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   unitDescText: {
     fontSize: 12,
@@ -222,7 +227,8 @@ export const styles = StyleSheet.create({
   },
   skillNodeTitle: {
     fontSize: 13,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     flex: 1,
   },
   skillNodeDesc: {
@@ -292,7 +298,8 @@ export const styles = StyleSheet.create({
   },
   lessonProgressLabel: {
     fontSize: 11,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
   },
   lessonHeartsBadge: {
     flexDirection: 'row',
@@ -303,7 +310,8 @@ export const styles = StyleSheet.create({
   },
   lessonHeartsText: {
     fontSize: 13,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   stageBody: {
     gap: 14,
@@ -327,7 +335,8 @@ export const styles = StyleSheet.create({
   },
   stagePillText: {
     fontSize: 11,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     flexShrink: 1,
   },
   tipsToggleBtn: {
@@ -346,7 +355,8 @@ export const styles = StyleSheet.create({
   },
   tipsDrawerTitle: {
     fontSize: 12,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   tipsDrawerBody: {
     fontSize: 12,
@@ -366,17 +376,20 @@ export const styles = StyleSheet.create({
   },
   posTagText: {
     fontSize: 11,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     textTransform: 'uppercase',
   },
   teachTargetWord: {
     fontSize: 26,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     textAlign: 'center',
   },
   teachPronunciation: {
     fontSize: 13,
-    fontWeight: '600',
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: '600',
     textAlign: 'center',
   },
   teachDivider: {
@@ -386,7 +399,8 @@ export const styles = StyleSheet.create({
   },
   teachSourceMeaning: {
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
     textAlign: 'center',
   },
   teachExampleBox: {
@@ -398,7 +412,8 @@ export const styles = StyleSheet.create({
   },
   teachExampleLabel: {
     fontSize: 10,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   teachExampleText: {
     fontSize: 12,
@@ -421,7 +436,8 @@ export const styles = StyleSheet.create({
   },
   m3OutlinedBtnText: {
     fontSize: 13,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
   },
   m3TonalBtn: {
     flexDirection: 'row',
@@ -433,7 +449,8 @@ export const styles = StyleSheet.create({
   },
   m3TonalBtnText: {
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
   },
   m3FilledBtn: {
     flexDirection: 'row',
@@ -445,7 +462,8 @@ export const styles = StyleSheet.create({
   },
   m3FilledBtnText: {
     fontSize: 13,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     color: '#000',
   },
   practiceMetaRow: {
@@ -460,7 +478,8 @@ export const styles = StyleSheet.create({
   },
   quizPrompt: {
     fontSize: 17,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     lineHeight: 24,
   },
   hintBanner: {
@@ -494,7 +513,8 @@ export const styles = StyleSheet.create({
   },
   optionButtonText: {
     fontSize: 14,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
     flex: 1,
   },
   wordBankAnswerZone: {
@@ -526,7 +546,8 @@ export const styles = StyleSheet.create({
   },
   matchColumnHeader: {
     fontSize: 11,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     textTransform: 'uppercase',
     textAlign: 'center',
   },
@@ -540,7 +561,8 @@ export const styles = StyleSheet.create({
   },
   matchPairText: {
     fontSize: 13,
-    fontWeight: '700',
+    fontFamily: "Outfit_700Bold",
+      fontWeight: '700',
     textAlign: 'center',
   },
   translationInput: {
@@ -549,7 +571,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 12,
     fontSize: 15,
-    fontWeight: '600',
+    fontFamily: "Inter_600SemiBold",
+      fontWeight: '600',
   },
   feedbackBanner: {
     flexDirection: 'row',
@@ -579,7 +602,8 @@ export const styles = StyleSheet.create({
   },
   completeTitle: {
     fontSize: 22,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   completeSubtitle: {
     fontSize: 13,
@@ -599,11 +623,13 @@ export const styles = StyleSheet.create({
   },
   completeMetricValue: {
     fontSize: 18,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   completeMetricLabel: {
     fontSize: 10,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   culturalNoteBox: {
     borderRadius: 16,
@@ -648,7 +674,8 @@ export const styles = StyleSheet.create({
   },
   flashcardMainWord: {
     fontSize: 24,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     textAlign: 'center',
   },
   // Games Tab
@@ -675,7 +702,8 @@ export const styles = StyleSheet.create({
   },
   gameCardTitle: {
     fontSize: 15,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   gameCardDesc: {
     fontSize: 12,
@@ -699,7 +727,8 @@ export const styles = StyleSheet.create({
   },
   gamePromptWord: {
     fontSize: 22,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
     textAlign: 'center',
   },
   scrambleSlotsBox: {
@@ -767,7 +796,8 @@ export const styles = StyleSheet.create({
   },
   grammarSectionTitle: {
     fontSize: 14,
-    fontWeight: '800',
+    fontFamily: "Outfit_800ExtraBold",
+      fontWeight: '800',
   },
   grammarSectionSummary: {
     fontSize: 12,

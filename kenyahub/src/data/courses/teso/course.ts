@@ -2982,7 +2982,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Teso (Ateso) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, P",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
         "words": [
                 {
                         "target": "ekinok",
@@ -3047,52 +3047,20 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Eebo, ejai isio kadidengan luipu",
-                        "source": "Yes, we have plenty of brave"
+                        "target": "ekinok",
+                        "source": "Peace"
                 },
                 {
-                        "target": " Ejai ijo kwaiona lolo?",
-                        "source": "Do you have bring today?"
+                        "target": "Eyalama (Eyalama noi)",
+                        "source": "Thank you"
                 },
                 {
-                        "target": "Eebo, ejai isio kwaiona luipu",
-                        "source": "Yes, we have plenty of bring"
+                        "target": "ainapakin",
+                        "source": "Peace / well-being"
                 },
                 {
-                        "target": " Ejai ijo echokima lolo?",
-                        "source": "Do you have cheap today?"
-                },
-                {
-                        "target": "Eebo, ejai isio echokima luipu",
-                        "source": "Yes, we have plenty of cheap"
-                },
-                {
-                        "target": " Ejai ijo mkuli lolo?",
-                        "source": "Do you have cloth today?"
-                },
-                {
-                        "target": "Eebo, ejai isio mkuli luipu",
-                        "source": "Yes, we have plenty of cloth"
-                },
-                {
-                        "target": " Ejai ijo ibileri lolo?",
-                        "source": "Do you have false today?"
-                },
-                {
-                        "target": "Eebo, ejai isio ibileri luipu",
-                        "source": "Yes, we have plenty of false"
-                },
-                {
-                        "target": " Ejai ijo loka polon lolo?",
-                        "source": "Do you have great today?"
-                },
-                {
-                        "target": "Eebo, ejai isio loka polon luipu",
-                        "source": "Yes, we have plenty of great"
-                },
-                {
-                        "target": " Ejai ijo ekileng lolo?",
-                        "source": "Do you have knife today?"
+                        "target": "Eyalama noi",
+                        "source": "Thank you very much"
                 }
         ]
 },
@@ -3101,7 +3069,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Teso (Ateso) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, P",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
         "words": [
                 {
                         "target": "Idaritos isio loka polon ore wok",
@@ -3119,99 +3087,37 @@ export const TESO_UNITS: CourseUnit[] = [
                         "pronunciation": "idaritos isio emumwa ore wok"
                 },
                 {
-                        "target": "Ingai bo etiai loka Amic oitela?",
-                        "source": "What is the price of loan at the market?",
-                        "pronunciation": "ingai bo etiai loka amic oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Emuron oitela?",
-                        "source": "What is the price of doctor at the market?",
-                        "pronunciation": "ingai bo etiai loka emuron oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Ekitoi loka angaleu oitela?",
-                        "source": "What is the price of medicine at the market?",
-                        "pronunciation": "ingai bo etiai loka ekitoi loka angaleu oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Adek oitela?",
-                        "source": "What is the price of sickness at the market?",
-                        "pronunciation": "ingai bo etiai loka adek oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Apolis oitela?",
-                        "source": "What is the price of police at the market?",
-                        "pronunciation": "ingai bo etiai loka apolis oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Acan oitela?",
-                        "source": "What is the price of danger at the market?",
-                        "pronunciation": "ingai bo etiai loka acan oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka Ainapakin oitela?",
-                        "source": "What is the price of peace at the market?",
-                        "pronunciation": "ingai bo etiai loka ainapakin oitela"
-                },
-                {
-                        "target": "Ingai bo etiai loka ejir oitela?",
-                        "source": "What is the price of fight at the market?",
-                        "pronunciation": "ingai bo etiai loka ejir oitela"
-                },
-                {
                         "target": "Kodara kadidengan kanuka angaleu naka itunga",
                         "source": "Protect brave for community health",
                         "pronunciation": "kodara kadidengan kanuka angaleu naka itunga"
+                },
+                {
+                        "target": "mamai",
+                        "source": "Uncle (maternal)",
+                        "pronunciation": "ma-mai"
+                },
+                {
+                        "target": "apese (pl. apesur)",
+                        "source": "Girl (pl. girls)",
+                        "pronunciation": "apese"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Eebo, ejai isio ekileng luipu",
-                        "source": "Yes, we have plenty of knife"
+                        "target": "Idaritos isio loka polon ore wok",
+                        "source": "We keep great at our homestead"
                 },
                 {
-                        "target": " Ejai ijo emumwa lolo?",
-                        "source": "Do you have mtama today?"
+                        "target": "Idaritos isio ekileng ore wok",
+                        "source": "We keep knife at our homestead"
                 },
                 {
-                        "target": "Eebo, ejai isio emumwa luipu",
-                        "source": "Yes, we have plenty of mtama"
+                        "target": "Idaritos isio emumwa ore wok",
+                        "source": "We keep mtama at our homestead"
                 },
                 {
-                        "target": "Ingai bo etiai loka Emotoka oitela?",
-                        "source": "What is the price of motor vehicle at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka etaun oitela?",
-                        "source": "What is the price of town at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Alosit oitela?",
-                        "source": "What is the price of journey at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Eitela oitela?",
-                        "source": "What is the price of market at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Apesan oitela?",
-                        "source": "What is the price of money at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Etiai oitela?",
-                        "source": "What is the price of price at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Eduka oitela?",
-                        "source": "What is the price of shop at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Amic oitela?",
-                        "source": "What is the price of loan at the market?"
-                },
-                {
-                        "target": "Ingai bo etiai loka Emuron oitela?",
-                        "source": "What is the price of doctor at the market?"
+                        "target": "Kodara kadidengan kanuka angaleu naka itunga",
+                        "source": "Protect brave for community health"
                 }
         ]
 }

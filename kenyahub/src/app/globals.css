@@ -58,6 +58,7 @@
   --text-primary: #F2EDE6;
   --text-secondary: #B5ACA1;
   --text-muted: #7E7367;
+  --gold-text: #E8BE5A;
   --glass-bg: rgba(12,10,8,0.96);
   --glass-border: rgba(255,255,255,0.06);
   color-scheme: dark;
@@ -79,6 +80,7 @@
   --text-primary: #1A1108;
   --text-secondary: #4E4333;
   --text-muted: #786C5C;
+  --gold-text: #9A6B0A;
   --glass-bg: rgba(250,247,242,0.97);
   --glass-border: rgba(0,0,0,0.06);
   color-scheme: light;
@@ -951,22 +953,16 @@
    have generous breathing room and readable proportions.
    ══════════════════════════════════════════════════ */
 @media (max-width: 639px) {
-  /* Comfortable minimum font floor for micro-labels so text is never tiny or cramped */
-  main [class*="text-[0.55rem]"],
-  main [class*="text-[0.6rem]"],
-  main [class*="text-[0.625rem]"],
-  main [class*="text-[0.65rem]"],
-  main [class*="text-[0.6875rem]"],
-  main [class*="text-[0.7rem]"],
-  main [class*="text-[11px]"] {
+  /* Comfortable minimum font floor for micro-labels while respecting .micro-badge */
+  main [class*="text-[0.55rem]"]:not(.micro-badge),
+  main [class*="text-[0.6rem]"]:not(.micro-badge),
+  main [class*="text-[0.625rem]"]:not(.micro-badge),
+  main [class*="text-[0.65rem]"]:not(.micro-badge),
+  main [class*="text-[0.6875rem]"]:not(.micro-badge),
+  main [class*="text-[0.7rem]"]:not(.micro-badge),
+  main [class*="text-[11px]"]:not(.micro-badge) {
     font-size: 0.75rem !important;
     line-height: 1.5 !important;
-  }
-
-  /* Ensure body paragraphs inside cards and articles read comfortably on mobile */
-  main p.text-xs {
-    font-size: 0.875rem !important;
-    line-height: 1.62 !important;
   }
 
   /* Prevent iOS Safari auto-zoom on long-form form inputs only */

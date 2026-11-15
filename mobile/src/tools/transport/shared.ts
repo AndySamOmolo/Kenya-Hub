@@ -18,6 +18,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     inputLabel: {
       fontSize: 12,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textSecondary,
       marginBottom: 6,
@@ -28,6 +29,7 @@ export const createStyles = (theme: ThemeColors) =>
       borderColor: theme.border,
       borderRadius: 12,
       fontSize: 15,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
       paddingHorizontal: 14,
@@ -94,6 +96,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     rowValue: {
       fontSize: 13,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
       flexShrink: 0,
@@ -125,6 +128,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     ussdHeading: {
       fontSize: 12,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: theme.gold,
       marginBottom: 6,
@@ -138,6 +142,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     ussdCode: {
       fontSize: 12,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: theme.gold,
     },
@@ -177,6 +182,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     holidayDayName: {
       fontSize: 10,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.gold,
       textTransform: "uppercase",
@@ -234,6 +240,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     fineTitle: {
       fontSize: 13,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
       flex: 1,
@@ -248,6 +255,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     fineBadgeText: {
       fontSize: 11,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
       color: theme.kenyaRedLight,
     },
@@ -266,6 +274,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     arrestText: {
       fontSize: 11,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
     },
     postalCard: {
@@ -291,6 +300,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     postalOffice: {
       fontSize: 14,
+      fontFamily: "Outfit_700Bold",
       fontWeight: "700",
       color: theme.textPrimary,
     },
@@ -306,6 +316,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     categoryChipText: {
       fontSize: 12,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     quickRouteBtn: {
@@ -316,6 +327,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     quickRouteText: {
       fontSize: 11,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     routeBadge: {
@@ -326,6 +338,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     routeBadgeText: {
       fontSize: 10,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     verifiedTag: {
@@ -335,6 +348,7 @@ export const createStyles = (theme: ThemeColors) =>
     },
     verifiedTagText: {
       fontSize: 10,
+      fontFamily: "Outfit_800ExtraBold",
       fontWeight: "800",
     },
     openCorridorBtn: {

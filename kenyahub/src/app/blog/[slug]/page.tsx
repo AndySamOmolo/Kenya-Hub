@@ -88,7 +88,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         languages: {
           "en-KE": canonicalUrl,
           en: canonicalUrl,
-        },
+        "x-default": canonicalUrl,
+      },
       },
       openGraph: {
         title: `${staticPost.title} | KenyaHub`,
@@ -145,7 +146,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             languages: {
               "en-KE": canonicalUrl,
               en: canonicalUrl,
-            },
+        "x-default": canonicalUrl,
+      },
           },
           openGraph: {
             title: `${post.title} | KenyaHub`,

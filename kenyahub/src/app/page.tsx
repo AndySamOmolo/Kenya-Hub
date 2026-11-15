@@ -131,7 +131,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-6 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
-                Master <strong>22 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
+                Master <strong>23 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
               {/* Comfortable, prominent hero action buttons */}
@@ -149,7 +149,7 @@ export default function HomePage() {
                   className="btn-outline hero-cta-btn text-xs sm:text-sm px-3.5 py-2.5 sm:px-4.5 sm:py-3 rounded-lg sm:rounded-xl inline-flex items-center justify-center gap-1.5 w-auto font-medium"
                 >
                   <Globe className="w-4 h-4 text-kenya-green-light shrink-0" />
-                  <span>22-Language Translator</span>
+                  <span>23-Language Translator</span>
                 </Link>
                 <Link
                   href="/tools/"
@@ -178,7 +178,7 @@ export default function HomePage() {
                 Interactive Kenyan Languages, Translator &amp; Oral Wisdom Hub
               </h2>
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mt-2">
-                Explore {PUBLISHED_COURSES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 4 vocabulary mini-games, and a 22-language bidirectional dictionary.
+                Explore {PUBLISHED_COURSES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 4 vocabulary mini-games, and a 23-language bidirectional dictionary.
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5 shrink-0">
@@ -192,7 +192,7 @@ export default function HomePage() {
                 href="/tools/kenyan-translator/"
                 className="btn-outline text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3"
               >
-                Open 22-Language Dictionary →
+                Open 23-Language Dictionary →
               </Link>
             </div>
           </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-3.5">
-              {PUBLISHED_COURSES.slice(0, 12).map(({ config, units }) => {
+              {PUBLISHED_COURSES.map(({ config, units }) => {
                 const skillCount = units.reduce((s, u) => s + u.skills.length, 0);
                 const identity = getLanguageIdentity(config.id);
                 return (

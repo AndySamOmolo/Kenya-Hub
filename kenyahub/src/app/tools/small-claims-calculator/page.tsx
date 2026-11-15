@@ -14,6 +14,10 @@ export default function SmallClaimsCalculatorPage() {
     const amount = Math.max(0, Number(claimAmount.replace(/,/g, "")) || 0);
     const isEligible = amount > 0 && amount <= sccData.maxClaimLimit;
 
+    if (amount <= 0) {
+      return { amount: 0, isEligible: false, fee: 0 };
+    }
+
     let fee = 200;
     for (const tier of sccData.filingFeeSchedule) {
       if (amount >= tier.min && amount <= tier.max) {
@@ -45,11 +49,27 @@ export default function SmallClaimsCalculatorPage() {
             </label>
             <input
               type="text"
-              value={claimAmount}
+              value={claimAmount ? Number(claimAmount).toLocaleString("en-KE") : ""}
               onChange={(e) => setClaimAmount(e.target.value.replace(/[^0-9]/g, ""))}
               placeholder="e.g. 75,000"
               className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
             />
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {[25000, 75000, 250000, 600000, 1000000, 1500000].map((preset) => (
+                <button
+                  key={preset}
+                  type="button"
+                  onClick={() => setClaimAmount(String(preset))}
+                  className={`text-xs px-2.5 py-1 rounded-full border transition-colors cursor-pointer ${
+                    Number(claimAmount) === preset
+                      ? "bg-gold text-kenya-black border-gold font-bold"
+                      : "bg-bg-elevated border-border text-text-secondary hover:text-gold"
+                  }`}
+                >
+                  KES {preset >= 1000000 ? `${preset / 1000000}M` : `${preset / 1000}K`}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
@@ -65,11 +85,25 @@ export default function SmallClaimsCalculatorPage() {
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Jurisdiction Status</span>
-              <p className={`text-base font-bold mt-1 ${calc.isEligible ? "text-kenya-green-light" : "text-red-400"}`}>
-                {calc.isEligible ? "✓ Eligible for SCC" : "Over KES 1M Limit"}
+              <p className={`text-base font-bold mt-1 ${
+                calc.amount === 0
+                  ? "text-text-muted"
+                  : calc.isEligible
+                  ? "text-kenya-green-light"
+                  : "text-red-400"
+              }`}>
+                {calc.amount === 0
+                  ? "Enter Claim Amount"
+                  : calc.isEligible
+                  ? "✓ Eligible for SCC"
+                  : "✕ Over KES 1M Limit"}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">
-                {calc.isEligible ? "Fast-track adjudication" : "Transfer to Resident Magistrate"}
+                {calc.amount === 0
+                  ? "Up to KES 1,000,000 max"
+                  : calc.isEligible
+                  ? "Fast-track adjudication"
+                  : "File in Chief Magistrate's Court"}
               </p>
             </div>
           </div>

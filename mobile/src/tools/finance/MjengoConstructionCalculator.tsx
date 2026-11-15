@@ -3,7 +3,7 @@ import React, { useState, useMemo } from "react";
 import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
-import { KESInput, StatCard, Row, createStyles } from "./shared";
+import { KESInput, StatCard, Row, BreakdownBar, ShareCopyBar, createStyles } from "./shared";
 import mjengoData from "../../shared/data/mjengo-construction-rates.json";
 
 /** 10. Mjengo Construction & Building Material Calculator */
@@ -89,6 +89,21 @@ export function MjengoConstructionCalculator() {
         value={`KES ${Math.round(calc.totalCost).toLocaleString()}`}
         highlight
         subtext={`${sqm} m² @ KES ${Math.round(calc.ratePerSqm).toLocaleString()}/m²`}
+      />
+
+      <BreakdownBar
+        title="Estimated Mjengo Cost Split (Shell, Finishes & Labour)"
+        segments={[
+          { label: "Substructure & Shell (52%)", value: Math.round(calc.totalCost * 0.52), color: theme.gold },
+          { label: "Finishes & MEP (33%)", value: Math.round(calc.totalCost * 0.33), color: theme.kenyaGreenLight },
+          { label: "Prelims & Labour (15%)", value: Math.round(calc.totalCost * 0.15), color: theme.sky },
+        ]}
+      />
+
+      <ShareCopyBar
+        title={`Mjengo Construction Estimate (${sqm}m²)`}
+        summaryText={`Floor Area: ${sqm} m² (${region.name} · ${finish.name})\nEstimated Total Cost: KES ${Math.round(calc.totalCost).toLocaleString()} (@ KES ${Math.round(calc.ratePerSqm).toLocaleString()}/m²)\n9x9 Quarry Stones: ${calc.stones.toLocaleString()} pcs\n50kg Cement Bags: ${calc.cement.toLocaleString()} bags\nRiver Sand: ${calc.sand} tonnes · Ballast: ${calc.ballast} tonnes\nSteel Bars: ${calc.steel} lengths · Mabati Sheets: ${calc.mabati} sheets`}
+        shareLabel="Share Mjengo BoQ Estimate"
       />
 
       <Text style={styles.subHeading}>Key Materials Estimate (Bill of Quantities)</Text>

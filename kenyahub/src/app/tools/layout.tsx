@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/tools/",
       en: "https://kenyahub.me/tools/",
-    },
+        "x-default": "https://kenyahub.me/tools/",
+      },
   },
   openGraph: {
     title: `All Tools — ${TOOLS.length} Free Online Calculators for Kenya | KenyaHub`,

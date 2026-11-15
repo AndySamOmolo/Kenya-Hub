@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { Platform, StyleSheet, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "../../src/theme";
 
 function M3TabIcon({
@@ -29,6 +30,9 @@ function M3TabIcon({
 
 export default function TabLayout() {
   const { theme } = useTheme();
+  const insets = useSafeAreaInsets();
+  const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 10 : 24);
+  const tabBarHeight = (Platform.OS === "android" ? 64 : 62) + bottomInset;
 
   return (
     <Tabs
@@ -38,12 +42,14 @@ export default function TabLayout() {
         tabBarActiveTintColor: theme.gold,
         tabBarInactiveTintColor: theme.textSecondary,
         tabBarHideOnKeyboard: true,
-        tabBarAllowFontScaling: false,
+        tabBarAllowFontScaling: true,
         tabBarStyle: [
           styles.tabBar,
           {
             backgroundColor: theme.surfaceContainer,
             borderTopColor: theme.outlineVariant,
+            minHeight: tabBarHeight,
+            paddingBottom: bottomInset,
           },
         ],
         tabBarLabelStyle: styles.tabLabel,
@@ -54,6 +60,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
+          tabBarAccessibilityLabel: "Home tab",
           tabBarIcon: ({ color, focused }) => (
             <M3TabIcon
               name={focused ? "home" : "home-outline"}
@@ -68,6 +75,7 @@ export default function TabLayout() {
         name="learn"
         options={{
           title: "Learn",
+          tabBarAccessibilityLabel: "Learn Kenyan Languages tab",
           tabBarIcon: ({ color, focused }) => (
             <M3TabIcon
               name={focused ? "school" : "school-outline"}
@@ -82,6 +90,7 @@ export default function TabLayout() {
         name="tools"
         options={{
           title: "Tools",
+          tabBarAccessibilityLabel: "Calculators and Tools tab",
           tabBarIcon: ({ color, focused }) => (
             <M3TabIcon
               name={focused ? "grid" : "grid-outline"}
@@ -102,6 +111,7 @@ export default function TabLayout() {
         name="county"
         options={{
           title: "Counties",
+          tabBarAccessibilityLabel: "47 Kenyan Counties tab",
           tabBarIcon: ({ color, focused }) => (
             <M3TabIcon
               name={focused ? "map" : "map-outline"}
@@ -116,6 +126,7 @@ export default function TabLayout() {
         name="saved"
         options={{
           title: "Saved",
+          tabBarAccessibilityLabel: "Pinned and Saved Tools tab",
           tabBarIcon: ({ color, focused }) => (
             <M3TabIcon
               name={focused ? "bookmark" : "bookmark-outline"}
@@ -133,8 +144,6 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   tabBar: {
     borderTopWidth: StyleSheet.hairlineWidth,
-    minHeight: Platform.OS === "android" ? 74 : 88,
-    paddingBottom: Platform.OS === "android" ? 10 : 26,
     paddingTop: 8,
     elevation: 16,
     shadowColor: "#000",

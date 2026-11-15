@@ -2969,52 +2969,20 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ehe, tuva na U-sāwi vedi",
-                        "source": "Yes, we have good magic"
+                        "target": "Jahako",
+                        "source": "Hello"
                 },
                 {
-                        "target": "Uva na Nkōma ivi?",
-                        "source": "Do you have spirit today?"
+                        "target": "Ni wega / Chavuche",
+                        "source": "Thank you"
                 },
                 {
-                        "target": "Ehe, tuva na Nkōma vedi",
-                        "source": "Yes, we have good spirit"
+                        "target": "Jedi yoko jahako",
+                        "source": "Hello (Reply: Good, how are you?)"
                 },
                 {
-                        "target": "Uva na ndaa ivi?",
-                        "source": "Do you have riddle today?"
-                },
-                {
-                        "target": "Ehe, tuva na ndaa vedi",
-                        "source": "Yes, we have good riddle"
-                },
-                {
-                        "target": "Uva na Nkoma ivi?",
-                        "source": "Do you have devil today?"
-                },
-                {
-                        "target": "Ehe, tuva na Nkoma vedi",
-                        "source": "Yes, we have good devil"
-                },
-                {
-                        "target": "Uva na njama yaekomi ivi?",
-                        "source": "Do you have council of elders today?"
-                },
-                {
-                        "target": "Ehe, tuva na njama yaekomi vedi",
-                        "source": "Yes, we have good council of elders"
-                },
-                {
-                        "target": "Uva na M-ōtω • I-deγe ivi?",
-                        "source": "Do you have fire & bird today?"
-                },
-                {
-                        "target": "Ehe, tuva na M-ōtω • I-deγe vedi",
-                        "source": "Yes, we have good fire & bird"
-                },
-                {
-                        "target": "Uva na Lu-īmbω ivi?",
-                        "source": "Do you have song today?"
+                        "target": "Mwakire / Uko vedi?",
+                        "source": "Hello / How are you? (Kitaveta)"
                 }
         ]
 },
@@ -3026,114 +2994,52 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
         "words": [
                 {
-                        "target": "Tunarinda M-ōtω • I-deγe kaya yetu",
+                        "target": "Tunarinda M-ōto • I-deγe kaya yetu",
                         "source": "We keep fire & bird at our homestead",
                         "pronunciation": "tunarinda m-ōt  i-dee kaya yetu"
                 },
                 {
-                        "target": "Tunarinda Lu-īmbω kaya yetu",
+                        "target": "Tunarinda Lu-īmbo kaya yetu",
                         "source": "We keep song at our homestead",
                         "pronunciation": "tunarinda lu-īmb kaya yetu"
-                },
-                {
-                        "target": "Tunarinda vīnā kaya yetu",
-                        "source": "We keep „ dance at our homestead",
-                        "pronunciation": "tunarinda vīnā kaya yetu"
-                },
-                {
-                        "target": "Bei ya Sipitali sokoni ni ngapi?",
-                        "source": "What is the price of hospital at the market?",
-                        "pronunciation": "bei ya sipitali sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya Ukongo sokoni ni ngapi?",
-                        "source": "What is the price of sickness at the market?",
-                        "pronunciation": "bei ya ukongo sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya Hatari sokoni ni ngapi?",
-                        "source": "What is the price of danger at the market?",
-                        "pronunciation": "bei ya hatari sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya Amani sokoni ni ngapi?",
-                        "source": "What is the price of peace at the market?",
-                        "pronunciation": "bei ya amani sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya Fωle sokoni ni ngapi?",
-                        "source": "What is the price of fear at the market?",
-                        "pronunciation": "bei ya fle sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya kābā sokoni ni ngapi?",
-                        "source": "What is the price of „ beat at the market?",
-                        "pronunciation": "bei ya kābā sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya bwāgā sokoni ni ngapi?",
-                        "source": "What is the price of „ kill at the market?",
-                        "pronunciation": "bei ya bwāgā sokoni ni ngapi"
-                },
-                {
-                        "target": "Bei ya īvā sokoni ni ngapi?",
-                        "source": "What is the price of „ steal at the market?",
-                        "pronunciation": "bei ya īvā sokoni ni ngapi"
                 },
                 {
                         "target": "Rinda U-sāwi kwa amani na uzima",
                         "source": "Protect magic for peace and health",
                         "pronunciation": "rinda u-sāwi kwa amani na uzima"
+                },
+                {
+                        "target": "papa / baba",
+                        "source": "Father",
+                        "pronunciation": "ba-ba"
+                },
+                {
+                        "target": "mama / mamo",
+                        "source": "Mother",
+                        "pronunciation": "ma-ma"
+                },
+                {
+                        "target": "M-rīngga",
+                        "source": "Sister",
+                        "pronunciation": "m-ringga"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ehe, tuva na Lu-īmbω vedi",
-                        "source": "Yes, we have good song"
+                        "target": "Tunarinda M-ōto • I-deγe kaya yetu",
+                        "source": "We keep fire & bird at our homestead"
                 },
                 {
-                        "target": "Uva na vīnā ivi?",
-                        "source": "Do you have „ dance today?"
+                        "target": "Tunarinda Lu-īmbo kaya yetu",
+                        "source": "We keep song at our homestead"
                 },
                 {
-                        "target": "Ehe, tuva na vīnā vedi",
-                        "source": "Yes, we have good „ dance"
+                        "target": "Rinda U-sāwi kwa amani na uzima",
+                        "source": "Protect magic for peace and health"
                 },
                 {
-                        "target": "Bei ya Soko sokoni ni ngapi?",
-                        "source": "What is the price of market at the market?"
-                },
-                {
-                        "target": "Bei ya Mbesa sokoni ni ngapi?",
-                        "source": "What is the price of money at the market?"
-                },
-                {
-                        "target": "Bei ya Duka sokoni ni ngapi?",
-                        "source": "What is the price of shop at the market?"
-                },
-                {
-                        "target": "Bei ya Bei sokoni ni ngapi?",
-                        "source": "What is the price of price at the market?"
-                },
-                {
-                        "target": "Bei ya gūlā sokoni ni ngapi?",
-                        "source": "What is the price of „ buy at the market?"
-                },
-                {
-                        "target": "Bei ya Nkōndō sokoni ni ngapi?",
-                        "source": "What is the price of war at the market?"
-                },
-                {
-                        "target": "Bei ya M-ti sokoni ni ngapi?",
-                        "source": "What is the price of medicine at the market?"
-                },
-                {
-                        "target": "Bei ya Sipitali sokoni ni ngapi?",
-                        "source": "What is the price of hospital at the market?"
-                },
-                {
-                        "target": "Bei ya Ukongo sokoni ni ngapi?",
-                        "source": "What is the price of sickness at the market?"
+                        "target": "papa / baba",
+                        "source": "Father"
                 }
         ]
 }

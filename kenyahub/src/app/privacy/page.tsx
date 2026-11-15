@@ -11,7 +11,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/privacy/",
       en: "https://kenyahub.me/privacy/",
-    },
+        "x-default": "https://kenyahub.me/privacy/",
+      },
   },
   openGraph: {
     title: "Privacy Policy | KenyaHub",

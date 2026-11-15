@@ -9,6 +9,7 @@ import {
   FlatList,
   TextInput,
   Pressable,
+  Modal,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -18,6 +19,8 @@ import {
   KenyaStripe,
   AndroidTopAppBar,
   androidRipple,
+  pressableStyle,
+  triggerHaptic,
 } from "../../src/theme";
 import countiesData from "../../src/shared/data/counties.json";
 import budgetsData from "../../src/shared/data/county-budgets.json";
@@ -25,10 +28,41 @@ import rainfallData from "../../src/shared/data/rainfall-patterns.json";
 import hospitalsData from "../../src/shared/data/nhif-hospitals.json";
 import postalData from "../../src/shared/data/postal-codes.json";
 
-type CountyHubTab = "directory" | "budgets" | "constituencies" | "climate" | "compare";
+type CountyHubTab =
+  | "directory"
+  | "budgets"
+  | "constituencies"
+  | "climate"
+  | "compare";
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+const MONTHS = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const MONTH_KEYS = [
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+];
 
 // Precompute static lookups once at module level for instant tab loads
 const HOSPITAL_COUNT_MAP = new Map<string, number>();
@@ -64,11 +98,20 @@ const STATIC_ENRICHED_COUNTIES = countiesData.counties.map((c) => ({
 
 const NATIONAL_TOTALS = (() => {
   const budgets = (budgetsData as any).budgets || [];
-  const totalAlloc = budgets.reduce((s: number, b: any) => s + (b.allocation || 0), 0);
-  const totalOsr = budgets.reduce((s: number, b: any) => s + (b.ownSourceRevenue || 0), 0);
+  const totalAlloc = budgets.reduce(
+    (s: number, b: any) => s + (b.allocation || 0),
+    0
+  );
+  const totalOsr = budgets.reduce(
+    (s: number, b: any) => s + (b.ownSourceRevenue || 0),
+    0
+  );
   const avgAbs =
     budgets.length > 0
-      ? (budgets.reduce((s: number, b: any) => s + (b.absorptionRate || 0), 0) / budgets.length).toFixed(1)
+      ? (
+          budgets.reduce((s: number, b: any) => s + (b.absorptionRate || 0), 0) /
+          budgets.length
+        ).toFixed(1)
       : "0";
   return { totalAlloc, totalOsr, avgAbs };
 })();
@@ -96,8 +139,13 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
-        style={styles.countyCard}
-        onPress={() => router.push(`/county/${item.slug}` as any)}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${item.name} County profile`}
+        style={pressableStyle(styles.countyCard)}
+        onPress={() => {
+          triggerHaptic(8);
+          router.push(`/county/${item.slug}` as any);
+        }}
       >
         <View style={styles.cardHeaderRow}>
           <View
@@ -117,25 +165,69 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
             <Text style={[styles.countyName, { color: theme.textPrimary }]}>
               {item.name} County
             </Text>
-            <Text style={[styles.countyCapital, { color: theme.textSecondary }]}>
-              HQ: <Text style={{ color: theme.textPrimary, fontWeight: "600" }}>{item.capital}</Text>
+            <Text
+              style={[styles.countyCapital, { color: theme.textSecondary }]}
+            >
+              HQ:{" "}
+              <Text
+                style={{
+                  color: theme.textPrimary,
+                  fontFamily: "Inter_600SemiBold",
+                }}
+              >
+                {item.capital}
+              </Text>
               {" · "}
               {item.area.toLocaleString()} km² ({item.density}/km²)
             </Text>
           </View>
-          <View style={[styles.trailingCircle, { backgroundColor: theme.surfaceContainerHigh }]}>
-            <Ionicons name="arrow-forward" size={16} color={theme.textSecondary} />
+          <View
+            style={[
+              styles.trailingCircle,
+              { backgroundColor: theme.surfaceContainerHigh },
+            ]}
+          >
+            <Ionicons
+              name="arrow-forward"
+              size={16}
+              color={theme.textSecondary}
+            />
           </View>
         </View>
 
-        <View style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}>
-          <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-            <Ionicons name="person-circle-outline" size={14} color={theme.gold} />
-            <Text style={[styles.infoPillText, { color: theme.textSecondary }]} numberOfLines={1}>
+        <View
+          style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}
+        >
+          <View
+            style={[
+              styles.infoPill,
+              {
+                backgroundColor: theme.surfaceContainerHigh,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <Ionicons
+              name="person-circle-outline"
+              size={14}
+              color={theme.gold}
+            />
+            <Text
+              style={[styles.infoPillText, { color: theme.textSecondary }]}
+              numberOfLines={1}
+            >
               Gov. {item.governor}
             </Text>
           </View>
-          <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+          <View
+            style={[
+              styles.infoPill,
+              {
+                backgroundColor: theme.surfaceContainerHigh,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
             <Ionicons name="people-outline" size={14} color={theme.sky} />
             <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
               {item.population >= 1000000
@@ -144,17 +236,45 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
             </Text>
           </View>
           {item.budget && (
-            <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
-              <Ionicons name="cash-outline" size={14} color={theme.kenyaGreenLight} />
-              <Text style={[styles.infoPillText, { color: theme.kenyaGreenLight, fontWeight: "700" }]}>
-                KES {item.budget.allocation.toLocaleString()}M ({item.budget.absorptionRate}%)
+            <View
+              style={[
+                styles.infoPill,
+                {
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Ionicons
+                name="cash-outline"
+                size={14}
+                color={theme.kenyaGreenLight}
+              />
+              <Text
+                style={[
+                  styles.infoPillText,
+                  { color: theme.kenyaGreenLight, fontFamily: "Outfit_700Bold" },
+                ]}
+              >
+                KES {item.budget.allocation.toLocaleString()}M (
+                {item.budget.absorptionRate}%)
               </Text>
             </View>
           )}
           {item.rain && (
-            <View style={[styles.infoPill, { backgroundColor: theme.surfaceContainerHigh, borderColor: theme.outlineVariant }]}>
+            <View
+              style={[
+                styles.infoPill,
+                {
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
               <Ionicons name="rainy-outline" size={14} color={theme.sky} />
-              <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
+              <Text
+                style={[styles.infoPillText, { color: theme.textSecondary }]}
+              >
                 {item.rain.annualRainfall} mm/yr
               </Text>
             </View>
@@ -171,25 +291,46 @@ function renderBudgetCard(item: any, router: any, theme: any) {
   return (
     <Pressable
       key={item.code}
+      android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
-      style={[
+      style={pressableStyle([
         styles.countyCardWrap,
         {
           backgroundColor: theme.surfaceContainer,
           borderColor: theme.outlineVariant,
           padding: 14,
         },
-      ]}
+      ])}
     >
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Text style={[styles.countyName, { color: theme.textPrimary }]}>
           {String(item.code).padStart(3, "0")}. {item.name} County
         </Text>
-        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.kenyaGreenLight }}>
+        <Text
+          style={{
+            fontSize: 12,
+            fontFamily: "Outfit_800ExtraBold",
+            color: theme.kenyaGreenLight,
+          }}
+        >
           {b.absorptionRate}% Absorbed
         </Text>
       </View>
-      <View style={{ height: 6, backgroundColor: theme.surfaceContainerHigh, borderRadius: 4, marginVertical: 8, overflow: "hidden" }}>
+      <View
+        style={{
+          height: 6,
+          backgroundColor: theme.surfaceContainerHigh,
+          borderRadius: 4,
+          marginVertical: 8,
+          overflow: "hidden",
+        }}
+      >
         <View
           style={{
             height: "100%",
@@ -200,13 +341,27 @@ function renderBudgetCard(item: any, router: any, theme: any) {
       </View>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-          Share: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>KES {b.allocation.toLocaleString()}M</Text>
+          Share:{" "}
+          <Text style={{ fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+            KES {b.allocation.toLocaleString()}M
+          </Text>
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-          OSR: <Text style={{ fontWeight: "700", color: theme.gold }}>KES {b.ownSourceRevenue.toLocaleString()}M</Text>
+          OSR:{" "}
+          <Text style={{ fontFamily: "Outfit_700Bold", color: theme.gold }}>
+            KES {b.ownSourceRevenue.toLocaleString()}M
+          </Text>
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-          Spent: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>KES {b.expenditure.toLocaleString()}M</Text>
+          Spent:{" "}
+          <Text
+            style={{
+              fontFamily: "Outfit_700Bold",
+              color: theme.kenyaGreenLight,
+            }}
+          >
+            KES {b.expenditure.toLocaleString()}M
+          </Text>
         </Text>
       </View>
     </Pressable>
@@ -217,8 +372,9 @@ function renderConstituencyCard(item: any, router: any, theme: any) {
   return (
     <Pressable
       key={item.code}
+      android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
-      style={[
+      style={pressableStyle([
         styles.countyCardWrap,
         {
           backgroundColor: theme.surfaceContainer,
@@ -226,35 +382,81 @@ function renderConstituencyCard(item: any, router: any, theme: any) {
           padding: 14,
           gap: 8,
         },
-      ]}
+      ])}
     >
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Text style={[styles.countyName, { color: theme.textPrimary }]}>
           {String(item.code).padStart(3, "0")}. {item.name} County
         </Text>
-        <Text style={{ fontSize: 11, fontWeight: "700", color: theme.gold }}>
+        <Text
+          style={{
+            fontSize: 11,
+            fontFamily: "Outfit_700Bold",
+            color: theme.gold,
+          }}
+        >
           {item.constituencies.length} Constituencies →
         </Text>
       </View>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
-        <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-          Gov: <Text style={{ fontWeight: "700", color: theme.kenyaGreenLight }}>{item.governor}</Text>
+        <Text
+          style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
+        >
+          Gov:{" "}
+          <Text
+            style={{
+              fontFamily: "Outfit_700Bold",
+              color: theme.kenyaGreenLight,
+            }}
+          >
+            {item.governor}
+          </Text>
         </Text>
-        <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-          Dep: <Text style={{ fontWeight: "700", color: theme.textPrimary }}>{item.deputyGovernor}</Text>
+        <Text
+          style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
+        >
+          Dep:{" "}
+          <Text
+            style={{ fontFamily: "Outfit_700Bold", color: theme.textPrimary }}
+          >
+            {item.deputyGovernor}
+          </Text>
         </Text>
         {item.senator && (
-          <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-            Sen: <Text style={{ fontWeight: "700", color: theme.sky }}>{item.senator}</Text>
+          <Text
+            style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
+          >
+            Sen:{" "}
+            <Text style={{ fontFamily: "Outfit_700Bold", color: theme.sky }}>
+              {item.senator}
+            </Text>
           </Text>
         )}
         {item.womenRep && (
-          <Text style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}>
-            WR: <Text style={{ fontWeight: "700", color: theme.gold }}>{item.womenRep}</Text>
+          <Text
+            style={{ fontSize: 11, color: theme.textSecondary, width: "48%" }}
+          >
+            WR:{" "}
+            <Text style={{ fontFamily: "Outfit_700Bold", color: theme.gold }}>
+              {item.womenRep}
+            </Text>
           </Text>
         )}
       </View>
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 5, marginTop: 4 }}>
+      <View
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 5,
+          marginTop: 4,
+        }}
+      >
         {item.constituencies.map((con: string) => (
           <View
             key={con}
@@ -267,7 +469,15 @@ function renderConstituencyCard(item: any, router: any, theme: any) {
               borderColor: theme.outlineVariant,
             }}
           >
-            <Text style={{ fontSize: 10, color: theme.textSecondary, fontWeight: "600" }}>{con}</Text>
+            <Text
+              style={{
+                fontSize: 10,
+                color: theme.textSecondary,
+                fontFamily: "Inter_600SemiBold",
+              }}
+            >
+              {con}
+            </Text>
           </View>
         ))}
       </View>
@@ -281,8 +491,9 @@ function renderClimateCard(item: any, router: any, theme: any) {
   return (
     <Pressable
       key={item.code}
+      android_ripple={androidRipple(theme.rippleColor)}
       onPress={() => router.push(`/county/${item.slug}` as any)}
-      style={[
+      style={pressableStyle([
         styles.countyCardWrap,
         {
           backgroundColor: theme.surfaceContainer,
@@ -290,16 +501,30 @@ function renderClimateCard(item: any, router: any, theme: any) {
           padding: 14,
           gap: 8,
         },
-      ]}
+      ])}
     >
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <View>
           <Text style={[styles.countyName, { color: theme.textPrimary }]}>
             {String(item.code).padStart(3, "0")}. {item.name} County
           </Text>
-          <Text style={{ fontSize: 11, color: theme.textSecondary }}>{r.climateZone}</Text>
+          <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+            {r.climateZone}
+          </Text>
         </View>
-        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.sky }}>
+        <Text
+          style={{
+            fontSize: 12,
+            fontFamily: "Outfit_800ExtraBold",
+            color: theme.sky,
+          }}
+        >
           {r.annualRainfall} mm/yr
         </Text>
       </View>
@@ -323,8 +548,24 @@ function renderClimateCard(item: any, router: any, theme: any) {
                       : "rgba(200, 150, 30, 0.12)",
                 }}
               >
-                <Text style={{ fontSize: 7, fontWeight: "700", color: theme.textMuted }}>{MONTHS[idx]}</Text>
-                <Text style={{ fontSize: 8, fontWeight: "800", color: theme.textPrimary }}>{mm}</Text>
+                <Text
+                  style={{
+                    fontSize: 7,
+                    fontFamily: "Outfit_700Bold",
+                    color: theme.textMuted,
+                  }}
+                >
+                  {MONTHS[idx]}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 8,
+                    fontFamily: "Outfit_800ExtraBold",
+                    color: theme.textPrimary,
+                  }}
+                >
+                  {mm}
+                </Text>
               </View>
             );
           })}
@@ -348,9 +589,10 @@ export default function CountyScreen() {
   >("code");
   const [compareSlugA, setCompareSlugA] = useState("nairobi");
   const [compareSlugB, setCompareSlugB] = useState("mombasa");
+  const [pickerTarget, setPickerTarget] = useState<"A" | "B" | null>(null);
+  const [pickerSearch, setPickerSearch] = useState("");
 
   const notes: string[] = (countiesData as any).notes || [];
-
   const enrichedCounties = STATIC_ENRICHED_COUNTIES;
 
   const filtered = useMemo(() => {
@@ -372,20 +614,37 @@ export default function CountyScreen() {
       if (sortBy === "name") return a.name.localeCompare(b.name);
       if (sortBy === "population") return b.population - a.population;
       if (sortBy === "area") return b.area - a.area;
-      if (sortBy === "budget") return (b.budget?.allocation || 0) - (a.budget?.allocation || 0);
-      if (sortBy === "rainfall") return (b.rain?.annualRainfall || 0) - (a.rain?.annualRainfall || 0);
+      if (sortBy === "budget")
+        return (b.budget?.allocation || 0) - (a.budget?.allocation || 0);
+      if (sortBy === "rainfall")
+        return (b.rain?.annualRainfall || 0) - (a.rain?.annualRainfall || 0);
       return a.code - b.code;
     });
   }, [query, enrichedCounties, sortBy]);
 
+  const pickerFiltered = useMemo(() => {
+    const q = pickerSearch.trim().toLowerCase();
+    if (!q) return enrichedCounties;
+    return enrichedCounties.filter(
+      (c) =>
+        c.name.toLowerCase().includes(q) ||
+        c.capital.toLowerCase().includes(q) ||
+        String(c.code).padStart(3, "0").includes(q)
+    );
+  }, [pickerSearch, enrichedCounties]);
+
   const nationalTotals = NATIONAL_TOTALS;
 
   const countyA = useMemo(
-    () => enrichedCounties.find((c) => c.slug === compareSlugA) || enrichedCounties[46],
+    () =>
+      enrichedCounties.find((c) => c.slug === compareSlugA) ||
+      enrichedCounties[46],
     [enrichedCounties, compareSlugA]
   );
   const countyB = useMemo(
-    () => enrichedCounties.find((c) => c.slug === compareSlugB) || enrichedCounties[0],
+    () =>
+      enrichedCounties.find((c) => c.slug === compareSlugB) ||
+      enrichedCounties[0],
     [enrichedCounties, compareSlugB]
   );
 
@@ -411,7 +670,7 @@ export default function CountyScreen() {
           },
         ]}
       >
-        {/* Consolidated Mode Tabs with Refined Scroll-Fade Bars */}
+        {/* Consolidated Mode Tabs */}
         <ExpandablePillRow
           threshold={4}
           fadeColor={theme.surfaceContainerLow}
@@ -424,25 +683,51 @@ export default function CountyScreen() {
         >
           {(
             [
-              { id: "directory", label: "Directory", icon: "grid-outline" as const },
-              { id: "budgets", label: "Budgets (FY 25/26)", icon: "wallet-outline" as const },
-              { id: "constituencies", label: "290 Constituencies", icon: "people-outline" as const },
-              { id: "climate", label: "Climate & Rain", icon: "rainy-outline" as const },
-              { id: "compare", label: "Compare 2", icon: "git-compare-outline" as const },
+              {
+                id: "directory",
+                label: "Directory",
+                icon: "grid-outline" as const,
+              },
+              {
+                id: "budgets",
+                label: "Budgets (FY 25/26)",
+                icon: "wallet-outline" as const,
+              },
+              {
+                id: "constituencies",
+                label: "290 Constituencies",
+                icon: "people-outline" as const,
+              },
+              {
+                id: "climate",
+                label: "Climate & Rain",
+                icon: "rainy-outline" as const,
+              },
+              {
+                id: "compare",
+                label: "Compare 2",
+                icon: "git-compare-outline" as const,
+              },
             ] as const
           ).map((tab) => {
             const active = activeTab === tab.id;
             return (
               <Pressable
                 key={tab.id}
-                onPress={() => setActiveTab(tab.id)}
-                style={[
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() => {
+                  triggerHaptic(8);
+                  setActiveTab(tab.id);
+                }}
+                style={pressableStyle([
                   styles.modeChip,
                   {
-                    backgroundColor: active ? theme.gold : theme.surfaceContainer,
+                    backgroundColor: active
+                      ? theme.gold
+                      : theme.surfaceContainer,
                     borderColor: active ? theme.gold : theme.outlineVariant,
                   },
-                ]}
+                ])}
               >
                 <Ionicons
                   name={tab.icon}
@@ -480,8 +765,8 @@ export default function CountyScreen() {
             >
               <Ionicons name="search" size={18} color={theme.gold} />
               <TextInput
-                key={`ti-1-${theme.isDark ? "dark" : "light"}`}
                 multiline={false}
+                accessibilityLabel="Search county, governor, or headquarters"
                 placeholder="Search county, governor, or HQ..."
                 numberOfLines={1}
                 placeholderTextColor={theme.textMuted}
@@ -490,15 +775,26 @@ export default function CountyScreen() {
                 style={[styles.searchInput, { color: theme.textPrimary }]}
               />
               {query.length > 0 && (
-                <Pressable onPress={() => setQuery("")} hitSlop={8}>
-                  <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                <Pressable
+                  onPress={() => setQuery("")}
+                  accessibilityRole="button"
+                  accessibilityLabel="Clear county search"
+                  hitSlop={8}
+                >
+                  <Ionicons
+                    name="close-circle"
+                    size={18}
+                    color={theme.textMuted}
+                  />
                 </Pressable>
               )}
             </View>
 
-            {/* Sort By Row — Inline with Refined Scroll-Fade Bars */}
+            {/* Sort By Row */}
             <View style={styles.sortRow}>
-              <Text style={[styles.sortLabel, { color: theme.textMuted }]}>SORT BY</Text>
+              <Text style={[styles.sortLabel, { color: theme.textMuted }]}>
+                SORT BY
+              </Text>
               <ExpandablePillRow
                 style={{ flex: 1 }}
                 showExpandButton={false}
@@ -523,16 +819,21 @@ export default function CountyScreen() {
                   return (
                     <Pressable
                       key={option.id}
-                      onPress={() => setSortBy(option.id)}
-                      style={[
+                      onPress={() => {
+                        triggerHaptic(8);
+                        setSortBy(option.id);
+                      }}
+                      style={pressableStyle([
                         styles.segmentBtn,
                         {
                           backgroundColor: active
                             ? theme.primaryContainer
                             : theme.surfaceContainer,
-                          borderColor: active ? theme.gold : theme.outlineVariant,
+                          borderColor: active
+                            ? theme.gold
+                            : theme.outlineVariant,
                         },
-                      ]}
+                      ])}
                     >
                       <Text
                         style={[
@@ -561,8 +862,8 @@ export default function CountyScreen() {
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
         >
-          {/* TAB 5: COMPARE 2 COUNTIES */}
-          {activeTab === "compare" && countyA && countyB && (
+          {/* TAB 5: COMPARE 2 COUNTIES WITH SEARCHABLE BOTTOM-SHEET PICKER & PROPORTION BARS (UX-12) */}
+          {countyA && countyB && (
             <View
               style={[
                 styles.notesCard,
@@ -575,96 +876,383 @@ export default function CountyScreen() {
               <Text style={[styles.notesHeading, { color: theme.gold }]}>
                 Compare Two Counties Side-by-Side
               </Text>
-              <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-                Select First County ({countyA.name}):
-              </Text>
-              <ExpandablePillRow
-                fadeColor={theme.surfaceContainer}
-                contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: "Inter_400Regular",
+                  color: theme.textSecondary,
+                }}
               >
-                {enrichedCounties.map((c) => (
-                  <Pressable
-                    key={`a-${c.slug}`}
-                    onPress={() => setCompareSlugA(c.slug)}
-                    style={[
-                      styles.modeChip,
-                      {
-                        backgroundColor: compareSlugA === c.slug ? theme.gold : theme.surfaceContainerHigh,
-                        borderColor: compareSlugA === c.slug ? theme.gold : theme.outlineVariant,
-                      },
-                    ]}
+                Tap either card to open the searchable 47-county picker, or swap
+                counties in 1 tap.
+              </Text>
+
+              {/* Side-by-Side Selector Cards + Swap Button (UX-12) */}
+              <View style={styles.compareSelectorRow}>
+                <Pressable
+                  onPress={() => {
+                    triggerHaptic(8);
+                    setPickerSearch("");
+                    setPickerTarget("A");
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Select First County, currently ${countyA.name}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  style={pressableStyle([
+                    styles.compareSelectorCard,
+                    {
+                      backgroundColor: `${theme.gold}15`,
+                      borderColor: theme.gold,
+                    },
+                  ])}
+                >
+                  <Text
+                    style={{
+                      fontSize: 9.5,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.gold,
+                      letterSpacing: 0.6,
+                    }}
+                  >
+                    COUNTY A ({String(countyA.code).padStart(3, "0")})
+                  </Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      marginTop: 3,
+                    }}
                   >
                     <Text
                       style={{
-                        fontSize: 11,
-                        fontWeight: "700",
-                        color: compareSlugA === c.slug ? theme.kenyaBlack : theme.textPrimary,
+                        fontSize: 15,
+                        fontFamily: "Outfit_800ExtraBold",
+                        color: theme.textPrimary,
+                        flex: 1,
                       }}
+                      numberOfLines={1}
                     >
-                      {String(c.code).padStart(3, "0")} {c.name}
+                      {countyA.name}
                     </Text>
-                  </Pressable>
-                ))}
-              </ExpandablePillRow>
+                    <Ionicons
+                      name="chevron-down"
+                      size={16}
+                      color={theme.gold}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 10.5,
+                      color: theme.textSecondary,
+                      marginTop: 2,
+                    }}
+                    numberOfLines={1}
+                  >
+                    HQ: {countyA.capital}
+                  </Text>
+                </Pressable>
 
-              <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
-                Select Second County ({countyB.name}):
-              </Text>
-              <ExpandablePillRow
-                fadeColor={theme.surfaceContainer}
-                contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}
-              >
-                {enrichedCounties.map((c) => (
-                  <Pressable
-                    key={`b-${c.slug}`}
-                    onPress={() => setCompareSlugB(c.slug)}
-                    style={[
-                      styles.modeChip,
-                      {
-                        backgroundColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.surfaceContainerHigh,
-                        borderColor: compareSlugB === c.slug ? theme.kenyaGreenLight : theme.outlineVariant,
-                      },
-                    ]}
+                <Pressable
+                  onPress={() => {
+                    triggerHaptic(10);
+                    const prevA = compareSlugA;
+                    setCompareSlugA(compareSlugB);
+                    setCompareSlugB(prevA);
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel="Swap County A and County B"
+                  style={pressableStyle([
+                    styles.swapCountiesBtn,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ])}
+                >
+                  <Ionicons
+                    name="swap-horizontal"
+                    size={18}
+                    color={theme.gold}
+                  />
+                </Pressable>
+
+                <Pressable
+                  onPress={() => {
+                    triggerHaptic(8);
+                    setPickerSearch("");
+                    setPickerTarget("B");
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Select Second County, currently ${countyB.name}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  style={pressableStyle([
+                    styles.compareSelectorCard,
+                    {
+                      backgroundColor: `${theme.kenyaGreenLight}15`,
+                      borderColor: theme.kenyaGreenLight,
+                    },
+                  ])}
+                >
+                  <Text
+                    style={{
+                      fontSize: 9.5,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.kenyaGreenLight,
+                      letterSpacing: 0.6,
+                    }}
+                  >
+                    COUNTY B ({String(countyB.code).padStart(3, "0")})
+                  </Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      marginTop: 3,
+                    }}
                   >
                     <Text
                       style={{
-                        fontSize: 11,
-                        fontWeight: "700",
-                        color: compareSlugB === c.slug ? theme.kenyaBlack : theme.textPrimary,
+                        fontSize: 15,
+                        fontFamily: "Outfit_800ExtraBold",
+                        color: theme.textPrimary,
+                        flex: 1,
                       }}
+                      numberOfLines={1}
                     >
-                      {String(c.code).padStart(3, "0")} {c.name}
+                      {countyB.name}
                     </Text>
-                  </Pressable>
-                ))}
-              </ExpandablePillRow>
+                    <Ionicons
+                      name="chevron-down"
+                      size={16}
+                      color={theme.kenyaGreenLight}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 10.5,
+                      color: theme.textSecondary,
+                      marginTop: 2,
+                    }}
+                    numberOfLines={1}
+                  >
+                    HQ: {countyB.capital}
+                  </Text>
+                </Pressable>
+              </View>
 
-              <View style={{ marginTop: 8, borderTopWidth: 1, borderTopColor: theme.outlineVariant, paddingTop: 8 }}>
-                <View style={{ flexDirection: "row", justifyContent: "space-between", paddingBottom: 6, borderBottomWidth: 1, borderBottomColor: theme.outlineVariant }}>
-                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.textMuted, flex: 1.2, textAlign: "left" }}>METRIC</Text>
-                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.gold, flex: 1, textAlign: "right" }}>{countyA.name.toUpperCase()}</Text>
-                  <Text style={{ fontSize: 10.5, fontWeight: "800", color: theme.kenyaGreenLight, flex: 1, textAlign: "right" }}>{countyB.name.toUpperCase()}</Text>
+              <View
+                style={{
+                  marginTop: 8,
+                  borderTopWidth: 1,
+                  borderTopColor: theme.outlineVariant,
+                  paddingTop: 8,
+                }}
+              >
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    paddingBottom: 6,
+                    borderBottomWidth: 1,
+                    borderBottomColor: theme.outlineVariant,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 10.5,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.textMuted,
+                      flex: 1.2,
+                      textAlign: "left",
+                    }}
+                  >
+                    METRIC
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 10.5,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.gold,
+                      flex: 1,
+                      textAlign: "right",
+                    }}
+                  >
+                    {countyA.name.toUpperCase()}
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 10.5,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.kenyaGreenLight,
+                      flex: 1,
+                      textAlign: "right",
+                    }}
+                  >
+                    {countyB.name.toUpperCase()}
+                  </Text>
                 </View>
                 {[
-                  { label: "Capital HQ", a: countyA.capital, b: countyB.capital },
-                  { label: "Governor", a: countyA.governor, b: countyB.governor },
-                  { label: "Senator", a: countyA.senator || "—", b: countyB.senator || "—" },
-                  { label: "Woman Rep", a: countyA.womenRep || "—", b: countyB.womenRep || "—" },
-                  { label: "Population", a: countyA.population.toLocaleString(), b: countyB.population.toLocaleString() },
-                  { label: "Land Area", a: `${countyA.area.toLocaleString()} km²`, b: `${countyB.area.toLocaleString()} km²` },
-                  { label: "Density", a: `${countyA.density}/km²`, b: `${countyB.density}/km²` },
-                  { label: "Constituencies", a: `${countyA.constituencies.length}`, b: `${countyB.constituencies.length}` },
-                  { label: "FY 25/26 Share", a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M` },
-                  { label: "Own Revenue", a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M` },
-                  { label: "Absorption %", a: `${countyA.budget?.absorptionRate || 0}%`, b: `${countyB.budget?.absorptionRate || 0}%` },
-                  { label: "Annual Rainfall", a: `${countyA.rain?.annualRainfall || 0} mm`, b: `${countyB.rain?.annualRainfall || 0} mm` },
-                ].map((row) => (
-                  <View key={row.label} style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 5, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: theme.outlineVariant }}>
-                    <Text style={{ fontSize: 11, color: theme.textMuted, flex: 1.2, textAlign: "left" }}>{row.label}</Text>
-                    <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.a}</Text>
-                    <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary, flex: 1, textAlign: "right" }}>{row.b}</Text>
-                  </View>
-                ))}
+                  {
+                    label: "Capital HQ",
+                    a: countyA.capital,
+                    b: countyB.capital,
+                  },
+                  {
+                    label: "Governor",
+                    a: countyA.governor,
+                    b: countyB.governor,
+                  },
+                  {
+                    label: "Senator",
+                    a: countyA.senator || "—",
+                    b: countyB.senator || "—",
+                  },
+                  {
+                    label: "Woman Rep",
+                    a: countyA.womenRep || "—",
+                    b: countyB.womenRep || "—",
+                  },
+                  {
+                    label: "Population",
+                    a: countyA.population.toLocaleString(),
+                    b: countyB.population.toLocaleString(),
+                    numA: countyA.population,
+                    numB: countyB.population,
+                  },
+                  {
+                    label: "Land Area",
+                    a: `${countyA.area.toLocaleString()} km²`,
+                    b: `${countyB.area.toLocaleString()} km²`,
+                    numA: countyA.area,
+                    numB: countyB.area,
+                  },
+                  {
+                    label: "Density",
+                    a: `${countyA.density}/km²`,
+                    b: `${countyB.density}/km²`,
+                    numA: countyA.density,
+                    numB: countyB.density,
+                  },
+                  {
+                    label: "Constituencies",
+                    a: `${countyA.constituencies.length}`,
+                    b: `${countyB.constituencies.length}`,
+                    numA: countyA.constituencies.length,
+                    numB: countyB.constituencies.length,
+                  },
+                  {
+                    label: "FY 25/26 Share",
+                    a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`,
+                    b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M`,
+                    numA: countyA.budget?.allocation || 0,
+                    numB: countyB.budget?.allocation || 0,
+                  },
+                  {
+                    label: "Own Revenue",
+                    a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`,
+                    b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M`,
+                    numA: countyA.budget?.ownSourceRevenue || 0,
+                    numB: countyB.budget?.ownSourceRevenue || 0,
+                  },
+                  {
+                    label: "Absorption %",
+                    a: `${countyA.budget?.absorptionRate || 0}%`,
+                    b: `${countyB.budget?.absorptionRate || 0}%`,
+                    numA: countyA.budget?.absorptionRate || 0,
+                    numB: countyB.budget?.absorptionRate || 0,
+                  },
+                  {
+                    label: "Annual Rainfall",
+                    a: `${countyA.rain?.annualRainfall || 0} mm`,
+                    b: `${countyB.rain?.annualRainfall || 0} mm`,
+                    numA: countyA.rain?.annualRainfall || 0,
+                    numB: countyB.rain?.annualRainfall || 0,
+                  },
+                ].map((row) => {
+                  const totalNum = (row.numA || 0) + (row.numB || 0);
+                  const pctA =
+                    totalNum > 0
+                      ? Math.max(8, Math.min(92, ((row.numA || 0) / totalNum) * 100))
+                      : 0;
+                  return (
+                    <View
+                      key={row.label}
+                      style={{
+                        paddingVertical: 6,
+                        borderBottomWidth: StyleSheet.hairlineWidth,
+                        borderBottomColor: theme.outlineVariant,
+                      }}
+                    >
+                      <View
+                        style={{
+                          flexDirection: "row",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            fontSize: 11,
+                            color: theme.textMuted,
+                            flex: 1.2,
+                            textAlign: "left",
+                          }}
+                        >
+                          {row.label}
+                        </Text>
+                        <Text
+                          style={{
+                            fontSize: 11,
+                            fontFamily: "Outfit_700Bold",
+                            color: theme.textPrimary,
+                            flex: 1,
+                            textAlign: "right",
+                          }}
+                        >
+                          {row.a}
+                        </Text>
+                        <Text
+                          style={{
+                            fontSize: 11,
+                            fontFamily: "Outfit_700Bold",
+                            color: theme.textPrimary,
+                            flex: 1,
+                            textAlign: "right",
+                          }}
+                        >
+                          {row.b}
+                        </Text>
+                      </View>
+                      {totalNum > 0 && (
+                        <View
+                          style={{
+                            height: 4,
+                            borderRadius: 2,
+                            overflow: "hidden",
+                            flexDirection: "row",
+                            backgroundColor: theme.surfaceContainerHigh,
+                            marginTop: 4,
+                            gap: 2,
+                          }}
+                        >
+                          <View
+                            style={{
+                              flex: pctA,
+                              backgroundColor: theme.gold,
+                            }}
+                          />
+                          <View
+                            style={{
+                              flex: 100 - pctA,
+                              backgroundColor: theme.kenyaGreenLight,
+                            }}
+                          />
+                        </View>
+                      )}
+                    </View>
+                  );
+                })}
               </View>
             </View>
           )}
@@ -685,8 +1273,17 @@ export default function CountyScreen() {
               </Text>
               {notes.map((n, idx) => (
                 <View key={idx} style={styles.noteRow}>
-                  <Text style={{ color: theme.gold, fontWeight: "900" }}>•</Text>
-                  <Text style={[styles.noteText, { color: theme.textSecondary }]}>
+                  <Text
+                    style={{
+                      color: theme.gold,
+                      fontFamily: "Outfit_800ExtraBold",
+                    }}
+                  >
+                    •
+                  </Text>
+                  <Text
+                    style={[styles.noteText, { color: theme.textSecondary }]}
+                  >
                     {n}
                   </Text>
                 </View>
@@ -709,43 +1306,268 @@ export default function CountyScreen() {
             <>
               {/* National Summary Strip */}
               <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
-                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>EQUITABLE SHARE</Text>
-                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.gold, marginTop: 2 }}>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      fontSize: 8.5,
+                      fontFamily: "Outfit_700Bold",
+                      letterSpacing: 0.4,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    EQUITABLE SHARE
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.gold,
+                      marginTop: 2,
+                    }}
+                  >
                     KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
                   </Text>
                 </View>
-                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>OWN REVENUE</Text>
-                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.sky, marginTop: 2 }}>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      fontSize: 8.5,
+                      fontFamily: "Outfit_700Bold",
+                      letterSpacing: 0.4,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    OWN REVENUE
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.sky,
+                      marginTop: 2,
+                    }}
+                  >
                     KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B
                   </Text>
                 </View>
-                <View style={[styles.miniStat, { backgroundColor: theme.surfaceContainer, borderColor: theme.outlineVariant }]}>
-                  <Text style={{ fontSize: 8.5, fontFamily: "Outfit_700Bold", letterSpacing: 0.4, color: theme.textMuted }}>AVG ABSORPTION</Text>
-                  <Text style={{ fontSize: 14, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaGreenLight, marginTop: 2 }}>
+                <View
+                  style={[
+                    styles.miniStat,
+                    {
+                      backgroundColor: theme.surfaceContainer,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={{
+                      fontSize: 8.5,
+                      fontFamily: "Outfit_700Bold",
+                      letterSpacing: 0.4,
+                      color: theme.textMuted,
+                    }}
+                  >
+                    AVG ABSORPTION
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.kenyaGreenLight,
+                      marginTop: 2,
+                    }}
+                  >
                     {nationalTotals.avgAbs}%
                   </Text>
                 </View>
               </View>
 
-              <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-                {activeTab === "directory" && `Showing ${filtered.length} of 47 counties · Tap any county for full dashboard`}
-                {activeTab === "budgets" && `FY 2025/26 County Budgets & Absorption Rates (${filtered.length} counties)`}
-                {activeTab === "constituencies" && `Elected Leaders & 290 Constituencies across ${filtered.length} counties`}
-                {activeTab === "climate" && `12-Month Rainfall & Climate Zones across ${filtered.length} counties`}
+              <Text style={[styles.countText, { color: theme.textMuted }]}>
+                Showing {filtered.length} of 47 counties
               </Text>
             </>
           }
           renderItem={({ item }) => {
-            if (activeTab === "directory") return <DirectoryCardItem item={item} router={router} theme={theme} />;
-            if (activeTab === "budgets") return renderBudgetCard(item, router, theme);
-            if (activeTab === "constituencies") return renderConstituencyCard(item, router, theme);
-            if (activeTab === "climate") return renderClimateCard(item, router, theme);
-            return null;
+            if (activeTab === "budgets")
+              return renderBudgetCard(item, router, theme);
+            if (activeTab === "constituencies")
+              return renderConstituencyCard(item, router, theme);
+            if (activeTab === "climate")
+              return renderClimateCard(item, router, theme);
+            return (
+              <DirectoryCardItem item={item} router={router} theme={theme} />
+            );
           }}
+          ListEmptyComponent={
+            <View style={styles.emptyWrap}>
+              <Ionicons
+                name="search-outline"
+                size={44}
+                color={theme.textMuted}
+              />
+              <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
+                No counties match &ldquo;{query}&rdquo;
+              </Text>
+            </View>
+          }
         />
       )}
+
+      {/* Searchable 47-County Picker Modal for Compare Tab (UX-12) */}
+      <Modal
+        visible={pickerTarget !== null}
+        animationType="slide"
+        transparent
+        onRequestClose={() => setPickerTarget(null)}
+      >
+        <View style={styles.modalBackdrop}>
+          <View
+            style={[
+              styles.pickerSheet,
+              {
+                backgroundColor: theme.bgPrimary,
+                borderColor: theme.outlineVariant,
+              },
+            ]}
+          >
+            <View style={styles.pickerHeaderRow}>
+              <Text style={[styles.pickerTitle, { color: theme.textPrimary }]}>
+                Select County {pickerTarget === "A" ? "A" : "B"}
+              </Text>
+              <Pressable
+                onPress={() => setPickerTarget(null)}
+                accessibilityRole="button"
+                accessibilityLabel="Close county picker"
+                hitSlop={10}
+              >
+                <Ionicons name="close-circle" size={24} color={theme.textMuted} />
+              </Pressable>
+            </View>
+
+            <View
+              style={[
+                styles.searchBar,
+                {
+                  backgroundColor: theme.surfaceContainerHigh,
+                  borderColor: theme.outlineVariant,
+                  marginBottom: 10,
+                },
+              ]}
+            >
+              <Ionicons name="search" size={18} color={theme.gold} />
+              <TextInput
+                value={pickerSearch}
+                onChangeText={setPickerSearch}
+                placeholder="Type county name, code (001-047) or HQ..."
+                placeholderTextColor={theme.textMuted}
+                style={[styles.searchInput, { color: theme.textPrimary }]}
+                autoFocus
+              />
+              {pickerSearch.length > 0 && (
+                <Pressable onPress={() => setPickerSearch("")} hitSlop={8}>
+                  <Ionicons
+                    name="close-circle"
+                    size={18}
+                    color={theme.textMuted}
+                  />
+                </Pressable>
+              )}
+            </View>
+
+            <FlatList
+              data={pickerFiltered}
+              keyExtractor={(item) => `pick-${item.slug}`}
+              keyboardShouldPersistTaps="handled"
+              showsVerticalScrollIndicator={false}
+              renderItem={({ item }) => {
+                const isSelected =
+                  (pickerTarget === "A" && compareSlugA === item.slug) ||
+                  (pickerTarget === "B" && compareSlugB === item.slug);
+                return (
+                  <Pressable
+                    android_ripple={androidRipple(theme.rippleColor)}
+                    onPress={() => {
+                      triggerHaptic(8);
+                      if (pickerTarget === "A") setCompareSlugA(item.slug);
+                      else if (pickerTarget === "B") setCompareSlugB(item.slug);
+                      setPickerTarget(null);
+                    }}
+                    style={pressableStyle([
+                      styles.pickerRow,
+                      {
+                        backgroundColor: isSelected
+                          ? theme.primaryContainer
+                          : "transparent",
+                        borderBottomColor: theme.outlineVariant,
+                      },
+                    ])}
+                  >
+                    <View
+                      style={[
+                        styles.codeBadge,
+                        {
+                          backgroundColor: theme.surfaceContainerHigh,
+                          borderColor: theme.outlineVariant,
+                          width: 38,
+                          height: 32,
+                        },
+                      ]}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 11,
+                          fontFamily: "Outfit_800ExtraBold",
+                          color: theme.gold,
+                        }}
+                      >
+                        {String(item.code).padStart(3, "0")}
+                      </Text>
+                    </View>
+                    <View style={{ flex: 1, marginLeft: 10 }}>
+                      <Text
+                        style={{
+                          fontSize: 14,
+                          fontFamily: "Outfit_700Bold",
+                          color: theme.textPrimary,
+                        }}
+                      >
+                        {item.name} County
+                      </Text>
+                      <Text style={{ fontSize: 11, color: theme.textSecondary }}>
+                        HQ: {item.capital} · Pop.{" "}
+                        {item.population.toLocaleString()}
+                      </Text>
+                    </View>
+                    {isSelected && (
+                      <Ionicons
+                        name="checkmark-circle"
+                        size={20}
+                        color={theme.gold}
+                      />
+                    )}
+                  </Pressable>
+                );
+              }}
+            />
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -753,35 +1575,34 @@ export default function CountyScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   header: {
-    paddingHorizontal: 14,
-    paddingTop: 8,
+    paddingHorizontal: 16,
+    paddingTop: 10,
     paddingBottom: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   modeChip: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
-    gap: 6,
-    paddingHorizontal: 13,
-    paddingVertical: 7,
-    minHeight: 34,
+    gap: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
     borderRadius: 999,
     borderWidth: 1,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
+    borderRadius: 22,
     borderWidth: 1,
-    borderRadius: 24,
-    paddingHorizontal: 14,
+    paddingHorizontal: 13,
     height: 42,
-    elevation: Platform.OS === "android" ? 1 : 0,
+    marginBottom: 8,
   },
   searchInput: {
     flex: 1,
     height: "100%",
-    marginLeft: 9,
+    marginLeft: 8,
+    fontFamily: "Inter_500Medium",
     fontSize: 13,
     paddingVertical: 0,
     textAlignVertical: "center",
@@ -790,56 +1611,53 @@ const styles = StyleSheet.create({
   sortRow: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
-    marginTop: 8,
     gap: 8,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
     fontSize: 10,
-    lineHeight: 14,
-    letterSpacing: 0.8,
-    flexShrink: 0,
-    includeFontPadding: false,
-    textAlignVertical: "center",
+    letterSpacing: 0.7,
   },
   segmentBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 13,
-    paddingVertical: 7,
-    minHeight: 34,
+    paddingHorizontal: 11,
+    paddingVertical: 5,
     borderRadius: 999,
     borderWidth: 1,
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 12,
-    lineHeight: 18,
-    paddingBottom: 1,
-    includeFontPadding: false,
-    textAlignVertical: "center",
+    fontSize: 11,
   },
-  listContent: { padding: 14, paddingBottom: 32 },
+  listContent: {
+    padding: 16,
+    paddingBottom: 36,
+    gap: 10,
+  },
   miniStat: {
     flex: 1,
-    paddingVertical: 9,
-    paddingHorizontal: 8,
     borderRadius: 12,
     borderWidth: 1,
+    padding: 10,
     alignItems: "center",
   },
-  resultsCount: { fontSize: 12, marginBottom: 10 },
+  countText: {
+    fontFamily: "Inter_500Medium",
+    fontSize: 12,
+    marginBottom: 2,
+  },
   countyCardWrap: {
     borderRadius: 16,
     borderWidth: 1,
-    marginBottom: 10,
     overflow: "hidden",
     elevation: Platform.OS === "android" ? 2 : 0,
   },
-  countyCard: { padding: 15 },
-  cardHeaderRow: { flexDirection: "row", alignItems: "center" },
+  countyCard: {
+    padding: 14,
+  },
+  cardHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
   codeBadge: {
     width: 44,
     height: 44,
@@ -848,16 +1666,26 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  codeText: { fontFamily: "Outfit_800ExtraBold", fontSize: 13 },
+  codeText: {
+    fontFamily: "Outfit_800ExtraBold",
+    fontSize: 14,
+  },
+  countyName: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15.5,
+  },
+  countyCapital: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 12,
+    marginTop: 2,
+  },
   trailingCircle: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 30,
+    height: 30,
+    borderRadius: 15,
     alignItems: "center",
     justifyContent: "center",
   },
-  countyName: { fontFamily: "Outfit_700Bold", fontSize: 16, flexShrink: 1 },
-  countyCapital: { fontSize: 12, marginTop: 1 },
   cardInfoRow: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -869,21 +1697,94 @@ const styles = StyleSheet.create({
   infoPill: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: 5,
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 8,
     borderWidth: 1,
   },
-  infoPillText: { fontSize: 11, fontFamily: "Inter_500Medium" },
+  infoPillText: {
+    fontFamily: "Inter_500Medium",
+    fontSize: 11,
+  },
   notesCard: {
-    padding: 16,
     borderRadius: 16,
     borderWidth: 1,
-    marginTop: 8,
+    padding: 16,
+    gap: 10,
+  },
+  notesHeading: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
+  },
+  noteRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
     gap: 8,
   },
-  notesHeading: { fontFamily: "Outfit_700Bold", fontSize: 14 },
-  noteRow: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
-  noteText: { flex: 1, fontSize: 12, lineHeight: 18 },
+  noteText: {
+    flex: 1,
+    fontFamily: "Inter_400Regular",
+    fontSize: 12,
+    lineHeight: 18,
+  },
+  emptyWrap: {
+    alignItems: "center",
+    paddingVertical: 48,
+    gap: 8,
+  },
+  emptyTitle: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 16,
+  },
+  compareSelectorRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginTop: 4,
+  },
+  compareSelectorCard: {
+    flex: 1,
+    borderRadius: 14,
+    borderWidth: 1.5,
+    padding: 11,
+  },
+  swapCountiesBtn: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.65)",
+    justifyContent: "flex-end",
+  },
+  pickerSheet: {
+    height: "78%",
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    borderTopWidth: 1,
+    padding: 16,
+  },
+  pickerHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 12,
+  },
+  pickerTitle: {
+    fontFamily: "Outfit_800ExtraBold",
+    fontSize: 18,
+  },
+  pickerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 10,
+    paddingHorizontal: 8,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderRadius: 10,
+  },
 });

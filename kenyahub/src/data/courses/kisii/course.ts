@@ -3051,52 +3051,20 @@ export const KISII_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ee, tobwate ntangana engiya",
-                        "source": "Yes, we have good bullock"
+                        "target": "Mbuya mono (Obeire buya)",
+                        "source": "Thank you"
                 },
                 {
-                        "target": "Inwe Timobwate ngokoraturi rero?",
-                        "source": "Do you have we make today?"
+                        "target": "Mbuya mono!",
+                        "source": "Thank you very much! / Very well!"
                 },
                 {
-                        "target": "Ee, tobwate ngokoraturi engiya",
-                        "source": "Yes, we have good we make"
+                        "target": "Okorwa gose ogotoma chibesa ase esimu",
+                        "source": "Mobile money transaction / Account balance inquiry"
                 },
                 {
-                        "target": "Inwe Timobwate tindi rero?",
-                        "source": "Do you have no today?"
-                },
-                {
-                        "target": "Ee, tobwate tindi engiya",
-                        "source": "Yes, we have good no"
-                },
-                {
-                        "target": "Inwe Timobwate na-kulete rero?",
-                        "source": "Do you have i bring today?"
-                },
-                {
-                        "target": "Ee, tobwate na-kulete engiya",
-                        "source": "Yes, we have good i bring"
-                },
-                {
-                        "target": "Inwe Timobwate kokosolia rero?",
-                        "source": "Do you have i dance today?"
-                },
-                {
-                        "target": "Ee, tobwate kokosolia engiya",
-                        "source": "Yes, we have good i dance"
-                },
-                {
-                        "target": "Inwe Timobwate nanyaweti rero?",
-                        "source": "Do you have i drank today?"
-                },
-                {
-                        "target": "Ee, tobwate nanyaweti engiya",
-                        "source": "Yes, we have good i drank"
-                },
-                {
-                        "target": "Inwe Timobwate Ekige rero?",
-                        "source": "Do you have doorway today?"
+                        "target": "Bwakire / Bwakire buya",
+                        "source": "Good morning (Ekegusii)"
                 }
         ]
 },
@@ -3128,94 +3096,32 @@ export const KISII_UNITS: CourseUnit[] = [
                         "pronunciation": "intwe tokorenda eny-uma inka"
                 },
                 {
-                        "target": "Ebei ya riogo chiro n'eng'ana?",
-                        "source": "What is the price of medicine at the market?",
-                        "pronunciation": "ebei ya riogo chiro n'engana"
+                        "target": "I-kumi na i-mo / I-kumi na o-mu. Noi-kumi na o-mwe",
+                        "source": "Eleven",
+                        "pronunciation": "i-kumi na i-mo / i-kumi na o-mu noi-kumi na o-mwe"
                 },
                 {
-                        "target": "Ebei ya oborwaire chiro n'eng'ana?",
-                        "source": "What is the price of sickness at the market?",
-                        "pronunciation": "ebei ya oborwaire chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya Abaporisi chiro n'eng'ana?",
-                        "source": "What is the price of police at the market?",
-                        "pronunciation": "ebei ya abaporisi chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya Amabe chiro n'eng'ana?",
-                        "source": "What is the price of danger at the market?",
-                        "pronunciation": "ebei ya amabe chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya Omorembe chiro n'eng'ana?",
-                        "source": "What is the price of peace at the market?",
-                        "pronunciation": "ebei ya omorembe chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya ita chiro n'eng'ana?",
-                        "source": "What is the price of „ kill at the market?",
-                        "pronunciation": "ebei ya ita chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya iba chiro n'eng'ana?",
-                        "source": "What is the price of „ steal at the market?",
-                        "pronunciation": "ebei ya iba chiro n'engana"
-                },
-                {
-                        "target": "Ebei ya Omwibi chiro n'eng'ana?",
-                        "source": "What is the price of thief at the market?",
-                        "pronunciation": "ebei ya omwibi chiro n'engana"
+                        "target": "ekumi na yemo",
+                        "source": "Eleven",
+                        "pronunciation": "e-ku-mi na ye-mo"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ee, tobwate Ekige engiya",
-                        "source": "Yes, we have good doorway"
+                        "target": "Intwe tokorenda kokosolia inka",
+                        "source": "We keep i dance at the homestead"
                 },
                 {
-                        "target": "Inwe Timobwate Eny-uma rero?",
-                        "source": "Do you have buttocks today?"
+                        "target": "Intwe tokorenda nanyaweti inka",
+                        "source": "We keep i drank at the homestead"
                 },
                 {
-                        "target": "Ee, tobwate Eny-uma engiya",
-                        "source": "Yes, we have good buttocks"
+                        "target": "Intwe tokorenda Ekige inka",
+                        "source": "We keep doorway at the homestead"
                 },
                 {
-                        "target": "Ebei ya Ebango chiro n'eng'ana?",
-                        "source": "What is the price of loan at the market?"
-                },
-                {
-                        "target": "Ebei ya Ebanki chiro n'eng'ana?",
-                        "source": "What is the price of bank at the market?"
-                },
-                {
-                        "target": "Ebei ya Ese-gi. chiro n'eng'ana?",
-                        "source": "What is the price of war at the market?"
-                },
-                {
-                        "target": "Ebei ya Omu-ti. I-ruka chiro n'eng'ana?",
-                        "source": "What is the price of fear at the market?"
-                },
-                {
-                        "target": "Ebei ya ngokwandi chiro n'eng'ana?",
-                        "source": "What is the price of i die at the market?"
-                },
-                {
-                        "target": "Ebei ya Enyagitari chiro n'eng'ana?",
-                        "source": "What is the price of hospital at the market?"
-                },
-                {
-                        "target": "Ebei ya Omoraria chiro n'eng'ana?",
-                        "source": "What is the price of doctor at the market?"
-                },
-                {
-                        "target": "Ebei ya riogo chiro n'eng'ana?",
-                        "source": "What is the price of medicine at the market?"
-                },
-                {
-                        "target": "Ebei ya oborwaire chiro n'eng'ana?",
-                        "source": "What is the price of sickness at the market?"
+                        "target": "Intwe tokorenda Eny-uma inka",
+                        "source": "We keep buttocks at the homestead"
                 }
         ]
 }

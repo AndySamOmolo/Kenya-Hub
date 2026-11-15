@@ -2898,7 +2898,7 @@ export const MERU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Moɣatɛ na караmu irĩ mɛða-inĩ",
+            "target": "Moɣatɛ na karamu irĩ mɛða-inĩ",
             "source": "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða)"
           }
         ]
@@ -3007,7 +3007,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Meru (Kĩmĩĩrũ) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-R",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
         "words": [
                 {
                         "target": "Tigwa bwega, tharimwa",
@@ -3072,52 +3072,20 @@ export const MERU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ĩĩ, tũrĩ na -rūārū nyingĩ",
-                        "source": "Yes, we have plenty of sick"
+                        "target": "Tigwa bwega, tharimwa",
+                        "source": "Goodbye, be blessed"
                 },
                 {
-                        "target": "Ũrĩ na Hā-hā ũmũnthĩ?",
-                        "source": "Do you have here today?"
+                        "target": "Nĩwega mũno",
+                        "source": "Thank you very much"
                 },
                 {
-                        "target": "Ĩĩ, tũrĩ na Hā-hā nyingĩ",
-                        "source": "Yes, we have plenty of here"
+                        "target": "Ndekera",
+                        "source": "I am sorry / Forgive me"
                 },
                 {
-                        "target": "Ũrĩ na Hā-kūhī ũmũnthĩ?",
-                        "source": "Do you have near today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Hā-kūhī nyingĩ",
-                        "source": "Yes, we have plenty of near"
-                },
-                {
-                        "target": "Ũrĩ na Mu-gui ũmũnthĩ?",
-                        "source": "Do you have arrow today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Mu-gui nyingĩ",
-                        "source": "Yes, we have plenty of arrow"
-                },
-                {
-                        "target": "Ũrĩ na Mw-ato. Gi-taru ũmũnthĩ?",
-                        "source": "Do you have canoe today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Mw-ato. Gi-taru nyingĩ",
-                        "source": "Yes, we have plenty of canoe"
-                },
-                {
-                        "target": "Ũrĩ na Tama ũmũnthĩ?",
-                        "source": "Do you have cloth today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Tama nyingĩ",
-                        "source": "Yes, we have plenty of cloth"
-                },
-                {
-                        "target": "Ũrĩ na Kī-roto ũmũnthĩ?",
-                        "source": "Do you have dream today?"
+                        "target": "Tigwa na wega / Thiĩ na wega",
+                        "source": "Stay well / Go well (Goodbye)"
                 }
         ]
 },
@@ -3126,7 +3094,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Meru (Kĩmĩĩrũ) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-R",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
         "words": [
                 {
                         "target": "Tũrĩmenyerera Mw-ato. Gi-taru mũciĩ gwetũ",
@@ -3190,18 +3158,6 @@ export const MERU_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Ĩĩ, tũrĩ na Kī-roto nyingĩ",
-                        "source": "Yes, we have plenty of dream"
-                },
-                {
-                        "target": "Ũrĩ na Ngoma ũmũnthĩ?",
-                        "source": "Do you have ghost today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Ngoma nyingĩ",
-                        "source": "Yes, we have plenty of ghost"
-                },
                 {
                         "target": "Thogora ya Dola ya Austrĩlia thoko nĩ igana?",
                         "source": "How much is australian dollar at the market?"

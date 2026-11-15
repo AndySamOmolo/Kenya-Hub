@@ -3929,7 +3929,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Mijikenda (Giriama) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain",
+        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
         "words": [
                 {
                         "target": "shukuru",
@@ -3970,26 +3970,6 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                         "target": "pa mumvéra",
                         "source": "Thank, v. a",
                         "pronunciation": "pa mumvéra"
-                },
-                {
-                        "target": "Hunarinda mbíga mudzini mwehu",
-                        "source": "We keep dish in our homestead",
-                        "pronunciation": "hunarinda mbíga mudzini mwehu"
-                },
-                {
-                        "target": "Hunarinda mriángo mudzini mwehu",
-                        "source": "We keep door in our homestead",
-                        "pronunciation": "hunarinda mriángo mudzini mwehu"
-                },
-                {
-                        "target": "Hunarinda niúmba mudzini mwehu",
-                        "source": "We keep home in our homestead",
-                        "pronunciation": "hunarinda niúmba mudzini mwehu"
-                },
-                {
-                        "target": "Hunarinda pẹhe mudzini mwehu",
-                        "source": "We keep ring in our homestead",
-                        "pronunciation": "hunarinda pẹhe mudzini mwehu"
                 }
         ],
         "sentences": [
@@ -4048,67 +4028,37 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Mijikenda (Giriama) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain",
+        "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
         "words": [
                 {
-                        "target": "Hunarinda dári mudzini mwehu",
-                        "source": "We keep roof in our homestead",
-                        "pronunciation": "hunarinda dári mudzini mwehu"
+                        "target": "alánga; tára",
+                        "source": "Count",
+                        "pronunciation": "alanga"
                 },
                 {
-                        "target": "Hunarinda lukambála lugue mudzini mwehu",
-                        "source": "We keep rope in our homestead",
-                        "pronunciation": "hunarinda lukambála lugue mudzini mwehu"
+                        "target": "wa mozi",
+                        "source": "First",
+                        "pronunciation": "wa mo-zi"
                 },
                 {
-                        "target": "Hunarinda kiráhu mudzini mwehu",
-                        "source": "We keep shoe in our homestead",
-                        "pronunciation": "hunarinda kiráhu mudzini mwehu"
+                        "target": "fungáhe",
+                        "source": "Seven",
+                        "pronunciation": "fungahe"
                 },
                 {
-                        "target": "Hunarinda muhámbo mudzini mwehu",
-                        "source": "We keep trap in our homestead",
-                        "pronunciation": "hunarinda muhámbo mudzini mwehu"
+                        "target": "kána mbíri",
+                        "source": "Twice",
+                        "pronunciation": "kana mbiri"
                 },
                 {
-                        "target": "Bei ya pánia sokoni ni ngani?",
-                        "source": "What is the price of mouse at the market?",
-                        "pronunciation": "bei ya pánia sokoni ni ngani"
+                        "target": "afungahe",
+                        "source": "Seven",
+                        "pronunciation": "a-funga-he"
                 },
                 {
-                        "target": "Bei ya njía manga sokoni ni ngani?",
-                        "source": "What is the price of pigeon at the market?",
-                        "pronunciation": "bei ya njía manga sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya mamba sokoni ni ngani?",
-                        "source": "What is the price of „ horse at the market?",
-                        "pronunciation": "bei ya mamba sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya gnónsi sokoni ni ngani?",
-                        "source": "What is the price of sheep at the market?",
-                        "pronunciation": "bei ya gnónsi sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya jipúngu sokoni ni ngani?",
-                        "source": "What is the price of vulture at the market?",
-                        "pronunciation": "bei ya jipúngu sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya muítio sokoni ni ngani?",
-                        "source": "What is the price of awl at the market?",
-                        "pronunciation": "bei ya muítio sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya zóka sokoni ni ngani?",
-                        "source": "What is the price of axe at the market?",
-                        "pronunciation": "bei ya zóka sokoni ni ngani"
-                },
-                {
-                        "target": "Bei ya mkóba sokoni ni ngani?",
-                        "source": "What is the price of bag at the market?",
-                        "pronunciation": "bei ya mkóba sokoni ni ngani"
+                        "target": "ahahu",
+                        "source": "Three",
+                        "pronunciation": "a-ha-hu"
                 }
         ],
         "sentences": [
@@ -4125,40 +4075,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                         "source": "We want to make carry together"
                 },
                 {
-                        "target": "Bei ya kizungúla sokoni ni ngani?",
-                        "source": "What is the price of hare at the market?"
-                },
-                {
-                        "target": "Bei ya kúku sokoni ni ngani?",
-                        "source": "What is the price of hen at the market?"
-                },
-                {
-                        "target": "Bei ya ferási sokoni ni ngani?",
-                        "source": "What is the price of horse at the market?"
-                },
-                {
-                        "target": "Bei ya zui sokoni ni ngani?",
-                        "source": "What is the price of leopard at the market?"
-                },
-                {
-                        "target": "Bei ya jusu sokoni ni ngani?",
-                        "source": "What is the price of lizard at the market?"
-                },
-                {
-                        "target": "Bei ya záha sokoni ni ngani?",
-                        "source": "What is the price of louse at the market?"
-                },
-                {
-                        "target": "Bei ya nianni sokoni ni ngani?",
-                        "source": "What is the price of monkey at the market?"
-                },
-                {
-                        "target": "Bei ya pánia sokoni ni ngani?",
-                        "source": "What is the price of mouse at the market?"
-                },
-                {
-                        "target": "Bei ya njía manga sokoni ni ngani?",
-                        "source": "What is the price of pigeon at the market?"
+                        "target": "alánga; tára",
+                        "source": "Count"
                 }
         ]
 }

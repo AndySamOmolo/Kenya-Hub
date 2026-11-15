@@ -9,7 +9,7 @@ flowchart TD
         AppRouter["Next.js 16 App Router\n(src/app)"]
         Components["Reusable UI Components\n(src/components)"]
         Lib["Core Services & Registry\n(src/lib)"]
-        StaticData["34+ Curated Datasets & Courses\n(src/data)"]
+        StaticData["25 Tools, 23 Language Courses & 23 Dictionaries\n(src/data)"]
         Auditor["Tool Auditor CLI\n(scripts/audit-tools.mjs)"]
     end
 

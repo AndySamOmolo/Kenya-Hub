@@ -1,15 +1,28 @@
-import { ExpandablePillRow } from "../../components/ExpandablePillRow";
-import React, { useState, useMemo, useEffect, useRef } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { useTheme } from "../../theme";
+import React, { useState, useMemo } from "react";
+import { Text, View, Pressable } from "react-native";
+import { useTheme, pressableStyle, triggerHaptic } from "../../theme";
 import { styles } from "./shared";
 import kuccpsData from "../../shared/data/kuccps-clusters.json";
 
-// ─── 5. KUCCPS CLUSTER POINTS CALCULATOR TOOL ───
-export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
+// ─── KUCCPS CLUSTER POINTS CALCULATOR TOOL (Official Weighted Formula) ───
+export function KuccpsClusterTool({
+  onScrollToTop,
+}: { onScrollToTop?: () => void } = {}) {
   const { theme } = useTheme();
-  const grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
+  const grades = [
+    "A",
+    "A-",
+    "B+",
+    "B",
+    "B-",
+    "C+",
+    "C",
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "E",
+  ];
   const allSubjects: string[] = (kuccpsData as any).subjects || [
     "Mathematics",
     "English",
@@ -42,18 +55,28 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
 
   const gradePoints: Record<string, number> = kuccpsData.gradePoints as any;
 
-  const displayedSubjects = showAllSubjects ? allSubjects : allSubjects.slice(0, 8);
+  const displayedSubjects = showAllSubjects
+    ? allSubjects
+    : allSubjects.slice(0, 8);
 
   const summary = useMemo(() => {
-    const entries = Object.entries(selectedGrades).filter(([_, g]) => Boolean(g));
-    const totalPts = entries.reduce((sum, [_, g]) => sum + (gradePoints[g] || 0), 0);
-    const meanPts = entries.length > 0 ? (totalPts / entries.length).toFixed(2) : "0.00";
-    return { count: entries.length, totalPts, meanPts };
+    const entries = Object.entries(selectedGrades).filter(([_, g]) =>
+      Boolean(g)
+    );
+    const sortedPts = entries
+      .map(([_, g]) => gradePoints[g] || 0)
+      .sort((a, b) => b - a);
+    const best7Sum = sortedPts.slice(0, 7).reduce((sum, p) => sum + p, 0);
+    const totalPts = sortedPts.reduce((sum, p) => sum + p, 0);
+    const meanPts =
+      entries.length > 0 ? (totalPts / entries.length).toFixed(2) : "0.00";
+    return { count: entries.length, totalPts, best7Sum, meanPts };
   }, [selectedGrades, gradePoints]);
 
   const clusterResults = useMemo(() => {
     const list = kuccpsData.clusters.map((cluster: any) => {
-      let totalWeight = 0;
+      let rawSumR = 0;
+      let calculable = true;
       const usedSubjects = new Set<string>();
       const breakdown: {
         reqName: string;
@@ -70,7 +93,6 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
         let matchedSubject = req.name;
 
         if (req.name.toLowerCase().includes("any other")) {
-          // Pick the highest unused subject grade
           for (const [subj, g] of Object.entries(selectedGrades)) {
             if (!g || usedSubjects.has(subj)) continue;
             const pts = gradePoints[g] || 0;
@@ -97,7 +119,7 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
         if (bestPoints > 0) {
           usedSubjects.add(matchedSubject);
           const weighted = bestPoints * req.weight;
-          totalWeight += weighted;
+          rawSumR += weighted;
           breakdown.push({
             reqName: req.name,
             matchedSubject,
@@ -106,10 +128,21 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
             weight: req.weight,
             weighted: Math.round(weighted * 10) / 10,
           });
+        } else {
+          calculable = false;
         }
       }
 
-      const minCutoffNum = parseFloat(String(cluster.typicalCutoff).split("–")[0]) || 30;
+      // Official KUCCPS weighted cluster formula: C = sqrt((r / 48) * (t / 84)) * 48
+      const weightedClusterPoints =
+        calculable && summary.best7Sum > 0
+          ? Math.round(
+              Math.sqrt((rawSumR / 48) * (summary.best7Sum / 84)) * 48 * 100
+            ) / 100
+          : 0;
+
+      const minCutoffNum =
+        parseFloat(String(cluster.typicalCutoff).split("–")[0]) || 30;
 
       return {
         id: cluster.id,
@@ -117,50 +150,156 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
         typicalCutoff: cluster.typicalCutoff,
         minCutoffNum,
         courses: cluster.courses,
-        totalWeight: Math.round(totalWeight * 10) / 10,
+        rawWeight: Math.round(rawSumR * 10) / 10,
+        totalWeight: weightedClusterPoints,
+        calculable,
         breakdown,
       };
     });
 
     return [...list].sort((a, b) => {
+      if (a.calculable !== b.calculable) return a.calculable ? -1 : 1;
       if (sortBy === "points") return b.totalWeight - a.totalWeight;
       if (sortBy === "cutoff") return a.minCutoffNum - b.minCutoffNum;
       return a.id - b.id;
     });
-  }, [selectedGrades, gradePoints, sortBy]);
+  }, [selectedGrades, gradePoints, sortBy, summary.best7Sum]);
 
   const highestClusterWeight = useMemo(() => {
-    return clusterResults.reduce((max, c) => Math.max(max, c.totalWeight), 0);
+    return clusterResults
+      .filter((c) => c.calculable)
+      .reduce((max, c) => Math.max(max, c.totalWeight), 0);
   }, [clusterResults]);
 
   return (
     <View style={styles.toolWrap}>
       {/* Summary Row */}
       <View style={{ flexDirection: "row", gap: 8 }}>
-        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
-          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>SUBJECTS</Text>
-          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.textPrimary }}>{summary.count}</Text>
+        <View
+          style={[
+            styles.infoCard,
+            {
+              flex: 1,
+              backgroundColor: theme.bgCard,
+              borderColor: theme.border,
+              alignItems: "center",
+            },
+          ]}
+        >
+          <Text
+            style={{
+              fontSize: 10,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.textMuted,
+            }}
+          >
+            BEST 7 (t)
+          </Text>
+          <Text
+            style={{
+              fontSize: 17,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.textPrimary,
+            }}
+          >
+            {summary.best7Sum} / 84
+          </Text>
         </View>
-        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
-          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>MEAN POINTS</Text>
-          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.sky }}>{summary.meanPts}</Text>
+        <View
+          style={[
+            styles.infoCard,
+            {
+              flex: 1,
+              backgroundColor: theme.bgCard,
+              borderColor: theme.border,
+              alignItems: "center",
+            },
+          ]}
+        >
+          <Text
+            style={{
+              fontSize: 10,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.textMuted,
+            }}
+          >
+            MEAN PTS
+          </Text>
+          <Text
+            style={{
+              fontSize: 17,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.sky,
+            }}
+          >
+            {summary.meanPts}
+          </Text>
         </View>
-        <View style={[styles.infoCard, { flex: 1, backgroundColor: theme.bgCard, borderColor: theme.border, alignItems: "center" }]}>
-          <Text style={{ fontSize: 10, fontWeight: "800", color: theme.textMuted }}>TOP CLUSTER</Text>
-          <Text style={{ fontSize: 18, fontWeight: "900", color: theme.gold }}>{highestClusterWeight} / 48</Text>
+        <View
+          style={[
+            styles.infoCard,
+            {
+              flex: 1,
+              backgroundColor: theme.bgCard,
+              borderColor: theme.border,
+              alignItems: "center",
+            },
+          ]}
+        >
+          <Text
+            style={{
+              fontSize: 10,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.textMuted,
+            }}
+          >
+            TOP CLUSTER
+          </Text>
+          <Text
+            style={{
+              fontSize: 17,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.gold,
+            }}
+          >
+            {highestClusterWeight.toFixed(1)} / 48
+          </Text>
         </View>
       </View>
 
-      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
+      <View
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 8,
+        }}
+      >
         <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
-          Select Your KCSE Subject Grades ({displayedSubjects.length} / {allSubjects.length})
+          Select Your KCSE Subject Grades ({displayedSubjects.length} /{" "}
+          {allSubjects.length})
         </Text>
         <Pressable
-          onPress={() => setShowAllSubjects(!showAllSubjects)}
-          style={[styles.catPill, { backgroundColor: theme.bgCard, borderColor: theme.gold }]}
+          onPress={() => {
+            triggerHaptic(8);
+            setShowAllSubjects(!showAllSubjects);
+          }}
+          style={pressableStyle([
+            styles.catPill,
+            { backgroundColor: theme.bgCard, borderColor: theme.gold },
+          ])}
         >
-          <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
-            {showAllSubjects ? "Show Core 8" : `Show All ${allSubjects.length} Subjects`}
+          <Text
+            style={{
+              fontSize: 11,
+              fontFamily: "Outfit_800ExtraBold",
+              color: theme.gold,
+            }}
+          >
+            {showAllSubjects
+              ? "Show Core 8"
+              : `Show All ${allSubjects.length} Subjects`}
           </Text>
         </Pressable>
       </View>
@@ -174,10 +313,15 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
               { backgroundColor: theme.bgCard, borderColor: theme.border },
             ]}
           >
-            <Text style={[styles.subjName, { color: theme.textPrimary }]} >
+            <Text style={[styles.subjName, { color: theme.textPrimary }]}>
               {subj}
             </Text>
-            <View style={[styles.gradeScroll, { flexDirection: "row", flexWrap: "wrap" }]}>
+            <View
+              style={[
+                styles.gradeScroll,
+                { flexDirection: "row", flexWrap: "wrap" },
+              ]}
+            >
               <Pressable
                 onPress={() =>
                   setSelectedGrades((prev) => {
@@ -189,21 +333,26 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
                 style={[
                   styles.gradeBtn,
                   {
-                    backgroundColor: !selectedGrades[subj] ? theme.bgSecondary : theme.bgElevated,
+                    backgroundColor: !selectedGrades[subj]
+                      ? theme.bgSecondary
+                      : theme.bgElevated,
                     borderColor: theme.border,
                   },
                 ]}
               >
-                <Text style={[styles.gradeBtnText, { color: theme.textMuted }]}>—</Text>
+                <Text style={[styles.gradeBtnText, { color: theme.textMuted }]}>
+                  —
+                </Text>
               </Pressable>
               {grades.map((g) => {
                 const active = selectedGrades[subj] === g;
                 return (
                   <Pressable
                     key={g}
-                    onPress={() =>
-                      setSelectedGrades((prev) => ({ ...prev, [subj]: g }))
-                    }
+                    onPress={() => {
+                      triggerHaptic(6);
+                      setSelectedGrades((prev) => ({ ...prev, [subj]: g }));
+                    }}
                     style={[
                       styles.gradeBtn,
                       {
@@ -231,31 +380,53 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
       </View>
 
       {/* Sort Controls */}
-      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8, marginTop: 10 }}>
+      <View
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 8,
+          marginTop: 10,
+        }}
+      >
         <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
-          Degree Clusters ({clusterResults.length})
+          Degree Clusters ({clusterResults.filter((c) => c.calculable).length}{" "}
+          Eligible / {clusterResults.length} Total)
         </Text>
         <View style={{ flexDirection: "row", gap: 6 }}>
-          {([
-            { key: "points", label: "Highest Pts" },
-            { key: "id", label: "Cluster #" },
-            { key: "cutoff", label: "Lowest Cutoff" },
-          ] as const).map((opt) => (
+          {(
+            [
+              { key: "points", label: "Highest Pts" },
+              { key: "id", label: "Cluster #" },
+              { key: "cutoff", label: "Lowest Cutoff" },
+            ] as const
+          ).map((opt) => (
             <Pressable
               key={opt.key}
-              onPress={() => setSortBy(opt.key)}
-              style={[
+              onPress={() => {
+                triggerHaptic(8);
+                setSortBy(opt.key);
+                onScrollToTop?.();
+              }}
+              style={pressableStyle([
                 styles.catPill,
                 {
-                  backgroundColor: sortBy === opt.key ? theme.gold : theme.bgCard,
+                  backgroundColor:
+                    sortBy === opt.key ? theme.gold : theme.bgCard,
                   borderColor: sortBy === opt.key ? theme.gold : theme.border,
                 },
-              ]}
+              ])}
             >
               <Text
                 style={[
                   styles.catPillText,
-                  { color: sortBy === opt.key ? theme.kenyaBlack : theme.textSecondary },
+                  {
+                    color:
+                      sortBy === opt.key
+                        ? theme.kenyaBlack
+                        : theme.textSecondary,
+                  },
                 ]}
               >
                 {opt.label}
@@ -271,39 +442,103 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
           return (
             <Pressable
               key={c.id}
-              onPress={() => setExpandedCluster(isExpanded ? null : c.id)}
+              onPress={() => {
+                triggerHaptic(6);
+                setExpandedCluster(isExpanded ? null : c.id);
+              }}
               style={[
                 styles.entryCard,
-                { backgroundColor: theme.bgCard, borderColor: theme.border },
+                {
+                  backgroundColor: theme.bgCard,
+                  borderColor: c.calculable
+                    ? theme.border
+                    : `${theme.kenyaRedLight}40`,
+                  opacity: c.calculable ? 1 : 0.72,
+                },
               ]}
             >
               <View style={styles.clusterHeaderRow}>
                 <View style={{ flex: 1 }}>
-                  <Text style={[styles.clusterName, { color: theme.textPrimary }]}>
+                  <Text
+                    style={[styles.clusterName, { color: theme.textPrimary }]}
+                  >
                     Cluster {c.id}: {c.name}
                   </Text>
-                  <Text style={[styles.clusterCutoff, { color: theme.textMuted }]}>
-                    Typical Cutoff: {c.typicalCutoff} pts · Tap for weight breakdown
+                  <Text
+                    style={[styles.clusterCutoff, { color: theme.textMuted }]}
+                  >
+                    {c.calculable
+                      ? `Cutoff: ${c.typicalCutoff} pts · Raw 4-Subj (r): ${c.rawWeight}/48`
+                      : `Missing required subject (${c.breakdown.length}/4 entered)`}
                   </Text>
                 </View>
-                <View style={[styles.clusterBadge, { backgroundColor: `${theme.gold}20` }]}>
-                  <Text style={[styles.clusterPointsText, { color: theme.gold }]}>
-                    {c.totalWeight} / 48
+                <View
+                  style={[
+                    styles.clusterBadge,
+                    {
+                      backgroundColor: c.calculable
+                        ? `${theme.gold}20`
+                        : `${theme.kenyaRedLight}20`,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.clusterPointsText,
+                      {
+                        color: c.calculable ? theme.gold : theme.kenyaRedLight,
+                      },
+                    ]}
+                  >
+                    {c.calculable ? `${c.totalWeight.toFixed(2)} / 48` : "Ineligible"}
                   </Text>
                 </View>
               </View>
 
               {isExpanded && c.breakdown.length > 0 && (
-                <View style={{ marginTop: 8, paddingTop: 8, borderTopWidth: 1, borderTopColor: theme.border, gap: 4 }}>
-                  <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
-                    SUBJECT WEIGHT BREAKDOWN
+                <View
+                  style={{
+                    marginTop: 8,
+                    paddingTop: 8,
+                    borderTopWidth: 1,
+                    borderTopColor: theme.border,
+                    gap: 4,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.gold,
+                    }}
+                  >
+                    SUBJECT WEIGHT BREAKDOWN (r = {c.rawWeight}/48 · t ={" "}
+                    {summary.best7Sum}/84)
                   </Text>
                   {c.breakdown.map((b, bIdx) => (
-                    <View key={bIdx} style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                      <Text style={{ fontSize: 11, color: theme.textSecondary, flex: 1 }}>
+                    <View
+                      key={bIdx}
+                      style={{
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 11,
+                          color: theme.textSecondary,
+                          flex: 1,
+                        }}
+                      >
                         {b.reqName} ({b.matchedSubject})
                       </Text>
-                      <Text style={{ fontSize: 11, fontWeight: "700", color: theme.textPrimary }}>
+                      <Text
+                        style={{
+                          fontSize: 11,
+                          fontFamily: "Outfit_700Bold",
+                          color: theme.textPrimary,
+                        }}
+                      >
                         {b.grade} ({b.points} × {b.weight} = {b.weighted})
                       </Text>
                     </View>
@@ -317,10 +552,18 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
                     key={idx}
                     style={[
                       styles.courseChip,
-                      { backgroundColor: theme.bgElevated, borderColor: theme.border },
+                      {
+                        backgroundColor: theme.bgElevated,
+                        borderColor: theme.border,
+                      },
                     ]}
                   >
-                    <Text style={[styles.courseChipText, { color: theme.textSecondary }]}>
+                    <Text
+                      style={[
+                        styles.courseChipText,
+                        { color: theme.textSecondary },
+                      ]}
+                    >
                       {course}
                     </Text>
                   </View>
@@ -333,4 +576,3 @@ export function KuccpsClusterTool({ onScrollToTop }: { onScrollToTop?: () => voi
     </View>
   );
 }
-

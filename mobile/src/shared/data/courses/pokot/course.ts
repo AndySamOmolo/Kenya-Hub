@@ -2624,7 +2624,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Pastoral Pökoot riddle recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #3)."
           },
           {
-            "target": "Tiangoi!",
+            "target": "Tiangoi! (Riddle #4)",
             "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer: The",
             "pronunciation": "tiangoi"
           },
@@ -3397,7 +3397,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           }
         ]
       },
-{
+      {
         "id": "pokot-rain-harvest-herds",
         "title": "Seasonal Rain, Millet Harvest & Herd Care",
         "icon": "CloudRain",
@@ -3405,59 +3405,59 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Across West Pokot and Baringo, Pökoot communities combine hillside cultivation of finger millet (matai) and sorghum (mosong'ion) with pastoralism in the plains.",
         "grammarTip": "In Pökoot, kararan ('good / peaceful') stands clause-initially in predicate adjective constructions: Kararan koorin nyoo? ('Is the land peaceful today?').",
         "words": [
-                {
-                        "target": "Koorin",
-                        "source": "Land / Country / Place",
-                        "pronunciation": "koh-reen"
-                },
-                {
-                        "target": "Rob",
-                        "source": "Rain",
-                        "pronunciation": "rohb"
-                },
-                {
-                        "target": "Mosong'ion",
-                        "source": "Sorghum",
-                        "pronunciation": "moh-soh-ngyohn"
-                },
-                {
-                        "target": "Matai",
-                        "source": "Finger millet",
-                        "pronunciation": "mah-tah-ee"
-                },
-                {
-                        "target": "Tich",
-                        "source": "Cattle",
-                        "pronunciation": "teech"
-                },
-                {
-                        "target": "Ng'oror",
-                        "source": "Goats",
-                        "pronunciation": "ngoh-rohr"
-                },
-                {
-                        "target": "Chego",
-                        "source": "Milk",
-                        "pronunciation": "cheh-goh"
-                },
-                {
-                        "target": "Moning'",
-                        "source": "Children",
-                        "pronunciation": "moh-neeng"
-                }
+          {
+            "target": "Koorin",
+            "source": "Land / Country / Place",
+            "pronunciation": "koh-reen"
+          },
+          {
+            "target": "Rob",
+            "source": "Rain",
+            "pronunciation": "rohb"
+          },
+          {
+            "target": "Mosong'ion",
+            "source": "Sorghum",
+            "pronunciation": "moh-soh-ngyohn"
+          },
+          {
+            "target": "Matai",
+            "source": "Finger millet",
+            "pronunciation": "mah-tah-ee"
+          },
+          {
+            "target": "Tich",
+            "source": "Cattle",
+            "pronunciation": "teech"
+          },
+          {
+            "target": "Ng'oror",
+            "source": "Goats",
+            "pronunciation": "ngoh-rohr"
+          },
+          {
+            "target": "Chego",
+            "source": "Milk",
+            "pronunciation": "cheh-goh"
+          },
+          {
+            "target": "Moning'",
+            "source": "Children",
+            "pronunciation": "moh-neeng"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Kararan koorin nyoo? Kararan, kichamei rob.",
-                        "source": "How is the land today? It is peaceful, we are grateful for the rain."
-                },
-                {
-                        "target": "Tich ak ng'oror che kararanich kokonu chegoab moning'.",
-                        "source": "Healthy cattle and goats provide milk for the children."
-                }
+          {
+            "target": "Kararan koorin nyoo? Kararan, kichamei rob.",
+            "source": "How is the land today? It is peaceful, we are grateful for the rain."
+          },
+          {
+            "target": "Tich ak ng'oror che kararanich kokonu chegoab moning'.",
+            "source": "Healthy cattle and goats provide milk for the children."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "pokot-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
@@ -3576,7 +3576,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 }
         ]
 },
-        {
+      {
         "id": "pokot-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",

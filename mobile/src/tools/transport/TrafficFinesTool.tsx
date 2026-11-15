@@ -44,7 +44,6 @@ export function TrafficFinesTool({ onScrollToTop }: { onScrollToTop?: () => void
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
-            key={`ti-4-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
           value={search}

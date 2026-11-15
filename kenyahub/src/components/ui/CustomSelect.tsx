@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
-import { ChevronDown, Check } from "lucide-react";
+import React, { useState, useRef, useEffect, useMemo } from "react";
+import { ChevronDown, Check, Search } from "lucide-react";
 
 export interface SelectOption {
   value: string;
@@ -28,10 +28,13 @@ export default function CustomSelect({
   className = "",
 }: CustomSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [filterText, setFilterText] = useState("");
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const filterInputRef = useRef<HTMLInputElement>(null);
 
   // Extract options from children (<option>) if `options` prop not provided
-  const parsedOptions: SelectOption[] = React.useMemo(() => {
+  const parsedOptions: SelectOption[] = useMemo(() => {
     if (options && options.length > 0) return options;
     const list: SelectOption[] = [];
 
@@ -60,6 +63,13 @@ export default function CustomSelect({
   }, [options, children]);
 
   const selectedOption = parsedOptions.find((o) => o.value === String(value)) || parsedOptions[0];
+  const showTypeahead = parsedOptions.length > 8;
+
+  const visibleOptions = useMemo(() => {
+    const q = filterText.trim().toLowerCase();
+    if (!q) return parsedOptions;
+    return parsedOptions.filter((o) => o.label.toLowerCase().includes(q));
+  }, [parsedOptions, filterText]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -69,11 +79,16 @@ export default function CustomSelect({
     };
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
+      if (showTypeahead) {
+        setTimeout(() => filterInputRef.current?.focus(), 30);
+      }
+    } else {
+      setFilterText("");
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [isOpen, showTypeahead]);
 
   const handleSelect = (val: string) => {
     if (onValueChange) {
@@ -83,6 +98,34 @@ export default function CustomSelect({
       onChange({ target: { value: val } });
     }
     setIsOpen(false);
+    setFilterText("");
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!isOpen) {
+      if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        setIsOpen(true);
+        const currentIdx = parsedOptions.findIndex((o) => o.value === String(value));
+        setHighlightedIndex(Math.max(0, currentIdx));
+      }
+      return;
+    }
+
+    if (e.key === "Escape") {
+      e.preventDefault();
+      setIsOpen(false);
+    } else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlightedIndex((prev) => Math.min(visibleOptions.length - 1, prev + 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlightedIndex((prev) => Math.max(0, prev - 1));
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      const chosen = visibleOptions[highlightedIndex];
+      if (chosen) handleSelect(chosen.value);
+    }
   };
 
   // Separate layout/width classes from input-field classes so the outer div sizes properly
@@ -123,25 +166,39 @@ export default function CustomSelect({
 
   const paddingAndFontClasses = isTextXs
     ? hasLeadingIcon
-      ? "select-field--icon-left text-xs! py-1.5! pl-9! pr-2.5!"
-      : "text-xs! py-1.5! px-2.5!"
+      ? "select-field--icon-left text-xs py-1.5! pl-9! pr-2.5!"
+      : "text-xs py-1.5! px-2.5!"
     : isCompact
     ? hasLeadingIcon
       ? "select-field--icon-left py-1.5! pl-9! pr-3! text-xs sm:text-sm"
       : "py-1.5! px-3! text-xs sm:text-sm"
     : hasLeadingIcon
-    ? "select-field--icon-left py-2! sm:py-2.5! pl-9! pr-3! text-xs sm:text-sm"
-    : "py-2! sm:py-2.5! px-3! text-xs sm:text-sm";
+    ? "select-field--icon-left py-2! sm:py-2.5! pl-9! pr-3! text-sm"
+    : "py-2! sm:py-2.5! px-3! text-sm";
 
   return (
-    <div className={`relative ${wrapperClasses}`.trim()} ref={containerRef} id={id}>
+    <div
+      className={`relative ${wrapperClasses}`.trim()}
+      ref={containerRef}
+      id={id}
+      onKeyDown={handleKeyDown}
+    >
       <button
         type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className={`input-field custom-select-trigger flex items-center justify-between gap-1.5 text-left cursor-pointer transition-colors w-full text-[0.75rem]! sm:text-xs! ${paddingAndFontClasses} ${
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        onClick={() => {
+          const next = !isOpen;
+          setIsOpen(next);
+          if (next) {
+            const currentIdx = parsedOptions.findIndex((o) => o.value === String(value));
+            setHighlightedIndex(Math.max(0, currentIdx));
+          }
+        }}
+        className={`input-field custom-select-trigger flex items-center justify-between gap-1.5 text-left cursor-pointer transition-colors w-full ${paddingAndFontClasses} ${
           isOpen ? "border-gold ring-1 ring-gold" : "hover:border-gold/50"
         }`}
-        style={hasLeadingIcon ? { paddingLeft: "2rem", fontSize: "0.75rem" } : { fontSize: "0.75rem" }}
+        style={hasLeadingIcon ? { paddingLeft: "2rem" } : undefined}
       >
         <span className="text-text-primary truncate min-w-0 flex-1">{selectedOption?.label || "Select..."}</span>
         <ChevronDown
@@ -152,25 +209,54 @@ export default function CustomSelect({
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 right-0 sm:right-auto z-50 min-w-full sm:w-max max-w-[calc(100vw-1.75rem)] sm:max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-64 overflow-y-auto animate-fade-in-up">
-          <ul className="py-1">
-            {parsedOptions.map((option, idx) => {
-              const isSelected = option.value === String(value);
-              return (
-                <li key={`${option.value}-${idx}`}>
-                  <button
-                    type="button"
-                    onClick={() => handleSelect(option.value)}
-                    className={`w-full text-left px-3.5 py-2 text-xs sm:text-sm flex items-center justify-between gap-3 hover:bg-bg-elevated transition-colors cursor-pointer ${
-                      isSelected ? "text-gold bg-gold/10 font-semibold" : "text-text-primary"
-                    }`}
-                  >
-                    <span className="break-words min-w-0 flex-1">{option.label}</span>
-                    {isSelected && <Check className="w-4 h-4 text-gold flex-shrink-0" />}
-                  </button>
-                </li>
-              );
-            })}
+        <div
+          role="listbox"
+          className="absolute left-0 right-0 sm:right-auto z-50 min-w-full sm:w-max max-w-[calc(100vw-1.75rem)] sm:max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-72 flex flex-col overflow-hidden animate-fade-in-up"
+        >
+          {showTypeahead && (
+            <div className="flex items-center gap-2 px-3 py-2 border-b border-border bg-bg-elevated/60 shrink-0">
+              <Search className="w-3.5 h-3.5 text-text-muted shrink-0" />
+              <input
+                ref={filterInputRef}
+                type="text"
+                value={filterText}
+                onChange={(e) => {
+                  setFilterText(e.target.value);
+                  setHighlightedIndex(0);
+                }}
+                placeholder="Filter options..."
+                className="w-full bg-transparent text-xs text-text-primary placeholder:text-text-muted outline-none"
+              />
+            </div>
+          )}
+          <ul className="py-1 overflow-y-auto flex-1">
+            {visibleOptions.length === 0 ? (
+              <li className="px-3.5 py-2.5 text-xs text-text-muted">No matching options</li>
+            ) : (
+              visibleOptions.map((option, idx) => {
+                const isSelected = option.value === String(value);
+                const isHighlighted = idx === highlightedIndex;
+                return (
+                  <li key={`${option.value}-${idx}`} role="option" aria-selected={isSelected}>
+                    <button
+                      type="button"
+                      onClick={() => handleSelect(option.value)}
+                      onMouseEnter={() => setHighlightedIndex(idx)}
+                      className={`w-full text-left px-3.5 py-2 text-xs sm:text-sm flex items-center justify-between gap-3 transition-colors cursor-pointer ${
+                        isSelected
+                          ? "text-gold bg-gold/10 font-semibold"
+                          : isHighlighted
+                          ? "bg-bg-elevated text-text-primary"
+                          : "text-text-primary hover:bg-bg-elevated"
+                      }`}
+                    >
+                      <span className="break-words min-w-0 flex-1">{option.label}</span>
+                      {isSelected && <Check className="w-4 h-4 text-gold flex-shrink-0" />}
+                    </button>
+                  </li>
+                );
+              })
+            )}
           </ul>
         </div>
       )}

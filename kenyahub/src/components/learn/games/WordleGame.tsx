@@ -1,59 +1,56 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  Award,
-  Clock,
-  Delete,
-  Flame,
-  Grid3X3,
-  Hash,
-  RotateCcw,
-  Shuffle,
-  Star,
-  Timer,
-  Trophy,
-  Zap,
-} from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Delete, RotateCcw } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
-import { type GameProps, shuffle, pickRandom } from "./shared";
+import { getPrimaryForm } from "@/lib/learn-engine";
+import { type GameProps, pickRandom } from "./shared";
 
 type LetterStatus = "correct" | "present" | "absent" | "empty";
 
-export function WordleGame({ allWords, languageName }: GameProps) {
+function stripDiacriticsToAscii(str: string): string {
+  return getPrimaryForm(str)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[ωΩ]/g, "o")
+    .replace(/ñ/g, "ng")
+    .replace(/[^a-zA-Z]/g, "")
+    .toLowerCase();
+}
+
+export function WordleGame({ allWords, languageName, onAwardXp }: GameProps) {
   const MAX_GUESSES = 6;
 
-  // Pick words with 4-7 letters, no spaces/apostrophes
+  // Include diacritic-bearing words by normalizing to 4-7 base ASCII letters for the grid
   const validWords = useMemo(
     () =>
-      allWords.filter((w) => {
-        const clean = w.target.toLowerCase();
-        return clean.length >= 4 && clean.length <= 7 && /^[a-z]+$/.test(clean);
-      }),
+      allWords
+        .map((w) => ({
+          ...w,
+          asciiTarget: stripDiacriticsToAscii(w.target),
+        }))
+        .filter((w) => w.asciiTarget.length >= 4 && w.asciiTarget.length <= 7),
     [allWords]
   );
 
-  const [targetWord, setTargetWord] = useState<WordPair | null>(null);
+  const [targetWord, setTargetWord] = useState<(WordPair & { asciiTarget: string }) | null>(null);
   const [guesses, setGuesses] = useState<string[]>([]);
   const [currentGuess, setCurrentGuess] = useState("");
   const [gameOver, setGameOver] = useState(false);
   const [won, setWon] = useState(false);
   const [shakeRow, setShakeRow] = useState(false);
   const [revealedRows, setRevealedRows] = useState<Set<number>>(new Set());
-
-  // Key status tracking
   const [keyStatuses, setKeyStatuses] = useState<Record<string, LetterStatus>>({});
 
-  // Initialize
   useEffect(() => {
     if (validWords.length > 0) {
       setTargetWord(pickRandom(validWords));
     }
   }, [validWords]);
 
-  const wordLength = targetWord ? targetWord.target.length : 5;
-  const targetLower = targetWord ? targetWord.target.toLowerCase() : "";
+  const wordLength = targetWord ? targetWord.asciiTarget.length : 5;
+  const targetLower = targetWord ? targetWord.asciiTarget : "";
 
   const getLetterStatuses = useCallback(
     (guess: string): LetterStatus[] => {
@@ -61,14 +58,12 @@ export function WordleGame({ allWords, languageName }: GameProps) {
       const targetChars = targetLower.split("");
       const guessChars = guess.toLowerCase().split("");
 
-      // First pass: correct positions
       for (let i = 0; i < wordLength; i++) {
         if (guessChars[i] === targetChars[i]) {
           result[i] = "correct";
           targetChars[i] = "_";
         }
       }
-      // Second pass: present but wrong position
       for (let i = 0; i < wordLength; i++) {
         if (result[i] === "correct") continue;
         const idx = targetChars.indexOf(guessChars[i]);
@@ -96,12 +91,10 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         const newGuesses = [...guesses, currentGuess];
         setGuesses(newGuesses);
 
-        // Reveal animation
         setTimeout(() => {
           setRevealedRows((prev) => new Set([...prev, newGuesses.length - 1]));
         }, 100);
 
-        // Update key statuses
         const statuses = getLetterStatuses(currentGuess);
         const newKeyStatuses = { ...keyStatuses };
         currentGuess.toLowerCase().split("").forEach((letter, i) => {
@@ -114,10 +107,10 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         });
         setKeyStatuses(newKeyStatuses);
 
-        // Check win/lose
         if (currentGuess.toLowerCase() === targetLower) {
           setWon(true);
           setGameOver(true);
+          onAwardXp?.(25);
         } else if (newGuesses.length >= MAX_GUESSES) {
           setGameOver(true);
         }
@@ -125,14 +118,19 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         setCurrentGuess("");
       } else if (key === "Backspace") {
         setCurrentGuess((g) => g.slice(0, -1));
-      } else if (/^[a-zA-Z']$/.test(key) && currentGuess.length < wordLength) {
-        setCurrentGuess((g) => g + key.toLowerCase());
+      } else {
+        const cleanChar = key
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase();
+        if (/^[a-z]$/.test(cleanChar) && currentGuess.length < wordLength) {
+          setCurrentGuess((g) => g + cleanChar);
+        }
       }
     },
-    [gameOver, targetWord, currentGuess, wordLength, guesses, targetLower, getLetterStatuses, keyStatuses]
+    [gameOver, targetWord, currentGuess, wordLength, guesses, targetLower, getLetterStatuses, keyStatuses, onAwardXp]
   );
 
-  // Keyboard listener
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -168,7 +166,6 @@ export function WordleGame({ allWords, languageName }: GameProps) {
 
   return (
     <div>
-      {/* Hint */}
       <div className="mb-4 rounded-xl border border-border bg-bg-card p-3 text-center">
         <p className="text-xs text-text-muted">
           Guess the {languageName} word meaning:
@@ -176,12 +173,11 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         <p className="mt-1 text-base font-bold text-gold">
           &ldquo;{targetWord.source}&rdquo;
         </p>
-        <p className="mt-0.5 text-[0.55rem] text-text-muted">
-          {wordLength} letters • {MAX_GUESSES - guesses.length} guesses remaining
+        <p className="mt-0.5 text-[0.6rem] text-text-muted">
+          {wordLength} letters (diacritics match base letters) • {MAX_GUESSES - guesses.length} guesses remaining
         </p>
       </div>
 
-      {/* Grid */}
       <div className="mb-4 flex flex-col items-center gap-1.5">
         {Array.from({ length: MAX_GUESSES }).map((_, rowIdx) => {
           const guess = guesses[rowIdx];
@@ -234,7 +230,6 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         })}
       </div>
 
-      {/* Game over */}
       {gameOver && (
         <div
           className={`mb-4 rounded-xl p-4 text-center ${
@@ -246,7 +241,7 @@ export function WordleGame({ allWords, languageName }: GameProps) {
           <p className="text-lg font-bold text-text-primary flex items-center justify-center gap-2">
             {won ? (
               <>
-                <DynamicIcon emoji="🎉" className="w-5 h-5 text-gold inline-block" /> You got it!
+                <DynamicIcon emoji="🎉" className="w-5 h-5 text-gold inline-block" /> You got it! (+25 XP)
               </>
             ) : (
               <>
@@ -254,16 +249,13 @@ export function WordleGame({ allWords, languageName }: GameProps) {
               </>
             )}
           </p>
-          {!won && (
-            <p className="mt-1 text-sm text-text-secondary">
-              The word was:{" "}
-              <span className="font-bold text-gold">{targetWord.target}</span>
-            </p>
-          )}
+          <p className="mt-1 text-sm text-text-secondary">
+            Word: <span className="font-bold text-gold">{targetWord.target}</span>
+          </p>
           <div className="mt-3 flex justify-center gap-2">
             <button
               onClick={newGame}
-              className="flex items-center gap-1.5 rounded-lg bg-gold px-4 py-2 text-xs font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
+              className="flex items-center gap-1.5 rounded-lg bg-gold px-4 py-2 text-xs font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 cursor-pointer"
             >
               <RotateCcw className="h-3.5 w-3.5" /> New Word
             </button>
@@ -271,7 +263,6 @@ export function WordleGame({ allWords, languageName }: GameProps) {
         </div>
       )}
 
-      {/* Keyboard */}
       {!gameOver && (
         <div className="flex flex-col items-center gap-1.5 w-full max-w-md mx-auto px-1">
           {KEYBOARD_ROWS.map((row, i) => (
@@ -283,10 +274,8 @@ export function WordleGame({ allWords, languageName }: GameProps) {
                 return (
                   <button
                     key={key}
-                    onClick={() =>
-                      handleKey(key === "⌫" ? "Backspace" : key)
-                    }
-                    className={`flex items-center justify-center rounded-md sm:rounded-lg font-bold transition-all active:scale-95 ${
+                    onClick={() => handleKey(key === "⌫" ? "Backspace" : key)}
+                    className={`flex items-center justify-center rounded-md sm:rounded-lg font-bold transition-all active:scale-95 cursor-pointer ${
                       isSpecial
                         ? "h-10 sm:h-11 px-1.5 sm:px-3 text-[0.65rem] sm:text-xs shrink-0"
                         : "h-10 sm:h-11 flex-1 min-w-0 max-w-[36px] sm:max-w-[42px] text-xs sm:text-sm"
@@ -311,4 +300,3 @@ export function WordleGame({ allWords, languageName }: GameProps) {
     </div>
   );
 }
-

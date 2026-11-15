@@ -1901,7 +1901,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Daasanach (Dhaasanac) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasana",
+        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
         "words": [
                 {
                         "target": "nagaa / nagaay",
@@ -1937,77 +1937,20 @@ export const DAASANACH_UNITS: CourseUnit[] = [
                         "target": "Káɗe bila / Káɗe geer",
                         "source": "Welcome to our home",
                         "pronunciation": "káe bila"
-                },
-                {
-                        "target": "Ɲiɲi bila Azu káɗe hayna",
-                        "source": "We keep morning in our village",
-                        "pronunciation": "ɲii bila azu káe hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila Azu kana hayna",
-                        "source": "We keep today in our village",
-                        "pronunciation": "ɲii bila azu kana hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila Boru hayna",
-                        "source": "We keep tomorrow in our village",
-                        "pronunciation": "ɲii bila boru hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila Gogu hayna",
-                        "source": "We keep dry season in our village",
-                        "pronunciation": "ɲii bila gogu hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila Irr hayna",
-                        "source": "We keep rainy season in our village",
-                        "pronunciation": "ɲii bila irr hayna"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Kuni maanta Gogu qabtaa?",
-                        "source": "Do you have dry season today?"
-                },
-                {
-                        "target": "Ee, ɲiɲi Gogu miðáb qabna",
-                        "source": "Yes, we have good dry season"
-                },
-                {
                         "target": "Ɲiɲi Gogu šíiš",
                         "source": "Give us dry season now"
-                },
-                {
-                        "target": "Kuni maanta Irr qabtaa?",
-                        "source": "Do you have rainy season today?"
-                },
-                {
-                        "target": "Ee, ɲiɲi Irr miðáb qabna",
-                        "source": "Yes, we have good rainy season"
                 },
                 {
                         "target": "Ɲiɲi Irr šíiš",
                         "source": "Give us rainy season now"
                 },
                 {
-                        "target": "Kuni maanta kana qabtaa?",
-                        "source": "Do you have new today?"
-                },
-                {
-                        "target": "Ee, ɲiɲi kana miðáb qabna",
-                        "source": "Yes, we have good new"
-                },
-                {
                         "target": "Ɲiɲi kana šíiš",
                         "source": "Give us new now"
-                },
-                {
-                        "target": "Kuni maanta kul qabtaa?",
-                        "source": "Do you have warm today?"
-                },
-                {
-                        "target": "Ee, ɲiɲi kul miðáb qabna",
-                        "source": "Yes, we have good warm"
                 },
                 {
                         "target": "Ɲiɲi kul šíiš",
@@ -2020,23 +1963,8 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Daasanach (Dhaasanac) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasana",
+        "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
         "words": [
-                {
-                        "target": "Ɲiɲi bila kana hayna",
-                        "source": "We keep new in our village",
-                        "pronunciation": "ɲii bila kana hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila kul hayna",
-                        "source": "We keep warm in our village",
-                        "pronunciation": "ɲii bila kul hayna"
-                },
-                {
-                        "target": "Ɲiɲi bila Dímì hayna",
-                        "source": "We keep dimi ceremony in our village",
-                        "pronunciation": "ɲii bila dímì hayna"
-                },
                 {
                         "target": "Gatii Biiy suug meeqa?",
                         "source": "How much is money at the market?",
@@ -2084,14 +2012,6 @@ export const DAASANACH_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Kuni maanta Dímì qabtaa?",
-                        "source": "Do you have dimi ceremony today?"
-                },
-                {
-                        "target": "Ee, ɲiɲi Dímì miðáb qabna",
-                        "source": "Yes, we have good dimi ceremony"
-                },
                 {
                         "target": "Ɲiɲi Dímì šíiš",
                         "source": "Give us dimi ceremony now"

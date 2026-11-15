@@ -25,6 +25,8 @@ import { VocabQuizGame } from "./games/VocabQuizGame";
 interface GamesHubProps {
   units: CourseUnit[];
   languageName: string;
+  languageId?: string;
+  onAwardXp?: (xp: number) => void;
   onBack: () => void;
 }
 
@@ -33,6 +35,8 @@ type GameType = "menu" | "wordle" | "scramble" | "speed" | "memory" | "riddles" 
 export default function GamesHub({
   units,
   languageName,
+  languageId,
+  onAwardXp,
   onBack,
 }: GamesHubProps) {
   const [activeGame, setActiveGame] = useState<GameType>("menu");
@@ -46,11 +50,10 @@ export default function GamesHub({
   if (activeGame === "menu") {
     return (
       <div className="mx-auto max-w-2xl px-0 sm:px-4 pb-8">
-        {/* Header */}
         <div className="mb-6">
           <button
             onClick={onBack}
-            className="mb-4 flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors active:text-text-primary sm:hover:text-text-primary"
+            className="mb-4 flex items-center gap-2 text-sm font-semibold text-text-muted transition-colors active:text-text-primary sm:hover:text-text-primary cursor-pointer"
           >
             <ArrowLeft className="h-4 w-4" /> Back to lessons
           </button>
@@ -61,20 +64,18 @@ export default function GamesHub({
               Language Games
             </h2>
             <p className="mt-2 text-sm text-text-secondary">
-              Practice {languageName} vocabulary through fun mini-games
+              Practice {languageName} vocabulary through interactive mini-games and earn bonus XP
             </p>
-            <p className="mt-3 text-[0.65rem] font-semibold uppercase tracking-wide text-text-muted">
-              Casual practice only · scores do not change lesson progress
+            <p className="mt-3 text-[0.65rem] font-semibold uppercase tracking-wide text-gold">
+              Earn +15 to +25 XP per game round completed
             </p>
           </div>
         </div>
 
-        {/* Game Cards */}
         <div className="grid gap-3 sm:grid-cols-2">
-          {/* Wordle */}
           <button
             onClick={() => setActiveGame("wordle")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500">
@@ -95,10 +96,9 @@ export default function GamesHub({
             </p>
           </button>
 
-          {/* Word Scramble */}
           <button
             onClick={() => setActiveGame("scramble")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-500">
@@ -119,10 +119,9 @@ export default function GamesHub({
             </p>
           </button>
 
-          {/* Speed Match */}
           <button
             onClick={() => setActiveGame("speed")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
@@ -143,10 +142,9 @@ export default function GamesHub({
             </p>
           </button>
 
-          {/* Memory Cards */}
           <button
             onClick={() => setActiveGame("memory")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/10 text-sky-500">
@@ -167,10 +165,9 @@ export default function GamesHub({
             </p>
           </button>
 
-          {/* Riddle Master */}
           <button
             onClick={() => setActiveGame("riddles")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
@@ -186,14 +183,13 @@ export default function GamesHub({
               </div>
             </div>
             <p className="text-xs text-text-secondary">
-              Solve authentic Kenyan proverbs, riddles, and cultural sayings.
+              Solve authentic {languageName} proverbs, riddles, and cultural sayings.
             </p>
           </button>
 
-          {/* Vocabulary Blitz */}
           <button
             onClick={() => setActiveGame("vocabQuiz")}
-            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5"
+            className="group rounded-2xl border border-border bg-bg-card p-5 text-left transition-all active:scale-[0.98] sm:hover:border-gold/40 sm:hover:shadow-lg sm:hover:shadow-gold/5 cursor-pointer"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500">
@@ -221,7 +217,7 @@ export default function GamesHub({
     <div className="mb-4 flex items-center gap-3 sm:mb-6">
       <button
         onClick={() => setActiveGame("menu")}
-        className="shrink-0 rounded-lg p-2 text-text-muted transition-colors active:bg-bg-card sm:hover:text-text-primary"
+        className="shrink-0 rounded-lg p-2 text-text-muted transition-colors active:bg-bg-card sm:hover:text-text-primary cursor-pointer"
       >
         <ArrowLeft className="h-5 w-5" />
       </button>
@@ -239,41 +235,39 @@ export default function GamesHub({
       {activeGame === "wordle" && (
         <>
           {gameHeader("Wordle", "🟩")}
-          <WordleGame allWords={allWords} languageName={languageName} />
+          <WordleGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
       {activeGame === "scramble" && (
         <>
           {gameHeader("Word Scramble", "🔤")}
-          <ScrambleGame allWords={allWords} languageName={languageName} />
+          <ScrambleGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
       {activeGame === "speed" && (
         <>
           {gameHeader("Speed Match", "⚡")}
-          <SpeedMatchGame allWords={allWords} languageName={languageName} />
+          <SpeedMatchGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
       {activeGame === "memory" && (
         <>
           {gameHeader("Memory Cards", "🃏")}
-          <MemoryGame allWords={allWords} languageName={languageName} />
+          <MemoryGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
       {activeGame === "riddles" && (
         <>
           {gameHeader("Riddle Master", "🧩")}
-          <RiddleGame allWords={allWords} languageName={languageName} />
+          <RiddleGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
       {activeGame === "vocabQuiz" && (
         <>
           {gameHeader("Vocabulary Blitz", "🎯")}
-          <VocabQuizGame allWords={allWords} languageName={languageName} />
+          <VocabQuizGame allWords={allWords} languageName={languageName} languageId={languageId} onAwardXp={onAwardXp} />
         </>
       )}
     </div>
   );
 }
-
-

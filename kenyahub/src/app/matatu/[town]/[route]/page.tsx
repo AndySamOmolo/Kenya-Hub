@@ -78,6 +78,7 @@ export async function generateMetadata({
       languages: {
         "en-KE": canonicalUrl,
         en: canonicalUrl,
+        "x-default": canonicalUrl,
       },
     },
   };

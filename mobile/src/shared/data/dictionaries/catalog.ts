@@ -2833,7 +2833,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 300067;
+export const TOTAL_DICTIONARY_ENTRIES: number = 287787;
 
 const _swahiliMeta = ALL_DICT_METAS.find((m) => m.languageId === "swahili");
 if (_swahiliMeta) {
@@ -2988,7 +2988,7 @@ if (_tesoMeta) {
 // ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-14) ──
 const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, number> }> = {
   "borana": {
-    "total": 19967,
+    "total": 19404,
     "cats": {
       "greetings": 39,
       "numbers": 107,
@@ -2996,20 +2996,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 301,
       "animals": 274,
       "nature": 428,
-      "food": 1000,
+      "food": 991,
       "home": 3334,
       "verbs": 1156,
       "adjectives": 312,
-      "travel": 705,
-      "shopping": 1646,
+      "travel": 698,
+      "shopping": 1127,
       "emergency": 438,
-      "time": 1192,
-      "phrases": 8735,
+      "time": 1178,
+      "phrases": 8721,
       "culture-history": 131
     }
   },
   "daasanach": {
-    "total": 4224,
+    "total": 3908,
     "cats": {
       "greetings": 7,
       "numbers": 24,
@@ -3017,20 +3017,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 69,
       "animals": 43,
       "nature": 67,
-      "food": 323,
+      "food": 322,
       "home": 32,
       "verbs": 83,
       "adjectives": 40,
       "travel": 318,
-      "shopping": 518,
+      "shopping": 517,
       "emergency": 144,
-      "time": 489,
-      "phrases": 2033,
+      "time": 485,
+      "phrases": 1723,
       "culture-history": 6
     }
   },
   "embu": {
-    "total": 6460,
+    "total": 5950,
     "cats": {
       "greetings": 8,
       "numbers": 18,
@@ -3043,15 +3043,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 59,
       "adjectives": 15,
       "travel": 518,
-      "shopping": 818,
+      "shopping": 548,
       "emergency": 251,
       "time": 816,
-      "phrases": 3194,
+      "phrases": 2954,
       "culture-history": 14
     }
   },
   "ilchamus": {
-    "total": 6133,
+    "total": 5660,
     "cats": {
       "greetings": 8,
       "numbers": 21,
@@ -3064,15 +3064,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 27,
       "adjectives": 50,
       "travel": 479,
-      "shopping": 810,
+      "shopping": 542,
       "emergency": 211,
       "time": 760,
-      "phrases": 3071,
+      "phrases": 2866,
       "culture-history": 70
     }
   },
   "kalenjin": {
-    "total": 17228,
+    "total": 16539,
     "cats": {
       "greetings": 18,
       "numbers": 120,
@@ -3085,15 +3085,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 473,
       "adjectives": 276,
       "travel": 997,
-      "shopping": 1355,
+      "shopping": 926,
       "emergency": 840,
       "time": 1288,
-      "phrases": 6229,
+      "phrases": 5969,
       "culture-history": 1571
     }
   },
   "kamba": {
-    "total": 14994,
+    "total": 14287,
     "cats": {
       "greetings": 21,
       "numbers": 88,
@@ -3101,20 +3101,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 257,
       "animals": 272,
       "nature": 278,
-      "food": 876,
+      "food": 874,
       "home": 1493,
       "verbs": 379,
       "adjectives": 202,
       "travel": 890,
-      "shopping": 1380,
-      "emergency": 816,
-      "time": 1276,
-      "phrases": 6209,
+      "shopping": 947,
+      "emergency": 556,
+      "time": 1270,
+      "phrases": 6203,
       "culture-history": 394
     }
   },
   "kikuyu": {
-    "total": 26454,
+    "total": 26445,
     "cats": {
       "greetings": 47,
       "numbers": 185,
@@ -3122,20 +3122,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 637,
       "animals": 439,
       "nature": 680,
-      "food": 1271,
+      "food": 1269,
       "home": 4702,
       "verbs": 1198,
       "adjectives": 590,
       "travel": 1105,
-      "shopping": 1654,
+      "shopping": 1652,
       "emergency": 1013,
-      "time": 1571,
-      "phrases": 7878,
+      "time": 1568,
+      "phrases": 7876,
       "culture-history": 3128
     }
   },
   "kisii": {
-    "total": 9003,
+    "total": 8345,
     "cats": {
       "greetings": 10,
       "numbers": 114,
@@ -3143,20 +3143,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 170,
       "animals": 150,
       "nature": 118,
-      "food": 666,
+      "food": 660,
       "home": 124,
       "verbs": 52,
       "adjectives": 32,
       "travel": 621,
-      "shopping": 1020,
+      "shopping": 668,
       "emergency": 616,
-      "time": 971,
-      "phrases": 4053,
+      "time": 954,
+      "phrases": 3770,
       "culture-history": 195
     }
   },
   "luhya": {
-    "total": 14988,
+    "total": 14939,
     "cats": {
       "greetings": 28,
       "numbers": 294,
@@ -3164,20 +3164,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 523,
       "animals": 596,
       "nature": 432,
-      "food": 981,
+      "food": 974,
       "home": 980,
       "verbs": 584,
       "adjectives": 222,
-      "travel": 865,
-      "shopping": 1283,
+      "travel": 860,
+      "shopping": 1273,
       "emergency": 790,
-      "time": 1227,
-      "phrases": 5389,
+      "time": 1215,
+      "phrases": 5374,
       "culture-history": 500
     }
   },
   "luo": {
-    "total": 13643,
+    "total": 12177,
     "cats": {
       "greetings": 27,
       "numbers": 66,
@@ -3185,20 +3185,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 136,
       "animals": 173,
       "nature": 152,
-      "food": 779,
+      "food": 515,
       "home": 654,
       "verbs": 406,
       "adjectives": 77,
       "travel": 709,
-      "shopping": 1191,
-      "emergency": 1082,
-      "time": 1143,
-      "phrases": 6530,
+      "shopping": 796,
+      "emergency": 818,
+      "time": 1132,
+      "phrases": 5998,
       "culture-history": 361
     }
   },
   "maasai": {
-    "total": 12466,
+    "total": 10687,
     "cats": {
       "greetings": 13,
       "numbers": 78,
@@ -3206,20 +3206,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 175,
       "animals": 231,
       "nature": 152,
-      "food": 812,
+      "food": 717,
       "home": 220,
       "verbs": 143,
       "adjectives": 111,
       "travel": 713,
-      "shopping": 1274,
+      "shopping": 625,
       "emergency": 731,
-      "time": 1164,
-      "phrases": 5836,
+      "time": 843,
+      "phrases": 5122,
       "culture-history": 613
     }
   },
   "meru": {
-    "total": 8903,
+    "total": 8383,
     "cats": {
       "greetings": 10,
       "numbers": 19,
@@ -3235,12 +3235,12 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 1100,
       "emergency": 633,
       "time": 1011,
-      "phrases": 4387,
+      "phrases": 3867,
       "culture-history": 190
     }
   },
   "mijikenda": {
-    "total": 24784,
+    "total": 23937,
     "cats": {
       "greetings": 27,
       "numbers": 113,
@@ -3248,20 +3248,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 269,
       "animals": 230,
       "nature": 399,
-      "food": 1078,
+      "food": 1062,
       "home": 5541,
       "verbs": 2002,
       "adjectives": 283,
-      "travel": 747,
-      "shopping": 1644,
-      "emergency": 429,
-      "time": 1167,
-      "phrases": 10329,
+      "travel": 736,
+      "shopping": 1117,
+      "emergency": 169,
+      "time": 1145,
+      "phrases": 10318,
       "culture-history": 361
     }
   },
   "pokomo": {
-    "total": 11945,
+    "total": 11874,
     "cats": {
       "greetings": 18,
       "numbers": 55,
@@ -3269,15 +3269,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 158,
       "animals": 91,
       "nature": 202,
-      "food": 899,
+      "food": 880,
       "home": 1230,
       "verbs": 247,
       "adjectives": 118,
       "travel": 674,
-      "shopping": 1704,
+      "shopping": 1691,
       "emergency": 346,
-      "time": 1165,
-      "phrases": 4686,
+      "time": 1139,
+      "phrases": 4673,
       "culture-history": 279
     }
   },
@@ -3303,7 +3303,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
     }
   },
   "rendille": {
-    "total": 3789,
+    "total": 3496,
     "cats": {
       "greetings": 8,
       "numbers": 13,
@@ -3311,20 +3311,20 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "body": 26,
       "animals": 20,
       "nature": 25,
-      "food": 296,
+      "food": 295,
       "home": 8,
       "verbs": 31,
       "adjectives": 15,
-      "travel": 293,
+      "travel": 292,
       "shopping": 465,
-      "emergency": 138,
-      "time": 454,
-      "phrases": 1949,
+      "emergency": 137,
+      "time": 452,
+      "phrases": 1661,
       "culture-history": 30
     }
   },
   "samburu": {
-    "total": 9718,
+    "total": 9458,
     "cats": {
       "greetings": 12,
       "numbers": 23,
@@ -3340,12 +3340,12 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 1393,
       "emergency": 266,
       "time": 1219,
-      "phrases": 4723,
+      "phrases": 4463,
       "culture-history": 339
     }
   },
   "somali": {
-    "total": 13900,
+    "total": 13640,
     "cats": {
       "greetings": 13,
       "numbers": 141,
@@ -3361,12 +3361,12 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 1291,
       "emergency": 706,
       "time": 1242,
-      "phrases": 6786,
+      "phrases": 6526,
       "culture-history": 572
     }
   },
   "swahili": {
-    "total": 32056,
+    "total": 31603,
     "cats": {
       "greetings": 76,
       "numbers": 237,
@@ -3379,15 +3379,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 3026,
       "adjectives": 449,
       "travel": 1306,
-      "shopping": 1834,
+      "shopping": 1389,
       "emergency": 1126,
-      "time": 1594,
-      "phrases": 16093,
+      "time": 1589,
+      "phrases": 16090,
       "culture-history": 267
     }
   },
   "taita": {
-    "total": 12717,
+    "total": 12221,
     "cats": {
       "greetings": 17,
       "numbers": 75,
@@ -3399,16 +3399,16 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "home": 489,
       "verbs": 450,
       "adjectives": 154,
-      "travel": 556,
-      "shopping": 1495,
+      "travel": 555,
+      "shopping": 1006,
       "emergency": 332,
-      "time": 1326,
-      "phrases": 5300,
+      "time": 1323,
+      "phrases": 5297,
       "culture-history": 984
     }
   },
   "taveta": {
-    "total": 5789,
+    "total": 5255,
     "cats": {
       "greetings": 7,
       "numbers": 36,
@@ -3420,16 +3420,16 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "home": 47,
       "verbs": 64,
       "adjectives": 33,
-      "travel": 478,
-      "shopping": 739,
+      "travel": 469,
+      "shopping": 478,
       "emergency": 224,
-      "time": 713,
-      "phrases": 2728,
+      "time": 686,
+      "phrases": 2491,
       "culture-history": 22
     }
   },
   "teso": {
-    "total": 7691,
+    "total": 6834,
     "cats": {
       "greetings": 9,
       "numbers": 25,
@@ -3442,15 +3442,15 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 55,
       "adjectives": 17,
       "travel": 605,
-      "shopping": 1017,
+      "shopping": 680,
       "emergency": 269,
       "time": 958,
-      "phrases": 3737,
+      "phrases": 3217,
       "culture-history": 176
     }
   },
   "turkana": {
-    "total": 10975,
+    "total": 10505,
     "cats": {
       "greetings": 12,
       "numbers": 27,
@@ -3463,7 +3463,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "verbs": 284,
       "adjectives": 95,
       "travel": 750,
-      "shopping": 1421,
+      "shopping": 951,
       "emergency": 292,
       "time": 1300,
       "phrases": 5121,

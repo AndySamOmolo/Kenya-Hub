@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:21:03.484Z",
+  "generatedAt": "2026-11-15T17:14:46.484Z",
   "registryCount": 25,
   "routeCount": 25,
   "courseCount": 23,
@@ -386,7 +386,7 @@
       "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/swahili.ts",
       "dictionaryFile": "src/data/dictionaries/swahili.json",
-      "dictionaryEntries": 32056,
+      "dictionaryEntries": 31603,
       "status": "ok"
     },
     {
@@ -395,7 +395,7 @@
       "grammarFile": "src/data/courses/kikuyu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kikuyu.ts",
       "dictionaryFile": "src/data/dictionaries/kikuyu.json",
-      "dictionaryEntries": 26454,
+      "dictionaryEntries": 26445,
       "status": "ok"
     },
     {
@@ -404,7 +404,7 @@
       "grammarFile": "src/data/courses/luo/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/luo.ts",
       "dictionaryFile": "src/data/dictionaries/luo.json",
-      "dictionaryEntries": 13643,
+      "dictionaryEntries": 12177,
       "status": "ok"
     },
     {
@@ -413,7 +413,7 @@
       "grammarFile": "src/data/courses/luhya/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/luhya.ts",
       "dictionaryFile": "src/data/dictionaries/luhya.json",
-      "dictionaryEntries": 14988,
+      "dictionaryEntries": 14939,
       "status": "ok"
     },
     {
@@ -422,7 +422,7 @@
       "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kamba.ts",
       "dictionaryFile": "src/data/dictionaries/kamba.json",
-      "dictionaryEntries": 14994,
+      "dictionaryEntries": 14287,
       "status": "ok"
     },
     {
@@ -431,7 +431,7 @@
       "grammarFile": "src/data/courses/kalenjin/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kalenjin.ts",
       "dictionaryFile": "src/data/dictionaries/kalenjin.json",
-      "dictionaryEntries": 17228,
+      "dictionaryEntries": 16539,
       "status": "ok"
     },
     {
@@ -440,7 +440,7 @@
       "grammarFile": "src/data/courses/kisii/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kisii.ts",
       "dictionaryFile": "src/data/dictionaries/kisii.json",
-      "dictionaryEntries": 9003,
+      "dictionaryEntries": 8345,
       "status": "ok"
     },
     {
@@ -449,7 +449,7 @@
       "grammarFile": "src/data/courses/meru/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/meru.ts",
       "dictionaryFile": "src/data/dictionaries/meru.json",
-      "dictionaryEntries": 8903,
+      "dictionaryEntries": 8383,
       "status": "ok"
     },
     {
@@ -458,7 +458,7 @@
       "grammarFile": "src/data/courses/somali/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/somali.ts",
       "dictionaryFile": "src/data/dictionaries/somali.json",
-      "dictionaryEntries": 13900,
+      "dictionaryEntries": 13640,
       "status": "ok"
     },
     {
@@ -467,7 +467,7 @@
       "grammarFile": "src/data/courses/maasai/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/maasai.ts",
       "dictionaryFile": "src/data/dictionaries/maasai.json",
-      "dictionaryEntries": 12466,
+      "dictionaryEntries": 10687,
       "status": "ok"
     },
     {
@@ -476,7 +476,7 @@
       "grammarFile": "src/data/courses/turkana/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/turkana.ts",
       "dictionaryFile": "src/data/dictionaries/turkana.json",
-      "dictionaryEntries": 10975,
+      "dictionaryEntries": 10505,
       "status": "ok"
     },
     {
@@ -485,7 +485,7 @@
       "grammarFile": "src/data/courses/mijikenda/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/mijikenda.ts",
       "dictionaryFile": "src/data/dictionaries/mijikenda.json",
-      "dictionaryEntries": 24784,
+      "dictionaryEntries": 23937,
       "status": "ok"
     },
     {
@@ -494,7 +494,7 @@
       "grammarFile": "src/data/courses/teso/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/teso.ts",
       "dictionaryFile": "src/data/dictionaries/teso.json",
-      "dictionaryEntries": 7691,
+      "dictionaryEntries": 6834,
       "status": "ok"
     },
     {
@@ -503,7 +503,7 @@
       "grammarFile": "src/data/courses/embu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/embu.ts",
       "dictionaryFile": "src/data/dictionaries/embu.json",
-      "dictionaryEntries": 6460,
+      "dictionaryEntries": 5950,
       "status": "ok"
     },
     {
@@ -512,7 +512,7 @@
       "grammarFile": "src/data/courses/taita/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/taita.ts",
       "dictionaryFile": "src/data/dictionaries/taita.json",
-      "dictionaryEntries": 12717,
+      "dictionaryEntries": 12221,
       "status": "ok"
     },
     {
@@ -521,7 +521,7 @@
       "grammarFile": "src/data/courses/taveta/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/taveta.ts",
       "dictionaryFile": "src/data/dictionaries/taveta.json",
-      "dictionaryEntries": 5789,
+      "dictionaryEntries": 5255,
       "status": "ok"
     },
     {
@@ -530,7 +530,7 @@
       "grammarFile": "src/data/courses/pokomo/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/pokomo.ts",
       "dictionaryFile": "src/data/dictionaries/pokomo.json",
-      "dictionaryEntries": 11945,
+      "dictionaryEntries": 11874,
       "status": "ok"
     },
     {
@@ -539,7 +539,7 @@
       "grammarFile": "src/data/courses/borana/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/borana.ts",
       "dictionaryFile": "src/data/dictionaries/borana.json",
-      "dictionaryEntries": 19967,
+      "dictionaryEntries": 19404,
       "status": "ok"
     },
     {
@@ -548,7 +548,7 @@
       "grammarFile": "src/data/courses/rendille/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/rendille.ts",
       "dictionaryFile": "src/data/dictionaries/rendille.json",
-      "dictionaryEntries": 3789,
+      "dictionaryEntries": 3496,
       "status": "ok"
     },
     {
@@ -557,7 +557,7 @@
       "grammarFile": "src/data/courses/samburu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/samburu.ts",
       "dictionaryFile": "src/data/dictionaries/samburu.json",
-      "dictionaryEntries": 9718,
+      "dictionaryEntries": 9458,
       "status": "ok"
     },
     {
@@ -566,7 +566,7 @@
       "grammarFile": "src/data/courses/ilchamus/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/ilchamus.ts",
       "dictionaryFile": "src/data/dictionaries/ilchamus.json",
-      "dictionaryEntries": 6133,
+      "dictionaryEntries": 5660,
       "status": "ok"
     },
     {
@@ -584,7 +584,7 @@
       "grammarFile": "src/data/courses/daasanach/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/daasanach.ts",
       "dictionaryFile": "src/data/dictionaries/daasanach.json",
-      "dictionaryEntries": 4224,
+      "dictionaryEntries": 3908,
       "status": "ok"
     }
   ]

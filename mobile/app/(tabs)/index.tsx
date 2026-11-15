@@ -1,13 +1,12 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  Linking,
   Modal,
-  Platform,
   Pressable,
   ScrollView,
-  StyleSheet,
   Text,
   TextInput,
   View,
@@ -20,34 +19,53 @@ import {
   KenyaStripe,
   AndroidTopAppBar,
   androidRipple,
+  pressableStyle,
+  triggerHaptic,
+  parseSavedTools,
+  serializeSavedTools,
 } from "../../src/theme";
 import {
   TOOLS,
   TOOL_CATEGORIES,
   getToolUsageScore,
-  getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import {
   STATIC_BLOG_POSTS,
   type StaticBlogPost,
 } from "../../src/shared/data/blog-posts";
-import {
-  INITIAL_RANDOM_WORDS,
-  TOTAL_DICTIONARY_ENTRIES,
-  ALL_DICT_METAS,
-} from "../../src/shared/data/language-sources";
 import holidaysData from "../../src/shared/data/public-holidays.json";
+import matatuData from "../../src/shared/data/matatu-routes.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 import {
   COURSE_NAMES,
   ROTATING_LANGUAGES,
-  SUPER_APP_LAUNCHER_ITEMS,
   BlogMarkdownContent,
   PopularToolRow,
   SUPER_APP_APP_TILES,
+  FeaturedLanguageWidget,
+  WordOfTheMomentWidget,
 } from "../../src/components/home/HomeHelpers";
 import { styles } from "../../src/components/home/styles";
+
+const MATATU_KEYWORDS = [
+  "matatu",
+  "sacco",
+  "bus",
+  "fare",
+  "stage",
+  "route",
+  "commute",
+  "terminus",
+  "nairobi",
+  "mombasa",
+  "kisumu",
+  "nakuru",
+  "eldoret",
+  "thika",
+];
+
+const WIDGET_SNAP_INTERVAL = 295 + 12;
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -56,20 +74,12 @@ export default function HomeScreen() {
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
+  const [readerProgress, setReaderProgress] = useState(0);
+  const [showHolidaysModal, setShowHolidaysModal] = useState(false);
   const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
-  const [wordIdx, setWordIdx] = useState<number>(0);
-  const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
-    () => new Date().getDate() % ROTATING_LANGUAGES.length
-  );
+  const [activeWidgetPage, setActiveWidgetPage] = useState(0);
+  const [widgetsTouchPaused, setWidgetsTouchPaused] = useState(false);
 
-  // Auto-rotate daily widgets every 6 seconds so user experiences rotating languages & words
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setFeaturedLangIdx((prev) => (prev + 1) % ROTATING_LANGUAGES.length);
-      setWordIdx((prev) => (prev + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
   const [learnStats, setLearnStats] = useState<{
     langId: string;
     langName: string;
@@ -89,7 +99,7 @@ export default function HomeScreen() {
   useFocusEffect(
     useCallback(() => {
       AsyncStorage.getItem("kh-saved-tools")
-        .then((val) => setPinnedSlugs(val?.split(",").filter(Boolean) ?? []))
+        .then((val) => setPinnedSlugs(parseSavedTools(val)))
         .catch(() => setPinnedSlugs([]));
 
       AsyncStorage.getItem("kh-tool-visits")
@@ -136,7 +146,7 @@ export default function HomeScreen() {
     }, [])
   );
 
-    // Dynamic 8 launcher tiles based on user's actual visit counts + popular defaults
+  // Dynamic 8 launcher tiles based on user's actual visit counts + popular defaults
   const dynamicLauncherItems = useMemo(() => {
     const TOOL_META: Record<string, { label: string; icon: any; color: string }> = {
       "paye-calculator": { label: "PAYE Tax", icon: "calculator", color: "#2FA463" },
@@ -157,7 +167,6 @@ export default function HomeScreen() {
       "water-bill-calculator": { label: "Water Bill", icon: "water", color: "#0EA5E9" },
     };
 
-    // Sort by user visits first, then curated usage score
     const sorted = [...TOOLS].sort((a, b) => {
       const vA = visitCounts[a.slug] || 0;
       const vB = visitCounts[b.slug] || 0;
@@ -166,7 +175,11 @@ export default function HomeScreen() {
     });
 
     const topFive = sorted.slice(0, 5).map((t) => {
-      const m = TOOL_META[t.slug] || { label: t.shortTitle.split(" ")[0], icon: "apps", color: "#C8961E" };
+      const m = TOOL_META[t.slug] || {
+        label: t.shortTitle.split(" ")[0],
+        icon: "apps",
+        color: "#C8961E",
+      };
       return {
         id: t.slug,
         label: m.label,
@@ -184,7 +197,7 @@ export default function HomeScreen() {
         label: "Matatu",
         icon: "bus" as const,
         color: "#0EA5E9",
-        route: "/(tabs)/matatu" as const,
+        route: "/matatu" as const,
       },
       {
         id: "county",
@@ -208,10 +221,79 @@ export default function HomeScreen() {
       const next = prev.includes(slug)
         ? prev.filter((s) => s !== slug)
         : [slug, ...prev];
-      AsyncStorage.setItem("kh-saved-tools", next.join(",")).catch(() => {});
+      AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(next)).catch(
+        () => {}
+      );
       return next;
     });
   }, []);
+
+  const handleBlogLinkNavigation = useCallback(
+    (href: string) => {
+      const clean = href.trim();
+      if (clean.startsWith("http://") || clean.startsWith("https://")) {
+        if (clean.includes("kenyahub.me/")) {
+          const pathPart = clean.split("kenyahub.me")[1] || "/";
+          handleBlogLinkNavigation(pathPart);
+          return;
+        }
+        Linking.openURL(clean).catch(() => {});
+        return;
+      }
+
+      const pathOnly = clean.split("?")[0].replace(/\/+$/, "");
+      if (pathOnly.startsWith("/tools/learn/")) {
+        const lang = pathOnly.replace("/tools/learn/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/tools/[slug]",
+          params: { slug: "learn", lang },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/tools/")) {
+        const slug = pathOnly.replace("/tools/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/tools/[slug]",
+          params: { slug },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/county/")) {
+        const slug = pathOnly.replace("/county/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/county/[slug]",
+          params: { slug },
+        });
+        return;
+      }
+      if (pathOnly.startsWith("/matatu/")) {
+        const slug = pathOnly.replace("/matatu/", "").split("/")[0];
+        setSelectedPost(null);
+        router.push({
+          pathname: "/matatu/[slug]",
+          params: { slug },
+        });
+        return;
+      }
+      if (pathOnly === "/matatu") {
+        setSelectedPost(null);
+        router.push("/matatu");
+        return;
+      }
+      if (pathOnly.startsWith("/blog/")) {
+        const blogSlug = pathOnly.replace("/blog/", "").split("/")[0];
+        const targetPost = STATIC_BLOG_POSTS.find((p) => p.slug === blogSlug);
+        if (targetPost) {
+          setReaderProgress(0);
+          setSelectedPost(targetPost);
+        }
+      }
+    },
+    [router]
+  );
 
   const greeting = useMemo(() => {
     const hr = new Date().getHours();
@@ -220,30 +302,53 @@ export default function HomeScreen() {
     return { sw: "Habari ya Jioni", en: "Good evening" };
   }, []);
 
-  const nextHoliday = useMemo(() => {
-    const now = new Date();
-    const todayIso = now.toISOString().slice(0, 10);
-    const allYears = Object.values((holidaysData as any).holidays || {}).flat() as {
+  const allHolidaysList = useMemo(() => {
+    const allYears = Object.values(
+      (holidaysData as any).holidays || {}
+    ).flat() as {
       date: string;
       name: string;
       description: string;
+      type?: string;
     }[];
-    const upcoming = allYears
-      .filter((h) => h.date >= todayIso)
-      .sort((a, b) => a.date.localeCompare(b.date));
-    const pick = upcoming[0] || allYears[0];
+    return [...allYears].sort((a, b) => a.date.localeCompare(b.date));
+  }, []);
+
+  const nextHoliday = useMemo(() => {
+    const now = new Date();
+    const todayIso = now.toISOString().slice(0, 10);
+    const upcoming = allHolidaysList.filter((h) => h.date >= todayIso);
+    const pick = upcoming[0] || allHolidaysList[0];
     if (!pick) return null;
     const diffMs =
       new Date(pick.date + "T00:00:00").getTime() -
       new Date(todayIso + "T00:00:00").getTime();
     const daysAway = Math.max(0, Math.round(diffMs / (1000 * 60 * 60 * 24)));
     return { ...pick, daysAway };
+  }, [allHolidaysList]);
+
+  const matatuSummary = useMemo(() => {
+    const routesByTown = (matatuData as any).routes || {};
+    const towns = ((matatuData as any).towns || []).filter(
+      (t: any) => t.isActive
+    );
+    let routeCount = 0;
+    let stageCount = 0;
+    for (const list of Object.values(routesByTown)) {
+      const arr = list as any[];
+      routeCount += arr.length;
+      for (const r of arr) {
+        stageCount += r.stages?.length || 0;
+      }
+    }
+    return { routeCount, stageCount, townCount: towns.length };
   }, []);
 
-  const currentWord = useMemo(() => {
-    if (!INITIAL_RANDOM_WORDS.length) return null;
-    return INITIAL_RANDOM_WORDS[wordIdx % INITIAL_RANDOM_WORDS.length];
-  }, [wordIdx]);
+  const matchesMatatuSearch = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (!q) return false;
+    return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
+  }, [searchQuery]);
 
   const inlineSearchResults = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
@@ -287,7 +392,9 @@ export default function HomeScreen() {
 
   const blogTags = useMemo(() => {
     const tags = new Set<string>();
-    STATIC_BLOG_POSTS.forEach((p) => (p.tags || []).forEach((t) => tags.add(t)));
+    STATIC_BLOG_POSTS.forEach((p) =>
+      (p.tags || []).forEach((t) => tags.add(t))
+    );
     return ["All", ...Array.from(tags)];
   }, []);
 
@@ -320,13 +427,15 @@ export default function HomeScreen() {
                   params: { slug: "learn", lang: learnStats.langId },
                 })
               }
-              style={[
+              accessibilityRole="button"
+              accessibilityLabel="Open Kenyan Language Courses"
+              style={pressableStyle([
                 styles.xpHeaderPill,
                 {
                   backgroundColor: `${theme.gold}1E`,
                   borderColor: `${theme.gold}50`,
                 },
-              ]}
+              ])}
             >
               <Ionicons name="flame" size={13} color={theme.gold} />
               <Text style={[styles.xpHeaderPillText, { color: theme.gold }]}>
@@ -379,13 +488,15 @@ export default function HomeScreen() {
             </View>
             <Pressable
               onPress={() => router.push("/(tabs)/saved")}
-              style={[
+              accessibilityRole="button"
+              accessibilityLabel={`${pinnedTools.length} saved tools`}
+              style={pressableStyle([
                 styles.savedCountPill,
                 {
                   backgroundColor: theme.surfaceContainerHigh,
                   borderColor: theme.outlineVariant,
                 },
-              ]}
+              ])}
             >
               <Ionicons name="bookmark" size={14} color={theme.gold} />
               <Text style={[styles.savedCountText, { color: theme.textPrimary }]}>
@@ -394,22 +505,23 @@ export default function HomeScreen() {
             </Pressable>
           </View>
 
-          {/* 2. Instant In-Place Android Search Bar */}
+          {/* 2. Instant In-Place Android Search Bar (Stable key across theme switches - UX-5) */}
           <View
             style={[
               styles.searchInputBar,
               {
                 backgroundColor: theme.surfaceContainerHigh,
-                borderColor: searchQuery.length > 0 ? theme.gold : theme.outlineVariant,
+                borderColor:
+                  searchQuery.length > 0 ? theme.gold : theme.outlineVariant,
               },
             ]}
           >
             <Ionicons name="search" size={18} color={theme.gold} />
             <TextInput
-              key={`home-search-input-${theme.isDark ? "dark" : "light"}`}
               value={searchQuery}
               onChangeText={setSearchQuery}
-              placeholder={`Search ${TOOLS.length} tools (PAYE, M-Pesa, KPLC...)`}
+              accessibilityLabel="Search Kenyan calculators, language courses, and Matatu routes"
+              placeholder={`Search ${TOOLS.length} tools & Matatu routes (PAYE, M-Pesa, KPLC...)`}
               placeholderTextColor={theme.textSecondary}
               numberOfLines={1}
               multiline={false}
@@ -418,12 +530,24 @@ export default function HomeScreen() {
               returnKeyType="search"
             />
             {searchQuery.length > 0 ? (
-              <Pressable onPress={() => setSearchQuery("")} hitSlop={10}>
+              <Pressable
+                onPress={() => setSearchQuery("")}
+                accessibilityRole="button"
+                accessibilityLabel="Clear search query"
+                hitSlop={10}
+              >
                 <Ionicons name="close-circle" size={19} color={theme.textMuted} />
               </Pressable>
             ) : (
               <Pressable
-                onPress={() => router.push({ pathname: "/(tabs)/tools", params: { category: "all" } })}
+                onPress={() =>
+                  router.push({
+                    pathname: "/(tabs)/tools",
+                    params: { category: "all" },
+                  })
+                }
+                accessibilityRole="button"
+                accessibilityLabel={`Browse all ${TOOLS.length} tools`}
                 style={[
                   styles.searchCountChip,
                   { backgroundColor: theme.primaryContainer },
@@ -454,7 +578,8 @@ export default function HomeScreen() {
             >
               <View style={styles.instantResultsHeader}>
                 <Text style={[styles.instantResultsLabel, { color: theme.gold }]}>
-                  INSTANT MATCHES ({inlineSearchResults.length})
+                  INSTANT MATCHES (
+                  {inlineSearchResults.length + (matchesMatatuSearch ? 1 : 0)})
                 </Text>
                 <Pressable
                   onPress={() =>
@@ -463,11 +588,70 @@ export default function HomeScreen() {
                     })
                   }
                 >
-                  <Text style={{ fontSize: 11.5, fontFamily: "Outfit_700Bold", color: theme.gold }}>
+                  <Text
+                    style={{
+                      fontSize: 11.5,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.gold,
+                    }}
+                  >
                     Full Directory →
                   </Text>
                 </Pressable>
               </View>
+
+              {matchesMatatuSearch && (
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    const q = searchQuery.trim();
+                    setSearchQuery("");
+                    router.push({
+                      pathname: "/matatu",
+                      params: MATATU_KEYWORDS.includes(q.toLowerCase())
+                        ? undefined
+                        : { q },
+                    });
+                  }}
+                  style={pressableStyle(styles.instantResultRow)}
+                >
+                  <View
+                    style={[
+                      styles.instantResultIcon,
+                      { backgroundColor: "rgba(14, 165, 233, 0.18)" },
+                    ]}
+                  >
+                    <Ionicons name="bus" size={18} color="#0EA5E9" />
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text
+                      style={[
+                        styles.instantResultTitle,
+                        { color: theme.textPrimary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      Matatu Routes & SACCO Fares Hub
+                    </Text>
+                    <Text
+                      style={[
+                        styles.instantResultSub,
+                        { color: theme.textSecondary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      {matatuSummary.routeCount} routes &{" "}
+                      {matatuSummary.stageCount} stages across{" "}
+                      {matatuSummary.townCount} Kenyan cities
+                    </Text>
+                  </View>
+                  <Ionicons
+                    name="chevron-forward"
+                    size={16}
+                    color={theme.textMuted}
+                  />
+                </Pressable>
+              )}
 
               {inlineSearchResults.length > 0 ? (
                 inlineSearchResults.map((item, idx) => {
@@ -484,13 +668,13 @@ export default function HomeScreen() {
                           params: { slug: item.slug },
                         });
                       }}
-                      style={[
+                      style={pressableStyle([
                         styles.instantResultRow,
-                        idx > 0 && {
+                        (idx > 0 || matchesMatatuSearch) && {
                           borderTopWidth: 1,
                           borderTopColor: theme.outlineVariant,
                         },
-                      ]}
+                      ])}
                     >
                       <View
                         style={[
@@ -539,25 +723,25 @@ export default function HomeScreen() {
                     </Pressable>
                   );
                 })
-              ) : (
+              ) : !matchesMatatuSearch ? (
                 <View style={{ paddingVertical: 14, alignItems: "center" }}>
                   <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
                     No tool found matching &ldquo;{searchQuery}&rdquo;
                   </Text>
                 </View>
-              )}
+              ) : null}
             </View>
           )}
         </View>
 
-        {/* 3. Native Super-App Quick Launcher (Open layout, no cramped card) */}
+        {/* 3. Native Super-App Quick Launcher */}
         <View style={styles.launcherSection}>
           <View style={styles.launcherGrid}>
             {SUPER_APP_APP_TILES(dynamicLauncherItems, router, theme)}
           </View>
         </View>
 
-        {/* 4. Live Kenyan Snapshot Horizontal Widgets */}
+        {/* 4. Live Kenyan Snapshot Horizontal Widgets (Swipe-snapped + Page Dots - MOB-4, UX-6) */}
         <View style={styles.sectionHeader}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
@@ -567,185 +751,123 @@ export default function HomeScreen() {
               Daily Kenyan Widgets
             </Text>
           </View>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 5, paddingBottom: 4 }}>
+            {[0, 1, 2, 3].map((dotIdx) => {
+              const active = activeWidgetPage === dotIdx;
+              return (
+                <View
+                  key={dotIdx}
+                  style={{
+                    width: active ? 16 : 6,
+                    height: 6,
+                    borderRadius: 3,
+                    backgroundColor: active ? theme.gold : theme.outlineVariant,
+                  }}
+                />
+              );
+            })}
+          </View>
         </View>
 
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
+          snapToInterval={WIDGET_SNAP_INTERVAL}
+          decelerationRate="fast"
+          onTouchStart={() => setWidgetsTouchPaused(true)}
+          onMomentumScrollEnd={(e) => {
+            setWidgetsTouchPaused(false);
+            const page = Math.round(
+              e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL
+            );
+            setActiveWidgetPage(Math.max(0, Math.min(3, page)));
+          }}
+          onScrollEndDrag={() => setWidgetsTouchPaused(false)}
           contentContainerStyle={styles.widgetsScrollContent}
         >
-          {/* Widget A: Language Learning Hub (Auto-rotating & touch-isolated) */}
-          <View
-            key={`widget-learn-${theme.isDark ? "dark" : "light"}`}
-            style={[
+          {/* Widget A: Isolated Featured Language Card (MOB-4, UX-6) */}
+          <FeaturedLanguageWidget
+            learnStats={learnStats}
+            paused={widgetsTouchPaused}
+          />
+
+          {/* Widget B: Isolated Word of the Moment Card (MOB-4, UX-6) */}
+          <WordOfTheMomentWidget paused={widgetsTouchPaused} />
+
+          {/* Widget C: Matatu Routes & SACCO Fares Explorer */}
+          <Pressable
+            android_ripple={androidRipple(theme.rippleColor)}
+            accessibilityRole="button"
+            accessibilityLabel="Open Matatu Transit Routes and Fares Hub"
+            onPress={() => router.push("/matatu")}
+            style={pressableStyle([
               styles.snapshotWidget,
               {
                 backgroundColor: theme.surfaceContainer,
-                borderColor: `${theme.gold}45`,
+                borderColor: theme.outlineVariant,
               },
-            ]}
+            ])}
           >
-            {(() => {
-              const currentFeatured = ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
-              const isCurrentLearned = learnStats.langId === currentFeatured.id && learnStats.totalXP > 0;
-
-              return (
-                <>
-                  <View style={styles.widgetHeaderRow}>
-                    <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
-                      <View style={[styles.widgetBadgePill, { backgroundColor: `${theme.gold}22` }]}>
-                        <Ionicons name="school" size={12} color={theme.gold} />
-                        <Text style={[styles.widgetBadgeText, { color: theme.gold }]}>
-                          23 COURSES
-                        </Text>
-                      </View>
-                      <View style={{ backgroundColor: `${theme.gold}18`, paddingHorizontal: 6, paddingVertical: 1.5, borderRadius: 999 }}>
-                        <Text style={{ fontSize: 9.5, fontWeight: "800", color: theme.gold }}>
-                          “{currentFeatured.greeting}”
-                        </Text>
-                      </View>
-                    </View>
-                    <Pressable
-                      onPress={() => {
-                        setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
-                      }}
-                      hitSlop={12}
-                      style={styles.diceMiniBtn}
-                    >
-                      <Ionicons name="dice-outline" size={14} color={theme.gold} />
-                      <Text style={{ fontSize: 10, fontFamily: "Outfit_700Bold", color: theme.gold }}>
-                        Rotate
-                      </Text>
-                    </Pressable>
-                  </View>
-
-                  <Pressable
-                    android_ripple={androidRipple(theme.rippleColor)}
-                    onPress={() => {
-                      router.push({
-                        pathname: "/tools/[slug]",
-                        params: { slug: "learn", lang: currentFeatured.id },
-                      });
-                    }}
-                    style={{ flex: 1, justifyContent: "space-between" }}
-                  >
-                    <View>
-                      <Text style={[styles.widgetMainTitle, { color: theme.textPrimary }]}>
-                        Learn {currentFeatured.name}
-                      </Text>
-                      <Text
-                        style={[styles.widgetSubText, { color: theme.textSecondary }]}
-                        numberOfLines={2}
-                      >
-                        {isCurrentLearned
-                          ? `${learnStats.totalXP} XP earned · Continue flashcards, grammar & oral wisdom in ${currentFeatured.region}`
-                          : `Explore ${currentFeatured.name} — ${currentFeatured.region} · Flashcards, grammar & oral wisdom`}
-                      </Text>
-                    </View>
-
-                    <View style={styles.widgetFooterLink}>
-                      <Text style={[styles.widgetFooterLinkText, { color: theme.gold }]}>
-                        {isCurrentLearned ? "Resume Course" : "Start Learning"}
-                      </Text>
-                      <Ionicons name="arrow-forward" size={13} color={theme.gold} />
-                    </View>
-                  </Pressable>
-                </>
-              );
-            })()}
-          </View>
-
-          {/* Widget B: Word of the Moment (Auto-rotating & touch-isolated) */}
-          {currentWord && (
-            <View
-              style={[
-                styles.snapshotWidget,
-                {
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
-            >
-              <View style={styles.widgetHeaderRow}>
-                <View
-                  style={[
-                    styles.widgetBadgePill,
-                    { backgroundColor: "rgba(47, 164, 99, 0.16)" },
-                  ]}
-                >
-                  <Ionicons name="sparkles" size={12} color="#2FA463" />
-                  <Text style={[styles.widgetBadgeText, { color: "#2FA463" }]}>
-                    {currentWord.langName.toUpperCase()} WORD
-                  </Text>
-                </View>
-                <Pressable
-                  onPress={() => setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length))}
-                  hitSlop={12}
-                  style={styles.diceMiniBtn}
-                >
-                  <Ionicons name="dice-outline" size={14} color={theme.gold} />
-                  <Text style={{ fontSize: 10, fontFamily: "Outfit_700Bold", color: theme.gold }}>
-                    Next
-                  </Text>
-                </Pressable>
-              </View>
-
-              <Pressable
-                android_ripple={androidRipple(theme.rippleColor)}
-                onPress={() =>
-                  router.push({
-                    pathname: "/tools/[slug]",
-                    params: { slug: "kenyan-translator" },
-                  })
-                }
-                style={{ flex: 1, justifyContent: "space-between" }}
+            <View style={styles.widgetHeaderRow}>
+              <View
+                style={[
+                  styles.widgetBadgePill,
+                  { backgroundColor: "rgba(14, 165, 233, 0.16)" },
+                ]}
               >
-                <View>
-                  <Text
-                    style={[styles.widgetMainTitle, { color: theme.gold }]}
-                    numberOfLines={1}
-                  >
-                    {currentWord.entry.translation}
-                  </Text>
-                  <Text
-                    style={[styles.widgetSubText, { color: theme.textPrimary }]}
-                    numberOfLines={2}
-                  >
-                    &ldquo;{currentWord.entry.english}&rdquo;{" "}
-                    {currentWord.entry.pronunciation
-                      ? `· /${currentWord.entry.pronunciation}/`
-                      : ""}
-                  </Text>
-                </View>
-
-                <View style={styles.widgetFooterLink}>
-                  <Text style={[styles.widgetFooterLinkText, { color: "#2FA463" }]}>
-                    {TOTAL_DICTIONARY_ENTRIES.toLocaleString()}+ Words in {ALL_DICT_METAS.length} Languages
-                  </Text>
-                  <Ionicons name="arrow-forward" size={13} color="#2FA463" />
-                </View>
-              </Pressable>
+                <Ionicons name="bus" size={12} color="#0EA5E9" />
+                <Text style={[styles.widgetBadgeText, { color: "#0EA5E9" }]}>
+                  MATATU TRANSIT
+                </Text>
+              </View>
+              <Text
+                style={{
+                  fontSize: 11,
+                  fontFamily: "Outfit_700Bold",
+                  color: "#0EA5E9",
+                }}
+              >
+                {matatuSummary.townCount} Cities
+              </Text>
             </View>
-          )}
 
-          {/* Widget C: Next Kenyan Public Holiday Countdown */}
+            <Text
+              style={[styles.widgetMainTitle, { color: theme.textPrimary }]}
+              numberOfLines={1}
+            >
+              {matatuSummary.routeCount} Routes · {matatuSummary.stageCount}{" "}
+              Stages
+            </Text>
+            <Text
+              style={[styles.widgetSubText, { color: theme.textSecondary }]}
+              numberOfLines={2}
+            >
+              Interactive route maps, stage stopovers, SACCO operators, and
+              off-peak/peak fares across Kenya.
+            </Text>
+
+            <View style={styles.widgetFooterLink}>
+              <Text style={[styles.widgetFooterLinkText, { color: "#0EA5E9" }]}>
+                Open Matatu Hub
+              </Text>
+              <Ionicons name="arrow-forward" size={13} color="#0EA5E9" />
+            </View>
+          </Pressable>
+
+          {/* Widget D: Next Kenyan Public Holiday Countdown */}
           {nextHoliday && (
             <Pressable
-              key={`widget-holiday-${theme.isDark ? "dark" : "light"}`}
               android_ripple={androidRipple(theme.rippleColor)}
-              onPress={() =>
-                router.push({
-                  pathname: "/tools/[slug]",
-                  params: { slug: "public-holidays" },
-                })
-              }
-              style={[
+              accessibilityRole="button"
+              accessibilityLabel={`Next Kenyan public holiday: ${nextHoliday.name}`}
+              onPress={() => setShowHolidaysModal(true)}
+              style={pressableStyle([
                 styles.snapshotWidget,
                 {
                   backgroundColor: theme.surfaceContainer,
                   borderColor: theme.outlineVariant,
                 },
-              ]}
+              ])}
             >
               <View style={styles.widgetHeaderRow}>
                 <View
@@ -759,7 +881,13 @@ export default function HomeScreen() {
                     NEXT HOLIDAY
                   </Text>
                 </View>
-                <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.sky }}>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontFamily: "Outfit_700Bold",
+                    color: theme.sky,
+                  }}
+                >
                   {nextHoliday.daysAway === 0
                     ? "Today!"
                     : `In ${nextHoliday.daysAway} days`}
@@ -789,7 +917,9 @@ export default function HomeScreen() {
               </Text>
 
               <View style={styles.widgetFooterLink}>
-                <Text style={[styles.widgetFooterLinkText, { color: theme.sky }]}>
+                <Text
+                  style={[styles.widgetFooterLinkText, { color: theme.sky }]}
+                >
                   Full Holiday Calendar
                 </Text>
                 <Ionicons name="arrow-forward" size={13} color={theme.sky} />
@@ -815,7 +945,7 @@ export default function HomeScreen() {
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor, true)}
                 onPress={() => router.push("/(tabs)/saved")}
-                style={styles.seeAllBtn}
+                style={pressableStyle(styles.seeAllBtn)}
               >
                 <Text style={[styles.seeAllText, { color: theme.gold }]}>
                   Manage
@@ -833,7 +963,7 @@ export default function HomeScreen() {
                 const col = categoryColorMap[t.category] || theme.gold;
                 return (
                   <Pressable
-                    key={`pinned-chip-${t.slug}-${theme.isDark ? "dark" : "light"}`}
+                    key={`pinned-chip-${t.slug}`}
                     android_ripple={androidRipple(theme.rippleColor)}
                     onPress={() =>
                       router.push({
@@ -841,13 +971,13 @@ export default function HomeScreen() {
                         params: { slug: t.slug },
                       })
                     }
-                    style={[
+                    style={pressableStyle([
                       styles.pinnedMiniCard,
                       {
                         backgroundColor: theme.surfaceContainer,
                         borderColor: theme.outlineVariant,
                       },
-                    ]}
+                    ])}
                   >
                     <View
                       style={[
@@ -873,7 +1003,7 @@ export default function HomeScreen() {
           </>
         )}
 
-        {/* 6. Popular Everyday Tools - Spacious Native List */}
+        {/* 6. Popular Everyday Tools */}
         <View style={[styles.sectionHeader, { marginTop: 20 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
@@ -885,8 +1015,13 @@ export default function HomeScreen() {
           </View>
           <Pressable
             android_ripple={androidRipple(theme.rippleColor, true)}
-            onPress={() => router.push({ pathname: "/(tabs)/tools", params: { category: "all" } })}
-            style={styles.seeAllBtn}
+            onPress={() =>
+              router.push({
+                pathname: "/(tabs)/tools",
+                params: { category: "all" },
+              })
+            }
+            style={pressableStyle(styles.seeAllBtn)}
           >
             <Text style={[styles.seeAllText, { color: theme.gold }]}>
               All {TOOLS.length}
@@ -906,7 +1041,7 @@ export default function HomeScreen() {
           ))}
         </View>
 
-        {/* 7. Topic Categories - Displayed in Full */}
+        {/* 7. Topic Categories */}
         <View style={[styles.sectionHeader, { marginTop: 22 }]}>
           <View>
             <Text style={[styles.sectionOverline, { color: theme.gold }]}>
@@ -933,13 +1068,13 @@ export default function HomeScreen() {
                     params: { category: cat.id },
                   })
                 }
-                style={[
+                style={pressableStyle([
                   styles.categoryFullCard,
                   {
                     backgroundColor: theme.surfaceContainer,
                     borderColor: theme.outlineVariant,
                   },
-                ]}
+                ])}
               >
                 <View
                   style={[
@@ -1012,8 +1147,9 @@ export default function HomeScreen() {
             return (
               <Pressable
                 key={tag}
+                android_ripple={androidRipple(theme.rippleColor)}
                 onPress={() => setSelectedBlogTag(tag)}
-                style={{
+                style={pressableStyle({
                   paddingHorizontal: 13,
                   paddingVertical: 6,
                   borderRadius: 999,
@@ -1022,7 +1158,7 @@ export default function HomeScreen() {
                     ? theme.primaryContainer
                     : theme.surfaceContainer,
                   borderColor: active ? theme.gold : theme.outlineVariant,
-                }}
+                })}
               >
                 <Text
                   style={{
@@ -1047,16 +1183,19 @@ export default function HomeScreen() {
         >
           {sortedPosts.map((post) => (
             <Pressable
-              key={`${post.slug}-${theme.isDark ? "dark" : "light"}`}
+              key={post.slug}
               android_ripple={androidRipple(theme.rippleColor)}
-              onPress={() => setSelectedPost(post)}
-              style={[
+              onPress={() => {
+                setReaderProgress(0);
+                setSelectedPost(post);
+              }}
+              style={pressableStyle([
                 styles.guideCarouselCard,
                 {
                   backgroundColor: theme.surfaceContainer,
                   borderColor: theme.outlineVariant,
                 },
-              ]}
+              ])}
             >
               <View style={styles.guideTagRow}>
                 {(post.tags || []).slice(0, 2).map((t) => (
@@ -1115,7 +1254,87 @@ export default function HomeScreen() {
         </ScrollView>
       </ScrollView>
 
-      {/* Full-Screen Blog Guide Reader Modal */}
+      {/* Kenyan Statutory Public Holidays Modal */}
+      <Modal
+        visible={showHolidaysModal}
+        animationType="slide"
+        onRequestClose={() => setShowHolidaysModal(false)}
+      >
+        <SafeAreaView
+          style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+          edges={["top", "left", "right", "bottom"]}
+        >
+          <KenyaStripe />
+          <AndroidTopAppBar
+            title="Kenyan Public Holidays"
+            subtitle="Statutory National & Religious Holidays"
+            onBack={() => setShowHolidaysModal(false)}
+          />
+          <ScrollView
+            contentContainerStyle={{ padding: 16, paddingBottom: 48, gap: 10 }}
+            showsVerticalScrollIndicator={false}
+          >
+            {allHolidaysList.map((h, idx) => (
+              <View
+                key={`${h.date}-${idx}`}
+                style={[
+                  styles.readerHeroCard,
+                  {
+                    backgroundColor: theme.surfaceContainer,
+                    borderColor: theme.outlineVariant,
+                  },
+                ]}
+              >
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: 4,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontFamily: "Outfit_700Bold",
+                      fontSize: 15,
+                      color: theme.textPrimary,
+                    }}
+                  >
+                    {h.name}
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 11.5,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.sky,
+                    }}
+                  >
+                    {new Date(h.date + "T00:00:00").toLocaleDateString(
+                      "en-KE",
+                      {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      }
+                    )}
+                  </Text>
+                </View>
+                <Text
+                  style={{
+                    fontSize: 12.5,
+                    color: theme.textSecondary,
+                    lineHeight: 18,
+                  }}
+                >
+                  {h.description}
+                </Text>
+              </View>
+            ))}
+          </ScrollView>
+        </SafeAreaView>
+      </Modal>
+
+      {/* Full-Screen Blog Guide Reader Modal with Reading Progress Bar & Tappable Links (MOB-10, UX-2, UX-13) */}
       <Modal
         visible={!!selectedPost}
         animationType="slide"
@@ -1123,6 +1342,7 @@ export default function HomeScreen() {
       >
         <SafeAreaView
           style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+          edges={["top", "left", "right", "bottom"]}
         >
           <KenyaStripe />
           <AndroidTopAppBar
@@ -1134,10 +1354,37 @@ export default function HomeScreen() {
             }
             onBack={() => setSelectedPost(null)}
           />
+          {/* 3dp Gold Reading Progress Bar (UX-13) */}
+          <View
+            style={{
+              height: 3,
+              width: "100%",
+              backgroundColor: theme.surfaceContainerHigh,
+            }}
+          >
+            <View
+              style={{
+                height: "100%",
+                width: `${Math.min(100, Math.max(4, readerProgress * 100))}%`,
+                backgroundColor: theme.gold,
+              }}
+            />
+          </View>
+
           {selectedPost && (
             <ScrollView
               contentContainerStyle={{ padding: 16, paddingBottom: 48 }}
               showsVerticalScrollIndicator={false}
+              scrollEventThrottle={16}
+              onScroll={(e) => {
+                const { contentOffset, contentSize, layoutMeasurement } =
+                  e.nativeEvent;
+                const maxScroll = Math.max(
+                  1,
+                  contentSize.height - layoutMeasurement.height
+                );
+                setReaderProgress(Math.min(1, Math.max(0, contentOffset.y / maxScroll)));
+              }}
             >
               <View
                 style={[
@@ -1213,6 +1460,7 @@ export default function HomeScreen() {
                 <BlogMarkdownContent
                   content={selectedPost.content}
                   theme={theme}
+                  onNavigateLink={handleBlogLinkNavigation}
                 />
               </View>
             </ScrollView>
@@ -1222,4 +1470,3 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-

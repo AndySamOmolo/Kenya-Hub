@@ -1,35 +1,30 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  Award,
-  Clock,
-  Delete,
-  Flame,
-  Grid3X3,
-  Hash,
-  RotateCcw,
-  Shuffle,
-  Star,
-  Timer,
-  Trophy,
-  Zap,
-} from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { RotateCcw, Trophy } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
+import { getPrimaryForm } from "@/lib/learn-engine";
 import { type GameProps, shuffle, pickRandom } from "./shared";
 
-export function ScrambleGame({ allWords, languageName }: GameProps) {
+function cleanScrambleToken(raw: string): string {
+  const firstWord = getPrimaryForm(raw).trim().split(/\s+/)[0] || "";
+  return firstWord.replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, "");
+}
+
+export function ScrambleGame({ allWords, languageName, onAwardXp }: GameProps) {
   const validWords = useMemo(
     () =>
-      allWords.filter((w) => {
-        const clean = w.target.replace(/[^a-zA-Z']/g, "");
-        return clean.length >= 3 && clean.length <= 10;
-      }),
+      allWords
+        .map((w) => ({
+          ...w,
+          cleanTarget: cleanScrambleToken(w.target),
+        }))
+        .filter((w) => w.cleanTarget.length >= 3 && w.cleanTarget.length <= 10),
     [allWords]
   );
 
-  const [targetWord, setTargetWord] = useState<WordPair | null>(null);
+  const [targetWord, setTargetWord] = useState<(WordPair & { cleanTarget: string }) | null>(null);
   const [scrambled, setScrambled] = useState<string[]>([]);
   const [selected, setSelected] = useState<number[]>([]);
   const [solved, setSolved] = useState(false);
@@ -42,8 +37,7 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
     if (validWords.length === 0) return;
     const word = pickRandom(validWords);
     setTargetWord(word);
-    const letters = word.target.split("");
-    // Ensure scramble is different from original
+    const letters = word.cleanTarget.split("");
     let scrambledLetters = shuffle(letters);
     let attempts = 0;
     while (scrambledLetters.join("") === letters.join("") && attempts < 10) {
@@ -66,12 +60,13 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
     const newSelected = [...selected, idx];
     setSelected(newSelected);
 
-    // Check if word is complete
     if (newSelected.length === scrambled.length && targetWord) {
       const built = newSelected.map((i) => scrambled[i]).join("");
-      if (built.toLowerCase() === targetWord.target.toLowerCase()) {
+      if (built.toLowerCase() === targetWord.cleanTarget.toLowerCase()) {
         setSolved(true);
-        setScore((s) => s + Math.max(10 - hintsUsed * 3, 5));
+        const earned = Math.max(10 - hintsUsed * 3, 5);
+        setScore((s) => s + earned);
+        onAwardXp?.(15);
       } else {
         setWrong(true);
         setTimeout(() => {
@@ -84,8 +79,7 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
 
   const handleHint = () => {
     if (!targetWord || solved) return;
-    // Reveal the next correct letter
-    const target = targetWord.target;
+    const target = targetWord.cleanTarget;
     const nextIdx = selected.length;
     if (nextIdx >= target.length) return;
 
@@ -116,7 +110,6 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
 
   return (
     <div>
-      {/* Score */}
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5">
           <Trophy className="h-3.5 w-3.5 text-gold" />
@@ -125,16 +118,13 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
         <span className="text-xs text-text-muted">Round {round + 1}</span>
       </div>
 
-      {/* Clue */}
       <div className="mb-5 rounded-xl border border-border bg-bg-card p-4 text-center">
         <p className="text-xs text-text-muted mb-1">Unscramble the {languageName} word for:</p>
         <p className="text-xl font-bold text-gold">
           &ldquo;{targetWord.source}&rdquo;
         </p>
-
       </div>
 
-      {/* Built word */}
       <div className={`mb-4 flex min-h-[3.5rem] flex-wrap items-center justify-center gap-1.5 rounded-xl border-2 border-dashed p-3 ${
         solved ? "border-kenya-green bg-kenya-green/5" : wrong ? "border-red-400 bg-red-400/5 animate-shake" : "border-border"
       }`}>
@@ -163,7 +153,6 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
         )}
       </div>
 
-      {/* Scrambled tiles */}
       {!solved && (
         <div className="mb-5 flex flex-wrap justify-center gap-2">
           {scrambled.map((letter, idx) => {
@@ -173,7 +162,7 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
                 key={idx}
                 onClick={() => handleTap(idx)}
                 disabled={isUsed}
-                className={`flex h-11 w-11 sm:h-13 sm:w-13 items-center justify-center rounded-xl text-base sm:text-lg font-bold uppercase transition-all active:scale-90 ${
+                className={`flex h-11 w-11 sm:h-13 sm:w-13 items-center justify-center rounded-xl text-base sm:text-lg font-bold uppercase transition-all active:scale-90 cursor-pointer ${
                   isUsed
                     ? "border border-border/20 bg-bg-elevated/30 text-text-muted/20 cursor-not-allowed"
                     : "border-2 border-border bg-bg-card text-text-primary active:border-gold sm:hover:border-gold/50 shadow-xs"
@@ -186,20 +175,19 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
         </div>
       )}
 
-      {/* Actions */}
       <div className="flex gap-2">
         {!solved && (
           <>
             <button
               onClick={() => setSelected([])}
               disabled={selected.length === 0}
-              className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-2.5 text-xs font-semibold text-text-muted transition-all active:bg-bg-card disabled:opacity-30"
+              className="flex items-center gap-1.5 rounded-xl border border-border px-4 py-2.5 text-xs font-semibold text-text-muted transition-all active:bg-bg-card disabled:opacity-30 cursor-pointer"
             >
               <RotateCcw className="h-3.5 w-3.5" /> Clear
             </button>
             <button
               onClick={handleHint}
-              className="flex items-center gap-1.5 rounded-xl border border-gold/30 bg-gold/5 px-4 py-2.5 text-xs font-semibold text-gold transition-all active:bg-gold/10"
+              className="flex items-center gap-1.5 rounded-xl border border-gold/30 bg-gold/5 px-4 py-2.5 text-xs font-semibold text-gold transition-all active:bg-gold/10 cursor-pointer"
             >
               <DynamicIcon emoji="💡" className="w-3.5 h-3.5" /> Hint
             </button>
@@ -209,9 +197,9 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
           <div className="flex w-full gap-2">
             <button
               onClick={handleNext}
-              className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
+              className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-gold px-6 py-2.5 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 cursor-pointer"
             >
-              Next Word →
+              Next Word (+15 XP) →
             </button>
           </div>
         )}
@@ -219,4 +207,3 @@ export function ScrambleGame({ allWords, languageName }: GameProps) {
     </div>
   );
 }
-

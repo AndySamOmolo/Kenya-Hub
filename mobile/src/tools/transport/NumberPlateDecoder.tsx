@@ -69,7 +69,6 @@ export function NumberPlateDecoder() {
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Vehicle Number Plate</Text>
         <TextInput
-            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
           value={plate}
@@ -180,7 +179,6 @@ export function NumberPlateDecoder() {
       <View style={styles.searchBar}>
         <Ionicons name="search" size={18} color={theme.textMuted} />
         <TextInput
-            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
           value={seriesSearch}

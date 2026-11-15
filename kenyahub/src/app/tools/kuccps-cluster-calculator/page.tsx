@@ -25,7 +25,7 @@ const DEFAULT_CLUSTER_GRADES: Record<string, string> = {
 };
 
 const faq = [
-  { question: "How are KUCCPS cluster points calculated?", answer: "KUCCPS uses the weighted cluster formula C = √((r / 48) × (t / 84)) × 48, where r is the sum of your KCSE points in the 4 required cluster subjects (maximum 48) and t is your 7-subject KCSE aggregate score (maximum 84). Our calculator also displays your raw weighted cluster score across all 20 degree clusters." },
+  { question: "How are KUCCPS cluster points calculated?", answer: "KUCCPS uses the weighted cluster formula C = √((r / 48) × (t / 84)) × 48, where r is the sum of your KCSE points in the 4 required cluster subjects (maximum 48) and t is your 7-subject KCSE aggregate score (maximum 84). Our calculator computes both your official KUCCPS weighted cluster points (C) and your 4-subject raw cluster score (r) across all 20 degree clusters." },
   { question: "What is the maximum KUCCPS cluster weight?", answer: "The maximum cluster weight is 48.00 points, achieved only when a candidate scores plain A (12 points) in all 4 required cluster subjects (r = 48) and plain A across all 7 best KCSE subjects (t = 84)." },
   { question: "How many degree clusters does KUCCPS have?", answer: "KUCCPS categorizes all Bachelor's degree programmes into 20 official clusters—such as Cluster 1 (Law), Cluster 2 (Business, Hospitality & Related), Cluster 4 (Geosciences), Cluster 5 (Engineering & Technology), Cluster 9 (Computing & IT), and Cluster 13 (Medicine, Health & Veterinary Sciences)." },
   { question: "Do cluster cutoff points change every year?", answer: "Yes. While the 4 required subjects for each of the 20 clusters remain fixed by KUCCPS, the cutoff points for individual university degree courses fluctuate every academic year depending on the number of applicants and the declared capacity of each university." },
@@ -46,9 +46,18 @@ export default function KUCCPSCalculatorPage() {
     });
   };
 
+  // t = sum of best 7 KCSE subject points (maximum 84)
+  const best7Sum = useMemo(() => {
+    return Object.values(selectedGrades)
+      .map((g) => gradePoints[g] || 0)
+      .sort((a, b) => b - a)
+      .slice(0, 7)
+      .reduce((sum, p) => sum + p, 0);
+  }, [selectedGrades]);
+
   const clusterResults = useMemo(() => {
     return kuccpsData.clusters.map((cluster) => {
-      let totalWeight = 0;
+      let rawSumR = 0;
       let calculable = true;
       const usedActualSubjects = new Set<string>();
       const breakdown: { subject: string; grade: string; points: number; weight: number; weighted: number }[] = [];
@@ -69,7 +78,7 @@ export default function KUCCPSCalculatorPage() {
           if (bestAnyPoints > 0 && matchedSubj) {
             usedActualSubjects.add(matchedSubj);
             const weighted = bestAnyPoints * req.weight;
-            totalWeight += weighted;
+            rawSumR += weighted;
             breakdown.push({
               subject: `${req.name} (${matchedSubj})`,
               grade: bestAny,
@@ -97,7 +106,7 @@ export default function KUCCPSCalculatorPage() {
           if (bestPoints > 0 && matchedSubj) {
             usedActualSubjects.add(matchedSubj);
             const weighted = bestPoints * req.weight;
-            totalWeight += weighted;
+            rawSumR += weighted;
             breakdown.push({
               subject: options.length > 1 ? `${req.name} (${matchedSubj})` : req.name,
               grade: bestGrade,
@@ -111,14 +120,21 @@ export default function KUCCPSCalculatorPage() {
         }
       }
 
+      // Official KUCCPS formula: C = sqrt((r / 48) * (t / 84)) * 48
+      const weightedClusterPoints =
+        calculable && best7Sum > 0
+          ? Math.round(Math.sqrt((rawSumR / 48) * (best7Sum / 84)) * 48 * 100) / 100
+          : 0;
+
       return {
         ...cluster,
-        totalWeight: Math.round(totalWeight * 100) / 100,
+        rawWeight: Math.round(rawSumR * 100) / 100,
+        totalWeight: weightedClusterPoints,
         calculable,
         breakdown,
       };
     });
-  }, [selectedGrades]);
+  }, [selectedGrades, best7Sum]);
 
   const sortedResults = [...clusterResults]
     .filter((c) => c.calculable)
@@ -132,9 +148,14 @@ export default function KUCCPSCalculatorPage() {
         {/* Grade Entry */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
           <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Enter Your KCSE Subject Grades
-            </h3>
+            <div>
+              <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                Enter Your KCSE Subject Grades
+              </h3>
+              <p className="text-xs text-text-muted mt-0.5">
+                Best 7 Aggregate (t): <strong className="text-gold">{best7Sum} / 84 pts</strong> · Formula: C = √((r / 48) × (t / 84)) × 48
+              </p>
+            </div>
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -180,13 +201,13 @@ export default function KUCCPSCalculatorPage() {
           <>
             <div className="result-box">
               <p className="text-sm text-text-secondary mb-2">
-                Highest Calculated Cluster Weight
+                Highest KUCCPS Weighted Cluster Score (C)
               </p>
               <p className="text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-green-light">
-                {sortedResults[0].totalWeight} / 48
+                {sortedResults[0].totalWeight.toFixed(2)} / 48
               </p>
               <p className="text-xs text-text-muted mt-1">
-                {sortedResults[0].name}
+                {sortedResults[0].name} (Raw 4-Subject Sum r = {sortedResults[0].rawWeight}/48 · Best-7 Aggregate t = {best7Sum}/84)
               </p>
             </div>
 
@@ -204,15 +225,15 @@ export default function KUCCPSCalculatorPage() {
                 >
                   <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none">
                     <div className="flex items-center gap-3">
-                      <span className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)] w-12">
-                        {cluster.totalWeight}
+                      <span className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)] w-14">
+                        {cluster.totalWeight.toFixed(2)}
                       </span>
                       <div>
                         <p className="text-sm font-semibold text-text-primary">
                           {cluster.name}
                         </p>
                         <p className="text-xs text-text-muted">
-                          Typical university cutoff range: {cluster.typicalCutoff} pts
+                          Typical cutoff: {cluster.typicalCutoff} pts · 4-Subject Sum (r): {cluster.rawWeight}/48
                         </p>
                       </div>
                     </div>

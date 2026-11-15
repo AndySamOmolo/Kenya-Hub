@@ -3,21 +3,27 @@
     "name": "KenyaHub",
     "slug": "kenyahub",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "scheme": "kenyahub",
     "userInterfaceStyle": "automatic",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./assets/adaptive-icon-foreground.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0C0A08"
+      "backgroundColor": "#0E0C0A"
     },
     "android": {
       "package": "ke.co.kenyahub.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/adaptive-icon-foreground.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png",
         "backgroundColor": "#141210"
-      }
+      },
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "plugins": ["expo-router"],
     "experiments": {

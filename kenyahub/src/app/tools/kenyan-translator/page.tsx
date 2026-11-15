@@ -21,7 +21,7 @@ import {
   type Dictionary,
 } from "@/data/language-sources";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { addContribution } from "@/lib/contributions";
+import { addContribution, subscribeContributions } from "@/lib/contributions";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 import {
@@ -29,7 +29,8 @@ import {
   POPULAR_COMPARE_WORDS,
   extractNormalizedTerms,
   getDictIndex,
-  type IndexedDictEntry,
+  runTranslatorSearch,
+  getFuzzySuggestions,
 } from "@/lib/dictionary-search";
 import {
   CATEGORY_PAGE_SIZE,
@@ -40,7 +41,7 @@ import {
   TRANSLATOR_FAQ as faq,
   DICT_CACHE,
   loadDictionary,
-  type TranslationResultItem,
+  applyApprovedContributionsToDict,
 } from "@/lib/dictionary-loader";
 
 const tool = TOOLS.find((t) => t.slug === "kenyan-translator")!;
@@ -54,7 +55,7 @@ export default function KenyanTranslatorPage() {
   const [categoryPage, setCategoryPage] = useState(1);
   const [categorySearch, setCategorySearch] = useState("");
   const [searchPage, setSearchPage] = useState(1);
-  const [viewMode, setViewMode] = useState<"translate" | "browse">("translate");
+  const [viewMode, setViewMode] = useState<"translate" | "browse" | "favorites">("translate");
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -72,6 +73,7 @@ export default function KenyanTranslatorPage() {
   const [contributorName, setContributorName] = useState("");
   const [contributorEmail, setContributorEmail] = useState("");
   const [contributeSubmitted, setContributeSubmitted] = useState(false);
+  const [contributeMailtoUrl, setContributeMailtoUrl] = useState<string | null>(null);
 
   const ensureDictionariesLoaded = useCallback(async (langIds: string[]) => {
     const missing = langIds.filter((id) => id && id !== "english" && id !== "all" && !DICT_CACHE[id]);
@@ -94,13 +96,23 @@ export default function KenyanTranslatorPage() {
     ensureDictionariesLoaded(Array.from(toLoad));
   }, [sourceLanguage, targetLanguage, searchQuery, viewMode, ensureDictionariesLoaded]);
 
-  // Preload remaining dictionaries during browser idle time after initial paint
+  // Load browse target or favorites dictionaries on demand
   useEffect(() => {
-    const timer = setTimeout(() => {
-      ensureDictionariesLoaded(ALL_DICT_METAS.map((d) => d.languageId));
-    }, 1200);
-    return () => clearTimeout(timer);
-  }, [ensureDictionariesLoaded]);
+    if (viewMode === "browse" && targetLanguage !== "all" && targetLanguage !== "english") {
+      ensureDictionariesLoaded([targetLanguage]);
+    } else if (viewMode === "favorites" && favorites.length > 0) {
+      const favLangIds = Array.from(new Set(favorites.map((k) => k.split(":")[0]).filter(Boolean)));
+      ensureDictionariesLoaded(favLangIds);
+    }
+  }, [viewMode, targetLanguage, favorites, ensureDictionariesLoaded]);
+
+  // Live-overlay approved community contributions when updated
+  useEffect(() => {
+    return subscribeContributions(() => {
+      Object.values(DICT_CACHE).forEach((d) => applyApprovedContributionsToDict(d));
+      setLoadedDicts({ ...DICT_CACHE });
+    });
+  }, []);
 
   // Reset pagination when filters change
   useEffect(() => {
@@ -143,24 +155,6 @@ export default function KenyanTranslatorPage() {
       console.error("Failed to add contribution:", err);
     }
 
-    try {
-      const saved = localStorage.getItem("kh-user-contributions");
-      const existing = saved ? JSON.parse(saved) : [];
-      const newEntry = {
-        id: Date.now().toString(),
-        language: contributeLanguage,
-        type: contributeType,
-        english: contributeEnglish,
-        translation: contributeTranslation,
-        pronunciation: contributePronunciation,
-        context: contributeContext,
-        contributorName: contributorName || "Anonymous Contributor",
-        contributorEmail: contributorEmail,
-        timestamp: new Date().toISOString(),
-      };
-      localStorage.setItem("kh-user-contributions", JSON.stringify([newEntry, ...existing]));
-    } catch { /* ignore */ }
-
     const typeLabel =
       contributeType === "new_word"
         ? "New Word"
@@ -185,8 +179,7 @@ export default function KenyanTranslatorPage() {
     ].join("\n");
 
     const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(bodyText)}`;
-    window.location.href = mailtoUrl;
-
+    setContributeMailtoUrl(mailtoUrl);
     setContributeSubmitted(true);
   };
 
@@ -244,24 +237,27 @@ export default function KenyanTranslatorPage() {
   }, []);
 
   // Copy to clipboard
+  const playAudio = useCallback((entry: DictEntry, langId?: string) => {
+    if (entry.audioFile && typeof window !== "undefined") {
+      const audio = new Audio(entry.audioFile);
+      audio.play().catch(() => {});
+      return;
+    }
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(entry.translation.split(/[\/(]/)[0].trim());
+      utter.lang = langId === "swahili" ? "sw-KE" : "sw";
+      utter.rate = 0.92;
+      window.speechSynthesis.speak(utter);
+    }
+  }, []);
+
   const copyToClipboard = useCallback((text: string) => {
     navigator.clipboard.writeText(text).then(() => {
       setCopiedText(text);
       setTimeout(() => setCopiedText(null), 2000);
     });
   }, []);
-
-  // Swap languages
-  const swapLanguages = useCallback(() => {
-    if (targetLanguage === "all") {
-      setSourceLanguage("swahili");
-      setTargetLanguage("english");
-    } else {
-      setSourceLanguage(targetLanguage);
-      setTargetLanguage(sourceLanguage);
-    }
-    setSearchQuery("");
-  }, [sourceLanguage, targetLanguage]);
 
   const targetMeta = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_META_MAP[targetLanguage] : null;
   const sourceMeta = sourceLanguage !== "english" ? DICT_META_MAP[sourceLanguage] : null;
@@ -272,303 +268,98 @@ export default function KenyanTranslatorPage() {
     [loadedDicts]
   );
 
-  // ─── Fast Indexed Search / Translation Logic ───
-  const { searchResults, detectedPivotWords } = useMemo(() => {
-    if (!searchQuery.trim()) return { searchResults: [], detectedPivotWords: [] as string[] };
-    const q = searchQuery.toLowerCase().trim();
-    const qClean = extractNormalizedTerms(q)[0] || q;
+  // ─── Fast Indexed Search / Translation Logic (Shared Engine) ───
+  const { searchResults, detectedPivotWords } = useMemo(
+    () =>
+      runTranslatorSearch({
+        query: searchQuery,
+        sourceLanguage,
+        targetLanguage,
+        sourceDict,
+        targetDict,
+        activeDictList,
+        maxSingleDictResults: 150,
+      }),
+    [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]
+  );
 
-    const results: TranslationResultItem[] = [];
-    const pivotWordsSet = new Set<string>();
+  // Fuzzy "Did you mean?" suggestions when search returns 0 results
+  const fuzzySuggestions = useMemo(() => {
+    if (!searchQuery.trim() || searchQuery.trim().length < 3 || searchResults.length > 0) return [];
+    const pool =
+      sourceLanguage === "english"
+        ? targetDict
+          ? [targetDict]
+          : activeDictList
+        : sourceDict
+        ? [sourceDict]
+        : activeDictList;
+    return getFuzzySuggestions(searchQuery, pool, sourceLanguage, 5);
+  }, [searchQuery, searchResults.length, sourceLanguage, targetDict, sourceDict, activeDictList]);
 
-    const findInDictByEnglishPivots = (
-      dict: Dictionary,
-      pivots: string[],
-      sourceMatch?: DictEntry,
-      maxResults = 120
-    ): TranslationResultItem[] => {
-      const idx = getDictIndex(dict);
-      const exactMatches: TranslationResultItem[] = [];
-      const partialMatches: TranslationResultItem[] = [];
-      const seen = new Set<DictEntry>();
-
-      // Fast O(1) exact lookup first
-      for (const pw of pivots) {
-        const bucket = idx.byEngTerm.get(pw);
-        if (bucket) {
-          for (const item of bucket) {
-            if (seen.has(item.entry)) continue;
-            seen.add(item.entry);
-            exactMatches.push({
-              entry: item.entry,
-              sourceEntry: sourceMatch,
-              pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
-              categoryName: item.cat.name,
-              categoryIcon: item.cat.icon || "📖",
-              languageId: dict.languageId,
-              languageName: dict.languageName,
-              family: dict.family,
-              matchType: "exact",
-            });
-          }
-        }
+  // Swap languages while preserving or flipping the active query
+  const swapLanguages = useCallback(() => {
+    const isReverseToEnglish = sourceLanguage !== "english" && targetLanguage === "english";
+    const topMatch = searchResults.find((r) => !r.missingTarget);
+    if (targetLanguage === "all") {
+      const nextSource = topMatch?.languageId || "swahili";
+      setSourceLanguage(nextSource);
+      setTargetLanguage("english");
+      if (topMatch && searchQuery.trim()) {
+        setSearchQuery(topMatch.entry.translation.split(/[\/;(]/)[0].trim());
       }
-
-      // If we need partial matches, scan pre-normalized terms
-      if (exactMatches.length < maxResults) {
-        const longPivots = pivots.filter((pw) => pw.length >= 3);
-        if (longPivots.length > 0) {
-          const wordBoundaryRegexes = longPivots.map(
-            (pw) => new RegExp(`\\b${pw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i")
-          );
-          // Pass 1: word-boundary matches (so "cat" matches "wild cat" before "cattle")
-          for (const item of idx.all) {
-            if (seen.has(item.entry)) continue;
-            if (wordBoundaryRegexes.some((rx) => rx.test(item.engLower))) {
-              seen.add(item.entry);
-              partialMatches.push({
-                entry: item.entry,
-                sourceEntry: sourceMatch,
-                pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
-                categoryName: item.cat.name,
-                categoryIcon: item.cat.icon || "📖",
-                languageId: dict.languageId,
-                languageName: dict.languageName,
-                family: dict.family,
-                matchType: "partial",
-              });
-              if (exactMatches.length + partialMatches.length >= maxResults) break;
-            }
-          }
-          // Pass 2: prefix/substring fallback if still below maxResults
-          if (exactMatches.length + partialMatches.length < maxResults) {
-            for (const item of idx.all) {
-              if (seen.has(item.entry)) continue;
-              if (longPivots.some((pw) => pw.length >= 4 && (item.engLower.includes(pw) || item.engTerms.some((et) => et.includes(pw))))) {
-                seen.add(item.entry);
-                partialMatches.push({
-                entry: item.entry,
-                sourceEntry: sourceMatch,
-                pivotEnglish: sourceMatch ? sourceMatch.english : item.entry.english,
-                categoryName: item.cat.name,
-                categoryIcon: item.cat.icon || "📖",
-                languageId: dict.languageId,
-                languageName: dict.languageName,
-                family: dict.family,
-                matchType: "partial",
-              });
-                if (exactMatches.length + partialMatches.length >= maxResults) break;
-              }
-            }
-          }
-        }
-      }
-
-      return [...exactMatches, ...partialMatches];
-    };
-
-    if (sourceLanguage === "english") {
-      const pivots = extractNormalizedTerms(q);
-      if (targetLanguage === "all" || targetLanguage === "english") {
-        for (const dict of activeDictList) {
-          const matches = findInDictByEnglishPivots(dict, pivots, undefined, 1);
-          if (matches.length > 0) {
-            results.push(matches[0]);
-          }
-        }
-      } else if (targetDict) {
-        results.push(...findInDictByEnglishPivots(targetDict, pivots, undefined, 150));
-      }
-    } else if (sourceDict) {
-      const sourceIdx = getDictIndex(sourceDict);
-      const exactSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
-      const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
-      const seenSource = new Set<DictEntry>();
-
-      const transBucket = sourceIdx.byTransTerm.get(qClean);
-      if (transBucket) {
-        for (const item of transBucket) {
-          seenSource.add(item.entry);
-          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
-        }
-      }
-
-      for (const item of sourceIdx.all) {
-        if (seenSource.has(item.entry)) continue;
-        if (item.transLower === q) {
-          seenSource.add(item.entry);
-          exactSourceMatches.push({ entry: item.entry, cat: item.cat });
-        } else if (item.transLower.includes(q) || item.transTerms.some((t) => t.includes(qClean))) {
-          seenSource.add(item.entry);
-          partialSourceMatches.push({ entry: item.entry, cat: item.cat });
-          if (partialSourceMatches.length >= 60) break;
-        }
-      }
-
-      // Fallback: if user typed an English word while a Kenyan language was selected as "From"
-      if (exactSourceMatches.length === 0 && partialSourceMatches.length === 0) {
-        const engBucket = sourceIdx.byEngTerm.get(qClean);
-        if (engBucket) {
-          for (const item of engBucket) {
-            seenSource.add(item.entry);
-            exactSourceMatches.push({ entry: item.entry, cat: item.cat });
-          }
-        }
-        if (exactSourceMatches.length === 0) {
-          for (const item of sourceIdx.all) {
-            if (item.engLower.includes(q)) {
-              partialSourceMatches.push({ entry: item.entry, cat: item.cat });
-              if (partialSourceMatches.length >= 60) break;
-            }
-          }
-        }
-      }
-
-      const combinedSource = [...exactSourceMatches, ...partialSourceMatches];
-      const exactSet = new Set(exactSourceMatches);
-
-      if (targetLanguage === "english" || targetLanguage === sourceLanguage) {
-        for (const sm of combinedSource) {
-          results.push({
-            entry: sm.entry,
-            categoryName: sm.cat.name,
-            categoryIcon: sm.cat.icon || "📖",
-            languageId: sourceDict.languageId,
-            languageName: sourceDict.languageName,
-            family: sourceDict.family,
-            matchType: exactSet.has(sm) ? "exact" : "partial",
-          });
-        }
-      } else if (targetLanguage === "all") {
-        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 3) : partialSourceMatches.slice(0, 3);
-        const allPivots: string[] = [];
-        for (const sm of primarySources) {
-          for (const pw of extractNormalizedTerms(sm.entry.english)) {
-            pivotWordsSet.add(pw);
-            if (!allPivots.includes(pw)) allPivots.push(pw);
-          }
-        }
-
-        if (primarySources.length > 0) {
-          const bestSource = primarySources[0].entry;
-          for (const dict of activeDictList) {
-            if (dict.languageId === sourceDict.languageId) continue;
-            const dictMatches = findInDictByEnglishPivots(dict, allPivots, bestSource, 1);
-            if (dictMatches.length > 0) {
-              results.push(dictMatches[0]);
-            }
-          }
-        }
-      } else if (targetDict) {
-        const primarySources = exactSourceMatches.length > 0 ? exactSourceMatches.slice(0, 5) : partialSourceMatches.slice(0, 5);
-        const seenTargetKeys = new Set<string>();
-
-        for (const sm of primarySources) {
-          const pivots = extractNormalizedTerms(sm.entry.english);
-          pivots.forEach((pw) => pivotWordsSet.add(pw));
-          const targetMatches = findInDictByEnglishPivots(targetDict, pivots, sm.entry, 40);
-
-          if (targetMatches.length > 0) {
-            for (const tm of targetMatches) {
-              const key = `${tm.entry.english}::${tm.entry.translation}`;
-              if (!seenTargetKeys.has(key)) {
-                seenTargetKeys.add(key);
-                results.push(tm);
-              }
-            }
-          } else {
-            const key = `bridge::${sm.entry.english}`;
-            if (!seenTargetKeys.has(key)) {
-              seenTargetKeys.add(key);
-              results.push({
-                entry: sm.entry,
-                sourceEntry: sm.entry,
-                pivotEnglish: sm.entry.english,
-                categoryName: sm.cat.name,
-                categoryIcon: sm.cat.icon || "📖",
-                languageId: targetDict.languageId,
-                languageName: targetDict.languageName,
-                family: targetDict.family,
-                matchType: "partial",
-                missingTarget: true,
-              });
-            }
-          }
-        }
+    } else {
+      setSourceLanguage(targetLanguage);
+      setTargetLanguage(sourceLanguage);
+      if (topMatch && searchQuery.trim()) {
+        const flipped = isReverseToEnglish
+          ? topMatch.entry.english.split(/[\/;(]/)[0].trim()
+          : topMatch.entry.translation.split(/[\/;(]/)[0].trim();
+        if (flipped) setSearchQuery(flipped);
       }
     }
+  }, [sourceLanguage, targetLanguage, searchResults, searchQuery]);
 
-    // Multi-word phrase / word-by-word fallback when user enters multiple words
-    const wordTokens = q
-      .replace(/[^a-zA-Z0-9\u00C0-\u024F'\s-]/g, " ")
-      .split(/\s+/)
-      .map((w) => w.trim())
-      .filter((w) => w.length >= 2 && !["the", "a", "an", "please"].includes(w));
-
-    if (wordTokens.length >= 2 && sourceLanguage === "english") {
-      const synthesizeForDict = (dict: Dictionary): TranslationResultItem | null => {
-        const translatedParts: string[] = [];
-        const pronParts: string[] = [];
-        let matchedCount = 0;
-        for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok), undefined, 1);
-          const exact = tokMatches.find((m) => m.matchType === "exact") || tokMatches[0];
-          if (exact) {
-            matchedCount++;
-            const cleanT = exact.entry.translation.split(/[\/;(]/)[0].trim();
-            translatedParts.push(cleanT);
-            if (exact.entry.pronunciation) {
-              pronParts.push(exact.entry.pronunciation.split("/")[0].trim());
-            }
-          }
-        }
-        if (matchedCount >= 2) {
-          return {
-            entry: {
-              english: searchQuery.trim(),
-              translation: translatedParts.join(" + "),
-              pronunciation: pronParts.join(" · "),
-              context: `Word-by-word synthesis (${matchedCount}/${wordTokens.length} words matched in ${dict.languageName})`,
-              audioFile: null,
-            },
-            categoryName: "Word-by-Word Phrase Bridge",
-            categoryIcon: "🔗",
-            languageId: dict.languageId,
-            languageName: dict.languageName,
-            family: dict.family,
-            matchType: matchedCount === wordTokens.length ? "exact" : "partial",
-          };
-        }
-        return null;
-      };
-
-      if (targetLanguage === "all") {
-        for (const dict of activeDictList) {
-          if (!results.some((r) => r.languageId === dict.languageId && r.matchType === "exact")) {
-            const syn = synthesizeForDict(dict);
-            if (syn) results.push(syn);
-          }
-        }
-      } else if (targetDict && !results.some((r) => r.matchType === "exact")) {
-        const syn = synthesizeForDict(targetDict);
-        if (syn) results.unshift(syn);
-        for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok), undefined, 1);
-          if (tokMatches.length > 0) results.push(tokMatches[0]);
+  // Resolved Favorite Entries across loaded dictionaries
+  const favoriteItems = useMemo(() => {
+    const out: {
+      favKey: string;
+      languageId: string;
+      languageName: string;
+      family: string;
+      categoryName: string;
+      entry: DictEntry;
+    }[] = [];
+    for (const key of favorites) {
+      const colonIdx = key.indexOf(":");
+      if (colonIdx === -1) continue;
+      const langId = key.slice(0, colonIdx);
+      const eng = key.slice(colonIdx + 1);
+      const dict = loadedDicts[langId];
+      if (!dict) continue;
+      let foundEntry: DictEntry | undefined;
+      let foundCat = "Vocabulary";
+      for (const cat of dict.categories) {
+        const match = cat.entries.find((e) => e.english === eng);
+        if (match) {
+          foundEntry = match;
+          foundCat = cat.name;
+          break;
         }
       }
+      if (foundEntry) {
+        out.push({
+          favKey: key,
+          languageId: dict.languageId,
+          languageName: dict.languageName,
+          family: dict.family,
+          categoryName: foundCat,
+          entry: foundEntry,
+        });
+      }
     }
-
-    results.sort((a, b) => {
-      if (a.missingTarget !== b.missingTarget) return a.missingTarget ? 1 : -1;
-      return (a.matchType === "exact" ? -1 : 1) - (b.matchType === "exact" ? -1 : 1);
-    });
-
-    return {
-      searchResults: results,
-      detectedPivotWords: Array.from(pivotWordsSet),
-    };
-  }, [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]);
+    return out;
+  }, [favorites, loadedDicts]);
 
   const visibleSearchResults = useMemo(
     () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
@@ -689,6 +480,7 @@ export default function KenyanTranslatorPage() {
           {([
             { id: "translate" as const, label: `Translate & Dictionary (All ${ALL_DICT_METAS.length} Languages)` },
             { id: "browse" as const, label: `Browse ${ALL_DICT_METAS.length} Dictionaries` },
+            { id: "favorites" as const, label: `Saved Favorites (♥ ${favorites.length})` },
           ]).map((mode) => {
             const active = viewMode === mode.id;
             return (
@@ -860,6 +652,21 @@ export default function KenyanTranslatorPage() {
                   <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
                     <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
+                    {fuzzySuggestions.length > 0 && (
+                      <div className="my-2.5 flex flex-wrap items-center justify-center gap-1.5">
+                        <span className="text-xs text-text-secondary font-medium">Did you mean:</span>
+                        {fuzzySuggestions.map((sug) => (
+                          <button
+                            key={sug}
+                            type="button"
+                            onClick={() => setSearchQuery(sug)}
+                            className="px-2.5 py-1 rounded-full text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-colors cursor-pointer"
+                          >
+                            {sug}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                     <p className="text-xs text-text-muted max-w-sm mx-auto">
                       Try searching a core word (e.g. Water, Fire, Sun, Mother, One) or switch &ldquo;To&rdquo; to <strong>All {ALL_DICT_METAS.length} Kenyan Languages</strong>.
                     </p>
@@ -931,8 +738,22 @@ export default function KenyanTranslatorPage() {
                                   ) : (
                                     <>
                                       <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
-                                      {result.entry.pronunciation && (
-                                        <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
+                                      {(result.entry.pronunciation || result.entry.audioFile) && (
+                                        <div className="flex items-center gap-1.5 mt-0.5">
+                                          {result.entry.pronunciation && (
+                                            <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
+                                          )}
+                                          {result.entry.audioFile && (
+                                            <button
+                                              type="button"
+                                              onClick={() => playAudio(result.entry, result.languageId)}
+                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
+                                              title="Play recorded pronunciation"
+                                            >
+                                              🔊 Listen
+                                            </button>
+                                          )}
+                                        </div>
                                       )}
                                     </>
                                   )}
@@ -947,9 +768,23 @@ export default function KenyanTranslatorPage() {
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? "English" : result.languageName}</p>
                                   <p className="text-sm font-bold text-gold break-words">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
-                                  {result.entry.pronunciation && (
-                                    <p className="text-[0.65rem] text-text-muted italic mt-0.5">/{result.entry.pronunciation}/</p>
-                                  )}
+                                  {(result.entry.pronunciation || result.entry.audioFile) && (
+                                        <div className="flex items-center gap-1.5 mt-0.5">
+                                          {result.entry.pronunciation && (
+                                            <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
+                                          )}
+                                          {result.entry.audioFile && (
+                                            <button
+                                              type="button"
+                                              onClick={() => playAudio(result.entry, result.languageId)}
+                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
+                                              title="Play recorded pronunciation"
+                                            >
+                                              🔊 Listen
+                                            </button>
+                                          )}
+                                        </div>
+                                      )}
                                 </div>
                               </div>
                             )}
@@ -1106,8 +941,22 @@ export default function KenyanTranslatorPage() {
                                       <p className="text-[0.8125rem] text-gold font-bold break-words">{entry.translation}</p>
                                     </div>
                                     <div>
-                                      {entry.pronunciation && (
-                                        <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
+                                      {(entry.pronunciation || entry.audioFile) && (
+                                        <div className="flex items-center gap-1.5 flex-wrap">
+                                          {entry.pronunciation && (
+                                            <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
+                                          )}
+                                          {entry.audioFile && (
+                                            <button
+                                              type="button"
+                                              onClick={() => playAudio(entry, browseDict.languageId)}
+                                              className="inline-flex items-center gap-1 text-[0.65rem] text-sky hover:underline font-semibold"
+                                              title="Play recorded pronunciation"
+                                            >
+                                              🔊 Listen
+                                            </button>
+                                          )}
+                                        </div>
                                       )}
                                       {entry.context && (
                                         <p className="text-[0.65rem] text-text-muted mt-0.5">{renderInlineMarkdown(entry.context)}</p>
@@ -1272,6 +1121,112 @@ export default function KenyanTranslatorPage() {
               })}
             </div>
           </>
+        )}
+
+        {/* ═══════════════════════════════════════ */}
+        {/* ── SAVED FAVORITES MODE ── */}
+        {/* ═══════════════════════════════════════ */}
+        {viewMode === "favorites" && (
+          <div className="space-y-3">
+            <div className="flex items-center justify-between gap-3 flex-wrap">
+              <div>
+                <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                  Saved Favorite Words &amp; Phrases ({favorites.length})
+                </h3>
+                <p className="text-[0.65rem] text-text-muted">
+                  Bookmarked vocabulary across all {ALL_DICT_METAS.length} Kenyan languages stored on your device
+                </p>
+              </div>
+              {favorites.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFavorites([]);
+                    try { localStorage.removeItem("kh-translator-favs"); } catch {}
+                  }}
+                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-bg-elevated hover:bg-border text-text-muted hover:text-text-primary border border-border transition-colors cursor-pointer"
+                >
+                  Clear All Favorites
+                </button>
+              )}
+            </div>
+
+            {favorites.length === 0 ? (
+              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
+                <p className="text-sm font-semibold text-text-primary mb-1">No Saved Favorites Yet</p>
+                <p className="text-xs text-text-muted max-w-md mx-auto mb-3">
+                  Tap the heart icon on any dictionary card while translating or browsing categories to build your personal Kenyan vocabulary list.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setViewMode("translate")}
+                  className="px-4 py-2 rounded-lg text-xs font-semibold bg-gold text-kenya-black hover:bg-gold-light transition-colors cursor-pointer"
+                >
+                  Explore Translator
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {favoriteItems.map((item) => (
+                  <div
+                    key={item.favKey}
+                    className="bg-bg-card border border-border hover:border-gold/30 rounded-xl p-3.5 sm:p-4 flex items-start justify-between gap-3 transition-all"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                        <span
+                          className="w-2 h-2 rounded-full flex-shrink-0"
+                          style={{ backgroundColor: FAMILY_COLORS[item.family] || "#C8961E" }}
+                        />
+                        <span className="text-xs font-bold text-text-primary">{item.languageName}</span>
+                        <span className="text-[0.6rem] text-text-muted">· {item.categoryName}</span>
+                      </div>
+                      <p className="text-xs font-medium text-text-secondary break-words">{item.entry.english}</p>
+                      <p className="text-sm font-bold text-gold break-words mt-0.5">{item.entry.translation}</p>
+                      {(item.entry.pronunciation || item.entry.audioFile) && (
+                        <div className="flex items-center gap-1.5 mt-0.5">
+                          {item.entry.pronunciation && (
+                            <p className="text-[0.65rem] text-text-muted italic">/{item.entry.pronunciation}/</p>
+                          )}
+                          {item.entry.audioFile && (
+                            <button
+                              type="button"
+                              onClick={() => playAudio(item.entry, item.languageId)}
+                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
+                            >
+                              🔊 Listen
+                            </button>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex flex-col gap-1 flex-shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => copyToClipboard(item.entry.translation)}
+                        className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors"
+                        title="Copy translation"
+                      >
+                        {copiedText === item.entry.translation ? (
+                          <Check className="w-3.5 h-3.5 text-kenya-green-light" />
+                        ) : (
+                          <span className="text-xs text-text-muted">📋</span>
+                        )}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => toggleFavorite(item.favKey)}
+                        className="w-7 h-7 rounded-lg bg-bg-elevated hover:bg-border flex items-center justify-center transition-colors"
+                        title="Remove from favorites"
+                      >
+                        <X className="w-3.5 h-3.5 text-kenya-red" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         )}
 
         {/* ── Stats Footer ── */}
@@ -1517,6 +1472,14 @@ export default function KenyanTranslatorPage() {
                 </div>
 
                 <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                  {contributeMailtoUrl && (
+                    <a
+                      href={contributeMailtoUrl}
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gold/15 hover:bg-gold/25 text-gold border border-gold/30 transition-colors"
+                    >
+                      Send Backup via Email App
+                    </a>
+                  )}
                   <button
                     type="button"
                     onClick={closeContributeModal}

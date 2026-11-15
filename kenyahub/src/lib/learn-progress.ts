@@ -1,6 +1,6 @@
 // ============================================================
 // Language Learning Progress Manager
-// Handles localStorage persistence, hearts, XP, streaks, and optional Unlock All
+// Handles localStorage persistence, SRS review boxes, XP, streaks, and Unlock All
 // ============================================================
 
 import type { UserProgress, LessonResult } from '@/data/courses/types';
@@ -15,6 +15,14 @@ import {
 const STORAGE_KEY = 'kh-learn-progress';
 const PROGRESS_VERSION = 2;
 
+const SRS_BOX_INTERVALS_MS: Record<number, number> = {
+  1: 10 * 60 * 1000,            // 10 minutes
+  2: 24 * 60 * 60 * 1000,       // 1 day
+  3: 3 * 24 * 60 * 60 * 1000,   // 3 days
+  4: 7 * 24 * 60 * 60 * 1000,   // 7 days
+  5: 14 * 24 * 60 * 60 * 1000,  // 14 days
+};
+
 /* ─── Default state ────────────────────────────────── */
 
 export function createDefaultProgress(languageId: string): UserProgress {
@@ -22,6 +30,7 @@ export function createDefaultProgress(languageId: string): UserProgress {
     version: PROGRESS_VERSION,
     languageId,
     skillLevels: {},
+    dictCursors: {},
     unlockAll: false,
     xp: 0,
     streak: 0,
@@ -56,9 +65,16 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
 
   const skillLevels = isRecord(value.skillLevels)
     ? Object.fromEntries(
-        Object.entries(value.skillLevels).filter(
-          ([, level]) => typeof level === 'number' && Number.isFinite(level)
-        ).map(([skillId, level]) => [skillId, Math.min(5, Math.max(0, Math.floor(level as number)))])
+        Object.entries(value.skillLevels)
+          .filter(([, level]) => typeof level === 'number' && Number.isFinite(level))
+          .map(([skillId, level]) => [skillId, Math.min(5, Math.max(0, Math.floor(level as number)))])
+      )
+    : {};
+  const dictCursors = isRecord(value.dictCursors)
+    ? Object.fromEntries(
+        Object.entries(value.dictCursors)
+          .filter(([, cur]) => typeof cur === 'number' && Number.isFinite(cur))
+          .map(([skillId, cur]) => [skillId, Math.max(0, Math.floor(cur as number))])
       )
     : {};
   const reviewQueue = Array.isArray(value.reviewQueue)
@@ -77,6 +93,7 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
     version: PROGRESS_VERSION,
     languageId,
     skillLevels,
+    dictCursors,
     unlockAll: typeof value.unlockAll === 'boolean' ? value.unlockAll : false,
     xp: toBoundedNumber(value.xp, defaults.xp, 0, Number.MAX_SAFE_INTEGER),
     streak: toBoundedNumber(value.streak, defaults.streak, 0, Number.MAX_SAFE_INTEGER),
@@ -123,7 +140,6 @@ export function saveProgress(progress: UserProgress): void {
 
 /* ─── Hearts ───────────────────────────────────────── */
 
-/** Refill hearts based on elapsed time */
 export function refillHearts(progress: UserProgress): UserProgress {
   if (progress.hearts >= MAX_HEARTS) return progress;
   const elapsed = Date.now() - progress.heartsLastRefill;
@@ -136,7 +152,6 @@ export function refillHearts(progress: UserProgress): UserProgress {
   };
 }
 
-/** Lose a heart */
 export function loseHeart(progress: UserProgress): UserProgress {
   const hearts = Math.max(0, progress.hearts - 1);
   return {
@@ -149,7 +164,6 @@ export function loseHeart(progress: UserProgress): UserProgress {
   };
 }
 
-/** Time until next heart refill (in minutes) */
 export function minutesToNextHeart(progress: UserProgress): number {
   if (progress.hearts >= MAX_HEARTS) return 0;
   const elapsed = Date.now() - progress.heartsLastRefill;
@@ -173,7 +187,6 @@ function getYesterdayString(): string {
   return getDateStringDaysAgo(1);
 }
 
-/** Update streak based on current date */
 export function updateStreak(progress: UserProgress): UserProgress {
   const today = getTodayString();
   const yesterday = getYesterdayString();
@@ -226,7 +239,6 @@ function evaluateAchievementsAndBonuses(updated: UserProgress): UserProgress {
   if (achievementBonusXp > 0) {
     updated.xp += achievementBonusXp;
     updated.todayXp += achievementBonusXp;
-    // Re-check XP-based achievements if bonus pushed user over threshold
     for (const achievement of ACHIEVEMENTS) {
       if (!newAchievements.includes(achievement.id) && achievement.condition(updated)) {
         newAchievements.push(achievement.id);
@@ -249,15 +261,19 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
   const updated: UserProgress = {
     ...progress,
     skillLevels: { ...progress.skillLevels },
+    dictCursors: { ...(progress.dictCursors || {}) },
     achievements: [...progress.achievements],
     wordsLearned: [...progress.wordsLearned],
     reviewQueue: [...progress.reviewQueue],
     todayXp: progress.lastActiveDate === today ? progress.todayXp : 0,
   };
 
-  const currentLevel = updated.skillLevels[result.skillId] || 0;
-  if (result.level > currentLevel) {
-    updated.skillLevels[result.skillId] = result.level;
+  // Do not increment skillLevels when completing a global spaced-repetition review session
+  if (!result.reviewOnly) {
+    const currentLevel = updated.skillLevels[result.skillId] || 0;
+    if (result.level > currentLevel) {
+      updated.skillLevels[result.skillId] = result.level;
+    }
   }
 
   if (updated.lastActiveDate !== today) {
@@ -296,9 +312,31 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
   result.newWordsLearned.forEach((w) => wordSet.add(w));
   updated.wordsLearned = Array.from(wordSet);
 
+  // Exponential SRS box progression (Box 1..5: 10m -> 1d -> 3d -> 7d -> 14d, graduate after Box 5)
   const reviewById = new Map(updated.reviewQueue.map((item) => [item.id, item]));
-  result.reviewedItemIds.forEach((id) => reviewById.delete(id));
-  result.reviewItems.forEach((item) => reviewById.set(item.id, item));
+  const now = Date.now();
+  result.reviewedItemIds.forEach((id) => {
+    const existing = reviewById.get(id);
+    if (!existing) return;
+    const nextBox = (existing.box || 1) + 1;
+    if (nextBox > 5) {
+      reviewById.delete(id);
+    } else {
+      const interval = SRS_BOX_INTERVALS_MS[nextBox] || SRS_BOX_INTERVALS_MS[5];
+      reviewById.set(id, {
+        ...existing,
+        box: nextBox,
+        dueAt: now + interval,
+      });
+    }
+  });
+  result.reviewItems.forEach((item) => {
+    reviewById.set(item.id, {
+      ...item,
+      box: 1,
+      dueAt: now + SRS_BOX_INTERVALS_MS[1],
+    });
+  });
   updated.reviewQueue = Array.from(reviewById.values()).sort((a, b) => a.dueAt - b.dueAt);
 
   updated.hearts = Math.min(MAX_HEARTS, result.heartsRemaining + (result.perfectLesson ? 1 : 0));
@@ -348,11 +386,6 @@ export function getDueReviews(progress: UserProgress, now = Date.now()): LessonR
 
 /* ─── Skill Unlocking ──────────────────────────────── */
 
-/**
- * By default, skills unlock progressively (first skill of Unit 1 is open;
- * each subsequent skill unlocks once the preceding skill reaches at least Level 1).
- * Users can explicitly toggle `unlockAll` to open all units and skills at once.
- */
 export function isSkillUnlocked(
   skillId: string,
   skillIndex: number,

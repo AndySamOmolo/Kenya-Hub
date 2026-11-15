@@ -59,7 +59,7 @@ export default function CookieConsent() {
       const next = { analytics: true, advertising: true };
       setPreferences(next);
       updateConsent(next);
-    } else if (stored === "declined") {
+    } else if (stored === "declined" || stored === "essential") {
       setPreferences({ analytics: false, advertising: false });
       updateConsent({ analytics: false, advertising: false });
     } else {
@@ -83,7 +83,10 @@ export default function CookieConsent() {
     savePreferences({ analytics: false, advertising: false }, "declined");
   };
 
-  const savePreferences = (next: CookiePreferences, legacyStatus: "accepted" | "declined" | "custom" = "custom") => {
+  const savePreferences = (
+    next: CookiePreferences,
+    legacyStatus: "accepted" | "declined" | "custom" = "custom"
+  ) => {
     setPreferences(next);
     localStorage.setItem("kh-cookie-preferences", JSON.stringify(next));
     localStorage.setItem("kh-cookie-consent", legacyStatus);
@@ -96,78 +99,110 @@ export default function CookieConsent() {
 
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-[100] p-4 sm:p-6 animate-fade-in-up"
+      className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-[100] sm:max-w-md animate-fade-in-up"
       role="dialog"
       aria-label="Cookie consent"
     >
-      <div className="max-w-2xl mx-auto bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-black/30 p-5 sm:p-6">
+      <div className="bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-black/40 p-3.5 sm:p-4">
         {showSettings ? (
           <>
-            <div className="flex items-start gap-3 mb-4">
-              <Settings2 className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2.5 mb-3">
+              <Settings2 className="w-4 h-4 text-gold shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">Manage cookie preferences</p>
-                <p className="text-xs text-text-secondary mt-1">Essential storage is always active. Choose whether KenyaHub may use analytics and advertising cookies.</p>
+                <p className="text-xs sm:text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                  Manage cookie preferences
+                </p>
+                <p className="text-[0.7rem] text-text-secondary mt-0.5">
+                  Essential storage is always active. Choose analytics and advertising preferences.
+                </p>
               </div>
             </div>
-            <div className="space-y-2 mb-5">
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3">
-                <span><span className="block text-xs font-semibold text-text-primary">Essential</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Required for preferences and core site features</span></span>
+            <div className="space-y-1.5 mb-3.5">
+              <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2">
+                <span>
+                  <span className="block text-xs font-semibold text-text-primary">Essential</span>
+                  <span className="block text-[0.65rem] text-text-muted">Required for core features</span>
+                </span>
                 <input type="checkbox" checked disabled className="accent-gold" aria-label="Essential cookies always enabled" />
               </label>
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3 cursor-pointer">
-                <span><span className="block text-xs font-semibold text-text-primary">Analytics</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Helps us understand which tools are useful</span></span>
-                <input type="checkbox" checked={preferences.analytics} onChange={(event) => setPreferences((current) => ({ ...current, analytics: event.target.checked }))} className="accent-gold" aria-label="Analytics cookies" />
+              <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
+                <span>
+                  <span className="block text-xs font-semibold text-text-primary">Analytics</span>
+                  <span className="block text-[0.65rem] text-text-muted">Anonymous tool usage stats</span>
+                </span>
+                <input
+                  type="checkbox"
+                  checked={preferences.analytics}
+                  onChange={(event) =>
+                    setPreferences((current) => ({ ...current, analytics: event.target.checked }))
+                  }
+                  className="accent-gold"
+                  aria-label="Analytics cookies"
+                />
               </label>
-              <label className="flex items-center justify-between gap-4 rounded-xl border border-border bg-bg-elevated/50 p-3 cursor-pointer">
-                <span><span className="block text-xs font-semibold text-text-primary">Advertising</span><span className="block text-[0.65rem] text-text-muted mt-0.5">Supports personalised and non-personalised ads</span></span>
-                <input type="checkbox" checked={preferences.advertising} onChange={(event) => setPreferences((current) => ({ ...current, advertising: event.target.checked }))} className="accent-gold" aria-label="Advertising cookies" />
+              <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
+                <span>
+                  <span className="block text-xs font-semibold text-text-primary">Advertising</span>
+                  <span className="block text-[0.65rem] text-text-muted">Google AdSense support</span>
+                </span>
+                <input
+                  type="checkbox"
+                  checked={preferences.advertising}
+                  onChange={(event) =>
+                    setPreferences((current) => ({ ...current, advertising: event.target.checked }))
+                  }
+                  className="accent-gold"
+                  aria-label="Advertising cookies"
+                />
               </label>
             </div>
             <div className="flex justify-end gap-2">
-              <button onClick={() => setShowSettings(false)} className="px-4 py-2 text-xs font-semibold rounded-xl border border-border text-text-secondary hover:text-text-primary transition-all">Back</button>
-              <button onClick={() => savePreferences(preferences)} className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity">Save preferences</button>
+              <button
+                onClick={() => setShowSettings(false)}
+                className="px-3 py-1.5 text-xs font-semibold rounded-lg border border-border text-text-secondary hover:text-text-primary transition-all"
+              >
+                Back
+              </button>
+              <button
+                onClick={() => savePreferences(preferences)}
+                className="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity"
+              >
+                Save
+              </button>
             </div>
           </>
         ) : (
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-text-primary mb-1 font-[family-name:var(--font-outfit)]">
-              <Cookie className="w-4 h-4 inline-block mr-1.5 text-gold align-text-bottom" />Cookie Consent
-            </p>
-            <p className="text-xs text-text-secondary leading-relaxed">
-              KenyaHub uses cookies for ads personalisation and site analytics.
-              You can accept or decline non-essential cookies. See our{" "}
-              <a
-                href="/privacy/"
-                className="text-gold hover:underline font-medium"
+          <div className="space-y-2.5">
+            <div className="flex items-start gap-2.5">
+              <Cookie className="w-4 h-4 text-gold shrink-0 mt-0.5" />
+              <p className="text-xs text-text-secondary leading-snug">
+                KenyaHub uses cookies for analytics &amp; ads.{" "}
+                <a href="/privacy/" className="text-gold hover:underline font-medium">
+                  Privacy Policy
+                </a>
+              </p>
+            </div>
+            <div className="flex items-center justify-end gap-1.5">
+              <button
+                onClick={() => setShowSettings(true)}
+                className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold rounded-lg text-gold hover:bg-gold/10 transition-all cursor-pointer"
               >
-                Privacy Policy
-              </a>{" "}
-              for details.
-            </p>
+                <Settings2 className="w-3.5 h-3.5" /> Manage
+              </button>
+              <button
+                onClick={handleDecline}
+                className="px-3 py-1.5 text-xs font-semibold rounded-lg border border-border text-text-secondary hover:text-text-primary transition-all cursor-pointer"
+              >
+                Essential Only
+              </button>
+              <button
+                onClick={handleAccept}
+                className="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity shadow-sm cursor-pointer"
+              >
+                Accept
+              </button>
+            </div>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
-            <button
-              onClick={() => setShowSettings(true)}
-              className="inline-flex items-center gap-1 px-3 py-2 text-xs font-semibold rounded-xl text-gold hover:bg-gold/10 transition-all"
-            >
-              <Settings2 className="w-3.5 h-3.5" /> Manage
-            </button>
-            <button
-              onClick={handleDecline}
-              className="px-4 py-2 text-xs font-semibold rounded-xl border border-border text-text-secondary hover:text-text-primary hover:border-text-muted transition-all"
-            >
-              Decline
-            </button>
-            <button
-              onClick={handleAccept}
-              className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity shadow-lg"
-            >
-              Accept All
-            </button>
-          </div>
-        </div>
         )}
       </div>
     </div>

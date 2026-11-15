@@ -7,6 +7,11 @@ const root = resolve(__dirname, "../..");
 const source = resolve(root, "kenyahub/src");
 const destination = resolve(__dirname, "../src/shared");
 
+// Internal editorial-only files excluded from mobile bundle (MOB-6)
+const EXCLUDED_DATA_FILES = new Set([
+  "ocr-review.ts",
+]);
+
 function ensureDir(dir) {
   if (!existsSync(dir)) {
     mkdirSync(dir, { recursive: true });
@@ -19,6 +24,7 @@ function copyDirFiltered(srcDir, destDir) {
   for (const entry of entries) {
     if (entry.name === "languages data" || entry.name === "raw" || entry.name === "__pycache__") continue;
     if (entry.name.endsWith(".pyc") || entry.name.endsWith(".log") || entry.name.endsWith(".pdf")) continue;
+    if (EXCLUDED_DATA_FILES.has(entry.name)) continue;
     const sPath = join(srcDir, entry.name);
     const dPath = join(destDir, entry.name);
     if (entry.isDirectory()) {
@@ -30,6 +36,8 @@ function copyDirFiltered(srcDir, destDir) {
 }
 
 rmSync(resolve(destination, "data/language-sources/raw"), { recursive: true, force: true });
+rmSync(resolve(destination, "data/language-sources/ocr-review.ts"), { force: true });
+rmSync(resolve(destination, "lib/dictionary-loader.ts"), { force: true });
 copyDirFiltered(resolve(source, "data"), resolve(destination, "data"));
 
 ensureDir(resolve(destination, "lib"));
@@ -39,7 +47,6 @@ const libFiles = [
   "learn-engine.ts",
   "learn-progress.ts",
   "dictionary-search.ts",
-  "dictionary-loader.ts",
 ];
 for (const file of libFiles) {
   const srcPath = resolve(source, "lib", file);

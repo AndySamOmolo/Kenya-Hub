@@ -4256,7 +4256,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Maasai (Maa) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhne",
+        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
         "words": [
                 {
                         "target": "Ashe / Ashe oleng'",
@@ -4292,81 +4292,24 @@ export const MAASAI_UNITS: CourseUnit[] = [
                         "target": "aāsi (lit. an expression of delight)",
                         "source": "Thank you",
                         "pronunciation": "aāsi"
-                },
-                {
-                        "target": "Kirrip emoti pl. motiu te nkang' ang'",
-                        "source": "We keep cooking vessel in our homestead",
-                        "pronunciation": "kirrip emoti pl motiu te nkang ang"
-                },
-                {
-                        "target": "Kirrip essudoii te nkang' ang'",
-                        "source": "We keep hide in our homestead",
-                        "pronunciation": "kirrip essudoii te nkang ang"
-                },
-                {
-                        "target": "Kirrip essebil pl. essebilli te nkang' ang'",
-                        "source": "We keep barb in our homestead",
-                        "pronunciation": "kirrip essebil pl essebilli te nkang ang"
-                },
-                {
-                        "target": "Kirrip E-moti te nkang' ang'",
-                        "source": "We keep the cooking pot in our homestead",
-                        "pronunciation": "kirrip e-moti te nkang ang"
-                },
-                {
-                        "target": "Kirrip essibirr orlalim te nkang' ang'",
-                        "source": "We keep blade in our homestead",
-                        "pronunciation": "kirrip essibirr orlalim te nkang ang"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ke iata ērdo ngāiiji taata?",
-                        "source": "Do you have a long house today?"
+                        "target": "Ashe / Ashe oleng'",
+                        "source": "Thank you / Thank you very much"
                 },
                 {
-                        "target": "Ke iata enjerdalalim taata?",
-                        "source": "Do you have knife-handle today?"
+                        "target": "tagwenia",
+                        "source": "Salutation to a woman (literally laugh)"
                 },
                 {
-                        "target": "Ke iata tobollo kutugaji taata?",
-                        "source": "Do you have open the door today?"
+                        "target": "Supa! (resp. Ipa!)",
+                        "source": "Hello! Good day! (general greeting among peers)"
                 },
                 {
-                        "target": "Ke iata ingieno kutugaji taata?",
-                        "source": "Do you have shut the door today?"
-                },
-                {
-                        "target": "Ke iata engang pl. engangiti taata?",
-                        "source": "Do you have boma today?"
-                },
-                {
-                        "target": "Ke iata En-joni taata?",
-                        "source": "Do you have piece of hide today?"
-                },
-                {
-                        "target": "Ke iata Eng-aji e-ongwan taata?",
-                        "source": "Do you have the fourth hut today?"
-                },
-                {
-                        "target": "Ke iata emoti pl. motiu taata?",
-                        "source": "Do you have cooking vessel today?"
-                },
-                {
-                        "target": "Ke iata essudoii taata?",
-                        "source": "Do you have hide today?"
-                },
-                {
-                        "target": "Ke iata essebil pl. essebilli taata?",
-                        "source": "Do you have barb today?"
-                },
-                {
-                        "target": "Ke iata E-moti taata?",
-                        "source": "Do you have the cooking pot today?"
-                },
-                {
-                        "target": "Ke iata essibirr orlalim taata?",
-                        "source": "Do you have blade today?"
+                        "target": "Asai!",
+                        "source": "Many thanks!"
                 }
         ]
 },
@@ -4375,117 +4318,55 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Maasai (Maa) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhne",
+        "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Kirrip endao engilani te nkang' ang'",
-                        "source": "We keep put off in our homestead",
-                        "pronunciation": "kirrip endao engilani te nkang ang"
-                },
-                {
-                        "target": "Kirrip erremetino te nkang' ang'",
-                        "source": "We keep your spear in our homestead",
-                        "pronunciation": "kirrip erremetino te nkang ang"
-                },
-                {
-                        "target": "Kirrip olldedu te nkang' ang'",
-                        "source": "We keep nails in our homestead",
-                        "pronunciation": "kirrip olldedu te nkang ang"
-                },
-                {
-                        "target": "Kaja enkeene e enjerdalalim te sokoni?",
-                        "source": "What is the price of knife-handle at the market?",
-                        "pronunciation": "kaja enkeene e enjerdalalim te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e engang pl. engangiti te sokoni?",
-                        "source": "What is the price of boma at the market?",
-                        "pronunciation": "kaja enkeene e engang pl engangiti te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e emoti pl. motiu te sokoni?",
-                        "source": "What is the price of cooking vessel at the market?",
-                        "pronunciation": "kaja enkeene e emoti pl motiu te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e essudoii te sokoni?",
-                        "source": "What is the price of hide at the market?",
-                        "pronunciation": "kaja enkeene e essudoii te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e essebil pl. essebilli te sokoni?",
-                        "source": "What is the price of barb at the market?",
-                        "pronunciation": "kaja enkeene e essebil pl essebilli te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e essibirr orlalim te sokoni?",
-                        "source": "What is the price of blade at the market?",
-                        "pronunciation": "kaja enkeene e essibirr orlalim te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e endao engilani te sokoni?",
-                        "source": "What is the price of put off at the market?",
-                        "pronunciation": "kaja enkeene e endao engilani te sokoni"
-                },
-                {
-                        "target": "Kaja enkeene e erremetino te sokoni?",
-                        "source": "What is the price of your spear at the market?",
-                        "pronunciation": "kaja enkeene e erremetino te sokoni"
-                },
                 {
                         "target": "Torripa emoti pl. motiu pee eaku serian enkop",
                         "source": "Guard cooking vessel for the peace of the land",
                         "pronunciation": "torripa emoti pl motiu pee eaku serian enkop"
+                },
+                {
+                        "target": "salam (tomoni ooudo)",
+                        "source": "Ninety",
+                        "pronunciation": "sa-lam"
+                },
+                {
+                        "target": "Tomon obo",
+                        "source": "Eleven",
+                        "pronunciation": "to-mon o-boh"
+                },
+                {
+                        "target": "Tigitam",
+                        "source": "Twenty",
+                        "pronunciation": "ti-gi-tam"
+                },
+                {
+                        "target": "Tomoni uni",
+                        "source": "Thirty",
+                        "pronunciation": "to-mo-ni u-ni"
+                },
+                {
+                        "target": "ílɛ̂ / íllɛ̂",
+                        "source": "Six (6)",
+                        "pronunciation": "il"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ke iata endao engilani taata?",
-                        "source": "Do you have put off today?"
+                        "target": "Torripa emoti pl. motiu pee eaku serian enkop",
+                        "source": "Guard cooking vessel for the peace of the land"
                 },
                 {
-                        "target": "Ke iata erremetino taata?",
-                        "source": "Do you have your spear today?"
+                        "target": "salam (tomoni ooudo)",
+                        "source": "Ninety"
                 },
                 {
-                        "target": "Ke iata olldedu taata?",
-                        "source": "Do you have nails today?"
+                        "target": "Tomon obo",
+                        "source": "Eleven"
                 },
                 {
-                        "target": "Kaja enkeene e Kutuk-aji te sokoni?",
-                        "source": "What is the price of the door at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e Kishomi J te sokoni?",
-                        "source": "What is the price of the gate at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e orrgerenget te sokoni?",
-                        "source": "What is the price of game trap at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e Em-bae te sokoni?",
-                        "source": "What is the price of the arrow at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e El-loft1 go te sokoni?",
-                        "source": "What is the price of the shield at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e engajenye te sokoni?",
-                        "source": "What is the price of their house at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e enduela pl. endwalan te sokoni?",
-                        "source": "What is the price of bell at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e enjerdalalim te sokoni?",
-                        "source": "What is the price of knife-handle at the market?"
-                },
-                {
-                        "target": "Kaja enkeene e engang pl. engangiti te sokoni?",
-                        "source": "What is the price of boma at the market?"
+                        "target": "Tigitam",
+                        "source": "Twenty"
                 }
         ]
 }

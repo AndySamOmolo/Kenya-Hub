@@ -1,9 +1,23 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Pressable,
+  ScrollView,
+  Share,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme, KenyaStripe, AndroidTopAppBar } from "../../src/theme";
+import {
+  useTheme,
+  KenyaStripe,
+  AndroidTopAppBar,
+  androidRipple,
+  pressableStyle,
+  triggerHaptic,
+} from "../../src/theme";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { MatatuMap } from "../../src/components/MatatuMap";
 
@@ -17,7 +31,7 @@ export default function MatatuRouteScreen() {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
   }, [slug]);
 
-  const { route, townSlug, townName, otherRoutes } = useMemo(() => {
+  const { route, townName, otherRoutes } = useMemo(() => {
     const routesByTown = (matatuData as any).routes || {};
     const towns = (matatuData as any).towns || [];
     for (const [tSlug, list] of Object.entries(routesByTown)) {
@@ -39,11 +53,22 @@ export default function MatatuRouteScreen() {
 
   if (!route) {
     return (
-      <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]}>
+      <SafeAreaView
+        style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+        edges={["top", "left", "right", "bottom"]}
+      >
         <View style={styles.notFound}>
           <Ionicons name="search" size={48} color={theme.textMuted} />
-          <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>Route not found</Text>
-          <Pressable onPress={() => router.back()} style={[styles.backButton, { backgroundColor: theme.gold }]}>
+          <Text style={[styles.notFoundTitle, { color: theme.textPrimary }]}>
+            Route not found
+          </Text>
+          <Pressable
+            onPress={() => router.back()}
+            style={pressableStyle([
+              styles.backButton,
+              { backgroundColor: theme.gold },
+            ])}
+          >
             <Text style={styles.backButtonText}>Go back</Text>
           </Pressable>
         </View>
@@ -51,14 +76,51 @@ export default function MatatuRouteScreen() {
     );
   }
 
+  const handleShareRoute = async () => {
+    triggerHaptic(10);
+    const stageList = (route.stages || [])
+      .map((s: any, idx: number) => `${idx + 1}. ${typeof s === "string" ? s : s.name}`)
+      .join(" → ");
+    try {
+      await Share.share({
+        title: `Matatu Route ${route.routeNumber}: ${route.name}`,
+        message: `Matatu Route ${route.routeNumber} (${townName}): ${route.name}\nSACCO: ${route.saccoName}\nFare: KES ${route.fareMin} (Off-Peak) – KES ${route.fareMax} (Peak)\nStages: ${stageList}\n\n— Shared via KenyaHub`,
+      });
+    } catch {}
+  };
+
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: theme.bgPrimary }]} edges={["top", "left", "right"]}>
+    <SafeAreaView
+      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+      edges={["top", "left", "right", "bottom"]}
+    >
       <KenyaStripe />
 
       <AndroidTopAppBar
         title={`Route ${route.routeNumber}: ${route.name}`}
         subtitle={`${townName} · ${route.saccoName || "Matatu SACCO"}`}
         onBack={() => router.back()}
+        rightAction={
+          <Pressable
+            onPress={handleShareRoute}
+            accessibilityRole="button"
+            accessibilityLabel="Share matatu route details"
+            android_ripple={androidRipple(theme.rippleColor, true)}
+            style={pressableStyle({
+              width: 34,
+              height: 34,
+              borderRadius: 17,
+              borderWidth: 1,
+              borderColor: theme.outlineVariant,
+              backgroundColor: theme.surfaceContainerHigh,
+              alignItems: "center",
+              justifyContent: "center",
+            })}
+            hitSlop={8}
+          >
+            <Ionicons name="share-social-outline" size={16} color={theme.gold} />
+          </Pressable>
+        }
       />
 
       <ScrollView
@@ -67,26 +129,76 @@ export default function MatatuRouteScreen() {
         showsVerticalScrollIndicator={false}
       >
         {/* Route Hero Card */}
-        <View style={[styles.heroCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+        <View
+          style={[
+            styles.heroCard,
+            { backgroundColor: theme.bgCard, borderColor: theme.border },
+          ]}
+        >
           <View style={styles.heroInner}>
             <View style={styles.heroHeader}>
-              <View style={[styles.busIconBox, { backgroundColor: `${theme.gold}20`, borderColor: `${theme.gold}40` }]}>
-                <Text style={{ fontFamily: "Outfit_800ExtraBold", fontSize: 13, color: theme.gold }}>
+              <View
+                style={[
+                  styles.busIconBox,
+                  {
+                    backgroundColor: `${theme.gold}20`,
+                    borderColor: `${theme.gold}40`,
+                  },
+                ]}
+              >
+                <Text
+                  style={{
+                    fontFamily: "Outfit_800ExtraBold",
+                    fontSize: 13,
+                    color: theme.gold,
+                  }}
+                >
                   R{route.routeNumber}
                 </Text>
               </View>
               <View style={{ flex: 1, marginLeft: 14 }}>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 6,
+                    marginBottom: 2,
+                  }}
+                >
                   {route.verified && (
-                    <View style={{ backgroundColor: `${theme.kenyaGreen}25`, paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6 }}>
-                      <Text style={{ fontSize: 10, fontWeight: "800", color: theme.kenyaGreenLight }}>✓ Verified Route</Text>
+                    <View
+                      style={{
+                        backgroundColor: `${theme.kenyaGreen}25`,
+                        paddingHorizontal: 7,
+                        paddingVertical: 2,
+                        borderRadius: 6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          fontFamily: "Outfit_800ExtraBold",
+                          color: theme.kenyaGreenLight,
+                        }}
+                      >
+                        ✓ Verified Route
+                      </Text>
                     </View>
                   )}
-                  <Text style={{ fontSize: 11, color: theme.textMuted }}>{townName}</Text>
+                  <Text style={{ fontSize: 11, color: theme.textMuted }}>
+                    {townName}
+                  </Text>
                 </View>
-                <Text style={[styles.heading, { color: theme.textPrimary }]}>{route.name}</Text>
-                <Text style={[styles.saccoHeading, { color: theme.textSecondary }]}>
-                  Operated by <Text style={{ color: theme.gold, fontWeight: "700" }}>{route.saccoName}</Text>
+                <Text style={[styles.heading, { color: theme.textPrimary }]}>
+                  {route.name}
+                </Text>
+                <Text
+                  style={[styles.saccoHeading, { color: theme.textSecondary }]}
+                >
+                  Operated by{" "}
+                  <Text style={{ color: theme.gold, fontFamily: "Outfit_700Bold" }}>
+                    {route.saccoName}
+                  </Text>
                 </Text>
               </View>
             </View>
@@ -94,19 +206,31 @@ export default function MatatuRouteScreen() {
             {/* Quick Fare & Details Strip */}
             <View style={[styles.fareStrip, { borderTopColor: theme.border }]}>
               <View style={styles.fareItem}>
-                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Off-Peak Fare</Text>
-                <Text style={[styles.fareValue, { color: theme.textPrimary }]}>KES {route.fareMin}</Text>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>
+                  Off-Peak Fare
+                </Text>
+                <Text style={[styles.fareValue, { color: theme.textPrimary }]}>
+                  KES {route.fareMin}
+                </Text>
               </View>
-              <View style={[styles.fareDivider, { backgroundColor: theme.border }]} />
+              <View
+                style={[styles.fareDivider, { backgroundColor: theme.border }]}
+              />
               <View style={styles.fareItem}>
-                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Peak Fare</Text>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>
+                  Peak Fare
+                </Text>
                 <Text style={[styles.fareValue, { color: theme.gold }]}>
                   KES {route.fareMax}
                 </Text>
               </View>
-              <View style={[styles.fareDivider, { backgroundColor: theme.border }]} />
+              <View
+                style={[styles.fareDivider, { backgroundColor: theme.border }]}
+              />
               <View style={styles.fareItem}>
-                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>Stages</Text>
+                <Text style={[styles.fareLabel, { color: theme.textMuted }]}>
+                  Stages
+                </Text>
                 <Text style={[styles.fareValue, { color: theme.textPrimary }]}>
                   {route.stages ? route.stages.length : "—"}
                 </Text>
@@ -130,27 +254,61 @@ export default function MatatuRouteScreen() {
               stages={route.stages}
               routeName={route.name}
               routeNumber={route.routeNumber}
-              height={300}
+              height={320}
             />
           </View>
         )}
 
         {/* Terminus Card */}
-        <Text style={[styles.sectionHeading, { color: theme.gold }]}>Route Terminus</Text>
-        <View style={[styles.terminusCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+        <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+          Route Terminus
+        </Text>
+        <View
+          style={[
+            styles.terminusCard,
+            { backgroundColor: theme.bgCard, borderColor: theme.border },
+          ]}
+        >
           <View style={styles.terminusRow}>
-            <View style={[styles.terminusDotA, { backgroundColor: theme.kenyaGreenLight }]} />
+            <View
+              style={[
+                styles.terminusDotA,
+                { backgroundColor: theme.kenyaGreenLight },
+              ]}
+            />
             <View style={{ flex: 1 }}>
-              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>Start Terminus / CBD</Text>
-              <Text style={[styles.terminusName, { color: theme.textPrimary }]}>{route.terminusA}</Text>
+              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>
+                Start Terminus / CBD
+              </Text>
+              <Text
+                style={[styles.terminusName, { color: theme.textPrimary }]}
+              >
+                {route.terminusA}
+              </Text>
             </View>
           </View>
-          <View style={[styles.terminusConnector, { backgroundColor: theme.border }]} />
+          <View
+            style={[
+              styles.terminusConnector,
+              { backgroundColor: theme.border },
+            ]}
+          />
           <View style={styles.terminusRow}>
-            <View style={[styles.terminusDotB, { backgroundColor: theme.kenyaRedLight }]} />
+            <View
+              style={[
+                styles.terminusDotB,
+                { backgroundColor: theme.kenyaRedLight },
+              ]}
+            />
             <View style={{ flex: 1 }}>
-              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>Destination</Text>
-              <Text style={[styles.terminusName, { color: theme.textPrimary }]}>{route.terminusB}</Text>
+              <Text style={[styles.terminusLabel, { color: theme.textMuted }]}>
+                Destination
+              </Text>
+              <Text
+                style={[styles.terminusName, { color: theme.textPrimary }]}
+              >
+                {route.terminusB}
+              </Text>
             </View>
           </View>
         </View>
@@ -161,12 +319,23 @@ export default function MatatuRouteScreen() {
             <Text style={[styles.sectionHeading, { color: theme.gold }]}>
               Stage Stopovers ({route.stages.length})
             </Text>
-            <View style={[styles.timelineCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+            <View
+              style={[
+                styles.timelineCard,
+                { backgroundColor: theme.bgCard, borderColor: theme.border },
+              ]}
+            >
               {route.stages.map((stage: any, idx: number) => {
                 const isFirst = idx === 0;
                 const isLast = idx === route.stages.length - 1;
-                const stageName = typeof stage === "string" ? stage : (stage?.name || `Stage ${idx + 1}`);
-                const hasCoords = typeof stage === "object" && stage?.lat != null && stage?.lng != null;
+                const stageName =
+                  typeof stage === "string"
+                    ? stage
+                    : stage?.name || `Stage ${idx + 1}`;
+                const hasCoords =
+                  typeof stage === "object" &&
+                  stage?.lat != null &&
+                  stage?.lng != null;
 
                 return (
                   <View key={idx} style={styles.stageRow}>
@@ -179,31 +348,69 @@ export default function MatatuRouteScreen() {
                           isLast && { backgroundColor: theme.kenyaRedLight },
                         ]}
                       />
-                      {!isLast && <View style={[styles.timelineLine, { backgroundColor: theme.border }]} />}
+                      {!isLast && (
+                        <View
+                          style={[
+                            styles.timelineLine,
+                            { backgroundColor: theme.border },
+                          ]}
+                        />
+                      )}
                     </View>
                     <View style={styles.stageContent}>
-                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                      <View
+                        style={{
+                          flexDirection: "row",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                        }}
+                      >
                         <Text
                           style={[
                             styles.stageName,
                             { color: theme.textSecondary },
-                            (isFirst || isLast) && { fontWeight: "700", color: theme.textPrimary },
+                            (isFirst || isLast) && {
+                              fontFamily: "Outfit_700Bold",
+                              color: theme.textPrimary,
+                            },
                           ]}
                         >
                           {stageName}
                         </Text>
-                        <Text style={[styles.stageOrder, { color: theme.textMuted }]}>
-                          #{typeof stage === "object" && stage?.order ? stage.order : idx + 1}
+                        <Text
+                          style={[
+                            styles.stageOrder,
+                            { color: theme.textMuted },
+                          ]}
+                        >
+                          #
+                          {typeof stage === "object" && stage?.order
+                            ? stage.order
+                            : idx + 1}
                         </Text>
                       </View>
                       {isFirst && (
-                        <Text style={[styles.stageNote, { color: theme.gold }]}>Departure Terminus</Text>
+                        <Text style={[styles.stageNote, { color: theme.gold }]}>
+                          Departure Terminus
+                        </Text>
                       )}
                       {isLast && (
-                        <Text style={[styles.stageNote, { color: theme.kenyaRedLight }]}>Final Destination</Text>
+                        <Text
+                          style={[
+                            styles.stageNote,
+                            { color: theme.kenyaRedLight },
+                          ]}
+                        >
+                          Final Destination
+                        </Text>
                       )}
                       {hasCoords && (
-                        <Text style={[styles.coordsText, { color: theme.textMuted }]}>
+                        <Text
+                          style={[
+                            styles.coordsText,
+                            { color: theme.textMuted },
+                          ]}
+                        >
                           {stage.lat.toFixed(4)}, {stage.lng.toFixed(4)}
                         </Text>
                       )}
@@ -217,40 +424,92 @@ export default function MatatuRouteScreen() {
 
         {/* Operating Hours and Info Strip */}
         {route.operatingHours && (
-          <View style={[styles.hoursCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <View
+            style={[
+              styles.hoursCard,
+              { backgroundColor: theme.bgCard, borderColor: theme.border },
+            ]}
+          >
             <Ionicons name="time-outline" size={18} color={theme.gold} />
             <Text style={[styles.hoursText, { color: theme.textPrimary }]}>
-              Operating Hours: <Text style={{ fontWeight: "700" }}>{route.operatingHours}</Text>
+              Operating Hours:{" "}
+              <Text style={{ fontFamily: "Outfit_700Bold" }}>
+                {route.operatingHours}
+              </Text>
             </Text>
           </View>
         )}
 
-        {/* Report Discrepancy Card (mirrors web RouteDetailView.tsx) */}
-        <View style={[styles.reportCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-          <Text style={{ fontSize: 13, fontWeight: "700", color: theme.textPrimary }}>
+        {/* Report Discrepancy Card */}
+        <View
+          style={[
+            styles.reportCard,
+            { backgroundColor: theme.bgCard, borderColor: theme.border },
+          ]}
+        >
+          <Text
+            style={{
+              fontSize: 13,
+              fontFamily: "Outfit_700Bold",
+              color: theme.textPrimary,
+            }}
+          >
             Notice an error in fares or stages?
           </Text>
-          <Text style={{ fontSize: 11.5, color: theme.textMuted, textAlign: "center", marginTop: 2 }}>
+          <Text
+            style={{
+              fontSize: 11.5,
+              color: theme.textMuted,
+              textAlign: "center",
+              marginTop: 2,
+            }}
+          >
             Help us keep Kenya&apos;s matatu route information accurate.
           </Text>
           {reported ? (
-            <Text style={{ fontSize: 12, fontWeight: "700", color: theme.kenyaGreenLight, marginTop: 8 }}>
-              ✓ Thank you! Report submitted for review.
+            <Text
+              style={{
+                fontSize: 12,
+                fontFamily: "Outfit_700Bold",
+                color: theme.kenyaGreenLight,
+                marginTop: 8,
+              }}
+            >
+              ✓ Thank you! Report saved locally for review.
             </Text>
           ) : (
             <Pressable
-              onPress={() => setReported(true)}
-              style={[styles.reportBtn, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}
+              onPress={() => {
+                triggerHaptic(10);
+                setReported(true);
+              }}
+              style={pressableStyle([
+                styles.reportBtn,
+                {
+                  backgroundColor: theme.bgElevated,
+                  borderColor: theme.border,
+                },
+              ])}
             >
-              <Ionicons name="flag-outline" size={14} color={theme.kenyaRedLight} />
-              <Text style={{ fontSize: 12, fontWeight: "700", color: theme.textPrimary }}>
+              <Ionicons
+                name="flag-outline"
+                size={14}
+                color={theme.kenyaRedLight}
+              />
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: "Outfit_700Bold",
+                  color: theme.textPrimary,
+                }}
+              >
                 Report Discrepancy
               </Text>
             </Pressable>
           )}
         </View>
 
-        {/* Other Town Routes (mirrors web RouteDetailView.tsx) */}
+        {/* Other Town Routes */}
         {otherRoutes.length > 0 && (
           <View style={{ marginTop: 8, marginBottom: 16 }}>
             <Text style={[styles.sectionHeading, { color: theme.gold }]}>
@@ -260,31 +519,58 @@ export default function MatatuRouteScreen() {
               {otherRoutes.map((r: any) => (
                 <Pressable
                   key={r.slug}
+                  android_ripple={androidRipple(theme.rippleColor)}
                   onPress={() =>
                     router.push({
                       pathname: "/matatu/[slug]",
                       params: { slug: r.slug },
                     })
                   }
-                  style={[
+                  style={pressableStyle([
                     styles.otherRouteCard,
-                    { backgroundColor: theme.bgCard, borderColor: theme.border },
-                  ]}
+                    {
+                      backgroundColor: theme.bgCard,
+                      borderColor: theme.border,
+                    },
+                  ])}
                 >
-                  <View style={{ backgroundColor: `${theme.gold}20`, paddingHorizontal: 8, paddingVertical: 4, borderRadius: 8 }}>
-                    <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+                  <View
+                    style={{
+                      backgroundColor: `${theme.gold}20`,
+                      paddingHorizontal: 8,
+                      paddingVertical: 4,
+                      borderRadius: 8,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        fontFamily: "Outfit_800ExtraBold",
+                        color: theme.gold,
+                      }}
+                    >
                       R{r.routeNumber}
                     </Text>
                   </View>
                   <View style={{ flex: 1, marginLeft: 10 }}>
-                    <Text style={{ fontSize: 13.5, fontWeight: "700", color: theme.textPrimary }} >
+                    <Text
+                      style={{
+                        fontSize: 13.5,
+                        fontFamily: "Outfit_700Bold",
+                        color: theme.textPrimary,
+                      }}
+                    >
                       {r.name}
                     </Text>
                     <Text style={{ fontSize: 11.5, color: theme.textMuted }}>
                       KES {r.fareMin}–{r.fareMax} · {r.saccoName}
                     </Text>
                   </View>
-                  <Ionicons name="arrow-forward" size={16} color={theme.textMuted} />
+                  <Ionicons
+                    name="arrow-forward"
+                    size={16}
+                    color={theme.textMuted}
+                  />
                 </Pressable>
               ))}
             </View>
@@ -292,14 +578,23 @@ export default function MatatuRouteScreen() {
         )}
 
         {/* Advisory / Tips Note */}
-        <View style={[styles.noteCard, { backgroundColor: `${theme.gold}15`, borderColor: `${theme.gold}30` }]}>
+        <View
+          style={[
+            styles.noteCard,
+            {
+              backgroundColor: `${theme.gold}15`,
+              borderColor: `${theme.gold}30`,
+            },
+          ]}
+        >
           <Ionicons
             name="information-circle-outline"
             size={20}
             color={theme.gold}
           />
           <Text style={[styles.noteText, { color: theme.textSecondary }]}>
-            Fares vary dynamically depending on rush hours, weather, and fuel prices. Confirm with the makanga (conductor) before boarding.
+            Fares vary dynamically depending on rush hours, weather, and fuel
+            prices. Confirm with the makanga (conductor) before boarding.
           </Text>
         </View>
       </ScrollView>
@@ -310,28 +605,6 @@ export default function MatatuRouteScreen() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-  },
-  headerBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-  },
-  navBackBtn: {
-    padding: 8,
-    marginRight: 8,
-    borderRadius: 10,
-    borderWidth: 1,
-  },
-  navBarTitle: {
-    fontSize: 18,
-    fontFamily: "Outfit_800ExtraBold",
-    fontWeight: "800",
-  },
-  navBarSubtitle: {
-    fontSize: 12,
-    fontWeight: "600",
   },
   content: {
     padding: 16,
@@ -362,9 +635,9 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 20,
     fontFamily: "Outfit_800ExtraBold",
-    fontWeight: "800",
   },
   saccoHeading: {
+    fontFamily: "Inter_400Regular",
     fontSize: 13,
     marginTop: 2,
   },
@@ -380,13 +653,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   fareLabel: {
+    fontFamily: "Inter_500Medium",
     fontSize: 10,
     marginBottom: 2,
   },
   fareValue: {
     fontSize: 15,
     fontFamily: "Outfit_700Bold",
-    fontWeight: "800",
   },
   fareDivider: {
     width: 1,
@@ -395,7 +668,6 @@ const styles = StyleSheet.create({
   sectionHeading: {
     fontSize: 13,
     fontFamily: "Outfit_800ExtraBold",
-    fontWeight: "800",
     letterSpacing: 0.8,
     textTransform: "uppercase",
     marginBottom: 10,
@@ -431,11 +703,11 @@ const styles = StyleSheet.create({
   },
   terminusLabel: {
     fontSize: 10,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
   },
   terminusName: {
     fontSize: 15,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
     marginTop: 1,
   },
   timelineCard: {
@@ -469,19 +741,20 @@ const styles = StyleSheet.create({
   },
   stageName: {
     fontSize: 14,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
   },
   stageOrder: {
     fontSize: 11,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
   },
   stageNote: {
     fontSize: 11,
-    fontWeight: "700",
+    fontFamily: "Outfit_700Bold",
     marginTop: 2,
   },
   coordsText: {
     fontSize: 10,
+    fontFamily: "Inter_400Regular",
     marginTop: 2,
   },
   hoursCard: {
@@ -494,6 +767,7 @@ const styles = StyleSheet.create({
     marginBottom: 14,
   },
   hoursText: {
+    fontFamily: "Inter_400Regular",
     fontSize: 13,
   },
   reportCard: {
@@ -530,6 +804,7 @@ const styles = StyleSheet.create({
   },
   noteText: {
     flex: 1,
+    fontFamily: "Inter_400Regular",
     fontSize: 12,
     lineHeight: 18,
   },
@@ -541,7 +816,7 @@ const styles = StyleSheet.create({
   },
   notFoundTitle: {
     fontSize: 18,
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
     marginTop: 12,
   },
   backButton: {
@@ -552,7 +827,7 @@ const styles = StyleSheet.create({
   },
   backButtonText: {
     color: "#1A1108",
-    fontWeight: "800",
+    fontFamily: "Outfit_800ExtraBold",
   },
   mapSection: {
     marginBottom: 20,
@@ -565,6 +840,6 @@ const styles = StyleSheet.create({
   },
   mapStageCount: {
     fontSize: 12,
-    fontWeight: "600",
+    fontFamily: "Inter_600SemiBold",
   },
 });

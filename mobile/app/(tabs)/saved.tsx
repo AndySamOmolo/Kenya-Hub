@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
+  Alert,
   Platform,
   Pressable,
   ScrollView,
@@ -17,8 +18,16 @@ import {
   categoryColorMap,
   AndroidTopAppBar,
   androidRipple,
+  pressableStyle,
+  triggerHaptic,
+  parseSavedTools,
+  serializeSavedTools,
 } from "../../src/theme";
-import { TOOLS, getPopularTools, getCategoryInfo } from "../../src/shared/lib/tools-registry";
+import {
+  TOOLS,
+  getPopularTools,
+  getCategoryInfo,
+} from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 function SavedToolCard({
@@ -44,13 +53,15 @@ function SavedToolCard({
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${tool.shortTitle}`}
         onPress={() =>
           router.push({
             pathname: "/tools/[slug]",
             params: { slug: tool.slug },
           })
         }
-        style={styles.card}
+        style={pressableStyle(styles.card)}
       >
         <View
           style={[
@@ -69,32 +80,31 @@ function SavedToolCard({
               style={[styles.categoryDot, { backgroundColor: categoryColor }]}
             />
             <Text style={[styles.categoryPillText, { color: categoryColor }]}>
-              {(getCategoryInfo(tool.category)?.name || tool.category).toUpperCase()}
+              {(
+                getCategoryInfo(tool.category)?.name || tool.category
+              ).toUpperCase()}
             </Text>
           </View>
-          <Text
-            style={[styles.title, { color: theme.textPrimary }]}
-            
-          >
+          <Text style={[styles.title, { color: theme.textPrimary }]}>
             {tool.shortTitle}
           </Text>
-          <Text
-            style={[styles.description, { color: theme.textSecondary }]}
-            
-          >
+          <Text style={[styles.description, { color: theme.textSecondary }]}>
             {tool.description}
           </Text>
         </View>
         <Pressable
           android_ripple={androidRipple(theme.rippleColor, true)}
+          accessibilityRole="button"
+          accessibilityLabel={`Unpin ${tool.shortTitle}`}
           onPress={(e) => {
             e.stopPropagation();
+            triggerHaptic(12);
             onRemove();
           }}
-          style={[
+          style={pressableStyle([
             styles.removeBtn,
             { backgroundColor: theme.primaryContainer },
-          ]}
+          ])}
           hitSlop={8}
         >
           <Ionicons name="bookmark" size={18} color={theme.gold} />
@@ -113,7 +123,12 @@ export default function SavedScreen() {
   const loadSaved = useCallback(async () => {
     try {
       const value = await AsyncStorage.getItem("kh-saved-tools");
-      setSaved(value?.split(",").filter(Boolean) ?? []);
+      const parsed = parseSavedTools(value);
+      setSaved(parsed);
+      // Migrate legacy comma-separated string to JSON array if needed
+      if (value && !value.trim().startsWith("[")) {
+        await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(parsed));
+      }
     } catch {
       setSaved([]);
     }
@@ -128,12 +143,26 @@ export default function SavedScreen() {
   const handleRemove = async (slug: string) => {
     const updated = saved.filter((s) => s !== slug);
     setSaved(updated);
-    await AsyncStorage.setItem("kh-saved-tools", updated.join(","));
+    await AsyncStorage.setItem("kh-saved-tools", serializeSavedTools(updated));
   };
 
-  const handleClearAll = async () => {
-    setSaved([]);
-    await AsyncStorage.removeItem("kh-saved-tools");
+  const handleClearAll = () => {
+    triggerHaptic(12);
+    Alert.alert(
+      "Clear Pinned Tools?",
+      "Remove all saved tool shortcuts from your device?",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Clear All",
+          style: "destructive",
+          onPress: async () => {
+            setSaved([]);
+            await AsyncStorage.removeItem("kh-saved-tools");
+          },
+        },
+      ]
+    );
   };
 
   const tools = saved
@@ -155,10 +184,13 @@ export default function SavedScreen() {
           tools.length > 0 ? (
             <Pressable
               onPress={handleClearAll}
-              style={[
+              accessibilityRole="button"
+              accessibilityLabel="Clear all pinned tools"
+              android_ripple={androidRipple(theme.rippleColor)}
+              style={pressableStyle([
                 styles.clearBtn,
                 { borderColor: `${theme.kenyaRedLight}45` },
-              ]}
+              ])}
             >
               <Text style={styles.clearBtnText}>Clear</Text>
             </Pressable>
@@ -196,11 +228,7 @@ export default function SavedScreen() {
                 },
               ]}
             >
-              <Ionicons
-                name="bookmark-outline"
-                size={34}
-                color={theme.gold}
-              />
+              <Ionicons name="bookmark-outline" size={34} color={theme.gold} />
             </View>
             <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>
               No pinned tools yet
@@ -229,7 +257,9 @@ export default function SavedScreen() {
                 >
                   <Pressable
                     android_ripple={androidRipple(theme.rippleColor)}
-                    style={styles.suggestCard}
+                    accessibilityRole="button"
+                    accessibilityLabel={`Open ${item.shortTitle}`}
+                    style={pressableStyle(styles.suggestCard)}
                     onPress={() =>
                       router.push({
                         pathname: "/tools/[slug]",
@@ -252,11 +282,7 @@ export default function SavedScreen() {
                         {item.shortTitle}
                       </Text>
                       <Text
-                        style={[
-                          styles.suggestDesc,
-                          { color: theme.textMuted },
-                        ]}
-                        
+                        style={[styles.suggestDesc, { color: theme.textMuted }]}
                       >
                         {item.description}
                       </Text>
@@ -297,6 +323,7 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
   },
   countText: {
+    fontFamily: "Inter_500Medium",
     fontSize: 12,
     marginBottom: 12,
   },
@@ -347,6 +374,7 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_700Bold",
   },
   description: {
+    fontFamily: "Inter_400Regular",
     fontSize: 12,
     marginTop: 2,
   },
@@ -376,6 +404,7 @@ const styles = StyleSheet.create({
     marginTop: 14,
   },
   emptySubtitle: {
+    fontFamily: "Inter_400Regular",
     fontSize: 13,
     lineHeight: 19,
     textAlign: "center",
@@ -410,6 +439,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   suggestDesc: {
+    fontFamily: "Inter_400Regular",
     fontSize: 11.5,
     marginTop: 1,
   },

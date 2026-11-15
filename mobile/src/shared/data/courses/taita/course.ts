@@ -3433,7 +3433,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           }
         ]
       },
-{
+      {
         "id": "taita-open-datasets-thinkkenya",
         "title": "Community Unity, Hillside Farming & Peace",
         "icon": "Database",
@@ -3441,64 +3441,64 @@ export const TAITA_UNITS: CourseUnit[] = [
         "culturalNote": "Kidaw'ida (Taita) is one of Kenya's best-represented coastal-hinterland Bantu languages in open NLP thanks to Prof. Audrey Mbogho and the ThinkKenya team's 26,662 Kidaw'ida–Kiswahili parallel sentences and 31,892 CC0-1.0 sentences on Common Voice 25.0.",
         "grammarTip": "Compare Class 2 plural prefix wa- in wandru wose ('all people') with Class 7 prefix ch- in chawia cha kudighana ('peaceful cooperation').",
         "words": [
-                {
-                        "target": "Wandru wa Wughanga",
-                        "source": "People of Taita",
-                        "pronunciation": "wah-ndroo wah woo-ghah-ngah"
-                },
-                {
-                        "target": "Mbuwa",
-                        "source": "Farms / Cultivated fields",
-                        "pronunciation": "mboo-wah"
-                },
-                {
-                        "target": "Chawia cha kudighana",
-                        "source": "Peaceful cooperation",
-                        "pronunciation": "chah-wee-ah chah koo-dee-ghah-nah"
-                },
-                {
-                        "target": "Wandru wose",
-                        "source": "All people",
-                        "pronunciation": "wah-ndroo woh-seh"
-                },
-                {
-                        "target": "Wumoja",
-                        "source": "Unity / Togetherness",
-                        "pronunciation": "woo-moh-jah"
-                },
-                {
-                        "target": "Kulima",
-                        "source": "To cultivate / farm",
-                        "pronunciation": "koo-lee-mah"
-                },
-                {
-                        "target": "Chuo",
-                        "source": "School / Place of learning",
-                        "pronunciation": "choo-oh"
-                },
-                {
-                        "target": "Machi",
-                        "source": "Water",
-                        "pronunciation": "mah-chee"
-                }
+          {
+            "target": "Wandru wa Wughanga",
+            "source": "People of Taita",
+            "pronunciation": "wah-ndroo wah woo-ghah-ngah"
+          },
+          {
+            "target": "Mbuwa",
+            "source": "Farms / Cultivated fields",
+            "pronunciation": "mboo-wah"
+          },
+          {
+            "target": "Chawia cha kudighana",
+            "source": "Peaceful cooperation",
+            "pronunciation": "chah-wee-ah chah koo-dee-ghah-nah"
+          },
+          {
+            "target": "Wandru wose",
+            "source": "All people",
+            "pronunciation": "wah-ndroo woh-seh"
+          },
+          {
+            "target": "Wumoja",
+            "source": "Unity / Togetherness",
+            "pronunciation": "woo-moh-jah"
+          },
+          {
+            "target": "Kulima",
+            "source": "To cultivate / farm",
+            "pronunciation": "koo-lee-mah"
+          },
+          {
+            "target": "Chuo",
+            "source": "School / Place of learning",
+            "pronunciation": "choo-oh"
+          },
+          {
+            "target": "Machi",
+            "source": "Water",
+            "pronunciation": "mah-chee"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Wandru wa Wughanga wanalima mbuwa jawo kwa wumoja.",
-                        "source": "The people of Taita cultivate their farms in unity."
-                },
-                {
-                        "target": "Chawia cha kudighana ni chuo cha wandru wose.",
-                        "source": "Peaceful cooperation is the school of all people."
-                }
+          {
+            "target": "Wandru wa Wughanga wanalima mbuwa jawo kwa wumoja.",
+            "source": "The people of Taita cultivate their farms in unity."
+          },
+          {
+            "target": "Chawia cha kudighana ni chuo cha wandru wose.",
+            "source": "Peaceful cooperation is the school of all people."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "taita-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Taita (Kidawida) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
                 {
                         "target": "ku-rogoa, ku-lamusa",
@@ -3507,18 +3507,13 @@ export const TAITA_UNITS: CourseUnit[] = [
                 },
                 {
                         "target": "ku-siga",
-                        "source": "Pardon, to",
+                        "source": "Pardon / Forgive, to",
                         "pronunciation": "ku si-ga lit"
                 },
                 {
                         "target": "ku-siga [lit. to leave alone]",
-                        "source": "Forgive, to",
+                        "source": "Forgive / Remit, to [to pardon]",
                         "pronunciation": "ku-siga"
-                },
-                {
-                        "target": "ku-siga",
-                        "source": "Forgive, to",
-                        "pronunciation": "ku si-ga lit"
                 },
                 {
                         "target": "Wedi",
@@ -3529,11 +3524,6 @@ export const TAITA_UNITS: CourseUnit[] = [
                         "target": "Mwakucha / Uko wedi?",
                         "source": "Hello / How are you? (Dawida)",
                         "pronunciation": "mwakucha / uko wedi"
-                },
-                {
-                        "target": "ku-siga [lit. to leave alone]",
-                        "source": "Remit, to [to pardon]",
-                        "pronunciation": "ku-siga"
                 },
                 {
                         "target": "Kusesa",
@@ -3553,11 +3543,6 @@ export const TAITA_UNITS: CourseUnit[] = [
                 {
                         "target": "Dunarinda nyungu magondini ga Dawida",
                         "source": "We keep cooking-pot in Taita Hills",
-                        "pronunciation": "dunarinda nyungu magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda nyungu magondini ga Dawida",
-                        "source": "We keep pot cooking in Taita Hills",
                         "pronunciation": "dunarinda nyungu magondini ga dawida"
                 }
         ],
@@ -3612,12 +3597,12 @@ export const TAITA_UNITS: CourseUnit[] = [
                 }
         ]
 },
-        {
+      {
         "id": "taita-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Taita (Kidawida) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
                 {
                         "target": "Dunarinda kitundu magondini ga Dawida",
@@ -3640,44 +3625,14 @@ export const TAITA_UNITS: CourseUnit[] = [
                         "pronunciation": "dunarinda garo magondini ga dawida"
                 },
                 {
-                        "target": "Bei ya nguli sokoni ni ingahi?",
-                        "source": "What is the price of flute at the market?",
-                        "pronunciation": "bei ya nguli sokoni ni ingahi"
+                        "target": "M-nānya, I-nānya",
+                        "source": "Eight",
+                        "pronunciation": "m-nanya i-nanya"
                 },
                 {
-                        "target": "Bei ya kihoro sokoni ni ingahi?",
-                        "source": "What is the price of plate at the market?",
-                        "pronunciation": "bei ya kihoro sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya mtego sokoni ni ingahi?",
-                        "source": "What is the price of snare at the market?",
-                        "pronunciation": "bei ya mtego sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya luko sokoni ni ingahi?",
-                        "source": "What is the price of spoon at the market?",
-                        "pronunciation": "bei ya luko sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya ndata sokoni ni ingahi?",
-                        "source": "What is the price of staff at the market?",
-                        "pronunciation": "bei ya ndata sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya lufu sokoni ni ingahi?",
-                        "source": "What is the price of sword at the market?",
-                        "pronunciation": "bei ya lufu sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya I-rawa sokoni ni ingahi?",
-                        "source": "What is the price of arrow at the market?",
-                        "pronunciation": "bei ya i-rawa sokoni ni ingahi"
-                },
-                {
-                        "target": "Bei ya M-songgolo sokoni ni ingahi?",
-                        "source": "What is the price of canoe at the market?",
-                        "pronunciation": "bei ya m-songgolo sokoni ni ingahi"
+                        "target": "Mī-rōnggo mī-nā",
+                        "source": "Forty",
+                        "pronunciation": "mee roh-ngoh mee nah"
                 }
         ],
         "sentences": [
@@ -3694,40 +3649,8 @@ export const TAITA_UNITS: CourseUnit[] = [
                         "source": "It is good to fasten every day"
                 },
                 {
-                        "target": "Bei ya kipesa sokoni ni ingahi?",
-                        "source": "What is the price of wall at the market?"
-                },
-                {
-                        "target": "Bei ya Mo-ma sokoni ni ingahi?",
-                        "source": "What is the price of adze at the market?"
-                },
-                {
-                        "target": "Bei ya Lu-kūni sokoni ni ingahi?",
-                        "source": "What is the price of wood at the market?"
-                },
-                {
-                        "target": "Bei ya fulai sokoni ni ingahi?",
-                        "source": "What is the price of anvil at the market?"
-                },
-                {
-                        "target": "Bei ya mshuru sokoni ni ingahi?",
-                        "source": "What is the price of apron at the market?"
-                },
-                {
-                        "target": "Bei ya dina sokoni ni ingahi?",
-                        "source": "What is the price of chain at the market?"
-                },
-                {
-                        "target": "Bei ya kifumbi sokoni ni ingahi?",
-                        "source": "What is the price of chair at the market?"
-                },
-                {
-                        "target": "Bei ya nguli sokoni ni ingahi?",
-                        "source": "What is the price of flute at the market?"
-                },
-                {
-                        "target": "Bei ya kihoro sokoni ni ingahi?",
-                        "source": "What is the price of plate at the market?"
+                        "target": "Dunarinda kitundu magondini ga Dawida",
+                        "source": "We keep store-house in Taita Hills"
                 }
         ]
 }

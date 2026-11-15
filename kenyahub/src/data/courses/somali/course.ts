@@ -3719,7 +3719,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Somali parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC",
+        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
         "words": [
                 {
                         "target": "insha Allahh wa la hele",
@@ -3760,76 +3760,24 @@ export const SOMALI_UNITS: CourseUnit[] = [
                         "target": "’ss ka warren?",
                         "source": "How are you?",
                         "pronunciation": "’ss ka warren"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa ħur tuuladayada",
-                        "source": "We keep free in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa ħur tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa insaanija tuuladayada",
-                        "source": "We keep humanity in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa insaanija tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa insaan tuuladayada",
-                        "source": "We keep human in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa insaan tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa naħariisdari tuuladayada",
-                        "source": "We keep merciless in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa naħariisdari tuuladayada"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ma haysataa NEUTER maanta?",
-                        "source": "Do you have the house today?"
+                        "target": "insha Allahh wa la hele",
+                        "source": "Please God, we may find it"
                 },
                 {
-                        "target": "Ma haysataa baabuur-rá-d-a maanta?",
-                        "source": "Do you have the cars today?"
+                        "target": "mahadsanid (aad baad u mahadsan tahay)",
+                        "source": "Thank you (thank you very much)"
                 },
                 {
-                        "target": "Ma haysataa mindí-re maanta?",
-                        "source": "Do you have the knife today?"
+                        "target": "nabad gelyo",
+                        "source": "Goodbye (lit. enter into peace)"
                 },
                 {
-                        "target": "Ma haysataa koŋ maanta?",
-                        "source": "Do you have this today?"
-                },
-                {
-                        "target": "Ma haysataa kaas maanta?",
-                        "source": "Do you have that today?"
-                },
-                {
-                        "target": "Ma haysataa ħurnimo maanta?",
-                        "source": "Do you have freedom today?"
-                },
-                {
-                        "target": "Ma haysataa ħur maanta?",
-                        "source": "Do you have free today?"
-                },
-                {
-                        "target": "Ma haysataa insaanija maanta?",
-                        "source": "Do you have humanity today?"
-                },
-                {
-                        "target": "Ma haysataa insaan maanta?",
-                        "source": "Do you have human today?"
-                },
-                {
-                        "target": "Ma haysataa naħariisdari maanta?",
-                        "source": "Do you have merciless today?"
-                },
-                {
-                        "target": "Ma haysataa naħaris maanta?",
-                        "source": "Do you have mercy today?"
-                },
-                {
-                        "target": "Ma haysataa Anifarahsiny-ya maanta?",
-                        "source": "Do you have i am happy today?"
+                        "target": "Nabad / Ma nabad baa?",
+                        "source": "Peace / Hello (traditional greeting)"
                 }
         ]
 },
@@ -3838,28 +3786,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Somali sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC",
+        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
         "words": [
-                {
-                        "target": "Waxaan ku xannaaneynaa naħaris tuuladayada",
-                        "source": "We keep mercy in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa naħaris tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa Anifarahsiny-ya tuuladayada",
-                        "source": "We keep i am happy in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa anifarahsiny-ya tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa buurbuur tuuladayada",
-                        "source": "We keep mountainous in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa buurbuur tuuladayada"
-                },
-                {
-                        "target": "Waxaan ku xannaaneynaa guur tuuladayada",
-                        "source": "We keep migrate in our village",
-                        "pronunciation": "waxaan ku xannaaneynaa guur tuuladayada"
-                },
                 {
                         "target": "Imisa ayaa lagu iibiyaa macallim-iin-t-a suuqa?",
                         "source": "How much is the teachers at the market?",
@@ -3902,14 +3830,6 @@ export const SOMALI_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Ma haysataa buurbuur maanta?",
-                        "source": "Do you have mountainous today?"
-                },
-                {
-                        "target": "Ma haysataa guur maanta?",
-                        "source": "Do you have migrate today?"
-                },
                 {
                         "target": "Imisa ayaa lagu iibiyaa derbi suuqa?",
                         "source": "How much is wall at the market?"

@@ -6,6 +6,22 @@
 import type { Exercise, ExerciseType, CourseSkill, WordPair } from '@/data/courses/types';
 import { EXERCISES_PER_LESSON } from '@/data/courses/types';
 
+export const KENYAN_SPECIAL_CHARS = [
+  'ĩ',
+  'ũ',
+  'ë',
+  'ö',
+  'ä',
+  'ē',
+  'ō',
+  'ū',
+  "ng'",
+  'ŋ',
+  'ɗ',
+  'ɠ',
+  'ʼ',
+] as const;
+
 /* ─── Helpers ──────────────────────────────────────── */
 
 function shuffle<T>(arr: T[]): T[] {
@@ -27,16 +43,17 @@ function pickOne<T>(arr: T[]): T {
 
 /**
  * Strip parenthetical/bracketed editorial notes (e.g. "(pl. ...)", "[...]", "{...}")
- * while preserving the primary lexical or sentence form for interactive exercises.
+ * and unresolved ditto marks („) while preserving the primary lexical or sentence form.
  */
 export function cleanExerciseText(text: string): string {
   const stripped = text
+    .replace(/„/g, '')
     .replace(/\[.*?\]/g, '')
     .replace(/\{.*?\}/g, '')
     .replace(/\(.*?\)/g, '')
     .replace(/\s+/g, ' ')
     .trim();
-  return stripped || text.trim();
+  return stripped || text.replace(/„/g, '').trim();
 }
 
 /**
@@ -118,7 +135,6 @@ function getDistractors(
 /* ─── Exercise Generators ──────────────────────────── */
 
 function generateMultipleChoice(word: WordPair, allWords: WordPair[]): Exercise {
-  // Randomly choose direction: target→source or source→target
   const toEnglish = Math.random() > 0.5;
   const distractors = getDistractors(
     word,
@@ -181,15 +197,33 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
   };
 }
 
-function generateFillBlank(word: WordPair, allWords: WordPair[]): Exercise {
-  // Create a sentence with a blank
-  const distractors = getDistractors(word, allWords, 3, 'target');
-  const options = shuffle([word.target, ...distractors]);
+function generateFillBlank(word: WordPair, allWords: WordPair[], sentences: WordPair[] = []): Exercise {
+  const primaryTarget = getPrimaryForm(word.target);
+  const distractors = getDistractors(word, allWords, 3, 'target').map(getPrimaryForm);
+  const options = shuffle([primaryTarget, ...distractors]);
+
+  // Try to contextualize inside an authentic sentence from the skill if the target word appears in one
+  const escapedTarget = primaryTarget.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const wordRegex = new RegExp(`\\b${escapedTarget}\\b`, 'i');
+  const matchingSentence = sentences.find(
+    (s) => s.target.length > primaryTarget.length + 3 && wordRegex.test(s.target)
+  );
+
+  if (matchingSentence) {
+    const blanked = matchingSentence.target.replace(wordRegex, '_____');
+    return {
+      type: 'fill_blank',
+      prompt: `Complete: "${blanked}" (${matchingSentence.source})`,
+      correctAnswer: primaryTarget,
+      options,
+      sourceWord: word,
+    };
+  }
 
   return {
     type: 'fill_blank',
-    prompt: `Complete: _____ means "${word.source}"`,
-    correctAnswer: word.target,
+    prompt: `Complete: _____ means "${getPrimaryForm(word.source)}"`,
+    correctAnswer: primaryTarget,
     options,
     sourceWord: word,
   };
@@ -205,46 +239,30 @@ function generateMatchPairs(words: WordPair[]): Exercise {
   return {
     type: 'match_pairs',
     prompt: 'Match the pairs',
-    correctAnswer: '', // N/A for match
+    correctAnswer: '',
     pairs,
   };
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function generateListenType(word: WordPair): Exercise {
-  const primaryTarget = getPrimaryForm(word.target);
-  return {
-    type: 'listen_type',
-    prompt: 'Type what you hear',
-    correctAnswer: primaryTarget.toLowerCase().replace(/[?!.,]/g, '').trim(),
-    audioText: primaryTarget,
-    sourceWord: word,
-  };
-}
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function generateTapWhatYouHear(word: WordPair, allWords: WordPair[]): Exercise {
-  const distractors = getDistractors(word, allWords, 3, 'target');
-  const options = shuffle([word.target, ...distractors]);
-
-  return {
-    type: 'tap_what_you_hear',
-    prompt: 'Tap what you hear',
-    correctAnswer: word.target,
-    options,
-    audioText: getPrimaryForm(word.target),
-    sourceWord: word,
-  };
-}
-
-function generateWordBank(word: WordPair): Exercise {
+function generateWordBank(word: WordPair, allWords: WordPair[] = []): Exercise {
   const cleanSource = getPrimaryForm(word.source).replace(/[?!.,]/g, '').trim();
   const sourceWords = cleanSource.split(/\s+/).filter(Boolean);
-  const distractorPool = ['the', 'a', 'an', 'is', 'it', 'to', 'of', 'my', 'not', 'very', 'big', 'small', 'he', 'she', 'we'];
-  const distractors = pick(
-    distractorPool.filter((d) => !sourceWords.map(s => s.toLowerCase()).includes(d)),
-    Math.min(3, Math.max(1, 4 - sourceWords.length))
+  const sourceLowerSet = new Set(sourceWords.map((s) => s.toLowerCase()));
+
+  // Draw distractors from other vocabulary items in the same skill first
+  const skillTokens = Array.from(
+    new Set(
+      allWords
+        .flatMap((w) => getPrimaryForm(w.source).replace(/[?!.,]/g, '').trim().split(/\s+/))
+        .filter((t) => t.length >= 2 && !sourceLowerSet.has(t.toLowerCase()))
+    )
   );
+  const fallbackPool = ['today', 'water', 'good', 'house', 'person', 'child', 'food', 'road', 'friend', 'work'];
+  const combinedPool = skillTokens.length >= 3
+    ? skillTokens
+    : [...skillTokens, ...fallbackPool.filter((d) => !sourceLowerSet.has(d))];
+
+  const distractors = pick(combinedPool, Math.min(3, Math.max(1, 5 - sourceWords.length)));
   const tiles = shuffle([...sourceWords, ...distractors]);
 
   return {
@@ -257,12 +275,11 @@ function generateWordBank(word: WordPair): Exercise {
   };
 }
 
-function generateReorder(word: WordPair): Exercise {
+function generateReorder(word: WordPair, allWords: WordPair[] = []): Exercise {
   const cleanTarget = getPrimaryForm(word.target).replace(/[?!.,]/g, '').trim();
   const targetWords = cleanTarget.split(/\s+/).filter(Boolean);
   if (targetWords.length < 2) {
-    // Fallback to multiple choice for single words
-    return generateMultipleChoice(word, [word]);
+    return generateMultipleChoice(word, allWords.length >= 2 ? allWords : [word]);
   }
 
   return {
@@ -317,7 +334,6 @@ export function generateExercises(
   while (exercises.length < count && attempts < maxAttempts) {
     attempts++;
 
-    // Weighted random type selection
     let r = Math.random() * totalWeight;
     let selectedType: ExerciseType = 'multiple_choice';
     for (const e of eligible) {
@@ -347,19 +363,19 @@ export function generateExercises(
           exercise = generateTranslateToEnglish(word);
           break;
         case 'fill_blank':
-          exercise = generateFillBlank(word, allItems);
+          exercise = generateFillBlank(word, allItems, sentenceItems);
           break;
         case 'match_pairs':
           exercise = generateMatchPairs(allWords.length >= 2 ? allWords : allItems);
           break;
         case 'word_bank':
           if (getPrimaryForm(word.source).split(/\s+/).length >= 2) {
-            exercise = generateWordBank(word);
+            exercise = generateWordBank(word, allItems);
           }
           break;
         case 'reorder':
           if (getPrimaryForm(word.target).split(/\s+/).length >= 2) {
-            exercise = generateReorder(word);
+            exercise = generateReorder(word, allItems);
           }
           break;
       }
@@ -375,7 +391,6 @@ export function generateExercises(
     }
   }
 
-  // Ensure we start with easier types (choice, fill) and progress to harder
   return exercises.sort((a, b) => {
     const order: Record<ExerciseType, number> = {
       multiple_choice: 0,
@@ -395,18 +410,44 @@ export function generateExercises(
 
 /* ─── Answer Checking ──────────────────────────────── */
 
-export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
-  const normalize = (s: string) =>
+export interface AnswerCheckResult {
+  correct: boolean;
+  almostCorrect: boolean;
+  canonicalAnswer: string;
+}
+
+export function checkAnswerWithFeedback(
+  exercise: Exercise,
+  userAnswer: string
+): AnswerCheckResult {
+  const normalizeExact = (s: string) =>
     s
       .normalize('NFKC')
       .toLowerCase()
       .replace(/\(.*?\)/g, '')
-      .replace(/[?!.,;:'"]/g, '')
+      .replace(/[?!.,;:'"„“]/g, '')
       .replace(/\s+/g, ' ')
       .trim();
 
-  const answer = normalize(userAnswer);
-  if (!answer) return false;
+  const normalizeBase = (s: string) =>
+    s
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[ωΩ]/g, 'o')
+      .replace(/ñ/g, 'ng')
+      .toLowerCase()
+      .replace(/\(.*?\)/g, '')
+      .replace(/[?!.,;:'"„“ʼ]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const answerExact = normalizeExact(userAnswer);
+  const answerBase = normalizeBase(userAnswer);
+  const canonicalAnswer = getPrimaryForm(exercise.correctAnswer) || exercise.correctAnswer;
+
+  if (!answerBase) {
+    return { correct: false, almostCorrect: false, canonicalAnswer };
+  }
 
   const rawCandidates = [
     exercise.correctAnswer,
@@ -414,21 +455,39 @@ export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
     getPrimaryForm(exercise.correctAnswer),
     ...(exercise.acceptedAnswers || []),
   ];
-  const accepted = Array.from(new Set(rawCandidates.map(normalize).filter(Boolean)));
 
-  if (accepted.includes(answer)) return true;
+  const acceptedExact = Array.from(new Set(rawCandidates.map(normalizeExact).filter(Boolean)));
+  const acceptedBase = Array.from(new Set(rawCandidates.map(normalizeBase).filter(Boolean)));
 
-  // Only allow a small typo when the answer is long enough to avoid accepting
-  // a different short word as equivalent.
-  return accepted.some((correct) => {
-    const distance = levenshtein(correct, answer);
+  if (acceptedExact.includes(answerExact)) {
+    return { correct: true, almostCorrect: false, canonicalAnswer };
+  }
+
+  // Diacritic-insensitive or phonetic alias match (e.g. typing "mundu" for "mũndũ" or "kiu" for "kĩũ")
+  if (acceptedBase.includes(answerBase)) {
+    return { correct: true, almostCorrect: true, canonicalAnswer };
+  }
+
+  // Typo tolerance on longer answers
+  const fuzzyMatch = acceptedBase.some((correct) => {
+    const distance = levenshtein(correct, answerBase);
     if (correct.length >= 10) return distance <= 2;
     if (correct.length >= 6) return distance <= 1;
     return false;
   });
+
+  return {
+    correct: fuzzyMatch,
+    almostCorrect: fuzzyMatch,
+    canonicalAnswer,
+  };
 }
 
-function levenshtein(a: string, b: string): number {
+export function checkAnswer(exercise: Exercise, userAnswer: string): boolean {
+  return checkAnswerWithFeedback(exercise, userAnswer).correct;
+}
+
+export function levenshtein(a: string, b: string): number {
   const m = a.length;
   const n = b.length;
   const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));

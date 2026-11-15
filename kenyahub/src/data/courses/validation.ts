@@ -5,6 +5,9 @@ export interface CourseValidationIssue {
   message: string;
 }
 
+const SYNTHETIC_TEMPLATE_RX =
+  /^(?:What is the price of .+ at the market\?|Do you have .+ today\?|Yes, we have plenty of .+|The farmer produces .+ in the field|Take care of .+ for good health)/i;
+
 function validateExercise(
   exercise: Exercise,
   path: string
@@ -81,6 +84,18 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
       if (skillIds.has(skill.id)) issues.push({ path: skillPath, message: `Duplicate skill ID: ${skill.id}` });
       skillIds.add(skill.id);
 
+      if (skill.culturalNote) {
+        const note = skill.culturalNote.trim();
+        const openParens = (note.match(/\(/g) || []).length;
+        const closeParens = (note.match(/\)/g) || []).length;
+        if (openParens > closeParens || /[,-]\s*$/.test(note)) {
+          issues.push({
+            path: `${skillPath}.culturalNote`,
+            message: `Truncated culturalNote in skill ${skill.id}`,
+          });
+        }
+      }
+
       const wordTargets = new Set<string>();
       skill.words.forEach((word, wordIndex) => {
         const wordPath = `${skillPath}.words[${wordIndex}]`;
@@ -88,6 +103,12 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
         if (!word.source.trim()) issues.push({ path: wordPath, message: "Vocabulary source is empty" });
         if (/,\s*pl$/i.test(word.target.trim())) {
           issues.push({ path: wordPath, message: `Truncated plural marker in target: ${word.target}` });
+        }
+        if (word.source.includes("„") || word.target.includes("„")) {
+          issues.push({ path: wordPath, message: `Unresolved ditto mark („) in word: ${word.source}` });
+        }
+        if (SYNTHETIC_TEMPLATE_RX.test(word.source.trim())) {
+          issues.push({ path: wordPath, message: `Synthetic carrier template in word: ${word.source}` });
         }
 
         const normalizedTarget = word.target.trim().toLowerCase();
@@ -104,6 +125,12 @@ export function validateCourse(units: CourseUnit[]): CourseValidationIssue[] {
         }
         if (!sentence.source || !sentence.source.trim()) {
           issues.push({ path: sentencePath, message: "Sentence source is empty" });
+        }
+        if (sentence.source?.includes("„") || sentence.target?.includes("„")) {
+          issues.push({ path: sentencePath, message: `Unresolved ditto mark („) in sentence: ${sentence.source}` });
+        }
+        if (sentence.source && SYNTHETIC_TEMPLATE_RX.test(sentence.source.trim())) {
+          issues.push({ path: sentencePath, message: `Synthetic carrier template in sentence: ${sentence.source}` });
         }
         const targetTokens = sentence.target ? sentence.target.trim().split(/\s+/).filter(Boolean) : [];
         const sourceTokens = sentence.source ? sentence.source.trim().split(/\s+/).filter(Boolean) : [];

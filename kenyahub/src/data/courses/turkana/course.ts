@@ -6615,7 +6615,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Turkana parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dunda",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
         "words": [
                 {
                         "target": "alakari",
@@ -6658,12 +6658,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
                         "pronunciation": "mata ejik"
                 },
                 {
-                        "target": "Kidarunit ng'oni Lokoi-likalω nawi yok",
+                        "target": "Kidarunit ng'oni Lokoi-likalo nawi yok",
                         "source": "We keep thy house at our pastoral camp",
                         "pronunciation": "kidarunit ngoni lokoi-likal nawi yok"
                 },
                 {
-                        "target": "Kidarunit ng'oni Ekokωlan nawi yok",
+                        "target": "Kidarunit ng'oni Ekokolan nawi yok",
                         "source": "We keep he steals at our pastoral camp",
                         "pronunciation": "kidarunit ngoni ekoklan nawi yok"
                 },
@@ -6734,7 +6734,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Turkana sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dunda",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
         "words": [
                 {
                         "target": "Kidarunit ng'oni akuich nawi yok",
@@ -6757,44 +6757,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
                         "pronunciation": "kidarunit ngoni elap nawi yok"
                 },
                 {
-                        "target": "Ng'irupia ng'iai etiai a asowat alosokoni?",
-                        "source": "What is the price of bracelet at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a asowat alosokoni"
+                        "target": "Ikoku / Ikoko (pl. ngidwe / ngedwi)",
+                        "source": "Child",
+                        "pronunciation": "ee-koh-koo"
                 },
                 {
-                        "target": "Ng'irupia ng'iai etiai a erwaro alosokoni?",
-                        "source": "What is the price of cloth at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a erwaro alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Echui alosokoni?",
-                        "source": "What is the price of skin pouch at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a echui alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Ebela alosokoni?",
-                        "source": "What is the price of shepherd's stick at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a ebela alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Akidor alosokoni?",
-                        "source": "What is the price of door at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a akidor alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Akikoi akim alosokoni?",
-                        "source": "What is the price of fire-making stick at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a akikoi akim alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Akobito alosokoni?",
-                        "source": "What is the price of fiber rope at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a akobito alosokoni"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Atom alosokoni?",
-                        "source": "What is the price of war horn at the market?",
-                        "pronunciation": "ngirupia ngiai etiai a atom alosokoni"
+                        "target": "Baba / Mama (pl. ngebabai)",
+                        "source": "Uncle",
+                        "pronunciation": "bah-bah"
                 }
         ],
         "sentences": [
@@ -6811,40 +6781,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
                         "source": "It is good to depart every day"
                 },
                 {
-                        "target": "Ng'irupia ng'iai etiai a Maritoit alosokoni?",
-                        "source": "What is the price of brass bracelet at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Amedok alosokoni?",
-                        "source": "What is the price of mud head-dress at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a ekechelom alosokoni?",
-                        "source": "What is the price of stool at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a akopol alosokoni?",
-                        "source": "What is the price of umbilical cord at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Eteker alosokoni?",
-                        "source": "What is the price of watering trough at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a Amukat alosokoni?",
-                        "source": "What is the price of leather sandals at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a atiake alosokoni?",
-                        "source": "What is the price of boundary at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a asowat alosokoni?",
-                        "source": "What is the price of bracelet at the market?"
-                },
-                {
-                        "target": "Ng'irupia ng'iai etiai a erwaro alosokoni?",
-                        "source": "What is the price of cloth at the market?"
+                        "target": "Kidarunit ng'oni akuich nawi yok",
+                        "source": "We keep sky at our pastoral camp"
                 }
         ]
 }

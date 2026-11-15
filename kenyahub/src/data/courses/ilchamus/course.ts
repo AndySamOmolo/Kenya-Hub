@@ -2733,48 +2733,16 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ke iata Masari taata?",
-                        "source": "Do you have masari today?"
-                },
-                {
-                        "target": "Ee, kiata Masari supat",
-                        "source": "Yes, we have good masari"
-                },
-                {
                         "target": "Eiro lpayiani too Masari",
                         "source": "The elders spoke about masari"
-                },
-                {
-                        "target": "Ke iata Barsaina taata?",
-                        "source": "Do you have barsaina today?"
-                },
-                {
-                        "target": "Ee, kiata Barsaina supat",
-                        "source": "Yes, we have good barsaina"
                 },
                 {
                         "target": "Eiro lpayiani too Barsaina",
                         "source": "The elders spoke about barsaina"
                 },
                 {
-                        "target": "Ke iata 'Ngang Lessamagan taata?",
-                        "source": "Do you have 'ngang lessamagan today?"
-                },
-                {
-                        "target": "Ee, kiata 'Ngang Lessamagan supat",
-                        "source": "Yes, we have good 'ngang lessamagan"
-                },
-                {
                         "target": "Eiro lpayiani too 'Ngang Lessamagan",
                         "source": "The elders spoke about 'ngang lessamagan"
-                },
-                {
-                        "target": "Ke iata 'Ngang Ngissegir taata?",
-                        "source": "Do you have 'ngang ngissegir today?"
-                },
-                {
-                        "target": "Ee, kiata 'Ngang Ngissegir supat",
-                        "source": "Yes, we have good 'ngang ngissegir"
                 },
                 {
                         "target": "Eiro lpayiani too 'Ngang Ngissegir",
@@ -2810,94 +2778,32 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
                         "pronunciation": "kirrip 6 game taboos te nkang ang"
                 },
                 {
-                        "target": "Kaja lbeyi le Sokoni te sokoni?",
-                        "source": "What is the price of market at the market?",
-                        "pronunciation": "kaja lbeyi le sokoni te sokoni"
+                        "target": "lukunya",
+                        "source": "Head",
+                        "pronunciation": "lu-ku-nya"
                 },
                 {
-                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
-                        "source": "What is the price of money at the market?",
-                        "pronunciation": "kaja lbeyi le ropiyiani te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Nkishu te sokoni?",
-                        "source": "What is the price of cattle wealth at the market?",
-                        "pronunciation": "kaja lbeyi le nkishu te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Batisho te sokoni?",
-                        "source": "What is the price of danger at the market?",
-                        "pronunciation": "kaja lbeyi le batisho te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Lchani te sokoni?",
-                        "source": "What is the price of medicine at the market?",
-                        "pronunciation": "kaja lbeyi le lchani te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Moyian te sokoni?",
-                        "source": "What is the price of sickness at the market?",
-                        "pronunciation": "kaja lbeyi le moyian te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Serian te sokoni?",
-                        "source": "What is the price of peace at the market?",
-                        "pronunciation": "kaja lbeyi le serian te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Sipitali te sokoni?",
-                        "source": "What is the price of hospital at the market?",
-                        "pronunciation": "kaja lbeyi le sipitali te sokoni"
+                        "target": "Engorioñ",
+                        "source": "Back",
+                        "pronunciation": "engo-riong"
                 }
         ],
         "sentences": [
-                {
-                        "target": "Ke iata 6 game taboos taata?",
-                        "source": "Do you have waterbuck today?"
-                },
-                {
-                        "target": "Ee, kiata 6 game taboos supat",
-                        "source": "Yes, we have good waterbuck"
-                },
                 {
                         "target": "Eiro lpayiani too 6 game taboos",
                         "source": "The elders spoke about waterbuck"
                 },
                 {
-                        "target": "Kaja lbeyi le l-chore te sokoni?",
-                        "source": "What is the price of friend at the market?"
+                        "target": "Kirrip Barsaina te nkang' ang'",
+                        "source": "We keep barsaina at our homestead"
                 },
                 {
-                        "target": "Kaja lbeyi le lalashe te sokoni?",
-                        "source": "What is the price of brother at the market?"
+                        "target": "Kirrip 'Ngang Lessamagan te nkang' ang'",
+                        "source": "We keep 'ngang lessamagan at our homestead"
                 },
                 {
-                        "target": "Kaja lbeyi le ltung'ani te sokoni?",
-                        "source": "What is the price of person at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Eñgaraiai te sokoni?",
-                        "source": "What is the price of my child at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Nkai te sokoni?",
-                        "source": "What is the price of god at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Nkoitoi te sokoni?",
-                        "source": "What is the price of path at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Lale te sokoni?",
-                        "source": "What is the price of pastoral camp at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Sokoni te sokoni?",
-                        "source": "What is the price of market at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
-                        "source": "What is the price of money at the market?"
+                        "target": "Kirrip 'Ngang Ngissegir te nkang' ang'",
+                        "source": "We keep 'ngang ngissegir at our homestead"
                 }
         ]
 }

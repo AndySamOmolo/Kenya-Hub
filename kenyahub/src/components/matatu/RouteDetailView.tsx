@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import matatuData from "@/data/matatu-routes.json";
@@ -36,6 +37,7 @@ function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): nu
 }
 
 export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailViewProps) {
+  const [activeStageOrder, setActiveStageOrder] = useState<number | null>(null);
   const townInfo = matatuData.towns.find((t) => t.slug === townSlug);
   const townRoutes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[townSlug] || [];
   const route = townRoutes.find((r) => r.slug === routeSlug);
@@ -171,7 +173,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               </h2>
               <span className="text-xs text-text-muted">{route.stages.length} Stage Stopovers · ~{totalCorridorKm} km</span>
             </div>
-            <MatatuMap stages={route.stages} routeName={route.name} routeNumber={route.routeNumber} />
+            <MatatuMap stages={route.stages} routeName={route.name} routeNumber={route.routeNumber} activeStageOrder={activeStageOrder} onSelectStage={setActiveStageOrder} />
           </div>
 
           {/* Route Overview Cards */}
@@ -309,8 +311,16 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                 const isFirst = idx === 0;
                 const isLast = idx === stageDistances.length - 1;
 
+                const isSelected = activeStageOrder === stage.order;
                 return (
-                  <div key={`${stage.order}-${stage.name}`} className="relative flex items-start gap-3">
+                  <button
+                    key={`${stage.order}-${stage.name}`}
+                    type="button"
+                    onClick={() => setActiveStageOrder(stage.order)}
+                    className={`relative w-full text-left flex items-start gap-3 rounded-lg p-1.5 -m-1.5 transition-colors cursor-pointer ${
+                      isSelected ? "bg-gold/10 ring-1 ring-gold/40" : "hover:bg-bg-elevated/60"
+                    }`}
+                  >
                     {/* Stage dot marker */}
                     <div
                       className={`absolute -left-7 top-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[0.65rem] font-bold text-black border-2 border-white shadow-sm ${
@@ -332,7 +342,7 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                           : `Stage ${stage.order} · +${stage.legKm} km (${stage.cumulativeKm} km from start)`}
                       </p>
                     </div>
-                  </div>
+                  </button>
                 );
               })}
             </div>

@@ -10,8 +10,22 @@ const tool = TOOLS.find((t) => t.slug === "landlord-tenant-rights")!;
 export default function LandlordTenantRightsPage() {
   const [depositAmount, setDepositAmount] = useState("35000");
   const [daysDelayed, setDaysDelayed] = useState("45");
-  const [landlordName, setLandlordName] = useState("");
-  const [premisesLocation, setPremisesLocation] = useState("");
+  const [landlordName, setLandlordName] = useState("Sunrise Properties Ltd");
+  const [premisesLocation, setPremisesLocation] = useState("House B4, Kilimani, Nairobi");
+  const [copied, setCopied] = useState(false);
+
+  const noticeText = `DEMAND FOR IMMEDIATE REFUND OF SECURITY DEPOSIT UNDER SECTION 30 PRECEDENTS
+Date: ${new Date().toLocaleDateString("en-KE")}
+To: ${landlordName || "Landlord / Property Managing Agent"}
+Premises: ${premisesLocation || "Residential Unit"}
+
+RE: FORMAL DEMAND FOR REFUND OF TENANCY SECURITY DEPOSIT (KES ${Number(depositAmount || 0).toLocaleString()})
+
+I write to formally demand the immediate and unconditional refund of my tenancy deposit for ${premisesLocation || "the premises"} amounting to KES ${Number(depositAmount || 0).toLocaleString()}, which has now remained unpaid for ${daysDelayed || 30} days following the lawful handover of vacant possession.
+
+Take notice that normal wear and tear is an ordinary consequence of residential tenancy and cannot lawfully be deducted from a tenant's deposit without proof of malicious structural damage.
+
+TAKE NOTICE that failure to transfer the full sum within seven (7) days from the date of this notice will result in immediate institution of proceedings at the Small Claims Court under the Small Claims Court Act 2016 for recovery of held monies together with court filing costs and interest.`;
 
   return (
     <ToolShell tool={tool}>
@@ -54,10 +68,43 @@ export default function LandlordTenantRightsPage() {
           </div>
 
           <div className="rounded-xl border border-border bg-bg-elevated/40 p-5 space-y-4">
-            <h3 className="text-sm font-bold text-gold uppercase tracking-wider">
-              Statutory Demand Notice Generator (Deposit Refund)
-            </h3>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h3 className="text-sm font-bold text-gold uppercase tracking-wider">
+                Statutory Demand Notice Generator (Deposit Refund)
+              </h3>
+              <button
+                type="button"
+                onClick={() => {
+                  navigator.clipboard?.writeText(noticeText);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                className="px-3 py-1.5 rounded-lg bg-gold text-kenya-black text-xs font-bold hover:opacity-90 transition-opacity cursor-pointer"
+              >
+                {copied ? "✓ Copied Demand Notice" : "Copy Demand Notice"}
+              </button>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs font-semibold text-text-muted mb-1">Landlord / Agency Name</label>
+                <input
+                  type="text"
+                  value={landlordName}
+                  onChange={(e) => setLandlordName(e.target.value)}
+                  placeholder="e.g. Sunrise Properties Ltd"
+                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold text-text-muted mb-1">Apartment / House &amp; Estate</label>
+                <input
+                  type="text"
+                  value={premisesLocation}
+                  onChange={(e) => setPremisesLocation(e.target.value)}
+                  placeholder="e.g. House B4, Kilimani"
+                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                />
+              </div>
               <div>
                 <label className="block text-xs font-semibold text-text-muted mb-1">Withheld Deposit Amount (KES)</label>
                 <input
@@ -79,17 +126,7 @@ export default function LandlordTenantRightsPage() {
             </div>
 
             <div className="rounded-lg border border-border bg-bg-card p-4 text-xs font-mono text-text-secondary leading-relaxed whitespace-pre-line">
-              {`DEMAND FOR IMMEDIATE REFUND OF SECURITY DEPOSIT UNDER SECTION 30 PRECEDENTS
-Date: ${new Date().toLocaleDateString('en-KE')}
-To: Landlord / Property Agent
-
-RE: FORMAL DEMAND FOR REFUND OF TENANCY SECURITY DEPOSIT (KES ${Number(depositAmount || 0).toLocaleString()})
-
-I write to formally demand the immediate and unconditional refund of my tenancy deposit amounting to KES ${Number(depositAmount || 0).toLocaleString()}, which has now remained unpaid for ${daysDelayed || 30} days following the lawful handover of the premises.
-
-Take notice that normal wear and tear is an ordinary consequence of residential tenancy and cannot lawfully be deducted from a tenant's deposit without proof of malicious structural damage.
-
-TAKE NOTICE that failure to transfer the full sum within seven (7) days from the date of this notice will result in immediate institution of proceedings at the Small Claims Court under the Small Claims Court Act 2016 for recovery of held monies together with court filing costs and interest.`}
+              {noticeText}
             </div>
           </div>
         </div>

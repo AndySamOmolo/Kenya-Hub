@@ -274,9 +274,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
-            "target": "Waaq / Waaх",
+            "target": "Waaq / Waax",
             "source": "God / Sky",
-            "pronunciation": "waaq / waaх",
+            "pronunciation": "waaq / waax",
             "hint": "Rendille Cushitic sky/Supreme Being"
           },
           {
@@ -1331,9 +1331,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
-            "target": "lúх",
+            "target": "lúx",
             "source": "Leg / Foot",
-            "pronunciation": "luх",
+            "pronunciation": "lux",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -2565,7 +2565,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Rendille (Afi Ren'dille) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 18",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
         "words": [
                 {
                         "target": "Nabad / Sooriyo",
@@ -2630,24 +2630,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Aa, ino Sorriyo wacan qabna",
-                        "source": "Yes, we have good sorriyo"
-                },
-                {
                         "target": "Sorriyo i sii",
                         "source": "Please give me sorriyo"
                 },
                 {
                         "target": "Ceel agtiisa Sorriyo ku aragnay",
                         "source": "We saw sorriyo near the well"
-                },
-                {
-                        "target": "Ati maanta Naroshon ma qabta?",
-                        "source": "Do you have naroshon today?"
-                },
-                {
-                        "target": "Aa, ino Naroshon wacan qabna",
-                        "source": "Yes, we have good naroshon"
                 },
                 {
                         "target": "Naroshon i sii",
@@ -2658,24 +2646,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
                         "source": "We saw naroshon near the well"
                 },
                 {
-                        "target": "Ati maanta Burkeneji ma qabta?",
-                        "source": "Do you have white sheep today?"
-                },
-                {
-                        "target": "Aa, ino Burkeneji wacan qabna",
-                        "source": "Yes, we have good white sheep"
-                },
-                {
                         "target": "Burkeneji i sii",
                         "source": "Please give me white sheep"
                 },
                 {
                         "target": "Ceel agtiisa Burkeneji ku aragnay",
                         "source": "We saw white sheep near the well"
-                },
-                {
-                        "target": "Ati maanta magaca ma qabta?",
-                        "source": "Do you have name today?"
                 }
         ]
 },
@@ -2684,7 +2660,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Rendille (Afi Ren'dille) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 18",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
         "words": [
                 {
                         "target": "Ino gob Sorriyo ku hayna",
@@ -2748,10 +2724,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Aa, ino magaca wacan qabna",
-                        "source": "Yes, we have good name"
-                },
                 {
                         "target": "magaca i sii",
                         "source": "Please give me name"

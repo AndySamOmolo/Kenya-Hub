@@ -5324,7 +5324,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           }
         ]
       },
-{
+      {
         "id": "kamba-open-datasets-corpus",
         "title": "Modern Agriculture, Gratitude & Community Life",
         "icon": "Database",
@@ -5332,70 +5332,65 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "culturalNote": "Modern open Kĩkamba corpora developed by the Kitui Translation Team (kndomboi/kikamba-first-corpus), the Thiomi Consortium (Mutisya, Mugane et al. 2026), and LughaGen preserve authentic Machakos, Kitui, and Makueni usage across agriculture, emotions, and civic life.",
         "grammarTip": "Notice the 1st person singular present progressive prefix Nĩ-ngũ- in Nĩngũtana mũno ('I am very joyful/grateful') and the infinitive prefix Kũ- in Kũsũvĩa kiw'ũ ('to conserve water').",
         "words": [
-                {
-                        "target": "Ũtethyo mũseo",
-                        "source": "Kind assistance / Good help",
-                        "pronunciation": "oo-teh-thyoh moo-seh-oh"
-                },
-                {
-                        "target": "Kũtana",
-                        "source": "To be joyful / happy / grateful",
-                        "pronunciation": "koo-tah-nah"
-                },
-                {
-                        "target": "Kũsũvĩa kiw'ũ",
-                        "source": "To conserve / protect water",
-                        "pronunciation": "koo-soo-vee-ah kee-woo"
-                },
-                {
-                        "target": "Mĩũnda yitũ",
-                        "source": "Our farms / gardens",
-                        "pronunciation": "mee-oo-ndah yee-too"
-                },
-                {
-                        "target": "Ĩvindanĩ ya sua",
-                        "source": "During the dry / sunny season",
-                        "pronunciation": "ee-vee-ndah-nee yah soo-ah"
-                },
-                {
-                        "target": "Mũimi (pl. Aĩmi)",
-                        "source": "Farmer",
-                        "pronunciation": "moo-ee-mee"
-                },
-                {
-                        "target": "Ũĩmi wa kisasa",
-                        "source": "Modern agriculture",
-                        "pronunciation": "oo-ee-mee wah kee-sah-sah"
-                },
-                {
-                        "target": "Mũuo na wĩw'ano",
-                        "source": "Peace and harmony",
-                        "pronunciation": "moo-oo-oh nah wee-wah-noh"
-                }
+          {
+            "target": "Ũtethyo mũseo",
+            "source": "Kind assistance / Good help",
+            "pronunciation": "oo-teh-thyoh moo-seh-oh"
+          },
+          {
+            "target": "Kũtana",
+            "source": "To be joyful / happy / grateful",
+            "pronunciation": "koo-tah-nah"
+          },
+          {
+            "target": "Kũsũvĩa kiw'ũ",
+            "source": "To conserve / protect water",
+            "pronunciation": "koo-soo-vee-ah kee-woo"
+          },
+          {
+            "target": "Mĩũnda yitũ",
+            "source": "Our farms / gardens",
+            "pronunciation": "mee-oo-ndah yee-too"
+          },
+          {
+            "target": "Ĩvindanĩ ya sua",
+            "source": "During the dry / sunny season",
+            "pronunciation": "ee-vee-ndah-nee yah soo-ah"
+          },
+          {
+            "target": "Mũimi (pl. Aĩmi)",
+            "source": "Farmer",
+            "pronunciation": "moo-ee-mee"
+          },
+          {
+            "target": "Ũĩmi wa kisasa",
+            "source": "Modern agriculture",
+            "pronunciation": "oo-ee-mee wah kee-sah-sah"
+          },
+          {
+            "target": "Mũuo na wĩw'ano",
+            "source": "Peace and harmony",
+            "pronunciation": "moo-oo-oh nah wee-wah-noh"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Nĩngũtana mũno nĩ ũndũ wa ũtethyo waku mũseo.",
-                        "source": "I am very joyful and grateful for your kind assistance."
-                },
-                {
-                        "target": "Kũsũvĩa kiw'ũ ĩvindanĩ ya sua nĩkũtethasya mĩũnda yitũ.",
-                        "source": "Conserving water in the dry season sustains our farms."
-                }
+          {
+            "target": "Nĩngũtana mũno nĩ ũndũ wa ũtethyo waku mũseo.",
+            "source": "I am very joyful and grateful for your kind assistance."
+          },
+          {
+            "target": "Kũsũvĩa kiw'ũ ĩvindanĩ ya sua nĩkũtethasya mĩũnda yitũ.",
+            "source": "Conserving water in the dry season sustains our farms."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "kamba-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kamba (Kĩkamba) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba To",
+        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
         "words": [
-                {
-                        "target": "o voo",
-                        "source": "Salutation",
-                        "pronunciation": "o voo"
-                },
                 {
                         "target": "Iekan-a",
                         "source": "Forgive thou",
@@ -5503,12 +5498,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 }
         ]
 },
-        {
+      {
         "id": "kamba-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kamba (Kĩkamba) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba To",
+        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
         "words": [
                 {
                         "target": "Nĩtũsũvĩaa Kaviu mũsyĩ",
@@ -5531,44 +5526,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
                         "pronunciation": "nĩtũsũvĩaa wenzĩ mũsyĩ"
                 },
                 {
-                        "target": "Thooa wa kīeŋgo sokoni nĩ meana?",
-                        "source": "What is the price of kīeŋgo at the market? (cattle-post)",
-                        "pronunciation": "thooa wa kīeŋgo sokoni nĩ meana"
+                        "target": "keeli (Ulu) / maille (Nganyawa)",
+                        "source": "Twice",
+                        "pronunciation": "keeli"
                 },
                 {
-                        "target": "Thooa wa mbuī sokoni nĩ meana?",
-                        "source": "What is the price of mbuī at the market? (cow-bell)",
-                        "pronunciation": "thooa wa mbuī sokoni nĩ meana"
-                },
-                {
-                        "target": "Thooa wa n-da.á sokoni nĩ meana?",
-                        "source": "What is the price of n-da.á at the market? (louse)",
-                        "pronunciation": "thooa wa n-daá sokoni nĩ meana"
-                },
-                {
-                        "target": "Thooa wa N-dzaω sokoni nĩ meana?",
-                        "source": "What is the price of N-dzaω at the market? (ox)",
-                        "pronunciation": "thooa wa n-dza sokoni nĩ meana"
-                },
-                {
-                        "target": "Thooa wa waa sokoni nĩ meana?",
-                        "source": "What is the price of waa at the market? (claw)",
-                        "pronunciation": "thooa wa waa sokoni nĩ meana"
-                },
-                {
-                        "target": "Thooa wa nzogólo sokoni nĩ meana?",
-                        "source": "What is the price of nzogólo at the market? (cock)",
-                        "pronunciation": "thooa wa nzogólo sokoni nĩ meana"
-                },
-                {
-                        "target": "Thooa wa ngúgu sokoni nĩ meana?",
-                        "source": "What is the price of ngúgu at the market? (hen)",
-                        "pronunciation": "thooa wa ngúgu sokoni nĩ meana"
-                },
-                {
-                        "target": "Sũvĩa nselle nũndũ wa ũima wa mwĩĩ",
-                        "source": "Take care of dish for good health",
-                        "pronunciation": "sũvĩa nselle nũndũ wa ũima wa mwĩĩ"
+                        "target": "keeli",
+                        "source": "Twice",
+                        "pronunciation": "kee-li"
                 }
         ],
         "sentences": [
@@ -5585,40 +5550,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
                         "source": "It is good to wait every day"
                 },
                 {
-                        "target": "Thooa wa Ndei sokoni nĩ meana?",
-                        "source": "What is the price of Ndei at the market? (secretary bird)"
-                },
-                {
-                        "target": "Thooa wa kugunga sokoni nĩ meana?",
-                        "source": "What is the price of kugunga at the market? (creep)"
-                },
-                {
-                        "target": "Thooa wa nthia sokoni nĩ meana?",
-                        "source": "What is the price of nthia at the market? (duyker)"
-                },
-                {
-                        "target": "Thooa wa Gondi sokoni nĩ meana?",
-                        "source": "What is the price of Gondi at the market? (coke's hartebeest)"
-                },
-                {
-                        "target": "Thooa wa Yamu sokoni nĩ meana?",
-                        "source": "What is the price of Yamu at the market? (hairy caterpillar)"
-                },
-                {
-                        "target": "Thooa wa ngwele sokoni nĩ meana?",
-                        "source": "What is the price of ngwele at the market? (trunk)"
-                },
-                {
-                        "target": "Thooa wa Itong'o sokoni nĩ meana?",
-                        "source": "What is the price of Itong'o at the market? (civet cat)"
-                },
-                {
-                        "target": "Thooa wa kīeŋgo sokoni nĩ meana?",
-                        "source": "What is the price of kīeŋgo at the market? (cattle-post)"
-                },
-                {
-                        "target": "Thooa wa mbuī sokoni nĩ meana?",
-                        "source": "What is the price of mbuī at the market? (cow-bell)"
+                        "target": "Nĩtũsũvĩaa Kaviu mũsyĩ",
+                        "source": "We keep knife at the homestead"
                 }
         ]
 }

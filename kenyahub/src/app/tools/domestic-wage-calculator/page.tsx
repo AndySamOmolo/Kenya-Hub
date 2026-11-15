@@ -15,13 +15,22 @@ export default function DomesticWageCalculatorPage() {
 
   const calc = useMemo(() => {
     const minWage = activeZone.monthlyMinimum;
-    const shaDeduction = minWage * domesticData.statutoryDeductions.shaEmployeePercent;
+    const housingAllowanceIncluded = Math.round(minWage * 0.15);
+    const shaDeduction = Math.max(300, Math.round(minWage * domesticData.statutoryDeductions.shaEmployeePercent));
     const nssfEmployee = domesticData.statutoryDeductions.nssfTier1Matching;
     const nssfEmployer = domesticData.statutoryDeductions.nssfTier1Matching;
     const netTakeHome = minWage - shaDeduction - nssfEmployee;
     const totalEmployerCost = minWage + nssfEmployer;
 
-    return { minWage, shaDeduction, nssfEmployee, nssfEmployer, netTakeHome, totalEmployerCost };
+    return {
+      minWage,
+      housingAllowanceIncluded,
+      shaDeduction,
+      nssfEmployee,
+      nssfEmployer,
+      netTakeHome,
+      totalEmployerCost,
+    };
   }, [activeZone]);
 
   return (
@@ -35,7 +44,7 @@ export default function DomesticWageCalculatorPage() {
             Under the <strong>Regulation of Wages (General) (Amendment) Order (Legal Notice 108)</strong>, domestic workers are entitled to gazetted minimum pay schedules by zone, plus mandatory NSSF Tier I matching and SHA healthcare deductions.
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-4">
             {domesticData.zones.map((z) => (
               <button
                 key={z.id}
@@ -51,11 +60,39 @@ export default function DomesticWageCalculatorPage() {
             ))}
           </div>
 
+          <div className="flex flex-wrap gap-2 mb-6">
+            <button
+              type="button"
+              onClick={() => setIsLiveIn(false)}
+              className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors cursor-pointer ${
+                !isLiveIn
+                  ? "bg-gold/15 border-gold text-gold"
+                  : "bg-bg-elevated border-border text-text-secondary"
+              }`}
+            >
+              Live-Out (Consolidated Wage Includes 15% Housing)
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsLiveIn(true)}
+              className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors cursor-pointer ${
+                isLiveIn
+                  ? "bg-gold/15 border-gold text-gold"
+                  : "bg-bg-elevated border-border text-text-secondary"
+              }`}
+            >
+              Live-In (Employer Provides Free Accommodation)
+            </button>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
             <div className="rounded-xl border border-gold/40 bg-gold/10 p-4">
               <span className="text-[0.6875rem] font-bold text-gold uppercase">Gazetted Legal Minimum Wage</span>
               <p className="text-2xl font-black text-gold mt-1">KES {calc.minWage.toLocaleString()}</p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">Daily rate: KES {activeZone.dailyRate} ({activeZone.hourlyRate}/hr)</p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1">
+                Daily: KES {activeZone.dailyRate} ({activeZone.hourlyRate}/hr)
+                {isLiveIn ? ` · Free housing provided (equiv. KES ${calc.housingAllowanceIncluded.toLocaleString()})` : ""}
+              </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Employee Net Take-Home</span>

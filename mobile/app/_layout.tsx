@@ -1,5 +1,6 @@
-import React from "react";
-import { Stack, ErrorBoundaryProps } from "expo-router";
+import React, { useEffect } from "react";
+import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -19,10 +20,28 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
-import { ThemeProvider, useTheme, darkColors } from "../src/theme";
+import {
+  ThemeProvider,
+  useTheme,
+  darkColors,
+  androidRipple,
+  pressableStyle,
+} from "../src/theme";
 
-function LayoutContent() {
-  const { theme, isDark } = useTheme();
+SplashScreen.preventAutoHideAsync().catch(() => {});
+
+function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
+  const { theme, isDark, themeReady } = useTheme();
+
+  useEffect(() => {
+    if (fontsLoaded && themeReady) {
+      SplashScreen.hideAsync().catch(() => {});
+    }
+  }, [fontsLoaded, themeReady]);
+
+  if (!fontsLoaded || !themeReady) {
+    return null;
+  }
 
   return (
     <>
@@ -59,28 +78,58 @@ export default function RootLayout() {
     Inter_700Bold,
   });
 
-  if (!fontsLoaded) {
-    return null;
-  }
-
-    return (
+  return (
     <SafeAreaProvider>
       <ThemeProvider>
-        <LayoutContent />
+        <LayoutContent fontsLoaded={fontsLoaded} />
       </ThemeProvider>
     </SafeAreaProvider>
   );
 }
 
 export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
-      <Ionicons name="warning-outline" size={48} color="#F59E0B" style={{ marginBottom: 16 }} />
+      <Ionicons
+        name="warning-outline"
+        size={48}
+        color="#F59E0B"
+        style={{ marginBottom: 16 }}
+      />
       <Text style={styles.title}>Something went wrong</Text>
-      <Text style={styles.message}>{error.message}</Text>
-      <Pressable onPress={retry} style={styles.retryButton}>
-        <Text style={styles.retryText}>Try again</Text>
-      </Pressable>
+      <Text style={styles.message}>
+        {error?.message || "An unexpected error occurred while rendering this screen."}
+      </Text>
+      <View style={styles.actionsRow}>
+        <Pressable
+          onPress={retry}
+          accessibilityRole="button"
+          accessibilityLabel="Try loading screen again"
+          android_ripple={androidRipple()}
+          style={pressableStyle(styles.retryButton)}
+        >
+          <Ionicons name="refresh" size={16} color={darkColors.kenyaBlack} />
+          <Text style={styles.retryText}>Try again</Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            try {
+              router.replace("/");
+            } catch {
+              retry();
+            }
+          }}
+          accessibilityRole="button"
+          accessibilityLabel="Return to KenyaHub Home screen"
+          android_ripple={androidRipple()}
+          style={pressableStyle(styles.homeButton)}
+        >
+          <Ionicons name="home-outline" size={16} color={darkColors.textPrimary} />
+          <Text style={styles.homeButtonText}>Go Home</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -93,29 +142,53 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 24,
   },
-  errorIcon: { fontSize: 48, marginBottom: 16 },
   title: {
     color: darkColors.textPrimary,
+    fontFamily: "Outfit_800ExtraBold",
     fontSize: 22,
-    fontWeight: "800",
     textAlign: "center",
   },
   message: {
     color: darkColors.textSecondary,
+    fontFamily: "Inter_400Regular",
     marginTop: 12,
     lineHeight: 21,
     textAlign: "center",
   },
-  retryButton: {
-    backgroundColor: darkColors.gold,
-    paddingVertical: 14,
-    paddingHorizontal: 32,
-    borderRadius: 12,
+  actionsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
     marginTop: 24,
+  },
+  retryButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    backgroundColor: darkColors.gold,
+    paddingVertical: 13,
+    paddingHorizontal: 24,
+    borderRadius: 12,
   },
   retryText: {
     color: darkColors.kenyaBlack,
-    fontWeight: "800",
-    fontSize: 16,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
+  },
+  homeButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    backgroundColor: darkColors.surfaceContainerHigh,
+    borderWidth: 1,
+    borderColor: darkColors.outlineVariant,
+    paddingVertical: 13,
+    paddingHorizontal: 22,
+    borderRadius: 12,
+  },
+  homeButtonText: {
+    color: darkColors.textPrimary,
+    fontFamily: "Outfit_700Bold",
+    fontSize: 15,
   },
 });

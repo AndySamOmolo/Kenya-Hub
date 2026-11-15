@@ -1,45 +1,38 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
-import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  Award,
-  Clock,
-  Delete,
-  Flame,
-  Grid3X3,
-  Hash,
-  RotateCcw,
-  Shuffle,
-  Star,
-  Timer,
-  Trophy,
-  Zap,
-} from "lucide-react";
-import type { WordPair } from "@/data/courses/types";
-import { type GameProps, shuffle, pickRandom } from "./shared";
+import { useMemo, useState } from "react";
+import { Zap } from "lucide-react";
+import { type GameProps, shuffle } from "./shared";
 
-export function VocabQuizGame({ allWords, languageName }: GameProps) {
+export function VocabQuizGame({ allWords, languageName, onAwardXp }: GameProps) {
   const [score, setScore] = useState(0);
   const [round, setRound] = useState(0);
   const [feedback, setFeedback] = useState<string | null>(null);
 
-  const currentWord = allWords.length > 0 ? allWords[round % allWords.length] : null;
+  // Shuffle words on mount so Round 1 is randomized every time the game opens
+  const shuffledWords = useMemo(() => shuffle(allWords), [allWords]);
+
+  const currentWord =
+    shuffledWords.length > 0 ? shuffledWords[round % shuffledWords.length] : null;
+
   const options = useMemo(() => {
-    if (!currentWord || allWords.length < 2) return [];
-    const distractors = allWords
-      .filter((w) => w.target !== currentWord.target)
-      .sort(() => Math.random() - 0.5)
+    if (!currentWord || shuffledWords.length < 2) return [];
+    const distractors = shuffle(
+      shuffledWords.filter((w) => w.target.toLowerCase() !== currentWord.target.toLowerCase())
+    )
       .slice(0, 3)
       .map((w) => w.target);
-    return [currentWord.target, ...distractors].sort(() => Math.random() - 0.5);
-  }, [currentWord, allWords]);
+    return shuffle([currentWord.target, ...distractors]);
+  }, [currentWord, shuffledWords, round]);
 
   const handleAnswer = (ans: string) => {
     if (feedback !== null || !currentWord) return;
     const isRight = ans === currentWord.target;
     setFeedback(ans);
-    if (isRight) setScore((s) => s + 15);
+    if (isRight) {
+      setScore((s) => s + 15);
+      onAwardXp?.(15);
+    }
     setTimeout(() => {
       setFeedback(null);
       setRound((r) => r + 1);
@@ -86,7 +79,7 @@ export function VocabQuizGame({ allWords, languageName }: GameProps) {
               key={opt}
               disabled={feedback !== null}
               onClick={() => handleAnswer(opt)}
-              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] ${btnStyle}`}
+              className={`rounded-xl border-2 p-4 text-left text-sm font-medium transition-all active:scale-[0.98] cursor-pointer ${btnStyle}`}
             >
               {opt}
             </button>
@@ -96,4 +89,3 @@ export function VocabQuizGame({ allWords, languageName }: GameProps) {
     </div>
   );
 }
-

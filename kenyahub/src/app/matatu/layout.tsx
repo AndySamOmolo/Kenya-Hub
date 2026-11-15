@@ -41,7 +41,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/matatu/",
       en: "https://kenyahub.me/matatu/",
-    },
+        "x-default": "https://kenyahub.me/matatu/",
+      },
   },
 };
 

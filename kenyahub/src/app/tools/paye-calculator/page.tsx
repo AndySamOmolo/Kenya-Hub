@@ -1,12 +1,15 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { Copy, Check, Share2 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import payeData from "@/data/paye-bands.json";
 
 const tool = TOOLS.find((t) => t.slug === "paye-calculator")!;
+
+const PRESET_SALARIES = [30000, 50000, 80000, 100000, 150000, 250000, 500000];
 
 function calculatePAYE(taxableIncome: number, insurancePremium: number = 0) {
   const bands = payeData.payeBands;
@@ -173,6 +176,23 @@ export default function PAYECalculatorPage() {
   const [mortgageInterest, setMortgageInterest] = useState<number>(0);
   const [insurancePremium, setInsurancePremium] = useState<number>(0);
   const [nssfTier1Only, setNssfTier1Only] = useState(false);
+  const [copiedSummary, setCopiedSummary] = useState(false);
+  const [copiedLink, setCopiedLink] = useState(false);
+
+  // Hydrate initial salary from ?gross= or ?net= query parameters
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const grossParam = Number(params.get("gross"));
+    const netParam = Number(params.get("net"));
+    if (Number.isFinite(grossParam) && grossParam > 0) {
+      setCalcMode("grossToNet");
+      setGrossInput(grossParam);
+    } else if (Number.isFinite(netParam) && netParam > 0) {
+      setCalcMode("netToGross");
+      setTargetNetInput(netParam);
+    }
+  }, []);
 
   const results = useMemo(() => {
     const effectiveGross =
@@ -209,6 +229,49 @@ export default function PAYECalculatorPage() {
       maximumFractionDigits: 0,
     })}`;
   };
+
+  const handleCopySummary = async () => {
+    const periodLabel = showAnnual ? "Annual" : "Monthly";
+    const summaryText = [
+      `Kenya 2026 PAYE Payslip Summary (${periodLabel}) — KenyaHub`,
+      `Gross Salary: ${fmt(results.gross)}`,
+      `NSSF (Year 4, 6%): -${fmt(results.nssf)}`,
+      `SHA / SHIF (2.75%): -${fmt(results.sha)}`,
+      `Housing Levy (1.5%): -${fmt(results.housingLevy)}`,
+      ...(pensionContribution > 0 ? [`Voluntary Pension: -${fmt(pensionContribution)}`] : []),
+      `Taxable Pay: ${fmt(results.taxableIncome)}`,
+      `Net PAYE Tax: -${fmt(results.paye)} (${results.effectiveTaxRate}% effective)`,
+      `Net Take-Home Pay: ${fmt(results.netPay)}`,
+      `https://kenyahub.me/tools/paye-calculator/?gross=${results.gross}`,
+    ].join("\n");
+    try {
+      await navigator.clipboard.writeText(summaryText);
+      setCopiedSummary(true);
+      setTimeout(() => setCopiedSummary(false), 2200);
+    } catch {
+      // ignore
+    }
+  };
+
+  const handleShareUrl = async () => {
+    const shareUrl = `${window.location.origin}/tools/paye-calculator/?${
+      calcMode === "netToGross" ? `net=${targetNetInput}` : `gross=${results.gross}`
+    }`;
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2200);
+    } catch {
+      // ignore
+    }
+  };
+
+  const grossBase = Math.max(1, results.gross);
+  const netPct = Math.max(0, Math.round((results.netPay / grossBase) * 1000) / 10);
+  const payePct = Math.max(0, Math.round((results.paye / grossBase) * 1000) / 10);
+  const shaPct = Math.max(0, Math.round((results.sha / grossBase) * 1000) / 10);
+  const nssfPct = Math.max(0, Math.round((results.nssf / grossBase) * 1000) / 10);
+  const ahlPct = Math.max(0, Math.round((results.housingLevy / grossBase) * 1000) / 10);
 
   return (
     <ToolShell tool={tool} faq={faq}>
@@ -265,6 +328,23 @@ export default function PAYECalculatorPage() {
                 onChange={(e) => setGrossInput(Number(e.target.value))}
                 className="w-full mt-3 accent-gold"
               />
+              <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                <span className="text-xs text-text-muted mr-1">Quick presets:</span>
+                {PRESET_SALARIES.map((amt) => (
+                  <button
+                    key={amt}
+                    type="button"
+                    onClick={() => setGrossInput(amt)}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-semibold border transition-colors cursor-pointer ${
+                      grossInput === amt
+                        ? "border-gold bg-gold/15 text-gold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:border-gold/40 hover:text-text-primary"
+                    }`}
+                  >
+                    {amt >= 1000 ? `${amt / 1000}K` : amt}
+                  </button>
+                ))}
+              </div>
             </div>
           ) : (
             <div>
@@ -368,28 +448,49 @@ export default function PAYECalculatorPage() {
           </div>
         </div>
 
-        {/* Monthly / Annual Toggle */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setShowAnnual(false)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-              !showAnnual
-                ? "bg-gold text-kenya-black font-bold"
-                : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-            }`}
-          >
-            Monthly
-          </button>
-          <button
-            onClick={() => setShowAnnual(true)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-              showAnnual
-                ? "bg-gold text-kenya-black font-bold"
-                : "bg-bg-card border border-border text-text-secondary hover:text-gold"
-            }`}
-          >
-            Annual (×12)
-          </button>
+        {/* Monthly / Annual Toggle + Copy & Share Actions */}
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <button
+              onClick={() => setShowAnnual(false)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                !showAnnual
+                  ? "bg-gold text-kenya-black font-bold"
+                  : "bg-bg-card border border-border text-text-secondary hover:text-gold"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setShowAnnual(true)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                showAnnual
+                  ? "bg-gold text-kenya-black font-bold"
+                  : "bg-bg-card border border-border text-text-secondary hover:text-gold"
+              }`}
+            >
+              Annual (×12)
+            </button>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleCopySummary}
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-bg-card border border-border text-text-secondary hover:border-gold/50 hover:text-gold transition-colors cursor-pointer"
+            >
+              {copiedSummary ? <Check className="w-3.5 h-3.5 text-kenya-green-light" /> : <Copy className="w-3.5 h-3.5 text-gold" />}
+              <span>{copiedSummary ? "Payslip Copied!" : "Copy Payslip"}</span>
+            </button>
+            <button
+              type="button"
+              onClick={handleShareUrl}
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-bg-card border border-border text-text-secondary hover:border-gold/50 hover:text-gold transition-colors cursor-pointer"
+            >
+              {copiedLink ? <Check className="w-3.5 h-3.5 text-kenya-green-light" /> : <Share2 className="w-3.5 h-3.5 text-gold" />}
+              <span>{copiedLink ? "Link Copied!" : "Share Link"}</span>
+            </button>
+          </div>
         </div>
 
         {/* Result Summary */}
@@ -429,6 +530,69 @@ export default function PAYECalculatorPage() {
             </p>
           </div>
         </div>
+
+        {/* Visual Salary Distribution Stacked Bar */}
+        {results.gross > 0 && (
+          <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-semibold text-text-primary">
+                Visual Gross Salary Distribution ({fmt(results.gross)})
+              </span>
+              <span className="text-kenya-green-light font-bold">
+                {netPct}% Take-Home
+              </span>
+            </div>
+            <div className="h-4 w-full rounded-full bg-bg-elevated overflow-hidden flex">
+              <div
+                style={{ width: `${netPct}%` }}
+                className="bg-kenya-green-light h-full transition-all duration-300"
+                title={`Net Pay: ${netPct}%`}
+              />
+              <div
+                style={{ width: `${payePct}%` }}
+                className="bg-kenya-red-light h-full transition-all duration-300"
+                title={`PAYE: ${payePct}%`}
+              />
+              <div
+                style={{ width: `${shaPct}%` }}
+                className="bg-sky-light h-full transition-all duration-300"
+                title={`SHA: ${shaPct}%`}
+              />
+              <div
+                style={{ width: `${nssfPct}%` }}
+                className="bg-gold h-full transition-all duration-300"
+                title={`NSSF: ${nssfPct}%`}
+              />
+              <div
+                style={{ width: `${ahlPct}%` }}
+                className="bg-purple-400 h-full transition-all duration-300"
+                title={`Housing Levy: ${ahlPct}%`}
+              />
+            </div>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-text-secondary">
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-kenya-green-light" />
+                Net Pay ({netPct}%)
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-kenya-red-light" />
+                PAYE ({payePct}%)
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-sky-light" />
+                SHA ({shaPct}%)
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-gold" />
+                NSSF ({nssfPct}%)
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-purple-400" />
+                Housing Levy ({ahlPct}%)
+              </span>
+            </div>
+          </div>
+        )}
 
         {/* Deductions Breakdown */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
@@ -470,6 +634,14 @@ export default function PAYECalculatorPage() {
                     − {fmt(results.housingLevy)}
                   </td>
                 </tr>
+                {pensionContribution > 0 && (
+                  <tr>
+                    <td>Voluntary Pension Contribution (Allowable: {fmt(results.allowablePension)})</td>
+                    <td className="text-right text-kenya-red-light">
+                      − {fmt(pensionContribution)}
+                    </td>
+                  </tr>
+                )}
                 <tr className="bg-bg-elevated/40">
                   <td className="text-text-primary font-medium">
                     Taxable Income (After Allowable Deductions)

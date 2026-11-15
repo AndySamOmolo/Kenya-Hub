@@ -28,7 +28,7 @@ export const TOOLS: Tool[] = [
   {
     slug: 'kenyan-translator',
     title: 'Kenyan Languages Translator & Dictionary (23 Languages)',
-    shortTitle: '22-Language Translator',
+    shortTitle: '23-Language Translator',
     description: 'Translate words and phrases across 23 Kenyan languages — Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Meru, Maasai, Kisii, Somali, Turkana, Mijikenda, Ateso, Embu, Taita, Samburu, Borana, Rendille, Pokomo, Ilchamus, Pokot, Taveta, and Daasanach.',
     category: 'language-learning',
     keywords: ['Kenya language translator', 'Swahili Kikuyu Luo translator', 'Kenyan language dictionary', 'Kalenjin Kamba Maasai words'],

@@ -3502,7 +3502,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "kalatcha"
           },
           {
-            "target": "„t'wu — aki — t'wu — tili!\"",
+            "target": "'t'wu — aki — t'wu — tili!'",
             "source": "Grass-spitting oath",
             "pronunciation": "t'wu-aki-t'wu-tili"
           },
@@ -3519,7 +3519,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a: „Hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!\" djed'eti.",
+            "target": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a: 'Hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!' djed'eti.",
             "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all the"
           }
         ],
@@ -4068,7 +4068,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Borana (Oromo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-S",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
         "words": [
                 {
                         "target": "Oolte nagaa? / Akkam oolte? / Ati naga olte har'a?",
@@ -4109,26 +4109,6 @@ export const BORANA_UNITS: CourseUnit[] = [
                         "target": "gelatéfate",
                         "source": "Thank, v. a",
                         "pronunciation": "gelatéfate"
-                },
-                {
-                        "target": "Nuti ollaa keenya keessatti sibila tikfanna",
-                        "source": "We keep iron in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti sibila tikfanna"
-                },
-                {
-                        "target": "Nuti ollaa keenya keessatti woftsho tikfanna",
-                        "source": "We keep mill in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti woftsho tikfanna"
-                },
-                {
-                        "target": "Nuti ollaa keenya keessatti muka tikfanna",
-                        "source": "We keep wood in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti muka tikfanna"
-                },
-                {
-                        "target": "Nuti ollaa keenya keessatti balbala tikfanna",
-                        "source": "We keep gate in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti balbala tikfanna"
                 }
         ],
         "sentences": [
@@ -4187,67 +4167,37 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Borana (Oromo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-S",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
         "words": [
                 {
-                        "target": "Nuti ollaa keenya keessatti galgalo tikfanna",
-                        "source": "We keep sack in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti galgalo tikfanna"
+                        "target": "sagal (zagala)",
+                        "source": "Nine",
+                        "pronunciation": "sa-gal"
                 },
                 {
-                        "target": "Nuti ollaa keenya keessatti faqe tikfanna",
-                        "source": "We keep comb in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti faqe tikfanna"
+                        "target": "ṣān",
+                        "source": "Five",
+                        "pronunciation": "san"
                 },
                 {
-                        "target": "Nuti ollaa keenya keessatti kewéla tikfanna",
-                        "source": "We keep anvil in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti kewéla tikfanna"
+                        "target": "afur",
+                        "source": "Four",
+                        "pronunciation": "a-fur"
                 },
                 {
-                        "target": "Nuti ollaa keenya keessatti háfersa tikfanna",
-                        "source": "We keep broom in our pastoral camp",
-                        "pronunciation": "nuti ollaa keenya keessatti háfersa tikfanna"
+                        "target": "takáti; guia tóko",
+                        "source": "Once",
+                        "pronunciation": "takati"
                 },
                 {
-                        "target": "Gatiin róbi gabaa keessatti meeqa?",
-                        "source": "What is the price of „ horse at the market?",
-                        "pronunciation": "gatiin róbi gabaa keessatti meeqa"
+                        "target": "tchabnana",
+                        "source": "Half",
+                        "pronunciation": "tchabna-na"
                 },
                 {
-                        "target": "Gatiin mutta gabaa keessatti meeqa?",
-                        "source": "What is the price of awl at the market?",
-                        "pronunciation": "gatiin mutta gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin dágara. gabaa keessatti meeqa?",
-                        "source": "What is the price of axe at the market?",
-                        "pronunciation": "gatiin dágara gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin sūgūba gabaa keessatti meeqa?",
-                        "source": "What is the price of bag at the market?",
-                        "pronunciation": "gatiin sūgūba gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin kóntjoro gabaa keessatti meeqa?",
-                        "source": "What is the price of bed at the market?",
-                        "pronunciation": "gatiin kóntjoro gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin búdūko gabaa keessatti meeqa?",
-                        "source": "What is the price of cup at the market?",
-                        "pronunciation": "gatiin búdūko gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin minna dikkío gabaa keessatti meeqa?",
-                        "source": "What is the price of hut at the market?",
-                        "pronunciation": "gatiin minna dikkío gabaa keessatti meeqa"
-                },
-                {
-                        "target": "Gatiin t'uwe gabaa keessatti meeqa?",
-                        "source": "What is the price of pot at the market?",
-                        "pronunciation": "gatiin t'uwe gabaa keessatti meeqa"
+                        "target": "lamma",
+                        "source": "Both",
+                        "pronunciation": "lam-ma"
                 }
         ],
         "sentences": [
@@ -4264,40 +4214,8 @@ export const BORANA_UNITS: CourseUnit[] = [
                         "source": "We want to drink together"
                 },
                 {
-                        "target": "Gatiin gindjirti gabaa keessatti meeqa?",
-                        "source": "What is the price of collar-sticks at the market?"
-                },
-                {
-                        "target": "Gatiin huumbii gabaa keessatti meeqa?",
-                        "source": "What is the price of elephant trunk at the market?"
-                },
-                {
-                        "target": "Gatiin sattawwaa gabaa keessatti meeqa?",
-                        "source": "What is the price of giraffe at the market?"
-                },
-                {
-                        "target": "Gatiin aallaattii gabaa keessatti meeqa?",
-                        "source": "What is the price of pelican at the market?"
-                },
-                {
-                        "target": "Gatiin hillesa gabaa keessatti meeqa?",
-                        "source": "What is the price of hare at the market?"
-                },
-                {
-                        "target": "Gatiin dókse gabaa keessatti meeqa?",
-                        "source": "What is the price of hide at the market?"
-                },
-                {
-                        "target": "Gatiin kerensa gabaa keessatti meeqa?",
-                        "source": "What is the price of leopard at the market?"
-                },
-                {
-                        "target": "Gatiin róbi gabaa keessatti meeqa?",
-                        "source": "What is the price of „ horse at the market?"
-                },
-                {
-                        "target": "Gatiin mutta gabaa keessatti meeqa?",
-                        "source": "What is the price of awl at the market?"
+                        "target": "sagal (zagala)",
+                        "source": "Nine"
                 }
         ]
 }

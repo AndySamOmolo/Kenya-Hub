@@ -1,25 +1,12 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  Award,
-  Clock,
-  Delete,
-  Flame,
-  Grid3X3,
-  Hash,
-  RotateCcw,
-  Shuffle,
-  Star,
-  Timer,
-  Trophy,
-  Zap,
-} from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Clock, Flame, RotateCcw, Star, Zap } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
 import { type GameProps, shuffle, pickRandom } from "./shared";
 
-export function SpeedMatchGame({ allWords, languageName }: GameProps) {
+export function SpeedMatchGame({ allWords, languageName, onAwardXp }: GameProps) {
   const GAME_DURATION = 60;
 
   const [gameState, setGameState] = useState<"ready" | "playing" | "done">("ready");
@@ -33,6 +20,7 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
   const [total, setTotal] = useState(0);
   const [correct, setCorrect] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const awardedRef = useRef(false);
 
   const generateRound = useCallback(() => {
     const word = pickRandom(allWords);
@@ -49,6 +37,7 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
 
   const startGame = () => {
     if (allWords.length === 0) return;
+    awardedRef.current = false;
     setGameState("playing");
     setScore(0);
     setStreak(0);
@@ -69,6 +58,13 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
       });
     }, 1000);
   };
+
+  useEffect(() => {
+    if (gameState === "done" && !awardedRef.current) {
+      awardedRef.current = true;
+      onAwardXp?.(Math.max(15, Math.min(50, Math.round(score / 4))));
+    }
+  }, [gameState, score, onAwardXp]);
 
   useEffect(() => {
     return () => {
@@ -120,7 +116,7 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
         <button
           onClick={startGame}
           disabled={allWords.length === 0}
-          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:hover:brightness-110 mx-auto"
+          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:hover:brightness-110 mx-auto cursor-pointer"
         >
           <span>Start Game</span> <DynamicIcon emoji="🚀" className="w-4 h-4" />
         </button>
@@ -157,7 +153,7 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
 
         <button
           onClick={startGame}
-          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
+          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 cursor-pointer"
         >
           <RotateCcw className="h-4 w-4" /> Play Again
         </button>
@@ -167,7 +163,6 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
 
   return (
     <div>
-      {/* Timer and score */}
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className={`flex items-center gap-1 rounded-full border px-3 py-1.5 ${
@@ -193,7 +188,6 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
         </div>
       </div>
 
-      {/* Word to translate */}
       {currentWord && (
         <div
           className={`mb-5 rounded-2xl border-2 p-6 text-center transition-all ${
@@ -213,13 +207,12 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
         </div>
       )}
 
-      {/* Options */}
       <div className="grid gap-2 sm:grid-cols-2">
         {options.map((opt) => (
           <button
             key={opt}
             onClick={() => handleAnswer(opt)}
-            className="rounded-xl border-2 border-border bg-bg-card px-4 py-3.5 text-left text-sm font-medium text-text-primary transition-all active:scale-[0.97] active:border-gold sm:hover:border-gold/50 sm:py-3"
+            className="rounded-xl border-2 border-border bg-bg-card px-4 py-3.5 text-left text-sm font-medium text-text-primary transition-all active:scale-[0.97] active:border-gold sm:hover:border-gold/50 sm:py-3 cursor-pointer"
           >
             {opt}
           </button>
@@ -228,4 +221,3 @@ export function SpeedMatchGame({ allWords, languageName }: GameProps) {
     </div>
   );
 }
-

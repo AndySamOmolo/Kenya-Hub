@@ -3498,224 +3498,162 @@ export const TAITA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Taita (Kidawida) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
-          {
-            "target": "ku-rogoa, ku-lamusa",
-            "source": "Salute, to",
-            "pronunciation": "ku-rogoa ku-lamusa"
-          },
-          {
-            "target": "ku-siga",
-            "source": "Pardon / Forgive, to",
-            "pronunciation": "ku si-ga lit"
-          },
-          {
-            "target": "ku-siga [lit. to leave alone]",
-            "source": "Forgive / Remit, to [to pardon]",
-            "pronunciation": "ku-siga"
-          },
-          {
-            "target": "Wedi",
-            "source": "Peace / Goodness",
-            "pronunciation": "we-di"
-          },
-          {
-            "target": "Mwakucha / Uko wedi?",
-            "source": "Hello / How are you? (Dawida)",
-            "pronunciation": "mwakucha / uko wedi"
-          },
-          {
-            "target": "Kusesa",
-            "source": "To make peace",
-            "pronunciation": "kusesa"
-          },
-          {
-            "target": "Dunarinda itsango magondini ga Dawida",
-            "source": "We keep brass wire in Taita Hills",
-            "pronunciation": "dunarinda itsango magondini ga dawida"
-          },
-          {
-            "target": "Dunarinda nguo ya chunu magondini ga Dawida",
-            "source": "We keep loin-cloth in Taita Hills",
-            "pronunciation": "dunarinda nguo ya chunu magondini ga dawida"
-          },
-          {
-            "target": "Dunarinda nyungu magondini ga Dawida",
-            "source": "We keep cooking-pot in Taita Hills",
-            "pronunciation": "dunarinda nyungu magondini ga dawida"
-          }
+                {
+                        "target": "ku-rogoa, ku-lamusa",
+                        "source": "Salute, to",
+                        "pronunciation": "ku-rogoa ku-lamusa"
+                },
+                {
+                        "target": "ku-siga",
+                        "source": "Pardon / Forgive, to",
+                        "pronunciation": "ku si-ga lit"
+                },
+                {
+                        "target": "ku-siga [lit. to leave alone]",
+                        "source": "Forgive / Remit, to [to pardon]",
+                        "pronunciation": "ku-siga"
+                },
+                {
+                        "target": "Wedi",
+                        "source": "Peace / Goodness",
+                        "pronunciation": "we-di"
+                },
+                {
+                        "target": "Mwakucha / Uko wedi?",
+                        "source": "Hello / How are you? (Dawida)",
+                        "pronunciation": "mwakucha / uko wedi"
+                },
+                {
+                        "target": "Kusesa",
+                        "source": "To make peace",
+                        "pronunciation": "kusesa"
+                },
+                {
+                        "target": "Dunarinda itsango magondini ga Dawida",
+                        "source": "We keep brass wire in Taita Hills",
+                        "pronunciation": "dunarinda itsango magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nguo ya chunu magondini ga Dawida",
+                        "source": "We keep loin-cloth in Taita Hills",
+                        "pronunciation": "dunarinda nguo ya chunu magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nyungu magondini ga Dawida",
+                        "source": "We keep cooking-pot in Taita Hills",
+                        "pronunciation": "dunarinda nyungu magondini ga dawida"
+                }
         ],
         "sentences": [
-          {
-            "target": "Ni kuboie ku-lola kula matuku",
-            "source": "It is good to behold every day"
-          },
-          {
-            "target": "Duzaka ku-goshaose",
-            "source": "We want to borrow together"
-          },
-          {
-            "target": "Ni kuboie ku-gosha kula matuku",
-            "source": "It is good to borrow every day"
-          },
-          {
-            "target": "Duzaka ku-sagulaose",
-            "source": "We want to choose together"
-          },
-          {
-            "target": "Ni kuboie ku-sagula kula matuku",
-            "source": "It is good to choose every day"
-          },
-          {
-            "target": "Duzaka ku-umbaose",
-            "source": "We want to create together"
-          },
-          {
-            "target": "Ni kuboie ku-umba kula matuku",
-            "source": "It is good to create every day"
-          },
-          {
-            "target": "Duzaka ku-gendaose",
-            "source": "We want to depart together"
-          },
-          {
-            "target": "Ni kuboie ku-genda kula matuku",
-            "source": "It is good to depart every day"
-          },
-          {
-            "target": "Duzaka ku-shaiaose",
-            "source": "We want to desire together"
-          },
-          {
-            "target": "Ni kuboie ku-shaia kula matuku",
-            "source": "It is good to desire every day"
-          },
-          {
-            "target": "Duzaka ku-kilaose",
-            "source": "We want to escape together"
-          }
+                {
+                        "target": "Ni kuboie ku-lola kula matuku",
+                        "source": "It is good to behold every day"
+                },
+                {
+                        "target": "Duzaka ku-goshaose",
+                        "source": "We want to borrow together"
+                },
+                {
+                        "target": "Ni kuboie ku-gosha kula matuku",
+                        "source": "It is good to borrow every day"
+                },
+                {
+                        "target": "Duzaka ku-sagulaose",
+                        "source": "We want to choose together"
+                },
+                {
+                        "target": "Ni kuboie ku-sagula kula matuku",
+                        "source": "It is good to choose every day"
+                },
+                {
+                        "target": "Duzaka ku-umbaose",
+                        "source": "We want to create together"
+                },
+                {
+                        "target": "Ni kuboie ku-umba kula matuku",
+                        "source": "It is good to create every day"
+                },
+                {
+                        "target": "Duzaka ku-gendaose",
+                        "source": "We want to depart together"
+                },
+                {
+                        "target": "Ni kuboie ku-genda kula matuku",
+                        "source": "It is good to depart every day"
+                },
+                {
+                        "target": "Duzaka ku-shaiaose",
+                        "source": "We want to desire together"
+                },
+                {
+                        "target": "Ni kuboie ku-shaia kula matuku",
+                        "source": "It is good to desire every day"
+                },
+                {
+                        "target": "Duzaka ku-kilaose",
+                        "source": "We want to escape together"
+                }
         ]
-      },
+},
       {
         "id": "taita-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Taita (Kidawida) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 188",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
-          {
-            "target": "Dunarinda kitundu magondini ga Dawida",
-            "source": "We keep store-house in Taita Hills",
-            "pronunciation": "dunarinda kitundu magondini ga dawida"
-          },
-          {
-            "target": "Dunarinda nguo ya meza magondini ga Dawida",
-            "source": "We keep table-cloth in Taita Hills",
-            "pronunciation": "dunarinda nguo ya meza magondini ga dawida"
-          },
-          {
-            "target": "Dunarinda kinengele magondini ga Dawida",
-            "source": "We keep string of beads in Taita Hills",
-            "pronunciation": "dunarinda kinengele magondini ga dawida"
-          },
-          {
-            "target": "Dunarinda garo magondini ga Dawida",
-            "source": "We keep bachelor's house in Taita Hills",
-            "pronunciation": "dunarinda garo magondini ga dawida"
-          },
-          {
-            "target": "Bei ya nguli sokoni ni ingahi?",
-            "source": "What is the price of flute at the market?",
-            "pronunciation": "bei ya nguli sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya kihoro sokoni ni ingahi?",
-            "source": "What is the price of plate at the market?",
-            "pronunciation": "bei ya kihoro sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya mtego sokoni ni ingahi?",
-            "source": "What is the price of snare at the market?",
-            "pronunciation": "bei ya mtego sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya luko sokoni ni ingahi?",
-            "source": "What is the price of spoon at the market?",
-            "pronunciation": "bei ya luko sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya ndata sokoni ni ingahi?",
-            "source": "What is the price of staff at the market?",
-            "pronunciation": "bei ya ndata sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya lufu sokoni ni ingahi?",
-            "source": "What is the price of sword at the market?",
-            "pronunciation": "bei ya lufu sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya I-rawa sokoni ni ingahi?",
-            "source": "What is the price of arrow at the market?",
-            "pronunciation": "bei ya i-rawa sokoni ni ingahi"
-          },
-          {
-            "target": "Bei ya M-songgolo sokoni ni ingahi?",
-            "source": "What is the price of canoe at the market?",
-            "pronunciation": "bei ya m-songgolo sokoni ni ingahi"
-          }
+                {
+                        "target": "Dunarinda kitundu magondini ga Dawida",
+                        "source": "We keep store-house in Taita Hills",
+                        "pronunciation": "dunarinda kitundu magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda nguo ya meza magondini ga Dawida",
+                        "source": "We keep table-cloth in Taita Hills",
+                        "pronunciation": "dunarinda nguo ya meza magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda kinengele magondini ga Dawida",
+                        "source": "We keep string of beads in Taita Hills",
+                        "pronunciation": "dunarinda kinengele magondini ga dawida"
+                },
+                {
+                        "target": "Dunarinda garo magondini ga Dawida",
+                        "source": "We keep bachelor's house in Taita Hills",
+                        "pronunciation": "dunarinda garo magondini ga dawida"
+                },
+                {
+                        "target": "M-nānya, I-nānya",
+                        "source": "Eight",
+                        "pronunciation": "m-nanya i-nanya"
+                },
+                {
+                        "target": "Mī-rōnggo mī-nā",
+                        "source": "Forty",
+                        "pronunciation": "mee roh-ngoh mee nah"
+                }
         ],
         "sentences": [
-          {
-            "target": "Ni kuboie ku-kila kula matuku",
-            "source": "It is good to escape every day"
-          },
-          {
-            "target": "Duzaka ku-fungaose",
-            "source": "We want to fasten together"
-          },
-          {
-            "target": "Ni kuboie ku-funga kula matuku",
-            "source": "It is good to fasten every day"
-          },
-          {
-            "target": "Bei ya kipesa sokoni ni ingahi?",
-            "source": "What is the price of wall at the market?"
-          },
-          {
-            "target": "Bei ya Mo-ma sokoni ni ingahi?",
-            "source": "What is the price of adze at the market?"
-          },
-          {
-            "target": "Bei ya Lu-kūni sokoni ni ingahi?",
-            "source": "What is the price of wood at the market?"
-          },
-          {
-            "target": "Bei ya fulai sokoni ni ingahi?",
-            "source": "What is the price of anvil at the market?"
-          },
-          {
-            "target": "Bei ya mshuru sokoni ni ingahi?",
-            "source": "What is the price of apron at the market?"
-          },
-          {
-            "target": "Bei ya dina sokoni ni ingahi?",
-            "source": "What is the price of chain at the market?"
-          },
-          {
-            "target": "Bei ya kifumbi sokoni ni ingahi?",
-            "source": "What is the price of chair at the market?"
-          },
-          {
-            "target": "Bei ya nguli sokoni ni ingahi?",
-            "source": "What is the price of flute at the market?"
-          },
-          {
-            "target": "Bei ya kihoro sokoni ni ingahi?",
-            "source": "What is the price of plate at the market?"
-          }
+                {
+                        "target": "Ni kuboie ku-kila kula matuku",
+                        "source": "It is good to escape every day"
+                },
+                {
+                        "target": "Duzaka ku-fungaose",
+                        "source": "We want to fasten together"
+                },
+                {
+                        "target": "Ni kuboie ku-funga kula matuku",
+                        "source": "It is good to fasten every day"
+                },
+                {
+                        "target": "Dunarinda kitundu magondini ga Dawida",
+                        "source": "We keep store-house in Taita Hills"
+                }
         ]
-      }
+}
     ]
   }
 ];

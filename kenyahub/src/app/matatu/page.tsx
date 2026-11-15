@@ -5,6 +5,7 @@ import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { ArrowRight, Navigation } from "lucide-react";
 
 interface RouteItem {
   routeNumber: string;
@@ -42,6 +43,8 @@ const MATATU_HUB_FAQS = [
 
 export default function MatatuPage() {
   const [search, setSearch] = useState("");
+  const [fromStage, setFromStage] = useState("");
+  const [toStage, setToStage] = useState("");
 
   // Flatten all routes from all active towns
   const allRoutes = useMemo(() => {
@@ -49,7 +52,10 @@ export default function MatatuPage() {
     matatuData.towns
       .filter((t) => t.isActive)
       .forEach((town) => {
-        const townRoutes = (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[town.slug] || [];
+        const townRoutes =
+          (matatuData.routes as Record<string, typeof matatuData.routes.nairobi>)[
+            town.slug
+          ] || [];
         townRoutes.forEach((r) => {
           routesList.push({
             ...r,
@@ -76,16 +82,49 @@ export default function MatatuPage() {
   const searchResults = useMemo(() => {
     if (!search.trim()) return [];
     const q = search.toLowerCase();
-    return allRoutes.filter((r) =>
-      r.name.toLowerCase().includes(q) ||
-      r.routeNumber.toLowerCase().includes(q) ||
+    return allRoutes
+      .filter(
+        (r) =>
+          r.name.toLowerCase().includes(q) ||
+          r.routeNumber.toLowerCase().includes(q) ||
+          r.terminusA.toLowerCase().includes(q) ||
+          r.terminusB.toLowerCase().includes(q) ||
+          r.saccoName.toLowerCase().includes(q) ||
+          r.townName.toLowerCase().includes(q) ||
+          r.stages.some((s) => s.name.toLowerCase().includes(q))
+      )
+      .slice(0, 10);
+  }, [search, allRoutes]);
+
+  // Point-to-Point Journey Planner matching (direct corridor + CBD transfer suggestions)
+  const journeyMatches = useMemo(() => {
+    const fromQ = fromStage.trim().toLowerCase();
+    const toQ = toStage.trim().toLowerCase();
+    if (!fromQ || !toQ) return { direct: [] as RouteItem[], transfers: [] as { leg1: RouteItem; leg2: RouteItem }[] };
+
+    const matchesStage = (r: RouteItem, q: string) =>
       r.terminusA.toLowerCase().includes(q) ||
       r.terminusB.toLowerCase().includes(q) ||
-      r.saccoName.toLowerCase().includes(q) ||
-      r.townName.toLowerCase().includes(q) ||
-      r.stages.some((s) => s.name.toLowerCase().includes(q))
-    ).slice(0, 10);
-  }, [search, allRoutes]);
+      r.name.toLowerCase().includes(q) ||
+      r.stages.some((s) => s.name.toLowerCase().includes(q));
+
+    const direct = allRoutes.filter((r) => matchesStage(r, fromQ) && matchesStage(r, toQ));
+    if (direct.length > 0) return { direct: direct.slice(0, 6), transfers: [] };
+
+    const fromRoutes = allRoutes.filter((r) => matchesStage(r, fromQ));
+    const toRoutes = allRoutes.filter((r) => matchesStage(r, toQ));
+    const transfers: { leg1: RouteItem; leg2: RouteItem }[] = [];
+    for (const r1 of fromRoutes) {
+      for (const r2 of toRoutes) {
+        if (r1.townSlug === r2.townSlug && r1.slug !== r2.slug) {
+          transfers.push({ leg1: r1, leg2: r2 });
+          if (transfers.length >= 4) break;
+        }
+      }
+      if (transfers.length >= 4) break;
+    }
+    return { direct: [], transfers };
+  }, [fromStage, toStage, allRoutes]);
 
   // Featured routes mix across towns
   const featuredRoutes = useMemo(() => {
@@ -140,7 +179,7 @@ export default function MatatuPage() {
       />
 
       {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
+      <nav aria-label="Breadcrumb" data-adsense-ignore="true" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
@@ -151,14 +190,14 @@ export default function MatatuPage() {
       </nav>
 
       {/* Hero */}
-      <div className="relative mb-12 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-8 sm:p-12">
+      <div className="relative mb-10 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-6 sm:p-12">
         <DynamicIcon emoji="🚌" className="absolute top-4 right-4 w-28 h-28 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
         <div className="relative z-10">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] mb-3 gradient-text-kenya tracking-tight">
             Kenya Matatu Routes &amp; Stages
           </h1>
           <p className="text-text-secondary max-w-lg text-sm sm:text-base leading-relaxed mb-6">
-            Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, view stages on interactive Leaflet maps, check fares and SACCO details.
+            Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, plan point-to-point stage trips, and view interactive Leaflet maps.
           </p>
 
           {/* Stats */}
@@ -205,7 +244,7 @@ export default function MatatuPage() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-semibold text-text-primary break-words">Route {r.routeNumber}: {r.name}</span>
-                        <span className="text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">{r.townName}</span>
+                        <span className="micro-badge text-[0.55rem] bg-gold/15 text-gold px-1.5 py-0.5 rounded font-medium">{r.townName}</span>
                       </div>
                       <p className="text-[0.65rem] text-text-muted">{r.terminusA} → {r.terminusB} · KES {r.fareMin}–{r.fareMax}</p>
                     </div>
@@ -218,6 +257,132 @@ export default function MatatuPage() {
             )}
           </div>
         </div>
+      </div>
+
+      {/* Point-to-Point Journey Planner (From Stage -> To Destination) */}
+      <div className="mb-12 rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-6 space-y-4">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
+              <Navigation className="w-4 h-4 text-gold" /> Matatu Journey Planner (From Stage → To Destination)
+            </h2>
+            <p className="text-xs text-text-secondary mt-0.5">
+              Enter your starting stage and destination (e.g. &ldquo;Westlands&rdquo; to &ldquo;CBD&rdquo; or &ldquo;Rongai&rdquo; to &ldquo;Upper Hill&rdquo;) to find direct routes or CBD connections.
+            </p>
+          </div>
+          {(fromStage || toStage) && (
+            <button
+              type="button"
+              onClick={() => {
+                setFromStage("");
+                setToStage("");
+              }}
+              className="text-xs font-semibold text-gold hover:underline cursor-pointer"
+            >
+              Clear Trip
+            </button>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label className="block text-xs font-semibold text-text-secondary mb-1">
+              From Stage / Estate
+            </label>
+            <input
+              type="text"
+              value={fromStage}
+              onChange={(e) => setFromStage(e.target.value)}
+              placeholder="e.g. Kencom, Westlands, Ngong, Nyali..."
+              className="input-field text-sm w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-semibold text-text-secondary mb-1">
+              To Destination / Stage
+            </label>
+            <input
+              type="text"
+              value={toStage}
+              onChange={(e) => setToStage(e.target.value)}
+              placeholder="e.g. Karen,JKIA, Kondele, Juja..."
+              className="input-field text-sm w-full"
+            />
+          </div>
+        </div>
+
+        {fromStage.trim() && toStage.trim() && (
+          <div className="pt-2 space-y-3">
+            {journeyMatches.direct.length > 0 ? (
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-kenya-green-light mb-2">
+                  Direct Matatu Routes Found ({journeyMatches.direct.length})
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {journeyMatches.direct.map((r) => (
+                    <Link
+                      key={`${r.townSlug}-${r.slug}`}
+                      href={`/matatu/${r.townSlug}/${r.slug}/`}
+                      className="rounded-xl border border-kenya-green/35 bg-kenya-green/5 hover:border-gold p-3.5 flex items-center justify-between gap-3 transition-all"
+                    >
+                      <div className="min-w-0">
+                        <span className="text-xs font-bold text-gold">
+                          {r.townName} Route {r.routeNumber}: {r.name}
+                        </span>
+                        <p className="text-xs text-text-secondary mt-0.5">
+                          {r.terminusA} ↔ {r.terminusB} • {r.saccoName}
+                        </p>
+                        <p className="text-xs font-semibold text-kenya-green-light mt-1">
+                          Est. Fare: KES {r.fareMin}–{r.fareMax}
+                        </p>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-gold shrink-0" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : journeyMatches.transfers.length > 0 ? (
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-gold mb-2">
+                  Suggested 2-Leg CBD Transfer Options ({journeyMatches.transfers.length})
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {journeyMatches.transfers.map((pair, idx) => (
+                    <div
+                      key={idx}
+                      className="rounded-xl border border-border bg-bg-elevated/60 p-3.5 space-y-2 text-xs"
+                    >
+                      <div className="flex items-center justify-between text-gold font-bold">
+                        <span>{pair.leg1.townName} CBD Connection</span>
+                        <span>
+                          Combined Est. KES {pair.leg1.fareMin + pair.leg2.fareMin}–{pair.leg1.fareMax + pair.leg2.fareMax}
+                        </span>
+                      </div>
+                      <p className="text-text-primary">
+                        <strong>1. Board Route {pair.leg1.routeNumber}:</strong>{" "}
+                        <Link href={`/matatu/${pair.leg1.townSlug}/${pair.leg1.slug}/`} className="text-gold hover:underline">
+                          {pair.leg1.name}
+                        </Link>{" "}
+                        to CBD ({pair.leg1.terminusA})
+                      </p>
+                      <p className="text-text-primary">
+                        <strong>2. Connect to Route {pair.leg2.routeNumber}:</strong>{" "}
+                        <Link href={`/matatu/${pair.leg2.townSlug}/${pair.leg2.slug}/`} className="text-gold hover:underline">
+                          {pair.leg2.name}
+                        </Link>{" "}
+                        ({pair.leg2.terminusA} → {pair.leg2.terminusB})
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <p className="text-xs text-text-muted">
+                No direct or single-transfer route matched both &ldquo;{fromStage}&rdquo; and &ldquo;{toStage}&rdquo;. Try searching by corridor or estate name above.
+              </p>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Town selector */}
@@ -247,7 +412,7 @@ export default function MatatuPage() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors break-words">{route.name}</h3>
-                  <span className="text-[0.55rem] bg-bg-elevated border border-border px-1.5 py-0.5 rounded text-text-muted flex-shrink-0">{route.townName}</span>
+                  <span className="micro-badge text-[0.55rem] bg-bg-elevated border border-border px-1.5 py-0.5 rounded text-text-muted flex-shrink-0">{route.townName}</span>
                 </div>
                 <p className="text-[0.65rem] text-text-muted mt-0.5">{route.stages.length} stages · {route.saccoName}</p>
                 <div className="flex items-center gap-3 mt-1.5">

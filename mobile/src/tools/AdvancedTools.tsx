@@ -4,7 +4,5 @@
 // ============================================================
 
 export { styles } from "./advanced/shared";
-export { SolarRoiTool } from "./advanced/SolarRoiTool";
-export { WardConstituencyFinderTool } from "./advanced/WardConstituencyFinderTool";
 export { CbcCurriculumTool } from "./advanced/CbcCurriculumTool";
 export { KuccpsClusterTool } from "./advanced/KuccpsClusterTool";

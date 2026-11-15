@@ -89,7 +89,6 @@ export function WaterBillCalculator() {
           Monthly Water Consumption (Cubic Meters / m³)
         </Text>
         <TextInput
-            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
           keyboardType="numeric"

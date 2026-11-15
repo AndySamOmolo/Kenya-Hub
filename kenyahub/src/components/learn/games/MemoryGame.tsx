@@ -1,23 +1,10 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  Award,
-  Clock,
-  Delete,
-  Flame,
-  Grid3X3,
-  Hash,
-  RotateCcw,
-  Shuffle,
-  Star,
-  Timer,
-  Trophy,
-  Zap,
-} from "lucide-react";
-import type { WordPair } from "@/data/courses/types";
-import { type GameProps, shuffle, pickRandom } from "./shared";
+import { useCallback, useEffect, useState } from "react";
+import { Hash, RotateCcw, Star } from "lucide-react";
+import { getPrimaryForm } from "@/lib/learn-engine";
+import { type GameProps, shuffle } from "./shared";
 
 interface MemoryCard {
   id: number;
@@ -26,7 +13,7 @@ interface MemoryCard {
   type: "target" | "source";
 }
 
-export function MemoryGame({ allWords, languageName }: GameProps) {
+export function MemoryGame({ allWords, languageName, onAwardXp }: GameProps) {
   const PAIR_COUNT = 6;
 
   const [cards, setCards] = useState<MemoryCard[]>([]);
@@ -45,13 +32,13 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
     selected.forEach((word, idx) => {
       newCards.push({
         id: idx * 2,
-        text: word.target,
+        text: getPrimaryForm(word.target),
         pairId: idx,
         type: "target",
       });
       newCards.push({
         id: idx * 2 + 1,
-        text: word.source.replace(/\(.*?\)/g, "").trim(),
+        text: getPrimaryForm(word.source),
         pairId: idx,
         type: "source",
       });
@@ -96,7 +83,6 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
       const secondCard = cards.find((c) => c.id === cardId);
 
       if (firstCard && secondCard && firstCard.pairId === secondCard.pairId) {
-        // Match found
         const newMatched = new Set(matched);
         newMatched.add(firstFlip);
         newMatched.add(cardId);
@@ -105,6 +91,7 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
         if (newMatched.size === cards.length) {
           setGameWon(true);
           setEndTime(Date.now());
+          onAwardXp?.(25);
         }
 
         setTimeout(() => {
@@ -113,7 +100,6 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
           setFlipped(new Set());
         }, 400);
       } else {
-        // No match
         setTimeout(() => {
           setFlipped(new Set());
           setFirstFlip(null);
@@ -139,7 +125,7 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
           <DynamicIcon emoji={stars === 3 ? "🏆" : stars === 2 ? "⭐" : "👍"} className="w-14 h-14 text-gold" />
         </div>
         <h3 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
-          All Matched!
+          All Matched! (+25 XP)
         </h3>
         <div className="mt-2 flex gap-1">
           {Array.from({ length: 3 }).map((_, i) => (
@@ -165,7 +151,7 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
 
         <button
           onClick={initGame}
-          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110"
+          className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 sm:hover:brightness-110 cursor-pointer"
         >
           <RotateCcw className="h-4 w-4" /> Play Again
         </button>
@@ -175,7 +161,6 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
 
   return (
     <div>
-      {/* Moves counter */}
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-1.5">
           <Hash className="h-3.5 w-3.5 text-text-muted" />
@@ -186,7 +171,6 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
         </div>
       </div>
 
-      {/* Card grid */}
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-3">
         {cards.map((card) => {
           const isFlipped = flipped.has(card.id) || matched.has(card.id);
@@ -196,7 +180,7 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
             <button
               key={card.id}
               onClick={() => handleFlip(card.id)}
-              className={`relative flex aspect-square items-center justify-center rounded-xl border-2 px-2 pt-2 pb-4 sm:pb-5 text-center transition-all ${
+              className={`relative flex aspect-square items-center justify-center rounded-xl border-2 px-2 pt-2 pb-4 sm:pb-5 text-center transition-all cursor-pointer ${
                 isMatched
                   ? "border-kenya-green/40 bg-kenya-green/10"
                   : isFlipped
@@ -219,7 +203,6 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
               ) : (
                 <span className="text-xl sm:text-2xl opacity-30">?</span>
               )}
-              {/* Type indicator */}
               {isFlipped && (
                 <span
                   className={`absolute bottom-1 text-[0.45rem] font-semibold ${
@@ -236,5 +219,3 @@ export function MemoryGame({ allWords, languageName }: GameProps) {
     </div>
   );
 }
-
-

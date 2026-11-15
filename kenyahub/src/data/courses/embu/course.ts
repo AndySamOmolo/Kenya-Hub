@@ -2884,52 +2884,20 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                 {
-                        "target": "Ĩĩ, tũrĩ na Ivinda njega",
-                        "source": "Yes, we have good era"
+                        "target": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
+                        "source": "Hello"
                 },
                 {
-                        "target": "Ũrĩ na KI ũmũnthĩ?",
-                        "source": "Do you have in the morning today?"
+                        "target": "Nĩ wega (Nĩ wega mũno)",
+                        "source": "Thank you"
                 },
                 {
-                        "target": "Ĩĩ, tũrĩ na KI njega",
-                        "source": "Yes, we have good in the morning"
+                        "target": "Thayũ",
+                        "source": "Peace / blessing"
                 },
                 {
-                        "target": "Ũrĩ na Wĩ mwega ũmũnthĩ?",
-                        "source": "Do you have good morning today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Wĩ mwega njega",
-                        "source": "Yes, we have good good morning"
-                },
-                {
-                        "target": "Ũrĩ na UT ũmũnthĩ?",
-                        "source": "Do you have in the afternoon today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na UT njega",
-                        "source": "Yes, we have good in the afternoon"
-                },
-                {
-                        "target": "Ũrĩ na Kī-būtū ũmũnthĩ?",
-                        "source": "Do you have hoe today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Kī-būtū njega",
-                        "source": "Yes, we have good hoe"
-                },
-                {
-                        "target": "Ũrĩ na Kī-gwū ũmũnthĩ?",
-                        "source": "Do you have song today?"
-                },
-                {
-                        "target": "Ĩĩ, tũrĩ na Kī-gwū njega",
-                        "source": "Yes, we have good song"
-                },
-                {
-                        "target": "Ũrĩ na Ngai nĩ mwaro ũmũnthĩ?",
-                        "source": "Do you have god is good today?"
+                        "target": "Tigwa na wega / Tigwaa na thayũ",
+                        "source": "Goodbye, be blessed"
                 }
         ]
 },
@@ -2961,94 +2929,32 @@ export const EMBU_UNITS: CourseUnit[] = [
                         "pronunciation": "tũrĩmenyerera kiama kĩa athuri mũciĩ witũ"
                 },
                 {
-                        "target": "Thogora wa imba thoko-inĩ nĩ igana?",
-                        "source": "What is the price of swell at the market?",
-                        "pronunciation": "thogora wa imba thoko-inĩ nĩ igana"
+                        "target": "mũgeni (pl. ageni)",
+                        "source": "Guest, visitor, stranger",
+                        "pronunciation": "mugeni"
                 },
                 {
-                        "target": "Thogora wa Ndethia thoko-inĩ nĩ igana?",
-                        "source": "What is the price of help me at the market?",
-                        "pronunciation": "thogora wa ndethia thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Thibitari thoko-inĩ nĩ igana?",
-                        "source": "What is the price of hospital at the market?",
-                        "pronunciation": "thogora wa thibitari thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Muthiga thoko-inĩ nĩ igana?",
-                        "source": "What is the price of medicine at the market?",
-                        "pronunciation": "thogora wa muthiga thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Murimu thoko-inĩ nĩ igana?",
-                        "source": "What is the price of sickness at the market?",
-                        "pronunciation": "thogora wa murimu thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Mundugo thoko-inĩ nĩ igana?",
-                        "source": "What is the price of doctor at the market?",
-                        "pronunciation": "thogora wa mundugo thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Ugwati thoko-inĩ nĩ igana?",
-                        "source": "What is the price of danger at the market?",
-                        "pronunciation": "thogora wa ugwati thoko-inĩ nĩ igana"
-                },
-                {
-                        "target": "Thogora wa Thayũ thoko-inĩ nĩ igana?",
-                        "source": "What is the price of peace at the market?",
-                        "pronunciation": "thogora wa thayũ thoko-inĩ nĩ igana"
+                        "target": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
+                        "source": "Person (pl. people) (Class 1/2)",
+                        "pronunciation": "mundu"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ĩĩ, tũrĩ na Ngai nĩ mwaro njega",
-                        "source": "Yes, we have good god is good"
+                        "target": "Tũrĩmenyerera Kī-būtū mũciĩ witũ",
+                        "source": "We keep hoe at our homestead"
                 },
                 {
-                        "target": "Ũrĩ na kiama kĩa athuri ũmũnthĩ?",
-                        "source": "Do you have council of elders today?"
+                        "target": "Tũrĩmenyerera Kī-gwū mũciĩ witũ",
+                        "source": "We keep song at our homestead"
                 },
                 {
-                        "target": "Ĩĩ, tũrĩ na kiama kĩa athuri njega",
-                        "source": "Yes, we have good council of elders"
+                        "target": "Tũrĩmenyerera Ngai nĩ mwaro mũciĩ witũ",
+                        "source": "We keep god is good at our homestead"
                 },
                 {
-                        "target": "Thogora wa Thoko thoko-inĩ nĩ igana?",
-                        "source": "What is the price of market at the market?"
-                },
-                {
-                        "target": "Thogora wa Mbeca thoko-inĩ nĩ igana?",
-                        "source": "What is the price of money at the market?"
-                },
-                {
-                        "target": "Thogora wa Thogora thoko-inĩ nĩ igana?",
-                        "source": "What is the price of price at the market?"
-                },
-                {
-                        "target": "Thogora wa Nduka thoko-inĩ nĩ igana?",
-                        "source": "What is the price of shop at the market?"
-                },
-                {
-                        "target": "Thogora wa Thiiri thoko-inĩ nĩ igana?",
-                        "source": "What is the price of debt at the market?"
-                },
-                {
-                        "target": "Thogora wa mbaara thoko-inĩ nĩ igana?",
-                        "source": "What is the price of war at the market?"
-                },
-                {
-                        "target": "Thogora wa ĩtũmũ thoko-inĩ nĩ igana?",
-                        "source": "What is the price of spear at the market?"
-                },
-                {
-                        "target": "Thogora wa imba thoko-inĩ nĩ igana?",
-                        "source": "What is the price of swell at the market?"
-                },
-                {
-                        "target": "Thogora wa Ndethia thoko-inĩ nĩ igana?",
-                        "source": "What is the price of help me at the market?"
+                        "target": "Tũrĩmenyerera kiama kĩa athuri mũciĩ witũ",
+                        "source": "We keep council of elders at our homestead"
                 }
         ]
 }

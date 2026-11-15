@@ -10,7 +10,7 @@ import { PUBLISHED_COURSES } from "@/data/courses/registry";
 export const dynamic = "force-static";
 
 const BASE_URL = "https://kenyahub.me";
-const DEFAULT_VERIFIED_DATE = "2026-03-01T00:00:00.000Z";
+const DEFAULT_VERIFIED_DATE = "2026-11-15T00:00:00.000Z";
 const DATABASE_ID = "kenyahub-db";
 const BLOGS_COLLECTION_ID = "blogs";
 const EXCLUDED_SLUGS = new Set([
@@ -31,65 +31,75 @@ function isHighQualityAppwritePost(doc: any): boolean {
   return true;
 }
 
+function toIsoDate(raw?: string): string {
+  if (!raw) return DEFAULT_VERIFIED_DATE;
+  if (raw.includes("T")) return raw;
+  const parsed = new Date(`${raw}T00:00:00.000Z`);
+  return Number.isNaN(parsed.getTime()) ? DEFAULT_VERIFIED_DATE : parsed.toISOString();
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const toolSourcesMap = (toolSourcesData.tools || {}) as Record<
     string,
-    { lastVerified?: string }
+    { lastVerified?: string; lastUpdated?: string }
   >;
+  const countiesModified = toIsoDate((countiesData as any).lastUpdated || (toolSourcesData as any).lastAudit);
+  const matatuModified = toIsoDate((matatuData as any).lastUpdated || (toolSourcesData as any).lastAudit);
+  const auditModified = toIsoDate((toolSourcesData as any).lastAudit);
 
   // Core Hub & Static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/tools/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: `${BASE_URL}/county/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: countiesModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/matatu/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: matatuModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/blog/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/about/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/contact/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${BASE_URL}/privacy/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/terms/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: auditModified,
       changeFrequency: "yearly",
       priority: 0.3,
     },
@@ -99,10 +109,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const toolPages: MetadataRoute.Sitemap = TOOLS.filter(
     (tool) => tool.isLive
   ).map((tool) => {
-    const verifiedDate = toolSourcesMap[tool.slug]?.lastVerified || (toolSourcesMap[tool.slug] as any)?.lastUpdated;
-    const lastModified = verifiedDate
-      ? new Date(`${verifiedDate}T00:00:00.000Z`).toISOString()
-      : DEFAULT_VERIFIED_DATE;
+    const verifiedDate = toolSourcesMap[tool.slug]?.lastUpdated || toolSourcesMap[tool.slug]?.lastVerified;
+    const lastModified = toIsoDate(verifiedDate);
     return {
       url: `${BASE_URL}/tools/${tool.slug}/`,
       lastModified,
@@ -116,10 +124,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     };
   });
 
+  const learnModified = toIsoDate(toolSourcesMap["language-courses"]?.lastUpdated);
   const languageCoursePages: MetadataRoute.Sitemap = PUBLISHED_COURSES.map(
     ({ config }) => ({
       url: `${BASE_URL}/tools/learn/${config.id}/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: learnModified,
       changeFrequency: "monthly",
       priority: 0.8,
     })
@@ -129,7 +138,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const countyPages: MetadataRoute.Sitemap = countiesData.counties.map(
     (county) => ({
       url: `${BASE_URL}/county/${county.slug}/`,
-      lastModified: DEFAULT_VERIFIED_DATE,
+      lastModified: countiesModified,
       changeFrequency: "monthly",
       priority: 0.8,
     })
@@ -142,7 +151,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .forEach((t) => {
       matatuPages.push({
         url: `${BASE_URL}/matatu/${t.slug}/`,
-        lastModified: DEFAULT_VERIFIED_DATE,
+        lastModified: matatuModified,
         changeFrequency: "weekly",
         priority: 0.8,
       });
@@ -153,7 +162,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       townRoutes.forEach((r) => {
         matatuPages.push({
           url: `${BASE_URL}/matatu/${t.slug}/${r.slug}/`,
-          lastModified: DEFAULT_VERIFIED_DATE,
+          lastModified: matatuModified,
           changeFrequency: "monthly",
           priority: 0.75,
         });

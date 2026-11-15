@@ -3522,7 +3522,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Dholuo (Luo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), Af",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
         "words": [
                 {
                         "target": "Ingima, Omera? — Angima, Omera, to in?",
@@ -3558,81 +3558,24 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
                         "target": "Dongruok mar piny",
                         "source": "National development / Progress",
                         "pronunciation": "dohng-roo-ohk mahr peeny"
-                },
-                {
-                        "target": "Japur chweyo kata pidho Kiet e puodho",
-                        "source": "The farmer produces excrement in the field",
-                        "pronunciation": "japur chweyo kata pidho kiet e puodho"
-                },
-                {
-                        "target": "Japur chweyo kata pidho Lω e puodho",
-                        "source": "The farmer produces ground in the field",
-                        "pronunciation": "japur chweyo kata pidho l e puodho"
-                },
-                {
-                        "target": "Japur chweyo kata pidho Obω e puodho",
-                        "source": "The farmer produces lungs in the field",
-                        "pronunciation": "japur chweyo kata pidho ob e puodho"
-                },
-                {
-                        "target": "Japur chweyo kata pidho Cūl e puodho",
-                        "source": "The farmer produces penis in the field",
-                        "pronunciation": "japur chweyo kata pidho cūl e puodho"
-                },
-                {
-                        "target": "Japur chweyo kata pidho Loño e puodho",
-                        "source": "The farmer produces testicles in the field",
-                        "pronunciation": "japur chweyo kata pidho loño e puodho"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ee, wan gi Kiet mang'eny",
-                        "source": "Yes, we have plenty of excrement"
+                        "target": "Ingima, Omera? — Angima, Omera, to in?",
+                        "source": "How are you, my friend? — I am well, my friend, and you?"
                 },
                 {
-                        "target": "Bende in gi Lω kawuono?",
-                        "source": "Do you have ground today?"
+                        "target": "Inindo nade? — Anindo maber (marach).",
+                        "source": "How did you sleep? — I slept well (unwell)."
                 },
                 {
-                        "target": "Ee, wan gi Lω mang'eny",
-                        "source": "Yes, we have plenty of ground"
+                        "target": "Iriyo nade? — Ariyo maber (marach).",
+                        "source": "How have you spent the day? — I spent the day well (badly)."
                 },
                 {
-                        "target": "Bende in gi Obω kawuono?",
-                        "source": "Do you have lungs today?"
-                },
-                {
-                        "target": "Ee, wan gi Obω mang'eny",
-                        "source": "Yes, we have plenty of lungs"
-                },
-                {
-                        "target": "Bende in gi Cūl kawuono?",
-                        "source": "Do you have penis today?"
-                },
-                {
-                        "target": "Ee, wan gi Cūl mang'eny",
-                        "source": "Yes, we have plenty of penis"
-                },
-                {
-                        "target": "Bende in gi Loño kawuono?",
-                        "source": "Do you have testicles today?"
-                },
-                {
-                        "target": "Ee, wan gi Loño mang'eny",
-                        "source": "Yes, we have plenty of testicles"
-                },
-                {
-                        "target": "Bende in gi Nyaluώgono kawuono?",
-                        "source": "Do you have „ canine today?"
-                },
-                {
-                        "target": "Ee, wan gi Nyaluώgono mang'eny",
-                        "source": "Yes, we have plenty of „ canine"
-                },
-                {
-                        "target": "Bende in gi Nyapuñ lak kawuono?",
-                        "source": "Do you have „ molar today?"
+                        "target": "Misawa",
+                        "source": "Peace! Hello! Good morning/evening! (also Okwe)"
                 }
         ]
 },
@@ -3641,117 +3584,55 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Dholuo (Luo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), Af",
+        "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
         "words": [
                 {
-                        "target": "Japur chweyo kata pidho Nyaluώgono e puodho",
-                        "source": "The farmer produces „ canine in the field",
-                        "pronunciation": "japur chweyo kata pidho nyalugono e puodho"
+                        "target": "Marachiel",
+                        "source": "First",
+                        "pronunciation": "ma-rachiel"
                 },
                 {
-                        "target": "Japur chweyo kata pidho Nyapuñ lak e puodho",
-                        "source": "The farmer produces „ molar in the field",
-                        "pronunciation": "japur chweyo kata pidho nyapuñ lak e puodho"
+                        "target": "Pir' añwen",
+                        "source": "Forty",
+                        "pronunciation": "pir' angwen"
                 },
                 {
-                        "target": "Japur chweyo kata pidho Ωwωk e puodho",
-                        "source": "The farmer produces twins in the field",
-                        "pronunciation": "japur chweyo kata pidho wk e puodho"
+                        "target": "Pir abitc",
+                        "source": "Fifty",
+                        "pronunciation": "pir a-bitc"
                 },
                 {
-                        "target": "Nengo mar Dapi e chiro en adi?",
-                        "source": "What is the price of water pot at the market?",
-                        "pronunciation": "nengo mar dapi e chiro en adi"
+                        "target": "abichigario or abirio",
+                        "source": "Seven",
+                        "pronunciation": "a-bich-i-ga-rio or a-bi-rio"
                 },
                 {
-                        "target": "Nengo mar odi e chiro en adi?",
-                        "source": "What is the price of thy house at the market?",
-                        "pronunciation": "nengo mar odi e chiro en adi"
+                        "target": "abichi gadek or aboru",
+                        "source": "Eight",
+                        "pronunciation": "a-bich-i ga-dek or a-bo-ru"
                 },
                 {
-                        "target": "Nengo mar ode e chiro en adi?",
-                        "source": "What is the price of his house at the market?",
-                        "pronunciation": "nengo mar ode e chiro en adi"
-                },
-                {
-                        "target": "Nengo mar Yo e chiro en adi?",
-                        "source": "What is the price of road at the market?",
-                        "pronunciation": "nengo mar yo e chiro en adi"
-                },
-                {
-                        "target": "Nengo mar Gogo e chiro en adi?",
-                        "source": "What is the price of fishing net at the market?",
-                        "pronunciation": "nengo mar gogo e chiro en adi"
-                },
-                {
-                        "target": "Nengo mar Agulu e chiro en adi?",
-                        "source": "What is the price of cooking pot at the market?",
-                        "pronunciation": "nengo mar agulu e chiro en adi"
-                },
-                {
-                        "target": "Nengo mar Bug theth e chiro en adi?",
-                        "source": "What is the price of the bellows at the market?",
-                        "pronunciation": "nengo mar bug theth e chiro en adi"
-                },
-                {
-                        "target": "Nengo mar Puodhono e chiro en adi?",
-                        "source": "What is the price of that garden at the market?",
-                        "pronunciation": "nengo mar puodhono e chiro en adi"
-                },
-                {
-                        "target": "Rit Kiet maber ne ngima",
-                        "source": "Take care of excrement for good health",
-                        "pronunciation": "rit kiet maber ne ngima"
+                        "target": "Aberēo",
+                        "source": "Seven",
+                        "pronunciation": "a-be-re-ho"
                 }
         ],
         "sentences": [
                 {
-                        "target": "Ee, wan gi Nyapuñ lak mang'eny",
-                        "source": "Yes, we have plenty of „ molar"
+                        "target": "Marachiel",
+                        "source": "First"
                 },
                 {
-                        "target": "Bende in gi Ωwωk kawuono?",
-                        "source": "Do you have twins today?"
+                        "target": "Pir' añwen",
+                        "source": "Forty"
                 },
                 {
-                        "target": "Ee, wan gi Ωwωk mang'eny",
-                        "source": "Yes, we have plenty of twins"
+                        "target": "Pir abitc",
+                        "source": "Fifty"
                 },
                 {
-                        "target": "Nengo mar Buk e chiro en adi?",
-                        "source": "What is the price of bellows at the market?"
-                },
-                {
-                        "target": "Nengo mar Pacho e chiro en adi?",
-                        "source": "What is the price of at home at the market?"
-                },
-                {
-                        "target": "Nengo mar Aluor e chiro en adi?",
-                        "source": "What is the price of a fence at the market?"
-                },
-                {
-                        "target": "Nengo mar Tong'gweng' e chiro en adi?",
-                        "source": "What is the price of boundary at the market?"
-                },
-                {
-                        "target": "Nengo mar Koma e chiro en adi?",
-                        "source": "What is the price of my chair at the market?"
-                },
-                {
-                        "target": "Nengo mar Athecha e chiro en adi?",
-                        "source": "What is the price of my arrow at the market?"
-                },
-                {
-                        "target": "Nengo mar oda e chiro en adi?",
-                        "source": "What is the price of my house at the market?"
-                },
-                {
-                        "target": "Nengo mar Dapi e chiro en adi?",
-                        "source": "What is the price of water pot at the market?"
-                },
-                {
-                        "target": "Nengo mar odi e chiro en adi?",
-                        "source": "What is the price of thy house at the market?"
+                        "target": "abichigario or abirio",
+                        "source": "Seven"
                 }
         ]
 }

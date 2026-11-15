@@ -5,38 +5,145 @@ import type { GrammarSection } from "@/data/courses/types";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 
 /**
- * Renders a content string line-by-line, applying inline markdown styling.
+ * Renders grammar section content supporting headings, bulleted/numbered lists,
+ * blockquotes, and Markdown pipe tables.
  */
 function RenderedContent({ content }: { content: string }) {
-  const lines = useMemo(() => content.split("\n"), [content]);
+  const blocks = useMemo(() => {
+    const lines = content.replace(/\r\n/g, "\n").split("\n");
+    const result: React.ReactNode[] = [];
+    let i = 0;
 
-  return (
-    <>
-      {lines.map((line, i) => {
-        if (line.trim() === "") {
-          return <br key={i} />;
+    while (i < lines.length) {
+      const rawLine = lines[i];
+      const trimmed = rawLine.trim();
+
+      if (!trimmed) {
+        result.push(<div key={`sp-${i}`} className="h-2" />);
+        i++;
+        continue;
+      }
+
+      if (trimmed.startsWith("### ")) {
+        result.push(
+          <h4
+            key={`h3-${i}`}
+            className="mt-4 mb-1.5 font-[family-name:var(--font-outfit)] text-base font-bold text-gold"
+          >
+            {renderInlineMarkdown(trimmed.slice(4))}
+          </h4>
+        );
+        i++;
+        continue;
+      }
+
+      if (trimmed.startsWith("## ")) {
+        result.push(
+          <h3
+            key={`h2-${i}`}
+            className="mt-5 mb-2 font-[family-name:var(--font-outfit)] text-lg font-bold text-gold"
+          >
+            {renderInlineMarkdown(trimmed.slice(3))}
+          </h3>
+        );
+        i++;
+        continue;
+      }
+
+      if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+        const tableRows: string[][] = [];
+        while (i < lines.length && lines[i].trim().startsWith("|")) {
+          const rowStr = lines[i].trim();
+          if (!/^\|[\s\-:|]+\|$/.test(rowStr)) {
+            const cells = rowStr
+              .slice(1, -1)
+              .split("|")
+              .map((c) => c.trim());
+            tableRows.push(cells);
+          }
+          i++;
         }
-
-        // Detect bullet points
-        const isBullet = /^\s*[-•]\s/.test(line);
-        if (isBullet) {
-          const bulletText = line.replace(/^\s*[-•]\s*/, "");
-          return (
-            <div key={i} className="flex gap-2 pl-2 py-0.5">
-              <span className="text-gold shrink-0 mt-0.5">•</span>
-              <span className="min-w-0 flex-1 break-words">{renderInlineMarkdown(bulletText)}</span>
+        if (tableRows.length > 0) {
+          result.push(
+            <div
+              key={`tbl-${i}`}
+              className="my-3 overflow-x-auto rounded-xl border border-border"
+            >
+              <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr className="bg-bg-elevated border-b border-border text-gold font-semibold">
+                    {tableRows[0].map((cell, cIdx) => (
+                      <th key={`th-${cIdx}`} className="px-3 py-2">
+                        {renderInlineMarkdown(cell)}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {tableRows.slice(1).map((row, rIdx) => (
+                    <tr
+                      key={`tr-${rIdx}`}
+                      className="border-b border-border/60 last:border-0 odd:bg-bg-card even:bg-bg-elevated/30"
+                    >
+                      {row.map((cell, cIdx) => (
+                        <td key={`td-${cIdx}`} className="px-3 py-2 text-text-secondary">
+                          {renderInlineMarkdown(cell)}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           );
         }
+        continue;
+      }
 
-        return (
-          <p key={i} className="mb-1 leading-relaxed">
-            {renderInlineMarkdown(line)}
-          </p>
+      if (trimmed.startsWith(">")) {
+        result.push(
+          <blockquote
+            key={`bq-${i}`}
+            className="my-2 border-l-2 border-gold bg-gold/5 px-3.5 py-2 rounded-r-lg italic text-text-primary"
+          >
+            {renderInlineMarkdown(trimmed.replace(/^>\s*/, ""))}
+          </blockquote>
         );
-      })}
-    </>
-  );
+        i++;
+        continue;
+      }
+
+      const bulletMatch = rawLine.match(/^(\s*)([-•*]|\d+\.)\s+(.*)$/);
+      if (bulletMatch) {
+        const isSub = bulletMatch[1].length >= 2;
+        const marker = /^\d+\./.test(bulletMatch[2]) ? bulletMatch[2] : isSub ? "◦" : "•";
+        result.push(
+          <div
+            key={`li-${i}`}
+            className={`flex gap-2 py-0.5 ${isSub ? "pl-6" : "pl-2"}`}
+          >
+            <span className="text-gold font-semibold shrink-0 mt-0.5">{marker}</span>
+            <span className="min-w-0 flex-1 break-words">
+              {renderInlineMarkdown(bulletMatch[3])}
+            </span>
+          </div>
+        );
+        i++;
+        continue;
+      }
+
+      result.push(
+        <p key={`p-${i}`} className="mb-1.5 leading-relaxed">
+          {renderInlineMarkdown(rawLine)}
+        </p>
+      );
+      i++;
+    }
+
+    return result;
+  }, [content]);
+
+  return <>{blocks}</>;
 }
 
 export default function GrammarView({
@@ -78,7 +185,6 @@ export default function GrammarView({
               </h3>
               <div className="space-y-3">
                 {section.examples.map((ex, idx) => {
-                  // Find the target language key (anything that isn't english or explanation)
                   const targetKey = Object.keys(ex).find(
                     (k) => k !== "english" && k !== "explanation"
                   );

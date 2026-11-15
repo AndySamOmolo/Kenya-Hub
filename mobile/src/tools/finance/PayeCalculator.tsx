@@ -1,9 +1,15 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { useDynamicStyles } from "../../theme";
-import { KESInput, StatCard, Row, createStyles } from "./shared";
+import { Text, View, Pressable } from "react-native";
+import { useDynamicStyles, pressableStyle, triggerHaptic } from "../../theme";
+import {
+  KESInput,
+  StatCard,
+  Row,
+  BreakdownBar,
+  ShareCopyBar,
+  createStyles,
+} from "./shared";
 import payeData from "../../shared/data/paye-bands.json";
 
 /** 1. PAYE Calculator (mirrors kenyahub/src/app/tools/paye-calculator/page.tsx) */
@@ -17,29 +23,57 @@ export function PayeCalculator() {
   const [showReliefs, setShowReliefs] = useState(false);
   const [showAnnual, setShowAnnual] = useState(false);
   const inputAmount = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
-  const pension = Math.min(30000, Math.max(0, Number(pensionText.replace(/,/g, "")) || 0));
-  const mortgage = Math.min(30000, Math.max(0, Number(mortgageText.replace(/,/g, "")) || 0));
-  const insurancePrem = Math.max(0, Number(insuranceText.replace(/,/g, "")) || 0);
+  const pension = Math.min(
+    30000,
+    Math.max(0, Number(pensionText.replace(/,/g, "")) || 0)
+  );
+  const mortgage = Math.min(
+    30000,
+    Math.max(0, Number(mortgageText.replace(/,/g, "")) || 0)
+  );
+  const insurancePrem = Math.max(
+    0,
+    Number(insuranceText.replace(/,/g, "")) || 0
+  );
   const insuranceRelief = Math.min(5000, Math.round(insurancePrem * 0.15));
 
   const computeFromGross = (g: number) => {
-    const t1 = Math.min(g, payeData.nssf.tier1Limit || 9000) * ((payeData.nssf.rate || 6) / 100);
-    const t2 = Math.max(0, Math.min(g, payeData.nssf.tier2Limit || 108000) - (payeData.nssf.tier1Limit || 9000)) * ((payeData.nssf.rate || 6) / 100);
+    const t1 =
+      Math.min(g, payeData.nssf.tier1Limit || 9000) *
+      ((payeData.nssf.rate || 6) / 100);
+    const t2 =
+      Math.max(
+        0,
+        Math.min(g, payeData.nssf.tier2Limit || 108000) -
+          (payeData.nssf.tier1Limit || 9000)
+      ) *
+      ((payeData.nssf.rate || 6) / 100);
     const nssf = Math.round((t1 + t2) * 100) / 100;
-    const hLevy = Math.round(g * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) / 100;
-    const shaVal = g > 0 ? Math.max(300, Math.round(g * ((payeData.sha.rate || 2.75) / 100) * 100) / 100) : 0;
-    const taxInc = Math.max(0, g - nssf - shaVal - hLevy - pension - mortgage);
+    const hLevy =
+      Math.round(
+        g * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100
+      ) / 100;
+    const shaVal =
+      g > 0
+        ? Math.max(
+            300,
+            Math.round(g * ((payeData.sha.rate || 2.75) / 100) * 100) / 100
+          )
+        : 0;
+    const allowablePension = Math.max(0, Math.min(30000 - nssf, pension));
+    const taxInc = Math.max(0, g - nssf - shaVal - hLevy - allowablePension - mortgage);
     let gTax = 0;
     for (const band of payeData.payeBands) {
       const upper = band.max ?? Infinity;
       if (taxInc > band.min) {
-        const inBand = Math.min(taxInc, upper) - (band.min > 0 ? band.min - 1 : 0);
+        const inBand =
+          Math.min(taxInc, upper) - (band.min > 0 ? band.min - 1 : 0);
         if (inBand > 0) gTax += inBand * (band.rate / 100);
       }
     }
     const pRelief = payeData.personalRelief || 2400;
     const nPaye = Math.max(0, gTax - pRelief - insuranceRelief);
-    const totDed = nPaye + shaVal + hLevy + nssf;
+    const totDed = nPaye + shaVal + hLevy + nssf + pension;
     return g - totDed;
   };
 
@@ -66,8 +100,9 @@ export function PayeCalculator() {
     const totalNssf = Math.round((nssfTier1 + nssfTier2) * 100) / 100;
 
     const housingLevy =
-      Math.round(gross * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100) /
-      100;
+      Math.round(
+        gross * ((payeData.housingLevy.employeeRate || 1.5) / 100) * 100
+      ) / 100;
 
     const sha =
       gross > 0
@@ -77,7 +112,11 @@ export function PayeCalculator() {
           )
         : 0;
 
-    const taxableIncome = Math.max(0, gross - totalNssf - sha - housingLevy - pension - mortgage);
+    const allowablePension = Math.max(0, Math.min(30000 - totalNssf, pension));
+    const taxableIncome = Math.max(
+      0,
+      gross - totalNssf - sha - housingLevy - allowablePension - mortgage
+    );
 
     let grossTax = 0;
     for (const band of payeData.payeBands) {
@@ -93,7 +132,7 @@ export function PayeCalculator() {
 
     const personalRelief = payeData.personalRelief || 2400;
     const netPaye = Math.max(0, grossTax - personalRelief - insuranceRelief);
-    const totalDeductions = netPaye + sha + housingLevy + totalNssf;
+    const totalDeductions = netPaye + sha + housingLevy + totalNssf + pension;
     const netSalary = Math.max(0, gross - totalDeductions);
     const effectiveTaxRate =
       gross > 0 ? Math.round((netPaye / gross) * 10000) / 100 : 0;
@@ -122,6 +161,21 @@ export function PayeCalculator() {
     };
   }, [salary, showAnnual, pension, mortgage, insuranceRelief]);
 
+  const shareSummary = useMemo(
+    () =>
+      [
+        `Period: ${showAnnual ? "Annual (12 Months)" : "Monthly"}`,
+        `Gross Salary: KES ${Math.round(calc.gross).toLocaleString()}`,
+        `Net Take-Home Pay: KES ${Math.round(calc.netSalary).toLocaleString()}`,
+        `PAYE (Income Tax): KES ${Math.round(calc.netPaye).toLocaleString()} (${calc.effectiveTaxRate}%)`,
+        `SHA / SHIF (2.75%): KES ${Math.round(calc.sha).toLocaleString()}`,
+        `NSSF (Tier I & II): KES ${Math.round(calc.totalNssf).toLocaleString()}`,
+        `Housing Levy (1.5%): KES ${Math.round(calc.housingLevy).toLocaleString()}`,
+        `Total Deductions: KES ${Math.round(calc.totalDeductions).toLocaleString()}`,
+      ].join("\n"),
+    [calc, showAnnual]
+  );
+
   return (
     <View style={styles.toolWrap}>
       {/* Monthly / Annual Toggle */}
@@ -137,7 +191,10 @@ export function PayeCalculator() {
         }}
       >
         <Pressable
-          onPress={() => setShowAnnual(false)}
+          onPress={() => {
+            triggerHaptic(8);
+            setShowAnnual(false);
+          }}
           style={{
             paddingHorizontal: 14,
             paddingVertical: 6,
@@ -148,7 +205,7 @@ export function PayeCalculator() {
           <Text
             style={{
               fontSize: 12,
-              fontWeight: "800",
+              fontFamily: "Outfit_800ExtraBold",
               color: !showAnnual ? theme.kenyaBlack : theme.textSecondary,
             }}
           >
@@ -156,7 +213,10 @@ export function PayeCalculator() {
           </Text>
         </Pressable>
         <Pressable
-          onPress={() => setShowAnnual(true)}
+          onPress={() => {
+            triggerHaptic(8);
+            setShowAnnual(true);
+          }}
           style={{
             paddingHorizontal: 14,
             paddingVertical: 6,
@@ -167,7 +227,7 @@ export function PayeCalculator() {
           <Text
             style={{
               fontSize: 12,
-              fontWeight: "800",
+              fontFamily: "Outfit_800ExtraBold",
               color: showAnnual ? theme.kenyaBlack : theme.textSecondary,
             }}
           >
@@ -178,73 +238,152 @@ export function PayeCalculator() {
 
       <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
         <Pressable
-          onPress={() => setMode("grossToNet")}
-          style={[styles.pillBtn, mode === "grossToNet" && styles.pillBtnActive]}
+          onPress={() => {
+            triggerHaptic(8);
+            setMode("grossToNet");
+          }}
+          style={pressableStyle([
+            styles.pillBtn,
+            mode === "grossToNet" && styles.pillBtnActive,
+          ])}
         >
-          <Text style={[styles.pillBtnText, mode === "grossToNet" && styles.pillBtnTextActive]}>
+          <Text
+            style={[
+              styles.pillBtnText,
+              mode === "grossToNet" && styles.pillBtnTextActive,
+            ]}
+          >
             Gross → Net Pay
           </Text>
         </Pressable>
         <Pressable
-          onPress={() => setMode("netToGross")}
-          style={[styles.pillBtn, mode === "netToGross" && styles.pillBtnActive]}
+          onPress={() => {
+            triggerHaptic(8);
+            setMode("netToGross");
+          }}
+          style={pressableStyle([
+            styles.pillBtn,
+            mode === "netToGross" && styles.pillBtnActive,
+          ])}
         >
-          <Text style={[styles.pillBtnText, mode === "netToGross" && styles.pillBtnTextActive]}>
+          <Text
+            style={[
+              styles.pillBtnText,
+              mode === "netToGross" && styles.pillBtnTextActive,
+            ]}
+          >
             Target Net → Gross (Reverse)
           </Text>
         </Pressable>
       </ExpandablePillRow>
 
       <KESInput
-        label={mode === "grossToNet" ? "Monthly Gross Salary (KES)" : "Target Monthly Take-Home Net Pay (KES)"}
+        label={
+          mode === "grossToNet"
+            ? "Monthly Gross Salary (KES)"
+            : "Target Monthly Take-Home Net Pay (KES)"
+        }
         value={salaryText}
         onChangeText={setSalaryText}
+        presets={[
+          { label: "KES 30K", value: "30000" },
+          { label: "KES 50K", value: "50000" },
+          { label: "KES 80K", value: "80000" },
+          { label: "KES 100K", value: "100000" },
+          { label: "KES 200K", value: "200000" },
+          { label: "KES 500K", value: "500000" },
+        ]}
       />
 
       <Pressable
-        onPress={() => setShowReliefs((v) => !v)}
+        onPress={() => {
+          triggerHaptic(8);
+          setShowReliefs((v) => !v);
+        }}
         style={{ alignSelf: "flex-start", marginBottom: 4 }}
       >
-        <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
-          {showReliefs ? "− Hide Tax Reliefs (Pension, Mortgage & Insurance)" : "+ Add Tax-Deductible Pension, Mortgage or Insurance"}
+        <Text
+          style={{
+            fontSize: 12,
+            fontFamily: "Outfit_800ExtraBold",
+            color: theme.gold,
+          }}
+        >
+          {showReliefs
+            ? "− Hide Tax Reliefs (Pension, Mortgage & Insurance)"
+            : "+ Add Tax-Deductible Pension, Mortgage or Insurance"}
         </Text>
       </Pressable>
       {showReliefs && (
         <View style={{ gap: 8 }}>
-          <KESInput label="Pension Contribution (Max KES 30k/mo deductible)" value={pensionText} onChangeText={setPensionText} />
-          <KESInput label="Mortgage Interest (Max KES 30k/mo deductible)" value={mortgageText} onChangeText={setMortgageText} />
-          <KESInput label="Life/Education/Health Insurance Premium (15% relief)" value={insuranceText} onChangeText={setInsuranceText} />
+          <KESInput
+            label="Pension Contribution (Max KES 30k/mo deductible)"
+            value={pensionText}
+            onChangeText={setPensionText}
+            presets={[
+              { label: "KES 5K", value: "5000" },
+              { label: "KES 10K", value: "10000" },
+              { label: "KES 20K", value: "20000" },
+              { label: "KES 30K", value: "30000" },
+            ]}
+          />
+          <KESInput
+            label="Mortgage Interest (Max KES 30k/mo deductible)"
+            value={mortgageText}
+            onChangeText={setMortgageText}
+            presets={[
+              { label: "KES 10K", value: "10000" },
+              { label: "KES 20K", value: "20000" },
+              { label: "KES 30K", value: "30000" },
+            ]}
+          />
+          <KESInput
+            label="Life/Education/Health Insurance Premium (15% relief)"
+            value={insuranceText}
+            onChangeText={setInsuranceText}
+            presets={[
+              { label: "KES 5K", value: "5000" },
+              { label: "KES 15K", value: "15000" },
+              { label: "KES 33.3K", value: "33334" },
+            ]}
+          />
         </View>
       )}
-
-      {/* Quick Salary Presets */}
-      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
-        {[30000, 50000, 80000, 100000, 200000, 500000].map((amt) => (
-          <Pressable
-            key={amt}
-            onPress={() => setSalaryText(String(amt))}
-            style={[
-              styles.pillBtn,
-              salary === amt && styles.pillBtnActive,
-            ]}
-          >
-            <Text
-              style={[
-                styles.pillBtnText,
-                salary === amt && styles.pillBtnTextActive,
-              ]}
-            >
-              {amt >= 1000 ? `KES ${amt / 1000}K` : amt}
-            </Text>
-          </Pressable>
-        ))}
-      </ExpandablePillRow>
 
       <StatCard
         label={`NET TAKE-HOME PAY (${showAnnual ? "ANNUAL" : "MONTHLY"})`}
         value={`KES ${Math.round(calc.netSalary).toLocaleString()}`}
         highlight
         subtext={`Effective PAYE rate: ${calc.effectiveTaxRate}% · Total deductions: KES ${Math.round(calc.totalDeductions).toLocaleString()}`}
+      />
+
+      {/* Visual Salary Proportion Bar (UX-11) */}
+      <BreakdownBar
+        title="Salary Distribution (Take-Home vs Statutory Deductions)"
+        segments={[
+          {
+            label: "Net Pay",
+            value: Math.round(calc.netSalary),
+            color: theme.kenyaGreenLight,
+          },
+          {
+            label: "PAYE Tax",
+            value: Math.round(calc.netPaye),
+            color: theme.kenyaRedLight,
+          },
+          {
+            label: "SHA + NSSF + AHL",
+            value: Math.round(calc.sha + calc.totalNssf + calc.housingLevy),
+            color: theme.gold,
+          },
+        ]}
+      />
+
+      {/* 1-Tap Share Payslip Breakdown (MOB-12, UX-11) */}
+      <ShareCopyBar
+        title="Kenya 2026 PAYE Payslip Breakdown"
+        summaryText={shareSummary}
+        shareLabel="Share Payslip Breakdown"
       />
 
       <Text style={styles.subHeading}>Deductions Breakdown</Text>
@@ -312,7 +451,7 @@ export function PayeCalculator() {
         />
       </View>
 
-      {/* PAYE Tax Bands Reference Table (mirrors web paye-calculator/page.tsx) */}
+      {/* PAYE Tax Bands Reference Table */}
       <Text style={styles.subHeading}>
         PAYE Tax Bands — FY {payeData.fiscalYear}
       </Text>
@@ -344,4 +483,3 @@ export function PayeCalculator() {
     </View>
   );
 }
-

@@ -10,6 +10,8 @@ import {
   TextInput,
   Platform,
   Modal,
+  BackHandler,
+  KeyboardAvoidingView,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -20,11 +22,12 @@ import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
+import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
 import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
-import { generateExercises, checkAnswer } from '../shared/lib/learn-engine';
+import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
   getXpLevel,
@@ -57,20 +60,29 @@ import {
 } from "./language-course/types";
 import { styles } from "./language-course/styles";
 
+export interface CourseNavigationState {
+  inCourse: boolean;
+  courseName: string;
+  backToMenu: () => void;
+}
+
 export function LanguageLearningTool({
   onScrollToTop,
   initialLanguageId,
   initialTab,
+  onNavigationStateChange,
 }: {
   onScrollToTop?: () => void;
   initialLanguageId?: string;
   initialTab?: MainTab;
-}) {
+  onNavigationStateChange?: (state: CourseNavigationState) => void;
+} = {}) {
   return (
     <LanguageCourseTool
       onScrollToTop={onScrollToTop}
       initialLanguageId={initialLanguageId}
       initialTab={initialTab}
+      onNavigationStateChange={onNavigationStateChange}
     />
   );
 }
@@ -79,10 +91,12 @@ export default function LanguageCourseTool({
   onScrollToTop,
   initialLanguageId,
   initialTab,
+  onNavigationStateChange,
 }: {
   onScrollToTop?: () => void;
   initialLanguageId?: string;
   initialTab?: MainTab;
+  onNavigationStateChange?: (state: CourseNavigationState) => void;
 } = {}) {
   const { colors, isDark } = useTheme();
   const ripple = useMemo(() => androidRipple(colors.rippleColor), [colors.rippleColor]);
@@ -117,7 +131,6 @@ export default function LanguageCourseTool({
 
   // ── Progress Store (All Languages) ──
   const [allProgress, setAllProgress] = useState<Record<string, LanguageProgress>>({});
-  const [heartTick, setHeartTick] = useState(0);
 
   // Load & migrate progress from AsyncStorage
   useEffect(() => {
@@ -158,14 +171,6 @@ export default function LanguageCourseTool({
     })();
   }, []);
 
-  // Periodic heart refill check every 15s
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setHeartTick((t) => t + 1);
-    }, 15000);
-    return () => clearInterval(timer);
-  }, []);
-
   const currentCourse = useMemo(
     () => getCourse(selectedLangId) || PUBLISHED_COURSES[0],
     [selectedLangId]
@@ -198,7 +203,7 @@ export default function LanguageCourseTool({
       hearts,
       heartsLastRefill,
     };
-  }, [allProgress, selectedLangId, heartTick]);
+  }, [allProgress, selectedLangId]);
 
   const saveLanguageProgress = useCallback(
     async (updater: (prev: LanguageProgress) => LanguageProgress) => {
@@ -492,10 +497,7 @@ export default function LanguageCourseTool({
       userAns = typedAnswer.trim();
     }
 
-    const isRight = checkAnswer(ex, userAns);
-    const exactMatch =
-      userAns.trim().toLowerCase() === ex.correctAnswer.trim().toLowerCase();
-    const result = { correct: isRight, almostCorrect: isRight && !exactMatch };
+    const result = checkAnswerWithFeedback(ex, userAns);
     setIsSubmitted(true);
     setIsCorrect(result.correct);
     setAlmostCorrect(result.almostCorrect);
@@ -659,14 +661,16 @@ export default function LanguageCourseTool({
   }, [allSkills]);
 
   const startScrambleRound = useCallback(() => {
-    const eligible = allCourseWords.filter((w) => {
-      const clean = w.target.replace(/[^a-zA-Z']/g, '');
-      return clean.length >= 3 && clean.length <= 10 && !w.target.includes(' ');
-    });
-    const pool = eligible.length > 0 ? eligible : allCourseWords;
-    if (pool.length === 0) return;
-    const chosen = pool[Math.floor(Math.random() * pool.length)];
-    const chars = chosen.target.trim().split('');
+    const eligible = allCourseWords
+      .map((w) => ({
+        ...w,
+        target: getPrimaryForm(w.target).trim().split(/\s+/)[0].replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, ""),
+        source: getPrimaryForm(w.source),
+      }))
+      .filter((w) => w.target.length >= 3 && w.target.length <= 10);
+    if (eligible.length === 0) return;
+    const chosen = eligible[Math.floor(Math.random() * eligible.length)];
+    const chars = chosen.target.split("");
     for (let i = chars.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [chars[i], chars[j]] = [chars[j], chars[i]];
@@ -701,8 +705,8 @@ export default function LanguageCourseTool({
       matched: boolean;
     }[] = [];
     sample.forEach((w, idx) => {
-      deck.push({ id: `t-${idx}`, text: w.target, pairId: idx, type: 'target', matched: false });
-      deck.push({ id: `s-${idx}`, text: w.source, pairId: idx, type: 'source', matched: false });
+      deck.push({ id: `t-${idx}`, text: getPrimaryForm(w.target), pairId: idx, type: "target", matched: false });
+      deck.push({ id: `s-${idx}`, text: getPrimaryForm(w.source), pairId: idx, type: "source", matched: false });
     });
     deck.sort(() => Math.random() - 0.5);
     setMemoryCards(deck);
@@ -826,6 +830,43 @@ export default function LanguageCourseTool({
   // ============================================================================
   // ACTIVE LESSON PLAYER VIEW (FULL-SCREEN MATERIAL 3 MODAL EXPERIENCE)
   // ============================================================================
+  const handleStepBack = useCallback(() => {
+    if (activeGame !== 'menu') {
+      setActiveGame('menu');
+      return true;
+    }
+    if (activeTab !== 'learn') {
+      setActiveTab('learn');
+      return true;
+    }
+    if (!showLanguageMenu && !initialLanguageId) {
+      setShowLanguageMenu(true);
+      onScrollToTop?.();
+      return true;
+    }
+    return false;
+  }, [activeGame, activeTab, showLanguageMenu, initialLanguageId, onScrollToTop]);
+
+  useEffect(() => {
+    const sub = BackHandler.addEventListener('hardwareBackPress', handleStepBack);
+    return () => sub.remove();
+  }, [handleStepBack]);
+
+  useEffect(() => {
+    onNavigationStateChange?.({
+      inCourse: !showLanguageMenu,
+      courseName: currentCourse?.config.name || 'Kenyan Languages',
+      backToMenu: () => {
+        if (activeGame !== 'menu') {
+          setActiveGame('menu');
+        } else {
+          setShowLanguageMenu(true);
+          onScrollToTop?.();
+        }
+      },
+    });
+  }, [showLanguageMenu, currentCourse, activeGame, onNavigationStateChange, onScrollToTop]);
+
   if (lessonStage !== 'idle' && activeSkill) {
     const currentEx = exercises[exIndex];
     const progressRatio =
@@ -843,6 +884,10 @@ export default function LanguageCourseTool({
       >
         <SafeAreaView style={{ flex: 1, backgroundColor: colors.bgPrimary }} edges={['top', 'left', 'right', 'bottom']}>
           <KenyaStripe />
+          <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            style={{ flex: 1 }}
+          >
           <ScrollView
             ref={lessonScrollRef}
             contentContainerStyle={{ padding: 14, paddingBottom: 36 }}
@@ -1007,7 +1052,30 @@ export default function LanguageCourseTool({
             ) : null}
 
             {/* Navigation Row */}
-            <View style={styles.learnNavRow}>
+            <View style={{ flexDirection: "row", gap: 10, marginTop: 10 }}>
+                <Pressable
+                  android_ripple={ripple}
+                  onPress={() => {
+                    setIsCardFlipped(false);
+                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                  }}
+                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: "center", borderColor: "#F59E0B" }]}
+                >
+                  <Text style={[styles.m3OutlinedBtnText, { color: "#F59E0B" }]}>Still Learning ↻</Text>
+                </Pressable>
+                <Pressable
+                  android_ripple={ripple}
+                  onPress={() => {
+                    awardGameXP(2);
+                    setIsCardFlipped(false);
+                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                  }}
+                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: "center", borderColor: "#10B981" }]}
+                >
+                  <Text style={[styles.m3OutlinedBtnText, { color: "#10B981" }]}>Got It (+2 XP) ✓</Text>
+                </Pressable>
+              </View>
+              <View style={styles.learnNavRow}>
               <Pressable
                 android_ripple={ripple}
                 disabled={learnCardIdx === 0}
@@ -1304,11 +1372,32 @@ export default function LanguageCourseTool({
             )}
 
             {/* 4. Free-Text Translation (translate_to_english / translate_to_target) */}
-            {(currentEx.type === 'translate_to_english' ||
-              currentEx.type === 'translate_to_target') && (
+            {(currentEx.type === "translate_to_english" ||
+              currentEx.type === "translate_to_target") && (
               <View style={{ gap: 10 }}>
+                {!isSubmitted && (
+                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                    {KENYAN_SPECIAL_CHARS.map((ch) => (
+                      <Pressable
+                        key={ch}
+                        onPress={() => setTypedAnswer((prev) => prev + ch)}
+                        style={{
+                          paddingHorizontal: 9,
+                          paddingVertical: 5,
+                          borderRadius: 8,
+                          borderWidth: 1,
+                          borderColor: colors.outlineVariant,
+                          backgroundColor: colors.surface,
+                        }}
+                      >
+                        <Text style={{ fontSize: 12, fontWeight: "800", color: langColor }}>
+                          {ch}
+                        </Text>
+                      </Pressable>
+                    ))}
+                  </View>
+                )}
                 <TextInput
-            key={`ti-1-${colors.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
                   value={typedAnswer}
@@ -1320,6 +1409,12 @@ export default function LanguageCourseTool({
                       : 'Type in English...'
                   }
                   placeholderTextColor={colors.textMuted}
+                  returnKeyType="done"
+                  onSubmitEditing={() => {
+                    if (!isSubmitted && typedAnswer.trim()) {
+                      handleCheckExercise();
+                    }
+                  }}
                   style={[
                     styles.translationInput,
                     {
@@ -1554,6 +1649,7 @@ export default function LanguageCourseTool({
         )}
             </View>
           </ScrollView>
+          </KeyboardAvoidingView>
         </SafeAreaView>
       </Modal>
     );
@@ -2214,61 +2310,52 @@ export default function LanguageCourseTool({
         )}
       </View>
 
-      {/* 2. Horizontal Scrolling Pill Selector for Language Courses */}
+      {/* 2. Primary Course Mode Navigation Tabs Above the Fold (Path | Vocab | Games | Grammar | Wisdom - UX-9) */}
       <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
-        {PUBLISHED_COURSES.map((course) => {
-          const isSelected = course.config.id === selectedLangId;
+        {(
+          [
+            { id: 'learn', label: 'Path' },
+            { id: 'cards', label: 'Vocab' },
+            { id: 'games', label: 'Games' },
+            ...(grammarSections.length > 0
+              ? [{ id: 'grammar', label: 'Grammar' }]
+              : []),
+            { id: 'proverbs', label: 'Wisdom' },
+          ] as { id: MainTab; label: string }[]
+        ).map((tab) => {
+          const active = activeTab === tab.id;
           return (
             <Pressable
-              key={course.config.id}
+              key={tab.id}
               android_ripple={ripple}
-              accessibilityState={{ selected: isSelected }}
-              onPress={() => {
-                setSelectedLangId(course.config.id);
-                setProverbCategory('All');
-                setProverbSearch('');
-                setProverbPage(1);
-                setCardIndex(0);
-                setIsCardFlipped(false);
-                setActiveGame('menu');
-              }}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: active }}
+              onPress={() => setActiveTab(tab.id)}
               style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: 6,
-                paddingHorizontal: 14,
+                paddingHorizontal: 16,
                 paddingVertical: 7,
                 borderRadius: 999,
                 borderWidth: 1,
-                backgroundColor: isSelected
-                  ? `${course.config.color}24`
-                  : colors.surfaceContainerLow,
-                borderColor: isSelected ? course.config.color : colors.outlineVariant,
+                backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
+                borderColor: active ? langColor : colors.outlineVariant,
               }}
             >
-              {(() => {
-                const iden = getLanguageIdentity(course.config.id);
-                return (
-                  <>
-                    
-                    <Text
-                      style={{
-                        fontSize: 11.5,
-                        fontWeight: isSelected ? '800' : '600',
-                        color: isSelected ? colors.gold : colors.textSecondary,
-                      }}
-                    >
-                      {course.config.name} “{iden.greeting}”
-                    </Text>
-                  </>
-                );
-              })()}
+              <Text
+                style={{
+                  fontSize: 12.5,
+                  fontFamily: active ? 'Outfit_800ExtraBold' : 'Outfit_700Bold',
+                  fontWeight: active ? '800' : '600',
+                  color: active ? langColor : colors.textSecondary,
+                }}
+              >
+                {tab.label}
+              </Text>
             </Pressable>
           );
         })}
       </ExpandablePillRow>
 
-      {/* 3. Selected Language Banner + Verified Sources */}
+      {/* 3. Selected Language Banner + Verified Sources (Compact on non-Path tabs - UX-9) */}
       {currentCourse && (
         <View
           style={[
@@ -2298,19 +2385,21 @@ export default function LanguageCourseTool({
                 style={[styles.reviewDueBadge, { backgroundColor: 'rgba(245,158,11,0.16)' }]}
               >
                 <Feather name="rotate-cw" size={12} color="#F59E0B" />
-                <Text style={{ fontSize: 11, fontWeight: '800', color: '#F59E0B' }}>
+                <Text style={{ fontSize: 11, fontFamily: 'Outfit_800ExtraBold', fontWeight: '800', color: '#F59E0B' }}>
                   {reviewDueCount} Due
                 </Text>
               </Pressable>
             )}
           </View>
 
-          <Text style={[styles.courseInfoDesc, { color: colors.textSecondary }]}>
-            {currentCourse.config.description}
-          </Text>
+          {activeTab === 'learn' && (
+            <Text style={[styles.courseInfoDesc, { color: colors.textSecondary }]}>
+              {currentCourse.config.description}
+            </Text>
+          )}
 
           {languageSources.length > 0 && (
-            <View style={{ marginTop: 8 }}>
+            <View style={{ marginTop: activeTab === 'learn' ? 8 : 4 }}>
               <Pressable
                 onPress={() => setShowSourcesDropdown((prev) => !prev)}
                 style={[styles.sourcesRow, { justifyContent: 'space-between', paddingVertical: 4 }]}
@@ -2336,48 +2425,6 @@ export default function LanguageCourseTool({
           )}
         </View>
       )}
-
-      {/* 4. Standalone Horizontal Pill Navigation Bar (Path | Vocab | Games | Grammar | Wisdom) */}
-      <ExpandablePillRow contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 2 }}>
-        {(
-          [
-            { id: 'learn', label: 'Path' },
-            { id: 'cards', label: 'Vocab' },
-            { id: 'games', label: 'Games' },
-            ...(grammarSections.length > 0
-              ? [{ id: 'grammar', label: 'Grammar' }]
-              : []),
-            { id: 'proverbs', label: 'Wisdom' },
-          ] as { id: MainTab; label: string }[]
-        ).map((tab) => {
-          const active = activeTab === tab.id;
-          return (
-            <Pressable
-              key={tab.id}
-              android_ripple={ripple}
-              onPress={() => setActiveTab(tab.id)}
-              style={{
-                paddingHorizontal: 16,
-                paddingVertical: 7,
-                borderRadius: 999,
-                borderWidth: 1,
-                backgroundColor: active ? `${langColor}22` : colors.surfaceContainerLow,
-                borderColor: active ? langColor : colors.outlineVariant,
-              }}
-            >
-              <Text
-                style={{
-                  fontSize: 12.5,
-                  fontWeight: active ? '800' : '600',
-                  color: active ? langColor : colors.textSecondary,
-                }}
-              >
-                {tab.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </ExpandablePillRow>
 
       {/* ========================================================================
           TAB 1: SKILL TREE PATH (UNITS ACCORDION + 5-STAR MASTERY + LESSON LAUNCH)
@@ -2773,7 +2820,6 @@ export default function LanguageCourseTool({
               >
                 <Feather name="search" size={16} color={colors.textMuted} />
                 <TextInput
-            key={`ti-2-${colors.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
                   value={vocabSearch}
@@ -3395,7 +3441,6 @@ export default function LanguageCourseTool({
               {wordleStatus === 'playing' ? (
                 <View style={{ flexDirection: 'row', gap: 8 }}>
                   <TextInput
-            key={`ti-3-${colors.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
                     value={wordleInput}
@@ -3605,7 +3650,6 @@ export default function LanguageCourseTool({
           >
             <Feather name="search" size={16} color={colors.textMuted} />
             <TextInput
-            key={`ti-4-${colors.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
               value={grammarSearch}
@@ -3804,7 +3848,6 @@ export default function LanguageCourseTool({
           >
             <Feather name="search" size={16} color={colors.textMuted} />
             <TextInput
-            key={`ti-5-${colors.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
               value={proverbSearch}
@@ -3889,7 +3932,17 @@ export default function LanguageCourseTool({
           {selectedLangId === 'kikuyu' &&
             (() => {
               const q = proverbSearch.trim().toLowerCase();
-              const rawList = Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : [];
+              const rawList = [
+                ...(Array.isArray(kikuyuProverbsData) ? (kikuyuProverbsData as any[]) : []),
+                ...KIKUYU_CW_ITEMS.map((item, idx) => ({
+                  id: 1001 + idx,
+                  kikuyu: item.indigenous,
+                  translation: item.literalTranslation,
+                  explanation: item.meaning,
+                  englishEquivalent: item.englishEquivalent || null,
+                  category: item.theme || "wisdom",
+                })),
+              ];
               const filtered = rawList.filter((p: any) => {
                 if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
                 if (!q) return true;
@@ -3969,7 +4022,18 @@ export default function LanguageCourseTool({
           {selectedLangId === 'luo' && luoSubTab === 'proverbs' &&
             (() => {
               const q = proverbSearch.trim().toLowerCase();
-              const filtered = luoProverbs.filter((p) => {
+              const allLuoProverbs = [
+                ...luoProverbs,
+                ...LUO_CW_ITEMS.map((item, idx) => ({
+                  id: `luo-cw-${idx + 1}`,
+                  luo: item.indigenous,
+                  english: item.literalTranslation,
+                  meaning: item.meaning,
+                  explanation: item.englishEquivalent || item.meaning,
+                  category: (item.theme || "wisdom") as any,
+                })),
+              ];
+              const filtered = allLuoProverbs.filter((p) => {
                 if (proverbCategory !== 'All' && p.category !== proverbCategory) return false;
                 if (!q) return true;
                 return (

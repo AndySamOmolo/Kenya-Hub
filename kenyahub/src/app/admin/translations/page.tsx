@@ -33,19 +33,22 @@ import {
 } from "@/lib/contributions";
 
 const STANDARD_CATEGORIES = [
-  { id: "greetings", name: "Greetings & Farewells" },
-  { id: "numbers", name: "Numbers" },
-  { id: "family", name: "Family & Relationships" },
-  { id: "food", name: "Food & Dining" },
-  { id: "animals", name: "Animals & Pastoralism" },
-  { id: "nature", name: "Nature & Environment" },
-  { id: "home", name: "Home & Village" },
-  { id: "phrases", name: "Common Phrases" },
+  { id: "greetings", name: "Greetings & Basics" },
+  { id: "numbers", name: "Numbers & Counting" },
+  { id: "family", name: "Family & People" },
   { id: "body", name: "Body & Health" },
-  { id: "time", name: "Time & Calendar" },
-  { id: "travel", name: "Travel & Directions" },
-  { id: "shopping", name: "Market & Trade" },
-  { id: "emergency", name: "Emergency & Safety" },
+  { id: "animals", name: "Animals & Wildlife" },
+  { id: "nature", name: "Nature, Land & Sky" },
+  { id: "food", name: "Food, Drink & Farming" },
+  { id: "home", name: "Home, Tools & Daily Life" },
+  { id: "verbs", name: "Common Verbs & Actions" },
+  { id: "adjectives", name: "Adjectives & Qualities" },
+  { id: "travel", name: "Directions & Travel" },
+  { id: "shopping", name: "Market, Money & Work" },
+  { id: "emergency", name: "Safety & Emergency" },
+  { id: "time", name: "Time, Days & Seasons" },
+  { id: "phrases", name: "Everyday Phrases & Grammar" },
+  { id: "culture-history", name: "Culture, Folklore & History" },
 ];
 
 export default function AdminTranslationsPage() {
