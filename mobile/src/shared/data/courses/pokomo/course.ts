@@ -3087,54 +3087,54 @@ export const POKOMO_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-          {
-            "target": "Hunatsaka sélimu vamwe",
-            "source": "We want to turn together"
-          },
-          {
-            "target": "Hunatsaka kúkáma vamwe",
-            "source": "We want to feel together"
-          },
-          {
-            "target": "Hunatsaka gisa faia vamwe",
-            "source": "We want to paint together"
-          },
-          {
-            "target": "Hunatsaka simíka na fumo vamwe",
-            "source": "We want to pierce together"
-          },
-          {
-            "target": "Hunatsaka siga nui vamwe",
-            "source": "We want to plait together"
-          },
-          {
-            "target": "Hunatsaka zésa vamwe",
-            "source": "We want to play together"
-          },
-          {
-            "target": "Hunatsaka weka vamwe",
-            "source": "We want to put together"
-          },
-          {
-            "target": "Hunatsaka muiya vamwe",
-            "source": "We want to raise together"
-          },
-          {
-            "target": "Hunatsaka sóma vamwe",
-            "source": "We want to read together"
-          },
-          {
-            "target": "Hunatsaka fúna vamwe",
-            "source": "We want to reap together"
-          },
-          {
-            "target": "Hunatsaka huáa vamwe",
-            "source": "We want to receive together"
-          },
-          {
-            "target": "Hunatsaka guderaméra vamwe",
-            "source": "We want to take together"
-          }
+                {
+                        "target": "Hunatsaka sélimu vamwe",
+                        "source": "We want to turn together"
+                },
+                {
+                        "target": "Hunatsaka kúkáma vamwe",
+                        "source": "We want to feel together"
+                },
+                {
+                        "target": "Hunatsaka gisa faia vamwe",
+                        "source": "We want to paint together"
+                },
+                {
+                        "target": "Hunatsaka simíka na fumo vamwe",
+                        "source": "We want to pierce together"
+                },
+                {
+                        "target": "Hunatsaka siga nui vamwe",
+                        "source": "We want to plait together"
+                },
+                {
+                        "target": "Hunatsaka zésa vamwe",
+                        "source": "We want to play together"
+                },
+                {
+                        "target": "Hunatsaka weka vamwe",
+                        "source": "We want to put together"
+                },
+                {
+                        "target": "Hunatsaka muiya vamwe",
+                        "source": "We want to raise together"
+                },
+                {
+                        "target": "Hunatsaka sóma vamwe",
+                        "source": "We want to read together"
+                },
+                {
+                        "target": "Hunatsaka fúna vamwe",
+                        "source": "We want to reap together"
+                },
+                {
+                        "target": "Hunatsaka huáa vamwe",
+                        "source": "We want to receive together"
+                },
+                {
+                        "target": "Hunatsaka guderaméra vamwe",
+                        "source": "We want to take together"
+                }
         ]
 },
       {
@@ -3186,56 +3186,56 @@ export const POKOMO_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-          {
-            "target": "Hunatsaka fingiría vamwe",
-            "source": "We want to refuse together"
-          },
-          {
-            "target": "Hunatsaka fumúa vamwe",
-            "source": "We want to rest together"
-          },
-          {
-            "target": "Hunatsaka yáwa vamwe",
-            "source": "We want to rise together"
-          },
-          {
-            "target": "Bei ya miaka iónse ni ngapi?",
-            "source": "What is the price of annually?"
-          },
-          {
-            "target": "Bei ya fakása ni ngapi?",
-            "source": "What is the price of anoint?"
-          },
-          {
-            "target": "Bei ya landu ni ngapi?",
-            "source": "What is the price of anus?"
-          },
-          {
-            "target": "Bei ya zagúia ni ngapi?",
-            "source": "What is the price of appoint?"
-          },
-          {
-            "target": "Bei ya háfupi ni ngapi?",
-            "source": "What is the price of approach?"
-          },
-          {
-            "target": "Bei ya uha ni ngapi?",
-            "source": "What is the price of arrow?"
-          },
-          {
-            "target": "Bei ya mmánia kasi ni ngapi?",
-            "source": "What is the price of artist?"
-          },
-          {
-            "target": "Bei ya ífu ni ngapi?",
-            "source": "What is the price of ashes?"
-          },
-          {
-            "target": "Bei ya harre ni ngapi?",
-            "source": "What is the price of ass?"
-          }
+                {
+                        "target": "Hunatsaka fingiría vamwe",
+                        "source": "We want to refuse together"
+                },
+                {
+                        "target": "Hunatsaka fumúa vamwe",
+                        "source": "We want to rest together"
+                },
+                {
+                        "target": "Hunatsaka yáwa vamwe",
+                        "source": "We want to rise together"
+                },
+                {
+                        "target": "Bei ya miaka iónse ni ngapi?",
+                        "source": "What is the price of annually?"
+                },
+                {
+                        "target": "Bei ya fakása ni ngapi?",
+                        "source": "What is the price of anoint?"
+                },
+                {
+                        "target": "Bei ya landu ni ngapi?",
+                        "source": "What is the price of anus?"
+                },
+                {
+                        "target": "Bei ya zagúia ni ngapi?",
+                        "source": "What is the price of appoint?"
+                },
+                {
+                        "target": "Bei ya háfupi ni ngapi?",
+                        "source": "What is the price of approach?"
+                },
+                {
+                        "target": "Bei ya uha ni ngapi?",
+                        "source": "What is the price of arrow?"
+                },
+                {
+                        "target": "Bei ya mmánia kasi ni ngapi?",
+                        "source": "What is the price of artist?"
+                },
+                {
+                        "target": "Bei ya ífu ni ngapi?",
+                        "source": "What is the price of ashes?"
+                },
+                {
+                        "target": "Bei ya harre ni ngapi?",
+                        "source": "What is the price of ass?"
+                }
         ]
-      }
+}
     ]
   }
 ];

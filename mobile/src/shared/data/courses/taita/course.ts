@@ -3547,54 +3547,54 @@ export const TAITA_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-          {
-            "target": "Ni kuboie ku-lola kula matuku",
-            "source": "It is good to behold every day"
-          },
-          {
-            "target": "Duzaka ku-goshaose",
-            "source": "We want to borrow together"
-          },
-          {
-            "target": "Ni kuboie ku-gosha kula matuku",
-            "source": "It is good to borrow every day"
-          },
-          {
-            "target": "Duzaka ku-sagulaose",
-            "source": "We want to choose together"
-          },
-          {
-            "target": "Ni kuboie ku-sagula kula matuku",
-            "source": "It is good to choose every day"
-          },
-          {
-            "target": "Duzaka ku-umbaose",
-            "source": "We want to create together"
-          },
-          {
-            "target": "Ni kuboie ku-umba kula matuku",
-            "source": "It is good to create every day"
-          },
-          {
-            "target": "Duzaka ku-gendaose",
-            "source": "We want to depart together"
-          },
-          {
-            "target": "Ni kuboie ku-genda kula matuku",
-            "source": "It is good to depart every day"
-          },
-          {
-            "target": "Duzaka ku-shaiaose",
-            "source": "We want to desire together"
-          },
-          {
-            "target": "Ni kuboie ku-shaia kula matuku",
-            "source": "It is good to desire every day"
-          },
-          {
-            "target": "Duzaka ku-kilaose",
-            "source": "We want to escape together"
-          }
+                {
+                        "target": "Ni kuboie ku-lola kula matuku",
+                        "source": "It is good to behold every day"
+                },
+                {
+                        "target": "Duzaka ku-goshaose",
+                        "source": "We want to borrow together"
+                },
+                {
+                        "target": "Ni kuboie ku-gosha kula matuku",
+                        "source": "It is good to borrow every day"
+                },
+                {
+                        "target": "Duzaka ku-sagulaose",
+                        "source": "We want to choose together"
+                },
+                {
+                        "target": "Ni kuboie ku-sagula kula matuku",
+                        "source": "It is good to choose every day"
+                },
+                {
+                        "target": "Duzaka ku-umbaose",
+                        "source": "We want to create together"
+                },
+                {
+                        "target": "Ni kuboie ku-umba kula matuku",
+                        "source": "It is good to create every day"
+                },
+                {
+                        "target": "Duzaka ku-gendaose",
+                        "source": "We want to depart together"
+                },
+                {
+                        "target": "Ni kuboie ku-genda kula matuku",
+                        "source": "It is good to depart every day"
+                },
+                {
+                        "target": "Duzaka ku-shaiaose",
+                        "source": "We want to desire together"
+                },
+                {
+                        "target": "Ni kuboie ku-shaia kula matuku",
+                        "source": "It is good to desire every day"
+                },
+                {
+                        "target": "Duzaka ku-kilaose",
+                        "source": "We want to escape together"
+                }
         ]
 },
       {
@@ -3653,7 +3653,7 @@ export const TAITA_UNITS: CourseUnit[] = [
                         "source": "We keep store-house in Taita Hills"
                 }
         ]
-      }
+}
     ]
   }
 ];

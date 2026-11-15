@@ -5448,54 +5448,54 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-          {
-            "target": "Nĩ ũseo gunayaa kĩla mũthenya",
-            "source": "It is good to put every day"
-          },
-          {
-            "target": "Twĩenda kukillia vamwe",
-            "source": "We want to raise together"
-          },
-          {
-            "target": "Nĩ ũseo kukillia kĩla mũthenya",
-            "source": "It is good to raise every day"
-          },
-          {
-            "target": "Twĩenda kunengue vamwe",
-            "source": "We want to receive together"
-          },
-          {
-            "target": "Nĩ ũseo kunengue kĩla mũthenya",
-            "source": "It is good to receive every day"
-          },
-          {
-            "target": "Twĩenda kwichethika vamwe",
-            "source": "We want to throw together"
-          },
-          {
-            "target": "Nĩ ũseo kwichethika kĩla mũthenya",
-            "source": "It is good to throw every day"
-          },
-          {
-            "target": "Twĩenda gutella vamwe",
-            "source": "We want to touch together"
-          },
-          {
-            "target": "Nĩ ũseo gutella kĩla mũthenya",
-            "source": "It is good to touch every day"
-          },
-          {
-            "target": "Twĩenda gusisia vamwe",
-            "source": "We want to try together"
-          },
-          {
-            "target": "Nĩ ũseo gusisia kĩla mũthenya",
-            "source": "It is good to try every day"
-          },
-          {
-            "target": "Twĩenda nēēwa vamwe",
-            "source": "We want to understand together"
-          }
+                {
+                        "target": "Nĩ ũseo gunayaa kĩla mũthenya",
+                        "source": "It is good to put every day"
+                },
+                {
+                        "target": "Twĩenda kukillia vamwe",
+                        "source": "We want to raise together"
+                },
+                {
+                        "target": "Nĩ ũseo kukillia kĩla mũthenya",
+                        "source": "It is good to raise every day"
+                },
+                {
+                        "target": "Twĩenda kunengue vamwe",
+                        "source": "We want to receive together"
+                },
+                {
+                        "target": "Nĩ ũseo kunengue kĩla mũthenya",
+                        "source": "It is good to receive every day"
+                },
+                {
+                        "target": "Twĩenda kwichethika vamwe",
+                        "source": "We want to throw together"
+                },
+                {
+                        "target": "Nĩ ũseo kwichethika kĩla mũthenya",
+                        "source": "It is good to throw every day"
+                },
+                {
+                        "target": "Twĩenda gutella vamwe",
+                        "source": "We want to touch together"
+                },
+                {
+                        "target": "Nĩ ũseo gutella kĩla mũthenya",
+                        "source": "It is good to touch every day"
+                },
+                {
+                        "target": "Twĩenda gusisia vamwe",
+                        "source": "We want to try together"
+                },
+                {
+                        "target": "Nĩ ũseo gusisia kĩla mũthenya",
+                        "source": "It is good to try every day"
+                },
+                {
+                        "target": "Twĩenda nēēwa vamwe",
+                        "source": "We want to understand together"
+                }
         ]
 },
       {
@@ -5554,7 +5554,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
                         "source": "We keep knife at the homestead"
                 }
         ]
-      }
+}
     ]
   }
 ];

@@ -2330,7 +2330,6 @@ const _booksZipSources: LanguageSource[] = [
     coverageNote: "Linked raw transcription in language-sources/raw/the_northern_bantu_john_roscoe_1915.md.",
   },
 ];
-];
 
 for (const _src of _booksZipSources) {
   const _idx = LANGUAGE_SOURCES.findIndex((s) => s.id === _src.id);

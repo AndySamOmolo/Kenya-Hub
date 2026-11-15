@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Search, X } from "lucide-react";
 
 interface SearchInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -15,34 +15,72 @@ export default function SearchInput({
   placeholder,
   ...props
 }: SearchInputProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
   const hasClearButton = Boolean(value && onClear);
-  const wrapperClass = className.includes("flex-1") ? "relative flex-1 min-w-0 w-full" : "relative w-full";
+  const wrapperClass = className.includes("flex-1")
+    ? "relative flex-1 min-w-0 w-full group/search"
+    : "relative w-full group/search";
+
+  // Allow pressing "/" anywhere on the page (when not typing in another field) to focus the primary search input
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+      const active = document.activeElement as HTMLElement | null;
+      if (
+        active &&
+        (active.tagName === "INPUT" ||
+          active.tagName === "TEXTAREA" ||
+          active.tagName === "SELECT" ||
+          active.isContentEditable)
+      ) {
+        return;
+      }
+      if (inputRef.current && inputRef.current.offsetParent !== null) {
+        e.preventDefault();
+        inputRef.current.focus();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   return (
     <div className={wrapperClass}>
-      <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-gold pointer-events-none shrink-0 z-10" />
+      <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-gold group-focus-within/search:scale-110 transition-transform pointer-events-none shrink-0 z-10" />
       <input
+        ref={inputRef}
         type="text"
         value={value}
         placeholder={placeholder}
-        className="w-full h-11.5 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/15 search-input-compact"
+        className="w-full h-11.5 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all duration-200 hover:border-border-light focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/20 search-input-compact"
         style={{
           paddingLeft: "2.75rem",
-          paddingRight: hasClearButton ? "2.5rem" : "1.125rem",
+          paddingRight: hasClearButton ? "2.75rem" : "2.5rem",
           lineHeight: "1.45",
           ...style,
         }}
         autoComplete="off"
         {...props}
       />
+      {!hasClearButton && (
+        <kbd
+          aria-hidden="true"
+          className="hidden sm:inline-flex items-center justify-center absolute right-4 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded border border-border bg-bg-card/80 text-[0.65rem] font-mono text-text-muted pointer-events-none opacity-75 group-focus-within/search:opacity-0 transition-opacity"
+        >
+          /
+        </kbd>
+      )}
       {hasClearButton && (
         <button
           type="button"
-          onClick={onClear}
-          className="absolute right-3.5 top-1/2 -translate-y-1/2 w-5.5 h-5.5 rounded-full bg-bg-card border border-border hover:border-gold/50 flex items-center justify-center transition-colors cursor-pointer z-10"
+          onClick={() => {
+            onClear?.();
+            inputRef.current?.focus();
+          }}
+          className="absolute right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
           aria-label="Clear search"
         >
-          <X className="w-3.5 h-3.5 text-text-muted shrink-0" />
+          <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
         </button>
       )}
     </div>

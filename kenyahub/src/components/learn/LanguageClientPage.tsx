@@ -104,6 +104,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [flashcardSkillId, setFlashcardSkillId] = useState<string>("all");
   const [flashcardIndex, setFlashcardIndex] = useState<number>(0);
   const [isCardFlipped, setIsCardFlipped] = useState<boolean>(false);
+  const [flashcardXpPop, setFlashcardXpPop] = useState<boolean>(false);
+  const [fcTouchStartX, setFcTouchStartX] = useState<number | null>(null);
   const [loadedDict, setLoadedDict] = useState<Dictionary | null>(
     () => DICT_CACHE[languageId] || null
   );
@@ -238,6 +240,45 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const currentFlashcard =
     flashcardDeck[flashcardIndex] || flashcardDeck[0] || null;
+
+  useEffect(() => {
+    if (view !== "flashcards" || flashcardDeck.length === 0) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      const active = document.activeElement as HTMLElement | null;
+      if (active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA" || active.tagName === "SELECT")) {
+        return;
+      }
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        setFlashcardIndex((i) => Math.min(flashcardDeck.length - 1, i + 1));
+        setIsCardFlipped(false);
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        setFlashcardIndex((i) => Math.max(0, i - 1));
+        setIsCardFlipped(false);
+      } else if (e.key === " ") {
+        e.preventDefault();
+        setIsCardFlipped((f) => !f);
+      } else if (e.key === "1") {
+        e.preventDefault();
+        setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+        setIsCardFlipped(false);
+      } else if (e.key === "2") {
+        e.preventDefault();
+        setProgress((prev) => {
+          const updated = awardActivityXp(prev, 2, false);
+          saveProgress(updated);
+          return updated;
+        });
+        setFlashcardXpPop(true);
+        setTimeout(() => setFlashcardXpPop(false), 650);
+        setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+        setIsCardFlipped(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [view, flashcardDeck.length]);
 
   const filteredModules = useMemo(() => {
     const q = moduleSearch.trim().toLowerCase();
@@ -627,8 +668,33 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
           {currentFlashcard && (
             <div className="space-y-4">
+              {/* Deck Progress Bar */}
+              <div className="h-1.5 w-full rounded-full bg-bg-elevated overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-300"
+                  style={{ width: `${Math.min(100, ((flashcardIndex + 1) / Math.max(1, flashcardDeck.length)) * 100)}%` }}
+                />
+              </div>
+
               <div
                 onClick={() => setIsCardFlipped((f) => !f)}
+                onTouchStart={(e) => {
+                  if (e.touches.length === 1) setFcTouchStartX(e.touches[0].clientX);
+                }}
+                onTouchEnd={(e) => {
+                  if (fcTouchStartX === null || e.changedTouches.length === 0) return;
+                  const dx = e.changedTouches[0].clientX - fcTouchStartX;
+                  setFcTouchStartX(null);
+                  if (Math.abs(dx) > 48) {
+                    if (dx < 0 && flashcardIndex < flashcardDeck.length - 1) {
+                      setFlashcardIndex((i) => i + 1);
+                      setIsCardFlipped(false);
+                    } else if (dx > 0 && flashcardIndex > 0) {
+                      setFlashcardIndex((i) => i - 1);
+                      setIsCardFlipped(false);
+                    }
+                  }
+                }}
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => {
@@ -637,8 +703,15 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                     setIsCardFlipped((f) => !f);
                   }
                 }}
-                className="group relative min-h-[250px] sm:min-h-[280px] rounded-3xl border-2 border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-6 sm:p-8 flex flex-col justify-between cursor-pointer transition-all hover:border-gold/60 shadow-lg select-none"
+                className={`group relative min-h-[250px] sm:min-h-[280px] rounded-3xl border-2 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-6 sm:p-8 flex flex-col justify-between cursor-pointer transition-all duration-300 hover:border-gold/65 hover:-translate-y-0.5 active:scale-[0.99] shadow-lg select-none ${
+                  isCardFlipped ? "border-kenya-green/50 animate-flip-in" : "border-gold/35"
+                }`}
               >
+                {flashcardXpPop && (
+                  <span className="pointer-events-none absolute top-4 right-5 rounded-full bg-kenya-green px-3 py-1 text-xs font-extrabold text-white shadow-lg animate-bounce-in z-20">
+                    +2 XP! ⚡
+                  </span>
+                )}
                 <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
                   <span className="rounded-2xl bg-bg-elevated border border-border px-3 py-1 font-semibold text-gold max-w-full break-words">
                     {currentFlashcard.skillTitle}
@@ -691,6 +764,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                       saveProgress(updated);
                       return updated;
                     });
+                    setFlashcardXpPop(true);
+                    setTimeout(() => setFlashcardXpPop(false), 650);
                     setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
                     setIsCardFlipped(false);
                   }}

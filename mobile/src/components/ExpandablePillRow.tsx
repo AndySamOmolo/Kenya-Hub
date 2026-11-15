@@ -4,6 +4,10 @@ import {
   Text,
   ScrollView,
   Pressable,
+  Animated,
+  LayoutAnimation,
+  Platform,
+  UIManager,
   StyleSheet,
   type StyleProp,
   type ViewStyle,
@@ -12,7 +16,14 @@ import {
   type LayoutChangeEvent,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useTheme, androidRipple } from "../theme";
+import { useTheme, androidRipple, triggerHaptic } from "../theme";
+
+if (
+  Platform.OS === "android" &&
+  UIManager.setLayoutAnimationEnabledExperimental
+) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 function countPillChildren(children: React.ReactNode): number {
   let count = 0;
@@ -95,13 +106,6 @@ export interface ExpandablePillRowProps {
   fadeColor?: string;
 }
 
-/**
- * Unified ExpandablePillRow matching the web ExpandablePillRow component:
- * - Single-row horizontal scroll bar when collapsed with full vertical breathing room
- * - Automatically scrolls the active pill into the horizontal center of the viewport
- * - Subtle surface-matched edge dissolve when overflowing horizontally
- * - Centered circular chevron toggle button on the right (expands into a wrapped grid)
- */
 export function ExpandablePillRow({
   children,
   style,
@@ -120,8 +124,34 @@ export function ExpandablePillRow({
   const layoutWidthRef = useRef(0);
   const pillLayoutsRef = useRef<Record<number, { x: number; width: number }>>({});
 
+  // Elastic edge bounce animation value
+  const bounceAnim = useRef(new Animated.Value(0)).current;
+  const wasAtLeftRef = useRef(true);
+  const wasAtRightRef = useRef(false);
+  const didMountPeekRef = useRef(false);
+
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(count > threshold);
+
+  const triggerSpringBounce = useCallback(
+    (direction: "left" | "right", peakAbs = 11) => {
+      const peak = direction === "left" ? peakAbs : -peakAbs;
+      Animated.sequence([
+        Animated.timing(bounceAnim, {
+          toValue: peak,
+          duration: 90,
+          useNativeDriver: true,
+        }),
+        Animated.spring(bounceAnim, {
+          toValue: 0,
+          friction: 5,
+          tension: 150,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    },
+    [bounceAnim]
+  );
 
   const updateScrollState = useCallback(() => {
     if (expanded) {
@@ -133,9 +163,44 @@ export function ExpandablePillRow({
     const cw = contentWidthRef.current;
     const lw = layoutWidthRef.current;
     if (lw <= 0 || cw <= 0) return;
-    setCanScrollLeft(x > 3);
-    setCanScrollRight(cw - lw - x > 3);
-  }, [expanded]);
+    const maxScroll = Math.max(0, cw - lw);
+    const hasLeft = x > 3;
+    const hasRight = maxScroll - x > 3;
+
+    if (maxScroll > 10) {
+      if (!hasLeft && !wasAtLeftRef.current) {
+        triggerSpringBounce("left", 11);
+      } else if (!hasRight && !wasAtRightRef.current) {
+        triggerSpringBounce("right", 11);
+      }
+      if (!didMountPeekRef.current && hasRight && x <= 2) {
+        didMountPeekRef.current = true;
+        triggerSpringBounce("right", 7);
+      }
+    }
+    wasAtLeftRef.current = !hasLeft;
+    wasAtRightRef.current = !hasRight;
+
+    setCanScrollLeft(hasLeft);
+    setCanScrollRight(hasRight);
+  }, [expanded, triggerSpringBounce]);
+
+  const handleScrollEndDrag = useCallback(
+    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+      const x = e.nativeEvent.contentOffset.x;
+      const cw = contentWidthRef.current;
+      const lw = layoutWidthRef.current;
+      const maxScroll = Math.max(0, cw - lw);
+      if (maxScroll <= 8) return;
+      const vx = e.nativeEvent.velocity?.x ?? 0;
+      if (x <= 2 && vx < -0.1) {
+        triggerSpringBounce("left", 12);
+      } else if (x >= maxScroll - 2 && vx > 0.1) {
+        triggerSpringBounce("right", 12);
+      }
+    },
+    [triggerSpringBounce]
+  );
 
   const centerActivePill = useCallback(
     (activeIndex: number) => {
@@ -352,28 +417,33 @@ export function ExpandablePillRow({
     return (
       <View style={[rowStyles.rowWrap, outerSpacing, style]}>
         <View style={rowStyles.viewportWrap}>
-          <ScrollView
-            ref={scrollViewRef}
-            horizontal
-            overScrollMode="never"
-            showsHorizontalScrollIndicator={false}
-            scrollEventThrottle={16}
-            onLayout={handleLayout}
-            onContentSizeChange={handleContentSizeChange}
-            onScroll={handleScroll}
-            contentContainerStyle={[
-              innerContentStyle,
-              {
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 8,
-                paddingVertical: 5,
-                paddingRight: canScrollRight ? 12 : 2,
-              },
-            ]}
-          >
-            {renderedPills}
-          </ScrollView>
+          <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
+            <ScrollView
+              ref={scrollViewRef}
+              horizontal
+              bounces={true}
+              alwaysBounceHorizontal={true}
+              overScrollMode="always"
+              showsHorizontalScrollIndicator={false}
+              scrollEventThrottle={16}
+              onLayout={handleLayout}
+              onContentSizeChange={handleContentSizeChange}
+              onScroll={handleScroll}
+              onScrollEndDrag={handleScrollEndDrag}
+              contentContainerStyle={[
+                innerContentStyle,
+                {
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 8,
+                  paddingVertical: 5,
+                  paddingRight: canScrollRight ? 12 : 2,
+                },
+              ]}
+            >
+              {renderedPills}
+            </ScrollView>
+          </Animated.View>
           {canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
           )}
@@ -414,28 +484,33 @@ export function ExpandablePillRow({
         </View>
       ) : (
         <View style={rowStyles.viewportWrap}>
-          <ScrollView
-            ref={scrollViewRef}
-            horizontal
-            overScrollMode="never"
-            showsHorizontalScrollIndicator={false}
-            scrollEventThrottle={16}
-            onLayout={handleLayout}
-            onContentSizeChange={handleContentSizeChange}
-            onScroll={handleScroll}
-            contentContainerStyle={[
-              innerContentStyle,
-              {
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 8,
-                paddingVertical: 5,
-                paddingRight: canScrollRight ? 14 : 2,
-              },
-            ]}
-          >
-            {renderedPills}
-          </ScrollView>
+          <Animated.View style={{ flex: 1, transform: [{ translateX: bounceAnim }] }}>
+            <ScrollView
+              ref={scrollViewRef}
+              horizontal
+              bounces={true}
+              alwaysBounceHorizontal={true}
+              overScrollMode="always"
+              showsHorizontalScrollIndicator={false}
+              scrollEventThrottle={16}
+              onLayout={handleLayout}
+              onContentSizeChange={handleContentSizeChange}
+              onScroll={handleScroll}
+              onScrollEndDrag={handleScrollEndDrag}
+              contentContainerStyle={[
+                innerContentStyle,
+                {
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 8,
+                  paddingVertical: 5,
+                  paddingRight: canScrollRight ? 14 : 2,
+                },
+              ]}
+            >
+              {renderedPills}
+            </ScrollView>
+          </Animated.View>
           {canScrollLeft && (
             <EdgePocketShadow side="left" bgColor={resolvedFadeColor} />
           )}
@@ -447,13 +522,17 @@ export function ExpandablePillRow({
 
       <Pressable
         android_ripple={androidRipple(theme.rippleColor, true)}
-        onPress={() => setExpanded((prev) => !prev)}
+        onPress={() => {
+          triggerHaptic("selection");
+          LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+          setExpanded((prev) => !prev);
+        }}
         hitSlop={8}
         accessibilityRole="button"
         accessibilityLabel={
           expanded ? "Collapse pills" : `Expand all ${count} pills vertically`
         }
-        style={[
+        style={({ pressed }) => [
           rowStyles.actionBtn,
           {
             alignSelf: "center",
@@ -461,6 +540,7 @@ export function ExpandablePillRow({
             backgroundColor: expanded
               ? `${theme.gold}26`
               : theme.surfaceContainerHigh,
+            transform: [{ scale: pressed ? 0.92 : 1 }],
           },
         ]}
       >

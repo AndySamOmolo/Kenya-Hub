@@ -3898,7 +3898,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
                         "source": "Take care of cattle-thief for community health"
                 }
         ]
-      }
+}
     ]
   }
 ];

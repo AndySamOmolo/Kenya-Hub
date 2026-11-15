@@ -3,7 +3,8 @@ import type { Tool } from "@/lib/types";
 import { getCategoryInfo, getRelatedTools } from "@/lib/tools-registry";
 import { getRelatedBlogPostsForTool } from "@/lib/seo";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { ToolAccessTracker, PinToolButton } from "@/components/tools/ToolBookmarks";
+import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
+import PinToolButton from "@/components/tools/PinToolButton";
 import toolGuidesData from "@/data/tool-guides.json";
 import toolSourcesData from "@/data/tool-data-sources.json";
 
@@ -220,7 +221,7 @@ export default function ToolShell({
 
   return (
     <div className={`max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ${hideHeader ? "py-3 sm:py-5" : "py-5 sm:py-10"}`}>
-      <ToolAccessTracker slug={tool.slug} />
+      <ToolAccessTracker tool={tool} />
 
       {/* Structured Data */}
       <script
@@ -319,7 +320,7 @@ export default function ToolShell({
               </div>
             </div>
             <div className="shrink-0 mt-1">
-              <PinToolButton slug={tool.slug} />
+              <PinToolButton toolSlug={tool.slug} />
             </div>
           </div>
           <p className="text-text-secondary text-sm sm:text-base leading-relaxed max-w-3xl">
