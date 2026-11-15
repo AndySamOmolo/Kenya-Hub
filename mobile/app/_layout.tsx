@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
-import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -28,19 +27,11 @@ import {
   pressableStyle,
 } from "../src/theme";
 
-SplashScreen.preventAutoHideAsync().catch(() => {});
-
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady } = useTheme();
 
-  useEffect(() => {
-    if (fontsLoaded && themeReady) {
-      SplashScreen.hideAsync().catch(() => {});
-    }
-  }, [fontsLoaded, themeReady]);
-
   if (!fontsLoaded || !themeReady) {
-    return null;
+    return <View style={styles.splashFallback} />;
   }
 
   return (
@@ -135,6 +126,10 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
 }
 
 const styles = StyleSheet.create({
+  splashFallback: {
+    flex: 1,
+    backgroundColor: darkColors.bgPrimary,
+  },
   container: {
     flex: 1,
     backgroundColor: darkColors.bgPrimary,
