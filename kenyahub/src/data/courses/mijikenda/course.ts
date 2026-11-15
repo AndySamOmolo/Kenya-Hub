@@ -3931,96 +3931,90 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "description": "Practice verified Mijikenda (Giriama) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
         "words": [
-                {
-                        "target": "shukuru",
-                        "source": "To thank",
-                        "pronunciation": "shu-ku-ru"
-                },
-                {
-                        "target": "Udzamuka dze? / Mulamuka dze?",
-                        "source": "How are you this morning? (Kigiryama)",
-                        "pronunciation": "udzamuka dze"
-                },
-                {
-                        "target": "Ndzamukaeri",
-                        "source": "I woke up well",
-                        "pronunciation": "ndzamukaeri"
-                },
-                {
-                        "target": "rija; usíra",
-                        "source": "Pardon, v. a",
-                        "pronunciation": "rija"
-                },
-                {
-                        "target": "mausso",
-                        "source": "Pardon, s",
-                        "pronunciation": "mausso"
-                },
-                {
-                        "target": "uokófu; réri",
-                        "source": "Peace, s",
-                        "pronunciation": "uokófu"
-                },
-                {
-                        "target": "yuna",
-                        "source": "Sorry, to be",
-                        "pronunciation": "yuna"
-                },
-                {
-                        "target": "pa mumvéra",
-                        "source": "Thank, v. a",
-                        "pronunciation": "pa mumvéra"
-                }
+                  {
+                            "target": "Dheri",
+                            "source": "Peace",
+                            "pronunciation": "dheh-ree"
+                  },
+                  {
+                            "target": "lamúsa",
+                            "source": "Greet",
+                            "pronunciation": "lamusa"
+                  },
+                  {
+                            "target": "pa mumvéra",
+                            "source": "Thank",
+                            "pronunciation": "pa mumvera"
+                  },
+                  {
+                            "target": "baríkia",
+                            "source": "Bless",
+                            "pronunciation": "barikia"
+                  },
+                  {
+                            "target": "lamusíra",
+                            "source": "Salute",
+                            "pronunciation": "lamusira"
+                  },
+                  {
+                            "target": "rija",
+                            "source": "Pardon",
+                            "pronunciation": "ri-ja"
+                  },
+                  {
+                            "target": "erésa",
+                            "source": "Please",
+                            "pronunciation": "eresa"
+                  },
+                  {
+                            "target": "koḥeri",
+                            "source": "Farewell",
+                            "pronunciation": "koheri"
+                  },
+                  {
+                            "target": "Kongo!",
+                            "source": "Welcome!",
+                            "pronunciation": "kongo"
+                  },
+                  {
+                            "target": "ku-mu-laga",
+                            "source": "Farewell (to bid)",
+                            "pronunciation": "ku mu la-ga"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Hunazaka ongokera hamwenga",
-                        "source": "We want to grow up together"
-                },
-                {
-                        "target": "Hunazaka usira hamwenga",
-                        "source": "We want to ask for together"
-                },
-                {
-                        "target": "Hunazaka finama hamwenga",
-                        "source": "We want to lie down together"
-                },
-                {
-                        "target": "Hunazaka godzera hamwenga",
-                        "source": "We want to wait for together"
-                },
-                {
-                        "target": "Hunazaka hendera hamwenga",
-                        "source": "We want to make for together"
-                },
-                {
-                        "target": "Hunazaka kumbukira hamwenga",
-                        "source": "We want to remember together"
-                },
-                {
-                        "target": "Hunazaka vakuza hamwenga",
-                        "source": "We want to wipe off together"
-                },
-                {
-                        "target": "Hunazaka voniosa hamwenga",
-                        "source": "We want to let drop together"
-                },
-                {
-                        "target": "Hunazaka Sumbula hamwenga",
-                        "source": "We want to find out together"
-                },
-                {
-                        "target": "Hunazaka gnola hamwenga",
-                        "source": "We want to pluck out together"
-                },
-                {
-                        "target": "Hunazaka lasira hamwenga",
-                        "source": "We want to put aside together"
-                },
-                {
-                        "target": "Hunazaka sugasuga hamwenga",
-                        "source": "We want to go astray together"
-                }
+                  {
+                            "target": "pa mumvéra",
+                            "source": "Thank"
+                  },
+                  {
+                            "target": "Mwadima! Na-m'vera na-we! (also Asante",
+                            "source": "Thank you"
+                  },
+                  {
+                            "target": "Udzamuka dze?",
+                            "source": "How are you this morning? (Kigiryama)"
+                  },
+                  {
+                            "target": "pa mumvéra",
+                            "source": "Thank, v. a"
+                  },
+                  {
+                            "target": "ídji pl. ma-",
+                            "source": "Egg"
+                  },
+                  {
+                            "target": "infusion in cold water, vuwo",
+                            "source": "Tea"
+                  },
+                  {
+                            "target": "ifu, ivu",
+                            "source": "Ripe"
+                  },
+                  {
+                            "target": "masia, mazia",
+                            "source": "Milk"
+                  }
         ]
 },
         {
@@ -4030,54 +4024,90 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Mijikenda (Giriama) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
         "words": [
-                {
-                        "target": "alánga; tára",
-                        "source": "Count",
-                        "pronunciation": "alanga"
-                },
-                {
-                        "target": "wa mozi",
-                        "source": "First",
-                        "pronunciation": "wa mo-zi"
-                },
-                {
-                        "target": "fungáhe",
-                        "source": "Seven",
-                        "pronunciation": "fungahe"
-                },
-                {
-                        "target": "kána mbíri",
-                        "source": "Twice",
-                        "pronunciation": "kana mbiri"
-                },
-                {
-                        "target": "afungahe",
-                        "source": "Seven",
-                        "pronunciation": "a-funga-he"
-                },
-                {
-                        "target": "ahahu",
-                        "source": "Three",
-                        "pronunciation": "a-ha-hu"
-                }
+                  {
+                            "target": "handahu",
+                            "source": "Six",
+                            "pronunciation": "hahn-dah-hoo"
+                  },
+                  {
+                            "target": "mwenga",
+                            "source": "One",
+                            "pronunciation": "mwenga / mo-si"
+                  },
+                  {
+                            "target": "hiri",
+                            "source": "Two",
+                            "pronunciation": "hee-ree / mbee-ree"
+                  },
+                  {
+                            "target": "ikumi",
+                            "source": "Ten",
+                            "pronunciation": "i-ku-mi / ku-mi"
+                  },
+                  {
+                            "target": "chenda",
+                            "source": "Nine",
+                            "pronunciation": "chehn-dah"
+                  },
+                  {
+                            "target": "nne",
+                            "source": "Four",
+                            "pronunciation": "nne"
+                  },
+                  {
+                            "target": "tsano",
+                            "source": "Five",
+                            "pronunciation": "tsah-noh / ts'ah-noh"
+                  },
+                  {
+                            "target": "kána mmenga",
+                            "source": "Once",
+                            "pronunciation": "kana mmenga"
+                  },
+                  {
+                            "target": "aïri",
+                            "source": "Both",
+                            "pronunciation": "airi"
+                  },
+                  {
+                            "target": "hnane",
+                            "source": "Eight",
+                            "pronunciation": "hnah-neh / nah-neh"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Hunazaka sulumiza hamwenga",
-                        "source": "We want to wash down together"
-                },
-                {
-                        "target": "Hunazaka dzembera hamwenga",
-                        "source": "We want to walk about together"
-                },
-                {
-                        "target": "Hunazaka dzukuza hamwenga",
-                        "source": "We want to make carry together"
-                },
-                {
-                        "target": "alánga; tára",
-                        "source": "Count"
-                }
+                  {
+                            "target": "kána mmenga",
+                            "source": "Once"
+                  },
+                  {
+                            "target": "wa mozi",
+                            "source": "First"
+                  },
+                  {
+                            "target": "kána mbíri",
+                            "source": "Twice"
+                  },
+                  {
+                            "target": "-a hahu",
+                            "source": "Third"
+                  },
+                  {
+                            "target": "-a tsano",
+                            "source": "Fifth"
+                  },
+                  {
+                            "target": "mirongo mihandahu",
+                            "source": "Sixty"
+                  },
+                  {
+                            "target": "pánde mbíri",
+                            "source": "Double"
+                  },
+                  {
+                            "target": "wa víri",
+                            "source": "Second"
+                  }
         ]
 }
     ]

@@ -17,11 +17,18 @@ export function VocabQuizGame({ allWords, languageName, onAwardXp }: GameProps) 
 
   const options = useMemo(() => {
     if (!currentWord || shuffledWords.length < 2) return [];
-    const distractors = shuffle(
-      shuffledWords.filter((w) => w.target.toLowerCase() !== currentWord.target.toLowerCase())
-    )
-      .slice(0, 3)
-      .map((w) => w.target);
+    const seen = new Set<string>([currentWord.target.toLowerCase()]);
+    const distractors: string[] = [];
+    for (const w of shuffle(shuffledWords)) {
+      if (
+        !seen.has(w.target.toLowerCase()) &&
+        w.source.toLowerCase() !== currentWord.source.toLowerCase()
+      ) {
+        seen.add(w.target.toLowerCase());
+        distractors.push(w.target);
+        if (distractors.length >= 3) break;
+      }
+    }
     return shuffle([currentWord.target, ...distractors]);
   }, [currentWord, shuffledWords, round]);
 

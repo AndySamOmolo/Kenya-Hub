@@ -774,7 +774,10 @@ export default function HomeScreen() {
           showsHorizontalScrollIndicator={false}
           snapToInterval={WIDGET_SNAP_INTERVAL}
           decelerationRate="fast"
-          onTouchStart={() = bounces={true} alwaysBounceHorizontal={true} overScrollMode="always"> setWidgetsTouchPaused(true)}
+          bounces={true}
+          alwaysBounceHorizontal={true}
+          overScrollMode="always"
+          onTouchStart={() => setWidgetsTouchPaused(true)}
           onMomentumScrollEnd={(e) => {
             setWidgetsTouchPaused(false);
             const page = Math.round(
@@ -958,7 +961,10 @@ export default function HomeScreen() {
               horizontal
               showsHorizontalScrollIndicator={false}
               contentContainerStyle={styles.pinnedStripContent}
-             bounces={true} alwaysBounceHorizontal={true} overScrollMode="always">
+              bounces={true}
+              alwaysBounceHorizontal={true}
+              overScrollMode="always"
+            >
               {pinnedTools.map((t) => {
                 const col = categoryColorMap[t.category] || theme.gold;
                 return (
@@ -1180,7 +1186,10 @@ export default function HomeScreen() {
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.guidesCarouselContent}
-         bounces={true} alwaysBounceHorizontal={true} overScrollMode="always">
+          bounces={true}
+          alwaysBounceHorizontal={true}
+          overScrollMode="always"
+        >
           {sortedPosts.map((post) => (
             <Pressable
               key={post.slug}

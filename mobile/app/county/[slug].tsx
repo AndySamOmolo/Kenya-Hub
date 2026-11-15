@@ -390,6 +390,8 @@ export default function CountyDetailScreen() {
         ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+        overScrollMode="always"
       >
         {/* Hero Card */}
         <View

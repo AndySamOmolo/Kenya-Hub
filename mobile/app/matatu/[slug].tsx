@@ -127,6 +127,8 @@ export default function MatatuRouteScreen() {
         ref={scrollRef}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+        overScrollMode="always"
       >
         {/* Route Hero Card */}
         <View

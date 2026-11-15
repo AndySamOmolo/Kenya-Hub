@@ -37,16 +37,29 @@ export function MobilePrefixFinder() {
     <View style={styles.toolWrap}>
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Phone Number or Prefix</Text>
-        <TextInput
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
             multiline={false}
             numberOfLines={1}
-          value={num}
-          onChangeText={setNum}
-          placeholder="e.g. 0722 123 456 or +254 733 123 456"
-          placeholderTextColor={theme.textMuted}
-          keyboardType="phone-pad"
-          style={styles.textInput}
-        />
+            value={num}
+            onChangeText={setNum}
+            placeholder="e.g. 0722 123 456 or +254 733 123 456"
+            placeholderTextColor={theme.textMuted}
+            keyboardType="phone-pad"
+            style={[styles.textInput, { paddingRight: 38 }]}
+          />
+          {num.length > 0 && (
+            <Pressable
+              onPress={() => setNum("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear phone number"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
       </View>
 
       {carrier ? (

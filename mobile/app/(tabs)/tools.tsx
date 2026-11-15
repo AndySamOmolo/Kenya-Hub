@@ -478,6 +478,12 @@ export default function ToolsScreen() {
         keyExtractor={(item) => item.slug}
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+        overScrollMode="always"
+        initialNumToRender={8}
+        maxToRenderPerBatch={8}
+        windowSize={7}
+        removeClippedSubviews={Platform.OS === "android"}
         ListHeaderComponent={
           <>
             {(query.trim() !== "" || category !== "all") &&
@@ -691,9 +697,12 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    minWidth: 0,
     height: "100%",
+    marginRight: 6,
     fontSize: 13,
     paddingVertical: 0,
+    paddingHorizontal: 0,
     textAlignVertical: "center",
     includeFontPadding: false,
   },

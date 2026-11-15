@@ -2984,84 +2984,90 @@ export const TESO_UNITS: CourseUnit[] = [
         "description": "Practice verified Teso (Ateso) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
         "words": [
-                {
-                        "target": "ekinok",
-                        "source": "Peace",
-                        "pronunciation": "e-ki-nok"
-                },
-                {
-                        "target": "Eyalama (Eyalama noi)",
-                        "source": "Thank you",
-                        "pronunciation": "eh-yah-lah-mah noy"
-                },
-                {
-                        "target": "ainapakin",
-                        "source": "Peace / well-being",
-                        "pronunciation": "ai-na-pa-kin"
-                },
-                {
-                        "target": "Eyalama noi",
-                        "source": "Thank you very much",
-                        "pronunciation": "e-ya-la-ma noi"
-                },
-                {
-                        "target": "Eyalama ewanyun (or Eyalama aanyun)",
-                        "source": "Nice to see you / Thank you for seeing me",
-                        "pronunciation": "eyalama ewanyun"
-                },
-                {
-                        "target": "Ijai biai? / Eyalama",
-                        "source": "How did you sleep? / Good morning (Ateso)",
-                        "pronunciation": "ijai-biai"
-                },
-                {
-                        "target": "Esokoni",
-                        "source": "Market / trading place (Ateso)",
-                        "pronunciation": "esokoni"
-                },
-                {
-                        "target": "Idaritos isio kadidengan ore wok",
-                        "source": "We keep brave at our homestead",
-                        "pronunciation": "idaritos isio kadidengan ore wok"
-                },
-                {
-                        "target": "Idaritos isio kwaiona ore wok",
-                        "source": "We keep bring at our homestead",
-                        "pronunciation": "idaritos isio kwaiona ore wok"
-                },
-                {
-                        "target": "Idaritos isio echokima ore wok",
-                        "source": "We keep cheap at our homestead",
-                        "pronunciation": "idaritos isio echokima ore wok"
-                },
-                {
-                        "target": "Idaritos isio mkuli ore wok",
-                        "source": "We keep cloth at our homestead",
-                        "pronunciation": "idaritos isio mkuli ore wok"
-                },
-                {
-                        "target": "Idaritos isio ibileri ore wok",
-                        "source": "We keep false at our homestead",
-                        "pronunciation": "idaritos isio ibileri ore wok"
-                }
+                  {
+                            "target": "Yoga",
+                            "source": "Hello",
+                            "pronunciation": "yo-ga"
+                  },
+                  {
+                            "target": "ekinok",
+                            "source": "Peace",
+                            "pronunciation": "e-ki-nok"
+                  },
+                  {
+                            "target": "Eyalama",
+                            "source": "Thank you",
+                            "pronunciation": "eh-yah-lah-mah noy"
+                  },
+                  {
+                            "target": "ainapakin",
+                            "source": "Peace / well-being",
+                            "pronunciation": "ai-na-pa-kin"
+                  },
+                  {
+                            "target": "Eyalama noi",
+                            "source": "Thank you very much",
+                            "pronunciation": "e-ya-la-ma noi"
+                  },
+                  {
+                            "target": "Ijai biai?",
+                            "source": "How did you sleep? / Good morning (Ateso)",
+                            "pronunciation": "ijai-biai"
+                  },
+                  {
+                            "target": "Esokoni",
+                            "source": "Market / trading place (Ateso)",
+                            "pronunciation": "esokoni"
+                  },
+                  {
+                            "target": "Akinyet",
+                            "source": "Fat",
+                            "pronunciation": "a-kinyet"
+                  },
+                  {
+                            "target": "akiring",
+                            "source": "Meat",
+                            "pronunciation": "ah-kee-reeng"
+                  },
+                  {
+                            "target": "akile",
+                            "source": "Milk",
+                            "pronunciation": "a-ki-le"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "ekinok",
-                        "source": "Peace"
-                },
-                {
-                        "target": "Eyalama (Eyalama noi)",
-                        "source": "Thank you"
-                },
-                {
-                        "target": "ainapakin",
-                        "source": "Peace / well-being"
-                },
-                {
-                        "target": "Eyalama noi",
-                        "source": "Thank you very much"
-                }
+                  {
+                            "target": "Eyalama noi",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "Ijai biai?",
+                            "source": "How did you sleep? / Good morning (Ateso)"
+                  },
+                  {
+                            "target": "Epaunt lok’ Uingereza",
+                            "source": "British Pound (GBP)"
+                  },
+                  {
+                            "target": "Epaunt Lok’ Sudan",
+                            "source": "Sudanese Pound (SDG)"
+                  },
+                  {
+                            "target": "Epaunt lok’ Misri",
+                            "source": "Egyptian Pound (EGP)"
+                  },
+                  {
+                            "target": "Akipi nuekaleete",
+                            "source": "Clean drinking water (Ateso)"
+                  },
+                  {
+                            "target": "Idaritos isio akiring ore wok",
+                            "source": "We keep meat at our homestead"
+                  },
+                  {
+                            "target": "Idaritos isio inyamat ore wok",
+                            "source": "We keep food at our homestead"
+                  }
         ]
 },
         {
@@ -3071,54 +3077,90 @@ export const TESO_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Teso (Ateso) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Idaritos isio loka polon ore wok",
-                        "source": "We keep great at our homestead",
-                        "pronunciation": "idaritos isio loka polon ore wok"
-                },
-                {
-                        "target": "Idaritos isio ekileng ore wok",
-                        "source": "We keep knife at our homestead",
-                        "pronunciation": "idaritos isio ekileng ore wok"
-                },
-                {
-                        "target": "Idaritos isio emumwa ore wok",
-                        "source": "We keep mtama at our homestead",
-                        "pronunciation": "idaritos isio emumwa ore wok"
-                },
-                {
-                        "target": "Kodara kadidengan kanuka angaleu naka itunga",
-                        "source": "Protect brave for community health",
-                        "pronunciation": "kodara kadidengan kanuka angaleu naka itunga"
-                },
-                {
-                        "target": "mamai",
-                        "source": "Uncle (maternal)",
-                        "pronunciation": "ma-mai"
-                },
-                {
-                        "target": "apese (pl. apesur)",
-                        "source": "Girl (pl. girls)",
-                        "pronunciation": "apese"
-                }
+                  {
+                            "target": "itomon",
+                            "source": "Ten",
+                            "pronunciation": "ee-toh-mohn"
+                  },
+                  {
+                            "target": "ikany-kape",
+                            "source": "Six",
+                            "pronunciation": "ee-kah-ny kah-peh"
+                  },
+                  {
+                            "target": "iyarei",
+                            "source": "Two",
+                            "pronunciation": "ee-yah-reh-ee / ah-ah-reh-ee"
+                  },
+                  {
+                            "target": "idiope",
+                            "source": "One",
+                            "pronunciation": "ee-dee-oh-peh / ah-dee-oh-peh"
+                  },
+                  {
+                            "target": "ikany-kaoŋon",
+                            "source": "Nine",
+                            "pronunciation": "ikany-kao on"
+                  },
+                  {
+                            "target": "ikany",
+                            "source": "Five",
+                            "pronunciation": "ee-kah-ny / ah-kah-ny"
+                  },
+                  {
+                            "target": "ioŋon",
+                            "source": "Four",
+                            "pronunciation": "io on"
+                  },
+                  {
+                            "target": "ikany-kauni",
+                            "source": "Eight",
+                            "pronunciation": "ee-kah-ny kah-oo-nee"
+                  },
+                  {
+                            "target": "ikany-kaare",
+                            "source": "Seven",
+                            "pronunciation": "ee-kah-ny kah-reh"
+                  },
+                  {
+                            "target": "iuni",
+                            "source": "Three",
+                            "pronunciation": "ee-oo-nee / ah-oo-nee"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Idaritos isio loka polon ore wok",
-                        "source": "We keep great at our homestead"
-                },
-                {
-                        "target": "Idaritos isio ekileng ore wok",
-                        "source": "We keep knife at our homestead"
-                },
-                {
-                        "target": "Idaritos isio emumwa ore wok",
-                        "source": "We keep mtama at our homestead"
-                },
-                {
-                        "target": "Kodara kadidengan kanuka angaleu naka itunga",
-                        "source": "Protect brave for community health"
-                }
+                  {
+                            "target": "akais aangon",
+                            "source": "Forty (40)"
+                  },
+                  {
+                            "target": "akais akany",
+                            "source": "Fifty (50)"
+                  },
+                  {
+                            "target": "akais aare",
+                            "source": "Twenty (20)"
+                  },
+                  {
+                            "target": "akais auni",
+                            "source": "Thirty (30)"
+                  },
+                  {
+                            "target": "edwe, epese, ekoko",
+                            "source": "Child"
+                  },
+                  {
+                            "target": "ndachakang epesi",
+                            "source": "Sister"
+                  },
+                  {
+                            "target": "ikoku (pl. idwe",
+                            "source": "Child (pl. children)"
+                  },
+                  {
+                            "target": "Koyaik ikoku yen edeka adekis atipet",
+                            "source": "Take the sick child to the health clinic immediately"
+                  }
         ]
 }
     ]

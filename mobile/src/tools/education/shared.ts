@@ -201,9 +201,15 @@ export function createStyles(colors: ThemeColors) {
     },
     searchInput: {
       flex: 1,
+      minWidth: 0,
       marginLeft: 8,
+      marginRight: 6,
       color: colors.textPrimary,
-      fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+      fontSize: 13,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
+      textAlignVertical: "center",
+      includeFontPadding: false,
     },
     proverbCard: {
       backgroundColor: colors.bgCard,

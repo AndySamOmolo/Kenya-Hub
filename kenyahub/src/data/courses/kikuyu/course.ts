@@ -2504,8 +2504,8 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
-            "target": "nda",
-            "source": "abdomen",
+            "target": "nda (ni ya)",
+            "source": "It is of (Mombasa contracted copula)",
             "pronunciation": "nda"
           },
           {
@@ -3757,9 +3757,9 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "pronunciation": "no-niweo"
           },
           {
-            "target": "Aze [Axe] = Ithanwa (Ma-) (p. 18)",
-            "source": "Key Original 1904 Printer's Errata & Ditto-Mark Shifts Audited Line-by-Line Across",
-            "pronunciation": "aze-ithanwa"
+            "target": "ithanwa (pl. mathanwa)",
+            "source": "Axe",
+            "pronunciation": "i-tha-nwa"
           }
         ],
         "sentences": [
@@ -3880,9 +3880,9 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "pronunciation": "aturi-smiths"
           },
           {
-            "target": "68 Parallel Ravines",
-            "source": "All 68 Ravines, 9 Named Stages & First Ascent of Mount Kenia across 5 Vertical Zones",
-            "pronunciation": "68-parallel-ravines"
+            "target": "Kĩrĩnyaga",
+            "source": "Mount Kenya",
+            "pronunciation": "ki-ri-nya-ga"
           }
         ],
         "sentences": [
@@ -3989,111 +3989,90 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "description": "Practice verified Kikuyu (Gĩkũyũ) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
         "words": [
-                {
-                        "target": "Kotaithorana",
-                        "source": "Peace (to make)",
-                        "pronunciation": "kotaithorana"
-                },
-                {
-                        "target": "horeri. -ega",
-                        "source": "Peaceable, adj",
-                        "pronunciation": "horeri -ega"
-                },
-                {
-                        "target": "Mutaithorani (A-)",
-                        "source": "Peacemaker, n",
-                        "pronunciation": "mutaithorani"
-                },
-                {
-                        "target": "a kikenni",
-                        "source": "Welcome, adj",
-                        "pronunciation": "a kikenni"
-                },
-                {
-                        "target": "Koohera",
-                        "source": "Excuse, v / Pardon, v",
-                        "pronunciation": "koohera"
-                },
-                {
-                        "target": "Muhoro, ne muhoro",
-                        "source": "Good morning, good-day, etc",
-                        "pronunciation": "muhoro"
-                },
-                {
-                        "target": "Koonya wega",
-                        "source": "Thank, v",
-                        "pronunciation": "koonya wega"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Ngondu kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce sheep in our county",
-                        "pronunciation": "arĩmi nĩmarutaga ngondu kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Ndinoho kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce snail in our county",
-                        "pronunciation": "arĩmi nĩmarutaga ndinoho kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Nyama ya se kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce snake in our county",
-                        "pronunciation": "arĩmi nĩmarutaga nyama ya se kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Njage kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce zebra in our county",
-                        "pronunciation": "arĩmi nĩmarutaga njage kaũndĩ-inĩ gaitũ"
-                }
+                  {
+                            "target": "Wĩ mwega?",
+                            "source": "Hello",
+                            "pronunciation": "wee mweh-gah / nee-ah-tee-ah"
+                  },
+                  {
+                            "target": "thayũ",
+                            "source": "Peace",
+                            "pronunciation": "tha-yu"
+                  },
+                  {
+                            "target": "Koonya wega",
+                            "source": "Thank",
+                            "pronunciation": "koonya we-ga"
+                  },
+                  {
+                            "target": "Komindja",
+                            "source": "Bless",
+                            "pronunciation": "ko-mindja"
+                  },
+                  {
+                            "target": "kuenda",
+                            "source": "Please",
+                            "pronunciation": "kuenda"
+                  },
+                  {
+                            "target": "Koohera",
+                            "source": "Pardon",
+                            "pronunciation": "koo-he-ra"
+                  },
+                  {
+                            "target": "Kogeizia",
+                            "source": "Salute",
+                            "pronunciation": "ko-gei-zia"
+                  },
+                  {
+                            "target": "-a kikenni",
+                            "source": "Welcome",
+                            "pronunciation": "a ki-kenni"
+                  },
+                  {
+                            "target": "Tiguoni uhoro",
+                            "source": "Farewell",
+                            "pronunciation": "ti-guo-ni u-ho-ro"
+                  },
+                  {
+                            "target": "Kegaithio",
+                            "source": "Greeting",
+                            "pronunciation": "kegaithio"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Nĩmoĩ Kochiria wega",
-                        "source": "They know how to judge well"
-                },
-                {
-                        "target": "Tũrathiĩ Kolela rĩu",
-                        "source": "We are going to mourn now"
-                },
-                {
-                        "target": "Nĩmoĩ Kolela wega",
-                        "source": "They know how to mourn well"
-                },
-                {
-                        "target": "Tũrathiĩ Kolutera rĩu",
-                        "source": "We are going to offer now"
-                },
-                {
-                        "target": "Nĩmoĩ Kolutera wega",
-                        "source": "They know how to offer well"
-                },
-                {
-                        "target": "Tũrathiĩ Kogwaza rĩu",
-                        "source": "We are going to order now"
-                },
-                {
-                        "target": "Nĩmoĩ Kogwaza wega",
-                        "source": "They know how to order well"
-                },
-                {
-                        "target": "Tũrathiĩ Koekera rĩu",
-                        "source": "We are going to place now"
-                },
-                {
-                        "target": "Nĩmoĩ Koekera wega",
-                        "source": "They know how to place well"
-                },
-                {
-                        "target": "Tũrathiĩ Kohanda rĩu",
-                        "source": "We are going to plant now"
-                },
-                {
-                        "target": "Nĩmoĩ Kohanda wega",
-                        "source": "They know how to plant well"
-                },
-                {
-                        "target": "Tũrathiĩ Kokinya rĩu",
-                        "source": "We are going to reach now"
-                }
+                  {
+                            "target": "Wĩ mwega?",
+                            "source": "Hello"
+                  },
+                  {
+                            "target": "Koonya wega",
+                            "source": "Thank"
+                  },
+                  {
+                            "target": "Wega. Uhoro",
+                            "source": "Peace"
+                  },
+                  {
+                            "target": "-a kikenni",
+                            "source": "Welcome"
+                  },
+                  {
+                            "target": "Tiguoni uhoro",
+                            "source": "Farewell"
+                  },
+                  {
+                            "target": "Nĩ wega",
+                            "source": "Thank you"
+                  },
+                  {
+                            "target": "Kotongia. Kotongio",
+                            "source": "Bless, to"
+                  },
+                  {
+                            "target": "Kuitika ni wega. Kohoya",
+                            "source": "Thank, to"
+                  }
         ]
 },
       {
@@ -4103,116 +4082,90 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Kikuyu (Gĩkũyũ) sentences for healthcare, transport, and community safety.",
         "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
         "words": [
-                {
-                        "target": "Arĩmi nĩmarutaga Bea kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce mouse in our county",
-                        "pronunciation": "arĩmi nĩmarutaga bea kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Nyamuyathi. Muraru kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce viper in our county",
-                        "pronunciation": "arĩmi nĩmarutaga nyamuyathi muraru kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Hiti kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce hyena in our county",
-                        "pronunciation": "arĩmi nĩmarutaga hiti kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Nyamo kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce beast in our county",
-                        "pronunciation": "arĩmi nĩmarutaga nyamo kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
-                        "source": "How much is hawk at the market?",
-                        "pronunciation": "thogora wa hongo thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
-                        "source": "How much is herd at the market?",
-                        "pronunciation": "thogora wa ikunde thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Izagiro thoko-inĩ nĩigana?",
-                        "source": "How much is hoof at the market?",
-                        "pronunciation": "thogora wa izagiro thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Isea thoko-inĩ nĩigana?",
-                        "source": "How much is horn at the market?",
-                        "pronunciation": "thogora wa isea thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Morosi thoko-inĩ nĩigana?",
-                        "source": "How much is lion at the market?",
-                        "pronunciation": "thogora wa morosi thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Nyumbu thoko-inĩ nĩigana?",
-                        "source": "How much is mule at the market?",
-                        "pronunciation": "thogora wa nyumbu thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Kesita thoko-inĩ nĩigana?",
-                        "source": "How much is tail at the market?",
-                        "pronunciation": "thogora wa kesita thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Ndutu thoko-inĩ nĩigana?",
-                        "source": "How much is worm at the market?",
-                        "pronunciation": "thogora wa ndutu thoko-inĩ nĩigana"
-                }
+                  {
+                            "target": "Ithathatũ",
+                            "source": "Six",
+                            "pronunciation": "ithathatu"
+                  },
+                  {
+                            "target": "imue",
+                            "source": "One",
+                            "pronunciation": "i-mue"
+                  },
+                  {
+                            "target": "ikumi",
+                            "source": "Ten",
+                            "pronunciation": "i-ku-mi"
+                  },
+                  {
+                            "target": "igiri",
+                            "source": "Two",
+                            "pronunciation": "i-gi-ri"
+                  },
+                  {
+                            "target": "andu ere",
+                            "source": "Both",
+                            "pronunciation": "andu ere"
+                  },
+                  {
+                            "target": "ithanu",
+                            "source": "Five",
+                            "pronunciation": "itha-nu"
+                  },
+                  {
+                            "target": "inya",
+                            "source": "Four",
+                            "pronunciation": "inya"
+                  },
+                  {
+                            "target": "kishuinji",
+                            "source": "Half",
+                            "pronunciation": "kishuinji"
+                  },
+                  {
+                            "target": "ikenda",
+                            "source": "Nine",
+                            "pronunciation": "i-kenda"
+                  },
+                  {
+                            "target": "irrimue",
+                            "source": "Once",
+                            "pronunciation": "irri-mue"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Nĩmoĩ Kokinya wega",
-                        "source": "They know how to reach well"
-                },
-                {
-                        "target": "Tũrathiĩ Koetekia rĩu",
-                        "source": "We are going to reply now"
-                },
-                {
-                        "target": "Nĩmoĩ Koetekia wega",
-                        "source": "They know how to reply well"
-                },
-                {
-                        "target": "Thogora wa Kengangi thoko-inĩ nĩigana?",
-                        "source": "How much is crab at the market?"
-                },
-                {
-                        "target": "Thogora wa Ndira-hoge thoko-inĩ nĩigana?",
-                        "source": "How much is dove at the market?"
-                },
-                {
-                        "target": "Thogora wa Zamberi thoko-inĩ nĩigana?",
-                        "source": "How much is duck at the market?"
-                },
-                {
-                        "target": "Thogora wa Kiongoyo thoko-inĩ nĩigana?",
-                        "source": "How much is fish at the market?"
-                },
-                {
-                        "target": "Thogora wa Nguku thoko-inĩ nĩigana?",
-                        "source": "How much is fowl at the market?"
-                },
-                {
-                        "target": "Thogora wa Kuira thoko-inĩ nĩigana?",
-                        "source": "How much is frog at the market?"
-                },
-                {
-                        "target": "Thogora wa Mburi thoko-inĩ nĩigana?",
-                        "source": "How much is goat at the market?"
-                },
-                {
-                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
-                        "source": "How much is hawk at the market?"
-                },
-                {
-                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
-                        "source": "How much is herd at the market?"
-                }
+                  {
+                            "target": "Igiri. Eri",
+                            "source": "Two"
+                  },
+                  {
+                            "target": "tandātū, I-tha-ndātū",
+                            "source": "Six"
+                  },
+                  {
+                            "target": "andu ere",
+                            "source": "Both"
+                  },
+                  {
+                            "target": "kishuinji, kechuje or etigia",
+                            "source": "Half"
+                  },
+                  {
+                            "target": "Inna. Inya",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "tāno, I-thāno",
+                            "source": "Five"
+                  },
+                  {
+                            "target": "mirongo ithanu",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "ikinya or kuambirrira",
+                            "source": "First"
+                  }
         ]
 }
     ]

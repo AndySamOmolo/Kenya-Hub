@@ -713,31 +713,70 @@ export function LandlordTenantTool() {
         </Text>
 
         <Text style={styles.detailLabel}>Tenant Full Name</Text>
-        <TextInput
-          value={tenantName}
-          onChangeText={setTenantName}
-          placeholder="e.g. Jane Wanjiku"
-          placeholderTextColor={theme.textMuted}
-          style={[styles.searchBar, { color: theme.textPrimary }]}
-        />
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
+            value={tenantName}
+            onChangeText={setTenantName}
+            placeholder="e.g. Jane Wanjiku"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.searchBar, { color: theme.textPrimary, paddingRight: 36 }]}
+          />
+          {tenantName.length > 0 && (
+            <Pressable
+              onPress={() => setTenantName("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear tenant name"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
 
         <Text style={styles.detailLabel}>Landlord / Caretaker / Agency Name</Text>
-        <TextInput
-          value={landlordName}
-          onChangeText={setLandlordName}
-          placeholder="e.g. Sunrise Properties Ltd"
-          placeholderTextColor={theme.textMuted}
-          style={[styles.searchBar, { color: theme.textPrimary }]}
-        />
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
+            value={landlordName}
+            onChangeText={setLandlordName}
+            placeholder="e.g. Sunrise Properties Ltd"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.searchBar, { color: theme.textPrimary, paddingRight: 36 }]}
+          />
+          {landlordName.length > 0 && (
+            <Pressable
+              onPress={() => setLandlordName("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear landlord name"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
 
         <Text style={styles.detailLabel}>Apartment / House & Estate</Text>
-        <TextInput
-          value={unitNumber}
-          onChangeText={setUnitNumber}
-          placeholder="e.g. House B4, Kilimani"
-          placeholderTextColor={theme.textMuted}
-          style={[styles.searchBar, { color: theme.textPrimary }]}
-        />
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
+            value={unitNumber}
+            onChangeText={setUnitNumber}
+            placeholder="e.g. House B4, Kilimani"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.searchBar, { color: theme.textPrimary, paddingRight: 36 }]}
+          />
+          {unitNumber.length > 0 && (
+            <Pressable
+              onPress={() => setUnitNumber("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear apartment or unit number"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
 
         <KESInput
           label="Withheld Deposit Amount (KES)"
@@ -752,13 +791,26 @@ export function LandlordTenantTool() {
         />
 
         <Text style={styles.detailLabel}>Date Vacated</Text>
-        <TextInput
-          value={vacateDate}
-          onChangeText={setVacateDate}
-          placeholder="e.g. 30th September 2026"
-          placeholderTextColor={theme.textMuted}
-          style={[styles.searchBar, { color: theme.textPrimary }]}
-        />
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
+            value={vacateDate}
+            onChangeText={setVacateDate}
+            placeholder="e.g. 30th September 2026"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.searchBar, { color: theme.textPrimary, paddingRight: 36 }]}
+          />
+          {vacateDate.length > 0 && (
+            <Pressable
+              onPress={() => setVacateDate("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear date vacated"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
 
         <View
           style={{

@@ -1,6 +1,7 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
 import { Text, View, TextInput, Pressable } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { useTheme, androidRipple, pressableStyle } from "../../theme";
 import { styles } from "./shared";
 import cbcData from "../../shared/data/cbc-curriculum.json";
@@ -82,29 +83,43 @@ export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => voi
         <Text style={[styles.areaDesc, { color: theme.textSecondary, marginBottom: 8 }]}>
           Enter your child{"'"}s year of birth or pick a preset below to view their expected CBC grade and 8-4-4 equivalent.
         </Text>
-        <TextInput
-          multiline={false}
-          numberOfLines={1}
-          value={birthYear === "0" ? "" : birthYear}
-          onChangeText={(txt) => {
-            const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
-            setBirthYear(cleaned === "0" ? "" : cleaned);
-          }}
-          keyboardType="numeric"
-          placeholder="e.g. 2017"
-          placeholderTextColor={theme.textMuted}
-          style={{
-            backgroundColor: theme.bgSecondary,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 12,
-            paddingHorizontal: 14,
-            paddingVertical: 10,
-            color: theme.textPrimary,
-            fontFamily: "Outfit_700Bold",
-            fontSize: 16,
-          }}
-        />
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
+            multiline={false}
+            numberOfLines={1}
+            value={birthYear === "0" ? "" : birthYear}
+            onChangeText={(txt) => {
+              const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+              setBirthYear(cleaned === "0" ? "" : cleaned);
+            }}
+            keyboardType="numeric"
+            placeholder="e.g. 2017"
+            placeholderTextColor={theme.textMuted}
+            style={{
+              backgroundColor: theme.bgSecondary,
+              borderWidth: 1,
+              borderColor: theme.border,
+              borderRadius: 12,
+              paddingLeft: 14,
+              paddingRight: 38,
+              paddingVertical: 10,
+              color: theme.textPrimary,
+              fontFamily: "Outfit_700Bold",
+              fontSize: 16,
+            }}
+          />
+          {birthYear !== "" && birthYear !== "0" && (
+            <Pressable
+              onPress={() => setBirthYear("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear birth year"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
         <ExpandablePillRow contentContainerStyle={[styles.horizontalPills, { marginTop: 8 }]}>
           {["2022", "2020", "2018", "2017", "2015", "2013", "2011", "2009"].map((yr) => {
             const active = birthYear === yr;

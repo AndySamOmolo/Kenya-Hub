@@ -2821,84 +2821,90 @@ export const EMBU_UNITS: CourseUnit[] = [
         "description": "Practice verified Embu (Kĩembu) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
         "words": [
-                {
-                        "target": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
-                        "source": "Hello",
-                        "pronunciation": "wee mweh-gah"
-                },
-                {
-                        "target": "Nĩ wega (Nĩ wega mũno)",
-                        "source": "Thank you",
-                        "pronunciation": "nee weh-gah moo-noh"
-                },
-                {
-                        "target": "Thayũ",
-                        "source": "Peace / blessing",
-                        "pronunciation": "thayu"
-                },
-                {
-                        "target": "Tigwa na wega / Tigwaa na thayũ",
-                        "source": "Goodbye, be blessed",
-                        "pronunciation": "tigwa na wega / tigwaa na thayu"
-                },
-                {
-                        "target": "Nĩwega mũno",
-                        "source": "Thank you very much",
-                        "pronunciation": "ni-we-ga mu-no"
-                },
-                {
-                        "target": "Mve maĩ / Ngundia maĩ",
-                        "source": "Please give me some water",
-                        "pronunciation": "mve mai / ngundia mai"
-                },
-                {
-                        "target": "Ndarauka wega, nĩ wega mũno",
-                        "source": "I woke up well, thank you",
-                        "pronunciation": "nda-rau-ka we-ga nee we-ga moo-no"
-                },
-                {
-                        "target": "Thiĩ na thayũ",
-                        "source": "Safe journey / Go in peace",
-                        "pronunciation": "thiee na tha-yoo"
-                },
-                {
-                        "target": "Tũrĩmenyerera Ivinda mũciĩ witũ",
-                        "source": "We keep era at our homestead",
-                        "pronunciation": "tũrĩmenyerera ivinda mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera KI mũciĩ witũ",
-                        "source": "We keep in the morning at our homestead",
-                        "pronunciation": "tũrĩmenyerera ki mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Wĩ mwega mũciĩ witũ",
-                        "source": "We keep good morning at our homestead",
-                        "pronunciation": "tũrĩmenyerera wĩ mwega mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera UT mũciĩ witũ",
-                        "source": "We keep in the afternoon at our homestead",
-                        "pronunciation": "tũrĩmenyerera ut mũciĩ witũ"
-                }
+                  {
+                            "target": "Wĩ mwega?",
+                            "source": "Hello",
+                            "pronunciation": "wee mweh-gah"
+                  },
+                  {
+                            "target": "Nĩ wega",
+                            "source": "Thank you",
+                            "pronunciation": "nee weh-gah moo-noh"
+                  },
+                  {
+                            "target": "Thayũ",
+                            "source": "Peace / blessing",
+                            "pronunciation": "thayu"
+                  },
+                  {
+                            "target": "Tigwa na wega",
+                            "source": "Goodbye, be blessed",
+                            "pronunciation": "tigwa na wega / tigwaa na thayu"
+                  },
+                  {
+                            "target": "Nĩwega mũno",
+                            "source": "Thank you very much",
+                            "pronunciation": "ni-we-ga mu-no"
+                  },
+                  {
+                            "target": "Thiĩ na thayũ",
+                            "source": "Safe journey / Go in peace",
+                            "pronunciation": "thiee na tha-yoo"
+                  },
+                  {
+                            "target": "Gī-kwa",
+                            "source": "Yam",
+                            "pronunciation": "gi-kwa"
+                  },
+                  {
+                            "target": "ĩtumbĩ",
+                            "source": "Egg",
+                            "pronunciation": "itumbi"
+                  },
+                  {
+                            "target": "irio",
+                            "source": "Food",
+                            "pronunciation": "i-rio"
+                  },
+                  {
+                            "target": "cumbĩ",
+                            "source": "Salt",
+                            "pronunciation": "cumbi"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Wĩ mwega? (resp. Ndĩ mwega) / Niatĩa?",
-                        "source": "Hello"
-                },
-                {
-                        "target": "Nĩ wega (Nĩ wega mũno)",
-                        "source": "Thank you"
-                },
-                {
-                        "target": "Thayũ",
-                        "source": "Peace / blessing"
-                },
-                {
-                        "target": "Tigwa na wega / Tigwaa na thayũ",
-                        "source": "Goodbye, be blessed"
-                }
+                  {
+                            "target": "Wĩ mwega?",
+                            "source": "Hello"
+                  },
+                  {
+                            "target": "Nĩ wega",
+                            "source": "Thank you"
+                  },
+                  {
+                            "target": "Tigwa na wega",
+                            "source": "Goodbye, be blessed"
+                  },
+                  {
+                            "target": "Nĩwega mũno",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "Ndarauka wega, nĩ wega mũno",
+                            "source": "I woke up well, thank you"
+                  },
+                  {
+                            "target": "Thiĩ na thayũ",
+                            "source": "Safe journey / Go in peace"
+                  },
+                  {
+                            "target": "N-g'aragu. M-būta",
+                            "source": "Hunger"
+                  },
+                  {
+                            "target": "Ma-guta. Ṅ-gorono",
+                            "source": "Fat, oil"
+                  }
         ]
 },
         {
@@ -2908,54 +2914,90 @@ export const EMBU_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Embu (Kĩembu) sentences for healthcare, transport, and community safety.",
         "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
         "words": [
-                {
-                        "target": "Tũrĩmenyerera Kī-būtū mũciĩ witũ",
-                        "source": "We keep hoe at our homestead",
-                        "pronunciation": "tũrĩmenyerera kī-būtū mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Kī-gwū mũciĩ witũ",
-                        "source": "We keep song at our homestead",
-                        "pronunciation": "tũrĩmenyerera kī-gwū mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Ngai nĩ mwaro mũciĩ witũ",
-                        "source": "We keep god is good at our homestead",
-                        "pronunciation": "tũrĩmenyerera ngai nĩ mwaro mũciĩ witũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera kiama kĩa athuri mũciĩ witũ",
-                        "source": "We keep council of elders at our homestead",
-                        "pronunciation": "tũrĩmenyerera kiama kĩa athuri mũciĩ witũ"
-                },
-                {
-                        "target": "mũgeni (pl. ageni)",
-                        "source": "Guest, visitor, stranger",
-                        "pronunciation": "mugeni"
-                },
-                {
-                        "target": "mũndũ (pl. andũ) / muntũ (pl. antũ)",
-                        "source": "Person (pl. people) (Class 1/2)",
-                        "pronunciation": "mundu"
-                }
+                  {
+                            "target": "Ĩmwe",
+                            "source": "One",
+                            "pronunciation": "imwe"
+                  },
+                  {
+                            "target": "Igĩrĩ",
+                            "source": "Two",
+                            "pronunciation": "igiri"
+                  },
+                  {
+                            "target": "Ithathatũ",
+                            "source": "Six",
+                            "pronunciation": "ithathatu"
+                  },
+                  {
+                            "target": "Ikũmi",
+                            "source": "Ten",
+                            "pronunciation": "ikumi"
+                  },
+                  {
+                            "target": "Inya",
+                            "source": "Four",
+                            "pronunciation": "inya"
+                  },
+                  {
+                            "target": "Ithano",
+                            "source": "Five",
+                            "pronunciation": "itha-no"
+                  },
+                  {
+                            "target": "Kenda",
+                            "source": "Nine",
+                            "pronunciation": "kenda"
+                  },
+                  {
+                            "target": "Ithatũ",
+                            "source": "Three",
+                            "pronunciation": "ithatu"
+                  },
+                  {
+                            "target": "Mũgwanja",
+                            "source": "Seven",
+                            "pronunciation": "mugwanja"
+                  },
+                  {
+                            "target": "Inyanya",
+                            "source": "Eight",
+                            "pronunciation": "inyanya"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Tũrĩmenyerera Kī-būtū mũciĩ witũ",
-                        "source": "We keep hoe at our homestead"
-                },
-                {
-                        "target": "Tũrĩmenyerera Kī-gwū mũciĩ witũ",
-                        "source": "We keep song at our homestead"
-                },
-                {
-                        "target": "Tũrĩmenyerera Ngai nĩ mwaro mũciĩ witũ",
-                        "source": "We keep god is good at our homestead"
-                },
-                {
-                        "target": "Tũrĩmenyerera kiama kĩa athuri mũciĩ witũ",
-                        "source": "We keep council of elders at our homestead"
-                }
+                  {
+                            "target": "Mī-rōnggo ī-nā",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-tāno",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-gīrī",
+                            "source": "Twenty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-tātū",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+                            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)"
+                  },
+                  {
+                            "target": "Mū-rū wa maiya. Mū-ārī wa maitū",
+                            "source": "Sister"
+                  },
+                  {
+                            "target": "Mu-ru wa maiya",
+                            "source": "Brother"
+                  },
+                  {
+                            "target": "mũndũ mũrũme",
+                            "source": "Man / Men"
+                  }
         ]
 }
     ]

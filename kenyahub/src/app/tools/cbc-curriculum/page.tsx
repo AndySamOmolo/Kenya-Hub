@@ -2,6 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useEffect, useRef, useMemo } from "react";
+import { X } from "lucide-react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
@@ -175,30 +176,43 @@ export default function CBCCurriculumPage() {
               <label htmlFor="cbc-birth-year" className="text-xs font-semibold text-text-secondary">
                 Birth Year:
               </label>
-              <input
-                id="cbc-birth-year"
-                type="number"
-                inputMode="numeric"
-                min={2005}
-                max={2025}
-                value={birthYearInput}
-                onChange={(e) => {
-                  const raw = e.target.value.replace(/[^0-9]/g, "");
-                  setBirthYearInput(raw);
-                  const n = Number(raw);
-                  if (raw.length === 4 && n >= 2000 && n <= 2026) {
-                    setBirthYear(n);
-                  }
-                }}
-                onBlur={() => {
-                  const n = Number(birthYearInput);
-                  const clamped = !birthYearInput || isNaN(n) ? 2016 : Math.max(2005, Math.min(2025, n));
-                  setBirthYear(clamped);
-                  setBirthYearInput(String(clamped));
-                }}
-                placeholder="2016"
-                className="input-field w-28 text-sm font-bold text-center py-1.5"
-              />
+              <div className="relative">
+                <input
+                  id="cbc-birth-year"
+                  type="number"
+                  inputMode="numeric"
+                  min={2005}
+                  max={2025}
+                  value={birthYearInput}
+                  onChange={(e) => {
+                    const raw = e.target.value.replace(/[^0-9]/g, "");
+                    setBirthYearInput(raw);
+                    const n = Number(raw);
+                    if (raw.length === 4 && n >= 2000 && n <= 2026) {
+                      setBirthYear(n);
+                    }
+                  }}
+                  onBlur={() => {
+                    const n = Number(birthYearInput);
+                    const clamped = !birthYearInput || isNaN(n) ? 2016 : Math.max(2005, Math.min(2025, n));
+                    setBirthYear(clamped);
+                    setBirthYearInput(String(clamped));
+                  }}
+                  placeholder="2016"
+                  className="input-field w-32 text-sm font-bold text-left pl-3! pr-9! py-1.5"
+                  style={{ paddingLeft: "0.75rem", paddingRight: "2.25rem" }}
+                />
+                {birthYearInput && (
+                  <button
+                    type="button"
+                    onClick={() => setBirthYearInput("")}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear birth year"
+                  >
+                    <X className="w-3 h-3 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

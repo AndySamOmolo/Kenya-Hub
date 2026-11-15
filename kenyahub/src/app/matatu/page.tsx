@@ -5,7 +5,7 @@ import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { ArrowRight, Navigation } from "lucide-react";
+import { ArrowRight, Navigation, X } from "lucide-react";
 
 interface RouteItem {
   routeNumber: string;
@@ -289,25 +289,51 @@ export default function MatatuPage() {
             <label className="block text-xs font-semibold text-text-secondary mb-1">
               From Stage / Estate
             </label>
-            <input
-              type="text"
-              value={fromStage}
-              onChange={(e) => setFromStage(e.target.value)}
-              placeholder="e.g. Kencom, Westlands, Ngong, Nyali..."
-              className="input-field text-sm w-full"
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={fromStage}
+                onChange={(e) => setFromStage(e.target.value)}
+                placeholder="e.g. Kencom, Westlands, Ngong, Nyali..."
+                className="input-field text-sm w-full pr-10!"
+                style={{ paddingRight: "2.5rem" }}
+              />
+              {fromStage && (
+                <button
+                  type="button"
+                  onClick={() => setFromStage("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear origin stage"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
           </div>
           <div>
             <label className="block text-xs font-semibold text-text-secondary mb-1">
               To Destination / Stage
             </label>
-            <input
-              type="text"
-              value={toStage}
-              onChange={(e) => setToStage(e.target.value)}
-              placeholder="e.g. Karen,JKIA, Kondele, Juja..."
-              className="input-field text-sm w-full"
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={toStage}
+                onChange={(e) => setToStage(e.target.value)}
+                placeholder="e.g. Karen,JKIA, Kondele, Juja..."
+                className="input-field text-sm w-full pr-10!"
+                style={{ paddingRight: "2.5rem" }}
+              />
+              {toStage && (
+                <button
+                  type="button"
+                  onClick={() => setToStage("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear destination stage"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
 

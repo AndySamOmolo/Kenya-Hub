@@ -3721,64 +3721,90 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "description": "Practice verified Somali parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
         "words": [
-                {
-                        "target": "insha Allahh wa la hele",
-                        "source": "Please God, we may find it",
-                        "pronunciation": "insha allahh wa la he-le"
-                },
-                {
-                        "target": "mahadsanid (aad baad u mahadsan tahay)",
-                        "source": "Thank you (thank you very much)",
-                        "pronunciation": "mahadsanid"
-                },
-                {
-                        "target": "nabad gelyo",
-                        "source": "Goodbye (lit. enter into peace)",
-                        "pronunciation": "na-bad gelyo"
-                },
-                {
-                        "target": "Nabad / Ma nabad baa?",
-                        "source": "Peace / Hello (traditional greeting)",
-                        "pronunciation": "na-bad / ma na-bad baa"
-                },
-                {
-                        "target": "yafnan-ti",
-                        "source": "Goodness, health, Peace (Yibir register)",
-                        "pronunciation": "yafnan-ti"
-                },
-                {
-                        "target": "raali / raali ahow",
-                        "source": "Sorry / Excuse me",
-                        "pronunciation": "raali"
-                },
-                {
-                        "target": "nabat!",
-                        "source": "Peace, a greeting",
-                        "pronunciation": "nabat"
-                },
-                {
-                        "target": "’ss ka warren?",
-                        "source": "How are you?",
-                        "pronunciation": "’ss ka warren"
-                }
+                  {
+                            "target": "Nabad",
+                            "source": "Peace",
+                            "pronunciation": "nah-bahd"
+                  },
+                  {
+                            "target": "Nabad!",
+                            "source": "Hello",
+                            "pronunciation": "nah-bahd / mah nah-bahd bah"
+                  },
+                  {
+                            "target": "soo dhawoow",
+                            "source": "Welcome!",
+                            "pronunciation": "soo dhawoow"
+                  },
+                  {
+                            "target": "Mahadsanid",
+                            "source": "Thank you",
+                            "pronunciation": "mah-hahd-sah-need"
+                  },
+                  {
+                            "target": "Illàhhi maháddi",
+                            "source": "Thank God",
+                            "pronunciation": "illahhi ma-haddi"
+                  },
+                  {
+                            "target": "nabad gelyo",
+                            "source": "Goodbye (lit. enter into peace)",
+                            "pronunciation": "na-bad gelyo"
+                  },
+                  {
+                            "target": "yafnan-ti",
+                            "source": "Goodness, health, Peace (Yibir register)",
+                            "pronunciation": "yafnan-ti"
+                  },
+                  {
+                            "target": "raali",
+                            "source": "Sorry / Excuse me",
+                            "pronunciation": "raali"
+                  },
+                  {
+                            "target": "nabat!",
+                            "source": "Peace, a greeting",
+                            "pronunciation": "nabat"
+                  },
+                  {
+                            "target": "’ss ka warren?",
+                            "source": "How are you?",
+                            "pronunciation": "’ss ka warren"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "insha Allahh wa la hele",
-                        "source": "Please God, we may find it"
-                },
-                {
-                        "target": "mahadsanid (aad baad u mahadsan tahay)",
-                        "source": "Thank you (thank you very much)"
-                },
-                {
-                        "target": "nabad gelyo",
-                        "source": "Goodbye (lit. enter into peace)"
-                },
-                {
-                        "target": "Nabad / Ma nabad baa?",
-                        "source": "Peace / Hello (traditional greeting)"
-                }
+                  {
+                            "target": "soo dhawoow",
+                            "source": "Welcome!"
+                  },
+                  {
+                            "target": "Illàhhi maháddi",
+                            "source": "Thank God"
+                  },
+                  {
+                            "target": "insha Allahh wa la hele",
+                            "source": "Please God, we may find it"
+                  },
+                  {
+                            "target": "nabad gelyo",
+                            "source": "Goodbye (lit. enter into peace)"
+                  },
+                  {
+                            "target": "’ss ka warren?",
+                            "source": "How are you?"
+                  },
+                  {
+                            "target": "haid-di (Yibir: sahol-shi",
+                            "source": "Fat"
+                  },
+                  {
+                            "target": "cunto (soor = cooked grain",
+                            "source": "Food"
+                  },
+                  {
+                            "target": "ʻUni mayu",
+                            "source": "I eat not"
+                  }
         ]
 },
         {
@@ -3788,88 +3814,90 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Somali sentences for healthcare, transport, and community safety.",
         "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
         "words": [
-                {
-                        "target": "Imisa ayaa lagu iibiyaa macallim-iin-t-a suuqa?",
-                        "source": "How much is the teachers at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa macallim-iin-t-a suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa macallin-k-a suuqa?",
-                        "source": "How much is the teacher at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa macallin-k-a suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa tuugta suuqa?",
-                        "source": "How much is the thieves at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa tuugta suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa kuraasta suuqa?",
-                        "source": "How much is the chairs at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa kuraasta suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa carruurtu suuqa?",
-                        "source": "How much is the children at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa carruurtu suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa karto suuqa?",
-                        "source": "How much is can at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa karto suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa dhaqdo suuqa?",
-                        "source": "How much is breeds at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa dhaqdo suuqa"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa dumar-k-a suuqa?",
-                        "source": "How much is the women at the market?",
-                        "pronunciation": "imisa ayaa lagu iibiyaa dumar-k-a suuqa"
-                }
+                  {
+                            "target": "kow",
+                            "source": "One",
+                            "pronunciation": "kow / hal"
+                  },
+                  {
+                            "target": "laba",
+                            "source": "Two",
+                            "pronunciation": "la-ba"
+                  },
+                  {
+                            "target": "lix",
+                            "source": "Six",
+                            "pronunciation": "lix"
+                  },
+                  {
+                            "target": "toban",
+                            "source": "Ten",
+                            "pronunciation": "to-ban"
+                  },
+                  {
+                            "target": "afar",
+                            "source": "Four",
+                            "pronunciation": "a-far"
+                  },
+                  {
+                            "target": "shan",
+                            "source": "Five",
+                            "pronunciation": "shan"
+                  },
+                  {
+                            "target": "sagaal",
+                            "source": "Nine",
+                            "pronunciation": "sa-gaal"
+                  },
+                  {
+                            "target": "lábadabá",
+                            "source": "Both",
+                            "pronunciation": "la-ba-da-ba"
+                  },
+                  {
+                            "target": "bađ-ki",
+                            "source": "Half",
+                            "pronunciation": "bađ-ki"
+                  },
+                  {
+                            "target": "saddex",
+                            "source": "Three",
+                            "pronunciation": "saddex"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Imisa ayaa lagu iibiyaa derbi suuqa?",
-                        "source": "How much is wall at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa dibída suuqa?",
-                        "source": "How much is oxen at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa dibídu suuqa?",
-                        "source": "How much is the oxen at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa daaqayaan suuqa?",
-                        "source": "How much is are grazing at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa daaqaysaa suuqa?",
-                        "source": "How much is is grazing at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa kutub-t-a suuqa?",
-                        "source": "How much is the books at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa kitaab-k-a suuqa?",
-                        "source": "How much is the book at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa macallim-iin-t-a suuqa?",
-                        "source": "How much is the teachers at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa macallin-k-a suuqa?",
-                        "source": "How much is the teacher at the market?"
-                },
-                {
-                        "target": "Imisa ayaa lagu iibiyaa tuugta suuqa?",
-                        "source": "How much is the thieves at the market?"
-                }
+                  {
+                            "target": "Kobiyeto băn",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "aurtaidi lába",
+                            "source": "Two of my camels"
+                  },
+                  {
+                            "target": "aurtaida mid ba đintei",
+                            "source": "One of my camels has died"
+                  },
+                  {
+                            "target": "sóddon, afárton, kónton",
+                            "source": "Thirty (30), Forty (40), Fifty (50)"
+                  },
+                  {
+                            "target": "léhhdon, todobàton, sidèton, sagàshon",
+                            "source": "Sixty (60), Seventy (70), Eighty (80), Ninety (90)"
+                  },
+                  {
+                            "target": "ma lába ba?",
+                            "source": "Is it two?"
+                  },
+                  {
+                            "target": "tasu wa mid",
+                            "source": "That is one"
+                  },
+                  {
+                            "target": "midna ma tegin",
+                            "source": "Not one went"
+                  }
         ]
 }
     ]

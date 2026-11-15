@@ -5406,18 +5406,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "upunga-kidaka-kitale-dafu"
           },
           {
-            "target": "Bágala",
-            "source": "mlingote wa kalmi",
+            "target": "Bágala (Bughala)",
+            "source": "Large two-masted Arab dhow with mizzenmast (mlingote wa kalmi)",
             "pronunciation": "bágala"
           },
           {
             "target": "Awesia",
-            "source": "p. 38",
+            "source": "Large lateen-rigged Arab dhow",
             "pronunciation": "awesia"
           },
           {
             "target": "Bora kupata",
-            "source": "p. 65",
+            "source": "Better to get something than nothing",
             "pronunciation": "bora-kupata"
           },
           {
@@ -5462,7 +5462,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kassa nuss ya themuni",
-            "source": "15/16, p. 93",
+            "source": "Fifteen-sixteenths (15/16)",
             "pronunciation": "kassa-nuss-ya-themuni"
           }
         ],
@@ -5518,7 +5518,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kanzu ya ziki",
-            "source": "p. 299",
+            "source": "White robe with narrow red-and-white neck braid",
             "pronunciation": "kanzu-ya-ziki"
           },
           {
@@ -5651,9 +5651,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-a-a"
           },
           {
-            "target": "Mng’wpe",
-            "source": "Ex. 21, p. 21 fn. 1",
-            "pronunciation": "mngwpe"
+            "target": "Mng’upe",
+            "source": "Coastal marine fish species",
+            "pronunciation": "mng-upe"
           }
         ],
         "sentences": [
@@ -5692,8 +5692,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Studies I–XXI (pp. 24–131) and their complete bidirectional Exercise Keys (pp. 132–151) cover greetings, servants, teachers, house, table, kitchen, town, friendship, dress, market, shop, body, river/shore, plantation, safari, weather/time, up-country, animals, hospital, school, and religion.",
         "words": [
           {
-            "target": "nyonge",
-            "source": "pl. minyonge, pp. 26–27",
+            "target": "nyonge (pl. minyonge)",
+            "source": "Lowly / humble person or thing",
             "pronunciation": "nyonge"
           },
           {
@@ -5717,13 +5717,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "kituche"
           },
           {
-            "target": "mbwa",
-            "source": "< ni wa",
+            "target": "mbwa (ni wa)",
+            "source": "He/she is of (Mombasa contracted copula)",
             "pronunciation": "mbwa"
           },
           {
-            "target": "nda",
-            "source": "< ni ya, p. 93",
+            "target": "nda (ni ya)",
+            "source": "It is of (Mombasa contracted copula)",
             "pronunciation": "nda"
           }
         ],
@@ -5771,14 +5771,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "1-ratili"
           },
           {
-            "target": "1 Mani",
-            "source": "3 ratili",
-            "pronunciation": "1-mani"
+            "target": "Mani",
+            "source": "Weight measure of 3 pounds (ratili)",
+            "pronunciation": "ma-ni"
           },
           {
-            "target": "1 Farasila",
-            "source": "36 ratili, pp. 152–153",
-            "pronunciation": "1-farasila"
+            "target": "Farasila",
+            "source": "Weight measure of 36 pounds (ratili)",
+            "pronunciation": "fa-ra-si-la"
           },
           {
             "target": "Walio mbali huonana kwa barua, na barua ni nusu ya kuonana (Letter No.",
@@ -5797,22 +5797,22 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Fungat’o haiumizi mkono",
-            "source": "s.v. Ufungat’o, p. 236",
+            "source": "A firm clasp (or seven-day wedding feast) does not hurt the hand",
             "pronunciation": "fungato-haiumizi-mkono"
           },
           {
             "target": "Kisiwani",
-            "source": "= Mombasa, p. 77",
+            "source": "On the island (local name for Mombasa Island)",
             "pronunciation": "kisiwani"
           },
           {
             "target": "Kisauni",
-            "source": "= Frere Town, p. 77",
+            "source": "Mainland settlement across the creek from Mombasa",
             "pronunciation": "kisauni"
           },
           {
             "target": "Ughaibu",
-            "source": "betel mixture, p. 241",
+            "source": "Distant region; spiced betel-chewing mixture",
             "pronunciation": "ughaibu"
           }
         ],
@@ -5971,37 +5971,37 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Kidole kimoja hakivunji chawa",
-            "source": "p. 40",
+            "source": "One finger alone cannot crush a louse",
             "pronunciation": "kidole-kimoja-hakivunji-chawa"
           },
           {
             "target": "Elimu ndio mwanga uongozao",
-            "source": "p. 59",
+            "source": "Knowledge is the light that guides",
             "pronunciation": "elimu-ndio-mwanga-uongozao"
           },
           {
             "target": "Kufarakana hakuvunji kujuana",
-            "source": "p. 66",
+            "source": "Parting does not end mutual acquaintance",
             "pronunciation": "kufarakana-hakuvunji-kujuana"
           },
           {
             "target": "Fumbo humfumba mjinga",
-            "source": "p. 73",
+            "source": "A riddle mystifies only the unobservant",
             "pronunciation": "fumbo-humfumba-mjinga"
           },
           {
             "target": "Konzi ya maji haifumbatiki",
-            "source": "p. 74",
+            "source": "A fistful of water cannot be held tight",
             "pronunciation": "konzi-ya-maji-haifumbatiki"
           },
           {
             "target": "Liandikwalo halifutiki",
-            "source": "p. 78",
+            "source": "What is written cannot be erased",
             "pronunciation": "liandikwalo-halifutiki"
           },
           {
             "target": "Juhudi si pato",
-            "source": "p. 120",
+            "source": "Effort alone does not guarantee gain",
             "pronunciation": "juhudi-si-pato"
           },
           {
@@ -6011,37 +6011,37 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Haulambwi mkono mtupu",
-            "source": "p. 193",
+            "source": "An empty hand is not licked",
             "pronunciation": "haulambwi-mkono-mtupu"
           },
           {
             "target": "Mapenzi hayana macho",
-            "source": "p. 209",
+            "source": "Love has no eyes (Love is blind)",
             "pronunciation": "mapenzi-hayana-macho"
           },
           {
             "target": "Siogopi unene wa mbuyu",
-            "source": "p. 218",
+            "source": "I do not fear the thickness of the baobab tree",
             "pronunciation": "siogopi-unene-wa-mbuyu"
           },
           {
             "target": "Mchuzi ni maji",
-            "source": "p. 221",
+            "source": "Gravy is seasoned water",
             "pronunciation": "mchuzi-ni-maji"
           },
           {
             "target": "Mfinyanzi hulia gae",
-            "source": "p. 224",
+            "source": "The potter eats from a broken potsherd",
             "pronunciation": "mfinyanzi-hulia-gae"
           },
           {
             "target": "Mkata hana kinyongo",
-            "source": "p. 231",
+            "source": "A poor person cannot afford false pride",
             "pronunciation": "mkata-hana-kinyongo"
           },
           {
             "target": "Mlimwengu ni mwanawe",
-            "source": "p. 237",
+            "source": "A person of the world is known through their child",
             "pronunciation": "mlimwengu-ni-mwanawe"
           }
         ],
@@ -6094,9 +6094,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "masanduku"
           },
           {
-            "target": "20 Glossing Abbreviations (p. 244): 1, 2, 3... (Noun classes), AGR,",
-            "source": "Complete morphological glossing conventions used across Examples (1)–(32) in",
-            "pronunciation": "20-glossing-abbreviations-1"
+            "target": "kikosi",
+            "source": "Squad / unit",
+            "pronunciation": "ki-ko-si"
           }
         ],
         "sentences": [
@@ -6118,9 +6118,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "he-lsi-nki co-rpus / ko-rp"
           },
           {
-            "target": "Figure 1 (p. 234): amba RCs (N=155): 32 Restrictive (20.6%), 123",
-            "source": "Distribution of restrictive and non-restrictive relative clauses in the 440-RC",
-            "pronunciation": "a-mba / te-nsed"
+            "target": "ambaye / ambao",
+            "source": "Who / which (analytic relative pronoun)",
+            "pronunciation": "a-mba-ye"
           },
           {
             "target": "(14) Bwana yule [a-na-ye-sinzia] (p. 234)",
@@ -6133,9 +6133,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-li-kuwa-a-me-va-li-a-rubega-nyeupe"
           },
           {
-            "target": "Table 1 (p. 237): amba Restrictive Mean = 6.34 (SD 3.25),",
-            "source": "Mean and standard deviation of RC word length across restrictive and non-restrictive",
-            "pronunciation": "table-1-amba-restrictive"
+            "target": "wananchi",
+            "source": "Citizens / people of the nation",
+            "pronunciation": "wa-na-nchi"
           },
           {
             "target": "(21) Wa-po wananchi [amba-o kwa makusudi wa-na-ziba mifereji] vs. (22)",
@@ -6162,9 +6162,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "nyumba-i-li-kuwa-ya-kiswahili"
           },
           {
-            "target": "Table 2 (p. 240, N=440): HN = Subj, topic",
-            "source": "Complete 6-row contingency table of Head Noun grammatical role and topic status",
-            "pronunciation": "su-bje-ct / o-bje-ct / t-o-p-i-c"
+            "target": "waandishi",
+            "source": "Writers / authors",
+            "pronunciation": "wa-a-ndi-shi"
           },
           {
             "target": "(27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu",
@@ -6211,9 +6211,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "preface-higher-standard-exam"
           },
           {
-            "target": "500-yr Persian rice-paper MS",
-            "source": "fn. xii-1",
-            "pronunciation": "500-yr-persian-rice-paper-ms"
+            "target": "Waraka wa Kiarabu",
+            "source": "Classical Swahili-Arabic manuscript letter",
+            "pronunciation": "wa-ra-ka"
           },
           {
             "target": "masikini",
@@ -6255,9 +6255,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "banawasi"
           },
           {
-            "target": "8-Point Swahili Wind Compass (p. 69): N Kasikazi",
-            "source": "Complete 8-Point Swahili Wind Compass diagram on p. 69 of Beech (1918)",
-            "pronunciation": "8-point-swahili-wind-compass"
+            "target": "Kasikazi / Kusi / Matlai",
+            "source": "North monsoon wind / South monsoon wind / East wind",
+            "pronunciation": "ka-si-ka-zi"
           },
           {
             "target": "7 Uses of Connective -ka- (fn. 59-9): (a) Narrative (akaondoka akaenda)",
@@ -6622,116 +6622,90 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Practice verified Swahili (Kiswahili) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
         "words": [
-                {
-                        "target": "Taarifa rasmi za Bunge / Sheria za Bunge",
-                        "source": "Parliamentary Hansard / Legislature",
-                        "pronunciation": "tah-ah-ree-fah rah-smee zah boo-ngeh"
-                },
-                {
-                        "target": "Shirika la kiraia (pl. Mashirika ya kiraia)",
-                        "source": "Civil society organization",
-                        "pronunciation": "shee-ree-kah lah kee-rah-ee-ah"
-                },
-                {
-                        "target": "Uhakiki wa ukweli wa habari",
-                        "source": "Fact-checking / Verifying public claims",
-                        "pronunciation": "oo-hah-kee-kee wah oo-kweh-lee"
-                },
-                {
-                        "target": "Kitendakazi kinachojirudia (Recursion)",
-                        "source": "Recursive function (Computer Science)",
-                        "pronunciation": "kee-tehn-dah-kah-zee kee-nah-choh-jee-roo-dee-ah"
-                },
-                {
-                        "target": "ata; ondoléa gofiría",
-                        "source": "Pardon, v. a",
-                        "pronunciation": "ata"
-                },
-                {
-                        "target": "magófira; msameha",
-                        "source": "Pardon, s",
-                        "pronunciation": "magófira"
-                },
-                {
-                        "target": "saláma",
-                        "source": "Peace, s",
-                        "pronunciation": "saláma"
-                },
-                {
-                        "target": "ṣúkuru",
-                        "source": "Thank, v. a",
-                        "pronunciation": "ṣúkuru"
-                },
-                {
-                        "target": "Wakulima hulima Mkunde wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate the shrub during the rainy season",
-                        "pronunciation": "wakulima hulima mkunde wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima mbilingani wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate and mbilinganya during the rainy season",
-                        "pronunciation": "wakulima hulima mbilingani wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima Kiu wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate drought during the rainy season",
-                        "pronunciation": "wakulima hulima kiu wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima Changarawe wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate small stones during the rainy season",
-                        "pronunciation": "wakulima hulima changarawe wakati wa msimu wa mvua"
-                }
+                  {
+                            "target": "Hujambo",
+                            "source": "Hello",
+                            "pronunciation": "hoo-jahm-boh"
+                  },
+                  {
+                            "target": "amani",
+                            "source": "Peace",
+                            "pronunciation": "a-ma-ni"
+                  },
+                  {
+                            "target": "shukuru",
+                            "source": "Thank",
+                            "pronunciation": "shu-ku-ru"
+                  },
+                  {
+                            "target": "salimía",
+                            "source": "Greet",
+                            "pronunciation": "salimia"
+                  },
+                  {
+                            "target": "báriki",
+                            "source": "Bless",
+                            "pronunciation": "bariki"
+                  },
+                  {
+                            "target": "kupendeza",
+                            "source": "Please",
+                            "pronunciation": "ku-pende-za"
+                  },
+                  {
+                            "target": "salimia",
+                            "source": "Salute",
+                            "pronunciation": "sa-li-mia"
+                  },
+                  {
+                            "target": "samehe, achilia",
+                            "source": "Pardon",
+                            "pronunciation": "sa-me-he ach-i-lia"
+                  },
+                  {
+                            "target": "Kwaheri",
+                            "source": "Goodbye",
+                            "pronunciation": "kwah-heh-ree"
+                  },
+                  {
+                            "target": "Karibu",
+                            "source": "Welcome",
+                            "pronunciation": "kah-ree-boo"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ni muhimu fungua kila siku",
-                        "source": "It is important to untie every day"
-                },
-                {
-                        "target": "Tunataka tapika pamoja",
-                        "source": "We want to vomit together"
-                },
-                {
-                        "target": "Ni muhimu tapika kila siku",
-                        "source": "It is important to vomit every day"
-                },
-                {
-                        "target": "Tunataka fuma pamoja",
-                        "source": "We want to weave together"
-                },
-                {
-                        "target": "Ni muhimu fuma kila siku",
-                        "source": "It is important to weave every day"
-                },
-                {
-                        "target": "Tunataka andika pamoja",
-                        "source": "We want to write together"
-                },
-                {
-                        "target": "Ni muhimu andika kila siku",
-                        "source": "It is important to write every day"
-                },
-                {
-                        "target": "Tunataka mahali pamoja",
-                        "source": "We want to place together"
-                },
-                {
-                        "target": "Ni muhimu mahali kila siku",
-                        "source": "It is important to place every day"
-                },
-                {
-                        "target": "Tunataka kamata pamoja",
-                        "source": "We want to catch together"
-                },
-                {
-                        "target": "Ni muhimu kamata kila siku",
-                        "source": "It is important to catch every day"
-                },
-                {
-                        "target": "Tunataka kathi pamoja",
-                        "source": "We want to judge together"
-                }
+                  {
+                            "target": "samehe, achilia",
+                            "source": "Pardon"
+                  },
+                  {
+                            "target": "pendeza, furahisha",
+                            "source": "Please"
+                  },
+                  {
+                            "target": "samehe, achilia",
+                            "source": "Forgive"
+                  },
+                  {
+                            "target": "kua hẹri ya kuonána",
+                            "source": "Farewell"
+                  },
+                  {
+                            "target": "kua heri",
+                            "source": "Farewell!"
+                  },
+                  {
+                            "target": "kunrathi, nipe hisa yangu",
+                            "source": "Pardon me"
+                  },
+                  {
+                            "target": "mizinga ya salama",
+                            "source": "Salute of cannon"
+                  },
+                  {
+                            "target": "Marahaba !",
+                            "source": ". Thank you ! it is well !"
+                  }
         ]
 },
         {
@@ -6741,54 +6715,90 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Swahili (Kiswahili) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
         "words": [
-                {
-                        "target": "Wakulima hulima Mchongoma wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate a thorny shrub during the rainy season",
-                        "pronunciation": "wakulima hulima mchongoma wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima Mfenessi wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate a jack-fruit tree during the rainy season",
-                        "pronunciation": "wakulima hulima mfenessi wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima Hero wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate sometimes on legs during the rainy season",
-                        "pronunciation": "wakulima hulima hero wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "Wakulima hulima bumunda & ladu wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate soft baked cake during the rainy season",
-                        "pronunciation": "wakulima hulima bumunda  ladu wakati wa msimu wa mvua"
-                },
-                {
-                        "target": "upendavyo",
-                        "source": "As you please",
-                        "pronunciation": "u-pend-av-yo"
-                },
-                {
-                        "target": "Hiyari yako",
-                        "source": "As you please",
-                        "pronunciation": "hi-ya-ri ya-ko"
-                }
+                  {
+                            "target": "moja",
+                            "source": "One",
+                            "pronunciation": "mo-ja"
+                  },
+                  {
+                            "target": "sita",
+                            "source": "Six",
+                            "pronunciation": "si-ta"
+                  },
+                  {
+                            "target": "kumi",
+                            "source": "Ten",
+                            "pronunciation": "ku-mi"
+                  },
+                  {
+                            "target": "mbili",
+                            "source": "Two",
+                            "pronunciation": "mbi-li"
+                  },
+                  {
+                            "target": "wote wawili",
+                            "source": "Both",
+                            "pronunciation": "wo-te wa-wi-li"
+                  },
+                  {
+                            "target": "tano",
+                            "source": "Five",
+                            "pronunciation": "ta-no"
+                  },
+                  {
+                            "target": "'nne",
+                            "source": "Four",
+                            "pronunciation": "'nne"
+                  },
+                  {
+                            "target": "nusu",
+                            "source": "Half",
+                            "pronunciation": "nu-su"
+                  },
+                  {
+                            "target": "kenda, tissa",
+                            "source": "Nine",
+                            "pronunciation": "kenda tissa"
+                  },
+                  {
+                            "target": "mara moja",
+                            "source": "Once",
+                            "pronunciation": "ma-ra mo-ja"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ni muhimu kathi kila siku",
-                        "source": "It is important to judge every day"
-                },
-                {
-                        "target": "Tunataka mwaga pamoja",
-                        "source": "We want to spill together"
-                },
-                {
-                        "target": "Ni muhimu mwaga kila siku",
-                        "source": "It is important to spill every day"
-                },
-                {
-                        "target": "Wakulima hulima Mchongoma wakati wa msimu wa mvua",
-                        "source": "Farmers cultivate a thorny shrub during the rainy season"
-                }
+                  {
+                            "target": "mōja, Mō-sī",
+                            "source": "One"
+                  },
+                  {
+                            "target": "wīlī, Mb-īlī",
+                            "source": "Two"
+                  },
+                  {
+                            "target": "Sīta. M-tāndātū",
+                            "source": "Six"
+                  },
+                  {
+                            "target": "wote wawili",
+                            "source": "Both"
+                  },
+                  {
+                            "target": "kenda, tissa",
+                            "source": "Nine"
+                  },
+                  {
+                            "target": "mara moja",
+                            "source": "Once"
+                  },
+                  {
+                            "target": "nē, N-nē",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "mara mbili",
+                            "source": "Twice"
+                  }
         ]
 }
     ]

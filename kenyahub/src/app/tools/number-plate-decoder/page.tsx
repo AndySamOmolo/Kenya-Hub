@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import plateData from "@/data/number-plate-prefixes.json";
@@ -74,15 +75,28 @@ export default function NumberPlateDecoderPage() {
           <label className="block text-sm font-medium text-text-secondary mb-2" htmlFor="plate-input">
             Enter Kenyan Vehicle Number Plate
           </label>
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="e.g. KDU 450A, KDA 123B, GK A001, 47 CG 001A"
-            className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest"
-            maxLength={12}
-            id="plate-input"
-          />
+          <div className="relative">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="e.g. KDU 450A, KDA 123B, GK A001, 47 CG 001A"
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest pr-11!"
+              style={{ paddingRight: "2.75rem" }}
+              maxLength={12}
+              id="plate-input"
+            />
+            {input && (
+              <button
+                type="button"
+                onClick={() => setInput("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                aria-label="Clear number plate"
+              >
+                <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+              </button>
+            )}
+          </div>
           <div className="flex flex-wrap gap-1.5 mt-3">
             {["KDU 450A", "KDA 210M", "KCA 880J", "KBA 105C", "GK B412", "29 CD 1K", "KMFJ 320L"].map((sample) => (
               <button

@@ -1487,85 +1487,85 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "culturalNote": "Nishiguchi (2004, pp. 48–50) shows why neither pure stem-faithfulness, pure affix-faithfulness, pure sonority maximization, nor Donka Steriade's (2001) P-map prevocalic onset salience alone can account for Daasanach: instead, the interaction of *CC_Obs ('Avoid a sequence of a consonant followed by an obstruent'), Max-C_son-IO, and Faith-affix-IO predicts both sonorant survival in (25)–(28) and affix-obstruent survival in (29)–(30).",
         "words": [
           {
-            "target": "/zaaby + t + a/ → [zaaya] (G+C → G)",
-            "source": "Glide/Liquid + Stop deletion of affix /t/ (Ex. 25–26a–c, p. 47): you sew (Sasse 1976)",
-            "pronunciation": "pron"
+            "target": "zaaya (/zaaby + t + a/)",
+            "source": "You sew (2Sg)",
+            "pronunciation": "zaa-ya"
           },
           {
-            "target": "/maal + t + a/ → [maala]",
-            "source": "(you) hear",
-            "pronunciation": "pron"
+            "target": "maala (/maal + t + a/)",
+            "source": "You hear (2Sg)",
+            "pronunciation": "maa-la"
           },
           {
-            "target": "/həl + ta/ → [həlaa]",
-            "source": "(YOU) enter (2Pl)",
-            "pronunciation": "pron"
+            "target": "həlaa (/həl + ta/)",
+            "source": "You enter (2Pl)",
+            "pronunciation": "ha-laa"
           },
           {
-            "target": "/bil + t + o/ → [bilo] (L+C → L)",
-            "source": "bows (bow + Pl)",
-            "pronunciation": "pron"
+            "target": "bilo (/bil + t + o/)",
+            "source": "Bows (plural)",
+            "pronunciation": "bi-lo"
           },
           {
-            "target": "/fuur + t + a/ → [fuuDDA]",
-            "source": "Coalescence to voiced implosive geminate ɗɗ / DD: you open (Sasse 1976)",
-            "pronunciation": "pron"
+            "target": "fuuɗɗa (/fuur + t + a/)",
+            "source": "You open (2Sg)",
+            "pronunciation": "fuu-dda"
           },
           {
-            "target": "/cir + t + i/ → [ciɗɗi] (r+t → ɗɗ)",
-            "source": "you held for yourself (Tosco 2001: 187)",
-            "pronunciation": "pron"
+            "target": "ciɗɗi (/cir + t + i/)",
+            "source": "You held for yourself (2Sg Perf)",
+            "pronunciation": "ci-ddi"
           },
           {
-            "target": "/maɗ + t + i/ → [maɗɗi] (d+t → ɗɗ)",
-            "source": "you went and bought (2Sg Perf)",
-            "pronunciation": "pron"
+            "target": "maɗɗi (/maɗ + t + i/)",
+            "source": "You went and bought (2Sg Perf)",
+            "pronunciation": "ma-ddi"
           },
           {
-            "target": "/tuun + t + a/ → [tuunna]",
-            "source": "Nasal + Stop assimilation to geminate nn (Ex. 28a–b, p. 47): you beat (beat + 2Sg)",
-            "pronunciation": "pron"
+            "target": "tuunna (/tuun + t + a/)",
+            "source": "You beat (2Sg)",
+            "pronunciation": "tuun-na"
           },
           {
-            "target": "/zaas + am + t + a/ → [zaasanna]",
-            "source": "you see (see + 2Sg, Sasse 1976)",
-            "pronunciation": "pron"
+            "target": "zaasanna (/zaas + am + t + a/)",
+            "source": "You see (2Sg)",
+            "pronunciation": "zaa-san-na"
           },
           {
-            "target": "/us + te/ → [ute]",
-            "source": "Fricative + Stop deletion of stem /s/ preserving affix /t/: scoop (Past Mid Sg)",
-            "pronunciation": "pron"
+            "target": "ute (/us + te/)",
+            "source": "Scoop (Past Middle Sg)",
+            "pronunciation": "u-te"
           },
           {
-            "target": "/fuus + te/ → [fuute]",
-            "source": "tear off (Benefactive)",
-            "pronunciation": "pron"
+            "target": "fuute (/fuus + te/)",
+            "source": "Tear off (Benefactive)",
+            "pronunciation": "fuu-te"
           },
           {
-            "target": "/hees + t + i/ → [heeti]",
-            "source": "you asked (2Sg Perf)",
-            "pronunciation": "pron"
+            "target": "heeti (/hees + t + i/)",
+            "source": "You asked (2Sg Perf)",
+            "pronunciation": "hee-ti"
           },
           {
-            "target": "/ɗis + t + i/ → [ɗiti]",
-            "source": "you built for yourself (Tosco 2001: 187)",
-            "pronunciation": "pron"
+            "target": "ɗiti (/ɗis + t + i/)",
+            "source": "You built for yourself (2Sg Perf)",
+            "pronunciation": "di-ti"
           },
           {
-            "target": "/duus + t + i/ → [duuti] (s+t → t)",
-            "source": "you farted (Tosco 2001: 128)",
-            "pronunciation": "pron"
+            "target": "duuti (/duus + t + i/)",
+            "source": "You farted (2Sg Perf)",
+            "pronunciation": "duu-ti"
           },
           {
-            "target": "/it + su/ → [isu] (t+s → s)",
-            "source": "Stop + Fricative deletion of stem /t/ preserving affix /s/: tear apart + Middle = 'to",
+            "target": "isu (/it + su/)",
+            "source": "To tear apart / tear off (Middle)",
             "pronunciation": "i-su",
             "hint": "Nishiguchi (2004, Sect. 1 Ex. 4 p. 40 & Sect. 4 Ex. 30 p. 48, Tableau 4 p. 50)"
           },
           {
-            "target": "(32) *CC_Obs • (33) Max-C_son-IO • (34) Faith-affix-IO",
-            "source": "The 3 Optimality-Theoretic constraints governing Daasanach morpheme boundaries (pp.",
-            "pronunciation": "star-C-C-obs / max-C-son-I-O / faith-affix-I-O",
+            "target": "kansic",
+            "source": "Chief / leader",
+            "pronunciation": "kan-sic",
             "hint": "Nishiguchi (2004, Sect. 4, Examples 32–34 & Tableaux 3–4, pp. 48–50)"
           }
         ],
@@ -1620,9 +1620,9 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "culturalNote": "Published in Folia Orientalia Vol. 48 (2011) by Prof. Václav Blažek (Masaryk University, Brno, blazek@phil.muni.cz), 'Dasanech Language – State-of-the-Art' reviews Mauro Tosco's landmark monograph 'The Dhaasanac Language' (Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6).",
         "words": [
           {
-            "target": "Arbore 53.3% > Elmolo 50.0% > Oromo 38.9% > Konso 35.8% = Somali 35.8%",
-            "source": "Complete 14-language ranking of common cognate percentages with Dasanech on the",
-            "pronunciation": "cognate shares with Dasanech",
+            "target": "lés",
+            "source": "Earth / land / ground",
+            "pronunciation": "les",
             "hint": "Blažek (2011, line 95, based on Blažek 1997: 173–74)"
           },
           {
@@ -1684,24 +1684,24 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "tips": "Blažek's (2011) comparative table aligns 67 years of fieldwork on Galab / Geleba / Dasanech (1941–2001) with reconstructions from Sasse (1976, 1979, 1982), Heine (1978, 1980, 1981, 1982), Hayward (1979, 1984), Black (1974), and Pillinger & Galboran (1999).",
         "words": [
           {
-            "target": "da Trento 1941",
-            "source": "60",
-            "pronunciation": "da-trento-1941"
+            "target": "gáal",
+            "source": "People / men",
+            "pronunciation": "gaal"
           },
           {
-            "target": "Haberland 1966",
-            "source": "91",
-            "pronunciation": "haberland-1966"
+            "target": "mínni",
+            "source": "Woman / wife",
+            "pronunciation": "min-ni"
           },
           {
-            "target": "Bender 1971",
-            "source": "97",
-            "pronunciation": "bender-1971"
+            "target": "bée",
+            "source": "Fish",
+            "pronunciation": "bee"
           },
           {
-            "target": "Tosco 2001",
-            "source": "c. 1,400",
-            "pronunciation": "tosco-2001"
+            "target": "wáar",
+            "source": "Stone / mountain",
+            "pronunciation": "waar"
           },
           {
             "target": "lulli",
@@ -1903,59 +1903,90 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "description": "Practice verified Daasanach (Dhaasanac) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
         "words": [
-                {
-                        "target": "nagaa / nagaay",
-                        "source": "Peace / Well-being",
-                        "pronunciation": "nah-gaa / nah-gaay"
-                },
-                {
-                        "target": "Nagaa",
-                        "source": "It is peace / I am well",
-                        "pronunciation": "nah-gaa"
-                },
-                {
-                        "target": "Ma nagaa?",
-                        "source": "Is it peace? / Are you well?",
-                        "pronunciation": "mah nah-gaa"
-                },
-                {
-                        "target": "Nagaa / Nagaya",
-                        "source": "Hello / Peace be with you",
-                        "pronunciation": "nagaa"
-                },
-                {
-                        "target": "Subax midhab / Nagaa kuno?",
-                        "source": "How are you? (Morning greeting)",
-                        "pronunciation": "subax midhab"
-                },
-                {
-                        "target": "Waag ku midhabis / Galatoomi",
-                        "source": "Thank you / Be blessed",
-                        "pronunciation": "waag ku midhabis"
-                },
-                {
-                        "target": "Káɗe bila / Káɗe geer",
-                        "source": "Welcome to our home",
-                        "pronunciation": "káe bila"
-                }
+                  {
+                            "target": "nagaa",
+                            "source": "Peace / Well-being",
+                            "pronunciation": "nah-gaa / nah-gaay"
+                  },
+                  {
+                            "target": "Ma nagaa?",
+                            "source": "Is it peace? / Are you well?",
+                            "pronunciation": "mah nah-gaa"
+                  },
+                  {
+                            "target": "Subax midhab",
+                            "source": "How are you? (Morning greeting)",
+                            "pronunciation": "subax midhab"
+                  },
+                  {
+                            "target": "Waag ku midhabis",
+                            "source": "Thank you / Be blessed",
+                            "pronunciation": "waag ku midhabis"
+                  },
+                  {
+                            "target": "Káɗe bila",
+                            "source": "Welcome to our home",
+                            "pronunciation": "káe bila"
+                  },
+                  {
+                            "target": "ɠonɠ-o",
+                            "source": "Egg",
+                            "pronunciation": "gohn-goh"
+                  },
+                  {
+                            "target": "'éèn",
+                            "source": "Milk",
+                            "pronunciation": "een / een-nuu"
+                  },
+                  {
+                            "target": "só (pl. sogim",
+                            "source": "Meat / Flesh",
+                            "pronunciation": "soh / soh-geem"
+                  },
+                  {
+                            "target": "sálab",
+                            "source": "Fat / Oil / Butter",
+                            "pronunciation": "sah-lahb / bwod-dee / gee-eh"
+                  },
+                  {
+                            "target": "bún",
+                            "source": "Coffee beans (roasted in butter for ceremonies)",
+                            "pronunciation": "boon"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ɲiɲi Gogu šíiš",
-                        "source": "Give us dry season now"
-                },
-                {
-                        "target": "Ɲiɲi Irr šíiš",
-                        "source": "Give us rainy season now"
-                },
-                {
-                        "target": "Ɲiɲi kana šíiš",
-                        "source": "Give us new now"
-                },
-                {
-                        "target": "Ɲiɲi kul šíiš",
-                        "source": "Give us warm now"
-                }
+                  {
+                            "target": "Ma nagaa?",
+                            "source": "Is it peace? / Are you well?"
+                  },
+                  {
+                            "target": "Subax midhab",
+                            "source": "How are you? (Morning greeting)"
+                  },
+                  {
+                            "target": "Waag ku midhabis",
+                            "source": "Thank you / Be blessed"
+                  },
+                  {
+                            "target": "Káɗe bila",
+                            "source": "Welcome to our home"
+                  },
+                  {
+                            "target": "só (pl. sogim",
+                            "source": "Meat / Flesh"
+                  },
+                  {
+                            "target": "igh = ik-",
+                            "source": "Drink"
+                  },
+                  {
+                            "target": "Ɲiɲi bila ɠonɠ-o hayna",
+                            "source": "We keep egg in our village"
+                  },
+                  {
+                            "target": "Ɲiɲi bila só hayna",
+                            "source": "We keep meat in our village"
+                  }
         ]
 },
         {
@@ -1965,93 +1996,90 @@ export const DAASANACH_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Daasanach (Dhaasanac) sentences for healthcare, transport, and community safety.",
         "culturalNote": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
         "words": [
-                {
-                        "target": "Gatii Biiy suug meeqa?",
-                        "source": "How much is money at the market?",
-                        "pronunciation": "gatii biiy suug meeqa"
-                },
-                {
-                        "target": "Gatii Gatii suug meeqa?",
-                        "source": "How much is price at the market?",
-                        "pronunciation": "gatii gatii suug meeqa"
-                },
-                {
-                        "target": "Gatii Naab suug meeqa?",
-                        "source": "How much is danger at the market?",
-                        "pronunciation": "gatii naab suug meeqa"
-                },
-                {
-                        "target": "Gatii Dawa suug meeqa?",
-                        "source": "How much is medicine at the market?",
-                        "pronunciation": "gatii dawa suug meeqa"
-                },
-                {
-                        "target": "Gatii Gogu suug meeqa?",
-                        "source": "How much is drought at the market?",
-                        "pronunciation": "gatii gogu suug meeqa"
-                },
-                {
-                        "target": "Gatii Nagaa suug meeqa?",
-                        "source": "How much is peace at the market?",
-                        "pronunciation": "gatii nagaa suug meeqa"
-                },
-                {
-                        "target": "Gatii dunay suug meeqa?",
-                        "source": "How much is burn at the market?",
-                        "pronunciation": "gatii dunay suug meeqa"
-                },
-                {
-                        "target": "Gatii Sg suug meeqa?",
-                        "source": "How much is you beat at the market?",
-                        "pronunciation": "gatii sg suug meeqa"
-                },
-                {
-                        "target": "Azu káɗe nagaa iyo fayyaa eegaa",
-                        "source": "Protect morning for peace and health",
-                        "pronunciation": "azu káe nagaa iyo fayyaa eegaa"
-                }
+                  {
+                            "target": "tákac",
+                            "source": "One (1)",
+                            "pronunciation": "tah-kach / tee-keed-dee"
+                  },
+                  {
+                            "target": "li",
+                            "source": "Six (6)",
+                            "pronunciation": "lee / leeh"
+                  },
+                  {
+                            "target": "ʔaffur",
+                            "source": "Four (4)",
+                            "pronunciation": "af-foor"
+                  },
+                  {
+                            "target": "cen",
+                            "source": "Five (5)",
+                            "pronunciation": "chen"
+                  },
+                  {
+                            "target": "saal",
+                            "source": "Nine (9)",
+                            "pronunciation": "saal"
+                  },
+                  {
+                            "target": "tommon",
+                            "source": "Ten (10)",
+                            "pronunciation": "tom-mon"
+                  },
+                  {
+                            "target": "tiyya",
+                            "source": "Seven (7)",
+                            "pronunciation": "teey-yah"
+                  },
+                  {
+                            "target": "siet",
+                            "source": "Eight (8)",
+                            "pronunciation": "see-et"
+                  },
+                  {
+                            "target": "tommon ʔaf tákac",
+                            "source": "Eleven (11)",
+                            "pronunciation": "tom-mon ahf tah-kach"
+                  },
+                  {
+                            "target": "tommona naama",
+                            "source": "Twenty (20)",
+                            "pronunciation": "tom-moh-naa naa-mah"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ɲiɲi Dímì šíiš",
-                        "source": "Give us dimi ceremony now"
-                },
-                {
-                        "target": "Gatii Manyatta suug meeqa?",
-                        "source": "How much is village camp at the market?"
-                },
-                {
-                        "target": "Gatii Gúm suug meeqa?",
-                        "source": "How much is north at the market?"
-                },
-                {
-                        "target": "Gatii Bie guddu suug meeqa?",
-                        "source": "How much is south at the market?"
-                },
-                {
-                        "target": "Gatii kade! suug meeqa?",
-                        "source": "How much is come at the market?"
-                },
-                {
-                        "target": "Gatii $^{\\text{}}$sasen suug meeqa?",
-                        "source": "How much is go at the market?"
-                },
-                {
-                        "target": "Gatii Pl suug meeqa?",
-                        "source": "How much is enter at the market?"
-                },
-                {
-                        "target": "Gatii Suug suug meeqa?",
-                        "source": "How much is market at the market?"
-                },
-                {
-                        "target": "Gatii Biiy suug meeqa?",
-                        "source": "How much is money at the market?"
-                },
-                {
-                        "target": "Gatii Gatii suug meeqa?",
-                        "source": "How much is price at the market?"
-                }
+                  {
+                            "target": "seddie, Haberland sédde, da Trento sedde)",
+                            "source": "Three (3)"
+                  },
+                  {
+                            "target": "tommon ʔaf tákac",
+                            "source": "Eleven (11)"
+                  },
+                  {
+                            "target": "tommona naama",
+                            "source": "Twenty (20)"
+                  },
+                  {
+                            "target": "tommona seddi",
+                            "source": "Thirty (30)"
+                  },
+                  {
+                            "target": "luule = all",
+                            "source": "Many"
+                  },
+                  {
+                            "target": "mí ~ mu",
+                            "source": "Man / Husband (male, vir — pl. males)"
+                  },
+                  {
+                            "target": "d’áasannæc (Dhaasanac",
+                            "source": "Daasanach person / Daasanach language & people"
+                  },
+                  {
+                            "target": "marli —",
+                            "source": "Arbore woman / Arbore (Arbore + Fem)"
+                  }
         ]
 }
     ]

@@ -6617,116 +6617,90 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "description": "Practice verified Turkana parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
         "words": [
-                {
-                        "target": "alakari",
-                        "source": "Please, to",
-                        "pronunciation": "a-la-ka-ri"
-                },
-                {
-                        "target": "Tolot-ion / Ejok alothi",
-                        "source": "Farewell exchange",
-                        "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee"
-                },
-                {
-                        "target": "Abe / Ii",
-                        "source": "Goodbye (Parting)",
-                        "pronunciation": "ah-beh / ee-ee"
-                },
-                {
-                        "target": "tolot-ion, go thou ; answer, ejok alothi, good, I go",
-                        "source": "Of farewell",
-                        "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
-                },
-                {
-                        "target": "Na? / Baiya",
-                        "source": "Traditional salutation",
-                        "pronunciation": "nah / bah-ee-yah"
-                },
-                {
-                        "target": "Ii mata",
-                        "source": "Health to you (Greeting reply)",
-                        "pronunciation": "ee-ee mah-tah"
-                },
-                {
-                        "target": "Mata",
-                        "source": "Health (Pastoral greeting enquiry)",
-                        "pronunciation": "mah-tah"
-                },
-                {
-                        "target": "mata ejik (complete health)",
-                        "source": "Complete health! (Unison greeting response)",
-                        "pronunciation": "mata ejik"
-                },
-                {
-                        "target": "Kidarunit ng'oni Lokoi-likalo nawi yok",
-                        "source": "We keep thy house at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni lokoi-likal nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Ekokolan nawi yok",
-                        "source": "We keep he steals at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni ekoklan nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Akolon nawi yok",
-                        "source": "We keep sun at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni akolon nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Echoto nawi yok",
-                        "source": "We keep mud at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni echoto nawi yok"
-                }
+                  {
+                            "target": "ekithil",
+                            "source": "Peace",
+                            "pronunciation": "e-kithil"
+                  },
+                  {
+                            "target": "Alakara",
+                            "source": "Thank you",
+                            "pronunciation": "ah-lah-kah-rah noy"
+                  },
+                  {
+                            "target": "emala",
+                            "source": "Greet, to",
+                            "pronunciation": "e-ma-la"
+                  },
+                  {
+                            "target": "akathi",
+                            "source": "Thank, to",
+                            "pronunciation": "a-kathi"
+                  },
+                  {
+                            "target": "alakari",
+                            "source": "Please, to",
+                            "pronunciation": "a-la-ka-ri"
+                  },
+                  {
+                            "target": "Tolot-ion",
+                            "source": "Farewell exchange",
+                            "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee"
+                  },
+                  {
+                            "target": "Abe",
+                            "source": "Goodbye (Parting)",
+                            "pronunciation": "ah-beh / ee-ee"
+                  },
+                  {
+                            "target": "tolot-ion, go thou",
+                            "source": "Of farewell",
+                            "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
+                  },
+                  {
+                            "target": "Na?",
+                            "source": "Traditional salutation",
+                            "pronunciation": "nah / bah-ee-yah"
+                  },
+                  {
+                            "target": "Ii mata",
+                            "source": "Health to you (Greeting reply)",
+                            "pronunciation": "ee-ee mah-tah"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ejok angoligini ng'irwa daang'",
-                        "source": "It is good to watch every day"
-                },
-                {
-                        "target": "Kichamit ng'oni arimi daang'",
-                        "source": "We want to guard together"
-                },
-                {
-                        "target": "Ejok arimi ng'irwa daang'",
-                        "source": "It is good to guard every day"
-                },
-                {
-                        "target": "Kichamit ng'oni akikiri daang'",
-                        "source": "We want to write together"
-                },
-                {
-                        "target": "Ejok akikiri ng'irwa daang'",
-                        "source": "It is good to write every day"
-                },
-                {
-                        "target": "Kichamit ng'oni achami daang'",
-                        "source": "We want to accept together"
-                },
-                {
-                        "target": "Ejok achami ng'irwa daang'",
-                        "source": "It is good to accept every day"
-                },
-                {
-                        "target": "Kichamit ng'oni atheri daang'",
-                        "source": "We want to choose together"
-                },
-                {
-                        "target": "Ejok atheri ng'irwa daang'",
-                        "source": "It is good to choose every day"
-                },
-                {
-                        "target": "Kichamit ng'oni atopoki daang'",
-                        "source": "We want to cleave together"
-                },
-                {
-                        "target": "Ejok atopoki ng'irwa daang'",
-                        "source": "It is good to cleave every day"
-                },
-                {
-                        "target": "Kichamit ng'oni adoli daang'",
-                        "source": "We want to arrive together"
-                }
+                  {
+                            "target": "tolot-ion, go thou",
+                            "source": "Of farewell"
+                  },
+                  {
+                            "target": "Ii mata",
+                            "source": "Health to you (Greeting reply)"
+                  },
+                  {
+                            "target": "mata ejik",
+                            "source": "Complete health! (Unison greeting response)"
+                  },
+                  {
+                            "target": "Akirin (pl. ngakerin",
+                            "source": "Meat"
+                  },
+                  {
+                            "target": "agipi kalimok",
+                            "source": "Water, fresh"
+                  },
+                  {
+                            "target": "Akimet (pl. ngakajonon",
+                            "source": "Butter / Ghee / Fat"
+                  },
+                  {
+                            "target": "Ayon akoro",
+                            "source": "I am hungry"
+                  },
+                  {
+                            "target": "Akori ayon",
+                            "source": "I am thirsty"
+                  }
         ]
 },
         {
@@ -6736,54 +6710,90 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Turkana sentences for healthcare, transport, and community safety.",
         "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
         "words": [
-                {
-                        "target": "Kidarunit ng'oni akuich nawi yok",
-                        "source": "We keep sky at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni akuich nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Akiru nawi yok",
-                        "source": "We keep rain at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni akiru nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Amukora nawi yok",
-                        "source": "We keep hill at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni amukora nawi yok"
-                },
-                {
-                        "target": "Kidarunit ng'oni Elap nawi yok",
-                        "source": "We keep moon at our pastoral camp",
-                        "pronunciation": "kidarunit ngoni elap nawi yok"
-                },
-                {
-                        "target": "Ikoku / Ikoko (pl. ngidwe / ngedwi)",
-                        "source": "Child",
-                        "pronunciation": "ee-koh-koo"
-                },
-                {
-                        "target": "Baba / Mama (pl. ngebabai)",
-                        "source": "Uncle",
-                        "pronunciation": "bah-bah"
-                }
+                  {
+                            "target": "Apei",
+                            "source": "One",
+                            "pronunciation": "ah-peh-ee / eh-peh-ee"
+                  },
+                  {
+                            "target": "Ngaarei",
+                            "source": "Two",
+                            "pronunciation": "ngah-ah-reh-ee / ah-ree"
+                  },
+                  {
+                            "target": "Ngakanikapei",
+                            "source": "Six",
+                            "pronunciation": "ngah-kah-nee-kah-peh-ee"
+                  },
+                  {
+                            "target": "Tomon",
+                            "source": "Ten",
+                            "pronunciation": "toh-mohn"
+                  },
+                  {
+                            "target": "Ngaomon",
+                            "source": "Four",
+                            "pronunciation": "ngah-oh-mohn / ohm-wohn"
+                  },
+                  {
+                            "target": "Ngakan",
+                            "source": "Five",
+                            "pronunciation": "ngah-kahn / ah-khahn"
+                  },
+                  {
+                            "target": "Ngakanikaomon",
+                            "source": "Nine",
+                            "pronunciation": "ngah-kah-nee-kah-oh-mohn"
+                  },
+                  {
+                            "target": "da dan mwari",
+                            "source": "Both",
+                            "pronunciation": "da dan mwa-ri"
+                  },
+                  {
+                            "target": "Ngauni",
+                            "source": "Three",
+                            "pronunciation": "ngah-oo-nee / oo-nee"
+                  },
+                  {
+                            "target": "Ngakanikaarei",
+                            "source": "Seven",
+                            "pronunciation": "ngah-kah-nee-kah-ah-reh-ee"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ejok adoli ng'irwa daang'",
-                        "source": "It is good to arrive every day"
-                },
-                {
-                        "target": "Kichamit ng'oni anyoni daang'",
-                        "source": "We want to depart together"
-                },
-                {
-                        "target": "Ejok anyoni ng'irwa daang'",
-                        "source": "It is good to depart every day"
-                },
-                {
-                        "target": "Kidarunit ng'oni akuich nawi yok",
-                        "source": "We keep sky at our pastoral camp"
-                }
+                  {
+                            "target": "da dan mwari",
+                            "source": "Both"
+                  },
+                  {
+                            "target": "Tomon omwon",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Tomon akhan",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "Tomon akhan ka pei",
+                            "source": "Sixty"
+                  },
+                  {
+                            "target": "Tomon ka pei",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "Tomon ka ari",
+                            "source": "Twelve"
+                  },
+                  {
+                            "target": "Tomon ari",
+                            "source": "Twenty"
+                  },
+                  {
+                            "target": "Tomon uni",
+                            "source": "Thirty"
+                  }
         ]
 }
     ]

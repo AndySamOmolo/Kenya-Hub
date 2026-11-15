@@ -66,8 +66,14 @@ export const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    minWidth: 0,
     marginLeft: 8,
-    fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false,
+    marginRight: 6,
+    fontSize: 13,
+    paddingVertical: 0,
+    paddingHorizontal: 0,
+    textAlignVertical: "center",
+    includeFontPadding: false,
   },
   catPill: {
     paddingHorizontal: 12,

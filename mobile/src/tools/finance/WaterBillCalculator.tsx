@@ -88,27 +88,41 @@ export function WaterBillCalculator() {
         <Text style={styles.inputLabel}>
           Monthly Water Consumption (Cubic Meters / m³)
         </Text>
-        <TextInput
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            backgroundColor: theme.bgCard,
+            borderWidth: 1,
+            borderColor: theme.border,
+            borderRadius: 12,
+            paddingRight: 10,
+          }}
+        >
+          <TextInput
             multiline={false}
             numberOfLines={1}
-          keyboardType="numeric"
-          value={unitsText === "0" ? "" : unitsText}
-          onChangeText={(txt) => {
-            const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
-            setUnitsText(cleaned === "0" ? "" : cleaned);
-          }}
-          placeholder="0"
-          placeholderTextColor={theme.textMuted}
-          style={[
-            styles.textInput,
-            {
-              backgroundColor: theme.bgCard,
-              borderWidth: 1,
-              borderColor: theme.border,
-              borderRadius: 12,
-            },
-          ]}
-        />
+            keyboardType="numeric"
+            value={unitsText === "0" ? "" : unitsText}
+            onChangeText={(txt) => {
+              const cleaned = txt.replace(/[^0-9.]/g, "").replace(/^0+(?=\d)/, "");
+              setUnitsText(cleaned === "0" ? "" : cleaned);
+            }}
+            placeholder="0"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.textInput, { flex: 1, minWidth: 0 }]}
+          />
+          {unitsText !== "" && unitsText !== "0" && (
+            <Pressable
+              onPress={() => setUnitsText("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear water consumption"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
       </View>
 
       <ExpandablePillRow contentContainerStyle={styles.pillSelector}>

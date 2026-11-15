@@ -27,18 +27,31 @@ export function MemoryGame({ allWords, languageName, onAwardXp }: GameProps) {
   const [endTime, setEndTime] = useState(0);
 
   const initGame = useCallback(() => {
-    const selected = shuffle(allWords).slice(0, PAIR_COUNT);
+    const seenTargets = new Set<string>();
+    const seenSources = new Set<string>();
+    const selected: typeof allWords = [];
+    for (const w of shuffle(allWords)) {
+      const t = getPrimaryForm(w.target).trim();
+      const s = getPrimaryForm(w.source).trim();
+      if (!t || !s) continue;
+      if (seenTargets.has(t.toLowerCase()) || seenSources.has(s.toLowerCase())) continue;
+      seenTargets.add(t.toLowerCase());
+      seenSources.add(s.toLowerCase());
+      selected.push({ ...w, target: t, source: s });
+      if (selected.length >= PAIR_COUNT) break;
+    }
+
     const newCards: MemoryCard[] = [];
     selected.forEach((word, idx) => {
       newCards.push({
         id: idx * 2,
-        text: getPrimaryForm(word.target),
+        text: word.target,
         pairId: idx,
         type: "target",
       });
       newCards.push({
         id: idx * 2 + 1,
-        text: getPrimaryForm(word.source),
+        text: word.source,
         pairId: idx,
         type: "source",
       });

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import helbData from "@/data/helb-rates.json";
@@ -80,20 +81,33 @@ export default function HELBCalculatorPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Total Loan Amount (KES)
             </label>
-            <input
-              type="number"
-              inputMode="numeric"
-              value={loanAmount === 0 ? "" : loanAmount}
-              onChange={(e) => {
-                const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                setLoanAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
-              }}
-              placeholder="0"
-              className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
-              min={0}
-              step={10000}
-              id="loan-amount-input"
-            />
+            <div className="relative">
+              <input
+                type="number"
+                inputMode="numeric"
+                value={loanAmount === 0 ? "" : loanAmount}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setLoanAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
+                }}
+                placeholder="0"
+                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                style={{ paddingRight: "2.75rem" }}
+                min={0}
+                step={10000}
+                id="loan-amount-input"
+              />
+              {loanAmount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setLoanAmount(0)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear loan amount"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
             <p className="text-xs text-text-muted mt-1">Sum of all HELB disbursements over your study period</p>
           </div>
           <div>
@@ -115,20 +129,33 @@ export default function HELBCalculatorPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Current Gross Monthly Salary (KES)
             </label>
-            <input
-              type="number"
-              inputMode="numeric"
-              value={grossSalary === 0 ? "" : grossSalary}
-              onChange={(e) => {
-                const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                setGrossSalary(raw === "" ? 0 : Math.max(0, Number(raw)));
-              }}
-              placeholder="0"
-              className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)]"
-              min={0}
-              step={5000}
-              id="gross-salary-input"
-            />
+            <div className="relative">
+              <input
+                type="number"
+                inputMode="numeric"
+                value={grossSalary === 0 ? "" : grossSalary}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setGrossSalary(raw === "" ? 0 : Math.max(0, Number(raw)));
+                }}
+                placeholder="0"
+                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                style={{ paddingRight: "2.75rem" }}
+                min={0}
+                step={5000}
+                id="gross-salary-input"
+              />
+              {grossSalary > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setGrossSalary(0)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear gross salary"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
 

@@ -31,7 +31,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0)).",
-    "totalEntries": 32056,
+    "totalEntries": 26970,
     "categories": [
       {
         "id": "greetings",
@@ -49,13 +49,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 512
+        "count": 511
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 623
+        "count": 622
       },
       {
         "id": "animals",
@@ -67,25 +67,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 1105
+        "count": 1103
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 1418
+        "count": 747
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 1913
+        "count": 1908
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 3026
+        "count": 2896
       },
       {
         "id": "adjectives",
@@ -97,37 +97,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 1306
+        "count": 860
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1834
+        "count": 552
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 1126
+        "count": 898
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1594
+        "count": 788
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 16093
+        "count": 14585
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 267
+        "count": 261
       }
     ],
     "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
@@ -152,7 +152,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0)).",
-    "totalEntries": 26454,
+    "totalEntries": 19042,
     "categories": [
       {
         "id": "greetings",
@@ -170,13 +170,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 356
+        "count": 355
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 637
+        "count": 636
       },
       {
         "id": "animals",
@@ -194,61 +194,61 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 1271
+        "count": 556
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 4702
+        "count": 4701
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1198
+        "count": 1193
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 590
+        "count": 589
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 1105
+        "count": 494
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1654
+        "count": 466
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 1013
+        "count": 406
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1571
+        "count": 494
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 7878
+        "count": 4680
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 3128
+        "count": 3121
       }
     ],
     "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
@@ -272,7 +272,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language, Containing the Grammar and Phraseology\", Caxton Printing & Publishing Works, Nairobi), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
-    "totalEntries": 13643,
+    "totalEntries": 5454,
     "categories": [
       {
         "id": "greetings",
@@ -314,19 +314,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 779
+        "count": 142
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 654
+        "count": 538
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 406
+        "count": 403
       },
       {
         "id": "adjectives",
@@ -338,31 +338,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 709
+        "count": 202
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1191
+        "count": 170
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 1082
+        "count": 188
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1143
+        "count": 270
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 6530
+        "count": 2392
       },
       {
         "id": "culture-history",
@@ -396,103 +396,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
-    "totalEntries": 17228,
+    "totalEntries": 6242,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 18
+        "count": 17
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 120
+        "count": 106
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 288
+        "count": 202
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 398
+        "count": 308
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 486
+        "count": 349
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 375
+        "count": 270
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 1001
+        "count": 267
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 1513
+        "count": 380
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 473
+        "count": 226
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 276
+        "count": 166
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 997
+        "count": 302
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1355
+        "count": 193
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 840
+        "count": 213
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1288
+        "count": 287
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 6229
+        "count": 1416
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 1571
+        "count": 1540
       }
     ],
     "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
@@ -516,7 +516,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 14988,
+    "totalEntries": 7049,
     "categories": [
       {
         "id": "greetings",
@@ -534,19 +534,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 294
+        "count": 291
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 523
+        "count": 521
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 596
+        "count": 595
       },
       {
         "id": "nature",
@@ -558,7 +558,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 981
+        "count": 338
       },
       {
         "id": "home",
@@ -570,7 +570,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 584
+        "count": 557
       },
       {
         "id": "adjectives",
@@ -582,31 +582,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 865
+        "count": 261
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1283
+        "count": 249
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 790
+        "count": 244
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1227
+        "count": 297
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5389
+        "count": 1240
       },
       {
         "id": "culture-history",
@@ -635,7 +635,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 14994,
+    "totalEntries": 7641,
     "categories": [
       {
         "id": "greetings",
@@ -653,13 +653,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 163
+        "count": 162
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 257
+        "count": 256
       },
       {
         "id": "animals",
@@ -671,25 +671,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 278
+        "count": 276
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 876
+        "count": 260
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 1493
+        "count": 1492
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 379
+        "count": 377
       },
       {
         "id": "adjectives",
@@ -701,37 +701,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 890
+        "count": 339
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1380
+        "count": 249
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 816
+        "count": 205
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1276
+        "count": 326
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 6209
+        "count": 2728
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 394
+        "count": 388
       }
     ],
     "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
@@ -753,7 +753,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0).",
-    "totalEntries": 8903,
+    "totalEntries": 1546,
     "categories": [
       {
         "id": "greetings",
@@ -765,19 +765,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 19
+        "count": 18
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 29
+        "count": 28
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 62
+        "count": 61
       },
       {
         "id": "animals",
@@ -795,13 +795,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 660
+        "count": 77
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 71
+        "count": 70
       },
       {
         "id": "verbs",
@@ -819,31 +819,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 642
+        "count": 94
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1100
+        "count": 134
       },
       {
         "id": "emergency",
         "name": "Emergency, Safety & Civic",
         "icon": "🚨",
-        "count": 633
+        "count": 87
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1011
+        "count": 114
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4387
+        "count": 574
       },
       {
         "id": "culture-history",
@@ -872,7 +872,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
-    "totalEntries": 12466,
+    "totalEntries": 4065,
     "categories": [
       {
         "id": "greetings",
@@ -884,13 +884,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 78
+        "count": 77
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 200
+        "count": 195
       },
       {
         "id": "body",
@@ -914,61 +914,61 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 812
+        "count": 195
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 220
+        "count": 217
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 143
+        "count": 142
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 111
+        "count": 110
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 713
+        "count": 106
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1274
+        "count": 89
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 731
+        "count": 123
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1164
+        "count": 157
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5836
+        "count": 1476
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 613
+        "count": 607
       }
     ],
     "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
@@ -990,7 +990,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria). Expanded and cross-verified with Commercially Permissive Datasets (DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 9003,
+    "totalEntries": 1919,
     "categories": [
       {
         "id": "greetings",
@@ -1008,7 +1008,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 91
+        "count": 90
       },
       {
         "id": "body",
@@ -1032,7 +1032,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 666
+        "count": 106
       },
       {
         "id": "home",
@@ -1056,31 +1056,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 621
+        "count": 86
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1020
+        "count": 72
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 616
+        "count": 81
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 971
+        "count": 113
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4053
+        "count": 406
       },
       {
         "id": "culture-history",
@@ -1110,7 +1110,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, Abbreviations p. xiv, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0)).",
-    "totalEntries": 13900,
+    "totalEntries": 5946,
     "categories": [
       {
         "id": "greetings",
@@ -1128,85 +1128,85 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 188
+        "count": 193
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 171
+        "count": 183
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 249
+        "count": 248
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 140
+        "count": 139
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 788
+        "count": 170
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 496
+        "count": 492
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 192
+        "count": 186
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 110
+        "count": 111
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 815
+        "count": 198
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1291
+        "count": 233
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 706
+        "count": 154
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1242
+        "count": 286
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 6786
+        "count": 2629
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 572
+        "count": 570
       }
     ],
     "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
@@ -1227,7 +1227,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 66–70, Plates XVI–XVII — audited 100% line-by-line across 16 principal tribes, 19 Ngoitunya/Ngolio attegir clans, 6 life stages, asavanissia ages, Nessegonn bush, marriage & slaughter customs, Agipie & nether-world god, and 12-month Nakiborror/Nakamou/Nait calendar), Mervyn W. H. Beech (1911), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0).",
-    "totalEntries": 10975,
+    "totalEntries": 2991,
     "categories": [
       {
         "id": "greetings",
@@ -1257,7 +1257,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 164
+        "count": 163
       },
       {
         "id": "nature",
@@ -1269,7 +1269,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 801
+        "count": 123
       },
       {
         "id": "home",
@@ -1293,31 +1293,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 750
+        "count": 126
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1421
+        "count": 119
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 292
+        "count": 84
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1300
+        "count": 223
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5121
+        "count": 1027
       },
       {
         "id": "culture-history",
@@ -1346,103 +1346,103 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016). Expanded and cross-verified with Commercially Permissive Datasets (Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0).",
-    "totalEntries": 24784,
+    "totalEntries": 16620,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 27
+        "count": 25
       },
       {
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 113
+        "count": 99
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 165
+        "count": 143
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 269
+        "count": 220
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 230
+        "count": 181
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 399
+        "count": 360
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 1078
+        "count": 343
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 5541
+        "count": 4669
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 2002
+        "count": 1916
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 283
+        "count": 240
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 747
+        "count": 286
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1644
+        "count": 275
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 429
+        "count": 145
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1167
+        "count": 244
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 10329
+        "count": 7147
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 361
+        "count": 327
       }
     ],
     "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016)",
@@ -1463,7 +1463,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0)).",
-    "totalEntries": 7691,
+    "totalEntries": 1333,
     "categories": [
       {
         "id": "greetings",
@@ -1505,7 +1505,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 627
+        "count": 72
       },
       {
         "id": "home",
@@ -1529,31 +1529,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Places",
         "icon": "🧭",
-        "count": 605
+        "count": 82
       },
       {
         "id": "shopping",
         "name": "Shopping, Market & Money",
         "icon": "🛒",
-        "count": 1017
+        "count": 84
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 269
+        "count": 44
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "Clock",
-        "count": 958
+        "count": 112
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 3737
+        "count": 461
       },
       {
         "id": "culture-history",
@@ -1580,13 +1580,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0).",
-    "totalEntries": 6460,
+    "totalEntries": 1128,
     "categories": [
       {
         "id": "greetings",
         "name": "Greetings & Farewells",
         "icon": "👋",
-        "count": 8
+        "count": 7
       },
       {
         "id": "numbers",
@@ -1610,7 +1610,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 38
+        "count": 37
       },
       {
         "id": "nature",
@@ -1622,7 +1622,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 541
+        "count": 63
       },
       {
         "id": "home",
@@ -1646,31 +1646,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 518
+        "count": 64
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 818
+        "count": 64
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 251
+        "count": 39
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "Clock",
-        "count": 816
+        "count": 102
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 3194
+        "count": 476
       },
       {
         "id": "culture-history",
@@ -1697,7 +1697,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 12717,
+    "totalEntries": 5556,
     "categories": [
       {
         "id": "greetings",
@@ -1739,13 +1739,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 895
+        "count": 228
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 489
+        "count": 486
       },
       {
         "id": "verbs",
@@ -1763,37 +1763,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 556
+        "count": 146
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1495
+        "count": 189
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 332
+        "count": 141
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1326
+        "count": 261
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5300
+        "count": 1782
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 984
+        "count": 983
       }
     ],
     "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
@@ -1814,7 +1814,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 5789,
+    "totalEntries": 1116,
     "categories": [
       {
         "id": "greetings",
@@ -1856,7 +1856,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 481
+        "count": 57
       },
       {
         "id": "home",
@@ -1868,7 +1868,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 64
+        "count": 56
       },
       {
         "id": "adjectives",
@@ -1880,37 +1880,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 478
+        "count": 83
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 739
+        "count": 69
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 224
+        "count": 44
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 713
+        "count": 85
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 2728
+        "count": 359
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 22
+        "count": 23
       }
     ],
     "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
@@ -1931,7 +1931,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0).",
-    "totalEntries": 11945,
+    "totalEntries": 4917,
     "categories": [
       {
         "id": "greetings",
@@ -1949,13 +1949,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 73
+        "count": 72
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 158
+        "count": 157
       },
       {
         "id": "animals",
@@ -1967,25 +1967,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 202
+        "count": 200
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 899
+        "count": 153
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 1230
+        "count": 1229
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 247
+        "count": 246
       },
       {
         "id": "adjectives",
@@ -1997,37 +1997,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 674
+        "count": 182
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1704
+        "count": 226
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 346
+        "count": 137
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1165
+        "count": 146
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 4686
+        "count": 1609
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 279
+        "count": 278
       }
     ],
     "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
@@ -2052,7 +2052,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996). Expanded and cross-verified with Commercially Permissive Datasets (Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0)).",
-    "totalEntries": 19967,
+    "totalEntries": 13154,
     "categories": [
       {
         "id": "greetings",
@@ -2070,13 +2070,13 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 169
+        "count": 168
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 301
+        "count": 299
       },
       {
         "id": "animals",
@@ -2088,25 +2088,25 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 428
+        "count": 426
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 1000
+        "count": 289
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 3334
+        "count": 3329
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 1156
+        "count": 1155
       },
       {
         "id": "adjectives",
@@ -2118,37 +2118,37 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 705
+        "count": 270
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1646
+        "count": 273
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 438
+        "count": 234
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1192
+        "count": 273
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 8735
+        "count": 5580
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 131
+        "count": 126
       }
     ],
     "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
@@ -2169,7 +2169,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0).",
-    "totalEntries": 3789,
+    "totalEntries": 595,
     "categories": [
       {
         "id": "greetings",
@@ -2211,7 +2211,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 296
+        "count": 48
       },
       {
         "id": "home",
@@ -2235,31 +2235,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 293
+        "count": 27
       },
       {
         "id": "shopping",
         "name": "Shopping, Market & Money",
         "icon": "🛒",
-        "count": 465
+        "count": 60
       },
       {
         "id": "emergency",
         "name": "Emergency, Safety & Civic",
         "icon": "🚨",
-        "count": 138
+        "count": 25
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 454
+        "count": 56
       },
       {
         "id": "phrases",
         "name": "Everyday Phrases & Sentences",
         "icon": "💬",
-        "count": 1949
+        "count": 185
       },
       {
         "id": "culture-history",
@@ -2289,7 +2289,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
-    "totalEntries": 9718,
+    "totalEntries": 1303,
     "categories": [
       {
         "id": "greetings",
@@ -2331,7 +2331,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 740
+        "count": 41
       },
       {
         "id": "home",
@@ -2355,31 +2355,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 729
+        "count": 65
       },
       {
         "id": "shopping",
         "name": "Shopping, Market & Money",
         "icon": "🛒",
-        "count": 1393
+        "count": 111
       },
       {
         "id": "emergency",
         "name": "Emergency, Safety & Civic",
         "icon": "🚨",
-        "count": 266
+        "count": 29
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "Clock",
-        "count": 1219
+        "count": 100
       },
       {
         "id": "phrases",
         "name": "Everyday Phrases & Sentences",
         "icon": "💬",
-        "count": 4723
+        "count": 309
       },
       {
         "id": "culture-history",
@@ -2406,7 +2406,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55 — audited 100% line-by-line across all 3 settlements, 16 clans from 6 tribes, irrigation ditch & crop-medicine ceremonies, and 12-month Lare/Ngolong calendar), Mervyn W. H. Beech (1911), and Bernd Heine (1980). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0)).",
-    "totalEntries": 6133,
+    "totalEntries": 841,
     "categories": [
       {
         "id": "greetings",
@@ -2448,7 +2448,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 490
+        "count": 70
       },
       {
         "id": "home",
@@ -2472,31 +2472,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 479
+        "count": 59
       },
       {
         "id": "shopping",
         "name": "Shopping, Market & Money",
         "icon": "🛒",
-        "count": 810
+        "count": 64
       },
       {
         "id": "emergency",
         "name": "Emergency, Safety & Civic",
         "icon": "🚨",
-        "count": 211
+        "count": 30
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 760
+        "count": 79
       },
       {
         "id": "phrases",
         "name": "Everyday Phrases & Sentences",
         "icon": "💬",
-        "count": 3071
+        "count": 227
       },
       {
         "id": "culture-history",
@@ -2524,7 +2524,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII — audited 100% line-by-line across 11 geographical divisions, 5 pastoral divisions, 3 Kasauria migrations, 11 Hill Suk sections, 24 orten clans & totems, Ellap/Ellat, Mt. Alongol & Kerial religion, verbatim sick prayer, and 12-month Kamei/Bengat calendar), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0).",
-    "totalEntries": 12240,
+    "totalEntries": 3481,
     "categories": [
       {
         "id": "greetings",
@@ -2536,91 +2536,91 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "numbers",
         "name": "Numbers & Counting",
         "icon": "🔢",
-        "count": 77
+        "count": 71
       },
       {
         "id": "family",
         "name": "Family, People & Kinship",
         "icon": "👨‍👩‍👧‍👦",
-        "count": 200
+        "count": 130
       },
       {
         "id": "body",
         "name": "Body Parts & Health",
         "icon": "🫁",
-        "count": 255
+        "count": 176
       },
       {
         "id": "animals",
         "name": "Animals, Livestock & Wildlife",
         "icon": "🦁",
-        "count": 304
+        "count": 198
       },
       {
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "🌿",
-        "count": 243
+        "count": 169
       },
       {
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 898
+        "count": 161
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 612
+        "count": 116
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 339
+        "count": 323
       },
       {
         "id": "adjectives",
         "name": "Adjectives, Qualities & Grammar",
         "icon": "✨",
-        "count": 195
+        "count": 119
       },
       {
         "id": "travel",
         "name": "Travel, Directions & Navigation",
         "icon": "🧭",
-        "count": 550
+        "count": 36
       },
       {
         "id": "shopping",
         "name": "Trade, Money & Measures",
         "icon": "🛒",
-        "count": 1484
+        "count": 82
       },
       {
         "id": "emergency",
         "name": "Health, Safety, Law & Conflict",
         "icon": "🚨",
-        "count": 326
+        "count": 50
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 1335
+        "count": 207
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 5164
+        "count": 1402
       },
       {
         "id": "culture-history",
         "name": "Culture, Clans & Historical Corpus",
         "icon": "📜",
-        "count": 245
+        "count": 228
       }
     ],
     "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
@@ -2641,7 +2641,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-15",
     "contributorNote": "Daasanach ('Af Dhaasanac / d’áasannæc / Dasanech / Dasenech / Galab / Geleba / Reshiat) Lowland East Cushitic (Western Omo-Tana / Galaboid) dictionary compiled manually and audited 100% line-by-line from Václav Blažek (2011) 'Dasanech Language – State-of-the-Art' (Folia Orientalia, Vol. 48, 2011, Masaryk University, Brno, reviewing Mauro Tosco 2001 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia', Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln, xiv + 598 pp. + 20 photos, ISBN 3-89645-064-6, and comparing Gabriele da Trento 1941 [60 units], Eike Haberland 1966 [91], Harold C. Fleming 1965 [102] & 1971 [146], M. Lionel Bender 1971 [97], Hans-Jürgen Sasse 1973–1982 [ca. 11 studies], and Mauro Tosco 2001 [c. 1,400 units] across 101 Swadesh glosses, 48 Abbreviations & 50 References), Sumiyo Nishiguchi (2004) 'Consonant Assimilation and Sonority : A Case Study in Daasanach' (OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, Osaka University Knowledge Archive [OUKA], DOI: 10.18910/70792 — fieldwork carried out in New York State from September 2004 to May 2005 with a native Daasanach speaker from Kenya; audited 100% line-by-line across Sections 1–5, Examples 1–34, Tableaux 1–4, Footnotes 1–9, and all 13 References), and Lieut. Ludwig von Höhnel (1894) 'Discovery of Lakes Rudolf and Stefanie' (Reshiat / Buma / Marle on the northeastern shore of Lake Turkana). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0).",
-    "totalEntries": 4224,
+    "totalEntries": 738,
     "categories": [
       {
         "id": "greetings",
@@ -2683,19 +2683,19 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "food",
         "name": "Food, Drink & Agriculture",
         "icon": "🍲",
-        "count": 323
+        "count": 43
       },
       {
         "id": "home",
         "name": "Home, Tools & Material Culture",
         "icon": "🏠",
-        "count": 32
+        "count": 31
       },
       {
         "id": "verbs",
         "name": "Core Verbs & Actions",
         "icon": "🏃",
-        "count": 83
+        "count": 82
       },
       {
         "id": "adjectives",
@@ -2707,31 +2707,31 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "travel",
         "name": "Travel, Directions & Places",
         "icon": "🧭",
-        "count": 318
+        "count": 38
       },
       {
         "id": "shopping",
         "name": "Shopping, Market & Money",
         "icon": "🛒",
-        "count": 518
+        "count": 44
       },
       {
         "id": "emergency",
         "name": "Emergency, Safety & Civic",
         "icon": "🚨",
-        "count": 144
+        "count": 22
       },
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
         "icon": "⏰",
-        "count": 489
+        "count": 42
       },
       {
         "id": "phrases",
         "name": "Common Expressions & Vocabulary",
         "icon": "🗣️",
-        "count": 2033
+        "count": 152
       },
       {
         "id": "culture-history",

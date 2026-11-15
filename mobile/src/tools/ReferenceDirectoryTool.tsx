@@ -111,20 +111,32 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <View style={{ flexDirection: "row", gap: 10, alignItems: "center" }}>
             <View style={{ flex: 1 }}>
               <Text style={styles.detailLabel}>Child Age (Months: 0–60)</Text>
-              <TextInput
-            key={`ti-1-${theme.isDark ? "dark" : "light"}`}
-            multiline={false}
-            numberOfLines={1}
-                value={childAgeMonths}
-                onChangeText={(txt) => {
-                  const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
-                  setChildAgeMonths(cleaned);
-                }}
-                placeholder="0"
-                placeholderTextColor={theme.textMuted}
-                keyboardType="numeric"
-                style={[styles.searchBar, { marginTop: 4, fontWeight: "800", color: theme.textPrimary }]}
-              />
+              <View style={[styles.searchBar, { marginTop: 4 }]}>
+                <TextInput
+                  key={`ti-1-${theme.isDark ? "dark" : "light"}`}
+                  multiline={false}
+                  numberOfLines={1}
+                  value={childAgeMonths}
+                  onChangeText={(txt) => {
+                    const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+                    setChildAgeMonths(cleaned);
+                  }}
+                  placeholder="0"
+                  placeholderTextColor={theme.textMuted}
+                  keyboardType="numeric"
+                  style={[styles.searchInput, { marginLeft: 0, fontWeight: "800", color: theme.textPrimary }]}
+                />
+                {childAgeMonths !== "" && childAgeMonths !== "0" && (
+                  <Pressable
+                    onPress={() => setChildAgeMonths("0")}
+                    accessibilityRole="button"
+                    accessibilityLabel="Clear child age"
+                    hitSlop={8}
+                  >
+                    <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                  </Pressable>
+                )}
+              </View>
             </View>
             <View style={{ flex: 1 }}>
               <Text style={styles.detailLabel}>Sex</Text>
@@ -310,20 +322,32 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
           <View style={styles.card}>
             <Text style={styles.detailLabel}>Number of Nice Classification Classes (1–45)</Text>
             <View style={{ flexDirection: "row", gap: 8, alignItems: "center", marginTop: 4 }}>
-              <TextInput
-            key={`ti-2-${theme.isDark ? "dark" : "light"}`}
-            multiline={false}
-            numberOfLines={1}
-                value={tmClasses === "0" ? "" : tmClasses}
-                onChangeText={(txt) => {
-                  const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
-                  setTmClasses(cleaned);
-                }}
-                placeholder="1"
-                placeholderTextColor={theme.textMuted}
-                keyboardType="numeric"
-                style={[styles.searchBar, { flex: 1, fontWeight: "800", color: theme.textPrimary }]}
-              />
+              <View style={[styles.searchBar, { flex: 1 }]}>
+                <TextInput
+                  key={`ti-2-${theme.isDark ? "dark" : "light"}`}
+                  multiline={false}
+                  numberOfLines={1}
+                  value={tmClasses === "0" ? "" : tmClasses}
+                  onChangeText={(txt) => {
+                    const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+                    setTmClasses(cleaned);
+                  }}
+                  placeholder="1"
+                  placeholderTextColor={theme.textMuted}
+                  keyboardType="numeric"
+                  style={[styles.searchInput, { marginLeft: 0, fontWeight: "800", color: theme.textPrimary }]}
+                />
+                {tmClasses !== "" && tmClasses !== "0" && (
+                  <Pressable
+                    onPress={() => setTmClasses("0")}
+                    accessibilityRole="button"
+                    accessibilityLabel="Clear classes count"
+                    hitSlop={8}
+                  >
+                    <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                  </Pressable>
+                )}
+              </View>
               {[1, 2, 3, 5].map((n) => (
                 <Pressable
                   key={n}
@@ -468,6 +492,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           {categories.map((cat) => (
@@ -619,6 +653,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
@@ -766,6 +810,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         {/* Category Filter */}
@@ -929,6 +983,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         {/* Sort Controls */}
@@ -1051,6 +1115,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
@@ -1178,6 +1252,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         {/* County Filter */}
@@ -1342,6 +1426,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <Text style={styles.subHeading}>Sample EARB Registered Real Estate Firms ({filteredAgents.length})</Text>
@@ -1553,6 +1647,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
@@ -1691,6 +1795,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
@@ -1847,6 +1961,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: 6 }}>
@@ -2013,6 +2137,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           {categories.map((c) => (
@@ -2098,6 +2232,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           {["All", ...soils.map((s) => s.name)].map((nm) => (
@@ -2202,6 +2346,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           <Pressable
@@ -2310,6 +2464,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           {counties.map((c) => (
@@ -2410,6 +2574,16 @@ export function ReferenceDirectoryTool({ slug, onScrollToTop }: { slug: string; 
             placeholderTextColor={theme.textMuted}
             style={styles.searchInput}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 8 }}>

@@ -456,7 +456,7 @@ export default function Navbar() {
       {/* Global Command-K Quick Search Modal */}
       {searchOpen && (
         <div
-          className="fixed inset-0 z-[110] bg-black/70 backdrop-blur-sm flex items-start justify-center p-4 pt-16 sm:pt-24"
+          className="fixed inset-0 z-[110] bg-black/70 backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
           onClick={() => setSearchOpen(false)}
           role="dialog"
           aria-modal="true"
@@ -466,7 +466,7 @@ export default function Navbar() {
             className="w-full max-w-xl rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden animate-fade-in-up"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center gap-3 px-4 py-3.5 border-b border-border bg-bg-elevated/60">
+            <div className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-3 border-b border-border bg-bg-elevated/60">
               <Search className="w-4 h-4 text-gold shrink-0" />
               <input
                 ref={searchInputRef}
@@ -480,13 +480,16 @@ export default function Navbar() {
                   }
                 }}
                 placeholder="Search 25 tools, 23 languages, or 47 counties..."
-                className="flex-1 bg-transparent text-sm text-text-primary placeholder:text-text-muted outline-none"
+                className="flex-1 min-w-0 bg-transparent text-sm text-text-primary placeholder:text-text-muted outline-none"
               />
               {searchQuery && (
                 <button
                   type="button"
-                  onClick={() => setSearchQuery("")}
-                  className="text-text-muted hover:text-text-primary text-xs px-1.5 py-0.5"
+                  onClick={() => {
+                    setSearchQuery("");
+                    searchInputRef.current?.focus();
+                  }}
+                  className="shrink-0 text-text-muted hover:text-gold text-xs font-medium px-2 py-1 rounded-md hover:bg-bg-card transition-colors cursor-pointer"
                 >
                   Clear
                 </button>
@@ -494,10 +497,10 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setSearchOpen(false)}
-                className="rounded-lg border border-border bg-bg-card p-1 text-text-muted hover:text-text-primary"
+                className="shrink-0 w-7 h-7 rounded-lg border border-border bg-bg-card flex items-center justify-center text-text-muted hover:text-text-primary hover:border-gold/50 transition-colors cursor-pointer"
                 aria-label="Close search"
               >
-                <X className="w-4 h-4" />
+                <X className="w-4 h-4 shrink-0" />
               </button>
             </div>
 

@@ -3703,38 +3703,38 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "oudo"
           },
           {
-            "target": "tomon (10)",
-            "source": "10",
-            "pronunciation": "tomon"
+            "target": "tomon",
+            "source": "Ten (10)",
+            "pronunciation": "to-mon"
           },
           {
-            "target": "tikitem (20)",
-            "source": "20",
-            "pronunciation": "tikitem"
+            "target": "tikitem",
+            "source": "Twenty (20)",
+            "pronunciation": "ti-ki-tem"
           },
           {
-            "target": "o-som (30)",
-            "source": "30",
+            "target": "o-som",
+            "source": "Thirty (30)",
             "pronunciation": "o-som"
           },
           {
-            "target": "artam (40)",
-            "source": "40",
-            "pronunciation": "artam"
+            "target": "artam",
+            "source": "Forty (40)",
+            "pronunciation": "ar-tam"
           },
           {
-            "target": "onom (50)",
-            "source": "50",
-            "pronunciation": "onom"
+            "target": "onom",
+            "source": "Fifty (50)",
+            "pronunciation": "o-nom"
           },
           {
-            "target": "ntomoni-ile (60)",
-            "source": "60",
-            "pronunciation": "ntomoni-ile"
+            "target": "ntomoni-ile",
+            "source": "Sixty (60)",
+            "pronunciation": "nto-mo-ni-i-le"
           },
           {
-            "target": "iip (100)",
-            "source": "100",
+            "target": "iip",
+            "source": "One hundred (100)",
             "pronunciation": "iip"
           },
           {
@@ -4258,59 +4258,90 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "description": "Practice verified Maasai (Maa) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Ashe / Ashe oleng'",
-                        "source": "Thank you / Thank you very much",
-                        "pronunciation": "ashe / ashe o-leng'"
-                },
-                {
-                        "target": "tagwenia",
-                        "source": "Salutation to a woman (literally laugh)",
-                        "pronunciation": "tagwe-nia"
-                },
-                {
-                        "target": "Supa! (resp. Ipa!)",
-                        "source": "Hello! Good day! (general greeting among peers)",
-                        "pronunciation": "supa"
-                },
-                {
-                        "target": "Asai!",
-                        "source": "Many thanks!",
-                        "pronunciation": "a-sai"
-                },
-                {
-                        "target": "Biado!",
-                        "source": "Goodbye!",
-                        "pronunciation": "bi-a-do"
-                },
-                {
-                        "target": "Sopai! (reply: Eépa!)",
-                        "source": "Good morning! (and reply)",
-                        "pronunciation": "so-pai / e-e-pa"
-                },
-                {
-                        "target": "aāsi (lit. an expression of delight)",
-                        "source": "Thank you",
-                        "pronunciation": "aāsi"
-                }
+                  {
+                            "target": "Eserian",
+                            "source": "Peace",
+                            "pronunciation": "eh-seh-ree-ahn"
+                  },
+                  {
+                            "target": "Sopai!",
+                            "source": "Hello",
+                            "pronunciation": "soh-pah-ee / tah-kweh-nyah"
+                  },
+                  {
+                            "target": "Ashe",
+                            "source": "Thank you",
+                            "pronunciation": "ah-sheh oh-lehng"
+                  },
+                  {
+                            "target": "enyorr",
+                            "source": "Please (v. Imp.)",
+                            "pronunciation": "enyorr"
+                  },
+                  {
+                            "target": "Sere!",
+                            "source": "Goodbye! Go in peace!",
+                            "pronunciation": "sere"
+                  },
+                  {
+                            "target": "tagwenia",
+                            "source": "Salutation to a woman (literally laugh)",
+                            "pronunciation": "tagwe-nia"
+                  },
+                  {
+                            "target": "Supa!",
+                            "source": "Hello! Good day! (general greeting among peers)",
+                            "pronunciation": "supa"
+                  },
+                  {
+                            "target": "Asai!",
+                            "source": "Many thanks!",
+                            "pronunciation": "a-sai"
+                  },
+                  {
+                            "target": "Biado!",
+                            "source": "Goodbye!",
+                            "pronunciation": "bi-a-do"
+                  },
+                  {
+                            "target": "ol-mosorrî",
+                            "source": "Egg",
+                            "pronunciation": "ol-mosorri"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ashe / Ashe oleng'",
-                        "source": "Thank you / Thank you very much"
-                },
-                {
-                        "target": "tagwenia",
-                        "source": "Salutation to a woman (literally laugh)"
-                },
-                {
-                        "target": "Supa! (resp. Ipa!)",
-                        "source": "Hello! Good day! (general greeting among peers)"
-                },
-                {
-                        "target": "Asai!",
-                        "source": "Many thanks!"
-                }
+                  {
+                            "target": "ēlara pl. ēelā",
+                            "source": "Oil"
+                  },
+                  {
+                            "target": "Ol mossóri",
+                            "source": "Egg"
+                  },
+                  {
+                            "target": "erangnaiyu or olongaboili",
+                            "source": "Fruit"
+                  },
+                  {
+                            "target": "embuguri pl. embugurrtu",
+                            "source": "Gourd"
+                  },
+                  {
+                            "target": "El paiyek",
+                            "source": "Maize"
+                  },
+                  {
+                            "target": "Eñ gare",
+                            "source": "Water"
+                  },
+                  {
+                            "target": "elmaisuri pl. olmaisuri",
+                            "source": "Banana"
+                  },
+                  {
+                            "target": "engorrno pl. engorrn",
+                            "source": "Butter"
+                  }
         ]
 },
         {
@@ -4320,54 +4351,90 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Maasai (Maa) sentences for healthcare, transport, and community safety.",
         "culturalNote": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Torripa emoti pl. motiu pee eaku serian enkop",
-                        "source": "Guard cooking vessel for the peace of the land",
-                        "pronunciation": "torripa emoti pl motiu pee eaku serian enkop"
-                },
-                {
-                        "target": "salam (tomoni ooudo)",
-                        "source": "Ninety",
-                        "pronunciation": "sa-lam"
-                },
-                {
-                        "target": "Tomon obo",
-                        "source": "Eleven",
-                        "pronunciation": "to-mon o-boh"
-                },
-                {
-                        "target": "Tigitam",
-                        "source": "Twenty",
-                        "pronunciation": "ti-gi-tam"
-                },
-                {
-                        "target": "Tomoni uni",
-                        "source": "Thirty",
-                        "pronunciation": "to-mo-ni u-ni"
-                },
-                {
-                        "target": "ílɛ̂ / íllɛ̂",
-                        "source": "Six (6)",
-                        "pronunciation": "il"
-                }
+                  {
+                            "target": "tɔ́mɔ̂n",
+                            "source": "Ten",
+                            "pronunciation": "toh-mohn"
+                  },
+                  {
+                            "target": "ílɛ̂",
+                            "source": "Six",
+                            "pronunciation": "il"
+                  },
+                  {
+                            "target": "aré",
+                            "source": "Two",
+                            "pronunciation": "are"
+                  },
+                  {
+                            "target": "nabô",
+                            "source": "One",
+                            "pronunciation": "nabo"
+                  },
+                  {
+                            "target": "naáudo",
+                            "source": "Nine",
+                            "pronunciation": "naaudo"
+                  },
+                  {
+                            "target": "ímíêt",
+                            "source": "Five",
+                            "pronunciation": "imiet"
+                  },
+                  {
+                            "target": "oŋwán",
+                            "source": "Four",
+                            "pronunciation": "oh-ngwahn"
+                  },
+                  {
+                            "target": "bogirari",
+                            "source": "Both",
+                            "pronunciation": "bogirari"
+                  },
+                  {
+                            "target": "ematua",
+                            "source": "Half",
+                            "pronunciation": "e-ma-tua"
+                  },
+                  {
+                            "target": "nabu",
+                            "source": "Once",
+                            "pronunciation": "na-bu"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Torripa emoti pl. motiu pee eaku serian enkop",
-                        "source": "Guard cooking vessel for the peace of the land"
-                },
-                {
-                        "target": "salam (tomoni ooudo)",
-                        "source": "Ninety"
-                },
-                {
-                        "target": "Tomon obo",
-                        "source": "Eleven"
-                },
-                {
-                        "target": "Tigitam",
-                        "source": "Twenty"
-                }
+                  {
+                            "target": "Obώ, nabo",
+                            "source": "One"
+                  },
+                  {
+                            "target": "Uñwan, eoñwan",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "Amiet, imiet",
+                            "source": "Five"
+                  },
+                  {
+                            "target": "Oguni, uni",
+                            "source": "Three"
+                  },
+                  {
+                            "target": "tomon are",
+                            "source": "Twelve"
+                  },
+                  {
+                            "target": "Tomon obo",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "Tomoni uni",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "tomoni oopishana",
+                            "source": "Seventy"
+                  }
         ]
 }
     ]

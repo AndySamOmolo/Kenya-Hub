@@ -183,6 +183,16 @@ export function WardConstituencyFinderTool({ onScrollToTop }: { onScrollToTop?: 
             onChangeText={setSearch}
             style={[styles.searchInput, { color: theme.textPrimary }]}
           />
+          {search.length > 0 && (
+            <Pressable
+              onPress={() => setSearch("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         {([
           { key: "order", label: "# Order" },

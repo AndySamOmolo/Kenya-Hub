@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import rentalData from "@/data/rental-tax-data.json";
@@ -47,13 +48,26 @@ export default function RentalTaxCalculatorPage() {
             <label className="block text-xs font-semibold text-text-muted mb-1.5 uppercase">
               Gross Monthly Rent Collected (KES)
             </label>
-            <input
-              type="text"
-              value={monthlyRent ? Number(monthlyRent).toLocaleString("en-KE") : ""}
-              onChange={(e) => setMonthlyRent(e.target.value.replace(/[^0-9]/g, ""))}
-              placeholder="e.g. 85,000"
-              className="w-full px-4 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={monthlyRent ? Number(monthlyRent).toLocaleString("en-KE") : ""}
+                onChange={(e) => setMonthlyRent(e.target.value.replace(/[^0-9]/g, ""))}
+                placeholder="e.g. 85,000"
+                className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
+                style={{ paddingRight: "2.75rem" }}
+              />
+              {monthlyRent && (
+                <button
+                  type="button"
+                  onClick={() => setMonthlyRent("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                  aria-label="Clear monthly rent"
+                >
+                  <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                </button>
+              )}
+            </div>
             <div className="flex flex-wrap gap-1.5 mt-2">
               {[20000, 35000, 85000, 150000, 350000, 1300000].map((preset) => (
                 <button

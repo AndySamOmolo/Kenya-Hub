@@ -697,9 +697,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "tukul, tokol, lopai. Vide p. 74",
-            "source": "All",
-            "pronunciation": "tu-kul to-kol lo-pai",
+            "target": "tukul / tokol / lopai",
+            "source": "All / every",
+            "pronunciation": "tu-kul",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
         ],
@@ -988,9 +988,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "Vide under Cook",
-            "source": "Boil ( trans. )",
-            "pronunciation": "vi-de under cook",
+            "target": "ki-war / ke-ip",
+            "source": "To boil (meat or water)",
+            "pronunciation": "ki-war",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
@@ -3464,116 +3464,90 @@ export const POKOT_UNITS: CourseUnit[] = [
         "description": "Practice verified Pokot (Pökoot) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
         "words": [
-                {
-                        "target": "Sera!",
-                        "source": "Thank-you!",
-                        "pronunciation": "se-ra"
-                },
-                {
-                        "target": "r. cham, pr. o-chem-chin-an, p.p. ko-chem-ch-an",
-                        "source": "Please, to",
-                        "pronunciation": "cham"
-                },
-                {
-                        "target": "Kalyon / Kalya",
-                        "source": "Peace / All is well",
-                        "pronunciation": "kal-yon / kal-ya"
-                },
-                {
-                        "target": "Chamnyan / Bo kalyon?",
-                        "source": "Hello / How are you?",
-                        "pronunciation": "cham-nyan / bo kal-yon"
-                },
-                {
-                        "target": "Tokwes! (Reply: Eia!)",
-                        "source": "Greeting on entering a village: Hail! (and reply)",
-                        "pronunciation": "tok-wes / ei-a"
-                },
-                {
-                        "target": "Chamke! (Reply: Chamke, chamke!)",
-                        "source": "Personal greeting: Health to thee! (and reply)",
-                        "pronunciation": "cham-ke"
-                },
-                {
-                        "target": "Kiripe merap kaa",
-                        "source": "We keep trap at the homestead",
-                        "pronunciation": "kiripe merap kaa"
-                },
-                {
-                        "target": "Kiripe sanai-yan kaa",
-                        "source": "We keep bead at the homestead",
-                        "pronunciation": "kiripe sanai-yan kaa"
-                },
-                {
-                        "target": "Kiripe kirugur kaa",
-                        "source": "We keep bell at the homestead",
-                        "pronunciation": "kiripe kirugur kaa"
-                },
-                {
-                        "target": "Kiripe añgw-a kaa",
-                        "source": "We keep belt at the homestead",
-                        "pronunciation": "kiripe añgw-a kaa"
-                },
-                {
-                        "target": "Kiripe kôkat kaa",
-                        "source": "We keep gate at the homestead",
-                        "pronunciation": "kiripe kôkat kaa"
-                },
-                {
-                        "target": "Kiripe kata-nyan kaa",
-                        "source": "We keep home at the homestead",
-                        "pronunciation": "kiripe kata-nyan kaa"
-                }
+                  {
+                            "target": "mīs",
+                            "source": "Peace",
+                            "pronunciation": "mis"
+                  },
+                  {
+                            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
+                            "source": "Goodbye!",
+                            "pronunciation": "ko-rot-on ans i-rot-enyi"
+                  },
+                  {
+                            "target": "Sĕra!",
+                            "source": "Thank you",
+                            "pronunciation": "sera"
+                  },
+                  {
+                            "target": "Sera!",
+                            "source": "Thank-you!",
+                            "pronunciation": "se-ra"
+                  },
+                  {
+                            "target": "Kalyon",
+                            "source": "Peace / All is well",
+                            "pronunciation": "kal-yon / kal-ya"
+                  },
+                  {
+                            "target": "Chamnyan",
+                            "source": "Hello / How are you?",
+                            "pronunciation": "cham-nyan / bo kal-yon"
+                  },
+                  {
+                            "target": "Tokwes!",
+                            "source": "Greeting on entering a village: Hail! (and reply)",
+                            "pronunciation": "tok-wes / ei-a"
+                  },
+                  {
+                            "target": "Chamke!",
+                            "source": "Personal greeting: Health to thee! (and reply)",
+                            "pronunciation": "cham-ke"
+                  },
+                  {
+                            "target": "che",
+                            "source": "Milk",
+                            "pronunciation": "che / che-go"
+                  },
+                  {
+                            "target": "pany",
+                            "source": "Meat",
+                            "pronunciation": "pany"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Kimache r. nērt tugul",
-                        "source": "We want to learn together"
-                },
-                {
-                        "target": "Kimache r. nagh tugul",
-                        "source": "We want to light together"
-                },
-                {
-                        "target": "Kimache r. loich tugul",
-                        "source": "We want to mourn together"
-                },
-                {
-                        "target": "Kimache r. ruwoch tugul",
-                        "source": "We want to order together"
-                },
-                {
-                        "target": "Kimache r. tit tugul",
-                        "source": "We want to reach together"
-                },
-                {
-                        "target": "Kimache r. iyĭt tugul",
-                        "source": "We want to spill together"
-                },
-                {
-                        "target": "Kimache r. ghany tugul",
-                        "source": "We want to stand together"
-                },
-                {
-                        "target": "Kimache r. chôr tugul",
-                        "source": "We want to steal together"
-                },
-                {
-                        "target": "Kimache r. puch tugul",
-                        "source": "We want to sweep together"
-                },
-                {
-                        "target": "Kimache r. cham tugul",
-                        "source": "We want to taste together"
-                },
-                {
-                        "target": "Kimache r. wīrt tugul",
-                        "source": "We want to throw together"
-                },
-                {
-                        "target": "Kimache r. ñgwut tugul",
-                        "source": "We want to touch together"
-                }
+                  {
+                            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
+                            "source": "Goodbye!"
+                  },
+                  {
+                            "target": "mwai'-pa-cheʻ, lit. fat of milk",
+                            "source": "Butter"
+                  },
+                  {
+                            "target": "r. kĕl, pr. o-kel-an, -ei, p.p. ka-kĕl-an",
+                            "source": "Fry, to"
+                  },
+                  {
+                            "target": "r. pal, pr. o-pĕl-an, -ei, p.p. ka-păl-an",
+                            "source": "Bake, to"
+                  },
+                  {
+                            "target": "r. nyagh, pr. o-nyogh-an, p.p. ka-nyagh-an",
+                            "source": "Pound, to"
+                  },
+                  {
+                            "target": "r. pal, pr. o-pel-an, -ei, p.p. ka-pal-an",
+                            "source": "Roast, to"
+                  },
+                  {
+                            "target": "r. rur, pr. o-rur-an, -ei, p.p. kô-rur-an",
+                            "source": "Ripe, to be"
+                  },
+                  {
+                            "target": "pogh pa maʻ",
+                            "source": "Hot water"
+                  }
         ]
 },
       {
@@ -3583,116 +3557,90 @@ export const POKOT_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Pokot (Pökoot) sentences for healthcare, transport, and community safety.",
         "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
         "words": [
-                {
-                        "target": "Kiripe ares kaa",
-                        "source": "We keep wall at the homestead",
-                        "pronunciation": "kiripe ares kaa"
-                },
-                {
-                        "target": "Kiripe wu kaa",
-                        "source": "We keep wood at the homestead",
-                        "pronunciation": "kiripe wu kaa"
-                },
-                {
-                        "target": "Ata r. iyakwiy ಒsokoni?",
-                        "source": "How much is feed cattle at the market?",
-                        "pronunciation": "ata r iyakwiy sokoni"
-                },
-                {
-                        "target": "Ata setīm ಒsokoni?",
-                        "source": "How much is castrated sheep at the market?",
-                        "pronunciation": "ata setīm sokoni"
-                },
-                {
-                        "target": "Ata cheptoya ಒsokoni?",
-                        "source": "How much is dark-coloured ox at the market?",
-                        "pronunciation": "ata cheptoya sokoni"
-                },
-                {
-                        "target": "Ata semiyu ಒsokoni?",
-                        "source": "How much is disease at the market?",
-                        "pronunciation": "ata semiyu sokoni"
-                },
-                {
-                        "target": "Ata r. pkwonsi ಒsokoni?",
-                        "source": "How much is bark at the market?",
-                        "pronunciation": "ata r pkwonsi sokoni"
-                },
-                {
-                        "target": "Ata r. toru ಒsokoni?",
-                        "source": "How much is miscarry at the market?",
-                        "pronunciation": "ata r toru sokoni"
-                },
-                {
-                        "target": "Ata r. wach ಒsokoni?",
-                        "source": "How much is bellow at the market?",
-                        "pronunciation": "ata r wach sokoni"
-                },
-                {
-                        "target": "Ata atekēr ಒsokoni?",
-                        "source": "How much is trough at the market?",
-                        "pronunciation": "ata atekēr sokoni"
-                },
-                {
-                        "target": "Rip merap ಒkokwö",
-                        "source": "Protect trap in the community",
-                        "pronunciation": "rip merap kokwö"
-                },
-                {
-                        "target": "Rip sanai-yan ಒkokwö",
-                        "source": "Protect bead in the community",
-                        "pronunciation": "rip sanai-yan kokwö"
-                }
+                  {
+                            "target": "àkɔ́ɔ́ŋkɔ̀ (akong'o",
+                            "source": "One",
+                            "pronunciation": "a-koong-ko"
+                  },
+                  {
+                            "target": "oɣë̀ë̀ŋ",
+                            "source": "Two",
+                            "pronunciation": "o-deeng"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",
+                            "source": "Six",
+                            "pronunciation": "muut ngo a-koong-o"
+                  },
+                  {
+                            "target": "támàn",
+                            "source": "Ten",
+                            "pronunciation": "ta-man"
+                  },
+                  {
+                            "target": "àŋwân",
+                            "source": "Four",
+                            "pronunciation": "ang-wan"
+                  },
+                  {
+                            "target": "múut",
+                            "source": "Five",
+                            "pronunciation": "muut"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ àŋwân",
+                            "source": "Nine",
+                            "pronunciation": "muut ngo ang-wan"
+                  },
+                  {
+                            "target": "kareran",
+                            "source": "Half",
+                            "pronunciation": "ka-re-ran"
+                  },
+                  {
+                            "target": "all three, &c",
+                            "source": "Both",
+                            "pronunciation": "al three c"
+                  },
+                  {
+                            "target": "sä́mä́k",
+                            "source": "Three",
+                            "pronunciation": "sa-mak"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Kimache r. riny tugul",
-                        "source": "We want to twist together"
-                },
-                {
-                        "target": "Kimache r. mwund tugul",
-                        "source": "We want to vomit together"
-                },
-                {
-                        "target": "Ata kulo-won ಒsokoni?",
-                        "source": "How much is cupping-horn at the market?"
-                },
-                {
-                        "target": "Ata kulum ಒsokoni?",
-                        "source": "How much is stingless bee at the market?"
-                },
-                {
-                        "target": "Ata piyapai-wa ಒsokoni?",
-                        "source": "How much is white termite at the market?"
-                },
-                {
-                        "target": "Ata min-yon ಒsokoni?",
-                        "source": "How much is leather at the market?"
-                },
-                {
-                        "target": "Ata ôr-a-tich ಒsokoni?",
-                        "source": "How much is of cattle-fold at the market?"
-                },
-                {
-                        "target": "Ata setīm ಒsokoni?",
-                        "source": "How much is castrated goat at the market?"
-                },
-                {
-                        "target": "Ata sepel-ion ಒsokoni?",
-                        "source": "How much is young she-goat at the market?"
-                },
-                {
-                        "target": "Ata r. iyakwiy ಒsokoni?",
-                        "source": "How much is feed cattle at the market?"
-                },
-                {
-                        "target": "Ata cheptoya ಒsokoni?",
-                        "source": "How much is dark-coloured ox at the market?"
-                },
-                {
-                        "target": "Ata semiyu ಒsokoni?",
-                        "source": "How much is disease at the market?"
-                }
+                  {
+                            "target": "àkɔ́ɔ́ŋkɔ̀ (akong'o",
+                            "source": "One"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",
+                            "source": "Six"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ àŋwân",
+                            "source": "Nine"
+                  },
+                  {
+                            "target": "all three, &c",
+                            "source": "Both"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ òdë̀ë̀ŋ",
+                            "source": "Seven"
+                  },
+                  {
+                            "target": "múut ŋɡɔ́ sä́mä́k",
+                            "source": "Eight"
+                  },
+                  {
+                            "target": "nya-pa-mūt, nya-le-mūt",
+                            "source": "Fifth"
+                  },
+                  {
+                            "target": "p' oghieñg",
+                            "source": "Twice"
+                  }
         ]
 }
     ]

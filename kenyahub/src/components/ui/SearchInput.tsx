@@ -19,7 +19,19 @@ export default function SearchInput({
   const hasClearButton = Boolean(value && onClear);
   const wrapperClass = className.includes("flex-1")
     ? "relative flex-1 min-w-0 w-full group/search"
-    : "relative w-full group/search";
+    : "relative w-full min-w-0 group/search";
+
+  // Strip .input-field / .input-field--with-search from className so global mobile padding (!important)
+  // never overrides the search icon and clear ("X") button clearance.
+  const sanitizedClassName = className
+    .split(/\s+/)
+    .filter(
+      (token) =>
+        Boolean(token) &&
+        token !== "input-field" &&
+        token !== "input-field--with-search"
+    )
+    .join(" ");
 
   // Allow pressing "/" anywhere on the page (when not typing in another field) to focus the primary search input
   useEffect(() => {
@@ -52,7 +64,8 @@ export default function SearchInput({
         type="text"
         value={value}
         placeholder={placeholder}
-        className="w-full h-11.5 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all duration-200 hover:border-border-light focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/20 search-input-compact"
+        {...props}
+        className={`w-full min-w-0 h-11 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all duration-200 hover:border-border-light focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/20 search-input-compact ${sanitizedClassName}`.trim()}
         style={{
           paddingLeft: "2.75rem",
           paddingRight: hasClearButton ? "2.75rem" : "2.5rem",
@@ -60,7 +73,6 @@ export default function SearchInput({
           ...style,
         }}
         autoComplete="off"
-        {...props}
       />
       {!hasClearButton && (
         <kbd
@@ -77,7 +89,7 @@ export default function SearchInput({
             onClear?.();
             inputRef.current?.focus();
           }}
-          className="absolute right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
           aria-label="Clear search"
         >
           <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />

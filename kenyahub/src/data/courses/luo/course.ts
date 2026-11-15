@@ -3524,59 +3524,90 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         "description": "Practice verified Dholuo (Luo) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Ingima, Omera? — Angima, Omera, to in?",
-                        "source": "How are you, my friend? — I am well, my friend, and you?",
-                        "pronunciation": "ingima, omera? — angima, omera, to in?"
-                },
-                {
-                        "target": "Inindo nade? — Anindo maber (marach).",
-                        "source": "How did you sleep? — I slept well (unwell).",
-                        "pronunciation": "inindo nade? — anindo maber marach."
-                },
-                {
-                        "target": "Iriyo nade? — Ariyo maber (marach).",
-                        "source": "How have you spent the day? — I spent the day well (badly).",
-                        "pronunciation": "iriyo nade? — ariyo maber marach."
-                },
-                {
-                        "target": "Misawa",
-                        "source": "Peace! Hello! Good morning/evening! (also Okwe)",
-                        "pronunciation": "misawa"
-                },
-                {
-                        "target": "Inindi",
-                        "source": "Good-bye!",
-                        "pronunciation": "inindi"
-                },
-                {
-                        "target": "Tich mar programu / Migao mar kodi",
-                        "source": "Function / Computer program routine",
-                        "pronunciation": "teech mahr proh-grah-moo"
-                },
-                {
-                        "target": "Dongruok mar piny",
-                        "source": "National development / Progress",
-                        "pronunciation": "dohng-roo-ohk mahr peeny"
-                }
+                  {
+                            "target": "Kwe",
+                            "source": "Peace",
+                            "pronunciation": "kweh"
+                  },
+                  {
+                            "target": "Misawa",
+                            "source": "Hello",
+                            "pronunciation": "mee-sah-wah / behr"
+                  },
+                  {
+                            "target": "Okwe!",
+                            "source": "Peace!",
+                            "pronunciation": "oh-kweh"
+                  },
+                  {
+                            "target": "Rwako",
+                            "source": "Welcome",
+                            "pronunciation": "rwa-ko / don-ju-ru"
+                  },
+                  {
+                            "target": "Erokamano",
+                            "source": "Thank you",
+                            "pronunciation": "eh-roh-kah-mah-noh"
+                  },
+                  {
+                            "target": "ukwe",
+                            "source": "Salutation",
+                            "pronunciation": "ukwe"
+                  },
+                  {
+                            "target": "ohombo",
+                            "source": "Salute, to",
+                            "pronunciation": "o-hombo"
+                  },
+                  {
+                            "target": "wene",
+                            "source": "Pardon, to",
+                            "pronunciation": "we-ne"
+                  },
+                  {
+                            "target": "Misawa!",
+                            "source": "Peace! / Hello!",
+                            "pronunciation": "mee-sah-wah"
+                  },
+                  {
+                            "target": "Inindi",
+                            "source": "Goodbye / Sleep well",
+                            "pronunciation": "ee-neen-dee"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ingima, Omera? — Angima, Omera, to in?",
-                        "source": "How are you, my friend? — I am well, my friend, and you?"
-                },
-                {
-                        "target": "Inindo nade? — Anindo maber (marach).",
-                        "source": "How did you sleep? — I slept well (unwell)."
-                },
-                {
-                        "target": "Iriyo nade? — Ariyo maber (marach).",
-                        "source": "How have you spent the day? — I spent the day well (badly)."
-                },
-                {
-                        "target": "Misawa",
-                        "source": "Peace! Hello! Good morning/evening! (also Okwe)"
-                }
+                  {
+                            "target": "Ero kamano",
+                            "source": "Thank you / Well done"
+                  },
+                  {
+                            "target": "Wagoyo ni Nyasaye erokamano",
+                            "source": "We thank God"
+                  },
+                  {
+                            "target": "Misawa. Okwe",
+                            "source": "Good morning / Good evening / Peace"
+                  },
+                  {
+                            "target": "Misawa! — Misawa ahinya!",
+                            "source": "Hail! / Peace! — Great peace!"
+                  },
+                  {
+                            "target": "Oyawore! — Oyawore ahinya!",
+                            "source": "Good morning! — Good morning to you!"
+                  },
+                  {
+                            "target": "Oimore! — Oimore ahinya!",
+                            "source": "Good evening! — Good evening to you!"
+                  },
+                  {
+                            "target": "Inindo nade? — Anindo maber.",
+                            "source": "How did you sleep? — I slept well (unwell)."
+                  },
+                  {
+                            "target": "Tich mar programu",
+                            "source": "Function / Computer program routine"
+                  }
         ]
 },
         {
@@ -3586,54 +3617,90 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Dholuo (Luo) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Marachiel",
-                        "source": "First",
-                        "pronunciation": "ma-rachiel"
-                },
-                {
-                        "target": "Pir' añwen",
-                        "source": "Forty",
-                        "pronunciation": "pir' angwen"
-                },
-                {
-                        "target": "Pir abitc",
-                        "source": "Fifty",
-                        "pronunciation": "pir a-bitc"
-                },
-                {
-                        "target": "abichigario or abirio",
-                        "source": "Seven",
-                        "pronunciation": "a-bich-i-ga-rio or a-bi-rio"
-                },
-                {
-                        "target": "abichi gadek or aboru",
-                        "source": "Eight",
-                        "pronunciation": "a-bich-i ga-dek or a-bo-ru"
-                },
-                {
-                        "target": "Aberēo",
-                        "source": "Seven",
-                        "pronunciation": "a-be-re-ho"
-                }
+                  {
+                            "target": "Achiel",
+                            "source": "One",
+                            "pronunciation": "ah-chee-ehl"
+                  },
+                  {
+                            "target": "Ariyo",
+                            "source": "Two",
+                            "pronunciation": "ah-ree-yoh"
+                  },
+                  {
+                            "target": "Auchiel",
+                            "source": "Six",
+                            "pronunciation": "ah-oo-chee-ehl"
+                  },
+                  {
+                            "target": "Apar",
+                            "source": "Ten",
+                            "pronunciation": "ah-pahr"
+                  },
+                  {
+                            "target": "Ang'wen",
+                            "source": "Four",
+                            "pronunciation": "ah-ng'wehn"
+                  },
+                  {
+                            "target": "Abich",
+                            "source": "Five",
+                            "pronunciation": "ah-beech"
+                  },
+                  {
+                            "target": "Ongachiel",
+                            "source": "Nine",
+                            "pronunciation": "ohng-ah-chee-ehl"
+                  },
+                  {
+                            "target": "Kuchiel",
+                            "source": "Half",
+                            "pronunciation": "kuchiel"
+                  },
+                  {
+                            "target": "nyadi chiel",
+                            "source": "Once",
+                            "pronunciation": "nya-di chiel"
+                  },
+                  {
+                            "target": "Adek",
+                            "source": "Three",
+                            "pronunciation": "ah-dehk"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Marachiel",
-                        "source": "First"
-                },
-                {
-                        "target": "Pir' añwen",
-                        "source": "Forty"
-                },
-                {
-                        "target": "Pir abitc",
-                        "source": "Fifty"
-                },
-                {
-                        "target": "abichigario or abirio",
-                        "source": "Seven"
-                }
+                  {
+                            "target": "nyadi chiel",
+                            "source": "Once"
+                  },
+                  {
+                            "target": "abichi gangwen",
+                            "source": "Nine"
+                  },
+                  {
+                            "target": "Pir' añwen",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Pir abitc",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "abichigario or abirio",
+                            "source": "Seven"
+                  },
+                  {
+                            "target": "abichi gadek or aboru",
+                            "source": "Eight"
+                  },
+                  {
+                            "target": "Piero ariyo",
+                            "source": "Twenty"
+                  },
+                  {
+                            "target": "Mar ariyo",
+                            "source": "Second"
+                  }
         ]
 }
     ]

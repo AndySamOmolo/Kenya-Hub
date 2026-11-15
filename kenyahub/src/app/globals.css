@@ -1050,7 +1050,11 @@ ins.adsbygoogle {
   }
   .input-field--with-search {
     padding-left: 2.5rem !important;
-    padding-right: 2.25rem !important;
+    padding-right: 2.5rem !important;
+  }
+  .search-input-compact {
+    padding-left: 2.75rem !important;
+    padding-right: 2.75rem !important;
   }
 }
 

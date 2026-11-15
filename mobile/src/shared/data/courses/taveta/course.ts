@@ -2906,84 +2906,90 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "description": "Practice verified Taveta (Kitaveta) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Jahako",
-                        "source": "Hello",
-                        "pronunciation": "ja-ha-ko"
-                },
-                {
-                        "target": "Ni wega / Chavuche",
-                        "source": "Thank you",
-                        "pronunciation": "nee weh-gah / chah-voo-cheh"
-                },
-                {
-                        "target": "Jedi yoko jahako",
-                        "source": "Hello (Reply: Good, how are you?)",
-                        "pronunciation": "je-di yo-ko ja-ha-ko"
-                },
-                {
-                        "target": "Mwakire / Uko vedi?",
-                        "source": "Hello / How are you? (Kitaveta)",
-                        "pronunciation": "mwakire"
-                },
-                {
-                        "target": "Niko vedi",
-                        "source": "I am fine",
-                        "pronunciation": "niko vedi"
-                },
-                {
-                        "target": "Chavanga / Asante",
-                        "source": "Thank you",
-                        "pronunciation": "chavanga"
-                },
-                {
-                        "target": "Karibu kaya",
-                        "source": "Welcome home",
-                        "pronunciation": "karibu kaya"
-                },
-                {
-                        "target": "Tunarinda U-sāwi kaya yetu",
-                        "source": "We keep magic at our homestead",
-                        "pronunciation": "tunarinda u-sāwi kaya yetu"
-                },
-                {
-                        "target": "Tunarinda Nkōma kaya yetu",
-                        "source": "We keep spirit at our homestead",
-                        "pronunciation": "tunarinda nkōma kaya yetu"
-                },
-                {
-                        "target": "Tunarinda ndaa kaya yetu",
-                        "source": "We keep riddle at our homestead",
-                        "pronunciation": "tunarinda ndaa kaya yetu"
-                },
-                {
-                        "target": "Tunarinda Nkoma kaya yetu",
-                        "source": "We keep devil at our homestead",
-                        "pronunciation": "tunarinda nkoma kaya yetu"
-                },
-                {
-                        "target": "Tunarinda njama yaekomi kaya yetu",
-                        "source": "We keep council of elders at our homestead",
-                        "pronunciation": "tunarinda njama yaekomi kaya yetu"
-                }
+                  {
+                            "target": "Jahako",
+                            "source": "Hello",
+                            "pronunciation": "ja-ha-ko"
+                  },
+                  {
+                            "target": "Ni wega",
+                            "source": "Thank you",
+                            "pronunciation": "nee weh-gah / chah-voo-cheh"
+                  },
+                  {
+                            "target": "Jedi yoko jahako",
+                            "source": "Hello (Reply: Good, how are you?)",
+                            "pronunciation": "je-di yo-ko ja-ha-ko"
+                  },
+                  {
+                            "target": "Mwakire",
+                            "source": "Hello / How are you? (Kitaveta)",
+                            "pronunciation": "mwakire"
+                  },
+                  {
+                            "target": "Niko vedi",
+                            "source": "I am fine",
+                            "pronunciation": "niko vedi"
+                  },
+                  {
+                            "target": "Karibu kaya",
+                            "source": "Welcome home",
+                            "pronunciation": "karibu kaya"
+                  },
+                  {
+                            "target": "Ki-kwa",
+                            "source": "Yam",
+                            "pronunciation": "ki-kwa vi-kwa"
+                  },
+                  {
+                            "target": "I-tagi",
+                            "source": "Egg",
+                            "pronunciation": "i-tagi ma"
+                  },
+                  {
+                            "target": "nyama",
+                            "source": "Meat",
+                            "pronunciation": "nyah-mah"
+                  },
+                  {
+                            "target": "maziwa",
+                            "source": "Milk",
+                            "pronunciation": "mah-zee-wah / mah-beh-leh"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Jahako",
-                        "source": "Hello"
-                },
-                {
-                        "target": "Ni wega / Chavuche",
-                        "source": "Thank you"
-                },
-                {
-                        "target": "Jedi yoko jahako",
-                        "source": "Hello (Reply: Good, how are you?)"
-                },
-                {
-                        "target": "Mwakire / Uko vedi?",
-                        "source": "Hello / How are you? (Kitaveta)"
-                }
+                  {
+                            "target": "Ni wega",
+                            "source": "Thank you"
+                  },
+                  {
+                            "target": "Jedi yoko jahako",
+                            "source": "Hello (Reply: Good, how are you?)"
+                  },
+                  {
+                            "target": "Niko vedi",
+                            "source": "I am fine"
+                  },
+                  {
+                            "target": "Karibu kaya",
+                            "source": "Welcome home"
+                  },
+                  {
+                            "target": "M-nyū. I-gādi",
+                            "source": "Salt"
+                  },
+                  {
+                            "target": "Tunarinda Ki-kwa kaya yetu",
+                            "source": "We keep yam at our homestead"
+                  },
+                  {
+                            "target": "Tunarinda I-tagi kaya yetu",
+                            "source": "We keep egg at our homestead"
+                  },
+                  {
+                            "target": "Tunarinda nyama kaya yetu",
+                            "source": "We keep meat at our homestead"
+                  }
         ]
 },
         {
@@ -2993,54 +2999,90 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Taveta (Kitaveta) sentences for healthcare, transport, and community safety.",
         "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Tunarinda M-ōto • I-deγe kaya yetu",
-                        "source": "We keep fire & bird at our homestead",
-                        "pronunciation": "tunarinda m-ōt  i-dee kaya yetu"
-                },
-                {
-                        "target": "Tunarinda Lu-īmbo kaya yetu",
-                        "source": "We keep song at our homestead",
-                        "pronunciation": "tunarinda lu-īmb kaya yetu"
-                },
-                {
-                        "target": "Rinda U-sāwi kwa amani na uzima",
-                        "source": "Protect magic for peace and health",
-                        "pronunciation": "rinda u-sāwi kwa amani na uzima"
-                },
-                {
-                        "target": "papa / baba",
-                        "source": "Father",
-                        "pronunciation": "ba-ba"
-                },
-                {
-                        "target": "mama / mamo",
-                        "source": "Mother",
-                        "pronunciation": "ma-ma"
-                },
-                {
-                        "target": "M-rīngga",
-                        "source": "Sister",
-                        "pronunciation": "m-ringga"
-                }
+                  {
+                            "target": "mtandatu",
+                            "source": "Six",
+                            "pronunciation": "mtan-da-tu"
+                  },
+                  {
+                            "target": "ikumi",
+                            "source": "Ten",
+                            "pronunciation": "i-ku-mi"
+                  },
+                  {
+                            "target": "-mwe",
+                            "source": "One",
+                            "pronunciation": "mwe"
+                  },
+                  {
+                            "target": "-vīrī",
+                            "source": "Two",
+                            "pronunciation": "vi-ri"
+                  },
+                  {
+                            "target": "ina",
+                            "source": "Four",
+                            "pronunciation": "i-na"
+                  },
+                  {
+                            "target": "ishano",
+                            "source": "Five",
+                            "pronunciation": "i-sha-no"
+                  },
+                  {
+                            "target": "kenda",
+                            "source": "Nine",
+                            "pronunciation": "ken-da"
+                  },
+                  {
+                            "target": "itatu",
+                            "source": "Three",
+                            "pronunciation": "i-ta-tu"
+                  },
+                  {
+                            "target": "mfungate",
+                            "source": "Seven",
+                            "pronunciation": "mfun-ga-te"
+                  },
+                  {
+                            "target": "mnane",
+                            "source": "Eight",
+                            "pronunciation": "mna-ne"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Tunarinda M-ōto • I-deγe kaya yetu",
-                        "source": "We keep fire & bird at our homestead"
-                },
-                {
-                        "target": "Tunarinda Lu-īmbo kaya yetu",
-                        "source": "We keep song at our homestead"
-                },
-                {
-                        "target": "Rinda U-sāwi kwa amani na uzima",
-                        "source": "Protect magic for peace and health"
-                },
-                {
-                        "target": "papa / baba",
-                        "source": "Father"
-                }
+                  {
+                            "target": "nā, I-nnā",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "Mī-rōnggo mī-nā",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Mī-rōnggo mī-sāno",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "mirongo miwiri",
+                            "source": "Twenty"
+                  },
+                  {
+                            "target": "Mī-rōnggo mī-tātū",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "I-kūmi na ī-mwe",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "Ki-hīndē, Ki-hīndi",
+                            "source": "Thousand"
+                  },
+                  {
+                            "target": "mndu mume",
+                            "source": "Man"
+                  }
         ]
 }
     ]

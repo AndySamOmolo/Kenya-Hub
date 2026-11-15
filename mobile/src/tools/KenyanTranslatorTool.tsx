@@ -1741,76 +1741,118 @@ export function KenyanTranslatorTool({
                 </Text>
 
                 <Text style={styles.inputLabel}>Language</Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribLang}
-                  onChangeText={setContribLang}
-                  placeholder="e.g. Kikuyu, Luo, Turkana..."
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribLang}
+                    onChangeText={setContribLang}
+                    placeholder="e.g. Kikuyu, Luo, Turkana..."
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribLang.length > 0 && (
+                    <Pressable onPress={() => setContribLang("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Text style={styles.inputLabel}>English Phrase / Term *</Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribEnglish}
-                  onChangeText={setContribEnglish}
-                  placeholder="e.g. Good morning"
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribEnglish}
+                    onChangeText={setContribEnglish}
+                    placeholder="e.g. Good morning"
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribEnglish.length > 0 && (
+                    <Pressable onPress={() => setContribEnglish("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Text style={styles.inputLabel}>Native Translation *</Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribTranslation}
-                  onChangeText={setContribTranslation}
-                  placeholder="Native word or phrase..."
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribTranslation}
+                    onChangeText={setContribTranslation}
+                    placeholder="Native word or phrase..."
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribTranslation.length > 0 && (
+                    <Pressable onPress={() => setContribTranslation("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Text style={styles.inputLabel}>
                   Pronunciation (approximate)
                 </Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribPronounce}
-                  onChangeText={setContribPronounce}
-                  placeholder="Phonetic sounding guide..."
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribPronounce}
+                    onChangeText={setContribPronounce}
+                    placeholder="Phonetic sounding guide..."
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribPronounce.length > 0 && (
+                    <Pressable onPress={() => setContribPronounce("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Text style={styles.inputLabel}>
                   Dialect / Cultural Context
                 </Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribContext}
-                  onChangeText={setContribContext}
-                  placeholder="e.g. Used in Nyeri dialect, spoken by elders..."
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribContext}
+                    onChangeText={setContribContext}
+                    placeholder="e.g. Used in Nyeri dialect, spoken by elders..."
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                  />
+                  {contribContext.length > 0 && (
+                    <Pressable onPress={() => setContribContext("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Text style={styles.inputLabel}>Your Name (optional)</Text>
-                <TextInput
-                  multiline={false}
-                  numberOfLines={1}
-                  value={contribName}
-                  onChangeText={setContribName}
-                  placeholder="Your Name"
-                  placeholderTextColor={theme.textMuted}
-                  style={styles.modalInput}
-                  returnKeyType="done"
-                  onSubmitEditing={handleSubmitContribute}
-                />
+                <View style={{ position: "relative", justifyContent: "center" }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={contribName}
+                    onChangeText={setContribName}
+                    placeholder="Your Name"
+                    placeholderTextColor={theme.textMuted}
+                    style={[styles.modalInput, { paddingRight: 36 }]}
+                    returnKeyType="done"
+                    onSubmitEditing={handleSubmitContribute}
+                  />
+                  {contribName.length > 0 && (
+                    <Pressable onPress={() => setContribName("")} hitSlop={8} style={{ position: "absolute", right: 10 }}>
+                      <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
 
                 <Pressable
                   onPress={handleSubmitContribute}

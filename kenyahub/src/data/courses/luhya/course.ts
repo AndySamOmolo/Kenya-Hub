@@ -3623,9 +3623,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XV, pp. 324–325)"
           },
           {
-            "target": "3 Bagisu Fables",
-            "source": "Ch. XVI, pp. 333–351",
-            "pronunciation": "3-bagisu-fables"
+            "target": "tsingano",
+            "source": "Fables / traditional folk tales",
+            "pronunciation": "tsi-nga-no"
           }
         ],
         "sentences": [
@@ -3730,116 +3730,90 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "description": "Practice verified Luhya (Luyia) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
         "words": [
-                {
-                        "target": "Orio muno / Nyasaye akhasie",
-                        "source": "Thank you very much (Mulembe)",
-                        "pronunciation": "orio muno"
-                },
-                {
-                        "target": "leshiri",
-                        "source": "Pardon, to (Luwanga)",
-                        "pronunciation": "leshiri"
-                },
-                {
-                        "target": "miaiano",
-                        "source": "Peace (Luwanga)",
-                        "pronunciation": "miaiano"
-                },
-                {
-                        "target": "murembe and yoga",
-                        "source": "Salutation (Luwanga)",
-                        "pronunciation": "murembe and yoga"
-                },
-                {
-                        "target": "alubiri",
-                        "source": "Sorry, to be (Luwanga)",
-                        "pronunciation": "alubiri"
-                },
-                {
-                        "target": "unyanziri",
-                        "source": "Thanks (Luwanga)",
-                        "pronunciation": "unyanziri"
-                },
-                {
-                        "target": "usali",
-                        "source": "Peace (Lubukusu/Ketosh)",
-                        "pronunciation": "usali"
-                },
-                {
-                        "target": "murembi",
-                        "source": "Salutation (Lubukusu/Ketosh)",
-                        "pronunciation": "murembi"
-                },
-                {
-                        "target": "Abalimi balombanga In-kio mushitsala",
-                        "source": "Farmers prepare to-morrow in the village",
-                        "pronunciation": "abalimi balombanga in-ki mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga Ama-χana mushitsala",
-                        "source": "Farmers prepare twins in the village",
-                        "pronunciation": "abalimi balombanga ama-ana mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga Omu-losi mushitsala",
-                        "source": "Farmers prepare witch in the village",
-                        "pronunciation": "abalimi balombanga mu-lsi mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga Obu-losi mushitsala",
-                        "source": "Farmers prepare witchcraft in the village",
-                        "pronunciation": "abalimi balombanga bu-lsi mushitsala"
-                }
+                  {
+                            "target": "Mulembe!",
+                            "source": "Hello",
+                            "pronunciation": "moo-lehm-beh / mee-rehm-beh"
+                  },
+                  {
+                            "target": "unyanziri",
+                            "source": "Thanks",
+                            "pronunciation": "unyanzi-ri"
+                  },
+                  {
+                            "target": "Orio",
+                            "source": "Thank you",
+                            "pronunciation": "oh-ree-oh moo-noh / nah-see-mah"
+                  },
+                  {
+                            "target": "murembi",
+                            "source": "Salutation",
+                            "pronunciation": "mu-remb-i"
+                  },
+                  {
+                            "target": "-leshiri",
+                            "source": "Pardon, to",
+                            "pronunciation": "leshi-ri"
+                  },
+                  {
+                            "target": "-shesia",
+                            "source": "Salute, to",
+                            "pronunciation": "she-sia"
+                  },
+                  {
+                            "target": "-leshe",
+                            "source": "Forgive, to",
+                            "pronunciation": "leshe"
+                  },
+                  {
+                            "target": "Eliaro",
+                            "source": "Boat / Canoe (Wanga dialect)",
+                            "pronunciation": "eh-lee-ah-roh"
+                  },
+                  {
+                            "target": "Mrembe",
+                            "source": "Good morning (Bukusu / Wanga / Maragoli)",
+                            "pronunciation": "mrembe"
+                  },
+                  {
+                            "target": "Oli otya?",
+                            "source": "How are you? (9-dialect Luhya)",
+                            "pronunciation": "oli otya"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Muli nende Eri-ta hango?",
-                        "source": "Do you have name at home?"
-                },
-                {
-                        "target": "Muli nende Iṅ-guso hango?",
-                        "source": "Do you have parrot at home?"
-                },
-                {
-                        "target": "Muli nende Im-bolo hango?",
-                        "source": "Do you have penis at home?"
-                },
-                {
-                        "target": "Muli nende Tsi-soni hango?",
-                        "source": "Do you have shame at home?"
-                },
-                {
-                        "target": "Muli nende Umu-sumba hango?",
-                        "source": "Do you have slave at home?"
-                },
-                {
-                        "target": "Muli nende Ama-neke hango?",
-                        "source": "Do you have testicles at home?"
-                },
-                {
-                        "target": "Muli nende Esi-ndu hango?",
-                        "source": "Do you have thing at home?"
-                },
-                {
-                        "target": "Muli nende In-kio hango?",
-                        "source": "Do you have to-morrow at home?"
-                },
-                {
-                        "target": "Muli nende Ama-χana hango?",
-                        "source": "Do you have twins at home?"
-                },
-                {
-                        "target": "Muli nende Omu-losi hango?",
-                        "source": "Do you have witch at home?"
-                },
-                {
-                        "target": "Muli nende Obu-losi hango?",
-                        "source": "Do you have witchcraft at home?"
-                },
-                {
-                        "target": "Muli nende E-we. U-. -χu- hango?",
-                        "source": "Do you have thou at home?"
-                }
+                  {
+                            "target": "msawa, ekui",
+                            "source": "Salutation"
+                  },
+                  {
+                            "target": "Indede wefwe sangala kho abakeni basangale",
+                            "source": "Rejoice so that the guests may rejoice (Lumarachi)"
+                  },
+                  {
+                            "target": "Oli otya?",
+                            "source": "How are you? (9-dialect Luhya)"
+                  },
+                  {
+                            "target": "Orio muno",
+                            "source": "Thank you very much (Mulembe)"
+                  },
+                  {
+                            "target": "murembe and yoga",
+                            "source": "Salutation (Luwanga)"
+                  },
+                  {
+                            "target": "Iny-ingga. Li-gi",
+                            "source": "Egg"
+                  },
+                  {
+                            "target": "Ki-kwa or Si-kwa",
+                            "source": "Yam"
+                  },
+                  {
+                            "target": "Kamafurra, Gamafuta",
+                            "source": "Fat"
+                  }
         ]
 },
         {
@@ -3849,116 +3823,90 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Luhya (Luyia) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016)",
         "words": [
-                {
-                        "target": "Abalimi balombanga E-we. U-. -χu- mushitsala",
-                        "source": "Farmers prepare thou in the village",
-                        "pronunciation": "abalimi balombanga e-we u- -u- mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga Ye. U-yu. Yi- mushitsala",
-                        "source": "Farmers prepare he in the village",
-                        "pronunciation": "abalimi balombanga ye u-yu yi- mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga E-fwe. Χo-. -χu-. -e-fu mushitsala",
-                        "source": "Farmers prepare we in the village",
-                        "pronunciation": "abalimi balombanga e-fwe - -u- -e-fu mushitsala"
-                },
-                {
-                        "target": "Abalimi balombanga E-nwe. Mu-. -ba-?. -e-nwe mushitsala",
-                        "source": "Farmers prepare ye in the village",
-                        "pronunciation": "abalimi balombanga e-nwe mu- -ba- -e-nwe mushitsala"
-                },
-                {
-                        "target": "Ebei ya ulukanga musokoni ni shina?",
-                        "source": "How much is sword at the market?",
-                        "pronunciation": "ebei ya ulukanga musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya awuliri musokoni ni shina?",
-                        "source": "How much is sleeping-place at the market?",
-                        "pronunciation": "ebei ya awuliri musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya lisero musokoni ni shina?",
-                        "source": "How much is mat at the market?",
-                        "pronunciation": "ebei ya lisero musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya linyonje musokoni ni shina?",
-                        "source": "How much is bracelet at the market?",
-                        "pronunciation": "ebei ya linyonje musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya lidala musokoni ni shina?",
-                        "source": "How much is homestead at the market?",
-                        "pronunciation": "ebei ya lidala musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya lasso musokoni ni shina?",
-                        "source": "How much is shoot at the market?",
-                        "pronunciation": "ebei ya lasso musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya shirungu musokoni ni shina?",
-                        "source": "How much is handle at the market?",
-                        "pronunciation": "ebei ya shirungu musokoni ni shina"
-                },
-                {
-                        "target": "Ebei ya Mma musokoni ni shina?",
-                        "source": "How much is mother at the market?",
-                        "pronunciation": "ebei ya mma musokoni ni shina"
-                }
+                  {
+                            "target": "ikhumi",
+                            "source": "Ten",
+                            "pronunciation": "ee-khoo-mee"
+                  },
+                  {
+                            "target": "tsisaasaba",
+                            "source": "Six",
+                            "pronunciation": "tsee-sah-sah-bah"
+                  },
+                  {
+                            "target": "-lala",
+                            "source": "One",
+                            "pronunciation": "la-la / nda-la"
+                  },
+                  {
+                            "target": "-bili",
+                            "source": "Two",
+                            "pronunciation": "bi-li / tsimbi-li"
+                  },
+                  {
+                            "target": "shenda",
+                            "source": "Nine",
+                            "pronunciation": "shehn-dah / kee-ehn-dah"
+                  },
+                  {
+                            "target": "-ne",
+                            "source": "Four",
+                            "pronunciation": "ne / tsi-ne"
+                  },
+                  {
+                            "target": "-raano",
+                            "source": "Five",
+                            "pronunciation": "raa-no / tsi-raa-no"
+                  },
+                  {
+                            "target": "lulala",
+                            "source": "Once",
+                            "pronunciation": "lu-la-la"
+                  },
+                  {
+                            "target": "munane",
+                            "source": "Eight",
+                            "pronunciation": "moo-nah-neh"
+                  },
+                  {
+                            "target": "mufungate",
+                            "source": "Seven",
+                            "pronunciation": "moo-foon-gah-teh / tsee-sah-bah"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Muli nende Ye. U-yu. Yi- hango?",
-                        "source": "Do you have he at home?"
-                },
-                {
-                        "target": "Muli nende E-fwe. Χo-. -χu-. -e-fu hango?",
-                        "source": "Do you have we at home?"
-                },
-                {
-                        "target": "Muli nende E-nwe. Mu-. -ba-?. -e-nwe hango?",
-                        "source": "Do you have ye at home?"
-                },
-                {
-                        "target": "Ebei ya Inyumba yañge musokoni ni shina?",
-                        "source": "How much is my house at the market?"
-                },
-                {
-                        "target": "Ebei ya enalo musokoni ni shina?",
-                        "source": "How much is iron wire at the market?"
-                },
-                {
-                        "target": "Ebei ya inzio musokoni ni shina?",
-                        "source": "How much is thy house at the market?"
-                },
-                {
-                        "target": "Ebei ya inzu iyo musokoni ni shina?",
-                        "source": "How much is his house at the market?"
-                },
-                {
-                        "target": "Ebei ya kikomo musokoni ni shina?",
-                        "source": "How much is brass wire at the market?"
-                },
-                {
-                        "target": "Ebei ya uwufwa musokoni ni shina?",
-                        "source": "How much is powder at the market?"
-                },
-                {
-                        "target": "Ebei ya indekero musokoni ni shina?",
-                        "source": "How much is cooking pot at the market?"
-                },
-                {
-                        "target": "Ebei ya ulukanga musokoni ni shina?",
-                        "source": "How much is sword at the market?"
-                },
-                {
-                        "target": "Ebei ya awuliri musokoni ni shina?",
-                        "source": "How much is sleeping-place at the market?"
-                }
+                  {
+                            "target": "endala and shilala",
+                            "source": "One"
+                  },
+                  {
+                            "target": "wa-wiri vi-wiri",
+                            "source": "Two"
+                  },
+                  {
+                            "target": "tanu nalala",
+                            "source": "Six"
+                  },
+                  {
+                            "target": "E-khumi or Ki-kumi or Kumu-rundu",
+                            "source": "Ten"
+                  },
+                  {
+                            "target": "ranu na-nne, or shienda",
+                            "source": "Nine"
+                  },
+                  {
+                            "target": "Tsitano, Itano",
+                            "source": "Five"
+                  },
+                  {
+                            "target": "Ama-kumi ka-nne",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Ama-kumi ka-rrano",
+                            "source": "Fifty"
+                  }
         ]
 }
     ]

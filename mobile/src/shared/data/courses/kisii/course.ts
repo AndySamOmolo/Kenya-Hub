@@ -2988,84 +2988,90 @@ export const KISII_UNITS: CourseUnit[] = [
         "description": "Practice verified Kisii (Ekegusii) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
         "words": [
-                {
-                        "target": "Mbuya mono (Obeire buya)",
-                        "source": "Thank you",
-                        "pronunciation": "m-boo-yah moh-noh"
-                },
-                {
-                        "target": "Mbuya mono!",
-                        "source": "Thank you very much! / Very well!",
-                        "pronunciation": "mbu-ya mo-no"
-                },
-                {
-                        "target": "Okorwa gose ogotoma chibesa ase esimu",
-                        "source": "Mobile money transaction / Account balance inquiry",
-                        "pronunciation": "oh-koh-rwah goh-seh oh-goh-toh-mah chee-beh-sah"
-                },
-                {
-                        "target": "Bwakire / Bwakire buya",
-                        "source": "Good morning (Ekegusii)",
-                        "pronunciation": "bwakire"
-                },
-                {
-                        "target": "Bwairire / Bwairire buya",
-                        "source": "Good evening",
-                        "pronunciation": "bwairire"
-                },
-                {
-                        "target": "Mbuya mono",
-                        "source": "Thank you very much",
-                        "pronunciation": "mbuya mono"
-                },
-                {
-                        "target": "Karibu inka",
-                        "source": "Welcome home",
-                        "pronunciation": "karibu inka"
-                },
-                {
-                        "target": "Omorembe obe n'inwe",
-                        "source": "Peace be with you",
-                        "pronunciation": "omorembe obe n'inwe"
-                },
-                {
-                        "target": "Intwe tokorenda ntangana inka",
-                        "source": "We keep bullock at the homestead",
-                        "pronunciation": "intwe tokorenda ntangana inka"
-                },
-                {
-                        "target": "Intwe tokorenda ngokoraturi inka",
-                        "source": "We keep we make at the homestead",
-                        "pronunciation": "intwe tokorenda ngokoraturi inka"
-                },
-                {
-                        "target": "Intwe tokorenda tindi inka",
-                        "source": "We keep no at the homestead",
-                        "pronunciation": "intwe tokorenda tindi inka"
-                },
-                {
-                        "target": "Intwe tokorenda na-kulete inka",
-                        "source": "We keep i bring at the homestead",
-                        "pronunciation": "intwe tokorenda na-kulete inka"
-                }
+                  {
+                            "target": "Omorembe",
+                            "source": "Peace",
+                            "pronunciation": "oh-moh-rehm-beh"
+                  },
+                  {
+                            "target": "Bwakire!",
+                            "source": "Hello",
+                            "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh"
+                  },
+                  {
+                            "target": "Mbuya mono",
+                            "source": "Thank you",
+                            "pronunciation": "m-boo-yah moh-noh"
+                  },
+                  {
+                            "target": "Mbuya mono!",
+                            "source": "Thank you very much! / Very well!",
+                            "pronunciation": "mbu-ya mo-no"
+                  },
+                  {
+                            "target": "Bwakire",
+                            "source": "Good morning (Ekegusii)",
+                            "pronunciation": "bwakire"
+                  },
+                  {
+                            "target": "Bwairire",
+                            "source": "Good evening",
+                            "pronunciation": "bwairire"
+                  },
+                  {
+                            "target": "Karibu inka",
+                            "source": "Welcome home",
+                            "pronunciation": "karibu inka"
+                  },
+                  {
+                            "target": "Omorembe obe n'inwe",
+                            "source": "Peace be with you",
+                            "pronunciation": "omorembe obe n'inwe"
+                  },
+                  {
+                            "target": "amauta",
+                            "source": "Fat",
+                            "pronunciation": "a-mau-ta"
+                  },
+                  {
+                            "target": "Eri-ge or Eri-ige",
+                            "source": "Egg",
+                            "pronunciation": "eri-ge or eri-ige eri-gina ama-gina / ama-ige"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Mbuya mono (Obeire buya)",
-                        "source": "Thank you"
-                },
-                {
-                        "target": "Mbuya mono!",
-                        "source": "Thank you very much! / Very well!"
-                },
-                {
-                        "target": "Okorwa gose ogotoma chibesa ase esimu",
-                        "source": "Mobile money transaction / Account balance inquiry"
-                },
-                {
-                        "target": "Bwakire / Bwakire buya",
-                        "source": "Good morning (Ekegusii)"
-                }
+                  {
+                            "target": "Mbuya mono",
+                            "source": "Thank you"
+                  },
+                  {
+                            "target": "Mbuya mono!",
+                            "source": "Thank you very much! / Very well!"
+                  },
+                  {
+                            "target": "Okorwa gose ogotoma chibesa ase esimu",
+                            "source": "Mobile money transaction / Account balance inquiry"
+                  },
+                  {
+                            "target": "Mbuya mono",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "Karibu inka",
+                            "source": "Welcome home"
+                  },
+                  {
+                            "target": "Omorembe obe n'inwe",
+                            "source": "Peace be with you"
+                  },
+                  {
+                            "target": "Eri-ge or Eri-ige",
+                            "source": "Egg"
+                  },
+                  {
+                            "target": "Obu-sie. Obo-ke. Ama-na",
+                            "source": "Honey"
+                  }
         ]
 },
         {
@@ -3075,54 +3081,90 @@ export const KISII_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Kisii (Ekegusii) sentences for healthcare, transport, and community safety.",
         "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
         "words": [
-                {
-                        "target": "Intwe tokorenda kokosolia inka",
-                        "source": "We keep i dance at the homestead",
-                        "pronunciation": "intwe tokorenda kokosolia inka"
-                },
-                {
-                        "target": "Intwe tokorenda nanyaweti inka",
-                        "source": "We keep i drank at the homestead",
-                        "pronunciation": "intwe tokorenda nanyaweti inka"
-                },
-                {
-                        "target": "Intwe tokorenda Ekige inka",
-                        "source": "We keep doorway at the homestead",
-                        "pronunciation": "intwe tokorenda ekige inka"
-                },
-                {
-                        "target": "Intwe tokorenda Eny-uma inka",
-                        "source": "We keep buttocks at the homestead",
-                        "pronunciation": "intwe tokorenda eny-uma inka"
-                },
-                {
-                        "target": "I-kumi na i-mo / I-kumi na o-mu. Noi-kumi na o-mwe",
-                        "source": "Eleven",
-                        "pronunciation": "i-kumi na i-mo / i-kumi na o-mu noi-kumi na o-mwe"
-                },
-                {
-                        "target": "ekumi na yemo",
-                        "source": "Eleven",
-                        "pronunciation": "e-ku-mi na ye-mo"
-                }
+                  {
+                            "target": "-mu, -mo",
+                            "source": "One",
+                            "pronunciation": "mu -mo / -mo -mwe"
+                  },
+                  {
+                            "target": "-beri, -viri",
+                            "source": "Two",
+                            "pronunciation": "be-ri -viri / -viri"
+                  },
+                  {
+                            "target": "-sano na i-mo",
+                            "source": "Six",
+                            "pronunciation": "-sano"
+                  },
+                  {
+                            "target": "I-kumi. Omu-ronggo",
+                            "source": "Ten",
+                            "pronunciation": "i-kumi omu-ronggo / i-kumi omu-ronggu"
+                  },
+                  {
+                            "target": "-nye, -nne",
+                            "source": "Four",
+                            "pronunciation": "nye -nne / -nne"
+                  },
+                  {
+                            "target": "-sano, -tanu",
+                            "source": "Five",
+                            "pronunciation": "sa-no -tanu / -tanu"
+                  },
+                  {
+                            "target": "Ki-anda",
+                            "source": "Nine",
+                            "pronunciation": "ki-anda / ki-anda k-enda"
+                  },
+                  {
+                            "target": "-satu, -tatu",
+                            "source": "Three",
+                            "pronunciation": "sa-tu -tatu / -tatu"
+                  },
+                  {
+                            "target": "-sano na i-were",
+                            "source": "Seven",
+                            "pronunciation": "-sano"
+                  },
+                  {
+                            "target": "-sano na i-satu",
+                            "source": "Eight",
+                            "pronunciation": "-sano na i-satu"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Intwe tokorenda kokosolia inka",
-                        "source": "We keep i dance at the homestead"
-                },
-                {
-                        "target": "Intwe tokorenda nanyaweti inka",
-                        "source": "We keep i drank at the homestead"
-                },
-                {
-                        "target": "Intwe tokorenda Ekige inka",
-                        "source": "We keep doorway at the homestead"
-                },
-                {
-                        "target": "Intwe tokorenda Eny-uma inka",
-                        "source": "We keep buttocks at the homestead"
-                }
+                  {
+                            "target": "-mu, -mo",
+                            "source": "One"
+                  },
+                  {
+                            "target": "-beri, -viri",
+                            "source": "Two"
+                  },
+                  {
+                            "target": "-sano na i-mo",
+                            "source": "Six"
+                  },
+                  {
+                            "target": "I-kumi. Omu-ronggo",
+                            "source": "Ten"
+                  },
+                  {
+                            "target": "-nye, -nne",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "-sano, -tanu",
+                            "source": "Five"
+                  },
+                  {
+                            "target": "-satu, -tatu",
+                            "source": "Three"
+                  },
+                  {
+                            "target": "-sano na i-were",
+                            "source": "Seven"
+                  }
         ]
 }
     ]

@@ -1341,28 +1341,54 @@ export default function KenyanTranslatorPage() {
                       <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                         English Word or Phrase <span className="text-kenya-red">*</span>
                       </label>
-                      <input
-                        type="text"
-                        required
-                        value={contributeEnglish}
-                        onChange={(e) => setContributeEnglish(e.target.value)}
-                        placeholder="e.g. Water, Hello, Peace, How are you?"
-                        className="input-field text-sm w-full"
-                      />
+                      <div className="relative">
+                        <input
+                          type="text"
+                          required
+                          value={contributeEnglish}
+                          onChange={(e) => setContributeEnglish(e.target.value)}
+                          placeholder="e.g. Water, Hello, Peace, How are you?"
+                          className="input-field text-sm w-full pr-10!"
+                          style={{ paddingRight: "2.5rem" }}
+                        />
+                        {contributeEnglish && (
+                          <button
+                            type="button"
+                            onClick={() => setContributeEnglish("")}
+                            className="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                            aria-label="Clear English term"
+                          >
+                            <X className="w-3 h-3 shrink-0" />
+                          </button>
+                        )}
+                      </div>
                     </div>
 
                     <div>
                       <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                         {contributeLanguage} Translation <span className="text-kenya-red">*</span>
                       </label>
-                      <input
-                        type="text"
-                        required
-                        value={contributeTranslation}
-                        onChange={(e) => setContributeTranslation(e.target.value)}
-                        placeholder={`Word or phrase in ${contributeLanguage}...`}
-                        className="input-field text-sm w-full"
-                      />
+                      <div className="relative">
+                        <input
+                          type="text"
+                          required
+                          value={contributeTranslation}
+                          onChange={(e) => setContributeTranslation(e.target.value)}
+                          placeholder={`Word or phrase in ${contributeLanguage}...`}
+                          className="input-field text-sm w-full pr-10!"
+                          style={{ paddingRight: "2.5rem" }}
+                        />
+                        {contributeTranslation && (
+                          <button
+                            type="button"
+                            onClick={() => setContributeTranslation("")}
+                            className="absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                            aria-label="Clear native translation"
+                          >
+                            <X className="w-3 h-3 shrink-0" />
+                          </button>
+                        )}
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -1370,25 +1396,51 @@ export default function KenyanTranslatorPage() {
                         <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                           Pronunciation (Optional)
                         </label>
-                        <input
-                          type="text"
-                          value={contributePronunciation}
-                          onChange={(e) => setContributePronunciation(e.target.value)}
-                          placeholder="e.g. eh-johk, mah-jee"
-                          className="input-field text-xs w-full"
-                        />
+                        <div className="relative">
+                          <input
+                            type="text"
+                            value={contributePronunciation}
+                            onChange={(e) => setContributePronunciation(e.target.value)}
+                            placeholder="e.g. eh-johk, mah-jee"
+                            className="input-field text-xs w-full pr-9!"
+                            style={{ paddingRight: "2.25rem" }}
+                          />
+                          {contributePronunciation && (
+                            <button
+                              type="button"
+                              onClick={() => setContributePronunciation("")}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                              aria-label="Clear pronunciation"
+                            >
+                              <X className="w-3 h-3 shrink-0" />
+                            </button>
+                          )}
+                        </div>
                       </div>
                       <div>
                         <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                           County / Dialect (Optional)
                         </label>
-                        <input
-                          type="text"
-                          value={contributeContext}
-                          onChange={(e) => setContributeContext(e.target.value)}
-                          placeholder="e.g. Turkana North dialect"
-                          className="input-field text-xs w-full"
-                        />
+                        <div className="relative">
+                          <input
+                            type="text"
+                            value={contributeContext}
+                            onChange={(e) => setContributeContext(e.target.value)}
+                            placeholder="e.g. Turkana North dialect"
+                            className="input-field text-xs w-full pr-9!"
+                            style={{ paddingRight: "2.25rem" }}
+                          />
+                          {contributeContext && (
+                            <button
+                              type="button"
+                              onClick={() => setContributeContext("")}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                              aria-label="Clear context"
+                            >
+                              <X className="w-3 h-3 shrink-0" />
+                            </button>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </>
@@ -1418,25 +1470,51 @@ export default function KenyanTranslatorPage() {
                     <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                       Your Name / Handle (for Credit)
                     </label>
-                    <input
-                      type="text"
-                      value={contributorName}
-                      onChange={(e) => setContributorName(e.target.value)}
-                      placeholder="e.g. Akeno L., Kiprop, Anon"
-                      className="input-field text-xs w-full"
-                    />
+                    <div className="relative">
+                      <input
+                        type="text"
+                        value={contributorName}
+                        onChange={(e) => setContributorName(e.target.value)}
+                        placeholder="e.g. Akeno L., Kiprop, Anon"
+                        className="input-field text-xs w-full pr-9!"
+                        style={{ paddingRight: "2.25rem" }}
+                      />
+                      {contributorName && (
+                        <button
+                          type="button"
+                          onClick={() => setContributorName("")}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                          aria-label="Clear contributor name"
+                        >
+                          <X className="w-3 h-3 shrink-0" />
+                        </button>
+                      )}
+                    </div>
                   </div>
                   <div>
                     <label className="block text-[0.65rem] uppercase tracking-wider text-text-muted mb-1 font-semibold">
                       Email Address (Optional)
                     </label>
-                    <input
-                      type="email"
-                      value={contributorEmail}
-                      onChange={(e) => setContributorEmail(e.target.value)}
-                      placeholder="For attribution updates"
-                      className="input-field text-xs w-full"
-                    />
+                    <div className="relative">
+                      <input
+                        type="email"
+                        value={contributorEmail}
+                        onChange={(e) => setContributorEmail(e.target.value)}
+                        placeholder="For attribution updates"
+                        className="input-field text-xs w-full pr-9!"
+                        style={{ paddingRight: "2.25rem" }}
+                      />
+                      {contributorEmail && (
+                        <button
+                          type="button"
+                          onClick={() => setContributorEmail("")}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer z-10"
+                          aria-label="Clear contributor email"
+                        >
+                          <X className="w-3 h-3 shrink-0" />
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
 

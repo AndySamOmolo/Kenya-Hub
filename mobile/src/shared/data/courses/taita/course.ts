@@ -3500,101 +3500,90 @@ export const TAITA_UNITS: CourseUnit[] = [
         "description": "Practice verified Taita (Kidawida) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
-                {
-                        "target": "ku-rogoa, ku-lamusa",
-                        "source": "Salute, to",
-                        "pronunciation": "ku-rogoa ku-lamusa"
-                },
-                {
-                        "target": "ku-siga",
-                        "source": "Pardon / Forgive, to",
-                        "pronunciation": "ku si-ga lit"
-                },
-                {
-                        "target": "ku-siga [lit. to leave alone]",
-                        "source": "Forgive / Remit, to [to pardon]",
-                        "pronunciation": "ku-siga"
-                },
-                {
-                        "target": "Wedi",
-                        "source": "Peace / Goodness",
-                        "pronunciation": "we-di"
-                },
-                {
-                        "target": "Mwakucha / Uko wedi?",
-                        "source": "Hello / How are you? (Dawida)",
-                        "pronunciation": "mwakucha / uko wedi"
-                },
-                {
-                        "target": "Kusesa",
-                        "source": "To make peace",
-                        "pronunciation": "kusesa"
-                },
-                {
-                        "target": "Dunarinda itsango magondini ga Dawida",
-                        "source": "We keep brass wire in Taita Hills",
-                        "pronunciation": "dunarinda itsango magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda nguo ya chunu magondini ga Dawida",
-                        "source": "We keep loin-cloth in Taita Hills",
-                        "pronunciation": "dunarinda nguo ya chunu magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda nyungu magondini ga Dawida",
-                        "source": "We keep cooking-pot in Taita Hills",
-                        "pronunciation": "dunarinda nyungu magondini ga dawida"
-                }
+                  {
+                            "target": "sere",
+                            "source": "Peace",
+                            "pronunciation": "se-re"
+                  },
+                  {
+                            "target": "ku-sigo",
+                            "source": "Pardon",
+                            "pronunciation": "ku-sigo"
+                  },
+                  {
+                            "target": "Chavuche",
+                            "source": "Thank you",
+                            "pronunciation": "chavuche"
+                  },
+                  {
+                            "target": "ku-bariki",
+                            "source": "Bless, to",
+                            "pronunciation": "ku-bariki"
+                  },
+                  {
+                            "target": "ku-rogoa, ku-lamusa",
+                            "source": "Greet, to",
+                            "pronunciation": "ku-rogoa ku-lamusa"
+                  },
+                  {
+                            "target": "ku-uza asanta",
+                            "source": "Thank, to",
+                            "pronunciation": "ku-uza a-santa"
+                  },
+                  {
+                            "target": "kurogoa",
+                            "source": "Salutation",
+                            "pronunciation": "ku-ro-goa"
+                  },
+                  {
+                            "target": "ku-bwelela, ku-sekesa",
+                            "source": "Please, to",
+                            "pronunciation": "ku-bwelela ku-sekesa"
+                  },
+                  {
+                            "target": "ku-siga",
+                            "source": "Pardon, to",
+                            "pronunciation": "ku si-ga lit"
+                  },
+                  {
+                            "target": "Wedi",
+                            "source": "Peace / Goodness",
+                            "pronunciation": "we-di"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ni kuboie ku-lola kula matuku",
-                        "source": "It is good to behold every day"
-                },
-                {
-                        "target": "Duzaka ku-goshaose",
-                        "source": "We want to borrow together"
-                },
-                {
-                        "target": "Ni kuboie ku-gosha kula matuku",
-                        "source": "It is good to borrow every day"
-                },
-                {
-                        "target": "Duzaka ku-sagulaose",
-                        "source": "We want to choose together"
-                },
-                {
-                        "target": "Ni kuboie ku-sagula kula matuku",
-                        "source": "It is good to choose every day"
-                },
-                {
-                        "target": "Duzaka ku-umbaose",
-                        "source": "We want to create together"
-                },
-                {
-                        "target": "Ni kuboie ku-umba kula matuku",
-                        "source": "It is good to create every day"
-                },
-                {
-                        "target": "Duzaka ku-gendaose",
-                        "source": "We want to depart together"
-                },
-                {
-                        "target": "Ni kuboie ku-genda kula matuku",
-                        "source": "It is good to depart every day"
-                },
-                {
-                        "target": "Duzaka ku-shaiaose",
-                        "source": "We want to desire together"
-                },
-                {
-                        "target": "Ni kuboie ku-shaia kula matuku",
-                        "source": "It is good to desire every day"
-                },
-                {
-                        "target": "Duzaka ku-kilaose",
-                        "source": "We want to escape together"
-                }
+                  {
+                            "target": "ku-rogoa, ku-lamusa",
+                            "source": "Greet, to"
+                  },
+                  {
+                            "target": "ku-uza asanta",
+                            "source": "Thank, to"
+                  },
+                  {
+                            "target": "ku-bwelela, ku-sekesa",
+                            "source": "Please, to"
+                  },
+                  {
+                            "target": "ku-rogoa, ku-lamusa",
+                            "source": "Salute, to"
+                  },
+                  {
+                            "target": "maraha, mavuta",
+                            "source": "Fat"
+                  },
+                  {
+                            "target": "nyama ya ng'ombe",
+                            "source": "Beef"
+                  },
+                  {
+                            "target": "M-nyū. Ki-shōle",
+                            "source": "Salt"
+                  },
+                  {
+                            "target": "chakulya, kilya, kandu",
+                            "source": "Food"
+                  }
         ]
 },
       {
@@ -3604,54 +3593,90 @@ export const TAITA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Taita (Kidawida) sentences for healthcare, transport, and community safety.",
         "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
         "words": [
-                {
-                        "target": "Dunarinda kitundu magondini ga Dawida",
-                        "source": "We keep store-house in Taita Hills",
-                        "pronunciation": "dunarinda kitundu magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda nguo ya meza magondini ga Dawida",
-                        "source": "We keep table-cloth in Taita Hills",
-                        "pronunciation": "dunarinda nguo ya meza magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda kinengele magondini ga Dawida",
-                        "source": "We keep string of beads in Taita Hills",
-                        "pronunciation": "dunarinda kinengele magondini ga dawida"
-                },
-                {
-                        "target": "Dunarinda garo magondini ga Dawida",
-                        "source": "We keep bachelor's house in Taita Hills",
-                        "pronunciation": "dunarinda garo magondini ga dawida"
-                },
-                {
-                        "target": "M-nānya, I-nānya",
-                        "source": "Eight",
-                        "pronunciation": "m-nanya i-nanya"
-                },
-                {
-                        "target": "Mī-rōnggo mī-nā",
-                        "source": "Forty",
-                        "pronunciation": "mee roh-ngoh mee nah"
-                }
+                  {
+                            "target": "mosi",
+                            "source": "One",
+                            "pronunciation": "imweri"
+                  },
+                  {
+                            "target": "pili",
+                            "source": "Two",
+                            "pronunciation": "iwi"
+                  },
+                  {
+                            "target": "tandatu",
+                            "source": "Six",
+                            "pronunciation": "irandadu"
+                  },
+                  {
+                            "target": "ikumi",
+                            "source": "Ten",
+                            "pronunciation": "ikumi"
+                  },
+                  {
+                            "target": "ine",
+                            "source": "Four",
+                            "pronunciation": "ina"
+                  },
+                  {
+                            "target": "sano",
+                            "source": "Five",
+                            "pronunciation": "isanu"
+                  },
+                  {
+                            "target": "ikenda",
+                            "source": "Nine",
+                            "pronunciation": "ikenda"
+                  },
+                  {
+                            "target": "-ose -ile",
+                            "source": "Both",
+                            "pronunciation": "ose -ile"
+                  },
+                  {
+                            "target": "nusu, mbeo",
+                            "source": "Half",
+                            "pronunciation": "nu-su mbeo"
+                  },
+                  {
+                            "target": "kamojori, kamoju",
+                            "source": "Once",
+                            "pronunciation": "kamojori kamoju"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Ni kuboie ku-kila kula matuku",
-                        "source": "It is good to escape every day"
-                },
-                {
-                        "target": "Duzaka ku-fungaose",
-                        "source": "We want to fasten together"
-                },
-                {
-                        "target": "Ni kuboie ku-funga kula matuku",
-                        "source": "It is good to fasten every day"
-                },
-                {
-                        "target": "Dunarinda kitundu magondini ga Dawida",
-                        "source": "We keep store-house in Taita Hills"
-                }
+                  {
+                            "target": "mo, Mo-si",
+                            "source": "One"
+                  },
+                  {
+                            "target": "wīrī, I-vīrī",
+                            "source": "Two"
+                  },
+                  {
+                            "target": "-ose -ile",
+                            "source": "Both"
+                  },
+                  {
+                            "target": "nusu, mbeo",
+                            "source": "Half"
+                  },
+                  {
+                            "target": "kamojori, kamoju",
+                            "source": "Once"
+                  },
+                  {
+                            "target": "nā, I-nā",
+                            "source": "Four"
+                  },
+                  {
+                            "target": "mirongo misano",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "mirongo mine",
+                            "source": "Forty"
+                  }
         ]
 }
     ]

@@ -27,7 +27,7 @@ export function createStyles(colors: ThemeColors) {
       paddingHorizontal: 14,
       height: 44,
     },
-    searchInput: { flex: 1, marginLeft: 8, color: colors.textPrimary, fontSize: 13, paddingVertical: 0, textAlignVertical: "center", includeFontPadding: false },
+    searchInput: { flex: 1, minWidth: 0, marginLeft: 8, marginRight: 6, color: colors.textPrimary, fontSize: 13, paddingVertical: 0, paddingHorizontal: 0, textAlignVertical: "center", includeFontPadding: false },
     subHeading: { fontSize: 13, fontWeight: "800", color: colors.gold, letterSpacing: 0.5 },
     card: {
       backgroundColor: colors.bgCard,

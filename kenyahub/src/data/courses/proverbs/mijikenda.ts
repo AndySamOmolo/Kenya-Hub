@@ -54,7 +54,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Bandzu, bandzu rámala gogo; T'embe na t'embe ni mukahe.",
     "literalTranslation": "Chip, chip finished the block (§ 602); grain and grain makes a cake (§ 630).",
-    "meaning": "Recorded verbatim by Rev. W. E. Taylor in \"African Aphorisms\" (1891, pp. 136, 142, Giryama Proverbs #602 & #630): steady, incremental effort overcomes the largest obstacle and builds lasting abundance.",
+    "meaning": "Recorded verbatim by Rev. W. E. Taylor in 'African Aphorisms' (1891, pp. 136, 142, Giryama Proverbs #602 & #630): steady, incremental effort overcomes the largest obstacle and builds lasting abundance.",
     "englishEquivalent": "Many a mickle makes a muckle.",
     "theme": "patience",
     "sourceCitation": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891, pp. 136, 142, Giryama Proverbs #602 & #630)"
@@ -65,7 +65,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Chuwo k'akina mumwenga; Chuwo k'akina m'zhere tututu.",
     "literalTranslation": "Counsel is not of one person alone (#602a); counsel is not of the aged elder only (#602b).",
-    "meaning": "Recorded verbatim by Rev. W. E. Taylor in \"African Aphorisms\" (1891, p. 136, Giryama Proverbs #602a & #602b, cf. Swahili #43 \"Bamba na waume bamba; hakuna bamba la mume\"): true wisdom comes from shared deliberation across the community.",
+    "meaning": "Recorded verbatim by Rev. W. E. Taylor in 'African Aphorisms' (1891, p. 136, Giryama Proverbs #602a & #602b, cf. Swahili #43 'Bamba na waume bamba; hakuna bamba la mume'): true wisdom comes from shared deliberation across the community.",
     "englishEquivalent": "In the multitude of counsellors there is safety.",
     "theme": "unity",
     "sourceCitation": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891, p. 136, Giryama Proverbs #602a & #602b)"
@@ -76,7 +76,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Fisi rikirya m'kongo, m'zima funga nyumba.",
     "literalTranslation": "When the hyena eats the sick man, do you shut up your house while you are yet well.",
-    "meaning": "Recorded verbatim by Rev. W. E. Taylor in \"African Aphorisms\" (1891, p. 136, Giryama Proverb #603): learn prudence from a neighbour’s misfortune and take timely precautions.",
+    "meaning": "Recorded verbatim by Rev. W. E. Taylor in 'African Aphorisms' (1891, p. 136, Giryama Proverb #603): learn prudence from a neighbour’s misfortune and take timely precautions.",
     "englishEquivalent": "Forewarned is forearmed.",
     "theme": "wisdom",
     "sourceCitation": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891, p. 136, Giryama Proverb #603)"
@@ -87,7 +87,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama & Kinika)",
     "indigenous": "Maneno madzo gausa ndzovu m'nda-ni (#611) • Usena ukira udugu (#660).",
     "literalTranslation": "Fair speeches turn elephants out of the garden-patch (#611) • Friendship surpasses blood-relationship (#660).",
-    "meaning": "Recorded verbatim by Rev. W. E. Taylor in \"African Aphorisms\" (1891, p. 138 Giryama Proverb #611 & p. 159 Nyika Proverb #660, citing Rebmann 1887 p. 41b): gentle diplomacy resolves what force cannot, and loyal friendship outshines distant kinship.",
+    "meaning": "Recorded verbatim by Rev. W. E. Taylor in 'African Aphorisms' (1891, p. 138 Giryama Proverb #611 & p. 159 Nyika Proverb #660, citing Rebmann 1887 p. 41b): gentle diplomacy resolves what force cannot, and loyal friendship outshines distant kinship.",
     "englishEquivalent": "A soft answer turns away wrath.",
     "theme": "family",
     "sourceCitation": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891, p. 138 #611 & p. 159 #660)"
@@ -152,7 +152,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Bandzu, bandzu rámala gogo.",
     "literalTranslation": "Chip, chip finished the block.",
-    "meaning": "Perhaps this took its origin from the \"gogo,\" wooden stocks or fetters, in which prisoners or insane persons among the Nyika tribes were formerly confined. At any rate, the proverb may be used as an encouragement to efforts which, small in themselves, will, when persevered in, form such an aggregate as to secure success.",
+    "meaning": "Perhaps this took its origin from the 'gogo,' wooden stocks or fetters, in which prisoners or insane persons among the Nyika tribes were formerly confined. At any rate, the proverb may be used as an encouragement to efforts which, small in themselves, will, when persevered in, form such an aggregate as to secure success.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #602"
   },
@@ -172,7 +172,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Chuwo k'akina m'zhere tututu.",
     "literalTranslation": "Advice is not of the aged man only.",
-    "meaning": "Cp. Job xxxii. 9.",
+    "meaning": "Proverbial teaching: 'Advice is not of the aged man only' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Job xxxii. 9.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #602b"
   },
@@ -202,7 +202,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Kilagane kilagane! Simba k'arya mwana-we.",
     "literalTranslation": "A promise (is) a promise. The lioness eats not its own cub (lit. its child). Or, A promise! a promise! . . .",
-    "meaning": "Another version is, Mbala k'arya mwana-we, the female \"Impallah\" eats not, etc. The Mbala is the female of the K'ulungu. The male and female Impallah are said to herd apart, hence their different names. The proverb is used to remind a man of his promise—K'wadima kurya maneno-go mwenye—You must not eat your own words. See the Nyika proverb, § 636b, and the Swahili, § 553.",
+    "meaning": "Another version is, Mbala k'arya mwana-we, the female 'Impallah' eats not, etc. The Mbala is the female of the K'ulungu. The male and female Impallah are said to herd apart, hence their different names. The proverb is used to remind a man of his promise—K'wadima kurya maneno-go mwenye—You must not eat your own words. See the Nyika proverb, § 636b, and the Swahili, § 553.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #606"
   },
@@ -272,7 +272,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Lungo lwamba P'a nikup'e.",
     "literalTranslation": "The sifting-tray is wont to say, Give thou me and I'll give thee.",
-    "meaning": "Cp. the Swahili version, § 563.",
+    "meaning": "Proverbial teaching: 'The sifting-tray is wont to say, Give thou me and I'll give thee' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the Swahili version, § 563.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #613"
   },
@@ -292,7 +292,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Mbuzi nyaruhe iangamika lwanda-ni.",
     "literalTranslation": "(Even) the white goat will become lost in an open field.",
-    "meaning": "Said of the fallacy of trusting to a promise that has no sufficient guarantee. The herd-boy sits and whiles away his time, presuming, from the conspicuous colour of his charge, that it will not readily be lost: meanwhile the goat wanders off, and whenever its keeper glances in the direction in which he supposes it to be feeding, some sun-bleached tree-stump or other supplies its place. At length his suspicions are aroused by the unwonted stillness of the object he has been regarding, and, too late, he discovers that he has been \"taken in\" by a rotten piece of wood, and that, after all, his goat is lost.",
+    "meaning": "Said of the fallacy of trusting to a promise that has no sufficient guarantee. The herd-boy sits and whiles away his time, presuming, from the conspicuous colour of his charge, that it will not readily be lost: meanwhile the goat wanders off, and whenever its keeper glances in the direction in which he supposes it to be feeding, some sun-bleached tree-stump or other supplies its place. At length his suspicions are aroused by the unwonted stillness of the object he has been regarding, and, too late, he discovers that he has been 'taken in' by a rotten piece of wood, and that, after all, his goat is lost.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #615"
   },
@@ -322,7 +322,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Muhi wa k'ozi k'autulwa.",
     "literalTranslation": "The tree of the scout is not wont to be rendered useless (lit. \"castrated,\" or \"broken\").",
-    "meaning": "C, hearing A slandered by B, tells A. A finds B, and upbraids him. B denies the charge, and asks for the name of A's informant. But A refuses to tell that, from prudential reasons, which he hints at in the proverb:—If B knew that C was the \"muhi wa k'ozi,\" he could avoid his presence and go on repeating the offence; or, he might make it unpleasant for C, which would be a poor reward for his services.",
+    "meaning": "C, hearing A slandered by B, tells A. A finds B, and upbraids him. B denies the charge, and asks for the name of A's informant. But A refuses to tell that, from prudential reasons, which he hints at in the proverb:—If B knew that C was the 'muhi wa k'ozi,' he could avoid his presence and go on repeating the offence; or, he might make it unpleasant for C, which would be a poor reward for his services.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #618"
   },
@@ -342,7 +342,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Mulungu wahumba, ela hundariwa ni-Ts'i.",
     "literalTranslation": "\"Sky\" created us, but we shall be consumed by \"Earth.\"",
-    "meaning": "The Giryamas think the Sky is God, and the Earth they think to be a kind of goddess, inferior to God, by the union of which two all the universe has been created. A native said, Zizi \"mbingu\" (the Swahili word for sky) ndo mambao ni Mulungu. Mulungu ni mulume, ela-ts'i ni muche. These heavens are what they call God. God is male, but the earth is female. As to the goodness of God, they say, God is sometimes good, sometimes evil (i.e. maleficent): Mut'u akiona vii ni kwamba Mulungu ni mui, na akikala udzaona-t'o, akamba Mulungu ni mudzo. When a man is in misfortune, he says God is evil; and when he has met with good fortune, he says God is good.",
+    "meaning": "The Giryamas think the Sky is God, and the Earth they think to be a kind of goddess, inferior to God, by the union of which two all the universe has been created. A native said, Zizi 'mbingu' (the Swahili word for sky) ndo mambao ni Mulungu. Mulungu ni mulume, ela-ts'i ni muche. These heavens are what they call God. God is male, but the earth is female. As to the goodness of God, they say, God is sometimes good, sometimes evil (i.e. maleficent): Mut'u akiona vii ni kwamba Mulungu ni mui, na akikala udzaona-t'o, akamba Mulungu ni mudzo. When a man is in misfortune, he says God is evil; and when he has met with good fortune, he says God is good.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #620"
   },
@@ -372,7 +372,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Mwenda-mbere k'aheka madzi vundzu.",
     "literalTranslation": "The first to be there draws no muddy water (lit. The goer first draws not water muddy).",
-    "meaning": "\"The early bird.\"",
+    "meaning": "'The early bird.'",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #623"
   },
@@ -392,7 +392,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "M'zigo wa-ndze utsukulwa ni wa ndani.",
     "literalTranslation": "The load without is wont to be carried by the load within.",
-    "meaning": "The \"labourer\" cannot get on without \"his hire.\" Or, as Bismarck says, If one is to work, one must be fed.",
+    "meaning": "The 'labourer' cannot get on without 'his hire.' Or, as Bismarck says, If one is to work, one must be fed.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #625"
   },
@@ -402,7 +402,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Nambira kiré nyumba kiré mvungu kisikire.",
     "literalTranslation": "I am wont to tell the (child,—kihoho) that is",
-    "meaning": "in (the body of) the house, that the (child) that is behind the arras may hear. —One that speaks for the benefit of a third party, who is known to be present or within hearing, so as not to notice him directly. The Giryama house is formed of two inclined walls or sides, which meet together above, mounting from the ground at an angle to make a ridge at the top. Along each of the sides (which are curved in plan and in section, with the convexity outwards) there is, within the house, a row of posts all round, which meet the sides at about one-third of their height from the ground, thus forming a sort of hollow gallery along the sides within. This is the \"m'vungu,\" and any one in its deep shadow might well imagine himself to be concealed. In the case supposed, the man's presence has become known, and he is being \"talked at.\" In Swahili the word m'vungu is most often used of the space under the bed; see § 316.",
+    "meaning": "in (the body of) the house, that the (child) that is behind the arras may hear. —One that speaks for the benefit of a third party, who is known to be present or within hearing, so as not to notice him directly. The Giryama house is formed of two inclined walls or sides, which meet together above, mounting from the ground at an angle to make a ridge at the top. Along each of the sides (which are curved in plan and in section, with the convexity outwards) there is, within the house, a row of posts all round, which meet the sides at about one-third of their height from the ground, thus forming a sort of hollow gallery along the sides within. This is the 'm'vungu,' and any one in its deep shadow might well imagine himself to be concealed. In the case supposed, the man's presence has become known, and he is being 'talked at.' In Swahili the word m'vungu is most often used of the space under the bed; see § 316.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #626"
   },
@@ -472,7 +472,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kigiryama)",
     "indigenous": "Vuri ni kitima-ngilo.",
     "literalTranslation": "The Latter Rains are a grasshopper that takes long leaps.",
-    "meaning": "The kitima-ngilo, \"hopper of leaping,\" is a species of grasshopper or locust that makes long aimless bounds or flights. The comparison holds in respect of the partiality of the showers in the October rains. See on § 128, and cp. § 621.",
+    "meaning": "The kitima-ngilo, 'hopper of leaping,' is a species of grasshopper or locust that makes long aimless bounds or flights. The comparison holds in respect of the partiality of the showers in the October rains. See on § 128, and cp. § 621.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Giryama Proverb #633"
   },
@@ -482,7 +482,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Aivi k'anuk'a.",
     "literalTranslation": "Thieves have no smell.",
-    "meaning": "They give no intimation of their approach. Mwivi is here contrasted with Muwoki, as Rebman would spell it (Giryama, muhoki), which latter means \"an open thief.\" A man said to his son, Kaike kure uchi hiu, kuna aivi, aivi k'anuk'a kwani? Put this toddy out of the way, there are thieves about; for why do thieves not smell? This was intended for a hint to a third party; see § 626. [Rebman, p. 361.].",
+    "meaning": "They give no intimation of their approach. Mwivi is here contrasted with Muwoki, as Rebman would spell it (Giryama, muhoki), which latter means 'an open thief.' A man said to his son, Kaike kure uchi hiu, kuna aivi, aivi k'anuk'a kwani? Put this toddy out of the way, there are thieves about; for why do thieves not smell? This was intended for a hint to a third party; see § 626. [Rebman, p. 361.].",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #634"
   },
@@ -512,7 +512,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Dyeku-dyeku rinamala p'inda.",
     "literalTranslation": "Dipping, dipping, finishes the corn-sack.",
-    "meaning": "Cp. Giryama, § 602.",
+    "meaning": "Proverbial teaching: 'Dipping, dipping, finishes the corn-sack' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Giryama, § 602.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #635a"
   },
@@ -532,7 +532,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Got'e-got'e rinamala mwiri.",
     "literalTranslation": "Much \"knocking about\" exhausts the frame. (Lit. Knocking, knocking finishes the body.) Another version is, Pige-pige. . . .",
-    "meaning": "Much \"knocking about\" exhausts the frame. (Lit. Knocking, knocking finishes the body.) Another version is, Pige-pige. . . .",
+    "meaning": "Much 'knocking about' exhausts the frame. (Lit. Knocking, knocking finishes the body.) Another version is, Pige-pige. . . .",
     "theme": "humility",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #635c"
   },
@@ -552,7 +552,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "K'akuna mare ga umiro.",
     "literalTranslation": "Words of ridicule cannot harm the throat of an upright person.",
-    "meaning": "Such, probably, is the sense of this Digo proverb, with which Rebman compares the Swahili, Hakuna mzaha wa shingo. Cp. our \"Hard words break no bones.\"",
+    "meaning": "Such, probably, is the sense of this Digo proverb, with which Rebman compares the Swahili, Hakuna mzaha wa shingo. Cp. our 'Hard words break no bones.'",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #635e"
   },
@@ -562,7 +562,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "K'akuna mbira ya m'randu.",
     "literalTranslation": "There is no grave of a debtor.",
-    "meaning": "Partly because it is so much to the creditor's interest to keep the debtor alive, that, although he may imprison, he will never kill him. But the proverb may be taken in a deeper sense—A man \"is immortal\" till he has become quits with his fate.",
+    "meaning": "Partly because it is so much to the creditor's interest to keep the debtor alive, that, although he may imprison, he will never kill him. But the proverb may be taken in a deeper sense—A man 'is immortal' till he has become quits with his fate.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #636"
   },
@@ -572,7 +572,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Kiike ni kiike, kimanywa ni mwenye akayeika.",
     "literalTranslation": "A deposit is a deposit, it is known (only) to the man himself that made the deposit.",
-    "meaning": "See on § 398.",
+    "meaning": "Proverbial teaching: 'A deposit is a deposit, it is known (only) to the man himself that made the deposit' — emphasizing wisdom, foresight, and conduct in everyday life (See on § 398.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #636a"
   },
@@ -602,7 +602,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Kufwa na chala.",
     "literalTranslation": "To die with the finger (in the mouth) i.e. . . . in despair.",
-    "meaning": "The action referred to is a native way of expressing extreme mental emotion accompanying remorse or despair, by bringing the right hand up to the mouth, with the palm outwards, and the forefinger directed to the upper teeth. Upon touching these, the hand is suddenly withdrawn and wrung in the air with a snap. Cp. the Swahili section, \"Utakufa na chanda kili kanwani\"—which shows that such an action at death is looked upon as particularly uncanny. In Rebman's Dictionary there is an affecting conversation somewhere preserved, where the relatives endeavour to make a dying man forgive his brother, and not alienate from him the inheritance, seeing that he might repent at the moment of death, when it would be too late, and he would \"die with the finger.\"",
+    "meaning": "The action referred to is a native way of expressing extreme mental emotion accompanying remorse or despair, by bringing the right hand up to the mouth, with the palm outwards, and the forefinger directed to the upper teeth. Upon touching these, the hand is suddenly withdrawn and wrung in the air with a snap. Cp. the Swahili section, 'Utakufa na chanda kili kanwani'—which shows that such an action at death is looked upon as particularly uncanny. In Rebman's Dictionary there is an affecting conversation somewhere preserved, where the relatives endeavour to make a dying man forgive his brother, and not alienate from him the inheritance, seeing that he might repent at the moment of death, when it would be too late, and he would 'die with the finger.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #636d"
   },
@@ -612,7 +612,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "K'uhendzi kunyolwa, ulonda kufutsulwa.",
     "literalTranslation": "You do not wish to be shaven, you want to have the hairs plucked out.",
-    "meaning": "\"Radical\" versus \"superficial\" measures.",
+    "meaning": "'Radical' versus 'superficial' measures.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #636e"
   },
@@ -622,7 +622,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Kula neno rina kipindi-che.",
     "literalTranslation": "Everything (lit. word) has its time. Or, Kula neno rina kiasi-che. Everything has its measure.",
-    "meaning": "Cp. Eccles. iii. 1. \"To every thing there is a season, and a time to every purpose under the heaven.\"",
+    "meaning": "Proverbial teaching: 'Everything has its time. Or, Kula neno rina kiasi-che. Everything has its measure' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Eccles. iii. 1. \\)'To every thing there is a season, and a time to every purpose under the heaven.'",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #637"
   },
@@ -662,7 +662,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mbogo, manya m'rambo! ndo nyani ambavyo.",
     "literalTranslation": "Buffalo, mind the trap! so says the ape (to his fellow).",
-    "meaning": "As the apes retire in file from their depredations in the cornfield, the owner, who has set his trap, observes them pass over it one after the other without falling in, and so people imagine that the foremost must pass on the word to his followers to beware of what he has noticed: \"Buffalo\" being merely a jocose appellative.",
+    "meaning": "As the apes retire in file from their depredations in the cornfield, the owner, who has set his trap, observes them pass over it one after the other without falling in, and so people imagine that the foremost must pass on the word to his followers to beware of what he has noticed: 'Buffalo' being merely a jocose appellative.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #637d"
   },
@@ -692,7 +692,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "M'oro mudzo k'aulavya dzuwa.",
     "literalTranslation": "A good palaver does not let the sun rise high in the heavens (lit. bring out the sun).",
-    "meaning": "\"It brings a matter soon to a conclusion, before the sun is risen high\" (Rebman).",
+    "meaning": "'It brings a matter soon to a conclusion, before the sun is risen high' (Rebman).",
     "theme": "humility",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #639"
   },
@@ -712,7 +712,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mudza m'kulu k'arya mameye.",
     "literalTranslation": "The grown-up mortal (lit. comer, servant,) eats not (of) his mother.",
-    "meaning": "He is no longer a \"suckling,\" but earns his own living in the world.",
+    "meaning": "He is no longer a 'suckling,' but earns his own living in the world.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #640"
   },
@@ -772,7 +772,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mut'u agulaye ng'ombe lwayo.",
     "literalTranslation": "A person that buys an ox by the footmark.",
-    "meaning": "Cp. the Swahili, § 187.",
+    "meaning": "Proverbial teaching: 'A person that buys an ox by the footmark' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the Swahili, § 187.)",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #643"
   },
@@ -782,7 +782,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mut'u uhenda likwa ni at'u ela akidzilika mwenye k'avihama.",
     "literalTranslation": "A man is wont to be praised by others (lit. people), but if he praise himself it is not fitting.",
-    "meaning": "Prov. xxvii. 2: \"Let another praise thee, and not thy own mouth.\"",
+    "meaning": "Prov. xxvii. 2: 'Let another praise thee, and not thy own mouth.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #643a"
   },
@@ -792,7 +792,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mwana m'sikizi yurya chakwe na cha muya-we.",
     "literalTranslation": "The obedient child eats his own (food) and his fellow's.",
-    "meaning": "Cp. the Swahili, § 367.",
+    "meaning": "Proverbial teaching: 'The obedient child eats his own (food) and his fellow's' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the Swahili, § 367.)",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #643b"
   },
@@ -802,7 +802,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mwana-ts'i k'avundza-ts'i.",
     "literalTranslation": "The child of the land destroys not the land (lit. breaks not).",
-    "meaning": "Never the \"mumidzi\" or \"mugeni\" (stranger or foreigner): contrast the Swahili proverb, § 181, l. 3.",
+    "meaning": "Never the 'mumidzi' or 'mugeni' (stranger or foreigner): contrast the Swahili proverb, § 181, l. 3.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #644"
   },
@@ -812,7 +812,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Mwenye kifyu ndiye atsindzaye nyama.",
     "literalTranslation": "The man with the knife is the one that slaughters the animal.",
-    "meaning": "Cp. Swahili, § 381.",
+    "meaning": "Proverbial teaching: 'The man with the knife is the one that slaughters the animal' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Swahili, § 381.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #645"
   },
@@ -842,7 +842,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Ndagizwa si urindzi, urindzi ni mwenye.",
     "literalTranslation": "The order does not imply the keeping of the birds away from the crops; that depends on one's own presence. More lit. The order (to guard) is not guardianship, guardianship is one's (own) self.",
-    "meaning": "Cp. the Swahili, § 406.",
+    "meaning": "Proverbial teaching: 'The order does not imply the keeping of the birds away from the crops; that depends on one's own presence. More lit. The order (to guard) is not guardianship, guardianship is one's (own) self' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the Swahili, § 406.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #647a"
   },
@@ -862,7 +862,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Nyoka yuluma afikirevo (or -wo?).",
     "literalTranslation": "The snake is wont to bite where he has reached.",
-    "meaning": "Cp. § 339.",
+    "meaning": "Proverbial teaching: 'The snake is wont to bite where he has reached' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. § 339.)",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #648"
   },
@@ -872,7 +872,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Nyuma ni kishaka.",
     "literalTranslation": "Behind (a person) is a grove.",
-    "meaning": "This might be used by one who does not mind exposing himself to danger so long as he has a place of refuge or concealment ready at hand into which to retire: if Rebman's interpretation is correct. But kishaka is a Swahili word (= kitua, a little bush?): kitsaka or katsaka is the Nyika word for \"little thicket.\"",
+    "meaning": "This might be used by one who does not mind exposing himself to danger so long as he has a place of refuge or concealment ready at hand into which to retire: if Rebman's interpretation is correct. But kishaka is a Swahili word (= kitua, a little bush?): kitsaka or katsaka is the Nyika word for 'little thicket.'",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #648a"
   },
@@ -882,7 +882,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "P'anya yurya akivivira.",
     "literalTranslation": "The rat devours while he blows.",
-    "meaning": "See, on the Swahili version, § 441. The way in which this proverb is used is illustrated by the following: Dzuzi wáhala kit'u changu, k'unirivire; na dzuzi ukihala kit'u kwa nganya musiku, k'urivire; rero kaviri unadza londa deni kwangu. Be k'umanya kwamba, P'anya yurya akivivira? mbona na-we unakaza muno! Be rero k'undapata, mwiri udziingira utsungu. The day before yesterday you took something of me, (and) did not repay me; and also the day before yesterday you took something of Mr. So-and-so, and didn't pay; and next you are coming to me to-day wanting my debt. Now do you not know that \"The rat devours while he blows\"? How now! you are going too far! Well, to-day you won't get it; my (whole) body has begun to pain me. \"Obsta principiis.\"",
+    "meaning": "See, on the Swahili version, § 441. The way in which this proverb is used is illustrated by the following: Dzuzi wáhala kit'u changu, k'unirivire; na dzuzi ukihala kit'u kwa nganya musiku, k'urivire; rero kaviri unadza londa deni kwangu. Be k'umanya kwamba, P'anya yurya akivivira? mbona na-we unakaza muno! Be rero k'undapata, mwiri udziingira utsungu. The day before yesterday you took something of me, (and) did not repay me; and also the day before yesterday you took something of Mr. So-and-so, and didn't pay; and next you are coming to me to-day wanting my debt. Now do you not know that 'The rat devours while he blows'? How now! you are going too far! Well, to-day you won't get it; my (whole) body has begun to pain me. 'Obsta principiis.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #649"
   },
@@ -892,7 +892,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "\"T'endeje\"? yuezwa muvyere.",
     "literalTranslation": "\"Mais, que faire?\"—is the Elder's excuse (lit. the Elder is cleared).",
-    "meaning": "The Nyika men, who are accustomed to have more social interaction with visitors than the women, occasionally import a Swahili phrase or two into their conversation, just as some people at home introduce French expressions. \"Fanyeje?\" and \"T'endeje\" (lit. What, or how, am I to do, or act?) are very commonly heard at the coast. They are used as an excuse by a man, to himself or others, when he laments circumstances being beyond his control. This, the proverb seems to say, heard with complaisance even in the mouth of the (once) almost omnipotent Nyika Elder, must not be rejected when it is the excuse of one of the younger generation.",
+    "meaning": "The Nyika men, who are accustomed to have more social interaction with visitors than the women, occasionally import a Swahili phrase or two into their conversation, just as some people at home introduce French expressions. 'Fanyeje?' and 'T'endeje' (lit. What, or how, am I to do, or act?) are very commonly heard at the coast. They are used as an excuse by a man, to himself or others, when he laments circumstances being beyond his control. This, the proverb seems to say, heard with complaisance even in the mouth of the (once) almost omnipotent Nyika Elder, must not be rejected when it is the excuse of one of the younger generation.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #650"
   },
@@ -902,7 +902,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Ts'anje akifwa na murira udzefwa.",
     "literalTranslation": "When the snouted-shrew dies, (her) traces are dead also (i.e. disappear).",
-    "meaning": "\"Ukikala k'u-vo (-wo?), na rako k'arivo.\" If you are not present, your concerns are not present. It is necessary to keep one's self en évidence. When a way or track is no longer used, and has become grown over, it is commonly said \"to have died\" (njira idzefwa, Swah. ndia imekufa). The ts'anje is a middle-sized brown shrew or field-mouse, with kangaroo-like hind-legs, a long trunk or proboscis, and pretty brown fur: it has a sort of brush of short bristles under its tail, with which it produces a trail or path as it moves about in the jungle, and in doing which it makes a rustle.",
+    "meaning": "'Ukikala k'u-vo (-wo?), na rako k'arivo.' If you are not present, your concerns are not present. It is necessary to keep one's self en évidence. When a way or track is no longer used, and has become grown over, it is commonly said 'to have died' (njira idzefwa, Swah. ndia imekufa). The ts'anje is a middle-sized brown shrew or field-mouse, with kangaroo-like hind-legs, a long trunk or proboscis, and pretty brown fur: it has a sort of brush of short bristles under its tail, with which it produces a trail or path as it moves about in the jungle, and in doing which it makes a rustle.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #651"
   },
@@ -932,7 +932,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "U muvyere wa renge, k'uhendeka kirenge.",
     "literalTranslation": "You are an elder of the full-grown pumpkin, you cannot be made into a half-grown one. Also— You are an \"elder of the pumpkin,\" you are not to be made into a \"calabash.\"",
-    "meaning": "You are an \"elder of the pumpkin,\" you are not to be made into a \"calabash.\" —There are two ways of taking this (see Dictionary, under \"Renge\" and \"Mudzungu\" (i.e. mutsungu). (1) In illustration of the former meaning, the first passage Rebman gives translates thus:—The pumpkin plant has produced buttons, and soon you say they have become little pumpkins (vi-renge, with which ctr. virenge, calabashes); well, when they have become full-sized pumpkins they are not to be made into little pumpkins again. . . . (2), When a man has grown into what he is, it is as impossible for him to change as for a \"renge,\" i.e. the fruit of the murenge, or pumpkin-plant, to grow into a calabash, \"kirenge,\" which, although similar in name, is produced by quite a different plant, the gourd-plant, according to Rebman—mudzungu. The sentence he gives is, Kwani, hata renge rikikala bomu-dze, k'arihendeka kirenge—Why, let the pumpkin become ever so great, it can never be made into a calabash!",
+    "meaning": "You are an 'elder of the pumpkin,' you are not to be made into a 'calabash.' —There are two ways of taking this (see Dictionary, under 'Renge' and 'Mudzungu' (i.e. mutsungu). (1) In illustration of the former meaning, the first passage Rebman gives translates thus:—The pumpkin plant has produced buttons, and soon you say they have become little pumpkins (vi-renge, with which ctr. virenge, calabashes); well, when they have become full-sized pumpkins they are not to be made into little pumpkins again. . . . (2), When a man has grown into what he is, it is as impossible for him to change as for a 'renge,' i.e. the fruit of the murenge, or pumpkin-plant, to grow into a calabash, 'kirenge,' which, although similar in name, is produced by quite a different plant, the gourd-plant, according to Rebman—mudzungu. The sentence he gives is, Kwani, hata renge rikikala bomu-dze, k'arihendeka kirenge—Why, let the pumpkin become ever so great, it can never be made into a calabash!",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #653"
   },
@@ -942,7 +942,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "U ndezi 'we, urya mukono-we.",
     "literalTranslation": "You are a squirrel, (that) is wont to eat his own hand.",
-    "meaning": "From the familiar attitude of the little animal in holding its food to its mouth, it is proverbially said to \"eat its hand.\" It was addressed to a man that was selling his child into servantry.",
+    "meaning": "From the familiar attitude of the little animal in holding its food to its mouth, it is proverbially said to 'eat its hand.' It was addressed to a man that was selling his child into servantry.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #654"
   },
@@ -962,7 +962,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "U nga nundu.",
     "literalTranslation": "You are like the bat.",
-    "meaning": "Said to one to whom we should say, \"You are trying to sit on two stools at once.\"",
+    "meaning": "Said to one to whom we should say, 'You are trying to sit on two stools at once.'",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #656"
   },
@@ -992,7 +992,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Ulumbi wa Ki-Digo.",
     "literalTranslation": "\"Digo palavering.\"",
-    "meaning": "Musihende \"ulumbi wa Ki-Digo,\" wa kuendereza maneno mutsana wa dii: k'ahuna ukazi sino, k'ahuweza ulumbi wa Ki-Digo. Don't make any \"Digo palavering,\" drawing out the discussion all the livelong day: we have no time to stay, we cannot manage any Digo palavering. All Africans are given to making orations, but the Digos, the southernmost of the Nyika tribes, are proverbially so.",
+    "meaning": "Musihende 'ulumbi wa Ki-Digo,' wa kuendereza maneno mutsana wa dii: k'ahuna ukazi sino, k'ahuweza ulumbi wa Ki-Digo. Don't make any 'Digo palavering,' drawing out the discussion all the livelong day: we have no time to stay, we cannot manage any Digo palavering. All Africans are given to making orations, but the Digos, the southernmost of the Nyika tribes, are proverbially so.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #659"
   },
@@ -1002,7 +1002,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Usena ukira udugu.",
     "literalTranslation": "Friendship surpasses relationship.",
-    "meaning": "See Swahili, § 17 (and the Arabic, Jârak al karîb wa lâ akhûk al ba'îd).",
+    "meaning": "Proverbial teaching: 'Friendship surpasses relationship' — emphasizing wisdom, foresight, and conduct in everyday life (See Swahili, § 17 (and the Arabic, Jârak al karîb wa lâ akhûk al ba'îd).)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #660"
   },
@@ -1022,7 +1022,7 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "languageName": "Mijikenda (Kinyika / Rabai)",
     "indigenous": "Varivo (Wariwo?) k'uku k'avamwagwa (k'awamwagwa) umera.",
     "literalTranslation": "Where fowls are, the moistened grain (or malt) is not scattered about.",
-    "meaning": "Concerning \"Little pitchers.\" Cp. Swahili, § 457.",
+    "meaning": "Concerning 'Little pitchers.' Cp. Swahili, § 457.",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Nyika Proverb #662"
   },

@@ -2743,84 +2743,90 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "description": "Practice verified Samburu (Sampur) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
         "words": [
-                {
-                        "target": "Kiserian",
-                        "source": "Goodbye / Stay in peace",
-                        "pronunciation": "ki-seh-ri-an"
-                },
-                {
-                        "target": "Chamge / Nabo",
-                        "source": "Greetings to elders / Respectful greeting",
-                        "pronunciation": "nah-boh"
-                },
-                {
-                        "target": "Nkare naibor oo lkujita onyori ntarikini nkishu ang'",
-                        "source": "Clean water and green pasture sustain our livestock",
-                        "pronunciation": "n-kah-reh nah-ee-bohr oh l-koo-jee-tah oh-nyoh-ree"
-                },
-                {
-                        "target": "Lpayiani nemayiana lmurran peetum serian te nkop",
-                        "source": "Elders bless the youth to guard peace across the rangelands",
-                        "pronunciation": "lpayiani-nemayiana-lmurran-peetum"
-                },
-                {
-                        "target": "Supa",
-                        "source": "Hello (to a man)",
-                        "pronunciation": "supa"
-                },
-                {
-                        "target": "Takwenya",
-                        "source": "Hello (to a woman)",
-                        "pronunciation": "takwenya"
-                },
-                {
-                        "target": "Ipa / Eiko",
-                        "source": "Response: Fine / Peaceful",
-                        "pronunciation": "ipa"
-                },
-                {
-                        "target": "Ashe oleng",
-                        "source": "Thank you very much",
-                        "pronunciation": "ashe oleng"
-                },
-                {
-                        "target": "Kirrip Atara ninje te nkang' ang'",
-                        "source": "We keep i kill them in our manyatta",
-                        "pronunciation": "kirrip atara ninje te nkang ang"
-                },
-                {
-                        "target": "Kirrip Etu gimirio te nkang' ang'",
-                        "source": "We keep we sold not in our manyatta",
-                        "pronunciation": "kirrip etu gimirio te nkang ang"
-                },
-                {
-                        "target": "Kirrip l-ora te nkang' ang'",
-                        "source": "We keep ceremonial homestead in our manyatta",
-                        "pronunciation": "kirrip l-ora te nkang ang"
-                },
-                {
-                        "target": "Kirrip Habi te nkang' ang'",
-                        "source": "We keep go in our manyatta",
-                        "pronunciation": "kirrip habi te nkang ang"
-                }
+                  {
+                            "target": "Ashe",
+                            "source": "Thank you",
+                            "pronunciation": "ah-sheh oh-leng"
+                  },
+                  {
+                            "target": "Epa",
+                            "source": "Hello (Reply)",
+                            "pronunciation": "eh-pah"
+                  },
+                  {
+                            "target": "Serian",
+                            "source": "Peace / Serenity",
+                            "pronunciation": "seh-ri-an"
+                  },
+                  {
+                            "target": "Sopa",
+                            "source": "Hello / Greetings",
+                            "pronunciation": "soh-pah"
+                  },
+                  {
+                            "target": "Kiserian",
+                            "source": "Goodbye / Stay in peace",
+                            "pronunciation": "ki-seh-ri-an"
+                  },
+                  {
+                            "target": "Chamge",
+                            "source": "Greetings to elders / Respectful greeting",
+                            "pronunciation": "nah-boh"
+                  },
+                  {
+                            "target": "Supa",
+                            "source": "Hello (to a man)",
+                            "pronunciation": "supa"
+                  },
+                  {
+                            "target": "Takwenya",
+                            "source": "Hello (to a woman)",
+                            "pronunciation": "takwenya"
+                  },
+                  {
+                            "target": "Ipa",
+                            "source": "Response: Fine / Peaceful",
+                            "pronunciation": "ipa"
+                  },
+                  {
+                            "target": "Ashe oleng",
+                            "source": "Thank you very much",
+                            "pronunciation": "ashe oleng"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Kiserian",
-                        "source": "Goodbye / Stay in peace"
-                },
-                {
-                        "target": "Chamge / Nabo",
-                        "source": "Greetings to elders / Respectful greeting"
-                },
-                {
-                        "target": "Nkare naibor oo lkujita onyori ntarikini nkishu ang'",
-                        "source": "Clean water and green pasture sustain our livestock"
-                },
-                {
-                        "target": "Lpayiani nemayiana lmurran peetum serian te nkop",
-                        "source": "Elders bless the youth to guard peace across the rangelands"
-                }
+                  {
+                            "target": "Ashe oleng",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "El bāek",
+                            "source": "Maize"
+                  },
+                  {
+                            "target": "Ol lameyu",
+                            "source": "Hunger"
+                  },
+                  {
+                            "target": "Or gumbao",
+                            "source": "Tobacco"
+                  },
+                  {
+                            "target": "O' sosiān",
+                            "source": "Date palm"
+                  },
+                  {
+                            "target": "En naishu, Na mōqa",
+                            "source": "Palm wine or mead"
+                  },
+                  {
+                            "target": "Njilingi eel Uingereza",
+                            "source": "British Pound (GBP)"
+                  },
+                  {
+                            "target": "Paunt eel Sudani",
+                            "source": "Sudanese Pound (SDG)"
+                  }
         ]
 },
         {
@@ -2830,104 +2836,90 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Samburu (Sampur) sentences for healthcare, transport, and community safety.",
         "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
         "words": [
-                {
-                        "target": "Kirrip Keiolei te nkang' ang'",
-                        "source": "We keep no in our manyatta",
-                        "pronunciation": "kirrip keiolei te nkang ang"
-                },
-                {
-                        "target": "Kirrip Tukutuk te nkang' ang'",
-                        "source": "We keep all in our manyatta",
-                        "pronunciation": "kirrip tukutuk te nkang ang"
-                },
-                {
-                        "target": "Kirrip Hegoi te nkang' ang'",
-                        "source": "We keep axe in our manyatta",
-                        "pronunciation": "kirrip hegoi te nkang ang"
-                },
-                {
-                        "target": "Kirrip Tepiter te nkang' ang'",
-                        "source": "We keep bad in our manyatta",
-                        "pronunciation": "kirrip tepiter te nkang ang"
-                },
-                {
-                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
-                        "source": "What is the value of money at the market?",
-                        "pronunciation": "kaja lbeyi le ropiyiani te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Lbeyi te sokoni?",
-                        "source": "What is the value of price at the market?",
-                        "pronunciation": "kaja lbeyi le lbeyi te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Lduka te sokoni?",
-                        "source": "What is the value of shop at the market?",
-                        "pronunciation": "kaja lbeyi le lduka te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Lamei te sokoni?",
-                        "source": "What is the value of drought at the market?",
-                        "pronunciation": "kaja lbeyi le lamei te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Lchani te sokoni?",
-                        "source": "What is the value of medicine at the market?",
-                        "pronunciation": "kaja lbeyi le lchani te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Moyian te sokoni?",
-                        "source": "What is the value of sickness at the market?",
-                        "pronunciation": "kaja lbeyi le moyian te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Sipitali te sokoni?",
-                        "source": "What is the value of hospital at the market?",
-                        "pronunciation": "kaja lbeyi le sipitali te sokoni"
-                },
-                {
-                        "target": "Kaja lbeyi le Serian te sokoni?",
-                        "source": "What is the value of peace at the market?",
-                        "pronunciation": "kaja lbeyi le serian te sokoni"
-                }
+                  {
+                            "target": "naɓô",
+                            "source": "One",
+                            "pronunciation": "na o"
+                  },
+                  {
+                            "target": "aré",
+                            "source": "Two",
+                            "pronunciation": "are"
+                  },
+                  {
+                            "target": "ílê",
+                            "source": "Six",
+                            "pronunciation": "i-le"
+                  },
+                  {
+                            "target": "tômôn",
+                            "source": "Ten",
+                            "pronunciation": "to-mon"
+                  },
+                  {
+                            "target": "onɠwán",
+                            "source": "Four",
+                            "pronunciation": "on-gwan"
+                  },
+                  {
+                            "target": "ímɟêt",
+                            "source": "Five",
+                            "pronunciation": "im-jet"
+                  },
+                  {
+                            "target": "sâːl",
+                            "source": "Nine",
+                            "pronunciation": "saal"
+                  },
+                  {
+                            "target": "uní",
+                            "source": "Three",
+                            "pronunciation": "uni"
+                  },
+                  {
+                            "target": "sápâ",
+                            "source": "Seven",
+                            "pronunciation": "sa-pa"
+                  },
+                  {
+                            "target": "ísɟêt",
+                            "source": "Eight",
+                            "pronunciation": "is-jet"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Kaja lbeyi le Nkai te sokoni?",
-                        "source": "What is the value of god at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Nkoitoi te sokoni?",
-                        "source": "What is the value of road at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Ldonyo Nyiro te sokoni?",
-                        "source": "What is the value of sacred mountain at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Ldoinyo Lenkiyio te sokoni?",
-                        "source": "What is the value of mathews range at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Lale te sokoni?",
-                        "source": "What is the value of cattle camp at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Lkisima te sokoni?",
-                        "source": "What is the value of water well at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Sokoni te sokoni?",
-                        "source": "What is the value of market at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Ropiyiani te sokoni?",
-                        "source": "What is the value of money at the market?"
-                },
-                {
-                        "target": "Kaja lbeyi le Lbeyi te sokoni?",
-                        "source": "What is the value of price at the market?"
-                }
+                  {
+                            "target": "Tomoni uni",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "Tomon obo",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "otomoni uni",
+                            "source": "Eighty"
+                  },
+                  {
+                            "target": "Ip tomon",
+                            "source": "Thousand"
+                  },
+                  {
+                            "target": "Eñ karei",
+                            "source": "Son"
+                  },
+                  {
+                            "target": "Eñ getok",
+                            "source": "Wife"
+                  },
+                  {
+                            "target": "Embatiān, Ol aitórienĭ, Lagwainani",
+                            "source": "Chief"
+                  },
+                  {
+                            "target": "El mau",
+                            "source": "Twins"
+                  }
         ]
 }
     ]

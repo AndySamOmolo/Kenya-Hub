@@ -2,6 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -169,25 +170,53 @@ export default function KraCarImportCalculatorPage() {
                 <label className="block text-xs text-[var(--text-secondary)] mb-1">
                   KRA CRSP Value (KES)
                 </label>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  value={customCrsp}
-                  onChange={(e) => setCustomCrsp(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={customCrsp}
+                    placeholder="0"
+                    onChange={(e) => setCustomCrsp(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
+                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                    style={{ paddingRight: "2.5rem" }}
+                  />
+                  {customCrsp && (
+                    <button
+                      type="button"
+                      onClick={() => setCustomCrsp("")}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear CRSP value"
+                    >
+                      <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
               <div>
                 <label className="block text-xs text-[var(--text-secondary)] mb-1">
                   Engine Capacity (CC)
                 </label>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  value={customCc}
-                  onChange={(e) => setCustomCc(e.target.value.replace(/[^0-9]/g, ""))}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={customCc}
+                    placeholder="1500"
+                    onChange={(e) => setCustomCc(e.target.value.replace(/[^0-9]/g, ""))}
+                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                    style={{ paddingRight: "2.5rem" }}
+                  />
+                  {customCc && (
+                    <button
+                      type="button"
+                      onClick={() => setCustomCc("")}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear engine capacity"
+                    >
+                      <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
               <div>
                 <label className="block text-xs text-[var(--text-secondary)] mb-1">
@@ -226,25 +255,53 @@ export default function KraCarImportCalculatorPage() {
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Estimated CIF Price (USD — Japan/UK/Dubai)
               </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                value={cifUsd}
-                onChange={(e) => setCifUsd(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={cifUsd}
+                  placeholder="0"
+                  onChange={(e) => setCifUsd(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  style={{ paddingRight: "2.5rem" }}
+                />
+                {cifUsd && (
+                  <button
+                    type="button"
+                    onClick={() => setCifUsd("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear CIF price"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
             </div>
             <div>
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Exchange Rate (KES per USD)
               </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                value={usdRate}
-                onChange={(e) => setUsdRate(e.target.value.replace(/[^0-9.]/g, ""))}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={usdRate}
+                  placeholder="129.5"
+                  onChange={(e) => setUsdRate(e.target.value.replace(/[^0-9.]/g, ""))}
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  style={{ paddingRight: "2.5rem" }}
+                />
+                {usdRate && (
+                  <button
+                    type="button"
+                    onClick={() => setUsdRate("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear exchange rate"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>

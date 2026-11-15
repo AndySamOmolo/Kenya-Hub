@@ -2670,84 +2670,90 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "description": "Practice verified Ilchamus (Njemps) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
         "words": [
-                {
-                        "target": "Serian",
-                        "source": "Peace",
-                        "pronunciation": "seh-ri-an"
-                },
-                {
-                        "target": "Ashe / Ashe oleng",
-                        "source": "Thank you",
-                        "pronunciation": "ah-sheh"
-                },
-                {
-                        "target": "Epa / Ipa",
-                        "source": "Hello (Reply)",
-                        "pronunciation": "eh-pah"
-                },
-                {
-                        "target": "Sopa / Supa",
-                        "source": "Hello / Greetings",
-                        "pronunciation": "soh-pah"
-                },
-                {
-                        "target": "Supa",
-                        "source": "Hello / Peace (Men's greeting)",
-                        "pronunciation": "supa"
-                },
-                {
-                        "target": "Takwenya",
-                        "source": "Hello / Peace (Women's greeting)",
-                        "pronunciation": "takwenya"
-                },
-                {
-                        "target": "Ashe oleng",
-                        "source": "Thank you very much",
-                        "pronunciation": "ashe oleng"
-                },
-                {
-                        "target": "Karibu ang'",
-                        "source": "Welcome",
-                        "pronunciation": "karibu ang"
-                },
-                {
-                        "target": "Kirrip Ol Gesiani te nkang' ang'",
-                        "source": "We keep ol gesiani at our homestead",
-                        "pronunciation": "kirrip ol gesiani te nkang ang"
-                },
-                {
-                        "target": "Kirrip Ol Murtanat te nkang' ang'",
-                        "source": "We keep ol murtanat at our homestead",
-                        "pronunciation": "kirrip ol murtanat te nkang ang"
-                },
-                {
-                        "target": "Kirrip Ol Gessei te nkang' ang'",
-                        "source": "We keep ol gessei at our homestead",
-                        "pronunciation": "kirrip ol gessei te nkang ang"
-                },
-                {
-                        "target": "Kirrip Masari te nkang' ang'",
-                        "source": "We keep masari at our homestead",
-                        "pronunciation": "kirrip masari te nkang ang"
-                }
+                  {
+                            "target": "Serian",
+                            "source": "Peace",
+                            "pronunciation": "seh-ri-an"
+                  },
+                  {
+                            "target": "Ashe",
+                            "source": "Thank you",
+                            "pronunciation": "ah-sheh"
+                  },
+                  {
+                            "target": "Epa",
+                            "source": "Hello (Reply)",
+                            "pronunciation": "eh-pah"
+                  },
+                  {
+                            "target": "Sopa",
+                            "source": "Hello / Greetings",
+                            "pronunciation": "soh-pah"
+                  },
+                  {
+                            "target": "Supa",
+                            "source": "Hello / Peace (Men's greeting)",
+                            "pronunciation": "supa"
+                  },
+                  {
+                            "target": "Takwenya",
+                            "source": "Hello / Peace (Women's greeting)",
+                            "pronunciation": "takwenya"
+                  },
+                  {
+                            "target": "Ashe oleng",
+                            "source": "Thank you very much",
+                            "pronunciation": "ashe oleng"
+                  },
+                  {
+                            "target": "Karibu ang'",
+                            "source": "Welcome",
+                            "pronunciation": "karibu ang"
+                  },
+                  {
+                            "target": "Eelata",
+                            "source": "Fat",
+                            "pronunciation": "ee-la-ta"
+                  },
+                  {
+                            "target": "Ol-mossóri",
+                            "source": "Egg",
+                            "pronunciation": "ol-mossori"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Eiro lpayiani too Masari",
-                        "source": "The elders spoke about masari"
-                },
-                {
-                        "target": "Eiro lpayiani too Barsaina",
-                        "source": "The elders spoke about barsaina"
-                },
-                {
-                        "target": "Eiro lpayiani too 'Ngang Lessamagan",
-                        "source": "The elders spoke about 'ngang lessamagan"
-                },
-                {
-                        "target": "Eiro lpayiani too 'Ngang Ngissegir",
-                        "source": "The elders spoke about 'ngang ngissegir"
-                }
+                  {
+                            "target": "Ashe oleng",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "Karibu ang'",
+                            "source": "Welcome"
+                  },
+                  {
+                            "target": "El bāek",
+                            "source": "Maize"
+                  },
+                  {
+                            "target": "Eñ gare",
+                            "source": "Water"
+                  },
+                  {
+                            "target": "Ol lameyu",
+                            "source": "Hunger"
+                  },
+                  {
+                            "target": "Or gumbao",
+                            "source": "Tobacco"
+                  },
+                  {
+                            "target": "O' sosiān",
+                            "source": "Date palm"
+                  },
+                  {
+                            "target": "En naishu, Na mōqa",
+                            "source": "Palm wine or mead"
+                  }
         ]
 },
         {
@@ -2757,54 +2763,90 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Ilchamus (Njemps) sentences for healthcare, transport, and community safety.",
         "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
         "words": [
-                {
-                        "target": "Kirrip Barsaina te nkang' ang'",
-                        "source": "We keep barsaina at our homestead",
-                        "pronunciation": "kirrip barsaina te nkang ang"
-                },
-                {
-                        "target": "Kirrip 'Ngang Lessamagan te nkang' ang'",
-                        "source": "We keep 'ngang lessamagan at our homestead",
-                        "pronunciation": "kirrip 'ngang lessamagan te nkang ang"
-                },
-                {
-                        "target": "Kirrip 'Ngang Ngissegir te nkang' ang'",
-                        "source": "We keep 'ngang ngissegir at our homestead",
-                        "pronunciation": "kirrip 'ngang ngissegir te nkang ang"
-                },
-                {
-                        "target": "Kirrip 6 game taboos te nkang' ang'",
-                        "source": "We keep waterbuck at our homestead",
-                        "pronunciation": "kirrip 6 game taboos te nkang ang"
-                },
-                {
-                        "target": "lukunya",
-                        "source": "Head",
-                        "pronunciation": "lu-ku-nya"
-                },
-                {
-                        "target": "Engorioñ",
-                        "source": "Back",
-                        "pronunciation": "engo-riong"
-                }
+                  {
+                            "target": "nabo",
+                            "source": "One",
+                            "pronunciation": "na-bo / o-bo"
+                  },
+                  {
+                            "target": "are",
+                            "source": "Two",
+                            "pronunciation": "a-re / waa-re"
+                  },
+                  {
+                            "target": "ile",
+                            "source": "Six",
+                            "pronunciation": "i-le"
+                  },
+                  {
+                            "target": "tomon",
+                            "source": "Ten",
+                            "pronunciation": "to-mon"
+                  },
+                  {
+                            "target": "ong'wan",
+                            "source": "Four",
+                            "pronunciation": "ong-wan"
+                  },
+                  {
+                            "target": "imiet",
+                            "source": "Five",
+                            "pronunciation": "i-miet"
+                  },
+                  {
+                            "target": "saal",
+                            "source": "Nine",
+                            "pronunciation": "saal"
+                  },
+                  {
+                            "target": "uni",
+                            "source": "Three",
+                            "pronunciation": "u-ni / o-ku-ni"
+                  },
+                  {
+                            "target": "sapa",
+                            "source": "Seven",
+                            "pronunciation": "sa-pa"
+                  },
+                  {
+                            "target": "isiet",
+                            "source": "Eight",
+                            "pronunciation": "i-siet"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Eiro lpayiani too 6 game taboos",
-                        "source": "The elders spoke about waterbuck"
-                },
-                {
-                        "target": "Kirrip Barsaina te nkang' ang'",
-                        "source": "We keep barsaina at our homestead"
-                },
-                {
-                        "target": "Kirrip 'Ngang Lessamagan te nkang' ang'",
-                        "source": "We keep 'ngang lessamagan at our homestead"
-                },
-                {
-                        "target": "Kirrip 'Ngang Ngissegir te nkang' ang'",
-                        "source": "We keep 'ngang ngissegir at our homestead"
-                }
+                  {
+                            "target": "Tomoni uni",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "Tomon obo",
+                            "source": "Eleven"
+                  },
+                  {
+                            "target": "otomoni uni",
+                            "source": "Eighty"
+                  },
+                  {
+                            "target": "Ip tomon",
+                            "source": "Thousand"
+                  },
+                  {
+                            "target": "Eñ karei",
+                            "source": "Son"
+                  },
+                  {
+                            "target": "Eñ getok",
+                            "source": "Wife"
+                  },
+                  {
+                            "target": "Embatiān, Ol aitórienĭ, Lagwainani",
+                            "source": "Chief"
+                  },
+                  {
+                            "target": "El mau",
+                            "source": "Twins"
+                  }
         ]
 }
     ]

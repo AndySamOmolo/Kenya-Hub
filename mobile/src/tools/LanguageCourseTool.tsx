@@ -27,7 +27,8 @@ import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
 import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
-import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
+import { getRiddlesForLanguage } from '../shared/data/courses/riddles-bank';
+import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
   getXpLevel,
@@ -405,7 +406,7 @@ export default function LanguageCourseTool({
   const [wordleGuesses, setWordleGuesses] = useState<string[]>([]);
   const [wordleInput, setWordleInput] = useState('');
   const [wordleStatus, setWordleStatus] = useState<'playing' | 'won' | 'lost'>('playing');
-  const [riddleQuestion, setRiddleQuestion] = useState<{ riddle: string; answer: string; hint?: string } | null>(null);
+  const [riddleQuestion, setRiddleQuestion] = useState<{ riddle: string; answer: string; hint?: string; origin?: string } | null>(null);
   const [riddleOptions, setRiddleOptions] = useState<string[]>([]);
   const [riddleFeedback, setRiddleFeedback] = useState<string | null>(null);
   const [vocabQuestion, setVocabQuestion] = useState<{ prompt: string; oddWord: string } | null>(null);
@@ -657,7 +658,24 @@ export default function LanguageCourseTool({
 
   // ── Mini-Games Pool & Launchers ──
   const allCourseWords = useMemo(() => {
-    return allSkills.flatMap((s) => s.words);
+    const words: Word[] = [];
+    const seenTargets = new Set<string>();
+    const seenSources = new Set<string>();
+    for (const s of allSkills) {
+      for (const w of s.words) {
+        if (!isCleanLexicalWordPair(w.target, w.source)) continue;
+        const target = getPrimaryForm(w.target).trim();
+        const source = cleanExerciseText(getPrimaryForm(w.source)).trim();
+        const tKey = target.toLowerCase();
+        const sKey = source.toLowerCase();
+        if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
+          seenTargets.add(tKey);
+          seenSources.add(sKey);
+          words.push({ ...w, target, source });
+        }
+      }
+    }
+    return words.length >= 4 ? words : allSkills.flatMap((s) => s.words);
   }, [allSkills]);
 
   const startScrambleRound = useCallback(() => {
@@ -670,11 +688,17 @@ export default function LanguageCourseTool({
       .filter((w) => w.target.length >= 3 && w.target.length <= 10);
     if (eligible.length === 0) return;
     const chosen = eligible[Math.floor(Math.random() * eligible.length)];
-    const chars = chosen.target.split("");
-    for (let i = chars.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [chars[i], chars[j]] = [chars[j], chars[i]];
-    }
+    const origChars = chosen.target.split("");
+    let chars = [...origChars];
+    let attempts = 0;
+    do {
+      chars = [...origChars];
+      for (let i = chars.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [chars[i], chars[j]] = [chars[j], chars[i]];
+      }
+      attempts++;
+    } while (chars.join("") === origChars.join("") && attempts < 10);
     setScrambleWord(chosen);
     setScramblePool(chars);
     setScramblePicked([]);
@@ -684,11 +708,16 @@ export default function LanguageCourseTool({
   const startSpeedRound = useCallback(() => {
     if (allCourseWords.length < 4) return;
     const chosen = allCourseWords[Math.floor(Math.random() * allCourseWords.length)];
-    const distractors = allCourseWords
-      .filter((w) => w.source !== chosen.source)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3)
-      .map((w) => w.source);
+    const seen = new Set<string>([chosen.source.toLowerCase()]);
+    const distractors: string[] = [];
+    const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
+    for (const w of shuffled) {
+      if (!seen.has(w.source.toLowerCase())) {
+        seen.add(w.source.toLowerCase());
+        distractors.push(w.source);
+        if (distractors.length >= 3) break;
+      }
+    }
     const opts = [chosen.source, ...distractors].sort(() => Math.random() - 0.5);
     setSpeedQuestion(chosen);
     setSpeedOptions(opts);
@@ -696,7 +725,19 @@ export default function LanguageCourseTool({
   }, [allCourseWords]);
 
   const startMemoryGame = useCallback(() => {
-    const sample = [...allCourseWords].sort(() => Math.random() - 0.5).slice(0, 6);
+    const seenTargets = new Set<string>();
+    const seenSources = new Set<string>();
+    const sample: Word[] = [];
+    for (const w of [...allCourseWords].sort(() => Math.random() - 0.5)) {
+      const t = getPrimaryForm(w.target).trim();
+      const s = getPrimaryForm(w.source).trim();
+      if (!t || !s) continue;
+      if (seenTargets.has(t.toLowerCase()) || seenSources.has(s.toLowerCase())) continue;
+      seenTargets.add(t.toLowerCase());
+      seenSources.add(s.toLowerCase());
+      sample.push({ ...w, target: t, source: s });
+      if (sample.length >= 6) break;
+    }
     const deck: {
       id: string;
       text: string;
@@ -705,8 +746,8 @@ export default function LanguageCourseTool({
       matched: boolean;
     }[] = [];
     sample.forEach((w, idx) => {
-      deck.push({ id: `t-${idx}`, text: getPrimaryForm(w.target), pairId: idx, type: "target", matched: false });
-      deck.push({ id: `s-${idx}`, text: getPrimaryForm(w.source), pairId: idx, type: "source", matched: false });
+      deck.push({ id: `t-${idx}`, text: w.target, pairId: idx, type: "target", matched: false });
+      deck.push({ id: `s-${idx}`, text: w.source, pairId: idx, type: "source", matched: false });
     });
     deck.sort(() => Math.random() - 0.5);
     setMemoryCards(deck);
@@ -714,61 +755,65 @@ export default function LanguageCourseTool({
   }, [allCourseWords]);
 
   const startWordleGame = useCallback(() => {
-    const eligible = allCourseWords.filter((w) => {
-      const clean = w.target.trim().toLowerCase();
-      return /^[a-z]{4,7}$/.test(clean);
-    });
-    const pool = eligible.length > 0 ? eligible : allCourseWords.filter((w) => w.target.length >= 3);
-    if (pool.length === 0) return;
-    const chosen = pool[Math.floor(Math.random() * pool.length)];
-    const cleanAns = chosen.target.trim().toLowerCase().replace(/[^a-z]/g, '').slice(0, 7);
+    const toAscii = (str: string) =>
+      getPrimaryForm(str)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[ωΩ]/g, "o")
+        .replace(/ñ/g, "ng")
+        .replace(/[^a-zA-Z]/g, "")
+        .toLowerCase();
+
+    const eligible = allCourseWords
+      .map((w) => ({ ...w, asciiTarget: toAscii(w.target) }))
+      .filter((w) => w.asciiTarget.length >= 4 && w.asciiTarget.length <= 7);
+    if (eligible.length === 0) return;
+    const chosen = eligible[Math.floor(Math.random() * eligible.length)];
     setWordleTarget(chosen);
-    setWordleAnswer(cleanAns || 'maber');
+    setWordleAnswer(chosen.asciiTarget);
     setWordleGuesses([]);
     setWordleInput('');
     setWordleStatus('playing');
   }, [allCourseWords]);
 
   const startRiddleRound = useCallback(() => {
-    const wisdom = getCulturalWisdomForLanguage(selectedLangId);
-    const pool = wisdom.length > 0 ? wisdom : [
-      { nativeText: "Nyumba yangu haina mlango", meaning: "An egg (Yai)", category: "riddle" },
-      { nativeText: "Hutembea na mguu mmoja", meaning: "A mushroom (Uyoga)", category: "riddle" },
-      { nativeText: "Akisimama ana urefu, akikaa hana", meaning: "A stick (Mti)", category: "riddle" },
-      { nativeText: "Nikikata siachi alama", meaning: "Water (Maji)", category: "riddle" },
-    ];
+    const pool = getRiddlesForLanguage(selectedLangId, currentCourse?.config.name);
+    if (pool.length === 0) return;
     const chosen = pool[Math.floor(Math.random() * pool.length)];
-    const distractors = pool
-      .filter((w) => (w.meaning || w.englishEquivalent) !== (chosen.meaning || chosen.englishEquivalent))
+    const distractors = [...pool]
+      .filter((r) => r.answer.toLowerCase() !== chosen.answer.toLowerCase())
       .sort(() => Math.random() - 0.5)
       .slice(0, 3)
-      .map((w) => w.meaning || w.englishEquivalent || "Traditional wisdom");
-    while (distractors.length < 3) {
-      distractors.push("Patience and perseverance", "Unity in the community", "Respect for elders")[distractors.length];
-    }
-    const right = chosen.meaning || chosen.englishEquivalent || "Wisdom";
-    const opts = [right, ...distractors].sort(() => Math.random() - 0.5);
+      .map((r) => r.answer);
+    const opts = [chosen.answer, ...distractors].sort(() => Math.random() - 0.5);
     setRiddleQuestion({
-      riddle: chosen.nativeText,
-      answer: right,
-      hint: (chosen as any).literalTranslation,
+      riddle: chosen.riddle,
+      answer: chosen.answer,
+      hint: chosen.translation,
+      origin: chosen.origin,
     });
     setRiddleOptions(opts);
     setRiddleFeedback(null);
-  }, [selectedLangId]);
+  }, [selectedLangId, currentCourse]);
 
   const startVocabQuizRound = useCallback(() => {
-    if (allCourseWords.length < 4) return;
+    if (allCourseWords.length < 2) return;
     const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
     const primary = shuffled[0];
-    const imposter = shuffled[1];
+    const seen = new Set<string>([primary.target.toLowerCase()]);
+    const distractors: string[] = [];
+    for (const w of shuffled.slice(1)) {
+      if (
+        !seen.has(w.target.toLowerCase()) &&
+        w.source.toLowerCase() !== primary.source.toLowerCase()
+      ) {
+        seen.add(w.target.toLowerCase());
+        distractors.push(w.target);
+        if (distractors.length >= 3) break;
+      }
+    }
     const promptText = `Which word means "${primary.source}"?`;
-    const opts = [
-      primary.target,
-      imposter.target,
-      shuffled[2]?.target || "Nyingi",
-      shuffled[3]?.target || "Nzuri",
-    ].sort(() => Math.random() - 0.5);
+    const opts = [primary.target, ...distractors].sort(() => Math.random() - 0.5);
 
     setVocabQuestion({ prompt: promptText, oddWord: primary.target });
     setVocabOptions(opts);
@@ -1397,37 +1442,51 @@ export default function LanguageCourseTool({
                     ))}
                   </View>
                 )}
-                <TextInput
-            multiline={false}
-            numberOfLines={1}
-                  value={typedAnswer}
-                  onChangeText={setTypedAnswer}
-                  editable={!isSubmitted}
-                  placeholder={
-                    currentEx.type === 'translate_to_target'
-                      ? `Type in ${currentCourse?.config.name}...`
-                      : 'Type in English...'
-                  }
-                  placeholderTextColor={colors.textMuted}
-                  returnKeyType="done"
-                  onSubmitEditing={() => {
-                    if (!isSubmitted && typedAnswer.trim()) {
-                      handleCheckExercise();
+                <View style={{ position: 'relative', justifyContent: 'center' }}>
+                  <TextInput
+                    multiline={false}
+                    numberOfLines={1}
+                    value={typedAnswer}
+                    onChangeText={setTypedAnswer}
+                    editable={!isSubmitted}
+                    placeholder={
+                      currentEx.type === 'translate_to_target'
+                        ? `Type in ${currentCourse?.config.name}...`
+                        : 'Type in English...'
                     }
-                  }}
-                  style={[
-                    styles.translationInput,
-                    {
-                      backgroundColor: colors.surface,
-                      color: colors.text,
-                      borderColor: isSubmitted
-                        ? isCorrect
-                          ? '#10B981'
-                          : '#EF4444'
-                        : colors.outlineVariant,
-                    },
-                  ]}
-                />
+                    placeholderTextColor={colors.textMuted}
+                    returnKeyType="done"
+                    onSubmitEditing={() => {
+                      if (!isSubmitted && typedAnswer.trim()) {
+                        handleCheckExercise();
+                      }
+                    }}
+                    style={[
+                      styles.translationInput,
+                      {
+                        paddingRight: 38,
+                        backgroundColor: colors.surface,
+                        color: colors.text,
+                        borderColor: isSubmitted
+                          ? isCorrect
+                            ? '#10B981'
+                            : '#EF4444'
+                          : colors.outlineVariant,
+                      },
+                    ]}
+                  />
+                  {typedAnswer.length > 0 && !isSubmitted && (
+                    <Pressable
+                      onPress={() => setTypedAnswer('')}
+                      accessibilityRole="button"
+                      accessibilityLabel="Clear answer"
+                      hitSlop={8}
+                      style={{ position: 'absolute', right: 12 }}
+                    >
+                      <Feather name="x-circle" size={16} color={colors.textMuted} />
+                    </Pressable>
+                  )}
+                </View>
               </View>
             )}
 
@@ -1873,9 +1932,11 @@ export default function LanguageCourseTool({
               placeholderTextColor={colors.textMuted}
               style={{
                 flex: 1,
+                minWidth: 0,
                 fontSize: 13.5,
                 color: colors.text,
                 paddingVertical: 8,
+                paddingHorizontal: 0,
               }}
               autoCorrect={false}
             />
@@ -2829,7 +2890,7 @@ export default function LanguageCourseTool({
                   }}
                   placeholder={`Search ${currentCourse?.config.name} words or modules...`}
                   placeholderTextColor={colors.textMuted}
-                  style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 2 }}
+                  style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 2, paddingHorizontal: 0 }}
                 />
                 {vocabSearch.length > 0 && (
                   <Pressable
@@ -3142,12 +3203,47 @@ export default function LanguageCourseTool({
               <View
                 style={[
                   styles.scrambleSlotsBox,
-                  { backgroundColor: colors.surface, borderColor: colors.outlineVariant },
+                  {
+                    backgroundColor: colors.surface,
+                    borderColor: colors.outlineVariant,
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    gap: 6,
+                  },
                 ]}
               >
-                <Text style={{ fontSize: 22, fontWeight: '800', letterSpacing: 3, color: langColor }}>
-                  {scramblePicked.map((i) => scramblePool[i]).join('') || '...'}
-                </Text>
+                {scramblePicked.length > 0 ? (
+                  scramblePicked.map((poolIdx, posIdx) => (
+                    <Pressable
+                      key={`picked-${posIdx}`}
+                      disabled={scrambleDone !== null}
+                      onPress={() => {
+                        setScramblePicked((prev) => prev.filter((_, i) => i !== posIdx));
+                        setScrambleDone(null);
+                      }}
+                      style={{
+                        minWidth: 34,
+                        height: 36,
+                        paddingHorizontal: 8,
+                        borderRadius: 8,
+                        borderWidth: 1,
+                        borderColor: langColor,
+                        backgroundColor: `${langColor}1A`,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Text style={{ fontSize: 16, fontWeight: '800', color: langColor }}>
+                        {scramblePool[poolIdx]?.toUpperCase()}
+                      </Text>
+                    </Pressable>
+                  ))
+                ) : (
+                  <Text style={{ fontSize: 14, fontStyle: 'italic', color: colors.textMuted }}>
+                    Tap letters below...
+                  </Text>
+                )}
               </View>
 
               <View style={styles.wordChipsWrap}>
@@ -3397,6 +3493,25 @@ export default function LanguageCourseTool({
                 {Array.from({ length: 6 }).map((_, rowIdx) => {
                   const guess = wordleGuesses[rowIdx] || '';
                   const isSubmittedRow = rowIdx < wordleGuesses.length;
+                  const rowStatuses: ('correct' | 'present' | 'absent')[] = Array(wordleAnswer.length).fill('absent');
+                  if (isSubmittedRow) {
+                    const targetChars = wordleAnswer.split('');
+                    const guessChars = guess.toLowerCase().split('');
+                    for (let i = 0; i < wordleAnswer.length; i++) {
+                      if (guessChars[i] === targetChars[i]) {
+                        rowStatuses[i] = 'correct';
+                        targetChars[i] = '_';
+                      }
+                    }
+                    for (let i = 0; i < wordleAnswer.length; i++) {
+                      if (rowStatuses[i] === 'correct') continue;
+                      const matchIdx = targetChars.indexOf(guessChars[i]);
+                      if (matchIdx !== -1) {
+                        rowStatuses[i] = 'present';
+                        targetChars[matchIdx] = '_';
+                      }
+                    }
+                  }
                   return (
                     <View key={`wrow-${rowIdx}`} style={{ flexDirection: 'row', gap: 6 }}>
                       {Array.from({ length: wordleAnswer.length }).map((__, colIdx) => {
@@ -3406,11 +3521,11 @@ export default function LanguageCourseTool({
                         let textColor = colors.text;
 
                         if (isSubmittedRow) {
-                          if (letter === wordleAnswer[colIdx]) {
+                          if (rowStatuses[colIdx] === 'correct') {
                             cellBg = '#10B981';
                             cellBorder = '#10B981';
                             textColor = '#000';
-                          } else if (wordleAnswer.includes(letter)) {
+                          } else if (rowStatuses[colIdx] === 'present') {
                             cellBg = '#F59E0B';
                             cellBorder = '#F59E0B';
                             textColor = '#000';
@@ -3440,26 +3555,39 @@ export default function LanguageCourseTool({
 
               {wordleStatus === 'playing' ? (
                 <View style={{ flexDirection: 'row', gap: 8 }}>
-                  <TextInput
-            multiline={false}
-            numberOfLines={1}
-                    value={wordleInput}
-                    onChangeText={(t) =>
-                      setWordleInput(t.replace(/[^a-zA-Z]/g, '').slice(0, wordleAnswer.length))
-                    }
-                    placeholder={`Enter ${wordleAnswer.length} letters...`}
-                    placeholderTextColor={colors.textMuted}
-                    autoCapitalize="none"
-                    style={[
-                      styles.translationInput,
-                      {
-                        flex: 1,
-                        backgroundColor: colors.surface,
-                        color: colors.text,
-                        borderColor: colors.outlineVariant,
-                      },
-                    ]}
-                  />
+                  <View style={{ flex: 1, minWidth: 0, position: 'relative', justifyContent: 'center' }}>
+                    <TextInput
+                      multiline={false}
+                      numberOfLines={1}
+                      value={wordleInput}
+                      onChangeText={(t) =>
+                        setWordleInput(t.replace(/[^a-zA-Z]/g, '').slice(0, wordleAnswer.length))
+                      }
+                      placeholder={`Enter ${wordleAnswer.length} letters...`}
+                      placeholderTextColor={colors.textMuted}
+                      autoCapitalize="none"
+                      style={[
+                        styles.translationInput,
+                        {
+                          paddingRight: 36,
+                          backgroundColor: colors.surface,
+                          color: colors.text,
+                          borderColor: colors.outlineVariant,
+                        },
+                      ]}
+                    />
+                    {wordleInput.length > 0 && (
+                      <Pressable
+                        onPress={() => setWordleInput('')}
+                        accessibilityRole="button"
+                        accessibilityLabel="Clear wordle input"
+                        hitSlop={8}
+                        style={{ position: 'absolute', right: 10 }}
+                      >
+                        <Feather name="x-circle" size={16} color={colors.textMuted} />
+                      </Pressable>
+                    )}
+                  </View>
                   <Pressable
                     onPress={() => {
                       const clean = wordleInput.trim().toLowerCase();
@@ -3520,12 +3648,17 @@ export default function LanguageCourseTool({
                 <Text style={{ fontWeight: '800', color: langColor }}>Score: {gameScore}</Text>
               </View>
 
-              <Text style={{ fontSize: 12, color: colors.textMuted, textAlign: 'center' }}>
-                SOLVE THE TRADITIONAL RIDDLE / PROVERB:
+              <Text style={{ fontSize: 12, fontWeight: '700', color: colors.gold, textAlign: 'center' }}>
+                {riddleQuestion.origin || `${currentCourse?.config.name} — Traditional Riddle`}
               </Text>
               <Text style={[styles.gamePromptWord, { color: colors.text, fontSize: 18, lineHeight: 26 }]}>
                 &ldquo;{riddleQuestion.riddle}&rdquo;
               </Text>
+              {riddleQuestion.hint ? (
+                <Text style={{ fontSize: 13, fontStyle: 'italic', color: colors.textSecondary, textAlign: 'center', marginBottom: 4 }}>
+                  {riddleQuestion.hint}
+                </Text>
+              ) : null}
 
               <View style={styles.optionsList}>
                 {riddleOptions.map((opt, idx) => (
@@ -3656,7 +3789,7 @@ export default function LanguageCourseTool({
               onChangeText={setGrammarSearch}
               placeholder="Search grammar rules, tenses, or examples..."
               placeholderTextColor={colors.textMuted}
-              style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 6 }}
+              style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 6, paddingHorizontal: 0 }}
             />
             {grammarSearch.length > 0 && (
               <Pressable onPress={() => setGrammarSearch('')}>
@@ -3858,7 +3991,7 @@ export default function LanguageCourseTool({
               placeholder={`Search ${currentCourse?.config.name || ''} wisdom or meaning...`}
               placeholderTextColor={colors.textMuted}
               numberOfLines={1}
-              style={{ flex: 1, fontSize: 13, color: colors.text, paddingVertical: 6 }}
+              style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 6, paddingHorizontal: 0 }}
             />
             {proverbSearch.length > 0 && (
               <Pressable onPress={() => setProverbSearch('')}>

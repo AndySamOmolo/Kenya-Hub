@@ -66,20 +66,33 @@ export function CbcGradeAgeTool() {
     <View style={styles.toolWrap}>
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Child Year of Birth</Text>
-        <TextInput
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
             key={`ti-1-${theme.isDark ? "dark" : "light"}`}
             multiline={false}
             numberOfLines={1}
-          value={birthYear === "0" ? "" : birthYear}
-          onChangeText={(txt) => {
-            const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
-            setBirthYear(cleaned === "0" ? "" : cleaned);
-          }}
-          keyboardType="numeric"
-          placeholder="e.g. 2017"
-          placeholderTextColor={theme.textMuted}
-          style={styles.textInput}
-        />
+            value={birthYear === "0" ? "" : birthYear}
+            onChangeText={(txt) => {
+              const cleaned = txt.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "");
+              setBirthYear(cleaned === "0" ? "" : cleaned);
+            }}
+            keyboardType="numeric"
+            placeholder="e.g. 2017"
+            placeholderTextColor={theme.textMuted}
+            style={[styles.textInput, { paddingRight: 38 }]}
+          />
+          {birthYear !== "" && birthYear !== "0" && (
+            <Pressable
+              onPress={() => setBirthYear("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear birth year"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
         <ExpandablePillRow contentContainerStyle={[styles.pillSelector, { marginTop: 8 }]}>
           {["2022", "2020", "2018", "2016", "2014", "2011", "2009"].map((yr) => (
             <Pressable

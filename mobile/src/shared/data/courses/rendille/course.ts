@@ -2567,92 +2567,90 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "description": "Practice verified Rendille (Afi Ren'dille) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
         "words": [
-                {
-                        "target": "Nabad / Sooriyo",
-                        "source": "Hello / Peace",
-                        "pronunciation": "na-bad / soo-ri-yo"
-                },
-                {
-                        "target": "Waaq a ku barikoy",
-                        "source": "Thank you / Blessing",
-                        "pronunciation": "waaq a ku ba-ri-koy"
-                },
-                {
-                        "target": "Goob nabad!",
-                        "source": "Peace be upon the settlement!",
-                        "pronunciation": "goob na-bad"
-                },
-                {
-                        "target": "Aa nabad",
-                        "source": "It is peace / I am fine",
-                        "pronunciation": "aa na-bad"
-                },
-                {
-                        "target": "Ma nabad?",
-                        "source": "How are you? (Is it peace?)",
-                        "pronunciation": "ma na-bad"
-                },
-                {
-                        "target": "Aa",
-                        "source": "Yes",
-                        "pronunciation": "aa"
-                },
-                {
-                        "target": "Male / Ma-",
-                        "source": "No / Not",
-                        "pronunciation": "ma-le"
-                },
-                {
-                        "target": "Nabad gobsan gaal barako u keenti",
-                        "source": "Peace in the homestead brings blessing to the camels",
-                        "pronunciation": "nah-bahd gohb-sahn gaal bah-rah-koh oo kehn-tee"
-                },
-                {
-                        "target": "Ino gob oor ku hayna",
-                        "source": "We keep burden camel in our nomadic camp",
-                        "pronunciation": "ino gob oor ku hayna"
-                },
-                {
-                        "target": "Ino gob bilau ku hayna",
-                        "source": "We keep sword in our nomadic camp",
-                        "pronunciation": "ino gob bilau ku hayna"
-                },
-                {
-                        "target": "Ino gob gob ku hayna",
-                        "source": "We keep nomadic homestead in our nomadic camp",
-                        "pronunciation": "ino gob gob ku hayna"
-                },
-                {
-                        "target": "Ino gob daf ku hayna",
-                        "source": "We keep woven camel-loading mat in our nomadic camp",
-                        "pronunciation": "ino gob daf ku hayna"
-                }
+                  {
+                            "target": "Nabad",
+                            "source": "Hello / Peace",
+                            "pronunciation": "na-bad / soo-ri-yo"
+                  },
+                  {
+                            "target": "Goob nabad!",
+                            "source": "Peace be upon the settlement!",
+                            "pronunciation": "goob na-bad"
+                  },
+                  {
+                            "target": "Aa nabad",
+                            "source": "It is peace / I am fine",
+                            "pronunciation": "aa na-bad"
+                  },
+                  {
+                            "target": "Ma nabad?",
+                            "source": "How are you? (Is it peace?)",
+                            "pronunciation": "ma na-bad"
+                  },
+                  {
+                            "target": "Aa",
+                            "source": "Yes",
+                            "pronunciation": "aa"
+                  },
+                  {
+                            "target": "Male",
+                            "source": "No / Not",
+                            "pronunciation": "ma-le"
+                  },
+                  {
+                            "target": "huun",
+                            "source": "Food",
+                            "pronunciation": "hoon / sohr"
+                  },
+                  {
+                            "target": "haan",
+                            "source": "Milk",
+                            "pronunciation": "haan"
+                  },
+                  {
+                            "target": "jíid",
+                            "source": "Meat",
+                            "pronunciation": "jiid"
+                  },
+                  {
+                            "target": "subáh",
+                            "source": "Ghee / clarified butter",
+                            "pronunciation": "subah"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Sorriyo i sii",
-                        "source": "Please give me sorriyo"
-                },
-                {
-                        "target": "Ceel agtiisa Sorriyo ku aragnay",
-                        "source": "We saw sorriyo near the well"
-                },
-                {
-                        "target": "Naroshon i sii",
-                        "source": "Please give me naroshon"
-                },
-                {
-                        "target": "Ceel agtiisa Naroshon ku aragnay",
-                        "source": "We saw naroshon near the well"
-                },
-                {
-                        "target": "Burkeneji i sii",
-                        "source": "Please give me white sheep"
-                },
-                {
-                        "target": "Ceel agtiisa Burkeneji ku aragnay",
-                        "source": "We saw white sheep near the well"
-                }
+                  {
+                            "target": "Waaq a ku barikoy",
+                            "source": "Thank you / Blessing"
+                  },
+                  {
+                            "target": "Goob nabad!",
+                            "source": "Peace be upon the settlement!"
+                  },
+                  {
+                            "target": "Aa nabad",
+                            "source": "It is peace / I am fine"
+                  },
+                  {
+                            "target": "Ma nabad?",
+                            "source": "How are you? (Is it peace?)"
+                  },
+                  {
+                            "target": "Nabad gobsan gaal barako u keenti",
+                            "source": "Peace in the homestead brings blessing to the camels"
+                  },
+                  {
+                            "target": "caanó gaal",
+                            "source": "Fresh camel milk"
+                  },
+                  {
+                            "target": "Ino gob huun ku hayna",
+                            "source": "We keep food in our nomadic camp"
+                  },
+                  {
+                            "target": "Ino gob jíid ku hayna",
+                            "source": "We keep meat in our nomadic camp"
+                  }
         ]
 },
         {
@@ -2662,112 +2660,90 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Rendille (Afi Ren'dille) sentences for healthcare, transport, and community safety.",
         "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
         "words": [
-                {
-                        "target": "Ino gob Sorriyo ku hayna",
-                        "source": "We keep sorriyo in our nomadic camp",
-                        "pronunciation": "ino gob sorriyo ku hayna"
-                },
-                {
-                        "target": "Ino gob Naroshon ku hayna",
-                        "source": "We keep naroshon in our nomadic camp",
-                        "pronunciation": "ino gob naroshon ku hayna"
-                },
-                {
-                        "target": "Ino gob Burkeneji ku hayna",
-                        "source": "We keep white sheep in our nomadic camp",
-                        "pronunciation": "ino gob burkeneji ku hayna"
-                },
-                {
-                        "target": "Ino gob magaca ku hayna",
-                        "source": "We keep name in our nomadic camp",
-                        "pronunciation": "ino gob magaca ku hayna"
-                },
-                {
-                        "target": "Gatii Besa suug meeqa?",
-                        "source": "What is the value of money at the trading post?",
-                        "pronunciation": "gatii besa suug meeqa"
-                },
-                {
-                        "target": "Gatii Gaal suug meeqa?",
-                        "source": "What is the value of camel bridewealth at the trading post?",
-                        "pronunciation": "gatii gaal suug meeqa"
-                },
-                {
-                        "target": "Gatii Abaar suug meeqa?",
-                        "source": "What is the value of drought at the trading post?",
-                        "pronunciation": "gatii abaar suug meeqa"
-                },
-                {
-                        "target": "Gatii Dawo suug meeqa?",
-                        "source": "What is the value of medicine at the trading post?",
-                        "pronunciation": "gatii dawo suug meeqa"
-                },
-                {
-                        "target": "Gatii Jiro suug meeqa?",
-                        "source": "What is the value of sickness at the trading post?",
-                        "pronunciation": "gatii jiro suug meeqa"
-                },
-                {
-                        "target": "Gatii Nabad suug meeqa?",
-                        "source": "What is the value of peace at the trading post?",
-                        "pronunciation": "gatii nabad suug meeqa"
-                },
-                {
-                        "target": "Gatii Gargaar suug meeqa?",
-                        "source": "What is the value of help at the trading post?",
-                        "pronunciation": "gatii gargaar suug meeqa"
-                },
-                {
-                        "target": "Gatii bolkha suug meeqa?",
-                        "source": "What is the value of burn at the trading post?",
-                        "pronunciation": "gatii bolkha suug meeqa"
-                }
+                  {
+                            "target": "ków",
+                            "source": "One",
+                            "pronunciation": "kow"
+                  },
+                  {
+                            "target": "láma",
+                            "source": "Two",
+                            "pronunciation": "la-ma"
+                  },
+                  {
+                            "target": "líh",
+                            "source": "Six",
+                            "pronunciation": "lih"
+                  },
+                  {
+                            "target": "tomón",
+                            "source": "Ten",
+                            "pronunciation": "to-mon"
+                  },
+                  {
+                            "target": "áfar",
+                            "source": "Four",
+                            "pronunciation": "a-far"
+                  },
+                  {
+                            "target": "chán",
+                            "source": "Five",
+                            "pronunciation": "chan"
+                  },
+                  {
+                            "target": "saagál",
+                            "source": "Nine",
+                            "pronunciation": "saa-gal"
+                  },
+                  {
+                            "target": "séyyah",
+                            "source": "Three",
+                            "pronunciation": "sey-yah"
+                  },
+                  {
+                            "target": "tebá",
+                            "source": "Seven",
+                            "pronunciation": "te-ba"
+                  },
+                  {
+                            "target": "síet",
+                            "source": "Eight",
+                            "pronunciation": "si-et"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "magaca i sii",
-                        "source": "Please give me name"
-                },
-                {
-                        "target": "Ceel agtiisa magaca ku aragnay",
-                        "source": "We saw name near the well"
-                },
-                {
-                        "target": "Gatii Foor suug meeqa?",
-                        "source": "What is the value of camel caravan at the trading post?"
-                },
-                {
-                        "target": "Gatii Ceel suug meeqa?",
-                        "source": "What is the value of waterhole at the trading post?"
-                },
-                {
-                        "target": "Gatii Diid suug meeqa?",
-                        "source": "What is the value of desert plain at the trading post?"
-                },
-                {
-                        "target": "Gatii Gob suug meeqa?",
-                        "source": "What is the value of camp enclosure at the trading post?"
-                },
-                {
-                        "target": "Gatii Fog suug meeqa?",
-                        "source": "What is the value of far at the trading post?"
-                },
-                {
-                        "target": "Gatii Dhow suug meeqa?",
-                        "source": "What is the value of near at the trading post?"
-                },
-                {
-                        "target": "Gatii Suug suug meeqa?",
-                        "source": "What is the value of market at the trading post?"
-                },
-                {
-                        "target": "Gatii Besa suug meeqa?",
-                        "source": "What is the value of money at the trading post?"
-                },
-                {
-                        "target": "Gatii Gaal suug meeqa?",
-                        "source": "What is the value of camel bridewealth at the trading post?"
-                }
+                  {
+                            "target": "tomón icóú kow",
+                            "source": "Eleven (Ten plus one)"
+                  },
+                  {
+                            "target": "abbo yar",
+                            "source": "Father's brother (paternal uncle)"
+                  },
+                  {
+                            "target": "inán weyn",
+                            "source": "Firstborn son (heir to the camel herd)"
+                  },
+                  {
+                            "target": "Afi Ren'dille",
+                            "source": "Rendille language"
+                  },
+                  {
+                            "target": "gaal (sg. nyíro",
+                            "source": "Camel (herd)"
+                  },
+                  {
+                            "target": "Roob ma da'ay?",
+                            "source": "Has rain fallen in the pastures?"
+                  },
+                  {
+                            "target": "yar (nyirakh = young",
+                            "source": "Small"
+                  },
+                  {
+                            "target": "Gaal nabad ma yimi?",
+                            "source": "Did the camels return safely?"
+                  }
         ]
 }
     ]

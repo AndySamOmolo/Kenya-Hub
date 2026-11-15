@@ -3009,84 +3009,90 @@ export const MERU_UNITS: CourseUnit[] = [
         "description": "Practice verified Meru (Kĩmĩĩrũ) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
         "words": [
-                {
-                        "target": "Tigwa bwega, tharimwa",
-                        "source": "Goodbye, be blessed",
-                        "pronunciation": "tigwa bwe-ga tha-rimwa"
-                },
-                {
-                        "target": "Nĩwega mũno",
-                        "source": "Thank you very much",
-                        "pronunciation": "ni-we-ga mu-no"
-                },
-                {
-                        "target": "Ndekera",
-                        "source": "I am sorry / Forgive me",
-                        "pronunciation": "nde-ke-ra"
-                },
-                {
-                        "target": "Tigwa na wega / Thiĩ na wega",
-                        "source": "Stay well / Go well (Goodbye)",
-                        "pronunciation": "tigwa na we-ga / thii na we-ga"
-                },
-                {
-                        "target": "Muuga rũũkũ / Mũũga",
-                        "source": "Good morning (Kimeru)",
-                        "pronunciation": "muuga rũũkũ"
-                },
-                {
-                        "target": "Ũrĩ mwega? / Mũrĩ bega?",
-                        "source": "How are you? (Singular / Plural)",
-                        "pronunciation": "ũrĩ mwega"
-                },
-                {
-                        "target": "Ndĩ mwega / Tũrĩ bega",
-                        "source": "I am fine / We are fine",
-                        "pronunciation": "ndĩ mwega"
-                },
-                {
-                        "target": "Nĩ wega mũno",
-                        "source": "Thank you very much",
-                        "pronunciation": "nĩ wega mũno"
-                },
-                {
-                        "target": "Tũrĩmenyerera -rūārū mũciĩ gwetũ",
-                        "source": "We keep sick at our homestead",
-                        "pronunciation": "tũrĩmenyerera -rūārū mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Hā-hā mũciĩ gwetũ",
-                        "source": "We keep here at our homestead",
-                        "pronunciation": "tũrĩmenyerera hā-hā mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Hā-kūhī mũciĩ gwetũ",
-                        "source": "We keep near at our homestead",
-                        "pronunciation": "tũrĩmenyerera hā-kūhī mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Mu-gui mũciĩ gwetũ",
-                        "source": "We keep arrow at our homestead",
-                        "pronunciation": "tũrĩmenyerera mu-gui mũciĩ gwetũ"
-                }
+                  {
+                            "target": "Muuga!",
+                            "source": "Hello",
+                            "pronunciation": "muuga"
+                  },
+                  {
+                            "target": "Nĩwega",
+                            "source": "Thank you",
+                            "pronunciation": "niwega"
+                  },
+                  {
+                            "target": "Tigwa bwega, tharimwa",
+                            "source": "Goodbye, be blessed",
+                            "pronunciation": "tigwa bwe-ga tha-rimwa"
+                  },
+                  {
+                            "target": "Nĩwega mũno",
+                            "source": "Thank you very much",
+                            "pronunciation": "ni-we-ga mu-no"
+                  },
+                  {
+                            "target": "Ndekera",
+                            "source": "I am sorry / Forgive me",
+                            "pronunciation": "nde-ke-ra"
+                  },
+                  {
+                            "target": "Tigwa na wega",
+                            "source": "Stay well / Go well (Goodbye)",
+                            "pronunciation": "tigwa na we-ga / thii na we-ga"
+                  },
+                  {
+                            "target": "Muuga rũũkũ",
+                            "source": "Good morning (Kimeru)",
+                            "pronunciation": "muuga rũũkũ"
+                  },
+                  {
+                            "target": "Ũrĩ mwega?",
+                            "source": "How are you? (Singular / Plural)",
+                            "pronunciation": "ũrĩ mwega"
+                  },
+                  {
+                            "target": "Ndĩ mwega",
+                            "source": "I am fine / We are fine",
+                            "pronunciation": "ndĩ mwega"
+                  },
+                  {
+                            "target": "Gī-kwa",
+                            "source": "Yam",
+                            "pronunciation": "gi-kwa"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Tigwa bwega, tharimwa",
-                        "source": "Goodbye, be blessed"
-                },
-                {
-                        "target": "Nĩwega mũno",
-                        "source": "Thank you very much"
-                },
-                {
-                        "target": "Ndekera",
-                        "source": "I am sorry / Forgive me"
-                },
-                {
-                        "target": "Tigwa na wega / Thiĩ na wega",
-                        "source": "Stay well / Go well (Goodbye)"
-                }
+                  {
+                            "target": "Tigwa bwega, tharimwa",
+                            "source": "Goodbye, be blessed"
+                  },
+                  {
+                            "target": "Nĩwega mũno",
+                            "source": "Thank you very much"
+                  },
+                  {
+                            "target": "Tigwa na wega",
+                            "source": "Stay well / Go well (Goodbye)"
+                  },
+                  {
+                            "target": "Muuga rũũkũ",
+                            "source": "Good morning (Kimeru)"
+                  },
+                  {
+                            "target": "Ũrĩ mwega?",
+                            "source": "How are you? (Singular / Plural)"
+                  },
+                  {
+                            "target": "Ndĩ mwega",
+                            "source": "I am fine / We are fine"
+                  },
+                  {
+                            "target": "Cūmbī. I-gāta",
+                            "source": "Salt"
+                  },
+                  {
+                            "target": "N-g'aragu. M-būta",
+                            "source": "Hunger"
+                  }
         ]
 },
         {
@@ -3096,104 +3102,90 @@ export const MERU_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Meru (Kĩmĩĩrũ) sentences for healthcare, transport, and community safety.",
         "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
         "words": [
-                {
-                        "target": "Tũrĩmenyerera Mw-ato. Gi-taru mũciĩ gwetũ",
-                        "source": "We keep canoe at our homestead",
-                        "pronunciation": "tũrĩmenyerera mw-ato gi-taru mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Tama mũciĩ gwetũ",
-                        "source": "We keep cloth at our homestead",
-                        "pronunciation": "tũrĩmenyerera tama mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Kī-roto mũciĩ gwetũ",
-                        "source": "We keep dream at our homestead",
-                        "pronunciation": "tũrĩmenyerera kī-roto mũciĩ gwetũ"
-                },
-                {
-                        "target": "Tũrĩmenyerera Ngoma mũciĩ gwetũ",
-                        "source": "We keep ghost at our homestead",
-                        "pronunciation": "tũrĩmenyerera ngoma mũciĩ gwetũ"
-                },
-                {
-                        "target": "Thogora ya Ndagĩtarĩ thoko nĩ igana?",
-                        "source": "How much is doctor at the market?",
-                        "pronunciation": "thogora ya ndagĩtarĩ thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya Mũrimũ thoko nĩ igana?",
-                        "source": "How much is sickness at the market?",
-                        "pronunciation": "thogora ya mũrimũ thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya Kiama kia Njũrĩ Ncheke thoko nĩ igana?",
-                        "source": "How much is court at the market?",
-                        "pronunciation": "thogora ya kiama kia njũrĩ ncheke thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya Thayũ thoko nĩ igana?",
-                        "source": "How much is peace at the market?",
-                        "pronunciation": "thogora ya thayũ thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya Ũteithio thoko nĩ igana?",
-                        "source": "How much is help at the market?",
-                        "pronunciation": "thogora ya ũteithio thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya mbuŋgɛ thoko nĩ igana?",
-                        "source": "How much is parliament at the market?",
-                        "pronunciation": "thogora ya mbuŋg thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya ða: thoko nĩ igana?",
-                        "source": "How much is watch at the market?",
-                        "pronunciation": "thogora ya ða thoko nĩ igana"
-                },
-                {
-                        "target": "Thogora ya G-itigirra thoko nĩ igana?",
-                        "source": "How much is fear at the market?",
-                        "pronunciation": "thogora ya g-itigirra thoko nĩ igana"
-                }
+                  {
+                            "target": "ikũmi",
+                            "source": "Ten",
+                            "pronunciation": "ikumi"
+                  },
+                  {
+                            "target": "ithanthatu",
+                            "source": "Six",
+                            "pronunciation": "ee-thahn-thah-too"
+                  },
+                  {
+                            "target": "iiri",
+                            "source": "Two",
+                            "pronunciation": "ee-ree / bah-ee-ree"
+                  },
+                  {
+                            "target": "imwe",
+                            "source": "One",
+                            "pronunciation": "ee-mweh"
+                  },
+                  {
+                            "target": "kenda",
+                            "source": "Nine",
+                            "pronunciation": "kehn-dah"
+                  },
+                  {
+                            "target": "ithano",
+                            "source": "Five",
+                            "pronunciation": "ee-thah-noh"
+                  },
+                  {
+                            "target": "inya",
+                            "source": "Four",
+                            "pronunciation": "ee-nyah"
+                  },
+                  {
+                            "target": "inyanya",
+                            "source": "Eight",
+                            "pronunciation": "ee-nyah-nyah"
+                  },
+                  {
+                            "target": "mũgwanja",
+                            "source": "Seven",
+                            "pronunciation": "moo-gwahn-jah"
+                  },
+                  {
+                            "target": "ithatu",
+                            "source": "Three",
+                            "pronunciation": "ee-thah-too"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Thogora ya Dola ya Austrĩlia thoko nĩ igana?",
-                        "source": "How much is australian dollar at the market?"
-                },
-                {
-                        "target": "Thogora ya thoko thoko nĩ igana?",
-                        "source": "How much is market at the market?"
-                },
-                {
-                        "target": "Thogora ya kĩbũrĩ thoko nĩ igana?",
-                        "source": "How much is zero at the market?"
-                },
-                {
-                        "target": "Thogora ya mbɛsa thoko nĩ igana?",
-                        "source": "How much is money at the market?"
-                },
-                {
-                        "target": "Thogora ya duka thoko nĩ igana?",
-                        "source": "How much is shop at the market?"
-                },
-                {
-                        "target": "Thogora ya sito: thoko nĩ igana?",
-                        "source": "How much is store at the market?"
-                },
-                {
-                        "target": "Thogora ya Thibitarĩ thoko nĩ igana?",
-                        "source": "How much is hospital at the market?"
-                },
-                {
-                        "target": "Thogora ya Ndagĩtarĩ thoko nĩ igana?",
-                        "source": "How much is doctor at the market?"
-                },
-                {
-                        "target": "Thogora ya Mũrimũ thoko nĩ igana?",
-                        "source": "How much is sickness at the market?"
-                }
+                  {
+                            "target": "Mī-rōnggo ī-nā",
+                            "source": "Forty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-tāno",
+                            "source": "Fifty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-gīrī",
+                            "source": "Twenty"
+                  },
+                  {
+                            "target": "Mī-rōnggo ī-tātū",
+                            "source": "Thirty"
+                  },
+                  {
+                            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+                            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)"
+                  },
+                  {
+                            "target": "mũrũme (pl. arũme",
+                            "source": "Man"
+                  },
+                  {
+                            "target": "mwana (pl. aana",
+                            "source": "Child"
+                  },
+                  {
+                            "target": "mũka (pl. aka",
+                            "source": "Woman"
+                  }
         ]
 }
     ]

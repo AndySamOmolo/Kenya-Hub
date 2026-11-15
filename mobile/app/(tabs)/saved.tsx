@@ -201,6 +201,8 @@ export default function SavedScreen() {
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+        overScrollMode="always"
       >
         {tools.length > 0 ? (
           <>

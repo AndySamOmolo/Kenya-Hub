@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import tenantData from "@/data/tenant-rights-data.json";
@@ -87,41 +88,95 @@ TAKE NOTICE that failure to transfer the full sum within seven (7) days from the
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="block text-xs font-semibold text-text-muted mb-1">Landlord / Agency Name</label>
-                <input
-                  type="text"
-                  value={landlordName}
-                  onChange={(e) => setLandlordName(e.target.value)}
-                  placeholder="e.g. Sunrise Properties Ltd"
-                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={landlordName}
+                    onChange={(e) => setLandlordName(e.target.value)}
+                    placeholder="e.g. Sunrise Properties Ltd"
+                    className="w-full pl-3 pr-9 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                    style={{ paddingRight: "2.25rem" }}
+                  />
+                  {landlordName && (
+                    <button
+                      type="button"
+                      onClick={() => setLandlordName("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear landlord name"
+                    >
+                      <X className="w-3 h-3 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-semibold text-text-muted mb-1">Apartment / House &amp; Estate</label>
-                <input
-                  type="text"
-                  value={premisesLocation}
-                  onChange={(e) => setPremisesLocation(e.target.value)}
-                  placeholder="e.g. House B4, Kilimani"
-                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={premisesLocation}
+                    onChange={(e) => setPremisesLocation(e.target.value)}
+                    placeholder="e.g. House B4, Kilimani"
+                    className="w-full pl-3 pr-9 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                    style={{ paddingRight: "2.25rem" }}
+                  />
+                  {premisesLocation && (
+                    <button
+                      type="button"
+                      onClick={() => setPremisesLocation("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear premises location"
+                    >
+                      <X className="w-3 h-3 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-semibold text-text-muted mb-1">Withheld Deposit Amount (KES)</label>
-                <input
-                  type="text"
-                  value={depositAmount}
-                  onChange={(e) => setDepositAmount(e.target.value.replace(/[^0-9]/g, ""))}
-                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={depositAmount}
+                    placeholder="0"
+                    onChange={(e) => setDepositAmount(e.target.value.replace(/[^0-9]/g, ""))}
+                    className="w-full pl-3 pr-9 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                    style={{ paddingRight: "2.25rem" }}
+                  />
+                  {depositAmount && (
+                    <button
+                      type="button"
+                      onClick={() => setDepositAmount("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear deposit amount"
+                    >
+                      <X className="w-3 h-3 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
               <div>
                 <label className="block text-xs font-semibold text-text-muted mb-1">Days Elapsed Since Vacating</label>
-                <input
-                  type="text"
-                  value={daysDelayed}
-                  onChange={(e) => setDaysDelayed(e.target.value.replace(/[^0-9]/g, ""))}
-                  className="w-full px-3 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={daysDelayed}
+                    placeholder="0"
+                    onChange={(e) => setDaysDelayed(e.target.value.replace(/[^0-9]/g, ""))}
+                    className="w-full pl-3 pr-9 py-2 rounded-lg border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                    style={{ paddingRight: "2.25rem" }}
+                  />
+                  {daysDelayed && (
+                    <button
+                      type="button"
+                      onClick={() => setDaysDelayed("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                      aria-label="Clear days delayed"
+                    >
+                      <X className="w-3 h-3 text-text-muted hover:text-gold shrink-0" />
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
 

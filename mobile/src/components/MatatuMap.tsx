@@ -307,7 +307,10 @@ export function MatatuMap({
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.schematicScroll}
-         bounces={true} alwaysBounceHorizontal={true} overScrollMode="always">
+          bounces={true}
+          alwaysBounceHorizontal={true}
+          overScrollMode="always"
+        >
           {safeStages.map((stage, idx) => {
             const isFirst = idx === 0;
             const isLast = idx === safeStages.length - 1;

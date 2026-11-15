@@ -3803,14 +3803,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
           },
           {
-            "target": "Lango or Kidi",
-            "source": "Somerset Nile, p. 125",
-            "pronunciation": "lango-or-kidi"
+            "target": "Oromo / Orma",
+            "source": "The Oromo / Borana people",
+            "pronunciation": "o-ro-mo"
           },
           {
-            "target": "Reinisch Cluster I (p. 119): A. Bishári (To'bedauie)",
-            "source": "Prof. Leo Reinisch's 5-language Lowland East Cushitic cluster in the Ethiopic",
-            "pronunciation": "bi-sha-ri / sa-ho / dan-ka-li / so-ma-li / gal-la",
+            "target": "dubbii / afaan",
+            "source": "Speech / language / matter",
+            "pronunciation": "dub-bii",
             "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
           },
           {
@@ -3844,9 +3844,9 @@ export const BORANA_UNITS: CourseUnit[] = [
         "tips": "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
         "words": [
           {
-            "target": "1–2 Dob'a, Assebo (SE of Tigrè)",
-            "source": "Tribes 1–20 in Isenberg's 1840 Table",
-            "pronunciation": "12-dob'a",
+            "target": "biyya / lafa",
+            "source": "Country / homeland / earth",
+            "pronunciation": "biy-ya",
             "hint": "Isenberg in Krapf (1840, pp. iv–v)"
           },
           {
@@ -3927,9 +3927,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1840, Sect. IV.VI, pp. 3–4)"
           },
           {
-            "target": "Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!",
-            "source": "Declension of Noun Substantives in Krapf (1840, Sect. V, p. 4)",
-            "pronunciation": "sing-n-gofta",
+            "target": "gooftaa",
+            "source": "Lord / master",
+            "pronunciation": "goof-taa",
             "hint": "Krapf (1840, Sect. V, p. 4)"
           },
           {
@@ -4070,96 +4070,90 @@ export const BORANA_UNITS: CourseUnit[] = [
         "description": "Practice verified Borana (Oromo) parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
         "words": [
-                {
-                        "target": "Oolte nagaa? / Akkam oolte? / Ati naga olte har'a?",
-                        "source": "Good afternoon / Hast thou passed this day in peace?",
-                        "pronunciation": "ool-te na-gaa / a-ti na-ga ol-te har-a"
-                },
-                {
-                        "target": "Naga ambulte.",
-                        "source": "Good morning . . . . . . . . . . . . . . .",
-                        "pronunciation": "naga-ambulte"
-                },
-                {
-                        "target": "Bulla bulte naguma.",
-                        "source": "Thanks to God! . . . . . . . . . . . . .",
-                        "pronunciation": "bulla-bulte-naguma"
-                },
-                {
-                        "target": "Anda atam tshirte ?",
-                        "source": "How are you to-day ? . . . . . . . . .",
-                        "pronunciation": "anda-atam-tshirte"
-                },
-                {
-                        "target": "lakíse; kase; gate",
-                        "source": "Pardon, v. a",
-                        "pronunciation": "lakíse"
-                },
-                {
-                        "target": "kasa",
-                        "source": "Pardon, s",
-                        "pronunciation": "kasa"
-                },
-                {
-                        "target": "nágaia; arára",
-                        "source": "Peace, s",
-                        "pronunciation": "nágaia"
-                },
-                {
-                        "target": "gelatéfate",
-                        "source": "Thank, v. a",
-                        "pronunciation": "gelatéfate"
-                }
+                  {
+                            "target": "hófu",
+                            "source": "Greet",
+                            "pronunciation": "hofu"
+                  },
+                  {
+                            "target": "nágaia",
+                            "source": "Peace",
+                            "pronunciation": "nagaia"
+                  },
+                  {
+                            "target": "gelatéfate",
+                            "source": "Thank",
+                            "pronunciation": "gelatefate"
+                  },
+                  {
+                            "target": "ébise",
+                            "source": "Bless",
+                            "pronunciation": "ebise"
+                  },
+                  {
+                            "target": "hófu dáme",
+                            "source": "Salute",
+                            "pronunciation": "hofu dame"
+                  },
+                  {
+                            "target": "lakíse",
+                            "source": "Pardon",
+                            "pronunciation": "lakise"
+                  },
+                  {
+                            "target": "gamadjíse",
+                            "source": "Please",
+                            "pronunciation": "gamadjise"
+                  },
+                  {
+                            "target": "Baga nagaan dhufte",
+                            "source": "Welcome",
+                            "pronunciation": "ba-ga na-gaan dhuf-te"
+                  },
+                  {
+                            "target": "baza",
+                            "source": "Forgive",
+                            "pronunciation": "ba-za"
+                  },
+                  {
+                            "target": "salāmata",
+                            "source": "Salutation",
+                            "pronunciation": "sa-la-ma-ta"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Nuti waliin bafad'a barbaanna",
-                        "source": "We want to pluck together"
-                },
-                {
-                        "target": "Nuti waliin d'abad'a barbaanna",
-                        "source": "We want to stand together"
-                },
-                {
-                        "target": "Nuti waliin gonogona barbaanna",
-                        "source": "We want to twist together"
-                },
-                {
-                        "target": "Nuti waliin furra barbaanna",
-                        "source": "We want to untie together"
-                },
-                {
-                        "target": "Nuti waliin hoqiza barbaanna",
-                        "source": "We want to vomit together"
-                },
-                {
-                        "target": "Nuti waliin woltaie barbaanna",
-                        "source": "We want to agree together"
-                },
-                {
-                        "target": "Nuti waliin hirriba kaie barbaanna",
-                        "source": "We want to awake together"
-                },
-                {
-                        "target": "Nuti waliin mitshe. refl. dikate barbaanna",
-                        "source": "We want to bathe together"
-                },
-                {
-                        "target": "Nuti waliin itshare barbaanna",
-                        "source": "We want to build together"
-                },
-                {
-                        "target": "Nuti waliin kabe barbaanna",
-                        "source": "We want to catch together"
-                },
-                {
-                        "target": "Nuti waliin kufae barbaanna",
-                        "source": "We want to cough together"
-                },
-                {
-                        "target": "Nuti waliin lakăie barbaanna",
-                        "source": "We want to count together"
-                }
+                  {
+                            "target": "feiuma tshedde",
+                            "source": "Greet"
+                  },
+                  {
+                            "target": "hófu dáme",
+                            "source": "Salute"
+                  },
+                  {
+                            "target": "hahafu tshedde, ararame",
+                            "source": "Pardon"
+                  },
+                  {
+                            "target": "gamade, gamatshise, gamitshe",
+                            "source": "Please"
+                  },
+                  {
+                            "target": "Baga nagaan dhufte",
+                            "source": "Welcome"
+                  },
+                  {
+                            "target": "Nagaa Booranaa!",
+                            "source": "Peace of the Borana! (formal assembly greeting)"
+                  },
+                  {
+                            "target": "Nagaiti buli!",
+                            "source": "Good night / Sleep in peace"
+                  },
+                  {
+                            "target": "Nagaa qabdaa?",
+                            "source": "How are you? (Do you have peace?)"
+                  }
         ]
 },
         {
@@ -4169,54 +4163,90 @@ export const BORANA_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Borana (Oromo) sentences for healthcare, transport, and community safety.",
         "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
         "words": [
-                {
-                        "target": "sagal (zagala)",
-                        "source": "Nine",
-                        "pronunciation": "sa-gal"
-                },
-                {
-                        "target": "ṣān",
-                        "source": "Five",
-                        "pronunciation": "san"
-                },
-                {
-                        "target": "afur",
-                        "source": "Four",
-                        "pronunciation": "a-fur"
-                },
-                {
-                        "target": "takáti; guia tóko",
-                        "source": "Once",
-                        "pronunciation": "takati"
-                },
-                {
-                        "target": "tchabnana",
-                        "source": "Half",
-                        "pronunciation": "tchabna-na"
-                },
-                {
-                        "target": "lamma",
-                        "source": "Both",
-                        "pronunciation": "lam-ma"
-                }
+                  {
+                            "target": "tokko",
+                            "source": "One",
+                            "pronunciation": "tok-ko"
+                  },
+                  {
+                            "target": "lama",
+                            "source": "Two",
+                            "pronunciation": "la-ma"
+                  },
+                  {
+                            "target": "jaha",
+                            "source": "Six",
+                            "pronunciation": "ja-ha / dya"
+                  },
+                  {
+                            "target": "kudan",
+                            "source": "Ten",
+                            "pronunciation": "ku-dan"
+                  },
+                  {
+                            "target": "afur",
+                            "source": "Four",
+                            "pronunciation": "a-fur"
+                  },
+                  {
+                            "target": "shan",
+                            "source": "Five",
+                            "pronunciation": "shan"
+                  },
+                  {
+                            "target": "sagal",
+                            "source": "Nine",
+                            "pronunciation": "sa-gal"
+                  },
+                  {
+                            "target": "takáti",
+                            "source": "Once",
+                            "pronunciation": "takati"
+                  },
+                  {
+                            "target": "tchabnana",
+                            "source": "Half",
+                            "pronunciation": "tchabna-na"
+                  },
+                  {
+                            "target": "lamma",
+                            "source": "Both",
+                            "pronunciation": "lam-ma"
+                  }
         ],
         "sentences": [
-                {
-                        "target": "Nuti waliin dokse barbaanna",
-                        "source": "We want to cover together"
-                },
-                {
-                        "target": "Nuti waliin sirbe barbaanna",
-                        "source": "We want to dance together"
-                },
-                {
-                        "target": "Nuti waliin duge barbaanna",
-                        "source": "We want to drink together"
-                },
-                {
-                        "target": "sagal (zagala)",
-                        "source": "Nine"
-                }
+                  {
+                            "target": "gafa toko",
+                            "source": "Once"
+                  },
+                  {
+                            "target": "tchabnana, tchamnana, tchaba",
+                            "source": "Half"
+                  },
+                  {
+                            "target": "toko, kan dura",
+                            "source": "First"
+                  },
+                  {
+                            "target": "sādi. Three times, gaff' sādi",
+                            "source": "Three"
+                  },
+                  {
+                            "target": "gafa lama",
+                            "source": "Twice"
+                  },
+                  {
+                            "target": "detja lama",
+                            "source": "Double"
+                  },
+                  {
+                            "target": "kuda lamma",
+                            "source": "Twelve"
+                  },
+                  {
+                            "target": "gafa zadi",
+                            "source": "Thrice"
+                  }
         ]
 }
     ]

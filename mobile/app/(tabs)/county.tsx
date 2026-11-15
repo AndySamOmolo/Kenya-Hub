@@ -861,6 +861,8 @@ export default function CountyScreen() {
           ref={scrollRef}
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
+          keyboardShouldPersistTaps="handled"
+          overScrollMode="always"
         >
           {/* TAB 5: COMPARE 2 COUNTIES WITH SEARCHABLE BOTTOM-SHEET PICKER & PROPORTION BARS (UX-12) */}
           {countyA && countyB && (
@@ -1298,9 +1300,11 @@ export default function CountyScreen() {
           keyExtractor={(item) => `${activeTab}-${item.code}`}
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
-          initialNumToRender={6}
+          keyboardShouldPersistTaps="handled"
+          overScrollMode="always"
+          initialNumToRender={8}
           maxToRenderPerBatch={8}
-          windowSize={5}
+          windowSize={7}
           removeClippedSubviews={Platform.OS === "android"}
           ListHeaderComponent={
             <>
@@ -1600,11 +1604,14 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    minWidth: 0,
     height: "100%",
     marginLeft: 8,
+    marginRight: 6,
     fontFamily: "Inter_500Medium",
     fontSize: 13,
     paddingVertical: 0,
+    paddingHorizontal: 0,
     textAlignVertical: "center",
     includeFontPadding: false,
   },

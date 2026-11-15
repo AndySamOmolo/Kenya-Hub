@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Copy, Check } from "lucide-react";
+import { Copy, Check, X } from "lucide-react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import CustomSelect from "@/components/ui/CustomSelect";
 
@@ -202,28 +202,54 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="contact-name" className="text-xs text-text-muted block mb-1">Your Name *</label>
-                  <input
-                    id="contact-name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="e.g. Wanjiku Kamau"
-                    className="input-field text-sm"
-                  />
+                  <div className="relative">
+                    <input
+                      id="contact-name"
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="e.g. Wanjiku Kamau"
+                      className="input-field text-sm pr-10!"
+                      style={{ paddingRight: "2.5rem" }}
+                    />
+                    {formData.name && (
+                      <button
+                        type="button"
+                        onClick={() => setFormData({ ...formData, name: "" })}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                        aria-label="Clear name"
+                      >
+                        <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                      </button>
+                    )}
+                  </div>
                 </div>
 
                 <div>
                   <label htmlFor="contact-email" className="text-xs text-text-muted block mb-1">Email Address *</label>
-                  <input
-                    id="contact-email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="e.g. wanjiku@example.com"
-                    className="input-field text-sm"
-                  />
+                  <div className="relative">
+                    <input
+                      id="contact-email"
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="e.g. wanjiku@example.com"
+                      className="input-field text-sm pr-10!"
+                      style={{ paddingRight: "2.5rem" }}
+                    />
+                    {formData.email && (
+                      <button
+                        type="button"
+                        onClick={() => setFormData({ ...formData, email: "" })}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                        aria-label="Clear email"
+                      >
+                        <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
 

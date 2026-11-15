@@ -1,5 +1,5 @@
 import type { WordPair, CourseUnit } from "@/data/courses/types";
-import { getPrimaryForm, cleanExerciseText } from "@/lib/learn-engine";
+import { getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair } from "@/lib/learn-engine";
 
 export interface GameProps {
   allWords: WordPair[];
@@ -24,30 +24,28 @@ export function pickRandom<T>(arr: T[]): T {
 /** Gather and normalize all words from all units/skills for mini-games */
 export function getAllWords(units: CourseUnit[]): WordPair[] {
   const words: WordPair[] = [];
+  const seenTargets = new Set<string>();
+  const seenSources = new Set<string>();
+
   for (const unit of units) {
     for (const skill of unit.skills) {
       for (const word of skill.words) {
+        if (!isCleanLexicalWordPair(word.target, word.source)) continue;
         const target = getPrimaryForm(word.target).trim();
-        const source = getPrimaryForm(word.source).trim();
-        if (
-          target.length >= 2 &&
-          target.length <= 36 &&
-          source.length > 0 &&
-          source.length <= 60 &&
-          !source.includes(":") &&
-          !target.includes("→") &&
-          !target.startsWith("-")
-        ) {
+        const source = cleanExerciseText(getPrimaryForm(word.source)).trim();
+        const tKey = target.toLowerCase();
+        const sKey = source.toLowerCase();
+        if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
+          seenTargets.add(tKey);
+          seenSources.add(sKey);
           words.push({
             ...word,
             target,
-            source: cleanExerciseText(source),
+            source,
           });
         }
       }
     }
   }
-  return Array.from(
-    new Map(words.map((word) => [`${word.target.toLowerCase()}:${word.source.toLowerCase()}`, word])).values()
-  );
+  return words;
 }

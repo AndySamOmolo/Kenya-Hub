@@ -854,27 +854,43 @@ export default function LessonPlayer({
                   ? `Answer in ${languageName}`
                   : "Answer in English"}
               </label>
-              <input
-                id="lesson-answer"
-                ref={inputRef}
-                value={userAnswer}
-                onChange={(e) => setUserAnswer(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    if (isChecked) handleContinue();
-                    else if (canCheck) handleCheck();
+              <div className="relative">
+                <input
+                  id="lesson-answer"
+                  ref={inputRef}
+                  value={userAnswer}
+                  onChange={(e) => setUserAnswer(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      if (isChecked) handleContinue();
+                      else if (canCheck) handleCheck();
+                    }
+                  }}
+                  disabled={isChecked}
+                  placeholder={
+                    exercise.type === "fill_blank"
+                      ? "Type the missing answer..."
+                      : exercise.type === "translate_to_target"
+                      ? `Type in ${languageName}...`
+                      : "Type in English..."
                   }
-                }}
-                disabled={isChecked}
-                placeholder={
-                  exercise.type === "fill_blank"
-                    ? "Type the missing answer..."
-                    : exercise.type === "translate_to_target"
-                    ? `Type in ${languageName}...`
-                    : "Type in English..."
-                }
-                className="input-field w-full text-base sm:text-lg"
-              />
+                  className="input-field w-full text-base sm:text-lg pr-11!"
+                  style={{ paddingRight: "2.75rem" }}
+                />
+                {userAnswer && !isChecked && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setUserAnswer("");
+                      inputRef.current?.focus();
+                    }}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear answer"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
               {exercise.hint && !showHint && !isChecked && (
                 <button
                   onClick={() => {

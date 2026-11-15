@@ -52,7 +52,7 @@ export const TAITA_PROVERBS: ProverbItem[] = [
     "languageName": "Taita (Kidawida / Kisagalla)",
     "indigenous": "Kazi mbili zam'lema fisi.",
     "literalTranslation": "Two occupations were too many for the hyena (lit. were heavy on the hyena).",
-    "meaning": "Cp. Nyika and other proverbs, § 647b, etc.",
+    "meaning": "Proverbial teaching: 'Two occupations were too many for the hyena' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Nyika and other proverbs, § 647b, etc.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Taita Proverb #665"
   },

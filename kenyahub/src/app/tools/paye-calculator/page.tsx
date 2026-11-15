@@ -2,7 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo, useEffect } from "react";
-import { Copy, Check, Share2 } from "lucide-react";
+import { Copy, Check, Share2, X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import payeData from "@/data/paye-bands.json";
@@ -305,20 +305,33 @@ export default function PAYECalculatorPage() {
               <label className="block text-sm font-medium text-text-secondary mb-2">
                 Monthly Gross Salary (KES)
               </label>
-              <input
-                type="number"
-                inputMode="numeric"
-                value={grossInput === 0 ? "" : grossInput}
-                onChange={(e) => {
-                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                  setGrossInput(raw === "" ? 0 : Math.max(0, Number(raw)));
-                }}
-                placeholder="0"
-                className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
-                min={0}
-                step={1000}
-                id="gross-salary-input"
-              />
+              <div className="relative">
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  value={grossInput === 0 ? "" : grossInput}
+                  onChange={(e) => {
+                    const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                    setGrossInput(raw === "" ? 0 : Math.max(0, Number(raw)));
+                  }}
+                  placeholder="0"
+                  className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                  style={{ paddingRight: "2.75rem" }}
+                  min={0}
+                  step={1000}
+                  id="gross-salary-input"
+                />
+                {grossInput > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setGrossInput(0)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear gross salary"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
               <input
                 type="range"
                 min={0}
@@ -351,19 +364,32 @@ export default function PAYECalculatorPage() {
               <label className="block text-sm font-medium text-text-secondary mb-2">
                 Desired Monthly Net Take-Home Pay in Bank (KES)
               </label>
-              <input
-                type="number"
-                inputMode="numeric"
-                value={targetNetInput === 0 ? "" : targetNetInput}
-                onChange={(e) => {
-                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                  setTargetNetInput(raw === "" ? 0 : Math.max(0, Number(raw)));
-                }}
-                placeholder="0"
-                className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)]"
-                min={0}
-                step={1000}
-              />
+              <div className="relative">
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  value={targetNetInput === 0 ? "" : targetNetInput}
+                  onChange={(e) => {
+                    const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                    setTargetNetInput(raw === "" ? 0 : Math.max(0, Number(raw)));
+                  }}
+                  placeholder="0"
+                  className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                  style={{ paddingRight: "2.75rem" }}
+                  min={0}
+                  step={1000}
+                />
+                {targetNetInput > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setTargetNetInput(0)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear net salary"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
               <p className="text-xs text-gold mt-2">
                 Required Gross Salary to Negotiate:{" "}
                 <strong>{fmt(results.gross)}</strong> ({showAnnual ? "annual" : "monthly"})
@@ -388,49 +414,88 @@ export default function PAYECalculatorPage() {
                   <label className="block text-xs text-text-secondary mb-1">
                     Voluntary Pension (KES/mo, max 30k tax-free)
                   </label>
-                  <input
-                    type="number"
-                    inputMode="numeric"
-                    value={pensionContribution === 0 ? "" : pensionContribution}
-                    onChange={(e) => {
-                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                      setPensionContribution(raw === "" ? 0 : Math.max(0, Number(raw)));
-                    }}
-                    placeholder="0"
-                    className="input-field text-sm"
-                  />
+                  <div className="relative">
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      value={pensionContribution === 0 ? "" : pensionContribution}
+                      onChange={(e) => {
+                        const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                        setPensionContribution(raw === "" ? 0 : Math.max(0, Number(raw)));
+                      }}
+                      placeholder="0"
+                      className="input-field text-sm pr-10!"
+                      style={{ paddingRight: "2.5rem" }}
+                    />
+                    {pensionContribution > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setPensionContribution(0)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                        aria-label="Clear pension contribution"
+                      >
+                        <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                      </button>
+                    )}
+                  </div>
                 </div>
                 <div>
                   <label className="block text-xs text-text-secondary mb-1">
                     Mortgage Interest (KES/mo, max 30k deductible)
                   </label>
-                  <input
-                    type="number"
-                    inputMode="numeric"
-                    value={mortgageInterest === 0 ? "" : mortgageInterest}
-                    onChange={(e) => {
-                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                      setMortgageInterest(raw === "" ? 0 : Math.max(0, Number(raw)));
-                    }}
-                    placeholder="0"
-                    className="input-field text-sm"
-                  />
+                  <div className="relative">
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      value={mortgageInterest === 0 ? "" : mortgageInterest}
+                      onChange={(e) => {
+                        const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                        setMortgageInterest(raw === "" ? 0 : Math.max(0, Number(raw)));
+                      }}
+                      placeholder="0"
+                      className="input-field text-sm pr-10!"
+                      style={{ paddingRight: "2.5rem" }}
+                    />
+                    {mortgageInterest > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setMortgageInterest(0)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                        aria-label="Clear mortgage interest"
+                      >
+                        <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                      </button>
+                    )}
+                  </div>
                 </div>
                 <div>
                   <label className="block text-xs text-text-secondary mb-1">
                     Life/Education Insurance Premium (15% relief)
                   </label>
-                  <input
-                    type="number"
-                    inputMode="numeric"
-                    value={insurancePremium === 0 ? "" : insurancePremium}
-                    onChange={(e) => {
-                      const raw = e.target.value.replace(/^0+(?=\d)/, "");
-                      setInsurancePremium(raw === "" ? 0 : Math.max(0, Number(raw)));
-                    }}
-                    placeholder="0"
-                    className="input-field text-sm"
-                  />
+                  <div className="relative">
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      value={insurancePremium === 0 ? "" : insurancePremium}
+                      onChange={(e) => {
+                        const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                        setInsurancePremium(raw === "" ? 0 : Math.max(0, Number(raw)));
+                      }}
+                      placeholder="0"
+                      className="input-field text-sm pr-10!"
+                      style={{ paddingRight: "2.5rem" }}
+                    />
+                    {insurancePremium > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setInsurancePremium(0)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                        aria-label="Clear insurance premium"
+                      >
+                        <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                      </button>
+                    )}
+                  </div>
                 </div>
                 <label className="sm:col-span-3 flex items-center gap-2 text-xs text-text-secondary cursor-pointer">
                   <input

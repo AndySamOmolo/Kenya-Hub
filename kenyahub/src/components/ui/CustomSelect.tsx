@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect, useMemo } from "react";
-import { ChevronDown, Check, Search } from "lucide-react";
+import { ChevronDown, Check, Search, X } from "lucide-react";
 
 export interface SelectOption {
   value: string;
@@ -225,8 +225,22 @@ export default function CustomSelect({
                   setHighlightedIndex(0);
                 }}
                 placeholder="Filter options..."
-                className="w-full bg-transparent text-xs text-text-primary placeholder:text-text-muted outline-none"
+                className="flex-1 min-w-0 bg-transparent text-xs text-text-primary placeholder:text-text-muted outline-none"
               />
+              {filterText && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFilterText("");
+                    setHighlightedIndex(0);
+                    filterInputRef.current?.focus();
+                  }}
+                  className="shrink-0 w-5 h-5 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer"
+                  aria-label="Clear filter"
+                >
+                  <X className="w-3 h-3 shrink-0" />
+                </button>
+              )}
             </div>
           )}
           <ul className="py-1 overflow-y-auto flex-1">

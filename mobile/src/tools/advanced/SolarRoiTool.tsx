@@ -79,8 +79,18 @@ export function SolarRoiTool() {
             }}
             placeholder="0"
             placeholderTextColor={theme.textMuted}
-            style={[styles.bigInput, { color: theme.textPrimary }]}
+            style={[styles.bigInput, { color: theme.textPrimary, minWidth: 0 }]}
           />
+          {monthlyBill !== "" && monthlyBill !== "0" && (
+            <Pressable
+              onPress={() => setMonthlyBill("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear monthly bill"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={20} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <View style={styles.presetRow}>
           {[2000, 5000, 10000, 20000, 50000].map((amount) => (
@@ -138,8 +148,18 @@ export function SolarRoiTool() {
             }}
             placeholder="130000"
             placeholderTextColor={theme.textMuted}
-            style={[styles.bigInput, { color: theme.textPrimary, fontSize: 20 }]}
+            style={[styles.bigInput, { color: theme.textPrimary, fontSize: 20, minWidth: 0 }]}
           />
+          {costPerKw !== "" && costPerKw !== "0" && (
+            <Pressable
+              onPress={() => setCostPerKw("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear system cost per kW"
+              hitSlop={8}
+            >
+              <Ionicons name="close-circle" size={20} color={theme.textMuted} />
+            </Pressable>
+          )}
         </View>
         <View style={styles.presetRow}>
           {[110000, 130000, 150000, 180000].map((c) => (

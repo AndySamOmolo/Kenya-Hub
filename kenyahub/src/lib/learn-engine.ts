@@ -67,6 +67,38 @@ export function getPrimaryForm(text: string): string {
 }
 
 /**
+ * Check whether a word pair is a clean lexical item suitable for mini-games and exercises
+ * (excluding grammatical table headers, section titles, page references, and multi-item compendia).
+ */
+export function isCleanLexicalWordPair(rawTarget: string, rawSource: string): boolean {
+  const target = getPrimaryForm(rawTarget).trim();
+  const source = getPrimaryForm(rawSource).trim();
+  if (target.length < 2 || target.length > 35) return false;
+  if (source.length < 2 || source.length > 55) return false;
+  const both = `${target} ~~~ ${source}`;
+  if (/[:→•=><[\]{}*§|"…_]/.test(both) || /\.\./.test(both)) return false;
+  if (/^[-\d]/.test(target)) return false;
+  if (
+    /^(Class |Stories |Study |Table |Figure |Section |Cardinals|Ordinals|Modes|Male |Female |ATR |Subj|Obj|Overt |Lexical|Idiosyncratic|Pwani |Sheng |TAM |Sing\.|Pl\.)/i.test(
+      target
+    )
+  ) {
+    return false;
+  }
+  if (/\b(vs\.?|pp?\.\s*\d|fn\.\s*\d|Ex\.\s*\d|Ch\.\s*[IVX\d]|Vide\b|cf\.|s\.v\.)/i.test(both)) {
+    return false;
+  }
+  if (
+    /^(Complete |Representative |All \d|The \d|Three |Four |Five |Six |Seven |Eight |Nine |Ten |Twelve |Substantive |Inseparable |Upward-oriented |Suffixed |Morphosyntactic |Key vocabulary|Some other |First \d|Later \d|Early |Traditional |Ceremonial |Geneal)/i.test(
+      source
+    )
+  ) {
+    return false;
+  }
+  return true;
+}
+
+/**
  * Build a non-leaking hint for translate_to_target exercises.
  * If word.pronunciation is distinct from the target word, return it;
  * otherwise return a masked structural hint so the answer is never given away.
@@ -126,30 +158,41 @@ function getDistractors(
   count: number,
   field: 'target' | 'source'
 ): string[] {
-  const others = allWords.filter(
-    (w) => w[field].toLowerCase() !== correctWord[field].toLowerCase()
-  );
-  return pick(others, count).map((w) => w[field]);
+  const correctPrimary = getPrimaryForm(correctWord[field]).toLowerCase();
+  const seen = new Set<string>([correctPrimary]);
+  const distractors: string[] = [];
+  for (const w of shuffle(allWords)) {
+    const val = getPrimaryForm(w[field]).trim();
+    const key = val.toLowerCase();
+    if (val && !seen.has(key)) {
+      seen.add(key);
+      distractors.push(val);
+      if (distractors.length >= count) break;
+    }
+  }
+  return distractors;
 }
 
 /* ─── Exercise Generators ──────────────────────────── */
 
 function generateMultipleChoice(word: WordPair, allWords: WordPair[]): Exercise {
   const toEnglish = Math.random() > 0.5;
+  const primaryTarget = getPrimaryForm(word.target);
+  const primarySource = getPrimaryForm(word.source);
   const distractors = getDistractors(
     word,
     allWords,
     3,
     toEnglish ? 'source' : 'target'
   );
-  const correct = toEnglish ? word.source : word.target;
+  const correct = toEnglish ? primarySource : primaryTarget;
   const options = shuffle([correct, ...distractors]);
 
   return {
     type: 'multiple_choice',
     prompt: toEnglish
-      ? `What does "${word.target}" mean?`
-      : `How do you say "${word.source}"?`,
+      ? `What does "${primaryTarget}" mean?`
+      : `How do you say "${primarySource}"?`,
     correctAnswer: correct,
     options,
     sourceWord: word,
@@ -168,7 +211,7 @@ function generateTranslateToTarget(word: WordPair): Exercise {
 
   return {
     type: 'translate_to_target',
-    prompt: `Translate "${word.source}" to the target language:`,
+    prompt: `Translate "${getPrimaryForm(word.source)}" to the target language:`,
     correctAnswer: primaryTarget || word.target.toLowerCase().replace(/[?!.,]/g, '').trim(),
     acceptedAnswers: Array.from(variants),
     hint: buildNonLeakingHint(word),
@@ -189,7 +232,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
 
   return {
     type: 'translate_to_english',
-    prompt: `Translate "${word.target}" to English:`,
+    prompt: `Translate "${getPrimaryForm(word.target)}" to English:`,
     correctAnswer: primarySource || cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim(),
     acceptedAnswers: Array.from(variants),
     audioText: getPrimaryForm(word.target),
@@ -199,7 +242,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
 
 function generateFillBlank(word: WordPair, allWords: WordPair[], sentences: WordPair[] = []): Exercise {
   const primaryTarget = getPrimaryForm(word.target);
-  const distractors = getDistractors(word, allWords, 3, 'target').map(getPrimaryForm);
+  const distractors = getDistractors(word, allWords, 3, 'target');
   const options = shuffle([primaryTarget, ...distractors]);
 
   // Try to contextualize inside an authentic sentence from the skill if the target word appears in one
@@ -230,11 +273,19 @@ function generateFillBlank(word: WordPair, allWords: WordPair[], sentences: Word
 }
 
 function generateMatchPairs(words: WordPair[]): Exercise {
-  const selected = pick(words, Math.min(5, words.length));
-  const pairs = selected.map((w) => ({
-    left: getPrimaryForm(w.target),
-    right: getPrimaryForm(w.source),
-  }));
+  const seenLeft = new Set<string>();
+  const seenRight = new Set<string>();
+  const pairs: { left: string; right: string }[] = [];
+  for (const w of shuffle(words)) {
+    const left = getPrimaryForm(w.target).trim();
+    const right = getPrimaryForm(w.source).trim();
+    if (!left || !right) continue;
+    if (seenLeft.has(left.toLowerCase()) || seenRight.has(right.toLowerCase())) continue;
+    seenLeft.add(left.toLowerCase());
+    seenRight.add(right.toLowerCase());
+    pairs.push({ left, right });
+    if (pairs.length >= 5) break;
+  }
 
   return {
     type: 'match_pairs',
@@ -307,7 +358,8 @@ export function generateExercises(
   skill: CourseSkill,
   count: number = EXERCISES_PER_LESSON
 ): Exercise[] {
-  const allWords = [...skill.words];
+  const filteredWords = skill.words.filter((w) => isCleanLexicalWordPair(w.target, w.source));
+  const allWords = filteredWords.length >= 4 ? filteredWords : [...skill.words];
   const sentenceItems: WordPair[] = (skill.sentences || [])
     .filter((s) => s.target && s.source && getPrimaryForm(s.target).split(/\s+/).length >= 2)
     .map((s) => ({

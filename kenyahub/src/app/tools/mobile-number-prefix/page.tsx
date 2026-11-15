@@ -5,7 +5,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import prefixesData from "@/data/mobile-prefixes.json";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { Phone, Search, Radio, ShieldAlert, Globe, Copy, Check, Info } from "lucide-react";
+import { Phone, Search, Radio, ShieldAlert, Globe, Copy, Check, Info, X } from "lucide-react";
 
 const tool = TOOLS.find((t) => t.slug === "mobile-number-prefix")!;
 
@@ -131,7 +131,7 @@ export default function MobileNumberPrefixPage() {
 
           {/* Input Box */}
           <div className="relative mb-6">
-            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-text-muted">
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-text-muted z-10">
               <Search className="w-4 h-4" />
             </div>
             <input
@@ -139,8 +139,19 @@ export default function MobileNumberPrefixPage() {
               value={inputNumber}
               onChange={(e) => setInputNumber(e.target.value)}
               placeholder="e.g. 0722 123 456, 0110 556 677, or +254 733 123 456"
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-bg-surface text-text-primary text-sm font-mono placeholder:text-text-muted focus:outline-hidden focus:border-gold transition-colors"
+              className="w-full pl-10 pr-11 py-3 rounded-xl border border-border bg-bg-surface text-text-primary text-sm font-mono placeholder:text-text-muted focus:outline-hidden focus:border-gold transition-colors"
+              style={{ paddingLeft: "2.5rem", paddingRight: "2.75rem" }}
             />
+            {inputNumber && (
+              <button
+                type="button"
+                onClick={() => setInputNumber("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                aria-label="Clear phone number"
+              >
+                <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+              </button>
+            )}
           </div>
 
           {/* Live Result Display */}

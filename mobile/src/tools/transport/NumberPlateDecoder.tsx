@@ -68,16 +68,29 @@ export function NumberPlateDecoder() {
     <View style={styles.toolWrap}>
       <View style={styles.inputGroup}>
         <Text style={styles.inputLabel}>Enter Vehicle Number Plate</Text>
-        <TextInput
+        <View style={{ position: "relative", justifyContent: "center" }}>
+          <TextInput
             multiline={false}
             numberOfLines={1}
-          value={plate}
-          onChangeText={setPlate}
-          placeholder="e.g. KDA 456B, GK 123A, 47 CG 001A"
-          placeholderTextColor={theme.textMuted}
-          autoCapitalize="characters"
-          style={styles.textInputPlate}
-        />
+            value={plate}
+            onChangeText={setPlate}
+            placeholder="e.g. KDA 456B, GK 123A, 47 CG 001A"
+            placeholderTextColor={theme.textMuted}
+            autoCapitalize="characters"
+            style={[styles.textInputPlate, { paddingHorizontal: 38 }]}
+          />
+          {plate.length > 0 && (
+            <Pressable
+              onPress={() => setPlate("")}
+              accessibilityRole="button"
+              accessibilityLabel="Clear number plate"
+              hitSlop={8}
+              style={{ position: "absolute", right: 12 }}
+            >
+              <Ionicons name="close-circle" size={20} color={theme.textMuted} />
+            </Pressable>
+          )}
+        </View>
       </View>
 
       {result && (
@@ -187,6 +200,16 @@ export function NumberPlateDecoder() {
           placeholderTextColor={theme.textMuted}
           style={styles.searchInput}
         />
+        {seriesSearch.length > 0 && (
+          <Pressable
+            onPress={() => setSeriesSearch("")}
+            accessibilityRole="button"
+            accessibilityLabel="Clear search"
+            hitSlop={8}
+          >
+            <Ionicons name="close-circle" size={18} color={theme.textMuted} />
+          </Pressable>
+        )}
       </View>
       <View style={styles.card}>
         {filteredSeries.map((item, idx) => (

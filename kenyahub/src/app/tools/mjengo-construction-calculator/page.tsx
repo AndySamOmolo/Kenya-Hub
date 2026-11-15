@@ -2,6 +2,7 @@
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import { useState, useMemo } from "react";
+import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -103,25 +104,53 @@ export default function MjengoConstructionCalculatorPage() {
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Plinth / Floor Area (Square Meters — m²)
               </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                value={floorArea}
-                onChange={(e) => setFloorArea(e.target.value.replace(/[^0-9]/g, ""))}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={floorArea}
+                  placeholder="130"
+                  onChange={(e) => setFloorArea(e.target.value.replace(/[^0-9]/g, ""))}
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  style={{ paddingRight: "2.5rem" }}
+                />
+                {floorArea && (
+                  <button
+                    type="button"
+                    onClick={() => setFloorArea("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear floor area"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
             </div>
             <div>
               <label className="block text-xs text-[var(--text-secondary)] mb-1">
                 Optional Perimeter Wall Length (Linear Meters — 0 if none)
               </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                value={perimeterWallMeters}
-                onChange={(e) => setPerimeterWallMeters(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                className="w-full px-3.5 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={perimeterWallMeters}
+                  placeholder="0"
+                  onChange={(e) => setPerimeterWallMeters(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  style={{ paddingRight: "2.5rem" }}
+                />
+                {perimeterWallMeters && (
+                  <button
+                    type="button"
+                    onClick={() => setPerimeterWallMeters("")}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+                    aria-label="Clear perimeter wall length"
+                  >
+                    <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

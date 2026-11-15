@@ -230,11 +230,13 @@ export const createStyles = (theme: ThemeColors) =>
     },
     searchInput: {
       flex: 1,
+      minWidth: 0,
       fontSize: 14,
       fontFamily: "Inter_600SemiBold",
       fontWeight: "600",
       color: theme.textPrimary,
       paddingVertical: 8,
+      paddingHorizontal: 0,
       textAlignVertical: "center",
       includeFontPadding: false,
     },
