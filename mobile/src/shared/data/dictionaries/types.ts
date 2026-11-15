@@ -53,7 +53,4 @@ export interface DictMeta {
   contributorNote: string;
   totalEntries: number;
   categories: DictCategoryMeta[];
-  source?: string;
-  isoCode?: string;
-  glottocode?: string;
 }

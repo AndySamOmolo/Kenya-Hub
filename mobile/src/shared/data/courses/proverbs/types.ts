@@ -10,7 +10,7 @@ export interface ProverbItem {
   literalTranslation: string;
   meaning: string;
   englishEquivalent?: string;
-  theme: 'unity' | 'patience' | 'wisdom' | 'hard-work' | 'humility' | 'family' | 'nature' | 'courage' | 'caution';
+  theme: 'unity' | 'patience' | 'wisdom' | 'hard-work' | 'humility' | 'family' | 'nature' | 'courage';
   sourceCitation: string;
 }
 

@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/clean-removed-tools.mjs",
-    "build": "next build",
+    "build": "NODE_OPTIONS=\"--max-old-space-size=4096\" next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "NODE_OPTIONS=\"--max-old-space-size=4096\" tsc --noEmit",
     "audit:tools": "node scripts/audit-tools.mjs",
     "audit:tools:sources": "node scripts/audit-tools.mjs --check-sources",
     "audit:tools:strict": "node scripts/audit-tools.mjs --strict",

@@ -1,11 +1,5 @@
-export interface BlogSource {
-  sourceId: string;
-  title: string;
-  note: string;
-}
-
 export interface StaticBlogPost {
-  $id?: string;
+  $id: string;
   slug: string;
   title: string;
   excerpt: string;
@@ -16,7 +10,11 @@ export interface StaticBlogPost {
   readTime: number;
   coverImage?: string;
   content: string;
-  sources?: BlogSource[];
+  sources?: {
+    sourceId: string;
+    title: string;
+    note: string;
+  }[];
 }
 
 export const STATIC_BLOG_POSTS: StaticBlogPost[] = [

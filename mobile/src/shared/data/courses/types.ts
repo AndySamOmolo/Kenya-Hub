@@ -35,7 +35,6 @@ export interface CourseUnit {
   description: string;
   icon: string;
   number?: number;
-  unitNumber?: number;
   color?: string;
   skills: CourseSkill[];
 }
@@ -48,13 +47,12 @@ export interface CourseSkill {
   /** Vocabulary pairs taught in this skill */
   words: WordPair[];
   /** Full sentence pairs for translation exercises */
-  sentences?: SentencePair[];
+  sentences: SentencePair[];
   /** Exercises written by the course author */
   authoredExercises?: Exercise[];
   /** Grammar/cultural tips shown before the lesson */
   tips?: string;
   tip?: string;
-  grammarTip?: string;
   /** Cultural note shown after completion */
   culturalNote?: string;
 }
