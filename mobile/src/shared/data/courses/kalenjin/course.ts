@@ -3695,7 +3695,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           }
         ]
       },
-{
+      {
         "id": "kalenjin-open-datasets-thinkkenya",
         "title": "Forest Conservation, Education & Cooperative Farming",
         "icon": "Database",
@@ -3703,296 +3703,296 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "culturalNote": "The ThinkKenya / Waleghwa Kalenjin–Kiswahili corpus (35,127 pairs), Mozilla Common Voice 25.0 (29,961 CC0 sentences), and Thiomi Kipsigis corpus document contemporary Rift Valley Kalenjin across education, forestry, and dairy farming.",
         "grammarTip": "Notice the associative suffix -ab ('of') in Kararanotet-ab emet ('beauty of the land'), ripset-ab timwek ('conservation of forests'), and tait-ab ng'omnotet ('lamp of wisdom').",
         "words": [
-                {
-                        "target": "Kararanotetab emet",
-                        "source": "Beauty / prosperity of the land",
-                        "pronunciation": "kah-rah-rah-noh-teh-tahb eh-meht"
-                },
-                {
-                        "target": "Ripsetab timwek",
-                        "source": "Conservation of forests",
-                        "pronunciation": "reep-seh-tahb teem-wehk"
-                },
-                {
-                        "target": "Somanet",
-                        "source": "Education / Reading",
-                        "pronunciation": "soh-mah-neht"
-                },
-                {
-                        "target": "Taitab ng'omnotet",
-                        "source": "Lamp of wisdom",
-                        "pronunciation": "tah-ee-tahb ngohm-noh-teht"
-                },
-                {
-                        "target": "Lagok tugul",
-                        "source": "All children",
-                        "pronunciation": "lah-gohk too-gool"
-                },
-                {
-                        "target": "Kabung'utab chego",
-                        "source": "Dairy cooperative",
-                        "pronunciation": "kah-boo-ngoo-tahb cheh-goh"
-                },
-                {
-                        "target": "Chamyet",
-                        "source": "Love / Harmony / Agreement",
-                        "pronunciation": "chahm-yeht"
-                },
-                {
-                        "target": "Beek",
-                        "source": "Water",
-                        "pronunciation": "behk"
-                }
+          {
+            "target": "Kararanotetab emet",
+            "source": "Beauty / prosperity of the land",
+            "pronunciation": "kah-rah-rah-noh-teh-tahb eh-meht"
+          },
+          {
+            "target": "Ripsetab timwek",
+            "source": "Conservation of forests",
+            "pronunciation": "reep-seh-tahb teem-wehk"
+          },
+          {
+            "target": "Somanet",
+            "source": "Education / Reading",
+            "pronunciation": "soh-mah-neht"
+          },
+          {
+            "target": "Taitab ng'omnotet",
+            "source": "Lamp of wisdom",
+            "pronunciation": "tah-ee-tahb ngohm-noh-teht"
+          },
+          {
+            "target": "Lagok tugul",
+            "source": "All children",
+            "pronunciation": "lah-gohk too-gool"
+          },
+          {
+            "target": "Kabung'utab chego",
+            "source": "Dairy cooperative",
+            "pronunciation": "kah-boo-ngoo-tahb cheh-goh"
+          },
+          {
+            "target": "Chamyet",
+            "source": "Love / Harmony / Agreement",
+            "pronunciation": "chahm-yeht"
+          },
+          {
+            "target": "Beek",
+            "source": "Water",
+            "pronunciation": "behk"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Kararanotetab emet kobunugei ripsetab timwek ak beek.",
-                        "source": "The beauty of the land comes from conserving forests and water."
-                },
-                {
-                        "target": "Somanet ko taitab ng'omnotet eng' lagok tugul.",
-                        "source": "Education is the lamp of wisdom for all children."
-                }
+          {
+            "target": "Kararanotetab emet kobunugei ripsetab timwek ak beek.",
+            "source": "The beauty of the land comes from conserving forests and water."
+          },
+          {
+            "target": "Somanet ko taitab ng'omnotet eng' lagok tugul.",
+            "source": "Education is the lamp of wisdom for all children."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "kalenjin-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kalenjin parallel sentences and vocabulary from commercially permissive corpora.",
         "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-",
         "words": [
-                {
-                        "target": "Kongoi (Kongoi mising)",
-                        "source": "Thank you (Thank you very much)",
-                        "pronunciation": "kongoi"
-                },
-                {
-                        "target": "Tiamge (singular), Otyamge (plural)",
-                        "source": "How do you do? (singular / plural)",
-                        "pronunciation": "ti-am-ge / o-tyam-ge"
-                },
-                {
-                        "target": "Kongoi, Eñgōñgōi!",
-                        "source": "Thank you!",
-                        "pronunciation": "ko-ngoi / e-ngo-ngoi"
-                },
-                {
-                        "target": "Kātigē!",
-                        "source": "Goodbye!",
-                        "pronunciation": "ka-ti-ge"
-                },
-                {
-                        "target": "Chamyetab kabung'utab chego",
-                        "source": "Dairy cooperative / Milk harvest market",
-                        "pronunciation": "chahm-yeh-tahb kah-boo-ngoo-tahb cheh-goh"
-                },
-                {
-                        "target": "otēpii eng’ kaalyeet",
-                        "source": "Stay in peace",
-                        "pronunciation": "otēpii eng’ kaalyeet"
-                },
-                {
-                        "target": "tilia (tiliet), pl",
-                        "source": "Peace",
-                        "pronunciation": "tilia"
-                },
-                {
-                        "target": "Kiriibe kipisoiyo eng' kaa",
-                        "source": "We keep cattle-thief at the homestead",
-                        "pronunciation": "kiriibe kipisoiyo eng kaa"
-                },
-                {
-                        "target": "Kiriibe makas eng' kaa",
-                        "source": "We keep hippopotamus at the homestead",
-                        "pronunciation": "kiriibe makas eng kaa"
-                },
-                {
-                        "target": "Kiriibe kerepes eng' kaa",
-                        "source": "We keep tick at the homestead",
-                        "pronunciation": "kiriibe kerepes eng kaa"
-                },
-                {
-                        "target": "Kiriibe moset eng' kaa",
-                        "source": "We keep ape at the homestead",
-                        "pronunciation": "kiriibe moset eng kaa"
-                },
-                {
-                        "target": "Kiriibe sarur eng' kaa",
-                        "source": "We keep tail of sheep at the homestead",
-                        "pronunciation": "kiriibe sarur eng kaa"
-                }
+          {
+            "target": "Kongoi (Kongoi mising)",
+            "source": "Thank you (Thank you very much)",
+            "pronunciation": "kongoi"
+          },
+          {
+            "target": "Tiamge (singular), Otyamge (plural)",
+            "source": "How do you do? (singular / plural)",
+            "pronunciation": "ti-am-ge / o-tyam-ge"
+          },
+          {
+            "target": "Kongoi, Eñgōñgōi!",
+            "source": "Thank you!",
+            "pronunciation": "ko-ngoi / e-ngo-ngoi"
+          },
+          {
+            "target": "Kātigē!",
+            "source": "Goodbye!",
+            "pronunciation": "ka-ti-ge"
+          },
+          {
+            "target": "Chamyetab kabung'utab chego",
+            "source": "Dairy cooperative / Milk harvest market",
+            "pronunciation": "chahm-yeh-tahb kah-boo-ngoo-tahb cheh-goh"
+          },
+          {
+            "target": "otēpii eng’ kaalyeet",
+            "source": "Stay in peace",
+            "pronunciation": "otēpii eng’ kaalyeet"
+          },
+          {
+            "target": "tilia (tiliet)",
+            "source": "Peace",
+            "pronunciation": "tilia"
+          },
+          {
+            "target": "Kiriibe kipisoiyo eng' kaa",
+            "source": "We keep cattle-thief at the homestead",
+            "pronunciation": "kiriibe kipisoiyo eng kaa"
+          },
+          {
+            "target": "Kiriibe makas eng' kaa",
+            "source": "We keep hippopotamus at the homestead",
+            "pronunciation": "kiriibe makas eng kaa"
+          },
+          {
+            "target": "Kiriibe kerepes eng' kaa",
+            "source": "We keep tick at the homestead",
+            "pronunciation": "kiriibe kerepes eng kaa"
+          },
+          {
+            "target": "Kiriibe moset eng' kaa",
+            "source": "We keep ape at the homestead",
+            "pronunciation": "kiriibe moset eng kaa"
+          },
+          {
+            "target": "Kiriibe sarur eng' kaa",
+            "source": "We keep tail of sheep at the homestead",
+            "pronunciation": "kiriibe sarur eng kaa"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Tos iting'e kipsirīch rani?",
-                        "source": "Do you have rhinoceros today?"
-                },
-                {
-                        "target": "Tos iting'e pē rani?",
-                        "source": "Do you have cattle-fold today?"
-                },
-                {
-                        "target": "Tos iting'e kâpimperu rani?",
-                        "source": "Do you have chicken-pox today?"
-                },
-                {
-                        "target": "Tos iting'e sukut rani?",
-                        "source": "Do you have cattle-pond today?"
-                },
-                {
-                        "target": "Tos iting'e cheput rani?",
-                        "source": "Do you have caterpillar today?"
-                },
-                {
-                        "target": "Tos iting'e talamwa rani?",
-                        "source": "Do you have grasshopper today?"
-                },
-                {
-                        "target": "Tos iting'e iak-e. rani?",
-                        "source": "Do you have herd cattle today?"
-                },
-                {
-                        "target": "Tos iting'e kipisoiyo rani?",
-                        "source": "Do you have cattle-thief today?"
-                },
-                {
-                        "target": "Tos iting'e makas rani?",
-                        "source": "Do you have hippopotamus today?"
-                },
-                {
-                        "target": "Tos iting'e kerepes rani?",
-                        "source": "Do you have tick today?"
-                },
-                {
-                        "target": "Tos iting'e moset rani?",
-                        "source": "Do you have ape today?"
-                },
-                {
-                        "target": "Tos iting'e sarur rani?",
-                        "source": "Do you have tail of sheep today?"
-                }
+          {
+            "target": "Tos iting'e kipsirīch rani?",
+            "source": "Do you have rhinoceros today?"
+          },
+          {
+            "target": "Tos iting'e pē rani?",
+            "source": "Do you have cattle-fold today?"
+          },
+          {
+            "target": "Tos iting'e kâpimperu rani?",
+            "source": "Do you have chicken-pox today?"
+          },
+          {
+            "target": "Tos iting'e sukut rani?",
+            "source": "Do you have cattle-pond today?"
+          },
+          {
+            "target": "Tos iting'e cheput rani?",
+            "source": "Do you have caterpillar today?"
+          },
+          {
+            "target": "Tos iting'e talamwa rani?",
+            "source": "Do you have grasshopper today?"
+          },
+          {
+            "target": "Tos iting'e iak-e. rani?",
+            "source": "Do you have herd cattle today?"
+          },
+          {
+            "target": "Tos iting'e kipisoiyo rani?",
+            "source": "Do you have cattle-thief today?"
+          },
+          {
+            "target": "Tos iting'e makas rani?",
+            "source": "Do you have hippopotamus today?"
+          },
+          {
+            "target": "Tos iting'e kerepes rani?",
+            "source": "Do you have tick today?"
+          },
+          {
+            "target": "Tos iting'e moset rani?",
+            "source": "Do you have ape today?"
+          },
+          {
+            "target": "Tos iting'e sarur rani?",
+            "source": "Do you have tail of sheep today?"
+          }
         ]
-},
-        {
+      },
+      {
         "id": "kalenjin-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kalenjin sentences for healthcare, transport, and community safety.",
         "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-",
         "words": [
-                {
-                        "target": "Kiriibe kutit-ap-tarityet eng' kaa",
-                        "source": "We keep beak at the homestead",
-                        "pronunciation": "kiriibe kutit-ap-tarityet eng kaa"
-                },
-                {
-                        "target": "Kiriibe kiplengwai eng' kaa",
-                        "source": "We keep rabbit at the homestead",
-                        "pronunciation": "kiriibe kiplengwai eng kaa"
-                },
-                {
-                        "target": "Kiriibe songolia eng' kaa",
-                        "source": "We keep ostrich feather at the homestead",
-                        "pronunciation": "kiriibe songolia eng kaa"
-                },
-                {
-                        "target": "Ata beit ab tiñgoñgo eng' sokon?",
-                        "source": "What is the price of crocodile at the market?",
-                        "pronunciation": "ata beit ab tiñgoñgo eng sokon"
-                },
-                {
-                        "target": "Ata beit ab mui eng' sokon?",
-                        "source": "What is the price of hide at the market?",
-                        "pronunciation": "ata beit ab mui eng sokon"
-                },
-                {
-                        "target": "Ata beit ab chepswerer eng' sokon?",
-                        "source": "What is the price of porcupine at the market?",
-                        "pronunciation": "ata beit ab chepswerer eng sokon"
-                },
-                {
-                        "target": "Ata beit ab pemba eng' sokon?",
-                        "source": "What is the price of bird-lime at the market?",
-                        "pronunciation": "ata beit ab pemba eng sokon"
-                },
-                {
-                        "target": "Ata beit ab chemnyōkōso eng' sokon?",
-                        "source": "What is the price of hartebeest at the market?",
-                        "pronunciation": "ata beit ab chemnyōkōso eng sokon"
-                },
-                {
-                        "target": "Ata beit ab mukenya eng' sokon?",
-                        "source": "What is the price of locust egg at the market?",
-                        "pronunciation": "ata beit ab mukenya eng sokon"
-                },
-                {
-                        "target": "Ata beit ab kipsirīch eng' sokon?",
-                        "source": "What is the price of rhinoceros at the market?",
-                        "pronunciation": "ata beit ab kipsirīch eng sokon"
-                },
-                {
-                        "target": "Ata beit ab pē eng' sokon?",
-                        "source": "What is the price of cattle-fold at the market?",
-                        "pronunciation": "ata beit ab pē eng sokon"
-                },
-                {
-                        "target": "Riip kipisoiyo коmie eng' kokwet",
-                        "source": "Take care of cattle-thief for community health",
-                        "pronunciation": "riip kipisoiyo mie eng kokwet"
-                }
+          {
+            "target": "Kiriibe kutit-ap-tarityet eng' kaa",
+            "source": "We keep beak at the homestead",
+            "pronunciation": "kiriibe kutit-ap-tarityet eng kaa"
+          },
+          {
+            "target": "Kiriibe kiplengwai eng' kaa",
+            "source": "We keep rabbit at the homestead",
+            "pronunciation": "kiriibe kiplengwai eng kaa"
+          },
+          {
+            "target": "Kiriibe songolia eng' kaa",
+            "source": "We keep ostrich feather at the homestead",
+            "pronunciation": "kiriibe songolia eng kaa"
+          },
+          {
+            "target": "Ata beit ab tiñgoñgo eng' sokon?",
+            "source": "What is the price of crocodile at the market?",
+            "pronunciation": "ata beit ab tiñgoñgo eng sokon"
+          },
+          {
+            "target": "Ata beit ab mui eng' sokon?",
+            "source": "What is the price of hide at the market?",
+            "pronunciation": "ata beit ab mui eng sokon"
+          },
+          {
+            "target": "Ata beit ab chepswerer eng' sokon?",
+            "source": "What is the price of porcupine at the market?",
+            "pronunciation": "ata beit ab chepswerer eng sokon"
+          },
+          {
+            "target": "Ata beit ab pemba eng' sokon?",
+            "source": "What is the price of bird-lime at the market?",
+            "pronunciation": "ata beit ab pemba eng sokon"
+          },
+          {
+            "target": "Ata beit ab chemnyōkōso eng' sokon?",
+            "source": "What is the price of hartebeest at the market?",
+            "pronunciation": "ata beit ab chemnyōkōso eng sokon"
+          },
+          {
+            "target": "Ata beit ab mukenya eng' sokon?",
+            "source": "What is the price of locust egg at the market?",
+            "pronunciation": "ata beit ab mukenya eng sokon"
+          },
+          {
+            "target": "Ata beit ab kipsirīch eng' sokon?",
+            "source": "What is the price of rhinoceros at the market?",
+            "pronunciation": "ata beit ab kipsirīch eng sokon"
+          },
+          {
+            "target": "Ata beit ab pē eng' sokon?",
+            "source": "What is the price of cattle-fold at the market?",
+            "pronunciation": "ata beit ab pē eng sokon"
+          },
+          {
+            "target": "Riip kipisoiyo коmie eng' kokwet",
+            "source": "Take care of cattle-thief for community health",
+            "pronunciation": "riip kipisoiyo mie eng kokwet"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Tos iting'e kutit-ap-tarityet rani?",
-                        "source": "Do you have beak today?"
-                },
-                {
-                        "target": "Tos iting'e kiplengwai rani?",
-                        "source": "Do you have rabbit today?"
-                },
-                {
-                        "target": "Tos iting'e songolia rani?",
-                        "source": "Do you have ostrich feather today?"
-                },
-                {
-                        "target": "Ata beit ab Iruguttie eng' sokon?",
-                        "source": "What is the price of reedbuck at the market?"
-                },
-                {
-                        "target": "Ata beit ab beliot eng' sokon?",
-                        "source": "What is the price of elephant at the market?"
-                },
-                {
-                        "target": "Ata beit ab kipsomere eng' sokon?",
-                        "source": "What is the price of waterbuck at the market?"
-                },
-                {
-                        "target": "Ata beit ab ririo eng' sokon?",
-                        "source": "What is the price of ox-pecker at the market?"
-                },
-                {
-                        "target": "Ata beit ab makata eng' sokon?",
-                        "source": "What is the price of goat-hide at the market?"
-                },
-                {
-                        "target": "Ata beit ab tapurpur eng' sokon?",
-                        "source": "What is the price of butterfly at the market?"
-                },
-                {
-                        "target": "Ata beit ab nyirit eng' sokon?",
-                        "source": "What is the price of chameleon at the market?"
-                },
-                {
-                        "target": "Ata beit ab tiñgoñgo eng' sokon?",
-                        "source": "What is the price of crocodile at the market?"
-                },
-                {
-                        "target": "Ata beit ab mui eng' sokon?",
-                        "source": "What is the price of hide at the market?"
-                }
+          {
+            "target": "Tos iting'e kutit-ap-tarityet rani?",
+            "source": "Do you have beak today?"
+          },
+          {
+            "target": "Tos iting'e kiplengwai rani?",
+            "source": "Do you have rabbit today?"
+          },
+          {
+            "target": "Tos iting'e songolia rani?",
+            "source": "Do you have ostrich feather today?"
+          },
+          {
+            "target": "Ata beit ab Iruguttie eng' sokon?",
+            "source": "What is the price of reedbuck at the market?"
+          },
+          {
+            "target": "Ata beit ab beliot eng' sokon?",
+            "source": "What is the price of elephant at the market?"
+          },
+          {
+            "target": "Ata beit ab kipsomere eng' sokon?",
+            "source": "What is the price of waterbuck at the market?"
+          },
+          {
+            "target": "Ata beit ab ririo eng' sokon?",
+            "source": "What is the price of ox-pecker at the market?"
+          },
+          {
+            "target": "Ata beit ab makata eng' sokon?",
+            "source": "What is the price of goat-hide at the market?"
+          },
+          {
+            "target": "Ata beit ab tapurpur eng' sokon?",
+            "source": "What is the price of butterfly at the market?"
+          },
+          {
+            "target": "Ata beit ab nyirit eng' sokon?",
+            "source": "What is the price of chameleon at the market?"
+          },
+          {
+            "target": "Ata beit ab tiñgoñgo eng' sokon?",
+            "source": "What is the price of crocodile at the market?"
+          },
+          {
+            "target": "Ata beit ab mui eng' sokon?",
+            "source": "What is the price of hide at the market?"
+          }
         ]
-}
+      }
     ]
   }
 ];
