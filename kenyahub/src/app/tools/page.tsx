@@ -260,7 +260,7 @@ export default function ToolsHubPage() {
               <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
             </h1>
             <p className="text-sm sm:text-base text-text-secondary max-w-3xl leading-relaxed">
-              Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 22 Kenyan language courses.
+              Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 23 Kenyan language courses.
             </p>
           </>
         )}

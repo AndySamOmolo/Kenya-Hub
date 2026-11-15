@@ -58,8 +58,8 @@ export default function HomePage() {
     "@type": "ItemList",
     name: "Flagship Kenyan Language Learning Hub, Calculators & Public Data Directories",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Learn Kenyan Languages, Proverbs & Oral Wisdom Hub (22 Languages)", url: "https://kenyahub.me/tools/learn/" },
-      { "@type": "ListItem", position: 2, name: "Kenyan Languages Translator & Dictionary (22 Languages)", url: "https://kenyahub.me/tools/kenyan-translator/" },
+      { "@type": "ListItem", position: 1, name: "Learn Kenyan Languages, Proverbs & Oral Wisdom Hub (23 Languages)", url: "https://kenyahub.me/tools/learn/" },
+      { "@type": "ListItem", position: 2, name: "Kenyan Languages Translator & Dictionary (23 Languages)", url: "https://kenyahub.me/tools/kenyan-translator/" },
       { "@type": "ListItem", position: 3, name: "Kenya PAYE Salary Calculator 2026 (Gross to Net & Net to Gross)", url: "https://kenyahub.me/tools/paye-calculator/" },
       { "@type": "ListItem", position: 4, name: "M-Pesa Transaction & Withdrawal Fee Calculator 2026", url: "https://kenyahub.me/tools/mpesa-fee-calculator/" },
       { "@type": "ListItem", position: 5, name: "KRA Car Import Duty & CRSP Calculator 2026", url: "https://kenyahub.me/tools/kra-car-import-calculator/" },
@@ -120,7 +120,7 @@ export default function HomePage() {
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-kenya-green-light" />
                   </span>
                   <span className="text-[0.65rem] sm:text-xs font-semibold text-gold tracking-tight sm:tracking-wide break-words">
-                    22 Languages · {TOOLS.length} Interactive Tools · 47 Counties
+                    23 Languages · {TOOLS.length} Interactive Tools · 47 Counties
                   </span>
                 </div>
               </div>
@@ -519,7 +519,7 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center gap-3">
               <Link href="/tools/learn/" className="btn-gold text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
                 <Languages className="w-4 h-4 shrink-0" />
-                Explore 22 Kenyan Languages
+                Explore 23 Kenyan Languages
               </Link>
               <Link href="/tools/" className="btn-outline text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4">
                 Browse All {TOOLS.length} Tools

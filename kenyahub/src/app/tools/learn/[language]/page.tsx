@@ -26,17 +26,26 @@ export async function generateMetadata({
     ? course.config.name
     : `${course.config.name} (${course.config.nativeName})`;
   const title = `Learn ${displayLang} Online — Free Interactive Kenyan Language Course, Phrases & Dictionary`;
+  const totalWords = course.units.reduce(
+    (sum, unit) => sum + unit.skills.reduce((s, sk) => s + sk.words.length, 0),
+    0
+  );
+  const description = `${course.config.description} Explore ${course.units.length} units and ${totalWords.toLocaleString()}+ ${displayLang} vocabulary entries, grammar notes, common phrases, flashcards, and cultural proverbs free on KenyaHub.`;
 
   return {
     title,
-    description: `${course.config.description} Practice ${displayLang} vocabulary, grammar notes, common phrases, and cultural proverbs free on KenyaHub.`,
+    description,
     keywords: [
       `learn ${course.config.name} online`,
+      `${course.config.name} language course`,
       `${course.config.nativeName} lessons`,
       `${course.config.name} vocabulary and grammar`,
       `${course.config.name} to English dictionary`,
       `common ${course.config.name} phrases`,
+      `${course.config.name} proverbs and idioms`,
+      `${course.config.name} flashcards`,
       "learn Kenyan languages online",
+      ...course.config.counties.slice(0, 3).map((county) => `${course.config.name} ${county} Kenya`),
     ],
     robots: {
       index: true,
@@ -51,7 +60,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: `${title} | KenyaHub`,
-      description: course.config.description,
+      description,
       type: "website",
       locale: "en_KE",
       siteName: "KenyaHub",
@@ -68,7 +77,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: `${title} | KenyaHub`,
-      description: course.config.description,
+      description,
       images: ["/og-image.png"],
     },
     alternates: {
@@ -110,6 +119,20 @@ export default async function LanguagePage({
       name: "KenyaHub",
       sameAs: "https://kenyahub.me",
     },
+    about: {
+      "@type": "Language",
+      name: course.config.name,
+      alternateName: course.config.nativeName,
+    },
+    teaches: `${displayLang} vocabulary, grammar, everyday phrases, and cultural proverbs`,
+    ...(course.config.counties.length > 0
+      ? {
+          spatialCoverage: {
+            "@type": "Place",
+            name: `${course.config.counties.join(", ")}, Kenya`,
+          },
+        }
+      : {}),
     isAccessibleForFree: true,
     inLanguage: "en-KE",
     educationalLevel: "Beginner to Intermediate",
@@ -118,6 +141,42 @@ export default async function LanguagePage({
       courseMode: "online",
       courseWorkload: "PT10H",
     },
+    syllabusSections: course.units.map((unit) => ({
+      "@type": "Syllabus",
+      name: unit.title,
+      description: unit.description,
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://kenyahub.me/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Tools",
+        item: "https://kenyahub.me/tools/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Learn Kenyan Languages",
+        item: "https://kenyahub.me/tools/learn/",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: `Learn ${displayLang}`,
+        item: canonicalUrl,
+      },
+    ],
   };
 
   return (
@@ -125,6 +184,10 @@ export default async function LanguagePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <LanguageClientPage languageId={language} />
     </>

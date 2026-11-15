@@ -1178,7 +1178,7 @@ export default function KenyanTranslatorPage() {
 
         {/* ═══════════════════════════════════════ */}
         {/* ═══════════════════════════════════════ */}
-        {/* ── BROWSE MODE — All 22 Languages ── */}
+        {/* ── BROWSE MODE — All 23 Languages ── */}
         {/* ═══════════════════════════════════════ */}
         {viewMode === "browse" && (
           <>
