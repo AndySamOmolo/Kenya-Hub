@@ -4046,54 +4046,54 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 }
         ],
         "sentences": [
-                {
-                        "target": "Nĩmoĩ Kochiria wega",
-                        "source": "They know how to judge well"
-                },
-                {
-                        "target": "Tũrathiĩ Kolela rĩu",
-                        "source": "We are going to mourn now"
-                },
-                {
-                        "target": "Nĩmoĩ Kolela wega",
-                        "source": "They know how to mourn well"
-                },
-                {
-                        "target": "Tũrathiĩ Kolutera rĩu",
-                        "source": "We are going to offer now"
-                },
-                {
-                        "target": "Nĩmoĩ Kolutera wega",
-                        "source": "They know how to offer well"
-                },
-                {
-                        "target": "Tũrathiĩ Kogwaza rĩu",
-                        "source": "We are going to order now"
-                },
-                {
-                        "target": "Nĩmoĩ Kogwaza wega",
-                        "source": "They know how to order well"
-                },
-                {
-                        "target": "Tũrathiĩ Koekera rĩu",
-                        "source": "We are going to place now"
-                },
-                {
-                        "target": "Nĩmoĩ Koekera wega",
-                        "source": "They know how to place well"
-                },
-                {
-                        "target": "Tũrathiĩ Kohanda rĩu",
-                        "source": "We are going to plant now"
-                },
-                {
-                        "target": "Nĩmoĩ Kohanda wega",
-                        "source": "They know how to plant well"
-                },
-                {
-                        "target": "Tũrathiĩ Kokinya rĩu",
-                        "source": "We are going to reach now"
-                }
+          {
+            "target": "Nĩmoĩ Kochiria wega",
+            "source": "They know how to judge well"
+          },
+          {
+            "target": "Tũrathiĩ Kolela rĩu",
+            "source": "We are going to mourn now"
+          },
+          {
+            "target": "Nĩmoĩ Kolela wega",
+            "source": "They know how to mourn well"
+          },
+          {
+            "target": "Tũrathiĩ Kolutera rĩu",
+            "source": "We are going to offer now"
+          },
+          {
+            "target": "Nĩmoĩ Kolutera wega",
+            "source": "They know how to offer well"
+          },
+          {
+            "target": "Tũrathiĩ Kogwaza rĩu",
+            "source": "We are going to order now"
+          },
+          {
+            "target": "Nĩmoĩ Kogwaza wega",
+            "source": "They know how to order well"
+          },
+          {
+            "target": "Tũrathiĩ Koekera rĩu",
+            "source": "We are going to place now"
+          },
+          {
+            "target": "Nĩmoĩ Koekera wega",
+            "source": "They know how to place well"
+          },
+          {
+            "target": "Tũrathiĩ Kohanda rĩu",
+            "source": "We are going to plant now"
+          },
+          {
+            "target": "Nĩmoĩ Kohanda wega",
+            "source": "They know how to plant well"
+          },
+          {
+            "target": "Tũrathiĩ Kokinya rĩu",
+            "source": "We are going to reach now"
+          }
         ]
 },
       {
@@ -4103,118 +4103,118 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "description": "Master multi-domain Kikuyu (Gĩkũyũ) sentences for healthcare, transport, and community safety.",
         "culturalNote": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026)",
         "words": [
-                {
-                        "target": "Arĩmi nĩmarutaga Bea kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce mouse in our county",
-                        "pronunciation": "arĩmi nĩmarutaga bea kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Nyamuyathi. Muraru kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce viper in our county",
-                        "pronunciation": "arĩmi nĩmarutaga nyamuyathi muraru kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Hiti kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce hyena in our county",
-                        "pronunciation": "arĩmi nĩmarutaga hiti kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Arĩmi nĩmarutaga Nyamo kaũndĩ-inĩ gaitũ",
-                        "source": "Farmers produce beast in our county",
-                        "pronunciation": "arĩmi nĩmarutaga nyamo kaũndĩ-inĩ gaitũ"
-                },
-                {
-                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
-                        "source": "How much is hawk at the market?",
-                        "pronunciation": "thogora wa hongo thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
-                        "source": "How much is herd at the market?",
-                        "pronunciation": "thogora wa ikunde thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Izagiro thoko-inĩ nĩigana?",
-                        "source": "How much is hoof at the market?",
-                        "pronunciation": "thogora wa izagiro thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Isea thoko-inĩ nĩigana?",
-                        "source": "How much is horn at the market?",
-                        "pronunciation": "thogora wa isea thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Morosi thoko-inĩ nĩigana?",
-                        "source": "How much is lion at the market?",
-                        "pronunciation": "thogora wa morosi thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Nyumbu thoko-inĩ nĩigana?",
-                        "source": "How much is mule at the market?",
-                        "pronunciation": "thogora wa nyumbu thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Kesita thoko-inĩ nĩigana?",
-                        "source": "How much is tail at the market?",
-                        "pronunciation": "thogora wa kesita thoko-inĩ nĩigana"
-                },
-                {
-                        "target": "Thogora wa Ndutu thoko-inĩ nĩigana?",
-                        "source": "How much is worm at the market?",
-                        "pronunciation": "thogora wa ndutu thoko-inĩ nĩigana"
-                }
+          {
+            "target": "Arĩmi nĩmarutaga Bea kaũndĩ-inĩ gaitũ",
+            "source": "Farmers produce mouse in our county",
+            "pronunciation": "arĩmi nĩmarutaga bea kaũndĩ-inĩ gaitũ"
+          },
+          {
+            "target": "Arĩmi nĩmarutaga Nyamuyathi. Muraru kaũndĩ-inĩ gaitũ",
+            "source": "Farmers produce viper in our county",
+            "pronunciation": "arĩmi nĩmarutaga nyamuyathi muraru kaũndĩ-inĩ gaitũ"
+          },
+          {
+            "target": "Arĩmi nĩmarutaga Hiti kaũndĩ-inĩ gaitũ",
+            "source": "Farmers produce hyena in our county",
+            "pronunciation": "arĩmi nĩmarutaga hiti kaũndĩ-inĩ gaitũ"
+          },
+          {
+            "target": "Arĩmi nĩmarutaga Nyamo kaũndĩ-inĩ gaitũ",
+            "source": "Farmers produce beast in our county",
+            "pronunciation": "arĩmi nĩmarutaga nyamo kaũndĩ-inĩ gaitũ"
+          },
+          {
+            "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
+            "source": "How much is hawk at the market?",
+            "pronunciation": "thogora wa hongo thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
+            "source": "How much is herd at the market?",
+            "pronunciation": "thogora wa ikunde thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Izagiro thoko-inĩ nĩigana?",
+            "source": "How much is hoof at the market?",
+            "pronunciation": "thogora wa izagiro thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Isea thoko-inĩ nĩigana?",
+            "source": "How much is horn at the market?",
+            "pronunciation": "thogora wa isea thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Morosi thoko-inĩ nĩigana?",
+            "source": "How much is lion at the market?",
+            "pronunciation": "thogora wa morosi thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Nyumbu thoko-inĩ nĩigana?",
+            "source": "How much is mule at the market?",
+            "pronunciation": "thogora wa nyumbu thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Kesita thoko-inĩ nĩigana?",
+            "source": "How much is tail at the market?",
+            "pronunciation": "thogora wa kesita thoko-inĩ nĩigana"
+          },
+          {
+            "target": "Thogora wa Ndutu thoko-inĩ nĩigana?",
+            "source": "How much is worm at the market?",
+            "pronunciation": "thogora wa ndutu thoko-inĩ nĩigana"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Nĩmoĩ Kokinya wega",
-                        "source": "They know how to reach well"
-                },
-                {
-                        "target": "Tũrathiĩ Koetekia rĩu",
-                        "source": "We are going to reply now"
-                },
-                {
-                        "target": "Nĩmoĩ Koetekia wega",
-                        "source": "They know how to reply well"
-                },
-                {
-                        "target": "Thogora wa Kengangi thoko-inĩ nĩigana?",
-                        "source": "How much is crab at the market?"
-                },
-                {
-                        "target": "Thogora wa Ndira-hoge thoko-inĩ nĩigana?",
-                        "source": "How much is dove at the market?"
-                },
-                {
-                        "target": "Thogora wa Zamberi thoko-inĩ nĩigana?",
-                        "source": "How much is duck at the market?"
-                },
-                {
-                        "target": "Thogora wa Kiongoyo thoko-inĩ nĩigana?",
-                        "source": "How much is fish at the market?"
-                },
-                {
-                        "target": "Thogora wa Nguku thoko-inĩ nĩigana?",
-                        "source": "How much is fowl at the market?"
-                },
-                {
-                        "target": "Thogora wa Kuira thoko-inĩ nĩigana?",
-                        "source": "How much is frog at the market?"
-                },
-                {
-                        "target": "Thogora wa Mburi thoko-inĩ nĩigana?",
-                        "source": "How much is goat at the market?"
-                },
-                {
-                        "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
-                        "source": "How much is hawk at the market?"
-                },
-                {
-                        "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
-                        "source": "How much is herd at the market?"
-                }
+          {
+            "target": "Nĩmoĩ Kokinya wega",
+            "source": "They know how to reach well"
+          },
+          {
+            "target": "Tũrathiĩ Koetekia rĩu",
+            "source": "We are going to reply now"
+          },
+          {
+            "target": "Nĩmoĩ Koetekia wega",
+            "source": "They know how to reply well"
+          },
+          {
+            "target": "Thogora wa Kengangi thoko-inĩ nĩigana?",
+            "source": "How much is crab at the market?"
+          },
+          {
+            "target": "Thogora wa Ndira-hoge thoko-inĩ nĩigana?",
+            "source": "How much is dove at the market?"
+          },
+          {
+            "target": "Thogora wa Zamberi thoko-inĩ nĩigana?",
+            "source": "How much is duck at the market?"
+          },
+          {
+            "target": "Thogora wa Kiongoyo thoko-inĩ nĩigana?",
+            "source": "How much is fish at the market?"
+          },
+          {
+            "target": "Thogora wa Nguku thoko-inĩ nĩigana?",
+            "source": "How much is fowl at the market?"
+          },
+          {
+            "target": "Thogora wa Kuira thoko-inĩ nĩigana?",
+            "source": "How much is frog at the market?"
+          },
+          {
+            "target": "Thogora wa Mburi thoko-inĩ nĩigana?",
+            "source": "How much is goat at the market?"
+          },
+          {
+            "target": "Thogora wa Hongo thoko-inĩ nĩigana?",
+            "source": "How much is hawk at the market?"
+          },
+          {
+            "target": "Thogora wa Ikunde thoko-inĩ nĩigana?",
+            "source": "How much is herd at the market?"
+          }
         ]
-}
+      }
     ]
   }
 ];
