@@ -283,8 +283,10 @@ export default function StampDutyCalculatorPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
             <div className="space-y-1.5">
               <p className="font-bold text-gold">Property Buyer Verification Steps</p>
-              {realEstateAgentsData.verificationGuide.steps.map((st, idx) => (
-                <p key={idx} className="text-text-secondary">• {st}</p>
+              {realEstateAgentsData.verificationGuide.steps.map((st) => (
+                <p key={st.step} className="text-text-secondary">
+                  • <strong className="text-text-primary">{st.title}:</strong> {st.description}
+                </p>
               ))}
             </div>
             <div className="space-y-1.5">

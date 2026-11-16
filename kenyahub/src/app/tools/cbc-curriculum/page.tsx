@@ -321,7 +321,7 @@ export default function CBCCurriculumPage() {
                   </div>
                   {term.midTermBreak && (
                     <span className="text-[0.6875rem] text-gold font-medium shrink-0">
-                      Half-Term: {term.midTermBreak}
+                      Half-Term: {term.midTermBreak.start} to {term.midTermBreak.end}
                     </span>
                   )}
                 </div>
