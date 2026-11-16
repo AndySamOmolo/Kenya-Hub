@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import stampDutyData from "@/data/stamp-duty-rates.json";
+import realEstateAgentsData from "@/data/real-estate-agents.json";
 
 const tool = TOOLS.find((t) => t.slug === "stamp-duty-calculator")!;
 
@@ -272,6 +273,27 @@ export default function StampDutyCalculatorPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* EARB Cap 533 Estate Agents Verification & Buyer Red Flags */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            {realEstateAgentsData.verificationGuide.title} ({realEstateAgentsData.source})
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div className="space-y-1.5">
+              <p className="font-bold text-gold">Property Buyer Verification Steps</p>
+              {realEstateAgentsData.verificationGuide.steps.map((st, idx) => (
+                <p key={idx} className="text-text-secondary">• {st}</p>
+              ))}
+            </div>
+            <div className="space-y-1.5">
+              <p className="font-bold text-kenya-red-light">Conveyancing &amp; Agency Red Flags</p>
+              {realEstateAgentsData.redFlags.slice(0, 4).map((rf, idx) => (
+                <p key={idx} className="text-text-secondary">• <strong className="text-text-primary">{rf.flag}:</strong> {rf.risk}</p>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </ToolShell>

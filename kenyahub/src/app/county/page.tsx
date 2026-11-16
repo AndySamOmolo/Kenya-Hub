@@ -701,7 +701,7 @@ export default function CountyIndexPage() {
       )}
 
       {filtered.length === 0 && activeTab !== "compare" && (
-        <div className="text-center py-16">
+        <div data-adsense-pause="true" className="text-center py-16">
           <div className="flex justify-center mb-3">
             <DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" />
           </div>

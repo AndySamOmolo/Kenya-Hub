@@ -70,7 +70,7 @@ export default function AboutPage() {
       "@type": "Organization",
       name: "KenyaHub",
       url: "https://kenyahub.me",
-      logo: "https://kenyahub.me/og-image.png",
+      logo: "https://kenyahub.me/icon-512.png",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Nairobi",
@@ -135,7 +135,7 @@ export default function AboutPage() {
           <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="💡" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Free Public Access</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
-            All {TOOLS.length} specialized tools, 47 county profiles, 64+ matatu route maps, and 22 language courses on KenyaHub are free to use without accounts or paywalls.
+            All {TOOLS.length} specialized tools, 47 county profiles, 64+ matatu route maps, and 23 language courses on KenyaHub are free to use without accounts or paywalls.
           </p>
         </div>
 
@@ -167,7 +167,7 @@ export default function AboutPage() {
           <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🌍" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Cultural &amp; Linguistic Heritage</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
-            Preserves 23 Kenyan languages through structured interactive courses, 50,000+ dictionary entries, and authenticated historical oral literature (1842–1929).
+            Preserves 23 Kenyan languages through structured interactive courses, 300,067+ verified dictionary and course entries, and authenticated historical oral literature (1840–2026).
           </p>
         </div>
 

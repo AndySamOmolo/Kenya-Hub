@@ -57,8 +57,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Learn foundational Kiswahili greetings and noun singular/plural pairs.",
         "words": [
           {
-            "target": "Hujambo! / Habari yako?",
-            "source": "Hello! / How is your news?",
+            "target": "Hujambo!",
+            "source": "Hello!",
+            "pronunciation": "hu-jambo / ha-ba-ri ya-ko"
+          },
+          {
+            "target": "Habari yako?",
+            "source": "How is your news?",
             "pronunciation": "hu-jambo / ha-ba-ri ya-ko"
           },
           {
@@ -87,8 +92,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ki-tu"
           },
           {
-            "target": "maji / moto",
-            "source": "water / fire",
+            "target": "maji",
+            "source": "water",
+            "pronunciation": "ma-ji / mo-to"
+          },
+          {
+            "target": "moto",
+            "source": "fire",
             "pronunciation": "ma-ji / mo-to"
           },
           {
@@ -120,63 +130,79 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Hujambo! / Habari yako?\" in Kiswahili?",
-            "correctAnswer": "Hello! / How is your news?",
+            "prompt": "What is the English meaning of \"Hujambo!\" in Kiswahili?",
+            "correctAnswer": "Hello!",
             "options": [
-              "Thank you very much",
-              "person (pl. people)",
-              "child (pl. children)",
-              "Hello! / How is your news?"
+              "person",
+              "Hello!",
+              "child",
+              "guest"
             ],
-            "hint": "Response: Sijambo! / Njema! (Steere 1894 & Burt 1910)"
+            "hint": "Response: Sijambo! / Njema! (Steere 1894 & Burt 1910)",
+            "acceptedAnswers": [
+              "Hello! / How is your news?",
+              "Hello!"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Asante sana\" in Kiswahili?",
             "correctAnswer": "Thank you very much",
             "options": [
-              "person (pl. people)",
-              "child (pl. children)",
+              "How is your news?",
               "Thank you very much",
-              "Hello! / How is your news?"
+              "Hello!",
+              "person"
             ],
             "hint": "Polite gratitude"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mtu (pl. watu)\" in Kiswahili?",
-            "correctAnswer": "person (pl. people)",
+            "correctAnswer": "person",
             "options": [
-              "child (pl. children)",
-              "person (pl. people)",
-              "Hello! / How is your news?",
-              "Thank you very much"
+              "child",
+              "Hello!",
+              "guest",
+              "person"
             ],
-            "hint": "Class 1/2 m-/wa- (Krapf 1882 & Hinde 1904)"
+            "hint": "Class 1/2 m-/wa- (Krapf 1882 & Hinde 1904)",
+            "acceptedAnswers": [
+              "person (pl. people)",
+              "person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"person (pl. people)\" in Kiswahili?",
-            "correctAnswer": "mtu (pl. watu)",
+            "correctAnswer": "mtu",
             "options": [
-              "mtu (pl. watu)",
-              "Hujambo! / Habari yako?",
+              "Hujambo!",
+              "mtu",
               "Asante sana",
-              "mtoto (pl. watoto)"
+              "mtoto"
             ],
-            "hint": "m-too / wah-too"
+            "hint": "m-too / wah-too",
+            "acceptedAnswers": [
+              "mtu (pl. watu)",
+              "mtu"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"child (pl. children)\" in Kiswahili?",
-            "correctAnswer": "mtoto (pl. watoto)",
+            "correctAnswer": "mtoto",
             "options": [
-              "Hujambo! / Habari yako?",
+              "mtoto",
+              "Hujambo!",
               "Asante sana",
-              "mtu (pl. watu)",
-              "mtoto (pl. watoto)"
+              "mtu"
             ],
-            "hint": "m-toh-toh / wah-toh-toh"
+            "hint": "m-toh-toh / wah-toh-toh",
+            "acceptedAnswers": [
+              "mtoto (pl. watoto)",
+              "mtoto"
+            ]
           },
           {
             "type": "match_pairs",
@@ -204,14 +230,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kiswahili term for \"guest / stranger\": ___",
-            "correctAnswer": "mgeni (pl. wageni)",
+            "correctAnswer": "mgeni",
             "options": [
-              "Hujambo! / Habari yako?",
+              "mgeni",
+              "Hujambo!",
               "Asante sana",
-              "mtu (pl. watu)",
-              "mgeni (pl. wageni)"
+              "mtu"
             ],
-            "hint": "Class 1/2 m-/wa- (Hinde 1904)"
+            "hint": "Class 1/2 m-/wa- (Hinde 1904)",
+            "acceptedAnswers": [
+              "mgeni (pl. wageni)",
+              "mgeni"
+            ]
           }
         ]
       },
@@ -252,18 +282,53 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "si-ta sa-ba na-ne kenda ku-mi"
           },
           {
-            "target": "ninashinda / nilishinda / nitashinda",
-            "source": "I pass the day / I passed / I shall pass",
+            "target": "ninashinda",
+            "source": "I pass the day",
             "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
           },
           {
-            "target": "sishindi / sikushinda / sijashinda",
-            "source": "I do not / I did not / I have not yet passed the day",
+            "target": "nilishinda",
+            "source": "I passed",
+            "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
+          },
+          {
+            "target": "nitashinda",
+            "source": "I shall pass",
+            "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
+          },
+          {
+            "target": "sishindi",
+            "source": "I do not",
             "pronunciation": "sishindi / si-kushinda / si-jashinda"
           },
           {
-            "target": "kula / kunywa / kuja / kwenda",
-            "source": "to eat / to drink / to come / to go",
+            "target": "sikushinda",
+            "source": "I did not",
+            "pronunciation": "sishindi / si-kushinda / si-jashinda"
+          },
+          {
+            "target": "sijashinda",
+            "source": "I have not yet passed the day",
+            "pronunciation": "sishindi / si-kushinda / si-jashinda"
+          },
+          {
+            "target": "kula",
+            "source": "to eat",
+            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+          },
+          {
+            "target": "kunywa",
+            "source": "to drink",
+            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+          },
+          {
+            "target": "kuja",
+            "source": "to come",
+            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+          },
+          {
+            "target": "kwenda",
+            "source": "to go",
             "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
           },
           {
@@ -285,7 +350,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Haba na haba hujaza kibaba.",
-            "source": "Little by little fills the measure (Taylor 1891 #70 & Steere 1894)."
+            "source": "Little by little fills the measure ."
           },
           {
             "target": "Mzee alitaja sita nyumbani.",
@@ -296,62 +361,82 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"moja, mbili, tatu, nne, tano\" in Kiswahili?",
-            "correctAnswer": "1, 2, 3, 4, 5",
+            "correctAnswer": "1",
             "options": [
-              "6, 7, 8, 9, 10",
-              "I pass the day / I passed / I shall pass",
-              "I do not / I did not / I have not yet passed the day",
-              "1, 2, 3, 4, 5"
+              "1",
+              "6",
+              "I do not",
+              "One"
             ],
-            "hint": "Cardinal numbers 1–5 (Hinde 1904 & Steere 1894)"
+            "hint": "Cardinal numbers 1–5 (Hinde 1904 & Steere 1894)",
+            "acceptedAnswers": [
+              "1, 2, 3, 4, 5",
+              "1"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"sita, saba (mfungate), nane, kenda (tisa), kumi\" in Kiswahili?",
-            "correctAnswer": "6, 7, 8, 9, 10",
+            "correctAnswer": "6",
             "options": [
-              "I pass the day / I passed / I shall pass",
-              "I do not / I did not / I have not yet passed the day",
+              "I do not",
+              "1",
+              "One",
+              "6"
+            ],
+            "hint": "Krapf (1882) & Hinde (1904) preserve Bantu mfungate (7) & kenda (9)",
+            "acceptedAnswers": [
               "6, 7, 8, 9, 10",
-              "1, 2, 3, 4, 5"
-            ],
-            "hint": "Krapf (1882) & Hinde (1904) preserve Bantu mfungate (7) & kenda (9)"
+              "6"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ninashinda / nilishinda / nitashinda\" in Kiswahili?",
-            "correctAnswer": "I pass the day / I passed / I shall pass",
+            "prompt": "What is the English meaning of \"ninashinda\" in Kiswahili?",
+            "correctAnswer": "I pass the day",
             "options": [
-              "I do not / I did not / I have not yet passed the day",
+              "I do not",
+              "I passed",
+              "I shall pass",
+              "I pass the day"
+            ],
+            "hint": "Hinde (1904) paradigm verb ku-shinda",
+            "acceptedAnswers": [
               "I pass the day / I passed / I shall pass",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10"
-            ],
-            "hint": "Hinde (1904) paradigm verb ku-shinda"
+              "I pass the day"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"I pass the day / I passed / I shall pass\" in Kiswahili?",
-            "correctAnswer": "ninashinda / nilishinda / nitashinda",
+            "prompt": "How do you say \"I pass the day\" in Kiswahili?",
+            "correctAnswer": "ninashinda",
             "options": [
-              "ninashinda / nilishinda / nitashinda",
-              "moja, mbili, tatu, nne, tano",
-              "sita, saba (mfungate), nane, kenda (tisa), kumi",
-              "sishindi / sikushinda / sijashinda"
+              "moja",
+              "sita",
+              "sishindi",
+              "ninashinda"
             ],
-            "hint": "nee-nah-sheen-dah"
+            "hint": "nee-nah-sheen-dah",
+            "acceptedAnswers": [
+              "ninashinda / nilishinda / nitashinda",
+              "ninashinda"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"I do not / I did not / I have not yet passed the day\" in Kiswahili?",
-            "correctAnswer": "sishindi / sikushinda / sijashinda",
+            "prompt": "How do you say \"I do not\" in Kiswahili?",
+            "correctAnswer": "sishindi",
             "options": [
-              "moja, mbili, tatu, nne, tano",
-              "sita, saba (mfungate), nane, kenda (tisa), kumi",
-              "ninashinda / nilishinda / nitashinda",
-              "sishindi / sikushinda / sijashinda"
+              "moja",
+              "sita",
+              "ninashinda",
+              "sishindi"
             ],
-            "hint": "see-sheen-dee"
+            "hint": "see-sheen-dee",
+            "acceptedAnswers": [
+              "sishindi / sikushinda / sijashinda",
+              "sishindi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -378,15 +463,19 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kiswahili term for \"to eat / to drink / to come / to go\": ___",
-            "correctAnswer": "kula / kunywa / kuja / kwenda",
+            "prompt": "Complete the Kiswahili term for \"to eat\": ___",
+            "correctAnswer": "kula",
             "options": [
-              "moja, mbili, tatu, nne, tano",
-              "sita, saba (mfungate), nane, kenda (tisa), kumi",
-              "ninashinda / nilishinda / nitashinda",
-              "kula / kunywa / kuja / kwenda"
+              "moja",
+              "kula",
+              "sita",
+              "ninashinda"
             ],
-            "hint": "Core infinitive verbs (Madan 1917)"
+            "hint": "Core infinitive verbs (Madan 1917)",
+            "acceptedAnswers": [
+              "kula / kunywa / kuja / kwenda",
+              "kula"
+            ]
           }
         ]
       }
@@ -422,8 +511,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ku-vunja → ku-vunji-ka"
           },
           {
-            "target": "shokangwa / jembengwa / kitingwa (Taylor 1891 -ngwa)",
-            "source": "someone else's axe / hoe / stool (possessive pronoun of alienation = -a wat'u)",
+            "target": "shokangwa",
+            "source": "someone else's axe",
+            "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
+          },
+          {
+            "target": "jembengwa",
+            "source": "hoe",
+            "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
+          },
+          {
+            "target": "kitingwa (Taylor 1891 -ngwa)",
+            "source": "stool (possessive pronoun of alienation = -a wat'u)",
             "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
           },
           {
@@ -460,63 +559,83 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kupenda → kupendea → kupendeza → kupendana\" in Kiswahili?",
-            "correctAnswer": "to love → love for/by → please (cause to love) → love each other",
+            "prompt": "What is the English meaning of \"kupenda\" in Kiswahili?",
+            "correctAnswer": "to love",
             "options": [
-              "to fasten/shut → fasten for/with → unfasten (reversive) → become unfastened",
-              "to break (trans.) → to be broken / breakable (stative)",
-              "someone else's axe / hoe / stool (possessive pronoun of alienation = -a wat'u)",
-              "to love → love for/by → please (cause to love) → love each other"
+              "to fasten",
+              "to love",
+              "to break",
+              "someone else's axe"
             ],
-            "hint": "Madan (1903) Simple, Applied, Causative, & Reciprocal stems"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kufunga → kufungia → kufungua → kufunguka\" in Kiswahili?",
-            "correctAnswer": "to fasten/shut → fasten for/with → unfasten (reversive) → become unfastened",
-            "options": [
-              "to break (trans.) → to be broken / breakable (stative)",
-              "someone else's axe / hoe / stool (possessive pronoun of alienation = -a wat'u)",
-              "to fasten/shut → fasten for/with → unfasten (reversive) → become unfastened",
-              "to love → love for/by → please (cause to love) → love each other"
-            ],
-            "hint": "Madan (1903) Reversive -ua & Stative -uka"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kuvunja → kuvunjika\" in Kiswahili?",
-            "correctAnswer": "to break (trans.) → to be broken / breakable (stative)",
-            "options": [
-              "someone else's axe / hoe / stool (possessive pronoun of alienation = -a wat'u)",
-              "to break (trans.) → to be broken / breakable (stative)",
+            "hint": "Madan (1903) Simple, Applied, Causative, & Reciprocal stems",
+            "acceptedAnswers": [
               "to love → love for/by → please (cause to love) → love each other",
-              "to fasten/shut → fasten for/with → unfasten (reversive) → become unfastened"
+              "to love"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kufunga\" in Kiswahili?",
+            "correctAnswer": "to fasten",
+            "options": [
+              "to break",
+              "someone else's axe",
+              "to love",
+              "to fasten"
             ],
-            "hint": "Madan (1903) Neuter/Stative -ika"
+            "hint": "Madan (1903) Reversive -ua & Stative -uka",
+            "acceptedAnswers": [
+              "to fasten/shut → fasten for/with → unfasten (reversive) → become unfastened",
+              "to fasten"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kuvunja\" in Kiswahili?",
+            "correctAnswer": "to break",
+            "options": [
+              "someone else's axe",
+              "to love",
+              "to break",
+              "to fasten"
+            ],
+            "hint": "Madan (1903) Neuter/Stative -ika",
+            "acceptedAnswers": [
+              "to break (trans.) → to be broken / breakable (stative)",
+              "to break"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"to break (trans.) → to be broken / breakable (stative)\" in Kiswahili?",
-            "correctAnswer": "kuvunja → kuvunjika",
+            "correctAnswer": "kuvunja",
             "options": [
-              "kuvunja → kuvunjika",
-              "kupenda → kupendea → kupendeza → kupendana",
-              "kufunga → kufungia → kufungua → kufunguka",
-              "shokangwa / jembengwa / kitingwa (Taylor 1891 -ngwa)"
+              "kuvunja",
+              "kupenda",
+              "kufunga",
+              "shokangwa"
             ],
-            "hint": "koo-voon-jah / koo-voon-jee-kah"
+            "hint": "koo-voon-jah / koo-voon-jee-kah",
+            "acceptedAnswers": [
+              "kuvunja → kuvunjika",
+              "kuvunja"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"someone else's axe / hoe / stool (possessive pronoun of alienation = -a wat'u)\" in Kiswahili?",
-            "correctAnswer": "shokangwa / jembengwa / kitingwa (Taylor 1891 -ngwa)",
+            "prompt": "How do you say \"someone else's axe\" in Kiswahili?",
+            "correctAnswer": "shokangwa",
             "options": [
-              "kupenda → kupendea → kupendeza → kupendana",
-              "kufunga → kufungia → kufungua → kufunguka",
-              "kuvunja → kuvunjika",
-              "shokangwa / jembengwa / kitingwa (Taylor 1891 -ngwa)"
+              "kupenda",
+              "kufunga",
+              "shokangwa",
+              "kuvunja"
             ],
-            "hint": "sho-kan-gwa / jem-ben-gwa / ki-tin-gwa"
+            "hint": "Starts with \"sh…\" (9 letters)",
+            "acceptedAnswers": [
+              "shokangwa / jembengwa / kitingwa (Taylor 1891 -ngwa)",
+              "shokangwa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -553,12 +672,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mfalme (pl. wafalme) / jumbe / sultani",
-            "source": "King / Chief",
+            "target": "mfalme (pl. wafalme)",
+            "source": "King",
             "pronunciation": "mfalme / jumbe / sulta-ni"
           },
           {
-            "target": "mtu, pl. watu",
+            "target": "jumbe",
+            "source": "Chief",
+            "pronunciation": "mfalme / jumbe / sulta-ni"
+          },
+          {
+            "target": "mtu",
             "source": "Man",
             "pronunciation": "mtu"
           },
@@ -568,7 +692,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "mwana"
           },
           {
-            "target": "kijana, pl. vijana",
+            "target": "kijana",
             "source": "Girl",
             "pronunciation": "kijana"
           },
@@ -593,7 +717,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "she-me-gi"
           },
           {
-            "target": "mfalme, pl. wafalme",
+            "target": "mfalme",
             "source": "chief",
             "pronunciation": "mfalme"
           }
@@ -601,25 +725,29 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mfalme — mtu, pl. watu",
-            "source": "King — Man"
+            "source": "King — Man."
           },
           {
             "target": "mwana, mtoto, — kijana, pl. vijana",
-            "source": "Son — Girl"
+            "source": "Son — Girl."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"mfalme\" mean in English?",
-            "correctAnswer": "King / Chief",
+            "correctAnswer": "King",
             "options": [
-              "King / Chief",
               "Man",
               "Son",
-              "Girl"
+              "Girl",
+              "King"
             ],
-            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
+            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles",
+            "acceptedAnswers": [
+              "King / Chief",
+              "King"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -678,7 +806,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mtoto, pl. watoto",
+            "target": "mtoto",
             "source": "child",
             "pronunciation": "mto-to"
           },
@@ -688,7 +816,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ku-tambaa"
           },
           {
-            "target": "mzee, pl. wazee",
+            "target": "mzee",
             "source": "elder",
             "pronunciation": "mzee"
           },
@@ -698,22 +826,22 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ba-ba"
           },
           {
-            "target": "mkwe, pl. wakwe",
+            "target": "mkwe",
             "source": "father-in-law",
             "pronunciation": "mkwe"
           },
           {
-            "target": "mume, pl. waume",
+            "target": "mume",
             "source": "husband",
             "pronunciation": "mu-me"
           },
           {
-            "target": "mtu, pl. watu",
+            "target": "mtu",
             "source": "man",
             "pronunciation": "mtu"
           },
           {
-            "target": "mganga, pl. waganga",
+            "target": "mganga",
             "source": "medicine man",
             "pronunciation": "mganga"
           },
@@ -726,11 +854,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mtoto, pl. watoto — kutambaa",
-            "source": "child — crawl"
+            "source": "child — crawl."
           },
           {
             "target": "mzee, pl. wazee — baba",
-            "source": "elder — father"
+            "source": "elder — father."
           }
         ],
         "authoredExercises": [
@@ -739,10 +867,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"mtoto, pl. watoto\" mean in English?",
             "correctAnswer": "child",
             "options": [
-              "child",
-              "crawl (a man)",
+              "crawl",
               "elder",
-              "father"
+              "father",
+              "child"
             ],
             "hint": "Core vocabulary in Clans, Marriage & Community Life"
           },
@@ -861,11 +989,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "-ote — sisi sote",
-            "source": "all — all of us"
+            "source": "all — all of us."
           },
           {
             "target": "moja — sita",
-            "source": "One — Six"
+            "source": "One — Six."
           }
         ],
         "authoredExercises": [
@@ -1020,9 +1148,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "five",
             "options": [
               "five times",
-              "five",
               "fifty",
-              "first"
+              "first",
+              "five"
             ],
             "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
           },
@@ -1031,12 +1159,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"five\" in Kiswahili?",
             "correctAnswer": "tano",
             "options": [
-              "tano",
               "hamsini",
               "kwanza",
-              "mara tano"
+              "mara tano",
+              "tano"
             ],
-            "hint": "tano"
+            "hint": "Starts with \"ta…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -1045,10 +1173,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "hamsini",
               "kwanza",
-              "tano",
-              "mara tano"
+              "mara tano",
+              "tano"
             ],
-            "hint": "mara tano"
+            "hint": "Starts with \"ma…\" (9 letters)"
           },
           {
             "type": "match_pairs",
@@ -1078,10 +1206,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"forty\": ___",
             "correctAnswer": "arobaini",
             "options": [
+              "arobaini",
               "hamsini",
               "kwanza",
-              "tano",
-              "arobaini"
+              "tano"
             ],
             "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
           }
@@ -1105,8 +1233,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "ugali / uji / sima",
-            "source": "Porridge / Ugali",
+            "target": "ugali",
+            "source": "Porridge",
+            "pronunciation": "u-ga-li / uji / si-ma"
+          },
+          {
+            "target": "uji",
+            "source": "Ugali",
             "pronunciation": "u-ga-li / uji / si-ma"
           },
           {
@@ -1159,63 +1292,71 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ugali / uji / sima\" in Kiswahili?",
-            "correctAnswer": "Porridge / Ugali",
+            "prompt": "What is the English meaning of \"ugali\" in Kiswahili?",
+            "correctAnswer": "Porridge",
             "options": [
+              "Porridge",
               "banana",
-              "bear fruit (to)",
-              "beer (native)",
-              "Porridge / Ugali"
+              "bear fruit",
+              "beer"
             ],
-            "hint": "Krapf 1882 & Madan 1903"
+            "hint": "Krapf 1882 & Madan 1903",
+            "acceptedAnswers": [
+              "Porridge / Ugali",
+              "Porridge"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ndizi\" in Kiswahili?",
             "correctAnswer": "banana",
             "options": [
-              "bear fruit (to)",
-              "beer (native)",
+              "bear fruit",
+              "beer",
               "banana",
-              "Porridge / Ugali"
+              "Porridge"
             ],
             "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kuzaa\" in Kiswahili?",
-            "correctAnswer": "bear fruit (to)",
+            "correctAnswer": "bear fruit",
             "options": [
-              "beer (native)",
-              "bear fruit (to)",
-              "Porridge / Ugali",
+              "beer",
+              "Porridge",
+              "bear fruit",
               "banana"
             ],
-            "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
+            "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili",
+            "acceptedAnswers": [
+              "bear fruit (to)",
+              "bear fruit"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"bear fruit (to)\" in Kiswahili?",
             "correctAnswer": "kuzaa",
             "options": [
-              "kuzaa",
-              "ugali / uji / sima",
+              "ugali",
               "ndizi",
-              "tembo"
+              "tembo",
+              "kuzaa"
             ],
-            "hint": "kuzaa"
+            "hint": "Starts with \"ku…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"beer (native)\" in Kiswahili?",
             "correctAnswer": "tembo",
             "options": [
-              "ugali / uji / sima",
+              "ugali",
+              "tembo",
               "ndizi",
-              "kuzaa",
-              "tembo"
+              "kuzaa"
             ],
-            "hint": "tembo"
+            "hint": "Starts with \"te…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1245,10 +1386,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"bitter\": ___",
             "correctAnswer": "-chungu",
             "options": [
-              "ugali / uji / sima",
+              "-chungu",
+              "ugali",
               "ndizi",
-              "kuzaa",
-              "-chungu"
+              "kuzaa"
             ],
             "hint": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili"
           }
@@ -1262,7 +1403,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mahogo, pl. hogo",
+            "target": "mahogo",
             "source": "cassava",
             "pronunciation": "ma-ho-go"
           },
@@ -1292,7 +1433,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ku-la"
           },
           {
-            "target": "yayi, pl. mayayi",
+            "target": "yayi",
             "source": "egg",
             "pronunciation": "ya-yi"
           },
@@ -1310,11 +1451,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mahogo, pl. hogo — mbarika",
-            "source": "cassava — castor-oil tree"
+            "source": "cassava — castor-oil tree."
           },
           {
             "target": "kutafuna — kupika",
-            "source": "chew — cook"
+            "source": "chew — cook."
           }
         ],
         "authoredExercises": [
@@ -1325,7 +1466,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "cassava",
               "castor-oil tree",
-              "chew (tobacco)",
+              "chew",
               "cook"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
@@ -1432,7 +1573,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "swarra"
           },
           {
-            "target": "jifu, pl. majifu; ivu, pl. maivu",
+            "target": "jifu",
             "source": "ashes",
             "pronunciation": "ji-fu"
           },
@@ -1445,11 +1586,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "fisi — popo",
-            "source": "Hyena — Bat"
+            "source": "Hyena — Bat."
           },
           {
             "target": "ngwiro — chungu",
-            "source": "ant — ant"
+            "source": "ant — ant."
           }
         ],
         "authoredExercises": [
@@ -1458,10 +1599,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"fisi\" mean in English?",
             "correctAnswer": "Hyena",
             "options": [
-              "Hyena",
               "Bat",
-              "ant (large black)",
-              "ant (small black)"
+              "ant",
+              "Hyena",
+              "antelope"
             ],
             "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
           },
@@ -1527,7 +1668,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ni"
           },
           {
-            "target": "mbuyu, pl. mibuyu",
+            "target": "mbuyu",
             "source": "baobab tree",
             "pronunciation": "mbu-yu"
           },
@@ -1570,11 +1711,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "nyani — mbuyu, pl. mibuyu",
-            "source": "baboon — baobab tree"
+            "source": "baboon — baobab tree."
           },
           {
             "target": "kulia — ganda, gome",
-            "source": "bark — bark"
+            "source": "bark — bark."
           }
         ],
         "authoredExercises": [
@@ -1586,7 +1727,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "baboon",
               "baobab tree",
               "bark",
-              "bark (of tree)"
+              "beans"
             ],
             "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
           },
@@ -1657,13 +1798,23 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "maumivu / uchungu",
-            "source": "Pain / Ache",
+            "target": "maumivu",
+            "source": "Pain",
             "pronunciation": "mau-mi-vu / uchungu"
           },
           {
-            "target": "ugonjwa / maradhi",
-            "source": "Sickness / Illness",
+            "target": "uchungu",
+            "source": "Ache",
+            "pronunciation": "mau-mi-vu / uchungu"
+          },
+          {
+            "target": "ugonjwa",
+            "source": "Sickness",
+            "pronunciation": "u-gonjwa / ma-radhi"
+          },
+          {
+            "target": "maradhi",
+            "source": "Illness",
             "pronunciation": "u-gonjwa / ma-radhi"
           },
           {
@@ -1672,8 +1823,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "da-wa"
           },
           {
-            "target": "mganga (pl. waganga) / tabibu",
-            "source": "Healer / Physician",
+            "target": "mganga (pl. waganga)",
+            "source": "Healer",
+            "pronunciation": "mganga / ta-bi-bu"
+          },
+          {
+            "target": "tabibu",
+            "source": "Physician",
             "pronunciation": "mganga / ta-bi-bu"
           },
           {
@@ -1687,17 +1843,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ha-ta-ri"
           },
           {
-            "target": "jicho, pl. macho",
+            "target": "jicho",
             "source": "Eye",
             "pronunciation": "jicho"
           },
           {
-            "target": "mguu, pl. miguu",
+            "target": "mguu",
             "source": "Leg",
             "pronunciation": "mguu"
           },
           {
-            "target": "sikio, pl. masikio",
+            "target": "sikio",
             "source": "Ear",
             "pronunciation": "sikio"
           }
@@ -1705,25 +1861,29 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "maumivu — ugonjwa",
-            "source": "Pain — Sickness"
+            "source": "Pain — Sickness."
           },
           {
             "target": "dawa — mganga",
-            "source": "Medicine — Healer"
+            "source": "Medicine — Healer."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"maumivu\" mean in English?",
-            "correctAnswer": "Pain / Ache",
+            "correctAnswer": "Pain",
             "options": [
-              "Pain / Ache",
-              "Sickness / Illness",
-              "Medicine / Remedy",
-              "Healer / Physician"
+              "Pain",
+              "Sickness",
+              "Medicine",
+              "Healer"
             ],
-            "hint": "Core vocabulary in Parts of the Body & Physical Senses"
+            "hint": "Core vocabulary in Parts of the Body & Physical Senses",
+            "acceptedAnswers": [
+              "Pain / Ache",
+              "Pain"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1782,7 +1942,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "tumbo, plur. ma-",
+            "target": "tumbo, plur. ma",
             "source": "Bowels",
             "pronunciation": "tumbo"
           },
@@ -1797,22 +1957,22 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-me-ku-fa"
           },
           {
-            "target": "jicho, pl. macho",
+            "target": "jicho",
             "source": "Eye",
             "pronunciation": "jicho"
           },
           {
-            "target": "mguu, pl. miguu",
+            "target": "mguu",
             "source": "Leg",
             "pronunciation": "mguu"
           },
           {
-            "target": "ubavu, pl. mbavu",
+            "target": "ubavu",
             "source": "Rib",
             "pronunciation": "ubavu"
           },
           {
-            "target": "kidole, pl. vidole",
+            "target": "kidole",
             "source": "Toe",
             "pronunciation": "kidole"
           },
@@ -1830,11 +1990,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tumbo, plur. ma- — fa",
-            "source": "Bowels — become Dead"
+            "source": "Bowels — become Dead."
           },
           {
             "target": "amekufa — jicho, pl. macho",
-            "source": "He is dead — Eye"
+            "source": "He is dead — Eye."
           }
         ],
         "authoredExercises": [
@@ -1843,10 +2003,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"tumbo, plur. ma-\" mean in English?",
             "correctAnswer": "Bowels",
             "options": [
-              "Bowels",
               "become Dead",
               "He is dead",
-              "Eye"
+              "Eye",
+              "Bowels"
             ],
             "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
           },
@@ -1965,11 +2125,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kusema — kulala",
-            "source": "Speak — Sleep"
+            "source": "Speak — Sleep."
           },
           {
             "target": "kwenda — tenda, fanya, faa",
-            "source": "Go — Do"
+            "source": "Go — Do."
           }
         ],
         "authoredExercises": [
@@ -2090,11 +2250,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tia — oza",
-            "source": "Put — Rot"
+            "source": "Put — Rot."
           },
           {
             "target": "sugua — piga mbio, kimbia, toroka",
-            "source": "Rub — Run"
+            "source": "Rub — Run."
           }
         ],
         "authoredExercises": [
@@ -2103,10 +2263,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"tia\" mean in English?",
             "correctAnswer": "Put",
             "options": [
-              "Put",
               "Rot",
               "Rub",
-              "Run"
+              "Run",
+              "Put"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
@@ -2187,13 +2347,28 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "si-ku ya mwa-ka"
           },
           {
-            "target": "leo / jana / kesho",
-            "source": "Today / Yesterday / Tomorrow",
+            "target": "leo",
+            "source": "Today",
             "pronunciation": "leo / ja-na / kesho"
           },
           {
-            "target": "jioni / magharibi",
-            "source": "Evening / Sunset (6 p.m.)",
+            "target": "jana",
+            "source": "Yesterday",
+            "pronunciation": "leo / ja-na / kesho"
+          },
+          {
+            "target": "kesho",
+            "source": "Tomorrow",
+            "pronunciation": "leo / ja-na / kesho"
+          },
+          {
+            "target": "jioni",
+            "source": "Evening",
+            "pronunciation": "jio-ni / magha-ri-bi"
+          },
+          {
+            "target": "magharibi",
+            "source": "Sunset (6 p.m.)",
             "pronunciation": "jio-ni / magha-ri-bi"
           },
           {
@@ -2212,8 +2387,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-su-bu-hi"
           },
           {
-            "target": "alfajiri / mapambazuko",
-            "source": "Dawn / Daybreak",
+            "target": "alfajiri",
+            "source": "Dawn",
+            "pronunciation": "alfa-ji-ri / ma-pamba-zu-ko"
+          },
+          {
+            "target": "mapambazuko",
+            "source": "Daybreak",
             "pronunciation": "alfa-ji-ri / ma-pamba-zu-ko"
           },
           {
@@ -2225,11 +2405,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mwongo — Siku ya Mwaka",
-            "source": "Ten-Day Agricultural Decade — Solar New Year Festival"
+            "source": "Ten-Day Agricultural Decade — Solar New Year Festival."
           },
           {
             "target": "leo — jioni",
-            "source": "Today — Evening"
+            "source": "Today — Evening."
           }
         ],
         "authoredExercises": [
@@ -2238,10 +2418,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"mwongo\" mean in English?",
             "correctAnswer": "Ten-Day Agricultural Decade",
             "options": [
-              "Ten-Day Agricultural Decade",
               "Solar New Year Festival",
-              "Today / Yesterday / Tomorrow",
-              "Evening / Sunset (6 p.m.)"
+              "Today",
+              "Ten-Day Agricultural Decade",
+              "Evening"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2337,7 +2517,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "sasa"
           },
           {
-            "target": "Sīku. M-tsāna",
+            "target": "Sīku",
             "source": "Day",
             "pronunciation": "siku m-tsana"
           },
@@ -2350,11 +2530,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tangu siku kumi, leo siku kumi — mchana kuchwa",
-            "source": "Ten days ago — All day"
+            "source": "Ten days ago — All day."
           },
           {
             "target": "Juma — baadaye, halafu yake",
-            "source": "Friday — At a future time"
+            "source": "Friday — At a future time."
           }
         ],
         "authoredExercises": [
@@ -2363,10 +2543,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"tangu siku kumi, leo siku kumi\" mean in English?",
             "correctAnswer": "Ten days ago",
             "options": [
-              "Ten days ago",
               "All day",
               "Friday",
-              "At a future time"
+              "At a future time",
+              "Ten days ago"
             ],
             "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
           },
@@ -2485,11 +2665,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hujambo — amani",
-            "source": "Hello — Peace"
+            "source": "Hello — Peace."
           },
           {
             "target": "shukuru — salimía",
-            "source": "Thank — Greet"
+            "source": "Thank — Greet."
           }
         ],
         "authoredExercises": [
@@ -2498,8 +2678,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"Hujambo\" mean in English?",
             "correctAnswer": "Hello",
             "options": [
-              "Hello",
               "Peace",
+              "Hello",
               "Thank",
               "Greet"
             ],
@@ -2610,11 +2790,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "pendeza, furahisha — ata",
-            "source": "Please — Pardon"
+            "source": "Please — Pardon."
           },
           {
             "target": "Kwaheri — Karibu",
-            "source": "Goodbye — Welcome"
+            "source": "Goodbye — Welcome."
           }
         ],
         "authoredExercises": [
@@ -2623,8 +2803,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What does \"pendeza, furahisha\" mean in English?",
             "correctAnswer": "Please",
             "options": [
-              "Please",
               "Pardon",
+              "Please",
               "Goodbye",
               "Welcome"
             ],
@@ -2702,7 +2882,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "wingi te-le"
           },
           {
-            "target": "talasimu, plur. ma-",
+            "target": "talasimu, plur. ma",
             "source": "Amulet",
             "pronunciation": "ta-la-si-mu"
           },
@@ -2722,7 +2902,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ta-la-si-mu hi-ri-zi"
           },
           {
-            "target": "kanisa, plur. ma-",
+            "target": "kanisa, plur. ma",
             "source": "Church",
             "pronunciation": "ka-ni-sa"
           },
@@ -2766,9 +2946,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"talasimu, plur. ma-\" in Kiswahili?",
             "correctAnswer": "Amulet",
             "options": [
+              "Amulet",
               "Angel",
               "Breakfast",
-              "Amulet",
               "Abundance"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
@@ -2779,9 +2959,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "Angel",
             "options": [
               "Breakfast",
-              "Angel",
               "Abundance",
-              "Amulet"
+              "Amulet",
+              "Angel"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           },
@@ -2790,24 +2970,28 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Angel\" in Kiswahili?",
             "correctAnswer": "malaika",
             "options": [
-              "malaika",
-              "wingi, tele",
-              "talasimu, plur. ma-",
-              "chakula cha assubuhi, cha amsha kinwa, kifungua kinwa"
+              "wingi",
+              "talasimu",
+              "chakula cha assubuhi",
+              "malaika"
             ],
-            "hint": "malaika"
+            "hint": "Starts with \"ma…\" (7 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Breakfast\" in Kiswahili?",
-            "correctAnswer": "chakula cha assubuhi, cha amsha kinwa, kifungua kinwa",
+            "correctAnswer": "chakula cha assubuhi",
             "options": [
-              "wingi, tele",
-              "talasimu, plur. ma-",
-              "malaika",
-              "chakula cha assubuhi, cha amsha kinwa, kifungua kinwa"
+              "chakula cha assubuhi",
+              "wingi",
+              "talasimu",
+              "malaika"
             ],
-            "hint": "chakula cha assubuhi, cha amsha kinwa, kifungua kinwa"
+            "hint": "Starts with \"ch…\" (20 letters)",
+            "acceptedAnswers": [
+              "chakula cha assubuhi, cha amsha kinwa, kifungua kinwa",
+              "chakula cha assubuhi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2835,14 +3019,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kiswahili term for \"Charm\": ___",
-            "correctAnswer": "(magic) talasimu, hirizi",
+            "correctAnswer": "talasimu",
             "options": [
-              "wingi, tele",
-              "talasimu, plur. ma-",
+              "talasimu",
+              "wingi",
               "malaika",
-              "(magic) talasimu, hirizi"
+              "chakula cha assubuhi"
             ],
-            "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
+            "hint": "Madan (1917) English-Swahili Vocabulary (s.)",
+            "acceptedAnswers": [
+              "(magic) talasimu, hirizi",
+              "talasimu"
+            ]
           }
         ]
       },
@@ -2913,8 +3101,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "Fasten",
               "Fellow-slave",
-              "Funeral",
-              "Fast"
+              "Fast",
+              "Funeral"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (adv.)"
           },
@@ -2923,9 +3111,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"funga, kaza\" in Kiswahili?",
             "correctAnswer": "Fasten",
             "options": [
+              "Fasten",
               "Fellow-slave",
               "Funeral",
-              "Fasten",
               "Fast"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (v.)"
@@ -2935,8 +3123,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mjoli\" in Kiswahili?",
             "correctAnswer": "Fellow-slave",
             "options": [
-              "Funeral",
               "Fellow-slave",
+              "Funeral",
               "Fast",
               "Fasten"
             ],
@@ -2948,23 +3136,27 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "mjoli",
             "options": [
               "mjoli",
-              "upesi, hima",
-              "funga, kaza",
-              "kuzika, kuzikani"
+              "upesi",
+              "funga",
+              "kuzika"
             ],
-            "hint": "mjoli"
+            "hint": "Starts with \"mj…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Funeral\" in Kiswahili?",
-            "correctAnswer": "kuzika, kuzikani",
+            "correctAnswer": "kuzika",
             "options": [
-              "upesi, hima",
-              "funga, kaza",
-              "mjoli",
-              "kuzika, kuzikani"
+              "kuzika",
+              "upesi",
+              "funga",
+              "mjoli"
             ],
-            "hint": "kuzika, kuzikani"
+            "hint": "Starts with \"ku…\" (6 letters)",
+            "acceptedAnswers": [
+              "kuzika, kuzikani",
+              "kuzika"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2994,10 +3186,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"Gravel\": ___",
             "correctAnswer": "makokoto",
             "options": [
-              "upesi, hima",
-              "funga, kaza",
-              "mjoli",
-              "makokoto"
+              "upesi",
+              "makokoto",
+              "funga",
+              "mjoli"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           }
@@ -3042,7 +3234,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "(ask) taka, (intercede) ombea",
-            "source": "Pray for",
+            "source": "Pray",
             "pronunciation": "ta-ka ombea"
           },
           {
@@ -3061,7 +3253,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "u-tumwa"
           },
           {
-            "target": "pepo, jini, plur. ma-",
+            "target": "pepo, jini, plur. ma",
             "source": "Spirit",
             "pronunciation": "pe-po ji-ni"
           }
@@ -3078,10 +3270,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"moskiti\" in Kiswahili?",
             "correctAnswer": "Mosque",
             "options": [
+              "Mosque",
               "Noble",
               "Nobleman",
-              "Pray",
-              "Mosque"
+              "Pray"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           },
@@ -3092,8 +3284,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "Nobleman",
               "Pray",
-              "Noble",
-              "Mosque"
+              "Mosque",
+              "Noble"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (a.)"
           },
@@ -3102,8 +3294,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mtu mkubwa, jumbe\" in Kiswahili?",
             "correctAnswer": "Nobleman",
             "options": [
-              "Pray",
               "Nobleman",
+              "Pray",
               "Mosque",
               "Noble"
             ],
@@ -3112,26 +3304,34 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nobleman\" in Kiswahili?",
-            "correctAnswer": "mtu mkubwa, jumbe",
+            "correctAnswer": "mtu mkubwa",
             "options": [
-              "mtu mkubwa, jumbe",
               "moskiti",
-              "bora, -a daraja kuu",
-              "omba, sali"
+              "mtu mkubwa",
+              "bora",
+              "omba"
             ],
-            "hint": "mtu mkubwa, jumbe"
+            "hint": "Starts with \"mt…\" (10 letters)",
+            "acceptedAnswers": [
+              "mtu mkubwa, jumbe",
+              "mtu mkubwa"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Pray\" in Kiswahili?",
-            "correctAnswer": "omba, sali",
+            "correctAnswer": "omba",
             "options": [
               "moskiti",
-              "bora, -a daraja kuu",
-              "mtu mkubwa, jumbe",
-              "omba, sali"
+              "bora",
+              "mtu mkubwa",
+              "omba"
             ],
-            "hint": "omba, sali"
+            "hint": "Starts with \"om…\" (4 letters)",
+            "acceptedAnswers": [
+              "omba, sali",
+              "omba"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3197,7 +3397,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "chongea",
-            "source": "Tell tales of",
+            "source": "Tell tales",
             "pronunciation": "chongea"
           },
           {
@@ -3223,10 +3423,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"(liquor) mvinyo\" in Kiswahili?",
             "correctAnswer": "Spirits",
             "options": [
-              "be in good Spirits",
               "Story",
+              "Spirits",
               "Tell a story",
-              "Spirits"
+              "Sultan"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           },
@@ -3235,10 +3435,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"furahi, furahiwa moyo\" in Kiswahili?",
             "correctAnswer": "be in good Spirits",
             "options": [
-              "Story",
               "Tell a story",
+              "Tell tales",
               "be in good Spirits",
-              "Spirits"
+              "Of what tribe are you?"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (v.)"
           },
@@ -3342,10 +3542,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"fungua\" in Kiswahili?",
             "correctAnswer": "Unfasten",
             "options": [
-              "Of what tribe is he?",
               "Diviner",
+              "Unfasten",
               "Accustom",
-              "Unfasten"
+              "Bewitch"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (v.)"
           },
@@ -3354,10 +3554,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mtu gani yeye?\" in Kiswahili?",
             "correctAnswer": "Of what tribe is he?",
             "options": [
-              "Diviner",
-              "Accustom",
+              "Unfasten",
               "Of what tribe is he?",
-              "Unfasten"
+              "Diviner",
+              "Accustom"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (under What?)"
           },
@@ -3366,10 +3566,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mke mchawi\" in Kiswahili?",
             "correctAnswer": "Diviner",
             "options": [
-              "Accustom",
               "Diviner",
+              "Accustom",
               "Unfasten",
-              "Of what tribe is he?"
+              "Bewitch"
             ],
             "hint": "Madan (1917) English-Swahili Vocabulary (s.)"
           },
@@ -3381,21 +3581,25 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "mke mchawi",
               "fungua",
               "mtu gani yeye?",
-              "soéṣa; tía áda"
+              "soéṣa"
             ],
-            "hint": "mke mchawi"
+            "hint": "Starts with \"mk…\" (10 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Accustom\" in Kiswahili?",
-            "correctAnswer": "soéṣa; tía áda",
+            "correctAnswer": "soéṣa",
             "options": [
+              "soéṣa",
               "fungua",
               "mtu gani yeye?",
-              "mke mchawi",
-              "soéṣa; tía áda"
+              "mke mchawi"
             ],
-            "hint": "soéṣa; tía áda"
+            "hint": "Starts with \"so…\" (5 letters)",
+            "acceptedAnswers": [
+              "soéṣa; tía áda",
+              "soéṣa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3426,9 +3630,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "fánia utáwi",
             "options": [
               "fungua",
+              "fánia utáwi",
               "mtu gani yeye?",
-              "mke mchawi",
-              "fánia utáwi"
+              "mke mchawi"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.)"
           }
@@ -3443,12 +3647,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "fúnga (sc. kánoa)",
-            "source": "Fast, vn",
+            "source": "Fast",
             "pronunciation": "funga"
           },
           {
             "target": "nóna; wánda",
-            "source": "Fast, adj. to be-",
+            "source": "To be fast",
             "pronunciation": "no-na"
           },
           {
@@ -3497,62 +3701,74 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"fúnga (sc. kánoa)\" in Kiswahili?",
-            "correctAnswer": "Fast, vn",
+            "correctAnswer": "Fast",
             "options": [
-              "Fast, adj. to be-",
+              "Fast",
               "History",
               "Horn",
-              "Fast, vn"
+              "To be fast"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)"
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
+            "acceptedAnswers": [
+              "Fast, vn",
+              "Fast"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"nóna; wánda\" in Kiswahili?",
-            "correctAnswer": "Fast, adj. to be-",
+            "correctAnswer": "Fast",
             "options": [
               "History",
               "Horn",
-              "Fast, adj. to be-",
-              "Fast, vn"
+              "Fast",
+              "To be fast"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)"
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli)",
+            "acceptedAnswers": [
+              "Fast, adj. to be-",
+              "Fast"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"táric̣i; kissa\" in Kiswahili?",
             "correctAnswer": "History",
             "options": [
-              "Horn",
               "History",
-              "Fast, vn",
-              "Fast, adj. to be-"
+              "Horn",
+              "Fast",
+              "To be fast"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"History\" in Kiswahili?",
-            "correctAnswer": "táric̣i; kissa",
+            "correctAnswer": "táric̣i",
             "options": [
-              "táric̣i; kissa",
-              "fúnga (sc. kánoa)",
-              "nóna; wánda",
+              "fúnga",
+              "táric̣i",
+              "nóna",
               "pémbe"
             ],
-            "hint": "táric̣i; kissa"
+            "hint": "Starts with \"tá…\" (7 letters)",
+            "acceptedAnswers": [
+              "táric̣i; kissa",
+              "táric̣i"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Horn\" in Kiswahili?",
             "correctAnswer": "pémbe",
             "options": [
-              "fúnga (sc. kánoa)",
-              "nóna; wánda",
-              "táric̣i; kissa",
-              "pémbe"
+              "pémbe",
+              "fúnga",
+              "nóna",
+              "táric̣i"
             ],
-            "hint": "pémbe"
+            "hint": "Starts with \"pé…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -3582,10 +3798,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"Prayer\": ___",
             "correctAnswer": "salla",
             "options": [
-              "fúnga (sc. kánoa)",
-              "nóna; wánda",
-              "táric̣i; kissa",
-              "salla"
+              "fúnga",
+              "nóna",
+              "salla",
+              "táric̣i"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.)"
           }
@@ -3668,8 +3884,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "that he or she may conquer",
               "that we may conquer",
-              "that ye may conquer",
-              "that thou mayst conquer"
+              "that thou mayst conquer",
+              "that ye may conquer"
             ],
             "hint": "Hinde (1904) — The Subjunctive"
           },
@@ -3679,8 +3895,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "that he or she may conquer",
             "options": [
               "that we may conquer",
-              "that ye may conquer",
               "that he or she may conquer",
+              "that ye may conquer",
               "that thou mayst conquer"
             ],
             "hint": "Hinde (1904) — The Subjunctive"
@@ -3691,9 +3907,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "that we may conquer",
             "options": [
               "that ye may conquer",
-              "that we may conquer",
               "that thou mayst conquer",
-              "that he or she may conquer"
+              "that he or she may conquer",
+              "that we may conquer"
             ],
             "hint": "Hinde (1904) — The Subjunctive"
           },
@@ -3702,12 +3918,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"that we may conquer\" in Kiswahili?",
             "correctAnswer": "tu-shinde",
             "options": [
-              "tu-shinde",
               "u-shinde",
               "a-shinde",
-              "m-shinde"
+              "m-shinde",
+              "tu-shinde"
             ],
-            "hint": "tu-shinde"
+            "hint": "Starts with \"tu…\" (9 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3716,10 +3932,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "options": [
               "u-shinde",
               "a-shinde",
-              "tu-shinde",
-              "m-shinde"
+              "m-shinde",
+              "tu-shinde"
             ],
-            "hint": "m-shinde"
+            "hint": "Starts with \"m-…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -3750,9 +3966,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "wa-shinde",
             "options": [
               "u-shinde",
+              "wa-shinde",
               "a-shinde",
-              "tu-shinde",
-              "wa-shinde"
+              "tu-shinde"
             ],
             "hint": "Hinde (1904) — The Subjunctive"
           }
@@ -3836,8 +4052,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "they do not conquer",
             "options": [
               "I did not conquer",
-              "thou didst not conquer",
               "they do not conquer",
+              "thou didst not conquer",
               "you do not conquer"
             ],
             "hint": "Hinde (1904) — Negative Present"
@@ -3847,8 +4063,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"si-ku-shinda\" in Kiswahili?",
             "correctAnswer": "I did not conquer",
             "options": [
-              "thou didst not conquer",
               "I did not conquer",
+              "thou didst not conquer",
               "you do not conquer",
               "they do not conquer"
             ],
@@ -3864,7 +4080,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               "hawa-shindi",
               "hu-ku-shinda"
             ],
-            "hint": "si-ku-shinda"
+            "hint": "Starts with \"si…\" (12 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3872,11 +4088,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "hu-ku-shinda",
             "options": [
               "ham-shindi",
+              "hu-ku-shinda",
               "hawa-shindi",
-              "si-ku-shinda",
-              "hu-ku-shinda"
+              "si-ku-shinda"
             ],
-            "hint": "hu-ku-shinda"
+            "hint": "Starts with \"hu…\" (12 letters)"
           },
           {
             "type": "match_pairs",
@@ -3906,10 +4122,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"he or she did not conquer\": ___",
             "correctAnswer": "ha-ku-shinda",
             "options": [
+              "ha-ku-shinda",
               "ham-shindi",
               "hawa-shindi",
-              "si-ku-shinda",
-              "ha-ku-shinda"
+              "si-ku-shinda"
             ],
             "hint": "Hinde (1904) — Negative Past Perfect"
           }
@@ -3932,28 +4148,68 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Study verified Swahili (Kiswahili) headwords and dialect forms extracted from primary public-domain monographs.",
         "words": [
           {
-            "target": "Sezo / Šezo / Tezo",
-            "source": "Adze (Standard / Kimvita / Kiamu-Kitikuu)",
+            "target": "Sezo",
+            "source": "Adze",
             "pronunciation": "se-zo / she-zo / te-zo"
           },
           {
-            "target": "M-shale / M-tale / M-cale",
-            "source": "Arrow (Kimvita / Kiamu / Kitikuu)",
+            "target": "Šezo",
+            "source": "Kimvita",
+            "pronunciation": "se-zo / she-zo / te-zo"
+          },
+          {
+            "target": "Tezo",
+            "source": "Kiamu-Kitikuu)",
+            "pronunciation": "se-zo / she-zo / te-zo"
+          },
+          {
+            "target": "M-shale",
+            "source": "Arrow",
             "pronunciation": "m-shale / m-tale / m-cale"
           },
           {
-            "target": "Ny-uni / N-dege",
-            "source": "Bird (Classical Kingozi & Kimvita / Standard)",
+            "target": "M-tale",
+            "source": "Kiamu",
+            "pronunciation": "m-shale / m-tale / m-cale"
+          },
+          {
+            "target": "M-cale",
+            "source": "Kitikuu)",
+            "pronunciation": "m-shale / m-tale / m-cale"
+          },
+          {
+            "target": "Ny-uni",
+            "source": "Bird",
             "pronunciation": "ny-uni / n-dege"
           },
           {
-            "target": "Mw-atzi / Dāmu",
-            "source": "Blood (Archaic Kingozi / Standard Kiswahili)",
+            "target": "N-dege",
+            "source": "Standard)",
+            "pronunciation": "ny-uni / n-dege"
+          },
+          {
+            "target": "Mw-atzi",
+            "source": "Blood",
             "pronunciation": "mw-atzi / da-mu"
           },
           {
-            "target": "I-zūzū / I-sīta / N-dizi",
-            "source": "Banana (Kiamu / Kitikuu-Bajuni / Standard)",
+            "target": "Dāmu",
+            "source": "Standard Kiswahili)",
+            "pronunciation": "mw-atzi / da-mu"
+          },
+          {
+            "target": "I-zūzū",
+            "source": "Banana",
+            "pronunciation": "i-zuzu / i-sita / n-dizi"
+          },
+          {
+            "target": "I-sīta",
+            "source": "Kitikuu-Bajuni",
+            "pronunciation": "i-zuzu / i-sita / n-dizi"
+          },
+          {
+            "target": "N-dizi",
+            "source": "Standard)",
             "pronunciation": "i-zuzu / i-sita / n-dizi"
           },
           {
@@ -3962,8 +4218,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ba-ku-li"
           },
           {
-            "target": "Balamwezi / Mbalamwezi",
-            "source": "Moonlight / full moonshine",
+            "target": "Balamwezi",
+            "source": "Moonlight",
+            "pronunciation": "ba-lamwe-zi / mba-lamwe-zi"
+          },
+          {
+            "target": "Mbalamwezi",
+            "source": "full moonshine",
             "pronunciation": "ba-lamwe-zi / mba-lamwe-zi"
           },
           {
@@ -3981,15 +4242,19 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Sezo / Šezo / Tezo\" in Kiswahili?",
-            "correctAnswer": "Adze (Standard / Kimvita / Kiamu-Kitikuu)",
+            "prompt": "What is the English meaning of \"Sezo\" in Kiswahili?",
+            "correctAnswer": "Adze",
             "options": [
-              "Adze (Standard / Kimvita / Kiamu-Kitikuu)",
-              "Arrow (Kimvita / Kiamu / Kitikuu)",
-              "Bird (Classical Kingozi & Kimvita / Standard)",
-              "Blood (Archaic Kingozi / Standard Kiswahili)"
+              "Arrow",
+              "Bird",
+              "Blood",
+              "Adze"
             ],
-            "hint": "Johnston (1919 #21–21e) & Stigand (1915)"
+            "hint": "Johnston (1919 #21–21e) & Stigand (1915)",
+            "acceptedAnswers": [
+              "Adze (Standard / Kimvita / Kiamu-Kitikuu)",
+              "Adze"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4016,15 +4281,19 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Swahili (Kiswahili) term for \"Banana (Kiamu / Kitikuu-Bajuni / Standard)\": ___",
-            "correctAnswer": "I-zūzū / I-sīta / N-dizi",
+            "prompt": "Complete the Swahili (Kiswahili) term for \"Banana\": ___",
+            "correctAnswer": "I-zūzū",
             "options": [
-              "I-zūzū / I-sīta / N-dizi",
-              "Bakuli (pl. mabakuli)",
-              "Sezo / Šezo / Tezo",
-              "M-shale / M-tale / M-cale"
+              "Bakuli",
+              "I-zūzū",
+              "Sezo",
+              "M-shale"
             ],
-            "hint": "Johnston (1919 #21b–e)"
+            "hint": "Johnston (1919 #21b–e)",
+            "acceptedAnswers": [
+              "I-zūzū / I-sīta / N-dizi",
+              "I-zūzū"
+            ]
           }
         ]
       },
@@ -4050,23 +4319,43 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ki-li-mo cha ki-sa-sa cha umwa-gi-lia-ji"
           },
           {
-            "target": "ku-tiririka / ku-elea",
-            "source": "To flow / To float on water",
+            "target": "ku-tiririka",
+            "source": "To flow",
             "pronunciation": "ku-tiririka / ku-elea"
           },
           {
-            "target": "ku-vuta / ku-sukuma",
-            "source": "To pull / To push",
+            "target": "ku-elea",
+            "source": "To float on water",
+            "pronunciation": "ku-tiririka / ku-elea"
+          },
+          {
+            "target": "ku-vuta",
+            "source": "To pull",
             "pronunciation": "ku-vuta / ku-sukuma"
           },
           {
-            "target": "ku-futa / ku-pangusa",
-            "source": "To wipe / To dust off",
+            "target": "ku-sukuma",
+            "source": "To push",
+            "pronunciation": "ku-vuta / ku-sukuma"
+          },
+          {
+            "target": "ku-futa",
+            "source": "To wipe",
             "pronunciation": "ku-futa / ku-pangusa"
           },
           {
-            "target": "ku-pasua / ku-atua",
-            "source": "To split / To cleave wood",
+            "target": "ku-pangusa",
+            "source": "To dust off",
+            "pronunciation": "ku-futa / ku-pangusa"
+          },
+          {
+            "target": "ku-pasua",
+            "source": "To split",
+            "pronunciation": "ku-pasua / ku-atua"
+          },
+          {
+            "target": "ku-atua",
+            "source": "To cleave wood",
             "pronunciation": "ku-pasua / ku-atua"
           },
           {
@@ -4078,33 +4367,37 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ku-tuma pesa kwa simu",
-            "source": "To send money by mobile phone (M-Pesa)"
+            "source": "To send money by mobile phone (M-Pesa)."
           },
           {
             "target": "kituo cha afya cha jamii",
-            "source": "Community health center / clinic"
+            "source": "Community health center / clinic."
           },
           {
             "target": "kilimo cha kisasa cha umwagiliaji",
-            "source": "Modern irrigation agriculture"
+            "source": "Modern irrigation agriculture."
           },
           {
             "target": "huduma za serikali mtandaoni",
-            "source": "Online digital government services (eCitizen)"
+            "source": "Online digital government services (eCitizen)."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ku-tuma pesa kwa simu\" in Kiswahili?",
-            "correctAnswer": "To send money by mobile phone (M-Pesa)",
+            "correctAnswer": "To send money by mobile phone",
             "options": [
-              "To send money by mobile phone (M-Pesa)",
-              "Community health center / clinic",
-              "Modern irrigation agriculture",
-              "To flow / To float on water"
+              "To float on water",
+              "To send money by mobile phone",
+              "Online digital government services",
+              "Community health center"
             ],
-            "hint": "Kencorpus & Modern Kiswahili Corpus"
+            "hint": "Kencorpus & Modern Kiswahili Corpus",
+            "acceptedAnswers": [
+              "To send money by mobile phone (M-Pesa)",
+              "To send money by mobile phone"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4131,15 +4424,19 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Swahili (Kiswahili) term for \"To pull / To push\": ___",
-            "correctAnswer": "ku-vuta / ku-sukuma",
+            "prompt": "Complete the Swahili (Kiswahili) term for \"To pull\": ___",
+            "correctAnswer": "ku-vuta",
             "options": [
-              "ku-vuta / ku-sukuma",
-              "ku-futa / ku-pangusa",
-              "ku-tuma pesa kwa simu",
-              "kituo cha afya cha jamii"
+              "ku-futa",
+              "ku-tiririka",
+              "ku-elea",
+              "ku-vuta"
             ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists"
+            "hint": "Wiktionary Appendix:Bantu Swadesh lists",
+            "acceptedAnswers": [
+              "ku-vuta / ku-sukuma",
+              "ku-vuta"
+            ]
           }
         ]
       }
@@ -4212,10 +4509,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Ngoma\" in Kiswahili?",
             "correctAnswer": "A dance. This word is also widely used by up-country natives",
             "options": [
+              "A dance. This word is also widely used by up-country natives",
               "To steal",
-              "To stand, stop, be erect",
-              "To sleep",
-              "A dance. This word is also widely used by up-country natives"
+              "To stand",
+              "To sleep"
             ],
             "hint": "C. W. Hobley, Bantu Beliefs and Magic (London, 1922 — Public Domain, Glossary pp. 305–308)"
           },
@@ -4224,32 +4521,36 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"īva\" in Kiswahili?",
             "correctAnswer": "To steal",
             "options": [
-              "To stand, stop, be erect",
+              "To stand",
               "To sleep",
               "To steal",
-              "A dance. This word is also widely used by up-country natives"
+              "To sit"
             ],
             "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"sūmāmā\" in Kiswahili?",
-            "correctAnswer": "To stand, stop, be erect",
+            "correctAnswer": "To stand",
             "options": [
               "To sleep",
-              "To stand, stop, be erect",
-              "A dance. This word is also widely used by up-country natives",
-              "To steal"
+              "To stand",
+              "To steal",
+              "To sit"
             ],
-            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
+            "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)",
+            "acceptedAnswers": [
+              "To stand, stop, be erect",
+              "To stand"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To stand, stop, be erect\" in Kiswahili?",
             "correctAnswer": "sūmāmā",
             "options": [
-              "sūmāmā",
               "Ngoma",
+              "sūmāmā",
               "īva",
               "yālā"
             ],
@@ -4376,8 +4677,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "To know",
             "options": [
               "To kill",
-              "To go",
               "To know",
+              "To go",
               "To laugh"
             ],
             "hint": "21b–d. Ki-amu / Ki-siu / Ki-pate (Lamu Archipelago) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
@@ -4387,8 +4688,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ūlāgā, -ūā\" in Kiswahili?",
             "correctAnswer": "To kill",
             "options": [
-              "To go",
               "To kill",
+              "To go",
               "To laugh",
               "To know"
             ],
@@ -4397,24 +4698,28 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To kill\" in Kiswahili?",
-            "correctAnswer": "ūlāgā, -ūā",
+            "correctAnswer": "ūlāgā",
             "options": [
-              "ūlāgā, -ūā",
               "cēkā",
               "yūā",
-              "ēndā"
+              "ēndā",
+              "ūlāgā"
             ],
-            "hint": "oo-lah-gah ooah"
+            "hint": "oo-lah-gah ooah",
+            "acceptedAnswers": [
+              "ūlāgā, -ūā",
+              "ūlāgā"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To go\" in Kiswahili?",
             "correctAnswer": "ēndā",
             "options": [
+              "ēndā",
               "cēkā",
               "yūā",
-              "ūlāgā, -ūā",
-              "ēndā"
+              "ūlāgā"
             ],
             "hint": "eh-ndah"
           },
@@ -4446,10 +4751,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kiswahili term for \"To give\": ___",
             "correctAnswer": "pā",
             "options": [
+              "pā",
               "cēkā",
               "yūā",
-              "ūlāgā, -ūā",
-              "pā"
+              "ūlāgā"
             ],
             "hint": "21a. Ki-mvita (Mombasa) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 131–140)"
           }
@@ -4532,12 +4837,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mombása kúlā kua ku papassa, hakuna teári kama Unguja.",
-            "source": "At Mombasa you eat by groping (hard toil), nothing is ready-made like at Zanzibar. (Krapf 1882, p. 241)",
+            "source": "At Mombasa you eat by groping (hard toil), nothing is ready-made like at Zanzibar.",
             "pronunciation": "Mombasa | to-eat | by | groping | there-is-not | ready | like | Zanzibar"
           },
           {
             "target": "Ndaulía si ulinzi, bora ni ku enda muegniéwe; Neno ukatálo ndílo Mungu afaniálo.",
-            "source": "'Look out for me' is no watching, it is better to go yourself; the thing thou refusest is the very thing God brings about. (Krapf 1882, pp. 274, 277)",
+            "source": "'Look out for me' is no watching, it is better to go yourself; the thing thou refusest is the very thing God brings about.",
             "pronunciation": "look-for-me | is-not | watching | better | is | to-go | yourself"
           }
         ],
@@ -4545,14 +4850,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "In Krapf's Outline of Grammar (1882, p. xx), what salutation does an inferior address to a superior, and what is the reply?",
-            "correctAnswer": "Nashika miguu ('I clasp thy feet') — Reply: Marahaba! or Ahsanta!",
+            "correctAnswer": "Nashika miguu",
             "options": [
-              "Nashika miguu ('I clasp thy feet') — Reply: Marahaba! or Ahsanta!",
-              "Hodi! hodi! — Reply: Karibu!",
-              "Kua heri — Reply: Amani ya Mungu",
-              "Sumile! — Reply: Similla!"
+              "Nashika miguu",
+              "Hodi! hodi!",
+              "Kua heri",
+              "Sumile!"
             ],
-            "hint": "Literally 'I lay hold of thy feet' (Mode 5 of the 7 Salutations on p. xx)."
+            "hint": "Literally 'I lay hold of thy feet' (Mode 5 of the 7 Salutations on p. xx).",
+            "acceptedAnswers": [
+              "Nashika miguu ('I clasp thy feet') — Reply: Marahaba! or Ahsanta!",
+              "Nashika miguu"
+            ]
           }
         ]
       },
@@ -4620,11 +4929,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Atáni ku takábari! muangalie Mguáme... ulimengu una hadáa: sasa mti wa mnázi huangúka ukiináma.",
-            "source": "Cease from pride! Behold Mguáme... the world is full of deceit: now the tall coconut tree falls bowing low. (Krapf 1882, p. 256)"
+            "source": "Cease from pride! Behold Mguáme... the world is full of deceit: now the tall coconut tree falls bowing low."
           },
           {
             "target": "Killéfi mkáta jombo, mkata na mlingóte, azama na wátu wóte, hápŏni mtu mmója.",
-            "source": "The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes. (Krapf 1882, p. 183)"
+            "source": "The Killefi breaker cuts up the vessel, cuts it up with the mast, and sinks with all hands, not a single person escapes."
           }
         ],
         "authoredExercises": [
@@ -4720,8 +5029,23 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "bithaa-zijazo-na-zitokazo"
           },
           {
-            "target": "mimi / miye / nami / ndimi • jinalo, nyumbaye, babazo",
-            "source": "I / me / with me / it is I",
+            "target": "mimi",
+            "source": "I",
+            "pronunciation": "mimi"
+          },
+          {
+            "target": "miye",
+            "source": "me",
+            "pronunciation": "mimi"
+          },
+          {
+            "target": "nami",
+            "source": "with me",
+            "pronunciation": "mimi"
+          },
+          {
+            "target": "ndimi • jinalo, nyumbaye, babazo",
+            "source": "it is I",
             "pronunciation": "mimi"
           },
           {
@@ -4744,14 +5068,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does the idiomatic reflexive verb 'kujigonjweza' mean in Madan's Grammar (1905, § 226)?",
-            "correctAnswer": "To pretend to be ill / feign sickness",
+            "correctAnswer": "To pretend to be ill",
             "options": [
+              "To pretend to be ill",
               "To heal oneself",
-              "To pretend to be ill / feign sickness",
               "To walk for one's own pleasure",
               "To cough unintentionally"
             ],
-            "hint": "ji- (reflexive) + gonjw- (sick) + -eza (causal)"
+            "hint": "ji- (reflexive) + gonjw- (sick) + -eza (causal)",
+            "acceptedAnswers": [
+              "To pretend to be ill / feign sickness",
+              "To pretend to be ill"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4780,7 +5108,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-madan-maritime-kinship-customs",
-        "title": "Zanzibar Dhow Navigation, Tidal Cycles, 4-Generation Kinship &",
+        "title": "Zanzibar Dhow Navigation, Tidal Cycles, 4-Generation Kinship",
         "icon": "Anchor",
         "description": "Explore Indian Ocean dhow architecture, tacking & monsoon terms, spring vs. neap tides, four generations of descendants, and communal customs from Madan's 1902 English-Swahili Dictionary.",
         "words": [
@@ -4867,7 +5195,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-19",
     "unitNumber": 19,
-    "title": "Taylor African Aphorisms — Archaic Tenses (Appendix A),",
+    "title": "Taylor African Aphorisms — Archaic Tenses (Appendix A)",
     "description": "Master the 6 classical Swahili tenses of Appendix A (-kali, Sime-, -ngwa-, -meze-, Old Preterites, -siku-), the -ngwa Possessive Pronoun of Alienation (Appendix B), the 5 monsoon seasons, the 10 marks of beauty, and rare Kingozi/Kimvita vocabulary from Rev. W. E. Taylor's 1891 monograph.",
     "icon": "ScrollText",
     "color": "#10B981",
@@ -4917,11 +5245,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "K'ambiwa, 'Shokangwa ni shoka la wat'u: liate, lielekezwe.'",
-            "source": "I was told, 'Shokangwa means somebody else's axe: leave it alone, let it be put away.' (Taylor 1891, § 127 & Appendix B, p. 167)"
+            "source": "I was told, 'Shokangwa means somebody else's axe: leave it alone, let it be put away.'."
           },
           {
             "target": "Usitukane wakunga na uzazi ungalipo.",
-            "source": "Insult not the midwives while childbearing still continues here. (Taylor 1891, § 562 & Appendix A.I, p. 164)"
+            "source": "Insult not the midwives while childbearing still continues here."
           }
         ],
         "authoredExercises": [
@@ -5030,25 +5358,29 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ahadi na miithaki, mwenyi kumpa mwenziwe, ni deni katika haki, na kulipa ijuziye.",
-            "source": "A promise and a covenant, when one gives it to his fellow, is a debt in justice, and it behoves to pay it. (Bwana Muyaka in Taylor 1891, § 6, p. 2)"
+            "source": "A promise and a covenant, when one gives it to his fellow, is a debt in justice, and it behoves to pay it."
           },
           {
             "target": "Kilimia kikizama kwa jua huzuka kwa mvua; kikizama kwa mvua huzuka kwa jua.",
-            "source": "When the Pleiades set in sunny weather they rise in rain; when they set in rain they rise in sun. (Taylor 1891, § 149, p. 32)"
+            "source": "When the Pleiades set in sunny weather they rise in rain; when they set in rain they rise in sun."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "In Taylor (1891, § 128 fn., p. 28), what are the five traditional Swahili agricultural and monsoon seasons?",
-            "correctAnswer": "Kaskazi, Mwaka (Masika), Kusi, Mchoo, and Vuli",
+            "correctAnswer": "Kaskazi",
             "options": [
-              "Kaskazi, Mwaka (Masika), Kusi, Mchoo, and Vuli",
-              "Jilal, Kalil, Gu, Hagar, and Dair",
-              " Chululu, Lu, Pi, and Tse",
-              "Shokangwa, Jembengwa, Kitingwa, and Kinungwa"
+              "Jilal",
+              "Chululu",
+              "Kaskazi",
+              "Shokangwa"
             ],
-            "hint": "See footnote to Proverb § 128 (p. 28)"
+            "hint": "See footnote to Proverb § 128 (p. 28)",
+            "acceptedAnswers": [
+              "Kaskazi, Mwaka (Masika), Kusi, Mchoo, and Vuli",
+              "Kaskazi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -5087,7 +5419,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "swahili-madan-1917-sarufi-grammar-idioms-18-1",
-        "title": "Bishop Steere's 13 Sarufi Definitions, Reversive '-ua' Verbs &",
+        "title": "Bishop Steere's 13 Sarufi Definitions, Reversive '-ua' Verbs",
         "icon": "Sparkles",
         "description": "Study the 13 Swahili grammatical definitions from Steere's Grammar in Swahili (p. 11) and key morphological and syntactic idioms across Madan (1917, pp. 1–56).",
         "words": [
@@ -5160,7 +5492,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ni kiasi changu, kama nalikatiwa mimi. — Kuaheri ya kuonana!",
-            "source": "It fits, as if it was cut for me. — Good-bye till we meet again! (Madan 1917, Book pp. 18, 29)"
+            "source": "It fits, as if it was cut for me. — Good-bye till we meet again!"
           }
         ],
         "authoredExercises": [
@@ -5229,7 +5561,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Maji yanajaa; kung'oa nanga, tweka matanga!",
-            "source": "The tide is coming in; weigh anchor, set sail! (Madan 1917, Book pp. 3, 41, 49)"
+            "source": "The tide is coming in; weigh anchor, set sail!"
           }
         ],
         "authoredExercises": [
@@ -5259,7 +5591,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-21",
     "unitNumber": 21,
-    "title": "Bishop Edward Steere's 'Swahili Tales, as Told by",
+    "title": "Bishop Edward Steere's 'Swahili Tales, as Told",
     "description": "Master the complete oral narratives, 20 verbatim Mifano proverbs (pp. 191–195), 14 Vitendawili riddles (pp. 417–421 & p. 492), Kimvita vs. Kiunguja vs. Kingozi/Kiamu poetics, 37 italicized terms (p. 490), 103 ethnographic notes (pp. 490–503), and 12 corrigenda (p. 504) of Steere (1870).",
     "icon": "BookOpen",
     "color": "#10B981",
@@ -5294,7 +5626,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ndovu wawili wakisongana ziumiazo nyika; abadi, abadi, ukambaa watinda jiwe.",
-            "source": "When two elephants struggle it is the grass that suffers; continually, continually, the well-cord cuts the stone (Steere 1870, pp. 194–195,"
+            "source": "When two elephants struggle it is the grass that suffers; continually, continually, the well-cord cuts the stone."
           }
         ],
         "authoredExercises": [
@@ -5354,7 +5686,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ewe kijakazi nakutuma, ukatumike: kamwambie mama, mwana muinga amelimuka, afanye mkate, katikati tupa aike.",
-            "source": "O slave-girl, I send you to be sent: go tell my mother her simple son has grown wise; let her make a loaf and put a file in the middle (Steere"
+            "source": "O slave-girl, I send you to be sent: go tell my mother her simple son has grown wise; let her make a loaf and put a file in the middle."
           }
         ],
         "authoredExercises": [
@@ -5388,7 +5720,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-22",
     "unitNumber": 22,
-    "title": "Steere & Madan — Complete Swahili Handbook (Taxonomies,",
+    "title": "Steere & Madan — Complete Swahili Handbook",
     "description": "Master the complete grammatical, lexical, comparative, epistolary, interlinear, phraseological, and metrological corpus of Bishop Edward Steere & A. C. Madan's 'A Handbook of the Swahili Language, as Spoken at Zanzibar' (4th Ed., SPCK London, 1894, pp. i–xxii, 1–458 [PDF pp. 1–488]).",
     "icon": "Compass",
     "color": "#10B981",
@@ -5469,7 +5801,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kesho na kesho ni madanganya, ao ni makatazanya. — Si madanganya wala si makatazanya, ni mazuizanya.",
-            "source": "To-morrow and to-morrow are deceivers, or are they forbidders? — They are not deceivers nor forbidders, they are hinderers (Dr. Krapf's Delay"
+            "source": "To-morrow and to-morrow are deceivers, or are they forbidders? — They are not deceivers nor forbidders, they are hinderers."
           }
         ],
         "authoredExercises": [
@@ -5522,8 +5854,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "kanzu-ya-ziki"
           },
           {
-            "target": "30 Peninsula Mita of Zanzibar Town: Shangani, Baghani, Gerezani,",
-            "source": "All 30 named quarters (Mita) on the Stone Town peninsula of Zanzibar documented in",
+            "target": "30 Peninsula Mita of Zanzibar Town: Shangani, Baghani, Gerezani",
+            "source": "All 30 named quarters (Mita) on the Stone Town peninsula of Zanzibar documented",
             "pronunciation": "30-peninsula-mita-of"
           },
           {
@@ -5533,14 +5865,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Zanzibar ch = t (M.)",
-            "source": "Steere's Coastal Dialect Sound-Correspondence Table linking Zanzibar (Kiunguja),",
+            "source": "Steere's Coastal Dialect Sound-Correspondence Table linking Zanzibar (Kiunguja)",
             "pronunciation": "za-nzi-bar / mo-mba-sa / la-mu / me-ri-ma / pa-tta / o-zi"
           }
         ],
         "sentences": [
           {
             "target": "Kooo! — Mwigo! — Kooo! — Niagulie! — Kooo! — Kwema nendako? — Kooo!",
-            "source": "Kooo! — You mwigo! — Kooo! — Prophesy for me! — Kooo! — Is it good where I am going? — Kooo! (Traveler's omen-bird dialogue, Steere & Madan"
+            "source": "Kooo! — You mwigo! — Kooo! — Prophesy for me! — Kooo! — Is it good where I am going? — Kooo!"
           }
         ]
       },
@@ -5574,7 +5906,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Unayo haja tena? — Sina haja ila haja yangu uwe na afya. / Haja yangu ya kuishi wewe sana na furaha.",
-            "source": "Is there anything else you want? — I want nothing save that I wish you health. / What I want is that you may live long and happily (Phrase #197,"
+            "source": "Is there anything else you want? — I want nothing save that I wish you health. / What I want is that you may live long and happily."
           }
         ],
         "authoredExercises": [
@@ -5636,7 +5968,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-kwe / a-ke"
           },
           {
-            "target": "au, ai!, oa, ua, aoa, aua, aoe, aue, aoae, uuao, uuae, auuae, uuuao,",
+            "target": "au, ai!, oa, ua, aoa, aua, aoe, aue, aoae, uuao, uuae, auuae, uuuao",
             "source": "Exercise 4 All-Vowel Swahili Words",
             "pronunciation": "a-u / o-a / u-a / a-o-a / a-u-a / a-u-u-a-e"
           },
@@ -5686,7 +6018,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-burt-1910-studies-grammar-paradigms-21",
-        "title": "Studies I–XXI, 10 Noun Classes (incl. Class VI Monster Class),",
+        "title": "Studies I–XXI, 10 Noun Classes (incl. Class VI Monster Class)",
         "icon": "Layers",
         "description": "Master the 21 thematic studies of daily Mombasa life, the 10-class concord system, contracted possessives, nasal-aspiration sound laws, and the 23 derivative forms of kufunga.",
         "culturalNote": "Studies I–XXI (pp. 24–131) and their complete bidirectional Exercise Keys (pp. 132–151) cover greetings, servants, teachers, house, table, kitchen, town, friendship, dress, market, shop, body, river/shore, plantation, safari, weather/time, up-country, animals, hospital, school, and religion.",
@@ -5702,12 +6034,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "n-sha / u-n-sha / a-n-sha / tu-n-sha / m-n-sha / wa-n-sha"
           },
           {
-            "target": "kupiga mstari, k’engele, ch’apa, k’elele, t’eke, fundo, magot’i, pasi,",
+            "target": "kupiga mstari, k’engele, ch’apa, k’elele, t’eke, fundo, magot’i, pasi",
             "source": "12 Idioms with kupiga",
             "pronunciation": "kupiga-mstari"
           },
           {
-            "target": "shambani pa (near) / shambani kwa (to/at) / shambani mwa (inside) /",
+            "target": "shambani pa (near) / shambani kwa (to/at) / shambani mwa (inside)",
             "source": "Four-Way Locative Concord Distinction (Classes VIII PA, IX KU, and X MU)",
             "pronunciation": "sha-mba-ni pa / kwa / mwa / ma-sha-mba-ni mwa"
           },
@@ -5730,17 +6062,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Zina Salehe [funguo]! (Study VII, p. 58 Note III)",
-            "source": "Salehe has the keys! (emphatic subject-object inversion)"
+            "source": "Salehe has the keys! (emphatic subject-object inversion)."
           },
           {
-            "target": "Mwana umleavyo, ndivyo akuavyo! (p. 116)",
+            "target": "Mwana umleavyo, ndivyo akuavyo!",
             "source": "As you bring up a child, so he grows!"
           }
         ]
       },
       {
         "id": "swahili-burt-1910-letters-measures-synonyms-homonyms-21",
-        "title": "Mombasa Money & Measures, 3 Letters (A.H. 1324), Calendar,",
+        "title": "Mombasa Money & Measures, 3 Letters (A.H. 1324), Calendar",
         "icon": "FileText",
         "description": "Master Mombasa coinage & capacity tables, the 3 letters of Rabiu l-Awwal 1324 A.H. (1906 CE), monsoon seasons, 14 synonym groups, and all 44 minimal-pair homonym groups.",
         "culturalNote": "Pages 154–161 preserve three authentic Mombasa letters dated Rabiu l-Awwal 1324 A.H. (1906 CE), the coastal monsoon calendar, 14 classified synonym groups, and 44 homonym groups contrasting aspiration and dental vs. cerebral stops.",
@@ -5781,12 +6113,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "fa-ra-si-la"
           },
           {
-            "target": "Walio mbali huonana kwa barua, na barua ni nusu ya kuonana (Letter No.",
+            "target": "Walio mbali huonana kwa barua, na barua ni nusu ya kuonana",
             "source": "Those who are far apart see each other by letter, and a letter is half of meeting",
             "pronunciation": "wa-li-o m-ba-li hu-o-na-na kwa ba-ru-a"
           },
           {
-            "target": "Kasikazi/Musimu (Nov.–Mar.), Maleleji (calms), Kusi (Apr.–Sept.),",
+            "target": "Kasikazi/Musimu (Nov.–Mar.), Maleleji (calms), Kusi (Apr.–Sept.)",
             "source": "Mombasa Monsoon Winds and Three Rainy Seasons (Swahili Calendar, pp. 157–158)",
             "pronunciation": "kasikazi"
           },
@@ -5819,7 +6151,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kulla neno aletalo Mngu ndiyo kheri (Letter No. 2, p. 155, on the earthquake in Ulaya ya Paris killing watu alifu tano)",
-            "source": "Every matter that God sends is for the best (Letter 2, 12 Rabii Liawal 1324)"
+            "source": "Every matter that God sends is for the best."
           },
           {
             "target": "Ko*t*o (mason's trowel)",
@@ -5832,14 +6164,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-24",
     "unitNumber": 24,
-    "title": "A. C. Madan — Swahili-English Dictionary (8 Verb-Stem",
+    "title": "A. C. Madan — Swahili-English Dictionary",
     "description": "Master the complete grammatical, morphological, etymological, and ethnographic corpus of A. C. Madan's 'Swahili-English Dictionary' (Clarendon Press Oxford, 1903, pp. i–xix, 1–442): the 'Bantize rather than Arabize' principle & asterisk (*) loanword system, the 8 Principal Verb-Stem Forms (including 6 Causal & 5 Reciprocal varieties), Conspectus II of the 8 Noun Declensions (D 1–D 8), encyclopedic cultural taxonomies, and 65+ embedded proverbs and riddles.",
     "icon": "BookOpen",
     "color": "#10B981",
     "skills": [
       {
         "id": "swahili-madan-1903-verb-stems-conspectus-22",
-        "title": "Preface, 8 Principal Verb-Stem Forms (6 Causal & 5 Reciprocal",
+        "title": "Preface, 8 Principal Verb-Stem Forms",
         "icon": "Layers",
         "description": "Master Madan's 'Bantize rather than Arabize' principle, the asterisk (*) loanword convention, the 8 Principal Forms of Verb-Stem, and Conspectus II of the 8 Noun Declensions.",
         "culturalNote": "Published at the Clarendon Press, Oxford in July 1903 by Arthur Cornwallis Madan, M.A., Student of Christ Church, Oxford (UC Berkeley copy PL 8703 / M33 / 1903 / MAIN), this dictionary ranks Swahili among the twelve great languages of the modern world.",
@@ -5866,14 +6198,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "A-aa vs. Aa-a",
-            "source": "Intonation & pitch-lengthening rules and the three primary Bantu colour roots in",
+            "source": "Intonation & pitch-lengthening rules and the three primary Bantu colour roots",
             "pronunciation": "a-aa / aa-a / ku-le-e-e / e-ku-ndu / e-u-pe / e-u-si"
           }
         ],
         "sentences": [
           {
             "target": "Njia hii yaendeka / yaendekana (Introduction, p. xii)",
-            "source": "This road is passable / practicable (Neuter -ka / -kana)"
+            "source": "This road is passable / practicable (Neuter -ka / -kana)."
           }
         ],
         "authoredExercises": [
@@ -5901,7 +6233,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Explore Madan's classified articles on gifts/bribes (*Bakshishi), sticks (Bakora), guns (*Bunduki), dhows (Chombo), ropes (Kamba), ordeals (Kiapo), looms (Kitanda cha mfumi), doors (Mlango), and English loans (Manowari).",
         "words": [
           {
-            "target": "29 Gift/Present/Bribe/Fee Terms under *Bakshishi (p. 21): zawadi, tunu,",
+            "target": "29 Gift/Present/Bribe/Fee Terms under *Bakshishi (p. 21): zawadi, tunu",
             "source": "Complete classification of gifts, keepsakes, hospitality offerings, wedding/work",
             "pronunciation": "29-gift"
           },
@@ -5916,8 +6248,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ya-viasi"
           },
           {
-            "target": "10 Dhow Ropes & 6 Binding Fibres under Kamba (p. 128): amari, baraji,",
-            "source": "Cable, sheet, tie, bolt-rope, halyard, tackle, lee-sheet, tack-rope, tow-rope &",
+            "target": "10 Dhow Ropes & 6 Binding Fibres under Kamba (p. 128): amari, baraji",
+            "source": "Cable, sheet, tie, bolt-rope, halyard, tackle, lee-sheet, tack-rope, tow-rope",
             "pronunciation": "10-dhow-ropes-6"
           },
           {
@@ -5947,11 +6279,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kitanda cha mfumi (Loom, pp. 165–166): mdoshi (treadle), faraka/mfariki",
-            "source": "Complete technical anatomy of the Zanzibari weaver's loom, bow-drill, water-pipe, and",
+            "source": "Complete technical anatomy of the Zanzibari weaver's loom, bow-drill, water-pipe",
             "pronunciation": "kitanda-cha-mfumi-mdoshi"
           },
           {
-            "target": "19 English Loanwords under Manowari (p. 207): manowari, boi, kala,",
+            "target": "19 English Loanwords under Manowari (p. 207): manowari, boi, kala",
             "source": "Early English loanwords established in Zanzibar Swahili by 1903",
             "pronunciation": "19-english-loanwords-under"
           }
@@ -5959,7 +6291,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kimbunga kikaangusha minazi na majumba yote (s.v. Kimbunga, pp. 153–154)",
-            "source": "The typhoon (of April 15, 1872 at Zanzibar) threw down all the coconut trees and houses"
+            "source": "The typhoon  threw down all the coconut trees and houses."
           }
         ]
       },
@@ -6047,8 +6379,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Kitendawili! — Tega! Nyumba yangu kubwa, haina taa. — Kaburi (p. 167)",
-            "source": "Here's a riddle! — Out with it! My house is large, but has no lamp. — The grave"
+            "target": "Kitendawili! — Tega! Nyumba yangu kubwa, haina taa. — Kaburi",
+            "source": "Here's a riddle! — Out with it! My house is large, but has no lamp. — The grave."
           }
         ]
       }
@@ -6074,7 +6406,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "askari"
           },
           {
-            "target": "TAM Restriction (Keach 1985, p. 230): Tensed RCs only with past li-,",
+            "target": "TAM Restriction (Keach 1985, p. 230): Tensed RCs only with past li",
             "source": "Morphosyntactic distribution of tensed vs. amba relative markers across Swahili",
             "pronunciation": "li / na / ta-ka / si / a-mba"
           },
@@ -6102,7 +6434,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Askari [a-li-ye-ki-ongoza kikosi]",
-            "source": "The policeman who led the squad"
+            "source": "The policeman who led the squad."
           }
         ]
       },
@@ -6114,12 +6446,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Helsinki Corpus of Swahili 2.0: N = 440 RCs",
-            "source": "Primary corpus dataset of mid-20th-century to 2015 Swahili newspaper, literary,",
+            "source": "Primary corpus dataset of mid-20th-century to 2015 Swahili newspaper, literary",
             "pronunciation": "he-lsi-nki co-rpus / ko-rp"
           },
           {
-            "target": "ambaye / ambao",
-            "source": "Who / which (analytic relative pronoun)",
+            "target": "ambaye",
+            "source": "Who",
+            "pronunciation": "a-mba-ye"
+          },
+          {
+            "target": "ambao",
+            "source": "which (analytic relative pronoun)",
             "pronunciation": "a-mba-ye"
           },
           {
@@ -6145,8 +6482,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake] (p. 235)",
-            "source": "He was wearing a white cloak that had started to lose its whiteness"
+            "target": "A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake]",
+            "source": "He was wearing a white cloak that had started to lose its whiteness."
           }
         ]
       },
@@ -6157,7 +6494,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Master Section 4.3 and Section 5 of Mwamzandi (2022, pp. 238–246): Table 2 (Head Noun grammatical role × topic status), continue transitions (HN = Subj, topic) vs. shift transitions (HN = Obj/PP, topic), Examples (25a–c)–(32), and all 27 scholarly references.",
         "words": [
           {
-            "target": "(25a) Nyumba [a-li-yo-kaa Beneti]. (25b) I-li-kuwa ya Kiswahili kabisa,",
+            "target": "(25a) Nyumba [a-li-yo-kaa Beneti]. (25b) I-li-kuwa ya Kiswahili kabisa",
             "source": "The house which Beneti stayed. It was a typical Swahili house, it looked old",
             "pronunciation": "nyumba-i-li-kuwa-ya-kiswahili"
           },
@@ -6177,15 +6514,15 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "bali-rehema-a-li-po-nyanyua-macho"
           },
           {
-            "target": "(31) A-li-ji-ona katika nyumba kubwa sana i-li-yo-kuwa n-zuri ajabu (p.",
+            "target": "(31) A-li-ji-ona katika nyumba kubwa sana i-li-yo-kuwa n-zuri ajabu",
             "source": "He found himself in a very big house that was surprisingly beautiful",
             "pronunciation": "a-li-ji-ona-katika-nyumba-kubwa"
           }
         ],
         "sentences": [
           {
-            "target": "Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240)",
-            "source": "The writers who followed have abandoned this style (of writing)"
+            "target": "Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu",
+            "source": "The writers who followed have abandoned this style (of writing)."
           }
         ]
       }
@@ -6226,12 +6563,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "wa-ungwana"
           },
           {
-            "target": "28-Letter Alphabet (p. 5): Alifu, Bei, Tei, Thei, Jîmu, Hhei, Khei,",
+            "target": "28-Letter Alphabet (p. 5): Alifu, Bei, Tei, Thei, Jîmu, Hhei, Khei",
             "source": "Ki-Swahili 28-letter Ajami alphabet, left-to-right Arabic numerals, 10 epistolary",
             "pronunciation": "a-li-fu bei tei thei ji-mu / l-ha-thwa-rat l-je-nab l-mo-heb"
           },
           {
-            "target": "Letters 1–16 (pp. 12–43) & 6 Ki-Amu Terms in Letter 16 (pp. 42–43, with",
+            "target": "Letters 1–16 (pp. 12–43) & 6 Ki-Amu Terms in Letter 16",
             "source": "All 16 original administrative/legal/personal letters, the 6 Lamu coconut-toddy",
             "pronunciation": "letters-116-6-ki-amu"
           }
@@ -6239,13 +6576,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Barua ni nussu ya kuonana (Letter 7, p. 25)",
-            "source": "A letter is half of meeting face to face"
+            "source": "A letter is half of meeting face to face."
           }
         ]
       },
       {
         "id": "swahili-u24-m2-study2-banawasi-compass-fathili-za-punda",
-        "title": "Study II: 'Banawasi', 8-Point Wind Compass, 7 Uses of -ka- &",
+        "title": "Study II: 'Banawasi', 8-Point Wind Compass, 7 Uses of -ka-",
         "icon": "Compass",
         "description": "Master the two Ki-Jizirat folktales told by Sharif Hasan bin Aloi of Pemba, their 145 footnotes, the 8-point wind compass (p. 69), the 7 uses of -ka- (p. 59), the Note on Past Tense Infixes (p. 85), and the smithy & time-of-day lexicons (pp. 93–95).",
         "words": [
@@ -6255,8 +6592,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "banawasi"
           },
           {
-            "target": "Kasikazi / Kusi / Matlai",
-            "source": "North monsoon wind / South monsoon wind / East wind",
+            "target": "Kasikazi",
+            "source": "North monsoon wind",
+            "pronunciation": "ka-si-ka-zi"
+          },
+          {
+            "target": "Kusi",
+            "source": "South monsoon wind",
+            "pronunciation": "ka-si-ka-zi"
+          },
+          {
+            "target": "Matlai",
+            "source": "East wind",
             "pronunciation": "ka-si-ka-zi"
           },
           {
@@ -6347,8 +6694,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Hiyari hushinda utumwa (p. 82)",
-            "source": "Freewill overcomes slavery (voluntary service beats forced labour)"
+            "target": "Hiyari hushinda utumwa",
+            "source": "Freewill overcomes slavery (voluntary service beats forced labour)."
           }
         ],
         "authoredExercises": [
@@ -6403,7 +6750,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ewe Ramli we nibainia haki usibaine batili (p. 135)",
+            "target": "Ewe Ramli we nibainia haki usibaine batili",
             "source": "O Thou Oracle, show me the truth and do not show me falsehood!"
           }
         ]
@@ -6445,7 +6792,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "idiosyncratic-fossilized-tamba-tambua"
           },
           {
-            "target": "Pwani Univ. Tests (Tables 1–4): kugola → kugoloa, kupeza → kupezua (60%",
+            "target": "Pwani Univ. Tests (Tables 1–4): kugola → kugoloa, kupeza → kupezua",
             "source": "Nonce-word coinage test (40 students) and SALAMA / Helsinki Corpus acceptability test",
             "pronunciation": "ku-go-lo-a / ku-pe-zu-a / ku-fa-nyu-a"
           }
@@ -6453,7 +6800,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Fundi a-me-zib-u-a bomba",
-            "source": "The plumber has unplugged the pipe"
+            "source": "The plumber has unplugged the pipe."
           }
         ]
       },
@@ -6474,7 +6821,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "wi-zi wa ma-ba-vu / m-ba-vu"
           },
           {
-            "target": "Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa (Eric Omondi",
+            "target": "Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa",
             "source": "Safaricom customer-care politeness parody",
             "pronunciation": "samahani"
           },
@@ -6484,7 +6831,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "mwa-ngi wa e-qui-ty / wa-nji-ku wa ma-ka-ra"
           },
           {
-            "target": "Sheng 'shrubbing / srub' (Owago-Onyiro Ex. 13): sida (< shida),",
+            "target": "Sheng 'shrubbing / srub' (Owago-Onyiro Ex. 13): sida (< shida)",
             "source": "Metalinguistic routine on [ʃ] ↔ [s] substitution ('shrubbing'), humorous claim that",
             "pronunciation": "si-da / shi-ti-ka-shel / a-i-shi-shi"
           }
@@ -6492,7 +6839,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Samahani, mteja wa nambari uliyopiga hapatikani kwa sasa",
-            "source": "Sorry, the customer of the number you have dialed cannot be reached right now"
+            "source": "Sorry, the customer of the number you have dialed cannot be reached right now."
           }
         ]
       },
@@ -6514,14 +6861,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Northern Swahili ↔ Southern Somali",
-            "source": "Historical phonological, morphological, and lexical contact along the Benadir and",
+            "source": "Historical phonological, morphological, and lexical contact along the Benadir",
             "pronunciation": "mwii-ni / ba-ju-ni / ti-kuu / si-u / pa-te / a-mu"
           }
         ],
         "sentences": [
           {
             "target": "Ndugu yangu mrefu alianguka",
-            "source": "My tall sibling fell (Class 9 y-angu adjacent to ndugu vs. Class 1 w-angu after mrefu) (Pesetsky 2019, Ch. 29, pp. 557–560)."
+            "source": "My tall sibling fell (Class 9 y-angu adjacent to ndugu vs. Class 1 w-angu after mrefu) ."
           }
         ]
       }
@@ -6615,192 +6962,139 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ]
       },
-        {
+      {
         "id": "swahili-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Swahili (Kiswahili) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
+        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022).",
         "words": [
-                  {
-                            "target": "Hujambo",
-                            "source": "Hello",
-                            "pronunciation": "hoo-jahm-boh"
-                  },
-                  {
-                            "target": "amani",
-                            "source": "Peace",
-                            "pronunciation": "a-ma-ni"
-                  },
-                  {
-                            "target": "shukuru",
-                            "source": "Thank",
-                            "pronunciation": "shu-ku-ru"
-                  },
-                  {
-                            "target": "salimía",
-                            "source": "Greet",
-                            "pronunciation": "salimia"
-                  },
-                  {
-                            "target": "báriki",
-                            "source": "Bless",
-                            "pronunciation": "bariki"
-                  },
-                  {
-                            "target": "kupendeza",
-                            "source": "Please",
-                            "pronunciation": "ku-pende-za"
-                  },
-                  {
-                            "target": "salimia",
-                            "source": "Salute",
-                            "pronunciation": "sa-li-mia"
-                  },
-                  {
-                            "target": "samehe, achilia",
-                            "source": "Pardon",
-                            "pronunciation": "sa-me-he ach-i-lia"
-                  },
-                  {
-                            "target": "Kwaheri",
-                            "source": "Goodbye",
-                            "pronunciation": "kwah-heh-ree"
-                  },
-                  {
-                            "target": "Karibu",
-                            "source": "Welcome",
-                            "pronunciation": "kah-ree-boo"
-                  }
+          {
+            "target": "Hujambo",
+            "source": "Hello",
+            "pronunciation": "hoo-jahm-boh"
+          },
+          {
+            "target": "amani",
+            "source": "Peace",
+            "pronunciation": "a-ma-ni"
+          },
+          {
+            "target": "shukuru",
+            "source": "Thank",
+            "pronunciation": "shu-ku-ru"
+          },
+          {
+            "target": "salimía",
+            "source": "Greet",
+            "pronunciation": "salimia"
+          },
+          {
+            "target": "báriki",
+            "source": "Bless",
+            "pronunciation": "bariki"
+          },
+          {
+            "target": "kupendeza",
+            "source": "Please",
+            "pronunciation": "ku-pende-za"
+          },
+          {
+            "target": "salimia",
+            "source": "Salute",
+            "pronunciation": "sa-li-mia"
+          },
+          {
+            "target": "samehe, achilia",
+            "source": "Pardon",
+            "pronunciation": "sa-me-he ach-i-lia"
+          },
+          {
+            "target": "Kwaheri",
+            "source": "Goodbye",
+            "pronunciation": "kwah-heh-ree"
+          },
+          {
+            "target": "Karibu",
+            "source": "Welcome",
+            "pronunciation": "kah-ree-boo"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "samehe, achilia",
-                            "source": "Pardon"
-                  },
-                  {
-                            "target": "pendeza, furahisha",
-                            "source": "Please"
-                  },
-                  {
-                            "target": "samehe, achilia",
-                            "source": "Forgive"
-                  },
-                  {
-                            "target": "kua hẹri ya kuonána",
-                            "source": "Farewell"
-                  },
-                  {
-                            "target": "kua heri",
-                            "source": "Farewell!"
-                  },
-                  {
-                            "target": "kunrathi, nipe hisa yangu",
-                            "source": "Pardon me"
-                  },
-                  {
-                            "target": "mizinga ya salama",
-                            "source": "Salute of cannon"
-                  },
-                  {
-                            "target": "Marahaba !",
-                            "source": ". Thank you ! it is well !"
-                  }
+          {
+            "target": "kunrathi, nipe hisa yangu",
+            "source": "Pardon me."
+          },
+          {
+            "target": "mizinga ya salama",
+            "source": "Salute of cannon."
+          },
+          {
+            "target": "Marahaba !",
+            "source": ". Thank you ! it is well !"
+          }
         ]
-},
-        {
+      },
+      {
         "id": "swahili-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Swahili (Kiswahili) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022)",
+        "culturalNote": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022).",
         "words": [
-                  {
-                            "target": "moja",
-                            "source": "One",
-                            "pronunciation": "mo-ja"
-                  },
-                  {
-                            "target": "sita",
-                            "source": "Six",
-                            "pronunciation": "si-ta"
-                  },
-                  {
-                            "target": "kumi",
-                            "source": "Ten",
-                            "pronunciation": "ku-mi"
-                  },
-                  {
-                            "target": "mbili",
-                            "source": "Two",
-                            "pronunciation": "mbi-li"
-                  },
-                  {
-                            "target": "wote wawili",
-                            "source": "Both",
-                            "pronunciation": "wo-te wa-wi-li"
-                  },
-                  {
-                            "target": "tano",
-                            "source": "Five",
-                            "pronunciation": "ta-no"
-                  },
-                  {
-                            "target": "'nne",
-                            "source": "Four",
-                            "pronunciation": "'nne"
-                  },
-                  {
-                            "target": "nusu",
-                            "source": "Half",
-                            "pronunciation": "nu-su"
-                  },
-                  {
-                            "target": "kenda, tissa",
-                            "source": "Nine",
-                            "pronunciation": "kenda tissa"
-                  },
-                  {
-                            "target": "mara moja",
-                            "source": "Once",
-                            "pronunciation": "ma-ra mo-ja"
-                  }
+          {
+            "target": "moja",
+            "source": "One",
+            "pronunciation": "mo-ja"
+          },
+          {
+            "target": "sita",
+            "source": "Six",
+            "pronunciation": "si-ta"
+          },
+          {
+            "target": "kumi",
+            "source": "Ten",
+            "pronunciation": "ku-mi"
+          },
+          {
+            "target": "mbili",
+            "source": "Two",
+            "pronunciation": "mbi-li"
+          },
+          {
+            "target": "wote wawili",
+            "source": "Both",
+            "pronunciation": "wo-te wa-wi-li"
+          },
+          {
+            "target": "tano",
+            "source": "Five",
+            "pronunciation": "ta-no"
+          },
+          {
+            "target": "'nne",
+            "source": "Four",
+            "pronunciation": "'nne"
+          },
+          {
+            "target": "nusu",
+            "source": "Half",
+            "pronunciation": "nu-su"
+          },
+          {
+            "target": "kenda, tissa",
+            "source": "Nine",
+            "pronunciation": "kenda tissa"
+          },
+          {
+            "target": "mara moja",
+            "source": "Once",
+            "pronunciation": "ma-ra mo-ja"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "mōja, Mō-sī",
-                            "source": "One"
-                  },
-                  {
-                            "target": "wīlī, Mb-īlī",
-                            "source": "Two"
-                  },
-                  {
-                            "target": "Sīta. M-tāndātū",
-                            "source": "Six"
-                  },
-                  {
-                            "target": "wote wawili",
-                            "source": "Both"
-                  },
-                  {
-                            "target": "kenda, tissa",
-                            "source": "Nine"
-                  },
-                  {
-                            "target": "mara moja",
-                            "source": "Once"
-                  },
-                  {
-                            "target": "nē, N-nē",
-                            "source": "Four"
-                  },
-                  {
-                            "target": "mara mbili",
-                            "source": "Twice"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

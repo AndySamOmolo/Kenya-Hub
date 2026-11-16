@@ -40,10 +40,11 @@ export default function ScrollReset() {
   return (
     <button
       type="button"
+      data-adsense-ignore="true"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Scroll back to top"
       title="Back to top"
-      className="fixed bottom-16 sm:bottom-6 left-4 sm:left-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card/90 backdrop-blur-md text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-all duration-200 cursor-pointer animate-fade-in-up"
+      className="kh-back-to-top fixed bottom-24 sm:bottom-20 left-4 sm:left-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card/90 backdrop-blur-md text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-all duration-200 cursor-pointer animate-fade-in-up"
     >
       <ArrowUp className="w-4 h-4" />
     </button>

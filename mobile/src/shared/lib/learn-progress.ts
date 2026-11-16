@@ -1,19 +1,26 @@
 // ============================================================
 // Language Learning Progress Manager
-// Handles localStorage persistence, SRS review boxes, XP, streaks, and Unlock All
+// Handles localStorage persistence, SRS review boxes, XP, streaks, Daily Quests, and GameStats
 // ============================================================
 
-import type { UserProgress, LessonResult } from '../data/courses/types';
+import type {
+  UserProgress,
+  LessonResult,
+  GameStats,
+  DailyQuestProgress,
+  WordPair,
+} from '../data/courses/types';
 import {
   MAX_HEARTS,
   HEART_REFILL_MINUTES,
   ACHIEVEMENTS,
   LEVELS,
   XP_DAILY_GOAL_BONUS,
+  XP_DAILY_QUEST_CHEST,
 } from '../data/courses/types';
 
 const STORAGE_KEY = 'kh-learn-progress';
-const PROGRESS_VERSION = 2;
+const PROGRESS_VERSION = 3;
 
 const SRS_BOX_INTERVALS_MS: Record<number, number> = {
   1: 10 * 60 * 1000,            // 10 minutes
@@ -23,7 +30,69 @@ const SRS_BOX_INTERVALS_MS: Record<number, number> = {
   5: 14 * 24 * 60 * 60 * 1000,  // 14 days
 };
 
+/* ─── Local Calendar Date Helpers (UTC+3 EAT Safe) ─── */
+
+export function getLocalDateString(daysAgo = 0): string {
+  const d = new Date();
+  if (daysAgo !== 0) {
+    d.setDate(d.getDate() - daysAgo);
+  }
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+function getTodayString(): string {
+  return getLocalDateString(0);
+}
+
+function getYesterdayString(): string {
+  return getLocalDateString(1);
+}
+
 /* ─── Default state ────────────────────────────────── */
+
+export function createDefaultGameStats(): GameStats {
+  return {
+    wordleWon: 0,
+    wordleWins: 0,
+    wordleFirstTryWins: 0,
+    wordlePlayed: 0,
+    wordleStreak: 0,
+    wordleBestStreak: 0,
+    wordleGuessDist: [0, 0, 0, 0, 0, 0],
+    speedBestScore: 0,
+    speedBestStreak: 0,
+    memoryBestMoves: 0,
+    memoryBestTimeSec: {},
+    scrambleBestStreak: 0,
+    scrambleSolved: 0,
+    riddlesSolved: 0,
+    survivalBestRun: 0,
+    methaliSolved: 0,
+    safariCompleted: 0,
+    nounClassBest: 0,
+    oddWordBest: 0,
+    polyglotBest: 0,
+    twisterBest: 0,
+    countiesBest: 0,
+    matatuBest: 0,
+  };
+}
+
+export function createDefaultDailyQuests(date = getTodayString()): DailyQuestProgress {
+  return {
+    date,
+    lessonDone: false,
+    gameDone: false,
+    memoryOrCardsDone: false,
+    lessonsToday: 0,
+    gamesToday: 0,
+    xpToday: 0,
+    chestClaimed: false,
+  };
+}
 
 export function createDefaultProgress(languageId: string): UserProgress {
   return {
@@ -38,14 +107,16 @@ export function createDefaultProgress(languageId: string): UserProgress {
     dailyGoal: 50,
     todayXp: 0,
     hearts: MAX_HEARTS,
-    heartsLastRefill: 0,
+    heartsLastRefill: Date.now(),
     achievements: [],
     wordsLearned: [],
     lessonsCompleted: 0,
     perfectLessons: 0,
     gamesPlayed: 0,
-    streakFreezes: 0,
+    streakFreezes: 1,
     reviewQueue: [],
+    gameStats: createDefaultGameStats(),
+    dailyQuests: createDefaultDailyQuests(),
   };
 }
 
@@ -89,7 +160,48 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
       )
     : [];
 
-  return {
+  const today = getTodayString();
+  const lastActiveDate = typeof value.lastActiveDate === 'string' ? value.lastActiveDate : defaults.lastActiveDate;
+  const todayXpVal = lastActiveDate === today ? toBoundedNumber(value.todayXp, 0, 0, Number.MAX_SAFE_INTEGER) : 0;
+
+  const rawQuests = isRecord(value.dailyQuests) ? value.dailyQuests : null;
+  const dailyQuests: DailyQuestProgress =
+    rawQuests && rawQuests.date === today
+      ? {
+          date: today,
+          lessonDone: Boolean(rawQuests.lessonDone),
+          gameDone: Boolean(rawQuests.gameDone),
+          memoryOrCardsDone: Boolean(rawQuests.memoryOrCardsDone),
+          lessonsToday: toBoundedNumber(rawQuests.lessonsToday, rawQuests.lessonDone ? 1 : 0, 0, 1000),
+          gamesToday: toBoundedNumber(rawQuests.gamesToday, rawQuests.gameDone ? 1 : 0, 0, 1000),
+          xpToday: toBoundedNumber(rawQuests.xpToday, todayXpVal, 0, Number.MAX_SAFE_INTEGER),
+          chestClaimed: Boolean(rawQuests.chestClaimed),
+        }
+      : createDefaultDailyQuests(today);
+
+  const rawGs = isRecord(value.gameStats) ? value.gameStats : {};
+  const defaultGs = createDefaultGameStats();
+  const gameStats: GameStats = {
+    ...defaultGs,
+    ...(rawGs as Partial<GameStats>),
+    wordleWins: toBoundedNumber(rawGs.wordleWins ?? rawGs.wordleWon, 0, 0, Number.MAX_SAFE_INTEGER),
+    wordleWon: toBoundedNumber(rawGs.wordleWon ?? rawGs.wordleWins, 0, 0, Number.MAX_SAFE_INTEGER),
+    wordleFirstTryWins: toBoundedNumber(rawGs.wordleFirstTryWins, 0, 0, Number.MAX_SAFE_INTEGER),
+    scrambleSolved: toBoundedNumber(rawGs.scrambleSolved, 0, 0, Number.MAX_SAFE_INTEGER),
+    wordleGuessDist:
+      Array.isArray(rawGs.wordleGuessDist) && rawGs.wordleGuessDist.length === 6
+        ? (rawGs.wordleGuessDist.map((n) => Number(n) || 0) as [number, number, number, number, number, number])
+        : defaultGs.wordleGuessDist,
+    memoryBestMoves:
+      typeof rawGs.memoryBestMoves === 'number' && Number.isFinite(rawGs.memoryBestMoves)
+        ? rawGs.memoryBestMoves
+        : 0,
+    memoryBestTimeSec: isRecord(rawGs.memoryBestTimeSec)
+      ? (rawGs.memoryBestTimeSec as Record<number, number>)
+      : {},
+  };
+
+  const migrated: UserProgress = {
     version: PROGRESS_VERSION,
     languageId,
     skillLevels,
@@ -97,9 +209,9 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
     unlockAll: typeof value.unlockAll === 'boolean' ? value.unlockAll : false,
     xp: toBoundedNumber(value.xp, defaults.xp, 0, Number.MAX_SAFE_INTEGER),
     streak: toBoundedNumber(value.streak, defaults.streak, 0, Number.MAX_SAFE_INTEGER),
-    lastActiveDate: typeof value.lastActiveDate === 'string' ? value.lastActiveDate : defaults.lastActiveDate,
+    lastActiveDate,
     dailyGoal: toBoundedNumber(value.dailyGoal, defaults.dailyGoal, 10, Number.MAX_SAFE_INTEGER),
-    todayXp: toBoundedNumber(value.todayXp, defaults.todayXp, 0, Number.MAX_SAFE_INTEGER),
+    todayXp: todayXpVal,
     hearts: toBoundedNumber(value.hearts, defaults.hearts, 0, MAX_HEARTS),
     heartsLastRefill: toBoundedNumber(value.heartsLastRefill, defaults.heartsLastRefill, 0, Number.MAX_SAFE_INTEGER),
     achievements: Array.isArray(value.achievements)
@@ -111,9 +223,13 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
     lessonsCompleted: toBoundedNumber(value.lessonsCompleted, defaults.lessonsCompleted, 0, Number.MAX_SAFE_INTEGER),
     perfectLessons: toBoundedNumber(value.perfectLessons, 0, 0, Number.MAX_SAFE_INTEGER),
     gamesPlayed: toBoundedNumber(value.gamesPlayed, 0, 0, Number.MAX_SAFE_INTEGER),
-    streakFreezes: toBoundedNumber(value.streakFreezes, defaults.streakFreezes, 0, Number.MAX_SAFE_INTEGER),
+    streakFreezes: toBoundedNumber(value.streakFreezes, defaults.streakFreezes, 0, 5),
     reviewQueue,
+    gameStats,
+    dailyQuests,
   };
+
+  return refillHearts(migrated);
 }
 
 /* ─── Load / Save ──────────────────────────────────── */
@@ -142,13 +258,17 @@ export function saveProgress(progress: UserProgress): void {
 
 export function refillHearts(progress: UserProgress): UserProgress {
   if (progress.hearts >= MAX_HEARTS) return progress;
-  const elapsed = Date.now() - progress.heartsLastRefill;
+  const elapsed = Date.now() - (progress.heartsLastRefill || Date.now());
   const heartsToAdd = Math.floor(elapsed / (HEART_REFILL_MINUTES * 60 * 1000));
   if (heartsToAdd <= 0) return progress;
+  const nextHearts = Math.min(MAX_HEARTS, progress.hearts + heartsToAdd);
   return {
     ...progress,
-    hearts: Math.min(MAX_HEARTS, progress.hearts + heartsToAdd),
-    heartsLastRefill: Date.now(),
+    hearts: nextHearts,
+    heartsLastRefill:
+      nextHearts >= MAX_HEARTS
+        ? Date.now()
+        : progress.heartsLastRefill + heartsToAdd * HEART_REFILL_MINUTES * 60 * 1000,
   };
 }
 
@@ -160,70 +280,91 @@ export function loseHeart(progress: UserProgress): UserProgress {
     heartsLastRefill:
       progress.hearts >= MAX_HEARTS && hearts < MAX_HEARTS
         ? Date.now()
-        : progress.heartsLastRefill,
+        : progress.heartsLastRefill || Date.now(),
   };
 }
 
 export function minutesToNextHeart(progress: UserProgress): number {
   if (progress.hearts >= MAX_HEARTS) return 0;
-  const elapsed = Date.now() - progress.heartsLastRefill;
+  const elapsed = Date.now() - (progress.heartsLastRefill || Date.now());
   const remaining = HEART_REFILL_MINUTES * 60 * 1000 - (elapsed % (HEART_REFILL_MINUTES * 60 * 1000));
-  return Math.ceil(remaining / 60000);
+  return Math.max(1, Math.ceil(remaining / 60000));
 }
 
 /* ─── Streaks ──────────────────────────────────────── */
 
-function getTodayString(): string {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function getDateStringDaysAgo(daysAgo: number): string {
-  const d = new Date();
-  d.setUTCDate(d.getUTCDate() - daysAgo);
-  return d.toISOString().slice(0, 10);
-}
-
-function getYesterdayString(): string {
-  return getDateStringDaysAgo(1);
-}
-
-export function updateStreak(progress: UserProgress): UserProgress {
+function advanceStreakForToday(progress: UserProgress): {
+  streak: number;
+  streakFreezes: number;
+  lastActiveDate: string;
+} {
   const today = getTodayString();
   const yesterday = getYesterdayString();
+  const twoDaysAgo = getLocalDateString(2);
 
   if (progress.lastActiveDate === today) {
-    return progress;
-  }
-
-  if (progress.lastActiveDate === yesterday) {
     return {
-      ...progress,
-      streak: progress.streak + 1,
+      streak: Math.max(1, progress.streak),
+      streakFreezes: progress.streakFreezes,
       lastActiveDate: today,
-      todayXp: 0,
     };
   }
 
-  if (progress.streakFreezes > 0 && progress.lastActiveDate === getDateStringDaysAgo(2)) {
+  if (progress.lastActiveDate === yesterday || !progress.lastActiveDate) {
     return {
-      ...progress,
+      streak: progress.streak + 1,
+      streakFreezes: progress.streakFreezes,
+      lastActiveDate: today,
+    };
+  }
+
+  if (progress.streakFreezes > 0 && progress.lastActiveDate === twoDaysAgo) {
+    return {
+      streak: Math.max(1, progress.streak),
       streakFreezes: progress.streakFreezes - 1,
       lastActiveDate: today,
-      todayXp: 0,
     };
   }
 
   return {
-    ...progress,
-    streak: progress.lastActiveDate ? 0 : 1,
+    streak: 1,
+    streakFreezes: progress.streakFreezes,
     lastActiveDate: today,
+  };
+}
+
+export function updateStreak(progress: UserProgress): UserProgress {
+  const today = getTodayString();
+  if (progress.lastActiveDate === today) return progress;
+  const next = advanceStreakForToday(progress);
+  return {
+    ...progress,
+    ...next,
     todayXp: 0,
   };
 }
 
-/* ─── Achievement Evaluation & XP Bonus Helper ─────── */
+/* ─── Achievement & Daily Quest Evaluation Helper ─── */
 
-function evaluateAchievementsAndBonuses(updated: UserProgress): UserProgress {
+function evaluateAchievementsAndBonuses(
+  updated: UserProgress,
+  wasBelowDailyGoal: boolean
+): UserProgress {
+  if (updated.dailyQuests) {
+    updated.dailyQuests.xpToday = updated.todayXp;
+    const all3Done =
+      (updated.dailyQuests.lessonDone || updated.dailyQuests.lessonsToday >= 1) &&
+      (updated.dailyQuests.gameDone || updated.dailyQuests.gamesToday >= 2) &&
+      (updated.dailyQuests.memoryOrCardsDone || updated.dailyQuests.xpToday >= updated.dailyGoal);
+    if (all3Done && !updated.dailyQuests.chestClaimed) {
+      updated.dailyQuests = { ...updated.dailyQuests, chestClaimed: true };
+      updated.xp += XP_DAILY_QUEST_CHEST;
+      updated.todayXp += XP_DAILY_QUEST_CHEST;
+      updated.dailyQuests.xpToday = updated.todayXp;
+      updated.streakFreezes = Math.min(3, (updated.streakFreezes || 0) + 1);
+    }
+  }
+
   const newAchievements = [...updated.achievements];
   let achievementBonusXp = 0;
 
@@ -249,6 +390,13 @@ function evaluateAchievementsAndBonuses(updated: UserProgress): UserProgress {
   }
 
   updated.achievements = newAchievements;
+
+  // Evaluate daily goal bonus AFTER all lesson/perfect/quest/achievement bonuses are added
+  if (wasBelowDailyGoal && updated.todayXp >= updated.dailyGoal) {
+    updated.xp += XP_DAILY_GOAL_BONUS;
+    updated.todayXp += XP_DAILY_GOAL_BONUS;
+  }
+
   return updated;
 }
 
@@ -257,6 +405,17 @@ function evaluateAchievementsAndBonuses(updated: UserProgress): UserProgress {
 export function applyLessonResult(progress: UserProgress, result: LessonResult): UserProgress {
   const today = getTodayString();
   const wasBelowDailyGoal = (progress.lastActiveDate === today ? progress.todayXp : 0) < progress.dailyGoal;
+  const streakInfo = advanceStreakForToday(progress);
+
+  const currentQuests =
+    progress.dailyQuests && progress.dailyQuests.date === today
+      ? progress.dailyQuests
+      : createDefaultDailyQuests(today);
+
+  // Streak bonus (+5 XP per streak day up to +35 XP)
+  const streakBonus = Math.min(streakInfo.streak, 7) * 5;
+  const totalEarned = result.xpEarned + streakBonus;
+  const baseTodayXp = progress.lastActiveDate === today ? progress.todayXp : 0;
 
   const updated: UserProgress = {
     ...progress,
@@ -265,10 +424,18 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     achievements: [...progress.achievements],
     wordsLearned: [...progress.wordsLearned],
     reviewQueue: [...progress.reviewQueue],
-    todayXp: progress.lastActiveDate === today ? progress.todayXp : 0,
+    gameStats: { ...(progress.gameStats || createDefaultGameStats()) },
+    dailyQuests: {
+      ...currentQuests,
+      lessonDone: currentQuests.lessonDone || result.accuracy >= 0.75,
+      lessonsToday: (currentQuests.lessonsToday || 0) + 1,
+      xpToday: baseTodayXp + totalEarned,
+    },
+    todayXp: baseTodayXp + totalEarned,
+    xp: progress.xp + totalEarned,
+    ...streakInfo,
   };
 
-  // Do not increment skillLevels when completing a global spaced-repetition review session
   if (!result.reviewOnly) {
     const currentLevel = updated.skillLevels[result.skillId] || 0;
     if (result.level > currentLevel) {
@@ -276,36 +443,9 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     }
   }
 
-  if (updated.lastActiveDate !== today) {
-    const yesterday = getYesterdayString();
-    if (updated.lastActiveDate === yesterday || !updated.lastActiveDate) {
-      updated.streak += 1;
-    } else if (
-      updated.streakFreezes > 0 &&
-      updated.lastActiveDate === getDateStringDaysAgo(2)
-    ) {
-      updated.streakFreezes -= 1;
-    } else {
-      updated.streak = 1;
-    }
-    updated.lastActiveDate = today;
-  }
-
-  // Streak bonus (+5 XP per streak day up to +35 XP)
-  const streakBonus = Math.min(updated.streak, 7) * 5;
-  const totalEarned = result.xpEarned + streakBonus;
-
-  updated.xp += totalEarned;
-  updated.todayXp += totalEarned;
   updated.lessonsCompleted += 1;
   if (result.perfectLesson) {
     updated.perfectLessons = (updated.perfectLessons || 0) + 1;
-  }
-
-  // Daily goal completion bonus (+25 XP)
-  if (wasBelowDailyGoal && updated.todayXp >= updated.dailyGoal) {
-    updated.xp += XP_DAILY_GOAL_BONUS;
-    updated.todayXp += XP_DAILY_GOAL_BONUS;
   }
 
   const wordSet = new Set(updated.wordsLearned);
@@ -346,13 +486,7 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     updated.heartsLastRefill = Date.now();
   }
 
-  if (result.perfectLesson && !updated.achievements.includes('perfect-score')) {
-    updated.achievements.push('perfect-score');
-    updated.xp += 50;
-    updated.todayXp += 50;
-  }
-
-  return evaluateAchievementsAndBonuses(updated);
+  return evaluateAchievementsAndBonuses(updated, wasBelowDailyGoal);
 }
 
 /** Award XP from mini-games or flashcard practice */
@@ -362,22 +496,119 @@ export function awardActivityXp(
   isGame = false
 ): UserProgress {
   const today = getTodayString();
-  const wasBelowDailyGoal = (progress.lastActiveDate === today ? progress.todayXp : 0) < progress.dailyGoal;
+  const baseTodayXp = progress.lastActiveDate === today ? progress.todayXp : 0;
+  const wasBelowDailyGoal = baseTodayXp < progress.dailyGoal;
+  const streakInfo = advanceStreakForToday(progress);
+
+  const currentQuests =
+    progress.dailyQuests && progress.dailyQuests.date === today
+      ? progress.dailyQuests
+      : createDefaultDailyQuests(today);
+
   const updated: UserProgress = {
     ...progress,
-    todayXp: (progress.lastActiveDate === today ? progress.todayXp : 0) + bonusXp,
+    todayXp: baseTodayXp + bonusXp,
     xp: progress.xp + bonusXp,
-    lastActiveDate: today,
-    streak: progress.lastActiveDate === today ? Math.max(1, progress.streak) : progress.streak + 1,
+    ...streakInfo,
     gamesPlayed: isGame ? (progress.gamesPlayed || 0) + 1 : progress.gamesPlayed || 0,
+    gameStats: { ...(progress.gameStats || createDefaultGameStats()) },
+    dailyQuests: {
+      ...currentQuests,
+      gameDone: currentQuests.gameDone || isGame,
+      memoryOrCardsDone: currentQuests.memoryOrCardsDone || !isGame || bonusXp >= 20,
+      gamesToday: isGame ? (currentQuests.gamesToday || 0) + 1 : currentQuests.gamesToday || 0,
+      xpToday: baseTodayXp + bonusXp,
+    },
   };
 
-  if (wasBelowDailyGoal && updated.todayXp >= updated.dailyGoal) {
-    updated.xp += XP_DAILY_GOAL_BONUS;
-    updated.todayXp += XP_DAILY_GOAL_BONUS;
-  }
+  return evaluateAchievementsAndBonuses(updated, wasBelowDailyGoal);
+}
 
-  return evaluateAchievementsAndBonuses(updated);
+/** Update persistent per-game Personal Bests & statistics */
+export function updateGameStats(
+  progress: UserProgress,
+  updater: (prev: GameStats) => Partial<GameStats>
+): UserProgress {
+  const current = progress.gameStats || createDefaultGameStats();
+  const patch = updater(current);
+  const nextStats: GameStats = {
+    ...current,
+    ...patch,
+  };
+  const updated: UserProgress = {
+    ...progress,
+    gameStats: nextStats,
+  };
+  return evaluateAchievementsAndBonuses(updated, false);
+}
+
+/**
+ * Bidirectional SRS hook for Mini-Games:
+ * Supports both (progress, wordPair, correct) and (progress, target, source, correct).
+ */
+export function recordWordPracticeResult(
+  progress: UserProgress,
+  wordOrTarget: WordPair | string,
+  correctOrSource: boolean | string,
+  maybeCorrect?: boolean
+): UserProgress {
+  const word: WordPair =
+    typeof wordOrTarget === 'string'
+      ? { target: wordOrTarget, source: String(correctOrSource || '') }
+      : wordOrTarget;
+  const correct = typeof wordOrTarget === 'string' ? Boolean(maybeCorrect) : Boolean(correctOrSource);
+
+  if (!word || !word.target || !word.source) return progress;
+  const targetKey = word.target.toLowerCase().trim();
+  const now = Date.now();
+  const reviewById = new Map(progress.reviewQueue.map((item) => [item.id, item]));
+  const reviewId = `game:${targetKey}`;
+
+  if (correct) {
+    const wordSet = new Set(progress.wordsLearned);
+    wordSet.add(targetKey);
+    for (const [id, item] of reviewById.entries()) {
+      if (
+        id === reviewId ||
+        item.answer.toLowerCase().trim() === targetKey ||
+        item.answer.toLowerCase().trim() === word.source.toLowerCase().trim()
+      ) {
+        const nextBox = (item.box || 1) + 1;
+        if (nextBox > 5) {
+          reviewById.delete(id);
+        } else {
+          reviewById.set(id, {
+            ...item,
+            box: nextBox,
+            dueAt: now + (SRS_BOX_INTERVALS_MS[nextBox] || SRS_BOX_INTERVALS_MS[5]),
+          });
+        }
+      }
+    }
+    return {
+      ...progress,
+      wordsLearned: Array.from(wordSet),
+      reviewQueue: Array.from(reviewById.values()).sort((a, b) => a.dueAt - b.dueAt),
+    };
+  } else {
+    const existing = reviewById.get(reviewId);
+    reviewById.set(reviewId, {
+      id: reviewId,
+      skillId: 'games-practice',
+      type: 'translate_to_english',
+      prompt: `Translate "${word.target}" to English:`,
+      answer: word.source,
+      word: word.target,
+      wrongCount: (existing?.wrongCount || 0) + 1,
+      sourceWord: word,
+      box: 1,
+      dueAt: now + SRS_BOX_INTERVALS_MS[1],
+    });
+    return {
+      ...progress,
+      reviewQueue: Array.from(reviewById.values()).sort((a, b) => a.dueAt - b.dueAt),
+    };
+  }
 }
 
 export function getDueReviews(progress: UserProgress, now = Date.now()): LessonResult['reviewItems'] {

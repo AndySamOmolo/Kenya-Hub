@@ -7,6 +7,8 @@ import { scrollToTopIfScrolled } from "@/lib/scroll";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import cbcData from "@/data/cbc-curriculum.json";
+import schoolTermsData from "@/data/school-terms.json";
+import publicHolidaysData from "@/data/public-holidays.json";
 
 const tool = TOOLS.find((t) => t.slug === "cbc-curriculum")!;
 
@@ -301,6 +303,44 @@ export default function CBCCurriculumPage() {
                 })}
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Official Ministry of Education 2026 School Term Calendar & Gazetted Public Holidays */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6">
+          <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              Ministry of Education 2026 School Term Dates &amp; Half-Term Calendar
+            </h2>
+            <div className="space-y-2">
+              {(schoolTermsData.years["2026"]?.terms || []).map((term) => (
+                <div key={term.name} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-xs flex items-center justify-between gap-2">
+                  <div>
+                    <p className="font-bold text-text-primary">{term.name} ({term.weeks} weeks)</p>
+                    <p className="text-text-secondary">{term.openingDate} to {term.closingDate}</p>
+                  </div>
+                  {term.midTermBreak && (
+                    <span className="text-[0.6875rem] text-gold font-medium shrink-0">
+                      Half-Term: {term.midTermBreak}
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              2026 Gazetted Kenyan Public Holidays ({publicHolidaysData.source})
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-1">
+              {(publicHolidaysData.holidays["2026"] || []).map((hol) => (
+                <div key={hol.name + hol.date} className="rounded-lg bg-bg-elevated/60 border border-border px-3 py-2 text-xs">
+                  <p className="font-semibold text-text-primary">{hol.name}</p>
+                  <p className="text-gold font-mono text-[0.6875rem]">{hol.date}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

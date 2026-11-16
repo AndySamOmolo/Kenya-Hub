@@ -5,6 +5,9 @@ import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import sccData from "@/data/small-claims-data.json";
+import passportIdData from "@/data/passport-id-fees.json";
+import trademarkData from "@/data/trademark-fees.json";
+import professionalBodiesData from "@/data/professional-bodies.json";
 
 const tool = TOOLS.find((t) => t.slug === "small-claims-calculator")!;
 
@@ -148,6 +151,57 @@ export default function SmallClaimsCalculatorPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Statutory eCitizen Civil Fees, KIPI IP Tariffs & Kenyan Professional Regulatory Bodies */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-2.5">
+            <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              eCitizen Passport &amp; National ID Statutory Fees
+            </h2>
+            <div className="space-y-1.5 text-xs">
+              {passportIdData.passport.types.map((pt) => (
+                <div key={pt.type} className="flex items-center justify-between py-1 border-b border-border/50">
+                  <span className="text-text-secondary">{pt.type} ({pt.processingTime})</span>
+                  <span className="font-bold text-gold">KES {pt.fee.toLocaleString()}</span>
+                </div>
+              ))}
+              {passportIdData.nationalId.types.map((idType) => (
+                <div key={idType.type} className="flex items-center justify-between py-1 border-b border-border/50 last:border-0">
+                  <span className="text-text-secondary">ID: {idType.type}</span>
+                  <span className="font-bold text-kenya-green-light">KES {idType.fee.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-2.5">
+            <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              KIPI Trademark &amp; Patent Filing Schedule ({trademarkData.kipiInfo.abbreviation})
+            </h2>
+            <div className="space-y-1.5 text-xs">
+              {trademarkData.fees.trademark.steps.slice(0, 5).map((step) => (
+                <div key={step.item} className="flex items-center justify-between py-1 border-b border-border/50 last:border-0">
+                  <span className="text-text-secondary">{step.item} ({step.note})</span>
+                  <span className="font-bold text-text-primary">KES {step.amount.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-2.5">
+            <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              Kenyan Statutory Professional Regulators ({professionalBodiesData.bodies.length})
+            </h2>
+            <div className="space-y-1.5 text-xs max-h-52 overflow-y-auto pr-1">
+              {professionalBodiesData.bodies.slice(0, 8).map((b) => (
+                <div key={b.abbreviation} className="flex items-center justify-between py-1 border-b border-border/50 last:border-0">
+                  <span className="text-text-secondary"><strong className="text-gold">{b.abbreviation}</strong> — {b.profession}</span>
+                  <span className="text-[0.6875rem] text-text-muted">{b.renewalFee}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -13,6 +13,8 @@ import {
   Lightbulb,
   RotateCcw,
   Layers,
+  Heart,
+  Shield,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import SkillTree from "@/components/learn/SkillTree";
@@ -39,6 +41,7 @@ import type { Tool } from "@/lib/types";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from "@/data/language-sources";
 import { loadDictionary, DICT_CACHE } from "@/lib/dictionary-loader";
+import { playCorrectSfx, playBadgeUnlockSfx } from "@/lib/game-sfx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -124,7 +127,6 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     };
   }, [languageId]);
 
-
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
     level: number;
@@ -133,6 +135,34 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   } | null>(null);
   const [showCompletionToast, setShowCompletionToast] = useState<string | null>(
     null
+  );
+
+  const checkAndNotifyNewAchievements = useCallback(
+    (prevAchievements: string[], nextAchievements: string[]) => {
+      const prevSet = new Set(prevAchievements);
+      const newlyUnlocked = nextAchievements.filter((id) => !prevSet.has(id));
+      if (newlyUnlocked.length > 0) {
+        const ach = ACHIEVEMENTS.find((a) => a.id === newlyUnlocked[0]);
+        if (ach) {
+          playBadgeUnlockSfx();
+          setShowCompletionToast(`Unlocked Badge: ${ach.name}! (+${ach.xpReward} XP)`);
+          setTimeout(() => setShowCompletionToast(null), 4200);
+        }
+      }
+    },
+    []
+  );
+
+  const handleUpdateProgress = useCallback(
+    (updater: (prev: UserProgress) => UserProgress) => {
+      setProgress((prev) => {
+        const updated = updater(prev);
+        saveProgress(updated);
+        checkAndNotifyNewAchievements(prev.achievements, updated.achievements);
+        return updated;
+      });
+    },
+    [checkAndNotifyNewAchievements]
   );
 
   useEffect(() => {
@@ -265,11 +295,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         setIsCardFlipped(false);
       } else if (e.key === "2") {
         e.preventDefault();
-        setProgress((prev) => {
-          const updated = awardActivityXp(prev, 2, false);
-          saveProgress(updated);
-          return updated;
-        });
+        playCorrectSfx();
+        handleUpdateProgress((prev) => awardActivityXp(prev, 2, false));
         setFlashcardXpPop(true);
         setTimeout(() => setFlashcardXpPop(false), 650);
         setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
@@ -278,7 +305,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [view, flashcardDeck.length]);
+  }, [view, flashcardDeck.length, handleUpdateProgress]);
 
   const filteredModules = useMemo(() => {
     const q = moduleSearch.trim().toLowerCase();
@@ -377,23 +404,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
-      const prevAchievements = new Set(progress.achievements);
+      const prevAchievements = [...progress.achievements];
       const updated = applyLessonResult(progress, result);
       saveProgress(updated);
       setProgress(updated);
-
-      const newlyUnlocked = updated.achievements.filter(
-        (id) => !prevAchievements.has(id)
-      );
-      if (newlyUnlocked.length > 0) {
-        const ach = ACHIEVEMENTS.find((a) => a.id === newlyUnlocked[0]);
-        if (ach) {
-          setShowCompletionToast(`Unlocked Badge: ${ach.name}!`);
-          setTimeout(() => setShowCompletionToast(null), 4000);
-        }
-      }
+      checkAndNotifyNewAchievements(prevAchievements, updated.achievements);
     },
-    [progress]
+    [progress, checkAndNotifyNewAchievements]
   );
 
   const handleQuitLesson = useCallback(() => {
@@ -544,7 +561,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       hideFooter={view === "playing"}
       hideSource
     >
-      {/* Top Bar: Compact Language Dropdown on Left + XP & Streak on Right */}
+      {/* Top Bar: Compact Language Dropdown on Left + XP, Hearts, Shield & Streak on Right */}
       {view !== "playing" && (
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2">
@@ -567,7 +584,23 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             />
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-semibold shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold shrink-0 flex-wrap">
+            <span
+              className="inline-flex items-center gap-1 rounded-full border border-red-500/30 bg-red-500/10 px-2.5 py-1.5 text-red-400 font-bold"
+              title="Active Hearts (refills 1 heart every 30 min)"
+            >
+              <Heart className="h-3.5 w-3.5 fill-red-400" />
+              {progress.hearts}
+            </span>
+            {progress.streakFreezes > 0 && (
+              <span
+                className="inline-flex items-center gap-1 rounded-full border border-sky-500/30 bg-sky-500/10 px-2.5 py-1.5 text-sky-400 font-bold"
+                title={`${progress.streakFreezes} Streak Shield active (protects 1 missed day)`}
+              >
+                <Shield className="h-3.5 w-3.5" />
+                {progress.streakFreezes}
+              </span>
+            )}
             <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5 text-gold font-bold">
               {progress.xp} XP
             </span>
@@ -598,7 +631,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             { id: "lessons" as const, label: "Skill Path" },
             { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString()})` },
             { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString()})` },
-            { id: "games" as const, label: "Mini-Games" },
+            { id: "games" as const, label: "Mini-Games (14)" },
             ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
           ].map((tab) => {
@@ -759,11 +792,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 <button
                   type="button"
                   onClick={() => {
-                    setProgress((prev) => {
-                      const updated = awardActivityXp(prev, 2, false);
-                      saveProgress(updated);
-                      return updated;
-                    });
+                    playCorrectSfx();
+                    handleUpdateProgress((prev) => awardActivityXp(prev, 2, false));
                     setFlashcardXpPop(true);
                     setTimeout(() => setFlashcardXpPop(false), 650);
                     setFlashcardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
@@ -817,7 +847,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           )}
         </div>
       ) : view === "modules" ? (
-        <div className="mx-auto max-w-3xl space-y-5 pb-8">
+        <div data-adsense-pause={filteredModules.length === 0 ? "true" : undefined} className="mx-auto max-w-3xl space-y-5 pb-8">
           <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-5 space-y-3.5">
             <div>
               <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
@@ -953,14 +983,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <div data-adsense-pause="true">
           <GamesHub
             units={combinedUnits}
+            courseUnits={course.units}
             languageName={course.config.name}
             languageId={course.config.id}
+            progress={progress}
+            onUpdateProgress={handleUpdateProgress}
             onAwardXp={(xp) => {
-              setProgress((prev) => {
-                const updated = awardActivityXp(prev, xp, true);
-                saveProgress(updated);
-                return updated;
-              });
+              handleUpdateProgress((prev) => awardActivityXp(prev, xp, true));
             }}
             onBack={() => setView("lessons")}
           />
@@ -984,6 +1013,50 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             window.location.href = "/tools/learn/";
           }}
         />
+      )}
+
+      {/* Always-Indexable Core Vocabulary & Expressions Reference Table for Search Engines */}
+      {view !== "playing" && sampleWords.length > 0 && (
+        <section className="mt-8 bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              {langHeading} Core Vocabulary &amp; Expressions Reference Table
+            </h2>
+            <Link
+              href={`/tools/kenyan-translator/?lang=${course.config.id}`}
+              className="text-xs font-semibold text-gold hover:underline"
+            >
+              Open Full {course.config.name} Dictionary ({totalWords.toLocaleString()}+ Entries) →
+            </Link>
+          </div>
+          <div className="table-responsive">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>{course.config.name} ({course.config.nativeName})</th>
+                  <th>English Meaning</th>
+                  <th>Pronunciation / Usage Context</th>
+                </tr>
+              </thead>
+              <tbody>
+                {course.units
+                  .flatMap((u) => u.skills.flatMap((sk) => sk.words))
+                  .filter((w) => w.target && w.source)
+                  .slice(0, 16)
+                  .map((w, idx) => (
+                    <tr key={idx}>
+                      <td className="font-bold text-gold">{w.target}</td>
+                      <td className="font-medium text-text-primary">{w.source}</td>
+                      <td className="text-xs text-text-secondary">
+                        {w.pronunciation ? `[${w.pronunciation}] ` : ""}
+                        {w.example || course.config.family}
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
       )}
     </ToolShell>
   );

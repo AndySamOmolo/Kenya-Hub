@@ -344,7 +344,7 @@ export default function LearnPage() {
             </div>
 
             {/* Available Languages Grid */}
-            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
+            <div data-adsense-pause={filteredLangs.length === 0 ? "true" : undefined} className="grid gap-3 sm:gap-4 sm:grid-cols-2">
               {filteredLangs.map((lang) => {
                 const stats = progressMap[lang.id] || {
                   xp: 0,

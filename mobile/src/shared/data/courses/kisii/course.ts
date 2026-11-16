@@ -56,44 +56,98 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)"
           },
           {
-            "target": "omosacha (pl. abasacha) / omokungu (pl. abakungu)",
-            "source": "Man, husband / Woman, wife",
+            "target": "omosacha (pl. abasacha)",
+            "source": "Man, husband",
             "pronunciation": "o-mo-sacha / o-mo-kungu",
             "hint": "Hobley (1902) & Johnston (1919 #7)"
           },
           {
-            "target": "omoiseke (pl. abaiseke) / omosia (pl. abasia)",
-            "source": "Girl / Boy",
+            "target": "omokungu (pl. abakungu)",
+            "source": "Woman, wife",
+            "pronunciation": "o-mo-sacha / o-mo-kungu",
+            "hint": "Hobley (1902) & Johnston (1919 #7)"
+          },
+          {
+            "target": "omoiseke (pl. abaiseke)",
+            "source": "Girl",
             "pronunciation": "o-moi-se-ke / o-mo-sia",
             "hint": "Class 1/2 nouns (Johnston 1919)"
           },
           {
-            "target": "omogaka (pl. abagaka) / baba / tata",
-            "source": "Elder / Mother / Father",
+            "target": "omosia (pl. abasia)",
+            "source": "Boy",
+            "pronunciation": "o-moi-se-ke / o-mo-sia",
+            "hint": "Class 1/2 nouns (Johnston 1919)"
+          },
+          {
+            "target": "omogaka (pl. abagaka)",
+            "source": "Elder",
             "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
             "hint": "Kinship & elder nouns (Hobley 1902)"
           },
           {
-            "target": "amache / amabere / omorero",
-            "source": "Water / Milk / Fire",
+            "target": "baba",
+            "source": "Mother",
+            "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
+            "hint": "Kinship & elder nouns (Hobley 1902)"
+          },
+          {
+            "target": "tata",
+            "source": "Father",
+            "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
+            "hint": "Kinship & elder nouns (Hobley 1902)"
+          },
+          {
+            "target": "amache",
+            "source": "Water",
             "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
-            "target": "enyomba (pl. chinyomba) / inka",
-            "source": "House (pl. Houses) / Homestead",
+            "target": "amabere",
+            "source": "Milk",
+            "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "omorero",
+            "source": "Fire",
+            "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "enyomba (pl. chinyomba)",
+            "source": "House (pl. Houses)",
             "pronunciation": "enyomba / inka",
             "hint": "Class 9/10 e-/chi- (Johnston 1919)"
           },
           {
-            "target": "rigena (pl. amagena) / omote (pl. emete)",
-            "source": "Stone (pl. Stones) / Tree (pl. Trees)",
+            "target": "inka",
+            "source": "Homestead",
+            "pronunciation": "enyomba / inka",
+            "hint": "Class 9/10 e-/chi- (Johnston 1919)"
+          },
+          {
+            "target": "rigena (pl. amagena)",
+            "source": "Stone (pl. Stones)",
             "pronunciation": "ri-ge-na / o-mo-te",
             "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
           },
           {
-            "target": "Engoro / Erioba",
-            "source": "God / The Sun",
+            "target": "omote (pl. emete)",
+            "source": "Tree (pl. Trees)",
+            "pronunciation": "ri-ge-na / o-mo-te",
+            "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
+          },
+          {
+            "target": "Engoro",
+            "source": "God",
+            "pronunciation": "engo-ro / e-rio-ba",
+            "hint": "Hobley (1902) & Johnston (1919)"
+          },
+          {
+            "target": "Erioba",
+            "source": "The Sun",
             "pronunciation": "engo-ro / e-rio-ba",
             "hint": "Hobley (1902) & Johnston (1919)"
           }
@@ -115,8 +169,8 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "Good morning",
             "options": [
               "Good night",
-              "Person (pl. People)",
-              "Man, husband / Woman, wife",
+              "Person",
+              "Man",
               "Good morning"
             ],
             "hint": "Morning salutation"
@@ -126,8 +180,8 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Obotuko obuya\" in Kisii?",
             "correctAnswer": "Good night",
             "options": [
-              "Person (pl. People)",
-              "Man, husband / Woman, wife",
+              "Person",
+              "Man",
               "Good night",
               "Good morning"
             ],
@@ -136,38 +190,50 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"omonto (pl. abanto)\" in Kisii?",
-            "correctAnswer": "Person (pl. People)",
+            "correctAnswer": "Person",
             "options": [
-              "Man, husband / Woman, wife",
-              "Person (pl. People)",
+              "Person",
+              "Man",
               "Good morning",
               "Good night"
             ],
-            "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)"
+            "hint": "Class 1/2 noun (Hobley 1902 & Johnston 1919)",
+            "acceptedAnswers": [
+              "Person (pl. People)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Person (pl. People)\" in Kisii?",
-            "correctAnswer": "omonto (pl. abanto)",
+            "correctAnswer": "omonto",
             "options": [
-              "omonto (pl. abanto)",
+              "omonto",
               "Bwakire buya",
               "Obotuko obuya",
-              "omosacha (pl. abasacha) / omokungu (pl. abakungu)"
+              "omosacha"
             ],
-            "hint": "oh-moh-ntoh / ah-bah-ntoh"
+            "hint": "oh-moh-ntoh / ah-bah-ntoh",
+            "acceptedAnswers": [
+              "omonto (pl. abanto)",
+              "omonto"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Man, husband / Woman, wife\" in Kisii?",
-            "correctAnswer": "omosacha (pl. abasacha) / omokungu (pl. abakungu)",
+            "prompt": "How do you say \"Man\" in Kisii?",
+            "correctAnswer": "omosacha",
             "options": [
               "Bwakire buya",
               "Obotuko obuya",
-              "omonto (pl. abanto)",
-              "omosacha (pl. abasacha) / omokungu (pl. abakungu)"
+              "omosacha",
+              "omonto"
             ],
-            "hint": "oh-moh-sah-chah / oh-moh-koon-goo"
+            "hint": "oh-moh-sah-chah / oh-moh-koon-goo",
+            "acceptedAnswers": [
+              "omosacha (pl. abasacha) / omokungu (pl. abakungu)",
+              "omosacha"
+            ]
           },
           {
             "type": "match_pairs",
@@ -194,15 +260,19 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kisii term for \"Girl / Boy\": ___",
-            "correctAnswer": "omoiseke (pl. abaiseke) / omosia (pl. abasia)",
+            "prompt": "Complete the Kisii term for \"Girl\": ___",
+            "correctAnswer": "omoiseke",
             "options": [
               "Bwakire buya",
               "Obotuko obuya",
-              "omonto (pl. abanto)",
-              "omoiseke (pl. abaiseke) / omosia (pl. abasia)"
+              "omonto",
+              "omoiseke"
             ],
-            "hint": "Class 1/2 nouns (Johnston 1919)"
+            "hint": "Class 1/2 nouns (Johnston 1919)",
+            "acceptedAnswers": [
+              "omoiseke (pl. abaiseke) / omosia (pl. abasia)",
+              "omoiseke"
+            ]
           }
         ]
       },
@@ -250,26 +320,62 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Cardinal 6"
           },
           {
-            "target": "isano na ibere / isano na isato",
-            "source": "Seven (7, lit. 5+2) / Eight (8, lit. 5+3)",
+            "target": "isano na ibere",
+            "source": "Seven (7, lit. 5+2)",
             "pronunciation": "i-sa-no na i-be-re / i-sa-no na i-sa-to",
             "hint": "Cardinals 7 & 8"
           },
           {
-            "target": "kianda / ikomi",
-            "source": "Nine (9) / Ten (10)",
+            "target": "isano na isato",
+            "source": "Eight (8, lit. 5+3)",
+            "pronunciation": "i-sa-no na i-be-re / i-sa-no na i-sa-to",
+            "hint": "Cardinals 7 & 8"
+          },
+          {
+            "target": "kianda",
+            "source": "Nine (9)",
             "pronunciation": "kianda / i-ko-mi",
             "hint": "Cardinals 9 & 10"
           },
           {
-            "target": "emerongo ebere / rigana",
-            "source": "Twenty (20) / One hundred (100)",
+            "target": "ikomi",
+            "source": "Ten (10)",
+            "pronunciation": "kianda / i-ko-mi",
+            "hint": "Cardinals 9 & 10"
+          },
+          {
+            "target": "emerongo ebere",
+            "source": "Twenty (20)",
             "pronunciation": "e-me-rongo e-be-re / ri-ga-na",
             "hint": "Cardinals 20 & 100 (Johnston 1919)"
           },
           {
-            "target": "okomanya / okorora / okoria / okonywa",
-            "source": "To know / To see / To eat / To drink",
+            "target": "rigana",
+            "source": "One hundred (100)",
+            "pronunciation": "e-me-rongo e-be-re / ri-ga-na",
+            "hint": "Cardinals 20 & 100 (Johnston 1919)"
+          },
+          {
+            "target": "okomanya",
+            "source": "To know",
+            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okorora",
+            "source": "To see",
+            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okoria",
+            "source": "To eat",
+            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
+          },
+          {
+            "target": "okonywa",
+            "source": "To drink",
             "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
             "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           }
@@ -277,53 +383,65 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Chiombe isano na ibere",
-            "source": "Seven cows"
+            "source": "Seven cows."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"eyemo\" in Kisii?",
-            "correctAnswer": "One (1)",
+            "correctAnswer": "One",
             "options": [
-              "Two (2)",
-              "Three (3)",
-              "Four (4)",
-              "One (1)"
+              "Two",
+              "Three",
+              "Four",
+              "One"
             ],
-            "hint": "Cardinal 1 (Hobley 1902 & Johnston 1919)"
+            "hint": "Cardinal 1 (Hobley 1902 & Johnston 1919)",
+            "acceptedAnswers": [
+              "One (1)",
+              "One"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ibere\" in Kisii?",
-            "correctAnswer": "Two (2)",
+            "correctAnswer": "Two",
             "options": [
-              "Three (3)",
-              "Four (4)",
-              "Two (2)",
-              "One (1)"
+              "Three",
+              "Four",
+              "One",
+              "Two"
             ],
-            "hint": "Cardinal 2"
+            "hint": "Cardinal 2",
+            "acceptedAnswers": [
+              "Two (2)",
+              "Two"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"isato\" in Kisii?",
-            "correctAnswer": "Three (3)",
+            "correctAnswer": "Three",
             "options": [
-              "Four (4)",
-              "Three (3)",
-              "One (1)",
-              "Two (2)"
+              "Four",
+              "Three",
+              "One",
+              "Two"
             ],
-            "hint": "Cardinal 3"
+            "hint": "Cardinal 3",
+            "acceptedAnswers": [
+              "Three (3)",
+              "Three"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three (3)\" in Kisii?",
             "correctAnswer": "isato",
             "options": [
-              "isato",
               "eyemo",
+              "isato",
               "ibere",
               "inye"
             ],
@@ -369,10 +487,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii term for \"Five (5)\": ___",
             "correctAnswer": "isano",
             "options": [
+              "isano",
               "eyemo",
               "ibere",
-              "isato",
-              "isano"
+              "isato"
             ],
             "hint": "Cardinal 5"
           }
@@ -415,44 +533,98 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
-            "target": "obori / amaemba / erabuoni",
-            "source": "Finger-millet (wimbi) / Sorghum / Sweet potato",
+            "target": "obori",
+            "source": "Finger-millet (wimbi)",
             "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
             "hint": "Hobley (1902, pp. 89–91) highland staples"
           },
           {
-            "target": "obokima / obouki",
-            "source": "Millet ugali / Honey",
+            "target": "amaemba",
+            "source": "Sorghum",
+            "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
+            "hint": "Hobley (1902, pp. 89–91) highland staples"
+          },
+          {
+            "target": "erabuoni",
+            "source": "Sweet potato",
+            "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
+            "hint": "Hobley (1902, pp. 89–91) highland staples"
+          },
+          {
+            "target": "obokima",
+            "source": "Millet ugali",
             "pronunciation": "o-bo-ki-ma / o-bou-ki",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
-            "target": "ritimo (pl. amatimo) / enguba",
-            "source": "Spear (pl. Spears) / Shield",
+            "target": "obouki",
+            "source": "Honey",
+            "pronunciation": "o-bo-ki-ma / o-bou-ki",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "ritimo (pl. amatimo)",
+            "source": "Spear (pl. Spears)",
             "pronunciation": "ri-ti-mo / engu-ba",
             "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
           },
           {
-            "target": "obota / omogwe / orobanga",
-            "source": "Bow / Arrow / Sword-knife (panga)",
+            "target": "enguba",
+            "source": "Shield",
+            "pronunciation": "ri-ti-mo / engu-ba",
+            "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
+          },
+          {
+            "target": "obota",
+            "source": "Bow",
             "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
-            "target": "risaga / egesarate",
-            "source": "Cooperative community work-party / Cattle boma",
+            "target": "omogwe",
+            "source": "Arrow",
+            "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "orobanga",
+            "source": "Sword-knife (panga)",
+            "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
+            "hint": "Hobley (1902, pp. 89–91)"
+          },
+          {
+            "target": "risaga",
+            "source": "Cooperative community work-party",
             "pronunciation": "ri-sa-ga / e-ge-sa-ra-te",
             "hint": "Traditional Gusii institutions"
           },
           {
-            "target": "rogoro / maate",
-            "source": "Upperside (Northern standard dialect) / Lowerside (South-western dialect)",
+            "target": "egesarate",
+            "source": "Cattle boma",
+            "pronunciation": "ri-sa-ga / e-ge-sa-ra-te",
+            "hint": "Traditional Gusii institutions"
+          },
+          {
+            "target": "rogoro",
+            "source": "Upperside (Northern standard dialect)",
             "pronunciation": "ro-go-ro / maa-te",
             "hint": "Two main Ekegusii dialect zones"
           },
           {
-            "target": "gokama (-kama) / okoruga (-ruga)",
-            "source": "To milk (Dahl’s Law ogo-) / To cook (oko-)",
+            "target": "maate",
+            "source": "Lowerside (South-western dialect)",
+            "pronunciation": "ro-go-ro / maa-te",
+            "hint": "Two main Ekegusii dialect zones"
+          },
+          {
+            "target": "gokama (-kama)",
+            "source": "To milk (Dahl’s Law ogo-)",
+            "pronunciation": "go-ka-ma / o-ko-ru-ga",
+            "hint": "Dahl’s Law voicing before voiceless k"
+          },
+          {
+            "target": "okoruga (-ruga)",
+            "source": "To cook (oko-)",
             "pronunciation": "go-ka-ma / o-ko-ru-ga",
             "hint": "Dahl’s Law voicing before voiceless k"
           },
@@ -476,63 +648,83 @@ export const KISII_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"inche, aye, ere, intwe, inywe, barabwo\" in Kisii?",
-            "correctAnswer": "I, you (sg.), s/he, we, you (pl.), they",
+            "prompt": "What is the English meaning of \"inche\" in Kisii?",
+            "correctAnswer": "I",
             "options": [
-              "Finger-millet (wimbi) / Sorghum / Sweet potato",
-              "Millet ugali / Honey",
-              "Spear (pl. Spears) / Shield",
-              "I, you (sg.), s/he, we, you (pl.), they"
+              "Finger-millet",
+              "I",
+              "Millet ugali",
+              "Spear"
             ],
-            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"obori / amaemba / erabuoni\" in Kisii?",
-            "correctAnswer": "Finger-millet (wimbi) / Sorghum / Sweet potato",
-            "options": [
-              "Millet ugali / Honey",
-              "Spear (pl. Spears) / Shield",
-              "Finger-millet (wimbi) / Sorghum / Sweet potato",
-              "I, you (sg.), s/he, we, you (pl.), they"
-            ],
-            "hint": "Hobley (1902, pp. 89–91) highland staples"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"obokima / obouki\" in Kisii?",
-            "correctAnswer": "Millet ugali / Honey",
-            "options": [
-              "Spear (pl. Spears) / Shield",
-              "Millet ugali / Honey",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns",
+            "acceptedAnswers": [
               "I, you (sg.), s/he, we, you (pl.), they",
-              "Finger-millet (wimbi) / Sorghum / Sweet potato"
-            ],
-            "hint": "Hobley (1902, pp. 89–91)"
+              "I"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Millet ugali / Honey\" in Kisii?",
-            "correctAnswer": "obokima / obouki",
+            "prompt": "What is the English meaning of \"obori\" in Kisii?",
+            "correctAnswer": "Finger-millet",
             "options": [
-              "obokima / obouki",
-              "inche, aye, ere, intwe, inywe, barabwo",
-              "obori / amaemba / erabuoni",
-              "ritimo (pl. amatimo) / enguba"
+              "Millet ugali",
+              "Finger-millet",
+              "Spear",
+              "I"
             ],
-            "hint": "oh-boh-kee-mah / oh-boh-oo-kee"
+            "hint": "Hobley (1902, pp. 89–91) highland staples",
+            "acceptedAnswers": [
+              "Finger-millet (wimbi) / Sorghum / Sweet potato",
+              "Finger-millet"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Spear (pl. Spears) / Shield\" in Kisii?",
-            "correctAnswer": "ritimo (pl. amatimo) / enguba",
+            "prompt": "What is the English meaning of \"obokima\" in Kisii?",
+            "correctAnswer": "Millet ugali",
             "options": [
-              "inche, aye, ere, intwe, inywe, barabwo",
-              "obori / amaemba / erabuoni",
-              "obokima / obouki",
-              "ritimo (pl. amatimo) / enguba"
+              "Spear",
+              "I",
+              "Millet ugali",
+              "Finger-millet"
             ],
-            "hint": "ree-tee-moh / ehn-goo-bah"
+            "hint": "Hobley (1902, pp. 89–91)",
+            "acceptedAnswers": [
+              "Millet ugali / Honey",
+              "Millet ugali"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Millet ugali\" in Kisii?",
+            "correctAnswer": "obokima",
+            "options": [
+              "inche",
+              "obori",
+              "obokima",
+              "ritimo"
+            ],
+            "hint": "oh-boh-kee-mah / oh-boh-oo-kee",
+            "acceptedAnswers": [
+              "obokima / obouki",
+              "obokima"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Spear\" in Kisii?",
+            "correctAnswer": "ritimo",
+            "options": [
+              "inche",
+              "obori",
+              "ritimo",
+              "obokima"
+            ],
+            "hint": "ree-tee-moh / ehn-goo-bah",
+            "acceptedAnswers": [
+              "ritimo (pl. amatimo) / enguba",
+              "ritimo"
+            ]
           },
           {
             "type": "match_pairs",
@@ -559,15 +751,19 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kisii term for \"Bow / Arrow / Sword-knife (panga)\": ___",
-            "correctAnswer": "obota / omogwe / orobanga",
+            "prompt": "Complete the Kisii term for \"Bow\": ___",
+            "correctAnswer": "obota",
             "options": [
-              "inche, aye, ere, intwe, inywe, barabwo",
-              "obori / amaemba / erabuoni",
-              "obokima / obouki",
-              "obota / omogwe / orobanga"
+              "inche",
+              "obori",
+              "obokima",
+              "obota"
             ],
-            "hint": "Hobley (1902, pp. 89–91)"
+            "hint": "Hobley (1902, pp. 89–91)",
+            "acceptedAnswers": [
+              "obota / omogwe / orobanga",
+              "obota"
+            ]
           }
         ]
       }
@@ -652,10 +848,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "options": [
               "Child",
               "Woman",
-              "Man",
-              "Friend"
+              "Friend",
+              "Man"
             ],
-            "hint": "Ekegusii Class 1/2 friendship noun"
+            "hint": "Starts with \"Fr…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
@@ -675,35 +871,43 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "Woman",
             "options": [
               "Man",
-              "Woman",
               "Friend",
-              "Child"
+              "Child",
+              "Woman"
             ],
             "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Woman\" in Kisii?",
-            "correctAnswer": "omokungu (pl. abakungu)",
+            "correctAnswer": "omokungu",
             "options": [
-              "omokungu (pl. abakungu)",
-              "omosani (pl. abasani)",
-              "omwana (pl. abana)",
-              "omosacha (pl. abasacha)"
+              "omokungu",
+              "omosani",
+              "omwana",
+              "omosacha"
             ],
-            "hint": "oh-moh-koon-goo"
+            "hint": "oh-moh-koon-goo",
+            "acceptedAnswers": [
+              "omokungu (pl. abakungu)",
+              "omokungu"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Man\" in Kisii?",
-            "correctAnswer": "omosacha (pl. abasacha)",
+            "correctAnswer": "omosacha",
             "options": [
-              "omosani (pl. abasani)",
-              "omwana (pl. abana)",
-              "omokungu (pl. abakungu)",
-              "omosacha (pl. abasacha)"
+              "omosani",
+              "omwana",
+              "omosacha",
+              "omokungu"
             ],
-            "hint": "oh-moh-sah-chah"
+            "hint": "oh-moh-sah-chah",
+            "acceptedAnswers": [
+              "omosacha (pl. abasacha)",
+              "omosacha"
+            ]
           },
           {
             "type": "match_pairs",
@@ -731,14 +935,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii term for \"Father\": ___",
-            "correctAnswer": "tata (iso = your father, ise = his father)",
+            "correctAnswer": "tata",
             "options": [
-              "omosani (pl. abasani)",
-              "omwana (pl. abana)",
-              "omokungu (pl. abakungu)",
-              "tata (iso = your father, ise = his father)"
+              "omosani",
+              "tata",
+              "omwana",
+              "omokungu"
             ],
-            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
+            "hint": "Hobley 1902 p. 63 & Johnston 1919 #7",
+            "acceptedAnswers": [
+              "tata (iso = your father, ise = his father)",
+              "tata"
+            ]
           }
         ]
       },
@@ -775,22 +983,22 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "N-dugi-ani. Omw-ana ow-etu / Om-ura om-intu. Omo-mura om-intu",
+            "target": "N-dugi-ani",
             "source": "Brother",
             "pronunciation": "n-dugi-ani omw-ana ow-etu / om-ura om-intu omo-mura om-intu"
           },
           {
-            "target": "Nya-rukha. Omw-iseke. Omo-subati. Omu-gogo / Omo-subati; ava-",
+            "target": "Nya-rukha",
             "source": "Sister",
             "pronunciation": "nya-rukha omw-iseke omo-subati omu-gogo / omo-subati"
           },
           {
-            "target": "Omw-ana. Iomo-isia / Omw-ana. Omo-risia",
+            "target": "Omw-ana",
             "source": "Son, boy",
             "pronunciation": "omw-ana iomo-isia / omw-ana omo-risia"
           },
           {
-            "target": "Omo-ke. Omu-kunggu. Omu-ka / Omo-kare",
+            "target": "Omo-ke",
             "source": "Wife",
             "pronunciation": "omo-ke omu-kunggu omu-ka / omo-kare"
           },
@@ -804,15 +1012,19 @@ export const KISII_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"omoiseke (pl. abaiseke)\" in Kisii (Ekegusii)?",
-            "correctAnswer": "Girl (Class 9/2)",
+            "prompt": "What is the English meaning of \"omoiseke\" in Kisii (Ekegusii)?",
+            "correctAnswer": "Girl",
             "options": [
-              "Girl (Class 9/2)",
               "Grandfather",
-              "Lady / married woman",
-              "Fighter / warrior"
+              "Lady",
+              "Girl",
+              "Fighter"
             ],
-            "hint": "Wikipedia Gusii language — Noun classes"
+            "hint": "Wikipedia Gusii language — Noun classes",
+            "acceptedAnswers": [
+              "Girl (Class 9/2)",
+              "Girl"
+            ]
           },
           {
             "type": "match_pairs",
@@ -840,14 +1052,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii (Ekegusii) term for \"Brother\": ___",
-            "correctAnswer": "N-dugi-ani. Omw-ana ow-etu / Om-ura om-intu. Omo-mura om-intu",
+            "correctAnswer": "N-dugi-ani. Omw-ana ow-etu",
             "options": [
-              "N-dugi-ani. Omw-ana ow-etu / Om-ura om-intu. Omo-mura om-intu",
-              "omoiseke (pl. abaiseke)",
+              "omoiseke",
               "sokoro",
-              "omosubati"
+              "omosubati",
+              "N-dugi-ani. Omw-ana ow-etu"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
+            "acceptedAnswers": [
+              "N-dugi-ani. Omw-ana ow-etu / Om-ura om-intu. Omo-mura om-intu",
+              "N-dugi-ani. Omw-ana ow-etu"
+            ]
           }
         ]
       }
@@ -928,62 +1144,74 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"isano na ibere\" in Kisii?",
-            "correctAnswer": "Seven (7, lit. 5+2)",
+            "correctAnswer": "Seven",
             "options": [
-              "Eight (8, lit. 5+3)",
-              "Nine (9)",
-              "Ten (10)",
-              "Seven (7, lit. 5+2)"
+              "Eight",
+              "Nine",
+              "Seven",
+              "Ten"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Seven (7, lit. 5+2)",
+              "Seven"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"isano na isato\" in Kisii?",
-            "correctAnswer": "Eight (8, lit. 5+3)",
+            "correctAnswer": "Eight",
             "options": [
-              "Nine (9)",
-              "Ten (10)",
-              "Eight (8, lit. 5+3)",
-              "Seven (7, lit. 5+2)"
+              "Nine",
+              "Ten",
+              "Eight",
+              "Seven"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Eight (8, lit. 5+3)",
+              "Eight"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kianda\" in Kisii?",
-            "correctAnswer": "Nine (9)",
+            "correctAnswer": "Nine",
             "options": [
-              "Ten (10)",
-              "Nine (9)",
-              "Seven (7, lit. 5+2)",
-              "Eight (8, lit. 5+3)"
+              "Ten",
+              "Nine",
+              "Seven",
+              "Eight"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Nine (9)",
+              "Nine"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nine (9)\" in Kisii?",
             "correctAnswer": "kianda",
             "options": [
-              "kianda",
               "isano na ibere",
-              "isano na isato",
-              "ikomi"
+              "kianda",
+              "ikomi",
+              "ikomi nemo"
             ],
-            "hint": "kianda"
+            "hint": "Starts with \"ki…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Ten (10)\" in Kisii?",
             "correctAnswer": "ikomi",
             "options": [
+              "ikomi",
               "isano na ibere",
-              "isano na isato",
               "kianda",
-              "ikomi"
+              "ikomi nemo"
             ],
-            "hint": "ikomi"
+            "hint": "Starts with \"ik…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1013,10 +1241,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii term for \"Eleven (11)\": ___",
             "correctAnswer": "ikomi nemo",
             "options": [
+              "ikomi nemo",
               "isano na ibere",
-              "isano na isato",
               "kianda",
-              "ikomi nemo"
+              "ikomi"
             ],
             "hint": "Wikipedia Gusii language — Gusii Numeral System"
           }
@@ -1084,62 +1312,74 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ikomi na isano na ibere\" in Kisii?",
-            "correctAnswer": "Seventeen (17)",
+            "correctAnswer": "Seventeen",
             "options": [
-              "Eighteen (18)",
-              "Nineteen (19)",
-              "Twenty (20)",
-              "Seventeen (17)"
+              "Eighteen",
+              "Nineteen",
+              "Twenty",
+              "Seventeen"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Seventeen (17)",
+              "Seventeen"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ikomi na isano na isato\" in Kisii?",
-            "correctAnswer": "Eighteen (18)",
+            "correctAnswer": "Eighteen",
             "options": [
-              "Nineteen (19)",
-              "Twenty (20)",
-              "Eighteen (18)",
-              "Seventeen (17)"
+              "Nineteen",
+              "Twenty",
+              "Eighteen",
+              "Seventeen"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Eighteen (18)",
+              "Eighteen"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ikomi na kianda\" in Kisii?",
-            "correctAnswer": "Nineteen (19)",
+            "correctAnswer": "Nineteen",
             "options": [
-              "Twenty (20)",
-              "Nineteen (19)",
-              "Seventeen (17)",
-              "Eighteen (18)"
+              "Twenty",
+              "Seventeen",
+              "Nineteen",
+              "Eighteen"
             ],
-            "hint": "Wikipedia Gusii language — Gusii Numeral System"
+            "hint": "Wikipedia Gusii language — Gusii Numeral System",
+            "acceptedAnswers": [
+              "Nineteen (19)",
+              "Nineteen"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nineteen (19)\" in Kisii?",
             "correctAnswer": "ikomi na kianda",
             "options": [
-              "ikomi na kianda",
-              "ikomi na isano na ibere",
-              "ikomi na isano na isato",
-              "emerongo ebere"
+              "emerongo ebere",
+              "Esekendi",
+              "-mu",
+              "ikomi na kianda"
             ],
-            "hint": "ikomi na kianda"
+            "hint": "Starts with \"ik…\" (15 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Twenty (20)\" in Kisii?",
             "correctAnswer": "emerongo ebere",
             "options": [
-              "ikomi na isano na ibere",
-              "ikomi na isano na isato",
+              "emerongo ebere",
               "ikomi na kianda",
-              "emerongo ebere"
+              "Esekendi",
+              "-mu"
             ],
-            "hint": "emerongo ebere"
+            "hint": "Starts with \"em…\" (14 letters)"
           },
           {
             "type": "match_pairs",
@@ -1169,10 +1409,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii term for \"Second (time unit)\": ___",
             "correctAnswer": "Esekendi",
             "options": [
-              "ikomi na isano na ibere",
-              "ikomi na isano na isato",
               "ikomi na kianda",
-              "Esekendi"
+              "Esekendi",
+              "emerongo ebere",
+              "-mu"
             ],
             "hint": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
           }
@@ -1239,7 +1479,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama-",
+            "target": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama",
             "source": "Banana",
             "pronunciation": "ri-gomia"
           }
@@ -1252,8 +1492,8 @@ export const KISII_UNITS: CourseUnit[] = [
             "options": [
               "Meat",
               "Food",
-              "Cup (Class 7/8: ege-/ebi-)",
-              "Honey"
+              "Honey",
+              "Cup"
             ],
             "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
           },
@@ -1263,47 +1503,55 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "Meat",
             "options": [
               "Food",
-              "Cup (Class 7/8: ege-/ebi-)",
               "Meat",
+              "Cup",
               "Honey"
             ],
             "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"endagera (obokima = ugali)\" in Kisii?",
+            "prompt": "What is the English meaning of \"endagera\" in Kisii?",
             "correctAnswer": "Food",
             "options": [
-              "Cup (Class 7/8: ege-/ebi-)",
-              "Food",
+              "Cup",
               "Honey",
-              "Meat"
+              "Meat",
+              "Food"
             ],
             "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Food\" in Kisii?",
-            "correctAnswer": "endagera (obokima = ugali)",
+            "correctAnswer": "endagera",
             "options": [
-              "endagera (obokima = ugali)",
               "obouki",
               "enyama",
-              "egekombe (pl. ebikombe)"
+              "egekombe",
+              "endagera"
             ],
-            "hint": "ehn-dah-geh-rah / oh-boh-kee-mah"
+            "hint": "ehn-dah-geh-rah / oh-boh-kee-mah",
+            "acceptedAnswers": [
+              "endagera (obokima = ugali)",
+              "endagera"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Cup (Class 7/8: ege-/ebi-)\" in Kisii?",
-            "correctAnswer": "egekombe (pl. ebikombe)",
+            "correctAnswer": "egekombe",
             "options": [
               "obouki",
+              "egekombe",
               "enyama",
-              "endagera (obokima = ugali)",
-              "egekombe (pl. ebikombe)"
+              "endagera"
             ],
-            "hint": "egekombe (pl. ebikombe)"
+            "hint": "Starts with \"eg…\" (8 letters)",
+            "acceptedAnswers": [
+              "egekombe (pl. ebikombe)",
+              "egekombe"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1331,14 +1579,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii term for \"Fruit (Class 5/6: ri-/ama-)\": ___",
-            "correctAnswer": "ritunda (pl. amatunda)",
+            "correctAnswer": "ritunda",
             "options": [
               "obouki",
+              "ritunda",
               "enyama",
-              "endagera (obokima = ugali)",
-              "ritunda (pl. amatunda)"
+              "endagera"
             ],
-            "hint": "Wikipedia Gusii language — Noun classes"
+            "hint": "Wikipedia Gusii language — Noun classes",
+            "acceptedAnswers": [
+              "ritunda (pl. amatunda)",
+              "ritunda"
+            ]
           }
         ]
       },
@@ -1351,7 +1603,7 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Ege-tinia. Ama-guta / Ege-tinia; evi-",
+            "target": "Ege-tinia",
             "source": "Fat, oil",
             "pronunciation": "ege-tinia ama-guta / ege-tinia"
           },
@@ -1403,14 +1655,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Ege-tinia. Ama-guta / Ege-tinia; evi-\" in Kisii?",
-            "correctAnswer": "Fat, oil",
+            "correctAnswer": "Fat",
             "options": [
               "Hunger",
               "Maize",
               "Milk",
-              "Fat, oil"
+              "Fat"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
+            "acceptedAnswers": [
+              "Fat, oil",
+              "Fat"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1419,8 +1675,8 @@ export const KISII_UNITS: CourseUnit[] = [
             "options": [
               "Maize",
               "Milk",
-              "Hunger",
-              "Fat, oil"
+              "Fat",
+              "Hunger"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
           },
@@ -1431,7 +1687,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "options": [
               "Milk",
               "Maize",
-              "Fat, oil",
+              "Fat",
               "Hunger"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
@@ -1439,26 +1695,30 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Maize\" in Kisii?",
-            "correctAnswer": "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+            "correctAnswer": "E-bando",
             "options": [
-              "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
-              "Ege-tinia. Ama-guta / Ege-tinia; evi-",
-              "In-jala, en-jara / En-cara",
-              "Ama-vere"
+              "Ege-tinia. Ama-guta",
+              "In-jala",
+              "Ama-vere",
+              "E-bando"
             ],
-            "hint": "e-bando; ci-. erinya-modoma / ama-dumo. eri-tumwa"
+            "hint": "Starts with \"E-…\" (7 letters)",
+            "acceptedAnswers": [
+              "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+              "E-bando"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Milk\" in Kisii?",
             "correctAnswer": "Ama-vere",
             "options": [
-              "Ege-tinia. Ama-guta / Ege-tinia; evi-",
-              "In-jala, en-jara / En-cara",
-              "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+              "Ege-tinia. Ama-guta",
+              "In-jala",
+              "E-bando",
               "Ama-vere"
             ],
-            "hint": "ama-vere"
+            "hint": "Starts with \"Am…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -1488,10 +1748,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii term for \"Palm wine, beer\": ___",
             "correctAnswer": "Ama-rwa",
             "options": [
-              "Ege-tinia. Ama-guta / Ege-tinia; evi-",
-              "In-jala, en-jara / En-cara",
-              "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
-              "Ama-rwa"
+              "Ege-tinia. Ama-guta",
+              "Ama-rwa",
+              "In-jala",
+              "E-bando"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
           }
@@ -1546,7 +1806,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
           },
           {
-            "target": "eng'enang'eni (pl. ching'enang'eni)",
+            "target": "engeni",
             "source": "Star",
             "pronunciation": "eng'e-nang'e-ni",
             "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
@@ -1564,7 +1824,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
           },
           {
-            "target": "Eri-guru. Eri-oba / Eri-oba",
+            "target": "Eri-guru",
             "source": "Sky",
             "pronunciation": "eri-guru eri-oba / eri-oba"
           }
@@ -1572,11 +1832,11 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "rituko — obotuko",
-            "source": "Day — Night"
+            "source": "Day — Night."
           },
           {
             "target": "omote — embura",
-            "source": "Tree — Rain"
+            "source": "Tree — Rain."
           }
         ],
         "authoredExercises": [
@@ -1585,9 +1845,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What does \"rituko\" mean in English?",
             "correctAnswer": "Day",
             "options": [
-              "Day",
               "Night",
               "Tree",
+              "Day",
               "Rain"
             ],
             "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
@@ -1656,8 +1916,14 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "risase / omobaso",
-            "source": "Sun / daytime",
+            "target": "risase",
+            "source": "Sun",
+            "pronunciation": "ri-sa-se / o-mo-ba-so",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "omobaso",
+            "source": "daytime",
             "pronunciation": "ri-sa-se / o-mo-ba-so",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
@@ -1695,7 +1961,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "eny-anja"
           },
           {
-            "target": "Em-beho. Omw-ieka / Em-beho. Omo-kama; eme-",
+            "target": "Em-beho",
             "source": "Wind",
             "pronunciation": "em-beho omw-ieka / em-beho omo-kama eme"
           }
@@ -1703,25 +1969,29 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ense — risase",
-            "source": "Earth — Sun"
+            "source": "Earth — Sun."
           },
           {
             "target": "enyancha — eroro",
-            "source": "Lake — Desert"
+            "source": "Lake — Desert."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"ense\" mean in English?",
-            "correctAnswer": "Earth / world",
+            "correctAnswer": "Earth",
             "options": [
-              "Earth / world",
-              "Sun / daytime",
-              "Lake / sea",
-              "Desert / wilderness"
+              "Sun",
+              "Lake",
+              "Earth",
+              "Desert"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Earth / world",
+              "Earth"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1821,8 +2091,32 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "obori / amaemba / rigomia (ritoke) / erabuoni / obouki",
-            "source": "Finger-millet (wimbi) / Sorghum / Banana / Sweet potato / Honey",
+            "target": "obori",
+            "source": "Finger-millet (wimbi)",
+            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+          },
+          {
+            "target": "amaemba",
+            "source": "Sorghum",
+            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+          },
+          {
+            "target": "rigomia (ritoke)",
+            "source": "Banana",
+            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+          },
+          {
+            "target": "erabuoni",
+            "source": "Sweet potato",
+            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+          },
+          {
+            "target": "obouki",
+            "source": "Honey",
             "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
@@ -1848,10 +2142,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"okogoro (pl. amagoro)\" in Kisii (Ekegusii)?",
             "correctAnswer": "Foot",
             "options": [
-              "Foot",
               "Hand",
               "Eye",
-              "Head (Class 3/4: omo-/eme-)"
+              "Head",
+              "Foot"
             ],
             "hint": "Hobley 1902 p. 64 & Johnston 1919 #7"
           },
@@ -1883,10 +2177,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii (Ekegusii) term for \"Ear\": ___",
             "correctAnswer": "ogoto",
             "options": [
+              "okogoro",
+              "okoboko",
               "ogoto",
-              "okogoro (pl. amagoro)",
-              "okoboko (pl. amaboko)",
-              "riiso (pl. amaiso)"
+              "riiso"
             ],
             "hint": "Wikipedia Gusii language — Sample phrases"
           }
@@ -1901,17 +2195,17 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
+            "target": "Amany-ingga / Amainy-ingga / Ama-sere. Amainy-ingga",
             "source": "Blood",
-            "pronunciation": "amany-ingga or amainy-ingga / ama-sere amainy-ingga"
+            "pronunciation": "amany-ingga"
           },
           {
-            "target": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
+            "target": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing",
             "source": "Breast (man's)",
             "pronunciation": "eki-kuba"
           },
           {
-            "target": "Li-bere / Olu-bere; cim-",
+            "target": "Li-bere / Olu-bere; cim",
             "source": "Breast (woman's)",
             "pronunciation": "li-bere / olu-bere"
           },
@@ -1921,7 +2215,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "eki-ara"
           },
           {
-            "target": "E-tukia; ci-",
+            "target": "E-tukia; ci",
             "source": "Hair",
             "pronunciation": "e-tukia"
           },
@@ -1931,12 +2225,12 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "omu-twe"
           },
           {
-            "target": "En-teme. Eng-koro / Eng-koro",
+            "target": "En-teme",
             "source": "Heart",
             "pronunciation": "en-teme eng-koro / eng-koro"
           },
           {
-            "target": "Ye-tinggiro. Iki-talenggi / Ege-tinggiro. Eke-suguro",
+            "target": "Ye-tinggiro",
             "source": "Heel",
             "pronunciation": "ye-tinggiro iki-talenggi / ege-tinggiro eke-suguro"
           },
@@ -1952,10 +2246,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga\" in Kisii (Ekegusii)?",
             "correctAnswer": "Blood",
             "options": [
-              "Blood",
-              "Breast (man's)",
-              "Breast (woman's)",
-              "Finger"
+              "Breast",
+              "Finger",
+              "Hair",
+              "Blood"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
           },
@@ -1985,14 +2279,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii (Ekegusii) term for \"Hair\": ___",
-            "correctAnswer": "E-tukia; ci-",
+            "correctAnswer": "E-tukia",
             "options": [
-              "E-tukia; ci-",
-              "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
-              "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
-              "Li-bere / Olu-bere; cim-"
+              "Amany-ingga or Amainy-ingga",
+              "E-tukia",
+              "Eki-kuba",
+              "Li-bere"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
+            "acceptedAnswers": [
+              "E-tukia; ci-",
+              "E-tukia"
+            ]
           }
         ]
       }
@@ -2075,10 +2373,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ogokwana (-kwana) / okoboora\" in Kisii?",
             "correctAnswer": "Speak",
             "options": [
+              "Speak",
               "Sleep",
               "Come",
-              "Go",
-              "Speak"
+              "Go"
             ],
             "hint": "Hobley 1902 & Johnston 1919 #7"
           },
@@ -2089,14 +2387,14 @@ export const KISII_UNITS: CourseUnit[] = [
             "options": [
               "Come",
               "Go",
-              "Sleep",
-              "Speak"
+              "Speak",
+              "Sleep"
             ],
             "hint": "Hobley 1902 & Johnston 1919 #7"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ogocha (inchwo! = come!)\" in Kisii?",
+            "prompt": "What is the English meaning of \"ogocha\" in Kisii?",
             "correctAnswer": "Come",
             "options": [
               "Go",
@@ -2109,26 +2407,34 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Come\" in Kisii?",
-            "correctAnswer": "ogocha (inchwo! = come!)",
+            "correctAnswer": "ogocha",
             "options": [
-              "ogocha (inchwo! = come!)",
-              "ogokwana (-kwana) / okoboora",
-              "okorara (-rara)",
-              "okogenda (-genda)"
+              "ogokwana",
+              "ogocha",
+              "okorara",
+              "okogenda"
             ],
-            "hint": "oh-goh-chah / een-chwoh"
+            "hint": "oh-goh-chah / een-chwoh",
+            "acceptedAnswers": [
+              "ogocha (inchwo! = come!)",
+              "ogocha"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Go\" in Kisii?",
-            "correctAnswer": "okogenda (-genda)",
+            "correctAnswer": "okogenda",
             "options": [
-              "ogokwana (-kwana) / okoboora",
-              "okorara (-rara)",
-              "ogocha (inchwo! = come!)",
-              "okogenda (-genda)"
+              "ogokwana",
+              "okogenda",
+              "okorara",
+              "ogocha"
             ],
-            "hint": "oh-koh-gehn-dah"
+            "hint": "oh-koh-gehn-dah",
+            "acceptedAnswers": [
+              "okogenda (-genda)",
+              "okogenda"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2156,14 +2462,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii term for \"Drink\": ___",
-            "correctAnswer": "okonywa (-nywa)",
+            "correctAnswer": "okonywa",
             "options": [
-              "ogokwana (-kwana) / okoboora",
-              "okorara (-rara)",
-              "ogocha (inchwo! = come!)",
-              "okonywa (-nywa)"
+              "ogokwana",
+              "okorara",
+              "ogocha",
+              "okonywa"
             ],
-            "hint": "Hobley 1902 & Johnston 1919 #7"
+            "hint": "Hobley 1902 & Johnston 1919 #7",
+            "acceptedAnswers": [
+              "okonywa (-nywa)",
+              "okonywa"
+            ]
           }
         ]
       },
@@ -2200,8 +2510,14 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "gesa (verb) / rigesa (noun)",
-            "source": "To harvest / harvest season",
+            "target": "gesa",
+            "source": "To harvest",
+            "pronunciation": "ge-sa / ri-ge-sa",
+            "hint": "Wikipedia Gusii language — Sample phrases"
+          },
+          {
+            "target": "rigesa",
+            "source": "harvest season",
             "pronunciation": "ge-sa / ri-ge-sa",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
@@ -2224,8 +2540,14 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "okoria / okonywa",
-            "source": "to eat / to drink (Class 15 infinitives)",
+            "target": "okoria",
+            "source": "to eat",
+            "pronunciation": "o-ko-ria / o-konywa",
+            "hint": "Ekegusii"
+          },
+          {
+            "target": "okonywa",
+            "source": "to drink (Class 15 infinitives)",
             "pronunciation": "o-ko-ria / o-konywa",
             "hint": "Ekegusii"
           }
@@ -2233,15 +2555,19 @@ export const KISII_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"komenya (menya)\" in Kisii?",
-            "correctAnswer": "To dwell / live",
+            "prompt": "What is the English meaning of \"komenya\" in Kisii?",
+            "correctAnswer": "To dwell",
             "options": [
               "To stand",
               "To see",
-              "To roll over",
-              "To dwell / live"
+              "To dwell",
+              "To roll over"
             ],
-            "hint": "Wikipedia Gusii language — Sample phrases"
+            "hint": "Wikipedia Gusii language — Sample phrases",
+            "acceptedAnswers": [
+              "To dwell / live",
+              "To dwell"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -2249,9 +2575,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "To stand",
             "options": [
               "To see",
-              "To roll over",
               "To stand",
-              "To dwell / live"
+              "To roll over",
+              "To dwell"
             ],
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
@@ -2261,35 +2587,39 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "To see",
             "options": [
               "To roll over",
-              "To see",
-              "To dwell / live",
-              "To stand"
+              "To dwell",
+              "To stand",
+              "To see"
             ],
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To see\" in Kisii?",
-            "correctAnswer": "korora (-rora)",
+            "correctAnswer": "korora",
             "options": [
-              "korora (-rora)",
-              "komenya (menya)",
-              "gotenena (-tenena)",
-              "-garagara"
+              "komenya",
+              "gotenena",
+              "-garagara",
+              "korora"
             ],
-            "hint": "korora (-rora)"
+            "hint": "Starts with \"ko…\" (6 letters)",
+            "acceptedAnswers": [
+              "korora (-rora)",
+              "korora"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To roll over\" in Kisii?",
             "correctAnswer": "-garagara",
             "options": [
-              "komenya (menya)",
-              "gotenena (-tenena)",
-              "korora (-rora)",
-              "-garagara"
+              "-garagara",
+              "komenya",
+              "gotenena",
+              "korora"
             ],
-            "hint": "-garagara"
+            "hint": "Starts with \"-g…\" (9 letters)"
           },
           {
             "type": "match_pairs",
@@ -2316,15 +2646,19 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kisii term for \"To harvest / harvest season\": ___",
-            "correctAnswer": "gesa (verb) / rigesa (noun)",
+            "prompt": "Complete the Kisii term for \"To harvest\": ___",
+            "correctAnswer": "gesa",
             "options": [
-              "komenya (menya)",
-              "gotenena (-tenena)",
-              "korora (-rora)",
-              "gesa (verb) / rigesa (noun)"
+              "komenya",
+              "gesa",
+              "gotenena",
+              "korora"
             ],
-            "hint": "Wikipedia Gusii language — Sample phrases"
+            "hint": "Starts with \"ge…\" (4 letters)",
+            "acceptedAnswers": [
+              "gesa (verb) / rigesa (noun)",
+              "gesa"
+            ]
           }
         ]
       }
@@ -2397,7 +2731,7 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Inje ndu",
-            "source": "I am"
+            "source": "I am."
           }
         ],
         "authoredExercises": [
@@ -2406,9 +2740,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Ngotenga\" in Kisii?",
             "correctAnswer": "I dance",
             "options": [
-              "I dance",
               "I come not",
               "I come",
+              "I dance",
               "I bring"
             ],
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
@@ -2441,9 +2775,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii (Ekegusii) term for \"I am\": ___",
             "correctAnswer": "Inje ndu",
             "options": [
-              "Inje ndu",
               "Yaya",
               "Ngotenga",
+              "Inje ndu",
               "Nangire"
             ],
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
@@ -2512,9 +2846,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Emuamu\" in Kisii?",
             "correctAnswer": "Black",
             "options": [
-              "Black",
               "Here",
               "White",
+              "Black",
               "Male"
             ],
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
@@ -2547,10 +2881,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii (Ekegusii) term for \"Little\": ___",
             "correctAnswer": "kĕ",
             "options": [
-              "kĕ",
               "kuru",
               "Emuamu",
-              "Aīya, Aiga"
+              "kĕ",
+              "Aīya"
             ],
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
           }
@@ -2625,19 +2959,19 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Abana babo",
-            "source": "Their children"
+            "source": "Their children."
           },
           {
             "target": "Riroba rienu",
-            "source": "Your country"
+            "source": "Your country."
           },
           {
             "target": "Omuji uitu",
-            "source": "Our town"
+            "source": "Our town."
           },
           {
             "target": "Enyumba yane",
-            "source": "My house"
+            "source": "My house."
           }
         ],
         "authoredExercises": [
@@ -2646,10 +2980,10 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"bi\" in Kisii (Ekegusii)?",
             "correctAnswer": "Bad",
             "options": [
-              "Bad",
               "Their children",
               "Your country",
-              "Our town"
+              "Our town",
+              "Bad"
             ],
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
           },
@@ -2679,14 +3013,18 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii (Ekegusii) term for \"His / Her (possessive)\": ___",
-            "correctAnswer": "yake (-ake)",
+            "correctAnswer": "yake",
             "options": [
-              "yake (-ake)",
+              "yake",
               "bi",
               "Abana babo",
               "Riroba rienu"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
+            "acceptedAnswers": [
+              "yake (-ake)",
+              "yake"
+            ]
           }
         ]
       },
@@ -2749,11 +3087,11 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Umute uyu",
-            "source": "This tree"
+            "source": "This tree."
           },
           {
             "target": "Omuntu oyu",
-            "source": "This man"
+            "source": "This man."
           }
         ],
         "authoredExercises": [
@@ -2763,7 +3101,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "correctAnswer": "This tree",
             "options": [
               "This tree",
-              "That person (yonder, Class 1)",
+              "That person",
               "This man",
               "All"
             ],
@@ -2797,8 +3135,8 @@ export const KISII_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kisii (Ekegusii) term for \"They\": ___",
             "correctAnswer": "Abo",
             "options": [
-              "Abo",
               "Umute uyu",
+              "Abo",
               "uuria",
               "Omuntu oyu"
             ],
@@ -2834,8 +3172,13 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "omukari"
           },
           {
-            "target": "Engoro / Erioba",
-            "source": "God / Sun",
+            "target": "Engoro",
+            "source": "God",
+            "pronunciation": "engoro"
+          },
+          {
+            "target": "Erioba",
+            "source": "Sun",
             "pronunciation": "engoro"
           },
           {
@@ -2917,11 +3260,11 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Omuntu oyu — Umute uyu — Omuji uitu — Riroba rienu — Abana babo.",
-            "source": "This man — This tree — Our town — Your country — Their children (Johnston 1902, pp. 999–1001)."
+            "source": "This man — This tree — Our town — Your country — Their children ."
           }
         ]
       },
-{
+      {
         "id": "kisii-open-datasets-ddd",
         "title": "Mobile Banking, Highland Farming & Daily Life",
         "icon": "Database",
@@ -2929,244 +3272,203 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Digital Divide Data (DDD) Kenya's open Ekegusii datasets document contemporary spoken and written Ekegusii across Kisii and Nyamira counties, covering mobile money (chibesa ase esimu), highland tea and maize farming, and healthcare.",
         "grammarTip": "In Ekegusii, class 10 plural nouns with prefix chi- (such as chibesa 'money' and chinchoke 'bees') govern concord prefix chi- on demonstratives and possessives.",
         "words": [
-                {
-                        "target": "Chibesa",
-                        "source": "Money / Funds",
-                        "pronunciation": "chee-beh-sah"
-                },
-                {
-                        "target": "Esimu yane",
-                        "source": "My mobile phone",
-                        "pronunciation": "eh-see-moo yah-neh"
-                },
-                {
-                        "target": "Okorwa chibesa",
-                        "source": "To withdraw money",
-                        "pronunciation": "oh-koh-rwah chee-beh-sah"
-                },
-                {
-                        "target": "Ogotoma chibesa",
-                        "source": "To send money",
-                        "pronunciation": "oh-goh-toh-mah chee-beh-sah"
-                },
-                {
-                        "target": "Endagera engiya",
-                        "source": "Good nutrition / feed",
-                        "pronunciation": "eh-ndah-geh-rah eh-ngee-yah"
-                },
-                {
-                        "target": "Ebimera",
-                        "source": "Crops / Plants",
-                        "pronunciation": "eh-bee-meh-rah"
-                },
-                {
-                        "target": "Ekenyoro",
-                        "source": "Highland village / community",
-                        "pronunciation": "eh-keh-nyoh-roh"
-                },
-                {
-                        "target": "Enchoke (pl. Chinchoke)",
-                        "source": "Honeybee",
-                        "pronunciation": "ehn-choh-keh"
-                }
+          {
+            "target": "Chibesa",
+            "source": "Money / Funds",
+            "pronunciation": "chee-beh-sah"
+          },
+          {
+            "target": "Esimu yane",
+            "source": "My mobile phone",
+            "pronunciation": "eh-see-moo yah-neh"
+          },
+          {
+            "target": "Okorwa chibesa",
+            "source": "To withdraw money",
+            "pronunciation": "oh-koh-rwah chee-beh-sah"
+          },
+          {
+            "target": "Ogotoma chibesa",
+            "source": "To send money",
+            "pronunciation": "oh-goh-toh-mah chee-beh-sah"
+          },
+          {
+            "target": "Endagera engiya",
+            "source": "Good nutrition / feed",
+            "pronunciation": "eh-ndah-geh-rah eh-ngee-yah"
+          },
+          {
+            "target": "Ebimera",
+            "source": "Crops / Plants",
+            "pronunciation": "eh-bee-meh-rah"
+          },
+          {
+            "target": "Ekenyoro",
+            "source": "Highland village / community",
+            "pronunciation": "eh-keh-nyoh-roh"
+          },
+          {
+            "target": "Enchoke (pl. Chinchoke)",
+            "source": "Honeybee",
+            "pronunciation": "ehn-choh-keh"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Ning'ana nigo ntachie korwa chibesa ase esimu yane?",
-                        "source": "How do I withdraw money using my mobile phone?"
-                },
-                {
-                        "target": "Endagera engiya y'enchoke amo n'ebimera ase ekenyoro.",
-                        "source": "Good care for bees and crops in the highland village."
-                }
+          {
+            "target": "Ning'ana nigo ntachie korwa chibesa ase esimu yane?",
+            "source": "How do I withdraw money using my mobile phone?"
+          },
+          {
+            "target": "Endagera engiya y'enchoke amo n'ebimera ase ekenyoro.",
+            "source": "Good care for bees and crops in the highland village."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "kisii-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kisii (Ekegusii) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
+        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922).",
         "words": [
-                  {
-                            "target": "Omorembe",
-                            "source": "Peace",
-                            "pronunciation": "oh-moh-rehm-beh"
-                  },
-                  {
-                            "target": "Bwakire!",
-                            "source": "Hello",
-                            "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh"
-                  },
-                  {
-                            "target": "Mbuya mono",
-                            "source": "Thank you",
-                            "pronunciation": "m-boo-yah moh-noh"
-                  },
-                  {
-                            "target": "Mbuya mono!",
-                            "source": "Thank you very much! / Very well!",
-                            "pronunciation": "mbu-ya mo-no"
-                  },
-                  {
-                            "target": "Bwakire",
-                            "source": "Good morning (Ekegusii)",
-                            "pronunciation": "bwakire"
-                  },
-                  {
-                            "target": "Bwairire",
-                            "source": "Good evening",
-                            "pronunciation": "bwairire"
-                  },
-                  {
-                            "target": "Karibu inka",
-                            "source": "Welcome home",
-                            "pronunciation": "karibu inka"
-                  },
-                  {
-                            "target": "Omorembe obe n'inwe",
-                            "source": "Peace be with you",
-                            "pronunciation": "omorembe obe n'inwe"
-                  },
-                  {
-                            "target": "amauta",
-                            "source": "Fat",
-                            "pronunciation": "a-mau-ta"
-                  },
-                  {
-                            "target": "Eri-ge or Eri-ige",
-                            "source": "Egg",
-                            "pronunciation": "eri-ge or eri-ige eri-gina ama-gina / ama-ige"
-                  }
+          {
+            "target": "Omorembe",
+            "source": "Peace",
+            "pronunciation": "oh-moh-rehm-beh"
+          },
+          {
+            "target": "Bwakire!",
+            "source": "Hello",
+            "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh"
+          },
+          {
+            "target": "Mbuya mono",
+            "source": "Thank you",
+            "pronunciation": "m-boo-yah moh-noh"
+          },
+          {
+            "target": "Mbuya mono!",
+            "source": "Thank you very much! / Very well!",
+            "pronunciation": "mbu-ya mo-no"
+          },
+          {
+            "target": "Bwakire",
+            "source": "Good morning (Ekegusii)",
+            "pronunciation": "bwakire"
+          },
+          {
+            "target": "Bwairire",
+            "source": "Good evening",
+            "pronunciation": "bwairire"
+          },
+          {
+            "target": "Karibu inka",
+            "source": "Welcome home",
+            "pronunciation": "karibu inka"
+          },
+          {
+            "target": "Omorembe obe n'inwe",
+            "source": "Peace be with you",
+            "pronunciation": "omorembe obe n'inwe"
+          },
+          {
+            "target": "amauta",
+            "source": "Fat",
+            "pronunciation": "a-mau-ta"
+          },
+          {
+            "target": "Erige",
+            "source": "Egg",
+            "pronunciation": "e-ri-ge"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Mbuya mono",
-                            "source": "Thank you"
-                  },
-                  {
-                            "target": "Mbuya mono!",
-                            "source": "Thank you very much! / Very well!"
-                  },
-                  {
-                            "target": "Okorwa gose ogotoma chibesa ase esimu",
-                            "source": "Mobile money transaction / Account balance inquiry"
-                  },
-                  {
-                            "target": "Mbuya mono",
-                            "source": "Thank you very much"
-                  },
-                  {
-                            "target": "Karibu inka",
-                            "source": "Welcome home"
-                  },
-                  {
-                            "target": "Omorembe obe n'inwe",
-                            "source": "Peace be with you"
-                  },
-                  {
-                            "target": "Eri-ge or Eri-ige",
-                            "source": "Egg"
-                  },
-                  {
-                            "target": "Obu-sie. Obo-ke. Ama-na",
-                            "source": "Honey"
-                  }
+          {
+            "target": "Mbuya mono",
+            "source": "Thank you."
+          },
+          {
+            "target": "Mbuya mono!",
+            "source": "Thank you very much! / Very well!"
+          },
+          {
+            "target": "Okorwa gose ogotoma chibesa ase esimu",
+            "source": "Mobile money transaction / Account balance inquiry."
+          },
+          {
+            "target": "Mbuya mono",
+            "source": "Thank you very much."
+          },
+          {
+            "target": "Karibu inka",
+            "source": "Welcome home."
+          },
+          {
+            "target": "Omorembe obe n'inwe",
+            "source": "Peace be with you."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "kisii-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kisii (Ekegusii) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
+        "culturalNote": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922).",
         "words": [
-                  {
-                            "target": "-mu, -mo",
-                            "source": "One",
-                            "pronunciation": "mu -mo / -mo -mwe"
-                  },
-                  {
-                            "target": "-beri, -viri",
-                            "source": "Two",
-                            "pronunciation": "be-ri -viri / -viri"
-                  },
-                  {
-                            "target": "-sano na i-mo",
-                            "source": "Six",
-                            "pronunciation": "-sano"
-                  },
-                  {
-                            "target": "I-kumi. Omu-ronggo",
-                            "source": "Ten",
-                            "pronunciation": "i-kumi omu-ronggo / i-kumi omu-ronggu"
-                  },
-                  {
-                            "target": "-nye, -nne",
-                            "source": "Four",
-                            "pronunciation": "nye -nne / -nne"
-                  },
-                  {
-                            "target": "-sano, -tanu",
-                            "source": "Five",
-                            "pronunciation": "sa-no -tanu / -tanu"
-                  },
-                  {
-                            "target": "Ki-anda",
-                            "source": "Nine",
-                            "pronunciation": "ki-anda / ki-anda k-enda"
-                  },
-                  {
-                            "target": "-satu, -tatu",
-                            "source": "Three",
-                            "pronunciation": "sa-tu -tatu / -tatu"
-                  },
-                  {
-                            "target": "-sano na i-were",
-                            "source": "Seven",
-                            "pronunciation": "-sano"
-                  },
-                  {
-                            "target": "-sano na i-satu",
-                            "source": "Eight",
-                            "pronunciation": "-sano na i-satu"
-                  }
+          {
+            "target": "-mu, -mo",
+            "source": "One",
+            "pronunciation": "mu -mo / -mo -mwe"
+          },
+          {
+            "target": "-beri, -viri",
+            "source": "Two",
+            "pronunciation": "be-ri -viri / -viri"
+          },
+          {
+            "target": "-sano na i-mo",
+            "source": "Six",
+            "pronunciation": "-sano"
+          },
+          {
+            "target": "I-kumi",
+            "source": "Ten",
+            "pronunciation": "i-kumi omu-ronggo / i-kumi omu-ronggu"
+          },
+          {
+            "target": "-nye, -nne",
+            "source": "Four",
+            "pronunciation": "nye -nne / -nne"
+          },
+          {
+            "target": "-sano, -tanu",
+            "source": "Five",
+            "pronunciation": "sa-no -tanu / -tanu"
+          },
+          {
+            "target": "Ki-anda",
+            "source": "Nine",
+            "pronunciation": "ki-anda / ki-anda k-enda"
+          },
+          {
+            "target": "-satu, -tatu",
+            "source": "Three",
+            "pronunciation": "sa-tu -tatu / -tatu"
+          },
+          {
+            "target": "-sano na i-were",
+            "source": "Seven",
+            "pronunciation": "-sano"
+          },
+          {
+            "target": "-sano na i-satu",
+            "source": "Eight",
+            "pronunciation": "-sano na i-satu"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "-mu, -mo",
-                            "source": "One"
-                  },
-                  {
-                            "target": "-beri, -viri",
-                            "source": "Two"
-                  },
-                  {
-                            "target": "-sano na i-mo",
-                            "source": "Six"
-                  },
-                  {
-                            "target": "I-kumi. Omu-ronggo",
-                            "source": "Ten"
-                  },
-                  {
-                            "target": "-nye, -nne",
-                            "source": "Four"
-                  },
-                  {
-                            "target": "-sano, -tanu",
-                            "source": "Five"
-                  },
-                  {
-                            "target": "-satu, -tatu",
-                            "source": "Three"
-                  },
-                  {
-                            "target": "-sano na i-were",
-                            "source": "Seven"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

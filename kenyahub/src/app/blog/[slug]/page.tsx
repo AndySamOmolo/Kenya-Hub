@@ -248,8 +248,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     wordCount,
     timeRequired: `PT${Math.max(1, post.readTime || 5)}M`,
     author: {
+      "@type": "Person",
+      name: post.author || "KenyaHub Statutory & Linguistic Research Desk",
+      jobTitle: "Senior Statutory & Linguistic Research Editor",
+      url: "https://kenyahub.me/about/",
+    },
+    reviewedBy: {
       "@type": "Organization",
-      name: post.author || "KenyaHub Editorial Team",
+      name: "KenyaHub Statutory & Editorial Review Board",
       url: "https://kenyahub.me/about/",
     },
     datePublished: post.publishedAt,
@@ -260,9 +266,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       url: "https://kenyahub.me",
       logo: {
         "@type": "ImageObject",
-        url: "https://kenyahub.me/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "https://kenyahub.me/icon-512.png",
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {

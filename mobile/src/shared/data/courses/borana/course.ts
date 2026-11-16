@@ -37,51 +37,153 @@ export const BORANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "borana-greetings-nouns",
-        "title": "Greetings, Nagaa (Peace), Kinship, Cases & Tutschek Prayers &",
+        "title": "Greetings, Nagaa (Peace), Kinship, Cases & Tutschek Prayers",
         "icon": "Handshake",
         "description": "Learn Afaan Borana greetings, pronouns, Nominative case formations (-n, -i, -fni, -ti, -ñi), and verbatim prayers and letters from the 1842–1845 corpus.",
         "tips": "In Afaan Borana (Tutschek 1845, §§ 177–195, pp. 54–57), collective nouns (dargago, mangudo, hatu, hidjole) govern a 3rd person feminine singular verb, and the Accusative/Absolutive is the citation form (nama 'person', lafa 'earth', muka 'tree', boka 'rain', kaniza 'bee', barziza 'teacher', gawa 'hole'), while grammatical subjects take Nominative suffixes (namni, lafti, mukni, bokeñi, kanifni, barzifni, gofni).",
         "culturalNote": "In Charles & Lawrence Tutschek's 1845 Grammar (pp. 84–91, translated by M. J. Smead), three native prayers (Akafed'e's 16-verse Prayer after the War of Hambo and Hamaya, Morning Prayer, and Evening Prayer) and two October 1840 Munich letters between Otshu Aga (of Sibu) and Akafed'e Dalle (of Hambo), alongside Aman Gonda (of Goma), preserve authentic 19th-century Oromo/Borana devotion to Waaqa (Wacayo) and Nagaa (Peace).",
         "words": [
           {
-            "target": "Akkam jirta? / Naga, naga! Fayaketi! / Ati naga olte had'a?",
-            "source": "How are you? / Peace, peace! Thy health! / Hast thou passed this day in peace?",
+            "target": "Akkam jirta?",
+            "source": "How are you?",
             "pronunciation": "akkam-jirta",
             "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
-            "target": "Galatoomi / Wacayon iza ha tolu / Nagaiti buli! / Nagan hafi hama nu",
-            "source": "Thank you / May God do good to him / Good night! / Rest in peace until we meet again!",
+            "target": "Naga, naga! Fayaketi!",
+            "source": "Peace, peace! Thy health!",
+            "pronunciation": "akkam-jirta",
+            "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
+          },
+          {
+            "target": "Ati naga olte had'a?",
+            "source": "Hast thou passed this day in peace?",
+            "pronunciation": "akkam-jirta",
+            "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
+          },
+          {
+            "target": "Galatoomi",
+            "source": "Thank you",
             "pronunciation": "galatoomi",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
-            "target": "nama (nom. namni) / dhiira (d'ira, nom. d'irri) / dubartii (niti) /",
-            "source": "Person / Man / Woman, wife / Elders & Youth (collective fem. sg.)",
+            "target": "Wacayon iza ha tolu",
+            "source": "May God do good to him",
+            "pronunciation": "galatoomi",
+            "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
+          },
+          {
+            "target": "Nagaiti buli!",
+            "source": "Good night!",
+            "pronunciation": "galatoomi",
+            "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
+          },
+          {
+            "target": "Nagan hafi hama nu",
+            "source": "Rest in peace until we meet again!",
+            "pronunciation": "galatoomi",
+            "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
+          },
+          {
+            "target": "nama (nom. namni)",
+            "source": "Person",
             "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
             "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
-            "target": "abbaa / haadha / mutsha (pl. hidjole)",
-            "source": "Father (my/thy father) / Mother (my/thy mother) / Child (pl. collective children)",
+            "target": "dhiira (d'ira, nom. d'irri)",
+            "source": "Man",
+            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
+          },
+          {
+            "target": "dubartii (niti)",
+            "source": "Woman, wife",
+            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
+          },
+          {
+            "target": "abbaa",
+            "source": "Father (my/thy father)",
             "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
             "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
-            "target": "kaniza (nom. kanifni) / barziza (nom. barzifni) / gawa (nom. gofni) /",
-            "source": "Bee / Teacher / Hole (-fni Nominative) / Earth (-ti) / Rain (-ñi)",
+            "target": "haadha",
+            "source": "Mother (my/thy mother)",
+            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
+          },
+          {
+            "target": "mutsha (pl. hidjole)",
+            "source": "Child (pl. collective children)",
+            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
+          },
+          {
+            "target": "kaniza (nom. kanifni)",
+            "source": "Bee",
             "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
             "hint": "Tutschek (1845, § 184, pp. 55–56)"
           },
           {
-            "target": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati, nom.",
-            "source": "Water / Fire / Sun / Moon",
+            "target": "barziza (nom. barzifni)",
+            "source": "Teacher",
+            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "hint": "Tutschek (1845, § 184, pp. 55–56)"
+          },
+          {
+            "target": "gawa (nom. gofni)",
+            "source": "Hole (-fni Nominative)",
+            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "hint": "Tutschek (1845, § 184, pp. 55–56)"
+          },
+          {
+            "target": "bishaan (biz'an)",
+            "source": "Water",
             "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
-            "target": "loon (godiyo) / gaala / reeʿ (pl. rooda / rooni) / farda",
-            "source": "Cattle / Camel / Goat / Horse (the horses graze — fem. sg. concord)",
+            "target": "ibidda (ibida)",
+            "source": "Fire",
+            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
+          },
+          {
+            "target": "aduu (biftu)",
+            "source": "Sun",
+            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
+          },
+          {
+            "target": "baatii",
+            "source": "Moon",
+            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
+          },
+          {
+            "target": "loon (godiyo)",
+            "source": "Cattle",
+            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
+          },
+          {
+            "target": "gaala",
+            "source": "Camel",
+            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
+          },
+          {
+            "target": "reeʿ",
+            "source": "Goat",
+            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
+          },
+          {
+            "target": "rooni)",
+            "source": "Horse (the horses graze — fem. sg. concord)",
             "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
@@ -92,13 +194,13 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, pp. 87–88, Morning Prayer)"
           },
           {
-            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu,",
-            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the",
+            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu",
+            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun",
             "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko ... ga-di-za na tai",
             "hint": "Tutschek (1845, p. 84, Akafed'e's Prayer after the Hambo–Hamaya War)"
           },
           {
-            "target": "D'ad'an ibidti bue hindebiu",
+            "target": "Dan ibidti bue hindebiu",
             "source": "Butter fallen into the fire comes not back",
             "pronunciation": "d'ad'an i-bidti bue hinde-biu",
             "hint": "Tutschek (1845, p. 90, Letter 5)"
@@ -107,11 +209,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi.",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me,"
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me."
           },
           {
             "target": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
-            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy"
+            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under."
           },
           {
             "target": "Wara Hambo fi wara Hamaya waliti ararzi, goftako! Lola biyakeña baza, naga biyakeñati debizi!",
@@ -119,69 +221,89 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "D'ad'an ibidti bue hindebiu.",
-            "source": "Butter fallen into the fire comes not back (Tutschek 1845, p. 90)."
+            "source": "Butter fallen into the fire comes not back ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Akkam jirta? / Naga, naga! Fayaketi!\" in Borana?",
-            "correctAnswer": "How are you? / Peace, peace! Thy health!",
+            "prompt": "What is the English meaning of \"Akkam jirta?\" in Borana?",
+            "correctAnswer": "How are you?",
             "options": [
-              "Thank you / May God do good to him",
-              "Person / Man / Woman, wife",
-              "Father / Mother / Child (pl. collective children)",
-              "How are you? / Peace, peace! Thy health!"
+              "How are you?",
+              "Thank you",
+              "Person",
+              "Father"
             ],
-            "hint": "Tutschek (1845, p. 88, Aga’s Letter) & Borana salutation"
+            "hint": "Tutschek (1845, p. 88, Aga’s Letter) & Borana salutation",
+            "acceptedAnswers": [
+              "How are you? / Peace, peace! Thy health!",
+              "How are you?"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Galatoomi / Wacayon iza ha tolu\" in Borana?",
-            "correctAnswer": "Thank you / May God do good to him",
+            "prompt": "What is the English meaning of \"Galatoomi\" in Borana?",
+            "correctAnswer": "Thank you",
             "options": [
-              "Person / Man / Woman, wife",
-              "Father / Mother / Child (pl. collective children)",
-              "Thank you / May God do good to him",
-              "How are you? / Peace, peace! Thy health!"
+              "Person",
+              "Father",
+              "Thank you",
+              "How are you?"
             ],
-            "hint": "Tutschek (1845, p. 90, Akafed’e’s Letter)"
+            "hint": "Tutschek (1845, p. 90, Akafed’e’s Letter)",
+            "acceptedAnswers": [
+              "Thank you / May God do good to him",
+              "Thank you"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do nouns in -iza / -awa (such as kaniza 'bee', barziza 'teacher', gawa 'hole') form their Nominative in Tutschek (1845, § 184)?",
-            "correctAnswer": "By changing the ending to -fni (kanifni, barzifni, gofni)",
+            "correctAnswer": "By changing the ending to -fni",
             "options": [
-              "By changing the ending to -fni (kanifni, barzifni, gofni)",
               "By prefixing m- to the root",
+              "By changing the ending to -fni",
               "By dropping the first syllable",
               "By adding -tiana to the root"
             ],
-            "hint": "Tutschek (1845, § 184.2, p. 55)"
+            "hint": "Tutschek (1845, § 184.2, p. 55)",
+            "acceptedAnswers": [
+              "By changing the ending to -fni (kanifni, barzifni, gofni)",
+              "By changing the ending to -fni"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Person / Man / Woman, wife\" in Borana?",
-            "correctAnswer": "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
+            "prompt": "How do you say \"Person\" in Borana?",
+            "correctAnswer": "nama",
             "options": [
-              "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
-              "Akkam jirta? / Naga, naga! Fayaketi!",
-              "Galatoomi / Wacayon iza ha tolu",
-              "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)"
+              "Akkam jirta?",
+              "Galatoomi",
+              "nama",
+              "abbaa"
             ],
-            "hint": "nah-mah / dhee-rah / doo-bahr-tee"
+            "hint": "nah-mah / dhee-rah / doo-bahr-tee",
+            "acceptedAnswers": [
+              "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
+              "nama"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Father / Mother / Child (pl. collective children)\" in Borana?",
-            "correctAnswer": "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)",
+            "prompt": "How do you say \"Father\" in Borana?",
+            "correctAnswer": "abbaa",
             "options": [
-              "Akkam jirta? / Naga, naga! Fayaketi!",
-              "Galatoomi / Wacayon iza ha tolu",
-              "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
-              "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)"
+              "Akkam jirta?",
+              "Galatoomi",
+              "nama",
+              "abbaa"
             ],
-            "hint": "ahb-bah / hah-dhah / moo-chah"
+            "hint": "ahb-bah / hah-dhah / moo-chah",
+            "acceptedAnswers": [
+              "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)",
+              "abbaa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -204,15 +326,19 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Borana term for \"Water / Fire / Sun / Moon\": ___",
-            "correctAnswer": "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati)",
+            "prompt": "Complete the Borana term for \"Water\": ___",
+            "correctAnswer": "bishaan",
             "options": [
-              "Akkam jirta? / Naga, naga! Fayaketi!",
-              "Galatoomi / Wacayon iza ha tolu",
-              "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
-              "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati)"
+              "bishaan",
+              "Akkam jirta?",
+              "Galatoomi",
+              "nama"
             ],
-            "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
+            "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)",
+            "acceptedAnswers": [
+              "bishaan (biz'an) / ibidda (ibida) / aduu (biftu) / baatii (bati)",
+              "bishaan"
+            ]
           }
         ]
       },
@@ -242,7 +368,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 7, 202, pp. 3, 59)"
           },
           {
-            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60),",
+            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60)",
             "source": "20 to 90, 100, 1,000, and 100,000 ('a fist-full of thousands')",
             "pronunciation": "digda-ma so-do-ma dhibba ku-ma kuntu-ma",
             "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
@@ -265,7 +391,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 212, p. 62)"
           },
           {
-            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka (at",
+            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka",
             "source": "Numeral adverbs & numeral verbs (double; do for the 2nd, 3rd, 4th, 5th time)",
             "pronunciation": "ga-fa-to-ko / di-ri-ba / la-me-fad'a",
             "hint": "Tutschek (1845, §§ 213–215, pp. 62–63)"
@@ -277,7 +403,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 44–50, 98, 105, pp. 11–12, 28, 30)"
           },
           {
-            "target": "Conj. I: adema, ademta, ademna",
+            "target": "Conj",
             "source": "The 3 Verbal Conjugations (1s, 2s, 1p Present Indicative)",
             "pronunciation": "a-de-ma / tshi-za tshif-ta / ta te-za te-nya",
             "hint": "Tutschek (1845, §§ 132–135, pp. 38–42)"
@@ -289,7 +415,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 113–119, pp. 32–34)"
           },
           {
-            "target": "dida (refuse: oad'z'udide) / bad'a / d'aba / ola (pass by / fail)",
+            "target": "dida / badaba / ola",
             "source": "The 4 negative auxiliary verbs in Galla/Borana",
             "pronunciation": "di-da / bad'a / d'a-ba / ola",
             "hint": "Tutschek (1845, § 176, pp. 52–53)"
@@ -298,45 +424,53 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nu arfanu teñeti walwadjin kana hazofna.",
-            "source": "There are four of us sitting and conversing together (Tutschek 1845, p. 91)."
+            "source": "There are four of us sitting and conversing together ."
           },
           {
             "target": "Wacayo mid'an magarziza.",
-            "source": "God causes the grain to grow (Tutschek 1845, § 84, p. 22)."
+            "source": "God causes the grain to grow ."
           },
           {
             "target": "Oto izan homa hiñad'ini galani.",
-            "source": "They went home without having eaten anything (Tutschek 1845, § 119, p. 34)."
+            "source": "They went home without having eaten anything ."
           },
           {
             "target": "Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi? — Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe.",
-            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it"
+            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What are the 4 fractions of the amole salt-bar currency in Tutschek (1845, § 212, p. 62)?",
-            "correctAnswer": "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
+            "correctAnswer": "tchabnana",
             "options": [
-              "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
-              "toko (1), lama (2), zadi (3), afuri (4)",
-              "dida, bad'a, d'aba, ola",
-              "-re, -mi, -ti, -yi, -ni"
+              "toko",
+              "dida",
+              "tchabnana",
+              "-re"
             ],
-            "hint": "Tutschek (1845, § 212, p. 62)"
+            "hint": "Tutschek (1845, § 212, p. 62)",
+            "acceptedAnswers": [
+              "tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele / gadele (1/8)",
+              "tchabnana"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"digetama (20), zodoma (30), d'iba (100), kuma (1,000), kuntuma (100,000)\" in Borana?",
-            "correctAnswer": "20, 30, 100, 1,000, 100,000",
+            "prompt": "What is the English meaning of \"digetama, zodoma (30), d'iba (100), kuma (1,000), kuntuma (100,000)\" in Borana?",
+            "correctAnswer": "20",
             "options": [
-              "First (first-born), Second, Third, Fourth",
-              "20, 30, 100, 1,000, 100,000",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10"
+              "First",
+              "20",
+              "1",
+              "6"
             ],
-            "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
+            "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)",
+            "acceptedAnswers": [
+              "20, 30, 100, 1,000, 100,000",
+              "20"
+            ]
           }
         ]
       }
@@ -371,13 +505,19 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 200, 228, 239)"
           },
           {
-            "target": "dubartii / niitii (niti) / haadha warraa",
-            "source": "Woman / Wife",
+            "target": "dubartii",
+            "source": "Woman",
             "pronunciation": "du-bartii / nii-tii / haadha warraa",
             "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo"
           },
           {
-            "target": "barsiisaa / barziza (nom. barzifni, pl. barsiisota)",
+            "target": "niitii (niti)",
+            "source": "Wife",
+            "pronunciation": "du-bartii / nii-tii / haadha warraa",
+            "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo"
+          },
+          {
+            "target": "barsiisaa / barziza (nom. barzifni",
             "source": "Teacher",
             "pronunciation": "barsii-saa / barzi-za",
             "hint": "Tutschek (1845, § 184.2, p. 55)"
@@ -419,10 +559,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ilma (pl. ilmaan / ilman)\" in Borana?",
             "correctAnswer": "Son",
             "options": [
+              "Son",
               "Sister",
-              "Woman / Wife",
-              "Teacher",
-              "Son"
+              "Woman",
+              "Teacher"
             ],
             "hint": "Tutschek (1845, § 182, p. 55)"
           },
@@ -431,48 +571,60 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"obboleettii / oboleti (nom. oboletin)\" in Borana?",
             "correctAnswer": "Sister",
             "options": [
-              "Woman / Wife",
+              "Woman",
               "Teacher",
-              "Sister",
-              "Son"
+              "Son",
+              "Sister"
             ],
             "hint": "Tutschek (1845, §§ 200, 228, 239)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"dubartii / niitii (niti) / haadha warraa\" in Borana?",
-            "correctAnswer": "Woman / Wife",
+            "prompt": "What is the English meaning of \"dubartii\" in Borana?",
+            "correctAnswer": "Woman",
             "options": [
               "Teacher",
-              "Woman / Wife",
+              "Woman",
               "Son",
               "Sister"
             ],
-            "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo"
+            "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo",
+            "acceptedAnswers": [
+              "Woman / Wife",
+              "Woman"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Woman / Wife\" in Borana?",
-            "correctAnswer": "dubartii / niitii (niti) / haadha warraa",
+            "prompt": "How do you say \"Woman\" in Borana?",
+            "correctAnswer": "dubartii",
             "options": [
-              "dubartii / niitii (niti) / haadha warraa",
-              "ilma (pl. ilmaan / ilman)",
-              "obboleettii / oboleti (nom. oboletin)",
-              "barsiisaa / barziza (nom. barzifni, pl. barsiisota)"
+              "ilma",
+              "dubartii",
+              "obboleettii",
+              "barsiisaa"
             ],
-            "hint": "du-bar-tii / nii-tii"
+            "hint": "Starts with \"du…\" (8 letters)",
+            "acceptedAnswers": [
+              "dubartii / niitii (niti) / haadha warraa",
+              "dubartii"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Teacher\" in Borana?",
-            "correctAnswer": "barsiisaa / barziza (nom. barzifni, pl. barsiisota)",
+            "correctAnswer": "barsiisaa",
             "options": [
-              "ilma (pl. ilmaan / ilman)",
-              "obboleettii / oboleti (nom. oboletin)",
-              "dubartii / niitii (niti) / haadha warraa",
-              "barsiisaa / barziza (nom. barzifni, pl. barsiisota)"
+              "barsiisaa",
+              "ilma",
+              "obboleettii",
+              "dubartii"
             ],
-            "hint": "bar-sii-saa / bar-zif-ni"
+            "hint": "Starts with \"ba…\" (9 letters)",
+            "acceptedAnswers": [
+              "barsiisaa / barziza (nom. barzifni, pl. barsiisota)",
+              "barsiisaa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -500,14 +652,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Borana term for \"Name\": ___",
-            "correctAnswer": "maqaa / maca (nom. maqaan / macan)",
+            "correctAnswer": "maqaa",
             "options": [
-              "ilma (pl. ilmaan / ilman)",
-              "obboleettii / oboleti (nom. oboletin)",
-              "dubartii / niitii (niti) / haadha warraa",
-              "maqaa / maca (nom. maqaan / macan)"
+              "ilma",
+              "maqaa",
+              "obboleettii",
+              "dubartii"
             ],
-            "hint": "Tutschek (1845, §§ 245, 250.1, pp. 73, 80)"
+            "hint": "Tutschek (1845, §§ 245, 250.1, pp. 73, 80)",
+            "acceptedAnswers": [
+              "maqaa / maca (nom. maqaan / macan)",
+              "maqaa"
+            ]
           }
         ]
       },
@@ -538,8 +694,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           },
           {
-            "target": "oboleza / oboleti",
-            "source": "Brother / Sister",
+            "target": "oboleza",
+            "source": "Brother",
+            "pronunciation": "o-bo-le-za / o-bo-le-ti",
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
+          },
+          {
+            "target": "oboleti",
+            "source": "Sister",
             "pronunciation": "o-bo-le-za / o-bo-le-ti",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           },
@@ -583,7 +745,7 @@ export const BORANA_UNITS: CourseUnit[] = [
               "Child",
               "Family",
               "Father",
-              "Brother / Sister"
+              "Brother"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           },
@@ -613,14 +775,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Borana (Afaan Borana) term for \"Girl\": ___",
-            "correctAnswer": "dúbra; entála",
+            "correctAnswer": "dúbra",
             "options": [
-              "dúbra; entála",
+              "dúbra",
               "ílma",
               "worra",
               "aba"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)",
+            "acceptedAnswers": [
+              "dúbra; entála",
+              "dúbra"
+            ]
           }
         ]
       }
@@ -703,10 +869,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"tokko (toko, tak)\" in Borana?",
             "correctAnswer": "One",
             "options": [
+              "One",
               "Two",
               "Three",
-              "Four",
-              "One"
+              "Four"
             ],
             "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
           },
@@ -717,8 +883,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "options": [
               "Three",
               "Four",
-              "Two",
-              "One"
+              "One",
+              "Two"
             ],
             "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
           },
@@ -737,26 +903,34 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Borana?",
-            "correctAnswer": "sadii (zadi)",
+            "correctAnswer": "sadii",
             "options": [
-              "sadii (zadi)",
-              "tokko (toko, tak)",
+              "tokko",
               "lama",
-              "afur (afuri)"
+              "sadii",
+              "afur"
             ],
-            "hint": "sa-dii"
+            "hint": "Starts with \"sa…\" (5 letters)",
+            "acceptedAnswers": [
+              "sadii (zadi)",
+              "sadii"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Borana?",
-            "correctAnswer": "afur (afuri)",
+            "correctAnswer": "afur",
             "options": [
-              "tokko (toko, tak)",
+              "afur",
+              "tokko",
               "lama",
-              "sadii (zadi)",
-              "afur (afuri)"
+              "sadii"
             ],
-            "hint": "a-fur"
+            "hint": "Starts with \"af…\" (4 letters)",
+            "acceptedAnswers": [
+              "afur (afuri)",
+              "afur"
+            ]
           },
           {
             "type": "match_pairs",
@@ -784,14 +958,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Borana term for \"Five\": ___",
-            "correctAnswer": "shan (z'ani)",
+            "correctAnswer": "shan",
             "options": [
-              "tokko (toko, tak)",
+              "shan",
+              "tokko",
               "lama",
-              "sadii (zadi)",
-              "shan (z'ani)"
+              "sadii"
             ],
-            "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
+            "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)",
+            "acceptedAnswers": [
+              "shan (z'ani)",
+              "shan"
+            ]
           }
         ]
       },
@@ -804,8 +982,14 @@ export const BORANA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
-            "target": "kudhan (kudani; kurna = set of ten / 10-day period)",
-            "source": "Ten (and 10-day Period / Decade)",
+            "target": "kudhan",
+            "source": "Ten",
+            "pronunciation": "kudhan",
+            "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
+          },
+          {
+            "target": "10-day period)",
+            "source": "Decade)",
             "pronunciation": "kudhan",
             "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
           },
@@ -855,25 +1039,29 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kudhan — digdama",
-            "source": "Ten — Twenty & Thirty"
+            "source": "Ten — Twenty & Thirty."
           },
           {
             "target": "dhibba — tokko",
-            "source": "Hundred, Thousand & Hundred Thousand — One"
+            "source": "Hundred, Thousand & Hundred Thousand — One."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kudhan\" mean in English?",
-            "correctAnswer": "Ten (and 10-day Period / Decade)",
+            "correctAnswer": "Ten",
             "options": [
-              "Ten (and 10-day Period / Decade)",
               "Twenty & Thirty",
-              "Hundred, Thousand & Hundred Thousand",
+              "Hundred",
+              "Ten",
               "One"
             ],
-            "hint": "Core vocabulary in Trade, Barter, Currency & Traditional Measures"
+            "hint": "Core vocabulary in Trade, Barter, Currency & Traditional Measures",
+            "acceptedAnswers": [
+              "Ten (and 10-day Period / Decade)",
+              "Ten"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -995,11 +1183,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "buna — foon",
-            "source": "Coffee — Meat"
+            "source": "Coffee — Meat."
           },
           {
             "target": "damma — soogidda",
-            "source": "Honey — Salt"
+            "source": "Honey — Salt."
           }
         ],
         "authoredExercises": [
@@ -1008,10 +1196,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"buna\" mean in English?",
             "correctAnswer": "Coffee",
             "options": [
-              "Coffee",
-              "Meat (and Sacrificial Meat)",
+              "Meat",
               "Honey",
-              "Salt (and Amole Salt-Bar)"
+              "Salt",
+              "Coffee"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
           },
@@ -1074,7 +1262,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "kurkurio mideise",
-            "source": "Bake, v. a. -bread",
+            "source": "Bake bread",
             "pronunciation": "kurku-rio mi-dei-se",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
@@ -1116,7 +1304,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "bakse"
           },
           {
-            "target": "bubba. To lay eggs, bubba bafte",
+            "target": "bubba",
             "source": "Egg",
             "pronunciation": "bub-ba to lay eg bub-ba baf-te"
           }
@@ -1124,25 +1312,29 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kurkurio mideise — sórate",
-            "source": "Bake, v. a. -bread — Eat"
+            "source": "Bake, v. a. -bread — Eat."
           },
           {
             "target": "damfe — korkorío",
-            "source": "Boil — Bread"
+            "source": "Boil — Bread."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kurkurio mideise\" mean in English?",
-            "correctAnswer": "Bake, v. a. -bread",
+            "correctAnswer": "Bake",
             "options": [
-              "Bake, v. a. -bread",
               "Eat",
+              "Bake",
               "Boil",
               "Bread"
             ],
-            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
+            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock",
+            "acceptedAnswers": [
+              "Bake, v. a. -bread",
+              "Bake"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1224,8 +1416,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Oromo_language"
           },
           {
-            "target": "Waaqa (Waca / Wacayo)",
-            "source": "Sky / God",
+            "target": "Waaqa",
+            "source": "Sky",
+            "pronunciation": "waa-qa",
+            "hint": "Tutschek (1845, § 6, p. 3)"
+          },
+          {
+            "target": "Wacayo)",
+            "source": "God",
             "pronunciation": "waa-qa",
             "hint": "Tutschek (1845, § 6, p. 3)"
           },
@@ -1254,8 +1452,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 249.2, p. 76 & p. 90)"
           },
           {
-            "target": "aara (ara = steam, smoke; III arza) / caca (soot)",
-            "source": "Smoke / Soot",
+            "target": "aara (ara = steam, smoke; III arza)",
+            "source": "Smoke",
+            "pronunciation": "aa-ra / ca-ca",
+            "hint": "Tutschek (1845, §§ 12, 75, pp. 4, 20)"
+          },
+          {
+            "target": "caca (soot)",
+            "source": "Soot",
             "pronunciation": "aa-ra / ca-ca",
             "hint": "Tutschek (1845, §§ 12, 75, pp. 4, 20)"
           },
@@ -1273,9 +1477,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Water",
             "options": [
               "Star",
-              "Sky / God",
-              "Cloud",
-              "Water"
+              "Sky",
+              "Water",
+              "Cloud"
             ],
             "hint": "Tutschek (1845, § 254, p. 82) & Wikipedia Oromo_language"
           },
@@ -1284,48 +1488,56 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"urjii\" in Borana?",
             "correctAnswer": "Star",
             "options": [
-              "Sky / God",
-              "Cloud",
+              "Sky",
               "Star",
+              "Cloud",
               "Water"
             ],
             "hint": "Wikipedia Oromo_language"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Waaqa (Waca / Wacayo)\" in Borana?",
-            "correctAnswer": "Sky / God",
+            "prompt": "What is the English meaning of \"Waaqa\" in Borana?",
+            "correctAnswer": "Sky",
             "options": [
+              "Sky",
               "Cloud",
-              "Sky / God",
               "Water",
               "Star"
             ],
-            "hint": "Tutschek (1845, § 6, p. 3)"
+            "hint": "Tutschek (1845, § 6, p. 3)",
+            "acceptedAnswers": [
+              "Sky / God",
+              "Sky"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Sky / God\" in Borana?",
-            "correctAnswer": "Waaqa (Waca / Wacayo)",
+            "prompt": "How do you say \"Sky\" in Borana?",
+            "correctAnswer": "Waaqa",
             "options": [
-              "Waaqa (Waca / Wacayo)",
-              "bishaan (biz'an / bisaan)",
+              "Waaqa",
+              "bishaan",
               "urjii",
               "duumessa"
             ],
-            "hint": "waa-qa / wa-ca-yo"
+            "hint": "Starts with \"Wa…\" (5 letters)",
+            "acceptedAnswers": [
+              "Waaqa (Waca / Wacayo)",
+              "Waaqa"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Cloud\" in Borana?",
             "correctAnswer": "duumessa",
             "options": [
-              "bishaan (biz'an / bisaan)",
+              "bishaan",
+              "duumessa",
               "urjii",
-              "Waaqa (Waca / Wacayo)",
-              "duumessa"
+              "Waaqa"
             ],
-            "hint": "duu-mes-sa"
+            "hint": "Starts with \"du…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -1353,14 +1565,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Borana term for \"Rain\": ___",
-            "correctAnswer": "rooba (roba, verb; III robziza) / bokkaa (boka, nom. bokeñi)",
+            "correctAnswer": "rooba",
             "options": [
-              "bishaan (biz'an / bisaan)",
+              "bishaan",
+              "rooba",
               "urjii",
-              "Waaqa (Waca / Wacayo)",
-              "rooba (roba, verb; III robziza) / bokkaa (boka, nom. bokeñi)"
+              "Waaqa"
             ],
-            "hint": "Tutschek (1845, §§ 66, 163, 184, pp. 18, 49, 56)"
+            "hint": "Tutschek (1845, §§ 66, 163, 184, pp. 18, 49, 56)",
+            "acceptedAnswers": [
+              "rooba (roba, verb; III robziza) / bokkaa (boka, nom. bokeñi)",
+              "rooba"
+            ]
           }
         ]
       },
@@ -1426,11 +1642,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "laga — haroo",
-            "source": "River — Lake"
+            "source": "River — Lake."
           },
           {
             "target": "baala — sanyii",
-            "source": "Leaf — Seed"
+            "source": "Leaf — Seed."
           }
         ],
         "authoredExercises": [
@@ -1439,9 +1655,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"laga\" mean in English?",
             "correctAnswer": "River",
             "options": [
-              "River",
               "Lake",
               "Leaf",
+              "River",
               "Seed"
             ],
             "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
@@ -1520,8 +1736,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
           {
-            "target": "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
-            "source": "Mouth / Language / Jaw",
+            "target": "afaan (afan, mouth, language)",
+            "source": "Mouth",
+            "pronunciation": "a-faan / manga-ga",
+            "hint": "Tutschek (1845, § 4, p. 2 & p. 85)"
+          },
+          {
+            "target": "mangaga (ma˜gaga, jaw)",
+            "source": "Language",
             "pronunciation": "a-faan / manga-ga",
             "hint": "Tutschek (1845, § 4, p. 2 & p. 85)"
           },
@@ -1550,8 +1772,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 52, 97, pp. 13, 27)"
           },
           {
-            "target": "harka (instr. harkaan; harkiza / harkifad'a = drag, pull)",
-            "source": "Hand / Arm",
+            "target": "harka",
+            "source": "Hand",
+            "pronunciation": "harka",
+            "hint": "Tutschek (1845, § 97, p. 28)"
+          },
+          {
+            "target": "harkifad'a = drag, pull)",
+            "source": "Arm",
             "pronunciation": "harka",
             "hint": "Tutschek (1845, § 97, p. 28)"
           },
@@ -1574,24 +1802,28 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"gurra\" in Borana?",
             "correctAnswer": "Ear",
             "options": [
-              "Mouth / Language / Jaw",
+              "Ear",
+              "Mouth",
               "Tooth",
-              "Tongue",
-              "Ear"
+              "Tongue"
             ],
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)\" in Borana?",
-            "correctAnswer": "Mouth / Language / Jaw",
+            "prompt": "What is the English meaning of \"afaan\" in Borana?",
+            "correctAnswer": "Mouth",
             "options": [
               "Tooth",
               "Tongue",
-              "Mouth / Language / Jaw",
+              "Mouth",
               "Ear"
             ],
-            "hint": "Tutschek (1845, § 4, p. 2 & p. 85)"
+            "hint": "Tutschek (1845, § 4, p. 2 & p. 85)",
+            "acceptedAnswers": [
+              "Mouth / Language / Jaw",
+              "Mouth"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1599,9 +1831,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Tooth",
             "options": [
               "Tongue",
-              "Tooth",
               "Ear",
-              "Mouth / Language / Jaw"
+              "Mouth",
+              "Tooth"
             ],
             "hint": "Borana / Oromo"
           },
@@ -1610,24 +1842,28 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Tooth\" in Borana?",
             "correctAnswer": "ilkaan",
             "options": [
-              "ilkaan",
               "gurra",
-              "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
-              "arraba (araba; arabza = to insult)"
+              "afaan",
+              "arraba",
+              "ilkaan"
             ],
-            "hint": "il-kaan"
+            "hint": "Starts with \"il…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tongue\" in Borana?",
-            "correctAnswer": "arraba (araba; arabza = to insult)",
+            "correctAnswer": "arraba",
             "options": [
+              "arraba",
               "gurra",
-              "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
-              "ilkaan",
-              "arraba (araba; arabza = to insult)"
+              "afaan",
+              "ilkaan"
             ],
-            "hint": "ar-ra-ba"
+            "hint": "Starts with \"ar…\" (6 letters)",
+            "acceptedAnswers": [
+              "arraba (araba; arabza = to insult)",
+              "arraba"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1658,7 +1894,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "qeensa",
             "options": [
               "gurra",
-              "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
+              "afaan",
               "ilkaan",
               "qeensa"
             ],
@@ -1675,8 +1911,14 @@ export const BORANA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
-            "target": "qoosee / morma",
-            "source": "Neck / Throat",
+            "target": "qoosee",
+            "source": "Neck",
+            "pronunciation": "qoo-see / morma",
+            "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
+          },
+          {
+            "target": "morma",
+            "source": "Throat",
             "pronunciation": "qoo-see / morma",
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
@@ -1711,8 +1953,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
           {
-            "target": "gogaa / ittillee (lucã / luqiza = prepare raw hides)",
-            "source": "Skin / Hide",
+            "target": "gogaa",
+            "source": "Skin",
+            "pronunciation": "go-gaa / ittillee",
+            "hint": "Tutschek (1845, § 74, p. 20) & Swadesh list"
+          },
+          {
+            "target": "ittillee",
+            "source": "Hide",
             "pronunciation": "go-gaa / ittillee",
             "hint": "Tutschek (1845, § 74, p. 20) & Swadesh list"
           },
@@ -1732,15 +1980,19 @@ export const BORANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"qoosee / morma\" in Borana?",
-            "correctAnswer": "Neck / Throat",
+            "prompt": "What is the English meaning of \"qoosee\" in Borana?",
+            "correctAnswer": "Neck",
             "options": [
               "Back",
               "Breast",
-              "Heart",
-              "Neck / Throat"
+              "Neck",
+              "Heart"
             ],
-            "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
+            "hint": "Wiktionary Afroasiatic Swadesh list — Oromo",
+            "acceptedAnswers": [
+              "Neck / Throat",
+              "Neck"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1748,9 +2000,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Back",
             "options": [
               "Breast",
-              "Heart",
               "Back",
-              "Neck / Throat"
+              "Heart",
+              "Neck"
             ],
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
@@ -1760,9 +2012,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Breast",
             "options": [
               "Heart",
-              "Breast",
-              "Neck / Throat",
-              "Back"
+              "Neck",
+              "Back",
+              "Breast"
             ],
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
@@ -1771,24 +2023,28 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Breast\" in Borana?",
             "correctAnswer": "harma",
             "options": [
-              "harma",
-              "qoosee / morma",
+              "qoosee",
               "dugda",
-              "onnee / garaa"
+              "onnee",
+              "harma"
             ],
-            "hint": "har-ma"
+            "hint": "Starts with \"ha…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Heart\" in Borana?",
-            "correctAnswer": "onnee / garaa",
+            "correctAnswer": "onnee",
             "options": [
-              "qoosee / morma",
+              "qoosee",
               "dugda",
-              "harma",
-              "onnee / garaa"
+              "onnee",
+              "harma"
             ],
-            "hint": "on-nee"
+            "hint": "Starts with \"on…\" (5 letters)",
+            "acceptedAnswers": [
+              "onnee / garaa",
+              "onnee"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1818,10 +2074,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Borana term for \"Liver\": ___",
             "correctAnswer": "tiruu",
             "options": [
-              "qoosee / morma",
+              "qoosee",
               "dugda",
-              "harma",
-              "tiruu"
+              "tiruu",
+              "harma"
             ],
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           }
@@ -1846,14 +2102,20 @@ export const BORANA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
-            "target": "baruu / bara (learn; III barziza = teach)",
-            "source": "Learn / Teach",
+            "target": "baruu",
+            "source": "Learn",
+            "pronunciation": "ba-ruu / ba-ra",
+            "hint": "Tutschek (1845, § 76, p. 20 & Prayer 1 v. 7, p. 85)"
+          },
+          {
+            "target": "bara (learn; III barziza = teach)",
+            "source": "Teach",
             "pronunciation": "ba-ruu / ba-ra",
             "hint": "Tutschek (1845, § 76, p. 20 & Prayer 1 v. 7, p. 85)"
           },
           {
             "target": "bieksíse",
-            "source": "Known, to make-",
+            "source": "To make known",
             "pronunciation": "bieksi-se",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
@@ -1864,14 +2126,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [v.]"
           },
           {
-            "target": "I should —, enantshalate",
+            "target": "enantshalate",
             "source": "Like",
             "pronunciation": "i should — e-nantsha-la-te",
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [v.]"
           },
           {
             "target": "dekame",
-            "source": "Upbraid, find fault with",
+            "source": "Upbraid, find fault",
             "pronunciation": "de-ka-me",
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [v.]"
           },
@@ -1900,25 +2162,29 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "baruu — bieksíse",
-            "source": "Learn — Known, to make-"
+            "source": "Learn — Known, to make."
           },
           {
             "target": "dese, harka baie — I should —, enantshalate",
-            "source": "Escape — Like"
+            "source": "Escape — Like."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"baruu\" mean in English?",
-            "correctAnswer": "Learn / Teach",
+            "correctAnswer": "Learn",
             "options": [
-              "Learn / Teach",
-              "Known, to make-",
+              "Known",
               "Escape",
-              "Like"
+              "Like",
+              "Learn"
             ],
-            "hint": "Core vocabulary in Essential Action & Motion Verbs"
+            "hint": "Core vocabulary in Essential Action & Motion Verbs",
+            "acceptedAnswers": [
+              "Learn / Teach",
+              "Learn"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2034,25 +2300,29 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "agama — ageza",
-            "source": "to stoop, bow to the side — to scoff, deride, mock"
+            "source": "to stoop, bow to the side — to scoff, deride, mock."
           },
           {
             "target": "adjeza — adyera",
-            "source": "to kill — to make a roof upon a house"
+            "source": "to kill — to make a roof upon a house."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"agama\" mean in English?",
-            "correctAnswer": "to stoop, bow to the side",
+            "correctAnswer": "to stoop",
             "options": [
-              "to stoop, bow to the side",
-              "to scoff, deride, mock",
+              "to scoff",
               "to kill",
-              "to make a roof upon a house"
+              "to stoop",
+              "to groan"
             ],
-            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs",
+            "acceptedAnswers": [
+              "to stoop, bow to the side",
+              "to stoop"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2146,8 +2416,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla adv.)"
           },
           {
-            "target": "barii / ganama",
-            "source": "Morning / Dawn",
+            "target": "barii",
+            "source": "Morning",
+            "pronunciation": "ba-rii / ga-na-ma",
+            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
+          },
+          {
+            "target": "ganama",
+            "source": "Dawn",
             "pronunciation": "ba-rii / ga-na-ma",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
@@ -2176,11 +2452,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "dirama — gúiya",
-            "source": "Dawn — Day"
+            "source": "Dawn — Day."
           },
           {
             "target": "arda — dirāma",
-            "source": "to-day — Early"
+            "source": "to-day — Early."
           }
         ],
         "authoredExercises": [
@@ -2189,10 +2465,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"dirama\" mean in English?",
             "correctAnswer": "Dawn",
             "options": [
-              "Dawn",
               "Day",
               "to-day",
-              "Early"
+              "Early",
+              "Dawn"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2308,11 +2584,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "bóru ága — guiya rawanuáti",
-            "source": "Dawn — Last day"
+            "source": "Dawn — Last day."
           },
           {
             "target": "waggasía hadabre — hálkani tjiddua",
-            "source": "Late — Midnight"
+            "source": "Late — Midnight."
           }
         ],
         "authoredExercises": [
@@ -2321,8 +2597,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"bóru ága\" mean in English?",
             "correctAnswer": "Dawn",
             "options": [
-              "Dawn",
               "Last day",
+              "Dawn",
               "Late",
               "Midnight"
             ],
@@ -2402,9 +2678,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. n.)"
           },
           {
-            "target": "gubba or irra",
+            "target": "gubba / irra",
             "source": "Above",
-            "pronunciation": "gubba or irra",
+            "pronunciation": "gubba",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla prep.)"
           },
           {
@@ -2450,11 +2726,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tāe — gubba or irra",
-            "source": "Abide — Above"
+            "source": "Abide — Above."
           },
           {
             "target": "fúde — ráwăte",
-            "source": "Accept — Accomplish"
+            "source": "Accept — Accomplish."
           }
         ],
         "authoredExercises": [
@@ -2463,8 +2739,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"tāe\" mean in English?",
             "correctAnswer": "Abide",
             "options": [
-              "Abide",
               "Above",
+              "Abide",
               "Accept",
               "Accomplish"
             ],
@@ -2528,9 +2804,9 @@ export const BORANA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
-            "target": "oddu or gurri oddese",
+            "target": "oddu / gurri oddese",
             "source": "Acquaint",
-            "pronunciation": "oddu or gurri odde-se",
+            "pronunciation": "oddu",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)"
           },
           {
@@ -2583,11 +2859,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "oddu or gurri oddese — hútji",
-            "source": "Acquaint — Act, action"
+            "source": "Acquaint — Act, action."
           },
           {
             "target": "hútji mideise — mbókoksa",
-            "source": "Act — Acute"
+            "source": "Act — Acute."
           }
         ],
         "authoredExercises": [
@@ -2596,10 +2872,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"oddu or gurri oddese\" mean in English?",
             "correctAnswer": "Acquaint",
             "options": [
-              "Acquaint",
-              "Act, action",
               "Act",
-              "Acute"
+              "Acquaint",
+              "Acute",
+              "Add"
             ],
             "hint": "Core vocabulary in Hospitality, Requests & Social Discourse"
           },
@@ -2677,8 +2953,26 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)"
           },
           {
-            "target": "damma (dagma) / daadhii / farsoo / buna qalaa",
-            "source": "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
+            "target": "damma (dagma)",
+            "source": "Honey",
+            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "hint": "Tutschek (1844–1845) & Krapf (1842)"
+          },
+          {
+            "target": "daadhii",
+            "source": "Hydromel (Honey-wine)",
+            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "hint": "Tutschek (1844–1845) & Krapf (1842)"
+          },
+          {
+            "target": "farsoo",
+            "source": "Barley beer",
+            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "hint": "Tutschek (1844–1845) & Krapf (1842)"
+          },
+          {
+            "target": "buna qalaa",
+            "source": "Coffee ceremonies",
             "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
@@ -2689,8 +2983,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
           {
-            "target": "Waaqa / Wacayo (Yaa Waaqa! = O God!)",
-            "source": "Supreme Creator / Sky God",
+            "target": "Waaqa",
+            "source": "Supreme Creator",
+            "pronunciation": "waa-qa / wa-ca-yo",
+            "hint": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana"
+          },
+          {
+            "target": "Wacayo (Yaa Waaqa! = O God!)",
+            "source": "Sky God",
             "pronunciation": "waa-qa / wa-ca-yo",
             "hint": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana"
           },
@@ -2713,8 +3013,14 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf 1842 & Tutschek 1844"
           },
           {
-            "target": "garbuu / midhaan (mid'an)",
-            "source": "Barley / Grain",
+            "target": "garbuu",
+            "source": "Barley",
+            "pronunciation": "garbuu / midhaan",
+            "hint": "Tutschek 1844 & 1845"
+          },
+          {
+            "target": "midhaan (mid'an)",
+            "source": "Grain",
             "pronunciation": "garbuu / midhaan",
             "hint": "Tutschek 1844 & 1845"
           },
@@ -2728,63 +3034,83 @@ export const BORANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Gadaa (Lubba) & Jila (Abbaa Muudaa)\" in Borana?",
-            "correctAnswer": "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim",
+            "prompt": "What is the English meaning of \"Gadaa  & Jila\" in Borana?",
+            "correctAnswer": "Sovereign Assembly",
             "options": [
-              "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
-              "Wild fig tree (Sacred assembly shade tree)",
-              "Supreme Creator / Sky God",
-              "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim"
+              "Honey",
+              "Wild fig tree",
+              "Supreme Creator",
+              "Sovereign Assembly"
             ],
-            "hint": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)"
+            "hint": "Tutschek (1844) 'Dictionary of the Galla Language' & Krapf (1842)",
+            "acceptedAnswers": [
+              "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim",
+              "Sovereign Assembly"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"damma (dagma) / daadhii / farsoo / buna qalaa\" in Borana?",
-            "correctAnswer": "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
+            "prompt": "What is the English meaning of \"damma\" in Borana?",
+            "correctAnswer": "Honey",
             "options": [
-              "Wild fig tree (Sacred assembly shade tree)",
-              "Supreme Creator / Sky God",
-              "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
-              "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim"
+              "Wild fig tree",
+              "Supreme Creator",
+              "Honey",
+              "Sovereign Assembly"
             ],
-            "hint": "Tutschek (1844–1845) & Krapf (1842)"
+            "hint": "Tutschek (1844–1845) & Krapf (1842)",
+            "acceptedAnswers": [
+              "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies",
+              "Honey"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"odaa / qilt'u\" in Borana?",
-            "correctAnswer": "Wild fig tree (Sacred assembly shade tree)",
+            "correctAnswer": "Wild fig tree",
             "options": [
-              "Supreme Creator / Sky God",
+              "Supreme Creator",
+              "Sovereign Assembly",
+              "Wild fig tree",
+              "Honey"
+            ],
+            "hint": "Tutschek (1844–1845) & Krapf (1842)",
+            "acceptedAnswers": [
               "Wild fig tree (Sacred assembly shade tree)",
-              "Sovereign Assembly / Age-Grade Democratic System & Ritual Pilgrim",
-              "Honey / Hydromel (Honey-wine) / Barley beer / Coffee ceremonies"
-            ],
-            "hint": "Tutschek (1844–1845) & Krapf (1842)"
+              "Wild fig tree"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Wild fig tree (Sacred assembly shade tree)\" in Borana?",
-            "correctAnswer": "odaa / qilt'u",
+            "prompt": "How do you say \"Wild fig tree\" in Borana?",
+            "correctAnswer": "odaa",
             "options": [
-              "odaa / qilt'u",
-              "Gadaa (Lubba) & Jila (Abbaa Muudaa)",
-              "damma (dagma) / daadhii / farsoo / buna qalaa",
-              "Waaqa / Wacayo (Yaa Waaqa! = O God!)"
+              "Gadaa  & Jila",
+              "odaa",
+              "damma",
+              "Waaqa"
             ],
-            "hint": "o-daa / qil-tu"
+            "hint": "Starts with \"od…\" (4 letters)",
+            "acceptedAnswers": [
+              "odaa / qilt'u",
+              "odaa"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Supreme Creator / Sky God\" in Borana?",
-            "correctAnswer": "Waaqa / Wacayo (Yaa Waaqa! = O God!)",
+            "prompt": "How do you say \"Supreme Creator\" in Borana?",
+            "correctAnswer": "Waaqa",
             "options": [
-              "Gadaa (Lubba) & Jila (Abbaa Muudaa)",
-              "damma (dagma) / daadhii / farsoo / buna qalaa",
-              "odaa / qilt'u",
-              "Waaqa / Wacayo (Yaa Waaqa! = O God!)"
+              "Waaqa",
+              "Gadaa  & Jila",
+              "damma",
+              "odaa"
             ],
-            "hint": "wah-qah / wa-ca-yo"
+            "hint": "wah-qah / wa-ca-yo",
+            "acceptedAnswers": [
+              "Waaqa / Wacayo (Yaa Waaqa! = O God!)",
+              "Waaqa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2812,14 +3138,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Borana term for \"Peace of the Borana\": ___",
-            "correctAnswer": "Nagaa (Nagaa Borana)",
+            "correctAnswer": "Nagaa",
             "options": [
-              "Gadaa (Lubba) & Jila (Abbaa Muudaa)",
-              "damma (dagma) / daadhii / farsoo / buna qalaa",
-              "odaa / qilt'u",
-              "Nagaa (Nagaa Borana)"
+              "Nagaa",
+              "Gadaa  & Jila",
+              "damma",
+              "odaa"
             ],
-            "hint": "Tutschek 1844–1845"
+            "hint": "Tutschek 1844–1845",
+            "acceptedAnswers": [
+              "Nagaa (Nagaa Borana)",
+              "Nagaa"
+            ]
           }
         ]
       },
@@ -2875,13 +3205,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ságale waniádu",
-            "source": "Fast, vn",
+            "source": "Fast",
             "pronunciation": "sa-ga-le wa-nia-du",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
           {
             "target": "fúrdate",
-            "source": "Fast, adj. to be-",
+            "source": "To be fast",
             "pronunciation": "furda-te",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           }
@@ -2906,8 +3236,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "options": [
               "Bury",
               "Custom",
-              "Bewitch",
-              "Accustom"
+              "Accustom",
+              "Bewitch"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. a.)"
           },
@@ -2928,24 +3258,28 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Bury\" in Borana?",
             "correctAnswer": "awále",
             "options": [
-              "awále",
               "bersíse ada",
+              "awále",
               "dére",
-              "ada; duri duri"
+              "ada"
             ],
-            "hint": "awále"
+            "hint": "Starts with \"aw…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Custom\" in Borana?",
-            "correctAnswer": "ada; duri duri",
+            "correctAnswer": "ada",
             "options": [
               "bersíse ada",
+              "ada",
               "dére",
-              "awále",
-              "ada; duri duri"
+              "awále"
             ],
-            "hint": "ada; duri duri"
+            "hint": "Starts with \"ad…\" (3 letters)",
+            "acceptedAnswers": [
+              "ada; duri duri",
+              "ada"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2977,8 +3311,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "options": [
               "bersíse ada",
               "dére",
-              "awále",
-              "sírbe"
+              "sírbe",
+              "awále"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla v. n.)"
           }
@@ -3032,7 +3366,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           },
           {
-            "target": "d'und'uma",
+            "target": "duma",
             "source": "Yard",
             "pronunciation": "d'und'u-ma",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
@@ -3056,8 +3390,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"dúlatja\" in Borana (Afaan Borana)?",
             "correctAnswer": "Old",
             "options": [
-              "Old",
               "New",
+              "Old",
               "Ancient",
               "Youth"
             ],
@@ -3091,10 +3425,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Borana (Afaan Borana) term for \"Yelk\": ___",
             "correctAnswer": "ot'a",
             "options": [
-              "ot'a",
               "dúlatja",
-              "harreisa; harréti",
-              "duri duri"
+              "harreisa",
+              "duri duri",
+              "ot'a"
             ],
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           }
@@ -3160,14 +3494,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"gingo\" in Borana (Afaan Borana)?",
-            "correctAnswer": "Wreath / Garland",
+            "correctAnswer": "Wreath",
             "options": [
-              "Wreath / Garland",
               "Witty",
               "Wit",
+              "Wreath",
               "Wish"
             ],
-            "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I"
+            "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+            "acceptedAnswers": [
+              "Wreath / Garland",
+              "Wreath"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3278,10 +3616,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kan\" in Borana (Afaan Borana)?",
             "correctAnswer": "Why",
             "options": [
-              "Why",
               "Wholesomeness",
+              "Why",
               "Who?",
-              "Whither? (Where to?)"
+              "Whither?"
             ],
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adv.]"
           },
@@ -3313,10 +3651,10 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Borana (Afaan Borana) term for \"Whisk\": ___",
             "correctAnswer": "coroganda",
             "options": [
-              "coroganda",
               "kan",
+              "coroganda",
               "faya",
-              "eñu (rel. kan)"
+              "eñu"
             ],
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           }
@@ -3382,14 +3720,18 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ezayi\" in Borana (Afaan Borana)?",
-            "correctAnswer": "Whence? (From where?)",
+            "correctAnswer": "Whence?",
             "options": [
-              "Whence? (From where?)",
               "When",
               "Weeding",
-              "Weapons"
+              "Weapons",
+              "Whence?"
             ],
-            "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I"
+            "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I",
+            "acceptedAnswers": [
+              "Whence? (From where?)",
+              "Whence?"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3502,7 +3844,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "kalatcha"
           },
           {
-            "target": "'t'wu — aki — t'wu — tili!'",
+            "target": "wu — aki — t",
             "source": "Grass-spitting oath",
             "pronunciation": "t'wu-aki-t'wu-tili"
           },
@@ -3520,7 +3862,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a: 'Hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!' djed'eti.",
-            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all the"
+            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all."
           }
         ],
         "authoredExercises": [
@@ -3594,8 +3936,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "bokeni-mit'ilen-adjezu"
           },
           {
-            "target": "Zila zimalan yaba, Zimali dameṅ cabu;",
-            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through the",
+            "target": "Zila zimalan yaba, Zimali dameṅ cabu",
+            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through",
             "pronunciation": "zi-la zi-ma-lan ya-ba / co-ta-ni co-ta-ni yaa ba-ba-za-ni",
             "hint": "Tutschek (1844, Part I, pp. 127, 148 — Wetu songs)"
           }
@@ -3603,7 +3945,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hodjadz'u wayo mo tau wai? — Bokeṅi mit'ileṅ adjezu, zi adjeza?",
-            "source": "Is it better to work or to sit idle? — The rain kills not an ant; will it kill thee? (Tutschek 1844, Part I, pp. 146, 170, 201)"
+            "source": "Is it better to work or to sit idle? — The rain kills not an ant; will it kill thee?"
           }
         ],
         "authoredExercises": [
@@ -3730,8 +4072,13 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "waka"
           },
           {
-            "target": "mukabe / mukaba",
-            "source": "To pray / prayer (to God)",
+            "target": "mukabe",
+            "source": "To pray",
+            "pronunciation": "mukabe"
+          },
+          {
+            "target": "mukaba",
+            "source": "prayer (to God)",
             "pronunciation": "mukabe"
           },
           {
@@ -3763,7 +4110,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Wak' nagaia si kakennu! Naga ambulte! Mali odu harraia duffe?",
-            "source": "May God give thee peace! Good morning! What is the news? (Krapf & Isenberg 1842, pp. 13, 24, 25)."
+            "source": "May God give thee peace! Good morning! What is the news? ."
           }
         ]
       }
@@ -3785,7 +4132,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "tips": "In Chapter IX.C.II (pp. 122–125), Cust records that while in war the Galla call themselves 'Sons of Galla' (per D'Abbadie), their national autonym is Orma or Oromo ('men', p. 12 & p. 122), stretching from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása.",
         "words": [
           {
-            "target": "Orma / Oromo ('men', pp. 12, 122) vs. 'Sons of Galla'",
+            "target": "Orma / Oromo vs.",
             "source": "Indigenous Oromo self-designation vs. wartime title in Cust",
             "pronunciation": "or-ma / o-ro-mo",
             "hint": "Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II p. 122)"
@@ -3803,13 +4150,24 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
           },
           {
-            "target": "Oromo / Orma",
-            "source": "The Oromo / Borana people",
+            "target": "Oromo",
+            "source": "The Oromo",
             "pronunciation": "o-ro-mo"
           },
           {
-            "target": "dubbii / afaan",
-            "source": "Speech / language / matter",
+            "target": "Orma",
+            "source": "Borana people",
+            "pronunciation": "o-ro-mo"
+          },
+          {
+            "target": "dubbii",
+            "source": "Speech",
+            "pronunciation": "dub-bii",
+            "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
+          },
+          {
+            "target": "afaan",
+            "source": "language",
             "pronunciation": "dub-bii",
             "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
           },
@@ -3822,7 +4180,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Orma (Oromo = 'men') stretches from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása across 5 chief dialects.",
-            "source": "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–125) on the geographic extent and 5 dialects of Galla or Orómo."
+            "source": "Cust  on the geographic extent and 5 dialects of Galla or Orómo."
           }
         ]
       }
@@ -3844,8 +4202,14 @@ export const BORANA_UNITS: CourseUnit[] = [
         "tips": "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
         "words": [
           {
-            "target": "biyya / lafa",
-            "source": "Country / homeland / earth",
+            "target": "biyya",
+            "source": "Country",
+            "pronunciation": "biy-ya",
+            "hint": "Isenberg in Krapf (1840, pp. iv–v)"
+          },
+          {
+            "target": "lafa",
+            "source": "homeland",
             "pronunciation": "biy-ya",
             "hint": "Isenberg in Krapf (1840, pp. iv–v)"
           },
@@ -3866,11 +4230,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "wāk"
           },
           {
-            "target": "Goat-intestine fat war haruspicy",
-            "source": "red blood-distended veins = victory",
-            "pronunciation": "goat-intestine-fat-war-haruspicy"
-          },
-          {
             "target": "Pit-and-Lance Oath covered with an animal's hide",
             "source": "Oaths, homicide law-suits, peace ratification, burial customs, and afterlife beliefs",
             "pronunciation": "wak / ka-lit-shas / wo-da-na-be",
@@ -3884,12 +4243,8 @@ export const BORANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Anko-ber, or bar, signifies the Gate of the Anko, having been the residence of their queen.",
-            "source": "Isenberg's footnote on the etymology of Ankober from the Galla Anko tribe and its queen (1840, p. vi fn. *)."
-          },
-          {
             "target": "Berkiè, Mr. Krapf's Galla servant, could converse with Dankali people, both parties speaking their own language and yet understanding",
-            "source": "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl (1840, p. xiii)."
+            "source": "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl ."
           }
         ]
       },
@@ -3921,7 +4276,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "isan"
           },
           {
-            "target": "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita,",
+            "target": "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita",
             "source": "Inseparable pronouns affixed to Mana ('house') and joined to verbs ('beat' & 'give')",
             "pronunciation": "manakiya",
             "hint": "Krapf (1840, Sect. IV.VI, pp. 3–4)"
@@ -3949,7 +4304,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1840, Sect. VIII, pp. 8–9)"
           },
           {
-            "target": "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba,",
+            "target": "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba",
             "source": "Complete Cardinal (1–2,000) and Ordinal (-fa, 1st–1,000th) numeral tables in Krapf",
             "pronunciation": "cardinals-tok",
             "hint": "Krapf (1840, Sect. IX, p. 11)"
@@ -3966,7 +4321,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Naga ambulte",
-            "source": "All 31 Galla conversational expressions, salutations, and sentences in Krapf (1840,",
+            "source": "All 31 Galla conversational expressions, salutations, and sentences in Krapf",
             "pronunciation": "naga-ambulte",
             "hint": "Krapf (1840, Sect. XI, p. 16)"
           }
@@ -3974,11 +4329,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gofta regariti dau tshalate. — Nama kan manna henkabna. — Workef meti; Dagaf maka; Kan duef kan tshira.",
-            "source": "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead (Krapf 1840, Sect."
+            "source": "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead."
           },
           {
             "target": "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",
-            "source": "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? (Krapf 1840, Sect. XI, p. 16)."
+            "source": "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? ."
           }
         ],
         "authoredExercises": [
@@ -4003,7 +4358,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           }
         ]
       },
-{
+      {
         "id": "borana-peace-wells-environment",
         "title": "Deep Wells (Tulaa), Peacebuilding & Ecology",
         "icon": "Droplets",
@@ -4011,244 +4366,191 @@ export const BORANA_UNITS: CourseUnit[] = [
         "culturalNote": "In Borana custom across Marsabit and Isiolo, the administration of the nine deep singing wells (Tulaa Saglan) and protection of dry-season pastures are governed by consensus and peace (nagaa).",
         "grammarTip": "In Borana/Oromo, verbal nouns (infinitives) end in -uu (e.g., nagaa buusuu 'to establish peace', eeguu 'to protect', jiraachuun 'living').",
         "words": [
-                {
-                        "target": "Nagaa buusuu",
-                        "source": "To establish peace",
-                        "pronunciation": "nah-gaa boo-soo"
-                },
-                {
-                        "target": "Qabeenya uumamaa",
-                        "source": "Natural resources",
-                        "pronunciation": "kah-bee-nyah oo-mah-maa"
-                },
-                {
-                        "target": "Eeguu",
-                        "source": "To protect / conserve",
-                        "pronunciation": "ee-goo"
-                },
-                {
-                        "target": "Eela tulaa",
-                        "source": "Deep traditional singing well",
-                        "pronunciation": "ee-lah too-laa"
-                },
-                {
-                        "target": "Bishaan loonii",
-                        "source": "Water for cattle",
-                        "pronunciation": "bee-shaan loo-nee"
-                },
-                {
-                        "target": "Ollaa",
-                        "source": "Neighbor / Encampment",
-                        "pronunciation": "ohl-laa"
-                },
-                {
-                        "target": "Badhaadhina",
-                        "source": "Prosperity / Well-being",
-                        "pronunciation": "bah-dhaa-dhee-nah"
-                },
-                {
-                        "target": "Aadaa ganamaa",
-                        "source": "Ancestral heritage",
-                        "pronunciation": "aa-daa gah-nah-maa"
-                }
+          {
+            "target": "Nagaa buusuu",
+            "source": "To establish peace",
+            "pronunciation": "nah-gaa boo-soo"
+          },
+          {
+            "target": "Qabeenya uumamaa",
+            "source": "Natural resources",
+            "pronunciation": "kah-bee-nyah oo-mah-maa"
+          },
+          {
+            "target": "Eeguu",
+            "source": "To protect / conserve",
+            "pronunciation": "ee-goo"
+          },
+          {
+            "target": "Eela tulaa",
+            "source": "Deep traditional singing well",
+            "pronunciation": "ee-lah too-laa"
+          },
+          {
+            "target": "Bishaan loonii",
+            "source": "Water for cattle",
+            "pronunciation": "bee-shaan loo-nee"
+          },
+          {
+            "target": "Ollaa",
+            "source": "Neighbor / Encampment",
+            "pronunciation": "ohl-laa"
+          },
+          {
+            "target": "Badhaadhina",
+            "source": "Prosperity / Well-being",
+            "pronunciation": "bah-dhaa-dhee-nah"
+          },
+          {
+            "target": "Aadaa ganamaa",
+            "source": "Ancestral heritage",
+            "pronunciation": "aa-daa gah-nah-maa"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Bulchiinsi eela tulaa bona keessa bishaan looniif mirkaneessa.",
-                        "source": "Traditional well management ensures water for cattle in dry seasons."
-                },
-                {
-                        "target": "Ollaa waliin nagaan jiraachuun badhaadhina fida.",
-                        "source": "Living in peace with neighbors brings prosperity."
-                }
+          {
+            "target": "Bulchiinsi eela tulaa bona keessa bishaan looniif mirkaneessa.",
+            "source": "Traditional well management ensures water for cattle in dry seasons."
+          },
+          {
+            "target": "Ollaa waliin nagaan jiraachuun badhaadhina fida.",
+            "source": "Living in peace with neighbors brings prosperity."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "borana-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Borana (Oromo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996).",
         "words": [
-                  {
-                            "target": "hófu",
-                            "source": "Greet",
-                            "pronunciation": "hofu"
-                  },
-                  {
-                            "target": "nágaia",
-                            "source": "Peace",
-                            "pronunciation": "nagaia"
-                  },
-                  {
-                            "target": "gelatéfate",
-                            "source": "Thank",
-                            "pronunciation": "gelatefate"
-                  },
-                  {
-                            "target": "ébise",
-                            "source": "Bless",
-                            "pronunciation": "ebise"
-                  },
-                  {
-                            "target": "hófu dáme",
-                            "source": "Salute",
-                            "pronunciation": "hofu dame"
-                  },
-                  {
-                            "target": "lakíse",
-                            "source": "Pardon",
-                            "pronunciation": "lakise"
-                  },
-                  {
-                            "target": "gamadjíse",
-                            "source": "Please",
-                            "pronunciation": "gamadjise"
-                  },
-                  {
-                            "target": "Baga nagaan dhufte",
-                            "source": "Welcome",
-                            "pronunciation": "ba-ga na-gaan dhuf-te"
-                  },
-                  {
-                            "target": "baza",
-                            "source": "Forgive",
-                            "pronunciation": "ba-za"
-                  },
-                  {
-                            "target": "salāmata",
-                            "source": "Salutation",
-                            "pronunciation": "sa-la-ma-ta"
-                  }
+          {
+            "target": "hófu",
+            "source": "Greet",
+            "pronunciation": "hofu"
+          },
+          {
+            "target": "nágaia",
+            "source": "Peace",
+            "pronunciation": "nagaia"
+          },
+          {
+            "target": "gelatéfate",
+            "source": "Thank",
+            "pronunciation": "gelatefate"
+          },
+          {
+            "target": "ébise",
+            "source": "Bless",
+            "pronunciation": "ebise"
+          },
+          {
+            "target": "hófu dáme",
+            "source": "Salute",
+            "pronunciation": "hofu dame"
+          },
+          {
+            "target": "lakíse",
+            "source": "Pardon",
+            "pronunciation": "lakise"
+          },
+          {
+            "target": "gamadjíse",
+            "source": "Please",
+            "pronunciation": "gamadjise"
+          },
+          {
+            "target": "Baga nagaan dhufte",
+            "source": "Welcome",
+            "pronunciation": "ba-ga na-gaan dhuf-te"
+          },
+          {
+            "target": "baza",
+            "source": "Forgive",
+            "pronunciation": "ba-za"
+          },
+          {
+            "target": "salāmata",
+            "source": "Salutation",
+            "pronunciation": "sa-la-ma-ta"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "feiuma tshedde",
-                            "source": "Greet"
-                  },
-                  {
-                            "target": "hófu dáme",
-                            "source": "Salute"
-                  },
-                  {
-                            "target": "hahafu tshedde, ararame",
-                            "source": "Pardon"
-                  },
-                  {
-                            "target": "gamade, gamatshise, gamitshe",
-                            "source": "Please"
-                  },
-                  {
-                            "target": "Baga nagaan dhufte",
-                            "source": "Welcome"
-                  },
-                  {
-                            "target": "Nagaa Booranaa!",
-                            "source": "Peace of the Borana! (formal assembly greeting)"
-                  },
-                  {
-                            "target": "Nagaiti buli!",
-                            "source": "Good night / Sleep in peace"
-                  },
-                  {
-                            "target": "Nagaa qabdaa?",
-                            "source": "How are you? (Do you have peace?)"
-                  }
+          {
+            "target": "Nagaa Booranaa!",
+            "source": "Peace of the Borana! (formal assembly greeting)."
+          },
+          {
+            "target": "Nagaiti buli!",
+            "source": "Good night / Sleep in peace."
+          },
+          {
+            "target": "Nagaa qabdaa?",
+            "source": "How are you? (Do you have peace?)."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "borana-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Borana (Oromo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996)",
+        "culturalNote": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996).",
         "words": [
-                  {
-                            "target": "tokko",
-                            "source": "One",
-                            "pronunciation": "tok-ko"
-                  },
-                  {
-                            "target": "lama",
-                            "source": "Two",
-                            "pronunciation": "la-ma"
-                  },
-                  {
-                            "target": "jaha",
-                            "source": "Six",
-                            "pronunciation": "ja-ha / dya"
-                  },
-                  {
-                            "target": "kudan",
-                            "source": "Ten",
-                            "pronunciation": "ku-dan"
-                  },
-                  {
-                            "target": "afur",
-                            "source": "Four",
-                            "pronunciation": "a-fur"
-                  },
-                  {
-                            "target": "shan",
-                            "source": "Five",
-                            "pronunciation": "shan"
-                  },
-                  {
-                            "target": "sagal",
-                            "source": "Nine",
-                            "pronunciation": "sa-gal"
-                  },
-                  {
-                            "target": "takáti",
-                            "source": "Once",
-                            "pronunciation": "takati"
-                  },
-                  {
-                            "target": "tchabnana",
-                            "source": "Half",
-                            "pronunciation": "tchabna-na"
-                  },
-                  {
-                            "target": "lamma",
-                            "source": "Both",
-                            "pronunciation": "lam-ma"
-                  }
+          {
+            "target": "tokko",
+            "source": "One",
+            "pronunciation": "tok-ko"
+          },
+          {
+            "target": "lama",
+            "source": "Two",
+            "pronunciation": "la-ma"
+          },
+          {
+            "target": "jaha",
+            "source": "Six",
+            "pronunciation": "ja-ha / dya"
+          },
+          {
+            "target": "kudan",
+            "source": "Ten",
+            "pronunciation": "ku-dan"
+          },
+          {
+            "target": "afur",
+            "source": "Four",
+            "pronunciation": "a-fur"
+          },
+          {
+            "target": "shan",
+            "source": "Five",
+            "pronunciation": "shan"
+          },
+          {
+            "target": "sagal",
+            "source": "Nine",
+            "pronunciation": "sa-gal"
+          },
+          {
+            "target": "takáti",
+            "source": "Once",
+            "pronunciation": "takati"
+          },
+          {
+            "target": "tchabnana",
+            "source": "Half",
+            "pronunciation": "tchabna-na"
+          },
+          {
+            "target": "lamma",
+            "source": "Both",
+            "pronunciation": "lam-ma"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "gafa toko",
-                            "source": "Once"
-                  },
-                  {
-                            "target": "tchabnana, tchamnana, tchaba",
-                            "source": "Half"
-                  },
-                  {
-                            "target": "toko, kan dura",
-                            "source": "First"
-                  },
-                  {
-                            "target": "sādi. Three times, gaff' sādi",
-                            "source": "Three"
-                  },
-                  {
-                            "target": "gafa lama",
-                            "source": "Twice"
-                  },
-                  {
-                            "target": "detja lama",
-                            "source": "Double"
-                  },
-                  {
-                            "target": "kuda lamma",
-                            "source": "Twelve"
-                  },
-                  {
-                            "target": "gafa zadi",
-                            "source": "Thrice"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

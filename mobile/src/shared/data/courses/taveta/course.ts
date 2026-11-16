@@ -38,32 +38,68 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "culturalNote": "A. C. Hollis (1910) documented 79 Kitaveta proverbs and sayings reflecting the forest-irrigation agriculture of the Lumi River and the Njama council of elders.",
         "words": [
           {
-            "target": "Mwakucha! / Uko mwidzi?",
-            "source": "Good morning! / Are you well?",
+            "target": "Mwakucha!",
+            "source": "Good morning!",
             "pronunciation": "mwa-kucha / uko mwidzi",
             "hint": "Kitaveta salutation"
           },
           {
-            "target": "mndu (pl. wandu) / mche (pl. wache)",
-            "source": "Person (pl. People) / Woman (pl. Women)",
+            "target": "Uko mwidzi?",
+            "source": "Are you well?",
+            "pronunciation": "mwa-kucha / uko mwidzi",
+            "hint": "Kitaveta salutation"
+          },
+          {
+            "target": "mndu (pl. wandu)",
+            "source": "Person (pl. People)",
             "pronunciation": "mndu / mche",
             "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)"
           },
           {
-            "target": "mazi / moto / mbeho",
-            "source": "Water / Fire / Cold",
+            "target": "mche (pl. wache)",
+            "source": "Woman (pl. Women)",
+            "pronunciation": "mndu / mche",
+            "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)"
+          },
+          {
+            "target": "mazi",
+            "source": "Water",
             "pronunciation": "ma-zi / mo-to / mbe-ho",
             "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
           },
           {
-            "target": "ideghe (pl. madeghe) / kucha",
-            "source": "Bird (pl. Birds) / Dawn, daybreak",
+            "target": "moto",
+            "source": "Fire",
+            "pronunciation": "ma-zi / mo-to / mbe-ho",
+            "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
+          },
+          {
+            "target": "mbeho",
+            "source": "Cold",
+            "pronunciation": "ma-zi / mo-to / mbe-ho",
+            "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
+          },
+          {
+            "target": "ideghe (pl. madeghe)",
+            "source": "Bird (pl. Birds)",
             "pronunciation": "i-deghe / kucha",
             "hint": "Hollis (1910 Proverb #10)"
           },
           {
-            "target": "rutoke (pl. matoke) / nyumba",
-            "source": "Banana / House",
+            "target": "kucha",
+            "source": "Dawn, daybreak",
+            "pronunciation": "i-deghe / kucha",
+            "hint": "Hollis (1910 Proverb #10)"
+          },
+          {
+            "target": "rutoke (pl. matoke)",
+            "source": "Banana",
+            "pronunciation": "ru-to-ke / nyumba",
+            "hint": "Hollis (1911 Taveta Enigmas)"
+          },
+          {
+            "target": "nyumba",
+            "source": "House",
             "pronunciation": "ru-to-ke / nyumba",
             "hint": "Hollis (1911 Taveta Enigmas)"
           },
@@ -89,73 +125,93 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Esikie mbeho niye esongeria moto.",
-            "source": "It is the one who feels the cold who draws near to the fire (Hollis 1910 #4)."
+            "source": "It is the one who feels the cold who draws near to the fire ."
           },
           {
             "target": "Ideghe imwe likaremwa kuiya teheshigha kucha.",
-            "source": "If one bird fails to sing, it does not stop the dawn from breaking (Hollis 1910 #10)."
+            "source": "If one bird fails to sing, it does not stop the dawn from breaking ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mwakucha! / Uko mwidzi?\" in Taveta?",
-            "correctAnswer": "Good morning! / Are you well?",
+            "prompt": "What is the English meaning of \"Mwakucha!\" in Taveta?",
+            "correctAnswer": "Good morning!",
             "options": [
-              "Person (pl. People) / Woman (pl. Women)",
-              "Water / Fire / Cold",
-              "Bird (pl. Birds) / Dawn, daybreak",
-              "Good morning! / Are you well?"
+              "Person",
+              "Water",
+              "Good morning!",
+              "Bird"
             ],
-            "hint": "Kitaveta salutation"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mndu (pl. wandu) / mche (pl. wache)\" in Taveta?",
-            "correctAnswer": "Person (pl. People) / Woman (pl. Women)",
-            "options": [
-              "Water / Fire / Cold",
-              "Bird (pl. Birds) / Dawn, daybreak",
-              "Person (pl. People) / Woman (pl. Women)",
-              "Good morning! / Are you well?"
-            ],
-            "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mazi / moto / mbeho\" in Taveta?",
-            "correctAnswer": "Water / Fire / Cold",
-            "options": [
-              "Bird (pl. Birds) / Dawn, daybreak",
-              "Water / Fire / Cold",
+            "hint": "Kitaveta salutation",
+            "acceptedAnswers": [
               "Good morning! / Are you well?",
-              "Person (pl. People) / Woman (pl. Women)"
-            ],
-            "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
+              "Good morning!"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Water / Fire / Cold\" in Taveta?",
-            "correctAnswer": "mazi / moto / mbeho",
+            "prompt": "What is the English meaning of \"mndu\" in Taveta?",
+            "correctAnswer": "Person",
             "options": [
-              "mazi / moto / mbeho",
-              "Mwakucha! / Uko mwidzi?",
-              "mndu (pl. wandu) / mche (pl. wache)",
-              "ideghe (pl. madeghe) / kucha"
+              "Water",
+              "Bird",
+              "Person",
+              "Good morning!"
             ],
-            "hint": "mah-zee / moh-toh / m-beh-hoh"
+            "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)",
+            "acceptedAnswers": [
+              "Person (pl. People) / Woman (pl. Women)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Bird (pl. Birds) / Dawn, daybreak\" in Taveta?",
-            "correctAnswer": "ideghe (pl. madeghe) / kucha",
+            "prompt": "What is the English meaning of \"mazi\" in Taveta?",
+            "correctAnswer": "Water",
             "options": [
-              "Mwakucha! / Uko mwidzi?",
-              "mndu (pl. wandu) / mche (pl. wache)",
-              "mazi / moto / mbeho",
-              "ideghe (pl. madeghe) / kucha"
+              "Bird",
+              "Water",
+              "Good morning!",
+              "Person"
             ],
-            "hint": "ee-deh-gheh / koo-chah"
+            "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)",
+            "acceptedAnswers": [
+              "Water / Fire / Cold",
+              "Water"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Water\" in Taveta?",
+            "correctAnswer": "mazi",
+            "options": [
+              "Mwakucha!",
+              "mazi",
+              "mndu",
+              "ideghe"
+            ],
+            "hint": "mah-zee / moh-toh / m-beh-hoh",
+            "acceptedAnswers": [
+              "mazi / moto / mbeho",
+              "mazi"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Bird\" in Taveta?",
+            "correctAnswer": "ideghe",
+            "options": [
+              "Mwakucha!",
+              "mndu",
+              "ideghe",
+              "mazi"
+            ],
+            "hint": "ee-deh-gheh / koo-chah",
+            "acceptedAnswers": [
+              "ideghe (pl. madeghe) / kucha",
+              "ideghe"
+            ]
           },
           {
             "type": "match_pairs",
@@ -182,15 +238,19 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Taveta term for \"Banana / House\": ___",
-            "correctAnswer": "rutoke (pl. matoke) / nyumba",
+            "prompt": "Complete the Taveta term for \"Banana\": ___",
+            "correctAnswer": "rutoke",
             "options": [
-              "Mwakucha! / Uko mwidzi?",
-              "mndu (pl. wandu) / mche (pl. wache)",
-              "mazi / moto / mbeho",
-              "rutoke (pl. matoke) / nyumba"
+              "rutoke",
+              "Mwakucha!",
+              "mndu",
+              "mazi"
             ],
-            "hint": "Hollis (1911 Taveta Enigmas)"
+            "hint": "Hollis (1911 Taveta Enigmas)",
+            "acceptedAnswers": [
+              "rutoke (pl. matoke) / nyumba",
+              "rutoke"
+            ]
           }
         ]
       }
@@ -199,7 +259,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-2",
     "unitNumber": 2,
-    "title": "Family, Kinship, Clans & Social Organization &",
+    "title": "Family, Kinship, Clans & Social Organization",
     "description": "Master family, kinship, clans & social organization in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
     "icon": "Users",
     "color": "#15803D",
@@ -231,8 +291,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis (1910) & Johnston (1919) — Kitaveta"
           },
           {
-            "target": "momi (pl. waomi) / mche (pl. wache)",
-            "source": "Man / Husband & Woman / Wife",
+            "target": "momi (pl. waomi)",
+            "source": "Man",
             "pronunciation": "mo-mi / mche",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 100–106) — #15 Taveta"
           },
@@ -261,7 +321,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis (1910) & Johnston (1919) — Kitaveta"
           },
           {
-            "target": "M-ndele; va-. M-fora; va-",
+            "target": "M-ndele; va-. M-fora; va",
             "source": "Girl",
             "pronunciation": "m-ndele va- m-fora va"
           }
@@ -269,11 +329,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mndu mume — mche",
-            "source": "Man — Woman"
+            "source": "Man — Woman."
           },
           {
             "target": "mundu — momi",
-            "source": "Person — Man"
+            "source": "Person — Man."
           }
         ],
         "authoredExercises": [
@@ -282,10 +342,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What does \"mndu mume\" mean in English?",
             "correctAnswer": "Man",
             "options": [
-              "Man",
               "Woman",
-              "Person / People",
-              "Man / Husband & Woman / Wife"
+              "Man",
+              "Person",
+              "Father"
             ],
             "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
           },
@@ -353,13 +413,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "M-ringga; va-",
+            "target": "M-ringga; va",
             "source": "Brother",
             "pronunciation": "m-ringga",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Mnggwa; va-",
+            "target": "Mnggwa; va",
             "source": "Chief",
             "pronunciation": "mnggwa",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -377,7 +437,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-sōro; va-",
+            "target": "M-sōro; va",
             "source": "Son, boy",
             "pronunciation": "m-soro",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -403,11 +463,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "zina — M-ringga",
-            "source": "Name — Brother"
+            "source": "Name — Brother."
           },
           {
             "target": "Mnggwa — M-omi",
-            "source": "Chief — Husband"
+            "source": "Chief — Husband."
           }
         ],
         "authoredExercises": [
@@ -416,8 +476,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What does \"zina\" mean in English?",
             "correctAnswer": "Name",
             "options": [
-              "Name",
               "Brother",
+              "Name",
               "Chief",
               "Husband"
             ],
@@ -477,7 +537,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-3",
     "unitNumber": 3,
-    "title": "Numbers, Counting, Currency & Measures &",
+    "title": "Numbers, Counting, Currency & Measures",
     "description": "Master numbers, counting, currency & measures in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
     "icon": "Scale",
     "color": "#15803D",
@@ -548,27 +608,35 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"imwe (kamwe)\" in Taveta?",
-            "correctAnswer": "One / Once",
+            "prompt": "What is the English meaning of \"imwe\" in Taveta?",
+            "correctAnswer": "One",
             "options": [
-              "Two / Second",
+              "Two",
               "Three",
               "Four",
-              "One / Once"
+              "One"
             ],
-            "hint": "A. C. Hollis (1910) & Johnston (1919) — Kitaveta"
+            "hint": "A. C. Hollis (1910) & Johnston (1919) — Kitaveta",
+            "acceptedAnswers": [
+              "One / Once",
+              "One"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"iwi (cha keri)\" in Taveta?",
-            "correctAnswer": "Two / Second",
+            "prompt": "What is the English meaning of \"iwi\" in Taveta?",
+            "correctAnswer": "Two",
             "options": [
               "Three",
               "Four",
-              "Two / Second",
-              "One / Once"
+              "Two",
+              "One"
             ],
-            "hint": "Rev. A. R. Steggall (1897) & Johnston (1919) — Kitaveta"
+            "hint": "Rev. A. R. Steggall (1897) & Johnston (1919) — Kitaveta",
+            "acceptedAnswers": [
+              "Two / Second",
+              "Two"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -576,9 +644,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Three",
             "options": [
               "Four",
+              "One",
               "Three",
-              "One / Once",
-              "Two / Second"
+              "Two"
             ],
             "hint": "Johnston (1919) — Kitaveta numerals"
           },
@@ -587,24 +655,24 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Three\" in Taveta?",
             "correctAnswer": "itatu",
             "options": [
+              "imwe",
+              "iwi",
               "itatu",
-              "imwe (kamwe)",
-              "iwi (cha keri)",
               "ina"
             ],
-            "hint": "i-ta-tu"
+            "hint": "Starts with \"it…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Taveta?",
             "correctAnswer": "ina",
             "options": [
-              "imwe (kamwe)",
-              "iwi (cha keri)",
+              "imwe",
+              "iwi",
               "itatu",
               "ina"
             ],
-            "hint": "i-na"
+            "hint": "Starts with \"in…\" (3 letters)"
           },
           {
             "type": "match_pairs",
@@ -634,10 +702,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taveta term for \"Five\": ___",
             "correctAnswer": "ishano",
             "options": [
-              "imwe (kamwe)",
-              "iwi (cha keri)",
-              "itatu",
-              "ishano"
+              "imwe",
+              "iwi",
+              "ishano",
+              "itatu"
             ],
             "hint": "Johnston (1919) — Kitaveta numerals"
           }
@@ -658,8 +726,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta numerals"
           },
           {
-            "target": "mirongo miwi (20) / igana (100)",
-            "source": "Twenty / One hundred",
+            "target": "mirongo miwi (20)",
+            "source": "Twenty",
+            "pronunciation": "mi-rongo mi-wi / i-ga-na",
+            "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta"
+          },
+          {
+            "target": "igana (100)",
+            "source": "One hundred",
             "pronunciation": "mi-rongo mi-wi / i-ga-na",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta"
           },
@@ -712,34 +786,38 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ikumi\" in Taveta?",
             "correctAnswer": "Ten",
             "options": [
-              "Twenty / One hundred",
+              "Ten",
               "Twenty",
               "One hundred",
-              "Ten"
+              "One"
             ],
             "hint": "Johnston (1919) — Kitaveta numerals"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mirongo miwi (20) / igana (100)\" in Taveta?",
-            "correctAnswer": "Twenty / One hundred",
+            "prompt": "What is the English meaning of \"mirongo miwi\" in Taveta?",
+            "correctAnswer": "Twenty",
             "options": [
-              "Twenty",
               "One hundred",
-              "Twenty / One hundred",
-              "Ten"
+              "Ten",
+              "Twenty",
+              "One"
             ],
-            "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta"
+            "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta",
+            "acceptedAnswers": [
+              "Twenty / One hundred",
+              "Twenty"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mirongo miwiri\" in Taveta?",
             "correctAnswer": "Twenty",
             "options": [
-              "One hundred",
               "Twenty",
+              "One hundred",
               "Ten",
-              "Twenty / One hundred"
+              "One"
             ],
             "hint": "Johnston 1919 #15 Taveita"
           },
@@ -750,8 +828,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "options": [
               "mirongo miwiri",
               "ikumi",
-              "mirongo miwi (20) / igana (100)",
-              "igana"
+              "igana",
+              "-mwe"
             ],
             "hint": "mee-rohn-goh mee-wee-ree"
           },
@@ -760,10 +838,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"One hundred\" in Taveta?",
             "correctAnswer": "igana",
             "options": [
+              "igana",
               "ikumi",
-              "mirongo miwi (20) / igana (100)",
-              "mirongo miwiri",
-              "igana"
+              "mirongo miwi",
+              "-mwe"
             ],
             "hint": "ee-gah-nah"
           },
@@ -796,8 +874,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "-mwe",
             "options": [
               "ikumi",
-              "mirongo miwi (20) / igana (100)",
-              "mirongo miwiri",
+              "mirongo miwi",
+              "igana",
               "-mwe"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -809,7 +887,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-4",
     "unitNumber": 4,
-    "title": "Food, Cuisine, Crops & Livestock Husbandry &",
+    "title": "Food, Cuisine, Crops & Livestock Husbandry",
     "description": "Master food, cuisine, crops & livestock husbandry in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
     "icon": "Tractor",
     "color": "#15803D",
@@ -841,14 +919,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis 1910 Taveta Proverbs & Johnston 1919 #15 Taveita"
           },
           {
-            "target": "Ki-kwa; vi-kwa",
+            "target": "Kikwa",
             "source": "Yam",
-            "pronunciation": "ki-kwa vi-kwa"
+            "pronunciation": "ki-kwa"
           },
           {
-            "target": "I-tagi; ma-",
+            "target": "Itagi",
             "source": "Egg",
-            "pronunciation": "i-tagi ma"
+            "pronunciation": "i-tagi"
           },
           {
             "target": "Ū-ki",
@@ -874,11 +952,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "nyama — maziwa",
-            "source": "Meat — Milk"
+            "source": "Meat — Milk."
           },
           {
-            "target": "chakuria — Ki-kwa",
-            "source": "Food — Yam"
+            "target": "Chakuria na kikwa",
+            "source": "Food — Yam."
           }
         ],
         "authoredExercises": [
@@ -887,9 +965,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What does \"nyama\" mean in English?",
             "correctAnswer": "Meat",
             "options": [
-              "Meat",
               "Milk",
               "Food",
+              "Meat",
               "Yam"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
@@ -912,7 +990,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "Food",
               "Food"
             ],
-            "hint": "Review Staple Foods, Cookery & Beverages"
+            "hint": "Starts with \"Fo…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -932,11 +1010,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Food"
               },
               {
-                "left": "Ki-kwa",
+                "left": "Kikwa",
                 "right": "Yam"
               },
               {
-                "left": "I-tagi",
+                "left": "Itagi",
                 "right": "Egg"
               }
             ]
@@ -994,7 +1072,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-nyū. I-gādi (soda)",
+            "target": "M-nyū",
             "source": "Salt",
             "pronunciation": "m-nyu i-gadi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1008,11 +1086,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "iru — rutoke",
-            "source": "Banana — Banana Grove"
+            "source": "Banana — Banana Grove."
           },
           {
             "target": "uki — Ma-vuta",
-            "source": "Honey — Fat, oil"
+            "source": "Honey — Fat, oil."
           }
         ],
         "authoredExercises": [
@@ -1021,10 +1099,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What does \"iru\" mean in English?",
             "correctAnswer": "Banana",
             "options": [
-              "Banana",
-              "Banana Grove",
               "Honey",
-              "Fat, oil"
+              "Fat",
+              "Banana",
+              "Hunger"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
@@ -1082,7 +1160,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-5",
     "unitNumber": 5,
-    "title": "Nature, Landscape, Flora & East African Wildlife &",
+    "title": "Nature, Landscape, Flora & East African Wildlife",
     "description": "Master nature, landscape, flora & east african wildlife in Taveta (Kitaveta) built directly from Sir Harry Johnston & A. C. Hollis.",
     "icon": "PawPrint",
     "color": "#15803D",
@@ -1153,13 +1231,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mrikazi (kucha = dawn)\" in Taveta?",
+            "prompt": "What is the English meaning of \"mrikazi\" in Taveta?",
             "correctAnswer": "Day",
             "options": [
               "Night",
               "Star",
-              "Fire",
-              "Day"
+              "Day",
+              "Fire"
             ],
             "hint": "Hollis 1910 Proverb #10 & Johnston 1919 #15 Taveita"
           },
@@ -1169,8 +1247,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Night",
             "options": [
               "Star",
-              "Fire",
               "Night",
+              "Fire",
               "Day"
             ],
             "hint": "Johnston 1919 p. 101 #15 Taveita & Hollis 1910"
@@ -1192,8 +1270,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Star\" in Taveta?",
             "correctAnswer": "nyota",
             "options": [
+              "mrikazi",
               "nyota",
-              "mrikazi (kucha = dawn)",
               "kilo",
               "moto"
             ],
@@ -1204,12 +1282,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Fire\" in Taveta?",
             "correctAnswer": "moto",
             "options": [
-              "mrikazi (kucha = dawn)",
+              "moto",
+              "mrikazi",
               "kilo",
-              "nyota",
-              "moto"
+              "nyota"
             ],
-            "hint": "mo-to"
+            "hint": "Starts with \"mo…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -1239,10 +1317,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taveta term for \"Cold / Wind\": ___",
             "correctAnswer": "mbeho",
             "options": [
-              "mrikazi (kucha = dawn)",
+              "mbeho",
+              "mrikazi",
               "kilo",
-              "nyota",
-              "mbeho"
+              "nyota"
             ],
             "hint": "A. C. Hollis (1910) Taveta Proverb #4"
           }
@@ -1275,8 +1353,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis (1910) — Taveta Lumi River forest"
           },
           {
-            "target": "mlima / fumvu",
-            "source": "Mountain / Hill",
+            "target": "mlima",
+            "source": "Mountain",
+            "pronunciation": "mli-ma / fumvu",
+            "hint": "Verified comparative entry across Kenyan bantu corpus"
+          },
+          {
+            "target": "fumvu",
+            "source": "Hill",
             "pronunciation": "mli-ma / fumvu",
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
@@ -1299,7 +1383,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis 1910 & 1911 Taveta"
           },
           {
-            "target": "I-kala; ma-",
+            "target": "I-kala; ma",
             "source": "Charcoal",
             "pronunciation": "i-kala",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1315,14 +1399,18 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kucha\" in Taveta?",
-            "correctAnswer": "Dawn / Morning",
+            "correctAnswer": "Dawn",
             "options": [
               "Rain",
+              "Dawn",
               "Forest",
-              "Mountain / Hill",
-              "Dawn / Morning"
+              "Mountain"
             ],
-            "hint": "A. C. Hollis (1910) Taveta Proverb #10"
+            "hint": "A. C. Hollis (1910) Taveta Proverb #10",
+            "acceptedAnswers": [
+              "Dawn / Morning",
+              "Dawn"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1330,9 +1418,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Rain",
             "options": [
               "Forest",
-              "Mountain / Hill",
               "Rain",
-              "Dawn / Morning"
+              "Mountain",
+              "Dawn"
             ],
             "hint": "Johnston (1919) — Kitaveta"
           },
@@ -1341,36 +1429,40 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"msitu\" in Taveta?",
             "correctAnswer": "Forest",
             "options": [
-              "Mountain / Hill",
-              "Forest",
-              "Dawn / Morning",
-              "Rain"
+              "Mountain",
+              "Dawn",
+              "Rain",
+              "Forest"
             ],
-            "hint": "Hollis (1910) — Taveta Lumi River forest"
+            "hint": "Starts with \"Fo…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Forest\" in Taveta?",
             "correctAnswer": "msitu",
             "options": [
-              "msitu",
               "kucha",
               "mvula",
-              "mlima / fumvu"
+              "mlima",
+              "msitu"
             ],
-            "hint": "msi-tu"
+            "hint": "Starts with \"ms…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Mountain / Hill\" in Taveta?",
-            "correctAnswer": "mlima / fumvu",
+            "prompt": "How do you say \"Mountain\" in Taveta?",
+            "correctAnswer": "mlima",
             "options": [
               "kucha",
+              "mlima",
               "mvula",
-              "msitu",
-              "mlima / fumvu"
+              "msitu"
             ],
-            "hint": "m-lee-mah"
+            "hint": "m-lee-mah",
+            "acceptedAnswers": [
+              "mlima / fumvu",
+              "mlima"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1398,14 +1490,18 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taveta term for \"River\": ___",
-            "correctAnswer": "mto (Lumi)",
+            "correctAnswer": "mto",
             "options": [
+              "mto",
               "kucha",
               "mvula",
-              "msitu",
-              "mto (Lumi)"
+              "msitu"
             ],
-            "hint": "Verified comparative entry across Kenyan bantu corpus"
+            "hint": "Verified comparative entry across Kenyan bantu corpus",
+            "acceptedAnswers": [
+              "mto (Lumi)",
+              "mto"
+            ]
           }
         ]
       }
@@ -1414,7 +1510,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-6",
     "unitNumber": 6,
-    "title": "The Human Body, Health, Medicine & Safety &",
+    "title": "The Human Body, Health, Medicine & Safety",
     "description": "Master the human body, health, medicine & safety in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
     "icon": "User",
     "color": "#15803D",
@@ -1488,10 +1584,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mtwe (pl. mitwe)\" in Taveta?",
             "correctAnswer": "Head",
             "options": [
+              "Head",
               "Eye",
               "Ear",
-              "Nose",
-              "Head"
+              "Nose"
             ],
             "hint": "Johnston (1919) — Kitaveta"
           },
@@ -1500,9 +1596,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"risho (pl. mesho)\" in Taveta?",
             "correctAnswer": "Eye",
             "options": [
+              "Eye",
               "Ear",
               "Nose",
-              "Eye",
               "Head"
             ],
             "hint": "Johnston (1919) — Kitaveta"
@@ -1513,8 +1609,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ear",
             "options": [
               "Nose",
-              "Ear",
               "Head",
+              "Ear",
               "Eye"
             ],
             "hint": "Johnston (1919) — Kitaveta"
@@ -1522,26 +1618,30 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Ear\" in Taveta?",
-            "correctAnswer": "kutu (pl. matu)",
+            "correctAnswer": "kutu",
             "options": [
-              "kutu (pl. matu)",
-              "mtwe (pl. mitwe)",
-              "risho (pl. mesho)",
-              "mbula"
+              "mtwe",
+              "risho",
+              "mbula",
+              "kutu"
             ],
-            "hint": "ku-tu (pl. ma-tu)"
+            "hint": "Starts with \"ku…\" (4 letters)",
+            "acceptedAnswers": [
+              "kutu (pl. matu)",
+              "kutu"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Taveta?",
             "correctAnswer": "mbula",
             "options": [
-              "mtwe (pl. mitwe)",
-              "risho (pl. mesho)",
-              "kutu (pl. matu)",
-              "mbula"
+              "mtwe",
+              "mbula",
+              "risho",
+              "kutu"
             ],
-            "hint": "mbu-la"
+            "hint": "Starts with \"mb…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1571,10 +1671,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taveta term for \"Mouth\": ___",
             "correctAnswer": "mlomo",
             "options": [
-              "mtwe (pl. mitwe)",
-              "risho (pl. mesho)",
-              "kutu (pl. matu)",
-              "mlomo"
+              "mtwe",
+              "risho",
+              "mlomo",
+              "kutu"
             ],
             "hint": "Johnston (1919) — Kitaveta"
           }
@@ -1595,7 +1695,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "Mu-kono; mi-",
+            "target": "Mu-kono; mi",
             "source": "Arm",
             "pronunciation": "mu-kono",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1607,25 +1707,25 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-deu; ma-",
+            "target": "I-deu; ma",
             "source": "Belly",
             "pronunciation": "i-deu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Indi, I-windi; ma-",
+            "target": "Indi, I-windi; ma",
             "source": "Bone",
             "pronunciation": "indi i-windi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-bafu; mi-",
+            "target": "M-bafu; mi",
             "source": "Breast (man's)",
             "pronunciation": "m-bafu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-vele; ma-",
+            "target": "I-vele; ma",
             "source": "Breast (woman's)",
             "pronunciation": "i-vele",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1663,8 +1763,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "options": [
               "Back",
               "Belly",
-              "Arm",
-              "Blood"
+              "Blood",
+              "Arm"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
@@ -1673,8 +1773,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mu-onggo\" in Taveta?",
             "correctAnswer": "Back",
             "options": [
-              "Belly",
               "Back",
+              "Belly",
               "Blood",
               "Arm"
             ],
@@ -1687,22 +1787,26 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "options": [
               "Mu-onggo",
               "sakame",
-              "Mu-kono; mi-",
-              "I-deu; ma-"
+              "Mu-kono",
+              "I-deu"
             ],
-            "hint": "mu-onggo"
+            "hint": "Starts with \"Mu…\" (8 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Belly\" in Taveta?",
-            "correctAnswer": "I-deu; ma-",
+            "correctAnswer": "I-deu",
             "options": [
               "sakame",
-              "Mu-kono; mi-",
-              "Mu-onggo",
-              "I-deu; ma-"
+              "Mu-kono",
+              "I-deu",
+              "Mu-onggo"
             ],
-            "hint": "i-deu; ma-"
+            "hint": "Starts with \"I-…\" (5 letters)",
+            "acceptedAnswers": [
+              "I-deu; ma-",
+              "I-deu"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1730,14 +1834,18 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taveta term for \"Bone\": ___",
-            "correctAnswer": "Indi, I-windi; ma-",
+            "correctAnswer": "Indi",
             "options": [
+              "Indi",
               "sakame",
-              "Mu-kono; mi-",
-              "Mu-onggo",
-              "Indi, I-windi; ma-"
+              "Mu-kono",
+              "Mu-onggo"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
+            "acceptedAnswers": [
+              "Indi, I-windi; ma-",
+              "Indi"
+            ]
           }
         ]
       }
@@ -1746,7 +1854,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-7",
     "unitNumber": 7,
-    "title": "Core Verbs, Tenses, Negation & Verbal Extensions &",
+    "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
     "description": "Master core verbs, tenses, negation & verbal extensions in Taveta (Kitaveta) built directly from Sir Harry Johnston & A. C. Hollis.",
     "icon": "BookOpen",
     "color": "#15803D",
@@ -1802,8 +1910,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "A. C. Hollis (1910) Taveta Proverb #4"
           },
           {
-            "target": "kukoma / kuhoma",
-            "source": "Kill / Strike",
+            "target": "kukoma",
+            "source": "Kill",
+            "pronunciation": "ku-ko-ma / ku-ho-ma",
+            "hint": "A. C. Hollis (1910) Taveta Proverb #6"
+          },
+          {
+            "target": "kuhoma",
+            "source": "Strike",
             "pronunciation": "ku-ko-ma / ku-ho-ma",
             "hint": "A. C. Hollis (1910) Taveta Proverb #6"
           },
@@ -1821,9 +1935,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Speak",
             "options": [
               "Come",
+              "Speak",
               "Go",
-              "Drink",
-              "Speak"
+              "Drink"
             ],
             "hint": "Hollis 1910 & Johnston 1919 #15 Taveita"
           },
@@ -1832,9 +1946,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kudza (-dza)\" in Taveta?",
             "correctAnswer": "Come",
             "options": [
+              "Come",
               "Go",
               "Drink",
-              "Come",
               "Speak"
             ],
             "hint": "Hollis 1910 & Johnston 1919 #15 Taveita"
@@ -1845,8 +1959,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "Go",
             "options": [
               "Drink",
-              "Go",
               "Speak",
+              "Go",
               "Come"
             ],
             "hint": "Hollis 1910 & Johnston 1919 #15 Taveita"
@@ -1854,26 +1968,34 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Go\" in Taveta?",
-            "correctAnswer": "kugenda (-genda)",
+            "correctAnswer": "kugenda",
             "options": [
-              "kugenda (-genda)",
-              "kuteta (-teta) / kugamba",
-              "kudza (-dza)",
-              "kunwa (-nwa)"
+              "kuteta",
+              "kugenda",
+              "kudza",
+              "kunwa"
             ],
-            "hint": "koo-gehn-dah"
+            "hint": "koo-gehn-dah",
+            "acceptedAnswers": [
+              "kugenda (-genda)",
+              "kugenda"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Drink\" in Taveta?",
-            "correctAnswer": "kunwa (-nwa)",
+            "correctAnswer": "kunwa",
             "options": [
-              "kuteta (-teta) / kugamba",
-              "kudza (-dza)",
-              "kugenda (-genda)",
-              "kunwa (-nwa)"
+              "kuteta",
+              "kudza",
+              "kunwa",
+              "kugenda"
             ],
-            "hint": "koo-nwah"
+            "hint": "koo-nwah",
+            "acceptedAnswers": [
+              "kunwa (-nwa)",
+              "kunwa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1901,14 +2023,18 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taveta term for \"Eat\": ___",
-            "correctAnswer": "kuria (-ria)",
+            "correctAnswer": "kuria",
             "options": [
-              "kuteta (-teta) / kugamba",
-              "kudza (-dza)",
-              "kugenda (-genda)",
-              "kuria (-ria)"
+              "kuria",
+              "kuteta",
+              "kudza",
+              "kugenda"
             ],
-            "hint": "Hollis 1910 & Johnston 1919 #15 Taveita"
+            "hint": "Hollis 1910 & Johnston 1919 #15 Taveita",
+            "acceptedAnswers": [
+              "kuria (-ria)",
+              "kuria"
+            ]
           }
         ]
       },
@@ -1976,25 +2102,29 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kushigha — kuyala",
-            "source": "Leave — Sleep"
+            "source": "Leave — Sleep."
           },
           {
             "target": "kuomba — kufuma",
-            "source": "Pray — Come out"
+            "source": "Pray — Come out."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kushigha\" mean in English?",
-            "correctAnswer": "Leave / Stop",
+            "correctAnswer": "Leave",
             "options": [
-              "Leave / Stop",
-              "Sleep / Be slept on",
-              "Pray / Beg",
-              "Come out / Exit (Exodus)"
+              "Sleep",
+              "Pray",
+              "Leave",
+              "Come out"
             ],
-            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs",
+            "acceptedAnswers": [
+              "Leave / Stop",
+              "Leave"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2050,7 +2180,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
   {
     "id": "taveta-unit-8",
     "unitNumber": 8,
-    "title": "Time, Indigenous Calendar, Seasons & Navigation &",
+    "title": "Time, Indigenous Calendar, Seasons & Navigation",
     "description": "Master time, indigenous calendar, seasons & navigation in Taveta (Kitaveta) built directly from Sir Harry Johnston & A. C. Hollis.",
     "icon": "Compass",
     "color": "#15803D",
@@ -2112,11 +2242,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "M-ri — Mw-āka",
-            "source": "Day — Year"
+            "source": "Day — Year."
           },
           {
             "target": "kucha — ikaya",
-            "source": "Dawn — Today"
+            "source": "Dawn — Today."
           }
         ],
         "authoredExercises": [
@@ -2130,7 +2260,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               "Dawn",
               "Today"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Starts with \"Da…\" (3 letters)"
           },
           {
             "type": "translate_to_target",
@@ -2241,11 +2371,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "M-ri — ikaya",
-            "source": "Day — Today"
+            "source": "Day — Today."
           },
           {
             "target": "igolo — igolo",
-            "source": "Tomorrow — Yesterday"
+            "source": "Tomorrow — Yesterday."
           }
         ],
         "authoredExercises": [
@@ -2340,8 +2470,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)"
           },
           {
-            "target": "kigano / ndima",
-            "source": "Riddle / enigma (Taveta oral literature)",
+            "target": "kigano",
+            "source": "Riddle",
+            "pronunciation": "ki-ga-no / ndi-ma",
+            "hint": "A. C. Hollis, Taveta Enigmas, Journal of the African Society Vol. 10 (1911)"
+          },
+          {
+            "target": "ndima",
+            "source": "enigma (Taveta oral literature)",
             "pronunciation": "ki-ga-no / ndi-ma",
             "hint": "A. C. Hollis, Taveta Enigmas, Journal of the African Society Vol. 10 (1911)"
           },
@@ -2383,15 +2519,19 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mshana (pl. vashana)\" in Taveta?",
-            "correctAnswer": "Blacksmith / ironworker",
+            "prompt": "What is the English meaning of \"mshana\" in Taveta?",
+            "correctAnswer": "Blacksmith",
             "options": [
-              "Blacksmith / ironworker",
-              "Proverb / wise saying (Kitaveta)",
-              "Riddle / enigma (Taveta oral literature)",
-              "Age-set / ruling generation in Taveta"
+              "Blacksmith",
+              "Proverb",
+              "Riddle",
+              "Age-set"
             ],
-            "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)"
+            "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)",
+            "acceptedAnswers": [
+              "Blacksmith / ironworker",
+              "Blacksmith"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2421,10 +2561,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taveta (Kitaveta) term for \"Council of elders (Taveta governance)\": ___",
             "correctAnswer": "njama yaekomi",
             "options": [
+              "mpungi",
               "njama yaekomi",
-              "mpungi / kireti",
-              "mshana (pl. vashana)",
-              "mbazi /ulosi"
+              "mshana",
+              "mbazi"
             ],
             "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)"
           }
@@ -2484,34 +2624,38 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"lālā\" in Taveta?",
             "correctAnswer": "To sleep",
             "options": [
-              "To sit, remain, abide",
+              "To sleep",
+              "To sit",
               "To see",
-              "To love, want",
-              "To sleep"
+              "To love"
             ],
             "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kāā\" in Taveta?",
-            "correctAnswer": "To sit, remain, abide",
+            "correctAnswer": "To sit",
             "options": [
               "To see",
-              "To love, want",
-              "To sit, remain, abide",
+              "To sit",
+              "To love",
               "To sleep"
             ],
-            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "To sit, remain, abide",
+              "To sit"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ōnā\" in Taveta?",
             "correctAnswer": "To see",
             "options": [
-              "To love, want",
+              "To love",
               "To see",
               "To sleep",
-              "To sit, remain, abide"
+              "To sit"
             ],
             "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
@@ -2520,8 +2664,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"To see\" in Taveta?",
             "correctAnswer": "ōnā",
             "options": [
-              "ōnā",
               "lālā",
+              "ōnā",
               "kāā",
               "kūndā"
             ],
@@ -2534,8 +2678,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "options": [
               "lālā",
               "kāā",
-              "ōnā",
-              "kūndā"
+              "kūndā",
+              "ōnā"
             ],
             "hint": "koond-ah"
           },
@@ -2642,8 +2786,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "options": [
               "To give",
               "To eat",
-              "To die",
-              "To go"
+              "To go",
+              "To die"
             ],
             "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           },
@@ -2652,9 +2796,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"inggā\" in Taveta?",
             "correctAnswer": "To give",
             "options": [
+              "To give",
               "To eat",
               "To die",
-              "To give",
               "To go"
             ],
             "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
@@ -2664,8 +2808,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"lā\" in Taveta?",
             "correctAnswer": "To eat",
             "options": [
-              "To die",
               "To eat",
+              "To die",
               "To go",
               "To give"
             ],
@@ -2689,9 +2833,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "fwā",
             "options": [
               "gēndā",
+              "fwā",
               "inggā",
-              "lā",
-              "fwā"
+              "lā"
             ],
             "hint": "fwah"
           },
@@ -2723,10 +2867,10 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taveta term for \"To dance\": ___",
             "correctAnswer": "vīnā",
             "options": [
+              "vīnā",
               "gēndā",
               "inggā",
-              "lā",
-              "vīnā"
+              "lā"
             ],
             "hint": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
           }
@@ -2783,11 +2927,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kābā — Sī-, Tā-, -sī",
-            "source": "To beat — Not"
+            "source": "To beat — Not."
           },
           {
             "target": "Kw-ī? — īnggī",
-            "source": "Where? — Plenty, many"
+            "source": "Where? — Plenty, many."
           }
         ],
         "authoredExercises": [
@@ -2797,9 +2941,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "correctAnswer": "To beat",
             "options": [
               "To beat",
-              "Not (with verb, as prefix, infix, or suffix)",
+              "Not",
               "Where?",
-              "Plenty, many"
+              "Plenty"
             ],
             "hint": "Core vocabulary in Agriculture, Community & Everyday Life"
           },
@@ -2854,7 +2998,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
       },
       {
         "id": "taveta-hohnel-1894-vol1-lesson",
-        "title": "Höhnel: Kiruvu 7-Turn Greeting Dialogue, Taveta (10 Wazee,",
+        "title": "Höhnel: Kiruvu 7-Turn Greeting Dialogue, Taveta",
         "icon": "Compass",
         "description": "Master the verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga (p. 66), the 4-prefix Bantu rule (p. 61), Taveta forest governance and trade units (pp. 94–205), Sultan Miriali's Kichaga phrases (p. 113), and the first ascent of Kilimanjaro to 17,387 ft. in Lieut. Ludwig von Höhnel (1894, Vol. I).",
         "tips": "On p. 66 of Volume I (1894), Höhnel records the exact 7-question Kiruvu greeting ceremony at Mafi with Sultan Sedenga of Mkarama, where every line is answered by a resonant nasal 'Hm! — Hm!' before closing with 'Yambo!'.",
@@ -2895,196 +3039,159 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Yambo, Yambo, sana! Sabalcheir! Uhali ghani? Habari ghani? — Tonga mbuya!",
-            "source": "Good day! God bless you! How are you? What's the news? (p. 93) — Off with you now, friend! (Sultan Miriali, p. 113)"
+            "source": "Good day! God bless you! How are you? What's the news?  — Off with you now, friend! (Sultan Miriali, p. 113)."
           }
         ]
       },
-        {
+      {
         "id": "taveta-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Taveta (Kitaveta) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
+        "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921).",
         "words": [
-                  {
-                            "target": "Jahako",
-                            "source": "Hello",
-                            "pronunciation": "ja-ha-ko"
-                  },
-                  {
-                            "target": "Ni wega",
-                            "source": "Thank you",
-                            "pronunciation": "nee weh-gah / chah-voo-cheh"
-                  },
-                  {
-                            "target": "Jedi yoko jahako",
-                            "source": "Hello (Reply: Good, how are you?)",
-                            "pronunciation": "je-di yo-ko ja-ha-ko"
-                  },
-                  {
-                            "target": "Mwakire",
-                            "source": "Hello / How are you? (Kitaveta)",
-                            "pronunciation": "mwakire"
-                  },
-                  {
-                            "target": "Niko vedi",
-                            "source": "I am fine",
-                            "pronunciation": "niko vedi"
-                  },
-                  {
-                            "target": "Karibu kaya",
-                            "source": "Welcome home",
-                            "pronunciation": "karibu kaya"
-                  },
-                  {
-                            "target": "Ki-kwa",
-                            "source": "Yam",
-                            "pronunciation": "ki-kwa vi-kwa"
-                  },
-                  {
-                            "target": "I-tagi",
-                            "source": "Egg",
-                            "pronunciation": "i-tagi ma"
-                  },
-                  {
-                            "target": "nyama",
-                            "source": "Meat",
-                            "pronunciation": "nyah-mah"
-                  },
-                  {
-                            "target": "maziwa",
-                            "source": "Milk",
-                            "pronunciation": "mah-zee-wah / mah-beh-leh"
-                  }
+          {
+            "target": "Jahako",
+            "source": "Hello",
+            "pronunciation": "ja-ha-ko"
+          },
+          {
+            "target": "Ni wega",
+            "source": "Thank you",
+            "pronunciation": "nee weh-gah / chah-voo-cheh"
+          },
+          {
+            "target": "Jedi yoko jahako",
+            "source": "Hello (Reply: Good, how are you?)",
+            "pronunciation": "je-di yo-ko ja-ha-ko"
+          },
+          {
+            "target": "Mwakire",
+            "source": "Hello / How are you? (Kitaveta)",
+            "pronunciation": "mwakire"
+          },
+          {
+            "target": "Niko vedi",
+            "source": "I am fine",
+            "pronunciation": "niko vedi"
+          },
+          {
+            "target": "Karibu kaya",
+            "source": "Welcome home",
+            "pronunciation": "karibu kaya"
+          },
+          {
+            "target": "Kikwa",
+            "source": "Yam",
+            "pronunciation": "ki-kwa"
+          },
+          {
+            "target": "Itagi",
+            "source": "Egg",
+            "pronunciation": "i-tagi"
+          },
+          {
+            "target": "nyama",
+            "source": "Meat",
+            "pronunciation": "nyah-mah"
+          },
+          {
+            "target": "maziwa",
+            "source": "Milk",
+            "pronunciation": "mah-zee-wah / mah-beh-leh"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Ni wega",
-                            "source": "Thank you"
-                  },
-                  {
-                            "target": "Jedi yoko jahako",
-                            "source": "Hello (Reply: Good, how are you?)"
-                  },
-                  {
-                            "target": "Niko vedi",
-                            "source": "I am fine"
-                  },
-                  {
-                            "target": "Karibu kaya",
-                            "source": "Welcome home"
-                  },
-                  {
-                            "target": "M-nyū. I-gādi",
-                            "source": "Salt"
-                  },
-                  {
-                            "target": "Tunarinda Ki-kwa kaya yetu",
-                            "source": "We keep yam at our homestead"
-                  },
-                  {
-                            "target": "Tunarinda I-tagi kaya yetu",
-                            "source": "We keep egg at our homestead"
-                  },
-                  {
-                            "target": "Tunarinda nyama kaya yetu",
-                            "source": "We keep meat at our homestead"
-                  }
+          {
+            "target": "Ni wega",
+            "source": "Thank you."
+          },
+          {
+            "target": "Jedi yoko jahako",
+            "source": "Hello (Reply: Good, how are you?)."
+          },
+          {
+            "target": "Niko vedi",
+            "source": "I am fine."
+          },
+          {
+            "target": "Karibu kaya",
+            "source": "Welcome home."
+          },
+          {
+            "target": "Mazi ga Lumi ni mazima",
+            "source": "The water of the Lumi River is fresh."
+          },
+          {
+            "target": "Nyumba yango ni nzeru",
+            "source": "My house is clean and bright."
+          },
+          {
+            "target": "Wazee waikala kaya",
+            "source": "The elders sit at the homestead."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "taveta-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Taveta (Kitaveta) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921)",
+        "culturalNote": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921).",
         "words": [
-                  {
-                            "target": "mtandatu",
-                            "source": "Six",
-                            "pronunciation": "mtan-da-tu"
-                  },
-                  {
-                            "target": "ikumi",
-                            "source": "Ten",
-                            "pronunciation": "i-ku-mi"
-                  },
-                  {
-                            "target": "-mwe",
-                            "source": "One",
-                            "pronunciation": "mwe"
-                  },
-                  {
-                            "target": "-vīrī",
-                            "source": "Two",
-                            "pronunciation": "vi-ri"
-                  },
-                  {
-                            "target": "ina",
-                            "source": "Four",
-                            "pronunciation": "i-na"
-                  },
-                  {
-                            "target": "ishano",
-                            "source": "Five",
-                            "pronunciation": "i-sha-no"
-                  },
-                  {
-                            "target": "kenda",
-                            "source": "Nine",
-                            "pronunciation": "ken-da"
-                  },
-                  {
-                            "target": "itatu",
-                            "source": "Three",
-                            "pronunciation": "i-ta-tu"
-                  },
-                  {
-                            "target": "mfungate",
-                            "source": "Seven",
-                            "pronunciation": "mfun-ga-te"
-                  },
-                  {
-                            "target": "mnane",
-                            "source": "Eight",
-                            "pronunciation": "mna-ne"
-                  }
+          {
+            "target": "mtandatu",
+            "source": "Six",
+            "pronunciation": "mtan-da-tu"
+          },
+          {
+            "target": "ikumi",
+            "source": "Ten",
+            "pronunciation": "i-ku-mi"
+          },
+          {
+            "target": "-mwe",
+            "source": "One",
+            "pronunciation": "mwe"
+          },
+          {
+            "target": "-vīrī",
+            "source": "Two",
+            "pronunciation": "vi-ri"
+          },
+          {
+            "target": "ina",
+            "source": "Four",
+            "pronunciation": "i-na"
+          },
+          {
+            "target": "ishano",
+            "source": "Five",
+            "pronunciation": "i-sha-no"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine",
+            "pronunciation": "ken-da"
+          },
+          {
+            "target": "itatu",
+            "source": "Three",
+            "pronunciation": "i-ta-tu"
+          },
+          {
+            "target": "mfungate",
+            "source": "Seven",
+            "pronunciation": "mfun-ga-te"
+          },
+          {
+            "target": "mnane",
+            "source": "Eight",
+            "pronunciation": "mna-ne"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "nā, I-nnā",
-                            "source": "Four"
-                  },
-                  {
-                            "target": "Mī-rōnggo mī-nā",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "Mī-rōnggo mī-sāno",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "mirongo miwiri",
-                            "source": "Twenty"
-                  },
-                  {
-                            "target": "Mī-rōnggo mī-tātū",
-                            "source": "Thirty"
-                  },
-                  {
-                            "target": "I-kūmi na ī-mwe",
-                            "source": "Eleven"
-                  },
-                  {
-                            "target": "Ki-hīndē, Ki-hīndi",
-                            "source": "Thousand"
-                  },
-                  {
-                            "target": "mndu mume",
-                            "source": "Man"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

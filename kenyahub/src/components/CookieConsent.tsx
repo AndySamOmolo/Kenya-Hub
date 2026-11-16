@@ -41,6 +41,10 @@ export default function CookieConsent() {
         window.dataLayer!.push(arguments);
       };
 
+    // If a Google-certified IAB TCF v2.2 CMP (e.g., Google Funding Choices / Privacy & Messaging)
+    // is active on the page, defer automatic banner display to the TCF v2.2 CMP to prevent double banners.
+    const hasTcfCmp = typeof window.__tcfapi === "function";
+
     const stored = localStorage.getItem("kh-cookie-consent");
     const storedPreferences = localStorage.getItem("kh-cookie-preferences");
     if (storedPreferences) {
@@ -62,7 +66,7 @@ export default function CookieConsent() {
     } else if (stored === "declined" || stored === "essential") {
       setPreferences({ analytics: false, advertising: false });
       updateConsent({ analytics: false, advertising: false });
-    } else {
+    } else if (!hasTcfCmp) {
       setVisible(true);
     }
 
@@ -99,6 +103,7 @@ export default function CookieConsent() {
 
   return (
     <div
+      data-adsense-ignore="true"
       className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-[100] sm:max-w-md animate-fade-in-up"
       role="dialog"
       aria-label="Cookie consent"
@@ -112,8 +117,16 @@ export default function CookieConsent() {
                 <p className="text-xs sm:text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
                   Manage cookie preferences
                 </p>
-                <p className="text-[0.7rem] text-text-secondary mt-0.5">
-                  Essential storage is always active. Choose analytics and advertising preferences.
+                <p className="text-[0.7rem] text-text-secondary mt-0.5 leading-relaxed">
+                  Essential storage is always active. Choose analytics and Google AdSense advertising preferences.{" "}
+                  <a
+                    href="https://policies.google.com/technologies/partner-sites"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold hover:underline"
+                  >
+                    How Google uses data
+                  </a>
                 </p>
               </div>
             </div>
@@ -121,14 +134,14 @@ export default function CookieConsent() {
               <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2">
                 <span>
                   <span className="block text-xs font-semibold text-text-primary">Essential</span>
-                  <span className="block text-[0.65rem] text-text-muted">Required for core features</span>
+                  <span className="block text-[0.65rem] text-text-muted">Required for local tools &amp; language progress</span>
                 </span>
                 <input type="checkbox" checked disabled className="accent-gold" aria-label="Essential cookies always enabled" />
               </label>
               <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
                 <span>
                   <span className="block text-xs font-semibold text-text-primary">Analytics</span>
-                  <span className="block text-[0.65rem] text-text-muted">Anonymous tool usage stats</span>
+                  <span className="block text-[0.65rem] text-text-muted">Anonymous GA4 tool usage stats</span>
                 </span>
                 <input
                   type="checkbox"
@@ -143,7 +156,7 @@ export default function CookieConsent() {
               <label className="flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
                 <span>
                   <span className="block text-xs font-semibold text-text-primary">Advertising</span>
-                  <span className="block text-[0.65rem] text-text-muted">Google AdSense support</span>
+                  <span className="block text-[0.65rem] text-text-muted">Google AdSense personalized &amp; non-personalized ads</span>
                 </span>
                 <input
                   type="checkbox"
@@ -167,7 +180,7 @@ export default function CookieConsent() {
                 onClick={() => savePreferences(preferences)}
                 className="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-gold to-gold-vivid text-black hover:opacity-90 transition-opacity"
               >
-                Save
+                Save Preferences
               </button>
             </div>
           </>
@@ -176,10 +189,19 @@ export default function CookieConsent() {
             <div className="flex items-start gap-2.5">
               <Cookie className="w-4 h-4 text-gold shrink-0 mt-0.5" />
               <p className="text-xs text-text-secondary leading-snug">
-                KenyaHub uses cookies for analytics &amp; ads.{" "}
+                KenyaHub uses cookies for analytics &amp; Google AdSense ads. See our{" "}
                 <a href="/privacy/" className="text-gold hover:underline font-medium">
                   Privacy Policy
-                </a>
+                </a>{" "}
+                &amp;{" "}
+                <a
+                  href="https://policies.google.com/technologies/partner-sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:underline font-medium"
+                >
+                  Google Partner Terms
+                </a>.
               </p>
             </div>
             <div className="flex items-center justify-end gap-1.5">

@@ -172,7 +172,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
       </div>
 
       {filteredRoutes.length === 0 && (
-        <div className="text-center py-16 bg-bg-card border border-border rounded-xl">
+        <div data-adsense-pause="true" className="text-center py-16 bg-bg-card border border-border rounded-xl">
           <div className="flex justify-center mb-4"><BusFront className="w-10 h-10 text-gold" /></div>
           <p className="text-sm font-semibold text-text-primary mb-1">No routes found</p>
           <p className="text-xs text-text-muted">Try adjusting your search query or SACCO filter.</p>

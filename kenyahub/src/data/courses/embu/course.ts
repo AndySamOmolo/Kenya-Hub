@@ -40,8 +40,14 @@ export const EMBU_UNITS: CourseUnit[] = [
         "culturalNote": "In Kîembu tradition documented by C. W. Hobley (1910) and Sir Harry Johnston (1919), the Kiama kia Ngome (Council of Elders) met in sacred groves (mũtitũ) to arbitrate community law.",
         "words": [
           {
-            "target": "Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?",
-            "source": "How are you? (I am well) / How are you all?",
+            "target": "Wĩ mwega? (resp. Ndĩ mwega)",
+            "source": "How are you? (I am well)",
+            "pronunciation": "wi mwe-ga / mu-ri ega",
+            "hint": "Standard Kîembu salutation"
+          },
+          {
+            "target": "Mũrĩ ega?",
+            "source": "How are you all?",
             "pronunciation": "wi mwe-ga / mu-ri ega",
             "hint": "Standard Kîembu salutation"
           },
@@ -58,32 +64,74 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919, Vol. I, p. 101 #11 Embu)"
           },
           {
-            "target": "mũrũme (pl. arũme) / mũka (pl. aka)",
-            "source": "Man, husband / Woman, wife",
+            "target": "mũrũme (pl. arũme)",
+            "source": "Man, husband",
             "pronunciation": "mu-ru-me / mu-ka",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106 #11 Embu)"
           },
           {
-            "target": "mwana (pl. ciana / aana) / baba / maitũ",
-            "source": "Child / Father / Mother",
+            "target": "mũka (pl. aka)",
+            "source": "Woman, wife",
+            "pronunciation": "mu-ru-me / mu-ka",
+            "hint": "Johnston (1919, Vol. I, pp. 100, 106 #11 Embu)"
+          },
+          {
+            "target": "mwana",
+            "source": "Child",
             "pronunciation": "mwa-na / ba-ba / mai-tu",
             "hint": "Johnston (1919 #11 Embu)"
           },
           {
-            "target": "maĩ (manjĩ) / mwaki / riũa",
-            "source": "Water / Fire / Sun",
+            "target": "aana)",
+            "source": "Father",
+            "pronunciation": "mwa-na / ba-ba / mai-tu",
+            "hint": "Johnston (1919 #11 Embu)"
+          },
+          {
+            "target": "baba",
+            "source": "Mother",
+            "pronunciation": "mwa-na / ba-ba / mai-tu",
+            "hint": "Johnston (1919 #11 Embu)"
+          },
+          {
+            "target": "maĩ (manjĩ)",
+            "source": "Water",
             "pronunciation": "mai / mwa-ki / riua",
             "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
           },
           {
-            "target": "mũtĩ (pl. mĩtĩ) / ĩvia (pl. mavia)",
-            "source": "Tree (pl. Trees) / Stone (pl. Stones)",
+            "target": "mwaki",
+            "source": "Fire",
+            "pronunciation": "mai / mwa-ki / riua",
+            "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
+          },
+          {
+            "target": "riũa",
+            "source": "Sun",
+            "pronunciation": "mai / mwa-ki / riua",
+            "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
+          },
+          {
+            "target": "mũtĩ (pl. mĩtĩ)",
+            "source": "Tree (pl. Trees)",
             "pronunciation": "mu-ti / i-via",
             "hint": "Johnston (1919, Vol. I, pp. 104–105 #11 Embu)"
           },
           {
-            "target": "Ngai (Murungu) / Kĩrĩnyaga",
-            "source": "God / Mount Kenya",
+            "target": "ĩvia (pl. mavia)",
+            "source": "Stone (pl. Stones)",
+            "pronunciation": "mu-ti / i-via",
+            "hint": "Johnston (1919, Vol. I, pp. 104–105 #11 Embu)"
+          },
+          {
+            "target": "Ngai (Murungu)",
+            "source": "God",
+            "pronunciation": "ngai / ki-rinya-ga",
+            "hint": "Johnston (1919, Vol. I, p. 100 #11) & Hobley (1910)"
+          },
+          {
+            "target": "Kĩrĩnyaga",
+            "source": "Mount Kenya",
             "pronunciation": "ngai / ki-rinya-ga",
             "hint": "Johnston (1919, Vol. I, p. 100 #11) & Hobley (1910)"
           }
@@ -101,63 +149,79 @@ export const EMBU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?\" in Embu?",
-            "correctAnswer": "How are you? (I am well) / How are you all?",
+            "prompt": "What is the English meaning of \"Wĩ mwega?\" in Embu?",
+            "correctAnswer": "How are you?",
             "options": [
               "Thank you very much",
-              "Person (pl. People)",
-              "Man, husband / Woman, wife",
-              "How are you? (I am well) / How are you all?"
+              "Person",
+              "Man",
+              "How are you?"
             ],
-            "hint": "Standard Kîembu salutation"
+            "hint": "Standard Kîembu salutation",
+            "acceptedAnswers": [
+              "How are you? (I am well) / How are you all?",
+              "How are you?"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Nĩ wega mũno\" in Embu?",
             "correctAnswer": "Thank you very much",
             "options": [
-              "Person (pl. People)",
-              "Man, husband / Woman, wife",
+              "How are you?",
               "Thank you very much",
-              "How are you? (I am well) / How are you all?"
+              "Mount Kenya",
+              "How are you all?"
             ],
             "hint": "Gratitude"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mundũ (pl. andũ)\" in Embu?",
-            "correctAnswer": "Person (pl. People)",
+            "correctAnswer": "Person",
             "options": [
-              "Man, husband / Woman, wife",
-              "Person (pl. People)",
-              "How are you? (I am well) / How are you all?",
-              "Thank you very much"
+              "Person",
+              "Man",
+              "How are you?",
+              "Woman"
             ],
-            "hint": "Johnston (1919, Vol. I, p. 101 #11 Embu)"
+            "hint": "Johnston (1919, Vol. I, p. 101 #11 Embu)",
+            "acceptedAnswers": [
+              "Person (pl. People)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Person (pl. People)\" in Embu?",
-            "correctAnswer": "mundũ (pl. andũ)",
+            "correctAnswer": "mundũ",
             "options": [
-              "mundũ (pl. andũ)",
-              "Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?",
+              "Wĩ mwega?",
               "Nĩ wega mũno",
-              "mũrũme (pl. arũme) / mũka (pl. aka)"
+              "mundũ",
+              "mũrũme"
             ],
-            "hint": "moon-doo / ahn-doo"
+            "hint": "moon-doo / ahn-doo",
+            "acceptedAnswers": [
+              "mundũ (pl. andũ)",
+              "mundũ"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Man, husband / Woman, wife\" in Embu?",
-            "correctAnswer": "mũrũme (pl. arũme) / mũka (pl. aka)",
+            "prompt": "How do you say \"Man\" in Embu?",
+            "correctAnswer": "mũrũme",
             "options": [
-              "Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?",
+              "Wĩ mwega?",
               "Nĩ wega mũno",
-              "mundũ (pl. andũ)",
-              "mũrũme (pl. arũme) / mũka (pl. aka)"
+              "mundũ",
+              "mũrũme"
             ],
-            "hint": "moo-roo-meh / moo-kah"
+            "hint": "moo-roo-meh / moo-kah",
+            "acceptedAnswers": [
+              "mũrũme (pl. arũme) / mũka (pl. aka)",
+              "mũrũme"
+            ]
           },
           {
             "type": "match_pairs",
@@ -184,15 +248,19 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Embu term for \"Child / Father / Mother\": ___",
-            "correctAnswer": "mwana (pl. ciana / aana) / baba / maitũ",
+            "prompt": "Complete the Embu term for \"Child\": ___",
+            "correctAnswer": "mwana",
             "options": [
-              "Wĩ mwega? (resp. Ndĩ mwega) / Mũrĩ ega?",
+              "mwana",
+              "Wĩ mwega?",
               "Nĩ wega mũno",
-              "mundũ (pl. andũ)",
-              "mwana (pl. ciana / aana) / baba / maitũ"
+              "mundũ"
             ],
-            "hint": "Johnston (1919 #11 Embu)"
+            "hint": "Johnston (1919 #11 Embu)",
+            "acceptedAnswers": [
+              "mwana (pl. ciana / aana) / baba / maitũ",
+              "mwana"
+            ]
           }
         ]
       },
@@ -240,14 +308,38 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
-            "target": "kũrĩa / kũnyua / kũruga",
-            "source": "To eat / To drink / To cook",
+            "target": "kũrĩa",
+            "source": "To eat",
             "pronunciation": "ku-ria / kunyua / ku-ru-ga",
             "hint": "Class 15 infinitives"
           },
           {
-            "target": "gũthiĩ / gũũka / kwaria",
-            "source": "To go / To come / To speak",
+            "target": "kũnyua",
+            "source": "To drink",
+            "pronunciation": "ku-ria / kunyua / ku-ru-ga",
+            "hint": "Class 15 infinitives"
+          },
+          {
+            "target": "kũruga",
+            "source": "To cook",
+            "pronunciation": "ku-ria / kunyua / ku-ru-ga",
+            "hint": "Class 15 infinitives"
+          },
+          {
+            "target": "gũthiĩ",
+            "source": "To go",
+            "pronunciation": "guthii / guu-ka / kwa-ria",
+            "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
+          },
+          {
+            "target": "gũũka",
+            "source": "To come",
+            "pronunciation": "guthii / guu-ka / kwa-ria",
+            "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
+          },
+          {
+            "target": "kwaria",
+            "source": "To speak",
             "pronunciation": "guthii / guu-ka / kwa-ria",
             "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
           },
@@ -268,62 +360,82 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ĩmwe, igĩrĩ, ithatũ, inya, ithano\" in Embu?",
-            "correctAnswer": "1, 2, 3, 4, 5",
+            "correctAnswer": "1",
             "options": [
-              "6, 7, 8, 9, 10",
-              "To eat / To drink / To cook",
-              "To go / To come / To speak",
-              "1, 2, 3, 4, 5"
+              "1",
+              "6",
+              "To eat",
+              "To go"
             ],
-            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)",
+            "acceptedAnswers": [
+              "1, 2, 3, 4, 5",
+              "1"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ithanthatũ, mũgwanja, inyanya, kenda, ikũmi\" in Embu?",
-            "correctAnswer": "6, 7, 8, 9, 10",
+            "correctAnswer": "6",
             "options": [
-              "To eat / To drink / To cook",
-              "To go / To come / To speak",
+              "To eat",
+              "To go",
+              "6",
+              "1"
+            ],
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)",
+            "acceptedAnswers": [
               "6, 7, 8, 9, 10",
-              "1, 2, 3, 4, 5"
-            ],
-            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+              "6"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kũrĩa / kũnyua / kũruga\" in Embu?",
-            "correctAnswer": "To eat / To drink / To cook",
+            "prompt": "What is the English meaning of \"kũrĩa\" in Embu?",
+            "correctAnswer": "To eat",
             "options": [
-              "To go / To come / To speak",
+              "To go",
+              "To eat",
+              "1",
+              "6"
+            ],
+            "hint": "Class 15 infinitives",
+            "acceptedAnswers": [
               "To eat / To drink / To cook",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10"
-            ],
-            "hint": "Class 15 infinitives"
+              "To eat"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To eat / To drink / To cook\" in Embu?",
-            "correctAnswer": "kũrĩa / kũnyua / kũruga",
+            "prompt": "How do you say \"To eat\" in Embu?",
+            "correctAnswer": "kũrĩa",
             "options": [
-              "kũrĩa / kũnyua / kũruga",
-              "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
-              "ithanthatũ, mũgwanja, inyanya, kenda, ikũmi",
-              "gũthiĩ / gũũka / kwaria"
+              "ĩmwe",
+              "kũrĩa",
+              "ithanthatũ",
+              "gũthiĩ"
             ],
-            "hint": "koo-ree-ah / koo-nywah / koo-roo-gah"
+            "hint": "koo-ree-ah / koo-nywah / koo-roo-gah",
+            "acceptedAnswers": [
+              "kũrĩa / kũnyua / kũruga",
+              "kũrĩa"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To go / To come / To speak\" in Embu?",
-            "correctAnswer": "gũthiĩ / gũũka / kwaria",
+            "prompt": "How do you say \"To go\" in Embu?",
+            "correctAnswer": "gũthiĩ",
             "options": [
-              "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
-              "ithanthatũ, mũgwanja, inyanya, kenda, ikũmi",
-              "kũrĩa / kũnyua / kũruga",
-              "gũthiĩ / gũũka / kwaria"
+              "ĩmwe",
+              "gũthiĩ",
+              "ithanthatũ",
+              "kũrĩa"
             ],
-            "hint": "goo-thee / goo-kah / kwah-ree-ah"
+            "hint": "goo-thee / goo-kah / kwah-ree-ah",
+            "acceptedAnswers": [
+              "gũthiĩ / gũũka / kwaria",
+              "gũthiĩ"
+            ]
           },
           {
             "type": "match_pairs",
@@ -353,10 +465,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Embu term for \"Traditional Council of Elders\": ___",
             "correctAnswer": "Kiama kia Ngome",
             "options": [
-              "ĩmwe, igĩrĩ, ithatũ, inya, ithano",
-              "ithanthatũ, mũgwanja, inyanya, kenda, ikũmi",
-              "kũrĩa / kũnyua / kũruga",
-              "Kiama kia Ngome"
+              "ĩmwe",
+              "ithanthatũ",
+              "Kiama kia Ngome",
+              "kũrĩa"
             ],
             "hint": "Aembu & Ambeere governance"
           }
@@ -393,8 +505,14 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
-            "source": "Woman / Women",
+            "target": "mũtumia (pl. atumia)",
+            "source": "Woman",
+            "pronunciation": "mu-tu-mia / mundu mu-ka",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "mũndũ mũka (pl. andũ aka)",
+            "source": "Women",
             "pronunciation": "mu-tu-mia / mundu mu-ka",
             "hint": "Wikipedia Embu_language"
           },
@@ -438,63 +556,83 @@ export const EMBU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mũndũ (pl. andũ)\" in Embu?",
-            "correctAnswer": "Person / Human being",
+            "prompt": "What is the English meaning of \"mũndũ\" in Embu?",
+            "correctAnswer": "Person",
             "options": [
-              "Man / Men",
-              "Woman / Women",
-              "Husband",
-              "Person / Human being"
+              "Man",
+              "Person",
+              "Woman",
+              "Husband"
             ],
-            "hint": "Wikipedia Embu_language"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mũndũ mũrũme (pl. andũ arũme)\" in Embu?",
-            "correctAnswer": "Man / Men",
-            "options": [
-              "Woman / Women",
-              "Husband",
-              "Man / Men",
-              "Person / Human being"
-            ],
-            "hint": "Wikipedia Embu_language"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)\" in Embu?",
-            "correctAnswer": "Woman / Women",
-            "options": [
-              "Husband",
-              "Woman / Women",
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
               "Person / Human being",
-              "Man / Men"
-            ],
-            "hint": "Wikipedia Embu_language"
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Woman / Women\" in Embu?",
-            "correctAnswer": "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
+            "prompt": "What is the English meaning of \"mũndũ mũrũme\" in Embu?",
+            "correctAnswer": "Man",
             "options": [
-              "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
-              "mũndũ (pl. andũ)",
-              "mũndũ mũrũme (pl. andũ arũme)",
-              "mũthuri (pl. athuri)"
+              "Woman",
+              "Man",
+              "Husband",
+              "Person"
             ],
-            "hint": "mutumia / mundu muka"
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "Man / Men",
+              "Man"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"mũtumia\" in Embu?",
+            "correctAnswer": "Woman",
+            "options": [
+              "Husband",
+              "Person",
+              "Woman",
+              "Man"
+            ],
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "Woman / Women",
+              "Woman"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Woman\" in Embu?",
+            "correctAnswer": "mũtumia",
+            "options": [
+              "mũndũ",
+              "mũndũ mũrũme",
+              "mũtumia",
+              "mũthuri"
+            ],
+            "hint": "mutumia / mundu muka",
+            "acceptedAnswers": [
+              "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
+              "mũtumia"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Husband\" in Embu?",
-            "correctAnswer": "mũthuri (pl. athuri)",
+            "correctAnswer": "mũthuri",
             "options": [
-              "mũndũ (pl. andũ)",
-              "mũndũ mũrũme (pl. andũ arũme)",
-              "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
-              "mũthuri (pl. athuri)"
+              "mũthuri",
+              "mũndũ",
+              "mũndũ mũrũme",
+              "mũtumia"
             ],
-            "hint": "muthuri (pl. athuri)"
+            "hint": "muthuri (pl. athuri)",
+            "acceptedAnswers": [
+              "mũthuri (pl. athuri)",
+              "mũthuri"
+            ]
           },
           {
             "type": "match_pairs",
@@ -522,14 +660,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Embu term for \"Child / Children\": ___",
-            "correctAnswer": "mwana (pl. ciana)",
+            "correctAnswer": "mwana",
             "options": [
-              "mũndũ (pl. andũ)",
-              "mũndũ mũrũme (pl. andũ arũme)",
-              "mũtumia (pl. atumia) / mũndũ mũka (pl. andũ aka)",
-              "mwana (pl. ciana)"
+              "mũndũ",
+              "mũndũ mũrũme",
+              "mũtumia",
+              "mwana"
             ],
-            "hint": "Wikipedia Embu_language"
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "mwana (pl. ciana)",
+              "mwana"
+            ]
           }
         ]
       },
@@ -553,12 +695,12 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "mu-ru wa mai-ya"
           },
           {
-            "target": "Mu-thamaki; a-. Mu-nene; a-",
+            "target": "Mu-thamaki; a-. Mu-nene",
             "source": "Chief",
             "pronunciation": "mu-thamaki"
           },
           {
-            "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tu-",
+            "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tu",
             "source": "Child",
             "pronunciation": "mwa-na"
           },
@@ -591,11 +733,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ngai — Mu-ru wa maiya",
-            "source": "God — Brother"
+            "source": "God — Brother."
           },
           {
             "target": "Mu-thamaki — Mwana",
-            "source": "Chief — Child"
+            "source": "Chief — Child."
           }
         ],
         "authoredExercises": [
@@ -740,9 +882,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "One",
             "options": [
               "Two",
+              "One",
               "Three",
-              "Four",
-              "One"
+              "Four"
             ],
             "hint": "Wikipedia Embu_language — Kîembu numerals"
           },
@@ -775,12 +917,12 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Three\" in Embu?",
             "correctAnswer": "Ithatũ",
             "options": [
-              "Ithatũ",
               "Ĩmwe",
+              "Ithatũ",
               "Igĩrĩ",
               "Inya"
             ],
-            "hint": "ithatu"
+            "hint": "Starts with \"It…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
@@ -789,10 +931,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Ĩmwe",
               "Igĩrĩ",
-              "Ithatũ",
-              "Inya"
+              "Inya",
+              "Ithatũ"
             ],
-            "hint": "inya"
+            "hint": "Starts with \"In…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -822,10 +964,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Embu term for \"Five\": ___",
             "correctAnswer": "Ithano",
             "options": [
+              "Ithano",
               "Ĩmwe",
               "Igĩrĩ",
-              "Ithatũ",
-              "Ithano"
+              "Ithatũ"
             ],
             "hint": "Wikipedia Embu_language — Kîembu numerals"
           }
@@ -894,8 +1036,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Twenty",
               "Thirty",
-              "Forty",
-              "Ten"
+              "Ten",
+              "Forty"
             ],
             "hint": "Wikipedia Embu_language — Kîembu numerals"
           },
@@ -904,9 +1046,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mī-rōnggo ī-gīrī\" in Embu?",
             "correctAnswer": "Twenty",
             "options": [
+              "Twenty",
               "Thirty",
               "Forty",
-              "Twenty",
               "Ten"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
@@ -916,8 +1058,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mī-rōnggo ī-tātū\" in Embu?",
             "correctAnswer": "Thirty",
             "options": [
-              "Forty",
               "Thirty",
+              "Forty",
               "Ten",
               "Twenty"
             ],
@@ -930,10 +1072,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Mī-rōnggo ī-tātū",
               "Ikũmi",
-              "Mī-rōnggo ī-gīrī",
-              "Mī-rōnggo ī-nā"
+              "I-gāna",
+              "Ngīrī"
             ],
-            "hint": "mī-rōnggo ī-tātū"
+            "hint": "Starts with \"Mī…\" (16 letters)"
           },
           {
             "type": "multiple_choice",
@@ -941,11 +1083,11 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "Mī-rōnggo ī-nā",
             "options": [
               "Ikũmi",
-              "Mī-rōnggo ī-gīrī",
-              "Mī-rōnggo ī-tātū",
-              "Mī-rōnggo ī-nā"
+              "Mī-rōnggo ī-nā",
+              "I-gāna",
+              "Ngīrī"
             ],
-            "hint": "mī-rōnggo ī-nā"
+            "hint": "Starts with \"Mī…\" (14 letters)"
           },
           {
             "type": "match_pairs",
@@ -976,8 +1118,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "Mī-rōnggo ī-tāno",
             "options": [
               "Ikũmi",
-              "Mī-rōnggo ī-gīrī",
-              "Mī-rōnggo ī-tātū",
+              "I-gāna",
+              "Ngīrī",
               "Mī-rōnggo ī-tāno"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
@@ -1057,11 +1199,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "nyama — irio",
-            "source": "Meat — Food"
+            "source": "Meat — Food."
           },
           {
             "target": "cumbĩ — maguta",
-            "source": "Salt — Oil"
+            "source": "Salt — Oil."
           }
         ],
         "authoredExercises": [
@@ -1070,10 +1212,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What does \"nyama\" mean in English?",
             "correctAnswer": "Meat",
             "options": [
-              "Meat",
               "Food",
               "Salt",
-              "Oil / Fat"
+              "Meat",
+              "Oil"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
           },
@@ -1155,12 +1297,12 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ma"
           },
           {
-            "target": "M-bembē; ma-",
+            "target": "M-bembē; ma",
             "source": "Maize",
             "pronunciation": "m-bembe"
           },
           {
-            "target": "N-g'aragu. M-būta (M.)",
+            "target": "N-g'aragu",
             "source": "Hunger",
             "pronunciation": "n-g'aragu m-buta"
           },
@@ -1175,19 +1317,24 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "n-johi"
           },
           {
-            "target": "mboso / nthooko",
-            "source": "Beans / cowpeas",
+            "target": "mboso",
+            "source": "Beans",
+            "pronunciation": "mbo-so / nthoo-ko"
+          },
+          {
+            "target": "nthooko",
+            "source": "cowpeas",
             "pronunciation": "mbo-so / nthoo-ko"
           }
         ],
         "sentences": [
           {
             "target": "I-rigo — Ma-guta. Ṅ-gorono",
-            "source": "Banana — Fat, oil"
+            "source": "Banana — Fat, oil."
           },
           {
             "target": "Ū-ūkī — nyama",
-            "source": "Honey — Meat"
+            "source": "Honey — Meat."
           }
         ],
         "authoredExercises": [
@@ -1196,8 +1343,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What does \"I-rigo\" mean in English?",
             "correctAnswer": "Banana",
             "options": [
+              "Fat",
               "Banana",
-              "Fat, oil",
               "Honey",
               "Meat"
             ],
@@ -1328,15 +1475,19 @@ export const EMBU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ĩria (pl. maria)\" in Embu?",
-            "correctAnswer": "Lake / Sea / Ocean",
+            "prompt": "What is the English meaning of \"ĩria\" in Embu?",
+            "correctAnswer": "Lake",
             "options": [
               "Root",
               "Leaf",
-              "Bark (of tree)",
-              "Lake / Sea / Ocean"
+              "Lake",
+              "Bark"
             ],
-            "hint": "Wikipedia Embu_language"
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "Lake / Sea / Ocean",
+              "Lake"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1344,9 +1495,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "Root",
             "options": [
               "Leaf",
-              "Bark (of tree)",
               "Root",
-              "Lake / Sea / Ocean"
+              "Bark",
+              "Lake"
             ],
             "hint": "Wikipedia Embu_language"
           },
@@ -1355,9 +1506,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ĩthangũ (pl. mathangũ)\" in Embu?",
             "correctAnswer": "Leaf",
             "options": [
-              "Bark (of tree)",
               "Leaf",
-              "Lake / Sea / Ocean",
+              "Bark",
+              "Lake",
               "Root"
             ],
             "hint": "Wikipedia Embu_language"
@@ -1365,26 +1516,30 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Leaf\" in Embu?",
-            "correctAnswer": "ĩthangũ (pl. mathangũ)",
+            "correctAnswer": "ĩthangũ",
             "options": [
-              "ĩthangũ (pl. mathangũ)",
-              "ĩria (pl. maria)",
-              "mũri (pl. mĩri)",
+              "ĩria",
+              "ĩthangũ",
+              "mũri",
               "ĩkoni"
             ],
-            "hint": "ithangu (pl. mathangu)"
+            "hint": "Starts with \"ĩt…\" (7 letters)",
+            "acceptedAnswers": [
+              "ĩthangũ (pl. mathangũ)",
+              "ĩthangũ"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Bark (of tree)\" in Embu?",
             "correctAnswer": "ĩkoni",
             "options": [
-              "ĩria (pl. maria)",
-              "mũri (pl. mĩri)",
-              "ĩthangũ (pl. mathangũ)",
-              "ĩkoni"
+              "ĩria",
+              "ĩkoni",
+              "mũri",
+              "ĩthangũ"
             ],
-            "hint": "ikoni"
+            "hint": "Starts with \"ĩk…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1412,14 +1567,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Embu term for \"Tree\": ___",
-            "correctAnswer": "mũtĩ (pl. mĩtĩ)",
+            "correctAnswer": "mũtĩ",
             "options": [
-              "ĩria (pl. maria)",
-              "mũri (pl. mĩri)",
-              "ĩthangũ (pl. mathangũ)",
-              "mũtĩ (pl. mĩtĩ)"
+              "ĩria",
+              "mũri",
+              "mũtĩ",
+              "ĩthangũ"
             ],
-            "hint": "Wikipedia Embu_language"
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "mũtĩ (pl. mĩtĩ)",
+              "mũtĩ"
+            ]
           }
         ]
       },
@@ -1432,14 +1591,26 @@ export const EMBU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
-            "target": "karĩma / kĩrĩma",
-            "source": "Hill / Mountain",
+            "target": "karĩma",
+            "source": "Hill",
             "pronunciation": "ka-ri-ma / ki-ri-ma",
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "karũnjĩ / rũnjĩ",
-            "source": "Stream / River",
+            "target": "kĩrĩma",
+            "source": "Mountain",
+            "pronunciation": "ka-ri-ma / ki-ri-ma",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "karũnjĩ",
+            "source": "Stream",
+            "pronunciation": "ka-runji / runji",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "rũnjĩ",
+            "source": "River",
             "pronunciation": "ka-runji / runji",
             "hint": "Wikipedia Embu_language"
           },
@@ -1488,25 +1659,29 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "karĩma — karũnjĩ",
-            "source": "Hill — Stream"
+            "source": "Hill — Stream."
           },
           {
             "target": "mũthanga — nthĩ",
-            "source": "Sand — Ground"
+            "source": "Sand — Ground."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"karĩma\" mean in English?",
-            "correctAnswer": "Hill / Mountain",
+            "correctAnswer": "Hill",
             "options": [
-              "Hill / Mountain",
-              "Stream / River",
+              "Stream",
               "Sand",
-              "Ground / Earth"
+              "Ground",
+              "Hill"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Hill / Mountain",
+              "Hill"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1637,9 +1812,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "Mouth",
             "options": [
               "Eye",
+              "Mouth",
               "Head",
-              "Hair",
-              "Mouth"
+              "Hair"
             ],
             "hint": "Wikipedia Embu_language"
           },
@@ -1650,8 +1825,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Head",
               "Hair",
-              "Eye",
-              "Mouth"
+              "Mouth",
+              "Eye"
             ],
             "hint": "Wikipedia Embu_language"
           },
@@ -1670,24 +1845,28 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Head\" in Embu?",
-            "correctAnswer": "kĩongo (pl. ciongo)",
+            "correctAnswer": "kĩongo",
             "options": [
-              "kĩongo (pl. ciongo)",
+              "kĩongo",
               "kanyua",
-              "rĩitho (pl. metho)",
+              "rĩitho",
               "njuĩrĩ"
             ],
-            "hint": "kiongo (pl. ciongo)"
+            "hint": "kiongo (pl. ciongo)",
+            "acceptedAnswers": [
+              "kĩongo (pl. ciongo)",
+              "kĩongo"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Hair\" in Embu?",
             "correctAnswer": "njuĩrĩ",
             "options": [
+              "njuĩrĩ",
               "kanyua",
-              "rĩitho (pl. metho)",
-              "kĩongo (pl. ciongo)",
-              "njuĩrĩ"
+              "rĩitho",
+              "kĩongo"
             ],
             "hint": "njuiri"
           },
@@ -1717,14 +1896,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Embu term for \"Tooth\": ___",
-            "correctAnswer": "ĩgego (pl. magego)",
+            "correctAnswer": "ĩgego",
             "options": [
+              "ĩgego",
               "kanyua",
-              "rĩitho (pl. metho)",
-              "kĩongo (pl. ciongo)",
-              "ĩgego (pl. magego)"
+              "rĩitho",
+              "kĩongo"
             ],
-            "hint": "Wikipedia Embu_language"
+            "hint": "Wikipedia Embu_language",
+            "acceptedAnswers": [
+              "ĩgego (pl. magego)",
+              "ĩgego"
+            ]
           }
         ]
       },
@@ -1767,14 +1950,26 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "kũgũrũ (pl. magũrũ) / gĩtende (pl. itende)",
-            "source": "Leg / Foot",
+            "target": "kũgũrũ (pl. magũrũ)",
+            "source": "Leg",
             "pronunciation": "ku-gu-ru / gi-tende",
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "nda / ĩvũ",
-            "source": "Belly / Stomach",
+            "target": "gĩtende (pl. itende)",
+            "source": "Foot",
+            "pronunciation": "ku-gu-ru / gi-tende",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "nda",
+            "source": "Belly",
+            "pronunciation": "nda / ivu",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "ĩvũ",
+            "source": "Stomach",
             "pronunciation": "nda / ivu",
             "hint": "Wikipedia Embu_language"
           },
@@ -1793,11 +1988,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "njara — kĩvĩ",
-            "source": "Hand — Arm"
+            "source": "Hand — Arm."
           },
           {
             "target": "mũmero — nyondo",
-            "source": "Throat — Breast"
+            "source": "Throat — Breast."
           }
         ],
         "authoredExercises": [
@@ -1806,9 +2001,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What does \"njara\" mean in English?",
             "correctAnswer": "Hand",
             "options": [
-              "Hand",
               "Arm",
               "Throat",
+              "Hand",
               "Breast"
             ],
             "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
@@ -1917,8 +2112,14 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "rĩnga / kũgoma",
-            "source": "Strike / Hit",
+            "target": "rĩnga",
+            "source": "Strike",
+            "pronunciation": "ringa / ku-go-ma",
+            "hint": "Wikipedia Embu_language"
+          },
+          {
+            "target": "kũgoma",
+            "source": "Hit",
             "pronunciation": "ringa / ku-go-ma",
             "hint": "Wikipedia Embu_language"
           },
@@ -1937,11 +2138,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ũka — tũma",
-            "source": "Come — Send"
+            "source": "Come — Send."
           },
           {
             "target": "thiĩ — gũa",
-            "source": "Walk — Fall"
+            "source": "Walk — Fall."
           }
         ],
         "authoredExercises": [
@@ -1952,7 +2153,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Come",
               "Send",
-              "Walk / Go",
+              "Walk",
               "Fall"
             ],
             "hint": "Core vocabulary in Essential Action & Motion Verbs"
@@ -2071,11 +2272,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "thambia — atũra",
-            "source": "Wash — Split"
+            "source": "Wash — Split."
           },
           {
             "target": "va — ĩĩa",
-            "source": "Give — Steal"
+            "source": "Give — Steal."
           }
         ],
         "authoredExercises": [
@@ -2207,11 +2408,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ũtukũ — Ũmũnthĩ",
-            "source": "Night — Today"
+            "source": "Night — Today."
           },
           {
             "target": "Rũciũ — Ĩgoro",
-            "source": "Tomorrow — Yesterday"
+            "source": "Tomorrow — Yesterday."
           }
         ],
         "authoredExercises": [
@@ -2220,10 +2421,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What does \"ũtukũ\" mean in English?",
             "correctAnswer": "Night",
             "options": [
-              "Night",
               "Today",
               "Tomorrow",
-              "Yesterday"
+              "Yesterday",
+              "Night"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2333,11 +2534,11 @@ export const EMBU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ũtukũ — Mweri wa kana",
-            "source": "Night — April"
+            "source": "Night — April."
           },
           {
             "target": "Mũthenya kiumia-inĩ — Mweri wa kanana",
-            "source": "Day of the week — August"
+            "source": "Day of the week — August."
           }
         ],
         "authoredExercises": [
@@ -2346,10 +2547,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What does \"ũtukũ\" mean in English?",
             "correctAnswer": "Night",
             "options": [
-              "Night",
-              "April (Month 4)",
-              "Day of the week",
-              "August (Month 8)"
+              "April",
+              "August",
+              "Hour",
+              "Night"
             ],
             "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
           },
@@ -2466,10 +2667,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"-īyā\" in Embu?",
             "correctAnswer": "To steal",
             "options": [
-              "To steal",
-              "To stand / stop",
+              "To stand",
               "To sleep",
-              "To sit / remain / abide"
+              "To steal",
+              "To sit"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
@@ -2499,14 +2700,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Embu (Kĩembu) term for \"To see\": ___",
-            "correctAnswer": "-ōnā, -rōrā",
+            "correctAnswer": "-ōnā",
             "options": [
-              "-ōnā, -rōrā",
               "-ēndā",
+              "-ōnā",
               "-īyā",
               "-rūgāmā"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "-ōnā, -rōrā",
+              "-ōnā"
+            ]
           }
         ]
       },
@@ -2564,10 +2769,10 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"-mēnyā\" in Embu?",
             "correctAnswer": "To know",
             "options": [
-              "To know",
               "To kill",
               "To go",
-              "To give"
+              "To give",
+              "To know"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           },
@@ -2599,8 +2804,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Embu (Kĩembu) term for \"To die\": ___",
             "correctAnswer": "-kūā",
             "options": [
-              "-kūā",
               "-īnā",
+              "-kūā",
               "-mēnyā",
               "-ūragā"
             ],
@@ -2636,7 +2841,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "hu-ra ringga"
           },
           {
-            "target": "Ndi-, Tī-, -tī-, -tā-",
+            "target": "Ndi-, Tī-, -tī-, -tā",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "ndi ti ti ta"
           },
@@ -2669,15 +2874,19 @@ export const EMBU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"-gūrā, -ēndia\" in Embu?",
-            "correctAnswer": "To buy / To sell",
+            "prompt": "What is the English meaning of \"-gūrā\" in Embu?",
+            "correctAnswer": "To buy",
             "options": [
-              "To buy / To sell",
               "To beat",
-              "Not (with verb, as prefix, infix, or suffix)",
+              "To buy",
+              "Not",
               "No!"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "To buy / To sell",
+              "To buy"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2705,14 +2914,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Embu (Kĩembu) term for \"There\": ___",
-            "correctAnswer": "Hā-rīa, Kū-rīa",
+            "correctAnswer": "Hā-rīa",
             "options": [
-              "Hā-rīa, Kū-rīa",
               "N-jā",
-              "-gūrā, -ēndia",
-              "-hūrā, -rīnggā"
+              "-gūrā",
+              "Hā-rīa",
+              "-hūrā"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "Hā-rīa, Kū-rīa",
+              "Hā-rīa"
+            ]
           }
         ]
       },
@@ -2768,14 +2981,18 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"-thēnī\" in Embu (Kĩembu)?",
-            "correctAnswer": "In, inside",
+            "correctAnswer": "In",
             "options": [
-              "In, inside",
               "Here",
               "Far",
-              "Below, down"
+              "Below",
+              "In"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "In, inside",
+              "In"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2805,201 +3022,169 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Embu (Kĩembu) term for \"Behind\": ___",
             "correctAnswer": "Thūtha",
             "options": [
-              "Thūtha",
               "-thēnī",
               "Hā-hā",
-              "Kū-raihū"
+              "Kū-raihū",
+              "Thūtha"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu, Vol. I, pp. 98–112)"
           }
         ]
       },
-        {
+      {
         "id": "embu-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Embu (Kĩembu) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
+        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml).",
         "words": [
-                  {
-                            "target": "Wĩ mwega?",
-                            "source": "Hello",
-                            "pronunciation": "wee mweh-gah"
-                  },
-                  {
-                            "target": "Nĩ wega",
-                            "source": "Thank you",
-                            "pronunciation": "nee weh-gah moo-noh"
-                  },
-                  {
-                            "target": "Thayũ",
-                            "source": "Peace / blessing",
-                            "pronunciation": "thayu"
-                  },
-                  {
-                            "target": "Tigwa na wega",
-                            "source": "Goodbye, be blessed",
-                            "pronunciation": "tigwa na wega / tigwaa na thayu"
-                  },
-                  {
-                            "target": "Nĩwega mũno",
-                            "source": "Thank you very much",
-                            "pronunciation": "ni-we-ga mu-no"
-                  },
-                  {
-                            "target": "Thiĩ na thayũ",
-                            "source": "Safe journey / Go in peace",
-                            "pronunciation": "thiee na tha-yoo"
-                  },
-                  {
-                            "target": "Gī-kwa",
-                            "source": "Yam",
-                            "pronunciation": "gi-kwa"
-                  },
-                  {
-                            "target": "ĩtumbĩ",
-                            "source": "Egg",
-                            "pronunciation": "itumbi"
-                  },
-                  {
-                            "target": "irio",
-                            "source": "Food",
-                            "pronunciation": "i-rio"
-                  },
-                  {
-                            "target": "cumbĩ",
-                            "source": "Salt",
-                            "pronunciation": "cumbi"
-                  }
+          {
+            "target": "Wĩ mwega?",
+            "source": "Hello",
+            "pronunciation": "wee mweh-gah"
+          },
+          {
+            "target": "Nĩ wega",
+            "source": "Thank you",
+            "pronunciation": "nee weh-gah moo-noh"
+          },
+          {
+            "target": "Thayũ",
+            "source": "Peace / blessing",
+            "pronunciation": "thayu"
+          },
+          {
+            "target": "Tigwa na wega",
+            "source": "Goodbye, be blessed",
+            "pronunciation": "tigwa na wega / tigwaa na thayu"
+          },
+          {
+            "target": "Nĩwega mũno",
+            "source": "Thank you very much",
+            "pronunciation": "ni-we-ga mu-no"
+          },
+          {
+            "target": "Thiĩ na thayũ",
+            "source": "Safe journey / Go in peace",
+            "pronunciation": "thiee na tha-yoo"
+          },
+          {
+            "target": "Gī-kwa",
+            "source": "Yam",
+            "pronunciation": "gi-kwa"
+          },
+          {
+            "target": "ĩtumbĩ",
+            "source": "Egg",
+            "pronunciation": "itumbi"
+          },
+          {
+            "target": "irio",
+            "source": "Food",
+            "pronunciation": "i-rio"
+          },
+          {
+            "target": "cumbĩ",
+            "source": "Salt",
+            "pronunciation": "cumbi"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Wĩ mwega?",
-                            "source": "Hello"
-                  },
-                  {
-                            "target": "Nĩ wega",
-                            "source": "Thank you"
-                  },
-                  {
-                            "target": "Tigwa na wega",
-                            "source": "Goodbye, be blessed"
-                  },
-                  {
-                            "target": "Nĩwega mũno",
-                            "source": "Thank you very much"
-                  },
-                  {
-                            "target": "Ndarauka wega, nĩ wega mũno",
-                            "source": "I woke up well, thank you"
-                  },
-                  {
-                            "target": "Thiĩ na thayũ",
-                            "source": "Safe journey / Go in peace"
-                  },
-                  {
-                            "target": "N-g'aragu. M-būta",
-                            "source": "Hunger"
-                  },
-                  {
-                            "target": "Ma-guta. Ṅ-gorono",
-                            "source": "Fat, oil"
-                  }
+          {
+            "target": "Nĩ wega",
+            "source": "Thank you."
+          },
+          {
+            "target": "Tigwa na wega",
+            "source": "Goodbye, be blessed."
+          },
+          {
+            "target": "Nĩwega mũno",
+            "source": "Thank you very much."
+          },
+          {
+            "target": "Ndarauka wega, nĩ wega mũno",
+            "source": "I woke up well, thank you."
+          },
+          {
+            "target": "Thiĩ na thayũ",
+            "source": "Safe journey / Go in peace."
+          },
+          {
+            "target": "Ma-guta. Ṅ-gorono",
+            "source": "Fat, oil."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "embu-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Embu (Kĩembu) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
+        "culturalNote": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml).",
         "words": [
-                  {
-                            "target": "Ĩmwe",
-                            "source": "One",
-                            "pronunciation": "imwe"
-                  },
-                  {
-                            "target": "Igĩrĩ",
-                            "source": "Two",
-                            "pronunciation": "igiri"
-                  },
-                  {
-                            "target": "Ithathatũ",
-                            "source": "Six",
-                            "pronunciation": "ithathatu"
-                  },
-                  {
-                            "target": "Ikũmi",
-                            "source": "Ten",
-                            "pronunciation": "ikumi"
-                  },
-                  {
-                            "target": "Inya",
-                            "source": "Four",
-                            "pronunciation": "inya"
-                  },
-                  {
-                            "target": "Ithano",
-                            "source": "Five",
-                            "pronunciation": "itha-no"
-                  },
-                  {
-                            "target": "Kenda",
-                            "source": "Nine",
-                            "pronunciation": "kenda"
-                  },
-                  {
-                            "target": "Ithatũ",
-                            "source": "Three",
-                            "pronunciation": "ithatu"
-                  },
-                  {
-                            "target": "Mũgwanja",
-                            "source": "Seven",
-                            "pronunciation": "mugwanja"
-                  },
-                  {
-                            "target": "Inyanya",
-                            "source": "Eight",
-                            "pronunciation": "inyanya"
-                  }
+          {
+            "target": "Ĩmwe",
+            "source": "One",
+            "pronunciation": "imwe"
+          },
+          {
+            "target": "Igĩrĩ",
+            "source": "Two",
+            "pronunciation": "igiri"
+          },
+          {
+            "target": "Ithathatũ",
+            "source": "Six",
+            "pronunciation": "ithathatu"
+          },
+          {
+            "target": "Ikũmi",
+            "source": "Ten",
+            "pronunciation": "ikumi"
+          },
+          {
+            "target": "Inya",
+            "source": "Four",
+            "pronunciation": "inya"
+          },
+          {
+            "target": "Ithano",
+            "source": "Five",
+            "pronunciation": "itha-no"
+          },
+          {
+            "target": "Kenda",
+            "source": "Nine",
+            "pronunciation": "kenda"
+          },
+          {
+            "target": "Ithatũ",
+            "source": "Three",
+            "pronunciation": "ithatu"
+          },
+          {
+            "target": "Mũgwanja",
+            "source": "Seven",
+            "pronunciation": "mugwanja"
+          },
+          {
+            "target": "Inyanya",
+            "source": "Eight",
+            "pronunciation": "inyanya"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Mī-rōnggo ī-nā",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-tāno",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-gīrī",
-                            "source": "Twenty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-tātū",
-                            "source": "Thirty"
-                  },
-                  {
-                            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
-                            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)"
-                  },
-                  {
-                            "target": "Mū-rū wa maiya. Mū-ārī wa maitū",
-                            "source": "Sister"
-                  },
-                  {
-                            "target": "Mu-ru wa maiya",
-                            "source": "Brother"
-                  },
-                  {
-                            "target": "mũndũ mũrũme",
-                            "source": "Man / Men"
-                  }
+          {
+            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)."
+          },
+          {
+            "target": "mũndũ mũrũme",
+            "source": "Man / Men."
+          }
         ]
-}
+      }
     ]
   }
 ];

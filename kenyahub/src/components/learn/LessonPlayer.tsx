@@ -3,6 +3,7 @@
 
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { playCorrectChime, playComboChime, playWrongThud, playVictoryFanfare } from "@/lib/game-sfx";
 import {
   Check,
   ChevronLeft,
@@ -49,6 +50,7 @@ interface LessonPlayerProps {
 export default function LessonPlayer({
   skill,
   level,
+  progress,
   languageName,
   onComplete,
   onQuit,
@@ -58,17 +60,24 @@ export default function LessonPlayer({
   const buildLessonExercises = useCallback(() => {
     const reviewExercises: Exercise[] = reviewItems.map((item) => {
       const hasOptions = Array.isArray(item.options) && item.options.length >= 2;
-      const safeType =
-        (item.type === "multiple_choice" || item.type === "tap_what_you_hear" || item.type === "fill_blank") &&
+      const hasWordTiles = Array.isArray(item.wordTiles) && item.wordTiles.length >= 2;
+      let safeType = item.type || "translate_to_english";
+      if (
+        (safeType === "multiple_choice" || safeType === "tap_what_you_hear" || safeType === "fill_blank") &&
         !hasOptions
-          ? "translate_to_english"
-          : item.type || "translate_to_english";
+      ) {
+        safeType = "translate_to_english";
+      } else if ((safeType === "word_bank" || safeType === "reorder") && !hasWordTiles) {
+        safeType = "translate_to_english";
+      }
       return {
         type: safeType,
         prompt: item.prompt,
         correctAnswer: item.answer,
         acceptedAnswers: item.acceptedAnswers,
         options: hasOptions ? item.options : undefined,
+        wordTiles: hasWordTiles ? item.wordTiles : undefined,
+        sourceWord: item.sourceWord,
         hint: item.hint,
         reviewId: item.id,
       };
@@ -90,6 +99,8 @@ export default function LessonPlayer({
   const [missedExercises, setMissedExercises] = useState<Exercise[]>([]);
   const [reviewedItemIds, setReviewedItemIds] = useState<string[]>([]);
   const [streak, setStreak] = useState(0);
+  const [lastEarnedXp, setLastEarnedXp] = useState(XP_PER_CORRECT);
+  const [heartsLeft, setHeartsLeft] = useState(() => Math.max(1, progress?.hearts || MAX_HEARTS));
   const [wordsLearned, setWordsLearned] = useState<string[]>([]);
   const [startTime] = useState(Date.now());
 
@@ -218,8 +229,13 @@ export default function LessonPlayer({
       setFlashCorrect(true);
       const xp = usedHint ? XP_PER_CORRECT_WITH_HINT : XP_PER_CORRECT;
       const streakMultiplier = streak >= 5 ? 3 : streak >= 3 ? 2 : 1;
-      setXpEarned((v) => v + xp * streakMultiplier);
-      setStreak((v) => v + 1);
+      const earnedNow = xp * streakMultiplier;
+      setLastEarnedXp(earnedNow);
+      setXpEarned((v) => v + earnedNow);
+      const nextStreak = streak + 1;
+      setStreak(nextStreak);
+      if (nextStreak >= 3) playComboChime(nextStreak);
+      else playCorrectChime();
       if (exercise.reviewId) {
         setReviewedItemIds((ids) =>
           ids.includes(exercise.reviewId!) ? ids : [...ids, exercise.reviewId!]
@@ -232,8 +248,10 @@ export default function LessonPlayer({
         });
       }
     } else {
+      playWrongThud();
       setShakeWrong(true);
       setMistakes((v) => v + 1);
+      setHeartsLeft((h) => Math.max(0, h - 1));
       setStreak(0);
       setMissedExercises((items) =>
         items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
@@ -264,7 +282,7 @@ export default function LessonPlayer({
         perfectLesson: perfect,
         timeSpent: Math.round((Date.now() - startTime) / 1000),
         newWordsLearned: wordsLearned,
-        heartsRemaining: MAX_HEARTS,
+        heartsRemaining: Math.max(1, heartsLeft),
         reviewItems: missedExercises
           .filter((item) => item.type !== "match_pairs" && item.correctAnswer.trim())
           .map((item): ReviewItem => ({
@@ -275,12 +293,15 @@ export default function LessonPlayer({
             answer: item.correctAnswer,
             acceptedAnswers: item.acceptedAnswers,
             options: item.options,
+            wordTiles: item.wordTiles,
+            sourceWord: item.sourceWord,
             hint: item.hint,
             box: 1,
             dueAt: Date.now() + 10 * 60 * 1000,
           })),
         reviewedItemIds,
       };
+      playVictoryFanfare();
       setLessonComplete(true);
       setTimeout(() => onComplete(result), 100);
       return;
@@ -324,11 +345,20 @@ export default function LessonPlayer({
             setSelectedRight(null);
 
             if (matchedPairs.size + 1 >= (exercise.pairs?.length || 0)) {
+              playCorrectChime();
               setIsChecked(true);
               setIsCorrect(true);
               setFlashCorrect(true);
+              setLastEarnedXp(XP_PER_CORRECT);
               setXpEarned((v) => v + XP_PER_CORRECT);
               setStreak((v) => v + 1);
+              if (exercise.pairs) {
+                setWordsLearned((prev) => {
+                  const next = new Set(prev);
+                  exercise.pairs!.forEach((p) => next.add(p.left.toLowerCase()));
+                  return Array.from(next);
+                });
+              }
             }
           } else {
             setWrongMatch(true);
@@ -356,11 +386,20 @@ export default function LessonPlayer({
             setSelectedRight(null);
 
             if (matchedPairs.size + 1 >= (exercise.pairs?.length || 0)) {
+              playCorrectChime();
               setIsChecked(true);
               setIsCorrect(true);
               setFlashCorrect(true);
+              setLastEarnedXp(XP_PER_CORRECT);
               setXpEarned((v) => v + XP_PER_CORRECT);
               setStreak((v) => v + 1);
+              if (exercise.pairs) {
+                setWordsLearned((prev) => {
+                  const next = new Set(prev);
+                  exercise.pairs!.forEach((p) => next.add(p.left.toLowerCase()));
+                  return Array.from(next);
+                });
+              }
             }
           } else {
             setWrongMatch(true);
@@ -1039,9 +1078,9 @@ export default function LessonPlayer({
                     : "Correct!"
                   : "Incorrect"}
               </span>
-              {isCorrect && !usedHint && (
+              {isCorrect && (
                 <span className="ml-auto text-xs font-semibold text-gold">
-                  +{XP_PER_CORRECT * (streak >= 5 ? 3 : streak >= 3 ? 2 : 1)} XP
+                  +{lastEarnedXp} XP
                 </span>
               )}
             </div>

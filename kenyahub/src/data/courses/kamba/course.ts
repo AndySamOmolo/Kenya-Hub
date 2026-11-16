@@ -136,9 +136,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Come here\" in Kĩkamba?",
             "correctAnswer": "Ũka haha",
             "options": [
-              "Ũka haha",
               "Ete maanzi",
               "Ete lĩu",
+              "Ũka haha",
               "Wĩmweo"
             ],
             "hint": "A welcoming direction"
@@ -183,10 +183,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"Nĩ _____ mũno.\" (Very good.)",
             "correctAnswer": "nzeo",
             "options": [
-              "nzeo",
               "aiee",
               "kĩoko",
-              "wĩoo"
+              "wĩoo",
+              "nzeo"
             ],
             "hint": "Kamba word for good / fine"
           }
@@ -298,16 +298,16 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Ilĩ",
               "Itano"
             ],
-            "hint": "Cognate with Swahili tatu"
+            "hint": "Starts with \"It…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Twenty\" in Kĩkamba?",
             "correctAnswer": "Mĩrongo ĩlĩ",
             "options": [
-              "Mĩrongo ĩlĩ",
               "Ĩkũmi",
               "Ĩana",
+              "Mĩrongo ĩlĩ",
               "Thanthatũ"
             ],
             "hint": "Literally means \"two tens\""
@@ -442,8 +442,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mwaitũ\" mean in Kĩkamba?",
             "correctAnswer": "Mother",
             "options": [
-              "Mother",
               "Father",
+              "Mother",
               "Child",
               "Friend"
             ],
@@ -454,10 +454,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Children\" (plural) in Kĩkamba?",
             "correctAnswer": "Syana",
             "options": [
-              "Syana",
               "Mwana",
               "Aka",
-              "Arata"
+              "Arata",
+              "Syana"
             ],
             "hint": "Plural of Mwana"
           },
@@ -565,8 +565,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "People",
               "Kamba people",
-              "Kamba language",
-              "Person"
+              "Person",
+              "Kamba language"
             ],
             "hint": "Plural: Andũ (people)"
           },
@@ -576,8 +576,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "People",
             "options": [
               "Kamba people",
-              "Kamba language",
               "People",
+              "Kamba language",
               "Person"
             ],
             "hint": "Plural of mundu"
@@ -599,8 +599,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Kamba people\" in Kamba?",
             "correctAnswer": "Akamba",
             "options": [
-              "Akamba",
               "Mũndũ",
+              "Akamba",
               "Andũ",
               "Kĩkamba"
             ],
@@ -611,10 +611,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Kamba language\" in Kamba?",
             "correctAnswer": "Kĩkamba",
             "options": [
+              "Kĩkamba",
               "Mũndũ",
               "Andũ",
-              "Akamba",
-              "Kĩkamba"
+              "Akamba"
             ],
             "hint": "kee-kahm-bah"
           },
@@ -647,9 +647,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Mũsiani",
             "options": [
               "Mũndũ",
+              "Mũsiani",
               "Andũ",
-              "Akamba",
-              "Mũsiani"
+              "Akamba"
             ],
             "hint": "Young unmarried male"
           }
@@ -752,14 +752,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Mũsyĩ\" mean in Kĩkamba?",
-            "correctAnswer": "Homestead / Village",
+            "correctAnswer": "Homestead",
             "options": [
-              "Homestead / Village",
               "Bow and arrow",
               "Wild bush",
-              "Water well"
+              "Water well",
+              "Homestead"
             ],
-            "hint": "The family compound"
+            "hint": "The family compound",
+            "acceptedAnswers": [
+              "Homestead / Village",
+              "Homestead"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -771,7 +775,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Kĩĩma",
               "Ũta"
             ],
-            "hint": "Pronounced mah-ah-ee, also maanzi"
+            "hint": "Starts with \"Ma…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -885,26 +889,34 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Ng'ombe\" in Kamba?",
-            "correctAnswer": "Cow / Cattle",
+            "correctAnswer": "Cow",
             "options": [
-              "He-goat / Billy-goat",
+              "He-goat",
+              "Cow",
               "She-goat",
-              "Bull",
-              "Cow / Cattle"
+              "Bull"
             ],
-            "hint": "Primary herd animal"
+            "hint": "Primary herd animal",
+            "acceptedAnswers": [
+              "Cow / Cattle",
+              "Cow"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Nthenge\" in Kamba?",
-            "correctAnswer": "He-goat / Billy-goat",
+            "correctAnswer": "He-goat",
             "options": [
               "She-goat",
+              "He-goat",
               "Bull",
-              "He-goat / Billy-goat",
-              "Cow / Cattle"
+              "Cow"
             ],
-            "hint": "Mature male goat"
+            "hint": "Mature male goat",
+            "acceptedAnswers": [
+              "He-goat / Billy-goat",
+              "He-goat"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -912,9 +924,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "She-goat",
             "options": [
               "Bull",
-              "She-goat",
-              "Cow / Cattle",
-              "He-goat / Billy-goat"
+              "Cow",
+              "He-goat",
+              "She-goat"
             ],
             "hint": "Caprine herd animal"
           },
@@ -923,10 +935,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"She-goat\" in Kamba?",
             "correctAnswer": "Mbũi",
             "options": [
-              "Mbũi",
               "Ng'ombe",
               "Nthenge",
-              "Ĩvwi"
+              "Ĩvwi",
+              "Mbũi"
             ],
             "hint": "m-boo-ee"
           },
@@ -1078,24 +1090,28 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"To eat\" in Kĩkamba?",
             "correctAnswer": "Kũya",
             "options": [
-              "Kũya",
               "Kũnywa",
               "Kũthi",
-              "Kũka"
+              "Kũka",
+              "Kũya"
             ],
             "hint": "Infinitive for consuming nourishment"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kũthũkũma\" mean?",
-            "correctAnswer": "To work / Labor",
+            "correctAnswer": "To work",
             "options": [
-              "To work / Labor",
               "To pray",
               "To drink",
+              "To work",
               "To see"
             ],
-            "hint": "Productive activity"
+            "hint": "Productive activity",
+            "acceptedAnswers": [
+              "To work / Labor",
+              "To work"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1230,8 +1246,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Where are you going?",
             "options": [
               "What do you want?",
-              "Where have you come from?",
               "Where are you going?",
+              "Where have you come from?",
               "What is your name?"
             ],
             "hint": "Destination inquiry"
@@ -1241,8 +1257,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Wĩndakĩ?\" in Kamba?",
             "correctAnswer": "What do you want?",
             "options": [
-              "Where have you come from?",
               "What do you want?",
+              "Where have you come from?",
               "What is your name?",
               "Where are you going?"
             ],
@@ -1267,8 +1283,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Wĩta wata?",
               "Ũthi naku?",
-              "Wĩndakĩ?",
-              "Ũumite va?"
+              "Ũumite va?",
+              "Wĩndakĩ?"
             ],
             "hint": "oo-oo-mee-teh vah"
           },
@@ -1388,24 +1404,28 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is an \"Ithembo\" in Akamba spiritual ecology?",
-            "correctAnswer": "Sacred tree shrine / Sanctuary",
+            "correctAnswer": "Sacred tree shrine",
             "options": [
-              "Sacred tree shrine / Sanctuary",
               "Trading market",
               "Hunting bow",
-              "Iron forge"
+              "Iron forge",
+              "Sacred tree shrine"
             ],
-            "hint": "A protected grove dedicated to prayer and offerings"
+            "hint": "A protected grove dedicated to prayer and offerings",
+            "acceptedAnswers": [
+              "Sacred tree shrine / Sanctuary",
+              "Sacred tree shrine"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "Which sacred covenant stone was sworn to seal truth in traditional disputes?",
             "correctAnswer": "Kĩthĩto",
             "options": [
-              "Kĩthĩto",
               "Mavai",
               "Mũsyĩ",
-              "Mũtĩ"
+              "Mũtĩ",
+              "Kĩthĩto"
             ],
             "hint": "Solemn oath object documented by Hobley (1922)"
           },
@@ -1534,9 +1554,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "How are you?",
             "options": [
               "I am fine",
-              "Hello / Salutation",
-              "What's the news / What's up?",
-              "How are you?"
+              "Hello",
+              "How are you?",
+              "What's the news"
             ],
             "hint": "Standard greeting — literally 'News?'"
           },
@@ -1545,8 +1565,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Nĩ mũseo\" mean in English?",
             "correctAnswer": "I am fine",
             "options": [
-              "Hello / Salutation",
-              "What's the news / What's up?",
+              "Hello",
+              "What's the news",
               "I am fine",
               "How are you?"
             ],
@@ -1555,23 +1575,27 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"O voo\" mean in English?",
-            "correctAnswer": "Hello / Salutation",
+            "correctAnswer": "Hello",
             "options": [
-              "What's the news / What's up?",
-              "Hello / Salutation",
+              "What's the news",
               "How are you?",
-              "I am fine"
+              "I am fine",
+              "Hello"
             ],
-            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'"
+            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'",
+            "acceptedAnswers": [
+              "Hello / Salutation",
+              "Hello"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Hello / Salutation\" in Kamba?",
             "correctAnswer": "O voo",
             "options": [
-              "O voo",
               "Ũvoo?",
               "Nĩ mũseo",
+              "O voo",
               "Wĩa?"
             ],
             "hint": "oh voh"
@@ -1594,9 +1618,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Wĩa mwau wa ũthukũ",
             "options": [
               "Nĩ mũseo",
-              "O voo",
               "Wĩa mwau wa ũthukũ",
-              "Ũvoo?"
+              "O voo",
+              "Nĩ vaa mũno"
             ],
             "hint": "wee-ah mwah-oo wah oo-thoo-koo"
           },
@@ -1628,10 +1652,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"How are you?\" in Kamba (Kĩkamba).",
             "correctAnswer": "Ũvoo?",
             "options": [
-              "Ũvoo?",
               "Nĩ mũseo",
               "O voo",
-              "Wĩa?"
+              "Wĩa?",
+              "Ũvoo?"
             ],
             "hint": "oo-voh"
           }
@@ -1760,10 +1784,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Eight\" in Kamba?",
             "correctAnswer": "Nyaanya",
             "options": [
-              "Nyaanya",
               "Ithano",
               "Thanthantũ",
-              "Ĩkũmi na ĩmwe"
+              "Ĩkũmi na ĩmwe",
+              "Nyaanya"
             ],
             "hint": "nyah-ah-nyah"
           },
@@ -1774,8 +1798,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Ithano",
               "Thanthantũ",
-              "Nyaanya",
-              "Ĩkũmi na ĩmwe"
+              "Ĩkũmi na ĩmwe",
+              "Nyaanya"
             ],
             "hint": "ee-koo-mee nah ee-mweh"
           },
@@ -1786,8 +1810,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Thanthantũ",
               "Nyaanya",
-              "Mĩongo ĩlĩ",
-              "Ithano"
+              "Ithano",
+              "Mĩongo ĩlĩ"
             ],
             "hint": "mee-ohn-goh ee-lee"
           },
@@ -1940,9 +1964,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Father",
             "options": [
               "Mother",
+              "Father",
               "Child",
-              "Boy / Male youth",
-              "Father"
+              "Boy"
             ],
             "hint": "Dialects: Ulu uses 'Nau' or 'Asa'; Nganyawa uses 'Atsa' or 'Bata'"
           },
@@ -1951,9 +1975,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mwaitũ / Ĩvaa\" mean in English?",
             "correctAnswer": "Mother",
             "options": [
-              "Child",
-              "Boy / Male youth",
               "Mother",
+              "Child",
+              "Boy",
               "Father"
             ],
             "hint": "Hinde Ulu: 'Maiitu'; Nganyawa: 'Mwaitu'"
@@ -1963,21 +1987,21 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Kaana\" mean in English?",
             "correctAnswer": "Child",
             "options": [
-              "Boy / Male youth",
-              "Child",
+              "Boy",
               "Father",
-              "Mother"
+              "Mother",
+              "Child"
             ],
-            "hint": "Plural: Twana (children)"
+            "hint": "Starts with \"Ch…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Child\" in Kamba?",
             "correctAnswer": "Kaana",
             "options": [
+              "Asa",
               "Kaana",
-              "Asa / Tata",
-              "Mwaitũ / Ĩvaa",
+              "Mwaitũ",
               "Kavĩsĩ"
             ],
             "hint": "kah-ah-nah"
@@ -1987,10 +2011,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Boy / Male youth\" in Kamba?",
             "correctAnswer": "Kavĩsĩ",
             "options": [
-              "Asa / Tata",
-              "Mwaitũ / Ĩvaa",
-              "Kaana",
-              "Kavĩsĩ"
+              "Asa",
+              "Kavĩsĩ",
+              "Mwaitũ",
+              "Kaana"
             ],
             "hint": "kah-vee-see"
           },
@@ -1999,10 +2023,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Girl / Maiden\" in Kamba?",
             "correctAnswer": "Kelĩtu",
             "options": [
-              "Mwaitũ / Ĩvaa",
+              "Mwaitũ",
               "Kaana",
               "Kelĩtu",
-              "Asa / Tata"
+              "Asa"
             ],
             "hint": "keh-lee-too"
           },
@@ -2032,14 +2056,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete: \"_____\" means \"Father\" in Kamba (Kĩkamba).",
-            "correctAnswer": "Asa / Tata",
+            "correctAnswer": "Asa",
             "options": [
-              "Asa / Tata",
-              "Mwaitũ / Ĩvaa",
+              "Mwaitũ",
               "Kaana",
-              "Kavĩsĩ"
+              "Kavĩsĩ",
+              "Asa"
             ],
-            "hint": "ah-sah / tah-tah"
+            "hint": "ah-sah / tah-tah",
+            "acceptedAnswers": [
+              "Asa / Tata",
+              "Asa"
+            ]
           }
         ]
       },
@@ -2075,7 +2103,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "ka-bi-si"
           },
           {
-            "target": "mundu, pl. andu",
+            "target": "mundu",
             "source": "Man",
             "pronunciation": "mundu"
           }
@@ -2083,11 +2111,11 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mũnyanya — Mũme",
-            "source": "Friend — Husband"
+            "source": "Friend — Husband."
           },
           {
             "target": "Mũtongoi — kabisi",
-            "source": "Guide — Boy"
+            "source": "Guide — Boy."
           }
         ],
         "authoredExercises": [
@@ -2096,10 +2124,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mũnyanya\" mean in English?",
             "correctAnswer": "Friend",
             "options": [
-              "Friend",
               "Husband",
-              "Guide / Caravan leader",
-              "Boy"
+              "Guide",
+              "Boy",
+              "Friend"
             ],
             "hint": "Core vocabulary in Family & Relationships (Part 2)"
           },
@@ -2269,10 +2297,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Syũa\" mean in English?",
             "correctAnswer": "Sun",
             "options": [
+              "Sun",
               "Moon",
               "Star",
-              "Sky / Cloud",
-              "Sun"
+              "Sky"
             ],
             "hint": "Hinde Ulu: sua; Nganyawa: djua / thua"
           },
@@ -2282,8 +2310,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Moon",
             "options": [
               "Star",
-              "Sky / Cloud",
               "Moon",
+              "Sky",
               "Sun"
             ],
             "hint": "Hinde Ulu: mwei; Nganyawa: mbui; also means month"
@@ -2293,12 +2321,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ndata\" mean in English?",
             "correctAnswer": "Star",
             "options": [
-              "Sky / Cloud",
-              "Star",
+              "Sky",
               "Sun",
+              "Star",
               "Moon"
             ],
-            "hint": "Night sky star (Hinde: ndata)"
+            "hint": "Starts with \"St…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2318,9 +2346,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ĩtu",
             "options": [
               "Syũa",
+              "Ĩtu",
               "Mwei",
-              "Ndata",
-              "Ĩtu"
+              "Ndata"
             ],
             "hint": "ee-too"
           },
@@ -2331,8 +2359,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Mwei",
               "Ndata",
-              "Mbua",
-              "Syũa"
+              "Syũa",
+              "Mbua"
             ],
             "hint": "m-boo-ah"
           },
@@ -2364,8 +2392,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"Sun\" in Kamba (Kĩkamba).",
             "correctAnswer": "Syũa",
             "options": [
-              "Syũa",
               "Mwei",
+              "Syũa",
               "Ndata",
               "Ĩtu"
             ],
@@ -2482,14 +2510,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ng'ombe\" mean in English?",
-            "correctAnswer": "Cow / Cattle",
+            "correctAnswer": "Cow",
             "options": [
               "Bull",
               "Goat",
               "Sheep",
-              "Cow / Cattle"
+              "Cow"
             ],
-            "hint": "Domestic cattle (Hinde: ngombe)"
+            "hint": "Domestic cattle (Hinde: ngombe)",
+            "acceptedAnswers": [
+              "Cow / Cattle",
+              "Cow"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -2497,9 +2529,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Bull",
             "options": [
               "Goat",
-              "Sheep",
               "Bull",
-              "Cow / Cattle"
+              "Sheep",
+              "Cow"
             ],
             "hint": "Hinde: nzao"
           },
@@ -2510,7 +2542,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Sheep",
               "Goat",
-              "Cow / Cattle",
+              "Cow",
               "Bull"
             ],
             "hint": "Plural: Mbuĩ (Hinde: mbuii)"
@@ -2520,10 +2552,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Goat\" in Kamba?",
             "correctAnswer": "Mbuĩ",
             "options": [
-              "Mbuĩ",
               "Ng'ombe",
               "Nzao",
-              "Ĩlondu"
+              "Ĩlondu",
+              "Mbuĩ"
             ],
             "hint": "m-boo-ee"
           },
@@ -2534,22 +2566,26 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Ng'ombe",
               "Nzao",
-              "Mbuĩ",
-              "Ĩlondu"
+              "Ĩlondu",
+              "Mbuĩ"
             ],
             "hint": "ee-lohn-doo"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Dog\" in Kamba?",
-            "correctAnswer": "Kĩtĩ / Ngiti",
+            "correctAnswer": "Kĩtĩ",
             "options": [
               "Nzao",
               "Mbuĩ",
-              "Kĩtĩ / Ngiti",
+              "Kĩtĩ",
               "Ng'ombe"
             ],
-            "hint": "kee-tee / n-gee-tee"
+            "hint": "kee-tee / n-gee-tee",
+            "acceptedAnswers": [
+              "Kĩtĩ / Ngiti",
+              "Kĩtĩ"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2579,8 +2615,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"Cow / Cattle\" in Kamba (Kĩkamba).",
             "correctAnswer": "Ng'ombe",
             "options": [
-              "Ng'ombe",
               "Nzao",
+              "Ng'ombe",
               "Mbuĩ",
               "Ĩlondu"
             ],
@@ -2661,8 +2697,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Giraffe",
               "Crocodile",
-              "Baboon",
-              "Zebra"
+              "Zebra",
+              "Baboon"
             ],
             "hint": "Hinde Ulu: nzaii; Nganyawa: mbuvu"
           },
@@ -2671,9 +2707,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ndia\" mean in English?",
             "correctAnswer": "Giraffe",
             "options": [
+              "Giraffe",
               "Crocodile",
               "Baboon",
-              "Giraffe",
               "Zebra"
             ],
             "hint": "Hinde: ndia"
@@ -2684,8 +2720,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Crocodile",
             "options": [
               "Baboon",
-              "Crocodile",
               "Zebra",
+              "Crocodile",
               "Giraffe"
             ],
             "hint": "Hinde: kinyangi"
@@ -2709,8 +2745,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Nzaĩ",
               "Ndia",
-              "Kĩnyangĩ",
-              "Ngũlĩ"
+              "Ngũlĩ",
+              "Kĩnyangĩ"
             ],
             "hint": "n-goo-lee"
           },
@@ -2720,8 +2756,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Nzoka",
             "options": [
               "Ndia",
-              "Kĩnyangĩ",
               "Nzoka",
+              "Kĩnyangĩ",
               "Nzaĩ"
             ],
             "hint": "n-zoh-kah"
@@ -2754,12 +2790,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"Zebra\" in Kamba (Kĩkamba).",
             "correctAnswer": "Nzaĩ",
             "options": [
-              "Nzaĩ",
               "Ndia",
               "Kĩnyangĩ",
-              "Ngũlĩ"
+              "Ngũlĩ",
+              "Nzaĩ"
             ],
-            "hint": "n-zah-ee"
+            "hint": "Starts with \"Nz…\" (4 letters)"
           }
         ]
       }
@@ -2806,8 +2842,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde: mbēmba"
           },
           {
-            "target": "Nthoogo / Nthzũũ",
-            "source": "Beans (pigeon peas / pulses)",
+            "target": "Nthoogo",
+            "source": "Beans",
+            "pronunciation": "nthoo-go / nthzuu",
+            "hint": "Hinde: inthoogo; tree beans: nthzuu"
+          },
+          {
+            "target": "Nthzũũ",
+            "source": "pulses)",
             "pronunciation": "nthoo-go / nthzuu",
             "hint": "Hinde: inthoogo; tree beans: nthzuu"
           },
@@ -2892,12 +2934,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ĩya\" mean in English?",
             "correctAnswer": "Milk",
             "options": [
+              "Milk",
               "Meat",
               "Maize",
-              "Milk",
               "Food"
             ],
-            "hint": "Fresh milk (Hinde: iya); sour/buttermilk: kalia"
+            "hint": "Starts with \"Mi…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2905,8 +2947,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Meat",
             "options": [
               "Maize",
-              "Meat",
               "Food",
+              "Meat",
               "Milk"
             ],
             "hint": "Hinde Ulu: nyamma; Nganyawa: nama"
@@ -2917,7 +2959,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Nyama",
             "options": [
               "Nyama",
-              "Lĩu / Ĩlya",
+              "Lĩu",
               "Ĩya",
               "Mbemba"
             ],
@@ -2928,24 +2970,28 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Maize\" in Kamba?",
             "correctAnswer": "Mbemba",
             "options": [
-              "Lĩu / Ĩlya",
+              "Lĩu",
               "Ĩya",
-              "Nyama",
-              "Mbemba"
+              "Mbemba",
+              "Nyama"
             ],
             "hint": "m-behm-bah"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Beans (pigeon peas / pulses)\" in Kamba?",
-            "correctAnswer": "Nthoogo / Nthzũũ",
+            "prompt": "How do you say \"Beans\" in Kamba?",
+            "correctAnswer": "Nthoogo",
             "options": [
               "Ĩya",
               "Nyama",
-              "Nthoogo / Nthzũũ",
-              "Lĩu / Ĩlya"
+              "Lĩu",
+              "Nthoogo"
             ],
-            "hint": "n-thoh-goh / n-thzoo"
+            "hint": "n-thoh-goh / n-thzoo",
+            "acceptedAnswers": [
+              "Nthoogo / Nthzũũ",
+              "Nthoogo"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2973,14 +3019,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete: \"_____\" means \"Food\" in Kamba (Kĩkamba).",
-            "correctAnswer": "Lĩu / Ĩlya",
+            "correctAnswer": "Lĩu",
             "options": [
-              "Lĩu / Ĩlya",
               "Ĩya",
+              "Lĩu",
               "Nyama",
               "Mbemba"
             ],
-            "hint": "lee-oo / ee-lyah"
+            "hint": "lee-oo / ee-lyah",
+            "acceptedAnswers": [
+              "Lĩu / Ĩlya",
+              "Lĩu"
+            ]
           }
         ]
       }
@@ -3096,9 +3146,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Body",
             "options": [
               "Head",
+              "Body",
               "Eye",
-              "Ear",
-              "Body"
+              "Ear"
             ],
             "hint": "Hinde Ulu: mwi; Nganyawa: mwili"
           },
@@ -3119,8 +3169,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ĩtho\" mean in English?",
             "correctAnswer": "Eye",
             "options": [
-              "Ear",
               "Eye",
+              "Ear",
               "Body",
               "Head"
             ],
@@ -3131,12 +3181,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Eye\" in Kamba?",
             "correctAnswer": "Ĩtho",
             "options": [
-              "Ĩtho",
               "Mwĩĩ",
               "Mũtwe",
+              "Ĩtho",
               "Kũtũ"
             ],
-            "hint": "ee-thoh"
+            "hint": "Starts with \"Ĩt…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3145,8 +3195,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Mwĩĩ",
               "Mũtwe",
-              "Ĩtho",
-              "Kũtũ"
+              "Kũtũ",
+              "Ĩtho"
             ],
             "hint": "koo-too"
           },
@@ -3157,8 +3207,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Mũtwe",
               "Ĩtho",
-              "Ĩnyũ",
-              "Mwĩĩ"
+              "Mwĩĩ",
+              "Ĩnyũ"
             ],
             "hint": "ee-nyoo"
           },
@@ -3190,9 +3240,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"Body\" in Kamba (Kĩkamba).",
             "correctAnswer": "Mwĩĩ",
             "options": [
-              "Mwĩĩ",
               "Mũtwe",
               "Ĩtho",
+              "Mwĩĩ",
               "Kũtũ"
             ],
             "hint": "mwee-ee"
@@ -3274,47 +3324,55 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ĩvũ\" mean in English?",
-            "correctAnswer": "Stomach / Belly",
+            "correctAnswer": "Stomach",
             "options": [
               "Back",
-              "Arm / Hand",
-              "Leg / Foot",
-              "Stomach / Belly"
+              "Arm",
+              "Leg",
+              "Stomach"
             ],
-            "hint": "Hinde Ulu: ebŭ; Nganyawa: ibu"
+            "hint": "Hinde Ulu: ebŭ; Nganyawa: ibu",
+            "acceptedAnswers": [
+              "Stomach / Belly",
+              "Stomach"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Mũongo\" mean in English?",
             "correctAnswer": "Back",
             "options": [
-              "Arm / Hand",
-              "Leg / Foot",
-              "Back",
-              "Stomach / Belly"
+              "Arm",
+              "Leg",
+              "Stomach",
+              "Back"
             ],
             "hint": "Hinde Ulu: muongo; Nganyawa: moongo"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kwoko\" mean in English?",
-            "correctAnswer": "Arm / Hand",
+            "correctAnswer": "Arm",
             "options": [
-              "Leg / Foot",
-              "Arm / Hand",
-              "Stomach / Belly",
+              "Leg",
+              "Arm",
+              "Stomach",
               "Back"
             ],
-            "hint": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko"
+            "hint": "Hinde Ulu: kuoko; Nganyawa: ntha; Plural: Moko",
+            "acceptedAnswers": [
+              "Arm / Hand",
+              "Arm"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Arm / Hand\" in Kamba?",
             "correctAnswer": "Kwoko",
             "options": [
-              "Kwoko",
               "Ĩvũ",
               "Mũongo",
+              "Kwoko",
               "Kũũ"
             ],
             "hint": "kwoh-koh"
@@ -3324,10 +3382,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Leg / Foot\" in Kamba?",
             "correctAnswer": "Kũũ",
             "options": [
+              "Kũũ",
               "Ĩvũ",
               "Mũongo",
-              "Kwoko",
-              "Kũũ"
+              "Kwoko"
             ],
             "hint": "koo-oo"
           },
@@ -3337,8 +3395,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ĩvĩndĩ",
             "options": [
               "Mũongo",
-              "Kwoko",
               "Ĩvĩndĩ",
+              "Kwoko",
               "Ĩvũ"
             ],
             "hint": "ee-veen-dee"
@@ -3441,8 +3499,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde Ulu: ngussu; Nganyawa: chõõndo; famous sisal woven bag"
           },
           {
-            "target": "Kĩvĩla / Kĩtũmbĩ",
-            "source": "Stool / Chair",
+            "target": "Kĩvĩla",
+            "source": "Stool",
+            "pronunciation": "ki-vi-la / ki-tumbi",
+            "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi"
+          },
+          {
+            "target": "Kĩtũmbĩ",
+            "source": "Chair",
             "pronunciation": "ki-vi-la / ki-tumbi",
             "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi"
           },
@@ -3453,8 +3517,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde Ulu: nuungu; Nganyawa: ithillia / mbiitziu"
           },
           {
-            "target": "Kĩkũũ / Kĩthanzya",
-            "source": "Calabash / Gourd",
+            "target": "Kĩkũũ",
+            "source": "Calabash",
+            "pronunciation": "ki-kuu / kithanzya",
+            "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia"
+          },
+          {
+            "target": "Kĩthanzya",
+            "source": "Gourd",
             "pronunciation": "ki-kuu / kithanzya",
             "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia"
           },
@@ -3483,8 +3553,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde: wenzi; traditional fine iron blade"
           },
           {
-            "target": "Ũlĩ / Ndi",
-            "source": "Rope / Cord",
+            "target": "Ũlĩ",
+            "source": "Rope",
+            "pronunciation": "uli / ndi",
+            "hint": "Hinde Ulu: uli; Nganyawa: ndi"
+          },
+          {
+            "target": "Ndi",
+            "source": "Cord",
             "pronunciation": "uli / ndi",
             "hint": "Hinde Ulu: uli; Nganyawa: ndi"
           }
@@ -3510,7 +3586,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Knife",
             "options": [
               "Arrow",
-              "Quiver (for arrows)",
+              "Quiver",
               "Spear",
               "Knife"
             ],
@@ -3521,24 +3597,28 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mũsye\" mean in English?",
             "correctAnswer": "Arrow",
             "options": [
-              "Quiver (for arrows)",
+              "Quiver",
               "Spear",
-              "Arrow",
-              "Knife"
+              "Knife",
+              "Arrow"
             ],
             "hint": "Hinde Ulu: musie; Nganyawa: mutchi"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Thyaka\" mean in English?",
-            "correctAnswer": "Quiver (for arrows)",
+            "correctAnswer": "Quiver",
             "options": [
               "Spear",
-              "Quiver (for arrows)",
+              "Quiver",
               "Knife",
               "Arrow"
             ],
-            "hint": "Hinde Ulu: thiaka; Nganyawa: ithiaga"
+            "hint": "Hinde Ulu: thiaka; Nganyawa: ithiaga",
+            "acceptedAnswers": [
+              "Quiver (for arrows)",
+              "Quiver"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -3558,9 +3638,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ĩtũmũ",
             "options": [
               "Kaviu",
+              "Ĩtũmũ",
               "Mũsye",
-              "Thyaka",
-              "Ĩtũmũ"
+              "Thyaka"
             ],
             "hint": "ee-too-moo"
           },
@@ -3570,8 +3650,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ngao",
             "options": [
               "Mũsye",
-              "Thyaka",
               "Ngao",
+              "Thyaka",
               "Kaviu"
             ],
             "hint": "n-gah-oh"
@@ -3722,14 +3802,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kũĩma\" mean in English?",
-            "correctAnswer": "To cultivate / farm",
+            "correctAnswer": "To cultivate",
             "options": [
               "To build",
               "To cook",
-              "To see",
-              "To cultivate / farm"
+              "To cultivate",
+              "To see"
             ],
-            "hint": "Hinde: kuimu"
+            "hint": "Hinde: kuimu",
+            "acceptedAnswers": [
+              "To cultivate / farm",
+              "To cultivate"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -3739,7 +3823,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "To cook",
               "To see",
               "To build",
-              "To cultivate / farm"
+              "To cultivate"
             ],
             "hint": "Hinde: kuaka"
           },
@@ -3748,9 +3832,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Kũua\" mean in English?",
             "correctAnswer": "To cook",
             "options": [
-              "To see",
               "To cook",
-              "To cultivate / farm",
+              "To see",
+              "To cultivate",
               "To build"
             ],
             "hint": "Hinde Ulu: kuuer; Nganyawa: kūūē"
@@ -3760,24 +3844,28 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"To cook\" in Kamba?",
             "correctAnswer": "Kũua",
             "options": [
-              "Kũua",
               "Kũĩma",
               "Kwaka",
-              "Kũona / Kũkĩĩtha"
+              "Kũua",
+              "Kũona"
             ],
             "hint": "koo-oo-ah"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To see\" in Kamba?",
-            "correctAnswer": "Kũona / Kũkĩĩtha",
+            "correctAnswer": "Kũona",
             "options": [
               "Kũĩma",
               "Kwaka",
-              "Kũua",
-              "Kũona / Kũkĩĩtha"
+              "Kũona",
+              "Kũua"
             ],
-            "hint": "koo-oh-nah / koo-kee-ee-thah"
+            "hint": "koo-oh-nah / koo-kee-ee-thah",
+            "acceptedAnswers": [
+              "Kũona / Kũkĩĩtha",
+              "Kũona"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -3785,8 +3873,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Kũneena",
             "options": [
               "Kwaka",
-              "Kũua",
               "Kũneena",
+              "Kũua",
               "Kũĩma"
             ],
             "hint": "koo-neh-eh-nah"
@@ -3819,10 +3907,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"To cultivate / farm\" in Kamba (Kĩkamba).",
             "correctAnswer": "Kũĩma",
             "options": [
-              "Kũĩma",
               "Kwaka",
               "Kũua",
-              "Kũona / Kũkĩĩtha"
+              "Kũĩma",
+              "Kũona"
             ],
             "hint": "koo-ee-mah"
           }
@@ -3901,8 +3989,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "To die",
               "To wash",
-              "To laugh",
-              "To run"
+              "To run",
+              "To laugh"
             ],
             "hint": "Hinde: sēēmba"
           },
@@ -3911,9 +3999,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Kũkwa\" mean in English?",
             "correctAnswer": "To die",
             "options": [
+              "To die",
               "To wash",
               "To laugh",
-              "To die",
               "To run"
             ],
             "hint": "Hinde Ulu: kwie; Nganyawa: kugua"
@@ -3923,8 +4011,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Kũthamba\" mean in English?",
             "correctAnswer": "To wash",
             "options": [
-              "To laugh",
               "To wash",
+              "To laugh",
               "To run",
               "To die"
             ],
@@ -3935,9 +4023,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"To wash\" in Kamba?",
             "correctAnswer": "Kũthamba",
             "options": [
-              "Kũthamba",
               "Kũsemba",
               "Kũkwa",
+              "Kũthamba",
               "Kũtheka"
             ],
             "hint": "koo-thahm-bah"
@@ -3949,8 +4037,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "Kũsemba",
               "Kũkwa",
-              "Kũthamba",
-              "Kũtheka"
+              "Kũtheka",
+              "Kũthamba"
             ],
             "hint": "koo-theh-kah"
           },
@@ -3994,10 +4082,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete: \"_____\" means \"To run\" in Kamba (Kĩkamba).",
             "correctAnswer": "Kũsemba",
             "options": [
-              "Kũsemba",
               "Kũkwa",
               "Kũthamba",
-              "Kũtheka"
+              "Kũtheka",
+              "Kũsemba"
             ],
             "hint": "koo-sehm-bah"
           }
@@ -4115,9 +4203,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Yes",
             "options": [
               "No",
-              "What is your name?",
               "My name is...",
-              "Yes"
+              "Yes",
+              "Come here"
             ],
             "hint": "Hinde Ulu: newua; Nganyawa: nigwo"
           },
@@ -4126,10 +4214,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Aiee / Nde\" mean in English?",
             "correctAnswer": "No",
             "options": [
-              "What is your name?",
               "My name is...",
               "No",
-              "Yes"
+              "Yes",
+              "Come here"
             ],
             "hint": "Hinde: ndi / aiyee"
           },
@@ -4139,9 +4227,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "What is your name?",
             "options": [
               "My name is...",
+              "Where are you going?",
               "What is your name?",
-              "Yes",
-              "No"
+              "Where do you come from?"
             ],
             "hint": "Hinde Ulu: wita wata?"
           },
@@ -4151,8 +4239,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Wĩtawa ata?",
             "options": [
               "Wĩtawa ata?",
-              "Ĩĩ / Nĩw'o",
-              "Aiee / Nde",
+              "Ĩĩ",
+              "Aiee",
               "Nĩtawa..."
             ],
             "hint": "wee-tah-wah ah-tah"
@@ -4162,10 +4250,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"My name is...\" in Kamba?",
             "correctAnswer": "Nĩtawa...",
             "options": [
-              "Ĩĩ / Nĩw'o",
-              "Aiee / Nde",
-              "Wĩtawa ata?",
-              "Nĩtawa..."
+              "Ĩĩ",
+              "Nĩtawa...",
+              "Aiee",
+              "Wĩtawa ata?"
             ],
             "hint": "nee-tah-wah"
           },
@@ -4174,10 +4262,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Where are you going?\" in Kamba?",
             "correctAnswer": "Ũthĩ naku?",
             "options": [
-              "Aiee / Nde",
-              "Wĩtawa ata?",
+              "Aiee",
               "Ũthĩ naku?",
-              "Ĩĩ / Nĩw'o"
+              "Wĩtawa ata?",
+              "Ĩĩ"
             ],
             "hint": "oo-thee nah-koo"
           },
@@ -4207,14 +4295,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete: \"_____\" means \"Yes\" in Kamba (Kĩkamba).",
-            "correctAnswer": "Ĩĩ / Nĩw'o",
+            "correctAnswer": "Ĩĩ",
             "options": [
-              "Ĩĩ / Nĩw'o",
-              "Aiee / Nde",
+              "Aiee",
               "Wĩtawa ata?",
-              "Nĩtawa..."
+              "Nĩtawa...",
+              "Ĩĩ"
             ],
-            "hint": "ee-ee / nee-woh"
+            "hint": "ee-ee / nee-woh",
+            "acceptedAnswers": [
+              "Ĩĩ / Nĩw'o",
+              "Ĩĩ"
+            ]
           }
         ]
       },
@@ -4233,8 +4325,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde Ulu: pindia; Nganyawa: monakilongo"
           },
           {
-            "target": "Thi / Enda",
-            "source": "Go away / Leave",
+            "target": "Thi",
+            "source": "Go away",
+            "pronunciation": "thi / enda",
+            "hint": "Hinde Ulu: eenda or thi"
+          },
+          {
+            "target": "Enda",
+            "source": "Leave",
             "pronunciation": "thi / enda",
             "hint": "Hinde Ulu: eenda or thi"
           },
@@ -4280,7 +4378,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Vindya\" mean in English?",
             "correctAnswer": "Be quiet",
             "options": [
-              "Go away / Leave",
+              "Go away",
               "All is well",
               "Myself",
               "Be quiet"
@@ -4289,15 +4387,19 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Thi / Enda\" mean in English?",
-            "correctAnswer": "Go away / Leave",
+            "prompt": "What does \"Thi\" mean in English?",
+            "correctAnswer": "Go away",
             "options": [
               "All is well",
               "Myself",
-              "Go away / Leave",
-              "Be quiet"
+              "Be quiet",
+              "Go away"
             ],
-            "hint": "Hinde Ulu: eenda or thi"
+            "hint": "Hinde Ulu: eenda or thi",
+            "acceptedAnswers": [
+              "Go away / Leave",
+              "Go away"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -4305,9 +4407,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "All is well",
             "options": [
               "Myself",
-              "All is well",
               "Be quiet",
-              "Go away / Leave"
+              "Go away",
+              "All is well"
             ],
             "hint": "Literally 'there is no evil / trouble'"
           },
@@ -4316,9 +4418,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"All is well\" in Kamba?",
             "correctAnswer": "Kũtĩ ũthũku",
             "options": [
-              "Kũtĩ ũthũku",
               "Vindya",
-              "Thi / Enda",
+              "Kũtĩ ũthũku",
+              "Thi",
               "Ng'o yakwa"
             ],
             "hint": "koo-tee oo-thoo-koo"
@@ -4329,7 +4431,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Ng'o yakwa",
             "options": [
               "Vindya",
-              "Thi / Enda",
+              "Thi",
               "Kũtĩ ũthũku",
               "Ng'o yakwa"
             ],
@@ -4340,9 +4442,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Ourselves\" in Kamba?",
             "correctAnswer": "Ng'o sitũ",
             "options": [
-              "Thi / Enda",
-              "Kũtĩ ũthũku",
+              "Thi",
               "Ng'o sitũ",
+              "Kũtĩ ũthũku",
               "Vindya"
             ],
             "hint": "ngoh see-too"
@@ -4376,7 +4478,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "correctAnswer": "Vindya",
             "options": [
               "Vindya",
-              "Thi / Enda",
+              "Thi",
               "Kũtĩ ũthũku",
               "Ng'o yakwa"
             ],
@@ -4456,10 +4558,10 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"wa téne\" in Kamba (Kĩkamba)?",
             "correctAnswer": "Old",
             "options": [
-              "Old",
-              "White / Pure",
+              "White",
               "Ancient",
-              "to-morrow"
+              "to-morrow",
+              "Old"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.)"
           },
@@ -4489,14 +4591,18 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kamba (Kĩkamba) term for \"soon\": ___",
-            "correctAnswer": "etēēla (Ulu) / killia (Nganyawa)",
+            "correctAnswer": "etēēla",
             "options": [
-              "etēēla (Ulu) / killia (Nganyawa)",
               "wa téne",
-              "mweu (nsau)",
-              "téne"
+              "mweu",
+              "téne",
+              "etēēla"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
+            "acceptedAnswers": [
+              "etēēla (Ulu) / killia (Nganyawa)",
+              "etēēla"
+            ]
           }
         ]
       },
@@ -4508,8 +4614,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "tips": "Compare classical 19th- and early 20th-century Kamba (Kĩkamba) transcriptions with modern standardized orthography.",
         "words": [
           {
-            "target": "muthenia monthe (Ulu) / matuku onthe",
-            "source": "Always / Every day",
+            "target": "muthenia monthe (Ulu)",
+            "source": "Always",
+            "pronunciation": "muthe-nia monthe / ma-tu-ku onthe",
+            "hint": "Hildegarde Hinde (1904) — Kamba"
+          },
+          {
+            "target": "matuku onthe",
+            "source": "Every day",
             "pronunciation": "muthe-nia monthe / ma-tu-ku onthe",
             "hint": "Hildegarde Hinde (1904) — Kamba"
           },
@@ -4559,37 +4671,45 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Umuvoo? — Inimuvoo!",
-            "source": "How are you? — I am well! (Adult salutation recorded by C. W. Hobley 1910, p. 52)"
+            "source": "How are you? — I am well!"
           },
           {
             "target": "Oponiao! — Ah! | Wakia! — Ah! | Waiya! — Waiya!",
-            "source": "Elder to young warrior (Anake) — Reply | Elder to young girl (Muitu) — Reply | Mutual greeting between Anake (Hobley 1910, p. 52)"
+            "source": "Elder to young warrior (Anake) — Reply | Elder to young girl (Muitu) — Reply | Mutual greeting between Anake."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"muthenia monthe (Ulu) / matuku onthe\" in Kamba?",
-            "correctAnswer": "Always / Every day",
+            "prompt": "What is the English meaning of \"muthenia monthe\" in Kamba?",
+            "correctAnswer": "Always",
             "options": [
-              "Supreme communal tribunal assembly",
-              "Mu Tui ancestral clan and sub-clans",
-              "Greeting from an elder to a young girl (Muitu)",
-              "Always / Every day"
+              "Always",
+              "Every day",
+              "How are you?",
+              "Supreme communal tribunal assembly"
             ],
-            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)"
+            "hint": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects)",
+            "acceptedAnswers": [
+              "Always / Every day",
+              "Always"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "In C. W. Hobley's Ethnology of A-Kamba (1910, p. 64), which three sub-clans belong to the ancestral \"Mu Tui\" (iron-smith) clan?",
-            "correctAnswer": "Mu Sii, Mu Mui, and Mwa-Ithangwa",
+            "correctAnswer": "Mu Sii",
             "options": [
-              "Mu Sii, Mu Mui, and Mwa-Ithangwa",
-              "Wakia, Oponiao, and Nosio",
-              "Kivisi, Mwanake, and Nthele",
-              "Mwa, Wima, and Wiu"
+              "Wakia",
+              "Mu Sii",
+              "Kivisi",
+              "Mwa"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 64"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 64",
+            "acceptedAnswers": [
+              "Mu Sii, Mu Mui, and Mwa-Ithangwa",
+              "Mu Sii"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4621,8 +4741,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "options": [
               "muthenia monthe",
               "King'ole",
-              "Mbai ya Mu Tui",
-              "Oponiao!"
+              "Oponiao!",
+              "matuku onthe"
             ],
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 52"
           }
@@ -4652,8 +4772,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
-            "target": "Muitu (pl. Weitu) / Mundu mukaa",
-            "source": "Young unmarried girl / maiden",
+            "target": "Muitu (pl. Weitu)",
+            "source": "Young unmarried girl",
+            "pronunciation": "mui-tu / mu-ndu mu-kaa",
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
+          },
+          {
+            "target": "Mundu mukaa",
+            "source": "maiden",
             "pronunciation": "mui-tu / mu-ndu mu-kaa",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
@@ -4697,7 +4823,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kivisi → Mwanake → Nthele → Mutumia wa Kisuka → Mutumia wa Nzama → Mutumia wa Ithembo.",
-            "source": "Boy → Young warrior → Married householder → Bereavement-council elder → Judicial-council elder → Sacred grove elder (Hobley 1910, p. 49)."
+            "source": "Boy → Young warrior → Married householder → Bereavement-council elder → Judicial-council elder → Sacred grove elder ."
           }
         ],
         "authoredExercises": [
@@ -4797,21 +4923,25 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ngia (hopper stage: Kititi)",
-            "source": "Locusts (and hopper stage Kititi)"
+            "source": "Locusts (and hopper stage Kititi)."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Thingii\" in Kamba?",
-            "correctAnswer": "Black ants (ponera)",
+            "correctAnswer": "Black ants",
             "options": [
-              "Black ants (ponera)",
-              "Soldier ants (siafu)",
+              "Black ants",
+              "Soldier ants",
               "Locusts",
               "Butterfly and Moth"
             ],
-            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
+            "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25",
+            "acceptedAnswers": [
+              "Black ants (ponera)",
+              "Black ants"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4841,9 +4971,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kamba (Kĩkamba) term for \"Hairy caterpillar\": ___",
             "correctAnswer": "Yamu",
             "options": [
-              "Yamu",
-              "Mangña (Ulu) / Maseo (Kitui)",
+              "Mangña",
               "Thingii",
+              "Yamu",
               "Nthuaku"
             ],
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, p. 25"
@@ -4885,12 +5015,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Mbebe, Soo, Nguli, Zomali, Kithembi, Ngutha, Engoma, Muvungu (Cha)",
-            "source": "Eight Kamba musical instruments: horn, war horn, small horn, flute, drum, bow-lute,",
+            "source": "Eight Kamba musical instruments: horn, war horn, small horn, flute, drum, bow-lute",
             "pronunciation": "mbebe",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VI, pp. 30–31"
           },
           {
-            "target": "11 Months: 1. Mwa, 2. Wima, 3. Wiu, 4. Mweu, 5. Onkonono, 6. Thandatu,",
+            "target": "11 Months: 1. Mwa, 2. Wima, 3. Wiu, 4. Mweu, 5. Onkonono, 6. Thandatu",
             "source": "The 11 traditional Kamba months and the 2 rainy seasons (Oct–Dec & Mar–May)",
             "pronunciation": "11-months-1-mwa",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. X, p. 53"
@@ -4924,7 +5054,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kweta ndai! — O-Selia? — Kimbu. | Tuna Kwatana? — Nzia na nzia.",
-            "source": "Tell a riddle! — What goes first forward and then backward? — The chameleon. | We take hold of one another? — One path crossing another (Hobley"
+            "source": "Tell a riddle! — What goes first forward and then backward? — The chameleon. | We take hold of one another? — One path crossing another."
           }
         ],
         "authoredExercises": [
@@ -4956,9 +5086,9 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "prompt": "Complete the answer to Kamba Riddle #4 in Hobley (1910, p. 54): \"Tuna Kwatana?\" ('We take hold of one another?') — ___",
             "correctAnswer": "Nzia na nzia",
             "options": [
-              "Nzia na nzia",
               "Muumbi",
               "Kimbu",
+              "Nzia na nzia",
               "Kulotoi"
             ],
             "hint": "One path crossing another (Hobley 1910, p. 54)"
@@ -4989,7 +5119,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 71–72"
           },
           {
-            "target": "Kiti (Blood-Money): 11 cows & 1 bull (man) / 4 cows & 1 bull (woman) in",
+            "target": "Kiti (Blood-Money): 11 cows & 1 bull (man) / 4 cows & 1 bull (woman)",
             "source": "Traditional homicide blood-compensation and peace-reconciliation sacrifice",
             "pronunciation": "ki-ti / ndi-u",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIV, pp. 78–80"
@@ -5028,7 +5158,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ku-ringa Kithito: \"Ethiwa nusembie... Kithito kiu nikimwue!\"",
-            "source": "Swearing on the Kithito upon seven stones: \"If he has lied or stolen... may this Kithito strike him!\" (Hobley 1910, p. 168)."
+            "source": "Swearing on the Kithito upon seven stones: \"If he has lied or stolen... may this Kithito strike him!\" ."
           }
         ]
       }
@@ -5044,14 +5174,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "kamba-lindblom-1920-dialects-nzaiko-nthoni-19-1",
-        "title": "4 Dialects, 12 Ethnonyms, 3 Nžaīko Initiations (Musaī Figs. 1",
+        "title": "4 Dialects, 12 Ethnonyms, 3 Nžaīko Initiations",
         "icon": "Users",
         "description": "Study Ukamba's 4 regional divisions, 12 neighbour ethnonyms, childbirth rites, the 3 Nžaīko initiations, marriage, the 11 Kwiūa name-taboo pairs, 7 women's words, and kinship terms (pp. 1–110, 569–574).",
         "tips": "In Chapters I–VII (pp. 9–110) and Addenda (pp. 569–574), Lindblom documents the 4 divisions (Ulu/Yulu, Kitui/Aþaisu, Kīkumbuliu, Mumonī), the 3 Nžaīko degrees (Kaβīu, Mbusīa with Musaī sticks Figs. 1–8 & sand drawings Figs. 9–16, and secret men's Mbæβanī), and the 11 Kwiūa in-law avoidance substitutions.",
         "words": [
           {
-            "target": "kīma kīa nžaβī (Donyo Sabuk)",
-            "source": "The nžaβī bean mountain",
+            "target": "kīma kīa nžavī (Donyo Sabuk)",
+            "source": "The nžavī bean mountain",
             "pronunciation": "kīma-kīa-nžaī"
           },
           {
@@ -5070,8 +5200,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "aswī"
           },
           {
-            "target": "1. nžaīko īla nīnī (kaβīu / īekondə) → 2. nžaīko īla nænə → 3. nžaīko",
-            "source": "The 3 Kamba initiations: knife circumcision, 7-day rhinoceros-roar initiation, and",
+            "target": "1. nžaīko īla nīnī (kavīu / īekondə) → 2. nžaīko īla nænə → 3. nžaīko",
+            "source": "The 3 Kamba initiations: knife circumcision, 7-day rhinoceros-roar initiation",
             "pronunciation": "1-nžaīko-īla-nīnī",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. III, pp. 42–71 & Figs. 1–16"
           },
@@ -5082,7 +5212,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. V pp. 89–98 & Addenda p. 574"
           },
           {
-            "target": "naū/tata/asa (au, īþə)",
+            "target": "naū/tata/asa (au, īthə)",
             "source": "Kinship terms, young bride (ŋga-) & mother teknonym (sīo-) prefixes, flexed",
             "pronunciation": "naū",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. VI–VII, pp. 99–110"
@@ -5091,19 +5221,19 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ni matindu ma andu ala ma tænə. | Nīnīonīə nðakamə nīnaolulə kana.",
-            "source": "It is a custom handed down from our fathers (p. 3). | I saw blood, I turned the child (olula kana rite, p. 34)."
+            "source": "It is a custom handed down from our fathers . | I saw blood, I turned the child (olula kana rite, p. 34)."
           },
           {
-            "target": "Kīumbu kī, nītukīə ukuβoīa, utunæŋgə wumbu wa uīkīīa asīŋgī!",
+            "target": "Kīumbu kī, nītukīə ukuvoīa, utunæŋgə wumbu wa uīkīīa asīŋgī!",
             "source": "O sacred wild fig tree (mumbu), we have come to pray to thee; give us milky sap to smear the novices! (5th day of the 2nd nžaīko, p. 55)."
           }
         ]
       },
       {
         "id": "kamba-lindblom-1920-clans-law-warfare-19-2",
-        "title": "25+ Mbaī Clans & Brands (Figs. 17",
+        "title": "25+ Mbaī Clans & Brands",
         "icon": "Shield",
-        "description": "Master the 25+ Kamba clans, totems, taboos, cattle/arrow/beehive marks, 5 meat-sharing grades of Atumīa, blood-money, Kīþītū & Ndundu oaths, 6 ordeals, Kīŋgolə, and the 3 war divisions (pp. 111–205).",
+        "description": "Master the 25+ Kamba clans, totems, taboos, cattle/arrow/beehive marks, 5 meat-sharing grades of Atumīa, blood-money, Kīthītū & Ndundu oaths, 6 ordeals, Kīŋgolə, and the 3 war divisions (pp. 111–205).",
         "tips": "In Chapters VIII–XII (pp. 113–205), Lindblom documents the 23 Machakos clans & sub-clans, the 5 meat-sharing promotions (kukula/kukusa), the 7-stone kīþītū oath (Fig. 52), the 6 judicial ordeals, kīŋgolə lynch-law, and the 3 tactical war divisions (muena, ŋgīla, īta).",
         "words": [
           {
@@ -5128,23 +5258,23 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Nsīlī Law: Ulu man = 11 cows + 1 bull; Ulu woman = 4–5 cows + 1 bull",
-            "source": "Homicide blood-money schedule in Ulu and Kitui, widow's 'cow of the broken bow', and",
+            "source": "Homicide blood-money schedule in Ulu and Kitui, widow's 'cow of the broken bow'",
             "pronunciation": "nsi-li / ngo-mbe ia ndu-lo-ta / ngo-mbe ia wu-mo / mu-ko-e",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XI, pp. 154–161"
           },
           {
             "target": "6 Ordeals",
-            "source": "kīþītū kīa kīβīu, lip needle, kīuma, ŋgunīko, mbæŋgolo, burning basket",
+            "source": "kīthītū kīa kīvīu, lip needle, kīuma, ŋgunīko, mbæŋgolo, burning basket",
             "pronunciation": "6-ordeals"
           },
           {
             "target": "4 kīumo curses",
-            "source": "revoked by kīaþīmo",
+            "source": "revoked by kīathīmo",
             "pronunciation": "4-kīumo-curses"
           },
           {
-            "target": "3 War Divisions: 1. muena, 2. ŋgīla (seizing cattle), 3. īta (driving",
-            "source": "Three tactical attack divisions, gazelle-horn war-flute, weapon purification, and",
+            "target": "3 War Divisions: 1. muena, 2. ŋgīla (seizing cattle), 3. īta",
+            "source": "Three tactical attack divisions, gazelle-horn war-flute, weapon purification",
             "pronunciation": "3-war-divisions-1",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XII, pp. 186–205 & Figs. 53–54"
           }
@@ -5152,11 +5282,11 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mukancæŋga ŋgombə īmwə; nīkīsīoka kwænda īngī ītīna, ŋgaīwa nī kīu!",
-            "source": "You shall flay a cow for me; if I come back and demand more afterwards, may I be eaten by this [kīþītū]! (Oath formula on 7 stones, p. 169)."
+            "source": "You shall flay a cow for me; if I come back and demand more afterwards, may I be eaten by this [kīthītū]! (Oath formula on 7 stones, p. 169)."
           },
           {
-            "target": "Aka-βī, aka-βī, mæ-kuka, mæ-kuka! | Nītusæuβīə uta wa mwana.",
-            "source": "The Masai, the Masai, they are coming, they are coming! (blown on the ŋgulī war-flute, p. 192) | We shall purify our son's bow (p. 200)."
+            "target": "Aka-vī, aka-vī, mæ-kuka, mæ-kuka! | Nītusæuvīə uta wa mwana.",
+            "source": "The Masai, the Masai, they are coming, they are coming! (blown on the ŋgulī war-flute, p. 192) | We shall purify our son's bow ."
           }
         ],
         "authoredExercises": [
@@ -5168,7 +5298,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "ītema",
               "kīænī",
               "mukoə",
-              "kīaþīmo"
+              "kīathīmo"
             ],
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. VIII, pp. 118, 124"
           }
@@ -5176,13 +5306,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
       },
       {
         "id": "kamba-lindblom-1920-religion-medicine-calendar-19-3",
-        "title": "Religion (Aīmu, Īþæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī), Kuausīa",
+        "title": "Religion (Aīmu, Īthæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī), Kuausīa",
         "icon": "Sparkles",
         "description": "Learn Kamba soul/breath dualism, sacred grove sacrifices, foreign spirit exorcism, Supreme Creator epithets, divination, epidemic expulsion, 17 ŋgondu substances, 45+ medicinal plants, 9 famines, and the 3 11-month calendars (pp. 207–354).",
         "tips": "In Chapters XIII–XIX (pp. 209–354), Lindblom documents Muluŋgu/Ŋgaī's epithets Mumbī ('Potter') and Mwatwaŋgagī ('Cleaver'), bow-and-gourd divination (kuausīa, Fig. 60), the unīka/mwītano epidemic arch, 17 ŋgondu purification herbs, 9 named famines (1836–1909), and 3 lists of the 11-month calendar.",
         "words": [
           {
-            "target": "kīu (soul/shadow) vs. þaīu / mīæβa (breath/life)",
+            "target": "kīu (soul/shadow) vs. thaīu / mīæva (breath/life)",
             "source": "Soul vs. breath, ancestral spirits & sacred groves, exorcism dances, and Supreme",
             "pronunciation": "kīu-vs-þaīu",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIII, pp. 209–253 & Figs. 55–59"
@@ -5194,7 +5324,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ŋgomakomī woodpecker augury",
-            "source": "6 directions: mīsīa, ŋguŋguo, īna, βwaþī wa aumə, womu, βwaþī wa aka",
+            "source": "6 directions: mīsīa, ŋguŋguo, īna, vwathī wa aumə, womu, vwathī wa aka",
             "pronunciation": "ŋgomakomī-woodpecker-augury"
           },
           {
@@ -5203,7 +5333,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "odd-number-taboo"
           },
           {
-            "target": "9 Historical Famines (īoa): 1. malakwə (1908–09), 2. muβuŋga / ŋgalī",
+            "target": "9 Historical Famines (īoa): 1. malakwə (1908–09), 2. muvuŋga / ŋgalī",
             "source": "The 9 named historical famines (1836–1909), 3 regional lists of the 11-month",
             "pronunciation": "9-historical-famines-1",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XVII–XVIII, pp. 338–342"
@@ -5212,24 +5342,24 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mumbī, we umbīə mwana uyu, umuīkīə næsa! | Mwænə mwīmu, osa nusu!",
-            "source": "O Fashioner (Mumbī), Thou who hast fashioned this child, keep it well! (p. 244) | Owner of the spirit, take a half-rupee! (epidemic expulsion"
+            "source": "O Fashioner (Mumbī), Thou who hast fashioned this child, keep it well!  | Owner of the spirit, take a half-rupee!"
           }
         ]
       },
       {
         "id": "kamba-lindblom-1920-arts-economy-addenda-19-4",
-        "title": "Dress, Teeth-Chipping & Bone False Teeth, 11 Instruments,",
+        "title": "Dress, Teeth-Chipping & Bone False Teeth, 11 Instruments",
         "icon": "Hammer",
-        "description": "Master Kamba dress, teeth-chipping (kuseuβīa maīo) & pegged false teeth, 11 musical instruments, games, the 13-part nyumba floor plan, archery & 7 traps, 28 livestock terms, beekeeping, iron/chain-making, and Addenda (pp. 355–607).",
+        "description": "Master Kamba dress, teeth-chipping (kuseuvīa maīo) & pegged false teeth, 11 musical instruments, games, the 13-part nyumba floor plan, archery & 7 traps, 28 livestock terms, beekeeping, iron/chain-making, and Addenda (pp. 355–607).",
         "tips": "In Parts IV–VI and Addenda (pp. 355–607, Figs. 64–167), Lindblom documents the 700-cylinder brass apron (kīmæŋgo), bone false teeth pegged into tooth roots, 11 musical instruments, the 13-part hut plan (Fig. 125), 7 traps (Figs. 134–138), 28 livestock terms (pp. 486–487), munīo S-link chains (Fig. 159), and the 3 basic color roots (p. 580).",
         "words": [
           {
             "target": "ua",
-            "source": "stretched on kīβao",
+            "source": "stretched on kīvao",
             "pronunciation": "ua"
           },
           {
-            "target": "muþīta",
+            "target": "muthīta",
             "source": "rear bifurcated tail, Fig. 77",
             "pronunciation": "muþīta"
           },
@@ -5262,7 +5392,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Tali, talita, katali, mbonge, kasonzo, moli, kanyange, ngila, ngilili, mwitango!",
-            "source": "10-word children's counting-out rhyme recorded verbatim by Lindblom (1920, Ch. XXIII, p. 426)."
+            "source": "10-word children's counting-out rhyme recorded verbatim by Lindblom ."
           }
         ],
         "authoredExercises": [
@@ -5320,7 +5450,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ko-konȁ vs. ko-konà ma-i.ò",
-            "source": "to hit (Super-Low in isolation) vs. to hit bananas (Low non-finally)"
+            "source": "to hit (Super-Low in isolation) vs. to hit bananas (Low non-finally)."
           }
         ]
       },
@@ -5389,187 +5519,138 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kamba (Kĩkamba) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
+        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019).",
         "words": [
-                  {
-                            "target": "Ũvoo?",
-                            "source": "Hello",
-                            "pronunciation": "uvoo"
-                  },
-                  {
-                            "target": "amanni",
-                            "source": "Peace",
-                            "pronunciation": "a-manni"
-                  },
-                  {
-                            "target": "kédia",
-                            "source": "Greet",
-                            "pronunciation": "kedia"
-                  },
-                  {
-                            "target": "nenga muwéa",
-                            "source": "Thank",
-                            "pronunciation": "nenga muwea"
-                  },
-                  {
-                            "target": "báliki",
-                            "source": "Bless",
-                            "pronunciation": "baliki"
-                  },
-                  {
-                            "target": "kwendua",
-                            "source": "Please",
-                            "pronunciation": "kwendua"
-                  },
-                  {
-                            "target": "eka",
-                            "source": "Pardon",
-                            "pronunciation": "e-ka"
-                  },
-                  {
-                            "target": "udi na uwó",
-                            "source": "Farewell",
-                            "pronunciation": "udi na uwo"
-                  },
-                  {
-                            "target": "Nĩ mũvea",
-                            "source": "Thank you",
-                            "pronunciation": "nee moo-veh-ah moo-noh"
-                  },
-                  {
-                            "target": "o voo",
-                            "source": "Salutation",
-                            "pronunciation": "o voo"
-                  }
+          {
+            "target": "Ũvoo?",
+            "source": "Hello",
+            "pronunciation": "uvoo"
+          },
+          {
+            "target": "amanni",
+            "source": "Peace",
+            "pronunciation": "a-manni"
+          },
+          {
+            "target": "kédia",
+            "source": "Greet",
+            "pronunciation": "kedia"
+          },
+          {
+            "target": "nenga muwéa",
+            "source": "Thank",
+            "pronunciation": "nenga muwea"
+          },
+          {
+            "target": "báliki",
+            "source": "Bless",
+            "pronunciation": "baliki"
+          },
+          {
+            "target": "kwendua",
+            "source": "Please",
+            "pronunciation": "kwendua"
+          },
+          {
+            "target": "eka",
+            "source": "Pardon",
+            "pronunciation": "e-ka"
+          },
+          {
+            "target": "udi na uwó",
+            "source": "Farewell",
+            "pronunciation": "udi na uwo"
+          },
+          {
+            "target": "Nĩ mũvea",
+            "source": "Thank you",
+            "pronunciation": "nee moo-veh-ah moo-noh"
+          },
+          {
+            "target": "o voo",
+            "source": "Salutation",
+            "pronunciation": "o voo"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "nenga muwéa",
-                            "source": "Thank"
-                  },
-                  {
-                            "target": "dejia ngó",
-                            "source": "Please"
-                  },
-                  {
-                            "target": "udi na uwó",
-                            "source": "Farewell"
-                  },
-                  {
-                            "target": "Nĩ mũvea",
-                            "source": "Thank you"
-                  },
-                  {
-                            "target": "o voo",
-                            "source": "Salutation"
-                  },
-                  {
-                            "target": "O voo",
-                            "source": "Hello / Salutation"
-                  },
-                  {
-                            "target": "Ũtethyo mũseo",
-                            "source": "Compassion / Kindness / Helpfulness"
-                  },
-                  {
-                            "target": "nenga muwéa",
-                            "source": "Thank, v. a"
-                  }
+          {
+            "target": "Nĩ mũvea",
+            "source": "Thank you."
+          },
+          {
+            "target": "O voo",
+            "source": "Hello / Salutation."
+          },
+          {
+            "target": "Ũtethyo mũseo",
+            "source": "Compassion / Kindness / Helpfulness."
+          },
+          {
+            "target": "nenga muwéa",
+            "source": "Thank, v."
+          }
         ]
-},
+      },
       {
         "id": "kamba-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kamba (Kĩkamba) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019)",
+        "culturalNote": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019).",
         "words": [
-                  {
-                            "target": "imwe",
-                            "source": "One",
-                            "pronunciation": "imwe"
-                  },
-                  {
-                            "target": "thanthatu",
-                            "source": "Six",
-                            "pronunciation": "thanthatu"
-                  },
-                  {
-                            "target": "ekumi",
-                            "source": "Ten",
-                            "pronunciation": "e-ku-mi"
-                  },
-                  {
-                            "target": "ile",
-                            "source": "Two",
-                            "pronunciation": "ile"
-                  },
-                  {
-                            "target": "itanu",
-                            "source": "Five",
-                            "pronunciation": "itanu"
-                  },
-                  {
-                            "target": "inna",
-                            "source": "Four",
-                            "pronunciation": "inna"
-                  },
-                  {
-                            "target": "nusu",
-                            "source": "Half",
-                            "pronunciation": "nu-su"
-                  },
-                  {
-                            "target": "kenda",
-                            "source": "Nine",
-                            "pronunciation": "kenda"
-                  },
-                  {
-                            "target": "kakamwe or kimwe",
-                            "source": "Once",
-                            "pronunciation": "ka-kamwe or kimwe"
-                  },
-                  {
-                            "target": "éli",
-                            "source": "Both",
-                            "pronunciation": "eli"
-                  }
+          {
+            "target": "imwe",
+            "source": "One",
+            "pronunciation": "imwe"
+          },
+          {
+            "target": "thanthatu",
+            "source": "Six",
+            "pronunciation": "thanthatu"
+          },
+          {
+            "target": "ekumi",
+            "source": "Ten",
+            "pronunciation": "e-ku-mi"
+          },
+          {
+            "target": "ile",
+            "source": "Two",
+            "pronunciation": "ile"
+          },
+          {
+            "target": "itanu",
+            "source": "Five",
+            "pronunciation": "itanu"
+          },
+          {
+            "target": "inna",
+            "source": "Four",
+            "pronunciation": "inna"
+          },
+          {
+            "target": "nusu",
+            "source": "Half",
+            "pronunciation": "nu-su"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine",
+            "pronunciation": "kenda"
+          },
+          {
+            "target": "kakamwe / kimwe",
+            "source": "Once",
+            "pronunciation": "ka-kamwe"
+          },
+          {
+            "target": "éli",
+            "source": "Both",
+            "pronunciation": "eli"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "andu alle or elle",
-                            "source": "Both"
-                  },
-                  {
-                            "target": "kakamwe or kimwe",
-                            "source": "Once"
-                  },
-                  {
-                            "target": "miongo kitanu",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "miongo inya",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "miongo thandatu",
-                            "source": "Sixty"
-                  },
-                  {
-                            "target": "wa muambililio",
-                            "source": "First"
-                  },
-                  {
-                            "target": "Mĩongo ĩlĩ",
-                            "source": "Twenty"
-                  },
-                  {
-                            "target": "ekumi na umwa",
-                            "source": "Eleven"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

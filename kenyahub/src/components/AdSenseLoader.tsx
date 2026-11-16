@@ -7,9 +7,23 @@ const ADSENSE_CLIENT = "ca-pub-5895990873842803";
 const ADSENSE_SCRIPT_ID = "kh-adsense-auto-ads";
 const MIN_PUBLISHER_TEXT_CHARS = 800;
 
+interface TcfData {
+  eventStatus?: string;
+  cmpStatus?: string;
+  purpose?: {
+    consents?: Record<string, boolean>;
+    legitimateInterests?: Record<string, boolean>;
+  };
+}
+
 declare global {
   interface Window {
     adsbygoogle?: Record<string, unknown>[];
+    __tcfapi?: (
+      command: string,
+      version: number,
+      callback: (tcData: TcfData, success: boolean) => void
+    ) => void;
   }
 }
 
@@ -40,41 +54,70 @@ function isBlockedRoute(pathname: string | null): boolean {
 }
 
 /**
- * Checks whether the user has rejected advertising cookies in CookieConsent.
+ * Checks whether advertising consent is denied or not yet granted.
+ * Respects both Google Consent Mode v2 localStorage keys and IAB TCF v2.2 (__tcfapi)
+ * if a Google-certified CMP (e.g., Google AdSense Privacy & Messaging) is active.
  */
-function isAdvertisingConsentDenied(): boolean {
-  if (typeof window === "undefined") return false;
+function isAdvertisingConsentDenied(tcfDenied: boolean | null): boolean {
+  if (typeof window === "undefined") return true;
+  if (tcfDenied === true) return true;
+  if (tcfDenied === false) return false;
+
   try {
+    const status = localStorage.getItem("kh-cookie-consent");
+    if (status === "declined" || status === "essential") {
+      return true;
+    }
+
     const rawPrefs = localStorage.getItem("kh-cookie-preferences");
     if (rawPrefs) {
       const parsed = JSON.parse(rawPrefs);
       if (parsed && parsed.advertising === false) {
         return true;
       }
+      if (parsed && parsed.advertising === true) {
+        return false;
+      }
     }
-    const status = localStorage.getItem("kh-cookie-consent");
-    if (status === "essential") {
-      return true;
-    }
+
+    // Default to denied (paused) until explicit user consent is provided,
+    // matching RootLayout's Consent Mode v2 default-denied state.
+    return status !== "accepted";
   } catch {
-    // Ignore storage read errors
+    return true;
   }
-  return false;
 }
 
 /**
- * Computes visible publisher text inside <main>, excluding elements marked
- * with [data-adsense-ignore="true"] (breadcrumbs, related link blocks, etc.).
+ * Computes visible publisher text inside <main>, excluding non-publisher UI chrome,
+ * closed <details> accordions, <select> dropdown options, SVGs, and injected ad slots.
  */
 function getPublisherTextLength(mainEl: HTMLElement): number {
-  const clone = mainEl.cloneNode(true) as HTMLElement;
-  const ignored = clone.querySelectorAll(
-    '[data-adsense-ignore="true"], nav, script, style'
+  const rootCopy = mainEl.cloneNode(true) as HTMLElement;
+  const ignored = rootCopy.querySelectorAll(
+    [
+      '[data-adsense-ignore="true"]',
+      "nav",
+      "script",
+      "style",
+      "noscript",
+      "svg",
+      "select",
+      "option",
+      "button",
+      "input",
+      "textarea",
+      "details:not([open])",
+      ".sr-only",
+      "[hidden]",
+      '[aria-hidden="true"]',
+      ".google-auto-placed",
+      "ins.adsbygoogle",
+      "iframe",
+    ].join(", ")
   );
   ignored.forEach((el) => el.remove());
-  return (clone.innerText || clone.textContent || "")
-    .replace(/\s+/g, " ")
-    .trim().length;
+  return (rootCopy.textContent || "").replace(/\s+/g, " ").trim().length;
 }
 
 function removeInjectedAutoAds() {
@@ -98,9 +141,38 @@ function removeInjectedAutoAds() {
   }
 }
 
+function isAdSenseMutation(mutations: MutationRecord[]): boolean {
+  return mutations.every((m) => {
+    const target = m.target as HTMLElement | null;
+    if (!target || typeof target.closest !== "function") return false;
+    if (
+      target.closest(".google-auto-placed") ||
+      target.closest("ins.adsbygoogle") ||
+      target.id?.startsWith("google_ads_frame")
+    ) {
+      return true;
+    }
+    const changedNodes = [
+      ...Array.from(m.addedNodes),
+      ...Array.from(m.removedNodes),
+    ];
+    if (changedNodes.length === 0) return false;
+    return changedNodes.every((node) => {
+      if (!(node instanceof HTMLElement)) return false;
+      return (
+        node.classList.contains("google-auto-placed") ||
+        node.tagName === "INS" ||
+        node.id?.startsWith("google_ads_frame") ||
+        Boolean(node.querySelector?.("ins.adsbygoogle, .google-auto-placed"))
+      );
+    });
+  });
+}
+
 export default function AdSenseLoader() {
   const pathname = usePathname();
   const lastPausedRef = useRef<boolean | null>(null);
+  const tcfDeniedRef = useRef<boolean | null>(null);
 
   useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") return;
@@ -123,8 +195,8 @@ export default function AdSenseLoader() {
     };
 
     const evaluatePageCompliance = () => {
-      // 0. Respect user cookie consent preferences
-      if (isAdvertisingConsentDenied()) {
+      // 0. Respect user cookie consent preferences & IAB TCF v2.2
+      if (isAdvertisingConsentDenied(tcfDeniedRef.current)) {
         setAdSensePausedState(true);
         return;
       }
@@ -135,7 +207,7 @@ export default function AdSenseLoader() {
         return;
       }
 
-      // 2. Block any screen marked as an error, empty state, or active quiz/game/flashcard screen
+      // 2. Block any screen marked as an error, empty state, modal overlay, or active quiz/game/flashcard screen
       if (
         document.querySelector('[data-error-page="true"]') ||
         document.querySelector('[data-adsense-pause="true"]')
@@ -144,7 +216,7 @@ export default function AdSenseLoader() {
         return;
       }
 
-      // 3. Verify substantial visible publisher text in <main> (excluding [data-adsense-ignore="true"])
+      // 3. Verify substantial visible publisher text in <main> (excluding [data-adsense-ignore="true"] & UI chrome)
       const mainEl =
         document.getElementById("main-content") ||
         document.querySelector("main");
@@ -177,21 +249,40 @@ export default function AdSenseLoader() {
       debounceTimer = setTimeout(evaluatePageCompliance, 250);
     };
 
+    // Bridge with IAB TCF v2.2 (__tcfapi) if Google-certified CMP is present
+    if (typeof window.__tcfapi === "function") {
+      try {
+        window.__tcfapi("addEventListener", 2, (tcData, success) => {
+          if (!success || !tcData) return;
+          if (
+            tcData.eventStatus === "tcloaded" ||
+            tcData.eventStatus === "useractioncomplete"
+          ) {
+            const purpose1 = tcData.purpose?.consents?.["1"] === true;
+            tcfDeniedRef.current = !purpose1;
+            scheduleEvaluation();
+          }
+        });
+      } catch {
+        // Ignore TCF listener errors
+      }
+    }
+
     evaluatePageCompliance();
 
-    // Re-evaluate if DOM state or async/dynamic child content changes (debounced 250ms)
-    const mainEl =
-      document.getElementById("main-content") || document.querySelector("main");
-    if (!mainEl) return;
+    // Re-evaluate if DOM state or async/dynamic child content changes, ignoring AdSense's own DOM mutations
+    const observeRoot = document.body || document.getElementById("main-content");
+    if (!observeRoot) return;
 
-    const observer = new MutationObserver(() => {
+    const observer = new MutationObserver((mutations) => {
+      if (isAdSenseMutation(mutations)) return;
       scheduleEvaluation();
     });
-    observer.observe(mainEl, {
+    observer.observe(observeRoot, {
       attributes: true,
       childList: true,
       subtree: true,
-      attributeFilter: ["data-error-page", "data-adsense-pause"],
+      attributeFilter: ["data-error-page", "data-adsense-pause", "open"],
     });
 
     const handleConsentChange = () => evaluatePageCompliance();

@@ -28,7 +28,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
   {
     "id": "samburu-unit-1",
     "unitNumber": 1,
-    "title": "Northern Maa Salutations, Gender Prefixes (L- / N-), Numerals &",
+    "title": "Northern Maa Salutations, Gender Prefixes (L- / N-), Numerals",
     "description": "Master Samburu greetings (Supai! / Takwenya!), l-/n- noun prefixes, counting 1–10, and Northern Maa pastoral culture.",
     "icon": "Tractor",
     "color": "#E11D48",
@@ -42,38 +42,92 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "culturalNote": "The name 'Samburu' derives from 'saamburr', the traditional leather carrying bag used by Northern Maa pastoralists, while their self-designation 'Loikop' signifies 'stewards/owners of the land'.",
         "words": [
           {
-            "target": "Supai! (resp. Epa!) / Takwenya! (resp. Iko!)",
-            "source": "Greetings to men/warriors! / Greetings to women/elders!",
+            "target": "Supai! (resp. Epa!)",
+            "source": "Greetings to men/warriors!",
             "pronunciation": "su-pai / takwenya",
             "hint": "Hinde (1901) & Hollis (1905) Maa salutations"
           },
           {
-            "target": "Ashe oleng / Serian",
-            "source": "Thank you very much / Peace",
+            "target": "Takwenya! (resp. Iko!)",
+            "source": "Greetings to women/elders!",
+            "pronunciation": "su-pai / takwenya",
+            "hint": "Hinde (1901) & Hollis (1905) Maa salutations"
+          },
+          {
+            "target": "Ashe oleng",
+            "source": "Thank you very much",
             "pronunciation": "ashe o-leng / se-rian",
             "hint": "Gratitude & peace"
           },
           {
-            "target": "saamburr (Sampur) / Loikop",
-            "source": "Traditional leather bag / Samburu self-designation (owners of the land)",
+            "target": "Serian",
+            "source": "Peace",
+            "pronunciation": "ashe o-leng / se-rian",
+            "hint": "Gratitude & peace"
+          },
+          {
+            "target": "saamburr (Sampur)",
+            "source": "Traditional leather bag",
             "pronunciation": "saamburr / loi-kop",
             "hint": "Hinde (1901) & Johnston (1902)"
           },
           {
-            "target": "l-murani (pl. l-muran) / l-payian / n-gitok",
-            "source": "Warrior / Elder / Woman",
+            "target": "Loikop",
+            "source": "Samburu self-designation (owners of the land)",
+            "pronunciation": "saamburr / loi-kop",
+            "hint": "Hinde (1901) & Johnston (1902)"
+          },
+          {
+            "target": "l-murani (pl. l-muran)",
+            "source": "Warrior",
             "pronunciation": "l-murani / l-payian / n-gitok",
             "hint": "Northern Maa l-/n- prefixes"
           },
           {
-            "target": "Nkai / nkare / kule / nkishu",
-            "source": "God (Sky/Rain) / Water / Milk / Cattle",
+            "target": "l-payian",
+            "source": "Elder",
+            "pronunciation": "l-murani / l-payian / n-gitok",
+            "hint": "Northern Maa l-/n- prefixes"
+          },
+          {
+            "target": "n-gitok",
+            "source": "Woman",
+            "pronunciation": "l-murani / l-payian / n-gitok",
+            "hint": "Northern Maa l-/n- prefixes"
+          },
+          {
+            "target": "Nkai",
+            "source": "God (Sky/Rain)",
             "pronunciation": "nkai / nka-re / ku-le / nkishu",
             "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
           },
           {
-            "target": "Ol-doinyo Nyiro / E-waso Ngiro",
-            "source": "Mount Nyiro (sacred mountain) / Ewaso Ng'iro River",
+            "target": "nkare",
+            "source": "Water",
+            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
+          },
+          {
+            "target": "kule",
+            "source": "Milk",
+            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
+          },
+          {
+            "target": "nkishu",
+            "source": "Cattle",
+            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
+          },
+          {
+            "target": "Ol-doinyo Nyiro",
+            "source": "Mount Nyiro (sacred mountain)",
+            "pronunciation": "ol-doinyo nyi-ro / e-waso ngi-ro",
+            "hint": "Dundas (1910) & Hinde (1901)"
+          },
+          {
+            "target": "E-waso Ngiro",
+            "source": "Ewaso Ng'iro River",
             "pronunciation": "ol-doinyo nyi-ro / e-waso ngi-ro",
             "hint": "Dundas (1910) & Hinde (1901)"
           },
@@ -123,63 +177,83 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Supai! (resp. Epa!) / Takwenya! (resp. Iko!)\" in Samburu?",
-            "correctAnswer": "Greetings to men/warriors! / Greetings to women/elders!",
+            "prompt": "What is the English meaning of \"Supai!\" in Samburu?",
+            "correctAnswer": "Greetings to men",
             "options": [
-              "Thank you very much / Peace",
-              "Traditional leather bag / Samburu self-designation (owners of the land)",
-              "Warrior / Elder / Woman",
-              "Greetings to men/warriors! / Greetings to women/elders!"
+              "Thank you very much",
+              "Traditional leather bag",
+              "Warrior",
+              "Greetings to men"
             ],
-            "hint": "Hinde (1901) & Hollis (1905) Maa salutations"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ashe oleng / Serian\" in Samburu?",
-            "correctAnswer": "Thank you very much / Peace",
-            "options": [
-              "Traditional leather bag / Samburu self-designation (owners of the land)",
-              "Warrior / Elder / Woman",
-              "Thank you very much / Peace",
-              "Greetings to men/warriors! / Greetings to women/elders!"
-            ],
-            "hint": "Gratitude & peace"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"saamburr (Sampur) / Loikop\" in Samburu?",
-            "correctAnswer": "Traditional leather bag / Samburu self-designation (owners of the land)",
-            "options": [
-              "Warrior / Elder / Woman",
-              "Traditional leather bag / Samburu self-designation (owners of the land)",
+            "hint": "Hinde (1901) & Hollis (1905) Maa salutations",
+            "acceptedAnswers": [
               "Greetings to men/warriors! / Greetings to women/elders!",
-              "Thank you very much / Peace"
-            ],
-            "hint": "Hinde (1901) & Johnston (1902)"
+              "Greetings to men"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Traditional leather bag / Samburu self-designation (owners of the land)\" in Samburu?",
-            "correctAnswer": "saamburr (Sampur) / Loikop",
+            "prompt": "What is the English meaning of \"Ashe oleng\" in Samburu?",
+            "correctAnswer": "Thank you very much",
             "options": [
-              "saamburr (Sampur) / Loikop",
-              "Supai! (resp. Epa!) / Takwenya! (resp. Iko!)",
-              "Ashe oleng / Serian",
-              "l-murani (pl. l-muran) / l-payian / n-gitok"
+              "Traditional leather bag",
+              "Greetings to men",
+              "Thank you very much",
+              "Samburu self-designation"
             ],
-            "hint": "sahm-boor / loy-kohp"
+            "hint": "Gratitude & peace",
+            "acceptedAnswers": [
+              "Thank you very much / Peace",
+              "Thank you very much"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Warrior / Elder / Woman\" in Samburu?",
-            "correctAnswer": "l-murani (pl. l-muran) / l-payian / n-gitok",
+            "prompt": "What is the English meaning of \"saamburr\" in Samburu?",
+            "correctAnswer": "Traditional leather bag",
             "options": [
-              "Supai! (resp. Epa!) / Takwenya! (resp. Iko!)",
-              "Ashe oleng / Serian",
-              "saamburr (Sampur) / Loikop",
-              "l-murani (pl. l-muran) / l-payian / n-gitok"
+              "Traditional leather bag",
+              "Warrior",
+              "Greetings to men",
+              "Thank you very much"
             ],
-            "hint": "l-moo-rah-nee / l-pah-yahn / n-gee-tohk"
+            "hint": "Hinde (1901) & Johnston (1902)",
+            "acceptedAnswers": [
+              "Traditional leather bag / Samburu self-designation (owners of the land)",
+              "Traditional leather bag"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Traditional leather bag\" in Samburu?",
+            "correctAnswer": "saamburr",
+            "options": [
+              "saamburr",
+              "Supai!",
+              "Ashe oleng",
+              "l-murani"
+            ],
+            "hint": "sahm-boor / loy-kohp",
+            "acceptedAnswers": [
+              "saamburr (Sampur) / Loikop",
+              "saamburr"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Warrior\" in Samburu?",
+            "correctAnswer": "l-murani",
+            "options": [
+              "l-murani",
+              "Supai!",
+              "Ashe oleng",
+              "saamburr"
+            ],
+            "hint": "l-moo-rah-nee / l-pah-yahn / n-gee-tohk",
+            "acceptedAnswers": [
+              "l-murani (pl. l-muran) / l-payian / n-gitok",
+              "l-murani"
+            ]
           },
           {
             "type": "match_pairs",
@@ -202,15 +276,19 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Samburu term for \"God (Sky/Rain) / Water / Milk / Cattle\": ___",
-            "correctAnswer": "Nkai / nkare / kule / nkishu",
+            "prompt": "Complete the Samburu term for \"God\": ___",
+            "correctAnswer": "Nkai",
             "options": [
-              "Supai! (resp. Epa!) / Takwenya! (resp. Iko!)",
-              "Ashe oleng / Serian",
-              "saamburr (Sampur) / Loikop",
-              "Nkai / nkare / kule / nkishu"
+              "Nkai",
+              "Supai!",
+              "Ashe oleng",
+              "saamburr"
             ],
-            "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
+            "hint": "Johnston (1902 Burkeneji) & Hollis (1905)",
+            "acceptedAnswers": [
+              "Nkai / nkare / kule / nkishu",
+              "Nkai"
+            ]
           }
         ]
       }
@@ -233,8 +311,14 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
-            "target": "ltung'ani (pl. ltung'ana) / Lokop",
-            "source": "Person / People (Owners of the land)",
+            "target": "ltung'ani (pl. ltung'ana)",
+            "source": "Person",
+            "pronunciation": "ltung'a-ni / lo-kop",
+            "hint": "Samburu (North Maa)"
+          },
+          {
+            "target": "Lokop",
+            "source": "People (Owners of the land)",
             "pronunciation": "ltung'a-ni / lo-kop",
             "hint": "Samburu (North Maa)"
           },
@@ -290,15 +374,19 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ltung'ani (pl. ltung'ana) / Lokop\" in Samburu?",
-            "correctAnswer": "Person / People (Owners of the land)",
+            "prompt": "What is the English meaning of \"ltung'ani\" in Samburu?",
+            "correctAnswer": "Person",
             "options": [
+              "Person",
               "Father",
               "Mother",
-              "Child / Children",
-              "Person / People (Owners of the land)"
+              "Child"
             ],
-            "hint": "Samburu (North Maa)"
+            "hint": "Samburu (North Maa)",
+            "acceptedAnswers": [
+              "Person / People (Owners of the land)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -306,9 +394,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "correctAnswer": "Father",
             "options": [
               "Mother",
-              "Child / Children",
-              "Father",
-              "Person / People (Owners of the land)"
+              "Child",
+              "Person",
+              "Father"
             ],
             "hint": "Samburu (North Maa) kinship"
           },
@@ -317,9 +405,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"yeyo / ng'oto\" in Samburu?",
             "correctAnswer": "Mother",
             "options": [
-              "Child / Children",
               "Mother",
-              "Person / People (Owners of the land)",
+              "Child",
+              "Person",
               "Father"
             ],
             "hint": "Samburu (North Maa) kinship"
@@ -327,26 +415,34 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mother\" in Samburu?",
-            "correctAnswer": "yeyo / ng'oto",
+            "correctAnswer": "yeyo",
             "options": [
-              "yeyo / ng'oto",
-              "ltung'ani (pl. ltung'ana) / Lokop",
-              "papa / menye",
-              "nkerai (pl. ngera)"
+              "ltung'ani",
+              "papa",
+              "nkerai",
+              "yeyo"
             ],
-            "hint": "ye-yo / ng'o-to"
+            "hint": "Starts with \"ye…\" (4 letters)",
+            "acceptedAnswers": [
+              "yeyo / ng'oto",
+              "yeyo"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Child / Children\" in Samburu?",
-            "correctAnswer": "nkerai (pl. ngera)",
+            "correctAnswer": "nkerai",
             "options": [
-              "ltung'ani (pl. ltung'ana) / Lokop",
-              "papa / menye",
-              "yeyo / ng'oto",
-              "nkerai (pl. ngera)"
+              "ltung'ani",
+              "papa",
+              "yeyo",
+              "nkerai"
             ],
-            "hint": "nke-rai (pl. ngera)"
+            "hint": "Starts with \"nk…\" (6 letters)",
+            "acceptedAnswers": [
+              "nkerai (pl. ngera)",
+              "nkerai"
+            ]
           },
           {
             "type": "match_pairs",
@@ -374,14 +470,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Samburu term for \"Warrior / Youth\": ___",
-            "correctAnswer": "lmurrani (pl. lmurran)",
+            "correctAnswer": "lmurrani",
             "options": [
-              "ltung'ani (pl. ltung'ana) / Lokop",
-              "papa / menye",
-              "yeyo / ng'oto",
-              "lmurrani (pl. lmurran)"
+              "lmurrani",
+              "ltung'ani",
+              "papa",
+              "yeyo"
             ],
-            "hint": "Samburu age-set warrior"
+            "hint": "Samburu age-set warrior",
+            "acceptedAnswers": [
+              "lmurrani (pl. lmurran)",
+              "lmurrani"
+            ]
           }
         ]
       },
@@ -400,7 +500,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Rainer Vossen (1982) — Sampur"
           },
           {
-            "target": "lalashe; Añgargenna (pl.)",
+            "target": "lalashe; Añgargenna",
             "source": "Brother",
             "pronunciation": "la-lashe",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
@@ -430,7 +530,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "Eñ getok; En gedūa (pl.)",
+            "target": "Eñ getok; En gedūa",
             "source": "Wife",
             "pronunciation": "eng ge-tok",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
@@ -449,11 +549,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ŋ-kárn-á — lalashe",
-            "source": "Name — Brother"
+            "source": "Name — Brother."
           },
           {
             "target": "Embatiān, Ol aitórienĭ, Lagwainani — Eñkarai",
-            "source": "Chief — Child"
+            "source": "Chief — Child."
           }
         ],
         "authoredExercises": [
@@ -462,8 +562,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"ŋ-kárn-á\" mean in English?",
             "correctAnswer": "Name",
             "options": [
-              "Name",
               "Brother",
+              "Name",
               "Chief",
               "Child"
             ],
@@ -597,10 +697,10 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"naɓô (fem.) / oɓô (masc.) / noɓô (place)\" in Samburu?",
             "correctAnswer": "One",
             "options": [
+              "One",
               "Two",
               "Three",
-              "Four",
-              "One"
+              "Four"
             ],
             "hint": "Wikipedia Nilotic_languages — Samburu numerals"
           },
@@ -621,8 +721,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"uní (fem.) / okúni (masc.)\" in Samburu?",
             "correctAnswer": "Three",
             "options": [
-              "Four",
               "Three",
+              "Four",
               "One",
               "Two"
             ],
@@ -631,26 +731,34 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Samburu?",
-            "correctAnswer": "uní (fem.) / okúni (masc.)",
+            "correctAnswer": "uní",
             "options": [
-              "uní (fem.) / okúni (masc.)",
-              "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
-              "aré (fem.) / waáre (masc.)",
-              "onɠwán (fem.) / oónɠwan (masc.)"
+              "naɓô",
+              "uní",
+              "aré",
+              "onɠwán"
             ],
-            "hint": "u-ni / o-ku-ni"
+            "hint": "u-ni / o-ku-ni",
+            "acceptedAnswers": [
+              "uní (fem.) / okúni (masc.)",
+              "uní"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Samburu?",
-            "correctAnswer": "onɠwán (fem.) / oónɠwan (masc.)",
+            "correctAnswer": "onɠwán",
             "options": [
-              "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
-              "aré (fem.) / waáre (masc.)",
-              "uní (fem.) / okúni (masc.)",
-              "onɠwán (fem.) / oónɠwan (masc.)"
+              "naɓô",
+              "aré",
+              "uní",
+              "onɠwán"
             ],
-            "hint": "on-gwan"
+            "hint": "on-gwan",
+            "acceptedAnswers": [
+              "onɠwán (fem.) / oónɠwan (masc.)",
+              "onɠwán"
+            ]
           },
           {
             "type": "match_pairs",
@@ -678,14 +786,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Samburu term for \"Five\": ___",
-            "correctAnswer": "ímɟêt / ímʄêt",
+            "correctAnswer": "ímɟêt",
             "options": [
-              "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
-              "aré (fem.) / waáre (masc.)",
-              "uní (fem.) / okúni (masc.)",
-              "ímɟêt / ímʄêt"
+              "naɓô",
+              "aré",
+              "ímɟêt",
+              "uní"
             ],
-            "hint": "Wikipedia Nilotic_languages — Samburu numerals"
+            "hint": "Wikipedia Nilotic_languages — Samburu numerals",
+            "acceptedAnswers": [
+              "ímɟêt / ímʄêt",
+              "ímɟêt"
+            ]
           }
         ]
       },
@@ -748,11 +860,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tômôn — Tigitam",
-            "source": "Ten — Twenty"
+            "source": "Ten — Twenty."
           },
           {
             "target": "Tomoni uni — Artam",
-            "source": "Thirty — Forty"
+            "source": "Thirty — Forty."
           }
         ],
         "authoredExercises": [
@@ -761,8 +873,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"tômôn\" mean in English?",
             "correctAnswer": "Ten",
             "options": [
-              "Ten",
               "Twenty",
+              "Ten",
               "Thirty",
               "Forty"
             ],
@@ -890,11 +1002,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kule — nkiri",
-            "source": "Milk — Meat"
+            "source": "Milk — Meat."
           },
           {
             "target": "ndaiki — Botote",
-            "source": "Food — Banana"
+            "source": "Food — Banana."
           }
         ],
         "authoredExercises": [
@@ -903,8 +1015,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"kule\" mean in English?",
             "correctAnswer": "Milk",
             "options": [
-              "Milk",
               "Meat",
+              "Milk",
               "Food",
               "Banana"
             ],
@@ -928,7 +1040,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
               "Food",
               "Food"
             ],
-            "hint": "Review Staple Foods, Cookery & Beverages"
+            "hint": "Starts with \"Fo…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -1023,11 +1135,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ol lameyu — El bāek",
-            "source": "Hunger — Maize"
+            "source": "Hunger — Maize."
           },
           {
             "target": "En naishu, Na mōqa — nkishu",
-            "source": "Palm wine or mead — Cow"
+            "source": "Palm wine or mead — Cow."
           }
         ],
         "authoredExercises": [
@@ -1038,8 +1150,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "options": [
               "Hunger",
               "Maize",
-              "Palm wine or mead",
-              "Cow / Cattle"
+              "Cow",
+              "Camel"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
@@ -1172,9 +1284,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "correctAnswer": "Star",
             "options": [
               "Water",
-              "Tree / Wood / Medicine",
-              "Sun",
-              "Star"
+              "Star",
+              "Tree",
+              "Sun"
             ],
             "hint": "Johnston 1902 Burkeneji/Sampuru & Hollis 1905"
           },
@@ -1183,7 +1295,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ŋ-kár-ɛ́ (nkare)\" in Samburu?",
             "correctAnswer": "Water",
             "options": [
-              "Tree / Wood / Medicine",
+              "Tree",
               "Sun",
               "Water",
               "Star"
@@ -1192,39 +1304,47 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"l-caní (lchani)\" in Samburu?",
-            "correctAnswer": "Tree / Wood / Medicine",
+            "prompt": "What is the English meaning of \"l-caní\" in Samburu?",
+            "correctAnswer": "Tree",
             "options": [
               "Sun",
-              "Tree / Wood / Medicine",
               "Star",
-              "Water"
+              "Water",
+              "Tree"
             ],
-            "hint": "Rainer Vossen (1982) — Sampur"
+            "hint": "Rainer Vossen (1982) — Sampur",
+            "acceptedAnswers": [
+              "Tree / Wood / Medicine",
+              "Tree"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tree / Wood / Medicine\" in Samburu?",
-            "correctAnswer": "l-caní (lchani)",
+            "correctAnswer": "l-caní",
             "options": [
-              "l-caní (lchani)",
-              "l-akira (pl. l-akir)",
-              "ŋ-kár-ɛ́ (nkare)",
+              "l-akira",
+              "l-caní",
+              "ŋ-kár-ɛ́",
               "nkolong'"
             ],
-            "hint": "lcha-ni"
+            "hint": "lcha-ni",
+            "acceptedAnswers": [
+              "l-caní (lchani)",
+              "l-caní"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Sun\" in Samburu?",
             "correctAnswer": "nkolong'",
             "options": [
-              "l-akira (pl. l-akir)",
-              "ŋ-kár-ɛ́ (nkare)",
-              "l-caní (lchani)",
-              "nkolong'"
+              "nkolong'",
+              "l-akira",
+              "ŋ-kár-ɛ́",
+              "l-caní"
             ],
-            "hint": "nko-long'"
+            "hint": "Starts with \"nk…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -1252,14 +1372,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Samburu term for \"Moon / Month\": ___",
-            "correctAnswer": "lapa (pl. lapaitin)",
+            "correctAnswer": "lapa",
             "options": [
-              "l-akira (pl. l-akir)",
-              "ŋ-kár-ɛ́ (nkare)",
-              "l-caní (lchani)",
-              "lapa (pl. lapaitin)"
+              "l-akira",
+              "lapa",
+              "ŋ-kár-ɛ́",
+              "l-caní"
             ],
-            "hint": "CLDR (saq.xml) & North Maa"
+            "hint": "CLDR (saq.xml) & North Maa",
+            "acceptedAnswers": [
+              "lapa (pl. lapaitin)",
+              "lapa"
+            ]
           }
         ]
       },
@@ -1324,25 +1448,29 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "nkop — nkujit",
-            "source": "Earth — Grass"
+            "source": "Earth — Grass."
           },
           {
             "target": "mpari — nkewarie",
-            "source": "Day — Night"
+            "source": "Day — Night."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"nkop\" mean in English?",
-            "correctAnswer": "Earth / Land",
+            "correctAnswer": "Earth",
             "options": [
-              "Earth / Land",
-              "Grass / Pasture",
+              "Grass",
               "Day",
+              "Earth",
               "Night"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Earth / Land",
+              "Earth"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1474,8 +1602,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "options": [
               "Ear",
               "Nose",
-              "Tooth",
-              "Eye"
+              "Eye",
+              "Tooth"
             ],
             "hint": "Rainer Vossen (1982) — Sampur"
           },
@@ -1484,9 +1612,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ŋ-kɪ́-yyɔk (nkiyyok)\" in Samburu?",
             "correctAnswer": "Ear",
             "options": [
+              "Ear",
               "Nose",
               "Tooth",
-              "Ear",
               "Eye"
             ],
             "hint": "Rainer Vossen (1982) — Sampur"
@@ -1496,8 +1624,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ŋ-kwar-íé (nkwarie)\" in Samburu?",
             "correctAnswer": "Nose",
             "options": [
-              "Tooth",
               "Nose",
+              "Tooth",
               "Eye",
               "Ear"
             ],
@@ -1506,26 +1634,34 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Samburu?",
-            "correctAnswer": "ŋ-kwar-íé (nkwarie)",
+            "correctAnswer": "ŋ-kwar-íé",
             "options": [
-              "ŋ-kwar-íé (nkwarie)",
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-kɪ́-yyɔk (nkiyyok)",
-              "l-alá-ɪ̀ (lalai)"
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-kɪ́-yyɔk",
+              "ŋ-kwar-íé",
+              "l-alá-ɪ̀"
             ],
-            "hint": "nkwa-rie"
+            "hint": "Starts with \"ŋ-…\" (9 letters)",
+            "acceptedAnswers": [
+              "ŋ-kwar-íé (nkwarie)",
+              "ŋ-kwar-íé"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tooth\" in Samburu?",
-            "correctAnswer": "l-alá-ɪ̀ (lalai)",
+            "correctAnswer": "l-alá-ɪ̀",
             "options": [
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-kɪ́-yyɔk (nkiyyok)",
-              "ŋ-kwar-íé (nkwarie)",
-              "l-alá-ɪ̀ (lalai)"
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-kɪ́-yyɔk",
+              "l-alá-ɪ̀",
+              "ŋ-kwar-íé"
             ],
-            "hint": "la-lai"
+            "hint": "Starts with \"l-…\" (8 letters)",
+            "acceptedAnswers": [
+              "l-alá-ɪ̀ (lalai)",
+              "l-alá-ɪ̀"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1553,14 +1689,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Samburu term for \"Tongue\": ___",
-            "correctAnswer": "l-ŋɛ́jɛ́p (lng'ejep)",
+            "correctAnswer": "l-ŋɛ́jɛ́p",
             "options": [
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-kɪ́-yyɔk (nkiyyok)",
-              "ŋ-kwar-íé (nkwarie)",
-              "l-ŋɛ́jɛ́p (lng'ejep)"
+              "l-ŋɛ́jɛ́p",
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-kɪ́-yyɔk",
+              "ŋ-kwar-íé"
             ],
-            "hint": "Rainer Vossen (1982) — Sampur"
+            "hint": "Rainer Vossen (1982) — Sampur",
+            "acceptedAnswers": [
+              "l-ŋɛ́jɛ́p (lng'ejep)",
+              "l-ŋɛ́jɛ́p"
+            ]
           }
         ]
       },
@@ -1628,25 +1768,29 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "nkaina — lkeju",
-            "source": "Hand — Leg"
+            "source": "Hand — Leg."
           },
           {
             "target": "ltau — ŋ-kɔŋ-ʊ́",
-            "source": "Heart — eye"
+            "source": "Heart — eye."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"nkaina\" mean in English?",
-            "correctAnswer": "Hand / Arm",
+            "correctAnswer": "Hand",
             "options": [
-              "Hand / Arm",
-              "Leg / Foot",
+              "Leg",
               "Heart",
-              "eye"
+              "eye",
+              "Hand"
             ],
-            "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
+            "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms",
+            "acceptedAnswers": [
+              "Hand / Arm",
+              "Hand"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1788,9 +1932,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"a-ok (aok)\" in Samburu?",
             "correctAnswer": "Drink",
             "options": [
+              "Drink",
               "Go",
               "Come",
-              "Drink",
               "Eat"
             ],
             "hint": "Samburu (North Maa)"
@@ -1810,26 +1954,34 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Go\" in Samburu?",
-            "correctAnswer": "a-lo (alo)",
+            "correctAnswer": "a-lo",
             "options": [
-              "a-lo (alo)",
-              "a-ɲá (anya)",
-              "a-ok (aok)",
-              "a-lotu (alotu)"
+              "a-ɲá",
+              "a-ok",
+              "a-lotu",
+              "a-lo"
             ],
-            "hint": "a-lo"
+            "hint": "Starts with \"a-…\" (4 letters)",
+            "acceptedAnswers": [
+              "a-lo (alo)",
+              "a-lo"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Come\" in Samburu?",
-            "correctAnswer": "a-lotu (alotu)",
+            "correctAnswer": "a-lotu",
             "options": [
-              "a-ɲá (anya)",
-              "a-ok (aok)",
-              "a-lo (alo)",
-              "a-lotu (alotu)"
+              "a-ɲá",
+              "a-ok",
+              "a-lo",
+              "a-lotu"
             ],
-            "hint": "a-lo-tu"
+            "hint": "Starts with \"a-…\" (6 letters)",
+            "acceptedAnswers": [
+              "a-lotu (alotu)",
+              "a-lotu"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1857,14 +2009,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Samburu term for \"See\": ___",
-            "correctAnswer": "a-dol (adol)",
+            "correctAnswer": "a-dol",
             "options": [
-              "a-ɲá (anya)",
-              "a-ok (aok)",
-              "a-lo (alo)",
-              "a-dol (adol)"
+              "a-ɲá",
+              "a-dol",
+              "a-ok",
+              "a-lo"
             ],
-            "hint": "Samburu (North Maa)"
+            "hint": "Samburu (North Maa)",
+            "acceptedAnswers": [
+              "a-dol (adol)",
+              "a-dol"
+            ]
           }
         ]
       },
@@ -1931,11 +2087,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "a-iyiolo — a-dol",
-            "source": "Know — To see"
+            "source": "Know — To see."
           },
           {
             "target": "a-ning — a-yiolo",
-            "source": "To hear — To know"
+            "source": "To hear — To know."
           }
         ],
         "authoredExercises": [
@@ -1944,8 +2100,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"a-iyiolo\" mean in English?",
             "correctAnswer": "Know",
             "options": [
-              "Know",
               "To see",
+              "Know",
               "To hear",
               "To know"
             ],
@@ -2067,11 +2223,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mpari — Ol lari",
-            "source": "Day — Year"
+            "source": "Day — Year."
           },
           {
             "target": "nkewarie — Duo",
-            "source": "Night — Today"
+            "source": "Night — Today."
           }
         ],
         "authoredExercises": [
@@ -2080,12 +2236,12 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"mpari\" mean in English?",
             "correctAnswer": "Day",
             "options": [
-              "Day",
               "Year",
+              "Day",
               "Night",
               "Today"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Starts with \"Da…\" (3 letters)"
           },
           {
             "type": "translate_to_target",
@@ -2193,11 +2349,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mpari — Lapa le okuni",
-            "source": "Day — March"
+            "source": "Day — March."
           },
           {
             "target": "Lapa le ong’wan — Lapa le isiet",
-            "source": "April — August"
+            "source": "April — August."
           }
         ],
         "authoredExercises": [
@@ -2206,10 +2362,10 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What does \"mpari\" mean in English?",
             "correctAnswer": "Day",
             "options": [
+              "March",
               "Day",
-              "March (Month 3)",
-              "April (Month 4)",
-              "August (Month 8)"
+              "April",
+              "August"
             ],
             "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
           },
@@ -2334,8 +2490,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"artam\" in Samburu (Sampur)?",
             "correctAnswer": "Ninety",
             "options": [
-              "Ninety",
               "Eighty",
+              "Ninety",
               "Seventy",
               "Sixty"
             ],
@@ -2369,8 +2525,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Samburu (Sampur) term for \"Eleven\": ___",
             "correctAnswer": "Tomon obo",
             "options": [
-              "Tomon obo",
               "artam",
+              "Tomon obo",
               "otomoni uni",
               "obikitam"
             ],
@@ -2437,7 +2593,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ol gūya",
-            "source": "Wart hog"
+            "source": "Wart hog."
           },
           {
             "target": "Kiyiolo nkarna Ol-labanani taata.",
@@ -2450,10 +2606,10 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Ol-labanani\" in Samburu?",
             "correctAnswer": "Diviner",
             "options": [
-              "Diviner",
               "Traveler",
               "Wart hog",
-              "War"
+              "War",
+              "Diviner"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
@@ -2485,9 +2641,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Samburu (Sampur) term for \"Spring water\": ___",
             "correctAnswer": "Eñ golak",
             "options": [
-              "Eñ golak",
               "El mau",
               "Ol-labanani",
+              "Eñ golak",
               "Lesuñgu"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
@@ -2536,7 +2692,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "Eñ udi; Eñ usidin (pl.)",
+            "target": "Eñ udi; Eñ usidin",
             "source": "Stick",
             "pronunciation": "eng udi",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
@@ -2561,11 +2717,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Taata — Or gumbao",
-            "source": "To-day — Tobacco"
+            "source": "To-day — Tobacco."
           },
           {
             "target": "Entoki — Ol aburoni",
-            "source": "Thing — Thief"
+            "source": "Thing — Thief."
           }
         ],
         "authoredExercises": [
@@ -2692,8 +2848,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Añgoitoi\" in Samburu?",
             "correctAnswer": "Road",
             "options": [
-              "Road",
               "Rat",
+              "Road",
               "Place",
               "Pig"
             ],
@@ -2727,201 +2883,156 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Samburu (Sampur) term for \"Elder\": ___",
             "correctAnswer": "En jabo",
             "options": [
-              "En jabo",
-              "Ol doñani; El toñana",
+              "Ol doñani",
               "Añgoitoi",
+              "En jabo",
               "Nderoni"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ]
       },
-        {
+      {
         "id": "samburu-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Samburu (Sampur) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982).",
         "words": [
-                  {
-                            "target": "Ashe",
-                            "source": "Thank you",
-                            "pronunciation": "ah-sheh oh-leng"
-                  },
-                  {
-                            "target": "Epa",
-                            "source": "Hello (Reply)",
-                            "pronunciation": "eh-pah"
-                  },
-                  {
-                            "target": "Serian",
-                            "source": "Peace / Serenity",
-                            "pronunciation": "seh-ri-an"
-                  },
-                  {
-                            "target": "Sopa",
-                            "source": "Hello / Greetings",
-                            "pronunciation": "soh-pah"
-                  },
-                  {
-                            "target": "Kiserian",
-                            "source": "Goodbye / Stay in peace",
-                            "pronunciation": "ki-seh-ri-an"
-                  },
-                  {
-                            "target": "Chamge",
-                            "source": "Greetings to elders / Respectful greeting",
-                            "pronunciation": "nah-boh"
-                  },
-                  {
-                            "target": "Supa",
-                            "source": "Hello (to a man)",
-                            "pronunciation": "supa"
-                  },
-                  {
-                            "target": "Takwenya",
-                            "source": "Hello (to a woman)",
-                            "pronunciation": "takwenya"
-                  },
-                  {
-                            "target": "Ipa",
-                            "source": "Response: Fine / Peaceful",
-                            "pronunciation": "ipa"
-                  },
-                  {
-                            "target": "Ashe oleng",
-                            "source": "Thank you very much",
-                            "pronunciation": "ashe oleng"
-                  }
+          {
+            "target": "Ashe",
+            "source": "Thank you",
+            "pronunciation": "ah-sheh oh-leng"
+          },
+          {
+            "target": "Epa",
+            "source": "Hello (Reply)",
+            "pronunciation": "eh-pah"
+          },
+          {
+            "target": "Serian",
+            "source": "Peace / Serenity",
+            "pronunciation": "seh-ri-an"
+          },
+          {
+            "target": "Sopa",
+            "source": "Hello / Greetings",
+            "pronunciation": "soh-pah"
+          },
+          {
+            "target": "Kiserian",
+            "source": "Goodbye / Stay in peace",
+            "pronunciation": "ki-seh-ri-an"
+          },
+          {
+            "target": "Chamge",
+            "source": "Greetings to elders / Respectful greeting",
+            "pronunciation": "nah-boh"
+          },
+          {
+            "target": "Supa",
+            "source": "Hello (to a man)",
+            "pronunciation": "supa"
+          },
+          {
+            "target": "Takwenya",
+            "source": "Hello (to a woman)",
+            "pronunciation": "takwenya"
+          },
+          {
+            "target": "Ipa",
+            "source": "Response: Fine / Peaceful",
+            "pronunciation": "ipa"
+          },
+          {
+            "target": "Ashe oleng",
+            "source": "Thank you very much",
+            "pronunciation": "ashe oleng"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Ashe oleng",
-                            "source": "Thank you very much"
-                  },
-                  {
-                            "target": "El bāek",
-                            "source": "Maize"
-                  },
-                  {
-                            "target": "Ol lameyu",
-                            "source": "Hunger"
-                  },
-                  {
-                            "target": "Or gumbao",
-                            "source": "Tobacco"
-                  },
-                  {
-                            "target": "O' sosiān",
-                            "source": "Date palm"
-                  },
-                  {
-                            "target": "En naishu, Na mōqa",
-                            "source": "Palm wine or mead"
-                  },
-                  {
-                            "target": "Njilingi eel Uingereza",
-                            "source": "British Pound (GBP)"
-                  },
-                  {
-                            "target": "Paunt eel Sudani",
-                            "source": "Sudanese Pound (SDG)"
-                  }
+          {
+            "target": "Ashe oleng",
+            "source": "Thank you very much."
+          },
+          {
+            "target": "O' sosiān",
+            "source": "Date palm."
+          },
+          {
+            "target": "En naishu, Na mōqa",
+            "source": "Palm wine or mead."
+          },
+          {
+            "target": "Njilingi eel Uingereza",
+            "source": "British Pound (GBP)."
+          },
+          {
+            "target": "Paunt eel Sudani",
+            "source": "Sudanese Pound (SDG)."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "samburu-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Samburu (Sampur) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
+        "culturalNote": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982).",
         "words": [
-                  {
-                            "target": "naɓô",
-                            "source": "One",
-                            "pronunciation": "na o"
-                  },
-                  {
-                            "target": "aré",
-                            "source": "Two",
-                            "pronunciation": "are"
-                  },
-                  {
-                            "target": "ílê",
-                            "source": "Six",
-                            "pronunciation": "i-le"
-                  },
-                  {
-                            "target": "tômôn",
-                            "source": "Ten",
-                            "pronunciation": "to-mon"
-                  },
-                  {
-                            "target": "onɠwán",
-                            "source": "Four",
-                            "pronunciation": "on-gwan"
-                  },
-                  {
-                            "target": "ímɟêt",
-                            "source": "Five",
-                            "pronunciation": "im-jet"
-                  },
-                  {
-                            "target": "sâːl",
-                            "source": "Nine",
-                            "pronunciation": "saal"
-                  },
-                  {
-                            "target": "uní",
-                            "source": "Three",
-                            "pronunciation": "uni"
-                  },
-                  {
-                            "target": "sápâ",
-                            "source": "Seven",
-                            "pronunciation": "sa-pa"
-                  },
-                  {
-                            "target": "ísɟêt",
-                            "source": "Eight",
-                            "pronunciation": "is-jet"
-                  }
+          {
+            "target": "naɓô",
+            "source": "One",
+            "pronunciation": "na o"
+          },
+          {
+            "target": "aré",
+            "source": "Two",
+            "pronunciation": "are"
+          },
+          {
+            "target": "ílê",
+            "source": "Six",
+            "pronunciation": "i-le"
+          },
+          {
+            "target": "tômôn",
+            "source": "Ten",
+            "pronunciation": "to-mon"
+          },
+          {
+            "target": "onɠwán",
+            "source": "Four",
+            "pronunciation": "on-gwan"
+          },
+          {
+            "target": "ímɟêt",
+            "source": "Five",
+            "pronunciation": "im-jet"
+          },
+          {
+            "target": "sâːl",
+            "source": "Nine",
+            "pronunciation": "saal"
+          },
+          {
+            "target": "uní",
+            "source": "Three",
+            "pronunciation": "uni"
+          },
+          {
+            "target": "sápâ",
+            "source": "Seven",
+            "pronunciation": "sa-pa"
+          },
+          {
+            "target": "ísɟêt",
+            "source": "Eight",
+            "pronunciation": "is-jet"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "Tomoni uni",
-                            "source": "Thirty"
-                  },
-                  {
-                            "target": "Tomon obo",
-                            "source": "Eleven"
-                  },
-                  {
-                            "target": "otomoni uni",
-                            "source": "Eighty"
-                  },
-                  {
-                            "target": "Ip tomon",
-                            "source": "Thousand"
-                  },
-                  {
-                            "target": "Eñ karei",
-                            "source": "Son"
-                  },
-                  {
-                            "target": "Eñ getok",
-                            "source": "Wife"
-                  },
-                  {
-                            "target": "Embatiān, Ol aitórienĭ, Lagwainani",
-                            "source": "Chief"
-                  },
-                  {
-                            "target": "El mau",
-                            "source": "Twins"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

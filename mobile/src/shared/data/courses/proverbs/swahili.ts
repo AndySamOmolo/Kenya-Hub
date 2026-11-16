@@ -2989,8 +2989,8 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mlaji ni mla-leo: mla-jana alileni?",
-    "literalTranslation": "An eater is an eater of to-day: the eater of",
-    "meaning": "yesterday, what has he eaten? (i.e. What does it matter what he ate)?",
+    "literalTranslation": "An eater is an eater of today; the eater of yesterday, what has he eaten?",
+    "meaning": "Present provision and action matter more than past consumption.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #278"
   },
@@ -4049,8 +4049,8 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "Mwenyi kushiriki moyo asourudi mtima, hufa maji p'ondo-ima, na kondoka na kilema.",
-    "literalTranslation": "He that gives full play to his desires (lit. heart) and does not restrain his heart, will die by",
-    "meaning": "drowning in shallow water, and decease with disgrace. —See on § 574.",
+    "literalTranslation": "He that gives full play to his desires and does not restrain his heart will drown in shallow water and depart in disgrace.",
+    "meaning": "Lack of self-restraint leads to ruin even in small trials.",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #387"
   },

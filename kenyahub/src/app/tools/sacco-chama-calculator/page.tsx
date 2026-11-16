@@ -7,6 +7,7 @@ import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import saccoData from "@/data/sacco-chama-rates.json";
+import economicCalendarData from "@/data/economic-calendar.json";
 
 const tool = TOOLS.find((t) => t.slug === "sacco-chama-calculator")!;
 
@@ -270,6 +271,25 @@ export default function SaccoChamaCalculatorPage() {
               </span>
               <span className="text-[var(--text-primary)]">KES {formatKES(calc.totalLoanInterest)}</span>
             </div>
+          </div>
+        </div>
+
+        {/* 2026 KNBS, CBK & Treasury Economic Release Calendar for SACCO / Chama Investors */}
+        <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-5 space-y-3 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-[var(--text-primary)]">
+            {economicCalendarData.year} Kenya Macroeconomic &amp; CBK Interest Rate Calendar ({economicCalendarData.source})
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+            {economicCalendarData.events.slice(0, 6).map((ev) => (
+              <div key={ev.name} className="rounded-xl bg-[var(--bg-elevated)]/60 border border-[var(--border)] p-3 text-xs space-y-1">
+                <div className="flex items-center justify-between font-bold text-[var(--text-primary)]">
+                  <span>{ev.name}</span>
+                  <span className="text-[var(--gold)]">{ev.agency}</span>
+                </div>
+                <p className="text-[var(--text-secondary)]">{ev.description}</p>
+                <p className="text-[var(--text-muted)] text-[0.6875rem]">{ev.frequency} • {ev.typicalDate}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@
         {
           "english": "Hello / Peace",
           "translation": "Nabad / Sooriyo",
-          "pronunciation": "na-bad / soo-ri-yo",
+          "pronunciation": "nabad",
           "context": "Rendille traditional greeting & blessing • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -63,8 +63,14 @@
         {
           "english": "Peace in the homestead brings blessing to the camels",
           "translation": "Nabad gobsan gaal barako u keenti",
-          "pronunciation": "nah-bahd gohb-sahn gaal bah-rah-koh oo kehn-tee",
+          "pronunciation": "nabad gobsan gaal barako u keenti",
           "context": "SIL Bloom Library Rendille Literacy Corpus (sil-ai/bloom-lm, rel, CC-BY-4.0)"
+        },
+        {
+          "english": "peace, wellness greeting / the elephant (masculine definite suffix -kí with high pitch accent)",
+          "translation": "nabáh / arab-kí",
+          "pronunciation": "nab-áh",
+          "context": "Afi Rendille Cushitic pitch-accent & gender suffixation (-kí masculine / -tí feminine) • Source: Christopher R. Green 2026 (African Tone Phenomena, Language Science Press #621, Ch. 9, CC-BY-4.0) & SIL International Bloom Library Rendille Collection"
         }
       ]
     },
@@ -265,6 +271,12 @@
           "translation": "lábo",
           "pronunciation": "lábo",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
+        },
+        {
+          "english": "Male / Man",
+          "translation": "lábo",
+          "pronunciation": "lábo",
+          "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
         }
       ]
     },
@@ -428,6 +440,18 @@
           "translation": "xalesi",
           "pronunciation": "xalesi",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+        },
+        {
+          "english": "Claw / Fingernail",
+          "translation": "góffan",
+          "pronunciation": "góffan",
+          "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
+        },
+        {
+          "english": "Kneecap / Knee",
+          "translation": "kursánte",
+          "pronunciation": "kursánte",
+          "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
         }
       ]
     },
@@ -555,6 +579,36 @@
           "translation": "góffan",
           "pronunciation": "góffan",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
+        },
+        {
+          "english": "Camel bull / Stud camel",
+          "translation": "óor",
+          "pronunciation": "óor",
+          "context": "SIL Bloom Rendille Graded Readers & Language Science Press Book #621 Tone in Cushitic (CC-BY-4.0)"
+        },
+        {
+          "english": "Female camel / Milking camel",
+          "translation": "ayú",
+          "pronunciation": "ayú",
+          "context": "SIL Bloom Rendille Graded Readers & Language Science Press Book #621 Tone in Cushitic (CC-BY-4.0)"
+        },
+        {
+          "english": "Pack camel / Burden camel",
+          "translation": "halál",
+          "pronunciation": "halál",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Goat / Herd of goats",
+          "translation": "riyó",
+          "pronunciation": "riyó",
+          "context": "CLDF ASJP v20 RENDILLE & SIL Bloom Rendille (CC-BY-4.0)"
+        },
+        {
+          "english": "Sheep",
+          "translation": "lax",
+          "pronunciation": "lax",
+          "context": "CLDF ASJP v20 RENDILLE & SIL Bloom Rendille (CC-BY-4.0)"
         }
       ]
     },
@@ -566,7 +620,7 @@
         {
           "english": "Sun",
           "translation": "orráh",
-          "pronunciation": "or-rah",
+          "pronunciation": "orráh",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -626,7 +680,7 @@
         {
           "english": "Mountain / Hill",
           "translation": "ukur / hal",
-          "pronunciation": "oo-koor / hahl",
+          "pronunciation": "ukur",
           "context": "Verified comparative entry across Kenyan cushitic corpus • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -712,6 +766,24 @@
           "translation": "yoóh",
           "pronunciation": "yoóh",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
+        },
+        {
+          "english": "Sand / Desert dune",
+          "translation": "yoóh",
+          "pronunciation": "yoóh",
+          "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
+        },
+        {
+          "english": "Seasonal river / Dry riverbed (lagga)",
+          "translation": "war",
+          "pronunciation": "war",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Morning star / Venus",
+          "translation": "bakál",
+          "pronunciation": "bakál",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
         }
       ]
     },
@@ -723,7 +795,7 @@
         {
           "english": "Food",
           "translation": "huun (soor)",
-          "pronunciation": "hoon / sohr",
+          "pronunciation": "huun",
           "context": "Hobley 1910 Rendille & Cushitic corpus • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -793,220 +865,10 @@
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
         },
         {
-          "english": "We keep food in our nomadic camp",
-          "translation": "Ino gob huun ku hayna",
-          "pronunciation": "ino gob huun ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep meat in our nomadic camp",
-          "translation": "Ino gob jíid ku hayna",
-          "pronunciation": "ino gob jíid ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep ghee in our nomadic camp",
-          "translation": "Ino gob subáh ku hayna",
-          "pronunciation": "ino gob subáh ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep spear in our nomadic camp",
-          "translation": "Ino gob tór ku hayna",
-          "pronunciation": "ino gob tór ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep water in our nomadic camp",
-          "translation": "Ino gob bice ku hayna",
-          "pronunciation": "ino gob bice ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep goat in our nomadic camp",
-          "translation": "Ino gob rriyó ku hayna",
-          "pronunciation": "ino gob rriyó ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep sheep in our nomadic camp",
-          "translation": "Ino gob óno ku hayna",
-          "pronunciation": "ino gob óno ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep camel in our nomadic camp",
-          "translation": "Ino gob gaal ku hayna",
-          "pronunciation": "ino gob gaal ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep cow in our nomadic camp",
-          "translation": "Ino gob lólyo ku hayna",
-          "pronunciation": "ino gob lólyo ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep horn in our nomadic camp",
-          "translation": "Ino gob gas ku hayna",
-          "pronunciation": "ino gob gas ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep cooking pot in our nomadic camp",
-          "translation": "Ino gob Dhari ku hayna",
-          "pronunciation": "ino gob dhari ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep medicine in our nomadic camp",
-          "translation": "Ino gob Dawo ku hayna",
-          "pronunciation": "ino gob dawo ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep iron in our nomadic camp",
-          "translation": "Ino gob birlab ku hayna",
-          "pronunciation": "ino gob birlab ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep horse in our nomadic camp",
-          "translation": "Ino gob faras ku hayna",
-          "pronunciation": "ino gob faras ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep arrow in our nomadic camp",
-          "translation": "Ino gob laho ku hayna",
-          "pronunciation": "ino gob laho ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep donkey in our nomadic camp",
-          "translation": "Ino gob eyhel ku hayna",
-          "pronunciation": "ino gob eyhel ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep shield in our nomadic camp",
-          "translation": "Ino gob gashan ku hayna",
-          "pronunciation": "ino gob gashan ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We keep sword in our nomadic camp",
-          "translation": "Ino gob bilau ku hayna",
-          "pronunciation": "ino gob bilau ku hayna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for food",
-          "translation": "Mejel gaal huun ilaaliya",
-          "pronunciation": "mejel gaal huun ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for meat",
-          "translation": "Mejel gaal jíid ilaaliya",
-          "pronunciation": "mejel gaal jíid ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for ghee",
-          "translation": "Mejel gaal subáh ilaaliya",
-          "pronunciation": "mejel gaal subáh ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for spear",
-          "translation": "Mejel gaal tór ilaaliya",
-          "pronunciation": "mejel gaal tór ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for water",
-          "translation": "Mejel gaal bice ilaaliya",
-          "pronunciation": "mejel gaal bice ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for goat",
-          "translation": "Mejel gaal rriyó ilaaliya",
-          "pronunciation": "mejel gaal rriyó ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for sheep",
-          "translation": "Mejel gaal óno ilaaliya",
-          "pronunciation": "mejel gaal óno ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for camel",
-          "translation": "Mejel gaal gaal ilaaliya",
-          "pronunciation": "mejel gaal gaal ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for cow",
-          "translation": "Mejel gaal lólyo ilaaliya",
-          "pronunciation": "mejel gaal lólyo ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for horn",
-          "translation": "Mejel gaal gas ilaaliya",
-          "pronunciation": "mejel gaal gas ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for cooking pot",
-          "translation": "Mejel gaal Dhari ilaaliya",
-          "pronunciation": "mejel gaal dhari ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for medicine",
-          "translation": "Mejel gaal Dawo ilaaliya",
-          "pronunciation": "mejel gaal dawo ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for iron",
-          "translation": "Mejel gaal birlab ilaaliya",
-          "pronunciation": "mejel gaal birlab ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for horse",
-          "translation": "Mejel gaal faras ilaaliya",
-          "pronunciation": "mejel gaal faras ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for arrow",
-          "translation": "Mejel gaal laho ilaaliya",
-          "pronunciation": "mejel gaal laho ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for donkey",
-          "translation": "Mejel gaal eyhel ilaaliya",
-          "pronunciation": "mejel gaal eyhel ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for shield",
-          "translation": "Mejel gaal gashan ilaaliya",
-          "pronunciation": "mejel gaal gashan ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Camel pastoralists care for sword",
-          "translation": "Mejel gaal bilau ilaaliya",
-          "pronunciation": "mejel gaal bilau ilaaliya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
+          "english": "the camel herd (masculine collective) / camel milk (pluralia tantum with final high tone)",
+          "translation": "gaal-kí / caanó",
+          "pronunciation": "gaal-kí",
+          "context": "Afi Rendille pastoral lexicon and Cushitic tone typology • Source: SIL International Bloom Library Rendille Collection (https://bloomlibrary.org, CC-BY-4.0) & Grambank v1.0.3 (https://grambank.clld.org, CC-BY-4.0)"
         }
       ]
     },
@@ -1062,6 +924,24 @@
           "translation": "Dhari",
           "pronunciation": "dhari",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+        },
+        {
+          "english": "Nomadic settlement / Manyatta enclosure",
+          "translation": "gób",
+          "pronunciation": "gób",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Woven mat roof of the Rendille house",
+          "translation": "min",
+          "pronunciation": "min",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Wooden milk container / Camel-milk vessel",
+          "translation": "koor",
+          "pronunciation": "koor",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
         }
       ]
     },
@@ -1163,7 +1043,7 @@
         {
           "english": "To give",
           "translation": "sii",
-          "pronunciation": "see",
+          "pronunciation": "sii",
           "context": "Verified comparative entry across Kenyan cushitic corpus • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1255,6 +1135,12 @@
           "translation": "kale",
           "pronunciation": "kale",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+        },
+        {
+          "english": "To burn / Blaze",
+          "translation": "bolkha",
+          "pronunciation": "bolkha",
+          "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
         }
       ]
     },
@@ -1284,13 +1170,13 @@
         {
           "english": "Good",
           "translation": "ki-wacan / hagagsan",
-          "pronunciation": "kee-wah-ahn / hah-gahg-sahn",
+          "pronunciation": "ki-wacan",
           "context": "Rendille Cushitic vocabulary • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Small",
           "translation": "yar (nyirakh = young/small)",
-          "pronunciation": "yahr / nyee-rahkh",
+          "pronunciation": "yar",
           "context": "Hobley 1910 Rendille vocabulary • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1332,7 +1218,7 @@
         {
           "english": "He / She",
           "translation": "us (he) / ice (she)",
-          "pronunciation": "oos / ee-cheh",
+          "pronunciation": "us",
           "context": "Verified comparative entry across Kenyan cushitic corpus • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1413,114 +1299,6 @@
           "translation": "Dhow",
           "pronunciation": "dhow",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
-        },
-        {
-          "english": "They brought food along the camel trail",
-          "translation": "Jit gaal huun ku keeneen",
-          "pronunciation": "jit gaal huun ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought meat along the camel trail",
-          "translation": "Jit gaal jíid ku keeneen",
-          "pronunciation": "jit gaal jíid ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought ghee along the camel trail",
-          "translation": "Jit gaal subáh ku keeneen",
-          "pronunciation": "jit gaal subáh ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought spear along the camel trail",
-          "translation": "Jit gaal tór ku keeneen",
-          "pronunciation": "jit gaal tór ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought water along the camel trail",
-          "translation": "Jit gaal bice ku keeneen",
-          "pronunciation": "jit gaal bice ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought goat along the camel trail",
-          "translation": "Jit gaal rriyó ku keeneen",
-          "pronunciation": "jit gaal rriyó ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought sheep along the camel trail",
-          "translation": "Jit gaal óno ku keeneen",
-          "pronunciation": "jit gaal óno ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought camel along the camel trail",
-          "translation": "Jit gaal gaal ku keeneen",
-          "pronunciation": "jit gaal gaal ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought cow along the camel trail",
-          "translation": "Jit gaal lólyo ku keeneen",
-          "pronunciation": "jit gaal lólyo ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought horn along the camel trail",
-          "translation": "Jit gaal gas ku keeneen",
-          "pronunciation": "jit gaal gas ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought cooking pot along the camel trail",
-          "translation": "Jit gaal Dhari ku keeneen",
-          "pronunciation": "jit gaal dhari ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought medicine along the camel trail",
-          "translation": "Jit gaal Dawo ku keeneen",
-          "pronunciation": "jit gaal dawo ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought iron along the camel trail",
-          "translation": "Jit gaal birlab ku keeneen",
-          "pronunciation": "jit gaal birlab ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought horse along the camel trail",
-          "translation": "Jit gaal faras ku keeneen",
-          "pronunciation": "jit gaal faras ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought arrow along the camel trail",
-          "translation": "Jit gaal laho ku keeneen",
-          "pronunciation": "jit gaal laho ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought donkey along the camel trail",
-          "translation": "Jit gaal eyhel ku keeneen",
-          "pronunciation": "jit gaal eyhel ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought shield along the camel trail",
-          "translation": "Jit gaal gashan ku keeneen",
-          "pronunciation": "jit gaal gashan ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "They brought sword along the camel trail",
-          "translation": "Jit gaal bilau ku keeneen",
-          "pronunciation": "jit gaal bilau ku keeneen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
         }
       ]
     },
@@ -1564,330 +1342,6 @@
           "translation": "Gaal / Maal",
           "pronunciation": "gaal",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
-        },
-        {
-          "english": "What is the value of food at the trading post?",
-          "translation": "Gatii huun suug meeqa?",
-          "pronunciation": "gatii huun suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of meat at the trading post?",
-          "translation": "Gatii jíid suug meeqa?",
-          "pronunciation": "gatii jíid suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of ghee at the trading post?",
-          "translation": "Gatii subáh suug meeqa?",
-          "pronunciation": "gatii subáh suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of spear at the trading post?",
-          "translation": "Gatii tór suug meeqa?",
-          "pronunciation": "gatii tór suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of water at the trading post?",
-          "translation": "Gatii bice suug meeqa?",
-          "pronunciation": "gatii bice suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of goat at the trading post?",
-          "translation": "Gatii rriyó suug meeqa?",
-          "pronunciation": "gatii rriyó suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of sheep at the trading post?",
-          "translation": "Gatii óno suug meeqa?",
-          "pronunciation": "gatii óno suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of camel at the trading post?",
-          "translation": "Gatii gaal suug meeqa?",
-          "pronunciation": "gatii gaal suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of cow at the trading post?",
-          "translation": "Gatii lólyo suug meeqa?",
-          "pronunciation": "gatii lólyo suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of horn at the trading post?",
-          "translation": "Gatii gas suug meeqa?",
-          "pronunciation": "gatii gas suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of cooking pot at the trading post?",
-          "translation": "Gatii Dhari suug meeqa?",
-          "pronunciation": "gatii dhari suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of medicine at the trading post?",
-          "translation": "Gatii Dawo suug meeqa?",
-          "pronunciation": "gatii dawo suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling food at the market",
-          "translation": "Suug keessatti huun iibiya",
-          "pronunciation": "suug keessatti huun iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought food yesterday",
-          "translation": "Ani shalay huun iibsaday",
-          "pronunciation": "ani shalay huun iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling meat at the market",
-          "translation": "Suug keessatti jíid iibiya",
-          "pronunciation": "suug keessatti jíid iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought meat yesterday",
-          "translation": "Ani shalay jíid iibsaday",
-          "pronunciation": "ani shalay jíid iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling ghee at the market",
-          "translation": "Suug keessatti subáh iibiya",
-          "pronunciation": "suug keessatti subáh iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought ghee yesterday",
-          "translation": "Ani shalay subáh iibsaday",
-          "pronunciation": "ani shalay subáh iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling spear at the market",
-          "translation": "Suug keessatti tór iibiya",
-          "pronunciation": "suug keessatti tór iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought spear yesterday",
-          "translation": "Ani shalay tór iibsaday",
-          "pronunciation": "ani shalay tór iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling water at the market",
-          "translation": "Suug keessatti bice iibiya",
-          "pronunciation": "suug keessatti bice iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought water yesterday",
-          "translation": "Ani shalay bice iibsaday",
-          "pronunciation": "ani shalay bice iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling goat at the market",
-          "translation": "Suug keessatti rriyó iibiya",
-          "pronunciation": "suug keessatti rriyó iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought goat yesterday",
-          "translation": "Ani shalay rriyó iibsaday",
-          "pronunciation": "ani shalay rriyó iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling sheep at the market",
-          "translation": "Suug keessatti óno iibiya",
-          "pronunciation": "suug keessatti óno iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought sheep yesterday",
-          "translation": "Ani shalay óno iibsaday",
-          "pronunciation": "ani shalay óno iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling camel at the market",
-          "translation": "Suug keessatti gaal iibiya",
-          "pronunciation": "suug keessatti gaal iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought camel yesterday",
-          "translation": "Ani shalay gaal iibsaday",
-          "pronunciation": "ani shalay gaal iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling cow at the market",
-          "translation": "Suug keessatti lólyo iibiya",
-          "pronunciation": "suug keessatti lólyo iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought cow yesterday",
-          "translation": "Ani shalay lólyo iibsaday",
-          "pronunciation": "ani shalay lólyo iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling horn at the market",
-          "translation": "Suug keessatti gas iibiya",
-          "pronunciation": "suug keessatti gas iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought horn yesterday",
-          "translation": "Ani shalay gas iibsaday",
-          "pronunciation": "ani shalay gas iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling cooking pot at the market",
-          "translation": "Suug keessatti Dhari iibiya",
-          "pronunciation": "suug keessatti dhari iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought cooking pot yesterday",
-          "translation": "Ani shalay Dhari iibsaday",
-          "pronunciation": "ani shalay dhari iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling medicine at the market",
-          "translation": "Suug keessatti Dawo iibiya",
-          "pronunciation": "suug keessatti dawo iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought medicine yesterday",
-          "translation": "Ani shalay Dawo iibsaday",
-          "pronunciation": "ani shalay dawo iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling iron at the market",
-          "translation": "Suug keessatti birlab iibiya",
-          "pronunciation": "suug keessatti birlab iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought iron yesterday",
-          "translation": "Ani shalay birlab iibsaday",
-          "pronunciation": "ani shalay birlab iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of iron at the trading post?",
-          "translation": "Gatii birlab suug meeqa?",
-          "pronunciation": "gatii birlab suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling horse at the market",
-          "translation": "Suug keessatti faras iibiya",
-          "pronunciation": "suug keessatti faras iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought horse yesterday",
-          "translation": "Ani shalay faras iibsaday",
-          "pronunciation": "ani shalay faras iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of horse at the trading post?",
-          "translation": "Gatii faras suug meeqa?",
-          "pronunciation": "gatii faras suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling arrow at the market",
-          "translation": "Suug keessatti laho iibiya",
-          "pronunciation": "suug keessatti laho iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought arrow yesterday",
-          "translation": "Ani shalay laho iibsaday",
-          "pronunciation": "ani shalay laho iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of arrow at the trading post?",
-          "translation": "Gatii laho suug meeqa?",
-          "pronunciation": "gatii laho suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling donkey at the market",
-          "translation": "Suug keessatti eyhel iibiya",
-          "pronunciation": "suug keessatti eyhel iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought donkey yesterday",
-          "translation": "Ani shalay eyhel iibsaday",
-          "pronunciation": "ani shalay eyhel iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of donkey at the trading post?",
-          "translation": "Gatii eyhel suug meeqa?",
-          "pronunciation": "gatii eyhel suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling shield at the market",
-          "translation": "Suug keessatti gashan iibiya",
-          "pronunciation": "suug keessatti gashan iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought shield yesterday",
-          "translation": "Ani shalay gashan iibsaday",
-          "pronunciation": "ani shalay gashan iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of shield at the trading post?",
-          "translation": "Gatii gashan suug meeqa?",
-          "pronunciation": "gatii gashan suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The trader is selling sword at the market",
-          "translation": "Suug keessatti bilau iibiya",
-          "pronunciation": "suug keessatti bilau iibiya",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "I bought sword yesterday",
-          "translation": "Ani shalay bilau iibsaday",
-          "pronunciation": "ani shalay bilau iibsaday",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "What is the value of sword at the trading post?",
-          "translation": "Gatii bilau suug meeqa?",
-          "pronunciation": "gatii bilau suug meeqa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
         }
       ]
     },
@@ -1937,114 +1391,6 @@
           "translation": "bolkha",
           "pronunciation": "bolkha",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
-        },
-        {
-          "english": "Protect food for the peace of the community",
-          "translation": "huun nabad gob u ilaali",
-          "pronunciation": "huun nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect meat for the peace of the community",
-          "translation": "jíid nabad gob u ilaali",
-          "pronunciation": "jíid nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect ghee for the peace of the community",
-          "translation": "subáh nabad gob u ilaali",
-          "pronunciation": "subáh nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect spear for the peace of the community",
-          "translation": "tór nabad gob u ilaali",
-          "pronunciation": "tór nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect water for the peace of the community",
-          "translation": "bice nabad gob u ilaali",
-          "pronunciation": "bice nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect goat for the peace of the community",
-          "translation": "rriyó nabad gob u ilaali",
-          "pronunciation": "rriyó nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect sheep for the peace of the community",
-          "translation": "óno nabad gob u ilaali",
-          "pronunciation": "óno nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect camel for the peace of the community",
-          "translation": "gaal nabad gob u ilaali",
-          "pronunciation": "gaal nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect cow for the peace of the community",
-          "translation": "lólyo nabad gob u ilaali",
-          "pronunciation": "lólyo nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect horn for the peace of the community",
-          "translation": "gas nabad gob u ilaali",
-          "pronunciation": "gas nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect cooking pot for the peace of the community",
-          "translation": "Dhari nabad gob u ilaali",
-          "pronunciation": "dhari nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect medicine for the peace of the community",
-          "translation": "Dawo nabad gob u ilaali",
-          "pronunciation": "dawo nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect iron for the peace of the community",
-          "translation": "birlab nabad gob u ilaali",
-          "pronunciation": "birlab nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect horse for the peace of the community",
-          "translation": "faras nabad gob u ilaali",
-          "pronunciation": "faras nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect arrow for the peace of the community",
-          "translation": "laho nabad gob u ilaali",
-          "pronunciation": "laho nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect donkey for the peace of the community",
-          "translation": "eyhel nabad gob u ilaali",
-          "pronunciation": "eyhel nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect shield for the peace of the community",
-          "translation": "gashan nabad gob u ilaali",
-          "pronunciation": "gashan nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Protect sword for the peace of the community",
-          "translation": "bilau nabad gob u ilaali",
-          "pronunciation": "bilau nabad gob u ilaali",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
         }
       ]
     },
@@ -2148,246 +1494,6 @@
           "translation": "iben",
           "pronunciation": "iben",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
-        },
-        {
-          "english": "Every morning we need food",
-          "translation": "Subax walba ino huun doona",
-          "pronunciation": "subax walba ino huun doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need meat",
-          "translation": "Subax walba ino jíid doona",
-          "pronunciation": "subax walba ino jíid doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need ghee",
-          "translation": "Subax walba ino subáh doona",
-          "pronunciation": "subax walba ino subáh doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need spear",
-          "translation": "Subax walba ino tór doona",
-          "pronunciation": "subax walba ino tór doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need water",
-          "translation": "Subax walba ino bice doona",
-          "pronunciation": "subax walba ino bice doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need goat",
-          "translation": "Subax walba ino rriyó doona",
-          "pronunciation": "subax walba ino rriyó doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need sheep",
-          "translation": "Subax walba ino óno doona",
-          "pronunciation": "subax walba ino óno doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need camel",
-          "translation": "Subax walba ino gaal doona",
-          "pronunciation": "subax walba ino gaal doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need cow",
-          "translation": "Subax walba ino lólyo doona",
-          "pronunciation": "subax walba ino lólyo doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need horn",
-          "translation": "Subax walba ino gas doona",
-          "pronunciation": "subax walba ino gas doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need cooking pot",
-          "translation": "Subax walba ino Dhari doona",
-          "pronunciation": "subax walba ino dhari doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need medicine",
-          "translation": "Subax walba ino Dawo doona",
-          "pronunciation": "subax walba ino dawo doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need iron",
-          "translation": "Subax walba ino birlab doona",
-          "pronunciation": "subax walba ino birlab doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need horse",
-          "translation": "Subax walba ino faras doona",
-          "pronunciation": "subax walba ino faras doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need arrow",
-          "translation": "Subax walba ino laho doona",
-          "pronunciation": "subax walba ino laho doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need donkey",
-          "translation": "Subax walba ino eyhel doona",
-          "pronunciation": "subax walba ino eyhel doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need shield",
-          "translation": "Subax walba ino gashan doona",
-          "pronunciation": "subax walba ino gashan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Every morning we need sword",
-          "translation": "Subax walba ino bilau doona",
-          "pronunciation": "subax walba ino bilau doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yesterday we prepared food",
-          "translation": "Shalay ino huun diyaarinnay",
-          "pronunciation": "shalay ino huun diyaarinnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring food",
-          "translation": "Berri ino huun keeni",
-          "pronunciation": "berri ino huun keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yesterday we prepared meat",
-          "translation": "Shalay ino jíid diyaarinnay",
-          "pronunciation": "shalay ino jíid diyaarinnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring meat",
-          "translation": "Berri ino jíid keeni",
-          "pronunciation": "berri ino jíid keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yesterday we prepared ghee",
-          "translation": "Shalay ino subáh diyaarinnay",
-          "pronunciation": "shalay ino subáh diyaarinnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring ghee",
-          "translation": "Berri ino subáh keeni",
-          "pronunciation": "berri ino subáh keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring spear",
-          "translation": "Berri ino tór keeni",
-          "pronunciation": "berri ino tór keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yesterday we prepared water",
-          "translation": "Shalay ino bice diyaarinnay",
-          "pronunciation": "shalay ino bice diyaarinnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring water",
-          "translation": "Berri ino bice keeni",
-          "pronunciation": "berri ino bice keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring goat",
-          "translation": "Berri ino rriyó keeni",
-          "pronunciation": "berri ino rriyó keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring sheep",
-          "translation": "Berri ino óno keeni",
-          "pronunciation": "berri ino óno keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring camel",
-          "translation": "Berri ino gaal keeni",
-          "pronunciation": "berri ino gaal keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring cow",
-          "translation": "Berri ino lólyo keeni",
-          "pronunciation": "berri ino lólyo keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring horn",
-          "translation": "Berri ino gas keeni",
-          "pronunciation": "berri ino gas keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring cooking pot",
-          "translation": "Berri ino Dhari keeni",
-          "pronunciation": "berri ino dhari keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring medicine",
-          "translation": "Berri ino Dawo keeni",
-          "pronunciation": "berri ino dawo keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring iron",
-          "translation": "Berri ino birlab keeni",
-          "pronunciation": "berri ino birlab keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring horse",
-          "translation": "Berri ino faras keeni",
-          "pronunciation": "berri ino faras keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring arrow",
-          "translation": "Berri ino laho keeni",
-          "pronunciation": "berri ino laho keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring donkey",
-          "translation": "Berri ino eyhel keeni",
-          "pronunciation": "berri ino eyhel keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring shield",
-          "translation": "Berri ino gashan keeni",
-          "pronunciation": "berri ino gashan keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Tomorrow we will bring sword",
-          "translation": "Berri ino bilau keeni",
-          "pronunciation": "berri ino bilau keeni",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
         }
       ]
     },
@@ -2427,1084 +1533,16 @@
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
         },
         {
-          "english": "Where is food?",
-          "translation": "huun xagee jira?",
-          "pronunciation": "huun xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have food in our camp",
-          "translation": "Ino gob huun qabna",
-          "pronunciation": "ino gob huun qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This food is very good",
-          "translation": "huun kan waa wacan",
-          "pronunciation": "huun kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is meat?",
-          "translation": "jíid xagee jira?",
-          "pronunciation": "jíid xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have meat in our camp",
-          "translation": "Ino gob jíid qabna",
-          "pronunciation": "ino gob jíid qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This meat is very good",
-          "translation": "jíid kan waa wacan",
-          "pronunciation": "jíid kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is ghee?",
-          "translation": "subáh xagee jira?",
-          "pronunciation": "subáh xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have ghee in our camp",
-          "translation": "Ino gob subáh qabna",
-          "pronunciation": "ino gob subáh qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This ghee is very good",
-          "translation": "subáh kan waa wacan",
-          "pronunciation": "subáh kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is spear?",
-          "translation": "tór xagee jira?",
-          "pronunciation": "tór xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have spear in our camp",
-          "translation": "Ino gob tór qabna",
-          "pronunciation": "ino gob tór qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This spear is very good",
-          "translation": "tór kan waa wacan",
-          "pronunciation": "tór kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is water?",
-          "translation": "bice xagee jira?",
-          "pronunciation": "bice xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have water in our camp",
-          "translation": "Ino gob bice qabna",
-          "pronunciation": "ino gob bice qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This water is very good",
-          "translation": "bice kan waa wacan",
-          "pronunciation": "bice kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is goat?",
-          "translation": "rriyó xagee jira?",
-          "pronunciation": "rriyó xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have goat in our camp",
-          "translation": "Ino gob rriyó qabna",
-          "pronunciation": "ino gob rriyó qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This goat is very good",
-          "translation": "rriyó kan waa wacan",
-          "pronunciation": "rriyó kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is sheep?",
-          "translation": "óno xagee jira?",
-          "pronunciation": "óno xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have sheep in our camp",
-          "translation": "Ino gob óno qabna",
-          "pronunciation": "ino gob óno qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This sheep is very good",
-          "translation": "óno kan waa wacan",
-          "pronunciation": "óno kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is camel?",
-          "translation": "gaal xagee jira?",
-          "pronunciation": "gaal xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have camel in our camp",
-          "translation": "Ino gob gaal qabna",
-          "pronunciation": "ino gob gaal qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This camel is very good",
-          "translation": "gaal kan waa wacan",
-          "pronunciation": "gaal kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is cow?",
-          "translation": "lólyo xagee jira?",
-          "pronunciation": "lólyo xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have cow in our camp",
-          "translation": "Ino gob lólyo qabna",
-          "pronunciation": "ino gob lólyo qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This cow is very good",
-          "translation": "lólyo kan waa wacan",
-          "pronunciation": "lólyo kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is horn?",
-          "translation": "gas xagee jira?",
-          "pronunciation": "gas xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have horn in our camp",
-          "translation": "Ino gob gas qabna",
-          "pronunciation": "ino gob gas qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This horn is very good",
-          "translation": "gas kan waa wacan",
-          "pronunciation": "gas kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is cooking pot?",
-          "translation": "Dhari xagee jira?",
-          "pronunciation": "dhari xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have cooking pot in our camp",
-          "translation": "Ino gob Dhari qabna",
-          "pronunciation": "ino gob dhari qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This cooking pot is very good",
-          "translation": "Dhari kan waa wacan",
-          "pronunciation": "dhari kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is medicine?",
-          "translation": "Dawo xagee jira?",
-          "pronunciation": "dawo xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have medicine in our camp",
-          "translation": "Ino gob Dawo qabna",
-          "pronunciation": "ino gob dawo qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This medicine is very good",
-          "translation": "Dawo kan waa wacan",
-          "pronunciation": "dawo kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good food",
-          "translation": "Aa, ino huun wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me food",
-          "translation": "huun i sii",
-          "pronunciation": "huun i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw food near the well",
-          "translation": "Ceel agtiisa huun ku aragnay",
-          "pronunciation": "ceel agtiisa huun ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good meat",
-          "translation": "Aa, ino jíid wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me meat",
-          "translation": "jíid i sii",
-          "pronunciation": "jíid i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw meat near the well",
-          "translation": "Ceel agtiisa jíid ku aragnay",
-          "pronunciation": "ceel agtiisa jíid ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good ghee",
-          "translation": "Aa, ino subáh wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me ghee",
-          "translation": "subáh i sii",
-          "pronunciation": "subáh i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw ghee near the well",
-          "translation": "Ceel agtiisa subáh ku aragnay",
-          "pronunciation": "ceel agtiisa subáh ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good spear",
-          "translation": "Aa, ino tór wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me spear",
-          "translation": "tór i sii",
-          "pronunciation": "tór i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw spear near the well",
-          "translation": "Ceel agtiisa tór ku aragnay",
-          "pronunciation": "ceel agtiisa tór ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good water",
-          "translation": "Aa, ino bice wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me water",
-          "translation": "bice i sii",
-          "pronunciation": "bice i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw water near the well",
-          "translation": "Ceel agtiisa bice ku aragnay",
-          "pronunciation": "ceel agtiisa bice ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good goat",
-          "translation": "Aa, ino rriyó wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me goat",
-          "translation": "rriyó i sii",
-          "pronunciation": "rriyó i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw goat near the well",
-          "translation": "Ceel agtiisa rriyó ku aragnay",
-          "pronunciation": "ceel agtiisa rriyó ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good sheep",
-          "translation": "Aa, ino óno wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me sheep",
-          "translation": "óno i sii",
-          "pronunciation": "óno i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw sheep near the well",
-          "translation": "Ceel agtiisa óno ku aragnay",
-          "pronunciation": "ceel agtiisa óno ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good camel",
-          "translation": "Aa, ino gaal wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me camel",
-          "translation": "gaal i sii",
-          "pronunciation": "gaal i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw camel near the well",
-          "translation": "Ceel agtiisa gaal ku aragnay",
-          "pronunciation": "ceel agtiisa gaal ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good cow",
-          "translation": "Aa, ino lólyo wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me cow",
-          "translation": "lólyo i sii",
-          "pronunciation": "lólyo i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw cow near the well",
-          "translation": "Ceel agtiisa lólyo ku aragnay",
-          "pronunciation": "ceel agtiisa lólyo ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good horn",
-          "translation": "Aa, ino gas wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me horn",
-          "translation": "gas i sii",
-          "pronunciation": "gas i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw horn near the well",
-          "translation": "Ceel agtiisa gas ku aragnay",
-          "pronunciation": "ceel agtiisa gas ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good cooking pot",
-          "translation": "Aa, ino Dhari wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me cooking pot",
-          "translation": "Dhari i sii",
-          "pronunciation": "dhari i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw cooking pot near the well",
-          "translation": "Ceel agtiisa Dhari ku aragnay",
-          "pronunciation": "ceel agtiisa dhari ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good medicine",
-          "translation": "Aa, ino Dawo wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me medicine",
-          "translation": "Dawo i sii",
-          "pronunciation": "dawo i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw medicine near the well",
-          "translation": "Ceel agtiisa Dawo ku aragnay",
-          "pronunciation": "ceel agtiisa dawo ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good iron",
-          "translation": "Aa, ino birlab wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me iron",
-          "translation": "birlab i sii",
-          "pronunciation": "birlab i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw iron near the well",
-          "translation": "Ceel agtiisa birlab ku aragnay",
-          "pronunciation": "ceel agtiisa birlab ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good horse",
-          "translation": "Aa, ino faras wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me horse",
-          "translation": "faras i sii",
-          "pronunciation": "faras i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw horse near the well",
-          "translation": "Ceel agtiisa faras ku aragnay",
-          "pronunciation": "ceel agtiisa faras ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good arrow",
-          "translation": "Aa, ino laho wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me arrow",
-          "translation": "laho i sii",
-          "pronunciation": "laho i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw arrow near the well",
-          "translation": "Ceel agtiisa laho ku aragnay",
-          "pronunciation": "ceel agtiisa laho ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good donkey",
-          "translation": "Aa, ino eyhel wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me donkey",
-          "translation": "eyhel i sii",
-          "pronunciation": "eyhel i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw donkey near the well",
-          "translation": "Ceel agtiisa eyhel ku aragnay",
-          "pronunciation": "ceel agtiisa eyhel ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good shield",
-          "translation": "Aa, ino gashan wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me shield",
-          "translation": "gashan i sii",
-          "pronunciation": "gashan i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw shield near the well",
-          "translation": "Ceel agtiisa gashan ku aragnay",
-          "pronunciation": "ceel agtiisa gashan ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Yes, we have good sword",
-          "translation": "Aa, ino bilau wacan qabna",
-          "pronunciation": "aa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me sword",
-          "translation": "bilau i sii",
-          "pronunciation": "bilau i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We saw sword near the well",
-          "translation": "Ceel agtiisa bilau ku aragnay",
-          "pronunciation": "ceel agtiisa bilau ku aragnay",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good food in our nomadic camp",
-          "translation": "Ino gob huun wacan doona",
-          "pronunciation": "ino gob huun wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see food over there?",
-          "translation": "Ati huun ma aragtaa?",
-          "pronunciation": "ati huun ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about food",
-          "translation": "Odayaashu gob huun ka hadleen",
-          "pronunciation": "odayaashu gob huun ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me food",
-          "translation": "Ani huun i sii",
-          "pronunciation": "ani huun i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good meat in our nomadic camp",
-          "translation": "Ino gob jíid wacan doona",
-          "pronunciation": "ino gob jíid wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see meat over there?",
-          "translation": "Ati jíid ma aragtaa?",
-          "pronunciation": "ati jíid ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about meat",
-          "translation": "Odayaashu gob jíid ka hadleen",
-          "pronunciation": "odayaashu gob jíid ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me meat",
-          "translation": "Ani jíid i sii",
-          "pronunciation": "ani jíid i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good ghee in our nomadic camp",
-          "translation": "Ino gob subáh wacan doona",
-          "pronunciation": "ino gob subáh wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see ghee over there?",
-          "translation": "Ati subáh ma aragtaa?",
-          "pronunciation": "ati subáh ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about ghee",
-          "translation": "Odayaashu gob subáh ka hadleen",
-          "pronunciation": "odayaashu gob subáh ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me ghee",
-          "translation": "Ani subáh i sii",
-          "pronunciation": "ani subáh i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good spear in our nomadic camp",
-          "translation": "Ino gob tór wacan doona",
-          "pronunciation": "ino gob tór wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see spear over there?",
-          "translation": "Ati tór ma aragtaa?",
-          "pronunciation": "ati tór ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about spear",
-          "translation": "Odayaashu gob tór ka hadleen",
-          "pronunciation": "odayaashu gob tór ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me spear",
-          "translation": "Ani tór i sii",
-          "pronunciation": "ani tór i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good water in our nomadic camp",
-          "translation": "Ino gob bice wacan doona",
-          "pronunciation": "ino gob bice wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see water over there?",
-          "translation": "Ati bice ma aragtaa?",
-          "pronunciation": "ati bice ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about water",
-          "translation": "Odayaashu gob bice ka hadleen",
-          "pronunciation": "odayaashu gob bice ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me water",
-          "translation": "Ani bice i sii",
-          "pronunciation": "ani bice i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good goat in our nomadic camp",
-          "translation": "Ino gob rriyó wacan doona",
-          "pronunciation": "ino gob rriyó wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see goat over there?",
-          "translation": "Ati rriyó ma aragtaa?",
-          "pronunciation": "ati rriyó ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about goat",
-          "translation": "Odayaashu gob rriyó ka hadleen",
-          "pronunciation": "odayaashu gob rriyó ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me goat",
-          "translation": "Ani rriyó i sii",
-          "pronunciation": "ani rriyó i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good sheep in our nomadic camp",
-          "translation": "Ino gob óno wacan doona",
-          "pronunciation": "ino gob óno wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see sheep over there?",
-          "translation": "Ati óno ma aragtaa?",
-          "pronunciation": "ati óno ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about sheep",
-          "translation": "Odayaashu gob óno ka hadleen",
-          "pronunciation": "odayaashu gob óno ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me sheep",
-          "translation": "Ani óno i sii",
-          "pronunciation": "ani óno i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good camel in our nomadic camp",
-          "translation": "Ino gob gaal wacan doona",
-          "pronunciation": "ino gob gaal wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see camel over there?",
-          "translation": "Ati gaal ma aragtaa?",
-          "pronunciation": "ati gaal ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about camel",
-          "translation": "Odayaashu gob gaal ka hadleen",
-          "pronunciation": "odayaashu gob gaal ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me camel",
-          "translation": "Ani gaal i sii",
-          "pronunciation": "ani gaal i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good cow in our nomadic camp",
-          "translation": "Ino gob lólyo wacan doona",
-          "pronunciation": "ino gob lólyo wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see cow over there?",
-          "translation": "Ati lólyo ma aragtaa?",
-          "pronunciation": "ati lólyo ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about cow",
-          "translation": "Odayaashu gob lólyo ka hadleen",
-          "pronunciation": "odayaashu gob lólyo ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me cow",
-          "translation": "Ani lólyo i sii",
-          "pronunciation": "ani lólyo i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good horn in our nomadic camp",
-          "translation": "Ino gob gas wacan doona",
-          "pronunciation": "ino gob gas wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see horn over there?",
-          "translation": "Ati gas ma aragtaa?",
-          "pronunciation": "ati gas ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about horn",
-          "translation": "Odayaashu gob gas ka hadleen",
-          "pronunciation": "odayaashu gob gas ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me horn",
-          "translation": "Ani gas i sii",
-          "pronunciation": "ani gas i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good cooking pot in our nomadic camp",
-          "translation": "Ino gob Dhari wacan doona",
-          "pronunciation": "ino gob dhari wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see cooking pot over there?",
-          "translation": "Ati Dhari ma aragtaa?",
-          "pronunciation": "ati dhari ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about cooking pot",
-          "translation": "Odayaashu gob Dhari ka hadleen",
-          "pronunciation": "odayaashu gob dhari ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me cooking pot",
-          "translation": "Ani Dhari i sii",
-          "pronunciation": "ani dhari i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good medicine in our nomadic camp",
-          "translation": "Ino gob Dawo wacan doona",
-          "pronunciation": "ino gob dawo wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see medicine over there?",
-          "translation": "Ati Dawo ma aragtaa?",
-          "pronunciation": "ati dawo ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about medicine",
-          "translation": "Odayaashu gob Dawo ka hadleen",
-          "pronunciation": "odayaashu gob dawo ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me medicine",
-          "translation": "Ani Dawo i sii",
-          "pronunciation": "ani dawo i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good iron in our nomadic camp",
-          "translation": "Ino gob birlab wacan doona",
-          "pronunciation": "ino gob birlab wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see iron over there?",
-          "translation": "Ati birlab ma aragtaa?",
-          "pronunciation": "ati birlab ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about iron",
-          "translation": "Odayaashu gob birlab ka hadleen",
-          "pronunciation": "odayaashu gob birlab ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me iron",
-          "translation": "Ani birlab i sii",
-          "pronunciation": "ani birlab i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is iron?",
-          "translation": "birlab xagee jira?",
-          "pronunciation": "birlab xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have iron in our camp",
-          "translation": "Ino gob birlab qabna",
-          "pronunciation": "ino gob birlab qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This iron is very good",
-          "translation": "birlab kan waa wacan",
-          "pronunciation": "birlab kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good horse in our nomadic camp",
-          "translation": "Ino gob faras wacan doona",
-          "pronunciation": "ino gob faras wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see horse over there?",
-          "translation": "Ati faras ma aragtaa?",
-          "pronunciation": "ati faras ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about horse",
-          "translation": "Odayaashu gob faras ka hadleen",
-          "pronunciation": "odayaashu gob faras ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me horse",
-          "translation": "Ani faras i sii",
-          "pronunciation": "ani faras i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is horse?",
-          "translation": "faras xagee jira?",
-          "pronunciation": "faras xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have horse in our camp",
-          "translation": "Ino gob faras qabna",
-          "pronunciation": "ino gob faras qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This horse is very good",
-          "translation": "faras kan waa wacan",
-          "pronunciation": "faras kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good arrow in our nomadic camp",
-          "translation": "Ino gob laho wacan doona",
-          "pronunciation": "ino gob laho wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see arrow over there?",
-          "translation": "Ati laho ma aragtaa?",
-          "pronunciation": "ati laho ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about arrow",
-          "translation": "Odayaashu gob laho ka hadleen",
-          "pronunciation": "odayaashu gob laho ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me arrow",
-          "translation": "Ani laho i sii",
-          "pronunciation": "ani laho i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is arrow?",
-          "translation": "laho xagee jira?",
-          "pronunciation": "laho xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have arrow in our camp",
-          "translation": "Ino gob laho qabna",
-          "pronunciation": "ino gob laho qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This arrow is very good",
-          "translation": "laho kan waa wacan",
-          "pronunciation": "laho kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good donkey in our nomadic camp",
-          "translation": "Ino gob eyhel wacan doona",
-          "pronunciation": "ino gob eyhel wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see donkey over there?",
-          "translation": "Ati eyhel ma aragtaa?",
-          "pronunciation": "ati eyhel ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about donkey",
-          "translation": "Odayaashu gob eyhel ka hadleen",
-          "pronunciation": "odayaashu gob eyhel ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me donkey",
-          "translation": "Ani eyhel i sii",
-          "pronunciation": "ani eyhel i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is donkey?",
-          "translation": "eyhel xagee jira?",
-          "pronunciation": "eyhel xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have donkey in our camp",
-          "translation": "Ino gob eyhel qabna",
-          "pronunciation": "ino gob eyhel qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This donkey is very good",
-          "translation": "eyhel kan waa wacan",
-          "pronunciation": "eyhel kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good shield in our nomadic camp",
-          "translation": "Ino gob gashan wacan doona",
-          "pronunciation": "ino gob gashan wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see shield over there?",
-          "translation": "Ati gashan ma aragtaa?",
-          "pronunciation": "ati gashan ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about shield",
-          "translation": "Odayaashu gob gashan ka hadleen",
-          "pronunciation": "odayaashu gob gashan ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me shield",
-          "translation": "Ani gashan i sii",
-          "pronunciation": "ani gashan i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is shield?",
-          "translation": "gashan xagee jira?",
-          "pronunciation": "gashan xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have shield in our camp",
-          "translation": "Ino gob gashan qabna",
-          "pronunciation": "ino gob gashan qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This shield is very good",
-          "translation": "gashan kan waa wacan",
-          "pronunciation": "gashan kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We need good sword in our nomadic camp",
-          "translation": "Ino gob bilau wacan doona",
-          "pronunciation": "ino gob bilau wacan doona",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you see sword over there?",
-          "translation": "Ati bilau ma aragtaa?",
-          "pronunciation": "ati bilau ma aragtaa",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "The elders spoke about sword",
-          "translation": "Odayaashu gob bilau ka hadleen",
-          "pronunciation": "odayaashu gob bilau ka hadleen",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Please give me sword",
-          "translation": "Ani bilau i sii",
-          "pronunciation": "ani bilau i sii",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "Where is sword?",
-          "translation": "bilau xagee jira?",
-          "pronunciation": "bilau xagee jira",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "We have sword in our camp",
-          "translation": "Ino gob bilau qabna",
-          "pronunciation": "ino gob bilau qabna",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
-        },
-        {
-          "english": "This sword is very good",
-          "translation": "bilau kan waa wacan",
-          "pronunciation": "bilau kan waa wacan",
-          "context": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2), East Cushitic Comparative Lexicon (Blažek 2011) & SIL Bloom Rendille (CC-BY-4.0)"
+          "english": "Peace be with you (Rendille greeting)",
+          "translation": "Nabadetah?",
+          "pronunciation": "nabadetah",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "It is peace (greeting response)",
+          "translation": "Waa nabade",
+          "pronunciation": "waa nabade",
+          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
         }
       ]
     },
@@ -3606,7 +1644,7 @@
         {
           "english": "Camel (Collective)",
           "translation": "gaal (nyirakh = camel calf)",
-          "pronunciation": "gahl / nyee-rahkh",
+          "pronunciation": "gaal",
           "context": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3672,7 +1710,7 @@
         {
           "english": "Naroshon (Rendille clan that migrated with the Samburu Lorogishu / Kwakituk from Angata e-'m-barta across the Sogota and Lomello plains)",
           "translation": "Naroshon (migrated alongside Samburu Lorogishu [Suk Kwakituk] to the Sogota & Lomello plains until driven out by Turkana & Suk; Rendile-Samburu physical admixture among southern Turkana)",
-          "pronunciation": "na-rosh-on / kwa-ki-tuk",
+          "pronunciation": "naroshon",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 51, 66) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3684,7 +1722,7 @@
         {
           "english": "Early 1882–1888 records of the camel-herding Rendille east of Lake Samburu/Rudolf",
           "translation": "Randile / Rendille",
-          "pronunciation": "rahn-dee-leh / ren-deel-leh",
+          "pronunciation": "randile",
           "context": "Rev. T. Wakefield (1882, p. 745) & Lieut. Ludwig von Höhnel (1894) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3699,5 +1737,5 @@
   "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243",
-  "totalEntries": 595
+  "totalEntries": 268
 }

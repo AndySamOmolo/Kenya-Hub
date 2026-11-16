@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import bomaData from "@/data/boma-yangu-data.json";
+import housingLevyData from "@/data/housing-levy-rates.json";
 
 const tool = TOOLS.find((t) => t.slug === "boma-yangu-calculator")!;
 
@@ -166,6 +167,16 @@ export default function BomaYanguCalculatorPage() {
               <p className="text-[0.6875rem] text-text-secondary mt-1">Deposit required: KES {Math.round(calc.deposit).toLocaleString()}</p>
             </div>
           </div>
+        </div>
+
+        {/* Statutory Affordable Housing Levy Rules */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-2.5 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            Statutory Basis: {housingLevyData.legalBasis} (Effective {housingLevyData.effectiveDate})
+          </h2>
+          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+            {housingLevyData.taxReliefDescription}
+          </p>
         </div>
       </div>
     </ToolShell>

@@ -14,6 +14,9 @@ import parksData from "@/data/national-parks.json";
 import forestsData from "@/data/forest-reserves.json";
 import agrovetsData from "@/data/agrovets.json";
 import languagesData from "@/data/kenya-languages.json";
+import cropCalendarData from "@/data/crop-planting-calendar.json";
+import fertilizerData from "@/data/fertilizer-subsidy.json";
+import livestockData from "@/data/livestock-prices.json";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -784,6 +787,48 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                 <p className="text-xs font-semibold text-text-primary break-words">{oc.name} County</p>
                 <p className="text-[0.65rem] text-text-muted break-words">HQ: {oc.capital}</p>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* KALRO Crop Planting Calendar, NCPB Subsidized Fertilizer & Livestock Market Benchmarks */}
+      <section className="bg-bg-card border border-border rounded-2xl p-5 sm:p-7 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            KALRO Crop Planting Calendar, NCPB Fertilizer Subsidy &amp; Livestock Markets
+          </h2>
+          <span className="text-xs text-gold font-semibold">
+            {cropCalendarData.source} • {fertilizerData.subsidyProgram.registrationSystem}
+          </span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
+            <h3 className="font-bold text-text-primary">Staple &amp; Cash Crops</h3>
+            {cropCalendarData.crops.slice(0, 5).map((crop) => (
+              <p key={crop.name} className="text-text-secondary">
+                <strong className="text-gold">{crop.name} ({crop.category}):</strong> {crop.maturityDays}
+              </p>
+            ))}
+          </div>
+          <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
+            <h3 className="font-bold text-text-primary">NCPB e-Voucher Fertilizer (50kg)</h3>
+            {fertilizerData.fertilizers.slice(0, 5).map((fert) => (
+              <p key={fert.name} className="text-text-secondary flex justify-between gap-2">
+                <span>{fert.name}</span>
+                <strong className="text-kenya-green-light">KES {fert.subsidizedPrice.toLocaleString()}</strong>
+              </p>
+            ))}
+          </div>
+          <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
+            <h3 className="font-bold text-text-primary">NALMC Livestock Benchmarks</h3>
+            {livestockData.livestock.map((lv) => (
+              <p key={lv.type} className="text-text-secondary flex justify-between gap-2">
+                <span>{lv.type}</span>
+                <strong className="text-text-primary">
+                  KES {(lv.prices[0]?.minPrice || 4000).toLocaleString()}–{(lv.prices[0]?.maxPrice || 15000).toLocaleString()}
+                </strong>
+              </p>
             ))}
           </div>
         </div>

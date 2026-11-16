@@ -52,31 +52,49 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "tips": "Kalenjin attaches definite articles to the END of nouns: chiito (the person, pl. piik), lakwet (the child, pl. lakōk/lagok), teta (the cow, pl. tuka/tuga), peik/beek (the water). Note also Hollis (1909, p. 163, 178): a man calls his house ka / kaita, whereas a woman calls it ko / kot.",
         "words": [
           {
-            "target": "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
-            "source": "Hello! / Male greeting! (Very much peace! / Epa!)",
+            "target": "Chamgei!",
+            "source": "Hello!",
             "pronunciation": "chamgei / so-pai",
             "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
           },
           {
-            "target": "Takwenya! (resp. Igo!) / Saiseri! (A-'kot-in)",
-            "source": "Greeting to women, elders & warriors on war-path! / Good-bye! (I salute thee)",
+            "target": "Sopai!",
+            "source": "Male greeting!",
+            "pronunciation": "chamgei / so-pai",
+            "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
+          },
+          {
+            "target": "Epa!)",
+            "source": "Epa!)",
+            "pronunciation": "chamgei / so-pai",
+            "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
+          },
+          {
+            "target": "Takwenya! (resp. Igo!)",
+            "source": "Greeting to women, elders & warriors on war-path!",
             "pronunciation": "takwenya / sai-se-ri",
             "hint": "Hollis (1909, pp. 43, 90–91, 230–231)"
           },
           {
-            "target": "chiito (indef. chi, pl. piik / pich)",
+            "target": "Saiseri! (A-'kot-in)",
+            "source": "Good-bye! (I salute thee)",
+            "pronunciation": "takwenya / sai-se-ri",
+            "hint": "Hollis (1909, pp. 43, 90–91, 230–231)"
+          },
+          {
+            "target": "chiito (indef. chi",
             "source": "the person (pl. the people)",
             "pronunciation": "chii-to",
             "hint": "Class I irregular noun (Hollis 1909, pp. 160, 168)"
           },
           {
-            "target": "lakwet (indef. lakwa, pl. lakōk / lagok)",
+            "target": "lakwet (indef. lakwa",
             "source": "the child (pl. the children)",
             "pronunciation": "lakwet",
             "hint": "Class II noun (Hollis 1909, p. 169)"
           },
           {
-            "target": "teta (indef. tany, pl. tuka / tuga)",
+            "target": "teta (indef. tany",
             "source": "the cow, ox (pl. the cattle)",
             "pronunciation": "te-ta",
             "hint": "Class XI irregular noun (Hollis 1909, p. 180)"
@@ -141,57 +159,73 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Cham-ke sapon, cham-ke lakōk, cham-ke tuka, cham-ke ka.",
-            "source": "May your health be good, and may the children, cattle, and all at home be well (Hollis 1909, p. 91)."
+            "source": "May your health be good, and may the children, cattle, and all at home be well ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)\" in Kalenjin?",
-            "correctAnswer": "Hello! / Male greeting! (Very much peace! / Epa!)",
+            "prompt": "What is the English meaning of \"Chamgei!\" in Kalenjin?",
+            "correctAnswer": "Hello!",
             "options": [
-              "Greeting to women, elders & warriors on war-path! / Good-bye! (I salute thee)",
-              "the person (pl. the people)",
-              "the child (pl. the children)",
-              "Hello! / Male greeting! (Very much peace! / Epa!)"
+              "Hello!",
+              "Greeting to women",
+              "the person",
+              "the child"
             ],
-            "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
+            "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting",
+            "acceptedAnswers": [
+              "Hello! / Male greeting! (Very much peace! / Epa!)",
+              "Hello!"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"chiito (indef. chi, pl. piik / pich)\" in Kalenjin?",
-            "correctAnswer": "the person (pl. the people)",
+            "correctAnswer": "the person",
             "options": [
-              "the child (pl. the children)",
+              "the person",
+              "the child",
+              "Hello!",
+              "Greeting to women"
+            ],
+            "hint": "Class I irregular noun (Hollis 1909, pp. 160, 168)",
+            "acceptedAnswers": [
               "the person (pl. the people)",
-              "Hello! / Male greeting! (Very much peace! / Epa!)",
-              "Greeting to women, elders & warriors on war-path! / Good-bye! (I salute thee)"
-            ],
-            "hint": "Class I irregular noun (Hollis 1909, pp. 160, 168)"
+              "the person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"the person (pl. the people)\" in Kalenjin?",
-            "correctAnswer": "chiito (indef. chi, pl. piik / pich)",
+            "prompt": "How do you say \"the person\" in Kalenjin?",
+            "correctAnswer": "chiito",
             "options": [
-              "chiito (indef. chi, pl. piik / pich)",
-              "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
-              "Takwenya! (resp. Igo!) / Saiseri! (A-'kot-in)",
-              "lakwet (indef. lakwa, pl. lakōk / lagok)"
+              "Chamgei!",
+              "Takwenya!",
+              "chiito",
+              "lakwet"
             ],
-            "hint": "chee-toh / peek"
+            "hint": "chee-toh / peek",
+            "acceptedAnswers": [
+              "chiito (indef. chi, pl. piik / pich)",
+              "chiito"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"the child (pl. the children)\" in Kalenjin?",
-            "correctAnswer": "lakwet (indef. lakwa, pl. lakōk / lagok)",
+            "prompt": "How do you say \"the child\" in Kalenjin?",
+            "correctAnswer": "lakwet",
             "options": [
-              "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
-              "Takwenya! (resp. Igo!) / Saiseri! (A-'kot-in)",
-              "chiito (indef. chi, pl. piik / pich)",
-              "lakwet (indef. lakwa, pl. lakōk / lagok)"
+              "Chamgei!",
+              "lakwet",
+              "Takwenya!",
+              "chiito"
             ],
-            "hint": "lah-kweht / lah-gohk"
+            "hint": "lah-kweht / lah-gohk",
+            "acceptedAnswers": [
+              "lakwet (indef. lakwa, pl. lakōk / lagok)",
+              "lakwet"
+            ]
           },
           {
             "type": "match_pairs",
@@ -214,15 +248,19 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kalenjin term for \"the cow, ox (pl. the cattle)\": ___",
-            "correctAnswer": "teta (indef. tany, pl. tuka / tuga)",
+            "prompt": "Complete the Kalenjin term for \"the cow\": ___",
+            "correctAnswer": "teta",
             "options": [
-              "Chamgei! / Sopai! (resp. Chamgei mising! / Epa!)",
-              "Takwenya! (resp. Igo!) / Saiseri! (A-'kot-in)",
-              "chiito (indef. chi, pl. piik / pich)",
-              "teta (indef. tany, pl. tuka / tuga)"
+              "Chamgei!",
+              "teta",
+              "Takwenya!",
+              "chiito"
             ],
-            "hint": "Class XI irregular noun (Hollis 1909, p. 180)"
+            "hint": "Class XI irregular noun (Hollis 1909, p. 180)",
+            "acceptedAnswers": [
+              "teta (indef. tany, pl. tuka / tuga)",
+              "teta"
+            ]
           }
         ]
       },
@@ -285,11 +323,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Iput-i tany aku pa-kelek angwan.",
-            "source": "The ox falls in spite of its four legs (Hollis 1909, p. 125, Proverb #8)."
+            "source": "The ox falls in spite of its four legs ."
           },
           {
             "target": "Inga-i ñgom, i-ker-i-ke kumut-i?",
-            "source": "However clever you may be, can you see the back of your neck? (Hollis 1909, p. 125, Proverb #4)."
+            "source": "However clever you may be, can you see the back of your neck? ."
           }
         ],
         "authoredExercises": [
@@ -298,24 +336,28 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"The lion bears a hyena/jackal (Hollis 1909, p. 124, Proverb #2)\" in Kalenjin?",
             "correctAnswer": "Ii-e ñgetuny lel",
             "options": [
+              "akeenge",
               "Ii-e ñgetuny lel",
-              "akeenge (akeng), aeng' (oieñg), somok, ang'wan, muut (mut)",
-              "lo (illok / kullo), tisap, sisiit, sokol, taman",
-              "Inga-i ñgom, i-ker-i-ke kumut-i?"
+              "lo",
+              "Inga-i ñgom"
             ],
             "hint": "ee-eh ngeh-toony lehl"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"However clever you may be, can you see the back of your neck? (Hollis 1909, p. 125, Proverb #4)\" in Kalenjin?",
-            "correctAnswer": "Inga-i ñgom, i-ker-i-ke kumut-i?",
+            "correctAnswer": "Inga-i ñgom",
             "options": [
-              "akeenge (akeng), aeng' (oieñg), somok, ang'wan, muut (mut)",
-              "lo (illok / kullo), tisap, sisiit, sokol, taman",
-              "Ii-e ñgetuny lel",
-              "Inga-i ñgom, i-ker-i-ke kumut-i?"
+              "Inga-i ñgom",
+              "akeenge",
+              "lo",
+              "Ii-e ñgetuny lel"
             ],
-            "hint": "een-gah-ee ngohm"
+            "hint": "een-gah-ee ngohm",
+            "acceptedAnswers": [
+              "Inga-i ñgom, i-ker-i-ke kumut-i?",
+              "Inga-i ñgom"
+            ]
           },
           {
             "type": "match_pairs",
@@ -337,10 +379,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kalenjin term for \"Send hares to the elephant, not elephants to the hare (Hollis 1909, p. 125, Proverb #7)\": ___",
             "correctAnswer": "Iok-toi kiplengoi pelio",
             "options": [
-              "akeenge (akeng), aeng' (oieñg), somok, ang'wan, muut (mut)",
-              "lo (illok / kullo), tisap, sisiit, sokol, taman",
-              "Ii-e ñgetuny lel",
-              "Iok-toi kiplengoi pelio"
+              "Iok-toi kiplengoi pelio",
+              "akeenge",
+              "lo",
+              "Ii-e ñgetuny lel"
             ],
             "hint": "Youth serve elders"
           }
@@ -460,49 +502,61 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "'Ñgi-'om-e-chi pôton kel-ok.",
-            "source": "Let us put our trembling legs together in one place, and we shall obtain support one from the other (Hollis 1909, p. 131, Proverb #49)."
+            "source": "Let us put our trembling legs together in one place, and we shall obtain support one from the other ."
           },
           {
             "target": "'Ñgo-samis-it muria kwa ko.",
-            "source": "If a rat stinks, it goes home; and if a man is ill, he goes to his relations to be attended to (Hollis 1909, p. 132, Proverb #54)."
+            "source": "If a rat stinks, it goes home; and if a man is ill, he goes to his relations to be attended to ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"August • First offering to God in corn-fields (Sep) • Second harvest offering (Oct)\" in Kalenjin?",
-            "correctAnswer": "Epeso (Aug) • Kipsunde (Sep) • Kipsunde oieñg (Oct)",
+            "correctAnswer": "Epeso",
             "options": [
-              "Epeso (Aug) • Kipsunde (Sep) • Kipsunde oieñg (Oct)",
-              "Kiptamo (Feb) • Iwat-kut (Mar) • Wake (Apr)",
-              "Ñgei (May) • Rob-tui (Jun) • Puret (Jul)",
-              "Mulkul (Nov) • Mulkulik oieñg (Dec) • Ñgotioto (Jan)"
+              "Kiptamo",
+              "Ñgei",
+              "Epeso",
+              "Mulkul"
             ],
-            "hint": "eh-peh-soh / keep-soon-deh"
+            "hint": "eh-peh-soh / keep-soon-deh",
+            "acceptedAnswers": [
+              "Epeso (Aug) • Kipsunde (Sep) • Kipsunde oieñg (Oct)",
+              "Epeso"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Strong wind (Nov) • Second strong wind (Dec) • Brunsvigia Kirkii pincushion plant (Jan)\" in Kalenjin?",
-            "correctAnswer": "Mulkul (Nov) • Mulkulik oieñg (Dec) • Ñgotioto (Jan)",
+            "correctAnswer": "Mulkul",
             "options": [
-              "Kiptamo (Feb) • Iwat-kut (Mar) • Wake (Apr)",
-              "Ñgei (May) • Rob-tui (Jun) • Puret (Jul)",
-              "Epeso (Aug) • Kipsunde (Sep) • Kipsunde oieñg (Oct)",
-              "Mulkul (Nov) • Mulkulik oieñg (Dec) • Ñgotioto (Jan)"
+              "Kiptamo",
+              "Ñgei",
+              "Epeso",
+              "Mulkul"
             ],
-            "hint": "mool-kool / ngoh-tee-oh-toh"
+            "hint": "mool-kool / ngoh-tee-oh-toh",
+            "acceptedAnswers": [
+              "Mulkul (Nov) • Mulkulik oieñg (Dec) • Ñgotioto (Jan)",
+              "Mulkul"
+            ]
           },
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"The 7 cyclic generation age-sets (~53-year cycle, Saket-ap-eito every 7.5 years)\": ___",
-            "correctAnswer": "Ipinda (Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma)",
+            "correctAnswer": "Ipinda",
             "options": [
-              "Kiptamo (Feb) • Iwat-kut (Mar) • Wake (Apr)",
-              "Ñgei (May) • Rob-tui (Jun) • Puret (Jul)",
-              "Epeso (Aug) • Kipsunde (Sep) • Kipsunde oieñg (Oct)",
-              "Ipinda (Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma)"
+              "Ipinda",
+              "Kiptamo",
+              "Ñgei",
+              "Epeso"
             ],
-            "hint": "Hollis (1909, pp. 12–13) & Beech (1911, p. 6)"
+            "hint": "Hollis (1909, pp. 12–13) & Beech (1911, p. 6)",
+            "acceptedAnswers": [
+              "Ipinda (Maina, Nyonge, Kimnyike, Kâplelach, Kipkoiimet, Sowe, Juma)",
+              "Ipinda"
+            ]
           }
         ]
       }
@@ -561,12 +615,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis 1909 & Hobley 1902 Nandi kinship"
           },
           {
-            "target": "lakwa (lakwet), pl. lakoi (lakōk)",
+            "target": "lakwa (lakwet)",
             "source": "Son",
             "pronunciation": "lakwa"
           },
           {
-            "target": "ñgeta (ñgetet), pl. ñget (ñgetik)",
+            "target": "ñgeta (ñgetet)",
             "source": "Boy",
             "pronunciation": "ngeta"
           },
@@ -579,11 +633,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "chorwet — lakwet",
-            "source": "Friend — Child"
+            "source": "Friend — Child."
           },
           {
             "target": "korget — murenet",
-            "source": "Woman — Man"
+            "source": "Woman — Man."
           }
         ],
         "authoredExercises": [
@@ -592,9 +646,9 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"chorwet\" mean in English?",
             "correctAnswer": "Friend",
             "options": [
-              "Friend",
               "Child",
               "Woman",
+              "Friend",
               "Man"
             ],
             "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
@@ -657,7 +711,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kalenjin (Kalenjin) in C. W. Hobley (1902, 1903), Sir Harry Johnston (1902), A. C. Hollis & Sir Charles Eliot (1909) & Hon. K. R. Dundas (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Uasin Gishu, Nandi, Kericho.",
         "words": [
           {
-            "target": "chiito (indef. chii, pl. piik)",
+            "target": "chiito (indef. chii",
             "source": "person (pl. people)",
             "pronunciation": "chii-to",
             "hint": "Nandi / Kipsigis"
@@ -669,13 +723,13 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Nandi / Kipsigis"
           },
           {
-            "target": "cherere (chereret), pl. chereren (chererēnik)",
+            "target": "cherere (chereret)",
             "source": "Baby",
             "pronunciation": "che-re-re",
             "hint": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)"
           },
           {
-            "target": "ñget-ap-kamet, pl. akut-ñget-ip-kamet (or akut-ñget-ip-kametuak)",
+            "target": "ñget-ap-kamet",
             "source": "Brother",
             "pronunciation": "ngget-ap-kamet",
             "hint": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)"
@@ -687,7 +741,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary)"
           },
           {
-            "target": "kwany (kwando), pl. kwanyin (kwanyik)",
+            "target": "kwany (kwando)",
             "source": "Wife",
             "pronunciation": "kwany"
           },
@@ -697,12 +751,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "ko-go"
           },
           {
-            "target": "tie (chepto), pl. tipin (tīpīk)",
+            "target": "tie (chepto)",
             "source": "Girl",
             "pronunciation": "tie"
           },
           {
-            "target": "oo, pl. echen",
+            "target": "oo",
             "source": "Elder",
             "pronunciation": "or eldest oo"
           }
@@ -710,25 +764,29 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "chiito — kwondo",
-            "source": "person — woman, wife"
+            "source": "person — woman, wife."
           },
           {
             "target": "cherere, pl. chereren — ñget-ap-kamet, pl. akut-ñget-ip-kamet",
-            "source": "Baby — Brother"
+            "source": "Baby — Brother."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"chiito\" mean in English?",
-            "correctAnswer": "person (pl. people)",
+            "correctAnswer": "person",
             "options": [
-              "person (pl. people)",
-              "woman, wife",
+              "woman",
+              "person",
               "Baby",
               "Brother"
             ],
-            "hint": "Core vocabulary in Clans, Marriage & Community Life"
+            "hint": "Core vocabulary in Clans, Marriage & Community Life",
+            "acceptedAnswers": [
+              "person (pl. people)",
+              "person"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -858,10 +916,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)\" in Kalenjin?",
             "correctAnswer": "One",
             "options": [
+              "One",
               "Two",
               "Three",
-              "Four",
-              "One"
+              "Four"
             ],
             "hint": "Wikipedia Nilotic languages — Kalenjin numerals"
           },
@@ -870,9 +928,9 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)\" in Kalenjin?",
             "correctAnswer": "Two",
             "options": [
+              "Two",
               "Three",
               "Four",
-              "Two",
               "One"
             ],
             "hint": "Wikipedia Nilotic languages — Kalenjin numerals"
@@ -883,8 +941,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "correctAnswer": "Three",
             "options": [
               "Four",
-              "Three",
               "One",
+              "Three",
               "Two"
             ],
             "hint": "Wikipedia Nilotic languages — Kalenjin numerals"
@@ -892,26 +950,34 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Kalenjin?",
-            "correctAnswer": "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+            "correctAnswer": "somok",
             "options": [
-              "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
-              "akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)"
+              "somok",
+              "akeenge",
+              "aeng'",
+              "ang'wan"
             ],
-            "hint": "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)"
+            "hint": "Starts with \"so…\" (5 letters)",
+            "acceptedAnswers": [
+              "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+              "somok"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Kalenjin?",
-            "correctAnswer": "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+            "correctAnswer": "ang'wan",
             "options": [
-              "akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
-              "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)"
+              "akeenge",
+              "ang'wan",
+              "aeng'",
+              "somok"
             ],
-            "hint": "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)"
+            "hint": "Starts with \"an…\" (7 letters)",
+            "acceptedAnswers": [
+              "ang'wan (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+              "ang'wan"
+            ]
           },
           {
             "type": "match_pairs",
@@ -939,14 +1005,18 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"Five\": ___",
-            "correctAnswer": "muut (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+            "correctAnswer": "muut",
             "options": [
-              "akeenge (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "aeng' / ayeeng' (Nandi/Keiyo/Kipsigis/Tugen/Sabaot)",
-              "somok (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
-              "muut (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)"
+              "akeenge",
+              "aeng'",
+              "muut",
+              "somok"
             ],
-            "hint": "Wikipedia Nilotic languages — Kalenjin numerals"
+            "hint": "Wikipedia Nilotic languages — Kalenjin numerals",
+            "acceptedAnswers": [
+              "muut (Nandi/Keiyo/Kipsigis/Tugen/Sabaot/Pokot)",
+              "muut"
+            ]
           }
         ]
       },
@@ -1016,7 +1086,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tukul ko-somok",
-            "source": "All three"
+            "source": "All three."
           }
         ],
         "authoredExercises": [
@@ -1025,60 +1095,72 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"taman (All Kalenjin dialects)\" in Kalenjin?",
             "correctAnswer": "Ten",
             "options": [
-              "forty (40)",
-              "fifty (50)",
-              "one hundred (100)",
-              "Ten"
+              "forty",
+              "fifty",
+              "Ten",
+              "one hundred"
             ],
             "hint": "Wikipedia Nilotic languages — Kalenjin numerals"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"artam / tamanwogik ang'wan\" in Kalenjin?",
-            "correctAnswer": "forty (40)",
+            "correctAnswer": "forty",
             "options": [
-              "fifty (50)",
-              "one hundred (100)",
-              "forty (40)",
+              "fifty",
+              "forty",
+              "one hundred",
               "Ten"
             ],
-            "hint": "Kalenjin"
+            "hint": "Kalenjin",
+            "acceptedAnswers": [
+              "forty (40)",
+              "forty"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"konom / tamanwogik muut\" in Kalenjin?",
-            "correctAnswer": "fifty (50)",
+            "correctAnswer": "fifty",
             "options": [
-              "one hundred (100)",
-              "fifty (50)",
+              "one hundred",
               "Ten",
-              "forty (40)"
+              "fifty",
+              "forty"
             ],
-            "hint": "Kalenjin"
+            "hint": "Kalenjin",
+            "acceptedAnswers": [
+              "fifty (50)",
+              "fifty"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"fifty (50)\" in Kalenjin?",
-            "correctAnswer": "konom / tamanwogik muut",
+            "prompt": "How do you say \"fifty\" in Kalenjin?",
+            "correctAnswer": "konom",
             "options": [
-              "konom / tamanwogik muut",
-              "taman (All Kalenjin dialects)",
-              "artam / tamanwogik ang'wan",
+              "konom",
+              "taman",
+              "artam",
               "pokol"
             ],
-            "hint": "konom / tamanwogik muut"
+            "hint": "Starts with \"ko…\" (5 letters)",
+            "acceptedAnswers": [
+              "konom / tamanwogik muut",
+              "konom"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"one hundred (100)\" in Kalenjin?",
             "correctAnswer": "pokol",
             "options": [
-              "taman (All Kalenjin dialects)",
-              "artam / tamanwogik ang'wan",
-              "konom / tamanwogik muut",
-              "pokol"
+              "pokol",
+              "taman",
+              "artam",
+              "konom"
             ],
-            "hint": "pokol"
+            "hint": "Starts with \"po…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1108,10 +1190,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kalenjin term for \"Second (time unit)\": ___",
             "correctAnswer": "Sekondit",
             "options": [
-              "taman (All Kalenjin dialects)",
-              "artam / tamanwogik ang'wan",
-              "konom / tamanwogik muut",
-              "Sekondit"
+              "Sekondit",
+              "taman",
+              "artam",
+              "konom"
             ],
             "hint": "Kalenjin — GitHub unicode-org/cldr (kln.xml), Common Voice CC0 & PanLex CC0"
           }
@@ -1148,7 +1230,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis 1909 & Hobley 1902"
           },
           {
-            "target": "koii (koita), pl. koii (koiik)",
+            "target": "koii (koita)",
             "source": "Egg",
             "pronunciation": "koii"
           },
@@ -1186,11 +1268,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ng'ororiet — teta",
-            "source": "Goat — Cow"
+            "source": "Goat — Cow."
           },
           {
             "target": "koii. — mwaita",
-            "source": "Egg — Oil"
+            "source": "Egg — Oil."
           }
         ],
         "authoredExercises": [
@@ -1199,10 +1281,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"ng'ororiet\" mean in English?",
             "correctAnswer": "Goat",
             "options": [
-              "Goat",
               "Cow",
               "Egg",
-              "Oil"
+              "Oil",
+              "Goat"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
           },
@@ -1293,7 +1375,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "keh-ahm / ahm"
           },
           {
-            "target": "undir (undiriet), pl. undir (undirik)",
+            "target": "undir (undiriet)",
             "source": "Boil",
             "pronunciation": "und-ir"
           },
@@ -1316,11 +1398,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "komek — pendo",
-            "source": "Honey — Meat"
+            "source": "Honey — Meat."
           },
           {
             "target": "chego — amitwogik",
-            "source": "Milk — Food"
+            "source": "Milk — Food."
           }
         ],
         "authoredExercises": [
@@ -1329,10 +1411,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"komek\" mean in English?",
             "correctAnswer": "Honey",
             "options": [
-              "Honey",
               "Meat",
               "Milk",
-              "Food"
+              "Food",
+              "Honey"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
@@ -1449,7 +1531,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "ah-sees-tah"
           },
           {
-            "target": "oria (oriat), pl. or (orek)",
+            "target": "oria (oriat)",
             "source": "Ash",
             "pronunciation": "oria"
           }
@@ -1457,11 +1539,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "keetit — murwaket",
-            "source": "Tree — Snail"
+            "source": "Tree — Snail."
           },
           {
             "target": "musempet — ngetuny",
-            "source": "Sheep's tail — lion"
+            "source": "Sheep's tail — lion."
           }
         ],
         "authoredExercises": [
@@ -1470,10 +1552,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"keetit\" mean in English?",
             "correctAnswer": "Tree",
             "options": [
-              "Tree",
-              "Snail (Elgon/Terik Kalenjin)",
-              "Sheep's tail (Elgon/Terik Kalenjin)",
-              "lion"
+              "Snail",
+              "Sheep's tail",
+              "lion",
+              "Tree"
             ],
             "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
           },
@@ -1586,11 +1668,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "roopta — igoondiit",
-            "source": "rain — horn, ceremonial horn"
+            "source": "rain — horn, ceremonial horn."
           },
           {
             "target": "arawet — rewo",
-            "source": "moon, month — Dew"
+            "source": "moon, month — Dew."
           }
         ],
         "authoredExercises": [
@@ -1599,10 +1681,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"roopta\" mean in English?",
             "correctAnswer": "rain",
             "options": [
-              "rain",
-              "horn, ceremonial horn",
-              "moon, month",
-              "Dew"
+              "horn",
+              "moon",
+              "Dew",
+              "rain"
             ],
             "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
           },
@@ -1674,27 +1756,27 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kalenjin (Kalenjin) in C. W. Hobley (1902, 1903), Sir Harry Johnston (1902), A. C. Hollis & Sir Charles Eliot (1909) & Hon. K. R. Dundas (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Uasin Gishu, Nandi, Kericho.",
         "words": [
           {
-            "target": "ē (ēut), pl. ēun (ēunek)",
+            "target": "ē (ēut)",
             "source": "Arm",
             "pronunciation": "e"
           },
           {
-            "target": "koñg (konda), pl. konyan (konyek)",
+            "target": "koñg (konda)",
             "source": "Eye",
             "pronunciation": "kong"
           },
           {
-            "target": "ingorai (ingoraiet), pl. ingoraiin (ingoraiīnik)",
+            "target": "ingorai (ingoraiet)",
             "source": "Hip",
             "pronunciation": "ingorai"
           },
           {
-            "target": "takilkil (takilkiliet), pl. takilkil (takilkilik)",
+            "target": "takilkil (takilkiliet)",
             "source": "Jaw",
             "pronunciation": "takilkil"
           },
           {
-            "target": "kel (keldo), pl. kelien (keliek)",
+            "target": "kel (keldo)",
             "source": "Leg",
             "pronunciation": "kel"
           },
@@ -1704,7 +1786,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "iririot-ap-kutit"
           },
           {
-            "target": "karas (karasta), pl. korosua (korosuek)",
+            "target": "karas (karasta)",
             "source": "Rib",
             "pronunciation": "karas"
           },
@@ -1722,11 +1804,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ē, pl. ēun — koñg, pl. konyan",
-            "source": "Arm — Eye"
+            "source": "Arm — Eye."
           },
           {
             "target": "ingorai, pl. ingoraiin — takilkil, pl. takilkil",
-            "source": "Hip — Jaw"
+            "source": "Hip — Jaw."
           }
         ],
         "authoredExercises": [
@@ -1735,9 +1817,9 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"ē, pl. ēun\" mean in English?",
             "correctAnswer": "Arm",
             "options": [
-              "Arm",
               "Eye",
               "Hip",
+              "Arm",
               "Jaw"
             ],
             "hint": "Core vocabulary in Parts of the Body & Physical Senses"
@@ -1825,12 +1907,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "mo-ri kai-kel-to"
           },
           {
-            "target": "Ewūt, Eūt; Eūnek (pl.)",
+            "target": "Ewūt, Eūt; Eūnek",
             "source": "Arm",
             "pronunciation": "ewut eut"
           },
           {
-            "target": "Idit; Itik (pl.)",
+            "target": "Idit; Itik",
             "source": "Ear",
             "pronunciation": "i-dit"
           },
@@ -1840,7 +1922,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "mu-k' ap ker"
           },
           {
-            "target": "por (porto), pl. porua (poruek)",
+            "target": "por (porto)",
             "source": "Body",
             "pronunciation": "por"
           }
@@ -1848,11 +1930,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "konda — tamnet",
-            "source": "Eye — Jaw"
+            "source": "Eye — Jaw."
           },
           {
             "target": "kielto — kotit",
-            "source": "Leg — Lip"
+            "source": "Leg — Lip."
           }
         ],
         "authoredExercises": [
@@ -1861,8 +1943,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"konda\" mean in English?",
             "correctAnswer": "Eye",
             "options": [
-              "Eye",
               "Jaw",
+              "Eye",
               "Leg",
               "Lip"
             ],
@@ -1988,11 +2070,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "keng'alal — keru",
-            "source": "Speak — Sleep"
+            "source": "Speak — Sleep."
           },
           {
             "target": "kenyone — kewe",
-            "source": "Come — Go"
+            "source": "Come — Go."
           }
         ],
         "authoredExercises": [
@@ -2001,10 +2083,10 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What does \"keng'alal\" mean in English?",
             "correctAnswer": "Speak",
             "options": [
-              "Speak",
               "Sleep",
               "Come",
-              "Go"
+              "Go",
+              "Speak"
             ],
             "hint": "Core vocabulary in Essential Action & Motion Verbs"
           },
@@ -2117,25 +2199,29 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "lima nyaman — i-ker-i-ke",
-            "source": "Understand — can you see for yourself"
+            "source": "Understand — can you see for yourself."
           },
           {
             "target": "Kapkugo — mugerat",
-            "source": "ancestral homeland — Open"
+            "source": "ancestral homeland — Open."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"lima nyaman\" mean in English?",
-            "correctAnswer": "Understand / hear thoroughly (Suk/Pokot comparative note in Barton 1921)",
+            "correctAnswer": "Understand",
             "options": [
-              "Understand / hear thoroughly (Suk/Pokot comparative note in Barton 1921)",
-              "can you see for yourself (to see, look at)",
-              "ancestral homeland (lit. place of our grandfathers, Mount Elgon)",
-              "Open"
+              "ancestral homeland",
+              "Open",
+              "Understand",
+              "Bind"
             ],
-            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
+            "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs",
+            "acceptedAnswers": [
+              "Understand / hear thoroughly (Suk/Pokot comparative note in Barton 1921)",
+              "Understand"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2236,12 +2322,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "to-ma ki-te-gin"
           },
           {
-            "target": "oii (olto), pl. oltōs (oltōsiek)",
+            "target": "oii (olto)",
             "source": "Time",
             "pronunciation": "oii"
           },
           {
-            "target": "keny (kenyīt), pl. kenyīs (kenyīsiek)",
+            "target": "keny (kenyīt)",
             "source": "Year",
             "pronunciation": "keny"
           },
@@ -2254,25 +2340,29 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kotisap — nguno",
-            "source": "Sunday — Now"
+            "source": "Sunday — Now."
           },
           {
             "target": "petōt — korirun",
-            "source": "Day — Dawn"
+            "source": "Day — Dawn."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kotisap\" mean in English?",
-            "correctAnswer": "Sunday (Day of the week)",
+            "correctAnswer": "Sunday",
             "options": [
-              "Sunday (Day of the week)",
               "Now",
               "Day",
+              "Sunday",
               "Dawn"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons",
+            "acceptedAnswers": [
+              "Sunday (Day of the week)",
+              "Sunday"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2292,7 +2382,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
               "Day",
               "Day"
             ],
-            "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Starts with \"Da…\" (3 letters)"
           },
           {
             "type": "match_pairs",
@@ -2386,25 +2476,29 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kotaai — Koaeng’",
-            "source": "Monday — Tuesday"
+            "source": "Monday — Tuesday."
           },
           {
             "target": "Kosomok — Koang’wan",
-            "source": "Wednesday — Thursday"
+            "source": "Wednesday — Thursday."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kotaai\" mean in English?",
-            "correctAnswer": "Monday (Day of the week)",
+            "correctAnswer": "Monday",
             "options": [
-              "Monday (Day of the week)",
-              "Tuesday (Day of the week)",
-              "Wednesday (Day of the week)",
-              "Thursday (Day of the week)"
+              "Tuesday",
+              "Monday",
+              "Wednesday",
+              "Thursday"
             ],
-            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
+            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks",
+            "acceptedAnswers": [
+              "Monday (Day of the week)",
+              "Monday"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2504,25 +2598,29 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ibinta — Betutab wikit",
-            "source": "Era — Day of the week"
+            "source": "Era — Day of the week."
           },
           {
             "target": "Kalyet — Chamgei!",
-            "source": "Peace — Hello"
+            "source": "Peace — Hello."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ibinta\" mean in English?",
-            "correctAnswer": "Era / historical age",
+            "correctAnswer": "Era",
             "options": [
-              "Era / historical age",
-              "Day of the week",
               "Peace",
-              "Hello"
+              "Hello",
+              "Era",
+              "Greet"
             ],
-            "hint": "Core vocabulary in Everyday Conversational Phrases & Questions"
+            "hint": "Core vocabulary in Everyday Conversational Phrases & Questions",
+            "acceptedAnswers": [
+              "Era / historical age",
+              "Era"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2598,17 +2696,17 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "mwaete",
-            "source": "Pardon, to",
+            "source": "To pardon",
             "pronunciation": "mwae-te"
           },
           {
             "target": "torokte",
-            "source": "Salute, to",
+            "source": "To salute",
             "pronunciation": "to-rokte"
           },
           {
             "target": "kale",
-            "source": "Forgive, to",
+            "source": "To forgive",
             "pronunciation": "ka-le"
           },
           {
@@ -2630,11 +2728,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ile-chi kongoi — inyol-chi",
-            "source": "Thank — Please"
+            "source": "Thank — Please."
           },
           {
             "target": "Kongoi — mwaete",
-            "source": "Thank you — Pardon, to"
+            "source": "Thank you — Pardon."
           }
         ],
         "authoredExercises": [
@@ -2646,7 +2744,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
               "Thank",
               "Please",
               "Thank you",
-              "Pardon, to"
+              "Pardon"
             ],
             "hint": "Core vocabulary in Hospitality, Requests & Social Discourse"
           },
@@ -2771,9 +2869,9 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"oloitigo (oloitiget) (pl. oloitigōs (oloitigōsiek))\" in Kalenjin?",
             "correctAnswer": "Zebra",
             "options": [
-              "Zebra",
               "Yours",
               "Your",
+              "Zebra",
               "Younger"
             ],
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
@@ -2804,14 +2902,18 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"Yesterday\": ___",
-            "correctAnswer": "amut; amt",
+            "correctAnswer": "amut",
             "options": [
-              "amut; amt",
-              "oloitigo (oloitiget) (pl. oloitigōs (oloitigōsiek))",
-              "neñgwañg (pl. chekwok)",
-              "ñgwañg (pl. kwok)"
+              "oloitigo  )",
+              "neñgwañg",
+              "ñgwañg",
+              "amut"
             ],
-            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
+            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+            "acceptedAnswers": [
+              "amut; amt",
+              "amut"
+            ]
           }
         ]
       },
@@ -2877,8 +2979,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"akania (akaniat) (pl. akan (akanek))\" in Kalenjin?",
             "correctAnswer": "Yam",
             "options": [
-              "Yam",
               "Writhe",
+              "Yam",
               "Write",
               "Wrist"
             ],
@@ -2906,14 +3008,18 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"Wrinkle\": ___",
-            "correctAnswer": "siriny (pr. a-siriny-i, p.p. ka-a-siriny)",
+            "correctAnswer": "siriny",
             "options": [
-              "siriny (pr. a-siriny-i, p.p. ka-a-siriny)",
-              "akania (akaniat) (pl. akan (akanek))",
-              "nyulnyul-ke (pr. a-nyulnyul-i-ke, p.p. ka-a-nyulnyul-ke)",
-              "sir (pr. a-sir-e, p.p. ka-a-sir)"
+              "akania  )",
+              "nyulnyul-ke",
+              "sir",
+              "siriny"
             ],
-            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
+            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+            "acceptedAnswers": [
+              "siriny (pr. a-siriny-i, p.p. ka-a-siriny)",
+              "siriny"
+            ]
           }
         ]
       }
@@ -2989,8 +3095,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"iim (pr. a-iim-i, p.p. kâ-iim)\" in Kalenjin?",
             "correctAnswer": "Worry",
             "options": [
-              "Worry",
               "World",
+              "Worry",
               "Work",
               "Word"
             ],
@@ -3022,14 +3128,18 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"Wonder\": ___",
-            "correctAnswer": "tañgany (pr. a-toñgony-i, p.p. ka-a-tañgany)",
+            "correctAnswer": "tañgany",
             "options": [
-              "tañgany (pr. a-toñgony-i, p.p. ka-a-tañgany)",
-              "iim (pr. a-iim-i, p.p. kâ-iim)",
-              "kia (kiet) (pl. kias (kiasiek))",
-              "poiisio (poiisiet) (pl. poiision (poiisionik))"
+              "iim",
+              "kia  )",
+              "poiisio  )",
+              "tañgany"
             ],
-            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
+            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+            "acceptedAnswers": [
+              "tañgany (pr. a-toñgony-i, p.p. ka-a-tañgany)",
+              "tañgany"
+            ]
           }
         ]
       },
@@ -3042,7 +3152,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "imelel (pr. a-'melel-i, p.p. ka-a-'melel)",
-            "source": "Withhold from",
+            "source": "Withhold",
             "pronunciation": "i-me-lel",
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
           },
@@ -3089,24 +3199,23 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
           }
         ],
-        "sentences": [
-          {
-            "target": "imelel (pr. a-'melel-i, p.p. ka-a-'melel)",
-            "source": "Withhold from"
-          }
-        ],
+        "sentences": [],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"imelel (pr. a-'melel-i, p.p. ka-a-'melel)\" in Kalenjin?",
-            "correctAnswer": "Withhold from",
+            "correctAnswer": "Withhold",
             "options": [
-              "Withhold from",
               "Wither",
               "Diviner",
-              "Wish"
+              "Wish",
+              "Withhold"
             ],
-            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
+            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+            "acceptedAnswers": [
+              "Withhold from",
+              "Withhold"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3134,14 +3243,18 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kalenjin term for \"Wipe\": ___",
-            "correctAnswer": "ipuch (pr. a-'puch-i, p.p. ka-a-'puch)",
+            "correctAnswer": "ipuch",
             "options": [
-              "ipuch (pr. a-'puch-i, p.p. ka-a-'puch)",
-              "imelel (pr. a-'melel-i, p.p. ka-a-'melel)",
-              "res (pr. a-res-e, p.p. ka-a-res)",
-              "ponin (ponindet) (pl. pon (ponik))"
+              "imelel",
+              "res",
+              "ponin  )",
+              "ipuch"
             ],
-            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)"
+            "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
+            "acceptedAnswers": [
+              "ipuch (pr. a-'puch-i, p.p. ka-a-'puch)",
+              "ipuch"
+            ]
           }
         ]
       }
@@ -3242,7 +3355,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Arab Kibosone (Arab = lakwet-ap / son of).",
-            "source": "Son of Kibosone — country where the lightning spirit Ilet died after being wounded by the Oggiek on Mount Tinderet (Hobley 1903, p. 359)."
+            "source": "Son of Kibosone — country where the lightning spirit Ilet died after being wounded by the Oggiek on Mount Tinderet ."
           }
         ],
         "authoredExercises": [
@@ -3289,7 +3402,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "tips": "Notice how Nandi distinguishes singular and plural imperatives and salutations: Tiamge! (singular 'How do you do?') vs. Otyamge! (plural, with 2nd person plural prefix O-), and attaches reflexive -ge in Ribge! ('Take care!') and istoge ēñor! ('Get out of the road!').",
         "words": [
           {
-            "target": "Tiamge (sg.), Otyamge (pl.)",
+            "target": "Tiamge (sg.), Otyamge",
             "source": "How do you do? (sg./pl.)",
             "pronunciation": "tiamge"
           },
@@ -3407,7 +3520,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Tiamge, Cōriōnyo! Kanyīte — kōnō pek āē. Kongoi, Eñgōñgōi! Kātigē!",
-            "source": "How do you do, my good friend! Wait a bit — give me water to drink. Thank you! Goodbye! (Johnston 1902, p. 925)."
+            "source": "How do you do, my good friend! Wait a bit — give me water to drink. Thank you! Goodbye! ."
           }
         ]
       }
@@ -3450,7 +3563,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis (1909, Tongōchik-ap-Nandi, p. 133)"
           },
           {
-            "target": "Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde,",
+            "target": "Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde",
             "source": "The 12 Nandi ecological months (February to January)",
             "pronunciation": "kiptamo",
             "hint": "Hollis (1909, pp. 94–95)"
@@ -3465,7 +3578,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Sopai, murén-ju! Takwenya, chepiosō-chu! Asis! kōn-ech sapon, ak tuka, ak cheko, ak lakōk!",
-            "source": "Greetings, O warriors! Greetings, O women! O God (Asis), give us health, and cattle, and milk, and children! (Hollis 1909, pp. 41, 164)."
+            "source": "Greetings, O warriors! Greetings, O women! O God (Asis), give us health, and cattle, and milk, and children! ."
           }
         ]
       }
@@ -3497,13 +3610,13 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "a-kuskuus-aneen-keey"
           },
           {
-            "target": "ATR Opacity (p. 542): neet-eech ('teach us') vs. toorēt-ēēch ('help us')",
+            "target": "ATR Opacity : neet-eech vs. toorēt-ēēch",
             "source": "1PL suffix -eech and contemporative -yō/-sōōt harmonise in +ATR, whereas enclitic",
             "pronunciation": "atr-opacity-neet-eech-vs"
           },
           {
-            "target": "Lexicalised Stems (pp. 541, 543) & (3) i-kerkeéy keè laak-o-chu (Keiyo,",
-            "source": "karkeey, cheepaykeey(aan) ('prostitute'), peerkeey(aan) ('virgin'), kimekeyaan /",
+            "target": "Lexicalised Stems (pp. 541, 543) & (3) i-kerkeéy keè laak-o-chu",
+            "source": "karkeey, cheepaykeey(aan) ('prostitute'), peerkeey(aan) ('virgin'), kimekeyaan",
             "pronunciation": "i-ker-ke-ey ke-e laa-ko-chu / ki-ng'war kee / ki-iim kee",
             "hint": "Zwarts, Chelimo & Jerono (2024, §§2–3, pp. 541, 543–544, Examples 3–4)"
           },
@@ -3555,14 +3668,14 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kaa-kee-syaak nyuun keey (p. 542)",
-            "source": "We judged ourselves then"
+            "target": "kaa-kee-syaak nyuun keey",
+            "source": "We judged ourselves then."
           }
         ]
       },
       {
         "id": "kalenjin-zwarts-2024-middle-arity-intensifier-16-2",
-        "title": "Middle Voice, Inanimate Anticausatives, Arity Reduction &",
+        "title": "Middle Voice, Inanimate Anticausatives, Arity Reduction",
         "icon": "Compass",
         "description": "Master the middle voice categories of kee(y) (Kemmer 1993), inanimate anticausatives (Ex. 15), contemporative natural reciprocals (-yō / -sōōt, Ex. 16–17), syntactic arity reduction (Ex. 18–22), pronoun intensification (Ex. 23–24), and the typological conclusions of Zwarts, Chelimo & Jerono (2024).",
         "tips": "In Kalenjin, kee(y) expresses both direct reflexive/reciprocal and Kemmer (1993) middle meanings—including inanimate anticausatives like roong' kee kārātiik ('the blood gushed') and choor kee asiis ('the sun rose')—AND acts as an intensifying adjunct on pronouns (Ā-ām-iisyēy ani-kee 'I am eating by myself/alone'), counterexemplifying König & Siemund (2000: 59) and Kemmer (1993: 196).",
@@ -3636,7 +3749,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "ng'wār-chin-i-kee-pātooy"
           },
           {
-            "target": "(22) ak o-tēpii eng' kaalyeet okweeke eng' okweeke",
+            "target": "ak o-tēpii eng okweeke",
             "source": "(22) and stay in peace with one another",
             "pronunciation": "ak-o-tēpii-eng'-kaalyeet"
           },
@@ -3659,7 +3772,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "roong' kee kārātiik",
-            "source": "The blood gushed"
+            "source": "The blood gushed."
           }
         ]
       },
@@ -3671,13 +3784,13 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "tips": "In Kipsigis (Diercks & Rao 2019, pp. 369–393), the complementizer -lɛ agrees upward with the matrix subject via prefixes (ɑ-lɛ, i-lɛ, kɔ-lɛ, kɛ-lɛ, o-lɛ) AND with the matrix object via applicative suffixes (-lɛ-ndʒ-ɑn, -lɛ-ndʒ-in, -lɛ-ndʒ-i, -lɛ-ndʒ-ɛtʃ, -lɛ-ndʒ-ɔɔɣ), expressing verum focus and licensing overt raising across C.",
         "words": [
           {
-            "target": "Subj-CA: ɑ-lɛ (1SG), i-lɛ (2SG), kɔ-lɛ (3SG/PL), kɛ-lɛ (1PL / impers.),",
+            "target": "Subj-CA: ɑ-lɛ (1SG), i-lɛ (2SG), kɔ-lɛ (3SG/PL), kɛ-lɛ (1PL / impers.)",
             "source": "Upward-oriented Subject Complementizer Agreement prefixes on -lɛ in Kipsigis",
             "pronunciation": "a-lɛ / i-lɛ / kɔ-lɛ / kɛ-lɛ / o-lɛ",
             "hint": "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 371–376, DOI: 10.5281/zenodo.3367166)"
           },
           {
-            "target": "Obj-CA: -lɛ-ndʒ-ɑn (1SG), -lɛ-ndʒ-in (2SG), -lɛ-ndʒ-i (3SG/PL),",
+            "target": "Obj-CA: -lɛ-ndʒ-ɑn (1SG), -lɛ-ndʒ-in (2SG), -lɛ-ndʒ-i (3SG/PL)",
             "source": "Suffixed Object Complementizer Agreement parasitic on Subj-CA: 'I told you [2SG]",
             "pronunciation": "a-lɛ-ndʒin / kɔ-lɛ-ndʒi / kɛ-lɛ-ndʒɛtʃ / o-lɛ-ndʒɔɔɣ",
             "hint": "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 376–385, DOI: 10.5281/zenodo.3367166)"
@@ -3691,7 +3804,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kɑ-ɑ-mwaa-un ɑ-lɛ-ndʒ-in kɔ-rʊ Kiproono",
-            "source": "I told you that Kiprono slept (with 1SG Subj-CA + 2SG Obj-CA)"
+            "source": "I told you that Kiprono slept (with 1SG Subj-CA + 2SG Obj-CA)."
           }
         ]
       },
@@ -3760,187 +3873,138 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Kalenjin parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
+        "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024).",
         "words": [
-                  {
-                            "target": "Kalyet",
-                            "source": "Peace",
-                            "pronunciation": "kahl-yeht"
-                  },
-                  {
-                            "target": "Chamgei!",
-                            "source": "Hello",
-                            "pronunciation": "chahm-gey / soo-bah-ee"
-                  },
-                  {
-                            "target": "ikat",
-                            "source": "Greet",
-                            "pronunciation": "ikat"
-                  },
-                  {
-                            "target": "ile-chi kongoi",
-                            "source": "Thank",
-                            "pronunciation": "ile-chi kongoi"
-                  },
-                  {
-                            "target": "inyol-chi",
-                            "source": "Please",
-                            "pronunciation": "inyol-chi"
-                  },
-                  {
-                            "target": "Kongoi",
-                            "source": "Thank you",
-                            "pronunciation": "kohn-goy mee-seeng"
-                  },
-                  {
-                            "target": "mwaete",
-                            "source": "Pardon, to",
-                            "pronunciation": "mwae-te"
-                  },
-                  {
-                            "target": "torokte",
-                            "source": "Salute, to",
-                            "pronunciation": "to-rokte"
-                  },
-                  {
-                            "target": "kale",
-                            "source": "Forgive, to",
-                            "pronunciation": "ka-le"
-                  },
-                  {
-                            "target": "Tiamge, Otyamge",
-                            "source": "How do you do? (singular / plural)",
-                            "pronunciation": "ti-am-ge / o-tyam-ge"
-                  }
+          {
+            "target": "Kalyet",
+            "source": "Peace",
+            "pronunciation": "kahl-yeht"
+          },
+          {
+            "target": "Chamgei!",
+            "source": "Hello",
+            "pronunciation": "chahm-gey / soo-bah-ee"
+          },
+          {
+            "target": "ikat",
+            "source": "Greet",
+            "pronunciation": "ikat"
+          },
+          {
+            "target": "ile-chi kongoi",
+            "source": "Thank",
+            "pronunciation": "ile-chi kongoi"
+          },
+          {
+            "target": "inyol-chi",
+            "source": "Please",
+            "pronunciation": "inyol-chi"
+          },
+          {
+            "target": "Kongoi",
+            "source": "Thank you",
+            "pronunciation": "kohn-goy mee-seeng"
+          },
+          {
+            "target": "mwaete",
+            "source": "To pardon",
+            "pronunciation": "mwae-te"
+          },
+          {
+            "target": "torokte",
+            "source": "To salute",
+            "pronunciation": "to-rokte"
+          },
+          {
+            "target": "kale",
+            "source": "To forgive",
+            "pronunciation": "ka-le"
+          },
+          {
+            "target": "Tiamge, Otyamge",
+            "source": "How do you do? (singular / plural)",
+            "pronunciation": "ti-am-ge / o-tyam-ge"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "ile-chi kongoi",
-                            "source": "Thank"
-                  },
-                  {
-                            "target": "Tiamge, Otyamge",
-                            "source": "How do you do? (singular / plural)"
-                  },
-                  {
-                            "target": "Kongoi, Eñgōñgōi!",
-                            "source": "Thank you!"
-                  },
-                  {
-                            "target": "Chamyetab kabung'utab chego",
-                            "source": "Dairy cooperative / Milk harvest market"
-                  },
-                  {
-                            "target": "otēpii eng’ kaalyeet",
-                            "source": "Stay in peace"
-                  },
-                  {
-                            "target": "yakanyat, yakanek",
-                            "source": "Yam"
-                  },
-                  {
-                            "target": "Koitá, Koīk",
-                            "source": "Egg"
-                  },
-                  {
-                            "target": "Pendo, Giam, ñgiam",
-                            "source": "Meat"
-                  }
+          {
+            "target": "Tiamge, Otyamge",
+            "source": "How do you do? (singular / plural)."
+          },
+          {
+            "target": "Kongoi, Eñgōñgōi!",
+            "source": "Thank you!"
+          },
+          {
+            "target": "Chamyetab kabung'utab chego",
+            "source": "Dairy cooperative / Milk harvest market."
+          },
+          {
+            "target": "otēpii eng’ kaalyeet",
+            "source": "Stay in peace."
+          }
         ]
-},
+      },
       {
         "id": "kalenjin-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Kalenjin sentences for healthcare, transport, and community safety.",
-        "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024)",
+        "culturalNote": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024).",
         "words": [
-                  {
-                            "target": "akeenge (Nandi",
-                            "source": "One",
-                            "pronunciation": "akeenge"
-                  },
-                  {
-                            "target": "aeng'",
-                            "source": "Two",
-                            "pronunciation": "aeng'"
-                  },
-                  {
-                            "target": "lo (Nandi",
-                            "source": "Six",
-                            "pronunciation": "lo"
-                  },
-                  {
-                            "target": "taman",
-                            "source": "Ten",
-                            "pronunciation": "taman"
-                  },
-                  {
-                            "target": "ang'wan (Nandi",
-                            "source": "Four",
-                            "pronunciation": "ang'wan"
-                  },
-                  {
-                            "target": "muut (Nandi",
-                            "source": "Five",
-                            "pronunciation": "muut"
-                  },
-                  {
-                            "target": "sokol",
-                            "source": "Nine",
-                            "pronunciation": "sokol"
-                  },
-                  {
-                            "target": "towae",
-                            "source": "Both",
-                            "pronunciation": "towae"
-                  },
-                  {
-                            "target": "petun-ak",
-                            "source": "Once",
-                            "pronunciation": "petun-ak"
-                  },
-                  {
-                            "target": "somok (Nandi",
-                            "source": "Three",
-                            "pronunciation": "somok"
-                  }
+          {
+            "target": "akeenge",
+            "source": "One",
+            "pronunciation": "akeenge"
+          },
+          {
+            "target": "aeng'",
+            "source": "Two",
+            "pronunciation": "aeng'"
+          },
+          {
+            "target": "lo",
+            "source": "Six",
+            "pronunciation": "lo"
+          },
+          {
+            "target": "taman",
+            "source": "Ten",
+            "pronunciation": "taman"
+          },
+          {
+            "target": "ang'wan",
+            "source": "Four",
+            "pronunciation": "ang'wan"
+          },
+          {
+            "target": "muut",
+            "source": "Five",
+            "pronunciation": "muut"
+          },
+          {
+            "target": "sokol",
+            "source": "Nine",
+            "pronunciation": "sokol"
+          },
+          {
+            "target": "towae",
+            "source": "Both",
+            "pronunciation": "towae"
+          },
+          {
+            "target": "petun-ak",
+            "source": "Once",
+            "pronunciation": "petun-ak"
+          },
+          {
+            "target": "somok",
+            "source": "Three",
+            "pronunciation": "somok"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "akeenge (Nandi",
-                            "source": "One"
-                  },
-                  {
-                            "target": "lo (Nandi",
-                            "source": "Six"
-                  },
-                  {
-                            "target": "ang'wan (Nandi",
-                            "source": "Four"
-                  },
-                  {
-                            "target": "muut (Nandi",
-                            "source": "Five"
-                  },
-                  {
-                            "target": "somok (Nandi",
-                            "source": "Three"
-                  },
-                  {
-                            "target": "tisap (Nandi",
-                            "source": "Seven"
-                  },
-                  {
-                            "target": "sisiit (Nandi",
-                            "source": "Eight"
-                  },
-                  {
-                            "target": "tomonuagik ịllo",
-                            "source": "Sixty"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

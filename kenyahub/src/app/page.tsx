@@ -17,7 +17,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { TOOLS, TOOL_CATEGORIES } from "@/lib/tools-registry";
-import { PUBLISHED_COURSES } from "@/data/courses/registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import PinnedToolsHomeSection from "@/components/tools/PinnedToolsHomeSection";
@@ -46,11 +46,6 @@ export default function HomePage() {
     inLanguage: "en-KE",
     description:
       "Learn 23 Kenyan languages (Swahili, Gĩkũyũ, Dholuo, Kalenjin, Luluhya, Kĩkamba, Maasai & more) with interactive courses, dictionaries, proverbs, and essential Kenyan statutory calculators (2026 PAYE, M-Pesa, KRA CRSP, 47 Counties & Matatu routes).",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://kenyahub.me/tools/?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
   };
 
   const homeItemListSchema = {
@@ -74,7 +69,12 @@ export default function HomePage() {
     "@type": "Organization",
     name: "KenyaHub",
     url: "https://kenyahub.me",
-    logo: "https://kenyahub.me/og-image.png",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://kenyahub.me/icon-512.png",
+      width: 512,
+      height: 512,
+    },
     contactPoint: {
       "@type": "ContactPoint",
       email: "contact@kenyahub.me",
@@ -178,7 +178,7 @@ export default function HomePage() {
                 Interactive Kenyan Languages, Translator &amp; Oral Wisdom Hub
               </h2>
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mt-2">
-                Explore {PUBLISHED_COURSES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 4 vocabulary mini-games, and a 23-language bidirectional dictionary.
+                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 4 vocabulary mini-games, and a 23-language bidirectional dictionary.
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5 shrink-0">
@@ -202,7 +202,7 @@ export default function HomePage() {
             <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
               <div className="flex items-center gap-2 text-gold font-bold text-sm mb-1">
                 <Languages className="w-4 h-4 shrink-0" />
-                <span>{PUBLISHED_COURSES.length} Guided Courses</span>
+                <span>{PUBLISHED_COURSE_SUMMARIES.length} Guided Courses</span>
               </div>
               <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
                 Structured units teaching greetings, kinship, verbs, numbers, and daily conversation.
@@ -244,12 +244,11 @@ export default function HomePage() {
                 Jump Directly Into a Language Course
               </h3>
               <Link href="/tools/learn/" className="text-xs font-semibold text-gold hover:underline">
-                View all {PUBLISHED_COURSES.length} courses →
+                View all {PUBLISHED_COURSE_SUMMARIES.length} courses →
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-3.5">
-              {PUBLISHED_COURSES.map(({ config, units }) => {
-                const skillCount = units.reduce((s, u) => s + u.skills.length, 0);
+              {PUBLISHED_COURSE_SUMMARIES.map(({ config, skillCount }) => {
                 const identity = getLanguageIdentity(config.id);
                 return (
                   <Link
@@ -467,7 +466,7 @@ export default function HomePage() {
             {
               icon: <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-kenya-green mb-1" />,
               title: "100% Kenyan",
-              desc: "Built specifically for Kenya — 22 indigenous language courses, 2026 KRA tax bands, Safaricom tariffs, CRSP schedules, and KICD curriculum.",
+              desc: "Built specifically for Kenya — 23 indigenous language courses, 2026 KRA tax bands, Safaricom tariffs, CRSP schedules, and KICD curriculum.",
               accent: "from-kenya-green/10 to-transparent",
             },
             {

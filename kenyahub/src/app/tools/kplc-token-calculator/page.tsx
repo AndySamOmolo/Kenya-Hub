@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import tariffData from "@/data/kplc-tariff.json";
+import solarIrradianceData from "@/data/solar-irradiance.json";
 
 const tool = TOOLS.find((t) => t.slug === "kplc-token-calculator")!;
 
@@ -310,6 +311,22 @@ export default function KPLCTokenCalculatorPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Kenya Regional Solar Irradiance & Off-Grid PV Reference */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3 mt-6">
+          <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            Kenya Regional Solar Irradiance (kWh/m²/day) &amp; Solar PV Payback Reference ({solarIrradianceData.source})
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 text-xs">
+            {solarIrradianceData.regions.map((reg) => (
+              <div key={reg.id} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-center">
+                <p className="font-bold text-text-primary">{reg.name}</p>
+                <p className="text-base font-extrabold text-gold mt-1">{reg.irradiance} kWh/m²</p>
+                <p className="text-[0.65rem] text-text-muted mt-0.5">{reg.counties.slice(0, 2).join(", ")}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </ToolShell>

@@ -2466,6 +2466,38 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     coverageNote:
       "Integrated across kisii.json, kamba.json, kikuyu.json, luo.json, swahili.json, kalenjin.json, taita.json, pokot.json, teso.json, somali.json, maasai.json, meru.json, and blog-posts.ts.",
   },
+  {
+    id: "langsci-2024-2026-kenyan-bantu-nilotic-cushitic-series",
+    title:
+      "Language Science Press Open-Access Kenyan Linguistics Series (2024–2026: Books #383, #438, #463, #491 & #621 — CC-BY-4.0)",
+    fileName: "438 Huangetal 2024 21.md",
+    processedPath: "language-sources/raw/438 Huangetal 2024 21.md",
+    languages: [
+      "meru",
+      "kalenjin",
+      "pokot",
+      "maasai",
+      "samburu",
+      "ilchamus",
+      "luhya",
+      "swahili",
+      "somali",
+      "borana",
+      "rendille",
+      "daasanach",
+      "luo",
+      "turkana",
+      "teso",
+    ],
+    published: "2024–2026 (CC-BY-4.0)",
+    contribution:
+      "Peer-reviewed open-access syntactic, phonological, tonal, and morphological descriptions published by Language Science Press (Berlin, CC-BY-4.0): (1) Patrick N. Kanampiu & Jenneke van der Wal (2025, Book #463 Ch. 4, DOI: 10.5281/zenodo.14833610) on Kîîtharaka 7-vowel phonology, active Dahl's Law, focus particles n'- vs. i/í, and 3 inversion constructions; (2) Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, Book #438 Ch. 21, DOI: 10.5281/zenodo.11210482) on Kalenjin & Pökoot enclitic kee(y)/kegh [kɛːx] across reflexive, reciprocal, middle, and emphatic functions; (3) Nadja Fiebig (2026, Book #491 Ch. 4, DOI: 10.5281/zenodo.20285188) on participant vs. event verbal number in Kalenjin pluractionality; (4) Doris L. Payne (2026, Book #491 Ch. 12, DOI: 10.5281/zenodo.20285206) on alternating middle verbs (-a/-o) and media tantum in Maa (Maasai, Samburu, Ilchamus); (5) Michael Diercks et al. (2026, Book #491 Ch. 18, DOI: 10.5281/zenodo.20285218) on perception verbs and hyperraising in Tiriki (Luhya) alongside John Gluckman (2022, d-nb.info/1276284861/34) on modality (kunyala/kwenya) in Logoori; (6) Hannah Gibson et al. eds. (2024, Book #383, DOI: 10.5281/zenodo.10663761) on East African Bantu & Old Swahili morphosyntax; and (7) Christopher R. Green & Mirella L. Blum (2026, Book #621) on Cushitic and Nilo-Saharan tone systems.",
+    appUses: ["dictionary", "comparative translator", "course lessons", "grammar lessons"],
+    contentTypes: ["vocabulary", "grammar", "dialogue", "cultural-reference"],
+    ingestionStatus: "integrated",
+    coverageNote:
+      "Integrated across meru.json, kalenjin.json, pokot.json, maasai.json, samburu.json, ilchamus.json, luhya.json, swahili.json, somali.json, borana.json, rendille.json, daasanach.json, turkana.json, teso.json, and grammar-reference.ts.",
+  },
 ];
 
 for (const _src of _commercialTextDatasetSources) {

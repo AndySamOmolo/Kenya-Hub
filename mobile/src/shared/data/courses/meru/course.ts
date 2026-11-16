@@ -42,8 +42,14 @@ export const MERU_UNITS: CourseUnit[] = [
         "tips": "In Kĩmĩĩrũ (Johnston 1919 Language #11a), Class 1/2 nouns pair mũ-/ba- (muntũ → antũ / bantũ 'person → people'), Class 3/4 pair mũ-/mĩ- (mũtĩ → mĩtĩ 'tree → trees'), and Class 12/13 pair ka-/tũ- for diminutives (kaana → tũana).",
         "words": [
           {
-            "target": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
-            "source": "Hello! / Are you well? (I am well)",
+            "target": "Muuga!",
+            "source": "Hello!",
+            "pronunciation": "muu-ga / uri mwe-ga",
+            "hint": "Standard Kĩmĩĩrũ greeting"
+          },
+          {
+            "target": "Ũrĩ mwega? (resp. Ndĩ mwega)",
+            "source": "Are you well? (I am well)",
             "pronunciation": "muu-ga / uri mwe-ga",
             "hint": "Standard Kĩmĩĩrũ greeting"
           },
@@ -60,32 +66,68 @@ export const MERU_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919, Vol. I, p. 101) Class 1/2 #11a Meru"
           },
           {
-            "target": "mũrũme (pl. arũme) / mũka (pl. aka)",
-            "source": "man, husband / woman, wife",
+            "target": "mũrũme (pl. arũme)",
+            "source": "man, husband",
             "pronunciation": "mu-ru-me / mu-ka",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106) #11a Meru & Embu"
           },
           {
-            "target": "mwana (pl. aana) / kaana (pl. tũana)",
-            "source": "child / small child (diminutive)",
+            "target": "mũka (pl. aka)",
+            "source": "woman, wife",
+            "pronunciation": "mu-ru-me / mu-ka",
+            "hint": "Johnston (1919, Vol. I, pp. 100, 106) #11a Meru & Embu"
+          },
+          {
+            "target": "mwana (pl. aana)",
+            "source": "child",
             "pronunciation": "mwa-na / kaa-na",
             "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-"
           },
           {
-            "target": "mũtĩ (pl. mĩtĩ) / ĩiga (pl. maiga)",
-            "source": "tree (pl. trees) / stone (pl. stones)",
+            "target": "kaana (pl. tũana)",
+            "source": "small child (diminutive)",
+            "pronunciation": "mwa-na / kaa-na",
+            "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-"
+          },
+          {
+            "target": "mũtĩ (pl. mĩtĩ)",
+            "source": "tree (pl. trees)",
             "pronunciation": "mu-ti / ii-ga",
             "hint": "Johnston (1919, Vol. I, pp. 104–105) Class 3/4 & 5/6"
           },
           {
-            "target": "rũũji (rũĩ / maĩ) / mwanki",
-            "source": "water (river) / fire",
+            "target": "ĩiga (pl. maiga)",
+            "source": "stone (pl. stones)",
+            "pronunciation": "mu-ti / ii-ga",
+            "hint": "Johnston (1919, Vol. I, pp. 104–105) Class 3/4 & 5/6"
+          },
+          {
+            "target": "rũũji",
+            "source": "water (river)",
             "pronunciation": "ruu-ji / mwanki",
             "hint": "Johnston (1919, Vol. I, pp. 99, 106) Meru & Tharaka"
           },
           {
-            "target": "riũa / mweri / njata",
-            "source": "sun / moon / star",
+            "target": "maĩ)",
+            "source": "fire",
+            "pronunciation": "ruu-ji / mwanki",
+            "hint": "Johnston (1919, Vol. I, pp. 99, 106) Meru & Tharaka"
+          },
+          {
+            "target": "riũa",
+            "source": "sun",
+            "pronunciation": "riua / mwe-ri / nja-ta",
+            "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
+          },
+          {
+            "target": "mweri",
+            "source": "moon",
+            "pronunciation": "riua / mwe-ri / nja-ta",
+            "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
+          },
+          {
+            "target": "njata",
+            "source": "star",
             "pronunciation": "riua / mwe-ri / nja-ta",
             "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
           },
@@ -115,63 +157,79 @@ export const MERU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)\" in Meru?",
-            "correctAnswer": "Hello! / Are you well? (I am well)",
+            "prompt": "What is the English meaning of \"Muuga!\" in Meru?",
+            "correctAnswer": "Hello!",
             "options": [
-              "Thank you very much",
-              "person (pl. people)",
-              "man, husband / woman, wife",
-              "Hello! / Are you well? (I am well)"
+              "person",
+              "man",
+              "Hello!",
+              "Are you well?"
             ],
-            "hint": "Standard Kĩmĩĩrũ greeting"
+            "hint": "Standard Kĩmĩĩrũ greeting",
+            "acceptedAnswers": [
+              "Hello! / Are you well? (I am well)",
+              "Hello!"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Nĩwega mũno\" in Meru?",
             "correctAnswer": "Thank you very much",
             "options": [
-              "person (pl. people)",
-              "man, husband / woman, wife",
               "Thank you very much",
-              "Hello! / Are you well? (I am well)"
+              "Are you well?",
+              "small child",
+              "Supreme Council of Elders"
             ],
             "hint": "Polite gratitude"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"muntũ (pl. antũ / bantũ)\" in Meru?",
-            "correctAnswer": "person (pl. people)",
+            "correctAnswer": "person",
             "options": [
-              "man, husband / woman, wife",
+              "person",
+              "man",
+              "Hello!",
+              "Are you well?"
+            ],
+            "hint": "Johnston (1919, Vol. I, p. 101) Class 1/2 #11a Meru",
+            "acceptedAnswers": [
               "person (pl. people)",
-              "Hello! / Are you well? (I am well)",
-              "Thank you very much"
-            ],
-            "hint": "Johnston (1919, Vol. I, p. 101) Class 1/2 #11a Meru"
+              "person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"person (pl. people)\" in Meru?",
-            "correctAnswer": "muntũ (pl. antũ / bantũ)",
+            "prompt": "How do you say \"person\" in Meru?",
+            "correctAnswer": "muntũ",
             "options": [
-              "muntũ (pl. antũ / bantũ)",
-              "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+              "Muuga!",
+              "muntũ",
               "Nĩwega mũno",
-              "mũrũme (pl. arũme) / mũka (pl. aka)"
+              "mũrũme"
             ],
-            "hint": "moon-too / ahn-too"
+            "hint": "moon-too / ahn-too",
+            "acceptedAnswers": [
+              "muntũ (pl. antũ / bantũ)",
+              "muntũ"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"man, husband / woman, wife\" in Meru?",
-            "correctAnswer": "mũrũme (pl. arũme) / mũka (pl. aka)",
+            "prompt": "How do you say \"man\" in Meru?",
+            "correctAnswer": "mũrũme",
             "options": [
-              "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+              "Muuga!",
               "Nĩwega mũno",
-              "muntũ (pl. antũ / bantũ)",
-              "mũrũme (pl. arũme) / mũka (pl. aka)"
+              "muntũ",
+              "mũrũme"
             ],
-            "hint": "moo-roo-meh / moo-kah"
+            "hint": "moo-roo-meh / moo-kah",
+            "acceptedAnswers": [
+              "mũrũme (pl. arũme) / mũka (pl. aka)",
+              "mũrũme"
+            ]
           },
           {
             "type": "match_pairs",
@@ -198,15 +256,19 @@ export const MERU_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Meru term for \"child / small child (diminutive)\": ___",
-            "correctAnswer": "mwana (pl. aana) / kaana (pl. tũana)",
+            "prompt": "Complete the Meru term for \"child\": ___",
+            "correctAnswer": "mwana",
             "options": [
-              "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
+              "mwana",
+              "Muuga!",
               "Nĩwega mũno",
-              "muntũ (pl. antũ / bantũ)",
-              "mwana (pl. aana) / kaana (pl. tũana)"
+              "muntũ"
             ],
-            "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-"
+            "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-",
+            "acceptedAnswers": [
+              "mwana (pl. aana) / kaana (pl. tũana)",
+              "mwana"
+            ]
           }
         ]
       },
@@ -254,14 +316,38 @@ export const MERU_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
           },
           {
-            "target": "igana / ngiri",
-            "source": "100 / 1,000",
+            "target": "igana",
+            "source": "100",
             "pronunciation": "i-ga-na / ngi-ri",
             "hint": "Johnston (1919, Vol. I, p. 107)"
           },
           {
-            "target": "kũruga / kũrĩa / kũnyua / gũthiĩ",
-            "source": "to cook / to eat / to drink / to go",
+            "target": "ngiri",
+            "source": "1,000",
+            "pronunciation": "i-ga-na / ngi-ri",
+            "hint": "Johnston (1919, Vol. I, p. 107)"
+          },
+          {
+            "target": "kũruga",
+            "source": "to cook",
+            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
+          },
+          {
+            "target": "kũrĩa",
+            "source": "to eat",
+            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
+          },
+          {
+            "target": "kũnyua",
+            "source": "to drink",
+            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
+          },
+          {
+            "target": "gũthiĩ",
+            "source": "to go",
             "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
             "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
           },
@@ -292,62 +378,82 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"imwe, iiri (bairi), ithatu, inya, ithano\" in Meru?",
-            "correctAnswer": "1, 2, 3, 4, 5",
+            "correctAnswer": "1",
             "options": [
-              "6, 7, 8, 9, 10",
-              "100 / 1,000",
-              "to cook / to eat / to drink / to go",
-              "1, 2, 3, 4, 5"
+              "6",
+              "100",
+              "to cook",
+              "1"
             ],
-            "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
+            "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals",
+            "acceptedAnswers": [
+              "1, 2, 3, 4, 5",
+              "1"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ithanthatu, mũgwanja, inyanya, kenda, ikũmi\" in Meru?",
-            "correctAnswer": "6, 7, 8, 9, 10",
+            "correctAnswer": "6",
             "options": [
-              "100 / 1,000",
-              "to cook / to eat / to drink / to go",
+              "100",
+              "to cook",
+              "6",
+              "1"
+            ],
+            "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10",
+            "acceptedAnswers": [
               "6, 7, 8, 9, 10",
-              "1, 2, 3, 4, 5"
-            ],
-            "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
+              "6"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"igana / ngiri\" in Meru?",
-            "correctAnswer": "100 / 1,000",
+            "prompt": "What is the English meaning of \"igana\" in Meru?",
+            "correctAnswer": "100",
             "options": [
-              "to cook / to eat / to drink / to go",
+              "to cook",
+              "1",
+              "100",
+              "6"
+            ],
+            "hint": "Johnston (1919, Vol. I, p. 107)",
+            "acceptedAnswers": [
               "100 / 1,000",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10"
-            ],
-            "hint": "Johnston (1919, Vol. I, p. 107)"
+              "100"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"100 / 1,000\" in Meru?",
-            "correctAnswer": "igana / ngiri",
+            "prompt": "How do you say \"100\" in Meru?",
+            "correctAnswer": "igana",
             "options": [
-              "igana / ngiri",
-              "imwe, iiri (bairi), ithatu, inya, ithano",
-              "ithanthatu, mũgwanja, inyanya, kenda, ikũmi",
-              "kũruga / kũrĩa / kũnyua / gũthiĩ"
+              "imwe",
+              "ithanthatu",
+              "igana",
+              "kũruga"
             ],
-            "hint": "ee-gah-nah / n-gee-ree"
+            "hint": "ee-gah-nah / n-gee-ree",
+            "acceptedAnswers": [
+              "igana / ngiri",
+              "igana"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"to cook / to eat / to drink / to go\" in Meru?",
-            "correctAnswer": "kũruga / kũrĩa / kũnyua / gũthiĩ",
+            "prompt": "How do you say \"to cook\" in Meru?",
+            "correctAnswer": "kũruga",
             "options": [
-              "imwe, iiri (bairi), ithatu, inya, ithano",
-              "ithanthatu, mũgwanja, inyanya, kenda, ikũmi",
-              "igana / ngiri",
-              "kũruga / kũrĩa / kũnyua / gũthiĩ"
+              "imwe",
+              "ithanthatu",
+              "igana",
+              "kũruga"
             ],
-            "hint": "koo-roo-gah / koo-ree-ah / koo-nywah / goo-thee"
+            "hint": "koo-roo-gah / koo-ree-ah / koo-nywah / goo-thee",
+            "acceptedAnswers": [
+              "kũruga / kũrĩa / kũnyua / gũthiĩ",
+              "kũruga"
+            ]
           },
           {
             "type": "match_pairs",
@@ -377,10 +483,10 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru term for \"A single tree does not make a forest\": ___",
             "correctAnswer": "Mũtĩ ũmwe ndũtũũragia mũrũrĩ",
             "options": [
-              "imwe, iiri (bairi), ithatu, inya, ithano",
-              "ithanthatu, mũgwanja, inyanya, kenda, ikũmi",
-              "igana / ngiri",
-              "Mũtĩ ũmwe ndũtũũragia mũrũrĩ"
+              "Kũmenya njĩra nĩ kũũria",
+              "imwe",
+              "Mũtĩ ũmwe ndũtũũragia mũrũrĩ",
+              "iiri"
             ],
             "hint": "Mount Kenya Bantu proverb on unity"
           }
@@ -426,7 +532,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "mwana"
           },
           {
-            "target": "Mu-thamaki; a-. Mu-nene; a-",
+            "target": "Mu-thamaki; a-. Mu-nene",
             "source": "Chief",
             "pronunciation": "mu-thamaki a- mu-nene a"
           },
@@ -441,7 +547,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "mu-ru wa maiya"
           },
           {
-            "target": "Mū-thūri; a-. Mū-rūme; a-",
+            "target": "Mū-thūri; a-. Mū-rūme",
             "source": "Husband",
             "pronunciation": "mu-thuri"
           },
@@ -454,11 +560,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Murungu — mũrũme",
-            "source": "God — Man"
+            "source": "God — Man."
           },
           {
             "target": "Mū-kā — mwana",
-            "source": "Wife — Child"
+            "source": "Wife — Child."
           }
         ],
         "authoredExercises": [
@@ -467,10 +573,10 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What does \"Murungu\" mean in English?",
             "correctAnswer": "God",
             "options": [
-              "God",
               "Man",
               "Wife",
-              "Child"
+              "Child",
+              "God"
             ],
             "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
           },
@@ -588,11 +694,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mwana — mũka",
-            "source": "Child — Woman"
+            "source": "Child — Woman."
           },
           {
             "target": "mũrũme — maitũ",
-            "source": "Man — Mother"
+            "source": "Man — Mother."
           }
         ],
         "authoredExercises": [
@@ -601,10 +707,10 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What does \"mwana\" mean in English?",
             "correctAnswer": "Child",
             "options": [
-              "Child",
               "Woman",
               "Man",
-              "Mother"
+              "Mother",
+              "Child"
             ],
             "hint": "Core vocabulary in Clans, Marriage & Community Life"
           },
@@ -742,10 +848,10 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ikũmi (pl. mĩrongo)\" in Meru?",
             "correctAnswer": "Ten",
             "options": [
+              "Ten",
               "Nine",
               "Eight",
-              "Seven",
-              "Ten"
+              "Seven"
             ],
             "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
@@ -756,8 +862,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "options": [
               "Eight",
               "Seven",
-              "Nine",
-              "Ten"
+              "Ten",
+              "Nine"
             ],
             "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
@@ -767,8 +873,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "correctAnswer": "Eight",
             "options": [
               "Seven",
-              "Eight",
               "Ten",
+              "Eight",
               "Nine"
             ],
             "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
@@ -778,9 +884,9 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Eight\" in Meru?",
             "correctAnswer": "inyanya",
             "options": [
-              "inyanya",
-              "ikũmi (pl. mĩrongo)",
+              "ikũmi",
               "kenda",
+              "inyanya",
               "mũgwanja"
             ],
             "hint": "ee-nyah-nyah"
@@ -790,7 +896,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Seven\" in Meru?",
             "correctAnswer": "mũgwanja",
             "options": [
-              "ikũmi (pl. mĩrongo)",
+              "ikũmi",
               "kenda",
               "inyanya",
               "mũgwanja"
@@ -825,7 +931,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru term for \"Six\": ___",
             "correctAnswer": "ithanthatu",
             "options": [
-              "ikũmi (pl. mĩrongo)",
+              "ikũmi",
               "kenda",
               "inyanya",
               "ithanthatu"
@@ -901,34 +1007,38 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"imwe (-mwe)\" in Meru?",
             "correctAnswer": "One",
             "options": [
-              "Second (time unit)",
+              "One",
+              "Second",
               "Twenty",
-              "Thirty",
-              "One"
+              "Thirty"
             ],
             "hint": "Johnston 1919, Vol. I, pp. 109–110 #11a Meru"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Sekondi\" in Meru?",
-            "correctAnswer": "Second (time unit)",
+            "correctAnswer": "Second",
             "options": [
               "Twenty",
               "Thirty",
-              "Second (time unit)",
-              "One"
+              "One",
+              "Second"
             ],
-            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
+            "hint": "Kĩmĩĩrũ — GitHub unicode-org/cldr (mer.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)",
+            "acceptedAnswers": [
+              "Second (time unit)",
+              "Second"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Mī-rōnggo ī-gīrī\" in Meru?",
             "correctAnswer": "Twenty",
             "options": [
-              "Thirty",
               "Twenty",
+              "Thirty",
               "One",
-              "Second (time unit)"
+              "Second"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
           },
@@ -938,23 +1048,23 @@ export const MERU_UNITS: CourseUnit[] = [
             "correctAnswer": "Mī-rōnggo ī-gīrī",
             "options": [
               "Mī-rōnggo ī-gīrī",
-              "imwe (-mwe)",
+              "imwe",
               "Sekondi",
-              "Mī-rōnggo ī-tātū"
+              "I-gāna"
             ],
-            "hint": "mī-rōnggo ī-gīrī"
+            "hint": "Starts with \"Mī…\" (16 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Thirty\" in Meru?",
             "correctAnswer": "Mī-rōnggo ī-tātū",
             "options": [
-              "imwe (-mwe)",
+              "Mī-rōnggo ī-tātū",
+              "imwe",
               "Sekondi",
-              "Mī-rōnggo ī-gīrī",
-              "Mī-rōnggo ī-tātū"
+              "I-gāna"
             ],
-            "hint": "mī-rōnggo ī-tātū"
+            "hint": "Starts with \"Mī…\" (16 letters)"
           },
           {
             "type": "match_pairs",
@@ -984,10 +1094,10 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru term for \"Forty\": ___",
             "correctAnswer": "Mī-rōnggo ī-nā",
             "options": [
-              "imwe (-mwe)",
+              "imwe",
+              "Mī-rōnggo ī-nā",
               "Sekondi",
-              "Mī-rōnggo ī-gīrī",
-              "Mī-rōnggo ī-nā"
+              "I-gāna"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11 & 11a: Kikuyu, Meru, Chuka)"
           }
@@ -1049,7 +1159,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ma"
           },
           {
-            "target": "Cūmbī. I-gāta (soda)",
+            "target": "Cūmbī",
             "source": "Salt",
             "pronunciation": "cumbi i-gata"
           },
@@ -1062,25 +1172,29 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ũcũrũ — Rũũji",
-            "source": "Porridge — Water"
+            "source": "Porridge — Water."
           },
           {
             "target": "Gī-kwa — kũrĩa",
-            "source": "Yam — Eat"
+            "source": "Yam — Eat."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ũcũrũ\" mean in English?",
-            "correctAnswer": "Porridge / gruel (Class 14: Ũ-/Bũ-)",
+            "correctAnswer": "Porridge",
             "options": [
-              "Porridge / gruel (Class 14: Ũ-/Bũ-)",
               "Water",
               "Yam",
+              "Porridge",
               "Eat"
             ],
-            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
+            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages",
+            "acceptedAnswers": [
+              "Porridge / gruel (Class 14: Ũ-/Bũ-)",
+              "Porridge"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1140,7 +1254,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Meru (Kĩmĩĩrũ) (Kĩmĩĩrũ) in C. W. Hobley (1910 Notes on Mweru & Tharaka) & Sir Harry Johnston (1919 Group C #11a Meru & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Meru, Tharaka-Nithi.",
         "words": [
           {
-            "target": "M-bembē; ma-",
+            "target": "M-bembē; ma",
             "source": "Maize",
             "pronunciation": "m-bembe"
           },
@@ -1155,7 +1269,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "i-rigo"
           },
           {
-            "target": "N-g'aragu. M-būta (M.)",
+            "target": "N-g'aragu",
             "source": "Hunger",
             "pronunciation": "n-g'aragu m-buta"
           },
@@ -1188,11 +1302,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "M-bembē — kũnyua",
-            "source": "Maize — Drink"
+            "source": "Maize — Drink."
           },
           {
             "target": "I-rigo — N-g'aragu. M-būta",
-            "source": "Banana — Hunger"
+            "source": "Banana — Hunger."
           }
         ],
         "authoredExercises": [
@@ -1201,8 +1315,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What does \"M-bembē\" mean in English?",
             "correctAnswer": "Maize",
             "options": [
-              "Maize",
               "Drink",
+              "Maize",
               "Banana",
               "Hunger"
             ],
@@ -1324,11 +1438,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "rũũji — Rũũji",
-            "source": "River — Water"
+            "source": "River — Water."
           },
           {
             "target": "riũa — njata",
-            "source": "Sun — Star"
+            "source": "Sun — Star."
           }
         ],
         "authoredExercises": [
@@ -1337,12 +1451,12 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What does \"rũũji\" mean in English?",
             "correctAnswer": "River",
             "options": [
-              "River",
               "Water",
               "Sun",
-              "Star"
+              "Star",
+              "River"
             ],
-            "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms"
+            "hint": "Starts with \"Ri…\" (5 letters)"
           },
           {
             "type": "translate_to_target",
@@ -1453,25 +1567,29 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kĩrĩma — rũũji",
-            "source": "Mountain — River"
+            "source": "Mountain — River."
           },
           {
             "target": "ĩiga — njata",
-            "source": "Stone — Star, stars"
+            "source": "Stone — Star, stars."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kĩrĩma\" mean in English?",
-            "correctAnswer": "Mountain / Hill",
+            "correctAnswer": "Mountain",
             "options": [
-              "Mountain / Hill",
               "River",
-              "Stone / Rock",
-              "Star, stars"
+              "Stone",
+              "Star",
+              "Mountain"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Mountain / Hill",
+              "Mountain"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1609,25 +1727,29 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "rũrĩmĩ — Riitho",
-            "source": "Tongue, language — Eye"
+            "source": "Tongue, language — Eye."
           },
           {
             "target": "Kũgũrũ — Kĩara",
-            "source": "Leg — Finger"
+            "source": "Leg — Finger."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"rũrĩmĩ\" mean in English?",
-            "correctAnswer": "Tongue, language",
+            "correctAnswer": "Tongue",
             "options": [
-              "Tongue, language",
-              "Eye (Class 5/6: Ri-/Ma-)",
-              "Leg / foot (Class 15: Kũ-)",
-              "Finger (Class 7/8: Kĩ-/Bĩ-)"
+              "Eye",
+              "Tongue",
+              "Leg",
+              "Finger"
             ],
-            "hint": "Core vocabulary in Parts of the Body & Physical Senses"
+            "hint": "Core vocabulary in Parts of the Body & Physical Senses",
+            "acceptedAnswers": [
+              "Tongue, language",
+              "Tongue"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1736,11 +1858,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nteithia — rũrĩmĩ",
-            "source": "Help me — Tongue, language"
+            "source": "Help me — Tongue, language."
           },
           {
             "target": "ĩrĩo — ngoro",
-            "source": "Tooth — Heart, spirit, mind"
+            "source": "Tooth — Heart, spirit, mind."
           }
         ],
         "authoredExercises": [
@@ -1750,9 +1872,9 @@ export const MERU_UNITS: CourseUnit[] = [
             "correctAnswer": "Help me",
             "options": [
               "Help me",
-              "Tongue, language",
-              "Tooth (pl. teeth)",
-              "Heart, spirit, mind"
+              "Tongue",
+              "Tooth",
+              "Heart"
             ],
             "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
           },
@@ -1830,8 +1952,14 @@ export const MERU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Meru language — Sample phrases"
           },
           {
-            "target": "Uma nja / Tũra",
-            "source": "Get out / go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
+            "target": "Uma nja",
+            "source": "Get out",
+            "pronunciation": "uma nja / tu-ra",
+            "hint": "Wikipedia Meru language — Dialects"
+          },
+          {
+            "target": "Tũra",
+            "source": "go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
             "pronunciation": "uma nja / tu-ra",
             "hint": "Wikipedia Meru language — Dialects"
           },
@@ -1876,29 +2004,33 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ngakũringĩra thimũ — Uma nja",
-            "source": "I will phone — Get out"
+            "source": "I will phone — Get out."
           },
           {
             "target": "Jũkia — Mbĩra",
-            "source": "Take — Tell me"
+            "source": "Take — Tell me."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ngakũringĩra thimũ\" mean in English?",
-            "correctAnswer": "I will phone / call you",
+            "correctAnswer": "I will phone",
             "options": [
-              "I will phone / call you",
-              "Get out / go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
-              "Take (imperative)",
-              "Tell me"
+              "Get out",
+              "Take",
+              "Tell me",
+              "I will phone"
             ],
-            "hint": "Core vocabulary in Essential Action & Motion Verbs"
+            "hint": "Core vocabulary in Essential Action & Motion Verbs",
+            "acceptedAnswers": [
+              "I will phone / call you",
+              "I will phone"
+            ]
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Get out / go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)\"",
+            "prompt": "Translate to the target language: \"Get out / go outside\"",
             "correctAnswer": "Uma nja",
             "acceptedAnswers": [
               "Uma nja / Tũra",
@@ -1974,8 +2106,13 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "kwa-ria"
           },
           {
-            "target": "kũrora / kwona",
-            "source": "To look at / to see",
+            "target": "kũrora",
+            "source": "To look",
+            "pronunciation": "kurora"
+          },
+          {
+            "target": "kwona",
+            "source": "to see",
             "pronunciation": "kurora"
           },
           {
@@ -1994,19 +2131,24 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "kui-gua"
           },
           {
-            "target": "kũruta wĩra / kũrĩma",
-            "source": "To work / to cultivate",
+            "target": "kũruta wĩra",
+            "source": "To work",
+            "pronunciation": "ku-ru-ta wi-ra / ku-ri-ma"
+          },
+          {
+            "target": "kũrĩma",
+            "source": "to cultivate",
             "pronunciation": "ku-ru-ta wi-ra / ku-ri-ma"
           }
         ],
         "sentences": [
           {
             "target": "kũaa — Njĩtagwa",
-            "source": "To give — My name is"
+            "source": "To give — My name is."
           },
           {
             "target": "kwenda — kwaria",
-            "source": "To love — To speak, talk"
+            "source": "To love — To speak, talk."
           }
         ],
         "authoredExercises": [
@@ -2017,8 +2159,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "options": [
               "To give",
               "My name is",
-              "To love / like",
-              "To speak, talk"
+              "To love",
+              "To speak"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
@@ -2138,25 +2280,29 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Njuraĩ — mũthenya",
-            "source": "July — Day"
+            "source": "July — Day."
           },
           {
             "target": "ũtukũ — Narua",
-            "source": "Night — Today"
+            "source": "Night — Today."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Njuraĩ\" mean in English?",
-            "correctAnswer": "July (Month 7)",
+            "correctAnswer": "July",
             "options": [
-              "July (Month 7)",
               "Day",
               "Night",
-              "Today"
+              "Today",
+              "July"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons",
+            "acceptedAnswers": [
+              "July (Month 7)",
+              "July"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2264,25 +2410,29 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kiumia — Muramuko",
-            "source": "Sunday — Monday"
+            "source": "Sunday — Monday."
           },
           {
             "target": "Wairi — Wethatu",
-            "source": "Tuesday — Wednesday"
+            "source": "Tuesday — Wednesday."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Kiumia\" mean in English?",
-            "correctAnswer": "Sunday (Day of the week)",
+            "correctAnswer": "Sunday",
             "options": [
-              "Sunday (Day of the week)",
-              "Monday (Day of the week)",
-              "Tuesday (Day of the week)",
-              "Wednesday (Day of the week)"
+              "Monday",
+              "Sunday",
+              "Tuesday",
+              "Wednesday"
             ],
-            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
+            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks",
+            "acceptedAnswers": [
+              "Sunday (Day of the week)",
+              "Sunday"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2402,7 +2552,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mwiria wa Njaru, Ntuni, Angilo, Athinga, Athanya na Ntowaita (Netiri).",
-            "source": "The Mweru totemic clans (Mwiria) and their sacred totems (Netiri) (Hobley 1910, pp. 156–158)."
+            "source": "The Mweru totemic clans (Mwiria) and their sacred totems (Netiri) ."
           },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa Angilo.",
@@ -2413,14 +2563,18 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Nyambeene / Jombeni\" in Meru?",
-            "correctAnswer": "Nyambene Hills (Jombeni Range)",
+            "correctAnswer": "Nyambene Hills",
             "options": [
-              "Nyambene Hills (Jombeni Range)",
-              "Angilo (Meru clan whose totem is black cattle)",
-              "Athinga (Meru clan whose totem is the giraffe)",
-              "Ntuni (Meru clan whose totem is red cattle)"
+              "Angilo",
+              "Athinga",
+              "Ntuni",
+              "Nyambene Hills"
             ],
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 155)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 155)",
+            "acceptedAnswers": [
+              "Nyambene Hills (Jombeni Range)",
+              "Nyambene Hills"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2450,9 +2604,9 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Njaru (Meru clan whose totem is white cattle)\": ___",
             "correctAnswer": "Njaru",
             "options": [
-              "Njaru",
               "Athanya",
-              "Nyambeene / Jombeni",
+              "Nyambeene",
+              "Njaru",
               "Angilo"
             ],
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 156)"
@@ -2518,14 +2672,18 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Netiri\" in Meru?",
-            "correctAnswer": "Totem / forbidden sacred thing (Mweru)",
+            "correctAnswer": "Totem",
             "options": [
-              "Totem / forbidden sacred thing (Mweru)",
               "Womb",
+              "Totem",
               "Woman",
               "Water"
             ],
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157 — Notes on Mweru)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 157 — Notes on Mweru)",
+            "acceptedAnswers": [
+              "Totem / forbidden sacred thing (Mweru)",
+              "Totem"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2555,8 +2713,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Spring water\": ___",
             "correctAnswer": "Mā-zigūma",
             "options": [
-              "Mā-zigūma",
               "N-twmōi",
+              "Mā-zigūma",
               "Netiri",
               "Kī-shīī"
             ],
@@ -2634,8 +2792,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mū-ūmba\" in Meru?",
             "correctAnswer": "Song",
             "options": [
-              "Song",
               "Pigeon",
+              "Song",
               "Mother",
               "Monkey"
             ],
@@ -2669,8 +2827,8 @@ export const MERU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Leopard\": ___",
             "correctAnswer": "ma- N-gare",
             "options": [
-              "ma- N-gare",
               "M-būta",
+              "ma- N-gare",
               "Mū-ūmba",
               "N-jīwa"
             ],
@@ -2736,14 +2894,18 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Ki-hīa\" in Meru?",
-            "correctAnswer": "Goat (he)",
+            "correctAnswer": "Goat",
             "options": [
-              "Goat (he)",
+              "Goat",
               "Ghost",
               "Forest",
               "Fear"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "Goat (he)",
+              "Goat"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2771,14 +2933,18 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Father\": ___",
-            "correctAnswer": "Baba, Ba-ba, Ba-va",
+            "correctAnswer": "Baba",
             "options": [
-              "Baba, Ba-ba, Ba-va",
               "Ci-eri",
               "Ki-hīa",
+              "Baba",
               "N-kuā"
             ],
-            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)"
+            "hint": "11a. Meru / Chuka / Mwimbi / Tharaka (M.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–112)",
+            "acceptedAnswers": [
+              "Baba, Ba-ba, Ba-va",
+              "Baba"
+            ]
           }
         ]
       }
@@ -2788,7 +2954,7 @@ export const MERU_UNITS: CourseUnit[] = [
     "id": "meru-unit-11",
     "unitNumber": 11,
     "title": "Kĩtharaka Loanword Phonology & Atharaka Ethnography",
-    "description": "Master Prof. Kithaka wa Mberia's (2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) analysis of Kĩtharaka borrowed words (7 vowels, /β, ð, ɣ/, Dahl's Law, n-propping of /d/, and prefix reanalysis) alongside Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) Atharaka age-grades, smithy, and 14 clans.",
+    "description": "Master Prof. Kithaka wa Mberia's (2004, OPLL Vol. 2, pp. 45–57, Examples 1–18) analysis of Kĩtharaka borrowed words (7 vowels, /v, ð, ɣ/, Dahl's Law, n-propping of /d/, and prefix reanalysis) alongside Arthur M. Champion's (1912, JRAI Vol. 42, pp. 68–90 + Plate X) Atharaka age-grades, smithy, and 14 clans.",
     "icon": "BookOpen",
     "color": "#16A34A",
     "skills": [
@@ -2800,32 +2966,32 @@ export const MERU_UNITS: CourseUnit[] = [
         "tips": "In Kĩtharaka (Mberia 2004, pp. 45–57), foreign /p, b, f, v/ become /β/ (moβira, βaði, βurana) except [b] after Class 9/10 N- (mbuŋgɛ, mbureki); /k/ voices to /ɣ/ before a voiceless consonant via Dahl's Law (moɣatɛ < mkatɛ, karaɣita < træktə); and foreign /d/ is propped with /n/ to form [nd] (ndawa, nderesa, ndasita).",
         "words": [
           {
-            "target": "moβira (< mpira)",
+            "target": "movira (< mpira)",
             "source": "ball",
             "pronunciation": "moira"
           },
           {
-            "target": "βaði (< pasi)",
+            "target": "vaði (< pasi)",
             "source": "iron box",
             "pronunciation": "aði"
           },
           {
-            "target": "moβukɔ (< mfukɔ)",
+            "target": "movukɔ (< mfukɔ)",
             "source": "bag/pocket",
             "pronunciation": "mouk"
           },
           {
-            "target": "βurana (< fulana)",
+            "target": "vurana (< fulana)",
             "source": "vest/undershirt",
             "pronunciation": "urana"
           },
           {
-            "target": "βaisikiri (< baiskɛli)",
+            "target": "vaisikiri (< baiskɛli)",
             "source": "bicycle",
             "pronunciation": "aisikiri"
           },
           {
-            "target": "βetɛrɔri (< petrəl)",
+            "target": "vetɛrɔri (< petrəl)",
             "source": "petrol",
             "pronunciation": "etrri"
           },
@@ -2865,7 +3031,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "mosð"
           },
           {
-            "target": "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka:",
+            "target": "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka",
             "source": "bread & tractor vs. pen, motorcar & school (/k/ retained)",
             "pronunciation": "mo-ɣa-tɛ / ka-ra-ɣi-ta / ka-ra-mu / mo-tu-kaa / su-ku-ru",
             "hint": "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 50–51, Ex. 8–9)"
@@ -2899,7 +3065,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Moɣatɛ na karamu irĩ mɛða-inĩ",
-            "source": "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða)"
+            "source": "The bread (moɣatɛ, with Dahl's Law) and the pen (karamu) are on the table (mɛða)."
           }
         ]
       },
@@ -2917,7 +3083,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 72–73)"
           },
           {
-            "target": "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle),",
+            "target": "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle)",
             "source": "Complete blacksmithing terminology at Mutialu in Atharaka",
             "pronunciation": "mutialu-smithy-longo",
             "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 77–78)"
@@ -2942,11 +3108,11 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Akuru ya Chiama marĩ Ithembo-inĩ",
-            "source": "The elders of the Chiama council are at the sacred grove (Ithembo)"
+            "source": "The elders of the Chiama council are at the sacred grove (Ithembo)."
           }
         ]
       },
-{
+      {
         "id": "meru-open-datasets-thiomi",
         "title": "Mother-Tongue Literacy, Farming & Community Life",
         "icon": "Database",
@@ -2954,240 +3120,204 @@ export const MERU_UNITS: CourseUnit[] = [
         "culturalNote": "The Thiomi Dataset (Mutisya, Mugane et al. 2026, CC-BY-4.0) includes 94,933 expert-validated English–Kĩmĩĩrũ sentence pairs alongside 5,453 benchmark pairs in thiomi-5k.",
         "grammarTip": "In Kĩmĩĩrũ, Class 2 human plural nouns take prefix a- (aana bontheethu 'all our children') and concord prefix ba-/a- on verbs.",
         "words": [
-                {
-                        "target": "Aana bontheethu",
-                        "source": "All our children",
-                        "pronunciation": "ah-ah-nah boh-ntheh-eh-thoo"
-                },
-                {
-                        "target": "Kũthoma",
-                        "source": "To read / study",
-                        "pronunciation": "koo-thoh-mah"
-                },
-                {
-                        "target": "Rũthiomi rwa mũciĩ",
-                        "source": "Home / Mother language",
-                        "pronunciation": "roo-thyoh-mee rwah moo-chee-ee"
-                },
-                {
-                        "target": "Kũgwatithia",
-                        "source": "To support / assist",
-                        "pronunciation": "koo-gwah-tee-thyah"
-                },
-                {
-                        "target": "Mũnda (pl. Mĩnda)",
-                        "source": "Farm / Garden",
-                        "pronunciation": "moo-ndah"
-                },
-                {
-                        "target": "Mũrimi (pl. Arĩmi)",
-                        "source": "Farmer",
-                        "pronunciation": "moo-ree-mee"
-                },
-                {
-                        "target": "Thĩĩri",
-                        "source": "Peace",
-                        "pronunciation": "thee-ee-ree"
-                },
-                {
-                        "target": "Rũũjĩ",
-                        "source": "Water / River",
-                        "pronunciation": "roo-oo-jee"
-                }
+          {
+            "target": "Aana bontheethu",
+            "source": "All our children",
+            "pronunciation": "ah-ah-nah boh-ntheh-eh-thoo"
+          },
+          {
+            "target": "Kũthoma",
+            "source": "To read / study",
+            "pronunciation": "koo-thoh-mah"
+          },
+          {
+            "target": "Rũthiomi rwa mũciĩ",
+            "source": "Home / Mother language",
+            "pronunciation": "roo-thyoh-mee rwah moo-chee-ee"
+          },
+          {
+            "target": "Kũgwatithia",
+            "source": "To support / assist",
+            "pronunciation": "koo-gwah-tee-thyah"
+          },
+          {
+            "target": "Mũnda (pl. Mĩnda)",
+            "source": "Farm / Garden",
+            "pronunciation": "moo-ndah"
+          },
+          {
+            "target": "Mũrimi (pl. Arĩmi)",
+            "source": "Farmer",
+            "pronunciation": "moo-ree-mee"
+          },
+          {
+            "target": "Thĩĩri",
+            "source": "Peace",
+            "pronunciation": "thee-ee-ree"
+          },
+          {
+            "target": "Rũũjĩ",
+            "source": "Water / River",
+            "pronunciation": "roo-oo-jee"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Aana bontheethu nĩabatiĩ kũgwatithia kũthoma na rũthiomi rwao rwa mũciĩ.",
-                        "source": "All our children should be supported to read in their home language."
-                }
+          {
+            "target": "Aana bontheethu nĩabatiĩ kũgwatithia kũthoma na rũthiomi rwao rwa mũciĩ.",
+            "source": "All our children should be supported to read in their home language."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "meru-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Meru (Kĩmĩĩrũ) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml).",
         "words": [
-                  {
-                            "target": "Muuga!",
-                            "source": "Hello",
-                            "pronunciation": "muuga"
-                  },
-                  {
-                            "target": "Nĩwega",
-                            "source": "Thank you",
-                            "pronunciation": "niwega"
-                  },
-                  {
-                            "target": "Tigwa bwega, tharimwa",
-                            "source": "Goodbye, be blessed",
-                            "pronunciation": "tigwa bwe-ga tha-rimwa"
-                  },
-                  {
-                            "target": "Nĩwega mũno",
-                            "source": "Thank you very much",
-                            "pronunciation": "ni-we-ga mu-no"
-                  },
-                  {
-                            "target": "Ndekera",
-                            "source": "I am sorry / Forgive me",
-                            "pronunciation": "nde-ke-ra"
-                  },
-                  {
-                            "target": "Tigwa na wega",
-                            "source": "Stay well / Go well (Goodbye)",
-                            "pronunciation": "tigwa na we-ga / thii na we-ga"
-                  },
-                  {
-                            "target": "Muuga rũũkũ",
-                            "source": "Good morning (Kimeru)",
-                            "pronunciation": "muuga rũũkũ"
-                  },
-                  {
-                            "target": "Ũrĩ mwega?",
-                            "source": "How are you? (Singular / Plural)",
-                            "pronunciation": "ũrĩ mwega"
-                  },
-                  {
-                            "target": "Ndĩ mwega",
-                            "source": "I am fine / We are fine",
-                            "pronunciation": "ndĩ mwega"
-                  },
-                  {
-                            "target": "Gī-kwa",
-                            "source": "Yam",
-                            "pronunciation": "gi-kwa"
-                  }
+          {
+            "target": "Muuga!",
+            "source": "Hello",
+            "pronunciation": "muuga"
+          },
+          {
+            "target": "Nĩwega",
+            "source": "Thank you",
+            "pronunciation": "niwega"
+          },
+          {
+            "target": "Tigwa bwega, tharimwa",
+            "source": "Goodbye, be blessed",
+            "pronunciation": "tigwa bwe-ga tha-rimwa"
+          },
+          {
+            "target": "Nĩwega mũno",
+            "source": "Thank you very much",
+            "pronunciation": "ni-we-ga mu-no"
+          },
+          {
+            "target": "Ndekera",
+            "source": "I am sorry / Forgive me",
+            "pronunciation": "nde-ke-ra"
+          },
+          {
+            "target": "Tigwa na wega",
+            "source": "Stay well / Go well (Goodbye)",
+            "pronunciation": "tigwa na we-ga / thii na we-ga"
+          },
+          {
+            "target": "Muuga rũũkũ",
+            "source": "Good morning (Kimeru)",
+            "pronunciation": "muuga rũũkũ"
+          },
+          {
+            "target": "Ũrĩ mwega?",
+            "source": "How are you? (Singular / Plural)",
+            "pronunciation": "ũrĩ mwega"
+          },
+          {
+            "target": "Ndĩ mwega",
+            "source": "I am fine / We are fine",
+            "pronunciation": "ndĩ mwega"
+          },
+          {
+            "target": "Gī-kwa",
+            "source": "Yam",
+            "pronunciation": "gi-kwa"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Tigwa bwega, tharimwa",
-                            "source": "Goodbye, be blessed"
-                  },
-                  {
-                            "target": "Nĩwega mũno",
-                            "source": "Thank you very much"
-                  },
-                  {
-                            "target": "Tigwa na wega",
-                            "source": "Stay well / Go well (Goodbye)"
-                  },
-                  {
-                            "target": "Muuga rũũkũ",
-                            "source": "Good morning (Kimeru)"
-                  },
-                  {
-                            "target": "Ũrĩ mwega?",
-                            "source": "How are you? (Singular / Plural)"
-                  },
-                  {
-                            "target": "Ndĩ mwega",
-                            "source": "I am fine / We are fine"
-                  },
-                  {
-                            "target": "Cūmbī. I-gāta",
-                            "source": "Salt"
-                  },
-                  {
-                            "target": "N-g'aragu. M-būta",
-                            "source": "Hunger"
-                  }
+          {
+            "target": "Tigwa bwega, tharimwa",
+            "source": "Goodbye, be blessed."
+          },
+          {
+            "target": "Nĩwega mũno",
+            "source": "Thank you very much."
+          },
+          {
+            "target": "Tigwa na wega",
+            "source": "Stay well / Go well (Goodbye)."
+          },
+          {
+            "target": "Muuga rũũkũ",
+            "source": "Good morning (Kimeru)."
+          },
+          {
+            "target": "Ũrĩ mwega?",
+            "source": "How are you? (Singular / Plural)."
+          },
+          {
+            "target": "Ndĩ mwega",
+            "source": "I am fine / We are fine."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "meru-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Meru (Kĩmĩĩrũ) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml)",
+        "culturalNote": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml).",
         "words": [
-                  {
-                            "target": "ikũmi",
-                            "source": "Ten",
-                            "pronunciation": "ikumi"
-                  },
-                  {
-                            "target": "ithanthatu",
-                            "source": "Six",
-                            "pronunciation": "ee-thahn-thah-too"
-                  },
-                  {
-                            "target": "iiri",
-                            "source": "Two",
-                            "pronunciation": "ee-ree / bah-ee-ree"
-                  },
-                  {
-                            "target": "imwe",
-                            "source": "One",
-                            "pronunciation": "ee-mweh"
-                  },
-                  {
-                            "target": "kenda",
-                            "source": "Nine",
-                            "pronunciation": "kehn-dah"
-                  },
-                  {
-                            "target": "ithano",
-                            "source": "Five",
-                            "pronunciation": "ee-thah-noh"
-                  },
-                  {
-                            "target": "inya",
-                            "source": "Four",
-                            "pronunciation": "ee-nyah"
-                  },
-                  {
-                            "target": "inyanya",
-                            "source": "Eight",
-                            "pronunciation": "ee-nyah-nyah"
-                  },
-                  {
-                            "target": "mũgwanja",
-                            "source": "Seven",
-                            "pronunciation": "moo-gwahn-jah"
-                  },
-                  {
-                            "target": "ithatu",
-                            "source": "Three",
-                            "pronunciation": "ee-thah-too"
-                  }
+          {
+            "target": "ikũmi",
+            "source": "Ten",
+            "pronunciation": "ikumi"
+          },
+          {
+            "target": "ithanthatu",
+            "source": "Six",
+            "pronunciation": "ee-thahn-thah-too"
+          },
+          {
+            "target": "iiri",
+            "source": "Two",
+            "pronunciation": "ee-ree / bah-ee-ree"
+          },
+          {
+            "target": "imwe",
+            "source": "One",
+            "pronunciation": "ee-mweh"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine",
+            "pronunciation": "kehn-dah"
+          },
+          {
+            "target": "ithano",
+            "source": "Five",
+            "pronunciation": "ee-thah-noh"
+          },
+          {
+            "target": "inya",
+            "source": "Four",
+            "pronunciation": "ee-nyah"
+          },
+          {
+            "target": "inyanya",
+            "source": "Eight",
+            "pronunciation": "ee-nyah-nyah"
+          },
+          {
+            "target": "mũgwanja",
+            "source": "Seven",
+            "pronunciation": "moo-gwahn-jah"
+          },
+          {
+            "target": "ithatu",
+            "source": "Three",
+            "pronunciation": "ee-thah-too"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Mī-rōnggo ī-nā",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-tāno",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-gīrī",
-                            "source": "Twenty"
-                  },
-                  {
-                            "target": "Mī-rōnggo ī-tātū",
-                            "source": "Thirty"
-                  },
-                  {
-                            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
-                            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)"
-                  },
-                  {
-                            "target": "mũrũme (pl. arũme",
-                            "source": "Man"
-                  },
-                  {
-                            "target": "mwana (pl. aana",
-                            "source": "Child"
-                  },
-                  {
-                            "target": "mũka (pl. aka",
-                            "source": "Woman"
-                  }
+          {
+            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+            "source": "Six (6), seven (7), eight (8), nine (9), ten (10)."
+          }
         ]
-}
+      }
     ]
   }
 ];

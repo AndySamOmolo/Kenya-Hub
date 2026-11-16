@@ -115,6 +115,46 @@ export interface Exercise {
   reviewId?: string;
 }
 
+/* ─── Mini-Game Personal Bests & Daily Quests ───────────── */
+
+export interface GameStats {
+  wordleWon: number;
+  wordleWins: number;
+  wordleFirstTryWins: number;
+  wordlePlayed: number;
+  wordleStreak: number;
+  wordleBestStreak: number;
+  wordleGuessDist: [number, number, number, number, number, number];
+  lastDailyWordleDate?: string;
+  speedBestScore: number;
+  speedBestStreak: number;
+  memoryBestMoves: number;
+  memoryBestTimeSec: Record<number, number>;
+  scrambleBestStreak: number;
+  scrambleSolved: number;
+  riddlesSolved: number;
+  survivalBestRun: number;
+  methaliSolved?: number;
+  safariCompleted?: number;
+  nounClassBest?: number;
+  oddWordBest?: number;
+  polyglotBest?: number;
+  twisterBest?: number;
+  countiesBest?: number;
+  matatuBest?: number;
+}
+
+export interface DailyQuestProgress {
+  date: string;
+  lessonDone: boolean;
+  gameDone: boolean;
+  memoryOrCardsDone: boolean;
+  lessonsToday: number;
+  gamesToday: number;
+  xpToday: number;
+  chestClaimed: boolean;
+}
+
 /* ─── User Progress ─────────────────────────────────────── */
 
 export interface UserProgress {
@@ -131,7 +171,7 @@ export interface UserProgress {
   xp: number;
   /** Current daily streak */
   streak: number;
-  /** Last activity date (ISO string, date only) */
+  /** Last activity date (local YYYY-MM-DD) */
   lastActiveDate: string;
   /** Daily XP goal */
   dailyGoal: number;
@@ -155,6 +195,10 @@ export interface UserProgress {
   streakFreezes: number;
   /** Missed items scheduled for later review */
   reviewQueue: ReviewItem[];
+  /** Persistent per-game high scores and stats */
+  gameStats?: GameStats;
+  /** Daily 3-quest tracker */
+  dailyQuests?: DailyQuestProgress;
 }
 
 export interface ReviewItem {
@@ -163,8 +207,12 @@ export interface ReviewItem {
   type?: ExerciseType;
   prompt: string;
   answer: string;
+  word?: string;
+  wrongCount?: number;
   acceptedAnswers?: string[];
   options?: string[];
+  wordTiles?: string[];
+  sourceWord?: WordPair;
   hint?: string;
   box?: number;
   dueAt: number;
@@ -194,7 +242,7 @@ export interface Achievement {
   description: string;
   icon: string;
   xpReward: number;
-  category: 'streak' | 'lessons' | 'vocabulary' | 'mastery';
+  category: 'streak' | 'lessons' | 'vocabulary' | 'mastery' | 'games';
   condition: (progress: UserProgress) => boolean;
 }
 
@@ -206,6 +254,7 @@ export const XP_PER_CORRECT = 10;
 export const XP_PER_CORRECT_WITH_HINT = 5;
 export const XP_PERFECT_BONUS = 50;
 export const XP_DAILY_GOAL_BONUS = 25;
+export const XP_DAILY_QUEST_CHEST = 50;
 export const EXERCISES_PER_LESSON = 15;
 export const MAX_SKILL_LEVEL = 5;
 
@@ -447,7 +496,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     xpReward: 350,
     category: "lessons",
     condition: (p) => {
-      if (typeof window === "undefined") return p.lessonsCompleted >= 100;
+      if (typeof window === "undefined" || typeof localStorage === "undefined") return p.lessonsCompleted >= 100;
       try {
         let total = p.lessonsCompleted || 0;
         for (let i = 0; i < localStorage.length; i++) {
@@ -469,8 +518,80 @@ export const ACHIEVEMENTS: Achievement[] = [
     description: "Complete 10 mini-games or flashcard sessions",
     icon: "⚡",
     xpReward: 80,
-    category: "lessons",
+    category: "games",
     condition: (p) => (p.gamesPlayed || 0) >= 10,
+  },
+  {
+    id: "wordle-sharpshooter",
+    name: "Wordle Sharpshooter",
+    description: "Solve a Kenyan Wordle in 3 guesses or fewer",
+    icon: "🟩",
+    xpReward: 75,
+    category: "games",
+    condition: (p) => {
+      if ((p.gameStats?.wordleFirstTryWins || 0) >= 1) return true;
+      const dist = p.gameStats?.wordleGuessDist;
+      if (!dist) return false;
+      return (dist[0] || 0) + (dist[1] || 0) + (dist[2] || 0) >= 1;
+    },
+  },
+  {
+    id: "speed-demon",
+    name: "Lightning Tongue",
+    description: "Reach a 10x streak in Speed Match",
+    icon: "🔥",
+    xpReward: 100,
+    category: "games",
+    condition: (p) => (p.gameStats?.speedBestStreak || 0) >= 10,
+  },
+  {
+    id: "total-recall",
+    name: "Total Recall",
+    description: "Clear a Memory Cards board with a 3-Star rating",
+    icon: "🧠",
+    xpReward: 80,
+    category: "games",
+    condition: (p) => {
+      const best = p.gameStats?.memoryBestMoves || 0;
+      return best > 0 && best <= 14;
+    },
+  },
+  {
+    id: "riddle-elder",
+    name: "Keeper of Riddles",
+    description: "Solve 25 traditional riddles across Kenyan languages",
+    icon: "🧩",
+    xpReward: 120,
+    category: "games",
+    condition: (p) => (p.gameStats?.riddlesSolved || 0) >= 25,
+  },
+  {
+    id: "polyglot-gamer",
+    name: "Polyglot Arcade Master",
+    description: "Play mini-games across at least 3 Kenyan languages",
+    icon: "🕹️",
+    xpReward: 150,
+    category: "games",
+    condition: (p) => {
+      if (typeof window === "undefined" || typeof localStorage === "undefined") {
+        return (p.gamesPlayed || 0) >= 15;
+      }
+      try {
+        let langsWithGames = (p.gamesPlayed || 0) > 0 ? 1 : 0;
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("kh-learn-progress-") && k !== `kh-learn-progress-${p.languageId}`) {
+            const raw = localStorage.getItem(k);
+            if (raw && (Number(JSON.parse(raw)?.gamesPlayed) || 0) > 0) {
+              langsWithGames += 1;
+            }
+          }
+        }
+        return langsWithGames >= 3;
+      } catch {
+        return (p.gamesPlayed || 0) >= 15;
+      }
+    },
   },
   {
     id: "daily-champion",
@@ -490,7 +611,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     category: "mastery",
     condition: (p) => {
       const ownCount = Object.values(p.skillLevels || {}).filter((lvl) => lvl >= 1).length;
-      if (typeof window === "undefined") return ownCount >= 20;
+      if (typeof window === "undefined" || typeof localStorage === "undefined") return ownCount >= 20;
       try {
         let total = ownCount;
         for (let i = 0; i < localStorage.length; i++) {

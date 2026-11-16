@@ -51,19 +51,24 @@ export function cleanExerciseText(text: string): string {
     .replace(/\[.*?\]/g, '')
     .replace(/\{.*?\}/g, '')
     .replace(/\(.*?\)/g, '')
+    .replace(/,\s*(?:v\.\s*[an]\.?|v\.\s*[ti]\.?|v[an]\.?|v\.?|s\.?|n\.?|adj\.?|adv\.?|prep\.?|conj\.?|interj\.?|pron\.?|num\.?)(?=\s*(?:$|[;(/]))/gi, '')
     .replace(/\s+/g, ' ')
     .trim();
   return stripped || text.replace(/„/g, '').trim();
 }
 
 /**
- * Extract the primary form (before '/' or ';') for tile/blank exercises
+ * Extract the primary form (before '/', ';', ',', or 'or'/'and' variants) for tile/blank/game exercises
  * while keeping full variants for acceptedAnswers.
  */
 export function getPrimaryForm(text: string): string {
   const cleaned = cleanExerciseText(text);
-  const primary = cleaned.split(/\s*[/;•|→—–]\s*/)[0]?.trim();
-  return primary || cleaned;
+  const withoutPl = cleaned.split(/,\s*pl\.?\s+/i)[0]?.trim() || cleaned;
+  const primary = withoutPl
+    .split(/\s*(?:[/;•|→—–]|\b(?:or|and)\b|,)\s*/i)[0]
+    ?.replace(/\.$/, '')
+    .trim();
+  return primary || withoutPl || cleaned;
 }
 
 /**
@@ -76,8 +81,10 @@ export function isCleanLexicalWordPair(rawTarget: string, rawSource: string): bo
   if (target.length < 2 || target.length > 35) return false;
   if (source.length < 2 || source.length > 55) return false;
   const both = `${target} ~~~ ${source}`;
-  if (/[:→•=><[\]{}*§|"…_]/.test(both) || /\.\./.test(both)) return false;
-  if (/^[-\d]/.test(target)) return false;
+  if (/[:→•=><[\]{}*§|"…_]/.test(both) || /(?:\.\s*){2,}/.test(both)) return false;
+  // Reject digits at start, but allow valid Bantu hyphen-prefixed verb roots like -īyā or -mēnyā
+  if (/^\d/.test(target) || /^-(?![a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]{2,})/.test(target)) return false;
+  if (/[\u0370-\u03FF\u0600-\u06FF\u1200-\u137F]/u.test(both)) return false;
   if (
     /^(Class |Stories |Study |Table |Figure |Section |Cardinals|Ordinals|Modes|Male |Female |ATR |Subj|Obj|Overt |Lexical|Idiosyncratic|Pwani |Sheng |TAM |Sing\.|Pl\.)/i.test(
       target
@@ -99,9 +106,26 @@ export function isCleanLexicalWordPair(rawTarget: string, rawSource: string): bo
 }
 
 /**
+ * Check whether a sentence pair is a clean conversational/proverbial sentence
+ * (excluding academic tables, page citations, and em-dash vocabulary definitions).
+ */
+export function isCleanSentencePair(rawTarget: string, rawSource: string): boolean {
+  const target = cleanExerciseText(rawTarget).trim();
+  const source = cleanExerciseText(rawSource).trim();
+  if (target.length < 5 || target.length > 140) return false;
+  if (source.length < 5 || source.length > 160) return false;
+  if (target.split(/\s+/).length < 2 || source.split(/\s+/).length < 2) return false;
+  const both = `${target} ~~~ ${source}`;
+  if (/[:→•=><[\]{}*§|"_]/.test(both) || /(?:\.\s*){2,}/.test(both)) return false;
+  if (/\s[—–]\s/.test(target)) return false;
+  if (/\b(vs\.?|pp?\.\s*\d|fn\.\s*\d|Ex\.\s*\d|Ch\.\s*[IVX\d]|Tableau\b|SyllCon|Vide\b|cf\.|s\.v\.)/i.test(both)) {
+    return false;
+  }
+  return true;
+}
+
+/**
  * Build a non-leaking hint for translate_to_target exercises.
- * If word.pronunciation is distinct from the target word, return it;
- * otherwise return a masked structural hint so the answer is never given away.
  */
 function buildNonLeakingHint(word: WordPair): string {
   const primaryTarget = getPrimaryForm(word.target);
@@ -116,7 +140,13 @@ function buildNonLeakingHint(word: WordPair): string {
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '');
 
-  if (word.pronunciation && normPron && normPron !== normTarget) {
+  if (
+    word.pronunciation &&
+    normPron &&
+    normPron !== normTarget &&
+    !normPron.includes(normTarget) &&
+    !normTarget.includes(normPron)
+  ) {
     return word.pronunciation;
   }
 
@@ -125,6 +155,17 @@ function buildNonLeakingHint(word: WordPair): string {
     return `${clean.length} letters`;
   }
   return `Starts with "${clean.slice(0, 2)}…" (${clean.length} letters)`;
+}
+
+function getBaseStemKey(str: string): string {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/^to\s+/i, '')
+    .replace(/[^a-z0-9]/g, '')
+    .slice(0, 6);
 }
 
 function isValidExercise(exercise: Exercise): boolean {
@@ -139,49 +180,92 @@ function isValidExercise(exercise: Exercise): boolean {
 
   if (!exercise.correctAnswer.trim()) return false;
 
-  if (exercise.type === 'multiple_choice') {
-    if (!exercise.options || !exercise.options.includes(exercise.correctAnswer)) return false;
+  if (exercise.type === 'multiple_choice' || (exercise.type === 'fill_blank' && exercise.options)) {
+    if (!exercise.options || exercise.options.length < 2 || !exercise.options.includes(exercise.correctAnswer)) {
+      return false;
+    }
     return new Set(exercise.options.map(option => option.toLowerCase().trim())).size === exercise.options.length;
   }
 
-  if (exercise.type === 'reorder') {
+  if (exercise.type === 'reorder' || exercise.type === 'word_bank') {
     return Boolean(exercise.wordTiles?.length && exercise.wordTiles.length > 1);
   }
 
   return true;
 }
 
-/** Get distractors from the same skill's word list */
+/**
+ * Get distractors matching the target word's word-count tier and deduplicated by base stem
+ * so 10-word sentences are never paired with 1-word distractors and synonyms never collide.
+ */
 function getDistractors(
   correctWord: WordPair,
   allWords: WordPair[],
   count: number,
   field: 'target' | 'source'
 ): string[] {
-  const correctPrimary = getPrimaryForm(correctWord[field]).toLowerCase();
-  const seen = new Set<string>([correctPrimary]);
+  const correctVal = getPrimaryForm(correctWord[field]).trim();
+  const correctLower = correctVal.toLowerCase();
+  const correctStem = getBaseStemKey(correctVal);
+  const correctWordCount = correctVal.split(/\s+/).length;
+
+  const seenExact = new Set<string>([correctLower]);
+  const seenStems = new Set<string>([correctStem]);
   const distractors: string[] = [];
+
+  // Pass 1: Strict word-count proximity (difference <= 2 words) + distinct stem
   for (const w of shuffle(allWords)) {
     const val = getPrimaryForm(w[field]).trim();
+    if (!val) continue;
     const key = val.toLowerCase();
-    if (val && !seen.has(key)) {
-      seen.add(key);
+    const stem = getBaseStemKey(val);
+    const wc = val.split(/\s+/).length;
+    if (!seenExact.has(key) && !seenStems.has(stem) && Math.abs(wc - correctWordCount) <= 2) {
+      seenExact.add(key);
+      seenStems.add(stem);
+      distractors.push(val);
+      if (distractors.length >= count) return distractors;
+    }
+  }
+
+  // Pass 2: Distinct stem regardless of length
+  for (const w of shuffle(allWords)) {
+    const val = getPrimaryForm(w[field]).trim();
+    if (!val) continue;
+    const key = val.toLowerCase();
+    const stem = getBaseStemKey(val);
+    if (!seenExact.has(key) && !seenStems.has(stem)) {
+      seenExact.add(key);
+      seenStems.add(stem);
+      distractors.push(val);
+      if (distractors.length >= count) return distractors;
+    }
+  }
+
+  // Pass 3: Any distinct string
+  for (const w of shuffle(allWords)) {
+    const val = getPrimaryForm(w[field]).trim();
+    if (!val) continue;
+    const key = val.toLowerCase();
+    if (!seenExact.has(key)) {
+      seenExact.add(key);
       distractors.push(val);
       if (distractors.length >= count) break;
     }
   }
+
   return distractors;
 }
 
 /* ─── Exercise Generators ──────────────────────────── */
 
-function generateMultipleChoice(word: WordPair, allWords: WordPair[]): Exercise {
+function generateMultipleChoice(word: WordPair, pool: WordPair[]): Exercise {
   const toEnglish = Math.random() > 0.5;
   const primaryTarget = getPrimaryForm(word.target);
   const primarySource = getPrimaryForm(word.source);
   const distractors = getDistractors(
     word,
-    allWords,
+    pool,
     3,
     toEnglish ? 'source' : 'target'
   );
@@ -204,7 +288,7 @@ function generateTranslateToTarget(word: WordPair): Exercise {
   const variants = new Set<string>();
   if (primaryTarget) variants.add(primaryTarget);
   variants.add(word.target.toLowerCase().replace(/[?!.,]/g, '').trim());
-  for (const part of cleanExerciseText(word.target).split(/\s*[/;,]\s*/)) {
+  for (const part of cleanExerciseText(word.target).split(/\s*(?:[/;,]|\b(?:or|and)\b)\s*/i)) {
     const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
     if (cleaned) variants.add(cleaned);
   }
@@ -225,7 +309,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
   const variants = new Set<string>();
   if (primarySource) variants.add(primarySource);
   variants.add(cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim());
-  for (const part of cleanExerciseText(word.source).split(/\s*[/;,]\s*/)) {
+  for (const part of cleanExerciseText(word.source).split(/\s*(?:[/;,]|\b(?:or|and)\b)\s*/i)) {
     const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
     if (cleaned) variants.add(cleaned);
   }
@@ -240,12 +324,11 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
   };
 }
 
-function generateFillBlank(word: WordPair, allWords: WordPair[], sentences: WordPair[] = []): Exercise {
+function generateFillBlank(word: WordPair, wordPool: WordPair[], sentences: WordPair[] = []): Exercise {
   const primaryTarget = getPrimaryForm(word.target);
-  const distractors = getDistractors(word, allWords, 3, 'target');
+  const distractors = getDistractors(word, wordPool, 3, 'target');
   const options = shuffle([primaryTarget, ...distractors]);
 
-  // Try to contextualize inside an authentic sentence from the skill if the target word appears in one
   const escapedTarget = primaryTarget.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const wordRegex = new RegExp(`\\b${escapedTarget}\\b`, 'i');
   const matchingSentence = sentences.find(
@@ -275,14 +358,19 @@ function generateFillBlank(word: WordPair, allWords: WordPair[], sentences: Word
 function generateMatchPairs(words: WordPair[]): Exercise {
   const seenLeft = new Set<string>();
   const seenRight = new Set<string>();
+  const seenRightStems = new Set<string>();
   const pairs: { left: string; right: string }[] = [];
   for (const w of shuffle(words)) {
     const left = getPrimaryForm(w.target).trim();
     const right = getPrimaryForm(w.source).trim();
     if (!left || !right) continue;
-    if (seenLeft.has(left.toLowerCase()) || seenRight.has(right.toLowerCase())) continue;
+    const rStem = getBaseStemKey(right);
+    if (seenLeft.has(left.toLowerCase()) || seenRight.has(right.toLowerCase()) || seenRightStems.has(rStem)) {
+      continue;
+    }
     seenLeft.add(left.toLowerCase());
     seenRight.add(right.toLowerCase());
+    seenRightStems.add(rStem);
     pairs.push({ left, right });
     if (pairs.length >= 5) break;
   }
@@ -300,7 +388,6 @@ function generateWordBank(word: WordPair, allWords: WordPair[] = []): Exercise {
   const sourceWords = cleanSource.split(/\s+/).filter(Boolean);
   const sourceLowerSet = new Set(sourceWords.map((s) => s.toLowerCase()));
 
-  // Draw distractors from other vocabulary items in the same skill first
   const skillTokens = Array.from(
     new Set(
       allWords
@@ -326,11 +413,11 @@ function generateWordBank(word: WordPair, allWords: WordPair[] = []): Exercise {
   };
 }
 
-function generateReorder(word: WordPair, allWords: WordPair[] = []): Exercise {
+function generateReorder(word: WordPair, wordPool: WordPair[] = []): Exercise {
   const cleanTarget = getPrimaryForm(word.target).replace(/[?!.,]/g, '').trim();
   const targetWords = cleanTarget.split(/\s+/).filter(Boolean);
   if (targetWords.length < 2) {
-    return generateMultipleChoice(word, allWords.length >= 2 ? allWords : [word]);
+    return generateMultipleChoice(word, wordPool.length >= 2 ? wordPool : [word]);
   }
 
   return {
@@ -345,13 +432,13 @@ function generateReorder(word: WordPair, allWords: WordPair[] = []): Exercise {
 /* ─── Main Generator ───────────────────────────────── */
 
 const EXERCISE_WEIGHTS: { type: ExerciseType; weight: number; minWords: number }[] = [
-  { type: 'multiple_choice', weight: 3, minWords: 4 },
-  { type: 'translate_to_target', weight: 1.5, minWords: 1 },
-  { type: 'translate_to_english', weight: 1.5, minWords: 1 },
-  { type: 'fill_blank', weight: 2, minWords: 4 },
-  { type: 'match_pairs', weight: 1, minWords: 4 },
-  { type: 'word_bank', weight: 1.2, minWords: 1 },
-  { type: 'reorder', weight: 1.2, minWords: 1 },
+  { type: 'multiple_choice', weight: 2.5, minWords: 4 },
+  { type: 'translate_to_target', weight: 1.6, minWords: 1 },
+  { type: 'translate_to_english', weight: 1.6, minWords: 1 },
+  { type: 'fill_blank', weight: 2.0, minWords: 4 },
+  { type: 'match_pairs', weight: 1.2, minWords: 4 },
+  { type: 'word_bank', weight: 1.4, minWords: 1 },
+  { type: 'reorder', weight: 1.4, minWords: 1 },
 ];
 
 export function generateExercises(
@@ -360,17 +447,23 @@ export function generateExercises(
 ): Exercise[] {
   const filteredWords = skill.words.filter((w) => isCleanLexicalWordPair(w.target, w.source));
   const allWords = filteredWords.length >= 4 ? filteredWords : [...skill.words];
+
+  // Filter sentences strictly through isCleanSentencePair so academic/truncated sentences never leak
   const sentenceItems: WordPair[] = (skill.sentences || [])
-    .filter((s) => s.target && s.source && getPrimaryForm(s.target).split(/\s+/).length >= 2)
+    .filter((s) => s.target && s.source && isCleanSentencePair(s.target, s.source))
     .map((s) => ({
       target: s.target,
       source: s.source,
       ...(s.pronunciation ? { pronunciation: s.pronunciation } : {}),
     }));
+
   const allItems = [...allWords, ...sentenceItems];
 
-  const authoredExercises = (skill.authoredExercises || []).filter(isValidExercise);
-  const exercises = authoredExercises.slice(0, count);
+  // Cap static authoredExercises to at most half the lesson (~7-8 items) and shuffle them
+  // so every Crown Level 1..5 mixes in dynamic typing, match_pairs, and word_bank exercises.
+  const validAuthored = shuffle((skill.authoredExercises || []).filter(isValidExercise));
+  const authoredCap = allItems.length >= 4 ? Math.min(8, Math.ceil(count * 0.5)) : count;
+  const exercises = validAuthored.slice(0, authoredCap);
   const usedExercises = new Set(
     exercises.map(exercise => `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`)
   );
@@ -380,7 +473,7 @@ export function generateExercises(
   const eligible = EXERCISE_WEIGHTS.filter((e) => allItems.length >= e.minWords);
   const totalWeight = eligible.reduce((s, e) => s + e.weight, 0);
 
-  const maxAttempts = (count - exercises.length) * 4;
+  const maxAttempts = (count - exercises.length) * 5;
   let attempts = 0;
 
   while (exercises.length < count && attempts < maxAttempts) {
@@ -396,17 +489,23 @@ export function generateExercises(
       }
     }
 
-    const pool =
-      (selectedType === 'reorder' || selectedType === 'word_bank') && sentenceItems.length > 0
-        ? [...sentenceItems, ...allWords]
-        : allItems;
+    // Separate lexical pool vs sentence pool so 15-word sentences are never paired against 1-word distractors
+    const useSentencePool =
+      (selectedType === 'reorder' || selectedType === 'word_bank') && sentenceItems.length > 0;
+    const pool = useSentencePool ? [...sentenceItems, ...allWords] : allWords.length >= 4 ? allWords : allItems;
     const word = pickOne(pool);
+    const sameTierPool =
+      getPrimaryForm(word.target).split(/\s+/).length >= 4 && sentenceItems.length >= 4
+        ? sentenceItems
+        : allWords.length >= 4
+        ? allWords
+        : allItems;
 
     let exercise: Exercise | null = null;
     try {
       switch (selectedType) {
         case 'multiple_choice':
-          exercise = generateMultipleChoice(word, allItems);
+          exercise = generateMultipleChoice(word, sameTierPool);
           break;
         case 'translate_to_target':
           exercise = generateTranslateToTarget(word);
@@ -415,7 +514,7 @@ export function generateExercises(
           exercise = generateTranslateToEnglish(word);
           break;
         case 'fill_blank':
-          exercise = generateFillBlank(word, allItems, sentenceItems);
+          exercise = generateFillBlank(word, allWords.length >= 4 ? allWords : sameTierPool, sentenceItems);
           break;
         case 'match_pairs':
           exercise = generateMatchPairs(allWords.length >= 2 ? allWords : allItems);
@@ -427,7 +526,7 @@ export function generateExercises(
           break;
         case 'reorder':
           if (getPrimaryForm(word.target).split(/\s+/).length >= 2) {
-            exercise = generateReorder(word, allItems);
+            exercise = generateReorder(word, sameTierPool);
           }
           break;
       }
@@ -443,21 +542,19 @@ export function generateExercises(
     }
   }
 
-  return exercises.sort((a, b) => {
-    const order: Record<ExerciseType, number> = {
-      multiple_choice: 0,
-      tap_what_you_hear: 1,
-      fill_blank: 2,
-      match_pairs: 3,
-      word_bank: 4,
-      listen_type: 5,
-      reorder: 6,
-      translate_to_english: 7,
-      translate_to_target: 8,
-      speak: 9,
-    };
-    return (order[a.type] ?? 5) - (order[b.type] ?? 5);
-  });
+  // Smooth pedagogical pacing: place 2 warm-up recognition questions first, then interleave remaining types
+  const recognition = exercises.filter((e) => e.type === 'multiple_choice' || e.type === 'fill_blank');
+  const activeRecall = exercises.filter((e) => e.type !== 'multiple_choice' && e.type !== 'fill_blank');
+  const warmup = recognition.slice(0, 2);
+  const restRec = recognition.slice(2);
+  const interleaved: Exercise[] = [...warmup];
+  let iRec = 0;
+  let iAct = 0;
+  while (iRec < restRec.length || iAct < activeRecall.length) {
+    if (iAct < activeRecall.length) interleaved.push(activeRecall[iAct++]);
+    if (iRec < restRec.length) interleaved.push(restRec[iRec++]);
+  }
+  return interleaved;
 }
 
 /* ─── Answer Checking ──────────────────────────────── */
@@ -486,6 +583,9 @@ export function checkAnswerWithFeedback(
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[ωΩ]/g, 'o')
+      .replace(/β/g, 'v')
+      .replace(/χ/g, 'sh')
+      .replace(/þ/g, 'th')
       .replace(/ñ/g, 'ng')
       .toLowerCase()
       .replace(/\(.*?\)/g, '')
@@ -515,12 +615,10 @@ export function checkAnswerWithFeedback(
     return { correct: true, almostCorrect: false, canonicalAnswer };
   }
 
-  // Diacritic-insensitive or phonetic alias match (e.g. typing "mundu" for "mũndũ" or "kiu" for "kĩũ")
   if (acceptedBase.includes(answerBase)) {
     return { correct: true, almostCorrect: true, canonicalAnswer };
   }
 
-  // Typo tolerance on longer answers
   const fuzzyMatch = acceptedBase.some((correct) => {
     const distance = levenshtein(correct, answerBase);
     if (correct.length >= 10) return distance <= 2;

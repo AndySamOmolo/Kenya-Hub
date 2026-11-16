@@ -6,6 +6,7 @@ import { Copy, Check, Share2, X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import payeData from "@/data/paye-bands.json";
+import housingLevyData from "@/data/housing-levy-rates.json";
 
 const tool = TOOLS.find((t) => t.slug === "paye-calculator")!;
 
@@ -730,6 +731,54 @@ export default function PAYECalculatorPage() {
               </tbody>
             </table>
           </div>
+        </div>
+
+        {/* 2026 Pre-Calculated Net Pay Benchmark Table & Affordable Housing Levy Schedule */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4 mt-6">
+          <div>
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              2026 Kenya Gross-to-Net Salary Benchmark Table (SHIF 2.75%, NSSF 6%, Housing Levy {housingLevyData.employeeRate}%)
+            </h2>
+            <p className="text-xs sm:text-sm text-text-secondary mt-1">
+              Quick reference net take-home pay across common Kenyan monthly salary bands under the {housingLevyData.legalBasis}.
+            </p>
+          </div>
+          <div className="table-responsive">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Gross Salary (KES)</th>
+                  <th className="text-right">NSSF (6%)</th>
+                  <th className="text-right">SHA / SHIF (2.75%)</th>
+                  <th className="text-right">Housing Levy (1.5%)</th>
+                  <th className="text-right">Net PAYE Tax</th>
+                  <th className="text-right">Net Take-Home Pay</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { gross: 24000, nssf: 1440, shif: 660, ahl: 360, paye: 0, net: 21540 },
+                  { gross: 35000, nssf: 2100, shif: 963, ahl: 525, paye: 1853, net: 29559 },
+                  { gross: 50000, nssf: 3000, shif: 1375, ahl: 750, paye: 5846, net: 39029 },
+                  { gross: 75000, nssf: 4500, shif: 2063, ahl: 1125, paye: 12582, net: 54730 },
+                  { gross: 100000, nssf: 6000, shif: 2750, ahl: 1500, paye: 19319, net: 70431 },
+                  { gross: 150000, nssf: 6480, shif: 4125, ahl: 2250, paye: 33538, net: 103607 },
+                  { gross: 250000, nssf: 6480, shif: 6875, ahl: 3750, paye: 62263, net: 170632 },
+                  { gross: 500000, nssf: 6480, shif: 13750, ahl: 7500, paye: 134076, net: 338194 },
+                ].map((row) => (
+                  <tr key={row.gross}>
+                    <td className="font-semibold text-text-primary">KES {row.gross.toLocaleString()}</td>
+                    <td className="text-right">KES {row.nssf.toLocaleString()}</td>
+                    <td className="text-right">KES {row.shif.toLocaleString()}</td>
+                    <td className="text-right">KES {row.ahl.toLocaleString()}</td>
+                    <td className="text-right text-kenya-red-light">KES {row.paye.toLocaleString()}</td>
+                    <td className="text-right font-bold text-kenya-green-light">KES {row.net.toLocaleString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted">{housingLevyData.taxReliefDescription}</p>
         </div>
       </div>
     </ToolShell>

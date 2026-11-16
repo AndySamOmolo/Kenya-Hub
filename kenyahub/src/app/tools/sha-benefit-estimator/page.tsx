@@ -4,6 +4,8 @@ import { useState } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import shaData from "@/data/sha-benefit-data.json";
+import vaccinationData from "@/data/vaccination-schedule.json";
+import nutritionData from "@/data/kenyan-foods-nutrition.json";
 
 const tool = TOOLS.find((t) => t.slug === "sha-benefit-estimator")!;
 
@@ -83,6 +85,55 @@ export default function ShaBenefitEstimatorPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* MOH KEPI Child Immunization Schedule & KEMRI Kenyan Foods Nutrition Guide */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6">
+          <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              MOH KEPI Child Vaccination Schedule (Covered Free at Level 2–6 Facilities)
+            </h2>
+            <div className="space-y-2 max-h-80 overflow-y-auto pr-1">
+              {vaccinationData.vaccinationSchedule.map((stage) => (
+                <div key={stage.age} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-xs">
+                  <p className="font-bold text-gold mb-1">{stage.age}</p>
+                  <p className="text-text-secondary">
+                    {stage.vaccines.map((v) => `${v.name} (${v.protectsAgainst})`).join(" • ")}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-bg-card border border-border rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              KEMRI &amp; FAO Kenyan Staple Foods Nutrition Table (per 100g)
+            </h2>
+            <div className="table-responsive max-h-80 overflow-y-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Kenyan Food</th>
+                    <th className="text-right">kcal</th>
+                    <th className="text-right">Protein</th>
+                    <th className="text-right">Carbs</th>
+                    <th className="text-right">Fibre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {nutritionData.foods.slice(0, 12).map((food) => (
+                    <tr key={food.name}>
+                      <td className="font-medium text-text-primary">{food.name}</td>
+                      <td className="text-right">{food.calories}</td>
+                      <td className="text-right">{food.protein}g</td>
+                      <td className="text-right">{food.carbs}g</td>
+                      <td className="text-right">{food.fibre}g</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

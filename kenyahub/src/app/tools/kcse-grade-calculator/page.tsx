@@ -5,6 +5,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
+import kcseRankingsData from "@/data/kcse-rankings.json";
 
 const tool = TOOLS.find((t) => t.slug === "kcse-grade-calculator")!;
 
@@ -242,6 +243,37 @@ export default function KCSEGradeCalculatorPage() {
                     </tr>
                   );
                 })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* KNEC National Secondary Schools Benchmark Reference */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-3 mt-6">
+          <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+            KNEC National Secondary Schools Mean Score Benchmark ({kcseRankingsData.year})
+          </h2>
+          <div className="table-responsive">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>School Name</th>
+                  <th>County</th>
+                  <th className="text-right">Mean Score</th>
+                  <th className="text-right">A / A- Grades</th>
+                </tr>
+              </thead>
+              <tbody>
+                {kcseRankingsData.schools.slice(0, 10).map((sch) => (
+                  <tr key={sch.rank}>
+                    <td className="font-mono text-gold font-bold">#{sch.rank}</td>
+                    <td className="font-semibold text-text-primary">{sch.name}</td>
+                    <td>{sch.county}</td>
+                    <td className="text-right font-mono">{sch.meanScore.toFixed(2)}</td>
+                    <td className="text-right font-bold text-kenya-green-light">{sch.aGrades}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

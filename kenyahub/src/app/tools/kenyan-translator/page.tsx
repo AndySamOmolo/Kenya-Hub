@@ -84,16 +84,29 @@ export default function KenyanTranslatorPage() {
     setIsLoadingDicts(false);
   }, []);
 
-  // Load required dictionaries on demand
+  // Load required dictionaries on demand with debounced progressive loading to protect mobile INP
   useEffect(() => {
     const toLoad = new Set<string>(["swahili"]);
     if (sourceLanguage !== "english") toLoad.add(sourceLanguage);
     if (targetLanguage !== "english" && targetLanguage !== "all") toLoad.add(targetLanguage);
+    ensureDictionariesLoaded(Array.from(toLoad));
 
     if (targetLanguage === "all" && searchQuery.trim().length > 0) {
-      ALL_DICT_METAS.forEach((d) => toLoad.add(d.languageId));
+      const priorityIds = ["swahili", "kikuyu", "luo", "kalenjin", "luhya", "kamba"];
+      const timer1 = setTimeout(() => {
+        ensureDictionariesLoaded(priorityIds);
+      }, 150);
+      const timer2 = setTimeout(() => {
+        const remainingIds = ALL_DICT_METAS.map((d) => d.languageId).filter(
+          (id) => !priorityIds.includes(id)
+        );
+        ensureDictionariesLoaded(remainingIds);
+      }, 420);
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
     }
-    ensureDictionariesLoaded(Array.from(toLoad));
   }, [sourceLanguage, targetLanguage, searchQuery, viewMode, ensureDictionariesLoaded]);
 
   // Load browse target or favorites dictionaries on demand
@@ -649,7 +662,7 @@ export default function KenyanTranslatorPage() {
                 </div>
 
                 {searchResults.length === 0 && !isLoadingDicts && (
-                  <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
+                  <div data-adsense-pause="true" className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
                     <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-8 h-8 text-text-muted" /></div>
                     <p className="text-sm font-medium text-text-primary mb-1">No translations found</p>
                     {fuzzySuggestions.length > 0 && (
@@ -1152,7 +1165,7 @@ export default function KenyanTranslatorPage() {
             </div>
 
             {favorites.length === 0 ? (
-              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
+              <div data-adsense-pause="true" className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 text-center">
                 <p className="text-sm font-semibold text-text-primary mb-1">No Saved Favorites Yet</p>
                 <p className="text-xs text-text-muted max-w-md mx-auto mb-3">
                   Tap the heart icon on any dictionary card while translating or browsing categories to build your personal Kenyan vocabulary list.
@@ -1263,6 +1276,7 @@ export default function KenyanTranslatorPage() {
       {/* ═══════════════════════════════════════ */}
       {isContributeOpen && (
         <div
+          data-adsense-pause="true"
           className="fixed inset-0 z-50 flex items-center justify-center bg-kenya-black/80 backdrop-blur-sm p-4 overflow-y-auto"
           onClick={(e) => {
             if (e.target === e.currentTarget) closeContributeModal();

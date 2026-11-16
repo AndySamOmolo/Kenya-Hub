@@ -37,38 +37,134 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "culturalNote": "In Rendille pastoral society around Marsabit and the Kaisut Desert, the 'gob' (clan settlement) centers on the sacred 'naabo' enclosure where elders offer evening prayers for the camels (gaal) and peace (nabad).",
         "words": [
           {
-            "target": "Nabad! / Bariya? (resp. Waa nabad!)",
-            "source": "Peace! / Good morning? (It is peace!)",
+            "target": "Nabad!",
+            "source": "Peace!",
             "pronunciation": "na-bad / ba-ri-ya",
             "hint": "Af-Rendille salutation"
           },
           {
-            "target": "gaal / ayyu / oor / nyirakh",
-            "source": "Camels (collective) / She-camel / Burden camel / Camel calf",
+            "target": "Bariya? (resp. Waa nabad!)",
+            "source": "Good morning? (It is peace!)",
+            "pronunciation": "na-bad / ba-ri-ya",
+            "hint": "Af-Rendille salutation"
+          },
+          {
+            "target": "gaal",
+            "source": "Camels (collective)",
             "pronunciation": "gaal / ayyu / oor / nyi-rakh",
             "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
           },
           {
-            "target": "gob / naabo / min",
-            "source": "Clan settlement / Sacred ritual enclosure / House",
+            "target": "ayyu",
+            "source": "She-camel",
+            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
+          },
+          {
+            "target": "oor",
+            "source": "Burden camel",
+            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
+          },
+          {
+            "target": "nyirakh",
+            "source": "Camel calf",
+            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
+          },
+          {
+            "target": "gob",
+            "source": "Clan settlement",
             "pronunciation": "gob / naa-bo / min",
             "hint": "Hobley (1910, p. 156)"
           },
           {
-            "target": "biyo / caano / soor (huun)",
-            "source": "Water / Milk / Food",
+            "target": "naabo",
+            "source": "Sacred ritual enclosure",
+            "pronunciation": "gob / naa-bo / min",
+            "hint": "Hobley (1910, p. 156)"
+          },
+          {
+            "target": "min",
+            "source": "House",
+            "pronunciation": "gob / naa-bo / min",
+            "hint": "Hobley (1910, p. 156)"
+          },
+          {
+            "target": "biyo",
+            "source": "Water",
             "pronunciation": "bi-yo / caa-no / soor",
             "hint": "Hobley (1910, p. 156)"
           },
           {
-            "target": "tor / gashan / bilau / biso / laho",
-            "source": "Spear / Shield / Sword-knife / Bow / Arrow",
+            "target": "caano",
+            "source": "Milk",
+            "pronunciation": "bi-yo / caa-no / soor",
+            "hint": "Hobley (1910, p. 156)"
+          },
+          {
+            "target": "soor (huun)",
+            "source": "Food",
+            "pronunciation": "bi-yo / caa-no / soor",
+            "hint": "Hobley (1910, p. 156)"
+          },
+          {
+            "target": "tor",
+            "source": "Spear",
             "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
-            "target": "bahasi / kabih / arbah / worsis / nyugul",
-            "source": "Lion / Leopard / Elephant / Rhinoceros / Ostrich",
+            "target": "gashan",
+            "source": "Shield",
+            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "hint": "Hobley (1910, p. 156) Rendille material culture"
+          },
+          {
+            "target": "bilau",
+            "source": "Sword-knife",
+            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "hint": "Hobley (1910, p. 156) Rendille material culture"
+          },
+          {
+            "target": "biso",
+            "source": "Bow",
+            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "hint": "Hobley (1910, p. 156) Rendille material culture"
+          },
+          {
+            "target": "laho",
+            "source": "Arrow",
+            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "hint": "Hobley (1910, p. 156) Rendille material culture"
+          },
+          {
+            "target": "bahasi",
+            "source": "Lion",
+            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "hint": "Hobley (1910, p. 157) northern wildlife"
+          },
+          {
+            "target": "kabih",
+            "source": "Leopard",
+            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "hint": "Hobley (1910, p. 157) northern wildlife"
+          },
+          {
+            "target": "arbah",
+            "source": "Elephant",
+            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "hint": "Hobley (1910, p. 157) northern wildlife"
+          },
+          {
+            "target": "worsis",
+            "source": "Rhinoceros",
+            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "hint": "Hobley (1910, p. 157) northern wildlife"
+          },
+          {
+            "target": "nyugul",
+            "source": "Ostrich",
             "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
@@ -118,63 +214,83 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Nabad! / Bariya? (resp. Waa nabad!)\" in Rendille?",
-            "correctAnswer": "Peace! / Good morning? (It is peace!)",
+            "prompt": "What is the English meaning of \"Nabad!\" in Rendille?",
+            "correctAnswer": "Peace!",
             "options": [
-              "Camels (collective) / She-camel / Burden camel / Camel calf",
-              "Clan settlement / Sacred ritual enclosure / House",
-              "Water / Milk / Food",
-              "Peace! / Good morning? (It is peace!)"
+              "Camels",
+              "Clan settlement",
+              "Peace!",
+              "Water"
             ],
-            "hint": "Af-Rendille salutation"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"gaal / ayyu / oor / nyirakh\" in Rendille?",
-            "correctAnswer": "Camels (collective) / She-camel / Burden camel / Camel calf",
-            "options": [
-              "Clan settlement / Sacred ritual enclosure / House",
-              "Water / Milk / Food",
-              "Camels (collective) / She-camel / Burden camel / Camel calf",
-              "Peace! / Good morning? (It is peace!)"
-            ],
-            "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"gob / naabo / min\" in Rendille?",
-            "correctAnswer": "Clan settlement / Sacred ritual enclosure / House",
-            "options": [
-              "Water / Milk / Food",
-              "Clan settlement / Sacred ritual enclosure / House",
+            "hint": "Af-Rendille salutation",
+            "acceptedAnswers": [
               "Peace! / Good morning? (It is peace!)",
-              "Camels (collective) / She-camel / Burden camel / Camel calf"
-            ],
-            "hint": "Hobley (1910, p. 156)"
+              "Peace!"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Clan settlement / Sacred ritual enclosure / House\" in Rendille?",
-            "correctAnswer": "gob / naabo / min",
+            "prompt": "What is the English meaning of \"gaal\" in Rendille?",
+            "correctAnswer": "Camels",
             "options": [
-              "gob / naabo / min",
-              "Nabad! / Bariya? (resp. Waa nabad!)",
-              "gaal / ayyu / oor / nyirakh",
-              "biyo / caano / soor (huun)"
+              "Camels",
+              "Clan settlement",
+              "Water",
+              "Peace!"
             ],
-            "hint": "gohb / nah-boh / meen"
+            "hint": "Hobley (1910, p. 156) Rendille camel lexicon",
+            "acceptedAnswers": [
+              "Camels (collective) / She-camel / Burden camel / Camel calf",
+              "Camels"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Water / Milk / Food\" in Rendille?",
-            "correctAnswer": "biyo / caano / soor (huun)",
+            "prompt": "What is the English meaning of \"gob\" in Rendille?",
+            "correctAnswer": "Clan settlement",
             "options": [
-              "Nabad! / Bariya? (resp. Waa nabad!)",
-              "gaal / ayyu / oor / nyirakh",
-              "gob / naabo / min",
-              "biyo / caano / soor (huun)"
+              "Clan settlement",
+              "Water",
+              "Peace!",
+              "Camels"
             ],
-            "hint": "bee-yoh / ah-noh / sohr"
+            "hint": "Hobley (1910, p. 156)",
+            "acceptedAnswers": [
+              "Clan settlement / Sacred ritual enclosure / House",
+              "Clan settlement"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Clan settlement\" in Rendille?",
+            "correctAnswer": "gob",
+            "options": [
+              "gob",
+              "Nabad!",
+              "gaal",
+              "biyo"
+            ],
+            "hint": "gohb / nah-boh / meen",
+            "acceptedAnswers": [
+              "gob / naabo / min",
+              "gob"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Water\" in Rendille?",
+            "correctAnswer": "biyo",
+            "options": [
+              "Nabad!",
+              "gaal",
+              "gob",
+              "biyo"
+            ],
+            "hint": "bee-yoh / ah-noh / sohr",
+            "acceptedAnswers": [
+              "biyo / caano / soor (huun)",
+              "biyo"
+            ]
           },
           {
             "type": "match_pairs",
@@ -201,15 +317,19 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Rendille term for \"Spear / Shield / Sword-knife / Bow / Arrow\": ___",
-            "correctAnswer": "tor / gashan / bilau / biso / laho",
+            "prompt": "Complete the Rendille term for \"Spear\": ___",
+            "correctAnswer": "tor",
             "options": [
-              "Nabad! / Bariya? (resp. Waa nabad!)",
-              "gaal / ayyu / oor / nyirakh",
-              "gob / naabo / min",
-              "tor / gashan / bilau / biso / laho"
+              "Nabad!",
+              "gaal",
+              "tor",
+              "gob"
             ],
-            "hint": "Hobley (1910, p. 156) Rendille material culture"
+            "hint": "Hobley (1910, p. 156) Rendille material culture",
+            "acceptedAnswers": [
+              "tor / gashan / bilau / biso / laho",
+              "tor"
+            ]
           }
         ]
       }
@@ -274,8 +394,14 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
-            "target": "Waaq / Waax",
-            "source": "God / Sky",
+            "target": "Waaq",
+            "source": "God",
+            "pronunciation": "waaq / waax",
+            "hint": "Rendille Cushitic sky/Supreme Being"
+          },
+          {
+            "target": "Waax",
+            "source": "Sky",
             "pronunciation": "waaq / waax",
             "hint": "Rendille Cushitic sky/Supreme Being"
           },
@@ -288,25 +414,29 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "enyenyet — et",
-            "source": "Person — Man"
+            "source": "Person — Man."
           },
           {
             "target": "maxábal — ínam",
-            "source": "Woman — Child"
+            "source": "Woman — Child."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"enyenyet\" mean in English?",
-            "correctAnswer": "Person / People",
+            "correctAnswer": "Person",
             "options": [
-              "Person / People",
-              "Man / Husband",
-              "Woman / Wife",
-              "Child / Boy"
+              "Man",
+              "Woman",
+              "Child",
+              "Person"
             ],
-            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
+            "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles",
+            "acceptedAnswers": [
+              "Person / People",
+              "Person"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -401,11 +531,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "magáh — arab",
-            "source": "Name — Friend"
+            "source": "Name — Friend."
           },
           {
             "target": "abbo yar — abti",
-            "source": "Father's brother — Mother's brother"
+            "source": "Father's brother — Mother's brother."
           }
         ],
         "authoredExercises": [
@@ -414,10 +544,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"magáh\" mean in English?",
             "correctAnswer": "Name",
             "options": [
-              "Name",
               "Friend",
-              "Father's brother (paternal uncle)",
-              "Mother's brother (maternal uncle)"
+              "Father's brother",
+              "Name",
+              "Mother's brother"
             ],
             "hint": "Core vocabulary in Clans, Marriage & Community Life"
           },
@@ -551,8 +681,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "options": [
               "Two",
               "Three",
-              "Four",
-              "One"
+              "One",
+              "Four"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
@@ -562,8 +692,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "correctAnswer": "Two",
             "options": [
               "Three",
-              "Four",
               "Two",
+              "Four",
               "One"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
@@ -585,8 +715,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Three\" in Rendille?",
             "correctAnswer": "séyyah",
             "options": [
+              "ków",
               "séyyah",
-              "ków (adj. kaldai)",
               "láma",
               "áfar"
             ],
@@ -597,12 +727,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Four\" in Rendille?",
             "correctAnswer": "áfar",
             "options": [
-              "ków (adj. kaldai)",
+              "ków",
               "láma",
-              "séyyah",
-              "áfar"
+              "áfar",
+              "séyyah"
             ],
-            "hint": "a-far"
+            "hint": "Starts with \"áf…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -632,10 +762,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille term for \"Five\": ___",
             "correctAnswer": "chán",
             "options": [
-              "ków (adj. kaldai)",
+              "ków",
               "láma",
-              "séyyah",
-              "chán"
+              "chán",
+              "séyyah"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           }
@@ -675,11 +805,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tomón — tomón icóú kow",
-            "source": "Ten — Eleven"
+            "source": "Ten — Eleven."
           },
           {
             "target": "ków — láma",
-            "source": "One — Two"
+            "source": "One — Two."
           }
         ],
         "authoredExercises": [
@@ -688,8 +818,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"tomón\" mean in English?",
             "correctAnswer": "Ten",
             "options": [
+              "Eleven",
               "Ten",
-              "Eleven (Ten plus one)",
               "One",
               "Two"
             ],
@@ -813,11 +943,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "huun — haan",
-            "source": "Food — Milk"
+            "source": "Food — Milk."
           },
           {
             "target": "jíid — gaal",
-            "source": "Meat — Camel"
+            "source": "Meat — Camel."
           }
         ],
         "authoredExercises": [
@@ -826,12 +956,12 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"huun\" mean in English?",
             "correctAnswer": "Food",
             "options": [
-              "Food",
               "Milk",
+              "Food",
               "Meat",
-              "Camel (herd)"
+              "Camel"
             ],
-            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
+            "hint": "Starts with \"Fo…\" (4 letters)"
           },
           {
             "type": "translate_to_target",
@@ -915,11 +1045,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "óno — kullób",
-            "source": "Sheep — Smoked gourd for storing camel milk"
+            "source": "Sheep — Smoked gourd for storing camel milk."
           },
           {
             "target": "madál — huun",
-            "source": "Wooden milk container — Food"
+            "source": "Wooden milk container — Food."
           }
         ],
         "authoredExercises": [
@@ -928,10 +1058,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"óno\" mean in English?",
             "correctAnswer": "Sheep",
             "options": [
+              "Wooden milk container",
               "Sheep",
-              "Smoked gourd for storing camel milk",
-              "Wooden milk container / milking vessel",
-              "Food"
+              "Food",
+              "Smoked gourd for storing camel milk"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
@@ -1059,10 +1189,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"biche (biché)\" in Rendille?",
             "correctAnswer": "Water",
             "options": [
+              "Water",
               "Fire",
               "Sun",
-              "Moon / Month",
-              "Water"
+              "Moon"
             ],
             "hint": "Bernd Heine (1976) & Fleming (1964) — Rendille"
           },
@@ -1072,8 +1202,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "correctAnswer": "Fire",
             "options": [
               "Sun",
-              "Moon / Month",
               "Fire",
+              "Moon",
               "Water"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
@@ -1083,9 +1213,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"orráh\" in Rendille?",
             "correctAnswer": "Sun",
             "options": [
-              "Moon / Month",
-              "Sun",
+              "Moon",
               "Water",
+              "Sun",
               "Fire"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
@@ -1095,9 +1225,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Sun\" in Rendille?",
             "correctAnswer": "orráh",
             "options": [
-              "orráh",
-              "biche (biché)",
+              "biche",
               "dáb",
+              "orráh",
               "yéyah"
             ],
             "hint": "or-rah"
@@ -1107,7 +1237,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Moon / Month\" in Rendille?",
             "correctAnswer": "yéyah",
             "options": [
-              "biche (biché)",
+              "biche",
               "dáb",
               "orráh",
               "yéyah"
@@ -1142,7 +1272,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille term for \"Star\": ___",
             "correctAnswer": "bakál",
             "options": [
-              "biche (biché)",
+              "biche",
               "dáb",
               "orráh",
               "bakál"
@@ -1178,8 +1308,14 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
-            "target": "ukur / hal",
-            "source": "Mountain / Hill",
+            "target": "ukur",
+            "source": "Mountain",
+            "pronunciation": "u-kur / hal",
+            "hint": "Verified comparative entry across Kenyan cushitic corpus"
+          },
+          {
+            "target": "hal",
+            "source": "Hill",
             "pronunciation": "u-kur / hal",
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
@@ -1190,8 +1326,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
           {
-            "target": "tulluu / eel",
-            "source": "Water well / desert waterhole",
+            "target": "tulluu",
+            "source": "Water well",
+            "pronunciation": "tul-luu"
+          },
+          {
+            "target": "eel",
+            "source": "desert waterhole",
             "pronunciation": "tul-luu"
           },
           {
@@ -1205,33 +1346,42 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "pronunciation": "roob ma da'ay"
           },
           {
-            "target": "roxo / dida",
-            "source": "Lava desert / Kaisut & Chalbi plains",
+            "target": "roxo",
+            "source": "Lava desert",
+            "pronunciation": "ro-xo"
+          },
+          {
+            "target": "dida",
+            "source": "Kaisut & Chalbi plains",
             "pronunciation": "ro-xo"
           }
         ],
         "sentences": [
           {
             "target": "hárra — ibéen",
-            "source": "Earth — Night"
+            "source": "Earth — Night."
           },
           {
             "target": "sáah — ukur",
-            "source": "Day — Mountain"
+            "source": "Day — Mountain."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"hárra\" mean in English?",
-            "correctAnswer": "Earth / Ground / Sand",
+            "correctAnswer": "Earth",
             "options": [
-              "Earth / Ground / Sand",
               "Night",
               "Day",
-              "Mountain / Hill"
+              "Mountain",
+              "Earth"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Earth / Ground / Sand",
+              "Earth"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1361,34 +1511,38 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"sám\" in Rendille?",
             "correctAnswer": "Nose",
             "options": [
-              "Mouth / Language",
+              "Mouth",
+              "Nose",
               "Tooth",
-              "Tongue",
-              "Nose"
+              "Tongue"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"áf\" in Rendille?",
-            "correctAnswer": "Mouth / Language",
+            "correctAnswer": "Mouth",
             "options": [
               "Tooth",
+              "Mouth",
               "Tongue",
-              "Mouth / Language",
               "Nose"
             ],
-            "hint": "Bernd Heine (1976) & Wikipedia Rendille_language"
+            "hint": "Bernd Heine (1976) & Wikipedia Rendille_language",
+            "acceptedAnswers": [
+              "Mouth / Language",
+              "Mouth"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"íllax\" in Rendille?",
             "correctAnswer": "Tooth",
             "options": [
-              "Tongue",
               "Tooth",
+              "Tongue",
               "Nose",
-              "Mouth / Language"
+              "Mouth"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
@@ -1402,7 +1556,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
               "áf",
               "harráb"
             ],
-            "hint": "il-lax"
+            "hint": "Starts with \"íl…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
@@ -1411,8 +1565,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "options": [
               "sám",
               "áf",
-              "íllax",
-              "harráb"
+              "harráb",
+              "íllax"
             ],
             "hint": "har-rab"
           },
@@ -1445,9 +1599,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "correctAnswer": "dahán",
             "options": [
               "sám",
+              "dahán",
               "áf",
-              "íllax",
-              "dahán"
+              "íllax"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           }
@@ -1491,11 +1645,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "wáam — íl",
-            "source": "Heart — Eye"
+            "source": "Heart — Eye."
           },
           {
             "target": "nábah — matáh",
-            "source": "Ear — Head"
+            "source": "Ear — Head."
           }
         ],
         "authoredExercises": [
@@ -1504,9 +1658,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"wáam\" mean in English?",
             "correctAnswer": "Heart",
             "options": [
-              "Heart",
               "Eye",
               "Ear",
+              "Heart",
               "Head"
             ],
             "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms"
@@ -1639,10 +1793,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"urúd (a-urud)\" in Rendille?",
             "correctAnswer": "Sleep",
             "options": [
+              "Sleep",
               "Die",
               "Give",
-              "To see",
-              "Sleep"
+              "To see"
             ],
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
@@ -1673,24 +1827,28 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Give\" in Rendille?",
-            "correctAnswer": "sií (a-sii)",
+            "correctAnswer": "sií",
             "options": [
-              "sií (a-sii)",
-              "urúd (a-urud)",
-              "amút (a-amut)",
+              "urúd",
+              "sií",
+              "amút",
               "agar"
             ],
-            "hint": "sii"
+            "hint": "sii",
+            "acceptedAnswers": [
+              "sií (a-sii)",
+              "sií"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To see\" in Rendille?",
             "correctAnswer": "agar",
             "options": [
-              "urúd (a-urud)",
-              "amút (a-amut)",
-              "sií (a-sii)",
-              "agar"
+              "agar",
+              "urúd",
+              "amút",
+              "sií"
             ],
             "hint": "ah-gahr"
           },
@@ -1722,10 +1880,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille term for \"To hear\": ___",
             "correctAnswer": "dagah",
             "options": [
-              "urúd (a-urud)",
-              "amút (a-amut)",
-              "sií (a-sii)",
-              "dagah"
+              "urúd",
+              "amút",
+              "dagah",
+              "sií"
             ],
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           }
@@ -1788,11 +1946,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "irdá — ahám",
-            "source": "Go — Eat"
+            "source": "Go — Eat."
           },
           {
             "target": "agár — amút",
-            "source": "See — Die"
+            "source": "See — Die."
           }
         ],
         "authoredExercises": [
@@ -1801,10 +1959,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"irdá\" mean in English?",
             "correctAnswer": "Go",
             "options": [
-              "Go",
               "Eat",
               "See",
-              "Die"
+              "Die",
+              "Go"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
@@ -1919,11 +2077,11 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ibéen — sáah",
-            "source": "Night — Day"
+            "source": "Night — Day."
           },
           {
             "target": "gúu — maanta",
-            "source": "Year — Today"
+            "source": "Year — Today."
           }
         ],
         "authoredExercises": [
@@ -1932,10 +2090,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "What does \"ibéen\" mean in English?",
             "correctAnswer": "Night",
             "options": [
-              "Night",
               "Day",
               "Year",
-              "Today"
+              "Today",
+              "Night"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2036,25 +2194,29 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "jit — foor",
-            "source": "Road — Outlying mobile camel camp"
+            "source": "Road — Outlying mobile camel camp."
           },
           {
             "target": "harra — barri",
-            "source": "Today — Tomorrow"
+            "source": "Today — Tomorrow."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"jit\" mean in English?",
-            "correctAnswer": "Road / Path",
+            "correctAnswer": "Road",
             "options": [
-              "Road / Path",
-              "Outlying mobile camel camp",
+              "Road",
               "Today",
-              "Tomorrow"
+              "Tomorrow",
+              "Yesterday"
             ],
-            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
+            "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks",
+            "acceptedAnswers": [
+              "Road / Path",
+              "Road"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2174,7 +2336,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "waakh barid",
-            "source": "camel blessing / evening prayer assembly"
+            "source": "camel blessing / evening prayer assembly."
           }
         ],
         "authoredExercises": [
@@ -2185,8 +2347,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "options": [
               "Big",
               "Small",
-              "Almadó (new year & ritual cleansing festival)",
-              "Sorriyo (sacred camel-blessing festival)"
+              "Almadó",
+              "Sorriyo"
             ],
             "hint": "Hobley 1910 Rendille vocabulary"
           },
@@ -2218,10 +2380,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille (Afi Ren'dille) term for \"camel blessing / evening prayer assembly\": ___",
             "correctAnswer": "waakh barid",
             "options": [
-              "waakh barid",
               "her",
-              "buur (pl. buurbuur)",
-              "yar (nyirakh = young/small)"
+              "waakh barid",
+              "buur",
+              "yar"
             ],
             "hint": "Rendille Oral & Ritual Tradition — Schlee (1979)"
           }
@@ -2247,8 +2409,14 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Rendille Material Culture — Schlee (1979)"
           },
           {
-            "target": "Burkeneji / Naibor Keneji",
-            "source": "White sheep / Ariaal Rendille-Samburu section (Naibor Keneji)",
+            "target": "Burkeneji",
+            "source": "White sheep",
+            "pronunciation": "burke-ne-ji / nai-bor ke-ne-ji",
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)"
+          },
+          {
+            "target": "Naibor Keneji",
+            "source": "Ariaal Rendille-Samburu section (Naibor Keneji)",
             "pronunciation": "burke-ne-ji / nai-bor ke-ne-ji",
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)"
           },
@@ -2286,21 +2454,25 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "1. Hahat, 2. Hura hakhan, 3. Sere, 4. Kumat, 5. Ser hakhan, 6. Sere adi, 7. Sere gal.",
-            "source": "The seven days of the Randili (Rendille) pastoral week recorded by C. W. Hobley (1910, Part II, Ch. VI, p. 163)."
+            "source": "The seven days of the Randili (Rendille) pastoral week recorded by C. W. Hobley ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"daf\" in Rendille?",
-            "correctAnswer": "Woven camel-loading mat / thatch",
+            "correctAnswer": "Woven camel-loading mat",
             "options": [
-              "Woven camel-loading mat / thatch",
+              "Woven camel-loading mat",
               "Camel bell carved from wood",
-              "White sheep / Ariaal Rendille-Samburu section (Naibor Keneji)",
-              "Naroshon (Rendille clan of the Sogota & Angata plains)"
+              "White sheep",
+              "Naroshon"
             ],
-            "hint": "Rendille Material Culture — Schlee (1979)"
+            "hint": "Rendille Material Culture — Schlee (1979)",
+            "acceptedAnswers": [
+              "Woven camel-loading mat / thatch",
+              "Woven camel-loading mat"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2408,14 +2580,18 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Sere\" in Rendille?",
-            "correctAnswer": "Third day of the week (sere = day)",
+            "correctAnswer": "Third day of the week",
             "options": [
-              "Third day of the week (sere = day)",
-              "Second day of the week (day of rest / Sabbath)",
-              "First day of the week (fast and prayer day)",
-              "Tobacco"
+              "Second day of the week",
+              "First day of the week",
+              "Tobacco",
+              "Third day of the week"
             ],
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)",
+            "acceptedAnswers": [
+              "Third day of the week (sere = day)",
+              "Third day of the week"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2445,10 +2621,10 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille (Afi Ren'dille) term for \"Cooking Pot\": ___",
             "correctAnswer": "diri",
             "options": [
-              "diri",
               "birlab",
+              "diri",
               "Sere",
-              "Hura hakhan (hura = sun)"
+              "Hura hakhan"
             ],
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
@@ -2514,14 +2690,18 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"bilau\" in Rendille?",
-            "correctAnswer": "Sword / Knife",
+            "correctAnswer": "Sword",
             "options": [
-              "Sword / Knife",
+              "Sword",
               "Shield",
               "Ostrich",
               "Rhinoceros"
             ],
-            "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
+            "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon",
+            "acceptedAnswers": [
+              "Sword / Knife",
+              "Sword"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2551,201 +2731,193 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Complete the Rendille (Afi Ren'dille) term for \"Elephant\": ___",
             "correctAnswer": "arbah",
             "options": [
-              "arbah",
               "kabih",
               "bilau",
-              "gashan"
+              "gashan",
+              "arbah"
             ],
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
         ]
       },
-        {
+      {
         "id": "rendille-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Rendille (Afi Ren'dille) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976).",
         "words": [
-                  {
-                            "target": "Nabad",
-                            "source": "Hello / Peace",
-                            "pronunciation": "na-bad / soo-ri-yo"
-                  },
-                  {
-                            "target": "Goob nabad!",
-                            "source": "Peace be upon the settlement!",
-                            "pronunciation": "goob na-bad"
-                  },
-                  {
-                            "target": "Aa nabad",
-                            "source": "It is peace / I am fine",
-                            "pronunciation": "aa na-bad"
-                  },
-                  {
-                            "target": "Ma nabad?",
-                            "source": "How are you? (Is it peace?)",
-                            "pronunciation": "ma na-bad"
-                  },
-                  {
-                            "target": "Aa",
-                            "source": "Yes",
-                            "pronunciation": "aa"
-                  },
-                  {
-                            "target": "Male",
-                            "source": "No / Not",
-                            "pronunciation": "ma-le"
-                  },
-                  {
-                            "target": "huun",
-                            "source": "Food",
-                            "pronunciation": "hoon / sohr"
-                  },
-                  {
-                            "target": "haan",
-                            "source": "Milk",
-                            "pronunciation": "haan"
-                  },
-                  {
-                            "target": "jíid",
-                            "source": "Meat",
-                            "pronunciation": "jiid"
-                  },
-                  {
-                            "target": "subáh",
-                            "source": "Ghee / clarified butter",
-                            "pronunciation": "subah"
-                  }
+          {
+            "target": "Nabad",
+            "source": "Hello / Peace",
+            "pronunciation": "na-bad / soo-ri-yo"
+          },
+          {
+            "target": "Goob nabad!",
+            "source": "Peace be upon the settlement!",
+            "pronunciation": "goob na-bad"
+          },
+          {
+            "target": "Aa nabad",
+            "source": "It is peace / I am fine",
+            "pronunciation": "aa na-bad"
+          },
+          {
+            "target": "Ma nabad?",
+            "source": "How are you? (Is it peace?)",
+            "pronunciation": "ma na-bad"
+          },
+          {
+            "target": "Aa",
+            "source": "Yes",
+            "pronunciation": "aa"
+          },
+          {
+            "target": "Male",
+            "source": "No / Not",
+            "pronunciation": "ma-le"
+          },
+          {
+            "target": "huun",
+            "source": "Food",
+            "pronunciation": "hoon / sohr"
+          },
+          {
+            "target": "haan",
+            "source": "Milk",
+            "pronunciation": "haan"
+          },
+          {
+            "target": "jíid",
+            "source": "Meat",
+            "pronunciation": "jiid"
+          },
+          {
+            "target": "subáh",
+            "source": "Ghee / clarified butter",
+            "pronunciation": "subah"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Waaq a ku barikoy",
-                            "source": "Thank you / Blessing"
-                  },
-                  {
-                            "target": "Goob nabad!",
-                            "source": "Peace be upon the settlement!"
-                  },
-                  {
-                            "target": "Aa nabad",
-                            "source": "It is peace / I am fine"
-                  },
-                  {
-                            "target": "Ma nabad?",
-                            "source": "How are you? (Is it peace?)"
-                  },
-                  {
-                            "target": "Nabad gobsan gaal barako u keenti",
-                            "source": "Peace in the homestead brings blessing to the camels"
-                  },
-                  {
-                            "target": "caanó gaal",
-                            "source": "Fresh camel milk"
-                  },
-                  {
-                            "target": "Ino gob huun ku hayna",
-                            "source": "We keep food in our nomadic camp"
-                  },
-                  {
-                            "target": "Ino gob jíid ku hayna",
-                            "source": "We keep meat in our nomadic camp"
-                  }
+          {
+            "target": "Waaq a ku barikoy",
+            "source": "Thank you / Blessing."
+          },
+          {
+            "target": "Goob nabad!",
+            "source": "Peace be upon the settlement!"
+          },
+          {
+            "target": "Aa nabad",
+            "source": "It is peace / I am fine."
+          },
+          {
+            "target": "Ma nabad?",
+            "source": "How are you? (Is it peace?)."
+          },
+          {
+            "target": "Nabad gobsan gaal barako u keenti",
+            "source": "Peace in the homestead brings blessing to the camels."
+          },
+          {
+            "target": "caanó gaal",
+            "source": "Fresh camel milk."
+          },
+          {
+            "target": "Gaalankay biche dhuga",
+            "source": "My camels drink water."
+          },
+          {
+            "target": "Minankay gob giddis yaalla",
+            "source": "Our house stands inside the settlement."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "rendille-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Rendille (Afi Ren'dille) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
+        "culturalNote": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976).",
         "words": [
-                  {
-                            "target": "ków",
-                            "source": "One",
-                            "pronunciation": "kow"
-                  },
-                  {
-                            "target": "láma",
-                            "source": "Two",
-                            "pronunciation": "la-ma"
-                  },
-                  {
-                            "target": "líh",
-                            "source": "Six",
-                            "pronunciation": "lih"
-                  },
-                  {
-                            "target": "tomón",
-                            "source": "Ten",
-                            "pronunciation": "to-mon"
-                  },
-                  {
-                            "target": "áfar",
-                            "source": "Four",
-                            "pronunciation": "a-far"
-                  },
-                  {
-                            "target": "chán",
-                            "source": "Five",
-                            "pronunciation": "chan"
-                  },
-                  {
-                            "target": "saagál",
-                            "source": "Nine",
-                            "pronunciation": "saa-gal"
-                  },
-                  {
-                            "target": "séyyah",
-                            "source": "Three",
-                            "pronunciation": "sey-yah"
-                  },
-                  {
-                            "target": "tebá",
-                            "source": "Seven",
-                            "pronunciation": "te-ba"
-                  },
-                  {
-                            "target": "síet",
-                            "source": "Eight",
-                            "pronunciation": "si-et"
-                  }
+          {
+            "target": "ków",
+            "source": "One",
+            "pronunciation": "kow"
+          },
+          {
+            "target": "láma",
+            "source": "Two",
+            "pronunciation": "la-ma"
+          },
+          {
+            "target": "líh",
+            "source": "Six",
+            "pronunciation": "lih"
+          },
+          {
+            "target": "tomón",
+            "source": "Ten",
+            "pronunciation": "to-mon"
+          },
+          {
+            "target": "áfar",
+            "source": "Four",
+            "pronunciation": "a-far"
+          },
+          {
+            "target": "chán",
+            "source": "Five",
+            "pronunciation": "chan"
+          },
+          {
+            "target": "saagál",
+            "source": "Nine",
+            "pronunciation": "saa-gal"
+          },
+          {
+            "target": "séyyah",
+            "source": "Three",
+            "pronunciation": "sey-yah"
+          },
+          {
+            "target": "tebá",
+            "source": "Seven",
+            "pronunciation": "te-ba"
+          },
+          {
+            "target": "síet",
+            "source": "Eight",
+            "pronunciation": "si-et"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "tomón icóú kow",
-                            "source": "Eleven (Ten plus one)"
-                  },
-                  {
-                            "target": "abbo yar",
-                            "source": "Father's brother (paternal uncle)"
-                  },
-                  {
-                            "target": "inán weyn",
-                            "source": "Firstborn son (heir to the camel herd)"
-                  },
-                  {
-                            "target": "Afi Ren'dille",
-                            "source": "Rendille language"
-                  },
-                  {
-                            "target": "gaal (sg. nyíro",
-                            "source": "Camel (herd)"
-                  },
-                  {
-                            "target": "Roob ma da'ay?",
-                            "source": "Has rain fallen in the pastures?"
-                  },
-                  {
-                            "target": "yar (nyirakh = young",
-                            "source": "Small"
-                  },
-                  {
-                            "target": "Gaal nabad ma yimi?",
-                            "source": "Did the camels return safely?"
-                  }
+          {
+            "target": "tomón icóú kow",
+            "source": "Eleven (Ten plus one)."
+          },
+          {
+            "target": "abbo yar",
+            "source": "Father's brother (paternal uncle)."
+          },
+          {
+            "target": "inán weyn",
+            "source": "Firstborn son (heir to the camel herd)."
+          },
+          {
+            "target": "Afi Ren'dille",
+            "source": "Rendille language."
+          },
+          {
+            "target": "Roob ma da'ay?",
+            "source": "Has rain fallen in the pastures?"
+          },
+          {
+            "target": "Gaal nabad ma yimi?",
+            "source": "Did the camels return safely?"
+          }
         ]
-}
+      }
     ]
   }
 ];

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "leaflet/dist/leaflet.css";
 
 @theme inline {
   /* ── Flag & Cultural Colors (fixed) ── */
@@ -1222,4 +1221,9 @@ a:focus-visible,
 summary:focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
+}
+
+/* Prevent floating back-to-top button from overlapping AdSense bottom anchor ads */
+html[data-adsense-state="active"] .kh-back-to-top {
+  bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
 }

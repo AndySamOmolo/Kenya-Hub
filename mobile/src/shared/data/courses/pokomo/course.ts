@@ -40,32 +40,80 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "culturalNote": "Along the Tana River (Muho wa Tsana), Pokomo communities historically governed village life and flood-plain farming through the Wakijo / Gasa council of elders and navigated via carved dugout canoes (waho).",
         "words": [
           {
-            "target": "Habari! / Uko bwema? (resp. Niko bwema)",
-            "source": "Greetings! / Are you well? (I am well)",
+            "target": "Habari!",
+            "source": "Greetings!",
             "pronunciation": "ha-ba-ri / uko bwe-ma",
             "hint": "Kipfokomo salutation"
           },
           {
-            "target": "munt’u (pl. want’u) / mwana (pl. wana)",
-            "source": "Person (pl. People) / Child (pl. Children)",
+            "target": "Uko bwema? (resp. Niko bwema)",
+            "source": "Are you well? (I am well)",
+            "pronunciation": "ha-ba-ri / uko bwe-ma",
+            "hint": "Kipfokomo salutation"
+          },
+          {
+            "target": "munt’u (pl. want’u)",
+            "source": "Person (pl. People)",
             "pronunciation": "munt’u / mwa-na",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)"
           },
           {
-            "target": "madzi / moho / muho",
-            "source": "Water / Fire / River (Muho wa Tsana = Tana River)",
+            "target": "mwana (pl. wana)",
+            "source": "Child (pl. Children)",
+            "pronunciation": "munt’u / mwa-na",
+            "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)"
+          },
+          {
+            "target": "madzi",
+            "source": "Water",
             "pronunciation": "madzi / mo-ho / mu-ho",
             "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
           },
           {
-            "target": "waho (pl. mawaho) / nswi / mamba",
-            "source": "Dugout canoe / Fish / Crocodile",
+            "target": "moho",
+            "source": "Fire",
+            "pronunciation": "madzi / mo-ho / mu-ho",
+            "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
+          },
+          {
+            "target": "muho",
+            "source": "River (Muho wa Tsana = Tana River)",
+            "pronunciation": "madzi / mo-ho / mu-ho",
+            "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
+          },
+          {
+            "target": "waho (pl. mawaho)",
+            "source": "Dugout canoe",
             "pronunciation": "wa-ho / nswi / mamba",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
           },
           {
-            "target": "mudzi (pl. midzi) / nyumba / Wakijo",
-            "source": "Village / House / Council of Elders",
+            "target": "nswi",
+            "source": "Fish",
+            "pronunciation": "wa-ho / nswi / mamba",
+            "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
+          },
+          {
+            "target": "mamba",
+            "source": "Crocodile",
+            "pronunciation": "wa-ho / nswi / mamba",
+            "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
+          },
+          {
+            "target": "mudzi (pl. midzi)",
+            "source": "Village",
+            "pronunciation": "mudzi / nyumba / wa-ki-jo",
+            "hint": "Krapf (1850) & Pokomo governance"
+          },
+          {
+            "target": "nyumba",
+            "source": "House",
+            "pronunciation": "mudzi / nyumba / wa-ki-jo",
+            "hint": "Krapf (1850) & Pokomo governance"
+          },
+          {
+            "target": "Wakijo",
+            "source": "Council of Elders",
             "pronunciation": "mudzi / nyumba / wa-ki-jo",
             "hint": "Krapf (1850) & Pokomo governance"
           },
@@ -125,63 +173,83 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Habari! / Uko bwema? (resp. Niko bwema)\" in Pokomo?",
-            "correctAnswer": "Greetings! / Are you well? (I am well)",
+            "prompt": "What is the English meaning of \"Habari!\" in Pokomo?",
+            "correctAnswer": "Greetings!",
             "options": [
-              "Person (pl. People) / Child (pl. Children)",
-              "Water / Fire / River (Muho wa Tsana = Tana River)",
-              "Dugout canoe / Fish / Crocodile",
-              "Greetings! / Are you well? (I am well)"
+              "Person",
+              "Greetings!",
+              "Water",
+              "Dugout canoe"
             ],
-            "hint": "Kipfokomo salutation"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"munt’u (pl. want’u) / mwana (pl. wana)\" in Pokomo?",
-            "correctAnswer": "Person (pl. People) / Child (pl. Children)",
-            "options": [
-              "Water / Fire / River (Muho wa Tsana = Tana River)",
-              "Dugout canoe / Fish / Crocodile",
-              "Person (pl. People) / Child (pl. Children)",
-              "Greetings! / Are you well? (I am well)"
-            ],
-            "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"madzi / moho / muho\" in Pokomo?",
-            "correctAnswer": "Water / Fire / River (Muho wa Tsana = Tana River)",
-            "options": [
-              "Dugout canoe / Fish / Crocodile",
-              "Water / Fire / River (Muho wa Tsana = Tana River)",
+            "hint": "Kipfokomo salutation",
+            "acceptedAnswers": [
               "Greetings! / Are you well? (I am well)",
-              "Person (pl. People) / Child (pl. Children)"
-            ],
-            "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
+              "Greetings!"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Water / Fire / River (Muho wa Tsana = Tana River)\" in Pokomo?",
-            "correctAnswer": "madzi / moho / muho",
+            "prompt": "What is the English meaning of \"munt’u\" in Pokomo?",
+            "correctAnswer": "Person",
             "options": [
-              "madzi / moho / muho",
-              "Habari! / Uko bwema? (resp. Niko bwema)",
-              "munt’u (pl. want’u) / mwana (pl. wana)",
-              "waho (pl. mawaho) / nswi / mamba"
+              "Person",
+              "Water",
+              "Dugout canoe",
+              "Greetings!"
             ],
-            "hint": "mah-dzee / moh-hoh / moo-hoh"
+            "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)",
+            "acceptedAnswers": [
+              "Person (pl. People) / Child (pl. Children)",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Dugout canoe / Fish / Crocodile\" in Pokomo?",
-            "correctAnswer": "waho (pl. mawaho) / nswi / mamba",
+            "prompt": "What is the English meaning of \"madzi\" in Pokomo?",
+            "correctAnswer": "Water",
             "options": [
-              "Habari! / Uko bwema? (resp. Niko bwema)",
-              "munt’u (pl. want’u) / mwana (pl. wana)",
-              "madzi / moho / muho",
-              "waho (pl. mawaho) / nswi / mamba"
+              "Dugout canoe",
+              "Greetings!",
+              "Water",
+              "Person"
             ],
-            "hint": "wah-hoh / n-swee / mahm-bah"
+            "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)",
+            "acceptedAnswers": [
+              "Water / Fire / River (Muho wa Tsana = Tana River)",
+              "Water"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Water\" in Pokomo?",
+            "correctAnswer": "madzi",
+            "options": [
+              "Habari!",
+              "munt’u",
+              "madzi",
+              "waho"
+            ],
+            "hint": "mah-dzee / moh-hoh / moo-hoh",
+            "acceptedAnswers": [
+              "madzi / moho / muho",
+              "madzi"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Dugout canoe\" in Pokomo?",
+            "correctAnswer": "waho",
+            "options": [
+              "waho",
+              "Habari!",
+              "munt’u",
+              "madzi"
+            ],
+            "hint": "wah-hoh / n-swee / mahm-bah",
+            "acceptedAnswers": [
+              "waho (pl. mawaho) / nswi / mamba",
+              "waho"
+            ]
           },
           {
             "type": "match_pairs",
@@ -208,15 +276,19 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Pokomo term for \"Village / House / Council of Elders\": ___",
-            "correctAnswer": "mudzi (pl. midzi) / nyumba / Wakijo",
+            "prompt": "Complete the Pokomo term for \"Village\": ___",
+            "correctAnswer": "mudzi",
             "options": [
-              "Habari! / Uko bwema? (resp. Niko bwema)",
-              "munt’u (pl. want’u) / mwana (pl. wana)",
-              "madzi / moho / muho",
-              "mudzi (pl. midzi) / nyumba / Wakijo"
+              "mudzi",
+              "Habari!",
+              "munt’u",
+              "madzi"
             ],
-            "hint": "Krapf (1850) & Pokomo governance"
+            "hint": "Krapf (1850) & Pokomo governance",
+            "acceptedAnswers": [
+              "mudzi (pl. midzi) / nyumba / Wakijo",
+              "mudzi"
+            ]
           }
         ]
       }
@@ -296,25 +368,29 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"muntu (pl. wantu)\" in Pokomo?",
-            "correctAnswer": "Person / People",
+            "prompt": "What is the English meaning of \"muntu\" in Pokomo?",
+            "correctAnswer": "Person",
             "options": [
               "Father",
               "Mother",
               "Child",
-              "Person / People"
+              "Person"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
+            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo",
+            "acceptedAnswers": [
+              "Person / People",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"baba / ise\" in Pokomo?",
             "correctAnswer": "Father",
             "options": [
+              "Father",
               "Mother",
               "Child",
-              "Father",
-              "Person / People"
+              "Person"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
@@ -325,7 +401,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "options": [
               "Child",
               "Mother",
-              "Person / People",
+              "Person",
               "Father"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
@@ -333,26 +409,34 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mother\" in Pokomo?",
-            "correctAnswer": "mama / nina",
+            "correctAnswer": "mama",
             "options": [
-              "mama / nina",
-              "muntu (pl. wantu)",
-              "baba / ise",
-              "mwana (pl. wana)"
+              "muntu",
+              "baba",
+              "mama",
+              "mwana"
             ],
-            "hint": "ma-ma / ni-na"
+            "hint": "Starts with \"ma…\" (4 letters)",
+            "acceptedAnswers": [
+              "mama / nina",
+              "mama"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Child\" in Pokomo?",
-            "correctAnswer": "mwana (pl. wana)",
+            "correctAnswer": "mwana",
             "options": [
-              "muntu (pl. wantu)",
-              "baba / ise",
-              "mama / nina",
-              "mwana (pl. wana)"
+              "muntu",
+              "baba",
+              "mwana",
+              "mama"
             ],
-            "hint": "mwa-na (pl. wa-na)"
+            "hint": "Starts with \"mw…\" (5 letters)",
+            "acceptedAnswers": [
+              "mwana (pl. wana)",
+              "mwana"
+            ]
           },
           {
             "type": "match_pairs",
@@ -380,14 +464,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo term for \"Man / Husband\": ___",
-            "correctAnswer": "mulume (pl. walume)",
+            "correctAnswer": "mulume",
             "options": [
-              "muntu (pl. wantu)",
-              "baba / ise",
-              "mama / nina",
-              "mulume (pl. walume)"
+              "muntu",
+              "baba",
+              "mama",
+              "mulume"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
+            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo",
+            "acceptedAnswers": [
+              "mulume (pl. walume)",
+              "mulume"
+            ]
           }
         ]
       },
@@ -460,10 +548,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"dzina (pl. madzina)\" in Pokomo (Kipfokomo)?",
             "correctAnswer": "Name",
             "options": [
-              "Name",
               "Aunt",
               "Boy",
-              "Child"
+              "Child",
+              "Name"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
@@ -496,7 +584,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "niumba",
             "options": [
               "niumba",
-              "dzina (pl. madzina)",
+              "dzina",
               "ndugu ya baba",
               "mána mdódo"
             ],
@@ -585,8 +673,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "options": [
               "Two",
               "Three",
-              "Four",
-              "One"
+              "One",
+              "Four"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo numerals"
           },
@@ -595,9 +683,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mbili (-wili / -bili)\" in Pokomo?",
             "correctAnswer": "Two",
             "options": [
+              "Two",
               "Three",
               "Four",
-              "Two",
               "One"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo numerals"
@@ -617,26 +705,34 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Pokomo?",
-            "correctAnswer": "tahu (-tahu / ntahu)",
+            "correctAnswer": "tahu",
             "options": [
-              "tahu (-tahu / ntahu)",
-              "motsi (-motsi / mmotsi)",
-              "mbili (-wili / -bili)",
-              "nne (-nne)"
+              "motsi",
+              "tahu",
+              "mbili",
+              "nne"
             ],
-            "hint": "ta-hu"
+            "hint": "Starts with \"ta…\" (4 letters)",
+            "acceptedAnswers": [
+              "tahu (-tahu / ntahu)",
+              "tahu"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Pokomo?",
-            "correctAnswer": "nne (-nne)",
+            "correctAnswer": "nne",
             "options": [
-              "motsi (-motsi / mmotsi)",
-              "mbili (-wili / -bili)",
-              "tahu (-tahu / ntahu)",
-              "nne (-nne)"
+              "motsi",
+              "mbili",
+              "tahu",
+              "nne"
             ],
-            "hint": "nne"
+            "hint": "Starts with \"nn…\" (3 letters)",
+            "acceptedAnswers": [
+              "nne (-nne)",
+              "nne"
+            ]
           },
           {
             "type": "match_pairs",
@@ -664,14 +760,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo term for \"Five\": ___",
-            "correctAnswer": "tsano (-tsano)",
+            "correctAnswer": "tsano",
             "options": [
-              "motsi (-motsi / mmotsi)",
-              "mbili (-wili / -bili)",
-              "tahu (-tahu / ntahu)",
-              "tsano (-tsano)"
+              "motsi",
+              "tsano",
+              "mbili",
+              "tahu"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo numerals"
+            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo numerals",
+            "acceptedAnswers": [
+              "tsano (-tsano)",
+              "tsano"
+            ]
           }
         ]
       },
@@ -690,14 +790,20 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo numerals"
           },
           {
-            "target": "mirongo miwili (20) / gana (100)",
-            "source": "Twenty / One hundred",
+            "target": "mirongo miwili (20)",
+            "source": "Twenty",
+            "pronunciation": "mi-rongo mi-wi-li / ga-na",
+            "hint": "Krapf (1850) & Johnston (1919, pp. 107–108) — #13 Pokomo"
+          },
+          {
+            "target": "gana (100)",
+            "source": "One hundred",
             "pronunciation": "mi-rongo mi-wi-li / ga-na",
             "hint": "Krapf (1850) & Johnston (1919, pp. 107–108) — #13 Pokomo"
           },
           {
             "target": "biga sikío",
-            "source": "Box, to give one-",
+            "source": "To box give one",
             "pronunciation": "bi-ga si-kio",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)"
           },
@@ -735,11 +841,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kumi — mirongo miwili",
-            "source": "Ten — Twenty"
+            "source": "Ten — Twenty."
           },
           {
             "target": "biga sikío — motsi",
-            "source": "Box, to give one- — One"
+            "source": "Box, to give one- — One."
           }
         ],
         "authoredExercises": [
@@ -749,8 +855,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Ten",
             "options": [
               "Ten",
-              "Twenty / One hundred",
-              "Box, to give one-",
+              "Twenty",
+              "Box",
               "One"
             ],
             "hint": "Core vocabulary in Trade, Barter, Currency & Traditional Measures"
@@ -877,11 +983,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "maziwa — izu",
-            "source": "Milk — Banana"
+            "source": "Milk — Banana."
           },
           {
             "target": "mpunga — mahemba",
-            "source": "Rice — Maize"
+            "source": "Rice — Maize."
           }
         ],
         "authoredExercises": [
@@ -890,10 +996,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What does \"maziwa\" mean in English?",
             "correctAnswer": "Milk",
             "options": [
-              "Milk",
               "Banana",
               "Rice",
-              "Maize"
+              "Maize",
+              "Milk"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
           },
@@ -956,7 +1062,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "henda mkáhe",
-            "source": "Bake, v. a. -bread",
+            "source": "Bake bread",
             "pronunciation": "henda mka-he",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)"
           },
@@ -978,7 +1084,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.)"
           },
           {
-            "target": "Kī-āzi?",
+            "target": "Kiazi",
             "source": "Yam",
             "pronunciation": "ki-azi"
           },
@@ -1006,25 +1112,29 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "henda mkáhe — ja",
-            "source": "Bake, v. a. -bread — Eat"
+            "source": "Bake, v. a. -bread — Eat."
           },
           {
             "target": "hokossa — mukahe",
-            "source": "Boil — Bread"
+            "source": "Boil — Bread."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"henda mkáhe\" mean in English?",
-            "correctAnswer": "Bake, v. a. -bread",
+            "correctAnswer": "Bake",
             "options": [
-              "Bake, v. a. -bread",
+              "Bake",
               "Eat",
               "Boil",
               "Bread"
             ],
-            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
+            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock",
+            "acceptedAnswers": [
+              "Bake, v. a. -bread",
+              "Bake"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1068,7 +1178,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
                 "right": "Bread"
               },
               {
-                "left": "Kī-āzi?",
+                "left": "Kiazi",
                 "right": "Yam"
               }
             ]
@@ -1154,24 +1264,28 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"madzi (maji)\" in Pokomo?",
             "correctAnswer": "Water",
             "options": [
-              "River (Tana River)",
+              "River",
+              "Water",
               "Fire",
-              "Sun",
-              "Water"
+              "Sun"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993) — Kipokomo"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"muho (Tsana)\" in Pokomo?",
-            "correctAnswer": "River (Tana River)",
+            "correctAnswer": "River",
             "options": [
               "Fire",
+              "River",
               "Sun",
-              "River (Tana River)",
               "Water"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
+            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo",
+            "acceptedAnswers": [
+              "River (Tana River)",
+              "River"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1179,35 +1293,39 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Fire",
             "options": [
               "Sun",
-              "Fire",
               "Water",
-              "River (Tana River)"
+              "River",
+              "Fire"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fire\" in Pokomo?",
-            "correctAnswer": "moho (moto)",
+            "correctAnswer": "moho",
             "options": [
-              "moho (moto)",
-              "madzi (maji)",
-              "muho (Tsana)",
+              "moho",
+              "madzi",
+              "muho",
               "dzuwa"
             ],
-            "hint": "mo-ho"
+            "hint": "Starts with \"mo…\" (4 letters)",
+            "acceptedAnswers": [
+              "moho (moto)",
+              "moho"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Sun\" in Pokomo?",
             "correctAnswer": "dzuwa",
             "options": [
-              "madzi (maji)",
-              "muho (Tsana)",
-              "moho (moto)",
-              "dzuwa"
+              "dzuwa",
+              "madzi",
+              "muho",
+              "moho"
             ],
-            "hint": "dzu-wa"
+            "hint": "Starts with \"dz…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1237,10 +1355,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokomo term for \"Moon / Month\": ___",
             "correctAnswer": "mwezi",
             "options": [
-              "madzi (maji)",
-              "muho (Tsana)",
-              "moho (moto)",
-              "mwezi"
+              "madzi",
+              "mwezi",
+              "muho",
+              "moho"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           }
@@ -1308,25 +1426,29 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ntsi — siku",
-            "source": "Earth — Day"
+            "source": "Earth — Day."
           },
           {
             "target": "usiku — mlima",
-            "source": "Night — Mountain"
+            "source": "Night — Mountain."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"ntsi\" mean in English?",
-            "correctAnswer": "Earth / Country / Land",
+            "correctAnswer": "Earth",
             "options": [
-              "Earth / Country / Land",
               "Day",
               "Night",
-              "Mountain / Hill"
+              "Earth",
+              "Mountain"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Earth / Country / Land",
+              "Earth"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1420,8 +1542,14 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
           {
-            "target": "mulomo (pl. milomo) / kanwa",
-            "source": "Mouth / Lip",
+            "target": "mulomo (pl. milomo)",
+            "source": "Mouth",
+            "pronunciation": "mu-lo-mo / kanwa",
+            "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)"
+          },
+          {
+            "target": "kanwa",
+            "source": "Lip",
             "pronunciation": "mu-lo-mo / kanwa",
             "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)"
           },
@@ -1469,8 +1597,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Eye",
             "options": [
               "Ear",
-              "Nose",
               "Eye",
+              "Nose",
               "Head"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
@@ -1490,26 +1618,30 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Ear\" in Pokomo?",
-            "correctAnswer": "sikio (pl. masikio) / kutu",
+            "correctAnswer": "sikio",
             "options": [
-              "sikio (pl. masikio) / kutu",
-              "kitswa (pl. vitswa)",
-              "dzitso (pl. matso)",
+              "sikio",
+              "kitswa",
+              "dzitso",
               "pula"
             ],
-            "hint": "si-ki-o / ku-tu"
+            "hint": "Starts with \"si…\" (5 letters)",
+            "acceptedAnswers": [
+              "sikio (pl. masikio) / kutu",
+              "sikio"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Pokomo?",
             "correctAnswer": "pula",
             "options": [
-              "kitswa (pl. vitswa)",
-              "dzitso (pl. matso)",
-              "sikio (pl. masikio) / kutu",
-              "pula"
+              "pula",
+              "kitswa",
+              "dzitso",
+              "sikio"
             ],
-            "hint": "pu-la"
+            "hint": "Starts with \"pu…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -1536,15 +1668,19 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Pokomo term for \"Mouth / Lip\": ___",
-            "correctAnswer": "mulomo (pl. milomo) / kanwa",
+            "prompt": "Complete the Pokomo term for \"Mouth\": ___",
+            "correctAnswer": "mulomo",
             "options": [
-              "kitswa (pl. vitswa)",
-              "dzitso (pl. matso)",
-              "sikio (pl. masikio) / kutu",
-              "mulomo (pl. milomo) / kanwa"
+              "kitswa",
+              "dzitso",
+              "sikio",
+              "mulomo"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)"
+            "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)",
+            "acceptedAnswers": [
+              "mulomo (pl. milomo) / kanwa",
+              "mulomo"
+            ]
           }
         ]
       },
@@ -1581,7 +1717,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) & Würtz (1895) — Kipokomo"
           },
           {
-            "target": "Bagwi; ma-",
+            "target": "Bagwi; ma",
             "source": "Breast (man's)",
             "pronunciation": "bagwi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -1599,13 +1735,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ki-tsigīno; vi-",
+            "target": "Ki-tsigīno; vi",
             "source": "Heel",
             "pronunciation": "ki-tsigino",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ū-kōmbe; ma-",
+            "target": "Ū-kōmbe; ma",
             "source": "Nail (of finger or toe)",
             "pronunciation": "u-kombe",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -1618,9 +1754,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Blood",
             "options": [
               "Bone",
-              "Skin / Hide",
-              "Heart",
-              "Blood"
+              "Blood",
+              "Skin",
+              "Heart"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
@@ -1629,7 +1765,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mfupa (pl. mifupa)\" in Pokomo?",
             "correctAnswer": "Bone",
             "options": [
-              "Skin / Hide",
+              "Skin",
               "Heart",
               "Bone",
               "Blood"
@@ -1639,14 +1775,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ngozi\" in Pokomo?",
-            "correctAnswer": "Skin / Hide",
+            "correctAnswer": "Skin",
             "options": [
               "Heart",
-              "Skin / Hide",
+              "Skin",
               "Blood",
               "Bone"
             ],
-            "hint": "Krapf (1850) & Würtz (1895)"
+            "hint": "Krapf (1850) & Würtz (1895)",
+            "acceptedAnswers": [
+              "Skin / Hide",
+              "Skin"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1654,23 +1794,27 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "ngozi",
             "options": [
               "ngozi",
-              "damu / mwazi",
-              "mfupa (pl. mifupa)",
-              "moyo (pl. mioyo)"
+              "damu",
+              "mfupa",
+              "moyo"
             ],
-            "hint": "ngo-zi"
+            "hint": "Starts with \"ng…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Heart\" in Pokomo?",
-            "correctAnswer": "moyo (pl. mioyo)",
+            "correctAnswer": "moyo",
             "options": [
-              "damu / mwazi",
-              "mfupa (pl. mifupa)",
-              "ngozi",
-              "moyo (pl. mioyo)"
+              "damu",
+              "moyo",
+              "mfupa",
+              "ngozi"
             ],
-            "hint": "mo-yo"
+            "hint": "Starts with \"mo…\" (4 letters)",
+            "acceptedAnswers": [
+              "moyo (pl. mioyo)",
+              "moyo"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1698,14 +1842,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo term for \"Breast (man's)\": ___",
-            "correctAnswer": "Bagwi; ma-",
+            "correctAnswer": "Bagwi",
             "options": [
-              "damu / mwazi",
-              "mfupa (pl. mifupa)",
+              "damu",
+              "mfupa",
               "ngozi",
-              "Bagwi; ma-"
+              "Bagwi"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
+            "acceptedAnswers": [
+              "Bagwi; ma-",
+              "Bagwi"
+            ]
           }
         ]
       }
@@ -1788,10 +1936,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kunena (kuamba)\" in Pokomo?",
             "correctAnswer": "Speak",
             "options": [
+              "Speak",
               "Eat",
               "Drink",
-              "Draw water",
-              "Speak"
+              "Draw water"
             ],
             "hint": "Krapf 1850 & Johnston 1919 #13 Pokomo"
           },
@@ -1802,8 +1950,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "options": [
               "Drink",
               "Draw water",
-              "Eat",
-              "Speak"
+              "Speak",
+              "Eat"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
           },
@@ -1813,8 +1961,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Drink",
             "options": [
               "Draw water",
-              "Drink",
               "Speak",
+              "Drink",
               "Eat"
             ],
             "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
@@ -1824,24 +1972,24 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Drink\" in Pokomo?",
             "correctAnswer": "kunwa",
             "options": [
+              "kunena",
+              "kurya",
               "kunwa",
-              "kunena (kuamba)",
-              "kurya (kula)",
               "kuteka madzi"
             ],
-            "hint": "kun-wa"
+            "hint": "Starts with \"ku…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Draw water\" in Pokomo?",
             "correctAnswer": "kuteka madzi",
             "options": [
-              "kunena (kuamba)",
-              "kurya (kula)",
-              "kunwa",
-              "kuteka madzi"
+              "kunena",
+              "kurya",
+              "kuteka madzi",
+              "kunwa"
             ],
-            "hint": "ku-te-ka ma-dzi"
+            "hint": "Starts with \"ku…\" (12 letters)"
           },
           {
             "type": "match_pairs",
@@ -1869,14 +2017,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo term for \"Come\": ___",
-            "correctAnswer": "kuja / kudza",
+            "correctAnswer": "kuja",
             "options": [
-              "kunena (kuamba)",
-              "kurya (kula)",
-              "kunwa",
-              "kuja / kudza"
+              "kuja",
+              "kunena",
+              "kurya",
+              "kunwa"
             ],
-            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo"
+            "hint": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo",
+            "acceptedAnswers": [
+              "kuja / kudza",
+              "kuja"
+            ]
           }
         ]
       },
@@ -1950,7 +2102,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Die",
             "options": [
               "Give",
-              "Cultivate / Farm",
+              "Cultivate",
               "To see",
               "Die"
             ],
@@ -1961,9 +2113,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kupa\" in Pokomo?",
             "correctAnswer": "Give",
             "options": [
-              "Cultivate / Farm",
-              "To see",
               "Give",
+              "Cultivate",
+              "To see",
               "Die"
             ],
             "hint": "Krapf (1850) & Würtz (1895) — Kipokomo"
@@ -1971,38 +2123,46 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kulima\" in Pokomo?",
-            "correctAnswer": "Cultivate / Farm",
+            "correctAnswer": "Cultivate",
             "options": [
               "To see",
-              "Cultivate / Farm",
               "Die",
-              "Give"
+              "Give",
+              "Cultivate"
             ],
-            "hint": "Krapf (1850) & Würtz (1895) — Kipokomo"
+            "hint": "Krapf (1850) & Würtz (1895) — Kipokomo",
+            "acceptedAnswers": [
+              "Cultivate / Farm",
+              "Cultivate"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Cultivate / Farm\" in Pokomo?",
             "correctAnswer": "kulima",
             "options": [
-              "kulima",
               "kufa",
               "kupa",
-              "kuona (-ona)"
+              "kulima",
+              "kuona"
             ],
-            "hint": "ku-li-ma"
+            "hint": "Starts with \"ku…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To see\" in Pokomo?",
-            "correctAnswer": "kuona (-ona)",
+            "correctAnswer": "kuona",
             "options": [
               "kufa",
               "kupa",
               "kulima",
-              "kuona (-ona)"
+              "kuona"
             ],
-            "hint": "koo-oh-nah"
+            "hint": "koo-oh-nah",
+            "acceptedAnswers": [
+              "kuona (-ona)",
+              "kuona"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2030,14 +2190,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo term for \"To hear\": ___",
-            "correctAnswer": "kusikia (-sikia)",
+            "correctAnswer": "kusikia",
             "options": [
               "kufa",
               "kupa",
-              "kulima",
-              "kusikia (-sikia)"
+              "kusikia",
+              "kulima"
             ],
-            "hint": "Verified comparative entry across Kenyan bantu corpus"
+            "hint": "Verified comparative entry across Kenyan bantu corpus",
+            "acceptedAnswers": [
+              "kusikia (-sikia)",
+              "kusikia"
+            ]
           }
         ]
       }
@@ -2114,11 +2278,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "wiwíu — síku",
-            "source": "Dawn — Day"
+            "source": "Dawn — Day."
           },
           {
             "target": "yéo — nawiwiu",
-            "source": "to-day — Early"
+            "source": "to-day — Early."
           }
         ],
         "authoredExercises": [
@@ -2127,9 +2291,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What does \"wiwíu\" mean in English?",
             "correctAnswer": "Dawn",
             "options": [
-              "Dawn",
               "Day",
               "to-day",
+              "Dawn",
               "Early"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2246,11 +2410,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "wiwíde wiwiu — siku ya ku jia",
-            "source": "Dawn — Last day"
+            "source": "Dawn — Last day."
           },
           {
             "target": "wakáti ujia — usíku káhi",
-            "source": "Late — Midnight"
+            "source": "Late — Midnight."
           }
         ],
         "authoredExercises": [
@@ -2259,8 +2423,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What does \"wiwíde wiwiu\" mean in English?",
             "correctAnswer": "Dawn",
             "options": [
-              "Dawn",
               "Last day",
+              "Dawn",
               "Late",
               "Midnight"
             ],
@@ -2387,9 +2551,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kái\" in Pokomo?",
             "correctAnswer": "Old",
             "options": [
-              "Old",
               "New",
-              "To stand / stop",
+              "To stand",
+              "Old",
               "To sleep"
             ],
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.)"
@@ -2493,9 +2657,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"-tsēkā\" in Pokomo?",
             "correctAnswer": "To laugh",
             "options": [
-              "To laugh",
               "To know",
               "To go",
+              "To laugh",
               "To give"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2528,8 +2692,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokomo (Kipfokomo) term for \"To dance\": ___",
             "correctAnswer": "-vīnā",
             "options": [
-              "-vīnā",
               "-kātā",
+              "-vīnā",
               "-tsēkā",
               "-mānyā"
             ],
@@ -2555,7 +2719,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "tips": "Focus on high-frequency roots shared across Pokomo (Kipfokomo) dialects and everyday speech.",
         "words": [
           {
-            "target": "Sī-, Kā-, Tā-, -sī-",
+            "target": "Sī-, Kā-, Tā-, -sī",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "si ka ta si",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2607,14 +2771,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Sī-, Kā-, Tā-, -sī-\" in Pokomo?",
-            "correctAnswer": "Not (with verb, as prefix, infix, or suffix)",
+            "correctAnswer": "Not",
             "options": [
-              "Not (with verb, as prefix, infix, or suffix)",
               "No!",
-              "In, inside",
-              "Below, down"
+              "In",
+              "Not",
+              "Below"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
+            "acceptedAnswers": [
+              "Not (with verb, as prefix, infix, or suffix)",
+              "Not"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2644,9 +2812,9 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokomo (Kipfokomo) term for \"Above, up, on top\": ___",
             "correctAnswer": "Yūlū",
             "options": [
-              "Yūlū",
               "-wōvū",
-              "Sī-, Kā-, Tā-, -sī-",
+              "Yūlū",
+              "Sī-",
               "Nhā-nhā!"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2667,13 +2835,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Wāō. Wā-. -wa-. -āō",
+            "target": "Wāō",
             "source": "They, them, their",
             "pronunciation": "wao wa wa ao",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Nyīnyi. Mū-. -wa-. -ēnyū",
+            "target": "Nyīnyi",
             "source": "Ye, you, your",
             "pronunciation": "nyinyi mu wa enyu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2685,20 +2853,20 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Yēye. Kā-, A-. -mū-. -ākwē",
+            "target": "Yēye",
             "source": "He, him, his",
             "pronunciation": "ye-ye ka a mu akwe",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Wēwe. Kū-, Ū-. -kū-. -āko",
-            "source": "Thou, thee, thy",
+            "target": "Wēwe",
+            "source": "Thou, thee",
             "pronunciation": "we-we ku u ku ako",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Mīmi. N-, Nī-. -n-. -ānggū",
-            "source": "I, me, my",
+            "target": "Mīmi",
+            "source": "I, me",
             "pronunciation": "mi-mi n ni n anggu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
@@ -2713,14 +2881,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Hū-lē, hā-lē; hū-lē, hī-lē; &c.\" in Pokomo?",
-            "correctAnswer": "That, those",
+            "correctAnswer": "That",
             "options": [
-              "That, those",
-              "They, them, their",
-              "Ye, you, your",
-              "We, us, our"
+              "They",
+              "Ye",
+              "We",
+              "That"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
+            "acceptedAnswers": [
+              "That, those",
+              "That"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2748,14 +2920,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokomo (Kipfokomo) term for \"He, him, his\": ___",
-            "correctAnswer": "Yēye. Kā-, A-. -mū-. -ākwē",
+            "correctAnswer": "Yēye. Kā-",
             "options": [
-              "Yēye. Kā-, A-. -mū-. -ākwē",
-              "Wēwe. Kū-, Ū-. -kū-. -āko",
-              "Hū-lē, hā-lē; hū-lē, hī-lē; &c.",
+              "Wēwe. Kū-",
+              "Yēye. Kā-",
+              "Hū-lē",
               "Wāō. Wā-. -wa-. -āō"
             ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
+            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
+            "acceptedAnswers": [
+              "Yēye. Kā-, A-. -mū-. -ākwē",
+              "Yēye. Kā-"
+            ]
           }
         ]
       }
@@ -2771,7 +2947,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "pokomo-samson-1944-malachini-chikovu-map",
-        "title": "Kalindi, Buu, the Three Former Rivers, the Chikovu Lament Song &",
+        "title": "Kalindi, Buu, the Three Former Rivers, the Chikovu Lament Song",
         "icon": "Compass",
         "description": "Learn the Kalindi migration under Hidabo to Shaka (Waungwana wa Mashaa), Liongo Fumo & Ozi, family mlango land tenure, the Buu–Sanye hippo covenant, the 3 dried Buu rivers (Milaoni/Magogoni, Ngambwa, Mbewee), and the verbatim Buu Lament Song for Chikovu (p. 385).",
         "tips": "In Kipokomo, cultivated land belongs to the family lineage (mlango) and cannot be sold; 'Mbelezo' means a canal (hence Belezoni where the present Tana leaves the old Sheriko); and the true Pokomo name of the Tana River is 'Galana Maro' ('Maro's river').",
@@ -2882,11 +3058,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mudzi wehu mudzi wa mbinguni hutamisaa huichamba huyawe na manya.",
-            "source": "Our village (Chikovu) was a village of the heavens; we are troubled, we did not want to be lost out in the bush. (Buu Lament Song, p. 385)"
+            "source": "Our village (Chikovu) was a village of the heavens; we are troubled, we did not want to be lost out in the bush. (Buu Lament Song, p. 385)."
           },
           {
             "target": "Mumaitha kadza ndio odu Mbuu ni mzuka, endani mukayowe kumea mani kubfaa miima.",
-            "source": "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills. (Buu Lament Song, p. 385)"
+            "source": "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills. (Buu Lament Song, p. 385)."
           }
         ],
         "authoredExercises": [
@@ -2909,7 +3085,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
       },
       {
         "id": "pokomo-samson-1944-upper-pokomo-clans-kijo",
-        "title": "All 6 Upper Pokomo Tribes, Bilingual Bantu/Oromo Clan Tables,",
+        "title": "All 6 Upper Pokomo Tribes, Bilingual Bantu/Oromo Clan Tables",
         "icon": "Crown",
         "description": "Master the complete clan tables (Bantu & Oromo names) and histories of Ndera, Gwano, Kinakomba, Ndura, Zubaki, and Malalulu, the 'Abamogo' greeting, the Treacherous War of Jilo Bune, the Battles of Kirungu & Kadada, Chief Mukaraji Maro's genealogy, Ngaji/Kijo, Waganga, Muunguni, Missions (1884–1887), and 1895 Government arrival.",
         "tips": "Most Upper Pokomo clans have both a Bantu name and an Oromo/Hamitic name (including 'Karayu', the Boran Royal Clan of Chief Gedu in Ethiopia), except the Malalulu whose 7 clans have only Hamitic names (Note 5, p. 392).",
@@ -2917,7 +3093,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Abamogo!",
-            "source": "Mutual greeting used to this day between Malachini and Upper Pokomo commemorating the",
+            "source": "Mutual greeting used to this day between Malachini and Upper Pokomo commemorating",
             "pronunciation": "a-ba-mo-go",
             "hint": "Mikael Samson & R. G. Darroch (1944, p. 376 & Note 8 p. 392)"
           },
@@ -3030,11 +3206,11 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Sango Vere na Ana Dima wakasalimiana kwa dzina la Abamogo.",
-            "source": "Sango Vere and Ana Dima greeted each other by the name of Abamogo ('wayfarer'). (p. 376)"
+            "source": "Sango Vere and Ana Dima greeted each other by the name of Abamogo ('wayfarer')."
           },
           {
             "target": "Wapokomo hawawezi kuvuna bila kuweka fungu la Mungu huko Muunguni.",
-            "source": "The Pokomo could not begin to reap without setting aside 'God's portion' for God in heaven (Muunguni). (p. 389)"
+            "source": "The Pokomo could not begin to reap without setting aside 'God's portion' for God in heaven (Muunguni)."
           }
         ]
       },
@@ -3043,187 +3219,126 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Pokomo (Kipfokomo) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944).",
         "words": [
-                  {
-                            "target": "kedéria",
-                            "source": "Greet",
-                            "pronunciation": "kederia"
-                  },
-                  {
-                            "target": "arára",
-                            "source": "Peace",
-                            "pronunciation": "arara"
-                  },
-                  {
-                            "target": "ṣadda",
-                            "source": "Thank",
-                            "pronunciation": "sadda"
-                  },
-                  {
-                            "target": "baríki",
-                            "source": "Bless",
-                            "pronunciation": "bariki"
-                  },
-                  {
-                            "target": "kédia",
-                            "source": "Salute",
-                            "pronunciation": "kedia"
-                  },
-                  {
-                            "target": "yaza",
-                            "source": "Pardon",
-                            "pronunciation": "ya-za"
-                  },
-                  {
-                            "target": "zákkisa",
-                            "source": "Please",
-                            "pronunciation": "zakkisa"
-                  },
-                  {
-                            "target": "Karibu mudzini",
-                            "source": "Welcome",
-                            "pronunciation": "ka-ri-bu mu-dzi-ni"
-                  },
-                  {
-                            "target": "mungu kahúve nágĕa",
-                            "source": "Farewell",
-                            "pronunciation": "mungu kahuve nagea"
-                  },
-                  {
-                            "target": "Asante",
-                            "source": "Thank you",
-                            "pronunciation": "a-san-te"
-                  }
+          {
+            "target": "kedéria",
+            "source": "Greet",
+            "pronunciation": "kederia"
+          },
+          {
+            "target": "arára",
+            "source": "Peace",
+            "pronunciation": "arara"
+          },
+          {
+            "target": "ṣadda",
+            "source": "Thank",
+            "pronunciation": "sadda"
+          },
+          {
+            "target": "baríki",
+            "source": "Bless",
+            "pronunciation": "bariki"
+          },
+          {
+            "target": "kédia",
+            "source": "Salute",
+            "pronunciation": "kedia"
+          },
+          {
+            "target": "yaza",
+            "source": "Pardon",
+            "pronunciation": "ya-za"
+          },
+          {
+            "target": "zákkisa",
+            "source": "Please",
+            "pronunciation": "zakkisa"
+          },
+          {
+            "target": "Karibu mudzini",
+            "source": "Welcome",
+            "pronunciation": "ka-ri-bu mu-dzi-ni"
+          },
+          {
+            "target": "mungu kahúve nágĕa",
+            "source": "Farewell",
+            "pronunciation": "mungu kahuve nagea"
+          },
+          {
+            "target": "Asante",
+            "source": "Thank you",
+            "pronunciation": "a-san-te"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Karibu mudzini",
-                            "source": "Welcome"
-                  },
-                  {
-                            "target": "mungu kahúve nágĕa",
-                            "source": "Farewell"
-                  },
-                  {
-                            "target": "mungu kahúve nágĕa!",
-                            "source": "Farewell! May God give thee peace!"
-                  },
-                  {
-                            "target": "ídji pl. mádji",
-                            "source": "Egg"
-                  },
-                  {
-                            "target": "múntu jua kumbíka",
-                            "source": "Cook"
-                  },
-                  {
-                            "target": "mfúnga mzé",
-                            "source": "Rice"
-                  },
-                  {
-                            "target": "uji wa niúji",
-                            "source": "Honey"
-                  },
-                  {
-                            "target": "musípa wa muási",
-                            "source": "Pulse"
-                  }
+          {
+            "target": "mungu kahúve nágĕa!",
+            "source": "Farewell! May God give thee peace!"
+          }
         ]
-},
+      },
       {
         "id": "pokomo-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Pokomo (Kipfokomo) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
+        "culturalNote": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944).",
         "words": [
-                  {
-                            "target": "motsi (-motsi",
-                            "source": "One",
-                            "pronunciation": "mo-tsi"
-                  },
-                  {
-                            "target": "mbili (-wili",
-                            "source": "Two",
-                            "pronunciation": "mbi-li"
-                  },
-                  {
-                            "target": "tandahu",
-                            "source": "Six",
-                            "pronunciation": "tan-da-hu"
-                  },
-                  {
-                            "target": "kumi",
-                            "source": "Ten",
-                            "pronunciation": "ku-mi"
-                  },
-                  {
-                            "target": "nne",
-                            "source": "Four",
-                            "pronunciation": "nne"
-                  },
-                  {
-                            "target": "tsano",
-                            "source": "Five",
-                            "pronunciation": "tsa-no"
-                  },
-                  {
-                            "target": "kenda",
-                            "source": "Nine",
-                            "pronunciation": "ken-da"
-                  },
-                  {
-                            "target": "múeda mmóza",
-                            "source": "Once",
-                            "pronunciation": "mueda mmoza"
-                  },
-                  {
-                            "target": "wawíi",
-                            "source": "Both",
-                            "pronunciation": "wawii"
-                  },
-                  {
-                            "target": "tahu (-tahu",
-                            "source": "Three",
-                            "pronunciation": "ta-hu"
-                  }
+          {
+            "target": "motsi",
+            "source": "One",
+            "pronunciation": "mo-tsi"
+          },
+          {
+            "target": "mbili",
+            "source": "Two",
+            "pronunciation": "mbi-li"
+          },
+          {
+            "target": "tandahu",
+            "source": "Six",
+            "pronunciation": "tan-da-hu"
+          },
+          {
+            "target": "kumi",
+            "source": "Ten",
+            "pronunciation": "ku-mi"
+          },
+          {
+            "target": "nne",
+            "source": "Four",
+            "pronunciation": "nne"
+          },
+          {
+            "target": "tsano",
+            "source": "Five",
+            "pronunciation": "tsa-no"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine",
+            "pronunciation": "ken-da"
+          },
+          {
+            "target": "múeda mmóza",
+            "source": "Once",
+            "pronunciation": "mueda mmoza"
+          },
+          {
+            "target": "wawíi",
+            "source": "Both",
+            "pronunciation": "wawii"
+          },
+          {
+            "target": "tahu",
+            "source": "Three",
+            "pronunciation": "ta-hu"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "motsi (-motsi",
-                            "source": "One"
-                  },
-                  {
-                            "target": "mbili (-wili",
-                            "source": "Two"
-                  },
-                  {
-                            "target": "múeda mmóza",
-                            "source": "Once"
-                  },
-                  {
-                            "target": "tahu (-tahu",
-                            "source": "Three"
-                  },
-                  {
-                            "target": "wa kwansa",
-                            "source": "First"
-                  },
-                  {
-                            "target": "míeda miwíi",
-                            "source": "Twice"
-                  },
-                  {
-                            "target": "Mī-rōnggo mī-nē",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "Mī-rōnggo mī-tsāno",
-                            "source": "Fifty"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

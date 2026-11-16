@@ -37,7 +37,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "icon": "TreePine",
         "description": "Learn greetings and the 9 noun classes from Rev. J. A. Wray’s 1894 Taita Grammar (pp. 9–13, 115–116).",
         "tips": "Rev. J. Alfred Wray (1894, pp. 9–13) documents 9 noun classes in Kisagala, including Class VII Diminutives where both ka- and tu- are singular prefixes making their plural in vi- (kanyumba → vinyumba 'little house', tunguku → vinguku 'little fowl', tumwana → viwana 'little child'), whereas Johnston (1919 #14) records ka-/tu- (kanyonyi → tunyonyi) in Kidawida.",
-        "culturalNote": "In Rev. J. Alfred Wray's 'An Elementary Introduction to the Taita Language' (1894, pp. 93, 114, 115–116), the complete Kisagala village salutation ('Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli / Sikwesi. — Una maana? — Na maana. — Kukeja maana? — Kweja maana'), morning ('Walamsaje? — Nalamuka banana'), evening ('Wasindaje? — Nasinda banana'), and parting ('Ko mbole — Haya ko mbole, genda banana') greetings are recorded alongside the baobab-pod riddle 'Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba' and Shaw's (1885) 'Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!'",
+        "culturalNote": "In Rev. J. Alfred Wray's 'An Elementary Introduction to the Taita Language' (1894, pp. 93, 114, 115–116), the complete Kisagala village salutation ('Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli / Sikwesi. — Una maana? — Na maana. — Kukeja maana? — Kweja maana'), morning ('Walamsaje? — Nalamuka banana'), evening ('Wasindaje? — Nasinda banana'), and parting ('Ko mbole — Haya ko mbole, genda banana') greetings are recorded alongside the baobab-pod riddle 'Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba' and Shaw's (1885) 'Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!'.",
         "words": [
           {
             "target": "Una maana? — Na maana",
@@ -65,32 +65,80 @@ export const TAITA_UNITS: CourseUnit[] = [
             "pronunciation": "nagala-ndam-kalle-maana"
           },
           {
-            "target": "mundu / mdu (pl. wandu) / m'gosi (pl. wa'gosi)",
-            "source": "Person (pl. People) / Old man, elder, gentleman",
+            "target": "mundu",
+            "source": "Person (pl. People)",
             "pronunciation": "mundu / mdu / m'go-si",
             "hint": "Wray (1894, pp. 9, 97, 108) Class I (m-/wa-)"
           },
           {
-            "target": "mwanake (pl. waanake) / mchana (pl. wachana) / mtawana (pl. watawana)",
-            "source": "Child / Young woman / Young man",
+            "target": "mdu (pl. wandu)",
+            "source": "Old man, elder, gentleman",
+            "pronunciation": "mundu / mdu / m'go-si",
+            "hint": "Wray (1894, pp. 9, 97, 108) Class I (m-/wa-)"
+          },
+          {
+            "target": "mwanake (pl. waanake)",
+            "source": "Child",
             "pronunciation": "mwa-na-ke / mcha-na / mta-wa-na",
             "hint": "Wray (1894, p. 9) Class I"
           },
           {
-            "target": "meji (machi) / moto / ijua (pl. majua)",
-            "source": "Water / Fire / Sun (or day)",
+            "target": "mchana (pl. wachana)",
+            "source": "Young woman",
+            "pronunciation": "mwa-na-ke / mcha-na / mta-wa-na",
+            "hint": "Wray (1894, p. 9) Class I"
+          },
+          {
+            "target": "mtawana (pl. watawana)",
+            "source": "Young man",
+            "pronunciation": "mwa-na-ke / mcha-na / mta-wa-na",
+            "hint": "Wray (1894, p. 9) Class I"
+          },
+          {
+            "target": "meji (machi)",
+            "source": "Water",
             "pronunciation": "me-ji / mo-to / i-jua",
             "hint": "Wray (1894, pp. 11–12) Class V"
           },
           {
-            "target": "mwiti (pl. mīti) / nyumba (loc. nyumbeni kwangu)",
-            "source": "Tree (pl. Trees) / House (in my house)",
+            "target": "moto",
+            "source": "Fire",
+            "pronunciation": "me-ji / mo-to / i-jua",
+            "hint": "Wray (1894, pp. 11–12) Class V"
+          },
+          {
+            "target": "ijua (pl. majua)",
+            "source": "Sun (or day)",
+            "pronunciation": "me-ji / mo-to / i-jua",
+            "hint": "Wray (1894, pp. 11–12) Class V"
+          },
+          {
+            "target": "mwiti (pl. mīti)",
+            "source": "Tree (pl. Trees)",
             "pronunciation": "mwi-ti / nyumba",
             "hint": "Wray (1894, pp. 9–10, 13) Class II, III & Locative"
           },
           {
-            "target": "kanyumba (pl. vinyumba) / tunguku (pl. vinguku) / tumwana (pl. viwana)",
-            "source": "Little house / Little fowl / Little child (Class VII Diminutives)",
+            "target": "nyumba (loc. nyumbeni kwangu)",
+            "source": "House (in my house)",
+            "pronunciation": "mwi-ti / nyumba",
+            "hint": "Wray (1894, pp. 9–10, 13) Class II, III & Locative"
+          },
+          {
+            "target": "kanyumba (pl. vinyumba)",
+            "source": "Little house",
+            "pronunciation": "kanyumba / tungu-ku / tumwa-na",
+            "hint": "Wray (1894, pp. 12–13) ka- & tu- sg. → vi- pl. (Kidawida: kanyonyi → tunyonyi)"
+          },
+          {
+            "target": "tunguku (pl. vinguku)",
+            "source": "Little fowl",
+            "pronunciation": "kanyumba / tungu-ku / tumwa-na",
+            "hint": "Wray (1894, pp. 12–13) ka- & tu- sg. → vi- pl. (Kidawida: kanyonyi → tunyonyi)"
+          },
+          {
+            "target": "tumwana (pl. viwana)",
+            "source": "Little child (Class VII Diminutives)",
             "pronunciation": "kanyumba / tungu-ku / tumwa-na",
             "hint": "Wray (1894, pp. 12–13) ka- & tu- sg. → vi- pl. (Kidawida: kanyonyi → tunyonyi)"
           },
@@ -104,11 +152,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli.",
-            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is"
+            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is."
           },
           {
             "target": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
-            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree (Wray 1894, pp. 93, 114)."
+            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree ."
           }
         ]
       },
@@ -138,14 +186,38 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 23)"
           },
           {
-            "target": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima (to",
+            "target": "kushaia (to love) / kugora (to speak) / kudea (to do) / kulima",
             "source": "Core Class IX ku- Infinitive Verbs",
             "pronunciation": "kushaia / ku-go-ra / ku-dea / ku-li-ma",
             "hint": "Wray (1894, pp. 13, 27–62) paradigm verb kushaia"
           },
           {
-            "target": "Nyamala chwi! / Mkundu lu / Onyilu pi (fi) / Omnyangi tse / Ikumi",
-            "source": "Dead silent! / Bright red / Jet black / Snow white / Ten and only ten / Bone dry /",
+            "target": "Nyamala chwi!",
+            "source": "Dead silent!",
+            "pronunciation": "nyamala-chwi",
+            "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
+          },
+          {
+            "target": "Mkundu lu",
+            "source": "Bright red",
+            "pronunciation": "nyamala-chwi",
+            "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
+          },
+          {
+            "target": "Onyilu pi (fi)",
+            "source": "Jet black",
+            "pronunciation": "nyamala-chwi",
+            "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
+          },
+          {
+            "target": "Omnyangi tse",
+            "source": "Snow white",
+            "pronunciation": "nyamala-chwi",
+            "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
+          },
+          {
+            "target": "Ikumi",
+            "source": "Ten and only ten",
             "pronunciation": "nyamala-chwi",
             "hint": "Wray (1894, pp. 75–76) 13 Ideophonic adverbial enclitics"
           }
@@ -153,21 +225,25 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ta-na-dea’ga kazi; wa-na-lima’ga mgunda.",
-            "source": "We do work continually; they are in the habit of cultivating the garden (Wray 1894, p. 60 Frequentative -na-...-a’ga)."
+            "source": "We do work continually; they are in the habit of cultivating the garden ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"tandatu (ndandatu), mfungate, nane, ikenda, ikumi / afwa (Kidawida: irandadu, mfungade, wunyanya)\" in Taita?",
-            "correctAnswer": "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)",
+            "correctAnswer": "6",
             "options": [
-              "Ordinals & Adverbial Numerals",
-              "Core Class IX ku- Infinitive Verbs",
-              "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)",
-              "1, 2, 3, 4, 5"
+              "1",
+              "6",
+              "Dead silent!",
+              "Bright red"
             ],
-            "hint": "Wray (1894, pp. 20–22)"
+            "hint": "Wray (1894, pp. 20–22)",
+            "acceptedAnswers": [
+              "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)",
+              "6"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -176,8 +252,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "options": [
               "Core Class IX ku- Infinitive Verbs",
               "Ordinals & Adverbial Numerals",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10 (mbuzi afwa = 10 goats)"
+              "Dead silent!",
+              "Bright red"
             ],
             "hint": "Wray (1894, p. 23)"
           }
@@ -259,15 +335,19 @@ export const TAITA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mundu (pl. wandu)\" in Taita?",
-            "correctAnswer": "Person / Human being",
+            "prompt": "What is the English meaning of \"mundu\" in Taita?",
+            "correctAnswer": "Person",
             "options": [
               "Father",
               "Mother",
-              "Child",
-              "Person / Human being"
+              "Person",
+              "Child"
             ],
-            "hint": "Wray (1894), Shaw (1885) & Sakamoto (2003)"
+            "hint": "Wray (1894), Shaw (1885) & Sakamoto (2003)",
+            "acceptedAnswers": [
+              "Person / Human being",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -276,8 +356,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "options": [
               "Mother",
               "Child",
-              "Father",
-              "Person / Human being"
+              "Person",
+              "Father"
             ],
             "hint": "Wray (1894) & Shaw (1885) — Ki-Taita"
           },
@@ -287,35 +367,43 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Mother",
             "options": [
               "Child",
-              "Mother",
-              "Person / Human being",
-              "Father"
+              "Person",
+              "Father",
+              "Mother"
             ],
             "hint": "Wray (1894) & Shaw (1885) — Ki-Taita"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mother\" in Taita?",
-            "correctAnswer": "mao / mamo",
+            "correctAnswer": "mao",
             "options": [
-              "mao / mamo",
-              "mundu (pl. wandu)",
-              "aba / baba",
-              "mwana (pl. wana)"
+              "mao",
+              "mundu",
+              "aba",
+              "mwana"
             ],
-            "hint": "mao / mamo"
+            "hint": "Starts with \"ma…\" (3 letters)",
+            "acceptedAnswers": [
+              "mao / mamo",
+              "mao"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Child\" in Taita?",
-            "correctAnswer": "mwana (pl. wana)",
+            "correctAnswer": "mwana",
             "options": [
-              "mundu (pl. wandu)",
-              "aba / baba",
-              "mao / mamo",
-              "mwana (pl. wana)"
+              "mundu",
+              "mwana",
+              "aba",
+              "mao"
             ],
-            "hint": "mwana (pl. wana)"
+            "hint": "Starts with \"mw…\" (5 letters)",
+            "acceptedAnswers": [
+              "mwana (pl. wana)",
+              "mwana"
+            ]
           },
           {
             "type": "match_pairs",
@@ -343,14 +431,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita term for \"Man / Husband\": ___",
-            "correctAnswer": "mume (pl. waume)",
+            "correctAnswer": "mume",
             "options": [
-              "mundu (pl. wandu)",
-              "aba / baba",
-              "mao / mamo",
-              "mume (pl. waume)"
+              "mume",
+              "mundu",
+              "aba",
+              "mao"
             ],
-            "hint": "Wray (1894) & Shaw (1885) — Ki-Taita"
+            "hint": "Wray (1894) & Shaw (1885) — Ki-Taita",
+            "acceptedAnswers": [
+              "mume (pl. waume)",
+              "mume"
+            ]
           }
         ]
       },
@@ -423,60 +515,68 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"zina (pl. mazina)\" in Taita?",
             "correctAnswer": "Name",
             "options": [
-              "Adornment [for a bride]",
-              "Aunt [the father's sister]",
-              "Baby",
-              "Name"
+              "Name",
+              "Adornment",
+              "Aunt",
+              "Baby"
             ],
             "hint": "Wray (1894) — Taita"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"malasa\" in Taita?",
-            "correctAnswer": "Adornment [for a bride]",
+            "correctAnswer": "Adornment",
             "options": [
-              "Aunt [the father's sister]",
+              "Aunt",
               "Baby",
-              "Adornment [for a bride]",
+              "Adornment",
               "Name"
             ],
-            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
+            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+            "acceptedAnswers": [
+              "Adornment [for a bride]",
+              "Adornment"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mama\" in Taita?",
-            "correctAnswer": "Aunt [the father's sister]",
+            "correctAnswer": "Aunt",
             "options": [
               "Baby",
-              "Aunt [the father's sister]",
               "Name",
-              "Adornment [for a bride]"
+              "Adornment",
+              "Aunt"
             ],
-            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
+            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+            "acceptedAnswers": [
+              "Aunt [the father's sister]",
+              "Aunt"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Aunt [the father's sister]\" in Taita?",
             "correctAnswer": "mama",
             "options": [
+              "zina",
               "mama",
-              "zina (pl. mazina)",
               "malasa",
               "mwana mkoo"
             ],
-            "hint": "mama"
+            "hint": "Starts with \"ma…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Baby\" in Taita?",
             "correctAnswer": "mwana mkoo",
             "options": [
-              "zina (pl. mazina)",
+              "zina",
+              "mwana mkoo",
               "malasa",
-              "mama",
-              "mwana mkoo"
+              "mama"
             ],
-            "hint": "mwana mkoo"
+            "hint": "Starts with \"mw…\" (10 letters)"
           },
           {
             "type": "match_pairs",
@@ -506,10 +606,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taita term for \"Bride\": ___",
             "correctAnswer": "mwali",
             "options": [
-              "zina (pl. mazina)",
+              "zina",
+              "mwali",
               "malasa",
-              "mama",
-              "mwali"
+              "mama"
             ],
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           }
@@ -588,11 +688,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ikenda — ikumi",
-            "source": "Nine — Ten"
+            "source": "Nine — Ten."
           },
           {
             "target": "ikumi na imweri — ikumi na iwi",
-            "source": "Eleven — Twelve"
+            "source": "Eleven — Twelve."
           }
         ],
         "authoredExercises": [
@@ -601,10 +701,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What does \"ikenda\" mean in English?",
             "correctAnswer": "Nine",
             "options": [
-              "Nine",
               "Ten",
               "Eleven",
-              "Twelve"
+              "Twelve",
+              "Nine"
             ],
             "hint": "Core vocabulary in Cardinal & Ordinal Numerals"
           },
@@ -727,9 +827,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Few",
             "options": [
               "Fifty",
-              "Fire-place, the three stones which support the pan",
-              "Forty",
-              "Few"
+              "Few",
+              "Fire-place",
+              "Forty"
             ],
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           },
@@ -738,7 +838,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mirongo misano\" in Taita?",
             "correctAnswer": "Fifty",
             "options": [
-              "Fire-place, the three stones which support the pan",
+              "Fire-place",
               "Forty",
               "Fifty",
               "Few"
@@ -748,38 +848,42 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"mafiga\" in Taita?",
-            "correctAnswer": "Fire-place, the three stones which support the pan",
+            "correctAnswer": "Fire-place",
             "options": [
               "Forty",
-              "Fire-place, the three stones which support the pan",
               "Few",
-              "Fifty"
+              "Fifty",
+              "Fire-place"
             ],
-            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
+            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+            "acceptedAnswers": [
+              "Fire-place, the three stones which support the pan",
+              "Fire-place"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fire-place, the three stones which support the pan\" in Taita?",
             "correctAnswer": "mafiga",
             "options": [
-              "mafiga",
               "-chache",
               "mirongo misano",
-              "mirongo mine"
+              "nusu",
+              "mafiga"
             ],
-            "hint": "mafiga"
+            "hint": "Starts with \"ma…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Forty\" in Taita?",
             "correctAnswer": "mirongo mine",
             "options": [
+              "mirongo mine",
               "-chache",
-              "mirongo misano",
               "mafiga",
-              "mirongo mine"
+              "nusu"
             ],
-            "hint": "mirongo mine"
+            "hint": "Starts with \"mi…\" (12 letters)"
           },
           {
             "type": "match_pairs",
@@ -807,14 +911,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita term for \"Half\": ___",
-            "correctAnswer": "nusu, mbeo",
+            "correctAnswer": "nusu",
             "options": [
               "-chache",
               "mirongo misano",
               "mafiga",
-              "nusu, mbeo"
+              "nusu"
             ],
-            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
+            "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)",
+            "acceptedAnswers": [
+              "nusu, mbeo",
+              "nusu"
+            ]
           }
         ]
       }
@@ -890,11 +998,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kajo — nyama",
-            "source": "Food — Meat"
+            "source": "Food — Meat."
           },
           {
             "target": "maziwa — iru",
-            "source": "Milk — Banana"
+            "source": "Milk — Banana."
           }
         ],
         "authoredExercises": [
@@ -903,12 +1011,12 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What does \"kajo\" mean in English?",
             "correctAnswer": "Food",
             "options": [
-              "Food",
               "Meat",
+              "Food",
               "Milk",
               "Banana"
             ],
-            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
+            "hint": "Starts with \"Fo…\" (4 letters)"
           },
           {
             "type": "translate_to_target",
@@ -987,7 +1095,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-teleka, ku-isha (to boil over: ku-fura)",
-            "source": "Boil, to (cook by boiling)",
+            "source": "To boil (cook by boiling)",
             "pronunciation": "ku-teleka / ku-isha / ku-fura",
             "hint": "Wray (1894, p. 81) Boil, to"
           },
@@ -1004,7 +1112,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 81) Bread"
           },
           {
-            "target": "mafuta 'ga ng'ombe",
+            "target": "mafuta ombe",
             "source": "Butter",
             "pronunciation": "ma-fu-ta 'ga ng'ombe",
             "hint": "Wray (1894, p. 82) Butter"
@@ -1015,7 +1123,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "pronunciation": "manga"
           },
           {
-            "target": "ikaji, pl. makaji",
+            "target": "ikaji",
             "source": "Sweet potato & 9 Taita varieties",
             "pronunciation": "ikaji"
           },
@@ -1029,11 +1137,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mabemba 'gafunya mguchu, 'gafuma, 'gadea kiala, 'gafahasa, 'ganyaza sombe, 'gafirihisa, 'galasa ndoo, 'gapuhura, 'gaoma.",
-            "source": "Indian corn (maize) sprouts, the blade appears, forms a stalk, silk dries, and ripens fully through 9 stages (Wray 1894, pp. 87–88)."
+            "source": "Indian corn (maize) sprouts, the blade appears, forms a stalk, silk dries, and ripens fully through 9 stages ."
           },
           {
             "target": "Kinolo ni leu lya mabemba; kinaburi ni leu lya mwemba.",
-            "source": "Kinolo is boiled maize-meal bread; kinaburi is sorghum bread (Wray 1894, p. 81)."
+            "source": "Kinolo is boiled maize-meal bread; kinaburi is sorghum bread ."
           }
         ],
         "authoredExercises": [
@@ -1042,10 +1150,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What does \"irugu (plant: ndembo — kisukari, ilalyi, mzuu, chiana, mrabalu, kigulugulu, ikono lya njovu)\" mean in English?",
             "correctAnswer": "Banana & 7 Taita banana varieties",
             "options": [
-              "Banana & 7 Taita banana varieties",
-              "Beef",
               "Beer & traditional Taita drinks",
-              "Boil, to (cook by boiling)"
+              "Sweet potato & 9 Taita varieties",
+              "Banana & 7 Taita banana varieties",
+              "Beef"
             ],
             "hint": "Wray (1894, p. 80) Banana fruit, plant & 7 named varieties"
           },
@@ -1158,8 +1266,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894) — Taita"
           },
           {
-            "target": "mgondi / mlima",
-            "source": "Mountain / Hill",
+            "target": "mgondi",
+            "source": "Mountain",
+            "pronunciation": "mgondi / mli-ma",
+            "hint": "Wray (1894) — Taita"
+          },
+          {
+            "target": "mlima",
+            "source": "Hill",
             "pronunciation": "mgondi / mli-ma",
             "hint": "Wray (1894) — Taita"
           },
@@ -1176,10 +1290,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mazi / machi\" in Taita?",
             "correctAnswer": "Water",
             "options": [
+              "Water",
               "Fire",
               "Sun",
-              "Moon / Month",
-              "Water"
+              "Moon"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           },
@@ -1189,8 +1303,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Fire",
             "options": [
               "Sun",
-              "Moon / Month",
               "Fire",
+              "Moon",
               "Water"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
@@ -1200,10 +1314,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"izuwa\" in Taita?",
             "correctAnswer": "Sun",
             "options": [
-              "Moon / Month",
-              "Sun",
+              "Moon",
               "Water",
-              "Fire"
+              "Fire",
+              "Sun"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           },
@@ -1212,24 +1326,28 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Sun\" in Taita?",
             "correctAnswer": "izuwa",
             "options": [
-              "izuwa",
-              "mazi / machi",
-              "mdo / moto",
-              "mori (pl. miori)"
+              "mazi",
+              "mdo",
+              "mori",
+              "izuwa"
             ],
-            "hint": "izuwa"
+            "hint": "Starts with \"iz…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Moon / Month\" in Taita?",
-            "correctAnswer": "mori (pl. miori)",
+            "correctAnswer": "mori",
             "options": [
-              "mazi / machi",
-              "mdo / moto",
+              "mazi",
+              "mdo",
               "izuwa",
-              "mori (pl. miori)"
+              "mori"
             ],
-            "hint": "mori (pl. miori)"
+            "hint": "Starts with \"mo…\" (4 letters)",
+            "acceptedAnswers": [
+              "mori (pl. miori)",
+              "mori"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1257,14 +1375,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita term for \"Star\": ___",
-            "correctAnswer": "nyota / ndondwa",
+            "correctAnswer": "nyota",
             "options": [
-              "mazi / machi",
-              "mdo / moto",
-              "izuwa",
-              "nyota / ndondwa"
+              "nyota",
+              "mazi",
+              "mdo",
+              "izuwa"
             ],
-            "hint": "Wray (1894) — Taita"
+            "hint": "Wray (1894) — Taita",
+            "acceptedAnswers": [
+              "nyota / ndondwa",
+              "nyota"
+            ]
           }
         ]
       },
@@ -1283,8 +1405,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           },
           {
-            "target": "isi / ntsi",
-            "source": "Earth / Country",
+            "target": "isi",
+            "source": "Earth",
+            "pronunciation": "isi / ntsi",
+            "hint": "Wray (1894) & CLDR (dav.xml)"
+          },
+          {
+            "target": "ntsi",
+            "source": "Country",
             "pronunciation": "isi / ntsi",
             "hint": "Wray (1894) & CLDR (dav.xml)"
           },
@@ -1301,8 +1429,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           },
           {
-            "target": "mto / mfereji",
-            "source": "River / Stream",
+            "target": "mto",
+            "source": "River",
+            "pronunciation": "mto / mfe-re-ji",
+            "hint": "Wray (1894) — Taita"
+          },
+          {
+            "target": "mfereji",
+            "source": "Stream",
             "pronunciation": "mto / mfe-re-ji",
             "hint": "Wray (1894) — Taita"
           },
@@ -1330,25 +1464,29 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ighwe — isi",
-            "source": "Stone — Earth"
+            "source": "Stone — Earth."
           },
           {
             "target": "ituku — kilo",
-            "source": "Day — Night"
+            "source": "Day — Night."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"ighwe\" mean in English?",
-            "correctAnswer": "Stone / Rock",
+            "correctAnswer": "Stone",
             "options": [
-              "Stone / Rock",
-              "Earth / Country",
+              "Earth",
               "Day",
-              "Night"
+              "Night",
+              "Stone"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees"
+            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "acceptedAnswers": [
+              "Stone / Rock",
+              "Stone"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1479,9 +1617,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Head",
             "options": [
               "Eye",
+              "Head",
               "Ear",
-              "Nose",
-              "Head"
+              "Nose"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
           },
@@ -1490,9 +1628,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"righo / izo (pl. meso)\" in Taita?",
             "correctAnswer": "Eye",
             "options": [
+              "Eye",
               "Ear",
               "Nose",
-              "Eye",
               "Head"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
@@ -1512,26 +1650,30 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Ear\" in Taita?",
-            "correctAnswer": "kutu (pl. matu)",
+            "correctAnswer": "kutu",
             "options": [
-              "kutu (pl. matu)",
-              "chongo (pl. vyongo) / mtwe",
-              "righo / izo (pl. meso)",
+              "chongo",
+              "righo",
+              "kutu",
               "mbula"
             ],
-            "hint": "kutu (pl. matu)"
+            "hint": "Starts with \"ku…\" (4 letters)",
+            "acceptedAnswers": [
+              "kutu (pl. matu)",
+              "kutu"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Taita?",
             "correctAnswer": "mbula",
             "options": [
-              "chongo (pl. vyongo) / mtwe",
-              "righo / izo (pl. meso)",
-              "kutu (pl. matu)",
-              "mbula"
+              "mbula",
+              "chongo",
+              "righo",
+              "kutu"
             ],
-            "hint": "mbula"
+            "hint": "Starts with \"mb…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1559,14 +1701,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita term for \"Mouth\": ___",
-            "correctAnswer": "momu / mlomo",
+            "correctAnswer": "momu",
             "options": [
-              "chongo (pl. vyongo) / mtwe",
-              "righo / izo (pl. meso)",
-              "kutu (pl. matu)",
-              "momu / mlomo"
+              "momu",
+              "chongo",
+              "righo",
+              "kutu"
             ],
-            "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
+            "hint": "Shaw (1885) & Wray (1894) — Ki-Taita",
+            "acceptedAnswers": [
+              "momu / mlomo",
+              "momu"
+            ]
           }
         ]
       },
@@ -1640,9 +1786,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Heart",
             "options": [
               "Blood",
+              "Heart",
               "Bone",
-              "Stomach / Belly",
-              "Heart"
+              "Stomach"
             ],
             "hint": "Wray (1894) — Taita"
           },
@@ -1652,8 +1798,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Blood",
             "options": [
               "Bone",
-              "Stomach / Belly",
               "Blood",
+              "Stomach",
               "Heart"
             ],
             "hint": "Shaw (1885) & Wray (1894) — Ki-Taita"
@@ -1663,36 +1809,44 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ifindi (pl. mafindi)\" in Taita?",
             "correctAnswer": "Bone",
             "options": [
-              "Stomach / Belly",
-              "Bone",
+              "Stomach",
               "Heart",
-              "Blood"
+              "Blood",
+              "Bone"
             ],
             "hint": "Wray (1894) — Taita"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Bone\" in Taita?",
-            "correctAnswer": "ifindi (pl. mafindi)",
+            "correctAnswer": "ifindi",
             "options": [
-              "ifindi (pl. mafindi)",
               "ngolo",
-              "baga / sakame",
-              "nda /kifu"
+              "ifindi",
+              "baga",
+              "nda"
             ],
-            "hint": "ifindi (pl. mafindi)"
+            "hint": "Starts with \"if…\" (6 letters)",
+            "acceptedAnswers": [
+              "ifindi (pl. mafindi)",
+              "ifindi"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Stomach / Belly\" in Taita?",
-            "correctAnswer": "nda /kifu",
+            "prompt": "How do you say \"Stomach\" in Taita?",
+            "correctAnswer": "nda",
             "options": [
               "ngolo",
-              "baga / sakame",
-              "ifindi (pl. mafindi)",
-              "nda /kifu"
+              "nda",
+              "baga",
+              "ifindi"
             ],
-            "hint": "nda / kifu"
+            "hint": "Starts with \"nd…\" (3 letters)",
+            "acceptedAnswers": [
+              "nda /kifu",
+              "nda"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1722,10 +1876,10 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Taita term for \"Ankle\": ___",
             "correctAnswer": "ungo 'gwa kigulu",
             "options": [
+              "ungo 'gwa kigulu",
               "ngolo",
-              "baga / sakame",
-              "ifindi (pl. mafindi)",
-              "ungo 'gwa kigulu"
+              "baga",
+              "ifindi"
             ],
             "hint": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect)"
           }
@@ -1786,8 +1940,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894) — Taita"
           },
           {
-            "target": "kugamba / kuteta",
-            "source": "Speak / Say",
+            "target": "kugamba",
+            "source": "Speak",
+            "pronunciation": "ku-gamba / ku-te-ta",
+            "hint": "Wray (1894) — Taita"
+          },
+          {
+            "target": "kuteta",
+            "source": "Say",
             "pronunciation": "ku-gamba / ku-te-ta",
             "hint": "Wray (1894) — Taita"
           },
@@ -1811,9 +1971,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Eat",
             "options": [
               "Drink",
+              "Eat",
               "Go",
-              "Come",
-              "Eat"
+              "Come"
             ],
             "hint": "Wray (1894) & Sakamoto (2005) — Kidawida"
           },
@@ -1823,8 +1983,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Drink",
             "options": [
               "Go",
-              "Come",
               "Drink",
+              "Come",
               "Eat"
             ],
             "hint": "Wray (1894) & Sakamoto (2005) — Kidawida"
@@ -1834,8 +1994,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kugenda\" in Taita?",
             "correctAnswer": "Go",
             "options": [
-              "Come",
               "Go",
+              "Come",
               "Eat",
               "Drink"
             ],
@@ -1847,23 +2007,23 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "kugenda",
             "options": [
               "kugenda",
-              "kuja / kula",
+              "kuja",
               "kunwa",
               "kucha"
             ],
-            "hint": "kugenda"
+            "hint": "Starts with \"ku…\" (7 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Come\" in Taita?",
             "correctAnswer": "kucha",
             "options": [
-              "kuja / kula",
+              "kucha",
+              "kuja",
               "kunwa",
-              "kugenda",
-              "kucha"
+              "kugenda"
             ],
-            "hint": "kucha"
+            "hint": "Starts with \"ku…\" (5 letters)"
           },
           {
             "type": "match_pairs",
@@ -1891,14 +2051,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita term for \"See\": ___",
-            "correctAnswer": "kuona / kulola",
+            "correctAnswer": "kuona",
             "options": [
-              "kuja / kula",
+              "kuja",
               "kunwa",
               "kugenda",
-              "kuona / kulola"
+              "kuona"
             ],
-            "hint": "Wray (1894) & Sakamoto (2005) — Kidawida"
+            "hint": "Wray (1894) & Sakamoto (2005) — Kidawida",
+            "acceptedAnswers": [
+              "kuona / kulola",
+              "kuona"
+            ]
           }
         ]
       },
@@ -1935,8 +2099,14 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Sakamoto (2003) — Kidawida"
           },
           {
-            "target": "kulima / kudeka",
-            "source": "Work / Cultivate",
+            "target": "kulima",
+            "source": "Work",
+            "pronunciation": "ku-li-ma / ku-de-ka",
+            "hint": "Wray (1894) — Taita"
+          },
+          {
+            "target": "kudeka",
+            "source": "Cultivate",
             "pronunciation": "ku-li-ma / ku-de-ka",
             "hint": "Wray (1894) — Taita"
           },
@@ -1971,24 +2141,28 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"kuneka\" in Taita?",
             "correctAnswer": "Give",
             "options": [
-              "Love / Want",
+              "Love",
+              "Give",
               "Know",
-              "Sing",
-              "Give"
+              "Sing"
             ],
             "hint": "Wray (1894) — Taita"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kukunda\" in Taita?",
-            "correctAnswer": "Love / Want",
+            "correctAnswer": "Love",
             "options": [
               "Know",
               "Sing",
-              "Love / Want",
+              "Love",
               "Give"
             ],
-            "hint": "Wray (1894) & Sakamoto (2005) — Kidawida"
+            "hint": "Wray (1894) & Sakamoto (2005) — Kidawida",
+            "acceptedAnswers": [
+              "Love / Want",
+              "Love"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1996,9 +2170,9 @@ export const TAITA_UNITS: CourseUnit[] = [
             "correctAnswer": "Know",
             "options": [
               "Sing",
-              "Know",
               "Give",
-              "Love / Want"
+              "Know",
+              "Love"
             ],
             "hint": "Wray (1894) — Taita"
           },
@@ -2007,24 +2181,28 @@ export const TAITA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Know\" in Taita?",
             "correctAnswer": "kumanya",
             "options": [
-              "kumanya",
               "kuneka",
               "kukunda",
-              "kuimba / kubora"
+              "kumanya",
+              "kuimba"
             ],
-            "hint": "kumanya"
+            "hint": "Starts with \"ku…\" (7 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Sing\" in Taita?",
-            "correctAnswer": "kuimba / kubora",
+            "correctAnswer": "kuimba",
             "options": [
               "kuneka",
+              "kuimba",
               "kukunda",
-              "kumanya",
-              "kuimba / kubora"
+              "kumanya"
             ],
-            "hint": "kubora"
+            "hint": "kubora",
+            "acceptedAnswers": [
+              "kuimba / kubora",
+              "kuimba"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2051,15 +2229,19 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Taita term for \"Work / Cultivate\": ___",
-            "correctAnswer": "kulima / kudeka",
+            "prompt": "Complete the Taita term for \"Work\": ___",
+            "correctAnswer": "kulima",
             "options": [
               "kuneka",
+              "kulima",
               "kukunda",
-              "kumanya",
-              "kulima / kudeka"
+              "kumanya"
             ],
-            "hint": "Wray (1894) — Taita"
+            "hint": "Wray (1894) — Taita",
+            "acceptedAnswers": [
+              "kulima / kudeka",
+              "kulima"
+            ]
           }
         ]
       }
@@ -2131,25 +2313,29 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mwakucha wedi? — Ki-lavu",
-            "source": "Good morning — Day"
+            "source": "Good morning — Day."
           },
           {
             "target": "saa — msenya 'gati, ijua chongoni",
-            "source": "Hour — Noon"
+            "source": "Hour — Noon."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Mwakucha wedi?\" mean in English?",
-            "correctAnswer": "Good morning (Have you dawned well?)",
+            "correctAnswer": "Good morning",
             "options": [
-              "Good morning (Have you dawned well?)",
               "Day",
               "Hour",
-              "Noon"
+              "Noon",
+              "Good morning"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons",
+            "acceptedAnswers": [
+              "Good morning (Have you dawned well?)",
+              "Good morning"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2292,7 +2478,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "avui na (near)",
-            "source": "Near to",
+            "source": "Near",
             "pronunciation": "avui-na"
           },
           {
@@ -2311,25 +2497,29 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nagenda nyumbani; Nagenda Mombasani; Nagenda Rabai; Genda kwa bwana.",
-            "source": "I go to the house; I go to Mombasa; I go to Rabai; Go to the master (Wray 1894, p. 123)."
+            "source": "I go to the house; I go to Mombasa; I go to Rabai; Go to the master ."
           },
           {
             "target": "Ufuma kwihi? — Nafuma kisirani; nagenda ngila ya chengo.",
-            "source": "Where do you come from? — I come from the hill-top; I am going along the camp road (Wray 1894, pp. 82, 114, 115)."
+            "source": "Where do you come from? — I come from the hill-top; I am going along the camp road ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"ngila (cattle-track: mvori; crossway: ngila ya mkingamo)\" mean in English?",
-            "correctAnswer": "Road, path, way",
+            "correctAnswer": "Road",
             "options": [
-              "Road, path, way",
-              "Journey, caravan • Traveller • Porter, carrier",
-              "Guide, leader • Camp • Ford, river crossing (bridge)",
-              "East (where the sun rises) • West (where the sun sets)"
+              "Journey",
+              "Road",
+              "Guide",
+              "East"
             ],
-            "hint": "Wray (1894, pp. 89, 110, 114, 126) Road, Path & Crossway"
+            "hint": "Starts with \"Ro…\" (4 letters)",
+            "acceptedAnswers": [
+              "Road, path, way",
+              "Road"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2342,7 +2532,7 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"andu ijua lyifuma (East) • mfumingovi (West, where the sun sets)\"",
+            "prompt": "Translate to English: \"andu ijua lyifuma • mfumingovi (West, where the sun sets)\"",
             "correctAnswer": "East (where the sun rises) • West (where the sun sets)",
             "acceptedAnswers": [
               "East (where the sun rises) • West (where the sun sets)"
@@ -2459,7 +2649,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "pronunciation": "ushaia-chihi"
           },
           {
-            "target": "Mwiti u'gu ni 'gwa kulonga ije?",
+            "target": "Mwiti ugwa kulonga ije?",
             "source": "What is this pole for?",
             "pronunciation": "mwiti-u'gu-ni-'gwa"
           },
@@ -2493,11 +2683,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani.",
-            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top (Wray 1894, p. 115)."
+            "source": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top ."
           },
           {
             "target": "Mbulani ukwita mwanake uyu? (Ukwitilani mwanake uyu?) — Keja-kukwito n'ini?",
-            "source": "Why do you beat this child? — Why should he be beaten? (Wray 1894, pp. 61, 66)."
+            "source": "Why do you beat this child? — Why should he be beaten? ."
           }
         ],
         "authoredExercises": [
@@ -2509,7 +2699,7 @@ export const TAITA_UNITS: CourseUnit[] = [
               "Ko mbole — Haya ko mbole, genda banana",
               "Ko mbole"
             ],
-            "hint": "Starts with \"Ko mbole\" (Wray 1894, p. 116)"
+            "hint": "Starts with \"Ko…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -2601,7 +2791,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "pronunciation": "chubwi"
           },
           {
-            "target": "kaleri (only a little), kaileri (only twice), kichacheri (not very",
+            "target": "kaleri (only a little), kaileri (only twice), kichacheri",
             "source": "Diminutive/restrictive enclitic -ri ('only / not very')",
             "pronunciation": "ka-le-ri / kai-le-ri / ki-chache-ri / mo-jo-ri",
             "hint": "Wray (1894, p. 74) Enclitic -ri"
@@ -2657,11 +2847,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Niko wa-onire kitasi changu? — Niko wakojele uyu?",
-            "source": "Who is it that saw my basket? — Who is it that cured this man? (Wray 1894, p. 38 relative niko)."
+            "source": "Who is it that saw my basket? — Who is it that cured this man? ."
           },
           {
             "target": "Kamba wejile igulo mangu wekeona nyamandu.",
-            "source": "If you had come yesterday you would have seen a beast (Wray 1894, p. 54)."
+            "source": "If you had come yesterday you would have seen a beast ."
           }
         ],
         "authoredExercises": [
@@ -2779,25 +2969,29 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
-            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree (Wray 1894, pp. 93, 114)."
+            "source": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree ."
           },
           {
             "target": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
-            "source": "Traditional Taita war-cry rallying the clan in defense of the hills (Wray 1894, p. 89)."
+            "source": "Traditional Taita war-cry rallying the clan in defense of the hills ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the answer to Wray's (1894, pp. 93, 114) Kisagala riddle \"Wada na wada—mwanangu agendele ujombani ela sauja\"?",
-            "correctAnswer": "Kilamba (the seed vessel of the baobab tree)",
+            "correctAnswer": "Kilamba",
             "options": [
-              "Kilamba (the seed vessel of the baobab tree)",
-              "Fisi (the hyena)",
-              "Mekupe (one who blinks his eyes)",
-              "Mfingiri (the roadside stone heap)"
+              "Kilamba",
+              "Fisi",
+              "Mekupe",
+              "Mfingiri"
             ],
-            "hint": "Wray (1894, pp. 93 & 114 under Enigma and Riddle)"
+            "hint": "Wray (1894, pp. 93 & 114 under Enigma and Riddle)",
+            "acceptedAnswers": [
+              "Kilamba (the seed vessel of the baobab tree)",
+              "Kilamba"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2854,7 +3048,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "icon": "ShieldCheck",
         "description": "Master Wray’s ethnographic entries on ancestral skull caves (ngomeni), cloth & bead currency exchange, ivory tusk grades, hair styles, and seasons (pp. 80, 85, 91, 99, 102, 104, 113, 116, 118, 123).",
         "tips": "Wray (1894) documents Taita customary institutions in detail: ancestral skull caves ('ngoma / ngomeni', p. 118), cattle/goat partnership ('ngaru, mbuzi ya ngaru', p. 87) and agistment loans ('ng'ombe ya wada', p. 104), 9 bead types (p. 80), cloth & bead currency standards (' lupande, shuka, doti, jora, koruja / kaba, fundo', p. 85), 4 ivory tusk grades ('Kibori, Tofwa, Tofwa shagangi, Isange', p. 102), 4 seasons (p. 116), and 12 times of day (p. 123).",
-        "culturalNote": "Under 'Skull, ngoma' (p. 118), Wray records: 'It is a custom among the Wa-taita to exhume the skulls of their dead and put them in caves directly all the flesh has left the bones; the grave is then levelled stage by stage, so that all trace of it is quickly lost; a place of skulls, ngomeni.'",
+        "culturalNote": "Under 'Skull, ngoma' (p. 118), Wray records: 'It is a custom among the Wa-taita to exhume the skulls of their dead and put them in caves directly all the flesh has left the bones; the grave is then levelled stage by stage, so that all trace of it is quickly lost; a place of skulls, ngomeni.'.",
         "words": [
           {
             "target": "ngoma (place of skulls: ngomeni)",
@@ -2869,13 +3063,13 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 80 under Beads)"
           },
           {
-            "target": "nguo: lupande (1 yd), shuka, doti (4 yds = 4 strings), jora (30 yds),",
+            "target": "nguo: lupande (1 yd), shuka, doti (4 yds = 4 strings), jora (30 yds)",
             "source": "Cloth & bead trade currency measures (Merikani, Kaniki, Bandira, Bafta,uli)",
             "pronunciation": "lu-pande / shu-ka / do-ti / jo-ra / ko-ru-ja / ka-ba / fundo",
             "hint": "Wray (1894, p. 85 under Cloth)"
           },
           {
-            "target": "njovu, lwembe lwa njovu: Kibori (~7 lbs, 2 hands), Tofwa (3½ hands),",
+            "target": "njovu, lwembe lwa njovu: Kibori (~7 lbs, 2 hands), Tofwa (3½ hands)",
             "source": "Ivory tusk & 4 traditional Taita weight/length grades",
             "pronunciation": "njo-vu / ki-bo-ri / tofwa / tofwa sha-gangi / i-sange",
             "hint": "Wray (1894, p. 102 under Ivory)"
@@ -2887,7 +3081,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 91 under Dress)"
           },
           {
-            "target": "juiri, pl. majuiri: kidole (front tuft), kishungi (crown tuft), mabutu,",
+            "target": "juiri",
             "source": "Hair & 4 traditional Taita coiffures",
             "pronunciation": "jui-ri: ki-do-le / kishungi / ma-bu-tu / ma-vo-re",
             "hint": "Wray (1894, p. 99 under Hair)"
@@ -2904,7 +3098,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, pp. 113 & 116 under Rain and Seasons)"
           },
           {
-            "target": "makeo (4 am), madioro (5 am), ikesho (6 am), nyang'alamu (8 am),",
+            "target": "makeo (4 am), madioro (5 am), ikesho (6 am), nyang'alamu (8 am)",
             "source": "Traditional Taita divisions of the day & night",
             "pronunciation": "makeo",
             "hint": "Wray (1894, p. 123 under Time)"
@@ -2913,11 +3107,11 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mbuzi ya ngaru ni mbuzi ya wandu waili; ng'ombe ya wada ni ng'ombe ya kurisa.",
-            "source": "A company goat (mbuzi ya ngaru) is a goat held by two or more persons; a wada cow is a cow lent out to be herded (Wray 1894, pp. 87, 104)."
+            "source": "A company goat (mbuzi ya ngaru) is a goat held by two or more persons; a wada cow is a cow lent out to be herded ."
           },
           {
             "target": "Mwaka unesi isika, kwalazi, kaskazi, na kifuku.",
-            "source": "The year has the cold foggy season (isika), the lesser rains (kwalazi), the hot season (kaskazi), and the heavy rains (kifuku) (Wray 1894, p. 116)."
+            "source": "The year has the cold foggy season (isika), the lesser rains (kwalazi), the hot season (kaskazi), and the heavy rains (kifuku) ."
           }
         ],
         "authoredExercises": [
@@ -3006,13 +3200,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-fweni [lit. to be fitting]",
-            "source": "Worthy, to be",
+            "source": "To be worthy",
             "pronunciation": "ku-fweni",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
           },
           {
             "target": "ku-sirimisha, T.; ku-sirimika, I.",
-            "source": "Worry, to (transitive & intransitive)",
+            "source": "To worry (transitive & intransitive)",
             "pronunciation": "ku-si-ri-misha / ku-si-ri-mika",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
           },
@@ -3024,13 +3218,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-nyaza, T.; ku-nyala, I.",
-            "source": "Wither, to (transitive & intransitive)",
+            "source": "To wither (transitive & intransitive)",
             "pronunciation": "ku-nyaza / ku-nyala",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
           },
           {
             "target": "ku-funya, T.; ku-fuma, I.",
-            "source": "Withdraw, to (transitive & intransitive)",
+            "source": "To withdraw (transitive & intransitive)",
             "pronunciation": "ku-funya / ku-fuma",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
           }
@@ -3038,21 +3232,25 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kamba wejile igulo mangu wekeona nyamandu; nejile ijuzi.",
-            "source": "If you had come yesterday you would have seen a beast; I came the day before yesterday (Wray 1894, pp. 54, 128)."
+            "source": "If you had come yesterday you would have seen a beast; I came the day before yesterday ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ku-nyaza, T.; ku-nyala, I.\" in Taita (Wray 1894, p. 128)?",
-            "correctAnswer": "Wither, to (transitive & intransitive)",
+            "correctAnswer": "Wither",
             "options": [
-              "Wither, to (transitive & intransitive)",
-              "Worry, to (transitive & intransitive)",
-              "Withdraw, to (transitive & intransitive)",
-              "Worthy, to be"
+              "Worry",
+              "Withdraw",
+              "Worthy",
+              "Wither"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)",
+            "acceptedAnswers": [
+              "Wither, to (transitive & intransitive)",
+              "Wither"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3080,14 +3278,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita (Kisagala) transitive & intransitive pair for \"Worry, to\": ___",
-            "correctAnswer": "ku-sirimisha, T.; ku-sirimika, I.",
+            "correctAnswer": "ku-sirimisha",
             "options": [
-              "ku-sirimisha, T.; ku-sirimika, I.",
-              "vilambo [lit. things of distress]",
+              "vilambo",
+              "ku-sirimisha",
               "-koo",
               "-ako"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)",
+            "acceptedAnswers": [
+              "ku-sirimisha, T.; ku-sirimika, I.",
+              "ku-sirimisha"
+            ]
           }
         ]
       },
@@ -3100,7 +3302,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ku-riga, T.; ku-rigika, I.",
-            "source": "Wind, to (wrap/coil, transitive & intransitive)",
+            "source": "To wind (wrap/coil, transitive & intransitive)",
             "pronunciation": "ku-riga / ku-rigika",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 128)"
           },
@@ -3129,13 +3331,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-nola, ku-kabanya [lit. to strike knives together]",
-            "source": "Whet, to (sharpen a blade)",
+            "source": "To whet (sharpen a blade)",
             "pronunciation": "ku-nola / ku-kabanya",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127)"
           },
           {
             "target": "ku-soa ndigi [lit. to lack strength], ku-nyongeka",
-            "source": "Weak, to be",
+            "source": "To be weak",
             "pronunciation": "ku-soa ndi-gi / ku-nyonge-ka",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)"
           },
@@ -3149,21 +3351,25 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nyamandu wa sakeni; nguo ino ni omnyangi tse.",
-            "source": "A wild animal of the bush; this cloth is snow-white (Wray 1894, pp. 75, 127)."
+            "source": "A wild animal of the bush; this cloth is snow-white ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ku-nola, ku-kabanya [lit. to strike knives together]\" in Taita?",
-            "correctAnswer": "Whet, to (sharpen a blade)",
+            "correctAnswer": "Whet",
             "options": [
-              "Whet, to (sharpen a blade)",
-              "Wind, to (wrap/coil, transitive & intransitive)",
-              "Weak, to be",
-              "Wild"
+              "Wind",
+              "Weak",
+              "Wild",
+              "Whet"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127)",
+            "acceptedAnswers": [
+              "Whet, to (sharpen a blade)",
+              "Whet"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3191,14 +3397,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita (Kisagala) term for \"White (and the white collar of a raven)\": ___",
-            "correctAnswer": "-mnyangi (mnynge); [the white neck of a raven], ikombe",
+            "correctAnswer": "-mnyangi",
             "options": [
-              "-mnyangi (mnynge); [the white neck of a raven], ikombe",
-              "ku-nola, ku-kabanya [lit. to strike knives together]",
-              "ku-riga, T.; ku-rigika, I.",
+              "ku-nola",
+              "-mnyangi",
+              "ku-riga",
               "-a sakeni"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 75, 127)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, pp. 75, 127)",
+            "acceptedAnswers": [
+              "-mnyangi (mnynge); [the white neck of a raven], ikombe",
+              "-mnyangi"
+            ]
           }
         ]
       }
@@ -3221,18 +3431,18 @@ export const TAITA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ku-gorera [lit. to speak for], ku-amwira",
-            "source": "Warn, to",
+            "source": "To warn",
             "pronunciation": "ku-go-re-ra / ku-amwi-ra",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)"
           },
           {
             "target": "ku-ukisa, T.; ku-lamuka, I.",
-            "source": "Wake, to (transitive & intransitive)",
+            "source": "To wake (transitive & intransitive)",
             "pronunciation": "ku-u-ki-sa / ku-la-mu-ka",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)"
           },
           {
-            "target": "mguli [lit. a string or rope]",
+            "target": "mguli [lit. a string / rope]",
             "source": "Vow",
             "pronunciation": "mgu-li",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)"
@@ -3257,13 +3467,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-kunjula, T.; ku-kunjuka, I.",
-            "source": "Unfold, to (transitive & intransitive)",
+            "source": "To unfold (transitive & intransitive)",
             "pronunciation": "ku-kunju-la / ku-kunju-ka",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
           },
           {
             "target": "ku-fungula [lit. to unfasten]",
-            "source": "Undo, to",
+            "source": "To undo",
             "pronunciation": "ku-fungu-la",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
           }
@@ -3271,21 +3481,25 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Walamsaje? — Nalamuka banana; mwanake amuukisa wawa wake.",
-            "source": "How did you wake? — I awoke well; the child woke his grandfather (Wray 1894, pp. 116, 126)."
+            "source": "How did you wake? — I awoke well; the child woke his grandfather ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ku-gorera [lit. to speak for], ku-amwira\" in Taita?",
-            "correctAnswer": "Warn, to",
+            "correctAnswer": "Warn",
             "options": [
-              "Warn, to",
-              "Wake, to (transitive & intransitive)",
+              "Wake",
               "Vow",
-              "Vein, tendon, muscle"
+              "Vein",
+              "Warn"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 126)",
+            "acceptedAnswers": [
+              "Warn, to",
+              "Warn"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3313,14 +3527,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita (Kisagala) term for \"Vain, in (gratis, for nothing)\": ___",
-            "correctAnswer": "-a bule, bule",
+            "correctAnswer": "-a bule",
             "options": [
-              "-a bule, bule",
               "-a lugulu",
-              "ku-gorera [lit. to speak for]",
-              "ku-ukisa, T.; ku-lamuka, I."
+              "ku-gorera",
+              "ku-ukisa",
+              "-a bule"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)",
+            "acceptedAnswers": [
+              "-a bule, bule",
+              "-a bule"
+            ]
           }
         ]
       },
@@ -3333,7 +3551,7 @@ export const TAITA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ku-sikila [lit. to hear], ku-manya",
-            "source": "Understand, to",
+            "source": "To understand",
             "pronunciation": "ku-si-ki-la / ku-ma-nya",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
           },
@@ -3349,13 +3567,13 @@ export const TAITA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ku-galula, T.; ku-galuka, I.; [round], ku-zungulusha, T.; ku-zunguluka, I.",
-            "source": "Turn, to (and to turn round, transitive & intransitive)",
+            "source": "To turn (and to turn round, transitive & intransitive)",
             "pronunciation": "ku-ga-lu-la / ku-ga-lu-ka / ku-zungu-lu-sha",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
           },
           {
             "target": "ku-lolila [lit. to look to]",
-            "source": "Trust, to",
+            "source": "To trust",
             "pronunciation": "ku-lo-li-la",
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124)"
           },
@@ -3380,21 +3598,25 @@ export const TAITA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ijua lyagaluka; wandu wa mbari yetu wanasikila Kisagala.",
-            "source": "The sun has turned (2 p.m.); the people of our clan understand Kisagala (Wray 1894, pp. 123, 124, 125)."
+            "source": "The sun has turned (2 p.m.); the people of our clan understand Kisagala ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ku-sikila [lit. to hear], ku-manya\" in Taita?",
-            "correctAnswer": "Understand, to",
+            "correctAnswer": "Understand",
             "options": [
-              "Understand, to",
               "Two",
               "Twelve",
-              "Turn, to (and to turn round, transitive & intransitive)"
+              "Turn",
+              "Understand"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 125)",
+            "acceptedAnswers": [
+              "Understand, to",
+              "Understand"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3422,14 +3644,18 @@ export const TAITA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Taita (Kisagala) term for \"Trust, to\": ___",
-            "correctAnswer": "ku-lolila [lit. to look to]",
+            "correctAnswer": "ku-lolila",
             "options": [
-              "ku-lolila [lit. to look to]",
-              "mbari, kikuku, lukolo",
-              "ku-sikila [lit. to hear], ku-manya",
-              "pili, -ili; with nouns of the third class, mbili"
+              "ku-lolila",
+              "mbari",
+              "ku-sikila",
+              "pili"
             ],
-            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124)"
+            "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 124)",
+            "acceptedAnswers": [
+              "ku-lolila [lit. to look to]",
+              "ku-lolila"
+            ]
           }
         ]
       },
@@ -3498,187 +3724,121 @@ export const TAITA_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Taita (Kidawida) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921).",
         "words": [
-                  {
-                            "target": "sere",
-                            "source": "Peace",
-                            "pronunciation": "se-re"
-                  },
-                  {
-                            "target": "ku-sigo",
-                            "source": "Pardon",
-                            "pronunciation": "ku-sigo"
-                  },
-                  {
-                            "target": "Chavuche",
-                            "source": "Thank you",
-                            "pronunciation": "chavuche"
-                  },
-                  {
-                            "target": "ku-bariki",
-                            "source": "Bless, to",
-                            "pronunciation": "ku-bariki"
-                  },
-                  {
-                            "target": "ku-rogoa, ku-lamusa",
-                            "source": "Greet, to",
-                            "pronunciation": "ku-rogoa ku-lamusa"
-                  },
-                  {
-                            "target": "ku-uza asanta",
-                            "source": "Thank, to",
-                            "pronunciation": "ku-uza a-santa"
-                  },
-                  {
-                            "target": "kurogoa",
-                            "source": "Salutation",
-                            "pronunciation": "ku-ro-goa"
-                  },
-                  {
-                            "target": "ku-bwelela, ku-sekesa",
-                            "source": "Please, to",
-                            "pronunciation": "ku-bwelela ku-sekesa"
-                  },
-                  {
-                            "target": "ku-siga",
-                            "source": "Pardon, to",
-                            "pronunciation": "ku si-ga lit"
-                  },
-                  {
-                            "target": "Wedi",
-                            "source": "Peace / Goodness",
-                            "pronunciation": "we-di"
-                  }
+          {
+            "target": "sere",
+            "source": "Peace",
+            "pronunciation": "se-re"
+          },
+          {
+            "target": "ku-sigo",
+            "source": "Pardon",
+            "pronunciation": "ku-sigo"
+          },
+          {
+            "target": "Chavuche",
+            "source": "Thank you",
+            "pronunciation": "chavuche"
+          },
+          {
+            "target": "ku-bariki",
+            "source": "To bless",
+            "pronunciation": "ku-bariki"
+          },
+          {
+            "target": "ku-rogoa, ku-lamusa",
+            "source": "To greet",
+            "pronunciation": "ku-rogoa ku-lamusa"
+          },
+          {
+            "target": "ku-uza asanta",
+            "source": "To thank",
+            "pronunciation": "ku-uza a-santa"
+          },
+          {
+            "target": "kurogoa",
+            "source": "Salutation",
+            "pronunciation": "ku-ro-goa"
+          },
+          {
+            "target": "ku-bwelela, ku-sekesa",
+            "source": "To please",
+            "pronunciation": "ku-bwelela ku-sekesa"
+          },
+          {
+            "target": "ku-siga",
+            "source": "To pardon",
+            "pronunciation": "ku si-ga lit"
+          },
+          {
+            "target": "Wedi",
+            "source": "Peace / Goodness",
+            "pronunciation": "we-di"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "ku-rogoa, ku-lamusa",
-                            "source": "Greet, to"
-                  },
-                  {
-                            "target": "ku-uza asanta",
-                            "source": "Thank, to"
-                  },
-                  {
-                            "target": "ku-bwelela, ku-sekesa",
-                            "source": "Please, to"
-                  },
-                  {
-                            "target": "ku-rogoa, ku-lamusa",
-                            "source": "Salute, to"
-                  },
-                  {
-                            "target": "maraha, mavuta",
-                            "source": "Fat"
-                  },
-                  {
-                            "target": "nyama ya ng'ombe",
-                            "source": "Beef"
-                  },
-                  {
-                            "target": "M-nyū. Ki-shōle",
-                            "source": "Salt"
-                  },
-                  {
-                            "target": "chakulya, kilya, kandu",
-                            "source": "Food"
-                  }
-        ]
-},
+        "sentences": []
+      },
       {
         "id": "taita-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Taita (Kidawida) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921)",
+        "culturalNote": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921).",
         "words": [
-                  {
-                            "target": "mosi",
-                            "source": "One",
-                            "pronunciation": "imweri"
-                  },
-                  {
-                            "target": "pili",
-                            "source": "Two",
-                            "pronunciation": "iwi"
-                  },
-                  {
-                            "target": "tandatu",
-                            "source": "Six",
-                            "pronunciation": "irandadu"
-                  },
-                  {
-                            "target": "ikumi",
-                            "source": "Ten",
-                            "pronunciation": "ikumi"
-                  },
-                  {
-                            "target": "ine",
-                            "source": "Four",
-                            "pronunciation": "ina"
-                  },
-                  {
-                            "target": "sano",
-                            "source": "Five",
-                            "pronunciation": "isanu"
-                  },
-                  {
-                            "target": "ikenda",
-                            "source": "Nine",
-                            "pronunciation": "ikenda"
-                  },
-                  {
-                            "target": "-ose -ile",
-                            "source": "Both",
-                            "pronunciation": "ose -ile"
-                  },
-                  {
-                            "target": "nusu, mbeo",
-                            "source": "Half",
-                            "pronunciation": "nu-su mbeo"
-                  },
-                  {
-                            "target": "kamojori, kamoju",
-                            "source": "Once",
-                            "pronunciation": "kamojori kamoju"
-                  }
+          {
+            "target": "mosi",
+            "source": "One",
+            "pronunciation": "imweri"
+          },
+          {
+            "target": "pili",
+            "source": "Two",
+            "pronunciation": "iwi"
+          },
+          {
+            "target": "tandatu",
+            "source": "Six",
+            "pronunciation": "irandadu"
+          },
+          {
+            "target": "ikumi",
+            "source": "Ten",
+            "pronunciation": "ikumi"
+          },
+          {
+            "target": "ine",
+            "source": "Four",
+            "pronunciation": "ina"
+          },
+          {
+            "target": "sano",
+            "source": "Five",
+            "pronunciation": "isanu"
+          },
+          {
+            "target": "ikenda",
+            "source": "Nine",
+            "pronunciation": "ikenda"
+          },
+          {
+            "target": "-ose -ile",
+            "source": "Both",
+            "pronunciation": "ose -ile"
+          },
+          {
+            "target": "nusu, mbeo",
+            "source": "Half",
+            "pronunciation": "nu-su mbeo"
+          },
+          {
+            "target": "kamojori, kamoju",
+            "source": "Once",
+            "pronunciation": "kamojori kamoju"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "mo, Mo-si",
-                            "source": "One"
-                  },
-                  {
-                            "target": "wīrī, I-vīrī",
-                            "source": "Two"
-                  },
-                  {
-                            "target": "-ose -ile",
-                            "source": "Both"
-                  },
-                  {
-                            "target": "nusu, mbeo",
-                            "source": "Half"
-                  },
-                  {
-                            "target": "kamojori, kamoju",
-                            "source": "Once"
-                  },
-                  {
-                            "target": "nā, I-nā",
-                            "source": "Four"
-                  },
-                  {
-                            "target": "mirongo misano",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "mirongo mine",
-                            "source": "Forty"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

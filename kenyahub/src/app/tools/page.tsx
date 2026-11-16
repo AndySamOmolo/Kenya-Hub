@@ -429,7 +429,7 @@ export default function ToolsHubPage() {
 
       {/* Tools Grid */}
       {filteredTools.length === 0 ? (
-        <div className="text-center py-8 sm:py-16">
+        <div data-adsense-pause="true" className="text-center py-8 sm:py-16">
           <div className="flex justify-center mb-3"><DynamicIcon emoji="🔍" className="w-10 h-10 text-text-muted" /></div>
           <p className="text-text-secondary text-sm mb-3">
             No tools found matching &quot;{searchQuery}&quot;

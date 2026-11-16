@@ -57,6 +57,7 @@ import {
   STORAGE_KEY_V1,
   HEART_REFILL_MS,
   createDefaultLanguageProgress,
+  getLocalDateString,
   renderFormattedText,
 } from "./language-course/types";
 import { styles } from "./language-course/styles";
@@ -186,7 +187,7 @@ export default function LanguageCourseTool({
   // Compute current language progress with automatic heart refills & daily reset
   const progress: LanguageProgress = useMemo(() => {
     const raw = allProgress[selectedLangId] || createDefaultLanguageProgress(selectedLangId);
-    const today = new Date().toISOString().slice(0, 10);
+    const today = getLocalDateString();
     let hearts = raw.hearts;
     let heartsLastRefill = raw.heartsLastRefill;
     if (hearts < MAX_HEARTS) {
@@ -212,12 +213,19 @@ export default function LanguageCourseTool({
         const current = prevAll[selectedLangId] || createDefaultLanguageProgress(selectedLangId);
         const updated = updater(current);
 
-        // Check all 18 achievements & award XP bonuses
+        // Check all achievements (including cross-language Centurion, Polyglot & Gamer badges)
+        const tempAll = { ...prevAll, [selectedLangId]: updated };
         const unlocked = new Set(updated.unlockedAchievements);
-        const totalLessons = Object.values(updated.skills).reduce((s, k) => s + k.lessonsCompleted, 0);
+        const totalLessonsAll = Object.values(tempAll).reduce(
+          (sum, lp) => sum + Object.values(lp.skills || {}).reduce((s, k) => s + k.lessonsCompleted, 0),
+          0
+        );
+        const totalGamesAll = Object.values(tempAll).reduce((sum, lp) => sum + (lp.gamesPlayed || 0), 0);
         const skillLevelsRecord: Record<string, number> = {};
-        for (const [k, v] of Object.entries(updated.skills)) {
-          skillLevelsRecord[k] = v.level;
+        for (const [lid, lp] of Object.entries(tempAll)) {
+          for (const [k, v] of Object.entries(lp.skills || {})) {
+            skillLevelsRecord[lid === selectedLangId ? k : `${lid}:${k}`] = v.level;
+          }
         }
         const pseudoProgress = {
           version: 2,
@@ -233,10 +241,10 @@ export default function LanguageCourseTool({
           heartsLastRefill: updated.heartsLastRefill,
           achievements: Array.from(unlocked),
           wordsLearned: Object.keys(updated.wordStrengths),
-          lessonsCompleted: totalLessons,
+          lessonsCompleted: totalLessonsAll,
           perfectLessons: updated.perfectLessons,
-          gamesPlayed: updated.gamesPlayed,
-          streakFreezes: 0,
+          gamesPlayed: Math.max(updated.gamesPlayed, totalGamesAll),
+          streakFreezes: updated.streakFreezes ?? 1,
           reviewQueue: [],
         };
         let bonusXp = 0;
@@ -458,7 +466,23 @@ export default function LanguageCourseTool({
       setActiveSkillId(skill.id);
       setLearnCardIdx(0);
       setShowTipsPanel(false);
-      const generated = generateExercises(skill, 15);
+      let effectiveSkill = skill;
+      if (skill.words.length > 14) {
+        const batchSize = 12;
+        const maxStart = Math.max(0, skill.words.length - batchSize);
+        const savedCursor = progress.dictCursors?.[skill.id] ?? 0;
+        const offset = Math.min(maxStart, savedCursor);
+        const nextCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
+        saveLanguageProgress((prev) => ({
+          ...prev,
+          dictCursors: { ...(prev.dictCursors || {}), [skill.id]: nextCursor },
+        }));
+        effectiveSkill = {
+          ...skill,
+          words: skill.words.slice(offset, offset + batchSize),
+        };
+      }
+      const generated = generateExercises(effectiveSkill, 15);
       setExercises(generated);
       setExIndex(0);
       setCorrectCount(0);
@@ -468,7 +492,7 @@ export default function LanguageCourseTool({
       setupExerciseState(generated[0]);
       setLessonStage(skipLearn ? 'practice' : 'learn');
     },
-    [setupExerciseState, onScrollToTop]
+    [setupExerciseState, onScrollToTop, progress.dictCursors, saveLanguageProgress]
   );
 
   const lessonScrollRef = useRef<ScrollView>(null);
@@ -487,9 +511,12 @@ export default function LanguageCourseTool({
     if (!ex || isSubmitted) return;
 
     let userAns = '';
-    if (ex.type === 'multiple_choice' || ex.type === 'fill_blank') {
+    if (ex.type === 'multiple_choice' || (ex.type === 'fill_blank' && ex.options && ex.options.length > 0)) {
       if (!selectedAnswer) return;
       userAns = selectedAnswer;
+    } else if (ex.type === 'fill_blank') {
+      if (!typedAnswer.trim()) return;
+      userAns = typedAnswer.trim();
     } else if (ex.type === 'word_bank' || ex.type === 'reorder') {
       if (wordBankSelected.length === 0) return;
       userAns = wordBankSelected.join(' ');
@@ -565,6 +592,31 @@ export default function LanguageCourseTool({
         nextMatched.add(pairIndex);
         setMatchedPairs(nextMatched);
         setMatchLeftIdx(null);
+        const pairObj = ex.pairs[pairIndex] as any;
+        const wKey = pairObj?.target || pairObj?.left;
+        if (wKey) {
+          saveLanguageProgress((prev) => {
+            const existing = prev.wordStrengths[wKey] || {
+              wordKey: wKey,
+              strength: 3,
+              lastSeen: Date.now(),
+              correctStreak: 0,
+              timesWrong: 0,
+            };
+            return {
+              ...prev,
+              wordStrengths: {
+                ...prev.wordStrengths,
+                [wKey]: {
+                  ...existing,
+                  strength: Math.min(5, existing.strength + 1),
+                  lastSeen: Date.now(),
+                  correctStreak: existing.correctStreak + 1,
+                },
+              },
+            };
+          });
+        }
 
         if (nextMatched.size === ex.pairs.length) {
           setIsSubmitted(true);
@@ -575,13 +627,22 @@ export default function LanguageCourseTool({
         }
       } else {
         setMatchWrongFlash(true);
+        setStreakCount(0);
+        const wrongPair = ex.pairs[matchLeftIdx] as any;
+        if (wrongPair) {
+          const leftTxt = wrongPair.target || wrongPair.left || '';
+          const rightTxt = wrongPair.source || wrongPair.right || '';
+          if (leftTxt && rightTxt) {
+            setMissedItems((prev) => [...prev, { prompt: leftTxt, correct: rightTxt }]);
+          }
+        }
         setTimeout(() => {
           setMatchWrongFlash(false);
           setMatchLeftIdx(null);
         }, 500);
       }
     },
-    [exercises, exIndex, matchLeftIdx, matchedPairs]
+    [exercises, exIndex, matchLeftIdx, matchedPairs, saveLanguageProgress]
   );
 
   // ── Advance to Next Exercise or Complete Lesson ──
@@ -601,8 +662,8 @@ export default function LanguageCourseTool({
 
       if (activeSkill) {
         saveLanguageProgress((prev) => {
-          const today = new Date().toISOString().slice(0, 10);
-          const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+          const today = getLocalDateString();
+          const yesterday = getLocalDateString(new Date(Date.now() - 86400000));
           const newStreak =
             prev.lastPracticeDate === today
               ? Math.max(1, prev.streak)
@@ -821,13 +882,44 @@ export default function LanguageCourseTool({
   }, [allCourseWords]);
 
   const awardGameXP = useCallback(
-    (points: number) => {
-      saveLanguageProgress((prev) => ({
-        ...prev,
-        totalXP: prev.totalXP + points,
-        dailyXP: prev.dailyXP + points,
-        gamesPlayed: prev.gamesPlayed + 1,
-      }));
+    (points: number, sessionComplete = true) => {
+      saveLanguageProgress((prev) => {
+        const today = getLocalDateString();
+        const yesterday = getLocalDateString(new Date(Date.now() - 86400000));
+        let newStreak = prev.streak;
+        let streakFreezes = prev.streakFreezes ?? 1;
+        if (prev.lastPracticeDate !== today) {
+          if (prev.lastPracticeDate === yesterday) {
+            newStreak = prev.streak + 1;
+          } else if (prev.lastPracticeDate && streakFreezes > 0 && prev.streak > 0) {
+            const diffDays = Math.round(
+              (new Date(today + 'T00:00:00').getTime() - new Date(prev.lastPracticeDate + 'T00:00:00').getTime()) / 86400000
+            );
+            if (diffDays === 2) {
+              streakFreezes -= 1;
+              newStreak = prev.streak + 1;
+            } else {
+              newStreak = 1;
+            }
+          } else {
+            newStreak = 1;
+          }
+        }
+        const prevDaily = prev.dailyDate === today ? prev.dailyXP : 0;
+        const wasBelowGoal = prevDaily < prev.dailyGoal;
+        const goalBonus = wasBelowGoal && prevDaily + points >= prev.dailyGoal ? 25 : 0;
+        const totalAdd = points + goalBonus;
+        return {
+          ...prev,
+          totalXP: prev.totalXP + totalAdd,
+          dailyXP: prevDaily + totalAdd,
+          dailyDate: today,
+          streak: newStreak,
+          streakFreezes,
+          lastPracticeDate: today,
+          gamesPlayed: sessionComplete ? prev.gamesPlayed + 1 : prev.gamesPlayed,
+        };
+      });
     },
     [saveLanguageProgress]
   );
@@ -1097,29 +1189,6 @@ export default function LanguageCourseTool({
             ) : null}
 
             {/* Navigation Row */}
-            <View style={{ flexDirection: "row", gap: 10, marginTop: 10 }}>
-                <Pressable
-                  android_ripple={ripple}
-                  onPress={() => {
-                    setIsCardFlipped(false);
-                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
-                  }}
-                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: "center", borderColor: "#F59E0B" }]}
-                >
-                  <Text style={[styles.m3OutlinedBtnText, { color: "#F59E0B" }]}>Still Learning ↻</Text>
-                </Pressable>
-                <Pressable
-                  android_ripple={ripple}
-                  onPress={() => {
-                    awardGameXP(2);
-                    setIsCardFlipped(false);
-                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
-                  }}
-                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: "center", borderColor: "#10B981" }]}
-                >
-                  <Text style={[styles.m3OutlinedBtnText, { color: "#10B981" }]}>Got It (+2 XP) ✓</Text>
-                </Pressable>
-              </View>
               <View style={styles.learnNavRow}>
               <Pressable
                 android_ripple={ripple}
@@ -1416,9 +1485,10 @@ export default function LanguageCourseTool({
               </View>
             )}
 
-            {/* 4. Free-Text Translation (translate_to_english / translate_to_target) */}
+            {/* 4. Free-Text Translation (translate_to_english / translate_to_target / optionless fill_blank) */}
             {(currentEx.type === "translate_to_english" ||
-              currentEx.type === "translate_to_target") && (
+              currentEx.type === "translate_to_target" ||
+              (currentEx.type === "fill_blank" && (!currentEx.options || currentEx.options.length === 0))) && (
               <View style={{ gap: 10 }}>
                 {!isSubmitted && (
                   <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
@@ -2439,9 +2509,21 @@ export default function LanguageCourseTool({
               <Pressable
                 android_ripple={ripple}
                 onPress={() => {
-                  setCardMode('review');
-                  setCardIndex(0);
-                  setActiveTab('cards');
+                  const dueWords = allCourseWords.filter((w) => reviewWordKeys.has(w.target));
+                  if (dueWords.length >= 4 && allSkills[0]) {
+                    const reviewSkill: CourseSkill = {
+                      ...allSkills[0],
+                      id: 'srs-review-session',
+                      title: 'Spaced Repetition Review',
+                      words: dueWords.slice(0, 12),
+                      sentences: [],
+                    };
+                    startSkillLesson(reviewSkill, true);
+                  } else {
+                    setCardMode('review');
+                    setCardIndex(0);
+                    setActiveTab('cards');
+                  }
                 }}
                 style={[styles.reviewDueBadge, { backgroundColor: 'rgba(245,158,11,0.16)' }]}
               >
@@ -3052,6 +3134,30 @@ export default function LanguageCourseTool({
                 </Text>
               </Pressable>
 
+              <View style={{ flexDirection: 'row', gap: 10, marginTop: 10 }}>
+                <Pressable
+                  android_ripple={ripple}
+                  onPress={() => {
+                    setIsCardFlipped(false);
+                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                  }}
+                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: 'center', borderColor: '#F59E0B' }]}
+                >
+                  <Text style={[styles.m3OutlinedBtnText, { color: '#F59E0B' }]}>Still Learning ↻</Text>
+                </Pressable>
+                <Pressable
+                  android_ripple={ripple}
+                  onPress={() => {
+                    awardGameXP(2, false);
+                    setIsCardFlipped(false);
+                    setCardIndex((i) => (i + 1) % Math.max(1, flashcardDeck.length));
+                  }}
+                  style={[styles.m3OutlinedBtn, { flex: 1, justifyContent: 'center', borderColor: '#10B981' }]}
+                >
+                  <Text style={[styles.m3OutlinedBtnText, { color: '#10B981' }]}>Got It (+2 XP) ✓</Text>
+                </Pressable>
+              </View>
+
               <View style={styles.learnNavRow}>
                 <Pressable
                   android_ripple={ripple}
@@ -3414,14 +3520,17 @@ export default function LanguageCourseTool({
                             memoryCards[a].pairId === memoryCards[b].pairId &&
                             memoryCards[a].type !== memoryCards[b].type
                           ) {
+                            const allNowMatched = memoryCards.every(
+                              (c, i) => i === a || i === b || c.matched
+                            );
                             setMemoryCards((prev) =>
                               prev.map((c, i) =>
                                 i === a || i === b ? { ...c, matched: true } : c
                               )
                             );
                             setMemoryFlipped([]);
-                            setGameScore((s) => s + 10);
-                            awardGameXP(5);
+                            setGameScore((s) => s + (allNowMatched ? 25 : 10));
+                            awardGameXP(allNowMatched ? 20 : 5, allNowMatched);
                           } else {
                             setTimeout(() => setMemoryFlipped([]), 650);
                           }
@@ -3617,7 +3726,7 @@ export default function LanguageCourseTool({
                   >
                     {wordleStatus === 'won'
                       ? 'Solved! +25 XP'
-                      : `Word was: ${wordleAnswer.toUpperCase()}`}
+                      : `Word was: ${wordleTarget.target} (${wordleAnswer.toUpperCase()})`}
                   </Text>
                   <Pressable
                     onPress={startWordleGame}

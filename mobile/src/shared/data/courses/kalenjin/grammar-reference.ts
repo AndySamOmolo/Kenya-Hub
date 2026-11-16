@@ -317,3 +317,20 @@ if (_kalKipsigisSec) {
       "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 369–393, DOI: 10.5281/zenodo.3367166, consultants Sammy Kiprono Bor & Robert Langat)",
   });
 }
+
+KALENJIN_GRAMMAR_SECTIONS.push({
+  id: "fiebig-2026-kalenjin-pluractionality",
+  title: "11. Nadja Fiebig (2026, Language Science Press #491, Ch. 4, DOI: 10.5281/zenodo.20285188): Two Types of Verbal Number in Kalenjin Pluractionality",
+  summary: "Distinguishes participant-oriented verbal number (plural-subject contemporative/sociative suffixes -yō and -sōōt) from event-internal/event-external pluractionality across Kalenjin varieties.",
+  content: [
+    "- **1. Participant Number vs. Event Pluractionality**: Kalenjin strictly grammaticalizes two distinct layers of verbal number: (a) **participant-oriented plural subject suffixes** (`-yō` and `-sōōt`, which carry dominant `[+ATR]` harmony and require a plural subject, e.g. `ng’eet` 'stand up' → `ng’ēētyō / ng’ēētsōōt` 'stand up together', `tuuyō` 'meet together', `pooryō` 'fight'), and (b) **event pluractionality** marking iterative, distributive, or repeated action across time or space.",
+    "- **2. Interaction with Valency & Middle Enclitic `kee(y)`**: Causative/transitive alternants of contemporative verbs combine with the reflexive/middle enclitic `kee(y)` (`si-mē-ē-tēēniit-yō keey`, 'so that you do not compare yourself'; `kaa-kuu-tuu-yō keey`, 'when those people had assembled')."
+  ].join("\n"),
+  examples: [
+    {
+      kalenjin: "ng’eet ('stand up [SG]') → ng’ēētyō / ng’ēētsōōt ('stand up together [PL.SUBJ, +ATR]') • choomnyō ('reconcile') • tuuyō ('meet')",
+      english: "Participant-oriented verbal number suffixes -yō and -sōōt vs. iterative event pluractionality in Kalenjin",
+      explanation: "Nadja Fiebig (2026, Pamoja tena, Language Science Press #491, Ch. 4, DOI: 10.5281/zenodo.20285188) & Zwarts et al. (2024, Ch. 21, p. 543, 548)"
+    }
+  ]
+});

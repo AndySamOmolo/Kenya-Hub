@@ -34,7 +34,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
   {
     "id": "somali-unit-1",
     "unitNumber": 1,
-    "title": "Greetings (Nabad!), Definite Articles (-ki/-ka/-ku &",
+    "title": "Greetings (Nabad!), Definite Articles",
     "description": "Master Af-Soomaali greetings, Kirk’s three suffixed article vowels (-i, -a, -u) and four demonstratives (kan, kèr, kas, kò), inclusive/exclusive pronouns, numerals, fractions, and classical Maahmaahyo.",
     "icon": "BookOpen",
     "color": "#2563EB",
@@ -47,8 +47,20 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "tips": "In Af-Soomaali (Kirk 1905, §§ 23, 28–29, 150–154, pp. 16–18, 79–81), the definite article is suffixed to the noun with masculine linking consonants -k-, -g-, -h-, -‘- (ninki, ninka, ninku) and feminine linking consonants -t-, -d-, -sh- (nàgti, nàgta, nàgtu; hal-ti → hashi 'the she-camel'). Kirk documents three article vowels: -i (general, past, or absent/remote), -a (present, proximate, or with possessive suffixes), and -u (well-known or aforementioned subject), distinct from the four demonstratives: kan/tan (this near), kèr/tèr (that near), kas/tas (that further), and kò/tò (that yonder, § 63, p. 33).",
         "words": [
           {
-            "target": "Nabad! / Ma nabad baa? / Ma bariden? (resp. Wa nabad!)",
-            "source": "Peace! / Is it peace? / Have you passed the night well? (It is peace!)",
+            "target": "Nabad!",
+            "source": "Peace!",
+            "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
+            "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
+          },
+          {
+            "target": "Ma nabad baa?",
+            "source": "Is it peace?",
+            "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
+            "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
+          },
+          {
+            "target": "Ma bariden? (resp. Wa nabad!)",
+            "source": "Have you passed the night well? (It is peace!)",
             "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
             "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
           },
@@ -59,14 +71,25 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Gratitude"
           },
           {
-            "target": "Soo dhawoow! / Nabad gelyo!",
-            "source": "Welcome! / Goodbye!",
+            "target": "Soo dhawoow!",
+            "source": "Welcome!",
             "pronunciation": "soo dha-woow / na-bad gelyo",
             "hint": "Hospitality phrases"
           },
           {
-            "target": "aniga (an) / adiga (ad)",
-            "source": "I / you (sg.)",
+            "target": "Nabad gelyo!",
+            "source": "Goodbye!",
+            "pronunciation": "soo dha-woow / na-bad gelyo",
+            "hint": "Hospitality phrases"
+          },
+          {
+            "target": "aniga (an)",
+            "source": "I",
+            "pronunciation": "aniga"
+          },
+          {
+            "target": "adiga (ad)",
+            "source": "you (sg.)",
             "pronunciation": "aniga"
           },
           {
@@ -75,8 +98,20 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "ínnagu"
           },
           {
-            "target": "isaga (u) / iyada (ai) / iyaga (ai)",
-            "source": "he / she / they",
+            "target": "isaga (u)",
+            "source": "he",
+            "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
+            "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
+          },
+          {
+            "target": "iyada (ai)",
+            "source": "she",
+            "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
+            "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
+          },
+          {
+            "target": "iyaga (ai)",
+            "source": "they",
             "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
             "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
           },
@@ -91,8 +126,14 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "nàg"
           },
           {
-            "target": "biyo (biyaha) / ‘àno (‘anaha)",
-            "source": "water / milk",
+            "target": "biyo (biyaha)",
+            "source": "water",
+            "pronunciation": "bi-yo / ‘a-no",
+            "hint": "Kirk (1905) essential pastoral liquids"
+          },
+          {
+            "target": "‘àno (‘anaha)",
+            "source": "milk",
             "pronunciation": "bi-yo / ‘a-no",
             "hint": "Kirk (1905) essential pastoral liquids"
           },
@@ -112,8 +153,26 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "fardo"
           },
           {
-            "target": "garanug / godir / b‘e‘id / sagaro (Kirk 1905 & Larajasse 1897)",
-            "source": "gerenuk / greater kudu / beisa oryx / dik-dik",
+            "target": "garanug",
+            "source": "gerenuk",
+            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
+          },
+          {
+            "target": "godir",
+            "source": "greater kudu",
+            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
+          },
+          {
+            "target": "b‘e‘id",
+            "source": "beisa oryx",
+            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
+          },
+          {
+            "target": "sagaro (Kirk 1905 & Larajasse 1897)",
+            "source": "dik-dik",
             "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
             "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
           },
@@ -127,73 +186,93 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ma bariden? Wa nabad, mahadsanid.",
-            "source": "Have you passed the night well? It is peace, thank you (Kirk 1905, § 102, p. 51)."
+            "source": "Have you passed the night well? It is peace, thank you ."
           },
           {
             "target": "Hawl adun ma đamáto ninba wa intis.",
-            "source": "The work of the world finishes not, each man has his share (Kirk 1905, § 227, p. 111)."
+            "source": "The work of the world finishes not, each man has his share ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Nabad! / Ma nabad baa? / Ma bariden? (resp. Wa nabad!)\" in Somali?",
-            "correctAnswer": "Peace! / Is it peace? / Have you passed the night well? (It is peace!)",
+            "prompt": "What is the English meaning of \"Nabad!\" in Somali?",
+            "correctAnswer": "Peace!",
             "options": [
-              "Thank you (Thank you very much)",
-              "Welcome! / Goodbye!",
-              "I / you (sg.) • we (inclusive vs. exclusive)",
-              "Peace! / Is it peace? / Have you passed the night well? (It is peace!)"
+              "Peace!",
+              "Thank you",
+              "Welcome!",
+              "I"
             ],
-            "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
+            "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting",
+            "acceptedAnswers": [
+              "Peace! / Is it peace? / Have you passed the night well? (It is peace!)",
+              "Peace!"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Mahadsanid (Aad baad u mahadsan tahay)\" in Somali?",
-            "correctAnswer": "Thank you (Thank you very much)",
+            "correctAnswer": "Thank you",
             "options": [
-              "Welcome! / Goodbye!",
-              "I / you (sg.) • we (inclusive vs. exclusive)",
+              "Welcome!",
+              "I",
+              "Peace!",
+              "Thank you"
+            ],
+            "hint": "Gratitude",
+            "acceptedAnswers": [
               "Thank you (Thank you very much)",
-              "Peace! / Is it peace? / Have you passed the night well? (It is peace!)"
-            ],
-            "hint": "Gratitude"
+              "Thank you"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Soo dhawoow! / Nabad gelyo!\" in Somali?",
-            "correctAnswer": "Welcome! / Goodbye!",
+            "prompt": "What is the English meaning of \"Soo dhawoow!\" in Somali?",
+            "correctAnswer": "Welcome!",
             "options": [
-              "I / you (sg.) • we (inclusive vs. exclusive)",
+              "Welcome!",
+              "I",
+              "Peace!",
+              "Thank you"
+            ],
+            "hint": "Hospitality phrases",
+            "acceptedAnswers": [
               "Welcome! / Goodbye!",
-              "Peace! / Is it peace? / Have you passed the night well? (It is peace!)",
-              "Thank you (Thank you very much)"
-            ],
-            "hint": "Hospitality phrases"
+              "Welcome!"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Welcome! / Goodbye!\" in Somali?",
-            "correctAnswer": "Soo dhawoow! / Nabad gelyo!",
+            "prompt": "How do you say \"Welcome!\" in Somali?",
+            "correctAnswer": "Soo dhawoow!",
             "options": [
-              "Soo dhawoow! / Nabad gelyo!",
-              "Nabad! / Ma nabad baa? / Ma bariden? (resp. Wa nabad!)",
-              "Mahadsanid (Aad baad u mahadsan tahay)",
-              "aniga (an) / adiga (ad) • ínnagu (-einu incl.) / ánnagu (-annu excl.)"
+              "Soo dhawoow!",
+              "Nabad!",
+              "Mahadsanid",
+              "aniga"
             ],
-            "hint": "soh dhah-wow / nah-bahd gehl-yoh"
+            "hint": "soh dhah-wow / nah-bahd gehl-yoh",
+            "acceptedAnswers": [
+              "Soo dhawoow! / Nabad gelyo!",
+              "Soo dhawoow!"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"I / you (sg.) • we (inclusive vs. exclusive)\" in Somali?",
-            "correctAnswer": "aniga (an) / adiga (ad) • ínnagu (-einu incl.) / ánnagu (-annu excl.)",
+            "prompt": "How do you say \"I\" in Somali?",
+            "correctAnswer": "aniga",
             "options": [
-              "Nabad! / Ma nabad baa? / Ma bariden? (resp. Wa nabad!)",
-              "Mahadsanid (Aad baad u mahadsan tahay)",
-              "Soo dhawoow! / Nabad gelyo!",
-              "aniga (an) / adiga (ad) • ínnagu (-einu incl.) / ánnagu (-annu excl.)"
+              "Nabad!",
+              "Mahadsanid",
+              "aniga",
+              "Soo dhawoow!"
             ],
-            "hint": "ah-nee-gah / een-nah-goo / ahn-nah-goo"
+            "hint": "ah-nee-gah / een-nah-goo / ahn-nah-goo",
+            "acceptedAnswers": [
+              "aniga (an) / adiga (ad) • ínnagu (-einu incl.) / ánnagu (-annu excl.)",
+              "aniga"
+            ]
           },
           {
             "type": "match_pairs",
@@ -212,15 +291,19 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Somali term for \"he / she / they\": ___",
-            "correctAnswer": "isaga (u) / iyada (ai) / iyaga (ai)",
+            "prompt": "Complete the Somali term for \"he\": ___",
+            "correctAnswer": "isaga",
             "options": [
-              "Nabad! / Ma nabad baa? / Ma bariden? (resp. Wa nabad!)",
-              "Mahadsanid (Aad baad u mahadsan tahay)",
-              "Soo dhawoow! / Nabad gelyo!",
-              "isaga (u) / iyada (ai) / iyaga (ai)"
+              "Nabad!",
+              "Mahadsanid",
+              "Soo dhawoow!",
+              "isaga"
             ],
-            "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
+            "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns",
+            "acceptedAnswers": [
+              "isaga (u) / iyada (ai) / iyaga (ai)",
+              "isaga"
+            ]
           }
         ]
       },
@@ -256,7 +339,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Kirk (1905, Appendix II, p. 136) Somaliland currency table"
           },
           {
-            "target": "wà beri / arorti, subahh-di, barghád-di, hađ-ki (gàdid-ki), duhur-ki,",
+            "target": "wà beri / arorti, subahh-di, barghád-di, hađ-ki (gàdid-ki), duhur-ki",
             "source": "Dawn, early morning, forenoon, midday, afternoon, late afternoon, sunset",
             "pronunciation": "wà-beri",
             "hint": "Kirk (1905, Appendix I, p. 135) divisions of the day (‘asho-di)"
@@ -307,45 +390,57 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gerar wa bogholal, wa bađwein iyo môjad, wa babùrki sidìsa.",
-            "source": "Songs (Geeraar) are in hundreds, like the great sea and waves, like the ships (Kirk 1905, Song VIII, p. 178)."
+            "source": "Songs (Geeraar) are in hundreds, like the great sea and waves, like the ships ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kô (mid), lába, sádehh, áfar, shan\" in Somali?",
-            "correctAnswer": "1, 2, 3, 4, 5",
+            "correctAnswer": "1",
             "options": [
-              "6, 7, 8, 9, 10",
-              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
-              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
-              "1, 2, 3, 4, 5"
+              "6",
+              "20",
+              "Fractions: 1",
+              "1"
             ],
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5"
+            "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5",
+            "acceptedAnswers": [
+              "1, 2, 3, 4, 5",
+              "1"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"lehh, todòba, sidèd, sagàl, tòban\" in Somali?",
-            "correctAnswer": "6, 7, 8, 9, 10",
+            "correctAnswer": "6",
             "options": [
-              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
-              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
-              "6, 7, 8, 9, 10",
-              "1, 2, 3, 4, 5"
+              "20",
+              "Fractions: 1",
+              "6",
+              "1"
             ],
-            "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10"
+            "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10",
+            "acceptedAnswers": [
+              "6, 7, 8, 9, 10",
+              "6"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)\" in Somali?",
-            "correctAnswer": "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
+            "prompt": "What is the English meaning of \"labàton, sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)\" in Somali?",
+            "correctAnswer": "20",
             "options": [
-              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
-              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
-              "1, 2, 3, 4, 5",
-              "6, 7, 8, 9, 10"
+              "20",
+              "Fractions: 1",
+              "1",
+              "6"
             ],
-            "hint": "Kirk (1905, § 46, pp. 26–27) tens & subtractive numerals"
+            "hint": "Kirk (1905, § 46, pp. 26–27) tens & subtractive numerals",
+            "acceptedAnswers": [
+              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
+              "20"
+            ]
           },
           {
             "type": "match_pairs",
@@ -365,14 +460,18 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Somali term for \"The 4 Somali pastoral seasons + Kalil calm interval before rains\": ___",
-            "correctAnswer": "Jilal (Jiilaal), Kalil, Gù (Gu'), Hagar (Xagaa / Karif), Dair (Dayr)",
+            "correctAnswer": "Jilal",
             "options": [
-              "kô (mid), lába, sádehh, áfar, shan",
-              "lehh, todòba, sidèd, sagàl, tòban",
-              "labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)",
-              "Jilal (Jiilaal), Kalil, Gù (Gu'), Hagar (Xagaa / Karif), Dair (Dayr)"
+              "kô",
+              "Jilal",
+              "lehh",
+              "labàton"
             ],
-            "hint": "Kirk (1905, Appendix I, p. 134)"
+            "hint": "Kirk (1905, Appendix I, p. 134)",
+            "acceptedAnswers": [
+              "Jilal (Jiilaal), Kalil, Gù (Gu'), Hagar (Xagaa / Karif), Dair (Dayr)",
+              "Jilal"
+            ]
           }
         ]
       }
@@ -425,8 +524,14 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
-            "target": "wiil (def. wiilka) / ínan",
-            "source": "Boy / son",
+            "target": "wiil (def. wiilka)",
+            "source": "Boy",
+            "pronunciation": "wiil / i-nan",
+            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+          },
+          {
+            "target": "ínan",
+            "source": "son",
             "pronunciation": "wiil / i-nan",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
@@ -449,11 +554,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Eebbe — saaxiib",
-            "source": "God — Friend"
+            "source": "God — Friend."
           },
           {
             "target": "naag — nin",
-            "source": "Woman — Man"
+            "source": "Woman — Man."
           }
         ],
         "authoredExercises": [
@@ -462,10 +567,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"Eebbe\" mean in English?",
             "correctAnswer": "God",
             "options": [
-              "God",
               "Friend",
+              "God",
               "Woman",
-              "Man (adult male)"
+              "Man"
             ],
             "hint": "Core vocabulary in Kinship Terms, Elders & Household Roles"
           },
@@ -527,8 +632,14 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
-            "target": "gabadh / inán",
-            "source": "Girl / daughter",
+            "target": "gabadh",
+            "source": "Girl",
+            "pronunciation": "ga-badh / i-nan",
+            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+          },
+          {
+            "target": "inán",
+            "source": "daughter",
             "pronunciation": "ga-badh / i-nan",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
@@ -580,25 +691,29 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "gabadh — xaas",
-            "source": "Girl — Wife"
+            "source": "Girl — Wife."
           },
           {
             "target": "say — hooyo",
-            "source": "Husband — Mother"
+            "source": "Husband — Mother."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"gabadh\" mean in English?",
-            "correctAnswer": "Girl / daughter",
+            "correctAnswer": "Girl",
             "options": [
-              "Girl / daughter",
               "Wife",
               "Husband",
-              "Mother"
+              "Mother",
+              "Girl"
             ],
-            "hint": "Core vocabulary in Clans, Marriage & Community Life"
+            "hint": "Core vocabulary in Clans, Marriage & Community Life",
+            "acceptedAnswers": [
+              "Girl / daughter",
+              "Girl"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -728,7 +843,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"dhan / kulli\" in Somali?",
             "correctAnswer": "All",
             "options": [
-              "Many / much",
+              "Many",
               "One",
               "Two",
               "All"
@@ -738,50 +853,58 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"badan\" in Somali?",
-            "correctAnswer": "Many / much",
+            "correctAnswer": "Many",
             "options": [
               "One",
+              "Many",
               "Two",
-              "Many / much",
               "All"
             ],
-            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+            "acceptedAnswers": [
+              "Many / much",
+              "Many"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kow / hal\" in Somali?",
             "correctAnswer": "One",
             "options": [
-              "Two",
               "One",
+              "Two",
               "All",
-              "Many / much"
+              "Many"
             ],
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"One\" in Somali?",
-            "correctAnswer": "kow / hal",
+            "correctAnswer": "kow",
             "options": [
-              "kow / hal",
-              "dhan / kulli",
+              "dhan",
               "badan",
+              "kow",
               "laba"
             ],
-            "hint": "kow / hal"
+            "hint": "Starts with \"ko…\" (3 letters)",
+            "acceptedAnswers": [
+              "kow / hal",
+              "kow"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Two\" in Somali?",
             "correctAnswer": "laba",
             "options": [
-              "dhan / kulli",
+              "dhan",
               "badan",
-              "kow / hal",
+              "kow",
               "laba"
             ],
-            "hint": "laba"
+            "hint": "Starts with \"la…\" (4 letters)"
           },
           {
             "type": "match_pairs",
@@ -811,9 +934,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Somali term for \"Three\": ___",
             "correctAnswer": "saddex",
             "options": [
-              "dhan / kulli",
+              "dhan",
               "badan",
-              "kow / hal",
+              "kow",
               "saddex"
             ],
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
@@ -888,10 +1011,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"siddeed\" in Somali?",
             "correctAnswer": "Eight",
             "options": [
+              "Eight",
               "Nine",
               "Ten",
-              "Twenty",
-              "Eight"
+              "Twenty"
             ],
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
@@ -912,8 +1035,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"toban\" in Somali?",
             "correctAnswer": "Ten",
             "options": [
-              "Twenty",
               "Ten",
+              "Twenty",
               "Eight",
               "Nine"
             ],
@@ -929,7 +1052,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               "sagaal",
               "labaatan"
             ],
-            "hint": "toban"
+            "hint": "Starts with \"to…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
@@ -938,10 +1061,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "options": [
               "siddeed",
               "sagaal",
-              "toban",
-              "labaatan"
+              "labaatan",
+              "toban"
             ],
-            "hint": "labaatan"
+            "hint": "Starts with \"la…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -971,10 +1094,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Somali term for \"Hundred\": ___",
             "correctAnswer": "boqol",
             "options": [
+              "boqol",
               "siddeed",
               "sagaal",
-              "toban",
-              "boqol"
+              "toban"
             ],
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           }
@@ -1048,11 +1171,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kari — beid",
-            "source": "To cook — Egg"
+            "source": "To cook — Egg."
           },
           {
             "target": "‘un — Subak",
-            "source": "Eat — Fat"
+            "source": "Eat — Fat."
           }
         ],
         "authoredExercises": [
@@ -1174,11 +1297,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Hilip — cunto",
-            "source": "Meat — Food"
+            "source": "Meat — Food."
           },
           {
             "target": "caano — cusbo",
-            "source": "Milk — Salt"
+            "source": "Milk — Salt."
           }
         ],
         "authoredExercises": [
@@ -1187,9 +1310,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"Hilip\" mean in English?",
             "correctAnswer": "Meat",
             "options": [
-              "Meat",
               "Food",
               "Milk",
+              "Meat",
               "Salt"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
@@ -1312,19 +1435,24 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "dab"
           },
           {
-            "target": "Webi / Dōh' (Lake/pond: balli / haro)",
-            "source": "River (Lake / pond)",
+            "target": "Webi",
+            "source": "River",
+            "pronunciation": "we-bi"
+          },
+          {
+            "target": "Dōh'",
+            "source": "pond)",
             "pronunciation": "we-bi"
           }
         ],
         "sentences": [
           {
             "target": "sayah — ghorahh-di",
-            "source": "Dew — Sun"
+            "source": "Dew — Sun."
           },
           {
             "target": "Dorūr — gèd",
-            "source": "Sky — Tree"
+            "source": "Sky — Tree."
           }
         ],
         "authoredExercises": [
@@ -1333,8 +1461,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"sayah\" mean in English?",
             "correctAnswer": "Dew",
             "options": [
-              "Dew",
               "Sun",
+              "Dew",
               "Sky",
               "Tree"
             ],
@@ -1358,7 +1486,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               "Sky",
               "Sky"
             ],
-            "hint": "Review Sky, Weather, Rivers & Landforms"
+            "hint": "Starts with \"Sk…\" (3 letters)"
           },
           {
             "type": "match_pairs",
@@ -1447,11 +1575,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "bógholkaigi ađi — Dayah'",
-            "source": "my hundred sheep — Moon"
+            "source": "my hundred sheep — Moon."
           },
           {
             "target": "Rōp — Hedig",
-            "source": "Rain — Star"
+            "source": "Rain — Star."
           }
         ],
         "authoredExercises": [
@@ -1583,11 +1711,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ga‘an-ti — đeg-ti",
-            "source": "Arm — Ear"
+            "source": "Arm — Ear."
           },
           {
             "target": "il-shi — lug-ti",
-            "source": "Eye — Leg"
+            "source": "Eye — Leg."
           }
         ],
         "authoredExercises": [
@@ -1709,11 +1837,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "timo-hi — bakhrin",
-            "source": "Hair — Head"
+            "source": "Hair — Head."
           },
           {
             "target": "gànad — yal",
-            "source": "Hand — Foot"
+            "source": "Hand — Foot."
           }
         ],
         "authoredExercises": [
@@ -1851,11 +1979,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "hadal — seexo",
-            "source": "Speak — Sleep"
+            "source": "Speak — Sleep."
           },
           {
             "target": "imow — tag",
-            "source": "Come — Go"
+            "source": "Come — Go."
           }
         ],
         "authoredExercises": [
@@ -1864,10 +1992,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"hadal\" mean in English?",
             "correctAnswer": "Speak",
             "options": [
-              "Speak",
               "Sleep",
               "Come",
-              "Go"
+              "Go",
+              "Speak"
             ],
             "hint": "Core vocabulary in Essential Action & Motion Verbs"
           },
@@ -1977,11 +2105,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "ogòlo — jìf",
-            "source": "Agree — Lie down"
+            "source": "Agree — Lie down."
           },
           {
             "target": "so wada kahhai — dabol",
-            "source": "Bring all — Cover, shut"
+            "source": "Bring all — Cover, shut."
           }
         ],
         "authoredExercises": [
@@ -1990,10 +2118,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"ogòlo\" mean in English?",
             "correctAnswer": "Agree",
             "options": [
-              "Agree",
               "Lie down",
               "Bring all",
-              "Cover, shut"
+              "Cover",
+              "Agree"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
@@ -2113,11 +2241,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "màlin, ‘asho — kol",
-            "source": "Day — Time"
+            "source": "Day — Time."
           },
           {
             "target": "kolkas — gù-gi",
-            "source": "Then — Year"
+            "source": "Then — Year."
           }
         ],
         "authoredExercises": [
@@ -2131,7 +2259,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               "Then",
               "Year"
             ],
-            "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
+            "hint": "Starts with \"Da…\" (3 letters)"
           },
           {
             "type": "translate_to_target",
@@ -2239,11 +2367,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "hor — Berri",
-            "source": "Before — Tomorrow"
+            "source": "Before — Tomorrow."
           },
           {
             "target": "shălei — wakhtiga aagga",
-            "source": "Yesterday — Time zone"
+            "source": "Yesterday — Time zone."
           }
         ],
         "authoredExercises": [
@@ -2252,9 +2380,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"hor\" mean in English?",
             "correctAnswer": "Before",
             "options": [
-              "Before",
               "Tomorrow",
               "Yesterday",
+              "Before",
               "Time zone"
             ],
             "hint": "Core vocabulary in Travel, Directions, Paths & Landmarks"
@@ -2362,8 +2490,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "na-bad gelyo"
           },
           {
-            "target": "Nabad / Ma nabad baa?",
-            "source": "Peace / Hello (traditional greeting)",
+            "target": "Ma nabad baa?",
+            "source": "Hello (traditional greeting)",
             "pronunciation": "na-bad / ma na-bad baa"
           },
           {
@@ -2375,11 +2503,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nabad — Nabad!",
-            "source": "Peace — Hello"
+            "source": "Peace — Hello."
           },
           {
             "target": "soo dhawoow — Mahadsanid",
-            "source": "Welcome! — Thank you"
+            "source": "Welcome! — Thank you."
           }
         ],
         "authoredExercises": [
@@ -2388,10 +2516,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"Nabad\" mean in English?",
             "correctAnswer": "Peace",
             "options": [
-              "Peace",
               "Hello",
               "Welcome!",
-              "Thank you"
+              "Thank you",
+              "Peace"
             ],
             "hint": "Core vocabulary in Everyday Conversational Phrases & Questions"
           },
@@ -2511,14 +2639,18 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"madax\" in Somali?",
-            "correctAnswer": "Head / leader",
+            "correctAnswer": "Head",
             "options": [
               "Ear",
+              "Head",
               "Eye",
-              "Nose",
-              "Head / leader"
+              "Nose"
             ],
-            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+            "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar",
+            "acceptedAnswers": [
+              "Head / leader",
+              "Head"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -2527,7 +2659,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "options": [
               "Nose",
               "Eye",
-              "Head / leader",
+              "Head",
               "Ear"
             ],
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
@@ -2640,10 +2772,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What does \"Far keliya fool ma dhaqdo.\" mean in English?",
             "correctAnswer": "A single finger cannot wash a face.",
             "options": [
-              "A single finger cannot wash a face.",
               "Lack of knowledge is lack of light.",
               "Every camel was once two years old.",
-              "A man who has not travelled the land has no eyes (insight)."
+              "A single finger cannot wash a face.",
+              "The work of the world finishes not"
             ],
             "hint": "Core vocabulary in Traditional Proverbs, Riddles & Aphorisms"
           },
@@ -2765,10 +2897,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"dādis\" in Somali (Af-Soomaali)?",
             "correctAnswer": "shedding",
             "options": [
-              "shedding",
               "stomach ache",
               "stride",
-              "scorpion"
+              "scorpion",
+              "shedding"
             ],
             "hint": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [m.n.]"
           },
@@ -2800,8 +2932,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Somali (Af-Soomaali) term for \"squirrel.—hi (earth squirrel living in holes)\": ___",
             "correctAnswer": "daba galla",
             "options": [
-              "daba galla",
               "dādis",
+              "daba galla",
               "daba hau",
               "dada‘"
             ],
@@ -2877,11 +3009,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "dalo — dalah",
-            "source": "top of the head — divorce"
+            "source": "top of the head — divorce."
           },
           {
             "target": "dalan — si derai",
-            "source": "children — deepen"
+            "source": "children — deepen."
           }
         ],
         "authoredExercises": [
@@ -2891,9 +3023,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "correctAnswer": "top of the head",
             "options": [
               "top of the head",
-              "divorce (see fur)",
-              "children (m.n.pl)",
-              "deepen (sink far below the surface)"
+              "without limit",
+              "make him sin",
+              "divorce"
             ],
             "hint": "Core vocabulary in Classical Roots & Naming Traditions"
           },
@@ -3006,14 +3138,18 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"dembab\" in Somali?",
-            "correctAnswer": "sin, commit a sin",
+            "correctAnswer": "sin",
             "options": [
-              "sin, commit a sin",
-              "throw stones, stone",
+              "throw stones",
+              "sin",
               "diamond",
               "the dead"
             ],
-            "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
+            "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+            "acceptedAnswers": [
+              "sin, commit a sin",
+              "sin"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3043,10 +3179,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Somali term for \"delator, denunciator\": ___",
             "correctAnswer": "dein ka tur",
             "options": [
-              "dein ka tur",
               "dad‘unah",
               "dembab",
-              "dagihi"
+              "dagihi",
+              "dein ka tur"
             ],
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           }
@@ -3120,25 +3256,29 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "degta dahasheda — dabah",
-            "source": "the tip of the ear — sacrifice"
+            "source": "the tip of the ear — sacrifice."
           },
           {
             "target": "ku dega, ku degta — dabain",
-            "source": "adhesive — affirmation"
+            "source": "adhesive — affirmation."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"degta dahasheda\" mean in English?",
-            "correctAnswer": "the tip of the ear (locution)",
+            "correctAnswer": "the tip of the ear",
             "options": [
-              "the tip of the ear (locution)",
               "sacrifice",
               "adhesive",
+              "the tip of the ear",
               "affirmation"
             ],
-            "hint": "Core vocabulary in Core Swadesh & Cultural Vocabulary"
+            "hint": "Core vocabulary in Core Swadesh & Cultural Vocabulary",
+            "acceptedAnswers": [
+              "the tip of the ear (locution)",
+              "the tip of the ear"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -3248,21 +3388,25 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Wahha inđála, ninki an oghòn lahain, ya inđala.",
-            "source": "He that is blind is the man who knows nothing, he is blind (Kirk 1905, Story X, p. 161)."
+            "source": "He that is blind is the man who knows nothing, he is blind ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"da‘nin\" in Somali?",
-            "correctAnswer": "sack (of a town), pillage",
+            "correctAnswer": "sack",
             "options": [
-              "sack (of a town), pillage",
-              "the three stones on which they put their boiler",
               "brush",
-              "tar, pitch"
+              "tar",
+              "sack",
+              "cataplasm"
             ],
-            "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
+            "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)",
+            "acceptedAnswers": [
+              "sack (of a town), pillage",
+              "sack"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3292,10 +3436,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Complete the Somali term for \"a range of mountains; burihi iss ku yil\": ___",
             "correctAnswer": "buro iss ku yal",
             "options": [
-              "buro iss ku yal",
-              "damoh",
               "da‘nin",
-              "dardar"
+              "dardar",
+              "buro iss ku yal",
+              "burush"
             ],
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           }
@@ -3370,8 +3514,13 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "dabatag"
           },
           {
-            "target": "rubiad,—di & rubi,—gi (1s. / 8 annas)",
-            "source": "Rupee & half-rupee (1 shilling / 8 annas)",
+            "target": "rubiad,—di & rubi,—gi",
+            "source": "Rupee & half-rupee",
+            "pronunciation": "rubiad"
+          },
+          {
+            "target": "8 annas)",
+            "source": "8 annas)",
             "pronunciation": "rubiad"
           },
           {
@@ -3398,11 +3547,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "War san ban ku sida! Rubiadda i sarrif.",
-            "source": "I bring to you good news! Change me the rupee (De Larajasse 1897, pp. 123, 127)."
+            "source": "I bring to you good news! Change me the rupee ."
           },
           {
             "target": "Wa dantisi; aya dan leh? — Ana dan leh.",
-            "source": "It is his concern; who has anything to say? — I have something to say (De Larajasse 1897, Supplement p. 293)."
+            "source": "It is his concern; who has anything to say? — I have something to say ."
           }
         ],
         "authoredExercises": [
@@ -3513,7 +3662,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Sabab-t-a → sabab-a-h-a",
-            "source": "The reason → the reasons (Fem. → {k})"
+            "source": "The reason → the reasons (Fem. → {k})."
           }
         ]
       },
@@ -3599,7 +3748,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Carruur-t-u waa ay qayli-n-ay-aan",
-            "source": "The children are shouting [3PL semantic agreement vs. 3SG.F syntactic agreement] (Nilsson 2016, Ch. 23, p. 459, Ex. 3a–b)."
+            "source": "The children are shouting [3PL semantic agreement vs. 3SG.F syntactic agreement] ."
           }
         ]
       }
@@ -3627,30 +3776,30 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 5–8)"
           },
           {
-            "target": "4 Demonstratives: kan / tan ('this')",
+            "target": "4 Demonstratives: kan / tan",
             "source": "Four distance grades of Somali demonstratives and inclusive vs. exclusive 1PL pronouns",
             "pronunciation": "kan tan / ker ter / kas tas / ko to / in-na-ga / an-na-ga",
             "hint": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 9–12)"
           },
           {
-            "target": "ATR Vowel Harmony Minimal Pairs: dhis, hel, qod, tus, kab, hees, laab,",
+            "target": "ATR Vowel Harmony Minimal Pairs: dhis, hel, qod, tus, kab, hees, laab",
             "source": "Series A (-ATR, higher F1) vs. Series B (+ATR, lower F1) morphological and lexical",
             "pronunciation": "atr-vowel-harmony-minimal"
           },
           {
             "target": "Marka / Af-Ashraaf Morphology & Northern Swahili–Southern Somali Contact",
-            "source": "Southern Somali Af-Ashraaf nominal/verbal paradigms and historical contact with",
+            "source": "Southern Somali Af-Ashraaf nominal/verbal paradigms and historical contact",
             "pronunciation": "af-ash-raaf / mwii-ni / ba-ju-ni"
           }
         ],
         "sentences": [
           {
             "target": "Nin-ku wa yimi",
-            "source": "The man came (subject article -ku + focus wa)"
+            "source": "The man came (subject article -ku + focus wa)."
           }
         ]
       },
-{
+      {
         "id": "somali-modern-health-pastoral-finance",
         "title": "Public Health, Pastoral Care & Mobile Finance",
         "icon": "HeartHandshake",
@@ -3658,248 +3807,232 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "culturalNote": "Contemporary Kenyan Somali usage across Garissa, Wajir, Mandera, and Nairobi blends traditional pastoral stewardship with mobile remittance (xawaalad) and community health terminology.",
         "grammarTip": "Notice the definite article suffixes -ka/-ta/-da attached to nouns: biyo nadiif ah ('clean water'), gacmo-dhaqashada ('the handwashing'), and daacuunka ('the cholera').",
         "words": [
-                {
-                        "target": "Biyo nadiif ah",
-                        "source": "Clean water",
-                        "pronunciation": "bee-yoh nah-deef ah"
-                },
-                {
-                        "target": "Talaal xilliyeed",
-                        "source": "Seasonal vaccination",
-                        "pronunciation": "tah-laal hee-lee-yeed"
-                },
-                {
-                        "target": "Gacmo-dhaqashada",
-                        "source": "Handwashing",
-                        "pronunciation": "gah-moh dhah-kah-shah-dah"
-                },
-                {
-                        "target": "Dhir-beeris",
-                        "source": "Tree planting / Reforestation",
-                        "pronunciation": "dheer beh-rees"
-                },
-                {
-                        "target": "Daaqsinka",
-                        "source": "The grazing pasture",
-                        "pronunciation": "daak-seen-kah"
-                },
-                {
-                        "target": "Taleefanka gacanta",
-                        "source": "Mobile phone",
-                        "pronunciation": "tah-leh-fahn-kah gah-ahn-tah"
-                },
-                {
-                        "target": "Xawaaladda",
-                        "source": "Money transfer / Remittance",
-                        "pronunciation": "hah-waa-lahd-dah"
-                },
-                {
-                        "target": "Caafimaadka bulshada",
-                        "source": "Community health",
-                        "pronunciation": "aa-fee-maad-kah bool-shah-dah"
-                }
+          {
+            "target": "Biyo nadiif ah",
+            "source": "Clean water",
+            "pronunciation": "bee-yoh nah-deef ah"
+          },
+          {
+            "target": "Talaal xilliyeed",
+            "source": "Seasonal vaccination",
+            "pronunciation": "tah-laal hee-lee-yeed"
+          },
+          {
+            "target": "Gacmo-dhaqashada",
+            "source": "Handwashing",
+            "pronunciation": "gah-moh dhah-kah-shah-dah"
+          },
+          {
+            "target": "Dhir-beeris",
+            "source": "Tree planting / Reforestation",
+            "pronunciation": "dheer beh-rees"
+          },
+          {
+            "target": "Daaqsinka",
+            "source": "The grazing pasture",
+            "pronunciation": "daak-seen-kah"
+          },
+          {
+            "target": "Taleefanka gacanta",
+            "source": "Mobile phone",
+            "pronunciation": "tah-leh-fahn-kah gah-ahn-tah"
+          },
+          {
+            "target": "Xawaaladda",
+            "source": "Money transfer / Remittance",
+            "pronunciation": "hah-waa-lahd-dah"
+          },
+          {
+            "target": "Caafimaadka bulshada",
+            "source": "Community health",
+            "pronunciation": "aa-fee-maad-kah bool-shah-dah"
+          }
         ],
         "sentences": [
-                {
-                        "target": "Xoolaha waxay u baahan yihiin biyo nadiif ah iyo talaal xilliyeed.",
-                        "source": "Livestock need clean water and seasonal vaccination."
-                },
-                {
-                        "target": "Biyo nadiif ah oo la cabo iyo gacmo-dhaqashada waxay ka hortagaan daacuunka.",
-                        "source": "Clean drinking water and handwashing prevent cholera."
-                },
-                {
-                        "target": "Beerista dhirta u adkeysata abaarta waxay ilaalisaa daaqsinka.",
-                        "source": "Planting drought-tolerant trees protects grazing lands."
-                }
+          {
+            "target": "Xoolaha waxay u baahan yihiin biyo nadiif ah iyo talaal xilliyeed.",
+            "source": "Livestock need clean water and seasonal vaccination."
+          },
+          {
+            "target": "Biyo nadiif ah oo la cabo iyo gacmo-dhaqashada waxay ka hortagaan daacuunka.",
+            "source": "Clean drinking water and handwashing prevent cholera."
+          },
+          {
+            "target": "Beerista dhirta u adkeysata abaarta waxay ilaalisaa daaqsinka.",
+            "source": "Planting drought-tolerant trees protects grazing lands."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "somali-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Somali parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
+        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019).",
         "words": [
-                  {
-                            "target": "Nabad",
-                            "source": "Peace",
-                            "pronunciation": "nah-bahd"
-                  },
-                  {
-                            "target": "Nabad!",
-                            "source": "Hello",
-                            "pronunciation": "nah-bahd / mah nah-bahd bah"
-                  },
-                  {
-                            "target": "soo dhawoow",
-                            "source": "Welcome!",
-                            "pronunciation": "soo dhawoow"
-                  },
-                  {
-                            "target": "Mahadsanid",
-                            "source": "Thank you",
-                            "pronunciation": "mah-hahd-sah-need"
-                  },
-                  {
-                            "target": "Illàhhi maháddi",
-                            "source": "Thank God",
-                            "pronunciation": "illahhi ma-haddi"
-                  },
-                  {
-                            "target": "nabad gelyo",
-                            "source": "Goodbye (lit. enter into peace)",
-                            "pronunciation": "na-bad gelyo"
-                  },
-                  {
-                            "target": "yafnan-ti",
-                            "source": "Goodness, health, Peace (Yibir register)",
-                            "pronunciation": "yafnan-ti"
-                  },
-                  {
-                            "target": "raali",
-                            "source": "Sorry / Excuse me",
-                            "pronunciation": "raali"
-                  },
-                  {
-                            "target": "nabat!",
-                            "source": "Peace, a greeting",
-                            "pronunciation": "nabat"
-                  },
-                  {
-                            "target": "’ss ka warren?",
-                            "source": "How are you?",
-                            "pronunciation": "’ss ka warren"
-                  }
+          {
+            "target": "Nabad",
+            "source": "Peace",
+            "pronunciation": "nah-bahd"
+          },
+          {
+            "target": "Nabad!",
+            "source": "Hello",
+            "pronunciation": "nah-bahd / mah nah-bahd bah"
+          },
+          {
+            "target": "soo dhawoow",
+            "source": "Welcome!",
+            "pronunciation": "soo dhawoow"
+          },
+          {
+            "target": "Mahadsanid",
+            "source": "Thank you",
+            "pronunciation": "mah-hahd-sah-need"
+          },
+          {
+            "target": "Illàhhi maháddi",
+            "source": "Thank God",
+            "pronunciation": "illahhi ma-haddi"
+          },
+          {
+            "target": "nabad gelyo",
+            "source": "Goodbye (lit. enter into peace)",
+            "pronunciation": "na-bad gelyo"
+          },
+          {
+            "target": "yafnan-ti",
+            "source": "Goodness, health, Peace (Yibir register)",
+            "pronunciation": "yafnan-ti"
+          },
+          {
+            "target": "raali",
+            "source": "Sorry / Excuse me",
+            "pronunciation": "raali"
+          },
+          {
+            "target": "nabat!",
+            "source": "Peace, a greeting",
+            "pronunciation": "nabat"
+          },
+          {
+            "target": "’ss ka warren?",
+            "source": "How are you?",
+            "pronunciation": "’ss ka warren"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "soo dhawoow",
-                            "source": "Welcome!"
-                  },
-                  {
-                            "target": "Illàhhi maháddi",
-                            "source": "Thank God"
-                  },
-                  {
-                            "target": "insha Allahh wa la hele",
-                            "source": "Please God, we may find it"
-                  },
-                  {
-                            "target": "nabad gelyo",
-                            "source": "Goodbye (lit. enter into peace)"
-                  },
-                  {
-                            "target": "’ss ka warren?",
-                            "source": "How are you?"
-                  },
-                  {
-                            "target": "haid-di (Yibir: sahol-shi",
-                            "source": "Fat"
-                  },
-                  {
-                            "target": "cunto (soor = cooked grain",
-                            "source": "Food"
-                  },
-                  {
-                            "target": "ʻUni mayu",
-                            "source": "I eat not"
-                  }
+          {
+            "target": "Illàhhi maháddi",
+            "source": "Thank God."
+          },
+          {
+            "target": "insha Allahh wa la hele",
+            "source": "Please God, we may find it."
+          },
+          {
+            "target": "nabad gelyo",
+            "source": "Goodbye (lit. enter into peace)."
+          },
+          {
+            "target": "’ss ka warren?",
+            "source": "How are you?"
+          },
+          {
+            "target": "ʻUni mayu",
+            "source": "I eat not."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "somali-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Somali sentences for healthcare, transport, and community safety.",
-        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019)",
+        "culturalNote": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019).",
         "words": [
-                  {
-                            "target": "kow",
-                            "source": "One",
-                            "pronunciation": "kow / hal"
-                  },
-                  {
-                            "target": "laba",
-                            "source": "Two",
-                            "pronunciation": "la-ba"
-                  },
-                  {
-                            "target": "lix",
-                            "source": "Six",
-                            "pronunciation": "lix"
-                  },
-                  {
-                            "target": "toban",
-                            "source": "Ten",
-                            "pronunciation": "to-ban"
-                  },
-                  {
-                            "target": "afar",
-                            "source": "Four",
-                            "pronunciation": "a-far"
-                  },
-                  {
-                            "target": "shan",
-                            "source": "Five",
-                            "pronunciation": "shan"
-                  },
-                  {
-                            "target": "sagaal",
-                            "source": "Nine",
-                            "pronunciation": "sa-gaal"
-                  },
-                  {
-                            "target": "lábadabá",
-                            "source": "Both",
-                            "pronunciation": "la-ba-da-ba"
-                  },
-                  {
-                            "target": "bađ-ki",
-                            "source": "Half",
-                            "pronunciation": "bađ-ki"
-                  },
-                  {
-                            "target": "saddex",
-                            "source": "Three",
-                            "pronunciation": "saddex"
-                  }
+          {
+            "target": "kow",
+            "source": "One",
+            "pronunciation": "kow / hal"
+          },
+          {
+            "target": "laba",
+            "source": "Two",
+            "pronunciation": "la-ba"
+          },
+          {
+            "target": "lix",
+            "source": "Six",
+            "pronunciation": "lix"
+          },
+          {
+            "target": "toban",
+            "source": "Ten",
+            "pronunciation": "to-ban"
+          },
+          {
+            "target": "afar",
+            "source": "Four",
+            "pronunciation": "a-far"
+          },
+          {
+            "target": "shan",
+            "source": "Five",
+            "pronunciation": "shan"
+          },
+          {
+            "target": "sagaal",
+            "source": "Nine",
+            "pronunciation": "sa-gaal"
+          },
+          {
+            "target": "lábadabá",
+            "source": "Both",
+            "pronunciation": "la-ba-da-ba"
+          },
+          {
+            "target": "bađ-ki",
+            "source": "Half",
+            "pronunciation": "bađ-ki"
+          },
+          {
+            "target": "saddex",
+            "source": "Three",
+            "pronunciation": "saddex"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Kobiyeto băn",
-                            "source": "Eleven"
-                  },
-                  {
-                            "target": "aurtaidi lába",
-                            "source": "Two of my camels"
-                  },
-                  {
-                            "target": "aurtaida mid ba đintei",
-                            "source": "One of my camels has died"
-                  },
-                  {
-                            "target": "sóddon, afárton, kónton",
-                            "source": "Thirty (30), Forty (40), Fifty (50)"
-                  },
-                  {
-                            "target": "léhhdon, todobàton, sidèton, sagàshon",
-                            "source": "Sixty (60), Seventy (70), Eighty (80), Ninety (90)"
-                  },
-                  {
-                            "target": "ma lába ba?",
-                            "source": "Is it two?"
-                  },
-                  {
-                            "target": "tasu wa mid",
-                            "source": "That is one"
-                  },
-                  {
-                            "target": "midna ma tegin",
-                            "source": "Not one went"
-                  }
+          {
+            "target": "aurtaidi lába",
+            "source": "Two of my camels."
+          },
+          {
+            "target": "aurtaida mid ba đintei",
+            "source": "One of my camels has died."
+          },
+          {
+            "target": "sóddon, afárton, kónton",
+            "source": "Thirty (30), Forty (40), Fifty (50)."
+          },
+          {
+            "target": "léhhdon, todobàton, sidèton, sagàshon",
+            "source": "Sixty (60), Seventy (70), Eighty (80), Ninety (90)."
+          },
+          {
+            "target": "ma lába ba?",
+            "source": "Is it two?"
+          },
+          {
+            "target": "tasu wa mid",
+            "source": "That is one."
+          },
+          {
+            "target": "midna ma tegin",
+            "source": "Not one went."
+          }
         ]
-}
+      }
     ]
   }
 ];

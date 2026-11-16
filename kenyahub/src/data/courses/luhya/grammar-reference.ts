@@ -308,3 +308,20 @@ LUHYA_GRAMMAR_SECTIONS.push({
     }
   ]
 });
+
+LUHYA_GRAMMAR_SECTIONS.push({
+  id: "diercks-2026-tiriki-gluckman-2022-logoori",
+  title: "Michael Diercks et al. (2026, Language Science Press #491, Ch. 18, DOI: 10.5281/zenodo.20285218) & John Gluckman (2022, d-nb.info/1276284861/34): Tiriki Perception Verb Hyperraising & Logoori Modality",
+  summary: "Synthesizes hyperraising and kai- complementation with perception verbs in Tiriki (Luhya) alongside the modal auxiliary system (kunyala possibility vs. kwenya weak necessity) and -Vk anticausatives in Logoori (Luragooli).",
+  content: [
+    "- **1. Tiriki Perception Verbs & Hyperraising (Diercks et al. 2026, Ch. 18)**: In Tiriki (`[ida]`), perception/appearance predicates (`lol-ekh-a` 'seem/look like') alternate between an expletive/non-agreeing construction with the complementizer **`kai-`** and a **hyperraising** construction in which the embedded finite clause's subject raises to matrix subject position and triggers full noun-class agreement on the matrix perception verb, yielding systematic evidential/direct-perception interpretive contrasts.",
+    "- **2. Logoori (Luragooli) Modality (Gluckman 2022)**: Logoori (`[rag]`) encodes modality along the force axis without lexicalizing conversational flavour: **`kunyala`** ('can / be able') expresses circumstantial, deontic, and epistemic possibility, whereas **`kwenya`** ('want / need') expresses weak necessity across participant-internal and epistemic contexts."
+  ].join("\n"),
+  examples: [
+    {
+      luhya: "Tiriki: SM-lol-ekh-a kai- [embedded finite clause] (hyperraising vs. non-raising perception verb) • Logoori: kunyala (possibility modal) vs. kwenya (weak necessity modal)",
+      english: "Hyperraising across finite clause boundaries in Tiriki and force-stratified modal predicates in Logoori",
+      explanation: "Michael Diercks et al. (2026, Language Science Press #491, Ch. 18, DOI: 10.5281/zenodo.20285218) & John Gluckman (2022, 'The expression of modality in Logoori', CC-BY-4.0)"
+    }
+  ]
+});

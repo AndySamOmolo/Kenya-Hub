@@ -8,6 +8,13 @@ import {
 
 export type Word = WordPair;
 
+export function getLocalDateString(date: Date = new Date()): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 export interface SkillProgress {
   skillId: string;
   level: number;
@@ -27,6 +34,8 @@ export interface LanguageProgress {
   hearts: number;
   heartsLastRefill: number;
   skills: Record<string, SkillProgress>;
+  dictCursors?: Record<string, number>;
+  streakFreezes?: number;
   wordStrengths: Record<
     string,
     {
@@ -55,10 +64,12 @@ export function createDefaultLanguageProgress(langId: string): LanguageProgress 
     lastPracticeDate: '',
     dailyGoal: 50,
     dailyXP: 0,
-    dailyDate: new Date().toISOString().slice(0, 10),
+    dailyDate: getLocalDateString(),
     hearts: MAX_HEARTS,
     heartsLastRefill: Date.now(),
     skills: {},
+    dictCursors: {},
+    streakFreezes: 1,
     wordStrengths: {},
     gamesPlayed: 0,
     perfectLessons: 0,
@@ -129,5 +140,19 @@ export function renderFormattedText(
 
 export type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 export type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
-export type ActiveGame = 'menu' | 'scramble' | 'speed' | 'memory' | 'wordle' | 'riddles' | 'vocabQuiz';
-
+export type ActiveGame =
+  | 'menu'
+  | 'scramble'
+  | 'speed'
+  | 'memory'
+  | 'wordle'
+  | 'riddles'
+  | 'vocabQuiz'
+  | 'methali'
+  | 'safari'
+  | 'nounClass'
+  | 'oddWord'
+  | 'polyglot'
+  | 'twister'
+  | 'counties'
+  | 'sheng';

@@ -7,6 +7,8 @@ import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
 import crspData from "@/data/kra-car-import-crsp.json";
+import insuranceRatesData from "@/data/vehicle-insurance-rates.json";
+import customsRestrictedData from "@/data/customs-restricted-items.json";
 
 const tool = TOOLS.find((t) => t.slug === "kra-car-import-calculator")!;
 
@@ -403,6 +405,40 @@ export default function KraCarImportCalculatorPage() {
             <div className="px-5 py-4 flex justify-between bg-emerald-500/10 font-bold">
               <span className="text-[var(--text-primary)]">Total Estimated Landed Cost (On the Road)</span>
               <span className="text-emerald-400 text-base">KES {formatKES(calc.totalLandedCost)}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* IRA Motor Vehicle Insurance Benchmark & KRA Customs Restricted Items Reference */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6">
+          <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-[var(--text-primary)]">
+              IRA Motor Vehicle Insurance Rates ({insuranceRatesData.source})
+            </h2>
+            <div className="space-y-2.5">
+              {insuranceRatesData.vehicleClasses.map((vc) => (
+                <div key={vc.id} className="rounded-xl bg-[var(--bg-elevated)]/60 border border-[var(--border)] p-3 text-xs">
+                  <div className="flex items-center justify-between font-bold text-[var(--text-primary)] mb-1">
+                    <span>{vc.name}</span>
+                    <span className="text-[var(--gold)]">TPO Min: KES {vc.thirdParty.minimumPremium.toLocaleString()}/yr</span>
+                  </div>
+                  <p className="text-[var(--text-secondary)]">{vc.description} — Comprehensive rate: {vc.comprehensive.rateMin}%–{vc.comprehensive.rateMax}% of insured value (min KES {vc.comprehensive.minimumPremium.toLocaleString()}).</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-5 space-y-3">
+            <h2 className="text-sm sm:text-base font-bold font-[family-name:var(--font-outfit)] text-[var(--text-primary)]">
+              KRA Port &amp; Customs Restricted / Prohibited Items ({customsRestrictedData.source})
+            </h2>
+            <div className="space-y-2.5">
+              {customsRestrictedData.categories.slice(0, 3).map((cat) => (
+                <div key={cat.id} className="rounded-xl bg-[var(--bg-elevated)]/60 border border-[var(--border)] p-3 text-xs">
+                  <p className="font-bold text-[var(--text-primary)] mb-1">{cat.title}</p>
+                  <p className="text-[var(--text-secondary)]">{cat.description}: {cat.items.slice(0, 4).map((it) => it.item).join(", ")}.</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

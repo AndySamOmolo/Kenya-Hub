@@ -22,12 +22,13 @@ const EXCLUDED_SLUGS = new Set([
   "mundu-mugo-divination-mbugu-healing-kikuyu-kamba",
 ]);
 
-function isHighQualityAppwritePost(doc: any): boolean {
-  if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
+function isHighQualityAppwritePost(doc: Record<string, unknown>): boolean {
+  const slug = typeof doc?.slug === "string" ? doc.slug : "";
+  if (!slug || EXCLUDED_SLUGS.has(slug)) return false;
   const content = String(doc.content || "");
   if (content.length < 2500) return false;
   if (content.toLowerCase().includes("<iframe")) return false;
-  if ((doc.readTime || 0) < 4) return false;
+  if (Number(doc.readTime || 0) < 4) return false;
   return true;
 }
 
@@ -43,9 +44,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     string,
     { lastVerified?: string; lastUpdated?: string }
   >;
-  const countiesModified = toIsoDate((countiesData as any).lastUpdated || (toolSourcesData as any).lastAudit);
-  const matatuModified = toIsoDate((matatuData as any).lastUpdated || (toolSourcesData as any).lastAudit);
-  const auditModified = toIsoDate((toolSourcesData as any).lastAudit);
+  const countiesModified = toIsoDate((countiesData as { lastUpdated?: string }).lastUpdated || (toolSourcesData as { lastAudit?: string }).lastAudit);
+  const matatuModified = toIsoDate((matatuData as { lastUpdated?: string }).lastUpdated || (toolSourcesData as { lastAudit?: string }).lastAudit);
+  const auditModified = toIsoDate((toolSourcesData as { lastAudit?: string }).lastAudit);
 
   // Core Hub & Static pages
   const staticPages: MetadataRoute.Sitemap = [
@@ -124,7 +125,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     };
   });
 
-  const learnModified = toIsoDate(toolSourcesMap["language-courses"]?.lastUpdated);
+  const learnModified = toIsoDate(toolSourcesMap["learn"]?.lastUpdated);
   const languageCoursePages: MetadataRoute.Sitemap = PUBLISHED_COURSES.map(
     ({ config }) => ({
       url: `${BASE_URL}/tools/learn/${config.id}/`,
@@ -184,11 +185,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       BLOGS_COLLECTION_ID,
       [Query.limit(100)]
     );
-    for (const doc of response.documents as any[]) {
-      if (isHighQualityAppwritePost(doc) && !blogPostsMap.has(doc.slug)) {
+    for (const rawDoc of response.documents) {
+      const doc = rawDoc as unknown as Record<string, unknown>;
+      const slug = typeof doc.slug === "string" ? doc.slug : "";
+      if (slug && isHighQualityAppwritePost(doc) && !blogPostsMap.has(slug)) {
         blogPostsMap.set(
-          doc.slug,
-          doc.updatedAt || doc.publishedAt || DEFAULT_VERIFIED_DATE
+          slug,
+          String(doc.updatedAt || doc.publishedAt || DEFAULT_VERIFIED_DATE)
         );
       }
     }

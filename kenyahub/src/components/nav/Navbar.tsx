@@ -18,7 +18,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
-import { PUBLISHED_COURSES } from "@/data/courses/registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import countiesData from "@/data/counties.json";
 import { useTheme } from "@/components/ThemeProvider";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -97,7 +97,7 @@ export default function Navbar() {
         icon: t.icon,
       });
     }
-    for (const c of PUBLISHED_COURSES) {
+    for (const c of PUBLISHED_COURSE_SUMMARIES) {
       items.push({
         id: `lang-${c.config.id}`,
         title: `Learn ${c.config.name} (${c.config.nativeName})`,
@@ -456,6 +456,7 @@ export default function Navbar() {
       {/* Global Command-K Quick Search Modal */}
       {searchOpen && (
         <div
+          data-adsense-pause="true"
           className="fixed inset-0 z-[110] bg-black/70 backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
           onClick={() => setSearchOpen(false)}
           role="dialog"

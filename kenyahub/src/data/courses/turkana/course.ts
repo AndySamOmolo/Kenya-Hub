@@ -75,7 +75,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Health to your cattle",
               "Health (Pastoral greeting enquiry)"
             ],
-            "hint": "Traditional pastoral greeting inquiry between adults (lit. 'health'). Response: 'Ii mata'. (Barton 1921)"
+            "hint": "Starts with \"He…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
@@ -205,10 +205,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mata ouwi\" mean in English?",
             "correctAnswer": "Health to your village",
             "options": [
-              "Health to your children",
-              "Health to our meetings",
-              "Health to your property",
-              "Health to your village"
+              "Health to your village",
+              "Complete health",
+              "Traditional salutation",
+              "Farewell exchange"
             ],
             "hint": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)"
           },
@@ -217,10 +217,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mata ng'idwi\" mean in English?",
             "correctAnswer": "Health to your children",
             "options": [
-              "Health to our meetings",
-              "Health to your property",
               "Health to your children",
-              "Health to your village"
+              "Complete health",
+              "Traditional salutation",
+              "Farewell exchange"
             ],
             "hint": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)"
           },
@@ -229,10 +229,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Mata ariama\" mean in English?",
             "correctAnswer": "Health to our meetings",
             "options": [
-              "Health to your property",
+              "Complete health",
+              "Traditional salutation",
               "Health to our meetings",
-              "Health to your village",
-              "Health to your children"
+              "Farewell exchange"
             ],
             "hint": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)"
           },
@@ -241,10 +241,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Health to our meetings\" in Turkana?",
             "correctAnswer": "Mata ariama",
             "options": [
-              "Mata ariama",
               "Mata ouwi",
               "Mata ng'idwi",
-              "Mata ng'ebarin"
+              "Mata ariama",
+              "Mata ejik"
             ],
             "hint": "mah-tah ah-ree-ah-mah"
           },
@@ -254,9 +254,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Mata ng'ebarin",
             "options": [
               "Mata ouwi",
-              "Mata ng'idwi",
               "Mata ariama",
-              "Mata ng'ebarin"
+              "Mata ng'ebarin",
+              "Mata ejik"
             ],
             "hint": "mah-tah ngeh-bah-reen"
           },
@@ -265,10 +265,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Health to your women\" in Turkana?",
             "correctAnswer": "Mata ng'abero",
             "options": [
-              "Mata ng'idwi",
               "Mata ariama",
+              "Mata ouwi",
               "Mata ng'abero",
-              "Mata ouwi"
+              "Mata ejik"
             ],
             "hint": "mah-tah ngah-beh-roh"
           },
@@ -422,8 +422,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "options": [
               "Three",
               "Four",
-              "Two",
-              "One"
+              "One",
+              "Two"
             ],
             "hint": "Cardinal 2 (Ngaarei fem., Ngiarei masc.; Ari). (Barton 1921)"
           },
@@ -433,35 +433,43 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Three",
             "options": [
               "Four",
-              "Three",
               "One",
-              "Two"
+              "Two",
+              "Three"
             ],
             "hint": "Cardinal 3 (Ngauni fem., Ngiuni masc.; Uni). (Barton 1921)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Turkana?",
-            "correctAnswer": "Ngauni / Ngiuni (Uni)",
+            "correctAnswer": "Ngauni",
             "options": [
-              "Ngauni / Ngiuni (Uni)",
-              "Apei / Epei",
-              "Ngaarei / Ngiarei (Ari)",
-              "Ngaomon / Ngiomon (Omwon)"
+              "Ngauni",
+              "Apei",
+              "Ngaarei",
+              "Ngaomon"
             ],
-            "hint": "ngah-oo-nee / oo-nee"
+            "hint": "ngah-oo-nee / oo-nee",
+            "acceptedAnswers": [
+              "Ngauni / Ngiuni (Uni)",
+              "Ngauni"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Turkana?",
-            "correctAnswer": "Ngaomon / Ngiomon (Omwon)",
+            "correctAnswer": "Ngaomon",
             "options": [
-              "Apei / Epei",
-              "Ngaarei / Ngiarei (Ari)",
-              "Ngauni / Ngiuni (Uni)",
-              "Ngaomon / Ngiomon (Omwon)"
+              "Ngaomon",
+              "Apei",
+              "Ngaarei",
+              "Ngauni"
             ],
-            "hint": "ngah-oh-mohn / ohm-wohn"
+            "hint": "ngah-oh-mohn / ohm-wohn",
+            "acceptedAnswers": [
+              "Ngaomon / Ngiomon (Omwon)",
+              "Ngaomon"
+            ]
           },
           {
             "type": "match_pairs",
@@ -489,14 +497,18 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Turkana term for \"Five\": ___",
-            "correctAnswer": "Ngakan / Akhan",
+            "correctAnswer": "Ngakan",
             "options": [
-              "Apei / Epei",
-              "Ngaarei / Ngiarei (Ari)",
-              "Ngauni / Ngiuni (Uni)",
-              "Ngakan / Akhan"
+              "Apei",
+              "Ngaarei",
+              "Ngauni",
+              "Ngakan"
             ],
-            "hint": "Cardinal 5. Literally 'hand' (akan). (Barton 1921)"
+            "hint": "Cardinal 5. Literally 'hand' (akan). (Barton 1921)",
+            "acceptedAnswers": [
+              "Ngakan / Akhan",
+              "Ngakan"
+            ]
           }
         ]
       },
@@ -602,9 +614,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Twenty",
             "options": [
               "Thirty",
+              "Twenty",
               "Forty",
-              "Fifty",
-              "Twenty"
+              "Fifty"
             ],
             "hint": "20 (two tens). (Barton 1921)"
           },
@@ -613,9 +625,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Tomon uni\" mean in English?",
             "correctAnswer": "Thirty",
             "options": [
+              "Thirty",
               "Forty",
               "Fifty",
-              "Thirty",
               "Twenty"
             ],
             "hint": "30 (three tens). (Barton 1921)"
@@ -637,34 +649,38 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Forty\" in Turkana?",
             "correctAnswer": "Tomon omwon",
             "options": [
+              "Tomon ari",
               "Tomon omwon",
-              "Tomon ari / Ngatomona arei",
               "Tomon uni",
-              "Tomon akhan / Ngatomona akan"
+              "Tomon tomon"
             ],
             "hint": "toh-mohn ohm-wohn"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fifty\" in Turkana?",
-            "correctAnswer": "Tomon akhan / Ngatomona akan",
+            "correctAnswer": "Tomon akhan",
             "options": [
-              "Tomon ari / Ngatomona arei",
               "Tomon uni",
+              "Tomon akhan",
               "Tomon omwon",
-              "Tomon akhan / Ngatomona akan"
+              "Tomon tomon"
             ],
-            "hint": "toh-mohn ah-khahn"
+            "hint": "toh-mohn ah-khahn",
+            "acceptedAnswers": [
+              "Tomon akhan / Ngatomona akan",
+              "Tomon akhan"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Sixty\" in Turkana?",
             "correctAnswer": "Tomon akhan ka pei",
             "options": [
+              "Tomon akhan ka pei",
               "Tomon uni",
               "Tomon omwon",
-              "Tomon akhan ka pei",
-              "Tomon ari / Ngatomona arei"
+              "Tomon tomon"
             ],
             "hint": "toh-mohn ah-khahn kah peh-ee"
           },
@@ -786,11 +802,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ageboro — Akamu",
-            "source": "Rainy season — Dry season"
+            "source": "Rainy season — Dry season."
           },
           {
             "target": "Lodungi — Lomoruk",
-            "source": "January — February"
+            "source": "January — February."
           }
         ],
         "authoredExercises": [
@@ -911,14 +927,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Morning hours before intense heat. (Barton 1921)"
           },
           {
-            "target": "Naparan / Ewi akolon",
-            "source": "Midday / Noon",
+            "target": "Naparan",
+            "source": "Midday",
             "pronunciation": "na-pa-ran / ewi a-ko-lon",
             "hint": "Midday when the sun is directly overhead. (Barton 1921)"
           },
           {
-            "target": "Ebon / Ebong",
-            "source": "Afternoon / Evening",
+            "target": "Ewi akolon",
+            "source": "Noon",
+            "pronunciation": "na-pa-ran / ewi a-ko-lon",
+            "hint": "Midday when the sun is directly overhead. (Barton 1921)"
+          },
+          {
+            "target": "Ebon",
+            "source": "Afternoon",
+            "pronunciation": "e-bon / e-bong",
+            "hint": "Late afternoon approaching dusk. (Barton 1921)"
+          },
+          {
+            "target": "Ebong",
+            "source": "Evening",
             "pronunciation": "e-bon / e-bong",
             "hint": "Late afternoon approaching dusk. (Barton 1921)"
           },
@@ -956,9 +984,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "November",
             "options": [
               "December",
+              "November",
               "Year",
-              "Month / Moon",
-              "November"
+              "Month"
             ],
             "hint": "11th month of the traditional Turkana calendar. (Barton 1921)"
           },
@@ -968,9 +996,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "December",
             "options": [
               "Year",
-              "Month / Moon",
-              "December",
-              "November"
+              "Month",
+              "November",
+              "December"
             ],
             "hint": "12th month of the traditional Turkana calendar. (Barton 1921)"
           },
@@ -979,48 +1007,60 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ekaru (pl. ngaro)\" mean in English?",
             "correctAnswer": "Year",
             "options": [
-              "Month / Moon",
-              "Year",
+              "Month",
               "November",
+              "Year",
               "December"
             ],
-            "hint": "Year or annual cycle. This year: 'Ekaru lo'; next year: 'Ekaru echi'; last year: 'Ekaru ye'. (Barton 1921)"
+            "hint": "Starts with \"Ye…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Year\" in Turkana?",
-            "correctAnswer": "Ekaru (pl. ngaro)",
+            "correctAnswer": "Ekaru",
             "options": [
-              "Ekaru (pl. ngaro)",
               "Lorarrar",
               "Lugwan",
-              "Elap (pl. ngelapio)"
+              "Ekaru",
+              "Elap"
             ],
-            "hint": "eh-kah-roo"
+            "hint": "eh-kah-roo",
+            "acceptedAnswers": [
+              "Ekaru (pl. ngaro)",
+              "Ekaru"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Month / Moon\" in Turkana?",
-            "correctAnswer": "Elap (pl. ngelapio)",
+            "correctAnswer": "Elap",
             "options": [
               "Lorarrar",
+              "Elap",
               "Lugwan",
-              "Ekaru (pl. ngaro)",
-              "Elap (pl. ngelapio)"
+              "Ekaru"
             ],
-            "hint": "eh-lahp"
+            "hint": "eh-lahp",
+            "acceptedAnswers": [
+              "Elap (pl. ngelapio)",
+              "Elap"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Day\" in Turkana?",
-            "correctAnswer": "Erwait (pl. ngurwa)",
+            "correctAnswer": "Erwait",
             "options": [
               "Lugwan",
-              "Ekaru (pl. ngaro)",
-              "Erwait (pl. ngurwa)",
+              "Ekaru",
+              "Erwait",
               "Lorarrar"
             ],
-            "hint": "ehr-wah-eet"
+            "hint": "ehr-wah-eet",
+            "acceptedAnswers": [
+              "Erwait (pl. ngurwa)",
+              "Erwait"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1124,38 +1164,50 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ewi akolon\" mean in English?",
-            "correctAnswer": "Overhead sun (12 p.m.)",
+            "correctAnswer": "Overhead sun",
             "options": [
-              "Mid-afternoon sun (2 p.m.)",
-              "Sunset (6 p.m.)",
+              "Mid-afternoon sun",
+              "Sunset",
               "Today",
-              "Overhead sun (12 p.m.)"
+              "Overhead sun"
             ],
-            "hint": "Peak noon sun directly above. (Barton 1921)"
+            "hint": "Peak noon sun directly above. (Barton 1921)",
+            "acceptedAnswers": [
+              "Overhead sun (12 p.m.)",
+              "Overhead sun"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Athom akolon\" mean in English?",
-            "correctAnswer": "Mid-afternoon sun (2 p.m.)",
+            "correctAnswer": "Mid-afternoon sun",
             "options": [
-              "Sunset (6 p.m.)",
+              "Sunset",
               "Today",
-              "Mid-afternoon sun (2 p.m.)",
-              "Overhead sun (12 p.m.)"
+              "Mid-afternoon sun",
+              "Overhead sun"
             ],
-            "hint": "Declining afternoon sun. (Barton 1921)"
+            "hint": "Declining afternoon sun. (Barton 1921)",
+            "acceptedAnswers": [
+              "Mid-afternoon sun (2 p.m.)",
+              "Mid-afternoon sun"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Aloma akolon\" mean in English?",
-            "correctAnswer": "Sunset (6 p.m.)",
+            "correctAnswer": "Sunset",
             "options": [
               "Today",
-              "Sunset (6 p.m.)",
-              "Overhead sun (12 p.m.)",
-              "Mid-afternoon sun (2 p.m.)"
+              "Overhead sun",
+              "Mid-afternoon sun",
+              "Sunset"
             ],
-            "hint": "The sun setting into twilight. (Barton 1921)"
+            "hint": "Starts with \"Su…\" (6 letters)",
+            "acceptedAnswers": [
+              "Sunset (6 p.m.)",
+              "Sunset"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1165,30 +1217,34 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Aloma akolon",
               "Ewi akolon",
               "Athom akolon",
-              "Tete / Akolon itina"
+              "Tete"
             ],
             "hint": "ah-loh-mah ah-koh-lohn"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Today\" in Turkana?",
-            "correctAnswer": "Tete / Akolon itina",
+            "correctAnswer": "Tete",
             "options": [
               "Ewi akolon",
               "Athom akolon",
-              "Aloma akolon",
-              "Tete / Akolon itina"
+              "Tete",
+              "Aloma akolon"
             ],
-            "hint": "teh-teh"
+            "hint": "teh-teh",
+            "acceptedAnswers": [
+              "Tete / Akolon itina",
+              "Tete"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tomorrow\" in Turkana?",
             "correctAnswer": "Mui",
             "options": [
+              "Mui",
               "Athom akolon",
               "Aloma akolon",
-              "Mui",
               "Ewi akolon"
             ],
             "hint": "moo-ee"
@@ -1237,20 +1293,38 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
           {
-            "target": "Etunganan / Etonganan (pl. ngitunga)",
-            "source": "Person / Mankind",
+            "target": "Etunganan",
+            "source": "Person",
             "pronunciation": "e-tunga-nan / e-tonga-nan",
             "hint": "Human being or person. Plural: Ngitunga (people). (Barton 1921)"
           },
           {
-            "target": "Ekili / E'kili (pl. ngiliok)",
-            "source": "Man / Male",
+            "target": "Etonganan (pl. ngitunga)",
+            "source": "Mankind",
+            "pronunciation": "e-tunga-nan / e-tonga-nan",
+            "hint": "Human being or person. Plural: Ngitunga (people). (Barton 1921)"
+          },
+          {
+            "target": "Ekili",
+            "source": "Man",
             "pronunciation": "e-ki-li / e'ki-li",
             "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)"
           },
           {
-            "target": "Abero / A'bero (pl. ngabero)",
-            "source": "Woman / Female",
+            "target": "E'kili (pl. ngiliok)",
+            "source": "Male",
+            "pronunciation": "e-ki-li / e'ki-li",
+            "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)"
+          },
+          {
+            "target": "Abero",
+            "source": "Woman",
+            "pronunciation": "a-be-ro / a'be-ro",
+            "hint": "Adult female or woman. Plural: Ngabero. (Barton 1921)"
+          },
+          {
+            "target": "A'bero (pl. ngabero)",
+            "source": "Female",
             "pronunciation": "a-be-ro / a'be-ro",
             "hint": "Adult female or woman. Plural: Ngabero. (Barton 1921)"
           },
@@ -1273,14 +1347,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Child or baby offspring. (Barton 1921)"
           },
           {
-            "target": "Edit / Lokoku (pl. ngedithok / ngidwe)",
-            "source": "Son / Young boy",
+            "target": "Edit",
+            "source": "Son",
             "pronunciation": "e-dit / lo-ko-ku",
             "hint": "Male child or youth. (Barton 1921)"
           },
           {
-            "target": "Apethe / Apese (pl. ngapethur / ngapesur)",
-            "source": "Daughter / Girl",
+            "target": "Lokoku",
+            "source": "Young boy",
+            "pronunciation": "e-dit / lo-ko-ku",
+            "hint": "Male child or youth. (Barton 1921)"
+          },
+          {
+            "target": "Apethe",
+            "source": "Daughter",
+            "pronunciation": "a-pethe / a-pe-se",
+            "hint": "Girl or unmarried daughter. (Barton 1921)"
+          },
+          {
+            "target": "Apese",
+            "source": "Girl",
             "pronunciation": "a-pethe / a-pe-se",
             "hint": "Girl or unmarried daughter. (Barton 1921)"
           },
@@ -1326,75 +1412,99 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Etunganan / Etonganan (pl. ngitunga)\" mean in English?",
-            "correctAnswer": "Person / Mankind",
+            "prompt": "What does \"Etunganan\" mean in English?",
+            "correctAnswer": "Person",
             "options": [
-              "Man / Male",
-              "Woman / Female",
-              "Father",
-              "Person / Mankind"
+              "Person",
+              "Man",
+              "Woman",
+              "Father"
             ],
-            "hint": "Human being or person. Plural: Ngitunga (people). (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ekili / E'kili (pl. ngiliok)\" mean in English?",
-            "correctAnswer": "Man / Male",
-            "options": [
-              "Woman / Female",
-              "Father",
-              "Man / Male",
-              "Person / Mankind"
-            ],
-            "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Abero / A'bero (pl. ngabero)\" mean in English?",
-            "correctAnswer": "Woman / Female",
-            "options": [
-              "Father",
-              "Woman / Female",
+            "hint": "Starts with \"Pe…\" (6 letters)",
+            "acceptedAnswers": [
               "Person / Mankind",
-              "Man / Male"
-            ],
-            "hint": "Adult female or woman. Plural: Ngabero. (Barton 1921)"
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Woman / Female\" in Turkana?",
-            "correctAnswer": "Abero / A'bero (pl. ngabero)",
+            "prompt": "What does \"Ekili\" mean in English?",
+            "correctAnswer": "Man",
             "options": [
-              "Abero / A'bero (pl. ngabero)",
-              "Etunganan / Etonganan (pl. ngitunga)",
-              "Ekili / E'kili (pl. ngiliok)",
-              "Baba / Papa (pl. tababa / ngipapao)"
+              "Woman",
+              "Man",
+              "Father",
+              "Person"
             ],
-            "hint": "ah-beh-roh"
+            "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)",
+            "acceptedAnswers": [
+              "Man / Male",
+              "Man"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Abero\" mean in English?",
+            "correctAnswer": "Woman",
+            "options": [
+              "Father",
+              "Person",
+              "Man",
+              "Woman"
+            ],
+            "hint": "Starts with \"Wo…\" (5 letters)",
+            "acceptedAnswers": [
+              "Woman / Female",
+              "Woman"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Woman\" in Turkana?",
+            "correctAnswer": "Abero",
+            "options": [
+              "Etunganan",
+              "Ekili",
+              "Baba",
+              "Abero"
+            ],
+            "hint": "ah-beh-roh",
+            "acceptedAnswers": [
+              "Abero / A'bero (pl. ngabero)",
+              "Abero"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Father\" in Turkana?",
-            "correctAnswer": "Baba / Papa (pl. tababa / ngipapao)",
+            "correctAnswer": "Baba",
             "options": [
-              "Etunganan / Etonganan (pl. ngitunga)",
-              "Ekili / E'kili (pl. ngiliok)",
-              "Abero / A'bero (pl. ngabero)",
-              "Baba / Papa (pl. tababa / ngipapao)"
+              "Etunganan",
+              "Ekili",
+              "Abero",
+              "Baba"
             ],
-            "hint": "bah-bah / pah-pah"
+            "hint": "bah-bah / pah-pah",
+            "acceptedAnswers": [
+              "Baba / Papa (pl. tababa / ngipapao)",
+              "Baba"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mother\" in Turkana?",
-            "correctAnswer": "Toto / Iyoo (pl. tatoto / ngiyootin)",
+            "correctAnswer": "Toto",
             "options": [
-              "Ekili / E'kili (pl. ngiliok)",
-              "Abero / A'bero (pl. ngabero)",
-              "Toto / Iyoo (pl. tatoto / ngiyootin)",
-              "Etunganan / Etonganan (pl. ngitunga)"
+              "Ekili",
+              "Abero",
+              "Etunganan",
+              "Toto"
             ],
-            "hint": "toh-toh"
+            "hint": "toh-toh",
+            "acceptedAnswers": [
+              "Toto / Iyoo (pl. tatoto / ngiyootin)",
+              "Toto"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1466,8 +1576,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Affinal relative through marriage. (Barton 1921)"
           },
           {
-            "target": "Ekasiko / Akasikot (pl. ngasikot / ngikasiko)",
-            "source": "Old man / Elder",
+            "target": "Ekasiko",
+            "source": "Old man",
+            "pronunciation": "e-ka-si-ko / a-ka-si-kot",
+            "hint": "Respected elder in traditional age-set hierarchy. (Barton 1921)"
+          },
+          {
+            "target": "Akasikot",
+            "source": "Elder",
             "pronunciation": "e-ka-si-ko / a-ka-si-kot",
             "hint": "Respected elder in traditional age-set hierarchy. (Barton 1921)"
           },
@@ -1478,8 +1594,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Elderly respected woman. (Barton 1921)"
           },
           {
-            "target": "Akarachonait / Ekasurani (pl. ngarachona / ngikasurak)",
-            "source": "Young warrior / Youth",
+            "target": "Akarachonait",
+            "source": "Young warrior",
+            "pronunciation": "a-ka-racho-nait / e-ka-su-ra-ni",
+            "hint": "Initiated young pastoral warrior of the age-grade. (Barton 1921)"
+          },
+          {
+            "target": "Ekasurani",
+            "source": "Youth",
             "pronunciation": "a-ka-racho-nait / e-ka-su-ra-ni",
             "hint": "Initiated young pastoral warrior of the age-grade. (Barton 1921)"
           },
@@ -1490,34 +1612,46 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Close friend or peer. (Barton 1921)"
           },
           {
-            "target": "Eirkatungan / Erotoit (pl. ngatukok / ngerotoitin)",
-            "source": "Chief / Leader",
+            "target": "Eirkatungan",
+            "source": "Chief",
             "pronunciation": "eirka-tungan / e-ro-toit",
             "hint": "Community leader, raid scout, or prominent elder. (Barton 1921)"
           },
           {
-            "target": "Ebayunan / Epeyonon (pl. ngebayok / ngipeyok)",
-            "source": "Guest / Stranger",
+            "target": "Erotoit",
+            "source": "Leader",
+            "pronunciation": "eirka-tungan / e-ro-toit",
+            "hint": "Community leader, raid scout, or prominent elder. (Barton 1921)"
+          },
+          {
+            "target": "Ebayunan",
+            "source": "Guest",
             "pronunciation": "e-ba-yu-nan / e-pe-yo-non",
             "hint": "Traveller or visiting guest hosted at the kraal. (Barton 1921)"
           },
           {
-            "target": "edit, pl. ngedithok",
+            "target": "Epeyonon",
+            "source": "Stranger",
+            "pronunciation": "e-ba-yu-nan / e-pe-yo-non",
+            "hint": "Traveller or visiting guest hosted at the kraal. (Barton 1921)"
+          },
+          {
+            "target": "edit",
             "source": "Son",
             "pronunciation": "edit"
           },
           {
-            "target": "ikoko, pl. ngedwi",
+            "target": "ikoko",
             "source": "Baby",
             "pronunciation": "ikoko"
           },
           {
-            "target": "atageri, pl. ngatagerin",
+            "target": "atageri",
             "source": "Clan",
             "pronunciation": "atageri"
           },
           {
-            "target": "apethi, pl. nyapethur",
+            "target": "apethi",
             "source": "Girl",
             "pronunciation": "apethi"
           }
@@ -1525,25 +1659,29 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Apa — Tata",
-            "source": "Grandfather — Grandmother"
+            "source": "Grandfather — Grandmother."
           },
           {
             "target": "Eya — Baba",
-            "source": "Aunt — Uncle"
+            "source": "Aunt — Uncle."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Apa\" mean in English?",
-            "correctAnswer": "Grandfather / Male ancestor",
+            "correctAnswer": "Grandfather",
             "options": [
-              "Grandfather / Male ancestor",
-              "Grandmother / Female ancestor",
+              "Grandmother",
               "Aunt",
-              "Uncle"
+              "Uncle",
+              "Grandfather"
             ],
-            "hint": "Core vocabulary in Family & People (Part 2)"
+            "hint": "Core vocabulary in Family & People (Part 2)",
+            "acceptedAnswers": [
+              "Grandfather / Male ancestor",
+              "Grandfather"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -1703,14 +1841,18 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ng'atuk / Ngatuk (sing. Ate / Atāka)\" mean in English?",
-            "correctAnswer": "Cattle (Herds)",
+            "correctAnswer": "Cattle",
             "options": [
               "Cow",
               "Bull",
-              "Bullock / Ox",
-              "Cattle (Herds)"
+              "Bullock",
+              "Cattle"
             ],
-            "hint": "Plural collective for cattle herds, central to Turkana identity and sustenance. (Barton 1921)"
+            "hint": "Starts with \"Ca…\" (6 letters)",
+            "acceptedAnswers": [
+              "Cattle (Herds)",
+              "Cattle"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1718,59 +1860,71 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Cow",
             "options": [
               "Bull",
-              "Bullock / Ox",
+              "Bullock",
               "Cow",
-              "Cattle (Herds)"
+              "Cattle"
             ],
-            "hint": "Adult cow providing milk and blood. (Barton 1921)"
+            "hint": "Starts with \"Co…\" (3 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Emanik (pl. ngemaniko)\" mean in English?",
             "correctAnswer": "Bull",
             "options": [
-              "Bullock / Ox",
-              "Bull",
-              "Cattle (Herds)",
-              "Cow"
+              "Bullock",
+              "Cattle",
+              "Cow",
+              "Bull"
             ],
-            "hint": "Breeding herd sire bull. (Barton 1921)"
+            "hint": "Starts with \"Bu…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Bull\" in Turkana?",
-            "correctAnswer": "Emanik (pl. ngemaniko)",
+            "correctAnswer": "Emanik",
             "options": [
-              "Emanik (pl. ngemaniko)",
-              "Ng'atuk / Ngatuk (sing. Ate / Atāka)",
-              "Atāka / Aite (pl. ngatak / ngatuk)",
-              "Emon (pl. ngemongin)"
+              "Ng'atuk",
+              "Atāka",
+              "Emon",
+              "Emanik"
             ],
-            "hint": "eh-mah-neek"
+            "hint": "eh-mah-neek",
+            "acceptedAnswers": [
+              "Emanik (pl. ngemaniko)",
+              "Emanik"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Bullock / Ox\" in Turkana?",
-            "correctAnswer": "Emon (pl. ngemongin)",
+            "correctAnswer": "Emon",
             "options": [
-              "Ng'atuk / Ngatuk (sing. Ate / Atāka)",
-              "Atāka / Aite (pl. ngatak / ngatuk)",
-              "Emanik (pl. ngemaniko)",
-              "Emon (pl. ngemongin)"
+              "Ng'atuk",
+              "Emon",
+              "Atāka",
+              "Emanik"
             ],
-            "hint": "eh-mohn"
+            "hint": "eh-mohn",
+            "acceptedAnswers": [
+              "Emon (pl. ngemongin)",
+              "Emon"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Heifer\" in Turkana?",
-            "correctAnswer": "Atou / Ataok (pl. ngatak / ngataokin)",
+            "correctAnswer": "Atou",
             "options": [
-              "Atāka / Aite (pl. ngatak / ngatuk)",
-              "Emanik (pl. ngemaniko)",
-              "Atou / Ataok (pl. ngatak / ngataokin)",
-              "Ng'atuk / Ngatuk (sing. Ate / Atāka)"
+              "Atāka",
+              "Emanik",
+              "Ng'atuk",
+              "Atou"
             ],
-            "hint": "ah-toh-oo"
+            "hint": "ah-toh-oo",
+            "acceptedAnswers": [
+              "Atou / Ataok (pl. ngatak / ngataokin)",
+              "Atou"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1899,23 +2053,23 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Donkey",
             "options": [
               "Camel",
+              "Donkey",
               "Elephant",
-              "Lion",
-              "Donkey"
+              "Lion"
             ],
-            "hint": "Pack donkey, indispensable for transporting household goods on migration. (Barton 1921)"
+            "hint": "Starts with \"Do…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akāl / Ekaal (pl. ngāl / ngikaala)\" mean in English?",
             "correctAnswer": "Camel",
             "options": [
+              "Camel",
               "Elephant",
               "Lion",
-              "Camel",
               "Donkey"
             ],
-            "hint": "Dromedary camel, vital milk source during severe drought. (Barton 1921)"
+            "hint": "Starts with \"Ca…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
@@ -1923,47 +2077,59 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Elephant",
             "options": [
               "Lion",
-              "Elephant",
               "Donkey",
+              "Elephant",
               "Camel"
             ],
-            "hint": "African savanna elephant. (Barton 1921)"
+            "hint": "Starts with \"El…\" (8 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Elephant\" in Turkana?",
-            "correctAnswer": "Etom / E'tome (pl. ngetom / ngitomei)",
+            "correctAnswer": "Etom",
             "options": [
-              "Etom / E'tome (pl. ngetom / ngitomei)",
-              "Esikirya / E'sikiriya (pl. ngisikirya)",
-              "Akāl / Ekaal (pl. ngāl / ngikaala)",
-              "Angatuin / Engatun (pl. ngatuino / ngingatunyo)"
+              "Esikirya",
+              "Etom",
+              "Akāl",
+              "Angatuin"
             ],
-            "hint": "eh-tohm"
+            "hint": "eh-tohm",
+            "acceptedAnswers": [
+              "Etom / E'tome (pl. ngetom / ngitomei)",
+              "Etom"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Lion\" in Turkana?",
-            "correctAnswer": "Angatuin / Engatun (pl. ngatuino / ngingatunyo)",
+            "correctAnswer": "Angatuin",
             "options": [
-              "Esikirya / E'sikiriya (pl. ngisikirya)",
-              "Akāl / Ekaal (pl. ngāl / ngikaala)",
-              "Etom / E'tome (pl. ngetom / ngitomei)",
-              "Angatuin / Engatun (pl. ngatuino / ngingatunyo)"
+              "Esikirya",
+              "Angatuin",
+              "Akāl",
+              "Etom"
             ],
-            "hint": "ahn-gah-too-een"
+            "hint": "ahn-gah-too-een",
+            "acceptedAnswers": [
+              "Angatuin / Engatun (pl. ngatuino / ngingatunyo)",
+              "Angatuin"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Leopard\" in Turkana?",
-            "correctAnswer": "Eris (pl. ngerise / ngirisa)",
+            "correctAnswer": "Eris",
             "options": [
-              "Akāl / Ekaal (pl. ngāl / ngikaala)",
-              "Etom / E'tome (pl. ngetom / ngitomei)",
-              "Eris (pl. ngerise / ngirisa)",
-              "Esikirya / E'sikiriya (pl. ngisikirya)"
+              "Eris",
+              "Akāl",
+              "Etom",
+              "Esikirya"
             ],
-            "hint": "eh-rees"
+            "hint": "eh-rees",
+            "acceptedAnswers": [
+              "Eris (pl. ngerise / ngirisa)",
+              "Eris"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2087,12 +2253,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Epir (pl. ngipirin)\" mean in English?",
             "correctAnswer": "Hippopotamus",
             "options": [
+              "Hippopotamus",
               "Zebra",
               "Eland",
-              "Oryx",
-              "Hippopotamus"
+              "Oryx"
             ],
-            "hint": "Hippopotamus of Lake Turkana. (Barton 1921)"
+            "hint": "Starts with \"Hi…\" (12 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2100,11 +2266,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Zebra",
             "options": [
               "Eland",
-              "Oryx",
               "Zebra",
+              "Oryx",
               "Hippopotamus"
             ],
-            "hint": "Plains zebra. (Barton 1921)"
+            "hint": "Starts with \"Ze…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2116,43 +2282,55 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Hippopotamus",
               "Zebra"
             ],
-            "hint": "Giant eland antelope. (Barton 1921)"
+            "hint": "Starts with \"El…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Eland\" in Turkana?",
-            "correctAnswer": "Uwabet (pl. nguawabeto)",
+            "correctAnswer": "Uwabet",
             "options": [
-              "Uwabet (pl. nguawabeto)",
-              "Epir (pl. ngipirin)",
-              "Etugo / Etuko (pl. ngetugoi / ngitukoi)",
-              "Eder (pl. ngederin)"
+              "Uwabet",
+              "Epir",
+              "Etugo",
+              "Eder"
             ],
-            "hint": "oo-wah-beht"
+            "hint": "oo-wah-beht",
+            "acceptedAnswers": [
+              "Uwabet (pl. nguawabeto)",
+              "Uwabet"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Oryx\" in Turkana?",
-            "correctAnswer": "Eder (pl. ngederin)",
+            "correctAnswer": "Eder",
             "options": [
-              "Epir (pl. ngipirin)",
-              "Etugo / Etuko (pl. ngetugoi / ngitukoi)",
-              "Uwabet (pl. nguawabeto)",
-              "Eder (pl. ngederin)"
+              "Epir",
+              "Eder",
+              "Etugo",
+              "Uwabet"
             ],
-            "hint": "eh-dehr"
+            "hint": "eh-dehr",
+            "acceptedAnswers": [
+              "Eder (pl. ngederin)",
+              "Eder"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Greater Kudu\" in Turkana?",
-            "correctAnswer": "Emakak (pl. ngemakaka)",
+            "correctAnswer": "Emakak",
             "options": [
-              "Etugo / Etuko (pl. ngetugoi / ngitukoi)",
-              "Uwabet (pl. nguawabeto)",
-              "Emakak (pl. ngemakaka)",
-              "Epir (pl. ngipirin)"
+              "Etugo",
+              "Uwabet",
+              "Epir",
+              "Emakak"
             ],
-            "hint": "eh-mah-kahk"
+            "hint": "eh-mah-kahk",
+            "acceptedAnswers": [
+              "Emakak (pl. ngemakaka)",
+              "Emakak"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2282,10 +2460,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "options": [
               "Crocodile",
               "Tortoise",
-              "Snake",
-              "Monkey"
+              "Monkey",
+              "Snake"
             ],
-            "hint": "Vervet / Sykes monkey. (Barton 1921)"
+            "hint": "Starts with \"Mo…\" (6 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2297,7 +2475,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Crocodile",
               "Monkey"
             ],
-            "hint": "Nile crocodile, abundant in Lake Turkana. (Barton 1921)"
+            "hint": "Starts with \"Cr…\" (9 letters)"
           },
           {
             "type": "multiple_choice",
@@ -2305,47 +2483,59 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Tortoise",
             "options": [
               "Snake",
-              "Tortoise",
               "Monkey",
-              "Crocodile"
+              "Crocodile",
+              "Tortoise"
             ],
-            "hint": "Leopard tortoise. (Barton 1921)"
+            "hint": "Starts with \"To…\" (8 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tortoise\" in Turkana?",
-            "correctAnswer": "Ebokok (pl. ngebokoka)",
+            "correctAnswer": "Ebokok",
             "options": [
-              "Ebokok (pl. ngebokoka)",
-              "Akodokon (pl. ngadokoi)",
-              "Akinyan / Akinyang (pl. ngakinyanga)",
-              "Emun (pl. ngemun)"
+              "Akodokon",
+              "Akinyan",
+              "Emun",
+              "Ebokok"
             ],
-            "hint": "eh-boh-kohk"
+            "hint": "eh-boh-kohk",
+            "acceptedAnswers": [
+              "Ebokok (pl. ngebokoka)",
+              "Ebokok"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Snake\" in Turkana?",
-            "correctAnswer": "Emun (pl. ngemun)",
+            "correctAnswer": "Emun",
             "options": [
-              "Akodokon (pl. ngadokoi)",
-              "Akinyan / Akinyang (pl. ngakinyanga)",
-              "Ebokok (pl. ngebokoka)",
-              "Emun (pl. ngemun)"
+              "Akodokon",
+              "Akinyan",
+              "Emun",
+              "Ebokok"
             ],
-            "hint": "eh-moon"
+            "hint": "eh-moon",
+            "acceptedAnswers": [
+              "Emun (pl. ngemun)",
+              "Emun"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Puff adder\" in Turkana?",
-            "correctAnswer": "Akipom (pl. ngapomia)",
+            "correctAnswer": "Akipom",
             "options": [
-              "Akinyan / Akinyang (pl. ngakinyanga)",
-              "Ebokok (pl. ngebokoka)",
-              "Akipom (pl. ngapomia)",
-              "Akodokon (pl. ngadokoi)"
+              "Akinyan",
+              "Akipom",
+              "Ebokok",
+              "Akodokon"
             ],
-            "hint": "ah-kee-pohm"
+            "hint": "ah-kee-pohm",
+            "acceptedAnswers": [
+              "Akipom (pl. ngapomia)",
+              "Akipom"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2462,35 +2652,39 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Guineafowl",
             "options": [
               "Dove",
-              "Chicken / Fowl",
-              "Hare / Rabbit",
-              "Guineafowl"
+              "Guineafowl",
+              "Chicken",
+              "Hare"
             ],
-            "hint": "Helmeted guineafowl. (Barton 1921)"
+            "hint": "Starts with \"Gu…\" (10 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ekuri (pl. ngokori)\" mean in English?",
             "correctAnswer": "Dove",
             "options": [
-              "Chicken / Fowl",
-              "Hare / Rabbit",
               "Dove",
+              "Chicken",
+              "Hare",
               "Guineafowl"
             ],
-            "hint": "African dove. (Barton 1921)"
+            "hint": "Starts with \"Do…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fish\" in Turkana?",
-            "correctAnswer": "Ekolia (pl. ngolia)",
+            "correctAnswer": "Ekolia",
             "options": [
-              "Ekuri (pl. ngokori)",
-              "Atapeng / Akukor (pl. ngatapengo / ngakukoroi)",
-              "Ekolia (pl. ngolia)",
-              "Atapen (pl. ngatapeno)"
+              "Ekuri",
+              "Atapeng",
+              "Ingok",
+              "Ekolia"
             ],
-            "hint": "eh-koh-lee-ah"
+            "hint": "eh-koh-lee-ah",
+            "acceptedAnswers": [
+              "Ekolia (pl. ngolia)",
+              "Ekolia"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2534,8 +2728,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Vital pastoral resource. Fresh water: 'Agipi kalimok'; dirty water: 'Agipi eloth'. (Barton 1921)"
           },
           {
-            "target": "Angalul / Angolul (pl. ngangolulio)",
-            "source": "River / Stream",
+            "target": "Angalul",
+            "source": "River",
+            "pronunciation": "anga-lul / ango-lul",
+            "hint": "Permanent or seasonal river channel. (Barton 1921)"
+          },
+          {
+            "target": "Angolul (pl. ngangolulio)",
+            "source": "Stream",
             "pronunciation": "anga-lul / ango-lul",
             "hint": "Permanent or seasonal river channel. (Barton 1921)"
           },
@@ -2558,8 +2758,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Rocky knoll or hillock. (Barton 1921)"
           },
           {
-            "target": "Aro / Etot (pl. ngaroitin / ngatotin)",
-            "source": "Plain / Savannah",
+            "target": "Aro",
+            "source": "Plain",
+            "pronunciation": "aro / e-tot",
+            "hint": "Vast open arid plain. (Barton 1921)"
+          },
+          {
+            "target": "Etot",
+            "source": "Savannah",
             "pronunciation": "aro / e-tot",
             "hint": "Vast open arid plain. (Barton 1921)"
           },
@@ -2602,11 +2808,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ng'akipi — Angalul",
-            "source": "Water — River"
+            "source": "Water — River."
           },
           {
             "target": "Emoro — Aukot",
-            "source": "Mountain — Mountain range"
+            "source": "Mountain — Mountain range."
           }
         ],
         "authoredExercises": [
@@ -2615,10 +2821,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ng'akipi\" mean in English?",
             "correctAnswer": "Water",
             "options": [
-              "Water",
-              "River / Stream",
+              "River",
               "Mountain",
-              "Mountain range"
+              "Water",
+              "Stream"
             ],
             "hint": "Core vocabulary in Nature & Environment (Part 1)"
           },
@@ -2680,8 +2886,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
           {
-            "target": "Akuich / Akuj",
-            "source": "Sky / Heaven",
+            "target": "Akuich",
+            "source": "Sky",
+            "pronunciation": "a-kuich / a-kuj",
+            "hint": "The vault of heaven and celestial abode of God. (Barton 1921)"
+          },
+          {
+            "target": "Akuj",
+            "source": "Heaven",
             "pronunciation": "a-kuich / a-kuj",
             "hint": "The vault of heaven and celestial abode of God. (Barton 1921)"
           },
@@ -2716,8 +2928,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Flash of lightning. (Barton 1921)"
           },
           {
-            "target": "Elup / Ngalup",
-            "source": "Earth / Soil / Ground",
+            "target": "Elup",
+            "source": "Earth",
+            "pronunciation": "e-lup / nga-lup",
+            "hint": "Soil and ground surface. (Barton 1921)"
+          },
+          {
+            "target": "Ngalup",
+            "source": "Soil",
             "pronunciation": "e-lup / nga-lup",
             "hint": "Soil and ground surface. (Barton 1921)"
           },
@@ -2734,8 +2952,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Stone or boulder. White quartz: 'Amoro ekwan'. (Barton 1921)"
           },
           {
-            "target": "Ebur / Ejwa (pl. ngiburin / ngejowi)",
-            "source": "Rock pool / Spring",
+            "target": "Ebur",
+            "source": "Rock pool",
+            "pronunciation": "e-bur / ejwa",
+            "hint": "Natural rock pool or perennial freshwater spring. (Barton 1921)"
+          },
+          {
+            "target": "Ejwa",
+            "source": "Spring",
             "pronunciation": "e-bur / ejwa",
             "hint": "Natural rock pool or perennial freshwater spring. (Barton 1921)"
           },
@@ -2769,15 +2993,19 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Akuich / Akuj\" mean in English?",
-            "correctAnswer": "Sky / Heaven",
+            "prompt": "What does \"Akuich\" mean in English?",
+            "correctAnswer": "Sky",
             "options": [
               "Cloud",
               "Wind",
-              "Whirlwind / Dust devil",
-              "Sky / Heaven"
+              "Sky",
+              "Whirlwind"
             ],
-            "hint": "The vault of heaven and celestial abode of God. (Barton 1921)"
+            "hint": "The vault of heaven and celestial abode of God. (Barton 1921)",
+            "acceptedAnswers": [
+              "Sky / Heaven",
+              "Sky"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -2785,59 +3013,71 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Cloud",
             "options": [
               "Wind",
-              "Whirlwind / Dust devil",
-              "Cloud",
-              "Sky / Heaven"
+              "Whirlwind",
+              "Sky",
+              "Cloud"
             ],
-            "hint": "Rain cloud. (Barton 1921)"
+            "hint": "Starts with \"Cl…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Atorot / Ekuwam (pl. ngatorot / ngikuwamin)\" mean in English?",
             "correctAnswer": "Wind",
             "options": [
-              "Whirlwind / Dust devil",
               "Wind",
-              "Sky / Heaven",
+              "Whirlwind",
+              "Sky",
               "Cloud"
             ],
-            "hint": "Breeze or wind across the plains. (Barton 1921)"
+            "hint": "Starts with \"Wi…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Wind\" in Turkana?",
-            "correctAnswer": "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
+            "correctAnswer": "Atorot",
             "options": [
-              "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
-              "Akuich / Akuj",
-              "Edu (pl. ngeduon)",
-              "Ekwam (pl. ngakwama)"
+              "Akuich",
+              "Edu",
+              "Ekwam",
+              "Atorot"
             ],
-            "hint": "ah-toh-roht"
+            "hint": "ah-toh-roht",
+            "acceptedAnswers": [
+              "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
+              "Atorot"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Whirlwind / Dust devil\" in Turkana?",
-            "correctAnswer": "Ekwam (pl. ngakwama)",
+            "correctAnswer": "Ekwam",
             "options": [
-              "Akuich / Akuj",
-              "Edu (pl. ngeduon)",
-              "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
-              "Ekwam (pl. ngakwama)"
+              "Ekwam",
+              "Akuich",
+              "Edu",
+              "Atorot"
             ],
-            "hint": "eh-kwahm"
+            "hint": "eh-kwahm",
+            "acceptedAnswers": [
+              "Ekwam (pl. ngakwama)",
+              "Ekwam"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Thunder\" in Turkana?",
-            "correctAnswer": "Egiru (pl. ngakiro)",
+            "correctAnswer": "Egiru",
             "options": [
-              "Edu (pl. ngeduon)",
-              "Atorot / Ekuwam (pl. ngatorot / ngikuwamin)",
-              "Egiru (pl. ngakiro)",
-              "Akuich / Akuj"
+              "Edu",
+              "Egiru",
+              "Atorot",
+              "Akuich"
             ],
-            "hint": "eh-gee-roo"
+            "hint": "eh-gee-roo",
+            "acceptedAnswers": [
+              "Egiru (pl. ngakiro)",
+              "Egiru"
+            ]
           },
           {
             "type": "match_pairs",
@@ -2903,8 +3143,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Plant or tree root used in healing concoctions. (Barton 1921)"
           },
           {
-            "target": "Amel / Amelu",
-            "source": "Grass / Pasture",
+            "target": "Amel",
+            "source": "Grass",
+            "pronunciation": "a-mel / a-me-lu",
+            "hint": "Fresh tender pasture for cattle and sheep. (Barton 1921)"
+          },
+          {
+            "target": "Amelu",
+            "source": "Pasture",
             "pronunciation": "a-mel / a-me-lu",
             "hint": "Fresh tender pasture for cattle and sheep. (Barton 1921)"
           },
@@ -2915,13 +3161,19 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Thorn used in defensive kraal fencing. (Barton 1921)"
           },
           {
-            "target": "Akwap / Akwop (pl. ngakwapa)",
-            "source": "Land / Country",
+            "target": "Akwap",
+            "source": "Land",
             "pronunciation": "akwap / akwop",
             "hint": "Ancestral homeland or territory. (Barton 1921)"
           },
           {
-            "target": "akolon, pl. ngakolon",
+            "target": "Akwop (pl. ngakwapa)",
+            "source": "Country",
+            "pronunciation": "akwap / akwop",
+            "hint": "Ancestral homeland or territory. (Barton 1921)"
+          },
+          {
+            "target": "akolon",
             "source": "Sun",
             "pronunciation": "akolon"
           }
@@ -2929,11 +3181,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Akitoi — Ateni",
-            "source": "Tree — Tree branch"
+            "source": "Tree — Tree branch."
           },
           {
             "target": "Akobuket — Akui",
-            "source": "Tree bark — Leaf"
+            "source": "Tree bark — Leaf."
           }
         ],
         "authoredExercises": [
@@ -2942,10 +3194,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Akitoi\" mean in English?",
             "correctAnswer": "Tree",
             "options": [
-              "Tree",
               "Tree branch",
               "Tree bark",
-              "Leaf"
+              "Leaf",
+              "Tree"
             ],
             "hint": "Core vocabulary in Nature & Environment (Part 3)"
           },
@@ -3111,10 +3363,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "options": [
               "Hair",
               "Eye",
-              "Ear",
-              "Head"
+              "Head",
+              "Ear"
             ],
-            "hint": "Head. Plural: Nyakis / Ngakouo. (Barton 1921)"
+            "hint": "Starts with \"He…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3122,59 +3374,71 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Hair",
             "options": [
               "Eye",
-              "Ear",
               "Hair",
+              "Ear",
               "Head"
             ],
-            "hint": "Human hair. (Barton 1921)"
+            "hint": "Starts with \"Ha…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akon / Akong (pl. ngakonyan)\" mean in English?",
             "correctAnswer": "Eye",
             "options": [
-              "Ear",
               "Eye",
+              "Ear",
               "Head",
               "Hair"
             ],
-            "hint": "Eye. Plural: Ngakonyan. (Barton 1921)"
+            "hint": "Starts with \"Ey…\" (3 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Eye\" in Turkana?",
-            "correctAnswer": "Akon / Akong (pl. ngakonyan)",
+            "correctAnswer": "Akon",
             "options": [
-              "Akon / Akong (pl. ngakonyan)",
-              "Ako / Akou (pl. nyakis / ngakouō)",
-              "Atimat / Ngetim (pl. ngatim)",
-              "Agit / Akit (pl. nyagi / ngaki)"
+              "Akon",
+              "Ako",
+              "Atimat",
+              "Agit"
             ],
-            "hint": "ah-kohn"
+            "hint": "ah-kohn",
+            "acceptedAnswers": [
+              "Akon / Akong (pl. ngakonyan)",
+              "Akon"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Ear\" in Turkana?",
-            "correctAnswer": "Agit / Akit (pl. nyagi / ngaki)",
+            "correctAnswer": "Agit",
             "options": [
-              "Ako / Akou (pl. nyakis / ngakouō)",
-              "Atimat / Ngetim (pl. ngatim)",
-              "Akon / Akong (pl. ngakonyan)",
-              "Agit / Akit (pl. nyagi / ngaki)"
+              "Agit",
+              "Ako",
+              "Atimat",
+              "Akon"
             ],
-            "hint": "ah-geet / ah-keet"
+            "hint": "ah-geet / ah-keet",
+            "acceptedAnswers": [
+              "Agit / Akit (pl. nyagi / ngaki)",
+              "Agit"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Turkana?",
-            "correctAnswer": "Ekumi (pl. ngikumith / ngikumes)",
+            "correctAnswer": "Ekumi",
             "options": [
-              "Atimat / Ngetim (pl. ngatim)",
-              "Akon / Akong (pl. ngakonyan)",
-              "Ekumi (pl. ngikumith / ngikumes)",
-              "Ako / Akou (pl. nyakis / ngakouō)"
+              "Atimat",
+              "Akon",
+              "Ekumi",
+              "Ako"
             ],
-            "hint": "eh-koo-mee"
+            "hint": "eh-koo-mee",
+            "acceptedAnswers": [
+              "Ekumi (pl. ngikumith / ngikumes)",
+              "Ekumi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3302,12 +3566,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Eret (pl. ngeretin)\" mean in English?",
             "correctAnswer": "Face",
             "options": [
+              "Face",
               "Shoulder",
               "Chest",
-              "Breast",
-              "Face"
+              "Breast"
             ],
-            "hint": "Face or brow. (Barton 1921)"
+            "hint": "Starts with \"Fa…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3319,7 +3583,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Shoulder",
               "Face"
             ],
-            "hint": "Shoulder. Plural: Ngethiketa. (Barton 1921)"
+            "hint": "Starts with \"Sh…\" (8 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3331,43 +3595,55 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Face",
               "Shoulder"
             ],
-            "hint": "Chest. Plural: Ngatorobio. (Barton 1921)"
+            "hint": "Starts with \"Ch…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Chest\" in Turkana?",
-            "correctAnswer": "Etorob (pl. ngatorobio)",
+            "correctAnswer": "Etorob",
             "options": [
-              "Etorob (pl. ngatorobio)",
-              "Eret (pl. ngeretin)",
-              "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
-              "Ethigina / Ekidi (pl. ngethigin)"
+              "Etorob",
+              "Eret",
+              "Ethiket",
+              "Ethigina"
             ],
-            "hint": "eh-toh-rohb"
+            "hint": "eh-toh-rohb",
+            "acceptedAnswers": [
+              "Etorob (pl. ngatorobio)",
+              "Etorob"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Breast\" in Turkana?",
-            "correctAnswer": "Ethigina / Ekidi (pl. ngethigin)",
+            "correctAnswer": "Ethigina",
             "options": [
-              "Eret (pl. ngeretin)",
-              "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
-              "Etorob (pl. ngatorobio)",
-              "Ethigina / Ekidi (pl. ngethigin)"
+              "Eret",
+              "Ethiket",
+              "Etorob",
+              "Ethigina"
             ],
-            "hint": "eh-thee-gee-nah"
+            "hint": "eh-thee-gee-nah",
+            "acceptedAnswers": [
+              "Ethigina / Ekidi (pl. ngethigin)",
+              "Ethigina"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Heart\" in Turkana?",
-            "correctAnswer": "Etou / Etau (pl. ngetai / ngitai)",
+            "correctAnswer": "Etou",
             "options": [
-              "Ethiket / Ekeget (pl. ngethiketa / ngikegeta)",
-              "Etorob (pl. ngatorobio)",
-              "Etou / Etau (pl. ngetai / ngitai)",
-              "Eret (pl. ngeretin)"
+              "Ethiket",
+              "Etorob",
+              "Etou",
+              "Eret"
             ],
-            "hint": "eh-toh-oo / eh-tah-oo"
+            "hint": "eh-toh-oo / eh-tah-oo",
+            "acceptedAnswers": [
+              "Etou / Etau (pl. ngetai / ngitai)",
+              "Etou"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3403,8 +3679,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
           {
-            "target": "Emargoit / Emagarit (pl. ngemagor)",
-            "source": "Fingernail / Claw",
+            "target": "Emargoit",
+            "source": "Fingernail",
+            "pronunciation": "e-margoit / e-ma-ga-rit",
+            "hint": "Fingernail, claw, or animal hoof. (Barton 1921)"
+          },
+          {
+            "target": "Emagarit (pl. ngemagor)",
+            "source": "Claw",
             "pronunciation": "e-margoit / e-ma-ga-rit",
             "hint": "Fingernail, claw, or animal hoof. (Barton 1921)"
           },
@@ -3421,8 +3703,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Knee joint. Plural: Ngakungin. (Barton 1921)"
           },
           {
-            "target": "Adapal akeju / Etou ya keju",
-            "source": "Foot / Sole",
+            "target": "Adapal akeju",
+            "source": "Foot",
+            "pronunciation": "a-da-pal a-ke-ju / e-tou ya ke-ju",
+            "hint": "Sole of foot. (Barton 1921)"
+          },
+          {
+            "target": "Etou ya keju",
+            "source": "Sole",
             "pronunciation": "a-da-pal a-ke-ju / e-tou ya ke-ju",
             "hint": "Sole of foot. (Barton 1921)"
           },
@@ -3445,8 +3733,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Living blood; also tapped as pastoral sustenance. (Barton 1921)"
           },
           {
-            "target": "Akwan (pl. ngouwat) / Akirin (pl. ngakir)",
-            "source": "Body / Flesh",
+            "target": "Akwan (pl. ngouwat)",
+            "source": "Body",
+            "pronunciation": "akwan / a-ki-rin",
+            "hint": "Human body or flesh. (Barton 1921)"
+          },
+          {
+            "target": "Akirin (pl. ngakir)",
+            "source": "Flesh",
             "pronunciation": "akwan / a-ki-rin",
             "hint": "Human body or flesh. (Barton 1921)"
           },
@@ -3470,15 +3764,19 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Emargoit / Emagarit (pl. ngemagor)\" mean in English?",
-            "correctAnswer": "Fingernail / Claw",
+            "prompt": "What does \"Emargoit\" mean in English?",
+            "correctAnswer": "Fingernail",
             "options": [
               "Leg",
               "Knee",
-              "Foot / Sole",
-              "Fingernail / Claw"
+              "Foot",
+              "Fingernail"
             ],
-            "hint": "Fingernail, claw, or animal hoof. (Barton 1921)"
+            "hint": "Starts with \"Fi…\" (10 letters)",
+            "acceptedAnswers": [
+              "Fingernail / Claw",
+              "Fingernail"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -3486,59 +3784,71 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Leg",
             "options": [
               "Knee",
-              "Foot / Sole",
-              "Leg",
-              "Fingernail / Claw"
+              "Foot",
+              "Fingernail",
+              "Leg"
             ],
-            "hint": "Leg or foot. Plural: Ngakeju. (Barton 1921)"
+            "hint": "Starts with \"Le…\" (3 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akun / Akung (pl. ngakungin)\" mean in English?",
             "correctAnswer": "Knee",
             "options": [
-              "Foot / Sole",
+              "Foot",
               "Knee",
-              "Fingernail / Claw",
+              "Fingernail",
               "Leg"
             ],
-            "hint": "Knee joint. Plural: Ngakungin. (Barton 1921)"
+            "hint": "Starts with \"Kn…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Knee\" in Turkana?",
-            "correctAnswer": "Akun / Akung (pl. ngakungin)",
+            "correctAnswer": "Akun",
             "options": [
-              "Akun / Akung (pl. ngakungin)",
-              "Emargoit / Emagarit (pl. ngemagor)",
-              "Akeju (pl. ngakeju)",
-              "Adapal akeju / Etou ya keju"
+              "Emargoit",
+              "Akun",
+              "Akeju",
+              "Adapal akeju"
             ],
-            "hint": "ah-koon"
+            "hint": "ah-koon",
+            "acceptedAnswers": [
+              "Akun / Akung (pl. ngakungin)",
+              "Akun"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Foot / Sole\" in Turkana?",
-            "correctAnswer": "Adapal akeju / Etou ya keju",
+            "prompt": "How do you say \"Foot\" in Turkana?",
+            "correctAnswer": "Adapal akeju",
             "options": [
-              "Emargoit / Emagarit (pl. ngemagor)",
-              "Akeju (pl. ngakeju)",
-              "Akun / Akung (pl. ngakungin)",
-              "Adapal akeju / Etou ya keju"
+              "Emargoit",
+              "Adapal akeju",
+              "Akeju",
+              "Akun"
             ],
-            "hint": "ah-dah-pahl ah-keh-joo"
+            "hint": "ah-dah-pahl ah-keh-joo",
+            "acceptedAnswers": [
+              "Adapal akeju / Etou ya keju",
+              "Adapal akeju"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Toe\" in Turkana?",
-            "correctAnswer": "Akimoin akejo (pl. ngakimmoio ngakeju)",
+            "correctAnswer": "Akimoin akejo",
             "options": [
-              "Akeju (pl. ngakeju)",
-              "Akun / Akung (pl. ngakungin)",
-              "Akimoin akejo (pl. ngakimmoio ngakeju)",
-              "Emargoit / Emagarit (pl. ngemagor)"
+              "Akeju",
+              "Akimoin akejo",
+              "Akun",
+              "Emargoit"
             ],
-            "hint": "eh-kee-moh-een ah-keh-joh"
+            "hint": "eh-kee-moh-een ah-keh-joh",
+            "acceptedAnswers": [
+              "Akimoin akejo (pl. ngakimmoio ngakeju)",
+              "Akimoin akejo"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3608,8 +3918,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Sour fermented milk curd, a dietary staple. (Barton 1921)"
           },
           {
-            "target": "Akimet (pl. ngakajonon / ngameta)",
-            "source": "Butter / Ghee / Fat",
+            "target": "Akimet",
+            "source": "Butter",
+            "pronunciation": "a-ki-met",
+            "hint": "Clarified butter or melted fat. (Barton 1921)"
+          },
+          {
+            "target": "ngameta)",
+            "source": "Ghee",
             "pronunciation": "a-ki-met",
             "hint": "Clarified butter or melted fat. (Barton 1921)"
           },
@@ -3626,8 +3942,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Rich broth made by boiling meat and marrow bones. (Barton 1921)"
           },
           {
-            "target": "Mumwa / Ngimumwa",
-            "source": "Millet / Sorghum (grain)",
+            "target": "Mumwa",
+            "source": "Millet",
+            "pronunciation": "mumwa / ngi-mumwa",
+            "hint": "Drought-hardy sorghum grain cultivated in river floodplains. (Barton 1921)"
+          },
+          {
+            "target": "Ngimumwa",
+            "source": "Sorghum (grain)",
             "pronunciation": "mumwa / ngi-mumwa",
             "hint": "Drought-hardy sorghum grain cultivated in river floodplains. (Barton 1921)"
           },
@@ -3681,19 +4003,19 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Curdled milk",
               "Meat"
             ],
-            "hint": "Meat from prepared livestock. (Barton 1921)"
+            "hint": "Starts with \"Me…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akili / Ngakile\" mean in English?",
             "correctAnswer": "Milk",
             "options": [
+              "Milk",
               "Fresh milk",
               "Curdled milk",
-              "Milk",
               "Meat"
             ],
-            "hint": "Fresh cow, camel, or goat milk. (Barton 1921)"
+            "hint": "Starts with \"Mi…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -3712,9 +4034,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Fresh milk\" in Turkana?",
             "correctAnswer": "Alepan",
             "options": [
+              "Akirin",
               "Alepan",
-              "Akirin (pl. ngakerin / ngakir)",
-              "Akili / Ngakile",
+              "Akili",
               "Ngakikok"
             ],
             "hint": "ah-leh-pahn"
@@ -3724,24 +4046,28 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Curdled milk\" in Turkana?",
             "correctAnswer": "Ngakikok",
             "options": [
-              "Akirin (pl. ngakerin / ngakir)",
-              "Akili / Ngakile",
-              "Alepan",
-              "Ngakikok"
+              "Akirin",
+              "Ngakikok",
+              "Akili",
+              "Alepan"
             ],
             "hint": "ngah-kee-kohk"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Butter / Ghee / Fat\" in Turkana?",
-            "correctAnswer": "Akimet (pl. ngakajonon / ngameta)",
+            "prompt": "How do you say \"Butter\" in Turkana?",
+            "correctAnswer": "Akimet",
             "options": [
-              "Akili / Ngakile",
+              "Akili",
+              "Akimet",
               "Alepan",
-              "Akimet (pl. ngakajonon / ngameta)",
-              "Akirin (pl. ngakerin / ngakir)"
+              "Akirin"
             ],
-            "hint": "ah-kee-meht"
+            "hint": "ah-kee-meht",
+            "acceptedAnswers": [
+              "Akimet (pl. ngakajonon / ngameta)",
+              "Akimet"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3825,74 +4151,94 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akimoich / Akimuj (pl. ngimocha)\" mean in English?",
-            "correctAnswer": "Food (provisions)",
+            "correctAnswer": "Food",
             "options": [
               "Drinking water",
-              "Salt / Salt-lick",
-              "Chewing tobacco",
-              "Food (provisions)"
+              "Food",
+              "Salt",
+              "Chewing tobacco"
             ],
-            "hint": "Food and subsistence sustenance. (Barton 1921)"
+            "hint": "Starts with \"Fo…\" (4 letters)",
+            "acceptedAnswers": [
+              "Food (provisions)",
+              "Food"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ng'akipi / Agipi\" mean in English?",
             "correctAnswer": "Drinking water",
             "options": [
-              "Salt / Salt-lick",
+              "Salt",
               "Chewing tobacco",
-              "Drinking water",
-              "Food (provisions)"
+              "Food",
+              "Drinking water"
             ],
-            "hint": "Drinking water drawn from wells. (Barton 1921)"
+            "hint": "Starts with \"Dr…\" (14 letters)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Edot (pl. ngedotin)\" mean in English?",
-            "correctAnswer": "Salt / Salt-lick",
+            "prompt": "What does \"Edot\" mean in English?",
+            "correctAnswer": "Salt",
             "options": [
               "Chewing tobacco",
-              "Salt / Salt-lick",
-              "Food (provisions)",
+              "Salt",
+              "Food",
               "Drinking water"
             ],
-            "hint": "Mineral-rich soil and salt ingested by stock. (Barton 1921)"
+            "hint": "Starts with \"Sa…\" (4 letters)",
+            "acceptedAnswers": [
+              "Salt / Salt-lick",
+              "Salt"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Salt / Salt-lick\" in Turkana?",
-            "correctAnswer": "Edot (pl. ngedotin)",
+            "correctAnswer": "Edot",
             "options": [
-              "Edot (pl. ngedotin)",
-              "Akimoich / Akimuj (pl. ngimocha)",
-              "Ng'akipi / Agipi",
-              "Enyakait (pl. nganyakaita)"
+              "Akimoich",
+              "Edot",
+              "Ng'akipi",
+              "Enyakait"
             ],
-            "hint": "eh-doht"
+            "hint": "eh-doht",
+            "acceptedAnswers": [
+              "Edot (pl. ngedotin)",
+              "Edot"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Chewing tobacco\" in Turkana?",
-            "correctAnswer": "Enyakait (pl. nganyakaita)",
+            "correctAnswer": "Enyakait",
             "options": [
-              "Akimoich / Akimuj (pl. ngimocha)",
-              "Ng'akipi / Agipi",
-              "Edot (pl. ngedotin)",
-              "Enyakait (pl. nganyakaita)"
+              "Enyakait",
+              "Akimoich",
+              "Ng'akipi",
+              "Edot"
             ],
-            "hint": "eh-nyah-kah-eet"
+            "hint": "eh-nyah-kah-eet",
+            "acceptedAnswers": [
+              "Enyakait (pl. nganyakaita)",
+              "Enyakait"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Snuff tobacco\" in Turkana?",
-            "correctAnswer": "Etaba ekumi (pl. ngetabin ekumi)",
+            "correctAnswer": "Etaba ekumi",
             "options": [
-              "Ng'akipi / Agipi",
-              "Edot (pl. ngedotin)",
-              "Etaba ekumi (pl. ngetabin ekumi)",
-              "Akimoich / Akimuj (pl. ngimocha)"
+              "Ng'akipi",
+              "Etaba ekumi",
+              "Edot",
+              "Akimoich"
             ],
-            "hint": "eh-tah-bah eh-koo-mee"
+            "hint": "eh-tah-bah eh-koo-mee",
+            "acceptedAnswers": [
+              "Etaba ekumi (pl. ngetabin ekumi)",
+              "Etaba ekumi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -3938,26 +4284,50 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
           {
-            "target": "Ouwi / Nawi (pl. ngouwi / ngawiyoi)",
-            "source": "Homestead / Village",
+            "target": "Ouwi",
+            "source": "Homestead",
             "pronunciation": "ou-wi / na-wi",
             "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)"
           },
           {
-            "target": "Akie / Akai (pl. ngakiyis / ngkais)",
-            "source": "House / Family hut",
+            "target": "Nawi",
+            "source": "Village",
+            "pronunciation": "ou-wi / na-wi",
+            "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)"
+          },
+          {
+            "target": "Akie",
+            "source": "House",
             "pronunciation": "a-kie / a-kai",
             "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)"
           },
           {
-            "target": "Akidor (pl. ngidorin / ngikidoria)",
-            "source": "Door / Kraal gate",
+            "target": "Akai",
+            "source": "Family hut",
+            "pronunciation": "a-kie / a-kai",
+            "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)"
+          },
+          {
+            "target": "Akidor",
+            "source": "Door",
             "pronunciation": "a-ki-dor",
             "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)"
           },
           {
-            "target": "Anuk / Anok (pl. nganukim / ngokin)",
-            "source": "Cattle kraal / Enclosure",
+            "target": "ngikidoria)",
+            "source": "Kraal gate",
+            "pronunciation": "a-ki-dor",
+            "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)"
+          },
+          {
+            "target": "Anuk",
+            "source": "Cattle kraal",
+            "pronunciation": "a-nuk / a-nok",
+            "hint": "Thorn barrier enclosing livestock overnight. (Barton 1921)"
+          },
+          {
+            "target": "Anok",
+            "source": "Enclosure",
             "pronunciation": "a-nuk / a-nok",
             "hint": "Thorn barrier enclosing livestock overnight. (Barton 1921)"
           },
@@ -3968,14 +4338,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Designated pasture territory for herds. (Barton 1921)"
           },
           {
-            "target": "Ipem / Epem (pl. nyepemin / ngapemiok)",
-            "source": "Bed / Sleeping mat",
+            "target": "Ipem",
+            "source": "Bed",
             "pronunciation": "i-pem / e-pem",
             "hint": "Raised wooden platform bed. (Barton 1921)"
           },
           {
-            "target": "Ekijolon / Ekicholong (pl. ngijolona / ngikicholonga)",
-            "source": "Carved headrest / Stool",
+            "target": "Epem",
+            "source": "Sleeping mat",
+            "pronunciation": "i-pem / e-pem",
+            "hint": "Raised wooden platform bed. (Barton 1921)"
+          },
+          {
+            "target": "Ekijolon",
+            "source": "Carved headrest",
+            "pronunciation": "e-ki-jo-lon / e-kicho-long",
+            "hint": "Iconic carved wooden headrest carried everywhere by Turkana men. (Barton 1921)"
+          },
+          {
+            "target": "Ekicholong",
+            "source": "Stool",
             "pronunciation": "e-ki-jo-lon / e-kicho-long",
             "hint": "Iconic carved wooden headrest carried everywhere by Turkana men. (Barton 1921)"
           },
@@ -3986,14 +4368,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Low wooden stool for resting in the compound. (Barton 1921)"
           },
           {
-            "target": "Etu / Itu (pl. ngetuel / ngetui)",
-            "source": "Calabash / Milk gourd",
+            "target": "Etu",
+            "source": "Calabash",
             "pronunciation": "etu / itu",
             "hint": "Dried gourd vessel used for churning and drinking milk. (Barton 1921)"
           },
           {
-            "target": "Edera / Eboli (pl. ngaderai / ngibolai)",
-            "source": "Half gourd / Drinking cup",
+            "target": "Itu",
+            "source": "Milk gourd",
+            "pronunciation": "etu / itu",
+            "hint": "Dried gourd vessel used for churning and drinking milk. (Barton 1921)"
+          },
+          {
+            "target": "Edera",
+            "source": "Half gourd",
+            "pronunciation": "e-de-ra / e-bo-li",
+            "hint": "Hemispherical gourd cup. (Barton 1921)"
+          },
+          {
+            "target": "Eboli",
+            "source": "Drinking cup",
             "pronunciation": "e-de-ra / e-bo-li",
             "hint": "Hemispherical gourd cup. (Barton 1921)"
           },
@@ -4027,75 +4421,99 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ouwi / Nawi (pl. ngouwi / ngawiyoi)\" mean in English?",
-            "correctAnswer": "Homestead / Village",
+            "prompt": "What does \"Ouwi\" mean in English?",
+            "correctAnswer": "Homestead",
             "options": [
-              "House / Family hut",
-              "Door / Kraal gate",
-              "Cattle kraal / Enclosure",
-              "Homestead / Village"
+              "House",
+              "Door",
+              "Homestead",
+              "Cattle kraal"
             ],
-            "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Akie / Akai (pl. ngakiyis / ngkais)\" mean in English?",
-            "correctAnswer": "House / Family hut",
-            "options": [
-              "Door / Kraal gate",
-              "Cattle kraal / Enclosure",
-              "House / Family hut",
-              "Homestead / Village"
-            ],
-            "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Akidor (pl. ngidorin / ngikidoria)\" mean in English?",
-            "correctAnswer": "Door / Kraal gate",
-            "options": [
-              "Cattle kraal / Enclosure",
-              "Door / Kraal gate",
+            "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)",
+            "acceptedAnswers": [
               "Homestead / Village",
-              "House / Family hut"
-            ],
-            "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)"
+              "Homestead"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Door / Kraal gate\" in Turkana?",
-            "correctAnswer": "Akidor (pl. ngidorin / ngikidoria)",
+            "prompt": "What does \"Akie\" mean in English?",
+            "correctAnswer": "House",
             "options": [
-              "Akidor (pl. ngidorin / ngikidoria)",
-              "Ouwi / Nawi (pl. ngouwi / ngawiyoi)",
-              "Akie / Akai (pl. ngakiyis / ngkais)",
-              "Anuk / Anok (pl. nganukim / ngokin)"
+              "Door",
+              "Cattle kraal",
+              "House",
+              "Homestead"
             ],
-            "hint": "ah-kee-dohr"
+            "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)",
+            "acceptedAnswers": [
+              "House / Family hut",
+              "House"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Cattle kraal / Enclosure\" in Turkana?",
-            "correctAnswer": "Anuk / Anok (pl. nganukim / ngokin)",
+            "prompt": "What does \"Akidor\" mean in English?",
+            "correctAnswer": "Door",
             "options": [
-              "Ouwi / Nawi (pl. ngouwi / ngawiyoi)",
-              "Akie / Akai (pl. ngakiyis / ngkais)",
-              "Akidor (pl. ngidorin / ngikidoria)",
-              "Anuk / Anok (pl. nganukim / ngokin)"
+              "Cattle kraal",
+              "Homestead",
+              "House",
+              "Door"
             ],
-            "hint": "ah-nook"
+            "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)",
+            "acceptedAnswers": [
+              "Door / Kraal gate",
+              "Door"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Door\" in Turkana?",
+            "correctAnswer": "Akidor",
+            "options": [
+              "Ouwi",
+              "Akie",
+              "Anuk",
+              "Akidor"
+            ],
+            "hint": "ah-kee-dohr",
+            "acceptedAnswers": [
+              "Akidor (pl. ngidorin / ngikidoria)",
+              "Akidor"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Cattle kraal\" in Turkana?",
+            "correctAnswer": "Anuk",
+            "options": [
+              "Ouwi",
+              "Anuk",
+              "Akie",
+              "Akidor"
+            ],
+            "hint": "ah-nook",
+            "acceptedAnswers": [
+              "Anuk / Anok (pl. nganukim / ngokin)",
+              "Anuk"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Grazing ground\" in Turkana?",
-            "correctAnswer": "Achokor (pl. ngachokoritho)",
+            "correctAnswer": "Achokor",
             "options": [
-              "Akie / Akai (pl. ngakiyis / ngkais)",
-              "Akidor (pl. ngidorin / ngikidoria)",
-              "Achokor (pl. ngachokoritho)",
-              "Ouwi / Nawi (pl. ngouwi / ngawiyoi)"
+              "Akie",
+              "Akidor",
+              "Achokor",
+              "Ouwi"
             ],
-            "hint": "ah-choh-kohr"
+            "hint": "ah-choh-kohr",
+            "acceptedAnswers": [
+              "Achokor (pl. ngachokoritho)",
+              "Achokor"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4225,8 +4643,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "options": [
               "Traditional wooden spoon",
               "Watering trough",
-              "Fire",
-              "Cooking pot"
+              "Cooking pot",
+              "Fire"
             ],
             "hint": "Earthen pot set over hearth stones. (Barton 1921)"
           },
@@ -4236,8 +4654,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Traditional wooden spoon",
             "options": [
               "Watering trough",
-              "Fire",
               "Traditional wooden spoon",
+              "Fire",
               "Cooking pot"
             ],
             "hint": "Carved wooden spoon. (Barton 1921)"
@@ -4257,38 +4675,50 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Watering trough\" in Turkana?",
-            "correctAnswer": "Eteker / Etuba (pl. ngatekera / ngatubai)",
+            "correctAnswer": "Eteker",
             "options": [
-              "Eteker / Etuba (pl. ngatekera / ngatubai)",
-              "Amut (pl. ngamuti)",
-              "Akolopoich (pl. ngolopoicha)",
-              "Akim (pl. ngakimia)"
+              "Amut",
+              "Akolopoich",
+              "Eteker",
+              "Akim"
             ],
-            "hint": "eh-teh-kehr"
+            "hint": "eh-teh-kehr",
+            "acceptedAnswers": [
+              "Eteker / Etuba (pl. ngatekera / ngatubai)",
+              "Eteker"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fire\" in Turkana?",
-            "correctAnswer": "Akim (pl. ngakimia)",
+            "correctAnswer": "Akim",
             "options": [
-              "Amut (pl. ngamuti)",
-              "Akolopoich (pl. ngolopoicha)",
-              "Eteker / Etuba (pl. ngatekera / ngatubai)",
-              "Akim (pl. ngakimia)"
+              "Amut",
+              "Akim",
+              "Akolopoich",
+              "Eteker"
             ],
-            "hint": "ah-keem"
+            "hint": "ah-keem",
+            "acceptedAnswers": [
+              "Akim (pl. ngakimia)",
+              "Akim"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Firewood\" in Turkana?",
-            "correctAnswer": "Akitoi (pl. ngakito)",
+            "correctAnswer": "Akitoi",
             "options": [
-              "Akolopoich (pl. ngolopoicha)",
-              "Eteker / Etuba (pl. ngatekera / ngatubai)",
-              "Akitoi (pl. ngakito)",
-              "Amut (pl. ngamuti)"
+              "Akolopoich",
+              "Eteker",
+              "Amut",
+              "Akitoi"
             ],
-            "hint": "ah-kee-toh-ee"
+            "hint": "ah-kee-toh-ee",
+            "acceptedAnswers": [
+              "Akitoi (pl. ngakito)",
+              "Akitoi"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4358,10 +4788,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Amedok (pl. ngemedoi)\" mean in English?",
             "correctAnswer": "Mud head-dress",
             "options": [
+              "Mud head-dress",
               "Tobacco box",
-              "Skin pouch / Bag",
-              "Market",
-              "Mud head-dress"
+              "Skin pouch",
+              "Market"
             ],
             "hint": "Sculpted clay and blue-pigment coiffure worn by initiated Turkana men. (Barton 1921)"
           },
@@ -4370,36 +4800,44 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Eburiangan (pl. ngeburianganga)\" mean in English?",
             "correctAnswer": "Tobacco box",
             "options": [
-              "Skin pouch / Bag",
+              "Skin pouch",
               "Market",
-              "Tobacco box",
-              "Mud head-dress"
+              "Mud head-dress",
+              "Tobacco box"
             ],
             "hint": "Carved horn container holding tobacco. (Barton 1921)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Echui (pl. ngechuin)\" mean in English?",
-            "correctAnswer": "Skin pouch / Bag",
+            "prompt": "What does \"Echui\" mean in English?",
+            "correctAnswer": "Skin pouch",
             "options": [
+              "Skin pouch",
               "Market",
-              "Skin pouch / Bag",
               "Mud head-dress",
               "Tobacco box"
             ],
-            "hint": "Leather carrying pouch. (Barton 1921)"
+            "hint": "Leather carrying pouch. (Barton 1921)",
+            "acceptedAnswers": [
+              "Skin pouch / Bag",
+              "Skin pouch"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Skin pouch / Bag\" in Turkana?",
-            "correctAnswer": "Echui (pl. ngechuin)",
+            "correctAnswer": "Echui",
             "options": [
-              "Echui (pl. ngechuin)",
-              "Amedok (pl. ngemedoi)",
-              "Eburiangan (pl. ngeburianganga)",
-              "Echiro (pl. ngichiroi)"
+              "Amedok",
+              "Eburiangan",
+              "Echui",
+              "Echiro"
             ],
-            "hint": "eh-choo-ee"
+            "hint": "eh-choo-ee",
+            "acceptedAnswers": [
+              "Echui (pl. ngechuin)",
+              "Echui"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4533,21 +4971,21 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Spear",
             "options": [
               "Spear shaft",
-              "Spear sheath",
               "Shield",
+              "Knife",
               "Spear"
             ],
-            "hint": "Long slender iron spear carried by warriors and elders for defense. (Barton 1921)"
+            "hint": "Starts with \"Sp…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Emorok (pl. ngemorkin)\" mean in English?",
             "correctAnswer": "Spear shaft",
             "options": [
-              "Spear sheath",
               "Shield",
+              "Spear",
               "Spear shaft",
-              "Spear"
+              "Knife"
             ],
             "hint": "Polished hardwood shaft connecting spear blade and iron butt. (Barton 1921)"
           },
@@ -4559,45 +4997,57 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Shield",
               "Spear sheath",
               "Spear",
-              "Spear shaft"
+              "Knife"
             ],
             "hint": "Decorated leather cap shielding the spearhead tip. (Barton 1921)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Spear sheath\" in Turkana?",
-            "correctAnswer": "Akuraro (pl. ngakuraroi)",
+            "correctAnswer": "Akuraro",
             "options": [
-              "Akuraro (pl. ngakuraroi)",
-              "Akwara / A'kwara (pl. ngakwarath / ngawarath)",
-              "Emorok (pl. ngemorkin)",
-              "Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)"
+              "Akuraro",
+              "Akwara",
+              "Emorok",
+              "Oupwol"
             ],
-            "hint": "ah-koo-rah-roh"
+            "hint": "ah-koo-rah-roh",
+            "acceptedAnswers": [
+              "Akuraro (pl. ngakuraroi)",
+              "Akuraro"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Shield\" in Turkana?",
-            "correctAnswer": "Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)",
+            "correctAnswer": "Oupwol",
             "options": [
-              "Akwara / A'kwara (pl. ngakwarath / ngawarath)",
-              "Emorok (pl. ngemorkin)",
-              "Akuraro (pl. ngakuraroi)",
-              "Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)"
+              "Akwara",
+              "Oupwol",
+              "Emorok",
+              "Akuraro"
             ],
-            "hint": "oh-pwohl / eh-gwoh"
+            "hint": "oh-pwohl / eh-gwoh",
+            "acceptedAnswers": [
+              "Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)",
+              "Oupwol"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Knife\" in Turkana?",
-            "correctAnswer": "Ekileng / A'kileng (pl. ngakilengya / ngilenya)",
+            "correctAnswer": "Ekileng",
             "options": [
-              "Emorok (pl. ngemorkin)",
-              "Akuraro (pl. ngakuraroi)",
-              "Ekileng / A'kileng (pl. ngakilengya / ngilenya)",
-              "Akwara / A'kwara (pl. ngakwarath / ngawarath)"
+              "Emorok",
+              "Ekileng",
+              "Akuraro",
+              "Akwara"
             ],
-            "hint": "eh-kee-lehng"
+            "hint": "eh-kee-lehng",
+            "acceptedAnswers": [
+              "Ekileng / A'kileng (pl. ngakilengya / ngilenya)",
+              "Ekileng"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4675,8 +5125,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Strong twisted fiber cord used for tying livestock. (Barton 1921)"
           },
           {
-            "target": "Ewuno / Aloit (pl. ngounui / ngaloito)",
-            "source": "Animal snare / Trap",
+            "target": "Ewuno",
+            "source": "Animal snare",
+            "pronunciation": "e-wu-no / a-loit",
+            "hint": "Noose snare or pitfall trap for wild game. (Barton 1921)"
+          },
+          {
+            "target": "Aloit",
+            "source": "Trap",
             "pronunciation": "e-wu-no / a-loit",
             "hint": "Noose snare or pitfall trap for wild game. (Barton 1921)"
           }
@@ -4698,75 +5154,95 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Atom (pl. ngetom)\" mean in English?",
-            "correctAnswer": "Rifle / Gun",
+            "prompt": "What does \"Atom\" mean in English?",
+            "correctAnswer": "Rifle",
             "options": [
-              "War horn / Trumpet",
+              "War horn",
               "Wooden digging stick",
-              "Iron hoe",
-              "Rifle / Gun"
+              "Rifle",
+              "Iron hoe"
             ],
-            "hint": "Firearm; named historically from early trade linked with elephant hunting. (Barton 1921)"
+            "hint": "Firearm; named historically from early trade linked with elephant hunting. (Barton 1921)",
+            "acceptedAnswers": [
+              "Rifle / Gun",
+              "Rifle"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Atom (pl. ngatom)\" mean in English?",
-            "correctAnswer": "War horn / Trumpet",
+            "prompt": "What does \"Atom\" mean in English?",
+            "correctAnswer": "War horn",
             "options": [
               "Wooden digging stick",
+              "War horn",
               "Iron hoe",
-              "War horn / Trumpet",
-              "Rifle / Gun"
+              "Rifle"
             ],
-            "hint": "Carved wood or oryx horn trumpet blown to signal assemblies or alarms. (Barton 1921)"
+            "hint": "Carved wood or oryx horn trumpet blown to signal assemblies or alarms. (Barton 1921)",
+            "acceptedAnswers": [
+              "War horn / Trumpet",
+              "War horn"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Akuta (pl. ngakuta)\" mean in English?",
             "correctAnswer": "Wooden digging stick",
             "options": [
-              "Iron hoe",
               "Wooden digging stick",
-              "Rifle / Gun",
-              "War horn / Trumpet"
+              "Iron hoe",
+              "Rifle",
+              "War horn"
             ],
             "hint": "Hardwood pointed digging stick for seasonal gardening and digging wells. (Barton 1921)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Wooden digging stick\" in Turkana?",
-            "correctAnswer": "Akuta (pl. ngakuta)",
+            "correctAnswer": "Akuta",
             "options": [
-              "Akuta (pl. ngakuta)",
-              "Atom (pl. ngetom)",
-              "Atom (pl. ngatom)",
-              "Ameleko (pl. ngemelakoi)"
+              "Atom",
+              "Ameleko",
+              "Akuta",
+              "Eyap"
             ],
-            "hint": "ah-koo-tah"
+            "hint": "ah-koo-tah",
+            "acceptedAnswers": [
+              "Akuta (pl. ngakuta)",
+              "Akuta"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Iron hoe\" in Turkana?",
-            "correctAnswer": "Ameleko (pl. ngemelakoi)",
+            "correctAnswer": "Ameleko",
             "options": [
-              "Atom (pl. ngetom)",
-              "Atom (pl. ngatom)",
-              "Akuta (pl. ngakuta)",
-              "Ameleko (pl. ngemelakoi)"
+              "Ameleko",
+              "Atom",
+              "Akuta",
+              "Eyap"
             ],
-            "hint": "ah-meh-leh-koh"
+            "hint": "ah-meh-leh-koh",
+            "acceptedAnswers": [
+              "Ameleko (pl. ngemelakoi)",
+              "Ameleko"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Axe\" in Turkana?",
-            "correctAnswer": "Eyap (pl. ngaiyapai)",
+            "correctAnswer": "Eyap",
             "options": [
-              "Atom (pl. ngatom)",
-              "Akuta (pl. ngakuta)",
-              "Eyap (pl. ngaiyapai)",
-              "Atom (pl. ngetom)"
+              "Eyap",
+              "Atom",
+              "Akuta",
+              "Ameleko"
             ],
-            "hint": "eh-yahp"
+            "hint": "eh-yahp",
+            "acceptedAnswers": [
+              "Eyap (pl. ngaiyapai)",
+              "Eyap"
+            ]
           },
           {
             "type": "match_pairs",
@@ -4854,14 +5330,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Perceive with vision. Imperative: 'Tainu!' (see!). (Barton 1921)"
           },
           {
-            "target": "Erari / Era",
-            "source": "To hear / listen",
+            "target": "Erari",
+            "source": "To hear",
             "pronunciation": "e-ra-ri / era",
             "hint": "Listen or perceive sound. Present: 'Erari ayon' (I hear). (Barton 1921)"
           },
           {
-            "target": "Erworo / Akirwor",
-            "source": "To speak / talk",
+            "target": "Era",
+            "source": "listen",
+            "pronunciation": "e-ra-ri / era",
+            "hint": "Listen or perceive sound. Present: 'Erari ayon' (I hear). (Barton 1921)"
+          },
+          {
+            "target": "Erworo",
+            "source": "To speak",
+            "pronunciation": "erwo-ro / a-kirwor",
+            "hint": "Speak in words or talk together. (Barton 1921)"
+          },
+          {
+            "target": "Akirwor",
+            "source": "talk",
             "pronunciation": "erwo-ro / a-kirwor",
             "hint": "Speak in words or talk together. (Barton 1921)"
           },
@@ -4878,8 +5366,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Stand stationary or halt. (Barton 1921)"
           },
           {
-            "target": "Eboigini / Aboikini",
-            "source": "To sit / dwell",
+            "target": "Eboigini",
+            "source": "To sit",
+            "pronunciation": "e-boi-gi-ni / a-boi-ki-ni",
+            "hint": "Sit down or settle in an area. (Barton 1921)"
+          },
+          {
+            "target": "Aboikini",
+            "source": "dwell",
             "pronunciation": "e-boi-gi-ni / a-boi-ki-ni",
             "hint": "Sit down or settle in an area. (Barton 1921)"
           }
@@ -4906,8 +5400,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "options": [
               "To drink",
               "To sleep",
-              "To go",
-              "To eat"
+              "To eat",
+              "To go"
             ],
             "hint": "Consume food. Present 1st person: 'Emugi ayon' (I eat). (Barton 1921)"
           },
@@ -4917,8 +5411,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "To drink",
             "options": [
               "To sleep",
-              "To go",
               "To drink",
+              "To go",
               "To eat"
             ],
             "hint": "Drink liquid, water, or milk. (Barton 1921)"
@@ -4929,47 +5423,59 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "To sleep",
             "options": [
               "To go",
-              "To sleep",
               "To eat",
-              "To drink"
+              "To drink",
+              "To sleep"
             ],
             "hint": "Rest or sleep. Imperative: 'Toperirobo' (sleep well!). (Barton 1921)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To sleep\" in Turkana?",
-            "correctAnswer": "Aperi / Topper",
+            "correctAnswer": "Aperi",
             "options": [
-              "Aperi / Topper",
-              "Emugi / Akimuji",
-              "Emathi / Akimati",
-              "Alothi / Tolot"
+              "Emugi",
+              "Emathi",
+              "Aperi",
+              "Alothi"
             ],
-            "hint": "ah-peh-ree"
+            "hint": "ah-peh-ree",
+            "acceptedAnswers": [
+              "Aperi / Topper",
+              "Aperi"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To go\" in Turkana?",
-            "correctAnswer": "Alothi / Tolot",
+            "correctAnswer": "Alothi",
             "options": [
-              "Emugi / Akimuji",
-              "Emathi / Akimati",
-              "Aperi / Topper",
-              "Alothi / Tolot"
+              "Alothi",
+              "Emugi",
+              "Emathi",
+              "Aperi"
             ],
-            "hint": "ah-loh-thee / toh-loht"
+            "hint": "ah-loh-thee / toh-loht",
+            "acceptedAnswers": [
+              "Alothi / Tolot",
+              "Alothi"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To come\" in Turkana?",
-            "correctAnswer": "Abuni / Bwa",
+            "correctAnswer": "Abuni",
             "options": [
-              "Emathi / Akimati",
-              "Aperi / Topper",
-              "Abuni / Bwa",
-              "Emugi / Akimuji"
+              "Emathi",
+              "Abuni",
+              "Aperi",
+              "Emugi"
             ],
-            "hint": "ah-boo-nee / bwah"
+            "hint": "ah-boo-nee / bwah",
+            "acceptedAnswers": [
+              "Abuni / Bwa",
+              "Abuni"
+            ]
           },
           {
             "type": "match_pairs",
@@ -5017,14 +5523,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Offer or deliver an item. (Barton 1921)"
           },
           {
-            "target": "Alemari / Atachi",
-            "source": "To take / receive",
+            "target": "Alemari",
+            "source": "To take",
             "pronunciation": "a-le-ma-ri / a-tachi",
             "hint": "Pick up or accept. (Barton 1921)"
           },
           {
-            "target": "Arami / Karam",
-            "source": "To hit / beat",
+            "target": "Atachi",
+            "source": "receive",
+            "pronunciation": "a-le-ma-ri / a-tachi",
+            "hint": "Pick up or accept. (Barton 1921)"
+          },
+          {
+            "target": "Arami",
+            "source": "To hit",
+            "pronunciation": "a-ra-mi / ka-ram",
+            "hint": "Strike with club or stick. Passive: 'Karamitai ayon' (I am struck). (Barton 1921)"
+          },
+          {
+            "target": "Karam",
+            "source": "beat",
             "pronunciation": "a-ra-mi / ka-ram",
             "hint": "Strike with club or stick. Passive: 'Karamitai ayon' (I am struck). (Barton 1921)"
           },
@@ -5035,8 +5553,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Kill or dispatch an animal. (Barton 1921)"
           },
           {
-            "target": "Achomi / Echomi",
-            "source": "To spear / stab",
+            "target": "Achomi",
+            "source": "To spear",
+            "pronunciation": "acho-mi / echo-mi",
+            "hint": "Strike with spear blade. (Barton 1921)"
+          },
+          {
+            "target": "Echomi",
+            "source": "stab",
             "pronunciation": "acho-mi / echo-mi",
             "hint": "Strike with spear blade. (Barton 1921)"
           },
@@ -5053,14 +5577,26 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Build a shelter or fence. (Barton 1921)"
           },
           {
-            "target": "Adungi / Adongai",
-            "source": "To cut / chop",
+            "target": "Adungi",
+            "source": "To cut",
             "pronunciation": "a-dungi / a-dongai",
             "hint": "Cut. Reduplicative: 'Adungi-dungi' (chop into small pieces). (Barton 1921)"
           },
           {
-            "target": "Elatari / Alotari",
-            "source": "To wash / clean",
+            "target": "Adongai",
+            "source": "chop",
+            "pronunciation": "a-dungi / a-dongai",
+            "hint": "Cut. Reduplicative: 'Adungi-dungi' (chop into small pieces). (Barton 1921)"
+          },
+          {
+            "target": "Elatari",
+            "source": "To wash",
+            "pronunciation": "e-la-ta-ri / a-lo-ta-ri",
+            "hint": "Wash with water. 'Elatari ngakan' (wash hands). (Barton 1921)"
+          },
+          {
+            "target": "Alotari",
+            "source": "clean",
             "pronunciation": "e-la-ta-ri / a-lo-ta-ri",
             "hint": "Wash with water. 'Elatari ngakan' (wash hands). (Barton 1921)"
           },
@@ -5095,72 +5631,88 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Anyouni\" mean in English?",
-            "correctAnswer": "To rise / get up",
+            "correctAnswer": "To rise",
             "options": [
               "To give",
-              "To take / receive",
-              "To hit / beat",
-              "To rise / get up"
+              "To take",
+              "To hit",
+              "To rise"
             ],
-            "hint": "Awaken and rise up. (Barton 1921)"
+            "hint": "Awaken and rise up. (Barton 1921)",
+            "acceptedAnswers": [
+              "To rise / get up",
+              "To rise"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ainagini / Akini\" mean in English?",
             "correctAnswer": "To give",
             "options": [
-              "To take / receive",
-              "To hit / beat",
               "To give",
-              "To rise / get up"
+              "To take",
+              "To hit",
+              "To rise"
             ],
             "hint": "Offer or deliver an item. (Barton 1921)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Alemari / Atachi\" mean in English?",
-            "correctAnswer": "To take / receive",
+            "prompt": "What does \"Alemari\" mean in English?",
+            "correctAnswer": "To take",
             "options": [
-              "To hit / beat",
+              "To hit",
+              "To rise",
+              "To give",
+              "To take"
+            ],
+            "hint": "Pick up or accept. (Barton 1921)",
+            "acceptedAnswers": [
               "To take / receive",
-              "To rise / get up",
-              "To give"
-            ],
-            "hint": "Pick up or accept. (Barton 1921)"
+              "To take"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To take / receive\" in Turkana?",
-            "correctAnswer": "Alemari / Atachi",
+            "prompt": "How do you say \"To take\" in Turkana?",
+            "correctAnswer": "Alemari",
             "options": [
-              "Alemari / Atachi",
               "Anyouni",
-              "Ainagini / Akini",
-              "Arami / Karam"
+              "Ainagini",
+              "Arami",
+              "Alemari"
             ],
-            "hint": "ah-leh-mah-ree"
+            "hint": "ah-leh-mah-ree",
+            "acceptedAnswers": [
+              "Alemari / Atachi",
+              "Alemari"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To hit / beat\" in Turkana?",
-            "correctAnswer": "Arami / Karam",
+            "prompt": "How do you say \"To hit\" in Turkana?",
+            "correctAnswer": "Arami",
             "options": [
+              "Arami",
               "Anyouni",
-              "Ainagini / Akini",
-              "Alemari / Atachi",
-              "Arami / Karam"
+              "Ainagini",
+              "Alemari"
             ],
-            "hint": "ah-rah-mee / kah-rahm"
+            "hint": "ah-rah-mee / kah-rahm",
+            "acceptedAnswers": [
+              "Arami / Karam",
+              "Arami"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To kill\" in Turkana?",
             "correctAnswer": "Ari",
             "options": [
-              "Ainagini / Akini",
-              "Alemari / Atachi",
-              "Ari",
-              "Anyouni"
+              "Ainagini",
+              "Alemari",
+              "Anyouni",
+              "Ari"
             ],
             "hint": "ah-ree"
           },
@@ -5204,8 +5756,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Fasten with cord or tether. (Barton 1921)"
           },
           {
-            "target": "Alachari / Alakari",
-            "source": "To untie / loosen",
+            "target": "Alachari",
+            "source": "To untie",
+            "pronunciation": "a-lacha-ri / a-la-ka-ri",
+            "hint": "Release or untie. (Barton 1921)"
+          },
+          {
+            "target": "Alakari",
+            "source": "loosen",
             "pronunciation": "a-lacha-ri / a-la-ka-ri",
             "hint": "Release or untie. (Barton 1921)"
           },
@@ -5216,8 +5774,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Milk cows, camels, or goats into a gourd. (Barton 1921)"
           },
           {
-            "target": "Aiyoki / Eyogi",
-            "source": "To graze / herd",
+            "target": "Aiyoki",
+            "source": "To graze",
+            "pronunciation": "ai-yo-ki / e-yo-gi",
+            "hint": "Drive stock out to pasture. (Barton 1921)"
+          },
+          {
+            "target": "Eyogi",
+            "source": "herd",
             "pronunciation": "ai-yo-ki / e-yo-gi",
             "hint": "Drive stock out to pasture. (Barton 1921)"
           },
@@ -5234,8 +5798,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Reflect, comprehend, or meditate. Imperative: 'Kitam!'. (Barton 1921)"
           },
           {
-            "target": "Achami / Achemi",
-            "source": "To like / love / accept",
+            "target": "Achami",
+            "source": "To like",
+            "pronunciation": "acha-mi / ache-mi",
+            "hint": "Assent, like, love, or desire. (Barton 1921)"
+          },
+          {
+            "target": "Achemi",
+            "source": "love",
             "pronunciation": "acha-mi / ache-mi",
             "hint": "Assent, like, love, or desire. (Barton 1921)"
           },
@@ -5247,7 +5817,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Athaki",
-            "source": "To seek / look for",
+            "source": "To seek / look",
             "pronunciation": "atha-ki",
             "hint": "Search for stray livestock or tracking spoor. (Barton 1921)"
           },
@@ -5284,36 +5854,44 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Ayeni\" mean in English?",
-            "correctAnswer": "To tie / bind",
+            "correctAnswer": "To tie",
             "options": [
-              "To untie / loosen",
+              "To tie",
+              "To untie",
               "To milk",
-              "To graze / herd",
-              "To tie / bind"
+              "To graze"
             ],
-            "hint": "Fasten with cord or tether. (Barton 1921)"
+            "hint": "Fasten with cord or tether. (Barton 1921)",
+            "acceptedAnswers": [
+              "To tie / bind",
+              "To tie"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Alachari / Alakari\" mean in English?",
-            "correctAnswer": "To untie / loosen",
+            "prompt": "What does \"Alachari\" mean in English?",
+            "correctAnswer": "To untie",
             "options": [
               "To milk",
-              "To graze / herd",
-              "To untie / loosen",
-              "To tie / bind"
+              "To untie",
+              "To graze",
+              "To tie"
             ],
-            "hint": "Release or untie. (Barton 1921)"
+            "hint": "Release or untie. (Barton 1921)",
+            "acceptedAnswers": [
+              "To untie / loosen",
+              "To untie"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What does \"Alepa\" mean in English?",
             "correctAnswer": "To milk",
             "options": [
-              "To graze / herd",
+              "To graze",
               "To milk",
-              "To tie / bind",
-              "To untie / loosen"
+              "To tie",
+              "To untie"
             ],
             "hint": "Milk cows, camels, or goats into a gourd. (Barton 1921)"
           },
@@ -5322,31 +5900,35 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"To milk\" in Turkana?",
             "correctAnswer": "Alepa",
             "options": [
-              "Alepa",
               "Ayeni",
-              "Alachari / Alakari",
-              "Aiyoki / Eyogi"
+              "Alepa",
+              "Alachari",
+              "Aiyoki"
             ],
             "hint": "ah-leh-pah"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"To graze / herd\" in Turkana?",
-            "correctAnswer": "Aiyoki / Eyogi",
+            "prompt": "How do you say \"To graze\" in Turkana?",
+            "correctAnswer": "Aiyoki",
             "options": [
               "Ayeni",
-              "Alachari / Alakari",
+              "Alachari",
               "Alepa",
-              "Aiyoki / Eyogi"
+              "Aiyoki"
             ],
-            "hint": "ah-ee-yoh-kee"
+            "hint": "ah-ee-yoh-kee",
+            "acceptedAnswers": [
+              "Aiyoki / Eyogi",
+              "Aiyoki"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To know\" in Turkana?",
             "correctAnswer": "Aiyeni",
             "options": [
-              "Alachari / Alakari",
+              "Alachari",
               "Alepa",
               "Aiyeni",
               "Ayeni"
@@ -5409,8 +5991,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Enquiring traveller's destination. (Barton 1921)"
           },
           {
-            "target": "Eyyey ngeth? / Ali ngeth?",
-            "source": "Where is he / she?",
+            "target": "Eyyey ngeth?",
+            "source": "Where is he",
+            "pronunciation": "eyyey ngeth / ali ngeth",
+            "hint": "Asking the location of a person. (Barton 1921)"
+          },
+          {
+            "target": "Ali ngeth?",
+            "source": "she?",
             "pronunciation": "eyyey ngeth / ali ngeth",
             "hint": "Asking the location of a person. (Barton 1921)"
           },
@@ -5427,8 +6015,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Command to leave. (Barton 1921)"
           },
           {
-            "target": "Ngolik! / Engolikini!",
-            "source": "Look out! / Take care!",
+            "target": "Ngolik!",
+            "source": "Look out!",
+            "pronunciation": "ngo-lik / engo-li-ki-ni",
+            "hint": "Warning to be watchful. (Barton 1921)"
+          },
+          {
+            "target": "Engolikini!",
+            "source": "Take care!",
             "pronunciation": "ngo-lik / engo-li-ki-ni",
             "hint": "Warning to be watchful. (Barton 1921)"
           },
@@ -5472,9 +6066,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "What is your name?",
             "options": [
               "My name is...",
+              "What is your name?",
               "Where are you going?",
-              "Where is he / she?",
-              "What is your name?"
+              "Where is he"
             ],
             "hint": "Enquiring someone's identity. (Barton 1921)"
           },
@@ -5483,7 +6077,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Alothi ai? / Ilotit iwon ai?\" mean in English?",
             "correctAnswer": "Where are you going?",
             "options": [
-              "Where is he / she?",
+              "Where is he",
               "Where are you going?",
               "What is your name?",
               "My name is..."
@@ -5493,38 +6087,50 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Where are you going?\" in Turkana?",
-            "correctAnswer": "Alothi ai? / Ilotit iwon ai?",
+            "correctAnswer": "Alothi ai?",
             "options": [
-              "Alothi ai? / Ilotit iwon ai?",
-              "Ngai akero ekon? / Ngai ekiro kon?",
+              "Ngai akero ekon?",
               "Ekiro kang erai...",
-              "Eyyey ngeth? / Ali ngeth?"
+              "Eyyey ngeth?",
+              "Alothi ai?"
             ],
-            "hint": "ah-loh-thee ah-ee"
+            "hint": "ah-loh-thee ah-ee",
+            "acceptedAnswers": [
+              "Alothi ai? / Ilotit iwon ai?",
+              "Alothi ai?"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Where is he / she?\" in Turkana?",
-            "correctAnswer": "Eyyey ngeth? / Ali ngeth?",
+            "prompt": "How do you say \"Where is he\" in Turkana?",
+            "correctAnswer": "Eyyey ngeth?",
             "options": [
-              "Ngai akero ekon? / Ngai ekiro kon?",
+              "Eyyey ngeth?",
+              "Ngai akero ekon?",
               "Ekiro kang erai...",
-              "Alothi ai? / Ilotit iwon ai?",
-              "Eyyey ngeth? / Ali ngeth?"
+              "Alothi ai?"
             ],
-            "hint": "eh-ee-yeh-ee ngehth"
+            "hint": "eh-ee-yeh-ee ngehth",
+            "acceptedAnswers": [
+              "Eyyey ngeth? / Ali ngeth?",
+              "Eyyey ngeth?"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Come here\" in Turkana?",
-            "correctAnswer": "Bwa nege! / Tobwo nege!",
+            "correctAnswer": "Bwa nege!",
             "options": [
               "Ekiro kang erai...",
-              "Alothi ai? / Ilotit iwon ai?",
-              "Bwa nege! / Tobwo nege!",
-              "Ngai akero ekon? / Ngai ekiro kon?"
+              "Alothi ai?",
+              "Ngai akero ekon?",
+              "Bwa nege!"
             ],
-            "hint": "bwah neh-geh"
+            "hint": "bwah neh-geh",
+            "acceptedAnswers": [
+              "Bwa nege! / Tobwo nege!",
+              "Bwa nege!"
+            ]
           },
           {
             "type": "match_pairs",
@@ -5568,8 +6174,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Enquiring someone's ethnic section or clan. (Barton 1921)"
           },
           {
-            "target": "Ngeyai? / Nyeyai? / Erai ngiai?",
-            "source": "How much? / How many?",
+            "target": "Ngeyai?",
+            "source": "How much?",
+            "pronunciation": "nge-yai / nye-yai / e-rai ngiai",
+            "hint": "Asking quantity, headcount, or price. (Barton 1921)"
+          },
+          {
+            "target": "Nyeyai?",
+            "source": "How many?",
             "pronunciation": "nge-yai / nye-yai / e-rai ngiai",
             "hint": "Asking quantity, headcount, or price. (Barton 1921)"
           },
@@ -5643,8 +6255,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "correctAnswer": "What do you want?",
             "options": [
               "What is your tribe?",
-              "How much? / How many?",
-              "Why?",
+              "How much?",
+              "How many?",
               "What do you want?"
             ],
             "hint": "Asking someone's intent or need. (Barton 1921)"
@@ -5654,46 +6266,54 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"Ali tela kon?\" mean in English?",
             "correctAnswer": "What is your tribe?",
             "options": [
-              "How much? / How many?",
-              "Why?",
+              "How much?",
               "What is your tribe?",
-              "What do you want?"
+              "What do you want?",
+              "How many?"
             ],
             "hint": "Enquiring someone's ethnic section or clan. (Barton 1921)"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Ngeyai? / Nyeyai? / Erai ngiai?\" mean in English?",
-            "correctAnswer": "How much? / How many?",
+            "prompt": "What does \"Ngeyai?\" mean in English?",
+            "correctAnswer": "How much?",
             "options": [
               "Why?",
-              "How much? / How many?",
+              "How much?",
               "What do you want?",
               "What is your tribe?"
             ],
-            "hint": "Asking quantity, headcount, or price. (Barton 1921)"
+            "hint": "Asking quantity, headcount, or price. (Barton 1921)",
+            "acceptedAnswers": [
+              "How much? / How many?",
+              "How much?"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"How much? / How many?\" in Turkana?",
-            "correctAnswer": "Ngeyai? / Nyeyai? / Erai ngiai?",
+            "prompt": "How do you say \"How much?\" in Turkana?",
+            "correctAnswer": "Ngeyai?",
             "options": [
-              "Ngeyai? / Nyeyai? / Erai ngiai?",
-              "Esagin nyo? / Isagin nyo?",
+              "Esagin nyo?",
+              "Ngeyai?",
               "Ali tela kon?",
               "Ikwani?"
             ],
-            "hint": "ngeh-yah-ee"
+            "hint": "ngeh-yah-ee",
+            "acceptedAnswers": [
+              "Ngeyai? / Nyeyai? / Erai ngiai?",
+              "Ngeyai?"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Why?\" in Turkana?",
             "correctAnswer": "Ikwani?",
             "options": [
-              "Esagin nyo? / Isagin nyo?",
+              "Ikwani?",
+              "Esagin nyo?",
               "Ali tela kon?",
-              "Ngeyai? / Nyeyai? / Erai ngiai?",
-              "Ikwani?"
+              "Ngeyai?"
             ],
             "hint": "ee-kwah-nee"
           },
@@ -5702,10 +6322,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"When?\" in Turkana?",
             "correctAnswer": "Wurre?",
             "options": [
-              "Ali tela kon?",
-              "Ngeyai? / Nyeyai? / Erai ngiai?",
               "Wurre?",
-              "Esagin nyo? / Isagin nyo?"
+              "Ali tela kon?",
+              "Ngeyai?",
+              "Esagin nyo?"
             ],
             "hint": "woo-reh"
           },
@@ -5755,8 +6375,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Small size or youth. (Barton 1921)"
           },
           {
-            "target": "Noi / Kere",
-            "source": "Very / Truly",
+            "target": "Noi",
+            "source": "Very",
+            "pronunciation": "noi / ke-re",
+            "hint": "Intensifier adverb denoting thoroughly or very. (Barton 1921)"
+          },
+          {
+            "target": "Kere",
+            "source": "Truly",
             "pronunciation": "noi / ke-re",
             "hint": "Intensifier adverb denoting thoroughly or very. (Barton 1921)"
           },
@@ -5797,8 +6423,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Totally / collectively. (Barton 1921)"
           },
           {
-            "target": "Erot / Eerot (pl. ngerotin)",
-            "source": "Road / Path",
+            "target": "Erot",
+            "source": "Road",
+            "pronunciation": "e-rot / ee-rot",
+            "hint": "Path, road, or pastoral cattle route. (Barton 1921)"
+          },
+          {
+            "target": "Eerot (pl. ngerotin)",
+            "source": "Path",
             "pronunciation": "e-rot / ee-rot",
             "hint": "Path, road, or pastoral cattle route. (Barton 1921)"
           },
@@ -5828,75 +6460,99 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"Epol (pl. ngepolok)\" mean in English?",
-            "correctAnswer": "Big / Great",
+            "prompt": "What does \"Epol\" mean in English?",
+            "correctAnswer": "Big",
             "options": [
-              "Small / Little",
-              "Very / Truly",
-              "I am well",
-              "Big / Great"
+              "Big",
+              "Small",
+              "Very",
+              "I am well"
             ],
-            "hint": "Large stature or high importance. (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Edit (pl. ngedithok)\" mean in English?",
-            "correctAnswer": "Small / Little",
-            "options": [
-              "Very / Truly",
-              "I am well",
-              "Small / Little",
-              "Big / Great"
-            ],
-            "hint": "Small size or youth. (Barton 1921)"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Noi / Kere\" mean in English?",
-            "correctAnswer": "Very / Truly",
-            "options": [
-              "I am well",
-              "Very / Truly",
+            "hint": "Large stature or high importance. (Barton 1921)",
+            "acceptedAnswers": [
               "Big / Great",
-              "Small / Little"
-            ],
-            "hint": "Intensifier adverb denoting thoroughly or very. (Barton 1921)"
+              "Big"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Very / Truly\" in Turkana?",
-            "correctAnswer": "Noi / Kere",
+            "prompt": "What does \"Edit\" mean in English?",
+            "correctAnswer": "Small",
             "options": [
-              "Noi / Kere",
-              "Epol (pl. ngepolok)",
-              "Edit (pl. ngedithok)",
-              "Ayari / Akiyar akwan"
+              "Very",
+              "I am well",
+              "Small",
+              "Big"
             ],
-            "hint": "noh-ee / keh-reh"
+            "hint": "Starts with \"Sm…\" (5 letters)",
+            "acceptedAnswers": [
+              "Small / Little",
+              "Small"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What does \"Noi\" mean in English?",
+            "correctAnswer": "Very",
+            "options": [
+              "Very",
+              "I am well",
+              "Big",
+              "Small"
+            ],
+            "hint": "Starts with \"Ve…\" (4 letters)",
+            "acceptedAnswers": [
+              "Very / Truly",
+              "Very"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you say \"Very\" in Turkana?",
+            "correctAnswer": "Noi",
+            "options": [
+              "Noi",
+              "Epol",
+              "Edit",
+              "Ayari"
+            ],
+            "hint": "noh-ee / keh-reh",
+            "acceptedAnswers": [
+              "Noi / Kere",
+              "Noi"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"I am well\" in Turkana?",
-            "correctAnswer": "Ayari / Akiyar akwan",
+            "correctAnswer": "Ayari",
             "options": [
-              "Epol (pl. ngepolok)",
-              "Edit (pl. ngedithok)",
-              "Noi / Kere",
-              "Ayari / Akiyar akwan"
+              "Epol",
+              "Edit",
+              "Noi",
+              "Ayari"
             ],
-            "hint": "ah-yah-ree"
+            "hint": "ah-yah-ree",
+            "acceptedAnswers": [
+              "Ayari / Akiyar akwan",
+              "Ayari"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"I am sick\" in Turkana?",
-            "correctAnswer": "Adiaka ayon / Adyaka ayong",
+            "correctAnswer": "Adiaka ayon",
             "options": [
-              "Edit (pl. ngedithok)",
-              "Noi / Kere",
-              "Adiaka ayon / Adyaka ayong",
-              "Epol (pl. ngepolok)"
+              "Edit",
+              "Adiaka ayon",
+              "Noi",
+              "Epol"
             ],
-            "hint": "ah-dyah-kah ah-yohng"
+            "hint": "ah-dyah-kah ah-yohng",
+            "acceptedAnswers": [
+              "Adiaka ayon / Adyaka ayong",
+              "Adiaka ayon"
+            ]
           },
           {
             "type": "match_pairs",
@@ -5974,7 +6630,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Thief!",
               "Right"
             ],
-            "hint": "Direction right (akan na lo teten = right hand). (Barton 1921)"
+            "hint": "Starts with \"Ri…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
@@ -5985,7 +6641,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Fire!",
               "Right"
             ],
-            "hint": "Urgent warning of fire danger. (Barton 1921)"
+            "hint": "Starts with \"Fi…\" (4 letters)"
           },
           {
             "type": "multiple_choice",
@@ -6094,10 +6750,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Kalome\" in Turkana?",
             "correctAnswer": "You weep",
             "options": [
-              "You weep",
               "They laugh",
               "He steals",
-              "He stinks"
+              "He stinks",
+              "You weep"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
@@ -6129,10 +6785,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Turkana term for \"We sold not\": ___",
             "correctAnswer": "Nyakakparan",
             "options": [
-              "Nyakakparan",
               "Kibalayūa",
               "Kalome",
-              "Ekiyo"
+              "Ekiyo",
+              "Nyakakparan"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           }
@@ -6197,11 +6853,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nyayeni ao",
-            "source": "I know not"
+            "source": "I know not."
           },
           {
             "target": "Kepōto tanyama",
-            "source": "I eat not"
+            "source": "I eat not."
           }
         ],
         "authoredExercises": [
@@ -6210,8 +6866,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Nyayeni ao\" in Turkana?",
             "correctAnswer": "I know not",
             "options": [
-              "I know not",
               "I know",
+              "I know not",
               "I kill them",
               "I went"
             ],
@@ -6245,8 +6901,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Turkana term for \"I go\": ___",
             "correctAnswer": "Alot",
             "options": [
+              "Ainaʻ",
               "Alot",
-              "Ainaʻ, Ainak",
               "Nyayeni ao",
               "Ayeni"
             ],
@@ -6323,7 +6979,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Año abu",
-            "source": "I come"
+            "source": "I come."
           }
         ],
         "authoredExercises": [
@@ -6332,9 +6988,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Anyama\" in Turkana (Ng'aturkana)?",
             "correctAnswer": "I eat",
             "options": [
-              "I eat",
               "I ate not",
               "I drank",
+              "I eat",
               "I drink"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
@@ -6367,9 +7023,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "Complete the Turkana (Ng'aturkana) term for \"I die\": ___",
             "correctAnswer": "Atuana",
             "options": [
-              "Atuana",
               "Anyama",
               "Nyanyame",
+              "Atuana",
               "Amatañon"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
@@ -6435,7 +7091,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Año ñesilo",
-            "source": "I bring"
+            "source": "I bring."
           }
         ],
         "authoredExercises": [
@@ -6444,9 +7100,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Año ñesilo\" in Turkana?",
             "correctAnswer": "I bring",
             "options": [
-              "I bring",
               "I am",
-              "No, not",
+              "No",
+              "I bring",
               "Where?"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
@@ -6507,13 +7163,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Hon. Kenneth R. Dundas, 'Notes on the Tribes Inhabiting the Baringo District, East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 40 (1910, pp. 66–70, Plates XVI–XVII).",
         "words": [
           {
-            "target": "Ngolio, Ngoitunya, Nittacha, Nessetou, Nbochoross, Ngissir, Nissikir,",
+            "target": "Ngolio, Ngoitunya, Nittacha, Nessetou, Nbochoross, Ngissir, Nissikir",
             "source": "The 16 principal Turkana tribes",
             "pronunciation": "ngolio",
             "hint": "Hon. K. R. Dundas (1910, p. 66)"
           },
           {
-            "target": "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang,",
+            "target": "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang",
             "source": "All 19 exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes",
             "pronunciation": "at-te-gir / ni-te-gorr / mo-le-re-to / tu-du-ya / nga-ru-wo",
             "hint": "Hon. K. R. Dundas (1910, p. 67)"
@@ -6547,7 +7203,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nidue → Egile → Kasikou (Oppa)",
-            "source": "Young boy → Warrior → Old man"
+            "source": "Young boy → Warrior → Old man."
           }
         ],
         "authoredExercises": [
@@ -6606,196 +7262,155 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak",
-            "source": "Wet Season (March–August) & Dry Season (September–February) in Dundas (1910, p. 70)."
+            "source": "Wet Season (March–August) & Dry Season (September–February) in Dundas ."
           }
         ]
       },
-        {
+      {
         "id": "turkana-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Turkana parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921).",
         "words": [
-                  {
-                            "target": "ekithil",
-                            "source": "Peace",
-                            "pronunciation": "e-kithil"
-                  },
-                  {
-                            "target": "Alakara",
-                            "source": "Thank you",
-                            "pronunciation": "ah-lah-kah-rah noy"
-                  },
-                  {
-                            "target": "emala",
-                            "source": "Greet, to",
-                            "pronunciation": "e-ma-la"
-                  },
-                  {
-                            "target": "akathi",
-                            "source": "Thank, to",
-                            "pronunciation": "a-kathi"
-                  },
-                  {
-                            "target": "alakari",
-                            "source": "Please, to",
-                            "pronunciation": "a-la-ka-ri"
-                  },
-                  {
-                            "target": "Tolot-ion",
-                            "source": "Farewell exchange",
-                            "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee"
-                  },
-                  {
-                            "target": "Abe",
-                            "source": "Goodbye (Parting)",
-                            "pronunciation": "ah-beh / ee-ee"
-                  },
-                  {
-                            "target": "tolot-ion, go thou",
-                            "source": "Of farewell",
-                            "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
-                  },
-                  {
-                            "target": "Na?",
-                            "source": "Traditional salutation",
-                            "pronunciation": "nah / bah-ee-yah"
-                  },
-                  {
-                            "target": "Ii mata",
-                            "source": "Health to you (Greeting reply)",
-                            "pronunciation": "ee-ee mah-tah"
-                  }
+          {
+            "target": "ekithil",
+            "source": "Peace",
+            "pronunciation": "e-kithil"
+          },
+          {
+            "target": "Alakara",
+            "source": "Thank you",
+            "pronunciation": "ah-lah-kah-rah noy"
+          },
+          {
+            "target": "emala",
+            "source": "To greet",
+            "pronunciation": "e-ma-la"
+          },
+          {
+            "target": "akathi",
+            "source": "To thank",
+            "pronunciation": "a-kathi"
+          },
+          {
+            "target": "alakari",
+            "source": "To please",
+            "pronunciation": "a-la-ka-ri"
+          },
+          {
+            "target": "Tolot-ion",
+            "source": "Farewell exchange",
+            "pronunciation": "toh-loht-ee-ohn / eh-johk ah-loh-thee"
+          },
+          {
+            "target": "Abe",
+            "source": "Goodbye (Parting)",
+            "pronunciation": "ah-beh / ee-ee"
+          },
+          {
+            "target": "tolot-ion, go thou",
+            "source": "Of farewell",
+            "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
+          },
+          {
+            "target": "Na?",
+            "source": "Traditional salutation",
+            "pronunciation": "nah / bah-ee-yah"
+          },
+          {
+            "target": "Ii mata",
+            "source": "Health to you (Greeting reply)",
+            "pronunciation": "ee-ee mah-tah"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "tolot-ion, go thou",
-                            "source": "Of farewell"
-                  },
-                  {
-                            "target": "Ii mata",
-                            "source": "Health to you (Greeting reply)"
-                  },
-                  {
-                            "target": "mata ejik",
-                            "source": "Complete health! (Unison greeting response)"
-                  },
-                  {
-                            "target": "Akirin (pl. ngakerin",
-                            "source": "Meat"
-                  },
-                  {
-                            "target": "agipi kalimok",
-                            "source": "Water, fresh"
-                  },
-                  {
-                            "target": "Akimet (pl. ngakajonon",
-                            "source": "Butter / Ghee / Fat"
-                  },
-                  {
-                            "target": "Ayon akoro",
-                            "source": "I am hungry"
-                  },
-                  {
-                            "target": "Akori ayon",
-                            "source": "I am thirsty"
-                  }
+          {
+            "target": "tolot-ion, go thou",
+            "source": "Of farewell."
+          },
+          {
+            "target": "Ii mata",
+            "source": "Health to you (Greeting reply)."
+          },
+          {
+            "target": "mata ejik",
+            "source": "Complete health! (Unison greeting response)."
+          },
+          {
+            "target": "agipi kalimok",
+            "source": "Water, fresh."
+          },
+          {
+            "target": "Ayon akoro",
+            "source": "I am hungry."
+          },
+          {
+            "target": "Akori ayon",
+            "source": "I am thirsty."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "turkana-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Turkana sentences for healthcare, transport, and community safety.",
-        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
+        "culturalNote": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921).",
         "words": [
-                  {
-                            "target": "Apei",
-                            "source": "One",
-                            "pronunciation": "ah-peh-ee / eh-peh-ee"
-                  },
-                  {
-                            "target": "Ngaarei",
-                            "source": "Two",
-                            "pronunciation": "ngah-ah-reh-ee / ah-ree"
-                  },
-                  {
-                            "target": "Ngakanikapei",
-                            "source": "Six",
-                            "pronunciation": "ngah-kah-nee-kah-peh-ee"
-                  },
-                  {
-                            "target": "Tomon",
-                            "source": "Ten",
-                            "pronunciation": "toh-mohn"
-                  },
-                  {
-                            "target": "Ngaomon",
-                            "source": "Four",
-                            "pronunciation": "ngah-oh-mohn / ohm-wohn"
-                  },
-                  {
-                            "target": "Ngakan",
-                            "source": "Five",
-                            "pronunciation": "ngah-kahn / ah-khahn"
-                  },
-                  {
-                            "target": "Ngakanikaomon",
-                            "source": "Nine",
-                            "pronunciation": "ngah-kah-nee-kah-oh-mohn"
-                  },
-                  {
-                            "target": "da dan mwari",
-                            "source": "Both",
-                            "pronunciation": "da dan mwa-ri"
-                  },
-                  {
-                            "target": "Ngauni",
-                            "source": "Three",
-                            "pronunciation": "ngah-oo-nee / oo-nee"
-                  },
-                  {
-                            "target": "Ngakanikaarei",
-                            "source": "Seven",
-                            "pronunciation": "ngah-kah-nee-kah-ah-reh-ee"
-                  }
+          {
+            "target": "Apei",
+            "source": "One",
+            "pronunciation": "ah-peh-ee / eh-peh-ee"
+          },
+          {
+            "target": "Ngaarei",
+            "source": "Two",
+            "pronunciation": "ngah-ah-reh-ee / ah-ree"
+          },
+          {
+            "target": "Ngakanikapei",
+            "source": "Six",
+            "pronunciation": "ngah-kah-nee-kah-peh-ee"
+          },
+          {
+            "target": "Tomon",
+            "source": "Ten",
+            "pronunciation": "toh-mohn"
+          },
+          {
+            "target": "Ngaomon",
+            "source": "Four",
+            "pronunciation": "ngah-oh-mohn / ohm-wohn"
+          },
+          {
+            "target": "Ngakan",
+            "source": "Five",
+            "pronunciation": "ngah-kahn / ah-khahn"
+          },
+          {
+            "target": "Ngakanikaomon",
+            "source": "Nine",
+            "pronunciation": "ngah-kah-nee-kah-oh-mohn"
+          },
+          {
+            "target": "da dan mwari",
+            "source": "Both",
+            "pronunciation": "da dan mwa-ri"
+          },
+          {
+            "target": "Ngauni",
+            "source": "Three",
+            "pronunciation": "ngah-oo-nee / oo-nee"
+          },
+          {
+            "target": "Ngakanikaarei",
+            "source": "Seven",
+            "pronunciation": "ngah-kah-nee-kah-ah-reh-ee"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "da dan mwari",
-                            "source": "Both"
-                  },
-                  {
-                            "target": "Tomon omwon",
-                            "source": "Forty"
-                  },
-                  {
-                            "target": "Tomon akhan",
-                            "source": "Fifty"
-                  },
-                  {
-                            "target": "Tomon akhan ka pei",
-                            "source": "Sixty"
-                  },
-                  {
-                            "target": "Tomon ka pei",
-                            "source": "Eleven"
-                  },
-                  {
-                            "target": "Tomon ka ari",
-                            "source": "Twelve"
-                  },
-                  {
-                            "target": "Tomon ari",
-                            "source": "Twenty"
-                  },
-                  {
-                            "target": "Tomon uni",
-                            "source": "Thirty"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

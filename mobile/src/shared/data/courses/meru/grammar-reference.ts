@@ -180,3 +180,31 @@ if (_meruKitharakaSec) {
     }
   ];
 }
+
+MERU_GRAMMAR_SECTIONS.push({
+  id: "kanampiu-vanderwal-2025-kiitharaka-is",
+  title: "Patrick N. Kanampiu & Jenneke van der Wal (2025, Language Science Press #463, Ch. 4, pp. 111–152, DOI: 10.5281/zenodo.14833610): The Expression of Information Structure in Kîîtharaka",
+  summary: "Complete open-access synthesis of Kîîtharaka [thk] 7-vowel phonology (i, î [e], e [ɛ], a, o [ɔ], ű [o], u), active Dahl's Law (a-kű-t-a → agűta), preverbal focus clitic n'- vs. copular focus particle i/í, verum focus, and 3 inversion constructions (formal locative, semantic locative, and default agreement inversion).",
+  content: [
+    "- **1. Phonology & Active Dahl's Law (pp. 112–113)**: Kîîtharaka (`[thk]`, Guthrie E54) contrasts 7 vowels (`i, î [e], e [ɛ], a, o [ɔ], ű [o], u`) with contrastive vowel length and active synchronic **Dahl's Law**, voicing a voiceless stop (`k, t, c`) in a prefix when the following syllable begins with a voiceless obstruent: underlying `a-kű-t-a` ('s/he is throwing') → surface **`agűta`**, and expletive Class 17 `kű-kw-íré` → **`gűkwíré`**.",
+    "- **2. Focus Marking (`n'-` vs. `i / í`) & Exhaustivity (pp. 115–124)**:",
+    "  - The preverbal proclitic **`n'-` / `nî`** marks predicate/VP focus or wide thetic focus (`Műntű n'aathűűngîîre ndúkáaní`, 'Someone entered the shop'), whereas the copular particle **`i / í`** marks narrow argument focus (`Bita i nkima yoonká arîîré`, 'Peter, it is only ugali that he ate') or verum polarity focus (`Arímű, í baííníré!`, 'The teachers, they danced very well!').",
+    "  - Subject focus requires a cleft with Class 1 anti-agreement **`ű-`** instead of `a-` (`I Kîmáthi űthííre műndaaní`, 'It is Kimathi who went to the farm').",
+    "- **3. Three Inversion Constructions for Detopicalized Subjects (pp. 138–145)**:",
+    "  - **(a) Formal Locative Inversion**: Preposed locative noun in `-ni` triggers Class 17 `kű-` agreement (`Ndúkáaní kűthűűngîîré antű báîrî`, 'In the shop there entered two people').",
+    "  - **(b) Semantic Locative Inversion**: Preposed inherently locative noun triggers its own noun-class subject prefix (`Műthítű n'űágwîîre mîtî`, 'In the forest trees fell', Class 3 `ű-`).",
+    "  - **(c) Default Agreement Inversion (Thetic)**: Verb-initial expletive Class 17 `kű-/gű-` presents an all-new event (`Í gűkwíré műntű`, 'Somebody died')."
+  ].join("\n"),
+  examples: [
+    {
+      meru: "Bita i nkima yoonká arîîré • I Kîmáthi űthííre műndaaní • Arímű, í baííníré!",
+      english: "Peter, it is only ugali that he ate • It is Kimathi who went to the farm • The teachers, they danced very well!",
+      explanation: "Argument focus, anti-agreement subject cleft (ű-), and verum focus in Kîîtharaka (Kanampiu & van der Wal 2025, Language Science Press #463, Ch. 4, DOI: 10.5281/zenodo.14833610)"
+    },
+    {
+      meru: "Ndúkáaní kűthűűngîîré antű báîrî • Műthítű n'űágwîîre mîtî • Í gűkwíré műntű",
+      english: "In the shop there entered two people • In the forest trees fell • Somebody died",
+      explanation: "Formal locative, semantic locative, and default agreement inversion in Kîîtharaka (Kanampiu & van der Wal 2025, Ch. 4, pp. 139–142)"
+    }
+  ]
+});

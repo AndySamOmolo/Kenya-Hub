@@ -637,3 +637,20 @@ MAASAI_GRAMMAR_SECTIONS.push({
     }
   ]
 });
+
+MAASAI_GRAMMAR_SECTIONS.push({
+  id: "payne-2026-maa-middle-verbs",
+  title: "17. Doris L. Payne (2026, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206): Middle Verbs in Maa — Alternating, Media Tantum, and Look-Alikes",
+  summary: "Comprehensive typology of Maa middle-voice verbs marked by [-ATR] -a / [+ATR] -o across Maasai, Samburu, and Ilchamus, distinguishing alternating transitive/middle roots from non-alternating media tantum experiential verbs.",
+  content: [
+    "- **1. Alternating Middle Verbs (`-a / -o`)**: Transitive action roots such as **`duŋ`** ('cut') take the ATR-harmonizing middle suffix **`-a` (`[-ATR]`) / `-o` (`[+ATR]`)** (`a-duŋ-ó`) to express a cluster of detransitivized situations: reflexive ('cut oneself'), reciprocal, anticausative/spontaneous ('get cut'), and resultant state ('be cut').",
+    "- **2. Media Tantum Verbs**: A large lexical class of Maa verbs carry obligatory middle morphology (`-a / -o`) without any unmarked transitive counterpart; these cluster in Kemmer's classical middle domains of human bodily experience, posture, grooming, emotion, and spontaneous motion."
+  ].join("\n"),
+  examples: [
+    {
+      maasai: "duŋ ('cut [TR]') → a-duŋ-ó ('be cut / get cut / cut oneself [MIDDLE -o]') • Media tantum experiential verbs in -a / -o",
+      english: "Alternating transitive-middle roots and non-alternating media tantum verbs in Maa",
+      explanation: "Doris L. Payne (2026, Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
+    }
+  ]
+});

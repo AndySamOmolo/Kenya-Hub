@@ -184,23 +184,37 @@ export default function ToolShell({
     },
   };
 
-  // Build HowTo JSON-LD if step-by-step instructions exist
-  const howToSchema =
-    howItWorksSteps.length > 0
+  // Build Dataset JSON-LD for Google Dataset Search indexing & E-E-A-T provenance
+  const datasetSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: `${tool.shortTitle} — Official Kenyan Statutory & Reference Dataset (2026)`,
+    description: `${tool.description} Sourced and verified from ${tool.dataSource}.`,
+    url: canonicalToolUrl,
+    inLanguage: "en-KE",
+    isAccessibleForFree: true,
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    dateModified: lastModifiedDate,
+    keywords: tool.keywords,
+    spatialCoverage: {
+      "@type": "Place",
+      name: "Republic of Kenya",
+    },
+    creator: {
+      "@type": "Organization",
+      name: "KenyaHub Editorial & Statutory Research Desk",
+      url: "https://kenyahub.me/about/",
+    },
+    ...(officialSourceUrl
       ? {
-          "@context": "https://schema.org",
-          "@type": "HowTo",
-          name: `How to Use the ${tool.title}`,
-          description: tool.description,
-          inLanguage: "en-KE",
-          step: howItWorksSteps.map((stepText, idx) => ({
-            "@type": "HowToStep",
-            position: idx + 1,
-            name: `Step ${idx + 1}`,
-            text: stepText,
-          })),
+          isBasedOn: {
+            "@type": "CreativeWork",
+            name: tool.dataSource,
+            url: officialSourceUrl,
+          },
         }
-      : null;
+      : {}),
+  };
 
   // Build FAQPage JSON-LD if FAQs exist
   const faqSchema =
@@ -232,12 +246,10 @@ export default function ToolShell({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
       />
-      {howToSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"

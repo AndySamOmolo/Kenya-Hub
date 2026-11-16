@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import ntsaData from "@/data/ntsa-transfer-data.json";
+import drivingLicenseData from "@/data/driving-license-guide.json";
 
 const tool = TOOLS.find((t) => t.slug === "ntsa-transfer-calculator")!;
 
@@ -122,6 +123,30 @@ export default function NtsaTransferCalculatorPage() {
                 <span className="font-bold text-text-primary">KES {calc.platform}</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* NTSA Smart Driving License Classes & Renewal Schedule */}
+        <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4 mt-6">
+          <div>
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              NTSA Smart Driving License Classes (A–G) &amp; eCitizen Renewal Fees
+            </h2>
+            <p className="text-xs sm:text-sm text-text-secondary mt-1">
+              Official driving license categories, minimum age requirements, and 3-year Smart DL renewal fees ({drivingLicenseData.renewalProcess.renewalPeriod}: KES {drivingLicenseData.renewalProcess.renewalFee.toLocaleString()}).
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {drivingLicenseData.licenseClasses.map((lc) => (
+              <div key={lc.class} className="rounded-xl bg-bg-elevated/60 border border-border p-3.5 text-xs space-y-1">
+                <div className="flex items-center justify-between font-bold text-text-primary">
+                  <span className="text-gold">Class {lc.class}: {lc.name}</span>
+                  <span>Min Age: {lc.minimumAge} yrs</span>
+                </div>
+                <p className="text-text-secondary leading-relaxed">{lc.description}</p>
+                <p className="text-text-muted pt-1">Test &amp; DL Fee: KES {lc.fee.toLocaleString()}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

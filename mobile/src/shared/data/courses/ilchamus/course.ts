@@ -31,39 +31,99 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "ilchamus-baringo-heritage",
-        "title": "Baringo Settlements (Liabori, Lekepir & Korvan), Lake Life &",
+        "title": "Baringo Settlements (Liabori, Lekepir & Korvan), Lake Life",
         "icon": "Droplets",
         "description": "Master Ilchamus vocabulary recorded by Hon. K. R. Dundas (1910) and Sir Harry Johnston (1902).",
         "tips": "Hon. K. R. Dundas (1910, JRAI Vol. 40, pp. 49–55) documented the three Njamus (Nyarusi) settlements: Njemps Kubwa or Njemps Liabori ('Downstream' on the Molo River), Njemps Ndogo or Njemps Lekepir ('Upstream' on the Tigrish River), and Korvan (founded on Lake Baringo's islands by Logogwa), together with their 16 clans and the Il Mayek furrow-opening rite.",
         "culturalNote": "On Lake Baringo (Mparingo), Ilchamus fishermen traditionally crafted ultra-light buoyant canoes (l-kadich) bound from ambatch (Aeschynomene elaphroxylon) balsa reeds (Dundas 1910, p. 53).",
         "words": [
           {
-            "target": "Supai! (resp. Epa!) / Serian!",
-            "source": "Greetings! / Peace!",
+            "target": "Supai! (resp. Epa!)",
+            "source": "Greetings!",
             "pronunciation": "su-pai / se-rian",
             "hint": "Ilchamus salutation"
           },
           {
-            "target": "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-            "source": "Downstream Njemps (on the Molo) / Upstream Njemps (on the Tigrish) / Island & Tim",
+            "target": "Serian!",
+            "source": "Peace!",
+            "pronunciation": "su-pai / se-rian",
+            "hint": "Ilchamus salutation"
+          },
+          {
+            "target": "Njemps Liabori (Njemps Kubwa)",
+            "source": "Downstream Njemps (on the Molo)",
             "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
             "hint": "Dundas (1910, pp. 49–50, 53)"
           },
           {
-            "target": "Mparingo / l-kadich / l-singiri",
-            "source": "Lake Baringo / Ambatch balsa-reed canoe / Fish",
+            "target": "Njemps Lekepir (Njemps Ndogo)",
+            "source": "Upstream Njemps (on the Tigrish)",
+            "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
+            "hint": "Dundas (1910, pp. 49–50, 53)"
+          },
+          {
+            "target": "Korvan",
+            "source": "Island & Tim",
+            "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
+            "hint": "Dundas (1910, pp. 49–50, 53)"
+          },
+          {
+            "target": "Mparingo",
+            "source": "Lake Baringo",
             "pronunciation": "mpa-ringo / l-kadich / l-singiri",
             "hint": "Lake Baringo maritime & fishing lexicon"
           },
           {
-            "target": "nkare / n-kima / n-kolong / Nkai",
-            "source": "Water (River) / Fire / Sun / God",
+            "target": "l-kadich",
+            "source": "Ambatch balsa-reed canoe",
+            "pronunciation": "mpa-ringo / l-kadich / l-singiri",
+            "hint": "Lake Baringo maritime & fishing lexicon"
+          },
+          {
+            "target": "l-singiri",
+            "source": "Fish",
+            "pronunciation": "mpa-ringo / l-kadich / l-singiri",
+            "hint": "Lake Baringo maritime & fishing lexicon"
+          },
+          {
+            "target": "nkare",
+            "source": "Water (River)",
             "pronunciation": "nka-re / n-kima / n-kolong / nkai",
             "hint": "Johnston (1902 Njemps) & Dundas (1910)"
           },
           {
-            "target": "n-kiteng (pl. n-kishu) / l-kinos (ngingyang) / l-makau",
-            "source": "Cow (pl. Cattle) / Crocodile / Hippopotamus",
+            "target": "n-kima",
+            "source": "Fire",
+            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "hint": "Johnston (1902 Njemps) & Dundas (1910)"
+          },
+          {
+            "target": "n-kolong",
+            "source": "Sun",
+            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "hint": "Johnston (1902 Njemps) & Dundas (1910)"
+          },
+          {
+            "target": "Nkai",
+            "source": "God",
+            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "hint": "Johnston (1902 Njemps) & Dundas (1910)"
+          },
+          {
+            "target": "n-kiteng (pl. n-kishu)",
+            "source": "Cow (pl. Cattle)",
+            "pronunciation": "n-kiteng / l-kinos / l-makau",
+            "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
+          },
+          {
+            "target": "l-kinos (ngingyang)",
+            "source": "Crocodile",
+            "pronunciation": "n-kiteng / l-kinos / l-makau",
+            "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
+          },
+          {
+            "target": "l-makau",
+            "source": "Hippopotamus",
             "pronunciation": "n-kiteng / l-kinos / l-makau",
             "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
           },
@@ -107,33 +167,41 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Njemps Liabori o Njemps Lekepir: Il Mayek oo Il Derito.",
-            "source": "Downstream Njemps and Upstream Njemps: The Il Mayek clan and Il Derito elders open the irrigation furrow (Dundas 1910, pp. 49–54)."
+            "source": "Downstream Njemps and Upstream Njemps: The Il Mayek clan and Il Derito elders open the irrigation furrow ."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Lake Baringo / Ambatch balsa-reed canoe / Fish\" in Ilchamus?",
-            "correctAnswer": "Mparingo / l-kadich / l-singiri",
+            "prompt": "How do you say \"Lake Baringo\" in Ilchamus?",
+            "correctAnswer": "Mparingo",
             "options": [
-              "Mparingo / l-kadich / l-singiri",
-              "Supai! (resp. Epa!) / Serian!",
-              "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-              "nkare / n-kima / n-kolong / Nkai"
+              "Supai!",
+              "Njemps Liabori",
+              "Mparingo",
+              "nkare"
             ],
-            "hint": "m-pah-reen-goh / l-kah-deech / l-seen-gee-ree"
+            "hint": "m-pah-reen-goh / l-kah-deech / l-seen-gee-ree",
+            "acceptedAnswers": [
+              "Mparingo / l-kadich / l-singiri",
+              "Mparingo"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Water (River) / Fire / Sun / God\" in Ilchamus?",
-            "correctAnswer": "nkare / n-kima / n-kolong / Nkai",
+            "prompt": "How do you say \"Water\" in Ilchamus?",
+            "correctAnswer": "nkare",
             "options": [
-              "Supai! (resp. Epa!) / Serian!",
-              "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-              "Mparingo / l-kadich / l-singiri",
-              "nkare / n-kima / n-kolong / Nkai"
+              "nkare",
+              "Supai!",
+              "Njemps Liabori",
+              "Mparingo"
             ],
-            "hint": "n-kah-reh / n-kee-mah / n-koh-lohng / n-kah-ee"
+            "hint": "n-kah-reh / n-kee-mah / n-koh-lohng / n-kah-ee",
+            "acceptedAnswers": [
+              "nkare / n-kima / n-kolong / Nkai",
+              "nkare"
+            ]
           },
           {
             "type": "match_pairs",
@@ -156,15 +224,19 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Ilchamus term for \"Cow (pl. Cattle) / Crocodile / Hippopotamus\": ___",
-            "correctAnswer": "n-kiteng (pl. n-kishu) / l-kinos (ngingyang) / l-makau",
+            "prompt": "Complete the Ilchamus term for \"Cow\": ___",
+            "correctAnswer": "n-kiteng",
             "options": [
-              "Supai! (resp. Epa!) / Serian!",
-              "Njemps Liabori (Njemps Kubwa) / Njemps Lekepir (Njemps Ndogo) / Korvan",
-              "Mparingo / l-kadich / l-singiri",
-              "n-kiteng (pl. n-kishu) / l-kinos (ngingyang) / l-makau"
+              "Supai!",
+              "n-kiteng",
+              "Njemps Liabori",
+              "Mparingo"
             ],
-            "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
+            "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)",
+            "acceptedAnswers": [
+              "n-kiteng (pl. n-kishu) / l-kinos (ngingyang) / l-makau",
+              "n-kiteng"
+            ]
           }
         ]
       }
@@ -235,7 +307,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
           },
           {
-            "target": "lalashe; Añgargenna (pl.)",
+            "target": "lalashe; Añgargenna",
             "source": "Brother",
             "pronunciation": "la-lashe",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -248,9 +320,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "correctAnswer": "Woman",
             "options": [
               "Man",
-              "Person / People",
-              "Father",
-              "Woman"
+              "Woman",
+              "Person",
+              "Father"
             ],
             "hint": "Dundas 1910 & Johnston 1902 Njemps"
           },
@@ -259,48 +331,60 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"l-payian (elder) / l-murani (warrior) / l-tungani (person)\" in Ilchamus?",
             "correctAnswer": "Man",
             "options": [
-              "Person / People",
+              "Person",
               "Father",
-              "Man",
-              "Woman"
+              "Woman",
+              "Man"
             ],
             "hint": "Dundas 1910 & Johnston 1902 Njemps"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ltung'ani (pl. ltung'ana)\" in Ilchamus?",
-            "correctAnswer": "Person / People",
+            "prompt": "What is the English meaning of \"ltung'ani\" in Ilchamus?",
+            "correctAnswer": "Person",
             "options": [
               "Father",
-              "Person / People",
+              "Person",
               "Woman",
               "Man"
             ],
-            "hint": "Camus / North Maa (Johnston 1902)"
+            "hint": "Camus / North Maa (Johnston 1902)",
+            "acceptedAnswers": [
+              "Person / People",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Person / People\" in Ilchamus?",
-            "correctAnswer": "ltung'ani (pl. ltung'ana)",
+            "correctAnswer": "ltung'ani",
             "options": [
-              "ltung'ani (pl. ltung'ana)",
-              "n-gitok (pl. n-gituak)",
-              "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-              "papa / menye"
+              "n-gitok",
+              "l-payian",
+              "ltung'ani",
+              "papa"
             ],
-            "hint": "ltung-a-ni"
+            "hint": "Starts with \"lt…\" (9 letters)",
+            "acceptedAnswers": [
+              "ltung'ani (pl. ltung'ana)",
+              "ltung'ani"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Father\" in Ilchamus?",
-            "correctAnswer": "papa / menye",
+            "correctAnswer": "papa",
             "options": [
-              "n-gitok (pl. n-gituak)",
-              "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-              "ltung'ani (pl. ltung'ana)",
-              "papa / menye"
+              "papa",
+              "n-gitok",
+              "l-payian",
+              "ltung'ani"
             ],
-            "hint": "pa-pa / me-nye"
+            "hint": "Starts with \"pa…\" (4 letters)",
+            "acceptedAnswers": [
+              "papa / menye",
+              "papa"
+            ]
           },
           {
             "type": "match_pairs",
@@ -324,14 +408,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Ilchamus term for \"Mother\": ___",
-            "correctAnswer": "yeyo / ng'oto",
+            "correctAnswer": "yeyo",
             "options": [
-              "n-gitok (pl. n-gituak)",
-              "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-              "ltung'ani (pl. ltung'ana)",
-              "yeyo / ng'oto"
+              "yeyo",
+              "n-gitok",
+              "l-payian",
+              "ltung'ani"
             ],
-            "hint": "Johnston (1902) — Njemps/Ilchamus"
+            "hint": "Johnston (1902) — Njemps/Ilchamus",
+            "acceptedAnswers": [
+              "yeyo / ng'oto",
+              "yeyo"
+            ]
           }
         ]
       },
@@ -362,7 +450,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "Eñ getok; En gedūa (pl.)",
+            "target": "Eñ getok; En gedūa",
             "source": "Wife",
             "pronunciation": "eng ge-tok",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -387,11 +475,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Embatiān, Ol aitórienĭ, Lagwainani — Añganaishai",
-            "source": "Chief — Sister"
+            "source": "Chief — Sister."
           },
           {
             "target": "Eñ karei — Eñ getok",
-            "source": "Son — Wife"
+            "source": "Son — Wife."
           }
         ],
         "authoredExercises": [
@@ -537,8 +625,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "options": [
               "Two",
               "Three",
-              "Four",
-              "One"
+              "One",
+              "Four"
             ],
             "hint": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus"
           },
@@ -549,8 +637,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "options": [
               "Three",
               "Four",
-              "Two",
-              "One"
+              "One",
+              "Two"
             ],
             "hint": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus"
           },
@@ -569,26 +657,30 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Ilchamus?",
-            "correctAnswer": "uni (fem.) / okuni (masc.)",
+            "correctAnswer": "uni",
             "options": [
-              "uni (fem.) / okuni (masc.)",
-              "nabo (fem.) / obo (masc.)",
-              "are (fem.) / waare (masc.)",
+              "nabo",
+              "are",
+              "uni",
               "ong'wan"
             ],
-            "hint": "u-ni / o-ku-ni"
+            "hint": "Starts with \"un…\" (3 letters)",
+            "acceptedAnswers": [
+              "uni (fem.) / okuni (masc.)",
+              "uni"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Ilchamus?",
             "correctAnswer": "ong'wan",
             "options": [
-              "nabo (fem.) / obo (masc.)",
-              "are (fem.) / waare (masc.)",
-              "uni (fem.) / okuni (masc.)",
-              "ong'wan"
+              "nabo",
+              "ong'wan",
+              "are",
+              "uni"
             ],
-            "hint": "ong-wan"
+            "hint": "Starts with \"on…\" (7 letters)"
           },
           {
             "type": "match_pairs",
@@ -616,14 +708,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Ilchamus term for \"Five\": ___",
-            "correctAnswer": "imiet / imjet",
+            "correctAnswer": "imiet",
             "options": [
-              "nabo (fem.) / obo (masc.)",
-              "are (fem.) / waare (masc.)",
-              "uni (fem.) / okuni (masc.)",
-              "imiet / imjet"
+              "nabo",
+              "are",
+              "uni",
+              "imiet"
             ],
-            "hint": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus"
+            "hint": "Johnston (1902) & Vossen (1982) — Camus/Ilchamus",
+            "acceptedAnswers": [
+              "imiet / imjet",
+              "imiet"
+            ]
           }
         ]
       },
@@ -681,11 +777,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "tomon — Tigitam",
-            "source": "Ten — Twenty"
+            "source": "Ten — Twenty."
           },
           {
             "target": "Tomoni uni — Artam",
-            "source": "Thirty — Forty"
+            "source": "Thirty — Forty."
           }
         ],
         "authoredExercises": [
@@ -694,8 +790,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What does \"tomon\" mean in English?",
             "correctAnswer": "Ten",
             "options": [
-              "Ten",
               "Twenty",
+              "Ten",
               "Thirty",
               "Forty"
             ],
@@ -824,11 +920,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "n-daa — kule",
-            "source": "Food — Milk"
+            "source": "Food — Milk."
           },
           {
             "target": "nkiri — Botote",
-            "source": "Meat — Banana"
+            "source": "Meat — Banana."
           }
         ],
         "authoredExercises": [
@@ -837,12 +933,12 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What does \"n-daa\" mean in English?",
             "correctAnswer": "Food",
             "options": [
-              "Food",
               "Milk",
               "Meat",
+              "Food",
               "Banana"
             ],
-            "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
+            "hint": "Starts with \"Fo…\" (4 letters)"
           },
           {
             "type": "translate_to_target",
@@ -947,11 +1043,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "El bāek — En naishu, Na mōqa",
-            "source": "Maize — Palm wine or mead"
+            "source": "Maize — Palm wine or mead."
           },
           {
             "target": "Eñ gare — lsing'iri",
-            "source": "Water — Fish"
+            "source": "Water — Fish."
           }
         ],
         "authoredExercises": [
@@ -960,10 +1056,10 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What does \"El bāek\" mean in English?",
             "correctAnswer": "Maize",
             "options": [
-              "Maize",
-              "Palm wine or mead",
               "Water",
-              "Fish (Lake Baringo)"
+              "Maize",
+              "Fish",
+              "Cow"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
           },
@@ -1096,9 +1192,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "correctAnswer": "Day",
             "options": [
               "Night",
+              "Day",
               "Star",
-              "Water / Lake / River",
-              "Day"
+              "Water"
             ],
             "hint": "Johnston 1902 Njemps"
           },
@@ -1107,9 +1203,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"n-gewarie\" in Ilchamus?",
             "correctAnswer": "Night",
             "options": [
-              "Star",
-              "Water / Lake / River",
               "Night",
+              "Star",
+              "Water",
               "Day"
             ],
             "hint": "Johnston 1902 Njemps"
@@ -1119,9 +1215,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"l-akira (pl. l-akir)\" in Ilchamus?",
             "correctAnswer": "Star",
             "options": [
-              "Water / Lake / River",
-              "Star",
+              "Water",
               "Day",
+              "Star",
               "Night"
             ],
             "hint": "Johnston 1902 Njemps"
@@ -1129,26 +1225,34 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Star\" in Ilchamus?",
-            "correctAnswer": "l-akira (pl. l-akir)",
+            "correctAnswer": "l-akira",
             "options": [
-              "l-akira (pl. l-akir)",
               "n-golong",
+              "l-akira",
               "n-gewarie",
-              "ŋ-kár-ɛ́ (nkare)"
+              "ŋ-kár-ɛ́"
             ],
-            "hint": "l-ah-kee-rah"
+            "hint": "l-ah-kee-rah",
+            "acceptedAnswers": [
+              "l-akira (pl. l-akir)",
+              "l-akira"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Water / Lake / River\" in Ilchamus?",
-            "correctAnswer": "ŋ-kár-ɛ́ (nkare)",
+            "correctAnswer": "ŋ-kár-ɛ́",
             "options": [
               "n-golong",
               "n-gewarie",
-              "l-akira (pl. l-akir)",
-              "ŋ-kár-ɛ́ (nkare)"
+              "ŋ-kár-ɛ́",
+              "l-akira"
             ],
-            "hint": "nka-re"
+            "hint": "nka-re",
+            "acceptedAnswers": [
+              "ŋ-kár-ɛ́ (nkare)",
+              "ŋ-kár-ɛ́"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1176,14 +1280,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Ilchamus term for \"Tree / Wood\": ___",
-            "correctAnswer": "l-caní (lchani)",
+            "correctAnswer": "l-caní",
             "options": [
               "n-golong",
               "n-gewarie",
-              "l-akira (pl. l-akir)",
-              "l-caní (lchani)"
+              "l-akira",
+              "l-caní"
             ],
-            "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
+            "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+            "acceptedAnswers": [
+              "l-caní (lchani)",
+              "l-caní"
+            ]
           }
         ]
       },
@@ -1254,62 +1362,74 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"nkop\" in Ilchamus?",
-            "correctAnswer": "Earth / Land",
+            "correctAnswer": "Earth",
             "options": [
               "Grass",
-              "Mountain / Hill",
+              "Mountain",
               "River",
-              "Earth / Land"
+              "Earth"
             ],
-            "hint": "Johnston (1902) — Njemps/Ilchamus"
+            "hint": "Johnston (1902) — Njemps/Ilchamus",
+            "acceptedAnswers": [
+              "Earth / Land",
+              "Earth"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"nkujit\" in Ilchamus?",
             "correctAnswer": "Grass",
             "options": [
-              "Mountain / Hill",
-              "River",
+              "Mountain",
               "Grass",
-              "Earth / Land"
+              "River",
+              "Earth"
             ],
             "hint": "Johnston (1902) — Njemps/Ilchamus"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"l-doinyo\" in Ilchamus?",
-            "correctAnswer": "Mountain / Hill",
+            "correctAnswer": "Mountain",
             "options": [
               "River",
-              "Mountain / Hill",
-              "Earth / Land",
+              "Earth",
+              "Mountain",
               "Grass"
             ],
-            "hint": "Verified comparative entry across Kenyan nilotic corpus"
+            "hint": "Verified comparative entry across Kenyan nilotic corpus",
+            "acceptedAnswers": [
+              "Mountain / Hill",
+              "Mountain"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mountain / Hill\" in Ilchamus?",
             "correctAnswer": "l-doinyo",
             "options": [
-              "l-doinyo",
               "nkop",
+              "l-doinyo",
               "nkujit",
-              "l-keju / e-waso"
+              "l-keju"
             ],
             "hint": "l-doy-nyoh"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"River\" in Ilchamus?",
-            "correctAnswer": "l-keju / e-waso",
+            "correctAnswer": "l-keju",
             "options": [
               "nkop",
+              "l-keju",
               "nkujit",
-              "l-doinyo",
-              "l-keju / e-waso"
+              "l-doinyo"
             ],
-            "hint": "l-keh-joo"
+            "hint": "l-keh-joo",
+            "acceptedAnswers": [
+              "l-keju / e-waso",
+              "l-keju"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1337,14 +1457,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Ilchamus term for \"Stone / Rock\": ___",
-            "correctAnswer": "soit (pl. soito)",
+            "correctAnswer": "soit",
             "options": [
               "nkop",
               "nkujit",
-              "l-doinyo",
-              "soit (pl. soito)"
+              "soit",
+              "l-doinyo"
             ],
-            "hint": "Verified comparative entry across Kenyan nilotic corpus"
+            "hint": "Verified comparative entry across Kenyan nilotic corpus",
+            "acceptedAnswers": [
+              "soit (pl. soito)",
+              "soit"
+            ]
           }
         ]
       }
@@ -1439,9 +1563,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"ŋ-ké-ok (nkeok)\" in Ilchamus?",
             "correctAnswer": "Ear",
             "options": [
+              "Ear",
               "Nose",
               "Tooth",
-              "Ear",
               "Eye"
             ],
             "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
@@ -1452,35 +1576,43 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "correctAnswer": "Nose",
             "options": [
               "Tooth",
-              "Nose",
               "Eye",
-              "Ear"
+              "Ear",
+              "Nose"
             ],
             "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Ilchamus?",
-            "correctAnswer": "ŋ-kawar-íé (nkawarie)",
+            "correctAnswer": "ŋ-kawar-íé",
             "options": [
-              "ŋ-kawar-íé (nkawarie)",
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-ké-ok (nkeok)",
-              "l-alá-ɪ̀ (lalai)"
+              "ŋ-kawar-íé",
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-ké-ok",
+              "l-alá-ɪ̀"
             ],
-            "hint": "nka-wa-rie"
+            "hint": "Starts with \"ŋ-…\" (10 letters)",
+            "acceptedAnswers": [
+              "ŋ-kawar-íé (nkawarie)",
+              "ŋ-kawar-íé"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tooth\" in Ilchamus?",
-            "correctAnswer": "l-alá-ɪ̀ (lalai)",
+            "correctAnswer": "l-alá-ɪ̀",
             "options": [
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-ké-ok (nkeok)",
-              "ŋ-kawar-íé (nkawarie)",
-              "l-alá-ɪ̀ (lalai)"
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-ké-ok",
+              "ŋ-kawar-íé",
+              "l-alá-ɪ̀"
             ],
-            "hint": "la-lai"
+            "hint": "Starts with \"l-…\" (8 letters)",
+            "acceptedAnswers": [
+              "l-alá-ɪ̀ (lalai)",
+              "l-alá-ɪ̀"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1508,14 +1640,18 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Ilchamus term for \"Tongue\": ___",
-            "correctAnswer": "l-ŋɛjɛp (lng'ejep)",
+            "correctAnswer": "l-ŋɛjɛp",
             "options": [
-              "ŋ-kɔŋ-ʊ́ (nkong'u)",
-              "ŋ-ké-ok (nkeok)",
-              "ŋ-kawar-íé (nkawarie)",
-              "l-ŋɛjɛp (lng'ejep)"
+              "ŋ-kɔŋ-ʊ́",
+              "ŋ-ké-ok",
+              "ŋ-kawar-íé",
+              "l-ŋɛjɛp"
             ],
-            "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
+            "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus",
+            "acceptedAnswers": [
+              "l-ŋɛjɛp (lng'ejep)",
+              "l-ŋɛjɛp"
+            ]
           }
         ]
       },
@@ -1586,36 +1722,44 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"nkaina\" in Ilchamus?",
-            "correctAnswer": "Hand / Arm",
+            "correctAnswer": "Hand",
             "options": [
-              "Leg / Foot",
+              "Hand",
+              "Leg",
               "Arm",
-              "Back",
-              "Hand / Arm"
+              "Back"
             ],
-            "hint": "Johnston (1902) — Njemps/Ilchamus"
+            "hint": "Johnston (1902) — Njemps/Ilchamus",
+            "acceptedAnswers": [
+              "Hand / Arm",
+              "Hand"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"lkeju\" in Ilchamus?",
-            "correctAnswer": "Leg / Foot",
+            "correctAnswer": "Leg",
             "options": [
               "Arm",
               "Back",
-              "Leg / Foot",
-              "Hand / Arm"
+              "Leg",
+              "Hand"
             ],
-            "hint": "Johnston (1902) — Njemps/Ilchamus"
+            "hint": "Johnston (1902) — Njemps/Ilchamus",
+            "acceptedAnswers": [
+              "Leg / Foot",
+              "Leg"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Engaina\" in Ilchamus?",
             "correctAnswer": "Arm",
             "options": [
-              "Back",
               "Arm",
-              "Hand / Arm",
-              "Leg / Foot"
+              "Back",
+              "Hand",
+              "Leg"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -1629,7 +1773,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
               "lkeju",
               "Engorioñ"
             ],
-            "hint": "engaina"
+            "hint": "Starts with \"En…\" (7 letters)"
           },
           {
             "type": "multiple_choice",
@@ -1638,10 +1782,10 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "options": [
               "nkaina",
               "lkeju",
-              "Engaina",
-              "Engorioñ"
+              "Engorioñ",
+              "Engaina"
             ],
-            "hint": "engorioñ"
+            "hint": "Starts with \"En…\" (8 letters)"
           },
           {
             "type": "match_pairs",
@@ -1673,8 +1817,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "options": [
               "nkaina",
               "lkeju",
-              "Engaina",
-              "Ngoṣoge"
+              "Ngoṣoge",
+              "Engaina"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
@@ -1771,9 +1915,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"a-ɲá (anya)\" in Ilchamus?",
             "correctAnswer": "Eat",
             "options": [
+              "Eat",
               "Drink",
               "Go",
-              "Eat",
               "Speak"
             ],
             "hint": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus"
@@ -1865,11 +2009,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "a-ning — a-yiolo",
-            "source": "To hear — To know"
+            "source": "To hear — To know."
           },
           {
             "target": "a-nyor — a-isho",
-            "source": "To love — To give"
+            "source": "To love — To give."
           }
         ],
         "authoredExercises": [
@@ -1878,9 +2022,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What does \"a-ning\" mean in English?",
             "correctAnswer": "To hear",
             "options": [
-              "To hear",
               "To know",
-              "To love / like",
+              "To love",
+              "To hear",
               "To give"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
@@ -1984,11 +2128,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ol lari — taata",
-            "source": "Year — Today"
+            "source": "Year — Today."
           },
           {
             "target": "taisere — ngole",
-            "source": "Tomorrow — Yesterday"
+            "source": "Tomorrow — Yesterday."
           }
         ],
         "authoredExercises": [
@@ -2085,11 +2229,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "n-golong — Ol lari",
-            "source": "Day — Year"
+            "source": "Day — Year."
           },
           {
             "target": "taata — n-gewarie",
-            "source": "Today — Night"
+            "source": "Today — Night."
           }
         ],
         "authoredExercises": [
@@ -2222,9 +2366,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"artam\" in Ilchamus (Njemps)?",
             "correctAnswer": "Ninety",
             "options": [
-              "Ninety",
               "Eighty",
               "Seventy",
+              "Ninety",
               "Sixty"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -2257,9 +2401,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Complete the Ilchamus (Njemps) term for \"Eleven\": ___",
             "correctAnswer": "Tomon obo",
             "options": [
-              "Tomon obo",
               "artam",
               "otomoni uni",
+              "Tomon obo",
               "obikitam"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -2334,8 +2478,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Lesuñgu\" in Ilchamus?",
             "correctAnswer": "Traveler",
             "options": [
-              "Traveler",
               "Wart hog",
+              "Traveler",
               "War",
               "Spring water"
             ],
@@ -2369,9 +2513,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Complete the Ilchamus (Njemps) term for \"Twins\": ___",
             "correctAnswer": "El mau",
             "options": [
-              "El mau",
-              "Manyata (warriors'), Añgañ (tribal)",
+              "Manyata",
               "Lesuñgu",
+              "El mau",
               "Ol gūya"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -2408,7 +2552,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "Eñ udi; Eñ usidin (pl.)",
+            "target": "Eñ udi; Eñ usidin",
             "source": "Stick",
             "pronunciation": "eng udi",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
@@ -2445,11 +2589,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Entoki — Ol aburoni",
-            "source": "Thing — Thief"
+            "source": "Thing — Thief."
           },
           {
             "target": "Eñ udi — Os singolio",
-            "source": "Stick — Song"
+            "source": "Stick — Song."
           }
         ],
         "authoredExercises": [
@@ -2579,7 +2723,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
               "Place",
               "Pig",
               "Elder",
-              "Man / Men"
+              "Man"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
@@ -2611,10 +2755,10 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Complete the Ilchamus (Njemps) term for \"Magic\": ___",
             "correctAnswer": "Embanīt",
             "options": [
-              "Embanīt",
               "Añ gotuk",
               "Añgob",
-              "Ol bitirr"
+              "Ol bitirr",
+              "Embanīt"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
@@ -2629,7 +2773,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "culturalNote": "In the center of Lake Baringo rises the volcanic tuff-crater island of Ol Kokwa (2½ miles long, 400 ft. high, with boiling sulphurous springs on its NE shore), whose Wakwafi fishermen and goat-herds cross from the mainland on V-shaped oboro rafts lashed together from 6–8 stems of cork-like ambatch wood (Herminiera elaphroxylon, pp. 384–385).",
         "words": [
           {
-            "target": "Njemps Mkubwa ('Great Njemps') & Njemps Ndogo",
+            "target": "Njemps Mkubwa & Njemps Ndogo",
             "source": "The Two Double-Stockaded Njemps Villages & Their Population in Nov.–Dec. 1887",
             "pronunciation": "njemps-mkubwa-njemps-ndogo",
             "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 381–383)"
@@ -2659,196 +2803,143 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Njemps Mkubwa o Njemps Ndogo: Guaso Tigerish o Guaso Molo, Lake Baringo (3,190 ft.), Ol Kokwa & oboro.",
-            "source": "Great Njemps and Little Njemps on the Tigrish and Molo rivers, Lake Baringo (3,190 ft.), Ol Kokwa island, and ambatch oboro rafts (Höhnel 1894,"
+            "source": "Great Njemps and Little Njemps on the Tigrish and Molo rivers, Lake Baringo (3,190 ft.), Ol Kokwa island, and ambatch oboro rafts."
           }
         ]
       },
-        {
+      {
         "id": "ilchamus-corpus-sentences-skill-1",
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Ilchamus (Njemps) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980).",
         "words": [
-                  {
-                            "target": "Serian",
-                            "source": "Peace",
-                            "pronunciation": "seh-ri-an"
-                  },
-                  {
-                            "target": "Ashe",
-                            "source": "Thank you",
-                            "pronunciation": "ah-sheh"
-                  },
-                  {
-                            "target": "Epa",
-                            "source": "Hello (Reply)",
-                            "pronunciation": "eh-pah"
-                  },
-                  {
-                            "target": "Sopa",
-                            "source": "Hello / Greetings",
-                            "pronunciation": "soh-pah"
-                  },
-                  {
-                            "target": "Supa",
-                            "source": "Hello / Peace (Men's greeting)",
-                            "pronunciation": "supa"
-                  },
-                  {
-                            "target": "Takwenya",
-                            "source": "Hello / Peace (Women's greeting)",
-                            "pronunciation": "takwenya"
-                  },
-                  {
-                            "target": "Ashe oleng",
-                            "source": "Thank you very much",
-                            "pronunciation": "ashe oleng"
-                  },
-                  {
-                            "target": "Karibu ang'",
-                            "source": "Welcome",
-                            "pronunciation": "karibu ang"
-                  },
-                  {
-                            "target": "Eelata",
-                            "source": "Fat",
-                            "pronunciation": "ee-la-ta"
-                  },
-                  {
-                            "target": "Ol-mossóri",
-                            "source": "Egg",
-                            "pronunciation": "ol-mossori"
-                  }
+          {
+            "target": "Serian",
+            "source": "Peace",
+            "pronunciation": "seh-ri-an"
+          },
+          {
+            "target": "Ashe",
+            "source": "Thank you",
+            "pronunciation": "ah-sheh"
+          },
+          {
+            "target": "Epa",
+            "source": "Hello (Reply)",
+            "pronunciation": "eh-pah"
+          },
+          {
+            "target": "Sopa",
+            "source": "Hello / Greetings",
+            "pronunciation": "soh-pah"
+          },
+          {
+            "target": "Supa",
+            "source": "Hello / Peace (Men's greeting)",
+            "pronunciation": "supa"
+          },
+          {
+            "target": "Takwenya",
+            "source": "Hello / Peace (Women's greeting)",
+            "pronunciation": "takwenya"
+          },
+          {
+            "target": "Ashe oleng",
+            "source": "Thank you very much",
+            "pronunciation": "ashe oleng"
+          },
+          {
+            "target": "Karibu ang'",
+            "source": "Welcome",
+            "pronunciation": "karibu ang"
+          },
+          {
+            "target": "Eelata",
+            "source": "Fat",
+            "pronunciation": "ee-la-ta"
+          },
+          {
+            "target": "Ol-mossóri",
+            "source": "Egg",
+            "pronunciation": "ol-mossori"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "Ashe oleng",
-                            "source": "Thank you very much"
-                  },
-                  {
-                            "target": "Karibu ang'",
-                            "source": "Welcome"
-                  },
-                  {
-                            "target": "El bāek",
-                            "source": "Maize"
-                  },
-                  {
-                            "target": "Eñ gare",
-                            "source": "Water"
-                  },
-                  {
-                            "target": "Ol lameyu",
-                            "source": "Hunger"
-                  },
-                  {
-                            "target": "Or gumbao",
-                            "source": "Tobacco"
-                  },
-                  {
-                            "target": "O' sosiān",
-                            "source": "Date palm"
-                  },
-                  {
-                            "target": "En naishu, Na mōqa",
-                            "source": "Palm wine or mead"
-                  }
+          {
+            "target": "Ashe oleng",
+            "source": "Thank you very much."
+          },
+          {
+            "target": "O' sosiān",
+            "source": "Date palm."
+          },
+          {
+            "target": "En naishu, Na mōqa",
+            "source": "Palm wine or mead."
+          }
         ]
-},
-        {
+      },
+      {
         "id": "ilchamus-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Ilchamus (Njemps) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+        "culturalNote": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980).",
         "words": [
-                  {
-                            "target": "nabo",
-                            "source": "One",
-                            "pronunciation": "na-bo / o-bo"
-                  },
-                  {
-                            "target": "are",
-                            "source": "Two",
-                            "pronunciation": "a-re / waa-re"
-                  },
-                  {
-                            "target": "ile",
-                            "source": "Six",
-                            "pronunciation": "i-le"
-                  },
-                  {
-                            "target": "tomon",
-                            "source": "Ten",
-                            "pronunciation": "to-mon"
-                  },
-                  {
-                            "target": "ong'wan",
-                            "source": "Four",
-                            "pronunciation": "ong-wan"
-                  },
-                  {
-                            "target": "imiet",
-                            "source": "Five",
-                            "pronunciation": "i-miet"
-                  },
-                  {
-                            "target": "saal",
-                            "source": "Nine",
-                            "pronunciation": "saal"
-                  },
-                  {
-                            "target": "uni",
-                            "source": "Three",
-                            "pronunciation": "u-ni / o-ku-ni"
-                  },
-                  {
-                            "target": "sapa",
-                            "source": "Seven",
-                            "pronunciation": "sa-pa"
-                  },
-                  {
-                            "target": "isiet",
-                            "source": "Eight",
-                            "pronunciation": "i-siet"
-                  }
+          {
+            "target": "nabo",
+            "source": "One",
+            "pronunciation": "na-bo / o-bo"
+          },
+          {
+            "target": "are",
+            "source": "Two",
+            "pronunciation": "a-re / waa-re"
+          },
+          {
+            "target": "ile",
+            "source": "Six",
+            "pronunciation": "i-le"
+          },
+          {
+            "target": "tomon",
+            "source": "Ten",
+            "pronunciation": "to-mon"
+          },
+          {
+            "target": "ong'wan",
+            "source": "Four",
+            "pronunciation": "ong-wan"
+          },
+          {
+            "target": "imiet",
+            "source": "Five",
+            "pronunciation": "i-miet"
+          },
+          {
+            "target": "saal",
+            "source": "Nine",
+            "pronunciation": "saal"
+          },
+          {
+            "target": "uni",
+            "source": "Three",
+            "pronunciation": "u-ni / o-ku-ni"
+          },
+          {
+            "target": "sapa",
+            "source": "Seven",
+            "pronunciation": "sa-pa"
+          },
+          {
+            "target": "isiet",
+            "source": "Eight",
+            "pronunciation": "i-siet"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "Tomoni uni",
-                            "source": "Thirty"
-                  },
-                  {
-                            "target": "Tomon obo",
-                            "source": "Eleven"
-                  },
-                  {
-                            "target": "otomoni uni",
-                            "source": "Eighty"
-                  },
-                  {
-                            "target": "Ip tomon",
-                            "source": "Thousand"
-                  },
-                  {
-                            "target": "Eñ karei",
-                            "source": "Son"
-                  },
-                  {
-                            "target": "Eñ getok",
-                            "source": "Wife"
-                  },
-                  {
-                            "target": "Embatiān, Ol aitórienĭ, Lagwainani",
-                            "source": "Chief"
-                  },
-                  {
-                            "target": "El mau",
-                            "source": "Twins"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

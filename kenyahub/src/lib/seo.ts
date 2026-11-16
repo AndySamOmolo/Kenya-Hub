@@ -18,6 +18,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
   }
 
   const canonicalUrl = `${BASE_URL}/tools/${tool.slug}/`;
+  const effectiveTitle = tool.seoTitle || tool.title;
   const enrichedKeywords = Array.from(
     new Set([
       ...tool.keywords,
@@ -29,10 +30,10 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
   );
 
   return {
-    title: tool.title,
+    title: effectiveTitle,
     description: tool.description,
     keywords: enrichedKeywords,
-    authors: [{ name: "KenyaHub Editorial Team", url: `${BASE_URL}/about/` }],
+    authors: [{ name: "KenyaHub Editorial & Statutory Research Desk", url: `${BASE_URL}/about/` }],
     creator: "KenyaHub",
     publisher: "KenyaHub",
     robots: {
@@ -47,7 +48,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
       },
     },
     openGraph: {
-      title: `${tool.title} | KenyaHub`,
+      title: `${effectiveTitle} | KenyaHub`,
       description: tool.description,
       type: "website",
       locale: "en_KE",
@@ -64,7 +65,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tool.title} | KenyaHub`,
+      title: `${effectiveTitle} | KenyaHub`,
       description: tool.description,
       images: ["/og-image.png"],
     },
@@ -82,12 +83,14 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
 // Explicit high-relevance mappings between tools and flagship blog guides
 const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   "learn": [
+    "open-kenyan-language-datasets-kencorpus-tafsiri-thiomi-guide",
+    "how-bantu-languages-work-noun-classes-guide",
     "cbc-curriculum-explained-for-parents",
-    "guide-to-kenyan-public-holidays-2026",
   ],
   "kenyan-translator": [
-    "cbc-curriculum-explained-for-parents",
-    "guide-to-kenyan-public-holidays-2026",
+    "open-kenyan-language-datasets-kencorpus-tafsiri-thiomi-guide",
+    "how-bantu-languages-work-noun-classes-guide",
+    "krapf-1850-six-east-african-languages-rabai-mpya",
   ],
   "paye-calculator": [
     "how-paye-tax-works-in-kenya",
@@ -107,7 +110,7 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   "helb-calculator": [
     "how-paye-tax-works-in-kenya",
     "sacco-loans-dividends-chama-guide-kenya-2026",
-    "cbc-curriculum-explained-for-parents",
+    "understanding-kuccps-cluster-points",
   ],
   "stamp-duty-calculator": [
     "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
@@ -116,29 +119,31 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   ],
   "cbc-curriculum": [
     "cbc-curriculum-explained-for-parents",
+    "understanding-kuccps-cluster-points",
     "guide-to-kenyan-public-holidays-2026",
-    "how-paye-tax-works-in-kenya",
   ],
   "kuccps-cluster-calculator": [
+    "understanding-kuccps-cluster-points",
     "cbc-curriculum-explained-for-parents",
     "how-paye-tax-works-in-kenya",
-    "sacco-loans-dividends-chama-guide-kenya-2026",
   ],
   "kcse-grade-calculator": [
+    "understanding-kuccps-cluster-points",
     "cbc-curriculum-explained-for-parents",
-    "how-paye-tax-works-in-kenya",
     "guide-to-kenyan-public-holidays-2026",
   ],
   "kra-car-import-calculator": [
     "kra-car-import-duty-calculator-guide-kenya-2026",
-    "how-paye-tax-works-in-kenya",
+    "kenya-number-plates-explained",
     "understanding-mpesa-transaction-fees",
   ],
   "number-plate-decoder": [
+    "kenya-number-plates-explained",
     "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
   "traffic-fines": [
+    "kenya-number-plates-explained",
     "kra-car-import-duty-calculator-guide-kenya-2026",
     "guide-to-kenyan-public-holidays-2026",
   ],
@@ -170,7 +175,7 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   ],
   "ntsa-transfer-calculator": [
     "kra-car-import-duty-calculator-guide-kenya-2026",
-    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
+    "kenya-number-plates-explained",
   ],
   "boma-yangu-calculator": [
     "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
@@ -182,7 +187,7 @@ const TOOL_TO_BLOG_MAP: Record<string, string[]> = {
   ],
   "landlord-tenant-rights": [
     "cost-of-building-a-house-in-kenya-mjengo-guide-2026",
-    "how-paye-tax-works-in-kenya",
+    "land-transfer-stamp-duty-conveyancing-fees-kenya-2026",
   ],
   "domestic-wage-calculator": [
     "how-paye-tax-works-in-kenya",

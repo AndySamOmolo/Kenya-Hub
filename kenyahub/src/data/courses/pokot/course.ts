@@ -26,7 +26,7 @@ export const POKOT_UNITS: CourseUnit[] = [
   {
     "id": "pokot-unit-1",
     "unitNumber": 1,
-    "title": "Pökoot Salutations, Beech’s Suk Grammar, Quinary Numerals &",
+    "title": "Pökoot Salutations, Beech’s Suk Grammar, Quinary Numerals",
     "description": "Master Pökoot salutations, nouns, quinary numerals 1–100 (pp. 66–68), riddles (pp. 43–45), and the Hymn to Torôrut (p. 16) from Mervyn Beech (1911).",
     "icon": "Megaphone",
     "color": "#7C3AED",
@@ -46,8 +46,14 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, p. 91) Suk salutations"
           },
           {
-            "target": "Sĕra! (Sĕre!) / Korôton! (resp. I-rôt-enyi!)",
-            "source": "Thank you! / Good-bye! (lit. I have gone! — Thou art going!)",
+            "target": "Sĕra! (Sĕre!)",
+            "source": "Thank you!",
+            "pronunciation": "se-ra / ko-ro-ton",
+            "hint": "Beech (1911, pp. 92, 96, 119, 143)"
+          },
+          {
+            "target": "Korôton! (resp. I-rôt-enyi!)",
+            "source": "Good-bye! (lit. I have gone! — Thou art going!)",
             "pronunciation": "se-ra / ko-ro-ton",
             "hint": "Beech (1911, pp. 92, 96, 119, 143)"
           },
@@ -112,7 +118,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "pogh"
           },
           {
-            "target": "maʻ (mat, pl. môat)",
+            "target": "maʻ (mat",
             "source": "Fire",
             "pronunciation": "ma"
           },
@@ -127,8 +133,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "kōkwa"
           },
           {
-            "target": "tainy (pl. tich) / teta (pl. toka)",
-            "source": "Cattle / Cow",
+            "target": "tainy (pl. tich)",
+            "source": "Cattle",
+            "pronunciation": "tainy"
+          },
+          {
+            "target": "teta (pl. toka)",
+            "source": "Cow",
             "pronunciation": "tainy"
           },
           {
@@ -137,8 +148,18 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "cheghwa"
           },
           {
-            "target": "pagh / musong / matai",
-            "source": "Grain / Millet / Eleusine",
+            "target": "pagh",
+            "source": "Grain",
+            "pronunciation": "pagh"
+          },
+          {
+            "target": "musong",
+            "source": "Millet",
+            "pronunciation": "pagh"
+          },
+          {
+            "target": "matai",
+            "source": "Eleusine",
             "pronunciation": "pagh"
           },
           {
@@ -264,58 +285,70 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"chito (pl. pich) / muren (warrior)\" in Pokot?",
             "correctAnswer": "Man",
             "options": [
-              "Person / People",
-              "Pokot person / Pokot people (Endonym)",
-              "Endo (Marakwet escarpment) people",
-              "Man"
+              "Man",
+              "Person",
+              "Pokot person",
+              "Endo  people"
             ],
             "hint": "Beech 1911 p. 61 & Johnston 1902 Suk"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"piich (sg. chii)\" in Pokot?",
-            "correctAnswer": "Person / People",
+            "prompt": "What is the English meaning of \"piich\" in Pokot?",
+            "correctAnswer": "Person",
             "options": [
-              "Pokot person / Pokot people (Endonym)",
-              "Endo (Marakwet escarpment) people",
-              "Person / People",
+              "Pokot person",
+              "Endo  people",
+              "Person",
               "Man"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "Person / People",
+              "Person"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Pĕch-on (pl. Pôkwut)\" in Pokot?",
-            "correctAnswer": "Pokot person / Pokot people (Endonym)",
+            "prompt": "What is the English meaning of \"Pĕch-on\" in Pokot?",
+            "correctAnswer": "Pokot person",
             "options": [
-              "Endo (Marakwet escarpment) people",
-              "Pokot person / Pokot people (Endonym)",
+              "Endo  people",
               "Man",
-              "Person / People"
+              "Pokot person",
+              "Person"
             ],
-            "hint": "Beech (1911, p. 1) — Origin of the Suk/Pokot ethnonym"
+            "hint": "Beech (1911, p. 1) — Origin of the Suk/Pokot ethnonym",
+            "acceptedAnswers": [
+              "Pokot person / Pokot people (Endonym)",
+              "Pokot person"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Pokot person / Pokot people (Endonym)\" in Pokot?",
-            "correctAnswer": "Pĕch-on (pl. Pôkwut)",
+            "correctAnswer": "Pĕch-on",
             "options": [
-              "Pĕch-on (pl. Pôkwut)",
-              "chito (pl. pich) / muren (warrior)",
-              "piich (sg. chii)",
-              "Chep-bleñg"
+              "chito",
+              "piich",
+              "Chep-bleñg",
+              "Pĕch-on"
             ],
-            "hint": "pech-on / pok-wut"
+            "hint": "pech-on / pok-wut",
+            "acceptedAnswers": [
+              "Pĕch-on (pl. Pôkwut)",
+              "Pĕch-on"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Endo (Marakwet escarpment) people\" in Pokot?",
             "correctAnswer": "Chep-bleñg",
             "options": [
-              "chito (pl. pich) / muren (warrior)",
-              "piich (sg. chii)",
-              "Pĕch-on (pl. Pôkwut)",
-              "Chep-bleñg"
+              "chito",
+              "piich",
+              "Chep-bleñg",
+              "Pĕch-on"
             ],
             "hint": "chep-bleng"
           },
@@ -345,14 +378,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot term for \"Father\": ___",
-            "correctAnswer": "papa / kapo",
+            "correctAnswer": "papa",
             "options": [
-              "chito (pl. pich) / muren (warrior)",
-              "piich (sg. chii)",
-              "Pĕch-on (pl. Pôkwut)",
-              "papa / kapo"
+              "chito",
+              "papa",
+              "piich",
+              "Pĕch-on"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "papa / kapo",
+              "papa"
+            ]
           }
         ]
       },
@@ -365,8 +402,14 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "Torôrut / Asiis",
-            "source": "Supreme Sky God / Younger brother (the Sun)",
+            "target": "Torôrut",
+            "source": "Supreme Sky God",
+            "pronunciation": "to-ro-rut / a-siis",
+            "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon"
+          },
+          {
+            "target": "Asiis",
+            "source": "Younger brother (the Sun)",
             "pronunciation": "to-ro-rut / a-siis",
             "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon"
           },
@@ -389,13 +432,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "mŭnuñg, pl. mūnuñg; my baby, monde-nyan, pl. mon-echan",
+            "target": "mŭnuñg",
             "source": "Baby ( of either sex )",
             "pronunciation": "mu-nungg",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "weri, pl. werkoʻ",
+            "target": "weri",
             "source": "Brother",
             "pronunciation": "we-ri",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
@@ -413,7 +456,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "ôr, pl. ôr-ten (vide Road ); pereris, pl. pereris-tin",
+            "target": "ôr",
             "source": "Clan ( family )",
             "pronunciation": "or",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
@@ -422,15 +465,19 @@ export const POKOT_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Torôrut / Asiis\" in Pokot (Pökoot)?",
-            "correctAnswer": "Supreme Sky God / Younger brother (the Sun)",
+            "prompt": "What is the English meaning of \"Torôrut\" in Pokot (Pökoot)?",
+            "correctAnswer": "Supreme Sky God",
             "options": [
-              "Supreme Sky God / Younger brother (the Sun)",
-              "Council Adviser / Judge-Elder",
+              "Council Adviser",
               "Name",
-              "Maternal aunt (my other mother)"
+              "Supreme Sky God",
+              "Maternal aunt"
             ],
-            "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon"
+            "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon",
+            "acceptedAnswers": [
+              "Supreme Sky God / Younger brother (the Sun)",
+              "Supreme Sky God"
+            ]
           },
           {
             "type": "match_pairs",
@@ -458,14 +505,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot (Pökoot) term for \"Baby ( of either sex )\": ___",
-            "correctAnswer": "mŭnuñg, pl. mūnuñg; my baby, monde-nyan, pl. mon-echan",
+            "correctAnswer": "mŭnuñg",
             "options": [
-              "mŭnuñg, pl. mūnuñg; my baby, monde-nyan, pl. mon-echan",
-              "Torôrut / Asiis",
-              "Ki-ruwok-in (pl. Ki-ruwok-ik)",
-              "ka̱ːyne̱ːt (kainet)"
+              "mŭnuñg",
+              "Torôrut",
+              "Ki-ruwok-in",
+              "ka̱ːyne̱ːt"
             ],
-            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
+            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
+            "acceptedAnswers": [
+              "mŭnuñg, pl. mūnuñg; my baby, monde-nyan, pl. mon-echan",
+              "mŭnuñg"
+            ]
           }
         ]
       }
@@ -561,8 +612,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "Two",
             "options": [
               "Three",
-              "Four",
               "Two",
+              "Four",
               "One"
             ],
             "hint": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)"
@@ -573,35 +624,43 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "Three",
             "options": [
               "Four",
-              "Three",
               "One",
-              "Two"
+              "Two",
+              "Three"
             ],
             "hint": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Three\" in Pokot?",
-            "correctAnswer": "sä́mä́k (somok)",
+            "correctAnswer": "sä́mä́k",
             "options": [
-              "sä́mä́k (somok)",
-              "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
-              "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
-              "àŋwân (ang'wan)"
+              "àkɔ́ɔ́ŋkɔ̀",
+              "oɣë̀ë̀ŋ",
+              "àŋwân",
+              "sä́mä́k"
             ],
-            "hint": "sa-mak"
+            "hint": "sa-mak",
+            "acceptedAnswers": [
+              "sä́mä́k (somok)",
+              "sä́mä́k"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Four\" in Pokot?",
-            "correctAnswer": "àŋwân (ang'wan)",
+            "correctAnswer": "àŋwân",
             "options": [
-              "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
-              "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
-              "sä́mä́k (somok)",
-              "àŋwân (ang'wan)"
+              "àŋwân",
+              "àkɔ́ɔ́ŋkɔ̀",
+              "oɣë̀ë̀ŋ",
+              "sä́mä́k"
             ],
-            "hint": "ang-wan"
+            "hint": "ang-wan",
+            "acceptedAnswers": [
+              "àŋwân (ang'wan)",
+              "àŋwân"
+            ]
           },
           {
             "type": "match_pairs",
@@ -629,14 +688,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot term for \"Five\": ___",
-            "correctAnswer": "múut (muut)",
+            "correctAnswer": "múut",
             "options": [
-              "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
-              "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
-              "sä́mä́k (somok)",
-              "múut (muut)"
+              "àkɔ́ɔ́ŋkɔ̀",
+              "oɣë̀ë̀ŋ",
+              "sä́mä́k",
+              "múut"
             ],
-            "hint": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)"
+            "hint": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)",
+            "acceptedAnswers": [
+              "múut (muut)",
+              "múut"
+            ]
           }
         ]
       },
@@ -697,8 +760,14 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "tukul / tokol / lopai",
-            "source": "All / every",
+            "target": "tukul",
+            "source": "All",
+            "pronunciation": "tu-kul",
+            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
+          },
+          {
+            "target": "tokol",
+            "source": "every",
             "pronunciation": "tu-kul",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
@@ -706,15 +775,15 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Me-t-ei-nye oror oghieñg",
-            "source": "It will not be as much as two months"
+            "source": "It will not be as much as two months."
           },
           {
             "target": "Ocha karam ma-mi-nye",
-            "source": "I am the best of all"
+            "source": "I am the best of all."
           },
           {
             "target": "Me-t-ei-nye taman",
-            "source": "They don't amount to ten"
+            "source": "They don't amount to ten."
           },
           {
             "target": "Mbe-ne se-me-ñgalan ñgala chuno pa-tagh?",
@@ -727,9 +796,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"támàn (taman)\" in Pokot?",
             "correctAnswer": "Ten",
             "options": [
-              "Twenty (One complete man: all fingers and toes)",
+              "Twenty",
               "One hundred",
-              "It will not be as much as two months",
+              "That's all!",
               "Ten"
             ],
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
@@ -737,24 +806,28 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"tiptem / taman ut-oghieñg\" in Pokot?",
-            "correctAnswer": "Twenty (One complete man: all fingers and toes)",
+            "correctAnswer": "Twenty",
             "options": [
               "One hundred",
-              "It will not be as much as two months",
-              "Twenty (One complete man: all fingers and toes)",
-              "Ten"
+              "Ten",
+              "Twenty",
+              "That's all!"
             ],
-            "hint": "Mervyn W. H. Beech (1911, p. 67) — Suk cardinals"
+            "hint": "Mervyn W. H. Beech (1911, p. 67) — Suk cardinals",
+            "acceptedAnswers": [
+              "Twenty (One complete man: all fingers and toes)",
+              "Twenty"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"pokol\" in Pokot?",
             "correctAnswer": "One hundred",
             "options": [
-              "It will not be as much as two months",
-              "One hundred",
               "Ten",
-              "Twenty (One complete man: all fingers and toes)"
+              "Twenty",
+              "That's all!",
+              "One hundred"
             ],
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
           },
@@ -763,24 +836,24 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"One hundred\" in Pokot?",
             "correctAnswer": "pokol",
             "options": [
-              "pokol",
-              "támàn (taman)",
-              "tiptem / taman ut-oghieñg",
-              "Me-t-ei-nye oror oghieñg"
+              "támàn",
+              "tiptem",
+              "Me-t-ei-nye oror oghieñg",
+              "pokol"
             ],
-            "hint": "po-kol"
+            "hint": "Starts with \"po…\" (5 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"It will not be as much as two months\" in Pokot?",
             "correctAnswer": "Me-t-ei-nye oror oghieñg",
             "options": [
-              "támàn (taman)",
-              "tiptem / taman ut-oghieñg",
+              "támàn",
+              "tiptem",
               "pokol",
               "Me-t-ei-nye oror oghieñg"
             ],
-            "hint": "me-t-ei-nye oror oghieñg."
+            "hint": "Starts with \"Me…\" (24 letters)"
           },
           {
             "type": "match_pairs",
@@ -810,8 +883,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokot term for \"I am the best of all\": ___",
             "correctAnswer": "Ocha karam ma-mi-nye",
             "options": [
-              "támàn (taman)",
-              "tiptem / taman ut-oghieñg",
+              "támàn",
+              "tiptem",
               "pokol",
               "Ocha karam ma-mi-nye"
             ],
@@ -862,13 +935,19 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           },
           {
-            "target": "omisyö / matai",
-            "source": "Food / Millet",
+            "target": "omisyö",
+            "source": "Food",
             "pronunciation": "o-misyo / ma-tai",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           },
           {
-            "target": "nyaril, pl. nyaril-ech",
+            "target": "matai",
+            "source": "Millet",
+            "pronunciation": "o-misyo / ma-tai",
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+          },
+          {
+            "target": "nyaril",
             "source": "Raw",
             "pronunciation": "nyaril"
           },
@@ -879,24 +958,19 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "mwagh, pl. mwai'-tin; (ii) mwowon (coll.)",
+            "target": "mwagh",
             "source": "Fat",
-            "pronunciation": "mwagh"
-          },
-          {
-            "target": "mwagh, pl. mwai'-tin",
-            "source": "Oil",
             "pronunciation": "mwagh"
           }
         ],
         "sentences": [
           {
             "target": "kipketin — lowiana",
-            "source": "Honey — Stingless bee honey"
+            "source": "Honey — Stingless bee honey."
           },
           {
             "target": "che — pany",
-            "source": "Milk — Meat"
+            "source": "Milk — Meat."
           }
         ],
         "authoredExercises": [
@@ -905,9 +979,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What does \"kipketin\" mean in English?",
             "correctAnswer": "Honey",
             "options": [
-              "Honey",
               "Stingless bee honey",
               "Milk",
+              "Honey",
               "Meat"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages"
@@ -976,13 +1050,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "wild, sasur-wa, pl. sasôr",
+            "target": "wild, sasur-wa",
             "source": "Banana",
             "pronunciation": "wild sasur-wa",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "ñgwan, pl. ñgwan-ech",
+            "target": "ñgwan",
             "source": "Bitter ( adj. )",
             "pronunciation": "nggwan",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
@@ -1000,19 +1074,19 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "sĕt, pl. sĕt-on",
+            "target": "sĕt",
             "source": "Calabash, a ( for water )",
             "pronunciation": "set",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "men-wa, pl. măn",
+            "target": "men-wa",
             "source": "Castor-oil plant",
             "pronunciation": "men-wa",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "rel, pl. rel-ech",
+            "target": "rel",
             "source": "Clear ( of water or sky )",
             "pronunciation": "rel",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
@@ -1037,9 +1111,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "When will food be ready?",
             "options": [
               "Banana",
-              "Bitter ( adj. )",
-              "Boil ( trans. )",
-              "When will food be ready?"
+              "Bitter",
+              "When will food be ready?",
+              "To boil"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
@@ -1048,36 +1122,44 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"wild, sasur-wa, pl. sasôr\" in Pokot?",
             "correctAnswer": "Banana",
             "options": [
-              "Bitter ( adj. )",
-              "Boil ( trans. )",
+              "Bitter",
+              "Boil",
               "Banana",
-              "When will food be ready?"
+              "To boil"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ñgwan, pl. ñgwan-ech\" in Pokot?",
-            "correctAnswer": "Bitter ( adj. )",
+            "correctAnswer": "Bitter",
             "options": [
-              "Boil ( trans. )",
-              "Bitter ( adj. )",
-              "When will food be ready?",
-              "Banana"
+              "Boil",
+              "Bitter",
+              "Banana",
+              "To boil"
             ],
-            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
+            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
+            "acceptedAnswers": [
+              "Bitter ( adj. )",
+              "Bitter"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Bitter ( adj. )\" in Pokot?",
-            "correctAnswer": "ñgwan, pl. ñgwan-ech",
+            "correctAnswer": "ñgwan",
             "options": [
-              "ñgwan, pl. ñgwan-ech",
               "Rir-ei oyu omisioʻ?",
-              "wild, sasur-wa, pl. sasôr",
-              "Vide under Cook"
+              "wild",
+              "Vide under Cook",
+              "ñgwan"
             ],
-            "hint": "ñgwan, pl. ñgwan-ech"
+            "hint": "Starts with \"ñg…\" (5 letters)",
+            "acceptedAnswers": [
+              "ñgwan, pl. ñgwan-ech",
+              "ñgwan"
+            ]
           },
           {
             "type": "multiple_choice",
@@ -1085,11 +1167,11 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "Vide under Cook",
             "options": [
               "Rir-ei oyu omisioʻ?",
-              "wild, sasur-wa, pl. sasôr",
-              "ñgwan, pl. ñgwan-ech",
-              "Vide under Cook"
+              "Vide under Cook",
+              "wild",
+              "ñgwan"
             ],
-            "hint": "vide under cook"
+            "hint": "Starts with \"Vi…\" (15 letters)"
           },
           {
             "type": "match_pairs",
@@ -1117,14 +1199,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot term for \"Butter\": ___",
-            "correctAnswer": "mwai'-pa-cheʻ, lit. fat of milk",
+            "correctAnswer": "mwai'-pa-cheʻ",
             "options": [
               "Rir-ei oyu omisioʻ?",
-              "wild, sasur-wa, pl. sasôr",
-              "ñgwan, pl. ñgwan-ech",
-              "mwai'-pa-cheʻ, lit. fat of milk"
+              "wild",
+              "mwai'-pa-cheʻ",
+              "ñgwan"
             ],
-            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
+            "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
+            "acceptedAnswers": [
+              "mwai'-pa-cheʻ, lit. fat of milk",
+              "mwai'-pa-cheʻ"
+            ]
           }
         ]
       }
@@ -1195,7 +1281,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, p. 19) — Suk Cosmology"
           },
           {
-            "target": "hŏr, pl. hŏr-en",
+            "target": "hŏr",
             "source": "Ash",
             "pronunciation": "hor"
           }
@@ -1203,11 +1289,11 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "peet — yech",
-            "source": "Day — Night"
+            "source": "Day — Night."
           },
           {
             "target": "kokel — pʉːɣ",
-            "source": "Star — Water"
+            "source": "Star — Water."
           }
         ],
         "authoredExercises": [
@@ -1338,7 +1424,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kerio wal-nya-pôro",
-            "source": "The lower reaches of the Kerio river"
+            "source": "The lower reaches of the Kerio river."
           }
         ],
         "authoredExercises": [
@@ -1348,9 +1434,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "Fire",
             "options": [
               "Rain",
-              "Mountain / Hill",
-              "River / Stream",
-              "Fire"
+              "Fire",
+              "Mountain",
+              "River"
             ],
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           },
@@ -1359,8 +1445,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"rop (ropta)\" in Pokot?",
             "correctAnswer": "Rain",
             "options": [
-              "Mountain / Hill",
-              "River / Stream",
+              "Mountain",
+              "River",
               "Rain",
               "Fire"
             ],
@@ -1368,39 +1454,51 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"tul (tulwet)\" in Pokot?",
-            "correctAnswer": "Mountain / Hill",
+            "prompt": "What is the English meaning of \"tul\" in Pokot?",
+            "correctAnswer": "Mountain",
             "options": [
-              "River / Stream",
-              "Mountain / Hill",
+              "River",
               "Fire",
+              "Mountain",
               "Rain"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "Mountain / Hill",
+              "Mountain"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Mountain / Hill\" in Pokot?",
-            "correctAnswer": "tul (tulwet)",
+            "correctAnswer": "tul",
             "options": [
-              "tul (tulwet)",
-              "mat (maat)",
-              "rop (ropta)",
-              "lalan (lalang')"
+              "mat",
+              "tul",
+              "rop",
+              "lalan"
             ],
-            "hint": "tul-wet"
+            "hint": "Starts with \"tu…\" (3 letters)",
+            "acceptedAnswers": [
+              "tul (tulwet)",
+              "tul"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"River / Stream\" in Pokot?",
-            "correctAnswer": "lalan (lalang')",
+            "correctAnswer": "lalan",
             "options": [
-              "mat (maat)",
-              "rop (ropta)",
-              "tul (tulwet)",
-              "lalan (lalang')"
+              "mat",
+              "rop",
+              "lalan",
+              "tul"
             ],
-            "hint": "la-lan"
+            "hint": "Starts with \"la…\" (5 letters)",
+            "acceptedAnswers": [
+              "lalan (lalang')",
+              "lalan"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1428,14 +1526,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot term for \"Stone / Rock\": ___",
-            "correctAnswer": "kogh (koghet)",
+            "correctAnswer": "kogh",
             "options": [
-              "mat (maat)",
-              "rop (ropta)",
-              "tul (tulwet)",
-              "kogh (koghet)"
+              "mat",
+              "rop",
+              "tul",
+              "kogh"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "kogh (koghet)",
+              "kogh"
+            ]
           }
         ]
       }
@@ -1458,25 +1560,25 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "koːŋ (kong', pl. konyen)",
+            "target": "koːŋ (kong'",
             "source": "Eye",
             "pronunciation": "kong",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "yiːt (yit, pl. yitwen)",
+            "target": "yiːt (yit",
             "source": "Ear",
             "pronunciation": "yit",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "sa̱r̃ (sar, pl. sarin)",
+            "target": "sa̱r̃ (sar",
             "source": "Nose",
             "pronunciation": "sar",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "ke̱ːla̱t (kelat, pl. kelek)",
+            "target": "ke̱ːla̱t (kelat",
             "source": "Tooth",
             "pronunciation": "ke-lat",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
@@ -1488,7 +1590,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "ku̱ːt (kut, pl. kutin)",
+            "target": "ku̱ːt (kut",
             "source": "Mouth",
             "pronunciation": "kut",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
@@ -1500,13 +1602,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
-            "target": "kaːwaʔ (kawa, pl. kawek)",
+            "target": "kaːwaʔ (kawa",
             "source": "Bone",
             "pronunciation": "ka-waʔ",
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
-            "target": "met (metit, pl. metin)",
+            "target": "met (metit",
             "source": "Head",
             "pronunciation": "met",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
@@ -1520,8 +1622,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "options": [
               "Ear",
               "Nose",
-              "Tooth",
-              "Eye"
+              "Eye",
+              "Tooth"
             ],
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
@@ -1530,9 +1632,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"yiːt (yit, pl. yitwen)\" in Pokot?",
             "correctAnswer": "Ear",
             "options": [
+              "Ear",
               "Nose",
               "Tooth",
-              "Ear",
               "Eye"
             ],
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
@@ -1552,26 +1654,34 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Nose\" in Pokot?",
-            "correctAnswer": "sa̱r̃ (sar, pl. sarin)",
+            "correctAnswer": "sa̱r̃",
             "options": [
-              "sa̱r̃ (sar, pl. sarin)",
-              "koːŋ (kong', pl. konyen)",
-              "yiːt (yit, pl. yitwen)",
-              "ke̱ːla̱t (kelat, pl. kelek)"
+              "sa̱r̃",
+              "koːŋ",
+              "yiːt",
+              "ke̱ːla̱t"
             ],
-            "hint": "sar"
+            "hint": "Starts with \"sa…\" (5 letters)",
+            "acceptedAnswers": [
+              "sa̱r̃ (sar, pl. sarin)",
+              "sa̱r̃"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Tooth\" in Pokot?",
-            "correctAnswer": "ke̱ːla̱t (kelat, pl. kelek)",
+            "correctAnswer": "ke̱ːla̱t",
             "options": [
-              "koːŋ (kong', pl. konyen)",
-              "yiːt (yit, pl. yitwen)",
-              "sa̱r̃ (sar, pl. sarin)",
-              "ke̱ːla̱t (kelat, pl. kelek)"
+              "ke̱ːla̱t",
+              "koːŋ",
+              "yiːt",
+              "sa̱r̃"
             ],
-            "hint": "kee-lat"
+            "hint": "kee-lat",
+            "acceptedAnswers": [
+              "ke̱ːla̱t (kelat, pl. kelek)",
+              "ke̱ːla̱t"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1599,14 +1709,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot term for \"Tongue\": ___",
-            "correctAnswer": "ŋa̱lya̱p (ng'alyap)",
+            "correctAnswer": "ŋa̱lya̱p",
             "options": [
-              "koːŋ (kong', pl. konyen)",
-              "yiːt (yit, pl. yitwen)",
-              "sa̱r̃ (sar, pl. sarin)",
-              "ŋa̱lya̱p (ng'alyap)"
+              "koːŋ",
+              "ŋa̱lya̱p",
+              "yiːt",
+              "sa̱r̃"
             ],
-            "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
+            "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)",
+            "acceptedAnswers": [
+              "ŋa̱lya̱p (ng'alyap)",
+              "ŋa̱lya̱p"
+            ]
           }
         ]
       },
@@ -1619,7 +1733,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "egh (eghit, pl. eghin)",
+            "target": "egh (eghit",
             "source": "Hand / Arm",
             "pronunciation": "egh",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
@@ -1655,19 +1769,19 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "kôwô-monion, pl. kô-monion, koiyo-monion",
+            "target": "kôwô-monion",
             "source": "Ankle(-bone)",
             "pronunciation": "kowo-monion",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "hegh, pl. hegh-w-un [gh almost surd]",
+            "target": "hegh",
             "source": "Arm",
             "pronunciation": "hegh",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "korôt, pl. korôt-ai",
+            "target": "korôt",
             "source": "Back ( of a human being or animal )",
             "pronunciation": "ko-rot",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
@@ -1676,11 +1790,11 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Per-ana' met",
-            "source": "My head aches"
+            "source": "My head aches."
           },
           {
             "target": "Atô-ke-sop kel",
-            "source": "If my leg has got well"
+            "source": "If my leg has got well."
           },
           {
             "target": "Ka-kowir-inyi kel kogh?",
@@ -1690,63 +1804,79 @@ export const POKOT_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"egh (eghit, pl. eghin)\" in Pokot?",
-            "correctAnswer": "Hand / Arm",
+            "prompt": "What is the English meaning of \"egh\" in Pokot?",
+            "correctAnswer": "Hand",
             "options": [
-              "Leg / Foot",
-              "Stomach / Belly",
-              "My head aches",
-              "Hand / Arm"
+              "Leg",
+              "Stomach",
+              "Hand",
+              "My head aches"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kel (kelyen)\" in Pokot?",
-            "correctAnswer": "Leg / Foot",
-            "options": [
-              "Stomach / Belly",
-              "My head aches",
-              "Leg / Foot",
-              "Hand / Arm"
-            ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mo (moot)\" in Pokot?",
-            "correctAnswer": "Stomach / Belly",
-            "options": [
-              "My head aches",
-              "Stomach / Belly",
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
               "Hand / Arm",
-              "Leg / Foot"
+              "Hand"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"kel\" in Pokot?",
+            "correctAnswer": "Leg",
+            "options": [
+              "Stomach",
+              "Leg",
+              "My head aches",
+              "Hand"
             ],
-            "hint": "Beech (1911) — The Suk: Their Language and Folklore"
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "Leg / Foot",
+              "Leg"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "What is the English meaning of \"mo\" in Pokot?",
+            "correctAnswer": "Stomach",
+            "options": [
+              "Stomach",
+              "My head aches",
+              "Hand",
+              "Leg"
+            ],
+            "hint": "Beech (1911) — The Suk: Their Language and Folklore",
+            "acceptedAnswers": [
+              "Stomach / Belly",
+              "Stomach"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Stomach / Belly\" in Pokot?",
-            "correctAnswer": "mo (moot)",
+            "correctAnswer": "mo",
             "options": [
-              "mo (moot)",
-              "egh (eghit, pl. eghin)",
-              "kel (kelyen)",
+              "mo",
+              "egh",
+              "kel",
               "Per-ana' met"
             ],
-            "hint": "mo"
+            "hint": "2 letters",
+            "acceptedAnswers": [
+              "mo (moot)",
+              "mo"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"My head aches\" in Pokot?",
             "correctAnswer": "Per-ana' met",
             "options": [
-              "egh (eghit, pl. eghin)",
-              "kel (kelyen)",
-              "mo (moot)",
-              "Per-ana' met"
+              "Per-ana' met",
+              "egh",
+              "kel",
+              "mo"
             ],
-            "hint": "per-ana' met."
+            "hint": "Starts with \"Pe…\" (12 letters)"
           },
           {
             "type": "match_pairs",
@@ -1776,9 +1906,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokot term for \"If my leg has got well\": ___",
             "correctAnswer": "Atô-ke-sop kel",
             "options": [
-              "egh (eghit, pl. eghin)",
-              "kel (kelyen)",
-              "mo (moot)",
+              "egh",
+              "kel",
+              "mo",
               "Atô-ke-sop kel"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
@@ -1865,23 +1995,27 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "Eat",
             "options": [
               "Drink",
-              "Hear / Understand",
-              "Go",
-              "Eat"
+              "Hear",
+              "Eat",
+              "Go"
             ],
             "hint": "Beech (1911) & van Otterloo (1979) East Pokot"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"lima (kelim)\" in Pokot?",
-            "correctAnswer": "Hear / Understand",
+            "prompt": "What is the English meaning of \"lima\" in Pokot?",
+            "correctAnswer": "Hear",
             "options": [
               "Go",
-              "Hear / Understand",
               "Eat",
-              "Drink"
+              "Drink",
+              "Hear"
             ],
-            "hint": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot"
+            "hint": "Juxon Barton (1921) & Beech (1911) — Suk/Pokot",
+            "acceptedAnswers": [
+              "Hear / Understand",
+              "Hear"
+            ]
           },
           {
             "type": "match_pairs",
@@ -1953,17 +2087,17 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan nilotic corpus"
           },
           {
-            "target": "igh-isioʻ, pl. igh-isio-(y)ut",
+            "target": "igh-isioʻ",
             "source": "Work",
             "pronunciation": "igh-isio"
           },
           {
-            "target": "piren-ei, pl. piron-sut",
+            "target": "piren-ei",
             "source": "Play",
             "pronunciation": "piren-ei"
           },
           {
-            "target": "păn, pl. pon-w-ai",
+            "target": "păn",
             "source": "Walk",
             "pronunciation": "pan"
           }
@@ -1971,11 +2105,11 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kesow — kelim",
-            "source": "To see — To hear"
+            "source": "To see — To hear."
           },
           {
             "target": "kesow — kecham",
-            "source": "To know — To love"
+            "source": "To know — To love."
           }
         ],
         "authoredExercises": [
@@ -1987,7 +2121,7 @@ export const POKOT_UNITS: CourseUnit[] = [
               "To see",
               "To hear",
               "To know",
-              "To love / like"
+              "To love"
             ],
             "hint": "Core vocabulary in Applied, Causative, Reciprocal & Stative Verbs"
           },
@@ -2059,12 +2193,12 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "yĕ. Introducing a fresh paragraph, kīleʻ",
+            "target": "yĕ",
             "source": "Now",
             "pronunciation": "ye intro-du-cing a fresh pa-ragraph ki-le'"
           },
           {
-            "target": "asis, pl. ōsis",
+            "target": "asis",
             "source": "Day",
             "pronunciation": "a-sis"
           },
@@ -2074,12 +2208,12 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "toma-nye kio-menengg"
           },
           {
-            "target": "keny, kainy, pl. kainy-is",
+            "target": "keny, kainy",
             "source": "Time",
             "pronunciation": "keny kainy"
           },
           {
-            "target": "kainy, pl. kainy-is",
+            "target": "kainy",
             "source": "Year",
             "pronunciation": "kainy"
           },
@@ -2107,11 +2241,11 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "yĕ. Introducing a fresh paragraph, kīleʻ — asis, pl. ōsis",
-            "source": "Now — Day"
+            "source": "Now — Day."
           },
           {
             "target": "tôma-nye kio-meneñg — keny, kainy, pl. kainy-is",
-            "source": "Soon — Time"
+            "source": "Soon — Time."
           }
         ],
         "authoredExercises": [
@@ -2200,7 +2334,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "ogha"
           },
           {
-            "target": "again and again, ñgat: ñgat-ñgat",
+            "target": "again / again, ñgat: ñgat-ñgat",
             "source": "Again",
             "pronunciation": "a-gain and a-gain nggat nggat-nggat"
           },
@@ -2233,11 +2367,11 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "osis-cha-chañg — kainy-is tokol",
-            "source": "Often — Never"
+            "source": "Often — Never."
           },
           {
             "target": "ŏghaʻ — again and again, ñgat: ñgat-ñgat",
-            "source": "Night — Again"
+            "source": "Night — Again."
           }
         ],
         "authoredExercises": [
@@ -2367,32 +2501,36 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "r. takwes, pr. o-tokwes-an, -ei, p.p. ka-takwes-an",
-            "source": "Greet, to",
+            "source": "To greet",
             "pronunciation": "takwes"
           }
         ],
         "sentences": [
           {
             "target": "Tiangoi! — amumūr, kedoñgô, & tum",
-            "source": "Riddle challenge formula — Traditional Suk dances"
+            "source": "Riddle challenge formula — Traditional Suk dances."
           },
           {
             "target": "kokwa — Torôrut",
-            "source": "Village Council of Elders — Supreme Sky Deity"
+            "source": "Village Council of Elders — Supreme Sky Deity."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What does \"Tiangoi!\" mean in English?",
-            "correctAnswer": "Riddle challenge formula ('A riddle!')",
+            "correctAnswer": "Riddle challenge formula",
             "options": [
-              "Riddle challenge formula ('A riddle!')",
               "Traditional Suk dances",
+              "Riddle challenge formula",
               "Village Council of Elders",
               "Supreme Sky Deity"
             ],
-            "hint": "Core vocabulary in Everyday Conversational Phrases & Questions"
+            "hint": "Core vocabulary in Everyday Conversational Phrases & Questions",
+            "acceptedAnswers": [
+              "Riddle challenge formula ('A riddle!')",
+              "Riddle challenge formula"
+            ]
           },
           {
             "type": "translate_to_target",
@@ -2501,18 +2639,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "r. soiyen, pr. o-soiyen-an, p.p. kô-soiyen-an",
-            "source": "Thank, to",
+            "source": "To thank",
             "pronunciation": "soi-yen"
           }
         ],
         "sentences": [
           {
             "target": "longet — kwang",
-            "source": "Shield — Bow"
+            "source": "Shield — Bow."
           },
           {
             "target": "koto — ng'echer",
-            "source": "Arrow — Headrest"
+            "source": "Arrow — Headrest."
           }
         ],
         "authoredExercises": [
@@ -2521,10 +2659,10 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What does \"longet\" mean in English?",
             "correctAnswer": "Shield",
             "options": [
-              "Shield",
               "Bow",
+              "Shield",
               "Arrow",
-              "Headrest / Neck-stool"
+              "Headrest"
             ],
             "hint": "Core vocabulary in Hospitality, Requests & Social Discourse"
           },
@@ -2614,7 +2752,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? —",
+            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn?",
             "pronunciation": "tiangoi-tia-o-wund-oi-a'-sogho"
           },
           {
@@ -2625,7 +2763,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! (Riddle #4)",
-            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer: The",
+            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer",
             "pronunciation": "tiangoi"
           },
           {
@@ -2653,7 +2791,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon. — Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made"
+            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made."
           }
         ],
         "authoredExercises": [
@@ -2750,19 +2888,19 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mba ki-'no kô-nonsi-a' ka-legit-itu luk",
-            "source": "That is why I thought the battle was imminent"
+            "source": "That is why I thought the battle was imminent."
           },
           {
             "target": "Me kue a-iyit",
-            "source": "It is no good me counting"
+            "source": "It is no good me counting."
           },
           {
             "target": "Me-nget-nye ekw'-oyu",
-            "source": "He doesn't know when"
+            "source": "He doesn't know when."
           },
           {
             "target": "Anda ka-sow-a' blerkwa katô-m-o-wegh-an-nye",
-            "source": "Had I seen the hare I should not have been afraid"
+            "source": "Had I seen the hare I should not have been afraid."
           }
         ],
         "authoredExercises": [
@@ -2771,10 +2909,10 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mwô-w-anan. / Mwô-chin-anan\" in Pokot?",
             "correctAnswer": "Tell me",
             "options": [
-              "That is why I thought the battle was imminent",
-              "It is no good me counting",
               "He doesn't know when",
-              "Tell me"
+              "Tell me",
+              "If he likes",
+              "That is why I thought the battle was imminent"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
@@ -2783,10 +2921,10 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Mba ki-'no kô-nonsi-a' ka-legit-itu luk\" in Pokot?",
             "correctAnswer": "That is why I thought the battle was imminent",
             "options": [
-              "It is no good me counting",
-              "He doesn't know when",
-              "That is why I thought the battle was imminent",
-              "Tell me"
+              "Had I seen the hare I should not have been afraid",
+              "Go and tell him I want him",
+              "Tell me",
+              "That is why I thought the battle was imminent"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
@@ -2797,8 +2935,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "options": [
               "He doesn't know when",
               "It is no good me counting",
-              "Tell me",
-              "That is why I thought the battle was imminent"
+              "He came while I was eating",
+              "What did you do that for?"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
@@ -2807,24 +2945,24 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"It is no good me counting\" in Pokot?",
             "correctAnswer": "Me kue a-iyit",
             "options": [
+              "Mwô-w-anan.",
               "Me kue a-iyit",
-              "Mwô-w-anan. / Mwô-chin-anan",
               "Mba ki-'no kô-nonsi-a' ka-legit-itu luk",
               "Me-nget-nye ekw'-oyu"
             ],
-            "hint": "me kue a-iyit."
+            "hint": "Starts with \"Me…\" (13 letters)"
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"He doesn't know when\" in Pokot?",
             "correctAnswer": "Me-nget-nye ekw'-oyu",
             "options": [
-              "Mwô-w-anan. / Mwô-chin-anan",
-              "Mba ki-'no kô-nonsi-a' ka-legit-itu luk",
+              "Mwô-w-anan.",
               "Me kue a-iyit",
+              "Anda ka-sow-a' blerkwa katô-m-o-wegh-an-nye",
               "Me-nget-nye ekw'-oyu"
             ],
-            "hint": "me-nget-nye ekw'-oyu."
+            "hint": "Starts with \"Me…\" (20 letters)"
           },
           {
             "type": "match_pairs",
@@ -2854,9 +2992,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokot term for \"Had I seen the hare I should not have been afraid\": ___",
             "correctAnswer": "Anda ka-sow-a' blerkwa katô-m-o-wegh-an-nye",
             "options": [
-              "Mwô-w-anan. / Mwô-chin-anan",
               "Mba ki-'no kô-nonsi-a' ka-legit-itu luk",
               "Me kue a-iyit",
+              "Me-nget-nye ekw'-oyu",
               "Anda ka-sow-a' blerkwa katô-m-o-wegh-an-nye"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
@@ -2935,9 +3073,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"che-marmar (pl. che-mŏr-mŏr)\" in Pokot (Pökoot)?",
             "correctAnswer": "Zebra",
             "options": [
-              "Zebra",
               "Youth",
-              "Your, yours",
+              "Zebra",
+              "Your",
               "Young"
             ],
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
@@ -2970,10 +3108,10 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Complete the Pokot (Pökoot) term for \"You\": ___",
             "correctAnswer": "nyī",
             "options": [
+              "che-marmar",
+              "karachinin",
               "nyī",
-              "che-marmar (pl. che-mŏr-mŏr)",
-              "karachinin (pl. karachona)",
-              "nyeñgmwunyi (pl. chekunyi)"
+              "nyeñgmwunyi"
             ],
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           }
@@ -3041,10 +3179,10 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"siñgir (pl. siñgir-ech)\" in Pokot (Pökoot)?",
             "correctAnswer": "Wrinkled",
             "options": [
-              "Wrinkled",
               "Wound",
               "Work",
-              "Word"
+              "Word",
+              "Wrinkled"
             ],
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           },
@@ -3074,14 +3212,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot (Pökoot) term for \"Wood\": ___",
-            "correctAnswer": "wu (pl. wu-tin)",
+            "correctAnswer": "wu",
             "options": [
-              "wu (pl. wu-tin)",
-              "siñgir (pl. siñgir-ech)",
-              "mô (pl. mô-y-oi)",
-              "igh-isioʻ (pl. igh-isio-(y)ut)"
+              "siñgir",
+              "mô",
+              "wu",
+              "igh-isioʻ ut)"
             ],
-            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
+            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
+            "acceptedAnswers": [
+              "wu (pl. wu-tin)",
+              "wu"
+            ]
           }
         ]
       }
@@ -3190,14 +3332,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot (Pökoot) term for \"Wilderness\": ___",
-            "correctAnswer": "opel-ion (pl. opel-tin)",
+            "correctAnswer": "opel-ion",
             "options": [
-              "opel-ion (pl. opel-tin)",
-              "kamwunai-yan (pl. kamwunai-tin)",
-              "kapep (pl. kapep-oi)",
+              "kamwunai-yan",
+              "kapep",
+              "opel-ion",
               "sighin"
             ],
-            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
+            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
+            "acceptedAnswers": [
+              "opel-ion (pl. opel-tin)",
+              "opel-ion"
+            ]
           }
         ]
       },
@@ -3263,9 +3409,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"mokol (pl. mukul-ech)\" in Pokot (Pökoot)?",
             "correctAnswer": "Whole",
             "options": [
-              "Whole",
               "Who",
               "White",
+              "Whole",
               "When"
             ],
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
@@ -3296,14 +3442,18 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Pokot (Pökoot) term for \"Well\": ___",
-            "correctAnswer": "man; nya-man",
+            "correctAnswer": "man",
             "options": [
-              "man; nya-man",
-              "mokol (pl. mukul-ech)",
-              "nya (pl. pkonya-tin)",
-              "ril (pl. cha-le-meril-tin)"
+              "mokol",
+              "nya",
+              "ril",
+              "man"
             ],
-            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
+            "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
+            "acceptedAnswers": [
+              "man; nya-man",
+              "man"
+            ]
           }
         ]
       }
@@ -3312,7 +3462,7 @@ export const POKOT_UNITS: CourseUnit[] = [
   {
     "id": "pokot-unit-13",
     "unitNumber": 13,
-    "title": "— Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases &",
+    "title": "— Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases",
     "description": "Master the greetings (Tokwes! / Chamke! / Korôton!), the Planting Hymn to Torôrut, the Potters' Chant, all 18 Tiangoi! riddles, 55 idiomatic phrases, and the 2 interlinear Suk stories from Mervyn W. H. Beech's 1911 monograph.",
     "icon": "BookOpen",
     "color": "#7C3AED",
@@ -3355,7 +3505,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "tiangoi-tia-donguch"
           },
           {
-            "target": "Rel-e' ti'-chu lopai, pirir kirokit → Kelat ngô ñgaliep",
+            "target": "Rel-e-chu lopai / pirir kirokit → Kelat ngô ñgaliep",
             "source": "All my cows are white, the bull is red → Teeth and tongue",
             "pronunciation": "rel-e'-ti'-chu-lopai"
           },
@@ -3380,7 +3530,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "mi-ne"
           },
           {
-            "target": "Tôma-ny'-'abkaʻ",
+            "target": "Tôma-nyabkaʻ",
             "source": "He has not yet come",
             "pronunciation": "tôma-ny'-'abka"
           },
@@ -3393,7 +3543,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Tokwes! — Eia! Chamke! Ki-lend-e-ne kainat-nyeñgmwunyi?",
-            "source": "Hail! — Yes! Health to thee! What is your name? (Beech 1911, pp. 92–95)."
+            "source": "Hail! — Yes! Health to thee! What is your name? ."
           }
         ]
       },
@@ -3462,187 +3612,130 @@ export const POKOT_UNITS: CourseUnit[] = [
         "title": "Dataset Parallel Sentences: Everyday, Market & Agriculture",
         "icon": "MessageSquare",
         "description": "Practice verified Pokot (Pökoot) parallel sentences and vocabulary from commercially permissive corpora.",
-        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
+        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921).",
         "words": [
-                  {
-                            "target": "mīs",
-                            "source": "Peace",
-                            "pronunciation": "mis"
-                  },
-                  {
-                            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
-                            "source": "Goodbye!",
-                            "pronunciation": "ko-rot-on ans i-rot-enyi"
-                  },
-                  {
-                            "target": "Sĕra!",
-                            "source": "Thank you",
-                            "pronunciation": "sera"
-                  },
-                  {
-                            "target": "Sera!",
-                            "source": "Thank-you!",
-                            "pronunciation": "se-ra"
-                  },
-                  {
-                            "target": "Kalyon",
-                            "source": "Peace / All is well",
-                            "pronunciation": "kal-yon / kal-ya"
-                  },
-                  {
-                            "target": "Chamnyan",
-                            "source": "Hello / How are you?",
-                            "pronunciation": "cham-nyan / bo kal-yon"
-                  },
-                  {
-                            "target": "Tokwes!",
-                            "source": "Greeting on entering a village: Hail! (and reply)",
-                            "pronunciation": "tok-wes / ei-a"
-                  },
-                  {
-                            "target": "Chamke!",
-                            "source": "Personal greeting: Health to thee! (and reply)",
-                            "pronunciation": "cham-ke"
-                  },
-                  {
-                            "target": "che",
-                            "source": "Milk",
-                            "pronunciation": "che / che-go"
-                  },
-                  {
-                            "target": "pany",
-                            "source": "Meat",
-                            "pronunciation": "pany"
-                  }
+          {
+            "target": "mīs",
+            "source": "Peace",
+            "pronunciation": "mis"
+          },
+          {
+            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
+            "source": "Goodbye!",
+            "pronunciation": "ko-rot-on ans i-rot-enyi"
+          },
+          {
+            "target": "Sĕra!",
+            "source": "Thank you",
+            "pronunciation": "sera"
+          },
+          {
+            "target": "Sera!",
+            "source": "Thank-you!",
+            "pronunciation": "se-ra"
+          },
+          {
+            "target": "Kalyon",
+            "source": "Peace / All is well",
+            "pronunciation": "kal-yon / kal-ya"
+          },
+          {
+            "target": "Chamnyan",
+            "source": "Hello / How are you?",
+            "pronunciation": "cham-nyan / bo kal-yon"
+          },
+          {
+            "target": "Tokwes!",
+            "source": "Greeting on entering a village: Hail! (and reply)",
+            "pronunciation": "tok-wes / ei-a"
+          },
+          {
+            "target": "Chamke!",
+            "source": "Personal greeting: Health to thee! (and reply)",
+            "pronunciation": "cham-ke"
+          },
+          {
+            "target": "che",
+            "source": "Milk",
+            "pronunciation": "che / che-go"
+          },
+          {
+            "target": "pany",
+            "source": "Meat",
+            "pronunciation": "pany"
+          }
         ],
         "sentences": [
-                  {
-                            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
-                            "source": "Goodbye!"
-                  },
-                  {
-                            "target": "mwai'-pa-cheʻ, lit. fat of milk",
-                            "source": "Butter"
-                  },
-                  {
-                            "target": "r. kĕl, pr. o-kel-an, -ei, p.p. ka-kĕl-an",
-                            "source": "Fry, to"
-                  },
-                  {
-                            "target": "r. pal, pr. o-pĕl-an, -ei, p.p. ka-păl-an",
-                            "source": "Bake, to"
-                  },
-                  {
-                            "target": "r. nyagh, pr. o-nyogh-an, p.p. ka-nyagh-an",
-                            "source": "Pound, to"
-                  },
-                  {
-                            "target": "r. pal, pr. o-pel-an, -ei, p.p. ka-pal-an",
-                            "source": "Roast, to"
-                  },
-                  {
-                            "target": "r. rur, pr. o-rur-an, -ei, p.p. kô-rur-an",
-                            "source": "Ripe, to be"
-                  },
-                  {
-                            "target": "pogh pa maʻ",
-                            "source": "Hot water"
-                  }
+          {
+            "target": "r. rur, pr. o-rur-an, -ei, p.p. kô-rur-an",
+            "source": "Ripe, to be."
+          },
+          {
+            "target": "pogh pa maʻ",
+            "source": "Hot water."
+          }
         ]
-},
+      },
       {
         "id": "pokot-corpus-sentences-skill-2",
         "title": "Dataset Parallel Sentences: Health, Travel & Civic Life",
         "icon": "Globe",
         "description": "Master multi-domain Pokot (Pökoot) sentences for healthcare, transport, and community safety.",
-        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
+        "culturalNote": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921).",
         "words": [
-                  {
-                            "target": "àkɔ́ɔ́ŋkɔ̀ (akong'o",
-                            "source": "One",
-                            "pronunciation": "a-koong-ko"
-                  },
-                  {
-                            "target": "oɣë̀ë̀ŋ",
-                            "source": "Two",
-                            "pronunciation": "o-deeng"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",
-                            "source": "Six",
-                            "pronunciation": "muut ngo a-koong-o"
-                  },
-                  {
-                            "target": "támàn",
-                            "source": "Ten",
-                            "pronunciation": "ta-man"
-                  },
-                  {
-                            "target": "àŋwân",
-                            "source": "Four",
-                            "pronunciation": "ang-wan"
-                  },
-                  {
-                            "target": "múut",
-                            "source": "Five",
-                            "pronunciation": "muut"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ àŋwân",
-                            "source": "Nine",
-                            "pronunciation": "muut ngo ang-wan"
-                  },
-                  {
-                            "target": "kareran",
-                            "source": "Half",
-                            "pronunciation": "ka-re-ran"
-                  },
-                  {
-                            "target": "all three, &c",
-                            "source": "Both",
-                            "pronunciation": "al three c"
-                  },
-                  {
-                            "target": "sä́mä́k",
-                            "source": "Three",
-                            "pronunciation": "sa-mak"
-                  }
+          {
+            "target": "àkɔ́ɔ́ŋkɔ̀",
+            "source": "One",
+            "pronunciation": "a-koong-ko"
+          },
+          {
+            "target": "oɣë̀ë̀ŋ",
+            "source": "Two",
+            "pronunciation": "o-deeng"
+          },
+          {
+            "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",
+            "source": "Six",
+            "pronunciation": "muut ngo a-koong-o"
+          },
+          {
+            "target": "támàn",
+            "source": "Ten",
+            "pronunciation": "ta-man"
+          },
+          {
+            "target": "àŋwân",
+            "source": "Four",
+            "pronunciation": "ang-wan"
+          },
+          {
+            "target": "múut",
+            "source": "Five",
+            "pronunciation": "muut"
+          },
+          {
+            "target": "múut ŋɡɔ́ àŋwân",
+            "source": "Nine",
+            "pronunciation": "muut ngo ang-wan"
+          },
+          {
+            "target": "kareran",
+            "source": "Half",
+            "pronunciation": "ka-re-ran"
+          },
+          {
+            "target": "all three, &c",
+            "source": "Both",
+            "pronunciation": "al three c"
+          },
+          {
+            "target": "sä́mä́k",
+            "source": "Three",
+            "pronunciation": "sa-mak"
+          }
         ],
-        "sentences": [
-                  {
-                            "target": "àkɔ́ɔ́ŋkɔ̀ (akong'o",
-                            "source": "One"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",
-                            "source": "Six"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ àŋwân",
-                            "source": "Nine"
-                  },
-                  {
-                            "target": "all three, &c",
-                            "source": "Both"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ òdë̀ë̀ŋ",
-                            "source": "Seven"
-                  },
-                  {
-                            "target": "múut ŋɡɔ́ sä́mä́k",
-                            "source": "Eight"
-                  },
-                  {
-                            "target": "nya-pa-mūt, nya-le-mūt",
-                            "source": "Fifth"
-                  },
-                  {
-                            "target": "p' oghieñg",
-                            "source": "Twice"
-                  }
-        ]
-}
+        "sentences": []
+      }
     ]
   }
 ];

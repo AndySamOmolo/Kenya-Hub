@@ -112,3 +112,26 @@ export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
     ]
   }
 ];
+
+POKOT_GRAMMAR_SECTIONS.push({
+  id: "zwarts-chelimo-jerono-2024-pokot-kegh",
+  title: "Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, Language Science Press #438, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482): Pökoot Reflexive, Reciprocal & Middle Enclitic kegh [kɛːx]",
+  summary: "Comparative Southern Nilotic analysis of Pökoot enclitic kegh [kɛːx] (cognate with Endo-Marakwet/Tugen keey [kɛːj] and Keiyo/Kipsigis kee [kɛː]), written as a separate word in Pökoot orthography and opaque to [+ATR] vowel harmony.",
+  content: [
+    "- **1. Phonological Form & Independent Orthographic Status (pp. 539–542)**: Whereas Central Kalenjin varieties realize the reflexive/reciprocal/middle enclitic as `[kɛː]` (`kee`) or `[kɛːj]` (`keey`), **Pökoot** preserves a final voiceless velar fricative **`[kɛːx]`** (spelled **`kegh`** as a separate word after the verb in the Pökoot Bible and literacy orthography).",
+    "- **2. Opacity to [+ATR] Vowel Harmony (p. 542)**: Like Proto-Kalenjin `*kɛːx`, Pökoot `kegh` is harmony-neutral (`[-ATR]`), resisting `[+ATR]` spreading from `+ATR` verb roots (`toorēt kegh`, 'help oneself / help each other'; `neet kegh`, 'teach oneself / learn').",
+    "- **3. Three-Way Polysemy — Reflexive/Reciprocal, Middle Voice & Emphatic Intensifier (pp. 546–553)**: Functions both as a syntactic object saturating an internal argument of transitive/applicative/dative verbs (`mwoochi kegh`, 'speak to one another'; `cham kegh`, 'love each other') and as an intensifying adjunct on independent pronouns ('by oneself / alone')."
+  ].join("\n"),
+  examples: [
+    {
+      pokot: "kegh [kɛːx] (Pökoot) ~ keey [kɛːj] (Endo-Marakwet / Tugen) ~ kee [kɛː] (Keiyo / Kipsigis)",
+      english: "oneself, each other, by oneself (Southern Nilotic reflexive, reciprocal, middle & emphatic enclitic)",
+      explanation: "Joost Zwarts, Andrew Chelimo & Prisca Jerono, ACAL in SoCAL (Language Science Press #438, 2024, Ch. 21, pp. 539–540, DOI: 10.5281/zenodo.11210482)"
+    },
+    {
+      pokot: "mwoochi kegh • neet kegh • toorēt kegh • cham kegh",
+      english: "say to one another • teach oneself (learn) • help each other • love one another",
+      explanation: "Syntactic argument saturation and ATR-harmony opacity of Pökoot/Kalenjin kegh / kee(y) (Zwarts et al. 2024, pp. 541–551)"
+    }
+  ]
+});
