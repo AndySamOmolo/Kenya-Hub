@@ -20,7 +20,7 @@
  *     * `Kencorpus/KenSpeech` (CC-BY-4.0, Public: default)
  *     * `deepdml/common_voice_26_0` (CC0-1.0, Gated: sw)
  *     * `Sunbird/salt` (CC-BY-SA-4.0, Gated: studio-teo, multispeaker-teo, studio-swa)
- *     * `Digital-Divide-Data/Kamba-ASR-Data-Subset-484H`, `DDD-Kenya-Somali-Domain-Specific`, `DDD-Kenya-Gusii-Intent` (Gated)
+ *     * `Digital-Divide-Data/Kamba-ASR-Data-Subset-484H`, `Somali-ASR-Subset-68H`, `Gusii-ASR-Data-Subset-470H` (Gated)
  *
  * Tier 3 — Browser Native Web Speech API (`window.speechSynthesis`) Fallback:
  *   - Uses East African BCP-47 voice profiles (`sw-KE`, `sw-TZ`, `so-SO`, `om-KE`, `en-KE`)
@@ -29,10 +29,11 @@
  */
 
 export interface AudioPlayableEntry {
-  english?: string;
+  english?: string | null;
   translation: string;
-  pronunciation?: string;
-  audioFile?: string;
+  pronunciation?: string | null;
+  context?: string | null;
+  audioFile?: string | null;
 }
 
 export interface AudioDatasetSourceInfo {
@@ -160,7 +161,7 @@ export const KENYA_AUDIO_DATASET_SOURCES: Record<string, AudioDatasetSourceInfo[
       gated: false,
     },
     {
-      datasetName: "Digital Divide Data (DDD) Kenya Kamba ASR (129.4h)",
+      datasetName: "Digital Divide Data (DDD) Kenya Kamba ASR (484h)",
       license: "CC-BY-4.0",
       hfRepo: "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H",
       config: "default",
@@ -190,7 +191,7 @@ export const KENYA_AUDIO_DATASET_SOURCES: Record<string, AudioDatasetSourceInfo[
   ],
   kisii: [
     {
-      datasetName: "Digital Divide Data (DDD) Kenya Gusii / Ekegusii ASR",
+      datasetName: "Digital Divide Data (DDD) Kenya Gusii / Ekegusii ASR (470h)",
       license: "CC-BY-4.0",
       hfRepo: "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H",
       config: "default",
@@ -226,7 +227,7 @@ export const KENYA_AUDIO_DATASET_SOURCES: Record<string, AudioDatasetSourceInfo[
       gated: false,
     },
     {
-      datasetName: "Digital Divide Data (DDD) Kenya Somali ASR",
+      datasetName: "Digital Divide Data (DDD) Kenya Somali ASR (68h)",
       license: "CC-BY-4.0",
       hfRepo: "Digital-Divide-Data/Somali-ASR-Subset-68H",
       config: "default",
@@ -321,7 +322,7 @@ export function extractSpeakableText(rawTranslation: string): string {
  */
 export function resolveCloudflareR2AudioUrl(
   entry: AudioPlayableEntry,
-  langId?: string
+  langId?: string | null
 ): string | null {
   if (entry.audioFile) {
     return entry.audioFile;
@@ -348,10 +349,11 @@ let activeHtmlAudio: HTMLAudioElement | null = null;
  */
 export function playLanguageAudio(
   entry: AudioPlayableEntry,
-  langId: string = "swahili",
+  langId: string | null = "swahili",
   onEnd?: () => void
 ): void {
   if (typeof window === "undefined") return;
+  const resolvedLangId = langId || "swahili";
 
   if (activeHtmlAudio) {
     activeHtmlAudio.pause();
@@ -361,7 +363,7 @@ export function playLanguageAudio(
     window.speechSynthesis.cancel();
   }
 
-  const cdnOrDirectUrl = resolveCloudflareR2AudioUrl(entry, langId);
+  const cdnOrDirectUrl = resolveCloudflareR2AudioUrl(entry, resolvedLangId);
   if (cdnOrDirectUrl) {
     try {
       const audio = new Audio(cdnOrDirectUrl);
@@ -372,11 +374,11 @@ export function playLanguageAudio(
       };
       audio.onerror = () => {
         activeHtmlAudio = null;
-        speakWithBrowserTts(entry, langId, onEnd);
+        speakWithBrowserTts(entry, resolvedLangId, onEnd);
       };
       audio.play().catch(() => {
         activeHtmlAudio = null;
-        speakWithBrowserTts(entry, langId, onEnd);
+        speakWithBrowserTts(entry, resolvedLangId, onEnd);
       });
       return;
     } catch {
@@ -384,7 +386,7 @@ export function playLanguageAudio(
     }
   }
 
-  speakWithBrowserTts(entry, langId, onEnd);
+  speakWithBrowserTts(entry, resolvedLangId, onEnd);
 }
 
 function speakWithBrowserTts(
